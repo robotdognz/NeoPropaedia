@@ -1,0 +1,111 @@
+{
+  "sectionCode": "335",
+  "sectionCodeDisplay": "335",
+  "title": "Nutrition: the Procurement and Processing of Nutrients",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The basic features of nutrition",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The various nutritional patterns; e.g., autotrophism and heterotrophism, phototrophism and chemotrophism",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Methods of ingestion or penetration [see C., below]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The essential nutrients: compounds that cannot be synthesized by an organism and must be supplied in food; the nutritional needs of organisms",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Syntrophism: nutritional interrelationships in which the immediate or end products of metabolism of one organism may provide essential nutrients for another",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Photosynthesis: the production of food in green plants [see also 322.A.]",
+      "children": []
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Digestion and digestive systems",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The contrast between autotrophs and heterotrophs",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The alimentary system in animals other than humans",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Invertebrate digestive systems: vacuolar systems, channel-network systems, saccular systems, tubular systems",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Vertebrate digestive systems: oral cavity, teeth, and pharynx; esophagus and stomach; small intestine, pancreas, and liver; the large intestine",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Embryology and evolutionary development of the vertebrate digestive system",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Biodynamics of the vertebrate digestive system: control of secretions and intestinal movements",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B",
+      "targetSection": "322",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "C.3",
+      "targetSection": "421",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "C.3",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Digestion and Digestive Systems",
+    "Nutrition"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-03"
+}

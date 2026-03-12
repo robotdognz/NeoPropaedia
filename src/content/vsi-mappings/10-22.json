@@ -1,0 +1,100 @@
+{
+  "sectionCode": "10/22",
+  "mappings": [
+    {
+      "vsiTitle": "Mathematics",
+      "vsiAuthor": "Timothy Gowers",
+      "rationale": "Provides an overview of the branches of mathematics including algebra, analysis, geometry, and combinatorics, which are the core topics of this section."
+    },
+    {
+      "vsiTitle": "Algebra",
+      "vsiAuthor": "Peter M. Higgins",
+      "rationale": "Section B covers algebra comprehensively from arithmetic through algebraic structures including groups, rings, fields, and categories."
+    },
+    {
+      "vsiTitle": "Numbers",
+      "vsiAuthor": "Peter M. Higgins",
+      "rationale": "Section B.1 covers arithmetic including natural numbers, integers, binary operations, number systems, and logarithms."
+    },
+    {
+      "vsiTitle": "Geometry",
+      "vsiAuthor": "Maciej Dunajski",
+      "rationale": "Section C covers Euclidean, non-Euclidean, projective, analytic, differential, and algebraic geometry in comprehensive detail."
+    },
+    {
+      "vsiTitle": "Trigonometry",
+      "vsiAuthor": "Glen Van Brummelen",
+      "rationale": "Section C.4.b specifically covers trigonometry as part of analytic and trigonometric geometry."
+    },
+    {
+      "vsiTitle": "Topology",
+      "vsiAuthor": "Richard Earl",
+      "rationale": "Section F covers topology in detail including general topology, algebraic topology, topological spaces, and manifold theory."
+    },
+    {
+      "vsiTitle": "Number theory",
+      "vsiAuthor": "Robin Wilson",
+      "rationale": "Section E.2 covers number theory including elementary, algebraic, analytic, geometric, and probabilistic number theory."
+    },
+    {
+      "vsiTitle": "Combinatorics",
+      "vsiAuthor": "Robin Wilson",
+      "rationale": "Section E.1 covers combinatorics and combinatorial geometry, including methods, results, and unsolved problems."
+    },
+    {
+      "vsiTitle": "Probability",
+      "vsiAuthor": "John Haigh",
+      "rationale": "Section D.6 covers the theory of probability including probability on finite and infinite dimensional spaces."
+    },
+    {
+      "vsiTitle": "Statistics",
+      "vsiAuthor": "David J. Hand",
+      "rationale": "Statistics is grounded in the theory of probability covered in section D.6 and is closely related to the analysis topics in section D."
+    },
+    {
+      "vsiTitle": "Infinity",
+      "vsiAuthor": "Ian Stewart",
+      "rationale": "Set theory (section A) deals fundamentally with infinite sets including Cantorian set theory and the axioms of Zermelo-Fraenkel."
+    },
+    {
+      "vsiTitle": "Gödel's Theorem",
+      "vsiAuthor": "A. W. Moore",
+      "rationale": "Section A.3.b discusses Gödel's theorem as a limitation of axiomatic set theory, demonstrating the failure to prove consistency."
+    },
+    {
+      "vsiTitle": "Symmetry",
+      "vsiAuthor": "Ian Stewart",
+      "rationale": "Section B.4.b covers group theory, which is the mathematical formalization of symmetry, and section C.1.c covers transformation geometry."
+    },
+    {
+      "vsiTitle": "Fractals",
+      "vsiAuthor": "Kenneth Falconer",
+      "rationale": "Fractals relate to topology (section F), the concept of dimension, and special curves and geometric objects covered in sections C and D."
+    },
+    {
+      "vsiTitle": "Mathematical Analysis",
+      "vsiAuthor": "Richard Earl",
+      "rationale": "Section D covers analysis in comprehensive detail including real analysis, complex analysis, differential equations, functional analysis, and Fourier analysis."
+    },
+    {
+      "vsiTitle": "Chaos",
+      "vsiAuthor": "Lenny Smith",
+      "rationale": "Section D.3.d covers dynamical systems on manifolds, and chaos theory is a key branch of the study of nonlinear differential equations in section D.3."
+    },
+    {
+      "vsiTitle": "Logic",
+      "vsiAuthor": "Graham Priest",
+      "rationale": "Set theory (section A) is deeply connected to logic, and sections A.3.a-b discuss axiomatic foundations and Gödel's theorem."
+    },
+    {
+      "vsiTitle": "Applied mathematics",
+      "vsiAuthor": "Alain Goriely",
+      "rationale": "Many branches covered here (differential equations, Fourier analysis, vector/tensor analysis) have extensive applications, bridging pure and applied mathematics."
+    },
+    {
+      "vsiTitle": "Mathematical finance",
+      "vsiAuthor": "Mark H. A. Davis",
+      "rationale": "Mathematical finance draws on probability theory (D.6), stochastic processes, and analysis (D), representing a major application of these branches."
+    }
+  ]
+}

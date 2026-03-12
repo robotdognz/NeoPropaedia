@@ -1,0 +1,111 @@
+{
+  "sectionCode": "10/37",
+  "sectionCodeDisplay": "10/37",
+  "title": "The Technological Sciences",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "History of the technological sciences [see also Part Seven]",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Nature and scope of engineering",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Engineering as a profession: education and training; functions of the engineer; professional associations",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Branches of engineering: civil engineering, aeronautical engineering, chemical engineering, electrical and electronics engineering, mechanical engineering, optical engineering, nuclear engineering",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The nature and scope of agricultural sciences",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "History of the agricultural sciences [see also 73 1.A.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Subdivisions of the agricultural sciences: soil science, plant production, animal production, agricultural economics and management, agricultural engineering [see also 731.B., C., and D.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The nature and scope of recently developed interscience disciplines",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Bionics",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Mimicry of nature as the basis for bionics; e.g., the human brain as the paradigm for computer memory devices, construction of vehicles with articulated legs",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The use of natural models to understand and solve engineering problems; e.g., natural neural networks as models for electronic circuits, the human brain as a model for computers and information-processing devices",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Systems engineering and operations research [see 712.B.]",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C.1",
+      "targetSection": "73",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.2",
+      "targetSection": "731",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "D.2",
+      "targetSection": "712",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "D.3",
+      "targetSection": "10/23",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Engineering Optics, Principles of",
+    "Materials Science"
+  ],
+  "partNumber": 10,
+  "divisionId": "10-03"
+}

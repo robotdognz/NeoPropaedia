@@ -1,0 +1,555 @@
+{
+  "sectionCode": "132",
+  "sectionCodeDisplay": "132",
+  "title": "Galaxies and Stars",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Galaxies in general",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Statistical properties",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Classification of galaxies",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Observational methods of determining the distances to galaxies",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Distribution of galaxies",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Physical properties: size, mass, luminosity, age, composition",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Structural features",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Clusters of galaxies",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Types and distribution",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Interactions between cluster members",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Extragalactic radio and X-ray sources",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Radio galaxies",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "X-ray galaxies",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Quasars",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The origin and evolution of the galaxies [see also 131.E.2.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The Galaxy: the Milky Way system *",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Distance determinations in the Galaxy",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Stellar velocities: the motions of stars with respect to the Sun, the motion of the Sun with respect to the Local Standard of Rest (lsr)",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The stars and star clusters nearest the Sun",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The classification of stars according to the Hertzsprung-Russell diagram",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The galactic composition",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The stellar populations",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Emission nebulae: composition and physical characteristics of H II regions",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Planetary nebulae",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Supernova remnants",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Dust clouds",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "The general interstellar medium: principal components and their distribution throughout the various galactic regions",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Grains of interstellar dust",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Interstellar clouds of neutral hydrogen (H I regions)",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Interstellar molecules and radicals",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Primary cosmic rays",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Interstellar magnetic fields",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Structure and dynamics of the Galaxy",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The spatial structure of the Galaxy: the dimensions of the Galaxy",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Regions of the Galaxy: the nucleus, the central bulge, the dish, the spiral arms, the spherical component, the massive halo",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The magnetic field of the Galaxy: its origin and its effects on cosmic rays, radio waves, and light",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The rotation of the Galaxy: the differential rotation of stars, gas about the galactic centre",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The evolution of the Galaxy [see also 131.E.2.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Hydromagnetic and gravitational theories of the formation of spiral structure",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Chemical evolution: the problem of the distribution of heavy elements",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Star formation: theories concerning the gravitational condensation of galactic dust and gas clouds",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Star clusters and stellar associations",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Globular clusters: systems containing many thousands to a million old stars in a symmetrical, roughly spherical form",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Open clusters: systems containing about a dozen to hundreds of stars, usually in an unsymmetrical arrangement",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Stellar associations: loose groupings containing dozens to a few hundred stars of similar spectral type and common origin",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Relationship of clusters to the Galaxy: the formation and dispersion of clusters and their locations in the Galaxy",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Clusters in external galaxies",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Stars",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The identification and nomenclature of the stars",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The celestial sphere and celestial coordinate systems",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The constellations and other sky divisions",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Star names and designations",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Modem star maps and catalogs",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Observable stellar characteristics",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Stellar positions and motions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The apparent brightness or apparent luminosity of the stars: the ubv and other systems",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Stellar spectra [see also 111.C.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Derived, or calculated, stellar characteristics",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Intrinsic stellar brightness: absolute magnitudes, total luminosities",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Stellar masses",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Stellar diameters",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Stellar temperatures",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The average characteristics of main-sequence, or dwarf, stars",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Stellar variability",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Geometric variables; e.g., eclipsing binaries",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Intrinsic variables",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Pulsating stars; e.g., Cepheid, RR Lyrae, and Beta Canis Majoris variables",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Explosive variables; e.g., novae, supernovae, and novalike variables",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Statistics of stars",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Correlations between luminosity, spectrum, mass, and radius: the Hertzsprung-Russell diagram and other relations",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Statistics of binary star systems",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Statistics of special types of stars",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Stellar structure",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Stellar atmospheres",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Internal structure of stars",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Stellar evolution [see also 131.E.2.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The life history of a typical star",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Formation of a protostar by gravitational contraction",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Attainment of the main sequence",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Evolution away from the main sequence",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Estimates of stellar ages",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Formation of chemical elements in stars",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.6",
+      "targetSection": "131",
+      "targetPath": "E.2"
+    },
+    {
+      "fromPath": "B.7",
+      "targetSection": "131",
+      "targetPath": "E.2"
+    },
+    {
+      "fromPath": "D.2.c",
+      "targetSection": "111",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "D.7",
+      "targetSection": "131",
+      "targetPath": "E.2"
+    },
+    {
+      "fromPath": "D.7.c",
+      "targetSection": "10/32",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Cosmos, The",
+    "Galaxies",
+    "Nebula",
+    "Physical Sciences, The",
+    "Stars and Star Clusters"
+  ],
+  "partNumber": 1,
+  "divisionId": "1-03"
+}

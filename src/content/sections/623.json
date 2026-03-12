@@ -1,0 +1,106 @@
+{
+  "sectionCode": "623",
+  "sectionCodeDisplay": "623",
+  "title": "Motion Pictures",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The art of motion pictures",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature of motion-picture art: the classification of motion pictures",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The component arts of motion pictures",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The role of the writer of the script or screenplay [see 621.C.3.g.)",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Motion-picture acting: characteristics that distinguish it from acting in the theatre",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The role of the director",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The role of the film editor",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The use of technology in the creative process: the camera, sound, animation, and other special effects",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Motion-picture production: scenic design, costumes and makeup, lighting, shooting, editing, film processing",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The interrelation of other arts in motion pictures: literature, music, dance, painting and drawing, architecture",
+      "children": []
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The nonaesthetic contexts of motion pictures",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The motion-picture industry",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Functions of motion pictures: their use as media of education and propaganda",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The study and appreciation of motion pictures",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.2.a",
+      "targetSection": "621",
+      "targetPath": "C.3.g"
+    }
+  ],
+  "macropaediaReferences": [
+    "Motion Pictures"
+  ],
+  "partNumber": 6,
+  "divisionId": "6-02"
+}

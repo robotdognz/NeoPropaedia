@@ -1,0 +1,215 @@
+{
+  "sectionCode": "532",
+  "sectionCodeDisplay": "532",
+  "title": "The Consumer and the Market: Pricing and the Mechanisms for",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Scarcity, utility, and value: their roles in pricing, their relationship to the consumer",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The satisfaction of material wants: the behaviour of consumers",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "National consumption levels in the private sector: trends in expenditures for goods and services",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Factors influencing consumers' tastes and spending",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The protection of consumer interests",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Markets as an economic institution in a mixed economy",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Markets classified by reference to competition and monopoly",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Purely competitive markets as distinguished from markets of imperfect competition: monopoly, oligopoly, and monopolistic competition",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Influences affecting the behaviour of sellers under various competitive conditions",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The concept of workable competition",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Government regulation of monopolistic practices",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Major types of markets",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Markets for primary commodities",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Markets for manufactured goods",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Markets for money and capital: the market for short-term loans, the securities market",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The market for labour and services [see 533.C.1.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The counterpart of the market under full-scale economic planning: markets under socialism",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The historical development of markets: the market in economic theory, the relationship of the market to social welfare and politics",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Markets in international trade [see 533. F.]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The function of the market in the establishment of equilibrium between supply and effective demand",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The price system in capitalist economies",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The price system as a means of organizing economic activity: the determination of what is to be produced, how goods are to be produced, and who gets the product",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Limitations on and failures of the price system: areas in which the price system does not function",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Control of prices by business: price-fixing [see C.l.a., above]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Government-established price controls and subsidies: regulations concerning public utilities and bank interest rates [see 534.B.4.b., and 534.B.6.b.]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Economic relationships not susceptible to control by prices: \"externalities,\" such as air pollution and highway congestion [see also 737.C.1.]",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Imperfect knowledge on the part of buyers as to alternative uses of their buying power [see B.2., above]",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C.2.d",
+      "targetSection": "533",
+      "targetPath": "C.1"
+    },
+    {
+      "fromPath": "C.5",
+      "targetSection": "533",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D.2.b",
+      "targetSection": "534",
+      "targetPath": "B.4.b"
+    },
+    {
+      "fromPath": "D.2.c",
+      "targetSection": "737",
+      "targetPath": "C.1"
+    },
+    {
+      "fromPath": "D.3",
+      "targetSection": "534",
+      "targetPath": "B.1"
+    },
+    {
+      "fromPath": "D.3",
+      "targetSection": "10/36",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "mechanisms for distributing goods",
+    "Economic Theory Markets",
+    "Government Finance Social Sciences, The",
+    "International Trade"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-03"
+}

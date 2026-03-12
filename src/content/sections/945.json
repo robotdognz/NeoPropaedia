@@ -1,0 +1,101 @@
+{
+  "sectionCode": "945",
+  "sectionCodeDisplay": "945",
+  "title": "Southern Africa to c. 1885",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The geography and ethnography of southern Africa: definition of the region, the archaeological and documentary historical sources and historiographic problems, the character and achievements of civilizations in southern Africa",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Southern Africa before c. 1500",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Origins of mankind and development of culture in the Stone Age and Iron Age, the migrations of Bantu-speaking peoples in southern Africa from c. ad 200-400",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The southeast coast trade in the Late Iron Age and interior trade routes to Mapungubwe (northeastern South Africa), Great Zimbabwe (southeastern Zimbabwe), and Ingombe Ilede (Zambia)",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Southern Africa from c. 1500 to c. 1885",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Portuguese expansion (1530s) into the Zambezi valley and defeat of the Mwene Mutapa's empire in 1629: Portuguese defeats (1690s) by the Rozwi empire",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The Portuguese in west central Africa: conquests over the Kongo kingdom (1665) and the Ndongo kingdom (1671), control of the slave trade",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The Dutch settlement at the Cape of Good Hope from 1652: expansion toward the Orange River and subjugation of the Khoisans",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Early 19th-century African migrations and rise of the Zulu Empire (1816) under Shaka, later black migrations into Rhodesia",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The slave and ivory trade north of the Zambezi in the 19th century: decline of the slave trade in some areas and increased commerce in ivory, Yao migration into present-day Malawi, influence of missionaries",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The Cape eastern frontier: Boer and Xhosa resistance to the British, the Boer Great Trek (1835-54) into the interior, continued friction with the British",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Relations between Boers and the black population in the Transvaal",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Establishment of the Orange Free State, the British colonies of Natal and Cape Colony",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The era of mineral discoveries and confederation: diamonds and gold, Transvaal-Pedi and Zulu wars",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [],
+  "macropaediaReferences": [
+    "Africa",
+    "Southern Africa"
+  ],
+  "partNumber": 9,
+  "divisionId": "9-04"
+}

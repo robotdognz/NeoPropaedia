@@ -1,0 +1,421 @@
+{
+  "sectionCode": "10/33",
+  "sectionCodeDisplay": "10/33",
+  "title": "The Earth Sciences",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The history of the Earth sciences",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The origins of the Earth sciences in prehistoric times",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The Earth sciences from antiquity to the 16th century",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Geologic sciences",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Speculations about earthquakes and volcanic eruptions",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Speculations about fossils",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Study of landforms and land-sea relations",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Hydrologic and atmospheric sciences",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Theories of groundwater circulation and precipitation",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The origin of the Nile and the cause of its floods",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Study of the tides",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The Earth sciences in the 16th, 17th, and 18th centuries",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Geologic sciences",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The beginnings of mineralogy: the study of ore deposits",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The development of paleontology and stratigraphy",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The controversy between the Neptunists and Plutonists: Earth history according to Werner and Hutton",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Hydrologic sciences",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Theories of spring discharge",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The earliest quantitative investigations of the global water balances",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Atmospheric sciences",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The study of water vapour in the atmosphere",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The study of atmospheric pressure, temperature, and circulation",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The Earth sciences in the 19th century",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Geologic sciences",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The development of crystallography and the classification of minerals and rocks",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The concept of faunal succession and organic evolution: the contributions of William Smith, Charles Darwin, and others",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The concept of uniformitarianism: contributions of Charles Lyell and others",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Evidence for an Ice Age: the work of Louis Agassiz",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "The concept of geologic time and estimates of the age of the Earth",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Concepts of landform evolution",
+                  "children": []
+                },
+                {
+                  "level": "vii",
+                  "levelType": "roman",
+                  "text": "The study of gravity, isostasy, and the Earth's figure",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Hydrologic sciences",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The study of groundwater flow and surface water discharge: Darcy's law",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The beginnings of oceanography as a discipline",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Atmospheric sciences",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The study of the composition of the atmosphere",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The study of clouds, fog, dew, and storms",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The study of weather and climate: the origin of synoptic meteorology",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The Earth sciences in the 20th century",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Geologic sciences",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Development of radiometric dating",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The experimental study of rocks: experimental petrology",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Advances in geophysics: the development of seismology and the study of the internal structure of the Earth",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Astrogeologic research: the application of the Earth sciences to the investigation of the planets and their satellites",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Advances in paleontology: the development of paleoecology and micropaleontology; the study of Precambrian life",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "The theory of plate tectonics: a unification of the ideas of continental drift and seafloor spreading",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Hydrologic sciences *",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The study of water resources and seawater chemistry",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The exploitation of oceanic resources: desalinization, tidal power, and minerals from the sea",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The charting of the ocean floors: progress in bathymetry",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "The study of ocean circulation, currents, and waves",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "The study of glacier motion and high-latitude ice sheets",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Atmospheric sciences",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The application of modern technology to meteorology: ground-based remote-sensing instruments, orbiting satellites, computer models simulating atmospheric features",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Advances in weather forecasting and cloud physics",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The study of the properties and structure of the atmosphere",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "The development of weather modification methods",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "The classification of climate",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The nature, scope, and methods of the individual Earth sciences [see also Part Two]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Physical geography: the study of the distribution and spatial patterns of soils, water, climate, landforms, and other Earth features [see also 10/36.F.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The geologic sciences: mineralogy, petrology, economic geology, and geochemistry; geodesy, geophysics, structural geology, and volcanology; geomorphology; glacial geology; engineering, environmental, and urban geology; geochronology, historical geology, paleontology, stratigraphy, and astrogeology [see also Part Two, Divisions I, III, and IV]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The hydrologic sciences: hydrology, limnology, glaciology, oceanography [see also 222]",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.1",
+      "targetSection": "10/36",
+      "targetPath": "F"
+    },
+    {
+      "fromPath": "B.3",
+      "targetSection": "222",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.4",
+      "targetSection": "221",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Earth Sciences, The",
+    "Geography"
+  ],
+  "partNumber": 10,
+  "divisionId": "10-03"
+}

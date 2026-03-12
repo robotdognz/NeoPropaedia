@@ -1,0 +1,247 @@
+{
+  "sectionCode": "721",
+  "sectionCodeDisplay": "721",
+  "title": "Technology of Energy Conversion and Utilization",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Major types of energy useful to humankind",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Primary energy sources: thermonuclear reaction, nuclear fission, radioactivity",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Recurring energy sources: solar energy, natural thermal energy, wind and water energy, biomass",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Nonrenewable energy sources: coal, natural gas, oil",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Devices and techniques for the utilization of energy",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Devices for utilizing muscle energy: pulley, lever, block and tackle, treadmill [see also 722.B.1.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Devices for utilizing wind and water energy: sails and sailboats, windmills, waterwheels, wind and water turbines",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Devices for utilizing gravitational energy: pendulums, counterweight mechanisms",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Devices for utilizing strain and compression energy",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Steam engines and steam power plants",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Steam turbines [see B.2., above]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Compressed-air and compressed-gas tools and machines",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Hydraulic devices",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Devices for utilizing magnetic and electrical energy",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Magnets, electromagnets",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Electric motors: induction motors, synchronous motors, commutator motors utilizing alternating current and direct current",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Devices for utilizing rotational energy: centrifuges, gyroscopes",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Devices for utilizing heat energy: heat exchangers, refrigeration equipment",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Devices for utilizing chemical energy",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Internal-combustion engines: gasoline and gas turbine engines; diesel engines; jet, turbojet, fan-jet, and turboprop engines; rocket engines",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Chemical explosives: black powder, nitroglycerin, dynamites, nitrocellulosic explosives, military explosives, other modern high explosives",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "Devices and materials for utilizing nuclear energy: nuclear fission reactors, radioactive isotopes, nuclear fusion reactors [see also 112.B., C., F., and G.]",
+          "children": []
+        },
+        {
+          "level": "10",
+          "levelType": "numeric",
+          "text": "Devices for utilizing solar energy",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Devices for energy conversion",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Thermoelectric devices",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Thermionic devices",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Magnetohydrodynamic power generators",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Batteries and fuel cells",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Lamps and other lighting devices",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "X-ray tubes [see also lll.D.l.]",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Devices for electric power generation: turbine-driven generators, engine-driven generators, nuclear-powered generators, hydraulic-turbine-driven generators, thermoelectric generators, dynamos, photovoltaic devices",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Devices for energy concentration and control",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Electron tubes",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Solid-state devices; e.g., transistors, semiconductor diodes, integrated circuits",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Optoelectronic devices; e.g., liquid-crystal displays, optical fibres, semiconductor lasers",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.1",
+      "targetSection": "722",
+      "targetPath": "B.1"
+    },
+    {
+      "fromPath": "B.9",
+      "targetSection": "112",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "E",
+      "targetSection": "10/37",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Electronics Industries, Chemical Process",
+    "Energy Conversion Industries, Extraction and Processing"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-02"
+}

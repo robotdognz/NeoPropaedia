@@ -1,0 +1,415 @@
+{
+  "sectionCode": "242",
+  "sectionCodeDisplay": "242",
+  "title": "The Interpretation of the Geologic Record",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The stratigraphic interpretation of the geologic record",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The layered rocks of the Earth's crust and their depositional environments: the nature of the rock record [see also 214.B.2.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Clastic sedimentary rocks",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Carbonate rocks",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Volcanic rocks",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Cyclic deposits: cyclothems, varved deposits",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Stratigraphic classifications and their historical development: criteria for the correlation of layered deposits",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The principle of uniformitarianism",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The principle of superposition of strata",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The idea of a fossil succession",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The facies concept",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The stage concept",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "The recognition of zones",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Radiometric dating [see D.2., below]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Stratigraphic nomenclature in theory and practice",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Stratigraphic terminology and its standardization",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Stratigraphic boundary problems",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Special stratigraphic terminologies and divisions",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The paleontological interpretation of the geologic record",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature of fossils and fossilization processes",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The fossil record",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Precambrian life: the Proterozoic fossil record",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The origin of life [see 312.A.]",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Precambrian protists, plants, and animals: the Gunflint Chert deposits, Ediacara fauna, and other remains",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Post-Precambrian life: the Phanerozoic fossil record [see also 243 and 313]",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Fossil plants",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Fossil protists",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Fossil sponges",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Fossil cnidarians (e.g., corals)",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Fossil mollusks (e.g., ammonoids)",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Conodonts",
+                  "children": []
+                },
+                {
+                  "level": "vii",
+                  "levelType": "roman",
+                  "text": "Bryozoans",
+                  "children": []
+                },
+                {
+                  "level": "viii",
+                  "levelType": "roman",
+                  "text": "Brachiopods",
+                  "children": []
+                },
+                {
+                  "level": "ix",
+                  "levelType": "roman",
+                  "text": "Fossil arthropods (e.g., trilobites)",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "x",
+              "levelType": "lowercase",
+              "text": "Fossil echinoderms (e.g., sea lilies) xi. Graptolites xii. Fossil fish xiii. Fossil amphibians xiv. Dinosaurs and other fossil reptiles xv. Fossil birds xvi. Fossil mammals",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The appearance and disappearance (mass extinctions and background extinctions) of species revealed in the fossil record [see also 312.B.]",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The paleontological criteria for the correlation of layered rocks",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Index fossils",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Faunal and floral assemblages",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Organic microfossils: pollen, spores, tests",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Relative age dating",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Application to geologic problems: stratigraphic correlation and the relative geologic time scale [see also 243]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Application to archaeological problems [see 10/41. B.2.b.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Absolute dating",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General considerations: the meaning of absolute age, requirements for absolute dating, the rate of record accumulation",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Radiometric dating [see also 723.G.8.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Radioactivity and radioactive decay [see 112.C.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Principles of radiometric dating",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Definition of time zero, sources of error in radiometric dating",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Dating methods",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Non-radiometric dating: biological and geologic processes as absolute chronometers",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Applications of absolute dating",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The absolute geologic time scale",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Determination of the age of the Earth and the ages of rocks and meteorites",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Determination of the rates of seafloor spreading",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "The paleogeographical interpretation of the geologic record",
+      "children": []
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1",
+      "targetSection": "214",
+      "targetPath": "B.2"
+    },
+    {
+      "fromPath": "B.2.i",
+      "targetSection": "312",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "B.2.b",
+      "targetSection": "243",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.3",
+      "targetSection": "312",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "C.1",
+      "targetSection": "243",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.2",
+      "targetSection": "10/41",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D.2",
+      "targetSection": "723",
+      "targetPath": "G.8"
+    },
+    {
+      "fromPath": "D.2.a",
+      "targetSection": "112",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "F",
+      "targetSection": "241",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "F",
+      "targetSection": "10/33",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Earth, The: Its Properties, Composition, and Structure",
+    "Geochronology: The Interpretation and Dating of the Geologic Record"
+  ],
+  "partNumber": 2,
+  "divisionId": "2-04"
+}

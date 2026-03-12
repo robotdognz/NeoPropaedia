@@ -1,0 +1,183 @@
+{
+  "sectionCode": "213",
+  "sectionCodeDisplay": "213",
+  "title": "The Structure and Composition of the Earth's Interior",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The Earth's concentric layers",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Physical properties and zonal structure of the Earth [see also 212]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The basic divisions of the solid Earth",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The crust: the Earth's outer layer, which is differentiated into continental and oceanic crust",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The Mohorovicic discontinuity: the zone that separates crust from mantle",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The mantle: the layer between crust and core that comprises the bulk of the Earth's volume",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The core: the Earth's innermost region, thought to be molten liquid except for a solid inner portion",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The development of the Earth's structure and composition [see 241. A.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Earthquakes: sources of seismic waves within the Earth",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Causes of earthquakes",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Distribution of earthquakes",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Magnitude, motion, and energy of earthquakes [see also 126.D. and 128.A.]",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Seismic measurements and their interpretation [see also 723.F.6.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Distribution of elements in the Earth's core, mantle, and crust [see 214.C.]",
+      "children": []
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The indirect geophysical and geochemical evidence used to infer the structure and composition of the Earth's interior",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Geophysical evidence, mainly from earthquake analyses [see also 212.E.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Seismic wave velocities",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Density distribution",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Geochemical evidence",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Investigations of geochemical equilibria at high temperatures and pressures: phase transitions in the Earth's interior",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The composition and mineralogy of meteorites that may correspond to rocks forming the Earth's interior",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1",
+      "targetSection": "212",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.3",
+      "targetSection": "241",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.3",
+      "targetSection": "126",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "B.4",
+      "targetSection": "723",
+      "targetPath": "F.6"
+    },
+    {
+      "fromPath": "C",
+      "targetSection": "214",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "D.1",
+      "targetSection": "212",
+      "targetPath": "E"
+    },
+    {
+      "fromPath": "D.2.c",
+      "targetSection": "10/33",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Earth, The: Its Properties, Composition, and Structure",
+    "Earthquakes",
+    "Division I. Section 214 69"
+  ],
+  "partNumber": 2,
+  "divisionId": "2-01"
+}

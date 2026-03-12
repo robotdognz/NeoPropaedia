@@ -1,0 +1,323 @@
+{
+  "sectionCode": "333",
+  "sectionCodeDisplay": "333",
+  "title": "Coordination of Vital Processes: Regulation and Integration",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Maintenance of steady states in biological systems: homeostasis",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature of homeostatic systems",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Homeostatic processes",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Homeostatic control hierarchies: homeostatic subsystems that serve either organisms or ' natural communities",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Origin and evolution of homeostasis",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Individual adjustments to gradual changes in the physical environment: acclimatization",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Inactive states accompanied by a lower than normal rate of metabolism: dormancy",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Information reception and processing: sensory reception",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Classification of sensory systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "According to location of receptors: exteroceptors, interoceptors",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "According to type of stimulus: photoreceptors, thermoreceptors, chemoreceptors, mechanoreceptors, electroreceptors, sound receptors",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Evolution of sensory systems: specialized organs and information-processing structures",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Sensory information: interactions between adjacent sense cells and sensory neurons",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Endocrine systems in animals",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General features of hormonal coordination: the relationships between endocrine and neural regulation",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Vertebrate endocrine systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Relationships of endocrine glands to each other and to the blood",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Structure and function",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Invertebrate endocrine systems: insects, crustaceans, annelid worms",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Comparative, adaptive, and evolutionary aspects of endocrine systems: the neurosecretory cell, hypothalamus-pituitary control systems",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The human endocrine system [see 421.E.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Nervous systems in animals",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Comparison of chemical and nervous regulation: control mechanisms located between the stimulus and the response",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Nervous coordination",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Intracellular coordination: general cytoplasmic responsiveness, or irritability, to a stimulus",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Organelle systems: the channeling of responsiveness at the subcellular level within more complex protozoans",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Nervous systems: the channeling of responsiveness at the cellular level within multicellular organisms",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The neuron, or nerve cell",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The transmission of the nerve impulse and the synapse [see 323. C.]",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Invertebrate nervous systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Theories of the evolutionary origin of the nervous system",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Diffuse nervous systems",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Centralized nervous systems",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Vertebrate nervous systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The central nervous system: the brain and its components; the spinal cord; the brain coverings (meninges), cavities, cerebrospinal fluid, and neuroglia (nonnervous tissue)",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The peripheral nervous system",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Embryonic development of the vertebrate nervous system",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Evolution of the vertebrate nervous system",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Biodynamics of the vertebrate nervous system",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The human nervous system [see 421.J.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "The biological clock: periodicity",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Rhythms without apparent external correlates: brain waves, breathing, heartbeat",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Rhythms correlated with natural geophysical cycles: solar-day rhythms, lunar-tidal rhythms, monthly rhythms, annual or seasonal rhythms, epochal rhythms",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The mechanism of the biological clock",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Factors affecting biological periodicities",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C.5",
+      "targetSection": "421",
+      "targetPath": "E"
+    },
+    {
+      "fromPath": "D.2.i.ii",
+      "targetSection": "323",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D.5",
+      "targetSection": "421",
+      "targetPath": "J"
+    },
+    {
+      "fromPath": "E.5",
+      "targetSection": "352",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "E.5",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "integration",
+    "Endocrine Systems",
+    "Nerves and Nervous Systems",
+    "Sensory Reception"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-03"
+}

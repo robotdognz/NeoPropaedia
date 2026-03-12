@@ -1,0 +1,382 @@
+{
+  "sectionCode": "724",
+  "sectionCodeDisplay": "724",
+  "title": "Extraction and Conversion of Industrial Raw Materials",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The world's physical and biological resources",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The identification and distribution of natural resources",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The management of resources",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Conservation of natural resources",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Salvage operations",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Technology of the extraction industries",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Mining and quarrying",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Processes: underground mining, surface mining, solution mining",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Products: coal, salt, stone, metal ores, sulfur, phosphates [see also C.2. and 3., below, and 214.A.4.C. and B.5.a.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Petroleum and natural gas production [see also C.I., below, 214.B.5.b. and d., and 732.D.2.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Primary conversion of raw materials",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Petroleum refining [see also B.2., above, 214.B.5.b., and 732.D.2.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Coal utilization: production of coke, coal tar, light oil, gas, and chemicals [see also B.l.b., above, and 214.B.5.a.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Production and processing of metal ores and metals [see also B.l.b., above, and 214.A.4.C.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Aluminum",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Calcium",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Chromium",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Cobalt",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Copper",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Gold",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Iron",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Lead",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Magnesium",
+              "children": []
+            },
+            {
+              "level": "j",
+              "levelType": "lowercase",
+              "text": "Mercury",
+              "children": []
+            },
+            {
+              "level": "k",
+              "levelType": "lowercase",
+              "text": "Nickel",
+              "children": []
+            },
+            {
+              "level": "l",
+              "levelType": "lowercase",
+              "text": "Platinum",
+              "children": []
+            },
+            {
+              "level": "m",
+              "levelType": "lowercase",
+              "text": "Silver",
+              "children": []
+            },
+            {
+              "level": "n",
+              "levelType": "lowercase",
+              "text": "Sodium and potassium",
+              "children": []
+            },
+            {
+              "level": "o",
+              "levelType": "lowercase",
+              "text": "Steel and steel alloys",
+              "children": []
+            },
+            {
+              "level": "p",
+              "levelType": "lowercase",
+              "text": "Tin",
+              "children": []
+            },
+            {
+              "level": "q",
+              "levelType": "lowercase",
+              "text": "Titanium",
+              "children": []
+            },
+            {
+              "level": "r",
+              "levelType": "lowercase",
+              "text": "Tungsten",
+              "children": []
+            },
+            {
+              "level": "s",
+              "levelType": "lowercase",
+              "text": "Uranium",
+              "children": []
+            },
+            {
+              "level": "t",
+              "levelType": "lowercase",
+              "text": "Zinc",
+              "children": []
+            },
+            {
+              "level": "u",
+              "levelType": "lowercase",
+              "text": "Rare-earth metals",
+              "children": []
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Metal alloys",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Production of synthetic gemstones and industrial crystals",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Processing of stone, sand, clay, and gravel",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Manufacture of conventional and special types of glass and glass products",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Manufacture of cement, gypsum plasters, and plastic cements",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Manufacture of industrial ceramics",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Manufacture of bricks and tiles",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Processing of water to obtain salt, magnesium, oxygen, hydrogen, and other elements",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Processing of air to obtain oxygen, nitrogen, noble gases, and other gases",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Processing of plant and animal products",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "To obtain paper and pulp [see also 732. D. 3.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "To obtain roundwood, sawn wood, veneer, plywood and laminated constructions, particleboard, and fibreboard [see also 732.C.8.]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "To obtain tobacco and other nonfood products",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "To obtain leather and hides [see also 732.C.3.]",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "To obtain furs [see also 732.C.4.]",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "To obtain natural fibres [see also 732.C.1. and 732.D.9.]",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "To obtain pharmaceuticals [see also 732.D.4.]",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "To obtain oils, fats, and waxes",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C.8.a",
+      "targetSection": "732",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.8.b",
+      "targetSection": "732",
+      "targetPath": "C.8"
+    },
+    {
+      "fromPath": "C.8.d",
+      "targetSection": "732",
+      "targetPath": "C.3"
+    },
+    {
+      "fromPath": "C.8.e",
+      "targetSection": "732",
+      "targetPath": "C.4"
+    },
+    {
+      "fromPath": "C.8.f",
+      "targetSection": "732",
+      "targetPath": "C.1"
+    },
+    {
+      "fromPath": "C.8.g",
+      "targetSection": "732",
+      "targetPath": "D.4"
+    },
+    {
+      "fromPath": "C.8.i",
+      "targetSection": "731",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.8.i",
+      "targetSection": "732",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Conservation of Natural Resources Industrial Glass",
+    "Forestry and Wood Production Industries, Extraction and Processing",
+    "Industrial Ceramics"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-02"
+}

@@ -1,0 +1,102 @@
+{
+  "sectionCode": "211",
+  "sectionCodeDisplay": "211",
+  "title": "The Planet Earth",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The orbital motions of the Earth",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The revolution of the Earth about the Sun, the rotation of the Earth on its axis",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Forces and dynamic effects related to the rotation of the Earth",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The Coriolis force",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The effects of centrifugal force",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Tidal friction",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The figure of the Earth",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The conventional definition of the figure of the Earth: the geoid",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The development of improved approximations to the Earth's size and shape",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The world geodetic system: the measurement of geodetic parameters",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The astrogravimetric method",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Satellite measurements",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Correlation of data from different methods",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.4",
+      "targetSection": "10/33",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Earth, The: Its Properties, Composition, and Structure",
+    "Solar System, The"
+  ],
+  "partNumber": 2,
+  "divisionId": "2-01"
+}

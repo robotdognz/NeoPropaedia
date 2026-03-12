@@ -1,0 +1,327 @@
+{
+  "sectionCode": "732",
+  "sectionCodeDisplay": "732",
+  "title": "Technology of the Major Industries",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Principles of organization of work and production [see 712]",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Major manufacturing industries",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The aerospace industry",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The automotive industry",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The clothing and footwear industry",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The furniture industry",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The major fabrication industries",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The textile industry",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The steel industry [see also 725. B.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The leather and hide industry",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The fur industry",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The floor-covering industry",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The electronics industry",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The tool and die industry",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "The lumber industry",
+          "children": []
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "The cutlery industry",
+          "children": []
+        },
+        {
+          "level": "10",
+          "levelType": "numeric",
+          "text": "The abrasives industry",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The major processing industries",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The chemical industry",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The petroleum industry [see also 724.B.2.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The paper industry",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The pharmaceuticals industry [see also 10/35.C.4.]",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The plastics industry",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The rubber industry",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The surface-coating industry",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "The dye and pigment industry [see also 122.G.l.t.]",
+          "children": []
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "The man-made fibre industry",
+          "children": []
+        },
+        {
+          "level": "10",
+          "levelType": "numeric",
+          "text": "Production of industrial and residential gases [see also 724.C.7.]",
+          "children": []
+        },
+        {
+          "level": "11",
+          "levelType": "numeric",
+          "text": "The cosmetics and personal care industry *",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "The construction industries [see 733]",
+      "children": []
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "The service industries",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Hotels and motels",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Restaurants",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Food service systems",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The transportation industry [see 734]",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Security and protection systems",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "The utilities industries",
+      "children": []
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "The merchandising and marketing of consumer goods [see 533.H.5.]",
+      "children": []
+    },
+    {
+      "level": "I",
+      "levelType": "major",
+      "text": "Industrial research and development",
+      "children": []
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A",
+      "targetSection": "712",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.2",
+      "targetSection": "725",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D.2",
+      "targetSection": "724",
+      "targetPath": "B.2"
+    },
+    {
+      "fromPath": "D.4",
+      "targetSection": "10/35",
+      "targetPath": "C.4"
+    },
+    {
+      "fromPath": "D.8",
+      "targetSection": "122",
+      "targetPath": "G"
+    },
+    {
+      "fromPath": "D.10",
+      "targetSection": "724",
+      "targetPath": "C.7"
+    },
+    {
+      "fromPath": "E",
+      "targetSection": "733",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "F.4",
+      "targetSection": "734",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "H",
+      "targetSection": "533",
+      "targetPath": "H.5"
+    },
+    {
+      "fromPath": "J",
+      "targetSection": "724",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "J",
+      "targetSection": "721",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "J",
+      "targetSection": "629",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "J",
+      "targetSection": "734",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "J",
+      "targetSection": "722",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Dress and Adornment Industries, Chemical Process",
+    "Industries, Extraction and Processing",
+    "Ford, Henry",
+    "Forestry and Wood Production Industries, Manufacturing",
+    "Industrial Ceramics Industries, Textile",
+    "Industrial Glass"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-03"
+}

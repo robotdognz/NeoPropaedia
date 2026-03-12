@@ -1,0 +1,644 @@
+{
+  "sectionCode": "214",
+  "sectionCodeDisplay": "214",
+  "title": "The Earth's Constituent Minerals and Rocks",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The mineral constituents of the Earth",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The chemical composition, internal structure, and morphology of minerals",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The physical properties of minerals: cleavage; hardness; tenacity; specific gravity; magnetic, optical, and radioactive properties",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Classification of minerals in terms of crystal structure and chemical composition",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The principal nonsilicate minerals",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Native elements",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Sulfides and sulfarsenides",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Sulfosalts",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Oxides and hydroxides",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Halides",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Carbonates",
+                  "children": []
+                },
+                {
+                  "level": "vii",
+                  "levelType": "roman",
+                  "text": "Nitrates and iodates",
+                  "children": []
+                },
+                {
+                  "level": "viii",
+                  "levelType": "roman",
+                  "text": "Borates",
+                  "children": []
+                },
+                {
+                  "level": "ix",
+                  "levelType": "roman",
+                  "text": "Sulfates",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "x",
+              "levelType": "lowercase",
+              "text": "Phosphates, arsenates, and vanadates xi. Molybdates, tungstates, and chromates",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The silicate minerals",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Silicate structure and composition: the basic structural unit, the silicon-oxygen tetrahedron",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Isolated and double tetrahedral group silicates",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Ring silicates",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Chain silicates",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Sheet silicates",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Framework silicates",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The occurrence of minerals in nature",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The major rock-forming mineral groups",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The olivines; e.g., forsterite, fayalite",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The pyroxenes; e.g., augite, jadeite",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The amphiboles; e.g., hornblende, actinolite",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "The micas; e.g., muscovite, biotite",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "The feldspars; e.g., orthoclase, albite",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "The feldspathoids; e.g., nepheline, leucite",
+                  "children": []
+                },
+                {
+                  "level": "vii",
+                  "levelType": "roman",
+                  "text": "The silica minerals; e.g., quartz, tridymite",
+                  "children": []
+                },
+                {
+                  "level": "viii",
+                  "levelType": "roman",
+                  "text": "The clay minerals; e.g., kaolinite, illite",
+                  "children": []
+                },
+                {
+                  "level": "ix",
+                  "levelType": "roman",
+                  "text": "The carbonates; e.g., calcite, dolomite [see A.3.a.vi., above]",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "x",
+              "levelType": "lowercase",
+              "text": "The garnets; e.g., almandine, pyrope xi. Other major rock-forming minerals; e.g., magnetite, pyrite",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The occurrence of mineral associations and phase equilibrium",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "In igneous and metamorphic rocks",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "In sedimentary rocks and precipitates",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "In the Moon, planets, and meteorites [see also 133.C., 133.E.6.]",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Ore deposits: concentrations of metals and metalliferous minerals [see also 724.C.3.]",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Minerals of gem quality",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Rocks and other constituents of the Earth's crust",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Igneous rocks",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Properties of igneous rocks: composition, texture, and structure",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Classification of igneous rocks",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Formation of igneous rocks: magmas [see also 212. D. 4.]",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Distribution and abundance of igneous rocks",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Principal families of igneous rocks",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The intrusive igneous rocks that result when magma cools and solidifies below the surface of the Earth; e.g., granite, gabbro, diorite",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The extrusive igneous rocks that form from magma that erupts at the surface of the Earth; e.g., basalt, rhyolite, andesite",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The pyroclastic igneous rocks that form from deposits of explosive volcanic eruptions; e.g., pumice, tuff, scoria",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Sedimentary rocks",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Properties of sedimentary rocks: texture and mineralogical and geochemical composition",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Classification systems: clastic, nonclastic",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Sedimentary structures",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Sedimentary environments: marine, nonmarine",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Principal types of sedimentary rocks",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Conglomerates, breccias, and other heterogeneous clastic rocks (e.g., tillites)",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Sandstones: arenites and wackes",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Mudrocks, including shales",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Limestones and dolomites",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Siliceous rocks",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Phosphorites",
+                  "children": []
+                },
+                {
+                  "level": "vii",
+                  "levelType": "roman",
+                  "text": "Evaporites [see also 724.B. l.b.]",
+                  "children": []
+                },
+                {
+                  "level": "viii",
+                  "levelType": "roman",
+                  "text": "Iron-rich sedimentary rocks",
+                  "children": []
+                },
+                {
+                  "level": "ix",
+                  "levelType": "roman",
+                  "text": "Organic-rich sedimentary rocks [see 5., below]",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Distribution of sedimentary rocks through time",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Metamorphic rocks",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Metamorphic variables: temperature, pressure, and rock composition",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Textural and structural features",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Origin of metamorphic rocks",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Rocks of the principal facies",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Distribution of metamorphic rocks",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The rock associations formed in different environments of the Earth's crust",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "In the oceanic regions: basaltic lavas, reef limestones, abyssal sediments of the deep oceans",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "In the stable continental regions: conglomerates, sandstones, evaporites, coal measures",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "In the continental borderlands: sandstones, shales, limestones",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "In the island arcs: andesite and spilite lavas, ultrabasic intrusive rocks, graywackes, shales",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "In the major mountain ranges: regionally metamorphosed rocks, granitic batholiths, early-stage basalts and peridotites, late-stage andesite lavas",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "In the piedmont regions that are adjacent to mountain ranges: gabbros, basalts, arkoses",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Fossil fuels",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Coals [see also 724.B.l.b. and C.2.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Petroleum [see also 122.G.l.a. and 724. B.2. and C. 1.]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Tar sands and oil shales [see also 724. B.2. and C. 1.]",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Natural gas [see also 122.G. l.a. and 724.B.2.]",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Occurrence of the elements in the Earth and its envelope [see also 121.D.1.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Core",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Mantle (depleted and undepleted)",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Crust: igneous, sedimentary, and metamorphic rocks; soils",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Hydrosphere [see 222. B. and C.]",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Atmosphere [see 221. A.]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Biosphere: selective concentration of elements by plants and animals",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.4.i.iii",
+      "targetSection": "133",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "A.4.c",
+      "targetSection": "724",
+      "targetPath": "C.3"
+    },
+    {
+      "fromPath": "B.1.c",
+      "targetSection": "212",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.2.v.vii",
+      "targetSection": "724",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "B.2.v.ix",
+      "targetSection": "5",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.5.a",
+      "targetSection": "724",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "B.5.b",
+      "targetSection": "122",
+      "targetPath": "G"
+    },
+    {
+      "fromPath": "B.5.c",
+      "targetSection": "724",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.5.d",
+      "targetSection": "122",
+      "targetPath": "G"
+    },
+    {
+      "fromPath": "C",
+      "targetSection": "121",
+      "targetPath": "D.1"
+    },
+    {
+      "fromPath": "C.4",
+      "targetSection": "222",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.5",
+      "targetSection": "221",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Chemical Elements",
+    "Earth, The: Its Properties, Composition, and Structure",
+    "Fuels, Fossil",
+    "Minerals and Rocks",
+    "Volcanism"
+  ],
+  "partNumber": 2,
+  "divisionId": "2-01"
+}

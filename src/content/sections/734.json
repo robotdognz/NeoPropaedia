@@ -1,0 +1,259 @@
+{
+  "sectionCode": "734",
+  "sectionCodeDisplay": "734",
+  "title": "Transportation Technology",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "History of transportation",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Primitive transportation; e.g., travois, slide car, sledge, pack animal, dugout",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The wheel and the road: development of the vehicle wheel, roads of the ancient world, beginnings of the modem road",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Sails and oars: beginnings of shipping and shipbuilding, growth of inland waterways",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Steam transportation",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The railroad: the first locomotives, the spread of railways, the construction of railroad bridges and tunnels",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Steam navigation: the first steamships, introduction of iron ships, decline of sailing fleets",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Development of modern transportation",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Construction of road vehicles, roads, bridges, and tunnels",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Development of mass urban transport and traffic networks",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Development of the air transport industry",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Roads and highways and their construction",
+      "children": []
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Vehicles and devices for transportation across country and on roads and highways",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Nonwheeled transportation devices; e.g., bridles, saddles, harnesses, stirrups",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Animal-drawn wheeled vehicles: wagons, coaches, and carriages",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Bicycles",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Automobiles",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Trucks and buses",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Rail transportation",
+      "children": []
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Stationary conveyance systems; e.g., pipelines, conveyor belts [see 725.C.2.]",
+      "children": []
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Water transportation",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Types of ships and other waterborne vessels",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Ship design and construction",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Ship design: hydrodynamic and hydrostatic factors that influence ship stability and maneuverability, structural strength and safety considerations",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Shipbuilding, shipyard layout and construction; planning, fabrication, and assembly; launching, outfitting, and trials",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Power units for propulsion: steam generators, internal-combustion engines, gas turbines, and nuclear reactors",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Canals and inland waterways",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Harbour works: docks and quays, bulk terminals [see 733.B.5.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "Air transportation",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Aircraft: configurations, flight characteristics, missions, and special uses",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Lighter-than-air craft: balloons, airships",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Heavier-than-air craft: fixed-wing aircraft, rotary-wing aircraft, experimental and research aircraft",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Air-cushion machines",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Airports",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Air transport industry",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Space travel [see 738. C.]",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Aeronautical and space research",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "E",
+      "targetSection": "725",
+      "targetPath": "C.2"
+    },
+    {
+      "fromPath": "F.4",
+      "targetSection": "733",
+      "targetPath": "B.5"
+    },
+    {
+      "fromPath": "G.4",
+      "targetSection": "738",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Transportation"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-03"
+}

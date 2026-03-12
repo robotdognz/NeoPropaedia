@@ -1,0 +1,197 @@
+{
+  "sectionCode": "10/11",
+  "sectionCodeDisplay": "10/11",
+  "title": "History and Philosophy of Logic",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "History of logic",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Ancient logic",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Precursors of ancient logic: contributions of the Sophists, Socrates, and Plato to theories of language and the axiomatic method",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Aristotle and the logic of predicates: theories of the structure of language, theories of opposition and conversion, development of syllogistic and modal logic *",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Later developments in the logic of predicates: contributions of Theophrastus and Galen",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Founding of the logic of propositions: contributions of Theophrastus and the Megarians, Stoic logic",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Medieval logic",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Development of medieval logic: Arabic contributions, disputes between the \"old logic\" and the \"new logic\" after the translation of Aristotle's Organon, summations by William of Sherwood and Peter of Spain",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Medieval theories of language and their relation to the development of logic: the theory of categorematic and syncategorematic terms, the theory of supposition",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Medieval developments in formal logic: the logic of predicates, of propositions, and of modal expressions; logical fallacies and paradoxes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Modem logic from the Renaissance to the 20th century",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Logic in the Renaissance: the influence of Neoplatonism and of the rise of the natural sciences, the logics of Petrus Ramus and of Port-Royal",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The rise of mathematical logic during the Enlightenment: contributions of Leibniz (e.g his general calculus of reasoning and general methodology), the search for clarity and the use of diagrams",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Development of mathematical logic in the 19th century: expansions of syllogistic, Boole's algebra of logic, refinements of the calculus, the study by Frege and Cantor of the relation between logic and the foundations of mathematics",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Logic in the 20th century",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The conflict of Logicism, the view that mathematics is a continuation of logic, with Intuitionism and Formalism: Russell's Logicism and the theory of types, Brouwer's Intuitionism, Hilbert's Formalism",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Developments in the logic of propositions and in the logic of predicates",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Metalogical studies: the study of the properties of axiomatized systems; syntax and semantics as metalogical disciplines",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Logic in the East",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Indian logic: its origins in the commentaries on the scriptural texts called sutras, special problems in grammar and special types of inference, interest in the logical implications of the notion of negation",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Chinese logic: its origins in reflections on the characteristics of controversies between the major philosophies of Confucianism, Taoism, and Moism; its neglect after the establishment of Neo-Confucianism in the 11th century ad",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Philosophy of logic",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The organization of logic as a discipline",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The nature and varieties of logic: differing conceptions of its field and scope, varieties of logical symbolism",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Features and problems of logic: concerns with logical semantics or model theory, questions of the limitations of logic, Godel's incompleteness theorems, the question of logic and computability",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Issues and developments in the philosophy of logic",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Problems in meaning and truth: logical semantics of modal concepts, logic and informativeness",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Problems of ontology: problems concerning individuation and existence",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Alternative logics: modal logics, intuitionistic logic",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [],
+  "macropaediaReferences": [
+    "Logic, The History and Kinds of",
+    "Philosophies of the Branches of Knowledge"
+  ],
+  "partNumber": 10,
+  "divisionId": "10-01"
+}

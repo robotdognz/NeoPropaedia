@@ -1,0 +1,281 @@
+{
+  "sectionCode": "231",
+  "sectionCodeDisplay": "231",
+  "title": "Physical Features of the Earth’s Surface",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Vertical relief of the Earth's surface",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "FLypsography of the Earth's surface: distribution of land and sea, elevation of the continents, coastlines",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Physiography of the continents: Europe, Asia, Africa, Australia, North America, South America, Antarctica",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The oceanic regions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Principal oceanic features: continental margins, oceanic ridges, deep-sea trenches, and abyssal hills and plains [see C., D., and G., below, and 723.G.3.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Oceanic physiography",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The stable platform regions of the continents",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The continental shield areas and their age, structure, and constituent rocks [see also 214. B.4.b.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Uplift, downwarp, and fracture of continental platforms",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Plateaus and basins",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Rift valleys",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Water bodies occupying fault-bounded structural depressions: lakes and landlocked seas; inland seas with outlets to the oceans; elongated seas formed by crustal separation",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The continental shelf, slope, and rise",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Composition: evidence from bottom samples, geophysical techniques",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Structure and origin",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Submarine canyons incising the continental terrace",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The oceanic deeps",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Components of ocean basins",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The oceanic crust",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Major features of the deep-ocean floor: oceanic ridges, aseismic ridges, trenches, fracture zones, and transform faults; seamounts and guyots; abyssal hills and plains; sediments of the ocean floor [see also G., below]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The origin of ocean basins [see also 241.F.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Coral islands, coral reefs, and atolls [see also 354. B.2.]",
+      "children": []
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "The major mountain ranges and fracture zones of the Earth's crust on the continents and beneath the oceans",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Types of mountains; e.g., volcanic, block- fault, folded",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The worldwide system of mountain ranges, fracture zones, and volcanic island arcs",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The Circum-Pacific System",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The Tethyan System",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Subsidiary mountain ranges",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The volcanic island arc systems",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The rock types constituting the folded mountain ranges and island arcs [see 212.G. and 214.B.4.]",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "Oceanic ridges",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Classification of ridges",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The global oceanic ridge system: spreading-centre zones and associated phenomena",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Aseismic ridges",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Origin and growth of ridges",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "General geophysical properties",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Oceanic ridges as manifestations of divergent lithospheric plate boundaries [see also 241. F.]",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.1",
+      "targetSection": "214",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D.2",
+      "targetSection": "241",
+      "targetPath": "F"
+    },
+    {
+      "fromPath": "E",
+      "targetSection": "354",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "F.2.e",
+      "targetSection": "212",
+      "targetPath": "G"
+    },
+    {
+      "fromPath": "G.2.b",
+      "targetSection": "241",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "G.3",
+      "targetSection": "10/33",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Continental Landforms Oceans",
+    "Earth, The: Its Properties, Plate Tectonics",
+    "Composition, and Structure Volcanism",
+    "Division III. Section 232 81"
+  ],
+  "partNumber": 2,
+  "divisionId": "2-03"
+}

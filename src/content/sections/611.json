@@ -1,0 +1,107 @@
+{
+  "sectionCode": "611",
+  "sectionCodeDisplay": "611",
+  "title": "Theory and Classification of the Arts",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The philosophy of art",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Diverse conceptions of the scope of art",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Diverse theories concerning the nature, functions, and effects of art: mimetic theories, expressive theories, formalist theories, pragmatic theories",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The making of works of art: the creative process",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Classification of the arts",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Major distinctions among the kinds of art",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "By reference to the intention of the maker or the recipient of the work of art: useful art, fine art, arts that are both useful and fine",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "By reference to the manipulation of physical matter: the production of artistic works that are physical objects",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "By reference to performers as interpreters or creators of works of art",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "By reference to the use of notational devices; e.g., literature, music, dance",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Other distinctions among the kinds of art; e.g., space and time arts, primary and auxiliary arts",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The characterization of works of art by reference to the cultural or social circumstances of their production or the extent and character of their audience: the primitive, folk, and popular arts",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Style in the arts",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The nature of style",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The varieties of style; e.g., personal, school, ethnic, regional, and period styles",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [],
+  "macropaediaReferences": [
+    "Philosophies of the Branches of Knowledge"
+  ],
+  "partNumber": 6,
+  "divisionId": "6-01"
+}

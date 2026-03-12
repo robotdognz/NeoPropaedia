@@ -1,0 +1,131 @@
+{
+  "sectionCode": "243",
+  "sectionCodeDisplay": "243",
+  "title": "The Eras and Periods of Geologic Time",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Precambrian time: from the time of formation of the oldest rocks to 540 million years ago",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The Paleozoic Era: from 540 to 245 million years ago",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The Cambrian Period",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The Ordovician Period",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The Silurian Period",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The Devonian Period",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The Carboniferous Period",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The Permian Period",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The Mesozoic Era: from 245 to 66.4 million years ago",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The Triassic Period",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The Jurassic Period",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The Cretaceous Period",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The Cenozoic Era: from 66.4 million years ago to the present",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The Tertiary Period",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The Quaternary Period [see also 411.C.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The Pleistocene Epoch [see also 223.E.6. and 232.C.6.]",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "D.2",
+      "targetSection": "411",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "D.2.a",
+      "targetSection": "223",
+      "targetPath": "E.6"
+    },
+    {
+      "fromPath": "D.2.b",
+      "targetSection": "10/33",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Earth, The: Its Properties, Composition, and Structure",
+    "Geochronology: The Interpretation and Dating of the Geologic Record",
+    "Volcanism"
+  ],
+  "partNumber": 2,
+  "divisionId": "2-04"
+}

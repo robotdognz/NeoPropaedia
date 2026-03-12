@@ -1,0 +1,866 @@
+{
+  "sectionCode": "10/22",
+  "sectionCodeDisplay": "10/22",
+  "title": "Branches of Mathematics",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Set theory",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Origins of set theory and the definitions of a set and a set element, or member",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Introduction to set theory",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Fundamental set concepts",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Essential features of Cantorian set theory",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Axiomatic set theory: formal analyses of set theory based upon certain fundamental assumptions or undefined notions called axioms [see also 10/21. B.3. a.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Postulates of axiomatic set theory: the Zermelo-Fraenkel axioms, the von Neumann- Bernays-Godel axioms",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Limitations of axiomatic set theory: failure of attempts to prove the consistency of axiomatic set theory, Godel's theorem",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The present status of axiomatic set theory: profound changes in axiomatic set theory as a result of recent discoveries",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Algebra",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Arithmetic",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Fundamental definitions and laws: the concepts of natural number and integer; the binary operations of addition and multiplication; the commutative and associative laws of addition; the commutative, associative, and distributive laws of multiplication",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Theory of divisors: extension of natural number concepts to non-integers, fractions resulting from the binary operation of division",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Number systems and notation: use of the positional principle and the symbol zero to specify , magnitude in sequences of digits; number systems having different bases --e.g., binary, decimal, and sexagesimal systems [see also 10/23.A. 1.)",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Arithmetic calculation with decimals: binary operations with decimals; divisibility rules; calculation of square, cube, and higher roots",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Logarithms: formal definition of logarithms, use of logarithms to reduce the operations of multiplication and division to the simpler operations of addition and subtraction [see also 10/23.A.4.b.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Elementary and multivariate algebra",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Algebra as an extension and generalization of arithmetic",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Basic algebraic properties of numbers",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Polynomials and rational functions",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Solution of equations: the principal problem of elementary algebra",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Linear and multilinear algebra",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Linear algebra",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Vector spaces",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Matrices",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Linear transformations and linear operators",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Linear functionals and their relation to linear transformations",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Inner products and inner product spaces: self-conjugate, or Hermitian, matrices; unitary and orthogonal matrices",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Linear operators in an inner product space: self-adjoint, or Hermitian, operators; unitary and orthogonal operators; the spectral theorem for normal operators",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Multilinear algebra",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Algebraic structures",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Lattices",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Groups",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Fields",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Rings",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Categories",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Homological algebra",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Universal algebra",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Geometry",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Euclidean geometry",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Geometry as an abstract doctrine: the axiomatization of the foundations of geometry; axioms of order, incidence, congruence, parallels, and continuity and results derived from them",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The measure of polygons and polyhedra: the theories of equivalence and measure and their relation, Euclid's contribution and its modern extension and generalization",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Transformation geometry: reflection, rotation, and translation of geometric figures; homotheties and similitudes",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Geometric constructions: the equivalence between Euclidean constructions and existence theorems, gauge constructions, ruler and compass constructions, construction with compass only",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Geometry of more than three dimensions: the generalization of Euclidean geometry",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "The concept of convexity and convex sets",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Non-Euclidean geometry [see also 10/21.B.l.b.)",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Distinction between Euclidean and non-Euclidean geometry: hyperbolic geometry and elliptic geometry",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Geometric representations of the hyperbolic plane and hyperbolic space",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Coordinates in spherical and elliptical space: interpretations of four-dimensional Euclidean space",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Coordinates in the hyperbolic plane and hyperbolic trigonometry",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Transformations: hyperbolic geometry as characterized by its group of reflections",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Projective geometry",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The procedure of projection as the foundation of projective geometry",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Homogeneous coordinates: location of points in space",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Complex geometry: introduction of complex numbers as homogeneous coordinates",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Abstract geometries: extension and generalization of projective geometry to space of any number of dimensions",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Analytic and trigonometric geometry",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Plane analytic geometry: fundamental procedures and concepts",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Trigonometry",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Coordinates and transformation of coordinates",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Projective and solid analytic geometry: extensions of analytic geometry to the projective plane and to three or more dimensions",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Special curves: named curves that have been studied with regard to problems in mathematics or the physical sciences; e.g., the folium of Descartes, the lemniscate of Bernoulli, the cardioid, the cycloid, the catenary, the brachistochrone",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Combinatorial geometry [see E.l.c., below]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Differential geometry [see also F.2.e., below]",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Algebraic geometry [see also F.3., below]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Analysis",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Real analysis",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Origins and concepts of real analysis",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Number systems and their properties",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Functions and differential calculus",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Measure and integral calculus",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Complex analysis",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Theory of analytic functions of one complex variable",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Theory of analytic functions of several complex variables",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Potential theory",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Differential equations",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Ordinary differential equations",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Partial differential equations",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Special functions that arise as solutions to differential equations; e.g., the hypergeometric function, Legendre polynomials, spherical harmonics, Bessel functions",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Dynamical systems on manifolds",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Functional analysis",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "General features of functional analysis",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Calculus of variations",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Generalized functions: the theory of distributions",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Fourier analysis",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The theory of series",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Fourier series",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Harmonic analysis and integral transforms",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Representations of groups and algebras: Fourier analysis on non-Abelian groups",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Theory of probability",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Heuristic introduction to probability: the need for a mathematically precise definition of probability",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Probability on finite dimensional spaces",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Probability on infinite dimensional spaces",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Vector and tensor analysis",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Scalars, vectors, tensors, and the physical quantities that give rise to them",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Vector algebra and analysis",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Tensor algebra and analysis",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Combinatorics and number theory",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Combinatorics and combinatorial geometry",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The nature and scope of combinatorics: the definition of combinatorics as the branch of mathematics concerned with arrangements, operations, and selections within a finite or a discrete system",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Methods, results, and unsolved problems of combinatorial theory, exclusive of geometric considerations",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Combinatorial geometry",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Number theory",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Elementary number theory: properties of the whole numbers, or integers [see B. 1 .a., above]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Algebraic number theory: properties of algebraic numbers",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Analytic number theory",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Geometric number theory",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Probabilistic number theory",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Topology",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General topology",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Definition and basic concepts of topology; the subject matter and applications of topology as exemplified by certain simple topological problems and their solutions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Topological spaces: methods for constructing topological spaces; Euclidean ^-dimensional space, Hilbert space, Cartesian-product space, and other examples of topological spaces",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Topological properties",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Topological problems of current interest; e.g., the planar fixed-point problem, the polyhedral Schoenflies problem",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Topological groups and differential topology",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Interaction between analysis and topology",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The theorems of Tikhonov and Ascoli: embedding of a topological space as a subspace of a compact space",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Continuous groups",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Analysis on manifolds: topological implications of problems in global analysis",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Differential topology [see also C.6., above]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Algebraic topology [see also C.7., above]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The nature and scope of algebraic topology and its context within general topology, the basic concepts of topological spaces and maps",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Invariants: unchanging quantities that play a central role in the classification of spaces and maps",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Homotopy theory: homotopy classes and the concept of homotopy-equivalent spaces",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Homology and cohomology theory: definition of a simplex, axiomatic homology theory",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Homotopy groups: stability and suspension",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Definition and properties of fibres, fibre bundles, and fibrings",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Sheaf cohomology",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Spectral sequences: Serre, Rothenberg-Steenrod, and Eilenberg-Moore spectral sequences",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Further developments in homotopy theory. Eilenberg-MacLane spaces, the methods of killing homotopy groups, Serre's C-theory",
+              "children": []
+            },
+            {
+              "level": "j",
+              "levelType": "lowercase",
+              "text": "Generalized homology and cohomology theory: K-theory, the spectral sequence of G.W. Whitehead-Atiyah-Hirzebruch",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.3",
+      "targetSection": "10/21",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.1.c",
+      "targetSection": "10/23",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "B.1.e",
+      "targetSection": "10/23",
+      "targetPath": "A.4.b"
+    },
+    {
+      "fromPath": "C.2",
+      "targetSection": "10/21",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "F.3.k",
+      "targetSection": "10/21",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Algebra Geometry",
+    "Analysis (in Mathematics) Number Theory",
+    "Arithmetic",
+    "Probability Theory",
+    "Combinatorics and Combinatorial Set Theory",
+    "Geometry Trigonometry"
+  ],
+  "partNumber": 10,
+  "divisionId": "10-02"
+}

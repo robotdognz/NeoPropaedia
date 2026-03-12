@@ -1,0 +1,223 @@
+{
+  "sectionCode": "10/42",
+  "sectionCodeDisplay": "10/42",
+  "title": "The Humanities and Humanistic Scholarship",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "History of humanistic scholarship",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The beginnings of learning: the ideal of paideia",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Homeric education: the ideal of the hero",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The Sophists and Socrates: the turn to logos, the beginnings of rhetoric",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Plato and the Academy: the relation of theology to mythology, mathematics in the service of philosophy",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Aristotle and the Lyceum: the invention of logic, the division and organization of the sciences",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Hellenistic scholarship: the development of literary and textual criticism, Alexandria and Pergamum as cultural centres",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "The Roman ideal of humanitas : the training of the orator",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "The conflict of cultural ideals: the battle among rhetoric, philosophy, and science",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Christian learning in antiquity and the Middle Ages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The Christianization of pagan culture: the reconciliation of classical humanism with , Christian revelation",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The codification of the liberal arts: the trivium and the quadrivium",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The founding of the universities",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The Scholastic method: logic and the genres of theological exposition",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Faith and reason: the distinction of philosophy from sacred theology",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The development of humane letters from the Renaissance to the present",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The idea of Renaissance: the ideal of the classical, the rise of the vernacular, the concept of the dignity of the free individual",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Humanism and the new learning",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The search for a universal method",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The separation of science from philosophy: the rise and development of empirical science",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The quarrel between ancients and moderns: the problem of progress in learning",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "The growth of modern humanistic scholarship: the transition from the ideal of belles lettres to the scientific investigation of antiquity through archaeology and philology",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "The rise and development of the liberal arts college and the graduate school [see 562. B.]",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "The growth and proliferation of special disciplines: the knowledge explosion",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The organization of the contemporary university: questions of its social responsibility, the profession of learning [see 561.C.1.C.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The Jewish tradition of humanistic scholarship: its nature, methods, and development; its relation to classical and Christian learning",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The Islamic tradition of humanistic scholarship: its nature, methods, and development; its relation to classical and Christian learning",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The humanities and humanistic scholarship in the East: in India, in China, in Japan",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The humanities",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Diverse views of the definition and scope of the humanities",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The humanities as an educational program: the question of the humanities as a unified field of study",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Theories of the humanities as a fundamental division of knowledge: the question of the distinction of the humanities from the sciences",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.3.g",
+      "targetSection": "562",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.3.i",
+      "targetSection": "561",
+      "targetPath": "C.1.C"
+    }
+  ],
+  "macropaediaReferences": [
+    "humanistic scholarship",
+    "Bacon, Francis Humanism",
+    "Erasmus Scholarship, Classical"
+  ],
+  "partNumber": 10,
+  "divisionId": "10-04"
+}

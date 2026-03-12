@@ -1,0 +1,257 @@
+{
+  "sectionCode": "332",
+  "sectionCodeDisplay": "332",
+  "title": "The Relation of Form and Function in Organisms 1",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Biological form and function",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Plant tissues and fluids: classification, organization, main functions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Relatively undifferentiated tissues of nonvascular plants",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Well-differentiated tissues in vascular plants",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Meristematic (cell-producing) tissues: apical, lateral, intercalary",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Mature tissues",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Dermal (protective) tissues: the epidermis of the primary plant body, the periderm of the secondary plant body",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Vascular (conducting) tissues: the xylem, the phloem",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Fundamental (ground) tissues: the parenchyma, the supportive collenchyma and sclerenchyma, the endodermis",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Cells of plant tissues [see 331.A.2.C.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Organs of plants: tissue organization, functions, and types",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Development of organs in vascular plants: internal and external morphology, tissue organization, functions, types, and modifications; the stem; the leaf; the root",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Physiology of organs in vascular plants",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Diverse sizes and forms of organ systems in vascular plants: potential for unlimited growth",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Varieties of shoot systems",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Varieties of root systems",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Varieties of reproductive organs and organ systems",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Organs of nonvascular plants: analogues of stem, leaf, and root",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Evolution of plant organs and organ systems into the complex, multicellular state",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Animal tissues and fluids: classification, organization, and main functions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Classification of tissues: anatomical, embryological, functional",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Tissues for assimilation, storage, transport, and excretion: alimentary, liver, kidney, and lung tissues; blood and lymph",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Tissues for coordination: nervous and sensory tissues, endocrine tissues",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Tissues for support and movement: connective tissues, cartilage, bone, muscle",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Other tissues: reproductive tissues, hemopoietic tissues, tissue fluids",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Cells of animal tissues [see 331,A.2.b.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Animal organs and organ systems",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Specialized organ systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Relating to the environment primarily: integumentary, skeletal, muscular, nervous, and endocrine systems [see also 333. C. and D.; 334. A., B., and C.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Serving cell metabolism primarily: digestive, respiratory, circulatory, and excretory systems [see also 335. C.; 336. A., B., and C.]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Serving genetic continuity primarily: the reproductive system",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Interrelationships between organ systems: functional interdependence, feedback mechanisms",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Development of organ systems [see also 338. D.]",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.3",
+      "targetSection": "331",
+      "targetPath": "A.2.C"
+    },
+    {
+      "fromPath": "D.6",
+      "targetSection": "331",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "E.1.a",
+      "targetSection": "333",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "E.1.b",
+      "targetSection": "335",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "E.3",
+      "targetSection": "338",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "E.4",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Animals Integumentary Systems",
+    "Muscles and Muscle Systems",
+    "Blood",
+    "Cells: Their Structures and Functions Nerves and Nervous Systems",
+    "Circulation and Circulatory Systems Plants",
+    "Digestion and Digestive Systems Reproduction and Reproductive Systems",
+    "Endocrine Systems Respiration and Respiratory Systems",
+    "Excretion and Excretory Systems Supportive and Connective Tissues"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-03"
+}

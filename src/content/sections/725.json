@@ -1,0 +1,430 @@
+{
+  "sectionCode": "725",
+  "sectionCodeDisplay": "725",
+  "title": "Technology of Industrial Production Processes",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Materials processing: the operations that are used to transform industrial materials from a raw-material state into finished parts or products",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Preliminary processing of raw materials",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Mechanical processing; e.g., crushing, mixing, blending, separating, grading",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Chemical processing; e.g., leaching, smelting, coagulation, polymerization",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Forming: processes in which parts are produced by casting or molding liquid materials or by applying pressure to solid materials",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Processing liquid materials",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Casting metals; e.g., sand casting, die casting",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Casting and molding nonmetals; e.g., slip casting, injection molding",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Processing solid materials; e.g., rolling, forging, stamping, pressing",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Material removal: processes for shaping parts by removing portions of a solid piece of material",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Joining: processes for bonding materials to each other",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Thermal joining: welding, brazing, and soldering [see B.4., below]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Adhesive bonding: natural and synthetic adhesives and their uses",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Property modification: alteration or improvement of the properties of materials",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Thermal processing",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Basic heat-treating operations: annealing, stress relieving, and hardening",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Radio-frequency heating: induction and dielectric heating",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Zone melting: zone refining and other techniques",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Exposure to cryogenic temperatures",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Processing of materials by exposure to physical conditions other than heat or cold",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Processing of materials in a vacuum",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Use of ultrasonic and infrasonic waves",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Other processes; e.g., exposure to radiation",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Mechanical and chemical processing",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Finishing processes: modification of the surfaces of materials",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Mechanical and chemical processes; e.g., cleaning, polishing, embossing, coating",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Electrochemical processes: electroplating",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Metallurgy",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Mineral processing: crushing and grinding of ores, concentration of metallic minerals",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Extractive metallurgy: separation of metallic elements from mineral form",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Pyrometallurgy: processes that involve the use of heat",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Roasting: oxidizing, reducing reactions",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Smelting: processes for removing molten metal from molten slag",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Converting: techniques for making steel, blister copper",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Refining: techniques for purifying copper, lead, gold, and other extracted metals",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Electrometallurgy: processes that involve electrochemical reactions",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Electrolytic smelting; e.g., the Hall-Heroult process",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Electrowinning: techniques for recovering metals from solution",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Electrorefining: techniques for purifying copper, silver, and other metals",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Hydrometallurgy",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Leaching: techniques for dissolving metallic minerals",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Recovery techniques; e.g., solvent extraction, chemical precipitation",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Physical metallurgy",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Cold and hot working; e.g., forging, rolling, drawing",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Foundry processes; e.g., sand casting, die casting",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Surface treatments; e.g., galvanizing, carburizing",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Powder metallurgy: powder manufacture, processes, and products",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Nuclear engineering metallurgy: production, fabrication, and application of uranium and other metals of importance in nuclear engineering",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Heat treatment; e.g., annealing, quenching, tempering",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Metallography [see also 125.D.1.]",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Inspection and testing: mechanical and nondestructive testing",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Welding, brazing, and soldering",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Basic principles: the metallurgy of metal joining",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Welding processes; e.g., forge welding, arc welding, resistance welding, brazing, soldering",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Types of joints; e.g., fillet welds, brazed joints",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Weldability of metals",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Testing and inspection of welds: nondestructive and destructive methods",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Applications; e.g., construction of bridges, storage tanks, and ships",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Recent developments; e.g., plasma welding, laser welding, ultrasonic welding",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Materials handling in the production process",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Types of materials-handling systems by process",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Materials-handling equipment; e.g., wheeled carts, power trucks, trailer trains, racks, bins, conveyors",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Transportation of materials [see also 734]",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Technology of storage and warehousing",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.3.g",
+      "targetSection": "125",
+      "targetPath": "D.1"
+    },
+    {
+      "fromPath": "C.3",
+      "targetSection": "734",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D",
+      "targetSection": "732",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Industries, Extraction and Processing"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-02"
+}

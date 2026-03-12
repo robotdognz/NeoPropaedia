@@ -1,0 +1,45 @@
+{
+  "sectionCode": "211",
+  "mappings": [
+    {
+      "vsiTitle": "The Earth",
+      "vsiAuthor": "Martin Redfern",
+      "rationale": "Redfern's VSI provides a comprehensive overview of the Earth as a planet, directly covering orbital motions, rotation, the geoid, and geodetic measurements central to this section."
+    },
+    {
+      "vsiTitle": "Geophysics",
+      "vsiAuthor": "William Lowrie",
+      "rationale": "Lowrie covers the physical properties of the Earth including its shape, rotation, gravitational and tidal effects, and geodetic measurements—all core topics of this section."
+    },
+    {
+      "vsiTitle": "Gravity",
+      "vsiAuthor": "Timothy Clifton",
+      "rationale": "Clifton's treatment of gravity is directly relevant to the Earth's gravitational field, Coriolis force, centrifugal effects, and tidal friction discussed in this section."
+    },
+    {
+      "vsiTitle": "Planets",
+      "vsiAuthor": "David A. Rothery",
+      "rationale": "Rothery covers planetary science including orbital mechanics, planetary rotation, and the physical characteristics of Earth in the context of the solar system."
+    },
+    {
+      "vsiTitle": "Tides",
+      "vsiAuthor": "David George Bowers, Emyr Martyn Roberts",
+      "rationale": "Directly relevant to tidal friction and the dynamic effects of Earth's rotation on tidal forces discussed in this section."
+    },
+    {
+      "vsiTitle": "Planetary Systems",
+      "vsiAuthor": "Raymond T. Pierrehumbert",
+      "rationale": "Covers planetary orbital dynamics and revolution around stars, directly relevant to the Earth's orbital motions and revolution about the Sun."
+    },
+    {
+      "vsiTitle": "Navigation",
+      "vsiAuthor": "Jim Bennett",
+      "rationale": "Bennett discusses geodetic measurement, the shape of the Earth, and satellite-based positioning systems that relate to the world geodetic system and measurement of geodetic parameters."
+    },
+    {
+      "vsiTitle": "Earth System Science",
+      "vsiAuthor": "Tim Lenton",
+      "rationale": "Lenton's overview of the Earth as an integrated system provides context for understanding the planet's orbital motions, physical shape, and geodetic properties."
+    }
+  ]
+}

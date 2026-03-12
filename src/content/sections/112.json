@@ -1,0 +1,746 @@
+{
+  "sectionCode": "112",
+  "sectionCodeDisplay": "112",
+  "title": "The Atomic Nucleus and Elementary Particles",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The structure of the atomic nucleus and general nuclear phenomena",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General properties of atomic nuclei",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Mass",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Charge: atomic number",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Radius",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Spin",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Magnetic moment: nuclear magnetic resonance phenomena",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Electric quadrupole moment",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Components of atomic nuclei",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Neutrons [see D., below]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Protons",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Other possible short- and long-lived components",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Isotopes: atomic species with the same atomic number but with different atomic masses [see B., below]",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Systematic relationships between nuclear masses and nuclear binding energies",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Nuclear models and the properties of nuclear states",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Theories of nuclear structure and nuclear binding force",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "General nuclear phenomena and reactions [see C. and E., below]",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "The formation and evolution of the atomic nuclei in the universe",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Isotopes: atomic species with the same atomic number but with different atomic masses",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Classification of isotopes or nuclides",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Isotopic composition of the elements",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Formation of isotopes by nuclear reactions [see E., below]",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Effects of isotopic substitution on physical and chemical properties of substances",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Chemical and physical separation of isotopes",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Mass spectrometry",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Other methods of separation; e.g., diffusion, centrifugal separation, thermal diffusion",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Applications of radioactive and stable isotopes [see 242.D.2. and 723.G.8.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Radioactive nuclei: their properties and their radiations",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The phenomenon of radioactivity",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Types of radioactivity",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Sources of radioactivity: naturally occurring radioactive elements, particle bombardment",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Interaction of radiation with matter [see I., below]",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The energy release associated with radioactive decay",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Nuclear models used to explain nuclear binding: the liquid drop model, the shell model, the unified model",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Rates of radioactive transitions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Exponential decay law",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Alpha decay",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Beta decay",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Gamma decay",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Applications of radioactivity [see 723.G.8.]",
+          "children": []
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "Measurement and characterization of radioactivity [see 1.4., below]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The neutron as a component of the nucleus and in nuclear reactions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Properties of neutrons",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Sources of neutrons",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Manipulation and control of neutrons",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Nuclear reactions produced by neutrons",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Neutron detection based on the secondary effects of nuclear reactions",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Reactions of atomic nuclei",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The classification of nuclear reactions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The types of nuclear reactions classified according to the kind of bombarding radiation or particles",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The types of nuclear reactions classified according to the nuclear processes involved or according to their products",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The energy relationships of nuclear reactions",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Theories and models of nuclear reactions",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "The splitting of atomic nuclei by nuclear fission",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Phenomena of nuclear fission",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Spontaneous and induced fission reactions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Products of nuclear fission",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The energy released in fission",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Fission chain reactions: the critical mass",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Nuclear explosions: nuclear, or atomic, bombs",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Controlled nuclear fission",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Nuclear models and theories of nuclear fission: liquid drop model, adiabatic models, statistical models",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "The fusion of atomic nuclei",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Phenomena of nuclear fusion",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Nuclear fusion reactions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "General types of fusion reactions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The energy released in fusion reactions",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Requirements for intensive fusion reactions",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Occurrence of thermonuclear reactions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Thermonuclear reactions in the Sun and the stars",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Thermonuclear explosions: the hydrogen, or thermonuclear, bomb",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Basic conditions required for a thermonuclear reactor",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The formation of a suitable plasma",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The confinement and control of high-temperature plasma",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The possible approaches to controlled fusion: prospects for the future",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "Subatomic, or elementary, particles",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Development of the concept of subatomic particles as the fundamental units of matter and energy",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The discovery of the various particles",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Y ukawa mesons and the theory of nuclear forces",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Advances in quantum field theory: renormalization theory, dispersion theory",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The known elementary particles",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The fundamental forces associated with particle interactions",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Systems for classifying the elementary particles",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "According to the forces that influence them",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "According to the kind of statistics they follow",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "According to their particle-antiparticle symmetries",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "According to stability",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "According to charge multiplets",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "According to unitary symmetry, or the SU(3) classification",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "According to charged-hypercharge multiplets",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Elementary particles and the laws of conservation and symmetry",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The theory of subatomic particles and the quantum mechanical symmetry operations",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Dynamic symmetries: space and time inversion",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Violation of conservation laws: charge conjugation, time reversal, parity",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Internal symmetries",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Sources of the unstable elementary particles",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Formation of resonances in high-energy accelerators",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Production by cosmic ray interactions",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Relations of the weak interactions to strong and electromagnetic interactions described by conserved current and algebra of current",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Other particles suggested by contemporary theoretical ideas",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Reactions of elementary particles with atoms",
+          "children": []
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "Theories of nuclear structure and nuclear forces involving the elementary particles",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "I",
+      "levelType": "major",
+      "text": "Effects of the passage of nuclear, or elementary, particles, nuclear radiations, or ionizing radiation through matter",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The fundamental processes involved when energetic particles or radiations interact with or pass through matter",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The passage of electromagnetic waves and their interaction with atomic structure",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The passage of particles or radiations through matter",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Secondary and tertiary effects of radiation: physical effects, molecular activation and related phenomena, chemical effects, biological effects",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Utilization of high-energy radiation in biological, medical, and technological fields",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The use of fundamental processes of interaction between radiation and matter for the detection and characterization of nuclear and elementary processes",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Mechanisms of detection systems: ionization and charge collection, conversion of the distributed energy of the primary ionizing particle into light",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Properties of ionization media",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Major types of radiation detectors: scintillation counters, ionization detectors, spark chambers, cloud chambers, bubble chambers [see 723.F.7.]",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.6",
+      "targetSection": "242",
+      "targetPath": "D.2"
+    },
+    {
+      "fromPath": "C.8",
+      "targetSection": "723",
+      "targetPath": "G.8"
+    },
+    {
+      "fromPath": "C.9",
+      "targetSection": "1",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "I.4.c",
+      "targetSection": "723",
+      "targetPath": "F.7"
+    },
+    {
+      "fromPath": "I.4.d",
+      "targetSection": "723",
+      "targetPath": "G.8"
+    },
+    {
+      "fromPath": "I.4.d",
+      "targetSection": "10/32",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Analysis and Measurement, Physical and Chemical",
+    "Radiation",
+    "Atoms: Their Structure, Properties, and Component Particles",
+    "Subatomic",
+    "Physical Sciences, The",
+    "Particles"
+  ],
+  "partNumber": 1,
+  "divisionId": "1-01"
+}

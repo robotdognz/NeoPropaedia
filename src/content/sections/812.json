@@ -1,0 +1,183 @@
+{
+  "sectionCode": "812",
+  "sectionCodeDisplay": "812",
+  "title": "The Religious Life: Institutions and Practices",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Religious rites and customs",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Rituals of worship",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Prayer",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Confession",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Pilgrimage",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Sacrifice",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Passage and purification rites: birth, puberty, marriage, death",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Religious regulation of personal and social behaviour",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Religious law [see 551. B.3.d. and 827.F.6.a.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Dietary customs",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Monasticism",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Celibacy",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Asceticism",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Prophecy and divination",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Religious feasts and festivals",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Religious leaders and institutions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The religious state: theocracies, sacred kingships",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Forms of religious organization: church, temple, congregation, sect, council; the priesthood",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Sainthood",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Institutions of religious education",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Material manifestations of religious beliefs",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Sacred writings",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Art and architecture, religious symbolism and iconography",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Ceremonial and religious objects, the sacraments",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Religious dress and vestments",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.3.a",
+      "targetSection": "551",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.4",
+      "targetSection": "8",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Doctrines and Dogmas, Religious",
+    "Religious Experience",
+    "Religious Symbolism and Iconography",
+    "Rites and Ceremonies, Sacred",
+    "Sacred Offices and Orders"
+  ],
+  "partNumber": 8,
+  "divisionId": "8-01"
+}

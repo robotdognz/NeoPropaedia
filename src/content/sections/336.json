@@ -1,0 +1,249 @@
+{
+  "sectionCode": "336",
+  "sectionCodeDisplay": "336",
+  "title": "Gas Exchange, Internal Transport, and Elimination",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Respiration and respiratory systems",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The process of extracting oxygen and releasing carbon dioxide",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Gases in the environment: the range of respiratory problems faced by aquatic and terrestrial animals",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Basic types of respiratory structures",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Respiratory organs of invertebrates: tracheae and gills",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Respiratory organs of vertebrates: gills and lungs",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Dynamics of respiratory mechanisms",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The control of respiration: neural reflexes, muscular feedback, chemically sensitive controls",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Adaptation to special environmental conditions",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The human respiratory system [see 421.C.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Circulation and circulatory systems",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Circulation and transport patterns: general aspects common to all circulatory systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Circulation in single cells: streaming movements within the protoplasm",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Circulation in multicellular animals",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The fluid media involved in circulation: blood and lymph",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Evolutionary origins of circulating fluids",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Plasma",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Formed elements of the circulating fluid: red cells, white cells, platelets, thrombocytes",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Lymphocytes and lymph in vertebrates",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Transport systems in animals",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Invertebrate circulatory systems",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Vertebrate circulatory systems",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Coronary circulation",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Embryonic development of the circulatory system",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Biodynamics of vertebrate circulation",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "The human cardiovascular system [see 42 1.A.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Plant internal transport",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Elimination: the disposal of wastes",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General features of elimination",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Excretion and excretory systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Excretory mechanisms",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Invertebrate excretory systems",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Vertebrate excretory systems",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The evolution of the vertebrate excretory system",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.7",
+      "targetSection": "421",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "B.3.f",
+      "targetSection": "42",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.2.e",
+      "targetSection": "421",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.2.e",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Cells: Their Structures and Functions",
+    "Circulation and Circulatory Systems",
+    "Excretion and Excretory Systems",
+    "Respiration and Respiratory Systems"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-03"
+}

@@ -1,0 +1,163 @@
+{
+  "sectionCode": "531",
+  "sectionCodeDisplay": "531",
+  "title": "Economic Concepts, Issues, and Systems",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Some basic concepts of economics",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The concept of economic activity as a process of choosing among scarce resources",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The concept of division of labour",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The concepts of diminishing returns and optimization",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The concept of marginality",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The concept of capital",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The concept of competition",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The concept of comparative advantage",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "The concepts of growth and development",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Levels of economic analysis",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Microeconomics: the economic decisions of individuals, households, and firms",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Sectoral economics: the economic arrangements of industries, groups, and regions",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Macroeconomics: the economy as a whole",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The comparison of different economic systems",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Archetypal economic systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The pure private enterprise economy: a theoretical model",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The centrally planned economy: the pure socialist model",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The mixed economy with various degrees of economic planning *",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Western-type market economies",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Soviet- and socialist- type economic systems",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Mixed economies in developing countries",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Other economic systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Primitive economic systems",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C.5.b",
+      "targetSection": "10/36",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Economic Systems Government Finance",
+    "Economic Theory International Trade"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-03"
+}

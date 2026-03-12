@@ -1,0 +1,108 @@
+{
+  "sectionCode": "433",
+  "sectionCodeDisplay": "433",
+  "title": "Current Internal States Affecting a Person’s Behaviour and Conscious",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Motivational states: needs and desires that channel a person's behaviour and experience",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Diverse theories of motivation: psychoanalytic, drive, arousal, incentive, and hedonic theories",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Specific human needs and motives, with special attention to achievement, anxiety, aggression, and sexual behaviour and deviations",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Situational and interactional factors: stresses in stimulus field, cognitive evaluation, balance and congruity, and cognitive dissonance",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Recent developments and practical applications of motivation theory: emphasis on reinforcement and instinct, the use of token systems",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Emotional states: bodily conditions and feelings accompanying motivation and arousal conditions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature of emotion",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Diverse conceptions of emotion: the roles of the nervous system",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Expression of emotions: the startle response; facial, vocal, and postural manifestations",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Transient states affecting behaviour and experience",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Sleep",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Dreams",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Hypnosis and related states of altered consciousness",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Fatigue",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C.5",
+      "targetSection": "321",
+      "targetPath": "C.4.C"
+    }
+  ],
+  "macropaediaReferences": [
+    "and conscious experience",
+    "Emotion, Human Sex and Sexuality",
+    "Motivation, Human Sleep and Dreams"
+  ],
+  "partNumber": 4,
+  "divisionId": "4-03"
+}

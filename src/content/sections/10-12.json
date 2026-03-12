@@ -1,0 +1,164 @@
+{
+  "sectionCode": "10/12",
+  "sectionCodeDisplay": "10/12",
+  "title": "Formal Logic, Metalogic, and Applied Logic",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Formal logic",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The propositional calculus: the logic of unanalyzed sentences in combination",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "General features of the propositional calculus: symbols employed for propositional connectives or operators (i.e., \"not,\" \"and,\" \"or,\" \"if. . . then,\" \"is equivalent to\"), propositional variables",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Special systems of the propositional calculus",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The predicate calculus: the logic of quantified functions of terms",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "General features of the predicate calculus: individual variables and predicate variables, universal and existential quantifiers (i.e., \"any\" or \"all,\" \"some\" or \"one\")",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The lower predicate calculus: the logic of individual variables",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Higher order predicate calculi: the logics of classes of variables",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Syllogistic: the theory of the syllogism",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Modal logic: the logic of necessity, possibility, and contingency; systems of and validity in modal logic",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Set theory and natural-number arithmetic",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Metalogic: the study of the syntax and the semantics of formal languages, formal systems, and logical calculi",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature and elements of metalogic",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The nature of a formal system and of a formal language",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Discoveries about formal mathematical systems: completeness and consistency, decidability and undecidability",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Discoveries about logical calculi",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Model theory: the study of the interpretations, or models, that satisfy the axioms of a given formal system",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Applied logic",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The critique of forms of reasoning",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Theory of argumentation: the new rhetoric",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Analysis of logical fallacies: material, verbal, and formal fallacies",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Epistemic logic: logic dealing with the concepts of belief, knowledge, assertion, doubt, and question",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Practical logic: logic dealing with the concepts of choosing, planning, commanding, and permitting",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Logics of physical application",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [],
+  "macropaediaReferences": [
+    "Logic, The History and Kinds of",
+    "Rhetoric"
+  ],
+  "partNumber": 10,
+  "divisionId": "10-01"
+}

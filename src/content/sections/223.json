@@ -1,0 +1,404 @@
+{
+  "sectionCode": "223",
+  "sectionCodeDisplay": "223",
+  "title": "Weather and Climate",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Condensation of water in the atmosphere producing clouds, fogs, and precipitation",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Moisture in the atmosphere [see also 221.A.l.a. and 723. G. 5.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Humidity indices: absolute, specific, and relative humidity; dew-point temperature",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Climatic aspects of atmospheric humidity [see E.l.e., below]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Effects of atmospheric humidity on the life and health of humans and other life-forms [see E.4., below]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Condensation of atmospheric water vapour",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Convection, air-mass convergence, and other processes that lead to condensation [see also 221.B.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Condensation nuclei: atmospheric ions, salt and dust particles",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Dew",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Frost",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Clouds and fogs",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Formation and growth of clouds",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Description and classification of clouds",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Clouds and weather",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Fog",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Artificial modification of clouds and fogs",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Precipitation [see also 222. D. and 723. G. 5.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Origin of precipitation in clouds, mechanisms of precipitation release [see also A.3.a., above]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Types of precipitation: drizzle, rain, freezing rain; snow; sleet, hail",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The world distribution of rainfall",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Effects of precipitation",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Winds and storms [see also 221. B.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Development and distribution of cyclones and anticyclones",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Lightning and thunderstorms [see also 127.A. and B.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Tornadoes, hail, and other severe phenomena associated with organized storms or squall lines",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Tropical cyclones: hurricanes and typhoons",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Weather forecasting",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Synoptic weather data: the collection and correlation of meteorological observations",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Numerical weather prediction and numerical climate modeling",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Short-range forecasting",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Nowcasting: predictions based on computer analyses of radar and satellite observations of local atmospheric conditions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Model Output Statistics: extrapolation of weather conditions, using statistical relations , between numerical model forecasts and past weather phenomena",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Long-range forecasting",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Enhancing the reliability of extended-range prediction through systematic studies of atmosphere-ocean interactions; e.g., El Nino/Southern Oscillation (ENSO)",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Limits to predictability",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Weather lore",
+      "children": []
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Climate: the aggregate of weather [see also 133.B.5., 221, and 723.G.5.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Factors that generate climate",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Solar radiation",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Variability of incident radiation; the solar constant",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Effects of the atmosphere: absorption by dust and gases, including the trapping of solar radiation of infrared wavelength (the so-called greenhouse effect)",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Variations in the Earth's albedo due to clouds and ice",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Temperature",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Atmospheric pressure",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The world's oceans",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The moisture cycle",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Climatic variation",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Seasonal changes resulting from the north-south migration of belts of cyclonic activity and other cyclic processes",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Local effects: modification of climate by local terrain and surface conditions",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Effects of human activities on global climate; e.g., greenhouse warming induced by high concentrations of carbon dioxide (from the burning of fossil fuels) and other trace gases in the atmosphere [see also 241.B.5. and 737.C.1.J",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Climatic types: the Koppen classification system, world climates and their distribution",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Influences of climate on terrestrial life",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Microclimates [see also 351.B.]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Climatic change",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Evidence: e.g., landscape features associated with glaciations; fluctuations of lake and sea levels; pollen stratigraphy; archaeological and historical data",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1",
+      "targetSection": "221",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "A.2.a",
+      "targetSection": "221",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "A.4",
+      "targetSection": "222",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B",
+      "targetSection": "221",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.2",
+      "targetSection": "127",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "E",
+      "targetSection": "133",
+      "targetPath": "B.5"
+    },
+    {
+      "fromPath": "E.2.c",
+      "targetSection": "241",
+      "targetPath": "B.5"
+    },
+    {
+      "fromPath": "E.5",
+      "targetSection": "351",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "E.6.b",
+      "targetSection": "10/33",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Climate and Weather",
+    "Division III. Section 231 79"
+  ],
+  "partNumber": 2,
+  "divisionId": "2-02"
+}

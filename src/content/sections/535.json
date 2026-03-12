@@ -1,0 +1,141 @@
+{
+  "sectionCode": "535",
+  "sectionCodeDisplay": "535",
+  "title": "Macroeconomics",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "National income and employment theory",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The concern of income and employment theory with changes in aggregate output, employment, and prices",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The classical law of markets contrasted with the Keynesian theory of effective demand",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The classical and Keynesian theories of unemployment",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The circular flow of income and expenditure: national product as goods and as earnings",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Analyses of fluctuations in national income",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "International economic and financial equilibrium and disequilibrium",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Foreign exchange markets: problems of alternative monetary standards and fixed and fluctuat¬ ing exchange rates",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Equilibrating movements in the balance of payments and the mechanisms of adjustment: arbitrage, short-term movements, interest rates, and forward exchange",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Disequilibrating movements as a response to currency devaluation: covering, hedging, and speculation",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Balance of payments accounting",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Methods for adjusting to fundamental disequilibrium: fiscal and monetary policy, incomes policy, devaluation and revaluation, and restrictions on capital movements",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "International monetary and financial institutions: the International Monetary Fund, the Group of Ten, and other attempts at international cooperation [see also 533. D. 2.f.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Problems of maintaining adequate gold and currency reserves: gold crises, special drawing rights",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The aftermath of major wars: economic and financial crises, economic nationalism",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Business cycles",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The statistical study of cycles: the identification and measurement of business cycles, various cyclical theories",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Theories of the business cycle and business cycle models 3., Countercyclical monetary and fiscal policy",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.2",
+      "targetSection": "533",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D",
+      "targetSection": "10/36",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Economic Theory",
+    "Government Finance",
+    "International Trade",
+    "Social Sciences, The"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-03"
+}

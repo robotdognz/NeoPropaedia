@@ -1,0 +1,5523 @@
+{
+  "titles": [
+    {
+      "title": "Classics",
+      "author": "Mary Beard, John Henderson",
+      "number": 1,
+      "subject": "Classical Studies",
+      "publicationYear": 2000
+    },
+    {
+      "title": "Music",
+      "author": "Nicholas Cook",
+      "number": 2,
+      "subject": "Music",
+      "publicationYear": 2021,
+      "edition": 2
+    },
+    {
+      "title": "Buddhism",
+      "author": "Damien Keown",
+      "number": 3,
+      "subject": "Religion",
+      "publicationYear": 2013,
+      "edition": 2
+    },
+    {
+      "title": "Literary Theory",
+      "author": "Jonathan Culler",
+      "number": 4,
+      "subject": "Literature/Philosophy",
+      "publicationYear": 2011,
+      "edition": 2
+    },
+    {
+      "title": "Hinduism",
+      "author": "Kim Knott",
+      "number": 5,
+      "subject": "Religion",
+      "publicationYear": 2016,
+      "edition": 2
+    },
+    {
+      "title": "Psychology",
+      "author": "Gillian Butler, Freda McManus",
+      "number": 6,
+      "subject": "Psychology",
+      "publicationYear": 2014,
+      "edition": 2
+    },
+    {
+      "title": "Islam",
+      "author": "Malise Ruthven",
+      "number": 7,
+      "subject": "Religion",
+      "publicationYear": 2012,
+      "edition": 2
+    },
+    {
+      "title": "Politics",
+      "author": "Kenneth Minogue",
+      "number": 8,
+      "subject": "Politics",
+      "publicationYear": 2000
+    },
+    {
+      "title": "Theology",
+      "author": "David F. Ford",
+      "number": 9,
+      "subject": "Religion",
+      "publicationYear": 2013,
+      "edition": 2
+    },
+    {
+      "title": "Archaeology",
+      "author": "Paul Bahn",
+      "number": 10,
+      "subject": "Archaeology",
+      "publicationYear": 2012,
+      "edition": 2
+    },
+    {
+      "title": "Judaism",
+      "author": "Norman Solomon",
+      "number": 11,
+      "subject": "Religion",
+      "publicationYear": 2014,
+      "edition": 2
+    },
+    {
+      "title": "Sociology",
+      "author": "Steve Bruce",
+      "number": 12,
+      "subject": "Sociology",
+      "publicationYear": 2018,
+      "edition": 2
+    },
+    {
+      "title": "The Koran",
+      "author": "Michael Cook",
+      "number": 13,
+      "subject": "Religion",
+      "publicationYear": 2000
+    },
+    {
+      "title": "The Bible",
+      "author": "John Riches",
+      "number": 14,
+      "subject": "Religion",
+      "publicationYear": 2021,
+      "edition": 2
+    },
+    {
+      "title": "Social and Cultural  Anthropology",
+      "author": "John Monaghan, Peter Just",
+      "number": 15,
+      "subject": "Anthropology",
+      "publicationYear": 2000
+    },
+    {
+      "title": "History",
+      "author": "John Arnold",
+      "number": 16,
+      "subject": "History",
+      "publicationYear": 2000
+    },
+    {
+      "title": "Roman Britain",
+      "author": "Peter Salway",
+      "number": 17,
+      "subject": "History – U.K.",
+      "publicationYear": 2015,
+      "edition": 2
+    },
+    {
+      "title": "The Anglo-Saxon Age",
+      "author": "John Blair",
+      "number": 18,
+      "subject": "History – U.K.",
+      "publicationYear": 2000
+    },
+    {
+      "title": "Medieval Britain",
+      "author": "John Gillingham, Ralph A. Griffiths",
+      "number": 19,
+      "subject": "History – U.K.",
+      "publicationYear": 2000
+    },
+    {
+      "title": "The Tudors",
+      "author": "John Guy",
+      "number": 20,
+      "subject": "History – U.K.",
+      "publicationYear": 2013,
+      "edition": 2
+    },
+    {
+      "title": "Stuart Britain",
+      "author": "John Morrill",
+      "number": 21,
+      "subject": "History – U.K.",
+      "publicationYear": 2000
+    },
+    {
+      "title": "Eighteenth-Century Britain",
+      "author": "Paul Langford",
+      "number": 22,
+      "subject": "History – U.K.",
+      "publicationYear": 2000
+    },
+    {
+      "title": "Nineteenth-Century Britain",
+      "author": "Christopher Harvie, H. C. G. Matthew",
+      "number": 23,
+      "subject": "History – U.K.",
+      "publicationYear": 2000
+    },
+    {
+      "title": "Twentieth-Century Britain",
+      "author": "Kenneth O. Morgan",
+      "number": 24,
+      "subject": "History – U.K.",
+      "publicationYear": 2000
+    },
+    {
+      "title": "Heidegger",
+      "author": "Michael Inwood",
+      "number": 25,
+      "subject": "Philosophy/Biography",
+      "publicationYear": 2019,
+      "edition": 2
+    },
+    {
+      "title": "Ancient philosophy",
+      "author": "Julia Annas",
+      "number": 26,
+      "subject": "Classical Studies/Philosophy",
+      "publicationYear": 2023,
+      "edition": 2
+    },
+    {
+      "title": "Socrates",
+      "author": "C. C. W. Taylor",
+      "number": 27,
+      "subject": "Classical Studies/Philosophy/Biography",
+      "publicationYear": 2019,
+      "edition": 2
+    },
+    {
+      "title": "Marx",
+      "author": "Peter Singer",
+      "number": 28,
+      "subject": "Philosophy/Politics/Biography",
+      "publicationYear": 2018,
+      "edition": 2
+    },
+    {
+      "title": "Logic",
+      "author": "Graham Priest",
+      "number": 29,
+      "subject": "Mathematics/Philosophy",
+      "publicationYear": 2017,
+      "edition": 2
+    },
+    {
+      "title": "Descartes",
+      "author": "Tom Sorell",
+      "number": 30,
+      "subject": "Philosophy/Biography",
+      "publicationYear": 2000
+    },
+    {
+      "title": "Machiavelli",
+      "author": "Quentin Skinner",
+      "number": 31,
+      "subject": "Politics/Literature/History/Biography",
+      "publicationYear": 2019,
+      "edition": 2
+    },
+    {
+      "title": "Aristotle",
+      "author": "Jonathan Barnes",
+      "number": 32,
+      "subject": "Classical Studies/Philosophy/Biography",
+      "publicationYear": 2000
+    },
+    {
+      "title": "Hume",
+      "author": "James Anthony Harris",
+      "number": 33,
+      "subject": "Philosophy/Biography",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Nietzsche",
+      "author": "Michael Tanner",
+      "number": 34,
+      "subject": "Philosophy/Biography",
+      "publicationYear": 2000
+    },
+    {
+      "title": "Darwin",
+      "author": "Jonathan Howard",
+      "number": 35,
+      "subject": "History of Science/Biological Sciences/Biography",
+      "publicationYear": 2001
+    },
+    {
+      "title": "The European Union",
+      "author": "John Pinder, Simon Usherwood",
+      "number": 36,
+      "subject": "Politics",
+      "publicationYear": 2018,
+      "edition": 4
+    },
+    {
+      "title": "Gandhi",
+      "author": "Bhikhu Parekh",
+      "number": 37,
+      "subject": "History/Politics/Biography",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Augustine",
+      "author": "Henry Chadwick",
+      "number": 38,
+      "subject": "Philosophy/Religion/Biography",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Intelligence",
+      "author": "Ian J. Deary",
+      "number": 39,
+      "subject": "Psychology",
+      "publicationYear": 2020,
+      "edition": 2
+    },
+    {
+      "title": "Jung",
+      "author": "Anthony Stevens",
+      "number": 40,
+      "subject": "Psychology/Popular Health/Biography",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Buddha",
+      "author": "Michael Carrithers",
+      "number": 41,
+      "subject": "Religion/Philosophy/Biography",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Paul",
+      "author": "E. P. Sanders",
+      "number": 42,
+      "subject": "Religion/Biography",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Continental philosophy",
+      "author": "Simon Critchley",
+      "number": 43,
+      "subject": "Philosophy",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Galileo",
+      "author": "Stillman Drake",
+      "number": 44,
+      "subject": "History of Science/Physics/Biography",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Freud",
+      "author": "Anthony Storr",
+      "number": 45,
+      "subject": "Psychology/Popular Health/Biography",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Wittgenstein",
+      "author": "A. C. Grayling",
+      "number": 46,
+      "subject": "Philosophy/Linguistics/Biography",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Indian philosophy",
+      "author": "Sue Hamilton",
+      "number": 47,
+      "subject": "Philosophy/Religion",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Rousseau",
+      "author": "Robert Wokler",
+      "number": 48,
+      "subject": "Philosophy/Politics/Biography",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Hegel",
+      "author": "Peter Singer",
+      "number": 49,
+      "subject": "Philosophy/Biography",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Kant",
+      "author": "Roger Scruton",
+      "number": 50,
+      "subject": "Philosophy/Politics/Biography",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Cosmology",
+      "author": "Peter Coles",
+      "number": 51,
+      "subject": "Physics",
+      "publicationYear": 2001
+    },
+    {
+      "title": "Drugs",
+      "author": "Leslie Iversen",
+      "number": 52,
+      "subject": "Medicine - Clinical/Pharmacology",
+      "publicationYear": 2016,
+      "edition": 2
+    },
+    {
+      "title": "Russian literature",
+      "author": "Catriona Kelly",
+      "number": 53,
+      "subject": "Literature",
+      "publicationYear": 2001
+    },
+    {
+      "title": "The French Revolution",
+      "author": "William Doyle",
+      "number": 54,
+      "subject": "History",
+      "publicationYear": 2019,
+      "edition": 2
+    },
+    {
+      "title": "Philosophy",
+      "author": "Edward Craig",
+      "number": 55,
+      "subject": "Philosophy",
+      "publicationYear": 2020,
+      "edition": 2
+    },
+    {
+      "title": "Barthes",
+      "author": "Jonathan Culler",
+      "number": 56,
+      "subject": "Literature/Biography",
+      "publicationYear": 2002
+    },
+    {
+      "title": "Animal rights",
+      "author": "David DeGrazia",
+      "number": 57,
+      "subject": "Philosophy",
+      "publicationYear": 2002
+    },
+    {
+      "title": "Kierkegaard",
+      "author": "Patrick Gardiner",
+      "number": 58,
+      "subject": "Philosophy/Biography",
+      "publicationYear": 2002
+    },
+    {
+      "title": "Russell",
+      "author": "A. C. Grayling",
+      "number": 59,
+      "subject": "Philosophy/Biography",
+      "publicationYear": 2002
+    },
+    {
+      "title": "William Shakespeare",
+      "author": "Stanley Wells",
+      "number": 60,
+      "subject": "Literature/Biography",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Clausewitz",
+      "author": "Michael Howard",
+      "number": 61,
+      "subject": "History/Politics/Biography",
+      "publicationYear": 2002
+    },
+    {
+      "title": "Schopenhauer",
+      "author": "Christopher Janaway",
+      "number": 62,
+      "subject": "Philosophy/Biography",
+      "publicationYear": 2002
+    },
+    {
+      "title": "The Russian Revolution",
+      "author": "S. A. Smith",
+      "number": 63,
+      "subject": "History",
+      "publicationYear": 2002
+    },
+    {
+      "title": "Hobbes",
+      "author": "Richard Tuck",
+      "number": 64,
+      "subject": "Philosophy/Politics/Biography",
+      "publicationYear": 2002
+    },
+    {
+      "title": "World music",
+      "author": "Philip V. Bohlman",
+      "number": 65,
+      "subject": "Music",
+      "publicationYear": 2020,
+      "edition": 2
+    },
+    {
+      "title": "Mathematics",
+      "author": "Timothy Gowers",
+      "number": 66,
+      "subject": "Philosophy/Mathematics",
+      "publicationYear": 2002
+    },
+    {
+      "title": "Philosophy of science",
+      "author": "Samir Okasha",
+      "number": 67,
+      "subject": "Philosophy/History of Science",
+      "publicationYear": 2016,
+      "edition": 2
+    },
+    {
+      "title": "Cryptography",
+      "author": "Fred Piper, Sean Murphy",
+      "number": 68,
+      "publicationYear": 2002,
+      "edition": 2
+    },
+    {
+      "title": "Quantum Theory",
+      "author": "John Polkinghorne",
+      "number": 69,
+      "subject": "Chemistry/Physics",
+      "publicationYear": 2002
+    },
+    {
+      "title": "Spinoza",
+      "author": "Roger Scruton",
+      "number": 70,
+      "subject": "Philosophy/Biography",
+      "publicationYear": 2002
+    },
+    {
+      "title": "Choice Theory",
+      "author": "Michael Allingham",
+      "number": 71,
+      "subject": "Economics",
+      "publicationYear": 2002
+    },
+    {
+      "title": "Architecture",
+      "author": "Andrew Ballantyne",
+      "number": 72,
+      "subject": "Architecture",
+      "publicationYear": 2002
+    },
+    {
+      "title": "Poststructuralism",
+      "author": "Catherine Belsey",
+      "number": 73,
+      "subject": "Philosophy",
+      "publicationYear": 2022,
+      "edition": 2
+    },
+    {
+      "title": "Postmodernism",
+      "author": "Christopher Butler",
+      "number": 74,
+      "subject": "Philosophy",
+      "publicationYear": 2002
+    },
+    {
+      "title": "Democracy",
+      "author": "Bernard Crick",
+      "number": 75,
+      "subject": "Politics/History",
+      "publicationYear": 2002
+    },
+    {
+      "title": "Empire",
+      "author": "Stephen Howe",
+      "number": 76,
+      "subject": "History",
+      "publicationYear": 2002
+    },
+    {
+      "title": "Fascism",
+      "author": "Kevin Passmore",
+      "number": 77,
+      "subject": "History/Politics",
+      "publicationYear": 2014,
+      "edition": 2
+    },
+    {
+      "title": "Terrorism",
+      "author": "Charles Townshend",
+      "number": 78,
+      "subject": "Sociology/Terrorism and National Security Law/ Warfare and Defense",
+      "publicationYear": 2018,
+      "edition": 3
+    },
+    {
+      "title": "Plato",
+      "author": "Julia Annas",
+      "number": 79,
+      "subject": "Classical Studies/Philosophy/Biography",
+      "publicationYear": 2003
+    },
+    {
+      "title": "Ethics",
+      "author": "Simon Blackburn",
+      "number": 80,
+      "subject": "Philosophy",
+      "publicationYear": 2021,
+      "edition": 2
+    },
+    {
+      "title": "Emotion",
+      "author": "Dylan Evans",
+      "number": 81,
+      "subject": "Anthropology/Psychology",
+      "publicationYear": 2019,
+      "edition": 2
+    },
+    {
+      "title": "Northern Ireland",
+      "author": "Marc Mulholland",
+      "number": 82,
+      "subject": "History/Human Geography",
+      "publicationYear": 2020,
+      "edition": 2
+    },
+    {
+      "title": "Art Theory",
+      "author": "Cynthia Freeland",
+      "number": 83,
+      "subject": "Art",
+      "publicationYear": 2003
+    },
+    {
+      "title": "Locke",
+      "author": "John Dunn",
+      "number": 84,
+      "subject": "Philosophy/Biography",
+      "publicationYear": 2003
+    },
+    {
+      "title": "Modern Ireland",
+      "author": "Senia Paseta",
+      "number": 85,
+      "subject": "Human Geography",
+      "publicationYear": 2003
+    },
+    {
+      "title": "Globalization",
+      "author": "Manfred Steger",
+      "number": 86,
+      "subject": "Economics/Politics",
+      "publicationYear": 2020,
+      "edition": 5
+    },
+    {
+      "title": "The Cold War",
+      "author": "Robert J. McMahon",
+      "number": 87,
+      "subject": "History",
+      "publicationYear": 2021,
+      "edition": 2
+    },
+    {
+      "title": "The History of Astronomy",
+      "author": "Michael Hoskin",
+      "number": 88,
+      "subject": "History of Science/Physics",
+      "publicationYear": 2003
+    },
+    {
+      "title": "Schizophrenia",
+      "author": "Chris Frith, Eve C. Johnstone",
+      "number": 89,
+      "subject": "Psychology/Social Work",
+      "publicationYear": 2003
+    },
+    {
+      "title": "The Earth",
+      "author": "Martin Redfern",
+      "number": 90,
+      "subject": "Earth Sciences and Geography/Environment",
+      "publicationYear": 2003
+    },
+    {
+      "title": "Engels",
+      "author": "Terrell Carver",
+      "number": 91,
+      "subject": "Politics",
+      "publicationYear": 2003
+    },
+    {
+      "title": "British Politics",
+      "author": "Tony Wright",
+      "number": 92,
+      "subject": "Politics – U.K.",
+      "publicationYear": 2020,
+      "edition": 3
+    },
+    {
+      "title": "Linguistics",
+      "author": "P. H. Matthews",
+      "number": 93,
+      "subject": "Linguistics",
+      "publicationYear": 2003
+    },
+    {
+      "title": "The Celts",
+      "author": "Barry Cunliffe",
+      "number": 94,
+      "subject": "History",
+      "publicationYear": 2003
+    },
+    {
+      "title": "Ideology",
+      "author": "Michael Freeden",
+      "number": 95,
+      "subject": "Politics",
+      "publicationYear": 2003
+    },
+    {
+      "title": "Prehistory",
+      "author": "Chris Gosden",
+      "number": 96,
+      "subject": "History/Archaeology/Art",
+      "publicationYear": 2018,
+      "edition": 2
+    },
+    {
+      "title": "Political philosophy",
+      "author": "David Miller",
+      "number": 97,
+      "subject": "Philosophy",
+      "publicationYear": 2003
+    },
+    {
+      "title": "Postcolonialism",
+      "author": "Robert J.C. Young",
+      "number": 98,
+      "subject": "Literature",
+      "publicationYear": 2020,
+      "edition": 2
+    },
+    {
+      "title": "Atheism",
+      "author": "Julian Baggini",
+      "number": 99,
+      "subject": "Religion/Philosophy",
+      "publicationYear": 2021,
+      "edition": 2
+    },
+    {
+      "title": "Evolution",
+      "author": "Brian Charlesworth, Deborah Charlesworth",
+      "number": 100,
+      "subject": "Biology/Anthropology",
+      "publicationYear": 2017,
+      "edition": 2
+    },
+    {
+      "title": "Molecules",
+      "author": "Philip Ball",
+      "number": 101,
+      "subject": "Biology/Chemistry",
+      "publicationYear": 2003
+    },
+    {
+      "title": "Art history",
+      "author": "Dana Arnold",
+      "number": 102,
+      "subject": "Art/History",
+      "publicationYear": 2020,
+      "edition": 2
+    },
+    {
+      "title": "Presocratic Philosophy",
+      "author": "Catherine Osborne",
+      "number": 103,
+      "subject": "Philosophy/Classical Studies",
+      "publicationYear": 2004
+    },
+    {
+      "title": "The Elements",
+      "author": "Philip Ball",
+      "number": 104,
+      "subject": "Chemistry/History of Science",
+      "publicationYear": 2004
+    },
+    {
+      "title": "Dada and Surrealism",
+      "author": "David Hopkins",
+      "number": 105,
+      "subject": "Art",
+      "publicationYear": 2004
+    },
+    {
+      "title": "Egyptian Myth",
+      "author": "Geraldine Pinch",
+      "number": 106,
+      "subject": "Classical Studies",
+      "publicationYear": 2004
+    },
+    {
+      "title": "Christian art",
+      "author": "Beth Williamson",
+      "number": 107,
+      "subject": "Religion/Art",
+      "publicationYear": 2004
+    },
+    {
+      "title": "Capitalism",
+      "author": "James Fulcher",
+      "number": 108,
+      "subject": "Politics/Economics",
+      "publicationYear": 2015,
+      "edition": 2
+    },
+    {
+      "title": "Particle physics",
+      "author": "Frank Close",
+      "number": 109,
+      "subject": "Physics",
+      "publicationYear": 2023,
+      "edition": 2
+    },
+    {
+      "title": "Free will",
+      "author": "Thomas Pink",
+      "number": 110,
+      "subject": "Philosophy",
+      "publicationYear": 2004
+    },
+    {
+      "title": "Myth",
+      "author": "Robert A. Segal",
+      "number": 111,
+      "subject": "Religion",
+      "publicationYear": 2015,
+      "edition": 2
+    },
+    {
+      "title": "Ancient Egypt",
+      "author": "Ian Shaw",
+      "number": 112,
+      "subject": "History",
+      "publicationYear": 2021,
+      "edition": 2
+    },
+    {
+      "title": "Hieroglyphs",
+      "author": "Penelope Wilson",
+      "number": 113,
+      "subject": "Classical Studies",
+      "publicationYear": 2004
+    },
+    {
+      "title": "Medical ethics",
+      "author": "Tony Hope",
+      "number": 114,
+      "subject": "Philosophy/Medical Ethics",
+      "publicationYear": 2018,
+      "edition": 2
+    },
+    {
+      "title": "Kafka",
+      "author": "Ritchie Robertson",
+      "number": 115,
+      "subject": "Literature/Biography",
+      "publicationYear": 2004
+    },
+    {
+      "title": "Anarchism",
+      "author": "Alex Prichard",
+      "number": 116,
+      "subject": "Politics",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Ancient warfare",
+      "author": "Harry Sidebottom",
+      "number": 117,
+      "subject": "Classical Studies",
+      "publicationYear": 2004
+    },
+    {
+      "title": "Climate change",
+      "author": "Mark Maslin",
+      "number": 118,
+      "subject": "Earth Sciences and Geography/Environment",
+      "publicationYear": 2021,
+      "edition": 4
+    },
+    {
+      "title": "Christianity",
+      "author": "Linda Woodhead",
+      "number": 119,
+      "subject": "Religion",
+      "publicationYear": 2014,
+      "edition": 2
+    },
+    {
+      "title": "Modern art",
+      "author": "David Cottington",
+      "number": 120,
+      "subject": "Art",
+      "publicationYear": 2005
+    },
+    {
+      "title": "Consciousness",
+      "author": "Susan Blackmore",
+      "number": 121,
+      "subject": "Philosophy/Psychology",
+      "publicationYear": 2017,
+      "edition": 2
+    },
+    {
+      "title": "Foucault",
+      "author": "Gary Gutting",
+      "number": 122,
+      "subject": "Philosophy/Biography",
+      "publicationYear": 2019,
+      "edition": 2
+    },
+    {
+      "title": "The Spanish Civil War",
+      "author": "Helen Graham",
+      "number": 123,
+      "subject": "History",
+      "publicationYear": 2005
+    },
+    {
+      "title": "The Marquis de Sade",
+      "author": "John Phillips",
+      "number": 124,
+      "subject": "Literature/Biography",
+      "publicationYear": 2005
+    },
+    {
+      "title": "Habermas",
+      "author": "Gordon Finlayson",
+      "number": 125,
+      "subject": "Philosophy/Sociology/Biography",
+      "publicationYear": 2005
+    },
+    {
+      "title": "Socialism",
+      "author": "Michael Newman",
+      "number": 126,
+      "subject": "Politics/Economics/History",
+      "publicationYear": 2020,
+      "edition": 2
+    },
+    {
+      "title": "Dreaming",
+      "author": "J. Allan Hobson",
+      "number": 127,
+      "subject": "Psychology",
+      "publicationYear": 2005
+    },
+    {
+      "title": "Dinosaurs",
+      "author": "David Norman",
+      "number": 128,
+      "subject": "Biology/Earth Sciences/Geography",
+      "publicationYear": 2017,
+      "edition": 2
+    },
+    {
+      "title": "Renaissance Art",
+      "author": "Geraldine A. Johnson",
+      "number": 129,
+      "subject": "Art",
+      "publicationYear": 2005
+    },
+    {
+      "title": "Buddhist ethics",
+      "author": "Damien Keown",
+      "number": 130,
+      "subject": "Religion",
+      "publicationYear": 2020,
+      "edition": 2
+    },
+    {
+      "title": "Tragedy",
+      "author": "Adrian Poole",
+      "number": 131,
+      "subject": "Classical Studies",
+      "publicationYear": 2005
+    },
+    {
+      "title": "Sikhism",
+      "author": "Eleanor Nesbitt",
+      "number": 132,
+      "subject": "Religion",
+      "publicationYear": 2016,
+      "edition": 2
+    },
+    {
+      "title": "The History of Time",
+      "author": "Leofranc Holford-Strevens",
+      "number": 133,
+      "subject": "Science/History",
+      "publicationYear": 2005
+    },
+    {
+      "title": "Nationalism",
+      "author": "Steven Grosby",
+      "number": 134,
+      "subject": "Politics",
+      "publicationYear": 2005
+    },
+    {
+      "title": "The World Trade Organization",
+      "author": "Amrita Narlikar",
+      "number": 135,
+      "subject": "Economics/Politics",
+      "publicationYear": 2005
+    },
+    {
+      "title": "Design",
+      "author": "John Heskett",
+      "number": 136,
+      "subject": "Art",
+      "publicationYear": 2005
+    },
+    {
+      "title": "The Vikings",
+      "author": "Julian D. Richards",
+      "number": 137,
+      "subject": "History",
+      "publicationYear": 2005
+    },
+    {
+      "title": "Fossils",
+      "author": "Keith Thomson",
+      "number": 138,
+      "subject": "Biology/Earth Sciences/Geography",
+      "publicationYear": 2005
+    },
+    {
+      "title": "Journalism",
+      "author": "Ian Hargreaves",
+      "number": 139,
+      "subject": "Journalism/Media Studies",
+      "publicationYear": 2014,
+      "edition": 2
+    },
+    {
+      "title": "The Crusades",
+      "author": "Christopher Tyerman",
+      "number": 140,
+      "subject": "History/Religion",
+      "publicationYear": 2005
+    },
+    {
+      "title": "Feminism",
+      "author": "Margaret Walters",
+      "number": 141,
+      "subject": "History/Philosophy/Sociology",
+      "publicationYear": 2005
+    },
+    {
+      "title": "Human evolution",
+      "author": "Bernard Wood",
+      "number": 142,
+      "subject": "Anthropology/Archaeology",
+      "publicationYear": 2019,
+      "edition": 2
+    },
+    {
+      "title": "The Dead Sea Scrolls",
+      "author": "Timothy Lim",
+      "number": 143,
+      "subject": "Religion",
+      "publicationYear": 2017,
+      "edition": 2
+    },
+    {
+      "title": "The Brain",
+      "author": "Michael O'Shea",
+      "number": 144,
+      "subject": "Biology/Neuroscience - Clinical/Neurology/Psychology",
+      "publicationYear": 2005
+    },
+    {
+      "title": "Geophysical and Climate Hazards",
+      "author": "Bill McGuire",
+      "number": 145,
+      "subject": "Earth Sciences and Geography/Environment/Environmental Science",
+      "publicationYear": 2024,
+      "edition": 3
+    },
+    {
+      "title": "Contemporary art",
+      "author": "Julian Stallabrass",
+      "number": 146,
+      "subject": "Art",
+      "publicationYear": 2020,
+      "edition": 2
+    },
+    {
+      "title": "Philosophy of Law",
+      "author": "Raymond Wacks",
+      "number": 147,
+      "subject": "Philosophy/Law",
+      "publicationYear": 2014,
+      "edition": 2
+    },
+    {
+      "title": "The Renaissance",
+      "author": "Jerry Brotton",
+      "number": 148,
+      "subject": "Art/History/Philosophy",
+      "publicationYear": 2006
+    },
+    {
+      "title": "Anglicanism",
+      "author": "Mark Chapman",
+      "number": 149,
+      "subject": "Religion",
+      "publicationYear": 2006
+    },
+    {
+      "title": "The Roman Empire",
+      "author": "Christopher Kelly",
+      "number": 150,
+      "subject": "Classical Studies",
+      "publicationYear": 2006
+    },
+    {
+      "title": "Photography",
+      "author": "Steven Edwards",
+      "number": 151,
+      "subject": "Art",
+      "publicationYear": 2006
+    },
+    {
+      "title": "Psychiatry",
+      "author": "Tom Burns",
+      "number": 152,
+      "subject": "Medicine - Psychiatry/Psychology/Social Work",
+      "publicationYear": 2018,
+      "edition": 2
+    },
+    {
+      "title": "Existentialism",
+      "author": "Thomas Flynn",
+      "number": 153,
+      "subject": "Philosophy",
+      "publicationYear": 2006
+    },
+    {
+      "title": "The First World War",
+      "author": "Michael Howard",
+      "number": 154,
+      "subject": "History/Military",
+      "publicationYear": 2007
+    },
+    {
+      "title": "Fundamentalism",
+      "author": "Malise Ruthven",
+      "number": 155,
+      "subject": "Religion",
+      "publicationYear": 2007
+    },
+    {
+      "title": "Economics",
+      "author": "Partha Dasgupta",
+      "number": 156,
+      "subject": "Economics",
+      "publicationYear": 2007
+    },
+    {
+      "title": "International Migration",
+      "author": "Khalid Koser",
+      "number": 157,
+      "subject": "Sociology",
+      "publicationYear": 2016,
+      "edition": 2
+    },
+    {
+      "title": "Newton",
+      "author": "Rob Iliffe",
+      "number": 158,
+      "subject": "History of Science/Physics/Biography",
+      "publicationYear": 2007
+    },
+    {
+      "title": "Chaos",
+      "author": "Lenny Smith",
+      "number": 159,
+      "subject": "Mathematics/Physics",
+      "publicationYear": 2007
+    },
+    {
+      "title": "African History",
+      "author": "John Parker, Richard Rathbone",
+      "number": 160,
+      "subject": "History",
+      "publicationYear": 2007
+    },
+    {
+      "title": "Racism",
+      "author": "Ali Rattansi",
+      "number": 161,
+      "subject": "Sociology",
+      "publicationYear": 2020,
+      "edition": 2
+    },
+    {
+      "title": "Kabbalah",
+      "author": "Joseph Dan",
+      "number": 162,
+      "subject": "Religion",
+      "publicationYear": 2007
+    },
+    {
+      "title": "Human Rights",
+      "author": "Andrew Clapham",
+      "number": 163,
+      "subject": "Law - International/Human Rights and Immigration/Politics/Social Work",
+      "publicationYear": 2016,
+      "edition": 2
+    },
+    {
+      "title": "International Relations",
+      "author": "Paul Wilkinson, Christian Reus-Smit",
+      "number": 164,
+      "subject": "Economics/Politics",
+      "publicationYear": 2020
+    },
+    {
+      "title": "The American Presidency",
+      "author": "Charles O. Jones",
+      "number": 165,
+      "subject": "History – U.S./Politics – U.S.",
+      "publicationYear": 2016,
+      "edition": 2
+    },
+    {
+      "title": "The Great Depression and The New Deal",
+      "author": "Eric Rauchway",
+      "number": 166,
+      "subject": "Economics/History",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Classical Mythology",
+      "author": "Helen Morales",
+      "number": 167,
+      "subject": "Classical Studies/Religion",
+      "publicationYear": 2007
+    },
+    {
+      "title": "The New Testament as Literature",
+      "author": "Kyle Keefer",
+      "number": 168,
+      "subject": "Religion",
+      "publicationYear": 2008
+    },
+    {
+      "title": "American Political Parties and Elections",
+      "author": "L. Sandy Maisel",
+      "number": 169,
+      "subject": "Politics – U.S.",
+      "publicationYear": 2022,
+      "edition": 3
+    },
+    {
+      "title": "Bestsellers",
+      "author": "John Sutherland",
+      "number": 170,
+      "subject": "Literature",
+      "publicationYear": 2007
+    },
+    {
+      "title": "Geopolitics",
+      "author": "Klaus Dodds",
+      "number": 171,
+      "subject": "Human Geography/Politics",
+      "publicationYear": 2019,
+      "edition": 3
+    },
+    {
+      "title": "Antisemitism",
+      "author": "Steven Beller",
+      "number": 172,
+      "subject": "History/Religion",
+      "publicationYear": 2015,
+      "edition": 2
+    },
+    {
+      "title": "Game theory",
+      "author": "Ken Binmore",
+      "number": 173,
+      "subject": "Economics",
+      "publicationYear": 2007
+    },
+    {
+      "title": "HIV/AIDS",
+      "author": "Alan Whiteside",
+      "number": 174,
+      "subject": "Medicine - Clinical/Pathology",
+      "publicationYear": 2016,
+      "edition": 2
+    },
+    {
+      "title": "Documentary film",
+      "author": "Patricia Aufderheide",
+      "number": 175,
+      "subject": "Media Studies",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Modern China",
+      "author": "Rana Mitter",
+      "number": 176,
+      "subject": "Human Geography",
+      "publicationYear": 2016,
+      "edition": 2
+    },
+    {
+      "title": "The Quakers",
+      "author": "Pink Dandelion",
+      "number": 177,
+      "subject": "Religion",
+      "publicationYear": 2008
+    },
+    {
+      "title": "German literature",
+      "author": "Nicholas Boyle",
+      "number": 178,
+      "subject": "Literature",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Nuclear Weapons",
+      "author": "Joseph M. Siracusa",
+      "number": 179,
+      "subject": "Physics/Politics/Warfare And Defence",
+      "publicationYear": 2020,
+      "edition": 3
+    },
+    {
+      "title": "Law",
+      "author": "Raymond Wacks",
+      "number": 180,
+      "subject": "Law/History/Law and Society/Legal System and Practice",
+      "publicationYear": 2023,
+      "edition": 3
+    },
+    {
+      "title": "The Old Testament",
+      "author": "Michael Coogan",
+      "number": 181,
+      "subject": "Religion",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Galaxies",
+      "author": "John Gribbin",
+      "number": 182,
+      "subject": "Physics",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Mormonism",
+      "author": "Richard Bushman",
+      "number": 183,
+      "subject": "Religion",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Religion in America",
+      "author": "Timothy Beal",
+      "number": 184,
+      "subject": "Religion",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Geography",
+      "author": "John A. Matthews, David T. Herbert",
+      "number": 185,
+      "subject": "Earth Sciences and Geography/History/Human Geography",
+      "publicationYear": 2008
+    },
+    {
+      "title": "The Meaning of Life",
+      "author": "Terry Eagleton",
+      "number": 186,
+      "subject": "Religion/Philosophy",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Sexuality",
+      "author": "Veronique Mottier",
+      "number": 187,
+      "subject": "Sociology/Psychology/Medicine/History",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Nelson Mandela",
+      "author": "Elleke Boehmer",
+      "number": 188,
+      "subject": "History/Politics/Biography",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Science and Religion",
+      "author": "Thomas Dixon, Adam Shapiro",
+      "number": 189,
+      "subject": "Religion/Philosophy",
+      "publicationYear": 2022,
+      "edition": 2
+    },
+    {
+      "title": "Relativity",
+      "author": "Russell Stannard",
+      "number": 190,
+      "subject": "Physics",
+      "publicationYear": 2008
+    },
+    {
+      "title": "The History of Medicine",
+      "author": "William Bynum",
+      "number": 191,
+      "subject": "History of Medicine",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Citizenship",
+      "author": "Richard Bellamy",
+      "number": 192,
+      "subject": "Politics",
+      "publicationYear": 2008
+    },
+    {
+      "title": "The History of Life",
+      "author": "Michael J. Benton",
+      "number": 193,
+      "subject": "Biology/Earth Sciences and Geography",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Memory",
+      "author": "Jonathan K. Foster",
+      "number": 194,
+      "subject": "Neuroscience/Psychology",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Autism",
+      "author": "Uta Frith",
+      "number": 195,
+      "subject": "Neuroscience/Psychology",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Statistics",
+      "author": "David J. Hand",
+      "number": 196,
+      "subject": "Mathematics",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Scotland",
+      "author": "Rab Houston",
+      "number": 197,
+      "subject": "History/Human Geography",
+      "publicationYear": 2008
+    },
+    {
+      "title": "Catholicism",
+      "author": "Gerald O'Collins",
+      "number": 198,
+      "subject": "Religion",
+      "publicationYear": 2017,
+      "edition": 2
+    },
+    {
+      "title": "The United Nations",
+      "author": "Jussi M. Hanhimäki",
+      "number": 199,
+      "subject": "Politics",
+      "publicationYear": 2015,
+      "edition": 2
+    },
+    {
+      "title": "Free speech",
+      "author": "Nigel Warburton",
+      "number": 200,
+      "subject": "Politics",
+      "publicationYear": 2009
+    },
+    {
+      "title": "The Apocryphal Gospels",
+      "author": "Paul Foster",
+      "number": 201,
+      "subject": "Religion",
+      "publicationYear": 2009
+    },
+    {
+      "title": "Modern Japan",
+      "author": "Christopher Goto-Jones",
+      "number": 202,
+      "subject": "Human Geography",
+      "publicationYear": 2009
+    },
+    {
+      "title": "Lincoln",
+      "author": "Allen C. Guelzo",
+      "number": 203,
+      "subject": "History – U.S./Biography",
+      "publicationYear": 2009
+    },
+    {
+      "title": "Superconductivity",
+      "author": "Stephen J. Blundell",
+      "number": 204,
+      "subject": "Physics",
+      "publicationYear": 2009
+    },
+    {
+      "title": "Nothing",
+      "author": "Frank Close",
+      "number": 205,
+      "publicationYear": 2009
+    },
+    {
+      "title": "Biography",
+      "author": "Hermione Lee",
+      "number": 206,
+      "subject": "Literature",
+      "publicationYear": 2009
+    },
+    {
+      "title": "The Soviet Union",
+      "author": "Stephen Lovell",
+      "number": 207,
+      "subject": "History/Politics",
+      "publicationYear": 2009
+    },
+    {
+      "title": "Writing and Script",
+      "author": "Andrew Robinson",
+      "number": 208,
+      "subject": "Literature",
+      "publicationYear": 2009
+    },
+    {
+      "title": "Communism",
+      "author": "Leslie Holmes",
+      "number": 209,
+      "subject": "Politics",
+      "publicationYear": 2009
+    },
+    {
+      "title": "Fashion",
+      "author": "Rebecca Arnold",
+      "number": 210,
+      "subject": "Art",
+      "publicationYear": 2009
+    },
+    {
+      "title": "Forensic science",
+      "author": "Jim Fraser",
+      "number": 211,
+      "subject": "Science",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Puritanism",
+      "author": "Francis J. Bremer",
+      "number": 212,
+      "subject": "Religion",
+      "publicationYear": 2009
+    },
+    {
+      "title": "The Reformation",
+      "author": "Peter Marshall",
+      "number": 213,
+      "subject": "Religion",
+      "publicationYear": 2009
+    },
+    {
+      "title": "Thomas Aquinas",
+      "author": "Fergus Kerr",
+      "number": 214,
+      "subject": "Religion/Biography",
+      "publicationYear": 2009
+    },
+    {
+      "title": "Deserts",
+      "author": "Nick Middleton",
+      "number": 215,
+      "subject": "Geography",
+      "publicationYear": 2009
+    },
+    {
+      "title": "The Norman Conquest",
+      "author": "George Garnett",
+      "number": 216,
+      "subject": "History – U.K.",
+      "publicationYear": 2009
+    },
+    {
+      "title": "Biblical archaeology",
+      "author": "Eric H. Cline",
+      "number": 217,
+      "subject": "History/Archaeology",
+      "publicationYear": 2009
+    },
+    {
+      "title": "The Reagan Revolution",
+      "author": "Gil Troy",
+      "number": 218,
+      "subject": "History – U.S.",
+      "publicationYear": 2009
+    },
+    {
+      "title": "The Book of Mormon",
+      "author": "Terryl Givens",
+      "number": 219,
+      "subject": "Religion",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Islamic History",
+      "author": "Adam J. Silverstein",
+      "number": 220,
+      "subject": "History/Religion",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Privacy",
+      "author": "Raymond Wacks",
+      "number": 221,
+      "subject": "Politics",
+      "publicationYear": 2015,
+      "edition": 2
+    },
+    {
+      "title": "Neoliberalism",
+      "author": "Manfred Steger, Ravi K. Roy",
+      "number": 222,
+      "subject": "Politics",
+      "publicationYear": 2021,
+      "edition": 2
+    },
+    {
+      "title": "Progressivism",
+      "author": "Walter Nugent",
+      "number": 223,
+      "subject": "Politics",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Epidemiology",
+      "author": "Rodolfo Saracci",
+      "number": 224,
+      "subject": "Medicine",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Information",
+      "author": "Luciano Floridi",
+      "number": 225,
+      "publicationYear": 2010
+    },
+    {
+      "title": "The Laws of Thermodynamics",
+      "author": "Peter Atkins",
+      "number": 226,
+      "subject": "Physics",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Innovation",
+      "author": "Mark Dodgson, David Gann",
+      "number": 227,
+      "subject": "Science/Business",
+      "publicationYear": 2018,
+      "edition": 2
+    },
+    {
+      "title": "Witchcraft",
+      "author": "Malcolm Gaskill",
+      "number": 228,
+      "subject": "Religion",
+      "publicationYear": 2010
+    },
+    {
+      "title": "The New Testament",
+      "author": "Luke Timothy Johnson",
+      "number": 229,
+      "subject": "Religion",
+      "publicationYear": 2010
+    },
+    {
+      "title": "French literature",
+      "author": "John D. Lyons",
+      "number": 230,
+      "subject": "Literature",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Film music",
+      "author": "Kathryn Kalinak",
+      "number": 231,
+      "subject": "Music",
+      "publicationYear": 2023,
+      "edition": 2
+    },
+    {
+      "title": "Druids",
+      "author": "Barry Cunliffe",
+      "number": 232,
+      "subject": "Religion",
+      "publicationYear": 2010
+    },
+    {
+      "title": "German philosophy",
+      "author": "Andrew Bowie",
+      "number": 233,
+      "subject": "Philosophy",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Advertising",
+      "author": "Winston Fletcher",
+      "number": 234,
+      "subject": "Business",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Forensic psychology",
+      "author": "David Canter",
+      "number": 235,
+      "subject": "Psychology",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Modernism",
+      "author": "Christopher Butler",
+      "number": 236,
+      "subject": "Literature",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Leadership",
+      "author": "Keith Grint",
+      "number": 237,
+      "subject": "Business/Psychology",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Christian ethics",
+      "author": "D. Stephen Long",
+      "number": 238,
+      "subject": "Religion",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Tocqueville",
+      "author": "Harvey Mansfield",
+      "number": 239,
+      "subject": "Politics/Biography",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Landscapes and Geomorphology",
+      "author": "Andrew Goudie, Heather Viles",
+      "number": 240,
+      "subject": "Geology",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Spanish Literature",
+      "author": "Jo Labanyi",
+      "number": 241,
+      "subject": "Literature",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Diplomacy",
+      "author": "Joseph M. Siracusa",
+      "number": 242,
+      "subject": "Politics/History",
+      "publicationYear": 2021,
+      "edition": 2
+    },
+    {
+      "title": "North American Indians",
+      "author": "Theda Perdue, Michael D. Green",
+      "number": 243,
+      "subject": "History/Archaeology",
+      "publicationYear": 2010
+    },
+    {
+      "title": "The U.S. Congress",
+      "author": "Donald Ritchie",
+      "number": 244,
+      "subject": "Politics – U.S.",
+      "publicationYear": 2016,
+      "edition": 2
+    },
+    {
+      "title": "Romanticism",
+      "author": "Michael Ferber",
+      "number": 245,
+      "subject": "Literature",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Utopianism",
+      "author": "Lyman Tower Sargent",
+      "number": 246,
+      "subject": "Literature/Philosophy",
+      "publicationYear": 2010
+    },
+    {
+      "title": "The Blues",
+      "author": "Elijah Wald",
+      "number": 247,
+      "subject": "Music",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Keynes",
+      "author": "Robert Skidelsky",
+      "number": 248,
+      "subject": "History of Science/Economics/Biography",
+      "publicationYear": 2010
+    },
+    {
+      "title": "English literature",
+      "author": "Jonathan Bate",
+      "number": 249,
+      "subject": "Literature",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Agnosticism",
+      "author": "Robin Le Poidevin",
+      "number": 250,
+      "subject": "Religion",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Aristocracy",
+      "author": "William Doyle",
+      "number": 251,
+      "subject": "Politics/History",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Martin Luther",
+      "author": "Scott H. Hendrix",
+      "number": 252,
+      "subject": "Religion/Biography",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Michael Faraday",
+      "author": "Frank A.J.L. James",
+      "number": 253,
+      "subject": "History of Science/Physics/Biography",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Planets",
+      "author": "David A. Rothery",
+      "number": 254,
+      "subject": "Astronomy",
+      "publicationYear": 2010
+    },
+    {
+      "title": "Pentecostalism",
+      "author": "William K. Kay",
+      "number": 255,
+      "subject": "Religion",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Humanism",
+      "author": "Stephen Law",
+      "number": 256,
+      "subject": "Religion/Philosophy",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Folk music",
+      "author": "Mark Slobin",
+      "number": 257,
+      "subject": "Music",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Late Antiquity",
+      "author": "Gillian Clark",
+      "number": 258,
+      "subject": "Classical Studies",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Genius",
+      "author": "Andrew Robinson",
+      "number": 259,
+      "subject": "Psychology",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Numbers",
+      "author": "Peter M. Higgins",
+      "number": 260,
+      "subject": "Mathematics",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Muhammad",
+      "author": "Jonathan A.C. Brown",
+      "number": 261,
+      "subject": "Religion/Biography",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Beauty",
+      "author": "Roger Scruton",
+      "number": 262,
+      "subject": "Philosophy/Art",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Critical theory",
+      "author": "Stephen Eric Bronner",
+      "number": 263,
+      "subject": "Literature/Philosophy",
+      "publicationYear": 2017,
+      "edition": 2
+    },
+    {
+      "title": "Organizations",
+      "author": "Mary Jo Hatch",
+      "number": 264,
+      "subject": "Business",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Early Music",
+      "author": "Thomas Forrest Kelly",
+      "number": 265,
+      "subject": "Music",
+      "publicationYear": 2011
+    },
+    {
+      "title": "The Scientific Revolution",
+      "author": "Lawrence M. Principe",
+      "number": 266,
+      "subject": "History of Science",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Cancer",
+      "author": "Nick James",
+      "number": 267,
+      "publicationYear": 2011,
+      "edition": 2
+    },
+    {
+      "title": "Nuclear power",
+      "author": "Maxwell Irvine",
+      "number": 268,
+      "subject": "Physics",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Paganism",
+      "author": "Owen Davies",
+      "number": 269,
+      "subject": "Religion",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Risk",
+      "author": "Baruch Fischhoff, John Kadvany",
+      "number": 270,
+      "publicationYear": 2011
+    },
+    {
+      "title": "Science fiction",
+      "author": "David Seed",
+      "number": 271,
+      "subject": "Literature",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Herodotus",
+      "author": "Jennifer T. Roberts",
+      "number": 272,
+      "subject": "Classical Studies",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Conscience",
+      "author": "Paul Strohm",
+      "number": 273,
+      "subject": "Philosophy/Ethics/Psychology",
+      "publicationYear": 2011
+    },
+    {
+      "title": "American Immigration",
+      "author": "David A. Gerber",
+      "number": 274,
+      "subject": "History - U.S./Sociology",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Jesus",
+      "author": "Richard Bauckham",
+      "number": 275,
+      "subject": "Religion/Biography",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Viruses",
+      "author": "Dorothy H. Crawford",
+      "number": 276,
+      "subject": "Biology",
+      "publicationYear": 2022,
+      "edition": 3
+    },
+    {
+      "title": "Protestantism",
+      "author": "Mark A. Noll",
+      "number": 277,
+      "subject": "Religion",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Derrida",
+      "author": "Simon Glendinning",
+      "number": 278,
+      "subject": "Literature/Philosophy/Biography",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Madness",
+      "author": "Andrew T. Scull",
+      "number": 279,
+      "subject": "Psychology",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Developmental biology",
+      "author": "Lewis Wolpert",
+      "number": 280,
+      "subject": "Biology",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Dictionaries",
+      "author": "Lynda Mugglestone",
+      "number": 281,
+      "subject": "Literature",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Global Economic History",
+      "author": "Robert C. Allen",
+      "number": 282,
+      "subject": "History/Economics",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Multiculturalism",
+      "author": "Ali Rattansi",
+      "number": 283,
+      "subject": "Sociology",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Environmental economics",
+      "author": "Stephen Smith",
+      "number": 284,
+      "subject": "Economics",
+      "publicationYear": 2011
+    },
+    {
+      "title": "The Cell",
+      "author": "Terence Allen, Graham Cowling",
+      "number": 285,
+      "subject": "Biology",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Ancient Greece",
+      "author": "Paul Cartledge",
+      "number": 286,
+      "subject": "Classical Studies",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Angels",
+      "author": "David Albert Jones",
+      "number": 287,
+      "subject": "Religion",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Children's literature",
+      "author": "Kimberley Reynolds",
+      "number": 288,
+      "subject": "Literature",
+      "publicationYear": 2011
+    },
+    {
+      "title": "The Periodic Table",
+      "author": "Eric R. Scerri",
+      "number": 289,
+      "subject": "Chemistry",
+      "publicationYear": 2019,
+      "edition": 2
+    },
+    {
+      "title": "Modern France",
+      "author": "Vanessa R. Schwartz",
+      "number": 290,
+      "subject": "Human Geography",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Reality",
+      "author": "Jan Westerhoff",
+      "number": 291,
+      "subject": "Philosophy",
+      "publicationYear": 2011
+    },
+    {
+      "title": "The Computer",
+      "author": "Darrel Ince",
+      "number": 292,
+      "subject": "Computing/Mathematics/Engineering/Science",
+      "publicationYear": 2011
+    },
+    {
+      "title": "The Animal Kingdom",
+      "author": "Peter Holland",
+      "number": 293,
+      "subject": "Biology",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Colonial Latin American Literature",
+      "author": "Rolena Adorno",
+      "number": 294,
+      "subject": "Literature",
+      "publicationYear": 2011
+    },
+    {
+      "title": "Sleep",
+      "author": "Steven W. Lockley, Russell G. Foster",
+      "number": 295,
+      "subject": "Medicine",
+      "publicationYear": 2012
+    },
+    {
+      "title": "The Aztecs",
+      "author": "David Carrasco",
+      "number": 296,
+      "subject": "History",
+      "publicationYear": 2012
+    },
+    {
+      "title": "The Cultural Revolution",
+      "author": "Richard Curt Kraus",
+      "number": 297,
+      "subject": "History/Politics",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Modern Latin American Literature",
+      "author": "Roberto González Echevarría",
+      "number": 298,
+      "subject": "Literature",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Magic",
+      "author": "Owen Davies",
+      "number": 299,
+      "subject": "Religion",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Film",
+      "author": "Michael Wood",
+      "number": 300,
+      "subject": "Cinema",
+      "publicationYear": 2012
+    },
+    {
+      "title": "The Conquistadors",
+      "author": "Matthew Restall, Felipe Fernández-Armesto",
+      "number": 301,
+      "subject": "History",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Chinese literature",
+      "author": "Sabina Knight",
+      "number": 302,
+      "subject": "Literature",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Stem Cells",
+      "author": "Jonathan Slack",
+      "number": 303,
+      "subject": "Biology",
+      "publicationYear": 2021,
+      "edition": 2
+    },
+    {
+      "title": "Italian literature",
+      "author": "Peter Hainsworth, David Robey",
+      "number": 304,
+      "subject": "Literature",
+      "publicationYear": 2012
+    },
+    {
+      "title": "The History of Mathematics",
+      "author": "Jacqueline Stedall",
+      "number": 305,
+      "subject": "Mathematics/History of Science",
+      "publicationYear": 2012
+    },
+    {
+      "title": "The U.S. Supreme Court",
+      "author": "Linda Greenhouse",
+      "number": 306,
+      "subject": "Politics – U.S.",
+      "publicationYear": 2023,
+      "edition": 3
+    },
+    {
+      "title": "Plague",
+      "author": "Paul Slack",
+      "number": 307,
+      "subject": "Medicine/History",
+      "publicationYear": 2021,
+      "edition": 2
+    },
+    {
+      "title": "Russian History",
+      "author": "Geoffrey Hosking",
+      "number": 308,
+      "subject": "History",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Engineering",
+      "author": "David Blockley",
+      "number": 309,
+      "subject": "Engineering",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Probability",
+      "author": "John Haigh",
+      "number": 310,
+      "subject": "Mathematics",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Rivers",
+      "author": "Nick Middleton",
+      "number": 311,
+      "subject": "Geography",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Plants",
+      "author": "Timothy Walker",
+      "number": 312,
+      "subject": "Biology",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Anaesthesia",
+      "author": "Aidan O'Donnell",
+      "number": 313,
+      "subject": "Medicine",
+      "publicationYear": 2012
+    },
+    {
+      "title": "The Mongols",
+      "author": "Morris Rossabi",
+      "number": 314,
+      "subject": "History",
+      "publicationYear": 2012
+    },
+    {
+      "title": "The Devil",
+      "author": "Darren Oldridge",
+      "number": 315,
+      "subject": "Religion",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Objectivity",
+      "author": "Stephen Gaukroger",
+      "number": 316,
+      "subject": "Philosophy",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Magnetism",
+      "author": "Stephen J. Blundell",
+      "number": 317,
+      "subject": "Physics",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Anxiety",
+      "author": "Daniel Freeman, Jason Freeman",
+      "number": 318,
+      "subject": "Psychology",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Australia",
+      "author": "Kenneth Morgan",
+      "number": 319,
+      "subject": "Geography",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Languages",
+      "author": "Stephen Anderson",
+      "number": 320,
+      "subject": "Linguistics",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Magna Carta",
+      "author": "Nicholas Vincent",
+      "number": 321,
+      "subject": "Politics",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Stars",
+      "author": "Andrew King",
+      "number": 322,
+      "subject": "Astronomy",
+      "publicationYear": 2012
+    },
+    {
+      "title": "The Antarctic",
+      "author": "Klaus Dodds",
+      "number": 323,
+      "subject": "Geography",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Radioactivity",
+      "author": "Claudio Tuniz",
+      "number": 324,
+      "subject": "Physics",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Trust",
+      "author": "Katherine Hawley",
+      "number": 325,
+      "subject": "Politics",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Metaphysics",
+      "author": "Stephen Mumford",
+      "number": 326,
+      "subject": "Philosophy",
+      "publicationYear": 2012
+    },
+    {
+      "title": "The Roman Republic",
+      "author": "David M. Gwynn",
+      "number": 327,
+      "subject": "Classical Studies",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Borders",
+      "author": "Alexander C. Diener, Joshua Hagen",
+      "number": 328,
+      "subject": "Politics",
+      "publicationYear": 2024,
+      "edition": 2
+    },
+    {
+      "title": "The Gothic",
+      "author": "Nick Groom",
+      "number": 329,
+      "subject": "Literature",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Robotics",
+      "author": "Alan Winfield",
+      "number": 330,
+      "subject": "Engineering/Science",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Civil engineering",
+      "author": "David Muir Wood",
+      "number": 331,
+      "subject": "Engineering",
+      "publicationYear": 2012
+    },
+    {
+      "title": "The Orchestra",
+      "author": "D. Kern Holoman",
+      "number": 332,
+      "subject": "Music",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Governance",
+      "author": "Mark Bevir",
+      "number": 333,
+      "subject": "Politics",
+      "publicationYear": 2012
+    },
+    {
+      "title": "American History",
+      "author": "Paul S. Boyer",
+      "number": 334,
+      "subject": "History – U.S.",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Networks",
+      "author": "Guido Caldarelli, Michele Catanzaro",
+      "number": 335,
+      "subject": "Computing/Mathematics/Engineering/Science",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Spirituality",
+      "author": "Philip Sheldrake",
+      "number": 336,
+      "subject": "Religion",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Work",
+      "author": "Stephen Fineman",
+      "number": 337,
+      "subject": "Economics",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Martyrdom",
+      "author": "Jolyon Mitchell",
+      "number": 338,
+      "subject": "Religion",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Colonial America",
+      "author": "Alan Taylor",
+      "number": 339,
+      "subject": "history – U.S.",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Rastafari",
+      "author": "Ennis B. Edmonds",
+      "number": 340,
+      "subject": "Religion",
+      "publicationYear": 2012
+    },
+    {
+      "title": "Comedy",
+      "author": "Matthew Bevis",
+      "number": 341,
+      "subject": "Literature",
+      "publicationYear": 2012
+    },
+    {
+      "title": "The Avant-Garde",
+      "author": "David Cottington",
+      "number": 342,
+      "subject": "Art",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Thought",
+      "author": "Tim Bayne",
+      "number": 343,
+      "subject": "Psychology",
+      "publicationYear": 2013
+    },
+    {
+      "title": "The Napoleonic Wars",
+      "author": "Mike Rapport",
+      "number": 344,
+      "subject": "History/Military",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Medical law",
+      "author": "Charles Foster",
+      "number": 345,
+      "subject": "Medicine/Law",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Rhetoric",
+      "author": "Richard Toye",
+      "number": 346,
+      "subject": "Classical Studies",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Education",
+      "author": "Gary Thomas",
+      "number": 347,
+      "subject": "Education",
+      "publicationYear": 2021,
+      "edition": 2
+    },
+    {
+      "title": "Mao",
+      "author": "Delia Davin",
+      "number": 348,
+      "subject": "Politics - China/Biography",
+      "publicationYear": 2013
+    },
+    {
+      "title": "The British Constitution",
+      "author": "Martin Loughlin",
+      "number": 349,
+      "subject": "Politics - U.K.",
+      "publicationYear": 2013
+    },
+    {
+      "title": "American politics",
+      "author": "Richard M. Valelly",
+      "number": 350,
+      "subject": "Politics - U.S.",
+      "publicationYear": 2013
+    },
+    {
+      "title": "The Silk Road",
+      "author": "James A. Millward",
+      "number": 351,
+      "subject": "History",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Bacteria",
+      "author": "Sebastian G. B. Amyes",
+      "number": 352,
+      "subject": "Biology",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Symmetry",
+      "author": "Ian Stewart",
+      "number": 353,
+      "subject": "Mathematics",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Marine biology",
+      "author": "Philip V. Mladenov",
+      "number": 354,
+      "subject": "Biology",
+      "publicationYear": 2020,
+      "edition": 2
+    },
+    {
+      "title": "The British Empire",
+      "author": "Ashley Jackson",
+      "number": 355,
+      "subject": "History - U.K.",
+      "publicationYear": 2013
+    },
+    {
+      "title": "The Trojan War",
+      "author": "Eric H. Cline",
+      "number": 356,
+      "subject": "History/Archaeology/Classical Studies",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Malthus",
+      "author": "Donald Winch",
+      "number": 357,
+      "subject": "Sociology/Biography",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Climate",
+      "author": "Mark Maslin",
+      "number": 358,
+      "subject": "Science",
+      "publicationYear": 2013
+    },
+    {
+      "title": "The Palestinian–Israeli Conflict",
+      "author": "Martin Bunton",
+      "number": 359,
+      "subject": "Politics/History",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Happiness",
+      "author": "Daniel M. Haybron",
+      "number": 360,
+      "subject": "Psychology",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Diaspora",
+      "author": "Kevin Kenny",
+      "number": 361,
+      "subject": "Sociology/History/Politics",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Contemporary Fiction",
+      "author": "Robert Eaglestone",
+      "number": 362,
+      "subject": "Literature",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Modern War",
+      "author": "Richard English",
+      "number": 363,
+      "subject": "Military",
+      "publicationYear": 2013
+    },
+    {
+      "title": "The Beats",
+      "author": "David Sterritt",
+      "number": 364,
+      "subject": "Literature/History",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Sociolinguistics",
+      "author": "John Edwards",
+      "number": 365,
+      "subject": "Linguistics",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Food",
+      "author": "John Krebs",
+      "number": 366,
+      "publicationYear": 2013
+    },
+    {
+      "title": "Fractals",
+      "author": "Kenneth Falconer",
+      "number": 367,
+      "subject": "Mathematics",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Management",
+      "author": "John Hendry",
+      "number": 368,
+      "subject": "Business",
+      "publicationYear": 2013
+    },
+    {
+      "title": "International security",
+      "author": "Christopher S. Browning",
+      "number": 369,
+      "subject": "Politics",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Astrobiology",
+      "author": "David C. Catling",
+      "number": 370,
+      "subject": "Biology",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Causation",
+      "author": "Stephen Mumford, Rani Lill Anjum",
+      "number": 371,
+      "subject": "Philosophy",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Entrepreneurship",
+      "author": "Paul Westhead, Mike Wright",
+      "number": 372,
+      "subject": "Business",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Tibetan Buddhism",
+      "author": "Matthew T. Kapstein",
+      "number": 373,
+      "subject": "Religion",
+      "publicationYear": 2013
+    },
+    {
+      "title": "The Ancient Near East",
+      "author": "Amanda H. Podany",
+      "number": 374,
+      "subject": "History/Archaeology",
+      "publicationYear": 2013
+    },
+    {
+      "title": "American Legal History",
+      "author": "G. Edward White",
+      "number": 375,
+      "subject": "Law/History - U.S.",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Ethnomusicology",
+      "author": "Timothy Rice",
+      "number": 376,
+      "subject": "Music",
+      "publicationYear": 2014
+    },
+    {
+      "title": "African Religions",
+      "author": "Jacob K. Olupona",
+      "number": 377,
+      "subject": "Religion",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Humour",
+      "author": "Noël Carroll",
+      "number": 378,
+      "subject": "Literature",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Family law",
+      "author": "Jonathan Herring",
+      "number": 379,
+      "subject": "Law - U.K.",
+      "publicationYear": 2014
+    },
+    {
+      "title": "The Ice Age",
+      "author": "Jamie Woodward",
+      "number": 380,
+      "subject": "Geology",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Revolutions",
+      "author": "Jack A. Goldstone",
+      "number": 381,
+      "subject": "Politics",
+      "publicationYear": 2013
+    },
+    {
+      "title": "Classical Literature",
+      "author": "William Allan",
+      "number": 382,
+      "subject": "Classical Studies",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Accounting",
+      "author": "Christopher Nobes",
+      "number": 383,
+      "subject": "Business",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Teeth",
+      "author": "Peter S. Ungar",
+      "number": 384,
+      "subject": "Biology",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Physical chemistry",
+      "author": "Peter Atkins",
+      "number": 385,
+      "subject": "Chemistry",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Microeconomics",
+      "author": "Avinash Dixit",
+      "number": 386,
+      "subject": "Economics",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Landscape architecture",
+      "author": "Ian Thompson",
+      "number": 387,
+      "subject": "Architecture",
+      "publicationYear": 2014
+    },
+    {
+      "title": "The Eye",
+      "author": "Michael F. Land",
+      "number": 388,
+      "subject": "Biology",
+      "publicationYear": 2014
+    },
+    {
+      "title": "The Etruscans",
+      "author": "Christopher Smith",
+      "number": 389,
+      "subject": "Classical Studies",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Nutrition",
+      "author": "David Bender",
+      "number": 390,
+      "subject": "Medicine",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Coral Reefs",
+      "author": "Charles Sheppard",
+      "number": 391,
+      "subject": "Biology",
+      "publicationYear": 2021,
+      "edition": 2
+    },
+    {
+      "title": "Complexity",
+      "author": "John H. Holland",
+      "number": 392,
+      "subject": "Science",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Alexander the Great",
+      "author": "Hugh Bowden",
+      "number": 393,
+      "subject": "Classical Studies/History/Biography",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Hormones",
+      "author": "Martin Luck",
+      "number": 394,
+      "subject": "Medicine",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Confucianism",
+      "author": "Daniel K. Gardner",
+      "number": 395,
+      "subject": "Religion/Philosophy",
+      "publicationYear": 2014
+    },
+    {
+      "title": "American Slavery",
+      "author": "Heather Andrea Williams",
+      "number": 396,
+      "subject": "History – U.S.",
+      "publicationYear": 2014
+    },
+    {
+      "title": "African American Religion",
+      "author": "Eddie S. Glaude Jr.",
+      "number": 397,
+      "subject": "Religion",
+      "publicationYear": 2014
+    },
+    {
+      "title": "God",
+      "author": "John Bowker",
+      "number": 398,
+      "subject": "Religion/Philosophy",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Genes",
+      "author": "Jonathan Slack",
+      "number": 399,
+      "subject": "Biology",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Knowledge",
+      "author": "Jennifer Nagel",
+      "number": 400,
+      "subject": "Philosophy",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Structural engineering",
+      "author": "David Blockley",
+      "number": 401,
+      "subject": "Engineering",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Theatre",
+      "author": "Marvin Carlson",
+      "number": 402,
+      "subject": "Art",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Ancient Egyptian Art and Architecture",
+      "author": "Christina Riggs",
+      "number": 403,
+      "subject": "Art",
+      "publicationYear": 2014
+    },
+    {
+      "title": "The Middle Ages",
+      "author": "Miri Rubin",
+      "number": 404,
+      "subject": "History",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Materials",
+      "author": "Christopher Hall",
+      "number": 405,
+      "subject": "Engineering",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Minerals",
+      "author": "David Vaughan",
+      "number": 406,
+      "subject": "Geology",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Peace",
+      "author": "Oliver P. Richmond",
+      "number": 407,
+      "subject": "Politics",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Iran",
+      "author": "Ali Ansari",
+      "number": 408,
+      "subject": "History - Iran/Human Geography",
+      "publicationYear": 2014
+    },
+    {
+      "title": "World War II",
+      "author": "Gerhard L. Weinberg",
+      "number": 409,
+      "subject": "Military",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Child Psychology",
+      "author": "Usha Goswami",
+      "number": 410,
+      "subject": "Psychology",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Sport",
+      "author": "Mike Cronin",
+      "number": 411,
+      "subject": "Sport",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Exploration",
+      "author": "Stewart A. Weaver",
+      "number": 412,
+      "subject": "History",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Microbiology",
+      "author": "Nicholas P. Money",
+      "number": 413,
+      "subject": "Biology",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Corporate social responsibility",
+      "author": "Jeremy Moon",
+      "number": 414,
+      "subject": "Business",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Love",
+      "author": "Ronald de Sousa",
+      "number": 415,
+      "subject": "Philosophy",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Psychotherapy",
+      "author": "Tom Burns (Author), Eva Burns-Lundgren (Editor)",
+      "number": 416,
+      "subject": "Psychology",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Chemistry",
+      "author": "Peter Atkins",
+      "number": 417,
+      "subject": "Chemistry",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Human Anatomy",
+      "author": "Leslie Klenerman",
+      "number": 418,
+      "subject": "Medicine",
+      "publicationYear": 2015
+    },
+    {
+      "title": "The American West",
+      "author": "Stephen Aron",
+      "number": 419,
+      "subject": "History - U.S.",
+      "publicationYear": 2014
+    },
+    {
+      "title": "American Political History",
+      "author": "Donald Critchlow",
+      "number": 420,
+      "subject": "History - U.S./Politics",
+      "publicationYear": 2014
+    },
+    {
+      "title": "Ritual",
+      "author": "Barry Stephenson",
+      "number": 421,
+      "subject": "Religion",
+      "publicationYear": 2015
+    },
+    {
+      "title": "American Women's History",
+      "author": "Susan Ware",
+      "number": 422,
+      "subject": "History – U.S.",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Dante",
+      "author": "Peter Hainsworth, David Robey",
+      "number": 423,
+      "subject": "Literature/Biography",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Ancient Assyria",
+      "author": "Karen Radner",
+      "number": 424,
+      "subject": "History",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Plate tectonics",
+      "author": "Peter Molnar",
+      "number": 425,
+      "subject": "Geology",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Corruption",
+      "author": "Leslie Holmes",
+      "number": 426,
+      "subject": "Law",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Pilgrimage",
+      "author": "Ian Reader",
+      "number": 427,
+      "subject": "Religion",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Taxation",
+      "author": "Stephen Smith",
+      "number": 428,
+      "subject": "Economics",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Crime Fiction",
+      "author": "Richard Bradford",
+      "number": 429,
+      "subject": "Literature",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Microscopy",
+      "author": "Terence Allen",
+      "number": 430,
+      "subject": "Science",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Forests",
+      "author": "Jaboury Ghazoul",
+      "number": 431,
+      "subject": "Biology",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Social work",
+      "author": "Stanley Wells",
+      "number": 432,
+      "subject": "Sociology",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Infectious Disease",
+      "author": "Benjamin Bolker and Marta Wayne",
+      "number": 433,
+      "subject": "Medicine",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Liberalism",
+      "author": "Michael Freeden",
+      "number": 434,
+      "subject": "Politics",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Psychoanalysis",
+      "author": "Daniel Pick",
+      "number": 435,
+      "subject": "Psychology",
+      "publicationYear": 2015
+    },
+    {
+      "title": "The American Revolution",
+      "author": "Robert J. Allison",
+      "number": 436,
+      "subject": "History – U.S.",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Byzantium",
+      "author": "Peter Sarris",
+      "number": 437,
+      "subject": "History",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Nuclear Physics",
+      "author": "Frank Close",
+      "number": 438,
+      "subject": "Physics",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Social Psychology",
+      "author": "Richard J. Crisp",
+      "number": 439,
+      "subject": "Psychology",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Water",
+      "author": "John Finney",
+      "number": 440,
+      "subject": "Chemistry",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Criminal Justice",
+      "author": "Julian V. Roberts",
+      "number": 441,
+      "subject": "Law",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Medieval Literature",
+      "author": "Elaine Treharne",
+      "number": 442,
+      "subject": "Literature",
+      "publicationYear": 2015
+    },
+    {
+      "title": "The Enlightenment",
+      "author": "John Robertson",
+      "number": 443,
+      "subject": "History",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Mountains",
+      "author": "Martin F. Price",
+      "number": 444,
+      "subject": "Geography",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Philosophy in the Islamic World",
+      "author": "Peter Adamson",
+      "number": 445,
+      "subject": "Religion/Philosophy",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Light",
+      "author": "Ian A. Walmsley",
+      "number": 446,
+      "subject": "Physics",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Algebra",
+      "author": "Peter M. Higgins",
+      "number": 447,
+      "subject": "Mathematics",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Hermeneutics",
+      "author": "Jens Zimmermann",
+      "number": 448,
+      "subject": "Literature/Philosophy",
+      "publicationYear": 2015
+    },
+    {
+      "title": "International law",
+      "author": "Vaughan Lowe",
+      "number": 449,
+      "subject": "Law",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Moons",
+      "author": "David Rothery",
+      "number": 450,
+      "subject": "Astronomy",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Sound",
+      "author": "Mike Goldsmith",
+      "number": 451,
+      "subject": "Physics",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Epicureanism",
+      "author": "Catherine Wilson",
+      "number": 452,
+      "subject": "Classical Studies",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Black holes",
+      "author": "Katherine Blundell",
+      "number": 453,
+      "subject": "Physics",
+      "publicationYear": 2016
+    },
+    {
+      "title": "The Body",
+      "author": "Chris Shilling",
+      "number": 454,
+      "subject": "Medicine",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Fungi",
+      "author": "Nicolas P. Money",
+      "number": 455,
+      "subject": "Biology",
+      "publicationYear": 2016
+    },
+    {
+      "title": "The History of Chemistry",
+      "author": "William H. Brock",
+      "number": 456,
+      "subject": "History of Science/Chemistry",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Environmental Politics",
+      "author": "Andrew Dobson",
+      "number": 457,
+      "subject": "Politics",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Modern Drama",
+      "author": "Kirsten E. Shepherd-Barr",
+      "number": 458,
+      "subject": "Literature",
+      "publicationYear": 2016
+    },
+    {
+      "title": "The Mexican Revolution",
+      "author": "Alan Knight",
+      "number": 459,
+      "subject": "History - Mexico",
+      "publicationYear": 2016
+    },
+    {
+      "title": "The Founding Fathers",
+      "author": "Richard B. Bernstein",
+      "number": 460,
+      "subject": "History – U.S.",
+      "publicationYear": 2015
+    },
+    {
+      "title": "Hollywood",
+      "author": "Peter Decherney",
+      "number": 461,
+      "subject": "Cinema",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Goethe",
+      "author": "Ritchie Robertson",
+      "number": 462,
+      "subject": "Literature/Biography",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Medieval Philosophy",
+      "author": "John Marenbon",
+      "number": 463,
+      "subject": "Philosophy",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Earth System Science",
+      "author": "Tim Lenton",
+      "number": 464,
+      "subject": "Science",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Slang",
+      "author": "Jonathon Green",
+      "number": 465,
+      "subject": "Linguistics",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Computer Science",
+      "author": "Subrata Dasgupta",
+      "number": 466,
+      "subject": "Computing/Mathematics/science",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Shakespeare's Comedies",
+      "author": "Bart Van Es",
+      "number": 467,
+      "subject": "Literature",
+      "publicationYear": 2016
+    },
+    {
+      "title": "The Welfare State",
+      "author": "David Garland",
+      "number": 468,
+      "subject": "Politics",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Crystallography",
+      "author": "A. M. Glazer",
+      "number": 469,
+      "subject": "Chemistry",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Astrophysics",
+      "author": "James Binney",
+      "number": 470,
+      "subject": "Physics",
+      "publicationYear": 2016
+    },
+    {
+      "title": "The BRICS",
+      "author": "Andrew F. Cooper",
+      "number": 471,
+      "subject": "Politics/International relations",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Decolonization",
+      "author": "Dane Kennedy",
+      "number": 472,
+      "subject": "History",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Agriculture",
+      "author": "Paul Brassley, Richard Soffe",
+      "number": 473,
+      "subject": "Agriculture/History",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Combinatorics",
+      "author": "Robin Wilson",
+      "number": 474,
+      "subject": "Mathematics",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Adolescence",
+      "author": "Peter Smith",
+      "number": 475,
+      "subject": "Psychology",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Isotopes",
+      "author": "Rob Ellam",
+      "number": 476,
+      "subject": "Chemistry",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Savannas",
+      "author": "Peter Furley",
+      "number": 477,
+      "subject": "Geography",
+      "publicationYear": 2016
+    },
+    {
+      "title": "The Hebrew Bible As Literature",
+      "author": "Tod Linafelt",
+      "number": 478,
+      "subject": "Religion",
+      "publicationYear": 2016
+    },
+    {
+      "title": "The Harlem Renaissance",
+      "author": "Cheryl A. Wall",
+      "number": 479,
+      "subject": "History – U.S.",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Babylonia",
+      "author": "Trevor Bryce",
+      "number": 480,
+      "subject": "Classical Studies",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Learning",
+      "author": "Mark Haselgrove",
+      "number": 481,
+      "subject": "Education",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Public health",
+      "author": "Virginia Berridge",
+      "number": 482,
+      "subject": "Medicine",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Indian Cinema",
+      "author": "Ashish Rajadhyaska",
+      "number": 483,
+      "subject": "Cinema",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Public Administration",
+      "author": "Stella Z. Theodoulou, Ravi K. Roy",
+      "number": 484,
+      "subject": "Politics",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Molecular Biology",
+      "author": "Aysha Divan, Janice Royds",
+      "number": 485,
+      "subject": "Biology",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Blood",
+      "author": "Christopher Cooper",
+      "number": 486,
+      "subject": "Biology",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Copernicus",
+      "author": "Owen Gingerich",
+      "number": 487,
+      "subject": "History of Science/Science/Biography",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Military Justice",
+      "author": "Eugene R. Fidell",
+      "number": 488,
+      "subject": "Law",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Cognitive Neuroscience",
+      "author": "Richard Passingham",
+      "number": 489,
+      "subject": "Neuroscience/Psychology",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Leibniz",
+      "author": "Maria Rosa Antognazza",
+      "number": 490,
+      "subject": "Philosophy/Biography",
+      "publicationYear": 2016
+    },
+    {
+      "title": "War and Technology",
+      "author": "Alex Roland",
+      "number": 491,
+      "subject": "Military/Engineering",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Pandemics",
+      "author": "Christian W. McMillen",
+      "number": 492,
+      "subject": "Medicine",
+      "publicationYear": 2024,
+      "edition": 2
+    },
+    {
+      "title": "Translation",
+      "author": "Matthew Reynolds",
+      "number": 493,
+      "subject": "Linguistics",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Modern Italy",
+      "author": "Anna Cento Bull",
+      "number": 494,
+      "subject": "Human Geography",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Eugenics",
+      "author": "Philippa Levine",
+      "number": 495,
+      "subject": "History of Science",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Ageing",
+      "author": "Nancy Pachana",
+      "number": 496,
+      "subject": "Medicine",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Asian American History",
+      "author": "Madeline Y. Hsu",
+      "number": 497,
+      "subject": "History – U.S.",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Home",
+      "author": "Michael Allen Fox",
+      "number": 498,
+      "publicationYear": 2016
+    },
+    {
+      "title": "Calvinism",
+      "author": "Jon Balserak",
+      "number": 499,
+      "subject": "Religion",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Measurement",
+      "author": "David J. Hand",
+      "number": 500,
+      "subject": "Science",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Telescopes",
+      "author": "Geoffrey Cottrell",
+      "number": 501,
+      "subject": "Science",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Rocks",
+      "author": "Jan Zalasiewicz",
+      "number": 502,
+      "subject": "Geology",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Banking",
+      "author": "John O. S. Wilson, John Goddard",
+      "number": 503,
+      "subject": "Economics",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Depression",
+      "author": "Mary Jane Tacchi, Jan Scott",
+      "number": 504,
+      "subject": "Psychology",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Behavioural Economics",
+      "author": "Michelle Baddeley",
+      "number": 505,
+      "subject": "Economics",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Weather",
+      "author": "Storm Dunlop",
+      "number": 506,
+      "subject": "Science",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Zionism",
+      "author": "Michael Stanislawski",
+      "number": 507,
+      "subject": "Religion",
+      "publicationYear": 2016
+    },
+    {
+      "title": "Intellectual property",
+      "author": "Siva Vaidhyanathan",
+      "number": 508,
+      "subject": "Law",
+      "publicationYear": 2017
+    },
+    {
+      "title": "The Industrial Revolution",
+      "author": "Robert C. Allen",
+      "number": 509,
+      "subject": "History",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Populism",
+      "author": "Cas Mudde, Cristsbal Rovia Kalwasser",
+      "number": 510,
+      "subject": "Politics",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Voltaire",
+      "author": "Nicholas Cronk",
+      "number": 511,
+      "subject": "Literature/Biography",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Gravity",
+      "author": "Timothy Clifton",
+      "number": 512,
+      "subject": "Physics",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Animal Behaviour",
+      "author": "Tristram D. Wyatt",
+      "number": 513,
+      "subject": "Biology",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Navigation",
+      "author": "Jim Bennett",
+      "number": 514,
+      "subject": "Science/History",
+      "publicationYear": 2017
+    },
+    {
+      "title": "The Habsburg Empire",
+      "author": "Martyn Rady",
+      "number": 515,
+      "subject": "History",
+      "publicationYear": 2017
+    },
+    {
+      "title": "The Future",
+      "author": "Jennifer Gidley",
+      "number": 516,
+      "subject": "Futures Studies",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Circadian Rhythms",
+      "author": "Russell Foster, Leon Kreitzman",
+      "number": 517,
+      "subject": "Biology",
+      "publicationYear": 2017
+    },
+    {
+      "title": "The Atmosphere",
+      "author": "Paul Palmer",
+      "number": 518,
+      "subject": "Science",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Infinity",
+      "author": "Ian Stewart",
+      "number": 519,
+      "subject": "Mathematics",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Organic Chemistry",
+      "author": "Graham Patrick",
+      "number": 520,
+      "subject": "Chemistry",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Clinical Psychology",
+      "author": "Susan Llewellyn, Katie Aafjes-van Doorn",
+      "number": 521,
+      "subject": "Psychology",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Shakespeare's Tragedies",
+      "author": "Stanley Wells",
+      "number": 522,
+      "subject": "Literature",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Military Strategy",
+      "author": "Antulio Joseph Echevarria",
+      "number": 523,
+      "subject": "Military",
+      "publicationYear": 2024,
+      "edition": 2
+    },
+    {
+      "title": "European Union Law",
+      "author": "Anthony Arnull",
+      "number": 524,
+      "subject": "Law",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Multilingualism",
+      "author": "John C. Maher",
+      "number": 525,
+      "subject": "Linguistics",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Jewish History",
+      "author": "David N. Myers",
+      "number": 526,
+      "subject": "History",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Branding",
+      "author": "Robert Jones",
+      "number": 527,
+      "subject": "Business",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Pain",
+      "author": "Rob Boddice",
+      "number": 528,
+      "subject": "Biology",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Oceans",
+      "author": "Dorrik Stow",
+      "number": 529,
+      "subject": "Geography",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Utilitarianism",
+      "author": "Katarzyna de Lazari-Radek, Peter Singer",
+      "number": 530,
+      "subject": "Philosophy",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Freemasonry",
+      "author": "Andreas Önnerfors",
+      "number": 531,
+      "subject": "History",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Heredity",
+      "author": "John Waller",
+      "number": 532,
+      "subject": "Biology",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Thinking and Reasoning",
+      "author": "Jonathan Evans",
+      "number": 533,
+      "subject": "Psychology",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Shakespeare's Sonnets and Poems",
+      "author": "Jonathan F. S. Post",
+      "number": 534,
+      "subject": "Literature",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Mammals",
+      "author": "T. S. Kemp",
+      "number": 535,
+      "subject": "Biology",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Environmental Law",
+      "author": "Elizabeth Fisher",
+      "number": 536,
+      "subject": "Law",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Projects",
+      "author": "Andrew Davies",
+      "number": 537,
+      "subject": "Business",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Perception",
+      "author": "Brian J. Rogers",
+      "number": 538,
+      "subject": "Psychology",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Big Data",
+      "author": "Dawn E. Holmes",
+      "number": 539,
+      "subject": "Computing/Mathematics",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Modern India",
+      "author": "Craig Jeffrey",
+      "number": 540,
+      "subject": "Human Geography",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Miracles",
+      "author": "Yujin Nagasawa",
+      "number": 541,
+      "subject": "Religion",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Analytic Philosophy",
+      "author": "Michael Beaney",
+      "number": 542,
+      "subject": "Philosophy",
+      "publicationYear": 2017
+    },
+    {
+      "title": "The History of Cinema",
+      "author": "Geoffrey Nowell-Smith",
+      "number": 543,
+      "subject": "Cinema",
+      "publicationYear": 2017
+    },
+    {
+      "title": "The Immune System",
+      "author": "Paul Klenerman",
+      "number": 544,
+      "subject": "Medicine",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Universities and Colleges",
+      "author": "David Palfreyman, Paul Temple",
+      "number": 545,
+      "subject": "Education",
+      "publicationYear": 2017
+    },
+    {
+      "title": "Monasticism",
+      "author": "Stephen J. Davis",
+      "number": 546,
+      "subject": "Religion",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Lakes",
+      "author": "Warwick F. Vincent",
+      "number": 547,
+      "subject": "Geography",
+      "publicationYear": 2018
+    },
+    {
+      "title": "The Hellenistic Age",
+      "author": "Peter Thonemann",
+      "number": 548,
+      "subject": "Classical Studies",
+      "publicationYear": 2018
+    },
+    {
+      "title": "The History of Physics",
+      "author": "J. L. Heilbron",
+      "number": 549,
+      "subject": "History of Science/Physics",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Fairy Tale",
+      "author": "Marina Warner",
+      "number": 550,
+      "subject": "Literature",
+      "publicationYear": 2018
+    },
+    {
+      "title": "The English Language",
+      "author": "Simon Horobin",
+      "number": 551,
+      "subject": "Linguistics",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Philosophy of Religion",
+      "author": "Tim Bayne",
+      "number": 552,
+      "subject": "Philosophy/Religion",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Organized Crime",
+      "author": "Georgios A. Antonopoulos, Georgios Papanicolaou",
+      "number": 553,
+      "subject": "Criminology",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Veterinary Science",
+      "author": "James Yeates",
+      "number": 554,
+      "subject": "Science",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Applied mathematics",
+      "author": "Alain Goriely",
+      "number": 555,
+      "subject": "Mathematics",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Comparative Literature",
+      "author": "Ben Hutchinson",
+      "number": 556,
+      "subject": "Literature",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Development",
+      "author": "Ian Goldin",
+      "number": 557,
+      "subject": "Economics",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Anthropocene",
+      "author": "Erle C. Ellis",
+      "number": 558,
+      "subject": "Science",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Genomics",
+      "author": "John M. Archibald",
+      "number": 559,
+      "subject": "Biology",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Geophysics",
+      "author": "William Lowrie",
+      "number": 560,
+      "subject": "Physics",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Native American Literature",
+      "author": "Sean Teuton",
+      "number": 561,
+      "subject": "Literature",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Southeast Asia",
+      "author": "James R. Rush",
+      "number": 562,
+      "subject": "Geography",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Criminology",
+      "author": "Tim Newburn",
+      "number": 563,
+      "subject": "Criminology",
+      "publicationYear": 2018
+    },
+    {
+      "title": "American Naval History",
+      "author": "Craig L. Symonds",
+      "number": 564,
+      "subject": "History – U.S./Military",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Demography",
+      "author": "Sarah Harper",
+      "number": 565,
+      "subject": "Human Geography/Sociology",
+      "publicationYear": 2018
+    },
+    {
+      "title": "The U.S. Constitution",
+      "author": "David J. Bodenhamer",
+      "number": 566,
+      "subject": "Law - U.S.",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Decadence",
+      "author": "David Weir",
+      "number": 567,
+      "subject": "Literature",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Sexual Selection",
+      "author": "Marlene Zuk, Leigh W Simmons",
+      "number": 568,
+      "subject": "Biology",
+      "publicationYear": 2018
+    },
+    {
+      "title": "The Holy Roman Empire",
+      "author": "Joachim Whaley",
+      "number": 569,
+      "subject": "History",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Stoicism",
+      "author": "Brad Inwood",
+      "number": 570,
+      "subject": "Philosophy",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Poverty",
+      "author": "Philip N. Jefferson",
+      "number": 571,
+      "subject": "Economics",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Autobiography",
+      "author": "Laura Marcus",
+      "number": 572,
+      "subject": "Literature",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Synthetic Biology",
+      "author": "Jamie A. Davies",
+      "number": 573,
+      "subject": "Biology",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Geology",
+      "author": "Jan Zalasiewicz",
+      "number": 574,
+      "subject": "Geology",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Artificial Intelligence",
+      "author": "Margaret A. Boden",
+      "number": 575,
+      "subject": "Computing/Mathematics",
+      "publicationYear": 2018
+    },
+    {
+      "title": "The Book of Common Prayer",
+      "author": "Brian Cummings",
+      "number": 576,
+      "subject": "Religion",
+      "publicationYear": 2018
+    },
+    {
+      "title": "American Cultural History",
+      "author": "Eric Avila",
+      "number": 577,
+      "subject": "History – U.S.",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Abolitionism",
+      "author": "Richard S. Newman",
+      "number": 578,
+      "subject": "History",
+      "publicationYear": 2018
+    },
+    {
+      "title": "The Psychology of Music",
+      "author": "Elizabeth Hellmuth Margulis",
+      "number": 579,
+      "subject": "Music/Psychology",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Saints",
+      "author": "Simon Yarrow",
+      "number": 580,
+      "subject": "Religion",
+      "publicationYear": 2018
+    },
+    {
+      "title": "African Politics",
+      "author": "Ian Taylor",
+      "number": 581,
+      "subject": "Politics/History",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Adam Smith",
+      "author": "Christopher J. Berry",
+      "number": 582,
+      "subject": "Economics/Philosophy/Biography",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Glaciation",
+      "author": "David J. A. Evans",
+      "number": 583,
+      "subject": "Geology",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Typography",
+      "author": "Paul Luna",
+      "number": 584,
+      "subject": "Art",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Environmental ethics",
+      "author": "Robin Attfield",
+      "number": 585,
+      "subject": "Philosophy",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Napoleon",
+      "author": "David A. Bell",
+      "number": 586,
+      "subject": "History/Military/Biography",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Modern architecture",
+      "author": "Adam Sharr",
+      "number": 587,
+      "subject": "Architecture",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Biometrics",
+      "author": "Michael Fairhurst",
+      "number": 588,
+      "subject": "Computing/Mathematics",
+      "publicationYear": 2018
+    },
+    {
+      "title": "The History of Childhood",
+      "author": "James Marten",
+      "number": 589,
+      "subject": "History",
+      "publicationYear": 2018
+    },
+    {
+      "title": "Waves",
+      "author": "Mike Goldsmith",
+      "number": 590,
+      "subject": "Physics",
+      "publicationYear": 2018
+    },
+    {
+      "title": "C. S. Lewis",
+      "author": "James Como",
+      "number": 591,
+      "subject": "Literature/Biography",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Mathematical finance",
+      "author": "Mark H. A. Davis",
+      "number": 592,
+      "subject": "Economics",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Identity",
+      "author": "Florian Coulmas",
+      "number": 593,
+      "subject": "Sociology",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Charles Dickens",
+      "author": "Jenny Hartley",
+      "number": 594,
+      "subject": "Literature/Biography",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Garden History",
+      "author": "Gordon Campbell",
+      "number": 595,
+      "subject": "History",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Reptiles",
+      "author": "Tom Kemp",
+      "number": 596,
+      "subject": "Biology",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Film Noir",
+      "author": "James Naremore",
+      "number": 597,
+      "subject": "Cinema",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Homer",
+      "author": "Barbara Graziosi",
+      "number": 598,
+      "subject": "Classical Studies/Biography",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Matter",
+      "author": "Geoff Cottrell",
+      "number": 599,
+      "subject": "Physics",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Reading",
+      "author": "Belinda Jack",
+      "number": 600,
+      "subject": "Literature",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Concentration Camps",
+      "author": "Dan Stone",
+      "number": 601,
+      "subject": "History",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Methodism",
+      "author": "William J. Abraham",
+      "number": 602,
+      "subject": "Religion",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Dyslexia",
+      "author": "Margaret J. Snowling",
+      "number": 603,
+      "subject": "Psychology",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Leo Tolstoy",
+      "author": "Liza Knapp",
+      "number": 604,
+      "subject": "Literature/Biography",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Extinction",
+      "author": "Paul B. Wignall",
+      "number": 605,
+      "subject": "Biology",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Physics",
+      "author": "Sidney Perkowitz",
+      "number": 606,
+      "subject": "Physics",
+      "publicationYear": 2019
+    },
+    {
+      "title": "The Treaty of Versailles",
+      "author": "Michael S. Neiberg",
+      "number": 607,
+      "subject": "History",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Synaesthesia",
+      "author": "Julia Simner",
+      "number": 608,
+      "subject": "Psychology",
+      "publicationYear": 2019
+    },
+    {
+      "title": "American Foreign Relations",
+      "author": "Andrew Preston",
+      "number": 609,
+      "subject": "Politics/History – U.S.",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Secularism",
+      "author": "Andrew Copson",
+      "number": 610,
+      "subject": "Religion",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Geoffrey Chaucer",
+      "author": "David Wallace",
+      "number": 611,
+      "subject": "Literature/Biography",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Nazi Germany",
+      "author": "Jane Caplan",
+      "number": 612,
+      "subject": "History",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Scepticism",
+      "author": "Duncan Pritchard",
+      "number": 613,
+      "subject": "Philosophy/Religion",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Poetry",
+      "author": "Bernard O'Donoghue",
+      "number": 614,
+      "subject": "Literature",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Orthodox Christianity",
+      "author": "A. Edward Siecienski",
+      "number": 615,
+      "subject": "Religion",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Aesthetics",
+      "author": "Bence Nanay",
+      "number": 616,
+      "subject": "Philosophy",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Dynasty",
+      "author": "Jeroen Duindam",
+      "number": 617,
+      "subject": "History",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Psychopathy",
+      "author": "Essi Viding",
+      "number": 618,
+      "subject": "Psychology",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Philosophy of Biology",
+      "author": "Samir Okasha",
+      "number": 619,
+      "subject": "Philosophy/Biology",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Energy Systems",
+      "author": "Nick Jenkins",
+      "number": 620,
+      "subject": "Engineering",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Tides",
+      "author": "David George Bowers, Emyr Martyn Roberts",
+      "number": 621,
+      "subject": "Earth Sciences and Geography/Environment",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Topology",
+      "author": "Richard Earl",
+      "number": 622,
+      "subject": "Mathematics",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Superstition",
+      "author": "Stuart Vyse",
+      "number": 623,
+      "subject": "Religion",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Country music",
+      "author": "Richard Carlin",
+      "number": 624,
+      "subject": "Music",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Korea",
+      "author": "Michael J. Seth",
+      "number": 625,
+      "subject": "Geography/Politics",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Trigonometry",
+      "author": "Glen Van Brummelen",
+      "number": 626,
+      "subject": "Mathematics",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Niels Bohr",
+      "author": "J. L. Heilbron",
+      "number": 627,
+      "subject": "History of science/Science/Biography",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Albert Camus",
+      "author": "Oliver Gloag",
+      "number": 628,
+      "subject": "Literature/Biography",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Federalism",
+      "author": "Mark J. Rozell, Clyde Wilcox",
+      "number": 629,
+      "subject": "Politics",
+      "publicationYear": 2019
+    },
+    {
+      "title": "Aerial Warfare",
+      "author": "Frank Ledwidge",
+      "number": 630,
+      "subject": "Military/History",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Renewable Energy",
+      "author": "Nick Jelley",
+      "number": 631,
+      "subject": "Engineering",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Prohibition",
+      "author": "W. J. Rorabaugh",
+      "number": 632,
+      "subject": "Criminology/Politics/History - U.S.",
+      "publicationYear": 2020
+    },
+    {
+      "title": "The Abrahamic Religions",
+      "author": "Charles L. Cohen",
+      "number": 633,
+      "subject": "Religion",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Systems Biology",
+      "author": "Eberhard O. Voit",
+      "number": 634,
+      "subject": "Biology",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Reconstruction",
+      "author": "Allen C. Guelzo",
+      "number": 635,
+      "subject": "History – U.S.",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Number theory",
+      "author": "Robin Wilson",
+      "number": 636,
+      "subject": "Mathematics",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Smell",
+      "author": "Matthew Cobb",
+      "number": 637,
+      "subject": "Medicine",
+      "publicationYear": 2020
+    },
+    {
+      "title": "The Sun",
+      "author": "Philip Judge",
+      "number": 638,
+      "subject": "Astronomy",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Emile Zola",
+      "author": "Brian Nelson",
+      "number": 639,
+      "subject": "Literature/Biography",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Fire",
+      "author": "Andrew C. Scott",
+      "number": 640,
+      "subject": "Physics",
+      "publicationYear": 2020
+    },
+    {
+      "title": "The U.S. Civil War",
+      "author": "Louis P. Masur",
+      "number": 641,
+      "subject": "History – U.S.",
+      "publicationYear": 2020
+    },
+    {
+      "title": "American Business History",
+      "author": "Walter A. Friedman",
+      "number": 642,
+      "subject": "History – U.S./Economics",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Dementia",
+      "author": "Kathleen Taylor",
+      "number": 643,
+      "subject": "Medicine/Psychology",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Canada",
+      "author": "Donald Wright",
+      "number": 644,
+      "subject": "Human Geography",
+      "publicationYear": 2020
+    },
+    {
+      "title": "French Philosophy",
+      "author": "Stephen Gaukroger, Knox Peden",
+      "number": 645,
+      "subject": "Philosophy",
+      "publicationYear": 2020
+    },
+    {
+      "title": "The Russian Economy",
+      "author": "Richard Connolly",
+      "number": 646,
+      "subject": "Economics",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Biogeography",
+      "author": "Mark V. Lomolino",
+      "number": 647,
+      "subject": "Geography",
+      "publicationYear": 2020
+    },
+    {
+      "title": "The Ghetto",
+      "author": "Bryan Cheyette",
+      "number": 648,
+      "subject": "History/Human Geography",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Ecology",
+      "author": "Jaboury Ghazoul",
+      "number": 649,
+      "subject": "Biology",
+      "publicationYear": 2020
+    },
+    {
+      "title": "George Bernard Shaw",
+      "author": "Christopher Wixson",
+      "number": 650,
+      "subject": "Literature/Biography",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Philosophical Method",
+      "author": "Timothy Williamson",
+      "number": 651,
+      "subject": "Philosophy",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Soft Matter",
+      "author": "Tom McLeish",
+      "number": 652,
+      "subject": "Physics",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Ovid",
+      "author": "Llewelyn Morgan",
+      "number": 653,
+      "subject": "Classical Studies/Biography",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Modern Brazil",
+      "author": "Anthony W. Pereira",
+      "number": 654,
+      "subject": "Human Geography",
+      "publicationYear": 2020
+    },
+    {
+      "title": "City Planning",
+      "author": "Carl Abbott",
+      "number": 655,
+      "subject": "Architecture",
+      "publicationYear": 2020
+    },
+    {
+      "title": "The Maya",
+      "author": "Matthew Restall, Amara Solari",
+      "number": 656,
+      "subject": "History/Archaeology",
+      "publicationYear": 2020
+    },
+    {
+      "title": "American Military History",
+      "author": "Joseph T. Glatthaar",
+      "number": 657,
+      "subject": "History – U.S./Military",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Montaigne",
+      "author": "William M. Hamlin",
+      "number": 658,
+      "subject": "Literature/Philosophy/Biography",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Global Islam",
+      "author": "Nile Green",
+      "number": 659,
+      "subject": "Religion",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Volcanoes",
+      "author": "Michael J. Branney, Jan Zalasiewicz",
+      "number": 660,
+      "subject": "Geology",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Enzymes",
+      "author": "Paul Engel",
+      "number": 661,
+      "subject": "Biology",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Islamic Law",
+      "author": "Mashood A. Baderin",
+      "number": 662,
+      "subject": "Religion/Law",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Marketing",
+      "author": "Kenneth Le Meunier-FitzHugh",
+      "number": 663,
+      "subject": "Business",
+      "publicationYear": 2021
+    },
+    {
+      "title": "The Virtues",
+      "author": "Craig A. Boyd, Kevin Timpe",
+      "number": 664,
+      "subject": "Philosophy",
+      "publicationYear": 2021
+    },
+    {
+      "title": "War & Religion",
+      "author": "Jolyon Mitchell, Joshua Rey",
+      "number": 665,
+      "subject": "Religion/Military/History",
+      "publicationYear": 2021
+    },
+    {
+      "title": "The American South",
+      "author": "Charles Reagan Wilson",
+      "number": 666,
+      "subject": "History - U.S./Human Geography",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Arbitration",
+      "author": "Thomas Schultz, Thomas Grant",
+      "number": 667,
+      "subject": "Law",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Philosophy of Physics",
+      "author": "David Wallace",
+      "number": 668,
+      "subject": "Philosophy",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Religion",
+      "author": "Thomas A. Tweed",
+      "number": 669,
+      "subject": "Religion/Philosophy",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Amphibians",
+      "author": "T. S. Kemp",
+      "number": 670,
+      "subject": "Biology",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Silent Film",
+      "author": "Donna Kornhaber",
+      "number": 671,
+      "subject": "Cinema",
+      "publicationYear": 2020
+    },
+    {
+      "title": "Creativity",
+      "author": "Vlad Petre Glăveanu",
+      "number": 672,
+      "subject": "Psychology",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Refugees",
+      "author": "Gil Loescher",
+      "number": 673,
+      "subject": "Human Geography/Politics",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Biochemistry",
+      "author": "Mark Lorch",
+      "number": 674,
+      "subject": "Chemistry",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Samurai",
+      "author": "Michael Wert",
+      "number": 675,
+      "subject": "History",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Horror",
+      "author": "Darryl Jones",
+      "number": 676,
+      "subject": "Literature",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Henry James",
+      "author": "Susan L. Mizruchi",
+      "number": 677,
+      "subject": "Literature/Biography",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Human Physiology",
+      "author": "Jamie A. Davies",
+      "number": 678,
+      "subject": "Medicine",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Competition and Antitrust Law",
+      "author": "Ariel Ezrachi",
+      "number": 679,
+      "subject": "Law",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Habeas corpus",
+      "author": "Amanda Tyler",
+      "number": 680,
+      "subject": "Law",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Blasphemy",
+      "author": "Yvonne Sherwood",
+      "number": 681,
+      "subject": "Religion",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Jewish Literature",
+      "author": "Ilan Stavans",
+      "number": 682,
+      "subject": "Religion",
+      "publicationYear": 2021
+    },
+    {
+      "title": "American Intellectual History",
+      "author": "Jennifer Ratner-Rosenhagen",
+      "number": 683,
+      "subject": "History – U.S.",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Time",
+      "author": "Jenann Ismael",
+      "number": 684,
+      "subject": "Science",
+      "publicationYear": 2021
+    },
+    {
+      "title": "James Joyce",
+      "author": "Colin MacCabe",
+      "number": 685,
+      "subject": "Literature/Biography",
+      "publicationYear": 2021
+    },
+    {
+      "title": "The Virgin Mary",
+      "author": "Mary Joan Winn Leith",
+      "number": 686,
+      "subject": "Religion/Biography",
+      "publicationYear": 2021
+    },
+    {
+      "title": "The Arctic",
+      "author": "Klaus Dodds, Jamie Woodward",
+      "number": 687,
+      "subject": "Geography",
+      "publicationYear": 2021
+    },
+    {
+      "title": "The Short Story",
+      "author": "Andrew Kahn",
+      "number": 688,
+      "subject": "Literature",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Pakistan",
+      "author": "Pippa Virdee",
+      "number": 689,
+      "subject": "Geography",
+      "publicationYear": 2021
+    },
+    {
+      "title": "American poetry",
+      "author": "David Caplan",
+      "number": 690,
+      "subject": "Literature",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Philosophy of Mind",
+      "author": "Barbara Gail Montero",
+      "number": 691,
+      "subject": "Philosophy",
+      "publicationYear": 2022
+    },
+    {
+      "title": "The History of Political Thought",
+      "author": "Richard Whatmore",
+      "number": 692,
+      "subject": "Politics/History",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Planetary Systems",
+      "author": "Raymond T. Pierrehumbert",
+      "number": 693,
+      "subject": "Astronomy",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Jane Austen",
+      "author": "Tom Keymer",
+      "number": 694,
+      "subject": "Literature/Biography",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Geometry",
+      "author": "Maciej Dunajski",
+      "number": 695,
+      "subject": "Mathematics",
+      "publicationYear": 2022
+    },
+    {
+      "title": "John Stuart Mill",
+      "author": "Gregory Claeys",
+      "number": 696,
+      "subject": "Politics/Biography",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Polygamy",
+      "author": "Sarah Pearsall",
+      "number": 697,
+      "subject": "Religion",
+      "publicationYear": 2021
+    },
+    {
+      "title": "Elizabeth Bishop",
+      "author": "Jonathan F. S. Post",
+      "number": 698,
+      "subject": "Literature/Biography",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Human Resource Management",
+      "author": "Adrian Wilkinson",
+      "number": 699,
+      "subject": "Business",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Mary Shelley",
+      "author": "Charlotte Gordon",
+      "number": 700,
+      "subject": "Literature/Biography",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Violence",
+      "author": "Philip Dwyer",
+      "number": 701,
+      "subject": "Criminology",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Employment Law",
+      "author": "David Cabrelli",
+      "number": 702,
+      "subject": "Law",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Cognitive Behavioural Therapy",
+      "author": "Freda McManus",
+      "number": 703,
+      "subject": "Psychology",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Theodor W. Adorno",
+      "author": "Andrew Bowie",
+      "number": 704,
+      "subject": "Philosophy/Sociology/Biography",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Ludwig Van Beethoven",
+      "author": "Mark Evan Bonds",
+      "number": 705,
+      "subject": "Music/Biography",
+      "publicationYear": 2022
+    },
+    {
+      "title": "The Spartans",
+      "author": "Andrew J. Bayliss",
+      "number": 706,
+      "subject": "Classical Studies",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Evangelicalism",
+      "author": "John G. Stackhouse Jr.",
+      "number": 707,
+      "subject": "Religion",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Fluid Mechanics",
+      "author": "Eric Lauga",
+      "number": 708,
+      "subject": "Physics",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Insects",
+      "author": "Simon Leather",
+      "number": 709,
+      "subject": "Biology",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Music and Technology",
+      "author": "Mark Katz",
+      "number": 710,
+      "subject": "Music",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Negotiation",
+      "author": "Carrie Menkel-Meadow",
+      "number": 711,
+      "subject": "Psychology",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Evil",
+      "author": "Luke Russell",
+      "number": 712,
+      "subject": "Philosophy",
+      "publicationYear": 2022
+    },
+    {
+      "title": "The American Judicial System",
+      "author": "Charles L. Zelden",
+      "number": 713,
+      "subject": "Law - U.S.",
+      "publicationYear": 2022
+    },
+    {
+      "title": "The History of Computing",
+      "author": "Doron Swade",
+      "number": 714,
+      "subject": "History of Science/Computing/Mathematics/Engineering",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Ivan Pavlov",
+      "author": "Daniel P. Todes",
+      "number": 715,
+      "subject": "History of Science/Biology/Biography",
+      "publicationYear": 2023
+    },
+    {
+      "title": "World Mythology",
+      "author": "David A. Leeming",
+      "number": 716,
+      "subject": "Classical Studies/Religion",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Hannah Arendt",
+      "author": "Dana Villa",
+      "number": 717,
+      "subject": "Philosophy/Biography",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Gödel's Theorem",
+      "author": "A. W. Moore",
+      "number": 718,
+      "subject": "Mathematics",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Microbiomes",
+      "author": "Angela E. Douglas",
+      "number": 719,
+      "subject": "Biology",
+      "publicationYear": 2022
+    },
+    {
+      "title": "British Cinema",
+      "author": "Charles Barr",
+      "number": 720,
+      "subject": "Cinema",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Anselm",
+      "author": "Thomas Williams",
+      "number": 721,
+      "subject": "Religion",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Condensed Matter Physics",
+      "author": "Ross McKenzie",
+      "number": 722,
+      "subject": "Physics",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Nanotechnology",
+      "author": "Philip Moriarty",
+      "number": 723,
+      "subject": "Engineering/Science",
+      "publicationYear": 2022
+    },
+    {
+      "title": "Addiction",
+      "author": "Keith Humphreys",
+      "number": 724,
+      "subject": "Psychology",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Vatican II",
+      "author": "Shaun Blanchard, Stephen Bullivant",
+      "number": 725,
+      "subject": "Religion",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Suburbs",
+      "author": "Carl Abbott",
+      "number": 726,
+      "subject": "Human Geography",
+      "publicationYear": 2023
+    },
+    {
+      "title": "The Jury",
+      "author": "Renee Lettow Lerner",
+      "number": 727,
+      "subject": "Law",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Japanese Literature",
+      "author": "Alan Tansman",
+      "number": 728,
+      "subject": "Literature",
+      "publicationYear": 2023
+    },
+    {
+      "title": "African American History",
+      "author": "Jonathan Scott Holloway",
+      "number": 729,
+      "subject": "History - U.S.",
+      "publicationYear": 2023
+    },
+    {
+      "title": "The Civil Rights Movement",
+      "author": "Thomas C. Holt",
+      "number": 730,
+      "subject": "Politics/History - U.S.",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Ancient Greek and Roman Science",
+      "author": "Liba Taub",
+      "number": 731,
+      "subject": "History of Science/Science",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Pseudoscience",
+      "author": "Michael D. Gordin",
+      "number": 732,
+      "subject": "Science",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Bohemians",
+      "author": "David Weir",
+      "number": 733,
+      "subject": "Literature",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Mathematical Analysis",
+      "author": "Richard Earl",
+      "number": 734,
+      "subject": "Mathematics",
+      "publicationYear": 2023
+    },
+    {
+      "title": "The History of Emotions",
+      "author": "Thomas Dixon",
+      "number": 735,
+      "subject": "History",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Ibn Sīnā (Avicenna)",
+      "author": "Peter Adamson",
+      "number": 736,
+      "subject": "Philosophy/Religion/Biography",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Invasive Species",
+      "author": "Julie Lockwood, Dustin J. Welbourne",
+      "number": 737,
+      "subject": "Biology",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Biodiversity Conservation",
+      "author": "David W. Macdonald",
+      "number": 738,
+      "subject": "Biology",
+      "publicationYear": 2023
+    },
+    {
+      "title": "The Victorians",
+      "author": "Martin Hewitt",
+      "number": 739,
+      "subject": "History - U.K.",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Imagination",
+      "author": "Jennifer Gosetti-Ferencei",
+      "number": 740,
+      "subject": "Literature",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Horace",
+      "author": "Llewelyn Morgan",
+      "number": 741,
+      "subject": "Literature/Biography",
+      "publicationYear": 2023
+    },
+    {
+      "title": "French Cinema",
+      "author": "Dudley Andrew",
+      "number": 742,
+      "subject": "Cinema",
+      "publicationYear": 2023
+    },
+    {
+      "title": "Comparative Law",
+      "author": "Sabrina Ragone and Guido Smorto",
+      "number": 743,
+      "subject": "Law",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Simone Weil",
+      "author": "A. Rebecca Rozelle-Stone",
+      "number": 744,
+      "subject": "Literature/Philosophy/Biography",
+      "publicationYear": 2024
+    },
+    {
+      "title": "The Gulag",
+      "author": "Alan Barenberg",
+      "number": 745,
+      "subject": "History",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Gender History",
+      "author": "Antoinette Burton",
+      "number": 746,
+      "subject": "History/Gender/Sexuality",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Dostoevsky",
+      "author": "Deborah Martinsen",
+      "number": 747,
+      "subject": "Literature/Biography",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Surveillance",
+      "author": "David Lyon",
+      "number": 748,
+      "subject": "Law/Technology",
+      "publicationYear": 2024
+    },
+    {
+      "title": "British Architecture",
+      "author": "Dana Arnold",
+      "number": 749,
+      "subject": "Architecture",
+      "publicationYear": 2024
+    },
+    {
+      "title": "The Self",
+      "author": "Marya Schechtman",
+      "number": 750,
+      "subject": "Psychology",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Faith",
+      "author": "Roger Trigg",
+      "number": 751,
+      "subject": "Religion",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Authoritarianism",
+      "author": "James Loxton",
+      "number": 752,
+      "subject": "Politics",
+      "publicationYear": 2024
+    },
+    {
+      "title": "The Epic",
+      "author": "Anthony Welch",
+      "number": 753,
+      "subject": "Classical Studies/History/Literature",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Marcel Proust",
+      "author": "Joshua Landy",
+      "number": 754,
+      "subject": "Literature/Biography",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Thucydides",
+      "author": "Jennifer T. Roberts",
+      "number": 755,
+      "subject": "History/Classical Studies/Biography",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Elections",
+      "author": "L. Sandy Maisel, Jennifer A. Yoder",
+      "number": 756,
+      "subject": "Politics",
+      "publicationYear": 2024
+    },
+    {
+      "title": "J.R.R. Tolkien",
+      "author": "Matthew Townend",
+      "number": 757,
+      "subject": "Literature/Biography",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Feminist Philosophy",
+      "author": "Katharine Jenkins",
+      "number": 758,
+      "subject": "Gender/Philosophy",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Sylvia Plath",
+      "author": "Heather Clark",
+      "number": 759,
+      "subject": "Literature/Biography",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Civil Wars",
+      "author": "Monica Duffy Toft",
+      "number": 760,
+      "subject": "History/Politics/Military",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Anthony Trollope",
+      "author": "Dinah Birch",
+      "number": 761,
+      "subject": "Literature/Biography",
+      "publicationYear": 2025
+    },
+    {
+      "title": "Russian Politics",
+      "author": "Brian D. Taylor",
+      "number": 762,
+      "subject": "Politics - Russia",
+      "publicationYear": 2024
+    },
+    {
+      "title": "The Rule of Law",
+      "author": "Aziz Z. Huq",
+      "number": 763,
+      "subject": "Law",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Social Science",
+      "author": "Alexander Betts",
+      "number": 764,
+      "subject": "Social Science",
+      "publicationYear": 2024
+    },
+    {
+      "title": "Sustainability",
+      "author": "Saleem H. Ali",
+      "number": 765,
+      "subject": "Environment/Environmental Science",
+      "publicationYear": 2025
+    },
+    {
+      "title": "Symbiosis",
+      "author": "Nancy A. Moran",
+      "number": 766,
+      "subject": "Biological Sciences",
+      "publicationYear": 2025
+    },
+    {
+      "title": "Meaning",
+      "author": "Emma Borg and Sarah A. Fisher",
+      "number": 767,
+      "subject": "Philosophy",
+      "publicationYear": 2025
+    },
+    {
+      "title": "The Catholic Reformation",
+      "author": "James E. Kelly",
+      "number": 768,
+      "subject": "Religion",
+      "publicationYear": 2025
+    },
+    {
+      "title": "Sophocles",
+      "author": "Edith Hall",
+      "number": 769,
+      "subject": "Classical Drama/Biography",
+      "publicationYear": 2025
+    },
+    {
+      "title": "Toleration",
+      "author": "Andrew R. Murphy",
+      "number": 770,
+      "subject": "Philosophy/Law",
+      "publicationYear": 2025
+    },
+    {
+      "title": "Futurism",
+      "author": "Ara H. Merjian",
+      "number": 771,
+      "subject": "Art",
+      "publicationYear": 2025
+    },
+    {
+      "title": "Mary Wollstonecraft",
+      "author": "E. J. Clery",
+      "number": 772,
+      "subject": "Gender/Biography",
+      "publicationYear": 2025
+    },
+    {
+      "title": "Psycholinguistics",
+      "author": "Fernanda Ferreira",
+      "number": 773,
+      "subject": "Psychology",
+      "publicationYear": 2025
+    },
+    {
+      "title": "George Eliot",
+      "author": "Juliette Atkinson",
+      "number": 774,
+      "subject": "Literature/Biography",
+      "publicationYear": 2025
+    },
+    {
+      "title": "Agatha Christie",
+      "author": "Gill Plain",
+      "number": 775,
+      "subject": "Literature/Biography",
+      "publicationYear": 2025
+    },
+    {
+      "title": "Henry David Thoreau",
+      "author": "Lawrence Buell",
+      "number": 776,
+      "subject": "Literature/Philosophy/Biography",
+      "publicationYear": 2025
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "sectionCode": "354",
+  "sectionCodeDisplay": "354",
+  "title": "Biogeographic Distribution of Organisms: Ecosystems",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Terrestrial ecosystems",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The land environment",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Land as a medium for life and the comparison of the terrestrial and aquatic ecosystems",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Limiting factors to living on land",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Major terrestrial biomes: the tundra, the coniferous forest, the middle-latitude forest, the tropical rain forest, the grassland and savanna, the scrublands, the desert",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Specialized biomes: polar biomes, subterranean biomes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Major life-forms",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Growth habits and indicator organisms",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Classification by habitat: soil organisms, trees and other rooted plants, epiphytes and periphytes, permeants",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Classification by niche: producers, consumers, decomposers",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Productivity in terrestrial ecosystems",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Aquatic ecosystems",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The aquatic environment",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The ocean and its communities: communities of the open sea",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The sea as a biological environment",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Character of oceanic populations: benthos, plankton, nekton",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Adaptations to marine conditions",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Productivity of marine communities as judged by biological oxygen consumption or by nutrient concentration",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Inland waters and their communities: freshwater communities",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Lacustrine, or standing-water, communities: in lakes and ponds; in swamps, marshes, and bogs",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Riverine, or flowing-water, communities: in rivers and streams, in springs",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Boundary ecosystems: between waters or between water and land",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Estuarine communities: communities in brackish water",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Neritic communities: life along seacoasts",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Productivity in aquatic ecosystems: the problem of determining productivity, comparisons of productivity",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The distribution of organisms",
+      "children": []
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Biogeographic regions and their inhabitants: regional floras and faunas",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The Megagaean realm",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Holarctic region: the nontropical parts of Eurasia, northern Africa, and North America",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Ethiopian region: Africa south of the Sahara, southwestern Arabia, Madagascar",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Oriental region: tropical southern and southeastern Asia",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The Notogaean realm: Australia, New Guinea, New Zealand, tropical Pacific islands",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The Neogaean realm: Central and South America",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "D.4",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Biosphere and Concepts Rivers",
+    "of Ecology, The Trees",
+    "Lakes",
+    "Oceans"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-05"
+}

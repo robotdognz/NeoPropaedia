@@ -1,0 +1,113 @@
+{
+  "sectionCode": "341",
+  "sectionCodeDisplay": "341",
+  "title": "Nature and Patterns of Behavioral Responses %",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Diverse conceptions of animal behaviour",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The variety of animal behaviour",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Classification of animal behaviour",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Components of animal behaviour",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Patterns of stereotyped response: unlearned behavioral reactions of organisms to some environmental stimulus",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Plant movements: tropic and nastic movements, nutation, other autonomous movements",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Animal movements: reflex and reflexlike activities, taxes, fixed action patterns and instinct",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Photoperiodism",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Hormonal and nervous control of behaviour",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Interaction of endocrine and nervous systems",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Hormonal influences on behaviour; e.g., by sex hormones",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The nervous system and behaviour: the role of the nervous system in receiving information, processing it in the brain and spinal cord, and initiating the appropriate response",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Evolution of behaviour",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Evidence of the genetic determination of behaviour",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The influence of experience on behaviour: phyletic patterns in the evolution of learning",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "D.3",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Behaviour, Animal"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-04"
+}

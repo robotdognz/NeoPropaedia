@@ -1,0 +1,91 @@
+{
+  "sectionCode": "412",
+  "sectionCodeDisplay": "412",
+  "title": "Human Heredity: the Races of Mankind",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Heredity in humans",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The biological basis of human heredity: genetic reproduction",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Inheritance of behavioral traits",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Fraternal and identical twins and the inferences that can be made from twin studies",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Genetic explanations for abnormalities: chromosome variations, mutation",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Applications of human genetics",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Specific behavioral traits affected by inheritance",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Consanguinity and its effects",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The nature and origin of human physical variation",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Aspects of human diversity",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Measures of \"race\"",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Old measures; e.g., colour, hair form, body measurements, features such as eyes and nose",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [],
+  "macropaediaReferences": [
+    "Evolution, Human",
+    "Genetics and Heredity, The Principles of",
+    "Life"
+  ],
+  "partNumber": 4,
+  "divisionId": "4-01"
+}

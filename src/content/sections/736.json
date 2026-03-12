@@ -1,0 +1,490 @@
+{
+  "sectionCode": "736",
+  "sectionCodeDisplay": "736",
+  "title": "Military Technology",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Offensive weaponry",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Early hand-powered weapons",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Construction materials: wood, stone, precious metals, copper, bronze, iron",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Shock weapons: e.g., mace, axe, sword, halberd",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Missile weapons: e.g., spear, javelin, sling, arrow",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Mechanical weapons: e.g., ballista, catapult, ram, crossbow",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Gunpowder weapons",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Construction materials: cast bronze, cast or wrought iron, forged or stamped steel",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Loading: muzzle-, breech-, automatic",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Artillery: e.g., cannon, howitzer, mortar",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Small arms: e.g., musket, rifle, pistol, machine gun",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Ammunition",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Propellant: black powder, smokeless powder",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Projectiles: e.g., cannonball, shrapnel, shell, bullet",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Explosives: e.g., grenades, mines, depth charges, bombs, missile warheads",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Self-propelled missiles",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Basing",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Land: e.g., barrage rocket, ballistic missile, surface-to-air missile",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Sea: e.g., torpedo, submarine-launched ballistic missile, antiship missile",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Air: e.g., air-to-air missile, cruise missile",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Propulsion: rocket, jet, propeller",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Guidance: free-flight, energy-sensing, command, inertial",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Payloads: e.g., single- warhead, cluster bomblet, multiple reentry vehicle",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Warheads: e.g., high-explosive, antipersonnel, nuclear",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Nuclear weapons",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Energy sources: fission, fusion",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Effects: blast, heat, radioactive fallout",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Chemical and biological weapons",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Defensive weaponry",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Personal protection",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Armour against early hand-powered weapons",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Materials: e.g., leather, bronze, iron",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Construction: e.g., mail, scale, brigandine, plate",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Protection: e.g., shield, helmet, cuirrass, greave",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Armour against gunpowder and explosive weapons",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Materials: steel, plastic, Kevlar",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Protection: e.g., helmet, flak jacket, bullet-proof vest",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Protection against nuclear and chemical weapons: e.g., gas mask, overgarments",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Fortification",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Field fortification: e.g., log breastwork, wooden pallisade, trench, foxhole",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Permanent fortification before gunpowder: masonry citadel, motte-and-bailey castle",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Permanent fortification in the early gunpowder era: sunken profile, bastioned trace",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Permanent fortification in the modern gunpowder era: e.g., concrete bunkers, pillboxes, reinforced aircraft hangars",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Antinuclear fortification: e.g., hardened missile silos, bomb shelters",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Missile defense: surface-to-air missiles, rapid-fire guns",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Weapon platforms",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Land vehicles",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Animal mounts: e.g., horses, elephants, camels",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Man- and animal-powered vehicles: e.g., chariots, siege towers",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Steam power: e.g., railroad cars, early tanks",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Internal combustion: e.g., tanks, armoured personnel carriers",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Surface ships and craft",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Oar-powered: e.g., galleys, longboats",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Sail-powered: e.g., galleons, ships of the line, frigates",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Steam-powered: e.g., battleships, cruisers, aircraft carriers",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Internal combustion: e.g., gunboats, landing craft",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Nuclear-powered: e.g., aircraft carriers, cruisers",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Submarines",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Propulsion: steam turbine, diesel-electric, nuclear",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Vessels: attack, strategic missile launching",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Aircraft",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Fixed-wing airplanes",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Propulsion: internal combustion/propeller, jet",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Configuration: e.g., biplane, monowing, variable-geometry wing",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Types: e.g., fighter, bomber, early warning",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Helicopters",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Propulsion: internal combustion, gas turbine",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Types: e.g., attack, naval antisubmarine, transport",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Engineering",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Tactical support: e.g., fortification",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Strategic support: e.g., roads, bridges, ports, airfields",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Ancillary support: e.g., maps, bomb disposal",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Logistics: supply, transport, lodging, services",
+      "children": []
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Electronics",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Electromagnetic sensors and transmitters: the use of radio, radar, infrared, ultraviolet, optical, and laser technology in communication, navigation, warning and detection, and weapon guidance",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "F.2",
+      "targetSection": "544",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "War, The Technology of War, The Theory and Conduct of"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-03"
+}

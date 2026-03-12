@@ -1,0 +1,190 @@
+{
+  "sectionCode": "355",
+  "sectionCodeDisplay": "355",
+  "title": "The Place of Humans in the Biosphere",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The qualities that set human beings apart in the biosphere",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Structural characteristics and physical capabilities providing humans with a versatility unparalleled in the biosphere",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Physiological characteristics underlying the unique behaviour of humans: lack of a definite breeding season, long life span with slow development and lengthy dependency to maturity",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Behavioral capacity as the basis of the unique culture of humans: communication through propositional speech, intellect and conceptualization",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The effects of human action upon the biosphere",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The influence of the human species on the modification of the environment",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The influence of the environment on the modification of the human species",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The attempts to change genetic endowments through deliberate selective measures: eugenics",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The utilization of organisms by humans",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Domestication of plants and animals: distribution and development",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The cultivation of plants: plant breeding and growing",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The uses of plants [see also 724.C.8. and 731]",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The cultivation of animals: animal breeding and raising",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Major uses of animals [see also 724. C.8. and 731]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The maintenance of public and private collections of live and preserved animals and plants",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Museums of natural history",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Zoological gardens and aviaries",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Institutional and private aquariums",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Botanical gardens and arboretums",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The conservation and management of natural resources",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature and scope of conservation management",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Types of natural resources",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Management of natural resources",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Management of the world's food supply",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The problem of food supply: special difficulties facing the developing countries",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C.3",
+      "targetSection": "724",
+      "targetPath": "C.8"
+    },
+    {
+      "fromPath": "C.5",
+      "targetSection": "724",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D.4.b",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Biosphere and Concepts of Ecology, The Farming and Agricultural Technology",
+    "Cats, Domestic Forestry and Wood Production",
+    "Gardening and Horticulture",
+    "Conservation of Natural Resources",
+    "Horses and Horsemanship",
+    "Dogs"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-05"
+}

@@ -1,0 +1,934 @@
+{
+  "sectionCode": "514",
+  "sectionCodeDisplay": "514",
+  "title": "Language and Communication",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Communication as a foundation of human culture and as the essential element in social and cultural interaction, the role of communication in the modification of human behaviour",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Nonverbal communication",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Communication by means of bodily gestures and posture, by facial expression",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Laughter and nonword sounds as communication",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The use of signals, signs, symbols, icons, and cultural artifacts",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Cybernetic communication: computer languages, human language-computer interfaces, and artificial intelligence and expert systems",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Parapsychological forms of communication: telepathy [see 432. H.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The nature of language",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Definitions of language",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Ways of studying language: phonetics, grammar, semantics",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Language variants: dialects, slang, and specialized variants (e.g jargon, pidgins, creoles)",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Speech: the psychological and physiological bases",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Meaning and style in language: structural and lexical meanings; semantic flexibility; language and conceptualization; style",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Language and culture: transmission of language; language and social differentiation; control of language for cultural ends; language learning and literacy; written language and spoken language",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Linguistic change and language typology",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Cryptology: codes, ciphers, and other means of encrypting language",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The structure of speech and language",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The phonetics of speech (articulatory, acoustic, linguistic); phonetic transcription; experimental phonetics",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The physiology of speech: regulators (respiratory and brain functions); the larynx; voice production (including synthetic voice production)",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Speech disorders",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Written language: systems of notation",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature, origin, and evolution of writing: from pictures to the alphabet",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Types of writing systems: logographic, syllabic, consonantal, alphabetic, featural",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Systems of writing: hieroglyphic, cuneiform, alphabetic, ideographic",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Adjuncts to writing: punctuation, shorthand",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Calligraphy and the art of handwriting: early Semitic, Arabic, Greek, Latin, Indie, East Asian",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Linguistics: the scientific study of language and language development [see also 10/36 H.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The development of linguistic theory",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Synchronic linguistics: structural, transformational-generative grammar, tagmemics, stratificational grammar, the Prague school",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Diachronic linguistics: linguistic change, comparative method, language classification",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Dialectology and the study of linguistic geography",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Semantics: the study of language and meaning",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The study of writing",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The classification of language",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "Language and society",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Attitudes toward language: taboos in language use, myths about the origin of language, the relation of language and thought",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The connection of language with history, the role of language in the transmission of culture",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The role of language in cross-cultural relations",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The use of language as a political instrument",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The role of language in unifying social and occupational groups",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "Languages of the world",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Indo-European languages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Anatolian",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Indo-Iranian",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Greek",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Italic",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Romance",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Germanic",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Armenian",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Tocharian",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Celtic",
+              "children": []
+            },
+            {
+              "level": "j",
+              "levelType": "lowercase",
+              "text": "Baltic",
+              "children": []
+            },
+            {
+              "level": "k",
+              "levelType": "lowercase",
+              "text": "Slavic",
+              "children": []
+            },
+            {
+              "level": "l",
+              "levelType": "lowercase",
+              "text": "Albanian",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Uralic languages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Finno-Ugric",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Samoyedic",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Altaic languages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Turkic",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Mongolian",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Manchu-Tungus",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Dravidian languages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "South Dravidian",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Central Dravidian",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "North Dravidian",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Austroasiatic languages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Mon-Khmer",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Munda",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Sino-Tibetan languages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Chinese",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Tibetic",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Burmic",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Baric",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Karenic",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Hmong-Mien (Miao-Yao) language",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Tai languages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Southwestern Tai",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Central Tai",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Northern Tai",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "Paleo-Siberian languages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Nivkh",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Yukaghir",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Chukchi",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Koryak",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Itelmen",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Ket",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "10",
+          "levelType": "numeric",
+          "text": "Caucasian languages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "South Caucasian",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "North Caucasian",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "11",
+          "levelType": "numeric",
+          "text": "Afro-Asiatic languages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Semitic",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Egyptian",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Berber",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Cushitic",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Chadic",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "12",
+          "levelType": "numeric",
+          "text": "Korean language",
+          "children": []
+        },
+        {
+          "level": "13",
+          "levelType": "numeric",
+          "text": "Japanese language",
+          "children": []
+        },
+        {
+          "level": "14",
+          "levelType": "numeric",
+          "text": "Austronesian languages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Formosan",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Western Malayo-Polynesian",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Central Malayo-Polynesian",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "South Halmahera-West New Guinea",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Oceanic",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "15",
+          "levelType": "numeric",
+          "text": "Papuan languages",
+          "children": []
+        },
+        {
+          "level": "16",
+          "levelType": "numeric",
+          "text": "Australian Aboriginal languages",
+          "children": []
+        },
+        {
+          "level": "17",
+          "levelType": "numeric",
+          "text": "African languages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Niger-Congo",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Chari-Nile and Nilo-Saharan",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Khoisan",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "18",
+          "levelType": "numeric",
+          "text": "Indian languages of North America",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Eskimo-Aleut",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Na-Dene",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Macro-Algonquian",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Macro-Siouan",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Hokan",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Penutian",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Aztec-Tanoan",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "19",
+          "levelType": "numeric",
+          "text": "Indian languages of Meso-America",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Uto-Aztecan",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Tequistlatec",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Tlapanec",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Oto-Pamean",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Popolocan",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Mixtecan",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Zapotecan",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Chinantecan",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Mixe-Zoque",
+              "children": []
+            },
+            {
+              "level": "j",
+              "levelType": "lowercase",
+              "text": "Totonacan",
+              "children": []
+            },
+            {
+              "level": "k",
+              "levelType": "lowercase",
+              "text": "Mayan",
+              "children": []
+            },
+            {
+              "level": "l",
+              "levelType": "lowercase",
+              "text": "Misumalpan",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "20",
+          "levelType": "numeric",
+          "text": "Indian languages of South America and the Caribbean",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Arawakan",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Cariban",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Macro-Chibchan",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Macro-Ge",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Macro-Pano-Tacanan",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Quechumaran",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Tucanoan",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Tupian",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "21",
+          "levelType": "numeric",
+          "text": "Language isolates",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Sumerian",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Etruscan",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Basque",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "22",
+          "levelType": "numeric",
+          "text": "Pidgins and creoles",
+          "children": []
+        },
+        {
+          "level": "23",
+          "levelType": "numeric",
+          "text": "Constructed languages",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Special international or universal languages, including Esperanto and Interlingua; Basic English",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.5",
+      "targetSection": "432",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "F",
+      "targetSection": "10/36",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "H.23.b",
+      "targetSection": "735",
+      "targetPath": "D.3"
+    }
+  ],
+  "macropaediaReferences": [
+    "Communication Linguistics",
+    "Cryptology Names",
+    "Humour and Wit Speech",
+    "Writing",
+    "Language",
+    "Languages of the World"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-01"
+}

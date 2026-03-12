@@ -1,0 +1,303 @@
+{
+  "sectionCode": "10/36",
+  "sectionCodeDisplay": "10/36",
+  "title": "The Social Sciences and Psychology and Linguistics",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "History of the social sciences",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Origins of the social sciences",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Precursors of the social sciences in the Middle Ages and the Renaissance",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Heritage of the Enlightenment: social reforms and revolution",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "19th-century developments in the social sciences",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The influence of new concepts in social, political, economic, and scientific theories",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Development of the separate disciplines; e.g., economics, political science, anthropology, sociology, social statistics, human geography",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "20th-century developments in the social sciences",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The influence of social upheaval in the non-Westem world: the revolution of rising expectations",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The influence of Marxism",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The influence of Freudian ideas",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The changing character of the disciplines",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Specialization and cross-disciplinary approaches",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The increasing professionalism of social scientists as consultants and decision makers in government and business",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The introduction of mathematical and other quantitative methods: the use of computers",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "The influence of empiricism: the collection of data, the use of surveys and polls, the testing of theories",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Major theoretical influences: developmentalism, the social-systems approach, structuralism and functionalism",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The nature of anthropology [see also Part Five, Division I]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The background of anthropology",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The scope and methods of anthropology: the division between cultural and physical anthropology",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The nature of sociology [see also Part Five, Division II]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The background of contemporary sociology",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The methodology of contemporary sociology",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The status of contemporary sociology",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Emergent trends in sociology",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Cognate disciplines: criminology, penology, social psychology, demography",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The nature of economics [see also Part Five, Division III]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Development of theories of economics",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The scope and methods of the study of economics: microeconomics, macroeconomics",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Cognate disciplines: mathematical economics, econometrics, accounting",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "The nature of political science [see also Part Five, Division IV]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The history of political science",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The scope and methods of contemporary political science",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Cognate disciplines: the study of public opinion, public law, public administration, political systems, and international relations",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "The nature of geography [see also 10/33]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The history of geography",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The scope and methods of geography: the division between physical, human, and regional geography",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "History and methods of psychology [see also Part Four, Division III]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The history of psychology",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The nature and scope of psychology",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Special branches and cognate disciplines of psychology: physiological psychology, social psychology",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "The nature of linguistics [see also 514]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The history of linguistics",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The nature and scope of linguistics",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "F",
+      "targetSection": "10/33",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "H",
+      "targetSection": "514",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "linguistics",
+    "Freud Marxism, Marx and",
+    "Geography Smith, Adam",
+    "Linguistics Social Sciences, The"
+  ],
+  "partNumber": 10,
+  "divisionId": "10-03"
+}

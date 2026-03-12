@@ -1,0 +1,452 @@
+{
+  "sectionCode": "126",
+  "sectionCodeDisplay": "126",
+  "title": "Mechanics of Particles, Rigid Bodies, and Deformable Bodies: Elasticity,",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The principles of classical mechanics",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The fundamental parameters and concepts of classical mechanics: matter, space, motion, time",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Statics, the equilibrium of systems at rest: force, friction",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Dynamics: motion of systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Kinematics: motion of particles and rigid bodies without consideration of the forces producing the motion",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Velocity and acceleration",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Rotation about a fixed axis",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Motion in a circular path",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Simple harmonic motion",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Relative motion",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Kinetics: motion of bodies under the action of forces upon them",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Newton's laws of motion: the law of inertia, the law of force, the law of action and reaction",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Motion under a constant force",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Ballistics: phenomena and laws of projectiles and their propulsion, flight, and impact",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "The motion of the pendulum",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Newton's law of universal gravitation",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Kepler's laws of planetary motion",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Impulse and momentum",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Work and power",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Energy",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The concepts of energy and energy conservation",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Forms of energy and examples of energy transformations associated with each energy form",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The equivalence of mass and energy",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "The conservation of momentum",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Mechanics of nonrigid bodies",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The collision of bodies or particles: centre of mass system, elastic collisions, inelastic collisions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Stiffness in mechanical vibrations",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Motion in a rotating frame of reference: inertia forces and Coriolis forces",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Mechanics of complex systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The principle of virtual work",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The rotation of spinning tops and gyroscopes",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The precession and nutation of rotating bodies",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Lagrange's and Hamilton's equations of motion",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Celestial mechanics",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The scope and history of celestial mechanics",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The two-body problem and perturbations that cause the orbits of planets and satellites to deviate from ellipses",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The three-body problem",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The general «-body problem",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Relativistic mechanics in inertial systems of reference",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Mechanical foundations of special relativity",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Relativistic kinematics",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The relationship between gravitational mass and inertial mass",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The stress dynamics of elastic materials",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The phenomenon of elasticity: stress-strain relationships ,2. Elasticity in viscous and crystalline bodies",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Elastic constants",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The theory of elasticity: mathematical expressions defining elastic properties",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Vibrations of elastic bodies",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature of vibrations: natural or free vibrations, damped and forced vibrations",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Vibrators and their sources of energy",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Types of vibrational waves: their properties and modes of propagation",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The behaviour of materials undergoing vibration",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Detection and utilization of vibrations [see 723.F.6. and 735.K.2.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Fluid mechanics, including gas dynamics",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General properties of fluids, ideal and actual: mechanical and thermodynamic properties",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Fluid statics and equilibrium",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The basic equation of fluid statics",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Fluid forces on plane and curved surfaces: analysis of forces, buoyancy, stability of floating and submerged bodies",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Fluids in motion: hydrodynamics and aerodynamics",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Frictionless one-dimensional fluid flow",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Flow in pipes and channels: laminar flow, turbulent flow, special types of flow",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "General two- and three-dimensional flow: mathematical conditions, vorticity, boundary layers, drag",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Compressible fluid flow: isentropic flow, shock waves",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "Rheological phenomena: deformation and flow",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Continuum mechanics",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Kinematics of deformation and flow: strain, shear, compression, elongation",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Dynamics: balance of forces and torques",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Constitutive equations: stress-deformation relations in different media",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Yield strength of materials: fracture and fatigue",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "E.5",
+      "targetSection": "723",
+      "targetPath": "F.6"
+    },
+    {
+      "fromPath": "G.4",
+      "targetSection": "10/32",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "bodies: elasticity, vibrations, and flow",
+    "Energy Conversion",
+    "Matter: Its Properties, States, Varieties, and Behaviour",
+    "Mechanics: Energy, Forces, and Their Effects"
+  ],
+  "partNumber": 1,
+  "divisionId": "1-02"
+}

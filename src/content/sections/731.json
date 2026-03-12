@@ -1,0 +1,442 @@
+{
+  "sectionCode": "731",
+  "sectionCodeDisplay": "731",
+  "title": "Agriculture and Food Production",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The history of agriculture",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Farm management",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Basic management problems and practices",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Farm labour, draft animals, and farm machinery",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Farm buildings",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Farming in relation to other disciplines; e.g., weather, pollution control",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Crop farming",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Soil preparation and care",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Plant propagation, seeding and cultivation",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Harvesting and crop processing",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Specialized crop farming techniques; dryland farming, tropical farming, hydroponic farming, greenhouse farming",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Control of pests and disease organisms [see also 321.E.2.]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Major crops",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Horticultural crops: vegetables and legumes, fruits and nuts, flowers",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Cereals",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Forest crops: trees, rubber",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Production of other major field crops; e.g., coffee, tea, cocoa, sugar, tobacco",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Livestock farming",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Animal breeding",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Major flock and stock animals",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Cattle",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Swine",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Sheep and goats",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Horses",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Poultry",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Bees",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Other livestock; e.g., buffalo, asses and mules, camels",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Disease and pest control",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Technology of hunting and fishing, whaling",
+      "children": []
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Food processing",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Fruit and vegetable processing",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Cereals, cereal products, and other starch products",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Bakery products: basic ingredients, types of products and production methods, market preparation, quality maintenance and testing",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Confectionery and candy production",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Meat and meat products",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Fish and marine products",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Dairying and dairy products",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Milk production and handling techniques",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Dairy products: fluid and concentrated milk, dried milk, ice cream, butter, and cheese",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Beverage production",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Technology of brewing",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Technology of wine making",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Technology of producing distilled liquor",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Technology of producing nonalcoholic beverages: soft drinks, coffee, tea",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "Spices, herbs, and flavourings",
+          "children": []
+        },
+        {
+          "level": "10",
+          "levelType": "numeric",
+          "text": "Cane sugar, beet sugar, and other sweeteners",
+          "children": []
+        },
+        {
+          "level": "11",
+          "levelType": "numeric",
+          "text": "Oils, fats, and waxes",
+          "children": []
+        },
+        {
+          "level": "12",
+          "levelType": "numeric",
+          "text": "Eggs and egg products",
+          "children": []
+        },
+        {
+          "level": "13",
+          "levelType": "numeric",
+          "text": "Cocoa and chocolate products",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "Food preservation",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Methods of preservation",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Low-temperature preservation: refrigeration and freezing",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Preservation by drying and by smoking",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "High-temperature preservation: canning and pasteurization",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Fermentation and pickling",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Chemical preservation",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Preservation by heat radiation and by ionizing radiation",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Food storage and packaging",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "Techniques for controlling the quality of food",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Evaluation of food quality: sensory evaluation; objective evaluation by chemical, instrumental, and microbiological methods",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Control of food quality",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Regulation of food quality by legislation, grading, and inspection",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "I",
+      "levelType": "major",
+      "text": "Food sources and new product development",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "History and development of new foods and new food products",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Utilization of new food sources; e.g., oilseeds, leaves, grasses, single-cell protein",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Development of new market forms",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C.5",
+      "targetSection": "321",
+      "targetPath": "E.2"
+    },
+    {
+      "fromPath": "I.4",
+      "targetSection": "724",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "I.4",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Agricultural Sciences Forestry and Wood Production",
+    "Agriculture, The History of Gardening and Horticulture",
+    "Beverage Production Gastronomy",
+    "Farming and Agricultural Technology Industries, Extraction and Processing",
+    "Fishing, Commercial Public Works",
+    ", Food Processing"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-03"
+}

@@ -1,0 +1,211 @@
+{
+  "sectionCode": "821",
+  "sectionCodeDisplay": "821",
+  "title": "Prehistoric Religion and Primitive Religion",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Prehistoric religion",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The study of prehistoric religion: nature, scope, methods of interpretation, problems special to the subject [see also 10/41. B.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Inferred prehistoric religious beliefs and practices",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Burial customs and cults of the dead",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Cannibalism",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Sacrifices: human, animal, and other offerings",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Hunting rites and animal cults",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Female fertility deities",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Shamanism, sorcery, and magic",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Religions attributed to various prehistoric cultural stages and regions",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Primitive religion",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature and significance of primitive religion",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Primitive views of reality",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The distinction between the sacred and the profane",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Dynamistic, daemonistic, and theistic views of the sacred: the concept of mana",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Animism: external reality viewed as living presence",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Sacred time and times, sacred space and places, and man's nature, origin, and destiny: primitive cosmogonies, cosmologies, eschatologies",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The nature and function of myth and symbol in primitive religion: their role in ritual, the iconographic character of primitive art",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Primitive religious practices and institutions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Sacrifice, purification, passage rites",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Worship or veneration centred on natural objects or forces",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Totemism: the socio religious system in which men are intimately related to plants, animals, or other natural phenomena",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Worship of ancestors, kings, and heroes",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The roles of asceticism, shamanism, divination, and spiritualistic practices",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The primitive religions of the major world areas",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Africa: traditional religions of the indigenous African peoples",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Australia and Oceania: religions of the Pacific Island peoples",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The Americas: religions of the indigenous peoples of North, Central, and South America [see also 822. 1.]",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Asia: aboriginal religions of Asian peoples",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1",
+      "targetSection": "10/41",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.5.c",
+      "targetSection": "822",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.5.e",
+      "targetSection": "811",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Doctrines and Dogmas, Religious",
+    "Prehistoric Peoples and Cultures",
+    "Sacred Offices and Orders"
+  ],
+  "partNumber": 8,
+  "divisionId": "8-02"
+}

@@ -1,0 +1,242 @@
+{
+  "sectionCode": "241",
+  "sectionCodeDisplay": "241",
+  "title": "Origin and Development of the Earth and Its Envelopes",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The origin and evolution of the lithosphere [see also 213.A.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Theories of the origin of the Earth",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The development of crust from mantle: processes involved in the geochemical differentiation of the Earth's outer layers",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The origin and evolution of the atmosphere [see also 221. A.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The relation of the development of the Earth's atmosphere to the origin of the solar system and the development of other planetary atmospheres",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The original atmosphere of the Earth",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Development of the present terrestrial atmosphere [see also 335. B.)",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The present atmosphere [see 221. A.]",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Effects of human activities and their ramifications; e.g., acid rain resulting from the emission of sulfur dioxide; ozone depletion caused by the release of chlorofluorocarbons; greenhouse warming induced by the buildup of carbon dioxide [see also 223.E.2.C.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The origin and evolution of the hydrosphere",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The early oceans",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The chemical view of the modern oceans",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The present hydrosphere [see 222]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The formation and growth of the continents",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The Earth's crust and upper mantle [see also 212.D.3., 213.A., 214.B.1.C., and 232]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Endogenic regimes of the continents: geosynclines, platforms, rifts, continental margins [see also 231]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The relation between endogenic regimes and deep-seated Earth processes",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "The formation and growth of mountain ranges and belts",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The distribution of mountain belts in relation to global tectonics",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The tectonic mountain belts [see also 212. G., 214. B., and 231. F.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The geosynclinal hypothesis of mountain building",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The development of mountain systems",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "The theory of plate tectonics",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Early speculations about the existence of a single supercontinent and its fragmentation into the present-day landmasses",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Wegener's concept of continental drift",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Hess' seafloor spreading model",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Plate tectonics as a unifying theory",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Lithospheric plate boundaries as sites of volcanism, seismicity, and orogeny",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A",
+      "targetSection": "213",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "B",
+      "targetSection": "221",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.3",
+      "targetSection": "335",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.4",
+      "targetSection": "221",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.5",
+      "targetSection": "223",
+      "targetPath": "E.2.C"
+    },
+    {
+      "fromPath": "C.3",
+      "targetSection": "222",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D.1",
+      "targetSection": "212",
+      "targetPath": "D.3"
+    },
+    {
+      "fromPath": "D.2",
+      "targetSection": "231",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "E.2",
+      "targetSection": "212",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "F.4.b",
+      "targetSection": "10/33",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Atmosphere",
+    "Earth, The: Its Properties, Composition, and Structure",
+    "Plate Tectonics",
+    "Volcanism"
+  ],
+  "partNumber": 2,
+  "divisionId": "2-04"
+}

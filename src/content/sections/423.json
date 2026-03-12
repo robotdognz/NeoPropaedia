@@ -1,0 +1,594 @@
+{
+  "sectionCode": "423",
+  "sectionCodeDisplay": "423",
+  "title": "Human Diseases",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Characteristics, causes, and classifications of human disease",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The detection and diagnosis of disease",
+      "children": []
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The treatment of disease: therapeutics",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Aspects of medical treatment: factors for consideration in the formulation of a therapeutic regimen",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Major therapeutic techniques",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Surgical treatment",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Biological therapy",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Pharmacodynamic therapy",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Chemotherapy",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Substitution therapy",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Radiation therapy",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Physical therapy",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Occupational therapy",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Shock therapy",
+              "children": []
+            },
+            {
+              "level": "j",
+              "levelType": "lowercase",
+              "text": "Burn treatment",
+              "children": []
+            },
+            {
+              "level": "k",
+              "levelType": "lowercase",
+              "text": "Organ and tissue transplants",
+              "children": []
+            },
+            {
+              "level": "l",
+              "levelType": "lowercase",
+              "text": "Psychological therapy [see 436.D.4.]",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The symptoms, diagnosis, and treatment of diseases of the body as a whole",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Physiological shock",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Metabolic diseases and disorders",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Nutritional diseases: disorders related to nutritional deficiencies and excesses",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Diseases and disorders of fluid and electrolyte balance",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Infectious or contagious diseases: the impairment of health by living invaders of the body",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Diseases and disorders present at the time of birth %",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Childhood diseases",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Disorders and injuries caused by physical agents: electrical shock; exposure to extremes of temperature, radiation, and pressure; motion sickness; wounds",
+          "children": []
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "Dehydration and associated disorders",
+          "children": []
+        },
+        {
+          "level": "10",
+          "levelType": "numeric",
+          "text": "Poisoning",
+          "children": []
+        },
+        {
+          "level": "11",
+          "levelType": "numeric",
+          "text": "Allergenic diseases and anaphylactic shock",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "The symptoms, diagnosis, and treatment of diseases affecting any organ or tissue of the body: tumours and cancers, hyperplasia, atrophy",
+      "children": []
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Diseases of particular bodily systems",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The cardiovascular system",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The heart and the great vessels",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The blood vessels",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Blood circulation",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The blood and blood-forming tissues",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The lymphatic system",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Disorders of lymphatic vessels and their drainage",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Disorders of lymphoid tissue",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The respiratory system",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Infectious diseases of the respiratory system",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Allergic lung diseases",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Bronchopulmonary diseases",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Diseases of the nonpulmonary structures",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Disorders in the dynamics of respiration",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The digestive system",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The mouth, pharynx, and associated structures",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The esophagus",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The stomach and duodenum",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The small intestine and appendix",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The large intestine",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "The digestive glands",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Disorders in the digestion and absorption of foods",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The endocrine system",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The pituitary",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The thyroid",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The parathyroids",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The adrenals",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The gonads and placenta",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "The pancreas",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Other endocrine glands: pineal gland, thymus",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The reproductive system",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Genetic and congenital abnormalities",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Infections and sexually transmitted diseases",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The male reproductive system",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The female reproductive system",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Pregnancy",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The excretory system [see also 10/35. B.l.d.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Functional aspects: disorders of urine production and micturition",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The kidneys and tubules",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The urinary tract: ureters, bladder, and urethra",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "The supportive-protective system",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The skeletal system and bone",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Connective tissue: bone and periosteum, cartilage, tendon, and ligament",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The joints",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The bursae",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The sinuses and the body cavities and their membranes",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Muscle",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "The skin",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "The nervous system [see also 10/35. B. 1 .f.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Neurological manifestations secondary to other diseases, neurochemical disorders, and development defects",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Disorders of the peripheral nerves",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Disorders of the spinal cord and autonomic nervous system",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Disorders of the central nervous system",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Other disorders of the general nervous system",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Disorders of the eye and vision",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Disorders of the ear and hearing",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Disorders of other sensory receptors",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Disorders of speech",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C.2.l",
+      "targetSection": "436",
+      "targetPath": "D.4"
+    },
+    {
+      "fromPath": "F.7",
+      "targetSection": "10/35",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "F.9",
+      "targetSection": "10/35",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "F.9.j",
+      "targetSection": "10/35",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Blood Digestion and Integumentary Respiration and",
+    "Cancer Digestive Systems Systems Respiratory",
+    "Childhood Disease Metabolism",
+    "Systems",
+    "Diseases and Endocrine Systems Muscles and",
+    "Sensory Reception",
+    "Disorders Excretion and Muscle Systems Supportive and",
+    "Circulation and Excretory Nerves and Connective",
+    "Nervous Systems Tissues",
+    "Circulatory Systems",
+    "Nutrition",
+    "Systems Immunity Transplants, Organ",
+    "Diagnosis and Infectious Diseases Poisons and and Tissue",
+    "Therapeutics Poisoning"
+  ],
+  "partNumber": 4,
+  "divisionId": "4-02"
+}

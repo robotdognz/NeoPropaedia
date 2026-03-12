@@ -1,0 +1,567 @@
+{
+  "sectionCode": "128",
+  "sectionCodeDisplay": "128",
+  "title": "Waves and Wave Motion",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "General wave phenomena and the theory of wave motion",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General properties of waves: frequency, amplitude, wavelength, phase",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Classification of waves",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Waves classified by the medium supporting the transmission of wave motion: water waves, sound waves, electromagnetic waves",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Waves classified by the motion of particles in a wave: transverse, longitudinal, torsional, and cylindrical waves",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Other classifications: bow waves and shock waves",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The theory of waves",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "General characteristics of vibratory motion: periodicity, group velocity, energy content",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The velocity of waves",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The wave equation: the space-time description of wave motion",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Transport of energy and momentum",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The principle of superposition of waves",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Standing waves: waves with stationary nodes",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Modulation of waves",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Pulse and wave trains",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The behaviour of waves at boundaries or interfaces: reflection, transmission, refraction",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The diffraction and interference of waves",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The interaction of waves with matter: absorption, dispersion",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Electromagnetic waves",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Properties and behaviour of electromagnetic waves",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Waves of the electromagnetic spectrum and their properties",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Radio waves",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Microwaves",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Infrared radiation",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Visible light [see C., below]",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Ultraviolet waves",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "X rays [see 111.D.]",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Gamma rays",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Sources of incoherent electromagnetic waves",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Sources of radio waves: oscillators, antennas, cosmic objects",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Sources of microwaves: klystrons, magnetrons, Gunn diodes, tunnel diodes, cosmic sources",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Sources of infrared, visible, and ultraviolet waves",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Blackbody radiation",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Luminescence, fluorescence, phosphorescence",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The passage of electrical current through a resisting medium",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Sources of X rays: X-ray tubes (bremsstrahlung), synchrotron radiation",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Sources of gamma rays: radioactive nuclei",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Sources of coherent electromagnetic waves: lasers and masers",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The transmission of electromagnetic waves: through matter, through space, by wave guides and transmission lines",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Light waves",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Light as a wave motion: the wave theory of light",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The properties of light consistent with the wave theory: diffraction, interference, polarization, dispersion",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The spectrum of light: the description of colour in terms of wavelengths",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The velocity of light and its measurement",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Interference of light",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Diffraction phenomena",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Polarization",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Superposition of polarized beams: plane, circularly, or elliptically polarized light",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Double refraction: waves in anisotropic media",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Characterization of polarized light by Stokes's parameters and Poincare sphere",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Properties and behaviour of light waves based on Maxwell's equations of electromagnetic theory",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The interaction of light with matter",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Reflection and refraction",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Dispersion and scattering",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Absorption: mechanical and chemical effects of light",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "The quantum theory of light: the photon",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Observed photon phenomena: photoelectric effect, Compton scattering, Rayleigh scattering",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The uncertainty principle in relation to the study of the phenomena of light",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The detection and counting of photons",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "The separation of light into its constituent wavelengths, the analysis of light spectra *",
+          "children": []
+        },
+        {
+          "level": "10",
+          "levelType": "numeric",
+          "text": "Sources of light",
+          "children": []
+        },
+        {
+          "level": "11",
+          "levelType": "numeric",
+          "text": "The biological effects of light, including photosynthesis [see 322.A. and 335.B.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The focusing and imaging of light waves",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Geometrical optics: the geometry of light rays and their image-forming properties through optical systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Theoretical considerations: law of reflection, law of refraction, Lagrange theorem, Gauss theory of lenses",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Optical systems: components, applications, lens aberrations, brightness of image formed",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Optics and information theory",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Optical data processing",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Holography: a two-step image-forming process using coherent light",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Sound waves",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature and properties of sound waves",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Shock waves and their characteristics",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Sources of sound waves",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The reception of sound",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Applications of acoustics",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Recording and reproduction [see 735. F.)",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Architectural and acoustical design [see 733.A.8.]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Speech and music [see 514.D. 1. and 624. B.[",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Military acoustical detectors [see 735.J.2.]",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Noise control [see 733.A.8.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Physical aspects of musical sound",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The special properties of musical sound: pitch, timbre, loudness; fundamentals and overtones",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.2.f",
+      "targetSection": "111",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "C.11",
+      "targetSection": "322",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "E.5.a",
+      "targetSection": "735",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "E.5.b",
+      "targetSection": "733",
+      "targetPath": "A.8"
+    },
+    {
+      "fromPath": "E.5.c",
+      "targetSection": "514",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "E.5.d",
+      "targetSection": "735",
+      "targetPath": "J.2"
+    },
+    {
+      "fromPath": "E.5.e",
+      "targetSection": "733",
+      "targetPath": "A.8"
+    },
+    {
+      "fromPath": "E.6.b",
+      "targetSection": "10/32",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Colour Optics, Principles of",
+    "Electromagnetic Radiation Sound",
+    "Light"
+  ],
+  "partNumber": 1,
+  "divisionId": "1-02"
+}

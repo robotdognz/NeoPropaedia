@@ -1,0 +1,190 @@
+{
+  "sectionCode": "423",
+  "mappings": [
+    {
+      "vsiTitle": "Epidemiology",
+      "vsiAuthor": "Rodolfo Saracci",
+      "rationale": "Covers the study of disease distribution and determinants, directly relevant to detecting, diagnosing, and classifying human diseases."
+    },
+    {
+      "vsiTitle": "Infectious Disease",
+      "vsiAuthor": "Benjamin Bolker and Marta Wayne",
+      "rationale": "Directly covers infectious and contagious diseases (section D.5), including the impairment of health by living invaders of the body."
+    },
+    {
+      "vsiTitle": "The Immune System",
+      "vsiAuthor": "Paul Klenerman",
+      "rationale": "Covers immunological disorders, allergenic diseases (section D.11), and biological therapy including immune-based treatments (section C.2.b)."
+    },
+    {
+      "vsiTitle": "Viruses",
+      "vsiAuthor": "Dorothy H. Crawford",
+      "rationale": "Covers viral agents responsible for many infectious diseases including childhood diseases and contagious illnesses (sections D.5, D.7)."
+    },
+    {
+      "vsiTitle": "Bacteria",
+      "vsiAuthor": "Sebastian G. B. Amyes",
+      "rationale": "Covers bacterial pathogens causing infectious diseases and antibiotic treatments, relevant to chemotherapy and pharmacodynamic therapy (sections C.2.c, C.2.d)."
+    },
+    {
+      "vsiTitle": "Drugs",
+      "vsiAuthor": "Leslie Iversen",
+      "rationale": "Directly covers pharmacodynamic therapy and chemotherapy (sections C.2.c, C.2.d) as major therapeutic techniques for treating disease."
+    },
+    {
+      "vsiTitle": "Cancer",
+      "vsiAuthor": "Nick James",
+      "rationale": "Directly covers tumours and cancers (section E), including diagnosis and treatment including radiation therapy, chemotherapy, and surgical treatment."
+    },
+    {
+      "vsiTitle": "HIV/AIDS",
+      "vsiAuthor": "Alan Whiteside",
+      "rationale": "Covers a major infectious disease that is also a sexually transmitted disease (section F.6.b), including its diagnosis and treatment."
+    },
+    {
+      "vsiTitle": "Pandemics",
+      "vsiAuthor": "Christian W. McMillen",
+      "rationale": "Covers epidemic and pandemic infectious diseases, relevant to contagious diseases (section D.5) and their global impact on human health."
+    },
+    {
+      "vsiTitle": "Plague",
+      "vsiAuthor": "Paul Slack",
+      "rationale": "Covers a major historic infectious disease, relevant to understanding contagious diseases and epidemics (section D.5)."
+    },
+    {
+      "vsiTitle": "Psychiatry",
+      "vsiAuthor": "Tom Burns",
+      "rationale": "Covers mental and neurological disorders, relevant to diseases of the nervous system (section F.9) and psychological therapy (section C.2.l)."
+    },
+    {
+      "vsiTitle": "Schizophrenia",
+      "vsiAuthor": "Chris Frith, Eve C. Johnstone",
+      "rationale": "Covers a specific neurological/psychiatric disorder relevant to disorders of the central nervous system (section F.9.d)."
+    },
+    {
+      "vsiTitle": "Depression",
+      "vsiAuthor": "Mary Jane Tacchi, Jan Scott",
+      "rationale": "Covers a major mental/neurological disorder, relevant to disorders of the general nervous system (section F.9.e)."
+    },
+    {
+      "vsiTitle": "Autism",
+      "vsiAuthor": "Uta Frith",
+      "rationale": "Covers a neurodevelopmental disorder relevant to diseases and disorders present at birth and childhood diseases (sections D.6, D.7)."
+    },
+    {
+      "vsiTitle": "Anxiety",
+      "vsiAuthor": "Daniel Freeman, Jason Freeman",
+      "rationale": "Covers anxiety disorders, a category of mental disorders related to nervous system dysfunction (section F.9)."
+    },
+    {
+      "vsiTitle": "Dementia",
+      "vsiAuthor": "Kathleen Taylor",
+      "rationale": "Covers degenerative disorders of the central nervous system (section F.9.d), including diagnosis and treatment approaches."
+    },
+    {
+      "vsiTitle": "Addiction",
+      "vsiAuthor": "Keith Humphreys",
+      "rationale": "Covers substance use disorders relevant to poisoning (section D.10) and nervous system disorders (section F.9)."
+    },
+    {
+      "vsiTitle": "The History of Medicine",
+      "vsiAuthor": "William Bynum",
+      "rationale": "Provides historical context for the development of disease detection, diagnosis, and therapeutic techniques described in sections B and C."
+    },
+    {
+      "vsiTitle": "Medical ethics",
+      "vsiAuthor": "Tony Hope",
+      "rationale": "Covers ethical considerations in therapeutic decision-making, relevant to formulating therapeutic regimens (section C.1)."
+    },
+    {
+      "vsiTitle": "Medical law",
+      "vsiAuthor": "Charles Foster",
+      "rationale": "Covers legal dimensions of disease treatment, relevant to aspects of medical treatment and therapeutic regimen formulation (section C.1)."
+    },
+    {
+      "vsiTitle": "Forensic science",
+      "vsiAuthor": "Jim Fraser",
+      "rationale": "Relevant to disease detection and diagnosis (section B) and identification of causes of death including poisoning and injury."
+    },
+    {
+      "vsiTitle": "Blood",
+      "vsiAuthor": "Christopher Cooper",
+      "rationale": "Directly relevant to diseases of the blood and blood-forming tissues (section F.1.d) and disorders of blood circulation (section F.1.c)."
+    },
+    {
+      "vsiTitle": "Hormones",
+      "vsiAuthor": "Martin Luck",
+      "rationale": "Directly relevant to diseases of the endocrine system (section F.5), including pituitary, thyroid, adrenal, and pancreatic disorders."
+    },
+    {
+      "vsiTitle": "Nutrition",
+      "vsiAuthor": "David Bender",
+      "rationale": "Directly covers nutritional diseases related to deficiencies and excesses (section D.3) and disorders in digestion and absorption of foods (section F.4.g)."
+    },
+    {
+      "vsiTitle": "Anaesthesia",
+      "vsiAuthor": "Aidan O'Donnell",
+      "rationale": "Directly relevant to surgical treatment (section C.2.a) as a critical component of modern surgical therapeutic techniques."
+    },
+    {
+      "vsiTitle": "The Brain",
+      "vsiAuthor": "Michael O'Shea",
+      "rationale": "Relevant to disorders of the central nervous system (section F.9.d) and neurological manifestations of disease."
+    },
+    {
+      "vsiTitle": "The Eye",
+      "vsiAuthor": "Michael F. Land",
+      "rationale": "Relevant to disorders of the eye and vision (section F.9.f)."
+    },
+    {
+      "vsiTitle": "Fungi",
+      "vsiAuthor": "Nicolas P. Money",
+      "rationale": "Fungal pathogens cause infectious diseases (section D.5), including skin diseases (section F.8.g) and respiratory infections (section F.3.a)."
+    },
+    {
+      "vsiTitle": "Microbiology",
+      "vsiAuthor": "Nicholas P. Money",
+      "rationale": "Covers the microbial agents responsible for infectious diseases and the microbiological basis for diagnosis and treatment."
+    },
+    {
+      "vsiTitle": "Psychotherapy",
+      "vsiAuthor": "Tom Burns (Author), Eva Burns-Lundgren (Editor)",
+      "rationale": "Directly covers psychological therapy (section C.2.l) as a major therapeutic technique for treating disease."
+    },
+    {
+      "vsiTitle": "Cognitive Behavioural Therapy",
+      "vsiAuthor": "Freda McManus",
+      "rationale": "A specific form of psychological therapy (section C.2.l) used to treat anxiety disorders, depression, and other mental disorders."
+    },
+    {
+      "vsiTitle": "Radioactivity",
+      "vsiAuthor": "Claudio Tuniz",
+      "rationale": "Relevant to radiation therapy (section C.2.f) and disorders caused by radiation exposure (section D.8)."
+    },
+    {
+      "vsiTitle": "Dyslexia",
+      "vsiAuthor": "Margaret J. Snowling",
+      "rationale": "A neurodevelopmental disorder relevant to disorders of speech and cognitive function (section F.9.i)."
+    },
+    {
+      "vsiTitle": "Psychopathy",
+      "vsiAuthor": "Essi Viding",
+      "rationale": "Covers personality disorders relevant to the section's coverage of disorders of the nervous system and mental health (section F.9)."
+    },
+    {
+      "vsiTitle": "Sexuality",
+      "vsiAuthor": "Veronique Mottier",
+      "rationale": "Relevant to diseases of the reproductive system (section F.6) including sexually transmitted diseases (section F.6.b)."
+    },
+    {
+      "vsiTitle": "Ageing",
+      "vsiAuthor": "Nancy Pachana",
+      "rationale": "Relevant to age-related diseases and metabolic disorders (section D.2) as well as degenerative conditions across body systems."
+    },
+    {
+      "vsiTitle": "Climate change",
+      "vsiAuthor": "Mark Maslin",
+      "rationale": "Relevant to disorders caused by environmental physical agents and exposure to temperature extremes (section D.8)."
+    }
+  ]
+}

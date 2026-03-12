@@ -1,0 +1,603 @@
+{
+  "sectionCode": "124",
+  "sectionCodeDisplay": "124",
+  "title": "Heat, Thermodynamics, and the Nonsolid States of Matter",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The principles of thermodynamics",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The description of physical phenomena based on the concepts of system, state of a system, and changes of state",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The first law of thermodynamics",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The second law of thermodynamics",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Stable equilibrium",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Equations relating properties of systems that are in, or are passing through, stable equilibrium states",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Temperature considered as the potential governing the flow of energy between systems",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Heat",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The definition of heat as a form of energy transferred from one body to another under the influence of a difference in temperature",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Theories of heat: the phlogiston theory, the caloric theory, the kinetic molecular theory",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Heat transfer in matter: heat conductivity in solids, convection in liquids and gases, heat transfer in boiling liquids, evaporation and condensation",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Technical applications of heat energy [see 721.B.7. and 725.A.5.a.]",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Heat and its relation to entropy, work, and change of energy",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Thermodynamic relations in simple systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The Carnot cycle",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Maxwell's equations relating entropy to pressure, volume, and temperature for closed systems that assume only stable equilibrium states",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Phase changes and equilibria",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Simple one-component systems: processes at constant volume and at constant pressure; the equation of state, which relates pressure, volume, and temperature for stable equilibrium states",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Simple multicomponent systems: the Maxwell relations, Dalton's law for mixture of gases, Raoult's law and Henry's law for ideal solutions",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Bulk flow",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Equilibrium in chemical reactions [see 123.B.3.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The third law of thermodynamics",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The effects of applied force fields on simple systems",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Steady rate processes; e.g., systems approaching stable equilibrium, flow of a substance through a barrier",
+          "children": []
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "Statistical thermodynamics",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The laws of thermodynamics that consider the detailed microscopic structure of physical systems and the states of such systems",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Statistics of grand systems",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The gaseous state of matter",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature and properties of a gas",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The thermodynamic approach to gases: the macroscopic view that deals with bulk measurable properties",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The simple gas laws",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The thermal equation of state for perfect gases",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Empirical equations of state for real gases",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The particle-description approach to gases",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The distribution function",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The Boltzmann transport equation and the single-particle distribution function",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The N-particle distribution function and the thermodynamic-equilibrium properties and transport properties of dense gases",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The behaviour of a gas at the hydrodynamic and thermal relaxation stages",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The liquid state of matter",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The behaviour and properties of liquids at equilibrium",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The molecular structure of liquids based on distribution functions, which measure the probable distribution of some property of molecules through the liquid",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Properties of liquids",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Transport properties",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Acoustic properties: propagation of sound waves",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Electrical and magnetic properties",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Thermodynamic properties",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Optical properties",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Surface tension",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Solutions and solubility",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General classes of solutions: electrolytes and nonelectrolytes, solutions of weak electrolytes, endothermic and exothermic solutions",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Properties of solutions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Composition ratios: molarity, molality, mole fraction",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Equilibrium properties: correlation of the vapour pressure of a solution to its composition",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Colligative properties: rise in boiling point, decrease in freezing point, osmotic pressure",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Transport properties: viscosity, thermal conductivity, diffusivity",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Thermodynamic and molecular aspects of solvent and solute interactions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Energy considerations: entropy, enthalpy, Gibbs free energy",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Effects of molecular structure and weak intermolecular forces",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Effects of chemical interactions; e.g., hydrogen bonding, chemical combinations",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "General theories of solution: the prediction of solubility and solution properties",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Solutions of nonelectrolytes: Raoult's law and Henry's law for ideal solutions; theoretical expressions for the excess properties of regular athermal, associated, and solvated solutions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Solutions of electrolytes: Debye-Huckel theory and modifications, Arrhenius dissociation theory",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Effects of temperature and pressure on the solubility of solids and gases",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Physical effects at surfaces",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Surface tension and surface energy: cohesion and adhesion",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Adsorption on liquid and solid surfaces",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Tribological phenomena, the mechanical and physical effects at interfaces: friction, wear, lubrication",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Colloids: the kinds of dispersions and their properties and preparation",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Irreversible colloidal systems: lyophobic sols, emulsions, foams, pastes, gels",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Reversible colloidal systems: solutions of polymers and proteins, solutions of soaps and dyes",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "The plasma state of matter: completely ionized gases interacting with magnetic and electric fields",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Basic plasma properties and parameters: electrical quasineutrality, electron density, kinetic temperature, particle velocities, magnetic and electric field strengths",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Elastic and inelastic collisions of plasma particles",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Radiation from plasmas; e.g., X rays, synchrotron radiation, excitation radiation",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The formation of plasmas",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The behaviour of plasmas in magnetic and electric fields",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The determination of plasma variables",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Fluidlike behaviour in plasmas",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Applications of plasmas; e.g., power production, jet propulsion [see 112.G.4., 721.B.8.a„ and 721.C.3.]",
+          "children": []
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "The existence of plasmas in nature: in the extraterrestrial medium, in the Sun and stars, on Earth",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "The properties of matter at extreme conditions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Properties of matter at low temperatures",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Effects of low temperature on entropy, heat capacity, magnetic properties, and conductivity",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Special physical phenomena at very low temperatures: superconductivity, superfluidity",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Special methods for obtaining and characterizing low temperatures: adiabatic cooling, adiabatic dilution",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Special properties of matter at high temperatures",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Effects of high pressure on the physical, chemical, electronic, and magnetic properties of matter",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "Transport phenomena",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The kinetic molecular theory of the transport properties of gases, liquids, suspensions, and polymers",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Phenomenological expressions of transport",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Hydrodynamic aspects of transport phenomena",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.4.i.iv",
+      "targetSection": "721",
+      "targetPath": "B.7"
+    },
+    {
+      "fromPath": "A.5.g",
+      "targetSection": "123",
+      "targetPath": "B.3"
+    },
+    {
+      "fromPath": "F.8",
+      "targetSection": "112",
+      "targetPath": "G.4"
+    },
+    {
+      "fromPath": "H.4",
+      "targetSection": "10/32",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "of matter",
+    "Matter: Its Properties, States, Varieties, and Behaviour",
+    "Physical Sciences, The",
+    "Thermodynamics, Principles of"
+  ],
+  "partNumber": 1,
+  "divisionId": "1-02"
+}

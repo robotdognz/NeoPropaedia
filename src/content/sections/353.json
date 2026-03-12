@@ -1,0 +1,87 @@
+{
+  "sectionCode": "353",
+  "sectionCodeDisplay": "353",
+  "title": "Hazards of Life in the Biosphere: Disease and Death",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Disease as a departure from the \"normal\" state, or a disruption of homeostasis; death as the irreparable disruption of life processes",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature of noncommunicable disease: metabolic defects, environmental hazards",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The nature of communicable, or contagious, disease",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The multifactorial concept of contagious disease",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Endemic disease and epidemic disease",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Immunity [see also 422.C.2 .]",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Control of disease: prevention, treatment",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Plant diseases",
+      "children": []
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Animal diseases",
+      "children": []
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.3",
+      "targetSection": "422",
+      "targetPath": "C.2"
+    },
+    {
+      "fromPath": "D",
+      "targetSection": "423",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Death",
+    "Disease",
+    "Immunity"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-05"
+}

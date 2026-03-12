@@ -1,0 +1,227 @@
+{
+  "sectionCode": "534",
+  "sectionCodeDisplay": "534",
+  "title": "The Distribution of Income and Wealth",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The distribution of wealth and income by categories of the population",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature and measurement of wealth and income",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Methods of classifying the distribution of wealth and income",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Distribution by factor shares: wages, profits, interest, and rent",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Distribution according to the number of persons in various classes of wealth and income",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Patterns of wealth and income distribution among various countries and among persons within a country",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Frequency distributions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Comparisons among wealth and income groups",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The routes by which government affects the distribution of wealth and income",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The national budget as the program of the government's revenues and expenditures",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The nature and purposes of taxation",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Principles of taxation; e.g., adequacy, adaptability, universality, ability to pay",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The effect of taxes on the distribution of income: progressive and regressive taxes",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The burden of taxation: the problem of shifting and incidence",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Characteristics of national tax systems: comparisons of tax burdens",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Kinds of taxes",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Taxes on real and personal property",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Sales and excise taxes",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Tariffs and export taxes",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Taxes on personal income and capital gains",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Taxes on corporate income and excess profits",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Death and gift taxes",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Social security and payroll taxes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Transfers and subsidies",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Interest payments on the public debt [see B.5., below]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Subsidies and tax concessions",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Government-sponsored and government-administered welfare programs",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The financing of budgetary deficits and surpluses",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Direct controls over the private sector",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Price, wage, and profit control",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Control of restrictive practices: antitrust legislation, regulations imposed upon public utilities, labour legislation imposed on unions [see also 532.C.l.d.]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Economic mobilization for war",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.6.b",
+      "targetSection": "532",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "B.7",
+      "targetSection": "10/36",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Economic Theory Social Sciences, The",
+    "Government Finance Social Welfare",
+    "International Trade Taxation",
+    "Land Reform and Tenure"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-03"
+}

@@ -1,0 +1,253 @@
+{
+  "sectionCode": "352",
+  "sectionCodeDisplay": "352",
+  "title": "Biological Populations and Communities",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Biological populations",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The study of populations [see 10/34.B.4.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The measurable characteristics of biological populations",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Age, sex, and genetic differences and their distribution",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Numbers and density: the effects of natality and mortality, the reproductive rate and death rate",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Growth of populations: growth form and carrying capacity",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Fluctuations in stable populations: variations in population size",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Movements: migration; emigration; dispersion; dispersal; the influence of topographical, climatic, and biological barriers",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Interactions of populations [see B., below]",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Factors affecting the structure of human populations [see 524.A.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Biotic interactions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Intraspecific interactions: positive and negative interactions of individuals within a species",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Interspecific interactions: interactions among members of different species",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The range of interspecies associations",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Negative interactions, in which one or both populations are harmed: consumption, parasitic interactions, amensalism and antagonism",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Positive interactions, in which one or both populations are benefited: commensalism, mutualism",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Neutralistic interactions",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Interactions between populations of different species and the ecological, evolutionary, and biogeographical aspects of interaction on the population level",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Biological communities",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Community structure",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Vertical and horizontal patterns: the influence of variations in environmental conditions on the stratification and zonation of organisms",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Time relations: periodicity and population changes in the community",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Interactions in the community: heterotrophic nutrition, predation, symbiosis",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Niches and species diversity",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Ecotones and the \"edge effect\"",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Community function: energy flow",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Community succession: growth toward a stable, mature condition",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Communities in space",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Landscape patterns: the habitats of a landscape as forming a pattern of environmental gradients",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Climax interpretation: monoclimax theory, polyclimax theory, and climax pattern hypothesis",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Community gradients: coenclines",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Community classification and its bases",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The association as the unit of classification",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The biome or formation as the unit of classification",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Other bases for classification: e.g., ecological succession, habitat, community metabolism",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1",
+      "targetSection": "10/34",
+      "targetPath": "B.4"
+    },
+    {
+      "fromPath": "A.7",
+      "targetSection": "524",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "C.6",
+      "targetSection": "242",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.6",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Behaviour, Animal",
+    "Biosphere, The"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-05"
+}

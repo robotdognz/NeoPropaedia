@@ -1,0 +1,145 @@
+{
+  "sectionCode": "627",
+  "sectionCodeDisplay": "627",
+  "title": "Sculpture",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The art of sculpture",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Elements of design and principles of composition",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The iconography of sculpture",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Materials of sculpture; e.g., stone, wood, metal, clay, ivory, plaster, concrete, glass fibre, wax, paper",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Tools, methods, and techniques of sculpture; e.g., carving, modeling, casting and molding, surface finishing",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The diverse kinds of sculpture",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Kinds of sculpture distinguished by their spatial context; e.g., sculpture in the round, relief sculpture, kinetic sculpture, environmental sculpture",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Kinds of sculpture distinguished by subject matter",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Representational sculpture; e.g., human figures, devotional images and objects, portraits, still lifes, animal figures",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Nonrepresentational sculpture",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Decorative sculpture",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Kinds of sculpture distinguished by their special uses or functions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Ceremonial and ritualistic objects",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Coins and medals",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Commemorative sculpture; e.g., monuments, tombs, tombstones, stelae [see also 626.A.5.b.]",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Masks",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Primitive and folk sculpture",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The history of sculpture",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Western sculpture",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.3.c",
+      "targetSection": "626",
+      "targetPath": "A.5.b"
+    }
+  ],
+  "macropaediaReferences": [
+    "African Arts Middle Eastern Arts and Architecture,",
+    "American Peoples, Arts of Native Ancient",
+    "Central Asian Arts Oceanic Arts",
+    "East Asian Arts Sculpture, The Art of",
+    "Egyptian Arts and Architecture, Ancient Sculpture, The History of Western",
+    "Folk Arts South Asian Arts",
+    "Islamic Arts Southeast Asian Arts",
+    "Masks"
+  ],
+  "partNumber": 6,
+  "divisionId": "6-02"
+}

@@ -1,0 +1,204 @@
+{
+  "sectionCode": "522",
+  "sectionCodeDisplay": "522",
+  "title": "The Group Structure of Society",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The various types of groups: patterns of group relations",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Classifications of groups",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The modern family: its organization and functions",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Special-interest groups [see also 541.B.3.]",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Minorities and ethnic groups",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The social effects of racial and ethnic prejudice",
+      "children": []
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Special social concerns",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Adolescence",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Old age",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Women's social and legal status",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Cultural minorities [see A.4., above]",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Poverty",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Criminality and delinquency",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Sexual orientation",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Prostitution",
+          "children": []
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "Drug and alcohol abuse",
+          "children": []
+        },
+        {
+          "level": "10",
+          "levelType": "numeric",
+          "text": "Suicide",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Social service: organized public and private activities to alleviate human wants and needs",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The background of social and welfare services: modem and historical influences",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Fields of service",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Family welfare",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Child welfare",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Youth welfare",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Group welfare",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Disaster relief",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Community development",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Medical and psychiatric social services",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "School social services [see also 561.C.4.]",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.3",
+      "targetSection": "541",
+      "targetPath": "B.3"
+    },
+    {
+      "fromPath": "D.2.h",
+      "targetSection": "561",
+      "targetPath": "C.4"
+    },
+    {
+      "fromPath": "D.2.i",
+      "targetSection": "10/36",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Alcohol and Drug Consumption Social Sciences, The",
+    "Crime and Punishment Social Welfare",
+    "Family and Kinship",
+    "Sex and Sexuality"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-02"
+}

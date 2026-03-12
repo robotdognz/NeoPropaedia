@@ -1,0 +1,231 @@
+{
+  "sectionCode": "544",
+  "sectionCodeDisplay": "544",
+  "title": "International Relations: Peace and War",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The politics of international relations",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Transnational political parties and movements, e.g., Pan- Africanism, Pan-Arabism, Pan-Slavism, European federalism",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "International and nonnational organizations and agencies, e.g., the United Nations, Red Cross and Red Crescent",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "International treaties and agreements",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Nonaggression treaties: collective security",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Treaties terminating wars",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Arms limitation and disarmament treaties",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Territorial treaties regarding the sale or transfer of land; treaties granting rights of access and other uses of territory; treaties settling border disputes",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Economic and commercial treaties [see 533.F.3.]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Communications and transportation treaties",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Cultural exchange treaties",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Foreign policy and diplomacy",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Foreign policy: its aims and compatibility with national and humanitarian interests",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The use of diplomacy in the negotiation of international disputes; public international conferences, arbitration, and mediation; secret diplomacy",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Foreign aid; government-sponsored organizations that affect internal relations in nonpolitical spheres, e.g., economic, cultural, technological organizations",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The use of intelligence and counterintelligence activities in the preservation of national security and the conduct of international affairs",
+      "children": []
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "War among states",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Degrees and kinds of war: limited war; total war; ethnic or tribal wars; religious wars; national, regional, and worldwide wars; civil wars and insurrections; guerrilla warfare",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The conduct of war",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Military strategy",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Military tactics",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Military logistics",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Effects of psychological warfare on troops and civilians during wartime",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "International law relating to the treatment of persons during wartime [see also 552. B.4.]",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "The management of military expenditures",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Armed forces: military organizations designed for conquest or defense",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Types of soldiers: e.g., professional, volunteer, conscripted, and mercenary",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Historical development of organized military forces",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Establishment and maintenance of various branches of the armed forces",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Ground forces",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Naval and amphibious forces",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Air forces",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Various auxiliary branches: e.g., police, intelligence, logistics, communications, medical, and legal corps",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.5",
+      "targetSection": "533",
+      "targetPath": "F.3"
+    },
+    {
+      "fromPath": "E.2.e",
+      "targetSection": "552",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Diplomacy United Nations",
+    "Intelligence and Counterintelligence War, The Theory and Conduct of",
+    "Social Sciences, The"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-04"
+}

@@ -1,0 +1,162 @@
+{
+  "sectionCode": "342",
+  "sectionCodeDisplay": "342",
+  "title": "Development and Range of Behavioral Capacities: Individual and 13",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Basic behavioral activities of individuals",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Food getting",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Locomotion",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Avoidance behaviour",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Aggressive behaviour: attack and defensive threats",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Behaviour related to habitat",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Behaviour related to reproduction",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Higher behavioral characteristics of individual animals",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Simple nonassociative learning; e.g., habituation, sensitization",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Associative learning; e.g., classical and instrumental, or operant, conditioning",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Spatial learning; e.g., maze learning, navigation",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Perceptual learning: imitation and observational learning; e.g., song learning, imprinting",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Complex problem solving",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Discriminations of relational and abstract stimuli",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Generalized rule learning",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Insight and reasoning",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Language learning",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The behaviour of animals in groups",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Distinctions between groups of social animals and groups of nonsocial ones",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Animal communication",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The range of social behaviour among social and nonsocial animals",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Dynamics of social behaviour",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "D",
+      "targetSection": "341",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "D",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "individual and group behaviour",
+    "Behaviour, Animal",
+    "Learning, Animal"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-04"
+}

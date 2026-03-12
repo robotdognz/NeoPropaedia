@@ -1,0 +1,110 @@
+{
+  "sectionCode": "10/11",
+  "mappings": [
+    {
+      "vsiTitle": "Logic",
+      "vsiAuthor": "Graham Priest",
+      "rationale": "Directly covers the nature and varieties of logic, including its history and philosophical underpinnings, central to both parts A and B of this section."
+    },
+    {
+      "vsiTitle": "Aristotle",
+      "vsiAuthor": "Jonathan Barnes",
+      "rationale": "Aristotle founded the logic of predicates, developed syllogistic and modal logic, and is the pivotal figure in ancient logic covered in section A.1.b."
+    },
+    {
+      "vsiTitle": "Ancient philosophy",
+      "vsiAuthor": "Julia Annas",
+      "rationale": "Covers the philosophical context of ancient logic including Socrates, Plato, and the Stoics, who are key contributors to ancient logic and the logic of propositions."
+    },
+    {
+      "vsiTitle": "Socrates",
+      "vsiAuthor": "C. C. W. Taylor",
+      "rationale": "Socrates is identified as a precursor of ancient logic in section A.1.a, contributing to theories of language and the axiomatic method."
+    },
+    {
+      "vsiTitle": "Plato",
+      "vsiAuthor": "Julia Annas",
+      "rationale": "Plato is cited as a precursor of ancient logic in section A.1.a, contributing foundational theories of language relevant to the development of logic."
+    },
+    {
+      "vsiTitle": "Mathematics",
+      "vsiAuthor": "Timothy Gowers",
+      "rationale": "The section covers the rise of mathematical logic and the relationship between logic and the foundations of mathematics, including Frege, Cantor, and Boole's algebra of logic."
+    },
+    {
+      "vsiTitle": "Medieval Philosophy",
+      "vsiAuthor": "John Marenbon",
+      "rationale": "Medieval logic is a major topic (section A.2), covering Arabic contributions, the old and new logic after Aristotle's Organon, and medieval theories of language."
+    },
+    {
+      "vsiTitle": "Philosophy in the Islamic World",
+      "vsiAuthor": "Peter Adamson",
+      "rationale": "Section A.2.a specifically mentions Arabic contributions to medieval logic development, making Islamic philosophical traditions directly relevant."
+    },
+    {
+      "vsiTitle": "Indian philosophy",
+      "vsiAuthor": "Sue Hamilton",
+      "rationale": "Section A.5.a covers Indian logic, its origins in scriptural commentaries, special problems in grammar, and interest in negation."
+    },
+    {
+      "vsiTitle": "Confucianism",
+      "vsiAuthor": "Daniel K. Gardner",
+      "rationale": "Section A.5.b discusses Chinese logic originating in controversies between Confucianism, Taoism, and Moism, and its neglect after Neo-Confucianism."
+    },
+    {
+      "vsiTitle": "Wittgenstein",
+      "vsiAuthor": "A. C. Grayling",
+      "rationale": "Wittgenstein made foundational contributions to 20th-century logic and the philosophy of logic, including work on logical semantics and the limits of logic."
+    },
+    {
+      "vsiTitle": "Russell",
+      "vsiAuthor": "A. C. Grayling",
+      "rationale": "Russell's Logicism and theory of types are explicitly discussed in section A.4.a as a major 20th-century development in logic."
+    },
+    {
+      "vsiTitle": "Gödel's Theorem",
+      "vsiAuthor": "A. W. Moore",
+      "rationale": "Gödel's incompleteness theorems are specifically cited in section B.1.b as a central feature and problem of the philosophy of logic."
+    },
+    {
+      "vsiTitle": "Leibniz",
+      "vsiAuthor": "Maria Rosa Antognazza",
+      "rationale": "Leibniz is cited in section A.3.b for his contributions to mathematical logic during the Enlightenment, including his general calculus of reasoning."
+    },
+    {
+      "vsiTitle": "Philosophy of science",
+      "vsiAuthor": "Samir Okasha",
+      "rationale": "The philosophy of logic intersects with philosophy of science on questions of computability, logical semantics, and the limitations of logic discussed in section B."
+    },
+    {
+      "vsiTitle": "Metaphysics",
+      "vsiAuthor": "Stephen Mumford",
+      "rationale": "Section B.2.b addresses problems of ontology in the philosophy of logic, including individuation and existence, which are core metaphysical concerns."
+    },
+    {
+      "vsiTitle": "Analytic Philosophy",
+      "vsiAuthor": "Michael Beaney",
+      "rationale": "Analytic philosophy has been deeply intertwined with developments in formal logic throughout the 20th century, including work on logical semantics and alternative logics."
+    },
+    {
+      "vsiTitle": "Stoicism",
+      "vsiAuthor": "Brad Inwood",
+      "rationale": "The Stoics are specifically credited in section A.1.d with founding the logic of propositions, a major branch of formal logic."
+    },
+    {
+      "vsiTitle": "Descartes",
+      "vsiAuthor": "Tom Sorell",
+      "rationale": "The section covers logic in the Renaissance (A.3.a) including the Port-Royal logic, which was deeply influenced by Cartesian methodology."
+    },
+    {
+      "vsiTitle": "Thomas Aquinas",
+      "vsiAuthor": "Fergus Kerr",
+      "rationale": "Aquinas engaged extensively with Aristotelian logic in his Scholastic method, relevant to the medieval logic developments in section A.2."
+    },
+    {
+      "vsiTitle": "Presocratic Philosophy",
+      "vsiAuthor": "Catherine Osborne",
+      "rationale": "The Presocratics contributed early forms of reasoning and argumentation that set the stage for the development of formal logic discussed in section A.1."
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "sectionCode": "626",
+  "sectionCodeDisplay": "626",
+  "title": "Architecture, Garden and Landscape Design, and Urban Design",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The art of architecture",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Elements of design and principles of composition",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Aesthetic aspects of building materials and constructional systems used in architecture [for technological aspects, see 733]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Building materials; e.g., stone, brick, wood, iron and steel, concrete ' , b. Constructional systems; e.g., load-bearing wall and nonload-bearing wall, post and lintel, arch, vault, dome, truss, framed structures",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Diverse structural elements and details of buildings; e.g., floors, walls, ceilings, roofs, windows, doors, stairways",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Architectural ornamentation: mimetic ornament, applied ornament, organic ornament",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Diverse kinds of architecture and building types determined by their functions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Domestic, or residential, architecture; e.g., houses, apartments, castles, hotels",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Religious and commemorative architecture; e.g., temples, churches, synagogues, mosques, tombs, shrines, memorials, monuments",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Governmental architecture; e.g., town halls, capitols, courthouses, post offices",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Recreational architecture; e.g., theatres, auditoriums, athletic facilities, museums, libraries",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Educational and public welfare architecture; e.g., schools and universities, hospitals, prisons, aqueducts",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Commercial and industrial architecture; e.g., office buildings, banks, stores, factories, refineries",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Agricultural architecture; e.g., barns, stables, silos",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Military architecture; e.g., forts, castles, armouries [see also 736]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Primitive and folk architecture [see also 613]",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The history of architecture",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Western architecture",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The architecture of non-Western peoples [see also 613]",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Garden and landscape design",
+      "children": []
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.2",
+      "targetSection": "733",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.5.h",
+      "targetSection": "736",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.6",
+      "targetSection": "613",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.7.b",
+      "targetSection": "613",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C",
+      "targetSection": "524",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C",
+      "targetSection": "737",
+      "targetPath": "C.2"
+    },
+    {
+      "fromPath": "C",
+      "targetSection": "733",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "African Arts Folk Arts",
+    "American Peoples, Arts of Native Garden and Landscape Design",
+    "Architecture, The Art of Middle Eastern Arts and",
+    "Architecture, The History of Western Architecture, Ancient",
+    "Central Asian Arts Oceanic Arts",
+    "East Asian Arts South Asian Arts",
+    "Egyptian Arts and Architecture, Ancient Southeast Asian Arts"
+  ],
+  "partNumber": 6,
+  "divisionId": "6-02"
+}

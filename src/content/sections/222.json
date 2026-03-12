@@ -1,0 +1,336 @@
+{
+  "sectionCode": "222",
+  "sectionCodeDisplay": "222",
+  "title": "The Hydrosphere: the Oceans, Freshwater Bodies, and Ice Masses",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The distribution of water in the hydrosphere",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Saltwater bodies",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Oceans and marginal seas",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Gulfs and bays",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Freshwater bodies",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Rivers, lakes, and marginal bodies such as estuaries and swamps [see 232.C.1., 2., and 3.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Groundwater contained within the pores of rocks",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Ice",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Ice sheets and glaciers [see also 212.G.5. and 232.C.6.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Icebergs and pack ice",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "River ice and lake ice",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Water in the biosphere [see 351]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The physical and chemical properties of seawater [see also 241.C.]",
+      "children": []
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The physical and chemical properties of freshwater",
+      "children": []
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The hydrologic cycle",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The general nature of the hydrologic cycle: the types of processes involved and their complex interaction, scales of magnitude of the interrelated components of the global hydrologic system, influences of climate and other factors",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The roles of evaporation and transpiration in the hydrologic cycle [see also 336.B.4.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The role of water vapour in the hydrologic cycle: condensation, precipitation [see also 223. A. and E.l.e.]",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Runoff and subsurface water in the hydrologic cycle [see also 232. A.4.)",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The role of ice in the hydrologic cycle [see also A.3., above]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Water resources and supply [see also 737.A.1.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Ocean-atmosphere interactions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Radiation, heat, and water budgets",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Oceanic waters as an important sink for carbon dioxide",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Impact of ocean-atmosphere interactions on climate and weather",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Link between ocean surface temperature and climate anomalies",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "El Nino/Southern Oscillation (ENSO)",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Moderating effects of the Gulf Stream system on climate",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Effects of human activities on the hydrosphere; e.g., cultural eutrophication; acidification of precipitation resulting from the emission of sulfur dioxide and nitrogen oxides; potential disruption of the water balance due to greenhouse warming induced by carbon dioxide buildup",
+      "children": []
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "Waves in the hydrosphere [see also 126. F., 128. A., and 232]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Surface waves: simple waves, ocean waves, tsunamis",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Internal waves",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Tides [see also 133.E.7.C.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "Ocean currents",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The distribution of ocean currents",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The forces that cause and affect ocean currents: pressure gradients, Coriolis force, frictional forces [see also 21 l.A.2.a.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The general surface circulation",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Subsurface ocean currents",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The general deep-sea circulation",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Tidal currents: periodic currents associated with tides in the sea",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.2.a",
+      "targetSection": "232",
+      "targetPath": "C.1"
+    },
+    {
+      "fromPath": "A.3.a",
+      "targetSection": "212",
+      "targetPath": "G.5"
+    },
+    {
+      "fromPath": "A.4",
+      "targetSection": "351",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B",
+      "targetSection": "241",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "D.2",
+      "targetSection": "336",
+      "targetPath": "B.4"
+    },
+    {
+      "fromPath": "D.3",
+      "targetSection": "223",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D.4",
+      "targetSection": "232",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D.6",
+      "targetSection": "737",
+      "targetPath": "A.1"
+    },
+    {
+      "fromPath": "G",
+      "targetSection": "126",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "G.3",
+      "targetSection": "133",
+      "targetPath": "E.7.C"
+    },
+    {
+      "fromPath": "H.2",
+      "targetSection": "21",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "H.4.c",
+      "targetSection": "231",
+      "targetPath": "C.3"
+    },
+    {
+      "fromPath": "H.4.c",
+      "targetSection": "10/33",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "masses",
+    "Earth, The: Its Properties,",
+    "Lakes",
+    "Composition, and Structure",
+    "Oceans",
+    "Hydrosphere, The",
+    "Rivers",
+    "Ice and Ice Formations"
+  ],
+  "partNumber": 2,
+  "divisionId": "2-02"
+}

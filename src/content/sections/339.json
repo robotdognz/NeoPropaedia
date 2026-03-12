@@ -1,0 +1,98 @@
+{
+  "sectionCode": "339",
+  "sectionCodeDisplay": "339",
+  "title": "Heredity: the Transmission of Traits",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Basic features of heredity",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Early speculations on the nature of heredity",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Mendelian genetics: Mendel's experiments and their significance, the universality of Mendel's laws, interactions among genes and their variant forms (alleles)",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The combined action of heredity and environment in producing an organism",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The physical basis of heredity",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Chromosomes and genes: the cellular basis of heredity",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Molecular genetics: the chemical and molecular nature of genes, the genetic code and its mutations, the expression and regulation of genes, applications of molecular genetics",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Heredity and evolution [see also 312.C.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Population genetics: the gene pool, the Hardy- Weinberg principle, changes in gene frequencies",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Natural selection as an agent of evolutionary change",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Artificial selection for genetic improvements of selected organisms: domesticated animals, cultivated plants, humankind [see also 355. B.3.]",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C",
+      "targetSection": "312",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "C.3",
+      "targetSection": "355",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.4",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Genetics and Heredity, The Principles of"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-03"
+}

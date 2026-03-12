@@ -1,0 +1,273 @@
+{
+  "sectionCode": "722",
+  "sectionCodeDisplay": "722",
+  "title": "Technology of Tools and Machines",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Hand tools",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Early history of hand tools: Paleolithic and Neolithic stone tools, development of metal tools",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Basic types of hand tools",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Percussive tools: hammers, axes",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Cutting, drilling, and abrading tools: knives, saws, files",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Screw-based tools: screwdrivers, wrenches",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Measuring and defining tools: levels, dividers, rules",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Tool auxiliaries: workbench, vise",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Power-driven hand tools: electric drills and circular saws, pneumatic hammers and riveters",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Machines and machine components",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Simple machines: lever, wedge, wheel and axle, pulley, and screw",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Machine mechanisms: devices that transmit motion by means of flexible connectors, rigid connecting links, or direct contact",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Machine components",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Gears",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Cams",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Linkages",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Flywheels",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Belt and chain drives",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Couplings",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Clutches",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Brakes",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Bearings",
+              "children": []
+            },
+            {
+              "level": "j",
+              "levelType": "lowercase",
+              "text": "Shafts and shaft accessories",
+              "children": []
+            },
+            {
+              "level": "k",
+              "levelType": "lowercase",
+              "text": "Screws",
+              "children": []
+            },
+            {
+              "level": "l",
+              "levelType": "lowercase",
+              "text": "Springs",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Friction accommodation and reduction",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Bearings [see above]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Lubricants and their functions, types, and properties",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Machine tools: stationary power-driven machines for shaping and forming parts made of metal or other materials",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "History and characteristics of machine tools",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Operation of metal-cutting tools",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Basic machine tools: turning machines, shapers and planers, drilling machines, milling machines, grinding machines, power saws, and presses",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Modifications of basic machines; e.g., turret lathes, production millers",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Special-purpose machines; e.g., gear-cutting machines, broaching machines",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Computer-aided machining",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Computer numerical control",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Computer-aided design and computer-aided manufacturing (CADCAM)",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Robots",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Computer-integrated manufacturing",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Nonconventional methods of machining",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Electrical methods: electron-beam machining, electrical-discharge machining, electrochemical machining, ion beam machining, laser machining, plasma arc machining",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "E.2",
+      "targetSection": "10/37",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Tools"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-02"
+}

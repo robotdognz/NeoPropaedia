@@ -1,0 +1,194 @@
+{
+  "sectionCode": "711",
+  "sectionCodeDisplay": "711",
+  "title": "Technology: Its Scope and History",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "General conceptions or definitions of technology",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Relations between technology and other spheres of contemporary life",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Technology and wealth",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Technology and war [see 736]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Technology and education",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Technology and art [see also 612.D.4.]",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Technology and social institutions [see also 512. B.3.]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Technology and the underdeveloped regions: the export of Western technology [see also 512.B.3.]",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Effects of technology on the environment [see also 355.B.1.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "History of technology: sociocultural consequences of technological changes [see also 512.B.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Technology in the ancient world",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The beginnings of technology (to c. 3000 bc): emergence of the earliest communities, use of stone tools and weapons, beginnings of mining and agriculture",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The urban revolution (c. 3000-500 bc): early civilization in the valleys of the Nile and Tigris-Euphrates river systems, waterworks for irrigation, urban manufacturing",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Technological achievements of Greece and Rome (500 bc-ad 500): mastery of iron, invention of mechanical contrivances, architectural and constructional works",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Technology from the Middle Ages to 1750",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Medieval advances (ad 500-1500): harnessing of wind power and waterpower; construction of canals and bridges; construction of full-rigged ships; invention of printing",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The emergence of Western technology (1500-1750): invention of early scientific instruments and tools, birth of steam power, development of agricultural and constructional techniques",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The Industrial Revolution (1750-1900)",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Advances in power technology: development of steam power, internal-combustion engine, and electric power; exploitation of mineral and fossil fuels",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Development of industries: iron and steel, textiles, chemicals, transportation, communications",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Technology in the 20th century",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Early developments: exploitation of hydroelectric power; synthesizing of fibres, plastics, rubber, dyes, and drugs; rationalization of production",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Space Age technology: nuclear power, automation and the electronic digital computer, rocketry and space exploration, advances in agricultural technology, advances in transportation and communication",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.2",
+      "targetSection": "736",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.4",
+      "targetSection": "612",
+      "targetPath": "D.4"
+    },
+    {
+      "fromPath": "B.5",
+      "targetSection": "512",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.6",
+      "targetSection": "512",
+      "targetPath": "B.3"
+    },
+    {
+      "fromPath": "B.7",
+      "targetSection": "355",
+      "targetPath": "B.1"
+    },
+    {
+      "fromPath": "C",
+      "targetSection": "512",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "C.4.c",
+      "targetSection": "10/37",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Edison",
+    "Technology, The History of"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-01"
+}

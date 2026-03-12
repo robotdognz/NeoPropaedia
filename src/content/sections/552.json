@@ -1,0 +1,188 @@
+{
+  "sectionCode": "552",
+  "sectionCodeDisplay": "552",
+  "title": "Branches of Public Law, Substantive and Procedural",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Laws defining and implementing the authority and power of the state",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Basic laws governing the organization and functions of the state: constitutional law",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Laws governing public administration: regulation of the organization, powers, duties, and functions of public administrative authorities",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Laws governing relations among sovereign states",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Sources and concepts of international law",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The attempt to create a supranational legislative and executive authority: the United Nations",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The attempt to create a supranational judicial authority",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The attempt to impose rules of warfare",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The attempt to limit and punish war crimes and crimes against peace and humanity",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The attempt to preserve the peaceful uses and exploration of outer space",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Laws governing acts viewed as crimes",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Principles and doctrines of criminal law: comparisons between common law and civil law systems [see also 543.A.5.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Laws governing offenses committed by military forces and other persons subject to military discipline",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Laws promoting the public welfare",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Laws providing for general social security and welfare",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Laws promoting public health and safety",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Laws regulating the health, safety, and welfare of workers",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Laws governing taxation [see also 534.B.2. and 3.]",
+      "children": []
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Laws of judicial procedure",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The organization and administration of the legal system: the courts and the judiciary",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Methods and procedures of the law",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Criminal procedure",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Civil procedure [see 553. E.]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Administrative procedure",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C.1",
+      "targetSection": "543",
+      "targetPath": "A.5"
+    },
+    {
+      "fromPath": "E",
+      "targetSection": "534",
+      "targetPath": "B.2"
+    },
+    {
+      "fromPath": "F.2.b",
+      "targetSection": "553",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "F.3",
+      "targetSection": "551",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Constitutional Law Public Administration",
+    "Criminal Law Taxation",
+    "International Law United Nations",
+    "Judicial and Arbitrational Systems War, The Theory and Conduct of",
+    "Procedural Law"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-05"
+}

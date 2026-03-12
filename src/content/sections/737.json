@@ -1,0 +1,137 @@
+{
+  "sectionCode": "737",
+  "sectionCodeDisplay": "737",
+  "title": "Technology of the Urban Community",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Basic engineering services of the city",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Water-supply systems",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Sanitation systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Development and operation of sewage disposal systems",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Construction and operation of street clearance and refuse disposal systems",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Urban transportation systems",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Interurban transportation systems [see 734]",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Technology of electric power [see 721.C.7.]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Fire prevention and control",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Technology of the basic social services of the city",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Police technology",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Traffic control technology [see 734. H.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Crime control technology",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Design, construction, and maintenance of recreational facilities; e.g., parks, stadiums, racetracks, planetariums, aquariums",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Technological responses to new urban problems",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Control of air, water, land, and other pollution",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.4",
+      "targetSection": "734",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.5",
+      "targetSection": "721",
+      "targetPath": "C.7"
+    },
+    {
+      "fromPath": "B.1.a",
+      "targetSection": "734",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.2",
+      "targetSection": "10/37",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Conservation of Natural Resources Public Works",
+    "Police Transportation",
+    "Division III. Section 738 297"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-03"
+}

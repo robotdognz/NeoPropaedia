@@ -1,0 +1,237 @@
+{
+  "sectionCode": "331",
+  "sectionCodeDisplay": "331",
+  "title": "The Cellular Basis of Form and Function 1",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Cell theory and classification",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The cell theory",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Historical background",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Challenges to and revisions of the cell theory in the light of later knowledge",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Classification of cells",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "General features: comparisons between cells and viruses and between procaryotic and eucaryotic cells, tissues as providing a functional classification of cells",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Cells and tissues of animals: absorptive cells, secretory cells, nerve cells, sensory cells, muscle cells, cells in supporting tissues, circulating cells, reproductive cells",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Cells and tissues of higher plants: outstanding features of the plant cell; meristematic, epidermal, and other types of plant cells",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Comparison between animal cells and plant cells",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Cell design and cell organization",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The cell as a molecular system",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Macromolecules in cells: nucleic acids, proteins, polysaccharides",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Small molecules in cells: lipids, nucleotides, amino acids, fatty acids",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Form and structure of the cell",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Sizes and shapes of cells",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Morphological elements: parts of cells--cell membrane, extracellular matrix, mitochondria, ribosomes, cytoskeleton, nuclear envelope, chromosomes, nucleolus",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Procaryotic and eucaryotic cells [see also 312.A.3.b.]",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Functional aspects of cells",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The internal environment and the cell matrix: the concept of the cell as a \"protoplasm,\" the concept of the cell as a \"bag\" containing a water solution of molecules",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Cell membranes [see 323.A.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Interplay of nucleus and cytoplasm",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Cell movement: ciliary, flagellar, and amoeboid",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Cells in combination: cohesion and communication to form tissues and multicellular organisms",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The cell cycle",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Cell growth: doubling of size, genetic replication, preparation for division",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Cell division",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Mitosis: condensation of chromosomes and dissolution of nuclear envelope; splitting of chromosomes; formation of new nuclear envelopes",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Cytokinesis: constriction of animal cell into halves by contractile ring of actin filaments, division of plant cell by formation of cell plate and new cell wall",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Meiosis: division of germ cell into gametes, or reproductive cells, each with one-half of the genetic material of parent cell",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Fertilization",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Characteristics of the mature egg",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Events of fertilization",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Biochemical analysis of the events of fertilization",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.2.c",
+      "targetSection": "312",
+      "targetPath": "A.3.b"
+    },
+    {
+      "fromPath": "C.2",
+      "targetSection": "323",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "E.4",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Cells: Their Structures and Functions"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-03"
+}

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-serif text-gray-900 bg-white antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold;
+  }
+
+  /* Section codes rendered in monospace */
+  .section-code {
+    @apply font-mono text-sm font-semibold;
+  }
+}
+
+@layer components {
+  .prose-propaedia {
+    @apply prose prose-lg prose-gray max-w-none;
+    @apply prose-headings:font-sans prose-headings:text-gray-900;
+    @apply prose-a:text-blue-700 prose-a:no-underline hover:prose-a:underline;
+  }
+}

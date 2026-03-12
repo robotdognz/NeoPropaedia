@@ -1,0 +1,185 @@
+---
+import { partUrl, divisionUrl, sectionUrl } from '../../utils/helpers';
+
+/**
+ * Navigation tree types matching the data schema.
+ */
+export interface NavSection {
+  sectionCode: string;
+  sectionCodeDisplay?: string;
+  title: string;
+}
+
+export interface NavDivision {
+  divisionId: string;
+  romanNumeral: string;
+  title: string;
+  sections: NavSection[];
+}
+
+export interface NavPart {
+  partNumber: number;
+  title: string;
+  divisions: NavDivision[];
+}
+
+interface Props {
+  navigation: NavPart[];
+  currentPartNumber?: number;
+  currentDivisionId?: string;
+  currentSectionCode?: string;
+}
+
+const { navigation, currentPartNumber, currentDivisionId, currentSectionCode } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+/**
+ * Full Tailwind class maps -- spelled out so the JIT compiler detects them.
+ */
+const partTextColors: Record<number, string> = {
+  1:  'text-part-1',
+  2:  'text-part-2',
+  3:  'text-part-3',
+  4:  'text-part-4',
+  5:  'text-part-5',
+  6:  'text-part-6',
+  7:  'text-part-7',
+  8:  'text-part-8',
+  9:  'text-part-9',
+  10: 'text-part-10',
+};
+
+const partBgLightColors: Record<number, string> = {
+  1:  'bg-part-1-light',
+  2:  'bg-part-2-light',
+  3:  'bg-part-3-light',
+  4:  'bg-part-4-light',
+  5:  'bg-part-5-light',
+  6:  'bg-part-6-light',
+  7:  'bg-part-7-light',
+  8:  'bg-part-8-light',
+  9:  'bg-part-9-light',
+  10: 'bg-part-10-light',
+};
+
+const partBorderColors: Record<number, string> = {
+  1:  'border-part-1',
+  2:  'border-part-2',
+  3:  'border-part-3',
+  4:  'border-part-4',
+  5:  'border-part-5',
+  6:  'border-part-6',
+  7:  'border-part-7',
+  8:  'border-part-8',
+  9:  'border-part-9',
+  10: 'border-part-10',
+};
+---
+
+<!-- Mobile overlay backdrop -->
+<div id="sidebar-overlay" class="hidden fixed inset-0 z-30 bg-black/40 lg:hidden"></div>
+
+<aside
+  id="sidebar-nav"
+  class="hidden lg:block w-72 xl:w-80 flex-shrink-0 border-r border-gray-200 bg-gray-50
+         lg:sticky lg:top-16 lg:h-[calc(100vh-4rem)] overflow-y-auto
+         max-lg:fixed max-lg:inset-y-16 max-lg:left-0 max-lg:z-30 max-lg:shadow-xl"
+>
+  <nav aria-label="Knowledge outline" class="py-4 px-3 font-sans text-sm">
+    {navigation.map((part) => {
+      const isCurrentPart = part.partNumber === currentPartNumber;
+      const textColor = partTextColors[part.partNumber] ?? 'text-gray-700';
+      const bgLight = partBgLightColors[part.partNumber] ?? 'bg-gray-100';
+      const borderColor = partBorderColors[part.partNumber] ?? 'border-gray-300';
+
+      return (
+        <details
+          class="group mb-1"
+          open={isCurrentPart}
+        >
+          {/* Part heading */}
+          <summary
+            class:list={[
+              'flex items-center gap-2 px-2 py-2 rounded-md cursor-pointer select-none',
+              'hover:bg-gray-100 transition-colors',
+              'list-none [&::-webkit-details-marker]:hidden',
+              isCurrentPart && bgLight,
+            ]}
+          >
+            {/* Expand/collapse chevron */}
+            <svg
+              class="h-4 w-4 text-gray-400 flex-shrink-0 transition-transform group-open:rotate-90"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+
+            <a
+              href={partUrl(part.partNumber, base)}
+              class:list={[
+                'font-semibold truncate',
+                textColor,
+              ]}
+            >
+              {part.title}
+            </a>
+          </summary>
+
+          {/* Divisions */}
+          <div class:list={['ml-4 pl-2 border-l-2 mt-1 mb-2', borderColor]}>
+            {part.divisions.map((division) => {
+              const isCurrentDivision = division.divisionId === currentDivisionId;
+
+              return (
+                <div class="mb-1">
+                  <a
+                    href={divisionUrl(division.divisionId, base)}
+                    class:list={[
+                      'block px-2 py-1.5 rounded-md transition-colors truncate',
+                      'hover:bg-gray-100',
+                      isCurrentDivision
+                        ? 'font-semibold text-gray-900 bg-gray-100'
+                        : 'text-gray-600',
+                    ]}
+                  >
+                    <span class="text-gray-400 mr-1">{division.romanNumeral}.</span>
+                    {division.title}
+                  </a>
+
+                  {/* Sections — only show when this division or a child section is current */}
+                  {(isCurrentDivision || division.sections.some(s => s.sectionCode === currentSectionCode)) && (
+                    <div class="ml-4 mt-0.5 space-y-0.5">
+                      {division.sections.map((section) => {
+                        const isCurrentSection = section.sectionCode === currentSectionCode;
+
+                        return (
+                          <a
+                            href={sectionUrl(section.sectionCode, base)}
+                            class:list={[
+                              'block px-2 py-1 rounded text-xs transition-colors truncate',
+                              'hover:bg-gray-100',
+                              isCurrentSection
+                                ? 'font-semibold text-gray-900 bg-gray-100'
+                                : 'text-gray-500',
+                            ]}
+                          >
+                            <span class="font-mono text-gray-400 mr-1">{section.sectionCodeDisplay ?? section.sectionCode}</span>
+                            {section.title}
+                          </a>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </details>
+      );
+    })}
+  </nav>
+</aside>

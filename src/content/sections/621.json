@@ -1,0 +1,406 @@
+{
+  "sectionCode": "621",
+  "sectionCodeDisplay": "621",
+  "title": "Literature",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The art of literature",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature and scope of literature: the distinction between literature and other forms of writing",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Literary composition",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The contents of literature: its subject matter",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Literature and its audience",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The integration of literature with other arts",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Literary genres: diverse systems of classifying literary works",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Writings on literature: theoretical treatises, scholarly research and writing, critical writing",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Techniques of literature",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Rhetoric: the art of discourse",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Elements of rhetoric: figures of speech; e.g., metaphor, simile, personification, hyperbole, ' allegory, parallelism",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The relation of rhetoric to grammar and syntax, to literary diction and style, and to prosody",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Prosody: the manipulation of the elements of language that contribute to acoustic and rhythmic effects in literature",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Elements of prosody",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Rhythmic elements; e.g., accent, beat, cadence, the foot, the stanza, metre",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Acoustic elements; e.g., rhyme, assonance, alliteration",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Prosodic style: the uses of prosody in verse, prose, drama, and oratory",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Kinds of literary composition",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Poetry: distinctions between verse and prose",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Narrative imaginative literature",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Epic; e.g., the \"literary\" epic, the beast epic, the mock epic, the romantic epic",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Saga: the king's sagas, legendary sagas, the sagas of Icelanders, and related forms",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Romance: the romance of love, chivalry, and adventure; e.g., Arthurian romance, the pastoral romance, the Gothic romance, the historical romance",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The novel and the tale",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The short story and its antecedents",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Fable, parable, allegory, and related forms",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Ballad, lay, idyll",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Dramatic or theatrical literature",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Tragedy",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Comedy",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Tragicomedy",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Farce and related forms",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Melodrama",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Religious drama and ritual",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Radio, motion-picture, and television scripts",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Lyric literature",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Music-based lyrics; e.g., ballad, hymn, madrigal",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Language-based lyrics; e.g., sonnet, ode, elegy, pastoral",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Satiric literature: satire, parody, lampoon",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Nonfictional prose literature",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The essay",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "History as literature",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Criticism as literature",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Doctrinal and religious literature",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Philosophical literature",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Political literature",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Polemical literature",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Scientific literature",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Reportage: journalism",
+              "children": []
+            },
+            {
+              "level": "j",
+              "levelType": "lowercase",
+              "text": "Aphorism, epigram, adage, maxim, and related short forms",
+              "children": []
+            },
+            {
+              "level": "k",
+              "levelType": "lowercase",
+              "text": "The dialogue: philosophical and literary dialogues",
+              "children": []
+            },
+            {
+              "level": "l",
+              "levelType": "lowercase",
+              "text": "Travel literature",
+              "children": []
+            },
+            {
+              "level": "m",
+              "levelType": "lowercase",
+              "text": "Epistolary literature: the letter as literature n.The oration, the speech, and related forms",
+              "children": []
+            },
+            {
+              "level": "o",
+              "levelType": "lowercase",
+              "text": "Biographical and autobiographical literature; e.g., character sketch, critical biography, popular biography, interpretive biography, letter, diary, journal, memoir",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Children's literature",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Primitive, folk, and popular literature [see also 613]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The history of literature",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Literature of Western peoples",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C.8",
+      "targetSection": "613",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D.2",
+      "targetSection": "613",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "General subjects",
+    "African Arts Dutch Literature Latin-American Scandinavian",
+    "African American English Literature Literature Literature",
+    "Literature French Literature Latin Literature South Asian Arts",
+    "Literature, The",
+    "American German Literature Southeast Asian",
+    "Literature Greek Literature Art of Arts",
+    "American Peoples, Hebrew Literature Literature, The Spanish Literature",
+    "Arts of Native Homeric History of Yiddish Literature",
+    "Epics, The",
+    "Australia and Western",
+    "New Zealand, Hungarian Oceanic Arts",
+    "Literatures of Literature Polish Literature",
+    "Belgian Literature Islamic Arts Portuguese",
+    "Canadian Literature Italian Literature Literature",
+    "Celtic Literature Japanese Literature Rhetoric",
+    "Central Asian Arts Korean Literature Russian Literature",
+    "Chinese Literature",
+    "Biographies",
+    "Johnson, Samuel",
+    "Cervantes Dostoyevsky Shakespeare",
+    "Chaucer Goethe Milton Tolstoy",
+    "Dante Greek Dramatists, Moliere Virgil",
+    "Dickens The Classical Montaigne Voltaire"
+  ],
+  "partNumber": 6,
+  "divisionId": "6-02"
+}

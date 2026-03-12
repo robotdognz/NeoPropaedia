@@ -1,0 +1,140 @@
+{
+  "sectionCode": "625",
+  "sectionCodeDisplay": "625",
+  "title": "Dance",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The art of dance",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature of dance as art: its origins and functions",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Choreography and dance notation",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Diverse classifications of kinds of dance",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Theoretical, critical, and descriptive writing about dance",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The integration of dance with other arts: dance in the theatre, in motion pictures [see 622.C.2. and 623. B.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Ballet",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature of ballet as an art",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The integration of ballet with other arts; e.g., with opera, drama, motion pictures, television",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Major kinds of ballet: traditional, classical, modern, abstract, expressive",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The history of ballet",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Modern dance",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Principles underlying modern dance: expression and communication of feeling",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The relation of modern dance to other arts; e.g., to musical theatre, drama, motion pictures, television",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Development of modern dance: kinds, theories, techniques, and methods of modern dance",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Primitive, folk, and popular dance",
+      "children": []
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "The history of dance",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The dance of Western peoples",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.5",
+      "targetSection": "622",
+      "targetPath": "C.2"
+    }
+  ],
+  "macropaediaReferences": [
+    "African Arts East Asian Arts",
+    "American Peoples,",
+    "Folk Arts",
+    "Arts of Native Oceanic Arts",
+    "Central Asian Arts South Asian Arts",
+    "Dance, The Art of",
+    "Southeast Asian",
+    "Dance, The History",
+    "Arts",
+    "of Western"
+  ],
+  "partNumber": 6,
+  "divisionId": "6-02"
+}

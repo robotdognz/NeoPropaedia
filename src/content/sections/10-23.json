@@ -1,0 +1,519 @@
+{
+  "sectionCode": "10/23",
+  "sectionCodeDisplay": "10/23",
+  "title": "Applications of Mathematics",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Mathematics as a calculatory science",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Numerical notations",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Aggregations, or units used to assist counting or grouping of objects",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Ancient numerical notations",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Decimal notation and modern notational developments *",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Geometrical aids",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Early applications of geometry",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Instruments for observation and navigation",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Mapping",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Applications of geometry to celestial measurement",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Optical instruments",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Drawing instruments",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Mathematical models: physical constructions used to aid the visualization of mathematical ideas or relationships",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Calculatory aspects of algebra",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Algebraic notation",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Logarithms",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Slide rules",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Calculation using tables and graphs",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Mathematical tables",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Graphs and graphical procedures",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Analogue computation [see also 735. D.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Types of problems solvable by analogue computation",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Analogue computers",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Digital computation [see also 735. D.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Digital calculators",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Punched cards",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Programmed machines (digital computers)",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Statistics",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The basic principles of statistical inference: application of the concepts and techniques of probability theory to the analysis of data",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The concept of a statistical experiment: mathematical description of experiments in terms of random variables",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Distribution functions and their properties: the median, mean, variance, and standard deviation of a distribution; the Gaussian or normal distribution",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Estimation: techniques for approximating the parameters of families of distributions of random variables",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Hypothesis testing: techniques for determining the correctness of alternative hypotheses concerning given data and an assumed probability model",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Structure in data: use of regression analysis to discover systematic patterns",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Numerical analysis",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Introduction: definition, origins, and basic concepts of numerical analysis",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Errors: round-off and truncation",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Approximation of functions: linear and polynomial interpolation, least squares approximation",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Solution of equations: linear, nonlinear, and differential equations",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Applications and implementation of numerical analysis: optimization, large-scale scientific computation, mathematical software",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Automata theory [see also 712.A.6.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Introduction: definition and examples of automata, development of the basic concepts of automata theory, the analogy between automata and the nervous systems of living organisms",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Neural nets and automata",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Probabilistic questions: random effects in the operation of automata",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Classification of automata",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Mathematical theory of optimization",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The theory of games: analysis of the strategic features of conflict situations",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Linear and nonlinear programming (mathematical programming)",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Cybernetics",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Control theory",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Information theory [see also 735.A.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Origins and definitions of information theory",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Central problems of information theory",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Principles of information theory",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Applications of information theory to cryptography, linguistics, and other fields",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "Computer science",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Synthesis and analysis of algorithms",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Theory of computation",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Computer architecture",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Programming languages and methodology",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Numeric computation",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Artificial intelligence",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "Mathematical aspects of physical theories",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Mechanics of particles and systems [see also 126. A.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Fluid mechanics [see also 126.F.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Mechanics of solids [see also 126.D.]",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Statistical mechanics [see also 124.A.9.]",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Electromagnetic theory [see also 127. E.]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Relativity theory: space and time as a four-dimensional continuum [see also 131.D ]",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Riemannian geometry",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Quantum mechanics [see also 111.A.4.C.]",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.6",
+      "targetSection": "735",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.7",
+      "targetSection": "735",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D",
+      "targetSection": "712",
+      "targetPath": "A.6"
+    },
+    {
+      "fromPath": "F",
+      "targetSection": "735",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "H.1",
+      "targetSection": "126",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "H.2",
+      "targetSection": "126",
+      "targetPath": "F"
+    },
+    {
+      "fromPath": "H.3",
+      "targetSection": "126",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "H.4",
+      "targetSection": "124",
+      "targetPath": "A.9"
+    },
+    {
+      "fromPath": "H.5",
+      "targetSection": "127",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "H.6",
+      "targetSection": "131",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "H.8",
+      "targetSection": "111",
+      "targetPath": "A.4.C"
+    }
+  ],
+  "macropaediaReferences": [
+    "Numerical Analysis",
+    "Automata Theory",
+    "Optimization, The",
+    "Computer Science",
+    "Mathematical Theory of",
+    "Computers",
+    "Statistics",
+    "Game Theory",
+    "Information Processing and",
+    "Information Systems"
+  ],
+  "partNumber": 10,
+  "divisionId": "10-02"
+}

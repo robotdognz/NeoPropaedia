@@ -1,0 +1,716 @@
+{
+  "sectionCode": "232",
+  "sectionCodeDisplay": "232",
+  "title": "Features Produced by Geomorphic Processes Acting on the Earth’s",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The action of the hydrosphere and atmosphere on the Earth's surface features",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The process of weathering: the disintegration and alteration of rocks at or near the Earth's surface",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Soil formation as a result of weathering",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Processes and factors in soil formation [see also 354. A.2.b.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Classification and distribution of soils",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Soil crusts",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Soil erosion and deterioration",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Gravitational processes: earth movements on slopes",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Fluvial processes [see also 126.F.3.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Entrainment and transport of materials",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Erosion, deposition",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The sediment yield of drainage systems",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The formation of hillslopes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Eolian processes",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Transportation of rock debris by wind",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Effects of wind transport",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Deposition by wind: formation and migration of dunes, the role of vegetation",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Wind action and the works of humankind",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Marine processes",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Erosion and deposition of coastal materials by waves and currents",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Transport of sediment by density flows",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Glacial processes: erosion, transport, deposition, glacial loading and unloading, periglacial processes [see also C.6., below]",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Lacustrine processes",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Erosion and deposition by waves and currents",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Sedimentation in lakes",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Effects of flora and fauna on lakes and lake systems [see 354.B.3.a.]",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The actions of the biosphere, exosphere, and lithosphere upon the Earth's surface features",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Biological processes [see also 351]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Effects of plants and organisms on rock weathering and soil formation [see A. 1. and A.2.a., above] *",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Effects of vegetation type and density on sediment yield [see A.4.C., above]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Effects of humankind on the Earth's surface features; e.g., land cultivation, mining, construction of artificial channels and dams [see also 355, 731, 733.B., 734, 736, and 737]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Extraterrestrial processes: the occurrence of meteorite craters [see also 133.A.3.C.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Volcanic-tectonic processes [see also 212.D.4., 212. G., 231. F., and 241. E.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The characteristic features of the Earth's major environments",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The fluvial environment [see also 354.B.3.b.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Distribution of rivers in nature",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Drainage patterns",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The geometry of river systems",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Streamflow and fluvial landforms: peak discharge and flooding, river floodplains and terraces, river deltas, ephemeral streams, waterfalls",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The evolution of river systems through geologic time",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The lacustrine environment [see also 354. B.3.a.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Lake basins",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Lake hydraulics: lake currents, surface waves, seiches, effects of wave and current action [see also 222. G. 1.]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Lakes in arid regions [see C.5., below]",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Glacial lakes [see C.6., below]",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Swamps, marshes, and bogs",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The estuarine environment",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The formation and destruction of estuaries",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Hydrologic features of estuaries",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The marine environment [see also 354.B.4.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Coastal features resulting from depositional processes",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Beaches: materials, morphological features, physical processes",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Sand dunes and sandbars",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "River deltas [see C.l.d., above]",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Coral reefs [see 231.E.]",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Lagoons",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Marshes [see C.2.e., above]",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Coastal features resulting from erosional processes: sea cliffs and related landforms",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Coastal features dependent on bedrock type, bedrock structure, or local topography: grottoes, spouting holes, fjords, peninsulas, islands",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Submerged coastal features: the continental shelf and slope, submarine canyons [see 231.C.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The desert environment [see also 354.A.1.C.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Geomorphic processes that shape desert landforms",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Surficial features of deserts",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Mountains, plateaus, pinnacles, and similar features",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Alluvial fans: fan-shaped sedimentary deposits bordering highlands from which the sediment was derived",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Pediments: bedrock surfaces fringing desert highlands",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Desert plains, basins, depressions",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Playas, pans, saline flats",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Sand sheets and sand dunes",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Desert boundaries: expansion and contraction of desert areas [see also 223.E.6.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The glacial environment [see also 354.A.l.d.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Processes of glaciation [see A.7., above]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Landforms produced by glacial erosion",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Rock polish, striations, grooves, and other small-scale features",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Glaciated valleys, cirques, aretes, horns, fjords",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Glacially eroded rock basins in non-mountainous regions",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Landforms produced by glacial deposition",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Glacial till, moraines, drumlins, and other landforms of nonstratified drift",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Ice-contact deposits, kames, eskers, and other landforms of stratified drift",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Glaciolacustrine sediments and associated landforms",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Landforms produced by periglacial processes",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Permafrost",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Talus, rock glaciers, block fields",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Patterned ground, including stone nets, stripes, and polygons, and features related to the melting of buried ice masses",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The polar environment [see C.6., above, and 354.A.l.d.]",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "The tropical environment: jungles, rain forests [see also 354.A.1.C.]",
+          "children": []
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "The temperate environment: woodlands and grasslands [see also 354. A.l.c.]",
+          "children": []
+        },
+        {
+          "level": "10",
+          "levelType": "numeric",
+          "text": "The subterranean environment: e.g., caves and cave systems [see also 354.A.l.d ]",
+          "children": []
+        },
+        {
+          "level": "11",
+          "levelType": "numeric",
+          "text": "Karst topography",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Basic concepts in the theory of landform evolution",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The concept of uniformitarianism [see also 242.A.2.a.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The concept of the cycle of erosion",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The concept of morphogenetic regions",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The concept of dynamic equilibrium",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.2.a",
+      "targetSection": "354",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.4",
+      "targetSection": "126",
+      "targetPath": "F.3"
+    },
+    {
+      "fromPath": "A.8.c",
+      "targetSection": "354",
+      "targetPath": "B.3.a"
+    },
+    {
+      "fromPath": "B.1",
+      "targetSection": "351",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.1.c",
+      "targetSection": "355",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.2",
+      "targetSection": "133",
+      "targetPath": "A.3.C"
+    },
+    {
+      "fromPath": "B.3",
+      "targetSection": "212",
+      "targetPath": "D.4"
+    },
+    {
+      "fromPath": "C.1",
+      "targetSection": "354",
+      "targetPath": "B.3.b"
+    },
+    {
+      "fromPath": "C.2",
+      "targetSection": "354",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.2.b",
+      "targetSection": "222",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.4",
+      "targetSection": "354",
+      "targetPath": "B.4"
+    },
+    {
+      "fromPath": "C.4.i.iv",
+      "targetSection": "231",
+      "targetPath": "E"
+    },
+    {
+      "fromPath": "C.4.d",
+      "targetSection": "231",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "C.5",
+      "targetSection": "354",
+      "targetPath": "A.1.C"
+    },
+    {
+      "fromPath": "C.5.c",
+      "targetSection": "223",
+      "targetPath": "E.6"
+    },
+    {
+      "fromPath": "C.6",
+      "targetSection": "354",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "C.8",
+      "targetSection": "354",
+      "targetPath": "A.1.C"
+    },
+    {
+      "fromPath": "C.9",
+      "targetSection": "354",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.10",
+      "targetSection": "354",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "D.1",
+      "targetSection": "242",
+      "targetPath": "A.2.a"
+    },
+    {
+      "fromPath": "D.5",
+      "targetSection": "124",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D.5",
+      "targetSection": "10/33",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "on the Earth’s surface",
+    "Continental Landforms Lakes",
+    "Earth, The: Its Properties, Oceans",
+    "Composition, and Structure Rivers",
+    "Geomorphic Processes Soils",
+    "Ice and Ice Formations Volcanism"
+  ],
+  "partNumber": 2,
+  "divisionId": "2-03"
+}

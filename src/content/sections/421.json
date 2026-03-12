@@ -1,0 +1,460 @@
+{
+  "sectionCode": "421",
+  "sectionCodeDisplay": "421",
+  "title": "The Structures and Functions of the Human Body",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The structures and functions of the cardiovascular system",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The heart",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The blood vessels: arteries, veins, and capillaries",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Human blood",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Components of blood: plasma, red blood cells (erythrocytes), white blood cells (leukocytes), platelets (thrombocytes)",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Blood groups",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Bleeding and blood clotting",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Blood circulation: the central pump, the systemic circulation, the pulmonary circulation",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The structures and functions of the lymphatic system: lymphocytes, lymphatic vessels, lymph nodes, and the lymph",
+      "children": []
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The structures and functions of the respiratory system",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The upper portion of the respiratory tract: nasal cavity, pharynx, larynx, and trachea",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The lungs and bronchi",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The regulation, control, and dynamics of breathing",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The structures and functions of the digestive system",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Structure of the components of the digestive tract",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Mouth and related structures",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Pharynx and esophagus",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Stomach",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The small intestine and the small bowel mucosa",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Large intestine, rectum, and anus",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Associated glands and structures: pancreas, liver, gallbladder, and bile ducts",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The digestive process",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "The structures and functions of the endocrine system",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The glands and tissues making up the system and their secretions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The thyroid",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The adrenal glands",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The pituitary",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Hypothalamus",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Pancreatic islets",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Parathyroid glands",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Gastrointestinal mucosa",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Thymus, pineal gland, kidneys, and other possible endocrine organs or hormones",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The effects of the endocrine system upon reproductive processes [see also F., below]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Glands affected by endocrine secretions: the testes, the ovaries, the placenta",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Female processes under endocrine control: the menstrual cycle, gestation, parturition, the secretion of milk, and the termination of menstrual life",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "The structures and functions of the reproductive system",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The male reproductive system",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The female reproductive system",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "The structures and functions of the excretory system",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The structures: kidneys, ureters, urinary bladder, urethra",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The excretory process",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "The structures and functions of the supportive-protective system",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The composition and properties of bone",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The connective tissues",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The joints",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The bursae",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The sinuses",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The muscular system",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The structure and properties of muscle",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Striated, skeletal, or voluntary muscle",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Nonstriated, smooth, or involuntary muscle",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Cardiac muscle",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The contraction of muscle fibres [see 323.D.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "The integument and derivatives: skin, hair, and nails",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "I",
+      "levelType": "major",
+      "text": "The body cavities and their membranes: the thoracic cavity, the abdominal cavity",
+      "children": []
+    },
+    {
+      "level": "J",
+      "levelType": "major",
+      "text": "The structure and functions of the nervous system",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The central nervous system: the brain and spinal cord, the cerebrospinal fluid",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The peripheral nervous system: cranial nerves, spinal nerves, and that part of the autonomic system that is outside the brain and spinal cord",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The autonomic nervous system: the sympathetic and parasympathetic systems",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The eye and the process of vision",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The ear and the process of audition",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Other sensory receptors",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Cutaneous (skin) senses: touch, heat, cold, and pain",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Kinesthetic (motion) sense",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Vestibular sense (equilibrium): acceleration, rotation, orientation, and balance",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Taste (gustatory) sense",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Smell (olfactory) sense",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "K",
+      "levelType": "major",
+      "text": "The composition and properties of body fluids and tissues [see 332.D.]",
+      "children": []
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "E.2",
+      "targetSection": "421",
+      "targetPath": "F"
+    },
+    {
+      "fromPath": "H.7.d",
+      "targetSection": "323",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "K",
+      "targetSection": "332",
+      "targetPath": "D"
+    }
+  ],
+  "macropaediaReferences": [
+    "biochemical Digestion and Muscles and Respiration and",
+    "Components of Digestive Systems Muscle Systems Respiratory",
+    "Organisms Endocrine Systems Nerves and Systems",
+    "Blood Excretion and Nervous Systems Sensory Reception",
+    "Supportive and",
+    "Circulation and Excretory Nutrition",
+    "Reproduction and Connective",
+    "Circulatory Systems",
+    "Systems Integumentary Reproductive Tissues",
+    "Systems Systems"
+  ],
+  "partNumber": 4,
+  "divisionId": "4-02"
+}

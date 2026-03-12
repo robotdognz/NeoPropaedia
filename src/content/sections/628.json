@@ -1,0 +1,344 @@
+{
+  "sectionCode": "628",
+  "sectionCodeDisplay": "628",
+  "title": "Drawing, Painting, Printmaking, and Photography",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Drawing",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Elements of design and principles of composition",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Drawing media; e.g., chalk, charcoal, crayon, ink, pastel, pencil, scratchboard, silverpoint, wash",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Diverse kinds of drawing",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Kinds of drawing determined by subject matter; e.g., portraits, landscapes, figure compositions, still lifes",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Kinds of drawing determined by special uses [for aspects of drawing related to writing, see 629.C.4.]",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Animation",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Caricature, cartoon, comic strip",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Cartography and mapping",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Drafting",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The history of drawing",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The art of painting",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Elements of design and principles of composition",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The iconography of painting",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Painting media; e.g., acrylic, casein, encaustic, fresco, gouache, ink, oil, tempera, watercolour",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Related media and techniques",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Calligraphy [see 629.C.4.a.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Drawing [see A., above]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Mosaic",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Photography [see D., below]",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Printmaking [see C., below]",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Stained glass",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Tapestry",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The kinds of painting",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Kinds of painting determined by the type or form of the physical object on which the picture is painted",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Fixed objects; e.g., cave painting, mural painting",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Movable objects: easel painting, fan painting, manuscript illumination, miniature painting, screen painting, scroll painting",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Kinds of painting determined by subject matter",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Representational painting; e.g., devotional painting, genre painting, landscape painting, narrative painting, portrait painting, still-life painting",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Nonrepresentational painting",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Kinds of painting determined by the maker or by the audience: primitive and folk painting",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The history of painting",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Western painting",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The painting of non-Western peoples",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Printmaking",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Printmaking as an art: its characteristics and problems; e.g., the problem of originality versus reproduction",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Printmaking media",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Relief or cameo media; e.g., woodcuts and linoleum cuts, wood engraving",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Intaglio media; e.g., aquatint, drypoint, etching, lift-ground prints, line engraving, mezzotint, soft-ground prints, stipple engraving",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Surface media: lithography, monoprint, serigraphy",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Printmaking tools and techniques [see 735.E.4.]",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The history of printmaking",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Photography as an art",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature and problems of photography as an art",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Photographic equipment and techniques: lenses; cameras; exposure, processing, and printing [see 735.G.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The kinds of photography",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Major kinds of photography determined by subject matter; e.g., portraits, landscapes",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Kinds of functional photography; e.g., photojournalism and photo reportage, astronomical photography, aerial photography, radiography",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.3.b",
+      "targetSection": "629",
+      "targetPath": "C.4"
+    },
+    {
+      "fromPath": "B.4.a",
+      "targetSection": "629",
+      "targetPath": "C.4.a"
+    },
+    {
+      "fromPath": "C.3",
+      "targetSection": "735",
+      "targetPath": "E.4"
+    },
+    {
+      "fromPath": "D.2",
+      "targetSection": "735",
+      "targetPath": "G"
+    }
+  ],
+  "macropaediaReferences": [
+    "and photography",
+    "General subjects",
+    "Painting, The Art of",
+    "Caricature, Cartoon,",
+    "and Comic Strip Painting, The",
+    "History of Western",
+    "Drafting",
+    "Drawing Photography",
+    "Folk Arts Printmaking",
+    "Mapping and Surveying"
+  ],
+  "partNumber": 6,
+  "divisionId": "6-02"
+}

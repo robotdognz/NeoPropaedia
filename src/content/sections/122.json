@@ -1,0 +1,607 @@
+{
+  "sectionCode": "122",
+  "sectionCodeDisplay": "122",
+  "title": "Chemical Compounds: Molecular Structure and Chemical Bonding",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The theory of molecular structure: its history and development",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Early concepts of molecular structure",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Quantum mechanical and electrostatic approaches to the theory of molecular structure",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Molecular bonds and shapes",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Spatial arrangement of atoms: chains, rings, chelates, polymers",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Isomers: structural isomers, stereoisomers",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Time-dependency properties of molecules",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Molecular structure and its relation to the properties of bulk matter",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The physical properties of matter as affected by molecular size, shape, and interactions, and interactions of molecules with radiations and fields",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The chemical behaviour of matter as determined by the nature of molecular bonds",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The chemical, physical, and biochemical properties of a substance inferred from its known or postulated molecular structure",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Experimental and theoretical procedures for the determination of molecular structures",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The separation, isolation, and purification of chemical substances based on chemical equilibria and rate phenomena",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "By volatility differences: distillation, sublimation, evaporization",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "By chromatography: liquid phase, gas phase, thin layer",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "By solubility differences: precipitation, crystallization, zone melting, solvent extraction",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "By ion-exchange reactions",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "By electrophoresis and electrolytic methods",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "By mechanical methods: filtration, sedimentation, sieving, flotation, centrifugation",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Classical methods of qualitative and quantitative analysis",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Instrumental methods used to identify functional groups, molecular sub-units, and structural features",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Spectrochemical methods: microwave, infrared, ultraviolet, Raman spectroscopy, colorimetry, atomic absorption spectroscopy",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Mass spectrometry",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Magnetic resonance spectrometry",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Thermometric methods: thermogravimetry, calorimetry, cryoscopy",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Radiochemical methods: radiometric analysis, activation analysis, isotopic dilution",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Electrochemical methods: potentiometry, polarography, electrodeposition, oscillometry",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Diffraction methods for determining molecular structures: electron, X-ray, and neutron beam diffraction",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Physical methods used to determine optical activity, magnetic susceptibility, calorific values, heat of combustion, activation energy, and reaction rates",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The synthesis and characterization of derivatives, or specifically modified molecules",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The determination of molecular weight based on thermodynamic theory, on transport phenomena, and on known spatial arrangements of atoms in the solid state",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "The principles of conformational analysis as related to molecular structure",
+          "children": []
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "The scattering of molecular beams and its usefulness in the study of molecular interactions",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Spectra of molecules",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The theory of molecular spectra",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Types of molecular spectra: microwave, infrared, Raman, visible, and ultraviolet spectra",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The interpretation of molecular band spectra in determining molecular structure",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The theory of chemical bonding: its development and experimental bases",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Nonquantum treatments of chemical bonding",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Early ideas and concepts of chemical bonding: valence",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The early electronic theory of bonding",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The nature of ionic bonds: shell theory, ion pairs",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The nature of covalent and coordinate bonds: the octet",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Application of the quantum theory to atomic structure",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Quantum-mechanical treatment of chemical bonding",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Atomic and molecular orbital concepts",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Bonding in the hydrogen molecule",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Bonding in simple polyatomic molecules",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Quantum-mechanical calculations",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Other bonding effects: hydrogen bonding; metallic bonds in metals, intermetallic compounds, and coordination compounds; bonds in crystals, in weak associations, and in electron-deficient compounds",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Experimental observation of chemical bonding",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Anomalous molecular structures, or molecular fragments with apparently anomalous valences: free radicals, carbenes, carbanions, carbonium ions",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Systems of classification of chemical compounds or substances",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "By their elemental composition or molecular structure: organic, inorganic, organometallic, and nonstoichiometric compounds",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "By their bond type: ionic, covalent, and coordination compounds",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "By their chemical reactivity: acids, bases, and salts; oxidizing and reducing agents",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "By their physical state: gas, liquid, and solid",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "By their origin: natural and synthetic",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Inorganic compounds",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Nomenclature of binary, ternary, and coordination compounds",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Structural classification of inorganic compounds",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Salts",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Oxides, anhydrides, acids, and bases",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Coordination compounds",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Organometallic compounds [see G. l.c., below]",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Catenates",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Inorganic polymers",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Special nonmetallic derivatives",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Methods of preparation of inorganic compounds",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Reactions of inorganic compounds; e,g., acid-base, substitution, isomerization, oxidation- reduction, addition",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "Organic compounds",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The major groups of organic compounds: their nomenclature, chemical and physical properties, synthesis, occurrence, reactions, and analysis",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Hydrocarbons: aliphatic and aromatic",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Organic halogen compounds: alkyl, alkenyl, and alkynyl halides; aryl halides",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Organometallic compounds",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Alcohols, phenols, and ethers",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Carboxylic acids and their derivatives",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Aldehydes, ketones, and their derivatives",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Organic nitrogen compounds",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Organic sulfur compounds",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Organic phosphorus compounds",
+              "children": []
+            },
+            {
+              "level": "j",
+              "levelType": "lowercase",
+              "text": "Organic silicon compounds",
+              "children": []
+            },
+            {
+              "level": "k",
+              "levelType": "lowercase",
+              "text": "Heterocyclic compounds",
+              "children": []
+            },
+            {
+              "level": "l",
+              "levelType": "lowercase",
+              "text": "Oils, fats, and waxes",
+              "children": []
+            },
+            {
+              "level": "m",
+              "levelType": "lowercase",
+              "text": "Carbohydrates",
+              "children": []
+            },
+            {
+              "level": "n",
+              "levelType": "lowercase",
+              "text": "Amino acids, proteins, and peptides",
+              "children": []
+            },
+            {
+              "level": "o",
+              "levelType": "lowercase",
+              "text": "Isoprenoids and terpenes",
+              "children": []
+            },
+            {
+              "level": "p",
+              "levelType": "lowercase",
+              "text": "Steroids and their derivatives",
+              "children": []
+            },
+            {
+              "level": "q",
+              "levelType": "lowercase",
+              "text": "Nucleotides and nucleosides",
+              "children": []
+            },
+            {
+              "level": "r",
+              "levelType": "lowercase",
+              "text": "Nucleic acids: dna and rna",
+              "children": []
+            },
+            {
+              "level": "s",
+              "levelType": "lowercase",
+              "text": "Alkaloids",
+              "children": []
+            },
+            {
+              "level": "t",
+              "levelType": "lowercase",
+              "text": "Dyestuffs and pigments",
+              "children": []
+            },
+            {
+              "level": "u",
+              "levelType": "lowercase",
+              "text": "Organic polymers",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Preparation and purification of organic compounds",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Physical properties of organic compounds",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "G.4",
+      "targetSection": "10/32",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "chemical bonding",
+    "Biochemical Components of Organisms",
+    "Chemical Compounds"
+  ],
+  "partNumber": 1,
+  "divisionId": "1-02"
+}

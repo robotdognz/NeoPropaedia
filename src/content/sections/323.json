@@ -1,0 +1,146 @@
+{
+  "sectionCode": "323",
+  "sectionCodeDisplay": "323",
+  "title": "Vital Processes at the Molecular Level 1",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The cell membrane",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature of membranes",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Compartmentalization of the cell",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Movement of water across cell membranes: osmosis",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Movement of solutes through membranes in response to a concentration gradient",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Movement of solutes through membranes independent of concentration gradients: active transport, pinocytosis",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Bioelectricity",
+      "children": []
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The nerve impulse",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The structure of the neuron",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Characteristics of artificially stimulated nerve fibres",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Nature of the nerve impulse",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Transmission of the nerve impulse: the synapse",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Muscle contraction",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Contractile or motile activity of some type as a characteristic of all living things",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Striated, or skeletal, muscle in higher animals",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Cardiac muscle",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Smooth muscle",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Bioluminescence",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The significance of bioluminescence in behaviour, metabolism, and research",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The range and variety of bioluminescent organisms",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "E.3",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Cells: Their Structures and Functions",
+    "Electricity and Magnetism",
+    "Muscles and Muscle Systems",
+    "Nerves and Nervous Systems"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-02"
+}

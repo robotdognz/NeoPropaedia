@@ -1,0 +1,536 @@
+{
+  "sectionCode": "10/32",
+  "sectionCodeDisplay": "10/32",
+  "title": "The Physical Sciences",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "History of the physical sciences: the evolution of astronomy, physics, and chemistry",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "History of astronomy",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Ancient astronomy",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Time reckoning and astronomical prediction: development of lunar and solar calendars, prediction of eclipses and of first appearances of the New Moon",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Early cosmologies",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Ancient astronomical records, treatises, and star catalogs",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Medieval astronomy: European and Islamic contributions",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Astronomy in the 16th and 17th centuries",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The geocentric and heliocentric world systems",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The discovery of the laws of planetary motion",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The invention and use of the telescope",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "The theory of universal gravitation [see 2.c., below]",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Astronomy in the 18th century",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Development of celestial mechanics: the calculation of orbits, the three-body problem, the dynamical stability of gravitational systems",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Improvements in telescope design and increased accuracy of measurements: the discovery of the aberration of light",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Speculations concerning the origin of the solar system, the nature of nebulae, and the structure of the universe",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Astronomy in the 19th century",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The discovery of Neptune and the asteroids, the search for a planet within the orbit of Mercury",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Improved determinations of stellar positions and magnitudes; the first measurements of stellar parallax; the compilation of catalogs of nebulae, stars, and star clusters",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Development of astronomical spectroscopy and the use of photography in observational work",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Astronomy in the 20th century",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Statistical studies of stars, nebulae, and galaxies",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Theories of stellar structure and of stellar formation and evolution",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Astronomical tests of general relativity: the gravitational red shift, the deflection of fight, the precession of the perihelion of Mercury, the cosmological red shift",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Relativistic cosmologies: the big bang model; open and closed models of the universe",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Major advances in solar-system astronomy: manned lunar missions; exploration of the planets and their satellites with unmanned space probes; analysis of micrometeoroids and meteorites",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Development of radio, X-ray, infrared, ultraviolet, and gamma-ray astronomy",
+                  "children": []
+                },
+                {
+                  "level": "vii",
+                  "levelType": "roman",
+                  "text": "Identification of pulsars, quasars, cosmic background radiation, and possible black holes",
+                  "children": []
+                },
+                {
+                  "level": "viii",
+                  "levelType": "roman",
+                  "text": "Advances in instrumentation and methodology: e.g., use of Earth-orbiting observatories; development of electronic radiation detectors; refinement of very long baseline interferometry",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "History of physics",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Greek physics: speculations concerning the nature of space, matter, and motion",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Medieval physics: the influence of Aristotle",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Physics in the 16th and 17th centuries: discoveries and theories in mechanics and optics",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Physics in the 18th and 19th centuries",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Development of theories of light: the wave theory versus the corpuscular theory, the search for the ether",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Development of the theories of electricity, magnetism, and electromagnetic waves",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Developments in thermodynamics: theories of heat, the laws of thermodynamics, the impossibility of perpetual motion, the kinetic theory of gases",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Development of the atomic theory of matter: the discovery of the electron, the discovery of radioactivity and X-rays, the discovery of spectral regularities",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Physics in the 20th century",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Development of the theory of relativity",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Development of the quantum theory, wave mechanics, statistical mechanics, and related theories",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Development of theories and laws concerning atomic structure, nuclear interactions, and elementary particles, including efforts to produce a unified field theory",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Development of condensed-matter physics and its contributions to electronics",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Modern developments in physics: atomic beams, nuclear magnetic resonance, and electron spin resonance methods; development of nonlinear optics; the development of masers and lasers",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "History of chemistry",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Chemistry before 1700",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The rise of alchemy: the goal of the alchemists -- to prolong life and to transmute base metals to gold",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The influence of the new mechanical philosophy on chemistry: the work of Boyle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Chemistry in the 18th century",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Studies of combustion and respiration: the phlogiston theory, the work of Lavoisier and Cavendish",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Laboratory discoveries: isolation and identification of gases; discoveries of new elements, compounds, and chemical reactions",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Chemistry in the 19th century",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Development of the periodic table of the elements: the work of Mendeleyev and Meyer",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Discoveries of new elements, isotopes, and radioactive elements",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Development of more accurate methods of analysis",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Development of theories of molecular structure and chemical reaction",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Development of organic chemistry: introduction of the concept of valence, the study of aromatic compounds, development of the structural theory",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Development of electrochemistry: the theory of chemical affinity in electrical terms",
+                  "children": []
+                },
+                {
+                  "level": "vii",
+                  "levelType": "roman",
+                  "text": "Development of industrial chemistry: the application of chemical principles and reactions to industrial processes",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Chemistry in the 20th century",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Development of instrumental methods of chemical analysis",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Explanation of chemical phenomena by principles of atomic and molecular structures",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Application of quantum mechanics to chemical bonding",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The nature and scope of astronomy and astrophysics: the major subject matters and principal problems [see also Part One, Division III]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature of astronomy and methods of study",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Component disciplines of astronomy and their relationship to other sciences: planetary and lunar sciences; meteoritics; the study of comets, minor planets, and the origin of the solar system",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Investigaton of the scale of the universe and of the distribution of objects within it: the determination of positions, the measurement of distances",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Orbit theory: its role in astronomy",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Astrophysics: the study of stars, galaxies, and the universe; cosmology and cosmogony",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The nature and scope of physics: its major subject matters, methods, and problems [see also Part One, Divisions I and II]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature of physics: its concern with matter and energy and their interactions",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Component disciplines of physics: mechanics, thermodynamics, heat, electricity, magnetism, sound, optics, quantum mechanics, states of matter, nuclear and atomic physics",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The experimental and theoretical methods of physics",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The relationship of physics to other disciplines",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Interdisciplinary fields of physics: astrophysics, biophysics, geophysics",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Philosophical problems in physics: at the formal level, quantum level, macrophysical level, and cosmological level",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The nature and scope of chemistry: its major subject matters and problems [see also 121, 122, and 123]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature of chemistry: its concern with the composition, properties, and changes of matter",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The subdivisions of chemistry: analytical, inorganic, organic, physical, polymer, and industrial chemistry and biochemistry",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The methods of chemistry",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The study of chemical transformations",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1.i.iv",
+      "targetSection": "2",
+      "targetPath": "c"
+    },
+    {
+      "fromPath": "D",
+      "targetSection": "121",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Bohr Helmholtz Philosophies of Physical",
+    "Copernicus Kepler the Branches of Sciences, The",
+    "Einstein Lavoisier Knowledge Planck",
+    "Faraday Maxwell Physical Science, Rutherford",
+    "Principles of",
+    "Galileo Newton",
+    "Heisenberg Pascal"
+  ],
+  "partNumber": 10,
+  "divisionId": "10-03"
+}

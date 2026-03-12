@@ -1,0 +1,258 @@
+{
+  "sectionCode": "738",
+  "sectionCodeDisplay": "738",
+  "title": "Technology of Earth and Space Exploration",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Techniques and equipment of surface and underground exploration",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Types and purposes of exploration",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Scientific exploration: the determination of the properties of the Earth's interior",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Resource exploration: the discovery of sources of ores, building materials, fuels, water, and geothermal energy",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Exploration for construction: the planning of tunnels, foundations, and other works",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Methods of exploration",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Indirect methods: geophysical and geochemical methods",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Direct methods: on-site testing by means of excavation, boring, and sampling of soil and rock",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Techniques and equipment of undersea exploration",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Platforms for exploratory work",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Surface vessels; e.g., deep-sea drilling ships and twin-hull vessels",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Submersibles",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Aircraft and satellites: application of remote sensing and satellite telemetry",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Buoys and other unmanned units; e.g., the Self-Propelled Underwater Research Vehicle (SPURV)",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Navigational methods and systems for establishing the precise location of discoveries",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Developments in oceanographic sampling and measurement techniques; e.g., acoustic methods and solid-state microelectronic ocean-current measuring devices",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Techniques and equipment of space exploration",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "History of space flight prior to Sputnik I: early speculations and fictional accounts, development of space flight theory and technology during the 20th century",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Space programs since 1957",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Space launch vehicles: rockets designed to provide orbital or escape velocity for manned or unmanned spacecraft",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Unmanned space probes",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The use of sounding rockets to explore the upper atmosphere of Earth",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The use of orbiting satellites for scientific purposes; e.g., to study the natural phenomena of space, to test instrumentation and communication techniques",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The use of unmanned spacecraft to probe the Moon and the planets and their satellites",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Manned space programs: the Mercury, Gemini, Apollo, and Space Shuttle programs of the U.S.; the Vostok, Yoskhod, and Soyuz/Salyut programs of the U.S.S.R. and the Russian Federation",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The use of Earth-oriented satellites: communications, Earth survey, and navigation satellites",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Elements of space flight",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The environment of space: the definition of space, characteristics affecting space flight",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Technology of spacecraft subsystems",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Launch principles and techniques: staging of propulsion systems, acceleration rates",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Mechanics and techniques of space flight",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Types of trajectories: suborbital, Earth orbital, Earth escape, and interplanetary",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Navigation in space",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Rendezvous and docking",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Reentry and recovery",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Contributions of space exploration to advances in the physical sciences",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Techniques of life-support systems for exploration",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Systems used in undersea exploration",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "D.2",
+      "targetSection": "721",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Exploration Public Works"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-03"
+}

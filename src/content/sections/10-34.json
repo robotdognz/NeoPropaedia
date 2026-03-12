@@ -1,0 +1,54 @@
+{
+  "sectionCode": "10/34",
+  "sectionCodeDisplay": "10/34",
+  "title": "The Biological Sciences",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "History of the biological sciences",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Origin and early development of biological ideas",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Views of life and living things in ancient Eastern and Middle Eastern civilizations",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Biology in the Greco-Roman world: theories about mankind and the origin of life; Aristotelian concepts of classification, reproduction, heredity, and descent; botanical investigations; initial anatomical discoveries",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Biology in the Middle Ages: the influence of Arabian biologists, the development of botany and zoology as separate disciplines, further discoveries in anatomy",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Biology in the Renaissance: the influence of the craft of printing and artists' illustrations on the dissemination of botanical knowledge, the beginning of the scientific study of anatomy through the use of dis",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [],
+  "macropaediaReferences": [
+    "Biological Sciences, The",
+    "Harvey",
+    "Darwin Pasteur",
+    "Genetics and Heredity, The Principles of Philosophies of the Branches of Knowledge"
+  ],
+  "partNumber": 10,
+  "divisionId": "10-03"
+}

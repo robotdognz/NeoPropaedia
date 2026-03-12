@@ -1,0 +1,117 @@
+{
+  "sectionCode": "536",
+  "sectionCodeDisplay": "536",
+  "title": "Economic Growth and Planning",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The nature and causes of economic growth",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Various factors influencing economic growth; e.g., technology, markets, the supply of capital, the labour force, governmental fiscal policies",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The theory of economic growth and models of growth",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Various models of economic growth: supply-determined models, demand-determined models, and target-instrument models",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The practical functions of growth theory and mathematical growth models",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Social costs and benefits of economic growth",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Economic growth in developing countries",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The relationship between economic underdevelopment and low per capita income: the rate of increase of gross domestic product (gdp) as compared to population growth",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Various theories of national economic development and economic retardation",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Changes in economic efficiency as measured by changes in output per unit of input: economic productivity",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Planning for economic growth and stability",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The nature of economic planning",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Economic planning in Communist countries",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Economic planning in developed non-Communist countries",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Economic planning in developing countries",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.4",
+      "targetSection": "10/36",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Economic Growth and Planning",
+    "Economic Theory",
+    "Government Finance",
+    "International Trade",
+    "Social Sciences, The"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-03"
+}

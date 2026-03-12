@@ -1,0 +1,353 @@
+{
+  "sectionCode": "723",
+  "sectionCodeDisplay": "723",
+  "title": "Technology of Measurement, Observation, and Control",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Theory of measurement [see 10/31. B.3.b.]",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Units and standards of measurement",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Systems of weights and measures: standards for the measurement of mass and length",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Standards and techniques for measurement of time",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Principles and processes by which instruments of measurement operate",
+      "children": []
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Common types of measuring instruments",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Instruments for measuring basic dimensions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Devices for measuring length: rules, calipers, micrometers",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Devices for measuring mass and weight: scales, balances",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Devices for measuring time: mechanical, electric, and atomic clocks",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Devices for measuring temperature: gas, liquid, and electrical resistance thermometers ' e. Devices for measuring electric current and other electrical properties: galvanometers, ammeters, voltmeters",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Devices for measuring light intensity: photometers, light meters, exposure meters",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Instruments for measuring physical properties and relationships derived from basic dimensions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Instruments for measuring pressure: barometers, manometers",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Instruments for measuring rate of flow: flowmeters, water meters, gas meters",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Instruments for measuring position by angulation and direction finding",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Compasses: magnetic compasses, gyrocompasses",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Surveying instruments: levels, transits, sextants",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Instruments for measuring gravity: gravimeters",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Instruments for making optical measurements: polarimeters, refractometers",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Instruments for measuring ionizing radiation: Geiger counters, scintillation counters",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Instruments for measuring volumetric and mechanical properties of materials, including density, viscosity, and mechanical strength",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Instruments used for observing and recording",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Instruments for observing phenomena",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Microscopes: optical, electron, acoustic, and scanning tunneling microscopes",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Telescopes: optical, radio, and other types (e.g infrared, ultraviolet, X-ray, and gamma-ray systems)",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Spectroscopes and spectrographs",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Interferometers",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Instruments for recording phenomena: cameras [see also 735 G.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Special instruments and apparatus used in scientific research",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General laboratory equipment: filters, mixers, centrifuges",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Research reactors",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Particle accelerators; e.g., Cockcroft- Walton generators, Van de Graaff generators; linear resonance accelerators, betatrons, cyclotrons, synchrotrons, colliding-beam storage rings",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Mass spectrometers",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Chromatographs",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Seismographs [see also 213.B.6.]",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Particle detectors: bubble chambers, scintillation counters",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "Major systems of measurement and observation",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Surveying [see also D.2.c.ii., above, and 733.A.2.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Mapping and cartography",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Hydrographic charting",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Oceanographic measurement [see also 222. B., E., F., G., and H. and 738. B.[",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Meteorological measurement [see also 22 1 and 223]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Astronomical observations",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Navigational techniques and devices",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Radiological techniques and devices",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "Instrumentation and control systems",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Instrumentation systems: systems that operate or actuate control devices or record measurements automatically",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Control systems",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A",
+      "targetSection": "10/31",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "E.2",
+      "targetSection": "735",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "F.6",
+      "targetSection": "213",
+      "targetPath": "B.6"
+    },
+    {
+      "fromPath": "G.4",
+      "targetSection": "222",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "G.5",
+      "targetSection": "22",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "H.3",
+      "targetSection": "10/37",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Analysis and Measurement, Microscopes",
+    "Physical and Chemical Navigation",
+    "Calendar Particle Accelerators",
+    "Climate and Weather Radar",
+    "Mapping and Surveying Telescopes",
+    "Measurement Systems Time"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-02"
+}

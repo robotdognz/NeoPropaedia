@@ -1,0 +1,330 @@
+{
+  "sectionCode": "221",
+  "sectionCodeDisplay": "221",
+  "title": "The Atmosphere",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The composition, structure, and features of the atmosphere [see also 241. B. and 723. G. 5.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Division of the atmosphere by composition",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The homosphere",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Water cycle [see also 222. D. 3. and 223. A. 1.]",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Carbon budget",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Nitrogen budget",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Sulfur budget",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The heterosphere",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Oxygen dissociation",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Escape of helium and hydrogen from the upper atmosphere",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Thermal structure",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The troposphere",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The stratosphere",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The mesosphere",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The thermosphere",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Regions and phenomena of the upper atmosphere",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The ozonosphere",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Absorption of ultraviolet radiation of wavelengths harmful to plant and animal life",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Heating of the upper atmosphere",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The ionosphere",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Ionospheric variations and disturbances of atmospheric origin",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Ionospheric variations and disturbances of solar origin: auroras and magnetic storms [see also 212. B.]",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The effects of the ionosphere on radio waves [see also 735.1.5.]",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The exosphere",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Effects of low particle density on the properties of the exosphere",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Determination of the critical zone, the layer above which the number of particle collisions i negligible",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The Van Allen radiation belts [see also 133. B. and 212. B.]",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The large-scale motions of the atmosphere [see also 223]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The general nature and relative scales of atmospheric motions: the resolution of winds into zonal (east-west), meridional (north-south), and vertical components",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The relation of wind to pressure and temperature: the cause of winds, the effect of Coriolis force, idealized winds derived from simplified models -- the geostrophic and thermal winds [see also 21 l.A.2.a.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Jet streams",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The westerlies of the mid-latitudes",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Standing waves of the mid-latitude westerlies and related systems",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Mid-latitude traveling disturbances: cyclones, anticyclones [see 223.B.1.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Tropical wind systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Trade winds",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Tropical disturbances: noncyclonic storms, hurricanes and typhoons [see 223.B.4.]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Monsoons",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Stratospheric and mesospheric wind systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Polar-night westerlies",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Summer easterlies of the mesosphere and stratosphere",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The mean meridional circulations of the atmosphere",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A",
+      "targetSection": "241",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.1.i",
+      "targetSection": "222",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.3.i.ii",
+      "targetSection": "212",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.3.i.iii",
+      "targetSection": "735",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.3.i.iii",
+      "targetSection": "133",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B",
+      "targetSection": "223",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.2",
+      "targetSection": "21",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.4.b",
+      "targetSection": "223",
+      "targetPath": "B.1"
+    },
+    {
+      "fromPath": "B.5.b",
+      "targetSection": "223",
+      "targetPath": "B.4"
+    },
+    {
+      "fromPath": "B.8",
+      "targetSection": "10/33",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Atmosphere",
+    "Division II. Section 222 75"
+  ],
+  "partNumber": 2,
+  "divisionId": "2-02"
+}

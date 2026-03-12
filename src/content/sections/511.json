@@ -1,0 +1,339 @@
+{
+  "sectionCode": "511",
+  "sectionCodeDisplay": "511",
+  "title": "Peoples and Cultures of the World",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "In the Arctic",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "In the eastern Arctic",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "In the western Arctic",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "In North America",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "In the sub-Arctic",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "On the Northwest Coast",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "In California",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "On the Plateau",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "In the Great Basin",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "In the Southwest",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "On the Plains",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "In the eastern woodlands",
+          "children": []
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "In the Southeast",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "In Middle America",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "In northern Mexico",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "In Mesoamerica",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "In Central America and the northern Andes",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "In the Caribbean",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "In South America",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "In the central and southern Andes",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "In the tropical forest",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Among the South American nomads",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "In Europe",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "On the Atlantic fringe",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "On the plain",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Along the Mediterranean",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "On the Alpine climax",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "In the Middle East and North Africa",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "In the Maghrib: northwestern Africa",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "In the Mashriq: northeastern Africa and southwest Asia",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "In Iran",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "In Turkey",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "In Asia",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "In Siberia",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "In Central Asia",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "In East Asia",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "In South Asia",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "In Southeast Asia",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "In sub-Saharan Africa",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "In the western Sudan",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "In the eastern Sudan",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "On the Guinea coast",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "In the Congo",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "In central and lower East Africa",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "In the East African Horn",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "In southern Africa",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "I",
+      "levelType": "major",
+      "text": "In Oceania",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "In Australia",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "In Melanesia",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "In Polynesia",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "I.4",
+      "targetSection": "10/36",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Africa Eastern Africa",
+    "American Peoples, Native",
+    "Europe",
+    "Arctic, The",
+    "North Africa",
+    "Asia Pacific Islands",
+    "Asian Peoples and Cultures",
+    "Transcaucasia",
+    "Australia West Indies",
+    "Central Africa Western Africa",
+    "Central Asia",
+    "Culture, The Concept and Components of"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-01"
+}

@@ -1,0 +1,176 @@
+{
+  "sectionCode": "712",
+  "sectionCodeDisplay": "712",
+  "title": "The Organization of Human Work",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The organization of work",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The organization of work in the prehistoric world [see also 512.B.1.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Origin of division of labour based on age and sex differences, initial absence of class divisions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Communal organization: specialization required by the development of pottery, textiles, agriculture, and metallurgy",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The organization of work in the ancient world",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Theories of civilization's development: explanations of the origin of hierarchical organization",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Effect of social classes on the organization of labour",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Organization of agricultural labour",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Organization of industrial labour by craft",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Organization of labour for large-scale construction",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The organization of work in the medieval world: the manor system, the craft guilds, organization of free labour for large-scale construction",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Changes in production techniques from the 16th to the 18th century: foundations of modern industrial production",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Mass production: the organization of labour by product rather than by process",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The use of machines as replacements for labour",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The application of scientific methods to managerial functions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Operations research: the application of scientific method to the management of organized systems",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Systems engineering: the utilization of scientific and technological knowledge in planning and designing complex systems",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Systems-design techniques, tools, and procedures",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Techniques: use of flow charts and other symbolic models, precise formulation of suitable objectives",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Tools: optimization theory, communication theory, queuing theory, game theory [see also 10/23.E. and F.]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Procedures: exploratory planning, development planning",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The relation between man and machine in industrial production",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The effects on mankind of the rationalization of work: psychological and social aspects of mass production and automation",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1",
+      "targetSection": "512",
+      "targetPath": "B.1"
+    },
+    {
+      "fromPath": "B.3.b",
+      "targetSection": "10/23",
+      "targetPath": "E"
+    },
+    {
+      "fromPath": "C.2",
+      "targetSection": "10/37",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Automation",
+    "Industrial Engineering and Production Management",
+    "Modernization and Industrialization",
+    "Work and Employment"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-01"
+}

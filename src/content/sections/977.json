@@ -1,0 +1,90 @@
+{
+  "sectionCode": "977",
+  "sectionCodeDisplay": "977",
+  "title": "Australia and Oceania Since 1920",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "International developments in the Pacific and the disposition of the dependent territories in Oceania since 1920",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The post-World War I situation of the occupying powers in Oceania: the League of Nations mandate system",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "World War II in the Pacific: the rise and fall of Japanese power, effects of the war on indigenous peoples",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Post-World War II reorganization: economic and social effects of UN trusteeship administrations, movements toward autonomy among the indigenous peoples, independent island states, dissolution of Trust Territory of the Pacific Islands (1986)",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Australia since 1920",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Developments to 1945: decline of the Labor Party and the Nationalist-Country coalition, industrial and rural development, the Great Depression, formation of the United Australia Party and Lyons' administrations (1931-39), military role in World War II, effects of the war on the economy",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Political and economic developments from 1945: Labor government of Chifley (1945-49), growing prosperity and educational development under Liberal-Country coalition of Menzies (1949-66), Liberal-Country rule under Gorton (1968-71) and McMahon (1971-72), expansion of social services and development of Aboriginal and women's programs under Labor government of Whitlam (1972-75), constitutional crisis and dismissal of Whitlam (1975), Liberal-National Country coalition of Fraser (1975-83), return of Labor government under Hawke (1983-91) and Keating (1991-96), coalition under Howard (from 1996), deregulation of the economy and privatization of state-owned enterprises, Aboriginal land-claims legislation (1993)",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "International relations from 1945: participation in regional security alliances and military involvement in the Korean and Vietnam wars, recognition of China (1972) and North Vietnam (1973), independence of Papua New Guinea (1975), strengthening of economic and political ties to Asian and Pacific nations, opposition to French nuclear testing in the South Pacific",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Social developments from 1945: growing urban affluence, Aboriginal-rights issues, demographic and cultural changes resulting from large-scale European and Asian immigration, feminism and the women's movement, the environmental movement",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "New Zealand since c. 1920",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Developments to 1945: United (Liberal)-Reform coalition governments, the Great Depression, Labour Party victory (1935) and social welfare programs, participation with Allies in World War II",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C.2",
+      "targetSection": "967",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Australia Pacific Islands",
+    "Melbourne Sydney",
+    "New Zealand United States of America: Hawaii"
+  ],
+  "partNumber": 9,
+  "divisionId": "9-07"
+}

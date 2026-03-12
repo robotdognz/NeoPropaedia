@@ -1,0 +1,155 @@
+{
+  "sectionCode": "561",
+  "sectionCodeDisplay": "561",
+  "title": "The Aims and Organization of Education",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Philosophies of education [see also 435. A.]",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The learning process and the teaching art",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Processes of learning and thinking: experimental findings and theories [see 435]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Pedagogy: the art and science of teaching",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Components of the teaching situation",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "General theories concerning the role of the teacher in the learning process",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The organization of instruction: contemporary practices and techniques",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Instructional media: speaking-listening facilities, visual and observational aids, computer-based instruction",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The organization of education",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Phases or levels of education",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Preschool education",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Elementary and secondary education",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Higher education: colleges, universities, and professional schools",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Special education: education of exceptional children",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Education of the adult population",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Vocational training: apprenticeship and employee training",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The preparation and performance of teachers",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The education of teachers",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The teaching profession",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The economics of education",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A",
+      "targetSection": "435",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.1",
+      "targetSection": "435",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.4",
+      "targetSection": "562",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Philosophies of the Branches of Knowledge",
+    "Teaching"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-06"
+}

@@ -1,0 +1,366 @@
+{
+  "sectionCode": "10/61",
+  "sectionCodeDisplay": "10/61",
+  "title": "Institutions and Techniques for the Collection, Storage, Dissemination, and Preservation of Knowledge",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Protection and storage of objects and artifacts",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Museums and galleries",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The management and maintenance of institutional collections",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Types of museum categorized by subject area",
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "roman",
+                  "text": "General museums",
+                  "children": []
+                },
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Museums of natural history and natural science [see also 355.C.6.a.]",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Museums of science and technology",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Museums of history",
+                  "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Museums of art and art galleries [see also 612.G.1.]",
+                  "children": []
+                },
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Museums concerned with particular vocations: e.g., farming, forestry, wine making",
+                  "children": []
+                },
+                {
+                  "level": "vii",
+                  "levelType": "roman",
+                  "text": "Other museums",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Other systems of museum classification",
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "roman",
+                  "text": "By geographical coverage",
+                  "children": []
+                },
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "By character of collection",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "By character of provider",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "By particular clientele",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Libraries [see B.4., below]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Historic places and landmarks",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Public and private collections of animals and plants [see also 355.C.6.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Zoological gardens and aviaries",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Aquariums",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Botanical gardens and arboretums",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Parks and nature preserves [see also 355.D.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Storage and retrieval of information",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Dictionaries and lexicons [see also 735.H.2.c.i.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Encyclopaedias [see also 735.H.2.c.ii.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Atlases and map collections [see also 735.H.2.c.iii.]",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Libraries",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Types of libraries",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The science of library systems",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Archives",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Bibliographic and numeric databases [see 735.H.1.b.]",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Magnetic and optical recordings [see 735.F. and H.1.a.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Institutions for the advancement and dissemination of knowledge",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Educational institutions [see Part Five, Division VI]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Academies of learning, or societies established for the advancement of knowledge",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Publishing: selection, preparation, and marketing of printed material",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Print publishing [see also 735.I.1.]",
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "roman",
+                  "text": "Books",
+                  "children": []
+                },
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Newspapers",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Periodicals",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Electronic publishing",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Broadcasting",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Radio [see also 735.I.5]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Television [see also 735.I.6]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Observatories and planetariums",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1.b.ii",
+      "targetSection": "355",
+      "targetPath": "C.6.a"
+    },
+    {
+      "fromPath": "A.1.b.v",
+      "targetSection": "612",
+      "targetPath": "G.1"
+    },
+    {
+      "fromPath": "A.4",
+      "targetSection": "355",
+      "targetPath": "C.6"
+    },
+    {
+      "fromPath": "A.5",
+      "targetSection": "355",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "B.1",
+      "targetSection": "735",
+      "targetPath": "H.2.c.i"
+    },
+    {
+      "fromPath": "B.2",
+      "targetSection": "735",
+      "targetPath": "H.2.c.ii"
+    },
+    {
+      "fromPath": "B.3",
+      "targetSection": "735",
+      "targetPath": "H.2.c.iii"
+    },
+    {
+      "fromPath": "B.6",
+      "targetSection": "735",
+      "targetPath": "H.1.b"
+    },
+    {
+      "fromPath": "B.7",
+      "targetSection": "735",
+      "targetPath": "F"
+    },
+    {
+      "fromPath": "C.3.a",
+      "targetSection": "735",
+      "targetPath": "I.1"
+    },
+    {
+      "fromPath": "C.4.a",
+      "targetSection": "735",
+      "targetPath": "I.5"
+    },
+    {
+      "fromPath": "C.4.b",
+      "targetSection": "735",
+      "targetPath": "I.6"
+    }
+  ],
+  "macropaediaReferences": [
+    "dissemination, and preservation of knowledge",
+    "Broadcasting",
+    "Encyclopaedias and Dictionaries",
+    "Libraries",
+    "Museums",
+    "Publishing"
+  ],
+  "partNumber": 10,
+  "divisionId": "10-06"
+}

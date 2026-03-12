@@ -1,0 +1,227 @@
+{
+  "sectionCode": "351",
+  "sectionCodeDisplay": "351",
+  "title": "Basic Features of the Biosphere",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The extent of the biosphere",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Preconditions of the biosphere: the Earth as an ideal medium for life [see 312.A.2.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The levels of organization within the biosphere: the biocycle, the ecosystem, the community, the population [see 352.A. and C.; 354]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Energy flow in the biosphere",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Cycling of matter in the biosphere",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The general pattern of chemical cycles in nature [see also 214.C.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The carbon and oxygen cycles",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The nitrogen cycle",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The sulfur cycle",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The water cycle [see also 222.D.]",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "The sedimentary cycles of essential minerals",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The concept of the noosphere: mankind's place in the biosphere [see 355. B.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The ecosystem: a collection of integrated communities and their environment",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Definition of an ecosystem",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The biotic components of the ecosystem",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Producers",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Consumers",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Decomposers",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The abiotic components of the ecosystem",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Pressure and temperature [see 223. E. 1.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Radiation",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Illumination",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Water and soil characteristics, salts",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Wave action: wind and water",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Fire as a limiting factor",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The conditioning of the abiotic environment by living organisms",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The effect of microenvironments on the ecosystem",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Processes that determine the nature and productivity of the ecosystem",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1",
+      "targetSection": "312",
+      "targetPath": "A.2"
+    },
+    {
+      "fromPath": "A.2",
+      "targetSection": "352",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "A.4.a",
+      "targetSection": "214",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "A.4.e",
+      "targetSection": "222",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "A.5",
+      "targetSection": "355",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.3.a",
+      "targetSection": "223",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.7",
+      "targetSection": "354",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.7",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Biosphere, The"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-05"
+}

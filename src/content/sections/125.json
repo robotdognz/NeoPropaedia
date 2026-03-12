@@ -1,0 +1,426 @@
+{
+  "sectionCode": "125",
+  "sectionCodeDisplay": "125",
+  "title": "The Solid State of Matter",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Crystals and crystallography",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Patterns of atoms in crystals",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The three-dimensional periodic arrangement of atoms in crystals: crystal planes and their notation",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Symmetry considerations in the classification of crystal systems",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Diffraction of X rays, electrons, and neutrons by crystal structures",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Processes of crystal growth",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Theoretical aspects of crystal growth: energy considerations, growth of eutectics, constitutional supercooling, nucleation",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Preparation of crystals: monocomponent and polycomponent crystal growth",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Imperfections and dislocations in crystalline materials and their effects on the properties of the crystals",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Effects of temperature, pressure, and alloying on the strength and hardness of crystals",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The theory of the crystalline solid state",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The classification of solids according to their electronic structure and bonding: ionic solids, covalent solids, metallic solids, molecular solids, hydrogen-bonded solids",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The arrangement of atoms in crystalline solids [see A. l.a., above]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The elastic and plastic properties of solids",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The thermal and thermodynamic properties of solids: specific heat, thermal conductivity",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The electronic structure of solids",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The nature and mobility of electrons in conductors, insulators, and semiconductors",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Electron emission: thermionic emission, photoelectric emission, field emission",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The nearly free electron approximation",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The energy-band theory of the solid state",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The principal types of magnetic behaviour exhibited by solids: paramagnetism, diamagnetism, ferromagnetism",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The interaction of light with solids",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The behaviour of solids illuminated with radiation: reflection, absorption, or transmission of photons",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The generation of electromagnetic radiation from the energy supplied to the solid",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The photoelectric effect",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Ionic crystals",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Bonding in ionic crystals",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The structure of ionic crystals",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Perfect ionic crystals",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Defects in ionic crystals: Frenkel defect, Schottky defect, colour centres",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Properties of ionic crystals",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Vibrational and electronic properties",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Thermal properties",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Polarizing and diffusion properties and the nature of ionic conduction",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Optical properties",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Metals",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Structural aspects of metals and alloys",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Elementary description of metals: the use of the free electron model to explain thermal and electrical conductivity of metals",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The electronic structure of metals and related effects",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The interaction between the periodic lattice and the conduction electrons: the weak pseudopotential",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Electron motion in a magnetic field and conduction-related effects",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Band structure and properties of metal groups: alkali metals, semimetals, noble metals, transition metals",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Lattice vibrations: interaction between ions; interaction between electrons, phonons, and dispersion",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Metal surface phenomena: thermionic and field emission of electrons, electron tunnelling, photoemission, free carrier absorption and interband transitions",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Many-body effects: plasma oscillations, spin waves, Fermi liquid theory, dynamic effects and shake-off electrons",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Superconductivity in metals",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Thermal properties of superconductors: transition temperature, specific heat and thermal conductivity, energy gaps",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Magnetic and electromagnetic properties of superconductors: critical field, Meissner effect, phase coherence effects",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "Magnetic phenomena in metals: diamagnetism, paramagnetism, ferromagnetism, antiferromagnetism, nuclear magnetic resonance",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Semiconductors and insulators",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General properties of semiconductors and insulators",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Mechanisms of conduction: mobility of charged particles and electrons in solids",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Electrical conduction in semiconductors",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Chemical approach: impurity conduction, hopping process",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Physical approach: energy band and gaps, lattice vibrations, statistical properties",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Extrinsic and intrinsic semiconductors *",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Measurement of conductivity and of energy gaps",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Principles involved in semiconductor applications",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Optical effects: photoelectric effect, photovoltaic effect, luminescence",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Electrical and related effects: hot electron effects, thermoelectric effects",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Junction effects",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Pressure and stress effects",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "The glassy or amorphous state of matter",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Effects of temperature and composition on glass properties",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The structure of glass",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "F.3",
+      "targetSection": "10/32",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Matter: Its Properties, States, Varieties, and Behaviour",
+    "Minerals and Rocks"
+  ],
+  "partNumber": 1,
+  "divisionId": "1-02"
+}

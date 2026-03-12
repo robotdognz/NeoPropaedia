@@ -1,0 +1,118 @@
+{
+  "sectionCode": "512",
+  "sectionCodeDisplay": "512",
+  "title": "The Development of Human Culture",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Diverse theories of culture: conceptions involved in the analysis of culture",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Definitions of culture",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Culture and personality",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Cultural comparisons: ethnocentrism, cultural relativism",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Cultural adaptation and change",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Cultural patterns",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Cultural institutions [see 513]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Types of cultures",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Cultures of primitive and nonurban societies",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Cultures of nomadic and settled hunters and gatherers",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Horticultural societies: societies in which primitive agriculture is supplemental to hunting and gathering",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Cultures of pastoralists and herdsmen: distribution and characteristics",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Cultures of peasants and settled agriculturists",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Cultures of civilized societies: theories of their origin and evolution",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The development of modern industrial civilization: mass society",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.6",
+      "targetSection": "513",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C",
+      "targetSection": "10/36",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Culture, The Concept and Components of Social Sciences, The",
+    "Modernization and Industrialization Social Structure and Change"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-01"
+}

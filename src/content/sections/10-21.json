@@ -1,0 +1,387 @@
+{
+  "sectionCode": "10/21",
+  "sectionCodeDisplay": "10/21",
+  "title": "History and Foundations of Mathematics",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "History of mathematics",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The development of mathematics in general, through ancient, medieval, and modem times",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Ancient and medieval periods",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Ideas and methods originating or developing in Mesopotamia and Egypt",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Greek and Hellenistic mathematics",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The Middle Ages: Islamic mathematics and its transmission to the West",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The modem period",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The 17th century: discovery of logarithms and analytic geometry, development of calculus by Newton and Leibniz",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The 18th century: advances in geometry, algebra, and analysis; contributions of the Bernoulli family, Euler, Lagrange, Laplace, and others",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The 19th and 20th centuries: development of non-Euclidean geometry by Bolyai, Lobachevsky, and others; contributions to the theories of groups, functions, and complex variables; development of algebraic geometry; influence of physical science on analysis; study of the foundations of mathematics",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Historical development of representative nonprobabilistic areas of mathematics",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Numerals and numeral systems [see also 10/23.A.1]",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Simple grouping systems: ancient Egyptian, Babylonian, Greek, and Roman numerals",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Development of multiplicative, ciphered, and positional numeral systems",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Introduction of symbolic notations to represent mathematical quantities, operations, and relationships",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Calculatory science [see also 10/23. A.]",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The history of mathematical tables, including tables of logarithms",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The evolution of analogue devices: origins of harmonic analyzers, differential analyzers, and the slide rule",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The evolution of digital devices: development of computational aids from the abacus to the modern electronic digital computer [see 10/23.A.7.]",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Geometry [see also 10/22. C.]",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Egyptian, Babylonian, and Greek geometry",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The algebraic approach: development of analytic geometry",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Development of projective geometry , iv. Development of non-Euclidean geometry",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Philosophical aspects of geometry",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Modem ideas and topics in geometry: the axiomatic method; geometrical transformations; the concept of space, differential geometry, and topology",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Algebra [see also 10/22. B.]",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Babylonian, Egyptian, and Greek contributions",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Contributions from the Orient, India, and the Islamic world",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Medieval and modern European developments",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Evolution of the theory of algebraic equations of one variable: solutions prior to and after Galois",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Historical development of probabilistic areas of mathematics [see also 10/22.D.6.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Development of the mathematical theory of probability",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The abstract calculus of probability: the common structure of theories of probability",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Alternative views of probability: the frequency theory of probability, the range theory of probability and the principle of indifference, the belief theory of probability, subjective and objective notions of probability",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Bernoulli's theorem, inverse probability, and asymptotic probabilities",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Development of mathematical statistics: the history of the theory of stochastic processes, origins of control theory",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Foundations of mathematics",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The axiomatic method: mathematical analysis based upon a set of axioms, or unproved statements",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Euclidean geometry [see also 10/22.C. 1.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Non-Euclidean geometry [see also 10/22.C.2.]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The formal axiomatic method",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The genetic method: mathematical analysis based upon the orderly construction or generation of objects with unknown properties from objects with known properties",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Arithmetic and analysis [see also 10/22.B.1.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The concept of cardinal number and the theory of sets [see also 10/22. A.2.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The crisis in the foundations of mathematics after 1900: reformulations in terms of the three alternative philosophical positions of Intuitionism, Logicism, and Formalism",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The paradoxes",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Intuitionism",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Logicism, Formalism, and the metamathematical method",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Current directions in investigations of the foundations of mathematics",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Intuitionistic studies of the foundations of mathematics: application of formalistic procedures to Intuitionism",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.2.a",
+      "targetSection": "10/23",
+      "targetPath": "A.1"
+    },
+    {
+      "fromPath": "A.2.c",
+      "targetSection": "10/23",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.2.i.iii",
+      "targetSection": "10/23",
+      "targetPath": "A.7"
+    },
+    {
+      "fromPath": "A.2.d",
+      "targetSection": "10/22",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.2.e",
+      "targetSection": "10/22",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.3",
+      "targetSection": "10/22",
+      "targetPath": "D.6"
+    },
+    {
+      "fromPath": "B.1.a",
+      "targetSection": "10/22",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "B.1.b",
+      "targetSection": "10/22",
+      "targetPath": "C.2"
+    },
+    {
+      "fromPath": "B.2.a",
+      "targetSection": "10/22",
+      "targetPath": "B.1"
+    },
+    {
+      "fromPath": "B.2.b",
+      "targetSection": "10/22",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "of mathematics",
+    "Archimedes",
+    "Gauss",
+    "Mathematics, The Foundations of",
+    "Mathematics, The History of",
+    "Pascal",
+    "Philosophies of the Branches of Knowledge"
+  ],
+  "partNumber": 10,
+  "divisionId": "10-02"
+}

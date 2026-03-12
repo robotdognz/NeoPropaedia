@@ -1,0 +1,111 @@
+{
+  "sectionCode": "542",
+  "sectionCodeDisplay": "542",
+  "title": "Political Institutions: the Structure, Branches, and Offices",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Political systems",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Levels and structures of various systems of government",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Supranational political systems: empires; leagues, confederations, and commonwealths; regional federations; world congresses [see 544.A.] , b. National political systems: the unitary nation-state system, the federal state system",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Urban governments",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Other subnational political systems: tribal community governments, rural community governments, regional community governments [see also 521.A.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Types and models of political systems",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The branches of government",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The concentration of legislative and executive functions: parliamentary rule",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The legislature",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The executive",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The judiciary [see also 552.F.1.]",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1.a",
+      "targetSection": "544",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "A.1.d",
+      "targetSection": "521",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "B.4",
+      "targetSection": "552",
+      "targetPath": "F.1"
+    },
+    {
+      "fromPath": "C",
+      "targetSection": "552",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C",
+      "targetSection": "541",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "government",
+    "Cities Political Systems",
+    "Government, The Forms of: Public Administration",
+    "Their Historical Development Social Sciences, The"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-04"
+}

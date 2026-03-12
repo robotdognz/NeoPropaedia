@@ -1,0 +1,106 @@
+{
+  "sectionCode": "523",
+  "sectionCodeDisplay": "523",
+  "title": "Social Status",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Social differentiation and stratification",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The concepts of differentiation and stratification: distinctions and interrelationships",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Factors producing social, economic, and cultural differences: sex differentiation, age differentiation, racial differentiation, intellectual differentiation, social and cultural factors [see 521. D.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The process of stratification: its relationship to differentiation",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Economic differentiation: the basis of stratification",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Class, status, and power as forms of stratification",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The relation of the individual to society: the effects of differentiation and stratification",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Varieties of social stratification and social mobility",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The relation of social class to caste, status, elites, and other concepts",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Theories of social class: divergent conceptions of the importance of classes in social structures and of the nature of class relationships",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Types and characteristics of and comparisons among modern social classes: upper class, working class, and middle class; the special case of the peasant class",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Social mobility",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The idea of a classless society: approximations to an equality of conditions",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.2",
+      "targetSection": "521",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.6",
+      "targetSection": "10/36",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Slavery",
+    "Social Sciences, The"
+  ],
+  "partNumber": 5,
+  "divisionId": "5-02"
+}

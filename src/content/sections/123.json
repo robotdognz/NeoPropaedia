@@ -1,0 +1,534 @@
+{
+  "sectionCode": "123",
+  "sectionCodeDisplay": "123",
+  "title": "Chemical Reactions",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "General considerations of chemical reactions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Basic concepts involved in the study of chemical reactions: transformation, conservation of mass and energy, law of simple multiple proportions in compounds",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Growth of major theories concerning chemical reactions",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Classification and nomenclature of the principal kinds of chemical reactions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "According to the relationship involved between the starting materials and the final products",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Decomposition reactions",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Polymerization reactions",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Chain reactions",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Substitution reactions",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Addition and elimination reactions",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Oxidation-reduction reactions [see F., below]",
+                  "children": []
+                },
+                {
+                  "level": "vii",
+                  "levelType": "roman",
+                  "text": "Acid-base reactions [see E., below]",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "According to the energy changes involved [see B.I., below]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "According to the reaction rates or chemical kinetics involved [see also C., below]",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "According to the reaction mechanism involved [see D.4., below]",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Energy changes in chemical reactions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The classification of chemical reactions according to energy changes involved: exothermic and endothermic",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The significance of activation energy in chemical reactions",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Thermodynamic relations in chemical reactions: chemical equilibrium, free energy and entropy changes",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Rates of chemical reactions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Factors that affect the rate or direction of chemical reactions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Solvents",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Temperature",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Pressure",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Catalysts",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Collisions",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Light",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Isotopic substitution",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Molecular structure",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Factors that affect the kinetic order of chemical reactions: concentration of reactants, mechanism of reaction, conditions of the reaction",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Factors that affect the extent of chemical reactions: equilibrium constant",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Complex reactions: reactions governed by more than one reaction rate",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Experimental methods for studying chemical kinetics",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Measurement of reaction rates",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Determination of the order of reactions",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Relaxation methods",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Kinetic studies as a means of elucidating reaction mechanisms",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Mechanisms of chemical reactions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Factors influencing the course of a reaction: reactants, transition state, solvent, catalysts, products, reaction conditions",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Energy changes through single-stage and multi-stage processes",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Factors that reveal the mechanisms of a reaction: chemical and stereochemical nature of the reactants, intermediates, and products; kinetics of the reaction",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Classification of reaction mechanisms based on the nature of electron pairing in the transition state, on the nature of the attacking species, on the nature of catalysis, on the number of components of the transition state",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Mechanisms of the principal types of reactions: nucleophilic and electrophilic substitution, addition and elimination reactions",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Acid-base reactions and equilibria",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General properties of acids and bases",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Theoretical approaches to acid-base concepts",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The definition of an acid as a substance that gives rise to hydrogen ions and of a base as a substance that gives rise to hydroxyl ions in aqueous solutions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The Bronsted-Lowry concept defining an acid as a proton donor and a base as a proton acceptor",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The Lewis electronic theory defining an acid as an electron acceptor and a base as an electron donor",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Acid-base reactions",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Proton-transfer reactions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Lewis acid reactions",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Acid-base catalysis",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Quantitative aspects of acid-base equilibria",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Equilibria in aqueous solutions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Equilibria in nonaqueous solvents",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Equilibria involving Lewis acids",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The effect of molecular structure on acid-base equilibria",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The experimental study of acid-base reactions and equilibria",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Oxidation-reduction reactions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Major classes of oxidation-reduction reactions: oxygen atom transfer, hydrogen atom transfer, electron transfer",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Definitions of oxidation and reduction based on the reaction's stoichiometry",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Theoretical aspects of oxidation-reduction processes",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The concept of oxidation state",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Half reactions and the determination of redox potentials",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Oxidation-reduction equilibria and reaction rates",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Mechanisms of redox reactions",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Electrochemical reactions: chemical changes associated with the passage of an electrical current",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The electrochemical process: types of reactions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Complex electrochemical reactions",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The Nernst and Butler- Volmer equations",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Oxidation-reduction reactions in biological systems",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Oxidation-reduction reactions in combustion and flames",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "Photochemical reactions",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The photochemical process",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Experimental methods used in the study of the photochemical process and photochemical reactions",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The application of photochemical processes",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "Chemical reactions and chemical theory in the synthesis of chemical compounds",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Factors that affect the choice of a specific synthetic path",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Factors that affect the choice of reaction conditions",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The separation and purification of reaction products [see 122.B.1.]",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "H.3",
+      "targetSection": "122",
+      "targetPath": "B.1"
+    },
+    {
+      "fromPath": "H.4",
+      "targetSection": "122",
+      "targetPath": "B.2"
+    },
+    {
+      "fromPath": "H.4",
+      "targetSection": "10/32",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Chemical Reactions",
+    "Physical Sciences, The"
+  ],
+  "partNumber": 1,
+  "divisionId": "1-02"
+}

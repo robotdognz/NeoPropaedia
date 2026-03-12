@@ -1,0 +1,96 @@
+{
+  "sectionCode": "941",
+  "sectionCodeDisplay": "941",
+  "title": "West Africa to c. 1885",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The geography and ethnography of West Africa, definition of the region, the archaeological and documentary historical sources and historiographic problems, the character and achievements of civilizations in West Africa",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "West Africa until the advent of the Europeans (c. ad 1500)",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Development of the West African monarchies of Ghana and Kanem to c. ad 1000",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Development of the western Sudan empires",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Emergence of the Keita dynasty of the Mali empire (c. 1235): Timbuktu as the cultural and commercial centre of Mali, fall of the Mali empire (c. late 15th century) and rise of the Songhai empire of Gao",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The migrations of the Fulani people, migrations and military conquests of the Mande-speaking peoples, development of trade routes by the Dyula",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The precolonial period of European activity (c. 1400-c. 1885): exploration, development of the slave trade, and eventual collapse of indigenous states",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Portuguese trade with the Guinea states from c. 1460",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The rise and expansion of the Atlantic slave trade (c. 1600 -c. 1860): the pattern and development of European slave trade routes, the African slave merchant class",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The Islamic revolutions in the western Sudan: spiritual and military leadership of Sidi Mukhtar (d. 1811) and Usman dan Fodio (d. 1817), the Fulani and Hausa jihads (holy wars) and conquests",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "West Africa from 1800 to c. 1885",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The Guinea coastlands and the European antislavery movements",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "British colonial settlements from c. 1800: the colonies of Sierra Leone, the Gold Coast, Lagos, and Ashanti",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [],
+  "macropaediaReferences": [
+    "Africa",
+    "Western Africa"
+  ],
+  "partNumber": 9,
+  "divisionId": "9-04"
+}

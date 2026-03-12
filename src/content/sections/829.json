@@ -1,0 +1,114 @@
+{
+  "sectionCode": "829",
+  "sectionCodeDisplay": "829",
+  "title": "New Religious Movements",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "New religious movements reflecting the impact of dominant cultures and religions",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Negro cults in Western cultures",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The Nation of Islam, or Black Muslims [see E.3., below]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Black Jewish cults: the Church of God; the Commandment Keepers, or Black Jews; the Church of God and Saints of Christ",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Theosophical groups",
+      "children": []
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Spiritualist groups",
+      "children": []
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Religions and religious movements of Islamic origin or influenced by Islam",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The Baha'i faith",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The Druze religion",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The Nation of Islam, or Black Muslims",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Residues or revivals of ancient and primitive religious beliefs and practices in modern civilizations",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Witchcraft, black magic, Satanism [see also 811 .F.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Prophecy, divination, astrology",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Healing cults or practices",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Pharmacological cults or practices",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "F.1",
+      "targetSection": "811",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "world",
+    "Doctrines and Dogmas, Religious",
+    "Occultism"
+  ],
+  "partNumber": 8,
+  "divisionId": "8-02"
+}

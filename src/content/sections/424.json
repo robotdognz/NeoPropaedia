@@ -1,0 +1,197 @@
+{
+  "sectionCode": "424",
+  "sectionCodeDisplay": "424",
+  "title": "The Practice of Medicine and the Care of Health",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Medical education",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Fields of specialized medical research; the related disciplines of osteopathy, dentistry, and nursing [see 10/35. C.]",
+      "children": []
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The practice of medicine",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The kinds of medical practice in various countries",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "General practice and first-contact care: the general practitioner versus the specialist, clinic and health centre practice",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Hospital and specialist practice: general surgery, pediatrics, anesthetics, pathology, teaching practice",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Governmental practice: public health service, military practice, space medicine",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Research",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Maintenance of professional standards",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The ethical basis of medical practice; e.g., the Hippocratic oath, problems relating to euthanasia and abortion",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Licensure requirements for practice: the wide variation among countries",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Legal restrictions on practice",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Professional organizations and the maintenance of standards",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Public health services and administration",
+      "children": []
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Hospital services and facilities",
+      "children": []
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Environmental sanitation and health: the control of air, water, and soil pollution [see 737.C.1.]",
+      "children": []
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "Efforts directed toward the prevention of malnutrition: the recognition and attempted solution of problems relating to nutrient requirements, world food supply, and world population",
+      "children": []
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "The prevention and control of infection",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Vaccination and immunization",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The quarantine and isolation of infected victims",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Destruction of infectious agent or carrier; e.g., aseptic and antiseptic precautions, control of disease carriers, disinfection",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The use of therapeutic agents and prophylactic medication",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The prevention and control of epidemics",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "I",
+      "levelType": "major",
+      "text": "Industrial and social medicine",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The scope of industrial and occupational medicine",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Health and safety laws: the regulation of working hours; restrictions on female and child labour; the elimination of health, safety, and fire hazards; the control of foods and drugs; pollution control [see 552.D.]",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B",
+      "targetSection": "10/35",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "F",
+      "targetSection": "737",
+      "targetPath": "C.1"
+    },
+    {
+      "fromPath": "I.2",
+      "targetSection": "552",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "J",
+      "targetSection": "10/35",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Birth Control",
+    "Medicine",
+    "Occupational Diseases and Disorders"
+  ],
+  "partNumber": 4,
+  "divisionId": "4-02"
+}

@@ -1,0 +1,451 @@
+{
+  "sectionCode": "735",
+  "sectionCodeDisplay": "735",
+  "title": "Technology of Information Processing and of Communications Systems",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Communication and information theory [see 10/23.F.]",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Calculating devices: the abacus, tally sticks, mechanical and electromechanical calculators [see C.2., below]",
+      "children": []
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Office machines",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Writing and reproducing machines: typewriters, dictating and transcribing machines, word processors, duplicating machines and processes, copying machines and processes",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Calculating and accounting machines",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Miscellaneous office machines",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Computers [see also 10/23.A.6. and 7.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Types of computers: analogue and digital computers, hybrid computer systems",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Programming systems: the encoding and entering of instructions into computer memory, the concept of software, the systems approach to writing computer programs",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Computer languages",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Applications of microcomputers, minicomputers, and supercomputers",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Developments in artificial intelligence: devising expert systems; natural-language processing; computer vision; robotics",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "General information-recording devices",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Simple recording implements and devices; e.g., writing implements, slates, chalkboards",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Typewriters and word processors",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Printing machines and processes",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Production of printing plates: engraving and other techniques",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Mechanical techniques: woodcut, mechanical engraving, etching, lithography",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Photomechanical techniques: photoengraving",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Sound and video recording and reproducing devices [see also 128.E.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Mechanical systems: phonographs",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Magnetic systems: audio tape recorders, video tape recorders and players",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Optical systems: audio and video disk players",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Auxiliary equipment",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "High-fidelity concepts and systems",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "The technology of photography",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Still photography [see also 628. D.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Motion-picture and television photography [see also 623. A.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Holography: laser photography [see also 128.B.4.C.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "H",
+      "levelType": "major",
+      "text": "Information processing and systems",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Elements of information processing",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Analog and digital forms of information",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Recording and storage: image scanning and optical character recognition; mass storage via electromagnetic and electro-optical media (e.g magnetic and digital-audio tape and disk, and optical disk, respectively)",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Organization and retrieval: indexes and indexing; bibliographic and numeric databases; computerized catalogs in libraries and library networks",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Display and dissemination: television monitors and interactive computer terminals; electronic mail, bulletins, and teleconferencing; electronic printing and photocomposition; speech synthesis",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Types of information systems",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Organizational systems",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Management-oriented systems (executive, command and control, and decision support)",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Administration-oriented systems (financial, personnel, and project management)",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Service-oriented systems (manufacturing, transaction processing, and expert)",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Public information utilities (on-line database search systems)",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Educational and reference systems",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Dictionaries and lexicons",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Encyclopaedias",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Atlases and map collections",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "I",
+      "levelType": "major",
+      "text": "Major systems of communication",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Book, newspaper, and magazine publishing",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Postal systems and equipment",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Telegraph systems and equipment",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Telephone and telecommunications systems and equipment",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Radio communications systems and equipment",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Television communications systems and equipment",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Communications satellite systems and equipment",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Electronic networks",
+          "children": []
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "Encryption and decryption techniques and devices: signal security and message authentication, history of cryptology",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "J",
+      "levelType": "major",
+      "text": "Major systems of detection and remote sensing",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Radar systems and equipment",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Sonar systems and equipment",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "K",
+      "levelType": "major",
+      "text": "Electronic components and techniques used in communications",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Components",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Active components: vacuum and gas-filled tubes, semiconductor devices",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Passive components: resistors, capacitors, and inductors; other solid-state devices; antennas and waveguides",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Integrated circuits: miniature arrays of interconnected active or passive circuit elements (e.g., microprocessors)",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Sensing devices and transducers; e.g., piezoelectric devices, photomultiplier tubes",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A",
+      "targetSection": "10/23",
+      "targetPath": "F"
+    },
+    {
+      "fromPath": "D",
+      "targetSection": "10/23",
+      "targetPath": "A.6"
+    },
+    {
+      "fromPath": "F",
+      "targetSection": "128",
+      "targetPath": "E"
+    },
+    {
+      "fromPath": "G.1",
+      "targetSection": "628",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "G.2",
+      "targetSection": "623",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "G.3",
+      "targetSection": "128",
+      "targetPath": "B.4.C"
+    }
+  ],
+  "macropaediaReferences": [
+    "communications systems",
+    "Encyclopaedias and Libraries Printing, Typography.",
+    "Broadcasting",
+    "and Photoengraving",
+    "Computer Science Dictionaries Motion Pictures",
+    "Computers Information Photography Publishing",
+    "Processing and Postal Systems Telecommunications",
+    "Cryptology",
+    "' Electronics Information Systems Systems"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-03"
+}

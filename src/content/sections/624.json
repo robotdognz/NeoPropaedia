@@ -1,0 +1,452 @@
+{
+  "sectionCode": "624",
+  "sectionCodeDisplay": "624",
+  "title": "Music",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The art of music",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Diverse conceptions of music as an art",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Problems of musical meaning",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Musical performance and interpretation",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The relation of music to other human activities ' [see also E.3., below)",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Writings about music",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The sources of musical sound",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The physical aspects of musical sound: tone, movement, pitch, timbre [see C., below and 128.E.6.)",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The human voice: techniques, styles, and historical developments of the art of singing in Western and non- Western cultures",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Musical instruments: the history, technology, and technique of classes and specific types of instruments",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Idiophonic and membranophonic instruments: instruments that produce sound by means of percussion",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Aerophonic instruments: instruments that produce sound by the vibration of a column of air",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Chordophonic instruments: instruments that produce sound by the vibration of struck, plucked, or bowed strings",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Electrophonic instruments: instruments that produce sound by electrical, electromechanical, or electronic means; e.g., electronic organs, tape recorders, synthesizers, computers",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The elements of music: their patterning and modes of organization in composition",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Pitch",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Interval: the difference in pitch between two tones",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Scale: a pattern of pitch relationships expressed as a series of intervals dividing an octave",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Tuning and temperament: the organization and modification of systems of pitch relationships",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Motive and theme",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Mode, melody type, tune family",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Duration (time)",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Metre",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Rhythm",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Tempo",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Timbre",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Harmony",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Counterpoint",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Texture: monophonic, homophonic, heterophonic, polyphonic",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Orchestration and instrumentation",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Form in music: the design and structures whereby musical ideas are presented",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Musical notation",
+      "children": []
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Musical forms and genres: the types of musical composition",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Forms and genres characterized by the medium of performance",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Instrumental music [see 2., below]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Vocal music",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Vocal music for solo performance; e.g., liturgical chant, secular song, lied, aria",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Choral music; e.g., mass, motet, cantata, oratorio",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Vocal music for several voices, the parts for either solo or choral performance; e.g., madrigal, glee",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Electrophonic music: e.g., tape music, computer music",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Forms and genres characterized by the technique of composition",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Musical compositions with fully notated structures",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Sonata",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Symphony",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Concerto",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Variation forms; e.g., chaconne, passacaglia, variation set",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Fugue",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Jazz: music combining notated material with extemporaneous performance",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "General considerations about jazz: its differentiation from and relation to folk music, popular music, and \"art\" music; its emphasis on the performer as creator; the importance of improvisation; its reflection of social and cultural forces",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Development of jazz styles",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Forms and genres characterized by function or by social setting",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Liturgical music",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Chamber music",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Music for the theatre",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Opera",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Music for theatrical dance; e.g., ballet, modern dance [see also 625]",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Music theatre; e.g., musical, operetta, zarzuela, no theatre [see also 622]",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Incidental and background music; e.g., for the theatre, for motion pictures and television",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Genres determined by the cultural milieu: primitive, folk, and popular music",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Recording and reproduction of music",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Types of music reproduction; e.g., mechanical, magnetic, optical [see 735. F.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Techniques of music recording: the role of the producer",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Effects of music recording: on composition, on teaching, on criticism, on performance, on musicology",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Development of music recording",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "G",
+      "levelType": "major",
+      "text": "The history of music",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Western music",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "E.1.a",
+      "targetSection": "2",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "E.3.i.ii",
+      "targetSection": "625",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "E.3.i.iii",
+      "targetSection": "622",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "F.1",
+      "targetSection": "735",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "African Arts East Asian Arts Musical Forms and Southeast Asian",
+    "American Peoples, Folk Arts Genres Arts",
+    "Arts of Native Mozart Musical",
+    "Music, The Art of",
+    "Bach Instruments",
+    "Beethoven Music, The History Oceanic Arts",
+    ",Central Asian Arts of Western South Asian Arts"
+  ],
+  "partNumber": 6,
+  "divisionId": "6-02"
+}

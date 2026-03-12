@@ -1,0 +1,307 @@
+{
+  "sectionCode": "321",
+  "sectionCodeDisplay": "321",
+  "title": "Chemicals and the Vital Processes 1",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The inorganic milieu of living systems",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Organic chemicals participating naturally in the life processes",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Carbohydrates",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Lipids",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Proteins and peptides",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The major carrier of chemical energy: ATP",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Nucleic acids",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "General features",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Deoxyribonucleic acid (DNA)",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Ribonucleic acid (RNA)",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Biological pigments and coloration",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Enzymes",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Vitamins",
+          "children": []
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "Hormones",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "General features of hormones: relationship between endocrine regulation and neural regulation, the evolution of hormones",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The hormones of vertebrates",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The hormones and hormonelike substances of invertebrates: neurohormones, molting hormones, pheromones",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The hormones of plants",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "10",
+          "levelType": "numeric",
+          "text": "Other natural products: alkaloids, steroids and sterols, isoprenoids and terpenes",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Drugs: chemicals administered to an organism to change its physiological state or to combat pathogens",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Sources and development of drugs",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "General aspects of drug action",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Absorption, distribution, metabolism, and excretion of drugs",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Classification of drugs by organ or organ system of principal effect",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Drugs affecting the cardiovascular system",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Drugs affecting smooth and skeletal muscle systems",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Drugs affecting the central nervous system",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Drugs affecting the autonomic nervous system and the eyes",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Drugs affecting the excretory system",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Drugs affecting the digestive system",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Drugs affecting the reproductive systems",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Drugs affecting the immune response system",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Drugs affecting the histamine response system",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Drugs directed against disease organisms",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Drugs derived from living microorganisms: antibiotics",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Chemical compounds used to treat infectious diseases: chemotherapeutic drugs",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Drugs directed at the suppression of cancer",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Drug use and abuse: the nature of drug addiction and dependence [see 522.C.9.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Ethyl alcohol, alcohol consumption [see 522.C.9.]",
+      "children": []
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Biocides and biorepellents",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Antiseptics and disinfectants",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Biocides directed by mankind against animal and plant pests",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Biotoxins produced by microorganisms, plants, and animals: microbial toxins, phytotoxins, zootoxins",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Biological and chemical warfare agents [see 736.A.6.]",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "C.7",
+      "targetSection": "522",
+      "targetPath": "C.9"
+    },
+    {
+      "fromPath": "D",
+      "targetSection": "522",
+      "targetPath": "C.9"
+    },
+    {
+      "fromPath": "E.4",
+      "targetSection": "736",
+      "targetPath": "A.6"
+    },
+    {
+      "fromPath": "F",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Biochemical Components of Organisms Drugs and Drug Action",
+    "Cells: Their Structures and Functions Poisons and Poisoning",
+    "Chemical Compounds"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-02"
+}

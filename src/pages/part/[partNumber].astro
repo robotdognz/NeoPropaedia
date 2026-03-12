@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import Breadcrumbs from '../../components/layout/Breadcrumbs.astro';
+import Sidebar from '../../components/layout/Sidebar.astro';
+import navigation from '../../data/navigation.json';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const parts = await getCollection('parts');
+  const essays = await getCollection('essays');
+  return parts.map((part) => {
+    const essay = essays.find((e) => e.data.partNumber === part.data.partNumber);
+    return {
+      params: { partNumber: String(part.data.partNumber) },
+      props: { part: part.data, essay },
+    };
+  });
+}
+
+const { part, essay } = Astro.props;
+let EssayContent: any = null;
+if (essay) {
+  const { Content } = await render(essay);
+  EssayContent = Content;
+}
+const base = import.meta.env.BASE_URL;
+
+const PART_NAMES: Record<number, string> = {
+  1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five',
+  6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine', 10: 'Ten',
+};
+
+const partNav = navigation.parts.find((p) => p.partNumber === part.partNumber);
+const divisions = partNav?.divisions ?? [];
+
+const partColors: Record<number, string> = {
+  1: 'text-blue-800 border-blue-300',
+  2: 'text-emerald-800 border-emerald-300',
+  3: 'text-green-700 border-green-300',
+  4: 'text-red-700 border-red-300',
+  5: 'text-violet-700 border-violet-300',
+  6: 'text-orange-700 border-orange-300',
+  7: 'text-cyan-700 border-cyan-300',
+  8: 'text-indigo-700 border-indigo-300',
+  9: 'text-pink-700 border-pink-300',
+  10: 'text-amber-700 border-amber-300',
+};
+
+const bgColors: Record<number, string> = {
+  1: 'bg-blue-800',
+  2: 'bg-emerald-800',
+  3: 'bg-green-600',
+  4: 'bg-red-600',
+  5: 'bg-violet-700',
+  6: 'bg-orange-600',
+  7: 'bg-cyan-700',
+  8: 'bg-indigo-700',
+  9: 'bg-pink-700',
+  10: 'bg-amber-700',
+};
+
+const breadcrumbItems = [
+  { label: 'Home', href: `${base}/` },
+  { label: `Part ${PART_NAMES[part.partNumber]}: ${part.title}` },
+];
+---
+
+<BaseLayout title={`Part ${PART_NAMES[part.partNumber]}: ${part.title} — Propaedia`}>
+  <div class="flex min-h-screen">
+    <Sidebar navigation={navigation.parts} currentPartNumber={part.partNumber} />
+
+    <main id="main-content" class="flex-1 min-w-0 px-4 sm:px-8 py-6">
+      <Breadcrumbs items={breadcrumbItems} />
+
+      <header class="mb-10">
+        <div class="flex items-center gap-3 mb-2">
+          <span class={`inline-flex items-center justify-center w-10 h-10 rounded-full text-white font-bold ${bgColors[part.partNumber]}`}>
+            {part.partNumber}
+          </span>
+          <span class="text-sm font-sans font-medium text-gray-500 uppercase tracking-wide">
+            Part {PART_NAMES[part.partNumber]}
+          </span>
+        </div>
+        <h1 class="text-4xl font-serif font-bold text-gray-900 mb-2">
+          {part.title}
+        </h1>
+        {part.subtitle && (
+          <p class="text-lg text-gray-600">{part.subtitle}</p>
+        )}
+      </header>
+
+      <!-- Introductory Essay -->
+      {EssayContent && (
+        <section class="mb-10">
+          <details class="group">
+            <summary class="cursor-pointer text-lg font-sans font-semibold text-gray-700 flex items-center gap-2">
+              <svg class="w-5 h-5 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+              Introductory Essay
+              {essay?.data.author && (
+                <span class="text-sm font-normal text-gray-500">by {essay.data.author}</span>
+              )}
+            </summary>
+            <div class="mt-4 pl-7 prose-propaedia">
+              <EssayContent />
+            </div>
+          </details>
+        </section>
+      )}
+
+      <!-- Divisions List -->
+      <section>
+        <h2 class="text-2xl font-sans font-bold text-gray-800 mb-6">Divisions</h2>
+        <div class="space-y-4">
+          {divisions.map((div) => (
+            <a href={`${base}/division/${div.divisionId}`}
+              class={`block rounded-lg border-2 p-5 transition-all hover:shadow-md ${partColors[part.partNumber]}`}>
+              <div class="flex items-center gap-3 mb-2">
+                <span class="font-mono text-sm font-semibold text-gray-500">
+                  Division {div.romanNumeral}
+                </span>
+              </div>
+              <h3 class="text-xl font-serif font-bold">
+                {div.title}
+              </h3>
+              {div.sections.length > 0 && (
+                <p class="text-sm text-gray-500 mt-2">
+                  {div.sections.length} {div.sections.length === 1 ? 'section' : 'sections'}
+                </p>
+              )}
+            </a>
+          ))}
+        </div>
+      </section>
+    </main>
+  </div>
+</BaseLayout>

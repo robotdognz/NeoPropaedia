@@ -1,0 +1,161 @@
+{
+  "sectionCode": "431",
+  "sectionCodeDisplay": "431",
+  "title": "Human Nature and Experience: General Considerations",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The relative contribution of opposing factors in human behaviour and conscious experience, the degree to which these factors interact to produce human behaviour and conscious experience",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Mankind as radically distinct from nature and mankind as homogeneous and continuous with the rest of nature",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Behavioral capacities and performances that humans have in common with other primates and higher mammals",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Behavioral capacities and performances held to be distinctive of humans; e.g., propositional language, cumulative transmission of culture",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The explanation of allegedly distinctive human traits in accordance with the principle of phylogenetic continuity: the evolutionary development of mankind [see also 341 and 411]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The relative weights of genetic and environmental factors: the nature-nurture controversy",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Elements of genetic endowment; e.g., physiological and psychological characteristics, reflexes and instincts",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Environmental conditions; e.g., ecological factors, cultural conditioning, personal socialization experiences",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Cognitive, conative, and affective dimensions of behaviour and experience",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The cognitive dimension: sensation and perception; memory and imagination; concept formation, ideation, and reasoning",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The conative dimension: desires, needs, cravings, drives; motivation and purpose; the voluntary and the involuntary",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The affective dimension: the emotions, the pleasant and the unpleasant; the sentiments",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The observed elements of behaviour and the inferred dispositional tendencies: actions and powers; habits, inclinations, and capacities",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Emergent problems in the study of human behaviour and experience: the data and hypotheses of parapsychology; the comparison of human and artificial, machine-created intelligence",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Stages in the development of human behaviour",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General aspects of human development",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Prenatal growth and development",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Birth: effects of the birth experience on the person's subsequent history",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Infancy: the first 18 months",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Early childhood and childhood: one to 12 years",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Adolescence: puberty to adulthood",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Young adulthood and maturity",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1.c",
+      "targetSection": "341",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.8",
+      "targetSection": "338",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Behaviour, The Development of Human"
+  ],
+  "partNumber": 4,
+  "divisionId": "4-03"
+}

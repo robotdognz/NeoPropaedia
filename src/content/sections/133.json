@@ -1,0 +1,487 @@
+{
+  "sectionCode": "133",
+  "sectionCodeDisplay": "133",
+  "title": "The Solar System",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "A survey of the solar system",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The Sun [see B., below]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The major planets of the solar system, their surfaces and atmospheres, their satellites [see C., D., and E., below]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Other constituents of the solar system",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Minor planets, or asteroids",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Comets",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Meteoroids, meteors, and meteorites",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The interplanetary medium",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Regularities of the solar system: the distances of the planets from the Sun, the distribution of natural satellites",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Interactions among various bodies in the solar system: gravitational perturbations, actual physical encounters",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Theories of the origin of the solar system: origin by an orderly process, origin by catastrophe [see also 131.E.2.C.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The Sun",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The Sun's surface layers and their features: the quiet Sun",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Solar data derived from observations of the photosphere, the visible luminous surface of the Sun",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The chromosphere, the relatively transparent layer that forms a transition zone between the Sun's photosphere and corona: the flash spectrum, spicules, supergranulation",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The corona, the luminous, high-temperature, rarefied gas envelope of the Sun: form, structure, physical properties; the solar wind",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Solar features that occur with increased frequency during the active phase of the solar cycle: the active Sun",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Centres of activity: areas of localized strong magnetic fields at the Sun's surface",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Sunspots: their physical nature, the sunspot cycle of about 11 years",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Other features; e.g., faculae, prominences, flares, coronal condensations",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The solar interior: energy generation, the evolution of the Sun [see also 132.D.7.]",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Solar radiation, including light, radio waves, and particles",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Solar-terrestrial relationships and interactions",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The planets and their satellites",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The terrestrial planets",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Mercury",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Venus",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Earth [see D., below]",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Mars",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The minor planets, or asteroids [see A. 3.a., above]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The giant planets and Pluto",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Jupiter",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Saturn",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Uranus",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Neptune",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Pluto",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The Earth as a planet",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The distance of the Earth from the Sun: the astronomical unit and solar parallax",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The orbital motion of the Earth around the Sun and the rotation of the Earth on its axis: the year, the day, the precession of the equinoxes [see also E.7.a., below]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Effects of the Earth's orbital position and speed on astronomical observations",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Astronomical parallax",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Aberration of light",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The Earth's magnetism, temperature, and other physical properties [see 212]",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The structure and composition of the Earth's interior [see 213]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The origin of the Earth, its atmosphere, hydrosphere, and surface features [see 232 and 241]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "The Moon",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The shape, radius, mean density, and varying brightness of the Moon",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The motion of the Moon",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The apparent motion: the month, or sidereal and synodic periods of the Moon; optical and physical librations [see 7.a.ii., below]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The actual motion , 3. The mass and gravitational field of the Moon",
+              "children": []
+            },
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Underlying theory: basic gravitational properties of the Moon",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Discovery of lunar mascons: gravity anomalies on the Moon",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The physical nature of the Moon",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Observations from Earth and from space vehicles: results of remote lunar photography, manned lunar landings, and close-up photography [see also 738. C.[",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The lunar surface features: craters, lineaments (e.g mare ridges, the lunar grid system, rilles), temporary or transient features",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Theories of origin of the Moon's surface features: the volcanic and impact theories",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The origin and evolution of the Moon",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Probable development of the Moon's orbit",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Evidence from the composition and physical properties of the Moon",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The chemical nature of the Moon",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Surface composition: findings of the chemical analysis of lunar rock samples",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Possible zonal variations of the interior",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The Sun-Earth-Moon system",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Relative motions of the Sun, Earth, and Moon",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The geometry of the Sun-Earth-Moon system: the celestial equator, the apparent motion of the Sun along the ecliptic, the inclination of the Earth's axis to its orbit",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Motions of the Sun-Earth-Moon system as the astronomical basis of chronology: the day, month, and year; the Sothic cycle, Metonic cycle, and other complex cycles",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Eclipses of the Sun and Moon",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.6",
+      "targetSection": "131",
+      "targetPath": "E.2.C"
+    },
+    {
+      "fromPath": "B.3",
+      "targetSection": "132",
+      "targetPath": "D.7"
+    },
+    {
+      "fromPath": "D.4",
+      "targetSection": "212",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D.5",
+      "targetSection": "213",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "D.6",
+      "targetSection": "232",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "E.2.a",
+      "targetSection": "7",
+      "targetPath": "a"
+    },
+    {
+      "fromPath": "E.4.a",
+      "targetSection": "738",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "E.7.c",
+      "targetSection": "222",
+      "targetPath": "G.3"
+    },
+    {
+      "fromPath": "E.7.c",
+      "targetSection": "21",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "E.7.c",
+      "targetSection": "10/32",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Calendar",
+    "Earth, The: Its Properties, Composition, and Structure",
+    "Eclipse, Occultation, and Transit",
+    "Physical Sciences, The",
+    "Solar System, The"
+  ],
+  "partNumber": 1,
+  "divisionId": "1-03"
+}

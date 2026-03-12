@@ -1,0 +1,625 @@
+{
+  "sectionCode": "127",
+  "sectionCodeDisplay": "127",
+  "title": "Electricity and Magnetism",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The static electric charge",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General phenomena of static electricity",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The basic laws of electrostatics that relate the interaction of charged bodies at rest",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The electrostatic field",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The electric dipole",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Electrostatic energy and force",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Electricity in the atmosphere [see also 212. C., 221. A.3.b., and 223.B.2.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Electrostatics of dielectrics and capacitors: polarization",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Electrostatic potential",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "High-voltage phenomena",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Electric fields and potential distributions in two and three dimensions",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Measurement of electrostatic forces and fields [see 723.D. l.e.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Moving charges and electric currents",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Direct electric current: current that flows in one direction",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "General phenomena of moving electric charges: definitions of electric quantities and their units",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Electromotive force",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Behaviour of direct currents in electric circuits: Ohm's law; Kirchhoff's laws; the principles of devices that measure or indicate the presence of current, potential difference, and resistance",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The conduction of electricity",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The motion of charged particles in an electric field",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The mechanisms of the conduction of electricity: in a vacuum, in gases, in liquids and solids, in metals and semiconductors",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Thermoelectric effects: phenomena in which electric energy is transformed into thermal energy or vice versa",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Electron emission: thermionic emission, secondary emission, photoelectric emission '3. Alternating electric currents: current that reverses itself with uniform frequency",
+              "children": []
+            },
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Faraday's law of electromagnetic induction",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The mathematical and graphical representation of alternating currents",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Basic laws of alternating current circuits",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The detection and measurement of alternating currents and voltages [see 723.D. l.e.]",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Parallel resonant circuits",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Alternating current bridges for determining impedance",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Propagation of electric waves in cables",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Filters that select signals",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Transient phenomena of alternating circuits",
+              "children": []
+            },
+            {
+              "level": "j",
+              "levelType": "lowercase",
+              "text": "Eddy currents and skin, or surface, effects",
+              "children": []
+            },
+            {
+              "level": "k",
+              "levelType": "lowercase",
+              "text": "Principles of generation and transmission of ac single- and multiphase power",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Primary effects and properties of electric fields and currents",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Magnetic effects of steady electric currents [see C.2., below]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Magnetic effects of changing currents [see C.4., below]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Force, energy, and power associated with electromagnetic fields",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The generation of electromagnetic radiation by the changing of currents in circuits",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Effects of electricity on matter",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Piezoelectricity and applications of the phenomenon",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Optical effects: electroluminescence, Kerr effect, Stark effect",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Thermal effect: resistance heating",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Chemical effects: electrolysis, electro-osmosis, electrophoresis",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Bioelectric effects: effects associated with nerve, brain, and muscle action in which potential differences occur and can be influenced by applied potential",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Magnetism",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General phenomena of magnetic systems",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Magnetic effects of steady electric currents",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The magnetic field of steady currents: Ampere's law, the law of Biot and Savart",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The magnetic moment of a current loop",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The magnetic field of a solenoid",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Motion of charged particles in magnetic and electric fields",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The force on a moving charge",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Motion of charges in uniform flux density",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Motion of charges in combined electric and magnetic fields",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Magnetic dipole moments: atomic moments, nuclear moments, magnetic resonance",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Magnetic effects of varying currents",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The laws of electromagnetic induction",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Inductance and magnetic energy",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Properties of magnetic materials",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The classification of magnetic substances",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Induced and permanent atomic magnetic dipoles",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Magnetism of matter",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Diamagnetism",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Paramagnetism",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Ferromagnetism",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Antiferromagnetism",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Ferrimagnetism",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Terrestrial magnetism [see also 212.B.]",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Atomic structure and magnetism",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "The theory of fields in physics",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The definition of a field in physics: the scope of field theory",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Mathematical treatment of fields",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Classification of fields: material and nonmaterial fields; scalar, vector, and tensor fields",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Examples of scalar, vector, and tensor fields in ordinary space",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Fields with distributions in more than three dimensions",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "The electromagnetic field and the theory of electromagnetic radiation",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The classical theory of radiation",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The development of concepts and theories concerning the nature of light",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Semiquantitative treatment of electromagnetic radiation: Maxwell's equations for the electromagnetic nature of light",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The electromagnetic spectrum",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The quantum theory of radiation",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Evidences of the particle nature of electromagnetic radiation: Compton effect, photoelectric effect, Raman effect",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The wave-particle duality of the photon",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The interaction of electromagnetic radiation with atomic and molecular structures: absorption, emission, and scattering processes",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The relation of electromagnetic radiation to quantum theory and relativity",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The mathematical formulation of electromagnetic theory",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Maxwell's equations for electromagnetic fields and radiation",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Transmission of radiation in free space",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Wave equations in space bounded by conductors",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Scattering of electromagnetic waves",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Electromagnetic waves in material media",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "The functions of antennas",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Relativistic electrodynamics",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Electrodynamics in four-dimensional notation",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1.e",
+      "targetSection": "212",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.4",
+      "targetSection": "723",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "B.2.d",
+      "targetSection": "723",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "C.5.v.vi",
+      "targetSection": "212",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "F.2",
+      "targetSection": "10/32",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Electricity and Magnetism Energy Conversion",
+    "Electromagnetic Radiation"
+  ],
+  "partNumber": 1,
+  "divisionId": "1-02"
+}

@@ -1,0 +1,163 @@
+{
+  "sectionCode": "411",
+  "sectionCodeDisplay": "411",
+  "title": "Human Evolution",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The evolutionary process",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Human evolutionary relationships with living and fossil primates",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The primates",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Distinguishing characteristics of the primates",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The natural history of primate life",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Evolution and paleontology",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Classification of the primates: the two main groups or suborders, the prosimians (principally lemurs, lorises, and tarsiers) and the anthropoids (monkeys, apes, and man) [see also 313.F.25.C.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Distinguishing characteristics of the Hominidae",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Morphological characteristics",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Inferred behavioral characteristics",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Contrasting adaptations of Hominidae and Pongidae",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "The fossil record of the Hominidae",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The discovery and recognition of the hominid fossil record",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Classification of the Hominidae",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Australopithecus",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Homo habilis",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Homo erectus",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Homo sapiens",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Fossil remains of early Homo sapiens; e.g., Vertesszollos man, Ngaloba man, Border Cave man, Swanscombe man, Omo hominids",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "The Neanderthals",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The Cro-Magnons",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Homo sapiens of Africa",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.1.d",
+      "targetSection": "313",
+      "targetPath": "F.25.C"
+    },
+    {
+      "fromPath": "C.2.v",
+      "targetSection": "10/36",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Evolution, Human",
+    "Life"
+  ],
+  "partNumber": 4,
+  "divisionId": "4-01"
+}

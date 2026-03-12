@@ -1,0 +1,106 @@
+{
+  "sectionCode": "322",
+  "sectionCodeDisplay": "322",
+  "title": "Metabolism: Bioenergetics and Biosynthesis",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Photosynthesis: the initiation of energy conversion in the biosphere [see also 335. B.j",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The biological importance of photosynthesis",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Factors that influence the rate of photosynthesis and the energy efficiency of photosynthesis",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Determination of the mechanism of photosynthesis",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The site of the photosynthetic process in green plants: the chloroplast",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The photosynthetic pigments",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "The energetics of photosynthesis: photoelectron transfer, photophosphorylation",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "The metabolic path of carbon in photosynthesis: the carbon reduction cycle",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Metabolism: the totality of all chemical processes in the living organism",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The fragmentation of complex molecules: catabolism",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The combustion of food materials and the conservation of part of the energy in them: cellular respiration, oxidation and transduction",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The biosynthesis of cell components: anabolism",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Regulation of metabolism",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A",
+      "targetSection": "335",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Cells: Their Structures and Functions",
+    "Metabolism",
+    "Photosynthesis"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-02"
+}

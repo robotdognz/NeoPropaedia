@@ -1,0 +1,232 @@
+{
+  "sectionCode": "338",
+  "sectionCodeDisplay": "338",
+  "title": "Development: Growth, Differentiation, and Morphogenesis",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The nature and scope of biological development",
+      "children": []
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The constituent processes of development and their control",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Growth",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Morphogenesis",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Differentiation",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Control and integration of development",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Development of plants",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "General features: types of life cycles, alternation of generations as independent phases of the life cycle",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Preparatory events",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Formation of sex cells",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Pollination",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Fertilization",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Early development: from fertilized egg (zygote) to seedling",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Embryo formation",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Independent dormant stages and germination of the seeds and fruits of higher plants, dispersal",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Later development: the sporophyte plant body",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Development of animals",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Preparatory events: the egg and its activation by normal fertilization or by parthenogenesis",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Early development",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Embryo formation: cleavage, gastrulation",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Embryonic adaptations for the maintenance of the developing embryo: shell, yolk stores, membranous sacs, placenta",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Organ formation",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Postembryonic development: transformation of the newborn into the adult",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "Aging and decline in animals: life span, death [for aging in humans, see 422. A.]",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Senescence in mammals",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Causes of aging",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The duration of life",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "F",
+      "levelType": "major",
+      "text": "Specialized patterns of development",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Biological regeneration",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The healing processes and scar tissue formation",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Biological malformation",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Twinning: multiple births",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Development in vitro: cell and tissue cultures",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "E",
+      "targetSection": "422",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "F.6",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Death",
+    "Growth and Development, Biological",
+    "Division III. Section 339 129"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-03"
+}

@@ -1,0 +1,331 @@
+{
+  "sectionCode": "733",
+  "sectionCodeDisplay": "733",
+  "title": "Construction Technology",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "General building construction",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Preconstruction planning: design programming, drafting",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Surveying procedures: techniques for laying out building foundations [see also 723.D.2.c.ii.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Building materials",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Earth, clay, and sod",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Vegetable matter: thatch, reeds, and other materials",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Lumber",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Bricks and tiles: other fired clay and ceramics [see 724.C.5.d.]",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Stone",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Mortar, cement, Portland cement, and plaster [see 724.C.5.b.]",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Metals; e.g., iron, steel, aluminum, copper [see 724.C.3.]",
+              "children": []
+            },
+            {
+              "level": "h",
+              "levelType": "lowercase",
+              "text": "Glass [see 724,C.5.a.]",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Concrete, reinforced concrete, and prestressed concrete",
+              "children": []
+            },
+            {
+              "level": "j",
+              "levelType": "lowercase",
+              "text": "Composition materials, plastics",
+              "children": []
+            },
+            {
+              "level": "k",
+              "levelType": "lowercase",
+              "text": "Structural fabrics",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Testing of building materials",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Construction machinery",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Transport machinery",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Lifting machinery; e.g., cranes, cables, ropes",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Construction techniques",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Wood and timber construction",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Masonry construction",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Concrete construction",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Steel construction",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Building components",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Foundations and footings",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Structural systems",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Floor systems",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Roof systems",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Space-enclosure systems",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Interior finishes: e.g., carpeting, hardware, ceiling systems",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Auxiliary systems",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Plumbing systems",
+              "children": [
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Heating, ventiliating, and air-conditioning systems",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "Electrical wiring",
+                  "children": []
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Systems for illumination: interior and exterior lighting",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "level": "v",
+              "levelType": "lowercase",
+              "text": "Vertical transport systems; e.g., elevators, moving stairways",
+              "children": [
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Life-safety systems",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Acoustics and sound-control techniques",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Construction of civil engineering works",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Dams",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Aqueducts",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Bridges",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Underground construction",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Harbour and hydraulic works",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Lighthouses and lightships",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.2",
+      "targetSection": "723",
+      "targetPath": "D.2.c"
+    },
+    {
+      "fromPath": "A.3.d",
+      "targetSection": "724",
+      "targetPath": "C.5.d"
+    },
+    {
+      "fromPath": "A.3.f",
+      "targetSection": "724",
+      "targetPath": "C.5.b"
+    },
+    {
+      "fromPath": "A.3.g",
+      "targetSection": "724",
+      "targetPath": "C.3"
+    },
+    {
+      "fromPath": "A.3.h",
+      "targetSection": "724",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C",
+      "targetSection": "10/37",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Analysis and Measurement, Physical and Chemical",
+    "Building Construction",
+    "Drafting",
+    "Public Works"
+  ],
+  "partNumber": 7,
+  "divisionId": "7-03"
+}

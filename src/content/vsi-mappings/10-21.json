@@ -1,0 +1,120 @@
+{
+  "sectionCode": "10/21",
+  "mappings": [
+    {
+      "vsiTitle": "The History of Mathematics",
+      "vsiAuthor": "Jacqueline Stedall",
+      "rationale": "Directly covers the historical development of mathematics from ancient through modern times, the central topic of section A."
+    },
+    {
+      "vsiTitle": "Mathematics",
+      "vsiAuthor": "Timothy Gowers",
+      "rationale": "Provides an overview of mathematical concepts and foundations, relevant to both the historical development (A) and foundational questions (B) of this section."
+    },
+    {
+      "vsiTitle": "Numbers",
+      "vsiAuthor": "Peter M. Higgins",
+      "rationale": "Section A.2.a covers numeral systems from Egyptian to positional systems, and section B.2 discusses cardinal number and set theory foundations."
+    },
+    {
+      "vsiTitle": "Algebra",
+      "vsiAuthor": "Peter M. Higgins",
+      "rationale": "Section A.2.e covers the history of algebra from Babylonian through modern European developments, including the evolution of algebraic equations."
+    },
+    {
+      "vsiTitle": "Geometry",
+      "vsiAuthor": "Maciej Dunajski",
+      "rationale": "Section A.2.d covers the historical development of geometry from ancient through modern forms, including non-Euclidean geometry, projective geometry, and topology."
+    },
+    {
+      "vsiTitle": "Trigonometry",
+      "vsiAuthor": "Glen Van Brummelen",
+      "rationale": "Trigonometry is part of the broader historical development of geometry and analysis covered in section A.2.d."
+    },
+    {
+      "vsiTitle": "Probability",
+      "vsiAuthor": "John Haigh",
+      "rationale": "Section A.3 covers the historical development of probability theory, including the abstract calculus of probability and alternative views of probability."
+    },
+    {
+      "vsiTitle": "Statistics",
+      "vsiAuthor": "David J. Hand",
+      "rationale": "Section A.3.b covers the development of mathematical statistics, including stochastic processes and control theory."
+    },
+    {
+      "vsiTitle": "Infinity",
+      "vsiAuthor": "Ian Stewart",
+      "rationale": "The concept of infinity is central to the foundations of mathematics (section B), including set theory, Cantor's work, and the crisis after 1900."
+    },
+    {
+      "vsiTitle": "Gödel's Theorem",
+      "vsiAuthor": "A. W. Moore",
+      "rationale": "Section B.3 covers the crisis in foundations after 1900, including the paradoxes and the metamathematical method that Gödel's theorems epitomize."
+    },
+    {
+      "vsiTitle": "Logic",
+      "vsiAuthor": "Graham Priest",
+      "rationale": "Section B.3 discusses Logicism, Intuitionism, and Formalism as alternative philosophical positions on the foundations of mathematics, deeply connected to logic."
+    },
+    {
+      "vsiTitle": "Russell",
+      "vsiAuthor": "A. C. Grayling",
+      "rationale": "Russell's Logicism and the crisis in foundations (section B.3.c) are central to this section's coverage of the foundations of mathematics."
+    },
+    {
+      "vsiTitle": "The Computer",
+      "vsiAuthor": "Darrel Ince",
+      "rationale": "Section A.2.c covers the evolution of computational devices from the abacus to electronic digital computers, directly relevant to this VSI."
+    },
+    {
+      "vsiTitle": "The History of Computing",
+      "vsiAuthor": "Doron Swade",
+      "rationale": "Section A.2.c.iii traces the evolution of digital devices from the abacus to modern computers, which is the history of computing."
+    },
+    {
+      "vsiTitle": "Leibniz",
+      "vsiAuthor": "Maria Rosa Antognazza",
+      "rationale": "Leibniz co-developed calculus (section A.1.b.i) and contributed to the foundations of mathematical reasoning, both central to this section."
+    },
+    {
+      "vsiTitle": "Newton",
+      "vsiAuthor": "Rob Iliffe",
+      "rationale": "Section A.1.b.i specifically names Newton as co-discoverer of calculus in the 17th century, a landmark in the history of mathematics."
+    },
+    {
+      "vsiTitle": "Number theory",
+      "vsiAuthor": "Robin Wilson",
+      "rationale": "Number theory and its historical development from ancient through modern times is part of the broader mathematical history covered in this section."
+    },
+    {
+      "vsiTitle": "Ancient Greek and Roman Science",
+      "vsiAuthor": "Liba Taub",
+      "rationale": "Section A.1.a.ii covers Greek and Hellenistic mathematics, which is part of the broader scientific achievements of the ancient Greek world."
+    },
+    {
+      "vsiTitle": "Combinatorics",
+      "vsiAuthor": "Robin Wilson",
+      "rationale": "Combinatorics is part of the broader historical development of mathematical branches covered in section A."
+    },
+    {
+      "vsiTitle": "Fractals",
+      "vsiAuthor": "Kenneth Falconer",
+      "rationale": "Fractals represent a 20th-century development in geometry and analysis mentioned in the modern mathematical developments of section A.1.b.iii."
+    },
+    {
+      "vsiTitle": "Topology",
+      "vsiAuthor": "Richard Earl",
+      "rationale": "Section A.2.d.vi lists topology as a modern idea in geometry, part of the historical development of mathematical concepts."
+    },
+    {
+      "vsiTitle": "Mathematical Analysis",
+      "vsiAuthor": "Richard Earl",
+      "rationale": "The development of calculus and analysis is a major thread in the history of mathematics covered in sections A.1.b.i through A.1.b.iii."
+    },
+    {
+      "vsiTitle": "Applied mathematics",
+      "vsiAuthor": "Alain Goriely",
+      "rationale": "The relationship between pure and applied mathematics is part of the broader historical development covered in section A, including contributions from physical science."
+    }
+  ]
+}

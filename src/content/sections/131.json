@@ -1,0 +1,380 @@
+{
+  "sectionCode": "131",
+  "sectionCodeDisplay": "131",
+  "title": "The Cosmos 5",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The structure and properties of the universe",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Basic data for the universe",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The estimated chemical composition of the universe [see also 121.D.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The large-scale structure and behaviour of the universe: evidence that the universe is expanding, Hubble's law and the theory of the red shift",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The age of the universe",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The clustering of galaxies",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Cosmic microwave background radiation",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "The missing mass problem",
+              "children": []
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "Space-time: a four-dimensional continuum used to describe the universe",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Cosmological models: theoretical representations of the original behaviour of the universe [see E.I., below]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The known and postulated components of the universe",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Distant galaxies [see 132. A.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The Local Group of galaxies [see 132.A.1.C.]",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Quasars and related objects, including such hypothetical phenomena as supermassive black holes at the centres of galaxies",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Nebulae",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Stars and stellar groups [see 132.C. and 132.D.]",
+              "children": []
+            },
+            {
+              "level": "f",
+              "levelType": "lowercase",
+              "text": "Planetary systems: solar and extrasolar systems [see also 133.A.]",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Gravitation: a universal force of mutual attraction that is postulated as acting between all matter",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Development of gravitational theory",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Early concepts: the Aristotelian viewpoint, contributions of Kepler and Galileo",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Newton's law of gravity [see also 126.A.3.b.v.]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Interpretation of gravity measurements",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Potential theory: mathematical representation of the gravitational fields of irregular mass distributions [see also 10/22. D.2.C.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Effects of local mass differences: measurement of small gravity anomalies",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Modem gravitational theory and its relation to other aspects of physical theory",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Field theories of gravity and their general properties and predictions",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Gravitational fields and the general theory of relativity: principles and consequences [see D.2., below]",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Acceleration of gravity on the Earth's surface [see 212.A.]",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The gravitational constant, G: methods of measurement, possible variation in time and space",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Celestial mechanics [see 126.B]",
+      "children": []
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Properties of the space-time continuum: the astronomical implications of relativity theory",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The special theory of relativity",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Historical background: the search for the ether",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Relativity of space and time",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Consequences of the special theory",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The general theory of relativity",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Use of relativity to interpret gravitational phenomena",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Experimental confirmation of the theory",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Implications of general relativity",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "E",
+      "levelType": "major",
+      "text": "The origin and development of the universe",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The development of the universe as a whole",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Big-bang versus steady-state models of the universe",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Primordial nucleosynthesis",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The early universe: extrapolations backward in time to the beginning of the universe",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The formation and development of components of the universe: galaxies, stars, the solar system [see also 132.B., 132.D., and 133.A.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The origin and development of galaxies: protogalaxies",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The formation and development of stars",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The origin of the solar system",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Time scale of the universe: dating of significant events in the history of the universe",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1.a",
+      "targetSection": "121",
+      "targetPath": "D"
+    },
+    {
+      "fromPath": "A.3.a",
+      "targetSection": "132",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.3.b",
+      "targetSection": "132",
+      "targetPath": "A.1.C"
+    },
+    {
+      "fromPath": "A.3.e",
+      "targetSection": "132",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "A.3.f",
+      "targetSection": "133",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "B.1.b",
+      "targetSection": "126",
+      "targetPath": "A.3.b"
+    },
+    {
+      "fromPath": "B.2.a",
+      "targetSection": "10/22",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.4",
+      "targetSection": "212",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "C",
+      "targetSection": "126",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "E.2",
+      "targetSection": "132",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "E.4",
+      "targetSection": "10/32",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Analysis and Measurement, Physical and Chemical",
+    "Cosmos, The",
+    "Gravitation",
+    "Physical Sciences, The",
+    "Relativity"
+  ],
+  "partNumber": 1,
+  "divisionId": "1-03"
+}

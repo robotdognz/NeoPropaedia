@@ -1,0 +1,246 @@
+{
+  "sectionCode": "422",
+  "sectionCodeDisplay": "422",
+  "title": "Human Health",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "Stages in the human life cycle",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Fertilization: the beginning of life [see also 331.E.]",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Prenatal development [see also 338. B.]",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "- Birth",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Postnatal development [see also 338. B.]",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "Reproduction [see also 337]",
+          "children": []
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Aging",
+          "children": []
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Dying and death",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Definitions and ranges of normality in human health",
+      "children": []
+    },
+    {
+      "level": "C",
+      "levelType": "major",
+      "text": "Bodily mechanisms for the maintenance of human health during stress",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The maintenance of the internal environment and the adaptation of cells to severe stress",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Defenses against disease",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Maintenance of integrity of skin and mucosal linings",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Role of the phagocytic cells of the body",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Inflammation: the response to biological insult",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The immune response",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Role of the blood in the prevention of hemorrhage",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Healing: the processes of regeneration and organization in the repair of tissues",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The alarm reaction: preparation through the effects of certain hormones for either flight or resistance [see 421.E.l.b.]",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "D",
+      "levelType": "major",
+      "text": "Other regimes affecting standard values in human health",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Nutrition and diet",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Functions of food",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Classes of food",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Recommended intakes of nutrients to meet standards of physiological and metabolic requirements",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Feeding behaviour",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Therapeutic diets",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Exercise and physical conditioning",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Exercise needs: maintenance of health, avoidance of exercise injuries, and assessment of exercise adequacy",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Physiological responses to exercise and the effects of physical conditioning",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The state of sleep and its effects",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The nature of sleep: criteria for and problems in defining sleep",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Psychophysiological variations in sleep; e.g., rem, nrem, light and deep sleep, dreaming",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A.1",
+      "targetSection": "331",
+      "targetPath": "E"
+    },
+    {
+      "fromPath": "A.2",
+      "targetSection": "338",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.4",
+      "targetSection": "338",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A.5",
+      "targetSection": "337",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "C.5",
+      "targetSection": "421",
+      "targetPath": "E"
+    },
+    {
+      "fromPath": "D.3.c",
+      "targetSection": "10/35",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Death",
+    "Exercise and Physical Conditioning",
+    "Immunity",
+    "Nutrition"
+  ],
+  "partNumber": 4,
+  "divisionId": "4-02"
+}

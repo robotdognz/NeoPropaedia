@@ -1,0 +1,391 @@
+{
+  "sectionCode": "10/52",
+  "sectionCodeDisplay": "10/52",
+  "title": "The Nature and the Divisions of Philosophy",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The nature, scope, and methods of philosophy [for the major philosophical schools in the West, see 10/53; for the development of non-Western philosophy, see 10/51. B.)",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Diverse conceptions of philosophy",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Diverse views of the methods of philosophy",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The forms of philosophical exposition; e.g., dialogues, commentaries, histories, systematically ordered treatises",
+          "children": []
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "Criteria of meaning and truth in philosophical thought",
+          "children": []
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "The divisions of philosophy",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Metaphysics, or speculative philosophy in general",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The history, nature, and scope of metaphysics [for schools of thought in metaphysics, see 10/53.B. 1.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The relation of metaphysics to other parts of philosophy; e.g., ethics, logic, natural theology",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Problems in metaphysics",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The philosophy of nature: the philosophical problems concerning the phenomena, laws, and theories of the natural sciences [see also 10/31.B.]",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The history, status, and scope of the philosophy of nature",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The relation of the philosophy of nature to science, the philosophy of science, and metaphysics",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The basic aspects of the natural order",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The philosophy of physics",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "The philosophy of biology",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Epistemology, or theory of knowledge",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The history, nature, and scope of epistemology [for schools of thought in epistemology, see 10/53.C.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The relation of epistemology to metaphysics, philosophy of mind, logic, and other disciplines",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Problems in epistemology",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "4",
+          "levelType": "numeric",
+          "text": "The philosophy of mind, or philosophical psychology",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The history, nature, and scope of the philosophy of mind",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The relation of the philosophy of mind to the empirical and mathematical sciences and to other philosophical disciplines",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Problems in the philosophy of mind",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The philosophy of man, or philosophical anthropology",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The history, nature, and scope of philosophical anthropology [for schools of thought in philosophical anthropology, see 10/53. B.3.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The relation of philosophical anthropology to physical and cultural anthropology and to other disciplines in philosophy and the social sciences",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Problems in philosophical anthropology",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "6",
+          "levelType": "numeric",
+          "text": "Ethics, or moral philosophy , a. The history, nature, and types of ethics: the distinction between metaethics and normative ethics",
+          "children": [
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The relation of ethics to other philosophical disciplines or to other branches of knowledge or experience",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Problems in ethics",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "7",
+          "levelType": "numeric",
+          "text": "Political philosophy",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The nature and scope of political philosophy: its relation to political science",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The form of political statements and arguments",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The history of political philosophy",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Aesthetics",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The nature and scope of aesthetics as a discipline",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "The development of aesthetics: approaches to the study of the aesthetic experience",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Problems in aesthetics",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "The relation of aesthetics to other disciplines",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "9",
+          "levelType": "numeric",
+          "text": "The philosophy of language",
+          "children": []
+        },
+        {
+          "level": "10",
+          "levelType": "numeric",
+          "text": "The philosophy of logic [see 10/1 1.B.]",
+          "children": []
+        },
+        {
+          "level": "11",
+          "levelType": "numeric",
+          "text": "The philosophy of mathematics [see 10/21. B.]",
+          "children": []
+        },
+        {
+          "level": "12",
+          "levelType": "numeric",
+          "text": "The philosophy of art [see 611.A.]",
+          "children": []
+        },
+        {
+          "level": "13",
+          "levelType": "numeric",
+          "text": "The philosophy of science [see 10/31. B.]",
+          "children": []
+        },
+        {
+          "level": "14",
+          "levelType": "numeric",
+          "text": "The philosophy of religion [see 81 1.A.]",
+          "children": []
+        },
+        {
+          "level": "15",
+          "levelType": "numeric",
+          "text": "The philosophy of law [see 551. A.)",
+          "children": []
+        },
+        {
+          "level": "16",
+          "levelType": "numeric",
+          "text": "The philosophy of education [see 561. A.]",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "A",
+      "targetSection": "10/53",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "A",
+      "targetSection": "10/51",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.1.a",
+      "targetSection": "10/53",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "B.2",
+      "targetSection": "10/31",
+      "targetPath": "B"
+    },
+    {
+      "fromPath": "B.3.a",
+      "targetSection": "10/53",
+      "targetPath": "C"
+    },
+    {
+      "fromPath": "B.5.a",
+      "targetSection": "10/53",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.10",
+      "targetSection": "10/1",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.11",
+      "targetSection": "10/21",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.12",
+      "targetSection": "611",
+      "targetPath": "A"
+    },
+    {
+      "fromPath": "B.13",
+      "targetSection": "10/31",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.14",
+      "targetSection": "81",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.15",
+      "targetSection": "551",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.16",
+      "targetSection": "561",
+      "targetPath": ""
+    },
+    {
+      "fromPath": "B.17",
+      "targetSection": "10/41",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "philosophy",
+    "Aesthetics Philosophical Political",
+    "Rousseau,",
+    "Epistemology Anthropology Philosophy, Jean-Jacques",
+    "Ethics Philosophies of The History of Smith, Adam",
+    "Metaphysics the Branches of Western Time",
+    "Mind, The",
+    "Knowledge",
+    "Philosophy of",
+    "Division V. Section 10/52 519"
+  ],
+  "partNumber": 10,
+  "divisionId": "10-05"
+}

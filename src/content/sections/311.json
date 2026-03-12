@@ -1,0 +1,126 @@
+{
+  "sectionCode": "311",
+  "sectionCodeDisplay": "311",
+  "title": "Characteristics of Living Things",
+  "outline": [
+    {
+      "level": "A",
+      "levelType": "major",
+      "text": "The concept of life on Earth",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Properties of life",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Order and form",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Metabolism: catabolism and anabolism",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Sensory reception",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Reproduction, growth, and development",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Interaction with the environment",
+              "children": []
+            }
+          ]
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "Levels of biotic organization",
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Molecular: polymers, carbohydrates, lipids, proteins, and nucleic acids",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Cellular: procaryotic cells and eucaryotic cells",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Organ: tissues, tissue systems, and the whole organism",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Population: species and communities",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "B",
+      "levelType": "major",
+      "text": "Life beyond the Earth",
+      "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The concept of extraterrestrial life and its chemistry",
+          "children": []
+        },
+        {
+          "level": "2",
+          "levelType": "numeric",
+          "text": "The significance of the search for life beyond Earth",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "crossReferences": [
+    {
+      "fromPath": "B.3",
+      "targetSection": "10/34",
+      "targetPath": ""
+    }
+  ],
+  "macropaediaReferences": [
+    "Growth and Development, Biological",
+    "Animals",
+    "Bacteria and Other Monerans Life",
+    "Behaviour, Animal",
+    "Metabolism",
+    "Biological Sciences, The Mimicry",
+    "Biosphere, The",
+    "Photosynthesis",
+    "Cells: Their Structures and Functions",
+    "Plants",
+    "Coloration, Biological Protists",
+    "Evolution, The Theory of Reproduction and Reproductive Systems",
+    "Fungi Sensory Reception",
+    "Genetics and Heredity, The Principles of"
+  ],
+  "partNumber": 3,
+  "divisionId": "3-01"
+}

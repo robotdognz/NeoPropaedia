@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+---
+
+<BaseLayout title="About — Propaedia" description="About this web edition of the Propaedia Outline of Knowledge">
+  <div class="max-w-3xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-serif font-bold text-gray-900 mb-8">About This Project</h1>
+
+    <div class="prose-propaedia">
+      <h2>The Propaedia</h2>
+      <p>
+        The <em>Propaedia</em>, or "Outline of Knowledge," is one of three parts of the
+        <em>Encyclopaedia Britannica</em> (15th edition). Created under the direction of
+        Mortimer J. Adler, it provides a systematic classification of all human knowledge
+        organized into <strong>10 Parts</strong>, <strong>41 Divisions</strong>, and
+        <strong>177 Sections</strong>.
+      </p>
+      <p>
+        Unlike a traditional encyclopedia arranged alphabetically, the Propaedia presents
+        knowledge hierarchically — showing how subjects relate to one another within the
+        broader landscape of human understanding.
+      </p>
+
+      <h2>This Web Edition</h2>
+      <p>
+        This site presents the Propaedia's knowledge hierarchy from the 2005 edition in
+        a navigable web format. Each of the 177 sections includes:
+      </p>
+      <ul>
+        <li>The original hierarchical subject outline</li>
+        <li>Cross-references to related sections</li>
+        <li>Historical Macropaedia article recommendations</li>
+        <li>Curated <strong>Oxford Very Short Introduction</strong> (VSI) book recommendations for modern readers</li>
+      </ul>
+
+      <h2>Oxford Very Short Introductions</h2>
+      <p>
+        The original Propaedia sections include Micropaedia (short article) references.
+        In this web edition, we replace these with carefully matched titles from Oxford
+        University Press's <em>Very Short Introductions</em> series — over 750 accessible,
+        authoritative volumes written by leading experts. Each recommendation includes a
+        rationale explaining how the VSI maps to the section's subject matter, along with
+        a direct link to the Kindle edition on Amazon.
+      </p>
+
+      <h2>Technical Details</h2>
+      <p>
+        This site is built with <a href="https://astro.build">Astro</a>, uses static
+        site generation for fast loading, and is hosted on GitHub Pages. Content was
+        extracted from the 2005 Propaedia PDF using a custom Python pipeline. Search is
+        powered by <a href="https://pagefind.app">Pagefind</a>.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

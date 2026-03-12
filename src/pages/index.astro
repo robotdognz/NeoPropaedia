@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import navigation from '../data/navigation.json';
+
+const base = import.meta.env.BASE_URL;
+const parts = navigation.parts;
+
+const partColors: Record<number, string> = {
+  1: 'bg-blue-800',
+  2: 'bg-emerald-800',
+  3: 'bg-green-600',
+  4: 'bg-red-600',
+  5: 'bg-violet-700',
+  6: 'bg-orange-600',
+  7: 'bg-cyan-700',
+  8: 'bg-indigo-700',
+  9: 'bg-pink-700',
+  10: 'bg-amber-700',
+};
+
+const partColorsLight: Record<number, string> = {
+  1: 'bg-blue-50 border-blue-200 hover:border-blue-400',
+  2: 'bg-emerald-50 border-emerald-200 hover:border-emerald-400',
+  3: 'bg-green-50 border-green-200 hover:border-green-400',
+  4: 'bg-red-50 border-red-200 hover:border-red-400',
+  5: 'bg-violet-50 border-violet-200 hover:border-violet-400',
+  6: 'bg-orange-50 border-orange-200 hover:border-orange-400',
+  7: 'bg-cyan-50 border-cyan-200 hover:border-cyan-400',
+  8: 'bg-indigo-50 border-indigo-200 hover:border-indigo-400',
+  9: 'bg-pink-50 border-pink-200 hover:border-pink-400',
+  10: 'bg-amber-50 border-amber-200 hover:border-amber-400',
+};
+
+const partTextColors: Record<number, string> = {
+  1: 'text-blue-800',
+  2: 'text-emerald-800',
+  3: 'text-green-700',
+  4: 'text-red-700',
+  5: 'text-violet-700',
+  6: 'text-orange-700',
+  7: 'text-cyan-700',
+  8: 'text-indigo-700',
+  9: 'text-pink-700',
+  10: 'text-amber-700',
+};
+
+const PART_NAMES: Record<number, string> = {
+  1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five',
+  6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine', 10: 'Ten',
+};
+---
+
+<BaseLayout title="Propaedia — Outline of Knowledge">
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-4">
+    <h1 class="text-5xl font-serif font-bold text-gray-900 mb-4">
+      Propaedia
+    </h1>
+    <p class="text-xl text-gray-600 font-sans max-w-2xl mx-auto mb-2">
+      Outline of Knowledge
+    </p>
+    <p class="text-base text-gray-500 max-w-3xl mx-auto">
+      A hierarchical classification of all human knowledge, based on the Encyclopaedia Britannica's Propaedia (2005 edition), enriched with Oxford Very Short Introduction recommendations.
+    </p>
+  </section>
+
+  <!-- Circle of Learning - Desktop SVG -->
+  <section class="hidden lg:block max-w-3xl mx-auto px-4 mb-16">
+    <svg viewBox="0 0 600 600" class="w-full" role="img" aria-label="Circle of Learning — click a part to explore">
+      <title>Circle of Learning</title>
+      <!-- Outer circle segments for Parts 1-9 -->
+      {[1,2,3,4,5,6,7,8,9].map((num, i) => {
+        const angle = (i * 40 - 90) * Math.PI / 180;
+        const nextAngle = ((i + 1) * 40 - 90) * Math.PI / 180;
+        const cx = 300, cy = 300, r = 250;
+        const x1 = cx + r * Math.cos(angle);
+        const y1 = cy + r * Math.sin(angle);
+        const x2 = cx + r * Math.cos(nextAngle);
+        const y2 = cy + r * Math.sin(nextAngle);
+        const midAngle = ((i * 40 + 20) - 90) * Math.PI / 180;
+        const labelR = 200;
+        const lx = cx + labelR * Math.cos(midAngle);
+        const ly = cy + labelR * Math.sin(midAngle);
+        const colors = ['#1e40af','#065f46','#059669','#dc2626','#7c3aed','#ea580c','#0891b2','#4338ca','#be185d'];
+        return (
+          <a href={`${base}/part/${num}`}>
+            <path
+              d={`M ${cx} ${cy} L ${x1} ${y1} A ${r} ${r} 0 0 1 ${x2} ${y2} Z`}
+              fill={colors[i]}
+              opacity="0.85"
+              class="hover:opacity-100 transition-opacity cursor-pointer"
+            />
+            <text x={lx} y={ly} text-anchor="middle" dominant-baseline="middle"
+              fill="white" font-size="12" font-family="Inter, sans-serif" font-weight="600">
+              {num}
+            </text>
+          </a>
+        );
+      })}
+      <!-- Center circle for Part 10 -->
+      <a href={`${base}/part/10`}>
+        <circle cx="300" cy="300" r="80" fill="#854d0e" opacity="0.85"
+          class="hover:opacity-100 transition-opacity cursor-pointer" />
+        <text x="300" y="295" text-anchor="middle" dominant-baseline="middle"
+          fill="white" font-size="13" font-family="Inter, sans-serif" font-weight="600">
+          10
+        </text>
+        <text x="300" y="315" text-anchor="middle" dominant-baseline="middle"
+          fill="white" font-size="10" font-family="Inter, sans-serif" opacity="0.9">
+          Knowledge
+        </text>
+      </a>
+    </svg>
+  </section>
+
+  <!-- Part Cards - Mobile & Desktop -->
+  <section class="max-w-5xl mx-auto px-4 pb-16">
+    <h2 class="text-2xl font-sans font-bold text-gray-800 mb-8 lg:text-center">
+      Ten Parts of Knowledge
+    </h2>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {parts.map((part) => (
+        <a href={`${base}/part/${part.partNumber}`}
+          class={`block rounded-lg border-2 p-5 transition-all ${partColorsLight[part.partNumber]}`}>
+          <div class="flex items-center gap-3 mb-2">
+            <span class={`inline-flex items-center justify-center w-8 h-8 rounded-full text-white text-sm font-bold ${partColors[part.partNumber]}`}>
+              {part.partNumber}
+            </span>
+            <span class="text-xs font-sans font-medium text-gray-500 uppercase tracking-wide">
+              Part {PART_NAMES[part.partNumber]}
+            </span>
+          </div>
+          <h3 class={`text-lg font-serif font-bold ${partTextColors[part.partNumber]}`}>
+            {part.title}
+          </h3>
+          {part.divisions.length > 0 && (
+            <p class="text-sm text-gray-500 mt-2">
+              {part.divisions.length} {part.divisions.length === 1 ? 'division' : 'divisions'}
+            </p>
+          )}
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
