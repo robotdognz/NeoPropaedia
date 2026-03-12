@@ -1,9 +1,19 @@
 ---
 import BaseLayout from '../components/layout/BaseLayout.astro';
 import navigation from '../data/navigation.json';
+import { getCollection, render } from 'astro:content';
 
 const base = import.meta.env.BASE_URL;
 const parts = navigation.parts;
+
+// Load the Circle of Learning essay (partNumber 0)
+const essays = await getCollection('essays');
+const circleEssay = essays.find((e) => e.data.partNumber === 0);
+let EssayContent: any = null;
+if (circleEssay) {
+  const { Content } = await render(circleEssay);
+  EssayContent = Content;
+}
 
 const partColors: Record<number, string> = {
   1: 'bg-blue-800',
@@ -63,6 +73,26 @@ const PART_NAMES: Record<number, string> = {
       A hierarchical classification of all human knowledge, based on the Encyclopaedia Britannica's Propaedia (2005 edition), enriched with Oxford Very Short Introduction recommendations.
     </p>
   </section>
+
+  <!-- Circle of Learning Essay -->
+  {EssayContent && (
+    <section class="max-w-3xl mx-auto px-4 mb-12">
+      <details class="group">
+        <summary class="cursor-pointer text-lg font-sans font-semibold text-gray-700 flex items-center justify-center gap-2">
+          <svg class="w-5 h-5 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+          The Circle of Learning
+          {circleEssay?.data.author && (
+            <span class="text-sm font-normal text-gray-500">by {circleEssay.data.author}</span>
+          )}
+        </summary>
+        <div class="mt-4 pl-7 prose-propaedia">
+          <EssayContent />
+        </div>
+      </details>
+    </section>
+  )}
 
   <!-- Circle of Learning - Desktop SVG -->
   <section class="hidden lg:block max-w-3xl mx-auto px-4 mb-16">
