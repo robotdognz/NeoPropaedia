@@ -5,12 +5,13 @@ import type { ComponentChildren } from 'preact';
 export interface AccordionProps {
   title: string;
   defaultOpen?: boolean;
+  forceOpenKey?: string | number;
   children: ComponentChildren;
 }
 
 let accordionIdCounter = 0;
 
-export default function Accordion({ title, defaultOpen = false, children }: AccordionProps) {
+export default function Accordion({ title, defaultOpen = false, forceOpenKey, children }: AccordionProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
   const contentRef = useRef<HTMLDivElement>(null);
   const [maxHeight, setMaxHeight] = useState<string>(defaultOpen ? 'none' : '0px');
@@ -35,6 +36,12 @@ export default function Accordion({ title, defaultOpen = false, children }: Acco
       }
     }
   }, [isOpen]);
+
+  useEffect(() => {
+    if (forceOpenKey !== undefined) {
+      setIsOpen(true);
+    }
+  }, [forceOpenKey]);
 
   const toggle = () => setIsOpen((prev) => !prev);
 

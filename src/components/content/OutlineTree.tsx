@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import { useState } from 'preact/hooks';
 import InlineReferenceText from './InlineReferenceText';
+import { OUTLINE_VSI_SELECT_EVENT, type OutlineSelectionDetail } from '../../utils/vsiOutlineFilter';
 
 export interface OutlineItem {
   level: string;
@@ -28,9 +29,11 @@ export default function OutlineTree({ items, sectionCode, baseUrl, currentHref }
           <OutlineNode
             key={`${sectionCode}-${item.level}-${i}`}
             item={item}
+            sectionCode={sectionCode}
             depth={0}
             baseUrl={baseUrl}
             currentHref={currentHref}
+            pathSegments={[]}
           />
         ))}
       </ul>
@@ -40,20 +43,36 @@ export default function OutlineTree({ items, sectionCode, baseUrl, currentHref }
 
 interface OutlineNodeProps {
   item: OutlineItem;
+  sectionCode: string;
   depth: number;
   baseUrl: string;
   currentHref?: string;
+  pathSegments: string[];
 }
 
-function OutlineNode({ item, depth, baseUrl, currentHref }: OutlineNodeProps) {
+function OutlineNode({ item, sectionCode, depth, baseUrl, currentHref, pathSegments }: OutlineNodeProps) {
   const isMajor = item.levelType === 'major';
   const hasChildren = item.children.length > 0;
+  const outlinePath = [...pathSegments, item.level].join('.');
 
   // Major (top-level) items default open; sub-items default closed
   const [isExpanded, setIsExpanded] = useState(isMajor);
 
   const toggle = () => {
     if (hasChildren) setIsExpanded((prev) => !prev);
+  };
+
+  const selectOutlineItem = (event?: MouseEvent | KeyboardEvent) => {
+    if ((event?.target as HTMLElement | null)?.closest('a, button')) return;
+    if (typeof document === 'undefined') return;
+
+    const detail: OutlineSelectionDetail = {
+      sectionCode,
+      outlinePath,
+      text: item.text,
+    };
+
+    document.dispatchEvent(new CustomEvent<OutlineSelectionDetail>(OUTLINE_VSI_SELECT_EVENT, { detail }));
   };
 
   // Indentation depth: each sub-level gets additional left padding
@@ -66,22 +85,7 @@ function OutlineNode({ item, depth, baseUrl, currentHref }: OutlineNodeProps) {
 
   return (
     <li role="treeitem" aria-expanded={hasChildren ? isExpanded : undefined}>
-      <div
-        class={`flex items-start gap-2 py-1 rounded hover:bg-gray-50 transition-colors ${hasChildren ? 'cursor-pointer' : ''}`}
-        style={{ paddingLeft: `${indentPx}px` }}
-        onClick={(e) => {
-          if ((e.target as HTMLElement | null)?.closest('a')) return;
-          toggle();
-        }}
-        onKeyDown={(e: KeyboardEvent) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            toggle();
-          }
-        }}
-        tabIndex={hasChildren ? 0 : undefined}
-        role={hasChildren ? 'button' : undefined}
-      >
+      <div class="flex items-start gap-2 py-1 rounded hover:bg-gray-50 transition-colors" style={{ paddingLeft: `${indentPx}px` }}>
         {/* Tree line indicator for sub-items */}
         {depth > 0 && (
           <span class="inline-block w-3 flex-shrink-0 text-gray-300 select-none" aria-hidden="true">
@@ -89,27 +93,61 @@ function OutlineNode({ item, depth, baseUrl, currentHref }: OutlineNodeProps) {
           </span>
         )}
 
-        {/* Level badge */}
-        <span class={badgeClasses}>{item.level}</span>
+        <div
+          class="flex min-w-0 flex-1 items-start gap-2 rounded-md px-1 py-0.5 transition-colors hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-300 cursor-pointer"
+          onClick={(event) => selectOutlineItem(event)}
+          onKeyDown={(event: KeyboardEvent) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              selectOutlineItem(event);
+            }
 
-        {/* Text */}
-        <span class={`${isMajor ? 'font-semibold text-gray-900' : 'text-gray-700'} text-sm leading-snug`}>
-          <InlineReferenceText text={item.text} baseUrl={baseUrl} currentHref={currentHref} />
-        </span>
+            if (hasChildren && event.key === 'ArrowRight') {
+              event.preventDefault();
+              setIsExpanded(true);
+            }
+
+            if (hasChildren && event.key === 'ArrowLeft') {
+              event.preventDefault();
+              setIsExpanded(false);
+            }
+          }}
+          tabIndex={0}
+          role="button"
+          aria-label={`Show Oxford VSI recommendations for ${outlinePath}`}
+        >
+          {/* Level badge */}
+          <span class={badgeClasses}>{item.level}</span>
+
+          {/* Text */}
+          <span class={`${isMajor ? 'font-semibold text-gray-900' : 'text-gray-700'} min-w-0 text-sm leading-snug`}>
+            <InlineReferenceText text={item.text} baseUrl={baseUrl} currentHref={currentHref} />
+          </span>
+        </div>
 
         {/* Expand/collapse chevron */}
         {hasChildren && (
-          <svg
-            class={`h-3.5 w-3.5 mt-0.5 text-gray-400 transform transition-transform duration-150 flex-shrink-0 ${isExpanded ? 'rotate-90' : 'rotate-0'}`}
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width={2}
-            aria-hidden="true"
+          <button
+            type="button"
+            onClick={(event) => {
+              event.stopPropagation();
+              toggle();
+            }}
+            class="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded text-gray-400 transition-colors hover:bg-gray-100 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-300"
+            aria-label={`${isExpanded ? 'Collapse' : 'Expand'} outline item ${outlinePath}`}
           >
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
+            <svg
+              class={`h-3.5 w-3.5 transform transition-transform duration-150 ${isExpanded ? 'rotate-90' : 'rotate-0'}`}
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width={2}
+              aria-hidden="true"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         )}
       </div>
 
@@ -120,9 +158,11 @@ function OutlineNode({ item, depth, baseUrl, currentHref }: OutlineNodeProps) {
             <OutlineNode
               key={`${child.level}-${i}`}
               item={child}
+              sectionCode={sectionCode}
               depth={depth + 1}
               baseUrl={baseUrl}
               currentHref={currentHref}
+              pathSegments={[...pathSegments, item.level]}
             />
           ))}
         </ul>
