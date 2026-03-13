@@ -154,7 +154,7 @@
             {
               "level": "c",
               "levelType": "lowercase",
-              "text": "Manned space programs: the Mercury, Gemini, Apollo, and Space Shuttle programs of the U.S.; the Vostok, Yoskhod, and Soyuz/Salyut programs of the U.S.S.R. and the Russian Federation",
+              "text": "Manned space programs: the Mercury, Gemini, Apollo, and Space Shuttle programs of the U.S.; the Vostok, Voskhod, and Soyuz/Salyut programs of the U.S.S.R. and the Russian Federation",
               "children": []
             },
             {
@@ -251,7 +251,8 @@
     }
   ],
   "macropaediaReferences": [
-    "Exploration Public Works"
+    "Exploration",
+    "Public Works"
   ],
   "partNumber": 7,
   "divisionId": "7-03"

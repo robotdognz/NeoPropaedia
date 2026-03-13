@@ -265,7 +265,7 @@
         {
           "level": "5",
           "levelType": "numeric",
-          "text": "Meteorological measurement [see also 22 1 and 223]",
+          "text": "Meteorological measurement [see also 221 and 223]",
           "children": []
         },
         {
@@ -341,12 +341,17 @@
     }
   ],
   "macropaediaReferences": [
-    "Analysis and Measurement, Microscopes",
-    "Physical and Chemical Navigation",
-    "Calendar Particle Accelerators",
-    "Climate and Weather Radar",
-    "Mapping and Surveying Telescopes",
-    "Measurement Systems Time"
+    "Analysis and Measurement, Physical and Chemical",
+    "Calendar",
+    "Climate and Weather",
+    "Mapping and Surveying",
+    "Measurement Systems",
+    "Microscopes",
+    "Navigation",
+    "Particle Accelerators",
+    "Radar",
+    "Telescopes",
+    "Time"
   ],
   "partNumber": 7,
   "divisionId": "7-02"
