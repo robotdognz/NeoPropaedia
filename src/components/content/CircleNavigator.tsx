@@ -502,9 +502,13 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     const nextRadius = distanceFromCenter(point.x, point.y);
     const travelled = Math.hypot(point.x - dragState.startX, point.y - dragState.startY);
 
-    if (travelled > DRAG_DISTANCE_THRESHOLD) {
+    if (!dragState.moved && travelled > DRAG_DISTANCE_THRESHOLD) {
       dragState.moved = true;
+      dragState.startAngle = angleFromPoint(point.x, point.y);
+      dragState.startRotation = rotationDegrees;
     }
+
+    if (!dragState.moved) return;
 
     if (!dragState.rotateOnly && dragState.activePartNumber !== centerPartNumber && nextRadius <= CENTER_COMMIT_THRESHOLD) {
       setCenterPreviewPartNumber(dragState.activePartNumber);
