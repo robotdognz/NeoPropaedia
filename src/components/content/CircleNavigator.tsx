@@ -529,6 +529,13 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
       return;
     }
 
+    // If we just exited the center zone, reset the drag reference
+    // so rotation continues smoothly from the current position
+    if (dragState.readyForCenter || centerPreviewPartNumber !== null) {
+      dragState.startAngle = angleFromPoint(point.x, point.y);
+      dragState.startRotation = rotationDegrees;
+    }
+
     dragState.readyForCenter = false;
     setCenterPreviewPartNumber(null);
 
