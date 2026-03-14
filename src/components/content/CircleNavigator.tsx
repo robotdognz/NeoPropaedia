@@ -501,8 +501,9 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     const point = svgPoint(svgRef.current, event.clientX, event.clientY);
     const nextRadius = distanceFromCenter(point.x, point.y);
     const travelled = Math.hypot(point.x - dragState.startX, point.y - dragState.startY);
+    const angularTravelled = angularDistance(angleFromPoint(point.x, point.y), dragState.startAngle);
 
-    if (!dragState.moved && travelled > DRAG_DISTANCE_THRESHOLD) {
+    if (!dragState.moved && (angularTravelled > 2 || (travelled > DRAG_DISTANCE_THRESHOLD && nextRadius <= CENTER_COMMIT_THRESHOLD))) {
       dragState.moved = true;
       dragState.startAngle = angleFromPoint(point.x, point.y);
       dragState.startRotation = rotationDegrees;
