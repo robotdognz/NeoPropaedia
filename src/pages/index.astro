@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../components/layout/BaseLayout.astro';
+import CircleNavigator from '../components/content/CircleNavigator';
 import navigation from '../data/navigation.json';
 import { getCollection, render } from 'astro:content';
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
@@ -153,6 +154,14 @@ const PART_NAMES: Record<number, string> = {
   10: 'Ten',
 };
 
+const circleNavigatorParts = parts.map((part) => ({
+  partNumber: part.partNumber,
+  partName: `Part ${PART_NAMES[part.partNumber]}`,
+  title: part.title,
+  href: `${base}/part/${part.partNumber}`,
+  colorHex: partColorHex[part.partNumber],
+}));
+
 const figureGroups = [
   {
     title: 'Segment rotations',
@@ -258,11 +267,15 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
         <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div class="min-w-0">
             <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
-              Navigate the Outline
+              Navigation
             </p>
             <h2 class="mt-2 text-3xl font-serif font-bold text-slate-900">
-              Enter by part links or by circle
+              Choose a way into the outline
             </h2>
+            <p class="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
+              The traditional view gives you the direct numbered path into the ten parts. The circle view lets you
+              rearrange that same structure spatially, so you can rotate the order or promote any part to the centre.
+            </p>
           </div>
           <div
             class="inline-flex rounded-full border border-slate-200 bg-slate-50 p-1 font-sans text-sm"
@@ -275,7 +288,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
               aria-selected="true"
               class="rounded-full bg-slate-900 px-4 py-2 font-semibold text-white shadow-sm transition"
             >
-              Part links
+              Traditional navigation
             </button>
             <button
               type="button"
@@ -283,460 +296,387 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
               aria-selected="false"
               class="rounded-full px-4 py-2 font-semibold text-slate-600 transition"
             >
-              Circle
+              Circle navigation
             </button>
           </div>
         </div>
 
-        <div class="mt-8" data-view-panel="links">
-          <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
-            {parts.map((part) => (
-              <a
-                href={`${base}/part/${part.partNumber}`}
-                class={`block rounded-[1.5rem] border-2 p-5 transition-all hover:-translate-y-0.5 hover:shadow-md ${partColorsLight[part.partNumber]}`}
-              >
-                <div class="flex items-center gap-3">
-                  <span class={`inline-flex h-9 w-9 items-center justify-center rounded-full text-sm font-bold text-white ${partColors[part.partNumber]}`}>
-                    {part.partNumber}
-                  </span>
-                  <span class="text-xs font-sans font-medium uppercase tracking-wide text-slate-500">
-                    Part {PART_NAMES[part.partNumber]}
-                  </span>
-                </div>
-                <h3 class={`mt-4 text-lg font-serif font-bold ${partTextColors[part.partNumber]}`}>
-                  {part.title}
-                </h3>
-                <p class="mt-2 text-sm text-slate-500">
-                  {part.divisions.length} {part.divisions.length === 1 ? 'division' : 'divisions'}
-                </p>
-              </a>
-            ))}
+        <div class="mt-8 space-y-8" data-view-panel="links">
+          <div class="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6">
+            <div class="max-w-3xl">
+              <h3 class="text-2xl font-serif font-bold text-slate-900">Traditional navigation</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">
+                Start here if you want the outline in its normal numbered form. Open any part directly, then use the
+                guide below for the intended way of moving between parts, divisions, and sections.
+              </p>
+            </div>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
+              {parts.map((part) => (
+                <a
+                  href={`${base}/part/${part.partNumber}`}
+                  class={`block rounded-[1.5rem] border-2 p-5 transition-all hover:-translate-y-0.5 hover:shadow-md ${partColorsLight[part.partNumber]}`}
+                >
+                  <div class="flex items-center gap-3">
+                    <span class={`inline-flex h-9 w-9 items-center justify-center rounded-full text-sm font-bold text-white ${partColors[part.partNumber]}`}>
+                      {part.partNumber}
+                    </span>
+                    <span class="text-xs font-sans font-medium uppercase tracking-wide text-slate-500">
+                      Part {PART_NAMES[part.partNumber]}
+                    </span>
+                  </div>
+                  <h4 class={`mt-4 text-lg font-serif font-bold ${partTextColors[part.partNumber]}`}>
+                    {part.title}
+                  </h4>
+                  <p class="mt-2 text-sm text-slate-500">
+                    {part.divisions.length} {part.divisions.length === 1 ? 'division' : 'divisions'}
+                  </p>
+                </a>
+              ))}
+            </div>
           </div>
+
+          <details class="group rounded-[1.75rem] border border-slate-200 bg-white">
+            <summary class="cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
+              <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-5">
+                <div>
+                  <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
+                    Orientation Guide
+                  </p>
+                  <h3 class="mt-2 text-3xl font-serif font-bold text-slate-900">
+                    How to use the PROPAEDIA
+                  </h3>
+                  <p class="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
+                    The practical guide to reading the outline in its conventional order.
+                  </p>
+                  {howToUseEssay?.data.author && (
+                    <p class="mt-2 text-sm text-slate-500">by {howToUseEssay.data.author}</p>
+                  )}
+                </div>
+                <span class="mt-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition group-open:rotate-180">
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 7.5 10 12.5 15 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+              </div>
+            </summary>
+
+            {HowToUseContent && (
+              <div class="prose-propaedia px-6 pb-6 pt-6 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900">
+                <HowToUseContent />
+              </div>
+            )}
+          </details>
         </div>
 
-        <div class="mt-8 hidden" data-view-panel="circle">
-          <div class="grid gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-center">
-            <div class="min-w-0 rounded-[1.5rem] border border-slate-200 bg-slate-50 p-5">
-              <svg
-                viewBox="0 0 420 420"
-                class="mx-auto w-full max-w-[28rem]"
-                role="img"
-                aria-label="Interactive circle of learning"
-              >
-                <title>Interactive circle of learning</title>
-                {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((partNumber, index) => {
-                  const start = index * 40;
-                  const end = start + 40;
-                  const label = labelPosition(210, 210, 138, start, end);
-                  return (
-                    <a
-                      href={`${base}/part/${partNumber}`}
-                      data-circle-part-name={parts.find((part) => part.partNumber === partNumber)?.title}
-                      data-circle-part-number={String(partNumber)}
-                    >
-                      <path
-                        d={donutSlicePath(210, 210, 82, 172, start, end)}
-                        fill={partColorHex[partNumber]}
-                        class="transition-opacity hover:opacity-90"
-                      />
-                      <text
-                        x={label.x}
-                        y={label.y}
-                        fill="white"
-                        font-size="17"
-                        font-family="Inter, sans-serif"
-                        font-weight="700"
-                        text-anchor="middle"
-                        dominant-baseline="middle"
-                        pointer-events="none"
-                      >
-                        {partNumber}
-                      </text>
-                    </a>
-                  );
-                })}
-                <a
-                  href={`${base}/part/10`}
-                  data-circle-part-name={parts.find((part) => part.partNumber === 10)?.title}
-                  data-circle-part-number="10"
-                >
-                  <circle
-                    cx="210"
-                    cy="210"
-                    r="64"
-                    fill={partColorHex[10]}
-                    class="transition-opacity hover:opacity-90"
-                  />
-                  <text
-                    x="210"
-                    y="202"
-                    fill="white"
-                    font-size="24"
-                    font-family="Inter, sans-serif"
-                    font-weight="700"
-                    text-anchor="middle"
-                    dominant-baseline="middle"
-                    pointer-events="none"
-                  >
-                    10
-                  </text>
-                  <text
-                    x="210"
-                    y="226"
-                    fill="white"
-                    font-size="11"
-                    font-family="Inter, sans-serif"
-                    font-weight="600"
-                    text-anchor="middle"
-                    dominant-baseline="middle"
-                    pointer-events="none"
-                  >
-                    Branches
-                  </text>
-                </a>
-              </svg>
-
-              <p
-                class="mt-4 text-center text-sm font-sans font-semibold text-slate-700"
-                data-circle-hover-label
-                data-default-text="Tap or hover a part to preview it."
-              >
-                Tap or hover a part to preview it.
+        <div class="mt-8 hidden space-y-8" data-view-panel="circle">
+          <div class="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-6">
+            <div class="max-w-3xl">
+              <h3 class="text-2xl font-serif font-bold text-slate-900">Circle navigation</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">
+                Reorder the parts spatially: drag the ring to rotate it, or pull an outer part inward to make it the
+                centre. The essay below explains why the outline can be read as a circle rather than as a single line.
               </p>
             </div>
 
-            <div class="min-w-0">
-              <h3 class="text-2xl font-serif font-bold text-slate-900">Circle navigator</h3>
-              <p class="mt-4 text-sm leading-7 text-slate-600">
-                The circle view is useful once you have the structure in mind. Tap or hover any segment to
-                preview the part name, then open it directly. Part Ten remains at the centre because it studies the
-                branches of knowledge themselves.
-              </p>
+            <div class="mt-8">
+              <CircleNavigator client:load parts={circleNavigatorParts} />
             </div>
           </div>
+
+          <details class="group rounded-[1.75rem] border border-slate-200 bg-white">
+            <summary class="cursor-pointer list-none p-6 [&::-webkit-details-marker]:hidden">
+              <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-5">
+                <div>
+                  <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
+                    Essay by the Propaedia Creator
+                  </p>
+                  <h3 class="mt-2 text-3xl font-serif font-bold text-slate-900">
+                    The Circle of Learning
+                  </h3>
+                  <p class="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
+                    The conceptual explanation of why the ten parts can be rotated or re-centred without losing the
+                    integrity of the whole outline.
+                  </p>
+                  {circleEssay?.data.author && (
+                    <p class="mt-2 text-sm text-slate-500">by {circleEssay.data.author}</p>
+                  )}
+                </div>
+                <span class="mt-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition group-open:rotate-180">
+                  <svg
+                    class="h-4 w-4"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 7.5 10 12.5 15 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </span>
+              </div>
+            </summary>
+
+            <div class="px-6 pb-6">
+              {circleIntroHtml && (
+                <div
+                  class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+                  set:html={circleIntroHtml}
+                />
+              )}
+
+              {circleListHtml && (
+                <div
+                  class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+                  set:html={circleListHtml}
+                />
+              )}
+
+              {circleFirstFigureIntroHtml && (
+                <div
+                  class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+                  set:html={circleFirstFigureIntroHtml}
+                />
+              )}
+
+              {segmentRotationGroup && (
+                <div class="mt-8 grid gap-5 md:grid-cols-2 md:justify-items-center">
+                  {segmentRotationGroup.figures.map((figure) => (
+                    <figure class="w-full max-w-sm rounded-[1.5rem] border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                      <figcaption class="text-sm font-sans font-semibold text-slate-700">
+                        {figure.title}
+                      </figcaption>
+                      <svg
+                        viewBox="0 0 220 220"
+                        class="mt-4 mx-auto w-full max-w-[15rem]"
+                        role="img"
+                        aria-label={figure.title}
+                      >
+                        <title>{figure.title}</title>
+                        {figure.kind === 'segments' &&
+                          figure.order.map((partNumber, index) => {
+                            const segmentAngle = 360 / figure.order.length;
+                            const start = index * segmentAngle;
+                            const end = start + segmentAngle;
+                            const label = labelPosition(110, 110, 72, start, end);
+                            return (
+                              <g>
+                                <path
+                                  d={donutSlicePath(110, 110, 42, 96, start, end)}
+                                  fill={partColorHex[partNumber]}
+                                  stroke="white"
+                                  stroke-width="2"
+                                />
+                                <text
+                                  x={label.x}
+                                  y={label.y}
+                                  fill="white"
+                                  font-size="15"
+                                  font-family="Inter, sans-serif"
+                                  font-weight="700"
+                                  text-anchor="middle"
+                                  dominant-baseline="middle"
+                                >
+                                  {partNumber}
+                                </text>
+                              </g>
+                            );
+                          })}
+                      </svg>
+                    </figure>
+                  ))}
+                </div>
+              )}
+
+              {circleSecondFigureIntroHtml && (
+                <div
+                  class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+                  set:html={circleSecondFigureIntroHtml}
+                />
+              )}
+
+              {alternativeCentreGroup && (
+                <div class="mt-8 grid gap-5 md:grid-cols-2 md:justify-items-center">
+                  {alternativeCentreGroup.figures.map((figure) => (
+                    <figure class="w-full max-w-sm rounded-[1.5rem] border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                      <figcaption class="text-sm font-sans font-semibold text-slate-700">
+                        {figure.title}
+                      </figcaption>
+                      <svg
+                        viewBox="0 0 220 220"
+                        class="mt-4 mx-auto w-full max-w-[15rem]"
+                        role="img"
+                        aria-label={figure.title}
+                      >
+                        <title>{figure.title}</title>
+                        {figure.kind === 'hub' &&
+                          figure.outer.map((partNumber, index) => {
+                            const segmentAngle = 360 / figure.outer.length;
+                            const start = index * segmentAngle;
+                            const end = start + segmentAngle;
+                            const label = labelPosition(110, 110, 76, start, end);
+                            return (
+                              <g>
+                                <path
+                                  d={donutSlicePath(110, 110, 56, 98, start, end)}
+                                  fill={partColorHex[partNumber]}
+                                  stroke="white"
+                                  stroke-width="2"
+                                />
+                                <text
+                                  x={label.x}
+                                  y={label.y}
+                                  fill="white"
+                                  font-size="14"
+                                  font-family="Inter, sans-serif"
+                                  font-weight="700"
+                                  text-anchor="middle"
+                                  dominant-baseline="middle"
+                                >
+                                  {partNumber}
+                                </text>
+                              </g>
+                            );
+                          })}
+                        {figure.kind === 'hub' && (
+                          <g>
+                            <circle cx="110" cy="110" r="42" fill={partColorHex[figure.center]} />
+                            <text
+                              x="110"
+                              y="104"
+                              fill="white"
+                              font-size="20"
+                              font-family="Inter, sans-serif"
+                              font-weight="700"
+                              text-anchor="middle"
+                              dominant-baseline="middle"
+                            >
+                              {figure.center}
+                            </text>
+                            <text
+                              x="110"
+                              y="126"
+                              fill="white"
+                              font-size="10"
+                              font-family="Inter, sans-serif"
+                              font-weight="600"
+                              text-anchor="middle"
+                              dominant-baseline="middle"
+                            >
+                              Part {PART_NAMES[figure.center]}
+                            </text>
+                          </g>
+                        )}
+                      </svg>
+                    </figure>
+                  ))}
+                </div>
+              )}
+
+              {circleThirdFigureIntroHtml && (
+                <div
+                  class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+                  set:html={circleThirdFigureIntroHtml}
+                />
+              )}
+
+              {partTenCentreGroup && (
+                <div class="mt-8 grid gap-5 md:justify-center">
+                  {partTenCentreGroup.figures.map((figure) => (
+                    <figure class="mx-auto w-full max-w-md rounded-[1.5rem] border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                      <figcaption class="text-sm font-sans font-semibold text-slate-700">
+                        {figure.title}
+                      </figcaption>
+                      <svg viewBox="0 0 220 220" class="mt-4 w-full" role="img" aria-label={figure.title}>
+                        <title>{figure.title}</title>
+                        {figure.kind === 'hub' &&
+                          figure.outer.map((partNumber, index) => {
+                            const segmentAngle = 360 / figure.outer.length;
+                            const start = index * segmentAngle;
+                            const end = start + segmentAngle;
+                            const label = labelPosition(110, 110, 76, start, end);
+                            return (
+                              <g>
+                                <path
+                                  d={donutSlicePath(110, 110, 56, 98, start, end)}
+                                  fill={partColorHex[partNumber]}
+                                  stroke="white"
+                                  stroke-width="2"
+                                />
+                                <text
+                                  x={label.x}
+                                  y={label.y}
+                                  fill="white"
+                                  font-size="14"
+                                  font-family="Inter, sans-serif"
+                                  font-weight="700"
+                                  text-anchor="middle"
+                                  dominant-baseline="middle"
+                                >
+                                  {partNumber}
+                                </text>
+                              </g>
+                            );
+                          })}
+                        {figure.kind === 'hub' && (
+                          <g>
+                            <circle cx="110" cy="110" r="42" fill={partColorHex[figure.center]} />
+                            <text
+                              x="110"
+                              y="104"
+                              fill="white"
+                              font-size="20"
+                              font-family="Inter, sans-serif"
+                              font-weight="700"
+                              text-anchor="middle"
+                              dominant-baseline="middle"
+                            >
+                              {figure.center}
+                            </text>
+                            <text
+                              x="110"
+                              y="126"
+                              fill="white"
+                              font-size="10"
+                              font-family="Inter, sans-serif"
+                              font-weight="600"
+                              text-anchor="middle"
+                              dominant-baseline="middle"
+                            >
+                              Part {PART_NAMES[figure.center]}
+                            </text>
+                          </g>
+                        )}
+                      </svg>
+                    </figure>
+                  ))}
+                </div>
+              )}
+
+              {circlePartTenReasonHtml && (
+                <div
+                  class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+                  set:html={circlePartTenReasonHtml}
+                />
+              )}
+
+              {circleRemainderHtml && (
+                <div
+                  class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
+                  set:html={circleRemainderHtml}
+                />
+              )}
+            </div>
+          </details>
         </div>
       </div>
-    </section>
-
-    <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-      <details class="group rounded-[2rem] border border-slate-200 bg-white shadow-sm">
-        <summary class="cursor-pointer list-none p-6 sm:p-8 [&::-webkit-details-marker]:hidden">
-          <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-5">
-            <div>
-              <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
-                Essay by the Propaedia Creator
-              </p>
-              <h2 class="mt-2 text-3xl font-serif font-bold text-slate-900">
-                The Circle of Learning
-              </h2>
-              {circleEssay?.data.author && (
-                <p class="mt-2 text-sm text-slate-500">by {circleEssay.data.author}</p>
-              )}
-            </div>
-            <span class="mt-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition group-open:rotate-180">
-              <svg
-                class="h-4 w-4"
-                viewBox="0 0 20 20"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-                aria-hidden="true"
-              >
-                <path d="M5 7.5 10 12.5 15 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </span>
-          </div>
-        </summary>
-
-        <div class="px-6 pb-6 sm:px-8 sm:pb-8">
-          {circleIntroHtml && (
-            <div
-              class="prose-propaedia mt-6 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
-              set:html={circleIntroHtml}
-            />
-          )}
-
-          {circleListHtml && (
-            <div
-              class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
-              set:html={circleListHtml}
-            />
-          )}
-
-          {circleFirstFigureIntroHtml && (
-            <div
-              class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
-              set:html={circleFirstFigureIntroHtml}
-            />
-          )}
-
-          {segmentRotationGroup && (
-            <div class="mt-8 grid gap-5 md:grid-cols-2 md:justify-items-center">
-              {segmentRotationGroup.figures.map((figure) => (
-                <figure class="w-full max-w-sm rounded-[1.5rem] border border-slate-200 bg-slate-50 p-4 shadow-sm">
-                  <figcaption class="text-sm font-sans font-semibold text-slate-700">
-                    {figure.title}
-                  </figcaption>
-                  <svg
-                    viewBox="0 0 220 220"
-                    class="mt-4 mx-auto w-full max-w-[15rem]"
-                    role="img"
-                    aria-label={figure.title}
-                  >
-                    <title>{figure.title}</title>
-                    {figure.kind === 'segments' &&
-                      figure.order.map((partNumber, index) => {
-                        const segmentAngle = 360 / figure.order.length;
-                        const start = index * segmentAngle;
-                        const end = start + segmentAngle;
-                        const label = labelPosition(110, 110, 72, start, end);
-                        return (
-                          <g>
-                            <path
-                              d={donutSlicePath(110, 110, 42, 96, start, end)}
-                              fill={partColorHex[partNumber]}
-                              stroke="white"
-                              stroke-width="2"
-                            />
-                            <text
-                              x={label.x}
-                              y={label.y}
-                              fill="white"
-                              font-size="15"
-                              font-family="Inter, sans-serif"
-                              font-weight="700"
-                              text-anchor="middle"
-                              dominant-baseline="middle"
-                            >
-                              {partNumber}
-                            </text>
-                          </g>
-                        );
-                      })}
-                  </svg>
-                </figure>
-              ))}
-            </div>
-          )}
-
-          {circleSecondFigureIntroHtml && (
-            <div
-              class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
-              set:html={circleSecondFigureIntroHtml}
-            />
-          )}
-
-          {alternativeCentreGroup && (
-            <div class="mt-8 grid gap-5 md:grid-cols-2 md:justify-items-center">
-              {alternativeCentreGroup.figures.map((figure) => (
-                <figure class="w-full max-w-sm rounded-[1.5rem] border border-slate-200 bg-slate-50 p-4 shadow-sm">
-                  <figcaption class="text-sm font-sans font-semibold text-slate-700">
-                    {figure.title}
-                  </figcaption>
-                  <svg
-                    viewBox="0 0 220 220"
-                    class="mt-4 mx-auto w-full max-w-[15rem]"
-                    role="img"
-                    aria-label={figure.title}
-                  >
-                    <title>{figure.title}</title>
-                    {figure.kind === 'hub' &&
-                      figure.outer.map((partNumber, index) => {
-                        const segmentAngle = 360 / figure.outer.length;
-                        const start = index * segmentAngle;
-                        const end = start + segmentAngle;
-                        const label = labelPosition(110, 110, 76, start, end);
-                        return (
-                          <g>
-                            <path
-                              d={donutSlicePath(110, 110, 56, 98, start, end)}
-                              fill={partColorHex[partNumber]}
-                              stroke="white"
-                              stroke-width="2"
-                            />
-                            <text
-                              x={label.x}
-                              y={label.y}
-                              fill="white"
-                              font-size="14"
-                              font-family="Inter, sans-serif"
-                              font-weight="700"
-                              text-anchor="middle"
-                              dominant-baseline="middle"
-                            >
-                              {partNumber}
-                            </text>
-                          </g>
-                        );
-                      })}
-                    {figure.kind === 'hub' && (
-                      <g>
-                        <circle cx="110" cy="110" r="42" fill={partColorHex[figure.center]} />
-                        <text
-                          x="110"
-                          y="104"
-                          fill="white"
-                          font-size="20"
-                          font-family="Inter, sans-serif"
-                          font-weight="700"
-                          text-anchor="middle"
-                          dominant-baseline="middle"
-                        >
-                          {figure.center}
-                        </text>
-                        <text
-                          x="110"
-                          y="126"
-                          fill="white"
-                          font-size="10"
-                          font-family="Inter, sans-serif"
-                          font-weight="600"
-                          text-anchor="middle"
-                          dominant-baseline="middle"
-                        >
-                          Part {PART_NAMES[figure.center]}
-                        </text>
-                      </g>
-                    )}
-                  </svg>
-                </figure>
-              ))}
-            </div>
-          )}
-
-          {circleThirdFigureIntroHtml && (
-            <div
-              class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
-              set:html={circleThirdFigureIntroHtml}
-            />
-          )}
-
-          {partTenCentreGroup && (
-            <div class="mt-8 grid gap-5 md:justify-center">
-              {partTenCentreGroup.figures.map((figure) => (
-                <figure class="mx-auto w-full max-w-md rounded-[1.5rem] border border-slate-200 bg-slate-50 p-4 shadow-sm">
-                  <figcaption class="text-sm font-sans font-semibold text-slate-700">
-                    {figure.title}
-                  </figcaption>
-                  <svg viewBox="0 0 220 220" class="mt-4 w-full" role="img" aria-label={figure.title}>
-                    <title>{figure.title}</title>
-                    {figure.kind === 'hub' &&
-                      figure.outer.map((partNumber, index) => {
-                        const segmentAngle = 360 / figure.outer.length;
-                        const start = index * segmentAngle;
-                        const end = start + segmentAngle;
-                        const label = labelPosition(110, 110, 76, start, end);
-                        return (
-                          <g>
-                            <path
-                              d={donutSlicePath(110, 110, 56, 98, start, end)}
-                              fill={partColorHex[partNumber]}
-                              stroke="white"
-                              stroke-width="2"
-                            />
-                            <text
-                              x={label.x}
-                              y={label.y}
-                              fill="white"
-                              font-size="14"
-                              font-family="Inter, sans-serif"
-                              font-weight="700"
-                              text-anchor="middle"
-                              dominant-baseline="middle"
-                            >
-                              {partNumber}
-                            </text>
-                          </g>
-                        );
-                      })}
-                    {figure.kind === 'hub' && (
-                      <g>
-                        <circle cx="110" cy="110" r="42" fill={partColorHex[figure.center]} />
-                        <text
-                          x="110"
-                          y="104"
-                          fill="white"
-                          font-size="20"
-                          font-family="Inter, sans-serif"
-                          font-weight="700"
-                          text-anchor="middle"
-                          dominant-baseline="middle"
-                        >
-                          {figure.center}
-                        </text>
-                        <text
-                          x="110"
-                          y="126"
-                          fill="white"
-                          font-size="10"
-                          font-family="Inter, sans-serif"
-                          font-weight="600"
-                          text-anchor="middle"
-                          dominant-baseline="middle"
-                        >
-                          Part {PART_NAMES[figure.center]}
-                        </text>
-                      </g>
-                    )}
-                  </svg>
-                </figure>
-              ))}
-            </div>
-          )}
-
-          {circlePartTenReasonHtml && (
-            <div
-              class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
-              set:html={circlePartTenReasonHtml}
-            />
-          )}
-
-          {circleRemainderHtml && (
-            <div
-              class="prose-propaedia mt-8 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900"
-              set:html={circleRemainderHtml}
-            />
-          )}
-        </div>
-      </details>
-    </section>
-
-    <section class="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
-      <details class="group rounded-[2rem] border border-slate-200 bg-white shadow-sm">
-        <summary class="cursor-pointer list-none p-6 sm:p-8 [&::-webkit-details-marker]:hidden">
-          <div class="flex items-start justify-between gap-4 border-b border-slate-100 pb-5">
-            <div>
-              <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
-                Orientation Guide
-              </p>
-              <h2 class="mt-2 text-3xl font-serif font-bold text-slate-900">
-                How to use the PROPAEDIA
-              </h2>
-              {howToUseEssay?.data.author && (
-                <p class="mt-2 text-sm text-slate-500">by {howToUseEssay.data.author}</p>
-              )}
-            </div>
-            <span class="mt-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-slate-200 text-slate-500 transition group-open:rotate-180">
-              <svg
-                class="h-4 w-4"
-                viewBox="0 0 20 20"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.8"
-                aria-hidden="true"
-              >
-                <path d="M5 7.5 10 12.5 15 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-            </span>
-          </div>
-        </summary>
-
-        {HowToUseContent && (
-          <div class="prose-propaedia px-6 pb-6 pt-6 min-w-0 max-w-none prose-p:text-slate-700 prose-li:text-slate-700 prose-strong:text-slate-900 sm:px-8 sm:pb-8">
-            <HowToUseContent />
-          </div>
-        )}
-      </details>
     </section>
   </main>
 
@@ -772,51 +712,6 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
           if (view) setHomepageNavigatorView(view);
         });
       });
-
-      const label = document.querySelector('[data-circle-hover-label]');
-      const defaultText = label?.dataset.defaultText ?? '';
-      const circleLinks = Array.from(document.querySelectorAll('[data-circle-part-name]'));
-      const touchPreviewQuery = window.matchMedia('(pointer: coarse)');
-      let activeTouchLink = null;
-
-      circleLinks.forEach((link) => {
-        const partNumber = link.dataset.circlePartNumber;
-        const partName = link.dataset.circlePartName;
-        const text = partNumber && partName ? `Part ${partNumber}. ${partName}` : defaultText;
-
-        const activate = () => {
-          if (label) label.textContent = text;
-        };
-
-        const reset = () => {
-          if (label) label.textContent = defaultText;
-        };
-
-        link.addEventListener('mouseenter', activate);
-        link.addEventListener('focus', activate);
-        link.addEventListener('mouseleave', () => {
-          if (activeTouchLink !== link) reset();
-        });
-        link.addEventListener('blur', () => {
-          if (activeTouchLink !== link) reset();
-        });
-        link.addEventListener('click', (event) => {
-          if (!touchPreviewQuery.matches) return;
-          if (activeTouchLink !== link) {
-            event.preventDefault();
-            activeTouchLink = link;
-            activate();
-            return;
-          }
-          activeTouchLink = null;
-        });
-      });
-
-      document.addEventListener('touchstart', (event) => {
-        if ((event.target instanceof Element) && event.target.closest('[data-circle-part-name]')) return;
-        activeTouchLink = null;
-        if (label) label.textContent = defaultText;
-      }, { passive: true });
     }
 
     if (document.readyState === 'loading') {
