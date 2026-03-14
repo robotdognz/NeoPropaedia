@@ -159,6 +159,7 @@ type DragState = {
   startY: number;
   moved: boolean;
   readyForCenter: boolean;
+  rotateOnly: boolean;
 };
 
 export default function CircleNavigator({ parts }: CircleNavigatorProps) {
@@ -252,14 +253,14 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     const dragState = dragStateRef.current;
     if (!dragState || dragState.pointerId !== pointerId) return;
 
-    if (dragState.readyForCenter) {
+    if (!dragState.rotateOnly && dragState.readyForCenter) {
       movePartToCenter(dragState.activePartNumber);
     } else {
       const nextRotation = snapRotation(rotationDegrees);
       setRotationDegrees(nextRotation);
 
       const isQuickClick =
-        !dragState.moved && Date.now() - dragState.startTime <= CLICK_DURATION_THRESHOLD_MS;
+        !dragState.rotateOnly && !dragState.moved && Date.now() - dragState.startTime <= CLICK_DURATION_THRESHOLD_MS;
 
       if (isQuickClick) {
         setSelectedPartNumber(dragState.activePartNumber);
@@ -274,8 +275,10 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     setCenterPreviewPartNumber(null);
   };
 
-  const handleSegmentPointerDown = (partNumber: number) => (event: h.JSX.TargetedPointerEvent<SVGPathElement>) => {
+  const handleSegmentPointerDown = (partNumber: number) => (event: h.JSX.TargetedPointerEvent<SVGElement>) => {
     if (!svgRef.current) return;
+
+    event.stopPropagation();
 
     const point = svgPoint(svgRef.current, event.clientX, event.clientY);
     const startAngle = angleFromPoint(point.x, point.y);
@@ -290,6 +293,34 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
       startY: point.y,
       moved: false,
       readyForCenter: false,
+      rotateOnly: false,
+    };
+
+    svgRef.current.setPointerCapture(event.pointerId);
+    event.preventDefault();
+  };
+
+  const handleBackgroundPointerDown = (event: h.JSX.TargetedPointerEvent<SVGSVGElement>) => {
+    if (dragStateRef.current || !svgRef.current) return;
+
+    const point = svgPoint(svgRef.current, event.clientX, event.clientY);
+    const radius = distanceFromCenter(point.x, point.y);
+
+    if (radius <= CENTER_PREVIEW_THRESHOLD) return;
+
+    const startAngle = angleFromPoint(point.x, point.y);
+
+    dragStateRef.current = {
+      pointerId: event.pointerId,
+      activePartNumber: topPartNumber,
+      startAngle,
+      startRotation: rotationDegrees,
+      startTime: Date.now(),
+      startX: point.x,
+      startY: point.y,
+      moved: false,
+      readyForCenter: false,
+      rotateOnly: true,
     };
 
     svgRef.current.setPointerCapture(event.pointerId);
@@ -310,7 +341,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
       dragState.moved = true;
     }
 
-    if (dragState.activePartNumber !== centerPartNumber && nextRadius <= CENTER_PREVIEW_THRESHOLD) {
+    if (!dragState.rotateOnly && dragState.activePartNumber !== centerPartNumber && nextRadius <= CENTER_PREVIEW_THRESHOLD) {
       setCenterPreviewPartNumber(dragState.activePartNumber);
       dragState.readyForCenter = nextRadius <= CENTER_COMMIT_THRESHOLD;
       return;
@@ -335,38 +366,14 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
   return (
     <div class="grid gap-5 sm:gap-6 xl:grid-cols-[minmax(0,1.1fr)_minmax(18rem,0.9fr)] xl:items-start">
       <div class="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-3 sm:rounded-[1.75rem] sm:p-6">
-        <div class="mb-4 rounded-[1.1rem] border border-slate-200 bg-white/95 px-4 py-3 shadow-sm sm:mb-5 sm:px-5">
-          <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <div class="min-w-0">
-              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
-                Current emphasis
-              </p>
-              <p class="mt-1 text-sm font-serif font-semibold leading-6 text-slate-900 sm:text-base sm:leading-7">
-                Set a main focus at the centre and a secondary emphasis at the top.
-              </p>
-            </div>
-
-            <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-700 sm:text-sm">
-              <span class="rounded-full bg-slate-100 px-3 py-1.5">
-                Centre: {centerPart.partName}
-              </span>
-              <span class="rounded-full bg-slate-100 px-3 py-1.5">
-                Top: {topPart.partName}
-              </span>
-            </div>
-          </div>
-          <p class="mt-2 text-xs leading-5 text-slate-500 sm:text-sm sm:leading-6">
-            Use the centre to set the main field of study, and the top to choose the strongest secondary emphasis.
-          </p>
-        </div>
-
         <svg
           ref={svgRef}
           viewBox={`0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`}
-          class="mx-auto aspect-square w-full max-w-[38rem] touch-none select-none sm:max-w-[42rem]"
+          class="mx-auto aspect-square w-full max-w-[38rem] cursor-grab touch-none select-none active:cursor-grabbing sm:max-w-[42rem]"
           style={{ overflow: 'visible' }}
           role="img"
           aria-label="Interactive circle navigation for the ten parts of the Propaedia"
+          onPointerDown={handleBackgroundPointerDown}
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerUp}
           onPointerCancel={handlePointerCancel}
@@ -423,7 +430,10 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                   {part.partNumber}
                 </text>
 
-                <a href={part.href}>
+                <g
+                  class="cursor-pointer"
+                  onPointerDown={handleSegmentPointerDown(part.partNumber)}
+                >
                   <line
                     x1={connectorStart.x}
                     y1={connectorStart.y}
@@ -458,7 +468,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                       </tspan>
                     ))}
                   </text>
-                </a>
+                </g>
               </g>
             );
           })}
@@ -599,14 +609,19 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
           </g>
         </svg>
 
-        <div class="mt-3 min-h-[2rem] text-center text-sm font-semibold text-slate-700 sm:mt-4 sm:min-h-[2.5rem]">
-          {previewCenterPart ? (
-            <span>
-              Release to place {previewCenterPart.partName}: {previewCenterPart.title} at the center.
-            </span>
-          ) : (
-            <span class="text-slate-500">Drag the ring to rotate, or pull a part inward to move it to the center.</span>
-          )}
+        {previewCenterPart && (
+          <p class="mt-3 min-h-[1.5rem] text-center text-sm font-semibold text-slate-700 sm:mt-4">
+            Release to place {previewCenterPart.partName}: {previewCenterPart.title} at the centre.
+          </p>
+        )}
+
+        <div class="mt-4 rounded-[1.1rem] border border-slate-200 bg-white/95 px-4 py-3 shadow-sm sm:mt-5 sm:px-5">
+          <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
+            Current emphasis
+          </p>
+          <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
+            Your curriculum is built around {centerPart.title.toLowerCase()} with {topPart.title.toLowerCase()} as the secondary emphasis.
+          </p>
         </div>
       </div>
 
@@ -618,15 +633,6 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
           <h3 class="mt-2 text-xl font-serif font-bold text-slate-900 sm:mt-3 sm:text-2xl">
             {selectedPart.partName}: {selectedPart.title}
           </h3>
-
-          <div class="mt-4 space-y-2 text-sm leading-6 text-slate-600 sm:mt-5 sm:space-y-3 sm:leading-7">
-            <p>
-              <span class="font-semibold text-slate-800">At the top:</span> {topPart.partName}: {topPart.title}
-            </p>
-            <p>
-              <span class="font-semibold text-slate-800">At the centre:</span> {centerPart.partName}: {centerPart.title}
-            </p>
-          </div>
 
           <div class="mt-5 grid gap-2 sm:mt-6 sm:flex sm:flex-wrap">
             <a
