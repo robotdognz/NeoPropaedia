@@ -25,9 +25,10 @@ export interface VsiMapping {
 export interface VsiRecommendationsProps {
   mappings: VsiMapping[];
   sectionCode: string;
+  baseUrl: string;
 }
 
-export default function VsiRecommendations({ mappings, sectionCode }: VsiRecommendationsProps) {
+export default function VsiRecommendations({ mappings, sectionCode, baseUrl }: VsiRecommendationsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
   const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(undefined);
@@ -75,6 +76,15 @@ export default function VsiRecommendations({ mappings, sectionCode }: VsiRecomme
   return (
     <section ref={sectionRef} id="vsi-recommendations" class="mt-6 scroll-mt-24">
       <Accordion title={`Oxford VSI Recommendations (${totalCount})`} forceOpenKey={forceOpenKey}>
+        <div class="mb-4 flex justify-end">
+          <a
+            href={`${baseUrl}/vsi`}
+            class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
+          >
+            Browse full VSI list
+          </a>
+        </div>
+
         <div class="mb-4 flex flex-wrap items-start justify-between gap-3 rounded-lg border border-amber-200 bg-amber-50 px-3 py-2">
           <div class="min-w-0">
             <p class="text-sm font-medium text-amber-900">

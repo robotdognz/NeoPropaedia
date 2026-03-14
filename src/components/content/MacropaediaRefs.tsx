@@ -10,6 +10,7 @@ import {
 
 export interface MacropaediaRefsProps {
   references: string[];
+  baseUrl: string;
 }
 
 /**
@@ -17,7 +18,7 @@ export interface MacropaediaRefsProps {
  * These are historical references from the Britannica print edition
  * and are not clickable links.
  */
-export default function MacropaediaRefs({ references }: MacropaediaRefsProps) {
+export default function MacropaediaRefs({ references, baseUrl }: MacropaediaRefsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
@@ -31,6 +32,15 @@ export default function MacropaediaRefs({ references }: MacropaediaRefsProps) {
 
   return (
     <Accordion title="Macropaedia Reading List">
+      <div class="mb-4 flex justify-end">
+        <a
+          href={`${baseUrl}/macropaedia`}
+          class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
+        >
+          Browse full Macropaedia list
+        </a>
+      </div>
+
       <ul class="space-y-2">
         {references.map((ref, i) => {
           const checklistKey = macropaediaChecklistKey(ref);

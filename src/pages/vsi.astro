@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import VsiLibrary from '../components/content/VsiLibrary';
+import { getCollection } from 'astro:content';
+import { buildVsiAggregateEntries } from '../utils/readingData';
+
+const base = import.meta.env.BASE_URL;
+const sections = await getCollection('sections');
+const mappings = await getCollection('vsi-mappings');
+const catalogCollections = await getCollection('vsi');
+
+const entries = buildVsiAggregateEntries(
+  sections.map((entry) => entry.data),
+  mappings.map((entry) => entry.data),
+  catalogCollections.flatMap((entry) => entry.data.titles)
+);
+---
+
+<BaseLayout
+  title="Oxford VSI Library — Propaedia"
+  description="Browse every Oxford Very Short Introduction mapped into the Propaedia, ranked by how widely each title appears across sections."
+>
+  <main id="main-content" class="mx-auto w-full max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
+    <header class="max-w-4xl">
+      <p class="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">Reading Lists</p>
+      <h1 class="mt-3 font-serif text-4xl text-gray-900 sm:text-5xl">Oxford Very Short Introductions</h1>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-gray-600 sm:text-lg">
+        Browse the full VSI list used in this tool, see which titles support the widest spread of sections, and follow
+        a reading path that adapts to what you have already checked off.
+      </p>
+    </header>
+
+    <section class="mt-10">
+      <VsiLibrary client:load entries={entries} baseUrl={base} />
+    </section>
+  </main>
+</BaseLayout>

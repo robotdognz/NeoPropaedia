@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import Accordion from '../ui/Accordion';
+import { formatEditionLabel } from '../../utils/readingData';
 
 export interface VsiCardProps {
   title: string;
@@ -11,21 +12,6 @@ export interface VsiCardProps {
   onCheckedChange: (checked: boolean) => void;
 }
 
-function formatEdition(edition?: number) {
-  if (!edition) return null;
-
-  const mod100 = edition % 100;
-  if (mod100 >= 11 && mod100 <= 13) {
-    return `${edition}th ed.`;
-  }
-
-  const mod10 = edition % 10;
-  if (mod10 === 1) return `${edition}st ed.`;
-  if (mod10 === 2) return `${edition}nd ed.`;
-  if (mod10 === 3) return `${edition}rd ed.`;
-  return `${edition}th ed.`;
-}
-
 export default function VsiCard({
   title,
   author,
@@ -35,7 +21,7 @@ export default function VsiCard({
   checked,
   onCheckedChange,
 }: VsiCardProps) {
-  const editionLabel = formatEdition(edition);
+  const editionLabel = formatEditionLabel(edition);
   const metadata = [author, editionLabel, publicationYear ? String(publicationYear) : null].filter(Boolean).join(' · ');
 
   return (
