@@ -164,10 +164,11 @@ function angleFromPoint(x: number, y: number): number {
 
 function svgPoint(svg: SVGSVGElement, clientX: number, clientY: number) {
   const bounds = svg.getBoundingClientRect();
+  const vb = svg.viewBox.baseVal;
 
   return {
-    x: ((clientX - bounds.left) / bounds.width) * VIEWBOX_SIZE,
-    y: ((clientY - bounds.top) / bounds.height) * VIEWBOX_SIZE,
+    x: vb.x + ((clientX - bounds.left) / bounds.width) * vb.width,
+    y: vb.y + ((clientY - bounds.top) / bounds.height) * vb.height,
   };
 }
 
@@ -193,11 +194,27 @@ type DragState = {
   rotateOnly: boolean;
 };
 
+const COMPACT_BREAKPOINT = 640;
+const COMPACT_MARGIN = 40;
+const COMPACT_VIEW_RADIUS = OUTER_RADIUS + COMPACT_MARGIN;
+const COMPACT_VIEW_SIZE = COMPACT_VIEW_RADIUS * 2;
+const COMPACT_ORIGIN = CENTER - COMPACT_VIEW_RADIUS;
+
 export default function CircleNavigator({ parts }: CircleNavigatorProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const dragStateRef = useRef<DragState | null>(null);
   const [centerHasFocus, setCenterHasFocus] = useState(false);
   const [hasLoadedState, setHasLoadedState] = useState(false);
+  const [isCompact, setIsCompact] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const mq = window.matchMedia(`(max-width: ${COMPACT_BREAKPOINT - 1}px)`);
+    setIsCompact(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsCompact(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
   const [centerPartNumber, setCenterPartNumber] = useState(DEFAULT_CENTER_PART);
   const [rotationDegrees, setRotationDegrees] = useState(0);
   const [selectedPartNumber, setSelectedPartNumber] = useState(DEFAULT_CENTER_PART);
@@ -215,6 +232,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
   } | null>(null);
   const postSwapAnimRef = useRef<number | null>(null);
   const skipMorphReverseRef = useRef(false);
+  const snapAnimRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (morphAnimRef.current) {
@@ -336,10 +354,21 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     const oldIndexMap = new Map(oldOuter.map((p, i) => [p.partNumber, i]));
     const newIndexMap = new Map(newOuter.map((p, i) => [p.partNumber, i]));
 
+    // Keep the current top part at the top after the swap
+    const currentTopPN = topPartNumberForRotation(oldOuter, rotationDegrees);
+    const newTopIdx = newIndexMap.get(currentTopPN);
+    const newRotation = newTopIdx !== undefined ? -newTopIdx * SEGMENT_ANGLE : snapRotation(rotationDegrees);
+
+    // Compute angular offsets relative to the new rotation
+    const oldSnappedRotation = snapRotation(rotationDegrees);
     const offsets = new Map<number, number>();
     for (const p of newOuter) {
-      if (oldIndexMap.has(p.partNumber)) {
-        const shift = (oldIndexMap.get(p.partNumber)! - newIndexMap.get(p.partNumber)!) * SEGMENT_ANGLE;
+      const oldIdx = oldIndexMap.get(p.partNumber);
+      const newIdx = newIndexMap.get(p.partNumber)!;
+      if (oldIdx !== undefined) {
+        const oldAngle = oldSnappedRotation + oldIdx * SEGMENT_ANGLE;
+        const newAngle = newRotation + newIdx * SEGMENT_ANGLE;
+        const shift = normalizeDegrees(oldAngle - newAngle);
         if (Math.abs(shift) > 0.01) offsets.set(p.partNumber, shift);
       }
     }
@@ -354,7 +383,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     skipMorphReverseRef.current = true;
 
     // Apply the state change
-    setRotationDegrees(snapRotation(rotationDegrees));
+    setRotationDegrees(newRotation);
     setCenterPartNumber(partNumber);
     setSelectedPartNumber(partNumber);
     setCenterPreviewPartNumber(null);
@@ -379,6 +408,27 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     postSwapAnimRef.current = requestAnimationFrame(animate);
   };
 
+  const animateSnapRotation = (from: number, to: number) => {
+    if (snapAnimRef.current) cancelAnimationFrame(snapAnimRef.current);
+    if (Math.abs(from - to) < 0.5) {
+      setRotationDegrees(to);
+      return;
+    }
+    const startTime = performance.now();
+    const duration = Math.min(200, Math.abs(from - to) * 8);
+    const animate = (now: number) => {
+      const elapsed = now - startTime;
+      const rawT = Math.min(elapsed / duration, 1);
+      setRotationDegrees(lerp(from, to, easeOutCubic(rawT)));
+      if (rawT < 1) {
+        snapAnimRef.current = requestAnimationFrame(animate);
+      } else {
+        snapAnimRef.current = null;
+      }
+    };
+    snapAnimRef.current = requestAnimationFrame(animate);
+  };
+
   const finishDrag = (pointerId: number) => {
     const dragState = dragStateRef.current;
     if (!dragState || dragState.pointerId !== pointerId) return;
@@ -387,7 +437,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
       movePartToCenter(dragState.activePartNumber);
     } else {
       const nextRotation = snapRotation(rotationDegrees);
-      setRotationDegrees(nextRotation);
+      animateSnapRotation(rotationDegrees, nextRotation);
 
       const isQuickClick =
         !dragState.rotateOnly && !dragState.moved && Date.now() - dragState.startTime <= CLICK_DURATION_THRESHOLD_MS;
@@ -407,6 +457,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
 
   const handleSegmentPointerDown = (partNumber: number) => (event: h.JSX.TargetedPointerEvent<SVGElement>) => {
     if (!svgRef.current) return;
+    if (snapAnimRef.current) { cancelAnimationFrame(snapAnimRef.current); snapAnimRef.current = null; }
 
     event.stopPropagation();
 
@@ -432,6 +483,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
 
   const handleBackgroundPointerDown = (event: h.JSX.TargetedPointerEvent<SVGSVGElement>) => {
     if (dragStateRef.current || !svgRef.current) return;
+    if (snapAnimRef.current) { cancelAnimationFrame(snapAnimRef.current); snapAnimRef.current = null; }
 
     const point = svgPoint(svgRef.current, event.clientX, event.clientY);
     const radius = distanceFromCenter(point.x, point.y);
@@ -495,12 +547,15 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
 
   return (
     <div class="grid gap-5 sm:gap-6 xl:grid-cols-[minmax(0,1.1fr)_minmax(18rem,0.9fr)] xl:items-start">
-      <div class="rounded-[1.5rem] border border-slate-200 bg-slate-50 p-3 sm:rounded-[1.75rem] sm:p-6">
+      <div class="rounded-[1rem] border border-slate-200 bg-slate-50 p-1 sm:rounded-[1.75rem] sm:p-6">
         <svg
           ref={svgRef}
-          viewBox={`0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`}
+          viewBox={isCompact
+            ? `${COMPACT_ORIGIN} ${COMPACT_ORIGIN} ${COMPACT_VIEW_SIZE} ${COMPACT_VIEW_SIZE}`
+            : `0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`
+          }
           class="mx-auto aspect-square w-full max-w-[38rem] cursor-grab touch-none select-none active:cursor-grabbing sm:max-w-[42rem]"
-          style={{ overflow: 'visible' }}
+          style={{ overflow: isCompact ? 'hidden' : 'visible' }}
           role="img"
           aria-label="Interactive circle navigation for the ten parts of the Propaedia"
           onPointerDown={handleBackgroundPointerDown}
