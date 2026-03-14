@@ -693,6 +693,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             const segmentInnerRadius = lerp(INNER_RADIUS, INNER_RADIUS - 10, selTopWeight);
             const segmentOuterRadius = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, selTopWeight);
             const outlineInset = SELECTION_OUTLINE_WIDTH / 2;
+            const outlineInner = Math.max(segmentInnerRadius + outlineInset, CENTER_DISC_RADIUS + outlineInset);
             const isMorphing = morphPartNumber === selectedOuterPart.partNumber && morphT > 0;
             const isPostSwapPart = postSwapState?.oldCenterPartNumber === selectedOuterPart.partNumber && postSwapT > 0;
 
@@ -701,14 +702,14 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                 d={isMorphing
                   ? morphedDonutPath(
                       CENTER, CENTER,
-                      segmentInnerRadius + outlineInset, segmentOuterRadius - outlineInset,
+                      outlineInner, segmentOuterRadius - outlineInset,
                       startAngle, endAngle,
                       CENTER_DISC_RADIUS - outlineInset,
                       morphT
                     )
                   : donutSlicePath(
                       CENTER, CENTER,
-                      segmentInnerRadius + outlineInset, segmentOuterRadius - outlineInset,
+                      outlineInner, segmentOuterRadius - outlineInset,
                       startAngle, endAngle
                     )
                 }
