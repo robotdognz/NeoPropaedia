@@ -72,6 +72,9 @@ try {
         ...entry,
         publicationYear: catalogEntry?.publicationYear,
         edition: catalogEntry?.edition,
+        subject: catalogEntry?.subject,
+        keywords: catalogEntry?.keywords,
+        abstract: catalogEntry?.abstract,
       };
     });
   }
@@ -165,16 +168,26 @@ const breadcrumbItems = [
       )}
 
       <!-- VSI Recommendations -->
-      {vsiMappings.length > 0 && (
+      {vsiMappings.length > 0 && (() => {
+        function collectOutlineText(nodes: any[]): string {
+          let text = '';
+          (nodes || []).forEach((n: any) => { text += ' ' + (n.text || ''); text += collectOutlineText(n.children); });
+          return text;
+        }
+        const outlineText = collectOutlineText(section.outline).trim();
+        return (
         <section class="mb-8">
           <VsiRecommendations
             client:load
             mappings={vsiMappings}
             sectionCode={section.sectionCode}
+            sectionTitle={section.title}
+            sectionOutlineText={outlineText}
             baseUrl={base}
           />
         </section>
-      )}
+        );
+      })()}
 
       <!-- Macropaedia References -->
       {section.macropaediaReferences.length > 0 && (

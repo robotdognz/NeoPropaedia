@@ -10,6 +10,7 @@ import {
 } from '../../utils/readingChecklist';
 import {
   filterMappingsForOutline,
+  sortByDefaultRelevance,
   OUTLINE_VSI_SELECT_EVENT,
   type OutlineSelectionDetail,
 } from '../../utils/vsiOutlineFilter';
@@ -20,15 +21,20 @@ export interface VsiMapping {
   rationale: string;
   publicationYear?: number;
   edition?: number;
+  subject?: string;
+  keywords?: string[];
+  abstract?: string;
 }
 
 export interface VsiRecommendationsProps {
   mappings: VsiMapping[];
   sectionCode: string;
+  sectionTitle: string;
+  sectionOutlineText?: string;
   baseUrl: string;
 }
 
-export default function VsiRecommendations({ mappings, sectionCode, baseUrl }: VsiRecommendationsProps) {
+export default function VsiRecommendations({ mappings, sectionCode, sectionTitle, sectionOutlineText, baseUrl }: VsiRecommendationsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
   const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(undefined);
@@ -62,7 +68,8 @@ export default function VsiRecommendations({ mappings, sectionCode, baseUrl }: V
 
   if (!mappings || mappings.length === 0) return null;
 
-  const visibleMappings = selection ? filterMappingsForOutline(mappings, selection) : mappings;
+  const sortedMappings = sortByDefaultRelevance(mappings, sectionTitle, sectionOutlineText);
+  const visibleMappings = selection ? filterMappingsForOutline(sortedMappings, selection) : sortedMappings;
   const totalCount = mappings.length;
   const visibleCount = visibleMappings.length;
   const isFiltered = selection !== null;

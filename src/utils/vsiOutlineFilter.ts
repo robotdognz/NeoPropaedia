@@ -10,6 +10,9 @@ export interface SearchableVsiMapping {
   vsiTitle: string;
   vsiAuthor: string;
   rationale: string;
+  subject?: string;
+  keywords?: string[];
+  abstract?: string;
 }
 
 const STOP_WORDS = new Set([
@@ -38,7 +41,7 @@ function escapeRegExp(value: string): string {
 function normalizeToken(token: string): string {
   const normalized = token
     .toLowerCase()
-    .replace(/['’]s$/g, '')
+    .replace(/['']s$/g, '')
     .replace(/[^a-z0-9]/g, '');
 
   if (normalized.length > 4 && normalized.endsWith('s')) {
@@ -68,6 +71,36 @@ function matchesOutlinePath(rationale: string, outlinePath: string): boolean {
   return pathPattern.test(rationale);
 }
 
+function keywordTokens(keywords: string[] | undefined): Set<string> {
+  if (!keywords) return new Set();
+  const tokens = new Set<string>();
+  for (const kw of keywords) {
+    for (const token of tokenize(kw)) {
+      tokens.add(token);
+    }
+  }
+  return tokens;
+}
+
+function subjectTokens(subject: string | undefined): Set<string> {
+  if (!subject) return new Set();
+  const tokens = new Set<string>();
+  for (const part of subject.split('/')) {
+    for (const token of tokenize(part)) {
+      tokens.add(token);
+    }
+  }
+  return tokens;
+}
+
+function countTokenMatches(tokenSet: Set<string>, contextTokens: string[]): number {
+  let matched = 0;
+  for (const token of contextTokens) {
+    if (tokenSet.has(token)) matched++;
+  }
+  return matched;
+}
+
 function scoreMapping(mapping: SearchableVsiMapping, selection: OutlineSelectionDetail): number {
   const searchableText = `${mapping.vsiTitle} ${mapping.vsiAuthor} ${mapping.rationale}`;
   const mappingTokens = new Set(tokenize(searchableText));
@@ -91,6 +124,16 @@ function scoreMapping(mapping: SearchableVsiMapping, selection: OutlineSelection
     score += 2;
   }
 
+  // Boost if VSI subject matches the selection text
+  const sToks = subjectTokens(mapping.subject);
+  score += countTokenMatches(sToks, selectionTokens) * 2;
+
+  // Boost if VSI keywords match the selection text
+  const kwToks = keywordTokens(mapping.keywords);
+  const kwMatches = countTokenMatches(kwToks, selectionTokens);
+  score += kwMatches * 3;
+  if (kwMatches >= 2) score += 3;
+
   return score;
 }
 
@@ -104,4 +147,50 @@ export function filterMappingsForOutline<T extends SearchableVsiMapping>(
     .sort((left, right) => right.score - left.score);
 
   return scoredMappings.map(({ mapping }) => mapping);
+}
+
+/**
+ * Sorts mappings by relevance to the section's title and outline text.
+ * Used for the default (unfiltered) display order.
+ */
+export function sortByDefaultRelevance<T extends SearchableVsiMapping>(
+  mappings: T[],
+  sectionTitle: string,
+  sectionOutlineText?: string
+): T[] {
+  const contextText = `${sectionTitle} ${sectionOutlineText || ''}`;
+  const contextTokens = tokenize(contextText);
+
+  const scored = mappings.map((mapping) => {
+    let score = 0;
+
+    // Keywords matching section context — strongest signal
+    const kwToks = keywordTokens(mapping.keywords);
+    const kwMatches = countTokenMatches(kwToks, contextTokens);
+    score += kwMatches * 3;
+    if (kwMatches >= 3) score += 5;
+    else if (kwMatches >= 2) score += 2;
+
+    // Title matching section context
+    const titleTokens = tokenize(mapping.vsiTitle);
+    const titleMatches = countTokenMatches(new Set(contextTokens), titleTokens);
+    score += titleMatches * 2;
+
+    // Subject matching section context
+    const sToks = subjectTokens(mapping.subject);
+    score += countTokenMatches(sToks, contextTokens);
+
+    // Rationale text matching — lighter weight (it's written to match by design)
+    const rationaleTokens = new Set(tokenize(mapping.rationale));
+    let rationaleMatches = 0;
+    for (const token of contextTokens) {
+      if (rationaleTokens.has(token)) rationaleMatches++;
+    }
+    score += Math.min(rationaleMatches, 5);
+
+    return { mapping, score };
+  });
+
+  scored.sort((a, b) => b.score - a.score);
+  return scored.map(({ mapping }) => mapping);
 }
