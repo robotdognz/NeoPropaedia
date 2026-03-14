@@ -737,18 +737,39 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             const pInner = lerp(INNER_RADIUS, INNER_RADIUS - 10, pTopWeight);
             const pOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, pTopWeight);
 
+            const outlineInset = SELECTION_OUTLINE_WIDTH / 2;
+            const pOutlineInner = Math.max(pInner + outlineInset, CENTER_DISC_RADIUS + outlineInset);
+
             return (
-              <path
-                d={morphedDonutPath(
-                  CENTER, CENTER,
-                  pInner, pOuter,
-                  pStartAngle, pEndAngle,
-                  CENTER_DISC_RADIUS,
-                  postSwapT
+              <>
+                <path
+                  d={morphedDonutPath(
+                    CENTER, CENTER,
+                    pInner, pOuter,
+                    pStartAngle, pEndAngle,
+                    CENTER_DISC_RADIUS,
+                    postSwapT
+                  )}
+                  fill={oldCP.colorHex}
+                  pointer-events="none"
+                />
+                {selectedPartNumber === oldCP.partNumber && (
+                  <path
+                    d={morphedDonutPath(
+                      CENTER, CENTER,
+                      pOutlineInner, pOuter - outlineInset,
+                      pStartAngle, pEndAngle,
+                      CENTER_DISC_RADIUS - outlineInset,
+                      postSwapT
+                    )}
+                    fill="none"
+                    stroke="#0f172a"
+                    stroke-width={SELECTION_OUTLINE_WIDTH}
+                    stroke-linejoin="round"
+                    pointer-events="none"
+                  />
                 )}
-                fill={oldCP.colorHex}
-                pointer-events="none"
-              />
+              </>
             );
           })()}
 
