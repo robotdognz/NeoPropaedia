@@ -342,14 +342,14 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     const newTopIdx = newIndexMap.get(currentTopPN);
     const newRotation = newTopIdx !== undefined ? -newTopIdx * SEGMENT_ANGLE : snapRotation(rotationDegrees);
 
-    // Compute angular offsets relative to the new rotation
-    const oldSnappedRotation = snapRotation(rotationDegrees);
+    // Use actual current rotation (not snapped) so the visual transition is continuous
+    const currentRotation = rotationDegrees;
     const offsets = new Map<number, number>();
     for (const p of newOuter) {
       const oldIdx = oldIndexMap.get(p.partNumber);
       const newIdx = newIndexMap.get(p.partNumber)!;
       if (oldIdx !== undefined) {
-        const oldAngle = oldSnappedRotation + oldIdx * SEGMENT_ANGLE;
+        const oldAngle = currentRotation + oldIdx * SEGMENT_ANGLE;
         const newAngle = newRotation + newIdx * SEGMENT_ANGLE;
         const shift = normalizeDegrees(oldAngle - newAngle);
         if (Math.abs(shift) > 0.01) offsets.set(p.partNumber, shift);
@@ -361,6 +361,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     // Cancel any in-flight animations
     if (postSwapAnimRef.current) cancelAnimationFrame(postSwapAnimRef.current);
     if (morphAnimRef.current) cancelAnimationFrame(morphAnimRef.current);
+    if (snapAnimRef.current) { cancelAnimationFrame(snapAnimRef.current); snapAnimRef.current = null; }
     setMorphT(0);
     setMorphPartNumber(null);
     skipMorphReverseRef.current = true;
