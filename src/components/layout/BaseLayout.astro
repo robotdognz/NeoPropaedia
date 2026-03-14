@@ -66,33 +66,129 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       }
     </script>
 
-    <script is:inline define:vars={{ pagefindHighlightScript: `${base}/pagefind/pagefind-highlight.js` }}>
-      const highlightParam = 'pagefind-highlight';
-      const highlightClassName = 'pagefind-highlight';
-      const highlightTerms = new URLSearchParams(window.location.search).getAll(highlightParam);
+    <script is:inline>
+      (function() {
+        var HIGHLIGHT_CLASS = 'pagefind-highlight';
+        var HIGHLIGHT_PARAM = 'pagefind-highlight';
+        var terms = new URLSearchParams(window.location.search).getAll(HIGHLIGHT_PARAM);
+        if (!terms.length) return;
 
-      if (highlightTerms.length > 0) {
-        import(pagefindHighlightScript)
-          .then(({ PagefindHighlight }) => {
-            new PagefindHighlight({
-              highlightParam,
-              markOptions: {
-                className: highlightClassName,
-                exclude: ['[data-pagefind-ignore]', '[data-pagefind-ignore] *'],
-              },
-            });
+        var termPattern = new RegExp(terms.join('|'), 'i');
+        var openedPanels = [];
 
-            requestAnimationFrame(() => {
-              const firstHighlight = document.querySelector(`.${highlightClassName}`);
-              if (firstHighlight instanceof HTMLElement) {
-                firstHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
-              }
-            });
-          })
-          .catch(() => {
-            // Pagefind assets are not available in dev mode.
+        function delay(ms) {
+          return new Promise(function(resolve) { setTimeout(resolve, ms); });
+        }
+
+        function waitForHydration() {
+          return new Promise(function(resolve) {
+            (function poll() {
+              if (document.querySelectorAll('button[aria-expanded]').length) return resolve();
+              setTimeout(poll, 50);
+            })();
           });
-      }
+        }
+
+        /** Reads the accordion animation duration from the DOM (set by the Accordion component). */
+        function getAnimationDelay() {
+          var el = document.querySelector('[data-accordion-ms]');
+          return (el ? parseInt(el.getAttribute('data-accordion-ms'), 10) : 300) + 50;
+        }
+
+        /** Opens accordions and <details> whose content matches the search terms. Returns count opened. */
+        function openMatchingAccordions() {
+          var main = document.querySelector('[data-pagefind-body]');
+          if (!main) return 0;
+          var count = 0;
+
+          main.querySelectorAll('button[aria-expanded="false"]').forEach(function(btn) {
+            var panelId = btn.getAttribute('aria-controls');
+            var panel = panelId && document.getElementById(panelId);
+            if (panel && termPattern.test(panel.textContent || '')) {
+              btn.click();
+              openedPanels.push(panel);
+              count++;
+            }
+          });
+
+          main.querySelectorAll('details:not([open])').forEach(function(el) {
+            if (termPattern.test(el.textContent || '')) {
+              el.open = true;
+              openedPanels.push(el);
+              count++;
+            }
+          });
+
+          return count;
+        }
+
+        /** Wraps visible text matches in <mark> elements. */
+        function highlightMatches() {
+          var escaped = terms.map(function(t) { return t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); });
+          var regex = new RegExp('(' + escaped.join('|') + ')', 'gi');
+          var root = document.querySelector('[data-pagefind-body]') || document.body;
+          var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+
+          // Collect first — modifying the DOM during walk skips nodes
+          var textNodes = [];
+          while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+          textNodes.forEach(function(node) {
+            if (!node.nodeValue || !regex.test(node.nodeValue)) return;
+            regex.lastIndex = 0;
+            var parent = node.parentNode;
+            if (!parent) return;
+            if (!parent.offsetParent && parent !== document.body) return; // not visible
+            if (/^(SCRIPT|STYLE)$/.test(parent.tagName)) return;
+
+            var frag = document.createDocumentFragment();
+            var text = node.nodeValue;
+            var last = 0;
+            var m;
+            while ((m = regex.exec(text))) {
+              if (m.index > last) frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+              var mark = document.createElement('mark');
+              mark.className = HIGHLIGHT_CLASS;
+              mark.style.cssText = 'background:#fef08a;padding:1px 2px;border-radius:2px';
+              mark.textContent = m[0];
+              frag.appendChild(mark);
+              last = regex.lastIndex;
+            }
+            if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+            parent.replaceChild(frag, node);
+          });
+        }
+
+        /** Scrolls to the best highlight — preferring marks inside panels we opened. */
+        function scrollToHighlight() {
+          var target = null;
+          for (var i = openedPanels.length - 1; i >= 0 && !target; i--) {
+            target = openedPanels[i].querySelector('.' + HIGHLIGHT_CLASS);
+          }
+          if (!target) target = document.querySelector('.' + HIGHLIGHT_CLASS);
+          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        async function run() {
+          await waitForHydration();
+          var animDelay = getAnimationDelay();
+
+          // Pass 1: open parent accordions containing the search term
+          var opened = openMatchingAccordions();
+          if (opened > 0) {
+            await delay(animDelay);
+            // Pass 2: open nested accordions now visible inside opened parents
+            openMatchingAccordions();
+            await delay(animDelay);
+          }
+
+          highlightMatches();
+          await delay(animDelay); // wait for overflow:visible transition
+          scrollToHighlight();
+        }
+
+        run();
+      })();
     </script>
   </body>
 </html>

@@ -9,21 +9,29 @@ export interface AccordionProps {
   children: ComponentChildren;
 }
 
+export const ACCORDION_ANIMATION_MS = 300;
+
 let accordionIdCounter = 0;
 
 export default function Accordion({ title, defaultOpen = false, forceOpenKey, children }: AccordionProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
   const contentRef = useRef<HTMLDivElement>(null);
   const [maxHeight, setMaxHeight] = useState<string>(defaultOpen ? 'none' : '0px');
+  const [hideOverflow, setHideOverflow] = useState(!defaultOpen);
   const [id] = useState(() => `accordion-${++accordionIdCounter}`);
 
   useEffect(() => {
     if (isOpen && contentRef.current) {
+      setHideOverflow(true);
       setMaxHeight(`${contentRef.current.scrollHeight}px`);
-      // After transition completes, switch to 'none' so dynamic content isn't clipped
-      const timer = setTimeout(() => setMaxHeight('none'), 300);
+      // After transition completes, switch to 'none' and allow overflow
+      const timer = setTimeout(() => {
+        setMaxHeight('none');
+        setHideOverflow(false);
+      }, ACCORDION_ANIMATION_MS);
       return () => clearTimeout(timer);
     } else {
+      setHideOverflow(true);
       // To animate closing, first set an explicit height, then collapse
       if (contentRef.current) {
         setMaxHeight(`${contentRef.current.scrollHeight}px`);
@@ -73,7 +81,8 @@ export default function Accordion({ title, defaultOpen = false, forceOpenKey, ch
         role="region"
         aria-labelledby={`${id}-trigger`}
         ref={contentRef}
-        style={{ maxHeight, overflow: 'hidden', transition: 'max-height 0.3s ease' }}
+        data-accordion-ms={ACCORDION_ANIMATION_MS}
+        style={{ maxHeight, overflow: hideOverflow ? 'hidden' : 'visible', transition: `max-height ${ACCORDION_ANIMATION_MS}ms ease` }}
       >
         <div class="px-4 py-3 text-sm text-gray-700 leading-relaxed">
           {children}
