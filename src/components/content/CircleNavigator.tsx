@@ -164,11 +164,10 @@ function angleFromPoint(x: number, y: number): number {
 
 function svgPoint(svg: SVGSVGElement, clientX: number, clientY: number) {
   const bounds = svg.getBoundingClientRect();
-  const vb = svg.viewBox.baseVal;
 
   return {
-    x: vb.x + ((clientX - bounds.left) / bounds.width) * vb.width,
-    y: vb.y + ((clientY - bounds.top) / bounds.height) * vb.height,
+    x: ((clientX - bounds.left) / bounds.width) * VIEWBOX_SIZE,
+    y: ((clientY - bounds.top) / bounds.height) * VIEWBOX_SIZE,
   };
 }
 
@@ -194,27 +193,11 @@ type DragState = {
   rotateOnly: boolean;
 };
 
-const COMPACT_BREAKPOINT = 640;
-const COMPACT_MARGIN = 40;
-const COMPACT_VIEW_RADIUS = OUTER_RADIUS + COMPACT_MARGIN;
-const COMPACT_VIEW_SIZE = COMPACT_VIEW_RADIUS * 2;
-const COMPACT_ORIGIN = CENTER - COMPACT_VIEW_RADIUS;
-
 export default function CircleNavigator({ parts }: CircleNavigatorProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const dragStateRef = useRef<DragState | null>(null);
   const [centerHasFocus, setCenterHasFocus] = useState(false);
   const [hasLoadedState, setHasLoadedState] = useState(false);
-  const [isCompact, setIsCompact] = useState(false);
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const mq = window.matchMedia(`(max-width: ${COMPACT_BREAKPOINT - 1}px)`);
-    setIsCompact(mq.matches);
-    const handler = (e: MediaQueryListEvent) => setIsCompact(e.matches);
-    mq.addEventListener('change', handler);
-    return () => mq.removeEventListener('change', handler);
-  }, []);
   const [centerPartNumber, setCenterPartNumber] = useState(DEFAULT_CENTER_PART);
   const [rotationDegrees, setRotationDegrees] = useState(0);
   const [selectedPartNumber, setSelectedPartNumber] = useState(DEFAULT_CENTER_PART);
@@ -574,12 +557,9 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
       <div class="rounded-[1rem] border border-slate-200 bg-slate-50 p-1 sm:rounded-[1.75rem] sm:p-6">
         <svg
           ref={svgRef}
-          viewBox={isCompact
-            ? `${COMPACT_ORIGIN} ${COMPACT_ORIGIN} ${COMPACT_VIEW_SIZE} ${COMPACT_VIEW_SIZE}`
-            : `0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`
-          }
+          viewBox={`0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`}
           class="mx-auto aspect-square w-full max-w-[38rem] cursor-grab touch-none select-none active:cursor-grabbing sm:max-w-[42rem]"
-          style={{ overflow: isCompact ? 'hidden' : 'visible' }}
+          style={{ overflow: 'visible' }}
           role="img"
           aria-label="Interactive circle navigation for the ten parts of the Propaedia"
           onPointerDown={handleBackgroundPointerDown}
@@ -890,12 +870,6 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             </g>
           </g>
         </svg>
-
-        {previewCenterPart && (
-          <p class="mt-3 min-h-[1.5rem] text-center text-sm font-semibold text-slate-700 sm:mt-4">
-            Release to place {previewCenterPart.partName}: {previewCenterPart.title} at the centre.
-          </p>
-        )}
 
         <div class="mt-4 rounded-[1.1rem] border border-slate-200 bg-white/95 px-4 py-3 shadow-sm sm:mt-5 sm:px-5">
           <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
