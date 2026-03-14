@@ -1,11 +1,37 @@
 import { h } from 'preact';
 import Accordion from '../ui/Accordion';
 import { formatEditionLabel } from '../../utils/readingData';
+import { sectionReferenceUrl } from '../../utils/helpers';
+
+// Matches "824.B.4" style refs (with outline path) and "section 824" style refs (bare code)
+const COMBINED_REF_RE = /\b(\d{2,3}(?:-\d{2})?)\.([A-Z](?:\.\d+[a-z]?)*)\.?|\bsection (\d{2,3}(?:-\d{2})?)\b/gi;
+
+function linkifyRationale(text: string, baseUrl: string) {
+  const parts: (string | h.JSX.Element)[] = [];
+  let last = 0;
+  let match;
+  COMBINED_REF_RE.lastIndex = 0;
+  while ((match = COMBINED_REF_RE.exec(text))) {
+    const sectionCode = match[1] || match[3];
+    const outlinePath = match[2] || '';
+    if (match.index > last) parts.push(text.slice(last, match.index));
+    const href = sectionReferenceUrl(sectionCode, outlinePath, baseUrl);
+    parts.push(
+      <a href={href} class="text-indigo-700 hover:text-indigo-900 hover:underline">
+        {match[0]}
+      </a>
+    );
+    last = COMBINED_REF_RE.lastIndex;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts;
+}
 
 export interface VsiCardProps {
   title: string;
   author: string;
   rationale: string;
+  baseUrl: string;
   publicationYear?: number;
   edition?: number;
   checked: boolean;
@@ -16,6 +42,7 @@ export default function VsiCard({
   title,
   author,
   rationale,
+  baseUrl,
   publicationYear,
   edition,
   checked,
@@ -45,7 +72,7 @@ export default function VsiCard({
 
       {rationale && (
         <Accordion title="Why this book?" defaultOpen={false}>
-          <p class="text-gray-600">{rationale}</p>
+          <p class="text-gray-600">{linkifyRationale(rationale, baseUrl)}</p>
         </Accordion>
       )}
     </div>

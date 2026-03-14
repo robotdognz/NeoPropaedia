@@ -121,6 +121,7 @@ export default function VsiRecommendations({ mappings, sectionCode, baseUrl }: V
                   title={mapping.vsiTitle}
                   author={mapping.vsiAuthor}
                   rationale={mapping.rationale}
+                  baseUrl={baseUrl}
                   publicationYear={mapping.publicationYear}
                   edition={mapping.edition}
                   checked={Boolean(checklistState[checklistKey])}
