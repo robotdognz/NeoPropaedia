@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import { useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 
 export interface CircleNavigatorPart {
   partNumber: number;
@@ -13,17 +13,19 @@ export interface CircleNavigatorProps {
   parts: CircleNavigatorPart[];
 }
 
-const VIEWBOX_SIZE = 560;
+const VIEWBOX_SIZE = 680;
 const CENTER = VIEWBOX_SIZE / 2;
 const OUTER_RADIUS = 168;
 const INNER_RADIUS = 96;
-const LABEL_RADIUS = 244;
+const LABEL_RADIUS = 268;
 const CONNECTOR_RADIUS = 192;
 const SEGMENT_COUNT = 9;
 const SEGMENT_ANGLE = 360 / SEGMENT_COUNT;
 const DEFAULT_CENTER_PART = 10;
 const DRAG_DISTANCE_THRESHOLD = 6;
-const INWARD_DROP_THRESHOLD = INNER_RADIUS - 10;
+const CENTER_PREVIEW_THRESHOLD = INNER_RADIUS + 20;
+const CENTER_COMMIT_THRESHOLD = INNER_RADIUS - 10;
+const STORAGE_KEY = 'propaedia-circle-navigator-v1';
 
 function polar(cx: number, cy: number, radius: number, degrees: number) {
   const radians = ((degrees - 90) * Math.PI) / 180;
@@ -67,6 +69,28 @@ function normalizeDegrees(value: number): number {
 
 function snapRotation(value: number): number {
   return Math.round(value / SEGMENT_ANGLE) * SEGMENT_ANGLE;
+}
+
+function angularDistance(a: number, b: number): number {
+  return Math.abs(normalizeDegrees(a - b));
+}
+
+function topPartNumberForRotation(parts: CircleNavigatorPart[], rotation: number): number {
+  if (parts.length === 0) return DEFAULT_CENTER_PART;
+
+  return parts.reduce(
+    (best, part, index) => {
+      const centerAngle = rotation + index * SEGMENT_ANGLE;
+      const distance = angularDistance(centerAngle, 0);
+
+      if (!best || distance < best.distance) {
+        return { partNumber: part.partNumber, distance };
+      }
+
+      return best;
+    },
+    null as { partNumber: number; distance: number } | null
+  )?.partNumber ?? parts[0].partNumber;
 }
 
 function wrapLabel(title: string, maxLength = 17, maxLines = 3): string[] {
@@ -129,22 +153,78 @@ type DragState = {
   startX: number;
   startY: number;
   moved: boolean;
-  centered: boolean;
+  readyForCenter: boolean;
 };
 
 export default function CircleNavigator({ parts }: CircleNavigatorProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const dragStateRef = useRef<DragState | null>(null);
+  const [hasLoadedState, setHasLoadedState] = useState(false);
   const [centerPartNumber, setCenterPartNumber] = useState(DEFAULT_CENTER_PART);
   const [rotationDegrees, setRotationDegrees] = useState(0);
   const [selectedPartNumber, setSelectedPartNumber] = useState(DEFAULT_CENTER_PART);
+  const [centerPreviewPartNumber, setCenterPreviewPartNumber] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    try {
+      const raw = window.localStorage.getItem(STORAGE_KEY);
+      if (!raw) {
+        setHasLoadedState(true);
+        return;
+      }
+
+      const parsed = JSON.parse(raw);
+      const knownParts = new Set(parts.map((part) => part.partNumber));
+      const nextCenterPartNumber = Number(parsed?.centerPartNumber);
+      const nextRotationDegrees = Number(parsed?.rotationDegrees);
+      const nextSelectedPartNumber = Number(parsed?.selectedPartNumber);
+
+      if (knownParts.has(nextCenterPartNumber)) {
+        setCenterPartNumber(nextCenterPartNumber);
+      }
+
+      if (Number.isFinite(nextRotationDegrees)) {
+        setRotationDegrees(snapRotation(nextRotationDegrees));
+      }
+
+      if (knownParts.has(nextSelectedPartNumber)) {
+        setSelectedPartNumber(nextSelectedPartNumber);
+      }
+    } catch {
+      // Ignore invalid stored state.
+    } finally {
+      setHasLoadedState(true);
+    }
+  }, [parts]);
+
+  useEffect(() => {
+    if (!hasLoadedState || typeof window === 'undefined') return;
+
+    try {
+      window.localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({
+          centerPartNumber,
+          rotationDegrees: snapRotation(rotationDegrees),
+          selectedPartNumber,
+        })
+      );
+    } catch {
+      // Ignore storage failures and keep the UI interactive.
+    }
+  }, [centerPartNumber, hasLoadedState, rotationDegrees, selectedPartNumber]);
 
   const centerPart = parts.find((part) => part.partNumber === centerPartNumber) ?? parts[0];
   const outerParts = parts.filter((part) => part.partNumber !== centerPartNumber);
-  const normalizedRotation = ((snapRotation(rotationDegrees) % 360) + 360) % 360;
-  const topIndex = Math.round(((360 - normalizedRotation) % 360) / SEGMENT_ANGLE) % outerParts.length;
-  const topPart = outerParts[topIndex] ?? outerParts[0];
+  const topPartNumber = topPartNumberForRotation(outerParts, rotationDegrees);
+  const topPart = outerParts.find((part) => part.partNumber === topPartNumber) ?? outerParts[0];
   const selectedPart = parts.find((part) => part.partNumber === selectedPartNumber) ?? centerPart;
+  const previewCenterPart = parts.find((part) => part.partNumber === centerPreviewPartNumber) ?? null;
+  const centerDisplayPart = previewCenterPart ?? centerPart;
+  const centerTitleLines = wrapLabel(centerDisplayPart.title, 14, 2);
+  const emphasisSummary = `You are focusing on ${centerPart.title}, with ${topPart.title} given the strongest emphasis at the top of the circle.`;
 
   const rotatePartToTop = (partNumber: number) => {
     const partIndex = outerParts.findIndex((part) => part.partNumber === partNumber);
@@ -158,19 +238,25 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     if (partNumber === centerPartNumber) return;
     setCenterPartNumber(partNumber);
     setSelectedPartNumber(partNumber);
+    setCenterPreviewPartNumber(null);
   };
 
   const finishDrag = (pointerId: number) => {
     const dragState = dragStateRef.current;
     if (!dragState || dragState.pointerId !== pointerId) return;
 
-    if (!dragState.centered) {
-      setRotationDegrees((currentRotation) => snapRotation(currentRotation));
+    if (dragState.readyForCenter) {
+      movePartToCenter(dragState.activePartNumber);
+    } else {
+      const nextRotation = snapRotation(rotationDegrees);
+      setRotationDegrees(nextRotation);
 
       if (!dragState.moved) {
         setSelectedPartNumber(dragState.activePartNumber);
       } else if (topPart) {
-        setSelectedPartNumber(topPart.partNumber);
+        const nextTopPartNumber = topPartNumberForRotation(outerParts, nextRotation);
+        const nextTopPart = outerParts.find((part) => part.partNumber === nextTopPartNumber) ?? topPart;
+        setSelectedPartNumber(nextTopPart.partNumber);
       }
     }
 
@@ -179,6 +265,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
     }
 
     dragStateRef.current = null;
+    setCenterPreviewPartNumber(null);
   };
 
   const handleSegmentPointerDown = (partNumber: number) => (event: h.JSX.TargetedPointerEvent<SVGPathElement>) => {
@@ -196,7 +283,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
       startX: point.x,
       startY: point.y,
       moved: false,
-      centered: false,
+      readyForCenter: false,
     };
 
     svgRef.current.setPointerCapture(event.pointerId);
@@ -217,13 +304,14 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
       dragState.moved = true;
     }
 
-    if (!dragState.centered && nextRadius <= INWARD_DROP_THRESHOLD && dragState.activePartNumber !== centerPartNumber) {
-      dragState.centered = true;
-      movePartToCenter(dragState.activePartNumber);
+    if (dragState.activePartNumber !== centerPartNumber && nextRadius <= CENTER_PREVIEW_THRESHOLD) {
+      setCenterPreviewPartNumber(dragState.activePartNumber);
+      dragState.readyForCenter = nextRadius <= CENTER_COMMIT_THRESHOLD;
       return;
     }
 
-    if (dragState.centered) return;
+    dragState.readyForCenter = false;
+    setCenterPreviewPartNumber(null);
 
     const nextAngle = angleFromPoint(point.x, point.y);
     const delta = normalizeDegrees(nextAngle - dragState.startAngle);
@@ -241,10 +329,23 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
   return (
     <div class="grid gap-8 xl:grid-cols-[minmax(0,1.1fr)_minmax(18rem,0.9fr)] xl:items-start">
       <div class="rounded-[1.75rem] border border-slate-200 bg-slate-50 p-4 sm:p-6">
+        <div class="mb-5 rounded-[1.4rem] border border-slate-200 bg-white px-5 py-4 shadow-sm">
+          <p class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+            Current emphasis
+          </p>
+          <p class="mt-2 text-lg font-serif font-semibold leading-7 text-slate-900">
+            {emphasisSummary}
+          </p>
+          <p class="mt-2 text-sm leading-6 text-slate-600">
+            Centre: {centerPart.partName}: {centerPart.title}. Top emphasis: {topPart.partName}: {topPart.title}.
+          </p>
+        </div>
+
         <svg
           ref={svgRef}
           viewBox={`0 0 ${VIEWBOX_SIZE} ${VIEWBOX_SIZE}`}
           class="mx-auto aspect-square w-full max-w-[42rem] touch-none select-none"
+          style={{ overflow: 'visible' }}
           role="img"
           aria-label="Interactive circle navigation for the ten parts of the Propaedia"
           onPointerMove={handlePointerMove}
@@ -259,24 +360,30 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
           <circle cx={CENTER} cy={CENTER} r={OUTER_RADIUS + 22} fill="#f8fafc" />
 
           {outerParts.map((part, index) => {
-            const centerAngle = -90 + rotationDegrees + index * SEGMENT_ANGLE;
+            const centerAngle = rotationDegrees + index * SEGMENT_ANGLE;
             const startAngle = centerAngle - SEGMENT_ANGLE / 2;
             const endAngle = centerAngle + SEGMENT_ANGLE / 2;
-            const numberPosition = polar(CENTER, CENTER, 134, centerAngle);
-            const connectorEnd = polar(CENTER, CENTER, CONNECTOR_RADIUS, centerAngle);
             const labelPosition = polar(CENTER, CENTER, LABEL_RADIUS, centerAngle);
             const labelLines = wrapLabel(part.title);
             const textAnchor = textAnchorForAngle(centerAngle);
+            const labelX =
+              labelPosition.x + (textAnchor === 'start' ? -30 : textAnchor === 'end' ? 30 : 0);
             const isSelected = selectedPartNumber === part.partNumber;
+            const isTop = topPart.partNumber === part.partNumber;
+            const segmentInnerRadius = isTop ? INNER_RADIUS - 8 : INNER_RADIUS;
+            const segmentOuterRadius = isTop ? OUTER_RADIUS + 12 : OUTER_RADIUS;
+            const numberPosition = polar(CENTER, CENTER, isTop ? 138 : 134, centerAngle);
+            const connectorStart = polar(CENTER, CENTER, segmentOuterRadius + 6, centerAngle);
+            const connectorEnd = polar(CENTER, CENTER, isTop ? CONNECTOR_RADIUS + 8 : CONNECTOR_RADIUS, centerAngle);
 
             return (
               <g key={part.partNumber}>
                 <path
-                  d={donutSlicePath(CENTER, CENTER, INNER_RADIUS, OUTER_RADIUS, startAngle, endAngle)}
+                  d={donutSlicePath(CENTER, CENTER, segmentInnerRadius, segmentOuterRadius, startAngle, endAngle)}
                   fill={part.colorHex}
-                  stroke={isSelected ? '#0f172a' : 'white'}
-                  stroke-width={isSelected ? 4 : 2}
-                  opacity={isSelected ? 1 : 0.94}
+                  stroke={isSelected ? '#ffffff' : isTop ? '#e2e8f0' : '#ffffff'}
+                  stroke-width={isSelected ? 6 : isTop ? 5 : 2}
+                  opacity={isSelected || isTop ? 1 : 0.94}
                   class="cursor-grab active:cursor-grabbing transition-opacity"
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
                   onMouseEnter={() => setSelectedPartNumber(part.partNumber)}
@@ -302,33 +409,33 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                   onFocus={() => setSelectedPartNumber(part.partNumber)}
                 >
                   <line
-                    x1={polar(CENTER, CENTER, OUTER_RADIUS + 6, centerAngle).x}
-                    y1={polar(CENTER, CENTER, OUTER_RADIUS + 6, centerAngle).y}
+                    x1={connectorStart.x}
+                    y1={connectorStart.y}
                     x2={connectorEnd.x}
                     y2={connectorEnd.y}
-                    stroke={isSelected ? part.colorHex : '#cbd5e1'}
-                    stroke-width={isSelected ? 2.5 : 1.5}
+                    stroke={isSelected || isTop ? part.colorHex : '#cbd5e1'}
+                    stroke-width={isSelected || isTop ? 2.5 : 1.5}
                   />
                   <circle cx={connectorEnd.x} cy={connectorEnd.y} r={3.5} fill={part.colorHex} />
                   <text
-                    x={labelPosition.x}
+                    x={labelX}
                     y={labelPosition.y - (labelLines.length * 8)}
-                    fill={isSelected ? '#0f172a' : '#334155'}
-                    font-size="11"
+                    fill={isSelected || isTop ? '#0f172a' : '#334155'}
+                    font-size={isTop ? '12' : '11'}
                     font-family="Inter, sans-serif"
                     font-weight="700"
                     letter-spacing="0.12em"
                     text-anchor={textAnchor}
                   >
-                    <tspan x={labelPosition.x} dy="0">
+                    <tspan x={labelX} dy="0">
                       {part.partName.toUpperCase()}
                     </tspan>
                     {labelLines.map((line, lineIndex) => (
                       <tspan
-                        x={labelPosition.x}
+                        x={labelX}
                         dy={lineIndex === 0 ? 16 : 14}
-                        font-size="13"
-                        font-weight={isSelected ? '700' : '600'}
+                        font-size={isTop ? '14' : '13'}
+                        font-weight={isSelected || isTop ? '700' : '600'}
                         letter-spacing="0"
                       >
                         {line}
@@ -340,32 +447,94 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             );
           })}
 
-          <circle cx={CENTER} cy={CENTER} r={INNER_RADIUS - 8} fill={centerPart.colorHex} stroke="white" stroke-width="4" />
-          <text
-            x={CENTER}
-            y={CENTER - 12}
-            fill="white"
-            font-size="42"
-            font-family="Inter, sans-serif"
-            font-weight="700"
-            text-anchor="middle"
-            dominant-baseline="middle"
+          {previewCenterPart && (
+            <>
+              <circle
+                cx={CENTER}
+                cy={CENTER}
+                r={INNER_RADIUS + 10}
+                fill="none"
+                stroke={previewCenterPart.colorHex}
+                stroke-width="6"
+                stroke-dasharray="8 8"
+                class="animate-pulse"
+                opacity="0.9"
+              />
+            </>
+          )}
+
+          <g
+            role="button"
+            tabIndex={0}
+            class="cursor-pointer"
+            onClick={() => setSelectedPartNumber(centerPart.partNumber)}
+            onMouseEnter={() => setSelectedPartNumber(centerPart.partNumber)}
+            onFocus={() => setSelectedPartNumber(centerPart.partNumber)}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                setSelectedPartNumber(centerPart.partNumber);
+              }
+            }}
           >
-            {centerPart.partNumber}
-          </text>
-          <text
-            x={CENTER}
-            y={CENTER + 18}
-            fill="white"
-            font-size="13"
-            font-family="Inter, sans-serif"
-            font-weight="700"
-            text-anchor="middle"
-            letter-spacing="0.12em"
-          >
-            {centerPart.partName.toUpperCase()}
-          </text>
+            <circle
+              cx={CENTER}
+              cy={CENTER}
+              r={INNER_RADIUS - 8}
+              fill={centerDisplayPart.colorHex}
+              stroke={selectedPartNumber === centerPart.partNumber ? '#0f172a' : 'white'}
+              stroke-width={selectedPartNumber === centerPart.partNumber ? '5' : '4'}
+            />
+            <text
+              x={CENTER}
+              y={CENTER - 30}
+              fill="white"
+              font-size="42"
+              font-family="Inter, sans-serif"
+              font-weight="700"
+              text-anchor="middle"
+              dominant-baseline="middle"
+            >
+              {centerDisplayPart.partNumber}
+            </text>
+            <text
+              x={CENTER}
+              y={CENTER + 2}
+              fill="white"
+              font-size="13"
+              font-family="Inter, sans-serif"
+              font-weight="700"
+              text-anchor="middle"
+              letter-spacing="0.12em"
+            >
+              {centerDisplayPart.partName.toUpperCase()}
+            </text>
+            {centerTitleLines.map((line, index) => (
+              <text
+                key={`${centerDisplayPart.partNumber}-${line}-${index}`}
+                x={CENTER}
+                y={CENTER + 26 + index * 14}
+                fill="white"
+                font-size="12"
+                font-family="Inter, sans-serif"
+                font-weight="600"
+                text-anchor="middle"
+              >
+                {line}
+              </text>
+            ))}
+          </g>
         </svg>
+
+        <div class="mt-4 min-h-[2.5rem] text-center text-sm font-semibold text-slate-700">
+          {previewCenterPart ? (
+            <span>
+              Release to place {previewCenterPart.partName}: {previewCenterPart.title} at the center.
+            </span>
+          ) : (
+            <span class="text-slate-500">Drag the ring to rotate, or pull a part inward to move it to the center.</span>
+          )}
+        </div>
       </div>
 
       <div class="space-y-4">
