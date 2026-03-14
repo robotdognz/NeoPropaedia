@@ -616,7 +616,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                     part.partNumber === morphPartNumber && morphT > 0
                       ? Math.max(0, 1 - morphT * 1.5)
                       : isPostSwapMorphing
-                        ? Math.max(0, 1 - postSwapT * 1.5)
+                        ? 0
                         : (isSelected ? 1 : lerp(0.94, 1, topWeight))
                   }
                   class="cursor-grab active:cursor-grabbing"
@@ -722,33 +722,6 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
             );
           })()}
 
-          {morphT > 0 && morphPartNumber !== null && (() => {
-            const mPart = outerParts.find((p) => p.partNumber === morphPartNumber);
-            if (!mPart) return null;
-            const mIndex = outerParts.findIndex((p) => p.partNumber === morphPartNumber);
-            const mCenterAngle = rotationDegrees + mIndex * SEGMENT_ANGLE;
-            const mStartAngle = mCenterAngle - SEGMENT_ANGLE / 2;
-            const mEndAngle = mCenterAngle + SEGMENT_ANGLE / 2;
-            const mDistFromTop = angularDistance(mCenterAngle, 0);
-            const mTopWeight = Math.max(0, 1 - mDistFromTop / SEGMENT_ANGLE);
-            const mInner = lerp(INNER_RADIUS, INNER_RADIUS - 10, mTopWeight);
-            const mOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, mTopWeight);
-
-            return (
-              <path
-                d={morphedDonutPath(
-                  CENTER, CENTER,
-                  mInner, mOuter,
-                  mStartAngle, mEndAngle,
-                  CENTER_DISC_RADIUS,
-                  morphT
-                )}
-                fill={mPart.colorHex}
-                pointer-events="none"
-              />
-            );
-          })()}
-
           {postSwapState && postSwapT > 0 && (() => {
             const oldCP = parts.find((p) => p.partNumber === postSwapState.oldCenterPartNumber);
             if (!oldCP) return null;
@@ -773,6 +746,33 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
                   postSwapT
                 )}
                 fill={oldCP.colorHex}
+                pointer-events="none"
+              />
+            );
+          })()}
+
+          {morphT > 0 && morphPartNumber !== null && (() => {
+            const mPart = outerParts.find((p) => p.partNumber === morphPartNumber);
+            if (!mPart) return null;
+            const mIndex = outerParts.findIndex((p) => p.partNumber === morphPartNumber);
+            const mCenterAngle = rotationDegrees + mIndex * SEGMENT_ANGLE;
+            const mStartAngle = mCenterAngle - SEGMENT_ANGLE / 2;
+            const mEndAngle = mCenterAngle + SEGMENT_ANGLE / 2;
+            const mDistFromTop = angularDistance(mCenterAngle, 0);
+            const mTopWeight = Math.max(0, 1 - mDistFromTop / SEGMENT_ANGLE);
+            const mInner = lerp(INNER_RADIUS, INNER_RADIUS - 10, mTopWeight);
+            const mOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, mTopWeight);
+
+            return (
+              <path
+                d={morphedDonutPath(
+                  CENTER, CENTER,
+                  mInner, mOuter,
+                  mStartAngle, mEndAngle,
+                  CENTER_DISC_RADIUS,
+                  morphT
+                )}
+                fill={mPart.colorHex}
                 pointer-events="none"
               />
             );
@@ -816,13 +816,9 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
               cy={CENTER}
               r={CENTER_DISC_RADIUS}
               fill={centerDisplayPart.colorHex}
-              opacity={
-                postSwapT > 0
-                  ? Math.max(0, 1 - postSwapT * 1.5)
-                  : 1
-              }
+              opacity={1}
             />
-            {(selectedPartNumber === centerPart.partNumber && !(morphT > 0 && morphPartNumber !== null && morphPartNumber !== selectedPartNumber)) || (morphPartNumber === selectedPartNumber && morphT > 0.5) ? (
+            {(selectedPartNumber === centerPart.partNumber && !(morphT > 0 && morphPartNumber !== null)) || (morphPartNumber === selectedPartNumber && morphT > 0.95) ? (
               <circle
                 cx={CENTER}
                 cy={CENTER}
@@ -834,9 +830,7 @@ export default function CircleNavigator({ parts }: CircleNavigatorProps) {
               />
             ) : null}
             <g opacity={
-              postSwapT > 0
-                ? Math.max(0, 1 - postSwapT * 1.5)
-                : 1
+              1
             }>
             <text
               x={CENTER}
