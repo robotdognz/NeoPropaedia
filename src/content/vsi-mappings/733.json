@@ -4,67 +4,62 @@
     {
       "vsiTitle": "Structural engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Directly covers structural systems, foundations, construction techniques, and the engineering of buildings and civil works."
+      "rationale": "Explains how loads flow through beams, frames, and shells in A.7.b (structural systems), with detail on wood, masonry, concrete, and steel construction in A.6 and bridge design in B.3."
     },
     {
       "vsiTitle": "Civil engineering",
       "vsiAuthor": "David Muir Wood",
-      "rationale": "Directly covers civil engineering works including dams, bridges, tunnels, and harbour construction."
-    },
-    {
-      "vsiTitle": "Engineering",
-      "vsiAuthor": "David Blockley",
-      "rationale": "Covers the broad engineering principles underlying general building construction and civil engineering works."
+      "rationale": "The definitive introduction to B (civil engineering works), addressing the design and construction of dams (B.1), bridges (B.3), tunnels (B.4), harbour works (B.5), and lighthouses (B.6)."
     },
     {
       "vsiTitle": "Architecture",
       "vsiAuthor": "Andrew Ballantyne",
-      "rationale": "Directly relevant to building design, construction planning, and the relationship between architecture and construction technology."
+      "rationale": "Explores how architectural vision translates into buildable form, directly relevant to A.1 (preconstruction planning and design) and the interplay between aesthetics and construction technology."
     },
     {
       "vsiTitle": "Modern architecture",
       "vsiAuthor": "Adam Sharr",
-      "rationale": "Covers modern building design and construction methods including reinforced concrete and steel construction."
-    },
-    {
-      "vsiTitle": "British Architecture",
-      "vsiAuthor": "Dana Arnold",
-      "rationale": "Relevant to historical construction techniques and building components across architectural periods."
-    },
-    {
-      "vsiTitle": "Landscape architecture",
-      "vsiAuthor": "Ian Thompson",
-      "rationale": "Relevant to preconstruction planning, site design, and the integration of buildings with surrounding landscapes."
+      "rationale": "Traces how reinforced and prestressed concrete (A.3.i) and steel-frame construction (A.6.c-d) enabled the radical forms of twentieth-century buildings."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Covers building materials including concrete, steel, glass, plastics, and their properties and testing."
+      "rationale": "Provides the materials-science foundation for A.3 (building materials: cement, ceramics, glass, metals, concrete, plastics) and A.4 (testing of building materials)."
     },
     {
       "vsiTitle": "City Planning",
       "vsiAuthor": "Carl Abbott",
-      "rationale": "Relevant to preconstruction planning, design programming, and the integration of buildings into urban infrastructure."
+      "rationale": "Addresses how buildings fit into larger urban systems, essential for understanding A.1 (preconstruction planning and design programming) and infrastructure integration."
     },
     {
-      "vsiTitle": "Navigation",
-      "vsiAuthor": "Jim Bennett",
-      "rationale": "Relevant to surveying procedures and techniques for laying out building foundations."
-    },
-    {
-      "vsiTitle": "Geology",
-      "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Relevant to building materials sourced from earth including stone, sand, clay, and gravel."
-    },
-    {
-      "vsiTitle": "Rocks",
-      "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Relevant to stone as a building material and the geological properties affecting construction."
+      "vsiTitle": "Landscape architecture",
+      "vsiAuthor": "Ian Thompson",
+      "rationale": "Examines site design and the integration of buildings with surrounding landscapes, directly relevant to A.1 (preconstruction planning)."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Relevant to acoustics and sound-control techniques in building construction."
+      "rationale": "Essential for understanding A.8 (acoustics and sound-control techniques), explaining how sound behaves in enclosed spaces and how buildings manage noise."
+    },
+    {
+      "vsiTitle": "Geology",
+      "vsiAuthor": "Jan Zalasiewicz",
+      "rationale": "Geological conditions determine foundation requirements (A.7.a) and the suitability of stone as a building material (A.3.e), making this a key reference for site assessment."
+    },
+    {
+      "vsiTitle": "Navigation",
+      "vsiAuthor": "Jim Bennett",
+      "rationale": "Surveying grew out of navigational science, and this volume illuminates A.2 (surveying procedures) and the precision techniques used to lay out building foundations."
+    },
+    {
+      "vsiTitle": "British Architecture",
+      "vsiAuthor": "Dana Arnold",
+      "rationale": "Traces the evolution of construction techniques (A.6) and building components (A.7) across centuries of British architectural development, from medieval timber to Georgian masonry."
+    },
+    {
+      "vsiTitle": "Engineering",
+      "vsiAuthor": "David Blockley",
+      "rationale": "A broad introduction to the engineering principles that underpin both A (general building construction) and B (civil engineering works), connecting theory to practice."
     }
   ]
 }

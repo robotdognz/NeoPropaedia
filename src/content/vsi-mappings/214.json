@@ -4,82 +4,92 @@
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "rationale": "Vaughan's VSI is directly focused on the classification, properties, and occurrence of minerals—the primary subject matter of this section's coverage of mineral constituents."
+      "rationale": "Directly focused on mineral classification, crystal structure, physical properties (hardness, cleavage, specific gravity), and occurrence -- the primary subject of section A."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Zalasiewicz covers igneous, sedimentary, and metamorphic rocks, their classification, formation, and distribution—directly mapping to the section's treatment of Earth's constituent rocks."
-    },
-    {
-      "vsiTitle": "Geology",
-      "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Provides a broad geological context for understanding minerals, rock types, fossil fuels, and the rock cycle central to this section."
+      "rationale": "Surveys igneous, sedimentary, and metamorphic rocks, their classification, formation, and distribution -- directly mapping to section B on Earth's constituent rocks."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
-      "rationale": "Glazer covers crystal structure and symmetry, directly relevant to the section's treatment of mineral internal structure, crystal classification, and the silicon-oxygen tetrahedron."
+      "rationale": "Explains crystal structure, symmetry operations, and X-ray diffraction, directly relevant to mineral internal structure, the silicon-oxygen tetrahedron, and crystal classification in section A.3."
     },
     {
-      "vsiTitle": "The Periodic Table",
-      "vsiAuthor": "Eric R. Scerri",
-      "rationale": "Relevant to the chemical composition of minerals and the occurrence of elements in the Earth's core, mantle, and crust."
-    },
-    {
-      "vsiTitle": "The Elements",
-      "vsiAuthor": "Philip Ball",
-      "rationale": "Ball's coverage of chemical elements connects to the section's discussion of the occurrence and distribution of elements in the Earth and its envelope."
-    },
-    {
-      "vsiTitle": "Chemistry",
-      "vsiAuthor": "Peter Atkins",
-      "rationale": "Atkins provides the chemical foundations for understanding mineral composition, crystal chemistry, and the chemical processes forming rocks."
-    },
-    {
-      "vsiTitle": "Physical chemistry",
-      "vsiAuthor": "Peter Atkins",
-      "rationale": "Covers phase equilibria, thermodynamics, and chemical bonding relevant to mineral associations, phase equilibrium in rocks, and metamorphic processes."
-    },
-    {
-      "vsiTitle": "Plate tectonics",
-      "vsiAuthor": "Peter Molnar",
-      "rationale": "Molnar discusses the rock associations formed in different tectonic environments—oceanic regions, mountain ranges, island arcs—as described in this section."
-    },
-    {
-      "vsiTitle": "The Earth",
-      "vsiAuthor": "Martin Redfern",
-      "rationale": "Redfern covers the composition of the Earth's layers and the formation of different rock types, providing context for the section's treatment of rocks and minerals."
+      "vsiTitle": "Geology",
+      "vsiAuthor": "Jan Zalasiewicz",
+      "rationale": "Provides the geological context for understanding rock types, petrology, geochemistry, and the igneous-sedimentary-metamorphic rock cycle in section B."
     },
     {
       "vsiTitle": "Volcanoes",
       "vsiAuthor": "Michael J. Branney, Jan Zalasiewicz",
-      "rationale": "Directly relevant to the formation of igneous rocks from magma, including intrusive, extrusive, and pyroclastic rocks discussed in this section."
+      "rationale": "Directly relevant to the formation of igneous rocks from magma, including intrusive, extrusive, and pyroclastic rocks (pumice, tuff, scoria) in section B.1.e."
     },
     {
-      "vsiTitle": "Geophysics",
-      "vsiAuthor": "William Lowrie",
-      "rationale": "Lowrie covers the physical properties of Earth materials and the geochemical evidence used to determine rock and mineral composition at depth."
+      "vsiTitle": "The Elements",
+      "vsiAuthor": "Philip Ball",
+      "rationale": "Explores chemical elements and their properties, relevant to mineral chemical composition and the occurrence of elements in the Earth's layers (section C)."
+    },
+    {
+      "vsiTitle": "The Periodic Table",
+      "vsiAuthor": "Eric R. Scerri",
+      "rationale": "Traces Mendeleev's classification of elements by atomic structure and periodicity, relevant to understanding mineral chemical composition and elemental distribution in core, mantle, and crust."
+    },
+    {
+      "vsiTitle": "Chemistry",
+      "vsiAuthor": "Peter Atkins",
+      "rationale": "Provides the chemical foundations for mineral composition, inorganic chemistry of silicates and nonsilicate minerals, and spectroscopic identification methods."
+    },
+    {
+      "vsiTitle": "Physical chemistry",
+      "vsiAuthor": "Peter Atkins",
+      "rationale": "Applies phase equilibria and thermodynamics to mineral associations, metamorphic phase transitions, and magma crystallization sequences in sections A.4.b and B.3."
+    },
+    {
+      "vsiTitle": "Plate tectonics",
+      "vsiAuthor": "Peter Molnar",
+      "rationale": "Explains rock associations in different tectonic environments -- oceanic ridges, subduction zones, mountain ranges, island arcs -- directly relevant to section B.4."
+    },
+    {
+      "vsiTitle": "The Earth",
+      "vsiAuthor": "Martin Redfern",
+      "rationale": "Describes the composition of Earth's layers and chemical weathering processes relevant to sedimentary rock formation and elemental distribution."
     },
     {
       "vsiTitle": "Fossils",
       "vsiAuthor": "Keith Thomson",
-      "rationale": "Thomson covers fossilization processes and the organic content of sedimentary rocks, relevant to this section's discussion of organic-rich sedimentary rocks and fossil fuels."
+      "rationale": "Examines fossilization processes and organic content of sedimentary rocks, relevant to organic-rich sedimentary rocks and fossil fuels in section B.5."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
-      "rationale": "Ellam covers isotopic analysis of geological materials, relevant to understanding the chemical composition and geochemical differentiation of Earth's minerals and rocks."
-    },
-    {
-      "vsiTitle": "Earth System Science",
-      "vsiAuthor": "Tim Lenton",
-      "rationale": "Lenton discusses the cycling of elements through the geosphere, biosphere, hydrosphere, and atmosphere, relevant to the section's treatment of elemental occurrence in Earth's envelope."
+      "rationale": "Explains isotopic analysis of geological materials including uranium-lead and potassium-argon systems, relevant to mineral radioactive properties and geochemical dating."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Hall covers the physical and mechanical properties of materials including crystalline solids, relevant to understanding mineral hardness, cleavage, tenacity, and optical properties."
+      "rationale": "Analyzes physical properties of crystalline materials including hardness and crystal lattice structure, relevant to mineral cleavage, tenacity, and optical behavior."
+    },
+    {
+      "vsiTitle": "Organic Chemistry",
+      "vsiAuthor": "Graham Patrick",
+      "rationale": "Addresses carbon chemistry and petrochemicals, directly relevant to fossil fuels including petroleum, coal, and natural gas in section B.5."
+    },
+    {
+      "vsiTitle": "Earth System Science",
+      "vsiAuthor": "Tim Lenton",
+      "rationale": "Discusses elemental cycling through the geosphere, biosphere, hydrosphere, and atmosphere, relevant to section C on elemental occurrence across Earth's envelope."
+    },
+    {
+      "vsiTitle": "The Atmosphere",
+      "vsiAuthor": "Paul Palmer",
+      "rationale": "Details atmospheric composition, relevant to section C.5 on the occurrence of elements in the atmosphere."
+    },
+    {
+      "vsiTitle": "Geophysics",
+      "vsiAuthor": "William Lowrie",
+      "rationale": "Uses seismic and geochemical evidence to determine rock and mineral composition at depth, relevant to section C on elemental distribution in core, mantle, and crust."
     }
   ]
 }

@@ -4,97 +4,92 @@
     {
       "vsiTitle": "Theatre",
       "vsiAuthor": "Marvin Carlson",
-      "rationale": "Directly covers the art of theatre, theatrical production, staging, acting, directing, and theatre history — the core subject of this entire section."
-    },
-    {
-      "vsiTitle": "Tragedy",
-      "vsiAuthor": "Adrian Poole",
-      "rationale": "Directly covers tragedy as a traditional dramatic form, explicitly listed under kinds of theatrical production in section B.1.a.i."
-    },
-    {
-      "vsiTitle": "Comedy",
-      "vsiAuthor": "Matthew Bevis",
-      "rationale": "Directly covers comedy as a traditional dramatic form, explicitly listed under kinds of theatrical production in section B.1.a.i."
+      "rationale": "Directly covers the art of theatre, theatrical production, staging, acting, directing, and theatre history -- the core subject of this entire section (A-D)."
     },
     {
       "vsiTitle": "Modern Drama",
       "vsiAuthor": "Kirsten E. Shepherd-Barr",
-      "rationale": "Covers modern theatrical production and dramatic forms, relevant to the section's treatment of Western theatre history and contemporary staging."
+      "rationale": "Traces the evolution of modern theatrical production through naturalism, realism, and symbolism, while exploring the audience-performance relationship (A.4, B.1.a, D.1)."
     },
     {
-      "vsiTitle": "William Shakespeare",
-      "vsiAuthor": "Stanley Wells",
-      "rationale": "Shakespeare is central to Western theatre history, and his works exemplify dramatist-controlled productions and period styles discussed in this section."
+      "vsiTitle": "Tragedy",
+      "vsiAuthor": "Adrian Poole",
+      "rationale": "Directly covers tragedy as a traditional dramatic form in theatrical production (B.1.a.i)."
     },
     {
-      "vsiTitle": "Shakespeare's Comedies",
-      "vsiAuthor": "Bart Van Es",
-      "rationale": "Covers Shakespearean comedy in performance, relevant to the section's treatment of comedy as theatrical genre and Western theatre history."
-    },
-    {
-      "vsiTitle": "Shakespeare's Tragedies",
-      "vsiAuthor": "Stanley Wells",
-      "rationale": "Covers Shakespearean tragedy in performance, relevant to the section's treatment of tragedy as theatrical genre and Western theatre history."
-    },
-    {
-      "vsiTitle": "George Bernard Shaw",
-      "vsiAuthor": "Christopher Wixson",
-      "rationale": "Shaw is a major figure in modern Western theatre, relevant to the section's treatment of Western theatre history and dramatist-controlled productions."
+      "vsiTitle": "Comedy",
+      "vsiAuthor": "Matthew Bevis",
+      "rationale": "Directly covers comedy as a traditional dramatic form, including pantomime and Restoration comedy (B.1.a.i, B.1.a.iii)."
     },
     {
       "vsiTitle": "Sophocles",
       "vsiAuthor": "Edith Hall",
-      "rationale": "Sophocles is foundational to Western theatre and tragedy, relevant to the section's treatment of ancient Greek theatre and Western theatre history."
+      "rationale": "Examines ancient Greek tragic theatre and Sophoclean stagecraft -- from the Oedipus plays to Ajax -- foundational to the origins of Western theatre (A.1, D.1)."
     },
     {
-      "vsiTitle": "Architecture",
-      "vsiAuthor": "Andrew Ballantyne",
-      "rationale": "Relevant to the section's treatment of theatre buildings, stages, and auditoriums as production areas (section C.1)."
+      "vsiTitle": "William Shakespeare",
+      "vsiAuthor": "Stanley Wells",
+      "rationale": "Shakespeare is central to Western theatre as playwright, covering comedy, tragedy, and tragicomedy in performance (B.1.a.i, B.1.d, D.1)."
     },
     {
-      "vsiTitle": "Design",
-      "vsiAuthor": "John Heskett",
-      "rationale": "Relevant to the section's treatment of staging and stage design, including arrangement of sets, lighting, and costumes for theatrical effect."
+      "vsiTitle": "Shakespeare's Comedies",
+      "vsiAuthor": "Bart Van Es",
+      "rationale": "Explores Shakespearean comedy in performance -- from early farce through romantic comedies to the late romances -- illuminating comedy as a theatrical genre and repertory staging (B.1.a.i, B.1.c)."
+    },
+    {
+      "vsiTitle": "Shakespeare's Tragedies",
+      "vsiAuthor": "Stanley Wells",
+      "rationale": "Analyzes the major Shakespearean tragedies in performance, from Hamlet and Othello to King Lear, illuminating tragedy as a theatrical genre (B.1.a.i)."
+    },
+    {
+      "vsiTitle": "George Bernard Shaw",
+      "vsiAuthor": "Christopher Wixson",
+      "rationale": "Shaw is a major modern playwright, relevant to dramatist-controlled productions and Western theatre history (B.1.d, D.1)."
     },
     {
       "vsiTitle": "Humour",
       "vsiAuthor": "Noël Carroll",
-      "rationale": "Relevant to the section's treatment of comedy, farce, music hall, variety, and burlesque productions."
-    },
-    {
-      "vsiTitle": "Classical Literature",
-      "vsiAuthor": "William Allan",
-      "rationale": "Covers ancient Greek and Roman dramatic literature, relevant to the origins of Western theatre discussed in section D."
-    },
-    {
-      "vsiTitle": "Classics",
-      "vsiAuthor": "Mary Beard, John Henderson",
-      "rationale": "Ancient Greek and Roman theatre traditions are the foundation of Western theatre history covered in this section."
+      "rationale": "Investigates comedy, farce, music hall, variety, and burlesque as forms of popular theatrical entertainment (B.1.a.i, B.1.f.iii)."
     },
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
-      "rationale": "Relevant to the section's treatment of the origins of theatre, religious theatre, and the relationship between ritual and theatrical performance."
+      "rationale": "Explores the deep connection between ritual performance and the origins of theatre, including religious ceremonies and rites of passage (A.1, A.2, B.1.b)."
+    },
+    {
+      "vsiTitle": "Architecture",
+      "vsiAuthor": "Andrew Ballantyne",
+      "rationale": "Addresses architectural design principles essential to theatre buildings, stages, and auditoriums (C.1)."
+    },
+    {
+      "vsiTitle": "Design",
+      "vsiAuthor": "John Heskett",
+      "rationale": "Introduces design principles that underpin staging, set design, and lighting in theatrical production (C.2)."
     },
     {
       "vsiTitle": "Fashion",
       "vsiAuthor": "Rebecca Arnold",
-      "rationale": "Relevant to the section's treatment of costume design as an element of theatrical production (section C.2)."
+      "rationale": "Examines costume and fashion design, directly applicable to costumes as an element of theatrical production (C.2)."
     },
     {
-      "vsiTitle": "Music",
-      "vsiAuthor": "Nicholas Cook",
-      "rationale": "Music is one of the arts that plays a role in theatre, relevant to the section's discussion of the roles of other arts in the theatre (section A.8)."
+      "vsiTitle": "Aesthetics",
+      "vsiAuthor": "Bence Nanay",
+      "rationale": "Explores aesthetic experience including opera and live performance, shedding light on theatre as art and audience engagement (A.1, A.4, B.1.e)."
     },
     {
-      "vsiTitle": "Albert Camus",
-      "vsiAuthor": "Oliver Gloag",
-      "rationale": "Camus was a significant playwright and theatre figure, relevant to the section's treatment of Western theatre history."
+      "vsiTitle": "Classical Literature",
+      "vsiAuthor": "William Allan",
+      "rationale": "Surveys ancient Greek and Roman drama -- the tragedies of Aeschylus, Sophocles, and Euripides and the comedies of Aristophanes and Plautus -- foundational to Western theatre history (D.1)."
     },
     {
-      "vsiTitle": "Imagination",
-      "vsiAuthor": "Jennifer Gosetti-Ferencei",
-      "rationale": "Relevant to the creative process of theatrical production, acting, and the audience's engagement with theatrical performance."
+      "vsiTitle": "Indian Cinema",
+      "vsiAuthor": "Ashish Rajadhyaska",
+      "rationale": "Illuminates Indian theatrical and cinematic traditions, including theatre's evolving relationship to radio and television (B.1.h)."
+    },
+    {
+      "vsiTitle": "Creativity",
+      "vsiAuthor": "Vlad Petre Glăveanu",
+      "rationale": "Examines the creative process as it applies to directing, acting, and artistic expression in theatrical production (A.6, A.7)."
     }
   ]
 }

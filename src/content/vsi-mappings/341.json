@@ -4,52 +4,62 @@
     {
       "vsiTitle": "Animal Behaviour",
       "vsiAuthor": "Tristram D. Wyatt",
-      "rationale": "The primary VSI for this section, covering the diversity and classification of animal behaviour, stereotyped responses, fixed action patterns, and instinct."
+      "rationale": "Core text for this section, covering instinct, fixed action patterns, learning, and the interplay of genes and experience in shaping behaviour (A, B.2, D)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
-      "rationale": "Covers the nervous system's role in receiving information, processing it in the brain, and initiating behavioural responses."
+      "rationale": "Covers the nervous system's role in receiving sensory information, processing it in the brain and spinal cord, and initiating behavioural responses (C.3)."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
-      "rationale": "Addresses hormonal influences on behaviour including the interaction of endocrine and nervous systems in controlling behaviour."
-    },
-    {
-      "vsiTitle": "Cognitive Neuroscience",
-      "vsiAuthor": "Richard Passingham",
-      "rationale": "Covers the neural basis of behaviour, including how the nervous system processes sensory information and generates responses."
-    },
-    {
-      "vsiTitle": "Circadian Rhythms",
-      "vsiAuthor": "Russell Foster, Leon Kreitzman",
-      "rationale": "Directly relevant to photoperiodism and the influence of biological clocks on patterns of behavioural response."
-    },
-    {
-      "vsiTitle": "Evolution",
-      "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
-      "rationale": "Covers the evolution of behaviour including evidence of genetic determination of behaviour and phyletic patterns."
-    },
-    {
-      "vsiTitle": "Consciousness",
-      "vsiAuthor": "Susan Blackmore",
-      "rationale": "Addresses the neural basis of awareness and responsiveness, relevant to understanding how organisms process and respond to stimuli."
+      "rationale": "Directly addresses hormonal influences on behaviour including sex hormones, and the interaction of endocrine and nervous systems (C.1, C.2)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
-      "rationale": "Covers plant movements including tropic and nastic movements, nutation, and other autonomous movements outlined in this section."
+      "rationale": "Covers plant movements including tropic responses and other autonomous movements relevant to stereotyped plant responses (B.1)."
+    },
+    {
+      "vsiTitle": "Circadian Rhythms",
+      "vsiAuthor": "Russell Foster, Leon Kreitzman",
+      "rationale": "Directly relevant to photoperiodism and molecular clock mechanisms that govern rhythmic behavioural patterns (B.3)."
+    },
+    {
+      "vsiTitle": "Evolution",
+      "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
+      "rationale": "Covers genetic determination of behaviour through natural selection and the evolutionary basis of behavioural traits (D.1, D.2)."
+    },
+    {
+      "vsiTitle": "The Eye",
+      "vsiAuthor": "Michael F. Land",
+      "rationale": "Covers sensory reception and visual processing central to understanding how organisms detect stimuli and initiate behavioural responses (C.3)."
+    },
+    {
+      "vsiTitle": "Genes",
+      "vsiAuthor": "Jonathan Slack",
+      "rationale": "Addresses genetic determination of traits including behavioural phenotypes, sex linkage, and variation underlying the evolution of behaviour (D.1)."
+    },
+    {
+      "vsiTitle": "Mammals",
+      "vsiAuthor": "T. S. Kemp",
+      "rationale": "Illustrates the diversity of mammalian behaviour and the role of brain evolution in shaping complex behavioural repertoires (A.1, D)."
+    },
+    {
+      "vsiTitle": "Learning",
+      "vsiAuthor": "Mark Haselgrove",
+      "rationale": "Covers conditioning and learning processes that shape behavioural responses, directly relevant to the influence of experience on behaviour (D.2)."
+    },
+    {
+      "vsiTitle": "Developmental biology",
+      "vsiAuthor": "Lewis Wolpert",
+      "rationale": "Covers nervous system development and the biological foundations underlying the emergence of behavioural responses in organisms (C.3)."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
-      "rationale": "Covers insect behaviour including fixed action patterns, taxes, and the hormonal control of behaviour in insects."
-    },
-    {
-      "vsiTitle": "Psychology",
-      "vsiAuthor": "Gillian Butler, Freda McManus",
-      "rationale": "Provides a broad framework for understanding behavioural responses, learning, and the influence of experience on behaviour."
+      "rationale": "Covers insect behavioural responses to environmental stimuli, relevant to taxes, fixed action patterns, and predator-prey interactions (B.2)."
     }
   ]
 }

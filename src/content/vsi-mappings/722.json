@@ -4,47 +4,52 @@
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Covers the engineering principles behind machines, machine components, and machine tools that form the core of this section."
+      "rationale": "Addresses B (machines and machine components), C (machine tools), and the engineering principles behind mechanical systems."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
-      "rationale": "Directly covers robots and computer-aided machining, key topics under the section's computer-aided machining and nonconventional methods."
+      "rationale": "Directly covers D.3 (robots) in computer-aided machining and D.4 (computer-integrated manufacturing)."
     },
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
-      "rationale": "Relevant to computer numerical control, CAD/CAM, and computer-integrated manufacturing covered in the section."
-    },
-    {
-      "vsiTitle": "Materials",
-      "vsiAuthor": "Christopher Hall",
-      "rationale": "Covers the materials science underlying tool construction and the properties of metals and other materials shaped by machine tools."
-    },
-    {
-      "vsiTitle": "Nanotechnology",
-      "vsiAuthor": "Philip Moriarty",
-      "rationale": "Relevant to nonconventional methods of machining including electron-beam, ion beam, and laser machining at very small scales."
-    },
-    {
-      "vsiTitle": "The Industrial Revolution",
-      "vsiAuthor": "Robert C. Allen",
-      "rationale": "Covers the historical development of machine tools and the transition from hand tools to power-driven machinery."
-    },
-    {
-      "vsiTitle": "Archaeology",
-      "vsiAuthor": "Paul Bahn",
-      "rationale": "Relevant to the early history of hand tools including Paleolithic and Neolithic stone tools."
-    },
-    {
-      "vsiTitle": "Prehistory",
-      "vsiAuthor": "Chris Gosden",
-      "rationale": "Covers the development of early stone and metal hand tools in the Paleolithic and Neolithic periods."
+      "rationale": "Explains D.1 (computer numerical control), D.2 (CAD/CAM), and D.4 (computer-integrated manufacturing) from a computing perspective."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
-      "rationale": "Relevant to computer-integrated manufacturing and the AI systems that drive modern automated machining."
+      "rationale": "Examines the AI systems driving automated machining and adaptive manufacturing, relevant to D.4 (computer-integrated manufacturing)."
+    },
+    {
+      "vsiTitle": "Computer Science",
+      "vsiAuthor": "Subrata Dasgupta",
+      "rationale": "Provides the algorithmic and programming foundations for D.1-D.4 (computer numerical control, CAD/CAM, computer-integrated manufacturing)."
+    },
+    {
+      "vsiTitle": "Materials",
+      "vsiAuthor": "Christopher Hall",
+      "rationale": "Explains materials properties relevant to C (machine tools for shaping metals and other materials) and B.4 (friction and lubricants)."
+    },
+    {
+      "vsiTitle": "Nanotechnology",
+      "vsiAuthor": "Philip Moriarty",
+      "rationale": "Introduces nonconventional machining at the nanoscale, relevant to E (electron-beam, ion beam, and laser machining methods)."
+    },
+    {
+      "vsiTitle": "The Industrial Revolution",
+      "vsiAuthor": "Robert C. Allen",
+      "rationale": "Traces the history of machine tools (C.1) and the pivotal transition from hand tools to power-driven machinery."
+    },
+    {
+      "vsiTitle": "Prehistory",
+      "vsiAuthor": "Chris Gosden",
+      "rationale": "Documents the early history of hand tools (A.1), from Paleolithic stone implements through Neolithic and early metal tool development."
+    },
+    {
+      "vsiTitle": "Design",
+      "vsiAuthor": "John Heskett",
+      "rationale": "Explores design principles behind tools and machine components, relevant to D.2 (computer-aided design) and industrial design methodology."
     }
   ]
 }

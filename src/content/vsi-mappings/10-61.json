@@ -2,11 +2,6 @@
   "sectionCode": "10/61",
   "mappings": [
     {
-      "vsiTitle": "Archaeology",
-      "vsiAuthor": "Paul Bahn",
-      "rationale": "Section A.1 covers museums and galleries including museums of history and natural history, where archaeological collections are preserved and displayed."
-    },
-    {
       "vsiTitle": "Dictionaries",
       "vsiAuthor": "Lynda Mugglestone",
       "rationale": "Section B.1 specifically covers dictionaries and lexicons as systems for storage and retrieval of information."
@@ -19,37 +14,77 @@
     {
       "vsiTitle": "Big Data",
       "vsiAuthor": "Dawn E. Holmes",
-      "rationale": "Section B.6 covers bibliographic and numeric databases, and big data technologies extend the techniques of information storage and retrieval."
+      "rationale": "Section B.6 covers bibliographic and numeric databases, and big data extends techniques of information storage and retrieval."
     },
     {
       "vsiTitle": "Computer Science",
       "vsiAuthor": "Subrata Dasgupta",
-      "rationale": "Sections B.6-7 cover databases, magnetic and optical recordings, and electronic publishing, all relying on computer science."
+      "rationale": "Sections B.6-7 cover databases and electronic storage, and C.3.b covers electronic publishing, all relying on computer science."
     },
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
-      "rationale": "Electronic systems for information storage, retrieval, and dissemination (sections B.6-7 and C.3.b) depend on computing technology."
+      "rationale": "Electronic systems for information storage, retrieval, and dissemination (B.6-7, C.3.b) depend on computing technology."
     },
     {
       "vsiTitle": "The History of Computing",
       "vsiAuthor": "Doron Swade",
-      "rationale": "The evolution of computing technology has transformed the institutions and techniques for information management described in this section."
+      "rationale": "The evolution of computing technology transformed the institutions and techniques for information management in this section."
     },
     {
-      "vsiTitle": "Journalism",
-      "vsiAuthor": "Ian Hargreaves",
-      "rationale": "Section C.3.a.ii covers newspapers and periodicals as forms of print publishing for the dissemination of knowledge."
+      "vsiTitle": "Cryptography",
+      "vsiAuthor": "Fred Piper, Sean Murphy",
+      "rationale": "Cryptography relates to secure storage and transmission of information discussed in section B."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
-      "rationale": "Writing is the foundational technology for information storage and retrieval, underlying all the systems described in sections B and C."
+      "rationale": "Writing is the foundational technology for information storage and retrieval, underlying the systems in B and C."
     },
     {
       "vsiTitle": "Reading",
       "vsiAuthor": "Belinda Jack",
       "rationale": "Reading is the essential complement to publishing (C.3) and libraries (B.4) as means of knowledge dissemination."
+    },
+    {
+      "vsiTitle": "Hieroglyphs",
+      "vsiAuthor": "Penelope Wilson",
+      "rationale": "Hieroglyphs represent an ancient system of writing and information preservation foundational to the techniques in this section."
+    },
+    {
+      "vsiTitle": "Journalism",
+      "vsiAuthor": "Ian Hargreaves",
+      "rationale": "Section C.3.a.ii covers newspapers and C.3.a.iii covers periodicals as forms of print publishing for knowledge dissemination."
+    },
+    {
+      "vsiTitle": "Typography",
+      "vsiAuthor": "Paul Luna",
+      "rationale": "Typography is central to print publishing (C.3.a), the selection, preparation, and marketing of printed material."
+    },
+    {
+      "vsiTitle": "Photography",
+      "vsiAuthor": "Steven Edwards",
+      "rationale": "Photography is a technique for preservation and documentation relevant to museums (A.1), archives (B.5), and publishing (C.3)."
+    },
+    {
+      "vsiTitle": "Documentary film",
+      "vsiAuthor": "Patricia Aufderheide",
+      "rationale": "Section C.4 covers broadcasting including television as a medium for knowledge dissemination."
+    },
+    {
+      "vsiTitle": "Music and Technology",
+      "vsiAuthor": "Mark Katz",
+      "rationale": "Section B.7 covers magnetic and optical recordings, and C.4 covers broadcasting, both central to audio knowledge dissemination."
+    },
+    {
+      "vsiTitle": "The History of Cinema",
+      "vsiAuthor": "Geoffrey Nowell-Smith",
+      "rationale": "Cinema is a medium for knowledge dissemination related to broadcasting (C.4) and electronic publishing (C.3.b)."
+    },
+    {
+      "vsiTitle": "Indian Cinema",
+      "vsiAuthor": "Ashish Rajadhyaska",
+      "rationale": "Indian cinema relates to broadcasting (C.4), printing, and radio as institutions for knowledge dissemination."
     },
     {
       "vsiTitle": "Universities and Colleges",
@@ -62,59 +97,39 @@
       "rationale": "Section C.1 references educational institutions as key institutions for the advancement and dissemination of knowledge."
     },
     {
-      "vsiTitle": "Photography",
-      "vsiAuthor": "Steven Edwards",
-      "rationale": "Photography is a technique for the preservation and documentation of knowledge, relevant to museums (A.1), archives (B.5), and publishing (C.3)."
-    },
-    {
       "vsiTitle": "The History of Astronomy",
       "vsiAuthor": "Michael Hoskin",
-      "rationale": "Section C.5 covers observatories and planetariums as institutions for the advancement and dissemination of astronomical knowledge."
+      "rationale": "Section C.5 covers observatories and planetariums as institutions for the advancement of astronomical knowledge."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
-      "rationale": "Section C.5 covers observatories and planetariums, which rely on telescopes as primary instruments for knowledge advancement."
+      "rationale": "Section C.5 covers observatories and planetariums, which rely on telescopes as primary instruments."
+    },
+    {
+      "vsiTitle": "Archaeology",
+      "vsiAuthor": "Paul Bahn",
+      "rationale": "Section A.1 covers museums including museums of history and natural history where archaeological collections are preserved."
     },
     {
       "vsiTitle": "Art history",
       "vsiAuthor": "Dana Arnold",
-      "rationale": "Section A.1.b.v covers museums of art and art galleries as institutions for the protection and storage of artistic objects."
+      "rationale": "Section A.1.b.v covers museums of art and art galleries as institutions for protecting and storing artistic objects."
     },
     {
-      "vsiTitle": "Cryptography",
-      "vsiAuthor": "Fred Piper, Sean Murphy",
-      "rationale": "Cryptography relates to the techniques for secure storage and transmission of information discussed in section B."
+      "vsiTitle": "Contemporary art",
+      "vsiAuthor": "Julian Stallabrass",
+      "rationale": "Section A.1.b.v covers art museums and galleries, and contemporary art raises questions about institutional collection practices."
     },
     {
-      "vsiTitle": "Surveillance",
-      "vsiAuthor": "David Lyon",
-      "rationale": "Surveillance technologies relate to the collection, storage, and retrieval of information discussed in section B."
+      "vsiTitle": "Modern art",
+      "vsiAuthor": "David Cottington",
+      "rationale": "Section A.1.b.v covers museums of art and art galleries including the Museum of Modern Art."
     },
     {
-      "vsiTitle": "Innovation",
-      "vsiAuthor": "Mark Dodgson, David Gann",
-      "rationale": "Section C.2 covers academies and societies for the advancement of knowledge, which drive innovation in knowledge production."
-    },
-    {
-      "vsiTitle": "Documentary film",
-      "vsiAuthor": "Patricia Aufderheide",
-      "rationale": "Section C.4 covers broadcasting including television as a medium for the dissemination of knowledge."
-    },
-    {
-      "vsiTitle": "Typography",
-      "vsiAuthor": "Paul Luna",
-      "rationale": "Typography is central to print publishing (C.3.a), the selection, preparation, and marketing of printed material."
-    },
-    {
-      "vsiTitle": "Hieroglyphs",
-      "vsiAuthor": "Penelope Wilson",
-      "rationale": "Hieroglyphs represent an ancient system of writing and information preservation, foundational to the techniques covered in this section."
-    },
-    {
-      "vsiTitle": "Music and Technology",
-      "vsiAuthor": "Mark Katz",
-      "rationale": "Section B.7 covers magnetic and optical recordings, and C.4 covers broadcasting, both central to music technology for knowledge dissemination."
+      "vsiTitle": "Geography",
+      "vsiAuthor": "John A. Matthews, David T. Herbert",
+      "rationale": "Section B.3 covers atlases and map collections as systems for storage and retrieval of geographic information."
     },
     {
       "vsiTitle": "Biodiversity Conservation",
@@ -124,17 +139,37 @@
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Sections A.4 and A.5 cover zoological gardens, botanical gardens, and nature preserves that serve ecological knowledge preservation."
-    },
-    {
-      "vsiTitle": "Geography",
-      "vsiAuthor": "John A. Matthews, David T. Herbert",
-      "rationale": "Section B.3 covers atlases and map collections as systems for storage and retrieval of geographic information."
+      "rationale": "Sections A.4 and A.5 cover zoological gardens, botanical gardens, and nature preserves for ecological knowledge."
     },
     {
       "vsiTitle": "Intellectual property",
       "vsiAuthor": "Siva Vaidhyanathan",
-      "rationale": "Intellectual property law governs the dissemination of knowledge through publishing (C.3) and electronic media (C.3.b, C.4)."
+      "rationale": "Intellectual property law governs knowledge dissemination through publishing (C.3) and electronic media (C.3.b, C.4)."
+    },
+    {
+      "vsiTitle": "Surveillance",
+      "vsiAuthor": "David Lyon",
+      "rationale": "Surveillance technologies relate to the collection, storage, and retrieval of information in B."
+    },
+    {
+      "vsiTitle": "Innovation",
+      "vsiAuthor": "Mark Dodgson, David Gann",
+      "rationale": "Section C.2 covers academies and societies for the advancement of knowledge, which drive innovation."
+    },
+    {
+      "vsiTitle": "Oral History",
+      "vsiAuthor": "Mary A. Larson",
+      "rationale": "Oral history involves recording, archiving, and preserving knowledge through interviews, relevant to B.5 (archives) and B.7 (recordings)."
+    },
+    {
+      "vsiTitle": "Garden History",
+      "vsiAuthor": "Gordon Campbell",
+      "rationale": "Sections A.4.c and A.5 cover botanical gardens and arboretums as institutions for preserving botanical knowledge."
+    },
+    {
+      "vsiTitle": "Navigation",
+      "vsiAuthor": "Jim Bennett",
+      "rationale": "Section B.3 covers atlases and map collections, and navigation instruments relate to the preservation of geographic knowledge."
     }
   ]
 }

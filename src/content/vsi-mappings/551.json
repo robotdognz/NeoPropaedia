@@ -2,114 +2,119 @@
   "sectionCode": "551",
   "mappings": [
     {
-      "vsiTitle": "Law",
-      "vsiAuthor": "Raymond Wacks",
-      "rationale": "Directly covers legal systems, the practice of law, and foundational concepts of jurisprudence."
-    },
-    {
       "vsiTitle": "Philosophy of Law",
       "vsiAuthor": "Raymond Wacks",
-      "rationale": "Directly covers Western philosophy of law, jurisprudence theories, and the relationship between law and morality (subsection A.1)."
+      "rationale": "Directly addresses Western philosophy of law, jurisprudence theories, legal positivism, natural law, and the law-morality relationship (A.1)."
     },
     {
-      "vsiTitle": "American Legal History",
-      "vsiAuthor": "G. Edward White",
-      "rationale": "Covers the development of Anglo-American common law as a modern legal system (subsection B.4.a)."
-    },
-    {
-      "vsiTitle": "Comparative Law",
-      "vsiAuthor": "Sabrina Ragone and Guido Smorto",
-      "rationale": "Directly covers the study of distinctions and parallels among diverse legal systems (subsection C)."
+      "vsiTitle": "Law",
+      "vsiAuthor": "Raymond Wacks",
+      "rationale": "Legal systems broadly -- including courts, lawyers, and the practice of law -- connect to outline B.4 and D."
     },
     {
       "vsiTitle": "The Rule of Law",
       "vsiAuthor": "Aziz Z. Huq",
-      "rationale": "Covers the foundational principle governing legal systems and its relationship to constitutional government."
+      "rationale": "The rule of law as a foundational principle in legal theory and its relationship to constitutional government is central to A.1.b."
+    },
+    {
+      "vsiTitle": "Comparative Law",
+      "vsiAuthor": "Sabrina Ragone and Guido Smorto",
+      "rationale": "Directly addresses the study of distinctions and parallels among diverse legal systems (C)."
     },
     {
       "vsiTitle": "Islamic Law",
       "vsiAuthor": "Mashood A. Baderin",
-      "rationale": "Covers Islamic law as a major non-Western legal philosophy and system (subsection A.2)."
+      "rationale": "Islamic law as a major non-Western philosophy of law and legal system is central to A.2."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
       "vsiAuthor": "Peter Adamson",
-      "rationale": "Covers Islamic philosophical traditions relevant to non-Western philosophies of law (subsection A.2)."
-    },
-    {
-      "vsiTitle": "Ancient Greece",
-      "vsiAuthor": "Paul Cartledge",
-      "rationale": "Covers Greek law as an ancient legal system (subsection B.2.d)."
-    },
-    {
-      "vsiTitle": "The Roman Republic",
-      "vsiAuthor": "David M. Gwynn",
-      "rationale": "Covers the development of Roman law as a foundational ancient legal system (subsection B.2.f)."
-    },
-    {
-      "vsiTitle": "The Roman Empire",
-      "vsiAuthor": "Christopher Kelly",
-      "rationale": "Covers Roman law during the imperial period, foundational to Continental civil law."
-    },
-    {
-      "vsiTitle": "Ancient Egypt",
-      "vsiAuthor": "Ian Shaw",
-      "rationale": "Covers Egyptian law as an ancient legal system (subsection B.2.a)."
-    },
-    {
-      "vsiTitle": "The Ancient Near East",
-      "vsiAuthor": "Amanda H. Podany",
-      "rationale": "Covers cuneiform law in ancient Near Eastern civilizations (subsection B.2.b)."
-    },
-    {
-      "vsiTitle": "The Middle Ages",
-      "vsiAuthor": "Miri Rubin",
-      "rationale": "Covers medieval European law including constitutional and private law institutions (subsection B.3)."
-    },
-    {
-      "vsiTitle": "Magna Carta",
-      "vsiAuthor": "Nicholas Vincent",
-      "rationale": "Covers a foundational document of medieval constitutional law and the common law tradition (subsection B.3.b)."
-    },
-    {
-      "vsiTitle": "Medical ethics",
-      "vsiAuthor": "Tony Hope",
-      "rationale": "Covers the relationship between law and morality in the medical domain, relevant to subsection A.1.c."
-    },
-    {
-      "vsiTitle": "Ethics",
-      "vsiAuthor": "Simon Blackburn",
-      "rationale": "Covers the philosophical relationship between law and morality and natural law principles (subsection A.1.c)."
-    },
-    {
-      "vsiTitle": "Thomas Aquinas",
-      "vsiAuthor": "Fergus Kerr",
-      "rationale": "Covers natural law theory as a major tradition in the philosophy of law (subsection A.1.c)."
+      "rationale": "Islamic philosophical traditions including ethics and political philosophy inform non-Western legal thought (A.2)."
     },
     {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
-      "rationale": "Covers Chinese legal philosophy as a non-Western legal tradition (subsection A.2)."
+      "rationale": "The Confucian tradition is central to Chinese philosophy of law and social ordering (A.2)."
     },
     {
-      "vsiTitle": "Classics",
-      "vsiAuthor": "Mary Beard, John Henderson",
-      "rationale": "Covers classical Greek and Roman legal traditions foundational to Western law."
+      "vsiTitle": "American Legal History",
+      "vsiAuthor": "G. Edward White",
+      "rationale": "The development of Anglo-American common law exemplifies a modern legal system (B.4.a)."
+    },
+    {
+      "vsiTitle": "Ancient Egypt",
+      "vsiAuthor": "Ian Shaw",
+      "rationale": "Egyptian civilization -- including its legal customs and governance -- is relevant to ancient Egyptian law (B.2.a)."
+    },
+    {
+      "vsiTitle": "The Ancient Near East",
+      "vsiAuthor": "Amanda H. Podany",
+      "rationale": "Cuneiform civilizations of Mesopotamia, including Babylonian legal codes, are foundational to B.2.b."
+    },
+    {
+      "vsiTitle": "Ancient Greece",
+      "vsiAuthor": "Paul Cartledge",
+      "rationale": "Ancient Greek civilization and its legal and political institutions are relevant to B.2.d."
+    },
+    {
+      "vsiTitle": "The Hellenistic Age",
+      "vsiAuthor": "Peter Thonemann",
+      "rationale": "The Hellenistic period and its legal and administrative systems connect to B.2.e."
+    },
+    {
+      "vsiTitle": "The Roman Republic",
+      "vsiAuthor": "David M. Gwynn",
+      "rationale": "Roman legal institutions during the Republic are foundational to Western law (B.2.f)."
+    },
+    {
+      "vsiTitle": "The Roman Empire",
+      "vsiAuthor": "Christopher Kelly",
+      "rationale": "Roman law during the imperial period proved critical for later Continental civil law traditions (B.2.f)."
+    },
+    {
+      "vsiTitle": "The Middle Ages",
+      "vsiAuthor": "Miri Rubin",
+      "rationale": "Medieval European law -- feudal legal institutions, canon law, and constitutional developments -- connects to outline B.3."
+    },
+    {
+      "vsiTitle": "Magna Carta",
+      "vsiAuthor": "Nicholas Vincent",
+      "rationale": "A foundational document of medieval constitutional law and the common law tradition, central to B.3.b."
+    },
+    {
+      "vsiTitle": "Thomas Aquinas",
+      "vsiAuthor": "Fergus Kerr",
+      "rationale": "Natural law theory as articulated by Aquinas is a major tradition in the philosophy of law and medieval legal thought (A.1.c, A.1.d)."
+    },
+    {
+      "vsiTitle": "Ethics",
+      "vsiAuthor": "Simon Blackburn",
+      "rationale": "The philosophical relationship between law and morality and natural law principles is central to A.1.c."
     },
     {
       "vsiTitle": "Stoicism",
       "vsiAuthor": "Brad Inwood",
-      "rationale": "Covers Stoic natural law philosophy foundational to Western legal theory."
+      "rationale": "Stoic natural law philosophy is foundational to Western legal theory and Roman jurisprudence (A.1.c, A.1.d)."
     },
     {
       "vsiTitle": "Hobbes",
       "vsiAuthor": "Richard Tuck",
-      "rationale": "Covers Hobbesian legal theory including the social contract and the basis of legal authority."
+      "rationale": "Hobbesian legal theory -- the social contract and the basis of legal authority -- is central to A.1.d."
     },
     {
       "vsiTitle": "Locke",
       "vsiAuthor": "John Dunn",
-      "rationale": "Covers Lockean theories of natural rights and their influence on legal philosophy."
+      "rationale": "Lockean natural rights theory and its influence on constitutional law and legal philosophy are relevant to A.1.d."
+    },
+    {
+      "vsiTitle": "Ibn Sīnā (Avicenna)",
+      "vsiAuthor": "Peter Adamson",
+      "rationale": "Islamic philosophy relevant to non-Western legal thought and jurisprudence connects to A.2."
+    },
+    {
+      "vsiTitle": "Medieval Philosophy",
+      "vsiAuthor": "John Marenbon",
+      "rationale": "Medieval philosophical developments -- including canon law thought and natural law reasoning -- connect to B.3.d and A.1.d."
     }
   ]
 }

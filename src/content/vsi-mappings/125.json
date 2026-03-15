@@ -2,104 +2,104 @@
   "sectionCode": "125",
   "mappings": [
     {
-      "vsiTitle": "Crystallography",
-      "vsiAuthor": "A. M. Glazer",
-      "rationale": "Directly covers crystal structures, symmetry, diffraction methods, crystal growth, and crystallographic classification systems central to this section."
-    },
-    {
       "vsiTitle": "Condensed Matter Physics",
       "vsiAuthor": "Ross McKenzie",
-      "rationale": "Directly covers the electronic structure of solids, band theory, superconductivity, magnetic phenomena, and semiconductor physics discussed throughout this section."
+      "rationale": "Core text for the entire section; directly addresses solid-state physics, electronic structure of solids, band theory, superconductivity, phase transitions, and broken symmetry (B, D.8, E)."
+    },
+    {
+      "vsiTitle": "Crystallography",
+      "vsiAuthor": "A. M. Glazer",
+      "rationale": "Directly addresses crystal structures, Bravais lattices, symmetry classification, X-ray/electron/neutron diffraction, and crystal growth central to section A."
     },
     {
       "vsiTitle": "Superconductivity",
       "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Directly covers superconductivity in metals including transition temperature, critical field, Meissner effect, and energy gaps discussed in this section."
+      "rationale": "Directly addresses superconductivity in metals including transition temperature, critical field, Meissner effect, and energy gaps (D.8)."
     },
     {
       "vsiTitle": "Magnetism",
       "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Directly covers paramagnetism, diamagnetism, ferromagnetism, antiferromagnetism, and ferrimagnetism in solids as discussed in this section."
+      "rationale": "Directly addresses paramagnetism, diamagnetism, ferromagnetism, antiferromagnetism, and spin phenomena in solids (B.6, D.9)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Covers the elastic and plastic properties of solids, defects, thermal properties, and the mechanical behaviour of crystalline and amorphous materials."
-    },
-    {
-      "vsiTitle": "Matter",
-      "vsiAuthor": "Geoff Cottrell",
-      "rationale": "Covers the solid state of matter including crystal structure, bonding types, metals, insulators, and semiconductors discussed in this section."
-    },
-    {
-      "vsiTitle": "Soft Matter",
-      "vsiAuthor": "Tom McLeish",
-      "rationale": "Relevant to the glassy or amorphous state of matter, polymeric solids, and the transition between crystalline and non-crystalline states."
-    },
-    {
-      "vsiTitle": "Nanotechnology",
-      "vsiAuthor": "Philip Moriarty",
-      "rationale": "Covers semiconductor device principles, surface phenomena, and nanoscale properties of solids relevant to this section."
-    },
-    {
-      "vsiTitle": "Physics",
-      "vsiAuthor": "Sidney Perkowitz",
-      "rationale": "Provides coverage of solid-state physics including crystal structure, band theory, and semiconductor physics discussed in this section."
-    },
-    {
-      "vsiTitle": "Quantum Theory",
-      "vsiAuthor": "John Polkinghorne",
-      "rationale": "Covers the quantum mechanical foundations underlying energy-band theory, electron behaviour in solids, and semiconductor physics."
+      "rationale": "Examines crystal lattice structures, chemical bonding, hardness, ceramics, and X-ray crystallography relevant to elastic/plastic properties and mechanical behaviour of solids (A, B.3)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "rationale": "Covers ionic crystals, crystal structures, bonding in crystalline minerals, and defects in crystal structures discussed in this section."
-    },
-    {
-      "vsiTitle": "Light",
-      "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Relevant to the interaction of light with solids, the photoelectric effect, photoemission, and optical properties of crystals discussed in this section."
-    },
-    {
-      "vsiTitle": "The History of Physics",
-      "vsiAuthor": "J. L. Heilbron",
-      "rationale": "Covers the historical development of solid-state physics including crystallography, band theory, and superconductivity."
-    },
-    {
-      "vsiTitle": "The Periodic Table",
-      "vsiAuthor": "Eric R. Scerri",
-      "rationale": "Relevant to the properties of metals, semiconductors, and insulators as they relate to electron configuration and periodic trends."
+      "rationale": "Explores crystal structures, unit cells, solid solutions, X-ray crystallography/diffraction, and ionic crystal bonding (A.1, C)."
     },
     {
       "vsiTitle": "Symmetry",
       "vsiAuthor": "Ian Stewart",
-      "rationale": "Directly relevant to symmetry considerations in crystal classification, the 14 Bravais lattices, and point group symmetries in this section."
+      "rationale": "Symmetry groups and rotational symmetry are directly relevant to the symmetry classification of crystal systems (A.1.b)."
     },
     {
-      "vsiTitle": "Microscopy",
-      "vsiAuthor": "Terence Allen",
-      "rationale": "Relevant to electron diffraction and imaging techniques used to study crystal structures and defects in solids."
+      "vsiTitle": "Quantum Theory",
+      "vsiAuthor": "John Polkinghorne",
+      "rationale": "Quantum mechanical foundations underlie energy-band theory, electron behaviour in solids, and the Schrodinger equation applied to periodic potentials (B.5, B.5.d)."
     },
     {
-      "vsiTitle": "Rocks",
-      "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Relevant to crystalline and amorphous minerals, the structure of geological solids, and crystal growth processes."
+      "vsiTitle": "Light",
+      "vsiAuthor": "Ian A. Walmsley",
+      "rationale": "Optics, wave-particle duality, and quantum mechanics of photons are relevant to the interaction of light with solids and the photoelectric effect (B.7, B.7.c, E.4.a)."
+    },
+    {
+      "vsiTitle": "Waves",
+      "vsiAuthor": "Mike Goldsmith",
+      "rationale": "Diffraction, electromagnetic radiation, and interference are relevant to X-ray/electron/neutron diffraction by crystals and light-solid interactions (A.2, B.7)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Covers bonding theory in ionic and covalent solids, crystal energetics, and the thermodynamic properties of solid systems."
+      "rationale": "Examines bonding theory, thermodynamics, nuclear magnetic resonance, and phase behaviour relevant to crystal energetics, thermal properties, and ionic conduction (B.4, C.3, D.9)."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Covers the classification of solids by bonding type and the chemical properties of ionic, metallic, and covalent solids."
+      "rationale": "Addresses classification of solids by bonding type (ionic, covalent, metallic), spectroscopy, and quantum mechanics of chemical bonds (B.1, C.1)."
     },
     {
-      "vsiTitle": "Geology",
-      "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Relevant to the crystal structure of geological materials and the formation of mineral crystals discussed in this section."
+      "vsiTitle": "Molecules",
+      "vsiAuthor": "Philip Ball",
+      "rationale": "Chemical bonding types including covalent bonds, hydrogen bonds, and molecular recognition are relevant to molecular and hydrogen-bonded solids (B.1)."
+    },
+    {
+      "vsiTitle": "The Laws of Thermodynamics",
+      "vsiAuthor": "Peter Atkins",
+      "rationale": "Entropy, free energy, temperature, and thermal conductivity are relevant to the thermal and thermodynamic properties of solids (B.4, D.8.a)."
+    },
+    {
+      "vsiTitle": "The Periodic Table",
+      "vsiAuthor": "Eric R. Scerri",
+      "rationale": "Electron configurations and periodic trends illuminate metallic, semiconducting, and insulating behaviour across element groups (B.1, D.4, E)."
+    },
+    {
+      "vsiTitle": "Matter",
+      "vsiAuthor": "Geoff Cottrell",
+      "rationale": "Atomic structure, mass, and quantum properties of matter provide the fundamental framework for bonding and structure in solids (B.1, B.5)."
+    },
+    {
+      "vsiTitle": "Microscopy",
+      "vsiAuthor": "Terence Allen",
+      "rationale": "Electron microscopy, atomic force microscopy, and scanning tunnelling microscopy are used to study crystal structures, surface phenomena, and defects in solids (A.2, A.4, D.6)."
+    },
+    {
+      "vsiTitle": "Soft Matter",
+      "vsiAuthor": "Tom McLeish",
+      "rationale": "The physics of non-crystalline and polymeric solids is relevant to the glassy/amorphous state of matter and glass transition behaviour (F)."
+    },
+    {
+      "vsiTitle": "Nanotechnology",
+      "vsiAuthor": "Philip Moriarty",
+      "rationale": "Nanoscale properties of solids, nanomagnetism, and semiconductor device principles are relevant to surface phenomena and semiconductor applications (D.6, E.4)."
+    },
+    {
+      "vsiTitle": "Physics",
+      "vsiAuthor": "Sidney Perkowitz",
+      "rationale": "Provides broad context for electronics, quantum mechanics, and matter relevant to solid-state physics topics including conductors and semiconductors (B.5, E)."
     }
   ]
 }

@@ -4,92 +4,92 @@
     {
       "vsiTitle": "Biogeography",
       "vsiAuthor": "Mark V. Lomolino",
-      "rationale": "The primary VSI for this section, directly covering biogeographic distribution, biogeographic regions, regional floras and faunas, and the distribution of organisms."
+      "rationale": "Core text addressing biogeographic distribution, regional floras and faunas, and the factors determining where organisms live (C, D)."
     },
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Covers terrestrial and aquatic ecosystems, biomes, community productivity, and the factors determining ecosystem characteristics."
-    },
-    {
-      "vsiTitle": "Marine biology",
-      "vsiAuthor": "Philip V. Mladenov",
-      "rationale": "Directly covers aquatic ecosystems including oceanic communities, benthos, plankton, nekton, and productivity of marine communities."
-    },
-    {
-      "vsiTitle": "Coral Reefs",
-      "vsiAuthor": "Charles Sheppard",
-      "rationale": "Covers a major boundary ecosystem (neritic communities) with detailed treatment of marine community structure and productivity."
+      "rationale": "Examines ecosystems, communities, biomes, producers/consumers/decomposers, and ecosystem productivity (A.2, A.3, B.5)."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Covers major terrestrial biomes including coniferous forest, middle-latitude forest, and tropical rain forest as outlined in the section."
-    },
-    {
-      "vsiTitle": "Deserts",
-      "vsiAuthor": "Nick Middleton",
-      "rationale": "Directly covers the desert biome, a major terrestrial ecosystem with its characteristic organisms and limiting factors."
+      "rationale": "Explores coniferous, middle-latitude, and tropical rain forest biomes including their structure, diversity, and productivity (A.1.c)."
     },
     {
       "vsiTitle": "Savannas",
       "vsiAuthor": "Peter Furley",
-      "rationale": "Directly covers the grassland and savanna biome, a major terrestrial ecosystem outlined in this section."
+      "rationale": "Directly addresses the grassland and savanna biome including tropical vegetation, campo cerrado, and caatingas (A.1.c)."
     },
     {
-      "vsiTitle": "Mountains",
-      "vsiAuthor": "Martin F. Price",
-      "rationale": "Covers mountain ecosystems with altitude-based zonation of organisms, relevant to the distribution and biome classification."
+      "vsiTitle": "Deserts",
+      "vsiAuthor": "Nick Middleton",
+      "rationale": "Directly addresses the desert biome including aridity, limiting factors, and desert-adapted organisms (A.1.c)."
     },
     {
-      "vsiTitle": "The Antarctic",
-      "vsiAuthor": "Klaus Dodds",
-      "rationale": "Covers polar biomes as specialized terrestrial and marine ecosystems with unique flora and fauna."
-    },
-    {
-      "vsiTitle": "The Arctic",
-      "vsiAuthor": "Klaus Dodds, Jamie Woodward",
-      "rationale": "Covers the tundra biome and Arctic ecosystems, a major terrestrial biome outlined in this section."
+      "vsiTitle": "Marine biology",
+      "vsiAuthor": "Philip V. Mladenov",
+      "rationale": "Explores ocean communities including benthos, plankton, nekton, adaptations to marine conditions, and marine productivity (B.2)."
     },
     {
       "vsiTitle": "Oceans",
       "vsiAuthor": "Dorrik Stow",
-      "rationale": "Covers the ocean as a biological environment and marine communities including open sea, estuarine, and neritic ecosystems."
+      "rationale": "Examines the sea as a biological environment and marine ecosystems including open-sea, estuarine, and neritic zones (B.2.a, B.4)."
     },
     {
       "vsiTitle": "Lakes",
       "vsiAuthor": "Warwick F. Vincent",
-      "rationale": "Directly covers lacustrine (standing-water) freshwater communities including lakes, ponds, swamps, and bogs."
+      "rationale": "Addresses lacustrine (standing-water) freshwater communities including lakes, ponds, and associated organisms (B.3.a)."
     },
     {
       "vsiTitle": "Rivers",
       "vsiAuthor": "Nick Middleton",
-      "rationale": "Covers riverine (flowing-water) freshwater communities including rivers, streams, and their associated biological communities."
+      "rationale": "Addresses riverine (flowing-water) freshwater communities including rivers, streams, and their biological communities (B.3.b)."
+    },
+    {
+      "vsiTitle": "Coral Reefs",
+      "vsiAuthor": "Charles Sheppard",
+      "rationale": "Reef ecosystems represent a major neritic/boundary environment between water and land, with rich biodiversity and community structure (B.4.b)."
+    },
+    {
+      "vsiTitle": "The Arctic",
+      "vsiAuthor": "Klaus Dodds, Jamie Woodward",
+      "rationale": "Explores the tundra biome and Arctic ecosystems, a major specialized polar environment (A.1.c, A.1.d)."
+    },
+    {
+      "vsiTitle": "The Antarctic",
+      "vsiAuthor": "Klaus Dodds",
+      "rationale": "Examines polar biomes in the Southern Hemisphere as specialized terrestrial and marine ecosystems (A.1.d)."
+    },
+    {
+      "vsiTitle": "Mountains",
+      "vsiAuthor": "Martin F. Price",
+      "rationale": "Altitude-based zonation of organisms and mountain ecosystems harbor distinct biotic communities (A.1.c, A.2.a)."
     },
     {
       "vsiTitle": "Tides",
       "vsiAuthor": "David George Bowers, Emyr Martyn Roberts",
-      "rationale": "Relevant to boundary ecosystems between water and land, including the influence of tidal action on neritic and estuarine communities."
-    },
-    {
-      "vsiTitle": "Invasive Species",
-      "vsiAuthor": "Julie Lockwood, Dustin J. Welbourne",
-      "rationale": "Covers how organisms distribute across biogeographic regions and the disruption of regional floras and faunas by non-native species."
+      "rationale": "Tidal processes shape boundary ecosystems between water and land, including biological productivity in intertidal zones (B.4)."
     },
     {
       "vsiTitle": "Climate",
       "vsiAuthor": "Mark Maslin",
-      "rationale": "Climate is the primary determinant of biome distribution, directly relevant to understanding the major terrestrial biomes."
+      "rationale": "Climate is the primary determinant of biome distribution and the environmental gradients underlying biogeographic patterns (A.1, C)."
+    },
+    {
+      "vsiTitle": "Invasive Species",
+      "vsiAuthor": "Julie Lockwood, Dustin J. Welbourne",
+      "rationale": "Non-native species disrupt regional floras and faunas and reshape biogeographic distributions (C, D)."
     },
     {
       "vsiTitle": "The Ice Age",
       "vsiAuthor": "Jamie Woodward",
-      "rationale": "Covers how glaciation shaped biogeographic distribution and the historical factors determining present-day regional floras and faunas."
+      "rationale": "Glaciation profoundly shaped biogeographic distribution and determined present-day regional floras and faunas (C, D)."
     },
     {
-      "vsiTitle": "Landscapes and Geomorphology",
-      "vsiAuthor": "Andrew Goudie, Heather Viles",
-      "rationale": "Covers the physical landscape patterns that create habitat gradients determining the distribution of organisms."
+      "vsiTitle": "Plants",
+      "vsiAuthor": "Timothy Walker",
+      "rationale": "Plant diversity, growth habits, and seed plant distribution are relevant to terrestrial producers and indicator organisms (A.2)."
     }
   ]
 }

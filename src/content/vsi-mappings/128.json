@@ -4,117 +4,62 @@
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Directly covers general wave phenomena, wave classification, superposition, diffraction, interference, and all types of waves discussed in this section."
+      "rationale": "Directly covers general wave phenomena (A), including wave classification, diffraction, interference, electromagnetic radiation, sound, water waves, and gravitational waves."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Directly covers sound waves, their properties, shock waves, sources and reception of sound, and acoustical applications discussed in this section."
+      "rationale": "Directly covers sound waves (E), including frequency, pitch, loudness, resonance, the Doppler effect, infrasound, noise, and acoustical properties."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Directly covers light waves, wave theory of light, diffraction, interference, polarization, dispersion, and quantum theory of light central to this section."
-    },
-    {
-      "vsiTitle": "Physics",
-      "vsiAuthor": "Sidney Perkowitz",
-      "rationale": "Covers wave motion, electromagnetic waves, sound, optics, and the fundamental properties of waves discussed in this section."
-    },
-    {
-      "vsiTitle": "Magnetism",
-      "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Relevant to electromagnetic wave generation, magnetic properties of materials interacting with electromagnetic radiation, and microwave sources."
+      "rationale": "Directly covers light waves (C) and focusing/imaging (D), including optics, wave-particle duality, speed of light, and the quantum theory of light."
     },
     {
       "vsiTitle": "Quantum Theory",
       "vsiAuthor": "John Polkinghorne",
-      "rationale": "Covers the quantum theory of light, wave-particle duality, the photon, and the uncertainty principle discussed in this section."
+      "rationale": "Addresses the quantum theory of light (C.8), including wave-particle duality, the superposition principle (A.4), and Heisenberg's uncertainty principle (C.8.b)."
     },
     {
-      "vsiTitle": "Radioactivity",
-      "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Relevant to gamma rays as part of the electromagnetic spectrum and the sources of gamma radiation from radioactive nuclei."
-    },
-    {
-      "vsiTitle": "The History of Physics",
-      "vsiAuthor": "J. L. Heilbron",
-      "rationale": "Covers the historical development of wave theory, optics, and the wave-particle debate that shaped modern understanding of light."
+      "vsiTitle": "Magnetism",
+      "vsiAuthor": "Stephen J. Blundell",
+      "rationale": "Explains Maxwell's electromagnetic theory (C.6) and Faraday's foundational work on electromagnetic wave generation and propagation (B)."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
-      "rationale": "Relevant to geometrical optics, optical systems, lens design, diffraction, and the focusing and imaging of light waves in this section."
+      "rationale": "Illustrates geometrical optics, lenses, mirrors, and optical systems (D.1), as well as radio telescopes relevant to electromagnetic wave detection (B.2.a)."
     },
     {
-      "vsiTitle": "Matter",
-      "vsiAuthor": "Geoff Cottrell",
-      "rationale": "Covers the interaction of waves with matter, absorption, dispersion, and the propagation of electromagnetic waves through media."
-    },
-    {
-      "vsiTitle": "Applied mathematics",
-      "vsiAuthor": "Alain Goriely",
-      "rationale": "Covers the wave equation, mathematical description of wave motion, and the space-time analysis of wave phenomena."
-    },
-    {
-      "vsiTitle": "Chaos",
-      "vsiAuthor": "Lenny Smith",
-      "rationale": "Relevant to nonlinear wave phenomena and complex wave interactions in turbulent and chaotic systems."
+      "vsiTitle": "Radioactivity",
+      "vsiAuthor": "Claudio Tuniz",
+      "rationale": "Discusses gamma rays (B.2.g), sources of gamma radiation from radioactive nuclei (B.3.e), and synchrotron radiation (B.3.d)."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
-      "rationale": "Relevant to X-ray diffraction and the interaction of waves with crystalline structures discussed in the section's treatment of electromagnetic waves."
+      "rationale": "Demonstrates wave interference and diffraction through X-ray and electron diffraction in crystalline materials (A.6, B.2.f)."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
-      "rationale": "Relevant to the velocity of light, its measurement, and the role of light speed in special relativity discussed in this section."
+      "rationale": "Establishes the constancy of the velocity of light (C.2) and introduces gravitational waves as a type of wave phenomenon predicted by general relativity (A.2)."
     },
     {
-      "vsiTitle": "Philosophy of Physics",
-      "vsiAuthor": "David Wallace",
-      "rationale": "Covers the wave-particle duality, quantum theory of light, and foundational questions about the nature of waves and particles."
+      "vsiTitle": "Microscopy",
+      "vsiAuthor": "Terence Allen",
+      "rationale": "Illustrates lens-based imaging systems (D.1), the electromagnetic spectrum in microscopy (B.2), and wave phenomena like diffraction limits in optical instruments."
     },
     {
-      "vsiTitle": "Nuclear Physics",
-      "vsiAuthor": "Frank Close",
-      "rationale": "Relevant to gamma rays, their sources from radioactive nuclei, and their place in the electromagnetic spectrum."
-    },
-    {
-      "vsiTitle": "Symmetry",
-      "vsiAuthor": "Ian Stewart",
-      "rationale": "Relevant to the symmetry properties of waves including polarization states and the mathematical structure of wave superposition."
-    },
-    {
-      "vsiTitle": "Measurement",
-      "vsiAuthor": "David J. Hand",
-      "rationale": "Relevant to the measurement of wave properties including frequency, wavelength, amplitude, and the velocity of light."
-    },
-    {
-      "vsiTitle": "Condensed Matter Physics",
-      "vsiAuthor": "Ross McKenzie",
-      "rationale": "Relevant to the interaction of light with solids, phonon waves in crystals, and the propagation of waves through condensed media."
-    },
-    {
-      "vsiTitle": "Michael Faraday",
-      "vsiAuthor": "Frank A.J.L. James",
-      "rationale": "Relevant to the development of electromagnetic wave theory and the historical understanding of light as electromagnetic radiation."
+      "vsiTitle": "Physics",
+      "vsiAuthor": "Sidney Perkowitz",
+      "rationale": "Provides broad coverage of wave motion fundamentals, electromagnetic waves, quantum mechanics, and the physics underlying all wave phenomena in this section."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "rationale": "Relevant to seismic wave propagation and the behaviour of waves at boundaries, including reflection and refraction discussed in this section."
-    },
-    {
-      "vsiTitle": "Tides",
-      "vsiAuthor": "David George Bowers, Emyr Martyn Roberts",
-      "rationale": "Relevant to water waves, wave phenomena, and the behaviour of waves in oceans and at boundaries."
-    },
-    {
-      "vsiTitle": "Oceans",
-      "vsiAuthor": "Dorrik Stow",
-      "rationale": "Relevant to water waves, their properties and propagation, as a fundamental example of wave motion discussed in this section."
+      "rationale": "Uses seismic wave propagation as an example of mechanical waves (A.2.a), including wave behaviour at boundaries such as reflection, refraction, and mode conversion (A.5)."
     }
   ]
 }

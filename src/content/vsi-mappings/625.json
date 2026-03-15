@@ -2,54 +2,54 @@
   "sectionCode": "625",
   "mappings": [
     {
-      "vsiTitle": "Music",
-      "vsiAuthor": "Nicholas Cook",
-      "rationale": "Music is integral to ballet and theatrical dance, relevant to the section's treatment of the integration of dance with other arts (section A.5) and ballet's relation to music."
-    },
-    {
       "vsiTitle": "Theatre",
       "vsiAuthor": "Marvin Carlson",
-      "rationale": "Dance in the theatre is explicitly addressed in section A.5, and theatrical dance forms including musical theatre are relevant to the integration of dance with dramatic arts."
-    },
-    {
-      "vsiTitle": "Film",
-      "vsiAuthor": "Michael Wood",
-      "rationale": "Dance in motion pictures is explicitly mentioned in section A.5, and the section discusses the relation of modern dance to motion pictures (section C.2)."
-    },
-    {
-      "vsiTitle": "Ritual",
-      "vsiAuthor": "Barry Stephenson",
-      "rationale": "Relevant to the section's treatment of the origins and functions of dance as art, and to primitive dance forms with ritualistic origins (section D)."
-    },
-    {
-      "vsiTitle": "Social and Cultural  Anthropology",
-      "vsiAuthor": "John Monaghan, Peter Just",
-      "rationale": "Relevant to the section's treatment of primitive, folk, and popular dance (section D) and the cultural contexts of dance."
-    },
-    {
-      "vsiTitle": "Folk music",
-      "vsiAuthor": "Mark Slobin",
-      "rationale": "Folk music is closely tied to folk dance traditions, relevant to the section's treatment of primitive, folk, and popular dance (section D)."
-    },
-    {
-      "vsiTitle": "World music",
-      "vsiAuthor": "Philip V. Bohlman",
-      "rationale": "World music traditions are closely tied to dance across cultures, relevant to the section's treatment of dance history and primitive/folk dance."
-    },
-    {
-      "vsiTitle": "The Psychology of Music",
-      "vsiAuthor": "Elizabeth Hellmuth Margulis",
-      "rationale": "Relevant to understanding the relationship between musical rhythm and dance movement, pertinent to choreography and the nature of dance as art."
+      "rationale": "Dance in the theatre is explicitly addressed in section A.5; theatre covers performance, staging, and the integration of dance with dramatic arts."
     },
     {
       "vsiTitle": "Ethnomusicology",
       "vsiAuthor": "Timothy Rice",
-      "rationale": "Ethnomusicological study encompasses dance in non-Western cultures, relevant to the section's treatment of primitive, folk, and popular dance (section D)."
+      "rationale": "Ethnomusicology encompasses dance in non-Western cultures and its relation to music, directly relevant to primitive, folk, and popular dance (D)."
+    },
+    {
+      "vsiTitle": "Aesthetics",
+      "vsiAuthor": "Bence Nanay",
+      "rationale": "Covers aesthetic theory including performance and embodied experience, relevant to the nature of dance as art and dance criticism (A.1, A.4)."
+    },
+    {
+      "vsiTitle": "Ritual",
+      "vsiAuthor": "Barry Stephenson",
+      "rationale": "Covers ritual, rites of passage, and ceremonial practices, directly relevant to the origins and functions of dance and primitive dance forms (A.1, D)."
+    },
+    {
+      "vsiTitle": "Social and Cultural Anthropology",
+      "vsiAuthor": "John Monaghan, Peter Just",
+      "rationale": "Covers ethnographic study of cultural practices including dance, relevant to primitive, folk, and popular dance (D)."
+    },
+    {
+      "vsiTitle": "Folk music",
+      "vsiAuthor": "Mark Slobin",
+      "rationale": "Folk music is inseparably tied to folk dance traditions across cultures, relevant to folk and popular dance (D)."
     },
     {
       "vsiTitle": "Modern Drama",
       "vsiAuthor": "Kirsten E. Shepherd-Barr",
-      "rationale": "Modern drama incorporates dance and movement, relevant to the section's discussion of modern dance's relation to drama (section C.2)."
+      "rationale": "Modern drama incorporates dance and movement, relevant to the relation of modern dance to drama and musical theatre (C.2)."
+    },
+    {
+      "vsiTitle": "Music",
+      "vsiAuthor": "Nicholas Cook",
+      "rationale": "Music is integral to ballet, modern dance, and theatrical dance; covers performance and production relevant to the integration of dance with music (A.5, B.2)."
+    },
+    {
+      "vsiTitle": "Film",
+      "vsiAuthor": "Michael Wood",
+      "rationale": "Dance in motion pictures is explicitly mentioned in section A.5, and modern dance's relation to film is addressed in C.2."
+    },
+    {
+      "vsiTitle": "Creativity",
+      "vsiAuthor": "Vlad Petre Glăveanu",
+      "rationale": "Covers creative expression and artistic process, relevant to choreography and the nature of dance as an expressive art (A.1, A.2)."
     }
   ]
 }

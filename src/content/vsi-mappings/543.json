@@ -2,129 +2,124 @@
   "sectionCode": "543",
   "mappings": [
     {
-      "vsiTitle": "Politics",
-      "vsiAuthor": "Kenneth Minogue",
-      "rationale": "Covers the exercise of political power including regulatory, security, and supervisory functions of government."
-    },
-    {
-      "vsiTitle": "Democracy",
-      "vsiAuthor": "Bernard Crick",
-      "rationale": "Covers democratic processes for exercising power and peaceful methods of changing government (subsection C.1)."
-    },
-    {
       "vsiTitle": "Governance",
       "vsiAuthor": "Mark Bevir",
-      "rationale": "Covers the dynamics of governance including regulatory functions and the conduct of government operations."
+      "rationale": "Explores the dynamics of governance including regulatory functions and accountability in government operations (A.4)."
     },
     {
       "vsiTitle": "Public Administration",
       "vsiAuthor": "Stella Z. Theodoulou, Ravi K. Roy",
-      "rationale": "Covers how government functions are administered including regulatory and enforcement functions (subsection A.4)."
+      "rationale": "Examines how government functions are administered including regulatory, supervisory, and enforcement roles (A.4, A.5)."
+    },
+    {
+      "vsiTitle": "Politics",
+      "vsiAuthor": "Kenneth Minogue",
+      "rationale": "The exercise of political power, including how government functions operate in practice, is central to outline A."
+    },
+    {
+      "vsiTitle": "Democracy",
+      "vsiAuthor": "Bernard Crick",
+      "rationale": "Democratic processes for exercising power and peaceful methods of changing government through elections connect to outline C.1."
     },
     {
       "vsiTitle": "International Relations",
       "vsiAuthor": "Paul Wilkinson, Christian Reus-Smit",
-      "rationale": "Covers the conduct of foreign relations between sovereign states and international organizations (subsection A.2)."
+      "rationale": "The conduct of foreign relations between sovereign states and international organizations is central to outline A.2."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
-      "rationale": "Directly covers the conduct of foreign relations and diplomatic functions of government (subsection A.2)."
+      "rationale": "Directly addresses the conduct of foreign relations and diplomatic functions of government (A.2)."
     },
     {
       "vsiTitle": "International security",
       "vsiAuthor": "Christopher S. Browning",
-      "rationale": "Covers internal and external security functions of government (subsection A.1)."
+      "rationale": "Internal and external security functions of government, including national defense, are central to outline A.1."
     },
     {
       "vsiTitle": "Criminal Justice",
       "vsiAuthor": "Julian V. Roberts",
-      "rationale": "Covers law enforcement and corrective functions including sanctions and penalties (subsection A.5)."
+      "rationale": "Law enforcement and corrective functions -- sanctions, inducements, and penalties -- connect to outline A.5."
+    },
+    {
+      "vsiTitle": "The Rule of Law",
+      "vsiAuthor": "Aziz Z. Huq",
+      "rationale": "Legality and due process constrain how government exercises its regulatory and enforcement power (A.4, A.5)."
     },
     {
       "vsiTitle": "Elections",
       "vsiAuthor": "L. Sandy Maisel, Jennifer A. Yoder",
-      "rationale": "Covers peaceful change of government through electoral processes and plebiscites (subsection C.1)."
+      "rationale": "Directly addresses peaceful change of government through electoral processes and plebiscites (C.1)."
     },
     {
       "vsiTitle": "American Political Parties and Elections",
       "vsiAuthor": "L. Sandy Maisel",
-      "rationale": "Covers how political parties function in the electoral process for changing government."
-    },
-    {
-      "vsiTitle": "American politics",
-      "vsiAuthor": "Richard M. Valelly",
-      "rationale": "Covers the dynamics of American political processes including elections and party competition."
-    },
-    {
-      "vsiTitle": "British Politics",
-      "vsiAuthor": "Tony Wright",
-      "rationale": "Covers the functioning of parliamentary government and the British political process."
+      "rationale": "Political parties organize the electoral process for peaceful government transitions (C.1)."
     },
     {
       "vsiTitle": "The American Presidency",
       "vsiAuthor": "Charles O. Jones",
-      "rationale": "Covers how executive power is exercised in a presidential system."
+      "rationale": "Executive power in a presidential system -- including security and regulatory functions -- is relevant to outline A.1 and A.4."
     },
     {
       "vsiTitle": "Revolutions",
       "vsiAuthor": "Jack A. Goldstone",
-      "rationale": "Covers non-peaceful methods of changing the form of government."
+      "rationale": "Non-peaceful methods of changing the form of government are the focus, relevant to outline C."
     },
     {
       "vsiTitle": "Terrorism",
       "vsiAuthor": "Charles Townshend",
-      "rationale": "Covers terrorism as a challenge to government's security and law enforcement functions."
-    },
-    {
-      "vsiTitle": "Corruption",
-      "vsiAuthor": "Leslie Holmes",
-      "rationale": "Covers how corruption undermines the regulatory and enforcement functions of government."
+      "rationale": "Terrorism as a challenge to government security and law enforcement functions connects to outline A.1 and A.5."
     },
     {
       "vsiTitle": "Surveillance",
       "vsiAuthor": "David Lyon",
-      "rationale": "Covers government surveillance as a regulatory and security function."
+      "rationale": "Government surveillance as a security and regulatory function is relevant to outline A.1 and A.4."
+    },
+    {
+      "vsiTitle": "Corruption",
+      "vsiAuthor": "Leslie Holmes",
+      "rationale": "Corruption undermines regulatory and enforcement functions of government (A.4, A.5)."
     },
     {
       "vsiTitle": "Negotiation",
       "vsiAuthor": "Carrie Menkel-Meadow",
-      "rationale": "Covers mediation and negotiation as supervisory functions for resolving conflicts (subsection A.3)."
+      "rationale": "Mediation and negotiation serve as supervisory functions for resolving conflicts (A.3)."
     },
     {
       "vsiTitle": "Arbitration",
       "vsiAuthor": "Thomas Schultz, Thomas Grant",
-      "rationale": "Covers arbitration as a method of adjudicating disputes, a supervisory function of government (subsection A.3)."
+      "rationale": "Arbitration as a method of adjudicating suits and resolving disputes connects to outline A.3."
     },
     {
-      "vsiTitle": "Populism",
-      "vsiAuthor": "Cas Mudde, Cristsbal Rovia Kalwasser",
-      "rationale": "Covers how populist movements exercise political power and challenge established political processes."
-    },
-    {
-      "vsiTitle": "Authoritarianism",
-      "vsiAuthor": "James Loxton",
-      "rationale": "Covers how authoritarian regimes exercise power through security, regulatory, and enforcement functions."
-    },
-    {
-      "vsiTitle": "Russian Politics",
-      "vsiAuthor": "Brian D. Taylor",
-      "rationale": "Covers the dynamics of political power in Russia including government functions and political processes."
-    },
-    {
-      "vsiTitle": "African Politics",
-      "vsiAuthor": "Ian Taylor",
-      "rationale": "Covers how government functions operate in African political contexts."
+      "vsiTitle": "Competition and Antitrust Law",
+      "vsiAuthor": "Ariel Ezrachi",
+      "rationale": "Regulatory functions of government in enforcing competition standards and market regulation are central to outline A.4."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
-      "rationale": "Covers government's role in production and consumption within market economies (subsection B)."
+      "rationale": "Government's role in production and consumption within market economies is relevant to outline B."
     },
     {
       "vsiTitle": "The Welfare State",
       "vsiAuthor": "David Garland",
-      "rationale": "Covers the enterprising and social welfare functions of government."
+      "rationale": "Government's enterprising and social welfare functions in the economy connect to outline A.6 and B."
+    },
+    {
+      "vsiTitle": "Populism",
+      "vsiAuthor": "Cas Mudde, Cristsbal Rovia Kalwasser",
+      "rationale": "Populist movements challenge established political processes and the exercise of political power (A, C)."
+    },
+    {
+      "vsiTitle": "Authoritarianism",
+      "vsiAuthor": "James Loxton",
+      "rationale": "Authoritarian regimes exercise power through security, regulatory, and enforcement functions (A)."
+    },
+    {
+      "vsiTitle": "Environmental Law",
+      "vsiAuthor": "Elizabeth Fisher",
+      "rationale": "Regulatory functions of government in environmental protection and standards enforcement connect to outline A.4."
     }
   ]
 }

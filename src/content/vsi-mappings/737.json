@@ -4,87 +4,72 @@
     {
       "vsiTitle": "City Planning",
       "vsiAuthor": "Carl Abbott",
-      "rationale": "Directly covers urban planning, infrastructure systems, and the design of recreational facilities and public services."
+      "rationale": "A core text on how cities organize their basic engineering services (A), urban transportation systems (A.3), and recreational facilities (B.2)."
     },
     {
       "vsiTitle": "Civil engineering",
       "vsiAuthor": "David Muir Wood",
-      "rationale": "Relevant to basic engineering services including water-supply systems, sanitation systems, and urban infrastructure."
-    },
-    {
-      "vsiTitle": "Engineering",
-      "vsiAuthor": "David Blockley",
-      "rationale": "Covers the engineering principles underlying urban water, sanitation, and transportation systems."
+      "rationale": "Water supply and sanitation are the engineering backbone of urban life, directly relevant to A.1 (water-supply systems) and A.2 (sanitation systems)."
     },
     {
       "vsiTitle": "Suburbs",
       "vsiAuthor": "Carl Abbott",
-      "rationale": "Relevant to urban transportation systems, engineering services, and the technological challenges of suburban expansion."
-    },
-    {
-      "vsiTitle": "Climate change",
-      "vsiAuthor": "Mark Maslin",
-      "rationale": "Relevant to control of air, water, and land pollution, a key technological response to urban problems."
+      "rationale": "Suburban sprawl creates distinct technological challenges for transportation (A.3) and infrastructure delivery that differ fundamentally from dense urban cores."
     },
     {
       "vsiTitle": "Environmental economics",
       "vsiAuthor": "Stephen Smith",
-      "rationale": "Relevant to the economic analysis of pollution control and environmental regulation in urban communities."
-    },
-    {
-      "vsiTitle": "Environmental Law",
-      "vsiAuthor": "Elizabeth Fisher",
-      "rationale": "Relevant to the regulatory frameworks for controlling air, water, and land pollution in cities."
+      "rationale": "Examines market-based instruments—taxes, cap-and-trade, subsidies—for controlling air, water, and land pollution (C.1) in urban settings."
     },
     {
       "vsiTitle": "Environmental Politics",
       "vsiAuthor": "Andrew Dobson",
-      "rationale": "Relevant to the political dimensions of urban pollution control and environmental regulation."
+      "rationale": "Pollution control (C.1) is as much a political contest as a technical one, and this volume explores the ideologies and movements behind urban environmental regulation."
     },
     {
-      "vsiTitle": "Environmental ethics",
-      "vsiAuthor": "Robin Attfield",
-      "rationale": "Relevant to ethical considerations in pollution control and the provision of basic urban services."
-    },
-    {
-      "vsiTitle": "Sustainability",
-      "vsiAuthor": "Saleem H. Ali",
-      "rationale": "Relevant to sustainable urban infrastructure, water management, and pollution control technologies."
+      "vsiTitle": "Environmental Law",
+      "vsiAuthor": "Elizabeth Fisher",
+      "rationale": "Provides the legal framework for C (controlling air, water, and land pollution), explaining statutes, enforcement, and liability in urban communities."
     },
     {
       "vsiTitle": "Public health",
       "vsiAuthor": "Virginia Berridge",
-      "rationale": "Relevant to water-supply and sanitation systems as fundamental urban public health infrastructure."
-    },
-    {
-      "vsiTitle": "Forensic science",
-      "vsiAuthor": "Jim Fraser",
-      "rationale": "Relevant to crime control technology used in urban police services."
+      "rationale": "Clean water (A.1) and sanitation (A.2) were the great public health triumphs of the nineteenth century, and this volume traces how that infrastructure saved millions of lives."
     },
     {
       "vsiTitle": "Criminology",
       "vsiAuthor": "Tim Newburn",
-      "rationale": "Relevant to crime control technology and policing methods in urban communities."
+      "rationale": "Explores crime patterns and policing methods in urban communities, directly relevant to B.1.b (crime control technology)."
     },
     {
-      "vsiTitle": "Criminal Justice",
-      "vsiAuthor": "Julian V. Roberts",
-      "rationale": "Relevant to police technology and crime control in urban settings."
+      "vsiTitle": "Forensic science",
+      "vsiAuthor": "Jim Fraser",
+      "rationale": "Forensic evidence, examination, and identification techniques are central to B.1.b (crime control technology) in modern cities."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
-      "rationale": "Relevant to water-supply systems and the chemistry of water treatment for urban communities."
+      "rationale": "Understanding water's chemistry is fundamental to A.1 (water-supply systems), from purification and treatment to distribution in urban communities."
     },
     {
       "vsiTitle": "Landscape architecture",
       "vsiAuthor": "Ian Thompson",
-      "rationale": "Relevant to the design and maintenance of parks, recreational facilities, and urban green spaces."
+      "rationale": "Parks and recreational facilities (B.2) are critical urban infrastructure, and this volume examines their design, construction, and maintenance."
     },
     {
-      "vsiTitle": "Fire",
-      "vsiAuthor": "Andrew C. Scott",
-      "rationale": "Relevant to fire prevention and control as a basic engineering service of the city."
+      "vsiTitle": "Sustainability",
+      "vsiAuthor": "Saleem H. Ali",
+      "rationale": "Addresses how cities can build sustainable infrastructure and manage pollution (C), balancing growth with environmental responsibility."
+    },
+    {
+      "vsiTitle": "Climate change",
+      "vsiAuthor": "Mark Maslin",
+      "rationale": "Cities are major contributors to greenhouse gas emissions, making this essential for understanding C.1 (control of air pollution) at the urban scale."
+    },
+    {
+      "vsiTitle": "Energy Systems",
+      "vsiAuthor": "Nick Jenkins",
+      "rationale": "Electric power (A.5) is a basic engineering service of the city, and this volume explains how electricity is generated, transmitted, and distributed."
     }
   ]
 }

@@ -4,92 +4,87 @@
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "rationale": "Directly relevant to the identification and distribution of mineral resources, and the mining of metal ores, stone, and other minerals."
-    },
-    {
-      "vsiTitle": "Rocks",
-      "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Covers the geological basis for quarrying and extraction of stone, sand, clay, and gravel described in the section."
+      "rationale": "Mineral identification and distribution (A.1) are the starting point for extraction, encompassing metal ores, salt, stone, sulfur, and phosphates (B.1.b)."
     },
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "rationale": "Relevant to the identification and distribution of natural resources including coal, petroleum, and mineral deposits."
+      "rationale": "Geological mapping reveals where coal, petroleum, and mineral deposits lie (A.1), making this foundational for all extraction planning."
+    },
+    {
+      "vsiTitle": "Rocks",
+      "vsiAuthor": "Jan Zalasiewicz",
+      "rationale": "Quarrying (B.1) and the processing of stone, sand, clay, and gravel (C.5) depend on understanding rock types and their mechanical properties."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Covers the properties and processing of industrial materials including metals, ceramics, glass, and plastics."
+      "rationale": "Glass, cement, ceramics, and bricks (C.5) as well as metal processing (C.3) are materials-science problems explored in this volume."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Relevant to the extraction and processing of individual metallic elements (aluminum, copper, gold, iron, etc.) listed in the section."
-    },
-    {
-      "vsiTitle": "Molecules",
-      "vsiAuthor": "Philip Ball",
-      "rationale": "Relevant to the chemical processing involved in petroleum refining and the production of synthetic materials."
-    },
-    {
-      "vsiTitle": "Physical chemistry",
-      "vsiAuthor": "Peter Atkins",
-      "rationale": "Covers the chemical principles underlying petroleum refining, coal utilization, and metal ore processing."
-    },
-    {
-      "vsiTitle": "Organic Chemistry",
-      "vsiAuthor": "Graham Patrick",
-      "rationale": "Relevant to petroleum refining and the production of chemicals from coal tar and oil."
+      "rationale": "Individual metals—aluminum, copper, gold, iron—each have distinct production and processing requirements (C.3), while air processing yields industrial gases (C.7)."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Provides the chemical foundation for the primary conversion of raw materials including smelting, refining, and chemical processing."
+      "rationale": "Chemical processing principles underpin petroleum refining (C.1) and the conversion of coal into coke, gas, and chemicals (C.2)."
+    },
+    {
+      "vsiTitle": "Organic Chemistry",
+      "vsiAuthor": "Graham Patrick",
+      "rationale": "Petroleum refining (C.1) and the production of petrochemicals from coal tar and oil (C.2) are applications of organic chemistry at industrial scale."
+    },
+    {
+      "vsiTitle": "Isotopes",
+      "vsiAuthor": "Rob Ellam",
+      "rationale": "Uranium processing (C.3.s) and the nuclear fuel cycle depend on isotopic separation, connecting nuclear materials science to resource extraction."
     },
     {
       "vsiTitle": "Sustainability",
       "vsiAuthor": "Saleem H. Ali",
-      "rationale": "Directly relevant to the conservation of natural resources and the management of the world's physical and biological resources."
-    },
-    {
-      "vsiTitle": "Environmental economics",
-      "vsiAuthor": "Stephen Smith",
-      "rationale": "Relevant to the management and conservation of natural resources from an economic perspective."
-    },
-    {
-      "vsiTitle": "Environmental ethics",
-      "vsiAuthor": "Robin Attfield",
-      "rationale": "Relevant to the ethical dimensions of resource conservation and the management of natural resources."
-    },
-    {
-      "vsiTitle": "Climate change",
-      "vsiAuthor": "Mark Maslin",
-      "rationale": "Relevant to the environmental consequences of fossil fuel extraction (coal, natural gas, oil) and resource conservation."
+      "rationale": "Resource conservation (A.2.a) and sustainable management practices (A.2) are essential counterweights to extractive industry pressures."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Relevant to the processing of plant products for roundwood, sawn wood, veneer, and other forest products."
+      "rationale": "Timber, pulp, roundwood, sawn wood, veneer, and plywood (C.8.a-b) are major plant-derived products of the extraction and processing industries."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
-      "rationale": "Relevant to the production of synthetic gemstones and industrial crystals and the manufacture of ceramics."
+      "rationale": "Synthetic gemstones and industrial crystals (C.4) are manufactured using crystallographic principles that govern structure and purity."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Covers the historical development of extraction industries including coal mining, iron production, and petroleum."
+      "rationale": "The Industrial Revolution transformed extraction industries (B), as coal mining and iron production scaled up to feed factory systems."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
-      "rationale": "Relevant to the processing of water to obtain salt, magnesium, oxygen, hydrogen, and other elements."
+      "rationale": "Processing water to obtain salt, magnesium, oxygen, hydrogen, and other dissolved elements (C.6) is both a chemical and an industrial challenge."
     },
     {
       "vsiTitle": "Biodiversity Conservation",
       "vsiAuthor": "David W. Macdonald",
-      "rationale": "Relevant to the conservation of biological resources and salvage operations for the world's natural resources."
+      "rationale": "Conservation of natural resources (A.2.a), particularly biological ones, constrains and guides how extraction industries operate."
+    },
+    {
+      "vsiTitle": "Environmental economics",
+      "vsiAuthor": "Stephen Smith",
+      "rationale": "Resource management (A.2) viewed through an economic lens—pricing externalities, pollution costs, and depletion—shapes extraction policy."
+    },
+    {
+      "vsiTitle": "Climate change",
+      "vsiAuthor": "Mark Maslin",
+      "rationale": "Fossil fuel extraction—petroleum and natural gas (B.2), coal (B.1.b)—drives climate change, making this directly relevant to A.2 (management of resources)."
+    },
+    {
+      "vsiTitle": "Energy Systems",
+      "vsiAuthor": "Nick Jenkins",
+      "rationale": "Petroleum and natural gas production (B.2) and coal utilization (C.2) are the energy raw materials that power modern economies."
     }
   ]
 }

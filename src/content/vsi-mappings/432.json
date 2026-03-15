@@ -4,97 +4,112 @@
     {
       "vsiTitle": "Perception",
       "vsiAuthor": "Brian J. Rogers",
-      "rationale": "Directly covers perception including Gestalt principles, perceptual organization, constancy, and the translation of sensory stimulation into organized experience (section C)."
+      "rationale": "Directly covers perception including motion perception, colour, visual system, and the translation of sensory stimulation into organized experience (C)."
     },
     {
       "vsiTitle": "The Eye",
       "vsiAuthor": "Michael F. Land",
-      "rationale": "Directly covers vision including the retina, transduction process, and perceptual processes of vision (section B.2)."
+      "rationale": "Covers vision including the retina, transduction, eye movements, colour vision, and cortical responses to visual stimuli (B.2)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
-      "rationale": "Covers the neural mechanisms underlying attention, sensation, perception, and the processing of sensory information from the environment."
+      "rationale": "Covers the cerebral cortex, sensory processing, and the neural mechanisms underlying attention, sensation, and perception (A.5, B.2.d)."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
       "vsiAuthor": "Richard Passingham",
-      "rationale": "Covers the neural basis of attention, sensory processing, perceptual organization, and responses of the cerebral cortex to stimuli."
+      "rationale": "Covers brain imaging, cognition, and neural basis of attention and perceptual processing (A.5, A.6)."
     },
     {
       "vsiTitle": "Consciousness",
       "vsiAuthor": "Susan Blackmore",
-      "rationale": "Directly relevant to awareness of internal and external events (section A) and the problem of defining attention and conscious experience."
-    },
-    {
-      "vsiTitle": "Psychology",
-      "vsiAuthor": "Gillian Butler, Freda McManus",
-      "rationale": "Provides the broad psychological framework for understanding sensation, perception, attention, and environmental influences on behaviour."
-    },
-    {
-      "vsiTitle": "Pain",
-      "vsiAuthor": "Rob Boddice",
-      "rationale": "Directly covers the sensory experience of pain including cause, function, external signs, qualities, theories, and modes of treatment (section B.4.d)."
-    },
-    {
-      "vsiTitle": "Smell",
-      "vsiAuthor": "Matthew Cobb",
-      "rationale": "Directly covers the olfactory sense including receptor form, location, nerve supply, olfactory qualities, and effects on behaviour (section B.8)."
-    },
-    {
-      "vsiTitle": "Synaesthesia",
-      "vsiAuthor": "Julia Simner",
-      "rationale": "A perceptual phenomenon directly relevant to interrelations among the senses (section E.3) and individual differences in perceptual functioning (section C.4)."
+      "rationale": "Directly relevant to awareness of internal and external events and the problem of defining attention (A)."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Covers the physics of sound relevant to audition, including mechanisms of transmission and the physical basis of pitch, loudness, and duration (section B.3)."
+      "rationale": "Covers acoustics, pitch, loudness, frequency, and the Doppler effect, directly relevant to audition mechanisms (B.3)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Covers the physics of light relevant to visual perception, the retinal image, and the transduction process (section B.2)."
+      "rationale": "Covers optics and wave-particle duality of light, the physical basis of the visual stimulus and transduction process (B.2.b)."
+    },
+    {
+      "vsiTitle": "Pain",
+      "vsiAuthor": "Rob Boddice",
+      "rationale": "Directly covers the sensory experience of pain including cause, function, qualities, theories, and modes of treatment (B.4.d)."
+    },
+    {
+      "vsiTitle": "Smell",
+      "vsiAuthor": "Matthew Cobb",
+      "rationale": "Covers olfactory receptors, olfactory processes, odour-inducing factors, and effects on behaviour (B.8)."
+    },
+    {
+      "vsiTitle": "Human Physiology",
+      "vsiAuthor": "Jamie A. Davies",
+      "rationale": "Covers physiological mechanisms of the senses in general, relevant to sensory reception and transduction (B.1)."
+    },
+    {
+      "vsiTitle": "Human Anatomy",
+      "vsiAuthor": "Leslie Klenerman",
+      "rationale": "Covers the central and peripheral nervous systems relevant to sensory pathways, vestibular systems, and kinesthesis (B.5, B.6)."
+    },
+    {
+      "vsiTitle": "Synaesthesia",
+      "vsiAuthor": "Julia Simner",
+      "rationale": "A perceptual phenomenon relevant to interrelations among the senses and individual differences in perceptual functioning (E.3, C.4)."
     },
     {
       "vsiTitle": "Memory",
       "vsiAuthor": "Jonathan K. Foster",
-      "rationale": "Relevant to context effects in perception, how previously experienced stimuli influence the observer (section C.3.b)."
+      "rationale": "Relevant to context effects in perception -- how previously experienced stimuli influence the observer (C.3.b)."
     },
     {
       "vsiTitle": "Thought",
       "vsiAuthor": "Tim Bayne",
-      "rationale": "Relevant to information processing theories of attention (section A.6) and the cognitive processes that interact with perception."
+      "rationale": "Covers perception and reasoning, relevant to information-theory analysis of attentive phenomena (A.6)."
     },
     {
-      "vsiTitle": "Dreaming",
-      "vsiAuthor": "J. Allan Hobson",
-      "rationale": "Relevant to hallucinatory experiences (section G.2) and altered perceptual states involving visual and sensory phenomena."
-    },
-    {
-      "vsiTitle": "Emotion",
-      "vsiAuthor": "Dylan Evans",
-      "rationale": "Emotions influence attention and perception; relevant to determinants of attention including temperament and unconscious influences (section A.4)."
+      "vsiTitle": "Psychology",
+      "vsiAuthor": "Gillian Butler, Freda McManus",
+      "rationale": "Provides the broad psychological framework for understanding sensation, perception, and attention, including Gestalt and behaviourist theories (C.1)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Covers wave physics underlying both audition (sound waves) and vision (light waves), the physical basis of sensory stimulation."
-    },
-    {
-      "vsiTitle": "Autism",
-      "vsiAuthor": "Uta Frith",
-      "rationale": "Relevant to differences in perceptual functioning among individuals (section C.4) and atypical sensory processing."
-    },
-    {
-      "vsiTitle": "Madness",
-      "vsiAuthor": "Andrew T. Scull",
-      "rationale": "Relevant to hallucinations (section G.2) including neurological factors and types of hallucinatory experience."
+      "rationale": "Covers wave physics underlying both audition (sound waves) and vision (electromagnetic radiation), the physical basis of sensory stimulation."
     },
     {
       "vsiTitle": "The Psychology of Music",
       "vsiAuthor": "Elizabeth Hellmuth Margulis",
-      "rationale": "Covers auditory perception and processing of complex sounds, relevant to audition mechanisms and perceptual organization of sound (sections B.3, C)."
+      "rationale": "Covers auditory perception and processing of complex sounds, relevant to audition mechanisms and perceptual organization of sound (B.3, C)."
+    },
+    {
+      "vsiTitle": "Dreaming",
+      "vsiAuthor": "J. Allan Hobson",
+      "rationale": "Covers hallucinations and altered perceptual states with neurological factors (G.2)."
+    },
+    {
+      "vsiTitle": "Autism",
+      "vsiAuthor": "Uta Frith",
+      "rationale": "Relevant to differences in perceptual functioning among individuals and atypical attention and sensory processing (C.4, A.4)."
+    },
+    {
+      "vsiTitle": "Madness",
+      "vsiAuthor": "Andrew T. Scull",
+      "rationale": "Covers hallucinations including neurological factors and types of hallucinatory experience (G.2)."
+    },
+    {
+      "vsiTitle": "Emotion",
+      "vsiAuthor": "Dylan Evans",
+      "rationale": "Emotions influence attention and perception; relevant to determinants of attention including temperament and unconscious influences (A.4)."
+    },
+    {
+      "vsiTitle": "Drugs",
+      "vsiAuthor": "Leslie Iversen",
+      "rationale": "Drugs are relevant to factors affecting perception and are linked to hallucinatory experiences (G.2) and altered perceptual states."
     }
   ]
 }

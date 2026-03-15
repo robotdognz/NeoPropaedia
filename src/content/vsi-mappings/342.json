@@ -4,72 +4,72 @@
     {
       "vsiTitle": "Animal Behaviour",
       "vsiAuthor": "Tristram D. Wyatt",
-      "rationale": "Directly covers individual behavioural activities (food getting, locomotion, aggression), social behaviour, and animal communication."
-    },
-    {
-      "vsiTitle": "Psychology",
-      "vsiAuthor": "Gillian Butler, Freda McManus",
-      "rationale": "Covers associative learning, classical and operant conditioning, and complex problem solving as higher behavioural capacities."
-    },
-    {
-      "vsiTitle": "The Brain",
-      "vsiAuthor": "Michael O'Shea",
-      "rationale": "Addresses the neural basis of learning, memory, reasoning, and the brain structures underlying complex behavioural capacities."
-    },
-    {
-      "vsiTitle": "Cognitive Neuroscience",
-      "vsiAuthor": "Richard Passingham",
-      "rationale": "Covers the neural mechanisms of learning, perception, spatial cognition, and complex problem solving in animals."
-    },
-    {
-      "vsiTitle": "Child Psychology",
-      "vsiAuthor": "Usha Goswami",
-      "rationale": "Addresses developmental aspects of learning including imprinting, language learning, and the development of reasoning capacities."
-    },
-    {
-      "vsiTitle": "Social Psychology",
-      "vsiAuthor": "Richard J. Crisp",
-      "rationale": "Covers group behaviour dynamics, social communication, and the range of social behaviour among social animals."
+      "rationale": "Core text covering individual activities (food getting, aggression, reproduction), kin selection, alarm calls, parental care, and social behaviour (A, C)."
     },
     {
       "vsiTitle": "Learning",
       "vsiAuthor": "Mark Haselgrove",
-      "rationale": "Directly covers habituation, sensitization, associative learning, classical conditioning, operant conditioning, and observational learning."
-    },
-    {
-      "vsiTitle": "Thinking and Reasoning",
-      "vsiAuthor": "Jonathan Evans",
-      "rationale": "Addresses complex problem solving, insight, reasoning, and discriminations of relational and abstract stimuli."
-    },
-    {
-      "vsiTitle": "Memory",
-      "vsiAuthor": "Jonathan K. Foster",
-      "rationale": "Covers spatial learning, maze learning, and the neural basis of memory formation underlying behavioural capacities."
-    },
-    {
-      "vsiTitle": "Intelligence",
-      "vsiAuthor": "Ian J. Deary",
-      "rationale": "Addresses complex problem solving, generalized rule learning, and the cognitive capacities underlying higher behavioural functions."
-    },
-    {
-      "vsiTitle": "Perception",
-      "vsiAuthor": "Brian J. Rogers",
-      "rationale": "Covers perceptual learning and observational learning, relevant to how animals develop and expand their behavioural repertoire."
-    },
-    {
-      "vsiTitle": "Insects",
-      "vsiAuthor": "Simon Leather",
-      "rationale": "Covers insect social behaviour, communication systems, and the dynamics of social behaviour in insect colonies."
-    },
-    {
-      "vsiTitle": "Mammals",
-      "vsiAuthor": "T. S. Kemp",
-      "rationale": "Illustrates the full range of mammalian behavioural capacities from basic food getting to complex social structures."
+      "rationale": "Directly covers habituation, sensitization, classical and operant conditioning, and observational learning in animals (B.1, B.2, B.4)."
     },
     {
       "vsiTitle": "Ivan Pavlov",
       "vsiAuthor": "Daniel P. Todes",
-      "rationale": "Directly relevant to classical conditioning, a foundational form of associative learning in the study of animal behaviour."
+      "rationale": "Directly relevant to classical conditioning, a foundational form of associative learning central to this section (B.2)."
+    },
+    {
+      "vsiTitle": "Thinking and Reasoning",
+      "vsiAuthor": "Jonathan Evans",
+      "rationale": "Examines problem solving, reasoning, and insight as cognitive capacities observable in higher animals (B.5)."
+    },
+    {
+      "vsiTitle": "Sexual Selection",
+      "vsiAuthor": "Marlene Zuk, Leigh W Simmons",
+      "rationale": "Explores Darwin's theory of mate choice, sexual dimorphism, and reproductive behaviour including intrasexual competition and intersexual selection (A.6)."
+    },
+    {
+      "vsiTitle": "Mammals",
+      "vsiAuthor": "T. S. Kemp",
+      "rationale": "Illustrates mammalian behavioural capacities from basic locomotion and foraging to complex social structures and brain-driven learning (A, B)."
+    },
+    {
+      "vsiTitle": "Insects",
+      "vsiAuthor": "Simon Leather",
+      "rationale": "Examines insect social behaviour, colony dynamics, and pheromone-based communication in eusocial species such as ants, bees, and termites (C.1, C.2, C.4)."
+    },
+    {
+      "vsiTitle": "The Brain",
+      "vsiAuthor": "Michael O'Shea",
+      "rationale": "Reveals the neural substrates of learning, spatial cognition, and memory that underlie higher behavioural capacities (B.3, B.5)."
+    },
+    {
+      "vsiTitle": "Memory",
+      "vsiAuthor": "Jonathan K. Foster",
+      "rationale": "Investigates memory formation and spatial memory, directly relevant to maze learning, place cells, and animal navigation (B.3)."
+    },
+    {
+      "vsiTitle": "Perception",
+      "vsiAuthor": "Brian J. Rogers",
+      "rationale": "Analyzes perceptual processing including motion perception and pattern recognition relevant to perceptual and observational learning (B.4)."
+    },
+    {
+      "vsiTitle": "Intelligence",
+      "vsiAuthor": "Ian J. Deary",
+      "rationale": "Explores cognitive abilities, working memory, and problem-solving capacities relevant to complex reasoning in higher animals (B.5)."
+    },
+    {
+      "vsiTitle": "Food",
+      "vsiAuthor": "John Krebs",
+      "rationale": "Addresses foraging behaviour, optimal diet theory, and food-getting strategies directly relevant to basic food-getting activities (A.1)."
+    },
+    {
+      "vsiTitle": "Navigation",
+      "vsiAuthor": "Jim Bennett",
+      "rationale": "Introduces principles of navigation -- landmarks, dead reckoning, celestial cues -- relevant to spatial learning and animal navigation abilities (B.3)."
+    },
+    {
+      "vsiTitle": "Social Psychology",
+      "vsiAuthor": "Richard J. Crisp",
+      "rationale": "Addresses aggression, group dynamics, obedience, and social interaction relevant to the dynamics of social behaviour (A.4, C.3, C.4)."
     }
   ]
 }

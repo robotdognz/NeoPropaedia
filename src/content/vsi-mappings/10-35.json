@@ -4,32 +4,32 @@
     {
       "vsiTitle": "The History of Medicine",
       "vsiAuthor": "William Bynum",
-      "rationale": "Directly covers the entire history of medicine from ancient through modern times, which is the central topic of section A."
+      "rationale": "Directly covers the entire history of medicine from ancient through modern times, the central topic of section A."
     },
     {
       "vsiTitle": "Epidemiology",
       "vsiAuthor": "Rodolfo Saracci",
-      "rationale": "Epidemiology is a core medical discipline related to public health (B.2.d), bacteriology (A.2.c), and the study of disease transmission (A.2.e)."
+      "rationale": "Epidemiology is a core medical discipline related to public health (B.2.d) and the study of disease transmission (A.2.e)."
     },
     {
       "vsiTitle": "Pandemics",
       "vsiAuthor": "Christian W. McMillen",
-      "rationale": "Pandemics relate to the history of infectious disease, bacteriology (A.2.c), immunology (A.3.b), and tropical medicine (A.3.d.iii)."
+      "rationale": "Pandemics relate to bacteriology (A.2.c), immunology (A.3.b), and tropical medicine (A.3.d.iii)."
     },
     {
       "vsiTitle": "Plague",
       "vsiAuthor": "Paul Slack",
-      "rationale": "Plague is a historically significant disease illustrating the evolution of medicine from ancient practices through the establishment of bacteriology."
+      "rationale": "Plague illustrates the evolution of medicine from ancient practices through the establishment of bacteriology."
     },
     {
       "vsiTitle": "Infectious Disease",
       "vsiAuthor": "Benjamin Bolker and Marta Wayne",
-      "rationale": "Sections A.2.c (bacteriology), A.3.a (antibiotics), and A.3.b (immunology) all address the medical response to infectious disease."
+      "rationale": "Sections A.2.c (bacteriology), A.3.a (antibiotics), and A.3.b (immunology) address the medical response to infectious disease."
     },
     {
       "vsiTitle": "HIV/AIDS",
       "vsiAuthor": "Alan Whiteside",
-      "rationale": "HIV/AIDS represents a major 20th-century medical challenge, relevant to immunology (A.3.b) and tropical medicine (A.3.d.iii)."
+      "rationale": "HIV/AIDS is a major 20th-century medical challenge, relevant to immunology (A.3.b) and tropical medicine (A.3.d.iii)."
     },
     {
       "vsiTitle": "Viruses",
@@ -39,7 +39,7 @@
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
-      "rationale": "Section A.2.c covers the establishment of bacteriology, verification of germ theory, and identification of disease-producing organisms."
+      "rationale": "Section A.2.c covers the establishment of bacteriology, germ theory verification, and disease-producing organisms."
     },
     {
       "vsiTitle": "The Immune System",
@@ -49,52 +49,22 @@
     {
       "vsiTitle": "Cancer",
       "vsiAuthor": "Nick James",
-      "rationale": "Section A.3.d.ii specifically covers cancer research and the treatment of abnormal cell growths through various therapies."
+      "rationale": "Section A.3.d.ii specifically covers cancer research and treatment of abnormal cell growths."
     },
     {
       "vsiTitle": "Drugs",
       "vsiAuthor": "Leslie Iversen",
-      "rationale": "Section A.3.a covers chemotherapy including antibiotics and synthetic drugs, and B.3 covers pharmacology and experimental therapeutics."
+      "rationale": "Section A.3.a covers chemotherapy including antibiotics and synthetic drugs, and B.3 covers pharmacology."
     },
     {
       "vsiTitle": "Anaesthesia",
       "vsiAuthor": "Aidan O'Donnell",
-      "rationale": "Section A.2.d specifically covers the discovery and use of anesthesia, and A.4.e covers inhalation anesthetic procedures."
-    },
-    {
-      "vsiTitle": "Psychiatry",
-      "vsiAuthor": "Tom Burns",
-      "rationale": "Section B.1.g lists psychiatry as a hospital residency specialty, a core field of specialized medical practice."
-    },
-    {
-      "vsiTitle": "Medical ethics",
-      "vsiAuthor": "Tony Hope",
-      "rationale": "Medical ethics relates to the charter of medical conduct (A.1.d.ii, Hippocratic tradition) and the ethical dimensions of medical practice."
-    },
-    {
-      "vsiTitle": "Medical law",
-      "vsiAuthor": "Charles Foster",
-      "rationale": "Section B.2.b covers medical jurisprudence as a clinical specialty, connecting law and medical practice."
-    },
-    {
-      "vsiTitle": "Public health",
-      "vsiAuthor": "Virginia Berridge",
-      "rationale": "Section B.2.d lists public health as a clinical specialty, covering population-level health interventions."
-    },
-    {
-      "vsiTitle": "Nutrition",
-      "vsiAuthor": "David Bender",
-      "rationale": "Section A.3.d.i covers nutrition and the treatment of deficiency diseases through vitamins, and B.3 lists nutrition as a nonclinical specialty."
-    },
-    {
-      "vsiTitle": "Hormones",
-      "vsiAuthor": "Martin Luck",
-      "rationale": "Section A.3.c covers developments in endocrinology including insulin, cortisone, and sex hormones, and B.2.e lists endocrinology as a specialty."
+      "rationale": "Section A.2.d covers the discovery and use of anesthesia, and A.4.e covers inhalation anesthetic procedures."
     },
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
-      "rationale": "Anatomical discoveries are discussed throughout the history of medicine from ancient times (A.1.d.i, A.1.f.i, A.1.g.i) through Renaissance dissection."
+      "rationale": "Anatomical discoveries are discussed throughout the history from ancient times (A.1.b-c) through Renaissance dissection (A.1.f.i)."
     },
     {
       "vsiTitle": "Human Physiology",
@@ -102,14 +72,89 @@
       "rationale": "Section A.2.b covers advances in physiology, and B.3 lists medical physiology as a nonclinical specialty."
     },
     {
+      "vsiTitle": "Hormones",
+      "vsiAuthor": "Martin Luck",
+      "rationale": "Section A.3.c covers endocrinology including insulin, cortisone, and sex hormones, and B.2.e lists endocrinology."
+    },
+    {
+      "vsiTitle": "Nutrition",
+      "vsiAuthor": "David Bender",
+      "rationale": "Section A.3.d.i covers nutrition and treatment of deficiency diseases through vitamins, and B.3 lists nutrition."
+    },
+    {
+      "vsiTitle": "Public health",
+      "vsiAuthor": "Virginia Berridge",
+      "rationale": "Section B.2.d lists public health as a clinical specialty."
+    },
+    {
+      "vsiTitle": "Psychiatry",
+      "vsiAuthor": "Tom Burns",
+      "rationale": "Section B.1.g lists psychiatry as a hospital residency specialty."
+    },
+    {
+      "vsiTitle": "Clinical Psychology",
+      "vsiAuthor": "Susan Llewellyn, Katie Aafjes-van Doorn",
+      "rationale": "Clinical psychology connects to psychiatry (B.1.g) and the assessment and treatment of mental disorders."
+    },
+    {
+      "vsiTitle": "Psychotherapy",
+      "vsiAuthor": "Tom Burns (Author), Eva Burns-Lundgren (Editor)",
+      "rationale": "Psychotherapy connects to psychiatry (B.1.g) as a therapeutic approach within medical practice."
+    },
+    {
+      "vsiTitle": "Cognitive Behavioural Therapy",
+      "vsiAuthor": "Freda McManus",
+      "rationale": "CBT is a leading therapeutic modality used in psychiatry (B.1.g)."
+    },
+    {
+      "vsiTitle": "Schizophrenia",
+      "vsiAuthor": "Chris Frith, Eve C. Johnstone",
+      "rationale": "Schizophrenia is a major psychiatric condition relevant to psychiatry (B.1.g)."
+    },
+    {
+      "vsiTitle": "Depression",
+      "vsiAuthor": "Mary Jane Tacchi, Jan Scott",
+      "rationale": "Depression relates to psychiatry (B.1.g) as a major area of medical practice."
+    },
+    {
+      "vsiTitle": "Anxiety",
+      "vsiAuthor": "Daniel Freeman, Jason Freeman",
+      "rationale": "Anxiety disorders are a major concern of psychiatry (B.1.g)."
+    },
+    {
+      "vsiTitle": "Autism",
+      "vsiAuthor": "Uta Frith",
+      "rationale": "Autism relates to neurology (B.1.f) and psychiatry (B.1.g) as neurodevelopmental conditions."
+    },
+    {
+      "vsiTitle": "Addiction",
+      "vsiAuthor": "Keith Humphreys",
+      "rationale": "Addiction medicine relates to psychiatry (B.1.g) and pharmacology (B.3)."
+    },
+    {
+      "vsiTitle": "Psychopathy",
+      "vsiAuthor": "Essi Viding",
+      "rationale": "Psychopathy relates to psychiatry (B.1.g) as a clinical condition."
+    },
+    {
+      "vsiTitle": "Dementia",
+      "vsiAuthor": "Kathleen Taylor",
+      "rationale": "Dementia relates to neurology (B.1.f) and psychiatry (B.1.g)."
+    },
+    {
+      "vsiTitle": "Dyslexia",
+      "vsiAuthor": "Margaret J. Snowling",
+      "rationale": "Dyslexia relates to neurology (B.1.f) and understanding of neurodevelopmental conditions."
+    },
+    {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
-      "rationale": "Neurology (B.1.f) is listed as a hospital residency specialty, and the brain is central to neuroscience in medical practice."
+      "rationale": "Neurology (B.1.f) is a hospital residency specialty, and the brain is central to neuroscience in medicine."
     },
     {
       "vsiTitle": "Sleep",
       "vsiAuthor": "Steven W. Lockley, Russell G. Foster",
-      "rationale": "Sleep medicine relates to neurology (B.1.f) and psychiatry (B.1.g) as specialized medical practice areas."
+      "rationale": "Sleep medicine relates to neurology (B.1.f) and psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Pain",
@@ -122,39 +167,14 @@
       "rationale": "Section B.3 lists gerontology as a nonclinical specialty and basic medical science."
     },
     {
-      "vsiTitle": "Dementia",
-      "vsiAuthor": "Kathleen Taylor",
-      "rationale": "Dementia relates to neurology (B.1.f) and psychiatry (B.1.g) as specialized areas of medical practice."
+      "vsiTitle": "The Cell",
+      "vsiAuthor": "Terence Allen, Graham Cowling",
+      "rationale": "Section A.2.a mentions the cell and cellular pathology as foundational 19th-century medical concepts."
     },
     {
-      "vsiTitle": "Depression",
-      "vsiAuthor": "Mary Jane Tacchi, Jan Scott",
-      "rationale": "Depression relates to psychiatry (B.1.g) as a hospital residency specialty and major area of medical practice."
-    },
-    {
-      "vsiTitle": "Schizophrenia",
-      "vsiAuthor": "Chris Frith, Eve C. Johnstone",
-      "rationale": "Schizophrenia is a major psychiatric condition relevant to psychiatry (B.1.g) as a hospital specialization."
-    },
-    {
-      "vsiTitle": "Autism",
-      "vsiAuthor": "Uta Frith",
-      "rationale": "Autism relates to neurology (B.1.f), psychiatry (B.1.g), and the study of neurodevelopmental conditions in medicine."
-    },
-    {
-      "vsiTitle": "Addiction",
-      "vsiAuthor": "Keith Humphreys",
-      "rationale": "Addiction medicine relates to psychiatry (B.1.g) and pharmacology (B.3) as areas of medical practice."
-    },
-    {
-      "vsiTitle": "Psychotherapy",
-      "vsiAuthor": "Tom Burns (Author), Eva Burns-Lundgren (Editor)",
-      "rationale": "Psychotherapy is connected to psychiatry (B.1.g) as a therapeutic approach within medical practice."
-    },
-    {
-      "vsiTitle": "Cognitive Behavioural Therapy",
-      "vsiAuthor": "Freda McManus",
-      "rationale": "CBT is a leading therapeutic modality used in psychiatry (B.1.g) and related medical disciplines."
+      "vsiTitle": "Blood",
+      "vsiAuthor": "Christopher Cooper",
+      "rationale": "Section A.4.d covers blood transfusions and intravenous techniques in 20th-century surgery."
     },
     {
       "vsiTitle": "Teeth",
@@ -162,14 +182,14 @@
       "rationale": "Section C.1 covers the history and practice of dentistry as a discipline affiliated with medicine."
     },
     {
-      "vsiTitle": "Microscopy",
-      "vsiAuthor": "Terence Allen",
-      "rationale": "Section A.1.g.i highlights the importance of the microscope to medical studies, including the discovery of blood circulation."
+      "vsiTitle": "Medical ethics",
+      "vsiAuthor": "Tony Hope",
+      "rationale": "Medical ethics relates to the Hippocratic charter of medical conduct (A.1.d.ii) and ethical dimensions of practice."
     },
     {
-      "vsiTitle": "The Cell",
-      "vsiAuthor": "Terence Allen, Graham Cowling",
-      "rationale": "Section A.2.a mentions the cell and cellular pathology as foundational 19th-century medical concepts."
+      "vsiTitle": "Medical law",
+      "vsiAuthor": "Charles Foster",
+      "rationale": "Section B.2.b covers medical jurisprudence as a clinical specialty."
     },
     {
       "vsiTitle": "Forensic science",
@@ -179,32 +199,27 @@
     {
       "vsiTitle": "Veterinary Science",
       "vsiAuthor": "James Yeates",
-      "rationale": "Veterinary science is a discipline closely affiliated with medicine, sharing many of the same foundational sciences and methods."
+      "rationale": "Veterinary science is closely affiliated with medicine, sharing foundational sciences and methods."
+    },
+    {
+      "vsiTitle": "Microscopy",
+      "vsiAuthor": "Terence Allen",
+      "rationale": "Section A.1.g.i highlights the importance of the microscope to medical studies."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Section A.2.e mentions the discovery of X-rays, and B.1.a lists radiology as a hospital specialty using radioactive methods."
+      "rationale": "Section A.2.e mentions X-ray discovery, and B.1.a lists radiology as a hospital specialty."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
-      "rationale": "Circadian rhythms are relevant to medical physiology (B.3) and the understanding of sleep, hormones, and metabolic disorders."
+      "rationale": "Circadian rhythms are relevant to medical physiology (B.3) and understanding of sleep, hormones, and metabolism."
     },
     {
-      "vsiTitle": "Dyslexia",
-      "vsiAuthor": "Margaret J. Snowling",
-      "rationale": "Dyslexia relates to neurology (B.1.f) and the medical understanding of neurodevelopmental conditions."
-    },
-    {
-      "vsiTitle": "Anxiety",
-      "vsiAuthor": "Daniel Freeman, Jason Freeman",
-      "rationale": "Anxiety disorders are a major concern of psychiatry (B.1.g) as a hospital residency specialty."
-    },
-    {
-      "vsiTitle": "Psychopathy",
-      "vsiAuthor": "Essi Viding",
-      "rationale": "Psychopathy relates to psychiatry (B.1.g) as a clinical condition studied within medical practice."
+      "vsiTitle": "Molecules",
+      "vsiAuthor": "Philip Ball",
+      "rationale": "Molecular understanding underpins pharmacology (B.3) and chemotherapy (A.3.a) at the molecular level."
     }
   ]
 }

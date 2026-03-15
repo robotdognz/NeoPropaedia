@@ -4,77 +4,77 @@
     {
       "vsiTitle": "Work",
       "vsiAuthor": "Stephen Fineman",
-      "rationale": "Directly addresses the organization of human work, its social dimensions, and the effects of rationalization on workers."
+      "rationale": "Directly addresses A (the organization of work), its social dimensions, and C.1 (effects of rationalization on workers)."
     },
     {
       "vsiTitle": "Management",
       "vsiAuthor": "John Hendry",
-      "rationale": "Covers the application of scientific methods to managerial functions and the organization of production."
+      "rationale": "Examines B (application of scientific methods to managerial functions) including Frederick Taylor's scientific management and modern operations research."
     },
     {
       "vsiTitle": "Organizations",
       "vsiAuthor": "Mary Jo Hatch",
-      "rationale": "Addresses how organizations structure and manage work, including systems engineering and organizational design."
+      "rationale": "Addresses B.2 (systems engineering) and B.3 (systems-design techniques) including organizational design and information technology infrastructure."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Relevant to systems engineering and the utilization of scientific and technological knowledge in planning and designing complex systems."
+      "rationale": "Treats B.2 (systems engineering) and the utilization of scientific and technological knowledge in designing complex production systems."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Covers the transformation from craft-based to mass production and the use of machines as replacements for labour."
+      "rationale": "Traces the transformation from cottage industry to factory production, encompassing A.4 (16th-18th century production changes), A.5 (mass production), and A.6 (mechanization of labour)."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
-      "rationale": "Directly relevant to the section's coverage of the relation between man and machine and automation in industrial production."
+      "rationale": "Directly relevant to A.6 (machines as replacements for labour) and C (relation between man and machine in industrial production)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
-      "rationale": "Relevant to automation and the changing relationship between humans and machines in production."
+      "rationale": "Addresses how intelligent systems automate decision-making and production tasks, relevant to A.6 (machines as replacements for labour)."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
-      "rationale": "Covers research and development processes relevant to systems engineering and operations research."
-    },
-    {
-      "vsiTitle": "Marx",
-      "vsiAuthor": "Peter Singer",
-      "rationale": "Marx's theories on labor organization, division of labour, and the effects of industrialization on workers are directly relevant to this section."
+      "rationale": "Explores systematic approaches to improving production processes, relevant to B.1 (operations research) and continuous improvement methodologies."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
-      "rationale": "Covers the economic systems that shaped changes in production techniques and mass production."
+      "rationale": "Situates changes in production techniques (A.4) and mass production (A.5) within the broader capitalist economic framework and its logic of accumulation."
     },
     {
       "vsiTitle": "Game theory",
       "vsiAuthor": "Ken Binmore",
-      "rationale": "Relevant to the section's coverage of optimization theory and game theory as tools for systems-design techniques."
+      "rationale": "Directly listed in B.3.b as a tool for systems-design: optimization theory and game theory."
     },
     {
       "vsiTitle": "Human Resource Management",
       "vsiAuthor": "Adrian Wilkinson",
-      "rationale": "Directly addresses the management of human labor within organizations, including psychological and social aspects of work."
+      "rationale": "Addresses A (organization of work) and C.1 (psychological and social dimensions of mass production and automation on workers)."
     },
     {
       "vsiTitle": "Leadership",
       "vsiAuthor": "Keith Grint",
-      "rationale": "Relevant to managerial functions and the organization of human work within production systems."
+      "rationale": "Explores decision-making and organizational direction-setting, relevant to B (application of scientific methods to managerial functions)."
     },
     {
-      "vsiTitle": "Entrepreneurship",
-      "vsiAuthor": "Paul Westhead, Mike Wright",
-      "rationale": "Covers the organization of production ventures and the application of management methods to new enterprises."
+      "vsiTitle": "The History of Computing",
+      "vsiAuthor": "Doron Swade",
+      "rationale": "Traces the computing technology that underpins operations research and systems-design tools, relevant to B.3."
     },
     {
-      "vsiTitle": "Sociology",
-      "vsiAuthor": "Steve Bruce",
-      "rationale": "Relevant to the psychological and social aspects of mass production and the effects of rationalization of work on mankind."
+      "vsiTitle": "Prehistory",
+      "vsiAuthor": "Chris Gosden",
+      "rationale": "Illuminates A.1 (organization of work in the prehistoric world) including early division of labour and craft specialization."
+    },
+    {
+      "vsiTitle": "Ancient Greece",
+      "vsiAuthor": "Paul Cartledge",
+      "rationale": "Illustrates A.2 (organization of work in the ancient world), from slave labour and artisan workshops to large-scale construction projects like the Parthenon."
     }
   ]
 }

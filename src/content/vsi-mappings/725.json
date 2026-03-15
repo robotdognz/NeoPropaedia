@@ -4,62 +4,62 @@
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Directly covers materials processing, property modification, and the science of industrial materials central to this section."
+      "rationale": "A core text on materials processing (A), property modification (A.5), and the science of ceramics, metals, and industrial materials."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Covers the engineering principles behind production processes including forming, joining, and material removal."
+      "rationale": "Engineering principles underpin the forming (A.2), material removal (A.3), and joining (A.4) processes discussed in this section."
     },
     {
       "vsiTitle": "Structural engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Relevant to metallurgy, welding processes, and the structural testing of metals and materials."
+      "rationale": "Structural applications like bridges, storage tanks, and ships illustrate welding, brazing, and soldering (B.4)."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Covers the chemical processing methods (leaching, smelting, polymerization) used in preliminary processing of raw materials."
+      "rationale": "Chemical processing -- leaching, smelting, polymerization -- is foundational to A.1.b and hydrometallurgy (B.2.c)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Relevant to heat treatment processes, pyrometallurgy, and the thermodynamic principles underlying materials processing."
+      "rationale": "Thermodynamic principles govern heat treatment (A.5.a: annealing, stress relieving, hardening) and pyrometallurgy (B.2.a)."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Relevant to extractive metallurgy and the separation of metallic elements from mineral form."
-    },
-    {
-      "vsiTitle": "Molecules",
-      "vsiAuthor": "Philip Ball",
-      "rationale": "Relevant to chemical processing including polymerization and the adhesive bonding of materials."
+      "rationale": "Extractive metallurgy (B.2) and the separation of metallic elements from mineral form are central themes."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
-      "rationale": "Relevant to metallography and the study of crystalline structures in metals during physical metallurgy."
-    },
-    {
-      "vsiTitle": "Robotics",
-      "vsiAuthor": "Alan Winfield",
-      "rationale": "Relevant to automated materials handling systems and the mechanization of production processes."
-    },
-    {
-      "vsiTitle": "Nanotechnology",
-      "vsiAuthor": "Philip Moriarty",
-      "rationale": "Relevant to advanced surface finishing processes and property modification techniques at the nanoscale."
-    },
-    {
-      "vsiTitle": "The Industrial Revolution",
-      "vsiAuthor": "Robert C. Allen",
-      "rationale": "Covers the historical development of metallurgy, iron and steel production, and industrial processing techniques."
+      "rationale": "Crystalline structures in metals during physical metallurgy connect to metallography (B.3.g)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "rationale": "Relevant to mineral processing including crushing and grinding of ores and concentration of metallic minerals."
+      "rationale": "Mineral processing -- crushing and grinding of ores, concentration of metallic minerals -- is central to B.1."
+    },
+    {
+      "vsiTitle": "The Industrial Revolution",
+      "vsiAuthor": "Robert C. Allen",
+      "rationale": "The historical development of metallurgy (B), including iron and steel production techniques, shaped modern materials processing."
+    },
+    {
+      "vsiTitle": "Nanotechnology",
+      "vsiAuthor": "Philip Moriarty",
+      "rationale": "Nanoscale dimensions open new possibilities for finishing processes (A.6) and property modification (A.5)."
+    },
+    {
+      "vsiTitle": "Condensed Matter Physics",
+      "vsiAuthor": "Ross McKenzie",
+      "rationale": "Phase transitions and solid-state physics underlie the heat treatment processes in property modification (A.5)."
+    },
+    {
+      "vsiTitle": "Radioactivity",
+      "vsiAuthor": "Claudio Tuniz",
+      "rationale": "Radiation exposure for processing (A.5.b.iii) and nuclear engineering metallurgy for uranium (B.3.e) depend on understanding radioactive phenomena."
     }
   ]
 }

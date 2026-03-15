@@ -4,132 +4,152 @@
     {
       "vsiTitle": "Demography",
       "vsiAuthor": "Sarah Harper",
-      "rationale": "Directly covers population composition, fertility, mortality, migration, and population theories."
-    },
-    {
-      "vsiTitle": "City Planning",
-      "vsiAuthor": "Carl Abbott",
-      "rationale": "Directly covers urban planning methods, materials, and social aspects of urban redevelopment (subsection B.3)."
-    },
-    {
-      "vsiTitle": "Suburbs",
-      "vsiAuthor": "Carl Abbott",
-      "rationale": "Directly covers suburbanization and the growth of residential communities surrounding cities (subsection B.4.b)."
-    },
-    {
-      "vsiTitle": "Geography",
-      "vsiAuthor": "John A. Matthews, David T. Herbert",
-      "rationale": "Covers spatial distribution of populations and the relationship between urban and rural communities."
-    },
-    {
-      "vsiTitle": "International Migration",
-      "vsiAuthor": "Khalid Koser",
-      "rationale": "Directly covers migration as a determinant of population composition and change (subsection A.1.c)."
-    },
-    {
-      "vsiTitle": "Refugees",
-      "vsiAuthor": "Gil Loescher",
-      "rationale": "Covers refugee movements as a form of migration affecting population composition (subsection A.1.c)."
-    },
-    {
-      "vsiTitle": "Climate change",
-      "vsiAuthor": "Mark Maslin",
-      "rationale": "Covers environmental change including pollution and climatic change as problems of urban growth (subsection B.4.f)."
-    },
-    {
-      "vsiTitle": "Environmental economics",
-      "vsiAuthor": "Stephen Smith",
-      "rationale": "Covers the economic relationship between population growth, resource conservation, and environmental problems (subsections A.3.g and B.4.f)."
-    },
-    {
-      "vsiTitle": "Environmental ethics",
-      "vsiAuthor": "Robin Attfield",
-      "rationale": "Covers ethical dimensions of population growth and environmental change in urban contexts."
-    },
-    {
-      "vsiTitle": "Environmental Politics",
-      "vsiAuthor": "Andrew Dobson",
-      "rationale": "Covers political responses to problems of urban growth, pollution, and population control (subsection B.4.e)."
-    },
-    {
-      "vsiTitle": "Sustainability",
-      "vsiAuthor": "Saleem H. Ali",
-      "rationale": "Covers sustainable development in relation to population growth and urban environmental challenges."
+      "rationale": "Directly addresses population composition, fertility, mortality, migration, demographic transition, and life expectancy (outline A)."
     },
     {
       "vsiTitle": "Malthus",
       "vsiAuthor": "Donald Winch",
-      "rationale": "Directly covers Malthusian population theory (subsection A.3.d)."
+      "rationale": "Directly addresses Malthusian population theory and its influence on subsequent demographic thought (outline A.3.d)."
     },
     {
-      "vsiTitle": "Epidemiology",
-      "vsiAuthor": "Rodolfo Saracci",
-      "rationale": "Covers mortality rates and public health dimensions of population studies (subsection A.1.b)."
+      "vsiTitle": "Eugenics",
+      "vsiAuthor": "Philippa Levine",
+      "rationale": "Governmental policies and theories influencing population composition -- including heredity and population control -- are central to outline A.4."
     },
     {
-      "vsiTitle": "Public health",
-      "vsiAuthor": "Virginia Berridge",
-      "rationale": "Covers public health infrastructure affecting mortality and longevity in urban populations."
+      "vsiTitle": "International Migration",
+      "vsiAuthor": "Khalid Koser",
+      "rationale": "Migration as a determinant of population composition and change is relevant to outline A.1.c."
     },
     {
-      "vsiTitle": "Pandemics",
-      "vsiAuthor": "Christian W. McMillen",
-      "rationale": "Covers pandemics as events affecting mortality rates and population change."
-    },
-    {
-      "vsiTitle": "Globalization",
-      "vsiAuthor": "Manfred Steger",
-      "rationale": "Covers how global economic forces drive urbanization, migration, and megalopolis formation."
-    },
-    {
-      "vsiTitle": "Architecture",
-      "vsiAuthor": "Andrew Ballantyne",
-      "rationale": "Covers the built environment of cities, relevant to methods and materials of urban planning (subsection B.3.a)."
-    },
-    {
-      "vsiTitle": "Modern architecture",
-      "vsiAuthor": "Adam Sharr",
-      "rationale": "Covers modern architectural approaches to urban design and city planning."
-    },
-    {
-      "vsiTitle": "Landscape architecture",
-      "vsiAuthor": "Ian Thompson",
-      "rationale": "Covers landscape design within urban planning and the relationship between cities and their environments."
-    },
-    {
-      "vsiTitle": "Ecology",
-      "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Covers ecological theories relevant to the relationship between population growth and natural resource conservation (subsection A.3.g)."
-    },
-    {
-      "vsiTitle": "Anthropocene",
-      "vsiAuthor": "Erle C. Ellis",
-      "rationale": "Covers the impact of urbanization and population growth on the environment, relevant to problems of environmental change."
-    },
-    {
-      "vsiTitle": "The Ghetto",
-      "vsiAuthor": "Bryan Cheyette",
-      "rationale": "Covers the social dimensions of urban segregation, relevant to social aspects of urban planning (subsection B.3.b)."
-    },
-    {
-      "vsiTitle": "Geopolitics",
-      "vsiAuthor": "Klaus Dodds",
-      "rationale": "Covers regional integration and the relationship between population, territory, and political organization."
+      "vsiTitle": "Refugees",
+      "vsiAuthor": "Gil Loescher",
+      "rationale": "Refugee movements as a form of forced migration affect population distribution (outline A.1.c)."
     },
     {
       "vsiTitle": "Diaspora",
       "vsiAuthor": "Kevin Kenny",
-      "rationale": "Covers population movements and the formation of diaspora communities in urban centres."
+      "rationale": "Population movements and the formation of diaspora communities affect demographic composition (outline A.1.c)."
+    },
+    {
+      "vsiTitle": "Epidemiology",
+      "vsiAuthor": "Rodolfo Saracci",
+      "rationale": "Mortality rates, disease patterns, and public health factors affecting population are central to outline A.1.b."
+    },
+    {
+      "vsiTitle": "Public health",
+      "vsiAuthor": "Virginia Berridge",
+      "rationale": "Public health infrastructure affecting mortality, longevity, and population health in communities connects to outline A.1.b."
+    },
+    {
+      "vsiTitle": "Pandemics",
+      "vsiAuthor": "Christian W. McMillen",
+      "rationale": "Pandemics as events affecting mortality rates and historical population changes connect to outline A.1.b and A.2."
+    },
+    {
+      "vsiTitle": "City Planning",
+      "vsiAuthor": "Carl Abbott",
+      "rationale": "Directly addresses urban planning methods, social aspects of redevelopment, and regional planning (outline B.3)."
+    },
+    {
+      "vsiTitle": "Suburbs",
+      "vsiAuthor": "Carl Abbott",
+      "rationale": "Suburbanization, sprawl, and the growth of residential communities surrounding cities connect to outline B.4.b."
+    },
+    {
+      "vsiTitle": "The Ghetto",
+      "vsiAuthor": "Bryan Cheyette",
+      "rationale": "Urban segregation and its social dimensions are relevant to social aspects of urban planning (outline B.3.b)."
+    },
+    {
+      "vsiTitle": "Architecture",
+      "vsiAuthor": "Andrew Ballantyne",
+      "rationale": "The built environment of cities is relevant to methods and materials of urban planning (outline B.3.a)."
+    },
+    {
+      "vsiTitle": "Modern architecture",
+      "vsiAuthor": "Adam Sharr",
+      "rationale": "Modern architectural approaches to urban design and city planning connect to outline B.3.a."
+    },
+    {
+      "vsiTitle": "Landscape architecture",
+      "vsiAuthor": "Ian Thompson",
+      "rationale": "Landscape design in urban planning and the relationship between cities and their environments are relevant to outline B.3."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Covers the historical forces driving urbanization and the growth of industrial cities (subsection B.2)."
+      "rationale": "Historical forces driving urbanization and the growth of industrial cities shaped outline B.2."
+    },
+    {
+      "vsiTitle": "Geography",
+      "vsiAuthor": "John A. Matthews, David T. Herbert",
+      "rationale": "Spatial distribution of populations, interaction between urban and rural communities, and physical geography connect to outline B.4.c."
+    },
+    {
+      "vsiTitle": "Human Geography",
+      "vsiAuthor": "Andrew Barry",
+      "rationale": "Migration, inequality, and spatial dimensions of human populations in urban and rural settings are relevant to outline A and B."
+    },
+    {
+      "vsiTitle": "Climate change",
+      "vsiAuthor": "Mark Maslin",
+      "rationale": "Environmental and climatic change as problems affecting urban growth and population connect to outline B.4.f."
+    },
+    {
+      "vsiTitle": "Environmental Politics",
+      "vsiAuthor": "Andrew Dobson",
+      "rationale": "Political responses to pollution, environmental degradation, and population-environment interactions connect to outline B.4.e and B.4.f."
+    },
+    {
+      "vsiTitle": "Environmental economics",
+      "vsiAuthor": "Stephen Smith",
+      "rationale": "Economic dimensions of pollution control and natural resource conservation are relevant to population growth (outline A.3.g and B.4.f)."
+    },
+    {
+      "vsiTitle": "Environmental ethics",
+      "vsiAuthor": "Robin Attfield",
+      "rationale": "Ethical dimensions of the relationship between population growth and environmental conservation connect to outline A.3.g."
+    },
+    {
+      "vsiTitle": "Sustainability",
+      "vsiAuthor": "Saleem H. Ali",
+      "rationale": "Sustainable development in relation to population growth and urban environmental challenges is relevant to outline A.3.g and B.4.e."
+    },
+    {
+      "vsiTitle": "Ecology",
+      "vsiAuthor": "Jaboury Ghazoul",
+      "rationale": "Ecological theories illuminate the relationship between human population growth and natural resource conservation (outline A.3.g)."
+    },
+    {
+      "vsiTitle": "Anthropocene",
+      "vsiAuthor": "Erle C. Ellis",
+      "rationale": "The impact of urbanization and population growth on the environment -- including land use change and pollution -- connects to outline B.4.f."
+    },
+    {
+      "vsiTitle": "Globalization",
+      "vsiAuthor": "Manfred Steger",
+      "rationale": "Global economic forces driving urbanization, mass migration, and megalopolis formation are relevant to outline B.4.a."
+    },
+    {
+      "vsiTitle": "Geopolitics",
+      "vsiAuthor": "Klaus Dodds",
+      "rationale": "Regional integration and the relationship between population, territory, and political organization connect to outline B.4.c."
     },
     {
       "vsiTitle": "Sociology",
       "vsiAuthor": "Steve Bruce",
-      "rationale": "Covers sociological perspectives on urbanization, community structure, and social effects of population change."
+      "rationale": "Sociological perspectives on urbanization, community structure, and social effects of population change connect to outline B.3.b."
+    },
+    {
+      "vsiTitle": "Borders",
+      "vsiAuthor": "Alexander C. Diener, Joshua Hagen",
+      "rationale": "Borders affect migration patterns and population distribution across regions (outline A.1.c and B.4.c)."
+    },
+    {
+      "vsiTitle": "The Future",
+      "vsiAuthor": "Jennifer Gidley",
+      "rationale": "Future population projections, migration trends, and ecological scenarios are relevant to population outlook (outline A.5)."
     }
   ]
 }

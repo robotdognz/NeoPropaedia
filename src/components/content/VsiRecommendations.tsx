@@ -133,6 +133,7 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
                   author={mapping.vsiAuthor}
                   rationale={mapping.rationale}
                   baseUrl={baseUrl}
+                  sectionCode={sectionCode}
                   publicationYear={mapping.publicationYear}
                   edition={mapping.edition}
                   matchPercent={matchPercent}

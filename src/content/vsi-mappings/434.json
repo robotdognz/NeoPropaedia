@@ -4,92 +4,97 @@
     {
       "vsiTitle": "Intelligence",
       "vsiAuthor": "Ian J. Deary",
-      "rationale": "Directly covers theories of intelligence, intelligence distribution, retardation, the gifted, and group differences in intelligence (sections D and E)."
+      "rationale": "Directly addresses theories of intelligence, IQ, Wechsler scales, and cognitive domains -- the core of intelligence distribution and measurement (D, E)."
     },
     {
       "vsiTitle": "Psychology",
       "vsiAuthor": "Gillian Butler, Freda McManus",
-      "rationale": "Provides the broad framework for understanding psychological measurement, assessment of abilities, and the study of individual differences."
-    },
-    {
-      "vsiTitle": "Social Psychology",
-      "vsiAuthor": "Richard J. Crisp",
-      "rationale": "Covers attitudes including their nature, functions, development, and measurement (section G), and social factors in intelligence differences."
-    },
-    {
-      "vsiTitle": "Statistics",
-      "vsiAuthor": "David J. Hand",
-      "rationale": "Relevant to psychological measurement (section B), development of standardized tests, assessment of test results, and sampling techniques."
+      "rationale": "Examines psychological measurement, individual differences, and the study of human abilities across cognitive and developmental domains (B, D)."
     },
     {
       "vsiTitle": "Thinking and Reasoning",
       "vsiAuthor": "Jonathan Evans",
-      "rationale": "Directly relevant to intellectual abilities and theories of intelligence (section D) and the cognitive processes underlying mental capacity."
-    },
-    {
-      "vsiTitle": "Racism",
-      "vsiAuthor": "Ali Rattansi",
-      "rationale": "Relevant to the measurement and interpretation of group differences in intelligence by race (section E.4) and associated controversies."
-    },
-    {
-      "vsiTitle": "Eugenics",
-      "vsiAuthor": "Philippa Levine",
-      "rationale": "Directly relevant to historical attempts to measure and interpret intelligence distribution, including controversies about group differences (section E)."
-    },
-    {
-      "vsiTitle": "Heredity",
-      "vsiAuthor": "John Waller",
-      "rationale": "Relevant to genetic factors in intelligence distribution and the nature-nurture dimensions of intellectual abilities and personal propensities."
-    },
-    {
-      "vsiTitle": "Emotion",
-      "vsiAuthor": "Dylan Evans",
-      "rationale": "Relevant to personal propensities and idiosyncrasies affecting behaviour (section F) and the emotional dimensions of individual differences."
-    },
-    {
-      "vsiTitle": "Creativity",
-      "vsiAuthor": "Vlad Petre Glăveanu",
-      "rationale": "Relevant to intellectual abilities beyond standard intelligence, including the gifted (section E.3) and the range of human cognitive capacities."
-    },
-    {
-      "vsiTitle": "Genius",
-      "vsiAuthor": "Andrew Robinson",
-      "rationale": "Directly relevant to the gifted (section E.3) and the upper end of intelligence distribution."
-    },
-    {
-      "vsiTitle": "Autism",
-      "vsiAuthor": "Uta Frith",
-      "rationale": "Relevant to problems in establishing intelligence standards (section E.1) and understanding atypical cognitive profiles."
-    },
-    {
-      "vsiTitle": "Adolescence",
-      "vsiAuthor": "Peter Smith",
-      "rationale": "Relevant to age differences in intelligence measurement and the development of intellectual abilities during a key developmental period (section E.4)."
-    },
-    {
-      "vsiTitle": "Child Psychology",
-      "vsiAuthor": "Usha Goswami",
-      "rationale": "Covers the development of cognitive abilities in children, relevant to intelligence testing, retardation, and the gifted in early life stages."
+      "rationale": "Explores reasoning, problem solving, and deduction as intellectual abilities underlying theories of intelligence (D)."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
       "vsiAuthor": "Richard Passingham",
-      "rationale": "Covers the neural basis of intellectual abilities, relevant to modern biological theories of intelligence (section D)."
+      "rationale": "Examines the neural basis of intellectual abilities and brain imaging methods used in assessing cognition (D, B.1)."
     },
     {
-      "vsiTitle": "Feminism",
-      "vsiAuthor": "Margaret Walters",
-      "rationale": "Relevant to the interpretation of sex differences in intelligence measurement (section E.4) and critiques of gender bias in testing."
+      "vsiTitle": "Child Psychology",
+      "vsiAuthor": "Usha Goswami",
+      "rationale": "Explores cognitive development and learning in children, relevant to age differences in intelligence and standardized testing (E.4)."
     },
     {
-      "vsiTitle": "Measurement",
-      "vsiAuthor": "David J. Hand",
-      "rationale": "Directly relevant to psychological measurement (section B), the development of standardized tests, and assessment of results."
+      "vsiTitle": "Adolescence",
+      "vsiAuthor": "Peter Smith",
+      "rationale": "Addresses developmental changes during adolescence, relevant to age differences in intelligence measurement (E.4)."
+    },
+    {
+      "vsiTitle": "Genius",
+      "vsiAuthor": "Andrew Robinson",
+      "rationale": "Directly addresses the gifted and the upper end of intelligence distribution, including creativity and mental illness links (E.3)."
+    },
+    {
+      "vsiTitle": "Creativity",
+      "vsiAuthor": "Vlad Petre Glăveanu",
+      "rationale": "Explores creative abilities beyond standard intelligence, relevant to the gifted and intellectual capacities (E.3)."
+    },
+    {
+      "vsiTitle": "Autism",
+      "vsiAuthor": "Uta Frith",
+      "rationale": "Examines atypical cognitive profiles and intelligence, relevant to problems in establishing intelligence standards (E.1, E.2)."
     },
     {
       "vsiTitle": "Neurodiversity",
       "vsiAuthor": "Patrick Dwyer",
-      "rationale": "Covers neurodiversity in relation to education, workplace, and health — relevant to this section's treatment of the nature and assessment of human abilities and intellectual capacities."
+      "rationale": "Explores diverse cognitive profiles in education and the workplace, relevant to the nature of human abilities and intelligence standards (A, E.1)."
+    },
+    {
+      "vsiTitle": "Eugenics",
+      "vsiAuthor": "Philippa Levine",
+      "rationale": "Traces historical attempts to measure and interpret intelligence by race and heredity, directly relevant to group differences controversies (E.4)."
+    },
+    {
+      "vsiTitle": "Racism",
+      "vsiAuthor": "Ali Rattansi",
+      "rationale": "The measurement and interpretation of group differences in intelligence by race remains a contested topic central to E.4."
+    },
+    {
+      "vsiTitle": "Heredity",
+      "vsiAuthor": "John Waller",
+      "rationale": "Heredity and variation shed light on genetic factors in intelligence distribution and personal propensities (E, F)."
+    },
+    {
+      "vsiTitle": "Statistics",
+      "vsiAuthor": "David J. Hand",
+      "rationale": "Statistical methods including experimental design, sampling, and probability are directly relevant to psychological measurement (B)."
+    },
+    {
+      "vsiTitle": "Measurement",
+      "vsiAuthor": "David J. Hand",
+      "rationale": "Standardization, accuracy, and measurement scales are directly relevant to the development of standardized tests and assessment (B.2, B.3)."
+    },
+    {
+      "vsiTitle": "Social Psychology",
+      "vsiAuthor": "Richard J. Crisp",
+      "rationale": "Explores attitudes -- their nature, functions, development, and how social factors shape them (G)."
+    },
+    {
+      "vsiTitle": "Emotion",
+      "vsiAuthor": "Dylan Evans",
+      "rationale": "Emotions function as personal propensities and idiosyncrasies affecting behaviour (F)."
+    },
+    {
+      "vsiTitle": "Feminism",
+      "vsiAuthor": "Margaret Walters",
+      "rationale": "Essential for understanding critiques of gender bias in intelligence testing and the interpretation of sex differences in measurement (E.4)."
+    },
+    {
+      "vsiTitle": "Learning",
+      "vsiAuthor": "Mark Haselgrove",
+      "rationale": "Explores conditioning, intelligence, and learning, relevant to sensorimotor abilities and the nature of human capacities (A, C)."
     }
   ]
 }

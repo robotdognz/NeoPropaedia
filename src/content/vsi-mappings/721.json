@@ -4,87 +4,72 @@
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
-      "rationale": "Directly covers major energy systems, conversion devices, and power generation technologies outlined throughout this section."
+      "rationale": "A core text on major energy types (A), devices for energy utilization (B), and electric power generation (C.7), including fossil fuels, nuclear, and bioenergy."
     },
     {
       "vsiTitle": "Nuclear power",
       "vsiAuthor": "Maxwell Irvine",
-      "rationale": "Covers nuclear fission reactors and nuclear-powered generators, key topics under devices for utilizing nuclear energy and electric power generation."
+      "rationale": "Nuclear fission (A.1), fission and fusion reactors (B.9), and nuclear-powered generators (C.7) are the central subjects."
     },
     {
       "vsiTitle": "Renewable Energy",
       "vsiAuthor": "Nick Jelley",
-      "rationale": "Directly addresses recurring energy sources including solar, wind, water, and biomass energy, and the devices for their utilization."
+      "rationale": "Recurring energy sources -- solar, wind, water, biomass (A.2) -- and the devices that harness them, including windmills, turbines (B.2), and solar collectors (B.10), are examined."
     },
     {
       "vsiTitle": "Nuclear Physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Relevant to primary energy sources including thermonuclear reaction, nuclear fission, and radioactivity."
+      "rationale": "Thermonuclear reaction, nuclear fission, and radioactivity are explored as primary energy sources (A.1)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Covers radioactivity as a primary energy source and radioactive isotopes as devices for utilizing nuclear energy."
+      "rationale": "Radioactivity as a primary energy source (A.1) and radioactive isotopes for nuclear energy utilization (B.9) are central topics."
     },
     {
       "vsiTitle": "The Laws of Thermodynamics",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Provides the fundamental physics underlying energy conversion, heat exchangers, and thermoelectric devices covered in this section."
+      "rationale": "Provides the physics underlying thermoelectric devices (C.1), heat exchangers and refrigeration (B.7), and energy conversion generally."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Covers the engineering principles behind machines, turbines, and power generation systems described in the section."
+      "rationale": "The engineering of energy utilization devices (B) -- including turbines, motors, and generators (C.7) -- is addressed."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Relevant to optoelectronic devices, semiconductor lasers, and lighting devices covered in the section's energy concentration and control topics."
+      "rationale": "Optoelectronic devices including semiconductor lasers and optical fibres (D.3) and lamps and lighting (C.5) are explored."
     },
     {
       "vsiTitle": "Magnetism",
       "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Covers magnets and electromagnets, which are key devices for utilizing magnetic and electrical energy."
-    },
-    {
-      "vsiTitle": "Superconductivity",
-      "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Relevant to advanced electrical energy conversion and solid-state devices for energy concentration."
-    },
-    {
-      "vsiTitle": "Materials",
-      "vsiAuthor": "Christopher Hall",
-      "rationale": "Covers materials science relevant to solid-state devices, semiconductors, and integrated circuits for energy concentration and control."
+      "rationale": "Magnets, electromagnets (B.5), and electric motors (B.5.b) that harness magnetic and electrical energy are examined."
     },
     {
       "vsiTitle": "Condensed Matter Physics",
       "vsiAuthor": "Ross McKenzie",
-      "rationale": "Relevant to solid-state devices including transistors, semiconductor diodes, and integrated circuits used in energy control."
+      "rationale": "Solid-state devices -- transistors, semiconductor diodes, integrated circuits -- for energy concentration and control are the focus (D.2)."
     },
     {
       "vsiTitle": "Fluid Mechanics",
       "vsiAuthor": "Eric Lauga",
-      "rationale": "Covers the physics of wind and water turbines, hydraulic devices, and steam turbines used in energy utilization."
-    },
-    {
-      "vsiTitle": "Climate change",
-      "vsiAuthor": "Mark Maslin",
-      "rationale": "Relevant to the environmental impact of nonrenewable energy sources (coal, natural gas, oil) and the shift to renewable energy."
-    },
-    {
-      "vsiTitle": "Sustainability",
-      "vsiAuthor": "Saleem H. Ali",
-      "rationale": "Addresses the sustainability of energy systems, including the transition from nonrenewable to recurring energy sources."
-    },
-    {
-      "vsiTitle": "Fire",
-      "vsiAuthor": "Andrew C. Scott",
-      "rationale": "Relevant to heat energy utilization and the combustion processes underlying internal-combustion engines and chemical energy devices."
+      "rationale": "The physics of wind and water turbines (B.2), hydraulic devices (B.4.d), and steam engines and turbines (B.4.a-b) is examined."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Covers the chemical principles underlying batteries, fuel cells, and chemical energy conversion devices."
+      "rationale": "The chemistry of batteries and fuel cells (C.4) and chemical energy utilization devices (B.8) is addressed."
+    },
+    {
+      "vsiTitle": "The Sun",
+      "vsiAuthor": "Philip Judge",
+      "rationale": "Solar energy as a recurring source (A.2) and devices for utilizing it (B.10) are central topics."
+    },
+    {
+      "vsiTitle": "Nuclear Weapons",
+      "vsiAuthor": "Joseph M. Siracusa",
+      "rationale": "Chemical explosives (B.8.b) and the destructive applications of nuclear fission and fusion energy (A.1) are examined."
     }
   ]
 }

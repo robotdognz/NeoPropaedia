@@ -14,17 +14,17 @@
     {
       "vsiTitle": "Structural engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Structural engineering is part of the broader engineering disciplines covered in section B.2."
+      "rationale": "Structural engineering is part of the broader engineering disciplines covered in B.2."
     },
     {
       "vsiTitle": "Agriculture",
       "vsiAuthor": "Paul Brassley, Richard Soffe",
-      "rationale": "Section C covers the nature and scope of agricultural sciences including soil science, plant and animal production, and agricultural engineering."
+      "rationale": "Section C covers the nature and scope of agricultural sciences including soil science, plant/animal production, and agricultural engineering."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
-      "rationale": "Section D.1 covers bionics including mimicry of nature for engineering and the use of natural models for engineering problems, which connects to robotics."
+      "rationale": "Section D.1 covers bionics including mimicry of nature for engineering and natural models for engineering problems, connecting to robotics."
     },
     {
       "vsiTitle": "Artificial Intelligence",
@@ -34,37 +34,37 @@
     {
       "vsiTitle": "Nanotechnology",
       "vsiAuthor": "Philip Moriarty",
-      "rationale": "Nanotechnology represents a recently developed interscience discipline (section D) combining physics, chemistry, and engineering."
+      "rationale": "Nanotechnology is a recently developed interscience discipline (D) combining physics, chemistry, and engineering."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Materials science is fundamental to engineering (section B) and connects to chemical and mechanical engineering branches."
+      "rationale": "Materials science is fundamental to engineering (B) and connects to chemical and mechanical engineering branches."
     },
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
-      "rationale": "Energy systems engineering connects to electrical engineering (B.2) and mechanical engineering as branches of the technological sciences."
+      "rationale": "Energy systems engineering connects to electrical (B.2) and mechanical engineering as branches of the technological sciences."
     },
     {
       "vsiTitle": "Renewable Energy",
       "vsiAuthor": "Nick Jelley",
-      "rationale": "Renewable energy technology is part of engineering (section B) involving electrical, chemical, and mechanical engineering disciplines."
+      "rationale": "Renewable energy technology involves electrical, chemical, and mechanical engineering disciplines (B.2)."
     },
     {
       "vsiTitle": "Nuclear power",
       "vsiAuthor": "Maxwell Irvine",
-      "rationale": "Section B.2 lists nuclear engineering as a branch of engineering within the technological sciences."
+      "rationale": "Section B.2 lists nuclear engineering as a branch of engineering."
     },
     {
       "vsiTitle": "War and Technology",
       "vsiAuthor": "Alex Roland",
-      "rationale": "The history of technological sciences (section A) includes military technology and its relationship to engineering development."
+      "rationale": "The history of technological sciences (A) includes military technology and its relationship to engineering development."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
-      "rationale": "Innovation is central to the technological sciences and engineering, driving the development of new technologies and methods."
+      "rationale": "Innovation is central to the technological sciences, driving the development of new technologies and methods."
     },
     {
       "vsiTitle": "The Computer",
@@ -72,9 +72,24 @@
       "rationale": "Section D.1 references computer memory devices and information-processing devices, connecting to the bionics-computing interface."
     },
     {
+      "vsiTitle": "Computer Science",
+      "vsiAuthor": "Subrata Dasgupta",
+      "rationale": "Computer science underpins modern engineering including bionics (D.1) and systems engineering (D.2)."
+    },
+    {
       "vsiTitle": "Networks",
       "vsiAuthor": "Guido Caldarelli, Michele Catanzaro",
       "rationale": "Section D.2 covers systems engineering and operations research, which involves network analysis and optimization."
+    },
+    {
+      "vsiTitle": "Complexity",
+      "vsiAuthor": "John H. Holland",
+      "rationale": "Section D.2 covers systems engineering, which draws on complexity theory for analyzing complex technical systems."
+    },
+    {
+      "vsiTitle": "The History of Computing",
+      "vsiAuthor": "Doron Swade",
+      "rationale": "Computing technology is part of the history of technological sciences (A) and connects to bionics and systems engineering (D)."
     },
     {
       "vsiTitle": "Nuclear Weapons",
@@ -82,19 +97,9 @@
       "rationale": "Nuclear weapons technology relates to nuclear engineering (B.2) and the history of technological sciences (A)."
     },
     {
-      "vsiTitle": "Complexity",
-      "vsiAuthor": "John H. Holland",
-      "rationale": "Section D.2 covers systems engineering, which draws on complexity theory for analyzing and designing complex technical systems."
-    },
-    {
-      "vsiTitle": "The History of Computing",
-      "vsiAuthor": "Doron Swade",
-      "rationale": "Computing technology is part of the history of technological sciences (section A) and connects to bionics and systems engineering (section D)."
-    },
-    {
       "vsiTitle": "Landscape architecture",
       "vsiAuthor": "Ian Thompson",
-      "rationale": "Landscape architecture involves engineering and agricultural science principles applied to land design and management."
+      "rationale": "Landscape architecture involves engineering and agricultural science principles applied to land design."
     }
   ]
 }

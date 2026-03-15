@@ -2,54 +2,49 @@
   "sectionCode": "934",
   "mappings": [
     {
-      "vsiTitle": "Modern Japan",
-      "vsiAuthor": "Christopher Goto-Jones",
-      "rationale": "While focused on modern Japan, provides context for the Tokugawa period's transition to modernity including the bakuhan system's collapse and the opening of Japan to Western influences."
-    },
-    {
       "vsiTitle": "Japanese Literature",
       "vsiAuthor": "Alan Tansman",
-      "rationale": "Directly relevant to the section's multiple references to literary developments across all periods of Japanese history, from the Nara period through the Tokugawa era."
-    },
-    {
-      "vsiTitle": "Buddhism",
-      "vsiAuthor": "Damien Keown",
-      "rationale": "Buddhism is a central theme throughout the section, from its introduction in the Yamato period through the growth of Zen in the Kamakura period and its cultural influence."
-    },
-    {
-      "vsiTitle": "Confucianism",
-      "vsiAuthor": "Daniel K. Gardner",
-      "rationale": "Relevant to the section's discussion of Neo-Confucianism in the Kamakura period and Confucianism's role in the Tokugawa era including the Shinto revival."
+      "rationale": "Covers literary developments from the Heian period through Tokugawa, directly relevant to subsections B3, C1d, C2c, C3b, and C4c."
     },
     {
       "vsiTitle": "Samurai",
       "vsiAuthor": "Michael Wert",
-      "rationale": "Directly relevant to the section's extensive coverage of the rise of the samurai class, the feudal bakufu system, and the samurai shugo as feudal lords."
+      "rationale": "Directly covers the samurai class, bushido, daimyo, and shogunate system central to subsections C1-C4 on feudal Japan."
+    },
+    {
+      "vsiTitle": "Modern Japan",
+      "vsiAuthor": "Christopher Goto-Jones",
+      "rationale": "Covers the Meiji Restoration referenced in the section title and provides context for Tokugawa Japan's transition to modernity in subsection C4."
+    },
+    {
+      "vsiTitle": "Confucianism",
+      "vsiAuthor": "Daniel K. Gardner",
+      "rationale": "Relevant to subsections C1d and C4d on Neo-Confucianism's influence during the Kamakura and Tokugawa periods."
+    },
+    {
+      "vsiTitle": "Buddhism",
+      "vsiAuthor": "Damien Keown",
+      "rationale": "Relevant to subsections B2a-b and C1d on the introduction and flowering of Buddhism in Japan, including Zen Buddhism."
     },
     {
       "vsiTitle": "Korea",
       "vsiAuthor": "Michael J. Seth",
-      "rationale": "Directly relevant to subsection D covering Korean history from prehistoric origins through the Three Kingdoms, Koryo dynasty, and Yi dynasty to 1910."
-    },
-    {
-      "vsiTitle": "Archaeology",
-      "vsiAuthor": "Paul Bahn",
-      "rationale": "The section discusses archaeological sources for understanding prehistoric Japanese and Korean cultures, including Jomon and Yayoi pottery cultures."
-    },
-    {
-      "vsiTitle": "Dynasty",
-      "vsiAuthor": "Jeroen Duindam",
-      "rationale": "Relevant to the section's coverage of Japanese imperial succession, the shogunate system, and Korean dynastic history including the Koryo and Yi dynasties."
-    },
-    {
-      "vsiTitle": "War and Technology",
-      "vsiAuthor": "Alex Roland",
-      "rationale": "Relevant to the section's discussion of resistance to Mongol invasions (1274 and 1281), the arrival of Portuguese firearms (1543), and military developments under the feudal system."
+      "rationale": "Directly covers subsection D on Korean history from the Three Kingdoms through the Yi dynasty."
     },
     {
       "vsiTitle": "The Mongols",
       "vsiAuthor": "Morris Rossabi",
-      "rationale": "Relevant to the section's discussion of the Mongol invasions of Japan (1274 and 1281), the Mongol conquest of Korea (1231-1261), and the broader Mongol impact on East Asian geopolitics."
+      "rationale": "Relevant to subsection C1c on the Mongol invasions of Japan in 1274 and 1281 and subsection D4 on Mongol invasions of Korea."
+    },
+    {
+      "vsiTitle": "Dynasty",
+      "vsiAuthor": "Jeroen Duindam",
+      "rationale": "Relevant to the successive dynasties and shogunates from the Yamato court through the Tokugawa that structure Japan's political history."
+    },
+    {
+      "vsiTitle": "Archaeology",
+      "vsiAuthor": "Paul Bahn",
+      "rationale": "Relevant to subsection B1 on Japan's prehistoric Jomon and Yayoi cultures and their archaeological evidence."
     }
   ]
 }

@@ -4,147 +4,127 @@
     {
       "vsiTitle": "The History of Medicine",
       "vsiAuthor": "William Bynum",
-      "rationale": "Directly covers the historical development of medical education, practice, and public health services."
+      "rationale": "Traces the historical development of medical education, hospital practice, the Hippocratic tradition, and public health (A, C, D)."
     },
     {
       "vsiTitle": "Medical ethics",
       "vsiAuthor": "Tony Hope",
-      "rationale": "Directly covers the ethical basis of medical practice (section C.2.a) including issues of euthanasia, abortion, and the Hippocratic oath."
+      "rationale": "Directly addresses the ethical basis of medical practice including euthanasia, consent, and health policy (C.2.a)."
     },
     {
       "vsiTitle": "Medical law",
       "vsiAuthor": "Charles Foster",
-      "rationale": "Covers licensure requirements, legal restrictions on practice (sections C.2.b, C.2.c), and the legal framework of healthcare delivery."
+      "rationale": "Examines licensure, legal restrictions on practice, consent, confidentiality, and organ donation regulation (C.2.b, C.2.c)."
     },
     {
       "vsiTitle": "Public health",
       "vsiAuthor": "Virginia Berridge",
-      "rationale": "Directly covers public health services and administration (section D), vaccination and immunization, and epidemic prevention and control."
+      "rationale": "A core text on public health services, disease prevention, sanitation, and population-level health administration (D, F, H)."
     },
     {
       "vsiTitle": "Epidemiology",
       "vsiAuthor": "Rodolfo Saracci",
-      "rationale": "Covers the scientific methods underlying public health services, disease surveillance, and the prevention and control of epidemics (section H.5)."
-    },
-    {
-      "vsiTitle": "Pandemics",
-      "vsiAuthor": "Christian W. McMillen",
-      "rationale": "Directly relevant to the prevention and control of epidemics (section H.5) and quarantine and isolation of infected victims (section H.2)."
-    },
-    {
-      "vsiTitle": "Drugs",
-      "vsiAuthor": "Leslie Iversen",
-      "rationale": "Relevant to the control of foods and drugs (section I.2), prophylactic medication (section H.4), and therapeutic agent use."
+      "rationale": "Essential for understanding disease surveillance, population health data, and the scientific methods underpinning epidemic prevention and control (H.5)."
     },
     {
       "vsiTitle": "Infectious Disease",
       "vsiAuthor": "Benjamin Bolker and Marta Wayne",
-      "rationale": "Relevant to prevention and control of infection (section H), including vaccination, quarantine, and destruction of infectious agents."
+      "rationale": "Addresses vaccination, quarantine, antibiotic use, and vector control strategies for prevention and control of infection (H)."
     },
     {
-      "vsiTitle": "Nutrition",
-      "vsiAuthor": "David Bender",
-      "rationale": "Directly relevant to prevention of malnutrition (section G), including nutrient requirements and problems of world food supply."
-    },
-    {
-      "vsiTitle": "HIV/AIDS",
-      "vsiAuthor": "Alan Whiteside",
-      "rationale": "A major global public health challenge requiring coordinated prevention, control, and treatment programs across healthcare systems."
+      "vsiTitle": "Pandemics",
+      "vsiAuthor": "Christian W. McMillen",
+      "rationale": "Examines epidemic prevention and control including quarantine, isolation, and public health responses to outbreaks (H.2, H.5)."
     },
     {
       "vsiTitle": "Plague",
       "vsiAuthor": "Paul Slack",
-      "rationale": "Illustrates historical approaches to epidemic prevention and control (section H.5) including quarantine and public health responses."
+      "rationale": "Illustrates historical quarantine measures and public health responses to epidemic diseases (H.2, H.5)."
     },
     {
-      "vsiTitle": "Psychiatry",
-      "vsiAuthor": "Tom Burns",
-      "rationale": "A field of specialized medical practice (section B) with specific hospital and specialist practice considerations."
-    },
-    {
-      "vsiTitle": "Anaesthesia",
-      "vsiAuthor": "Aidan O'Donnell",
-      "rationale": "A key field of specialized hospital and specialist practice (section C.1.b) essential to modern surgery."
-    },
-    {
-      "vsiTitle": "Forensic science",
-      "vsiAuthor": "Jim Fraser",
-      "rationale": "A related discipline to medical practice, relevant to governmental practice and legal aspects of medicine."
-    },
-    {
-      "vsiTitle": "Forensic psychology",
-      "vsiAuthor": "David Canter",
-      "rationale": "A related discipline connecting medicine and law, relevant to specialized medical research and practice."
-    },
-    {
-      "vsiTitle": "Veterinary Science",
-      "vsiAuthor": "James Yeates",
-      "rationale": "A related discipline to medical practice, relevant to understanding zoonotic disease control and one-health approaches to infection prevention."
-    },
-    {
-      "vsiTitle": "Environmental economics",
-      "vsiAuthor": "Stephen Smith",
-      "rationale": "Relevant to environmental sanitation and health (section F), including the economics of air, water, and soil pollution control."
-    },
-    {
-      "vsiTitle": "Environmental Politics",
-      "vsiAuthor": "Andrew Dobson",
-      "rationale": "Relevant to environmental sanitation and health (section F) and political dimensions of pollution control."
-    },
-    {
-      "vsiTitle": "Environmental Law",
-      "vsiAuthor": "Elizabeth Fisher",
-      "rationale": "Relevant to environmental sanitation (section F) and health and safety laws (section I.2) governing pollution control."
-    },
-    {
-      "vsiTitle": "Food",
-      "vsiAuthor": "John Krebs",
-      "rationale": "Relevant to the control of foods (section I.2) and efforts to address world food supply problems (section G)."
-    },
-    {
-      "vsiTitle": "Demography",
-      "vsiAuthor": "Sarah Harper",
-      "rationale": "Relevant to understanding world population in relation to malnutrition prevention (section G) and public health service planning."
-    },
-    {
-      "vsiTitle": "Globalization",
-      "vsiAuthor": "Manfred Steger",
-      "rationale": "Relevant to the wide variation in medical practice among countries (section C.1) and global health challenges including epidemics and malnutrition."
+      "vsiTitle": "HIV/AIDS",
+      "vsiAuthor": "Alan Whiteside",
+      "rationale": "Global prevention programs, public health policy, and coordinated treatment strategies for HIV/AIDS illuminate modern epidemic management (H.5)."
     },
     {
       "vsiTitle": "Viruses",
       "vsiAuthor": "Dorothy H. Crawford",
-      "rationale": "Relevant to vaccination and immunization programs (section H.1) and the prevention of viral epidemics."
+      "rationale": "Vaccine technology and virus infection control are central topics, directly relevant to vaccination and immunization programs (H.1)."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
-      "rationale": "Relevant to aseptic and antiseptic precautions (section H.3) and prophylactic use of antibiotics."
+      "rationale": "Antibiotic resistance and aseptic practices are key themes, relevant to destruction of infectious agents and prophylactic medication (H.3, H.4)."
     },
     {
-      "vsiTitle": "Education",
-      "vsiAuthor": "Gary Thomas",
-      "rationale": "Relevant to medical education (section A) and the broader educational frameworks within which healthcare professionals are trained."
+      "vsiTitle": "Drugs",
+      "vsiAuthor": "Leslie Iversen",
+      "rationale": "Explores drug regulation and prescription practices relevant to control of drugs and therapeutic agent use (H.4, I.2)."
+    },
+    {
+      "vsiTitle": "Nutrition",
+      "vsiAuthor": "David Bender",
+      "rationale": "Nutrient requirements, obesity, and undernutrition are directly relevant to prevention of malnutrition (G)."
+    },
+    {
+      "vsiTitle": "Food",
+      "vsiAuthor": "John Krebs",
+      "rationale": "Food safety, food poisoning, and genetically modified food are examined in the context of food supply control (G, I.2)."
+    },
+    {
+      "vsiTitle": "Anaesthesia",
+      "vsiAuthor": "Aidan O'Donnell",
+      "rationale": "A key field of specialized hospital and specialist practice essential to surgical care (B, C.1.b)."
+    },
+    {
+      "vsiTitle": "Psychiatry",
+      "vsiAuthor": "Tom Burns",
+      "rationale": "Explores psychiatry as a specialized field of medical practice with hospital, community, and research dimensions (B, C.1.b)."
     },
     {
       "vsiTitle": "The Welfare State",
       "vsiAuthor": "David Garland",
-      "rationale": "Directly relevant to governmental practice and public health services (sections C.1.c, D), including health and safety regulations."
+      "rationale": "The National Health Service and social services are central topics, relevant to governmental public health practice and health legislation (C.1.c, D, I.2)."
     },
     {
-      "vsiTitle": "Human Rights",
-      "vsiAuthor": "Andrew Clapham",
-      "rationale": "Relevant to the ethical basis of medical practice and health as a human right, including restrictions on child labour and workplace health protections."
+      "vsiTitle": "Veterinary Science",
+      "vsiAuthor": "James Yeates",
+      "rationale": "Zoonotic disease control and vaccination history -- including Edward Jenner's contributions -- are relevant to prevention of cross-species infection (H)."
     },
     {
-      "vsiTitle": "Ageing",
-      "vsiAuthor": "Nancy Pachana",
-      "rationale": "Relevant to the practice of geriatric medicine and specialized care for aging populations within hospital and community settings."
+      "vsiTitle": "Environmental Law",
+      "vsiAuthor": "Elizabeth Fisher",
+      "rationale": "Environmental protection legislation directly bears on the control of air, water, and soil pollution (F, I.2)."
     },
     {
-      "vsiTitle": "Sustainability",
-      "vsiAuthor": "Saleem H. Ali",
-      "rationale": "Relevant to environmental sanitation and health (section F) and sustainable approaches to world food supply and pollution control."
+      "vsiTitle": "Environmental economics",
+      "vsiAuthor": "Stephen Smith",
+      "rationale": "Pollution control policy and environmental regulation inform debates about environmental sanitation and health (F)."
+    },
+    {
+      "vsiTitle": "Demography",
+      "vsiAuthor": "Sarah Harper",
+      "rationale": "Population dynamics, life expectancy, and demographic transitions are essential to world population and public health planning (D, G)."
+    },
+    {
+      "vsiTitle": "Addiction",
+      "vsiAuthor": "Keith Humphreys",
+      "rationale": "Explores laws, regulations, and treatment programs for substance use relevant to drug control and industrial medicine (H.4, I)."
+    },
+    {
+      "vsiTitle": "Forensic science",
+      "vsiAuthor": "Jim Fraser",
+      "rationale": "Forensic examination and evidence bear on the legal aspects of medical practice and cause-of-death determination (C.2.c)."
+    },
+    {
+      "vsiTitle": "Social work",
+      "vsiAuthor": "Stanley Wells",
+      "rationale": "Community health, disability, and mental health social services are central themes, relevant to public health services and social medicine (D, I)."
+    },
+    {
+      "vsiTitle": "Education",
+      "vsiAuthor": "Gary Thomas",
+      "rationale": "Educational systems and teaching methods inform medical education and professional training (A)."
     }
   ]
 }

@@ -2,194 +2,194 @@
   "sectionCode": "541",
   "mappings": [
     {
-      "vsiTitle": "Politics",
-      "vsiAuthor": "Kenneth Minogue",
-      "rationale": "Directly covers political theory including the state, sovereignty, legitimacy, and political action."
-    },
-    {
       "vsiTitle": "Political philosophy",
       "vsiAuthor": "David Miller",
-      "rationale": "Directly covers philosophical foundations of the state, individual rights, sovereignty, and political ideologies."
+      "rationale": "Essential for understanding the philosophical foundations of statehood, sovereignty, social contract, authority, and human rights (A, A.4, C.2)."
     },
     {
-      "vsiTitle": "Democracy",
-      "vsiAuthor": "Bernard Crick",
-      "rationale": "Covers popular sovereignty, consent of the governed, and constitutional government (subsections A.4.a and A.5)."
-    },
-    {
-      "vsiTitle": "Ideology",
-      "vsiAuthor": "Michael Freeden",
-      "rationale": "Directly covers the importance of ideology to political systems and current political ideologies (subsection C.3)."
-    },
-    {
-      "vsiTitle": "Nationalism",
-      "vsiAuthor": "Steven Grosby",
-      "rationale": "Directly covers nationalism as a major modern political ideology (subsection C.3.b.vii)."
-    },
-    {
-      "vsiTitle": "Liberalism",
-      "vsiAuthor": "Michael Freeden",
-      "rationale": "Directly covers liberalism as a major political ideology (subsection C.3.b.v)."
-    },
-    {
-      "vsiTitle": "Socialism",
-      "vsiAuthor": "Michael Newman",
-      "rationale": "Directly covers socialism as a major political ideology (subsection C.3.b.viii)."
-    },
-    {
-      "vsiTitle": "Communism",
-      "vsiAuthor": "Leslie Holmes",
-      "rationale": "Directly covers communism as a major political ideology (subsection C.3.b.ii)."
-    },
-    {
-      "vsiTitle": "Fascism",
-      "vsiAuthor": "Kevin Passmore",
-      "rationale": "Directly covers fascism as a major political ideology (subsection C.3.b.iv)."
-    },
-    {
-      "vsiTitle": "Anarchism",
-      "vsiAuthor": "Alex Prichard",
-      "rationale": "Directly covers anarchism as a major political ideology (subsection C.3.b.i)."
-    },
-    {
-      "vsiTitle": "Populism",
-      "vsiAuthor": "Cas Mudde, Cristsbal Rovia Kalwasser",
-      "rationale": "Covers populism as a contemporary political tendency and challenge to established political forms."
-    },
-    {
-      "vsiTitle": "Authoritarianism",
-      "vsiAuthor": "James Loxton",
-      "rationale": "Covers authoritarian government as a political system contrasted with constitutional governance."
-    },
-    {
-      "vsiTitle": "Marx",
-      "vsiAuthor": "Peter Singer",
-      "rationale": "Directly covers Marxism as a major political ideology (subsection C.3.b.vi)."
-    },
-    {
-      "vsiTitle": "Machiavelli",
-      "vsiAuthor": "Quentin Skinner",
-      "rationale": "Covers foundational political theory about the exercise of power and statecraft."
-    },
-    {
-      "vsiTitle": "Hobbes",
-      "vsiAuthor": "Richard Tuck",
-      "rationale": "Covers the social contract theory and sovereignty as bases of political authority (subsections A.4.a and A.4.b)."
-    },
-    {
-      "vsiTitle": "Locke",
-      "vsiAuthor": "John Dunn",
-      "rationale": "Covers theories of popular sovereignty, consent of the governed, and constitutional government."
-    },
-    {
-      "vsiTitle": "Rousseau",
-      "vsiAuthor": "Robert Wokler",
-      "rationale": "Covers the social contract, popular sovereignty, and the relationship between the state and the individual."
-    },
-    {
-      "vsiTitle": "Tocqueville",
-      "vsiAuthor": "Harvey Mansfield",
-      "rationale": "Covers theories of democratic governance, political action, and the role of public opinion (subsection B.4)."
-    },
-    {
-      "vsiTitle": "John Stuart Mill",
-      "vsiAuthor": "Gregory Claeys",
-      "rationale": "Covers liberal political theory including individual rights, free speech, and representative government."
-    },
-    {
-      "vsiTitle": "Human Rights",
-      "vsiAuthor": "Andrew Clapham",
-      "rationale": "Directly covers the concept of human rights in political theory (subsection C.2)."
-    },
-    {
-      "vsiTitle": "Free speech",
-      "vsiAuthor": "Nigel Warburton",
-      "rationale": "Covers freedom of expression as a fundamental political right and the influence of public opinion (subsection B.4)."
-    },
-    {
-      "vsiTitle": "Citizenship",
-      "vsiAuthor": "Richard Bellamy",
-      "rationale": "Covers the relationship between the state and the individual including rights, duties, and political participation."
+      "vsiTitle": "Politics",
+      "vsiAuthor": "Kenneth Minogue",
+      "rationale": "Broadly addresses political theory including the state, democracy, justice, and the exercise of political power (A, B, C.1)."
     },
     {
       "vsiTitle": "The History of Political Thought",
       "vsiAuthor": "Richard Whatmore",
-      "rationale": "Directly covers the historical development of political theories from ancient to modern times."
+      "rationale": "Surveys the historical development of political theories from ancient to modern times, spanning all outline topics."
+    },
+    {
+      "vsiTitle": "Democracy",
+      "vsiAuthor": "Bernard Crick",
+      "rationale": "Popular sovereignty, consent of the governed, and democratic governance as a basis of legitimacy are central themes (A.4.a, A.5)."
+    },
+    {
+      "vsiTitle": "Ideology",
+      "vsiAuthor": "Michael Freeden",
+      "rationale": "Directly addresses the role of ideology in political systems and the relationship between ideological and civil politics (C.3.a)."
+    },
+    {
+      "vsiTitle": "Human Rights",
+      "vsiAuthor": "Andrew Clapham",
+      "rationale": "Human rights as a political concept are the central subject (C.2)."
+    },
+    {
+      "vsiTitle": "Anarchism",
+      "vsiAuthor": "Alex Prichard",
+      "rationale": "Examines anarchism as a named political ideology (C.3.b.i)."
+    },
+    {
+      "vsiTitle": "Communism",
+      "vsiAuthor": "Leslie Holmes",
+      "rationale": "Explores communism as a named political ideology and its practical applications (C.3.b.ii)."
+    },
+    {
+      "vsiTitle": "Marx",
+      "vsiAuthor": "Peter Singer",
+      "rationale": "Marx's political ideology -- including alienation, capitalism critique, and dialectical materialism -- is foundational (C.3.b.vi)."
+    },
+    {
+      "vsiTitle": "Fascism",
+      "vsiAuthor": "Kevin Passmore",
+      "rationale": "Fascism as a named political ideology is the central subject (C.3.b.iv)."
+    },
+    {
+      "vsiTitle": "Liberalism",
+      "vsiAuthor": "Michael Freeden",
+      "rationale": "Liberalism as a named political ideology is examined in its historical and contemporary forms (C.3.b.v)."
+    },
+    {
+      "vsiTitle": "Socialism",
+      "vsiAuthor": "Michael Newman",
+      "rationale": "Socialism as a named political ideology is explored from its utopian origins to modern social democracy (C.3.b.viii)."
+    },
+    {
+      "vsiTitle": "Nationalism",
+      "vsiAuthor": "Steven Grosby",
+      "rationale": "Nationalism as an ideology and its relationship to the national state are central themes (A, C.3.b.vii)."
+    },
+    {
+      "vsiTitle": "Populism",
+      "vsiAuthor": "Cas Mudde, Cristsbal Rovia Kalwasser",
+      "rationale": "Populism as a contemporary political ideology, treating sovereignty and democratic power, is examined (C.3.b)."
     },
     {
       "vsiTitle": "Neoliberalism",
       "vsiAuthor": "Manfred Steger, Ravi K. Roy",
-      "rationale": "Covers neoliberal political ideology and its relationship to the state and market."
+      "rationale": "Neoliberalism as a current political ideology affecting state-market relations is explored (C.3.b)."
     },
     {
-      "vsiTitle": "Fundamentalism",
-      "vsiAuthor": "Malise Ruthven",
-      "rationale": "Covers the problem of religion and politics, relevant to the church-state issue (subsection C.4.a)."
+      "vsiTitle": "Hobbes",
+      "vsiAuthor": "Richard Tuck",
+      "rationale": "Hobbes's social contract and state of nature remain foundational to theories of political authority (A.4.b)."
     },
     {
-      "vsiTitle": "Secularism",
-      "vsiAuthor": "Andrew Copson",
-      "rationale": "Covers the separation of church and state as a political principle (subsection C.4.a)."
+      "vsiTitle": "Locke",
+      "vsiAuthor": "John Dunn",
+      "rationale": "Locke's theories of consent, natural rights, and constitutional government shaped modern liberal political thought (A.4.a, A.5.a)."
     },
     {
-      "vsiTitle": "Terrorism",
-      "vsiAuthor": "Charles Townshend",
-      "rationale": "Covers terrorism as a form of political action by special-interest and revolutionary groups."
+      "vsiTitle": "Rousseau",
+      "vsiAuthor": "Robert Wokler",
+      "rationale": "Rousseau's social contract, popular sovereignty, and citizenship theory are foundational to modern political thought (A.4.a, A.4.b)."
     },
     {
-      "vsiTitle": "Revolutions",
-      "vsiAuthor": "Jack A. Goldstone",
-      "rationale": "Covers revolutionary political action as a method of changing political forms."
+      "vsiTitle": "Tocqueville",
+      "vsiAuthor": "Harvey Mansfield",
+      "rationale": "Tocqueville's democratic theory, political science, and analysis of public opinion's influence on governance remain influential (B.4)."
     },
     {
-      "vsiTitle": "Utilitarianism",
-      "vsiAuthor": "Katarzyna de Lazari-Radek, Peter Singer",
-      "rationale": "Covers utilitarian political philosophy as a basis for government policy and individual rights."
+      "vsiTitle": "John Stuart Mill",
+      "vsiAuthor": "Gregory Claeys",
+      "rationale": "Mill's liberal political theory on individual liberty, representative government, and political participation is essential reading (A.2, C.3.b.v)."
     },
     {
-      "vsiTitle": "Utopianism",
-      "vsiAuthor": "Lyman Tower Sargent",
-      "rationale": "Covers utopian political thought and visions of ideal states and political organization."
-    },
-    {
-      "vsiTitle": "Progressivism",
-      "vsiAuthor": "Walter Nugent",
-      "rationale": "Covers progressive political ideology as a reform movement within democratic systems."
-    },
-    {
-      "vsiTitle": "Feminism",
-      "vsiAuthor": "Margaret Walters",
-      "rationale": "Covers feminist political theory and its challenges to traditional political structures."
+      "vsiTitle": "Machiavelli",
+      "vsiAuthor": "Quentin Skinner",
+      "rationale": "Machiavelli's political theory about the concept of political power and statecraft remains a touchstone (C.1)."
     },
     {
       "vsiTitle": "Hannah Arendt",
       "vsiAuthor": "Dana Villa",
-      "rationale": "Covers Arendt's political theory including the nature of political power, authority, and totalitarianism."
+      "rationale": "Arendt's theories of political action, power, totalitarianism, and constitutionalism are explored (B, C.1)."
     },
     {
-      "vsiTitle": "Federalism",
-      "vsiAuthor": "Mark J. Rozell, Clyde Wilcox",
-      "rationale": "Covers the issue of centralization vs. decentralization of political power (subsection C.4.d)."
+      "vsiTitle": "Aristotle",
+      "vsiAuthor": "Jonathan Barnes",
+      "rationale": "Aristotle's foundational political theory including forms of government and political science informs the entire tradition (A.4, A.5)."
     },
     {
-      "vsiTitle": "Governance",
-      "vsiAuthor": "Mark Bevir",
-      "rationale": "Covers how political authority is structured and exercised in contemporary political systems."
+      "vsiTitle": "Citizenship",
+      "vsiAuthor": "Richard Bellamy",
+      "rationale": "The relationship between the state and the individual, political participation, and rights are examined (A.2, C.2)."
     },
     {
-      "vsiTitle": "Magna Carta",
-      "vsiAuthor": "Nicholas Vincent",
-      "rationale": "Covers the origins of constitutional government and limitations on state power (subsection A.5.a)."
-    },
-    {
-      "vsiTitle": "Toleration",
-      "vsiAuthor": "Andrew R. Murphy",
-      "rationale": "Covers political tolerance as a foundational principle of liberal democratic governance and church-state relations."
+      "vsiTitle": "Free speech",
+      "vsiAuthor": "Nigel Warburton",
+      "rationale": "Freedom of expression as a human right and its role in public opinion are central themes (B.4, C.2)."
     },
     {
       "vsiTitle": "The Rule of Law",
       "vsiAuthor": "Aziz Z. Huq",
-      "rationale": "Covers the rule of law as a feature of constitutional government and a check on political power (subsection A.5.b)."
+      "rationale": "The rule of law as a feature of constitutional government is the central subject (A.5.b)."
+    },
+    {
+      "vsiTitle": "Magna Carta",
+      "vsiAuthor": "Nicholas Vincent",
+      "rationale": "The origins of constitutional government and limits on monarchical authority are traced from this foundational document (A.5.a)."
+    },
+    {
+      "vsiTitle": "Federalism",
+      "vsiAuthor": "Mark J. Rozell, Clyde Wilcox",
+      "rationale": "Addresses the problem of centralization vs. decentralization of power (C.4.d)."
+    },
+    {
+      "vsiTitle": "Authoritarianism",
+      "vsiAuthor": "James Loxton",
+      "rationale": "Authoritarian government as a political system contrasting with constitutional governance is examined (A.4, A.5)."
+    },
+    {
+      "vsiTitle": "Secularism",
+      "vsiAuthor": "Andrew Copson",
+      "rationale": "Directly addresses the problem of church and state separation (C.4.a)."
+    },
+    {
+      "vsiTitle": "Fundamentalism",
+      "vsiAuthor": "Malise Ruthven",
+      "rationale": "The relationship between religion and politics bears directly on the church-state problem (C.4.a)."
+    },
+    {
+      "vsiTitle": "Revolutions",
+      "vsiAuthor": "Jack A. Goldstone",
+      "rationale": "Revolutionary political action as a means of adapting political forms to changing conditions is examined (C.4.e)."
+    },
+    {
+      "vsiTitle": "Terrorism",
+      "vsiAuthor": "Charles Townshend",
+      "rationale": "Political action by militant groups using violence as a form of political engagement is the central subject (B.3)."
+    },
+    {
+      "vsiTitle": "Governance",
+      "vsiAuthor": "Mark Bevir",
+      "rationale": "Explores how political authority is exercised by states and international organizations (A.3, C.4.c)."
+    },
+    {
+      "vsiTitle": "Feminism",
+      "vsiAuthor": "Margaret Walters",
+      "rationale": "Feminist political theory challenges traditional political structures and advances rights (C.2, C.3.b)."
+    },
+    {
+      "vsiTitle": "Toleration",
+      "vsiAuthor": "Andrew R. Murphy",
+      "rationale": "Political tolerance as a principle of liberal governance and the church-state relationship is examined (C.4.a)."
+    },
+    {
+      "vsiTitle": "Utopianism",
+      "vsiAuthor": "Lyman Tower Sargent",
+      "rationale": "Utopian political theory and visions of ideal political organization are explored (C.3)."
+    },
+    {
+      "vsiTitle": "International Relations",
+      "vsiAuthor": "Paul Wilkinson, Christian Reus-Smit",
+      "rationale": "The national state in the international community, including state sovereignty and political authority, is examined (A.3)."
     }
   ]
 }

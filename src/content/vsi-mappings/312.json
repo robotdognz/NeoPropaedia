@@ -4,72 +4,82 @@
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
-      "rationale": "The primary VSI on evolutionary theory, covering natural selection, speciation, genetic variation, adaptation, and the synthetic theory of evolution."
+      "rationale": "The primary VSI on evolutionary theory, covering natural selection (B.1.b, C.3), genetic drift (C.2), adaptation and fitness (C.3.a), and speciation (D)."
     },
     {
       "vsiTitle": "Darwin",
       "vsiAuthor": "Jonathan Howard",
-      "rationale": "Directly covers Darwin's theory of natural selection, a cornerstone of the history of evolutionary theory outlined in this section."
+      "rationale": "Directly covers Darwin's theory of natural selection (B.1.b), sexual selection (C.3.d), and the concept of species and speciation (D)."
     },
     {
       "vsiTitle": "The History of Life",
       "vsiAuthor": "Michael J. Benton",
-      "rationale": "Covers the antiquity of life, the fossil record of gradual change, and evidence of biological activity in the geological record."
-    },
-    {
-      "vsiTitle": "Human evolution",
-      "vsiAuthor": "Bernard Wood",
-      "rationale": "Addresses evolutionary processes including speciation, adaptation, and the fossil record as evidence for evolution in the human lineage."
-    },
-    {
-      "vsiTitle": "Fossils",
-      "vsiAuthor": "Keith Thomson",
-      "rationale": "Directly relevant to the fossil record as evidence for evolution, including gradual change and structural homologies across species."
+      "rationale": "Covers the antiquity of life in the geological record (A.4), the fossil record of gradual change (B.2.a), and molecular clues to evolutionary history (B.2.d)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Covers genetic variation through mutation, Mendel's theory of heredity, and the molecular basis of evolutionary change."
+      "rationale": "Addresses genetic variation through mutation (C.1), Mendel's theory of heredity (B.1.c), DNA sequencing, and the molecular basis of evolution (B.1.e)."
     },
     {
-      "vsiTitle": "Genomics",
-      "vsiAuthor": "John M. Archibald",
-      "rationale": "Addresses molecular clues to evolutionary history and molecular evolution, key evidence for evolutionary theory."
+      "vsiTitle": "Fossils",
+      "vsiAuthor": "Keith Thomson",
+      "rationale": "Directly relevant to the fossil record as evidence for evolution (B.2.a) and patterns and rates of species evolution (D.6)."
     },
     {
-      "vsiTitle": "Heredity",
-      "vsiAuthor": "John Waller",
-      "rationale": "Covers Mendel's theory of heredity and the synthetic theory of evolution that united genetics with natural selection."
+      "vsiTitle": "Human evolution",
+      "vsiAuthor": "Bernard Wood",
+      "rationale": "Addresses speciation (D), geochronology for dating the geological record (A.4), and ancient DNA as molecular evidence for evolution (B.1.e)."
     },
     {
       "vsiTitle": "Sexual Selection",
       "vsiAuthor": "Marlene Zuk, Leigh W Simmons",
-      "rationale": "Directly addresses sexual selection as a type of natural selection driving speciation and genetic differentiation."
+      "rationale": "Directly covers sexual selection (C.3.d) as a type of natural selection, including sexual dimorphism and its role in speciation (D)."
     },
     {
-      "vsiTitle": "Extinction",
-      "vsiAuthor": "Paul B. Wignall",
-      "rationale": "Covers patterns and rates of species evolution including punctuational evolution and mass extinction events in the fossil record."
+      "vsiTitle": "Heredity",
+      "vsiAuthor": "John Waller",
+      "rationale": "Covers Mendel's theory of heredity (B.1.c) and the synthetic theory of evolution (B.1.d) that united genetics with natural selection."
+    },
+    {
+      "vsiTitle": "Genomics",
+      "vsiAuthor": "John M. Archibald",
+      "rationale": "Addresses the genetic code (A.2.d), molecular and genetic studies (B.1.e), and molecular evolution (D.6.c)."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
-      "rationale": "Covers the molecular and genetic studies that underpin the modern synthetic theory of evolution and the origin of the genetic code."
+      "rationale": "Covers the origin of the genetic code (A.2.d) and molecular studies underlying the synthetic theory of evolution (B.1.d and B.1.e)."
+    },
+    {
+      "vsiTitle": "Extinction",
+      "vsiAuthor": "Paul B. Wignall",
+      "rationale": "Covers patterns and rates of species evolution (D.6), including punctuational evolution and mass extinction events in the fossil record."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
-      "rationale": "Addresses vestiges of ancestral forms in embryonic development as evidence for evolution, and the relationship between development and evolutionary change."
+      "rationale": "Addresses vestiges of ancestral forms in embryonic development (B.2.c) as evidence for evolution, including Hox genes and differentiation."
+    },
+    {
+      "vsiTitle": "Astrobiology",
+      "vsiAuthor": "David C. Catling",
+      "rationale": "Covers hypotheses about the origin of life (A.1), the primitive atmosphere (A.2.a), and the evolution of photosynthesis and oxygen (A.3.c)."
     },
     {
       "vsiTitle": "Philosophy of Biology",
       "vsiAuthor": "Samir Okasha",
-      "rationale": "Examines conceptual foundations of evolutionary theory including natural selection, adaptation, fitness, and the origin of species."
+      "rationale": "Examines conceptual foundations of evolutionary theory including species concepts (D.1), natural selection (C.3), and essentialism vs. population thinking."
     },
     {
-      "vsiTitle": "Dinosaurs",
-      "vsiAuthor": "David Norman",
-      "rationale": "Illustrates evolutionary processes including adaptive radiation, speciation, and extinction through the lens of a major vertebrate lineage."
+      "vsiTitle": "Bacteria",
+      "vsiAuthor": "Sebastian G. B. Amyes",
+      "rationale": "Relevant to the earliest living systems (A.3) including procaryotic cells, and demonstrates evolution through antibiotic resistance (C.3)."
+    },
+    {
+      "vsiTitle": "Microbiology",
+      "vsiAuthor": "Nicholas P. Money",
+      "rationale": "Covers the origin of procaryotic and eucaryotic cells (A.3.b), evolution of early life forms, and nitrogen fixation related to early metabolism."
     }
   ]
 }

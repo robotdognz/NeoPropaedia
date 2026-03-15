@@ -4,122 +4,117 @@
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
-      "rationale": "Directly covers computers, programming systems, and applications of digital computing, core topics in the section."
+      "rationale": "A broad introduction to computing, spanning hardware, programming, languages, and information processing systems (D, H)."
     },
     {
       "vsiTitle": "Computer Science",
       "vsiAuthor": "Subrata Dasgupta",
-      "rationale": "Covers computer languages, software systems, and the foundational science behind information processing."
+      "rationale": "Explores the theoretical foundations of computing including programming systems, language design, and artificial intelligence (D.2, D.3, D.5)."
     },
     {
       "vsiTitle": "The History of Computing",
       "vsiAuthor": "Doron Swade",
-      "rationale": "Covers the historical development from calculating devices through electromechanical calculators to modern computers."
+      "rationale": "Traces the evolution from the abacus and mechanical calculators (B) through the development of modern electronic computers (D)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
-      "rationale": "Directly covers developments in artificial intelligence including expert systems, natural-language processing, computer vision, and robotics."
+      "rationale": "Directly addresses artificial intelligence including expert systems, natural-language processing, computer vision, and robotics (D.5)."
     },
     {
       "vsiTitle": "Information",
       "vsiAuthor": "Luciano Floridi",
-      "rationale": "Directly addresses communication and information theory, and the nature of information processing covered in this section."
+      "rationale": "Provides the theoretical framework for understanding communication and information that underpins all information processing systems (A, H)."
     },
     {
       "vsiTitle": "Big Data",
       "vsiAuthor": "Dawn E. Holmes",
-      "rationale": "Relevant to information processing systems, database management, and large-scale data storage and retrieval."
+      "rationale": "Addresses mass data storage, database design, and search systems -- the infrastructure behind modern information retrieval (H.1.b, H.1.c, H.2.b)."
     },
     {
       "vsiTitle": "Cryptography",
       "vsiAuthor": "Fred Piper, Sean Murphy",
-      "rationale": "Directly covers encryption and decryption techniques, signal security, and the history of cryptology."
+      "rationale": "Directly relevant to signal security, message authentication, and the history of code-making and code-breaking (I.9)."
     },
     {
       "vsiTitle": "Networks",
       "vsiAuthor": "Guido Caldarelli, Michele Catanzaro",
-      "rationale": "Relevant to electronic networks, telecommunications systems, and the interconnection of communication systems."
+      "rationale": "Examines electronic networks and telecommunications systems that form the backbone of modern communications (I.4, I.8)."
     },
     {
       "vsiTitle": "Photography",
       "vsiAuthor": "Steven Edwards",
-      "rationale": "Directly covers still photography, motion-picture photography, and the technology of image capture."
+      "rationale": "Addresses photographic technology for both still and motion-picture imaging (G.1, G.2)."
     },
     {
       "vsiTitle": "Journalism",
       "vsiAuthor": "Ian Hargreaves",
-      "rationale": "Relevant to book, newspaper, and magazine publishing, and modern communications media."
+      "rationale": "Explores the media landscape from traditional publishing (I.1) through modern broadcasting and digital communications."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
-      "rationale": "Relevant to AI developments including robotics, listed as part of artificial intelligence advances."
+      "rationale": "Focuses on robotics as a key application of artificial intelligence, from industrial automation to autonomous systems (D.5)."
     },
     {
       "vsiTitle": "Music and Technology",
       "vsiAuthor": "Mark Katz",
-      "rationale": "Relevant to sound recording and reproducing devices and the technological transformation of audio media."
-    },
-    {
-      "vsiTitle": "Biometrics",
-      "vsiAuthor": "Michael Fairhurst",
-      "rationale": "Relevant to sensing devices, transducers, and pattern recognition in information processing systems."
+      "rationale": "Explores how technology has transformed music through recording and reproducing devices -- mechanical, magnetic, and optical (F)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Relevant to optical systems for recording and reproducing, holography, and optoelectronic components."
-    },
-    {
-      "vsiTitle": "Condensed Matter Physics",
-      "vsiAuthor": "Ross McKenzie",
-      "rationale": "Relevant to semiconductor devices, integrated circuits, and the solid-state physics underlying electronic components."
+      "rationale": "Relevant to holography and the optical systems that underlie modern audio-visual technology (F.3, G.3)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Relevant to radio communications, radar, sonar, and the wave physics underlying telecommunications systems."
+      "rationale": "The physics of waves underpins radio communications (I.5), radar (J.1), sonar (J.2), and modern telecommunications."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
-      "rationale": "Relevant to sound recording devices, phonographs, audio tape systems, and high-fidelity concepts."
+      "rationale": "Relevant to sound recording technologies from phonographs to digital systems, and the principles of high-fidelity reproduction (F, F.5)."
     },
     {
       "vsiTitle": "Surveillance",
       "vsiAuthor": "David Lyon",
-      "rationale": "Relevant to detection, remote sensing, and electronic monitoring systems described in the section."
+      "rationale": "Addresses detection and remote sensing systems, including the electronic monitoring technologies that raise contemporary privacy concerns (J)."
     },
     {
       "vsiTitle": "The History of Cinema",
       "vsiAuthor": "Geoffrey Nowell-Smith",
-      "rationale": "Relevant to motion-picture photography and the technology of film production and projection."
-    },
-    {
-      "vsiTitle": "Sociolinguistics",
-      "vsiAuthor": "John Edwards",
-      "rationale": "Relevant to natural-language processing in artificial intelligence and communication theory."
-    },
-    {
-      "vsiTitle": "Nanotechnology",
-      "vsiAuthor": "Philip Moriarty",
-      "rationale": "Relevant to integrated circuits and miniature arrays of interconnected circuit elements including microprocessors."
-    },
-    {
-      "vsiTitle": "Innovation",
-      "vsiAuthor": "Mark Dodgson, David Gann",
-      "rationale": "Relevant to the development of new information and communication technologies and their societal impacts."
-    },
-    {
-      "vsiTitle": "Intellectual property",
-      "vsiAuthor": "Siva Vaidhyanathan",
-      "rationale": "Relevant to publishing, printing, and the legal frameworks governing information systems and communications content."
+      "rationale": "Traces the technological evolution of motion-picture photography and film production from early cinema to digital formats (G.2)."
     },
     {
       "vsiTitle": "Typography",
       "vsiAuthor": "Paul Luna",
-      "rationale": "Relevant to printing machines and processes, production of printing plates, and photocomposition."
+      "rationale": "Spans printing technology from traditional plate-making and press work (E.3, E.4) to electronic and digital printing (H.1.d)."
+    },
+    {
+      "vsiTitle": "Intellectual property",
+      "vsiAuthor": "Siva Vaidhyanathan",
+      "rationale": "Addresses the legal frameworks -- copyright, patents, and digital rights -- that govern publishing (I.1) and information systems (H)."
+    },
+    {
+      "vsiTitle": "Condensed Matter Physics",
+      "vsiAuthor": "Ross McKenzie",
+      "rationale": "The physics of semiconductors and integrated circuits (K.1.a, K.1.c) provides the foundation for all modern computing hardware."
+    },
+    {
+      "vsiTitle": "Dictionaries",
+      "vsiAuthor": "Lynda Mugglestone",
+      "rationale": "Examines dictionaries and lexicons as structured information systems for reference and education (H.2.c.i)."
+    },
+    {
+      "vsiTitle": "Nanotechnology",
+      "vsiAuthor": "Philip Moriarty",
+      "rationale": "Nanotechnology enables continued miniaturization of integrated circuits and microprocessors at the heart of computing (K.1.c)."
+    },
+    {
+      "vsiTitle": "Biometrics",
+      "vsiAuthor": "Michael Fairhurst",
+      "rationale": "Addresses biometric sensing devices and pattern recognition, connecting physical measurement to information processing (K.2)."
     }
   ]
 }

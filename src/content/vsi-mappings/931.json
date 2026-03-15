@@ -2,49 +2,44 @@
   "sectionCode": "931",
   "mappings": [
     {
-      "vsiTitle": "Chinese literature",
-      "vsiAuthor": "Sabina Knight",
-      "rationale": "Directly relevant to subsection B.2.e on the Classical period of Chinese literature, and to Han and T'ang cultural developments in prose writing, poetry, and literary arts."
-    },
-    {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
-      "rationale": "Directly relevant to subsection B.2.e on Confucianism as a major school of Chinese philosophy, and to its role in Han educational developments and later periods."
+      "rationale": "Directly covers subsection B2e on Confucianism as a major school of Chinese thought and its foundational role in Chinese civilization and governance."
+    },
+    {
+      "vsiTitle": "Chinese literature",
+      "vsiAuthor": "Sabina Knight",
+      "rationale": "Covers the literary traditions of Chinese civilization including poetry, prose, and narrative relevant to subsections B2e and D2c."
     },
     {
       "vsiTitle": "Buddhism",
       "vsiAuthor": "Damien Keown",
-      "rationale": "Relevant to the section's discussion of the introduction of Buddhism during the Han period and the spread of Buddhism during the Six Dynasties period."
-    },
-    {
-      "vsiTitle": "History",
-      "vsiAuthor": "John Arnold",
-      "rationale": "The section opens with a discussion of historiographic problems in studying Chinese civilization and the documentary and archaeological historical sources."
-    },
-    {
-      "vsiTitle": "Archaeology",
-      "vsiAuthor": "Paul Bahn",
-      "rationale": "The section discusses archaeological sources extensively, including Neolithic pottery cultures (Yang-shao, Lung-shan), the Shang site at Anyang, and Bronze Age developments."
-    },
-    {
-      "vsiTitle": "Writing and Script",
-      "vsiAuthor": "Andrew Robinson",
-      "rationale": "Relevant to the section's discussion of the development of Chinese script in the Shang period and the invention of paper during the Han dynasty."
+      "rationale": "Relevant to subsections C2c-iii and D1b on the introduction and spread of Buddhism in China during the Han and Six Dynasties periods."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
-      "rationale": "Relevant to the section's coverage of Han expansion into Central Asia, Pan Ch'ao's campaigns, and the cultural exchanges between China and the wider world."
+      "rationale": "Relevant to subsection C2c-ii on Han relations with Central Asia including Pan Ch'ao's campaigns and trade routes."
     },
     {
-      "vsiTitle": "War and Technology",
-      "vsiAuthor": "Alex Roland",
-      "rationale": "Relevant to the section's discussion of the construction of the Great Wall under Shih Huang Ti, military campaigns of the Han and T'ang dynasties, and Chinese military developments."
+      "vsiTitle": "Writing and Script",
+      "vsiAuthor": "Andrew Robinson",
+      "rationale": "Relevant to subsection B2b on the development of Chinese script during the Shang period and its evolution."
+    },
+    {
+      "vsiTitle": "Archaeology",
+      "vsiAuthor": "Paul Bahn",
+      "rationale": "Relevant to subsection A on archaeological sources and subsection B1 on prehistoric cultures including Neolithic pottery cultures."
     },
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
-      "rationale": "Relevant to the section's coverage of successive Chinese dynasties — Hsia, Shang, Chou, Ch'in, Han, Sui, and T'ang — and their dynastic succession patterns."
+      "rationale": "Relevant to the dynastic succession from Shang through Chou, Ch'in, Han, and T'ang that structures the entire section."
+    },
+    {
+      "vsiTitle": "Modern China",
+      "vsiAuthor": "Rana Mitter",
+      "rationale": "Provides broader context for understanding the foundational Chinese history covered in this section and its lasting influence."
     }
   ]
 }

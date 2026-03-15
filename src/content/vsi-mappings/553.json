@@ -4,102 +4,107 @@
     {
       "vsiTitle": "Law",
       "vsiAuthor": "Raymond Wacks",
-      "rationale": "Covers branches of private law including property, contracts, torts, and civil procedure."
+      "rationale": "Broadly addresses branches of private law including property, contracts, torts, and civil procedure (A-E)."
     },
     {
       "vsiTitle": "Family law",
       "vsiAuthor": "Jonathan Herring",
-      "rationale": "Directly covers family law including marriage, divorce, children's legal status, and inheritance (subsection B)."
+      "rationale": "Directly relevant to section B, examining marriage, divorce, children's legal status, and parental rights."
     },
     {
       "vsiTitle": "Intellectual property",
       "vsiAuthor": "Siva Vaidhyanathan",
-      "rationale": "Directly covers laws protecting intangible property rights including copyright, patents, and trademarks (subsection A.5)."
+      "rationale": "Laws protecting intangible property rights -- copyright, patents, and trademarks -- are the central subject (A.5.b, A.5.c, A.5.d)."
     },
     {
       "vsiTitle": "Employment Law",
       "vsiAuthor": "David Cabrelli",
-      "rationale": "Directly covers labour law governing employment relationships and workers' rights (subsection D.4)."
+      "rationale": "Labour law governing employment relationships and workers' rights is the central focus (D.4)."
     },
     {
       "vsiTitle": "Competition and Antitrust Law",
       "vsiAuthor": "Ariel Ezrachi",
-      "rationale": "Covers laws governing business associations and competitive practices (subsection D.3.b)."
+      "rationale": "Examines laws governing mergers, monopolies, and competitive practices in business (D.3.d, C.5.b)."
     },
     {
       "vsiTitle": "Comparative Law",
       "vsiAuthor": "Sabrina Ragone and Guido Smorto",
-      "rationale": "Covers comparisons between common law and civil law systems in property, contracts, and torts."
+      "rationale": "Explores comparisons between common law and civil law approaches to property, contracts, and torts (A, C, D)."
     },
     {
       "vsiTitle": "American Legal History",
       "vsiAuthor": "G. Edward White",
-      "rationale": "Covers the historical development of American private law including property rights and commercial law."
-    },
-    {
-      "vsiTitle": "The U.S. Supreme Court",
-      "vsiAuthor": "Linda Greenhouse",
-      "rationale": "Covers how the Supreme Court shapes private law through constitutional interpretation."
+      "rationale": "Traces the historical development of American private law including property, tort, copyright, and commercial law (A, C, D)."
     },
     {
       "vsiTitle": "The American Judicial System",
       "vsiAuthor": "Charles L. Zelden",
-      "rationale": "Covers civil procedural law including jurisdiction, venue, and the conduct of civil trials (subsection E)."
-    },
-    {
-      "vsiTitle": "Arbitration",
-      "vsiAuthor": "Thomas Schultz, Thomas Grant",
-      "rationale": "Covers arbitration as an alternative method of resolving commercial and civil disputes."
+      "rationale": "Examines civil procedural law including jurisdiction, venue, trials, appellate courts, and juries (E)."
     },
     {
       "vsiTitle": "The Jury",
       "vsiAuthor": "Renee Lettow Lerner",
-      "rationale": "Covers the jury in civil trials and the rendering of judgment in civil cases (subsection E.2)."
+      "rationale": "The jury in civil trials and the rendering of judgment in civil cases are central topics (E.2)."
     },
     {
-      "vsiTitle": "Medical law",
-      "vsiAuthor": "Charles Foster",
-      "rationale": "Covers tort liability in medical contexts including negligence, manufacturer's liability, and professional standards."
-    },
-    {
-      "vsiTitle": "Accounting",
-      "vsiAuthor": "Christopher Nobes",
-      "rationale": "Covers financial reporting relevant to corporate law, securities, and business association governance (subsection D.3.c)."
-    },
-    {
-      "vsiTitle": "Banking",
-      "vsiAuthor": "John O. S. Wilson, John Goddard",
-      "rationale": "Covers banking law and the legal framework governing financial transactions and credit."
-    },
-    {
-      "vsiTitle": "Privacy",
-      "vsiAuthor": "Raymond Wacks",
-      "rationale": "Covers privacy rights as injuries to personality and invasions of privacy in tort law (subsection C.5.a)."
-    },
-    {
-      "vsiTitle": "Corruption",
-      "vsiAuthor": "Leslie Holmes",
-      "rationale": "Covers legal frameworks addressing deceptive practices and unfair competition (subsection C.5.b)."
-    },
-    {
-      "vsiTitle": "The Rule of Law",
-      "vsiAuthor": "Aziz Z. Huq",
-      "rationale": "Covers the rule of law principles underlying private law systems including property rights and due process."
+      "vsiTitle": "Arbitration",
+      "vsiAuthor": "Thomas Schultz, Thomas Grant",
+      "rationale": "Arbitration as an alternative method of resolving commercial and civil disputes is examined (E)."
     },
     {
       "vsiTitle": "Negotiation",
       "vsiAuthor": "Carrie Menkel-Meadow",
-      "rationale": "Covers negotiation and settlement of disputes as alternatives to civil litigation."
+      "rationale": "Negotiation and settlement as alternatives to civil litigation are explored (E)."
+    },
+    {
+      "vsiTitle": "Medical law",
+      "vsiAuthor": "Charles Foster",
+      "rationale": "Tort liability in medical contexts -- including negligence, consent, and manufacturer's liability -- is the central subject (C.4)."
+    },
+    {
+      "vsiTitle": "Privacy",
+      "vsiAuthor": "Raymond Wacks",
+      "rationale": "Injuries to personality and invasions of privacy are examined as matters of tort law (C.5.a)."
     },
     {
       "vsiTitle": "International law",
       "vsiAuthor": "Vaughan Lowe",
-      "rationale": "Covers private international law including conflicts of laws and foreign judgments (subsection E.1.b)."
+      "rationale": "Private international law, including conflicts of laws and foreign judgments, is addressed (E.1.b)."
+    },
+    {
+      "vsiTitle": "Accounting",
+      "vsiAuthor": "Christopher Nobes",
+      "rationale": "Financial reporting and auditing are relevant to corporate law and business association governance (D.3.c)."
+    },
+    {
+      "vsiTitle": "Banking",
+      "vsiAuthor": "John O. S. Wilson, John Goddard",
+      "rationale": "The legal framework governing financial transactions, credit, and banking regulation is examined (D.2)."
+    },
+    {
+      "vsiTitle": "Mathematical finance",
+      "vsiAuthor": "Mark H. A. Davis",
+      "rationale": "Quantitative aspects of corporate finance including risk management and arbitrage pricing inform securities law (D.3.c)."
+    },
+    {
+      "vsiTitle": "Microeconomics",
+      "vsiAuthor": "Avinash Dixit",
+      "rationale": "Economic theory underlying commercial law -- competition, monopoly, market structures, and antitrust -- provides essential context (D.2, D.3)."
+    },
+    {
+      "vsiTitle": "Taxation",
+      "vsiAuthor": "Stephen Smith",
+      "rationale": "Tax law relevant to corporate finance and business association governance is addressed (D.3.c)."
     },
     {
       "vsiTitle": "Polygamy",
       "vsiAuthor": "Sarah Pearsall",
-      "rationale": "Covers laws concerning marriage contracts and their legal effects across jurisdictions (subsection B.1.a)."
+      "rationale": "Laws concerning the marriage contract across jurisdictions and their legal effects are examined (B.1.a)."
+    },
+    {
+      "vsiTitle": "The Rule of Law",
+      "vsiAuthor": "Aziz Z. Huq",
+      "rationale": "Rule of law principles underlie property rights, due process, and civil procedure (A, E)."
     }
   ]
 }

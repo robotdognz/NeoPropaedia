@@ -2,94 +2,89 @@
   "sectionCode": "829",
   "mappings": [
     {
-      "vsiTitle": "Mormonism",
-      "vsiAuthor": "Richard Bushman",
-      "rationale": "Mormonism is listed as a sect tangentially related to Christianity in the parent section (827.H.3), but also represents a new religious movement reflecting the impact of dominant cultures, relevant to 829.A."
-    },
-    {
-      "vsiTitle": "The Book of Mormon",
-      "vsiAuthor": "Terryl Givens",
-      "rationale": "Covers the foundational scripture of Mormonism, a new religious movement relevant to 829.A."
+      "vsiTitle": "African American Religion",
+      "vsiAuthor": "Eddie S. Glaude Jr.",
+      "rationale": "Examines African American religious movements including the Nation of Islam and Black churches, directly relevant to 829.B on Negro cults and 829.E.3."
     },
     {
       "vsiTitle": "Rastafari",
       "vsiAuthor": "Ennis B. Edmonds",
-      "rationale": "Directly covers Rastafari as a new religious movement reflecting the impact of dominant cultures on African diaspora peoples, relevant to 829.A and 829.B."
+      "rationale": "Rastafari exemplifies a new religious movement shaped by the impact of dominant cultures on African diaspora peoples, relevant to 829.A and 829.B."
     },
     {
-      "vsiTitle": "African American Religion",
-      "vsiAuthor": "Eddie S. Glaude Jr.",
-      "rationale": "Covers African American religious movements including the Nation of Islam and Black Jewish cults, relevant to 829.B on Negro cults in Western cultures."
+      "vsiTitle": "Mormonism",
+      "vsiAuthor": "Richard Bushman",
+      "rationale": "Mormonism stands as a major new religious movement reflecting the impact of Christianity on American religious life, relevant to 829.A."
     },
     {
-      "vsiTitle": "Paganism",
-      "vsiAuthor": "Owen Davies",
-      "rationale": "Covers modern pagan revivals and neo-paganism, directly relevant to 829.F on residues or revivals of ancient and primitive religious beliefs in modern civilizations."
-    },
-    {
-      "vsiTitle": "Witchcraft",
-      "vsiAuthor": "Malcolm Gaskill",
-      "rationale": "Covers modern witchcraft movements including Wicca, directly relevant to 829.F.1 on witchcraft and black magic in modern civilizations."
-    },
-    {
-      "vsiTitle": "Magic",
-      "vsiAuthor": "Owen Davies",
-      "rationale": "Covers modern magical practices and beliefs, relevant to 829.F.1 on black magic in modern civilizations."
-    },
-    {
-      "vsiTitle": "Superstition",
-      "vsiAuthor": "Stuart Vyse",
-      "rationale": "Covers modern superstitious beliefs and practices, relevant to 829.F on residues of ancient beliefs in modern civilizations."
-    },
-    {
-      "vsiTitle": "Pentecostalism",
-      "vsiAuthor": "William K. Kay",
-      "rationale": "Pentecostalism represents a newer charismatic movement reflecting evolving religious culture, relevant to 829.A on new religious movements reflecting the impact of dominant cultures."
-    },
-    {
-      "vsiTitle": "Evangelicalism",
-      "vsiAuthor": "John G. Stackhouse Jr.",
-      "rationale": "Evangelicalism includes many newer movements and churches, relevant to 829.A on new religious movements reflecting dominant cultures."
-    },
-    {
-      "vsiTitle": "Fundamentalism",
-      "vsiAuthor": "Malise Ruthven",
-      "rationale": "Covers fundamentalist movements across religions as newer religious responses to modernity, relevant to 829.A."
-    },
-    {
-      "vsiTitle": "Global Islam",
-      "vsiAuthor": "Nile Green",
-      "rationale": "Covers modern Islamic movements and their global spread, relevant to 829.E on religions and religious movements of Islamic origin."
-    },
-    {
-      "vsiTitle": "Freemasonry",
-      "vsiAuthor": "Andreas Önnerfors",
-      "rationale": "Freemasonry is a fraternal movement with quasi-religious elements and theosophical connections, relevant to 829.C on theosophical groups."
+      "vsiTitle": "The Book of Mormon",
+      "vsiAuthor": "Terryl Givens",
+      "rationale": "Explores the foundational scripture of the Latter-day Saint movement, a key text for understanding Mormonism as a new religious development relevant to 829.A."
     },
     {
       "vsiTitle": "Religion in America",
       "vsiAuthor": "Timothy Beal",
-      "rationale": "Covers the diverse new religious movements in America including those listed in 829.A-B such as the Nation of Islam, Mormonism, and Christian Science."
+      "rationale": "Surveys diverse new religious movements in America including the Nation of Islam, Jainism, and emergent spiritual communities, relevant to 829.A-B."
+    },
+    {
+      "vsiTitle": "Global Islam",
+      "vsiAuthor": "Nile Green",
+      "rationale": "Traces modern Islamic movements and their global spread, relevant to 829.E on religions and movements of Islamic origin."
+    },
+    {
+      "vsiTitle": "Islam",
+      "vsiAuthor": "Malise Ruthven",
+      "rationale": "Islamic sects and offshoots provide essential context for understanding the Baha'i faith and Druze religion discussed in 829.E.1-2."
+    },
+    {
+      "vsiTitle": "Paganism",
+      "vsiAuthor": "Owen Davies",
+      "rationale": "Explores modern neo-pagan revivals including Blavatsky's theosophy, the Golden Dawn, and shamanism, relevant to 829.C on theosophical groups and 829.F on revivals."
+    },
+    {
+      "vsiTitle": "Witchcraft",
+      "vsiAuthor": "Malcolm Gaskill",
+      "rationale": "Modern witchcraft movements, especially Wicca, are directly relevant to 829.F.1 on witchcraft and black magic in modern civilizations."
+    },
+    {
+      "vsiTitle": "Magic",
+      "vsiAuthor": "Owen Davies",
+      "rationale": "Explores modern magical practices and occult beliefs, relevant to 829.F.1 on black magic and Satanism in modern civilizations."
+    },
+    {
+      "vsiTitle": "Superstition",
+      "vsiAuthor": "Stuart Vyse",
+      "rationale": "Examines superstitious beliefs and divination practices that persist in modern life, relevant to 829.F.2 on prophecy, divination, and astrology."
+    },
+    {
+      "vsiTitle": "Fundamentalism",
+      "vsiAuthor": "Malise Ruthven",
+      "rationale": "Fundamentalist movements across religious traditions represent a powerful response to modernity, relevant to 829.A on movements reflecting the impact of dominant cultures."
+    },
+    {
+      "vsiTitle": "Pentecostalism",
+      "vsiAuthor": "William K. Kay",
+      "rationale": "Pentecostalism's charismatic worship and healing practices make it a significant newer movement, relevant to 829.A and 829.F.3 on healing cults."
+    },
+    {
+      "vsiTitle": "Evangelicalism",
+      "vsiAuthor": "John G. Stackhouse Jr.",
+      "rationale": "Newer evangelical movements and megachurches represent important new religious developments within Christianity, relevant to 829.A."
     },
     {
       "vsiTitle": "Spirituality",
       "vsiAuthor": "Philip Sheldrake",
-      "rationale": "Covers modern spiritual movements outside traditional religion, relevant to 829.D on spiritualist groups and 829.F.3 on healing cults."
-    },
-    {
-      "vsiTitle": "Secularism",
-      "vsiAuthor": "Andrew Copson",
-      "rationale": "Covers the secular context against which new religious movements emerge, providing background for understanding 829.A."
-    },
-    {
-      "vsiTitle": "Religion",
-      "vsiAuthor": "Thomas A. Tweed",
-      "rationale": "Provides context for understanding new religious movements within the broader study of religion."
+      "rationale": "Explores modern spiritual movements outside traditional religion including transpersonal psychology, relevant to 829.D on spiritualist groups and 829.F.3."
     },
     {
       "vsiTitle": "Druids",
       "vsiAuthor": "Barry Cunliffe",
-      "rationale": "Modern druidism represents a revival of ancient religious practices, relevant to 829.F on residues or revivals of ancient beliefs in modern civilizations."
+      "rationale": "Modern druidism represents a revival of ancient religious practices, relevant to 829.F on residues or revivals of ancient beliefs."
+    },
+    {
+      "vsiTitle": "Freemasonry",
+      "vsiAuthor": "Andreas Önnerfors",
+      "rationale": "Freemasonry is a fraternal movement with quasi-religious initiation rites and theosophical connections, relevant to 829.C."
     }
   ]
 }

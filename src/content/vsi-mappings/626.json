@@ -4,122 +4,72 @@
     {
       "vsiTitle": "Architecture",
       "vsiAuthor": "Andrew Ballantyne",
-      "rationale": "Directly covers the art of architecture including design elements, building types, and architectural theory — the primary subject of this section."
+      "rationale": "Core text on the art of architecture covering design elements, building types, and architectural theory (A.1 through A.5)."
     },
     {
       "vsiTitle": "Modern architecture",
       "vsiAuthor": "Adam Sharr",
-      "rationale": "Covers modern architectural movements and building types, relevant to the section's treatment of architectural history (section A.7.a)."
+      "rationale": "Covers modern architectural movements including reinforced concrete and key architects like Wright, Mies van der Rohe, and Le Corbusier (A.7.a)."
     },
     {
       "vsiTitle": "British Architecture",
       "vsiAuthor": "Dana Arnold",
-      "rationale": "Covers the history of British architecture, relevant to the section's treatment of Western architecture history (section A.7.a)."
+      "rationale": "Covers British domestic and public architecture including the architectural profession, relevant to Western architectural history (A.5, A.7.a)."
     },
     {
       "vsiTitle": "Landscape architecture",
       "vsiAuthor": "Ian Thompson",
-      "rationale": "Directly covers landscape architecture and design, explicitly addressed in section B on garden and landscape design."
+      "rationale": "Directly covers garden and landscape design including Olmsted, urban design, and landscape gardening (B)."
     },
     {
       "vsiTitle": "Garden History",
       "vsiAuthor": "Gordon Campbell",
-      "rationale": "Directly covers the history of garden design, relevant to the section's treatment of garden and landscape design (section B)."
+      "rationale": "Covers the history of garden design from ancient to modern periods (B)."
     },
     {
       "vsiTitle": "City Planning",
       "vsiAuthor": "Carl Abbott",
-      "rationale": "Directly covers urban design, the third major topic of this section alongside architecture and landscape design."
+      "rationale": "Directly addresses urban design as a discipline, the third major topic of this section alongside architecture and landscape design."
     },
     {
-      "vsiTitle": "Suburbs",
-      "vsiAuthor": "Carl Abbott",
-      "rationale": "Relevant to the section's treatment of urban design and residential architecture, including the planning and design of suburban environments."
-    },
-    {
-      "vsiTitle": "Design",
-      "vsiAuthor": "John Heskett",
-      "rationale": "Covers design principles relevant to architecture, landscape, and urban design — the three subjects of this section."
-    },
-    {
-      "vsiTitle": "Ancient Egyptian Art and Architecture",
-      "vsiAuthor": "Christina Riggs",
-      "rationale": "Covers ancient Egyptian architecture including temples and tombs, relevant to the section's treatment of religious and commemorative architecture (section A.5.b) and non-Western architecture (section A.7.b)."
-    },
-    {
-      "vsiTitle": "Renaissance Art",
-      "vsiAuthor": "Geraldine A. Johnson",
-      "rationale": "Covers Renaissance architecture as a major period in Western architectural history (section A.7.a)."
-    },
-    {
-      "vsiTitle": "The Renaissance",
-      "vsiAuthor": "Jerry Brotton",
-      "rationale": "Covers Renaissance cultural developments including architecture, relevant to Western architectural history."
-    },
-    {
-      "vsiTitle": "Christian art",
-      "vsiAuthor": "Beth Williamson",
-      "rationale": "Covers Christian architectural traditions including churches and cathedrals, relevant to the section's treatment of religious architecture (section A.5.b)."
-    },
-    {
-      "vsiTitle": "Landscapes and Geomorphology",
-      "vsiAuthor": "Andrew Goudie, Heather Viles",
-      "rationale": "Relevant to understanding the natural landscape context within which garden and landscape design operates (section B)."
+      "vsiTitle": "Structural engineering",
+      "vsiAuthor": "David Blockley",
+      "rationale": "Covers constructional systems such as arches, vaults, buttresses, and concrete relevant to structural elements of buildings (A.2.b, A.3)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Covers the properties of building materials including stone, brick, wood, steel, and concrete — materials explicitly listed in section A.2.a."
+      "rationale": "Covers properties of building materials including cement, ceramics, sand, and stone explicitly listed as architectural materials (A.2.a)."
     },
     {
-      "vsiTitle": "Engineering",
-      "vsiAuthor": "David Blockley",
-      "rationale": "Relevant to the section's treatment of constructional systems including post and lintel, arch, vault, dome, truss, and framed structures (section A.2.b)."
+      "vsiTitle": "Aesthetics",
+      "vsiAuthor": "Bence Nanay",
+      "rationale": "Provides philosophical context for aesthetic aspects of architecture including beauty and design judgment (A.1, A.4)."
     },
     {
-      "vsiTitle": "Civil engineering",
-      "vsiAuthor": "David Muir Wood",
-      "rationale": "Relevant to the structural and constructional systems discussed in section A.2.b, including load-bearing walls and framed structures."
-    },
-    {
-      "vsiTitle": "Art Theory",
-      "vsiAuthor": "Cynthia Freeland",
-      "rationale": "Provides theoretical context for understanding architecture as an art, relevant to the section's treatment of design elements and principles of composition."
+      "vsiTitle": "Ancient Egyptian Art and Architecture",
+      "vsiAuthor": "Christina Riggs",
+      "rationale": "Covers Egyptian temples and tombs as examples of religious and commemorative architecture (A.5.b) and non-Western architectural traditions (A.7.b)."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
-      "rationale": "Byzantine architecture, including domed churches and mosques, is a major tradition in Western architectural history."
+      "rationale": "Byzantine architecture including Hagia Sophia exemplifies domed construction and religious architecture (A.2.b, A.5.b, A.7.a)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
-      "rationale": "Islamic architectural traditions including mosques are explicitly listed under religious architecture (section A.5.b), and Islamic architecture is a major non-Western tradition (section A.7.b)."
+      "rationale": "Islamic architectural traditions including mosques are explicitly listed under religious architecture (A.5.b) and represent a major non-Western tradition (A.7.b)."
     },
     {
-      "vsiTitle": "Classics",
-      "vsiAuthor": "Mary Beard, John Henderson",
-      "rationale": "Ancient Greek and Roman architecture including temples are foundational to Western architecture, relevant to section A.7.a."
-    },
-    {
-      "vsiTitle": "The Victorians",
-      "vsiAuthor": "Martin Hewitt",
-      "rationale": "Victorian architecture is a significant period in Western architectural history, relevant to section A.7.a."
-    },
-    {
-      "vsiTitle": "Futurism",
-      "vsiAuthor": "Ara H. Merjian",
-      "rationale": "Futurist architecture challenged conventional design, relevant to the section's treatment of modern Western architecture."
-    },
-    {
-      "vsiTitle": "Environmental ethics",
-      "vsiAuthor": "Robin Attfield",
-      "rationale": "Relevant to the section's treatment of garden and landscape design and the relationship between architecture and the natural environment."
+      "vsiTitle": "Suburbs",
+      "vsiAuthor": "Carl Abbott",
+      "rationale": "Covers suburban residential planning and urbanism, relevant to domestic architecture and urban design (A.5.a)."
     },
     {
       "vsiTitle": "Sustainability",
       "vsiAuthor": "Saleem H. Ali",
-      "rationale": "Relevant to contemporary architectural design practices and the relationship between building design, materials, and environmental sustainability."
+      "rationale": "Addresses sustainable design practices relevant to contemporary architecture and urban planning, including energy flows and environmental impact."
     }
   ]
 }

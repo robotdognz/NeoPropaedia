@@ -4,87 +4,97 @@
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Directly covers chemical reactions including acid-base, oxidation-reduction, reaction kinetics, catalysis, and thermodynamic aspects central to this section."
+      "rationale": "Core coverage of the entire section including acid-base reactions (E), oxidation-reduction (F), reaction classification (A.3), and spectroscopy as an experimental method (C.5)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Directly covers reaction thermodynamics, chemical kinetics, equilibrium, activation energy, and electrochemistry discussed throughout this section."
+      "rationale": "Directly covers activation energy (B.2), reaction thermodynamics and equilibrium (B.3), chemical kinetics (C), and electrochemistry (F.4)."
     },
     {
       "vsiTitle": "The Laws of Thermodynamics",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Covers energy changes in chemical reactions, free energy, entropy, chemical equilibrium, and thermodynamic relations central to this section."
+      "rationale": "Covers free energy, entropy, and thermodynamic principles central to energy changes in chemical reactions (B) and chemical equilibrium (B.3)."
+    },
+    {
+      "vsiTitle": "Entropy",
+      "vsiAuthor": "Andrew Gray",
+      "rationale": "Directly relevant to entropy changes in chemical reactions (B.3) and the thermodynamic classification of exothermic and endothermic processes (B.1)."
     },
     {
       "vsiTitle": "Organic Chemistry",
       "vsiAuthor": "Graham Patrick",
-      "rationale": "Covers organic reaction mechanisms including nucleophilic and electrophilic substitution, addition and elimination reactions discussed in this section."
+      "rationale": "Covers nucleophilic and electrophilic substitution, addition and elimination reaction mechanisms (D.5), and synthesis of chemical compounds (H)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Covers how molecular structure determines chemical reactivity, reaction mechanisms, and the factors influencing the course of reactions."
-    },
-    {
-      "vsiTitle": "The History of Chemistry",
-      "vsiAuthor": "William H. Brock",
-      "rationale": "Covers the historical development of theories concerning chemical reactions and the growth of major concepts discussed in this section."
+      "rationale": "Covers how molecular structure and chemical bonds influence reaction mechanisms (D.1, D.3) and molecular recognition relevant to reaction specificity."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Relevant to understanding the basic reactivity of elements and the conservation of mass and energy in chemical transformations."
-    },
-    {
-      "vsiTitle": "Enzymes",
-      "vsiAuthor": "Paul Engel",
-      "rationale": "Directly relevant to catalysis, reaction rates, enzyme kinetics, and biological oxidation-reduction reactions discussed in this section."
-    },
-    {
-      "vsiTitle": "Biochemistry",
-      "vsiAuthor": "Mark Lorch",
-      "rationale": "Relevant to oxidation-reduction reactions in biological systems and acid-base equilibria in biochemical processes discussed in this section."
-    },
-    {
-      "vsiTitle": "Light",
-      "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Relevant to photochemical reactions, the photochemical process, and the role of light in driving chemical reactions discussed in this section."
-    },
-    {
-      "vsiTitle": "Fire",
-      "vsiAuthor": "Andrew C. Scott",
-      "rationale": "Directly relevant to the section's coverage of oxidation-reduction reactions in combustion and flames."
+      "rationale": "Covers Lavoisier's work on conservation of mass (A.1), oxygen's role in oxidation-reduction (F.1), and elemental reactivity underlying reaction classification (A.3)."
     },
     {
       "vsiTitle": "The Periodic Table",
       "vsiAuthor": "Eric R. Scerri",
-      "rationale": "Relevant to understanding how periodic properties determine chemical reactivity and the classification of reactions."
+      "rationale": "Relevant to understanding how electron configuration determines chemical reactivity and reaction classification (A.3), and electron pairing in transition states (D.4)."
+    },
+    {
+      "vsiTitle": "The History of Chemistry",
+      "vsiAuthor": "William H. Brock",
+      "rationale": "Covers the historical growth of major theories concerning chemical reactions (A.2), from alchemy through modern physical chemistry."
+    },
+    {
+      "vsiTitle": "Enzymes",
+      "vsiAuthor": "Paul Engel",
+      "rationale": "Directly relevant to catalysis (C.1.d), acid-base catalysis (E.3.c), enzyme kinetics as a model for reaction rates (C), and biological redox reactions (F.5)."
+    },
+    {
+      "vsiTitle": "Biochemistry",
+      "vsiAuthor": "Mark Lorch",
+      "rationale": "Covers biochemical reactions relevant to oxidation-reduction in biological systems (F.5) and acid-base equilibria in biological processes (E)."
+    },
+    {
+      "vsiTitle": "Light",
+      "vsiAuthor": "Ian A. Walmsley",
+      "rationale": "Relevant to photochemical reactions (G) and light as a factor affecting reaction rates and direction (C.1.f)."
+    },
+    {
+      "vsiTitle": "Fire",
+      "vsiAuthor": "Andrew C. Scott",
+      "rationale": "Directly relevant to oxidation-reduction reactions in combustion and flames (F.6) and the chemical composition of combustion processes."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
-      "rationale": "Relevant to acid-base equilibria in aqueous solutions, solvents affecting reaction rates, and electrochemical reactions discussed in this section."
+      "rationale": "Relevant to acid-base equilibria in aqueous solutions (E.4.a), the role of solvents in reaction rates (C.1.a), and electrochemical reactions (F.4)."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
-      "rationale": "Relevant to the effects of isotopic substitution on chemical reaction rates and mechanisms discussed in this section."
+      "rationale": "Directly relevant to isotopic substitution as a factor affecting chemical reaction rates (C.1.g) and as a tool for elucidating reaction mechanisms (C.6)."
     },
     {
-      "vsiTitle": "Matter",
-      "vsiAuthor": "Geoff Cottrell",
-      "rationale": "Covers fundamental concepts of matter transformation and energy changes relevant to the basic principles of chemical reactions."
+      "vsiTitle": "Quantum Theory",
+      "vsiAuthor": "John Polkinghorne",
+      "rationale": "Provides the theoretical basis for understanding electron pairing in transition states (D.4), reaction mechanisms (D), and molecular orbital theory underlying reactivity."
     },
     {
-      "vsiTitle": "Measurement",
-      "vsiAuthor": "David J. Hand",
-      "rationale": "Relevant to the experimental measurement of reaction rates, equilibrium constants, and calorimetric methods discussed in this section."
+      "vsiTitle": "Radioactivity",
+      "vsiAuthor": "Claudio Tuniz",
+      "rationale": "Relevant to chain reactions (A.3.a.iii), nuclear energy and radiation-driven reactions, and radioisotope use as tracers in studying reaction mechanisms (C.6)."
     },
     {
-      "vsiTitle": "Philosophy of science",
-      "vsiAuthor": "Samir Okasha",
-      "rationale": "Relevant to the development of theoretical frameworks for understanding chemical reactions, including the growth of major theories discussed in this section."
+      "vsiTitle": "Materials",
+      "vsiAuthor": "Christopher Hall",
+      "rationale": "Covers chemical bonding and synthesis relevant to the synthesis of chemical compounds (H) and factors affecting choice of synthetic paths (H.1)."
+    },
+    {
+      "vsiTitle": "Soft Matter",
+      "vsiAuthor": "Tom McLeish",
+      "rationale": "Relevant to polymerization reactions (A.3.a.ii) as soft matter science deals extensively with polymer formation and macromolecular chemistry."
     }
   ]
 }

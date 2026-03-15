@@ -4,127 +4,112 @@
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Directly covers molecular structure, chemical bonding, organic and inorganic compounds, and the classification of chemical substances central to this section."
-    },
-    {
-      "vsiTitle": "Molecules",
-      "vsiAuthor": "Philip Ball",
-      "rationale": "Directly covers molecular structure, shapes, bonds, and the relationship between molecular structure and the properties of bulk matter."
+      "rationale": "Core overview covering inorganic chemistry, organic chemistry, spectroscopy, and quantum mechanics, relevant across the entire section (A through G)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Covers chemical bonding theory, molecular spectra, quantum mechanical treatments of bonding, and thermodynamic methods for molecular characterization."
+      "rationale": "Activation energy, NMR, computational chemistry, quantum mechanics, and thermodynamics are directly relevant to A.2, B.3.c, B.5, C, and D.2."
+    },
+    {
+      "vsiTitle": "Molecules",
+      "vsiAuthor": "Philip Ball",
+      "rationale": "Chemical bonds, covalent bonds, hydrogen bonds, molecular recognition, and molecular structure are directly relevant to A.3, A.5, and D.3."
     },
     {
       "vsiTitle": "Organic Chemistry",
       "vsiAuthor": "Graham Patrick",
-      "rationale": "Directly covers all major groups of organic compounds discussed in the section including hydrocarbons, alcohols, carboxylic acids, amino acids, and polymers."
+      "rationale": "Directly addresses organic compound synthesis, analysis, and carbon chemistry central to G.1 and G.2."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
-      "rationale": "Directly relevant to X-ray, electron, and neutron diffraction methods for determining molecular structures discussed in this section."
+      "rationale": "X-ray, electron, and neutron diffraction methods with symmetry analysis are directly relevant to B.4 and B.8."
     },
     {
       "vsiTitle": "The Periodic Table",
       "vsiAuthor": "Eric R. Scerri",
-      "rationale": "Relevant to understanding how elemental properties and electron configurations determine chemical bonding and molecular structure."
+      "rationale": "Atomic number, electron configuration, and quantum mechanics underlying elemental properties determine bonding behavior, relevant to D.1 and E.1."
     },
     {
       "vsiTitle": "Quantum Theory",
       "vsiAuthor": "John Polkinghorne",
-      "rationale": "Covers the quantum mechanical framework underlying molecular orbital theory and the quantum-mechanical treatment of chemical bonding in this section."
-    },
-    {
-      "vsiTitle": "Molecular Biology",
-      "vsiAuthor": "Aysha Divan, Janice Royds",
-      "rationale": "Relevant to the section's coverage of nucleic acids (DNA and RNA), proteins, amino acids, and the molecular basis of biological macromolecules."
+      "rationale": "The quantum mechanical framework -- Schrodinger equation, superposition -- underlies molecular orbital theory and chemical bonding, relevant to A.2 and D.2."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Covers the molecular structures of biological molecules including proteins, nucleic acids, carbohydrates, and lipids discussed in this section."
+      "rationale": "Molecular structures of biological molecules including DNA, proteins, and chemical reactions connect to G.1.m-r and G.1.n."
     },
     {
       "vsiTitle": "The History of Chemistry",
       "vsiAuthor": "William H. Brock",
-      "rationale": "Covers the historical development of molecular structure theory and chemical bonding concepts from early ideas to quantum mechanics."
-    },
-    {
-      "vsiTitle": "Magnetism",
-      "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Relevant to magnetic resonance spectrometry and magnetic susceptibility methods used for determining molecular structures discussed in this section."
-    },
-    {
-      "vsiTitle": "Light",
-      "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Relevant to spectrochemical methods including infrared, ultraviolet, and Raman spectroscopy used to identify molecular structures."
-    },
-    {
-      "vsiTitle": "Symmetry",
-      "vsiAuthor": "Ian Stewart",
-      "rationale": "Relevant to the spatial arrangement of atoms, molecular symmetry, stereoisomers, and conformational analysis discussed in this section."
+      "rationale": "The historical development of chemical theory from alchemy through physical chemistry is directly relevant to A.1 and D.1.a."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Relevant to the elemental composition of compounds and the classification of inorganic compounds discussed in this section."
+      "rationale": "Atoms, elements, isotopes, and the periodic table connect to E.1 (classification by elemental composition) and F (inorganic compounds)."
     },
     {
-      "vsiTitle": "Nanotechnology",
-      "vsiAuthor": "Philip Moriarty",
-      "rationale": "Covers molecular-scale imaging and characterization techniques relevant to the experimental procedures for determining molecular structures."
-    },
-    {
-      "vsiTitle": "Microscopy",
-      "vsiAuthor": "Terence Allen",
-      "rationale": "Relevant to the instrumental methods and diffraction techniques used for determining molecular structures discussed in this section."
+      "vsiTitle": "Molecular Biology",
+      "vsiAuthor": "Aysha Divan, Janice Royds",
+      "rationale": "DNA structure and the molecular biology of macromolecules are relevant to G.1.n (proteins), G.1.q (nucleotides), and G.1.r (nucleic acids)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Relevant to the relationship between molecular structure and properties of bulk matter, including polymers and crystalline compounds."
+      "rationale": "Chemical bonds, crystal lattices, and X-ray crystallography connect to A.5 (molecular structure and bulk matter properties) and D.3 (bonds in crystals)."
+    },
+    {
+      "vsiTitle": "The Laws of Thermodynamics",
+      "vsiAuthor": "Peter Atkins",
+      "rationale": "Entropy, free energy, and thermodynamic principles underlie calorimetry and molecular characterization, relevant to B.3.d and B.7."
+    },
+    {
+      "vsiTitle": "Radioactivity",
+      "vsiAuthor": "Claudio Tuniz",
+      "rationale": "Radioisotopes, ionizing radiation, mass spectrometry, and synchrotron radiation are directly relevant to B.3.e (radiochemical methods) and B.3.b (mass spectrometry)."
+    },
+    {
+      "vsiTitle": "Waves",
+      "vsiAuthor": "Mike Goldsmith",
+      "rationale": "Diffraction, electromagnetic radiation, and interference phenomena underpin B.4 (diffraction methods) and C (molecular spectra)."
+    },
+    {
+      "vsiTitle": "Minerals",
+      "vsiAuthor": "David Vaughan",
+      "rationale": "Crystal structure, X-ray crystallography, unit cells, and solid solutions are relevant to B.4, D.3 (bonds in crystals), and F.2 (inorganic structural classification)."
+    },
+    {
+      "vsiTitle": "Water",
+      "vsiAuthor": "John Finney",
+      "rationale": "Water as a molecule with hydrogen bonding and unique chemical properties connects to D.3 (hydrogen bonding) and A.3 (molecular bonds and shapes)."
     },
     {
       "vsiTitle": "Enzymes",
       "vsiAuthor": "Paul Engel",
-      "rationale": "Relevant to the section's coverage of proteins, amino acids, and the molecular structure of biological macromolecules."
+      "rationale": "Protein structure and biochemical catalysis are relevant to G.1.n (amino acids, proteins, and peptides)."
     },
     {
-      "vsiTitle": "Isotopes",
-      "vsiAuthor": "Rob Ellam",
-      "rationale": "Relevant to radiochemical methods including radiometric analysis, activation analysis, and isotopic dilution used in molecular analysis."
+      "vsiTitle": "Nuclear Physics",
+      "vsiAuthor": "Frank Close",
+      "rationale": "Atomic structure, electrons, and radioactivity connect to D.1.c (quantum theory applied to atomic structure) and B.3.e (radiochemical methods)."
     },
     {
       "vsiTitle": "Soft Matter",
       "vsiAuthor": "Tom McLeish",
-      "rationale": "Covers organic polymers, molecular interactions, and the relationship between molecular structure and macroscopic material properties."
+      "rationale": "Polymers, liquids, and the relationship between molecular interactions and macroscopic properties are relevant to A.5 and G.1.u (organic polymers)."
     },
     {
       "vsiTitle": "Condensed Matter Physics",
       "vsiAuthor": "Ross McKenzie",
-      "rationale": "Relevant to understanding bonding in solids, metallic bonds, and the electronic structure of molecules and materials."
+      "rationale": "Bonding in solids, phase transitions, and electronic structure are relevant to D.3 (bonds in crystals) and E.4 (classification by physical state)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Relevant to the molecular structure of nucleic acids (DNA and RNA), nucleotides, and nucleosides discussed in this section."
-    },
-    {
-      "vsiTitle": "Genomics",
-      "vsiAuthor": "John M. Archibald",
-      "rationale": "Relevant to the molecular structure and characterization of nucleic acids, a key class of organic compounds in this section."
-    },
-    {
-      "vsiTitle": "Matter",
-      "vsiAuthor": "Geoff Cottrell",
-      "rationale": "Covers the nature of chemical bonding, molecular bonds, and how molecular structure relates to the physical states of matter."
-    },
-    {
-      "vsiTitle": "Hormones",
-      "vsiAuthor": "Martin Luck",
-      "rationale": "Relevant to the molecular structure of steroids, peptides, and organic compounds that function as hormones discussed in this section."
+      "rationale": "DNA, proteins, and molecular biology connect to G.1.n (proteins) and G.1.r (nucleic acids: DNA and RNA)."
     }
   ]
 }

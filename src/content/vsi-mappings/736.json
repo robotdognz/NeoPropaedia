@@ -4,107 +4,87 @@
     {
       "vsiTitle": "War and Technology",
       "vsiAuthor": "Alex Roland",
-      "rationale": "Directly covers the intersection of military affairs and technology, including weapons, platforms, and logistics."
+      "rationale": "The definitive overview, spanning offensive weaponry (A), defensive systems (B), weapon platforms (C), and the engineering, logistics, and electronics (D-F) that support them."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
-      "rationale": "Directly covers nuclear weapons including fission, fusion, blast, heat, and radioactive fallout effects."
+      "rationale": "Nuclear fission and fusion weapons (A.5) transformed warfare, and this volume explains their energy sources, blast effects, heat, and radioactive fallout."
     },
     {
       "vsiTitle": "Modern War",
       "vsiAuthor": "Richard English",
-      "rationale": "Covers modern military technology and warfare methods including missiles, electronics, and air power."
+      "rationale": "Self-propelled missiles (A.4), military aircraft (C.4), and electromagnetic sensors (F.1) define modern warfare, and this volume integrates them into a coherent picture."
     },
     {
       "vsiTitle": "Ancient warfare",
       "vsiAuthor": "Harry Sidebottom",
-      "rationale": "Covers early hand-powered weapons including shock weapons, missile weapons, and mechanical weapons of the ancient world."
+      "rationale": "Traces the earliest hand-powered weapons—shock weapons, missile weapons, mechanical siege engines (A.1)—and the permanent fortifications built to resist them (B.2.b)."
     },
     {
       "vsiTitle": "Military Strategy",
       "vsiAuthor": "Antulio Joseph Echevarria",
-      "rationale": "Relevant to the strategic use of military technology, weapon platforms, and logistics covered in this section."
+      "rationale": "Strategic thinking determines how weapon platforms (C), logistics (E), and military technology are deployed to achieve political objectives."
     },
     {
       "vsiTitle": "Aerial Warfare",
       "vsiAuthor": "Frank Ledwidge",
-      "rationale": "Directly covers military aircraft as weapon platforms, including fighters, bombers, and helicopters."
+      "rationale": "Military aircraft (C.4)—fighters, bombers, helicopters, and transport planes—reshaped warfare from World War I onward."
     },
     {
       "vsiTitle": "American Military History",
       "vsiAuthor": "Joseph T. Glatthaar",
-      "rationale": "Covers the historical development of military technology from early firearms to modern weapons systems."
+      "rationale": "Traces the evolution of American weaponry from gunpowder arms (A.2) through guided missiles (A.4) and the platforms (C) that carried them into battle."
     },
     {
       "vsiTitle": "American Naval History",
       "vsiAuthor": "Craig L. Symonds",
-      "rationale": "Covers naval weapon platforms including surface ships, submarines, and aircraft carriers."
+      "rationale": "Naval vessels evolved from galleons to nuclear aircraft carriers, illuminating surface ships (C.2) and submarines (C.3) as weapon platforms."
     },
     {
       "vsiTitle": "The First World War",
       "vsiAuthor": "Michael Howard",
-      "rationale": "Covers military technology of WWI including early tanks, artillery, chemical weapons, and aircraft."
+      "rationale": "World War I introduced chemical weapons (A.6), early tanks (C.1.c-d), and trench fortification (B.2), while artillery and small arms (A.2) reached industrial scale."
     },
     {
       "vsiTitle": "World War II",
       "vsiAuthor": "Gerhard L. Weinberg",
-      "rationale": "Covers WWII military technology including nuclear weapons, jet aircraft, rockets, and radar."
-    },
-    {
-      "vsiTitle": "Terrorism",
-      "vsiAuthor": "Charles Townshend",
-      "rationale": "Relevant to the use of explosives, small arms, and unconventional military technology."
-    },
-    {
-      "vsiTitle": "Nuclear power",
-      "vsiAuthor": "Maxwell Irvine",
-      "rationale": "Relevant to nuclear-powered weapon platforms including aircraft carriers, cruisers, and submarines."
-    },
-    {
-      "vsiTitle": "Nuclear Physics",
-      "vsiAuthor": "Frank Close",
-      "rationale": "Covers the nuclear physics underlying fission and fusion weapons."
-    },
-    {
-      "vsiTitle": "Cryptography",
-      "vsiAuthor": "Fred Piper, Sean Murphy",
-      "rationale": "Relevant to military electronics, signal security, and encryption/decryption techniques used in military communications."
+      "rationale": "World War II accelerated military technology across every domain: aircraft (C.4), naval vessels (C.2.c), nuclear weapons (A.5), and radar (F.1)."
     },
     {
       "vsiTitle": "The Napoleonic Wars",
       "vsiAuthor": "Mike Rapport",
-      "rationale": "Covers the military technology of the gunpowder era including artillery, small arms, and fortification."
+      "rationale": "The gunpowder era's apex saw artillery and small arms (A.2) reach new effectiveness alongside permanent fortification systems (B.2.c)."
     },
     {
       "vsiTitle": "The Cold War",
       "vsiAuthor": "Robert J. McMahon",
-      "rationale": "Covers the technological arms race including nuclear weapons, ballistic missiles, and strategic defense systems."
+      "rationale": "The superpower arms race drove ballistic missiles (A.4), nuclear weapons (A.5), and missile defense systems (B.3) to unprecedented levels of sophistication."
     },
     {
       "vsiTitle": "Clausewitz",
       "vsiAuthor": "Michael Howard",
-      "rationale": "Relevant to the strategic and tactical use of military technology and the theory of warfare."
+      "rationale": "Clausewitz's theoretical framework for war informs the strategic application of engineering (D), logistics (E), and military technology at every level."
     },
     {
-      "vsiTitle": "International security",
-      "vsiAuthor": "Christopher S. Browning",
-      "rationale": "Relevant to missile defense systems, nuclear deterrence, and the security implications of military technology."
+      "vsiTitle": "Cryptography",
+      "vsiAuthor": "Fred Piper, Sean Murphy",
+      "rationale": "Signal security and encrypted communications are vital aspects of military electronics (F.1), from Enigma to modern digital encryption."
     },
     {
-      "vsiTitle": "Civil Wars",
-      "vsiAuthor": "Monica Duffy Toft",
-      "rationale": "Relevant to the use of military technology in internal conflicts and asymmetric warfare."
-    },
-    {
-      "vsiTitle": "Military Justice",
-      "vsiAuthor": "Eugene R. Fidell",
-      "rationale": "Relevant to the legal frameworks governing the use of military technology including chemical and biological weapons."
+      "vsiTitle": "Nuclear power",
+      "vsiAuthor": "Maxwell Irvine",
+      "rationale": "Nuclear propulsion powers aircraft carriers, cruisers (C.2.e), and submarines (C.3.a), giving naval forces virtually unlimited range."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
-      "rationale": "Relevant to modern military technology including autonomous weapons systems and unmanned platforms."
+      "rationale": "Autonomous weapons systems and unmanned platforms are reshaping weapon platforms (C) and self-propelled missile technology (A.4)."
+    },
+    {
+      "vsiTitle": "Terrorism",
+      "vsiAuthor": "Charles Townshend",
+      "rationale": "Explosives, grenades, mines, and bombs (A.3) alongside small arms (A.2.d) are wielded in unconventional warfare contexts that challenge traditional military frameworks."
     }
   ]
 }

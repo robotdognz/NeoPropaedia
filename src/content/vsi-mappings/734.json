@@ -4,77 +4,77 @@
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Covers the engineering principles underlying vehicle design, ship construction, aircraft design, and road/bridge construction."
+      "rationale": "Provides the engineering foundations underlying automobile design (C.4), ship architecture (F.2), and aircraft configuration (G.1)."
     },
     {
       "vsiTitle": "Civil engineering",
       "vsiAuthor": "David Muir Wood",
-      "rationale": "Directly relevant to the construction of roads, highways, bridges, tunnels, canals, and harbour works."
+      "rationale": "Addresses the infrastructure that transportation depends on: roads and highways (B), railroad bridges and tunnels (A.4.a), and canals and inland waterways (F.3)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Covers the development of steam transportation including railroads and steamships, core topics in the section's history."
+      "rationale": "Traces how steam power transformed transportation, from Stephenson's early locomotives and the spread of railways to the first ocean-crossing steamships (A.4)."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
-      "rationale": "Covers navigational methods and systems relevant to both water and air transportation."
+      "rationale": "Navigational science is inseparable from water (F) and air (G) transportation, and this volume explains the instruments and methods that made long-distance travel possible."
     },
     {
       "vsiTitle": "Fluid Mechanics",
       "vsiAuthor": "Eric Lauga",
-      "rationale": "Relevant to ship design hydrodynamics and hydrostatics, and aerodynamic principles of aircraft flight."
+      "rationale": "The physics of fluid flow governs both ship hull design (F.2.a, hydrodynamic and hydrostatic factors) and aircraft flight characteristics (G.1)."
     },
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
-      "rationale": "Relevant to power units for propulsion including steam generators, internal-combustion engines, gas turbines, and nuclear reactors."
+      "rationale": "Examines the propulsion technologies—steam generators, internal-combustion engines, gas turbines, and nuclear reactors—that power ships and other vehicles (F.2.c)."
     },
     {
       "vsiTitle": "Structural engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Relevant to the construction of railroad bridges, tunnels, and road infrastructure."
+      "rationale": "Bridges, tunnels, and harbour structures are essential transportation infrastructure, directly relevant to A.4.a (railroad bridges and tunnels), A.5.a (road bridges), and F.4 (harbour works)."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
-      "rationale": "Covers the history of exploration that drove the development of ships, navigation, and transportation technology."
+      "rationale": "Exploration drove the earliest advances in shipping, from sails and oars (A.3) through the voyages that expanded maritime technology worldwide."
     },
     {
-      "vsiTitle": "The Vikings",
-      "vsiAuthor": "Julian D. Richards",
-      "rationale": "Relevant to the early development of sails, oars, and shipbuilding in water transportation."
+      "vsiTitle": "Aerial Warfare",
+      "vsiAuthor": "Frank Ledwidge",
+      "rationale": "Military aviation accelerated fixed-wing aircraft development, tracing the arc from the Wright brothers' first flights to modern heavier-than-air craft (G.1.b)."
     },
     {
-      "vsiTitle": "The Silk Road",
-      "vsiAuthor": "James A. Millward",
-      "rationale": "Covers the history of overland transportation networks and their development across civilizations."
-    },
-    {
-      "vsiTitle": "Sustainability",
-      "vsiAuthor": "Saleem H. Ali",
-      "rationale": "Relevant to the environmental impact of transportation systems and the development of sustainable transport."
-    },
-    {
-      "vsiTitle": "Climate change",
-      "vsiAuthor": "Mark Maslin",
-      "rationale": "Relevant to the environmental impact of transportation fuels and emissions from the transportation industry."
-    },
-    {
-      "vsiTitle": "Oceans",
-      "vsiAuthor": "Dorrik Stow",
-      "rationale": "Relevant to water transportation, harbour works, and the maritime environment in which ships operate."
+      "vsiTitle": "American Naval History",
+      "vsiAuthor": "Craig L. Symonds",
+      "rationale": "Traces the evolution of naval vessels from wooden warships to modern carriers, illuminating ship types (F.1), shipbuilding (F.2.b), and the historical arc of maritime technology."
     },
     {
       "vsiTitle": "City Planning",
       "vsiAuthor": "Carl Abbott",
-      "rationale": "Relevant to the development of mass urban transport and traffic networks."
+      "rationale": "Urban transportation networks—subways, streetcars, bus systems—are central to A.5.b (mass urban transport and traffic networks)."
+    },
+    {
+      "vsiTitle": "The Silk Road",
+      "vsiAuthor": "James A. Millward",
+      "rationale": "The ancient overland trade routes illustrate A.2 (the wheel and the road), showing how transportation technology and commerce co-evolved over millennia."
+    },
+    {
+      "vsiTitle": "Design",
+      "vsiAuthor": "John Heskett",
+      "rationale": "Industrial design shapes how vehicles look and function, directly relevant to C.4 (automobile design) and the broader aesthetics of transportation equipment."
+    },
+    {
+      "vsiTitle": "Sustainability",
+      "vsiAuthor": "Saleem H. Ali",
+      "rationale": "Addresses the environmental footprint of transportation systems and the push toward sustainable alternatives in A.5 (development of modern transport)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Covers the economic history of transportation development from primitive methods through modern air transport."
+      "rationale": "Transportation revolutions—canals, railways, steamships, air routes—reshaped global trade, spanning A (history of transportation) from primitive methods to modern air transport."
     }
   ]
 }

@@ -4,97 +4,72 @@
     {
       "vsiTitle": "Galaxies",
       "vsiAuthor": "John Gribbin",
-      "rationale": "Directly covers galaxy classification, physical properties, clusters, radio and X-ray galaxies, quasars, and the Milky Way central to this section."
+      "rationale": "Core text: covers galaxy classification and distribution (A.1), physical properties (A.2), clusters (A.4), the Milky Way (B), quasars (A.5.c), and galaxy evolution (A.6)."
     },
     {
       "vsiTitle": "Stars",
       "vsiAuthor": "Andrew King",
-      "rationale": "Directly covers stellar characteristics, the Hertzsprung-Russell diagram, stellar evolution, variable stars, and stellar structure discussed in this section."
+      "rationale": "Core text: covers the Hertzsprung-Russell diagram (B.4, D.5.a), stellar evolution (D.7), nuclear fusion and energy generation (D.6.b), variable stars including novae and supernovae (D.4), neutron stars and white dwarfs (D.7)."
     },
     {
       "vsiTitle": "Astrophysics",
       "vsiAuthor": "James Binney",
-      "rationale": "Covers the physics of galaxies and stars including stellar structure, stellar atmospheres, and galactic dynamics discussed throughout this section."
+      "rationale": "Covers the physics of galaxies and stars including stellar atmospheres and internal structure (D.6), electromagnetic spectrum observations (D.2.c), magnetic fields (B.5.h, B.6.c), and galactic dynamics (B.6.d)."
     },
     {
       "vsiTitle": "Cosmology",
       "vsiAuthor": "Peter Coles",
-      "rationale": "Relevant to the large-scale distribution of galaxies, galaxy clusters, quasars, and the evolution of galaxies discussed in this section."
-    },
-    {
-      "vsiTitle": "Black holes",
-      "vsiAuthor": "Katherine Blundell",
-      "rationale": "Relevant to quasars, active galactic nuclei, extragalactic X-ray sources, and the end states of stellar evolution discussed in this section."
+      "rationale": "Relevant to galaxy clusters and their distribution (A.4), quasars (A.5.c), the Milky Way's place in the universe (B), and the origin and evolution of galaxies (A.6)."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
-      "rationale": "Relevant to stellar properties and structure, as the Sun is the nearest star and provides the basis for understanding stellar characteristics."
+      "rationale": "Relevant as the nearest and best-studied star, providing the observational basis for understanding stellar properties (D.2-D.3), stellar structure (D.6), and magnetic fields (B.5.h)."
+    },
+    {
+      "vsiTitle": "Black holes",
+      "vsiAuthor": "Katherine Blundell",
+      "rationale": "Directly relevant to quasars and active galactic nuclei (A.5), extragalactic X-ray sources (A.5.b), and end states of stellar evolution including neutron stars (D.7)."
     },
     {
       "vsiTitle": "The History of Astronomy",
       "vsiAuthor": "Michael Hoskin",
-      "rationale": "Covers the historical development of our understanding of galaxies, stellar classification, and the structure of the Milky Way."
-    },
-    {
-      "vsiTitle": "Nuclear Physics",
-      "vsiAuthor": "Frank Close",
-      "rationale": "Relevant to thermonuclear reactions in stars that power stellar energy generation and produce chemical elements discussed in this section."
+      "rationale": "Covers the historical development of stellar classification, constellations and star naming (D.1.b-c), and the discovery of the Milky Way's structure (B)."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
-      "rationale": "Covers the observational instruments used to determine distances, luminosities, spectra, and other stellar and galactic properties."
+      "rationale": "Covers radio and optical telescopes essential for determining galaxy distances (A.1.b), observing extragalactic radio sources (A.5.a), and measuring stellar spectra and luminosities (D.2)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Relevant to stellar spectra, the electromagnetic spectrum, and the observational methods for determining stellar characteristics."
-    },
-    {
-      "vsiTitle": "Physics",
-      "vsiAuthor": "Sidney Perkowitz",
-      "rationale": "Covers the fundamental physical processes including nuclear fusion, radiation, and gravity that govern stellar and galactic behaviour."
+      "rationale": "Relevant to stellar spectra (D.2.c), the electromagnetic spectrum used for galaxy and star observation, and the wave-particle duality underlying spectral analysis (D.2.b)."
     },
     {
       "vsiTitle": "Gravity",
       "vsiAuthor": "Timothy Clifton",
-      "rationale": "Relevant to gravitational dynamics of galaxies, stellar formation through gravitational contraction, and galactic rotation discussed in this section."
-    },
-    {
-      "vsiTitle": "Relativity",
-      "vsiAuthor": "Russell Stannard",
-      "rationale": "Relevant to the physics of compact stellar remnants, relativistic effects in extreme gravitational fields, and galactic dynamics."
-    },
-    {
-      "vsiTitle": "Radioactivity",
-      "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Relevant to nuclear processes in stars and the formation of radioactive elements through stellar nucleosynthesis."
-    },
-    {
-      "vsiTitle": "Magnetism",
-      "vsiAuthor": "Stephen J. Blundell",
-      "rationale": "Relevant to interstellar magnetic fields, the magnetic field of the Galaxy, and their effects on cosmic rays and radio waves."
-    },
-    {
-      "vsiTitle": "Planetary Systems",
-      "vsiAuthor": "Raymond T. Pierrehumbert",
-      "rationale": "Relevant to the formation of planetary systems around stars as part of the broader stellar evolution discussed in this section."
+      "rationale": "Relevant to gravitational condensation in star formation (D.7.a.i), galactic rotation and dynamics (B.6.d), and interactions between galaxy cluster members (A.4.b)."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Relevant to the formation of chemical elements in stars through nucleosynthesis, a key topic in stellar evolution."
+      "rationale": "Relevant to the formation of chemical elements in stars through nucleosynthesis (D.7.b) and the chemical evolution of the Galaxy (B.7.b)."
+    },
+    {
+      "vsiTitle": "Waves",
+      "vsiAuthor": "Mike Goldsmith",
+      "rationale": "Covers electromagnetic radiation relevant to radio galaxies (A.5.a), X-ray galaxies (A.5.b), and the observational methods used across the electromagnetic spectrum for stellar and galactic study."
+    },
+    {
+      "vsiTitle": "Planetary Systems",
+      "vsiAuthor": "Raymond T. Pierrehumbert",
+      "rationale": "Relevant to the formation of planetary systems around stars as part of stellar evolution (D.7) and the broader context of star formation (B.7.c)."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
-      "rationale": "Relevant to stellar nucleosynthesis and the formation of isotopes in stars, connecting to chemical evolution of the Galaxy."
-    },
-    {
-      "vsiTitle": "Copernicus",
-      "vsiAuthor": "Owen Gingerich",
-      "rationale": "Relevant to the historical development of stellar nomenclature, celestial coordinate systems, and constellations discussed in this section."
+      "rationale": "Relevant to stellar nucleosynthesis and the formation of isotopes in stars (D.7.b), connecting to the chemical evolution of the Galaxy (B.7.b)."
     }
   ]
 }

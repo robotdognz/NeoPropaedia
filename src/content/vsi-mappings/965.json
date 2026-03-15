@@ -4,42 +4,62 @@
     {
       "vsiTitle": "American History",
       "vsiAuthor": "Paul S. Boyer",
-      "rationale": "Directly covers U.S. history including the period 1763-1920 encompassing the Revolution, Civil War, westward expansion, and industrialization discussed in this section."
+      "rationale": "Directly covers U.S. history from 1763-1920 including the Revolution, Civil War, westward expansion, and industrialization."
     },
     {
       "vsiTitle": "The American Revolution",
       "vsiAuthor": "Robert J. Allison",
-      "rationale": "Directly addresses the American Revolutionary period (1763-87), including opposition to British taxation, the Declaration of Independence, and the War of Independence covered in subsection A.1.a."
+      "rationale": "Traces the Revolutionary period from colonial opposition to British taxation through the Declaration of Independence and the War of Independence (A.1.a)."
     },
     {
       "vsiTitle": "The Founding Fathers",
       "vsiAuthor": "Richard B. Bernstein",
-      "rationale": "Covers the Constitutional Convention, federal Constitution, and the struggle for ratification (1787-89) discussed in subsection A.1.b, as well as the formation of early national policies."
+      "rationale": "Examines the Constitutional Convention, the drafting of the federal Constitution, and the struggle for ratification (A.1.b)."
+    },
+    {
+      "vsiTitle": "Alexander Hamilton",
+      "vsiAuthor": "Michael Federici",
+      "rationale": "Hamilton's economic policies and role as a key architect of the federal government are explicitly discussed in A.1.b.ii."
+    },
+    {
+      "vsiTitle": "The U.S. Constitution",
+      "vsiAuthor": "David J. Bodenhamer",
+      "rationale": "Traces constitutional development from the ratification debates through the Reconstruction amendments that reshaped American governance (A.1.b, B.1)."
     },
     {
       "vsiTitle": "Lincoln",
       "vsiAuthor": "Allen C. Guelzo",
-      "rationale": "Directly relevant to Lincoln's election (1860), the secession crisis, the Civil War, and emancipation policies discussed in subsections A.2-3."
+      "rationale": "Directly relevant to Lincoln's election (1860), the secession crisis, the Civil War, and emancipation policies (A.3)."
     },
     {
       "vsiTitle": "The U.S. Civil War",
       "vsiAuthor": "Louis P. Masur",
-      "rationale": "Directly covers the Civil War (1860-65), including sectionalism, secession, military campaigns, and emancipation discussed in subsection A.3."
+      "rationale": "Directly addresses the Civil War (1860-65) including sectionalism, secession, military campaigns, and emancipation (A.3)."
     },
     {
       "vsiTitle": "American Slavery",
       "vsiAuthor": "Heather Andrea Williams",
-      "rationale": "Covers the institution of slavery, the Abolitionist movement, and the economic and psychological bases of slavery central to subsections A.2 and A.3."
+      "rationale": "Examines the institution of slavery, the Abolitionist movement, and the economic and psychological foundations of the slave system (A.2, A.3)."
     },
     {
       "vsiTitle": "Abolitionism",
       "vsiAuthor": "Richard S. Newman",
-      "rationale": "Directly addresses the Abolitionist movement discussed in subsections A.2.c and A.3.a as a major reform activity and driver of sectional conflict."
+      "rationale": "The Abolitionist movement was a driving force in antebellum reform and the sectional crisis that led to civil war (A.2.c, A.3.a)."
     },
     {
       "vsiTitle": "Reconstruction",
       "vsiAuthor": "Allen C. Guelzo",
-      "rationale": "Directly covers Radical Reconstruction (1866-77) and the New South (1877-1900), including freedmen, sharecropping, and Jim Crow legislation in subsection B.1."
+      "rationale": "Directly addresses Radical Reconstruction (1866-77) and the emergence of the New South, including freedmen's struggles, sharecropping, and Jim Crow (B.1)."
+    },
+    {
+      "vsiTitle": "Black Narratives of Slavery",
+      "vsiAuthor": "Daina Ramey Berry, Kali N. Gross",
+      "rationale": "Provides first-person perspectives on slavery, abolition, Black Codes, and Jim Crow, giving human depth to the political history (A.3, B.1)."
+    },
+    {
+      "vsiTitle": "African American History",
+      "vsiAuthor": "Jonathan Scott Holloway",
+      "rationale": "Traces African American history through slavery, the Civil War, Reconstruction, and Jim Crow, centering the Black experience within the national narrative (A.3, B.1)."
     },
     {
       "vsiTitle": "The American Presidency",
@@ -49,212 +69,167 @@
     {
       "vsiTitle": "The U.S. Congress",
       "vsiAuthor": "Donald Ritchie",
-      "rationale": "Relevant to the section's discussion of congressional politics including Radical Republican Congress, legislative supremacy period (1877-1900), and tariff legislation."
+      "rationale": "Relevant to congressional politics including the Radical Republican Congress, the legislative supremacy period (1877-1900), and tariff legislation (B.1, B.2.f)."
     },
     {
       "vsiTitle": "The U.S. Supreme Court",
       "vsiAuthor": "Linda Greenhouse",
-      "rationale": "Relevant to the role of the Supreme Court under Marshall discussed in subsection A.2.a and the general development of federal judicial power."
-    },
-    {
-      "vsiTitle": "The U.S. Constitution",
-      "vsiAuthor": "David J. Bodenhamer",
-      "rationale": "Covers the federal Constitution and its ratification (1787-89) discussed in subsection A.1.b, as well as constitutional development through amendments during Reconstruction."
+      "rationale": "Relevant to the Supreme Court under Marshall and the development of federal judicial power (A.1.b.iii, A.2.a)."
     },
     {
       "vsiTitle": "American Political Parties and Elections",
       "vsiAuthor": "L. Sandy Maisel",
-      "rationale": "Relevant to the formation of political parties from Federalists and Democratic-Republicans through the emergence of the Republican Party discussed throughout subsections A and B."
+      "rationale": "Traces the formation of American political parties from the Federalist-Republican split through Whigs, Democrats, and the rise of the Republican Party (A-B)."
     },
     {
       "vsiTitle": "American Political History",
       "vsiAuthor": "Donald Critchlow",
-      "rationale": "Covers the broad political history of the United States from its founding through the Progressive Era, directly relevant to the entire section."
+      "rationale": "Provides a political narrative of the United States from its founding through the Progressive Era (A-B)."
     },
     {
       "vsiTitle": "American Legal History",
       "vsiAuthor": "G. Edward White",
-      "rationale": "Relevant to the development of federal law, civil rights legislation, and the Sherman Anti-Trust Act discussed in subsections B.1 and B.2.f."
+      "rationale": "Traces the development of federal law including civil rights legislation and antitrust regulation under the Sherman Act (B.1, B.2.f)."
     },
     {
       "vsiTitle": "Tocqueville",
       "vsiAuthor": "Harvey Mansfield",
-      "rationale": "Tocqueville's analysis of American democracy is directly relevant to Jacksonian democracy (subsection A.2.b) and the extension of the franchise."
+      "rationale": "Tocqueville's analysis of American democracy is directly relevant to Jacksonian democracy and the extension of the franchise (A.2.b)."
     },
     {
       "vsiTitle": "North American Indians",
       "vsiAuthor": "Theda Perdue, Michael D. Green",
-      "rationale": "Relevant to the Indian removal policy under Jackson (subsection A.2.b), violation of Indian treaties, and Indian wars in subsection B.2.b.iv."
+      "rationale": "Essential for understanding Indian removal under Jackson, the violation of treaties, and the Indian wars of westward expansion (A.2.b, B.2.b.iv)."
     },
     {
       "vsiTitle": "The American West",
       "vsiAuthor": "Stephen Aron",
-      "rationale": "Directly covers the development of the West (1865-1900) including mining, cattle industry, railroads, and Indian conflicts discussed in subsection B.2.b."
+      "rationale": "Explores the development of the American West (1865-1900) including mining, cattle ranching, railroads, and the conflicts with Native peoples (B.2.b)."
     },
     {
       "vsiTitle": "The American South",
       "vsiAuthor": "Charles Reagan Wilson",
-      "rationale": "Relevant to the section's extensive coverage of Southern history including slavery, the Civil War, Reconstruction, and the New South with Jim Crow legislation."
+      "rationale": "Provides a regional perspective on slavery, secession, Reconstruction, and the emergence of the Jim Crow South (A.3, B.1)."
     },
     {
       "vsiTitle": "American Immigration",
       "vsiAuthor": "David A. Gerber",
-      "rationale": "Relevant to the discussion of German and Irish immigration (1830-50) and southern/eastern European immigration in subsections A.2.a.iii and B.2.a."
+      "rationale": "Traces successive waves of immigration -- Irish and German in the 1830s-50s, then southern and eastern European -- and their impact on American society (A.2.a.iii, B.2.a)."
     },
     {
       "vsiTitle": "American Women's History",
       "vsiAuthor": "Susan Ware",
-      "rationale": "Relevant to social reform movements, the 'Age of Reform' (1830-50), and Progressive Era reforms discussed in subsections A.2.c and B.3.b."
-    },
-    {
-      "vsiTitle": "African American Religion",
-      "vsiAuthor": "Eddie S. Glaude Jr.",
-      "rationale": "Relevant to the religious dimensions of slavery, the Abolitionist movement, and the Black experience during Reconstruction discussed in subsections A.2-3 and B.1."
-    },
-    {
-      "vsiTitle": "African American History",
-      "vsiAuthor": "Jonathan Scott Holloway",
-      "rationale": "Directly relevant to the section's extensive coverage of slavery, the Civil War, Reconstruction, freedmen, Jim Crow, and the black response to white supremacy."
+      "rationale": "Addresses women's roles in antebellum reform movements and the Progressive Era, including suffrage and social welfare campaigns (A.2.c, B.3.b)."
     },
     {
       "vsiTitle": "American Cultural History",
       "vsiAuthor": "Eric Avila",
-      "rationale": "Relevant to the cultural developments discussed in subsections A.2.e and B.4, including literature, poetry, the Transcendentalist movement, and the arts."
+      "rationale": "Explores cultural developments from the Transcendentalist movement through the Gilded Age arts and letters (A.2.e, B.4)."
     },
     {
       "vsiTitle": "American Intellectual History",
       "vsiAuthor": "Jennifer Ratner-Rosenhagen",
-      "rationale": "Relevant to the Transcendentalist movement, growth of American philosophy, and intellectual developments discussed in subsections A.2.e and B.4."
-    },
-    {
-      "vsiTitle": "Colonial America",
-      "vsiAuthor": "Alan Taylor",
-      "rationale": "Provides background context for the colonial period leading up to the Revolutionary era that opens this section in 1763."
+      "rationale": "Traces American intellectual life from Transcendentalism and the growth of pragmatism through Progressive-era thought (A.2.e, B.4)."
     },
     {
       "vsiTitle": "Progressivism",
       "vsiAuthor": "Walter Nugent",
-      "rationale": "Directly covers the Progressive Movement (c. 1896-1920) including muckrakers, social reform, and the administrations of Roosevelt, Taft, and Wilson discussed in subsection B.3.b."
+      "rationale": "Directly addresses the Progressive Movement (c. 1896-1920) including muckrakers, social reform, and the administrations of Roosevelt, Taft, and Wilson (B.3.b)."
     },
     {
       "vsiTitle": "The First World War",
       "vsiAuthor": "Michael Howard",
-      "rationale": "Relevant to U.S. entry into World War I, mobilization, the Western Front campaigns, and Wilson's role at the Paris Peace Conference discussed in subsection B.3.c."
-    },
-    {
-      "vsiTitle": "The Napoleonic Wars",
-      "vsiAuthor": "Mike Rapport",
-      "rationale": "Relevant to the War of 1812 context and Madison's administration discussed in subsection A.1.b.iii, as well as background to the Monroe Doctrine."
-    },
-    {
-      "vsiTitle": "Democracy",
-      "vsiAuthor": "Bernard Crick",
-      "rationale": "Relevant to Jacksonian democracy, extension of the franchise, and the development of democratic institutions discussed throughout the section."
-    },
-    {
-      "vsiTitle": "Federalism",
-      "vsiAuthor": "Mark J. Rozell, Clyde Wilcox",
-      "rationale": "Directly relevant to the establishment of the federal system, the Constitutional Convention, and the ongoing tension between federal and state power discussed throughout the section."
-    },
-    {
-      "vsiTitle": "Capitalism",
-      "vsiAuthor": "James Fulcher",
-      "rationale": "Relevant to the industrialization of the American economy, development of trusts and holding companies, and the manufacturing boom discussed in subsection B.2.c."
-    },
-    {
-      "vsiTitle": "The Industrial Revolution",
-      "vsiAuthor": "Robert C. Allen",
-      "rationale": "Relevant to the industrialization and manufacturing transformation of the U.S. economy discussed in subsections A.2 and B.2.c."
-    },
-    {
-      "vsiTitle": "Empire",
-      "vsiAuthor": "Stephen Howe",
-      "rationale": "Relevant to U.S. emergence as an imperial power, the Spanish-American War, and acquisition of overseas territories discussed in subsection B.3.a."
-    },
-    {
-      "vsiTitle": "Canada",
-      "vsiAuthor": "Donald Wright",
-      "rationale": "Directly covers Canadian history including British colonial rule, Confederation (1867), and development through 1920 discussed in subsection C."
-    },
-    {
-      "vsiTitle": "American Naval History",
-      "vsiAuthor": "Craig L. Symonds",
-      "rationale": "Relevant to naval aspects of the War of Independence, the War of 1812, the Civil War naval campaigns, and the Spanish-American War discussed throughout the section."
-    },
-    {
-      "vsiTitle": "American Military History",
-      "vsiAuthor": "Joseph T. Glatthaar",
-      "rationale": "Covers military aspects of the Revolution, War of 1812, Mexican War, Civil War, Indian wars, and Spanish-American War discussed throughout the section."
-    },
-    {
-      "vsiTitle": "American Business History",
-      "vsiAuthor": "Walter A. Friedman",
-      "rationale": "Relevant to the development of trusts, holding companies, railroads, and the industrialization of the economy discussed in subsection B.2.c-d."
-    },
-    {
-      "vsiTitle": "The Mexican Revolution",
-      "vsiAuthor": "Alan Knight",
-      "rationale": "Relevant to the context of U.S.-Mexican relations, the Mexican War (1846-48), and intervention in Mexican affairs under Wilson discussed in subsections A.2.d and B.3.b.iii."
-    },
-    {
-      "vsiTitle": "Nationalism",
-      "vsiAuthor": "Steven Grosby",
-      "rationale": "Relevant to the growth of American nationalism, the Era of Good Feelings, and sectionalism discussed in subsection A.2.a."
-    },
-    {
-      "vsiTitle": "Diaspora",
-      "vsiAuthor": "Kevin Kenny",
-      "rationale": "Relevant to the waves of immigration from Europe, the Irish and German immigration (1830-50), and southern/eastern European immigration discussed in subsections A.2.a.iii and B.2.a."
-    },
-    {
-      "vsiTitle": "American Foreign Relations",
-      "vsiAuthor": "Andrew Preston",
-      "rationale": "Covers U.S. foreign relations from the early republic through World War I, including the Monroe Doctrine, Open Door policy, and Roosevelt Corollary discussed throughout the section."
-    },
-    {
-      "vsiTitle": "Racism",
-      "vsiAuthor": "Ali Rattansi",
-      "rationale": "Relevant to the discussion of racial dimensions of slavery, Jim Crow legislation, white supremacy, and prejudice against immigrants discussed in subsections A.3, B.1, and B.2.a."
+      "rationale": "Addresses U.S. entry into World War I, military mobilization, the Western Front campaigns, and Wilson's role at the Paris Peace Conference (B.3.c)."
     },
     {
       "vsiTitle": "The Treaty of Versailles",
       "vsiAuthor": "Michael S. Neiberg",
-      "rationale": "Directly relevant to Wilson's policies at the Paris Peace Conference and the U.S. Senate rejection of the Treaty discussed in subsection B.3.c.iii."
+      "rationale": "Focuses on the Paris Peace Conference and the Senate's consequential rejection of the Treaty of Versailles (B.3.c.iii)."
     },
     {
-      "vsiTitle": "Diplomacy",
-      "vsiAuthor": "Joseph M. Siracusa",
-      "rationale": "Relevant to U.S. diplomatic history including the Open Door policy, Roosevelt Corollary, and Wilson's peace diplomacy discussed in subsections B.3.a and B.3.c."
+      "vsiTitle": "Democracy",
+      "vsiAuthor": "Bernard Crick",
+      "rationale": "Provides theoretical context for understanding Jacksonian democracy, the extension of the franchise, and evolving democratic institutions (A.2.b)."
+    },
+    {
+      "vsiTitle": "Federalism",
+      "vsiAuthor": "Mark J. Rozell, Clyde Wilcox",
+      "rationale": "Illuminates the tension between federal and state power that runs through American history from the Constitutional Convention onward (A.1.b)."
+    },
+    {
+      "vsiTitle": "Capitalism",
+      "vsiAuthor": "James Fulcher",
+      "rationale": "Provides the economic framework for understanding industrialization, the rise of trusts and holding companies, and the manufacturing boom (B.2.c)."
+    },
+    {
+      "vsiTitle": "The Industrial Revolution",
+      "vsiAuthor": "Robert C. Allen",
+      "rationale": "Places American industrialization within the broader context of the global Industrial Revolution (A.2, B.2.c)."
+    },
+    {
+      "vsiTitle": "Empire",
+      "vsiAuthor": "Stephen Howe",
+      "rationale": "Provides context for understanding America's emergence as an imperial power, the Spanish-American War, and the acquisition of overseas territories (B.3.a)."
+    },
+    {
+      "vsiTitle": "Canada",
+      "vsiAuthor": "Donald Wright",
+      "rationale": "Traces Canadian history from British colonial rule through Confederation (1867) and subsequent national development (C)."
+    },
+    {
+      "vsiTitle": "American Naval History",
+      "vsiAuthor": "Craig L. Symonds",
+      "rationale": "Addresses the naval dimensions of the Revolution, the War of 1812, Civil War riverine and coastal campaigns, and the Spanish-American War."
+    },
+    {
+      "vsiTitle": "American Military History",
+      "vsiAuthor": "Joseph T. Glatthaar",
+      "rationale": "Provides military history spanning the Revolution, War of 1812, Mexican War, Civil War, Indian wars, and Spanish-American War."
+    },
+    {
+      "vsiTitle": "American Business History",
+      "vsiAuthor": "Walter A. Friedman",
+      "rationale": "Traces the growth of American business from railroads and trusts through the corporate economy of the Gilded Age (B.2.c-d)."
+    },
+    {
+      "vsiTitle": "The Mexican Revolution",
+      "vsiAuthor": "Alan Knight",
+      "rationale": "Provides context for U.S.-Mexican relations including the Mexican War (1846-48) and Wilson's intervention in Mexico's revolution (A.2.d, B.3.b.iii)."
+    },
+    {
+      "vsiTitle": "American Foreign Relations",
+      "vsiAuthor": "Andrew Preston",
+      "rationale": "Traces American foreign policy from the Monroe Doctrine through the Open Door policy and Roosevelt Corollary to entry into World War I (B.3.a, B.3.c)."
     },
     {
       "vsiTitle": "American poetry",
       "vsiAuthor": "David Caplan",
-      "rationale": "Relevant to the cultural development of American poetry discussed in subsections A.2.e and B.4.a."
+      "rationale": "American poetry from Whitman through the moderns reflects the cultural currents discussed in A.2.e and B.4.a."
     },
     {
       "vsiTitle": "Prohibition",
       "vsiAuthor": "W. J. Rorabaugh",
-      "rationale": "The temperance movement was a major reform activity in the Age of Reform (1830-50) and the Progressive Era discussed in subsections A.2.c and B.3.b."
-    },
-    {
-      "vsiTitle": "The Civil Rights Movement",
-      "vsiAuthor": "Thomas C. Holt",
-      "rationale": "Provides context for understanding the post-Civil War civil rights struggles, Black Codes, and federal civil rights legislation during Reconstruction discussed in subsection B.1."
+      "rationale": "The temperance movement was a major reform activity in the Age of Reform (1830-50) and the Progressive Era (A.2.c, B.3.b)."
     },
     {
       "vsiTitle": "Asian American History",
       "vsiAuthor": "Madeline Y. Hsu",
-      "rationale": "Relevant to the history of Asian immigration and the anti-Chinese sentiment reflected in westward expansion and immigration policies discussed in subsection B.2."
+      "rationale": "Addresses Asian immigration and anti-Chinese sentiment in the context of westward expansion and exclusionary immigration policies (B.2)."
     },
     {
-      "vsiTitle": "Alexander Hamilton",
-      "vsiAuthor": "Michael Federici",
-      "rationale": "Hamilton was a key architect of the US Constitution and federal government, directly relevant to the section's coverage of American political development from 1763 to 1920."
+      "vsiTitle": "Nationalism",
+      "vsiAuthor": "Steven Grosby",
+      "rationale": "Provides theoretical background for understanding the growth of American nationalism, the Era of Good Feelings, and the rise of sectionalism (A.2.a)."
     },
     {
-      "vsiTitle": "Black Narratives of Slavery",
-      "vsiAuthor": "Daina Ramey Berry, Kali N. Gross",
-      "rationale": "Covers the history and aftermath of slavery in America including abolition, Black Codes, and Jim Crow, directly relevant to this section's treatment of US social and political development."
+      "vsiTitle": "Diaspora",
+      "vsiAuthor": "Kevin Kenny",
+      "rationale": "Addresses diaspora communities and waves of immigration that reshaped American demographics and culture (A.2.a.iii, B.2.a)."
+    },
+    {
+      "vsiTitle": "Racism",
+      "vsiAuthor": "Ali Rattansi",
+      "rationale": "Addresses the racial dimensions of slavery, Jim Crow, white supremacy, and anti-immigrant prejudice that shaped American society (A.3, B.1, B.2.a)."
     }
   ]
 }

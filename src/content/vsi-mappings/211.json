@@ -4,42 +4,52 @@
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
-      "rationale": "Redfern's VSI provides a comprehensive overview of the Earth as a planet, directly covering orbital motions, rotation, the geoid, and geodetic measurements central to this section."
+      "rationale": "Directly covers the Earth as a planet including its orbital motions, rotation, and physical shape—the core subject of this section."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "rationale": "Lowrie covers the physical properties of the Earth including its shape, rotation, gravitational and tidal effects, and geodetic measurements—all core topics of this section."
+      "rationale": "Covers the Earth's rotation, gravitational effects, and geodetic measurement methods including GPS and satellite techniques relevant to the world geodetic system."
     },
     {
       "vsiTitle": "Gravity",
       "vsiAuthor": "Timothy Clifton",
-      "rationale": "Clifton's treatment of gravity is directly relevant to the Earth's gravitational field, Coriolis force, centrifugal effects, and tidal friction discussed in this section."
-    },
-    {
-      "vsiTitle": "Planets",
-      "vsiAuthor": "David A. Rothery",
-      "rationale": "Rothery covers planetary science including orbital mechanics, planetary rotation, and the physical characteristics of Earth in the context of the solar system."
+      "rationale": "Directly relevant to the Coriolis force, centrifugal effects, and tidal friction produced by Earth's rotation and gravitational interactions."
     },
     {
       "vsiTitle": "Tides",
       "vsiAuthor": "David George Bowers, Emyr Martyn Roberts",
-      "rationale": "Directly relevant to tidal friction and the dynamic effects of Earth's rotation on tidal forces discussed in this section."
+      "rationale": "Covers tidal forces and tidal friction arising from the Moon's gravitational pull on the rotating Earth, a specific topic in the outline."
     },
     {
-      "vsiTitle": "Planetary Systems",
-      "vsiAuthor": "Raymond T. Pierrehumbert",
-      "rationale": "Covers planetary orbital dynamics and revolution around stars, directly relevant to the Earth's orbital motions and revolution about the Sun."
+      "vsiTitle": "Planets",
+      "vsiAuthor": "David A. Rothery",
+      "rationale": "Covers planetary orbital mechanics and the solar nebula, directly relevant to the Earth's revolution about the Sun and its place in the solar system."
+    },
+    {
+      "vsiTitle": "Moons",
+      "vsiAuthor": "David Rothery",
+      "rationale": "Discusses tidal heating and the Earth-Moon system, relevant to tidal friction and the dynamic effects of Earth's rotation."
+    },
+    {
+      "vsiTitle": "The Sun",
+      "vsiAuthor": "Philip Judge",
+      "rationale": "Relevant to the Earth's revolution about the Sun and solar-terrestrial dynamic forces that influence the Earth's orbital environment."
+    },
+    {
+      "vsiTitle": "Measurement",
+      "vsiAuthor": "David J. Hand",
+      "rationale": "Covers measurement science, SI units, and standardization, relevant to the measurement of geodetic parameters and the world geodetic system."
+    },
+    {
+      "vsiTitle": "The History of Astronomy",
+      "vsiAuthor": "Michael Hoskin",
+      "rationale": "Traces the historical development of understanding Earth's orbital motions and shape, from Ptolemy through Copernicus, Kepler, and Newton."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
-      "rationale": "Bennett discusses geodetic measurement, the shape of the Earth, and satellite-based positioning systems that relate to the world geodetic system and measurement of geodetic parameters."
-    },
-    {
-      "vsiTitle": "Earth System Science",
-      "vsiAuthor": "Tim Lenton",
-      "rationale": "Lenton's overview of the Earth as an integrated system provides context for understanding the planet's orbital motions, physical shape, and geodetic properties."
+      "rationale": "Covers longitude determination, the magnetic compass, and satellite-based positioning—directly relevant to geodetic measurement and approximations of Earth's shape."
     }
   ]
 }

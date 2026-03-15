@@ -4,107 +4,82 @@
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Covers the historical development of major industries including textiles, steel, chemicals, and manufacturing."
+      "rationale": "Traces the historical rise of manufacturing (B) and fabrication industries (C), explaining how textiles, steel, and chemicals became the backbone of industrial economies."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Relevant to the principles underlying the aerospace, automotive, and other major manufacturing industries."
+      "rationale": "Engineering principles underpin aerospace (B.1), automotive (B.2), and electronics (C.6) industries, connecting design theory to industrial production."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "rationale": "Directly relevant to the chemical industry and the processing industries including plastics, rubber, dyes, and pharmaceuticals."
+      "rationale": "The chemical industry (D.1) and processing sectors—plastics (D.5), rubber (D.6), dyes and pigments (D.8)—rely on the reactions and principles this volume introduces."
     },
     {
       "vsiTitle": "Organic Chemistry",
       "vsiAuthor": "Graham Patrick",
-      "rationale": "Relevant to the chemical, plastics, rubber, and man-made fibre processing industries that rely on organic chemical processes."
+      "rationale": "Organic chemistry drives the petroleum (D.2), plastics (D.5), rubber (D.6), and man-made fibre (D.9) processing industries."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Covers the materials science underlying the steel, textile, leather, plastics, and rubber industries."
+      "rationale": "Materials science connects the steel industry (C.2), textile industry (C.1), and plastics (D.5), explaining how molecular structure determines industrial performance."
     },
     {
       "vsiTitle": "Drugs",
       "vsiAuthor": "Leslie Iversen",
-      "rationale": "Directly relevant to the pharmaceuticals industry, a major processing industry in the section."
+      "rationale": "A core text on D.4 (the pharmaceuticals industry), tracing the pipeline from drug discovery and development through manufacturing and regulation."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
-      "rationale": "Covers industrial research and development, the final topic in the section."
-    },
-    {
-      "vsiTitle": "Capitalism",
-      "vsiAuthor": "James Fulcher",
-      "rationale": "Relevant to the economic organization and market structures of major manufacturing and processing industries."
+      "rationale": "Industrial research and development (I) drives competitive advantage across manufacturing, and this volume examines how innovation processes unfold in practice."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Covers the historical development of major industries and the economic forces shaping manufacturing and service sectors."
+      "rationale": "Economic forces—trade, labor costs, capital flows—shaped the evolution of manufacturing (B) and processing industries (D) across historical periods."
     },
     {
-      "vsiTitle": "Management",
-      "vsiAuthor": "John Hendry",
-      "rationale": "Relevant to principles of organization of work and production across major industries."
-    },
-    {
-      "vsiTitle": "Molecules",
-      "vsiAuthor": "Philip Ball",
-      "rationale": "Relevant to the chemical, plastics, and pharmaceuticals processing industries and their molecular foundations."
-    },
-    {
-      "vsiTitle": "Marketing",
-      "vsiAuthor": "Kenneth Le Meunier-FitzHugh",
-      "rationale": "Relevant to the merchandising and marketing of consumer goods and service industries."
-    },
-    {
-      "vsiTitle": "Branding",
-      "vsiAuthor": "Robert Jones",
-      "rationale": "Relevant to the merchandising and marketing of consumer goods produced by major industries."
+      "vsiTitle": "Capitalism",
+      "vsiAuthor": "James Fulcher",
+      "rationale": "Manufacturing (B) and service industries (F) are organized within capitalist market structures, and this volume explains how capital, labor, and competition interact."
     },
     {
       "vsiTitle": "Fashion",
       "vsiAuthor": "Rebecca Arnold",
-      "rationale": "Relevant to the clothing and footwear industry and the textile industry."
-    },
-    {
-      "vsiTitle": "Accounting",
-      "vsiAuthor": "Christopher Nobes",
-      "rationale": "Relevant to the financial organization and management of major manufacturing and processing industries."
+      "rationale": "The clothing and footwear industry (B.3) and textile industry (C.1) span the journey from design through production, where aesthetics meets industrial process."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Relevant to the lumber industry and the paper industry's reliance on forest resources."
+      "rationale": "The lumber industry (C.8) and paper industry (D.3) depend on forest resources, linking natural resource management to industrial output."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Relevant to the pharmaceuticals industry and the cosmetics and personal care industry."
+      "rationale": "Biotechnology and synthetic biology are transforming the pharmaceuticals industry (D.4) and cosmetics and personal care industry (D.11)."
     },
     {
-      "vsiTitle": "Entrepreneurship",
-      "vsiAuthor": "Paul Westhead, Mike Wright",
-      "rationale": "Relevant to industrial research and development and the organization of new manufacturing ventures."
-    },
-    {
-      "vsiTitle": "Corporate social responsibility",
-      "vsiAuthor": "Jeremy Moon",
-      "rationale": "Relevant to the social obligations of major industries including environmental and labor practices."
+      "vsiTitle": "Marketing",
+      "vsiAuthor": "Kenneth Le Meunier-FitzHugh",
+      "rationale": "Merchandising and marketing of consumer goods (H) connects industrial production to the consumers who purchase the output."
     },
     {
       "vsiTitle": "Environmental economics",
       "vsiAuthor": "Stephen Smith",
-      "rationale": "Relevant to the environmental impact and regulation of major processing industries such as chemicals and petroleum."
+      "rationale": "Environmental regulation shapes the chemical (D.1), petroleum (D.2), and surface-coating (D.7) processing industries, imposing costs and driving cleaner technologies."
     },
     {
-      "vsiTitle": "American Business History",
-      "vsiAuthor": "Walter A. Friedman",
-      "rationale": "Covers the historical development and organization of major American industries, relevant to the section's industrial overview."
+      "vsiTitle": "Surveillance",
+      "vsiAuthor": "David Lyon",
+      "rationale": "Security and protection systems (F.5) represent a growing segment of the service industries, driven by technological advances in monitoring."
+    },
+    {
+      "vsiTitle": "Energy Systems",
+      "vsiAuthor": "Nick Jenkins",
+      "rationale": "Utilities industries (G), including electric power generation and distribution, supply the energy on which all major industries depend."
     }
   ]
 }

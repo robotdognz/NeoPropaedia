@@ -2,79 +2,89 @@
   "sectionCode": "534",
   "mappings": [
     {
-      "vsiTitle": "Economics",
-      "vsiAuthor": "Partha Dasgupta",
-      "rationale": "Covers fundamental concepts of income distribution, wealth measurement, and government economic policy."
-    },
-    {
       "vsiTitle": "Taxation",
       "vsiAuthor": "Stephen Smith",
-      "rationale": "Directly covers the nature, purposes, and types of taxation including progressive and regressive taxes (subsections B.2 and B.3)."
+      "rationale": "A core text on all types of taxes (income, sales, capital gains, corporate, excise), tax burdens, progressive vs. regressive taxes, and tax systems (B.2, B.3)."
+    },
+    {
+      "vsiTitle": "Economics",
+      "vsiAuthor": "Partha Dasgupta",
+      "rationale": "Explores the measurement and distribution of income and wealth including GDP and factor shares (A.1, A.2)."
     },
     {
       "vsiTitle": "Poverty",
       "vsiAuthor": "Philip N. Jefferson",
-      "rationale": "Directly covers income inequality and the distribution of wealth at the bottom of the income spectrum."
-    },
-    {
-      "vsiTitle": "Capitalism",
-      "vsiAuthor": "James Fulcher",
-      "rationale": "Covers how capitalist systems generate patterns of wealth and income distribution through wages, profits, interest, and rent."
+      "rationale": "Directly addresses income distribution, inequality, housing, and the conditions at the lower end of the wealth spectrum (A.3)."
     },
     {
       "vsiTitle": "The Welfare State",
       "vsiAuthor": "David Garland",
-      "rationale": "Directly covers government-sponsored welfare programs and transfers that affect income distribution (subsection B.4.c)."
+      "rationale": "Government-administered welfare programs, social services, unemployment insurance, and transfers are central themes (B.4.c)."
     },
     {
-      "vsiTitle": "Marx",
-      "vsiAuthor": "Peter Singer",
-      "rationale": "Covers Marxist critique of wealth distribution under capitalism and the relationship between capital and labour income."
-    },
-    {
-      "vsiTitle": "Socialism",
-      "vsiAuthor": "Michael Newman",
-      "rationale": "Covers socialist approaches to redistribution of wealth and income through public ownership and planning."
-    },
-    {
-      "vsiTitle": "Neoliberalism",
-      "vsiAuthor": "Manfred Steger, Ravi K. Roy",
-      "rationale": "Covers neoliberal approaches to taxation, deregulation, and their effects on income distribution."
-    },
-    {
-      "vsiTitle": "Keynes",
-      "vsiAuthor": "Robert Skidelsky",
-      "rationale": "Covers Keynesian fiscal policy including budgetary deficits, public debt, and government transfers."
+      "vsiTitle": "Capitalism",
+      "vsiAuthor": "James Fulcher",
+      "rationale": "Examines how wages, profits, interest, and rent generate income distribution patterns under capitalism (A.2.a)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
-      "rationale": "Covers historical patterns of wealth distribution among countries and within populations."
+      "rationale": "Traces historical patterns of wealth distribution among countries and the causes of inequality (A.3)."
     },
     {
       "vsiTitle": "Competition and Antitrust Law",
       "vsiAuthor": "Ariel Ezrachi",
-      "rationale": "Covers antitrust legislation as a form of direct control over the private sector affecting wealth distribution (subsection B.6.b)."
-    },
-    {
-      "vsiTitle": "Development",
-      "vsiAuthor": "Ian Goldin",
-      "rationale": "Covers income inequality between developed and developing nations and redistribution mechanisms."
-    },
-    {
-      "vsiTitle": "Adam Smith",
-      "vsiAuthor": "Christopher J. Berry",
-      "rationale": "Covers foundational theories of how wealth is distributed through factor shares in the economy."
-    },
-    {
-      "vsiTitle": "Globalization",
-      "vsiAuthor": "Manfred Steger",
-      "rationale": "Covers how global economic integration affects patterns of wealth distribution across and within countries."
+      "rationale": "Antitrust legislation and regulation of monopolistic practices function as direct controls over the private sector (B.6.b)."
     },
     {
       "vsiTitle": "Employment Law",
       "vsiAuthor": "David Cabrelli",
-      "rationale": "Covers labour legislation affecting wage controls and worker welfare programs (subsection B.6.b)."
+      "rationale": "Wage controls, equal pay, and labour legislation directly affect income distribution (B.6.a, B.6.b)."
+    },
+    {
+      "vsiTitle": "Keynes",
+      "vsiAuthor": "Robert Skidelsky",
+      "rationale": "Keynesian fiscal policy -- budgetary deficits and surpluses, public debt, and government spending -- is essential for understanding state intervention in income distribution (B.1, B.5)."
+    },
+    {
+      "vsiTitle": "Neoliberalism",
+      "vsiAuthor": "Manfred Steger, Ravi K. Roy",
+      "rationale": "Debates about taxation, deregulation, and privatization as government approaches to income distribution are examined."
+    },
+    {
+      "vsiTitle": "Development",
+      "vsiAuthor": "Ian Goldin",
+      "rationale": "Income inequality between nations and purchasing power parity comparisons across countries are key themes (A.3)."
+    },
+    {
+      "vsiTitle": "Marx",
+      "vsiAuthor": "Peter Singer",
+      "rationale": "Marx's critique of wealth distribution under capitalism and the relationship between capital and labour income remains foundational (A.2.a)."
+    },
+    {
+      "vsiTitle": "Socialism",
+      "vsiAuthor": "Michael Newman",
+      "rationale": "Socialist approaches to redistribution through public ownership, social democracy, and progressive taxation are central themes (B)."
+    },
+    {
+      "vsiTitle": "Adam Smith",
+      "vsiAuthor": "Christopher J. Berry",
+      "rationale": "Smith's classical theories of wealth distribution through factor shares -- wages, rent, and profits -- laid the groundwork for modern economics (A.2.a)."
+    },
+    {
+      "vsiTitle": "Banking",
+      "vsiAuthor": "John O. S. Wilson, John Goddard",
+      "rationale": "Interest payments, public debt, and financial mechanisms through which government affects income are key topics (B.4.a, B.5)."
+    },
+    {
+      "vsiTitle": "The Great Depression and The New Deal",
+      "vsiAuthor": "Eric Rauchway",
+      "rationale": "The New Deal serves as a landmark case study of government transfers, subsidies, and fiscal policy affecting income distribution (B.4, B.5)."
+    },
+    {
+      "vsiTitle": "Behavioural Economics",
+      "vsiAuthor": "Michelle Baddeley",
+      "rationale": "Explores how government economic policy and taxation interact with actual economic behaviour (B.2, B.4.b)."
     }
   ]
 }

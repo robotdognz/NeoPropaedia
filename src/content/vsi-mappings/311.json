@@ -4,52 +4,72 @@
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "rationale": "Directly addresses the molecular level of biotic organization, including polymers, carbohydrates, lipids, proteins, and nucleic acids that define the properties of life."
+      "rationale": "Covers the molecular level of biotic organization (A.2.a) including polymers, carbohydrates, lipids, proteins, and nucleic acids, and addresses metabolism (A.1.b)."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
-      "rationale": "Covers the cellular level of biotic organization, including procaryotic and eucaryotic cells, which is fundamental to understanding characteristics of living things."
+      "rationale": "Directly covers the cellular level of biotic organization (A.2.b) including procaryotic and eucaryotic cells, nucleus, and endoplasmic reticulum."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "rationale": "Addresses the molecular basis of metabolism (catabolism and anabolism) and the chemical properties underlying life processes."
+      "rationale": "Addresses metabolism (A.1.b) including catabolism and anabolism at the molecular level, and biochemical reactions within cells."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
-      "rationale": "Covers molecular-level organization of life including nucleic acids, proteins, and the molecular machinery of reproduction and development."
+      "rationale": "Covers nucleic acids and the molecular machinery of reproduction, growth, and development (A.1.d) at the molecular level of organization (A.2.a)."
+    },
+    {
+      "vsiTitle": "Ecology",
+      "vsiAuthor": "Jaboury Ghazoul",
+      "rationale": "Directly addresses population-level biotic organization (A.2.d) including species, communities, and interaction with the environment (A.1.e)."
+    },
+    {
+      "vsiTitle": "Developmental biology",
+      "vsiAuthor": "Lewis Wolpert",
+      "rationale": "Covers reproduction, growth, and development (A.1.d) including cell differentiation and the progression from blastula to organism (A.2.c)."
+    },
+    {
+      "vsiTitle": "Enzymes",
+      "vsiAuthor": "Paul Engel",
+      "rationale": "Directly relevant to metabolism (A.1.b), covering the chemical reactions and proteins that drive catabolism and anabolism in living organisms."
+    },
+    {
+      "vsiTitle": "The Brain",
+      "vsiAuthor": "Michael O'Shea",
+      "rationale": "Covers sensory reception (A.1.c) and the nervous system, addressing how organisms process stimuli and interact with their environment (A.1.e)."
+    },
+    {
+      "vsiTitle": "Genes",
+      "vsiAuthor": "Jonathan Slack",
+      "rationale": "Addresses the molecular level of organization (A.2.a) through DNA, genes, and genomes, and reproduction at the cellular level (A.1.d and A.2.b)."
     },
     {
       "vsiTitle": "Astrobiology",
       "vsiAuthor": "David C. Catling",
-      "rationale": "Directly addresses the concept of extraterrestrial life and its chemistry, and the significance of the search for life beyond Earth."
+      "rationale": "Directly covers the concept of extraterrestrial life and its chemistry (B.1) and the significance of the search for life beyond Earth (B.2)."
     },
     {
-      "vsiTitle": "Microbiomes",
-      "vsiAuthor": "Angela E. Douglas",
-      "rationale": "Illustrates the population and community levels of biotic organization, showing how microbial communities interact with their environment."
+      "vsiTitle": "Planetary Systems",
+      "vsiAuthor": "Raymond T. Pierrehumbert",
+      "rationale": "Relevant to the search for life beyond Earth (B.2), covering planetary environments where life might exist."
+    },
+    {
+      "vsiTitle": "Circadian Rhythms",
+      "vsiAuthor": "Russell Foster, Leon Kreitzman",
+      "rationale": "Illustrates interaction with the environment (A.1.e) and metabolism (A.1.b), showing how organisms respond to environmental cycles."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
-      "rationale": "Covers cellular-level life including procaryotic organisms, their metabolism, reproduction, and interaction with the environment."
+      "rationale": "Covers procaryotic cells (A.2.b), microbial metabolism, reproduction, and the population/community levels of organization (A.2.d)."
     },
     {
       "vsiTitle": "Systems Biology",
       "vsiAuthor": "Eberhard O. Voit",
-      "rationale": "Addresses the integration of multiple levels of biotic organization from molecular to organ to population, a central theme of characterizing living things."
-    },
-    {
-      "vsiTitle": "Synthetic Biology",
-      "vsiAuthor": "Jamie A. Davies",
-      "rationale": "Explores the fundamental properties of life by examining how living systems can be engineered, illuminating order, metabolism, and reproduction."
-    },
-    {
-      "vsiTitle": "Organic Chemistry",
-      "vsiAuthor": "Graham Patrick",
-      "rationale": "Covers the chemistry of carbon-based molecules including carbohydrates, lipids, proteins, and nucleic acids that form the molecular basis of life."
+      "rationale": "Addresses the integration of multiple levels of biotic organization (A.2) from molecular through organ systems."
     }
   ]
 }

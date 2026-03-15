@@ -4,102 +4,92 @@
     {
       "vsiTitle": "Measurement",
       "vsiAuthor": "David J. Hand",
-      "rationale": "Directly addresses the theory of measurement, units and standards of measurement, and the principles by which measuring instruments operate."
-    },
-    {
-      "vsiTitle": "Statistics",
-      "vsiAuthor": "David J. Hand",
-      "rationale": "Relevant to the quantitative analysis underlying measurement theory and the evaluation of measurement data."
-    },
-    {
-      "vsiTitle": "Telescopes",
-      "vsiAuthor": "Geoffrey Cottrell",
-      "rationale": "Directly covers optical, radio, and other telescope types listed under instruments for observing phenomena."
+      "rationale": "Directly addresses A (theory of measurement), B (units and standards including SI), and C (principles of measuring instruments)."
     },
     {
       "vsiTitle": "Microscopy",
       "vsiAuthor": "Terence Allen",
-      "rationale": "Directly covers microscopes including optical, electron, and scanning tunneling types listed in the section's instruments for observation."
+      "rationale": "Directly addresses E.1.a (microscopes: optical, electron, acoustic, and scanning tunneling types)."
     },
     {
-      "vsiTitle": "The History of Astronomy",
-      "vsiAuthor": "Michael Hoskin",
-      "rationale": "Relevant to astronomical observations and the development of telescopes and other observational instruments."
+      "vsiTitle": "Telescopes",
+      "vsiAuthor": "Geoffrey Cottrell",
+      "rationale": "Directly addresses E.1.b (telescopes: optical, radio, infrared, ultraviolet, X-ray, and gamma-ray systems)."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
-      "rationale": "Directly covers navigational techniques and devices, including compasses, sextants, and surveying instruments."
+      "rationale": "Traces the development of compasses and surveying instruments (D.2.c) alongside navigational techniques and devices (G.7)."
     },
     {
-      "vsiTitle": "Crystallography",
-      "vsiAuthor": "A. M. Glazer",
-      "rationale": "Relevant to spectroscopes, spectrographs, and diffraction-based instruments used in scientific research."
-    },
-    {
-      "vsiTitle": "Isotopes",
-      "vsiAuthor": "Rob Ellam",
-      "rationale": "Relevant to mass spectrometers and instruments for measuring ionizing radiation such as Geiger and scintillation counters."
+      "vsiTitle": "The History of Astronomy",
+      "vsiAuthor": "Michael Hoskin",
+      "rationale": "Traces the evolution of astronomical observations (G.6) and the historical development of observational instruments from antiquity onward."
     },
     {
       "vsiTitle": "Particle physics",
       "vsiAuthor": "Frank Close",
-      "rationale": "Covers particle accelerators and detectors such as cyclotrons, synchrotrons, and bubble chambers listed in the section's research apparatus."
-    },
-    {
-      "vsiTitle": "Geophysics",
-      "vsiAuthor": "William Lowrie",
-      "rationale": "Relevant to seismographs, gravimeters, and geophysical measurement systems described in the section."
-    },
-    {
-      "vsiTitle": "Weather",
-      "vsiAuthor": "Storm Dunlop",
-      "rationale": "Relevant to meteorological measurement instruments and systems covered in the section's major systems of observation."
+      "rationale": "Examines particle accelerators -- cyclotrons, synchrotrons, and colliding-beam storage rings (F.3) -- along with particle detectors (F.7)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "rationale": "Covers instruments for measuring ionizing radiation including Geiger counters and scintillation counters."
+      "rationale": "Explores instruments for measuring ionizing radiation such as Geiger counters and scintillation counters (D.2.f), as well as mass spectrometers (F.4)."
+    },
+    {
+      "vsiTitle": "Geophysics",
+      "vsiAuthor": "William Lowrie",
+      "rationale": "Examines gravimeters (D.2.d), seismographs (F.6), and surveying methods (G.1) through the lens of geophysical measurement techniques."
+    },
+    {
+      "vsiTitle": "Weather",
+      "vsiAuthor": "Storm Dunlop",
+      "rationale": "Addresses meteorological measurement (G.5) including barometers, thermometers, and the instruments used in modern weather forecasting."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
-      "rationale": "Relevant to instruments for measuring light intensity (photometers) and optical measurement devices (polarimeters, refractometers)."
+      "rationale": "Explores photometers and light meters (D.1.f) alongside polarimeters and refractometers (D.2.e) for optical measurements."
     },
     {
-      "vsiTitle": "The History of Chemistry",
-      "vsiAuthor": "William H. Brock",
-      "rationale": "Relevant to the historical development of laboratory equipment, chromatographs, and analytical instruments."
+      "vsiTitle": "Crystallography",
+      "vsiAuthor": "A. M. Glazer",
+      "rationale": "Examines spectroscopes, spectrographs, and interferometers (E.1.c-d) as well as diffraction-based scientific instruments."
+    },
+    {
+      "vsiTitle": "Isotopes",
+      "vsiAuthor": "Rob Ellam",
+      "rationale": "Isotopic analysis relies on mass spectrometers (F.4) and radiation measurement instruments (D.2.f), both central to scientific research."
     },
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
-      "rationale": "Relevant to instrumentation and control systems that operate or actuate control devices automatically."
-    },
-    {
-      "vsiTitle": "The History of Physics",
-      "vsiAuthor": "J. L. Heilbron",
-      "rationale": "Covers the historical development of measuring instruments and scientific apparatus used in physical research."
-    },
-    {
-      "vsiTitle": "Tides",
-      "vsiAuthor": "David George Bowers, Emyr Martyn Roberts",
-      "rationale": "Relevant to hydrographic charting and oceanographic measurement systems."
-    },
-    {
-      "vsiTitle": "Oceans",
-      "vsiAuthor": "Dorrik Stow",
-      "rationale": "Relevant to oceanographic measurement techniques and hydrographic charting covered in the section's major systems."
+      "rationale": "Addresses instrumentation and control systems (H) that automatically actuate control devices and record measurements."
     },
     {
       "vsiTitle": "Photography",
       "vsiAuthor": "Steven Edwards",
-      "rationale": "Relevant to cameras as instruments for recording phenomena, listed explicitly in the section."
+      "rationale": "Cameras are explicitly listed under E.2 (instruments for recording phenomena), making this a direct match."
+    },
+    {
+      "vsiTitle": "The History of Time",
+      "vsiAuthor": "Leofranc Holford-Strevens",
+      "rationale": "Traces standards and techniques for time measurement (B.2) and the evolution of mechanical, electric, and atomic clocks (D.1.c)."
+    },
+    {
+      "vsiTitle": "Statistics",
+      "vsiAuthor": "David J. Hand",
+      "rationale": "Statistical methods underpin the quantitative analysis central to measurement theory (A) and the rigorous evaluation of measurement data."
+    },
+    {
+      "vsiTitle": "Oceans",
+      "vsiAuthor": "Dorrik Stow",
+      "rationale": "Explores hydrographic charting (G.3) and oceanographic measurement systems (G.4) used to study the marine environment."
     },
     {
       "vsiTitle": "Applied mathematics",
       "vsiAuthor": "Alain Goriely",
-      "rationale": "Relevant to the mathematical foundations of measurement theory, control systems, and instrumentation systems."
+      "rationale": "Provides the mathematical foundations for measurement theory (A), control systems (H.2), and instrument calibration."
     }
   ]
 }

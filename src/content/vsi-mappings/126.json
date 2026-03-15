@@ -4,107 +4,117 @@
     {
       "vsiTitle": "Physics",
       "vsiAuthor": "Sidney Perkowitz",
-      "rationale": "Covers classical mechanics including Newton's laws, energy, momentum, and gravitational theory central to this section."
+      "rationale": "Broad coverage of classical mechanics including force, matter, energy, and gravitational waves relevant to A (principles of classical mechanics)."
     },
     {
       "vsiTitle": "Gravity",
       "vsiAuthor": "Timothy Clifton",
-      "rationale": "Directly covers Newton's law of universal gravitation, Kepler's laws, celestial mechanics, and gravitational mass discussed in this section."
+      "rationale": "Directly covers Newton's law of universal gravitation (A.3.b.v), Kepler's laws of planetary motion (A.3.b.vi), and celestial mechanics (B)."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
-      "rationale": "Directly covers special relativistic mechanics, relativistic kinematics, and the equivalence of mass and energy discussed in this section."
+      "rationale": "Directly covers relativistic mechanics (C), including special relativity, relativistic kinematics, and the equivalence of mass and energy (A.3.e.iii)."
     },
     {
       "vsiTitle": "Fluid Mechanics",
       "vsiAuthor": "Eric Lauga",
-      "rationale": "Directly covers fluid statics, hydrodynamics, aerodynamics, laminar and turbulent flow, boundary layers, and compressible flow discussed in this section."
+      "rationale": "Directly covers fluid statics, hydrodynamics, aerodynamics, laminar and turbulent flow, and compressible flow throughout section F."
     },
     {
       "vsiTitle": "The History of Physics",
       "vsiAuthor": "J. L. Heilbron",
-      "rationale": "Covers the historical development of mechanics from Newton's laws through celestial mechanics to relativistic mechanics."
+      "rationale": "Covers the historical development of mechanics from Galileo and Newton through Einstein, providing context for sections A, B, and C."
     },
     {
       "vsiTitle": "Newton",
       "vsiAuthor": "Rob Iliffe",
-      "rationale": "Directly relevant to Newton's laws of motion, law of universal gravitation, and the foundations of classical mechanics in this section."
+      "rationale": "Directly relevant to Newton's laws of motion (A.3.b.i), law of universal gravitation (A.3.b.v), and the foundations of celestial mechanics (B)."
     },
     {
       "vsiTitle": "Galileo",
       "vsiAuthor": "Stillman Drake",
-      "rationale": "Relevant to the foundational concepts of kinematics, projectile motion, and the law of inertia discussed in this section."
+      "rationale": "Foundational to kinematics (A.3.a), projectile motion and ballistics (A.3.b.iii), and the law of inertia (A.3.b.i)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "rationale": "Covers elasticity, stress-strain relationships, yield strength, fracture, fatigue, and the mechanical properties of deformable bodies in this section."
-    },
-    {
-      "vsiTitle": "Chaos",
-      "vsiAuthor": "Lenny Smith",
-      "rationale": "Relevant to complex dynamical systems, nonlinear mechanics, and the sensitivity to initial conditions in mechanical systems."
-    },
-    {
-      "vsiTitle": "Applied mathematics",
-      "vsiAuthor": "Alain Goriely",
-      "rationale": "Covers the mathematical formulation of mechanics including differential equations, Lagrangian and Hamiltonian mechanics discussed in this section."
-    },
-    {
-      "vsiTitle": "Matter",
-      "vsiAuthor": "Geoff Cottrell",
-      "rationale": "Covers fundamental concepts of matter including mass, energy, and the relationship between matter and mechanical forces."
-    },
-    {
-      "vsiTitle": "Philosophy of Physics",
-      "vsiAuthor": "David Wallace",
-      "rationale": "Covers the philosophical foundations of space, time, motion, and the conceptual framework of classical and relativistic mechanics."
-    },
-    {
-      "vsiTitle": "Cosmology",
-      "vsiAuthor": "Peter Coles",
-      "rationale": "Relevant to celestial mechanics, gravitational interactions, and the two-body and n-body problems discussed in this section."
+      "rationale": "Covers stress-strain relationships, hardness, and mechanical properties of materials relevant to elasticity (D) and yield strength and fracture (G.3)."
     },
     {
       "vsiTitle": "Soft Matter",
       "vsiAuthor": "Tom McLeish",
-      "rationale": "Covers rheological phenomena, deformation and flow, viscoelastic behaviour, and constitutive equations discussed in this section."
+      "rationale": "Covers rheological phenomena including viscoelastic deformation and flow, constitutive equations, and soft material mechanics relevant to sections D and G."
     },
     {
-      "vsiTitle": "Symmetry",
-      "vsiAuthor": "Ian Stewart",
-      "rationale": "Relevant to conservation laws arising from symmetries in mechanics, including conservation of momentum and energy."
+      "vsiTitle": "Applied mathematics",
+      "vsiAuthor": "Alain Goriely",
+      "rationale": "Covers mathematical formulations underlying mechanics including differential equations relevant to Lagrange's and Hamilton's equations (A.6.d)."
     },
     {
-      "vsiTitle": "Measurement",
-      "vsiAuthor": "David J. Hand",
-      "rationale": "Relevant to the measurement of fundamental mechanical quantities including force, mass, velocity, and acceleration."
+      "vsiTitle": "Chaos",
+      "vsiAuthor": "Lenny Smith",
+      "rationale": "Relevant to nonlinear dynamics in complex mechanical systems (A.6), sensitivity to initial conditions in celestial mechanics (B), and turbulent flow (F.3.b)."
+    },
+    {
+      "vsiTitle": "Matter",
+      "vsiAuthor": "Geoff Cottrell",
+      "rationale": "Covers fundamental concepts of matter and mass central to the parameters of classical mechanics (A.1) and the equivalence of mass and energy (A.3.e.iii)."
+    },
+    {
+      "vsiTitle": "Philosophy of Physics",
+      "vsiAuthor": "David Wallace",
+      "rationale": "Covers philosophical foundations of space, time, motion, and statistical mechanics relevant to the conceptual framework of classical mechanics (A.1)."
+    },
+    {
+      "vsiTitle": "Waves",
+      "vsiAuthor": "Mike Goldsmith",
+      "rationale": "Directly covers types of vibrational waves, their properties and modes of propagation (E.3), and wave behaviour including diffraction and interference."
+    },
+    {
+      "vsiTitle": "Sound",
+      "vsiAuthor": "Mike Goldsmith",
+      "rationale": "Covers acoustics, frequency, resonance, and the Doppler effect directly relevant to vibrations of elastic bodies (E) and detection of vibrations (E.5)."
+    },
+    {
+      "vsiTitle": "Structural engineering",
+      "vsiAuthor": "David Blockley",
+      "rationale": "Covers statics of beams and bridges (A.2), stress dynamics of elastic materials (D), and yield strength and fracture of structural materials (G.3)."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "rationale": "Covers structural mechanics, elasticity, fluid dynamics, and the practical application of mechanical principles."
+      "rationale": "Covers practical applications of gravity, electromagnetism, and mechanical principles relevant to statics (A.2) and dynamics (A.3) in engineering contexts."
     },
     {
-      "vsiTitle": "Civil engineering",
-      "vsiAuthor": "David Muir Wood",
-      "rationale": "Covers structural mechanics, stress dynamics of elastic materials, and the mechanical behaviour of deformable bodies."
+      "vsiTitle": "Astrophysics",
+      "vsiAuthor": "James Binney",
+      "rationale": "Covers angular momentum, Newtonian mechanics, and relativity relevant to celestial mechanics (B) and relativistic mechanics (C)."
     },
     {
       "vsiTitle": "Planets",
       "vsiAuthor": "David A. Rothery",
-      "rationale": "Relevant to celestial mechanics including planetary orbits, the two-body problem, and gravitational perturbations."
+      "rationale": "Relevant to celestial mechanics (B) including planetary orbits, Kepler's laws (A.3.b.vi), and gravitational perturbations (B.2)."
     },
     {
-      "vsiTitle": "The Scientific Revolution",
-      "vsiAuthor": "Lawrence M. Principe",
-      "rationale": "Covers the development of classical mechanics by Galileo, Kepler, and Newton that forms the historical foundation of this section."
+      "vsiTitle": "Tides",
+      "vsiAuthor": "David George Bowers, Emyr Martyn Roberts",
+      "rationale": "Covers gravitational mechanics of the Earth-Moon system relevant to celestial mechanics (B) and fluid dynamics of ocean tides relevant to fluid mechanics (F)."
     },
     {
-      "vsiTitle": "Trigonometry",
-      "vsiAuthor": "Glen Van Brummelen",
-      "rationale": "Relevant to the mathematical description of periodic motion, simple harmonic motion, and circular motion discussed in this section."
+      "vsiTitle": "Mathematical Analysis",
+      "vsiAuthor": "Richard Earl",
+      "rationale": "Covers calculus, differentiation, and integration that form the mathematical language of mechanics, essential to Lagrange's and Hamilton's equations (A.6.d)."
+    },
+    {
+      "vsiTitle": "The History of Astronomy",
+      "vsiAuthor": "Michael Hoskin",
+      "rationale": "Covers the historical development of celestial mechanics (B.1) including the work of Kepler and Newton on planetary motion."
+    },
+    {
+      "vsiTitle": "Planetary Systems",
+      "vsiAuthor": "Raymond T. Pierrehumbert",
+      "rationale": "Relevant to celestial mechanics (B) including planetary orbits, the n-body problem (B.4), and gravitational perturbations in planetary systems (B.2)."
     }
   ]
 }

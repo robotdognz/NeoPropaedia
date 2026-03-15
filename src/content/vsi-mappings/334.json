@@ -4,42 +4,52 @@
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
-      "rationale": "Directly covers the human skeletal system, musculatory system, and integumentary system as outlined in this section."
+      "rationale": "Core VSI for this section, covering the human skeletal system (B.7), skeleton structure, and musculatory system, with detailed treatment of vertebrate anatomy."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
-      "rationale": "Addresses the physiology of skeletal, muscular, and integumentary systems including muscle contraction and skeletal support."
+      "rationale": "Addresses the physiology of muscle contraction (C.3), skeletal support, and integumentary function including temperature regulation (C.1)."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
-      "rationale": "Covers the diversity of body coverings, skeletal systems, and musculature across invertebrate and vertebrate animal phyla."
-    },
-    {
-      "vsiTitle": "Teeth",
-      "vsiAuthor": "Peter S. Ungar",
-      "rationale": "Covers teeth as skeletal derivatives, including their structure, composition, and evolutionary development in vertebrates."
-    },
-    {
-      "vsiTitle": "Mammals",
-      "vsiAuthor": "T. S. Kemp",
-      "rationale": "Addresses mammalian integument (hair, skin glands), skeletal structure, and musculature as examples of vertebrate covering and support systems."
-    },
-    {
-      "vsiTitle": "Reptiles",
-      "vsiAuthor": "Tom Kemp",
-      "rationale": "Covers reptilian integument (epidermal scales), skeletal systems, and musculature as comparative examples of vertebrate body coverings and support."
-    },
-    {
-      "vsiTitle": "Insects",
-      "vsiAuthor": "Simon Leather",
-      "rationale": "Addresses invertebrate exoskeletons (cuticular structures), integuments, and musculature in arthropods."
+      "rationale": "Covers diversity of body coverings, skeletal systems, and musculature across invertebrate phyla (A.1, B.3, C.4) including Annelida, Echinodermata, and Porifera."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
-      "rationale": "Covers the embryology and development of vertebrate skin, skeleton, and musculature as outlined in the section."
+      "rationale": "Covers embryology of vertebrate skin (A.5), skeleton (B.4.b), and muscular system (C.5.a), including cell differentiation into connective tissues."
+    },
+    {
+      "vsiTitle": "Teeth",
+      "vsiAuthor": "Peter S. Ungar",
+      "rationale": "Covers teeth as skeletal elements (B.2.a bone, dentine, enamel), their composition, and evolutionary development in vertebrates (B.4)."
+    },
+    {
+      "vsiTitle": "Mammals",
+      "vsiAuthor": "T. S. Kemp",
+      "rationale": "Addresses mammalian integument including hair and skin glands (A.3.b), skeletal structure, and vertebrate musculature (C.5)."
+    },
+    {
+      "vsiTitle": "Reptiles",
+      "vsiAuthor": "Tom Kemp",
+      "rationale": "Covers reptilian epidermal scales (A.3.b), skeletal systems, and musculature, illustrating skin variations among vertebrates (A.4)."
+    },
+    {
+      "vsiTitle": "Insects",
+      "vsiAuthor": "Simon Leather",
+      "rationale": "Addresses invertebrate exoskeletons and cuticular structures (B.2.a, B.3), invertebrate integuments (A.2), and invertebrate muscle systems (C.4)."
+    },
+    {
+      "vsiTitle": "Sexual Selection",
+      "vsiAuthor": "Marlene Zuk, Leigh W Simmons",
+      "rationale": "Relevant to skin derivatives such as feathers, hair, and horns (A.3.b) as products of sexual dimorphism and sexual selection pressures."
+    },
+    {
+      "vsiTitle": "Evolution",
+      "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
+      "rationale": "Provides the evolutionary framework for understanding the development of vertebrate skin (A.5), skeleton (B.4.b), and musculatory system (C.5.b)."
     }
   ]
 }

@@ -4,77 +4,72 @@
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "The primary VSI for this section, covering ecosystems, energy flow, nutrient cycling, biotic and abiotic components, and the productivity of ecosystems."
-    },
-    {
-      "vsiTitle": "Climate change",
-      "vsiAuthor": "Mark Maslin",
-      "rationale": "Directly relevant to the carbon and oxygen cycles, water cycle, and how changes in the abiotic environment affect the biosphere."
-    },
-    {
-      "vsiTitle": "Climate",
-      "vsiAuthor": "Mark Maslin",
-      "rationale": "Covers the abiotic components of ecosystems including temperature, pressure, radiation, and their influence on the biosphere."
-    },
-    {
-      "vsiTitle": "The Atmosphere",
-      "vsiAuthor": "Paul Palmer",
-      "rationale": "Addresses the carbon and oxygen cycles, the nitrogen cycle, and atmospheric composition as abiotic components of the biosphere."
+      "rationale": "Core text covering ecosystems, communities, energy flow, biotic/abiotic components, and ecosystem productivity (A.2, A.3, B)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
-      "rationale": "Covers the integrated Earth system including biogeochemical cycles (carbon, nitrogen, sulfur, water) and energy flow through the biosphere."
+      "rationale": "Frames the biosphere as an integrated system, encompassing biogeochemical cycles (carbon, nitrogen, water), energy flow, and the Gaia hypothesis (A.1, A.3, A.4)."
     },
     {
-      "vsiTitle": "Oceans",
-      "vsiAuthor": "Dorrik Stow",
-      "rationale": "Covers the marine component of the biosphere, oceanic nutrient cycling, and the water cycle as fundamental biosphere processes."
+      "vsiTitle": "The Atmosphere",
+      "vsiAuthor": "Paul Palmer",
+      "rationale": "Details atmospheric composition, the carbon/oxygen cycles, the greenhouse effect, and solar radiation as an abiotic component of ecosystems (A.4.b, B.3.b)."
+    },
+    {
+      "vsiTitle": "Climate",
+      "vsiAuthor": "Mark Maslin",
+      "rationale": "Explains how temperature, pressure, and weather patterns function as abiotic drivers shaping ecosystems, alongside the carbon dioxide cycle (B.3.a, A.4.b)."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
-      "rationale": "Directly relevant to the water cycle, a key biogeochemical cycle in the biosphere, and water as an abiotic component of ecosystems."
+      "rationale": "Explores the chemistry and physical properties of water, directly relevant to the water cycle and water as a key abiotic ecosystem component (A.4.e, B.3.d)."
     },
     {
-      "vsiTitle": "Environmental economics",
-      "vsiAuthor": "Stephen Smith",
-      "rationale": "Addresses mankind's place in the biosphere (the noosphere concept) and the economic valuation of ecosystem services."
-    },
-    {
-      "vsiTitle": "Environmental ethics",
-      "vsiAuthor": "Robin Attfield",
-      "rationale": "Covers the ethical dimensions of humanity's relationship with the biosphere, directly relevant to the concept of the noosphere."
-    },
-    {
-      "vsiTitle": "Environmental Politics",
-      "vsiAuthor": "Andrew Dobson",
-      "rationale": "Addresses the political dimensions of mankind's place in the biosphere and the governance of environmental resources."
-    },
-    {
-      "vsiTitle": "Sustainability",
-      "vsiAuthor": "Saleem H. Ali",
-      "rationale": "Covers the sustainable management of ecosystem processes and the concept of the noosphere—mankind's place in the biosphere."
-    },
-    {
-      "vsiTitle": "Marine biology",
-      "vsiAuthor": "Philip V. Mladenov",
-      "rationale": "Covers marine ecosystems including producers, consumers, decomposers, and the biotic and abiotic components of ocean ecosystems."
+      "vsiTitle": "Microbiology",
+      "vsiAuthor": "Nicholas P. Money",
+      "rationale": "Highlights bacteria, archaea, and fungi as decomposers that drive nitrogen fixation and nutrient cycling in ecosystems (A.4.c, B.2.c)."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Covers forest ecosystems as major biosphere components, including energy flow, nutrient cycling, and ecosystem productivity."
+      "rationale": "Illustrates forest ecosystems as major biosphere components with carbon cycling, energy flow, and producer/consumer/decomposer trophic levels (A.3, B.2)."
+    },
+    {
+      "vsiTitle": "Oceans",
+      "vsiAuthor": "Dorrik Stow",
+      "rationale": "Presents oceanic environments as major biosphere components, including marine nutrient cycling and the ocean's role in the global water cycle (A.4.e, B.3.d)."
+    },
+    {
+      "vsiTitle": "Marine biology",
+      "vsiAuthor": "Philip V. Mladenov",
+      "rationale": "Examines marine producers, consumers, and decomposers alongside the biotic components that structure ocean ecosystems (B.2)."
+    },
+    {
+      "vsiTitle": "Biogeography",
+      "vsiAuthor": "Mark V. Lomolino",
+      "rationale": "Maps the distribution of life across levels of biological organization -- from populations to biomes -- throughout the biosphere (A.2)."
+    },
+    {
+      "vsiTitle": "Fire",
+      "vsiAuthor": "Andrew C. Scott",
+      "rationale": "Directly covers fire as a limiting factor in ecosystems and its role in shaping vegetation structure and nutrient turnover (B.3.f)."
+    },
+    {
+      "vsiTitle": "Minerals",
+      "vsiAuthor": "David Vaughan",
+      "rationale": "Explains mineral composition of soils and sedimentary processes relevant to the sedimentary cycles of essential minerals in ecosystems (A.4.f, B.3.d)."
     },
     {
       "vsiTitle": "Anthropocene",
       "vsiAuthor": "Erle C. Ellis",
-      "rationale": "Directly addresses the conditioning of the abiotic environment by living organisms, particularly humanity's transformative role in the biosphere."
+      "rationale": "Addresses human transformation of the biosphere, directly relevant to the concept of the noosphere and conditioning of the abiotic environment by organisms (A.5, B.4)."
     },
     {
-      "vsiTitle": "Microbiomes",
-      "vsiAuthor": "Angela E. Douglas",
-      "rationale": "Covers microbial decomposers and their role in nutrient cycling and energy flow within ecosystems."
+      "vsiTitle": "Astrobiology",
+      "vsiAuthor": "David C. Catling",
+      "rationale": "Investigates the conditions necessary for life on Earth -- oxygen levels, carbon dioxide balance, and habitability -- as preconditions of the biosphere (A.1)."
     }
   ]
 }

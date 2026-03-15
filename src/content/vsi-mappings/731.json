@@ -4,127 +4,97 @@
     {
       "vsiTitle": "Agriculture",
       "vsiAuthor": "Paul Brassley, Richard Soffe",
-      "rationale": "Directly covers the history of agriculture, farm management, crop farming, and livestock farming that form the core of this section."
+      "rationale": "The definitive introduction, spanning A (history of agriculture), B (farm management), C (crop farming), and D (livestock farming) in a single volume."
     },
     {
       "vsiTitle": "Food",
       "vsiAuthor": "John Krebs",
-      "rationale": "Covers food production, processing, preservation, and quality control, all major topics in this section."
+      "rationale": "Addresses the downstream side of agriculture: food processing (F), preservation (G), quality control (H), and the search for new food sources (I)."
     },
     {
       "vsiTitle": "Nutrition",
       "vsiAuthor": "David Bender",
-      "rationale": "Relevant to food quality evaluation, nutritional aspects of food sources, and new product development."
+      "rationale": "Evaluating food quality (H.1) and developing new food products (I) requires the nutritional science framework this volume provides."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
-      "rationale": "Relevant to crop farming including plant propagation, seeding and cultivation, and specialized crop techniques."
-    },
-    {
-      "vsiTitle": "Animal Behaviour",
-      "vsiAuthor": "Tristram D. Wyatt",
-      "rationale": "Relevant to livestock farming, animal breeding, and the management of flock and stock animals."
+      "rationale": "Plant biology underpins crop farming—propagation, seeding, and cultivation (C.2)—and the major cereal and horticultural crops in C.6."
     },
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Relevant to pest and disease control, farming in relation to pollution, and sustainable agricultural practices."
+      "rationale": "Pest and disease control (C.5) and pollution management (B.4) depend on ecological principles that govern agricultural ecosystems."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
-      "rationale": "Directly relevant to forest crops including trees and rubber, listed under specialized crop farming."
+      "rationale": "Forestry is a branch of crop farming, and this volume addresses forest crops including timber and rubber (C.6.c)."
     },
     {
-      "vsiTitle": "Bacteria",
-      "vsiAuthor": "Sebastian G. B. Amyes",
-      "rationale": "Relevant to fermentation processes in food preservation and beverage production, and to disease control in livestock."
-    },
-    {
-      "vsiTitle": "Viruses",
-      "vsiAuthor": "Dorothy H. Crawford",
-      "rationale": "Relevant to control of pests and disease organisms in crop farming and disease control in livestock."
+      "vsiTitle": "Microbiomes",
+      "vsiAuthor": "Angela E. Douglas",
+      "rationale": "Soil microbial communities drive nutrient cycling essential to C.1 (soil preparation) and influence C.5 (pest and disease control) in crop production."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
-      "rationale": "Relevant to fermentation, food preservation, food quality control, and disease organisms affecting crops and livestock."
+      "rationale": "Fermentation drives beverage production (F.8, brewing and wine) and food preservation (G.1.d, pickling), while microbiological methods assess food quality (H.1)."
     },
     {
       "vsiTitle": "Fungi",
       "vsiAuthor": "Nicolas P. Money",
-      "rationale": "Relevant to crop disease organisms, fermentation in food processing, and yeast-based food and beverage production."
-    },
-    {
-      "vsiTitle": "Epidemiology",
-      "vsiAuthor": "Rodolfo Saracci",
-      "rationale": "Relevant to disease control in livestock farming and food-borne illness prevention in food quality regulation."
+      "rationale": "Fungi play dual roles in agriculture: as crop disease organisms (C.5) and as essential agents in yeast-based fermentation for brewing, baking (F.8), and preservation (G.1.d)."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
-      "rationale": "Relevant to pest control in crop farming and beekeeping as a form of livestock farming."
-    },
-    {
-      "vsiTitle": "Hormones",
-      "vsiAuthor": "Martin Luck",
-      "rationale": "Relevant to animal breeding and livestock management, and to the regulation of food quality regarding hormones in food production."
-    },
-    {
-      "vsiTitle": "Infectious Disease",
-      "vsiAuthor": "Benjamin Bolker and Marta Wayne",
-      "rationale": "Relevant to disease and pest control in livestock farming and food safety."
-    },
-    {
-      "vsiTitle": "Sustainability",
-      "vsiAuthor": "Saleem H. Ali",
-      "rationale": "Relevant to sustainable agriculture, environmental impact of farming, and new food source development."
-    },
-    {
-      "vsiTitle": "Climate change",
-      "vsiAuthor": "Mark Maslin",
-      "rationale": "Relevant to farming in relation to weather and the environmental challenges facing agricultural technology."
+      "rationale": "Insects are both the primary pest threat to crops (C.5) and, as pollinators and honey producers, valuable livestock in their own right (D.2.f, bees)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
-      "rationale": "Relevant to animal breeding, plant propagation, and the genetic basis of crop and livestock improvement."
-    },
-    {
-      "vsiTitle": "Genomics",
-      "vsiAuthor": "John M. Archibald",
-      "rationale": "Relevant to modern agricultural biotechnology for crop improvement and animal breeding."
-    },
-    {
-      "vsiTitle": "Biogeography",
-      "vsiAuthor": "Mark V. Lomolino",
-      "rationale": "Relevant to the geographic distribution of crops and livestock, including tropical and dryland farming."
-    },
-    {
-      "vsiTitle": "Mammals",
-      "vsiAuthor": "T. S. Kemp",
-      "rationale": "Relevant to the biology of major livestock animals including cattle, swine, sheep, goats, and horses."
-    },
-    {
-      "vsiTitle": "Global Economic History",
-      "vsiAuthor": "Robert C. Allen",
-      "rationale": "Covers the economic history of agriculture and its transformation through industrialization."
+      "rationale": "Genetic principles govern both animal breeding (D.1) and plant propagation (C.2), making this essential for understanding crop and livestock improvement."
     },
     {
       "vsiTitle": "Heredity",
       "vsiAuthor": "John Waller",
-      "rationale": "Relevant to animal breeding and plant propagation through selective breeding and hereditary principles."
+      "rationale": "Selective breeding and hereditary principles have shaped livestock improvement (D.1) for millennia, from Bakewell's sheep to modern genomics."
+    },
+    {
+      "vsiTitle": "Mammals",
+      "vsiAuthor": "T. S. Kemp",
+      "rationale": "The biology of cattle, swine, sheep, goats, and horses provides the zoological context for D.2 (major livestock animals)."
+    },
+    {
+      "vsiTitle": "Marine biology",
+      "vsiAuthor": "Philip V. Mladenov",
+      "rationale": "Fishing technology (E) and marine products processing (F.6) depend on understanding marine ecosystems and the species they sustain."
+    },
+    {
+      "vsiTitle": "Bacteria",
+      "vsiAuthor": "Sebastian G. B. Amyes",
+      "rationale": "Bacteria are agents of fermentation and pickling (G.1.d), threats to livestock health (D.3), and subjects of microbiological food quality evaluation (H.1)."
+    },
+    {
+      "vsiTitle": "Infectious Disease",
+      "vsiAuthor": "Benjamin Bolker and Marta Wayne",
+      "rationale": "Livestock disease and pest control (D.3) and food safety (H) both require understanding how infectious agents spread and can be contained."
+    },
+    {
+      "vsiTitle": "Climate change",
+      "vsiAuthor": "Mark Maslin",
+      "rationale": "Shifting weather patterns reshape farming (B.4) and threaten specialized crop production (C.4), making climate science essential to agricultural planning."
+    },
+    {
+      "vsiTitle": "Sustainability",
+      "vsiAuthor": "Saleem H. Ali",
+      "rationale": "Sustainable agriculture balances pollution control (B.4) with the need to develop new food sources (I), a challenge this volume addresses directly."
     },
     {
       "vsiTitle": "Invasive Species",
       "vsiAuthor": "Julie Lockwood, Dustin J. Welbourne",
-      "rationale": "Relevant to the control of pest organisms and disease in crop farming."
-    },
-    {
-      "vsiTitle": "Deserts",
-      "vsiAuthor": "Nick Middleton",
-      "rationale": "Relevant to dryland farming techniques as a specialized form of crop farming."
+      "rationale": "Invasive pests and disease organisms (C.5) threaten crop farming worldwide, and this volume explains their pathways, impacts, and management."
     }
   ]
 }

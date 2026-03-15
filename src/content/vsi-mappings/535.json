@@ -2,79 +2,79 @@
   "sectionCode": "535",
   "mappings": [
     {
-      "vsiTitle": "Economics",
-      "vsiAuthor": "Partha Dasgupta",
-      "rationale": "Covers macroeconomic concepts including national income, aggregate output, and employment theory."
-    },
-    {
       "vsiTitle": "Keynes",
       "vsiAuthor": "Robert Skidelsky",
-      "rationale": "Directly covers Keynesian theory of effective demand, unemployment, and countercyclical fiscal policy (subsections A.1 and C.3)."
+      "rationale": "Directly covers Keynesian effective demand theory, unemployment theory, monetary policy, and countercyclical fiscal policy (A.1, C.3)."
     },
     {
-      "vsiTitle": "Capitalism",
-      "vsiAuthor": "James Fulcher",
-      "rationale": "Covers business cycles, economic fluctuations, and the dynamics of capitalist macroeconomies."
+      "vsiTitle": "Microeconomics",
+      "vsiAuthor": "Avinash Dixit",
+      "rationale": "Bridges micro and macro analysis, explaining how inflation, investment, and unemployment connect individual decisions to aggregate outcomes (A)."
+    },
+    {
+      "vsiTitle": "Economics",
+      "vsiAuthor": "Partha Dasgupta",
+      "rationale": "National income, GDP, and aggregate output are the building blocks of macroeconomic analysis introduced here (A.1, A.2)."
     },
     {
       "vsiTitle": "Banking",
       "vsiAuthor": "John O. S. Wilson, John Goddard",
-      "rationale": "Covers monetary institutions, exchange rates, and international monetary cooperation relevant to subsections B.1 and B.2."
-    },
-    {
-      "vsiTitle": "Globalization",
-      "vsiAuthor": "Manfred Steger",
-      "rationale": "Covers international economic integration, foreign exchange markets, and balance of payments issues."
-    },
-    {
-      "vsiTitle": "The Great Depression and The New Deal",
-      "vsiAuthor": "Eric Rauchway",
-      "rationale": "Covers a major business cycle event and countercyclical policy responses (subsections C.1 and C.3)."
+      "rationale": "Central banking, monetary policy transmission, financial crises, and sovereign debt have profound macroeconomic effects (B.1, B.2, C.3)."
     },
     {
       "vsiTitle": "The World Trade Organization",
       "vsiAuthor": "Amrita Narlikar",
-      "rationale": "Covers international economic institutions and trade arrangements relevant to international equilibrium."
+      "rationale": "International monetary institutions, balance of payments mechanics, and the Bretton Woods system shaped the postwar macroeconomic order (B.2)."
     },
     {
-      "vsiTitle": "Neoliberalism",
-      "vsiAuthor": "Manfred Steger, Ravi K. Roy",
-      "rationale": "Covers monetary and fiscal policy approaches to macroeconomic management."
-    },
-    {
-      "vsiTitle": "Global Economic History",
-      "vsiAuthor": "Robert C. Allen",
-      "rationale": "Covers historical business cycles, economic crises, and international financial developments."
+      "vsiTitle": "The Great Depression and The New Deal",
+      "vsiAuthor": "Eric Rauchway",
+      "rationale": "The Depression represents the defining business cycle collapse (C.1), and the New Deal demonstrated countercyclical fiscal and monetary policy in action (C.3)."
     },
     {
       "vsiTitle": "Mathematical finance",
       "vsiAuthor": "Mark H. A. Davis",
-      "rationale": "Covers financial mathematics used in analyzing exchange rates, interest rates, and monetary policy."
+      "rationale": "Interest rates, arbitrage, and financial instruments are relevant to foreign exchange mechanics and monetary analysis (B.1.a)."
+    },
+    {
+      "vsiTitle": "Capitalism",
+      "vsiAuthor": "James Fulcher",
+      "rationale": "Business cycles, financial crises, and boom-bust dynamics are inherent features of capitalist macroeconomies (C)."
+    },
+    {
+      "vsiTitle": "Globalization",
+      "vsiAuthor": "Manfred Steger",
+      "rationale": "International economic integration, cross-border capital flows, and balance of payments challenges are macroeconomic phenomena intensified by globalization (B)."
     },
     {
       "vsiTitle": "Adam Smith",
       "vsiAuthor": "Christopher J. Berry",
-      "rationale": "Covers the classical law of markets and theories foundational to macroeconomic thought (subsection A.1.a)."
+      "rationale": "Smith's classical law of markets laid the intellectual foundation from which macroeconomic thought later diverged (A.1.a)."
     },
     {
-      "vsiTitle": "The BRICS",
-      "vsiAuthor": "Andrew F. Cooper",
-      "rationale": "Covers macroeconomic dynamics of major emerging economies and their role in international financial equilibrium."
+      "vsiTitle": "Global Economic History",
+      "vsiAuthor": "Robert C. Allen",
+      "rationale": "Historical business cycles, financial panics, and their macroeconomic consequences illustrate recurring patterns across centuries (C.1)."
     },
     {
-      "vsiTitle": "The Russian Economy",
-      "vsiAuthor": "Richard Connolly",
-      "rationale": "Provides a case study of macroeconomic management including fiscal policy, exchange rates, and international trade."
-    },
-    {
-      "vsiTitle": "Marx",
-      "vsiAuthor": "Peter Singer",
-      "rationale": "Covers Marxist theories of business cycles and economic crises as inherent features of capitalism."
+      "vsiTitle": "Neoliberalism",
+      "vsiAuthor": "Manfred Steger, Ravi K. Roy",
+      "rationale": "Monetarist and supply-side approaches emerged as alternatives to Keynesian demand management, reshaping fiscal and monetary policy debates (C.3)."
     },
     {
       "vsiTitle": "Development",
       "vsiAuthor": "Ian Goldin",
-      "rationale": "Covers macroeconomic challenges of developing countries including balance of payments and exchange rate management."
+      "rationale": "Developing countries face distinctive macroeconomic challenges—balance of payments deficits, exchange rate instability, capital flight—examined here (B)."
+    },
+    {
+      "vsiTitle": "Taxation",
+      "vsiAuthor": "Stephen Smith",
+      "rationale": "Taxation is a primary fiscal policy tool, and its design as a countercyclical instrument has significant macroeconomic effects (C.3)."
+    },
+    {
+      "vsiTitle": "Marx",
+      "vsiAuthor": "Peter Singer",
+      "rationale": "Marx theorized that capitalist crises and business cycles are systemic rather than accidental, offering an alternative lens on macroeconomic instability (C.2)."
     }
   ]
 }

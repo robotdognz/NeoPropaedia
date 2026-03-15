@@ -2,64 +2,64 @@
   "sectionCode": "339",
   "mappings": [
     {
-      "vsiTitle": "Genes",
-      "vsiAuthor": "Jonathan Slack",
-      "rationale": "Directly covers genes, chromosomes, the genetic code, gene mutations, gene expression, and regulation—core topics of heredity at the molecular level."
-    },
-    {
       "vsiTitle": "Heredity",
       "vsiAuthor": "John Waller",
-      "rationale": "The primary VSI for this section, covering Mendelian genetics, the physical basis of heredity, and the combined action of heredity and environment."
+      "rationale": "The primary VSI for this section, directly covering heredity, genome, variation, and the combined action of heredity and environment (A.3)."
+    },
+    {
+      "vsiTitle": "Genes",
+      "vsiAuthor": "Jonathan Slack",
+      "rationale": "Covers genes, cell division, DNA sequencing, gene expression, sex linkage (B.1), the genetic code and mutations (B.2), and natural selection (C.2)."
     },
     {
       "vsiTitle": "Genomics",
       "vsiAuthor": "John M. Archibald",
-      "rationale": "Covers the chemical and molecular nature of genes, the genetic code, applications of molecular genetics, and population-level genomics."
+      "rationale": "Covers the chemical and molecular nature of genes (B.2) including DNA sequencing, the genetic code, messenger RNA, and applications of molecular genetics."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
-      "rationale": "Addresses molecular genetics including DNA structure, the genetic code, gene mutations, and the expression and regulation of genes."
+      "rationale": "Addresses molecular genetics (B.2) including DNA structure, gene expression and regulation, with historical context from Crick, Franklin, Mendel, and Watson."
     },
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
-      "rationale": "Covers population genetics, gene frequencies, the Hardy-Weinberg principle, and natural selection as an agent of evolutionary change."
-    },
-    {
-      "vsiTitle": "Sexual Selection",
-      "vsiAuthor": "Marlene Zuk, Leigh W Simmons",
-      "rationale": "Addresses natural selection as an agent of evolutionary change and how sexual selection shapes gene frequencies in populations."
-    },
-    {
-      "vsiTitle": "Eugenics",
-      "vsiAuthor": "Philippa Levine",
-      "rationale": "Directly covers attempts to change genetic endowments through deliberate selective measures (eugenics) as outlined in section C.3."
-    },
-    {
-      "vsiTitle": "Darwin",
-      "vsiAuthor": "Jonathan Howard",
-      "rationale": "Covers the historical development of understanding heredity and evolution, including Mendel's contribution and natural selection theory."
-    },
-    {
-      "vsiTitle": "Philosophy of Biology",
-      "vsiAuthor": "Samir Okasha",
-      "rationale": "Examines conceptual foundations of genetics and heredity including the gene concept, population genetics, and the interplay of heredity and environment."
+      "rationale": "Covers population genetics (C.1), genetic drift and gene frequency changes, natural selection as evolutionary agent (C.2), and artificial selection (C.3)."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
-      "rationale": "Covers chromosomes as the cellular basis of heredity, including mitosis and meiosis as mechanisms of genetic transmission."
+      "rationale": "Covers chromosomes and genes as the cellular basis of heredity (B.1), including the nucleus, cell division, and how genetic material is transmitted."
+    },
+    {
+      "vsiTitle": "Darwin",
+      "vsiAuthor": "Jonathan Howard",
+      "rationale": "Covers the historical foundation of heredity and evolution including Darwin's natural selection theory (C.2), species concept, and Wallace's contributions."
+    },
+    {
+      "vsiTitle": "Eugenics",
+      "vsiAuthor": "Philippa Levine",
+      "rationale": "Directly relevant to artificial selection for genetic improvements of humankind (C.3), covering Francis Galton, heredity, and population-level selection programs."
+    },
+    {
+      "vsiTitle": "Agriculture",
+      "vsiAuthor": "Paul Brassley, Richard Soffe",
+      "rationale": "Covers artificial selection of domesticated animals and cultivated plants (C.3), including genetically modified organisms as applications of molecular genetics."
     },
     {
       "vsiTitle": "Synthetic Biology",
       "vsiAuthor": "Jamie A. Davies",
-      "rationale": "Addresses applications of molecular genetics including genetic engineering, relevant to artificial selection for genetic improvements."
+      "rationale": "Addresses modern applications of molecular genetics (B.2) including genetic engineering and genetically modified organisms relevant to artificial selection (C.3)."
     },
     {
-      "vsiTitle": "Ivan Pavlov",
-      "vsiAuthor": "Daniel P. Todes",
-      "rationale": "Covers early experimental approaches to understanding the combined action of heredity and environment in producing organisms."
+      "vsiTitle": "Philosophy of Biology",
+      "vsiAuthor": "Samir Okasha",
+      "rationale": "Examines conceptual foundations of heredity including the species concept, essentialism vs. population thinking, and nature-nurture interactions (A.3)."
+    },
+    {
+      "vsiTitle": "Microbiology",
+      "vsiAuthor": "Nicholas P. Money",
+      "rationale": "Covers genetics of microorganisms including bacterial gene transfer, DNA sequencing, and polymerase chain reaction as tools of molecular genetics (B.2)."
     }
   ]
 }

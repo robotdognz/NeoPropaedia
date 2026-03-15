@@ -2,119 +2,119 @@
   "sectionCode": "435",
   "mappings": [
     {
-      "vsiTitle": "Psychology",
-      "vsiAuthor": "Gillian Butler, Freda McManus",
-      "rationale": "Provides the broad framework for understanding human learning, memory, and cognitive processes."
+      "vsiTitle": "Learning",
+      "vsiAuthor": "Mark Haselgrove",
+      "rationale": "Directly covers theories of learning, conditioning, and the psychology of learning including transfer of training (A, B)."
     },
     {
       "vsiTitle": "Memory",
       "vsiAuthor": "Jonathan K. Foster",
-      "rationale": "Directly covers memory, retention, and forgetting of learned habits and content (section E), including amnesia and memory enhancement."
-    },
-    {
-      "vsiTitle": "Learning",
-      "vsiAuthor": "Mark Haselgrove",
-      "rationale": "Directly covers theories of learning, major issues in learning theory, and transfer of training (sections A and B)."
+      "rationale": "Directly covers memory, retention, forgetting, and memory manipulation, including abnormalities of memory (E, F)."
     },
     {
       "vsiTitle": "Thinking and Reasoning",
       "vsiAuthor": "Jonathan Evans",
-      "rationale": "Directly covers the higher thought processes (section G), including reasoning and the psychology of thinking."
+      "rationale": "Directly covers the higher thought processes including reasoning, problem solving, and deduction (G.1)."
     },
     {
       "vsiTitle": "Thought",
       "vsiAuthor": "Tim Bayne",
-      "rationale": "Directly covers the psychology of higher thought processes, concept formation, and ideation (sections D, G)."
-    },
-    {
-      "vsiTitle": "Cognitive Neuroscience",
-      "vsiAuthor": "Richard Passingham",
-      "rationale": "Covers the neural basis of learning, memory, and higher cognitive processes including conceptual learning and thought."
-    },
-    {
-      "vsiTitle": "The Brain",
-      "vsiAuthor": "Michael O'Shea",
-      "rationale": "Covers brain mechanisms underlying learning, memory formation, and the neural substrates of thought and reasoning."
-    },
-    {
-      "vsiTitle": "Consciousness",
-      "vsiAuthor": "Susan Blackmore",
-      "rationale": "Relevant to the higher thought processes and the role of conscious awareness in learning and concept formation."
+      "rationale": "Covers the psychology of higher thought processes, consciousness, and reasoning (G.1)."
     },
     {
       "vsiTitle": "Perception",
       "vsiAuthor": "Brian J. Rogers",
-      "rationale": "Directly relevant to perceptual learning (section C), the process by which perceptual skills develop through experience."
+      "rationale": "Directly relevant to perceptual learning -- how perceptual skills develop through experience (C)."
     },
     {
-      "vsiTitle": "Linguistics",
-      "vsiAuthor": "P. H. Matthews",
-      "rationale": "Directly relevant to the role of language in the higher thought processes (section G.2) and the concept of meaning (section G.3)."
+      "vsiTitle": "Cognitive Neuroscience",
+      "vsiAuthor": "Richard Passingham",
+      "rationale": "Covers the neural basis of learning, memory formation, and higher cognitive processes (A, E, G)."
     },
     {
-      "vsiTitle": "Languages",
-      "vsiAuthor": "Stephen Anderson",
-      "rationale": "Relevant to the role of language in higher thought processes and how language structures influence concept formation and meaning."
-    },
-    {
-      "vsiTitle": "Psycholinguistics",
-      "vsiAuthor": "Fernanda Ferreira",
-      "rationale": "Directly covers the intersection of language and cognition, relevant to the role of language in higher thought processes and meaning (sections G.2, G.3)."
+      "vsiTitle": "The Brain",
+      "vsiAuthor": "Michael O'Shea",
+      "rationale": "Covers brain mechanisms underlying learning, memory storage, and the neural substrates of thought."
     },
     {
       "vsiTitle": "Child Psychology",
       "vsiAuthor": "Usha Goswami",
-      "rationale": "Covers learning and cognitive development in children, relevant to conceptual learning, concept formation, and psychomotor learning."
+      "rationale": "Covers active learning, cognitive development, inner speech, and Piaget's work on concept formation in children (D, G.2)."
     },
     {
       "vsiTitle": "Ivan Pavlov",
       "vsiAuthor": "Daniel P. Todes",
-      "rationale": "Pavlov's conditioning research is foundational to modern learning theories (section A.1) and major issues in learning theory."
+      "rationale": "Pavlov's conditioning research is foundational to modern learning theories (A.1)."
     },
     {
-      "vsiTitle": "Education",
-      "vsiAuthor": "Gary Thomas",
-      "rationale": "Covers the applied dimension of learning theories, including transfer of training (section A.3) and pedagogical approaches."
+      "vsiTitle": "Linguistics",
+      "vsiAuthor": "P. H. Matthews",
+      "rationale": "Covers language, meaning, and speech, directly relevant to the role of language in higher thought processes (G.2, G.3)."
+    },
+    {
+      "vsiTitle": "Languages",
+      "vsiAuthor": "Stephen Anderson",
+      "rationale": "Covers how language structures and phonology influence thought, relevant to language in higher thought processes (G.2)."
+    },
+    {
+      "vsiTitle": "Psycholinguistics",
+      "vsiAuthor": "Fernanda Ferreira",
+      "rationale": "Directly covers the intersection of language and cognition, relevant to the role of language in thought and meaning (G.2, G.3)."
     },
     {
       "vsiTitle": "Meaning",
       "vsiAuthor": "Emma Borg and Sarah A. Fisher",
-      "rationale": "Directly covers meaning (section G.3), the philosophical and linguistic dimensions of how meaning is constructed through thought and language."
+      "rationale": "Directly covers meaning, reference, truth, and word meaning -- the core of section G.3."
+    },
+    {
+      "vsiTitle": "Consciousness",
+      "vsiAuthor": "Susan Blackmore",
+      "rationale": "Relevant to the role of conscious awareness in learning and concept formation."
+    },
+    {
+      "vsiTitle": "Psychology",
+      "vsiAuthor": "Gillian Butler, Freda McManus",
+      "rationale": "Covers cognitive psychology, developmental psychology, and the broad framework for understanding learning and thinking."
+    },
+    {
+      "vsiTitle": "Education",
+      "vsiAuthor": "Gary Thomas",
+      "rationale": "Covers the applied dimension of learning theories including teaching methods and transfer of training (A.3)."
     },
     {
       "vsiTitle": "Dementia",
       "vsiAuthor": "Kathleen Taylor",
-      "rationale": "Relevant to abnormalities of memory including amnesia, confabulation, and the breakdown of learned habits and cognitive function (section F)."
+      "rationale": "Covers memory loss, diagnosis, and cognitive decline, directly relevant to abnormalities of memory including amnesia (F)."
     },
     {
       "vsiTitle": "Dyslexia",
       "vsiAuthor": "Margaret J. Snowling",
-      "rationale": "A specific learning difficulty relevant to perceptual and conceptual learning processes and their disruption."
+      "rationale": "Covers a specific learning difficulty affecting reading and perceptual processing, relevant to perceptual and conceptual learning (C, D)."
     },
     {
       "vsiTitle": "Creativity",
       "vsiAuthor": "Vlad Petre Glăveanu",
-      "rationale": "Relevant to higher thought processes (section G) and the generation of novel concepts and ideas beyond standard reasoning."
-    },
-    {
-      "vsiTitle": "Artificial Intelligence",
-      "vsiAuthor": "Margaret A. Boden",
-      "rationale": "Machine learning provides comparative models for understanding human learning theories and concept formation processes."
+      "rationale": "Covers creative thinking and invention, relevant to the higher thought processes and novel concept formation (G.1)."
     },
     {
       "vsiTitle": "Imagination",
       "vsiAuthor": "Jennifer Gosetti-Ferencei",
-      "rationale": "Relevant to higher thought processes (section G) and the cognitive processes of ideation and concept formation."
+      "rationale": "Covers the cognitive processes of imagination and ideation, relevant to higher thought processes (G.1)."
     },
     {
-      "vsiTitle": "Freud",
-      "vsiAuthor": "Anthony Storr",
-      "rationale": "Freudian theory addresses abnormalities of memory including repression, and the role of unconscious processes in learning and forgetting."
+      "vsiTitle": "Hermeneutics",
+      "vsiAuthor": "Jens Zimmermann",
+      "rationale": "Covers interpretation, meaning, and the role of language in understanding -- relevant to meaning and language in thought (G.2, G.3)."
     },
     {
-      "vsiTitle": "Sport",
-      "vsiAuthor": "Mike Cronin",
-      "rationale": "Relevant to psychomotor learning (section B) and the development of bodily skills through practice and training."
+      "vsiTitle": "Wittgenstein",
+      "vsiAuthor": "A. C. Grayling",
+      "rationale": "Wittgenstein's philosophy of language addresses meaning and the relationship between language and thought (G.2, G.3)."
+    },
+    {
+      "vsiTitle": "Artificial Intelligence",
+      "vsiAuthor": "Margaret A. Boden",
+      "rationale": "Machine learning provides comparative models for understanding human learning theories and concept formation."
     }
   ]
 }
