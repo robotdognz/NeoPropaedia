@@ -110,13 +110,16 @@ export default function VsiCard({
       </div>
 
       {showMatch && (
-        <div class="mb-3">
-          <div class="h-1.5 rounded-full bg-gray-100 overflow-hidden">
+        <div class="mb-3 flex items-center gap-2">
+          <div class="flex-1 h-1.5 rounded-full bg-gray-100 overflow-hidden">
             <div
               class={`h-full rounded-full ${matchColor(matchPercent)}`}
               style={{ width: `${matchPercent}%` }}
             />
           </div>
+          <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">
+            {matchPercent}% match
+          </span>
         </div>
       )}
 

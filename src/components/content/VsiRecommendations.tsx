@@ -122,9 +122,12 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
             {visibleMappings.map((mapping, index) => {
               const checklistKey = vsiChecklistKey(mapping.vsiTitle, mapping.vsiAuthor);
 
-              const relevanceScore = (mapping as any).relevanceScore ?? 0;
-              const sectionMax = Math.max(...scoredMappings.map((m: any) => m.relevanceScore ?? 0), 1);
-              const matchPercent = Math.round(Math.min(relevanceScore / sectionMax, 1) * 100);
+              const filterScore = (mapping as any).filterScore;
+              const relevanceScore = filterScore ?? (mapping as any).relevanceScore ?? 0;
+              const maxScore = filterScore !== undefined
+                ? Math.max(...visibleMappings.map((m: any) => m.filterScore ?? 0), 1)
+                : Math.max(...scoredMappings.map((m: any) => m.relevanceScore ?? 0), 1);
+              const matchPercent = Math.round(Math.min(relevanceScore / maxScore, 1) * 100);
 
               return (
                 <VsiCard

@@ -140,13 +140,13 @@ function scoreMapping(mapping: SearchableVsiMapping, selection: OutlineSelection
 export function filterMappingsForOutline<T extends SearchableVsiMapping>(
   mappings: T[],
   selection: OutlineSelectionDetail
-): T[] {
+): (T & { filterScore: number })[] {
   const scoredMappings = mappings
-    .map((mapping) => ({ mapping, score: scoreMapping(mapping, selection) }))
-    .filter(({ score }) => score > 0)
-    .sort((left, right) => right.score - left.score);
+    .map((mapping) => ({ ...mapping, filterScore: scoreMapping(mapping, selection) }))
+    .filter((m) => m.filterScore > 0)
+    .sort((left, right) => right.filterScore - left.filterScore);
 
-  return scoredMappings.map(({ mapping }) => mapping);
+  return scoredMappings;
 }
 
 /**
