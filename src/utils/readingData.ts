@@ -268,7 +268,7 @@ export function buildMacropaediaAggregateEntries(
 export function buildVsiCoverageSnapshot(
   entries: VsiAggregateEntry[],
   completedChecklistKeys: Set<string>,
-  pathLength = 12
+  pathLength = Infinity
 ): VsiCoverageSnapshot {
   const snapshot = buildCoverageSnapshot(entries, completedChecklistKeys, pathLength);
 
@@ -288,7 +288,7 @@ export function buildVsiCoverageSnapshot(
 export function buildMacropaediaCoverageSnapshot(
   entries: MacropaediaAggregateEntry[],
   completedChecklistKeys: Set<string>,
-  pathLength = 12
+  pathLength = Infinity
 ): MacropaediaCoverageSnapshot {
   const snapshot = buildCoverageSnapshot(entries, completedChecklistKeys, pathLength);
 

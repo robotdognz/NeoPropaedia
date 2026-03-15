@@ -93,6 +93,7 @@ export default function MacropaediaLibrary({ entries, baseUrl }: MacropaediaLibr
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
   const [sortMode, setSortMode] = useState<SortMode>('sections-desc');
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_COUNT);
+  const [spreadPathOpen, setSpreadPathOpen] = useState(false);
 
   useEffect(() => {
     setChecklistState(readChecklistState());
@@ -208,20 +209,29 @@ export default function MacropaediaLibrary({ entries, baseUrl }: MacropaediaLibr
       </section>
 
       <section class="rounded-2xl border border-amber-200 bg-amber-50/70 p-6">
-        <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+        <button
+          type="button"
+          onClick={() => setSpreadPathOpen(!spreadPathOpen)}
+          class="w-full flex flex-col gap-3 md:flex-row md:items-end md:justify-between text-left"
+        >
           <div class="max-w-3xl">
-            <h2 class="font-serif text-2xl text-gray-900">Knowledge-Spread Path</h2>
+            <h2 class="font-serif text-2xl text-gray-900 flex items-center gap-2">
+              Knowledge-Spread Path
+              <svg class={`h-5 w-5 text-gray-400 transition-transform ${spreadPathOpen ? 'rotate-180' : ''}`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </h2>
             <p class="mt-2 text-sm text-gray-700">
               This path greedily picks unread Macropaedia articles that add the largest number of not-yet-covered
               sections, starting from what you have already checked off.
             </p>
           </div>
-          <p class="text-sm text-amber-900">
-            {coverage.remainingSections} sections still uncovered by checked Macropaedia articles
+          <p class="text-sm text-amber-900 flex-shrink-0">
+            {coverage.path.length} steps · {coverage.remainingSections} sections uncovered
           </p>
-        </div>
+        </button>
 
-        {coverage.path.length > 0 ? (
+        {spreadPathOpen && coverage.path.length > 0 ? (
           <ol class="mt-6 grid gap-4 lg:grid-cols-2">
             {coverage.path.map((step, index) => {
               const isChecked = Boolean(checklistState[step.checklistKey]);
@@ -275,12 +285,12 @@ export default function MacropaediaLibrary({ entries, baseUrl }: MacropaediaLibr
               );
             })}
           </ol>
-        ) : (
+        ) : spreadPathOpen ? (
           <div class="mt-6 rounded-xl border border-dashed border-amber-300 bg-white px-4 py-6 text-sm text-gray-600">
             No further spread path is available from unchecked articles. Either you have already covered every mapped
             section, or the remaining unread articles only overlap with sections already covered.
           </div>
-        )}
+        ) : null}
       </section>
 
       <section class="rounded-2xl border border-gray-200 bg-white p-6">
