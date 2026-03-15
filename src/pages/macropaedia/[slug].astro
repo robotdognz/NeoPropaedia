@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { slugify } from '../../utils/helpers';
+import navigation from '../../data/navigation.json';
+
+export async function getStaticPaths() {
+  const sectionMeta: Record<string, { partNumber: number; partTitle: string; divisionId: string; divisionTitle: string; sectionTitle: string }> = {};
+  (navigation as any).parts.forEach((p: any) => {
+    p.divisions.forEach((d: any) => {
+      d.sections.forEach((s: any) => {
+        sectionMeta[s.sectionCode] = { partNumber: p.partNumber, partTitle: p.title, divisionId: d.divisionId, divisionTitle: d.title, sectionTitle: s.title };
+      });
+    });
+  });
+
+  const sections = await getCollection('sections');
+  const articleMap = new Map<string, { title: string; sections: { sectionCode: string; meta: typeof sectionMeta[string] }[] }>();
+
+  for (const section of sections) {
+    for (const ref of section.data.macropaediaReferences ?? []) {
+      const title = ref.replace(/\s+/g, ' ').trim();
+      const articleSlug = slugify(title);
+      const meta = sectionMeta[section.data.sectionCode];
+      if (!meta) continue;
+
+      const existing = articleMap.get(articleSlug);
+      if (existing) {
+        if (!existing.sections.some(s => s.sectionCode === section.data.sectionCode)) {
+          existing.sections.push({ sectionCode: section.data.sectionCode, meta });
+        }
+      } else {
+        articleMap.set(articleSlug, { title, sections: [{ sectionCode: section.data.sectionCode, meta }] });
+      }
+    }
+  }
+
+  return [...articleMap.entries()].map(([slug, article]) => ({
+    params: { slug },
+    props: { article },
+  }));
+}
+
+const base = import.meta.env.BASE_URL;
+const { article } = Astro.props;
+
+// Group by part
+const byPart = new Map<number, typeof article.sections>();
+for (const s of article.sections) {
+  const arr = byPart.get(s.meta.partNumber) || [];
+  arr.push(s);
+  byPart.set(s.meta.partNumber, arr);
+}
+const sortedParts = [...byPart.entries()].sort((a, b) => a[0] - b[0]);
+---
+
+<BaseLayout title={`${article.title} — Macropaedia`} description={`Macropaedia article: ${article.title}`}>
+  <main id="main-content" class="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+    <nav class="mb-6 text-sm text-gray-500 font-sans">
+      <a href={`${base}/`} class="hover:text-indigo-700">Home</a>
+      <span class="mx-1">/</span>
+      <a href={`${base}/macropaedia`} class="hover:text-indigo-700">Macropaedia</a>
+      <span class="mx-1">/</span>
+      <span class="text-gray-900">{article.title}</span>
+    </nav>
+
+    <header>
+      <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-gray-500">Macropaedia Article</p>
+      <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl">{article.title}</h1>
+    </header>
+
+    <section class="mt-8">
+      <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">
+        Referenced in {article.sections.length} {article.sections.length === 1 ? 'section' : 'sections'}
+      </h2>
+
+      {sortedParts.map(([partNumber, sections]) => (
+        <div class="mt-4">
+          <h3 class="text-xs font-sans font-semibold uppercase tracking-[0.15em] text-gray-400">
+            Part {partNumber}: {sections[0].meta.partTitle}
+          </h3>
+          <ul class="mt-2 space-y-2">
+            {sections.map((s) => (
+              <li class="rounded-lg border border-gray-200 bg-white px-4 py-3">
+                <a
+                  href={`${base}/section/${s.sectionCode.replace(/\//g, '-')}`}
+                  class="text-sm font-semibold text-gray-900 hover:text-indigo-700"
+                >
+                  Section {s.sectionCode}: {s.meta.sectionTitle}
+                </a>
+                <p class="mt-0.5 text-xs text-gray-400">{s.meta.divisionTitle}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+  </main>
+</BaseLayout>

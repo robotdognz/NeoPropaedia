@@ -1,7 +1,7 @@
 import { h } from 'preact';
 import Accordion from '../ui/Accordion';
 import { formatEditionLabel } from '../../utils/readingData';
-import { sectionReferenceUrl } from '../../utils/helpers';
+import { sectionReferenceUrl, slugify } from '../../utils/helpers';
 
 // Matches "824.B.4" style refs (with section code + outline path),
 // "section 824" style refs (bare code),
@@ -94,7 +94,9 @@ export default function VsiCard({
     <div class="border border-gray-200 rounded-lg p-4 bg-white hover:shadow-md transition-shadow duration-200">
       <div class="mb-2 flex items-start justify-between gap-3">
         <div class="min-w-0">
-          <h4 class="font-serif font-bold text-gray-900 text-base leading-tight">{title}</h4>
+          <h4 class="font-serif font-bold text-gray-900 text-base leading-tight">
+            <a href={`${baseUrl}/vsi/${slugify(title)}`} class="hover:text-indigo-700 transition-colors">{title}</a>
+          </h4>
           <p class="text-sm text-gray-500 mt-0.5">{metadata}</p>
         </div>
         <label class="inline-flex items-center gap-2 text-xs font-sans font-medium text-gray-500">

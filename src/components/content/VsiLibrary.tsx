@@ -223,7 +223,9 @@ export default function VsiLibrary({ entries, baseUrl }: VsiLibraryProps) {
                       <p class="text-xs font-semibold uppercase tracking-[0.18em] text-amber-700">
                         Step {index + 1}
                       </p>
-                      <h3 class="mt-1 font-serif text-xl leading-tight text-gray-900">{step.title}</h3>
+                      <h3 class="mt-1 font-serif text-xl leading-tight text-gray-900">
+                        <a href={`${baseUrl}/vsi/${step.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}`} class="hover:text-indigo-700 transition-colors">{step.title}</a>
+                      </h3>
                       <p class="mt-1 text-sm text-gray-600">{metadata}</p>
                     </div>
                     <label class="inline-flex flex-shrink-0 items-center gap-2 text-xs font-medium text-gray-500">
@@ -335,7 +337,9 @@ export default function VsiLibrary({ entries, baseUrl }: VsiLibraryProps) {
                   <article key={entry.checklistKey} class="rounded-xl border border-gray-200 bg-gray-50/50 p-5">
                     <div class="flex items-start justify-between gap-3">
                       <div class="min-w-0">
-                        <h3 class="font-serif text-2xl leading-tight text-gray-900">{entry.title}</h3>
+                        <h3 class="font-serif text-2xl leading-tight text-gray-900">
+                          <a href={`${baseUrl}/vsi/${entry.title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')}`} class="hover:text-indigo-700 transition-colors">{entry.title}</a>
+                        </h3>
                         <p class="mt-1 text-sm text-gray-600">{metadata}</p>
                       </div>
                       <label class="inline-flex flex-shrink-0 items-center gap-2 text-xs font-medium text-gray-500">

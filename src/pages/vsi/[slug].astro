@@ -1,0 +1,119 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { slugify } from '../../utils/helpers';
+import { formatEditionLabel } from '../../utils/readingData';
+import navigation from '../../data/navigation.json';
+
+export async function getStaticPaths() {
+  const sectionMeta: Record<string, { partNumber: number; partTitle: string; divisionId: string; divisionTitle: string; sectionTitle: string }> = {};
+  (navigation as any).parts.forEach((p: any) => {
+    p.divisions.forEach((d: any) => {
+      d.sections.forEach((s: any) => {
+        sectionMeta[s.sectionCode] = { partNumber: p.partNumber, partTitle: p.title, divisionId: d.divisionId, divisionTitle: d.title, sectionTitle: s.title };
+      });
+    });
+  });
+
+  const catalogCollections = await getCollection('vsi');
+  const catalog = catalogCollections.flatMap((entry) => entry.data.titles);
+  const allMappings = await getCollection('vsi-mappings');
+  const normalizeText = (text: string) => text.replace(/\s+/g, ' ').trim().toLowerCase();
+
+  return catalog.map((entry) => {
+    const sections: { sectionCode: string; rationale: string; meta: typeof sectionMeta[string] }[] = [];
+    for (const mapping of allMappings) {
+      for (const m of mapping.data.mappings) {
+        if (normalizeText(m.vsiTitle) === normalizeText(entry.title) && normalizeText(m.vsiAuthor) === normalizeText(entry.author)) {
+          const meta = sectionMeta[mapping.data.sectionCode];
+          if (meta) sections.push({ sectionCode: mapping.data.sectionCode, rationale: m.rationale, meta });
+        }
+      }
+    }
+    return {
+      params: { slug: slugify(entry.title) },
+      props: { entry, sections },
+    };
+  });
+}
+
+const base = import.meta.env.BASE_URL;
+const { entry, sections: mappedSections } = Astro.props;
+
+// Group by part
+const byPart = new Map<number, typeof mappedSections>();
+for (const s of mappedSections) {
+  const arr = byPart.get(s.meta.partNumber) || [];
+  arr.push(s);
+  byPart.set(s.meta.partNumber, arr);
+}
+const sortedParts = [...byPart.entries()].sort((a, b) => a[0] - b[0]);
+
+const editionLabel = formatEditionLabel(entry.edition);
+const metadata = [entry.author, editionLabel, entry.publicationYear ? String(entry.publicationYear) : null].filter(Boolean).join(' · ');
+---
+
+<BaseLayout title={`${entry.title} — Oxford VSI`} description={entry.abstract || `${entry.title} by ${entry.author}`}>
+  <main id="main-content" class="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+    <nav class="mb-6 text-sm text-gray-500 font-sans">
+      <a href={`${base}/`} class="hover:text-indigo-700">Home</a>
+      <span class="mx-1">/</span>
+      <a href={`${base}/vsi`} class="hover:text-indigo-700">VSI Library</a>
+      <span class="mx-1">/</span>
+      <span class="text-gray-900">{entry.title}</span>
+    </nav>
+
+    <header>
+      <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-gray-500">Oxford Very Short Introduction</p>
+      <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl">{entry.title}</h1>
+      <p class="mt-2 text-base text-gray-500">{metadata}</p>
+      {entry.subject && (
+        <p class="mt-1 text-sm text-gray-400">{entry.subject}</p>
+      )}
+    </header>
+
+    {entry.abstract && (
+      <section class="mt-6 rounded-xl border border-gray-200 bg-gray-50 px-5 py-4">
+        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">Abstract</h2>
+        <p class="mt-2 text-sm leading-relaxed text-gray-700">{entry.abstract}</p>
+      </section>
+    )}
+
+    {entry.keywords && entry.keywords.length > 0 && (
+      <section class="mt-4">
+        <div class="flex flex-wrap gap-1.5">
+          {entry.keywords.map((kw: string) => (
+            <span class="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">{kw}</span>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <section class="mt-8">
+      <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">
+        Appears in {mappedSections.length} {mappedSections.length === 1 ? 'section' : 'sections'}
+      </h2>
+
+      {sortedParts.map(([partNumber, sections]) => (
+        <div class="mt-4">
+          <h3 class="text-xs font-sans font-semibold uppercase tracking-[0.15em] text-gray-400">
+            Part {partNumber}: {sections[0].meta.partTitle}
+          </h3>
+          <ul class="mt-2 space-y-2">
+            {sections.map((s) => (
+              <li class="rounded-lg border border-gray-200 bg-white px-4 py-3">
+                <a
+                  href={`${base}/section/${s.sectionCode.replace(/\//g, '-')}`}
+                  class="text-sm font-semibold text-gray-900 hover:text-indigo-700"
+                >
+                  Section {s.sectionCode}: {s.meta.sectionTitle}
+                </a>
+                <p class="mt-1 text-xs text-gray-500 leading-relaxed">{s.rationale}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+  </main>
+</BaseLayout>

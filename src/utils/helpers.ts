@@ -83,3 +83,15 @@ export function partDisplayName(partNumber: number): string {
 export function partColorClass(partNumber: number): string {
   return `part-${partNumber}`;
 }
+
+/**
+ * Create a URL-safe slug from a title.
+ */
+export function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
