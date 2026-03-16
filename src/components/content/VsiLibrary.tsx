@@ -265,7 +265,7 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
         </div>
       </section>
 
-      <section class="rounded-2xl border border-amber-200 bg-amber-50/70 p-6">
+      <section class="rounded-2xl border border-amber-200 bg-amber-50/70 p-4 sm:p-6 overflow-hidden">
         <button
           type="button"
           onClick={() => setSpreadPathOpen(!spreadPathOpen)}
@@ -279,8 +279,9 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
               </svg>
             </h2>
             <p class="mt-2 text-sm text-gray-700">
-              This path greedily picks unread VSI titles that add the largest number of not-yet-covered sections,
-              starting from what you have already checked off.
+              A suggested reading order that builds your knowledge as broadly as possible. Each step picks the
+              unread book that opens up the most new sections, favouring books that reach across different parts
+              of the outline rather than clustering in one area. The path adapts as you check off what you have read.
             </p>
           </div>
           <p class="text-sm text-amber-900 flex-shrink-0">
@@ -289,7 +290,7 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
         </button>
 
         {spreadPathOpen && coverage.path.length > 0 ? (
-          <ol class="mt-6 grid gap-4 lg:grid-cols-2">
+          <ol class="mt-6 grid gap-3 sm:gap-4 lg:grid-cols-2 min-w-0">
             {coverage.path.map((step, index) => {
               const metadata = formatMetadata(step);
               const isChecked = Boolean(checklistState[step.checklistKey]);

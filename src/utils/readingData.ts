@@ -379,18 +379,26 @@ function buildCoverageSnapshot<TEntry extends {
       }
 
       if (newSections.length === bestNewSections.length) {
-        if (entry.sectionCount > bestEntry.sectionCount) {
+        // Prefer the book whose new sections span the most different parts and divisions
+        const spread = (sections: ReadingSectionSummary[]) => {
+          const parts = new Set(sections.map((s) => s.partNumber));
+          const divisions = new Set(sections.map((s) => s.divisionId));
+          return parts.size * 100 + divisions.size;
+        };
+        const entrySpread = spread(newSections);
+        const bestSpread = spread(bestNewSections);
+
+        if (entrySpread > bestSpread) {
           bestEntry = entry;
           bestNewSections = newSections;
           continue;
         }
 
-        if (
-          entry.sectionCount === bestEntry.sectionCount &&
-          collator.compare(entry.title, bestEntry.title) < 0
-        ) {
+        // If spread is equal, prefer the book with more total section coverage
+        if (entrySpread === bestSpread && entry.sectionCount > bestEntry.sectionCount) {
           bestEntry = entry;
           bestNewSections = newSections;
+          continue;
         }
       }
     }

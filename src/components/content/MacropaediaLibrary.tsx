@@ -214,7 +214,7 @@ export default function MacropaediaLibrary({ entries, baseUrl }: MacropaediaLibr
         </div>
       </section>
 
-      <section class="rounded-2xl border border-amber-200 bg-amber-50/70 p-6">
+      <section class="rounded-2xl border border-amber-200 bg-amber-50/70 p-4 sm:p-6 overflow-hidden">
         <button
           type="button"
           onClick={() => setSpreadPathOpen(!spreadPathOpen)}
@@ -228,8 +228,9 @@ export default function MacropaediaLibrary({ entries, baseUrl }: MacropaediaLibr
               </svg>
             </h2>
             <p class="mt-2 text-sm text-gray-700">
-              This path greedily picks unread Macropaedia articles that add the largest number of not-yet-covered
-              sections, starting from what you have already checked off.
+              A suggested reading order that builds your knowledge as broadly as possible. Each step picks the
+              unread article that opens up the most new sections, favouring articles that reach across different
+              parts of the outline rather than clustering in one area. The path adapts as you check off what you have read.
             </p>
           </div>
           <p class="text-sm text-amber-900 flex-shrink-0">
@@ -238,7 +239,7 @@ export default function MacropaediaLibrary({ entries, baseUrl }: MacropaediaLibr
         </button>
 
         {spreadPathOpen && coverage.path.length > 0 ? (
-          <ol class="mt-6 grid gap-4 lg:grid-cols-2">
+          <ol class="mt-6 grid gap-3 sm:gap-4 lg:grid-cols-2 min-w-0">
             {coverage.path.map((step, index) => {
               const isChecked = Boolean(checklistState[step.checklistKey]);
 
