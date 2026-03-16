@@ -19,6 +19,10 @@ export function macropaediaChecklistKey(reference: string): string {
   return `macropaedia:${normalizeChecklistKeyPart(reference)}`;
 }
 
+export function wikipediaChecklistKey(title: string): string {
+  return `wikipedia:${normalizeChecklistKeyPart(title)}`;
+}
+
 export function readChecklistState(): Record<string, boolean> {
   if (typeof window === 'undefined') return {};
 

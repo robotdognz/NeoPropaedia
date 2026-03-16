@@ -4,10 +4,12 @@ import Breadcrumbs from '../../components/layout/Breadcrumbs.astro';
 import Sidebar from '../../components/layout/Sidebar.astro';
 import OutlineTree from '../../components/content/OutlineTree';
 import MacropaediaRefs from '../../components/content/MacropaediaRefs';
+import WikipediaRefs from '../../components/content/WikipediaRefs';
 import VsiRecommendations from '../../components/content/VsiRecommendations';
 import CrossRefLink from '../../components/content/CrossRefLink';
 import navigation from '../../data/navigation.json';
 import crossReferences from '../../data/cross-references.json';
+import wikiData from '../../data/wikipedia-vital-articles.json';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -187,6 +189,36 @@ const breadcrumbItems = [
           />
         </section>
         );
+      })()}
+
+      <!-- Wikipedia Article Recommendations -->
+      {(() => {
+        const articleMap = new Map();
+        for (const article of (wikiData as any).levels[1].articles) {
+          if ((article.sectionCodes || []).includes(section.sectionCode)) {
+            articleMap.set(article.title, { ...article, lowestLevel: 1 });
+          }
+        }
+        for (const article of (wikiData as any).levels[2].articles) {
+          if ((article.sectionCodes || []).includes(section.sectionCode) && !articleMap.has(article.title)) {
+            articleMap.set(article.title, { ...article, lowestLevel: 2 });
+          }
+        }
+        for (const article of (wikiData as any).levels[3].articles) {
+          if ((article.sectionCodes || []).includes(section.sectionCode) && !articleMap.has(article.title)) {
+            articleMap.set(article.title, { ...article, lowestLevel: 3 });
+          }
+        }
+        const wikiArticles = [...articleMap.values()];
+        return wikiArticles.length > 0 ? (
+          <section class="mb-8">
+            <WikipediaRefs
+              client:load
+              articles={wikiArticles}
+              baseUrl={base}
+            />
+          </section>
+        ) : null;
       })()}
 
       <!-- Macropaedia References -->

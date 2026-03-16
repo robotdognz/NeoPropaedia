@@ -1,0 +1,154 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import CoverageRings from '../../components/ui/CoverageRings';
+import { slugify } from '../../utils/helpers';
+import wikiData from '../../data/wikipedia-vital-articles.json';
+import navigation from '../../data/navigation.json';
+
+export function getStaticPaths() {
+  const nav = navigation as any;
+  const sectionMeta: Record<string, { partNumber: number; partTitle: string; divisionId: string; divisionTitle: string; sectionTitle: string }> = {};
+  nav.parts.forEach((p: any) => {
+    p.divisions.forEach((d: any) => {
+      d.sections.forEach((s: any) => {
+        sectionMeta[s.sectionCode] = { partNumber: p.partNumber, partTitle: p.title, divisionId: d.divisionId, divisionTitle: d.title, sectionTitle: s.title };
+      });
+    });
+  });
+
+  let totalDivisions = 0;
+  let totalSections = 0;
+  nav.parts.forEach((p: any) => { totalDivisions += p.divisions.length; p.divisions.forEach((d: any) => { totalSections += d.sections.length; }); });
+  const totals = { parts: nav.parts.length, divisions: totalDivisions, sections: totalSections };
+
+  // Build unique article list from all levels
+  const articleMap = new Map<string, any>();
+  for (const article of (wikiData as any).levels[1].articles) {
+    articleMap.set(article.title, { ...article, lowestLevel: 1 });
+  }
+  for (const article of (wikiData as any).levels[2].articles) {
+    if (!articleMap.has(article.title)) {
+      articleMap.set(article.title, { ...article, lowestLevel: 2 });
+    }
+  }
+  for (const article of (wikiData as any).levels[3].articles) {
+    if (!articleMap.has(article.title)) {
+      articleMap.set(article.title, { ...article, lowestLevel: 3 });
+    }
+  }
+
+  return [...articleMap.values()].map((article) => {
+    const sections = (article.sectionCodes || []).map((code: string) => ({
+      sectionCode: code,
+      meta: sectionMeta[code],
+    })).filter((s: any) => s.meta);
+
+    const coveredParts = new Set(sections.map((s: any) => s.meta.partNumber));
+    const coveredDivisions = new Set(sections.map((s: any) => s.meta.divisionId));
+    const coverage = { parts: coveredParts.size, divisions: coveredDivisions.size, sections: sections.length };
+
+    return {
+      params: { slug: slugify(article.title) },
+      props: { article, sections, coverage, totals },
+    };
+  });
+}
+
+const base = import.meta.env.BASE_URL;
+const { article, sections, coverage, totals } = Astro.props;
+
+// Group sections by part
+const byPart = new Map<number, typeof sections>();
+for (const s of sections) {
+  const arr = byPart.get(s.meta.partNumber) || [];
+  arr.push(s);
+  byPart.set(s.meta.partNumber, arr);
+}
+const sortedParts = [...byPart.entries()].sort((a, b) => a[0] - b[0]);
+
+const rings = [
+  { label: 'Parts', count: coverage.parts, total: totals.parts, color: '#6366f1' },
+  { label: 'Divisions', count: coverage.divisions, total: totals.divisions, color: '#8b5cf6' },
+  { label: 'Sections', count: coverage.sections, total: totals.sections, color: '#a78bfa' },
+];
+
+const levelLabels: Record<number, string> = { 1: 'Level 1 (Top 10)', 2: 'Level 2 (Top 100)', 3: 'Level 3 (~1,000)' };
+const levelLabel = levelLabels[article.lowestLevel] || 'Level 3';
+---
+
+<BaseLayout title={`${article.displayTitle || article.title} — Wikipedia`} description={`Wikipedia vital article: ${article.title}`}>
+  <main id="main-content" class="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
+    <nav class="mb-6 text-sm text-gray-500 font-sans">
+      <a href={`${base}/`} class="hover:text-indigo-700">Home</a>
+      <span class="mx-1">/</span>
+      <a href={`${base}/wikipedia`} class="hover:text-indigo-700">Wikipedia</a>
+      <span class="mx-1">/</span>
+      <span class="text-gray-900">{article.displayTitle || article.title}</span>
+    </nav>
+
+    <div class="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-8">
+      <div class="flex-1 min-w-0">
+        <header>
+          <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-gray-500">Wikipedia Vital Article</p>
+          <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl">{article.displayTitle || article.title}</h1>
+          <div class="mt-2 flex flex-wrap gap-2">
+            {article.category && (
+              <span class="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">{article.category}</span>
+            )}
+            {article.subcategory && (
+              <span class="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">{article.subcategory}</span>
+            )}
+            <span class="inline-block rounded-full bg-indigo-50 px-2.5 py-0.5 text-xs text-indigo-700">{levelLabel}</span>
+          </div>
+          <a
+            href={article.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-3 inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800"
+          >
+            Read on Wikipedia ↗
+          </a>
+        </header>
+      </div>
+
+      {sections.length > 0 && (
+        <div class="flex-shrink-0 self-center sm:self-start">
+          <CoverageRings client:load rings={rings} size={140} ringWidth={12} />
+        </div>
+      )}
+    </div>
+
+    {sections.length > 0 ? (
+      <section class="mt-8">
+        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">
+          Mapped to {sections.length} {sections.length === 1 ? 'section' : 'sections'}
+        </h2>
+
+        {sortedParts.map(([partNumber, partSections]) => (
+          <div class="mt-4">
+            <h3 class="text-xs font-sans font-semibold uppercase tracking-[0.15em] text-gray-400">
+              Part {partNumber}: {partSections[0].meta.partTitle}
+            </h3>
+            <ul class="mt-2 space-y-2">
+              {partSections.map((s) => (
+                <li class="rounded-lg border border-gray-200 bg-white px-4 py-3">
+                  <a
+                    href={`${base}/section/${s.sectionCode.replace(/\//g, '-')}`}
+                    class="text-sm font-semibold text-gray-900 hover:text-indigo-700"
+                  >
+                    Section {s.sectionCode}: {s.meta.sectionTitle}
+                  </a>
+                  <p class="mt-0.5 text-xs text-gray-400">{s.meta.divisionTitle}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+    ) : (
+      <section class="mt-8">
+        <p class="text-sm text-gray-400 italic">This article has not yet been mapped to Propaedia sections.</p>
+      </section>
+    )}
+  </main>
+</BaseLayout>

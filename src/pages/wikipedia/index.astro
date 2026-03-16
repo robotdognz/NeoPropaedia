@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../../components/layout/BaseLayout.astro';
+import WikipediaLibrary from '../../components/content/WikipediaLibrary';
+import { buildWikipediaAggregateEntries, type ReadingSectionSummary } from '../../utils/readingData';
+import wikiData from '../../data/wikipedia-vital-articles.json';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL;
+const sections = await getCollection('sections');
+
+const sectionLookup = new Map<string, ReadingSectionSummary>(
+  sections.map((s) => [
+    s.data.sectionCode,
+    {
+      sectionCode: s.data.sectionCode,
+      sectionCodeDisplay: s.data.sectionCodeDisplay,
+      title: s.data.title,
+      partNumber: s.data.partNumber,
+      divisionId: s.data.divisionId,
+    },
+  ])
+);
+
+// Combine all levels, deduplicating by title (lowest level wins)
+const articleMap = new Map<string, any>();
+for (const article of (wikiData as any).levels[1].articles) {
+  articleMap.set(article.title, { ...article, lowestLevel: 1 });
+}
+for (const article of (wikiData as any).levels[2].articles) {
+  if (!articleMap.has(article.title)) {
+    articleMap.set(article.title, { ...article, lowestLevel: 2 });
+  }
+}
+for (const article of (wikiData as any).levels[3].articles) {
+  if (!articleMap.has(article.title)) {
+    articleMap.set(article.title, { ...article, lowestLevel: 3 });
+  }
+}
+
+const entries = buildWikipediaAggregateEntries([...articleMap.values()], sectionLookup);
+---
+
+<BaseLayout
+  title="Wikipedia Vital Articles — Propaedia"
+  description="Browse Wikipedia's most important articles mapped to the Propaedia outline, with three knowledge zoom levels."
+>
+  <main id="main-content" class="mx-auto w-full max-w-screen-2xl px-4 py-8 sm:px-6 lg:px-8">
+    <header class="max-w-4xl">
+      <p class="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">Reading Lists</p>
+      <h1 class="mt-3 font-serif text-4xl text-gray-900 sm:text-5xl">Wikipedia Vital Articles</h1>
+      <p class="mt-4 max-w-3xl text-base leading-relaxed text-gray-600 sm:text-lg">
+        Wikipedia's curated list of the most important articles, mapped to Propaedia sections.
+        Use the knowledge zoom to switch between a focused overview or a broader survey. Check
+        off articles as you read them and track your coverage of the outline.
+      </p>
+    </header>
+
+    <section class="mt-10">
+      <WikipediaLibrary client:load entries={entries} baseUrl={base} />
+    </section>
+  </main>
+</BaseLayout>

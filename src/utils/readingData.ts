@@ -1,6 +1,7 @@
 import {
   macropaediaChecklistKey,
   vsiChecklistKey,
+  wikipediaChecklistKey,
 } from './readingChecklist';
 
 export interface ReadingSectionSummary {
@@ -91,6 +92,36 @@ export interface MacropaediaCoverageSnapshot {
   currentlyCoveredSections: number;
   remainingSections: number;
   path: MacropaediaCoveragePathStep[];
+}
+
+export interface WikipediaAggregateEntry {
+  title: string;
+  displayTitle?: string;
+  url: string;
+  category?: string;
+  lowestLevel: number;
+  checklistKey: string;
+  sectionCount: number;
+  sections: ReadingSectionSummary[];
+}
+
+export interface WikipediaCoverageSnapshot {
+  totalArticles: number;
+  completedArticles: number;
+  totalCoveredSections: number;
+  currentlyCoveredSections: number;
+  remainingSections: number;
+  path: WikipediaCoveragePathStep[];
+}
+
+export interface WikipediaCoveragePathStep {
+  title: string;
+  url: string;
+  checklistKey: string;
+  sectionCount: number;
+  newSectionCount: number;
+  cumulativeCoveredSectionCount: number;
+  newSections: ReadingSectionSummary[];
 }
 
 const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
@@ -290,6 +321,52 @@ export function buildMacropaediaCoverageSnapshot(
   completedChecklistKeys: Set<string>,
   pathLength = Infinity
 ): MacropaediaCoverageSnapshot {
+  const snapshot = buildCoverageSnapshot(entries, completedChecklistKeys, pathLength);
+
+  return {
+    totalArticles: snapshot.totalEntries,
+    completedArticles: snapshot.completedEntries,
+    totalCoveredSections: snapshot.totalCoveredSections,
+    currentlyCoveredSections: snapshot.currentlyCoveredSections,
+    remainingSections: snapshot.remainingSections,
+    path: snapshot.path.map(({ entry, ...rest }) => ({
+      ...entry,
+      ...rest,
+    })),
+  };
+}
+
+export function buildWikipediaAggregateEntries(
+  articles: Array<{ title: string; displayTitle?: string; url: string; category?: string; lowestLevel: number; sectionCodes: string[] }>,
+  sectionLookup: Map<string, ReadingSectionSummary>
+): WikipediaAggregateEntry[] {
+  return articles.map((article) => {
+    const sections = (article.sectionCodes || [])
+      .map((code) => sectionLookup.get(code))
+      .filter((s): s is ReadingSectionSummary => s !== undefined)
+      .sort(sectionSort);
+
+    return {
+      title: article.title,
+      displayTitle: article.displayTitle,
+      url: article.url,
+      category: article.category,
+      lowestLevel: article.lowestLevel,
+      checklistKey: wikipediaChecklistKey(article.title),
+      sectionCount: sections.length,
+      sections,
+    };
+  }).sort((a, b) => {
+    if (a.sectionCount !== b.sectionCount) return b.sectionCount - a.sectionCount;
+    return collator.compare(a.title, b.title);
+  });
+}
+
+export function buildWikipediaCoverageSnapshot(
+  entries: WikipediaAggregateEntry[],
+  completedChecklistKeys: Set<string>,
+  pathLength = Infinity
+): WikipediaCoverageSnapshot {
   const snapshot = buildCoverageSnapshot(entries, completedChecklistKeys, pathLength);
 
   return {
