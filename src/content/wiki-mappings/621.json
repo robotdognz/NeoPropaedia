@@ -21,7 +21,7 @@
         "C.2.a",
         "C.4"
       ],
-      "rationaleAI": "Directly covers metre, rhyme, alliteration, and assonance (B.2.a.i\u2013ii), prosody across verse cultures (B.2.b), epic and lyric genres (C.2.a, C.4), and the distinction between verse and prose (C.1), filling all priority prosody paths."
+      "rationaleAI": "Directly covers metre, rhyme, alliteration, and assonance (B.2.a.i–ii), prosody across verse cultures (B.2.b), epic and lyric genres (C.2.a, C.4), and the distinction between verse and prose (C.1), filling all priority prosody paths."
     },
     {
       "articleTitle": "Fiction",
@@ -32,7 +32,7 @@
         "C.2.d",
         "C.2.e"
       ],
-      "rationaleAI": "Addresses the nature of literary fiction versus non-fiction (A.1), genre fiction versus literary fiction as classification systems (A.6), and directly covers the novel, novella, and short story (C.2.d\u2013e)."
+      "rationaleAI": "Addresses the nature of literary fiction versus non-fiction (A.1), genre fiction versus literary fiction as classification systems (A.6), and directly covers the novel, novella, and short story (C.2.d–e)."
     },
     {
       "articleTitle": "Leo Tolstoy",
@@ -40,7 +40,7 @@
         "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "War and Peace and Anna Karenina are canonical examples of the realist novel (C.2.d) within the Western literary tradition (D.1); his late philosophical writings also represent nonfictional prose literature (C.6.e\u2013f)."
+      "rationaleAI": "War and Peace and Anna Karenina are canonical examples of the realist novel (C.2.d) within the Western literary tradition (D.1); his late philosophical writings also represent nonfictional prose literature (C.6.e–f)."
     },
     {
       "articleTitle": "Virgil",
@@ -119,7 +119,7 @@
         "C.2.c",
         "D.1"
       ],
-      "rationaleAI": "Romanticism as a literary genre-defining movement encompasses Gothic romance and Romantic poetry (C.2.c, A.6), and its trajectory from 1800\u20131850 is a defining episode in Western literary history (D.1)."
+      "rationaleAI": "Romanticism as a literary genre-defining movement encompasses Gothic romance and Romantic poetry (C.2.c, A.6), and its trajectory from 1800–1850 is a defining episode in Western literary history (D.1)."
     },
     {
       "articleTitle": "Non-fiction",
@@ -127,7 +127,7 @@
         "A.1",
         "C.6"
       ],
-      "rationaleAI": "Directly defines the distinction between fiction and non-fiction as literary categories (A.1) and covers the full range of nonfictional prose forms\u2014biography, journalism, essay, history, creative non-fiction\u2014in path C.6."
+      "rationaleAI": "Directly defines the distinction between fiction and non-fiction as literary categories (A.1) and covers the full range of nonfictional prose forms — biography, journalism, essay, history, creative non-fiction — in path C.6."
     },
     {
       "articleTitle": "Plato",
@@ -184,7 +184,7 @@
         "C.6.f",
         "D.1"
       ],
-      "rationaleAI": "Candide exemplifies satirical literature (C.5); his histories are history as literature (C.6.b); his philosophical tales and letters represent philosophical and political literature (C.6.e\u2013f); all within the Western literary tradition (D.1)."
+      "rationaleAI": "Candide exemplifies satirical literature (C.5); his histories are history as literature (C.6.b); his philosophical tales and letters represent philosophical and political literature (C.6.e–f); all within the Western literary tradition (D.1)."
     },
     {
       "articleTitle": "Novel",
@@ -208,7 +208,7 @@
         "C.6.f",
         "C.6.g"
       ],
-      "rationaleAI": "A Vindication of the Rights of Woman and Vindication of the Rights of Men are canonical examples of political and polemical literature (C.6.f\u2013g) by a foundational Enlightenment-era writer."
+      "rationaleAI": "A Vindication of the Rights of Woman and Vindication of the Rights of Men are canonical examples of political and polemical literature (C.6.f–g) by a foundational Enlightenment-era writer."
     },
     {
       "articleTitle": "Mesopotamia",
@@ -250,7 +250,7 @@
         "C.2.g",
         "D"
       ],
-      "rationaleAI": "Oral tradition directly covers primitive, folk, and popular literature (C.8) including epic poetry (C.2.a) and ballads (C.2.g), and its analysis\u2014from Homeric epic to African griot practice\u2014is foundational to understanding pre-literate literary history (D)."
+      "rationaleAI": "Oral tradition directly covers primitive, folk, and popular literature (C.8) including epic poetry (C.2.a) and ballads (C.2.g), and its analysis — from Homeric epic to African griot practice — is foundational to understanding pre-literate literary history (D)."
     },
     {
       "articleTitle": "Folk music",
@@ -267,6 +267,17 @@
         "C.6.h"
       ],
       "rationaleAI": "The Book of Healing is an encyclopedic philosophical and scientific work constituting philosophical literature (C.6.e) and scientific literature (C.6.h); Avicenna also wrote poetry, placing him within the non-Western literary tradition."
+    },
+    {
+      "articleTitle": "The arts",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 6: Art. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

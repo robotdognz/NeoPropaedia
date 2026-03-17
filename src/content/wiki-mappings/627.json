@@ -31,7 +31,7 @@
         "B.3.c",
         "C.1"
       ],
-      "rationaleAI": "Michelangelo's works—Pietà, David, and the Sistine Chapel—exemplify representational religious iconography (A.2, B.2.a), demonstrate carving and modeling techniques (A.4), include commemorative monuments (B.3.c), and are canonical examples of Western Renaissance sculpture (C.1)."
+      "rationaleAI": "Michelangelo's works — Pietà, David, and the Sistine Chapel — exemplify representational religious iconography (A.2, B.2.a), demonstrate carving and modeling techniques (A.4), include commemorative monuments (B.3.c), and are canonical examples of Western Renaissance sculpture (C.1)."
     },
     {
       "articleTitle": "Bronze",
@@ -123,7 +123,7 @@
         "B.2.c",
         "B.3"
       ],
-      "rationaleAI": "Jewellery is made from precious metals, gemstones, glass, and shell—all sculptural materials (A.3)—and functions as decorative sculpture (B.2.c) and ritualistic or ceremonial object (B.3.a), spanning all human societies."
+      "rationaleAI": "Jewellery is made from precious metals, gemstones, glass, and shell — all sculptural materials (A.3)—and functions as decorative sculpture (B.2.c) and ritualistic or ceremonial object (B.3.a), spanning all human societies."
     },
     {
       "articleTitle": "Leonardo da Vinci",
@@ -153,6 +153,16 @@
         "A.3"
       ],
       "rationaleAI": "Mining is the source of sculptural materials including metals, stone, and gemstones (A.3); the extraction of marble, granite, bronze, gold, and other materials from the earth directly underpins sculptural production throughout history."
+    },
+    {
+      "articleTitle": "The arts",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 6: Art. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

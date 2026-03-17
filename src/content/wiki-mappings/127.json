@@ -21,7 +21,7 @@
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "Electricity covers electric charge, electric fields, electric current, electromagnetic induction, circuits, and power generation \u2014 spanning electrostatics (A) and all of Section B (direct current, conduction mechanisms, and alternating current)."
+      "rationaleAI": "Electricity covers electric charge, electric fields, electric current, electromagnetic induction, circuits, and power generation — spanning electrostatics (A) and all of Section B (direct current, conduction mechanisms, and alternating current)."
     },
     {
       "articleTitle": "Magnetism",
@@ -64,7 +64,7 @@
         "C.4.a",
         "B.5.d"
       ],
-      "rationaleAI": "Faraday discovered electromagnetic induction (B.3.a, C.4.a \u2014 the laws of electromagnetic induction), diamagnetism, and the laws of electrolysis (B.5.d), with his field-line concept directly underpinning the outline's treatment of magnetic effects of varying currents (C.4)."
+      "rationaleAI": "Faraday discovered electromagnetic induction (B.3.a, C.4.a — the laws of electromagnetic induction), diamagnetism, and the laws of electrolysis (B.5.d), with his field-line concept directly underpinning the outline's treatment of magnetic effects of varying currents (C.4)."
     },
     {
       "articleTitle": "Electron",
@@ -77,7 +77,7 @@
         "C.3.a",
         "C.3.b"
       ],
-      "rationaleAI": "The electron's motion and properties underpin multiple outline paths: charge carrier motion in electric fields (B.2.a), conduction mechanisms in solids and semiconductors (B.2.b), electron emission including thermionic and photoelectric (B.2.d), and motion of charges in magnetic fields (C.3.a\u2013b)."
+      "rationaleAI": "The electron's motion and properties underpin multiple outline paths: charge carrier motion in electric fields (B.2.a), conduction mechanisms in solids and semiconductors (B.2.b), electron emission including thermionic and photoelectric (B.2.d), and motion of charges in magnetic fields (C.3.a–b)."
     },
     {
       "articleTitle": "Photon",
@@ -127,7 +127,7 @@
         "B.2.b",
         "B.1.c"
       ],
-      "rationaleAI": "Electronics covers the design of devices controlling charged particles via transistors, diodes, and integrated circuits \u2014 grounded in conduction mechanisms in semiconductors (B.2.b) and direct current circuit principles including Ohm's and Kirchhoff's laws (B.1.c)."
+      "rationaleAI": "Electronics covers the design of devices controlling charged particles via transistors, diodes, and integrated circuits — grounded in conduction mechanisms in semiconductors (B.2.b) and direct current circuit principles including Ohm's and Kirchhoff's laws (B.1.c)."
     },
     {
       "articleTitle": "Optics",
@@ -160,7 +160,7 @@
         "A.1.a",
         "B.2"
       ],
-      "rationaleAI": "The proton as a positive charge carrier is directly relevant to electrostatics (A.1.a \u2014 interaction of charged bodies) and the mechanisms of charge conduction (B.2); in chemistry, proton transfer relates to B.5.d (electrolysis)."
+      "rationaleAI": "The proton as a positive charge carrier is directly relevant to electrostatics (A.1.a — interaction of charged bodies) and the mechanisms of charge conduction (B.2); in chemistry, proton transfer relates to B.5.d (electrolysis)."
     },
     {
       "articleTitle": "Plasma (physics)",
@@ -168,7 +168,7 @@
         "B.2.b",
         "A.1.e"
       ],
-      "rationaleAI": "Plasma is an ionized gas relevant to conduction mechanisms (B.2.b \u2014 conduction in gases) and to atmospheric electricity phenomena (A.1.e \u2014 lightning is partially ionized plasma); it is also governed by electromagnetic fields as stated in the article."
+      "rationaleAI": "Plasma is an ionized gas relevant to conduction mechanisms (B.2.b — conduction in gases) and to atmospheric electricity phenomena (A.1.e — lightning is partially ionized plasma); it is also governed by electromagnetic fields as stated in the article."
     },
     {
       "articleTitle": "Vacuum",
@@ -202,7 +202,7 @@
         "B.2.c",
         "B.5.c"
       ],
-      "rationaleAI": "Thermoelectric effects \u2014 transformation between electric and thermal energy (B.2.c) \u2014 and resistive heating (B.5.c, thermal effect of electricity) are the specific outline paths connecting thermodynamics to electricity and magnetism."
+      "rationaleAI": "Thermoelectric effects — transformation between electric and thermal energy (B.2.c) — and resistive heating (B.5.c, thermal effect of electricity) are the specific outline paths connecting thermodynamics to electricity and magnetism."
     },
     {
       "articleTitle": "Light",
@@ -229,6 +229,19 @@
         "E.2.c"
       ],
       "rationaleAI": "Atoms are the seat of magnetic dipole moments and nuclear moments (C.3.d), atomic structure governs magnetism (C.5.d), and atomic and molecular absorption, emission, and scattering of radiation (E.2.c) are all explicitly covered in the outline."
+    },
+    {
+      "articleTitle": "Science",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 1: Matter and Energy. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

@@ -19,7 +19,7 @@
         "B.1",
         "B.2.a"
       ],
-      "rationaleAI": "Ali ibn Abi Talib is central to B.1.i.ii, which covers his caliphate (656\u2013661), civil unrest, and the origins of Shi'ism; he also connects to B.1.b (Muhammad's inner circle), B.1.c (Patriarchal Caliphs), and B.2.a (his rivalry with Mu'awiyah that enabled the Umayyad caliphate)."
+      "rationaleAI": "Ali ibn Abi Talib is central to B.1.i.ii, which covers his caliphate (656–661), civil unrest, and the origins of Shi'ism; he also connects to B.1.b (Muhammad's inner circle), B.1.c (Patriarchal Caliphs), and B.2.a (his rivalry with Mu'awiyah that enabled the Umayyad caliphate)."
     },
     {
       "articleTitle": "Shia Islam",
@@ -57,7 +57,7 @@
         "C.2.d",
         "C.2.e"
       ],
-      "rationaleAI": "Avicenna (c.980\u20131037) was active in the Samanid and Buyid cultural spheres, directly addressed in C.2.d (Samanid patronage of art and learning) and C.2.e (Buyid dynasty, Iranian revival); his philosophical and medical work exemplifies C.1.d and C.1.i (arts and sciences, theology and philosophy under the Abbasids)."
+      "rationaleAI": "Avicenna (c.980–1037) was active in the Samanid and Buyid cultural spheres, directly addressed in C.2.d (Samanid patronage of art and learning) and C.2.e (Buyid dynasty, Iranian revival); his philosophical and medical work exemplifies C.1.d and C.1.i (arts and sciences, theology and philosophy under the Abbasids)."
     },
     {
       "articleTitle": "Spain",
@@ -65,7 +65,7 @@
         "C.2.a",
         "C.2"
       ],
-      "rationaleAI": "Spain (Al-Andalus) is the direct geographic subject of C.2.a\u2013C.2.i.iii, covering the Umayyad emirate and caliphate in Spain from 756 to 1031, including the conquest by Tariq ibn Ziyad, the splendour of Abd ar-Rahman III's caliphate, and social, economic, and cultural life in Muslim Spain."
+      "rationaleAI": "Spain (Al-Andalus) is the direct geographic subject of C.2.a–C.2.i.iii, covering the Umayyad emirate and caliphate in Spain from 756 to 1031, including the conquest by Tariq ibn Ziyad, the splendour of Abd ar-Rahman III's caliphate, and social, economic, and cultural life in Muslim Spain."
     },
     {
       "articleTitle": "Egypt",
@@ -89,7 +89,7 @@
       "relevantPathsAI": [
         "C.2.c"
       ],
-      "rationaleAI": "Algeria encompasses the territories of the Rustamid kingdom in the central Maghrib (787\u2013911) and the Aghlabid state in Tunisia/Algeria/Sicily (800\u2013909), both explicitly listed under C.2.c as other North African and Syrian dynasties."
+      "rationaleAI": "Algeria encompasses the territories of the Rustamid kingdom in the central Maghrib (787–911) and the Aghlabid state in Tunisia/Algeria/Sicily (800–909), both explicitly listed under C.2.c as other North African and Syrian dynasties."
     },
     {
       "articleTitle": "Arabic",
@@ -136,7 +136,17 @@
         "B",
         "C"
       ],
-      "rationaleAI": "Post-classical history (c.500\u20131450) frames the Islamic Golden Age, Abbasid caliphate, and trans-civilizational trade networks as defining features of the period, providing broad historiographic and contextual coverage across paths A through C of this section."
+      "rationaleAI": "Post-classical history (c.500–1450) frames the Islamic Golden Age, Abbasid caliphate, and trans-civilizational trade networks as defining features of the period, providing broad historiographic and contextual coverage across paths A through C of this section."
+    },
+    {
+      "articleTitle": "Human history",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 9: The History of Mankind. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

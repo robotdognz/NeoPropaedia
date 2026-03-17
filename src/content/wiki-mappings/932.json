@@ -8,7 +8,7 @@
         "A.1.b",
         "A.1.c"
       ],
-      "rationaleAI": "Covers the An Lushan rebellion (755\u2013763) and its aftermath, provincial separatism, Tang cultural life including Buddhist influences and visual arts, and social-economic developments \u2014 mapping precisely to A.1.a, A.1.b, and A.1.c of the late Tang period."
+      "rationaleAI": "Covers the An Lushan rebellion (755–763) and its aftermath, provincial separatism, Tang cultural life including Buddhist influences and visual arts, and social-economic developments — mapping precisely to A.1.a, A.1.b, and A.1.c of the late Tang period."
     },
     {
       "articleTitle": "Silk Road",
@@ -16,7 +16,7 @@
         "B.1.b",
         "C.1.b"
       ],
-      "rationaleAI": "Under Yuan (Mongol) rule the Silk Road expanded greatly as Mongols promoted trade; under Ming, foreign economic relations included maritime trade \u2014 relevant to B.1.b (expansion of trade under Mongols) and C.1.b (Ming foreign relations and economic policy)."
+      "rationaleAI": "Under Yuan (Mongol) rule the Silk Road expanded greatly as Mongols promoted trade; under Ming, foreign economic relations included maritime trade — relevant to B.1.b (expansion of trade under Mongols) and C.1.b (Ming foreign relations and economic policy)."
     },
     {
       "articleTitle": "Mongol Empire",
@@ -54,7 +54,7 @@
         "B.1.a",
         "B.1"
       ],
-      "rationaleAI": "Genghis Khan's conquest of the Jin (Chin) dynasty in northern China (1211\u201334) is the foundational event of B.1.a, and his military organization and restructuring of Mongol society are essential context for understanding the Mongol conquest of China."
+      "rationaleAI": "Genghis Khan's conquest of the Jin (Chin) dynasty in northern China (1211–34) is the foundational event of B.1.a, and his military organization and restructuring of Mongol society are essential context for understanding the Mongol conquest of China."
     },
     {
       "articleTitle": "Confucius",
@@ -68,7 +68,7 @@
       "relevantPathsAI": [
         "B.2.b"
       ],
-      "rationaleAI": "The Islamic Golden Age overlaps chronologically with Yuan China's contacts with the West, and the Mongol connections between the Islamic world and Yuan China \u2014 including the arrival of Catholic missionaries and commercial contacts \u2014 are covered in B.2.b."
+      "rationaleAI": "The Islamic Golden Age overlaps chronologically with Yuan China's contacts with the West, and the Mongol connections between the Islamic world and Yuan China — including the arrival of Catholic missionaries and commercial contacts — are covered in B.2.b."
     },
     {
       "articleTitle": "Beijing",
@@ -94,7 +94,7 @@
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "The Black Death originated in Central Asia and spread along Mongol trade networks during the Yuan dynasty period \u2014 directly relevant to the Mongol Empire's role in B.1 (Mongol conquest and administration) and B.2 (decline of Mongol rule)."
+      "rationaleAI": "The Black Death originated in Central Asia and spread along Mongol trade networks during the Yuan dynasty period — directly relevant to the Mongol Empire's role in B.1 (Mongol conquest and administration) and B.2 (decline of Mongol rule)."
     },
     {
       "articleTitle": "East Asia",
@@ -128,6 +128,16 @@
         "C.2"
       ],
       "rationaleAI": "The general agriculture article covers crop systems and agricultural development including in China, relevant to C.2.i's focus on agricultural advances and new crop introductions during the mid-Ch'ing period."
+    },
+    {
+      "articleTitle": "Human history",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 9: The History of Mankind. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

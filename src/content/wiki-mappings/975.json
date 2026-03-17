@@ -22,7 +22,7 @@
         "A.5",
         "A.6"
       ],
-      "rationaleAI": "China is the direct subject of the entire A division, from the early republic (1912\u201320) through the Kuomintang-Communist struggle, the war against Japan, PRC formation, Great Leap Forward, Cultural Revolution, Deng era reforms, and the Nationalist government in Taiwan."
+      "rationaleAI": "China is the direct subject of the entire A division, from the early republic (1912–20) through the Kuomintang-Communist struggle, the war against Japan, PRC formation, Great Leap Forward, Cultural Revolution, Deng era reforms, and the Nationalist government in Taiwan."
     },
     {
       "articleTitle": "South Korea",
@@ -41,7 +41,7 @@
         "C.2.a",
         "C.2.b"
       ],
-      "rationaleAI": "The Cold War frames A.5.d (China's international relations and UN representation), B.2.d.ii (Japan's post-independence international relations, radical political movements, and politics of moderation), and C.2.a\u2013b (division of Korea and the Korean War as a Cold War proxy conflict)."
+      "rationaleAI": "The Cold War frames A.5.d (China's international relations and UN representation), B.2.d.ii (Japan's post-independence international relations, radical political movements, and politics of moderation), and C.2.a–b (division of Korea and the Korean War as a Cold War proxy conflict)."
     },
     {
       "articleTitle": "United States",
@@ -52,7 +52,7 @@
         "C.2.a",
         "C.2.b"
       ],
-      "rationaleAI": "The United States is explicitly cited as a central actor: providing military aid to China (A.3.b), rapprochement with the PRC (A.5.d), occupying and democratising Japan 1945\u201352 (B.2.d.i), economic tensions with Japan (B.2.d.iii), and military intervention in the Korean War (C.2.b)."
+      "rationaleAI": "The United States is explicitly cited as a central actor: providing military aid to China (A.3.b), rapprochement with the PRC (A.5.d), occupying and democratising Japan 1945–52 (B.2.d.i), economic tensions with Japan (B.2.d.iii), and military intervention in the Korean War (C.2.b)."
     },
     {
       "articleTitle": "World War II",
@@ -92,7 +92,7 @@
         "B",
         "C"
       ],
-      "rationaleAI": "East Asia as a regional article encompasses all three divisions of section 975 \u2014 China (A), Japan (B), and Korea (C) \u2014 providing geographic, cultural, and historical context for the entire section."
+      "rationaleAI": "East Asia as a regional article encompasses all three divisions of section 975 — China (A), Japan (B), and Korea (C) — providing geographic, cultural, and historical context for the entire section."
     },
     {
       "articleTitle": "World War I",
@@ -144,7 +144,7 @@
         "B.2.a",
         "B.2.b"
       ],
-      "rationaleAI": "Imperialism is central to A.1 (the continued presence of foreign interests in China, Yuan's monarchist ambitions amid Japanese pressure) and A.2.b (foreign interests and warlord-era China), as well as Japan's own imperialist expansion described in B.2.a\u2013b (Greater East Asia Co-Prosperity Sphere, Axis alignment)."
+      "rationaleAI": "Imperialism is central to A.1 (the continued presence of foreign interests in China, Yuan's monarchist ambitions amid Japanese pressure) and A.2.b (foreign interests and warlord-era China), as well as Japan's own imperialist expansion described in B.2.a–b (Greater East Asia Co-Prosperity Sphere, Axis alignment)."
     },
     {
       "articleTitle": "Vietnam",
@@ -168,7 +168,17 @@
         "A.2.b",
         "C.1"
       ],
-      "rationaleAI": "Colonial presence by Western powers and Japan provides the structural backdrop for Chinese nationalist resistance (A.1, A.2.b \u2014 foreign interests in China, treaty ports) and directly describes the content of C.1 (Japanese colonial military rule in Korea 1910\u201345)."
+      "rationaleAI": "Colonial presence by Western powers and Japan provides the structural backdrop for Chinese nationalist resistance (A.1, A.2.b — foreign interests in China, treaty ports) and directly describes the content of C.1 (Japanese colonial military rule in Korea 1910–45)."
+    },
+    {
+      "articleTitle": "Human history",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 9: The History of Mankind. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

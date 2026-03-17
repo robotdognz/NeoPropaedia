@@ -78,7 +78,7 @@
       "relevantPathsAI": [
         "F.7.b"
       ],
-      "rationaleAI": "Cheese is a dairy product (F.7.b) produced through microbial fermentation and enzymatic coagulation—the article covers production technology, aging, varieties, and the microbiology of ripening."
+      "rationaleAI": "Cheese is a dairy product (F.7.b) produced through microbial fermentation and enzymatic coagulation — the article covers production technology, aging, varieties, and the microbiology of ripening."
     },
     {
       "articleTitle": "Drink",
@@ -89,7 +89,7 @@
         "F.8.c",
         "F.8.d"
       ],
-      "rationaleAI": "Drinks encompass the full range of beverage production technologies—brewing (F.8.a), wine making (F.8.b), distilled spirits (F.8.c), and nonalcoholic beverages including coffee and tea (F.8.d)."
+      "rationaleAI": "Drinks encompass the full range of beverage production technologies — brewing (F.8.a), wine making (F.8.b), distilled spirits (F.8.c), and nonalcoholic beverages including coffee and tea (F.8.d)."
     },
     {
       "articleTitle": "Fishing",
@@ -115,7 +115,7 @@
         "C",
         "D"
       ],
-      "rationaleAI": "Agriculture as a topic covers all major domains of this section—history (A), farm management (B), crop farming (C), and livestock farming (D)—providing the broad overview entry for Section 731."
+      "rationaleAI": "Agriculture as a topic covers all major domains of this section — history (A), farm management (B), crop farming (C), and livestock farming (D)—providing the broad overview entry for Section 731."
     },
     {
       "articleTitle": "Chocolate",
@@ -349,7 +349,7 @@
         "C.6.d",
         "F.4"
       ],
-      "rationaleAI": "Sugar is explicitly addressed in cane sugar, beet sugar, and sweeteners (F.10) and as a major field crop—sugarcane and sugar beet—in C.6.d; it also connects to confectionery production (F.4)."
+      "rationaleAI": "Sugar is explicitly addressed in cane sugar, beet sugar, and sweeteners (F.10) and as a major field crop — sugarcane and sugar beet — in C.6.d; it also connects to confectionery production (F.4)."
     },
     {
       "articleTitle": "Alcoholic beverage",
@@ -406,6 +406,22 @@
         "B.2"
       ],
       "rationaleAI": "Machines are central to farm labour and farm machinery (B.2), covering simple machines through complex agricultural equipment such as plows, threshers, and combines that transformed agricultural productivity."
+    },
+    {
+      "articleTitle": "Technology",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 7: Technology. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

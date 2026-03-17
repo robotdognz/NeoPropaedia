@@ -44,7 +44,7 @@
         "A.2",
         "F.1"
       ],
-      "rationaleAI": "Covers the analysis of costs and output in the short run\u2014production functions, marginal cost, marginal product (A.1)\u2014and cost minimization and profit maximization in the long run (A.2). Also addresses classical and contemporary theories of international trade underlying F.1."
+      "rationaleAI": "Covers the analysis of costs and output in the short run — production functions, marginal cost, marginal product (A.1)—and cost minimization and profit maximization in the long run (A.2). Also addresses classical and contemporary theories of international trade underlying F.1."
     },
     {
       "articleTitle": "Finance",
@@ -64,7 +64,7 @@
         "A.2",
         "F.2.c"
       ],
-      "rationaleAI": "The supply-and-demand model directly underpins the analysis of costs, output, and marginal cost relative to market price (A.1\u2013A.2), and price movements as a national/regional factor influencing trade (F.2.c)."
+      "rationaleAI": "The supply-and-demand model directly underpins the analysis of costs, output, and marginal cost relative to market price (A.1–A.2), and price movements as a national/regional factor influencing trade (F.2.c)."
     },
     {
       "articleTitle": "Welfare spending",
@@ -246,7 +246,7 @@
         "C.1",
         "C.1.a"
       ],
-      "rationaleAI": "Covers labour as a primary input in the productive process (C.1), including the labour force across its forms\u2014paid employment, domestic work, forced labour (C.1.a)\u2014and capital elements in labour through education and training (C.1.i). The division of labour is a core analytical concept addressed here."
+      "rationaleAI": "Covers labour as a primary input in the productive process (C.1), including the labour force across its forms — paid employment, domestic work, forced labour (C.1.a)—and capital elements in labour through education and training (C.1.i). The division of labour is a core analytical concept addressed here."
     },
     {
       "articleTitle": "Management",
@@ -257,6 +257,24 @@
         "C.1.j"
       ],
       "rationaleAI": "Covers methods of business organization broadly (H), with direct relevance to management of human resources and personnel administration (H.3), administration and control of production (H.4), and the economic role of managers and entrepreneurs (C.1.j)."
+    },
+    {
+      "articleTitle": "Society",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 5: Human Society. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

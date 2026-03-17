@@ -10,7 +10,7 @@
         "B.1.a",
         "B.1.b"
       ],
-      "rationaleAI": "The Vedas are the primary texts of the Vedic period (A.3) \u2014 covering the Rigveda (A.3.a) and later Vedas and Brahmanas (A.3.b) including the Upanishads (A.3.c) \u2014 and constitute the revealed scriptures of B.1.a and the foundational post-Vedic Sanskrit literature of B.1.b."
+      "rationaleAI": "The Vedas are the primary texts of the Vedic period (A.3) — covering the Rigveda (A.3.a) and later Vedas and Brahmanas (A.3.b) including the Upanishads (A.3.c) — and constitute the revealed scriptures of B.1.a and the foundational post-Vedic Sanskrit literature of B.1.b."
     },
     {
       "articleTitle": "Jainism",
@@ -30,14 +30,14 @@
         "B.4",
         "C.2.a"
       ],
-      "rationaleAI": "Adi Shankara systematized Advaita Vedanta \u2014 one of the most influential schools of Hindu philosophy (B.3) and mysticism (B.4) \u2014 and his 8th-century reforms correspond to A.7 (rise of devotional Hinduism), while Advaita addresses C.2.a (Vedism and Brahmanism) and views about God/Brahman."
+      "rationaleAI": "Adi Shankara systematized Advaita Vedanta — one of the most influential schools of Hindu philosophy (B.3) and mysticism (B.4) — and his 8th-century reforms correspond to A.7 (rise of devotional Hinduism), while Advaita addresses C.2.a (Vedism and Brahmanism) and views about God/Brahman."
     },
     {
       "articleTitle": "Buddhism",
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Buddhism emerged in the heterodox period (A.4) as one of the primary challenges to Brahmanism by reformers and ascetic groups, making it essential context for understanding Hinduism's development during the 7th\u20132nd century BCE."
+      "rationaleAI": "Buddhism emerged in the heterodox period (A.4) as one of the primary challenges to Brahmanism by reformers and ascetic groups, making it essential context for understanding Hinduism's development during the 7th–2nd century BCE."
     },
     {
       "articleTitle": "Sikhism",
@@ -65,7 +65,7 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "The Indus Valley Civilisation is explicitly named at A.2 (prehistoric and protohistoric periods, through the 2nd millennium BCE) as one of the two primary subjects \u2014 alongside the religions of indigenous prehistoric peoples \u2014 making this a direct and priority fit."
+      "rationaleAI": "The Indus Valley Civilisation is explicitly named at A.2 (prehistoric and protohistoric periods, through the 2nd millennium BCE) as one of the two primary subjects — alongside the religions of indigenous prehistoric peoples — making this a direct and priority fit."
     },
     {
       "articleTitle": "Gupta Empire",
@@ -139,7 +139,7 @@
         "C.4",
         "C.4.a"
       ],
-      "rationaleAI": "Covers Indian religious art including symbols, iconography, temple sculpture, and the theological function of icons in expressing Hinduism \u2014 directly relevant to C.4 (cultural expressions of Hindu values) and C.4.a (traditional religious functions of Indian art, yantras, mandalas, icons)."
+      "rationaleAI": "Covers Indian religious art including symbols, iconography, temple sculpture, and the theological function of icons in expressing Hinduism — directly relevant to C.4 (cultural expressions of Hindu values) and C.4.a (traditional religious functions of Indian art, yantras, mandalas, icons)."
     },
     {
       "articleTitle": "History of philosophy",
@@ -163,7 +163,7 @@
         "A.9",
         "D.2.a"
       ],
-      "rationaleAI": "The British Empire's rule of India shaped the modern period of Hinduism (A.9) including reform movements and nationalist Hinduism, and directly constitutes the context of D.2.a.v (Sikhism under British rule, 19th\u201320th century)."
+      "rationaleAI": "The British Empire's rule of India shaped the modern period of Hinduism (A.9) including reform movements and nationalist Hinduism, and directly constitutes the context of D.2.a.v (Sikhism under British rule, 19th–20th century)."
     },
     {
       "articleTitle": "Colonialism",
@@ -179,6 +179,17 @@
         "A.5"
       ],
       "rationaleAI": "Alexander's campaigns into northwestern India and the subsequent Hellenistic cultural exchange contributed to the context of the early Hindu period (A.5), including the rise of Greco-Buddhist artistic conventions that influenced Indian religious iconography."
+    },
+    {
+      "articleTitle": "Philosophy",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 8: Religion. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

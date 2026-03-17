@@ -87,7 +87,7 @@
         "A.5",
         "A.8"
       ],
-      "rationaleAI": "Visual arts\u2014painting, sculpture, photography, and design\u2014feed directly into theatrical scenography, set design, costume, and lighting (A.5), and painting is explicitly named in path A.8 as one of the arts with a role in theatre."
+      "rationaleAI": "Visual arts — painting, sculpture, photography, and design — feed directly into theatrical scenography, set design, costume, and lighting (A.5), and painting is explicitly named in path A.8 as one of the arts with a role in theatre."
     },
     {
       "articleTitle": "Folklore",
@@ -105,7 +105,7 @@
         "C.1.b",
         "D.1"
       ],
-      "rationaleAI": "Shakespeare's works define the dramatic genres of comedy and tragedy (B.1.a.i), his company represents the dramatist-controlled and actor-dominated production model (B.1.d), and the Globe Theatre is a key historical stage (C.1.a\u2013b); foundational to Western theatre history (D.1)."
+      "rationaleAI": "Shakespeare's works define the dramatic genres of comedy and tragedy (B.1.a.i), his company represents the dramatist-controlled and actor-dominated production model (B.1.d), and the Globe Theatre is a key historical stage (C.1.a–b); foundational to Western theatre history (D.1)."
     },
     {
       "articleTitle": "Ancient Greece",
@@ -131,7 +131,7 @@
         "B.1.e",
         "D.1"
       ],
-      "rationaleAI": "Romanticism shaped theatrical aesthetics and dramatic forms (B.1.e) across European theatre in the 1800\u20131850 period, contributing to the historical development of Western theatre (D.1)."
+      "rationaleAI": "Romanticism shaped theatrical aesthetics and dramatic forms (B.1.e) across European theatre in the 1800–1850 period, contributing to the historical development of Western theatre (D.1)."
     },
     {
       "articleTitle": "Festival",
@@ -215,7 +215,7 @@
         "A.1",
         "B.1.g"
       ],
-      "rationaleAI": "Oral performance traditions\u2014including African griot practice and Homeric recitation\u2014are foundational to the origins of theatre (A.1) and represent the primitive/folk theatrical forms addressed in path B.1.g."
+      "rationaleAI": "Oral performance traditions — including African griot practice and Homeric recitation — are foundational to the origins of theatre (A.1) and represent the primitive/folk theatrical forms addressed in path B.1.g."
     },
     {
       "articleTitle": "Jazz",
@@ -229,7 +229,7 @@
       "relevantPathsAI": [
         "B.1.f"
       ],
-      "rationaleAI": "Popular culture encompasses the entertainment forms\u2014film, music, television, theatre\u2014that constitute popular entertainments including music hall, variety, and revue (B.1.f.iii), connecting mass media and theatrical production."
+      "rationaleAI": "Popular culture encompasses the entertainment forms — film, music, television, theatre — that constitute popular entertainments including music hall, variety, and revue (B.1.f.iii), connecting mass media and theatrical production."
     },
     {
       "articleTitle": "Clothing",
@@ -237,6 +237,17 @@
         "A.5"
       ],
       "rationaleAI": "Clothing covers the full lifecycle and social signaling function of garments, directly connecting to costume as one of the named design elements in theatrical production at path A.5."
+    },
+    {
+      "articleTitle": "The arts",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 6: Art. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

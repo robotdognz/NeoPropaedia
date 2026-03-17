@@ -10,7 +10,7 @@
         "A.3",
         "A.4"
       ],
-      "rationaleAI": "Mexico is the direct subject of the entire A division, covering the Obreg\u00f3n-Calles era reforms, the C\u00e1rdenas Six-Year Plan, WWII cooperation with the US, and post-1945 political, economic, and social developments including PRI dominance, oil nationalisation, NAFTA, and the Fox election."
+      "rationaleAI": "Mexico is the direct subject of the entire A division, covering the Obregón-Calles era reforms, the Cárdenas Six-Year Plan, WWII cooperation with the US, and post-1945 political, economic, and social developments including PRI dominance, oil nationalisation, NAFTA, and the Fox election."
     },
     {
       "articleTitle": "United States",
@@ -30,7 +30,7 @@
         "F",
         "F.1"
       ],
-      "rationaleAI": "Argentina is the direct subject of F.1, covering the conservative restoration (1930\u201343), the Per\u00f3n era, post-Per\u00f3n military dictatorships, the Falklands War, and return to civilian rule under Alfons\u00edn and Menem."
+      "rationaleAI": "Argentina is the direct subject of F.1, covering the conservative restoration (1930–43), the Perón era, post-Perón military dictatorships, the Falklands War, and return to civilian rule under Alfonsín and Menem."
     },
     {
       "articleTitle": "Brazil",
@@ -44,7 +44,7 @@
         "G.2.d",
         "G.2.e"
       ],
-      "rationaleAI": "Brazil is the direct subject of the entire G division, covering the Vargas dictatorship (1930\u201345), the constitutions of 1934 and 1937, post-war democratic and military periods through the Castelo Branco and successor presidencies, and the return to civilian rule under Sarney, Cardoso, and Lula."
+      "rationaleAI": "Brazil is the direct subject of the entire G division, covering the Vargas dictatorship (1930–45), the constitutions of 1934 and 1937, post-war democratic and military periods through the Castelo Branco and successor presidencies, and the return to civilian rule under Sarney, Cardoso, and Lula."
     },
     {
       "articleTitle": "Cold War",
@@ -74,7 +74,7 @@
         "C.2.b",
         "C.2.c"
       ],
-      "rationaleAI": "Colombia is the direct subject of C.2, covering Liberal Party rule and L\u00f3pez reforms (C.2.a), the Conservative restoration, La Violencia, and the National Front (C.2.b), and the era of drug trafficking and guerrilla violence under Betancur and successors (C.2.c)."
+      "rationaleAI": "Colombia is the direct subject of C.2, covering Liberal Party rule and López reforms (C.2.a), the Conservative restoration, La Violencia, and the National Front (C.2.b), and the era of drug trafficking and guerrilla violence under Betancur and successors (C.2.c)."
     },
     {
       "articleTitle": "Central America",
@@ -125,7 +125,7 @@
         "B.2.a",
         "B.2.c"
       ],
-      "rationaleAI": "US imperialism and interventionism is a thread running through Nicaragua (B.1.d), Panama (B.1.f), Haiti (B.2.a), and Cuba (B.2.c.iv), all of which involve US military intervention or economic coercion \u2014 the core subject matter of imperialism theory."
+      "rationaleAI": "US imperialism and interventionism is a thread running through Nicaragua (B.1.d), Panama (B.1.f), Haiti (B.2.a), and Cuba (B.2.c.iv), all of which involve US military intervention or economic coercion — the core subject matter of imperialism theory."
     },
     {
       "articleTitle": "United Kingdom",
@@ -143,6 +143,20 @@
         "B.2.e"
       ],
       "rationaleAI": "The British Empire provides the colonial framework for Belize's independence process (B.1.g) and the British insular possessions listed in B.2.e (Bermuda and other British Caribbean territories)."
+    },
+    {
+      "articleTitle": "Human history",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 9: The History of Mankind. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

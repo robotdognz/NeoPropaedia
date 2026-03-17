@@ -14,7 +14,7 @@
         "E.1",
         "E.2"
       ],
-      "rationaleAI": "Human body is organized hierarchically from cells to tissues to organ systems precisely as the section's framework requires, covering all major animal tissue types (D.1\u2013D.4) and organ systems including circulatory, digestive, endocrine, immune, musculoskeletal, nervous, and reproductive systems (E.1.a\u2013c), with homeostatic interrelationships at E.2."
+      "rationaleAI": "Human body is organized hierarchically from cells to tissues to organ systems precisely as the section's framework requires, covering all major animal tissue types (D.1–D.4) and organ systems including circulatory, digestive, endocrine, immune, musculoskeletal, nervous, and reproductive systems (E.1.a–c), with homeostatic interrelationships at E.2."
     },
     {
       "articleTitle": "Circulatory system",
@@ -73,7 +73,7 @@
         "D.3",
         "E.1.a"
       ],
-      "rationaleAI": "The brain is the primary nervous tissue organ (D.3: tissues for coordination \u2014 nervous tissue) and the central component of the nervous system at E.1.a; evolutionary development and comparative brain anatomy across vertebrates and invertebrates address the form-function relationship at path A."
+      "rationaleAI": "The brain is the primary nervous tissue organ (D.3: tissues for coordination — nervous tissue) and the central component of the nervous system at E.1.a; evolutionary development and comparative brain anatomy across vertebrates and invertebrates address the form-function relationship at path A."
     },
     {
       "articleTitle": "Skeletal muscle",
@@ -194,7 +194,7 @@
         "D.4",
         "E.1.a"
       ],
-      "rationaleAI": "Arthropods exhibit distinctive tissue and organ organization\u2014chitinous exoskeleton (D.4: support tissue), open circulatory haemolymph, compound eyes, and segmental nervous ganglia\u2014providing comparative animal tissue and organ system form-function content for paths D and E.1.a."
+      "rationaleAI": "Arthropods exhibit distinctive tissue and organ organization — chitinous exoskeleton (D.4: support tissue), open circulatory haemolymph, compound eyes, and segmental nervous ganglia — providing comparative animal tissue and organ system form-function content for paths D and E.1.a."
     },
     {
       "articleTitle": "Heart",
@@ -260,7 +260,7 @@
         "D",
         "D.4"
       ],
-      "rationaleAI": "Mollusca exhibit distinct tissue organization\u2014mantle, radula, open circulatory haemocoel, and reduced coelom\u2014providing comparative animal tissue content for path D; structural diversity from gastropods to cephalopods exemplifies form-function variation at the section's core theme A."
+      "rationaleAI": "Mollusca exhibit distinct tissue organization — mantle, radula, open circulatory haemocoel, and reduced coelom — providing comparative animal tissue content for path D; structural diversity from gastropods to cephalopods exemplifies form-function variation at the section's core theme A."
     },
     {
       "articleTitle": "Zoology",
@@ -270,6 +270,18 @@
         "E"
       ],
       "rationaleAI": "Zoology encompasses comparative anatomy, embryology, and physiology across all animal taxa, providing the disciplinary framework for the section's animal tissue and organ system coverage (D and E) and the core biological form-function principle at A."
+    },
+    {
+      "articleTitle": "Life",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 3: Life on Earth. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

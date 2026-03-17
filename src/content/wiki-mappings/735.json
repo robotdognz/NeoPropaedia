@@ -30,7 +30,7 @@
         "I.3",
         "K"
       ],
-      "rationaleAI": "Spans the major communications systems of the outline \u2014 telegraph (I.3), telephone (I.4), radio (I.5), and the internet (I.8) \u2014 and covers modulation, bandwidth, multiplexing, and network architecture fundamental to electronic components and techniques (K)."
+      "rationaleAI": "Spans the major communications systems of the outline — telegraph (I.3), telephone (I.4), radio (I.5), and the internet (I.8) — and covers modulation, bandwidth, multiplexing, and network architecture fundamental to electronic components and techniques (K)."
     },
     {
       "articleTitle": "Broadcasting",
@@ -90,7 +90,7 @@
         "H",
         "H.1"
       ],
-      "rationaleAI": "Shannon's information theory \u2014 quantifying information in bits \u2014 is the direct subject of outline path A (communication and information theory), and the article's treatment of encoding, storage, transmission, and compression corresponds to the elements of information processing (H.1)."
+      "rationaleAI": "Shannon's information theory — quantifying information in bits — is the direct subject of outline path A (communication and information theory), and the article's treatment of encoding, storage, transmission, and compression corresponds to the elements of information processing (H.1)."
     },
     {
       "articleTitle": "Library",
@@ -174,7 +174,7 @@
         "H.1.d",
         "H.2.b"
       ],
-      "rationaleAI": "Directly covers electronic networks (I.8) \u2014 TCP/IP, the Web, email, and VoIP \u2014 and relates to display and dissemination systems including electronic mail and online services (H.1.d) and public online database systems (H.2.b)."
+      "rationaleAI": "Directly covers electronic networks (I.8) — TCP/IP, the Web, email, and VoIP — and relates to display and dissemination systems including electronic mail and online services (H.1.d) and public online database systems (H.2.b)."
     },
     {
       "articleTitle": "Integrated circuit",
@@ -250,6 +250,24 @@
         "F"
       ],
       "rationaleAI": "Video games are a significant application of microcomputers and consumer electronics (D.4), and their audiovisual output systems connect to sound and video reproducing devices (F); the article provides context for interactive digital media as an information processing application."
+    },
+    {
+      "articleTitle": "Technology",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 7: Technology. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

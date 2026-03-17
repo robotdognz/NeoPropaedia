@@ -16,7 +16,7 @@
         "C.3",
         "C.3.m"
       ],
-      "rationaleAI": "Silver production and processing—including its recovery as a byproduct of copper, gold, lead, and zinc refining—maps directly to the silver entry (C.3.m) within the production and processing of metal ores and metals."
+      "rationaleAI": "Silver production and processing — including its recovery as a byproduct of copper, gold, lead, and zinc refining — maps directly to the silver entry (C.3.m) within the production and processing of metal ores and metals."
     },
     {
       "articleTitle": "Metallurgy",
@@ -31,7 +31,7 @@
       "relevantPathsAI": [
         "C.8.b"
       ],
-      "rationaleAI": "Wood as a material—roundwood, sawn wood, veneer, plywood, laminated timber, particleboard, and fibreboard—maps precisely to the processing of plant products to obtain timber and wood products (C.8.b)."
+      "rationaleAI": "Wood as a material — roundwood, sawn wood, veneer, plywood, laminated timber, particleboard, and fibreboard — maps precisely to the processing of plant products to obtain timber and wood products (C.8.b)."
     },
     {
       "articleTitle": "Salt",
@@ -87,7 +87,7 @@
         "C.3",
         "C.3.v"
       ],
-      "rationaleAI": "The article surveys the full range of metallic materials and metallurgy, covering extraction, recycling, and alloy development—directly relevant to the production and processing of metal ores and metals (C.3) and metal alloys (C.3.v)."
+      "rationaleAI": "The article surveys the full range of metallic materials and metallurgy, covering extraction, recycling, and alloy development — directly relevant to the production and processing of metal ores and metals (C.3) and metal alloys (C.3.v)."
     },
     {
       "articleTitle": "Steel",
@@ -95,7 +95,7 @@
         "C.3",
         "C.3.o"
       ],
-      "rationaleAI": "Steel production—from Bessemer process to basic oxygen steelmaking, including alloy steel, stainless steel, and carbon steel—directly covers the steel and steel alloys entry (C.3.o) in the metals processing section."
+      "rationaleAI": "Steel production — from Bessemer process to basic oxygen steelmaking, including alloy steel, stainless steel, and carbon steel — directly covers the steel and steel alloys entry (C.3.o) in the metals processing section."
     },
     {
       "articleTitle": "Fossil fuel",
@@ -118,7 +118,7 @@
       "relevantPathsAI": [
         "C.8"
       ],
-      "rationaleAI": "Natural rubber is a plant-derived product processed from Hevea brasiliensis latex—its extraction and vulcanization fall squarely within the processing of plant and animal products (C.8), which covers non-food raw material outputs."
+      "rationaleAI": "Natural rubber is a plant-derived product processed from Hevea brasiliensis latex — its extraction and vulcanization fall squarely within the processing of plant and animal products (C.8), which covers non-food raw material outputs."
     },
     {
       "articleTitle": "Gold",
@@ -141,7 +141,7 @@
         "B.1.b",
         "C.2"
       ],
-      "rationaleAI": "Coal is explicitly listed as a mining product (B.1.b) and coal utilization—coke, coal tar, light oil, gas, and chemicals—is addressed in the coal conversion node (C.2)."
+      "rationaleAI": "Coal is explicitly listed as a mining product (B.1.b) and coal utilization — coke, coal tar, light oil, gas, and chemicals — is addressed in the coal conversion node (C.2)."
     },
     {
       "articleTitle": "Nitrogen",
@@ -163,7 +163,7 @@
       "relevantPathsAI": [
         "C.3.v"
       ],
-      "rationaleAI": "Alloys—metallic mixtures with combined properties—are directly addressed by the metal alloys entry (C.3.v); the article covers bronze, steel, brass, duralumin, and titanium alloys across construction, aerospace, and medicine."
+      "rationaleAI": "Alloys — metallic mixtures with combined properties — are directly addressed by the metal alloys entry (C.3.v); the article covers bronze, steel, brass, duralumin, and titanium alloys across construction, aerospace, and medicine."
     },
     {
       "articleTitle": "Mineral",
@@ -181,7 +181,7 @@
         "C.8.a",
         "C.8.b"
       ],
-      "rationaleAI": "Forests represent a major biological natural resource (A.1, A.2) whose products—paper pulp (C.8.a), timber and engineered wood products (C.8.b)—are explicitly listed in the plant product processing nodes."
+      "rationaleAI": "Forests represent a major biological natural resource (A.1, A.2) whose products — paper pulp (C.8.a), timber and engineered wood products (C.8.b)—are explicitly listed in the plant product processing nodes."
     },
     {
       "articleTitle": "Cotton",
@@ -195,7 +195,7 @@
       "relevantPathsAI": [
         "C.8.f"
       ],
-      "rationaleAI": "Textiles encompass the processing of natural fibres (C.8.f)—cotton, wool, silk, and other plant and animal sources—through fibre, yarn, and fabric production stages addressed in the plant and animal product processing node."
+      "rationaleAI": "Textiles encompass the processing of natural fibres (C.8.f)—cotton, wool, silk, and other plant and animal sources — through fibre, yarn, and fabric production stages addressed in the plant and animal product processing node."
     },
     {
       "articleTitle": "Explosive",
@@ -211,6 +211,16 @@
         "B.1"
       ],
       "rationaleAI": "Geology underpins the identification and distribution of natural resources (A.1) and supports all aspects of mining and quarrying (B.1), from prospecting to understanding ore deposits and sedimentary formations containing coal and petroleum."
+    },
+    {
+      "articleTitle": "Technology",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 7: Technology. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

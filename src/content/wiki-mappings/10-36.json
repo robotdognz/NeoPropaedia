@@ -28,7 +28,7 @@
         "C.4",
         "C.5"
       ],
-      "rationaleAI": "Sociology traces its origins with Comte, Marx, and Durkheim (A.1, A.2) and 20th-century methodological evolution (A.3), and comprehensively covers the background, methodology, status, and emergent trends of sociology as well as cognate disciplines including criminology and demography (C.1\u2013C.5)."
+      "rationaleAI": "Sociology traces its origins with Comte, Marx, and Durkheim (A.1, A.2) and 20th-century methodological evolution (A.3), and comprehensively covers the background, methodology, status, and emergent trends of sociology as well as cognate disciplines including criminology and demography (C.1–C.5)."
     },
     {
       "articleTitle": "Political science",
@@ -73,7 +73,7 @@
         "C.5",
         "F.2"
       ],
-      "rationaleAI": "Human migration is a core subject of demography\u2014a cognate discipline explicitly listed under C.5\u2014and connects to human geography's study of population distribution and settlement patterns within F.2 (scope and methods of geography)."
+      "rationaleAI": "Human migration is a core subject of demography — a cognate discipline explicitly listed under C.5 — and connects to human geography's study of population distribution and settlement patterns within F.2 (scope and methods of geography)."
     },
     {
       "articleTitle": "Karl Marx",
@@ -81,7 +81,7 @@
         "A.3.b",
         "D.1"
       ],
-      "rationaleAI": "Marx is the primary source of Marxist influence on the social sciences (A.3.b), and his economic theory\u2014historical materialism, surplus value, and critique of capitalism\u2014was foundational to the development of economic theory (D.1), particularly as a challenge to classical political economy."
+      "rationaleAI": "Marx is the primary source of Marxist influence on the social sciences (A.3.b), and his economic theory — historical materialism, surplus value, and critique of capitalism — was foundational to the development of economic theory (D.1), particularly as a challenge to classical political economy."
     },
     {
       "articleTitle": "History of philosophy",
@@ -97,7 +97,7 @@
         "C",
         "C.1"
       ],
-      "rationaleAI": "Social class\u2014covering Marxist, Weberian, and Bourdieusian stratification theory\u2014is a foundational topic in the background and contemporary practice of sociology (C.1), connecting directly to sociology's study of social structure and the dynamics of stratification central to C.3 and C.4."
+      "rationaleAI": "Social class — covering Marxist, Weberian, and Bourdieusian stratification theory — is a foundational topic in the background and contemporary practice of sociology (C.1), connecting directly to sociology's study of social structure and the dynamics of stratification central to C.3 and C.4."
     },
     {
       "articleTitle": "Human behavior",
@@ -105,7 +105,7 @@
         "G.2",
         "C.5"
       ],
-      "rationaleAI": "Human behavior covers the full interdisciplinary range of behavioral science touching the nature and scope of psychology (G.2), and its social dimensions\u2014norms, conformity, group behavior\u2014relate to social psychology as a cognate discipline of sociology (C.5)."
+      "rationaleAI": "Human behavior covers the full interdisciplinary range of behavioral science touching the nature and scope of psychology (G.2), and its social dimensions — norms, conformity, group behavior — relate to social psychology as a cognate discipline of sociology (C.5)."
     },
     {
       "articleTitle": "Geography",
@@ -176,7 +176,7 @@
         "C",
         "C.1"
       ],
-      "rationaleAI": "Society is the foundational object of sociological inquiry, and the article's coverage of social structure, roles, and theoretical frameworks\u2014functionalism, conflict theory, symbolic interactionism\u2014maps directly to the background and methodology of sociology (C.1, C.2)."
+      "rationaleAI": "Society is the foundational object of sociological inquiry, and the article's coverage of social structure, roles, and theoretical frameworks — functionalism, conflict theory, symbolic interactionism — maps directly to the background and methodology of sociology (C.1, C.2)."
     },
     {
       "articleTitle": "Law",
@@ -187,7 +187,7 @@
       "rationaleAI": "Law is listed as a cognate area of political science through public law (E.3) and is connected to criminology and penology as cognate disciplines of sociology (C.5), making it substantively relevant at both of those intersections in the outline."
     },
     {
-      "articleTitle": "Niccol\u00f2 Machiavelli",
+      "articleTitle": "Niccolò Machiavelli",
       "relevantPathsAI": [
         "E.1"
       ],
@@ -233,7 +233,7 @@
         "B.2",
         "C"
       ],
-      "rationaleAI": "Ethnicity as a socioculturally constructed group identity is foundational in sociocultural anthropology (B.2\u2014cultural meaning, kinship, identity) and sociology (C\u2014stratification, social structure), with the article covering primordialism, constructivism, and inter-ethnic dynamics."
+      "rationaleAI": "Ethnicity as a socioculturally constructed group identity is foundational in sociocultural anthropology (B.2 — cultural meaning, kinship, identity) and sociology (C — stratification, social structure), with the article covering primordialism, constructivism, and inter-ethnic dynamics."
     },
     {
       "articleTitle": "Politics",
@@ -280,6 +280,36 @@
         "D.3"
       ],
       "rationaleAI": "Finance is a cognate discipline of economics that fits within D.3 (mathematical economics, econometrics, accounting), and its focus on investment, risk management, and capital allocation reflects the applied quantitative extensions of economic science."
+    },
+    {
+      "articleTitle": "Science",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 10: The Branches of Knowledge. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
+    },
+    {
+      "articleTitle": "Mathematics",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 10: The Branches of Knowledge. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

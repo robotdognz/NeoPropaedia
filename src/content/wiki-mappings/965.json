@@ -15,7 +15,7 @@
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "The American Revolution directly corresponds to outline A.1.a (American Revolutionary period 1763\u201387), covering political and economic opposition to British taxation (A.1.a.i), the War of Independence including military leadership and French support (A.1.a.ii), and the Articles of Confederation (A.1.a.iii)."
+      "rationaleAI": "The American Revolution directly corresponds to outline A.1.a (American Revolutionary period 1763–87), covering political and economic opposition to British taxation (A.1.a.i), the War of Independence including military leadership and French support (A.1.a.ii), and the Articles of Confederation (A.1.a.iii)."
     },
     {
       "articleTitle": "Abraham Lincoln",
@@ -25,7 +25,7 @@
         "A.3.c",
         "B.1"
       ],
-      "rationaleAI": "Lincoln is the central figure of outline A.3 (United States 1850\u201365), covering secession (A.3.b), the Civil War (A.3.c.i\u2013iii), Emancipation, and Reconstruction policy (B.1.a), making him the most important single figure for these paths."
+      "rationaleAI": "Lincoln is the central figure of outline A.3 (United States 1850–65), covering secession (A.3.b), the Civil War (A.3.c.i–iii), Emancipation, and Reconstruction policy (B.1.a), making him the most important single figure for these paths."
     },
     {
       "articleTitle": "United States",
@@ -76,7 +76,7 @@
         "C.3.b",
         "C.3.c"
       ],
-      "rationaleAI": "Canada is the direct subject of outline division C, covering British colonial administration (C.1), social and political development 1790\u20131850 including French-English dissension (C.2), and the Dominion of Canada from 1867 including Confederation, westward expansion, and Laurier's Liberal governments (C.3)."
+      "rationaleAI": "Canada is the direct subject of outline division C, covering British colonial administration (C.1), social and political development 1790–1850 including French-English dissension (C.2), and the Dominion of Canada from 1867 including Confederation, westward expansion, and Laurier's Liberal governments (C.3)."
     },
     {
       "articleTitle": "Karl Marx",
@@ -99,7 +99,7 @@
         "A.2.d",
         "B.3.b"
       ],
-      "rationaleAI": "Mexico is relevant at A.2.d (Mexican War 1846\u201348 and annexation of California and New Mexico) and B.3.b.iii (Wilson's intervention in Mexican affairs during his first administration), both explicitly cited in the outline."
+      "rationaleAI": "Mexico is relevant at A.2.d (Mexican War 1846–48 and annexation of California and New Mexico) and B.3.b.iii (Wilson's intervention in Mexican affairs during his first administration), both explicitly cited in the outline."
     },
     {
       "articleTitle": "Napoleon",
@@ -124,7 +124,7 @@
         "B.2.b",
         "C.3.b"
       ],
-      "rationaleAI": "The Rocky Mountains directly relates to B.2.b (development of the West 1865\u20131900, including gold/silver mining, cattlemen, westward railroad expansion, and Indian wars) and C.3.b (Canadian westward expansion including the transcontinental railroad and Manitoba/British Columbia)."
+      "rationaleAI": "The Rocky Mountains directly relates to B.2.b (development of the West 1865–1900, including gold/silver mining, cattlemen, westward railroad expansion, and Indian wars) and C.3.b (Canadian westward expansion including the transcontinental railroad and Manitoba/British Columbia)."
     },
     {
       "articleTitle": "Age of Enlightenment",
@@ -171,7 +171,7 @@
         "B.2",
         "B.3"
       ],
-      "rationaleAI": "The modern era article covers industrialization, nationalism, and the emergence of the US as a global power\u2014themes corresponding to B.2 (transformation of American society 1865\u20131900) and B.3 (imperialism and Progressive Era), though it is highly general and primarily a broad overview rather than a specific resource."
+      "rationaleAI": "The modern era article covers industrialization, nationalism, and the emergence of the US as a global power — themes corresponding to B.2 (transformation of American society 1865–1900) and B.3 (imperialism and Progressive Era), though it is highly general and primarily a broad overview rather than a specific resource."
     },
     {
       "articleTitle": "Reformation",
@@ -201,7 +201,17 @@
       "relevantPathsAI": [
         "B.2.c"
       ],
-      "rationaleAI": "Business structures (trusts, holding companies, corporations) are directly relevant to B.2.c.ii (development of trusts and holding companies, legal climate favourable to big business) in the industrialization of the American economy 1865\u20131900."
+      "rationaleAI": "Business structures (trusts, holding companies, corporations) are directly relevant to B.2.c.ii (development of trusts and holding companies, legal climate favourable to big business) in the industrialization of the American economy 1865–1900."
+    },
+    {
+      "articleTitle": "Human history",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 9: The History of Mankind. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

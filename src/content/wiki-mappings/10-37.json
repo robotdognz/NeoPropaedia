@@ -8,7 +8,7 @@
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "Engineering directly addresses the nature and scope of engineering as a discipline (B), including its professional education and functions (B.1) and all branches named in the outline—civil, mechanical, electrical, chemical, aerospace, and nuclear engineering (B.2)."
+      "rationaleAI": "Engineering directly addresses the nature and scope of engineering as a discipline (B), including its professional education and functions (B.1) and all branches named in the outline — civil, mechanical, electrical, chemical, aerospace, and nuclear engineering (B.2)."
     },
     {
       "articleTitle": "Agriculture",
@@ -16,7 +16,7 @@
         "C",
         "C.2"
       ],
-      "rationaleAI": "Agriculture covers the nature and scope of agricultural practice including crop production, livestock, genetic engineering, and agricultural economics (C), and its subsystems map directly to the subdivisions of agricultural sciences—soil science, plant production, and animal production—named in C.2."
+      "rationaleAI": "Agriculture covers the nature and scope of agricultural practice including crop production, livestock, genetic engineering, and agricultural economics (C), and its subsystems map directly to the subdivisions of agricultural sciences — soil science, plant production, and animal production — named in C.2."
     },
     {
       "articleTitle": "Mechanical engineering",
@@ -48,7 +48,7 @@
         "B.2",
         "D.1.b"
       ],
-      "rationaleAI": "The computer article covers electrical/electronics engineering as a branch (B.2) and directly exemplifies D.1.b—the human brain as a paradigm for computer memory and information-processing devices, from early mechanical calculators to modern AI-enabled systems."
+      "rationaleAI": "The computer article covers electrical/electronics engineering as a branch (B.2) and directly exemplifies D.1.b — the human brain as a paradigm for computer memory and information-processing devices, from early mechanical calculators to modern AI-enabled systems."
     },
     {
       "articleTitle": "Computer science",
@@ -182,7 +182,7 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Shen Kuo's Dream Pool Essays documented foundational technological innovations—compass, movable-type printing, drydock engineering, and canal locks—making him a significant figure in the history of the technological sciences (A) from a non-Western perspective."
+      "rationaleAI": "Shen Kuo's Dream Pool Essays documented foundational technological innovations — compass, movable-type printing, drydock engineering, and canal locks — making him a significant figure in the history of the technological sciences (A) from a non-Western perspective."
     },
     {
       "articleTitle": "Tool",
@@ -232,6 +232,39 @@
         "B.2"
       ],
       "rationaleAI": "Radar is an electrical and electronics engineering technology (B.2) using radio wave propagation, signal processing, and phased-array electronics across applications in air traffic control, meteorology, and autonomous vehicles."
+    },
+    {
+      "articleTitle": "Science",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 10: The Branches of Knowledge. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
+    },
+    {
+      "articleTitle": "Philosophy",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 10: The Branches of Knowledge. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
+    },
+    {
+      "articleTitle": "Mathematics",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 10: The Branches of Knowledge. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

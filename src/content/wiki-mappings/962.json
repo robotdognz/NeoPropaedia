@@ -43,14 +43,14 @@
         "A.3.c",
         "A.3.d"
       ],
-      "rationaleAI": "Russia's history directly covers the emergence of the Russian Empire \u2014 Muscovite expansion under Ivan IV (A.3.a), the Time of Troubles and Romanov election (A.3.a-b), Peter the Great's westernization (A.3.c), and Catherine II's further expansion (A.3.d)."
+      "rationaleAI": "Russia's history directly covers the emergence of the Russian Empire — Muscovite expansion under Ivan IV (A.3.a), the Time of Troubles and Romanov election (A.3.a-b), Peter the Great's westernization (A.3.c), and Catherine II's further expansion (A.3.d)."
     },
     {
       "articleTitle": "Iran",
       "relevantPathsAI": [
         "B.2.a"
       ],
-      "rationaleAI": "Iran's history under the Safavids \u2014 Shi'ite dynasty, conflict with Turks, Abbas I (1587-1629), and decline (B.2.a.i) \u2014 and the Nadir Shah period, expulsion of Afghans, and establishment of Zand and Qajar dynasties (B.2.a.ii) directly covers the full B.2.a outline path."
+      "rationaleAI": "Iran's history under the Safavids — Shi'ite dynasty, conflict with Turks, Abbas I (1587-1629), and decline (B.2.a.i) — and the Nadir Shah period, expulsion of Afghans, and establishment of Zand and Qajar dynasties (B.2.a.ii) directly covers the full B.2.a outline path."
     },
     {
       "articleTitle": "Poland",
@@ -61,7 +61,7 @@
         "A.1.c",
         "A.1.d"
       ],
-      "rationaleAI": "Poland's history covers the Polish-Lithuanian Commonwealth's Golden Age under Jagiellonian rule (A.1.a), the royal republic period (A.1.b), the Swedish and Cossack wars (A.1.c), the Saxon era, Russian protectorate, and three partitions 1772-1795 (A.1.d) \u2014 the full A.1 path."
+      "rationaleAI": "Poland's history covers the Polish-Lithuanian Commonwealth's Golden Age under Jagiellonian rule (A.1.a), the royal republic period (A.1.b), the Swedish and Cossack wars (A.1.c), the Saxon era, Russian protectorate, and three partitions 1772-1795 (A.1.d) — the full A.1 path."
     },
     {
       "articleTitle": "Mughal Empire",
@@ -91,14 +91,14 @@
       "relevantPathsAI": [
         "B.1.a"
       ],
-      "rationaleAI": "The Byzantine Empire's fall to the Ottomans \u2014 Constantinople conquered 1453, just before this section's c.1480 start \u2014 provides direct context for Ottoman consolidation and the empire's role as the dominant power in Southeast Europe and Southwest Asia (B.1.a)."
+      "rationaleAI": "The Byzantine Empire's fall to the Ottomans — Constantinople conquered 1453, just before this section's c.1480 start — provides direct context for Ottoman consolidation and the empire's role as the dominant power in Southeast Europe and Southwest Asia (B.1.a)."
     },
     {
       "articleTitle": "Holy Roman Empire",
       "relevantPathsAI": [
         "A.2.b"
       ],
-      "rationaleAI": "The Habsburg dimension of the Holy Roman Empire directly overlaps with Hungary's partition period (A.2.b) \u2014 Habsburg sectors controlling part of Hungary after Mohacs (1526) \u2014 and the Austro-Turkish wars that shaped the Hungarian section of this outline."
+      "rationaleAI": "The Habsburg dimension of the Holy Roman Empire directly overlaps with Hungary's partition period (A.2.b) — Habsburg sectors controlling part of Hungary after Mohacs (1526) — and the Austro-Turkish wars that shaped the Hungarian section of this outline."
     },
     {
       "articleTitle": "Renaissance",
@@ -120,6 +120,15 @@
         "A.3.a"
       ],
       "rationaleAI": "The Mongol conquest and Golden Horde's role in shaping Russian state formation is background to A.3.a (Muscovite expansion and control of Russia), as the overthrow of Mongol-Tatar authority was the foundational context for Ivan IV's centralisation."
+    },
+    {
+      "articleTitle": "Human history",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 9: The History of Mankind. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

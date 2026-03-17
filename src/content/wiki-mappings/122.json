@@ -29,7 +29,7 @@
         "G.2",
         "G.3"
       ],
-      "rationaleAI": "Directly covers the major groups of organic compounds, their nomenclature, properties, synthesis, and reactions (G.1.a\u2013G.1.u), preparation and purification of organic compounds (G.2), and their physical properties (G.3)."
+      "rationaleAI": "Directly covers the major groups of organic compounds, their nomenclature, properties, synthesis, and reactions (G.1.a–G.1.u), preparation and purification of organic compounds (G.2), and their physical properties (G.3)."
     },
     {
       "articleTitle": "Chemical compound",
@@ -111,7 +111,7 @@
       "relevantPathsAI": [
         "G.1.r"
       ],
-      "rationaleAI": "DNA is the primary exemplar of the nucleic acids subcategory of organic compounds (G.1.r: nucleic acids \u2014 DNA and RNA), covering its double-helical polymer structure of nucleotide monomers and associated chemistry."
+      "rationaleAI": "DNA is the primary exemplar of the nucleic acids subcategory of organic compounds (G.1.r: nucleic acids — DNA and RNA), covering its double-helical polymer structure of nucleotide monomers and associated chemistry."
     },
     {
       "articleTitle": "RNA",
@@ -166,7 +166,7 @@
       "rationaleAI": "Carbon dioxide is a canonical example of an inorganic oxide and anhydride (F.2.b), with its linear triatomic molecular structure and acid-forming properties (carbonic acid) illustrating structural classification of inorganic compounds."
     },
     {
-      "articleTitle": "Acid\u2013base reaction",
+      "articleTitle": "Acid–base reaction",
       "relevantPathsAI": [
         "E.3",
         "F.4"
@@ -179,7 +179,7 @@
         "E.4",
         "E.5"
       ],
-      "rationaleAI": "Covers classification of chemical substances by physical state \u2014 gas, liquid, solid (E.4) \u2014 and discusses pure versus natural and synthetic compounds, addressing E.5 (by origin: natural and synthetic) among uncovered paths."
+      "rationaleAI": "Covers classification of chemical substances by physical state — gas, liquid, solid (E.4) — and discusses pure versus natural and synthetic compounds, addressing E.5 (by origin: natural and synthetic) among uncovered paths."
     },
     {
       "articleTitle": "Water",
@@ -204,19 +204,33 @@
         "G.1.q",
         "G.1.r"
       ],
-      "rationaleAI": "Biochemistry encompasses the major classes of biomolecular organic compounds covered in G.1.m\u2013G.1.r (carbohydrates, proteins, nucleotides, nucleic acids), providing broader disciplinary context for these organic compound families."
+      "rationaleAI": "Biochemistry encompasses the major classes of biomolecular organic compounds covered in G.1.m–G.1.r (carbohydrates, proteins, nucleotides, nucleic acids), providing broader disciplinary context for these organic compound families."
     },
     {
       "articleTitle": "Natural gas",
       "relevantPathsAI": [
         "G.1.a"
       ],
-      "rationaleAI": "Natural gas is composed primarily of methane and higher alkanes \u2014 aliphatic hydrocarbons \u2014 directly corresponding to outline path G.1.a (hydrocarbons: aliphatic and aromatic), providing a real-world exemplar of this organic compound class."
+      "rationaleAI": "Natural gas is composed primarily of methane and higher alkanes — aliphatic hydrocarbons — directly corresponding to outline path G.1.a (hydrocarbons: aliphatic and aromatic), providing a real-world exemplar of this organic compound class."
     },
     {
       "articleTitle": "Chemical reaction",
       "relevantPathsAI": [],
       "rationaleAI": "Covers the factors affecting synthetic paths and reaction conditions in the synthesis of chemical compounds (H and H.1), as reaction types (decomposition, substitution, addition) are integral to understanding compound preparation."
+    },
+    {
+      "articleTitle": "Science",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 1: Matter and Energy. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

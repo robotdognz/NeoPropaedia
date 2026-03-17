@@ -23,7 +23,7 @@
         "B.3",
         "B.4"
       ],
-      "rationaleAI": "Rock directly addresses the B division of the outline: igneous rocks (crystallized from magma), sedimentary rocks (lithified from transported particles), and metamorphic rocks (recrystallized under pressure and temperature) are the article's three fundamental classes, matching B.1\u2013B.3. It also connects to rock associations in different crustal environments (B.4)."
+      "rationaleAI": "Rock directly addresses the B division of the outline: igneous rocks (crystallized from magma), sedimentary rocks (lithified from transported particles), and metamorphic rocks (recrystallized under pressure and temperature) are the article's three fundamental classes, matching B.1–B.3. It also connects to rock associations in different crustal environments (B.4)."
     },
     {
       "articleTitle": "Silicon",
@@ -69,7 +69,7 @@
         "B.5.c",
         "B.5.d"
       ],
-      "rationaleAI": "Fossil fuels directly correspond to outline path B.5, covering coal, petroleum, tar sands, oil shales, and natural gas \u2014 the article describes all four as carbon-rich, non-renewable energy sources formed from organic matter, exactly matching the complete B.5 subdivision."
+      "rationaleAI": "Fossil fuels directly correspond to outline path B.5, covering coal, petroleum, tar sands, oil shales, and natural gas — the article describes all four as carbon-rich, non-renewable energy sources formed from organic matter, exactly matching the complete B.5 subdivision."
     },
     {
       "articleTitle": "Coal",
@@ -103,7 +103,7 @@
         "B.1.e",
         "B.4.a"
       ],
-      "rationaleAI": "Volcanoes are the mechanism by which magma crystallizes into igneous rocks \u2014 the article covers magma chamber formation, lava flow types, and pyroclastic deposits, directly informing B.1 (igneous rocks, magmas) and B.1.e.ii (extrusive igneous rocks such as basalt and andesite). Oceanic volcanism at mid-ocean ridges also connects to B.4.a."
+      "rationaleAI": "Volcanoes are the mechanism by which magma crystallizes into igneous rocks — the article covers magma chamber formation, lava flow types, and pyroclastic deposits, directly informing B.1 (igneous rocks, magmas) and B.1.e.ii (extrusive igneous rocks such as basalt and andesite). Oceanic volcanism at mid-ocean ridges also connects to B.4.a."
     },
     {
       "articleTitle": "Inorganic chemistry",
@@ -112,7 +112,7 @@
         "A.3.a",
         "A.3.b"
       ],
-      "rationaleAI": "Inorganic chemistry covers the synthesis, structure, and behavior of non-carbon compounds including coordination compounds, oxides, sulfides, halides, and silicates \u2014 the same chemical families that constitute the mineral classification system in A.3. Its solid-state materials focus directly informs understanding of mineral structure and composition."
+      "rationaleAI": "Inorganic chemistry covers the synthesis, structure, and behavior of non-carbon compounds including coordination compounds, oxides, sulfides, halides, and silicates — the same chemical families that constitute the mineral classification system in A.3. Its solid-state materials focus directly informs understanding of mineral structure and composition."
     },
     {
       "articleTitle": "Internal structure of Earth",
@@ -129,7 +129,7 @@
         "C.3",
         "C.6"
       ],
-      "rationaleAI": "Soil is the pedosphere \u2014 the weathering-derived mixture of minerals, organic matter, gases, and water at Earth's surface \u2014 directly covering C.3 (crust: soils as a component of the crustal element occurrence) and C.6 (biosphere: selective concentration of elements through biological activity in soil organisms and plants)."
+      "rationaleAI": "Soil is the pedosphere — the weathering-derived mixture of minerals, organic matter, gases, and water at Earth's surface — directly covering C.3 (crust: soils as a component of the crustal element occurrence) and C.6 (biosphere: selective concentration of elements through biological activity in soil organisms and plants)."
     },
     {
       "articleTitle": "Chemical element",
@@ -157,7 +157,7 @@
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Water covers the hydrosphere \u2014 Earth's oceans, freshwater bodies, and biological fluids \u2014 directly mapping to outline path C.4 (hydrosphere: occurrence of elements in the hydrosphere), as dissolved elements and their geochemical cycling through water are a primary subject."
+      "rationaleAI": "Water covers the hydrosphere — Earth's oceans, freshwater bodies, and biological fluids — directly mapping to outline path C.4 (hydrosphere: occurrence of elements in the hydrosphere), as dissolved elements and their geochemical cycling through water are a primary subject."
     },
     {
       "articleTitle": "Carbon",
@@ -173,7 +173,7 @@
       "relevantPathsAI": [
         "A.4.c"
       ],
-      "rationaleAI": "Mining is the extraction of ore deposits and concentrated metalliferous minerals from Earth's crust \u2014 directly corresponding to A.4.c (ore deposits: concentrations of metals and metalliferous minerals). The article covers prospecting, ore processing, and the range of mineral commodities extracted."
+      "rationaleAI": "Mining is the extraction of ore deposits and concentrated metalliferous minerals from Earth's crust — directly corresponding to A.4.c (ore deposits: concentrations of metals and metalliferous minerals). The article covers prospecting, ore processing, and the range of mineral commodities extracted."
     },
     {
       "articleTitle": "Moon",
@@ -195,7 +195,17 @@
       "relevantPathsAI": [
         "C.5"
       ],
-      "rationaleAI": "The Atmosphere of Earth article covers the composition of Earth's atmospheric gas envelope \u2014 nitrogen, oxygen, argon, CO2, and water vapor \u2014 directly mapping to outline path C.5 (atmosphere: occurrence of elements in the atmosphere)."
+      "rationaleAI": "The Atmosphere of Earth article covers the composition of Earth's atmospheric gas envelope — nitrogen, oxygen, argon, CO2, and water vapor — directly mapping to outline path C.5 (atmosphere: occurrence of elements in the atmosphere)."
+    },
+    {
+      "articleTitle": "Earth",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 2: The Earth. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

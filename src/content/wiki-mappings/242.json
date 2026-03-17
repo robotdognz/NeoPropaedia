@@ -49,7 +49,7 @@
         "A.1.b",
         "A.1.c"
       ],
-      "rationaleAI": "The Rock (geology) article covers the three fundamental classes—igneous, sedimentary (clastic and carbonate), and metamorphic—corresponding directly to outline A.1 (layered rocks and depositional environments) and subnodes A.1.a–c."
+      "rationaleAI": "The Rock (geology) article covers the three fundamental classes — igneous, sedimentary (clastic and carbonate), and metamorphic — corresponding directly to outline A.1 (layered rocks and depositional environments) and subnodes A.1.a–c."
     },
     {
       "articleTitle": "History of life",
@@ -156,7 +156,7 @@
       "relevantPathsAI": [
         "B.2.b"
       ],
-      "rationaleAI": "Crustaceans are arthropods with a Cambrian fossil record; trilobites—explicitly cited at B.2.b.ix as 'fossil arthropods, e.g., trilobites'—are crustacean relatives within Pancrustacea, and crustacean fossils serve as significant stratigraphic markers."
+      "rationaleAI": "Crustaceans are arthropods with a Cambrian fossil record; trilobites — explicitly cited at B.2.b.ix as 'fossil arthropods, e.g., trilobites'—are crustacean relatives within Pancrustacea, and crustacean fossils serve as significant stratigraphic markers."
     },
     {
       "articleTitle": "Pacific Ocean",
@@ -170,7 +170,19 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "The Iron Age is a named archaeological period defined by relative dating principles—the three-age system—directly relevant to C.2 (application of relative age dating to archaeological problems) as a concrete example of archaeological periodization."
+      "rationaleAI": "The Iron Age is a named archaeological period defined by relative dating principles — the three-age system — directly relevant to C.2 (application of relative age dating to archaeological problems) as a concrete example of archaeological periodization."
+    },
+    {
+      "articleTitle": "Earth",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 2: The Earth. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

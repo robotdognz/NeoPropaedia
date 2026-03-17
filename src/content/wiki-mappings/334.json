@@ -11,7 +11,7 @@
         "A.6",
         "A.7"
       ],
-      "rationaleAI": "Skin directly covers outline path A in full: vertebrate integument layers (epidermis, dermis—A.3.a), skin derivatives and appendages (scales, hair, glands—A.3.b), variation among vertebrate taxa (A.4), embryology and evolution (A.5), biodynamics including wound healing (A.6), and human integument (A.7). One of the two or three most central articles for this section."
+      "rationaleAI": "Skin directly covers outline path A in full: vertebrate integument layers (epidermis, dermis — A.3.a), skin derivatives and appendages (scales, hair, glands — A.3.b), variation among vertebrate taxa (A.4), embryology and evolution (A.5), biodynamics including wound healing (A.6), and human integument (A.7). One of the two or three most central articles for this section."
     },
     {
       "articleTitle": "Skeleton",
@@ -59,7 +59,7 @@
         "B.7",
         "C.5"
       ],
-      "rationaleAI": "Human body provides an integrative overview of the human musculoskeletal and integumentary systems—skin, bones, and muscles—corresponding to the human-specific paths A.7 (human integument), B.7 (human skeletal system), and the vertebrate muscle coverage in C.5."
+      "rationaleAI": "Human body provides an integrative overview of the human musculoskeletal and integumentary systems — skin, bones, and muscles — corresponding to the human-specific paths A.7 (human integument), B.7 (human skeletal system), and the vertebrate muscle coverage in C.5."
     },
     {
       "articleTitle": "Vertebrate",
@@ -120,7 +120,17 @@
         "A.4",
         "B.4"
       ],
-      "rationaleAI": "Birds exhibit distinctive integumentary features—feathers as a skin derivative (A.3.b)—and lightweight skeletal adaptations for flight (B.4.a), directly relevant to vertebrate skin variation (A.4) and the vertebrate skeleton section. Their unique integumentary and skeletal adaptations make them a key comparative example."
+      "rationaleAI": "Birds exhibit distinctive integumentary features — feathers as a skin derivative (A.3.b)—and lightweight skeletal adaptations for flight (B.4.a), directly relevant to vertebrate skin variation (A.4) and the vertebrate skeleton section. Their unique integumentary and skeletal adaptations make them a key comparative example."
+    },
+    {
+      "articleTitle": "Life",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 3: Life on Earth. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

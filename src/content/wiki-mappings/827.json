@@ -34,7 +34,7 @@
         "C.3",
         "C.4"
       ],
-      "rationaleAI": "The Enlightenment is specifically addressed by D.2.c (challenge of rationalism, Deism, and Enlightenment, and the Protestant response) and provides the intellectual backdrop for D.3 and C.3\u2013C.4 (transition and modern eras for both Protestant and Catholic Christianity)."
+      "rationaleAI": "The Enlightenment is specifically addressed by D.2.c (challenge of rationalism, Deism, and Enlightenment, and the Protestant response) and provides the intellectual backdrop for D.3 and C.3–C.4 (transition and modern eras for both Protestant and Catholic Christianity)."
     },
     {
       "articleTitle": "Elizabeth I",
@@ -73,7 +73,7 @@
         "A.3.b",
         "A.3.c"
       ],
-      "rationaleAI": "Charlemagne's coronation, Christianization campaigns, and Carolingian Renaissance directly cover A.2.a (establishment of Christianity in the West, role of the papacy) and A.3.b\u2013c (relation of Christianity to Western culture, expansion of Christianity in the West)."
+      "rationaleAI": "Charlemagne's coronation, Christianization campaigns, and Carolingian Renaissance directly cover A.2.a (establishment of Christianity in the West, role of the papacy) and A.3.b–c (relation of Christianity to Western culture, expansion of Christianity in the West)."
     },
     {
       "articleTitle": "Napoleon",
@@ -99,7 +99,7 @@
         "B.2",
         "A.3"
       ],
-      "rationaleAI": "The Ottoman Empire's conquest of Constantinople (1453) and millet system of confessional autonomy directly address B.2.a (Eastern Orthodoxy under the Ottomans, 1453\u20131821) and B.2 broadly, which are currently uncovered priority paths."
+      "rationaleAI": "The Ottoman Empire's conquest of Constantinople (1453) and millet system of confessional autonomy directly address B.2.a (Eastern Orthodoxy under the Ottomans, 1453–1821) and B.2 broadly, which are currently uncovered priority paths."
     },
     {
       "articleTitle": "Spanish Empire",
@@ -121,7 +121,7 @@
         "G",
         "H"
       ],
-      "rationaleAI": "The Christianity article is the overarching subject of section 827 and provides comprehensive coverage across all major outline paths, from historical development (A\u2013D) through beliefs and practices (E\u2013F) to major denominational forms (G) and tangential movements (H)."
+      "rationaleAI": "The Christianity article is the overarching subject of section 827 and provides comprehensive coverage across all major outline paths, from historical development (A–D) through beliefs and practices (E–F) to major denominational forms (G) and tangential movements (H)."
     },
     {
       "articleTitle": "Catholic Church",
@@ -171,7 +171,7 @@
         "C.1",
         "B.1"
       ],
-      "rationaleAI": "The Middle Ages article covers the period of A.2\u2013A.3 (early Christian Church to the East-West division) and C.1 (medieval Catholic Church and papacy) as well as the context for B.1 (Byzantine church). It provides broad historical scaffolding for multiple currently uncovered paths."
+      "rationaleAI": "The Middle Ages article covers the period of A.2–A.3 (early Christian Church to the East-West division) and C.1 (medieval Catholic Church and papacy) as well as the context for B.1 (Byzantine church). It provides broad historical scaffolding for multiple currently uncovered paths."
     },
     {
       "articleTitle": "Rome",
@@ -221,7 +221,7 @@
         "C.3",
         "C.4"
       ],
-      "rationaleAI": "Voltaire's polemics against the Catholic Church and advocacy of Deism and religious toleration directly address D.2.c (challenge of rationalism, Deism, and the Enlightenment, and the Protestant response) and provide context for C.3\u2013C.4 (the transition era and modern age of the Catholic Church)."
+      "rationaleAI": "Voltaire's polemics against the Catholic Church and advocacy of Deism and religious toleration directly address D.2.c (challenge of rationalism, Deism, and the Enlightenment, and the Protestant response) and provide context for C.3–C.4 (the transition era and modern age of the Catholic Church)."
     },
     {
       "articleTitle": "Galileo Galilei",
@@ -278,6 +278,21 @@
         "F.3"
       ],
       "rationaleAI": "Copernicus's heliocentric model and its reception by the Catholic Church makes this article substantive for F.3 (doctrines concerning the physical world), the currently uncovered path addressing Christianity's relationship to cosmological and scientific claims."
+    },
+    {
+      "articleTitle": "Philosophy",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 8: Religion. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

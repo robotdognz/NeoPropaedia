@@ -25,7 +25,7 @@
         "G.5",
         "G.7"
       ],
-      "rationaleAI": "Radar is used for direction-finding and ranging (D.2.c), meteorological observation (G.5), and navigation (G.7) \u2014 all three are explicitly listed outline paths and are substantively covered in the article's applications section."
+      "rationaleAI": "Radar is used for direction-finding and ranging (D.2.c), meteorological observation (G.5), and navigation (G.7) — all three are explicitly listed outline paths and are substantively covered in the article's applications section."
     },
     {
       "articleTitle": "Telescope",
@@ -33,7 +33,7 @@
         "E.1.b",
         "G.6"
       ],
-      "rationaleAI": "E.1.b explicitly names telescopes across the full EM spectrum (optical, radio, infrared, ultraviolet, X-ray, gamma-ray); G.6 covers astronomical observations \u2014 the article covers both the instrument taxonomy and its astronomical use."
+      "rationaleAI": "E.1.b explicitly names telescopes across the full EM spectrum (optical, radio, infrared, ultraviolet, X-ray, gamma-ray); G.6 covers astronomical observations — the article covers both the instrument taxonomy and its astronomical use."
     },
     {
       "articleTitle": "Microscope",
@@ -57,7 +57,7 @@
         "B.1",
         "D.1.b"
       ],
-      "rationaleAI": "B.1 covers systems for measurement of mass; D.1.b names devices for measuring mass and weight including scales and balances \u2014 this article defines mass as a measurable quantity and its distinction from weight, directly relevant to both paths."
+      "rationaleAI": "B.1 covers systems for measurement of mass; D.1.b names devices for measuring mass and weight including scales and balances — this article defines mass as a measurable quantity and its distinction from weight, directly relevant to both paths."
     },
     {
       "articleTitle": "Clock",
@@ -65,7 +65,7 @@
         "B.2",
         "D.1.c"
       ],
-      "rationaleAI": "B.2 addresses standards and techniques for time measurement; D.1.c names mechanical, electric, and atomic clocks \u2014 the article covers the full evolutionary sequence from water clocks through atomic clocks, directly matching both paths."
+      "rationaleAI": "B.2 addresses standards and techniques for time measurement; D.1.c names mechanical, electric, and atomic clocks — the article covers the full evolutionary sequence from water clocks through atomic clocks, directly matching both paths."
     },
     {
       "articleTitle": "Time",
@@ -73,7 +73,7 @@
         "B.2",
         "D.1.c"
       ],
-      "rationaleAI": "B.2 covers standards for time measurement; D.1.c covers timekeeping devices \u2014 the article addresses the SI second, clock types, and time measurement across scales, providing conceptual foundation for both paths."
+      "rationaleAI": "B.2 covers standards for time measurement; D.1.c covers timekeeping devices — the article addresses the SI second, clock types, and time measurement across scales, providing conceptual foundation for both paths."
     },
     {
       "articleTitle": "Compass",
@@ -81,7 +81,7 @@
         "D.2.c",
         "G.7"
       ],
-      "rationaleAI": "D.2.c.i explicitly names magnetic compasses and gyrocompasses as direction-finding instruments; G.7 covers navigational techniques \u2014 the article covers magnetic, gyroscopic, and GPS-based compass variants and their navigational history."
+      "rationaleAI": "D.2.c.i explicitly names magnetic compasses and gyrocompasses as direction-finding instruments; G.7 covers navigational techniques — the article covers magnetic, gyroscopic, and GPS-based compass variants and their navigational history."
     },
     {
       "articleTitle": "Lens",
@@ -100,7 +100,7 @@
         "B",
         "C"
       ],
-      "rationaleAI": "Directly covers outline sections A (theory of measurement), B (units and standards including SI), and C (principles by which instruments operate) \u2014 measurement theory, metrology, and the history of standardization are its central topics."
+      "rationaleAI": "Directly covers outline sections A (theory of measurement), B (units and standards including SI), and C (principles by which instruments operate) — measurement theory, metrology, and the history of standardization are its central topics."
     },
     {
       "articleTitle": "Laser",
@@ -116,14 +116,14 @@
         "E.1.a",
         "F.3"
       ],
-      "rationaleAI": "E.1.a names electron microscopes (TEM and SEM) among observational instruments; F.3 covers particle accelerators \u2014 free electrons are the beam in both, and the article explicitly connects electron behavior to both technologies."
+      "rationaleAI": "E.1.a names electron microscopes (TEM and SEM) among observational instruments; F.3 covers particle accelerators — free electrons are the beam in both, and the article explicitly connects electron behavior to both technologies."
     },
     {
       "articleTitle": "Temperature",
       "relevantPathsAI": [
         "D.1.d"
       ],
-      "rationaleAI": "D.1.d explicitly names gas, liquid, and electrical resistance thermometers as devices for measuring temperature; the article covers temperature as a scalar property, the Kelvin scale, and thermometer operation \u2014 direct coverage of this path."
+      "rationaleAI": "D.1.d explicitly names gas, liquid, and electrical resistance thermometers as devices for measuring temperature; the article covers temperature as a scalar property, the Kelvin scale, and thermometer operation — direct coverage of this path."
     },
     {
       "articleTitle": "Photography",
@@ -131,7 +131,7 @@
         "E.2",
         "G.6"
       ],
-      "rationaleAI": "E.2 covers instruments for recording phenomena (cameras); G.6 addresses astronomical observations, which have relied heavily on photographic recording \u2014 the article covers both the instrument basis and scientific imaging applications."
+      "rationaleAI": "E.2 covers instruments for recording phenomena (cameras); G.6 addresses astronomical observations, which have relied heavily on photographic recording — the article covers both the instrument basis and scientific imaging applications."
     },
     {
       "articleTitle": "International System of Units",
@@ -139,7 +139,7 @@
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "B.1 covers systems of weights and measures (mass and length standards); B.2 covers time standards \u2014 SI directly defines and governs all these measurement standards including the metre, kilogram, and second."
+      "rationaleAI": "B.1 covers systems of weights and measures (mass and length standards); B.2 covers time standards — SI directly defines and governs all these measurement standards including the metre, kilogram, and second."
     },
     {
       "articleTitle": "Navigation",
@@ -147,7 +147,7 @@
         "D.2.c",
         "G.7"
       ],
-      "rationaleAI": "D.2.c covers instruments for measuring position by angulation and direction-finding; G.7 explicitly names navigational techniques and devices \u2014 the article covers celestial navigation, dead reckoning, inertial navigation, radar, and GNSS."
+      "rationaleAI": "D.2.c covers instruments for measuring position by angulation and direction-finding; G.7 explicitly names navigational techniques and devices — the article covers celestial navigation, dead reckoning, inertial navigation, radar, and GNSS."
     },
     {
       "articleTitle": "Electromagnetic radiation",
@@ -156,7 +156,7 @@
         "E.1.b",
         "G.8"
       ],
-      "rationaleAI": "D.2.f covers instruments measuring ionizing radiation (Geiger counters, scintillation counters); E.1.b covers telescopes across the EM spectrum; G.8 covers radiological techniques \u2014 the article spans radio through gamma rays relevant to all three paths."
+      "rationaleAI": "D.2.f covers instruments measuring ionizing radiation (Geiger counters, scintillation counters); E.1.b covers telescopes across the EM spectrum; G.8 covers radiological techniques — the article spans radio through gamma rays relevant to all three paths."
     },
     {
       "articleTitle": "Internal structure of Earth",
@@ -164,6 +164,21 @@
         "F.6"
       ],
       "rationaleAI": "F.6 names seismographs as special scientific instruments; seismic wave analysis is the primary method for inferring Earth's interior layering, and the article explicitly describes how P and S wave measurements from seismographs inform Earth structure knowledge."
+    },
+    {
+      "articleTitle": "Technology",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 7: Technology. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

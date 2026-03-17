@@ -90,7 +90,7 @@
         "B.2",
         "E.1.b"
       ],
-      "rationaleAI": "Opera is the paradigmatic genre of music for the theatre (E.3.c.i), and the article's coverage of vocal forms \u2014 recitative, aria, bel canto \u2014 directly addresses B.2 (the human voice and singing styles) and solo vocal performance (E.1.b.i)."
+      "rationaleAI": "Opera is the paradigmatic genre of music for the theatre (E.3.c.i), and the article's coverage of vocal forms — recitative, aria, bel canto — directly addresses B.2 (the human voice and singing styles) and solo vocal performance (E.1.b.i)."
     },
     {
       "articleTitle": "Performing arts",
@@ -213,7 +213,7 @@
         "A.1",
         "A.3"
       ],
-      "rationaleAI": "Directly addresses writings about music (A.5) by defining musicology's three branches \u2014 historical, systematic, and ethnomusicological \u2014 which encompass the history of music (G), music theory, performance study (A.3), and diverse aesthetic conceptions (A.1)."
+      "rationaleAI": "Directly addresses writings about music (A.5) by defining musicology's three branches — historical, systematic, and ethnomusicological — which encompass the history of music (G), music theory, performance study (A.3), and diverse aesthetic conceptions (A.1)."
     },
     {
       "articleTitle": "Rock music",
@@ -232,7 +232,7 @@
         "F.1",
         "F.4"
       ],
-      "rationaleAI": "The progression from phonograph to radio to digital transmission constitutes the history of music recording and reproduction (F, F.1, F.4), as telecommunications technology \u2014 telephone, radio, internet \u2014 fundamentally shaped how music is distributed and consumed."
+      "rationaleAI": "The progression from phonograph to radio to digital transmission constitutes the history of music recording and reproduction (F, F.1, F.4), as telecommunications technology — telephone, radio, internet — fundamentally shaped how music is distributed and consumed."
     },
     {
       "articleTitle": "Folklore",
@@ -247,7 +247,21 @@
         "E.4",
         "D"
       ],
-      "rationaleAI": "Oral tradition encompasses the pre-notational transmission of music \u2014 epic poetry with melodic formula, ballads, religious chant \u2014 directly relevant to E.4 (primitive and folk music) and to understanding the limits and antecedents of musical notation (D)."
+      "rationaleAI": "Oral tradition encompasses the pre-notational transmission of music — epic poetry with melodic formula, ballads, religious chant — directly relevant to E.4 (primitive and folk music) and to understanding the limits and antecedents of musical notation (D)."
+    },
+    {
+      "articleTitle": "The arts",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 6: Art. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

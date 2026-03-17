@@ -48,7 +48,7 @@
         "A.1.c",
         "B.1.b"
       ],
-      "rationaleAI": "The Great Depression is explicitly named in A.1.c (Hoover's administration, stock market crash, economic repercussions) and B.1.b (Depression's impact on Canada, Conservative relief measures 1930\u201335)."
+      "rationaleAI": "The Great Depression is explicitly named in A.1.c (Hoover's administration, stock market crash, economic repercussions) and B.1.b (Depression's impact on Canada, Conservative relief measures 1930–35)."
     },
     {
       "articleTitle": "Soviet Union",
@@ -60,7 +60,7 @@
         "A.4.d",
         "A.4.f"
       ],
-      "rationaleAI": "The Soviet Union is the defining antagonist of the Cold War sections A.3 onward\u2014Truman's containment policy, Eisenhower's d\u00e9tente, Nixon's SALT talks, Reagan's Gorbachev-era relations, and d\u00e9tente under Ford all require coverage of Soviet policies and actions."
+      "rationaleAI": "The Soviet Union is the defining antagonist of the Cold War sections A.3 onward — Truman's containment policy, Eisenhower's détente, Nixon's SALT talks, Reagan's Gorbachev-era relations, and détente under Ford all require coverage of Soviet policies and actions."
     },
     {
       "articleTitle": "Vietnam",
@@ -100,7 +100,7 @@
       "relevantPathsAI": [
         "A.3.a"
       ],
-      "rationaleAI": "South Korea is the direct subject of the Korean War (A.3.a.iv), including US and UN intervention (1950\u201353), which the outline lists as a key event of the Truman administration and a major Cold War confrontation."
+      "rationaleAI": "South Korea is the direct subject of the Korean War (A.3.a.iv), including US and UN intervention (1950–53), which the outline lists as a key event of the Truman administration and a major Cold War confrontation."
     },
     {
       "articleTitle": "Iran",
@@ -136,6 +136,15 @@
         "B.3.b"
       ],
       "rationaleAI": "The United Kingdom is central to Canada's section: B.1.a covers Commonwealth relations under King's Liberal government, B.3.a addresses postwar Canadian participation in NATO alongside the UK and Commonwealth affairs, and B.3.b covers Canada's involvement in British Commonwealth matters."
+    },
+    {
+      "articleTitle": "Human history",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 9: The History of Mankind. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

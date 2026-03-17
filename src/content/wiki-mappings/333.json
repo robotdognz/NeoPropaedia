@@ -19,7 +19,7 @@
         "D.3",
         "D.4"
       ],
-      "rationaleAI": "Comprehensive treatment of the nervous system as a coordination mechanism, covering both invertebrate and vertebrate nervous systems (D.3, D.4), the neuron and synaptic transmission (D.2), and the division into central and peripheral systems—all core content of outline path D."
+      "rationaleAI": "Comprehensive treatment of the nervous system as a coordination mechanism, covering both invertebrate and vertebrate nervous systems (D.3, D.4), the neuron and synaptic transmission (D.2), and the division into central and peripheral systems — all core content of outline path D."
     },
     {
       "articleTitle": "Brain",
@@ -79,7 +79,7 @@
         "C.3",
         "D.3"
       ],
-      "rationaleAI": "Arthropods include insects and crustaceans—both explicitly cited in outline path C.3 (invertebrate endocrine systems)—and their ventral nerve cords with segmental ganglia are the primary example of centralized invertebrate nervous systems (D.3.c)."
+      "rationaleAI": "Arthropods include insects and crustaceans — both explicitly cited in outline path C.3 (invertebrate endocrine systems)—and their ventral nerve cords with segmental ganglia are the primary example of centralized invertebrate nervous systems (D.3.c)."
     },
     {
       "articleTitle": "Metabolism",
@@ -99,7 +99,19 @@
         "D",
         "E"
       ],
-      "rationaleAI": "Physiology as a discipline is the overarching scientific framework for all content in Section 333—homeostasis, sensory reception, endocrine and nervous coordination, and biological clocks are all core physiological topics. Serves as a disciplinary anchor article across all outline paths."
+      "rationaleAI": "Physiology as a discipline is the overarching scientific framework for all content in Section 333 — homeostasis, sensory reception, endocrine and nervous coordination, and biological clocks are all core physiological topics. Serves as a disciplinary anchor article across all outline paths."
+    },
+    {
+      "articleTitle": "Life",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 3: Life on Earth. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

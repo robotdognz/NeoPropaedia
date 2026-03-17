@@ -46,7 +46,7 @@
         "C",
         "C.2"
       ],
-      "rationaleAI": "Social-scientific theories of historical causation\u2014positivist, interpretivist, Marxist\u2014directly inform speculative and analytical philosophy of history (C.2), and the discipline's debates about objectivity are central to C."
+      "rationaleAI": "Social-scientific theories of historical causation — positivist, interpretivist, Marxist — directly inform speculative and analytical philosophy of history (C.2), and the discipline's debates about objectivity are central to C."
     },
     {
       "articleTitle": "Post-classical history",
@@ -62,7 +62,7 @@
         "A.1.c",
         "C.2"
       ],
-      "rationaleAI": "Marx's historical materialism and dialectical method are cornerstones of 19th\u201320th-century historiography (A.1.c.iv) and are the paradigmatic example of speculative philosophy of history based on material-structural explanations of historical patterns (C.2)."
+      "rationaleAI": "Marx's historical materialism and dialectical method are cornerstones of 19th–20th-century historiography (A.1.c.iv) and are the paradigmatic example of speculative philosophy of history based on material-structural explanations of historical patterns (C.2)."
     },
     {
       "articleTitle": "Sigmund Freud",
@@ -83,7 +83,7 @@
       "relevantPathsAI": [
         "A.1.c"
       ],
-      "rationaleAI": "Enlightenment historiography\u2014Voltaire's universal history, Gibbon's Decline and Fall, Hume's histories\u2014is the defining content of A.1.c.iii, and the Enlightenment's rationalist critique of sources shaped modern historical method."
+      "rationaleAI": "Enlightenment historiography — Voltaire's universal history, Gibbon's Decline and Fall, Hume's histories — is the defining content of A.1.c.iii, and the Enlightenment's rationalist critique of sources shaped modern historical method."
     },
     {
       "articleTitle": "History",
@@ -102,7 +102,7 @@
         "A.1.a",
         "B.1"
       ],
-      "rationaleAI": "Ancient history spans the period that produced the earliest historiographical traditions (Near Eastern chronicles, Greek and Roman narrative history) and demonstrates the range of primary sources\u2014material remains and written records\u2014central to B.1."
+      "rationaleAI": "Ancient history spans the period that produced the earliest historiographical traditions (Near Eastern chronicles, Greek and Roman narrative history) and demonstrates the range of primary sources — material remains and written records — central to B.1."
     },
     {
       "articleTitle": "Ibn Khaldun",
@@ -113,7 +113,7 @@
       "rationaleAI": "Ibn Khaldun's Muqaddimah established Islamic historiographical method and introduced the first systematic theory of cyclical historical causation, making it essential for A.1.d.i (Islamic historiography) and C.2 (speculative philosophy of history)."
     },
     {
-      "articleTitle": "Niccol\u00f2 Machiavelli",
+      "articleTitle": "Niccolò Machiavelli",
       "relevantPathsAI": [
         "A.1.c",
         "A.3"
@@ -143,7 +143,7 @@
         "A.1.b",
         "A.1.c"
       ],
-      "rationaleAI": "European history from classical antiquity through the modern era is the primary subject matter within which Western historiographical traditions from ancient through Enlightenment periods (A.1.a\u2013A.1.c) developed and are illustrated."
+      "rationaleAI": "European history from classical antiquity through the modern era is the primary subject matter within which Western historiographical traditions from ancient through Enlightenment periods (A.1.a–A.1.c) developed and are illustrated."
     },
     {
       "articleTitle": "History of religion",
@@ -158,7 +158,37 @@
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "Ancient Greece produced classical historiography with Herodotus and Thucydides\u2014the originating tradition of Western historical writing\u2014corresponding directly to A.1.a.ii (Classical historiography: Greek and Roman)."
+      "rationaleAI": "Ancient Greece produced classical historiography with Herodotus and Thucydides — the originating tradition of Western historical writing — corresponding directly to A.1.a.ii (Classical historiography: Greek and Roman)."
+    },
+    {
+      "articleTitle": "Science",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 10: The Branches of Knowledge. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
+    },
+    {
+      "articleTitle": "Philosophy",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 10: The Branches of Knowledge. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
+    },
+    {
+      "articleTitle": "Mathematics",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 10: The Branches of Knowledge. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

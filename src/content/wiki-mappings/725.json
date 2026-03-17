@@ -9,7 +9,7 @@
         "B.2",
         "B.3"
       ],
-      "rationaleAI": "Metallurgy is the exact subject of the B division\u2014covering mineral processing (B.1), all branches of extractive metallurgy including pyrometallurgy, electrometallurgy, and hydrometallurgy (B.2), and physical metallurgy (B.3)."
+      "rationaleAI": "Metallurgy is the exact subject of the B division — covering mineral processing (B.1), all branches of extractive metallurgy including pyrometallurgy, electrometallurgy, and hydrometallurgy (B.2), and physical metallurgy (B.3)."
     },
     {
       "articleTitle": "Metal",
@@ -25,7 +25,7 @@
         "A.5.a",
         "B.2.a"
       ],
-      "rationaleAI": "Industrial kilns and furnaces\u2014including those for ceramics firing, glass production, and metallurgical smelting\u2014are the primary equipment for heat-treating operations (A.5.a) and pyrometallurgical processes (B.2.a)."
+      "rationaleAI": "Industrial kilns and furnaces — including those for ceramics firing, glass production, and metallurgical smelting — are the primary equipment for heat-treating operations (A.5.a) and pyrometallurgical processes (B.2.a)."
     },
     {
       "articleTitle": "Natural rubber",
@@ -50,7 +50,7 @@
         "B.3.f",
         "A.5"
       ],
-      "rationaleAI": "Alloy production involves heat treatment (B.3.f\u2014annealing, quenching, tempering to achieve target microstructures) and property modification (A.5); the article covers how alloying and heat treatment alter microstructure and mechanical properties."
+      "rationaleAI": "Alloy production involves heat treatment (B.3.f — annealing, quenching, tempering to achieve target microstructures) and property modification (A.5); the article covers how alloying and heat treatment alter microstructure and mechanical properties."
     },
     {
       "articleTitle": "Glass",
@@ -58,14 +58,14 @@
         "A.2.a",
         "A.5"
       ],
-      "rationaleAI": "Glass production involves casting and molding molten silicate material (A.2.a.ii\u2014casting/molding nonmetals) and property modification through controlled quenching and annealing; the article covers soda-lime, borosilicate, and specialty glass production."
+      "rationaleAI": "Glass production involves casting and molding molten silicate material (A.2.a.ii — casting/molding nonmetals) and property modification through controlled quenching and annealing; the article covers soda-lime, borosilicate, and specialty glass production."
     },
     {
       "articleTitle": "Manufacturing",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Manufacturing provides an overview of industrial production processes\u2014fabrication, assembly, forming, and finishing across industries\u2014that encompasses the scope of section A (materials processing operations)."
+      "rationaleAI": "Manufacturing provides an overview of industrial production processes — fabrication, assembly, forming, and finishing across industries — that encompasses the scope of section A (materials processing operations)."
     },
     {
       "articleTitle": "Steel",
@@ -81,7 +81,7 @@
       "relevantPathsAI": [
         "B.2.a"
       ],
-      "rationaleAI": "Iron smelting via blast furnace (B.2.a.ii\u2014smelting) and direct reduction, plus its conversion to steel (B.2.a.iii), are core pyrometallurgical operations directly addressed in the extractive metallurgy section."
+      "rationaleAI": "Iron smelting via blast furnace (B.2.a.ii — smelting) and direct reduction, plus its conversion to steel (B.2.a.iii), are core pyrometallurgical operations directly addressed in the extractive metallurgy section."
     },
     {
       "articleTitle": "Copper",
@@ -89,7 +89,7 @@
         "B.2.a",
         "B.2.b"
       ],
-      "rationaleAI": "Copper production exemplifies converting to blister copper (B.2.a.iii), pyrometallurgical refining (B.2.a.iv), and electrorefining (B.2.b.iii)\u2014the outline explicitly names copper in all three nodes."
+      "rationaleAI": "Copper production exemplifies converting to blister copper (B.2.a.iii), pyrometallurgical refining (B.2.a.iv), and electrorefining (B.2.b.iii)—the outline explicitly names copper in all three nodes."
     },
     {
       "articleTitle": "Refrigeration",
@@ -105,7 +105,7 @@
         "A.1.b",
         "A.2.a"
       ],
-      "rationaleAI": "Plastics are produced by chemical processing including polymerization (A.1.b) and shaped by injection molding, extrusion, and compression (A.2.a.ii\u2014casting and molding nonmetals), making them central examples in both nodes."
+      "rationaleAI": "Plastics are produced by chemical processing including polymerization (A.1.b) and shaped by injection molding, extrusion, and compression (A.2.a.ii — casting and molding nonmetals), making them central examples in both nodes."
     },
     {
       "articleTitle": "Laser",
@@ -131,7 +131,7 @@
         "C.1",
         "C.2"
       ],
-      "rationaleAI": "Robotics in manufacturing automates materials processing (A) and industrial materials handling, including conveyors, automated guided vehicles, and storage retrieval systems\u2014directly relevant to the uncovered C paths on materials-handling systems and equipment."
+      "rationaleAI": "Robotics in manufacturing automates materials processing (A) and industrial materials handling, including conveyors, automated guided vehicles, and storage retrieval systems — directly relevant to the uncovered C paths on materials-handling systems and equipment."
     },
     {
       "articleTitle": "Concrete",
@@ -139,14 +139,14 @@
         "A.2.a",
         "A.1.a"
       ],
-      "rationaleAI": "Concrete production involves mixing and blending aggregates (A.1.a\u2014mechanical processing) and casting molten/wet material into forms (A.2.a.ii\u2014casting/molding nonmetals), making it a direct example of these production processes."
+      "rationaleAI": "Concrete production involves mixing and blending aggregates (A.1.a — mechanical processing) and casting molten/wet material into forms (A.2.a.ii — casting/molding nonmetals), making it a direct example of these production processes."
     },
     {
       "articleTitle": "Electricity",
       "relevantPathsAI": [
         "B.2.b"
       ],
-      "rationaleAI": "Electrometallurgy (B.2.b)\u2014electrolytic smelting, electrowinning, and electrorefining\u2014relies on electrical principles; electricity generation and distribution underpins industrial production processes throughout the section."
+      "rationaleAI": "Electrometallurgy (B.2.b)—electrolytic smelting, electrowinning, and electrorefining — relies on electrical principles; electricity generation and distribution underpins industrial production processes throughout the section."
     },
     {
       "articleTitle": "Gold",
@@ -161,7 +161,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Mineral processing\u2014crushing, grinding, and concentration of metallic minerals\u2014is the first stage of metallurgy (B.1) and minerals as crystalline inorganic solids are the raw input for all subsequent extractive metallurgy operations."
+      "rationaleAI": "Mineral processing — crushing, grinding, and concentration of metallic minerals — is the first stage of metallurgy (B.1) and minerals as crystalline inorganic solids are the raw input for all subsequent extractive metallurgy operations."
     },
     {
       "articleTitle": "Rock (geology)",
@@ -176,7 +176,7 @@
         "B.2",
         "A.1.b"
       ],
-      "rationaleAI": "Inorganic chemistry provides the theoretical basis for extractive metallurgy\u2014redox reactions, coordination chemistry, and catalysis (B.2)\u2014and for chemical processing operations including leaching, precipitation, and smelting (A.1.b)."
+      "rationaleAI": "Inorganic chemistry provides the theoretical basis for extractive metallurgy — redox reactions, coordination chemistry, and catalysis (B.2)—and for chemical processing operations including leaching, precipitation, and smelting (A.1.b)."
     },
     {
       "articleTitle": "Silicon",
@@ -184,7 +184,17 @@
         "B.2.b",
         "A.2.a"
       ],
-      "rationaleAI": "Silicon production by electrolytic reduction of silica (analogous to the Hall-H\u00e9roult process, B.2.b.i) and silicon casting for semiconductor wafers (A.2.a.ii\u2014molding nonmetals) relate to industrial production processes covered in the outline."
+      "rationaleAI": "Silicon production by electrolytic reduction of silica (analogous to the Hall-Héroult process, B.2.b.i) and silicon casting for semiconductor wafers (A.2.a.ii — molding nonmetals) relate to industrial production processes covered in the outline."
+    },
+    {
+      "articleTitle": "Technology",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 7: Technology. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

@@ -12,7 +12,7 @@
         "A.5",
         "A.6"
       ],
-      "rationaleAI": "Covers the full survey of the solar system (outline path A), including all major constituents \u2014 planets, dwarf planets, asteroids, Kuiper belt, Oort cloud, comets, meteoroids, and the heliosphere \u2014 as well as formation theories and comparison with extrasolar systems (A.6)."
+      "rationaleAI": "Covers the full survey of the solar system (outline path A), including all major constituents — planets, dwarf planets, asteroids, Kuiper belt, Oort cloud, comets, meteoroids, and the heliosphere — as well as formation theories and comparison with extrasolar systems (A.6)."
     },
     {
       "articleTitle": "Sun",
@@ -77,7 +77,7 @@
         "C.1.b",
         "C.1"
       ],
-      "rationaleAI": "Directly covers Venus (C.1.b), including its dense CO\u2082 atmosphere, retrograde rotation, volcanic surface, absence of magnetic field, and history of space exploration."
+      "rationaleAI": "Directly covers Venus (C.1.b), including its dense CO₂ atmosphere, retrograde rotation, volcanic surface, absence of magnetic field, and history of space exploration."
     },
     {
       "articleTitle": "Mars",
@@ -101,7 +101,7 @@
         "C.3.b",
         "C.3"
       ],
-      "rationaleAI": "Directly covers Saturn (C.3.b), including its prominent ring system, layered interior, magnetic field, and its 274+ moons including Titan \u2014 the only Solar System moon with a substantial atmosphere."
+      "rationaleAI": "Directly covers Saturn (C.3.b), including its prominent ring system, layered interior, magnetic field, and its 274+ moons including Titan — the only Solar System moon with a substantial atmosphere."
     },
     {
       "articleTitle": "Uranus",
@@ -109,7 +109,7 @@
         "C.3.c",
         "C.3"
       ],
-      "rationaleAI": "Directly covers Uranus (C.3.c), an ice giant with an extreme 98\u00b0 axial tilt, offset magnetosphere, ring system, and 28 known moons, explored only by Voyager 2."
+      "rationaleAI": "Directly covers Uranus (C.3.c), an ice giant with an extreme 98° axial tilt, offset magnetosphere, ring system, and 28 known moons, explored only by Voyager 2."
     },
     {
       "articleTitle": "Neptune",
@@ -215,7 +215,7 @@
         "B.3",
         "A.6"
       ],
-      "rationaleAI": "Covers stellar evolution \u2014 including the life cycles of main-sequence stars like the Sun \u2014 directly relevant to the Sun's interior evolution (B.3) and to understanding the Sun's origin and its eventual fate, contextualizing origin theories (A.6)."
+      "rationaleAI": "Covers stellar evolution — including the life cycles of main-sequence stars like the Sun — directly relevant to the Sun's interior evolution (B.3) and to understanding the Sun's origin and its eventual fate, contextualizing origin theories (A.6)."
     },
     {
       "articleTitle": "Galileo Galilei",
@@ -267,6 +267,18 @@
         "A.3.d"
       ],
       "rationaleAI": "Covers the interplanetary medium (A.3.d) as part of its description of outer space regions including the near-vacuum, cosmic rays, magnetic fields, and the heliosphere between planetary bodies."
+    },
+    {
+      "articleTitle": "Science",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 1: Matter and Energy. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

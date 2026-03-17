@@ -32,7 +32,7 @@
         "B.2",
         "B.2.a"
       ],
-      "rationaleAI": "Mansa Musa's reign at the Mali Empire's territorial and commercial peak—controlling trans-Saharan gold routes and establishing Timbuktu as an Islamic scholarly centre—directly covers the content of B.2.a (Keita dynasty, Timbuktu as cultural and commercial centre, fall of Mali empire)."
+      "rationaleAI": "Mansa Musa's reign at the Mali Empire's territorial and commercial peak — controlling trans-Saharan gold routes and establishing Timbuktu as an Islamic scholarly centre — directly covers the content of B.2.a (Keita dynasty, Timbuktu as cultural and commercial centre, fall of Mali empire)."
     },
     {
       "articleTitle": "Post-classical history",
@@ -55,7 +55,7 @@
         "C.4",
         "C.4.b"
       ],
-      "rationaleAI": "The British Empire's Scramble for Africa and West African colonial settlements—Sierra Leone, Gold Coast, Lagos, and Ashanti—are directly treated in C.4.b, and the broader trajectory of British imperialism frames C.4's account of West Africa from 1800 to c. 1885."
+      "rationaleAI": "The British Empire's Scramble for Africa and West African colonial settlements — Sierra Leone, Gold Coast, Lagos, and Ashanti — are directly treated in C.4.b, and the broader trajectory of British imperialism frames C.4's account of West Africa from 1800 to c. 1885."
     },
     {
       "articleTitle": "Nigeria",
@@ -148,6 +148,16 @@
         "C.2"
       ],
       "rationaleAI": "At a moderate level, globalization's historical account of trans-Saharan and early Atlantic trade networks contextualizes the commercial importance of western Sudan empires (B.2) and the development of the Atlantic slave trade routes (C.2) that connected West Africa to broader world markets."
+    },
+    {
+      "articleTitle": "Human history",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 9: The History of Mankind. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

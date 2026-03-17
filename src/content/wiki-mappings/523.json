@@ -131,7 +131,7 @@
         "A",
         "B.3"
       ],
-      "rationaleAI": "The Industrial Revolution restructured economic differentiation and created modern class formations\u2014industrial bourgeoisie and proletariat (A.3a, B.3)\u2014whose characteristics are central to the section."
+      "rationaleAI": "The Industrial Revolution restructured economic differentiation and created modern class formations — industrial bourgeoisie and proletariat (A.3a, B.3)—whose characteristics are central to the section."
     },
     {
       "articleTitle": "Clothing",
@@ -213,6 +213,15 @@
         "B.5"
       ],
       "rationaleAI": "Decolonization addressed the relationship of colonized individuals and peoples to stratified imperial social structures (A.3c), enabling national mobility and self-determination (B.4) and challenging hierarchical imperial ordering (B.5)."
+    },
+    {
+      "articleTitle": "Society",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 5: Human Society. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

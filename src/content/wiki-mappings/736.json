@@ -98,7 +98,7 @@
         "B",
         "C"
       ],
-      "rationaleAI": "Encompasses the history of weapons technology evolution, doctrinal change, and military organization across all major categories of the outline \u2014 offensive weapons (A), defensive weapons (B), and weapon platforms (C) \u2014 making it a broad contextual entry for the section."
+      "rationaleAI": "Encompasses the history of weapons technology evolution, doctrinal change, and military organization across all major categories of the outline — offensive weapons (A), defensive weapons (B), and weapon platforms (C) — making it a broad contextual entry for the section."
     },
     {
       "articleTitle": "Ship",
@@ -116,7 +116,7 @@
         "A.3",
         "A.2.e"
       ],
-      "rationaleAI": "Directly covers the explosive devices category (A.3) \u2014 mines, depth charges, bombs, and warheads \u2014 distinguishing high explosives from low explosives and primary from secondary types, and addresses propellant chemistry relevant to A.2.e.i."
+      "rationaleAI": "Directly covers the explosive devices category (A.3) — mines, depth charges, bombs, and warheads — distinguishing high explosives from low explosives and primary from secondary types, and addresses propellant chemistry relevant to A.2.e.i."
     },
     {
       "articleTitle": "Engineering",
@@ -126,7 +126,7 @@
         "D.2",
         "D.3"
       ],
-      "rationaleAI": "Military engineering (D) \u2014 tactical support through fortification, strategic support through roads, bridges, and ports, and ancillary support through maps and bomb disposal \u2014 is a direct application of engineering as covered in this article."
+      "rationaleAI": "Military engineering (D) — tactical support through fortification, strategic support through roads, bridges, and ports, and ancillary support through maps and bomb disposal — is a direct application of engineering as covered in this article."
     },
     {
       "articleTitle": "Metallurgy",
@@ -143,7 +143,7 @@
       "relevantPathsAI": [
         "E"
       ],
-      "rationaleAI": "The military article covers logistics \u2014 supply, transport, lodging, and services \u2014 directly corresponding to outline section E, as well as personnel hierarchy, training, and technology procurement that contextualizes all the technical sections."
+      "rationaleAI": "The military article covers logistics — supply, transport, lodging, and services — directly corresponding to outline section E, as well as personnel hierarchy, training, and technology procurement that contextualizes all the technical sections."
     },
     {
       "articleTitle": "Nuclear power",
@@ -161,7 +161,7 @@
         "F.1",
         "D.3"
       ],
-      "rationaleAI": "Navigation covers radar, radio navigation, inertial navigation, and satellite-based systems \u2014 all within the electronics section on electromagnetic sensors and transmitters used in navigation (F.1) and supporting military engineering maps (D.3)."
+      "rationaleAI": "Navigation covers radar, radio navigation, inertial navigation, and satellite-based systems — all within the electronics section on electromagnetic sensors and transmitters used in navigation (F.1) and supporting military engineering maps (D.3)."
     },
     {
       "articleTitle": "Laser",
@@ -169,7 +169,7 @@
         "F",
         "F.1"
       ],
-      "rationaleAI": "Lasers are explicitly included in outline F.1 as laser technology used in communication, navigation, warning/detection, and weapon guidance \u2014 covering directed-energy weapons and lidar applications in military electronics."
+      "rationaleAI": "Lasers are explicitly included in outline F.1 as laser technology used in communication, navigation, warning/detection, and weapon guidance — covering directed-energy weapons and lidar applications in military electronics."
     },
     {
       "articleTitle": "Map",
@@ -177,6 +177,19 @@
         "D.3"
       ],
       "rationaleAI": "Maps are explicitly listed in outline D.3 as ancillary engineering support for military operations, covering cartographic elements essential to military navigation, terrain analysis, and operational planning."
+    },
+    {
+      "articleTitle": "Technology",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 7: Technology. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

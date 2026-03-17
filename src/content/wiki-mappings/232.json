@@ -34,7 +34,7 @@
         "C.1.d",
         "C.1.e"
       ],
-      "rationaleAI": "Rivers are the central subject of fluvial processes (A.4)—entrainment, transport, erosion, deposition—and the fluvial environment (C.1), covering drainage patterns, streamflow, floodplains, deltas, and river system evolution through geologic time."
+      "rationaleAI": "Rivers are the central subject of fluvial processes (A.4)—entrainment, transport, erosion, deposition — and the fluvial environment (C.1), covering drainage patterns, streamflow, floodplains, deltas, and river system evolution through geologic time."
     },
     {
       "articleTitle": "Erosion",
@@ -46,7 +46,7 @@
         "A.7",
         "D.2"
       ],
-      "rationaleAI": "Erosion is central to the section's process framework, covering all major agents—water, wind, glaciers, and waves—that shape surface features, and connects directly to the concept of the cycle of erosion (D.2) as a theoretical framework for landform evolution."
+      "rationaleAI": "Erosion is central to the section's process framework, covering all major agents — water, wind, glaciers, and waves — that shape surface features, and connects directly to the concept of the cycle of erosion (D.2) as a theoretical framework for landform evolution."
     },
     {
       "articleTitle": "Soil",
@@ -57,7 +57,7 @@
         "A.2.c",
         "A.2.d"
       ],
-      "rationaleAI": "Soil formation (A.2) is explicitly outlined as a result of weathering, with the article covering soil formation processes, classification and distribution, soil crusts, and erosion and deterioration—a near-complete match to outline nodes A.2.a–d."
+      "rationaleAI": "Soil formation (A.2) is explicitly outlined as a result of weathering, with the article covering soil formation processes, classification and distribution, soil crusts, and erosion and deterioration — a near-complete match to outline nodes A.2.a–d."
     },
     {
       "articleTitle": "Wind",
@@ -68,7 +68,7 @@
         "A.5.c",
         "A.5.d"
       ],
-      "rationaleAI": "Wind directly addresses eolian processes (A.5), covering transportation of rock debris by wind, effects of wind transport, dune formation and migration, and the role of vegetation—corresponding closely to all four subnodes of A.5."
+      "rationaleAI": "Wind directly addresses eolian processes (A.5), covering transportation of rock debris by wind, effects of wind transport, dune formation and migration, and the role of vegetation — corresponding closely to all four subnodes of A.5."
     },
     {
       "articleTitle": "Snow",
@@ -120,7 +120,7 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Volcanism is listed under B.3 (volcanic-tectonic processes) as a mechanism acting on the Earth's surface, and the article covers the structural and material outputs of volcanic activity—lava flows, tephra—that directly create surface landforms."
+      "rationaleAI": "Volcanism is listed under B.3 (volcanic-tectonic processes) as a mechanism acting on the Earth's surface, and the article covers the structural and material outputs of volcanic activity — lava flows, tephra — that directly create surface landforms."
     },
     {
       "articleTitle": "Earthquake",
@@ -249,6 +249,17 @@
         "A.6"
       ],
       "rationaleAI": "Storms drive both eolian processes (A.5) through dust storms and wind-transported sediment, and marine processes (A.6) through storm surge and wave-driven coastal erosion and deposition."
+    },
+    {
+      "articleTitle": "Earth",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 2: The Earth. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

@@ -36,7 +36,7 @@
         "B.3",
         "B.4"
       ],
-      "rationaleAI": "The most comprehensive match for Section 542, covering legislative, executive, and judicial branches (B.1\u2013B.4), constitutional frameworks, all forms of government as types (A.2), and historical/contemporary systems from monarchy to democracy."
+      "rationaleAI": "The most comprehensive match for Section 542, covering legislative, executive, and judicial branches (B.1–B.4), constitutional frameworks, all forms of government as types (A.2), and historical/contemporary systems from monarchy to democracy."
     },
     {
       "articleTitle": "Democracy",
@@ -83,7 +83,7 @@
         "B.3",
         "B.4"
       ],
-      "rationaleAI": "Rome's constitutional evolution\u2014from monarchy through republic to empire\u2014covers A.2 (types of political systems) and A.1.a (empire as supranational system); republican institutions (Senate, consuls, praetors) map to B.2 (legislature), B.3 (executive), and B.4 (judiciary) in historical context."
+      "rationaleAI": "Rome's constitutional evolution — from monarchy through republic to empire — covers A.2 (types of political systems) and A.1.a (empire as supranational system); republican institutions (Senate, consuls, praetors) map to B.2 (legislature), B.3 (executive), and B.4 (judiciary) in historical context."
     },
     {
       "articleTitle": "Holy Roman Empire",
@@ -199,7 +199,7 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "As the first US president, Washington's establishment of executive precedents\u2014two-term limit, peaceful transfer of power, executive neutrality\u2014directly covers B.3 (the executive branch: its founding norms and institutional character) in the most influential presidential system."
+      "rationaleAI": "As the first US president, Washington's establishment of executive precedents — two-term limit, peaceful transfer of power, executive neutrality — directly covers B.3 (the executive branch: its founding norms and institutional character) in the most influential presidential system."
     },
     {
       "articleTitle": "Augustus",
@@ -208,7 +208,7 @@
         "B.3",
         "B.1"
       ],
-      "rationaleAI": "Augustus's principate\u2014concentrating executive, military, and tribunician power while preserving republican facades\u2014directly covers A.2 (model type: principate as disguised autocracy) and B.3 (executive power in the Roman imperial system) alongside B.1 (fusion of legislative and executive)."
+      "rationaleAI": "Augustus's principate — concentrating executive, military, and tribunician power while preserving republican facades — directly covers A.2 (model type: principate as disguised autocracy) and B.3 (executive power in the Roman imperial system) alongside B.1 (fusion of legislative and executive)."
     },
     {
       "articleTitle": "Nigeria",
@@ -248,6 +248,15 @@
         "A.1"
       ],
       "rationaleAI": "The concept of the nation provides the definitional foundation for A.1.b (the national political system: both unitary and federal nation-states are organized around the nation as political unit), distinguishing civic and ethnic national frameworks."
+    },
+    {
+      "articleTitle": "Society",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 5: Human Society. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

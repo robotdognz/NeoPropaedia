@@ -39,7 +39,7 @@
         "A.4.d",
         "A.2"
       ],
-      "rationaleAI": "Directly addresses A.4.c (venerable sanction: hereditary succession and constitutional monarchy) and A.4.d (divine right theory in absolute monarchies); the transition to constitutional monarchy informs A.2 (state\u2013individual relationship and civil liberties)."
+      "rationaleAI": "Directly addresses A.4.c (venerable sanction: hereditary succession and constitutional monarchy) and A.4.d (divine right theory in absolute monarchies); the transition to constitutional monarchy informs A.2 (state–individual relationship and civil liberties)."
     },
     {
       "articleTitle": "Anarchism",
@@ -48,7 +48,7 @@
         "C.1",
         "A.2"
       ],
-      "rationaleAI": "Directly covers C.3.b.i as the anarchist ideological tradition, including its rejection of state authority and coercive hierarchy; its analysis of C.1 (political power as illegitimate) and A.2 (radical position on state\u2013individual relations) makes it central to the ideologies section."
+      "rationaleAI": "Directly covers C.3.b.i as the anarchist ideological tradition, including its rejection of state authority and coercive hierarchy; its analysis of C.1 (political power as illegitimate) and A.2 (radical position on state–individual relations) makes it central to the ideologies section."
     },
     {
       "articleTitle": "Liberalism",
@@ -68,7 +68,7 @@
         "A.2",
         "C.4"
       ],
-      "rationaleAI": "Directly covers C.2 (the concept of human rights including civil, political, economic, social, and cultural rights) and A.2 (state\u2013individual relationship through rights frameworks); the UDHR and international enforcement connect to C.4 (contemporary political issues)."
+      "rationaleAI": "Directly covers C.2 (the concept of human rights including civil, political, economic, social, and cultural rights) and A.2 (state–individual relationship through rights frameworks); the UDHR and international enforcement connect to C.4 (contemporary political issues)."
     },
     {
       "articleTitle": "John Locke",
@@ -103,7 +103,7 @@
         "C.1",
         "C.3.b"
       ],
-      "rationaleAI": "Negative and positive liberty (Berlin's framework) map directly to A.2 (the state\u2013individual relationship through rights and freedom) and C.1 (political power as constraint on or enabler of liberty); contested across the ideological traditions of C.3.b including liberalism, anarchism, and socialism."
+      "rationaleAI": "Negative and positive liberty (Berlin's framework) map directly to A.2 (the state–individual relationship through rights and freedom) and C.1 (political power as constraint on or enabler of liberty); contested across the ideological traditions of C.3.b including liberalism, anarchism, and socialism."
     },
     {
       "articleTitle": "Ideology",
@@ -164,10 +164,10 @@
       "relevantPathsAI": [
         "C.4.a"
       ],
-      "rationaleAI": "Directly addresses C.4.a (the problem of church and state: its background and contemporary form), covering hard secularism, soft secularism, and la\u00efcit\u00e9 as frameworks for separating religious from governmental authority in modern states."
+      "rationaleAI": "Directly addresses C.4.a (the problem of church and state: its background and contemporary form), covering hard secularism, soft secularism, and laïcité as frameworks for separating religious from governmental authority in modern states."
     },
     {
-      "articleTitle": "Niccol\u00f2 Machiavelli",
+      "articleTitle": "Niccolò Machiavelli",
       "relevantPathsAI": [
         "C.1",
         "A.4",
@@ -199,7 +199,7 @@
         "B.1",
         "A.2"
       ],
-      "rationaleAI": "Directly addresses the priority path B.1 (political action within small groups, villages, and communities) through Gemeinschaft/Gesellschaft analysis of community bonds, governance, and social capacity development; connects to A.2 via civil society and community-level state\u2013individual relations."
+      "rationaleAI": "Directly addresses the priority path B.1 (political action within small groups, villages, and communities) through Gemeinschaft/Gesellschaft analysis of community bonds, governance, and social capacity development; connects to A.2 via civil society and community-level state–individual relations."
     },
     {
       "articleTitle": "Politics",
@@ -208,7 +208,7 @@
         "C.1",
         "C.4"
       ],
-      "rationaleAI": "Provides the overarching framework for B (patterns of political action through parties, groups, public opinion) and C.1 (power distribution); covers the left\u2013right ideological spectrum that contextualizes C.3.b and contemporary political issues across C.4."
+      "rationaleAI": "Provides the overarching framework for B (patterns of political action through parties, groups, public opinion) and C.1 (power distribution); covers the left–right ideological spectrum that contextualizes C.3.b and contemporary political issues across C.4."
     },
     {
       "articleTitle": "Mary Wollstonecraft",
@@ -242,7 +242,7 @@
         "C.2",
         "A.2"
       ],
-      "rationaleAI": "Covers formal and substantive equality as dimensions of C.2 (human rights) including civil rights, equal access, and non-discrimination; grounded in Enlightenment liberalism and social contract theory that underpins A.2 (state\u2013individual relations)."
+      "rationaleAI": "Covers formal and substantive equality as dimensions of C.2 (human rights) including civil rights, equal access, and non-discrimination; grounded in Enlightenment liberalism and social contract theory that underpins A.2 (state–individual relations)."
     },
     {
       "articleTitle": "Imperialism",
@@ -283,7 +283,7 @@
         "A.2",
         "C.3.b"
       ],
-      "rationaleAI": "Property rights are a central axis of A.2 (state\u2013individual relations) and of ideological debates in C.3.b, from Locke's labor theory (underpinning liberalism) through Proudhon's 'property is theft' (anarchism) and Marx's critique (Marxism)."
+      "rationaleAI": "Property rights are a central axis of A.2 (state–individual relations) and of ideological debates in C.3.b, from Locke's labor theory (underpinning liberalism) through Proudhon's 'property is theft' (anarchism) and Marx's critique (Marxism)."
     },
     {
       "articleTitle": "Political science",
@@ -292,6 +292,16 @@
         "C"
       ],
       "rationaleAI": "Political science as an empirical discipline frames the study of political theory (A) and political concepts/ideologies (C); its subfields of political theory, comparative politics, and public policy directly overlap with the content of Section 541's outline."
+    },
+    {
+      "articleTitle": "Society",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 5: Human Society. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

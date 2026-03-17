@@ -55,7 +55,7 @@
       "relevantPathsAI": [
         "B.3.b"
       ],
-      "rationaleAI": "Charlemagne's administrative and educational reforms—standardized literacy, promotion of learning, and the Carolingian Renaissance—directly instantiate B.3.b (the cultural revival under Charlemagne and his successors)."
+      "rationaleAI": "Charlemagne's administrative and educational reforms — standardized literacy, promotion of learning, and the Carolingian Renaissance — directly instantiate B.3.b (the cultural revival under Charlemagne and his successors)."
     },
     {
       "articleTitle": "Age of Enlightenment",
@@ -87,14 +87,14 @@
       "relevantPathsAI": [
         "B.1.e"
       ],
-      "rationaleAI": "Ancient Rome's educational institutions—grammar schools, rhetoric, the cursus honorum, and Latin literary culture—directly address B.1.e (ancient Roman education)."
+      "rationaleAI": "Ancient Rome's educational institutions — grammar schools, rhetoric, the cursus honorum, and Latin literary culture — directly address B.1.e (ancient Roman education)."
     },
     {
       "articleTitle": "Ancient Greece",
       "relevantPathsAI": [
         "B.1.d"
       ],
-      "rationaleAI": "Ancient Greek education—the paideia, Socratic method, Platonic Academy, Aristotle's Lyceum, and gymnasium culture—directly addresses B.1.d (ancient Greek education)."
+      "rationaleAI": "Ancient Greek education — the paideia, Socratic method, Platonic Academy, Aristotle's Lyceum, and gymnasium culture — directly addresses B.1.d (ancient Greek education)."
     },
     {
       "articleTitle": "Confucius",
@@ -176,7 +176,16 @@
       "relevantPathsAI": [
         "B.7.b"
       ],
-      "rationaleAI": "The Romantic movement generated significant educational reform thinking—Pestalozzi, Froebel, the new pedagogy emphasizing child-centered learning—that directly maps to B.7.b (early reform movements and the new pedagogy)."
+      "rationaleAI": "The Romantic movement generated significant educational reform thinking — Pestalozzi, Froebel, the new pedagogy emphasizing child-centered learning — that directly maps to B.7.b (early reform movements and the new pedagogy)."
+    },
+    {
+      "articleTitle": "Society",
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 5: Human Society. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

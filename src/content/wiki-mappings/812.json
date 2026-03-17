@@ -43,7 +43,7 @@
         "C.3",
         "C.4"
       ],
-      "rationaleAI": "The Catholic Church provides comprehensive coverage of B (religious institutions): hierarchical organization (B.2), sainthood (B.3), religious education (B.4), sacred writings (C.1), iconic art and architecture (C.2), seven sacraments (C.3), and distinctive vestments and liturgical dress (C.4 \u2014 priority path)."
+      "rationaleAI": "The Catholic Church provides comprehensive coverage of B (religious institutions): hierarchical organization (B.2), sainthood (B.3), religious education (B.4), sacred writings (C.1), iconic art and architecture (C.2), seven sacraments (C.3), and distinctive vestments and liturgical dress (C.4 — priority path)."
     },
     {
       "articleTitle": "Jesus",
@@ -78,7 +78,7 @@
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "Prayer is explicitly listed as A.1.a in section 812's outline; the article covers all forms of religious prayer across traditions \u2014 supplication, intercession, thanksgiving, liturgical, and contemplative \u2014 with full topical coverage."
+      "rationaleAI": "Prayer is explicitly listed as A.1.a in section 812's outline; the article covers all forms of religious prayer across traditions — supplication, intercession, thanksgiving, liturgical, and contemplative — with full topical coverage."
     },
     {
       "articleTitle": "Festival",
@@ -128,7 +128,7 @@
         "B.1",
         "A.3.a"
       ],
-      "rationaleAI": "The Code of Hammurabi fuses royal and divine authority in a theocratic legal framework (B.1 \u2014 sacred kingships), and connects to religious regulation of social behaviour through divinely sanctioned law (A.3.a)."
+      "rationaleAI": "The Code of Hammurabi fuses royal and divine authority in a theocratic legal framework (B.1 — sacred kingships), and connects to religious regulation of social behaviour through divinely sanctioned law (A.3.a)."
     },
     {
       "articleTitle": "Ramesses II",
@@ -179,7 +179,7 @@
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Clothing explicitly covers religious dress codes across traditions \u2014 the priority coverage path C.4 (religious dress and vestments) \u2014 including Catholic vestments, Islamic hijab, Jewish kippah, Hindu sacred thread, and Buddhist robes as cultural and religious markers."
+      "rationaleAI": "Clothing explicitly covers religious dress codes across traditions — the priority coverage path C.4 (religious dress and vestments) — including Catholic vestments, Islamic hijab, Jewish kippah, Hindu sacred thread, and Buddhist robes as cultural and religious markers."
     },
     {
       "articleTitle": "Cyrus the Great",
@@ -212,7 +212,7 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Michelangelo's Sistine Chapel ceiling, Last Judgment, Piet\u00e0, and St. Peter's Basilica dome are paradigmatic examples of religious art and architecture (C.2), covering iconography, religious symbolism, and papal artistic patronage."
+      "rationaleAI": "Michelangelo's Sistine Chapel ceiling, Last Judgment, Pietà, and St. Peter's Basilica dome are paradigmatic examples of religious art and architecture (C.2), covering iconography, religious symbolism, and papal artistic patronage."
     },
     {
       "articleTitle": "Thomas Aquinas",
@@ -249,7 +249,7 @@
         "B.2",
         "C.2"
       ],
-      "rationaleAI": "Jerusalem contains the holiest sites of three Abrahamic religions \u2014 the Western Wall, Dome of the Rock, Church of the Holy Sepulchre \u2014 directly relevant to pilgrimage (A.1.c), religious institutional centers (B.2), and sacred architecture and iconography (C.2)."
+      "rationaleAI": "Jerusalem contains the holiest sites of three Abrahamic religions — the Western Wall, Dome of the Rock, Church of the Holy Sepulchre — directly relevant to pilgrimage (A.1.c), religious institutional centers (B.2), and sacred architecture and iconography (C.2)."
     },
     {
       "articleTitle": "Bhagavad Gita",
@@ -272,6 +272,16 @@
         "C.1"
       ],
       "rationaleAI": "The Tale of Genji incorporates Buddhist themes of impermanence (mono no aware) as a thread throughout its narrative; Murasaki Shikibu's work reflects Heian Buddhist religious culture expressed through literary-religious writing, placing it at the intersection of sacred narrative and C.1."
+    },
+    {
+      "articleTitle": "Philosophy",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 8: Religion. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

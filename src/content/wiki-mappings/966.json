@@ -2,7 +2,7 @@
   "sectionCode": "966",
   "mappings": [
     {
-      "articleTitle": "Sim\u00f3n Bol\u00edvar",
+      "articleTitle": "Simón Bolívar",
       "relevantPathsAI": [
         "A.2",
         "A.2.a",
@@ -14,7 +14,7 @@
         "E.1",
         "E.2"
       ],
-      "rationaleAI": "Bol\u00edvar commanded the liberation campaigns across Venezuela, Colombia, Ecuador, Panama, Peru, and Bolivia, directly covering A.2.a (the struggle for independence in New Granada), A.2.c\u2013d (liberation of Peru and Bolivia), and the Venezuelan independence movement in D.f\u2013D.a. His founding of Gran Colombia is central to the entire D section on successor states."
+      "rationaleAI": "Bolívar commanded the liberation campaigns across Venezuela, Colombia, Ecuador, Panama, Peru, and Bolivia, directly covering A.2.a (the struggle for independence in New Granada), A.2.c–d (liberation of Peru and Bolivia), and the Venezuelan independence movement in D.f–D.a. His founding of Gran Colombia is central to the entire D section on successor states."
     },
     {
       "articleTitle": "George Washington",
@@ -46,14 +46,14 @@
         "F",
         "G"
       ],
-      "rationaleAI": "The Spanish Empire is the colonial backdrop against which the entire section operates \u2014 the independence movements of A, the post-independence political struggles in B through G, and the loss of the Cuban and Caribbean colonies in C.2.c all occur within or against its framework."
+      "rationaleAI": "The Spanish Empire is the colonial backdrop against which the entire section operates — the independence movements of A, the post-independence political struggles in B through G, and the loss of the Cuban and Caribbean colonies in C.2.c all occur within or against its framework."
     },
     {
       "articleTitle": "American Revolution",
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "The American Revolution (1765\u20131783) is explicitly cited in A.1.a as one of the direct ideological inspirations for Latin American independence movements, alongside the Enlightenment and the French Revolution."
+      "rationaleAI": "The American Revolution (1765–1783) is explicitly cited in A.1.a as one of the direct ideological inspirations for Latin American independence movements, alongside the Enlightenment and the French Revolution."
     },
     {
       "articleTitle": "Mexico",
@@ -72,7 +72,7 @@
         "B.3.b",
         "B.4"
       ],
-      "rationaleAI": "Mexico directly covers the entirety of sections A.3 (Mexican War of Independence) and B (Mexico from independence through the 1917 Revolution), including Iturbide, Santa Anna, Ju\u00e1rez, the French intervention, the D\u00edaz dictatorship, and the revolutionary period."
+      "rationaleAI": "Mexico directly covers the entirety of sections A.3 (Mexican War of Independence) and B (Mexico from independence through the 1917 Revolution), including Iturbide, Santa Anna, Juárez, the French intervention, the Díaz dictatorship, and the revolutionary period."
     },
     {
       "articleTitle": "Atlantic slave trade",
@@ -110,7 +110,7 @@
         "G",
         "H"
       ],
-      "rationaleAI": "South America provides the continental framework for sections D through H, covering the independence movements, successor states of Gran Colombia, Andean nations, Chile, the R\u00edo de la Plata states, and Brazil \u2014 the bulk of the outline's geographic coverage."
+      "rationaleAI": "South America provides the continental framework for sections D through H, covering the independence movements, successor states of Gran Colombia, Andean nations, Chile, the Río de la Plata states, and Brazil — the bulk of the outline's geographic coverage."
     },
     {
       "articleTitle": "British Empire",
@@ -129,7 +129,7 @@
         "G.1.b",
         "G.1.c"
       ],
-      "rationaleAI": "Argentina covers the establishment of the United Provinces of the R\u00edo de la Plata in A.2.b and the entirety of G.1, including the Rosas confederation, national consolidation under Mitre and Roca, the rise of radicalism, and Irigoyen's presidency."
+      "rationaleAI": "Argentina covers the establishment of the United Provinces of the Río de la Plata in A.2.b and the entirety of G.1, including the Rosas confederation, national consolidation under Mitre and Roca, the rise of radicalism, and Irigoyen's presidency."
     },
     {
       "articleTitle": "Colombia",
@@ -152,7 +152,7 @@
         "G",
         "H"
       ],
-      "rationaleAI": "History of South America directly covers the Iberian colonial period, independence movements of the early 19th century, and 20th-century political history across sections A.2 and D\u2013H, providing an overarching narrative connecting all the South American successor states."
+      "rationaleAI": "History of South America directly covers the Iberian colonial period, independence movements of the early 19th century, and 20th-century political history across sections A.2 and D–H, providing an overarching narrative connecting all the South American successor states."
     },
     {
       "articleTitle": "Brazil",
@@ -202,7 +202,7 @@
         "C.1.h",
         "C.2"
       ],
-      "rationaleAI": "Imperialism covers U.S. military intervention and economic dominance \u2014 directly relevant to C.1.h (U.S. economic and military interests in Central America) and C.2.i.iii (Cuba as a U.S. protectorate with military occupation from 1899)."
+      "rationaleAI": "Imperialism covers U.S. military intervention and economic dominance — directly relevant to C.1.h (U.S. economic and military interests in Central America) and C.2.i.iii (Cuba as a U.S. protectorate with military occupation from 1899)."
     },
     {
       "articleTitle": "Mesoamerica",
@@ -210,7 +210,22 @@
         "A.3",
         "B.1"
       ],
-      "rationaleAI": "Mesoamerica's pre-Columbian civilizations and their transformation under Spanish colonization provide essential background for understanding the social composition \u2014 including Indian discontent \u2014 cited in A.1.a, and the Indigenous social context for Mexico's independence (A.3) and subsequent history (B.1)."
+      "rationaleAI": "Mesoamerica's pre-Columbian civilizations and their transformation under Spanish colonization provide essential background for understanding the social composition — including Indian discontent — cited in A.1.a, and the Indigenous social context for Mexico's independence (A.3) and subsequent history (B.1)."
+    },
+    {
+      "articleTitle": "Human history",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 9: The History of Mankind. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

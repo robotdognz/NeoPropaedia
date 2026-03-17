@@ -33,7 +33,7 @@
         "C.2.a",
         "C.3.c"
       ],
-      "rationaleAI": "Covers space launch vehicles \u2014 multistage rocket design, propellant types, staging, and the physics enabling orbital and escape velocity (C.2.a, C.3.c). Foundational technology for all space programs."
+      "rationaleAI": "Covers space launch vehicles — multistage rocket design, propellant types, staging, and the physics enabling orbital and escape velocity (C.2.a, C.3.c). Foundational technology for all space programs."
     },
     {
       "articleTitle": "Space exploration",
@@ -95,7 +95,7 @@
       "relevantPathsAI": [
         "C.2.b"
       ],
-      "rationaleAI": "Covers moons of planets across the solar system \u2014 primary targets of unmanned space probes (C.2.b.iii) \u2014 including geologically active bodies like Europa and Titan that are targets of exploration missions."
+      "rationaleAI": "Covers moons of planets across the solar system — primary targets of unmanned space probes (C.2.b.iii) — including geologically active bodies like Europa and Titan that are targets of exploration missions."
     },
     {
       "articleTitle": "Geology",
@@ -121,7 +121,7 @@
         "C.2",
         "C.2.c"
       ],
-      "rationaleAI": "The Soviet space programme \u2014 Sputnik 1, Gagarin, Vostok, Voskhod, and Soyuz/Salyut \u2014 is explicitly named in the outline (C.2.c) and was the primary competitor driving the Cold War Space Race (C.1, C.2)."
+      "rationaleAI": "The Soviet space programme — Sputnik 1, Gagarin, Vostok, Voskhod, and Soyuz/Salyut — is explicitly named in the outline (C.2.c) and was the primary competitor driving the Cold War Space Race (C.1, C.2)."
     },
     {
       "articleTitle": "Antarctica",
@@ -138,7 +138,7 @@
         "A.1.c",
         "A.2.b"
       ],
-      "rationaleAI": "Civil engineering's geotechnical sub-discipline directly covers exploration for construction purposes \u2014 planning tunnels, foundations, and other works (A.1.c) \u2014 using on-site boring, excavation, and soil/rock sampling (A.2.b)."
+      "rationaleAI": "Civil engineering's geotechnical sub-discipline directly covers exploration for construction purposes — planning tunnels, foundations, and other works (A.1.c) — using on-site boring, excavation, and soil/rock sampling (A.2.b)."
     },
     {
       "articleTitle": "Pacific Ocean",
@@ -163,6 +163,17 @@
         "C.2.b"
       ],
       "rationaleAI": "AI is increasingly integrated into autonomous spacecraft operations (C.2.b), remote sensing data analysis, and oceanographic measurement systems (B.3). Moderate overlap as enabling technology for modern exploration."
+    },
+    {
+      "articleTitle": "Technology",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 7: Technology. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

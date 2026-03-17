@@ -7,7 +7,7 @@
         "D.3",
         "D.3.a"
       ],
-      "rationaleAI": "Covers the legal structures of business entities \u2014 sole proprietorships, partnerships, corporations, cooperatives \u2014 and their regulatory frameworks including intellectual property, commercial regulation, and taxation, which map directly to the law of business associations (D.3) and its principal forms (D.3.a)."
+      "rationaleAI": "Covers the legal structures of business entities — sole proprietorships, partnerships, corporations, cooperatives — and their regulatory frameworks including intellectual property, commercial regulation, and taxation, which map directly to the law of business associations (D.3) and its principal forms (D.3.a)."
     },
     {
       "articleTitle": "Corporation",
@@ -16,7 +16,7 @@
         "D.3.b",
         "D.3.c"
       ],
-      "rationaleAI": "Directly covers corporate law \u2014 legal personality, limited liability, governance separation of ownership and control via board of directors (D.3.b), and corporate finance including equity and debt capital structures (D.3.c) \u2014 making it the central article for D.3.a.ii and surrounding paths."
+      "rationaleAI": "Directly covers corporate law — legal personality, limited liability, governance separation of ownership and control via board of directors (D.3.b), and corporate finance including equity and debt capital structures (D.3.c) — making it the central article for D.3.a.ii and surrounding paths."
     },
     {
       "articleTitle": "Law",
@@ -27,7 +27,7 @@
         "D",
         "E"
       ],
-      "rationaleAI": "Provides a comprehensive survey of private law including property, contracts, torts, trusts, and family law (A\u2013D), and legal procedure (E), covering all major divisions of Section 553 at a high level."
+      "rationaleAI": "Provides a comprehensive survey of private law including property, contracts, torts, trusts, and family law (A–D), and legal procedure (E), covering all major divisions of Section 553 at a high level."
     },
     {
       "articleTitle": "Property",
@@ -38,7 +38,7 @@
         "A.4",
         "A.5"
       ],
-      "rationaleAI": "Directly and substantively covers property law: historical development of property rights (A.1), methods of acquiring property (A.2), types of ownership \u2014 private, public, collective (A.3), real and personal property distinctions (A.4), and intellectual property as intangible rights (A.5)."
+      "rationaleAI": "Directly and substantively covers property law: historical development of property rights (A.1), methods of acquiring property (A.2), types of ownership — private, public, collective (A.3), real and personal property distinctions (A.4), and intellectual property as intangible rights (A.5)."
     },
     {
       "articleTitle": "Family",
@@ -73,7 +73,7 @@
       "relevantPathsAI": [
         "D.3.c"
       ],
-      "rationaleAI": "Covers the legal and financial structures of corporate finance \u2014 equity (common and preferred shares), debt instruments (bonds and debentures), and capital allocation \u2014 directly matching the structure of corporate finance outlined in D.3.c."
+      "rationaleAI": "Covers the legal and financial structures of corporate finance — equity (common and preferred shares), debt instruments (bonds and debentures), and capital allocation — directly matching the structure of corporate finance outlined in D.3.c."
     },
     {
       "articleTitle": "Insurance",
@@ -81,7 +81,7 @@
         "D.1",
         "D.2"
       ],
-      "rationaleAI": "Insurance is a contract \u2014 governed by the law of contracts (D.1) \u2014 and a major category of commercial transaction subject to commercial law (D.2); contract law principles including offer, consideration, and indemnity are central to insurance."
+      "rationaleAI": "Insurance is a contract — governed by the law of contracts (D.1) — and a major category of commercial transaction subject to commercial law (D.2); contract law principles including offer, consideration, and indemnity are central to insurance."
     },
     {
       "articleTitle": "Privacy",
@@ -107,7 +107,7 @@
         "A.4",
         "A.6"
       ],
-      "rationaleAI": "Buildings are real property improvements (A.4) whose ownership and tenure \u2014 including freehold, leasehold, and mixed-use ownership \u2014 connect to laws concerning the temporal division of property rights and distinctions between real and personal property (A.6)."
+      "rationaleAI": "Buildings are real property improvements (A.4) whose ownership and tenure — including freehold, leasehold, and mixed-use ownership — connect to laws concerning the temporal division of property rights and distinctions between real and personal property (A.6)."
     },
     {
       "articleTitle": "Trade",
@@ -152,7 +152,7 @@
         "D.2",
         "D.2.a"
       ],
-      "rationaleAI": "Money functions as legal tender and medium of exchange in commercial transactions (D.2), and negotiable instruments such as promissory notes, bills of exchange, and checks \u2014 transfer mechanisms for money \u2014 are the specific subject of D.2.a.ii."
+      "rationaleAI": "Money functions as legal tender and medium of exchange in commercial transactions (D.2), and negotiable instruments such as promissory notes, bills of exchange, and checks — transfer mechanisms for money — are the specific subject of D.2.a.ii."
     },
     {
       "articleTitle": "Slavery",
@@ -160,7 +160,19 @@
         "D.4",
         "A.1"
       ],
-      "rationaleAI": "Slavery represents the historical negation of labor law rights (D.4) and its abolition marks a fundamental development in property rights history \u2014 slaves were legally classified as property \u2014 making it relevant to historical development of property rights (A.1)."
+      "rationaleAI": "Slavery represents the historical negation of labor law rights (D.4) and its abolition marks a fundamental development in property rights history — slaves were legally classified as property — making it relevant to historical development of property rights (A.1)."
+    },
+    {
+      "articleTitle": "Society",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 5: Human Society. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

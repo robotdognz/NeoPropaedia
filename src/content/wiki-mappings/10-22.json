@@ -37,7 +37,7 @@
         "D.5",
         "D.6"
       ],
-      "rationaleAI": "Directly maps to section D (Analysis), covering real analysis, complex analysis, functional analysis, harmonic analysis, differential equations, measure theory, and probability \u2014 the core content of D.1 through D.6."
+      "rationaleAI": "Directly maps to section D (Analysis), covering real analysis, complex analysis, functional analysis, harmonic analysis, differential equations, measure theory, and probability — the core content of D.1 through D.6."
     },
     {
       "articleTitle": "Algebra",
@@ -64,7 +64,7 @@
         "E.2.d",
         "E.2.e"
       ],
-      "rationaleAI": "Directly covers number theory with all subdivisions: elementary (E.2.a), algebraic (E.2.b), analytic (E.2.c), geometric (E.2.d), and probabilistic (E.2.e) \u2014 a precise match to the full E.2 sub-tree."
+      "rationaleAI": "Directly covers number theory with all subdivisions: elementary (E.2.a), algebraic (E.2.b), analytic (E.2.c), geometric (E.2.d), and probabilistic (E.2.e) — a precise match to the full E.2 sub-tree."
     },
     {
       "articleTitle": "Line (geometry)",
@@ -98,7 +98,7 @@
         "F.2.e",
         "F.3"
       ],
-      "rationaleAI": "Directly covers general topology (F.1), topological groups and differential topology (F.2), and algebraic topology (F.3) including fundamental group, homology, cohomology \u2014 the full content of section F."
+      "rationaleAI": "Directly covers general topology (F.1), topological groups and differential topology (F.2), and algebraic topology (F.3) including fundamental group, homology, cohomology — the full content of section F."
     },
     {
       "articleTitle": "Exponentiation",
@@ -177,12 +177,12 @@
       "rationaleAI": "Surveys number systems (natural, integer, rational, real, complex, p-adic, transfinite), numeral systems and notation (B.1.c), number properties foundational to real analysis (D.1.b) and number theory (E.2)."
     },
     {
-      "articleTitle": "Kurt G\u00f6del",
+      "articleTitle": "Kurt Gödel",
       "relevantPathsAI": [
         "A.3.b",
         "A.3.c"
       ],
-      "rationaleAI": "G\u00f6del's incompleteness theorems directly address the limitations of axiomatic set theory (A.3.b) and the profound changes and present status of axiomatic set theory resulting from recent discoveries (A.3.c)."
+      "rationaleAI": "Gödel's incompleteness theorems directly address the limitations of axiomatic set theory (A.3.b) and the profound changes and present status of axiomatic set theory resulting from recent discoveries (A.3.c)."
     },
     {
       "articleTitle": "Prime number",
@@ -312,7 +312,7 @@
         "B.4.c",
         "B.4.d"
       ],
-      "rationaleAI": "Noether's foundational work in abstract algebra \u2014 ideals, rings, modules, and chain conditions \u2014 directly maps to algebraic structures (B.4), particularly groups (B.4.b), fields (B.4.c), and rings (B.4.d)."
+      "rationaleAI": "Noether's foundational work in abstract algebra — ideals, rings, modules, and chain conditions — directly maps to algebraic structures (B.4), particularly groups (B.4.b), fields (B.4.c), and rings (B.4.d)."
     },
     {
       "articleTitle": "Mathematical proof",
@@ -321,7 +321,7 @@
         "A.3.a",
         "A.3.b"
       ],
-      "rationaleAI": "Mathematical proof is the method underlying axiomatic set theory (A.3) and its postulates (A.3.a); G\u00f6del's incompleteness, which limits proof, is addressed at A.3.b (limitations of axiomatic set theory)."
+      "rationaleAI": "Mathematical proof is the method underlying axiomatic set theory (A.3) and its postulates (A.3.a); Gödel's incompleteness, which limits proof, is addressed at A.3.b (limitations of axiomatic set theory)."
     },
     {
       "articleTitle": "Series (mathematics)",
@@ -339,7 +339,7 @@
       "relevantPathsAI": [
         "B.1.e"
       ],
-      "rationaleAI": "Logarithms are explicitly listed at B.1.e as a sub-topic of arithmetic: their formal definition and use to reduce multiplication/division to addition/subtraction \u2014 a direct and precise match."
+      "rationaleAI": "Logarithms are explicitly listed at B.1.e as a sub-topic of arithmetic: their formal definition and use to reduce multiplication/division to addition/subtraction — a direct and precise match."
     },
     {
       "articleTitle": "Angle",
@@ -406,7 +406,7 @@
         "E",
         "F"
       ],
-      "rationaleAI": "The overarching mathematics article covers all major branches of section 10-22 \u2014 set theory, algebra, geometry, analysis, combinatorics/number theory, and topology \u2014 at the parent-path level."
+      "rationaleAI": "The overarching mathematics article covers all major branches of section 10-22 — set theory, algebra, geometry, analysis, combinatorics/number theory, and topology — at the parent-path level."
     },
     {
       "articleTitle": "Pi",
@@ -448,7 +448,7 @@
       "rationaleAI": "The circle is a fundamental object of Euclidean geometry (C.1), plane analytic geometry (C.4.a), a named curve studied in mathematics (C.4.e), and the 1-sphere fundamental to algebraic topology (F.3)."
     },
     {
-      "articleTitle": "Ren\u00e9 Descartes",
+      "articleTitle": "René Descartes",
       "relevantPathsAI": [
         "C.4",
         "C.4.a",
@@ -464,6 +464,32 @@
         "B.2.b"
       ],
       "rationaleAI": "Variables are central to elementary and multivariate algebra (B.2), introduced as an extension and generalization of arithmetic (B.2.a) and underlying the basic algebraic properties covered at B.2.b."
+    },
+    {
+      "articleTitle": "Science",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 10: The Branches of Knowledge. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
+    },
+    {
+      "articleTitle": "Philosophy",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 10: The Branches of Knowledge. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",

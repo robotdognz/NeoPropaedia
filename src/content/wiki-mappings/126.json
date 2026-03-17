@@ -37,7 +37,7 @@
       "relevantPathsAI": [
         "A.3.a"
       ],
-      "rationaleAI": "Motion covers kinematics (A.3.a) \u2014 velocity, acceleration, rotation about a fixed axis, circular motion, simple harmonic motion, and relative motion \u2014 all of which are the explicit sub-paths of A.3.a in the outline."
+      "rationaleAI": "Motion covers kinematics (A.3.a) — velocity, acceleration, rotation about a fixed axis, circular motion, simple harmonic motion, and relative motion — all of which are the explicit sub-paths of A.3.a in the outline."
     },
     {
       "articleTitle": "Momentum",
@@ -84,7 +84,7 @@
         "C.2",
         "C.3"
       ],
-      "rationaleAI": "Einstein's special and general relativity theories constitute the content of Section C; the article covers the postulates, kinematics, and mass-energy equivalence central to relativistic mechanics (C.1\u2013C.3)."
+      "rationaleAI": "Einstein's special and general relativity theories constitute the content of Section C; the article covers the postulates, kinematics, and mass-energy equivalence central to relativistic mechanics (C.1–C.3)."
     },
     {
       "articleTitle": "Wave",
@@ -102,7 +102,7 @@
         "F.3",
         "F.3.d"
       ],
-      "rationaleAI": "Gas is a fluid governed by ideal gas laws and kinetic theory, directly relevant to fluid mechanics and gas dynamics (F.1 general properties, F.3 fluid in motion including compressible flow at F.3.d); turbulence and viscosity also match F.3.b\u2013c."
+      "rationaleAI": "Gas is a fluid governed by ideal gas laws and kinetic theory, directly relevant to fluid mechanics and gas dynamics (F.1 general properties, F.3 fluid in motion including compressible flow at F.3.d); turbulence and viscosity also match F.3.b–c."
     },
     {
       "articleTitle": "Liquid",
@@ -111,7 +111,7 @@
         "F.2",
         "F.3"
       ],
-      "rationaleAI": "Liquid covers surface tension, viscosity, buoyancy, and incompressible flow \u2014 the key properties addressed in fluid statics (F.2) and hydrodynamics (F.3); liquids are the canonical fluid studied in fluid mechanics."
+      "rationaleAI": "Liquid covers surface tension, viscosity, buoyancy, and incompressible flow — the key properties addressed in fluid statics (F.2) and hydrodynamics (F.3); liquids are the canonical fluid studied in fluid mechanics."
     },
     {
       "articleTitle": "Isaac Newton",
@@ -136,7 +136,7 @@
         "F.2",
         "F.2.b"
       ],
-      "rationaleAI": "Archimedes established foundational principles of statics (lever and center of gravity, A.2) and hydrostatics including the principle of buoyancy (F.2, F.2.b) \u2014 two uncovered or lightly covered areas in the outline."
+      "rationaleAI": "Archimedes established foundational principles of statics (lever and center of gravity, A.2) and hydrostatics including the principle of buoyancy (F.2, F.2.b) — two uncovered or lightly covered areas in the outline."
     },
     {
       "articleTitle": "Steel",
@@ -206,6 +206,20 @@
         "A.3.e"
       ],
       "rationaleAI": "Engines convert energy forms into mechanical energy (work and power, A.3.d) and represent the most prevalent application of energy transformation chains (A.3.e.ii); heat engines are directly governed by thermodynamic-mechanical principles."
+    },
+    {
+      "articleTitle": "Science",
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G"
+      ],
+      "rationaleAI": "Broad Level 1 article providing foundational context for Part 1: Matter and Energy. Covers the overarching themes and concepts that frame this section's subject matter.",
+      "_levelOnly": 1
     }
   ],
   "_curatedBy": "ai",
