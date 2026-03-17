@@ -59,9 +59,10 @@ const partTextColors: Record<number, string> = {
           {' '}&middot;{' '}
           Division {division.romanNumeral}
         </p>
-        <h1 class="text-4xl font-serif font-bold text-gray-900">
+        <h1 class="text-4xl font-serif font-bold text-gray-900" data-pagefind-meta={`title:Division ${division.romanNumeral}: ${division.title}`}>
           {division.title}
         </h1>
+        <span data-pagefind-meta="page_type:Division" class="hidden"></span>
       </header>
 
       <NotesDisclosure

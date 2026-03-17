@@ -18,6 +18,7 @@ interface SearchResult {
   url: string;
   title: string;
   pageTitle?: string;
+  pageType?: string;
   excerpt: string;
 }
 
@@ -29,7 +30,7 @@ interface PagefindSubResult {
 
 interface PagefindResultData {
   url: string;
-  meta?: { title?: string };
+  meta?: { title?: string; page_type?: string };
   excerpt: string;
   raw_content?: string;
   sub_results?: PagefindSubResult[];
@@ -90,6 +91,7 @@ function flattenResults(items: PagefindResultData[], query: string) {
   const tokens = getQueryTokens(query);
   const flattened = items.flatMap((item) => {
     const pageTitle = item.meta?.title || 'Untitled';
+    const pageType = item.meta?.page_type;
     const pageSearchableText = [pageTitle, stripHtml(item.excerpt), item.raw_content ?? ''].join(' ');
     const subResults = (item.sub_results ?? [])
       .filter((subResult) => {
@@ -100,6 +102,7 @@ function flattenResults(items: PagefindResultData[], query: string) {
         url: buildHighlightedUrl(subResult.url, query),
         title: subResult.title || pageTitle,
         pageTitle: subResult.title && subResult.title !== pageTitle ? pageTitle : undefined,
+        pageType,
         excerpt: subResult.excerpt,
       }));
 
@@ -114,6 +117,7 @@ function flattenResults(items: PagefindResultData[], query: string) {
     return [{
       url: buildHighlightedUrl(item.url, query),
       title: pageTitle,
+      pageType,
       excerpt: item.excerpt,
     }];
   });
@@ -305,9 +309,16 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
                       i === selectedIndex ? 'bg-indigo-50' : 'hover:bg-gray-50'
                     }`}
                   >
-                    <p class="text-sm font-semibold text-gray-900 font-sans">{result.title}</p>
+                    <div class="flex items-center gap-2">
+                      {result.pageType && (
+                        <span class="shrink-0 rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-sans font-semibold uppercase tracking-wide text-slate-500">
+                          {result.pageType}
+                        </span>
+                      )}
+                      <p class="text-sm font-semibold text-gray-900 font-sans">{result.title}</p>
+                    </div>
                     {result.pageTitle && (
-                      <p class="mt-1 text-[11px] uppercase tracking-wide text-gray-400 font-sans">
+                      <p class="mt-0.5 text-[11px] uppercase tracking-wide text-gray-400 font-sans">
                         {result.pageTitle}
                       </p>
                     )}
@@ -331,8 +342,7 @@ export default function SearchDialog({ baseUrl }: SearchDialogProps) {
         </div>
 
         {/* Footer */}
-        <div class="border-t border-gray-100 px-4 py-2 flex items-center justify-between text-xs text-gray-400">
-          <span class="font-sans">Press <kbd class="px-1 py-0.5 bg-gray-100 rounded border border-gray-200 font-mono">/</kbd> to search</span>
+        <div class="border-t border-gray-100 px-4 py-2 flex items-center justify-end text-xs text-gray-400">
           <div class="flex gap-2">
             <kbd class="px-1.5 py-0.5 bg-gray-100 rounded border border-gray-200 font-mono">&uarr;&darr;</kbd>
             <span>to browse</span>

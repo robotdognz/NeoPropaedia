@@ -85,7 +85,8 @@ const levelLabel = levelLabels[article.lowestLevel] || 'Level 3';
       <div class="flex-1 min-w-0">
         <header>
           <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-gray-500">Wikipedia Vital Article</p>
-          <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl">{article.displayTitle || article.title}</h1>
+          <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl" data-pagefind-meta={`title:${article.displayTitle || article.title}`}>{article.displayTitle || article.title}</h1>
+          <span data-pagefind-meta="page_type:Wikipedia" class="hidden"></span>
           <div class="mt-2 flex flex-wrap gap-2">
             {article.category && (
               <span class="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">{article.category}</span>

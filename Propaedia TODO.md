@@ -43,8 +43,7 @@ AI Summary Scorecard:
                                                             
   Top 5 Recommended Improvements                                                                                                                            
                                                             
-  1. Add onboarding/guided entry — a "Start exploring" flow or featured sections for new users                                                              
-  2. Add next/previous section navigation — let users browse sequentially without backtracking
-  3. Add basic test coverage — at least E2E tests for critical paths (search, navigation, outline filtering)                                                
-  4. Add ESLint + Prettier — enforce consistency as the codebase grows                                                                                      
-  5. Audit the wikipedia-catalog.json payload — ensure it's not shipped to the client at full size; consider splitting or lazy-loading 
+  1. Add onboarding/guided entry — a "Start exploring" flow or featured sections for new users
+  2. Add basic test coverage — at least E2E tests for critical paths (search, navigation, outline filtering)                                                
+  3. Add ESLint + Prettier — enforce consistency as the codebase grows                                                                                      
+  4. Audit the wikipedia-catalog.json payload — ensure it's not shipped to the client at full size; consider splitting or lazy-loading 

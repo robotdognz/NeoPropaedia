@@ -77,9 +77,10 @@ const bgColors: Record<number, string> = {
             Part {PART_NAMES[part.partNumber]}
           </span>
         </div>
-        <h1 class="text-4xl font-serif font-bold text-gray-900 mb-2">
+        <h1 class="text-4xl font-serif font-bold text-gray-900 mb-2" data-pagefind-meta={`title:Part ${PART_NAMES[part.partNumber]}: ${part.title}`}>
           {part.title}
         </h1>
+        <span data-pagefind-meta="page_type:Part" class="hidden"></span>
         {part.subtitle && (
           <p class="text-lg text-gray-600">{part.subtitle}</p>
         )}

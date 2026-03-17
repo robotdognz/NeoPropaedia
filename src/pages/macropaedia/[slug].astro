@@ -91,7 +91,8 @@ const rings = [
       <div class="flex-1 min-w-0">
         <header>
           <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-gray-500">Macropaedia Article</p>
-          <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl">{article.title}</h1>
+          <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl" data-pagefind-meta={`title:${article.title}`}>{article.title}</h1>
+          <span data-pagefind-meta="page_type:Macropaedia" class="hidden"></span>
         </header>
       </div>
 

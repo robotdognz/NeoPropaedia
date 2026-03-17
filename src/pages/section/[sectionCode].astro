@@ -151,9 +151,10 @@ try {
           {' '}&middot;{' '}
           Section {section.sectionCodeDisplay}
         </p>
-        <h1 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900">
+        <h1 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900" data-pagefind-meta={`title:${section.sectionCodeDisplay}: ${section.title}`}>
           {section.title}
         </h1>
+        <span data-pagefind-meta="page_type:Section" class="hidden"></span>
       </header>
 
       <!-- Subject Outline -->
