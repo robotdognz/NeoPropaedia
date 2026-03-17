@@ -960,7 +960,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
     <div class="space-y-3 sm:space-y-4">
       <div class="flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2 shadow-sm sm:rounded-2xl sm:px-4 sm:py-2.5">
         <span
-          class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white"
+          class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full font-sans text-xs font-bold leading-none text-white"
           style={{ backgroundColor: selectedPart.colorHex }}
         >
           {selectedPart.partNumber}
