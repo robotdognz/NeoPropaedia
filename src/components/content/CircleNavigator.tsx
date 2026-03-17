@@ -48,6 +48,7 @@ const DRAG_DISTANCE_THRESHOLD = 6;
 const CLICK_DURATION_THRESHOLD_MS = 250;
 const CENTER_PREVIEW_THRESHOLD = CENTER_DISC_RADIUS + 2;
 const CENTER_COMMIT_THRESHOLD = CENTER_DISC_RADIUS - 16;
+const CENTER_EXIT_HYSTERESIS = 20;
 const SELECTION_OUTLINE_WIDTH = 4;
 const FOCUS_RING_WIDTH = 3;
 const STORAGE_KEY = 'propaedia-circle-navigator-v1';
@@ -306,6 +307,8 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
   const snapTargetRef = useRef<number | null>(null);
   const snapAnimRef = useRef<number | null>(null);
 
+  const centerPreviewRotationRef = useRef<number>(0);
+
   const [centerRemovePreview, setCenterRemovePreview] = useState(false);
   const [removeMorphT, setRemoveMorphT] = useState(0);
   const removeMorphAnimRef = useRef<number | null>(null);
@@ -490,6 +493,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
 
   // Pre-compute angular offsets for the move-to-center preview
   // Use morphPartNumber as fallback so offsets persist during reverse animation
+  // Use the locked snapped rotation so offsets stay stable while the snap animation runs
   const centerPreviewOffsets = (() => {
     const previewPN = centerPreviewPartNumber ?? (morphT > 0 ? morphPartNumber : null);
     if (previewPN === null) return null;
@@ -503,9 +507,10 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
     const newSegAngle = 360 / newOuterParts.length;
     const curIndexMap = new Map(outerParts.map((p, i) => [p.partNumber, i]));
     const newIndexMap = new Map(newOuterParts.map((p, i) => [p.partNumber, i]));
-    const currentTopPN = topPartNumberForRotation(outerParts, rotationDegrees, segmentAngle);
+    const stableRotation = centerPreviewRotationRef.current;
+    const currentTopPN = topPartNumberForRotation(outerParts, stableRotation, segmentAngle);
     const newTopIdx = newIndexMap.get(currentTopPN);
-    const newRotation = newTopIdx !== undefined ? -newTopIdx * newSegAngle : snapRotation(rotationDegrees, newSegAngle);
+    const newRotation = newTopIdx !== undefined ? -newTopIdx * newSegAngle : snapRotation(stableRotation, newSegAngle);
 
     const offsets = new Map<number, number>();
     for (const p of outerParts) {
@@ -513,7 +518,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
       const curIdx = curIndexMap.get(p.partNumber)!;
       const newIdx = newIndexMap.get(p.partNumber);
       if (newIdx === undefined) continue;
-      const curAngle = rotationDegrees + curIdx * segmentAngle;
+      const curAngle = stableRotation + curIdx * segmentAngle;
       const newAngle = newRotation + newIdx * newSegAngle;
       const shift = normalizeDegrees(newAngle - curAngle);
       if (Math.abs(shift) > 0.01) offsets.set(p.partNumber, shift);
@@ -739,10 +744,14 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
     } else if (dragState.draggingFromCenter) {
       // Dragged center disc but returned — cancel
       setCenterRemovePreview(false);
-      // Quick click on center disc — select it
+      // Quick click on center disc — select it, or navigate if already selected
       const isQuickClick = !dragState.moved && Date.now() - dragState.startTime <= CLICK_DURATION_THRESHOLD_MS;
       if (isQuickClick && centerPart) {
-        setSelectedPartNumber(centerPart.partNumber);
+        if (centerPart.partNumber === selectedPartNumber) {
+          window.location.href = centerPart.href;
+        } else {
+          setSelectedPartNumber(centerPart.partNumber);
+        }
       }
     } else if (!dragState.rotateOnly && dragState.readyForCenter) {
       // Preview already showed the rearrangement — snap directly without replay animation
@@ -773,7 +782,12 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
         !dragState.rotateOnly && !dragState.moved && Date.now() - dragState.startTime <= CLICK_DURATION_THRESHOLD_MS;
 
       if (isQuickClick) {
-        setSelectedPartNumber(dragState.activePartNumber);
+        if (dragState.activePartNumber === selectedPartNumber) {
+          const part = parts.find((p) => p.partNumber === dragState.activePartNumber);
+          if (part) window.location.href = part.href;
+        } else {
+          setSelectedPartNumber(dragState.activePartNumber);
+        }
       }
     }
 
@@ -870,16 +884,26 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
 
     if (!dragState.moved) return;
 
-    if (!dragState.rotateOnly && (!hasCenter || dragState.activePartNumber !== centerPartNumber) && nextRadius <= CENTER_COMMIT_THRESHOLD) {
-      // Smoothly rotate to nearest clean position so the preview layout is aligned
-      const snapped = snapRotation(rotationDegrees, segmentAngle);
-      if (Math.abs(snapped - rotationDegrees) > 0.5) {
-        animateSnapRotation(rotationDegrees, snapped);
+    // Use hysteresis: entering the center zone requires crossing CENTER_COMMIT_THRESHOLD,
+    // but exiting requires moving past CENTER_COMMIT_THRESHOLD + CENTER_EXIT_HYSTERESIS.
+    // This prevents finger jitter on mobile from rapidly toggling the preview.
+    const centerZoneThreshold = dragState.readyForCenter
+      ? CENTER_COMMIT_THRESHOLD + CENTER_EXIT_HYSTERESIS
+      : CENTER_COMMIT_THRESHOLD;
+
+    if (!dragState.rotateOnly && (!hasCenter || dragState.activePartNumber !== centerPartNumber) && nextRadius <= centerZoneThreshold) {
+      if (!dragState.readyForCenter) {
+        // First entry into center zone — snap rotation and show preview
+        const snapped = snapRotation(rotationDegrees, segmentAngle);
+        centerPreviewRotationRef.current = snapped;
+        if (Math.abs(snapped - rotationDegrees) > 0.5) {
+          animateSnapRotation(rotationDegrees, snapped);
+        }
+        dragState.startRotation = snapped;
+        dragState.startAngle = angleFromPoint(point.x, point.y);
+        setCenterPreviewPartNumber(dragState.activePartNumber);
+        dragState.readyForCenter = true;
       }
-      dragState.startRotation = snapped;
-      dragState.startAngle = angleFromPoint(point.x, point.y);
-      setCenterPreviewPartNumber(dragState.activePartNumber);
-      dragState.readyForCenter = true;
       return;
     }
 
@@ -1447,7 +1471,15 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
                 svgRef.current.setPointerCapture(event.pointerId);
               }
             }}
-            onClick={() => centerPart && setSelectedPartNumber(centerPart.partNumber)}
+            onClick={() => {
+              if (centerPart) {
+                if (centerPart.partNumber === selectedPartNumber) {
+                  window.location.href = centerPart.href;
+                } else {
+                  setSelectedPartNumber(centerPart.partNumber);
+                }
+              }
+            }}
             onFocus={() => {
               setCenterHasFocus(true);
             }}
@@ -1455,7 +1487,13 @@ export default function CircleNavigator({ parts, connections, sectionMeta, baseU
             onKeyDown={(event) => {
               if (event.key === 'Enter' || event.key === ' ') {
                 event.preventDefault();
-                if (centerPart) setSelectedPartNumber(centerPart.partNumber);
+                if (centerPart) {
+                  if (centerPart.partNumber === selectedPartNumber) {
+                    window.location.href = centerPart.href;
+                  } else {
+                    setSelectedPartNumber(centerPart.partNumber);
+                  }
+                }
               }
             }}
           >
