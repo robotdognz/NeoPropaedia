@@ -35,8 +35,10 @@ for (const dir of [PART_OUTPUT_DIR, DIV_OUTPUT_DIR]) {
 const navigation = JSON.parse(fs.readFileSync(NAV_PATH, 'utf8'));
 const sectionToPart = {};
 const sectionToDivision = {};
+const divisionSectionCount = {};  // divisionId -> total number of sections
 for (const part of navigation.parts) {
   for (const div of part.divisions) {
+    divisionSectionCount[div.divisionId] = div.sections.length;
     for (const sec of div.sections) {
       sectionToPart[sec.sectionCode] = part.partNumber;
       sectionToDivision[sec.sectionCode] = div.divisionId;
@@ -72,6 +74,7 @@ function buildIndex(mappingsDir, getKey, getAuthor, getPathCount) {
           partPaths: {},        // partNumber -> total outline path count
           divSections: {},      // divisionId -> Set<sectionCode>
           divPaths: {},         // divisionId -> total outline path count
+          divSectionPaths: {},  // divisionId -> { sectionCode: pathCount }
         });
       }
       const entry = index.get(key);
@@ -87,6 +90,8 @@ function buildIndex(mappingsDir, getKey, getAuthor, getPathCount) {
       if (!entry.divSections[divisionId]) entry.divSections[divisionId] = new Set();
       entry.divSections[divisionId].add(sectionCode);
       entry.divPaths[divisionId] = (entry.divPaths[divisionId] || 0) + pathCount;
+      if (!entry.divSectionPaths[divisionId]) entry.divSectionPaths[divisionId] = {};
+      entry.divSectionPaths[divisionId][sectionCode] = (entry.divSectionPaths[divisionId][sectionCode] || 0) + pathCount;
     }
   }
 
@@ -106,7 +111,7 @@ function buildMacroIndex() {
 
     for (const ref of data.macropaediaReferences || []) {
       if (!index.has(ref)) {
-        index.set(ref, { divisions: {}, partSections: {}, partPaths: {}, divSections: {}, divPaths: {} });
+        index.set(ref, { divisions: {}, partSections: {}, partPaths: {}, divSections: {}, divPaths: {}, divSectionPaths: {} });
       }
       const entry = index.get(ref);
 
@@ -119,6 +124,8 @@ function buildMacroIndex() {
       if (!entry.divSections[divisionId]) entry.divSections[divisionId] = new Set();
       entry.divSections[divisionId].add(sectionCode);
       entry.divPaths[divisionId] = (entry.divPaths[divisionId] || 0) + 1;
+      if (!entry.divSectionPaths[divisionId]) entry.divSectionPaths[divisionId] = {};
+      entry.divSectionPaths[divisionId][sectionCode] = (entry.divSectionPaths[divisionId][sectionCode] || 0) + 1;
     }
   }
 
@@ -215,15 +222,24 @@ function partItems(index, partNumber, hasAuthor) {
 }
 
 // Division-level: items appearing in 2+ sections within the division
-// Ranked by: section count (primary), outline paths as depth (secondary)
+// Ranked by: entropy of path distribution across sections (primary),
+// coverage ratio (secondary), section count (tertiary), paths (quaternary)
 // Outputs a normalised relevance score (0-100) for bar display
 function divItems(index, divisionId, hasAuthor) {
+  const totalSections = divisionSectionCount[divisionId] || 1;
   const items = [];
   for (const [title, entry] of index) {
     const secs = entry.divSections[divisionId];
     if (!secs || secs.size < 2) continue;
     const pathCount = entry.divPaths[divisionId] || 0;
-    const score = compositeScore(0, secs.size, 0, pathCount);
+    // Entropy of path distribution across sections
+    const sectionPathCounts = entry.divSectionPaths?.[divisionId]
+      ? Object.values(entry.divSectionPaths[divisionId])
+      : Array.from(secs).map(() => 1);
+    const spread = entropy(sectionPathCounts);
+    // Coverage ratio: what fraction of the division's sections does this item appear in
+    const coverageRatio = secs.size / totalSections;
+    const score = spread * 10000 + coverageRatio * 5000 + secs.size * 1000 + pathCount;
     const item = { title, count: secs.size, paths: pathCount, _score: score };
     if (hasAuthor && entry.author) item.author = entry.author;
     items.push(item);

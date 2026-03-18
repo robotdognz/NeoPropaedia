@@ -3,24 +3,10 @@
   "readings": {
     "vsi": [
       {
-        "title": "Engineering",
-        "count": 3,
-        "paths": 6,
-        "author": "David Blockley",
-        "relevance": 100
-      },
-      {
         "title": "Radioactivity",
         "count": 3,
         "paths": 6,
         "author": "Claudio Tuniz",
-        "relevance": 100
-      },
-      {
-        "title": "Materials",
-        "count": 3,
-        "paths": 5,
-        "author": "Christopher Hall",
         "relevance": 100
       },
       {
@@ -38,83 +24,91 @@
         "relevance": 100
       },
       {
-        "title": "Energy Systems",
-        "count": 2,
+        "title": "Materials",
+        "count": 3,
         "paths": 5,
-        "author": "Nick Jenkins",
-        "relevance": 67
+        "author": "Christopher Hall",
+        "relevance": 97
+      },
+      {
+        "title": "Engineering",
+        "count": 3,
+        "paths": 6,
+        "author": "David Blockley",
+        "relevance": 94
       },
       {
         "title": "Chemistry",
         "count": 2,
         "paths": 4,
         "author": "Peter Atkins",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Light",
         "count": 2,
         "paths": 4,
         "author": "Ian A. Walmsley",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Physical chemistry",
         "count": 2,
         "paths": 4,
         "author": "Peter Atkins",
-        "relevance": 67
-      },
-      {
-        "title": "The Computer",
-        "count": 2,
-        "paths": 4,
-        "author": "Darrel Ince",
-        "relevance": 67
-      },
-      {
-        "title": "Isotopes",
-        "count": 2,
-        "paths": 3,
-        "author": "Rob Ellam",
-        "relevance": 67
-      },
-      {
-        "title": "Minerals",
-        "count": 2,
-        "paths": 3,
-        "author": "David Vaughan",
-        "relevance": 67
-      },
-      {
-        "title": "Nanotechnology",
-        "count": 2,
-        "paths": 3,
-        "author": "Philip Moriarty",
-        "relevance": 67
-      },
-      {
-        "title": "The Elements",
-        "count": 2,
-        "paths": 3,
-        "author": "Philip Ball",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Condensed Matter Physics",
         "count": 2,
         "paths": 2,
         "author": "Ross McKenzie",
-        "relevance": 67
+        "relevance": 64
+      },
+      {
+        "title": "Energy Systems",
+        "count": 2,
+        "paths": 5,
+        "author": "Nick Jenkins",
+        "relevance": 63
+      },
+      {
+        "title": "Isotopes",
+        "count": 2,
+        "paths": 3,
+        "author": "Rob Ellam",
+        "relevance": 60
+      },
+      {
+        "title": "Minerals",
+        "count": 2,
+        "paths": 3,
+        "author": "David Vaughan",
+        "relevance": 60
+      },
+      {
+        "title": "Nanotechnology",
+        "count": 2,
+        "paths": 3,
+        "author": "Philip Moriarty",
+        "relevance": 60
+      },
+      {
+        "title": "The Elements",
+        "count": 2,
+        "paths": 3,
+        "author": "Philip Ball",
+        "relevance": 60
+      },
+      {
+        "title": "The Computer",
+        "count": 2,
+        "paths": 4,
+        "author": "Darrel Ince",
+        "relevance": 55
       }
     ],
     "wiki": [
-      {
-        "title": "Metallurgy",
-        "count": 3,
-        "paths": 9,
-        "relevance": 100
-      },
       {
         "title": "Silicon",
         "count": 3,
@@ -122,136 +116,142 @@
         "relevance": 100
       },
       {
+        "title": "Metallurgy",
+        "count": 3,
+        "paths": 9,
+        "relevance": 98
+      },
+      {
         "title": "Laser",
         "count": 3,
         "paths": 5,
-        "relevance": 100
+        "relevance": 97
       },
       {
         "title": "Iron",
         "count": 3,
         "paths": 4,
-        "relevance": 100
-      },
-      {
-        "title": "Machine",
-        "count": 2,
-        "paths": 6,
-        "relevance": 67
-      },
-      {
-        "title": "Robotics",
-        "count": 2,
-        "paths": 6,
-        "relevance": 67
-      },
-      {
-        "title": "Steel",
-        "count": 2,
-        "paths": 5,
-        "relevance": 67
-      },
-      {
-        "title": "Alloy",
-        "count": 2,
-        "paths": 4,
-        "relevance": 67
+        "relevance": 96
       },
       {
         "title": "Copper",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Electron",
         "count": 2,
         "paths": 4,
-        "relevance": 67
-      },
-      {
-        "title": "Fossil fuel",
-        "count": 2,
-        "paths": 4,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Gold",
         "count": 2,
         "paths": 4,
-        "relevance": 67
-      },
-      {
-        "title": "Manufacturing",
-        "count": 2,
-        "paths": 4,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Metal",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Silver",
         "count": 2,
         "paths": 4,
-        "relevance": 67
-      },
-      {
-        "title": "Coal",
-        "count": 2,
-        "paths": 3,
-        "relevance": 67
-      },
-      {
-        "title": "Concrete",
-        "count": 2,
-        "paths": 3,
-        "relevance": 67
-      },
-      {
-        "title": "Electricity",
-        "count": 2,
-        "paths": 3,
-        "relevance": 67
-      },
-      {
-        "title": "Mineral",
-        "count": 2,
-        "paths": 3,
-        "relevance": 67
-      },
-      {
-        "title": "Natural rubber",
-        "count": 2,
-        "paths": 3,
-        "relevance": 67
-      },
-      {
-        "title": "Petroleum",
-        "count": 2,
-        "paths": 3,
-        "relevance": 67
-      },
-      {
-        "title": "Refrigeration",
-        "count": 2,
-        "paths": 3,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Explosive",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Simple machine",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
+      },
+      {
+        "title": "Steel",
+        "count": 2,
+        "paths": 5,
+        "relevance": 63
+      },
+      {
+        "title": "Machine",
+        "count": 2,
+        "paths": 6,
+        "relevance": 60
+      },
+      {
+        "title": "Robotics",
+        "count": 2,
+        "paths": 6,
+        "relevance": 60
+      },
+      {
+        "title": "Coal",
+        "count": 2,
+        "paths": 3,
+        "relevance": 60
+      },
+      {
+        "title": "Concrete",
+        "count": 2,
+        "paths": 3,
+        "relevance": 60
+      },
+      {
+        "title": "Electricity",
+        "count": 2,
+        "paths": 3,
+        "relevance": 60
+      },
+      {
+        "title": "Mineral",
+        "count": 2,
+        "paths": 3,
+        "relevance": 60
+      },
+      {
+        "title": "Natural rubber",
+        "count": 2,
+        "paths": 3,
+        "relevance": 60
+      },
+      {
+        "title": "Petroleum",
+        "count": 2,
+        "paths": 3,
+        "relevance": 60
+      },
+      {
+        "title": "Refrigeration",
+        "count": 2,
+        "paths": 3,
+        "relevance": 60
+      },
+      {
+        "title": "Alloy",
+        "count": 2,
+        "paths": 4,
+        "relevance": 55
+      },
+      {
+        "title": "Fossil fuel",
+        "count": 2,
+        "paths": 4,
+        "relevance": 55
+      },
+      {
+        "title": "Manufacturing",
+        "count": 2,
+        "paths": 4,
+        "relevance": 55
       }
     ],
     "macro": [

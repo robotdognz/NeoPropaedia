@@ -3,13 +3,6 @@
   "readings": {
     "vsi": [
       {
-        "title": "Leibniz",
-        "count": 2,
-        "paths": 3,
-        "author": "Maria Rosa Antognazza",
-        "relevance": 100
-      },
-      {
         "title": "Analytic Philosophy",
         "count": 2,
         "paths": 2,
@@ -64,15 +57,16 @@
         "paths": 2,
         "author": "A. C. Grayling",
         "relevance": 100
+      },
+      {
+        "title": "Leibniz",
+        "count": 2,
+        "paths": 3,
+        "author": "Maria Rosa Antognazza",
+        "relevance": 95
       }
     ],
     "wiki": [
-      {
-        "title": "Logic",
-        "count": 2,
-        "paths": 10,
-        "relevance": 100
-      },
       {
         "title": "Kurt Gödel",
         "count": 2,
@@ -98,22 +92,28 @@
         "relevance": 100
       },
       {
+        "title": "Ontology",
+        "count": 2,
+        "paths": 2,
+        "relevance": 100
+      },
+      {
         "title": "Aristotle",
         "count": 2,
         "paths": 3,
-        "relevance": 100
+        "relevance": 95
       },
       {
         "title": "Set (mathematics)",
         "count": 2,
         "paths": 3,
-        "relevance": 100
+        "relevance": 95
       },
       {
-        "title": "Ontology",
+        "title": "Logic",
         "count": 2,
-        "paths": 2,
-        "relevance": 100
+        "paths": 10,
+        "relevance": 84
       }
     ],
     "macro": [

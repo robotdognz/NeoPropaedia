@@ -10,13 +10,6 @@
         "relevance": 100
       },
       {
-        "title": "The Sun",
-        "count": 3,
-        "paths": 10,
-        "author": "Philip Judge",
-        "relevance": 100
-      },
-      {
         "title": "Gravity",
         "count": 3,
         "paths": 9,
@@ -24,97 +17,98 @@
         "relevance": 100
       },
       {
-        "title": "Stars",
+        "title": "The Sun",
         "count": 3,
-        "paths": 9,
-        "author": "Andrew King",
-        "relevance": 100
+        "paths": 10,
+        "author": "Philip Judge",
+        "relevance": 99
       },
       {
         "title": "Planetary Systems",
         "count": 3,
         "paths": 8,
         "author": "Raymond T. Pierrehumbert",
-        "relevance": 100
+        "relevance": 98
       },
       {
-        "title": "Galaxies",
-        "count": 2,
-        "paths": 8,
-        "author": "John Gribbin",
-        "relevance": 67
-      },
-      {
-        "title": "Cosmology",
-        "count": 2,
-        "paths": 7,
-        "author": "Peter Coles",
-        "relevance": 67
-      },
-      {
-        "title": "Planets",
-        "count": 2,
-        "paths": 6,
-        "author": "David A. Rothery",
-        "relevance": 67
+        "title": "Stars",
+        "count": 3,
+        "paths": 9,
+        "author": "Andrew King",
+        "relevance": 92
       },
       {
         "title": "Black holes",
         "count": 2,
         "paths": 4,
         "author": "Katherine Blundell",
-        "relevance": 67
+        "relevance": 66
       },
       {
         "title": "Isotopes",
         "count": 2,
         "paths": 4,
         "author": "Rob Ellam",
-        "relevance": 67
+        "relevance": 66
       },
       {
         "title": "Light",
         "count": 2,
         "paths": 4,
         "author": "Ian A. Walmsley",
-        "relevance": 67
-      },
-      {
-        "title": "Telescopes",
-        "count": 2,
-        "paths": 4,
-        "author": "Geoffrey Cottrell",
-        "relevance": 67
+        "relevance": 66
       },
       {
         "title": "The Elements",
         "count": 2,
         "paths": 4,
         "author": "Philip Ball",
-        "relevance": 67
+        "relevance": 66
       },
       {
-        "title": "Waves",
+        "title": "Cosmology",
         "count": 2,
-        "paths": 4,
-        "author": "Mike Goldsmith",
-        "relevance": 67
+        "paths": 7,
+        "author": "Peter Coles",
+        "relevance": 65
       },
       {
         "title": "The History of Astronomy",
         "count": 2,
         "paths": 3,
         "author": "Michael Hoskin",
-        "relevance": 67
+        "relevance": 62
+      },
+      {
+        "title": "Galaxies",
+        "count": 2,
+        "paths": 8,
+        "author": "John Gribbin",
+        "relevance": 57
+      },
+      {
+        "title": "Telescopes",
+        "count": 2,
+        "paths": 4,
+        "author": "Geoffrey Cottrell",
+        "relevance": 57
+      },
+      {
+        "title": "Waves",
+        "count": 2,
+        "paths": 4,
+        "author": "Mike Goldsmith",
+        "relevance": 57
+      },
+      {
+        "title": "Planets",
+        "count": 2,
+        "paths": 6,
+        "author": "David A. Rothery",
+        "relevance": 51
       }
     ],
     "wiki": [
-      {
-        "title": "Sun",
-        "count": 3,
-        "paths": 19,
-        "relevance": 100
-      },
       {
         "title": "Gravity",
         "count": 3,
@@ -122,94 +116,34 @@
         "relevance": 100
       },
       {
-        "title": "Star",
+        "title": "Comet",
         "count": 3,
-        "paths": 12,
-        "relevance": 100
-      },
-      {
-        "title": "Astronomy",
-        "count": 3,
-        "paths": 7,
-        "relevance": 100
+        "paths": 4,
+        "relevance": 99
       },
       {
         "title": "Planet",
         "count": 3,
         "paths": 6,
-        "relevance": 100
+        "relevance": 97
       },
       {
-        "title": "Comet",
+        "title": "Astronomy",
         "count": 3,
-        "paths": 4,
-        "relevance": 100
+        "paths": 7,
+        "relevance": 97
       },
       {
-        "title": "Moon",
-        "count": 2,
-        "paths": 14,
-        "relevance": 67
+        "title": "Sun",
+        "count": 3,
+        "paths": 19,
+        "relevance": 91
       },
       {
-        "title": "Universe",
-        "count": 2,
-        "paths": 11,
-        "relevance": 67
-      },
-      {
-        "title": "Galaxy",
-        "count": 2,
-        "paths": 10,
-        "relevance": 67
-      },
-      {
-        "title": "Earth",
-        "count": 2,
-        "paths": 9,
-        "relevance": 67
-      },
-      {
-        "title": "Physical cosmology",
-        "count": 2,
-        "paths": 9,
-        "relevance": 67
-      },
-      {
-        "title": "Milky Way",
-        "count": 2,
-        "paths": 8,
-        "relevance": 67
-      },
-      {
-        "title": "Natural satellite",
-        "count": 2,
-        "paths": 6,
-        "relevance": 66
-      },
-      {
-        "title": "Albert Einstein",
-        "count": 2,
-        "paths": 5,
-        "relevance": 66
-      },
-      {
-        "title": "Black hole",
-        "count": 2,
-        "paths": 5,
-        "relevance": 66
-      },
-      {
-        "title": "Classical mechanics",
-        "count": 2,
-        "paths": 5,
-        "relevance": 66
-      },
-      {
-        "title": "Isaac Newton",
-        "count": 2,
-        "paths": 5,
-        "relevance": 66
+        "title": "Star",
+        "count": 3,
+        "paths": 12,
+        "relevance": 88
       },
       {
         "title": "Asteroid",
@@ -219,12 +153,6 @@
       },
       {
         "title": "Chemical element",
-        "count": 2,
-        "paths": 4,
-        "relevance": 66
-      },
-      {
-        "title": "Galileo Galilei",
         "count": 2,
         "paths": 4,
         "relevance": 66
@@ -248,10 +176,82 @@
         "relevance": 66
       },
       {
+        "title": "Physical cosmology",
+        "count": 2,
+        "paths": 9,
+        "relevance": 66
+      },
+      {
+        "title": "Galaxy",
+        "count": 2,
+        "paths": 10,
+        "relevance": 65
+      },
+      {
+        "title": "Albert Einstein",
+        "count": 2,
+        "paths": 5,
+        "relevance": 65
+      },
+      {
+        "title": "Black hole",
+        "count": 2,
+        "paths": 5,
+        "relevance": 65
+      },
+      {
+        "title": "Classical mechanics",
+        "count": 2,
+        "paths": 5,
+        "relevance": 65
+      },
+      {
+        "title": "Isaac Newton",
+        "count": 2,
+        "paths": 5,
+        "relevance": 65
+      },
+      {
+        "title": "Natural satellite",
+        "count": 2,
+        "paths": 6,
+        "relevance": 62
+      },
+      {
         "title": "Outer space",
         "count": 2,
         "paths": 3,
-        "relevance": 66
+        "relevance": 62
+      },
+      {
+        "title": "Universe",
+        "count": 2,
+        "paths": 11,
+        "relevance": 59
+      },
+      {
+        "title": "Galileo Galilei",
+        "count": 2,
+        "paths": 4,
+        "relevance": 58
+      },
+      {
+        "title": "Earth",
+        "count": 2,
+        "paths": 9,
+        "relevance": 56
+      },
+      {
+        "title": "Moon",
+        "count": 2,
+        "paths": 14,
+        "relevance": 48
+      },
+      {
+        "title": "Milky Way",
+        "count": 2,
+        "paths": 8,
+        "relevance": 46
       }
     ],
     "macro": [
@@ -265,7 +265,7 @@
         "title": "Cosmos, The",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       }
     ]
   }

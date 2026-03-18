@@ -14,100 +14,94 @@
         "count": 4,
         "paths": 7,
         "author": "Jaboury Ghazoul",
-        "relevance": 100
-      },
-      {
-        "title": "Invasive Species",
-        "count": 3,
-        "paths": 5,
-        "author": "Julie Lockwood, Dustin J. Welbourne",
-        "relevance": 75
+        "relevance": 98
       },
       {
         "title": "Marine biology",
         "count": 3,
         "paths": 4,
         "author": "Philip V. Mladenov",
-        "relevance": 75
+        "relevance": 78
       },
       {
-        "title": "Biodiversity Conservation",
-        "count": 2,
+        "title": "Invasive Species",
+        "count": 3,
         "paths": 5,
-        "author": "David W. Macdonald",
-        "relevance": 50
+        "author": "Julie Lockwood, Dustin J. Welbourne",
+        "relevance": 73
       },
       {
         "title": "Genes",
         "count": 2,
         "paths": 4,
         "author": "Jonathan Slack",
-        "relevance": 50
+        "relevance": 52
       },
       {
         "title": "Oceans",
         "count": 2,
         "paths": 4,
         "author": "Dorrik Stow",
-        "relevance": 50
-      },
-      {
-        "title": "Anthropocene",
-        "count": 2,
-        "paths": 3,
-        "author": "Erle C. Ellis",
-        "relevance": 50
-      },
-      {
-        "title": "Climate",
-        "count": 2,
-        "paths": 3,
-        "author": "Mark Maslin",
-        "relevance": 50
-      },
-      {
-        "title": "Coral Reefs",
-        "count": 2,
-        "paths": 3,
-        "author": "Charles Sheppard",
-        "relevance": 50
-      },
-      {
-        "title": "Microbiology",
-        "count": 2,
-        "paths": 3,
-        "author": "Nicholas P. Money",
-        "relevance": 50
-      },
-      {
-        "title": "Veterinary Science",
-        "count": 2,
-        "paths": 3,
-        "author": "James Yeates",
-        "relevance": 50
+        "relevance": 52
       },
       {
         "title": "Biogeography",
         "count": 2,
         "paths": 2,
         "author": "Mark V. Lomolino",
-        "relevance": 50
+        "relevance": 52
       },
       {
         "title": "Plants",
         "count": 2,
         "paths": 2,
         "author": "Timothy Walker",
-        "relevance": 50
+        "relevance": 52
+      },
+      {
+        "title": "Biodiversity Conservation",
+        "count": 2,
+        "paths": 5,
+        "author": "David W. Macdonald",
+        "relevance": 51
+      },
+      {
+        "title": "Anthropocene",
+        "count": 2,
+        "paths": 3,
+        "author": "Erle C. Ellis",
+        "relevance": 49
+      },
+      {
+        "title": "Climate",
+        "count": 2,
+        "paths": 3,
+        "author": "Mark Maslin",
+        "relevance": 49
+      },
+      {
+        "title": "Coral Reefs",
+        "count": 2,
+        "paths": 3,
+        "author": "Charles Sheppard",
+        "relevance": 49
+      },
+      {
+        "title": "Microbiology",
+        "count": 2,
+        "paths": 3,
+        "author": "Nicholas P. Money",
+        "relevance": 49
+      },
+      {
+        "title": "Veterinary Science",
+        "count": 2,
+        "paths": 3,
+        "author": "James Yeates",
+        "relevance": 49
       }
     ],
     "wiki": [
-      {
-        "title": "Ecology",
-        "count": 4,
-        "paths": 17,
-        "relevance": 100
-      },
       {
         "title": "Ecosystem",
         "count": 4,
@@ -115,16 +109,52 @@
         "relevance": 100
       },
       {
-        "title": "Forest",
-        "count": 3,
-        "paths": 8,
-        "relevance": 75
+        "title": "Ecology",
+        "count": 4,
+        "paths": 17,
+        "relevance": 99
       },
       {
         "title": "Soil",
         "count": 3,
         "paths": 6,
-        "relevance": 75
+        "relevance": 80
+      },
+      {
+        "title": "Forest",
+        "count": 3,
+        "paths": 8,
+        "relevance": 79
+      },
+      {
+        "title": "Ageing",
+        "count": 2,
+        "paths": 4,
+        "relevance": 51
+      },
+      {
+        "title": "Animal",
+        "count": 2,
+        "paths": 4,
+        "relevance": 51
+      },
+      {
+        "title": "Desert",
+        "count": 2,
+        "paths": 4,
+        "relevance": 51
+      },
+      {
+        "title": "Food",
+        "count": 2,
+        "paths": 4,
+        "relevance": 51
+      },
+      {
+        "title": "Water",
+        "count": 2,
+        "paths": 4,
+        "relevance": 51
       },
       {
         "title": "Archaea",
@@ -145,40 +175,10 @@
         "relevance": 50
       },
       {
-        "title": "Ageing",
-        "count": 2,
-        "paths": 4,
-        "relevance": 50
-      },
-      {
-        "title": "Animal",
-        "count": 2,
-        "paths": 4,
-        "relevance": 50
-      },
-      {
-        "title": "Desert",
-        "count": 2,
-        "paths": 4,
-        "relevance": 50
-      },
-      {
-        "title": "Food",
-        "count": 2,
-        "paths": 4,
-        "relevance": 50
-      },
-      {
-        "title": "Water",
-        "count": 2,
-        "paths": 4,
-        "relevance": 50
-      },
-      {
         "title": "Domestication",
         "count": 2,
         "paths": 3,
-        "relevance": 50
+        "relevance": 48
       }
     ],
     "macro": [

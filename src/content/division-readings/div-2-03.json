@@ -3,45 +3,10 @@
   "readings": {
     "vsi": [
       {
-        "title": "Landscapes and Geomorphology",
-        "count": 2,
-        "paths": 7,
-        "author": "Andrew Goudie, Heather Viles",
-        "relevance": 100
-      },
-      {
-        "title": "Oceans",
-        "count": 2,
-        "paths": 6,
-        "author": "Dorrik Stow",
-        "relevance": 100
-      },
-      {
         "title": "Plate tectonics",
         "count": 2,
         "paths": 6,
         "author": "Peter Molnar",
-        "relevance": 100
-      },
-      {
-        "title": "Glaciation",
-        "count": 2,
-        "paths": 5,
-        "author": "David J. A. Evans",
-        "relevance": 100
-      },
-      {
-        "title": "Rocks",
-        "count": 2,
-        "paths": 5,
-        "author": "Jan Zalasiewicz",
-        "relevance": 100
-      },
-      {
-        "title": "The Arctic",
-        "count": 2,
-        "paths": 5,
-        "author": "Klaus Dodds, Jamie Woodward",
         "relevance": 100
       },
       {
@@ -56,41 +21,6 @@
         "count": 2,
         "paths": 4,
         "author": "Martin F. Price",
-        "relevance": 100
-      },
-      {
-        "title": "The Ice Age",
-        "count": 2,
-        "paths": 4,
-        "author": "Jamie Woodward",
-        "relevance": 100
-      },
-      {
-        "title": "Geography",
-        "count": 2,
-        "paths": 3,
-        "author": "John A. Matthews, David T. Herbert",
-        "relevance": 100
-      },
-      {
-        "title": "Lakes",
-        "count": 2,
-        "paths": 3,
-        "author": "Warwick F. Vincent",
-        "relevance": 100
-      },
-      {
-        "title": "The Earth",
-        "count": 2,
-        "paths": 3,
-        "author": "Martin Redfern",
-        "relevance": 100
-      },
-      {
-        "title": "Volcanoes",
-        "count": 2,
-        "paths": 3,
-        "author": "Michael J. Branney, Jan Zalasiewicz",
         "relevance": 100
       },
       {
@@ -113,69 +43,79 @@
         "paths": 2,
         "author": "Klaus Dodds",
         "relevance": 100
+      },
+      {
+        "title": "Glaciation",
+        "count": 2,
+        "paths": 5,
+        "author": "David J. A. Evans",
+        "relevance": 98
+      },
+      {
+        "title": "Rocks",
+        "count": 2,
+        "paths": 5,
+        "author": "Jan Zalasiewicz",
+        "relevance": 98
+      },
+      {
+        "title": "The Arctic",
+        "count": 2,
+        "paths": 5,
+        "author": "Klaus Dodds, Jamie Woodward",
+        "relevance": 98
+      },
+      {
+        "title": "Oceans",
+        "count": 2,
+        "paths": 6,
+        "author": "Dorrik Stow",
+        "relevance": 95
+      },
+      {
+        "title": "Geography",
+        "count": 2,
+        "paths": 3,
+        "author": "John A. Matthews, David T. Herbert",
+        "relevance": 95
+      },
+      {
+        "title": "Lakes",
+        "count": 2,
+        "paths": 3,
+        "author": "Warwick F. Vincent",
+        "relevance": 95
+      },
+      {
+        "title": "The Earth",
+        "count": 2,
+        "paths": 3,
+        "author": "Martin Redfern",
+        "relevance": 95
+      },
+      {
+        "title": "Volcanoes",
+        "count": 2,
+        "paths": 3,
+        "author": "Michael J. Branney, Jan Zalasiewicz",
+        "relevance": 95
+      },
+      {
+        "title": "Landscapes and Geomorphology",
+        "count": 2,
+        "paths": 7,
+        "author": "Andrew Goudie, Heather Viles",
+        "relevance": 92
+      },
+      {
+        "title": "The Ice Age",
+        "count": 2,
+        "paths": 4,
+        "author": "Jamie Woodward",
+        "relevance": 89
       }
     ],
     "wiki": [
-      {
-        "title": "Erosion",
-        "count": 2,
-        "paths": 8,
-        "relevance": 100
-      },
-      {
-        "title": "River",
-        "count": 2,
-        "paths": 8,
-        "relevance": 100
-      },
-      {
-        "title": "Desert",
-        "count": 2,
-        "paths": 7,
-        "relevance": 100
-      },
-      {
-        "title": "Lake",
-        "count": 2,
-        "paths": 6,
-        "relevance": 100
-      },
-      {
-        "title": "Ocean",
-        "count": 2,
-        "paths": 6,
-        "relevance": 100
-      },
-      {
-        "title": "Andes",
-        "count": 2,
-        "paths": 5,
-        "relevance": 100
-      },
-      {
-        "title": "Antarctica",
-        "count": 2,
-        "paths": 5,
-        "relevance": 100
-      },
-      {
-        "title": "Great Lakes",
-        "count": 2,
-        "paths": 5,
-        "relevance": 100
-      },
-      {
-        "title": "Himalayas",
-        "count": 2,
-        "paths": 5,
-        "relevance": 100
-      },
-      {
-        "title": "Island",
-        "count": 2,
-        "paths": 5,
-        "relevance": 100
-      },
       {
         "title": "Arctic Ocean",
         "count": 2,
@@ -189,16 +129,76 @@
         "relevance": 100
       },
       {
-        "title": "Volcano",
+        "title": "Andes",
         "count": 2,
-        "paths": 4,
-        "relevance": 100
+        "paths": 5,
+        "relevance": 98
+      },
+      {
+        "title": "Antarctica",
+        "count": 2,
+        "paths": 5,
+        "relevance": 98
+      },
+      {
+        "title": "Himalayas",
+        "count": 2,
+        "paths": 5,
+        "relevance": 98
+      },
+      {
+        "title": "Island",
+        "count": 2,
+        "paths": 5,
+        "relevance": 98
+      },
+      {
+        "title": "Ocean",
+        "count": 2,
+        "paths": 6,
+        "relevance": 95
       },
       {
         "title": "Ganges",
         "count": 2,
         "paths": 3,
-        "relevance": 100
+        "relevance": 95
+      },
+      {
+        "title": "Desert",
+        "count": 2,
+        "paths": 7,
+        "relevance": 92
+      },
+      {
+        "title": "Erosion",
+        "count": 2,
+        "paths": 8,
+        "relevance": 89
+      },
+      {
+        "title": "Volcano",
+        "count": 2,
+        "paths": 4,
+        "relevance": 89
+      },
+      {
+        "title": "Great Lakes",
+        "count": 2,
+        "paths": 5,
+        "relevance": 84
+      },
+      {
+        "title": "Lake",
+        "count": 2,
+        "paths": 6,
+        "relevance": 79
+      },
+      {
+        "title": "River",
+        "count": 2,
+        "paths": 8,
+        "relevance": 73
       }
     ],
     "macro": [

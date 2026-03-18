@@ -3,20 +3,6 @@
   "readings": {
     "vsi": [
       {
-        "title": "Polygamy",
-        "count": 2,
-        "paths": 3,
-        "author": "Sarah Pearsall",
-        "relevance": 100
-      },
-      {
-        "title": "Spirituality",
-        "count": 2,
-        "paths": 3,
-        "author": "Philip Sheldrake",
-        "relevance": 100
-      },
-      {
         "title": "Blasphemy",
         "count": 2,
         "paths": 2,
@@ -43,39 +29,23 @@
         "paths": 2,
         "author": "Jolyon Mitchell, Joshua Rey",
         "relevance": 100
+      },
+      {
+        "title": "Polygamy",
+        "count": 2,
+        "paths": 3,
+        "author": "Sarah Pearsall",
+        "relevance": 95
+      },
+      {
+        "title": "Spirituality",
+        "count": 2,
+        "paths": 3,
+        "author": "Philip Sheldrake",
+        "relevance": 95
       }
     ],
     "wiki": [
-      {
-        "title": "Catholic Church",
-        "count": 2,
-        "paths": 14,
-        "relevance": 100
-      },
-      {
-        "title": "African traditional religions",
-        "count": 2,
-        "paths": 10,
-        "relevance": 100
-      },
-      {
-        "title": "Confucianism",
-        "count": 2,
-        "paths": 9,
-        "relevance": 100
-      },
-      {
-        "title": "Jesus",
-        "count": 2,
-        "paths": 9,
-        "relevance": 100
-      },
-      {
-        "title": "Thomas Aquinas",
-        "count": 2,
-        "paths": 7,
-        "relevance": 100
-      },
       {
         "title": "History of religion",
         "count": 2,
@@ -89,28 +59,58 @@
         "relevance": 100
       },
       {
-        "title": "Quran",
-        "count": 2,
-        "paths": 6,
-        "relevance": 100
-      },
-      {
         "title": "Religion",
         "count": 2,
         "paths": 6,
         "relevance": 100
       },
       {
+        "title": "Confucianism",
+        "count": 2,
+        "paths": 9,
+        "relevance": 99
+      },
+      {
+        "title": "Jesus",
+        "count": 2,
+        "paths": 9,
+        "relevance": 99
+      },
+      {
+        "title": "African traditional religions",
+        "count": 2,
+        "paths": 10,
+        "relevance": 98
+      },
+      {
         "title": "Bhagavad Gita",
         "count": 2,
         "paths": 5,
-        "relevance": 100
+        "relevance": 98
+      },
+      {
+        "title": "Catholic Church",
+        "count": 2,
+        "paths": 14,
+        "relevance": 97
+      },
+      {
+        "title": "Quran",
+        "count": 2,
+        "paths": 6,
+        "relevance": 95
       },
       {
         "title": "Prayer",
         "count": 2,
         "paths": 3,
-        "relevance": 99
+        "relevance": 95
+      },
+      {
+        "title": "Thomas Aquinas",
+        "count": 2,
+        "paths": 7,
+        "relevance": 92
       }
     ],
     "macro": [

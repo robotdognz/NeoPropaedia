@@ -10,25 +10,25 @@
         "relevance": 100
       },
       {
-        "title": "Anaesthesia",
+        "title": "Epidemiology",
         "count": 3,
-        "paths": 5,
-        "author": "Aidan O'Donnell",
-        "relevance": 75
+        "paths": 3,
+        "author": "Rodolfo Saracci",
+        "relevance": 78
       },
       {
         "title": "Hormones",
         "count": 3,
         "paths": 5,
         "author": "Martin Luck",
-        "relevance": 75
+        "relevance": 76
       },
       {
         "title": "The Immune System",
         "count": 3,
         "paths": 5,
         "author": "Paul Klenerman",
-        "relevance": 75
+        "relevance": 76
       },
       {
         "title": "Blood",
@@ -45,18 +45,11 @@
         "relevance": 75
       },
       {
-        "title": "Epidemiology",
+        "title": "Anaesthesia",
         "count": 3,
-        "paths": 3,
-        "author": "Rodolfo Saracci",
-        "relevance": 75
-      },
-      {
-        "title": "Developmental biology",
-        "count": 2,
-        "paths": 4,
-        "author": "Lewis Wolpert",
-        "relevance": 50
+        "paths": 5,
+        "author": "Aidan O'Donnell",
+        "relevance": 71
       },
       {
         "title": "Drugs",
@@ -70,62 +63,6 @@
         "count": 2,
         "paths": 4,
         "author": "Charles Foster",
-        "relevance": 50
-      },
-      {
-        "title": "The Brain",
-        "count": 2,
-        "paths": 4,
-        "author": "Michael O'Shea",
-        "relevance": 50
-      },
-      {
-        "title": "Addiction",
-        "count": 2,
-        "paths": 3,
-        "author": "Keith Humphreys",
-        "relevance": 50
-      },
-      {
-        "title": "Bacteria",
-        "count": 2,
-        "paths": 3,
-        "author": "Sebastian G. B. Amyes",
-        "relevance": 50
-      },
-      {
-        "title": "HIV/AIDS",
-        "count": 2,
-        "paths": 3,
-        "author": "Alan Whiteside",
-        "relevance": 50
-      },
-      {
-        "title": "Pandemics",
-        "count": 2,
-        "paths": 3,
-        "author": "Christian W. McMillen",
-        "relevance": 50
-      },
-      {
-        "title": "Plague",
-        "count": 2,
-        "paths": 3,
-        "author": "Paul Slack",
-        "relevance": 50
-      },
-      {
-        "title": "Psychiatry",
-        "count": 2,
-        "paths": 3,
-        "author": "Tom Burns",
-        "relevance": 50
-      },
-      {
-        "title": "The Cell",
-        "count": 2,
-        "paths": 3,
-        "author": "Terence Allen, Graham Cowling",
         "relevance": 50
       },
       {
@@ -197,194 +134,257 @@
         "paths": 2,
         "author": "Dorothy H. Crawford",
         "relevance": 50
+      },
+      {
+        "title": "Addiction",
+        "count": 2,
+        "paths": 3,
+        "author": "Keith Humphreys",
+        "relevance": 47
+      },
+      {
+        "title": "Bacteria",
+        "count": 2,
+        "paths": 3,
+        "author": "Sebastian G. B. Amyes",
+        "relevance": 47
+      },
+      {
+        "title": "HIV/AIDS",
+        "count": 2,
+        "paths": 3,
+        "author": "Alan Whiteside",
+        "relevance": 47
+      },
+      {
+        "title": "Pandemics",
+        "count": 2,
+        "paths": 3,
+        "author": "Christian W. McMillen",
+        "relevance": 47
+      },
+      {
+        "title": "Plague",
+        "count": 2,
+        "paths": 3,
+        "author": "Paul Slack",
+        "relevance": 47
+      },
+      {
+        "title": "Psychiatry",
+        "count": 2,
+        "paths": 3,
+        "author": "Tom Burns",
+        "relevance": 47
+      },
+      {
+        "title": "The Cell",
+        "count": 2,
+        "paths": 3,
+        "author": "Terence Allen, Graham Cowling",
+        "relevance": 47
+      },
+      {
+        "title": "Developmental biology",
+        "count": 2,
+        "paths": 4,
+        "author": "Lewis Wolpert",
+        "relevance": 44
+      },
+      {
+        "title": "The Brain",
+        "count": 2,
+        "paths": 4,
+        "author": "Michael O'Shea",
+        "relevance": 44
       }
     ],
     "wiki": [
       {
-        "title": "Human body",
-        "count": 3,
-        "paths": 23,
-        "relevance": 100
-      },
-      {
-        "title": "Pregnancy",
-        "count": 3,
-        "paths": 9,
-        "relevance": 100
-      },
-      {
         "title": "Drinking water",
         "count": 3,
         "paths": 7,
-        "relevance": 99
+        "relevance": 100
       },
       {
         "title": "Obesity",
         "count": 3,
         "paths": 7,
-        "relevance": 99
-      },
-      {
-        "title": "Health",
-        "count": 3,
-        "paths": 6,
-        "relevance": 99
-      },
-      {
-        "title": "Nutrition",
-        "count": 3,
-        "paths": 6,
-        "relevance": 99
+        "relevance": 100
       },
       {
         "title": "Vaccine",
         "count": 3,
         "paths": 4,
-        "relevance": 99
+        "relevance": 97
       },
       {
-        "title": "Digestion",
-        "count": 2,
-        "paths": 11,
-        "relevance": 67
+        "title": "Health",
+        "count": 3,
+        "paths": 6,
+        "relevance": 96
       },
       {
-        "title": "Circulatory system",
-        "count": 2,
-        "paths": 10,
-        "relevance": 66
+        "title": "Pregnancy",
+        "count": 3,
+        "paths": 9,
+        "relevance": 93
+      },
+      {
+        "title": "Human body",
+        "count": 3,
+        "paths": 23,
+        "relevance": 90
+      },
+      {
+        "title": "Nutrition",
+        "count": 3,
+        "paths": 6,
+        "relevance": 86
       },
       {
         "title": "Hormone",
         "count": 2,
         "paths": 10,
-        "relevance": 66
-      },
-      {
-        "title": "Nervous system",
-        "count": 2,
-        "paths": 9,
-        "relevance": 66
-      },
-      {
-        "title": "Lung",
-        "count": 2,
-        "paths": 6,
-        "relevance": 66
-      },
-      {
-        "title": "Alcoholic beverage",
-        "count": 2,
-        "paths": 5,
-        "relevance": 66
-      },
-      {
-        "title": "Blood",
-        "count": 2,
-        "paths": 5,
-        "relevance": 66
-      },
-      {
-        "title": "Diabetes",
-        "count": 2,
-        "paths": 5,
-        "relevance": 66
-      },
-      {
-        "title": "Louis Pasteur",
-        "count": 2,
-        "paths": 5,
-        "relevance": 66
-      },
-      {
-        "title": "Sexually transmitted infection",
-        "count": 2,
-        "paths": 5,
-        "relevance": 66
-      },
-      {
-        "title": "Smoking",
-        "count": 2,
-        "paths": 5,
-        "relevance": 66
+        "relevance": 65
       },
       {
         "title": "Bone",
         "count": 2,
         "paths": 4,
-        "relevance": 66
+        "relevance": 65
       },
       {
         "title": "Drug",
         "count": 2,
         "paths": 4,
-        "relevance": 66
-      },
-      {
-        "title": "Food",
-        "count": 2,
-        "paths": 4,
-        "relevance": 66
-      },
-      {
-        "title": "Skeletal muscle",
-        "count": 2,
-        "paths": 4,
-        "relevance": 66
+        "relevance": 65
       },
       {
         "title": "Tuberculosis",
         "count": 2,
         "paths": 4,
-        "relevance": 66
-      },
-      {
-        "title": "Arthritis",
-        "count": 2,
-        "paths": 3,
-        "relevance": 66
-      },
-      {
-        "title": "Disease",
-        "count": 2,
-        "paths": 3,
-        "relevance": 66
-      },
-      {
-        "title": "Ear",
-        "count": 2,
-        "paths": 3,
-        "relevance": 66
-      },
-      {
-        "title": "Injury",
-        "count": 2,
-        "paths": 3,
-        "relevance": 66
-      },
-      {
-        "title": "Skin",
-        "count": 2,
-        "paths": 3,
-        "relevance": 66
-      },
-      {
-        "title": "Smallpox",
-        "count": 2,
-        "paths": 3,
-        "relevance": 66
+        "relevance": 65
       },
       {
         "title": "Allergy",
         "count": 2,
         "paths": 2,
-        "relevance": 66
+        "relevance": 65
       },
       {
         "title": "Dentistry",
         "count": 2,
         "paths": 2,
-        "relevance": 66
+        "relevance": 65
+      },
+      {
+        "title": "Nervous system",
+        "count": 2,
+        "paths": 9,
+        "relevance": 65
+      },
+      {
+        "title": "Circulatory system",
+        "count": 2,
+        "paths": 10,
+        "relevance": 64
+      },
+      {
+        "title": "Alcoholic beverage",
+        "count": 2,
+        "paths": 5,
+        "relevance": 64
+      },
+      {
+        "title": "Diabetes",
+        "count": 2,
+        "paths": 5,
+        "relevance": 64
+      },
+      {
+        "title": "Louis Pasteur",
+        "count": 2,
+        "paths": 5,
+        "relevance": 64
+      },
+      {
+        "title": "Sexually transmitted infection",
+        "count": 2,
+        "paths": 5,
+        "relevance": 64
+      },
+      {
+        "title": "Smoking",
+        "count": 2,
+        "paths": 5,
+        "relevance": 64
+      },
+      {
+        "title": "Lung",
+        "count": 2,
+        "paths": 6,
+        "relevance": 61
+      },
+      {
+        "title": "Arthritis",
+        "count": 2,
+        "paths": 3,
+        "relevance": 61
+      },
+      {
+        "title": "Disease",
+        "count": 2,
+        "paths": 3,
+        "relevance": 61
+      },
+      {
+        "title": "Ear",
+        "count": 2,
+        "paths": 3,
+        "relevance": 61
+      },
+      {
+        "title": "Injury",
+        "count": 2,
+        "paths": 3,
+        "relevance": 61
+      },
+      {
+        "title": "Skin",
+        "count": 2,
+        "paths": 3,
+        "relevance": 61
+      },
+      {
+        "title": "Smallpox",
+        "count": 2,
+        "paths": 3,
+        "relevance": 61
+      },
+      {
+        "title": "Digestion",
+        "count": 2,
+        "paths": 11,
+        "relevance": 58
+      },
+      {
+        "title": "Food",
+        "count": 2,
+        "paths": 4,
+        "relevance": 57
+      },
+      {
+        "title": "Skeletal muscle",
+        "count": 2,
+        "paths": 4,
+        "relevance": 57
+      },
+      {
+        "title": "Blood",
+        "count": 2,
+        "paths": 5,
+        "relevance": 53
       }
     ],
     "macro": [
@@ -398,73 +398,73 @@
         "title": "Blood",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Circulation and Circulatory Systems",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Digestion and Digestive Systems",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Endocrine Systems",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Excretion and Excretory Systems",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Immunity",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Integumentary Systems",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Muscles and Muscle Systems",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Nerves and Nervous Systems",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Respiration and Respiratory Systems",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Sensory Reception",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Supportive and Connective Tissues",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       }
     ]
   }

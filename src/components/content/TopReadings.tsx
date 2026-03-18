@@ -45,15 +45,29 @@ function matchColor(percent: number): string {
 }
 
 function buildRationale(item: ReadingItem, countLabel: string, contextLabel: string): string {
-  const parts: string[] = [];
-  parts.push(`Recommended across ${item.count} ${countLabel} in ${contextLabel}`);
+  const lines: string[] = [];
+
+  if (item.count >= 3) {
+    lines.push(`This appears across ${item.count} ${countLabel} in ${contextLabel}, making it one of the most broadly relevant resources here.`);
+  } else {
+    lines.push(`This appears across ${item.count} ${countLabel} in ${contextLabel}.`);
+  }
+
   if (item.sections && item.sections > item.count) {
-    parts.push(`appearing in ${item.sections} individual sections`);
+    lines.push(`It's referenced in ${item.sections} individual sections, suggesting it covers topics that recur across different areas.`);
   }
+
   if (item.paths && item.paths > (item.sections || item.count)) {
-    parts.push(`with ${item.paths} outline topic references`);
+    lines.push(`The outline maps it to ${item.paths} specific topics, indicating deep rather than surface-level relevance.`);
   }
-  return parts.join(', ') + '.';
+
+  if ((item.relevance ?? 100) >= 90) {
+    lines.push('Ranked highly because its coverage is both broad and evenly spread.');
+  } else if ((item.relevance ?? 100) >= 60) {
+    lines.push('Ranked by how evenly its coverage spreads across the outline.');
+  }
+
+  return lines.join(' ');
 }
 
 export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, contextLabel, countLabel }: TopReadingsProps) {

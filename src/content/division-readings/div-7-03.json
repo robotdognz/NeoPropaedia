@@ -3,41 +3,6 @@
   "readings": {
     "vsi": [
       {
-        "title": "Civil engineering",
-        "count": 3,
-        "paths": 10,
-        "author": "David Muir Wood",
-        "relevance": 100
-      },
-      {
-        "title": "Engineering",
-        "count": 3,
-        "paths": 7,
-        "author": "David Blockley",
-        "relevance": 100
-      },
-      {
-        "title": "City Planning",
-        "count": 3,
-        "paths": 5,
-        "author": "Carl Abbott",
-        "relevance": 100
-      },
-      {
-        "title": "Navigation",
-        "count": 3,
-        "paths": 5,
-        "author": "Jim Bennett",
-        "relevance": 100
-      },
-      {
-        "title": "Robotics",
-        "count": 3,
-        "paths": 5,
-        "author": "Alan Winfield",
-        "relevance": 100
-      },
-      {
         "title": "Energy Systems",
         "count": 3,
         "paths": 3,
@@ -52,116 +17,151 @@
         "relevance": 100
       },
       {
+        "title": "Navigation",
+        "count": 3,
+        "paths": 5,
+        "author": "Jim Bennett",
+        "relevance": 97
+      },
+      {
+        "title": "Robotics",
+        "count": 3,
+        "paths": 5,
+        "author": "Alan Winfield",
+        "relevance": 97
+      },
+      {
+        "title": "Civil engineering",
+        "count": 3,
+        "paths": 10,
+        "author": "David Muir Wood",
+        "relevance": 95
+      },
+      {
+        "title": "Engineering",
+        "count": 3,
+        "paths": 7,
+        "author": "David Blockley",
+        "relevance": 93
+      },
+      {
+        "title": "City Planning",
+        "count": 3,
+        "paths": 5,
+        "author": "Carl Abbott",
+        "relevance": 90
+      },
+      {
         "title": "Structural engineering",
         "count": 2,
         "paths": 6,
         "author": "David Blockley",
-        "relevance": 67
-      },
-      {
-        "title": "Materials",
-        "count": 2,
-        "paths": 5,
-        "author": "Christopher Hall",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "American Naval History",
         "count": 2,
         "paths": 4,
         "author": "Craig L. Symonds",
-        "relevance": 67
-      },
-      {
-        "title": "Environmental economics",
-        "count": 2,
-        "paths": 4,
-        "author": "Stephen Smith",
-        "relevance": 67
-      },
-      {
-        "title": "Climate change",
-        "count": 2,
-        "paths": 3,
-        "author": "Mark Maslin",
-        "relevance": 67
-      },
-      {
-        "title": "Forests",
-        "count": 2,
-        "paths": 3,
-        "author": "Jaboury Ghazoul",
-        "relevance": 67
-      },
-      {
-        "title": "Geology",
-        "count": 2,
-        "paths": 3,
-        "author": "Jan Zalasiewicz",
-        "relevance": 67
-      },
-      {
-        "title": "Global Economic History",
-        "count": 2,
-        "paths": 3,
-        "author": "Robert C. Allen",
-        "relevance": 67
-      },
-      {
-        "title": "Marine biology",
-        "count": 2,
-        "paths": 3,
-        "author": "Philip V. Mladenov",
-        "relevance": 67
-      },
-      {
-        "title": "The Industrial Revolution",
-        "count": 2,
-        "paths": 3,
-        "author": "Robert C. Allen",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Aerial Warfare",
         "count": 2,
         "paths": 2,
         "author": "Frank Ledwidge",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Cryptography",
         "count": 2,
         "paths": 2,
         "author": "Fred Piper, Sean Murphy",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Exploration",
         "count": 2,
         "paths": 2,
         "author": "Stewart A. Weaver",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Landscape architecture",
         "count": 2,
         "paths": 2,
         "author": "Ian Thompson",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Sound",
         "count": 2,
         "paths": 2,
         "author": "Mike Goldsmith",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Surveillance",
         "count": 2,
         "paths": 2,
         "author": "David Lyon",
-        "relevance": 67
+        "relevance": 64
+      },
+      {
+        "title": "Materials",
+        "count": 2,
+        "paths": 5,
+        "author": "Christopher Hall",
+        "relevance": 63
+      },
+      {
+        "title": "Climate change",
+        "count": 2,
+        "paths": 3,
+        "author": "Mark Maslin",
+        "relevance": 60
+      },
+      {
+        "title": "Forests",
+        "count": 2,
+        "paths": 3,
+        "author": "Jaboury Ghazoul",
+        "relevance": 60
+      },
+      {
+        "title": "Geology",
+        "count": 2,
+        "paths": 3,
+        "author": "Jan Zalasiewicz",
+        "relevance": 60
+      },
+      {
+        "title": "Global Economic History",
+        "count": 2,
+        "paths": 3,
+        "author": "Robert C. Allen",
+        "relevance": 60
+      },
+      {
+        "title": "Marine biology",
+        "count": 2,
+        "paths": 3,
+        "author": "Philip V. Mladenov",
+        "relevance": 60
+      },
+      {
+        "title": "The Industrial Revolution",
+        "count": 2,
+        "paths": 3,
+        "author": "Robert C. Allen",
+        "relevance": 60
+      },
+      {
+        "title": "Environmental economics",
+        "count": 2,
+        "paths": 4,
+        "author": "Stephen Smith",
+        "relevance": 55
       }
     ],
     "wiki": [
@@ -175,13 +175,43 @@
         "title": "Radar",
         "count": 4,
         "paths": 7,
-        "relevance": 100
+        "relevance": 97
       },
       {
-        "title": "Rocket",
+        "title": "Laser",
         "count": 3,
-        "paths": 9,
-        "relevance": 75
+        "paths": 6,
+        "relevance": 81
+      },
+      {
+        "title": "Machine",
+        "count": 3,
+        "paths": 3,
+        "relevance": 81
+      },
+      {
+        "title": "Navigation",
+        "count": 3,
+        "paths": 7,
+        "relevance": 79
+      },
+      {
+        "title": "Construction",
+        "count": 3,
+        "paths": 5,
+        "relevance": 78
+      },
+      {
+        "title": "Canal",
+        "count": 3,
+        "paths": 4,
+        "relevance": 77
+      },
+      {
+        "title": "Thomas Edison",
+        "count": 3,
+        "paths": 6,
+        "relevance": 76
       },
       {
         "title": "Engine",
@@ -190,82 +220,52 @@
         "relevance": 75
       },
       {
-        "title": "Navigation",
+        "title": "Rocket",
         "count": 3,
-        "paths": 7,
-        "relevance": 75
-      },
-      {
-        "title": "Laser",
-        "count": 3,
-        "paths": 6,
-        "relevance": 75
-      },
-      {
-        "title": "Thomas Edison",
-        "count": 3,
-        "paths": 6,
+        "paths": 9,
         "relevance": 75
       },
       {
         "title": "Car",
         "count": 3,
         "paths": 5,
-        "relevance": 75
-      },
-      {
-        "title": "Construction",
-        "count": 3,
-        "paths": 5,
-        "relevance": 75
-      },
-      {
-        "title": "Canal",
-        "count": 3,
-        "paths": 4,
-        "relevance": 75
-      },
-      {
-        "title": "Machine",
-        "count": 3,
-        "paths": 3,
-        "relevance": 75
-      },
-      {
-        "title": "Fortification",
-        "count": 2,
-        "paths": 8,
-        "relevance": 50
-      },
-      {
-        "title": "Infrastructure",
-        "count": 2,
-        "paths": 7,
-        "relevance": 50
+        "relevance": 72
       },
       {
         "title": "Aircraft",
         "count": 2,
         "paths": 6,
-        "relevance": 50
+        "relevance": 52
       },
       {
-        "title": "Electronics",
+        "title": "Henry Ford",
         "count": 2,
-        "paths": 6,
-        "relevance": 50
+        "paths": 4,
+        "relevance": 52
       },
       {
-        "title": "Engineering",
+        "title": "Architecture",
         "count": 2,
-        "paths": 6,
-        "relevance": 50
+        "paths": 2,
+        "relevance": 52
       },
       {
-        "title": "Ship",
+        "title": "Dam",
         "count": 2,
-        "paths": 6,
-        "relevance": 50
+        "paths": 2,
+        "relevance": 52
+      },
+      {
+        "title": "Mechanical engineering",
+        "count": 2,
+        "paths": 2,
+        "relevance": 52
+      },
+      {
+        "title": "Pollution",
+        "count": 2,
+        "paths": 2,
+        "relevance": 52
       },
       {
         "title": "Biotechnology",
@@ -274,118 +274,118 @@
         "relevance": 50
       },
       {
-        "title": "Metallurgy",
+        "title": "Engineering",
         "count": 2,
-        "paths": 5,
-        "relevance": 50
+        "paths": 6,
+        "relevance": 48
       },
       {
-        "title": "Henry Ford",
+        "title": "Ship",
         "count": 2,
-        "paths": 4,
-        "relevance": 50
-      },
-      {
-        "title": "Industrial Revolution",
-        "count": 2,
-        "paths": 4,
-        "relevance": 50
-      },
-      {
-        "title": "Vehicle",
-        "count": 2,
-        "paths": 4,
-        "relevance": 50
+        "paths": 6,
+        "relevance": 48
       },
       {
         "title": "Artificial intelligence",
         "count": 2,
         "paths": 3,
-        "relevance": 50
+        "relevance": 48
       },
       {
         "title": "Bridge",
         "count": 2,
         "paths": 3,
-        "relevance": 50
+        "relevance": 48
       },
       {
         "title": "Building",
         "count": 2,
         "paths": 3,
-        "relevance": 50
+        "relevance": 48
       },
       {
         "title": "Internal combustion engine",
         "count": 2,
         "paths": 3,
-        "relevance": 50
+        "relevance": 48
       },
       {
         "title": "Refrigeration",
         "count": 2,
         "paths": 3,
-        "relevance": 50
+        "relevance": 48
       },
       {
         "title": "Road",
         "count": 2,
         "paths": 3,
-        "relevance": 50
+        "relevance": 48
       },
       {
         "title": "Robotics",
         "count": 2,
         "paths": 3,
-        "relevance": 50
+        "relevance": 48
       },
       {
         "title": "Sea",
         "count": 2,
         "paths": 3,
-        "relevance": 50
+        "relevance": 48
       },
       {
         "title": "Steel",
         "count": 2,
         "paths": 3,
-        "relevance": 50
+        "relevance": 48
       },
       {
         "title": "Transport",
         "count": 2,
         "paths": 3,
-        "relevance": 50
+        "relevance": 48
       },
       {
         "title": "Wheel",
         "count": 2,
         "paths": 3,
-        "relevance": 50
+        "relevance": 48
       },
       {
-        "title": "Architecture",
+        "title": "Infrastructure",
         "count": 2,
-        "paths": 2,
-        "relevance": 50
+        "paths": 7,
+        "relevance": 46
       },
       {
-        "title": "Dam",
+        "title": "Fortification",
         "count": 2,
-        "paths": 2,
-        "relevance": 50
+        "paths": 8,
+        "relevance": 44
       },
       {
-        "title": "Mechanical engineering",
+        "title": "Industrial Revolution",
         "count": 2,
-        "paths": 2,
-        "relevance": 50
+        "paths": 4,
+        "relevance": 44
       },
       {
-        "title": "Pollution",
+        "title": "Vehicle",
         "count": 2,
-        "paths": 2,
-        "relevance": 50
+        "paths": 4,
+        "relevance": 44
+      },
+      {
+        "title": "Metallurgy",
+        "count": 2,
+        "paths": 5,
+        "relevance": 41
+      },
+      {
+        "title": "Electronics",
+        "count": 2,
+        "paths": 6,
+        "relevance": 38
       }
     ],
     "macro": [

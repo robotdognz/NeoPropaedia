@@ -10,32 +10,25 @@
         "relevance": 100
       },
       {
+        "title": "Molecular Biology",
+        "count": 2,
+        "paths": 4,
+        "author": "Aysha Divan, Janice Royds",
+        "relevance": 71
+      },
+      {
         "title": "Astrobiology",
         "count": 2,
         "paths": 5,
         "author": "David C. Catling",
-        "relevance": 67
+        "relevance": 69
       },
       {
         "title": "Genes",
         "count": 2,
         "paths": 5,
         "author": "Jonathan Slack",
-        "relevance": 67
-      },
-      {
-        "title": "Genomics",
-        "count": 2,
-        "paths": 4,
-        "author": "John M. Archibald",
-        "relevance": 67
-      },
-      {
-        "title": "Molecular Biology",
-        "count": 2,
-        "paths": 4,
-        "author": "Aysha Divan, Janice Royds",
-        "relevance": 67
+        "relevance": 69
       },
       {
         "title": "Bacteria",
@@ -50,6 +43,13 @@
         "paths": 3,
         "author": "Lewis Wolpert",
         "relevance": 67
+      },
+      {
+        "title": "Genomics",
+        "count": 2,
+        "paths": 4,
+        "author": "John M. Archibald",
+        "relevance": 62
       }
     ],
     "wiki": [
@@ -60,106 +60,106 @@
         "relevance": 100
       },
       {
-        "title": "Evolution",
-        "count": 2,
-        "paths": 20,
-        "relevance": 67
-      },
-      {
-        "title": "Life",
-        "count": 2,
-        "paths": 16,
-        "relevance": 67
-      },
-      {
-        "title": "Abiogenesis",
-        "count": 2,
-        "paths": 11,
-        "relevance": 67
-      },
-      {
-        "title": "Biology",
-        "count": 2,
-        "paths": 9,
-        "relevance": 67
-      },
-      {
-        "title": "Organism",
-        "count": 2,
-        "paths": 8,
-        "relevance": 67
-      },
-      {
-        "title": "Genetics",
-        "count": 2,
-        "paths": 7,
-        "relevance": 67
-      },
-      {
-        "title": "Natural selection",
-        "count": 2,
-        "paths": 7,
-        "relevance": 67
-      },
-      {
         "title": "Biochemistry",
         "count": 2,
         "paths": 5,
-        "relevance": 67
+        "relevance": 63
       },
       {
         "title": "DNA",
         "count": 2,
         "paths": 5,
-        "relevance": 67
+        "relevance": 63
       },
       {
-        "title": "Bacteria",
+        "title": "Life",
         "count": 2,
-        "paths": 4,
-        "relevance": 67
+        "paths": 16,
+        "relevance": 62
       },
       {
-        "title": "Reproduction",
+        "title": "Biology",
         "count": 2,
-        "paths": 4,
-        "relevance": 67
-      },
-      {
-        "title": "RNA",
-        "count": 2,
-        "paths": 4,
-        "relevance": 67
+        "paths": 9,
+        "relevance": 61
       },
       {
         "title": "Molecular biology",
         "count": 2,
         "paths": 3,
-        "relevance": 67
+        "relevance": 61
       },
       {
         "title": "Photosynthesis",
         "count": 2,
         "paths": 3,
-        "relevance": 67
+        "relevance": 61
       },
       {
         "title": "Protein",
         "count": 2,
         "paths": 3,
-        "relevance": 67
+        "relevance": 61
       },
       {
         "title": "Taxonomy (biology)",
         "count": 2,
         "paths": 3,
-        "relevance": 67
+        "relevance": 61
       },
       {
         "title": "Virus",
         "count": 2,
         "paths": 3,
-        "relevance": 67
+        "relevance": 61
+      },
+      {
+        "title": "Genetics",
+        "count": 2,
+        "paths": 7,
+        "relevance": 59
+      },
+      {
+        "title": "Organism",
+        "count": 2,
+        "paths": 8,
+        "relevance": 56
+      },
+      {
+        "title": "Bacteria",
+        "count": 2,
+        "paths": 4,
+        "relevance": 56
+      },
+      {
+        "title": "Reproduction",
+        "count": 2,
+        "paths": 4,
+        "relevance": 56
+      },
+      {
+        "title": "RNA",
+        "count": 2,
+        "paths": 4,
+        "relevance": 56
+      },
+      {
+        "title": "Natural selection",
+        "count": 2,
+        "paths": 7,
+        "relevance": 47
+      },
+      {
+        "title": "Evolution",
+        "count": 2,
+        "paths": 20,
+        "relevance": 42
+      },
+      {
+        "title": "Abiogenesis",
+        "count": 2,
+        "paths": 11,
+        "relevance": 41
       }
     ],
     "macro": [

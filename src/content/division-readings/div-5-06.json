@@ -3,20 +3,6 @@
   "readings": {
     "vsi": [
       {
-        "title": "Universities and Colleges",
-        "count": 2,
-        "paths": 4,
-        "author": "David Palfreyman, Paul Temple",
-        "relevance": 100
-      },
-      {
-        "title": "Learning",
-        "count": 2,
-        "paths": 3,
-        "author": "Mark Haselgrove",
-        "relevance": 100
-      },
-      {
         "title": "Education",
         "count": 2,
         "paths": 2,
@@ -29,6 +15,20 @@
         "paths": 2,
         "author": "James Marten",
         "relevance": 100
+      },
+      {
+        "title": "Learning",
+        "count": 2,
+        "paths": 3,
+        "author": "Mark Haselgrove",
+        "relevance": 95
+      },
+      {
+        "title": "Universities and Colleges",
+        "count": 2,
+        "paths": 4,
+        "author": "David Palfreyman, Paul Temple",
+        "relevance": 89
       }
     ],
     "wiki": [
@@ -42,13 +42,13 @@
         "title": "School",
         "count": 2,
         "paths": 8,
-        "relevance": 100
+        "relevance": 98
       },
       {
         "title": "Age of Enlightenment",
         "count": 2,
         "paths": 6,
-        "relevance": 100
+        "relevance": 96
       }
     ],
     "macro": [

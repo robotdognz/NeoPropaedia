@@ -3,66 +3,10 @@
   "readings": {
     "vsi": [
       {
-        "title": "Quantum Theory",
-        "count": 2,
-        "paths": 5,
-        "author": "John Polkinghorne",
-        "relevance": 100
-      },
-      {
-        "title": "Matter",
-        "count": 2,
-        "paths": 4,
-        "author": "Geoff Cottrell",
-        "relevance": 100
-      },
-      {
-        "title": "Nuclear Physics",
-        "count": 2,
-        "paths": 4,
-        "author": "Frank Close",
-        "relevance": 100
-      },
-      {
         "title": "The Elements",
         "count": 2,
         "paths": 4,
         "author": "Philip Ball",
-        "relevance": 100
-      },
-      {
-        "title": "The History of Chemistry",
-        "count": 2,
-        "paths": 4,
-        "author": "William H. Brock",
-        "relevance": 100
-      },
-      {
-        "title": "Waves",
-        "count": 2,
-        "paths": 4,
-        "author": "Mike Goldsmith",
-        "relevance": 100
-      },
-      {
-        "title": "Isotopes",
-        "count": 2,
-        "paths": 3,
-        "author": "Rob Ellam",
-        "relevance": 100
-      },
-      {
-        "title": "Nothing",
-        "count": 2,
-        "paths": 3,
-        "author": "Frank Close",
-        "relevance": 100
-      },
-      {
-        "title": "Physical chemistry",
-        "count": 2,
-        "paths": 3,
-        "author": "Peter Atkins",
         "relevance": 100
       },
       {
@@ -99,31 +43,69 @@
         "paths": 2,
         "author": "Eric R. Scerri",
         "relevance": 100
+      },
+      {
+        "title": "Quantum Theory",
+        "count": 2,
+        "paths": 5,
+        "author": "John Polkinghorne",
+        "relevance": 98
+      },
+      {
+        "title": "Isotopes",
+        "count": 2,
+        "paths": 3,
+        "author": "Rob Ellam",
+        "relevance": 95
+      },
+      {
+        "title": "Nothing",
+        "count": 2,
+        "paths": 3,
+        "author": "Frank Close",
+        "relevance": 95
+      },
+      {
+        "title": "Physical chemistry",
+        "count": 2,
+        "paths": 3,
+        "author": "Peter Atkins",
+        "relevance": 95
+      },
+      {
+        "title": "Matter",
+        "count": 2,
+        "paths": 4,
+        "author": "Geoff Cottrell",
+        "relevance": 89
+      },
+      {
+        "title": "Nuclear Physics",
+        "count": 2,
+        "paths": 4,
+        "author": "Frank Close",
+        "relevance": 89
+      },
+      {
+        "title": "The History of Chemistry",
+        "count": 2,
+        "paths": 4,
+        "author": "William H. Brock",
+        "relevance": 89
+      },
+      {
+        "title": "Waves",
+        "count": 2,
+        "paths": 4,
+        "author": "Mike Goldsmith",
+        "relevance": 89
       }
     ],
     "wiki": [
       {
-        "title": "Neutron",
-        "count": 2,
-        "paths": 9,
-        "relevance": 100
-      },
-      {
         "title": "Atom",
         "count": 2,
         "paths": 8,
-        "relevance": 100
-      },
-      {
-        "title": "Radioactive decay",
-        "count": 2,
-        "paths": 8,
-        "relevance": 100
-      },
-      {
-        "title": "Particle physics",
-        "count": 2,
-        "paths": 7,
         "relevance": 100
       },
       {
@@ -134,12 +116,6 @@
       },
       {
         "title": "Chemical element",
-        "count": 2,
-        "paths": 6,
-        "relevance": 100
-      },
-      {
-        "title": "Hydrogen",
         "count": 2,
         "paths": 6,
         "relevance": 100
@@ -157,40 +133,64 @@
         "relevance": 100
       },
       {
-        "title": "Standard Model",
-        "count": 2,
-        "paths": 6,
-        "relevance": 100
-      },
-      {
         "title": "Subatomic particle",
         "count": 2,
         "paths": 6,
         "relevance": 100
       },
       {
+        "title": "Particle physics",
+        "count": 2,
+        "paths": 7,
+        "relevance": 99
+      },
+      {
         "title": "Electromagnetic radiation",
         "count": 2,
         "paths": 5,
-        "relevance": 100
+        "relevance": 98
       },
       {
         "title": "Matter",
         "count": 2,
         "paths": 5,
-        "relevance": 100
+        "relevance": 98
       },
       {
         "title": "Photon",
         "count": 2,
         "paths": 5,
-        "relevance": 100
+        "relevance": 98
       },
       {
         "title": "Quantum mechanics",
         "count": 2,
         "paths": 5,
-        "relevance": 100
+        "relevance": 98
+      },
+      {
+        "title": "Hydrogen",
+        "count": 2,
+        "paths": 6,
+        "relevance": 95
+      },
+      {
+        "title": "Standard Model",
+        "count": 2,
+        "paths": 6,
+        "relevance": 95
+      },
+      {
+        "title": "Neutron",
+        "count": 2,
+        "paths": 9,
+        "relevance": 86
+      },
+      {
+        "title": "Radioactive decay",
+        "count": 2,
+        "paths": 8,
+        "relevance": 73
       }
     ],
     "macro": [

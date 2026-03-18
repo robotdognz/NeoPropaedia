@@ -10,94 +10,70 @@
         "relevance": 100
       },
       {
-        "title": "Geophysical and Climate Hazards",
-        "count": 3,
-        "paths": 7,
-        "author": "Bill McGuire",
-        "relevance": 100
-      },
-      {
         "title": "Earth System Science",
         "count": 3,
         "paths": 5,
         "author": "Tim Lenton",
-        "relevance": 100
+        "relevance": 99
       },
       {
-        "title": "Weather",
-        "count": 2,
-        "paths": 5,
-        "author": "Storm Dunlop",
-        "relevance": 67
+        "title": "Geophysical and Climate Hazards",
+        "count": 3,
+        "paths": 7,
+        "author": "Bill McGuire",
+        "relevance": 92
       },
       {
         "title": "Climate change",
         "count": 2,
         "paths": 4,
         "author": "Mark Maslin",
-        "relevance": 67
-      },
-      {
-        "title": "The Earth",
-        "count": 2,
-        "paths": 3,
-        "author": "Martin Redfern",
-        "relevance": 67
-      },
-      {
-        "title": "The Ice Age",
-        "count": 2,
-        "paths": 3,
-        "author": "Jamie Woodward",
-        "relevance": 67
-      },
-      {
-        "title": "Waves",
-        "count": 2,
-        "paths": 3,
-        "author": "Mike Goldsmith",
-        "relevance": 67
+        "relevance": 65
       },
       {
         "title": "The Atmosphere",
         "count": 2,
         "paths": 2,
         "author": "Paul Palmer",
-        "relevance": 67
+        "relevance": 65
       },
       {
         "title": "The Sun",
         "count": 2,
         "paths": 2,
         "author": "Philip Judge",
-        "relevance": 67
+        "relevance": 65
+      },
+      {
+        "title": "Weather",
+        "count": 2,
+        "paths": 5,
+        "author": "Storm Dunlop",
+        "relevance": 64
+      },
+      {
+        "title": "The Earth",
+        "count": 2,
+        "paths": 3,
+        "author": "Martin Redfern",
+        "relevance": 62
+      },
+      {
+        "title": "The Ice Age",
+        "count": 2,
+        "paths": 3,
+        "author": "Jamie Woodward",
+        "relevance": 62
+      },
+      {
+        "title": "Waves",
+        "count": 2,
+        "paths": 3,
+        "author": "Mike Goldsmith",
+        "relevance": 62
       }
     ],
     "wiki": [
-      {
-        "title": "Atmosphere of Earth",
-        "count": 3,
-        "paths": 18,
-        "relevance": 100
-      },
-      {
-        "title": "Wind",
-        "count": 3,
-        "paths": 14,
-        "relevance": 100
-      },
-      {
-        "title": "Cloud",
-        "count": 3,
-        "paths": 10,
-        "relevance": 100
-      },
-      {
-        "title": "Rain",
-        "count": 3,
-        "paths": 10,
-        "relevance": 100
-      },
       {
         "title": "Snow",
         "count": 3,
@@ -108,37 +84,37 @@
         "title": "Carbon dioxide",
         "count": 3,
         "paths": 4,
-        "relevance": 100
+        "relevance": 99
       },
       {
         "title": "Tropical cyclone",
         "count": 3,
         "paths": 4,
-        "relevance": 100
+        "relevance": 99
       },
       {
-        "title": "Weather",
-        "count": 2,
+        "title": "Rain",
+        "count": 3,
         "paths": 10,
-        "relevance": 67
+        "relevance": 98
       },
       {
-        "title": "Climate",
-        "count": 2,
-        "paths": 7,
-        "relevance": 67
+        "title": "Cloud",
+        "count": 3,
+        "paths": 10,
+        "relevance": 90
       },
       {
-        "title": "Storm",
-        "count": 2,
-        "paths": 7,
-        "relevance": 67
+        "title": "Wind",
+        "count": 3,
+        "paths": 14,
+        "relevance": 90
       },
       {
-        "title": "Arctic Ocean",
-        "count": 2,
-        "paths": 5,
-        "relevance": 66
+        "title": "Atmosphere of Earth",
+        "count": 3,
+        "paths": 18,
+        "relevance": 83
       },
       {
         "title": "Amazon rainforest",
@@ -165,34 +141,58 @@
         "relevance": 66
       },
       {
-        "title": "Water",
+        "title": "Climate",
         "count": 2,
-        "paths": 4,
-        "relevance": 66
+        "paths": 7,
+        "relevance": 65
+      },
+      {
+        "title": "Weather",
+        "count": 2,
+        "paths": 10,
+        "relevance": 65
+      },
+      {
+        "title": "Arctic Ocean",
+        "count": 2,
+        "paths": 5,
+        "relevance": 65
       },
       {
         "title": "Flood",
         "count": 2,
         "paths": 3,
-        "relevance": 66
+        "relevance": 63
       },
       {
         "title": "Fossil fuel",
         "count": 2,
         "paths": 3,
-        "relevance": 66
+        "relevance": 63
       },
       {
         "title": "Indian Ocean",
         "count": 2,
         "paths": 3,
-        "relevance": 66
+        "relevance": 63
       },
       {
         "title": "Lightning",
         "count": 2,
         "paths": 3,
-        "relevance": 66
+        "relevance": 63
+      },
+      {
+        "title": "Storm",
+        "count": 2,
+        "paths": 7,
+        "relevance": 60
+      },
+      {
+        "title": "Water",
+        "count": 2,
+        "paths": 4,
+        "relevance": 58
       }
     ]
   }

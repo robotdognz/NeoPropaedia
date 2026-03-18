@@ -3,13 +3,6 @@
   "readings": {
     "vsi": [
       {
-        "title": "Physical chemistry",
-        "count": 6,
-        "paths": 15,
-        "author": "Peter Atkins",
-        "relevance": 100
-      },
-      {
         "title": "Materials",
         "count": 6,
         "paths": 12,
@@ -17,272 +10,273 @@
         "relevance": 100
       },
       {
-        "title": "The Laws of Thermodynamics",
-        "count": 5,
-        "paths": 11,
+        "title": "Physical chemistry",
+        "count": 6,
+        "paths": 15,
         "author": "Peter Atkins",
-        "relevance": 83
-      },
-      {
-        "title": "Chemistry",
-        "count": 5,
-        "paths": 9,
-        "author": "Peter Atkins",
-        "relevance": 83
-      },
-      {
-        "title": "Molecules",
-        "count": 5,
-        "paths": 9,
-        "author": "Philip Ball",
-        "relevance": 83
-      },
-      {
-        "title": "Quantum Theory",
-        "count": 5,
-        "paths": 8,
-        "author": "John Polkinghorne",
-        "relevance": 83
-      },
-      {
-        "title": "Waves",
-        "count": 5,
-        "paths": 7,
-        "author": "Mike Goldsmith",
-        "relevance": 83
-      },
-      {
-        "title": "Soft Matter",
-        "count": 5,
-        "paths": 6,
-        "author": "Tom McLeish",
-        "relevance": 83
+        "relevance": 96
       },
       {
         "title": "Physics",
         "count": 5,
         "paths": 5,
         "author": "Sidney Perkowitz",
-        "relevance": 83
+        "relevance": 90
       },
       {
-        "title": "Condensed Matter Physics",
-        "count": 4,
-        "paths": 8,
-        "author": "Ross McKenzie",
-        "relevance": 67
+        "title": "The Laws of Thermodynamics",
+        "count": 5,
+        "paths": 11,
+        "author": "Peter Atkins",
+        "relevance": 89
       },
       {
-        "title": "Light",
-        "count": 4,
+        "title": "Soft Matter",
+        "count": 5,
+        "paths": 6,
+        "author": "Tom McLeish",
+        "relevance": 88
+      },
+      {
+        "title": "Quantum Theory",
+        "count": 5,
         "paths": 8,
-        "author": "Ian A. Walmsley",
-        "relevance": 67
+        "author": "John Polkinghorne",
+        "relevance": 88
+      },
+      {
+        "title": "Waves",
+        "count": 5,
+        "paths": 7,
+        "author": "Mike Goldsmith",
+        "relevance": 87
+      },
+      {
+        "title": "Molecules",
+        "count": 5,
+        "paths": 9,
+        "author": "Philip Ball",
+        "relevance": 86
+      },
+      {
+        "title": "Chemistry",
+        "count": 5,
+        "paths": 9,
+        "author": "Peter Atkins",
+        "relevance": 82
       },
       {
         "title": "Radioactivity",
         "count": 4,
         "paths": 7,
         "author": "Claudio Tuniz",
-        "relevance": 67
+        "relevance": 74
       },
       {
         "title": "The Periodic Table",
         "count": 4,
         "paths": 7,
         "author": "Eric R. Scerri",
-        "relevance": 67
-      },
-      {
-        "title": "Water",
-        "count": 4,
-        "paths": 7,
-        "author": "John Finney",
-        "relevance": 67
+        "relevance": 74
       },
       {
         "title": "The History of Chemistry",
         "count": 4,
         "paths": 6,
         "author": "William H. Brock",
-        "relevance": 67
+        "relevance": 73
+      },
+      {
+        "title": "Condensed Matter Physics",
+        "count": 4,
+        "paths": 8,
+        "author": "Ross McKenzie",
+        "relevance": 73
+      },
+      {
+        "title": "Light",
+        "count": 4,
+        "paths": 8,
+        "author": "Ian A. Walmsley",
+        "relevance": 73
+      },
+      {
+        "title": "Water",
+        "count": 4,
+        "paths": 7,
+        "author": "John Finney",
+        "relevance": 71
       },
       {
         "title": "Magnetism",
         "count": 3,
         "paths": 6,
         "author": "Stephen J. Blundell",
-        "relevance": 50
-      },
-      {
-        "title": "Minerals",
-        "count": 3,
-        "paths": 6,
-        "author": "David Vaughan",
-        "relevance": 50
+        "relevance": 59
       },
       {
         "title": "Relativity",
         "count": 3,
         "paths": 6,
         "author": "Russell Stannard",
-        "relevance": 50
-      },
-      {
-        "title": "The Elements",
-        "count": 3,
-        "paths": 6,
-        "author": "Philip Ball",
-        "relevance": 50
+        "relevance": 59
       },
       {
         "title": "The Sun",
         "count": 3,
         "paths": 6,
         "author": "Philip Judge",
-        "relevance": 50
+        "relevance": 59
       },
       {
         "title": "Crystallography",
         "count": 3,
         "paths": 5,
         "author": "A. M. Glazer",
-        "relevance": 50
+        "relevance": 57
       },
       {
         "title": "Matter",
         "count": 3,
         "paths": 5,
         "author": "Geoff Cottrell",
-        "relevance": 50
+        "relevance": 57
       },
       {
         "title": "Nuclear Physics",
         "count": 3,
         "paths": 5,
         "author": "Frank Close",
-        "relevance": 50
+        "relevance": 57
       },
       {
         "title": "Biochemistry",
         "count": 3,
         "paths": 4,
         "author": "Mark Lorch",
-        "relevance": 50
+        "relevance": 57
       },
       {
         "title": "Sound",
         "count": 3,
         "paths": 4,
         "author": "Mike Goldsmith",
-        "relevance": 50
+        "relevance": 57
       },
       {
         "title": "Superconductivity",
         "count": 3,
         "paths": 4,
         "author": "Stephen J. Blundell",
-        "relevance": 50
+        "relevance": 57
       },
       {
-        "title": "Entropy",
-        "count": 2,
-        "paths": 5,
-        "author": "James Binney",
-        "relevance": 33
+        "title": "Minerals",
+        "count": 3,
+        "paths": 6,
+        "author": "David Vaughan",
+        "relevance": 56
       },
       {
-        "title": "Enzymes",
-        "count": 2,
-        "paths": 5,
-        "author": "Paul Engel",
-        "relevance": 33
-      },
-      {
-        "title": "Isotopes",
-        "count": 2,
-        "paths": 5,
-        "author": "Rob Ellam",
-        "relevance": 33
-      },
-      {
-        "title": "Microscopy",
-        "count": 2,
-        "paths": 5,
-        "author": "Terence Allen",
-        "relevance": 33
-      },
-      {
-        "title": "Nuclear power",
-        "count": 2,
-        "paths": 5,
-        "author": "Maxwell Irvine",
-        "relevance": 33
+        "title": "The Elements",
+        "count": 3,
+        "paths": 6,
+        "author": "Philip Ball",
+        "relevance": 56
       },
       {
         "title": "Organic Chemistry",
         "count": 2,
         "paths": 4,
         "author": "Graham Patrick",
-        "relevance": 33
-      },
-      {
-        "title": "Planets",
-        "count": 2,
-        "paths": 4,
-        "author": "David A. Rothery",
-        "relevance": 33
-      },
-      {
-        "title": "Geophysics",
-        "count": 2,
-        "paths": 3,
-        "author": "William Lowrie",
-        "relevance": 33
-      },
-      {
-        "title": "Stars",
-        "count": 2,
-        "paths": 3,
-        "author": "Andrew King",
-        "relevance": 33
+        "relevance": 38
       },
       {
         "title": "Fluid Mechanics",
         "count": 2,
         "paths": 2,
         "author": "Eric Lauga",
-        "relevance": 33
+        "relevance": 38
       },
       {
         "title": "The Atmosphere",
         "count": 2,
         "paths": 2,
         "author": "Paul Palmer",
-        "relevance": 33
+        "relevance": 38
       },
       {
         "title": "The Earth",
         "count": 2,
         "paths": 2,
         "author": "Martin Redfern",
-        "relevance": 33
+        "relevance": 38
       },
       {
         "title": "The History of Physics",
         "count": 2,
         "paths": 2,
         "author": "J. L. Heilbron",
-        "relevance": 33
+        "relevance": 38
+      },
+      {
+        "title": "Entropy",
+        "count": 2,
+        "paths": 5,
+        "author": "James Binney",
+        "relevance": 37
+      },
+      {
+        "title": "Isotopes",
+        "count": 2,
+        "paths": 5,
+        "author": "Rob Ellam",
+        "relevance": 37
+      },
+      {
+        "title": "Microscopy",
+        "count": 2,
+        "paths": 5,
+        "author": "Terence Allen",
+        "relevance": 37
+      },
+      {
+        "title": "Nuclear power",
+        "count": 2,
+        "paths": 5,
+        "author": "Maxwell Irvine",
+        "relevance": 37
+      },
+      {
+        "title": "Geophysics",
+        "count": 2,
+        "paths": 3,
+        "author": "William Lowrie",
+        "relevance": 36
+      },
+      {
+        "title": "Stars",
+        "count": 2,
+        "paths": 3,
+        "author": "Andrew King",
+        "relevance": 36
+      },
+      {
+        "title": "Planets",
+        "count": 2,
+        "paths": 4,
+        "author": "David A. Rothery",
+        "relevance": 32
+      },
+      {
+        "title": "Enzymes",
+        "count": 2,
+        "paths": 5,
+        "author": "Paul Engel",
+        "relevance": 30
       }
     ],
     "wiki": [
-      {
-        "title": "Thermodynamics",
-        "count": 5,
-        "paths": 17,
-        "relevance": 100
-      },
       {
         "title": "Electromagnetic radiation",
         "count": 5,
@@ -290,52 +284,112 @@
         "relevance": 100
       },
       {
-        "title": "Wave",
-        "count": 4,
+        "title": "Thermodynamics",
+        "count": 5,
         "paths": 17,
-        "relevance": 80
+        "relevance": 97
       },
       {
         "title": "Physical chemistry",
         "count": 4,
         "paths": 16,
-        "relevance": 80
+        "relevance": 89
       },
       {
         "title": "Quantum mechanics",
         "count": 4,
         "paths": 12,
-        "relevance": 80
+        "relevance": 88
       },
       {
         "title": "Inorganic chemistry",
         "count": 4,
         "paths": 11,
-        "relevance": 80
+        "relevance": 85
       },
       {
         "title": "Water",
         "count": 4,
         "paths": 9,
-        "relevance": 80
+        "relevance": 84
+      },
+      {
+        "title": "Wave",
+        "count": 4,
+        "paths": 17,
+        "relevance": 83
+      },
+      {
+        "title": "Energy",
+        "count": 3,
+        "paths": 9,
+        "relevance": 68
+      },
+      {
+        "title": "Temperature",
+        "count": 3,
+        "paths": 9,
+        "relevance": 68
+      },
+      {
+        "title": "Carbon",
+        "count": 3,
+        "paths": 8,
+        "relevance": 67
+      },
+      {
+        "title": "James Clerk Maxwell",
+        "count": 3,
+        "paths": 8,
+        "relevance": 67
+      },
+      {
+        "title": "Antoine Lavoisier",
+        "count": 3,
+        "paths": 4,
+        "relevance": 67
+      },
+      {
+        "title": "Atom",
+        "count": 3,
+        "paths": 6,
+        "relevance": 66
+      },
+      {
+        "title": "Albert Einstein",
+        "count": 3,
+        "paths": 7,
+        "relevance": 66
+      },
+      {
+        "title": "Magnetism",
+        "count": 3,
+        "paths": 9,
+        "relevance": 65
       },
       {
         "title": "Electron",
         "count": 3,
         "paths": 16,
-        "relevance": 60
+        "relevance": 65
       },
       {
         "title": "Acid–base reaction",
         "count": 3,
         "paths": 10,
-        "relevance": 60
+        "relevance": 63
       },
       {
         "title": "Electromagnetism",
         "count": 3,
         "paths": 10,
-        "relevance": 60
+        "relevance": 63
+      },
+      {
+        "title": "Carbon dioxide",
+        "count": 3,
+        "paths": 5,
+        "relevance": 63
       },
       {
         "title": "Gas",
@@ -347,118 +401,142 @@
         "title": "Chemical bond",
         "count": 3,
         "paths": 9,
-        "relevance": 60
+        "relevance": 58
       },
       {
-        "title": "Energy",
-        "count": 3,
-        "paths": 9,
-        "relevance": 60
-      },
-      {
-        "title": "Magnetism",
-        "count": 3,
-        "paths": 9,
-        "relevance": 60
-      },
-      {
-        "title": "Temperature",
-        "count": 3,
-        "paths": 9,
-        "relevance": 60
-      },
-      {
-        "title": "Carbon",
-        "count": 3,
-        "paths": 8,
-        "relevance": 60
-      },
-      {
-        "title": "James Clerk Maxwell",
-        "count": 3,
-        "paths": 8,
-        "relevance": 60
-      },
-      {
-        "title": "Albert Einstein",
-        "count": 3,
-        "paths": 7,
-        "relevance": 60
-      },
-      {
-        "title": "Atom",
-        "count": 3,
-        "paths": 6,
-        "relevance": 60
-      },
-      {
-        "title": "Carbon dioxide",
-        "count": 3,
-        "paths": 5,
-        "relevance": 60
-      },
-      {
-        "title": "Antoine Lavoisier",
-        "count": 3,
+        "title": "Chemistry",
+        "count": 2,
         "paths": 4,
-        "relevance": 60
+        "relevance": 45
       },
       {
-        "title": "Plasma (physics)",
+        "title": "Engine",
         "count": 2,
-        "paths": 18,
-        "relevance": 40
+        "paths": 4,
+        "relevance": 45
       },
       {
-        "title": "Light",
+        "title": "Proton",
         "count": 2,
-        "paths": 12,
-        "relevance": 40
+        "paths": 4,
+        "relevance": 45
       },
       {
-        "title": "Chemical reaction",
+        "title": "Silicon",
         "count": 2,
-        "paths": 9,
-        "relevance": 40
+        "paths": 4,
+        "relevance": 45
       },
       {
-        "title": "Semiconductor",
+        "title": "Star",
         "count": 2,
-        "paths": 9,
-        "relevance": 40
+        "paths": 2,
+        "relevance": 45
       },
       {
-        "title": "State of matter",
+        "title": "Vacuum",
         "count": 2,
-        "paths": 8,
-        "relevance": 40
+        "paths": 2,
+        "relevance": 45
       },
       {
         "title": "Liquid",
         "count": 2,
         "paths": 7,
-        "relevance": 40
-      },
-      {
-        "title": "Mineral",
-        "count": 2,
-        "paths": 7,
-        "relevance": 40
+        "relevance": 44
       },
       {
         "title": "Optics",
         "count": 2,
         "paths": 7,
-        "relevance": 40
+        "relevance": 44
       },
       {
         "title": "Photon",
         "count": 2,
         "paths": 7,
-        "relevance": 40
+        "relevance": 44
       },
       {
         "title": "Steel",
+        "count": 2,
+        "paths": 7,
+        "relevance": 44
+      },
+      {
+        "title": "Copper",
+        "count": 2,
+        "paths": 5,
+        "relevance": 44
+      },
+      {
+        "title": "Electric battery",
+        "count": 2,
+        "paths": 5,
+        "relevance": 44
+      },
+      {
+        "title": "Speed of light",
+        "count": 2,
+        "paths": 5,
+        "relevance": 44
+      },
+      {
+        "title": "State of matter",
+        "count": 2,
+        "paths": 8,
+        "relevance": 43
+      },
+      {
+        "title": "Light",
+        "count": 2,
+        "paths": 12,
+        "relevance": 42
+      },
+      {
+        "title": "Biochemistry",
+        "count": 2,
+        "paths": 6,
+        "relevance": 42
+      },
+      {
+        "title": "Electricity",
+        "count": 2,
+        "paths": 6,
+        "relevance": 42
+      },
+      {
+        "title": "Metallurgy",
+        "count": 2,
+        "paths": 6,
+        "relevance": 42
+      },
+      {
+        "title": "Organic chemistry",
+        "count": 2,
+        "paths": 6,
+        "relevance": 42
+      },
+      {
+        "title": "Oxygen",
+        "count": 2,
+        "paths": 6,
+        "relevance": 42
+      },
+      {
+        "title": "Atmosphere of Earth",
+        "count": 2,
+        "paths": 3,
+        "relevance": 42
+      },
+      {
+        "title": "Natural gas",
+        "count": 2,
+        "paths": 3,
+        "relevance": 42
+      },
+      {
+        "title": "Mineral",
         "count": 2,
         "paths": 7,
         "relevance": 40
@@ -470,118 +548,40 @@
         "relevance": 40
       },
       {
-        "title": "Biochemistry",
-        "count": 2,
-        "paths": 6,
-        "relevance": 40
-      },
-      {
-        "title": "Electricity",
-        "count": 2,
-        "paths": 6,
-        "relevance": 40
-      },
-      {
-        "title": "Metallurgy",
-        "count": 2,
-        "paths": 6,
-        "relevance": 40
-      },
-      {
-        "title": "Organic chemistry",
-        "count": 2,
-        "paths": 6,
-        "relevance": 40
-      },
-      {
-        "title": "Oxygen",
-        "count": 2,
-        "paths": 6,
-        "relevance": 40
-      },
-      {
-        "title": "Copper",
-        "count": 2,
-        "paths": 5,
-        "relevance": 40
-      },
-      {
-        "title": "Electric battery",
-        "count": 2,
-        "paths": 5,
-        "relevance": 40
-      },
-      {
-        "title": "Speed of light",
-        "count": 2,
-        "paths": 5,
-        "relevance": 40
-      },
-      {
-        "title": "Chemistry",
-        "count": 2,
-        "paths": 4,
-        "relevance": 40
-      },
-      {
-        "title": "Engine",
-        "count": 2,
-        "paths": 4,
-        "relevance": 40
-      },
-      {
         "title": "Force",
         "count": 2,
         "paths": 4,
-        "relevance": 40
+        "relevance": 38
       },
       {
         "title": "Momentum",
         "count": 2,
         "paths": 4,
-        "relevance": 40
+        "relevance": 38
       },
       {
         "title": "Photosynthesis",
         "count": 2,
         "paths": 4,
-        "relevance": 40
+        "relevance": 38
       },
       {
-        "title": "Proton",
+        "title": "Plasma (physics)",
         "count": 2,
-        "paths": 4,
-        "relevance": 40
+        "paths": 18,
+        "relevance": 28
       },
       {
-        "title": "Silicon",
+        "title": "Chemical reaction",
         "count": 2,
-        "paths": 4,
-        "relevance": 40
+        "paths": 9,
+        "relevance": 28
       },
       {
-        "title": "Atmosphere of Earth",
+        "title": "Semiconductor",
         "count": 2,
-        "paths": 3,
-        "relevance": 40
-      },
-      {
-        "title": "Natural gas",
-        "count": 2,
-        "paths": 3,
-        "relevance": 40
-      },
-      {
-        "title": "Star",
-        "count": 2,
-        "paths": 2,
-        "relevance": 40
-      },
-      {
-        "title": "Vacuum",
-        "count": 2,
-        "paths": 2,
-        "relevance": 40
+        "paths": 9,
+        "relevance": 28
       }
     ],
     "macro": [
@@ -595,25 +595,25 @@
         "title": "Chemical Compounds",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Electromagnetic Radiation",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Energy Conversion",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Physical Sciences, The",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       }
     ]
   }

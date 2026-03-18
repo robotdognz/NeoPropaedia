@@ -3,34 +3,6 @@
   "readings": {
     "vsi": [
       {
-        "title": "Democracy",
-        "count": 3,
-        "paths": 5,
-        "author": "Bernard Crick",
-        "relevance": 100
-      },
-      {
-        "title": "Authoritarianism",
-        "count": 3,
-        "paths": 4,
-        "author": "James Loxton",
-        "relevance": 100
-      },
-      {
-        "title": "Governance",
-        "count": 3,
-        "paths": 4,
-        "author": "Mark Bevir",
-        "relevance": 100
-      },
-      {
-        "title": "Terrorism",
-        "count": 3,
-        "paths": 4,
-        "author": "Charles Townshend",
-        "relevance": 100
-      },
-      {
         "title": "International Relations",
         "count": 3,
         "paths": 3,
@@ -45,88 +17,116 @@
         "relevance": 100
       },
       {
-        "title": "International security",
-        "count": 2,
-        "paths": 3,
-        "author": "Christopher S. Browning",
-        "relevance": 67
+        "title": "Democracy",
+        "count": 3,
+        "paths": 5,
+        "author": "Bernard Crick",
+        "relevance": 97
       },
       {
-        "title": "Public Administration",
-        "count": 2,
-        "paths": 3,
-        "author": "Stella Z. Theodoulou, Ravi K. Roy",
-        "relevance": 67
+        "title": "Authoritarianism",
+        "count": 3,
+        "paths": 4,
+        "author": "James Loxton",
+        "relevance": 96
       },
       {
-        "title": "The American Presidency",
-        "count": 2,
-        "paths": 3,
-        "author": "Charles O. Jones",
-        "relevance": 67
+        "title": "Governance",
+        "count": 3,
+        "paths": 4,
+        "author": "Mark Bevir",
+        "relevance": 96
       },
       {
-        "title": "The Rule of Law",
-        "count": 2,
-        "paths": 3,
-        "author": "Aziz Z. Huq",
-        "relevance": 67
+        "title": "Terrorism",
+        "count": 3,
+        "paths": 4,
+        "author": "Charles Townshend",
+        "relevance": 96
       },
       {
         "title": "Diplomacy",
         "count": 2,
         "paths": 2,
         "author": "Joseph M. Siracusa",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Federalism",
         "count": 2,
         "paths": 2,
         "author": "Mark J. Rozell, Clyde Wilcox",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Magna Carta",
         "count": 2,
         "paths": 2,
         "author": "Nicholas Vincent",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Nationalism",
         "count": 2,
         "paths": 2,
         "author": "Steven Grosby",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Populism",
         "count": 2,
         "paths": 2,
         "author": "Cas Mudde, Cristsbal Rovia Kalwasser",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Revolutions",
         "count": 2,
         "paths": 2,
         "author": "Jack A. Goldstone",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "The European Union",
         "count": 2,
         "paths": 2,
         "author": "John Pinder, Simon Usherwood",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "The United Nations",
         "count": 2,
         "paths": 2,
         "author": "Jussi M. Hanhimäki",
-        "relevance": 67
+        "relevance": 64
+      },
+      {
+        "title": "International security",
+        "count": 2,
+        "paths": 3,
+        "author": "Christopher S. Browning",
+        "relevance": 61
+      },
+      {
+        "title": "Public Administration",
+        "count": 2,
+        "paths": 3,
+        "author": "Stella Z. Theodoulou, Ravi K. Roy",
+        "relevance": 61
+      },
+      {
+        "title": "The American Presidency",
+        "count": 2,
+        "paths": 3,
+        "author": "Charles O. Jones",
+        "relevance": 61
+      },
+      {
+        "title": "The Rule of Law",
+        "count": 2,
+        "paths": 3,
+        "author": "Aziz Z. Huq",
+        "relevance": 61
       }
     ],
     "wiki": [
@@ -137,64 +137,58 @@
         "relevance": 100
       },
       {
-        "title": "Government",
-        "count": 3,
-        "paths": 18,
-        "relevance": 75
-      },
-      {
-        "title": "Democracy",
-        "count": 3,
-        "paths": 10,
-        "relevance": 75
-      },
-      {
         "title": "Human rights",
         "count": 3,
         "paths": 9,
-        "relevance": 75
+        "relevance": 80
       },
       {
         "title": "Imperialism",
         "count": 3,
         "paths": 8,
-        "relevance": 75
+        "relevance": 79
       },
       {
         "title": "Monarchy",
         "count": 3,
         "paths": 7,
-        "relevance": 75
+        "relevance": 79
       },
       {
         "title": "European Union",
         "count": 3,
         "paths": 5,
-        "relevance": 75
+        "relevance": 78
       },
       {
-        "title": "Military",
-        "count": 2,
+        "title": "Democracy",
+        "count": 3,
         "paths": 10,
-        "relevance": 50
+        "relevance": 77
+      },
+      {
+        "title": "Government",
+        "count": 3,
+        "paths": 18,
+        "relevance": 76
+      },
+      {
+        "title": "Socialism",
+        "count": 2,
+        "paths": 4,
+        "relevance": 51
+      },
+      {
+        "title": "City",
+        "count": 2,
+        "paths": 2,
+        "relevance": 51
       },
       {
         "title": "Power (social and political)",
         "count": 2,
         "paths": 7,
-        "relevance": 50
-      },
-      {
-        "title": "Age of Enlightenment",
-        "count": 2,
-        "paths": 6,
-        "relevance": 50
-      },
-      {
-        "title": "British Empire",
-        "count": 2,
-        "paths": 5,
-        "relevance": 50
+        "relevance": 51
       },
       {
         "title": "Liberty",
@@ -203,58 +197,64 @@
         "relevance": 50
       },
       {
-        "title": "Anarchism",
+        "title": "Age of Enlightenment",
         "count": 2,
-        "paths": 4,
-        "relevance": 50
-      },
-      {
-        "title": "Dictatorship",
-        "count": 2,
-        "paths": 4,
-        "relevance": 50
-      },
-      {
-        "title": "Diplomacy",
-        "count": 2,
-        "paths": 4,
-        "relevance": 50
-      },
-      {
-        "title": "Ideology",
-        "count": 2,
-        "paths": 4,
-        "relevance": 50
-      },
-      {
-        "title": "Nation",
-        "count": 2,
-        "paths": 4,
-        "relevance": 50
-      },
-      {
-        "title": "Nationalism",
-        "count": 2,
-        "paths": 4,
-        "relevance": 50
-      },
-      {
-        "title": "Socialism",
-        "count": 2,
-        "paths": 4,
-        "relevance": 50
+        "paths": 6,
+        "relevance": 48
       },
       {
         "title": "George Washington",
         "count": 2,
         "paths": 3,
-        "relevance": 50
+        "relevance": 48
       },
       {
-        "title": "City",
+        "title": "Anarchism",
         "count": 2,
-        "paths": 2,
-        "relevance": 50
+        "paths": 4,
+        "relevance": 45
+      },
+      {
+        "title": "Dictatorship",
+        "count": 2,
+        "paths": 4,
+        "relevance": 45
+      },
+      {
+        "title": "Diplomacy",
+        "count": 2,
+        "paths": 4,
+        "relevance": 45
+      },
+      {
+        "title": "Ideology",
+        "count": 2,
+        "paths": 4,
+        "relevance": 45
+      },
+      {
+        "title": "Nation",
+        "count": 2,
+        "paths": 4,
+        "relevance": 45
+      },
+      {
+        "title": "Nationalism",
+        "count": 2,
+        "paths": 4,
+        "relevance": 45
+      },
+      {
+        "title": "British Empire",
+        "count": 2,
+        "paths": 5,
+        "relevance": 42
+      },
+      {
+        "title": "Military",
+        "count": 2,
+        "paths": 10,
+        "relevance": 33
       }
     ],
     "macro": [

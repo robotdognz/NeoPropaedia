@@ -28,135 +28,129 @@
         "count": 2,
         "paths": 2,
         "author": "William Doyle",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Christianity",
         "count": 2,
         "paths": 2,
         "author": "Linda Woodhead",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Global Islam",
         "count": 2,
         "paths": 2,
         "author": "Nile Green",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Islam",
         "count": 2,
         "paths": 2,
         "author": "Malise Ruthven",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Late Antiquity",
         "count": 2,
         "paths": 2,
         "author": "Gillian Clark",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Magna Carta",
         "count": 2,
         "paths": 2,
         "author": "Nicholas Vincent",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Medieval Literature",
         "count": 2,
         "paths": 2,
         "author": "Elaine Treharne",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Medieval Philosophy",
         "count": 2,
         "paths": 2,
         "author": "John Marenbon",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Monasticism",
         "count": 2,
         "paths": 2,
         "author": "Stephen J. Davis",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Orthodox Christianity",
         "count": 2,
         "paths": 2,
         "author": "A. Edward Siecienski",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Philosophy in the Islamic World",
         "count": 2,
         "paths": 2,
         "author": "Peter Adamson",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Russian History",
         "count": 2,
         "paths": 2,
         "author": "Geoffrey Hosking",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Scotland",
         "count": 2,
         "paths": 2,
         "author": "Rab Houston",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "The Crusades",
         "count": 2,
         "paths": 2,
         "author": "Christopher Tyerman",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "The Holy Roman Empire",
         "count": 2,
         "paths": 2,
         "author": "Joachim Whaley",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "The Middle Ages",
         "count": 2,
         "paths": 2,
         "author": "Miri Rubin",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "The Norman Conquest",
         "count": 2,
         "paths": 2,
         "author": "George Garnett",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "The Vikings",
         "count": 2,
         "paths": 2,
         "author": "Julian D. Richards",
-        "relevance": 67
+        "relevance": 64
       }
     ],
     "wiki": [
-      {
-        "title": "Byzantine Empire",
-        "count": 4,
-        "paths": 24,
-        "relevance": 100
-      },
       {
         "title": "Post-classical history",
         "count": 4,
@@ -167,55 +161,79 @@
         "title": "Islamic Golden Age",
         "count": 4,
         "paths": 8,
-        "relevance": 100
+        "relevance": 95
       },
       {
-        "title": "Middle Ages",
-        "count": 3,
-        "paths": 15,
-        "relevance": 75
-      },
-      {
-        "title": "Spain",
-        "count": 3,
-        "paths": 13,
-        "relevance": 75
-      },
-      {
-        "title": "Holy Roman Empire",
-        "count": 3,
-        "paths": 11,
-        "relevance": 75
-      },
-      {
-        "title": "Crusades",
-        "count": 3,
-        "paths": 8,
-        "relevance": 75
+        "title": "Byzantine Empire",
+        "count": 4,
+        "paths": 24,
+        "relevance": 83
       },
       {
         "title": "Black Death",
         "count": 3,
         "paths": 7,
-        "relevance": 75
-      },
-      {
-        "title": "Mongol Empire",
-        "count": 3,
-        "paths": 6,
-        "relevance": 75
+        "relevance": 80
       },
       {
         "title": "Silk Road",
         "count": 3,
         "paths": 5,
-        "relevance": 75
+        "relevance": 79
+      },
+      {
+        "title": "Mongol Empire",
+        "count": 3,
+        "paths": 6,
+        "relevance": 77
+      },
+      {
+        "title": "Middle Ages",
+        "count": 3,
+        "paths": 15,
+        "relevance": 74
+      },
+      {
+        "title": "Holy Roman Empire",
+        "count": 3,
+        "paths": 11,
+        "relevance": 73
+      },
+      {
+        "title": "Spain",
+        "count": 3,
+        "paths": 13,
+        "relevance": 72
+      },
+      {
+        "title": "Crusades",
+        "count": 3,
+        "paths": 8,
+        "relevance": 71
+      },
+      {
+        "title": "Iran",
+        "count": 2,
+        "paths": 6,
+        "relevance": 52
+      },
+      {
+        "title": "Ibn Khaldun",
+        "count": 2,
+        "paths": 2,
+        "relevance": 52
       },
       {
         "title": "France",
         "count": 2,
         "paths": 9,
-        "relevance": 50
+        "relevance": 52
+      },
+      {
+        "title": "Egypt",
+        "count": 2,
+        "paths": 5,
+        "relevance": 51
       },
       {
         "title": "Viking Age",
@@ -224,46 +242,28 @@
         "relevance": 50
       },
       {
-        "title": "Charlemagne",
+        "title": "Algeria",
         "count": 2,
-        "paths": 7,
-        "relevance": 50
-      },
-      {
-        "title": "Iran",
-        "count": 2,
-        "paths": 6,
-        "relevance": 50
-      },
-      {
-        "title": "Egypt",
-        "count": 2,
-        "paths": 5,
-        "relevance": 50
+        "paths": 3,
+        "relevance": 49
       },
       {
         "title": "Joan of Arc",
         "count": 2,
         "paths": 4,
-        "relevance": 50
+        "relevance": 45
       },
       {
         "title": "Ottoman Empire",
         "count": 2,
         "paths": 4,
-        "relevance": 50
+        "relevance": 45
       },
       {
-        "title": "Algeria",
+        "title": "Charlemagne",
         "count": 2,
-        "paths": 3,
-        "relevance": 50
-      },
-      {
-        "title": "Ibn Khaldun",
-        "count": 2,
-        "paths": 2,
-        "relevance": 50
+        "paths": 7,
+        "relevance": 37
       }
     ],
     "macro": [

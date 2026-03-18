@@ -3,13 +3,6 @@
   "readings": {
     "vsi": [
       {
-        "title": "The Industrial Revolution",
-        "count": 2,
-        "paths": 4,
-        "author": "Robert C. Allen",
-        "relevance": 100
-      },
-      {
         "title": "Ancient Greece",
         "count": 2,
         "paths": 2,
@@ -57,15 +50,16 @@
         "paths": 2,
         "author": "Doron Swade",
         "relevance": 100
+      },
+      {
+        "title": "The Industrial Revolution",
+        "count": 2,
+        "paths": 4,
+        "author": "Robert C. Allen",
+        "relevance": 89
       }
     ],
     "wiki": [
-      {
-        "title": "Industrial Revolution",
-        "count": 2,
-        "paths": 7,
-        "relevance": 100
-      },
       {
         "title": "Engineering",
         "count": 2,
@@ -85,16 +79,22 @@
         "relevance": 100
       },
       {
-        "title": "Stone Age",
-        "count": 2,
-        "paths": 3,
-        "relevance": 100
-      },
-      {
         "title": "Early modern period",
         "count": 2,
         "paths": 2,
         "relevance": 100
+      },
+      {
+        "title": "Industrial Revolution",
+        "count": 2,
+        "paths": 7,
+        "relevance": 99
+      },
+      {
+        "title": "Stone Age",
+        "count": 2,
+        "paths": 3,
+        "relevance": 95
       }
     ]
   }

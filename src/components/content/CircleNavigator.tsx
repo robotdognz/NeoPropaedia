@@ -1774,7 +1774,12 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                             const checkKey = section.getCheckKey(item);
                             const isChecked = Boolean(checklistState[checkKey]);
                             const whyLabel = section.type === 'vsi' ? 'Why this book?' : 'Why this article?';
-                            const rationale = `Recommended in ${centerCount} section${centerCount !== 1 ? 's' : ''} of ${centerPart.title} and ${topCount} section${topCount !== 1 ? 's' : ''} of ${topPart.title}.`;
+                            const balanceDesc = Math.abs(centerCount - topCount) <= 1
+                              ? 'with roughly equal coverage of both'
+                              : centerCount > topCount
+                                ? `leaning more toward ${centerPart.title}`
+                                : `leaning more toward ${topPart.title}`;
+                            const rationale = `Independently recommended in ${centerCount} section${centerCount !== 1 ? 's' : ''} of ${centerPart.title} and ${topCount} section${topCount !== 1 ? 's' : ''} of ${topPart.title}, ${balanceDesc}. Items are ranked higher when they bridge both parts evenly rather than being concentrated in one.`;
 
                             return (
                               <div

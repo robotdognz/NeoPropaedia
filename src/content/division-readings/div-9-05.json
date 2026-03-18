@@ -3,24 +3,10 @@
   "readings": {
     "vsi": [
       {
-        "title": "Archaeology",
-        "count": 2,
-        "paths": 5,
-        "author": "Paul Bahn",
-        "relevance": 100
-      },
-      {
         "title": "Social and Cultural Anthropology",
         "count": 2,
         "paths": 4,
         "author": "John Monaghan, Peter Just",
-        "relevance": 100
-      },
-      {
-        "title": "The Conquistadors",
-        "count": 2,
-        "paths": 3,
-        "author": "Matthew Restall, Felipe Fernández-Armesto",
         "relevance": 100
       },
       {
@@ -36,6 +22,20 @@
         "paths": 2,
         "author": "Chris Gosden",
         "relevance": 100
+      },
+      {
+        "title": "Archaeology",
+        "count": 2,
+        "paths": 5,
+        "author": "Paul Bahn",
+        "relevance": 98
+      },
+      {
+        "title": "The Conquistadors",
+        "count": 2,
+        "paths": 3,
+        "author": "Matthew Restall, Felipe Fernández-Armesto",
+        "relevance": 95
       }
     ],
     "wiki": [
@@ -49,13 +49,13 @@
         "title": "Age of Discovery",
         "count": 2,
         "paths": 3,
-        "relevance": 100
+        "relevance": 95
       },
       {
         "title": "Spanish Empire",
         "count": 2,
         "paths": 3,
-        "relevance": 100
+        "relevance": 95
       }
     ],
     "macro": [

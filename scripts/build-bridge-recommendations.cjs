@@ -84,6 +84,35 @@ for (const file of fs.readdirSync(SECTIONS_DIR).filter(f => f.endsWith('.json'))
   }
 }
 
+/**
+ * Shannon entropy — measures how evenly distributed counts are.
+ * For bridge: entropy([5, 5]) > entropy([9, 1]) — balanced bridges rank higher.
+ */
+function entropy(counts) {
+  const total = counts.reduce((a, b) => a + b, 0);
+  if (total === 0) return 0;
+  let h = 0;
+  for (const c of counts) {
+    if (c > 0) {
+      const p = c / total;
+      h -= p * Math.log2(p);
+    }
+  }
+  return h;
+}
+
+/**
+ * Bridge score: combines balance and total coverage.
+ * Uses entropy * total so that balance is weighted proportionally to coverage.
+ * A balanced 5+5 (entropy 1.0 * 10 = 10) beats a lopsided 9+1 (entropy 0.47 * 10 = 4.7).
+ * But 6+5 (entropy 0.99 * 11 = 10.9) beats 1+1 (entropy 1.0 * 2 = 2.0).
+ */
+function bridgeScore(ca, cb) {
+  const balance = entropy([ca, cb]);
+  const total = ca + cb;
+  return balance * total;
+}
+
 // For each part pair, find shared items
 function getConnectionKey(a, b) {
   return Math.min(a, b) + '-' + Math.max(a, b);
@@ -107,7 +136,7 @@ for (let i = 0; i < partNumbers.length; i++) {
         sharedVsi.push({ t: title, a: entry.author, ca, cb });
       }
     }
-    sharedVsi.sort((x, y) => (y.ca + y.cb) - (x.ca + x.cb) || x.t.localeCompare(y.t));
+    sharedVsi.sort((x, y) => bridgeScore(y.ca, y.cb) - bridgeScore(x.ca, x.cb) || x.t.localeCompare(y.t));
 
     // Find Wikipedia articles in both parts
     const sharedWiki = [];
@@ -118,7 +147,7 @@ for (let i = 0; i < partNumbers.length; i++) {
         sharedWiki.push({ t: title, ca, cb });
       }
     }
-    sharedWiki.sort((x, y) => (y.ca + y.cb) - (x.ca + x.cb) || x.t.localeCompare(y.t));
+    sharedWiki.sort((x, y) => bridgeScore(y.ca, y.cb) - bridgeScore(x.ca, x.cb) || x.t.localeCompare(y.t));
 
     // Find Macropaedia articles in both parts
     const sharedMacro = [];
@@ -129,7 +158,7 @@ for (let i = 0; i < partNumbers.length; i++) {
         sharedMacro.push({ t: title, ca, cb });
       }
     }
-    sharedMacro.sort((x, y) => (y.ca + y.cb) - (x.ca + x.cb) || x.t.localeCompare(y.t));
+    sharedMacro.sort((x, y) => bridgeScore(y.ca, y.cb) - bridgeScore(x.ca, x.cb) || x.t.localeCompare(y.t));
 
     if (sharedVsi.length > 0 || sharedWiki.length > 0 || sharedMacro.length > 0) {
       result[key] = {

@@ -10,6 +10,20 @@
         "relevance": 100
       },
       {
+        "title": "Feminism",
+        "count": 3,
+        "paths": 3,
+        "author": "Margaret Walters",
+        "relevance": 78
+      },
+      {
+        "title": "The Civil Rights Movement",
+        "count": 3,
+        "paths": 3,
+        "author": "Thomas C. Holt",
+        "relevance": 78
+      },
+      {
         "title": "Social Psychology",
         "count": 3,
         "paths": 4,
@@ -24,20 +38,6 @@
         "relevance": 75
       },
       {
-        "title": "Feminism",
-        "count": 3,
-        "paths": 3,
-        "author": "Margaret Walters",
-        "relevance": 75
-      },
-      {
-        "title": "The Civil Rights Movement",
-        "count": 3,
-        "paths": 3,
-        "author": "Thomas C. Holt",
-        "relevance": 75
-      },
-      {
         "title": "Marx",
         "count": 2,
         "paths": 4,
@@ -49,41 +49,6 @@
         "count": 2,
         "paths": 4,
         "author": "Michael Newman",
-        "relevance": 50
-      },
-      {
-        "title": "Pandemics",
-        "count": 2,
-        "paths": 3,
-        "author": "Christian W. McMillen",
-        "relevance": 50
-      },
-      {
-        "title": "Populism",
-        "count": 2,
-        "paths": 3,
-        "author": "Cas Mudde, Cristsbal Rovia Kalwasser",
-        "relevance": 50
-      },
-      {
-        "title": "Poverty",
-        "count": 2,
-        "paths": 3,
-        "author": "Philip N. Jefferson",
-        "relevance": 50
-      },
-      {
-        "title": "Social and Cultural Anthropology",
-        "count": 2,
-        "paths": 3,
-        "author": "John Monaghan, Peter Just",
-        "relevance": 50
-      },
-      {
-        "title": "Tocqueville",
-        "count": 2,
-        "paths": 3,
-        "author": "Harvey Mansfield",
         "relevance": 50
       },
       {
@@ -183,15 +148,44 @@
         "paths": 2,
         "author": "Bryan Cheyette",
         "relevance": 50
+      },
+      {
+        "title": "Pandemics",
+        "count": 2,
+        "paths": 3,
+        "author": "Christian W. McMillen",
+        "relevance": 47
+      },
+      {
+        "title": "Populism",
+        "count": 2,
+        "paths": 3,
+        "author": "Cas Mudde, Cristsbal Rovia Kalwasser",
+        "relevance": 47
+      },
+      {
+        "title": "Poverty",
+        "count": 2,
+        "paths": 3,
+        "author": "Philip N. Jefferson",
+        "relevance": 47
+      },
+      {
+        "title": "Social and Cultural Anthropology",
+        "count": 2,
+        "paths": 3,
+        "author": "John Monaghan, Peter Just",
+        "relevance": 47
+      },
+      {
+        "title": "Tocqueville",
+        "count": 2,
+        "paths": 3,
+        "author": "Harvey Mansfield",
+        "relevance": 47
       }
     ],
     "wiki": [
-      {
-        "title": "Karl Marx",
-        "count": 3,
-        "paths": 8,
-        "relevance": 100
-      },
       {
         "title": "Human rights",
         "count": 3,
@@ -214,133 +208,139 @@
         "title": "Industrial Revolution",
         "count": 3,
         "paths": 6,
-        "relevance": 100
+        "relevance": 96
       },
       {
-        "title": "Urbanization",
-        "count": 2,
-        "paths": 9,
-        "relevance": 67
-      },
-      {
-        "title": "City",
-        "count": 2,
-        "paths": 6,
-        "relevance": 67
+        "title": "Karl Marx",
+        "count": 3,
+        "paths": 8,
+        "relevance": 93
       },
       {
         "title": "Colonialism",
         "count": 2,
         "paths": 6,
-        "relevance": 67
-      },
-      {
-        "title": "Community",
-        "count": 2,
-        "paths": 5,
-        "relevance": 67
-      },
-      {
-        "title": "Discrimination",
-        "count": 2,
-        "paths": 5,
-        "relevance": 67
-      },
-      {
-        "title": "Education",
-        "count": 2,
-        "paths": 5,
-        "relevance": 67
-      },
-      {
-        "title": "Genocide",
-        "count": 2,
-        "paths": 5,
-        "relevance": 67
-      },
-      {
-        "title": "Work (human activity)",
-        "count": 2,
-        "paths": 5,
-        "relevance": 67
+        "relevance": 65
       },
       {
         "title": "Age of Enlightenment",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 65
       },
       {
         "title": "Atlantic slave trade",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 65
       },
       {
         "title": "Communism",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 65
       },
       {
         "title": "Disability",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 65
       },
       {
         "title": "Family",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 65
       },
       {
         "title": "Gender",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 65
       },
       {
         "title": "Human sexuality",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 65
       },
       {
         "title": "Poverty",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 65
       },
       {
         "title": "Racism",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 65
       },
       {
         "title": "Sexism",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 65
+      },
+      {
+        "title": "Community",
+        "count": 2,
+        "paths": 5,
+        "relevance": 64
+      },
+      {
+        "title": "Discrimination",
+        "count": 2,
+        "paths": 5,
+        "relevance": 64
+      },
+      {
+        "title": "Education",
+        "count": 2,
+        "paths": 5,
+        "relevance": 64
+      },
+      {
+        "title": "Genocide",
+        "count": 2,
+        "paths": 5,
+        "relevance": 64
+      },
+      {
+        "title": "Work (human activity)",
+        "count": 2,
+        "paths": 5,
+        "relevance": 64
+      },
+      {
+        "title": "Urbanization",
+        "count": 2,
+        "paths": 9,
+        "relevance": 61
+      },
+      {
+        "title": "City",
+        "count": 2,
+        "paths": 6,
+        "relevance": 61
       },
       {
         "title": "Adolescence",
         "count": 2,
         "paths": 3,
-        "relevance": 67
+        "relevance": 61
       },
       {
         "title": "Information Age",
         "count": 2,
         "paths": 3,
-        "relevance": 67
+        "relevance": 61
       },
       {
         "title": "Violence",
         "count": 2,
         "paths": 3,
-        "relevance": 67
+        "relevance": 61
       }
     ],
     "macro": [

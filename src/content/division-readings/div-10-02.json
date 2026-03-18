@@ -3,34 +3,6 @@
   "readings": {
     "vsi": [
       {
-        "title": "Chaos",
-        "count": 3,
-        "paths": 4,
-        "author": "Lenny Smith",
-        "relevance": 100
-      },
-      {
-        "title": "Fractals",
-        "count": 3,
-        "paths": 4,
-        "author": "Kenneth Falconer",
-        "relevance": 100
-      },
-      {
-        "title": "Geometry",
-        "count": 3,
-        "paths": 4,
-        "author": "Maciej Dunajski",
-        "relevance": 100
-      },
-      {
-        "title": "Probability",
-        "count": 3,
-        "paths": 4,
-        "author": "John Haigh",
-        "relevance": 100
-      },
-      {
         "title": "Algebra",
         "count": 3,
         "paths": 3,
@@ -52,136 +24,140 @@
         "relevance": 100
       },
       {
-        "title": "Logic",
-        "count": 2,
-        "paths": 3,
-        "author": "Graham Priest",
-        "relevance": 67
+        "title": "Chaos",
+        "count": 3,
+        "paths": 4,
+        "author": "Lenny Smith",
+        "relevance": 96
       },
       {
-        "title": "Mathematical finance",
-        "count": 2,
-        "paths": 3,
-        "author": "Mark H. A. Davis",
-        "relevance": 67
+        "title": "Fractals",
+        "count": 3,
+        "paths": 4,
+        "author": "Kenneth Falconer",
+        "relevance": 96
       },
       {
-        "title": "Mathematics",
-        "count": 2,
-        "paths": 3,
-        "author": "Timothy Gowers",
-        "relevance": 67
+        "title": "Geometry",
+        "count": 3,
+        "paths": 4,
+        "author": "Maciej Dunajski",
+        "relevance": 96
       },
       {
-        "title": "Numbers",
-        "count": 2,
-        "paths": 3,
-        "author": "Peter M. Higgins",
-        "relevance": 67
-      },
-      {
-        "title": "Symmetry",
-        "count": 2,
-        "paths": 3,
-        "author": "Ian Stewart",
-        "relevance": 67
+        "title": "Probability",
+        "count": 3,
+        "paths": 4,
+        "author": "John Haigh",
+        "relevance": 96
       },
       {
         "title": "Combinatorics",
         "count": 2,
         "paths": 2,
         "author": "Robin Wilson",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Computer Science",
         "count": 2,
         "paths": 2,
         "author": "Subrata Dasgupta",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Gödel's Theorem",
         "count": 2,
         "paths": 2,
         "author": "A. W. Moore",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Infinity",
         "count": 2,
         "paths": 2,
         "author": "Ian Stewart",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Mathematical Analysis",
         "count": 2,
         "paths": 2,
         "author": "Richard Earl",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Number theory",
         "count": 2,
         "paths": 2,
         "author": "Robin Wilson",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "The Computer",
         "count": 2,
         "paths": 2,
         "author": "Darrel Ince",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "The History of Computing",
         "count": 2,
         "paths": 2,
         "author": "Doron Swade",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Topology",
         "count": 2,
         "paths": 2,
         "author": "Richard Earl",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Trigonometry",
         "count": 2,
         "paths": 2,
         "author": "Glen Van Brummelen",
-        "relevance": 67
+        "relevance": 64
+      },
+      {
+        "title": "Logic",
+        "count": 2,
+        "paths": 3,
+        "author": "Graham Priest",
+        "relevance": 61
+      },
+      {
+        "title": "Mathematical finance",
+        "count": 2,
+        "paths": 3,
+        "author": "Mark H. A. Davis",
+        "relevance": 61
+      },
+      {
+        "title": "Mathematics",
+        "count": 2,
+        "paths": 3,
+        "author": "Timothy Gowers",
+        "relevance": 61
+      },
+      {
+        "title": "Numbers",
+        "count": 2,
+        "paths": 3,
+        "author": "Peter M. Higgins",
+        "relevance": 61
+      },
+      {
+        "title": "Symmetry",
+        "count": 2,
+        "paths": 3,
+        "author": "Ian Stewart",
+        "relevance": 61
       }
     ],
     "wiki": [
-      {
-        "title": "History of mathematics",
-        "count": 3,
-        "paths": 18,
-        "relevance": 100
-      },
-      {
-        "title": "Mathematical analysis",
-        "count": 3,
-        "paths": 15,
-        "relevance": 100
-      },
-      {
-        "title": "Geometry",
-        "count": 3,
-        "paths": 14,
-        "relevance": 100
-      },
-      {
-        "title": "Arithmetic",
-        "count": 3,
-        "paths": 13,
-        "relevance": 100
-      },
       {
         "title": "Al-Khwarizmi",
         "count": 3,
@@ -195,148 +171,172 @@
         "relevance": 100
       },
       {
-        "title": "Number theory",
+        "title": "Function (mathematics)",
         "count": 3,
-        "paths": 10,
-        "relevance": 100
+        "paths": 7,
+        "relevance": 99
+      },
+      {
+        "title": "History of mathematics",
+        "count": 3,
+        "paths": 18,
+        "relevance": 98
       },
       {
         "title": "Carl Friedrich Gauss",
         "count": 3,
         "paths": 9,
-        "relevance": 100
+        "relevance": 98
       },
       {
         "title": "Number",
         "count": 3,
         "paths": 9,
-        "relevance": 100
+        "relevance": 98
       },
       {
-        "title": "Function (mathematics)",
+        "title": "Arithmetic",
         "count": 3,
-        "paths": 7,
-        "relevance": 100
-      },
-      {
-        "title": "Set (mathematics)",
-        "count": 2,
         "paths": 13,
-        "relevance": 67
+        "relevance": 98
       },
       {
-        "title": "Algebra",
-        "count": 2,
-        "paths": 12,
-        "relevance": 67
+        "title": "Geometry",
+        "count": 3,
+        "paths": 14,
+        "relevance": 97
       },
       {
-        "title": "Abstract algebra",
-        "count": 2,
+        "title": "Number theory",
+        "count": 3,
         "paths": 10,
-        "relevance": 67
+        "relevance": 92
       },
       {
-        "title": "Topology",
-        "count": 2,
-        "paths": 10,
-        "relevance": 67
-      },
-      {
-        "title": "Probability",
-        "count": 2,
-        "paths": 9,
-        "relevance": 67
+        "title": "Mathematical analysis",
+        "count": 3,
+        "paths": 15,
+        "relevance": 88
       },
       {
         "title": "Euclid",
         "count": 2,
         "paths": 8,
-        "relevance": 67
-      },
-      {
-        "title": "Mathematics",
-        "count": 2,
-        "paths": 8,
-        "relevance": 67
-      },
-      {
-        "title": "Three-dimensional space",
-        "count": 2,
-        "paths": 8,
-        "relevance": 67
-      },
-      {
-        "title": "Equation",
-        "count": 2,
-        "paths": 7,
-        "relevance": 67
-      },
-      {
-        "title": "Linear algebra",
-        "count": 2,
-        "paths": 7,
-        "relevance": 67
-      },
-      {
-        "title": "Complex number",
-        "count": 2,
-        "paths": 6,
-        "relevance": 66
-      },
-      {
-        "title": "Computer",
-        "count": 2,
-        "paths": 6,
-        "relevance": 66
-      },
-      {
-        "title": "Exponentiation",
-        "count": 2,
-        "paths": 6,
-        "relevance": 66
+        "relevance": 65
       },
       {
         "title": "Mathematical proof",
         "count": 2,
         "paths": 6,
-        "relevance": 66
-      },
-      {
-        "title": "Kurt Gödel",
-        "count": 2,
-        "paths": 5,
-        "relevance": 66
-      },
-      {
-        "title": "Trigonometry",
-        "count": 2,
-        "paths": 5,
-        "relevance": 66
+        "relevance": 65
       },
       {
         "title": "Fraction",
         "count": 2,
         "paths": 4,
-        "relevance": 66
+        "relevance": 65
       },
       {
         "title": "Natural number",
         "count": 2,
         "paths": 4,
-        "relevance": 66
+        "relevance": 65
       },
       {
         "title": "Space",
         "count": 2,
         "paths": 4,
-        "relevance": 66
+        "relevance": 65
+      },
+      {
+        "title": "Probability",
+        "count": 2,
+        "paths": 9,
+        "relevance": 64
+      },
+      {
+        "title": "Equation",
+        "count": 2,
+        "paths": 7,
+        "relevance": 64
+      },
+      {
+        "title": "Linear algebra",
+        "count": 2,
+        "paths": 7,
+        "relevance": 64
+      },
+      {
+        "title": "Kurt Gödel",
+        "count": 2,
+        "paths": 5,
+        "relevance": 63
+      },
+      {
+        "title": "Three-dimensional space",
+        "count": 2,
+        "paths": 8,
+        "relevance": 63
+      },
+      {
+        "title": "Complex number",
+        "count": 2,
+        "paths": 6,
+        "relevance": 61
+      },
+      {
+        "title": "Exponentiation",
+        "count": 2,
+        "paths": 6,
+        "relevance": 61
       },
       {
         "title": "Isaac Newton",
         "count": 2,
         "paths": 3,
-        "relevance": 66
+        "relevance": 61
+      },
+      {
+        "title": "Set (mathematics)",
+        "count": 2,
+        "paths": 13,
+        "relevance": 60
+      },
+      {
+        "title": "Algebra",
+        "count": 2,
+        "paths": 12,
+        "relevance": 57
+      },
+      {
+        "title": "Mathematics",
+        "count": 2,
+        "paths": 8,
+        "relevance": 57
+      },
+      {
+        "title": "Abstract algebra",
+        "count": 2,
+        "paths": 10,
+        "relevance": 53
+      },
+      {
+        "title": "Topology",
+        "count": 2,
+        "paths": 10,
+        "relevance": 53
+      },
+      {
+        "title": "Trigonometry",
+        "count": 2,
+        "paths": 5,
+        "relevance": 53
+      },
+      {
+        "title": "Computer",
+        "count": 2,
+        "paths": 6,
+        "relevance": 50
       }
     ]
   }

@@ -3,13 +3,6 @@
   "readings": {
     "vsi": [
       {
-        "title": "Social and Cultural Anthropology",
-        "count": 3,
-        "paths": 4,
-        "author": "John Monaghan, Peter Just",
-        "relevance": 100
-      },
-      {
         "title": "Ethnomusicology",
         "count": 3,
         "paths": 3,
@@ -17,67 +10,74 @@
         "relevance": 100
       },
       {
-        "title": "Identity",
-        "count": 2,
-        "paths": 3,
-        "author": "Florian Coulmas",
-        "relevance": 67
-      },
-      {
-        "title": "Prehistory",
-        "count": 2,
-        "paths": 3,
-        "author": "Chris Gosden",
-        "relevance": 67
-      },
-      {
-        "title": "Ritual",
-        "count": 2,
-        "paths": 3,
-        "author": "Barry Stephenson",
-        "relevance": 67
-      },
-      {
-        "title": "Sociology",
-        "count": 2,
-        "paths": 3,
-        "author": "Steve Bruce",
-        "relevance": 67
-      },
-      {
-        "title": "The Silk Road",
-        "count": 2,
-        "paths": 3,
-        "author": "James A. Millward",
-        "relevance": 67
+        "title": "Social and Cultural Anthropology",
+        "count": 3,
+        "paths": 4,
+        "author": "John Monaghan, Peter Just",
+        "relevance": 96
       },
       {
         "title": "Confucianism",
         "count": 2,
         "paths": 2,
         "author": "Daniel K. Gardner",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Human evolution",
         "count": 2,
         "paths": 2,
         "author": "Bernard Wood",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "Postcolonialism",
         "count": 2,
         "paths": 2,
         "author": "Robert J.C. Young",
-        "relevance": 67
+        "relevance": 64
       },
       {
         "title": "World Mythology",
         "count": 2,
         "paths": 2,
         "author": "David A. Leeming",
-        "relevance": 67
+        "relevance": 64
+      },
+      {
+        "title": "Identity",
+        "count": 2,
+        "paths": 3,
+        "author": "Florian Coulmas",
+        "relevance": 61
+      },
+      {
+        "title": "Prehistory",
+        "count": 2,
+        "paths": 3,
+        "author": "Chris Gosden",
+        "relevance": 61
+      },
+      {
+        "title": "Ritual",
+        "count": 2,
+        "paths": 3,
+        "author": "Barry Stephenson",
+        "relevance": 61
+      },
+      {
+        "title": "Sociology",
+        "count": 2,
+        "paths": 3,
+        "author": "Steve Bruce",
+        "relevance": 61
+      },
+      {
+        "title": "The Silk Road",
+        "count": 2,
+        "paths": 3,
+        "author": "James A. Millward",
+        "relevance": 61
       }
     ],
     "wiki": [
@@ -88,28 +88,28 @@
         "relevance": 100
       },
       {
-        "title": "Language",
-        "count": 2,
-        "paths": 9,
-        "relevance": 67
-      },
-      {
-        "title": "Indigenous peoples",
-        "count": 2,
-        "paths": 8,
-        "relevance": 67
-      },
-      {
         "title": "Egypt",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 59
       },
       {
         "title": "Mesoamerica",
         "count": 2,
         "paths": 4,
-        "relevance": 67
+        "relevance": 59
+      },
+      {
+        "title": "Indigenous peoples",
+        "count": 2,
+        "paths": 8,
+        "relevance": 47
+      },
+      {
+        "title": "Language",
+        "count": 2,
+        "paths": 9,
+        "relevance": 45
       }
     ],
     "macro": [
@@ -123,7 +123,7 @@
         "title": "Social Sciences, The",
         "count": 2,
         "paths": 2,
-        "relevance": 67
+        "relevance": 64
       }
     ]
   }
