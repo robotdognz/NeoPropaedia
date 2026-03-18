@@ -5,134 +5,164 @@
       {
         "title": "Climate",
         "count": 3,
+        "paths": 7,
         "author": "Mark Maslin"
-      },
-      {
-        "title": "Earth System Science",
-        "count": 3,
-        "author": "Tim Lenton"
       },
       {
         "title": "Geophysical and Climate Hazards",
         "count": 3,
+        "paths": 7,
         "author": "Bill McGuire"
+      },
+      {
+        "title": "Earth System Science",
+        "count": 3,
+        "paths": 5,
+        "author": "Tim Lenton"
+      },
+      {
+        "title": "Weather",
+        "count": 2,
+        "paths": 5,
+        "author": "Storm Dunlop"
       },
       {
         "title": "Climate change",
         "count": 2,
+        "paths": 4,
         "author": "Mark Maslin"
-      },
-      {
-        "title": "The Atmosphere",
-        "count": 2,
-        "author": "Paul Palmer"
       },
       {
         "title": "The Earth",
         "count": 2,
+        "paths": 3,
         "author": "Martin Redfern"
       },
       {
         "title": "The Ice Age",
         "count": 2,
+        "paths": 3,
         "author": "Jamie Woodward"
-      },
-      {
-        "title": "The Sun",
-        "count": 2,
-        "author": "Philip Judge"
       },
       {
         "title": "Waves",
         "count": 2,
+        "paths": 3,
         "author": "Mike Goldsmith"
       },
       {
-        "title": "Weather",
+        "title": "The Atmosphere",
         "count": 2,
-        "author": "Storm Dunlop"
+        "paths": 2,
+        "author": "Paul Palmer"
+      },
+      {
+        "title": "The Sun",
+        "count": 2,
+        "paths": 2,
+        "author": "Philip Judge"
       }
     ],
     "wiki": [
       {
         "title": "Atmosphere of Earth",
-        "count": 3
-      },
-      {
-        "title": "Carbon dioxide",
-        "count": 3
-      },
-      {
-        "title": "Cloud",
-        "count": 3
-      },
-      {
-        "title": "Rain",
-        "count": 3
-      },
-      {
-        "title": "Snow",
-        "count": 3
-      },
-      {
-        "title": "Tropical cyclone",
-        "count": 3
+        "count": 3,
+        "paths": 18
       },
       {
         "title": "Wind",
-        "count": 3
+        "count": 3,
+        "paths": 14
       },
       {
-        "title": "Amazon rainforest",
-        "count": 2
+        "title": "Cloud",
+        "count": 3,
+        "paths": 10
       },
       {
-        "title": "Arctic Ocean",
-        "count": 2
+        "title": "Rain",
+        "count": 3,
+        "paths": 10
       },
       {
-        "title": "Climate",
-        "count": 2
+        "title": "Snow",
+        "count": 3,
+        "paths": 5
       },
       {
-        "title": "Climate change",
-        "count": 2
+        "title": "Carbon dioxide",
+        "count": 3,
+        "paths": 4
       },
       {
-        "title": "Earth",
-        "count": 2
-      },
-      {
-        "title": "Flood",
-        "count": 2
-      },
-      {
-        "title": "Fossil fuel",
-        "count": 2
-      },
-      {
-        "title": "Indian Ocean",
-        "count": 2
-      },
-      {
-        "title": "Lightning",
-        "count": 2
-      },
-      {
-        "title": "Season",
-        "count": 2
-      },
-      {
-        "title": "Storm",
-        "count": 2
-      },
-      {
-        "title": "Water",
-        "count": 2
+        "title": "Tropical cyclone",
+        "count": 3,
+        "paths": 4
       },
       {
         "title": "Weather",
-        "count": 2
+        "count": 2,
+        "paths": 10
+      },
+      {
+        "title": "Climate",
+        "count": 2,
+        "paths": 7
+      },
+      {
+        "title": "Storm",
+        "count": 2,
+        "paths": 7
+      },
+      {
+        "title": "Arctic Ocean",
+        "count": 2,
+        "paths": 5
+      },
+      {
+        "title": "Amazon rainforest",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Climate change",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Earth",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Season",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Water",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Flood",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Fossil fuel",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Indian Ocean",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Lightning",
+        "count": 2,
+        "paths": 3
       }
     ]
   }

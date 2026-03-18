@@ -3,1543 +3,2251 @@
   "readings": {
     "vsi": [
       {
-        "title": "Archaeology",
-        "count": 5,
-        "author": "Paul Bahn"
-      },
-      {
-        "title": "Iran",
-        "count": 5,
-        "author": "Ali Ansari"
-      },
-      {
         "title": "Islam",
         "count": 5,
+        "sections": 14,
+        "paths": 16,
         "author": "Malise Ruthven"
       },
       {
-        "title": "Islamic History",
+        "title": "Archaeology",
         "count": 5,
-        "author": "Adam J. Silverstein"
+        "sections": 11,
+        "paths": 14,
+        "author": "Paul Bahn"
       },
       {
         "title": "The Silk Road",
         "count": 5,
+        "sections": 10,
+        "paths": 10,
         "author": "James A. Millward"
       },
       {
-        "title": "African History",
-        "count": 4,
-        "author": "John Parker, Richard Rathbone"
+        "title": "Islamic History",
+        "count": 5,
+        "sections": 9,
+        "paths": 10,
+        "author": "Adam J. Silverstein"
+      },
+      {
+        "title": "Iran",
+        "count": 5,
+        "sections": 7,
+        "paths": 7,
+        "author": "Ali Ansari"
       },
       {
         "title": "Empire",
         "count": 4,
+        "sections": 19,
+        "paths": 19,
         "author": "Stephen Howe"
       },
       {
         "title": "Exploration",
         "count": 4,
+        "sections": 11,
+        "paths": 13,
         "author": "Stewart A. Weaver"
       },
       {
-        "title": "Hinduism",
+        "title": "African History",
         "count": 4,
-        "author": "Kim Knott"
+        "sections": 8,
+        "paths": 8,
+        "author": "John Parker, Richard Rathbone"
       },
       {
         "title": "Russian History",
         "count": 4,
+        "sections": 7,
+        "paths": 8,
         "author": "Geoffrey Hosking"
+      },
+      {
+        "title": "Hinduism",
+        "count": 4,
+        "sections": 6,
+        "paths": 7,
+        "author": "Kim Knott"
       },
       {
         "title": "The Conquistadors",
         "count": 4,
+        "sections": 6,
+        "paths": 7,
         "author": "Matthew Restall, Felipe Fernández-Armesto"
       },
       {
-        "title": "African Politics",
+        "title": "The British Empire",
         "count": 3,
-        "author": "Ian Taylor"
-      },
-      {
-        "title": "African Religions",
-        "count": 3,
-        "author": "Jacob K. Olupona"
-      },
-      {
-        "title": "Buddhism",
-        "count": 3,
-        "author": "Damien Keown"
-      },
-      {
-        "title": "Byzantium",
-        "count": 3,
-        "author": "Peter Sarris"
-      },
-      {
-        "title": "Christianity",
-        "count": 3,
-        "author": "Linda Woodhead"
-      },
-      {
-        "title": "Confucianism",
-        "count": 3,
-        "author": "Daniel K. Gardner"
+        "sections": 13,
+        "paths": 15,
+        "author": "Ashley Jackson"
       },
       {
         "title": "Democracy",
         "count": 3,
+        "sections": 11,
+        "paths": 13,
         "author": "Bernard Crick"
-      },
-      {
-        "title": "Diaspora",
-        "count": 3,
-        "author": "Kevin Kenny"
-      },
-      {
-        "title": "Dynasty",
-        "count": 3,
-        "author": "Jeroen Duindam"
       },
       {
         "title": "Global Economic History",
         "count": 3,
+        "sections": 11,
+        "paths": 13,
         "author": "Robert C. Allen"
+      },
+      {
+        "title": "Postcolonialism",
+        "count": 3,
+        "sections": 11,
+        "paths": 13,
+        "author": "Robert J.C. Young"
+      },
+      {
+        "title": "Dynasty",
+        "count": 3,
+        "sections": 10,
+        "paths": 10,
+        "author": "Jeroen Duindam"
+      },
+      {
+        "title": "Buddhism",
+        "count": 3,
+        "sections": 9,
+        "paths": 13,
+        "author": "Damien Keown"
       },
       {
         "title": "Global Islam",
         "count": 3,
+        "sections": 7,
+        "paths": 9,
         "author": "Nile Green"
+      },
+      {
+        "title": "African Religions",
+        "count": 3,
+        "sections": 7,
+        "paths": 8,
+        "author": "Jacob K. Olupona"
+      },
+      {
+        "title": "African Politics",
+        "count": 3,
+        "sections": 6,
+        "paths": 7,
+        "author": "Ian Taylor"
+      },
+      {
+        "title": "Scotland",
+        "count": 3,
+        "sections": 5,
+        "paths": 7,
+        "author": "Rab Houston"
+      },
+      {
+        "title": "The Habsburg Empire",
+        "count": 3,
+        "sections": 5,
+        "paths": 7,
+        "author": "Martyn Rady"
+      },
+      {
+        "title": "Modern China",
+        "count": 3,
+        "sections": 5,
+        "paths": 6,
+        "author": "Rana Mitter"
+      },
+      {
+        "title": "Byzantium",
+        "count": 3,
+        "sections": 5,
+        "paths": 5,
+        "author": "Peter Sarris"
+      },
+      {
+        "title": "Confucianism",
+        "count": 3,
+        "sections": 5,
+        "paths": 5,
+        "author": "Daniel K. Gardner"
+      },
+      {
+        "title": "Modern Japan",
+        "count": 3,
+        "sections": 5,
+        "paths": 5,
+        "author": "Christopher Goto-Jones"
+      },
+      {
+        "title": "Social and Cultural Anthropology",
+        "count": 3,
+        "sections": 4,
+        "paths": 8,
+        "author": "John Monaghan, Peter Just"
+      },
+      {
+        "title": "Diaspora",
+        "count": 3,
+        "sections": 4,
+        "paths": 7,
+        "author": "Kevin Kenny"
+      },
+      {
+        "title": "North American Indians",
+        "count": 3,
+        "sections": 4,
+        "paths": 6,
+        "author": "Theda Perdue, Michael D. Green"
+      },
+      {
+        "title": "Christianity",
+        "count": 3,
+        "sections": 4,
+        "paths": 4,
+        "author": "Linda Woodhead"
+      },
+      {
+        "title": "Korea",
+        "count": 3,
+        "sections": 4,
+        "paths": 4,
+        "author": "Michael J. Seth"
+      },
+      {
+        "title": "Modern India",
+        "count": 3,
+        "sections": 4,
+        "paths": 4,
+        "author": "Craig Jeffrey"
+      },
+      {
+        "title": "Racism",
+        "count": 3,
+        "sections": 3,
+        "paths": 5,
+        "author": "Ali Rattansi"
       },
       {
         "title": "Islamic Law",
         "count": 3,
+        "sections": 3,
+        "paths": 4,
         "author": "Mashood A. Baderin"
       },
       {
         "title": "Judaism",
         "count": 3,
+        "sections": 3,
+        "paths": 4,
         "author": "Norman Solomon"
-      },
-      {
-        "title": "Korea",
-        "count": 3,
-        "author": "Michael J. Seth"
-      },
-      {
-        "title": "Modern China",
-        "count": 3,
-        "author": "Rana Mitter"
-      },
-      {
-        "title": "Modern India",
-        "count": 3,
-        "author": "Craig Jeffrey"
-      },
-      {
-        "title": "Modern Japan",
-        "count": 3,
-        "author": "Christopher Goto-Jones"
-      },
-      {
-        "title": "North American Indians",
-        "count": 3,
-        "author": "Theda Perdue, Michael D. Green"
-      },
-      {
-        "title": "Postcolonialism",
-        "count": 3,
-        "author": "Robert J.C. Young"
-      },
-      {
-        "title": "Racism",
-        "count": 3,
-        "author": "Ali Rattansi"
       },
       {
         "title": "Samurai",
         "count": 3,
+        "sections": 3,
+        "paths": 3,
         "author": "Michael Wert"
-      },
-      {
-        "title": "Scotland",
-        "count": 3,
-        "author": "Rab Houston"
-      },
-      {
-        "title": "Social and Cultural Anthropology",
-        "count": 3,
-        "author": "John Monaghan, Peter Just"
       },
       {
         "title": "Southeast Asia",
         "count": 3,
+        "sections": 3,
+        "paths": 3,
         "author": "James R. Rush"
-      },
-      {
-        "title": "The British Empire",
-        "count": 3,
-        "author": "Ashley Jackson"
-      },
-      {
-        "title": "The Habsburg Empire",
-        "count": 3,
-        "author": "Martyn Rady"
       },
       {
         "title": "Tibetan Buddhism",
         "count": 3,
+        "sections": 3,
+        "paths": 3,
         "author": "Matthew T. Kapstein"
-      },
-      {
-        "title": "Abolitionism",
-        "count": 2,
-        "author": "Richard S. Newman"
-      },
-      {
-        "title": "Aerial Warfare",
-        "count": 2,
-        "author": "Frank Ledwidge"
-      },
-      {
-        "title": "African American History",
-        "count": 2,
-        "author": "Jonathan Scott Holloway"
-      },
-      {
-        "title": "Alexander the Great",
-        "count": 2,
-        "author": "Hugh Bowden"
-      },
-      {
-        "title": "American Business History",
-        "count": 2,
-        "author": "Walter A. Friedman"
-      },
-      {
-        "title": "American Cultural History",
-        "count": 2,
-        "author": "Eric Avila"
-      },
-      {
-        "title": "American Foreign Relations",
-        "count": 2,
-        "author": "Andrew Preston"
-      },
-      {
-        "title": "American History",
-        "count": 2,
-        "author": "Paul S. Boyer"
-      },
-      {
-        "title": "American Immigration",
-        "count": 2,
-        "author": "David A. Gerber"
-      },
-      {
-        "title": "American Military History",
-        "count": 2,
-        "author": "Joseph T. Glatthaar"
-      },
-      {
-        "title": "American Political History",
-        "count": 2,
-        "author": "Donald Critchlow"
-      },
-      {
-        "title": "American Political Parties and Elections",
-        "count": 2,
-        "author": "L. Sandy Maisel"
-      },
-      {
-        "title": "American Women's History",
-        "count": 2,
-        "author": "Susan Ware"
-      },
-      {
-        "title": "Antisemitism",
-        "count": 2,
-        "author": "Steven Beller"
-      },
-      {
-        "title": "Aristocracy",
-        "count": 2,
-        "author": "William Doyle"
-      },
-      {
-        "title": "Asian American History",
-        "count": 2,
-        "author": "Madeline Y. Hsu"
-      },
-      {
-        "title": "Australia",
-        "count": 2,
-        "author": "Kenneth Morgan"
-      },
-      {
-        "title": "Canada",
-        "count": 2,
-        "author": "Donald Wright"
-      },
-      {
-        "title": "Capitalism",
-        "count": 2,
-        "author": "James Fulcher"
-      },
-      {
-        "title": "Chinese literature",
-        "count": 2,
-        "author": "Sabina Knight"
-      },
-      {
-        "title": "Civil Wars",
-        "count": 2,
-        "author": "Monica Duffy Toft"
-      },
-      {
-        "title": "Colonial Latin American Literature",
-        "count": 2,
-        "author": "Rolena Adorno"
-      },
-      {
-        "title": "Communism",
-        "count": 2,
-        "author": "Leslie Holmes"
-      },
-      {
-        "title": "Decolonization",
-        "count": 2,
-        "author": "Dane Kennedy"
-      },
-      {
-        "title": "Diplomacy",
-        "count": 2,
-        "author": "Joseph M. Siracusa"
-      },
-      {
-        "title": "Fascism",
-        "count": 2,
-        "author": "Kevin Passmore"
-      },
-      {
-        "title": "Federalism",
-        "count": 2,
-        "author": "Mark J. Rozell, Clyde Wilcox"
-      },
-      {
-        "title": "Gandhi",
-        "count": 2,
-        "author": "Bhikhu Parekh"
-      },
-      {
-        "title": "Globalization",
-        "count": 2,
-        "author": "Manfred Steger"
-      },
-      {
-        "title": "Indian philosophy",
-        "count": 2,
-        "author": "Sue Hamilton"
-      },
-      {
-        "title": "International Migration",
-        "count": 2,
-        "author": "Khalid Koser"
-      },
-      {
-        "title": "Japanese Literature",
-        "count": 2,
-        "author": "Alan Tansman"
-      },
-      {
-        "title": "Late Antiquity",
-        "count": 2,
-        "author": "Gillian Clark"
-      },
-      {
-        "title": "Machiavelli",
-        "count": 2,
-        "author": "Quentin Skinner"
-      },
-      {
-        "title": "Mao",
-        "count": 2,
-        "author": "Delia Davin"
-      },
-      {
-        "title": "Military Strategy",
-        "count": 2,
-        "author": "Antulio Joseph Echevarria"
-      },
-      {
-        "title": "Modern Brazil",
-        "count": 2,
-        "author": "Anthony W. Pereira"
-      },
-      {
-        "title": "Modern France",
-        "count": 2,
-        "author": "Vanessa R. Schwartz"
-      },
-      {
-        "title": "Modern Ireland",
-        "count": 2,
-        "author": "Senia Paseta"
-      },
-      {
-        "title": "Modern Italy",
-        "count": 2,
-        "author": "Anna Cento Bull"
-      },
-      {
-        "title": "Modern Latin American Literature",
-        "count": 2,
-        "author": "Roberto González Echevarría"
-      },
-      {
-        "title": "Modern War",
-        "count": 2,
-        "author": "Richard English"
-      },
-      {
-        "title": "Muhammad",
-        "count": 2,
-        "author": "Jonathan A.C. Brown"
       },
       {
         "title": "Nationalism",
         "count": 2,
+        "sections": 16,
+        "paths": 19,
         "author": "Steven Grosby"
       },
       {
-        "title": "Nelson Mandela",
+        "title": "Diplomacy",
         "count": 2,
-        "author": "Elleke Boehmer"
+        "sections": 13,
+        "paths": 16,
+        "author": "Joseph M. Siracusa"
       },
       {
-        "title": "Northern Ireland",
+        "title": "Decolonization",
         "count": 2,
-        "author": "Marc Mulholland"
+        "sections": 11,
+        "paths": 12,
+        "author": "Dane Kennedy"
       },
       {
-        "title": "Orthodox Christianity",
+        "title": "Capitalism",
         "count": 2,
-        "author": "A. Edward Siecienski"
+        "sections": 10,
+        "paths": 14,
+        "author": "James Fulcher"
       },
       {
-        "title": "Pakistan",
+        "title": "Communism",
         "count": 2,
-        "author": "Pippa Virdee"
+        "sections": 8,
+        "paths": 8,
+        "author": "Leslie Holmes"
       },
       {
-        "title": "Philosophy in the Islamic World",
+        "title": "Civil Wars",
         "count": 2,
-        "author": "Peter Adamson"
+        "sections": 7,
+        "paths": 11,
+        "author": "Monica Duffy Toft"
       },
       {
-        "title": "Prehistory",
+        "title": "The First World War",
         "count": 2,
-        "author": "Chris Gosden"
-      },
-      {
-        "title": "Progressivism",
-        "count": 2,
-        "author": "Walter Nugent"
-      },
-      {
-        "title": "Prohibition",
-        "count": 2,
-        "author": "W. J. Rorabaugh"
+        "sections": 7,
+        "paths": 10,
+        "author": "Michael Howard"
       },
       {
         "title": "Revolutions",
         "count": 2,
+        "sections": 7,
+        "paths": 9,
         "author": "Jack A. Goldstone"
       },
       {
-        "title": "Sikhism",
+        "title": "The Mongols",
         "count": 2,
-        "author": "Eleanor Nesbitt"
+        "sections": 6,
+        "paths": 6,
+        "author": "Morris Rossabi"
       },
       {
         "title": "Socialism",
         "count": 2,
+        "sections": 5,
+        "paths": 6,
         "author": "Michael Newman"
       },
       {
         "title": "Terrorism",
         "count": 2,
+        "sections": 5,
+        "paths": 6,
         "author": "Charles Townshend"
       },
       {
-        "title": "The American Presidency",
+        "title": "Modern War",
         "count": 2,
-        "author": "Charles O. Jones"
+        "sections": 5,
+        "paths": 5,
+        "author": "Richard English"
       },
       {
-        "title": "The Aztecs",
+        "title": "Modern France",
         "count": 2,
-        "author": "David Carrasco"
+        "sections": 4,
+        "paths": 7,
+        "author": "Vanessa R. Schwartz"
       },
       {
-        "title": "The Crusades",
+        "title": "Aristocracy",
         "count": 2,
-        "author": "Christopher Tyerman"
+        "sections": 4,
+        "paths": 6,
+        "author": "William Doyle"
       },
       {
-        "title": "The First World War",
+        "title": "Fascism",
         "count": 2,
-        "author": "Michael Howard"
+        "sections": 4,
+        "paths": 6,
+        "author": "Kevin Passmore"
       },
       {
-        "title": "The Holy Roman Empire",
+        "title": "Globalization",
         "count": 2,
-        "author": "Joachim Whaley"
+        "sections": 4,
+        "paths": 6,
+        "author": "Manfred Steger"
       },
       {
-        "title": "The Koran",
+        "title": "International Migration",
         "count": 2,
-        "author": "Michael Cook"
-      },
-      {
-        "title": "The Maya",
-        "count": 2,
-        "author": "Matthew Restall, Amara Solari"
-      },
-      {
-        "title": "The Mexican Revolution",
-        "count": 2,
-        "author": "Alan Knight"
-      },
-      {
-        "title": "The Mongols",
-        "count": 2,
-        "author": "Morris Rossabi"
+        "sections": 4,
+        "paths": 6,
+        "author": "Khalid Koser"
       },
       {
         "title": "The Palestinian–Israeli Conflict",
         "count": 2,
+        "sections": 4,
+        "paths": 6,
         "author": "Martin Bunton"
       },
       {
-        "title": "The Reformation",
+        "title": "The Holy Roman Empire",
         "count": 2,
-        "author": "Peter Marshall"
+        "sections": 4,
+        "paths": 5,
+        "author": "Joachim Whaley"
       },
       {
-        "title": "The Renaissance",
+        "title": "Colonial Latin American Literature",
         "count": 2,
-        "author": "Jerry Brotton"
+        "sections": 4,
+        "paths": 4,
+        "author": "Rolena Adorno"
       },
       {
-        "title": "The Roman Empire",
+        "title": "Late Antiquity",
         "count": 2,
-        "author": "Christopher Kelly"
+        "sections": 4,
+        "paths": 4,
+        "author": "Gillian Clark"
       },
       {
-        "title": "The Russian Revolution",
+        "title": "Prehistory",
         "count": 2,
-        "author": "S. A. Smith"
+        "sections": 4,
+        "paths": 4,
+        "author": "Chris Gosden"
       },
       {
         "title": "The Treaty of Versailles",
         "count": 2,
+        "sections": 4,
+        "paths": 4,
         "author": "Michael S. Neiberg"
+      },
+      {
+        "title": "The Welfare State",
+        "count": 2,
+        "sections": 3,
+        "paths": 6,
+        "author": "David Garland"
+      },
+      {
+        "title": "Abolitionism",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "author": "Richard S. Newman"
+      },
+      {
+        "title": "Mao",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "author": "Delia Davin"
+      },
+      {
+        "title": "Aerial Warfare",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Frank Ledwidge"
+      },
+      {
+        "title": "American Foreign Relations",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Andrew Preston"
+      },
+      {
+        "title": "American Immigration",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "David A. Gerber"
+      },
+      {
+        "title": "Federalism",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Mark J. Rozell, Clyde Wilcox"
+      },
+      {
+        "title": "Modern Ireland",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Senia Paseta"
+      },
+      {
+        "title": "Philosophy in the Islamic World",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Peter Adamson"
+      },
+      {
+        "title": "The Mexican Revolution",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Alan Knight"
+      },
+      {
+        "title": "Zionism",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Michael Stanislawski"
+      },
+      {
+        "title": "Alexander the Great",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "Hugh Bowden"
+      },
+      {
+        "title": "Chinese literature",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "Sabina Knight"
+      },
+      {
+        "title": "Indian philosophy",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "Sue Hamilton"
+      },
+      {
+        "title": "Military Strategy",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "Antulio Joseph Echevarria"
+      },
+      {
+        "title": "Modern Brazil",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "Anthony W. Pereira"
+      },
+      {
+        "title": "Orthodox Christianity",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "A. Edward Siecienski"
+      },
+      {
+        "title": "The Crusades",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "Christopher Tyerman"
+      },
+      {
+        "title": "The Vikings",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "Julian D. Richards"
+      },
+      {
+        "title": "American Cultural History",
+        "count": 2,
+        "sections": 2,
+        "paths": 4,
+        "author": "Eric Avila"
+      },
+      {
+        "title": "The U.S. Supreme Court",
+        "count": 2,
+        "sections": 2,
+        "paths": 4,
+        "author": "Linda Greenhouse"
+      },
+      {
+        "title": "World Mythology",
+        "count": 2,
+        "sections": 2,
+        "paths": 4,
+        "author": "David A. Leeming"
+      },
+      {
+        "title": "African American History",
+        "count": 2,
+        "sections": 2,
+        "paths": 3,
+        "author": "Jonathan Scott Holloway"
+      },
+      {
+        "title": "American Women's History",
+        "count": 2,
+        "sections": 2,
+        "paths": 3,
+        "author": "Susan Ware"
+      },
+      {
+        "title": "Modern Italy",
+        "count": 2,
+        "sections": 2,
+        "paths": 3,
+        "author": "Anna Cento Bull"
+      },
+      {
+        "title": "Prohibition",
+        "count": 2,
+        "sections": 2,
+        "paths": 3,
+        "author": "W. J. Rorabaugh"
+      },
+      {
+        "title": "The Aztecs",
+        "count": 2,
+        "sections": 2,
+        "paths": 3,
+        "author": "David Carrasco"
+      },
+      {
+        "title": "The Maya",
+        "count": 2,
+        "sections": 2,
+        "paths": 3,
+        "author": "Matthew Restall, Amara Solari"
       },
       {
         "title": "The U.S. Congress",
         "count": 2,
+        "sections": 2,
+        "paths": 3,
         "author": "Donald Ritchie"
       },
       {
         "title": "The U.S. Constitution",
         "count": 2,
+        "sections": 2,
+        "paths": 3,
         "author": "David J. Bodenhamer"
-      },
-      {
-        "title": "The U.S. Supreme Court",
-        "count": 2,
-        "author": "Linda Greenhouse"
-      },
-      {
-        "title": "The Vikings",
-        "count": 2,
-        "author": "Julian D. Richards"
-      },
-      {
-        "title": "The Welfare State",
-        "count": 2,
-        "author": "David Garland"
-      },
-      {
-        "title": "War and Technology",
-        "count": 2,
-        "author": "Alex Roland"
       },
       {
         "title": "Witchcraft",
         "count": 2,
+        "sections": 2,
+        "paths": 3,
         "author": "Malcolm Gaskill"
       },
       {
-        "title": "World Mythology",
+        "title": "American Business History",
         "count": 2,
-        "author": "David A. Leeming"
+        "sections": 2,
+        "paths": 2,
+        "author": "Walter A. Friedman"
+      },
+      {
+        "title": "American History",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Paul S. Boyer"
+      },
+      {
+        "title": "American Military History",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Joseph T. Glatthaar"
+      },
+      {
+        "title": "American Political History",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Donald Critchlow"
+      },
+      {
+        "title": "American Political Parties and Elections",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "L. Sandy Maisel"
+      },
+      {
+        "title": "Antisemitism",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Steven Beller"
+      },
+      {
+        "title": "Asian American History",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Madeline Y. Hsu"
+      },
+      {
+        "title": "Australia",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Kenneth Morgan"
+      },
+      {
+        "title": "Canada",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Donald Wright"
+      },
+      {
+        "title": "Gandhi",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Bhikhu Parekh"
+      },
+      {
+        "title": "Japanese Literature",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Alan Tansman"
+      },
+      {
+        "title": "Machiavelli",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Quentin Skinner"
+      },
+      {
+        "title": "Modern Latin American Literature",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Roberto González Echevarría"
+      },
+      {
+        "title": "Muhammad",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Jonathan A.C. Brown"
+      },
+      {
+        "title": "Nelson Mandela",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Elleke Boehmer"
+      },
+      {
+        "title": "Northern Ireland",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Marc Mulholland"
+      },
+      {
+        "title": "Pakistan",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Pippa Virdee"
+      },
+      {
+        "title": "Progressivism",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Walter Nugent"
+      },
+      {
+        "title": "Sikhism",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Eleanor Nesbitt"
+      },
+      {
+        "title": "The American Presidency",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Charles O. Jones"
+      },
+      {
+        "title": "The Koran",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Michael Cook"
+      },
+      {
+        "title": "The Reformation",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Peter Marshall"
+      },
+      {
+        "title": "The Renaissance",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Jerry Brotton"
+      },
+      {
+        "title": "The Roman Empire",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Christopher Kelly"
+      },
+      {
+        "title": "The Russian Revolution",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "S. A. Smith"
+      },
+      {
+        "title": "War and Technology",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Alex Roland"
       },
       {
         "title": "Writing and Script",
         "count": 2,
+        "sections": 2,
+        "paths": 2,
         "author": "Andrew Robinson"
-      },
-      {
-        "title": "Zionism",
-        "count": 2,
-        "author": "Michael Stanislawski"
       }
     ],
     "wiki": [
       {
-        "title": "Egypt",
-        "count": 5
+        "title": "Post-classical history",
+        "count": 5,
+        "sections": 17,
+        "paths": 41
       },
       {
-        "title": "Post-classical history",
-        "count": 5
+        "title": "Egypt",
+        "count": 5,
+        "sections": 8,
+        "paths": 20
       },
       {
         "title": "Age of Discovery",
-        "count": 4
-      },
-      {
-        "title": "Byzantine Empire",
-        "count": 4
-      },
-      {
-        "title": "Colonialism",
-        "count": 4
+        "count": 4,
+        "sections": 16,
+        "paths": 26
       },
       {
         "title": "Imperialism",
-        "count": 4
+        "count": 4,
+        "sections": 15,
+        "paths": 37
       },
       {
-        "title": "Iran",
-        "count": 4
-      },
-      {
-        "title": "Islamic Golden Age",
-        "count": 4
-      },
-      {
-        "title": "Italy",
-        "count": 4
-      },
-      {
-        "title": "Mongol Empire",
-        "count": 4
-      },
-      {
-        "title": "Ottoman Empire",
-        "count": 4
-      },
-      {
-        "title": "Russia",
-        "count": 4
+        "title": "Colonialism",
+        "count": 4,
+        "sections": 13,
+        "paths": 33
       },
       {
         "title": "Silk Road",
-        "count": 4
+        "count": 4,
+        "sections": 12,
+        "paths": 22
+      },
+      {
+        "title": "Mongol Empire",
+        "count": 4,
+        "sections": 10,
+        "paths": 30
+      },
+      {
+        "title": "Islamic Golden Age",
+        "count": 4,
+        "sections": 10,
+        "paths": 17
       },
       {
         "title": "Spanish Empire",
-        "count": 4
+        "count": 4,
+        "sections": 9,
+        "paths": 33
       },
       {
-        "title": "Algeria",
-        "count": 3
+        "title": "Ottoman Empire",
+        "count": 4,
+        "sections": 9,
+        "paths": 28
       },
       {
-        "title": "Ancient history",
-        "count": 3
+        "title": "Russia",
+        "count": 4,
+        "sections": 9,
+        "paths": 24
       },
       {
-        "title": "Bangladesh",
-        "count": 3
+        "title": "Italy",
+        "count": 4,
+        "sections": 8,
+        "paths": 28
+      },
+      {
+        "title": "Byzantine Empire",
+        "count": 4,
+        "sections": 7,
+        "paths": 31
+      },
+      {
+        "title": "Iran",
+        "count": 4,
+        "sections": 7,
+        "paths": 17
       },
       {
         "title": "British Empire",
-        "count": 3
-      },
-      {
-        "title": "China",
-        "count": 3
-      },
-      {
-        "title": "Democratic Republic of the Congo",
-        "count": 3
-      },
-      {
-        "title": "Early modern period",
-        "count": 3
-      },
-      {
-        "title": "East Asia",
-        "count": 3
-      },
-      {
-        "title": "Ethiopia",
-        "count": 3
-      },
-      {
-        "title": "Europe",
-        "count": 3
-      },
-      {
-        "title": "France",
-        "count": 3
-      },
-      {
-        "title": "History of Africa",
-        "count": 3
-      },
-      {
-        "title": "History of Europe",
-        "count": 3
-      },
-      {
-        "title": "History of North America",
-        "count": 3
-      },
-      {
-        "title": "Ibn Khaldun",
-        "count": 3
-      },
-      {
-        "title": "Iron Age",
-        "count": 3
-      },
-      {
-        "title": "Japan",
-        "count": 3
-      },
-      {
-        "title": "Malaysia",
-        "count": 3
-      },
-      {
-        "title": "Mexico",
-        "count": 3
-      },
-      {
-        "title": "Myanmar",
-        "count": 3
-      },
-      {
-        "title": "Nigeria",
-        "count": 3
-      },
-      {
-        "title": "Pakistan",
-        "count": 3
-      },
-      {
-        "title": "Poland",
-        "count": 3
-      },
-      {
-        "title": "Singapore",
-        "count": 3
-      },
-      {
-        "title": "South Korea",
-        "count": 3
+        "count": 3,
+        "sections": 20,
+        "paths": 72
       },
       {
         "title": "Spain",
-        "count": 3
+        "count": 3,
+        "sections": 13,
+        "paths": 36
+      },
+      {
+        "title": "China",
+        "count": 3,
+        "sections": 11,
+        "paths": 47
+      },
+      {
+        "title": "France",
+        "count": 3,
+        "sections": 11,
+        "paths": 39
+      },
+      {
+        "title": "Early modern period",
+        "count": 3,
+        "sections": 11,
+        "paths": 26
+      },
+      {
+        "title": "History of Africa",
+        "count": 3,
+        "sections": 7,
+        "paths": 27
       },
       {
         "title": "Stone Age",
-        "count": 3
+        "count": 3,
+        "sections": 7,
+        "paths": 14
       },
       {
-        "title": "Thailand",
-        "count": 3
+        "title": "Ancient history",
+        "count": 3,
+        "sections": 6,
+        "paths": 27
+      },
+      {
+        "title": "Poland",
+        "count": 3,
+        "sections": 6,
+        "paths": 18
+      },
+      {
+        "title": "Ibn Khaldun",
+        "count": 3,
+        "sections": 6,
+        "paths": 8
+      },
+      {
+        "title": "Mexico",
+        "count": 3,
+        "sections": 5,
+        "paths": 26
+      },
+      {
+        "title": "Europe",
+        "count": 3,
+        "sections": 5,
+        "paths": 16
+      },
+      {
+        "title": "South Korea",
+        "count": 3,
+        "sections": 5,
+        "paths": 14
+      },
+      {
+        "title": "History of North America",
+        "count": 3,
+        "sections": 5,
+        "paths": 12
       },
       {
         "title": "Turkey",
-        "count": 3
+        "count": 3,
+        "sections": 5,
+        "paths": 12
       },
       {
-        "title": "Achaemenid Empire",
-        "count": 2
+        "title": "Iron Age",
+        "count": 3,
+        "sections": 5,
+        "paths": 11
       },
       {
-        "title": "Akbar",
-        "count": 2
+        "title": "Algeria",
+        "count": 3,
+        "sections": 5,
+        "paths": 9
       },
       {
-        "title": "Alexander the Great",
-        "count": 2
+        "title": "Ethiopia",
+        "count": 3,
+        "sections": 5,
+        "paths": 9
       },
       {
-        "title": "Ancient Greece",
-        "count": 2
+        "title": "Japan",
+        "count": 3,
+        "sections": 4,
+        "paths": 33
       },
       {
-        "title": "Ancient Rome",
-        "count": 2
+        "title": "History of Europe",
+        "count": 3,
+        "sections": 4,
+        "paths": 14
       },
       {
-        "title": "Argentina",
-        "count": 2
+        "title": "East Asia",
+        "count": 3,
+        "sections": 4,
+        "paths": 11
       },
       {
-        "title": "Atlantic slave trade",
-        "count": 2
+        "title": "Nigeria",
+        "count": 3,
+        "sections": 4,
+        "paths": 11
       },
       {
-        "title": "Australia",
-        "count": 2
+        "title": "Myanmar",
+        "count": 3,
+        "sections": 4,
+        "paths": 10
       },
       {
-        "title": "Aztecs",
-        "count": 2
+        "title": "Democratic Republic of the Congo",
+        "count": 3,
+        "sections": 4,
+        "paths": 6
       },
       {
-        "title": "Beijing",
-        "count": 2
+        "title": "Singapore",
+        "count": 3,
+        "sections": 4,
+        "paths": 5
       },
       {
-        "title": "Black Death",
-        "count": 2
+        "title": "Thailand",
+        "count": 3,
+        "sections": 3,
+        "paths": 11
       },
       {
-        "title": "Brazil",
-        "count": 2
+        "title": "Pakistan",
+        "count": 3,
+        "sections": 3,
+        "paths": 9
       },
       {
-        "title": "Bronze Age",
-        "count": 2
+        "title": "Malaysia",
+        "count": 3,
+        "sections": 3,
+        "paths": 7
       },
       {
-        "title": "Canada",
-        "count": 2
-      },
-      {
-        "title": "Central America",
-        "count": 2
-      },
-      {
-        "title": "Colombia",
-        "count": 2
-      },
-      {
-        "title": "Crusades",
-        "count": 2
-      },
-      {
-        "title": "Delhi",
-        "count": 2
-      },
-      {
-        "title": "Genghis Khan",
-        "count": 2
-      },
-      {
-        "title": "Germany",
-        "count": 2
-      },
-      {
-        "title": "History of agriculture",
-        "count": 2
-      },
-      {
-        "title": "History of art",
-        "count": 2
-      },
-      {
-        "title": "History of Asia",
-        "count": 2
-      },
-      {
-        "title": "History of South America",
-        "count": 2
-      },
-      {
-        "title": "Holy Roman Empire",
-        "count": 2
-      },
-      {
-        "title": "Hong Kong",
-        "count": 2
-      },
-      {
-        "title": "Human history",
-        "count": 2
-      },
-      {
-        "title": "Inca Empire",
-        "count": 2
-      },
-      {
-        "title": "India",
-        "count": 2
-      },
-      {
-        "title": "Indonesia",
-        "count": 2
-      },
-      {
-        "title": "Jakarta",
-        "count": 2
-      },
-      {
-        "title": "Karl Marx",
-        "count": 2
-      },
-      {
-        "title": "Kenya",
-        "count": 2
-      },
-      {
-        "title": "Mahatma Gandhi",
-        "count": 2
-      },
-      {
-        "title": "Martin Luther",
-        "count": 2
-      },
-      {
-        "title": "Mesoamerica",
-        "count": 2
-      },
-      {
-        "title": "Middle Ages",
-        "count": 2
-      },
-      {
-        "title": "Middle East",
-        "count": 2
-      },
-      {
-        "title": "Mughal Empire",
-        "count": 2
-      },
-      {
-        "title": "Oceania",
-        "count": 2
-      },
-      {
-        "title": "Philippines",
-        "count": 2
-      },
-      {
-        "title": "Reformation",
-        "count": 2
-      },
-      {
-        "title": "Renaissance",
-        "count": 2
-      },
-      {
-        "title": "Rome",
-        "count": 2
-      },
-      {
-        "title": "Saudi Arabia",
-        "count": 2
-      },
-      {
-        "title": "Scramble for Africa",
-        "count": 2
-      },
-      {
-        "title": "South Africa",
-        "count": 2
-      },
-      {
-        "title": "South America",
-        "count": 2
-      },
-      {
-        "title": "Sumer",
-        "count": 2
-      },
-      {
-        "title": "Timur",
-        "count": 2
-      },
-      {
-        "title": "Tokyo",
-        "count": 2
-      },
-      {
-        "title": "Trade",
-        "count": 2
-      },
-      {
-        "title": "United Kingdom",
-        "count": 2
+        "title": "Bangladesh",
+        "count": 3,
+        "sections": 3,
+        "paths": 6
       },
       {
         "title": "United States",
-        "count": 2
+        "count": 2,
+        "sections": 11,
+        "paths": 41
       },
       {
-        "title": "Vietnam",
-        "count": 2
-      },
-      {
-        "title": "Viking Age",
-        "count": 2
+        "title": "Atlantic slave trade",
+        "count": 2,
+        "sections": 10,
+        "paths": 20
       },
       {
         "title": "World War I",
-        "count": 2
+        "count": 2,
+        "sections": 8,
+        "paths": 23
+      },
+      {
+        "title": "United Kingdom",
+        "count": 2,
+        "sections": 7,
+        "paths": 18
+      },
+      {
+        "title": "Holy Roman Empire",
+        "count": 2,
+        "sections": 6,
+        "paths": 16
+      },
+      {
+        "title": "History of Asia",
+        "count": 2,
+        "sections": 5,
+        "paths": 17
+      },
+      {
+        "title": "Mughal Empire",
+        "count": 2,
+        "sections": 5,
+        "paths": 17
+      },
+      {
+        "title": "Vietnam",
+        "count": 2,
+        "sections": 5,
+        "paths": 15
+      },
+      {
+        "title": "Scramble for Africa",
+        "count": 2,
+        "sections": 5,
+        "paths": 14
+      },
+      {
+        "title": "Black Death",
+        "count": 2,
+        "sections": 5,
+        "paths": 10
+      },
+      {
+        "title": "Genghis Khan",
+        "count": 2,
+        "sections": 5,
+        "paths": 10
+      },
+      {
+        "title": "Reformation",
+        "count": 2,
+        "sections": 5,
+        "paths": 9
+      },
+      {
+        "title": "Middle Ages",
+        "count": 2,
+        "sections": 4,
+        "paths": 16
+      },
+      {
+        "title": "Achaemenid Empire",
+        "count": 2,
+        "sections": 4,
+        "paths": 12
+      },
+      {
+        "title": "Alexander the Great",
+        "count": 2,
+        "sections": 4,
+        "paths": 11
+      },
+      {
+        "title": "Bronze Age",
+        "count": 2,
+        "sections": 4,
+        "paths": 11
+      },
+      {
+        "title": "Argentina",
+        "count": 2,
+        "sections": 4,
+        "paths": 10
+      },
+      {
+        "title": "Crusades",
+        "count": 2,
+        "sections": 4,
+        "paths": 10
+      },
+      {
+        "title": "Philippines",
+        "count": 2,
+        "sections": 4,
+        "paths": 5
+      },
+      {
+        "title": "Ancient Rome",
+        "count": 2,
+        "sections": 3,
+        "paths": 21
+      },
+      {
+        "title": "Brazil",
+        "count": 2,
+        "sections": 3,
+        "paths": 18
+      },
+      {
+        "title": "Germany",
+        "count": 2,
+        "sections": 3,
+        "paths": 17
+      },
+      {
+        "title": "Canada",
+        "count": 2,
+        "sections": 3,
+        "paths": 14
+      },
+      {
+        "title": "South America",
+        "count": 2,
+        "sections": 3,
+        "paths": 12
+      },
+      {
+        "title": "Colombia",
+        "count": 2,
+        "sections": 3,
+        "paths": 10
+      },
+      {
+        "title": "Renaissance",
+        "count": 2,
+        "sections": 3,
+        "paths": 10
+      },
+      {
+        "title": "Viking Age",
+        "count": 2,
+        "sections": 3,
+        "paths": 9
+      },
+      {
+        "title": "Mesoamerica",
+        "count": 2,
+        "sections": 3,
+        "paths": 8
+      },
+      {
+        "title": "History of agriculture",
+        "count": 2,
+        "sections": 3,
+        "paths": 7
+      },
+      {
+        "title": "Karl Marx",
+        "count": 2,
+        "sections": 3,
+        "paths": 7
+      },
+      {
+        "title": "Mahatma Gandhi",
+        "count": 2,
+        "sections": 3,
+        "paths": 5
+      },
+      {
+        "title": "Timur",
+        "count": 2,
+        "sections": 3,
+        "paths": 5
+      },
+      {
+        "title": "Ancient Greece",
+        "count": 2,
+        "sections": 2,
+        "paths": 17
+      },
+      {
+        "title": "Central America",
+        "count": 2,
+        "sections": 2,
+        "paths": 17
+      },
+      {
+        "title": "History of South America",
+        "count": 2,
+        "sections": 2,
+        "paths": 13
+      },
+      {
+        "title": "Inca Empire",
+        "count": 2,
+        "sections": 2,
+        "paths": 12
+      },
+      {
+        "title": "Rome",
+        "count": 2,
+        "sections": 2,
+        "paths": 12
+      },
+      {
+        "title": "Australia",
+        "count": 2,
+        "sections": 2,
+        "paths": 10
+      },
+      {
+        "title": "Delhi",
+        "count": 2,
+        "sections": 2,
+        "paths": 10
+      },
+      {
+        "title": "India",
+        "count": 2,
+        "sections": 2,
+        "paths": 10
+      },
+      {
+        "title": "South Africa",
+        "count": 2,
+        "sections": 2,
+        "paths": 10
+      },
+      {
+        "title": "History of art",
+        "count": 2,
+        "sections": 2,
+        "paths": 9
+      },
+      {
+        "title": "Oceania",
+        "count": 2,
+        "sections": 2,
+        "paths": 9
+      },
+      {
+        "title": "Sumer",
+        "count": 2,
+        "sections": 2,
+        "paths": 9
+      },
+      {
+        "title": "Trade",
+        "count": 2,
+        "sections": 2,
+        "paths": 7
+      },
+      {
+        "title": "Indonesia",
+        "count": 2,
+        "sections": 2,
+        "paths": 6
+      },
+      {
+        "title": "Jakarta",
+        "count": 2,
+        "sections": 2,
+        "paths": 6
+      },
+      {
+        "title": "Kenya",
+        "count": 2,
+        "sections": 2,
+        "paths": 6
+      },
+      {
+        "title": "Akbar",
+        "count": 2,
+        "sections": 2,
+        "paths": 5
+      },
+      {
+        "title": "Beijing",
+        "count": 2,
+        "sections": 2,
+        "paths": 5
+      },
+      {
+        "title": "Middle East",
+        "count": 2,
+        "sections": 2,
+        "paths": 5
+      },
+      {
+        "title": "Tokyo",
+        "count": 2,
+        "sections": 2,
+        "paths": 5
+      },
+      {
+        "title": "Aztecs",
+        "count": 2,
+        "sections": 2,
+        "paths": 4
+      },
+      {
+        "title": "Hong Kong",
+        "count": 2,
+        "sections": 2,
+        "paths": 4
+      },
+      {
+        "title": "Martin Luther",
+        "count": 2,
+        "sections": 2,
+        "paths": 4
+      },
+      {
+        "title": "Saudi Arabia",
+        "count": 2,
+        "sections": 2,
+        "paths": 4
+      },
+      {
+        "title": "Human history",
+        "count": 2,
+        "sections": 2,
+        "paths": 3
       }
     ],
     "macro": [
       {
-        "title": "Arabia",
-        "count": 4
+        "title": "European History and Culture",
+        "count": 4,
+        "sections": 8,
+        "paths": 8
       },
       {
         "title": "Balkan States",
-        "count": 4
+        "count": 4,
+        "sections": 7,
+        "paths": 7
       },
       {
         "title": "Egypt",
-        "count": 4
-      },
-      {
-        "title": "European History and Culture",
-        "count": 4
+        "count": 4,
+        "sections": 6,
+        "paths": 6
       },
       {
         "title": "France",
-        "count": 4
+        "count": 4,
+        "sections": 6,
+        "paths": 6
       },
       {
         "title": "Germany",
-        "count": 4
-      },
-      {
-        "title": "Iran",
-        "count": 4
+        "count": 4,
+        "sections": 6,
+        "paths": 6
       },
       {
         "title": "Italy",
-        "count": 4
+        "count": 4,
+        "sections": 6,
+        "paths": 6
       },
       {
         "title": "North Africa",
-        "count": 4
+        "count": 4,
+        "sections": 6,
+        "paths": 6
       },
       {
         "title": "Rome",
-        "count": 4
+        "count": 4,
+        "sections": 6,
+        "paths": 6
       },
       {
         "title": "Syria",
-        "count": 4
+        "count": 4,
+        "sections": 6,
+        "paths": 6
       },
       {
         "title": "Transcaucasia",
-        "count": 4
+        "count": 4,
+        "sections": 6,
+        "paths": 6
+      },
+      {
+        "title": "Arabia",
+        "count": 4,
+        "sections": 5,
+        "paths": 5
+      },
+      {
+        "title": "Iran",
+        "count": 4,
+        "sections": 5,
+        "paths": 5
       },
       {
         "title": "Turkey and Ancient Anatolia",
-        "count": 4
-      },
-      {
-        "title": "Afghanistan",
-        "count": 3
-      },
-      {
-        "title": "Africa",
-        "count": 3
-      },
-      {
-        "title": "Amsterdam",
-        "count": 3
-      },
-      {
-        "title": "Antwerp",
-        "count": 3
-      },
-      {
-        "title": "Argentina",
-        "count": 3
+        "count": 4,
+        "sections": 5,
+        "paths": 5
       },
       {
         "title": "Asia",
-        "count": 3
+        "count": 3,
+        "sections": 15,
+        "paths": 15
       },
       {
-        "title": "Athens",
-        "count": 3
-      },
-      {
-        "title": "Austria",
-        "count": 3
-      },
-      {
-        "title": "Baltic States",
-        "count": 3
-      },
-      {
-        "title": "Belarus",
-        "count": 3
-      },
-      {
-        "title": "Belgium",
-        "count": 3
-      },
-      {
-        "title": "Bolivia",
-        "count": 3
-      },
-      {
-        "title": "Canton",
-        "count": 3
-      },
-      {
-        "title": "Central Africa",
-        "count": 3
-      },
-      {
-        "title": "Chile",
-        "count": 3
-      },
-      {
-        "title": "China",
-        "count": 3
-      },
-      {
-        "title": "Colombia",
-        "count": 3
-      },
-      {
-        "title": "Czech and Slovak Republics",
-        "count": 3
-      },
-      {
-        "title": "Denmark",
-        "count": 3
-      },
-      {
-        "title": "Eastern Africa",
-        "count": 3
-      },
-      {
-        "title": "Ecuador",
-        "count": 3
-      },
-      {
-        "title": "Finland",
-        "count": 3
-      },
-      {
-        "title": "Florence",
-        "count": 3
-      },
-      {
-        "title": "Greece",
-        "count": 3
-      },
-      {
-        "title": "Hungary",
-        "count": 3
-      },
-      {
-        "title": "Iceland",
-        "count": 3
-      },
-      {
-        "title": "India",
-        "count": 3
-      },
-      {
-        "title": "Indonesia",
-        "count": 3
-      },
-      {
-        "title": "Iraq",
-        "count": 3
-      },
-      {
-        "title": "Ireland",
-        "count": 3
-      },
-      {
-        "title": "Israel",
-        "count": 3
-      },
-      {
-        "title": "Japan",
-        "count": 3
-      },
-      {
-        "title": "Jordan",
-        "count": 3
-      },
-      {
-        "title": "Korea",
-        "count": 3
-      },
-      {
-        "title": "Latin America, The History of",
-        "count": 3
-      },
-      {
-        "title": "Lebanon",
-        "count": 3
-      },
-      {
-        "title": "Lima",
-        "count": 3
-      },
-      {
-        "title": "Lisbon",
-        "count": 3
-      },
-      {
-        "title": "London",
-        "count": 3
-      },
-      {
-        "title": "Luxembourg",
-        "count": 3
-      },
-      {
-        "title": "Madrid",
-        "count": 3
-      },
-      {
-        "title": "Mexico",
-        "count": 3
-      },
-      {
-        "title": "Mexico City",
-        "count": 3
-      },
-      {
-        "title": "Milan",
-        "count": 3
-      },
-      {
-        "title": "Nanking",
-        "count": 3
-      },
-      {
-        "title": "Naples",
-        "count": 3
-      },
-      {
-        "title": "Nepal",
-        "count": 3
-      },
-      {
-        "title": "Netherlands, The",
-        "count": 3
-      },
-      {
-        "title": "Norway",
-        "count": 3
-      },
-      {
-        "title": "Palestine",
-        "count": 3
-      },
-      {
-        "title": "Paris",
-        "count": 3
-      },
-      {
-        "title": "Peking",
-        "count": 3
-      },
-      {
-        "title": "Peru",
-        "count": 3
-      },
-      {
-        "title": "Poland",
-        "count": 3
-      },
-      {
-        "title": "Portugal",
-        "count": 3
-      },
-      {
-        "title": "Prague",
-        "count": 3
-      },
-      {
-        "title": "Russia",
-        "count": 3
-      },
-      {
-        "title": "Southeast Asia",
-        "count": 3
-      },
-      {
-        "title": "Southern Africa",
-        "count": 3
+        "title": "Africa",
+        "count": 3,
+        "sections": 8,
+        "paths": 8
       },
       {
         "title": "Spain",
-        "count": 3
+        "count": 3,
+        "sections": 7,
+        "paths": 7
       },
       {
-        "title": "Sri Lanka",
-        "count": 3
+        "title": "Austria",
+        "count": 3,
+        "sections": 6,
+        "paths": 6
       },
       {
-        "title": "Steppe, The History of the Eurasian",
-        "count": 3
+        "title": "Hungary",
+        "count": 3,
+        "sections": 6,
+        "paths": 6
       },
       {
-        "title": "Sudan, The",
-        "count": 3
+        "title": "Baltic States",
+        "count": 3,
+        "sections": 5,
+        "paths": 5
       },
       {
-        "title": "Sweden",
-        "count": 3
+        "title": "China",
+        "count": 3,
+        "sections": 5,
+        "paths": 5
       },
       {
-        "title": "Switzerland",
-        "count": 3
+        "title": "Czech and Slovak Republics",
+        "count": 3,
+        "sections": 5,
+        "paths": 5
       },
       {
-        "title": "Tokyo-Yokohama Metropolitan Area",
-        "count": 3
+        "title": "Ireland",
+        "count": 3,
+        "sections": 5,
+        "paths": 5
       },
       {
-        "title": "Ukraine",
-        "count": 3
+        "title": "Latin America, The History of",
+        "count": 3,
+        "sections": 5,
+        "paths": 5
+      },
+      {
+        "title": "Nepal",
+        "count": 3,
+        "sections": 5,
+        "paths": 5
+      },
+      {
+        "title": "Poland",
+        "count": 3,
+        "sections": 5,
+        "paths": 5
+      },
+      {
+        "title": "Russia",
+        "count": 3,
+        "sections": 5,
+        "paths": 5
       },
       {
         "title": "United Kingdom",
-        "count": 3
+        "count": 3,
+        "sections": 5,
+        "paths": 5
       },
       {
         "title": "Venice",
-        "count": 3
+        "count": 3,
+        "sections": 5,
+        "paths": 5
+      },
+      {
+        "title": "Afghanistan",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Amsterdam",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Athens",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Belarus",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Belgium",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Denmark",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Eastern Africa",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Finland",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Florence",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Greece",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Iceland",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "India",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Lebanon",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Lisbon",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "London",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Luxembourg",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Madrid",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Mexico",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Milan",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Nanking",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Naples",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Netherlands, The",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Norway",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Palestine",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Paris",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Portugal",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Prague",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Sri Lanka",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Sweden",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Switzerland",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Ukraine",
+        "count": 3,
+        "sections": 4,
+        "paths": 4
       },
       {
         "title": "Vienna",
-        "count": 3
+        "count": 3,
+        "sections": 4,
+        "paths": 4
+      },
+      {
+        "title": "Antwerp",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Argentina",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Bolivia",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Canton",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Central Africa",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Chile",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Colombia",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Ecuador",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Indonesia",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Iraq",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Israel",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Japan",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Jordan",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Korea",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Lima",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Mexico City",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Peking",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Peru",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Southeast Asia",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Southern Africa",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Steppe, The History of the Eurasian",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Sudan, The",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Tokyo-Yokohama Metropolitan Area",
+        "count": 3,
+        "sections": 3,
+        "paths": 3
       },
       {
         "title": "Western Africa",
-        "count": 3
-      },
-      {
-        "title": "Arctic, The",
-        "count": 2
-      },
-      {
-        "title": "Baghdad",
-        "count": 2
-      },
-      {
-        "title": "Barcelona",
-        "count": 2
-      },
-      {
-        "title": "Berlin",
-        "count": 2
-      },
-      {
-        "title": "Brazil",
-        "count": 2
-      },
-      {
-        "title": "Brussels",
-        "count": 2
-      },
-      {
-        "title": "Budapest",
-        "count": 2
-      },
-      {
-        "title": "Buenos Aires",
-        "count": 2
-      },
-      {
-        "title": "Calcutta",
-        "count": 2
-      },
-      {
-        "title": "Canada",
-        "count": 2
-      },
-      {
-        "title": "Central America",
-        "count": 2
-      },
-      {
-        "title": "Cologne",
-        "count": 2
-      },
-      {
-        "title": "Cyprus",
-        "count": 2
-      },
-      {
-        "title": "Damascus",
-        "count": 2
-      },
-      {
-        "title": "Dublin",
-        "count": 2
-      },
-      {
-        "title": "Edinburgh",
-        "count": 2
-      },
-      {
-        "title": "Geneva",
-        "count": 2
-      },
-      {
-        "title": "Greek and Roman Civilizations, Ancient",
-        "count": 2
-      },
-      {
-        "title": "Guyana",
-        "count": 2
-      },
-      {
-        "title": "Habsburg, The House of",
-        "count": 2
-      },
-      {
-        "title": "Hamburg",
-        "count": 2
-      },
-      {
-        "title": "Havana",
-        "count": 2
-      },
-      {
-        "title": "Holy Roman Empire, The History of the",
-        "count": 2
-      },
-      {
-        "title": "Hong Kong",
-        "count": 2
-      },
-      {
-        "title": "International Relations, 20th-Century",
-        "count": 2
-      },
-      {
-        "title": "Istanbul",
-        "count": 2
-      },
-      {
-        "title": "Jakarta",
-        "count": 2
-      },
-      {
-        "title": "Jerusalem",
-        "count": 2
-      },
-      {
-        "title": "Kiev",
-        "count": 2
-      },
-      {
-        "title": "Malta",
-        "count": 2
-      },
-      {
-        "title": "Manchester",
-        "count": 2
-      },
-      {
-        "title": "Manila",
-        "count": 2
-      },
-      {
-        "title": "Marseille",
-        "count": 2
-      },
-      {
-        "title": "Mongolia",
-        "count": 2
-      },
-      {
-        "title": "Moscow",
-        "count": 2
+        "count": 3,
+        "sections": 3,
+        "paths": 3
       },
       {
         "title": "North America",
-        "count": 2
+        "count": 2,
+        "sections": 4,
+        "paths": 4
       },
       {
-        "title": "Paraguay",
-        "count": 2
+        "title": "Arctic, The",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
       },
       {
-        "title": "Philippines",
-        "count": 2
+        "title": "Barcelona",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
       },
       {
-        "title": "Rio de Janeiro",
-        "count": 2
+        "title": "Berlin",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
       },
       {
-        "title": "Saint Petersburg",
-        "count": 2
+        "title": "Budapest",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
       },
       {
-        "title": "Sao Paulo",
-        "count": 2
+        "title": "Canada",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Cologne",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Dublin",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Edinburgh",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Geneva",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Greek and Roman Civilizations, Ancient",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Hamburg",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Holy Roman Empire, The History of the",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Hong Kong",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "International Relations, 20th-Century",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Malta",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Manchester",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Marseille",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Moscow",
+        "count": 2,
+        "sections": 3,
+        "paths": 3
       },
       {
         "title": "South America",
-        "count": 2
-      },
-      {
-        "title": "Suriname",
-        "count": 2
-      },
-      {
-        "title": "Taiwan",
-        "count": 2
-      },
-      {
-        "title": "Tientsin",
-        "count": 2
+        "count": 2,
+        "sections": 3,
+        "paths": 3
       },
       {
         "title": "United States of America",
-        "count": 2
-      },
-      {
-        "title": "Uruguay",
-        "count": 2
-      },
-      {
-        "title": "Venezuela",
-        "count": 2
+        "count": 2,
+        "sections": 3,
+        "paths": 3
       },
       {
         "title": "Warsaw",
-        "count": 2
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Baghdad",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Brazil",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Brussels",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Buenos Aires",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Calcutta",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Central America",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Cyprus",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Damascus",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Guyana",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Habsburg, The House of",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Havana",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Istanbul",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Jakarta",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Jerusalem",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Kiev",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Manila",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Mongolia",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Paraguay",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Philippines",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Rio de Janeiro",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Saint Petersburg",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Sao Paulo",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Suriname",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Taiwan",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Tientsin",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Uruguay",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Venezuela",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
       },
       {
         "title": "West Indies, The",
-        "count": 2
+        "count": 2,
+        "sections": 2,
+        "paths": 2
       },
       {
         "title": "World Wars, The",
-        "count": 2
+        "count": 2,
+        "sections": 2,
+        "paths": 2
       }
     ]
   }

@@ -5,446 +5,545 @@
       {
         "title": "Aesthetics",
         "count": 4,
+        "paths": 8,
         "author": "Bence Nanay"
       },
       {
         "title": "Ancient Egyptian Art and Architecture",
         "count": 3,
+        "paths": 6,
         "author": "Christina Riggs"
-      },
-      {
-        "title": "Architecture",
-        "count": 3,
-        "author": "Andrew Ballantyne"
-      },
-      {
-        "title": "Dada and Surrealism",
-        "count": 3,
-        "author": "David Hopkins"
-      },
-      {
-        "title": "Materials",
-        "count": 3,
-        "author": "Christopher Hall"
       },
       {
         "title": "Modern Drama",
         "count": 3,
+        "paths": 5,
         "author": "Kirsten E. Shepherd-Barr"
       },
       {
         "title": "Prehistory",
         "count": 3,
+        "paths": 5,
         "author": "Chris Gosden"
+      },
+      {
+        "title": "Architecture",
+        "count": 3,
+        "paths": 4,
+        "author": "Andrew Ballantyne"
+      },
+      {
+        "title": "Dada and Surrealism",
+        "count": 3,
+        "paths": 4,
+        "author": "David Hopkins"
+      },
+      {
+        "title": "Materials",
+        "count": 3,
+        "paths": 3,
+        "author": "Christopher Hall"
       },
       {
         "title": "Writing and Script",
         "count": 3,
+        "paths": 3,
         "author": "Andrew Robinson"
-      },
-      {
-        "title": "Art history",
-        "count": 2,
-        "author": "Dana Arnold"
       },
       {
         "title": "Art Theory",
         "count": 2,
+        "paths": 5,
         "author": "Cynthia Freeland"
       },
       {
         "title": "Christian art",
         "count": 2,
+        "paths": 5,
         "author": "Beth Williamson"
-      },
-      {
-        "title": "Classical Literature",
-        "count": 2,
-        "author": "William Allan"
       },
       {
         "title": "Classics",
         "count": 2,
+        "paths": 5,
         "author": "Mary Beard, John Henderson"
       },
       {
-        "title": "Comedy",
+        "title": "Art history",
         "count": 2,
-        "author": "Matthew Bevis"
-      },
-      {
-        "title": "Contemporary art",
-        "count": 2,
-        "author": "Julian Stallabrass"
+        "paths": 4,
+        "author": "Dana Arnold"
       },
       {
         "title": "Creativity",
         "count": 2,
+        "paths": 4,
         "author": "Vlad Petre Glăveanu"
-      },
-      {
-        "title": "Design",
-        "count": 2,
-        "author": "John Heskett"
-      },
-      {
-        "title": "Ethnomusicology",
-        "count": 2,
-        "author": "Timothy Rice"
-      },
-      {
-        "title": "Fashion",
-        "count": 2,
-        "author": "Rebecca Arnold"
       },
       {
         "title": "Film",
         "count": 2,
+        "paths": 4,
         "author": "Michael Wood"
-      },
-      {
-        "title": "Film music",
-        "count": 2,
-        "author": "Kathryn Kalinak"
-      },
-      {
-        "title": "Folk music",
-        "count": 2,
-        "author": "Mark Slobin"
-      },
-      {
-        "title": "Futurism",
-        "count": 2,
-        "author": "Ara H. Merjian"
       },
       {
         "title": "George Bernard Shaw",
         "count": 2,
+        "paths": 4,
         "author": "Christopher Wixson"
-      },
-      {
-        "title": "Horror",
-        "count": 2,
-        "author": "Darryl Jones"
-      },
-      {
-        "title": "Humour",
-        "count": 2,
-        "author": "Noël Carroll"
-      },
-      {
-        "title": "Indian Cinema",
-        "count": 2,
-        "author": "Ashish Rajadhyaska"
       },
       {
         "title": "Modern art",
         "count": 2,
+        "paths": 4,
         "author": "David Cottington"
-      },
-      {
-        "title": "Modernism",
-        "count": 2,
-        "author": "Christopher Butler"
-      },
-      {
-        "title": "Music",
-        "count": 2,
-        "author": "Nicholas Cook"
-      },
-      {
-        "title": "Photography",
-        "count": 2,
-        "author": "Steven Edwards"
       },
       {
         "title": "Renaissance Art",
         "count": 2,
+        "paths": 4,
         "author": "Geraldine A. Johnson"
       },
       {
         "title": "Ritual",
         "count": 2,
+        "paths": 4,
         "author": "Barry Stephenson"
+      },
+      {
+        "title": "William Shakespeare",
+        "count": 2,
+        "paths": 4,
+        "author": "Stanley Wells"
+      },
+      {
+        "title": "Ethnomusicology",
+        "count": 2,
+        "paths": 3,
+        "author": "Timothy Rice"
+      },
+      {
+        "title": "Futurism",
+        "count": 2,
+        "paths": 3,
+        "author": "Ara H. Merjian"
+      },
+      {
+        "title": "Horror",
+        "count": 2,
+        "paths": 3,
+        "author": "Darryl Jones"
+      },
+      {
+        "title": "Humour",
+        "count": 2,
+        "paths": 3,
+        "author": "Noël Carroll"
+      },
+      {
+        "title": "Indian Cinema",
+        "count": 2,
+        "paths": 3,
+        "author": "Ashish Rajadhyaska"
+      },
+      {
+        "title": "Modernism",
+        "count": 2,
+        "paths": 3,
+        "author": "Christopher Butler"
+      },
+      {
+        "title": "Music",
+        "count": 2,
+        "paths": 3,
+        "author": "Nicholas Cook"
       },
       {
         "title": "Romanticism",
         "count": 2,
+        "paths": 3,
         "author": "Michael Ferber"
       },
       {
         "title": "Shakespeare's Comedies",
         "count": 2,
+        "paths": 3,
         "author": "Bart Van Es"
-      },
-      {
-        "title": "Shakespeare's Tragedies",
-        "count": 2,
-        "author": "Stanley Wells"
       },
       {
         "title": "Social and Cultural Anthropology",
         "count": 2,
+        "paths": 3,
         "author": "John Monaghan, Peter Just"
       },
       {
         "title": "Sophocles",
         "count": 2,
+        "paths": 3,
         "author": "Edith Hall"
       },
       {
         "title": "Sound",
         "count": 2,
+        "paths": 3,
         "author": "Mike Goldsmith"
       },
       {
         "title": "The Avant-Garde",
         "count": 2,
+        "paths": 3,
         "author": "David Cottington"
+      },
+      {
+        "title": "Classical Literature",
+        "count": 2,
+        "paths": 2,
+        "author": "William Allan"
+      },
+      {
+        "title": "Comedy",
+        "count": 2,
+        "paths": 2,
+        "author": "Matthew Bevis"
+      },
+      {
+        "title": "Contemporary art",
+        "count": 2,
+        "paths": 2,
+        "author": "Julian Stallabrass"
+      },
+      {
+        "title": "Design",
+        "count": 2,
+        "paths": 2,
+        "author": "John Heskett"
+      },
+      {
+        "title": "Fashion",
+        "count": 2,
+        "paths": 2,
+        "author": "Rebecca Arnold"
+      },
+      {
+        "title": "Film music",
+        "count": 2,
+        "paths": 2,
+        "author": "Kathryn Kalinak"
+      },
+      {
+        "title": "Folk music",
+        "count": 2,
+        "paths": 2,
+        "author": "Mark Slobin"
+      },
+      {
+        "title": "Photography",
+        "count": 2,
+        "paths": 2,
+        "author": "Steven Edwards"
+      },
+      {
+        "title": "Shakespeare's Tragedies",
+        "count": 2,
+        "paths": 2,
+        "author": "Stanley Wells"
       },
       {
         "title": "Theatre",
         "count": 2,
+        "paths": 2,
         "author": "Marvin Carlson"
       },
       {
         "title": "Tragedy",
         "count": 2,
+        "paths": 2,
         "author": "Adrian Poole"
       },
       {
         "title": "Typography",
         "count": 2,
+        "paths": 2,
         "author": "Paul Luna"
-      },
-      {
-        "title": "William Shakespeare",
-        "count": 2,
-        "author": "Stanley Wells"
       }
     ],
     "wiki": [
       {
         "title": "Film",
-        "count": 5
+        "count": 5,
+        "paths": 18
       },
       {
         "title": "Theatre",
-        "count": 5
-      },
-      {
-        "title": "Dance",
-        "count": 4
+        "count": 5,
+        "paths": 14
       },
       {
         "title": "Music",
-        "count": 4
+        "count": 4,
+        "paths": 33
+      },
+      {
+        "title": "Dance",
+        "count": 4,
+        "paths": 15
       },
       {
         "title": "Opera",
-        "count": 4
-      },
-      {
-        "title": "Performing arts",
-        "count": 4
-      },
-      {
-        "title": "Realism (arts)",
-        "count": 4
+        "count": 4,
+        "paths": 10
       },
       {
         "title": "Romanticism",
-        "count": 4
+        "count": 4,
+        "paths": 10
       },
       {
         "title": "Visual arts",
-        "count": 4
+        "count": 4,
+        "paths": 10
       },
       {
-        "title": "Charlie Chaplin",
-        "count": 3
+        "title": "Performing arts",
+        "count": 4,
+        "paths": 8
+      },
+      {
+        "title": "Realism (arts)",
+        "count": 4,
+        "paths": 8
       },
       {
         "title": "Classical music",
-        "count": 3
-      },
-      {
-        "title": "Design",
-        "count": 3
-      },
-      {
-        "title": "Entertainment",
-        "count": 3
-      },
-      {
-        "title": "Iron",
-        "count": 3
-      },
-      {
-        "title": "Literature",
-        "count": 3
+        "count": 3,
+        "paths": 12
       },
       {
         "title": "Michelangelo",
-        "count": 3
+        "count": 3,
+        "paths": 9
       },
       {
         "title": "Oral tradition",
-        "count": 3
+        "count": 3,
+        "paths": 8
       },
       {
-        "title": "Popular culture",
-        "count": 3
+        "title": "Charlie Chaplin",
+        "count": 3,
+        "paths": 7
+      },
+      {
+        "title": "Entertainment",
+        "count": 3,
+        "paths": 7
+      },
+      {
+        "title": "Literature",
+        "count": 3,
+        "paths": 7
+      },
+      {
+        "title": "Design",
+        "count": 3,
+        "paths": 6
       },
       {
         "title": "Television",
-        "count": 3
+        "count": 3,
+        "paths": 5
       },
       {
-        "title": "Ancient Greece",
-        "count": 2
+        "title": "Popular culture",
+        "count": 3,
+        "paths": 4
       },
       {
-        "title": "Architecture",
-        "count": 2
-      },
-      {
-        "title": "Art",
-        "count": 2
-      },
-      {
-        "title": "Bronze",
-        "count": 2
-      },
-      {
-        "title": "Camera",
-        "count": 2
-      },
-      {
-        "title": "Clothing",
-        "count": 2
-      },
-      {
-        "title": "Color",
-        "count": 2
-      },
-      {
-        "title": "Folk music",
-        "count": 2
-      },
-      {
-        "title": "Folklore",
-        "count": 2
-      },
-      {
-        "title": "Glass",
-        "count": 2
-      },
-      {
-        "title": "Gold",
-        "count": 2
-      },
-      {
-        "title": "History of art",
-        "count": 2
-      },
-      {
-        "title": "Jewellery",
-        "count": 2
-      },
-      {
-        "title": "Leonardo da Vinci",
-        "count": 2
-      },
-      {
-        "title": "Masonry",
-        "count": 2
+        "title": "Iron",
+        "count": 3,
+        "paths": 3
       },
       {
         "title": "Painting",
-        "count": 2
-      },
-      {
-        "title": "Paper",
-        "count": 2
-      },
-      {
-        "title": "Photography",
-        "count": 2
-      },
-      {
-        "title": "Pop music",
-        "count": 2
-      },
-      {
-        "title": "Pottery",
-        "count": 2
-      },
-      {
-        "title": "Rhythm",
-        "count": 2
-      },
-      {
-        "title": "Singing",
-        "count": 2
-      },
-      {
-        "title": "Walt Disney",
-        "count": 2
+        "count": 2,
+        "paths": 13
       },
       {
         "title": "William Shakespeare",
-        "count": 2
+        "count": 2,
+        "paths": 11
+      },
+      {
+        "title": "Architecture",
+        "count": 2,
+        "paths": 10
+      },
+      {
+        "title": "History of art",
+        "count": 2,
+        "paths": 8
+      },
+      {
+        "title": "Art",
+        "count": 2,
+        "paths": 7
+      },
+      {
+        "title": "Photography",
+        "count": 2,
+        "paths": 7
+      },
+      {
+        "title": "Ancient Greece",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Jewellery",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Leonardo da Vinci",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Rhythm",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Clothing",
+        "count": 2,
+        "paths": 5
+      },
+      {
+        "title": "Gold",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Masonry",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Pop music",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Pottery",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Singing",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Walt Disney",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Bronze",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Camera",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Color",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Folk music",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Glass",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Paper",
+        "count": 2,
+        "paths": 3
       },
       {
         "title": "Wood",
-        "count": 2
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Folklore",
+        "count": 2,
+        "paths": 2
       }
     ],
     "macro": [
       {
         "title": "African Arts",
-        "count": 7
+        "count": 7,
+        "paths": 7
       },
       {
         "title": "Central Asian Arts",
-        "count": 7
+        "count": 7,
+        "paths": 7
       },
       {
         "title": "Folk Arts",
-        "count": 7
+        "count": 7,
+        "paths": 7
       },
       {
         "title": "Oceanic Arts",
-        "count": 7
+        "count": 7,
+        "paths": 7
       },
       {
         "title": "South Asian Arts",
-        "count": 7
+        "count": 7,
+        "paths": 7
       },
       {
         "title": "Southeast Asian Arts",
-        "count": 7
+        "count": 7,
+        "paths": 7
       },
       {
         "title": "American Peoples, Arts of Native",
-        "count": 6
+        "count": 6,
+        "paths": 6
       },
       {
         "title": "East Asian Arts",
-        "count": 6
+        "count": 6,
+        "paths": 6
       },
       {
         "title": "Egyptian Arts and Architecture, Ancient",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "Islamic Arts",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "Middle Eastern Arts and Architecture, Ancient",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }

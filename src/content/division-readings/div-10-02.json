@@ -3,236 +3,288 @@
   "readings": {
     "vsi": [
       {
-        "title": "Algebra",
-        "count": 3,
-        "author": "Peter M. Higgins"
-      },
-      {
-        "title": "Applied mathematics",
-        "count": 3,
-        "author": "Alain Goriely"
-      },
-      {
         "title": "Chaos",
         "count": 3,
+        "paths": 4,
         "author": "Lenny Smith"
       },
       {
         "title": "Fractals",
         "count": 3,
+        "paths": 4,
         "author": "Kenneth Falconer"
       },
       {
         "title": "Geometry",
         "count": 3,
+        "paths": 4,
         "author": "Maciej Dunajski"
       },
       {
         "title": "Probability",
         "count": 3,
+        "paths": 4,
         "author": "John Haigh"
+      },
+      {
+        "title": "Algebra",
+        "count": 3,
+        "paths": 3,
+        "author": "Peter M. Higgins"
+      },
+      {
+        "title": "Applied mathematics",
+        "count": 3,
+        "paths": 3,
+        "author": "Alain Goriely"
       },
       {
         "title": "Statistics",
         "count": 3,
+        "paths": 3,
         "author": "David J. Hand"
-      },
-      {
-        "title": "Combinatorics",
-        "count": 2,
-        "author": "Robin Wilson"
-      },
-      {
-        "title": "Computer Science",
-        "count": 2,
-        "author": "Subrata Dasgupta"
-      },
-      {
-        "title": "Gödel's Theorem",
-        "count": 2,
-        "author": "A. W. Moore"
-      },
-      {
-        "title": "Infinity",
-        "count": 2,
-        "author": "Ian Stewart"
       },
       {
         "title": "Logic",
         "count": 2,
+        "paths": 3,
         "author": "Graham Priest"
-      },
-      {
-        "title": "Mathematical Analysis",
-        "count": 2,
-        "author": "Richard Earl"
       },
       {
         "title": "Mathematical finance",
         "count": 2,
+        "paths": 3,
         "author": "Mark H. A. Davis"
       },
       {
         "title": "Mathematics",
         "count": 2,
+        "paths": 3,
         "author": "Timothy Gowers"
-      },
-      {
-        "title": "Number theory",
-        "count": 2,
-        "author": "Robin Wilson"
       },
       {
         "title": "Numbers",
         "count": 2,
+        "paths": 3,
         "author": "Peter M. Higgins"
       },
       {
         "title": "Symmetry",
         "count": 2,
+        "paths": 3,
         "author": "Ian Stewart"
+      },
+      {
+        "title": "Combinatorics",
+        "count": 2,
+        "paths": 2,
+        "author": "Robin Wilson"
+      },
+      {
+        "title": "Computer Science",
+        "count": 2,
+        "paths": 2,
+        "author": "Subrata Dasgupta"
+      },
+      {
+        "title": "Gödel's Theorem",
+        "count": 2,
+        "paths": 2,
+        "author": "A. W. Moore"
+      },
+      {
+        "title": "Infinity",
+        "count": 2,
+        "paths": 2,
+        "author": "Ian Stewart"
+      },
+      {
+        "title": "Mathematical Analysis",
+        "count": 2,
+        "paths": 2,
+        "author": "Richard Earl"
+      },
+      {
+        "title": "Number theory",
+        "count": 2,
+        "paths": 2,
+        "author": "Robin Wilson"
       },
       {
         "title": "The Computer",
         "count": 2,
+        "paths": 2,
         "author": "Darrel Ince"
       },
       {
         "title": "The History of Computing",
         "count": 2,
+        "paths": 2,
         "author": "Doron Swade"
       },
       {
         "title": "Topology",
         "count": 2,
+        "paths": 2,
         "author": "Richard Earl"
       },
       {
         "title": "Trigonometry",
         "count": 2,
+        "paths": 2,
         "author": "Glen Van Brummelen"
       }
     ],
     "wiki": [
       {
-        "title": "Al-Khwarizmi",
-        "count": 3
-      },
-      {
-        "title": "Arithmetic",
-        "count": 3
-      },
-      {
-        "title": "Carl Friedrich Gauss",
-        "count": 3
-      },
-      {
-        "title": "Function (mathematics)",
-        "count": 3
-      },
-      {
-        "title": "Geometry",
-        "count": 3
-      },
-      {
         "title": "History of mathematics",
-        "count": 3
-      },
-      {
-        "title": "Leonhard Euler",
-        "count": 3
+        "count": 3,
+        "paths": 18
       },
       {
         "title": "Mathematical analysis",
-        "count": 3
+        "count": 3,
+        "paths": 15
       },
       {
-        "title": "Number",
-        "count": 3
+        "title": "Geometry",
+        "count": 3,
+        "paths": 14
+      },
+      {
+        "title": "Arithmetic",
+        "count": 3,
+        "paths": 13
+      },
+      {
+        "title": "Al-Khwarizmi",
+        "count": 3,
+        "paths": 10
+      },
+      {
+        "title": "Leonhard Euler",
+        "count": 3,
+        "paths": 10
       },
       {
         "title": "Number theory",
-        "count": 3
+        "count": 3,
+        "paths": 10
       },
       {
-        "title": "Abstract algebra",
-        "count": 2
+        "title": "Carl Friedrich Gauss",
+        "count": 3,
+        "paths": 9
       },
       {
-        "title": "Algebra",
-        "count": 2
+        "title": "Number",
+        "count": 3,
+        "paths": 9
       },
       {
-        "title": "Complex number",
-        "count": 2
-      },
-      {
-        "title": "Computer",
-        "count": 2
-      },
-      {
-        "title": "Equation",
-        "count": 2
-      },
-      {
-        "title": "Euclid",
-        "count": 2
-      },
-      {
-        "title": "Exponentiation",
-        "count": 2
-      },
-      {
-        "title": "Fraction",
-        "count": 2
-      },
-      {
-        "title": "Isaac Newton",
-        "count": 2
-      },
-      {
-        "title": "Kurt Gödel",
-        "count": 2
-      },
-      {
-        "title": "Linear algebra",
-        "count": 2
-      },
-      {
-        "title": "Mathematical proof",
-        "count": 2
-      },
-      {
-        "title": "Mathematics",
-        "count": 2
-      },
-      {
-        "title": "Natural number",
-        "count": 2
-      },
-      {
-        "title": "Probability",
-        "count": 2
+        "title": "Function (mathematics)",
+        "count": 3,
+        "paths": 7
       },
       {
         "title": "Set (mathematics)",
-        "count": 2
+        "count": 2,
+        "paths": 13
       },
       {
-        "title": "Space",
-        "count": 2
+        "title": "Algebra",
+        "count": 2,
+        "paths": 12
       },
       {
-        "title": "Three-dimensional space",
-        "count": 2
+        "title": "Abstract algebra",
+        "count": 2,
+        "paths": 10
       },
       {
         "title": "Topology",
-        "count": 2
+        "count": 2,
+        "paths": 10
+      },
+      {
+        "title": "Probability",
+        "count": 2,
+        "paths": 9
+      },
+      {
+        "title": "Euclid",
+        "count": 2,
+        "paths": 8
+      },
+      {
+        "title": "Mathematics",
+        "count": 2,
+        "paths": 8
+      },
+      {
+        "title": "Three-dimensional space",
+        "count": 2,
+        "paths": 8
+      },
+      {
+        "title": "Equation",
+        "count": 2,
+        "paths": 7
+      },
+      {
+        "title": "Linear algebra",
+        "count": 2,
+        "paths": 7
+      },
+      {
+        "title": "Complex number",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Computer",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Exponentiation",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Mathematical proof",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Kurt Gödel",
+        "count": 2,
+        "paths": 5
       },
       {
         "title": "Trigonometry",
-        "count": 2
+        "count": 2,
+        "paths": 5
+      },
+      {
+        "title": "Fraction",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Natural number",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Space",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Isaac Newton",
+        "count": 2,
+        "paths": 3
       }
     ]
   }

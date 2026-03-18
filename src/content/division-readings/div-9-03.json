@@ -5,213 +5,261 @@
       {
         "title": "Buddhism",
         "count": 6,
+        "paths": 6,
         "author": "Damien Keown"
       },
       {
         "title": "Dynasty",
         "count": 6,
+        "paths": 6,
         "author": "Jeroen Duindam"
       },
       {
         "title": "The Silk Road",
         "count": 6,
+        "paths": 6,
         "author": "James A. Millward"
       },
       {
         "title": "The Mongols",
         "count": 5,
+        "paths": 5,
         "author": "Morris Rossabi"
       },
       {
         "title": "Archaeology",
         "count": 4,
+        "paths": 4,
         "author": "Paul Bahn"
       },
       {
         "title": "Confucianism",
         "count": 3,
+        "paths": 3,
         "author": "Daniel K. Gardner"
       },
       {
         "title": "Hinduism",
         "count": 3,
+        "paths": 3,
         "author": "Kim Knott"
       },
       {
         "title": "Islam",
         "count": 3,
+        "paths": 3,
         "author": "Malise Ruthven"
       },
       {
         "title": "Chinese literature",
         "count": 2,
+        "paths": 2,
         "author": "Sabina Knight"
       },
       {
         "title": "Exploration",
         "count": 2,
+        "paths": 2,
         "author": "Stewart A. Weaver"
       },
       {
         "title": "Global Economic History",
         "count": 2,
+        "paths": 2,
         "author": "Robert C. Allen"
       },
       {
         "title": "Indian philosophy",
         "count": 2,
+        "paths": 2,
         "author": "Sue Hamilton"
       },
       {
         "title": "Korea",
         "count": 2,
+        "paths": 2,
         "author": "Michael J. Seth"
       },
       {
         "title": "Modern China",
         "count": 2,
+        "paths": 2,
         "author": "Rana Mitter"
       },
       {
         "title": "Modern India",
         "count": 2,
+        "paths": 2,
         "author": "Craig Jeffrey"
       }
     ],
     "wiki": [
       {
         "title": "Post-classical history",
-        "count": 6
+        "count": 6,
+        "paths": 15
       },
       {
         "title": "Silk Road",
-        "count": 6
+        "count": 6,
+        "paths": 13
       },
       {
         "title": "Mongol Empire",
-        "count": 5
-      },
-      {
-        "title": "Age of Discovery",
-        "count": 4
+        "count": 5,
+        "paths": 22
       },
       {
         "title": "China",
-        "count": 4
-      },
-      {
-        "title": "Genghis Khan",
-        "count": 4
+        "count": 4,
+        "paths": 18
       },
       {
         "title": "Tang dynasty",
-        "count": 4
+        "count": 4,
+        "paths": 10
+      },
+      {
+        "title": "Genghis Khan",
+        "count": 4,
+        "paths": 8
+      },
+      {
+        "title": "Age of Discovery",
+        "count": 4,
+        "paths": 5
       },
       {
         "title": "Ancient history",
-        "count": 3
-      },
-      {
-        "title": "Confucius",
-        "count": 3
-      },
-      {
-        "title": "Early modern period",
-        "count": 3
-      },
-      {
-        "title": "Han dynasty",
-        "count": 3
+        "count": 3,
+        "paths": 11
       },
       {
         "title": "History of Asia",
-        "count": 3
+        "count": 3,
+        "paths": 10
       },
       {
-        "title": "Achaemenid Empire",
-        "count": 2
+        "title": "Early modern period",
+        "count": 3,
+        "paths": 9
       },
       {
-        "title": "Alexander the Great",
-        "count": 2
+        "title": "Han dynasty",
+        "count": 3,
+        "paths": 7
       },
       {
-        "title": "Black Death",
-        "count": 2
-      },
-      {
-        "title": "Bronze Age",
-        "count": 2
-      },
-      {
-        "title": "East Asia",
-        "count": 2
-      },
-      {
-        "title": "Eastern philosophy",
-        "count": 2
-      },
-      {
-        "title": "Himalayas",
-        "count": 2
-      },
-      {
-        "title": "History of agriculture",
-        "count": 2
-      },
-      {
-        "title": "Ibn Khaldun",
-        "count": 2
-      },
-      {
-        "title": "Islamic Golden Age",
-        "count": 2
-      },
-      {
-        "title": "Mahayana",
-        "count": 2
+        "title": "Confucius",
+        "count": 3,
+        "paths": 5
       },
       {
         "title": "Mughal Empire",
-        "count": 2
+        "count": 2,
+        "paths": 8
+      },
+      {
+        "title": "East Asia",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Mahayana",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Eastern philosophy",
+        "count": 2,
+        "paths": 5
       },
       {
         "title": "Stone Age",
-        "count": 2
+        "count": 2,
+        "paths": 5
+      },
+      {
+        "title": "History of agriculture",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Achaemenid Empire",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Alexander the Great",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Black Death",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Bronze Age",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Himalayas",
+        "count": 2,
+        "paths": 3
       },
       {
         "title": "Timur",
-        "count": 2
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Ibn Khaldun",
+        "count": 2,
+        "paths": 2
+      },
+      {
+        "title": "Islamic Golden Age",
+        "count": 2,
+        "paths": 2
       }
     ],
     "macro": [
       {
         "title": "Asia",
-        "count": 7
+        "count": 7,
+        "paths": 7
       },
       {
         "title": "China",
-        "count": 3
+        "count": 3,
+        "paths": 3
       },
       {
         "title": "Nepal",
-        "count": 3
+        "count": 3,
+        "paths": 3
       },
       {
         "title": "Genghis Khan",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "India",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "Nanking",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "Sri Lanka",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }

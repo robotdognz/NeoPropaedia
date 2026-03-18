@@ -91,7 +91,7 @@ export default function VsiCard({
   const showMatch = matchPercent !== undefined && matchPercent > 0;
 
   return (
-    <div class="border border-gray-200 rounded-lg p-4 bg-white hover:shadow-md transition-shadow duration-200">
+    <div class={`border rounded-lg p-4 bg-white hover:shadow-md transition-shadow duration-200 ${checked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}>
       <div class="mb-2 flex items-start justify-between gap-3">
         <div class="min-w-0">
           <h4 class="font-serif font-bold text-gray-900 text-base leading-tight">

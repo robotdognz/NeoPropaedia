@@ -5,139 +5,169 @@
       {
         "title": "Geophysics",
         "count": 4,
+        "paths": 4,
         "author": "William Lowrie"
       },
       {
         "title": "The Earth",
         "count": 4,
+        "paths": 4,
         "author": "Martin Redfern"
       },
       {
         "title": "Geology",
         "count": 3,
+        "paths": 3,
         "author": "Jan Zalasiewicz"
       },
       {
         "title": "Minerals",
         "count": 3,
+        "paths": 3,
         "author": "David Vaughan"
       },
       {
         "title": "Plate tectonics",
         "count": 3,
+        "paths": 3,
         "author": "Peter Molnar"
       },
       {
         "title": "Rocks",
         "count": 3,
+        "paths": 3,
         "author": "Jan Zalasiewicz"
       },
       {
         "title": "Volcanoes",
         "count": 3,
+        "paths": 3,
         "author": "Michael J. Branney, Jan Zalasiewicz"
       },
       {
         "title": "Crystallography",
         "count": 2,
+        "paths": 2,
         "author": "A. M. Glazer"
       },
       {
         "title": "Earth System Science",
         "count": 2,
+        "paths": 2,
         "author": "Tim Lenton"
       },
       {
         "title": "Gravity",
         "count": 2,
+        "paths": 2,
         "author": "Timothy Clifton"
       },
       {
         "title": "The Atmosphere",
         "count": 2,
+        "paths": 2,
         "author": "Paul Palmer"
       },
       {
         "title": "The Elements",
         "count": 2,
+        "paths": 2,
         "author": "Philip Ball"
       },
       {
         "title": "The Sun",
         "count": 2,
+        "paths": 2,
         "author": "Philip Judge"
       }
     ],
     "wiki": [
       {
-        "title": "Chemical element",
-        "count": 3
-      },
-      {
-        "title": "Earth",
-        "count": 3
+        "title": "Internal structure of Earth",
+        "count": 3,
+        "paths": 17
       },
       {
         "title": "Geology",
-        "count": 3
+        "count": 3,
+        "paths": 13
       },
       {
-        "title": "Internal structure of Earth",
-        "count": 3
+        "title": "Chemical element",
+        "count": 3,
+        "paths": 11
       },
       {
-        "title": "Atmosphere of Earth",
-        "count": 2
-      },
-      {
-        "title": "Earthquake",
-        "count": 2
-      },
-      {
-        "title": "Gold",
-        "count": 2
-      },
-      {
-        "title": "Iron",
-        "count": 2
-      },
-      {
-        "title": "Mineral",
-        "count": 2
-      },
-      {
-        "title": "Moon",
-        "count": 2
+        "title": "Earth",
+        "count": 3,
+        "paths": 11
       },
       {
         "title": "Rock (geology)",
-        "count": 2
+        "count": 2,
+        "paths": 13
       },
       {
-        "title": "Sun",
-        "count": 2
+        "title": "Mineral",
+        "count": 2,
+        "paths": 11
+      },
+      {
+        "title": "Earthquake",
+        "count": 2,
+        "paths": 10
+      },
+      {
+        "title": "Iron",
+        "count": 2,
+        "paths": 8
       },
       {
         "title": "Volcano",
-        "count": 2
+        "count": 2,
+        "paths": 7
+      },
+      {
+        "title": "Gold",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Sun",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Atmosphere of Earth",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Moon",
+        "count": 2,
+        "paths": 3
       },
       {
         "title": "Water",
-        "count": 2
+        "count": 2,
+        "paths": 3
       }
     ],
     "macro": [
       {
         "title": "Earth, The: Its Properties, Composition, and Structure",
-        "count": 4
+        "count": 4,
+        "paths": 4
       },
       {
         "title": "Minerals and Rocks",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "Volcanism",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }

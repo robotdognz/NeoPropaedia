@@ -127,6 +127,8 @@ const readingItemSchema = z.object({
   title: z.string(),
   author: z.string().optional(),
   count: z.number().int(),
+  sections: z.number().int().optional(),
+  paths: z.number().int().optional(),
 });
 
 const readingsSchema = z.object({

@@ -5,138 +5,167 @@
       {
         "title": "Geology",
         "count": 3,
+        "paths": 6,
         "author": "Jan Zalasiewicz"
       },
       {
         "title": "Landscapes and Geomorphology",
         "count": 3,
+        "paths": 5,
         "author": "Andrew Goudie, Heather Viles"
       },
       {
         "title": "Plate tectonics",
         "count": 3,
+        "paths": 5,
         "author": "Peter Molnar"
       },
       {
         "title": "Rocks",
         "count": 3,
+        "paths": 5,
         "author": "Jan Zalasiewicz"
       },
       {
         "title": "The Earth",
         "count": 3,
+        "paths": 5,
         "author": "Martin Redfern"
-      },
-      {
-        "title": "Astrobiology",
-        "count": 2,
-        "author": "David C. Catling"
-      },
-      {
-        "title": "Coral Reefs",
-        "count": 2,
-        "author": "Charles Sheppard"
-      },
-      {
-        "title": "Dinosaurs",
-        "count": 2,
-        "author": "David Norman"
-      },
-      {
-        "title": "Earth System Science",
-        "count": 2,
-        "author": "Tim Lenton"
-      },
-      {
-        "title": "Evolution",
-        "count": 2,
-        "author": "Brian Charlesworth, Deborah Charlesworth"
-      },
-      {
-        "title": "Extinction",
-        "count": 2,
-        "author": "Paul B. Wignall"
       },
       {
         "title": "Fossils",
         "count": 2,
+        "paths": 5,
         "author": "Keith Thomson"
       },
       {
         "title": "Geophysics",
         "count": 2,
+        "paths": 5,
         "author": "William Lowrie"
       },
       {
-        "title": "Mammals",
+        "title": "Evolution",
         "count": 2,
-        "author": "T. S. Kemp"
+        "paths": 4,
+        "author": "Brian Charlesworth, Deborah Charlesworth"
+      },
+      {
+        "title": "Astrobiology",
+        "count": 2,
+        "paths": 3,
+        "author": "David C. Catling"
+      },
+      {
+        "title": "Dinosaurs",
+        "count": 2,
+        "paths": 3,
+        "author": "David Norman"
+      },
+      {
+        "title": "Extinction",
+        "count": 2,
+        "paths": 3,
+        "author": "Paul B. Wignall"
       },
       {
         "title": "The History of Life",
         "count": 2,
+        "paths": 3,
         "author": "Michael J. Benton"
       },
       {
         "title": "Volcanoes",
         "count": 2,
+        "paths": 3,
         "author": "Michael J. Branney, Jan Zalasiewicz"
+      },
+      {
+        "title": "Coral Reefs",
+        "count": 2,
+        "paths": 2,
+        "author": "Charles Sheppard"
+      },
+      {
+        "title": "Earth System Science",
+        "count": 2,
+        "paths": 2,
+        "author": "Tim Lenton"
+      },
+      {
+        "title": "Mammals",
+        "count": 2,
+        "paths": 2,
+        "author": "T. S. Kemp"
       }
     ],
     "wiki": [
       {
         "title": "History of Earth",
-        "count": 3
-      },
-      {
-        "title": "Abiogenesis",
-        "count": 2
-      },
-      {
-        "title": "Climate",
-        "count": 2
+        "count": 3,
+        "paths": 19
       },
       {
         "title": "Earth",
-        "count": 2
-      },
-      {
-        "title": "Extinction",
-        "count": 2
-      },
-      {
-        "title": "Geology",
-        "count": 2
+        "count": 2,
+        "paths": 11
       },
       {
         "title": "History of life",
-        "count": 2
-      },
-      {
-        "title": "Mammal",
-        "count": 2
-      },
-      {
-        "title": "Pacific Ocean",
-        "count": 2
+        "count": 2,
+        "paths": 11
       },
       {
         "title": "Vertebrate",
-        "count": 2
+        "count": 2,
+        "paths": 10
+      },
+      {
+        "title": "Geology",
+        "count": 2,
+        "paths": 8
+      },
+      {
+        "title": "Mammal",
+        "count": 2,
+        "paths": 5
+      },
+      {
+        "title": "Climate",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Extinction",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Abiogenesis",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Pacific Ocean",
+        "count": 2,
+        "paths": 3
       }
     ],
     "macro": [
       {
         "title": "Earth, The: Its Properties, Composition, and Structure",
-        "count": 3
+        "count": 3,
+        "paths": 3
       },
       {
         "title": "Geochronology: The Interpretation and Dating of the Geologic Record",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "Volcanism",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }

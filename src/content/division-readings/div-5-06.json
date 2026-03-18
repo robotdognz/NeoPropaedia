@@ -3,44 +3,52 @@
   "readings": {
     "vsi": [
       {
-        "title": "Education",
+        "title": "Universities and Colleges",
         "count": 2,
-        "author": "Gary Thomas"
+        "paths": 4,
+        "author": "David Palfreyman, Paul Temple"
       },
       {
         "title": "Learning",
         "count": 2,
+        "paths": 3,
         "author": "Mark Haselgrove"
+      },
+      {
+        "title": "Education",
+        "count": 2,
+        "paths": 2,
+        "author": "Gary Thomas"
       },
       {
         "title": "The History of Childhood",
         "count": 2,
+        "paths": 2,
         "author": "James Marten"
-      },
-      {
-        "title": "Universities and Colleges",
-        "count": 2,
-        "author": "David Palfreyman, Paul Temple"
       }
     ],
     "wiki": [
       {
-        "title": "Age of Enlightenment",
-        "count": 2
-      },
-      {
         "title": "Education",
-        "count": 2
+        "count": 2,
+        "paths": 11
       },
       {
         "title": "School",
-        "count": 2
+        "count": 2,
+        "paths": 8
+      },
+      {
+        "title": "Age of Enlightenment",
+        "count": 2,
+        "paths": 6
       }
     ],
     "macro": [
       {
         "title": "Teaching",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }

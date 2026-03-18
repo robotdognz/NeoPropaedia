@@ -5,64 +5,77 @@
       {
         "title": "Developmental biology",
         "count": 2,
+        "paths": 4,
         "author": "Lewis Wolpert"
+      },
+      {
+        "title": "Philosophy of Biology",
+        "count": 2,
+        "paths": 4,
+        "author": "Samir Okasha"
       },
       {
         "title": "Evolution",
         "count": 2,
+        "paths": 3,
         "author": "Brian Charlesworth, Deborah Charlesworth"
       },
       {
         "title": "Genes",
         "count": 2,
+        "paths": 3,
         "author": "Jonathan Slack"
       },
       {
         "title": "Genomics",
         "count": 2,
+        "paths": 3,
         "author": "John M. Archibald"
       },
       {
         "title": "Human evolution",
         "count": 2,
+        "paths": 2,
         "author": "Bernard Wood"
-      },
-      {
-        "title": "Philosophy of Biology",
-        "count": 2,
-        "author": "Samir Okasha"
       }
     ],
     "wiki": [
       {
+        "title": "Human evolution",
+        "count": 2,
+        "paths": 6
+      },
+      {
         "title": "Evolution",
-        "count": 2
+        "count": 2,
+        "paths": 5
       },
       {
         "title": "Human",
-        "count": 2
-      },
-      {
-        "title": "Human evolution",
-        "count": 2
+        "count": 2,
+        "paths": 5
       },
       {
         "title": "Natural selection",
-        "count": 2
+        "count": 2,
+        "paths": 4
       },
       {
         "title": "Reproduction",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ],
     "macro": [
       {
         "title": "Evolution, Human",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "Life",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }

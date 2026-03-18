@@ -45,10 +45,10 @@ for (const part of navigation.parts) {
 }
 
 /**
- * Build an index tracking which sections and divisions each title appears in.
- * Returns Map<title, { author?, sections: { [partNumber]: Set<sectionCode> }, divisions: { [partNumber]: Set<divisionId> }, divSections: { [divisionId]: Set<sectionCode> } }>
+ * Build an index tracking which sections and divisions each title appears in,
+ * plus total outline path count for ranking depth.
  */
-function buildIndex(mappingsDir, getKey, getAuthor) {
+function buildIndex(mappingsDir, getKey, getAuthor, getPathCount) {
   const index = new Map();
   const files = fs.readdirSync(mappingsDir).filter(f => f.endsWith('.json'));
 
@@ -62,25 +62,31 @@ function buildIndex(mappingsDir, getKey, getAuthor) {
     for (const mapping of data.mappings || []) {
       const key = getKey(mapping);
       if (!key) continue;
+      const pathCount = getPathCount ? getPathCount(mapping) : 1;
 
       if (!index.has(key)) {
         index.set(key, {
           author: getAuthor ? getAuthor(mapping) : undefined,
-          // For part-level: track unique divisions per part
-          divisions: {},
-          // For division-level: track unique sections per division
-          divSections: {},
+          divisions: {},        // partNumber -> Set<divisionId>
+          partSections: {},     // partNumber -> Set<sectionCode>
+          partPaths: {},        // partNumber -> total outline path count
+          divSections: {},      // divisionId -> Set<sectionCode>
+          divPaths: {},         // divisionId -> total outline path count
         });
       }
       const entry = index.get(key);
 
-      // Track divisions this title appears in, per part
+      // Part-level tracking
       if (!entry.divisions[partNumber]) entry.divisions[partNumber] = new Set();
       entry.divisions[partNumber].add(divisionId);
+      if (!entry.partSections[partNumber]) entry.partSections[partNumber] = new Set();
+      entry.partSections[partNumber].add(sectionCode);
+      entry.partPaths[partNumber] = (entry.partPaths[partNumber] || 0) + pathCount;
 
-      // Track sections this title appears in, per division
+      // Division-level tracking
       if (!entry.divSections[divisionId]) entry.divSections[divisionId] = new Set();
       entry.divSections[divisionId].add(sectionCode);
+      entry.divPaths[divisionId] = (entry.divPaths[divisionId] || 0) + pathCount;
     }
   }
 
@@ -100,50 +106,68 @@ function buildMacroIndex() {
 
     for (const ref of data.macropaediaReferences || []) {
       if (!index.has(ref)) {
-        index.set(ref, { divisions: {}, divSections: {} });
+        index.set(ref, { divisions: {}, partSections: {}, partPaths: {}, divSections: {}, divPaths: {} });
       }
       const entry = index.get(ref);
 
       if (!entry.divisions[partNumber]) entry.divisions[partNumber] = new Set();
       entry.divisions[partNumber].add(divisionId);
+      if (!entry.partSections[partNumber]) entry.partSections[partNumber] = new Set();
+      entry.partSections[partNumber].add(sectionCode);
+      entry.partPaths[partNumber] = (entry.partPaths[partNumber] || 0) + 1;
 
       if (!entry.divSections[divisionId]) entry.divSections[divisionId] = new Set();
       entry.divSections[divisionId].add(sectionCode);
+      entry.divPaths[divisionId] = (entry.divPaths[divisionId] || 0) + 1;
     }
   }
 
   return index;
 }
 
-const vsiIndex = buildIndex(VSI_MAPPINGS_DIR, m => m.vsiTitle, m => m.vsiAuthor);
-const wikiIndex = buildIndex(WIKI_MAPPINGS_DIR, m => m.articleTitle, null);
+const vsiIndex = buildIndex(VSI_MAPPINGS_DIR, m => m.vsiTitle, m => m.vsiAuthor, m => (m.relevantPathsAI || []).length || 1);
+const wikiIndex = buildIndex(WIKI_MAPPINGS_DIR, m => m.articleTitle, null, m => (m.relevantPathsAI || []).length || 1);
 const macroIndex = buildMacroIndex();
 
 // Part-level: items appearing in 2+ divisions within the part
+// Ranked by: divisions count (primary), sections count (secondary), outline paths (tertiary)
 function partItems(index, partNumber, hasAuthor) {
   const items = [];
   for (const [title, entry] of index) {
     const divs = entry.divisions[partNumber];
     if (!divs || divs.size < 2) continue;
-    const item = { title, count: divs.size };
+    const sectionCount = entry.partSections[partNumber]?.size || 0;
+    const pathCount = entry.partPaths[partNumber] || 0;
+    const item = { title, count: divs.size, sections: sectionCount, paths: pathCount };
     if (hasAuthor && entry.author) item.author = entry.author;
     items.push(item);
   }
-  items.sort((a, b) => b.count - a.count || a.title.localeCompare(b.title));
+  items.sort((a, b) =>
+    b.count - a.count ||
+    b.sections - a.sections ||
+    b.paths - a.paths ||
+    a.title.localeCompare(b.title)
+  );
   return items;
 }
 
 // Division-level: items appearing in 2+ sections within the division
+// Ranked by: sections count (primary), outline paths (secondary)
 function divItems(index, divisionId, hasAuthor) {
   const items = [];
   for (const [title, entry] of index) {
     const secs = entry.divSections[divisionId];
     if (!secs || secs.size < 2) continue;
-    const item = { title, count: secs.size };
+    const pathCount = entry.divPaths[divisionId] || 0;
+    const item = { title, count: secs.size, paths: pathCount };
     if (hasAuthor && entry.author) item.author = entry.author;
     items.push(item);
   }
-  items.sort((a, b) => b.count - a.count || a.title.localeCompare(b.title));
+  items.sort((a, b) =>
+    b.count - a.count ||
+    b.paths - a.paths ||
+    a.title.localeCompare(b.title)
+  );
   return items;
 }
 

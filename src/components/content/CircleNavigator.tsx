@@ -1735,7 +1735,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                       Recommended Readings
                     </p>
                     <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-                      Books and articles independently recommended for both {centerPart.partName}: {centerPart.title} and {topPart.partName}: {topPart.title}. Ranked by how many sections across both parts recommend them. The bar shows the balance of coverage between the two chosen parts.
+                      Books and articles independently recommended for both {centerPart.partName}: {centerPart.title} and {topPart.partName}: {topPart.title}. Ranked by how deeply they connect the two parts - considering sections, outline items, and overall spread. The bar shows the balance of coverage between the two chosen parts.
                     </p>
                     <div class="mt-3 flex items-center gap-3 text-[10px] font-sans text-slate-400">
                       <span class="flex items-center gap-1">

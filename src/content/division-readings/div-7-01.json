@@ -3,70 +3,84 @@
   "readings": {
     "vsi": [
       {
+        "title": "The Industrial Revolution",
+        "count": 2,
+        "paths": 4,
+        "author": "Robert C. Allen"
+      },
+      {
         "title": "Ancient Greece",
         "count": 2,
+        "paths": 2,
         "author": "Paul Cartledge"
       },
       {
         "title": "Artificial Intelligence",
         "count": 2,
+        "paths": 2,
         "author": "Margaret A. Boden"
       },
       {
         "title": "Engineering",
         "count": 2,
+        "paths": 2,
         "author": "David Blockley"
       },
       {
         "title": "Innovation",
         "count": 2,
+        "paths": 2,
         "author": "Mark Dodgson, David Gann"
       },
       {
         "title": "Prehistory",
         "count": 2,
+        "paths": 2,
         "author": "Chris Gosden"
       },
       {
         "title": "Robotics",
         "count": 2,
+        "paths": 2,
         "author": "Alan Winfield"
       },
       {
         "title": "The History of Computing",
         "count": 2,
+        "paths": 2,
         "author": "Doron Swade"
-      },
-      {
-        "title": "The Industrial Revolution",
-        "count": 2,
-        "author": "Robert C. Allen"
       }
     ],
     "wiki": [
       {
-        "title": "Early modern period",
-        "count": 2
+        "title": "Industrial Revolution",
+        "count": 2,
+        "paths": 7
       },
       {
         "title": "Engineering",
-        "count": 2
-      },
-      {
-        "title": "Industrial Revolution",
-        "count": 2
+        "count": 2,
+        "paths": 4
       },
       {
         "title": "Robotics",
-        "count": 2
+        "count": 2,
+        "paths": 4
       },
       {
         "title": "Science",
-        "count": 2
+        "count": 2,
+        "paths": 4
       },
       {
         "title": "Stone Age",
-        "count": 2
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Early modern period",
+        "count": 2,
+        "paths": 2
       }
     ]
   }

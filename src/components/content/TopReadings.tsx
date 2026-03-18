@@ -19,6 +19,8 @@ export interface ReadingItem {
   title: string;
   author?: string;
   count: number;
+  sections?: number;
+  paths?: number;
 }
 
 export interface TopReadingsProps {
@@ -34,6 +36,25 @@ function slugify(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
+function matchColor(percent: number): string {
+  if (percent >= 70) return 'bg-emerald-500';
+  if (percent >= 40) return 'bg-emerald-400';
+  if (percent >= 20) return 'bg-amber-400';
+  return 'bg-gray-300';
+}
+
+function buildRationale(item: ReadingItem, countLabel: string, contextLabel: string): string {
+  const parts: string[] = [];
+  parts.push(`Recommended across ${item.count} ${countLabel} in ${contextLabel}`);
+  if (item.sections && item.sections > item.count) {
+    parts.push(`appearing in ${item.sections} individual sections`);
+  }
+  if (item.paths && item.paths > (item.sections || item.count)) {
+    parts.push(`with ${item.paths} outline topic references`);
+  }
+  return parts.join(', ') + '.';
+}
+
 export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, contextLabel, countLabel }: TopReadingsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [readingPref, setReadingPref] = useState<ReadingType>(() => getReadingPreference());
@@ -47,9 +68,14 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
 
   if (vsi.length === 0 && wiki.length === 0 && macro.length === 0) return null;
 
-  const maxVsi = vsi.length > 0 ? vsi[0].count : 1;
-  const maxWiki = wiki.length > 0 ? wiki[0].count : 1;
-  const maxMacro = macro.length > 0 ? macro[0].count : 1;
+  // Composite relevance score matching the build script ranking:
+  // count (divisions/sections) weighted heavily, paths as depth signal
+  function relevanceScore(item: ReadingItem): number {
+    return (item.count * 1000) + (item.sections || 0) * 100 + (item.paths || item.count);
+  }
+  const maxVsiScore = vsi.length > 0 ? relevanceScore(vsi[0]) : 1;
+  const maxWikiScore = wiki.length > 0 ? relevanceScore(wiki[0]) : 1;
+  const maxMacroScore = macro.length > 0 ? relevanceScore(macro[0]) : 1;
 
   return (
     <div class="space-y-4">
@@ -58,7 +84,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
           Recommended Readings
         </p>
         <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-          Books and articles recommended across multiple {countLabel} in {contextLabel}, ranked by how many {countLabel} include them.
+          Books and articles recommended across multiple {countLabel} in {contextLabel}, ranked by spread and depth of coverage.
         </p>
       </div>
 
@@ -76,17 +102,17 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
             {vsi.map((item) => {
               const checkKey = vsiChecklistKey(item.title, item.author || '');
               const isChecked = Boolean(checklistState[checkKey]);
-              const matchPercent = Math.round((item.count / maxVsi) * 100);
+              const matchPercent = Math.round((relevanceScore(item) / maxVsiScore) * 100);
 
               return (
                 <div
                   key={item.title}
-                  class={`rounded-lg border bg-white p-4 transition ${isChecked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}
+                  class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}
                 >
                   <div class="flex items-start justify-between gap-2">
                     <a
                       href={`${baseUrl}/vsi/${slugify(item.title)}`}
-                      class="text-sm font-serif font-semibold text-gray-900 hover:text-indigo-700 transition-colors"
+                      class="font-serif font-bold text-gray-900 text-base leading-tight hover:text-indigo-700 transition-colors"
                     >
                       {item.title}
                     </a>
@@ -104,11 +130,16 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
                   <div class="mt-3 flex items-center gap-2">
                     <div class="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-100">
                       <div
-                        class="h-full rounded-full bg-indigo-500 transition-all"
+                        class={`h-full rounded-full ${matchColor(matchPercent)}`}
                         style={{ width: `${matchPercent}%` }}
                       />
                     </div>
-                    <span class="text-[10px] font-sans text-gray-400 tabular-nums shrink-0">{item.count}</span>
+                    <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">{matchPercent}% relevance</span>
+                  </div>
+                  <div class="mt-2">
+                    <Accordion title="Why this book?" defaultOpen={false}>
+                      <p class="text-gray-600">{buildRationale(item, countLabel, contextLabel)}</p>
+                    </Accordion>
                   </div>
                 </div>
               );
@@ -131,17 +162,17 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
             {wiki.map((item) => {
               const checkKey = wikipediaChecklistKey(item.title);
               const isChecked = Boolean(checklistState[checkKey]);
-              const matchPercent = Math.round((item.count / maxWiki) * 100);
+              const matchPercent = Math.round((relevanceScore(item) / maxWikiScore) * 100);
 
               return (
                 <div
                   key={item.title}
-                  class={`rounded-lg border bg-white p-4 transition ${isChecked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}
+                  class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}
                 >
                   <div class="flex items-start justify-between gap-2">
                     <a
                       href={`${baseUrl}/wikipedia/${slugify(item.title)}`}
-                      class="text-sm font-serif font-semibold text-gray-900 hover:text-indigo-700 transition-colors"
+                      class="font-serif font-bold text-gray-900 text-base leading-tight hover:text-indigo-700 transition-colors"
                     >
                       {item.title}
                     </a>
@@ -158,11 +189,16 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
                   <div class="mt-3 flex items-center gap-2">
                     <div class="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-100">
                       <div
-                        class="h-full rounded-full bg-indigo-500 transition-all"
+                        class={`h-full rounded-full ${matchColor(matchPercent)}`}
                         style={{ width: `${matchPercent}%` }}
                       />
                     </div>
-                    <span class="text-[10px] font-sans text-gray-400 tabular-nums shrink-0">{item.count}</span>
+                    <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">{matchPercent}% relevance</span>
+                  </div>
+                  <div class="mt-2">
+                    <Accordion title="Why this article?" defaultOpen={false}>
+                      <p class="text-gray-600">{buildRationale(item, countLabel, contextLabel)}</p>
+                    </Accordion>
                   </div>
                 </div>
               );
@@ -185,17 +221,17 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
             {macro.map((item) => {
               const checkKey = macropaediaChecklistKey(item.title);
               const isChecked = Boolean(checklistState[checkKey]);
-              const matchPercent = Math.round((item.count / maxMacro) * 100);
+              const matchPercent = Math.round((relevanceScore(item) / maxMacroScore) * 100);
 
               return (
                 <div
                   key={item.title}
-                  class={`rounded-lg border bg-white p-4 transition ${isChecked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}
+                  class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}
                 >
                   <div class="flex items-start justify-between gap-2">
                     <a
                       href={`${baseUrl}/macropaedia/${slugify(item.title)}`}
-                      class="text-sm font-serif font-semibold text-gray-900 hover:text-indigo-700 transition-colors"
+                      class="font-serif font-bold text-gray-900 text-base leading-tight hover:text-indigo-700 transition-colors"
                     >
                       {item.title}
                     </a>
@@ -212,11 +248,16 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
                   <div class="mt-3 flex items-center gap-2">
                     <div class="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-100">
                       <div
-                        class="h-full rounded-full bg-indigo-500 transition-all"
+                        class={`h-full rounded-full ${matchColor(matchPercent)}`}
                         style={{ width: `${matchPercent}%` }}
                       />
                     </div>
-                    <span class="text-[10px] font-sans text-gray-400 tabular-nums shrink-0">{item.count}</span>
+                    <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">{matchPercent}% relevance</span>
+                  </div>
+                  <div class="mt-2">
+                    <Accordion title="Why this article?" defaultOpen={false}>
+                      <p class="text-gray-600">{buildRationale(item, countLabel, contextLabel)}</p>
+                    </Accordion>
                   </div>
                 </div>
               );

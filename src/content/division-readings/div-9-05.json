@@ -5,51 +5,61 @@
       {
         "title": "Archaeology",
         "count": 2,
+        "paths": 5,
         "author": "Paul Bahn"
-      },
-      {
-        "title": "Colonial Latin American Literature",
-        "count": 2,
-        "author": "Rolena Adorno"
-      },
-      {
-        "title": "Prehistory",
-        "count": 2,
-        "author": "Chris Gosden"
       },
       {
         "title": "Social and Cultural Anthropology",
         "count": 2,
+        "paths": 4,
         "author": "John Monaghan, Peter Just"
       },
       {
         "title": "The Conquistadors",
         "count": 2,
+        "paths": 3,
         "author": "Matthew Restall, Felipe Fernández-Armesto"
+      },
+      {
+        "title": "Colonial Latin American Literature",
+        "count": 2,
+        "paths": 2,
+        "author": "Rolena Adorno"
+      },
+      {
+        "title": "Prehistory",
+        "count": 2,
+        "paths": 2,
+        "author": "Chris Gosden"
       }
     ],
     "wiki": [
       {
-        "title": "Age of Discovery",
-        "count": 2
+        "title": "Pre-Columbian era",
+        "count": 2,
+        "paths": 13
       },
       {
-        "title": "Pre-Columbian era",
-        "count": 2
+        "title": "Age of Discovery",
+        "count": 2,
+        "paths": 3
       },
       {
         "title": "Spanish Empire",
-        "count": 2
+        "count": 2,
+        "paths": 3
       }
     ],
     "macro": [
       {
         "title": "Latin America, The History of",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "Pre-Columbian Civilizations",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }

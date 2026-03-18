@@ -3,90 +3,109 @@
   "readings": {
     "vsi": [
       {
+        "title": "Polygamy",
+        "count": 2,
+        "paths": 3,
+        "author": "Sarah Pearsall"
+      },
+      {
+        "title": "Spirituality",
+        "count": 2,
+        "paths": 3,
+        "author": "Philip Sheldrake"
+      },
+      {
         "title": "Blasphemy",
         "count": 2,
+        "paths": 2,
         "author": "Yvonne Sherwood"
       },
       {
         "title": "Christian art",
         "count": 2,
+        "paths": 2,
         "author": "Beth Williamson"
-      },
-      {
-        "title": "Polygamy",
-        "count": 2,
-        "author": "Sarah Pearsall"
       },
       {
         "title": "Secularism",
         "count": 2,
+        "paths": 2,
         "author": "Andrew Copson"
-      },
-      {
-        "title": "Spirituality",
-        "count": 2,
-        "author": "Philip Sheldrake"
       },
       {
         "title": "War & Religion",
         "count": 2,
+        "paths": 2,
         "author": "Jolyon Mitchell, Joshua Rey"
       }
     ],
     "wiki": [
       {
-        "title": "African traditional religions",
-        "count": 2
-      },
-      {
-        "title": "Bhagavad Gita",
-        "count": 2
-      },
-      {
         "title": "Catholic Church",
-        "count": 2
+        "count": 2,
+        "paths": 14
+      },
+      {
+        "title": "African traditional religions",
+        "count": 2,
+        "paths": 10
       },
       {
         "title": "Confucianism",
-        "count": 2
-      },
-      {
-        "title": "History of religion",
-        "count": 2
+        "count": 2,
+        "paths": 9
       },
       {
         "title": "Jesus",
-        "count": 2
-      },
-      {
-        "title": "Muhammad",
-        "count": 2
-      },
-      {
-        "title": "Prayer",
-        "count": 2
-      },
-      {
-        "title": "Quran",
-        "count": 2
-      },
-      {
-        "title": "Religion",
-        "count": 2
+        "count": 2,
+        "paths": 9
       },
       {
         "title": "Thomas Aquinas",
-        "count": 2
+        "count": 2,
+        "paths": 7
+      },
+      {
+        "title": "History of religion",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Muhammad",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Quran",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Religion",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Bhagavad Gita",
+        "count": 2,
+        "paths": 5
+      },
+      {
+        "title": "Prayer",
+        "count": 2,
+        "paths": 3
       }
     ],
     "macro": [
       {
         "title": "Doctrines and Dogmas, Religious",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "Sacred Offices and Orders",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }

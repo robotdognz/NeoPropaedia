@@ -3,287 +3,351 @@
   "readings": {
     "vsi": [
       {
-        "title": "City Planning",
-        "count": 3,
-        "author": "Carl Abbott"
-      },
-      {
         "title": "Civil engineering",
         "count": 3,
+        "paths": 10,
         "author": "David Muir Wood"
-      },
-      {
-        "title": "Energy Systems",
-        "count": 3,
-        "author": "Nick Jenkins"
       },
       {
         "title": "Engineering",
         "count": 3,
+        "paths": 7,
         "author": "David Blockley"
+      },
+      {
+        "title": "City Planning",
+        "count": 3,
+        "paths": 5,
+        "author": "Carl Abbott"
       },
       {
         "title": "Navigation",
         "count": 3,
+        "paths": 5,
         "author": "Jim Bennett"
       },
       {
         "title": "Robotics",
         "count": 3,
+        "paths": 5,
         "author": "Alan Winfield"
+      },
+      {
+        "title": "Energy Systems",
+        "count": 3,
+        "paths": 3,
+        "author": "Nick Jenkins"
       },
       {
         "title": "Sustainability",
         "count": 3,
+        "paths": 3,
         "author": "Saleem H. Ali"
       },
       {
-        "title": "Aerial Warfare",
+        "title": "Structural engineering",
         "count": 2,
-        "author": "Frank Ledwidge"
+        "paths": 6,
+        "author": "David Blockley"
+      },
+      {
+        "title": "Materials",
+        "count": 2,
+        "paths": 5,
+        "author": "Christopher Hall"
       },
       {
         "title": "American Naval History",
         "count": 2,
+        "paths": 4,
         "author": "Craig L. Symonds"
-      },
-      {
-        "title": "Climate change",
-        "count": 2,
-        "author": "Mark Maslin"
-      },
-      {
-        "title": "Cryptography",
-        "count": 2,
-        "author": "Fred Piper, Sean Murphy"
       },
       {
         "title": "Environmental economics",
         "count": 2,
+        "paths": 4,
         "author": "Stephen Smith"
       },
       {
-        "title": "Exploration",
+        "title": "Climate change",
         "count": 2,
-        "author": "Stewart A. Weaver"
+        "paths": 3,
+        "author": "Mark Maslin"
       },
       {
         "title": "Forests",
         "count": 2,
+        "paths": 3,
         "author": "Jaboury Ghazoul"
       },
       {
         "title": "Geology",
         "count": 2,
+        "paths": 3,
         "author": "Jan Zalasiewicz"
       },
       {
         "title": "Global Economic History",
         "count": 2,
+        "paths": 3,
         "author": "Robert C. Allen"
-      },
-      {
-        "title": "Landscape architecture",
-        "count": 2,
-        "author": "Ian Thompson"
       },
       {
         "title": "Marine biology",
         "count": 2,
+        "paths": 3,
         "author": "Philip V. Mladenov"
-      },
-      {
-        "title": "Materials",
-        "count": 2,
-        "author": "Christopher Hall"
-      },
-      {
-        "title": "Sound",
-        "count": 2,
-        "author": "Mike Goldsmith"
-      },
-      {
-        "title": "Structural engineering",
-        "count": 2,
-        "author": "David Blockley"
-      },
-      {
-        "title": "Surveillance",
-        "count": 2,
-        "author": "David Lyon"
       },
       {
         "title": "The Industrial Revolution",
         "count": 2,
+        "paths": 3,
         "author": "Robert C. Allen"
+      },
+      {
+        "title": "Aerial Warfare",
+        "count": 2,
+        "paths": 2,
+        "author": "Frank Ledwidge"
+      },
+      {
+        "title": "Cryptography",
+        "count": 2,
+        "paths": 2,
+        "author": "Fred Piper, Sean Murphy"
+      },
+      {
+        "title": "Exploration",
+        "count": 2,
+        "paths": 2,
+        "author": "Stewart A. Weaver"
+      },
+      {
+        "title": "Landscape architecture",
+        "count": 2,
+        "paths": 2,
+        "author": "Ian Thompson"
+      },
+      {
+        "title": "Sound",
+        "count": 2,
+        "paths": 2,
+        "author": "Mike Goldsmith"
+      },
+      {
+        "title": "Surveillance",
+        "count": 2,
+        "paths": 2,
+        "author": "David Lyon"
       }
     ],
     "wiki": [
       {
         "title": "Civil engineering",
-        "count": 4
+        "count": 4,
+        "paths": 10
       },
       {
         "title": "Radar",
-        "count": 4
-      },
-      {
-        "title": "Canal",
-        "count": 3
-      },
-      {
-        "title": "Car",
-        "count": 3
-      },
-      {
-        "title": "Construction",
-        "count": 3
-      },
-      {
-        "title": "Engine",
-        "count": 3
-      },
-      {
-        "title": "Laser",
-        "count": 3
-      },
-      {
-        "title": "Machine",
-        "count": 3
-      },
-      {
-        "title": "Navigation",
-        "count": 3
+        "count": 4,
+        "paths": 7
       },
       {
         "title": "Rocket",
-        "count": 3
+        "count": 3,
+        "paths": 9
+      },
+      {
+        "title": "Engine",
+        "count": 3,
+        "paths": 7
+      },
+      {
+        "title": "Navigation",
+        "count": 3,
+        "paths": 7
+      },
+      {
+        "title": "Laser",
+        "count": 3,
+        "paths": 6
       },
       {
         "title": "Thomas Edison",
-        "count": 3
+        "count": 3,
+        "paths": 6
       },
       {
-        "title": "Aircraft",
-        "count": 2
+        "title": "Car",
+        "count": 3,
+        "paths": 5
       },
       {
-        "title": "Architecture",
-        "count": 2
+        "title": "Construction",
+        "count": 3,
+        "paths": 5
       },
       {
-        "title": "Artificial intelligence",
-        "count": 2
+        "title": "Canal",
+        "count": 3,
+        "paths": 4
       },
       {
-        "title": "Biotechnology",
-        "count": 2
-      },
-      {
-        "title": "Bridge",
-        "count": 2
-      },
-      {
-        "title": "Building",
-        "count": 2
-      },
-      {
-        "title": "Dam",
-        "count": 2
-      },
-      {
-        "title": "Electronics",
-        "count": 2
-      },
-      {
-        "title": "Engineering",
-        "count": 2
+        "title": "Machine",
+        "count": 3,
+        "paths": 3
       },
       {
         "title": "Fortification",
-        "count": 2
-      },
-      {
-        "title": "Henry Ford",
-        "count": 2
-      },
-      {
-        "title": "Industrial Revolution",
-        "count": 2
+        "count": 2,
+        "paths": 8
       },
       {
         "title": "Infrastructure",
-        "count": 2
+        "count": 2,
+        "paths": 7
       },
       {
-        "title": "Internal combustion engine",
-        "count": 2
+        "title": "Aircraft",
+        "count": 2,
+        "paths": 6
       },
       {
-        "title": "Mechanical engineering",
-        "count": 2
+        "title": "Electronics",
+        "count": 2,
+        "paths": 6
       },
       {
-        "title": "Metallurgy",
-        "count": 2
-      },
-      {
-        "title": "Pollution",
-        "count": 2
-      },
-      {
-        "title": "Refrigeration",
-        "count": 2
-      },
-      {
-        "title": "Road",
-        "count": 2
-      },
-      {
-        "title": "Robotics",
-        "count": 2
-      },
-      {
-        "title": "Sea",
-        "count": 2
+        "title": "Engineering",
+        "count": 2,
+        "paths": 6
       },
       {
         "title": "Ship",
-        "count": 2
+        "count": 2,
+        "paths": 6
       },
       {
-        "title": "Steel",
-        "count": 2
+        "title": "Biotechnology",
+        "count": 2,
+        "paths": 5
       },
       {
-        "title": "Transport",
-        "count": 2
+        "title": "Metallurgy",
+        "count": 2,
+        "paths": 5
+      },
+      {
+        "title": "Henry Ford",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Industrial Revolution",
+        "count": 2,
+        "paths": 4
       },
       {
         "title": "Vehicle",
-        "count": 2
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Artificial intelligence",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Bridge",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Building",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Internal combustion engine",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Refrigeration",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Road",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Robotics",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Sea",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Steel",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Transport",
+        "count": 2,
+        "paths": 3
       },
       {
         "title": "Wheel",
-        "count": 2
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Architecture",
+        "count": 2,
+        "paths": 2
+      },
+      {
+        "title": "Dam",
+        "count": 2,
+        "paths": 2
+      },
+      {
+        "title": "Mechanical engineering",
+        "count": 2,
+        "paths": 2
+      },
+      {
+        "title": "Pollution",
+        "count": 2,
+        "paths": 2
       }
     ],
     "macro": [
       {
         "title": "Public Works",
-        "count": 4
+        "count": 4,
+        "paths": 4
       },
       {
         "title": "Forestry and Wood Production",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "Industries, Extraction and Processing",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "Transportation",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }

@@ -5,66 +5,80 @@
       {
         "title": "Alexander the Great",
         "count": 2,
+        "paths": 2,
         "author": "Hugh Bowden"
       },
       {
         "title": "Ancient warfare",
         "count": 2,
+        "paths": 2,
         "author": "Harry Sidebottom"
       },
       {
         "title": "Late Antiquity",
         "count": 2,
+        "paths": 2,
         "author": "Gillian Clark"
       },
       {
         "title": "The Hellenistic Age",
         "count": 2,
+        "paths": 2,
         "author": "Peter Thonemann"
       }
     ],
     "wiki": [
       {
-        "title": "Achaemenid Empire",
-        "count": 2
-      },
-      {
-        "title": "Alexander the Great",
-        "count": 2
-      },
-      {
         "title": "Ancient history",
-        "count": 2
+        "count": 2,
+        "paths": 14
       },
       {
         "title": "Ancient Rome",
-        "count": 2
+        "count": 2,
+        "paths": 14
+      },
+      {
+        "title": "Achaemenid Empire",
+        "count": 2,
+        "paths": 9
+      },
+      {
+        "title": "Alexander the Great",
+        "count": 2,
+        "paths": 8
       },
       {
         "title": "Bronze Age",
-        "count": 2
-      },
-      {
-        "title": "Cyrus the Great",
-        "count": 2
+        "count": 2,
+        "paths": 8
       },
       {
         "title": "Iron Age",
-        "count": 2
+        "count": 2,
+        "paths": 6
       },
       {
         "title": "Phoenicia",
-        "count": 2
+        "count": 2,
+        "paths": 6
       },
       {
         "title": "Stone Age",
-        "count": 2
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "Cyrus the Great",
+        "count": 2,
+        "paths": 5
       }
     ],
     "macro": [
       {
         "title": "Greek and Roman Civilizations, Ancient",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }

@@ -3,91 +3,109 @@
   "readings": {
     "vsi": [
       {
-        "title": "Ethnomusicology",
-        "count": 3,
-        "author": "Timothy Rice"
-      },
-      {
         "title": "Social and Cultural Anthropology",
         "count": 3,
+        "paths": 4,
         "author": "John Monaghan, Peter Just"
       },
       {
-        "title": "Confucianism",
-        "count": 2,
-        "author": "Daniel K. Gardner"
-      },
-      {
-        "title": "Human evolution",
-        "count": 2,
-        "author": "Bernard Wood"
+        "title": "Ethnomusicology",
+        "count": 3,
+        "paths": 3,
+        "author": "Timothy Rice"
       },
       {
         "title": "Identity",
         "count": 2,
+        "paths": 3,
         "author": "Florian Coulmas"
-      },
-      {
-        "title": "Postcolonialism",
-        "count": 2,
-        "author": "Robert J.C. Young"
       },
       {
         "title": "Prehistory",
         "count": 2,
+        "paths": 3,
         "author": "Chris Gosden"
       },
       {
         "title": "Ritual",
         "count": 2,
+        "paths": 3,
         "author": "Barry Stephenson"
       },
       {
         "title": "Sociology",
         "count": 2,
+        "paths": 3,
         "author": "Steve Bruce"
       },
       {
         "title": "The Silk Road",
         "count": 2,
+        "paths": 3,
         "author": "James A. Millward"
+      },
+      {
+        "title": "Confucianism",
+        "count": 2,
+        "paths": 2,
+        "author": "Daniel K. Gardner"
+      },
+      {
+        "title": "Human evolution",
+        "count": 2,
+        "paths": 2,
+        "author": "Bernard Wood"
+      },
+      {
+        "title": "Postcolonialism",
+        "count": 2,
+        "paths": 2,
+        "author": "Robert J.C. Young"
       },
       {
         "title": "World Mythology",
         "count": 2,
+        "paths": 2,
         "author": "David A. Leeming"
       }
     ],
     "wiki": [
       {
         "title": "Oral tradition",
-        "count": 3
-      },
-      {
-        "title": "Egypt",
-        "count": 2
-      },
-      {
-        "title": "Indigenous peoples",
-        "count": 2
+        "count": 3,
+        "paths": 6
       },
       {
         "title": "Language",
-        "count": 2
+        "count": 2,
+        "paths": 9
+      },
+      {
+        "title": "Indigenous peoples",
+        "count": 2,
+        "paths": 8
+      },
+      {
+        "title": "Egypt",
+        "count": 2,
+        "paths": 4
       },
       {
         "title": "Mesoamerica",
-        "count": 2
+        "count": 2,
+        "paths": 4
       }
     ],
     "macro": [
       {
         "title": "Culture, The Concept and Components of",
-        "count": 3
+        "count": 3,
+        "paths": 3
       },
       {
         "title": "Social Sciences, The",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }

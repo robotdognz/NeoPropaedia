@@ -3,399 +3,579 @@
   "readings": {
     "vsi": [
       {
+        "title": "The Earth",
+        "count": 4,
+        "sections": 11,
+        "paths": 15,
+        "author": "Martin Redfern"
+      },
+      {
+        "title": "Geophysics",
+        "count": 4,
+        "sections": 8,
+        "paths": 14,
+        "author": "William Lowrie"
+      },
+      {
         "title": "Earth System Science",
         "count": 4,
+        "sections": 8,
+        "paths": 10,
         "author": "Tim Lenton"
       },
       {
         "title": "Geophysical and Climate Hazards",
         "count": 4,
+        "sections": 6,
+        "paths": 14,
         "author": "Bill McGuire"
-      },
-      {
-        "title": "Geophysics",
-        "count": 4,
-        "author": "William Lowrie"
-      },
-      {
-        "title": "The Earth",
-        "count": 4,
-        "author": "Martin Redfern"
-      },
-      {
-        "title": "Climate",
-        "count": 3,
-        "author": "Mark Maslin"
-      },
-      {
-        "title": "Coral Reefs",
-        "count": 3,
-        "author": "Charles Sheppard"
-      },
-      {
-        "title": "Fossils",
-        "count": 3,
-        "author": "Keith Thomson"
-      },
-      {
-        "title": "Geology",
-        "count": 3,
-        "author": "Jan Zalasiewicz"
-      },
-      {
-        "title": "Glaciation",
-        "count": 3,
-        "author": "David J. A. Evans"
-      },
-      {
-        "title": "Landscapes and Geomorphology",
-        "count": 3,
-        "author": "Andrew Goudie, Heather Viles"
-      },
-      {
-        "title": "Minerals",
-        "count": 3,
-        "author": "David Vaughan"
-      },
-      {
-        "title": "Mountains",
-        "count": 3,
-        "author": "Martin F. Price"
-      },
-      {
-        "title": "Oceans",
-        "count": 3,
-        "author": "Dorrik Stow"
       },
       {
         "title": "Plate tectonics",
         "count": 3,
+        "sections": 8,
+        "paths": 14,
         "author": "Peter Molnar"
       },
       {
         "title": "Rocks",
         "count": 3,
+        "sections": 8,
+        "paths": 13,
         "author": "Jan Zalasiewicz"
       },
       {
-        "title": "The Atmosphere",
+        "title": "Geology",
         "count": 3,
-        "author": "Paul Palmer"
-      },
-      {
-        "title": "The Ice Age",
-        "count": 3,
-        "author": "Jamie Woodward"
-      },
-      {
-        "title": "The Sun",
-        "count": 3,
-        "author": "Philip Judge"
+        "sections": 8,
+        "paths": 11,
+        "author": "Jan Zalasiewicz"
       },
       {
         "title": "Volcanoes",
         "count": 3,
+        "sections": 7,
+        "paths": 9,
         "author": "Michael J. Branney, Jan Zalasiewicz"
       },
       {
-        "title": "Anthropocene",
+        "title": "Landscapes and Geomorphology",
+        "count": 3,
+        "sections": 6,
+        "paths": 13,
+        "author": "Andrew Goudie, Heather Viles"
+      },
+      {
+        "title": "Minerals",
+        "count": 3,
+        "sections": 6,
+        "paths": 8,
+        "author": "David Vaughan"
+      },
+      {
+        "title": "Climate",
+        "count": 3,
+        "sections": 5,
+        "paths": 11,
+        "author": "Mark Maslin"
+      },
+      {
+        "title": "The Ice Age",
+        "count": 3,
+        "sections": 5,
+        "paths": 8,
+        "author": "Jamie Woodward"
+      },
+      {
+        "title": "The Atmosphere",
+        "count": 3,
+        "sections": 5,
+        "paths": 7,
+        "author": "Paul Palmer"
+      },
+      {
+        "title": "Coral Reefs",
+        "count": 3,
+        "sections": 5,
+        "paths": 6,
+        "author": "Charles Sheppard"
+      },
+      {
+        "title": "The Sun",
+        "count": 3,
+        "sections": 5,
+        "paths": 5,
+        "author": "Philip Judge"
+      },
+      {
+        "title": "Oceans",
+        "count": 3,
+        "sections": 4,
+        "paths": 13,
+        "author": "Dorrik Stow"
+      },
+      {
+        "title": "Glaciation",
+        "count": 3,
+        "sections": 4,
+        "paths": 10,
+        "author": "David J. A. Evans"
+      },
+      {
+        "title": "Fossils",
+        "count": 3,
+        "sections": 4,
+        "paths": 7,
+        "author": "Keith Thomson"
+      },
+      {
+        "title": "Mountains",
+        "count": 3,
+        "sections": 4,
+        "paths": 7,
+        "author": "Martin F. Price"
+      },
+      {
+        "title": "The Arctic",
         "count": 2,
-        "author": "Erle C. Ellis"
+        "sections": 3,
+        "paths": 6,
+        "author": "Klaus Dodds, Jamie Woodward"
+      },
+      {
+        "title": "Lakes",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "author": "Warwick F. Vincent"
+      },
+      {
+        "title": "The Antarctic",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Klaus Dodds"
+      },
+      {
+        "title": "Waves",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Mike Goldsmith"
       },
       {
         "title": "Deserts",
         "count": 2,
+        "sections": 2,
+        "paths": 5,
+        "author": "Nick Middleton"
+      },
+      {
+        "title": "Rivers",
+        "count": 2,
+        "sections": 2,
+        "paths": 5,
         "author": "Nick Middleton"
       },
       {
         "title": "Isotopes",
         "count": 2,
+        "sections": 2,
+        "paths": 4,
         "author": "Rob Ellam"
       },
       {
-        "title": "Lakes",
+        "title": "Water",
         "count": 2,
-        "author": "Warwick F. Vincent"
-      },
-      {
-        "title": "Planets",
-        "count": 2,
-        "author": "David A. Rothery"
+        "sections": 2,
+        "paths": 4,
+        "author": "John Finney"
       },
       {
         "title": "Radioactivity",
         "count": 2,
+        "sections": 2,
+        "paths": 3,
         "author": "Claudio Tuniz"
-      },
-      {
-        "title": "Rivers",
-        "count": 2,
-        "author": "Nick Middleton"
-      },
-      {
-        "title": "The Antarctic",
-        "count": 2,
-        "author": "Klaus Dodds"
-      },
-      {
-        "title": "The Arctic",
-        "count": 2,
-        "author": "Klaus Dodds, Jamie Woodward"
       },
       {
         "title": "Tides",
         "count": 2,
+        "sections": 2,
+        "paths": 3,
         "author": "David George Bowers, Emyr Martyn Roberts"
       },
       {
-        "title": "Water",
+        "title": "Anthropocene",
         "count": 2,
-        "author": "John Finney"
+        "sections": 2,
+        "paths": 2,
+        "author": "Erle C. Ellis"
       },
       {
-        "title": "Waves",
+        "title": "Planets",
         "count": 2,
-        "author": "Mike Goldsmith"
+        "sections": 2,
+        "paths": 2,
+        "author": "David A. Rothery"
       }
     ],
     "wiki": [
       {
-        "title": "Earthquake",
-        "count": 4
-      },
-      {
         "title": "Ocean",
-        "count": 4
+        "count": 4,
+        "sections": 5,
+        "paths": 17
       },
       {
-        "title": "Atmosphere of Earth",
-        "count": 3
-      },
-      {
-        "title": "Carbon",
-        "count": 3
-      },
-      {
-        "title": "Continent",
-        "count": 3
+        "title": "Earthquake",
+        "count": 4,
+        "sections": 5,
+        "paths": 13
       },
       {
         "title": "Earth",
-        "count": 3
+        "count": 3,
+        "sections": 7,
+        "paths": 26
       },
       {
-        "title": "Fossil fuel",
-        "count": 3
+        "title": "Atmosphere of Earth",
+        "count": 3,
+        "sections": 6,
+        "paths": 27
       },
       {
         "title": "Geology",
-        "count": 3
-      },
-      {
-        "title": "Himalayas",
-        "count": 3
+        "count": 3,
+        "sections": 6,
+        "paths": 24
       },
       {
         "title": "Internal structure of Earth",
-        "count": 3
-      },
-      {
-        "title": "Mountain",
-        "count": 3
-      },
-      {
-        "title": "Pacific Ocean",
-        "count": 3
+        "count": 3,
+        "sections": 5,
+        "paths": 22
       },
       {
         "title": "Wind",
-        "count": 3
+        "count": 3,
+        "sections": 5,
+        "paths": 20
       },
       {
-        "title": "Amazon rainforest",
-        "count": 2
+        "title": "Himalayas",
+        "count": 3,
+        "sections": 4,
+        "paths": 13
       },
       {
-        "title": "Andes",
-        "count": 2
+        "title": "Fossil fuel",
+        "count": 3,
+        "sections": 4,
+        "paths": 9
       },
       {
-        "title": "Antarctica",
-        "count": 2
+        "title": "Pacific Ocean",
+        "count": 3,
+        "sections": 4,
+        "paths": 9
       },
       {
-        "title": "Arctic",
-        "count": 2
+        "title": "Mountain",
+        "count": 3,
+        "sections": 3,
+        "paths": 12
       },
       {
-        "title": "Arctic Ocean",
-        "count": 2
+        "title": "Continent",
+        "count": 3,
+        "sections": 3,
+        "paths": 9
       },
       {
-        "title": "Carbon dioxide",
-        "count": 2
-      },
-      {
-        "title": "Caspian Sea",
-        "count": 2
-      },
-      {
-        "title": "Climate",
-        "count": 2
-      },
-      {
-        "title": "Desert",
-        "count": 2
-      },
-      {
-        "title": "Electromagnetic radiation",
-        "count": 2
-      },
-      {
-        "title": "Flood",
-        "count": 2
-      },
-      {
-        "title": "Forest",
-        "count": 2
-      },
-      {
-        "title": "Ganges",
-        "count": 2
-      },
-      {
-        "title": "Great Lakes",
-        "count": 2
+        "title": "Carbon",
+        "count": 3,
+        "sections": 3,
+        "paths": 5
       },
       {
         "title": "History of Earth",
-        "count": 2
-      },
-      {
-        "title": "Indian Ocean",
-        "count": 2
-      },
-      {
-        "title": "Lake",
-        "count": 2
-      },
-      {
-        "title": "Light",
-        "count": 2
-      },
-      {
-        "title": "Lightning",
-        "count": 2
-      },
-      {
-        "title": "Mediterranean Sea",
-        "count": 2
-      },
-      {
-        "title": "Mineral",
-        "count": 2
-      },
-      {
-        "title": "Moon",
-        "count": 2
-      },
-      {
-        "title": "Plate tectonics",
-        "count": 2
-      },
-      {
-        "title": "Pollution",
-        "count": 2
+        "count": 2,
+        "sections": 4,
+        "paths": 20
       },
       {
         "title": "Rain",
-        "count": 2
+        "count": 2,
+        "sections": 4,
+        "paths": 12
       },
       {
-        "title": "River",
-        "count": 2
-      },
-      {
-        "title": "Rock (geology)",
-        "count": 2
-      },
-      {
-        "title": "Sahara",
-        "count": 2
-      },
-      {
-        "title": "Sea",
-        "count": 2
-      },
-      {
-        "title": "Season",
-        "count": 2
-      },
-      {
-        "title": "Snow",
-        "count": 2
-      },
-      {
-        "title": "Soil",
-        "count": 2
-      },
-      {
-        "title": "Solar System",
-        "count": 2
-      },
-      {
-        "title": "Storm",
-        "count": 2
-      },
-      {
-        "title": "Sun",
-        "count": 2
+        "title": "Climate",
+        "count": 2,
+        "sections": 4,
+        "paths": 11
       },
       {
         "title": "Volcano",
-        "count": 2
+        "count": 2,
+        "sections": 4,
+        "paths": 11
+      },
+      {
+        "title": "Arctic Ocean",
+        "count": 2,
+        "sections": 4,
+        "paths": 9
+      },
+      {
+        "title": "Snow",
+        "count": 2,
+        "sections": 4,
+        "paths": 8
       },
       {
         "title": "Water",
-        "count": 2
+        "count": 2,
+        "sections": 4,
+        "paths": 7
+      },
+      {
+        "title": "Carbon dioxide",
+        "count": 2,
+        "sections": 4,
+        "paths": 6
+      },
+      {
+        "title": "Rock (geology)",
+        "count": 2,
+        "sections": 3,
+        "paths": 17
+      },
+      {
+        "title": "Mineral",
+        "count": 2,
+        "sections": 3,
+        "paths": 12
+      },
+      {
+        "title": "River",
+        "count": 2,
+        "sections": 3,
+        "paths": 10
+      },
+      {
+        "title": "Andes",
+        "count": 2,
+        "sections": 3,
+        "paths": 9
+      },
+      {
+        "title": "Desert",
+        "count": 2,
+        "sections": 3,
+        "paths": 9
+      },
+      {
+        "title": "Storm",
+        "count": 2,
+        "sections": 3,
+        "paths": 9
+      },
+      {
+        "title": "Lake",
+        "count": 2,
+        "sections": 3,
+        "paths": 8
+      },
+      {
+        "title": "Antarctica",
+        "count": 2,
+        "sections": 3,
+        "paths": 7
+      },
+      {
+        "title": "Great Lakes",
+        "count": 2,
+        "sections": 3,
+        "paths": 7
+      },
+      {
+        "title": "Amazon rainforest",
+        "count": 2,
+        "sections": 3,
+        "paths": 6
+      },
+      {
+        "title": "Indian Ocean",
+        "count": 2,
+        "sections": 3,
+        "paths": 6
+      },
+      {
+        "title": "Mediterranean Sea",
+        "count": 2,
+        "sections": 3,
+        "paths": 6
+      },
+      {
+        "title": "Sun",
+        "count": 2,
+        "sections": 3,
+        "paths": 6
+      },
+      {
+        "title": "Flood",
+        "count": 2,
+        "sections": 3,
+        "paths": 5
+      },
+      {
+        "title": "Ganges",
+        "count": 2,
+        "sections": 3,
+        "paths": 5
+      },
+      {
+        "title": "Lightning",
+        "count": 2,
+        "sections": 3,
+        "paths": 5
+      },
+      {
+        "title": "Season",
+        "count": 2,
+        "sections": 3,
+        "paths": 5
+      },
+      {
+        "title": "Moon",
+        "count": 2,
+        "sections": 3,
+        "paths": 4
+      },
+      {
+        "title": "Plate tectonics",
+        "count": 2,
+        "sections": 2,
+        "paths": 11
+      },
+      {
+        "title": "Sahara",
+        "count": 2,
+        "sections": 2,
+        "paths": 7
+      },
+      {
+        "title": "Sea",
+        "count": 2,
+        "sections": 2,
+        "paths": 7
+      },
+      {
+        "title": "Soil",
+        "count": 2,
+        "sections": 2,
+        "paths": 7
+      },
+      {
+        "title": "Forest",
+        "count": 2,
+        "sections": 2,
+        "paths": 5
       },
       {
         "title": "Yangtze",
-        "count": 2
+        "count": 2,
+        "sections": 2,
+        "paths": 5
+      },
+      {
+        "title": "Caspian Sea",
+        "count": 2,
+        "sections": 2,
+        "paths": 4
+      },
+      {
+        "title": "Electromagnetic radiation",
+        "count": 2,
+        "sections": 2,
+        "paths": 4
+      },
+      {
+        "title": "Arctic",
+        "count": 2,
+        "sections": 2,
+        "paths": 3
+      },
+      {
+        "title": "Solar System",
+        "count": 2,
+        "sections": 2,
+        "paths": 3
+      },
+      {
+        "title": "Light",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Pollution",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
       }
     ],
     "macro": [
       {
         "title": "Earth, The: Its Properties, Composition, and Structure",
-        "count": 4
+        "count": 4,
+        "sections": 10,
+        "paths": 10
       },
       {
         "title": "Volcanism",
-        "count": 3
-      },
-      {
-        "title": "Atmosphere",
-        "count": 2
-      },
-      {
-        "title": "Ice and Ice Formations",
-        "count": 2
-      },
-      {
-        "title": "Lakes",
-        "count": 2
+        "count": 3,
+        "sections": 6,
+        "paths": 6
       },
       {
         "title": "Oceans",
-        "count": 2
+        "count": 2,
+        "sections": 3,
+        "paths": 3
+      },
+      {
+        "title": "Atmosphere",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Ice and Ice Formations",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
+      },
+      {
+        "title": "Lakes",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
       },
       {
         "title": "Plate Tectonics",
-        "count": 2
+        "count": 2,
+        "sections": 2,
+        "paths": 2
       },
       {
         "title": "Rivers",
-        "count": 2
+        "count": 2,
+        "sections": 2,
+        "paths": 2
       }
     ]
   }

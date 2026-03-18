@@ -3,138 +3,167 @@
   "readings": {
     "vsi": [
       {
-        "title": "Ecology",
+        "title": "Forests",
         "count": 4,
+        "paths": 8,
         "author": "Jaboury Ghazoul"
       },
       {
-        "title": "Forests",
+        "title": "Ecology",
         "count": 4,
+        "paths": 7,
         "author": "Jaboury Ghazoul"
       },
       {
         "title": "Invasive Species",
         "count": 3,
+        "paths": 5,
         "author": "Julie Lockwood, Dustin J. Welbourne"
       },
       {
         "title": "Marine biology",
         "count": 3,
+        "paths": 4,
         "author": "Philip V. Mladenov"
-      },
-      {
-        "title": "Anthropocene",
-        "count": 2,
-        "author": "Erle C. Ellis"
       },
       {
         "title": "Biodiversity Conservation",
         "count": 2,
+        "paths": 5,
         "author": "David W. Macdonald"
       },
       {
-        "title": "Biogeography",
+        "title": "Genes",
         "count": 2,
-        "author": "Mark V. Lomolino"
+        "paths": 4,
+        "author": "Jonathan Slack"
+      },
+      {
+        "title": "Oceans",
+        "count": 2,
+        "paths": 4,
+        "author": "Dorrik Stow"
+      },
+      {
+        "title": "Anthropocene",
+        "count": 2,
+        "paths": 3,
+        "author": "Erle C. Ellis"
       },
       {
         "title": "Climate",
         "count": 2,
+        "paths": 3,
         "author": "Mark Maslin"
       },
       {
         "title": "Coral Reefs",
         "count": 2,
+        "paths": 3,
         "author": "Charles Sheppard"
-      },
-      {
-        "title": "Genes",
-        "count": 2,
-        "author": "Jonathan Slack"
       },
       {
         "title": "Microbiology",
         "count": 2,
+        "paths": 3,
         "author": "Nicholas P. Money"
-      },
-      {
-        "title": "Oceans",
-        "count": 2,
-        "author": "Dorrik Stow"
-      },
-      {
-        "title": "Plants",
-        "count": 2,
-        "author": "Timothy Walker"
       },
       {
         "title": "Veterinary Science",
         "count": 2,
+        "paths": 3,
         "author": "James Yeates"
+      },
+      {
+        "title": "Biogeography",
+        "count": 2,
+        "paths": 2,
+        "author": "Mark V. Lomolino"
+      },
+      {
+        "title": "Plants",
+        "count": 2,
+        "paths": 2,
+        "author": "Timothy Walker"
       }
     ],
     "wiki": [
       {
         "title": "Ecology",
-        "count": 4
+        "count": 4,
+        "paths": 17
       },
       {
         "title": "Ecosystem",
-        "count": 4
+        "count": 4,
+        "paths": 13
       },
       {
         "title": "Forest",
-        "count": 3
+        "count": 3,
+        "paths": 8
       },
       {
         "title": "Soil",
-        "count": 3
-      },
-      {
-        "title": "Ageing",
-        "count": 2
-      },
-      {
-        "title": "Animal",
-        "count": 2
+        "count": 3,
+        "paths": 6
       },
       {
         "title": "Archaea",
-        "count": 2
-      },
-      {
-        "title": "Desert",
-        "count": 2
-      },
-      {
-        "title": "Domestication",
-        "count": 2
+        "count": 2,
+        "paths": 5
       },
       {
         "title": "Evolution",
-        "count": 2
-      },
-      {
-        "title": "Food",
-        "count": 2
+        "count": 2,
+        "paths": 5
       },
       {
         "title": "Grassland",
-        "count": 2
+        "count": 2,
+        "paths": 5
+      },
+      {
+        "title": "Ageing",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Animal",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Desert",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Food",
+        "count": 2,
+        "paths": 4
       },
       {
         "title": "Water",
-        "count": 2
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Domestication",
+        "count": 2,
+        "paths": 3
       }
     ],
     "macro": [
       {
         "title": "Biosphere and Concepts of Ecology, The",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "Biosphere, The",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }

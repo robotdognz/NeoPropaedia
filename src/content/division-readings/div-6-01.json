@@ -5,146 +5,177 @@
       {
         "title": "Art history",
         "count": 3,
+        "paths": 4,
         "author": "Dana Arnold"
       },
       {
         "title": "Contemporary art",
         "count": 3,
+        "paths": 4,
         "author": "Julian Stallabrass"
-      },
-      {
-        "title": "Aesthetics",
-        "count": 2,
-        "author": "Bence Nanay"
       },
       {
         "title": "Art Theory",
         "count": 2,
+        "paths": 4,
         "author": "Cynthia Freeland"
       },
       {
         "title": "Beauty",
         "count": 2,
+        "paths": 4,
         "author": "Roger Scruton"
-      },
-      {
-        "title": "Creativity",
-        "count": 2,
-        "author": "Vlad Petre Glăveanu"
       },
       {
         "title": "Critical theory",
         "count": 2,
+        "paths": 3,
         "author": "Stephen Eric Bronner"
       },
       {
         "title": "Dada and Surrealism",
         "count": 2,
+        "paths": 3,
         "author": "David Hopkins"
       },
       {
         "title": "Design",
         "count": 2,
+        "paths": 3,
         "author": "John Heskett"
-      },
-      {
-        "title": "Ethnomusicology",
-        "count": 2,
-        "author": "Timothy Rice"
-      },
-      {
-        "title": "Folk music",
-        "count": 2,
-        "author": "Mark Slobin"
       },
       {
         "title": "Futurism",
         "count": 2,
+        "paths": 3,
         "author": "Ara H. Merjian"
       },
       {
         "title": "Imagination",
         "count": 2,
+        "paths": 3,
         "author": "Jennifer Gosetti-Ferencei"
-      },
-      {
-        "title": "Literary Theory",
-        "count": 2,
-        "author": "Jonathan Culler"
       },
       {
         "title": "Modern art",
         "count": 2,
+        "paths": 3,
         "author": "David Cottington"
       },
       {
         "title": "Renaissance Art",
         "count": 2,
+        "paths": 3,
         "author": "Geraldine A. Johnson"
-      },
-      {
-        "title": "Romanticism",
-        "count": 2,
-        "author": "Michael Ferber"
       },
       {
         "title": "The Avant-Garde",
         "count": 2,
+        "paths": 3,
         "author": "David Cottington"
+      },
+      {
+        "title": "Aesthetics",
+        "count": 2,
+        "paths": 2,
+        "author": "Bence Nanay"
+      },
+      {
+        "title": "Creativity",
+        "count": 2,
+        "paths": 2,
+        "author": "Vlad Petre Glăveanu"
+      },
+      {
+        "title": "Ethnomusicology",
+        "count": 2,
+        "paths": 2,
+        "author": "Timothy Rice"
+      },
+      {
+        "title": "Folk music",
+        "count": 2,
+        "paths": 2,
+        "author": "Mark Slobin"
+      },
+      {
+        "title": "Literary Theory",
+        "count": 2,
+        "paths": 2,
+        "author": "Jonathan Culler"
+      },
+      {
+        "title": "Romanticism",
+        "count": 2,
+        "paths": 2,
+        "author": "Michael Ferber"
       }
     ],
     "wiki": [
       {
         "title": "Performing arts",
-        "count": 3
-      },
-      {
-        "title": "Akbar",
-        "count": 2
-      },
-      {
-        "title": "Art",
-        "count": 2
-      },
-      {
-        "title": "Folklore",
-        "count": 2
+        "count": 3,
+        "paths": 10
       },
       {
         "title": "History of art",
-        "count": 2
+        "count": 2,
+        "paths": 13
       },
       {
-        "title": "Islamic Golden Age",
-        "count": 2
-      },
-      {
-        "title": "Literature",
-        "count": 2
+        "title": "Art",
+        "count": 2,
+        "paths": 10
       },
       {
         "title": "Painting",
-        "count": 2
+        "count": 2,
+        "paths": 9
       },
       {
-        "title": "Popular culture",
-        "count": 2
-      },
-      {
-        "title": "Realism (arts)",
-        "count": 2
-      },
-      {
-        "title": "Sigmund Freud",
-        "count": 2
-      },
-      {
-        "title": "The arts",
-        "count": 2
+        "title": "Literature",
+        "count": 2,
+        "paths": 8
       },
       {
         "title": "Visual arts",
-        "count": 2
+        "count": 2,
+        "paths": 8
+      },
+      {
+        "title": "The arts",
+        "count": 2,
+        "paths": 7
+      },
+      {
+        "title": "Popular culture",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Realism (arts)",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Folklore",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Islamic Golden Age",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Sigmund Freud",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Akbar",
+        "count": 2,
+        "paths": 2
       }
     ]
   }

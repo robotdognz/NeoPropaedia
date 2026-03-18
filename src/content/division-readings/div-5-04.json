@@ -3,194 +3,236 @@
   "readings": {
     "vsi": [
       {
-        "title": "Authoritarianism",
-        "count": 3,
-        "author": "James Loxton"
-      },
-      {
         "title": "Democracy",
         "count": 3,
+        "paths": 5,
         "author": "Bernard Crick"
+      },
+      {
+        "title": "Authoritarianism",
+        "count": 3,
+        "paths": 4,
+        "author": "James Loxton"
       },
       {
         "title": "Governance",
         "count": 3,
+        "paths": 4,
         "author": "Mark Bevir"
+      },
+      {
+        "title": "Terrorism",
+        "count": 3,
+        "paths": 4,
+        "author": "Charles Townshend"
       },
       {
         "title": "International Relations",
         "count": 3,
+        "paths": 3,
         "author": "Paul Wilkinson, Christian Reus-Smit"
       },
       {
         "title": "Politics",
         "count": 3,
+        "paths": 3,
         "author": "Kenneth Minogue"
       },
       {
-        "title": "Terrorism",
-        "count": 3,
-        "author": "Charles Townshend"
+        "title": "International security",
+        "count": 2,
+        "paths": 3,
+        "author": "Christopher S. Browning"
+      },
+      {
+        "title": "Public Administration",
+        "count": 2,
+        "paths": 3,
+        "author": "Stella Z. Theodoulou, Ravi K. Roy"
+      },
+      {
+        "title": "The American Presidency",
+        "count": 2,
+        "paths": 3,
+        "author": "Charles O. Jones"
+      },
+      {
+        "title": "The Rule of Law",
+        "count": 2,
+        "paths": 3,
+        "author": "Aziz Z. Huq"
       },
       {
         "title": "Diplomacy",
         "count": 2,
+        "paths": 2,
         "author": "Joseph M. Siracusa"
       },
       {
         "title": "Federalism",
         "count": 2,
+        "paths": 2,
         "author": "Mark J. Rozell, Clyde Wilcox"
-      },
-      {
-        "title": "International security",
-        "count": 2,
-        "author": "Christopher S. Browning"
       },
       {
         "title": "Magna Carta",
         "count": 2,
+        "paths": 2,
         "author": "Nicholas Vincent"
       },
       {
         "title": "Nationalism",
         "count": 2,
+        "paths": 2,
         "author": "Steven Grosby"
       },
       {
         "title": "Populism",
         "count": 2,
+        "paths": 2,
         "author": "Cas Mudde, Cristsbal Rovia Kalwasser"
-      },
-      {
-        "title": "Public Administration",
-        "count": 2,
-        "author": "Stella Z. Theodoulou, Ravi K. Roy"
       },
       {
         "title": "Revolutions",
         "count": 2,
+        "paths": 2,
         "author": "Jack A. Goldstone"
-      },
-      {
-        "title": "The American Presidency",
-        "count": 2,
-        "author": "Charles O. Jones"
       },
       {
         "title": "The European Union",
         "count": 2,
+        "paths": 2,
         "author": "John Pinder, Simon Usherwood"
-      },
-      {
-        "title": "The Rule of Law",
-        "count": 2,
-        "author": "Aziz Z. Huq"
       },
       {
         "title": "The United Nations",
         "count": 2,
+        "paths": 2,
         "author": "Jussi M. Hanhimäki"
       }
     ],
     "wiki": [
       {
         "title": "State (polity)",
-        "count": 4
-      },
-      {
-        "title": "Democracy",
-        "count": 3
-      },
-      {
-        "title": "European Union",
-        "count": 3
+        "count": 4,
+        "paths": 13
       },
       {
         "title": "Government",
-        "count": 3
+        "count": 3,
+        "paths": 18
+      },
+      {
+        "title": "Democracy",
+        "count": 3,
+        "paths": 10
       },
       {
         "title": "Human rights",
-        "count": 3
+        "count": 3,
+        "paths": 9
       },
       {
         "title": "Imperialism",
-        "count": 3
+        "count": 3,
+        "paths": 8
       },
       {
         "title": "Monarchy",
-        "count": 3
+        "count": 3,
+        "paths": 7
       },
       {
-        "title": "Age of Enlightenment",
-        "count": 2
-      },
-      {
-        "title": "Anarchism",
-        "count": 2
-      },
-      {
-        "title": "British Empire",
-        "count": 2
-      },
-      {
-        "title": "City",
-        "count": 2
-      },
-      {
-        "title": "Dictatorship",
-        "count": 2
-      },
-      {
-        "title": "Diplomacy",
-        "count": 2
-      },
-      {
-        "title": "George Washington",
-        "count": 2
-      },
-      {
-        "title": "Ideology",
-        "count": 2
-      },
-      {
-        "title": "Liberty",
-        "count": 2
+        "title": "European Union",
+        "count": 3,
+        "paths": 5
       },
       {
         "title": "Military",
-        "count": 2
-      },
-      {
-        "title": "Nation",
-        "count": 2
-      },
-      {
-        "title": "Nationalism",
-        "count": 2
+        "count": 2,
+        "paths": 10
       },
       {
         "title": "Power (social and political)",
-        "count": 2
+        "count": 2,
+        "paths": 7
+      },
+      {
+        "title": "Age of Enlightenment",
+        "count": 2,
+        "paths": 6
+      },
+      {
+        "title": "British Empire",
+        "count": 2,
+        "paths": 5
+      },
+      {
+        "title": "Liberty",
+        "count": 2,
+        "paths": 5
+      },
+      {
+        "title": "Anarchism",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Dictatorship",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Diplomacy",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Ideology",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Nation",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Nationalism",
+        "count": 2,
+        "paths": 4
       },
       {
         "title": "Socialism",
-        "count": 2
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "George Washington",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "City",
+        "count": 2,
+        "paths": 2
       }
     ],
     "macro": [
       {
         "title": "Social Sciences, The",
-        "count": 4
+        "count": 4,
+        "paths": 4
       },
       {
         "title": "Political Parties and Interest Groups",
-        "count": 2
+        "count": 2,
+        "paths": 2
       },
       {
         "title": "Political Systems",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }

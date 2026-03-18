@@ -5,47 +5,57 @@
       {
         "title": "Classics",
         "count": 2,
+        "paths": 3,
         "author": "Mary Beard, John Henderson"
-      },
-      {
-        "title": "Philosophy",
-        "count": 2,
-        "author": "Edward Craig"
       },
       {
         "title": "Writing and Script",
         "count": 2,
+        "paths": 3,
         "author": "Andrew Robinson"
+      },
+      {
+        "title": "Philosophy",
+        "count": 2,
+        "paths": 2,
+        "author": "Edward Craig"
       }
     ],
     "wiki": [
       {
-        "title": "Age of Enlightenment",
-        "count": 2
-      },
-      {
         "title": "Ancient Greece",
-        "count": 2
-      },
-      {
-        "title": "Cicero",
-        "count": 2
+        "count": 2,
+        "paths": 8
       },
       {
         "title": "History",
-        "count": 2
+        "count": 2,
+        "paths": 7
       },
       {
         "title": "History of science",
-        "count": 2
+        "count": 2,
+        "paths": 5
       },
       {
-        "title": "Islamic Golden Age",
-        "count": 2
+        "title": "Age of Enlightenment",
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Cicero",
+        "count": 2,
+        "paths": 4
       },
       {
         "title": "Renaissance",
-        "count": 2
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Islamic Golden Age",
+        "count": 2,
+        "paths": 2
       }
     ]
   }

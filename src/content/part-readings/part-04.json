@@ -5,296 +5,422 @@
       {
         "title": "Developmental biology",
         "count": 3,
+        "sections": 5,
+        "paths": 10,
         "author": "Lewis Wolpert"
       },
       {
         "title": "Heredity",
         "count": 3,
+        "sections": 4,
+        "paths": 4,
         "author": "John Waller"
+      },
+      {
+        "title": "The Brain",
+        "count": 2,
+        "sections": 7,
+        "paths": 11,
+        "author": "Michael O'Shea"
       },
       {
         "title": "Addiction",
         "count": 2,
+        "sections": 4,
+        "paths": 7,
         "author": "Keith Humphreys"
-      },
-      {
-        "title": "Adolescence",
-        "count": 2,
-        "author": "Peter Smith"
-      },
-      {
-        "title": "Animal Behaviour",
-        "count": 2,
-        "author": "Tristram D. Wyatt"
-      },
-      {
-        "title": "Anxiety",
-        "count": 2,
-        "author": "Daniel Freeman, Jason Freeman"
       },
       {
         "title": "Autism",
         "count": 2,
+        "sections": 4,
+        "paths": 7,
         "author": "Uta Frith"
-      },
-      {
-        "title": "Circadian Rhythms",
-        "count": 2,
-        "author": "Russell Foster, Leon Kreitzman"
-      },
-      {
-        "title": "Cognitive Behavioural Therapy",
-        "count": 2,
-        "author": "Freda McManus"
-      },
-      {
-        "title": "Dementia",
-        "count": 2,
-        "author": "Kathleen Taylor"
-      },
-      {
-        "title": "Demography",
-        "count": 2,
-        "author": "Sarah Harper"
-      },
-      {
-        "title": "Depression",
-        "count": 2,
-        "author": "Mary Jane Tacchi, Jan Scott"
-      },
-      {
-        "title": "Dreaming",
-        "count": 2,
-        "author": "J. Allan Hobson"
       },
       {
         "title": "Drugs",
         "count": 2,
+        "sections": 4,
+        "paths": 6,
         "author": "Leslie Iversen"
       },
       {
-        "title": "Dyslexia",
+        "title": "Circadian Rhythms",
         "count": 2,
-        "author": "Margaret J. Snowling"
+        "sections": 4,
+        "paths": 5,
+        "author": "Russell Foster, Leon Kreitzman"
       },
       {
-        "title": "Education",
+        "title": "Perception",
         "count": 2,
-        "author": "Gary Thomas"
+        "sections": 4,
+        "paths": 5,
+        "author": "Brian J. Rogers"
       },
       {
         "title": "Epidemiology",
         "count": 2,
+        "sections": 4,
+        "paths": 4,
         "author": "Rodolfo Saracci"
       },
       {
-        "title": "Eugenics",
+        "title": "Human Physiology",
         "count": 2,
-        "author": "Philippa Levine"
+        "sections": 4,
+        "paths": 4,
+        "author": "Jamie A. Davies"
+      },
+      {
+        "title": "Memory",
+        "count": 2,
+        "sections": 4,
+        "paths": 4,
+        "author": "Jonathan K. Foster"
+      },
+      {
+        "title": "The Eye",
+        "count": 2,
+        "sections": 4,
+        "paths": 4,
+        "author": "Michael F. Land"
+      },
+      {
+        "title": "Philosophy of Biology",
+        "count": 2,
+        "sections": 3,
+        "paths": 6,
+        "author": "Samir Okasha"
+      },
+      {
+        "title": "Intelligence",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "author": "Ian J. Deary"
+      },
+      {
+        "title": "Psychiatry",
+        "count": 2,
+        "sections": 3,
+        "paths": 5,
+        "author": "Tom Burns"
+      },
+      {
+        "title": "Animal Behaviour",
+        "count": 2,
+        "sections": 3,
+        "paths": 4,
+        "author": "Tristram D. Wyatt"
       },
       {
         "title": "Evolution",
         "count": 2,
+        "sections": 3,
+        "paths": 4,
         "author": "Brian Charlesworth, Deborah Charlesworth"
       },
       {
         "title": "Genes",
         "count": 2,
+        "sections": 3,
+        "paths": 4,
         "author": "Jonathan Slack"
       },
       {
-        "title": "Human Anatomy",
+        "title": "Adolescence",
         "count": 2,
-        "author": "Leslie Klenerman"
+        "sections": 3,
+        "paths": 3,
+        "author": "Peter Smith"
+      },
+      {
+        "title": "Anxiety",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "Daniel Freeman, Jason Freeman"
+      },
+      {
+        "title": "Dementia",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "Kathleen Taylor"
+      },
+      {
+        "title": "Dreaming",
+        "count": 2,
+        "sections": 3,
+        "paths": 3,
+        "author": "J. Allan Hobson"
       },
       {
         "title": "Human evolution",
         "count": 2,
+        "sections": 3,
+        "paths": 3,
         "author": "Bernard Wood"
-      },
-      {
-        "title": "Human Physiology",
-        "count": 2,
-        "author": "Jamie A. Davies"
-      },
-      {
-        "title": "Intelligence",
-        "count": 2,
-        "author": "Ian J. Deary"
-      },
-      {
-        "title": "Mammals",
-        "count": 2,
-        "author": "T. S. Kemp"
-      },
-      {
-        "title": "Memory",
-        "count": 2,
-        "author": "Jonathan K. Foster"
       },
       {
         "title": "Pain",
         "count": 2,
+        "sections": 3,
+        "paths": 3,
         "author": "Rob Boddice"
       },
       {
-        "title": "Perception",
+        "title": "Social and Cultural Anthropology",
         "count": 2,
-        "author": "Brian J. Rogers"
+        "sections": 2,
+        "paths": 4,
+        "author": "John Monaghan, Peter Just"
       },
       {
-        "title": "Philosophy of Biology",
+        "title": "Eugenics",
         "count": 2,
-        "author": "Samir Okasha"
+        "sections": 2,
+        "paths": 3,
+        "author": "Philippa Levine"
       },
       {
-        "title": "Psychiatry",
+        "title": "Human Anatomy",
         "count": 2,
-        "author": "Tom Burns"
+        "sections": 2,
+        "paths": 3,
+        "author": "Leslie Klenerman"
+      },
+      {
+        "title": "Mammals",
+        "count": 2,
+        "sections": 2,
+        "paths": 3,
+        "author": "T. S. Kemp"
+      },
+      {
+        "title": "Teeth",
+        "count": 2,
+        "sections": 2,
+        "paths": 3,
+        "author": "Peter S. Ungar"
+      },
+      {
+        "title": "Cognitive Behavioural Therapy",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Freda McManus"
+      },
+      {
+        "title": "Demography",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Sarah Harper"
+      },
+      {
+        "title": "Depression",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Mary Jane Tacchi, Jan Scott"
+      },
+      {
+        "title": "Dyslexia",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Margaret J. Snowling"
+      },
+      {
+        "title": "Education",
+        "count": 2,
+        "sections": 2,
+        "paths": 2,
+        "author": "Gary Thomas"
       },
       {
         "title": "Psychotherapy",
         "count": 2,
+        "sections": 2,
+        "paths": 2,
         "author": "Tom Burns (Author), Eva Burns-Lundgren (Editor)"
       },
       {
         "title": "Racism",
         "count": 2,
+        "sections": 2,
+        "paths": 2,
         "author": "Ali Rattansi"
       },
       {
         "title": "Schizophrenia",
         "count": 2,
+        "sections": 2,
+        "paths": 2,
         "author": "Chris Frith, Eve C. Johnstone"
       },
       {
         "title": "Sleep",
         "count": 2,
+        "sections": 2,
+        "paths": 2,
         "author": "Steven W. Lockley, Russell G. Foster"
       },
       {
         "title": "Smell",
         "count": 2,
+        "sections": 2,
+        "paths": 2,
         "author": "Matthew Cobb"
-      },
-      {
-        "title": "Social and Cultural Anthropology",
-        "count": 2,
-        "author": "John Monaghan, Peter Just"
       },
       {
         "title": "Sound",
         "count": 2,
+        "sections": 2,
+        "paths": 2,
         "author": "Mike Goldsmith"
-      },
-      {
-        "title": "Teeth",
-        "count": 2,
-        "author": "Peter S. Ungar"
-      },
-      {
-        "title": "The Brain",
-        "count": 2,
-        "author": "Michael O'Shea"
-      },
-      {
-        "title": "The Eye",
-        "count": 2,
-        "author": "Michael F. Land"
       }
     ],
     "wiki": [
       {
         "title": "Human",
-        "count": 3
+        "count": 3,
+        "sections": 4,
+        "paths": 17
       },
       {
         "title": "Mental health",
-        "count": 3
-      },
-      {
-        "title": "Adolescence",
-        "count": 2
-      },
-      {
-        "title": "Animal",
-        "count": 2
-      },
-      {
-        "title": "Anthropology",
-        "count": 2
-      },
-      {
-        "title": "Brain",
-        "count": 2
-      },
-      {
-        "title": "Charles Darwin",
-        "count": 2
-      },
-      {
-        "title": "Child",
-        "count": 2
-      },
-      {
-        "title": "Discrimination",
-        "count": 2
-      },
-      {
-        "title": "Ear",
-        "count": 2
-      },
-      {
-        "title": "Eye",
-        "count": 2
-      },
-      {
-        "title": "Health",
-        "count": 2
-      },
-      {
-        "title": "Human behavior",
-        "count": 2
-      },
-      {
-        "title": "Infant",
-        "count": 2
+        "count": 3,
+        "sections": 3,
+        "paths": 8
       },
       {
         "title": "Learning",
-        "count": 2
+        "count": 2,
+        "sections": 5,
+        "paths": 14
       },
       {
-        "title": "Man",
-        "count": 2
+        "title": "Human behavior",
+        "count": 2,
+        "sections": 5,
+        "paths": 13
       },
       {
-        "title": "Parenting",
-        "count": 2
+        "title": "Adolescence",
+        "count": 2,
+        "sections": 5,
+        "paths": 10
       },
       {
         "title": "Personality",
-        "count": 2
+        "count": 2,
+        "sections": 4,
+        "paths": 16
       },
       {
-        "title": "Primate",
-        "count": 2
+        "title": "Health",
+        "count": 2,
+        "sections": 4,
+        "paths": 8
       },
       {
-        "title": "Racism",
-        "count": 2
+        "title": "Child",
+        "count": 2,
+        "sections": 3,
+        "paths": 7
       },
       {
-        "title": "Sense",
-        "count": 2
+        "title": "Anthropology",
+        "count": 2,
+        "sections": 3,
+        "paths": 6
       },
       {
-        "title": "Sex",
-        "count": 2
+        "title": "Ear",
+        "count": 2,
+        "sections": 3,
+        "paths": 5
       },
       {
         "title": "Sexual orientation",
-        "count": 2
+        "count": 2,
+        "sections": 3,
+        "paths": 5
+      },
+      {
+        "title": "Charles Darwin",
+        "count": 2,
+        "sections": 3,
+        "paths": 4
+      },
+      {
+        "title": "Sense",
+        "count": 2,
+        "sections": 2,
+        "paths": 8
+      },
+      {
+        "title": "Racism",
+        "count": 2,
+        "sections": 2,
+        "paths": 6
+      },
+      {
+        "title": "Sex",
+        "count": 2,
+        "sections": 2,
+        "paths": 6
+      },
+      {
+        "title": "Brain",
+        "count": 2,
+        "sections": 2,
+        "paths": 5
+      },
+      {
+        "title": "Discrimination",
+        "count": 2,
+        "sections": 2,
+        "paths": 5
+      },
+      {
+        "title": "Eye",
+        "count": 2,
+        "sections": 2,
+        "paths": 5
+      },
+      {
+        "title": "Man",
+        "count": 2,
+        "sections": 2,
+        "paths": 5
+      },
+      {
+        "title": "Infant",
+        "count": 2,
+        "sections": 2,
+        "paths": 4
+      },
+      {
+        "title": "Parenting",
+        "count": 2,
+        "sections": 2,
+        "paths": 4
+      },
+      {
+        "title": "Primate",
+        "count": 2,
+        "sections": 2,
+        "paths": 3
+      },
+      {
+        "title": "Animal",
+        "count": 2,
+        "sections": 2,
+        "paths": 2
       }
     ]
   }

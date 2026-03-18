@@ -5,138 +5,168 @@
       {
         "title": "African History",
         "count": 5,
+        "paths": 5,
         "author": "John Parker, Richard Rathbone"
       },
       {
         "title": "African Religions",
         "count": 5,
+        "paths": 5,
         "author": "Jacob K. Olupona"
       },
       {
         "title": "African Politics",
         "count": 4,
+        "paths": 4,
         "author": "Ian Taylor"
       },
       {
         "title": "Empire",
         "count": 4,
+        "paths": 4,
         "author": "Stephen Howe"
       },
       {
         "title": "The British Empire",
         "count": 4,
+        "paths": 4,
         "author": "Ashley Jackson"
       },
       {
         "title": "Archaeology",
         "count": 3,
+        "paths": 3,
         "author": "Paul Bahn"
       },
       {
         "title": "Exploration",
         "count": 3,
+        "paths": 3,
         "author": "Stewart A. Weaver"
       },
       {
         "title": "Global Islam",
         "count": 3,
+        "paths": 3,
         "author": "Nile Green"
       },
       {
         "title": "Islam",
         "count": 3,
+        "paths": 3,
         "author": "Malise Ruthven"
       },
       {
         "title": "Postcolonialism",
         "count": 3,
+        "paths": 3,
         "author": "Robert J.C. Young"
       },
       {
         "title": "Islamic History",
         "count": 2,
+        "paths": 2,
         "author": "Adam J. Silverstein"
       },
       {
         "title": "Prehistory",
         "count": 2,
+        "paths": 2,
         "author": "Chris Gosden"
       }
     ],
     "wiki": [
       {
-        "title": "Age of Discovery",
-        "count": 5
-      },
-      {
         "title": "History of Africa",
-        "count": 5
+        "count": 5,
+        "paths": 17
       },
       {
         "title": "Post-classical history",
-        "count": 5
+        "count": 5,
+        "paths": 10
       },
       {
-        "title": "Atlantic slave trade",
-        "count": 4
-      },
-      {
-        "title": "British Empire",
-        "count": 4
+        "title": "Age of Discovery",
+        "count": 5,
+        "paths": 7
       },
       {
         "title": "Early modern period",
-        "count": 4
+        "count": 4,
+        "paths": 9
+      },
+      {
+        "title": "British Empire",
+        "count": 4,
+        "paths": 7
+      },
+      {
+        "title": "Atlantic slave trade",
+        "count": 4,
+        "paths": 6
       },
       {
         "title": "Africa",
-        "count": 3
+        "count": 3,
+        "paths": 7
       },
       {
         "title": "Islamic Golden Age",
-        "count": 3
+        "count": 3,
+        "paths": 6
       },
       {
         "title": "Scramble for Africa",
-        "count": 3
-      },
-      {
-        "title": "Stone Age",
-        "count": 3
+        "count": 3,
+        "paths": 6
       },
       {
         "title": "Swahili",
-        "count": 3
+        "count": 3,
+        "paths": 5
       },
       {
-        "title": "Democratic Republic of the Congo",
-        "count": 2
+        "title": "Stone Age",
+        "count": 3,
+        "paths": 3
       },
       {
         "title": "Ibn Khaldun",
-        "count": 2
-      },
-      {
-        "title": "Iron Age",
-        "count": 2
+        "count": 2,
+        "paths": 4
       },
       {
         "title": "Ottoman Empire",
-        "count": 2
+        "count": 2,
+        "paths": 4
+      },
+      {
+        "title": "Democratic Republic of the Congo",
+        "count": 2,
+        "paths": 3
+      },
+      {
+        "title": "Iron Age",
+        "count": 2,
+        "paths": 3
       },
       {
         "title": "Silk Road",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ],
     "macro": [
       {
         "title": "Africa",
-        "count": 5
+        "count": 5,
+        "paths": 5
       },
       {
         "title": "Eastern Africa",
-        "count": 2
+        "count": 2,
+        "paths": 2
       }
     ]
   }
