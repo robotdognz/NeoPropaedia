@@ -3,10 +3,12 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 import {
   readChecklistState,
   subscribeChecklistState,
+  writeChecklistState,
   vsiChecklistKey,
   wikipediaChecklistKey,
   macropaediaChecklistKey,
 } from '../../utils/readingChecklist';
+import Accordion from '../ui/Accordion';
 import TopReadings from './TopReadings';
 import {
   getReadingPreference,
@@ -863,33 +865,34 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
     } else {
       const nextRotation = snapRotation(rotationDegrees, segmentAngle);
       animateSnapRotation(rotationDegrees, nextRotation);
-
-      // Force morph to reverse if it's still in progress
-      if (morphT > 0 && morphPartNumber !== null) {
-        if (morphAnimRef.current) {
-          cancelAnimationFrame(morphAnimRef.current);
-          morphAnimRef.current = null;
-        }
-        morphFromTRef.current = morphT;
-        morphStartTimeRef.current = performance.now();
-        const reverseAnimate = (now: number) => {
-          const elapsed = now - morphStartTimeRef.current;
-          const rawT = Math.min(elapsed / (MORPH_DURATION_MS * 0.5), 1);
-          const nextT = lerp(morphFromTRef.current, 0, easeOutCubic(rawT));
-          setMorphT(nextT);
-          if (rawT < 1) {
-            morphAnimRef.current = requestAnimationFrame(reverseAnimate);
-          } else {
-            setMorphT(0);
-            setMorphPartNumber(null);
-          }
-        };
-        morphAnimRef.current = requestAnimationFrame(reverseAnimate);
-      }
     }
 
     if (svgRef.current?.hasPointerCapture(pointerId)) {
       svgRef.current.releasePointerCapture(pointerId);
+    }
+
+    // Always clean up morph state if we didn't commit to centre
+    // (the commit branch handles its own cleanup at lines 845-848)
+    if (morphT > 0 && morphPartNumber !== null && !(dragState.readyForCenter && !dragState.rotateOnly)) {
+      if (morphAnimRef.current) {
+        cancelAnimationFrame(morphAnimRef.current);
+        morphAnimRef.current = null;
+      }
+      morphFromTRef.current = morphT;
+      morphStartTimeRef.current = performance.now();
+      const reverseAnimate = (now: number) => {
+        const elapsed = now - morphStartTimeRef.current;
+        const rawT = Math.min(elapsed / (MORPH_DURATION_MS * 0.5), 1);
+        const nextT = lerp(morphFromTRef.current, 0, easeOutCubic(rawT));
+        setMorphT(nextT);
+        if (rawT < 1) {
+          morphAnimRef.current = requestAnimationFrame(reverseAnimate);
+        } else {
+          setMorphT(0);
+          setMorphPartNumber(null);
+        }
+      };
+      morphAnimRef.current = requestAnimationFrame(reverseAnimate);
     }
 
     dragStateRef.current = null;
@@ -1719,26 +1722,21 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                 if (!bridge || (!bridge.vsi?.length && !bridge.wiki?.length)) return null;
                 const isFlipped = centerPartNumber > topPartNumber;
                 const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-                const BRIDGE_LIMIT = 5;
-                const filteredVsi = (bridge.vsi || [])
-                  .filter(item => !checklistState[vsiChecklistKey(item.t, item.a || '')])
-                  .slice(0, BRIDGE_LIMIT);
-                const filteredWiki = (bridge.wiki || [])
-                  .filter(item => !checklistState[wikipediaChecklistKey(item.t)])
-                  .slice(0, BRIDGE_LIMIT);
-                const filteredMacro = (bridge.macro || [])
-                  .filter(item => !checklistState[macropaediaChecklistKey(item.t)])
-                  .slice(0, BRIDGE_LIMIT);
-                if (filteredVsi.length === 0 && filteredWiki.length === 0 && filteredMacro.length === 0) return null;
+                const bridgeVsi = bridge.vsi || [];
+                const bridgeWiki = bridge.wiki || [];
+                const bridgeMacro = bridge.macro || [];
+                if (bridgeVsi.length === 0 && bridgeWiki.length === 0 && bridgeMacro.length === 0) return null;
+                const maxVsiTotal = bridgeVsi.length > 0 ? bridgeVsi[0].ca + bridgeVsi[0].cb : 1;
+                const maxWikiTotal = bridgeWiki.length > 0 ? bridgeWiki[0].ca + bridgeWiki[0].cb : 1;
+                const maxMacroTotal = bridgeMacro.length > 0 ? bridgeMacro[0].ca + bridgeMacro[0].cb : 1;
                 return (
                   <div class="mt-3 border-t border-slate-200 pt-3">
                     <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-                      Bridge readings
+                      Recommended Readings
                     </p>
                     <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
                       Books and articles independently recommended for both {centerPart.partName}: {centerPart.title} and {topPart.partName}: {topPart.title}. Ranked by how many sections across both parts recommend them. The bar shows the balance of coverage between the two chosen parts.
                     </p>
-                    {/* Part color legend */}
                     <div class="mt-3 flex items-center gap-3 text-[10px] font-sans text-slate-400">
                       <span class="flex items-center gap-1">
                         <span class="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: centerPart.colorHex }} />
@@ -1749,114 +1747,69 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                         {topPart.partName}
                       </span>
                     </div>
-                    {filteredVsi.length > 0 && (
-                      <details class="mt-3 group/vsi" open={readingPref === 'vsi'}>
-                        <summary class="flex cursor-pointer select-none items-center justify-between list-none [&::-webkit-details-marker]:hidden">
-                          <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400">
-                            Oxford VSI ({filteredVsi.length})
-                          </p>
-                          <svg class="h-3.5 w-3.5 text-slate-300 transition-transform group-open/vsi:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
-                        </summary>
-                        <div class="mt-2 space-y-2">
-                          {filteredVsi.map((item) => {
+                    <div class="mt-3 space-y-4">{[
+                      { items: bridgeVsi, type: 'vsi' as const, title: 'Oxford VSI Recommendations', maxTotal: maxVsiTotal, browseHref: `${baseUrl}/vsi`, browseLabel: 'Browse all Oxford VSI books', getHref: (item: BridgeItem) => `${baseUrl}/vsi/${slugify(item.t)}`, getCheckKey: (item: BridgeItem) => vsiChecklistKey(item.t, item.a || '') },
+                      { items: bridgeWiki, type: 'wikipedia' as const, title: 'Wikipedia Article Recommendations', maxTotal: maxWikiTotal, browseHref: `${baseUrl}/wikipedia`, browseLabel: 'Browse all Wikipedia articles', getHref: (item: BridgeItem) => `${baseUrl}/wikipedia/${slugify(item.t)}`, getCheckKey: (item: BridgeItem) => wikipediaChecklistKey(item.t) },
+                      { items: bridgeMacro, type: 'macropaedia' as const, title: 'Macropaedia Reading List', maxTotal: maxMacroTotal, browseHref: `${baseUrl}/macropaedia`, browseLabel: 'Browse all Macropaedia articles', getHref: (item: BridgeItem) => `${baseUrl}/macropaedia/${slugify(item.t)}`, getCheckKey: (item: BridgeItem) => macropaediaChecklistKey(item.t) },
+                    ].filter(section => section.items.length > 0).map((section) => (
+                      <Accordion
+                        key={section.type}
+                        title={`${section.title} (${section.items.length})`}
+                        forceOpenKey={readingPref === section.type ? 0 : undefined}
+                        forceCloseKey={readingPref !== section.type ? 0 : undefined}
+                      >
+                        <div class="mb-4 flex justify-end">
+                          <a href={section.browseHref} class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline">
+                            {section.browseLabel}
+                          </a>
+                        </div>
+                        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                          {section.items.map((item) => {
                             const centerCount = isFlipped ? item.cb : item.ca;
                             const topCount = isFlipped ? item.ca : item.cb;
-                            const centerPct = Math.round((centerCount / (centerCount + topCount)) * 100);
+                            const total = centerCount + topCount;
+                            const centerPct = Math.round((centerCount / section.maxTotal) * 100);
+                            const topPct = Math.round((topCount / section.maxTotal) * 100);
+                            const checkKey = section.getCheckKey(item);
+                            const isChecked = Boolean(checklistState[checkKey]);
+
                             return (
-                              <a
+                              <div
                                 key={item.t}
-                                href={`${baseUrl}/vsi/${slugify(item.t)}`}
-                                class="group block rounded-lg border border-slate-100 bg-white px-3 py-2.5 transition hover:border-slate-200 hover:shadow-sm"
+                                class={`rounded-lg border bg-white p-4 transition ${isChecked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}
                               >
-                                <p class="text-sm font-serif font-semibold text-slate-800 group-hover:text-indigo-700">
-                                  {item.t}
-                                </p>
-                                {item.a && (
-                                  <p class="mt-0.5 text-xs text-slate-400">{item.a}</p>
-                                )}
-                                <div class="mt-2 flex items-center gap-2">
-                                  <span class="flex h-1.5 flex-1 overflow-hidden rounded-full bg-slate-100">
-                                    <span class="rounded-l-full transition-all" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
-                                    <span class="rounded-r-full transition-all" style={{ width: `${100 - centerPct}%`, backgroundColor: topPart.colorHex }} />
-                                  </span>
-                                  <span class="text-[10px] font-sans text-slate-400 tabular-nums shrink-0">{centerCount} · {topCount}</span>
+                                <div class="flex items-start justify-between gap-2">
+                                  <a
+                                    href={section.getHref(item)}
+                                    class="text-sm font-serif font-semibold text-gray-900 hover:text-indigo-700 transition-colors"
+                                  >
+                                    {item.t}
+                                  </a>
+                                  <label class="flex shrink-0 items-center gap-1 text-xs font-sans text-gray-500 cursor-pointer">
+                                    <input
+                                      type="checkbox"
+                                      checked={isChecked}
+                                      onChange={(e) => writeChecklistState(checkKey, (e.currentTarget as HTMLInputElement).checked)}
+                                      class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                                    />
+                                    Done
+                                  </label>
                                 </div>
-                              </a>
+                                {item.a && <p class="mt-1 text-xs text-gray-400">{item.a}</p>}
+                                <div class="mt-3 flex items-center gap-2">
+                                  <div class="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-100">
+                                    <div class="flex h-full">
+                                      <div class="rounded-l-full" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
+                                      <div style={{ width: `${topPct}%`, backgroundColor: topPart.colorHex, borderRadius: centerPct === 0 ? '9999px 0 0 9999px' : topPct + centerPct >= 100 ? '0 9999px 9999px 0' : '0' }} />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             );
                           })}
                         </div>
-                      </details>
-                    )}
-                    {filteredWiki.length > 0 && (
-                      <details class="mt-3 group/wiki" open={readingPref === 'wikipedia'}>
-                        <summary class="flex cursor-pointer select-none items-center justify-between list-none [&::-webkit-details-marker]:hidden">
-                          <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400">
-                            Wikipedia ({filteredWiki.length})
-                          </p>
-                          <svg class="h-3.5 w-3.5 text-slate-300 transition-transform group-open/wiki:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
-                        </summary>
-                        <div class="mt-2 space-y-2">
-                          {filteredWiki.map((item) => {
-                            const centerCount = isFlipped ? item.cb : item.ca;
-                            const topCount = isFlipped ? item.ca : item.cb;
-                            const centerPct = Math.round((centerCount / (centerCount + topCount)) * 100);
-                            return (
-                              <a
-                                key={item.t}
-                                href={`${baseUrl}/wikipedia/${slugify(item.t)}`}
-                                class="group block rounded-lg border border-slate-100 bg-white px-3 py-2.5 transition hover:border-slate-200 hover:shadow-sm"
-                              >
-                                <p class="text-sm font-serif font-semibold text-slate-800 group-hover:text-indigo-700">
-                                  {item.t}
-                                </p>
-                                <div class="mt-2 flex items-center gap-2">
-                                  <span class="flex h-1.5 flex-1 overflow-hidden rounded-full bg-slate-100">
-                                    <span class="rounded-l-full transition-all" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
-                                    <span class="rounded-r-full transition-all" style={{ width: `${100 - centerPct}%`, backgroundColor: topPart.colorHex }} />
-                                  </span>
-                                  <span class="text-[10px] font-sans text-slate-400 tabular-nums shrink-0">{centerCount} · {topCount}</span>
-                                </div>
-                              </a>
-                            );
-                          })}
-                        </div>
-                      </details>
-                    )}
-                    {filteredMacro.length > 0 && (
-                      <details class="mt-3 group/macro" open={readingPref === 'macropaedia'}>
-                        <summary class="flex cursor-pointer select-none items-center justify-between list-none [&::-webkit-details-marker]:hidden">
-                          <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400">
-                            Macropaedia ({filteredMacro.length})
-                          </p>
-                          <svg class="h-3.5 w-3.5 text-slate-300 transition-transform group-open/macro:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
-                        </summary>
-                        <div class="mt-2 space-y-2">
-                          {filteredMacro.map((item) => {
-                            const centerCount = isFlipped ? item.cb : item.ca;
-                            const topCount = isFlipped ? item.ca : item.cb;
-                            const centerPct = Math.round((centerCount / (centerCount + topCount)) * 100);
-                            return (
-                              <a
-                                key={item.t}
-                                href={`${baseUrl}/macropaedia/${slugify(item.t)}`}
-                                class="group block rounded-lg border border-slate-100 bg-white px-3 py-2.5 transition hover:border-slate-200 hover:shadow-sm"
-                              >
-                                <p class="text-sm font-serif font-semibold text-slate-800 group-hover:text-indigo-700">
-                                  {item.t}
-                                </p>
-                                <div class="mt-2 flex items-center gap-2">
-                                  <span class="flex h-1.5 flex-1 overflow-hidden rounded-full bg-slate-100">
-                                    <span class="rounded-l-full transition-all" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
-                                    <span class="rounded-r-full transition-all" style={{ width: `${100 - centerPct}%`, backgroundColor: topPart.colorHex }} />
-                                  </span>
-                                  <span class="text-[10px] font-sans text-slate-400 tabular-nums shrink-0">{centerCount} · {topCount}</span>
-                                </div>
-                              </a>
-                            );
-                          })}
-                        </div>
-                      </details>
-                    )}
+                      </Accordion>
+                    ))}</div>
                   </div>
                 );
               })()}

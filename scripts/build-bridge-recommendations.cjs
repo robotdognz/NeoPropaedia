@@ -18,7 +18,7 @@ const VSI_MAPPINGS_DIR = path.join(ROOT, 'src/content/vsi-mappings');
 const WIKI_MAPPINGS_DIR = path.join(ROOT, 'src/content/wiki-mappings');
 const OUTPUT_PATH = path.join(ROOT, 'src/data/bridge-recommendations.json');
 
-const TOP_N = 8;
+// No artificial limit — show all items that bridge both parts
 
 // Build sectionCode -> partNumber lookup
 const navigation = JSON.parse(fs.readFileSync(NAV_PATH, 'utf8'));
@@ -137,9 +137,9 @@ for (let i = 0; i < partNumbers.length; i++) {
         totalWiki: sharedWiki.length,
         totalMacro: sharedMacro.length,
       };
-      if (sharedVsi.length > 0) result[key].vsi = sharedVsi.slice(0, TOP_N);
-      if (sharedWiki.length > 0) result[key].wiki = sharedWiki.slice(0, TOP_N);
-      if (sharedMacro.length > 0) result[key].macro = sharedMacro.slice(0, TOP_N);
+      if (sharedVsi.length > 0) result[key].vsi = sharedVsi;
+      if (sharedWiki.length > 0) result[key].wiki = sharedWiki;
+      if (sharedMacro.length > 0) result[key].macro = sharedMacro;
     }
   }
 }

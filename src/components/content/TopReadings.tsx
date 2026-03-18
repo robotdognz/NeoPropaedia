@@ -54,8 +54,10 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
   return (
     <div class="space-y-4">
       <div>
-        <h2 class="text-2xl font-sans font-bold text-gray-800">Recommended Readings</h2>
-        <p class="mt-1 text-sm text-slate-500">
+        <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
+          Recommended Readings
+        </p>
+        <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
           Books and articles recommended across multiple {countLabel} in {contextLabel}, ranked by how many {countLabel} include them.
         </p>
       </div>
