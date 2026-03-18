@@ -5,6 +5,7 @@ import {
   subscribeChecklistState,
   vsiChecklistKey,
   wikipediaChecklistKey,
+  macropaediaChecklistKey,
 } from '../../utils/readingChecklist';
 
 export interface CircleNavigatorDivision {
@@ -47,8 +48,10 @@ export interface BridgeItem {
 export interface BridgePair {
   totalVsi: number;
   totalWiki: number;
+  totalMacro: number;
   vsi?: BridgeItem[];
   wiki?: BridgeItem[];
+  macro?: BridgeItem[];
 }
 
 export interface CircleNavigatorProps {
@@ -1729,7 +1732,10 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                 const filteredWiki = (bridge.wiki || [])
                   .filter(item => !checklistState[wikipediaChecklistKey(item.t)])
                   .slice(0, BRIDGE_LIMIT);
-                if (filteredVsi.length === 0 && filteredWiki.length === 0) return null;
+                const filteredMacro = (bridge.macro || [])
+                  .filter(item => !checklistState[macropaediaChecklistKey(item.t)])
+                  .slice(0, BRIDGE_LIMIT);
+                if (filteredVsi.length === 0 && filteredWiki.length === 0 && filteredMacro.length === 0) return null;
                 return (
                   <div class="mt-3 border-t border-slate-200 pt-3">
                     <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
@@ -1750,11 +1756,14 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                       </span>
                     </div>
                     {filteredVsi.length > 0 && (
-                      <div class="mt-3">
-                        <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400 mb-2">
-                          Oxford VSI
-                        </p>
-                        <div class="space-y-2">
+                      <details class="mt-3 group/vsi" open>
+                        <summary class="flex cursor-pointer select-none items-center justify-between list-none [&::-webkit-details-marker]:hidden">
+                          <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400">
+                            Oxford VSI ({filteredVsi.length})
+                          </p>
+                          <svg class="h-3.5 w-3.5 text-slate-300 transition-transform group-open/vsi:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                        </summary>
+                        <div class="mt-2 space-y-2">
                           {filteredVsi.map((item) => {
                             const centerCount = isFlipped ? item.cb : item.ca;
                             const topCount = isFlipped ? item.ca : item.cb;
@@ -1782,14 +1791,17 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                             );
                           })}
                         </div>
-                      </div>
+                      </details>
                     )}
                     {filteredWiki.length > 0 && (
-                      <div class="mt-4">
-                        <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400 mb-2">
-                          Wikipedia
-                        </p>
-                        <div class="space-y-2">
+                      <details class="mt-3 group/wiki">
+                        <summary class="flex cursor-pointer select-none items-center justify-between list-none [&::-webkit-details-marker]:hidden">
+                          <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400">
+                            Wikipedia ({filteredWiki.length})
+                          </p>
+                          <svg class="h-3.5 w-3.5 text-slate-300 transition-transform group-open/wiki:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                        </summary>
+                        <div class="mt-2 space-y-2">
                           {filteredWiki.map((item) => {
                             const centerCount = isFlipped ? item.cb : item.ca;
                             const topCount = isFlipped ? item.ca : item.cb;
@@ -1814,7 +1826,42 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                             );
                           })}
                         </div>
-                      </div>
+                      </details>
+                    )}
+                    {filteredMacro.length > 0 && (
+                      <details class="mt-3 group/macro">
+                        <summary class="flex cursor-pointer select-none items-center justify-between list-none [&::-webkit-details-marker]:hidden">
+                          <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400">
+                            Macropaedia ({filteredMacro.length})
+                          </p>
+                          <svg class="h-3.5 w-3.5 text-slate-300 transition-transform group-open/macro:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                        </summary>
+                        <div class="mt-2 space-y-2">
+                          {filteredMacro.map((item) => {
+                            const centerCount = isFlipped ? item.cb : item.ca;
+                            const topCount = isFlipped ? item.ca : item.cb;
+                            const centerPct = Math.round((centerCount / (centerCount + topCount)) * 100);
+                            return (
+                              <a
+                                key={item.t}
+                                href={`${baseUrl}/macropaedia/${slugify(item.t)}`}
+                                class="group block rounded-lg border border-slate-100 bg-white px-3 py-2.5 transition hover:border-slate-200 hover:shadow-sm"
+                              >
+                                <p class="text-sm font-serif font-semibold text-slate-800 group-hover:text-indigo-700">
+                                  {item.t}
+                                </p>
+                                <div class="mt-2 flex items-center gap-2">
+                                  <span class="flex h-1.5 flex-1 overflow-hidden rounded-full bg-slate-100">
+                                    <span class="rounded-l-full transition-all" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
+                                    <span class="rounded-r-full transition-all" style={{ width: `${100 - centerPct}%`, backgroundColor: topPart.colorHex }} />
+                                  </span>
+                                  <span class="text-[10px] font-sans text-slate-400 tabular-nums shrink-0">{centerCount} · {topCount}</span>
+                                </div>
+                              </a>
+                            );
+                          })}
+                        </div>
+                      </details>
                     )}
                   </div>
                 );

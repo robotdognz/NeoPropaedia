@@ -68,6 +68,22 @@ const wikiIndex = buildPartCounts(
   null
 );
 
+// Build Macropaedia index from section files directly
+const macroIndex = new Map();
+const SECTIONS_DIR = path.join(ROOT, 'src/content/sections');
+for (const file of fs.readdirSync(SECTIONS_DIR).filter(f => f.endsWith('.json'))) {
+  const data = JSON.parse(fs.readFileSync(path.join(SECTIONS_DIR, file), 'utf8'));
+  const partNumber = sectionToPart[data.sectionCode];
+  if (!partNumber) continue;
+  for (const ref of data.macropaediaReferences || []) {
+    if (!macroIndex.has(ref)) {
+      macroIndex.set(ref, { parts: {} });
+    }
+    const entry = macroIndex.get(ref);
+    entry.parts[partNumber] = (entry.parts[partNumber] || 0) + 1;
+  }
+}
+
 // For each part pair, find shared items
 function getConnectionKey(a, b) {
   return Math.min(a, b) + '-' + Math.max(a, b);
@@ -104,13 +120,26 @@ for (let i = 0; i < partNumbers.length; i++) {
     }
     sharedWiki.sort((x, y) => (y.ca + y.cb) - (x.ca + x.cb) || x.t.localeCompare(y.t));
 
-    if (sharedVsi.length > 0 || sharedWiki.length > 0) {
+    // Find Macropaedia articles in both parts
+    const sharedMacro = [];
+    for (const [title, entry] of macroIndex) {
+      const ca = entry.parts[a] || 0;
+      const cb = entry.parts[b] || 0;
+      if (ca > 0 && cb > 0) {
+        sharedMacro.push({ t: title, ca, cb });
+      }
+    }
+    sharedMacro.sort((x, y) => (y.ca + y.cb) - (x.ca + x.cb) || x.t.localeCompare(y.t));
+
+    if (sharedVsi.length > 0 || sharedWiki.length > 0 || sharedMacro.length > 0) {
       result[key] = {
         totalVsi: sharedVsi.length,
         totalWiki: sharedWiki.length,
+        totalMacro: sharedMacro.length,
       };
       if (sharedVsi.length > 0) result[key].vsi = sharedVsi.slice(0, TOP_N);
       if (sharedWiki.length > 0) result[key].wiki = sharedWiki.slice(0, TOP_N);
+      if (sharedMacro.length > 0) result[key].macro = sharedMacro.slice(0, TOP_N);
     }
   }
 }
