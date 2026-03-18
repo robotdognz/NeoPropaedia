@@ -1738,71 +1738,82 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                     <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
                       Books and articles independently recommended for both {centerPart.partName}: {centerPart.title} and {topPart.partName}: {topPart.title}. Ranked by how many sections across both parts recommend them. The bar shows the balance of coverage between the two chosen parts.
                     </p>
+                    {/* Part color legend */}
+                    <div class="mt-3 flex items-center gap-3 text-[10px] font-sans text-slate-400">
+                      <span class="flex items-center gap-1">
+                        <span class="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: centerPart.colorHex }} />
+                        {centerPart.partName}
+                      </span>
+                      <span class="flex items-center gap-1">
+                        <span class="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: topPart.colorHex }} />
+                        {topPart.partName}
+                      </span>
+                    </div>
                     {filteredVsi.length > 0 && (
                       <div class="mt-3">
-                        <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400 mb-1">
+                        <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400 mb-2">
                           Oxford VSI
                         </p>
-                        <ul class="space-y-1.5">
+                        <div class="space-y-2">
                           {filteredVsi.map((item) => {
                             const centerCount = isFlipped ? item.cb : item.ca;
                             const topCount = isFlipped ? item.ca : item.cb;
                             const centerPct = Math.round((centerCount / (centerCount + topCount)) * 100);
                             return (
-                              <li key={item.t}>
-                                <a
-                                  href={`${baseUrl}/vsi/${slugify(item.t)}`}
-                                  class="group block rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
-                                >
-                                  <span class="text-slate-700 group-hover:text-indigo-700">
-                                    {item.t}
-                                    {item.a && <span class="text-slate-400"> by {item.a}</span>}
+                              <a
+                                key={item.t}
+                                href={`${baseUrl}/vsi/${slugify(item.t)}`}
+                                class="group block rounded-lg border border-slate-100 bg-white px-3 py-2.5 transition hover:border-slate-200 hover:shadow-sm"
+                              >
+                                <p class="text-sm font-serif font-semibold text-slate-800 group-hover:text-indigo-700">
+                                  {item.t}
+                                </p>
+                                {item.a && (
+                                  <p class="mt-0.5 text-xs text-slate-400">{item.a}</p>
+                                )}
+                                <div class="mt-2 flex items-center gap-2">
+                                  <span class="flex h-1.5 flex-1 overflow-hidden rounded-full bg-slate-100">
+                                    <span class="rounded-l-full transition-all" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
+                                    <span class="rounded-r-full transition-all" style={{ width: `${100 - centerPct}%`, backgroundColor: topPart.colorHex }} />
                                   </span>
-                                  <span class="mt-1 flex items-center gap-2">
-                                    <span class="flex h-1 w-1/2 shrink-0 overflow-hidden rounded-full bg-slate-100">
-                                      <span class="rounded-l-full" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
-                                      <span class="rounded-r-full" style={{ width: `${100 - centerPct}%`, backgroundColor: topPart.colorHex }} />
-                                    </span>
-                                    <span class="text-[10px] text-slate-400 whitespace-nowrap">Part {centerPart.partNumber}: {centerCount} · Part {topPart.partNumber}: {topCount}</span>
-                                  </span>
-                                </a>
-                              </li>
+                                  <span class="text-[10px] font-sans text-slate-400 tabular-nums shrink-0">{centerCount} · {topCount}</span>
+                                </div>
+                              </a>
                             );
                           })}
-                        </ul>
+                        </div>
                       </div>
                     )}
                     {filteredWiki.length > 0 && (
-                      <div class="mt-3">
-                        <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400 mb-1">
+                      <div class="mt-4">
+                        <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400 mb-2">
                           Wikipedia
                         </p>
-                        <ul class="space-y-1.5">
+                        <div class="space-y-2">
                           {filteredWiki.map((item) => {
                             const centerCount = isFlipped ? item.cb : item.ca;
                             const topCount = isFlipped ? item.ca : item.cb;
                             const centerPct = Math.round((centerCount / (centerCount + topCount)) * 100);
                             return (
-                              <li key={item.t}>
-                                <a
-                                  href={`${baseUrl}/wikipedia/${slugify(item.t)}`}
-                                  class="group block rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
-                                >
-                                  <span class="text-slate-700 group-hover:text-indigo-700">
-                                    {item.t}
+                              <a
+                                key={item.t}
+                                href={`${baseUrl}/wikipedia/${slugify(item.t)}`}
+                                class="group block rounded-lg border border-slate-100 bg-white px-3 py-2.5 transition hover:border-slate-200 hover:shadow-sm"
+                              >
+                                <p class="text-sm font-serif font-semibold text-slate-800 group-hover:text-indigo-700">
+                                  {item.t}
+                                </p>
+                                <div class="mt-2 flex items-center gap-2">
+                                  <span class="flex h-1.5 flex-1 overflow-hidden rounded-full bg-slate-100">
+                                    <span class="rounded-l-full transition-all" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
+                                    <span class="rounded-r-full transition-all" style={{ width: `${100 - centerPct}%`, backgroundColor: topPart.colorHex }} />
                                   </span>
-                                  <span class="mt-1 flex items-center gap-2">
-                                    <span class="flex h-1 w-1/2 shrink-0 overflow-hidden rounded-full bg-slate-100">
-                                      <span class="rounded-l-full" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
-                                      <span class="rounded-r-full" style={{ width: `${100 - centerPct}%`, backgroundColor: topPart.colorHex }} />
-                                    </span>
-                                    <span class="text-[10px] text-slate-400 whitespace-nowrap">Part {centerPart.partNumber}: {centerCount} · Part {topPart.partNumber}: {topCount}</span>
-                                  </span>
-                                </a>
-                              </li>
+                                  <span class="text-[10px] font-sans text-slate-400 tabular-nums shrink-0">{centerCount} · {topCount}</span>
+                                </div>
+                              </a>
                             );
                           })}
-                        </ul>
+                        </div>
                       </div>
                     )}
                   </div>
