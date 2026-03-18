@@ -14,6 +14,8 @@ import {
   OUTLINE_SELECT_EVENT,
   type OutlineSelectionDetail,
 } from '../../utils/vsiOutlineFilter';
+import { getReadingPreference } from '../../utils/readingPreference';
+import { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
 
 export interface VsiMapping {
   vsiTitle: string;
@@ -38,6 +40,7 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
   const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(undefined);
+  const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(undefined);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -53,11 +56,15 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
       if (!detail || detail.sectionCode !== sectionCode) return;
 
       setSelection(detail);
-      setForceOpenKey(Date.now());
 
-      window.requestAnimationFrame(() => {
-        sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
+      if (getReadingPreference() === 'vsi') {
+        setForceOpenKey(Date.now());
+        setTimeout(() => {
+          sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, ACCORDION_ANIMATION_MS + 50);
+      } else {
+        setForceCloseKey(Date.now());
+      }
     };
 
     document.addEventListener(OUTLINE_SELECT_EVENT, handleOutlineSelect as EventListener);
@@ -82,7 +89,7 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
 
   return (
     <section ref={sectionRef} id="vsi-recommendations" class="mt-6 scroll-mt-24">
-      <Accordion title={`Oxford VSI Recommendations (${totalCount})`} forceOpenKey={forceOpenKey}>
+      <Accordion title={`Oxford VSI Recommendations (${totalCount})`} forceOpenKey={forceOpenKey} forceCloseKey={forceCloseKey}>
         <div class="mb-4 flex justify-end">
           <a
             href={`${baseUrl}/vsi`}

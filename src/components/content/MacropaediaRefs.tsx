@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import Accordion from '../ui/Accordion';
 import { slugify } from '../../utils/helpers';
 import {
@@ -8,19 +8,24 @@ import {
   subscribeChecklistState,
   writeChecklistState,
 } from '../../utils/readingChecklist';
+import {
+  OUTLINE_SELECT_EVENT,
+  type OutlineSelectionDetail,
+} from '../../utils/vsiOutlineFilter';
+import { getReadingPreference } from '../../utils/readingPreference';
+import { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
 
 export interface MacropaediaRefsProps {
   references: string[];
+  sectionCode?: string;
   baseUrl: string;
 }
 
-/**
- * Displays Macropaedia article references in a collapsible accordion.
- * These are historical references from the Britannica print edition
- * and are not clickable links.
- */
-export default function MacropaediaRefs({ references, baseUrl }: MacropaediaRefsProps) {
+export default function MacropaediaRefs({ references, sectionCode, baseUrl }: MacropaediaRefsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
+  const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(undefined);
+  const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(undefined);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     setChecklistState(readChecklistState());
@@ -29,10 +34,29 @@ export default function MacropaediaRefs({ references, baseUrl }: MacropaediaRefs
     });
   }, []);
 
+  useEffect(() => {
+    if (!sectionCode) return;
+    const handler = (event: Event) => {
+      const detail = (event as CustomEvent<OutlineSelectionDetail>).detail;
+      if (!detail || detail.sectionCode !== sectionCode) return;
+      if (getReadingPreference() === 'macropaedia') {
+        setForceOpenKey(Date.now());
+        setTimeout(() => {
+          sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, ACCORDION_ANIMATION_MS + 50);
+      } else {
+        setForceCloseKey(Date.now());
+      }
+    };
+    document.addEventListener(OUTLINE_SELECT_EVENT, handler as EventListener);
+    return () => document.removeEventListener(OUTLINE_SELECT_EVENT, handler as EventListener);
+  }, [sectionCode]);
+
   if (!references || references.length === 0) return null;
 
   return (
-    <Accordion title={`Macropaedia Reading List (${references.length})`}>
+    <section ref={sectionRef} class="scroll-mt-24">
+    <Accordion title={`Macropaedia Reading List (${references.length})`} forceOpenKey={forceOpenKey} forceCloseKey={forceCloseKey}>
       <div class="mb-4 flex justify-end">
         <a
           href={`${baseUrl}/macropaedia`}
@@ -88,5 +112,6 @@ export default function MacropaediaRefs({ references, baseUrl }: MacropaediaRefs
         })}
       </ul>
     </Accordion>
+    </section>
   );
 }

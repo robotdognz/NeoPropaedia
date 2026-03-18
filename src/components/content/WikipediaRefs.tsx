@@ -16,6 +16,8 @@ import {
   filterArticlesForOutline,
   type SearchableWikiArticle,
 } from '../../utils/wikipediaOutlineFilter';
+import { getReadingPreference } from '../../utils/readingPreference';
+import { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
 
 export interface WikipediaArticleRef extends SearchableWikiArticle {
   rationale?: string;
@@ -44,6 +46,7 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
   const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(undefined);
+  const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(undefined);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -60,10 +63,14 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
       const detail = (event as CustomEvent<OutlineSelectionDetail>).detail;
       if (!detail || detail.sectionCode !== sectionCode) return;
       setSelection(detail);
-      setForceOpenKey(Date.now());
-      window.requestAnimationFrame(() => {
-        sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
+      if (getReadingPreference() === 'wikipedia') {
+        setForceOpenKey(Date.now());
+        setTimeout(() => {
+          sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, ACCORDION_ANIMATION_MS + 50);
+      } else {
+        setForceCloseKey(Date.now());
+      }
     };
     document.addEventListener(OUTLINE_SELECT_EVENT, handler as EventListener);
     return () => document.removeEventListener(OUTLINE_SELECT_EVENT, handler as EventListener);
@@ -90,7 +97,7 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
 
   return (
     <section ref={sectionRef} class="mt-6 scroll-mt-24">
-      <Accordion title={`Wikipedia Article Recommendations (${totalCount})`} forceOpenKey={forceOpenKey}>
+      <Accordion title={`Wikipedia Article Recommendations (${totalCount})`} forceOpenKey={forceOpenKey} forceCloseKey={forceCloseKey}>
         <div class="mb-4 flex flex-wrap items-start justify-between gap-3">
           <span class="text-xs text-gray-500">
             Showing Level {level === 1 ? '1 (Top 10)' : level === 2 ? '2 (Top 100)' : '3 (~1,000)'}

@@ -6,6 +6,7 @@ export interface AccordionProps {
   title: string;
   defaultOpen?: boolean;
   forceOpenKey?: string | number;
+  forceCloseKey?: string | number;
   children: ComponentChildren;
 }
 
@@ -13,7 +14,7 @@ export const ACCORDION_ANIMATION_MS = 300;
 
 let accordionIdCounter = 0;
 
-export default function Accordion({ title, defaultOpen = false, forceOpenKey, children }: AccordionProps) {
+export default function Accordion({ title, defaultOpen = false, forceOpenKey, forceCloseKey, children }: AccordionProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
   const contentRef = useRef<HTMLDivElement>(null);
   const [maxHeight, setMaxHeight] = useState<string>(defaultOpen ? 'none' : '0px');
@@ -50,6 +51,12 @@ export default function Accordion({ title, defaultOpen = false, forceOpenKey, ch
       setIsOpen(true);
     }
   }, [forceOpenKey]);
+
+  useEffect(() => {
+    if (forceCloseKey !== undefined) {
+      setIsOpen(false);
+    }
+  }, [forceCloseKey]);
 
   const toggle = () => setIsOpen((prev) => !prev);
 

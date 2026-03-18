@@ -7,6 +7,11 @@ import {
   wikipediaChecklistKey,
   macropaediaChecklistKey,
 } from '../../utils/readingChecklist';
+import {
+  getReadingPreference,
+  subscribeReadingPreference,
+  type ReadingType,
+} from '../../utils/readingPreference';
 
 export interface CircleNavigatorDivision {
   divisionId: string;
@@ -318,10 +323,14 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
   const dragStateRef = useRef<DragState | null>(null);
   const [centerHasFocus, setCenterHasFocus] = useState(false);
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
+  const [readingPref, setReadingPref] = useState<ReadingType>('vsi');
 
   useEffect(() => {
     setChecklistState(readChecklistState());
-    return subscribeChecklistState(() => setChecklistState(readChecklistState()));
+    setReadingPref(getReadingPreference());
+    const unsubChecklist = subscribeChecklistState(() => setChecklistState(readChecklistState()));
+    const unsubPref = subscribeReadingPreference((type) => setReadingPref(type));
+    return () => { unsubChecklist(); unsubPref(); };
   }, []);
   const [hasLoadedState, setHasLoadedState] = useState(false);
   const [centerPartNumber, setCenterPartNumber] = useState<number | null>(null);
@@ -988,22 +997,24 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
 
   return (
     <div class="space-y-3 sm:space-y-4">
-      <div class="flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2 shadow-sm sm:rounded-2xl sm:px-4 sm:py-2.5">
-        <span
-          class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full font-sans text-xs font-bold leading-none text-white"
-          style={{ backgroundColor: selectedPart.colorHex }}
-        >
-          {selectedPart.partNumber}
-        </span>
-        <span class="mr-auto text-sm font-serif font-bold text-slate-900 sm:text-base">
-          {selectedPart.title}
-        </span>
-        <div class="flex gap-1.5">
+      <div class="rounded-xl border border-slate-200 bg-white px-3 py-2 shadow-sm sm:rounded-2xl sm:px-4 sm:py-2.5">
+        <div class="flex items-center gap-3">
+          <span
+            class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full font-sans text-xs font-bold leading-none text-white"
+            style={{ backgroundColor: selectedPart.colorHex }}
+          >
+            {selectedPart.partNumber}
+          </span>
+          <span class="min-w-0 truncate text-sm font-serif font-bold text-slate-900 sm:text-base">
+            {selectedPart.title}
+          </span>
+        </div>
+        <div class="mt-1.5 flex h-7 items-center gap-1.5">
           <a
             href={selectedPart.href}
             class="rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold text-white transition hover:bg-slate-700"
           >
-            Open
+            Open part
           </a>
           {(!hasCenter || selectedPart.partNumber !== centerPartNumber) && (
             <button
@@ -1011,7 +1022,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
               onClick={() => movePartToCenter(selectedPart.partNumber)}
               class="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
             >
-              Centre
+              Move to centre
             </button>
           )}
           {hasCenter && selectedPart.partNumber === centerPartNumber && (
@@ -1020,7 +1031,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
               onClick={removeFromCenter}
               class="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
             >
-              Uncentre
+              Remove from centre
             </button>
           )}
           {(!hasCenter || selectedPart.partNumber !== centerPartNumber) && selectedPart.partNumber !== topPart.partNumber && (
@@ -1029,7 +1040,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
               onClick={() => rotatePartToTop(selectedPart.partNumber)}
               class="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
             >
-              To top
+              Rotate to top
             </button>
           )}
         </div>
@@ -1756,7 +1767,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                       </span>
                     </div>
                     {filteredVsi.length > 0 && (
-                      <details class="mt-3 group/vsi" open>
+                      <details class="mt-3 group/vsi" open={readingPref === 'vsi'}>
                         <summary class="flex cursor-pointer select-none items-center justify-between list-none [&::-webkit-details-marker]:hidden">
                           <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400">
                             Oxford VSI ({filteredVsi.length})
@@ -1794,7 +1805,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                       </details>
                     )}
                     {filteredWiki.length > 0 && (
-                      <details class="mt-3 group/wiki">
+                      <details class="mt-3 group/wiki" open={readingPref === 'wikipedia'}>
                         <summary class="flex cursor-pointer select-none items-center justify-between list-none [&::-webkit-details-marker]:hidden">
                           <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400">
                             Wikipedia ({filteredWiki.length})
@@ -1829,7 +1840,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                       </details>
                     )}
                     {filteredMacro.length > 0 && (
-                      <details class="mt-3 group/macro">
+                      <details class="mt-3 group/macro" open={readingPref === 'macropaedia'}>
                         <summary class="flex cursor-pointer select-none items-center justify-between list-none [&::-webkit-details-marker]:hidden">
                           <p class="text-[0.65rem] font-sans font-semibold uppercase tracking-wide text-slate-400">
                             Macropaedia ({filteredMacro.length})
