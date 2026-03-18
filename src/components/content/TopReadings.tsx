@@ -47,13 +47,15 @@ function matchColor(percent: number): string {
 function buildRationale(item: ReadingItem, countLabel: string, contextLabel: string): string {
   const lines: string[] = [];
 
-  if (item.count >= 3) {
+  if (item.count <= 1) {
+    lines.push(`One of the most relevant resources in ${contextLabel}, included here as a top recommendation from its section.`);
+  } else if (item.count >= 3) {
     lines.push(`This appears across ${item.count} ${countLabel} in ${contextLabel}, making it one of the most broadly relevant resources here.`);
   } else {
     lines.push(`This appears across ${item.count} ${countLabel} in ${contextLabel}.`);
   }
 
-  if (item.sections && item.sections > item.count) {
+  if (item.count > 1 && item.sections && item.sections > item.count) {
     lines.push(`It's referenced in ${item.sections} individual sections, suggesting it covers topics that recur across different areas.`);
   }
 
@@ -61,10 +63,12 @@ function buildRationale(item: ReadingItem, countLabel: string, contextLabel: str
     lines.push(`The outline maps it to ${item.paths} specific topics, indicating deep rather than surface-level relevance.`);
   }
 
-  if ((item.relevance ?? 100) >= 90) {
-    lines.push('Ranked highly because its coverage is both broad and evenly spread.');
-  } else if ((item.relevance ?? 100) >= 60) {
-    lines.push('Ranked by how evenly its coverage spreads across the outline.');
+  if (item.count > 1) {
+    if ((item.relevance ?? 100) >= 90) {
+      lines.push('Ranked highly because its coverage is both broad and evenly spread.');
+    } else if ((item.relevance ?? 100) >= 60) {
+      lines.push('Ranked by how evenly its coverage spreads across the outline.');
+    }
   }
 
   return lines.join(' ');
@@ -93,7 +97,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
           Recommended Readings
         </p>
         <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-          Books and articles recommended across multiple {countLabel} in {contextLabel}, ranked by spread and depth of coverage.
+          The most relevant books and articles for {contextLabel}, ranked by how broadly and deeply they cover the subject matter.
         </p>
       </div>
 
@@ -116,7 +120,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
               return (
                 <div
                   key={item.title}
-                  class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}
+                  class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-slate-300 bg-slate-200/70 opacity-50' : 'border-gray-200'}`}
                 >
                   <div class="flex items-start justify-between gap-2">
                     <a
@@ -176,7 +180,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
               return (
                 <div
                   key={item.title}
-                  class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}
+                  class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-slate-300 bg-slate-200/70 opacity-50' : 'border-gray-200'}`}
                 >
                   <div class="flex items-start justify-between gap-2">
                     <a
@@ -235,7 +239,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
               return (
                 <div
                   key={item.title}
-                  class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}
+                  class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-slate-300 bg-slate-200/70 opacity-50' : 'border-gray-200'}`}
                 >
                   <div class="flex items-start justify-between gap-2">
                     <a

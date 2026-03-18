@@ -194,62 +194,97 @@ function compositeScore(spread, count, sections, paths) {
   return spread * 10000 + count * 1000 + (sections || 0) * 100 + (paths || 0);
 }
 
-// Part-level: items appearing in 2+ divisions within the part
-// Ranked by: entropy of spread across divisions (primary), division count (secondary),
-// section count (tertiary), outline paths (quaternary)
-// Outputs a normalised relevance score (0-100) for bar display
+const MIN_RESULTS = 5;
+
+// Part-level: progressively relaxes thresholds to ensure at least MIN_RESULTS items.
+// Ranked by: entropy of spread across divisions, then count, sections, paths.
 function partItems(index, partNumber, hasAuthor) {
-  const items = [];
-  for (const [title, entry] of index) {
-    const divs = entry.divisions[partNumber];
-    if (!divs || divs.size < 2) continue;
-    const sectionCount = entry.partSections[partNumber]?.size || 0;
-    const pathCount = entry.partPaths[partNumber] || 0;
-    const distribution = getPartDivDistribution(entry, partNumber, sectionToDivision);
-    const spread = entropy(distribution);
-    const score = compositeScore(spread, divs.size, sectionCount, pathCount);
-    const item = { title, count: divs.size, sections: sectionCount, paths: pathCount, _score: score };
-    if (hasAuthor && entry.author) item.author = entry.author;
-    items.push(item);
+  const partData = navigation.parts.find(p => p.partNumber === partNumber);
+  const totalDivisions = partData?.divisions.length || 1;
+  const totalSectionsInPart = partData?.divisions.reduce((sum, d) => sum + d.sections.length, 0) || 1;
+
+  // Progressive thresholds: try strict first, relax if too few results
+  const thresholds = [
+    { divPct: 0.5, secPct: 0.2, relCutoff: 30 },
+    { divPct: 0.4, secPct: 0.15, relCutoff: 25 },
+    { divPct: 0.3, secPct: 0.1, relCutoff: 20 },
+    { divPct: 0, secPct: 0, relCutoff: 0 },  // fallback: any item in 2+ divisions
+  ];
+
+  for (const { divPct, secPct, relCutoff } of thresholds) {
+    const minDivs = Math.max(2, Math.ceil(totalDivisions * divPct));
+    const minSections = Math.max(2, Math.ceil(totalSectionsInPart * secPct));
+    const items = [];
+
+    for (const [title, entry] of index) {
+      const divs = entry.divisions[partNumber];
+      if (!divs || divs.size < minDivs) continue;
+      const secCount = entry.partSections[partNumber]?.size || 0;
+      if (secCount < minSections) continue;
+      const sectionCount = secCount;
+      const pathCount = entry.partPaths[partNumber] || 0;
+      const distribution = getPartDivDistribution(entry, partNumber, sectionToDivision);
+      const spread = entropy(distribution);
+      const score = compositeScore(spread, divs.size, sectionCount, pathCount);
+      const item = { title, count: divs.size, sections: sectionCount, paths: pathCount, _score: score };
+      if (hasAuthor && entry.author) item.author = entry.author;
+      items.push(item);
+    }
+
+    items.sort((a, b) => b._score - a._score || a.title.localeCompare(b.title));
+    const maxScore = items.length > 0 ? items[0]._score : 1;
+    const result = items
+      .map(({ _score, ...rest }) => ({ ...rest, relevance: Math.round((_score / maxScore) * 100) }))
+      .filter(item => item.relevance >= relCutoff);
+
+    if (result.length >= MIN_RESULTS) return result;
   }
-  items.sort((a, b) => b._score - a._score || a.title.localeCompare(b.title));
-  // Normalise scores to 0-100 relative to the top item
-  const maxScore = items.length > 0 ? items[0]._score : 1;
-  return items.map(({ _score, ...rest }) => ({
-    ...rest,
-    relevance: Math.round((_score / maxScore) * 100),
-  }));
+
+  // Absolute fallback (shouldn't reach here)
+  return [];
 }
 
-// Division-level: items appearing in 2+ sections within the division
-// Ranked by: entropy of path distribution across sections (primary),
-// coverage ratio (secondary), section count (tertiary), paths (quaternary)
-// Outputs a normalised relevance score (0-100) for bar display
+// Division-level: progressively relaxes thresholds to ensure at least MIN_RESULTS items.
+// Ranked by: entropy of path distribution × coverage ratio, then section count, paths.
 function divItems(index, divisionId, hasAuthor) {
   const totalSections = divisionSectionCount[divisionId] || 1;
-  const items = [];
-  for (const [title, entry] of index) {
-    const secs = entry.divSections[divisionId];
-    if (!secs || secs.size < 2) continue;
-    const pathCount = entry.divPaths[divisionId] || 0;
-    // Entropy of path distribution across sections
-    const sectionPathCounts = entry.divSectionPaths?.[divisionId]
-      ? Object.values(entry.divSectionPaths[divisionId])
-      : Array.from(secs).map(() => 1);
-    const spread = entropy(sectionPathCounts);
-    // Coverage ratio: what fraction of the division's sections does this item appear in
-    const coverageRatio = secs.size / totalSections;
-    const score = spread * 10000 + coverageRatio * 5000 + secs.size * 1000 + pathCount;
-    const item = { title, count: secs.size, paths: pathCount, _score: score };
-    if (hasAuthor && entry.author) item.author = entry.author;
-    items.push(item);
+
+  const thresholds = [
+    { secPct: 0.2, relCutoff: 30, minSecs: 2 },
+    { secPct: 0.15, relCutoff: 20, minSecs: 2 },
+    { secPct: 0, relCutoff: 0, minSecs: 2 },
+    { secPct: 0, relCutoff: 0, minSecs: 1 },  // ultimate fallback: items in any section
+  ];
+
+  for (const t of thresholds) {
+    const minSecs = Math.max(t.minSecs, Math.ceil(totalSections * t.secPct));
+    const items = [];
+
+    for (const [title, entry] of index) {
+      const secs = entry.divSections[divisionId];
+      if (!secs || secs.size < minSecs) continue;
+      const pathCount = entry.divPaths[divisionId] || 0;
+      const sectionPathCounts = entry.divSectionPaths?.[divisionId]
+        ? Object.values(entry.divSectionPaths[divisionId])
+        : Array.from(secs).map(() => 1);
+      const spread = entropy(sectionPathCounts);
+      const coverageRatio = secs.size / totalSections;
+      const score = spread * 10000 + coverageRatio * 5000 + secs.size * 1000 + pathCount;
+      const item = { title, count: secs.size, paths: pathCount, _score: score };
+      if (hasAuthor && entry.author) item.author = entry.author;
+      items.push(item);
+    }
+
+    items.sort((a, b) => b._score - a._score || a.title.localeCompare(b.title));
+    const maxScore = items.length > 0 ? items[0]._score : 1;
+    const result = items
+      .map(({ _score, ...rest }) => ({ ...rest, relevance: Math.round((_score / maxScore) * 100) }))
+      .filter(item => item.relevance >= t.relCutoff);
+
+    if (result.length >= MIN_RESULTS) return result;
   }
-  items.sort((a, b) => b._score - a._score || a.title.localeCompare(b.title));
-  const maxScore = items.length > 0 ? items[0]._score : 1;
-  return items.map(({ _score, ...rest }) => ({
-    ...rest,
-    relevance: Math.round((_score / maxScore) * 100),
-  }));
+
+  return [];
 }
 
 // Write per-part files

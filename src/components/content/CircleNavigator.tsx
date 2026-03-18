@@ -51,6 +51,7 @@ export interface BridgeItem {
   a?: string;  // author (VSI only)
   ca: number;  // section count in lower-numbered part
   cb: number;  // section count in higher-numbered part
+  r?: number;  // precomputed relevance percentage (0-100)
 }
 
 export interface BridgePair {
@@ -1726,9 +1727,10 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                 const bridgeWiki = bridge.wiki || [];
                 const bridgeMacro = bridge.macro || [];
                 if (bridgeVsi.length === 0 && bridgeWiki.length === 0 && bridgeMacro.length === 0) return null;
-                const maxVsiTotal = bridgeVsi.length > 0 ? bridgeVsi[0].ca + bridgeVsi[0].cb : 1;
-                const maxWikiTotal = bridgeWiki.length > 0 ? bridgeWiki[0].ca + bridgeWiki[0].cb : 1;
-                const maxMacroTotal = bridgeMacro.length > 0 ? bridgeMacro[0].ca + bridgeMacro[0].cb : 1;
+                // maxTotal is used for the two-color bar proportions (not relevance)
+                const maxVsiTotal = bridgeVsi.length > 0 ? Math.max(...bridgeVsi.map(v => v.ca + v.cb)) : 1;
+                const maxWikiTotal = bridgeWiki.length > 0 ? Math.max(...bridgeWiki.map(v => v.ca + v.cb)) : 1;
+                const maxMacroTotal = bridgeMacro.length > 0 ? Math.max(...bridgeMacro.map(v => v.ca + v.cb)) : 1;
                 return (
                   <div class="mt-3 border-t border-slate-200 pt-3">
                     <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
@@ -1767,10 +1769,11 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                           {section.items.map((item) => {
                             const centerCount = isFlipped ? item.cb : item.ca;
                             const topCount = isFlipped ? item.ca : item.cb;
+                            const relevancePct = (item as any).r ?? Math.round(((centerCount + topCount) / section.maxTotal) * 100);
                             const total = centerCount + topCount;
-                            const relevancePct = Math.round((total / section.maxTotal) * 100);
-                            const centerPct = Math.round((centerCount / section.maxTotal) * 100);
-                            const topPct = Math.round((topCount / section.maxTotal) * 100);
+                            const scale = relevancePct / 100;
+                            const centerPct = total > 0 ? Math.round((centerCount / total) * scale * 100) : 0;
+                            const topPct = total > 0 ? Math.round((topCount / total) * scale * 100) : 0;
                             const checkKey = section.getCheckKey(item);
                             const isChecked = Boolean(checklistState[checkKey]);
                             const whyLabel = section.type === 'vsi' ? 'Why this book?' : 'Why this article?';
@@ -1784,7 +1787,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                             return (
                               <div
                                 key={item.t}
-                                class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-green-200 bg-green-50/50' : 'border-gray-200'}`}
+                                class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-slate-300 bg-slate-200/70 opacity-50' : 'border-gray-200'}`}
                               >
                                 <div class="mb-2 flex items-start justify-between gap-3">
                                   <div class="min-w-0">

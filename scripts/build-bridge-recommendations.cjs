@@ -127,38 +127,27 @@ for (let i = 0; i < partNumbers.length; i++) {
     const b = partNumbers[j];
     const key = getConnectionKey(a, b);
 
-    // Find VSIs in both parts
-    const sharedVsi = [];
-    for (const [title, entry] of vsiIndex) {
-      const ca = entry.parts[a] || 0;
-      const cb = entry.parts[b] || 0;
-      if (ca > 0 && cb > 0) {
-        sharedVsi.push({ t: title, a: entry.author, ca, cb });
+    function collectAndRank(index, getTitle, getAuthor) {
+      const items = [];
+      for (const [title, entry] of index) {
+        const ca = entry.parts[a] || 0;
+        const cb = entry.parts[b] || 0;
+        if (ca > 0 && cb > 0) {
+          const item = { t: getTitle(title, entry), ca, cb, _score: bridgeScore(ca, cb) };
+          if (getAuthor) { const author = getAuthor(title, entry); if (author) item.a = author; }
+          items.push(item);
+        }
       }
+      items.sort((x, y) => y._score - x._score || x.t.localeCompare(y.t));
+      const maxScore = items.length > 0 ? items[0]._score : 1;
+      return items
+        .map(({ _score, ...rest }) => ({ ...rest, r: Math.round((_score / maxScore) * 100) }))
+        .filter(item => item.r >= 30);
     }
-    sharedVsi.sort((x, y) => bridgeScore(y.ca, y.cb) - bridgeScore(x.ca, x.cb) || x.t.localeCompare(y.t));
 
-    // Find Wikipedia articles in both parts
-    const sharedWiki = [];
-    for (const [title, entry] of wikiIndex) {
-      const ca = entry.parts[a] || 0;
-      const cb = entry.parts[b] || 0;
-      if (ca > 0 && cb > 0) {
-        sharedWiki.push({ t: title, ca, cb });
-      }
-    }
-    sharedWiki.sort((x, y) => bridgeScore(y.ca, y.cb) - bridgeScore(x.ca, x.cb) || x.t.localeCompare(y.t));
-
-    // Find Macropaedia articles in both parts
-    const sharedMacro = [];
-    for (const [title, entry] of macroIndex) {
-      const ca = entry.parts[a] || 0;
-      const cb = entry.parts[b] || 0;
-      if (ca > 0 && cb > 0) {
-        sharedMacro.push({ t: title, ca, cb });
-      }
-    }
-    sharedMacro.sort((x, y) => bridgeScore(y.ca, y.cb) - bridgeScore(x.ca, x.cb) || x.t.localeCompare(y.t));
+    const sharedVsi = collectAndRank(vsiIndex, (t) => t, (t, e) => e.author);
+    const sharedWiki = collectAndRank(wikiIndex, (t) => t, null);
+    const sharedMacro = collectAndRank(macroIndex, (t) => t, null);
 
     if (sharedVsi.length > 0 || sharedWiki.length > 0 || sharedMacro.length > 0) {
       result[key] = {

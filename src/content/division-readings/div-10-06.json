@@ -1,4 +1,405 @@
 {
   "divisionId": "10-06",
-  "readings": {}
+  "readings": {
+    "vsi": [
+      {
+        "title": "Photography",
+        "count": 1,
+        "paths": 3,
+        "author": "Steven Edwards",
+        "relevance": 100
+      },
+      {
+        "title": "Computer Science",
+        "count": 1,
+        "paths": 2,
+        "author": "Subrata Dasgupta",
+        "relevance": 100
+      },
+      {
+        "title": "Ecology",
+        "count": 1,
+        "paths": 2,
+        "author": "Jaboury Ghazoul",
+        "relevance": 100
+      },
+      {
+        "title": "Garden History",
+        "count": 1,
+        "paths": 2,
+        "author": "Gordon Campbell",
+        "relevance": 100
+      },
+      {
+        "title": "Intellectual property",
+        "count": 1,
+        "paths": 2,
+        "author": "Siva Vaidhyanathan",
+        "relevance": 100
+      },
+      {
+        "title": "Music and Technology",
+        "count": 1,
+        "paths": 2,
+        "author": "Mark Katz",
+        "relevance": 100
+      },
+      {
+        "title": "Oral History",
+        "count": 1,
+        "paths": 2,
+        "author": "Douglas A Boyd",
+        "relevance": 100
+      },
+      {
+        "title": "Reading",
+        "count": 1,
+        "paths": 2,
+        "author": "Belinda Jack",
+        "relevance": 100
+      },
+      {
+        "title": "The Computer",
+        "count": 1,
+        "paths": 2,
+        "author": "Darrel Ince",
+        "relevance": 100
+      },
+      {
+        "title": "The History of Cinema",
+        "count": 1,
+        "paths": 2,
+        "author": "Geoffrey Nowell-Smith",
+        "relevance": 100
+      },
+      {
+        "title": "Archaeology",
+        "count": 1,
+        "paths": 1,
+        "author": "Paul Bahn",
+        "relevance": 100
+      },
+      {
+        "title": "Art history",
+        "count": 1,
+        "paths": 1,
+        "author": "Dana Arnold",
+        "relevance": 100
+      },
+      {
+        "title": "Big Data",
+        "count": 1,
+        "paths": 1,
+        "author": "Dawn E. Holmes",
+        "relevance": 100
+      },
+      {
+        "title": "Biodiversity Conservation",
+        "count": 1,
+        "paths": 1,
+        "author": "David W. Macdonald",
+        "relevance": 100
+      },
+      {
+        "title": "Contemporary art",
+        "count": 1,
+        "paths": 1,
+        "author": "Julian Stallabrass",
+        "relevance": 100
+      },
+      {
+        "title": "Cryptography",
+        "count": 1,
+        "paths": 1,
+        "author": "Fred Piper, Sean Murphy",
+        "relevance": 100
+      },
+      {
+        "title": "Dictionaries",
+        "count": 1,
+        "paths": 1,
+        "author": "Lynda Mugglestone",
+        "relevance": 100
+      },
+      {
+        "title": "Documentary film",
+        "count": 1,
+        "paths": 1,
+        "author": "Patricia Aufderheide",
+        "relevance": 100
+      },
+      {
+        "title": "Education",
+        "count": 1,
+        "paths": 1,
+        "author": "Gary Thomas",
+        "relevance": 100
+      },
+      {
+        "title": "Geography",
+        "count": 1,
+        "paths": 1,
+        "author": "John A. Matthews, David T. Herbert",
+        "relevance": 100
+      },
+      {
+        "title": "Hieroglyphs",
+        "count": 1,
+        "paths": 1,
+        "author": "Penelope Wilson",
+        "relevance": 100
+      },
+      {
+        "title": "Indian Cinema",
+        "count": 1,
+        "paths": 1,
+        "author": "Ashish Rajadhyaska",
+        "relevance": 100
+      },
+      {
+        "title": "Information",
+        "count": 1,
+        "paths": 1,
+        "author": "Luciano Floridi",
+        "relevance": 100
+      },
+      {
+        "title": "Innovation",
+        "count": 1,
+        "paths": 1,
+        "author": "Mark Dodgson, David Gann",
+        "relevance": 100
+      },
+      {
+        "title": "Journalism",
+        "count": 1,
+        "paths": 1,
+        "author": "Ian Hargreaves",
+        "relevance": 100
+      },
+      {
+        "title": "Modern art",
+        "count": 1,
+        "paths": 1,
+        "author": "David Cottington",
+        "relevance": 100
+      },
+      {
+        "title": "Navigation",
+        "count": 1,
+        "paths": 1,
+        "author": "Jim Bennett",
+        "relevance": 100
+      },
+      {
+        "title": "Surveillance",
+        "count": 1,
+        "paths": 1,
+        "author": "David Lyon",
+        "relevance": 100
+      },
+      {
+        "title": "Telescopes",
+        "count": 1,
+        "paths": 1,
+        "author": "Geoffrey Cottrell",
+        "relevance": 100
+      },
+      {
+        "title": "The History of Astronomy",
+        "count": 1,
+        "paths": 1,
+        "author": "Michael Hoskin",
+        "relevance": 100
+      },
+      {
+        "title": "The History of Computing",
+        "count": 1,
+        "paths": 1,
+        "author": "Doron Swade",
+        "relevance": 100
+      },
+      {
+        "title": "Typography",
+        "count": 1,
+        "paths": 1,
+        "author": "Paul Luna",
+        "relevance": 100
+      },
+      {
+        "title": "Universities and Colleges",
+        "count": 1,
+        "paths": 1,
+        "author": "David Palfreyman, Paul Temple",
+        "relevance": 100
+      },
+      {
+        "title": "Writing and Script",
+        "count": 1,
+        "paths": 1,
+        "author": "Andrew Robinson",
+        "relevance": 100
+      }
+    ],
+    "wiki": [
+      {
+        "title": "Museum",
+        "count": 1,
+        "paths": 9,
+        "relevance": 100
+      },
+      {
+        "title": "Publishing",
+        "count": 1,
+        "paths": 6,
+        "relevance": 100
+      },
+      {
+        "title": "Library",
+        "count": 1,
+        "paths": 4,
+        "relevance": 100
+      },
+      {
+        "title": "Mass media",
+        "count": 1,
+        "paths": 4,
+        "relevance": 100
+      },
+      {
+        "title": "Age of Enlightenment",
+        "count": 1,
+        "paths": 3,
+        "relevance": 100
+      },
+      {
+        "title": "Book",
+        "count": 1,
+        "paths": 3,
+        "relevance": 100
+      },
+      {
+        "title": "Broadcasting",
+        "count": 1,
+        "paths": 3,
+        "relevance": 100
+      },
+      {
+        "title": "Computer",
+        "count": 1,
+        "paths": 3,
+        "relevance": 100
+      },
+      {
+        "title": "Johannes Gutenberg",
+        "count": 1,
+        "paths": 3,
+        "relevance": 100
+      },
+      {
+        "title": "Literature",
+        "count": 1,
+        "paths": 3,
+        "relevance": 100
+      },
+      {
+        "title": "News",
+        "count": 1,
+        "paths": 3,
+        "relevance": 100
+      },
+      {
+        "title": "Artificial intelligence",
+        "count": 1,
+        "paths": 2,
+        "relevance": 100
+      },
+      {
+        "title": "History of science",
+        "count": 1,
+        "paths": 2,
+        "relevance": 100
+      },
+      {
+        "title": "History of technology",
+        "count": 1,
+        "paths": 2,
+        "relevance": 100
+      },
+      {
+        "title": "Oral tradition",
+        "count": 1,
+        "paths": 2,
+        "relevance": 100
+      },
+      {
+        "title": "Research",
+        "count": 1,
+        "paths": 2,
+        "relevance": 100
+      },
+      {
+        "title": "Science",
+        "count": 1,
+        "paths": 2,
+        "relevance": 100
+      },
+      {
+        "title": "Education",
+        "count": 1,
+        "paths": 1,
+        "relevance": 100
+      },
+      {
+        "title": "Islamic Golden Age",
+        "count": 1,
+        "paths": 1,
+        "relevance": 100
+      },
+      {
+        "title": "Paper",
+        "count": 1,
+        "paths": 1,
+        "relevance": 100
+      },
+      {
+        "title": "Shen Kuo",
+        "count": 1,
+        "paths": 1,
+        "relevance": 100
+      }
+    ],
+    "macro": [
+      {
+        "title": "Broadcasting",
+        "count": 1,
+        "paths": 1,
+        "relevance": 100
+      },
+      {
+        "title": "Encyclopaedias and Dictionaries",
+        "count": 1,
+        "paths": 1,
+        "relevance": 100
+      },
+      {
+        "title": "Libraries",
+        "count": 1,
+        "paths": 1,
+        "relevance": 100
+      },
+      {
+        "title": "Museums",
+        "count": 1,
+        "paths": 1,
+        "relevance": 100
+      },
+      {
+        "title": "Publishing",
+        "count": 1,
+        "paths": 1,
+        "relevance": 100
+      }
+    ]
+  }
 }
