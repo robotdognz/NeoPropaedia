@@ -17,8 +17,14 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "Europe before the Iron Age , a. Spread of Neolithic farming communities throughout all of Europe by c. 2000 bc",
+          "text": "Europe before the Iron Age",
           "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Spread of Neolithic farming communities throughout all of Europe by c. 2000 bc",
+              "children": []
+            },
             {
               "level": "b",
               "levelType": "lowercase",
@@ -39,7 +45,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Conjectured Etruscan origins; Etruscan language and writing; cities; government and society; art and religion; maritime expansion; foreign relations with the Greeks, Carthaginians, and other Italic peoples; decline after c. 500 bc and eventual Roman conquest in the mid-3rd century",
                   "children": []
                 },
@@ -64,7 +70,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Celts: the Hallstatt Period (7th-6th centuries bc); Celtic occupation of Europe from the Danube to the Iberian Peninsula and the British Isles by c. 500 bc; Celtic penetration of Italy, the Balkan Peninsula, and Anatolia during the La Tene period (after c. 500 bc); subjugation in Gaul by Rome by 50 bc and later by the Germans by the 5th century ad; Celtic art, religion, and social and political organization",
                   "children": []
                 },
@@ -83,7 +89,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Cimmerians: conjectured origins; southward migration, under Scythian pressure, from north of the Caucasus into Southwest Asia in the 8th and 7th centuries bc",
                   "children": []
                 },
@@ -134,7 +140,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "General trends in the poleis: displacement of monarchy by aristocracy, development of a money economy, socioeconomic crises and the rise and fall of tyranny, the colonization movement, relations among the poleis (e.g., leagues, wars)",
                   "children": []
                 },
@@ -155,18 +161,17 @@
                   "levelType": "roman",
                   "text": "The Greek islands: the Cyclades, Sporades, Crete, Cyprus, and the Ionian Islands",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "The Greek colonies and emporia in the West and Africa: southern Italy and Sicily (e.g., Cumae, Syracuse), Gaul and the Iberian Peninsula (e.g., Massilia), Cyrene and Naukratis",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "The Greek colonies and emporia in the West and Africa: southern Italy and Sicily (e.g., Cumae, Syracuse), Gaul and the Iberian Peninsula (e.g., Massilia), Cyrene and Naukratis",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
-                  "text": "The Greeks in the North: Chalcidice, Thrace, Propontis {e.g., Byzantium, Abydos, Lampsacus), and Pontus {e.g., Black Sea region, Sinope, and Trapezus)",
+                  "text": "The Greeks in the North: Chalcidice, Thrace, Propontis (e.g., Byzantium, Abydos, Lampsacus), and Pontus (e.g., Black Sea region, Sinope, and Trapezus)",
                   "children": []
                 },
                 {
@@ -197,7 +202,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Delian League and the Athenian Empire",
                   "children": []
                 },
@@ -224,7 +229,7 @@
             {
               "level": "c",
               "levelType": "lowercase",
-              "text": "The Peloponnesian War (431-404 bc): the war to the Peace of Nicias (421), renewal of the war and the defeat of Athens, intellectual and political changes at Athens {e.g., oligarchic revolution, the Sophists and Socrates), Thucydides' account of the war",
+              "text": "The Peloponnesian War (431-404 bc): the war to the Peace of Nicias (421), renewal of the war and the defeat of Athens, intellectual and political changes at Athens (e.g., oligarchic revolution, the Sophists and Socrates), Thucydides' account of the war",
               "children": []
             },
             {
@@ -284,7 +289,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Ptolemaic dynasty: dynastic strife and the end of the dynasty with the death of Cleopatra (30 bc)",
                   "children": []
                 },
@@ -348,7 +353,13 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "Conflicts between the Greek leagues and the Antigonids in the 3rd century bc ' c. The Celtic migrations: expansion into the Iberian Peninsula, the British Isles, and Rome and southern Italy; later expansion into central Europe, the Carpathians, and the Balkans",
+              "text": "Conflicts between the Greek leagues and the Antigonids in the 3rd century bc",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "The Celtic migrations: expansion into the Iberian Peninsula, the British Isles, and Rome and southern Italy; later expansion into central Europe, the Carpathians, and the Balkans",
               "children": []
             },
             {
@@ -362,8 +373,14 @@
         {
           "level": "3",
           "levelType": "numeric",
-          "text": "Hellenistic political, social, economic, and cultural institutions a, Hellenistic monarchy and royal administration",
+          "text": "Hellenistic political, social, economic, and cultural institutions",
           "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Hellenistic monarchy and royal administration",
+              "children": []
+            },
             {
               "level": "b",
               "levelType": "lowercase",
@@ -441,7 +458,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The First Punic War (264-241 bc) and its aftermath: the emergence of Roman naval power and acquisition of Sicily (24 1 bc), later annexation of Corsica and Sardinia (238 bc)",
                   "children": []
                 },
@@ -466,7 +483,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Establishment of a Roman protectorate over Greece after the Second Macedonian War (200-196 bc), the conquest of Macedonia and Illyricum (168 bc), the reduction of Rhodes, Roman exclusion of Seleucid power from the Aegean",
                   "children": []
                 },
@@ -528,7 +545,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Pompey's early career, revolts against Roman rule, Pompey's alliance with Crassus and repeal of the Sullan system, his extraordinary commands",
                   "children": []
                 },
@@ -684,7 +701,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Diocletian's (284-305) fundamental political and economic measures: persecution of Christians, struggle for power",
                   "children": []
                 },
@@ -703,7 +720,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The rule of Constantine's sons (337-361): renewed wars with Sasanid Persia and increased penetration of the empire by the Germans",
                   "children": []
                 },
@@ -720,14 +737,14 @@
                   "children": []
                 }
               ]
+            },
+            {
+              "level": "g",
+              "levelType": "lowercase",
+              "text": "The provinces under the later empire and the eclipse of the empire in the West: Germanic hegemony and the invasions by other peoples",
+              "children": []
             }
           ]
-        },
-        {
-          "level": "g",
-          "levelType": "lowercase",
-          "text": "The provinces under the later empire and the eclipse of the empire in the West: Germanic hegemony and the invasions by other peoples",
-          "children": []
         }
       ]
     }

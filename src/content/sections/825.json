@@ -79,8 +79,14 @@
         {
           "level": "1",
           "levelType": "numeric",
-          "text": "History of Confucianism , a. Background in the institutions of the predynastic sage-emperors and the founders of the first three dynasties",
+          "text": "History of Confucianism",
           "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Background in the institutions of the predynastic sage-emperors and the founders of the first three dynasties",
+              "children": []
+            },
             {
               "level": "b",
               "levelType": "lowercase",
@@ -114,7 +120,7 @@
             {
               "level": "g",
               "levelType": "lowercase",
-              "text": "The emergence and development of Neo-Confucianism (1 lth-20th century): metaphysical and humanistic emphases, the teaching of Chu Hsi, the development of Neo-Confucian schools",
+              "text": "The emergence and development of Neo-Confucianism (11th-20th century): metaphysical and humanistic emphases, the teaching of Chu Hsi, the development of Neo-Confucian schools",
               "children": []
             },
             {
@@ -252,7 +258,7 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "Early historic and medieval periods (6th-16th century): the introduction of Buddhism, the impact of Chinese influences on Shintd, other developments",
+              "text": "Early historic and medieval periods (6th-16th century): the introduction of Buddhism, the impact of Chinese influences on Shinto, other developments",
               "children": []
             },
             {
@@ -277,7 +283,7 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "History of Shinto [see E.I., above]",
+              "text": "History of Shinto [see E.1., above]",
               "children": []
             },
             {

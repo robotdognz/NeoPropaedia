@@ -100,7 +100,7 @@
     {
       "level": "B",
       "levelType": "major",
-      "text": "The Galaxy: the Milky Way system *",
+      "text": "The Galaxy: the Milky Way system",
       "children": [
         {
           "level": "1",
@@ -168,7 +168,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Grains of interstellar dust",
                   "children": []
                 },
@@ -411,7 +411,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Pulsating stars; e.g., Cepheid, RR Lyrae, and Beta Canis Majoris variables",
                   "children": []
                 },
@@ -481,7 +481,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Formation of a protostar by gravitational contraction",
                   "children": []
                 },

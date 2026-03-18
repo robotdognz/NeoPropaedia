@@ -12,7 +12,7 @@
     {
       "level": "B",
       "levelType": "major",
-      "text": "The kinds of decorative arts and types of decorative objects classihed by the materials and methods used to produce or decorate them, or both",
+      "text": "The kinds of decorative arts and types of decorative objects classified by the materials and methods used to produce or decorate them, or both",
       "children": [
         {
           "level": "1",
@@ -212,7 +212,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Ceilings",
                   "children": []
                 },
@@ -233,14 +233,13 @@
                   "levelType": "roman",
                   "text": "Walls; e.g., molding, paneling, wallpaper",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Windows and doors",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Windows and doors",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -271,7 +270,7 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "Printing arts: typography and printing design, illustration, bookbinding [for printmaking, see 628. C.]",
+              "text": "Printing arts: typography and printing design, illustration, bookbinding [for printmaking, see 628.C.]",
               "children": []
             },
             {

@@ -64,7 +64,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Successive presidential governments in the 1920s, Ubico's dictatorship (1931-44), social reforms of Arevalo's regime (1945-51)",
                   "children": []
                 },
@@ -83,6 +83,12 @@
               ]
             },
             {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Honduras since 1920: political unrest in the 1920s; Carias Andino's dictatorship (1932-49); administrations of Galvez (1949-54), Lozano Diaz (1954-56), Villeda Morales (1957-63), and successive military governments; return to civilian rule in 1982; involvement in regional conflicts",
+              "children": []
+            },
+            {
               "level": "c",
               "levelType": "lowercase",
               "text": "El Salvador since 1920: military dictatorships to 1944, interim governments (1945-48), junta rule and PRUD domination (1948-60), continued military government thereafter, civil war from the 1970s and U.S. involvement, civilian presidency of Duarte (1984-89) and election of Cristiani (1989), accord (1992) ending long period of guerrilla warfare",
@@ -91,7 +97,7 @@
             {
               "level": "d",
               "levelType": "lowercase",
-              "text": "Nicaragua since 1920: continued U.S. military intervention until 1933, Sacasa's regime \u00ab (1933-36), Somoza family's dominance (1937-79), popular uprising and Sandimsta rule (1979-90), U.S. sponsorship of Contra insurgency (1980s), presidential elections of Ortega (1984), Chamorro (1990), Aleman (1996), and Bolanos (2001)",
+              "text": "Nicaragua since 1920: continued U.S. military intervention until 1933, Sacasa's regime (1933-36), Somoza family's dominance (1937-79), popular uprising and Sandimsta rule (1979-90), U.S. sponsorship of Contra insurgency (1980s), presidential elections of Ortega (1984), Chamorro (1990), Aleman (1996), and Bolanos (2001)",
               "children": []
             },
             {
@@ -138,7 +144,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Fulgencio Batista's dictatorships (1933-44; 1952-59), growth of the military and middle classes, foreign control of the economy and widespread rural poverty",
                   "children": []
                 },

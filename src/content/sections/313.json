@@ -23,7 +23,7 @@
         {
           "level": "1",
           "levelType": "numeric",
-          "text": "Algae *",
+          "text": "Algae",
           "children": []
         },
         {
@@ -345,7 +345,13 @@
         {
           "level": "10",
           "levelType": "numeric",
-          "text": "Priapulids 1 1. Annelid worms",
+          "text": "Priapulids",
+          "children": []
+        },
+        {
+          "level": "11",
+          "levelType": "numeric",
+          "text": "Annelid worms",
           "children": [
             {
               "level": "a",
@@ -518,7 +524,13 @@
         {
           "level": "20",
           "levelType": "numeric",
-          "text": "Chaetognaths, or arrowworms 2 1. Echiurids, or spoonworms",
+          "text": "Chaetognaths, or arrowworms",
+          "children": []
+        },
+        {
+          "level": "21",
+          "levelType": "numeric",
+          "text": "Echiurids, or spoonworms",
           "children": []
         },
         {

@@ -38,7 +38,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Animation",
                   "children": []
                 },
@@ -156,7 +156,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Fixed objects; e.g., cave painting, mural painting",
                   "children": []
                 },
@@ -175,7 +175,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Representational painting; e.g., devotional painting, genre painting, landscape painting, narrative painting, portrait painting, still-life painting",
                   "children": []
                 },

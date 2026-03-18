@@ -57,7 +57,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Teotihuacan cultural and urban development, ceremonial architecture and pottery, the Zapotecs at Monte Alban",
                   "children": []
                 },
@@ -82,7 +82,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Urban settlements, temple-pyramids and palaces, Maya art, the calendar and writing system",
                   "children": []
                 },
@@ -106,15 +106,8 @@
         {
           "level": "1",
           "levelType": "numeric",
-          "text": "The rise and decline of the Toltec state in southern Mexico and the Yucatan Peninsula (c. 900-",
-          "children": [
-            {
-              "level": "c",
-              "levelType": "lowercase",
-              "text": "1200): secular and religious institutions, art and architecture, the legend of Quetzalcoatl, Toltec-Maya culture of Tollan (Tula) and Chichen-Itza",
-              "children": []
-            }
-          ]
+          "text": "The rise and decline of the Toltec state in southern Mexico and the Yucatan Peninsula (c. 900-1200): secular and religious institutions, art and architecture, the legend of Quetzalcoatl, Toltec-Maya culture of Tollan (Tula) and Chichen-Itza",
+          "children": []
         },
         {
           "level": "2",

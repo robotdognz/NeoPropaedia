@@ -75,7 +75,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The traditional dramatic forms or genres; e.g., tragedy, comedy [for these forms as literature, see 621.C.3.]",
                   "children": []
                 },
@@ -96,14 +96,14 @@
                   "levelType": "roman",
                   "text": "Puppet, marionette, and shadow plays and related forms",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Nondramatic theatrical production [see B.1.f., below]",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Nondramatic theatrical production [see B.l.f., below]",
-              "children": []
             },
             {
               "level": "b",
@@ -136,7 +136,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Circuses and carnivals",
                   "children": []
                 },

@@ -29,7 +29,7 @@
         {
           "level": "4",
           "levelType": "numeric",
-          "text": "The relation of music to other human activities ' [see also E.3., below)",
+          "text": "The relation of music to other human activities [see also E.3., below]",
           "children": []
         },
         {
@@ -48,13 +48,13 @@
         {
           "level": "1",
           "levelType": "numeric",
-          "text": "The physical aspects of musical sound: tone, movement, pitch, timbre [see C., below and 128.E.6.)",
+          "text": "The physical aspects of musical sound: tone, movement, pitch, timbre [see C., below and 128.E.6.]",
           "children": []
         },
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "The human voice: techniques, styles, and historical developments of the art of singing in Western and non- Western cultures",
+          "text": "The human voice: techniques, styles, and historical developments of the art of singing in Western and non-Western cultures",
           "children": []
         },
         {
@@ -224,7 +224,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Vocal music for solo performance; e.g., liturgical chant, secular song, lied, aria",
                   "children": []
                 },
@@ -262,7 +262,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Sonata",
                   "children": []
                 },
@@ -283,14 +283,14 @@
                   "levelType": "roman",
                   "text": "Variation forms; e.g., chaconne, passacaglia, variation set",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Fugue",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Fugue",
-              "children": []
             },
             {
               "level": "b",
@@ -299,7 +299,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "General considerations about jazz: its differentiation from and relation to folk music, popular music, and \"art\" music; its emphasis on the performer as creator; the importance of improvisation; its reflection of social and cultural forces",
                   "children": []
                 },
@@ -337,7 +337,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Opera",
                   "children": []
                 },
@@ -379,7 +379,7 @@
         {
           "level": "1",
           "levelType": "numeric",
-          "text": "Types of music reproduction; e.g., mechanical, magnetic, optical [see 735. F.]",
+          "text": "Types of music reproduction; e.g., mechanical, magnetic, optical [see 735.F.]",
           "children": []
         },
         {

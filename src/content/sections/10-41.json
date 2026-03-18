@@ -20,7 +20,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Near Eastern historiography",
                   "children": []
                 },
@@ -45,7 +45,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Western Christian historiography",
                   "children": []
                 },
@@ -64,8 +64,14 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Renaissance historiography; early modern historiography",
+                  "levelType": "roman",
+                  "text": "Renaissance historiography",
+                  "children": []
+                },
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Early modern historiography",
                   "children": []
                 },
                 {
@@ -89,7 +95,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Islamic historiography",
                   "children": []
                 },
@@ -179,14 +185,13 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Genealogy",
-              "children": [
-                {
-                  "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Geography",
-                  "children": []
-                }
-              ]
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Geography",
+              "children": []
             },
             {
               "level": "j",

@@ -61,7 +61,13 @@
         {
           "level": "4",
           "levelType": "numeric",
-          "text": "The Mongolian and Tungusic states from the 10th to the 13th century: the Liao (Khitan) empire and the later Chin (Juchen) state in North China and Manchuria (947-1125), the Western Liao (Kara khitai) of Turkistan (1124-1211) 5 The development of Afghanistan to c. 1700: rule by Achaemenians and Greeks to c. 1st century ad, various nomadic rulers, advent of Muslim control in the 7th century, Mongol conquest (1221), later rule by Timurids and Mughals",
+          "text": "The Mongolian and Tungusic states from the 10th to the 13th century: the Liao (Khitan) empire and the later Chin (Juchen) state in North China and Manchuria (947-1125), the Western Liao (Kara khitai) of Turkistan (1124-1211)",
+          "children": []
+        },
+        {
+          "level": "5",
+          "levelType": "numeric",
+          "text": "The development of Afghanistan to c. 1700: rule by Achaemenians and Greeks to c. 1st century ad, various nomadic rulers, advent of Muslim control in the 7th century, Mongol conquest (1221), later rule by Timurids and Mughals",
           "children": []
         }
       ]
@@ -104,7 +110,13 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "The Chagatai khanate (ulus) of Turkistan in the 13th and 14th centuries c Timur's (Tamerlane's) establishment of the Timurid dynasty (1370-1506): his capital at Samarkand; his conquests; Turkistan, Afghanistan, and Transoxania under his successors",
+              "text": "The Chagatai khanate (ulus) of Turkistan in the 13th and 14th centuries",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Timur's (Tamerlane's) establishment of the Timurid dynasty (1370-1506): his capital at Samarkand; his conquests; Turkistan, Afghanistan, and Transoxania under his successors",
               "children": []
             },
             {
@@ -136,7 +148,13 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "The legendary origins of the Tibetan people, consolidation of Tibet under Gnam-ri srong-btsan (c. ad 570-619), later rulers to the 9th century, introduction of Buddhism, cultural developments , b. Tibetan disunity from the 9th to the 14th century: eclipse and resurgence of Buddhism, conquest by Mongols, developments in literature and the visual arts",
+              "text": "The legendary origins of the Tibetan people, consolidation of Tibet under Gnam-ri srong-btsan (c. ad 570-619), later rulers to the 9th century, introduction of Buddhism, cultural developments",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Tibetan disunity from the 9th to the 14th century: eclipse and resurgence of Buddhism, conquest by Mongols, developments in literature and the visual arts",
               "children": []
             },
             {

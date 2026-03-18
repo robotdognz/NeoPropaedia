@@ -29,13 +29,13 @@
         {
           "level": "4",
           "levelType": "numeric",
-          "text": "Buddhism in Central Asia and China [see also 825. A.]",
+          "text": "Buddhism in Central Asia and China [see also 825.A.]",
           "children": []
         },
         {
           "level": "5",
           "levelType": "numeric",
-          "text": "Buddhism in Korea and Japan [see also 825. D. and E.]",
+          "text": "Buddhism in Korea and Japan [see also 825.D. and E.]",
           "children": []
         },
         {
@@ -47,7 +47,7 @@
         {
           "level": "7",
           "levelType": "numeric",
-          "text": "Buddhism in Ceylon (Sri Lanka) and Southeast Asia to the mid- 19th century",
+          "text": "Buddhism in Ceylon (Sri Lanka) and Southeast Asia to the mid-19th century",
           "children": []
         },
         {
@@ -143,7 +143,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Views of the nature of things: cosmology, the classification of dharmas",
                   "children": []
                 },
@@ -174,7 +174,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Views of the nature of absolute reality: the ultimate realization of the meditative quest",
                   "children": []
                 },
@@ -214,7 +214,7 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "Monastic institutions: the characteristics and role of the sahgha",
+              "text": "Monastic institutions: the characteristics and role of the sangha",
               "children": []
             },
             {

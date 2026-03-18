@@ -45,7 +45,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Initial phases of the revolt under Miranda and Bolivar (1811-14), military setbacks (1815)",
                   "children": []
                 },
@@ -251,7 +251,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "19th-century social and economic developments: growth of the sugar industry, the abolition of slavery (1886)",
                   "children": []
                 },
@@ -285,28 +285,29 @@
       "text": "The successor states of Gran Colombia to c. 1930",
       "children": [
         {
-          "level": "f",
-          "levelType": "lowercase",
+          "level": "1",
+          "levelType": "numeric",
           "text": "Venezuela from 1810 to 1935",
-          "children": []
-        },
-        {
-          "level": "a",
-          "levelType": "lowercase",
-          "text": "Venezuelan independence movement (1810-30), national development under Paez ( 1830-- 48), Conservative Party rule",
-          "children": []
-        },
-        {
-          "level": "b",
-          "levelType": "lowercase",
-          "text": "Monagas family regime (1848-58) and turmoil between Liberal and Conservative parties to 1870, regime of Guzman Blanco (1870-88)",
-          "children": []
-        },
-        {
-          "level": "c",
-          "levelType": "lowercase",
-          "text": "Political instability to 1892, Crespo's regime (1892-96), the Castro (1899-1908) and Gomez (1908-35) dictatorships",
-          "children": []
+          "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "Venezuelan independence movement (1810-30), national development under Paez (1830-48), Conservative Party rule",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Monagas family regime (1848-58) and turmoil between Liberal and Conservative parties to 1870, regime of Guzman Blanco (1870-88)",
+              "children": []
+            },
+            {
+              "level": "c",
+              "levelType": "lowercase",
+              "text": "Political instability to 1892, Crespo's regime (1892-96), the Castro (1899-1908) and Gomez (1908-35) dictatorships",
+              "children": []
+            }
+          ]
         },
         {
           "level": "2",
@@ -479,7 +480,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Dominance of Buenos Aires: interprovincial rivalries, presidency of Rivadavia (1826-27)",
                   "children": []
                 },
@@ -498,7 +499,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The constitution of 1853 and civil wars (1853-60), government under Mitre (1862-- 68) and his successors",
                   "children": []
                 },

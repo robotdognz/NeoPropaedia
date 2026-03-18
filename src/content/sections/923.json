@@ -44,7 +44,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Establishment of schools and universities",
                   "children": []
                 },
@@ -75,7 +75,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The two major powers, the Empire and the papacy; the relations between temporal and spiritual power",
                   "children": []
                 },
@@ -107,7 +107,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Church reform in the 10th and 11th centuries and the clash between the papacy and the emperors over lay investiture (at its height between the emperor Henry IV and Pope Gregory VII): the resulting incipient decline of German monarchical authority under the Salian emperors",
                   "children": []
                 },
@@ -132,8 +132,8 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Steady inroads of the German princes into German monarchical authority: colonization of Slavic territory, development of commercial centres {e.g., Liibeck), the reign of Frederick I Barbarossa and Frederick II, extinction of the Hohenstaufen dynasty and the Great Interregnum (1250-73), the election and reign of Rudolf of Habsburg",
+                  "levelType": "roman",
+                  "text": "Steady inroads of the German princes into German monarchical authority: colonization of Slavic territory, development of commercial centres (e.g., Lübeck), the reign of Frederick I Barbarossa and Frederick II, extinction of the Hohenstaufen dynasty and the Great Interregnum (1250-73), the election and reign of Rudolf of Habsburg",
                   "children": []
                 },
                 {
@@ -145,7 +145,7 @@
                 {
                   "level": "iii",
                   "levelType": "roman",
-                  "text": "The decline of German imperial control in northern Italy and the continued development of the communes {e.g., Milan, Pisa, Florence, Siena): their internal and external conflicts",
+                  "text": "The decline of German imperial control in northern Italy and the continued development of the communes (e.g., Milan, Pisa, Florence, Siena): their internal and external conflicts",
                   "children": []
                 },
                 {
@@ -170,7 +170,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Philip II Augustus (1180-1223): acquisition of territory and consolidation of the realm, royal administration, feudal policies",
                   "children": []
                 },
@@ -191,14 +191,14 @@
                   "levelType": "roman",
                   "text": "Foreign relations: conflict with the Holy Roman Empire under Philip II, the religious crusades of Louis IX, the wars of Philip IV",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Economy, society, and culture in the 13th century: increase in population, growth of towns and urban prosperity, rural life, religion, culture and learning",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Economy, society, and culture in the 13th century: increase in population, growth of towns and urban prosperity, rural life, religion, culture and learning",
-              "children": []
             },
             {
               "level": "b",
@@ -207,7 +207,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Secular and spiritual principalities",
                   "children": []
                 },
@@ -264,7 +264,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Church-state relations and the place of the clergy in the feudal structure, the Domesday survey",
                   "children": []
                 },
@@ -289,7 +289,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The reign of Henry II (1154-89): military and administrative reforms, Henry's conflict with the church and the struggle with Becket, the rebellions of Henry's sons",
                   "children": []
                 },
@@ -320,7 +320,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The unification of Scotland and the development of the monarchy",
                   "children": []
                 },
@@ -377,7 +377,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "German interference in Bohemia: attacks upon the position of the Prague princes by Frederick I Barbarossa, the Golden Bull of Sicily (1212)",
                   "children": []
                 },
@@ -409,7 +409,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Revival of Greek studies and the formation of Classical libraries in Italy: Humanism, relationship of Humanism to Christianity",
                   "children": []
                 },
@@ -472,7 +472,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Development of the individual states",
                   "children": []
                 },
@@ -491,7 +491,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Luxemburg dynasty (1310-1437): territorial expansion under Charles I, growth of the city of Prague, Wenceslas IV",
                   "children": []
                 },
@@ -541,7 +541,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Milan: the Visconti family, rule at home, expansion in northern Italy, Visconti attitudes toward the state",
                   "children": []
                 },
@@ -562,14 +562,14 @@
                   "levelType": "roman",
                   "text": "The Papal States: their locations and proprietors, breakdown of papal control during the Avignon papacy and the Great Schism (1378-1417)",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Naples, Sicily, and the other Italian states (e.g., Angevin rule in Naples until its union with Sicily in 1442 under Alfonso V of Aragon); Savoy; Genoa; Verona",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Naples, Sicily, and the other Italian states (e.g., Angevin rule in Naples until its union with Sicily in 1442 under Alfonso V of Aragon); Savoy; Genoa; Verona",
-              "children": []
             },
             {
               "level": "c",
@@ -578,7 +578,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The crisis of Florentine republicanism: the threat from Gian Galeazzo Visconti of Milan and his successors, Florentine historiography, rule by the Medici",
                   "children": []
                 },
@@ -616,7 +616,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Remote and proximate causes of the war: the problem of English lands in France, the problem of the French succession, the Flemish revolt",
                   "children": []
                 },
@@ -637,14 +637,14 @@
                   "levelType": "roman",
                   "text": "From the accession of Henry V (1413) to the siege of Orleans (1428-29): Charles VII (1422-61); France divided between the dauphin Charles, Philip the Good of Burgundy, and Henry V of England",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Recovery and reunification (1429-83) and the expulsion of the English: Joan of Arc and the stirring of French national feeling, reconquest of Maine and Normandy, conquest of Guyenne (1453), final settlement at Picquigny (1475)",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Recovery and reunification (1429-83) and the expulsion of the English: Joan of Arc and the stirring of French national feeling, reconquest of Maine and Normandy, conquest of Guyenne (1453), final settlement at Picquigny (1475)",
-              "children": []
             },
             {
               "level": "b",
@@ -672,7 +672,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Royal decline under Edward II (1307-27) and its restoration under Edward III (1327-77): the Hundred Years' War, domestic achievements, the crises of Edward III's later reign",
                   "children": []
                 },
@@ -734,14 +734,14 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The union of Aragon and Castile-Leon under Ferdinand and Isabella: strengthening of their positions vis-a-vis the nobility, the Inquisition and the treatment of Jews, conquest of Granada (1492) and acquisition of Naples (1503)",
                   "children": []
                 },
                 {
                   "level": "ii",
                   "levelType": "roman",
-                  "text": "Spanish explorations and territorial acquisitions: colonial policy in the New World, , the Atlantic trade",
+                  "text": "Spanish explorations and territorial acquisitions: colonial policy in the New World, the Atlantic trade",
                   "children": []
                 }
               ]

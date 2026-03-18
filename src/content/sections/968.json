@@ -143,8 +143,14 @@
     {
       "level": "D",
       "levelType": "major",
-      "text": "Ceylon under foreign rulers from c. 1505 to 1920 L Portuguese political and commercial activities in Ceylon (1505-1658): conflict with the Kandyan kingdom",
+      "text": "Ceylon under foreign rulers from c. 1505 to 1920",
       "children": [
+        {
+          "level": "1",
+          "levelType": "numeric",
+          "text": "Portuguese political and commercial activities in Ceylon (1505-1658): conflict with the Kandyan kingdom",
+          "children": []
+        },
         {
           "level": "2",
           "levelType": "numeric",

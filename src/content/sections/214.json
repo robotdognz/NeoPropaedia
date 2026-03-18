@@ -32,7 +32,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Native elements",
                   "children": []
                 },
@@ -53,14 +53,13 @@
                   "levelType": "roman",
                   "text": "Oxides and hydroxides",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Halides",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Halides",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -84,14 +83,20 @@
                   "levelType": "roman",
                   "text": "Sulfates",
                   "children": []
+                },
+                {
+                  "level": "x",
+                  "levelType": "roman",
+                  "text": "Phosphates, arsenates, and vanadates",
+                  "children": []
+                },
+                {
+                  "level": "xi",
+                  "levelType": "roman",
+                  "text": "Molybdates, tungstates, and chromates",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "x",
-              "levelType": "lowercase",
-              "text": "Phosphates, arsenates, and vanadates xi. Molybdates, tungstates, and chromates",
-              "children": []
             },
             {
               "level": "b",
@@ -100,7 +105,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Silicate structure and composition: the basic structural unit, the silicon-oxygen tetrahedron",
                   "children": []
                 },
@@ -121,14 +126,13 @@
                   "levelType": "roman",
                   "text": "Chain silicates",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Sheet silicates",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Sheet silicates",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -151,7 +155,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The olivines; e.g., forsterite, fayalite",
                   "children": []
                 },
@@ -172,14 +176,13 @@
                   "levelType": "roman",
                   "text": "The micas; e.g., muscovite, biotite",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "The feldspars; e.g., orthoclase, albite",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "The feldspars; e.g., orthoclase, albite",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -203,14 +206,20 @@
                   "levelType": "roman",
                   "text": "The carbonates; e.g., calcite, dolomite [see A.3.a.vi., above]",
                   "children": []
+                },
+                {
+                  "level": "x",
+                  "levelType": "roman",
+                  "text": "The garnets; e.g., almandine, pyrope",
+                  "children": []
+                },
+                {
+                  "level": "xi",
+                  "levelType": "roman",
+                  "text": "Other major rock-forming minerals; e.g., magnetite, pyrite",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "x",
-              "levelType": "lowercase",
-              "text": "The garnets; e.g., almandine, pyrope xi. Other major rock-forming minerals; e.g., magnetite, pyrite",
-              "children": []
             },
             {
               "level": "b",
@@ -219,7 +228,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "In igneous and metamorphic rocks",
                   "children": []
                 },
@@ -278,7 +287,7 @@
             {
               "level": "c",
               "levelType": "lowercase",
-              "text": "Formation of igneous rocks: magmas [see also 212. D. 4.]",
+              "text": "Formation of igneous rocks: magmas [see also 212.D.4.]",
               "children": []
             },
             {
@@ -294,7 +303,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The intrusive igneous rocks that result when magma cools and solidifies below the surface of the Earth; e.g., granite, gabbro, diorite",
                   "children": []
                 },
@@ -350,7 +359,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Conglomerates, breccias, and other heterogeneous clastic rocks (e.g., tillites)",
                   "children": []
                 },
@@ -371,14 +380,13 @@
                   "levelType": "roman",
                   "text": "Limestones and dolomites",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Siliceous rocks",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Siliceous rocks",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -501,19 +509,19 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "Coals [see also 724.B.l.b. and C.2.]",
+              "text": "Coals [see also 724.B.1.b. and C.2.]",
               "children": []
             },
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "Petroleum [see also 122.G.1.a. and 724.B.2. and C.1.]",
+              "text": "Petroleum [see also 122.G.1.a. and 724.B.2.and C.1.]",
               "children": []
             },
             {
               "level": "c",
               "levelType": "lowercase",
-              "text": "Tar sands and oil shales [see also 724.B.2. and C.1.]",
+              "text": "Tar sands and oil shales [see also 724.B.2.and C.1.]",
               "children": []
             },
             {
@@ -552,13 +560,13 @@
         {
           "level": "4",
           "levelType": "numeric",
-          "text": "Hydrosphere [see 222. B. and C.]",
+          "text": "Hydrosphere [see 222.B. and C.]",
           "children": []
         },
         {
           "level": "5",
           "levelType": "numeric",
-          "text": "Atmosphere [see 221. A.]",
+          "text": "Atmosphere [see 221.A.]",
           "children": []
         },
         {

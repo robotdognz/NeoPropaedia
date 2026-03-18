@@ -113,7 +113,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The establishment of Israel (1948) and resultant conflicts with the Arabs: immigration and politics, foreign aid and economic development, renewed hostilities with the Arab states in the Suez War (1956), the Six-Day War (1967) and the diplomatic stalemate, the war of October 1973, role in the Lebanese civil war, treaty with Egypt (1979), invasion of Lebanon (1982) and withdrawal (1985), Palestinian intifada (from 1987), * expansion of Jewish settlements in occupied territory and massive immigration of Soviet Jews, peace talks with Palestinians and Arab states (from 1992), extension of self-government to Palestinians in West Bank and Gaza Strip (from 1995)",
                   "children": []
                 },
@@ -302,7 +302,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Economic developments in French West Africa: Senegal, French Guinea, the Ivory Coast, French Sudan, Upper Volta",
                   "children": []
                 },
@@ -321,7 +321,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Emergence of African leaders: rise of a new class of educated Africans",
                   "children": []
                 },
@@ -366,7 +366,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The colonial economics: growth of export trade (cotton, cloves, coffee), extension of the railroads",
                   "children": []
                 },
@@ -391,14 +391,14 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Somalia: independence (1960), internal tensions and territorial disputes, conflict with Ethiopia, military takeover (1969) and regime of Siyad Barre, break with the Soviet Union (1977), war with Ethiopia (1977-78) and continued unrest in the Ogaden, influx of refugees, overthrow of Siyad (1991), clan-based civil war, famine and multinational intervention in the early 1990s, breakdown of central authority",
                   "children": []
                 },
                 {
                   "level": "ii",
                   "levelType": "roman",
-                  "text": "Economic cooperation among the formerly British East African nations: the East African Community and its end (1977) *",
+                  "text": "Economic cooperation among the formerly British East African nations: the East African Community and its end (1977)",
                   "children": []
                 },
                 {
@@ -412,14 +412,14 @@
                   "levelType": "roman",
                   "text": "Uganda: independence (1962) and economic growth, the Obote and Amin governments, reign of terror and economic decline, deposition of Amin (1979), reinstatement (1980) and overthrow (1985) of Obote, government of Museveni from 1986, constitution of 1995",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Kenya: independence (1963) and presidency of Kenyatta (1964-78), death of Kenyatta and succession of arap Moi (1978), establishment of one-party state (1982-1992), election of Kibaki to presidency (2002)",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Kenya: independence (1963) and presidency of Kenyatta (1964-78), death of Kenyatta and succession of arap Moi (1978), establishment of one-party state (1982-1992), election of Kibaki to presidency (2002)",
-              "children": []
             },
             {
               "level": "c",
@@ -441,7 +441,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Democratic Republic of the Congo (Republic of Zaire, 1971-97): the Congolese nationalist movement and independence (1960), secession of Katanga province and UN intervention (1960-64), regime of Mobutu Sese Seko (1965-97), civil strife",
                   "children": []
                 },
@@ -462,14 +462,14 @@
                   "levelType": "roman",
                   "text": "Gabon: independence (1960), subsequent domestic politics and foreign relations",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Burundi and Rwanda: independence (1962), warfare between Tutsi and Hutu",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Burundi and Rwanda: independence (1962), warfare between Tutsi and Hutu",
-              "children": []
             },
             {
               "level": "b",
@@ -491,7 +491,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Political and economic developments in white-settler-controlled Union of South Africa: the Hertzog administration (1924-33) and the Hertzog-Smuts coalition (1933-39), political disunity and Allied participation in World War II",
                   "children": []
                 },
@@ -516,7 +516,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Republic of South Africa (formerly the Union of South Africa): Afrikaner National Party administrations from 1948, government-sanctioned apartheid, establishment of Bantu Homelands (1959), antiapartheid movements and growing international isolation, Soweto riots (1976), constitutional reforms (1983), increasing political dissent, legalization of African National Congress (1990), repeal of major apartheid laws, establishment of black majority rule with victory of African National Congress in first all-race elections (1994)",
                   "children": []
                 },
@@ -537,20 +537,20 @@
                   "levelType": "roman",
                   "text": "British Central Africa: postwar economic development in Northern Rhodesia, Southern Rhodesia, and Nyasaland; the Federation of Rhodesia and Nyasaland (1953-63); rise of black nationalist movements; independence of Zambia and Malawi (1964), governments of Kaunda (1964-91) in Zambia and Banda (1964-94) in Malawi",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Zimbabwe (formerly Southern Rhodesia): Rhodesian Front governments of Ian Smith (1964-79), the Unilateral Declaration of Independence (UDI; 1965), civil war, establishment of Zimbabwe (1980), rule of Mugabe from 1980",
+                  "children": []
+                },
+                {
+                  "level": "vi",
+                  "levelType": "roman",
+                  "text": "Developments in the Portuguese colonies of Angola and Mozambique: economic advances, nationalist movements, and independence in the mid-1970s; civil war in Angola and intervention by South African and Cuban troops, prolonged guerrilla warfare in Angola and Mozambique in the 1980s; Mozambique-South Africa nonaggression pact (1984); short-lived peace agreements in Angola and withdrawal of Cuban troops (1991); multiparty Angolan elections (1992) and resumption of conflict; end of guerrilla war in Mozambique (1992)",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Zimbabwe (formerly Southern Rhodesia): Rhodesian Front governments of Ian Smith (1964-79), the Unilateral Declaration of Independence (UDI; 1965), civil war, establishment of Zimbabwe (1980), rule of Mugabe from 1980",
-              "children": []
-            },
-            {
-              "level": "vi",
-              "levelType": "lowercase",
-              "text": "Developments in the Portuguese colonies of Angola and Mozambique: economic advances, nationalist movements, and independence in the mid-1970s; civil war in Angola and intervention by South African and Cuban troops, prolonged guerrilla warfare in Angola and Mozambique in the 1980s; Mozambique-South Africa nonaggression pact (1984); short-lived peace agreements in Angola and withdrawal of Cuban troops (1991); multiparty Angolan elections (1992) and resumption of conflict; end of guerrilla war in Mozambique (1992)",
-              "children": []
             }
           ]
         }

@@ -132,7 +132,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Theism",
                   "children": []
                 },
@@ -179,7 +179,13 @@
         {
           "level": "7",
           "levelType": "numeric",
-          "text": "Eschatological theories 8., Doctrines of grace and salvation",
+          "text": "Eschatological theories",
+          "children": []
+        },
+        {
+          "level": "8",
+          "levelType": "numeric",
+          "text": "Doctrines of grace and salvation",
           "children": []
         },
         {
@@ -191,7 +197,13 @@
         {
           "level": "10",
           "levelType": "numeric",
-          "text": "The doctrine of the Covenant 1 1. Miracles",
+          "text": "The doctrine of the Covenant",
+          "children": []
+        },
+        {
+          "level": "11",
+          "levelType": "numeric",
+          "text": "Miracles",
           "children": []
         }
       ]

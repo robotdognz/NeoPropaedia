@@ -51,7 +51,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Judicial invalidation of New Deal legislation: power struggle between Supreme Court and President",
                   "children": []
                 },
@@ -89,7 +89,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Foreign policy aimed at the containment of Communism: the Truman Doctrine and the Marshall Plan, the Point Four Program, the creation of NATO, U.S. support of Nationalist China",
                   "children": []
                 },
@@ -110,14 +110,14 @@
                   "levelType": "roman",
                   "text": "The Korean War (1950-53): wartime mobilization of the U.S. economy, peace and bilateral security treaties with Japan (1951)",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Maintenance of a large postwar military establishment: collaboration of science and industry",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Maintenance of a large postwar military establishment: collaboration of science and industry",
-              "children": []
             },
             {
               "level": "b",
@@ -126,7 +126,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Intensification of the civil rights movement and innovative decisions of the Warren court, passage of the Civil Rights acts of 1957 and 1960",
                   "children": []
                 },
@@ -164,7 +164,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Civil Rights Act of 1964, Medicare and other social welfare legislation, inflation and increased governmental economic activity",
                   "children": []
                 },
@@ -189,7 +189,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Foreign policy: the continuing Vietnam War and the Paris peace talks, the invasion of Cambodia (1970), rapprochement with the People's Republic of China, Vietnam War cease-fire agreement (1973)",
                   "children": []
                 },
@@ -226,7 +226,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Increased military spending, cuts in social welfare programs, reduction and simplification of personal income tax rates, rapid growth of federal deficit, Supreme Court shift to the right, Iran-Contra Affair",
                   "children": []
                 },

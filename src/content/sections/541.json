@@ -23,7 +23,7 @@
         {
           "level": "3",
           "levelType": "numeric",
-          "text": "The national state in the international community [see also 552. B.]",
+          "text": "The national state in the international community [see also 552.B.]",
           "children": []
         },
         {
@@ -150,7 +150,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Anarchism",
                   "children": []
                 },
@@ -171,14 +171,13 @@
                   "levelType": "roman",
                   "text": "Fascism",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Liberalism",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Liberalism",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",

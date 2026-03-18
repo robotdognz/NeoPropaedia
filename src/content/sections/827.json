@@ -41,7 +41,7 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "Doctrinal controversies that occasioned the further development of Christian theology: reaction to the teachings of Novatian, Donatus, Pelagius, and Arius; the role of St. Augustine; the councils of Nicaea (ad 325), Constantinople (381), Ephesus (431), and Chalcedon (45 1)",
+              "text": "Doctrinal controversies that occasioned the further development of Christian theology: reaction to the teachings of Novatian, Donatus, Pelagius, and Arius; the role of St. Augustine; the councils of Nicaea (ad 325), Constantinople (381), Ephesus (431), and Chalcedon (451)",
               "children": []
             },
             {
@@ -78,7 +78,7 @@
             {
               "level": "d",
               "levelType": "lowercase",
-              "text": "The Photian schism and the beginnings of the great East- West schism",
+              "text": "The Photian schism and the beginnings of the great East-West schism",
               "children": []
             }
           ]
@@ -148,7 +148,7 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "Religious and cultural characteristics of Latin Christianity [see also F.6.a., below, 10/51. A.2., and 10/53.A. 1 .j.]",
+              "text": "Religious and cultural characteristics of Latin Christianity [see also F.6.a., below, 10/51.A.2., and 10/53.A.1.j.]",
               "children": []
             }
           ]
@@ -156,7 +156,7 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "The era of the Reformation and the wars of religion: from Luther's reform to the Peace of Westphalia (16th- 17th century) [see also 961.A.3. and A.4.]",
+          "text": "The era of the Reformation and the wars of religion: from Luther's reform to the Peace of Westphalia (16th- 17th century) [see also 961.A.3.and A.4.]",
           "children": [
             {
               "level": "a",
@@ -167,7 +167,7 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "The Protestant Reformation [see D.I., below]",
+              "text": "The Protestant Reformation [see D.1., below]",
               "children": []
             },
             {
@@ -179,7 +179,7 @@
             {
               "level": "d",
               "levelType": "lowercase",
-              "text": "The wars of religion [see D.l.h., below]",
+              "text": "The wars of religion [see D.1.h., below]",
               "children": []
             },
             {
@@ -218,12 +218,12 @@
         {
           "level": "1",
           "levelType": "numeric",
-          "text": "The Protestant Reformation and its aftermath, to the Peace of Westphalia (16th--17th century) [see also 961.A.3. and A.4.]",
+          "text": "The Protestant Reformation and its aftermath, to the Peace of Westphalia (16th--17th century) [see also 961.A.3.and A.4.]",
           "children": [
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "Its background in European Roman Catholic Christendom [see C., above, and 961. A.]",
+              "text": "Its background in European Roman Catholic Christendom [see C., above, and 961.A.]",
               "children": []
             },
             {
@@ -407,7 +407,7 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "The self- revelation of God: the understanding of God as Creator, Sustainer, and Judge",
+              "text": "The self-revelation of God: the understanding of God as Creator, Sustainer, and Judge",
               "children": []
             },
             {
@@ -419,7 +419,7 @@
             {
               "level": "d",
               "levelType": "lowercase",
-              "text": "Eschatology: political and apocalyptic messianic concepts, expectation of the Kingdom of God [see also 826.C.l.e.]",
+              "text": "Eschatology: political and apocalyptic messianic concepts, expectation of the Kingdom of God [see also 826.C.1.e.]",
               "children": []
             },
             {
@@ -439,7 +439,7 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "Doctrines concerning intermediary beings, powers, or principles; e.g., the angels, Satan [see also 811. D. 5.]",
+          "text": "Doctrines concerning intermediary beings, powers, or principles; e.g., the angels, Satan [see also 811.D.5.]",
           "children": []
         },
         {
@@ -605,7 +605,7 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "The Reformation and the historical development of Protestantism [see D., above] *",
+              "text": "The Reformation and the historical development of Protestantism [see D., above]",
               "children": []
             },
             {
@@ -627,7 +627,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Lutheran churches",
                   "children": []
                 },
@@ -658,7 +658,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Holiness churches",
                   "children": []
                 },
@@ -679,14 +679,13 @@
                   "levelType": "roman",
                   "text": "Society of Friends (Quakers)",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Unitarians and Universalists",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Unitarians and Universalists",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",

@@ -40,7 +40,7 @@
             {
               "level": "e",
               "levelType": "lowercase",
-              "text": "Electricity in the atmosphere [see also 212. C., 221. A.3.b., and 223.B.2.]",
+              "text": "Electricity in the atmosphere [see also 212.C., 221.A.3.b., and 223.B.2.]",
               "children": []
             }
           ]
@@ -134,9 +134,16 @@
             {
               "level": "d",
               "levelType": "lowercase",
-              "text": "Electron emission: thermionic emission, secondary emission, photoelectric emission '3. Alternating electric currents: current that reverses itself with uniform frequency",
+              "text": "Electron emission: thermionic emission, secondary emission, photoelectric emission",
               "children": []
-            },
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Alternating electric currents: current that reverses itself with uniform frequency",
+          "children": [
             {
               "level": "a",
               "levelType": "lowercase",
@@ -183,14 +190,13 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Filters that select signals",
-              "children": [
-                {
-                  "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Transient phenomena of alternating circuits",
-                  "children": []
-                }
-              ]
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Transient phenomena of alternating circuits",
+              "children": []
             },
             {
               "level": "j",
@@ -386,7 +392,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Diamagnetism",
                   "children": []
                 },
@@ -407,14 +413,13 @@
                   "levelType": "roman",
                   "text": "Antiferromagnetism",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Ferrimagnetism",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Ferrimagnetism",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",

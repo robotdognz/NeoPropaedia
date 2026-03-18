@@ -257,7 +257,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Sales of goods and requirements for delivery",
                   "children": []
                 },
@@ -278,14 +278,14 @@
                   "levelType": "roman",
                   "text": "Issuance of letters of credit",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "The use of security interests (liens and pledges) as collateral for loans of money",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "The use of security interests (liens and pledges) as collateral for loans of money",
-              "children": []
             },
             {
               "level": "b",
@@ -307,7 +307,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Partnerships",
                   "children": []
                 },
@@ -326,7 +326,7 @@
                 {
                   "level": "iv",
                   "levelType": "roman",
-                  "text": "State and municipal corporations, quasi-public enterprises and utilities [see also 533.G.4. and 534.B.6.b.]",
+                  "text": "State and municipal corporations, quasi-public enterprises and utilities [see also 533.G.4.and 534.B.6.b.]",
                   "children": []
                 }
               ]
@@ -344,7 +344,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Common and preferred shares of stock: rights and interests of owners of equity capital",
                   "children": []
                 },
@@ -454,7 +454,13 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "The conduct of civil trials: the law of evidence 31 The rendering of judgment in civil cases: assessment of damages, res judicata, collateral estoppel",
+          "text": "The conduct of civil trials: the law of evidence",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The rendering of judgment in civil cases: assessment of damages, res judicata, collateral estoppel",
           "children": []
         }
       ]

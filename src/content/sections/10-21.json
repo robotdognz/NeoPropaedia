@@ -20,7 +20,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Ideas and methods originating or developing in Mesopotamia and Egypt",
                   "children": []
                 },
@@ -45,7 +45,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The 17th century: discovery of logarithms and analytic geometry, development of calculus by Newton and Leibniz",
                   "children": []
                 },
@@ -77,7 +77,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Simple grouping systems: ancient Egyptian, Babylonian, Greek, and Roman numerals",
                   "children": []
                 },
@@ -98,11 +98,11 @@
             {
               "level": "c",
               "levelType": "lowercase",
-              "text": "Calculatory science [see also 10/23. A.]",
+              "text": "Calculatory science [see also 10/23.A.]",
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The history of mathematical tables, including tables of logarithms",
                   "children": []
                 },
@@ -123,11 +123,11 @@
             {
               "level": "d",
               "levelType": "lowercase",
-              "text": "Geometry [see also 10/22. C.]",
+              "text": "Geometry [see also 10/22.C.]",
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Egyptian, Babylonian, and Greek geometry",
                   "children": []
                 },
@@ -140,16 +140,21 @@
                 {
                   "level": "iii",
                   "levelType": "roman",
-                  "text": "Development of projective geometry , iv. Development of non-Euclidean geometry",
+                  "text": "Development of projective geometry",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Philosophical aspects of geometry",
-              "children": [
+                },
+                {
+                  "level": "iv",
+                  "levelType": "roman",
+                  "text": "Development of non-Euclidean geometry",
+                  "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Philosophical aspects of geometry",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -161,11 +166,11 @@
             {
               "level": "e",
               "levelType": "lowercase",
-              "text": "Algebra [see also 10/22. B.]",
+              "text": "Algebra [see also 10/22.B.]",
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Babylonian, Egyptian, and Greek contributions",
                   "children": []
                 },
@@ -203,7 +208,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The abstract calculus of probability: the common structure of theories of probability",
                   "children": []
                 },
@@ -244,7 +249,7 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "Euclidean geometry [see also 10/22.C. 1.]",
+              "text": "Euclidean geometry [see also 10/22.C.1.]",
               "children": []
             },
             {
@@ -275,7 +280,7 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "The concept of cardinal number and the theory of sets [see also 10/22. A.2.]",
+              "text": "The concept of cardinal number and the theory of sets [see also 10/22.A.2.]",
               "children": []
             }
           ]

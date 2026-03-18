@@ -16,7 +16,13 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "Supranational political systems: empires; leagues, confederations, and commonwealths; regional federations; world congresses [see 544.A.] , b. National political systems: the unitary nation-state system, the federal state system",
+              "text": "Supranational political systems: empires; leagues, confederations, and commonwealths; regional federations; world congresses [see 544.A.]",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "National political systems: the unitary nation-state system, the federal state system",
               "children": []
             },
             {

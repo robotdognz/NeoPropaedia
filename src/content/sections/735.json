@@ -43,7 +43,7 @@
     {
       "level": "D",
       "levelType": "major",
-      "text": "Computers [see also 10/23.A.6. and 7.]",
+      "text": "Computers [see also 10/23.A.6.and 7.]",
       "children": [
         {
           "level": "1",
@@ -166,13 +166,13 @@
         {
           "level": "1",
           "levelType": "numeric",
-          "text": "Still photography [see also 628. D.]",
+          "text": "Still photography [see also 628.D.]",
           "children": []
         },
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "Motion-picture and television photography [see also 623. A.]",
+          "text": "Motion-picture and television photography [see also 623.A.]",
           "children": []
         },
         {
@@ -231,7 +231,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Management-oriented systems (executive, command and control, and decision support)",
                   "children": []
                 },
@@ -262,7 +262,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Dictionaries and lexicons",
                   "children": []
                 },

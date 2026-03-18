@@ -95,7 +95,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The French invasion (1494) and conquests of Naples (1495) and Milan (1499), the influence of Savonarola, the anti-French League of Venice and the Spanish defeat of France (1525)",
                   "children": []
                 },
@@ -120,7 +120,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Establishment of the Habsburg dynasty (1516) by Charles I (Holy Roman Emperor Charles V), Spanish hegemony in Europe and the Americas, domestic and foreign policies of Philip II (1556-98), the Armada (1588), cultural developments in Spain's Golden Age",
                   "children": []
                 },
@@ -145,7 +145,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Henry VII (1485-1509): dynastic unity in England after the Wars of the Roses; political, judicial, social, and economic developments",
                   "children": []
                 },
@@ -166,14 +166,13 @@
                   "levelType": "roman",
                   "text": "James I (1603-25) of England (James VI of Scotland) and establishment of the Stuart dynasty: developments in religious doctrine, foreign relations, economic policy, and the arts; conflicts between crown and Parliament",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Charles I (1625-49) and the English Civil War (1642-51): economic and political disputes between crown and Parliament; royal personal rule (1629-40); persecution of Puritans; the Long Parliament, Oliver Cromwell, and the Civil War; execution of Charles I (1649)",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Charles I (1625-49) and the English Civil War (1642-51): economic and political disputes between crown and Parliament; royal personal rule (1629-40); persecution of Puritans; the Long Parliament, Oliver Cromwell, and the Civil War; execution of Charles I (1649)",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -195,7 +194,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Development of a standing army and a professional bureaucracy in the reigns of Charles VIII (1483-98), Louis XII (1498-1515), Francis I (1515-47), and Henry II (1547-59)",
                   "children": []
                 },
@@ -220,7 +219,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Maximilian I (1493-1519), Martin Luther, and the origins of Lutheranism; Charles V and the Diet and Edict of Worms (1521); the Peasants' Revolt (1524-25); diets of Speyer (1526 and 1529) and Augsburg (1530); the Schmalkaldic League and ensuing wars; abdication of Charles V (1555) and Peace of Augsburg",
                   "children": []
                 },
@@ -239,7 +238,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Swiss victory over Charles the Bold in the Burgundian War (1474-77), military prestige of the confederation, victory over Maximilian I (1499), the Italian campaigns (1499-1516)",
                   "children": []
                 },
@@ -258,7 +257,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Habsburg unification of the Low Countries (1494); further consolidation under the future emperor Charles V (1506-55); economic, cultural, and religious developments; revolt of the provinces (1567-79)",
                   "children": []
                 },
@@ -295,30 +294,37 @@
     {
       "level": "B",
       "levelType": "major",
-      "text": "European overseas expansion and commercial development from c. 1400 to 1763 L The beginning of European imperialism: rapid expansion of European trade with and control over the non-European world after c. 1450",
+      "text": "European overseas expansion and commercial development from c. 1400 to 1763",
       "children": [
         {
-          "level": "a",
-          "levelType": "lowercase",
-          "text": "Advances in geographical knowledge and technological improvements; e.g., ship design, navigational instruments, cartography",
-          "children": []
-        },
-        {
-          "level": "b",
-          "levelType": "lowercase",
-          "text": "Voyages of discovery and exploration: establishment of colonial empires",
+          "level": "1",
+          "levelType": "numeric",
+          "text": "The beginning of European imperialism: rapid expansion of European trade with and control over the non-European world after c. 1450",
           "children": [
             {
-              "level": "i",
+              "level": "a",
               "levelType": "lowercase",
-              "text": "Discovery, exploration, and early settlement of the Americas",
+              "text": "Advances in geographical knowledge and technological improvements; e.g., ship design, navigational instruments, cartography",
               "children": []
             },
             {
-              "level": "ii",
-              "levelType": "roman",
-              "text": "Discovery, exploration, and early settlement of the coastal regions of Africa, Australia, India, and the East Indies",
-              "children": []
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Voyages of discovery and exploration: establishment of colonial empires",
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "roman",
+                  "text": "Discovery, exploration, and early settlement of the Americas",
+                  "children": []
+                },
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Discovery, exploration, and early settlement of the coastal regions of Africa, Australia, India, and the East Indies",
+                  "children": []
+                }
+              ]
             }
           ]
         },
@@ -359,7 +365,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Development of new business organizations to direct colonial exploitation: joint-stock and chartered companies",
                   "children": []
                 },
@@ -380,14 +386,14 @@
                   "levelType": "roman",
                   "text": "Increase in volume of world trade: the growth of the luxury trade (silks, spices, precious metals), the agricultural trade (tobacco, sugar, and coffee), the raw materials trade",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Development and importance of the slave trade",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Development and importance of the slave trade",
-              "children": []
             },
             {
               "level": "b",
@@ -422,7 +428,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Quadruple Alliance: the emergence of Prussia and Austria as European powers, the War of the Austrian Succession (1740-48)",
                   "children": []
                 },
@@ -454,7 +460,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Oliver Cromwell, the Commonwealth, and the Protectorate (1649-60); the Stuart Restoration (1660) under Charles II (1660-85) and James II (1685--88); the Glorious Revolution of 1688 and end of crown rule without Parliament",
                   "children": []
                 },
@@ -475,14 +481,14 @@
                   "levelType": "roman",
                   "text": "Economic, cultural, and social developments: agricultural innovations, population growth, origins of the Industrial Revolution and factory system, influence of Methodism",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Formal union of England and Scotland ( 1707), Edinburgh's status as an intellectual centre, Protestant Ascendancy in Ireland and growth of Irish patriotism among the Anglo-Irish, Wales in the 18th century",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Formal union of England and Scotland ( 1707), Edinburgh's status as an intellectual centre, Protestant Ascendancy in Ireland and growth of Irish patriotism among the Anglo-Irish, Wales in the 18th century",
-              "children": []
             },
             {
               "level": "b",
@@ -491,7 +497,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Fronde, Louis XIV's minority (1643-61), and Mazarin's control of government to 1661",
                   "children": []
                 },
@@ -512,14 +518,13 @@
                   "levelType": "roman",
                   "text": "French cultural development in the 17th century",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "The ancien regime (1715-89): the close relationship between society and the state, the new urban class, the decline of the monarchy under Louis XV (1715-74) and Louis XVI (1774-92), power of the parlements, agricultural and industrial growth, domestic and colonial trade",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "The ancien regime (1715-89): the close relationship between society and the state, the new urban class, the decline of the monarchy under Louis XV (1715-74) and Louis XVI (1774-92), power of the parlements, agricultural and industrial growth, domestic and colonial trade",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -535,7 +540,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Austrian consolidation and expansion under Leopold I (1658-1705), Joseph I ( 1705-- 11), and Charles VI (1711-40): conquest of Hungary and penetration of the Balkans in the Austro-Turkish wars ( 1683--99 and 1716-18), War of the Spanish Succession (1701-14) and acquisition of the Spanish Netherlands (1713)",
                   "children": []
                 },
@@ -554,7 +559,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Frederick William, the Great Elector (1640-88): strengthening of Hohenzollem power in Brandenburg and Prussia, end of Polish suzerainty over Prussia, War of the Spanish Succession (1701-14), Austro-Prussian rivalry in the 18th century, Frederick I (1701- 13) and Frederick William I (1713-40) of Prussia",
                   "children": []
                 },
@@ -579,7 +584,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Spain from 1665 to c. 1790: continued decline under Charles II (1665-1700); War of the Spanish Succession (1701-14) and establishment of the Bourbon dynasty; pro-French foreign policy under Philip V, Ferdinand VI, and Charles III; administrative and economic reforms of Charles III",
                   "children": []
                 },
@@ -598,7 +603,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Government reforms and the rule of Joseph II (1765-90) in Lombardy, reigns of Francis of Lorraine (1738-65) and Peter Leopold (1765-90) in Tuscany",
                   "children": []
                 },
@@ -623,7 +628,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Swedish wars of conquest against Poland and Denmark-Norway under Charles X Gustav (1654-60) and Charles XI (1672-97), war with Russia under Charles XII (1697-1718) and displacement of Sweden by Russia as the chief Baltic power after the Great Northern War (1700-21)",
                   "children": []
                 },

@@ -1,7 +1,7 @@
 {
   "sectionCode": "932",
   "sectionCodeDisplay": "932",
-  "title": "China from the Late T\u2019ang (ad 755) to the Late Ch\u2019ing (c. 1839)",
+  "title": "China from the Late T’ang (ad 755) to the Late Ch’ing (c. 1839)",
   "outline": [
     {
       "level": "A",
@@ -38,7 +38,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The short-lived Five Dynasties in North China: the Liang dynasty, advance of talented bureaucrats in government posts",
                   "children": []
                 },
@@ -57,7 +57,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Unification and centralization of the empire: development of the Imperial civil service in T'ai-tsu's reign (960-976), further consolidation under Chen Tsung (998-1022)",
                   "children": []
                 },
@@ -138,7 +138,7 @@
         {
           "level": "1",
           "levelType": "numeric",
-          "text": "The Ming dynasty (1368-1644) *",
+          "text": "The Ming dynasty (1368-1644)",
           "children": [
             {
               "level": "a",
@@ -147,7 +147,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Peasant uprisings and the foundation of the dynasty (1368) by Chu Yiian-chang (Hung-wu): pattern of dynastic succession, gradual degeneration of Ming government",
                   "children": []
                 },
@@ -185,7 +185,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Manchu entrance in Peking and territorial conquest ending with the seizure of Taiwan (1683): early Ch'ing institutions",
                   "children": []
                 },
@@ -204,7 +204,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Advances in agriculture through increased rice cultivation and introduction of new crops, expansion of crafts and industries, commerce and finance",
                   "children": []
                 },

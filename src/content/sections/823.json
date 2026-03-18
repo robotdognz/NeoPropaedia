@@ -23,8 +23,14 @@
         {
           "level": "3",
           "levelType": "numeric",
-          "text": "The Vedic period (2nd millennium-7th century bc) , a. The religion of the Rgveda",
+          "text": "The Vedic period (2nd millennium-7th century bc)",
           "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The religion of the Rgveda",
+              "children": []
+            },
             {
               "level": "b",
               "levelType": "lowercase",
@@ -42,7 +48,7 @@
         {
           "level": "4",
           "levelType": "numeric",
-          "text": "The heterodox period (7th-2nd century bc): challenges to Brahmanism by reformers and ascetic groups [see also D.I., below, and 824]",
+          "text": "The heterodox period (7th-2nd century bc): challenges to Brahmanism by reformers and ascetic groups [see also D.1., below, and 824]",
           "children": []
         },
         {
@@ -66,13 +72,13 @@
         {
           "level": "8",
           "levelType": "numeric",
-          "text": "The age of bhakti (1 1th- 19th century)",
+          "text": "The age of bhakti (11th- 19th century)",
           "children": []
         },
         {
           "level": "9",
           "levelType": "numeric",
-          "text": "The modem period (19th-20th century)",
+          "text": "The modern period (19th-20th century)",
           "children": []
         },
         {
@@ -162,7 +168,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Ahimsa, the obligation to respect all living beings",
                   "children": []
                 },
@@ -220,7 +226,7 @@
             {
               "level": "f",
               "levelType": "lowercase",
-              "text": "Ethical, social, and nationalist movements in modem Hinduism",
+              "text": "Ethical, social, and nationalist movements in modern Hinduism",
               "children": []
             }
           ]
@@ -268,7 +274,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Types of symbols: yantras, mandalas, lingas, yonis",
                   "children": []
                 },
@@ -307,14 +313,14 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Early background: traditional accounts of Mahavlra's predecessors",
+                  "levelType": "roman",
+                  "text": "Early background: traditional accounts of Mahavira's predecessors",
                   "children": []
                 },
                 {
                   "level": "ii",
                   "levelType": "roman",
-                  "text": "The life, work, and teachings of Vardhamana Mahavlra",
+                  "text": "The life, work, and teachings of Vardhamana Mahavira",
                   "children": []
                 },
                 {
@@ -351,8 +357,8 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Islamic and Hindu background (1 1th- 15th century) [see also A., above, and 828.A.]",
+                  "levelType": "roman",
+                  "text": "Islamic and Hindu background (11th- 15th century) [see also A., above, and 828.A.]",
                   "children": []
                 },
                 {
@@ -372,14 +378,13 @@
                   "levelType": "roman",
                   "text": "The condition of Sikhism during the Sikh empire (18th- 19th century)",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "The condition of Sikhism under British rule (19th-20th century)",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "The condition of Sikhism under British rule (19th-20th century)",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",

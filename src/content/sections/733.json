@@ -70,15 +70,14 @@
             {
               "level": "h",
               "levelType": "lowercase",
-              "text": "Glass [see 724,C.5.a.]",
-              "children": [
-                {
-                  "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Concrete, reinforced concrete, and prestressed concrete",
-                  "children": []
-                }
-              ]
+              "text": "Glass [see 724.C.5.a.]",
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Concrete, reinforced concrete, and prestressed concrete",
+              "children": []
             },
             {
               "level": "j",
@@ -198,14 +197,14 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Plumbing systems",
                   "children": []
                 },
                 {
                   "level": "ii",
                   "levelType": "roman",
-                  "text": "Heating, ventiliating, and air-conditioning systems",
+                  "text": "Heating, ventilating, and air-conditioning systems",
                   "children": []
                 },
                 {
@@ -219,14 +218,13 @@
                   "levelType": "roman",
                   "text": "Systems for illumination: interior and exterior lighting",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Vertical transport systems; e.g., elevators, moving stairways",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Vertical transport systems; e.g., elevators, moving stairways",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",

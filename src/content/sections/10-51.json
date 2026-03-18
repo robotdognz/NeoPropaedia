@@ -20,7 +20,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Cosmology and the metaphysics of matter: theories of the origin and nature of the physical world, monistic and pluralistic cosmologies",
                   "children": []
                 },
@@ -51,7 +51,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The ethical concerns and positions of Socrates: the Socratic method of teaching, the influence of Socrates",
                   "children": []
                 },
@@ -76,7 +76,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The philosophy of the Stoics: the teaching of Zeno of Citium concerning the basis of human happiness, the further elaboration of Stoic thought by Cleanthes and Chrysippus, the role of Stoicism during the late Roman Republic and the empire",
                   "children": []
                 },
@@ -97,14 +97,14 @@
                   "levelType": "roman",
                   "text": "The philosophy of the Neo-Pythagoreans and of the Neoplatonists: the teaching of Plotinus concerning the various levels of being, Neo-Pythagorean schools in Asia Minor",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Jewish and Christian philosophy during the Hellenistic Age: diverse attempts to relate the teachings of the Hellenistic and Roman schools to Jewish and Christian theology",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Jewish and Christian philosophy during the Hellenistic Age: diverse attempts to relate the teachings of the Hellenistic and Roman schools to Jewish and Christian theology",
-              "children": []
             }
           ]
         },
@@ -120,14 +120,14 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The patristic period: Augustine's use of Neoplatonist thought in his theology and his doctrine of man, the role of Boethius' translations and commentaries, Anselm's proofs of the existence of God, the methodology of Abelard",
                   "children": []
                 },
                 {
                   "level": "ii",
                   "levelType": "roman",
-                  "text": "Philosophy and the liberal arts in the schools of the Christian West from the 9th to the 1 1th century",
+                  "text": "Philosophy and the liberal arts in the schools of the Christian West from the 9th to the 11th century",
                   "children": []
                 }
               ]
@@ -164,14 +164,14 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Political theory: the views of Machiavelli, Bodin, Hobbes, Grotius, and others on the nature and moral status of political power",
                   "children": []
                 },
                 {
                   "level": "ii",
                   "levelType": "roman",
-                  "text": "Humanism: the influence of the writings of Plato on moral theory and literary endeavour; renewed interest in Atomistic Materialism, ancient Skepticism, and Stoicism [for humanistic scholarship in the Renaissance, see also 10/42. A. 3.]",
+                  "text": "Humanism: the influence of the writings of Plato on moral theory and literary endeavour; renewed interest in Atomistic Materialism, ancient Skepticism, and Stoicism [for humanistic scholarship in the Renaissance, see also 10/42.A.3.]",
                   "children": []
                 },
                 {
@@ -189,7 +189,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Developments in the Empiricist tradition: Bacon's attempt to formulate a new scientific method, Hobbes's theory of knowledge",
                   "children": []
                 },
@@ -208,7 +208,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Epistemological issues: the attempt of Locke and Berkeley to inquire into the origin and nature of reason, Hume's science of man, Kant's critical examination of reason",
                   "children": []
                 },
@@ -233,7 +233,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The resurgence of the metaphysical spirit: the Idealism of Fichte, Schelling, and Hegel",
                   "children": []
                 },
@@ -258,7 +258,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Independent speculative and social philosophies: Bergson's intuitionism, Whitehead's speculative philosophy, William James's and Dewey's Pragmatism",
                   "children": []
                 },
@@ -388,13 +388,13 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "Buddhist philosophy [see 824. B.3.]",
+          "text": "Buddhist philosophy [see 824.B.3.]",
           "children": []
         },
         {
           "level": "3",
           "levelType": "numeric",
-          "text": "Confucian philosophy [see 825. B.3.]",
+          "text": "Confucian philosophy [see 825.B.3.]",
           "children": []
         },
         {
@@ -406,13 +406,13 @@
         {
           "level": "5",
           "levelType": "numeric",
-          "text": "Jewish philosophy [see 826. B.6.]",
+          "text": "Jewish philosophy [see 826.B.6.]",
           "children": []
         },
         {
           "level": "6",
           "levelType": "numeric",
-          "text": "Islamic philosophy [see 828. B.4.]",
+          "text": "Islamic philosophy [see 828.B.4.]",
           "children": []
         }
       ]

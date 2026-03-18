@@ -88,7 +88,7 @@
     {
       "level": "B",
       "levelType": "major",
-      "text": "World Warll (1939-45)",
+      "text": "World War II (1939-45)",
       "children": [
         {
           "level": "1",
@@ -149,7 +149,7 @@
         {
           "level": "6",
           "levelType": "numeric",
-          "text": "The burgeoning of military technology; e.g., developments in communications devices, naval ' ships and aircraft, ground weapons and missiles, atomic bombs",
+          "text": "The burgeoning of military technology; e.g., developments in communications devices, naval ships and aircraft, ground weapons and missiles, atomic bombs",
           "children": []
         }
       ]
@@ -177,7 +177,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Nazi-Soviet pact",
                   "children": []
                 },
@@ -209,7 +209,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The atomic and hydrogen bombs",
                   "children": []
                 },
@@ -240,7 +240,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Consolidation of Soviet power in eastern Europe: the Iron Curtain",
                   "children": []
                 },
@@ -271,7 +271,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The colonial territories of Asia",
                   "children": []
                 },
@@ -302,7 +302,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The U.S. in the Middle East",
                   "children": []
                 },
@@ -333,7 +333,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The U.S. policy of containment",
                   "children": []
                 },
@@ -354,14 +354,13 @@
                   "levelType": "roman",
                   "text": "De-Stalinization in the Soviet Union",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Unrest among the satellites",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Unrest among the satellites",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -402,7 +401,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Postwar economic growth: U.S. economic dominance",
                   "children": []
                 },
@@ -423,14 +422,13 @@
                   "levelType": "roman",
                   "text": "The new states: nonalignment and domestic problems, aid programs",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "The Third World as a zone of conflict in the Cold War",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "The Third World as a zone of conflict in the Cold War",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -454,14 +452,14 @@
                   "levelType": "roman",
                   "text": "Peaceful coexistence and detente",
                   "children": []
+                },
+                {
+                  "level": "x",
+                  "levelType": "roman",
+                  "text": "Resolution of the German problem and the two Germanys; the Helsinki conference (1973); arms buildup and deterioration of superpower relations; disintegration of the Soviet Union and the end of the Cold War",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "x",
-              "levelType": "lowercase",
-              "text": "Resolution of the German problem and the two Germanys; the Helsinki conference (1973); arms buildup and deterioration of superpower relations; disintegration of the Soviet Union and the end of the Cold War",
-              "children": []
             },
             {
               "level": "b",
@@ -470,7 +468,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Peace in postwar Europe",
                   "children": []
                 },
@@ -501,7 +499,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Southeast Asia: the Indochina War",
                   "children": []
                 },

@@ -6,7 +6,7 @@
     {
       "level": "A",
       "levelType": "major",
-      "text": "Theory of measurement [see 10/31. B.3.b.]",
+      "text": "Theory of measurement [see 10/31.B.3.b.]",
       "children": []
     },
     {
@@ -65,7 +65,13 @@
             {
               "level": "d",
               "levelType": "lowercase",
-              "text": "Devices for measuring temperature: gas, liquid, and electrical resistance thermometers ' e. Devices for measuring electric current and other electrical properties: galvanometers, ammeters, voltmeters",
+              "text": "Devices for measuring temperature: gas, liquid, and electrical resistance thermometers",
+              "children": []
+            },
+            {
+              "level": "e",
+              "levelType": "lowercase",
+              "text": "Devices for measuring electric current and other electrical properties: galvanometers, ammeters, voltmeters",
               "children": []
             },
             {
@@ -100,7 +106,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Compasses: magnetic compasses, gyrocompasses",
                   "children": []
                 },
@@ -204,7 +210,7 @@
         {
           "level": "3",
           "levelType": "numeric",
-          "text": "Particle accelerators; e.g., Cockcroft- Walton generators, Van de Graaff generators; linear resonance accelerators, betatrons, cyclotrons, synchrotrons, colliding-beam storage rings",
+          "text": "Particle accelerators; e.g., Cockcroft-Walton generators, Van de Graaff generators; linear resonance accelerators, betatrons, cyclotrons, synchrotrons, colliding-beam storage rings",
           "children": []
         },
         {
@@ -259,7 +265,7 @@
         {
           "level": "4",
           "levelType": "numeric",
-          "text": "Oceanographic measurement [see also 222. B., E., F., G., and H. and 738. B.[",
+          "text": "Oceanographic measurement [see also 222.B., E., F., G., and H. and 738.B.]",
           "children": []
         },
         {

@@ -32,7 +32,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Decomposition reactions",
                   "children": []
                 },
@@ -53,14 +53,13 @@
                   "levelType": "roman",
                   "text": "Substitution reactions",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Addition and elimination reactions",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Addition and elimination reactions",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -78,7 +77,7 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "According to the energy changes involved [see B.I., below]",
+              "text": "According to the energy changes involved [see B.1., below]",
               "children": []
             },
             {

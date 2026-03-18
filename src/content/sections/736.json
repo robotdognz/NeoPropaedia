@@ -75,7 +75,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Propellant: black powder, smokeless powder",
                   "children": []
                 },
@@ -107,7 +107,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Land: e.g., barrage rocket, ballistic missile, surface-to-air missile",
                   "children": []
                 },
@@ -140,7 +140,7 @@
             {
               "level": "d",
               "levelType": "lowercase",
-              "text": "Payloads: e.g., single- warhead, cluster bomblet, multiple reentry vehicle",
+              "text": "Payloads: e.g., single-warhead, cluster bomblet, multiple reentry vehicle",
               "children": []
             },
             {
@@ -195,7 +195,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Materials: e.g., leather, bronze, iron",
                   "children": []
                 },
@@ -220,7 +220,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Materials: steel, plastic, Kevlar",
                   "children": []
                 },
@@ -389,7 +389,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Propulsion: internal combustion/propeller, jet",
                   "children": []
                 },
@@ -414,7 +414,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Propulsion: internal combustion, gas turbine",
                   "children": []
                 },

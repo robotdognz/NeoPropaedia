@@ -185,7 +185,7 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "The minor planets, or asteroids [see A. 3.a., above]",
+          "text": "The minor planets, or asteroids [see A.3.a., above]",
           "children": []
         },
         {
@@ -308,9 +308,16 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "The actual motion , 3. The mass and gravitational field of the Moon",
+              "text": "The actual motion",
               "children": []
-            },
+            }
+          ]
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "The mass and gravitational field of the Moon",
+          "children": [
             {
               "level": "a",
               "levelType": "lowercase",
@@ -333,7 +340,7 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "Observations from Earth and from space vehicles: results of remote lunar photography, manned lunar landings, and close-up photography [see also 738. C.[",
+              "text": "Observations from Earth and from space vehicles: results of remote lunar photography, manned lunar landings, and close-up photography [see also 738.C.]",
               "children": []
             },
             {
@@ -400,7 +407,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The geometry of the Sun-Earth-Moon system: the celestial equator, the apparent motion of the Sun along the ecliptic, the inclination of the Earth's axis to its orbit",
                   "children": []
                 },

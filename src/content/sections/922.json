@@ -38,7 +38,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Abu Bakr (632-634) and 'Umar I (634-644): the tribe of Quraysh; divisions among the followers of Muhammad; the conquest of Iraq and the Sasanid (Persian) Empire and the Byzantine territories of Jordan, Palestine, Syria, and Egypt",
                   "children": []
                 },
@@ -82,7 +82,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Administration of the Arab lands: utilization of local officials, the position and functions of the caliph, Islamization and Arabization, social classes",
                   "children": []
                 },
@@ -133,7 +133,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Religion: theology and philosophy, Islamic mysticism",
                   "children": []
                 },
@@ -159,7 +159,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Conquest of southern and central Spain by Tariq ibn Ziyad (711); defeat of the Muslims near Poitiers by the Frank Charles Martel (732); foundation of the independent emirate by 'Abd ar-Rahman I (756-788); political and cultural splendour in the reign of 'Abd ar-Rahman II, defeat of the muwallads",
                   "children": []
                 },
@@ -204,13 +204,7 @@
             {
               "level": "f",
               "levelType": "lowercase",
-              "text": "Other eastern states: the Qarmatians in eastern Arabia (c. 900-1078), the Turkish Qarakhanid dynasty of Ma Wara 'an-Nahr (Transoxania) and eastern Turkistan (922-",
-              "children": []
-            },
-            {
-              "level": "c",
-              "levelType": "lowercase",
-              "text": "1050), the Turkish Ghaznavids of Afghanistan and northwestern India (998-1050), minor states and dynasties",
+              "text": "Other eastern states: the Qarmatians in eastern Arabia (c. 900-1078), the Turkish Qarakhanid dynasty of Ma Wara'an-Nahr (Transoxania) and eastern Turkistan (922-1050), the Turkish Ghaznavids of Afghanistan and northwestern India (998-1050), minor states and dynasties",
               "children": []
             }
           ]

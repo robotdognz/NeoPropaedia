@@ -20,7 +20,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Time reckoning and astronomical prediction: development of lunar and solar calendars, prediction of eclipses and of first appearances of the New Moon",
                   "children": []
                 },
@@ -51,7 +51,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The geocentric and heliocentric world systems",
                   "children": []
                 },
@@ -82,7 +82,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Development of celestial mechanics: the calculation of orbits, the three-body problem, the dynamical stability of gravitational systems",
                   "children": []
                 },
@@ -107,7 +107,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The discovery of Neptune and the asteroids, the search for a planet within the orbit of Mercury",
                   "children": []
                 },
@@ -132,7 +132,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Statistical studies of stars, nebulae, and galaxies",
                   "children": []
                 },
@@ -153,14 +153,13 @@
                   "levelType": "roman",
                   "text": "Relativistic cosmologies: the big bang model; open and closed models of the universe",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Major advances in solar-system astronomy: manned lunar missions; exploration of the planets and their satellites with unmanned space probes; analysis of micrometeoroids and meteorites",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Major advances in solar-system astronomy: manned lunar missions; exploration of the planets and their satellites with unmanned space probes; analysis of micrometeoroids and meteorites",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -213,7 +212,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Development of theories of light: the wave theory versus the corpuscular theory, the search for the ether",
                   "children": []
                 },
@@ -244,7 +243,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Development of the theory of relativity",
                   "children": []
                 },
@@ -265,14 +264,14 @@
                   "levelType": "roman",
                   "text": "Development of condensed-matter physics and its contributions to electronics",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Modern developments in physics: atomic beams, nuclear magnetic resonance, and electron spin resonance methods; development of nonlinear optics; the development of masers and lasers",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Modern developments in physics: atomic beams, nuclear magnetic resonance, and electron spin resonance methods; development of nonlinear optics; the development of masers and lasers",
-              "children": []
             }
           ]
         },
@@ -288,7 +287,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The rise of alchemy: the goal of the alchemists -- to prolong life and to transmute base metals to gold",
                   "children": []
                 },
@@ -307,7 +306,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Studies of combustion and respiration: the phlogiston theory, the work of Lavoisier and Cavendish",
                   "children": []
                 },
@@ -326,7 +325,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Development of the periodic table of the elements: the work of Mendeleyev and Meyer",
                   "children": []
                 },
@@ -347,14 +346,13 @@
                   "levelType": "roman",
                   "text": "Development of theories of molecular structure and chemical reaction",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Development of organic chemistry: introduction of the concept of valence, the study of aromatic compounds, development of the structural theory",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Development of organic chemistry: introduction of the concept of valence, the study of aromatic compounds, development of the structural theory",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -376,7 +374,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Development of instrumental methods of chemical analysis",
                   "children": []
                 },

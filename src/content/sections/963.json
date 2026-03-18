@@ -26,7 +26,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The revolt of the Third Estate: uprisings in Paris and the provinces, the reforms of the Constituent Assembly, abolition of the monarchy, Marat and the Jacobins, the Legislative Assembly",
                   "children": []
                 },
@@ -57,7 +57,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The War of the First Coalition (1792-97): French support for revolution in neighbouring lands and annexation of Nice, Savoy, Austrian Netherlands, the Rhineland, and the Batavian Republic; Napoleon's Italian Campaign; the Treaty of Campo Formio (1797)",
                   "children": []
                 },
@@ -78,14 +78,14 @@
                   "levelType": "roman",
                   "text": "The Franco-Austrian War (1809), the Spanish uprising and the Peninsular War (1808-14), Napoleon's defeat in the Russian campaign (1812) and the campaign of the Fourth Coalition, downfall (1814) and exile of Napoleon",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "The Hundred Days and Napoleon's final defeat at Waterloo (1815), the Congress of Vienna and Metternich's attempt to restore the old order in Europe",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "The Hundred Days and Napoleon's final defeat at Waterloo (1815), the Congress of Vienna and Metternich's attempt to restore the old order in Europe",
-              "children": []
             },
             {
               "level": "d",
@@ -100,7 +100,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The influence of the French Revolution on the growth of English radicalism: governmental hostility to reform, Pitt's ministries and the war with France, Canning and Castlereagh, British gains in the peace settlements",
                   "children": []
                 },
@@ -125,7 +125,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Military decline following the death of Frederick II the Great: participation in the French Revolutionary Wars, defeat by Napoleon in 1806",
                   "children": []
                 },
@@ -141,14 +141,13 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Austria (1790-1815): the reigns of Leopold II (1790-92) and Francis II (1792-1806; as emperor of Austria, Francis I, 1804-35); participation in the coalitions against Napoleon, shift to compliance with him, and eventual intervention in the wars of liberation",
-              "children": [
-                {
-                  "level": "i",
-                  "levelType": "lowercase",
-                  "text": "The smaller German states under French influence: the Confederation of the Rhine",
-                  "children": []
-                }
-              ]
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "The smaller German states under French influence: the Confederation of the Rhine",
+              "children": []
             },
             {
               "level": "j",
@@ -157,7 +156,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Spain in the reign of Charles IV (1788-1808), French occupation (1808) and British aid in the War of Independence (Peninsular War), restoration of the Bourbons",
                   "children": []
                 },
@@ -176,7 +175,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Denmark: defeat by the British (1801), alliance with France after 1807, the loss of Norway to Sweden (1814)",
                   "children": []
                 },
@@ -208,7 +207,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "British commercial, agricultural, and military growth: the factory system and advances in textile and machine technology, development of railroads",
                   "children": []
                 },
@@ -269,7 +268,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Congress of Europe: the Quadruple and Holy alliances for maintenance of the Vienna settlement, French intervention in Spain (1823), Austrian intervention in Italy (1821 and 1830), changes in the Congress system with the Revolution of 1830 in France and Belgium",
                   "children": []
                 },
@@ -289,7 +288,7 @@
             },
             {
               "level": "i",
-              "levelType": "lowercase",
+              "levelType": "roman",
               "text": "Economic depression and social unrest following the Napoleonic Wars: repression by the government",
               "children": []
             },
@@ -312,7 +311,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Restoration (1814, 1815-30): moderate constitutionalism under Louis XVIII, reaction and clericalism under Charles X",
                   "children": []
                 },
@@ -337,7 +336,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The German Confederation: Austrian domination under Mettemich, the student national unity movement and its repression by the Carlsbad Decrees (1819), beginning of industrialization and the Zollverein",
                   "children": []
                 },
@@ -362,7 +361,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Development of national consciousness among the peoples of the empire: cultural revival among Magyars, Croats, Serbians, Poles, Romanians, Czechs, Slovaks, and Slovenes; German and Italian nationalism",
                   "children": []
                 },
@@ -387,7 +386,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Vienna settlement: the Austrian Habsburgs in Lombardy- Venetia, the Bourbons in the Two Sicilies, Victor Emmanuel in Savoy, the Carbonari",
                   "children": []
                 },
@@ -424,7 +423,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Rule by bureaucracy, social classes, intellectual life, the empire and its various nationalities",
                   "children": []
                 },
@@ -449,7 +448,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Spain under Ferdinand VII, revolution and abortive liberal government (1820-23), loss of South American empire ( 1820s), Isabella II and the succession dispute, First Carlist War (1833-39) and the \"Spanish marriages\" controversy",
                   "children": []
                 },
@@ -468,7 +467,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Denmark in the reigns of Frederick VI (1808-39) and Christian VIII (1839-48): beginning of economic problems, tendencies toward constitutional government culminating in the constitution of 1849, war over Schleswig-Holstein (1848-51)",
                   "children": []
                 },
@@ -493,7 +492,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Serbian uprising (1804-13) and the rise of the principality, restoration of Ottoman power in Serbia (1813-15), Serbian autonomy (1830) under Ottoman Empire, Milos Obrenovic recognized as prince of Serbia (1833-39) and government of Alexander Karageorge (1842-58)",
                   "children": []
                 },
@@ -550,7 +549,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Industrial proliferation: expansion into new areas such as the U.S., eastern Europe, and Japan",
                   "children": []
                 },
@@ -582,7 +581,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Final dissolution of the Congress of Vienna alliance system: the Crimean War (1853-- 56) and its aftermath",
                   "children": []
                 },
@@ -607,7 +606,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Bismarck's system of alliances: the Dreikaiserbund and the isolation of France, the Russo-Turkish War (1877-78) and the Congress of Berlin (1878-79), the Triple Alliance (1882)",
                   "children": []
                 },
@@ -632,7 +631,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Renewed interest in overseas expansion by the European powers in the late 19th century: new acquisitions and new colonial powers, development of new theories of imperialism",
                   "children": []
                 },
@@ -651,7 +650,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Serbian crisis and general mobilization: the opening German offensive in the east and west (August 1914), stabilization of the Western Front, trench warfare, new military technology (air power, tanks, and poison gas), the Battle of Verdun, renewed stalemate",
                   "children": []
                 },
@@ -672,14 +671,13 @@
                   "levelType": "roman",
                   "text": "Total war and the mobilization of whole populations; the dissolution of the Austro-Hungarian, Russian, and Ottoman empires",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "The leadership, industrial strength, strategic plans and goals, and tactical and logistical procedures of the belligerents",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "The leadership, industrial strength, strategic plans and goals, and tactical and logistical procedures of the belligerents",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -702,7 +700,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Mid-Victorian politics and economics: liberalism and free trade, the Great Exhibition (1851), Russell's and Palmerston's foreign policies regarding the Crimean War and the Indian Mutiny, Second Reform Bill (1867)",
                   "children": []
                 },
@@ -723,14 +721,14 @@
                   "levelType": "roman",
                   "text": "The return of the Liberals (1905-14): Lloyd George's people's budget and National Insurance Act (1911), Parliament Act of 1911, continuing struggle over Ireland and Unionism in Ulster",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "British participation in World War I: Lloyd George's Coalition government, the Easter Rising of 1916 in Ireland",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "British participation in World War I: Lloyd George's Coalition government, the Easter Rising of 1916 in Ireland",
-              "children": []
             },
             {
               "level": "b",
@@ -739,14 +737,20 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Napoleon III's authoritarian policies and reassertion of France's role in Europe (the Crimea and Italy): partnership with Britain (1852-60), the liberal years (1859-70), foreign policy failures and defeat by Germany (1871)",
                   "children": []
                 },
                 {
                   "level": "ii",
                   "levelType": "roman",
-                  "text": "The siege of Paris, the Commune, and the establishment of the Third Republic (1870); attempts at restoration; the \"Republican Republic\"; opportunist control under Gambetta; the Boulangists; colonial expansion; the Dreyfus affair; separation of church and state (1905) iii- The prewar years: conflicts between French rightists and Socialists, alignment with Russia and Britain before World War I, nationalism and revanchism",
+                  "text": "The siege of Paris, the Commune, and the establishment of the Third Republic (1870); attempts at restoration; the \"Republican Republic\"; opportunist control under Gambetta; the Boulangists; colonial expansion; the Dreyfus affair; separation of church and state (1905)",
+                  "children": []
+                },
+                {
+                  "level": "iii",
+                  "levelType": "roman",
+                  "text": "The prewar years: conflicts between French rightists and Socialists, alignment with Russia and Britain before World War I, nationalism and revanchism",
                   "children": []
                 },
                 {
@@ -764,7 +768,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "William I and tentative reform: clashes with the liberals, Bismarck and reform of the Prussian Army, parliamentary subservience to the crown",
                   "children": []
                 },
@@ -785,14 +789,14 @@
                   "levelType": "roman",
                   "text": "The accession of Emperor William II (1888) and the fall of Bismarck; chancellorships of Caprivi, Hohenlohe, and Billow (1890-1909); estrangement from Russia and rivalry with Britain; colonial expansion; militarists and Social Democrats in the period before World War I",
                   "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "World War I (1914-18) and increasing influence of the army: German military defeat (1918), establishment of the German Republic (1919)",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "World War I (1914-18) and increasing influence of the army: German military defeat (1918), establishment of the German Republic (1919)",
-              "children": []
             },
             {
               "level": "d",
@@ -801,7 +805,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Constitutional experiments: the Kremsier and Stadion constitutions; the \"Bach System,\" the October Diploma (1860), and the February Patent (1861); federalism and centralism (1850-67); the role of Emperor Francis Joseph (1848-1916); exclusion from Italy (1859) and Germany (1866); the Ausgleich (Compromise) and the establishment of the Dual Monarchy (1867)",
                   "children": []
                 },
@@ -832,7 +836,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Defeat in the Crimean War (1853-56), abolition of serfdom (1861) and local government reforms under Alexander II (1855-81), Polish rebellion of 1863 and the spread of revolutionary sentiment, the assassination of the Tsar (1881)",
                   "children": []
                 },
@@ -863,7 +867,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Cavour and the unification of Italy under Victor Emmanuel of Piedmont: alliance with France and domestic liberalism, papal opposition, Austrian defeat and territorial cessions in northern Italy in the war of 1859, Garibaldi and the conquest of the south, the annexation of Venetia from Austria (1866) and acquisition of Rome (1870)",
                   "children": []
                 },
@@ -888,7 +892,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Continued civil strife in Spain: control by the military; Carlists, moderados, progressistas, and republicans; the First Republic (1873-74); constitutional monarchy in 1876; further colonial losses in the Spanish-American War (1898)",
                   "children": []
                 },
@@ -914,7 +918,7 @@
             },
             {
               "level": "i",
-              "levelType": "lowercase",
+              "levelType": "roman",
               "text": "Denmark: the Schleswig-Holstein question, defeat by Prussia and Austria (1864) and loss of the duchies, social and economic change under the Conservative regime",
               "children": []
             },
@@ -937,7 +941,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Netherlands: liberalization after 1848, the establishment of the independence of Fuxembourg (1890), Queen Wilhelmina and World War I",
                   "children": []
                 },
@@ -962,7 +966,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Greece: the overthrow of Otho I ( 1862), the constitution of 1864, acquisition of the Ionian Islands (1864) and Thessaly (1881), Cretan union with Greece (1908), Venizelos' policies, eventual adherence to the Triple Entente in World War I",
                   "children": []
                 },

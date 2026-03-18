@@ -138,7 +138,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The origin of life [see 312.A.]",
                   "children": []
                 },
@@ -157,7 +157,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Fossil plants",
                   "children": []
                 },
@@ -178,14 +178,13 @@
                   "levelType": "roman",
                   "text": "Fossil cnidarians (e.g., corals)",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Fossil mollusks (e.g., ammonoids)",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Fossil mollusks (e.g., ammonoids)",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -209,14 +208,14 @@
                   "levelType": "roman",
                   "text": "Fossil arthropods (e.g., trilobites)",
                   "children": []
+                },
+                {
+                  "level": "x",
+                  "levelType": "roman",
+                  "text": "Fossil echinoderms (e.g., sea lilies); graptolites; fossil fish; fossil amphibians; dinosaurs and other fossil reptiles; fossil birds; fossil mammals",
+                  "children": []
                 }
               ]
-            },
-            {
-              "level": "x",
-              "levelType": "lowercase",
-              "text": "Fossil echinoderms (e.g., sea lilies); graptolites; fossil fish; fossil amphibians; dinosaurs and other fossil reptiles; fossil birds; fossil mammals",
-              "children": []
             }
           ]
         },
@@ -267,7 +266,7 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "Application to archaeological problems [see 10/41. B.2.b.]",
+          "text": "Application to archaeological problems [see 10/41.B.2.b.]",
           "children": []
         }
       ]

@@ -1,7 +1,7 @@
 {
   "sectionCode": "931",
   "sectionCodeDisplay": "931",
-  "title": "China to the Beginning of the Late T\u2019ang (ad 755)",
+  "title": "China to the Beginning of the Late T’ang (ad 755)",
   "outline": [
     {
       "level": "A",
@@ -38,7 +38,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Stratigraphy: villages of Hsi-yin-ts'un and Yang-shao-ts un, pottery styles",
                   "children": []
                 },
@@ -88,7 +88,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Breakdown of the Chou feudal system: capital at Loyang, rivalry among Chou states, various Chou successor states in the Warring States period (481-221 bc)",
                   "children": []
                 },
@@ -137,19 +137,26 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "The Han dynasty ' a. Western (Former or Earlier) Han (206 bc-ad 8) and the Wang Mang usurpation (ad 9-23)",
+          "text": "The Han dynasty",
           "children": [
             {
-              "level": "i",
+              "level": "a",
               "levelType": "lowercase",
-              "text": "Establishment of the dynasty by Liu Pang (Han Kao Tsu): the capital at Ch'ang-an, reign of Liu Heng (Han Wen Ti) from 179 to 157 bc, consolidation of Imperial power",
-              "children": []
-            },
-            {
-              "level": "ii",
-              "levelType": "roman",
-              "text": "Expansion under Han Wu Ti (140-87 bc) into southern China and Central Asia, dynastic crisis (91-87 bc), ascendancy of the Wang family and Wang Mang's usurpation of throne (ad 9-23)",
-              "children": []
+              "text": "Western (Former or Earlier) Han (206 bc-ad 8) and the Wang Mang usurpation (ad 9-23)",
+              "children": [
+                {
+                  "level": "i",
+                  "levelType": "roman",
+                  "text": "Establishment of the dynasty by Liu Pang (Han Kao Tsu): the capital at Ch'ang-an, reign of Liu Heng (Han Wen Ti) from 179 to 157 bc, consolidation of Imperial power",
+                  "children": []
+                },
+                {
+                  "level": "ii",
+                  "levelType": "roman",
+                  "text": "Expansion under Han Wu Ti (140-87 bc) into southern China and Central Asia, dynastic crisis (91-87 bc), ascendancy of the Wang family and Wang Mang's usurpation of throne (ad 9-23)",
+                  "children": []
+                }
+              ]
             },
             {
               "level": "b",
@@ -164,7 +171,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Han political system: the structure and the practice of government",
                   "children": []
                 },
@@ -234,7 +241,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Li Yuan's (618-626) establishment of the dynasty: resistance to T'ang conquest, administration of the state, fiscal and legal system",
                   "children": []
                 },

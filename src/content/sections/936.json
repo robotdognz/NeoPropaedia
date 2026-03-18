@@ -61,8 +61,14 @@
         {
           "level": "1",
           "levelType": "numeric",
-          "text": "The Deccan (c. 1320-1627): the Bahman! dynasty and the five Deccan sultanates a \"['he BahmanI dynasty (1347--c. 1527): introduction of Muslims into the Deccan and their relations with the Hindus",
+          "text": "The Deccan (c. 1320-1627): the Bahmani dynasty and the five Deccan sultanates",
           "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The Bahmani dynasty (1347-c. 1527): introduction of Muslims into the Deccan and their relations with the Hindus",
+              "children": []
+            },
             {
               "level": "b",
               "levelType": "lowercase",
@@ -150,7 +156,7 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "The Marathas as the major power in India in the early 18th century: the contribution of the , peshwas (chief ministers) to Maratha success, struggle with the Portuguese, establishment of the Maratha confederacy",
+          "text": "The Marathas as the major power in India in the early 18th century: the contribution of the peshwas (chief ministers) to Maratha success, struggle with the Portuguese, establishment of the Maratha confederacy",
           "children": []
         }
       ]

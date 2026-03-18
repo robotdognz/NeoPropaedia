@@ -11,7 +11,7 @@
         {
           "level": "1",
           "levelType": "numeric",
-          "text": "Moisture in the atmosphere [see also 221.A.l.a. and 723. G. 5.]",
+          "text": "Moisture in the atmosphere [see also 221.A.1.a. and 723.G.5.]",
           "children": [
             {
               "level": "a",
@@ -22,7 +22,7 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "Climatic aspects of atmospheric humidity [see E.l.e., below]",
+              "text": "Climatic aspects of atmospheric humidity [see E.1.e., below]",
               "children": []
             },
             {
@@ -104,7 +104,7 @@
         {
           "level": "4",
           "levelType": "numeric",
-          "text": "Precipitation [see also 222. D. and 723. G. 5.]",
+          "text": "Precipitation [see also 222.D. and 723.G.5.]",
           "children": [
             {
               "level": "a",
@@ -137,7 +137,7 @@
     {
       "level": "B",
       "levelType": "major",
-      "text": "Winds and storms [see also 221. B.]",
+      "text": "Winds and storms [see also 221.B.]",
       "children": [
         {
           "level": "1",
@@ -245,7 +245,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Variability of incident radiation; the solar constant",
                   "children": []
                 },
@@ -309,7 +309,7 @@
             {
               "level": "c",
               "levelType": "lowercase",
-              "text": "Effects of human activities on global climate; e.g., greenhouse warming induced by high concentrations of carbon dioxide (from the burning of fossil fuels) and other trace gases in the atmosphere [see also 241.B.5. and 737.C.1.J",
+              "text": "Effects of human activities on global climate; e.g., greenhouse warming induced by high concentrations of carbon dioxide (from the burning of fossil fuels) and other trace gases in the atmosphere [see also 241.B.5.and 737.C.1.J]",
               "children": []
             }
           ]

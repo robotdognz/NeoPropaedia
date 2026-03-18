@@ -175,8 +175,14 @@
         {
           "level": "4",
           "levelType": "numeric",
-          "text": "Indochina since 1920: emergence of independent states and continued strife , a. French administration of Vietnam, Cambodia, and Laos: Vietnamese nationalist movements and formation of the Indochina Communist Party (1930), Japanese occupation in World War II, postwar French administration in southern Vietnam and Cambodia",
+          "text": "Indochina since 1920: emergence of independent states and continued strife",
           "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "French administration of Vietnam, Cambodia, and Laos: Vietnamese nationalist movements and formation of the Indochina Communist Party (1930), Japanese occupation in World War II, postwar French administration in southern Vietnam and Cambodia",
+              "children": []
+            },
             {
               "level": "b",
               "levelType": "lowercase",
@@ -190,7 +196,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "North Vietnam: industrialization, relations with other communist and other Asian countries, war with South Vietnam, U.S. military intervention, cease-fire agreement (1973), conquest of South Vietnam (1975)",
                   "children": []
                 },
@@ -241,7 +247,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Dutch suppression of nationalist and communist revolts in the 1920s and 1930s, accommodation with moderate nationalist parties, Japanese occupation in World Warll",
                   "children": []
                 },

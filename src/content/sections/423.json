@@ -77,14 +77,13 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Occupational therapy",
-              "children": [
-                {
-                  "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Shock therapy",
-                  "children": []
-                }
-              ]
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Shock therapy",
+              "children": []
             },
             {
               "level": "j",
@@ -146,7 +145,7 @@
         {
           "level": "6",
           "levelType": "numeric",
-          "text": "Diseases and disorders present at the time of birth %",
+          "text": "Diseases and disorders present at the time of birth",
           "children": []
         },
         {
@@ -417,7 +416,7 @@
         {
           "level": "7",
           "levelType": "numeric",
-          "text": "The excretory system [see also 10/35. B.l.d.]",
+          "text": "The excretory system [see also 10/35.B.1.d.]",
           "children": [
             {
               "level": "a",
@@ -491,7 +490,7 @@
         {
           "level": "9",
           "levelType": "numeric",
-          "text": "The nervous system [see also 10/35. B. 1 .f.]",
+          "text": "The nervous system [see also 10/35.B.1.f.]",
           "children": [
             {
               "level": "a",

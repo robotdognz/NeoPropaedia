@@ -4,7 +4,6 @@ import OutlineTree from '../../components/content/OutlineTree';
 import MacropaediaRefs from '../../components/content/MacropaediaRefs';
 import WikipediaRefs from '../../components/content/WikipediaRefs';
 import VsiRecommendations from '../../components/content/VsiRecommendations';
-import CrossRefLink from '../../components/content/CrossRefLink';
 import navigation from '../../data/navigation.json';
 import crossReferences from '../../data/cross-references.json';
 import wikiCatalog from '../../data/wikipedia-catalog.json';
@@ -58,8 +57,68 @@ const currentIndex = allSections.findIndex((s) => s.sectionCode === section.sect
 const prevSection = currentIndex > 0 ? allSections[currentIndex - 1] : null;
 const nextSection = currentIndex < allSections.length - 1 ? allSections[currentIndex + 1] : null;
 
-// Get reverse cross-references ("Referenced by")
+// Get reverse cross-references ("Referenced by") and group by part/division
 const reverseRefs = (crossReferences.reverseIndex as Record<string, any[]>)[section.sectionCode] ?? [];
+
+interface GroupedRef {
+  sourceSection: string;
+  sourcePath?: string;
+  sectionTitle: string;
+}
+interface DivisionGroup {
+  divisionId: string;
+  romanNumeral: string;
+  divisionTitle: string;
+  refs: GroupedRef[];
+}
+interface PartGroup {
+  partNumber: number;
+  partTitle: string;
+  divisions: DivisionGroup[];
+}
+
+const groupedReverseRefs: PartGroup[] = [];
+if (reverseRefs.length > 0) {
+  const refsByPart = new Map<number, Map<string, GroupedRef[]>>();
+  for (const ref of reverseRefs) {
+    const refPart = navigation.parts.find((p: any) => p.divisions.some((d: any) => d.sections.some((s: any) => s.sectionCode === ref.sourceSection)));
+    if (!refPart) continue;
+    const refDiv = refPart.divisions.find((d: any) => d.sections.some((s: any) => s.sectionCode === ref.sourceSection));
+    if (!refDiv) continue;
+    const refSec = refDiv.sections.find((s: any) => s.sectionCode === ref.sourceSection);
+    if (!refSec) continue;
+
+    if (!refsByPart.has(refPart.partNumber)) refsByPart.set(refPart.partNumber, new Map());
+    const divMap = refsByPart.get(refPart.partNumber)!;
+    if (!divMap.has(refDiv.divisionId)) divMap.set(refDiv.divisionId, []);
+    divMap.get(refDiv.divisionId)!.push({
+      sourceSection: ref.sourceSection,
+      sourcePath: ref.sourcePath,
+      sectionTitle: refSec.title,
+    });
+  }
+
+  for (const part of navigation.parts) {
+    const divMap = refsByPart.get(part.partNumber);
+    if (!divMap) continue;
+    const divisions: DivisionGroup[] = [];
+    for (const div of part.divisions) {
+      const refs = divMap.get(div.divisionId);
+      if (!refs) continue;
+      divisions.push({
+        divisionId: div.divisionId,
+        romanNumeral: div.romanNumeral,
+        divisionTitle: div.title,
+        refs,
+      });
+    }
+    groupedReverseRefs.push({
+      partNumber: part.partNumber,
+      partTitle: part.title,
+      divisions,
+    });
+  }
+}
 
 // Try to load VSI mappings for this section
 let vsiMappings: any[] = [];
@@ -178,41 +237,6 @@ try {
         </details>
       </section>
 
-      {reverseRefs.length > 0 && (
-        <section class="mb-8">
-          <details class="group rounded-lg border border-gray-200">
-            <summary class="cursor-pointer list-none bg-gray-50 px-4 py-3 font-serif text-sm font-semibold text-gray-800 [&::-webkit-details-marker]:hidden">
-              <div class="flex items-center justify-between gap-3">
-                <span>Referenced by other sections</span>
-                <svg
-                  class="h-4 w-4 text-gray-500 transition-transform group-open:rotate-180"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  aria-hidden="true"
-                >
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
-            </summary>
-            <div class="px-4 py-3">
-              <div class="flex flex-wrap gap-2">
-                {reverseRefs.map((ref: any) => (
-                  <CrossRefLink
-                    client:visible
-                    targetSection={ref.sourceSection}
-                    targetPath={ref.sourcePath}
-                    baseUrl={base}
-                  />
-                ))}
-              </div>
-            </div>
-          </details>
-        </section>
-      )}
-
       <!-- VSI Recommendations -->
       {vsiMappings.length > 0 && (() => {
         function collectOutlineText(nodes: any[]): string {
@@ -255,6 +279,67 @@ try {
             references={section.macropaediaReferences}
             baseUrl={base}
           />
+        </section>
+      )}
+
+      <!-- Referenced by other sections -->
+      {groupedReverseRefs.length > 0 && (
+        <section class="mb-8">
+          <details class="group rounded-lg border border-dashed border-slate-300">
+            <summary class="cursor-pointer list-none px-4 py-3 font-sans text-xs font-semibold uppercase tracking-wide text-slate-400 [&::-webkit-details-marker]:hidden">
+              <div class="flex items-center justify-between gap-3">
+                <span>Cross references from other sections ({reverseRefs.length})</span>
+                <svg
+                  class="h-4 w-4 text-slate-300 transition-transform group-open:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </summary>
+            <div class="px-4 py-4 space-y-4">
+              {groupedReverseRefs.map((partGroup) => (
+                <div>
+                  <p class="text-xs font-sans font-semibold uppercase tracking-wide text-slate-400 mb-2">
+                    Part {PART_NAMES[partGroup.partNumber]}: {partGroup.partTitle}
+                  </p>
+                  {partGroup.divisions.map((divGroup) => (
+                    <div class="ml-2 mb-3">
+                      <p class="text-xs font-sans font-medium text-slate-500 mb-1">
+                        Division {divGroup.romanNumeral}: {divGroup.divisionTitle}
+                      </p>
+                      <ul class="ml-2 space-y-1">
+                        {divGroup.refs.map((ref) => {
+                          const displayCode = ref.sourceSection.replace(/-/g, '/');
+                          const label = ref.sourcePath ? `${displayCode}.${ref.sourcePath}` : displayCode;
+                          const sectionCodeNormalized = ref.sourceSection.replace(/\//g, '-');
+                          const href = ref.sourcePath
+                            ? `${base}/section/${sectionCodeNormalized}#outline-${sectionCodeNormalized.toLowerCase()}-${ref.sourcePath.split('.').filter(Boolean).map((s: string) => s.toLowerCase()).join('-')}`
+                            : `${base}/section/${sectionCodeNormalized}`;
+                          return (
+                            <li>
+                              <a
+                                href={href}
+                                class="group flex items-start gap-2 rounded px-1 py-0.5 text-sm transition hover:bg-slate-50"
+                              >
+                                <span class="font-mono text-xs text-slate-400 shrink-0 mt-0.5">{label}</span>
+                                <span class="text-slate-700 group-hover:text-indigo-700">{ref.sectionTitle}</span>
+                              </a>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </details>
         </section>
       )}
       {(prevSection || nextSection) && (

@@ -22,7 +22,13 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "Building materials; e.g., stone, brick, wood, iron and steel, concrete ' , b. Constructional systems; e.g., load-bearing wall and nonload-bearing wall, post and lintel, arch, vault, dome, truss, framed structures",
+              "text": "Building materials; e.g., stone, brick, wood, iron and steel, concrete",
+              "children": []
+            },
+            {
+              "level": "b",
+              "levelType": "lowercase",
+              "text": "Constructional systems; e.g., load-bearing wall and nonload-bearing wall, post and lintel, arch, vault, dome, truss, framed structures",
               "children": []
             }
           ]

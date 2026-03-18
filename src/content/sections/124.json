@@ -50,7 +50,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The definition of heat as a form of energy transferred from one body to another under the influence of a difference in temperature",
                   "children": []
                 },
@@ -69,16 +69,16 @@
                 {
                   "level": "iv",
                   "levelType": "roman",
-                  "text": "Technical applications of heat energy [see 721.B.7. and 725.A.5.a.]",
+                  "text": "Technical applications of heat energy [see 721.B.7.and 725.A.5.a.]",
+                  "children": []
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Heat and its relation to entropy, work, and change of energy",
                   "children": []
                 }
               ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Heat and its relation to entropy, work, and change of energy",
-              "children": []
             }
           ]
         },
@@ -489,7 +489,7 @@
         {
           "level": "8",
           "levelType": "numeric",
-          "text": "Applications of plasmas; e.g., power production, jet propulsion [see 112.G.4., 721.B.8.a\u201e and 721.C.3.]",
+          "text": "Applications of plasmas; e.g., power production, jet propulsion [see 112.G.4., 721.B.8.a., and 721.C.3.]",
           "children": []
         },
         {

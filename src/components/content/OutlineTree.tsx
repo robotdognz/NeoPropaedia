@@ -210,7 +210,7 @@ function OutlineNode({ item, sectionCode, depth, baseUrl, currentHref, pathSegme
 
           {/* Text */}
           <span class={`${isMajor ? 'font-semibold text-gray-900' : 'text-gray-700'} min-w-0 text-sm leading-snug`}>
-            <InlineReferenceText text={item.text} baseUrl={baseUrl} currentHref={currentHref} />
+            <InlineReferenceText text={item.text} baseUrl={baseUrl} currentHref={currentHref} sectionCode={sectionCode} />
           </span>
         </div>
 

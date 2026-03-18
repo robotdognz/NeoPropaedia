@@ -255,7 +255,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The nature of ionic bonds: shell theory, ion pairs",
                   "children": []
                 },
@@ -493,14 +493,13 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Organic sulfur compounds",
-              "children": [
-                {
-                  "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Organic phosphorus compounds",
-                  "children": []
-                }
-              ]
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Organic phosphorus compounds",
+              "children": []
             },
             {
               "level": "j",

@@ -41,7 +41,7 @@
         {
           "level": "5",
           "levelType": "numeric",
-          "text": "Parapsychological forms of communication: telepathy [see 432. H.]",
+          "text": "Parapsychological forms of communication: telepathy [see 432.H.]",
           "children": []
         }
       ]
@@ -305,14 +305,13 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Tocharian",
-              "children": [
-                {
-                  "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Celtic",
-                  "children": []
-                }
-              ]
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Celtic",
+              "children": []
             },
             {
               "level": "j",
@@ -775,14 +774,13 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Chinantecan",
-              "children": [
-                {
-                  "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Mixe-Zoque",
-                  "children": []
-                }
-              ]
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Mixe-Zoque",
+              "children": []
             },
             {
               "level": "j",

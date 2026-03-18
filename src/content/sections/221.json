@@ -6,7 +6,7 @@
     {
       "level": "A",
       "levelType": "major",
-      "text": "The composition, structure, and features of the atmosphere [see also 241. B. and 723. G. 5.]",
+      "text": "The composition, structure, and features of the atmosphere [see also 241.B. and 723.G.5.]",
       "children": [
         {
           "level": "1",
@@ -20,8 +20,8 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Water cycle [see also 222. D. 3. and 223. A. 1.]",
+                  "levelType": "roman",
+                  "text": "Water cycle [see also 222.D.3.and 223.A.1.]",
                   "children": []
                 },
                 {
@@ -51,7 +51,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Oxygen dissociation",
                   "children": []
                 },
@@ -108,7 +108,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Absorption of ultraviolet radiation of wavelengths harmful to plant and animal life",
                   "children": []
                 },
@@ -127,14 +127,14 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Ionospheric variations and disturbances of atmospheric origin",
                   "children": []
                 },
                 {
                   "level": "ii",
                   "levelType": "roman",
-                  "text": "Ionospheric variations and disturbances of solar origin: auroras and magnetic storms [see also 212. B.]",
+                  "text": "Ionospheric variations and disturbances of solar origin: auroras and magnetic storms [see also 212.B.]",
                   "children": []
                 },
                 {
@@ -152,20 +152,20 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Effects of low particle density on the properties of the exosphere",
                   "children": []
                 },
                 {
                   "level": "ii",
                   "levelType": "roman",
-                  "text": "Determination of the critical zone, the layer above which the number of particle collisions i negligible",
+                  "text": "Determination of the critical zone, the layer above which the number of particle collisions is negligible",
                   "children": []
                 },
                 {
                   "level": "iii",
                   "levelType": "roman",
-                  "text": "The Van Allen radiation belts [see also 133. B. and 212. B.]",
+                  "text": "The Van Allen radiation belts [see also 133.B. and 212.B.]",
                   "children": []
                 }
               ]
@@ -188,7 +188,7 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "The relation of wind to pressure and temperature: the cause of winds, the effect of Coriolis force, idealized winds derived from simplified models -- the geostrophic and thermal winds [see also 21 l.A.2.a.]",
+          "text": "The relation of wind to pressure and temperature: the cause of winds, the effect of Coriolis force, idealized winds derived from simplified models -- the geostrophic and thermal winds [see also 211.A.2.a.]",
           "children": []
         },
         {

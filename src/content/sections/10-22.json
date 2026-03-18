@@ -36,7 +36,7 @@
         {
           "level": "3",
           "levelType": "numeric",
-          "text": "Axiomatic set theory: formal analyses of set theory based upon certain fundamental assumptions or undefined notions called axioms [see also 10/21. B.3. a.]",
+          "text": "Axiomatic set theory: formal analyses of set theory based upon certain fundamental assumptions or undefined notions called axioms [see also 10/21.B.3.a.]",
           "children": [
             {
               "level": "a",
@@ -85,7 +85,7 @@
             {
               "level": "c",
               "levelType": "lowercase",
-              "text": "Number systems and notation: use of the positional principle and the symbol zero to specify , magnitude in sequences of digits; number systems having different bases --e.g., binary, decimal, and sexagesimal systems [see also 10/23.A. 1.)",
+              "text": "Number systems and notation: use of the positional principle and the symbol zero to specify , magnitude in sequences of digits; number systems having different bases --e.g., binary, decimal, and sexagesimal systems [see also 10/23.A.1.]",
               "children": []
             },
             {
@@ -145,7 +145,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Vector spaces",
                   "children": []
                 },
@@ -166,14 +166,13 @@
                   "levelType": "roman",
                   "text": "Linear functionals and their relation to linear transformations",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Inner products and inner product spaces: self-conjugate, or Hermitian, matrices; unitary and orthogonal matrices",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Inner products and inner product spaces: self-conjugate, or Hermitian, matrices; unitary and orthogonal matrices",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -292,7 +291,7 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "Non-Euclidean geometry [see also 10/21.B.l.b.)",
+          "text": "Non-Euclidean geometry [see also 10/21.B.1.b.]",
           "children": [
             {
               "level": "a",
@@ -397,7 +396,7 @@
         {
           "level": "5",
           "levelType": "numeric",
-          "text": "Combinatorial geometry [see E.l.c., below]",
+          "text": "Combinatorial geometry [see E.1.c., below]",
           "children": []
         },
         {
@@ -652,7 +651,7 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "Elementary number theory: properties of the whole numbers, or integers [see B. 1 .a., above]",
+              "text": "Elementary number theory: properties of the whole numbers, or integers [see B.1.a., above]",
               "children": []
             },
             {
@@ -807,14 +806,13 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Spectral sequences: Serre, Rothenberg-Steenrod, and Eilenberg-Moore spectral sequences",
-              "children": [
-                {
-                  "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Further developments in homotopy theory. Eilenberg-MacLane spaces, the methods of killing homotopy groups, Serre's C-theory",
-                  "children": []
-                }
-              ]
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Further developments in homotopy theory. Eilenberg-MacLane spaces, the methods of killing homotopy groups, Serre's C-theory",
+              "children": []
             },
             {
               "level": "j",

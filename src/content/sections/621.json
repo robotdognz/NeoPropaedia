@@ -65,7 +65,7 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "Elements of rhetoric: figures of speech; e.g., metaphor, simile, personification, hyperbole, ' allegory, parallelism",
+              "text": "Elements of rhetoric: figures of speech; e.g., metaphor, simile, personification, hyperbole, allegory, parallelism",
               "children": []
             },
             {
@@ -88,7 +88,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Rhythmic elements; e.g., accent, beat, cadence, the foot, the stanza, metre",
                   "children": []
                 },
@@ -295,14 +295,13 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Scientific literature",
-              "children": [
-                {
-                  "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Reportage: journalism",
-                  "children": []
-                }
-              ]
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Reportage: journalism",
+              "children": []
             },
             {
               "level": "j",
@@ -325,7 +324,13 @@
             {
               "level": "m",
               "levelType": "lowercase",
-              "text": "Epistolary literature: the letter as literature n.The oration, the speech, and related forms",
+              "text": "Epistolary literature: the letter as literature",
+              "children": []
+            },
+            {
+              "level": "n",
+              "levelType": "lowercase",
+              "text": "The oration, the speech, and related forms",
               "children": []
             },
             {

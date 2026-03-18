@@ -199,7 +199,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Blackbody radiation",
                   "children": []
                 },
@@ -371,7 +371,7 @@
         {
           "level": "9",
           "levelType": "numeric",
-          "text": "The separation of light into its constituent wavelengths, the analysis of light spectra *",
+          "text": "The separation of light into its constituent wavelengths, the analysis of light spectra",
           "children": []
         },
         {
@@ -470,7 +470,7 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "Recording and reproduction [see 735. F.)",
+              "text": "Recording and reproduction [see 735.F.]",
               "children": []
             },
             {
@@ -482,7 +482,7 @@
             {
               "level": "c",
               "levelType": "lowercase",
-              "text": "Speech and music [see 514.D. 1. and 624. B.[",
+              "text": "Speech and music [see 514.D.1.and 624.B.]",
               "children": []
             },
             {

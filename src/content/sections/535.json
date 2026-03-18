@@ -49,7 +49,7 @@
         {
           "level": "1",
           "levelType": "numeric",
-          "text": "Foreign exchange markets: problems of alternative monetary standards and fixed and fluctuat¬ ing exchange rates",
+          "text": "Foreign exchange markets: problems of alternative monetary standards and fixed and fluctuating exchange rates",
           "children": [
             {
               "level": "a",
@@ -80,7 +80,7 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "International monetary and financial institutions: the International Monetary Fund, the Group of Ten, and other attempts at international cooperation [see also 533. D. 2.f.]",
+          "text": "International monetary and financial institutions: the International Monetary Fund, the Group of Ten, and other attempts at international cooperation [see also 533.D.2.f.]",
           "children": [
             {
               "level": "a",
@@ -112,7 +112,13 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "Theories of the business cycle and business cycle models 3., Countercyclical monetary and fiscal policy",
+          "text": "Theories of the business cycle and business cycle models",
+          "children": []
+        },
+        {
+          "level": "3",
+          "levelType": "numeric",
+          "text": "Countercyclical monetary and fiscal policy",
           "children": []
         }
       ]

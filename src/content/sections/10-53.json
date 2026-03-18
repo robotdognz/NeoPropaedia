@@ -1,7 +1,7 @@
 {
   "sectionCode": "10/53",
   "sectionCodeDisplay": "10/53",
-  "title": "-Philosophical Schools and Doctrines",
+  "title": "Philosophical Schools and Doctrines",
   "outline": [
     {
       "level": "A",
@@ -28,7 +28,13 @@
             {
               "level": "c",
               "levelType": "lowercase",
-              "text": "Eleaticism ' d. Atomism",
+              "text": "Eleaticism",
+              "children": []
+            },
+            {
+              "level": "d",
+              "levelType": "lowercase",
+              "text": "Atomism",
               "children": []
             },
             {
@@ -53,14 +59,13 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Epicureanism",
-              "children": [
-                {
-                  "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Skepticism",
-                  "children": []
-                }
-              ]
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Skepticism",
+              "children": []
             },
             {
               "level": "j",
@@ -121,14 +126,13 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Utilitarianism",
-              "children": [
-                {
-                  "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Positivism and Logical Empiricism [for metalogical studies, see 10/12. B.; for studies in the foundations of mathematics, see 10/21. B.]",
-                  "children": []
-                }
-              ]
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Positivism and Logical Empiricism [for metalogical studies, see 10/12. B.; for studies in the foundations of mathematics, see 10/21.B.]",
+              "children": []
             },
             {
               "level": "j",

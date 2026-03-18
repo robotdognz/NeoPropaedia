@@ -6,7 +6,7 @@
     {
       "level": "A",
       "levelType": "major",
-      "text": "The nature, scope, and methods of philosophy [for the major philosophical schools in the West, see 10/53; for the development of non-Western philosophy, see 10/51. B.)",
+      "text": "The nature, scope, and methods of philosophy [for the major philosophical schools in the West, see 10/53; for the development of non-Western philosophy, see 10/51.B.)]",
       "children": [
         {
           "level": "1",
@@ -47,7 +47,7 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "The history, nature, and scope of metaphysics [for schools of thought in metaphysics, see 10/53.B. 1.]",
+              "text": "The history, nature, and scope of metaphysics [for schools of thought in metaphysics, see 10/53.B.1.]",
               "children": []
             },
             {
@@ -159,7 +159,7 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "The history, nature, and scope of philosophical anthropology [for schools of thought in philosophical anthropology, see 10/53. B.3.]",
+              "text": "The history, nature, and scope of philosophical anthropology [for schools of thought in philosophical anthropology, see 10/53.B.3.]",
               "children": []
             },
             {
@@ -179,8 +179,14 @@
         {
           "level": "6",
           "levelType": "numeric",
-          "text": "Ethics, or moral philosophy , a. The history, nature, and types of ethics: the distinction between metaethics and normative ethics",
+          "text": "Ethics, or moral philosophy",
           "children": [
+            {
+              "level": "a",
+              "levelType": "lowercase",
+              "text": "The history, nature, and types of ethics: the distinction between metaethics and normative ethics",
+              "children": []
+            },
             {
               "level": "b",
               "levelType": "lowercase",
@@ -260,13 +266,13 @@
         {
           "level": "10",
           "levelType": "numeric",
-          "text": "The philosophy of logic [see 10/1 1.B.]",
+          "text": "The philosophy of logic [see 10/11.B.]",
           "children": []
         },
         {
           "level": "11",
           "levelType": "numeric",
-          "text": "The philosophy of mathematics [see 10/21. B.]",
+          "text": "The philosophy of mathematics [see 10/21.B.]",
           "children": []
         },
         {
@@ -278,25 +284,25 @@
         {
           "level": "13",
           "levelType": "numeric",
-          "text": "The philosophy of science [see 10/31. B.]",
+          "text": "The philosophy of science [see 10/31.B.]",
           "children": []
         },
         {
           "level": "14",
           "levelType": "numeric",
-          "text": "The philosophy of religion [see 81 1.A.]",
+          "text": "The philosophy of religion [see 811.A.]",
           "children": []
         },
         {
           "level": "15",
           "levelType": "numeric",
-          "text": "The philosophy of law [see 551. A.)",
+          "text": "The philosophy of law [see 551.A.]",
           "children": []
         },
         {
           "level": "16",
           "levelType": "numeric",
-          "text": "The philosophy of education [see 561. A.]",
+          "text": "The philosophy of education [see 561.A.]",
           "children": []
         }
       ]

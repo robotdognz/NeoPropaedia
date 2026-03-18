@@ -20,7 +20,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Political and economic opposition to Britain's taxation policies culminating in the Declaration of Independence (1776)",
                   "children": []
                 },
@@ -45,7 +45,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Constitutional Convention, the federal Constitution, and the struggle for ratification (1787-89)",
                   "children": []
                 },
@@ -77,7 +77,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "\"The Era of Good Feelings\" (1816-24): nationalism and sectionalism, the Missouri Compromise (1820)",
                   "children": []
                 },
@@ -145,7 +145,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Relative military strengths: strategies and tactics of North and South",
                   "children": []
                 },
@@ -215,7 +215,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The quest for gold and silver: boom and bust in mining towns",
                   "children": []
                 },
@@ -246,7 +246,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Technological advances in the iron and steel industry; exploitation of oil, ores, lumber, and other natural resources",
                   "children": []
                 },
@@ -277,7 +277,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Aftermath of the disputed election of 1876: the Compromise of 1877, the end of Southern Reconstruction, and Hayes's administration (1877-81); inflation and the silver issue",
                   "children": []
                 },
@@ -298,14 +298,13 @@
                   "levelType": "roman",
                   "text": "The election of 1888 and Benjamin Harrison's administration (1889-93): congressional leadership, the Sherman Anti-Trust and Sherman Silver Purchase acts, and the McKinley Tariff Act (1890)",
                   "children": []
-                }
-              ]
-            },
-            {
-              "level": "v",
-              "levelType": "lowercase",
-              "text": "Depressed agricultural conditions (1887-97): the Farmers' Alliances and the establishment of the Populist Party (1891), farmers' defection from Republican Party",
-              "children": [
+                },
+                {
+                  "level": "v",
+                  "levelType": "roman",
+                  "text": "Depressed agricultural conditions (1887-97): the Farmers' Alliances and the establishment of the Populist Party (1891), farmers' defection from Republican Party",
+                  "children": []
+                },
                 {
                   "level": "vi",
                   "levelType": "roman",
@@ -334,7 +333,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Spanish-American War and U.S. suzerainty over Cuba; acquisition of the Philippines, the Hawaiian Islands, and Puerto Rico (1898)",
                   "children": []
                 },
@@ -359,7 +358,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Scholars, social workers, and \"muckrakers\" as leaders of the Progressive Movement; social and political urban reforms by state government",
                   "children": []
                 },
@@ -380,11 +379,11 @@
             {
               "level": "c",
               "levelType": "lowercase",
-              "text": "The role of the U.S. in World War I *",
+              "text": "The role of the U.S. in World War I",
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Initial U.S. neutrality: loans and supplies to the Allies, submarine warfare and the break with Germany",
                   "children": []
                 },
@@ -473,7 +472,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Louis Riel and the first Metis-Indian rebellion (1870), establishment of the provinces of Manitoba and British Columbia",
                   "children": []
                 },
@@ -492,7 +491,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The Klondike gold rush (1897) and the settlement of the Northwest Territories, creation of the provinces of Alberta and Saskatchewan (1905)",
                   "children": []
                 },

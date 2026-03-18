@@ -26,7 +26,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Protoscience in Greece before the age of Pericles: empirical versus religious or mythological explanations of natural phenomena",
                   "children": []
                 },
@@ -76,7 +76,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The state of science in Europe in the early 15th century",
                   "children": []
                 },
@@ -101,7 +101,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "The radical reformulation of the objects, methods, and functions of natural knowledge: the work of Bacon, Descartes, and Galileo [see also 10/42.A.3.]",
                   "children": []
                 },
@@ -175,7 +175,7 @@
     {
       "level": "B",
       "levelType": "major",
-      "text": "Philosophy of science [see also 10/52. B.2.]",
+      "text": "Philosophy of science [see also 10/52.B.2.]",
       "children": [
         {
           "level": "1",
@@ -186,7 +186,7 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "'Historical development of the philosophy of science",
+          "text": "Historical development of the philosophy of science",
           "children": [
             {
               "level": "a",

@@ -38,7 +38,7 @@
               "children": [
                 {
                   "level": "i",
-                  "levelType": "lowercase",
+                  "levelType": "roman",
                   "text": "Dermal (protective) tissues: the epidermis of the primary plant body, the periderm of the secondary plant body",
                   "children": []
                 },
@@ -160,7 +160,7 @@
         {
           "level": "6",
           "levelType": "numeric",
-          "text": "Cells of animal tissues [see 331,A.2.b.]",
+          "text": "Cells of animal tissues [see 331.A.2.b.]",
           "children": []
         }
       ]
@@ -178,13 +178,13 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "Relating to the environment primarily: integumentary, skeletal, muscular, nervous, and endocrine systems [see also 333. C. and D.; 334. A., B., and C.]",
+              "text": "Relating to the environment primarily: integumentary, skeletal, muscular, nervous, and endocrine systems [see also 333.C. and D.; 334.A., B., and C.]",
               "children": []
             },
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "Serving cell metabolism primarily: digestive, respiratory, circulatory, and excretory systems [see also 335. C.; 336. A., B., and C.]",
+              "text": "Serving cell metabolism primarily: digestive, respiratory, circulatory, and excretory systems [see also 335.C.; 336.A., B., and C.]",
               "children": []
             },
             {
@@ -204,7 +204,7 @@
         {
           "level": "3",
           "levelType": "numeric",
-          "text": "Development of organ systems [see also 338. D.]",
+          "text": "Development of organ systems [see also 338.D.]",
           "children": []
         }
       ]

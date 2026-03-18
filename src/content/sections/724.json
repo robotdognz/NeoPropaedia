@@ -54,7 +54,7 @@
             {
               "level": "b",
               "levelType": "lowercase",
-              "text": "Products: coal, salt, stone, metal ores, sulfur, phosphates [see also C.2. and 3., below, and 214.A.4.C. and B.5.a.]",
+              "text": "Products: coal, salt, stone, metal ores, sulfur, phosphates [see also C.2.and 3., below, and 214.A.4.C. and B.5.a.]",
               "children": []
             }
           ]
@@ -62,7 +62,7 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "Petroleum and natural gas production [see also C.I., below, 214.B.5.b. and d., and 732.D.2.]",
+          "text": "Petroleum and natural gas production [see also C.1., below, 214.B.5.b. and d., and 732.D.2.]",
           "children": []
         }
       ]
@@ -81,13 +81,13 @@
         {
           "level": "2",
           "levelType": "numeric",
-          "text": "Coal utilization: production of coke, coal tar, light oil, gas, and chemicals [see also B.l.b., above, and 214.B.5.a.]",
+          "text": "Coal utilization: production of coke, coal tar, light oil, gas, and chemicals [see also B.1.b., above, and 214.B.5.a.]",
           "children": []
         },
         {
           "level": "3",
           "levelType": "numeric",
-          "text": "Production and processing of metal ores and metals [see also B.l.b., above, and 214.A.4.C.]",
+          "text": "Production and processing of metal ores and metals [see also B.1.b., above, and 214.A.4.C.]",
           "children": [
             {
               "level": "a",
@@ -135,14 +135,13 @@
               "level": "h",
               "levelType": "lowercase",
               "text": "Lead",
-              "children": [
-                {
-                  "level": "i",
-                  "levelType": "lowercase",
-                  "text": "Magnesium",
-                  "children": []
-                }
-              ]
+              "children": []
+            },
+            {
+              "level": "i",
+              "levelType": "lowercase",
+              "text": "Magnesium",
+              "children": []
             },
             {
               "level": "j",
@@ -281,7 +280,7 @@
             {
               "level": "a",
               "levelType": "lowercase",
-              "text": "To obtain paper and pulp [see also 732. D. 3.]",
+              "text": "To obtain paper and pulp [see also 732.D.3.]",
               "children": []
             },
             {
@@ -311,7 +310,7 @@
             {
               "level": "f",
               "levelType": "lowercase",
-              "text": "To obtain natural fibres [see also 732.C.1. and 732.D.9.]",
+              "text": "To obtain natural fibres [see also 732.C.1.and 732.D.9.]",
               "children": []
             },
             {
