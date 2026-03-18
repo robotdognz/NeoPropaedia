@@ -7,6 +7,7 @@ import {
   wikipediaChecklistKey,
   macropaediaChecklistKey,
 } from '../../utils/readingChecklist';
+import TopReadings from './TopReadings';
 import {
   getReadingPreference,
   subscribeReadingPreference,
@@ -59,11 +60,24 @@ export interface BridgePair {
   macro?: BridgeItem[];
 }
 
+export interface PartReadingItem {
+  title: string;
+  author?: string;
+  count: number;
+}
+
+export interface PartReadings {
+  vsi?: PartReadingItem[];
+  wiki?: PartReadingItem[];
+  macro?: PartReadingItem[];
+}
+
 export interface CircleNavigatorProps {
   parts: CircleNavigatorPart[];
   connections: Record<string, SectionConnection[]>;
   sectionMeta: Record<string, SectionMeta>;
   bridgeRecommendations: Record<string, BridgePair>;
+  partReadings: Record<string, PartReadings>;
   baseUrl: string;
 }
 
@@ -318,7 +332,7 @@ function summarizeConnections(
     .filter((s) => s.section.partNumber > 0);
 }
 
-export default function CircleNavigator({ parts, connections, sectionMeta, bridgeRecommendations, baseUrl }: CircleNavigatorProps) {
+export default function CircleNavigator({ parts, connections, sectionMeta, bridgeRecommendations, partReadings, baseUrl }: CircleNavigatorProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const dragStateRef = useRef<DragState | null>(null);
   const [centerHasFocus, setCenterHasFocus] = useState(false);
@@ -335,7 +349,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
   const [hasLoadedState, setHasLoadedState] = useState(false);
   const [centerPartNumber, setCenterPartNumber] = useState<number | null>(null);
   const [rotationDegrees, setRotationDegrees] = useState(0);
-  const [selectedPartNumber, setSelectedPartNumber] = useState(1);
+  // selectedPartNumber removed — focus is always topPart (no centre) or centerPart (with centre)
   const [centerPreviewPartNumber, setCenterPreviewPartNumber] = useState<number | null>(null);
   const [morphT, setMorphT] = useState(0);
   const [morphPartNumber, setMorphPartNumber] = useState<number | null>(null);
@@ -395,6 +409,10 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
         setMorphT(nextT);
         if (rawT < 1) {
           morphAnimRef.current = requestAnimationFrame(animate);
+        } else {
+          // Ensure clean state after reverse completes
+          setMorphT(0);
+          setMorphPartNumber(null);
         }
       };
       morphAnimRef.current = requestAnimationFrame(animate);
@@ -462,8 +480,6 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
       const rawCenter = parsed?.centerPartNumber;
       const nextCenterPartNumber = rawCenter === null || rawCenter === undefined ? null : Number(rawCenter);
       const nextRotationDegrees = Number(parsed?.rotationDegrees);
-      const nextSelectedPartNumber = Number(parsed?.selectedPartNumber);
-
       const loadedHasCenter = nextCenterPartNumber !== null && knownParts.has(nextCenterPartNumber);
       if (loadedHasCenter) {
         setCenterPartNumber(nextCenterPartNumber);
@@ -474,10 +490,6 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
       if (Number.isFinite(nextRotationDegrees)) {
         const loadedSegAngle = loadedHasCenter ? RING_SEGMENT_ANGLE : FULL_SEGMENT_ANGLE;
         setRotationDegrees(snapRotation(nextRotationDegrees, loadedSegAngle));
-      }
-
-      if (knownParts.has(nextSelectedPartNumber)) {
-        setSelectedPartNumber(nextSelectedPartNumber);
       }
     } catch {
       // Ignore invalid stored state.
@@ -495,13 +507,12 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
         JSON.stringify({
           centerPartNumber,
           rotationDegrees: snapRotation(rotationDegrees, segmentAngle),
-          selectedPartNumber,
         })
       );
     } catch {
       // Ignore storage failures and keep the UI interactive.
     }
-  }, [centerPartNumber, hasLoadedState, rotationDegrees, selectedPartNumber]);
+  }, [centerPartNumber, hasLoadedState, rotationDegrees]);
 
   const hasCenter = centerPartNumber !== null;
   const centerPart = hasCenter ? (parts.find((part) => part.partNumber === centerPartNumber) ?? parts[0]) : null;
@@ -509,8 +520,8 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
   const segmentAngle = 360 / outerParts.length;
   const topPartNumber = topPartNumberForRotation(outerParts, rotationDegrees, segmentAngle);
   const topPart = outerParts.find((part) => part.partNumber === topPartNumber) ?? outerParts[0];
-  const selectedPart = parts.find((part) => part.partNumber === selectedPartNumber) ?? parts[0];
-  const selectedOuterPart = outerParts.find((part) => part.partNumber === selectedPartNumber) ?? null;
+  // Focus part: center part if one exists, otherwise the top part
+  const focusPart = centerPart ?? topPart;
   const previewCenterPart = parts.find((part) => part.partNumber === centerPreviewPartNumber) ?? null;
   const centerDisplayPart = previewCenterPart ?? centerPart;
   const centerTitleLines = centerDisplayPart ? wrapLabel(centerDisplayPart.title, 14, 2) : [];
@@ -585,12 +596,48 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
     return { offsets, newSegAngle, newRotation, oldCenterTarget };
   })();
 
-  const rotatePartToTop = (partNumber: number) => {
-    const partIndex = outerParts.findIndex((part) => part.partNumber === partNumber);
-    if (partIndex === -1) return;
+  const animateToCenter = (partNumber: number) => {
+    if (partNumber === centerPartNumber) return;
+    const snapped = snapRotation(rotationDegrees, segmentAngle);
+    if (Math.abs(snapped - rotationDegrees) > 0.5) {
+      animateSnapRotation(rotationDegrees, snapped);
+    }
+    centerPreviewRotationRef.current = snapped;
+    setCenterPreviewPartNumber(partNumber);
+    // After morph preview completes, commit silently — the preview already
+    // showed the rearrangement, so no post-swap animation needed
+    setTimeout(() => {
+      if (morphAnimRef.current) cancelAnimationFrame(morphAnimRef.current);
+      setMorphT(0);
+      setMorphPartNumber(null);
+      skipMorphReverseRef.current = true;
+      setCenterPreviewPartNumber(null);
 
-    setRotationDegrees(-partIndex * segmentAngle);
-    setSelectedPartNumber(partNumber);
+      // Compute the final rotation for the new layout
+      const oldOuter = hasCenter ? parts.filter((p) => p.partNumber !== centerPartNumber) : parts;
+      const newOuter = parts.filter((p) => p.partNumber !== partNumber);
+      const newSegAngle = 360 / newOuter.length;
+      const oldSegAngle = 360 / oldOuter.length;
+      const currentTopPN = topPartNumberForRotation(oldOuter, snapped, oldSegAngle);
+      const newIndexMap = new Map(newOuter.map((p, i) => [p.partNumber, i]));
+      const newTopIdx = newIndexMap.get(currentTopPN);
+      const newRotation = newTopIdx !== undefined ? -newTopIdx * newSegAngle : snapRotation(snapped, newSegAngle);
+
+      if (postSwapAnimRef.current) cancelAnimationFrame(postSwapAnimRef.current);
+      cancelSnapAnimation();
+      setRotationDegrees(newRotation);
+      setCenterPartNumber(partNumber);
+    }, MORPH_DURATION_MS);
+  };
+
+  const rotateLeft = () => {
+    const target = snapRotation(rotationDegrees + segmentAngle, segmentAngle);
+    animateSnapRotation(rotationDegrees, target);
+  };
+
+  const rotateRight = () => {
+    const target = snapRotation(rotationDegrees - segmentAngle, segmentAngle);
+    animateSnapRotation(rotationDegrees, target);
   };
 
   const movePartToCenter = (partNumber: number) => {
@@ -690,9 +737,9 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
     const oldIndexMap = new Map(oldOuter.map((p, i) => [p.partNumber, i]));
     const newIndexMap = new Map(newOuter.map((p, i) => [p.partNumber, i]));
 
-    const currentTopPN = topPartNumberForRotation(oldOuter, rotationDegrees, oldSegAngle);
-    const newTopIdx = newIndexMap.get(currentTopPN);
-    const newRotation = newTopIdx !== undefined ? -newTopIdx * newSegAngle : snapRotation(rotationDegrees, newSegAngle);
+    // After removing from centre, the removed part should become the top part
+    const removedTopIdx = newIndexMap.get(removedPartNumber);
+    const newRotation = removedTopIdx !== undefined ? -removedTopIdx * newSegAngle : snapRotation(rotationDegrees, newSegAngle);
 
     const currentRotation = rotationDegrees;
     const offsets = new Map<number, number>();
@@ -792,15 +839,6 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
     } else if (dragState.draggingFromCenter) {
       // Dragged center disc but returned — cancel
       setCenterRemovePreview(false);
-      // Quick click on center disc — select it, or navigate if already selected
-      const isQuickClick = !dragState.moved && Date.now() - dragState.startTime <= CLICK_DURATION_THRESHOLD_MS;
-      if (isQuickClick && centerPart) {
-        if (centerPart.partNumber === selectedPartNumber) {
-          window.location.href = centerPart.href;
-        } else {
-          setSelectedPartNumber(centerPart.partNumber);
-        }
-      }
     } else if (!dragState.rotateOnly && dragState.readyForCenter) {
       // Preview already showed the rearrangement — snap directly without replay animation
       const partToCenter = dragState.activePartNumber;
@@ -826,16 +864,27 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
       const nextRotation = snapRotation(rotationDegrees, segmentAngle);
       animateSnapRotation(rotationDegrees, nextRotation);
 
-      const isQuickClick =
-        !dragState.rotateOnly && !dragState.moved && Date.now() - dragState.startTime <= CLICK_DURATION_THRESHOLD_MS;
-
-      if (isQuickClick) {
-        if (dragState.activePartNumber === selectedPartNumber) {
-          const part = parts.find((p) => p.partNumber === dragState.activePartNumber);
-          if (part) window.location.href = part.href;
-        } else {
-          setSelectedPartNumber(dragState.activePartNumber);
+      // Force morph to reverse if it's still in progress
+      if (morphT > 0 && morphPartNumber !== null) {
+        if (morphAnimRef.current) {
+          cancelAnimationFrame(morphAnimRef.current);
+          morphAnimRef.current = null;
         }
+        morphFromTRef.current = morphT;
+        morphStartTimeRef.current = performance.now();
+        const reverseAnimate = (now: number) => {
+          const elapsed = now - morphStartTimeRef.current;
+          const rawT = Math.min(elapsed / (MORPH_DURATION_MS * 0.5), 1);
+          const nextT = lerp(morphFromTRef.current, 0, easeOutCubic(rawT));
+          setMorphT(nextT);
+          if (rawT < 1) {
+            morphAnimRef.current = requestAnimationFrame(reverseAnimate);
+          } else {
+            setMorphT(0);
+            setMorphPartNumber(null);
+          }
+        };
+        morphAnimRef.current = requestAnimationFrame(reverseAnimate);
       }
     }
 
@@ -845,6 +894,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
 
     dragStateRef.current = null;
     if (centerPreviewPartNumber !== null) setCenterPreviewPartNumber(null);
+    if (centerRemovePreview) setCenterRemovePreview(false);
   };
 
   const handleSegmentPointerDown = (partNumber: number) => (event: h.JSX.TargetedPointerEvent<SVGElement>) => {
@@ -1001,31 +1051,29 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
         <div class="flex items-center gap-3">
           <span
             class="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full font-sans text-xs font-bold leading-none text-white"
-            style={{ backgroundColor: selectedPart.colorHex }}
+            style={{ backgroundColor: focusPart.colorHex }}
           >
-            {selectedPart.partNumber}
+            {focusPart.partNumber}
           </span>
-          <span class="min-w-0 truncate text-sm font-serif font-bold text-slate-900 sm:text-base">
-            {selectedPart.title}
-          </span>
+          <a
+            href={focusPart.href}
+            class="min-w-0 truncate text-sm font-serif font-bold text-slate-900 hover:text-indigo-700 transition-colors sm:text-base"
+          >
+            {focusPart.title}
+          </a>
         </div>
         <div class="mt-1.5 flex h-7 items-center gap-1.5">
-          <a
-            href={selectedPart.href}
-            class="rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold text-white transition hover:bg-slate-700"
+          <button
+            type="button"
+            onClick={rotateLeft}
+            class="rounded-full border border-slate-300 bg-white px-2.5 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
+            aria-label="Rotate left"
           >
-            Open part
-          </a>
-          {(!hasCenter || selectedPart.partNumber !== centerPartNumber) && (
-            <button
-              type="button"
-              onClick={() => movePartToCenter(selectedPart.partNumber)}
-              class="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
-            >
-              Move to centre
-            </button>
-          )}
-          {hasCenter && selectedPart.partNumber === centerPartNumber && (
+            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          {hasCenter ? (
             <button
               type="button"
               onClick={removeFromCenter}
@@ -1033,16 +1081,25 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             >
               Remove from centre
             </button>
-          )}
-          {(!hasCenter || selectedPart.partNumber !== centerPartNumber) && selectedPart.partNumber !== topPart.partNumber && (
+          ) : (
             <button
               type="button"
-              onClick={() => rotatePartToTop(selectedPart.partNumber)}
+              onClick={() => animateToCenter(topPart.partNumber)}
               class="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
             >
-              Rotate to top
+              Move to centre
             </button>
           )}
+          <button
+            type="button"
+            onClick={rotateRight}
+            class="rounded-full border border-slate-300 bg-white px-2.5 py-1 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
+            aria-label="Rotate right"
+          >
+            <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -1066,7 +1123,13 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
 
           <circle cx={CENTER} cy={CENTER} r={OUTER_RADIUS + 22} fill="#f8fafc" />
 
-          {outerParts.map((part, index) => {
+          {/* Render non-top segments first, top segment last so it paints on top */}
+          {[...outerParts].sort((a, b) => {
+            if (a.partNumber === topPartNumber) return 1;
+            if (b.partNumber === topPartNumber) return -1;
+            return 0;
+          }).map((part) => {
+            const index = outerParts.findIndex((p) => p.partNumber === part.partNumber);
             const swapOffset = postSwapState && postSwapT > 0
               ? (postSwapState.angularOffsets.get(part.partNumber) ?? 0) * postSwapT
               : 0;
@@ -1091,7 +1154,6 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             const textAnchor = textAnchorForAngle(centerAngle);
             const labelX =
               labelPosition.x + (textAnchor === 'start' ? -30 : textAnchor === 'end' ? 30 : 0);
-            const isSelected = selectedPartNumber === part.partNumber;
             const isTop = topPart.partNumber === part.partNumber;
             const distFromTop = angularDistance(centerAngle, 0);
             const topWeight = Math.max(0, 1 - distFromTop / effectiveSpan);
@@ -1121,11 +1183,23 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                       ? Math.max(0, 1 - morphT * 1.5)
                       : isPostSwapMorphing
                         ? 0
-                        : (isSelected ? 1 : lerp(0.94, 1, topWeight))
+                        : lerp(0.94, 1, topWeight)
                   }
                   class="cursor-grab active:cursor-grabbing"
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
                 />
+
+                {/* Focus outline on the top part when no centre */}
+                {isTop && !hasCenter && !isMorphingToCenter && !isPostSwapMorphing && !(morphT > 0 && morphPartNumber !== null) && (
+                  <path
+                    d={donutSlicePath(CENTER, CENTER, segmentInnerRadius + 2, segmentOuterRadius - 2, startAngle, endAngle)}
+                    fill="none"
+                    stroke="#0f172a"
+                    stroke-width={SELECTION_OUTLINE_WIDTH}
+                    stroke-linejoin="round"
+                    pointer-events="none"
+                  />
+                )}
 
                 <text
                   x={numberPosition.x}
@@ -1152,14 +1226,14 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                     y1={connectorStart.y}
                     x2={connectorEnd.x}
                     y2={connectorEnd.y}
-                    stroke={isSelected || topWeight > 0.5 ? part.colorHex : '#cbd5e1'}
-                    stroke-width={isSelected ? 2.5 : lerp(1.5, 2.5, topWeight)}
+                    stroke={topWeight > 0.5 ? part.colorHex : '#cbd5e1'}
+                    stroke-width={lerp(1.5, 2.5, topWeight)}
                   />
                   <circle cx={connectorEnd.x} cy={connectorEnd.y} r={3.5} fill={part.colorHex} />
                   <text
                     x={labelX}
                     y={labelPosition.y - (labelLines.length * 8)}
-                    fill={isSelected || topWeight > 0.5 ? '#0f172a' : '#334155'}
+                    fill={topWeight > 0.5 ? '#0f172a' : '#334155'}
                     font-size={`${lerp(11, 12, topWeight)}`}
                     font-family="Inter, sans-serif"
                     font-weight="700"
@@ -1174,7 +1248,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                         x={labelX}
                         dy={lineIndex === 0 ? 16 : 14}
                         font-size={`${lerp(13, 14, topWeight)}`}
-                        font-weight={isSelected || topWeight > 0.5 ? '700' : '600'}
+                        font-weight={topWeight > 0.5 ? '700' : '600'}
                         letter-spacing="0"
                       >
                         {line}
@@ -1185,60 +1259,6 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
               </g>
             );
           })}
-
-          {selectedOuterPart && (() => {
-            const selectedIndex = outerParts.findIndex((part) => part.partNumber === selectedOuterPart.partNumber);
-            const selSwapOffset = postSwapState && postSwapT > 0
-              ? (postSwapState.angularOffsets.get(selectedOuterPart.partNumber) ?? 0) * postSwapT
-              : 0;
-            const selRemoveOffset = removeMorphT > 0 && removePreviewOffsets
-              ? (removePreviewOffsets.offsets.get(selectedOuterPart.partNumber) ?? 0) * removeMorphT
-              : 0;
-            const selCenterMoveOffset = morphT > 0 && centerPreviewOffsets && selectedOuterPart.partNumber !== morphPartNumber
-              ? (centerPreviewOffsets.offsets.get(selectedOuterPart.partNumber) ?? 0) * morphT
-              : 0;
-            const selEffectiveSpan = removeMorphT > 0 && removePreviewOffsets
-              ? lerp(segmentAngle, removePreviewOffsets.fullSegAngle, removeMorphT)
-              : morphT > 0 && centerPreviewOffsets && selectedOuterPart.partNumber !== morphPartNumber
-                ? lerp(segmentAngle, centerPreviewOffsets.newSegAngle, morphT)
-                : segmentAngle;
-            const centerAngle = rotationDegrees + selectedIndex * segmentAngle + selSwapOffset + selRemoveOffset + selCenterMoveOffset;
-            const startAngle = centerAngle - selEffectiveSpan / 2;
-            const endAngle = centerAngle + selEffectiveSpan / 2;
-            const selDistFromTop = angularDistance(centerAngle, 0);
-            const selTopWeight = Math.max(0, 1 - selDistFromTop / selEffectiveSpan);
-            const segmentInnerRadius = lerp(effectiveInnerRadius, effectiveInnerRadius - 10, selTopWeight);
-            const segmentOuterRadius = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, selTopWeight);
-            const outlineInset = SELECTION_OUTLINE_WIDTH / 2;
-            const outlineInner = hasCenter ? Math.max(segmentInnerRadius + outlineInset, CENTER_DISC_RADIUS + outlineInset) : segmentInnerRadius + outlineInset;
-            const isMorphing = morphPartNumber === selectedOuterPart.partNumber && morphT > 0;
-            const isPostSwapPart = postSwapState?.oldCenterPartNumber === selectedOuterPart.partNumber && postSwapT > 0;
-
-            return (
-              <path
-                d={isMorphing
-                  ? morphedDonutPath(
-                      CENTER, CENTER,
-                      outlineInner, segmentOuterRadius - outlineInset,
-                      startAngle, endAngle,
-                      CENTER_DISC_RADIUS - outlineInset,
-                      morphT
-                    )
-                  : donutSlicePath(
-                      CENTER, CENTER,
-                      outlineInner, segmentOuterRadius - outlineInset,
-                      startAngle, endAngle
-                    )
-                }
-                fill="none"
-                stroke="#0f172a"
-                stroke-width={SELECTION_OUTLINE_WIDTH}
-                stroke-linejoin="round"
-                pointer-events="none"
-                opacity={isMorphing ? Math.max(0, 1 - morphT * 1.5) : isPostSwapPart ? 0 : 1}
-              />
-            );
-          })()}
 
           {postSwapState && postSwapT > 0 && (() => {
             const oldCP = parts.find((p) => p.partNumber === postSwapState.oldCenterPartNumber);
@@ -1253,7 +1273,6 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             const pTopWeight = Math.max(0, 1 - pDistFromTop / segmentAngle);
             const pInner = lerp(effectiveInnerRadius, effectiveInnerRadius - 10, pTopWeight);
             const pOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, pTopWeight);
-
             const outlineInset = SELECTION_OUTLINE_WIDTH / 2;
             const pOutlineInner = hasCenter ? Math.max(pInner + outlineInset, CENTER_DISC_RADIUS + outlineInset) : pInner + outlineInset;
 
@@ -1270,22 +1289,20 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                   fill={oldCP.colorHex}
                   pointer-events="none"
                 />
-                {selectedPartNumber === oldCP.partNumber && (
-                  <path
-                    d={morphedDonutPath(
-                      CENTER, CENTER,
-                      pOutlineInner, pOuter - outlineInset,
-                      pStartAngle, pEndAngle,
-                      CENTER_DISC_RADIUS - outlineInset,
-                      postSwapT
-                    )}
-                    fill="none"
-                    stroke="#0f172a"
-                    stroke-width={SELECTION_OUTLINE_WIDTH}
-                    stroke-linejoin="round"
-                    pointer-events="none"
-                  />
-                )}
+                <path
+                  d={morphedDonutPath(
+                    CENTER, CENTER,
+                    pOutlineInner, pOuter - outlineInset,
+                    pStartAngle, pEndAngle,
+                    CENTER_DISC_RADIUS - outlineInset,
+                    postSwapT
+                  )}
+                  fill="none"
+                  stroke="#0f172a"
+                  stroke-width={SELECTION_OUTLINE_WIDTH}
+                  stroke-linejoin="round"
+                  pointer-events="none"
+                />
               </>
             );
           })()}
@@ -1301,10 +1318,8 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             const mTopWeight = Math.max(0, 1 - mDistFromTop / segmentAngle);
             const mInner = lerp(effectiveInnerRadius, effectiveInnerRadius - 10, mTopWeight);
             const mOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, mTopWeight);
-            const mIsSelected = selectedPartNumber === morphPartNumber;
             const outlineInset = SELECTION_OUTLINE_WIDTH / 2;
             const mOutlineInner = Math.max(mInner + outlineInset, CENTER_DISC_RADIUS + outlineInset);
-
             return (
               <>
                 <path
@@ -1318,22 +1333,20 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                   fill={mPart.colorHex}
                   pointer-events="none"
                 />
-                {mIsSelected && (
-                  <path
-                    d={morphedDonutPath(
-                      CENTER, CENTER,
-                      mOutlineInner, mOuter - outlineInset,
-                      mStartAngle, mEndAngle,
-                      CENTER_DISC_RADIUS - outlineInset,
-                      morphT
-                    )}
-                    fill="none"
-                    stroke="#0f172a"
-                    stroke-width={SELECTION_OUTLINE_WIDTH}
-                    stroke-linejoin="round"
-                    pointer-events="none"
-                  />
-                )}
+                <path
+                  d={morphedDonutPath(
+                    CENTER, CENTER,
+                    mOutlineInner, mOuter - outlineInset,
+                    mStartAngle, mEndAngle,
+                    CENTER_DISC_RADIUS - outlineInset,
+                    morphT
+                  )}
+                  fill="none"
+                  stroke="#0f172a"
+                  stroke-width={SELECTION_OUTLINE_WIDTH}
+                  stroke-linejoin="round"
+                  pointer-events="none"
+                />
               </>
             );
           })()}
@@ -1346,6 +1359,8 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             const tTopWeight = Math.max(0, 1 - tDistFromTop / tSegAngle);
             const tInner = lerp(INNER_RADIUS, INNER_RADIUS - 10, tTopWeight);
             const tOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, tTopWeight);
+            const tOutlineInset = SELECTION_OUTLINE_WIDTH / 2;
+            const tOutlineInner = Math.max(tInner + tOutlineInset, CENTER_DISC_RADIUS + tOutlineInset);
             const tNumberPos = polar(CENTER, CENTER, lerp(134, 138, tTopWeight), target.centerAngle);
             const tConnStart = polar(CENTER, CENTER, tOuter + 6, target.centerAngle);
             const tConnEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, tTopWeight), target.centerAngle);
@@ -1353,10 +1368,6 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             const tTextAnchor = textAnchorForAngle(target.centerAngle);
             const tLabelX = tLabelPos.x + (tTextAnchor === 'start' ? -30 : tTextAnchor === 'end' ? 30 : 0);
             const tLabelLines = wrapLabel(centerPart.title);
-            const tIsSelected = selectedPartNumber === centerPart.partNumber;
-            const outlineInset = SELECTION_OUTLINE_WIDTH / 2;
-            const tOutlineInner = Math.max(tInner + outlineInset, CENTER_DISC_RADIUS + outlineInset);
-
             return (
               <g opacity={morphT} pointer-events="none">
                 <path
@@ -1370,21 +1381,19 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                   fill={centerPart.colorHex}
                   opacity={1 / Math.max(morphT, 0.01)}
                 />
-                {tIsSelected && (
-                  <path
-                    d={morphedDonutPath(
-                      CENTER, CENTER,
-                      tOutlineInner, tOuter - outlineInset,
-                      target.startAngle, target.endAngle,
-                      CENTER_DISC_RADIUS - outlineInset,
-                      1 - morphT
-                    )}
-                    fill="none"
-                    stroke="#0f172a"
-                    stroke-width={SELECTION_OUTLINE_WIDTH}
-                    stroke-linejoin="round"
-                  />
-                )}
+                <path
+                  d={morphedDonutPath(
+                    CENTER, CENTER,
+                    tOutlineInner, tOuter - tOutlineInset,
+                    target.startAngle, target.endAngle,
+                    CENTER_DISC_RADIUS - tOutlineInset,
+                    1 - morphT
+                  )}
+                  fill="none"
+                  stroke="#0f172a"
+                  stroke-width={SELECTION_OUTLINE_WIDTH}
+                  stroke-linejoin="round"
+                />
                 <text
                   x={tNumberPos.x}
                   y={tNumberPos.y}
@@ -1450,10 +1459,9 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             const rmTopWeight = Math.max(0, 1 - rmDistFromTop / fullSegAngle);
             const rmInner = lerp(INNER_RADIUS, INNER_RADIUS - 10, rmTopWeight);
             const rmOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, rmTopWeight);
+            const rmOutlineInset = SELECTION_OUTLINE_WIDTH / 2;
+            const rmOutlineInner = Math.max(rmInner + rmOutlineInset, CENTER_DISC_RADIUS + rmOutlineInset);
 
-            const outlineInset = SELECTION_OUTLINE_WIDTH / 2;
-            const rmOutlineInner = Math.max(rmInner + outlineInset, CENTER_DISC_RADIUS + outlineInset);
-            const isSelected = selectedPartNumber === centerPart.partNumber;
             const numberPos = polar(CENTER, CENTER, lerp(134, 138, rmTopWeight), rmCenterAngle);
             const rmConnectorStart = polar(CENTER, CENTER, rmOuter + 6, rmCenterAngle);
             const rmConnectorEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, rmTopWeight), rmCenterAngle);
@@ -1475,21 +1483,19 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                   fill={centerPart.colorHex}
                   opacity={1 / removeMorphT}
                 />
-                {isSelected && (
-                  <path
-                    d={morphedDonutPath(
-                      CENTER, CENTER,
-                      rmOutlineInner, rmOuter - outlineInset,
-                      rmStartAngle, rmEndAngle,
-                      CENTER_DISC_RADIUS - outlineInset,
-                      1 - removeMorphT
-                    )}
-                    fill="none"
-                    stroke="#0f172a"
-                    stroke-width={SELECTION_OUTLINE_WIDTH}
-                    stroke-linejoin="round"
-                  />
-                )}
+                <path
+                  d={morphedDonutPath(
+                    CENTER, CENTER,
+                    rmOutlineInner, rmOuter - rmOutlineInset,
+                    rmStartAngle, rmEndAngle,
+                    CENTER_DISC_RADIUS - rmOutlineInset,
+                    1 - removeMorphT
+                  )}
+                  fill="none"
+                  stroke="#0f172a"
+                  stroke-width={SELECTION_OUTLINE_WIDTH}
+                  stroke-linejoin="round"
+                />
                 <text
                   x={numberPos.x}
                   y={numberPos.y}
@@ -1568,31 +1574,10 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                 svgRef.current.setPointerCapture(event.pointerId);
               }
             }}
-            onClick={() => {
-              if (centerPart) {
-                if (centerPart.partNumber === selectedPartNumber) {
-                  window.location.href = centerPart.href;
-                } else {
-                  setSelectedPartNumber(centerPart.partNumber);
-                }
-              }
-            }}
             onFocus={() => {
               setCenterHasFocus(true);
             }}
             onBlur={() => setCenterHasFocus(false)}
-            onKeyDown={(event) => {
-              if (event.key === 'Enter' || event.key === ' ') {
-                event.preventDefault();
-                if (centerPart) {
-                  if (centerPart.partNumber === selectedPartNumber) {
-                    window.location.href = centerPart.href;
-                  } else {
-                    setSelectedPartNumber(centerPart.partNumber);
-                  }
-                }
-              }
-            }}
           >
             {centerHasFocus && (
               <circle
@@ -1615,10 +1600,8 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                 removeMorphT > 0 ? Math.max(0, 1 - removeMorphT * 1.5) : 1
               }
             />
-            {removeMorphT === 0 && (
-              (centerPart && selectedPartNumber === centerPart.partNumber && !(morphT > 0 && morphPartNumber !== null))
-              || (morphPartNumber === selectedPartNumber && morphT > 0.95)
-            ) ? (
+            {/* Focus outline on centre disc — show when centre exists, or when morph preview is nearly complete */}
+            {(hasCenter || (morphT > 0.9 && morphPartNumber !== null)) && removeMorphT === 0 && (
               <circle
                 cx={CENTER}
                 cy={CENTER}
@@ -1628,7 +1611,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                 stroke-width={SELECTION_OUTLINE_WIDTH}
                 pointer-events="none"
               />
-            ) : null}
+            )}
             <g opacity={
               removeMorphT > 0 ? Math.max(0, 1 - removeMorphT * 1.5) : 1
             }>
@@ -1884,8 +1867,18 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                 Circle of learning
               </p>
               <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-                {topPart.title} is at the top. See its divisions below.
+                {topPart.title} is at the top.
               </p>
+
+              <div class="mt-3 border-t border-slate-200 pt-3">
+                <a
+                  href={`${baseUrl}/part/${topPart.partNumber}`}
+                  class="inline-flex items-center gap-1.5 rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
+                >
+                  Read essay
+                </a>
+              </div>
+
               {topPart.divisions.length > 0 && (
                 <div class="mt-3 border-t border-slate-200 pt-3">
                   <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
@@ -1909,6 +1902,19 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                       </li>
                     ))}
                   </ul>
+                </div>
+              )}
+
+              {partReadings[String(topPartNumber)] && (
+                <div class="mt-3 border-t border-slate-200 pt-3">
+                  <TopReadings
+                    vsi={partReadings[String(topPartNumber)]?.vsi}
+                    wiki={partReadings[String(topPartNumber)]?.wiki}
+                    macro={partReadings[String(topPartNumber)]?.macro}
+                    baseUrl={baseUrl}
+                    contextLabel="this part"
+                    countLabel="divisions"
+                  />
                 </div>
               )}
             </>

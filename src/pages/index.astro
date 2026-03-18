@@ -10,6 +10,13 @@ import { createMarkdownProcessor } from '@astrojs/markdown-remark';
 const base = import.meta.env.BASE_URL;
 const parts = navigation.parts;
 
+// Load per-part reading recommendations for CircleNavigator
+const allPartReadings = await getCollection('part-readings');
+const partReadingsMap: Record<string, any> = {};
+for (const entry of allPartReadings) {
+  partReadingsMap[String(entry.data.partNumber)] = entry.data.readings;
+}
+
 // Build section metadata lookup for CircleNavigator
 const sectionMeta: Record<string, { title: string; partNumber: number; sectionCode: string }> = {};
 parts.forEach((p: any) => {
@@ -245,17 +252,17 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
         </h2>
         <p class="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
           A visual way to explore the ten parts of the Outline of Knowledge.
-          Drag the ring to rotate it - the part at the top is your current focus,
-          and its divisions are listed below the circle.
-          Pull any part inward to make it the centre, then rotate to see how
-          other parts connect to it. Click a selected part to open it.
+          Use the arrows to rotate the ring - the part at the top is your current focus,
+          with its divisions and reading recommendations listed below.
+          Move a part to the centre to see how it connects to others through
+          shared readings. Drag the ring to rotate freely, or pull any part inward.
           Adler&apos;s essay below explains the thinking behind this arrangement.
           You can also browse the full outline from the sidebar on any page.
         </p>
       </div>
 
       <div class="mt-8">
-        <CircleNavigator client:load parts={circleNavigatorParts} connections={partConnections} sectionMeta={sectionMeta} bridgeRecommendations={bridgeRecommendations} baseUrl={base} />
+        <CircleNavigator client:load parts={circleNavigatorParts} connections={partConnections} sectionMeta={sectionMeta} bridgeRecommendations={bridgeRecommendations} partReadings={partReadingsMap} baseUrl={base} />
       </div>
     </section>
 
