@@ -101,19 +101,26 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
         </p>
       </div>
 
-      {vsi.length > 0 && (
-        <Accordion title={`Oxford VSI Recommendations (${vsi.length})`} forceOpenKey={readingPref === 'vsi' ? 0 : undefined} forceCloseKey={readingPref !== 'vsi' ? 0 : undefined}>
+      {[
+        { type: 'vsi' as const, items: vsi, title: `Oxford VSI Recommendations (${vsi.length})`, browseHref: `${baseUrl}/vsi`, browseLabel: 'Browse all Oxford VSI books', whyLabel: 'Why this book?', getCheckKey: (item: ReadingItem) => vsiChecklistKey(item.title, item.author || ''), getHref: (item: ReadingItem) => `${baseUrl}/vsi/${slugify(item.title)}`, showAuthor: true },
+        { type: 'wikipedia' as const, items: wiki, title: `Wikipedia Article Recommendations (${wiki.length})`, browseHref: `${baseUrl}/wikipedia`, browseLabel: 'Browse all Wikipedia articles', whyLabel: 'Why this article?', getCheckKey: (item: ReadingItem) => wikipediaChecklistKey(item.title), getHref: (item: ReadingItem) => `${baseUrl}/wikipedia/${slugify(item.title)}`, showAuthor: false },
+        { type: 'macropaedia' as const, items: macro, title: `Macropaedia Reading List (${macro.length})`, browseHref: `${baseUrl}/macropaedia`, browseLabel: 'Browse all Macropaedia articles', whyLabel: 'Why this article?', getCheckKey: (item: ReadingItem) => macropaediaChecklistKey(item.title), getHref: (item: ReadingItem) => `${baseUrl}/macropaedia/${slugify(item.title)}`, showAuthor: false },
+      ]
+        .filter(s => s.items.length > 0)
+        .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0))
+        .map((section) => (
+        <Accordion key={section.type} title={section.title} forceOpenKey={readingPref === section.type ? 0 : undefined} forceCloseKey={readingPref !== section.type ? 0 : undefined}>
           <div class="mb-4 flex justify-end">
             <a
-              href={`${baseUrl}/vsi`}
+              href={section.browseHref}
               class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
             >
-              Browse all Oxford VSI books
+              {section.browseLabel}
             </a>
           </div>
           <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {vsi.map((item) => {
-              const checkKey = vsiChecklistKey(item.title, item.author || '');
+            {section.items.map((item) => {
+              const checkKey = section.getCheckKey(item);
               const isChecked = Boolean(checklistState[checkKey]);
               const matchPercent = item.relevance ?? 100;
 
@@ -124,7 +131,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
                 >
                   <div class="flex items-start justify-between gap-2">
                     <a
-                      href={`${baseUrl}/vsi/${slugify(item.title)}`}
+                      href={section.getHref(item)}
                       class="font-serif font-bold text-gray-900 text-base leading-tight hover:text-indigo-700 transition-colors"
                     >
                       {item.title}
@@ -139,7 +146,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
                       Done
                     </label>
                   </div>
-                  {item.author && <p class="mt-1 text-xs text-gray-400">{item.author}</p>}
+                  {section.showAuthor && item.author && <p class="mt-1 text-xs text-gray-400">{item.author}</p>}
                   <div class="mt-3 flex items-center gap-2">
                     <div class="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-100">
                       <div
@@ -150,7 +157,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
                     <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">{matchPercent}% relevance</span>
                   </div>
                   <div class="mt-2">
-                    <Accordion title="Why this book?" defaultOpen={false}>
+                    <Accordion title={section.whyLabel} defaultOpen={false}>
                       <p class="text-gray-600">{buildRationale(item, countLabel, contextLabel)}</p>
                     </Accordion>
                   </div>
@@ -159,125 +166,7 @@ export default function TopReadings({ vsi = [], wiki = [], macro = [], baseUrl, 
             })}
           </div>
         </Accordion>
-      )}
-
-      {wiki.length > 0 && (
-        <Accordion title={`Wikipedia Article Recommendations (${wiki.length})`} forceOpenKey={readingPref === 'wikipedia' ? 0 : undefined} forceCloseKey={readingPref !== 'wikipedia' ? 0 : undefined}>
-          <div class="mb-4 flex justify-end">
-            <a
-              href={`${baseUrl}/wikipedia`}
-              class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
-            >
-              Browse all Wikipedia articles
-            </a>
-          </div>
-          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {wiki.map((item) => {
-              const checkKey = wikipediaChecklistKey(item.title);
-              const isChecked = Boolean(checklistState[checkKey]);
-              const matchPercent = item.relevance ?? 100;
-
-              return (
-                <div
-                  key={item.title}
-                  class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-slate-300 bg-slate-200/70 opacity-50' : 'border-gray-200'}`}
-                >
-                  <div class="flex items-start justify-between gap-2">
-                    <a
-                      href={`${baseUrl}/wikipedia/${slugify(item.title)}`}
-                      class="font-serif font-bold text-gray-900 text-base leading-tight hover:text-indigo-700 transition-colors"
-                    >
-                      {item.title}
-                    </a>
-                    <label class="flex shrink-0 items-center gap-1 text-xs font-sans text-gray-500 cursor-pointer">
-                      <input
-                        type="checkbox"
-                        checked={isChecked}
-                        onChange={(e) => writeChecklistState(checkKey, (e.currentTarget as HTMLInputElement).checked)}
-                        class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                      />
-                      Done
-                    </label>
-                  </div>
-                  <div class="mt-3 flex items-center gap-2">
-                    <div class="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-100">
-                      <div
-                        class={`h-full rounded-full ${matchColor(matchPercent)}`}
-                        style={{ width: `${matchPercent}%` }}
-                      />
-                    </div>
-                    <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">{matchPercent}% relevance</span>
-                  </div>
-                  <div class="mt-2">
-                    <Accordion title="Why this article?" defaultOpen={false}>
-                      <p class="text-gray-600">{buildRationale(item, countLabel, contextLabel)}</p>
-                    </Accordion>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </Accordion>
-      )}
-
-      {macro.length > 0 && (
-        <Accordion title={`Macropaedia Reading List (${macro.length})`} forceOpenKey={readingPref === 'macropaedia' ? 0 : undefined} forceCloseKey={readingPref !== 'macropaedia' ? 0 : undefined}>
-          <div class="mb-4 flex justify-end">
-            <a
-              href={`${baseUrl}/macropaedia`}
-              class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
-            >
-              Browse all Macropaedia articles
-            </a>
-          </div>
-          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {macro.map((item) => {
-              const checkKey = macropaediaChecklistKey(item.title);
-              const isChecked = Boolean(checklistState[checkKey]);
-              const matchPercent = item.relevance ?? 100;
-
-              return (
-                <div
-                  key={item.title}
-                  class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-slate-300 bg-slate-200/70 opacity-50' : 'border-gray-200'}`}
-                >
-                  <div class="flex items-start justify-between gap-2">
-                    <a
-                      href={`${baseUrl}/macropaedia/${slugify(item.title)}`}
-                      class="font-serif font-bold text-gray-900 text-base leading-tight hover:text-indigo-700 transition-colors"
-                    >
-                      {item.title}
-                    </a>
-                    <label class="flex shrink-0 items-center gap-1 text-xs font-sans text-gray-500 cursor-pointer">
-                      <input
-                        type="checkbox"
-                        checked={isChecked}
-                        onChange={(e) => writeChecklistState(checkKey, (e.currentTarget as HTMLInputElement).checked)}
-                        class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                      />
-                      Done
-                    </label>
-                  </div>
-                  <div class="mt-3 flex items-center gap-2">
-                    <div class="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-100">
-                      <div
-                        class={`h-full rounded-full ${matchColor(matchPercent)}`}
-                        style={{ width: `${matchPercent}%` }}
-                      />
-                    </div>
-                    <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">{matchPercent}% relevance</span>
-                  </div>
-                  <div class="mt-2">
-                    <Accordion title="Why this article?" defaultOpen={false}>
-                      <p class="text-gray-600">{buildRationale(item, countLabel, contextLabel)}</p>
-                    </Accordion>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </Accordion>
-      )}
+      ))}
     </div>
   );
 }

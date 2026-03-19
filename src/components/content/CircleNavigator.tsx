@@ -287,8 +287,10 @@ function summarizeConnections(
   const refs = connections[key] || [];
 
   if (refs.length > 0) {
-    // Determine connection type: direct if none have 'via' or 'sharedArticle'
-    const isDirect = refs.every((r) => !r.via && !r.sharedArticle);
+    // Determine connection type: direct if none have 'via', 'sharedArticle', or 'keywordMatch'
+    const hasDirect = refs.some((r) => !r.via && !r.sharedArticle && !(r as any).keywordMatch);
+    const hasKeyword = refs.some((r) => (r as any).keywordMatch);
+    const isDirect = hasDirect;
 
     const counts: Record<string, number> = {};
     refs.forEach((r) => {
@@ -1694,18 +1696,14 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                 return (
                 <div class="mt-3 border-t border-slate-200 pt-3">
                   <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-                    {isDirect
-                      ? 'Direct connections'
-                      : hasConnectionData
-                        ? 'Indirect connections'
-                        : 'No direct overlap'}
+                    Connected sections
                   </p>
                   <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
                     {isDirect
-                      ? `Sections where ${centerPart.title.toLowerCase()} and ${topPart.title.toLowerCase()} cross-reference each other.`
+                      ? `Sections where ${centerPart.title} and ${topPart.title} cross-reference each other${hasKeyword ? ', supplemented by sections with related subject matter.' : '.'}`
                       : hasConnectionData
-                        ? `These parts connect indirectly through shared references. These sections sit at the crossroads.`
-                        : `These two parts don't directly reference each other. Try these well-connected sections as starting points instead.`}
+                        ? `Sections that connect ${centerPart.title} and ${topPart.title} through shared references and related subject matter.`
+                        : `Sections with related subject matter across ${centerPart.title} and ${topPart.title}.`}
                   </p>
                   <ul class="mt-2 space-y-1">
                     {suggestedSections.map((s) => {
@@ -1766,7 +1764,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                       { items: bridgeVsi, type: 'vsi' as const, title: 'Oxford VSI Recommendations', maxTotal: maxVsiTotal, browseHref: `${baseUrl}/vsi`, browseLabel: 'Browse all Oxford VSI books', getHref: (item: BridgeItem) => `${baseUrl}/vsi/${slugify(item.t)}`, getCheckKey: (item: BridgeItem) => vsiChecklistKey(item.t, item.a || '') },
                       { items: bridgeWiki, type: 'wikipedia' as const, title: 'Wikipedia Article Recommendations', maxTotal: maxWikiTotal, browseHref: `${baseUrl}/wikipedia`, browseLabel: 'Browse all Wikipedia articles', getHref: (item: BridgeItem) => `${baseUrl}/wikipedia/${slugify(item.t)}`, getCheckKey: (item: BridgeItem) => wikipediaChecklistKey(item.t) },
                       { items: bridgeMacro, type: 'macropaedia' as const, title: 'Macropaedia Reading List', maxTotal: maxMacroTotal, browseHref: `${baseUrl}/macropaedia`, browseLabel: 'Browse all Macropaedia articles', getHref: (item: BridgeItem) => `${baseUrl}/macropaedia/${slugify(item.t)}`, getCheckKey: (item: BridgeItem) => macropaediaChecklistKey(item.t) },
-                    ].filter(section => section.items.length > 0).map((section) => (
+                    ].filter(section => section.items.length > 0).sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0)).map((section) => (
                       <Accordion
                         key={section.type}
                         title={`${section.title} (${section.items.length})`}

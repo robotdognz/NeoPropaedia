@@ -246,7 +246,7 @@ try {
         }
         const outlineText = collectOutlineText(section.outline).trim();
         return (
-        <section class="mb-8">
+        <section class="mb-8" data-reading-type="vsi">
           <VsiRecommendations
             client:load
             mappings={vsiMappings}
@@ -261,7 +261,7 @@ try {
 
       <!-- Wikipedia Article Recommendations -->
       {wikiArticlesForSection.length > 0 && (
-        <section class="mb-8">
+        <section class="mb-8" data-reading-type="wikipedia">
           <WikipediaRefs
             client:load
             articles={wikiArticlesForSection}
@@ -273,7 +273,7 @@ try {
 
       <!-- Macropaedia References -->
       {section.macropaediaReferences.length > 0 && (
-        <section class="mb-8">
+        <section class="mb-8" data-reading-type="macropaedia">
           <MacropaediaRefs
             client:load
             references={section.macropaediaReferences}
@@ -282,6 +282,26 @@ try {
           />
         </section>
       )}
+
+      <script is:inline>
+        // Reorder reading recommendation sections based on user preference
+        (function() {
+          try {
+            var pref = localStorage.getItem('propaedia-reading-preference') || 'vsi';
+            var sections = document.querySelectorAll('[data-reading-type]');
+            if (sections.length < 2) return;
+            var parent = sections[0].parentNode;
+            var ordered = Array.from(sections).sort(function(a, b) {
+              var aMatch = a.getAttribute('data-reading-type') === pref ? 0 : 1;
+              var bMatch = b.getAttribute('data-reading-type') === pref ? 0 : 1;
+              return aMatch - bMatch;
+            });
+            // Find the position of the first reading section
+            var firstSection = sections[0];
+            ordered.forEach(function(el) { parent.insertBefore(el, firstSection); });
+          } catch(e) {}
+        })();
+      </script>
 
       <!-- Referenced by other sections -->
       {groupedReverseRefs.length > 0 && (

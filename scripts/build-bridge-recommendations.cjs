@@ -140,9 +140,10 @@ for (let i = 0; i < partNumbers.length; i++) {
       }
       items.sort((x, y) => y._score - x._score || x.t.localeCompare(y.t));
       const maxScore = items.length > 0 ? items[0]._score : 1;
-      return items
-        .map(({ _score, ...rest }) => ({ ...rest, r: Math.round((_score / maxScore) * 100) }))
-        .filter(item => item.r >= 30);
+      const scored = items.map(({ _score, ...rest }) => ({ ...rest, r: Math.round((_score / maxScore) * 100) }));
+      // Keep all items if there are very few; otherwise apply 30% cutoff
+      if (scored.length <= 5) return scored;
+      return scored.filter(item => item.r >= 30);
     }
 
     const sharedVsi = collectAndRank(vsiIndex, (t) => t, (t, e) => e.author);

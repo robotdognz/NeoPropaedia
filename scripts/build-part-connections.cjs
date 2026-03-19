@@ -173,15 +173,172 @@ allPairs.forEach((key) => {
   }
 });
 
-// 4. Merge into output
+// 4. Keyword-based connections: find sections with significant outline text overlap
+const STOP_WORDS = new Set([
+  // Standard stop words
+  'a','an','and','are','as','at','be','by','for','from','has','have','he','in','is','it','its',
+  'of','on','or','that','the','to','was','were','will','with','not','but','this','these',
+  'their','they','those','other','such','than','more','most','been','being','had','having',
+  'does','did','do','would','could','should','about','after','before','between','through',
+  'during','without','within','under','over','into','upon','each','every','some','many',
+  // Domain-generic academic terms that appear in every field
+  'development','developments','history','historical','role','nature','types','various',
+  'general','aspects','problems','effects','methods','theory','theories','systems','system',
+  'major','modern','early','new','first','different','particular','special','specific',
+  'structure','structures','process','processes','form','forms','principles','principle',
+  'properties','concepts','concept','study','studies','relations','relation','relationship',
+  'influence','influences','changes','change','including','included','based','approach',
+  'introduction','rise','growth','period','periods','century','centuries','world',
+  'institutions','social','political','economic','cultural','national','international',
+  'ancient','medieval','western','eastern','european','british','french','german',
+  'establishment','treatment','practice','practices','science','sciences','scientific',
+  'traditional','contemporary','basic','fundamental','applied','related',
+  // Polysemous terms that cause false matches across unrelated fields
+  'composition','elements','element','movement','movements','material','materials',
+  'physical','optical','magnetic','mechanical','technical','functional','formal',
+  'classification','categories','characteristics','conditions','features','qualities',
+  'construction','production','distribution','organization','administration',
+  'time','space','order','power','force','forces','energy','motion','light','sound',
+  'body','bodies','mass','surface','water','earth','fire','line','point','field',
+  'origin','origins','works','work','action','activities','activity','operation',
+  'formation','determination','analysis','measurement','control','design','pattern',
+  'texture','character','style','expression','interpretation','function','functions',
+  // Propaedia-specific noise
+  'e.g.','i.e.','see','also','above','below','etc','use','used','using','may','can',
+]);
+
+function tokenizeOutline(data) {
+  let text = data.title + ' ';
+  function walk(items) {
+    for (const item of items || []) {
+      text += item.text + ' ';
+      walk(item.children);
+    }
+  }
+  walk(data.outline);
+  return new Set(
+    text.toLowerCase()
+      .replace(/[^\p{L}\p{N}\s]/gu, ' ')
+      .split(/\s+/)
+      .filter(w => w.length > 3 && !STOP_WORDS.has(w))
+  );
+}
+
+// Build keyword sets per section
+const sectionKeywords = {};
+for (const file of fs.readdirSync(SECTIONS_DIR)) {
+  if (!file.endsWith('.json')) continue;
+  const data = JSON.parse(fs.readFileSync(path.join(SECTIONS_DIR, file), 'utf8'));
+  sectionKeywords[data.sectionCode] = tokenizeOutline(data);
+}
+
+// Compute IDF weights (rarer words are more meaningful)
+const wordDocCount = {};
+Object.values(sectionKeywords).forEach(words => {
+  words.forEach(w => { wordDocCount[w] = (wordDocCount[w] || 0) + 1; });
+});
+const totalDocs = Object.keys(sectionKeywords).length;
+
+function keywordScore(setA, setB) {
+  let score = 0;
+  setA.forEach(w => {
+    if (setB.has(w)) {
+      const idf = Math.log(totalDocs / (wordDocCount[w] || 1));
+      score += idf;
+    }
+  });
+  return score;
+}
+
+const keywordConnections = {};
+allPairs.forEach((key) => {
+  const [partA, partB] = key.split('-').map(Number);
+
+  // Get all sections for each part
+  const sectionsA = Object.keys(sectionToPart).filter(s => sectionToPart[s] === partA);
+  const sectionsB = Object.keys(sectionToPart).filter(s => sectionToPart[s] === partB);
+
+  // Find top section pairs by keyword overlap
+  // Require a minimum score to filter out noise from generic word matches
+  const scored = [];
+  sectionsA.forEach(a => {
+    const kwA = sectionKeywords[a];
+    if (!kwA) return;
+    sectionsB.forEach(b => {
+      const kwB = sectionKeywords[b];
+      if (!kwB) return;
+      const score = keywordScore(kwA, kwB);
+      if (score > 8) { // minimum IDF-weighted overlap to be meaningful
+        scored.push({ a, b, score });
+      }
+    });
+  });
+
+  scored.sort((x, y) => y.score - x.score);
+
+  // Take top connections, deduplicate by section
+  const usedA = new Set();
+  const usedB = new Set();
+  const found = [];
+  for (const { a, b } of scored) {
+    if (usedA.has(a) && usedB.has(b)) continue;
+    usedA.add(a);
+    usedB.add(b);
+    found.push({
+      sourceSection: a,
+      targetSection: b,
+      sourcePath: '',
+      targetPath: '',
+      keywordMatch: true,
+    });
+    if (found.length >= 5) break;
+  }
+
+  if (found.length > 0) {
+    keywordConnections[key] = found;
+  }
+});
+
+// 5. Merge into output — direct first, then supplement with keyword matches
 const output = {};
 allPairs.forEach((key) => {
+  const connections = [];
+  const seenPairs = new Set();
+
+  // Direct references first (highest priority)
   if (direct[key]) {
-    output[key] = direct[key];
-  } else if (transitive[key]) {
-    output[key] = transitive[key];
-  } else if (sharedMacro[key]) {
-    output[key] = sharedMacro[key];
+    direct[key].forEach(c => {
+      const sig = c.sourceSection + '>' + c.targetSection;
+      if (!seenPairs.has(sig)) { seenPairs.add(sig); connections.push(c); }
+    });
+  }
+
+  // Transitive references next
+  if (transitive[key]) {
+    transitive[key].forEach(c => {
+      const sig = c.sourceSection + '>' + c.targetSection;
+      if (!seenPairs.has(sig)) { seenPairs.add(sig); connections.push(c); }
+    });
+  }
+
+  // Shared Macropaedia
+  if (sharedMacro[key]) {
+    sharedMacro[key].forEach(c => {
+      const sig = c.sourceSection + '>' + c.targetSection;
+      if (!seenPairs.has(sig)) { seenPairs.add(sig); connections.push(c); }
+    });
+  }
+
+  // Keyword matches as supplement (always added, fills gaps)
+  if (keywordConnections[key]) {
+    keywordConnections[key].forEach(c => {
+      const sig = c.sourceSection + '>' + c.targetSection;
+      if (!seenPairs.has(sig)) { seenPairs.add(sig); connections.push(c); }
+    });
+  }
+
+  if (connections.length > 0) {
+    output[key] = connections;
   }
 });
 
@@ -202,6 +359,7 @@ fs.writeFileSync(OUTPUT_PATH, JSON.stringify(sorted, null, 2) + '\n');
 const directCount = Object.keys(direct).length;
 const transitiveCount = Object.keys(transitive).length;
 const macroCount = Object.keys(sharedMacro).length;
+const keywordCount = Object.keys(keywordConnections).length;
 const totalPairs = allPairs.length;
 const coveredPairs = Object.keys(sorted).length;
 const uncoveredPairs = totalPairs - coveredPairs;
@@ -209,6 +367,7 @@ const uncoveredPairs = totalPairs - coveredPairs;
 console.log(`Direct connections: ${directCount} pairs`);
 console.log(`Transitive connections: ${transitiveCount} pairs`);
 console.log(`Shared Macropaedia: ${macroCount} pairs`);
+console.log(`Keyword overlap: ${keywordCount} pairs`);
 console.log(`Total coverage: ${coveredPairs}/${totalPairs} pairs`);
 if (uncoveredPairs > 0) {
   const missing = allPairs.filter((k) => !sorted[k]);
