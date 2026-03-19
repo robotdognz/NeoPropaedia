@@ -452,6 +452,10 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
   const focusPart = centerPart ?? topPart;
   const previewCenterPart = parts.find((part) => part.partNumber === centerPreviewPartNumber) ?? null;
   const centerDisplayPart = previewCenterPart ?? centerPart;
+  const isCenterSwapPreviewActive = hasCenter && centerPreviewPartNumber !== null;
+  const centerPreviewOutlineOpacity = isCenterSwapPreviewActive
+    ? Math.max(0, Math.min(1, (morphT - 0.2) / 0.5))
+    : 1;
   const centerTitleLines = centerDisplayPart ? wrapLabel(centerDisplayPart.title, 14, 2) : [];
   const connectionSummary = hasCenter ? summarizeConnections(connections, sectionMeta, centerPartNumber, topPartNumber) : null;
   const suggestedSections = connectionSummary?.sections ?? [];
@@ -659,18 +663,20 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
 
   const animateSnapRotation = (from: number, to: number) => {
     cancelSnapAnimation();
-    snapTargetRef.current = to;
-    if (Math.abs(from - to) < 0.5) {
-      if (from !== to) setRotationDegrees(to);
+    const resolvedTo = closestEquivalentRotation(to, from);
+    const distance = Math.abs(resolvedTo - from);
+    snapTargetRef.current = resolvedTo;
+    if (distance < 0.5) {
+      if (from !== resolvedTo) setRotationDegrees(resolvedTo);
       snapTargetRef.current = null;
       return;
     }
     const startTime = performance.now();
-    const duration = Math.min(200, Math.abs(from - to) * 8);
+    const duration = Math.min(260, Math.max(100, distance * 7));
     const animate = (now: number) => {
       const elapsed = now - startTime;
       const rawT = Math.min(elapsed / duration, 1);
-      setRotationDegrees(lerp(from, to, easeOutCubic(rawT)));
+      setRotationDegrees(lerp(from, resolvedTo, easeOutCubic(rawT)));
       if (rawT < 1) {
         snapAnimRef.current = requestAnimationFrame(animate);
       } else {
@@ -1238,6 +1244,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                   stroke="#0f172a"
                   stroke-width={SELECTION_OUTLINE_WIDTH}
                   stroke-linejoin="round"
+                  opacity={isCenterSwapPreviewActive ? Math.max(0, 1 - centerPreviewOutlineOpacity) : 1}
                   pointer-events="none"
                 />
               </>
@@ -1252,8 +1259,6 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             const tTopWeight = Math.max(0, 1 - tDistFromTop / tSegAngle);
             const tInner = lerp(INNER_RADIUS, INNER_RADIUS - 10, tTopWeight);
             const tOuter = lerp(OUTER_RADIUS, OUTER_RADIUS + 12, tTopWeight);
-            const tOutlineInset = SELECTION_OUTLINE_WIDTH / 2;
-            const tOutlineInner = Math.max(tInner + tOutlineInset, CENTER_DISC_RADIUS + tOutlineInset);
             const tNumberPos = polar(CENTER, CENTER, lerp(134, 138, tTopWeight), target.centerAngle);
             const tConnStart = polar(CENTER, CENTER, tOuter + 6, target.centerAngle);
             const tConnEnd = polar(CENTER, CENTER, lerp(CONNECTOR_RADIUS, CONNECTOR_RADIUS + 8, tTopWeight), target.centerAngle);
@@ -1273,19 +1278,6 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                   )}
                   fill={centerPart.colorHex}
                   opacity={1 / Math.max(morphT, 0.01)}
-                />
-                <path
-                  d={morphedDonutPath(
-                    CENTER, CENTER,
-                    tOutlineInner, tOuter - tOutlineInset,
-                    target.startAngle, target.endAngle,
-                    CENTER_DISC_RADIUS - tOutlineInset,
-                    1 - morphT
-                  )}
-                  fill="none"
-                  stroke="#0f172a"
-                  stroke-width={SELECTION_OUTLINE_WIDTH}
-                  stroke-linejoin="round"
                 />
                 <text
                   x={tNumberPos.x}
@@ -1502,6 +1494,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                 fill="none"
                 stroke="#0f172a"
                 stroke-width={SELECTION_OUTLINE_WIDTH}
+                opacity={centerPreviewOutlineOpacity}
                 pointer-events="none"
               />
             )}
