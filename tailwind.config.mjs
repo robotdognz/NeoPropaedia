@@ -3,6 +3,11 @@ export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
+      borderRadius: {
+        lg: '0.75rem',   // 12px — consistent rounding across the site
+        xl: '0.75rem',   // normalise to match lg
+        '2xl': '0.75rem', // normalise to match lg
+      },
       fontFamily: {
         serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
         sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif'],

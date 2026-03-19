@@ -91,6 +91,7 @@ const OUTER_RADIUS = 168;
 const INNER_RADIUS = 96;
 const LABEL_RADIUS = 250;
 const CONNECTOR_RADIUS = 192;
+const INTERACTIVE_RADIUS = 320; // Touch/click boundary — covers labels and surrounding area
 const FULL_SEGMENT_COUNT = 10;
 const FULL_SEGMENT_ANGLE = 360 / FULL_SEGMENT_COUNT;
 const RING_SEGMENT_COUNT = 9;
@@ -903,11 +904,15 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
 
   const handleSegmentPointerDown = (partNumber: number) => (event: h.JSX.TargetedPointerEvent<SVGElement>) => {
     if (!svgRef.current) return;
-    cancelSnapAnimation();
-
-    event.stopPropagation();
 
     const point = svgPoint(svgRef.current, event.clientX, event.clientY);
+    const radius = distanceFromCenter(point.x, point.y);
+    // Ignore touches beyond the label radius (outside the circle's interactive zone)
+    if (radius > INTERACTIVE_RADIUS) return;
+
+    cancelSnapAnimation();
+    event.stopPropagation();
+
     const startAngle = angleFromPoint(point.x, point.y);
 
     dragStateRef.current = {
@@ -930,12 +935,15 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
 
   const handleBackgroundPointerDown = (event: h.JSX.TargetedPointerEvent<SVGSVGElement>) => {
     if (dragStateRef.current || !svgRef.current) return;
-    cancelSnapAnimation();
 
     const point = svgPoint(svgRef.current, event.clientX, event.clientY);
     const radius = distanceFromCenter(point.x, point.y);
 
+    // Ignore touches inside centre disc or outside the label radius
     if (radius <= CENTER_PREVIEW_THRESHOLD) return;
+    if (radius > INTERACTIVE_RADIUS) return;
+
+    cancelSnapAnimation();
 
     const startAngle = angleFromPoint(point.x, point.y);
 
@@ -1107,11 +1115,11 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
         </div>
       </div>
 
-      <div class="sm:rounded-[1.75rem] sm:border sm:border-slate-200 sm:bg-slate-50 sm:p-6">
+      <div class="sm:rounded-lg sm:border sm:border-slate-200 sm:bg-slate-50 sm:p-6">
         <svg
           ref={svgRef}
           viewBox={`${VIEWBOX_INSET} ${VIEWBOX_INSET} ${VIEWBOX_SIZE - VIEWBOX_INSET * 2} ${VIEWBOX_SIZE - VIEWBOX_INSET * 2}`}
-          class="mx-auto aspect-square w-full max-w-[38rem] cursor-grab touch-none select-none active:cursor-grabbing sm:max-w-[42rem]"
+          class="mx-auto aspect-square w-full max-w-[38rem] cursor-default touch-none select-none sm:max-w-[42rem]"
           style={{ overflow: 'visible' }}
           role="img"
           aria-label="Interactive circle navigation for the ten parts of the Propaedia"
@@ -1126,6 +1134,12 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
           <title>Interactive circle navigation for the Propaedia</title>
 
           <circle cx={CENTER} cy={CENTER} r={OUTER_RADIUS + 22} fill="#f8fafc" />
+          {/* Invisible interactive ring for grab cursor — only within drag zone */}
+          <path
+            d={donutSlicePath(CENTER, CENTER, hasCenter ? CENTER_DISC_RADIUS : effectiveInnerRadius, INTERACTIVE_RADIUS, 0, 359.9)}
+            fill="transparent"
+            class="cursor-grab active:cursor-grabbing"
+          />
 
           {/* Render non-top segments first, top segment last so it paints on top */}
           {[...outerParts].sort((a, b) => {
@@ -1170,9 +1184,9 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             return (
               <g key={part.partNumber}>
                 <path
-                  d={donutSlicePath(CENTER, CENTER, segmentInnerRadius, LABEL_RADIUS, startAngle, endAngle)}
+                  d={donutSlicePath(CENTER, CENTER, segmentInnerRadius, segmentOuterRadius + 10, startAngle, endAngle)}
                   fill="transparent"
-                  class="cursor-pointer"
+                  class="cursor-grab active:cursor-grabbing"
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
                 />
                 <path
@@ -1221,8 +1235,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
                 </text>
 
                 <g
-                  class="cursor-pointer"
-                  onPointerDown={handleSegmentPointerDown(part.partNumber)}
+                  pointer-events="none"
                   opacity={isMorphingToCenter ? Math.max(0, 1 - morphT * 1.5) : 1}
                 >
                   <line
@@ -1554,7 +1567,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
           <g
             role="button"
             tabIndex={0}
-            class="cursor-pointer"
+            class="cursor-grab active:cursor-grabbing"
             style={{ outline: 'none' }}
             onPointerDown={(event) => {
               event.preventDefault();
@@ -1662,7 +1675,7 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
           )}
         </svg>
 
-        <div class="mt-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2 shadow-sm sm:mt-5 sm:rounded-[1.1rem] sm:px-5 sm:py-3">
+        <div class="mt-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2 shadow-sm sm:mt-5 sm:rounded-lg sm:px-5 sm:py-3">
           {hasCenter && centerPart ? (
             <>
               <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
