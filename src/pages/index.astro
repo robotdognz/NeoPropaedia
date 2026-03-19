@@ -1,14 +1,15 @@
 ---
 import BaseLayout from '../components/layout/BaseLayout.astro';
 import CircleNavigator from '../components/content/CircleNavigator';
-import navigation from '../data/navigation.json';
 import partConnections from '../data/part-connections.json';
 import bridgeRecommendations from '../data/bridge-recommendations.json';
 import { getCollection } from 'astro:content';
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+import { loadOutlineGraph } from '../utils/outlineGraph';
 
 const base = import.meta.env.BASE_URL;
-const parts = navigation.parts;
+const outline = await loadOutlineGraph();
+const parts = outline.parts;
 
 // Load per-part reading recommendations for CircleNavigator
 const allPartReadings = await getCollection('part-readings');
@@ -19,12 +20,12 @@ for (const entry of allPartReadings) {
 
 // Build section metadata lookup for CircleNavigator
 const sectionMeta: Record<string, { title: string; partNumber: number; sectionCode: string }> = {};
-parts.forEach((p: any) => {
-  p.divisions.forEach((d: any) => {
-    d.sections.forEach((s: any) => {
-      sectionMeta[s.sectionCode] = { title: s.title, partNumber: p.partNumber, sectionCode: s.sectionCode };
-    });
-  });
+outline.flatSections.forEach((section) => {
+  sectionMeta[section.sectionCode] = {
+    title: section.title,
+    partNumber: section.partNumber,
+    sectionCode: section.sectionCode,
+  };
 });
 
 const essays = await getCollection('essays');

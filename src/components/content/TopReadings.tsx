@@ -14,6 +14,7 @@ import {
   subscribeReadingPreference,
   type ReadingType,
 } from '../../utils/readingPreference';
+import { slugify } from '../../utils/helpers';
 
 export interface ReadingItem {
   title: string;
@@ -31,10 +32,6 @@ export interface TopReadingsProps {
   baseUrl: string;
   contextLabel: string; // e.g., "this part" or "this division"
   countLabel: string; // e.g., "divisions" or "sections"
-}
-
-function slugify(s: string): string {
-  return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
 function matchColor(percent: number): string {

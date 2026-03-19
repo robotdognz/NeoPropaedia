@@ -11,21 +11,13 @@
 
 const fs = require('fs');
 const path = require('path');
+const { loadOutline } = require('./lib/outline-data.cjs');
 
-const NAV_PATH = 'src/data/navigation.json';
-const VSI_MAPPINGS_DIR = 'src/content/vsi-mappings';
-const VSI_CATALOG_DIR = 'src/content/vsi';
+const ROOT = path.resolve(__dirname, '..');
+const VSI_MAPPINGS_DIR = path.join(ROOT, 'src/content/vsi-mappings');
+const VSI_CATALOG_DIR = path.join(ROOT, 'src/content/vsi');
 
-// Build section → part lookup
-const navigation = JSON.parse(fs.readFileSync(NAV_PATH, 'utf8'));
-const sectionToPart = {};
-for (const part of navigation.parts) {
-  for (const div of part.divisions) {
-    for (const sec of div.sections) {
-      sectionToPart[sec.sectionCode] = part.partNumber;
-    }
-  }
-}
+const { sectionToPart } = loadOutline(ROOT);
 
 // Load VSI catalog
 const catalog = new Map();

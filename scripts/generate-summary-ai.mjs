@@ -25,6 +25,12 @@
  */
 
 import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import outlineData from './lib/outline-data.cjs';
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const { buildTaxonomyText } = outlineData;
 
 async function getAnthropicClient() {
   const { default: Anthropic } = await import('@anthropic-ai/sdk');
@@ -100,22 +106,7 @@ function cleanWikiMarkup(text) {
 }
 
 // --- Load Propaedia taxonomy ---
-function buildTaxonomyText() {
-  const nav = JSON.parse(fs.readFileSync('src/data/navigation.json', 'utf8'));
-  const lines = [];
-  for (const p of nav.parts) {
-    lines.push(`Part ${p.partNumber}: ${p.title}`);
-    for (const d of p.divisions) {
-      lines.push(`  Division ${d.romanNumeral}: ${d.title}`);
-      for (const s of d.sections) {
-        lines.push(`    Section ${s.sectionCode}: ${s.title}`);
-      }
-    }
-  }
-  return lines.join('\n');
-}
-
-const TAXONOMY = buildTaxonomyText();
+const TAXONOMY = buildTaxonomyText(ROOT);
 
 // --- System prompt ---
 const SYSTEM_PROMPT = `You produce summaryAI fields for an AI knowledge-mapping pipeline.

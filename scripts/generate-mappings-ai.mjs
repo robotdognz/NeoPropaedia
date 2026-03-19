@@ -37,6 +37,12 @@
  */
 
 import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import outlineData from './lib/outline-data.cjs';
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const { buildTaxonomyText } = outlineData;
 
 // Lazy import — only loaded when API calls are needed
 async function getAnthropicClient() {
@@ -114,18 +120,7 @@ function countOverlap(setA, setB) {
 
 // --- Load data ---
 function loadTaxonomy() {
-  const nav = JSON.parse(fs.readFileSync('src/data/navigation.json', 'utf8'));
-  const lines = [];
-  for (const p of nav.parts) {
-    lines.push(`Part ${p.partNumber}: ${p.title}`);
-    for (const d of p.divisions) {
-      lines.push(`  Division ${d.romanNumeral}: ${d.title}`);
-      for (const s of d.sections) {
-        lines.push(`    Section ${s.sectionCode}: ${s.title}`);
-      }
-    }
-  }
-  return lines.join('\n');
+  return buildTaxonomyText(ROOT);
 }
 
 function collectOutlineText(items) {

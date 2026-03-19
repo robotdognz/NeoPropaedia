@@ -17,9 +17,9 @@
 
 const fs = require('fs');
 const path = require('path');
+const { loadOutline } = require('./lib/outline-data.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
-const NAV_PATH = path.join(ROOT, 'src/data/navigation.json');
 const VSI_MAPPINGS_DIR = path.join(ROOT, 'src/content/vsi-mappings');
 const WIKI_MAPPINGS_DIR = path.join(ROOT, 'src/content/wiki-mappings');
 const SECTIONS_DIR = path.join(ROOT, 'src/content/sections');
@@ -31,20 +31,7 @@ for (const dir of [PART_OUTPUT_DIR, DIV_OUTPUT_DIR]) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
 
-// Build lookups
-const navigation = JSON.parse(fs.readFileSync(NAV_PATH, 'utf8'));
-const sectionToPart = {};
-const sectionToDivision = {};
-const divisionSectionCount = {};  // divisionId -> total number of sections
-for (const part of navigation.parts) {
-  for (const div of part.divisions) {
-    divisionSectionCount[div.divisionId] = div.sections.length;
-    for (const sec of div.sections) {
-      sectionToPart[sec.sectionCode] = part.partNumber;
-      sectionToDivision[sec.sectionCode] = div.divisionId;
-    }
-  }
-}
+const { parts, sectionToPart, sectionToDivision, divisionSectionCount } = loadOutline(ROOT);
 
 /**
  * Build an index tracking which sections and divisions each title appears in,
@@ -199,7 +186,7 @@ const MIN_RESULTS = 5;
 // Part-level: progressively relaxes thresholds to ensure at least MIN_RESULTS items.
 // Ranked by: entropy of spread across divisions, then count, sections, paths.
 function partItems(index, partNumber, hasAuthor) {
-  const partData = navigation.parts.find(p => p.partNumber === partNumber);
+  const partData = parts.find(p => p.partNumber === partNumber);
   const totalDivisions = partData?.divisions.length || 1;
   const totalSectionsInPart = partData?.divisions.reduce((sum, d) => sum + d.sections.length, 0) || 1;
 
@@ -290,7 +277,7 @@ function divItems(index, divisionId, hasAuthor) {
 // Write per-part files
 let partCount = 0;
 let partItemTotal = 0;
-for (const part of navigation.parts) {
+for (const part of parts) {
   const pn = part.partNumber;
   const vsi = partItems(vsiIndex, pn, true);
   const wiki = partItems(wikiIndex, pn, true);
@@ -310,7 +297,7 @@ for (const part of navigation.parts) {
 // Write per-division files
 let divCount = 0;
 let divItemTotal = 0;
-for (const part of navigation.parts) {
+for (const part of parts) {
   for (const div of part.divisions) {
     const vsi = divItems(vsiIndex, div.divisionId, true);
     const wiki = divItems(wikiIndex, div.divisionId, true);

@@ -721,12 +721,6 @@ def export_all() -> None:
     # --- Export Essays ---
     _export_essays()
 
-    # --- Export Cross-References ---
-    _export_cross_references()
-
-    # --- Export Navigation ---
-    _export_navigation(hierarchy, sections)
-
     logger.info("All exports complete")
 
 
@@ -751,54 +745,6 @@ def _export_essays() -> None:
             shutil.copy2(os.path.join(src_dir, fname), os.path.join(dest_dir, fname))
             count += 1
     logger.info("Exported %d essay files", count)
-
-
-def _export_cross_references() -> None:
-    dest_dir = config.ensure_dir(config.FINAL_DATA_DIR)
-    src = config.CROSS_REFERENCES_PATH
-    dest = os.path.join(dest_dir, "cross-references.json")
-    if os.path.isfile(src):
-        shutil.copy2(src, dest)
-        logger.info("Exported cross-references.json")
-    else:
-        # Write empty structure
-        _dump_json(dest, {"references": [], "reverseIndex": {}})
-        logger.info("Wrote empty cross-references.json")
-
-
-def _export_navigation(
-    hierarchy: dict, sections: dict[str, dict],
-) -> None:
-    dest_dir = config.ensure_dir(config.FINAL_DATA_DIR)
-    nav_parts = []
-    for part_num in sorted(hierarchy.keys()):
-        nav_divs = []
-        for div_num in sorted(hierarchy[part_num].keys()):
-            div_id = f"{part_num}-{div_num:02d}"
-            section_codes = hierarchy[part_num][div_num]
-            title = DIVISION_TITLES.get((part_num, div_num), f"Division {INT_TO_ROMAN.get(div_num, str(div_num))}")
-            nav_secs = []
-            for code in section_codes:
-                sec_data = sections.get(code, {})
-                nav_secs.append({
-                    "sectionCode": code,
-                    "title": sec_data.get("title", code),
-                })
-            nav_divs.append({
-                "divisionId": div_id,
-                "romanNumeral": INT_TO_ROMAN.get(div_num, str(div_num)),
-                "title": title,
-                "sections": nav_secs,
-            })
-        nav_parts.append({
-            "partNumber": part_num,
-            "title": config.PART_NAMES.get(part_num, f"Part {part_num}"),
-            "divisions": nav_divs,
-        })
-
-    path = os.path.join(dest_dir, "navigation.json")
-    _dump_json(path, {"parts": nav_parts})
-    logger.info("Exported navigation.json")
 
 
 if __name__ == "__main__":

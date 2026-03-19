@@ -3,10 +3,11 @@ import BaseLayout from '../../components/layout/BaseLayout.astro';
 import CoverageRings from '../../components/ui/CoverageRings';
 import ReadingCheckbox from '../../components/content/ReadingCheckbox';
 import { getCollection } from 'astro:content';
-import { slugify } from '../../utils/helpers';
+import { sectionUrl, slugify } from '../../utils/helpers';
 import { formatEditionLabel } from '../../utils/readingData';
 import { vsiChecklistKey } from '../../utils/readingChecklist';
-import navigation from '../../data/navigation.json';
+import { loadOutlineGraph } from '../../utils/outlineGraph';
+import { vsiLookupKey } from '../../utils/readingIdentity';
 
 export async function getStaticPaths() {
   function countOutlineItems(nodes: any[]): number {
@@ -14,25 +15,7 @@ export async function getStaticPaths() {
     (nodes || []).forEach((n: any) => { count++; count += countOutlineItems(n.children); });
     return count;
   }
-  const nav = navigation as any;
-
-  // Build section metadata
-  const sectionMeta: Record<string, { partNumber: number; partTitle: string; divisionId: string; divisionTitle: string; sectionTitle: string }> = {};
-  nav.parts.forEach((p: any) => {
-    p.divisions.forEach((d: any) => {
-      d.sections.forEach((s: any) => {
-        sectionMeta[s.sectionCode] = { partNumber: p.partNumber, partTitle: p.title, divisionId: d.divisionId, divisionTitle: d.title, sectionTitle: s.title };
-      });
-    });
-  });
-
-  // Compute totals
-  let totalDivisions = 0;
-  let totalSections = 0;
-  nav.parts.forEach((p: any) => {
-    totalDivisions += p.divisions.length;
-    p.divisions.forEach((d: any) => totalSections += d.sections.length);
-  });
+  const outline = await loadOutlineGraph();
 
   // Load sections for outline item counts
   const allSections = await getCollection('sections');
@@ -45,27 +28,35 @@ export async function getStaticPaths() {
   }
 
   const totals = {
-    parts: nav.parts.length,
-    divisions: totalDivisions,
-    sections: totalSections,
+    parts: outline.totals.parts,
+    divisions: outline.totals.divisions,
+    sections: outline.totals.sections,
     outlineItems: totalOutlineItems,
   };
 
   const catalogCollections = await getCollection('vsi');
   const catalog = catalogCollections.flatMap((entry) => entry.data.titles);
   const allMappings = await getCollection('vsi-mappings');
-  const normalizeText = (text: string) => text.replace(/\s+/g, ' ').trim().toLowerCase();
+  const mappingsByBook = new Map<string, { sectionCode: string; rationaleAI: string; meta: (typeof outline.sectionMeta)[string] }[]>();
+
+  for (const mapping of allMappings) {
+    for (const entry of mapping.data.mappings) {
+      const meta = outline.sectionMeta[mapping.data.sectionCode];
+      if (!meta) continue;
+
+      const lookupKey = vsiLookupKey(entry.vsiTitle, entry.vsiAuthor);
+      const sections = mappingsByBook.get(lookupKey) ?? [];
+      sections.push({
+        sectionCode: mapping.data.sectionCode,
+        rationaleAI: entry.rationaleAI,
+        meta,
+      });
+      mappingsByBook.set(lookupKey, sections);
+    }
+  }
 
   return catalog.map((entry) => {
-    const sections: { sectionCode: string; rationaleAI: string; meta: typeof sectionMeta[string] }[] = [];
-    for (const mapping of allMappings) {
-      for (const m of mapping.data.mappings) {
-        if (normalizeText(m.vsiTitle) === normalizeText(entry.title) && normalizeText(m.vsiAuthor) === normalizeText(entry.author)) {
-          const meta = sectionMeta[mapping.data.sectionCode];
-          if (meta) sections.push({ sectionCode: mapping.data.sectionCode, rationaleAI: m.rationaleAI, meta });
-        }
-      }
-    }
+    const sections = mappingsByBook.get(vsiLookupKey(entry.title, entry.author)) ?? [];
 
     // Compute coverage
     const coveredParts = new Set(sections.map(s => s.meta.partNumber));
@@ -188,7 +179,7 @@ const rings = [
             {sections.map((s) => (
               <li class="rounded-lg border border-gray-200 bg-white px-4 py-3">
                 <a
-                  href={`${base}/section/${s.sectionCode.replace(/\//g, '-')}`}
+                  href={sectionUrl(s.sectionCode, base)}
                   class="text-sm font-semibold text-gray-900 hover:text-indigo-700"
                 >
                   Section {s.sectionCode}: {s.meta.sectionTitle}

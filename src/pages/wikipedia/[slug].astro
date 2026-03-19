@@ -2,27 +2,19 @@
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import CoverageRings from '../../components/ui/CoverageRings';
 import ReadingCheckbox from '../../components/content/ReadingCheckbox';
-import { slugify } from '../../utils/helpers';
+import { sectionUrl, slugify } from '../../utils/helpers';
 import { wikipediaChecklistKey } from '../../utils/readingChecklist';
 import wikiCatalog from '../../data/wikipedia-catalog.json';
-import navigation from '../../data/navigation.json';
 import { getCollection } from 'astro:content';
+import { loadOutlineGraph } from '../../utils/outlineGraph';
 
 export async function getStaticPaths() {
-  const nav = navigation as any;
-  const sectionMeta: Record<string, { partNumber: number; partTitle: string; divisionId: string; divisionTitle: string; sectionTitle: string }> = {};
-  nav.parts.forEach((p: any) => {
-    p.divisions.forEach((d: any) => {
-      d.sections.forEach((s: any) => {
-        sectionMeta[s.sectionCode] = { partNumber: p.partNumber, partTitle: p.title, divisionId: d.divisionId, divisionTitle: d.title, sectionTitle: s.title };
-      });
-    });
-  });
-
-  let totalDivisions = 0;
-  let totalSections = 0;
-  nav.parts.forEach((p: any) => { totalDivisions += p.divisions.length; p.divisions.forEach((d: any) => { totalSections += d.sections.length; }); });
-  const totals = { parts: nav.parts.length, divisions: totalDivisions, sections: totalSections };
+  const outline = await loadOutlineGraph();
+  const totals = {
+    parts: outline.totals.parts,
+    divisions: outline.totals.divisions,
+    sections: outline.totals.sections,
+  };
 
   // Build section codes per article from per-section mapping files
   const wikiMappings = await getCollection('wiki-mappings');
@@ -38,7 +30,7 @@ export async function getStaticPaths() {
     const codes = articleSectionCodes.get(article.title) || [];
     const sections = codes.map((code: string) => ({
       sectionCode: code,
-      meta: sectionMeta[code],
+      meta: outline.sectionMeta[code],
     })).filter((s: any) => s.meta);
 
     const coveredParts = new Set(sections.map((s: any) => s.meta.partNumber));
@@ -131,7 +123,7 @@ const levelLabel = levelLabels[article.lowestLevel] || 'Level 3';
               {partSections.map((s) => (
                 <li class="rounded-lg border border-gray-200 bg-white px-4 py-3">
                   <a
-                    href={`${base}/section/${s.sectionCode.replace(/\//g, '-')}`}
+                    href={sectionUrl(s.sectionCode, base)}
                     class="text-sm font-semibold text-gray-900 hover:text-indigo-700"
                   >
                     Section {s.sectionCode}: {s.meta.sectionTitle}

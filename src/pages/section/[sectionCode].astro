@@ -5,11 +5,10 @@ import OutlineTree from '../../components/content/OutlineTree';
 import MacropaediaRefs from '../../components/content/MacropaediaRefs';
 import WikipediaRefs from '../../components/content/WikipediaRefs';
 import VsiRecommendations from '../../components/content/VsiRecommendations';
-import navigation from '../../data/navigation.json';
-import crossReferences from '../../data/cross-references.json';
-import wikiCatalog from '../../data/wikipedia-catalog.json';
 import { getCollection } from 'astro:content';
-import { computeWikiRelevanceScore, tokenize } from '../../utils/wikipediaOutlineFilter';
+import { sectionReferenceUrl } from '../../utils/helpers';
+import { loadOutlineGraph } from '../../utils/outlineGraph';
+import { loadSectionReadingContext } from '../../utils/sectionReadingContext';
 
 export async function getStaticPaths() {
   const sections = await getCollection('sections');
@@ -22,6 +21,7 @@ export async function getStaticPaths() {
 
 const { section } = Astro.props;
 const base = import.meta.env.BASE_URL;
+const outline = await loadOutlineGraph();
 
 const PART_NAMES: Record<number, string> = {
   1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five',
@@ -29,8 +29,8 @@ const PART_NAMES: Record<number, string> = {
 };
 
 // Find parent part and division
-const parentPart = navigation.parts.find((p) => p.partNumber === section.partNumber);
-const parentDiv = parentPart?.divisions.find((d) => d.divisionId === section.divisionId);
+const parentPart = outline.partByNumber.get(section.partNumber);
+const parentDiv = outline.divisionById.get(section.divisionId);
 
 const partTextColors: Record<number, string> = {
   1: 'text-blue-800',
@@ -45,159 +45,18 @@ const partTextColors: Record<number, string> = {
   10: 'text-amber-700',
 };
 
-// Build flat ordered list of all sections for prev/next navigation
-const allSections: { sectionCode: string; title: string; partNumber: number }[] = [];
-for (const p of navigation.parts) {
-  for (const d of p.divisions) {
-    for (const s of d.sections) {
-      allSections.push({ sectionCode: s.sectionCode, title: s.title, partNumber: p.partNumber });
-    }
-  }
-}
-const currentIndex = allSections.findIndex((s) => s.sectionCode === section.sectionCode);
-const prevSection = currentIndex > 0 ? allSections[currentIndex - 1] : null;
-const nextSection = currentIndex < allSections.length - 1 ? allSections[currentIndex + 1] : null;
+const currentIndex = outline.sectionIndexByCode.get(section.sectionCode) ?? -1;
+const prevSection = currentIndex > 0 ? outline.flatSections[currentIndex - 1] : null;
+const nextSection = currentIndex >= 0 && currentIndex < outline.flatSections.length - 1
+  ? outline.flatSections[currentIndex + 1]
+  : null;
 
-// Get reverse cross-references ("Referenced by") and group by part/division
-const reverseRefs = (crossReferences.reverseIndex as Record<string, any[]>)[section.sectionCode] ?? [];
-
-interface GroupedRef {
-  sourceSection: string;
-  sourcePath?: string;
-  sectionTitle: string;
-}
-interface DivisionGroup {
-  divisionId: string;
-  romanNumeral: string;
-  divisionTitle: string;
-  refs: GroupedRef[];
-}
-interface PartGroup {
-  partNumber: number;
-  partTitle: string;
-  divisions: DivisionGroup[];
-}
-
-const groupedReverseRefs: PartGroup[] = [];
-if (reverseRefs.length > 0) {
-  const refsByPart = new Map<number, Map<string, GroupedRef[]>>();
-  for (const ref of reverseRefs) {
-    const refPart = navigation.parts.find((p: any) => p.divisions.some((d: any) => d.sections.some((s: any) => s.sectionCode === ref.sourceSection)));
-    if (!refPart) continue;
-    const refDiv = refPart.divisions.find((d: any) => d.sections.some((s: any) => s.sectionCode === ref.sourceSection));
-    if (!refDiv) continue;
-    const refSec = refDiv.sections.find((s: any) => s.sectionCode === ref.sourceSection);
-    if (!refSec) continue;
-
-    if (!refsByPart.has(refPart.partNumber)) refsByPart.set(refPart.partNumber, new Map());
-    const divMap = refsByPart.get(refPart.partNumber)!;
-    if (!divMap.has(refDiv.divisionId)) divMap.set(refDiv.divisionId, []);
-    divMap.get(refDiv.divisionId)!.push({
-      sourceSection: ref.sourceSection,
-      sourcePath: ref.sourcePath,
-      sectionTitle: refSec.title,
-    });
-  }
-
-  for (const part of navigation.parts) {
-    const divMap = refsByPart.get(part.partNumber);
-    if (!divMap) continue;
-    const divisions: DivisionGroup[] = [];
-    for (const div of part.divisions) {
-      const refs = divMap.get(div.divisionId);
-      if (!refs) continue;
-      divisions.push({
-        divisionId: div.divisionId,
-        romanNumeral: div.romanNumeral,
-        divisionTitle: div.title,
-        refs,
-      });
-    }
-    groupedReverseRefs.push({
-      partNumber: part.partNumber,
-      partTitle: part.title,
-      divisions,
-    });
-  }
-}
-
-// Try to load VSI mappings for this section
-let vsiMappings: any[] = [];
-const normalizeVsiText = (text: string) => text.replace(/\s+/g, ' ').trim().toLowerCase();
-
-try {
-  const allVsiMappings = await getCollection('vsi-mappings');
-  const vsiCatalogCollections = await getCollection('vsi');
-  const vsiCatalog = vsiCatalogCollections.flatMap((entry) => entry.data.titles);
-  const vsiCatalogLookup = new Map(
-    vsiCatalog.map((entry) => [
-      `${normalizeVsiText(entry.title)}::${normalizeVsiText(entry.author)}`,
-      entry,
-    ])
-  );
-  const mapping = allVsiMappings.find((m) => m.data.sectionCode === section.sectionCode);
-  if (mapping) {
-    vsiMappings = mapping.data.mappings.map((entry) => {
-      const catalogEntry = vsiCatalogLookup.get(
-        `${normalizeVsiText(entry.vsiTitle)}::${normalizeVsiText(entry.vsiAuthor)}`
-      );
-
-      return {
-        ...entry,
-        publicationYear: catalogEntry?.publicationYear,
-        edition: catalogEntry?.edition,
-        subject: catalogEntry?.subject,
-        keywords: catalogEntry?.keywords,
-        abstract: catalogEntry?.abstract,
-      };
-    });
-  }
-} catch {
-  // No VSI mappings yet
-}
-
-// Pre-compute Wikipedia article scores for this section
-function collectOutlineText(nodes: any[]): string {
-  let t = '';
-  for (const nd of nodes || []) { t += ' ' + (nd.text || ''); t += collectOutlineText(nd.children); }
-  return t;
-}
-const sectionTokens = tokenize(section.title + ' ' + collectOutlineText(section.outline));
-
-// Load Wikipedia mappings for this section from the per-section file
-const wikiCatalogLookup = new Map((wikiCatalog as any).articles.map((a: any) => [a.title, a]));
-let wikiArticlesForSection: any[] = [];
-try {
-  const allWikiMappings = await getCollection('wiki-mappings');
-  const wikiMapping = allWikiMappings.find((m) => m.data.sectionCode === section.sectionCode);
-  if (wikiMapping) {
-    wikiArticlesForSection = wikiMapping.data.mappings.map((entry) => {
-      const catalogEntry = wikiCatalogLookup.get(entry.articleTitle);
-      return {
-        title: entry.articleTitle,
-        displayTitle: catalogEntry?.displayTitle,
-        url: catalogEntry?.url || `https://en.wikipedia.org/wiki/${entry.articleTitle.replace(/ /g, '_')}`,
-        category: catalogEntry?.category,
-        lowestLevel: catalogEntry?.lowestLevel || 3,
-        extract: catalogEntry?.extract,
-        toc: catalogEntry?.toc,
-        wikiCategories: catalogEntry?.wikiCategories,
-        rationale: entry.rationaleAI || '',
-        relevantPathsAI: entry.relevantPathsAI || [],
-        _score: computeWikiRelevanceScore(
-          { title: entry.articleTitle, category: catalogEntry?.category, toc: catalogEntry?.toc, wikiCategories: catalogEntry?.wikiCategories },
-          sectionTokens,
-        ),
-      };
-    });
-    const maxWikiScore = Math.max(...wikiArticlesForSection.map((a: any) => a._score), 1);
-    wikiArticlesForSection = wikiArticlesForSection
-      .map((a: any) => ({ ...a, matchPercent: Math.round(Math.min(a._score / maxWikiScore, 1) * 100) }))
-      .sort((a: any, b: any) => b._score - a._score);
-  }
-} catch {
-  // No wiki mappings yet
-}
+const {
+  reverseRefs,
+  groupedReverseRefs,
+  vsiMappings,
+  wikiArticlesForSection,
+} = await loadSectionReadingContext(section);
 
 ---
 
@@ -350,10 +209,7 @@ try {
                         {divGroup.refs.map((ref) => {
                           const displayCode = ref.sourceSection.replace(/-/g, '/');
                           const label = ref.sourcePath ? `${displayCode}.${ref.sourcePath}` : displayCode;
-                          const sectionCodeNormalized = ref.sourceSection.replace(/\//g, '-');
-                          const href = ref.sourcePath
-                            ? `${base}/section/${sectionCodeNormalized}#outline-${sectionCodeNormalized.toLowerCase()}-${ref.sourcePath.split('.').filter(Boolean).map((s: string) => s.toLowerCase()).join('-')}`
-                            : `${base}/section/${sectionCodeNormalized}`;
+                          const href = sectionReferenceUrl(ref.sourceSection, ref.sourcePath || '', base);
                           return (
                             <li>
                               <a

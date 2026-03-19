@@ -32,17 +32,19 @@ export interface WikipediaRefsProps {
 }
 
 const STORAGE_KEY = 'propaedia-wiki-level';
+type KnowledgeLevel = 1 | 2 | 3;
 
-function getStoredLevel(): number {
+function getStoredLevel(): KnowledgeLevel {
   if (typeof window === 'undefined') return 3;
   const stored = localStorage.getItem(STORAGE_KEY);
-  if (stored === '1') return 1;
-  if (stored === '3') return 3;
+  if (stored === '1' || stored === '2' || stored === '3') {
+    return Number(stored) as KnowledgeLevel;
+  }
   return 3;
 }
 
 export default function WikipediaRefs({ articles, sectionCode, baseUrl }: WikipediaRefsProps) {
-  const [level, setLevel] = useState(3);
+  const [level, setLevel] = useState<KnowledgeLevel>(3);
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
   const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(() => getReadingPreference() === 'wikipedia' ? 0 : undefined);
@@ -53,7 +55,10 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
     setLevel(getStoredLevel());
     setChecklistState(readChecklistState());
     const unsub = subscribeChecklistState(() => setChecklistState(readChecklistState()));
-    const onStorage = () => setLevel(getStoredLevel());
+    const onStorage = (event: StorageEvent) => {
+      if (event.key !== null && event.key !== STORAGE_KEY) return;
+      setLevel(getStoredLevel());
+    };
     window.addEventListener('storage', onStorage);
     return () => { unsub(); window.removeEventListener('storage', onStorage); };
   }, []);

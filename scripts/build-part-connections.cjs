@@ -8,24 +8,17 @@
 
 const fs = require('fs');
 const path = require('path');
+const { loadCrossReferences, loadOutline } = require('./lib/outline-data.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
 const SECTIONS_DIR = path.join(ROOT, 'src/content/sections');
-const CROSS_REFS_PATH = path.join(ROOT, 'src/data/cross-references.json');
 const OUTPUT_PATH = path.join(ROOT, 'src/data/part-connections.json');
 
 // Load section metadata
-const sectionToPart = {};
-const sectionTitle = {};
-for (const file of fs.readdirSync(SECTIONS_DIR)) {
-  if (!file.endsWith('.json')) continue;
-  const data = JSON.parse(fs.readFileSync(path.join(SECTIONS_DIR, file), 'utf8'));
-  sectionToPart[data.sectionCode] = data.partNumber;
-  sectionTitle[data.sectionCode] = data.title;
-}
+const { sectionToPart } = loadOutline(ROOT);
 
-// Load cross-references
-const { references } = JSON.parse(fs.readFileSync(CROSS_REFS_PATH, 'utf8'));
+// Load cross-references from section content
+const references = loadCrossReferences(ROOT);
 
 // Build outgoing adjacency list
 const outgoing = {};

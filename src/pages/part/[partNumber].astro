@@ -3,8 +3,8 @@ import BaseLayout from '../../components/layout/BaseLayout.astro';
 import StickySubheading from '../../components/layout/StickySubheading.astro';
 import NotesDisclosure from '../../components/content/NotesDisclosure.astro';
 import TopReadings from '../../components/content/TopReadings';
-import navigation from '../../data/navigation.json';
 import { getCollection, render } from 'astro:content';
+import { loadOutlineGraph } from '../../utils/outlineGraph';
 
 export async function getStaticPaths() {
   const parts = await getCollection('parts');
@@ -25,13 +25,14 @@ if (essay) {
   EssayContent = Content;
 }
 const base = import.meta.env.BASE_URL;
+const outline = await loadOutlineGraph();
 
 const PART_NAMES: Record<number, string> = {
   1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five',
   6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine', 10: 'Ten',
 };
 
-const partNav = navigation.parts.find((p) => p.partNumber === part.partNumber);
+const partNav = outline.partByNumber.get(part.partNumber);
 const divisions = partNav?.divisions ?? [];
 
 // Load reading recommendations for this part
@@ -40,9 +41,9 @@ const partReadingsEntry = allPartReadings.find((r) => r.data.partNumber === part
 const partReadings = partReadingsEntry?.data.readings;
 
 // Prev/next parts
-const partIndex = navigation.parts.findIndex((p) => p.partNumber === part.partNumber);
-const prevPart = partIndex > 0 ? navigation.parts[partIndex - 1] : null;
-const nextPart = partIndex < navigation.parts.length - 1 ? navigation.parts[partIndex + 1] : null;
+const partIndex = outline.parts.findIndex((p) => p.partNumber === part.partNumber);
+const prevPart = partIndex > 0 ? outline.parts[partIndex - 1] : null;
+const nextPart = partIndex < outline.parts.length - 1 ? outline.parts[partIndex + 1] : null;
 
 const partColors: Record<number, string> = {
   1: 'text-blue-800 border-blue-300',

@@ -3,6 +3,7 @@ import {
   vsiChecklistKey,
   wikipediaChecklistKey,
 } from './readingChecklist';
+import { macropaediaLookupKey, vsiLookupKey } from './readingIdentity';
 
 export interface ReadingSectionSummary {
   sectionCode: string;
@@ -126,10 +127,6 @@ export interface WikipediaCoveragePathStep {
 
 const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
 
-function normalizeLookupText(value: string): string {
-  return value.replace(/\s+/g, ' ').trim().toLowerCase();
-}
-
 function sectionSort(a: ReadingSectionSummary, b: ReadingSectionSummary): number {
   if (a.partNumber !== b.partNumber) {
     return a.partNumber - b.partNumber;
@@ -180,7 +177,7 @@ export function buildVsiAggregateEntries(
   const sectionLookup = new Map(sections.map((section) => [section.sectionCode, section]));
   const catalogLookup = new Map(
     catalog.map((entry) => [
-      `${normalizeLookupText(entry.title)}::${normalizeLookupText(entry.author)}`,
+      vsiLookupKey(entry.title, entry.author),
       entry,
     ])
   );
@@ -199,7 +196,7 @@ export function buildVsiAggregateEntries(
     const seenInSection = new Set<string>();
 
     for (const mappingEntry of sectionMapping.mappings) {
-      const lookupKey = `${normalizeLookupText(mappingEntry.vsiTitle)}::${normalizeLookupText(mappingEntry.vsiAuthor)}`;
+      const lookupKey = vsiLookupKey(mappingEntry.vsiTitle, mappingEntry.vsiAuthor);
       if (seenInSection.has(lookupKey)) continue;
       seenInSection.add(lookupKey);
 
@@ -260,7 +257,7 @@ export function buildMacropaediaAggregateEntries(
 
     for (const reference of section.macropaediaReferences ?? []) {
       const title = reference.replace(/\s+/g, ' ').trim();
-      const lookupKey = normalizeLookupText(title);
+      const lookupKey = macropaediaLookupKey(title);
 
       if (!title || seenInSection.has(lookupKey)) continue;
       seenInSection.add(lookupKey);

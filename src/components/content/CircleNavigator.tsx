@@ -1,88 +1,19 @@
 import { h } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
+import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
+import { useReadingPreferenceState } from '../../hooks/useReadingPreferenceState';
 import {
-  readChecklistState,
-  subscribeChecklistState,
-  writeChecklistState,
-  vsiChecklistKey,
-  wikipediaChecklistKey,
-  macropaediaChecklistKey,
-} from '../../utils/readingChecklist';
-import Accordion from '../ui/Accordion';
-import TopReadings from './TopReadings';
-import {
-  getReadingPreference,
-  subscribeReadingPreference,
-  type ReadingType,
-} from '../../utils/readingPreference';
-
-export interface CircleNavigatorDivision {
-  divisionId: string;
-  romanNumeral: string;
-  title: string;
-}
-
-export interface CircleNavigatorPart {
-  partNumber: number;
-  partName: string;
-  title: string;
-  href: string;
-  colorHex: string;
-  divisions: CircleNavigatorDivision[];
-}
-
-export interface SectionConnection {
-  sourceSection: string;
-  targetSection: string;
-  sourcePath: string;
-  targetPath: string;
-  via?: string;
-  sharedArticle?: string;
-}
-
-export interface SectionMeta {
-  title: string;
-  partNumber: number;
-  sectionCode: string;
-}
-
-export interface BridgeItem {
-  t: string;   // title
-  a?: string;  // author (VSI only)
-  ca: number;  // section count in lower-numbered part
-  cb: number;  // section count in higher-numbered part
-  r?: number;  // precomputed relevance percentage (0-100)
-}
-
-export interface BridgePair {
-  totalVsi: number;
-  totalWiki: number;
-  totalMacro: number;
-  vsi?: BridgeItem[];
-  wiki?: BridgeItem[];
-  macro?: BridgeItem[];
-}
-
-export interface PartReadingItem {
-  title: string;
-  author?: string;
-  count: number;
-}
-
-export interface PartReadings {
-  vsi?: PartReadingItem[];
-  wiki?: PartReadingItem[];
-  macro?: PartReadingItem[];
-}
-
-export interface CircleNavigatorProps {
-  parts: CircleNavigatorPart[];
-  connections: Record<string, SectionConnection[]>;
-  sectionMeta: Record<string, SectionMeta>;
-  bridgeRecommendations: Record<string, BridgePair>;
-  partReadings: Record<string, PartReadings>;
-  baseUrl: string;
-}
+  CenteredCircleNavigatorPanel,
+  TopPartCircleNavigatorPanel,
+} from './CircleNavigatorPanels';
+import type {
+  CircleNavigatorPart,
+  CircleNavigatorProps,
+  ConnectionSummary,
+  SectionConnection,
+  SectionMeta,
+} from './circleNavigatorShared';
+import { getConnectionKey } from './circleNavigatorShared';
 
 const VIEWBOX_SIZE = 680;
 const VIEWBOX_INSET = 30;
@@ -99,7 +30,6 @@ const RING_SEGMENT_ANGLE = 360 / RING_SEGMENT_COUNT;
 const NO_CENTER_INNER_RADIUS = INNER_RADIUS;
 const CENTER_DISC_RADIUS = INNER_RADIUS - 8;
 const DRAG_DISTANCE_THRESHOLD = 6;
-const CLICK_DURATION_THRESHOLD_MS = 250;
 const CENTER_PREVIEW_THRESHOLD = CENTER_DISC_RADIUS + 2;
 const CENTER_COMMIT_THRESHOLD = CENTER_DISC_RADIUS - 16;
 const CENTER_EXIT_HYSTERESIS = 20;
@@ -184,6 +114,10 @@ function snapRotation(value: number, segAngle: number = RING_SEGMENT_ANGLE): num
 
 function angularDistance(a: number, b: number): number {
   return Math.abs(normalizeDegrees(a - b));
+}
+
+function closestEquivalentRotation(target: number, reference: number): number {
+  return reference + normalizeDegrees(target - reference);
 }
 
 function topPartNumberForRotation(parts: CircleNavigatorPart[], rotation: number, segAngle?: number): number {
@@ -272,17 +206,6 @@ type DragState = {
   draggingFromCenter: boolean;
 };
 
-function getConnectionKey(a: number, b: number): string {
-  return Math.min(a, b) + '-' + Math.max(a, b);
-}
-
-interface ConnectionSummary {
-  sections: { section: SectionMeta; refCount: number }[];
-  isDirect: boolean;
-  hasKeyword: boolean;
-  hasConnectionData: boolean;
-}
-
 function summarizeConnections(
   connections: Record<string, SectionConnection[]>,
   sectionMeta: Record<string, SectionMeta>,
@@ -349,16 +272,8 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
   const svgRef = useRef<SVGSVGElement>(null);
   const dragStateRef = useRef<DragState | null>(null);
   const [centerHasFocus, setCenterHasFocus] = useState(false);
-  const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
-  const [readingPref, setReadingPref] = useState<ReadingType>('vsi');
-
-  useEffect(() => {
-    setChecklistState(readChecklistState());
-    setReadingPref(getReadingPreference());
-    const unsubChecklist = subscribeChecklistState(() => setChecklistState(readChecklistState()));
-    const unsubPref = subscribeReadingPreference((type) => setReadingPref(type));
-    return () => { unsubChecklist(); unsubPref(); };
-  }, []);
+  const checklistState = useReadingChecklistState();
+  const readingPref = useReadingPreferenceState();
   const [hasLoadedState, setHasLoadedState] = useState(false);
   const [centerPartNumber, setCenterPartNumber] = useState<number | null>(null);
   const [rotationDegrees, setRotationDegrees] = useState(0);
@@ -666,96 +581,11 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
     animateSnapRotation(rotationDegrees, target);
   };
 
-  const movePartToCenter = (partNumber: number) => {
-    if (partNumber === centerPartNumber) return;
-
-    // Compute old and new outer parts to find angular shifts
-    const oldOuter = hasCenter ? parts.filter((p) => p.partNumber !== centerPartNumber) : parts;
-    const newOuter = parts.filter((p) => p.partNumber !== partNumber);
-    const oldSegAngle = 360 / oldOuter.length;
-    const newSegAngle = 360 / newOuter.length;
-    const oldIndexMap = new Map(oldOuter.map((p, i) => [p.partNumber, i]));
-    const newIndexMap = new Map(newOuter.map((p, i) => [p.partNumber, i]));
-
-    // Keep the current top part at the top after the swap
-    let currentTopPN = topPartNumberForRotation(oldOuter, rotationDegrees, oldSegAngle);
-    // If the top part is the one being moved to center, pick the next part in the ring
-    if (currentTopPN === partNumber) {
-      const topIdx = oldOuter.findIndex((p) => p.partNumber === currentTopPN);
-      const nextIdx = (topIdx + 1) % oldOuter.length;
-      currentTopPN = oldOuter[nextIdx].partNumber;
-    }
-    const newTopIdx = newIndexMap.get(currentTopPN);
-    const newRotation = newTopIdx !== undefined ? -newTopIdx * newSegAngle : snapRotation(rotationDegrees, newSegAngle);
-
-    // Use actual current rotation (not snapped) so the visual transition is continuous
-    const currentRotation = rotationDegrees;
-    const offsets = new Map<number, number>();
-    for (const p of newOuter) {
-      const oldIdx = oldIndexMap.get(p.partNumber);
-      const newIdx = newIndexMap.get(p.partNumber)!;
-      if (oldIdx !== undefined) {
-        const oldAngle = currentRotation + oldIdx * oldSegAngle;
-        const newAngle = newRotation + newIdx * newSegAngle;
-        const shift = normalizeDegrees(oldAngle - newAngle);
-        if (Math.abs(shift) > 0.01) offsets.set(p.partNumber, shift);
-      }
-    }
-
-    const oldCenter = centerPartNumber;
-
-    // Cancel any in-flight animations
-    if (postSwapAnimRef.current) cancelAnimationFrame(postSwapAnimRef.current);
-    if (morphAnimRef.current) cancelAnimationFrame(morphAnimRef.current);
-    cancelSnapAnimation();
-    setMorphT(0);
-    setMorphPartNumber(null);
-    skipMorphReverseRef.current = true;
-
-    // Apply the state change
-    setRotationDegrees(newRotation);
-    setCenterPartNumber(partNumber);
-    setCenterPreviewPartNumber(null);
-
-    // Start post-swap animation (only if there was a previous center to animate out)
-    if (oldCenter !== null) {
-      setPostSwapState({ oldCenterPartNumber: oldCenter, angularOffsets: offsets });
-      setPostSwapT(1);
-
-      const startTime = performance.now();
-      const POST_SWAP_DURATION = 400;
-      const animate = (now: number) => {
-        const elapsed = now - startTime;
-        const rawT = Math.min(elapsed / POST_SWAP_DURATION, 1);
-        setPostSwapT(Math.max(0, 1 - easeOutCubic(rawT)));
-        if (rawT < 1) {
-          postSwapAnimRef.current = requestAnimationFrame(animate);
-        } else {
-          setPostSwapState(null);
-          setPostSwapT(0);
-        }
-      };
-      postSwapAnimRef.current = requestAnimationFrame(animate);
-    } else {
-      // Animate rearrangement when going from no-center to center
-      setPostSwapState({ oldCenterPartNumber: -1, angularOffsets: offsets });
-      setPostSwapT(1);
-
-      const startTime = performance.now();
-      const POST_SWAP_DURATION = 400;
-      const animate = (now: number) => {
-        const elapsed = now - startTime;
-        const rawT = Math.min(elapsed / POST_SWAP_DURATION, 1);
-        setPostSwapT(Math.max(0, 1 - easeOutCubic(rawT)));
-        if (rawT < 1) {
-          postSwapAnimRef.current = requestAnimationFrame(animate);
-        } else {
-          setPostSwapState(null);
-          setPostSwapT(0);
-        }
-      };
-      postSwapAnimRef.current = requestAnimationFrame(animate);
-    }
+  const rotatePartToTop = (partNumber: number) => {
+    const partIndex = outerParts.findIndex((part) => part.partNumber === partNumber);
+    if (partIndex === -1) return;
+    const target = closestEquivalentRotation(-partIndex * segmentAngle, rotationDegrees);
+    animateSnapRotation(rotationDegrees, target);
   };
 
   const removeFromCenter = () => {
@@ -898,6 +728,12 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
 
       setCenterPartNumber(partToCenter);
       setRotationDegrees(newRotation);
+    } else if (!dragState.moved && !dragState.rotateOnly) {
+      if (dragState.activePartNumber !== topPartNumber) {
+        rotatePartToTop(dragState.activePartNumber);
+      } else {
+        animateSnapRotation(rotationDegrees, snapRotation(rotationDegrees, segmentAngle));
+      }
     } else {
       const nextRotation = snapRotation(rotationDegrees, segmentAngle);
       animateSnapRotation(rotationDegrees, nextRotation);
@@ -1219,6 +1055,12 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
               <g key={part.partNumber}>
                 <path
                   d={donutSlicePath(CENTER, CENTER, segmentInnerRadius, segmentOuterRadius + 10, startAngle, endAngle)}
+                  fill="transparent"
+                  class="cursor-grab active:cursor-grabbing"
+                  onPointerDown={handleSegmentPointerDown(part.partNumber)}
+                />
+                <path
+                  d={donutSlicePath(CENTER, CENTER, segmentOuterRadius + 6, INTERACTIVE_RADIUS, startAngle, endAngle)}
                   fill="transparent"
                   class="cursor-grab active:cursor-grabbing"
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
@@ -1711,220 +1553,25 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
 
         <div class="mt-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2 shadow-sm sm:mt-5 sm:rounded-lg sm:px-5 sm:py-3">
           {hasCenter && centerPart ? (
-            <>
-              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
-                Circle of learning
-              </p>
-              <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-                Centred on {centerPart.title}, with {topPart.title} at the top.
-                {suggestedSections.length > 0 && centerPartNumber !== topPartNumber && (
-                  <>{' '}See where these fields connect below.</>
-                )}
-              </p>
-              {suggestedSections.length > 0 && connectionSummary && (() => {
-                return (
-                <div class="mt-3 border-t border-slate-200 pt-3">
-                  <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-                    Connected sections
-                  </p>
-                  <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-                    {connectionSummary.isDirect
-                      ? `Sections where ${centerPart.title} and ${topPart.title} cross-reference each other${connectionSummary.hasKeyword ? ', supplemented by sections with related subject matter.' : '.'}`
-                      : connectionSummary.hasConnectionData
-                        ? `Sections that connect ${centerPart.title} and ${topPart.title} through shared references and related subject matter.`
-                        : `Sections with related subject matter across ${centerPart.title} and ${topPart.title}.`}
-                  </p>
-                  <ul class="mt-2 space-y-1">
-                    {suggestedSections.map((s) => {
-                      const part = parts.find((p) => p.partNumber === s.section.partNumber);
-                      return (
-                        <li key={s.section.sectionCode}>
-                          <a
-                            href={`${baseUrl}/section/${s.section.sectionCode.replace(/\//g, '-')}`}
-                            class="group flex items-start gap-1.5 rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
-                          >
-                            <span
-                              class="mt-1 inline-block h-2 w-2 shrink-0 rounded-full"
-                              style={{ backgroundColor: part?.colorHex || '#94a3b8' }}
-                            />
-                            <span class="text-slate-700 group-hover:text-indigo-700">{s.section.title}</span>
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-                );
-              })()}
-              {(() => {
-                if (centerPartNumber === topPartNumber) return null;
-                const bridgeKey = getConnectionKey(centerPartNumber, topPartNumber);
-                const bridge = bridgeRecommendations[bridgeKey];
-                if (!bridge || (!bridge.vsi?.length && !bridge.wiki?.length)) return null;
-                const isFlipped = centerPartNumber > topPartNumber;
-                const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-                const bridgeVsi = bridge.vsi || [];
-                const bridgeWiki = bridge.wiki || [];
-                const bridgeMacro = bridge.macro || [];
-                if (bridgeVsi.length === 0 && bridgeWiki.length === 0 && bridgeMacro.length === 0) return null;
-                // maxTotal is used for the two-color bar proportions (not relevance)
-                const maxVsiTotal = bridgeVsi.length > 0 ? Math.max(...bridgeVsi.map(v => v.ca + v.cb)) : 1;
-                const maxWikiTotal = bridgeWiki.length > 0 ? Math.max(...bridgeWiki.map(v => v.ca + v.cb)) : 1;
-                const maxMacroTotal = bridgeMacro.length > 0 ? Math.max(...bridgeMacro.map(v => v.ca + v.cb)) : 1;
-                return (
-                  <div class="mt-3 border-t border-slate-200 pt-3">
-                    <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-                      Recommended Readings
-                    </p>
-                    <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-                      Books and articles independently recommended for both {centerPart.partName}: {centerPart.title} and {topPart.partName}: {topPart.title}. Ranked by how deeply they connect the two parts - considering sections, outline items, and overall spread. The bar shows the balance of coverage between the two chosen parts.
-                    </p>
-                    <div class="mt-3 flex items-center gap-3 text-[10px] font-sans text-slate-400">
-                      <span class="flex items-center gap-1">
-                        <span class="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: centerPart.colorHex }} />
-                        {centerPart.partName}
-                      </span>
-                      <span class="flex items-center gap-1">
-                        <span class="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: topPart.colorHex }} />
-                        {topPart.partName}
-                      </span>
-                    </div>
-                    <div class="mt-3 space-y-4">{[
-                      { items: bridgeVsi, type: 'vsi' as const, title: 'Oxford VSI Recommendations', maxTotal: maxVsiTotal, browseHref: `${baseUrl}/vsi`, browseLabel: 'Browse all Oxford VSI books', getHref: (item: BridgeItem) => `${baseUrl}/vsi/${slugify(item.t)}`, getCheckKey: (item: BridgeItem) => vsiChecklistKey(item.t, item.a || '') },
-                      { items: bridgeWiki, type: 'wikipedia' as const, title: 'Wikipedia Article Recommendations', maxTotal: maxWikiTotal, browseHref: `${baseUrl}/wikipedia`, browseLabel: 'Browse all Wikipedia articles', getHref: (item: BridgeItem) => `${baseUrl}/wikipedia/${slugify(item.t)}`, getCheckKey: (item: BridgeItem) => wikipediaChecklistKey(item.t) },
-                      { items: bridgeMacro, type: 'macropaedia' as const, title: 'Macropaedia Reading List', maxTotal: maxMacroTotal, browseHref: `${baseUrl}/macropaedia`, browseLabel: 'Browse all Macropaedia articles', getHref: (item: BridgeItem) => `${baseUrl}/macropaedia/${slugify(item.t)}`, getCheckKey: (item: BridgeItem) => macropaediaChecklistKey(item.t) },
-                    ].filter(section => section.items.length > 0).sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0)).map((section) => (
-                      <Accordion
-                        key={section.type}
-                        title={`${section.title} (${section.items.length})`}
-                        forceOpenKey={readingPref === section.type ? 0 : undefined}
-                        forceCloseKey={readingPref !== section.type ? 0 : undefined}
-                      >
-                        <div class="mb-4 flex justify-end">
-                          <a href={section.browseHref} class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline">
-                            {section.browseLabel}
-                          </a>
-                        </div>
-                        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                          {section.items.map((item) => {
-                            const centerCount = isFlipped ? item.cb : item.ca;
-                            const topCount = isFlipped ? item.ca : item.cb;
-                            const relevancePct = (item as any).r ?? Math.round(((centerCount + topCount) / section.maxTotal) * 100);
-                            const total = centerCount + topCount;
-                            const scale = relevancePct / 100;
-                            const centerPct = total > 0 ? Math.round((centerCount / total) * scale * 100) : 0;
-                            const topPct = total > 0 ? Math.round((topCount / total) * scale * 100) : 0;
-                            const checkKey = section.getCheckKey(item);
-                            const isChecked = Boolean(checklistState[checkKey]);
-                            const whyLabel = section.type === 'vsi' ? 'Why this book?' : 'Why this article?';
-                            const balanceDesc = Math.abs(centerCount - topCount) <= 1
-                              ? 'with roughly equal coverage of both'
-                              : centerCount > topCount
-                                ? `leaning more toward ${centerPart.title}`
-                                : `leaning more toward ${topPart.title}`;
-                            const rationale = `Independently recommended in ${centerCount} section${centerCount !== 1 ? 's' : ''} of ${centerPart.title} and ${topCount} section${topCount !== 1 ? 's' : ''} of ${topPart.title}, ${balanceDesc}. Items are ranked higher when they bridge both parts evenly rather than being concentrated in one.`;
-
-                            return (
-                              <div
-                                key={item.t}
-                                class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-slate-300 bg-slate-200/70 opacity-50' : 'border-gray-200'}`}
-                              >
-                                <div class="mb-2 flex items-start justify-between gap-3">
-                                  <div class="min-w-0">
-                                    <h4 class="font-serif font-bold text-gray-900 text-base leading-tight">
-                                      <a href={section.getHref(item)} class="hover:text-indigo-700 transition-colors">{item.t}</a>
-                                    </h4>
-                                    {item.a && <p class="text-sm text-gray-500 mt-0.5">{item.a}</p>}
-                                  </div>
-                                  <label class="inline-flex items-center gap-2 text-xs font-sans font-medium text-gray-500">
-                                    <input
-                                      type="checkbox"
-                                      checked={isChecked}
-                                      onChange={(e) => writeChecklistState(checkKey, (e.currentTarget as HTMLInputElement).checked)}
-                                      class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                                    />
-                                    Done
-                                  </label>
-                                </div>
-                                <div class="mb-3 flex items-center gap-2">
-                                  <div class="flex-1 h-1.5 rounded-full bg-gray-100 overflow-hidden">
-                                    <div class="flex h-full">
-                                      <div class="rounded-l-full" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
-                                      <div style={{ width: `${topPct}%`, backgroundColor: topPart.colorHex, borderRadius: centerPct === 0 ? '9999px 0 0 9999px' : topPct + centerPct >= 100 ? '0 9999px 9999px 0' : '0' }} />
-                                    </div>
-                                  </div>
-                                  <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">{relevancePct}% relevance</span>
-                                </div>
-                                <Accordion title={whyLabel} defaultOpen={false}>
-                                  <p class="text-gray-600">{rationale}</p>
-                                </Accordion>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </Accordion>
-                    ))}</div>
-                  </div>
-                );
-              })()}
-            </>
+            <CenteredCircleNavigatorPanel
+              parts={parts}
+              centerPart={centerPart}
+              centerPartNumber={centerPartNumber}
+              topPart={topPart}
+              connectionSummary={connectionSummary}
+              suggestedSections={suggestedSections}
+              bridgeRecommendations={bridgeRecommendations}
+              readingPref={readingPref}
+              checklistState={checklistState}
+              baseUrl={baseUrl}
+            />
           ) : (
-            <>
-              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-sm sm:tracking-[0.18em]">
-                Circle of learning
-              </p>
-              <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-                {topPart.title} is at the top.
-              </p>
-
-              <div class="mt-3 border-t border-slate-200 pt-3">
-                <a
-                  href={`${baseUrl}/part/${topPart.partNumber}`}
-                  class="inline-flex items-center gap-1.5 rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
-                >
-                  Read essay
-                </a>
-              </div>
-
-              {topPart.divisions.length > 0 && (
-                <div class="mt-3 border-t border-slate-200 pt-3">
-                  <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-                    {topPart.divisions.length} {topPart.divisions.length === 1 ? 'Division' : 'Divisions'}
-                  </p>
-                  <ul class="mt-2 space-y-1">
-                    {topPart.divisions.map((d) => (
-                      <li key={d.divisionId}>
-                        <a
-                          href={`${baseUrl}/division/${d.divisionId}`}
-                          class="group flex items-start gap-1.5 rounded px-1 py-1 text-xs transition hover:bg-slate-50 sm:text-sm"
-                        >
-                          <span
-                            class="mt-1 inline-block h-2 w-2 shrink-0 rounded-full"
-                            style={{ backgroundColor: topPart.colorHex }}
-                          />
-                          <span class="text-slate-700 group-hover:text-indigo-700">
-                            <span class="text-slate-400">{d.romanNumeral}.</span>{' '}{d.title}
-                          </span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              {partReadings[String(topPartNumber)] && (
-                <div class="mt-3 border-t border-slate-200 pt-3">
-                  <TopReadings
-                    vsi={partReadings[String(topPartNumber)]?.vsi}
-                    wiki={partReadings[String(topPartNumber)]?.wiki}
-                    macro={partReadings[String(topPartNumber)]?.macro}
-                    baseUrl={baseUrl}
-                    contextLabel="this part"
-                    countLabel="divisions"
-                  />
-                </div>
-              )}
-            </>
+            <TopPartCircleNavigatorPanel
+              topPart={topPart}
+              topPartNumber={topPartNumber}
+              partReadings={partReadings}
+              baseUrl={baseUrl}
+            />
           )}
         </div>
       </div>

@@ -11,25 +11,16 @@
 
 const fs = require('fs');
 const path = require('path');
+const { loadOutline } = require('./lib/outline-data.cjs');
 
 const ROOT = path.resolve(__dirname, '..');
-const NAV_PATH = path.join(ROOT, 'src/data/navigation.json');
 const VSI_MAPPINGS_DIR = path.join(ROOT, 'src/content/vsi-mappings');
 const WIKI_MAPPINGS_DIR = path.join(ROOT, 'src/content/wiki-mappings');
 const OUTPUT_PATH = path.join(ROOT, 'src/data/bridge-recommendations.json');
 
 // No artificial limit — show all items that bridge both parts
 
-// Build sectionCode -> partNumber lookup
-const navigation = JSON.parse(fs.readFileSync(NAV_PATH, 'utf8'));
-const sectionToPart = {};
-for (const part of navigation.parts) {
-  for (const div of part.divisions) {
-    for (const sec of div.sections) {
-      sectionToPart[sec.sectionCode] = part.partNumber;
-    }
-  }
-}
+const { parts, sectionToPart } = loadOutline(ROOT);
 
 // Accumulate: title -> { author?, parts: { partNumber: sectionCount } }
 function buildPartCounts(mappingsDir, getKey, getAuthor) {
@@ -119,7 +110,7 @@ function getConnectionKey(a, b) {
 }
 
 const result = {};
-const partNumbers = navigation.parts.map(p => p.partNumber);
+const partNumbers = parts.map((part) => part.partNumber);
 
 for (let i = 0; i < partNumbers.length; i++) {
   for (let j = i + 1; j < partNumbers.length; j++) {
