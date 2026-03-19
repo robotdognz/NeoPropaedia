@@ -88,7 +88,7 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
   };
 
   return (
-    <section ref={sectionRef} id="vsi-recommendations" class="mt-6 scroll-mt-24">
+    <section ref={sectionRef} id="vsi-recommendations" class="scroll-mt-24">
       <Accordion title={`Oxford VSI Recommendations (${totalCount})`} forceOpenKey={forceOpenKey} forceCloseKey={forceCloseKey}>
         <div class="mb-4 flex justify-end">
           <a

@@ -201,15 +201,26 @@ try {
 ---
 
 <BaseLayout title={`Section ${section.sectionCodeDisplay}: ${section.title} — Propaedia`} currentPartNumber={section.partNumber} currentDivisionId={section.divisionId} currentSectionCode={section.sectionCode}>
-    <main id="main-content" class="flex-1 min-w-0 px-4 sm:px-8 py-6">
+    <main id="main-content" class="flex-1 min-w-0">
+      <!-- Sticky section subheading -->
+      <div class="sticky top-16 z-20 bg-white/95 backdrop-blur-sm border-b border-slate-200 font-sans">
+        <div class="flex items-center justify-between gap-4 px-4 sm:px-8 py-2">
+          <p class={`text-xs sm:text-sm font-medium uppercase tracking-wide truncate ${partTextColors[section.partNumber]}`}>
+            <a href={`${base}/part/${section.partNumber}`} class="hover:underline">Part {PART_NAMES[section.partNumber]}</a>
+            {' '}&middot;{' '}
+            <a href={`${base}/division/${section.divisionId}`} class="hover:underline">Division {parentDiv?.romanNumeral ?? ''}</a>
+            {' '}&middot;{' '}
+            Section {section.sectionCodeDisplay}
+          </p>
+          <div class="flex items-center gap-3 shrink-0 text-xs sm:text-sm font-medium">
+            <button type="button" data-scroll-to="subject-outline" class="text-slate-500 hover:text-slate-800 transition-colors cursor-pointer">Outline</button>
+            <button type="button" data-scroll-to="readings" class="text-slate-500 hover:text-slate-800 transition-colors cursor-pointer">Readings</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-4 sm:px-8 py-6">
       <header class="mb-8">
-        <p class={`text-sm font-sans font-medium uppercase tracking-wide mb-1 ${partTextColors[section.partNumber]}`}>
-          <a href={`${base}/part/${section.partNumber}`} class="hover:underline">Part {PART_NAMES[section.partNumber]}</a>
-          {' '}&middot;{' '}
-          <a href={`${base}/division/${section.divisionId}`} class="hover:underline">Division {parentDiv?.romanNumeral ?? ''}</a>
-          {' '}&middot;{' '}
-          Section {section.sectionCodeDisplay}
-        </p>
         <h1 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900" data-pagefind-meta={`title:${section.sectionCodeDisplay}: ${section.title}`}>
           {section.title}
         </h1>
@@ -217,7 +228,7 @@ try {
       </header>
 
       <!-- Subject Outline -->
-      <section class="mb-8">
+      <section id="subject-outline" class="mb-8 scroll-mt-24">
         <details class="group" open>
           <summary class="cursor-pointer text-xl font-sans font-semibold text-gray-800 flex items-center gap-2 mb-4">
             <svg class="w-5 h-5 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -237,68 +248,64 @@ try {
         </details>
       </section>
 
-      <!-- VSI Recommendations -->
-      {vsiMappings.length > 0 && (() => {
-        function collectOutlineText(nodes: any[]): string {
-          let text = '';
-          (nodes || []).forEach((n: any) => { text += ' ' + (n.text || ''); text += collectOutlineText(n.children); });
-          return text;
-        }
-        const outlineText = collectOutlineText(section.outline).trim();
-        return (
-        <section class="mb-8" data-reading-type="vsi">
-          <VsiRecommendations
-            client:load
-            mappings={vsiMappings}
-            sectionCode={section.sectionCode}
-            sectionTitle={section.title}
-            sectionOutlineText={outlineText}
-            baseUrl={base}
-          />
-        </section>
-        );
-      })()}
+      <!-- Reading Recommendations -->
+      <div id="readings" class="scroll-mt-24 flex flex-col gap-4">
+        <!-- VSI Recommendations -->
+        {vsiMappings.length > 0 && (() => {
+          function collectOutlineText(nodes: any[]): string {
+            let text = '';
+            (nodes || []).forEach((n: any) => { text += ' ' + (n.text || ''); text += collectOutlineText(n.children); });
+            return text;
+          }
+          const outlineText = collectOutlineText(section.outline).trim();
+          return (
+          <section data-reading-type="vsi">
+            <VsiRecommendations
+              client:load
+              mappings={vsiMappings}
+              sectionCode={section.sectionCode}
+              sectionTitle={section.title}
+              sectionOutlineText={outlineText}
+              baseUrl={base}
+            />
+          </section>
+          );
+        })()}
 
-      <!-- Wikipedia Article Recommendations -->
-      {wikiArticlesForSection.length > 0 && (
-        <section class="mb-8" data-reading-type="wikipedia">
-          <WikipediaRefs
-            client:load
-            articles={wikiArticlesForSection}
-            sectionCode={section.sectionCode}
-            baseUrl={base}
-          />
-        </section>
-      )}
+        <!-- Wikipedia Article Recommendations -->
+        {wikiArticlesForSection.length > 0 && (
+          <section data-reading-type="wikipedia">
+            <WikipediaRefs
+              client:load
+              articles={wikiArticlesForSection}
+              sectionCode={section.sectionCode}
+              baseUrl={base}
+            />
+          </section>
+        )}
 
-      <!-- Macropaedia References -->
-      {section.macropaediaReferences.length > 0 && (
-        <section class="mb-8" data-reading-type="macropaedia">
-          <MacropaediaRefs
-            client:load
-            references={section.macropaediaReferences}
-            sectionCode={section.sectionCode}
-            baseUrl={base}
-          />
-        </section>
-      )}
+        <!-- Macropaedia References -->
+        {section.macropaediaReferences.length > 0 && (
+          <section data-reading-type="macropaedia">
+            <MacropaediaRefs
+              client:load
+              references={section.macropaediaReferences}
+              sectionCode={section.sectionCode}
+              baseUrl={base}
+            />
+          </section>
+        )}
+      </div>
 
       <script is:inline>
-        // Reorder reading recommendation sections based on user preference
         (function() {
           try {
             var pref = localStorage.getItem('propaedia-reading-preference') || 'vsi';
-            var sections = document.querySelectorAll('[data-reading-type]');
-            if (sections.length < 2) return;
-            var parent = sections[0].parentNode;
-            var ordered = Array.from(sections).sort(function(a, b) {
-              var aMatch = a.getAttribute('data-reading-type') === pref ? 0 : 1;
-              var bMatch = b.getAttribute('data-reading-type') === pref ? 0 : 1;
-              return aMatch - bMatch;
+            var container = document.getElementById('readings');
+            if (!container) return;
+            container.querySelectorAll(':scope > [data-reading-type]').forEach(function(el) {
+              el.style.order = el.getAttribute('data-reading-type') === pref ? '-1' : '';
             });
-            // Find the position of the first reading section
-            var firstSection = sections[0];
-            ordered.forEach(function(el) { parent.insertBefore(el, firstSection); });
           } catch(e) {}
         })();
       </script>
@@ -395,5 +402,15 @@ try {
           ) : <div class="flex-1" />}
         </nav>
       )}
+      </div>
+
+      <script is:inline>
+        document.querySelectorAll('[data-scroll-to]').forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            var target = document.getElementById(btn.getAttribute('data-scroll-to'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+          });
+        });
+      </script>
     </main>
 </BaseLayout>

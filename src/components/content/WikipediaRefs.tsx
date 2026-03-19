@@ -96,7 +96,7 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
     : Math.max(...visibleArticles.map((a) => a.matchPercent || 0), 1);
 
   return (
-    <section ref={sectionRef} class="mt-6 scroll-mt-24">
+    <section ref={sectionRef} class="scroll-mt-24">
       <Accordion title={`Wikipedia Article Recommendations (${totalCount})`} forceOpenKey={forceOpenKey} forceCloseKey={forceCloseKey}>
         <div class="mb-4 flex flex-wrap items-start justify-between gap-3">
           <span class="text-xs text-gray-500">
