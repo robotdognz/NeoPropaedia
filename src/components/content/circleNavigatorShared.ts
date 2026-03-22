@@ -1,3 +1,9 @@
+import type {
+  MacropaediaAggregateEntry,
+  VsiAggregateEntry,
+  WikipediaAggregateEntry,
+} from '../../utils/readingData';
+
 export interface CircleNavigatorDivision {
   divisionId: string;
   romanNumeral: string;
@@ -45,16 +51,25 @@ export interface BridgePair {
   macro?: BridgeItem[];
 }
 
-export interface PartReadingItem {
-  title: string;
-  author?: string;
-  count: number;
-}
+export type CircleNavigatorVsiEntry = Pick<
+  VsiAggregateEntry,
+  'title' | 'author' | 'checklistKey' | 'sectionCount' | 'sections'
+>;
 
-export interface PartReadings {
-  vsi?: PartReadingItem[];
-  wiki?: PartReadingItem[];
-  macro?: PartReadingItem[];
+export type CircleNavigatorWikipediaEntry = Pick<
+  WikipediaAggregateEntry,
+  'title' | 'displayTitle' | 'url' | 'lowestLevel' | 'checklistKey' | 'sectionCount' | 'sections'
+>;
+
+export type CircleNavigatorMacropaediaEntry = Pick<
+  MacropaediaAggregateEntry,
+  'title' | 'checklistKey' | 'sectionCount' | 'sections'
+>;
+
+export interface CircleNavigatorPartRecommendations {
+  vsi: CircleNavigatorVsiEntry[];
+  wiki: CircleNavigatorWikipediaEntry[];
+  macro: CircleNavigatorMacropaediaEntry[];
 }
 
 export interface CircleNavigatorProps {
@@ -62,7 +77,6 @@ export interface CircleNavigatorProps {
   connections: Record<string, SectionConnection[]>;
   sectionMeta: Record<string, SectionMeta>;
   bridgeRecommendations: Record<string, BridgePair>;
-  partReadings: Record<string, PartReadings>;
   baseUrl: string;
 }
 

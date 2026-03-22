@@ -11,13 +11,6 @@ const base = import.meta.env.BASE_URL;
 const outline = await loadOutlineGraph();
 const parts = outline.parts;
 
-// Load per-part reading recommendations for CircleNavigator
-const allPartReadings = await getCollection('part-readings');
-const partReadingsMap: Record<string, any> = {};
-for (const entry of allPartReadings) {
-  partReadingsMap[String(entry.data.partNumber)] = entry.data.readings;
-}
-
 // Build section metadata lookup for CircleNavigator
 const sectionMeta: Record<string, { title: string; partNumber: number; sectionCode: string }> = {};
 outline.flatSections.forEach((section) => {
@@ -263,7 +256,14 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
       </div>
 
       <div class="mt-8">
-        <CircleNavigator client:load parts={circleNavigatorParts} connections={partConnections} sectionMeta={sectionMeta} bridgeRecommendations={bridgeRecommendations} partReadings={partReadingsMap} baseUrl={base} />
+        <CircleNavigator
+          client:load
+          parts={circleNavigatorParts}
+          connections={partConnections}
+          sectionMeta={sectionMeta}
+          bridgeRecommendations={bridgeRecommendations}
+          baseUrl={base}
+        />
       </div>
     </section>
 

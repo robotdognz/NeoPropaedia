@@ -329,7 +329,13 @@ function summarizeConnections(
   return { sections, isDirect: false, hasKeyword: false, hasConnectionData: sections.length > 0 };
 }
 
-export default function CircleNavigator({ parts, connections, sectionMeta, bridgeRecommendations, partReadings, baseUrl }: CircleNavigatorProps) {
+export default function CircleNavigator({
+  parts,
+  connections,
+  sectionMeta,
+  bridgeRecommendations,
+  baseUrl,
+}: CircleNavigatorProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const dragStateRef = useRef<DragState | null>(null);
   const [centerHasFocus, setCenterHasFocus] = useState(false);
@@ -1675,7 +1681,8 @@ export default function CircleNavigator({ parts, connections, sectionMeta, bridg
             <TopPartCircleNavigatorPanel
               topPart={topPart}
               topPartNumber={topPartNumber}
-              partReadings={partReadings}
+              readingPref={readingPref}
+              checklistState={checklistState}
               baseUrl={baseUrl}
             />
           )}
