@@ -6,8 +6,8 @@ interface SpreadPathStepBase {
   title: string;
   checklistKey: string;
   sectionCount: number;
-  newSectionCount: number;
-  cumulativeCoveredSectionCount: number;
+  newCoverageCount: number;
+  cumulativeCoveredCount: number;
   newSections: ReadingSectionSummary[];
 }
 
@@ -15,7 +15,7 @@ interface ReadingSpreadPathProps<TStep extends SpreadPathStepBase> {
   isOpen: boolean;
   onToggleOpen: () => void;
   steps: TStep[];
-  remainingSections: number;
+  remainingCoverageCount: number;
   checklistState: Record<string, boolean>;
   onCheckedChange: (checklistKey: string, checked: boolean) => void;
   getHref: (step: TStep) => string;
@@ -23,6 +23,8 @@ interface ReadingSpreadPathProps<TStep extends SpreadPathStepBase> {
   checkboxAriaLabel: (step: TStep) => string;
   itemSingular: string;
   itemPlural: string;
+  coverageUnitSingular: string;
+  coverageUnitPlural: string;
   emptyMessage: string;
   baseUrl: string;
   sectionLinksVariant?: 'details' | 'chips';
@@ -32,7 +34,7 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
   isOpen,
   onToggleOpen,
   steps,
-  remainingSections,
+  remainingCoverageCount,
   checklistState,
   onCheckedChange,
   getHref,
@@ -40,6 +42,8 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
   checkboxAriaLabel,
   itemSingular,
   itemPlural,
+  coverageUnitSingular,
+  coverageUnitPlural,
   emptyMessage,
   baseUrl,
   sectionLinksVariant = 'details',
@@ -67,12 +71,13 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
           </h2>
           <p class="mt-2 text-sm text-gray-700">
             A suggested reading order that builds your knowledge as broadly as possible. Each step picks the
-            unread {itemSingular} that opens up the most new sections, favouring {itemPlural} that reach across different
-            parts of the outline rather than clustering in one area. The path adapts as you check off what you have read.
+            unread {itemSingular} that opens up the most new {coverageUnitPlural.toLowerCase()}, favouring {itemPlural}
+            that reach across different parts of the outline rather than clustering in one area. The path adapts as you
+            check off what you have read.
           </p>
         </div>
         <p class="text-sm text-amber-900 flex-shrink-0">
-          {steps.length} steps · {remainingSections} sections uncovered
+          {steps.length} steps · {remainingCoverageCount} {remainingCoverageCount === 1 ? coverageUnitSingular.toLowerCase() : coverageUnitPlural.toLowerCase()} uncovered
         </p>
       </button>
 
@@ -109,20 +114,20 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
 
                 <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium">
                   <span class="rounded-full bg-amber-100 px-2.5 py-1 text-amber-900">
-                    +{step.newSectionCount} new sections
+                    +{step.newCoverageCount} new {step.newCoverageCount === 1 ? coverageUnitSingular.toLowerCase() : coverageUnitPlural.toLowerCase()}
                   </span>
                   <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">
                     {step.sectionCount} total sections
                   </span>
                   <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">
-                    {step.cumulativeCoveredSectionCount} covered after this step
+                    {step.cumulativeCoveredCount} covered after this step
                   </span>
                 </div>
 
                 <ReadingSectionLinks
                   sections={step.newSections}
                   baseUrl={baseUrl}
-                  label={`Show the ${step.newSectionCount} new sections`}
+                  label="Show the sections this opens up"
                   variant={sectionLinksVariant}
                 />
               </li>

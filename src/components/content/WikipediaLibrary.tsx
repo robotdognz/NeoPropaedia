@@ -1,31 +1,39 @@
 import { h } from 'preact';
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useMemo, useState } from 'preact/hooks';
 import { writeChecklistState } from '../../utils/readingChecklist';
-import {
-  buildWikipediaCoverageSnapshot,
-  type WikipediaAggregateEntry,
-} from '../../utils/readingData';
+import { type WikipediaAggregateEntry } from '../../utils/readingData';
 import { slugify } from '../../utils/helpers';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import {
   buildCoverageRings,
+  buildLayerCoverageSnapshot,
   completedChecklistKeysFromState,
+  countEntryCoverageForLayer,
   countCompletedEntries,
+  coverageLayerLabel,
+  COVERAGE_LAYER_META,
+  selectDefaultCoverageLayer,
+  type CoverageLayer,
 } from '../../utils/readingLibrary';
+import CoverageLayerTabs from './CoverageLayerTabs';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSpreadPath from './ReadingSpreadPath';
 
 export interface WikipediaLibraryProps {
   entries: WikipediaAggregateEntry[];
   baseUrl: string;
+  outlineItemCounts?: Record<string, number>;
+  totalOutlineItems?: number;
 }
 
 type KnowledgeLevel = 1 | 2 | 3;
-type StatusFilter = 'all' | 'unchecked' | 'checked';
-type SortMode = 'sections-desc' | 'sections-asc' | 'title-asc' | 'title-desc';
+type ReadFilter = 'all' | 'unread' | 'read';
+type SortField = 'section' | 'part' | 'division' | 'subsection' | 'title';
+type SortDirection = 'asc' | 'desc';
 
 const LEVEL_KEY = 'propaedia-wiki-level';
 const INITIAL_VISIBLE = 50;
+const RECOMMENDATION_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
 
 function getStoredLevel(): KnowledgeLevel {
   if (typeof window === 'undefined') return 3;
@@ -40,12 +48,43 @@ function storeLevel(level: KnowledgeLevel) {
   if (typeof window !== 'undefined') localStorage.setItem(LEVEL_KEY, String(level));
 }
 
-export default function WikipediaLibrary({ entries, baseUrl }: WikipediaLibraryProps) {
+function activeCoverageDescription(layer: CoverageLayer): string {
+  switch (layer) {
+    case 'part':
+      return 'Parts with at least one checked vital article.';
+    case 'division':
+      return 'Divisions with at least one checked vital article.';
+    case 'section':
+      return 'Sections with at least one checked vital article.';
+    case 'subsection':
+      return 'Mapped subsection coverage from outline-path matches in the section mappings.';
+    default:
+      return '';
+  }
+}
+
+function emptyRecommendationMessage(layer: CoverageLayer, isComplete: boolean): string {
+  const label = coverageLayerLabel(layer, 2, { lowercase: true });
+  if (isComplete) {
+    return `You have already covered every mapped ${label} in this tab.`;
+  }
+
+  return `No unread article adds any further ${label} coverage right now.`;
+}
+
+export default function WikipediaLibrary({
+  entries,
+  baseUrl,
+  outlineItemCounts,
+  totalOutlineItems,
+}: WikipediaLibraryProps) {
   const checklistState = useReadingChecklistState();
   const [level, setLevel] = useState<KnowledgeLevel>(3);
+  const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
   const [query, setQuery] = useState('');
-  const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
-  const [sortMode, setSortMode] = useState<SortMode>('sections-desc');
+  const [readFilter, setReadFilter] = useState<ReadFilter>('all');
+  const [sortField, setSortField] = useState<SortField>('section');
+  const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
   const [spreadPathOpen, setSpreadPathOpen] = useState(false);
 
@@ -53,53 +92,109 @@ export default function WikipediaLibrary({ entries, baseUrl }: WikipediaLibraryP
     setLevel(getStoredLevel());
   }, []);
 
-  useEffect(() => { setVisibleCount(INITIAL_VISIBLE); }, [query, statusFilter, sortMode, level]);
+  useEffect(() => {
+    setVisibleCount(INITIAL_VISIBLE);
+  }, [query, readFilter, sortField, sortDirection, level]);
 
   const changeLevel = (newLevel: KnowledgeLevel) => {
     setLevel(newLevel);
+    setSelectedLayer(null);
     storeLevel(newLevel);
   };
 
-  const levelEntries = entries.filter((e) => e.lowestLevel <= level);
-  const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
-  const coverage = buildWikipediaCoverageSnapshot(levelEntries, completedChecklistKeys);
+  const levelEntries = entries.filter((entry) => entry.lowestLevel <= level);
   const completedCount = countCompletedEntries(levelEntries, checklistState);
-  const coverageRings = buildCoverageRings(levelEntries, checklistState);
-
   const normalizedQuery = query.trim().toLowerCase();
-  const collate = (a: string, b: string) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
 
+  const {
+    coverageRings,
+    defaultLayer,
+    layerSnapshots,
+    layerTabSnapshots,
+  } = useMemo(() => {
+    const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
+    const snapshots = RECOMMENDATION_LAYERS.map((layer) => buildLayerCoverageSnapshot(levelEntries, completedChecklistKeys, layer, {
+      outlineItemCounts,
+    }));
+    const tabSnapshots = snapshots.map((snapshot) => ({
+      layer: snapshot.layer,
+      currentlyCoveredCount: snapshot.currentlyCoveredCount,
+      totalCoverageCount: snapshot.totalCoverageCount,
+    }));
+
+    return {
+      coverageRings: buildCoverageRings(levelEntries, checklistState, {
+        outlineItemCounts,
+        totalOutlineItems,
+      }),
+      defaultLayer: selectDefaultCoverageLayer(tabSnapshots),
+      layerSnapshots: snapshots,
+      layerTabSnapshots: tabSnapshots,
+    };
+  }, [checklistState, levelEntries, outlineItemCounts, totalOutlineItems]);
+
+  const activeLayer = selectedLayer ?? defaultLayer;
+  const activeSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === activeLayer) ?? layerSnapshots[0];
+  const activePath = activeSnapshot
+    ? activeSnapshot.path.map(({ entry, ...rest }) => ({
+        ...entry,
+        ...rest,
+      }))
+    : [];
+  const bestNextRead = activePath[0] ?? null;
+  const isLayerComplete = activeSnapshot
+    ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
+    : false;
+  const layerMeta = activeSnapshot ? COVERAGE_LAYER_META[activeSnapshot.layer] : COVERAGE_LAYER_META.section;
+  const coverageCounts = useMemo(() => new Map(
+    levelEntries.map((entry) => [
+      entry.checklistKey,
+      {
+        part: countEntryCoverageForLayer(entry, 'part'),
+        division: countEntryCoverageForLayer(entry, 'division'),
+        section: countEntryCoverageForLayer(entry, 'section'),
+        subsection: countEntryCoverageForLayer(entry, 'subsection', { outlineItemCounts }),
+      },
+    ])
+  ), [levelEntries, outlineItemCounts]);
+
+  const collate = (a: string, b: string) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+  const compareNumber = (a: number, b: number) => (sortDirection === 'asc' ? a - b : b - a);
   const filteredEntries = levelEntries
-    .filter((e) => {
-      const isChecked = Boolean(checklistState[e.checklistKey]);
-      if (statusFilter === 'checked' && !isChecked) return false;
-      if (statusFilter === 'unchecked' && isChecked) return false;
+    .filter((entry) => {
+      const isChecked = Boolean(checklistState[entry.checklistKey]);
+      if (readFilter === 'read' && !isChecked) return false;
+      if (readFilter === 'unread' && isChecked) return false;
       if (!normalizedQuery) return true;
-      return e.title.toLowerCase().includes(normalizedQuery) || (e.category || '').toLowerCase().includes(normalizedQuery);
+      return entry.title.toLowerCase().includes(normalizedQuery) || (entry.category || '').toLowerCase().includes(normalizedQuery);
     })
     .sort((a, b) => {
-      switch (sortMode) {
-        case 'title-asc': return collate(a.title, b.title);
-        case 'title-desc': return collate(b.title, a.title);
-        case 'sections-asc': return a.sectionCount !== b.sectionCount ? a.sectionCount - b.sectionCount : collate(a.title, b.title);
-        default: return a.sectionCount !== b.sectionCount ? b.sectionCount - a.sectionCount : collate(a.title, b.title);
+      switch (sortField) {
+        case 'title':
+          return sortDirection === 'asc' ? collate(a.title, b.title) : collate(b.title, a.title);
+        default: {
+          const aCount = coverageCounts.get(a.checklistKey)?.[sortField] ?? 0;
+          const bCount = coverageCounts.get(b.checklistKey)?.[sortField] ?? 0;
+          const primary = compareNumber(aCount, bCount);
+          return primary !== 0 ? primary : collate(a.title, b.title);
+        }
       }
     });
 
   const visibleEntries = filteredEntries.slice(0, visibleCount);
   const canShowMore = visibleEntries.length < filteredEntries.length;
-  const bestNextRead = coverage.path[0] ?? null;
 
   return (
     <div class="space-y-8">
-      {/* Level toggle */}
       <div class="flex justify-center">
         <div class="flex rounded-lg border border-gray-200 bg-white p-1">
           {([1, 2, 3] as KnowledgeLevel[]).map((lvl) => {
             const labels: Record<number, string> = { 1: 'Level 1 - 10', 2: 'Level 2 - 100', 3: 'Level 3 - ~1,000' };
             return (
               <button
-                key={lvl} type="button" onClick={() => changeLevel(lvl)}
+                key={lvl}
+                type="button"
+                onClick={() => changeLevel(lvl)}
                 class={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${level === lvl ? 'bg-indigo-600 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
               >
                 {labels[lvl]}
@@ -109,6 +204,12 @@ export default function WikipediaLibrary({ entries, baseUrl }: WikipediaLibraryP
         </div>
       </div>
 
+      <CoverageLayerTabs
+        activeLayer={activeLayer}
+        onSelect={(layer) => setSelectedLayer(layer)}
+        snapshots={layerTabSnapshots}
+      />
+
       <ReadingCoverageSummary
         coverageRings={coverageRings}
         totalLabel="Articles"
@@ -116,58 +217,82 @@ export default function WikipediaLibrary({ entries, baseUrl }: WikipediaLibraryP
         totalDescription="Wikipedia Vital Articles at the selected level."
         completedCount={completedCount}
         completedDescription="Shared with the Done boxes on section pages."
-        sectionCoverageCount={coverage.currentlyCoveredSections}
-        sectionCoverageTotal={coverage.totalCoveredSections}
-        sectionCoverageDescription="Sections covered by your checked articles."
-        bestNextLabel="Best Next Read"
+        activeCoverageLabel={`${layerMeta.label} Coverage`}
+        activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
+        activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
+        activeCoverageDescription={activeCoverageDescription(activeLayer)}
+        bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
         bestNextHref={bestNextRead ? `${baseUrl}/wikipedia/${slugify(bestNextRead.title)}` : undefined}
         bestNextTitle={bestNextRead?.title}
-        bestNextDescription={bestNextRead ? `Adds ${bestNextRead.newSectionCount} new sections, ${bestNextRead.sectionCount} total.` : undefined}
-        emptyBestNextText="No unread article adds further section coverage."
+        bestNextDescription={bestNextRead ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount, { lowercase: true })}, ${bestNextRead.sectionCount} total sections.` : undefined}
+        emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
       />
 
       <ReadingSpreadPath
         isOpen={spreadPathOpen}
         onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
-        steps={coverage.path}
-        remainingSections={coverage.remainingSections}
+        steps={activePath}
+        remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
         checklistState={checklistState}
         onCheckedChange={writeChecklistState}
         getHref={(step) => `${baseUrl}/wikipedia/${slugify(step.title)}`}
         checkboxAriaLabel={(step) => `Mark ${step.title} as read`}
         itemSingular="article"
         itemPlural="articles"
-        emptyMessage="No further spread path is available from unchecked articles."
+        coverageUnitSingular={layerMeta.label}
+        coverageUnitPlural={layerMeta.pluralLabel}
+        emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
         baseUrl={baseUrl}
         sectionLinksVariant="chips"
       />
 
-      {/* Filters and list */}
       <section class="rounded-2xl border border-gray-200 bg-white p-4 sm:p-6">
-        <div class="grid gap-4 sm:grid-cols-3">
+        <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           <label class="block">
             <span class="mb-2 block text-sm font-medium text-gray-700">Search</span>
-            <input type="search" placeholder="Search articles..." value={query}
-              onInput={(e) => setQuery((e.target as HTMLInputElement).value)}
-              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200" />
+            <input
+              type="search"
+              placeholder="Search articles..."
+              value={query}
+              onInput={(event) => setQuery((event.currentTarget as HTMLInputElement).value)}
+              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            />
           </label>
           <label class="block">
-            <span class="mb-2 block text-sm font-medium text-gray-700">Status</span>
-            <select value={statusFilter} onChange={(e) => setStatusFilter((e.currentTarget as HTMLSelectElement).value as StatusFilter)}
-              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200">
+            <span class="mb-2 block text-sm font-medium text-gray-700">Read Status</span>
+            <select
+              value={readFilter}
+              onChange={(event) => setReadFilter((event.currentTarget as HTMLSelectElement).value as ReadFilter)}
+              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            >
               <option value="all">All</option>
-              <option value="unchecked">Unchecked only</option>
-              <option value="checked">Checked only</option>
+              <option value="unread">Unread only</option>
+              <option value="read">Read only</option>
             </select>
           </label>
           <label class="block">
-            <span class="mb-2 block text-sm font-medium text-gray-700">Sort</span>
-            <select value={sortMode} onChange={(e) => setSortMode((e.currentTarget as HTMLSelectElement).value as SortMode)}
-              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200">
-              <option value="sections-desc">Most sections first</option>
-              <option value="sections-asc">Fewest sections first</option>
-              <option value="title-asc">Title A → Z</option>
-              <option value="title-desc">Title Z → A</option>
+            <span class="mb-2 block text-sm font-medium text-gray-700">Sort By</span>
+            <select
+              value={sortField}
+              onChange={(event) => setSortField((event.currentTarget as HTMLSelectElement).value as SortField)}
+              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            >
+              <option value="part">Parts covered</option>
+              <option value="division">Divisions covered</option>
+              <option value="section">Sections covered</option>
+              <option value="subsection">Subsections covered</option>
+              <option value="title">Title</option>
+            </select>
+          </label>
+          <label class="block">
+            <span class="mb-2 block text-sm font-medium text-gray-700">Order</span>
+            <select
+              value={sortDirection}
+              onChange={(event) => setSortDirection((event.currentTarget as HTMLSelectElement).value as SortDirection)}
+              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            >
+              <option value="desc">Descending</option>
+              <option value="asc">Ascending</option>
             </select>
           </label>
         </div>
@@ -191,24 +316,36 @@ export default function WikipediaLibrary({ entries, baseUrl }: WikipediaLibraryP
                         </p>
                       </div>
                       <label class="inline-flex flex-shrink-0 items-center gap-2 text-xs font-medium text-gray-500">
-                        <input type="checkbox" checked={isChecked}
-                          onChange={(e) => writeChecklistState(entry.checklistKey, (e.currentTarget as HTMLInputElement).checked)}
+                        <input
+                          type="checkbox"
+                          checked={isChecked}
+                          onChange={(event) => writeChecklistState(entry.checklistKey, (event.currentTarget as HTMLInputElement).checked)}
                           class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          aria-label={`Mark ${entry.title} as read`} />
+                          aria-label={`Mark ${entry.title} as read`}
+                        />
                         Done
                       </label>
                     </div>
                     <div class="mt-3 flex items-center gap-3">
-                      <a href={entry.url} target="_blank" rel="noopener noreferrer"
-                        class="text-xs text-indigo-600 hover:text-indigo-800">Read on Wikipedia ↗</a>
+                      <a
+                        href={entry.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-xs text-indigo-600 hover:text-indigo-800"
+                      >
+                        Read on Wikipedia ↗
+                      </a>
                     </div>
                   </article>
                 );
               })}
             </div>
             {canShowMore && (
-              <button type="button" onClick={() => setVisibleCount((c) => c + 50)}
-                class="mt-6 w-full rounded-lg border border-gray-300 bg-white py-3 text-sm font-medium text-gray-700 hover:bg-gray-50">
+              <button
+                type="button"
+                onClick={() => setVisibleCount((count) => count + 50)}
+                class="mt-6 w-full rounded-lg border border-gray-300 bg-white py-3 text-sm font-medium text-gray-700 hover:bg-gray-50"
+              >
                 Show more ({filteredEntries.length - visibleCount} remaining)
               </button>
             )}

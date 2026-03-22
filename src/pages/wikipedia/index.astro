@@ -2,6 +2,7 @@
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import WikipediaLibrary from '../../components/content/WikipediaLibrary';
 import { buildWikipediaAggregateEntries, type ReadingSectionSummary } from '../../utils/readingData';
+import { buildOutlineItemCoverage, buildSectionOutlinePathIndex, buildSubsectionCoverageKeys } from '../../utils/outlineCoverage';
 import wikiCatalog from '../../data/wikipedia-catalog.json';
 import { getCollection } from 'astro:content';
 
@@ -23,21 +24,38 @@ const sectionLookup = new Map<string, ReadingSectionSummary>(
 );
 
 // Build sectionCodes per article from the per-section mapping files
-const articleSectionCodes = new Map<string, Set<string>>();
+const sectionOutlinePathIndex = buildSectionOutlinePathIndex(sections.map((entry) => entry.data));
+const articleCoverage = new Map<string, { sectionCodes: Set<string>; subsectionKeys: Set<string> }>();
 for (const mapping of wikiMappings) {
   for (const m of mapping.data.mappings) {
-    if (!articleSectionCodes.has(m.articleTitle)) articleSectionCodes.set(m.articleTitle, new Set());
-    articleSectionCodes.get(m.articleTitle)!.add(mapping.data.sectionCode);
+    if (!articleCoverage.has(m.articleTitle)) {
+      articleCoverage.set(m.articleTitle, {
+        sectionCodes: new Set(),
+        subsectionKeys: new Set(),
+      });
+    }
+
+    const coverage = articleCoverage.get(m.articleTitle)!;
+    coverage.sectionCodes.add(mapping.data.sectionCode);
+    buildSubsectionCoverageKeys(
+      mapping.data.sectionCode,
+      m.relevantPathsAI,
+      sectionOutlinePathIndex
+    ).forEach((key) => coverage.subsectionKeys.add(key));
   }
 }
 
 // Build article list from catalog with section codes attached
 const articles = (wikiCatalog as any).articles.map((a: any) => ({
   ...a,
-  sectionCodes: [...(articleSectionCodes.get(a.title) || [])],
+  sectionCodes: [...(articleCoverage.get(a.title)?.sectionCodes || [])],
+  subsectionKeys: [...(articleCoverage.get(a.title)?.subsectionKeys || [])],
 }));
 
 const entries = buildWikipediaAggregateEntries(articles, sectionLookup);
+const { outlineItemCounts, totalOutlineItems } = buildOutlineItemCoverage(
+  sections.map((entry) => entry.data)
+);
 ---
 
 <BaseLayout
@@ -60,7 +78,13 @@ const entries = buildWikipediaAggregateEntries(articles, sectionLookup);
     </header>
 
     <section class="mt-10">
-      <WikipediaLibrary client:load entries={entries} baseUrl={base} />
+      <WikipediaLibrary
+        client:load
+        entries={entries}
+        baseUrl={base}
+        outlineItemCounts={outlineItemCounts}
+        totalOutlineItems={totalOutlineItems}
+      />
     </section>
   </main>
 </BaseLayout>

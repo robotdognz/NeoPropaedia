@@ -76,6 +76,13 @@ type AnchoredRecommendationItem<TEntry extends AnchoredEntryBase> = {
   isCompleted: boolean;
 };
 
+type AnchoredRecommendationResult<TEntry extends AnchoredEntryBase> = {
+  unreadItems: AnchoredRecommendationItem<TEntry>[];
+  completedItems: AnchoredRecommendationItem<TEntry>[];
+  overlapOnlyUnreadCount: number;
+  totalUnreadLinkedCount: number;
+};
+
 interface AnchoredRecommendationSectionConfig<TEntry extends AnchoredEntryBase> {
   type: ReadingType;
   title: string;
@@ -86,6 +93,8 @@ interface AnchoredRecommendationSectionConfig<TEntry extends AnchoredEntryBase> 
   unreadCount: number;
   completedCount: number;
   remainingSections: number;
+  overlapOnlyUnreadCount: number;
+  totalUnreadLinkedCount: number;
   unreadItems: AnchoredRecommendationItem<TEntry>[];
   completedItems: AnchoredRecommendationItem<TEntry>[];
   getHref: (item: TEntry) => string;
@@ -120,18 +129,13 @@ function buildAnchoredRecommendationItems<TEntry extends AnchoredEntryBase>(
       newSections: ReadingSectionSummary[];
     }>;
   }
-): {
-  unreadItems: AnchoredRecommendationItem<TEntry>[];
-  completedItems: AnchoredRecommendationItem<TEntry>[];
-} {
+): AnchoredRecommendationResult<TEntry> {
   const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
   const entryLookup = new Map(entries.map((entry) => [entry.checklistKey, entry]));
-  const rankedKeys = new Set<string>();
 
   const unreadItems = snapshot.path.flatMap((step) => {
     const entry = entryLookup.get(step.checklistKey);
     if (!entry || completedChecklistKeys.has(step.checklistKey)) return [];
-    rankedKeys.add(step.checklistKey);
     return [{
       entry,
       newSectionCount: step.newSectionCount,
@@ -141,17 +145,8 @@ function buildAnchoredRecommendationItems<TEntry extends AnchoredEntryBase>(
     }];
   });
 
-  unreadItems.push(
-    ...entries
-      .filter((entry) => !completedChecklistKeys.has(entry.checklistKey) && !rankedKeys.has(entry.checklistKey))
-      .map((entry) => ({
-        entry,
-        newSectionCount: 0,
-        cumulativeCoveredSectionCount: snapshot.totalCoveredSections,
-        newSections: [],
-        isCompleted: false,
-      }))
-  );
+  const totalUnreadLinkedCount = entries.filter((entry) => !completedChecklistKeys.has(entry.checklistKey)).length;
+  const overlapOnlyUnreadCount = totalUnreadLinkedCount - unreadItems.length;
 
   const completedItems = entries
     .filter((entry) => completedChecklistKeys.has(entry.checklistKey))
@@ -163,7 +158,7 @@ function buildAnchoredRecommendationItems<TEntry extends AnchoredEntryBase>(
       isCompleted: true,
     }));
 
-  return { unreadItems, completedItems };
+  return { unreadItems, completedItems, overlapOnlyUnreadCount, totalUnreadLinkedCount };
 }
 
 function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
@@ -231,13 +226,9 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
             <span class="rounded-full bg-slate-200 px-2.5 py-1 text-slate-700">
               Already marked done
             </span>
-          ) : item.newSectionCount > 0 ? (
+          ) : (
             <span class="rounded-full bg-amber-100 px-2.5 py-1 text-amber-900">
               +{item.newSectionCount} new {pluralize(item.newSectionCount, 'section')}
-            </span>
-          ) : (
-            <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
-              No new sections left
             </span>
           )}
           <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
@@ -266,14 +257,14 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
   return (
     <Accordion
       key={section.type}
-      title={`${section.title} (${section.totalCount})`}
+      title={`${section.title} (${section.unreadCount})`}
       forceOpenKey={readingPref === section.type ? 0 : undefined}
       forceCloseKey={readingPref !== section.type ? 0 : undefined}
     >
       <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <p class="max-w-2xl text-xs leading-5 text-slate-500 sm:text-sm">
-          {section.unreadCount} unread {pluralize(section.unreadCount, section.itemSingular)} linked to {topPart.title}.
-          {' '}Ranked by how much new ground each unread {section.itemSingular} opens across the whole outline.
+          {section.totalUnreadLinkedCount} unread {pluralize(section.totalUnreadLinkedCount, section.itemSingular)} linked to {topPart.title}.
+          {' '}Showing the {section.unreadCount} that still add new section coverage across the whole outline.
           {' '}{section.remainingSections > 0
             ? `${section.remainingSections} ${pluralize(section.remainingSections, 'section')} remain uncovered from this anchored list.`
             : `Your checked ${pluralize(section.completedCount, section.itemSingular)} already cover every mapped section this anchored list can reach.`}
@@ -289,12 +280,16 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
       {section.unreadItems.length > 0 ? (
         <ol class="space-y-3">
           {section.unreadItems.map((item, index) =>
-            renderItem(item, item.newSectionCount > 0 ? `Step ${index + 1}` : 'Related reading')
+            renderItem(item, `Step ${index + 1}`)
           )}
         </ol>
       ) : (
         <div class="rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
-          Every linked {section.itemSingular} here is already marked done.
+          {section.totalUnreadLinkedCount === 0
+            ? `Every linked ${section.itemSingular} here is already marked done.`
+            : section.overlapOnlyUnreadCount > 0
+              ? `No unread linked ${pluralize(section.overlapOnlyUnreadCount, section.itemSingular)} add any new section coverage right now.`
+              : `No additional linked ${pluralize(0, section.itemSingular)} are available right now.`}
         </div>
       )}
 
@@ -580,6 +575,8 @@ export function TopPartCircleNavigatorPanel({
         unreadCount: vsiRecommendations.unreadItems.length,
         completedCount: vsiRecommendations.completedItems.length,
         remainingSections: vsiSnapshot.remainingSections,
+        overlapOnlyUnreadCount: vsiRecommendations.overlapOnlyUnreadCount,
+        totalUnreadLinkedCount: vsiRecommendations.totalUnreadLinkedCount,
         unreadItems: vsiRecommendations.unreadItems,
         completedItems: vsiRecommendations.completedItems,
         getHref: (item: CircleNavigatorVsiEntry) => `${baseUrl}/vsi/${slugify(item.title)}`,
@@ -595,6 +592,8 @@ export function TopPartCircleNavigatorPanel({
         unreadCount: wikiRecommendations.unreadItems.length,
         completedCount: wikiRecommendations.completedItems.length,
         remainingSections: wikiSnapshot.remainingSections,
+        overlapOnlyUnreadCount: wikiRecommendations.overlapOnlyUnreadCount,
+        totalUnreadLinkedCount: wikiRecommendations.totalUnreadLinkedCount,
         unreadItems: wikiRecommendations.unreadItems,
         completedItems: wikiRecommendations.completedItems,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
@@ -611,6 +610,8 @@ export function TopPartCircleNavigatorPanel({
         unreadCount: macroRecommendations.unreadItems.length,
         completedCount: macroRecommendations.completedItems.length,
         remainingSections: macroSnapshot.remainingSections,
+        overlapOnlyUnreadCount: macroRecommendations.overlapOnlyUnreadCount,
+        totalUnreadLinkedCount: macroRecommendations.totalUnreadLinkedCount,
         unreadItems: macroRecommendations.unreadItems,
         completedItems: macroRecommendations.completedItems,
         getHref: (item: CircleNavigatorMacropaediaEntry) => `${baseUrl}/macropaedia/${slugify(item.title)}`,
@@ -632,10 +633,10 @@ export function TopPartCircleNavigatorPanel({
 
       <div class="mt-3 border-t border-slate-200 pt-3">
         <a
-          href={topPart.href}
+          href={`${topPart.href}?view=essay#essay`}
           class="inline-flex items-center gap-1.5 rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
         >
-          Open part page
+          Read essay
         </a>
       </div>
 
@@ -671,8 +672,8 @@ export function TopPartCircleNavigatorPanel({
         </p>
         <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
           Every item below is linked to {topPart.partName}. Unread items are ranked by how much new section
-          coverage they add across the whole outline from your current checklist, and the rest of the linked
-          readings stay visible underneath so the full anchored list remains available here.
+          coverage they add across the whole outline from your current checklist. Items that add no new
+          section coverage are left out of this list.
         </p>
 
         {recommendationsError ? (

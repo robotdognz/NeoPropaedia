@@ -4,6 +4,7 @@ import {
   wikipediaChecklistKey,
 } from './readingChecklist';
 import { macropaediaLookupKey, vsiLookupKey } from './readingIdentity';
+import { buildSectionOutlinePathIndex, buildSubsectionCoverageKeys } from './outlineCoverage';
 
 export interface ReadingSectionSummary {
   sectionCode: string;
@@ -28,6 +29,7 @@ export interface VsiMappingRecord {
     vsiTitle: string;
     vsiAuthor: string;
     rationaleAI: string;
+    relevantPathsAI?: string[];
   }>;
 }
 
@@ -45,6 +47,7 @@ export interface VsiAggregateEntry {
   checklistKey: string;
   sectionCount: number;
   sections: ReadingSectionSummary[];
+  subsectionKeys?: string[];
 }
 
 export interface MacropaediaAggregateEntry {
@@ -104,6 +107,14 @@ export interface WikipediaAggregateEntry {
   checklistKey: string;
   sectionCount: number;
   sections: ReadingSectionSummary[];
+  subsectionKeys?: string[];
+}
+
+interface OutlineBearingSection extends ReadingSectionSummary {
+  outline?: Array<{
+    level?: string;
+    children?: any[];
+  }>;
 }
 
 export interface WikipediaCoverageSnapshot {
@@ -170,11 +181,17 @@ export function formatEditionLabel(edition?: number): string | null {
 }
 
 export function buildVsiAggregateEntries(
-  sections: ReadingSectionSummary[],
+  sections: OutlineBearingSection[],
   mappings: VsiMappingRecord[],
   catalog: VsiCatalogTitle[]
 ): VsiAggregateEntry[] {
   const sectionLookup = new Map(sections.map((section) => [section.sectionCode, section]));
+  const sectionOutlinePathIndex = buildSectionOutlinePathIndex(
+    sections.map((section) => ({
+      sectionCode: section.sectionCode,
+      outline: section.outline ?? [],
+    }))
+  );
   const catalogLookup = new Map(
     catalog.map((entry) => [
       vsiLookupKey(entry.title, entry.author),
@@ -186,6 +203,7 @@ export function buildVsiAggregateEntries(
     {
       entry: VsiAggregateEntry;
       sectionCodes: Set<string>;
+      subsectionKeys: Set<string>;
     }
   >();
 
@@ -193,15 +211,15 @@ export function buildVsiAggregateEntries(
     const section = sectionLookup.get(sectionMapping.sectionCode);
     if (!section) continue;
 
-    const seenInSection = new Set<string>();
-
     for (const mappingEntry of sectionMapping.mappings) {
       const lookupKey = vsiLookupKey(mappingEntry.vsiTitle, mappingEntry.vsiAuthor);
-      if (seenInSection.has(lookupKey)) continue;
-      seenInSection.add(lookupKey);
-
       const catalogEntry = catalogLookup.get(lookupKey);
       const existing = aggregateMap.get(lookupKey);
+      const subsectionKeys = buildSubsectionCoverageKeys(
+        section.sectionCode,
+        mappingEntry.relevantPathsAI,
+        sectionOutlinePathIndex
+      );
 
       if (existing) {
         if (!existing.sectionCodes.has(section.sectionCode)) {
@@ -209,6 +227,7 @@ export function buildVsiAggregateEntries(
           existing.entry.sections.push(section);
           existing.entry.sectionCount = existing.entry.sections.length;
         }
+        subsectionKeys.forEach((key) => existing.subsectionKeys.add(key));
         continue;
       }
 
@@ -217,6 +236,7 @@ export function buildVsiAggregateEntries(
 
       aggregateMap.set(lookupKey, {
         sectionCodes: new Set([section.sectionCode]),
+        subsectionKeys: new Set(subsectionKeys),
         entry: {
           title,
           author,
@@ -227,16 +247,18 @@ export function buildVsiAggregateEntries(
           checklistKey: vsiChecklistKey(title, author),
           sectionCount: 1,
           sections: [section],
+          subsectionKeys,
         },
       });
     }
   }
 
   return Array.from(aggregateMap.values())
-    .map(({ entry }) => ({
+    .map(({ entry, subsectionKeys }) => ({
       ...entry,
       sections: [...entry.sections].sort(sectionSort),
       sectionCount: entry.sections.length,
+      subsectionKeys: [...subsectionKeys].sort(),
     }))
     .sort(vsiSort);
 }
@@ -334,7 +356,7 @@ export function buildMacropaediaCoverageSnapshot(
 }
 
 export function buildWikipediaAggregateEntries(
-  articles: Array<{ title: string; displayTitle?: string; url: string; category?: string; lowestLevel: number; sectionCodes: string[] }>,
+  articles: Array<{ title: string; displayTitle?: string; url: string; category?: string; lowestLevel: number; sectionCodes: string[]; subsectionKeys?: string[] }>,
   sectionLookup: Map<string, ReadingSectionSummary>
 ): WikipediaAggregateEntry[] {
   return articles.map((article) => {
@@ -352,6 +374,7 @@ export function buildWikipediaAggregateEntries(
       checklistKey: wikipediaChecklistKey(article.title),
       sectionCount: sections.length,
       sections,
+      subsectionKeys: Array.from(new Set(article.subsectionKeys ?? [])).sort(),
     };
   }).sort((a, b) => {
     if (a.sectionCount !== b.sectionCount) return b.sectionCount - a.sectionCount;

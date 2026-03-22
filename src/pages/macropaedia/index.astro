@@ -28,7 +28,11 @@ const entries = buildMacropaediaAggregateEntries(sections.map((entry) => entry.d
     </header>
 
     <section class="mt-10">
-      <MacropaediaLibrary client:load entries={entries} baseUrl={base} />
+      <MacropaediaLibrary
+        client:load
+        entries={entries}
+        baseUrl={base}
+      />
     </section>
   </main>
 </BaseLayout>

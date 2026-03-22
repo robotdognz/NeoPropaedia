@@ -9,9 +9,10 @@ interface ReadingCoverageSummaryProps {
   totalDescription: string;
   completedCount: number;
   completedDescription: string;
-  sectionCoverageCount: number;
-  sectionCoverageTotal: number;
-  sectionCoverageDescription: string;
+  activeCoverageLabel: string;
+  activeCoverageCount: number;
+  activeCoverageTotal: number;
+  activeCoverageDescription: string;
   bestNextLabel: string;
   bestNextHref?: string;
   bestNextTitle?: string;
@@ -29,9 +30,10 @@ export default function ReadingCoverageSummary({
   totalDescription,
   completedCount,
   completedDescription,
-  sectionCoverageCount,
-  sectionCoverageTotal,
-  sectionCoverageDescription,
+  activeCoverageLabel,
+  activeCoverageCount,
+  activeCoverageTotal,
+  activeCoverageDescription,
   bestNextLabel,
   bestNextHref,
   bestNextTitle,
@@ -75,11 +77,11 @@ export default function ReadingCoverageSummary({
           <p class="mt-2 text-sm text-gray-600">{completedDescription}</p>
         </div>
         <div class="rounded-xl border border-gray-200 bg-white p-5">
-          <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Section Coverage</p>
+          <p class="text-sm font-medium uppercase tracking-wide text-gray-500">{activeCoverageLabel}</p>
           <p class="mt-2 font-serif text-3xl text-gray-900">
-            {sectionCoverageCount} / {sectionCoverageTotal}
+            {activeCoverageCount} / {activeCoverageTotal}
           </p>
-          <p class="mt-2 text-sm text-gray-600">{sectionCoverageDescription}</p>
+          <p class="mt-2 text-sm text-gray-600">{activeCoverageDescription}</p>
         </div>
         <div class="rounded-xl border border-amber-200 bg-amber-50 p-5">
           <p class="text-sm font-medium uppercase tracking-wide text-amber-800">{bestNextLabel}</p>

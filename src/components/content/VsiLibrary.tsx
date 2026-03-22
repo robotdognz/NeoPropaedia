@@ -1,8 +1,7 @@
 import { h } from 'preact';
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useMemo, useState } from 'preact/hooks';
 import { writeChecklistState } from '../../utils/readingChecklist';
 import {
-  buildVsiCoverageSnapshot,
   formatEditionLabel,
   type VsiAggregateEntry,
 } from '../../utils/readingData';
@@ -10,9 +9,16 @@ import { slugify } from '../../utils/helpers';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import {
   buildCoverageRings,
+  buildLayerCoverageSnapshot,
   completedChecklistKeysFromState,
+  countEntryCoverageForLayer,
   countCompletedEntries,
+  coverageLayerLabel,
+  COVERAGE_LAYER_META,
+  selectDefaultCoverageLayer,
+  type CoverageLayer,
 } from '../../utils/readingLibrary';
+import CoverageLayerTabs from './CoverageLayerTabs';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSectionLinks from './ReadingSectionLinks';
 import ReadingSpreadPath from './ReadingSpreadPath';
@@ -25,9 +31,11 @@ export interface VsiLibraryProps {
 }
 
 const INITIAL_VISIBLE_COUNT = 50;
+const RECOMMENDATION_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
 
-type StatusFilter = 'all' | 'unchecked' | 'checked';
-type SortMode = 'sections-desc' | 'sections-asc' | 'title-asc' | 'title-desc' | 'number-asc' | 'number-desc';
+type ReadFilter = 'all' | 'unread' | 'read';
+type SortField = 'section' | 'part' | 'division' | 'subsection' | 'title' | 'number';
+type SortDirection = 'asc' | 'desc';
 
 function matchesQuery(entry: VsiAggregateEntry, query: string): boolean {
   if (!query) return true;
@@ -57,79 +65,156 @@ function formatMetadata(entry: VsiAggregateEntry): string {
     .join(' · ');
 }
 
-function sortEntries(entries: VsiAggregateEntry[], sortMode: SortMode): VsiAggregateEntry[] {
+function sortEntries(
+  entries: VsiAggregateEntry[],
+  sortField: SortField,
+  sortDirection: SortDirection,
+  coverageCounts: Map<string, Record<'part' | 'division' | 'section' | 'subsection', number>>
+): VsiAggregateEntry[] {
   const nextEntries = [...entries];
   const collate = (a: string, b: string) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+  const compareNumber = (a: number, b: number) => (sortDirection === 'asc' ? a - b : b - a);
+  const compareText = (a: string, b: string) => (sortDirection === 'asc' ? collate(a, b) : collate(b, a));
 
-  switch (sortMode) {
-    case 'title-asc':
-      nextEntries.sort((a, b) => collate(a.title, b.title));
-      break;
-    case 'title-desc':
-      nextEntries.sort((a, b) => collate(b.title, a.title));
-      break;
-    case 'number-asc':
-      nextEntries.sort((a, b) => {
-        const an = a.number ?? Number.MAX_SAFE_INTEGER;
-        const bn = b.number ?? Number.MAX_SAFE_INTEGER;
-        return an !== bn ? an - bn : collate(a.title, b.title);
-      });
-      break;
-    case 'number-desc':
-      nextEntries.sort((a, b) => {
-        const an = a.number ?? 0;
-        const bn = b.number ?? 0;
-        return an !== bn ? bn - an : collate(a.title, b.title);
-      });
-      break;
-    case 'sections-asc':
-      nextEntries.sort((a, b) => a.sectionCount !== b.sectionCount ? a.sectionCount - b.sectionCount : collate(a.title, b.title));
-      break;
-    default: // sections-desc
-      nextEntries.sort((a, b) => a.sectionCount !== b.sectionCount ? b.sectionCount - a.sectionCount : collate(a.title, b.title));
-      break;
-  }
+  nextEntries.sort((a, b) => {
+    switch (sortField) {
+      case 'title':
+        return compareText(a.title, b.title);
+      case 'number': {
+        const aNumber = sortDirection === 'asc' ? (a.number ?? Number.MAX_SAFE_INTEGER) : (a.number ?? 0);
+        const bNumber = sortDirection === 'asc' ? (b.number ?? Number.MAX_SAFE_INTEGER) : (b.number ?? 0);
+        const primary = sortDirection === 'asc' ? aNumber - bNumber : bNumber - aNumber;
+        return primary !== 0 ? primary : collate(a.title, b.title);
+      }
+      default: {
+        const aCount = coverageCounts.get(a.checklistKey)?.[sortField] ?? 0;
+        const bCount = coverageCounts.get(b.checklistKey)?.[sortField] ?? 0;
+        const primary = compareNumber(aCount, bCount);
+        return primary !== 0 ? primary : collate(a.title, b.title);
+      }
+    }
+  });
+
   return nextEntries;
+}
+
+function activeCoverageDescription(layer: CoverageLayer): string {
+  switch (layer) {
+    case 'part':
+      return 'Parts with at least one VSI covered by your checked titles.';
+    case 'division':
+      return 'Divisions with at least one VSI covered by your checked titles.';
+    case 'section':
+      return 'Sections with at least one VSI covered by your checked titles.';
+    case 'subsection':
+      return 'Mapped subsection coverage from outline-path matches, with whole-section fallback where path data is still missing.';
+    default:
+      return '';
+  }
+}
+
+function emptyRecommendationMessage(layer: CoverageLayer, isComplete: boolean): string {
+  const label = coverageLayerLabel(layer, 2, { lowercase: true });
+  if (isComplete) {
+    return `You have already covered every mapped ${label} in this tab.`;
+  }
+
+  return `No unread VSI adds any further ${label} coverage right now.`;
 }
 
 export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalOutlineItems }: VsiLibraryProps) {
   const checklistState = useReadingChecklistState();
+  const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
   const [query, setQuery] = useState('');
-  const [statusFilter, setStatusFilter] = useState<StatusFilter>('all');
-  const [sortMode, setSortMode] = useState<SortMode>('sections-desc');
+  const [readFilter, setReadFilter] = useState<ReadFilter>('all');
+  const [sortField, setSortField] = useState<SortField>('section');
+  const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_COUNT);
   const [spreadPathOpen, setSpreadPathOpen] = useState(false);
 
   useEffect(() => {
     setVisibleCount(INITIAL_VISIBLE_COUNT);
-  }, [query, statusFilter, sortMode]);
+  }, [query, readFilter, sortField, sortDirection]);
 
   const normalizedQuery = query.trim().toLowerCase();
-  const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
-  const coverage = buildVsiCoverageSnapshot(entries, completedChecklistKeys);
   const completedCount = countCompletedEntries(entries, checklistState);
-  const coverageRings = buildCoverageRings(entries, checklistState, {
-    outlineItemCounts,
-    totalOutlineItems,
-  });
+
+  const {
+    coverageRings,
+    defaultLayer,
+    layerSnapshots,
+    layerTabSnapshots,
+  } = useMemo(() => {
+    const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
+    const snapshots = RECOMMENDATION_LAYERS.map((layer) => buildLayerCoverageSnapshot(entries, completedChecklistKeys, layer, {
+      outlineItemCounts,
+    }));
+    const tabSnapshots = snapshots.map((snapshot) => ({
+      layer: snapshot.layer,
+      currentlyCoveredCount: snapshot.currentlyCoveredCount,
+      totalCoverageCount: snapshot.totalCoverageCount,
+    }));
+
+    return {
+      coverageRings: buildCoverageRings(entries, checklistState, {
+        outlineItemCounts,
+        totalOutlineItems,
+      }),
+      defaultLayer: selectDefaultCoverageLayer(tabSnapshots),
+      layerSnapshots: snapshots,
+      layerTabSnapshots: tabSnapshots,
+    };
+  }, [entries, checklistState, outlineItemCounts, totalOutlineItems]);
+
+  const activeLayer = selectedLayer ?? defaultLayer;
+  const activeSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === activeLayer) ?? layerSnapshots[0];
+  const activePath = activeSnapshot
+    ? activeSnapshot.path.map(({ entry, ...rest }) => ({
+        ...entry,
+        ...rest,
+      }))
+    : [];
+  const bestNextRead = activePath[0] ?? null;
+  const isLayerComplete = activeSnapshot
+    ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
+    : false;
+  const layerMeta = activeSnapshot ? COVERAGE_LAYER_META[activeSnapshot.layer] : COVERAGE_LAYER_META.section;
+  const coverageCounts = useMemo(() => new Map(
+    entries.map((entry) => [
+      entry.checklistKey,
+      {
+        part: countEntryCoverageForLayer(entry, 'part'),
+        division: countEntryCoverageForLayer(entry, 'division'),
+        section: countEntryCoverageForLayer(entry, 'section'),
+        subsection: countEntryCoverageForLayer(entry, 'subsection', { outlineItemCounts }),
+      },
+    ])
+  ), [entries, outlineItemCounts]);
 
   const filteredEntries = sortEntries(
     entries.filter((entry) => {
       const isChecked = Boolean(checklistState[entry.checklistKey]);
 
-      if (statusFilter === 'checked' && !isChecked) return false;
-      if (statusFilter === 'unchecked' && isChecked) return false;
+      if (readFilter === 'read' && !isChecked) return false;
+      if (readFilter === 'unread' && isChecked) return false;
       return matchesQuery(entry, normalizedQuery);
     }),
-    sortMode
+    sortField,
+    sortDirection,
+    coverageCounts
   );
 
   const visibleEntries = filteredEntries.slice(0, visibleCount);
   const canShowMore = visibleEntries.length < filteredEntries.length;
-  const bestNextRead = coverage.path[0] ?? null;
 
   return (
     <div class="space-y-8">
+      <CoverageLayerTabs
+        activeLayer={activeLayer}
+        onSelect={(layer) => setSelectedLayer(layer)}
+        snapshots={layerTabSnapshots}
+      />
+
       <ReadingCoverageSummary
         coverageRings={coverageRings}
         totalLabel="Titles"
@@ -137,15 +222,16 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
         totalDescription="Unique Oxford Very Short Introductions in the mapped reading list."
         completedCount={completedCount}
         completedDescription="Shared with the Done boxes on section pages."
-        sectionCoverageCount={coverage.currentlyCoveredSections}
-        sectionCoverageTotal={coverage.totalCoveredSections}
-        sectionCoverageDescription="Sections with at least one VSI covered by your checked titles."
-        bestNextLabel="Best Next Read"
+        activeCoverageLabel={`${layerMeta.label} Coverage`}
+        activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
+        activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
+        activeCoverageDescription={activeCoverageDescription(activeLayer)}
+        bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
         bestNextHref={bestNextRead ? `${baseUrl}/vsi/${slugify(bestNextRead.title)}` : undefined}
         bestNextTitle={bestNextRead?.title}
         bestNextSubtitle={bestNextRead?.author}
-        bestNextDescription={bestNextRead ? `Adds ${bestNextRead.newSectionCount} new sections, ${bestNextRead.sectionCount} total.` : undefined}
-        emptyBestNextText="No unread VSI adds any further section coverage right now."
+        bestNextDescription={bestNextRead ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount, { lowercase: true })}, ${bestNextRead.sectionCount} total sections.` : undefined}
+        emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
         mobileRingWidth={7}
         desktopRingWidth={9}
       />
@@ -153,8 +239,8 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
       <ReadingSpreadPath
         isOpen={spreadPathOpen}
         onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
-        steps={coverage.path}
-        remainingSections={coverage.remainingSections}
+        steps={activePath}
+        remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
         checklistState={checklistState}
         onCheckedChange={writeChecklistState}
         getHref={(step) => `${baseUrl}/vsi/${slugify(step.title)}`}
@@ -162,7 +248,9 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
         checkboxAriaLabel={(step) => `Mark ${step.title} by ${step.author} as completed`}
         itemSingular="book"
         itemPlural="books"
-        emptyMessage="No further spread path is available from unchecked titles. Either you have already covered every mapped section, or the remaining unread books only overlap with sections already covered."
+        coverageUnitSingular={layerMeta.label}
+        coverageUnitPlural={layerMeta.pluralLabel}
+        emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
         baseUrl={baseUrl}
       />
 
@@ -171,7 +259,7 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
           <div class="max-w-3xl">
             <h2 class="font-serif text-2xl text-gray-900">VSI Library</h2>
             <p class="mt-2 text-sm text-gray-600">
-              Search the full mapped VSI list and sort it by section spread, title, or series number.
+              Search the full mapped VSI list and sort it by coverage across parts, divisions, sections, or subsections.
             </p>
           </div>
           <div class="text-sm text-gray-500">
@@ -179,7 +267,7 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
           </div>
         </div>
 
-        <div class="mt-6 grid gap-3 lg:grid-cols-[minmax(0,1fr)_220px_220px]">
+        <div class="mt-6 grid gap-3 lg:grid-cols-[minmax(0,1fr)_180px_220px_180px]">
           <label class="block">
             <span class="mb-2 block text-sm font-medium text-gray-700">Search</span>
             <input
@@ -192,31 +280,43 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
           </label>
 
           <label class="block">
-            <span class="mb-2 block text-sm font-medium text-gray-700">Status</span>
+            <span class="mb-2 block text-sm font-medium text-gray-700">Read Status</span>
             <select
-              value={statusFilter}
-              onChange={(event) => setStatusFilter((event.currentTarget as HTMLSelectElement).value as StatusFilter)}
+              value={readFilter}
+              onChange={(event) => setReadFilter((event.currentTarget as HTMLSelectElement).value as ReadFilter)}
               class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
             >
               <option value="all">All titles</option>
-              <option value="unchecked">Unchecked only</option>
-              <option value="checked">Checked only</option>
+              <option value="unread">Unread only</option>
+              <option value="read">Read only</option>
             </select>
           </label>
 
           <label class="block">
-            <span class="mb-2 block text-sm font-medium text-gray-700">Sort</span>
+            <span class="mb-2 block text-sm font-medium text-gray-700">Sort By</span>
             <select
-              value={sortMode}
-              onChange={(event) => setSortMode((event.currentTarget as HTMLSelectElement).value as SortMode)}
+              value={sortField}
+              onChange={(event) => setSortField((event.currentTarget as HTMLSelectElement).value as SortField)}
               class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
             >
-              <option value="sections-desc">Most sections first</option>
-              <option value="sections-asc">Fewest sections first</option>
-              <option value="title-asc">Title A → Z</option>
-              <option value="title-desc">Title Z → A</option>
-              <option value="number-asc">Series number (oldest)</option>
-              <option value="number-desc">Series number (newest)</option>
+              <option value="part">Parts covered</option>
+              <option value="division">Divisions covered</option>
+              <option value="section">Sections covered</option>
+              <option value="subsection">Subsections covered</option>
+              <option value="title">Title</option>
+              <option value="number">Series number</option>
+            </select>
+          </label>
+
+          <label class="block">
+            <span class="mb-2 block text-sm font-medium text-gray-700">Order</span>
+            <select
+              value={sortDirection}
+              onChange={(event) => setSortDirection((event.currentTarget as HTMLSelectElement).value as SortDirection)}
+              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+            >
+              <option value="desc">Descending</option>
+              <option value="asc">Ascending</option>
             </select>
           </label>
         </div>

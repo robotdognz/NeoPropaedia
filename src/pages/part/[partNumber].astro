@@ -99,8 +99,8 @@ const bgColors: Record<number, string> = {
 
       <!-- Introductory Essay -->
       {EssayContent && (
-        <section class="mb-10">
-          <details class="group">
+        <section id="essay" class="mb-10 scroll-mt-24">
+          <details id="essay-panel" class="group">
             <summary class="cursor-pointer text-lg font-sans font-semibold text-gray-700 flex items-center gap-2">
               <svg class="w-5 h-5 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -115,6 +115,28 @@ const bgColors: Record<number, string> = {
             </div>
           </details>
         </section>
+      )}
+
+      {EssayContent && (
+        <script is:inline>
+          (() => {
+            const params = new URLSearchParams(window.location.search);
+            const shouldOpenEssay = params.get('view') === 'essay' || window.location.hash === '#essay';
+            if (!shouldOpenEssay) return;
+
+            const essaySection = document.getElementById('essay');
+            const essayPanel = document.getElementById('essay-panel');
+            if (!(essaySection instanceof HTMLElement) || !(essayPanel instanceof HTMLDetailsElement)) return;
+
+            essayPanel.open = true;
+
+            requestAnimationFrame(() => {
+              requestAnimationFrame(() => {
+                essaySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              });
+            });
+          })();
+        </script>
       )}
 
       <NotesDisclosure
