@@ -4,24 +4,48 @@
     {
       "vsiTitle": "Buddhism",
       "vsiAuthor": "Damien Keown",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers Buddhism including its history, Theravada and Mahayana schools, the eightfold path, dharma, karma, meditation, and Pure Land, the primary subject of 824."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.7",
+        "A.8",
+        "B.1",
+        "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.1.c",
+        "C.1.d",
+        "C.2",
+        "C.2.a",
+        "C.2.b",
+        "C.3",
+        "C.3.a",
+        "C.3.b"
+      ],
+      "rationaleAI": "Comprehensive Buddhism coverage addresses Hindu context (A.1), founding (A.2), Indian developments (A.3), Southeast Asia (A.7), modern era (A.8). Four noble truths and eightfold path relate to views of reality (C.1.a), eightfold path (C.1.b), nirvana (C.1.c). Theravada (C.2.a), Mahayana (C.2.b), monastic institutions (C.3.b), and ethical practices (C.3.a) are covered."
     },
     {
       "vsiTitle": "Buddha",
       "vsiAuthor": "Michael Carrithers",
       "relevantPathsAI": [
-        "A.2"
+        "A.1",
+        "A.2",
+        "B.1",
+        "C.1.a",
+        "C.1.b"
       ],
-      "rationaleAI": "Presents the life and teachings of Siddhartha Gautama, including the four noble truths, the Deer Park sermon at Sarnath, and the doctrine of rebirth, directly relevant to 824.A.2."
+      "rationaleAI": "The historical Buddha relates to Hindu background (A.1), founding (A.2), sacred literature (B.1), views of reality (C.1.a), and eightfold path (C.1.b)."
     },
     {
       "vsiTitle": "Buddhist ethics",
       "vsiAuthor": "Damien Keown",
       "relevantPathsAI": [
-        "C.3"
+        "C.1",
+        "C.3.a"
       ],
-      "rationaleAI": "Examines Buddhist ethical practices, the five precepts, and positions on contemporary moral issues, directly relevant to 824.C.3.a on universal ethical and religious practices."
+      "rationaleAI": "Buddhist ethics addresses traditional beliefs (C.1) and ethical practices (C.3.a)."
     },
     {
       "vsiTitle": "Tibetan Buddhism",
@@ -30,15 +54,16 @@
         "A.6",
         "C.2.c"
       ],
-      "rationaleAI": "Explores Tibetan Buddhism including the bodhisattva ideal, Tantric practices, the role of the Dalai Lama, and karma doctrine, directly relevant to 824.A.6 and 824.C.2.c on esoteric Buddhism."
+      "rationaleAI": "Tibetan Buddhism addresses Buddhism in Tibet (A.6) and esoteric Buddhism (C.2.c)."
     },
     {
       "vsiTitle": "Indian philosophy",
       "vsiAuthor": "Sue Hamilton",
       "relevantPathsAI": [
+        "A.1",
         "B.3"
       ],
-      "rationaleAI": "Presents Indian philosophical traditions including the four noble truths, dharma, and karma that form the intellectual substrate of Buddhist philosophy, relevant to 824.B.3."
+      "rationaleAI": "Indian philosophy relates to Hindu background (A.1) and Buddhist philosophy (B.3)."
     },
     {
       "vsiTitle": "Hinduism",
@@ -46,7 +71,7 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Provides the Hindu cultural and religious context from which Siddhartha Gautama departed, directly relevant to 824.A.1 on Buddhism's background in Hinduism."
+      "rationaleAI": "Hinduism as Buddhism's cultural context relates to the Hindu background (A.1)."
     },
     {
       "vsiTitle": "Confucianism",
@@ -54,7 +79,7 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Confucianism interacted with Buddhism in China, Korea, and Japan, relevant to 824.A.4-5 on Buddhism's development in East Asia."
+      "rationaleAI": "Confucianism's interaction with Buddhism relates to Buddhism in China (A.4)."
     },
     {
       "vsiTitle": "Southeast Asia",
@@ -62,16 +87,15 @@
       "relevantPathsAI": [
         "A.7"
       ],
-      "rationaleAI": "Surveys the region where Theravada Buddhism became the dominant religious tradition, directly relevant to 824.A.7 on Buddhism in Ceylon and Southeast Asia."
+      "rationaleAI": "Southeast Asian Buddhism relates to Buddhism in Ceylon and Southeast Asia (A.7)."
     },
     {
       "vsiTitle": "Modern Japan",
       "vsiAuthor": "Christopher Goto-Jones",
       "relevantPathsAI": [
-        "A.5",
-        "A.8"
+        "A.5"
       ],
-      "rationaleAI": "Examines modern Japan where Zen, Pure Land, and Nichiren Buddhism remain deeply influential, relevant to 824.A.5 and 824.A.8 on Buddhism in the modern era."
+      "rationaleAI": "Modern Japan provides context for Buddhism in Japan (A.5)."
     },
     {
       "vsiTitle": "Korea",
@@ -79,7 +103,7 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Korea has a significant Buddhist tradition shaped by Son (Zen) practice and Confucian interaction, relevant to 824.A.5 on Buddhism in Korea."
+      "rationaleAI": "Korean history provides context for Buddhism in Korea (A.5)."
     },
     {
       "vsiTitle": "The Silk Road",
@@ -87,7 +111,7 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "The Silk Road served as the primary conduit for Buddhism's transmission from Gandhara to Central Asia and China, relevant to 824.A.4."
+      "rationaleAI": "Silk Road cultural exchange relates to Buddhism's spread to China (A.4)."
     },
     {
       "vsiTitle": "Spirituality",
@@ -95,16 +119,18 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Engages with meditative and contemplative traditions that parallel Buddhist practices of mindfulness and insight meditation described in 824.B.4."
+      "rationaleAI": "Buddhist contemplative practices relate to Buddhist mysticism (B.4)."
     },
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
       "relevantPathsAI": [
+        "C.3",
         "C.3.c"
       ],
-      "rationaleAI": "Explores ritual practices including passage rites and religious ceremonies, relevant to 824.C.3.c on ceremonies, festivals, and passage rites."
+      "rationaleAI": "Ritual relates to Buddhist practices (C.3) and ceremonies (C.3.c)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

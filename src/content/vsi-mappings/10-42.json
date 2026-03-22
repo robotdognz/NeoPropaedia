@@ -5,179 +5,238 @@
       "vsiTitle": "Classics",
       "vsiAuthor": "Mary Beard, John Henderson",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.1.a",
+        "A.1.b",
+        "A.1.c",
+        "A.1.d",
+        "A.1.e",
+        "A.1.f",
+        "A.3.f",
+        "B.1"
       ],
-      "rationaleAI": "Section A.1 covers the ideal of paideia, Hellenistic scholarship, and the classical tradition that defines humanistic learning."
+      "rationaleAI": "Ancient Greek and Roman civilizations including literature (Homer, Virgil), philosophy (Plato, Aristotle), drama, and architecture directly map to the development of the humanistic ideal of paideia (A.1.a), the Sophists and Socrates (A.1.b), Plato and the Academy (A.1.c), Aristotle and the Lyceum (A.1.d), Hellenistic scholarship and textual criticism (A.1.e), and the Roman ideal of humanitas (A.1.f). The discipline's connection to modern museum curation and reception history reflects the growth of modern humanistic scholarship (A.3.f)."
     },
     {
       "vsiTitle": "Homer",
       "vsiAuthor": "Barbara Graziosi",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a",
+        "A.1.e",
+        "A.3.f",
+        "B.1"
       ],
-      "rationaleAI": "Section A.1.a covers Homeric education and the ideal of the hero as the beginning of learning."
+      "rationaleAI": "The Iliad and Odyssey as foundational works of Western literature embody the Homeric heroic ideal (A.1.a), while ancient manuscript scholarship shaping modern interpretation reflects Hellenistic textual criticism at Alexandria and Pergamum (A.1.e). Study of Homeric authorship and literary influence across millennia exemplifies the scientific investigation of antiquity through philology (A.3.f)."
     },
     {
       "vsiTitle": "Socrates",
       "vsiAuthor": "C. C. W. Taylor",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b",
+        "A.1.c",
+        "B.1"
       ],
-      "rationaleAI": "Section A.1.b covers the Sophists and Socrates and the turn to logos, the beginnings of rhetoric."
+      "rationaleAI": "Socrates' dialectical questioning method and the turn to logos map directly to the Sophists and Socrates section (A.1.b). His role as known primarily through Plato's dialogues and his influence on subsequent philosophical traditions connects to Plato and the Academy (A.1.c). The philosophical life as the examined life represents a foundational conception of the humanities (B.1)."
     },
     {
       "vsiTitle": "Plato",
       "vsiAuthor": "Julia Annas",
       "relevantPathsAI": [
-        "A.1.c"
+        "A.1.c",
+        "A.1.b",
+        "B.1",
+        "B.3"
       ],
-      "rationaleAI": "Section A.1.c covers Plato and the Academy, the relation of theology to mythology, and mathematics in service of philosophy."
+      "rationaleAI": "Plato's dialogues on knowledge, ethics, metaphysics, and political thought, his use of the Socratic method, and the relationship of mathematics to philosophy map directly to Plato and the Academy (A.1.c). The theory of Forms and the philosophical use of fiction connect to the humanities as a fundamental division of knowledge distinct from the sciences (B.3)."
     },
     {
       "vsiTitle": "Aristotle",
       "vsiAuthor": "Jonathan Barnes",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.d",
+        "A.1.g",
+        "B.1",
+        "B.3"
       ],
-      "rationaleAI": "Section A.1.d covers Aristotle and the Lyceum, the invention of logic, and the division and organization of the sciences."
+      "rationaleAI": "Aristotle's invention of logic, division and organization of the sciences, and foundational contributions across philosophy, biology, ethics, and politics map directly to Aristotle and the Lyceum (A.1.d). The breadth of his influence spanning rhetoric, philosophy, and science connects to the conflict among these cultural ideals (A.1.g) and to the humanities as a division of knowledge (B.3)."
     },
     {
       "vsiTitle": "Ancient philosophy",
       "vsiAuthor": "Julia Annas",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.1.b",
+        "A.1.c",
+        "A.1.d",
+        "A.1.e",
+        "A.1.g",
+        "B.3"
       ],
-      "rationaleAI": "Sections A.1.b-e cover the philosophical foundations of humanistic learning from the Sophists through Hellenistic scholarship."
+      "rationaleAI": "Pre-Socratic through Neoplatonist philosophy spanning Platonism, Aristotelianism, Stoicism, Epicureanism, and Scepticism covers the full arc of ancient humanistic learning from the Sophists (A.1.b) through Plato (A.1.c), Aristotle (A.1.d), and Hellenistic developments (A.1.e). The emphasis on ongoing arguments across traditions reflects the conflict among rhetoric, philosophy, and science (A.1.g)."
     },
     {
       "vsiTitle": "Rhetoric",
       "vsiAuthor": "Richard Toye",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b",
+        "A.1.f",
+        "A.1.g",
+        "A.5",
+        "B.1"
       ],
-      "rationaleAI": "Section A.1.b covers the beginnings of rhetoric, A.1.f the Roman ideal of training the orator, and A.1.g the conflict among rhetoric, philosophy, and science."
+      "rationaleAI": "Rhetoric as the art of persuasion from ancient Greece through Islamic preaching to modern discourse maps to the Sophists' turn to logos (A.1.b), the Roman ideal of training the orator (A.1.f), and the battle among rhetoric, philosophy, and science (A.1.g). Coverage of medieval Islamic preaching connects to the Islamic tradition of humanistic scholarship (A.5)."
     },
     {
       "vsiTitle": "Classical Literature",
       "vsiAuthor": "William Allan",
       "relevantPathsAI": [
-        "A.1",
-        "A.3"
+        "A.1.a",
+        "A.1.e",
+        "A.1.f",
+        "A.3.f",
+        "B.1"
       ],
-      "rationaleAI": "Classical literature is foundational to the humanistic tradition from Hellenistic literary criticism (A.1.e) through the quarrel of ancients and moderns (A.3.e)."
+      "rationaleAI": "Greek and Latin literary traditions across epic, lyric, satire, tragedy, and comedy encompass Homeric education (A.1.a), Hellenistic literary criticism (A.1.e), and the Roman literary tradition (A.1.f). The enduring influence on Western conceptions of literary form reflects the transition from belles lettres to scientific investigation of antiquity (A.3.f)."
     },
     {
       "vsiTitle": "Literary Theory",
       "vsiAuthor": "Jonathan Culler",
       "relevantPathsAI": [
-        "A.1"
+        "A.3.f",
+        "A.3.h",
+        "B.1",
+        "B.3"
       ],
-      "rationaleAI": "Section A.1.e covers the development of literary and textual criticism in Hellenistic scholarship, foundational to modern literary theory."
+      "rationaleAI": "Structuralism, Marxist criticism, feminist theory, cultural studies, and speech act theory as interdisciplinary frameworks for analyzing literature represent the growth and proliferation of special disciplines (A.3.h) and the scientific investigation of textual and cultural analysis (A.3.f). The question of whether literary theory constitutes a unified humanistic field connects to debates about the definition of the humanities (B.1) and their distinction from the sciences (B.3)."
     },
     {
       "vsiTitle": "Augustine",
       "vsiAuthor": "Henry Chadwick",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.a",
+        "A.2.d",
+        "A.2.e"
       ],
-      "rationaleAI": "Section A.2.a covers the Christianization of pagan culture and reconciliation of classical humanism with Christian revelation."
+      "rationaleAI": "Augustine's reconciliation of classical culture with Christian revelation and his thought on free will, creation, and the Trinity exemplify the Christianization of pagan culture (A.2.a). His engagement with philosophy and theology connects to the Scholastic method and faith-versus-reason debates (A.2.d, A.2.e)."
     },
     {
       "vsiTitle": "Thomas Aquinas",
       "vsiAuthor": "Fergus Kerr",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.d",
+        "A.2.e",
+        "A.5"
       ],
-      "rationaleAI": "Section A.2.d covers the Scholastic method and the distinction of philosophy from sacred theology."
+      "rationaleAI": "Aquinas's Summa Theologiae synthesizing Aristotelian philosophy with Christian doctrine exemplifies the Scholastic method of logic and theological exposition (A.2.d), and his distinction of philosophy from sacred theology maps to the faith-and-reason question (A.2.e). His engagement with Islamic philosophy connects to the Islamic scholarly tradition (A.5)."
     },
     {
       "vsiTitle": "Medieval Philosophy",
       "vsiAuthor": "John Marenbon",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.2.a",
+        "A.2.d",
+        "A.2.e",
+        "A.4",
+        "A.5"
       ],
-      "rationaleAI": "Section A.2 covers Christian learning in the Middle Ages including liberal arts, the trivium and quadrivium, and the Scholastic method."
+      "rationaleAI": "Interlinked Christian, Muslim, and Jewish intellectual traditions rooted in late antique Platonic schools cover Christian learning (A.2), the Scholastic method through Boethius, Abelard, and Ockham (A.2.d), the faith-reason distinction (A.2.e), and the Jewish (A.4) and Islamic (A.5) scholarly traditions through Maimonides and al-Farabi."
     },
     {
       "vsiTitle": "Late Antiquity",
       "vsiAuthor": "Gillian Clark",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.a",
+        "A.5"
       ],
-      "rationaleAI": "Late Antiquity covers the transition from pagan classical learning to Christian scholarship (A.2.a), pivotal for humanistic scholarship."
+      "rationaleAI": "The period 300-800 CE covering the transition from pagan to Christian culture, competing religions, and the roles of Greek, Latin, Arabic, and Syriac linguistic cultures maps to the Christianization of pagan culture (A.2.a) and intersects with the formation of the Islamic scholarly tradition (A.5)."
     },
     {
       "vsiTitle": "The Renaissance",
       "vsiAuthor": "Jerry Brotton",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a",
+        "A.3.b",
+        "A.3.d"
       ],
-      "rationaleAI": "Section A.3.a covers the idea of Renaissance including the ideal of the classical, the rise of the vernacular, and the dignity of the individual."
+      "rationaleAI": "Transformations in European art, architecture, literature, science, and humanism from 1400-1600 map directly to the idea of Renaissance with its classical revival and emphasis on the dignity of the individual (A.3.a), humanism and the new learning (A.3.b), and the separation of science from philosophy through early modern developments (A.3.d)."
     },
     {
       "vsiTitle": "Renaissance Art",
       "vsiAuthor": "Geraldine A. Johnson",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a",
+        "A.3.b"
       ],
-      "rationaleAI": "The Renaissance (A.3.a) saw art as an expression of humanistic ideals about the classical and human dignity."
+      "rationaleAI": "Renaissance art from the 14th through 16th centuries with its emphasis on naturalism, perspective, classical revival, and theorists like Alberti exemplifies the ideal of the classical and the rise of the vernacular (A.3.a) and humanist engagement with the visual arts as part of the new learning (A.3.b)."
     },
     {
       "vsiTitle": "Humanism",
       "vsiAuthor": "Stephen Law",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b",
+        "B.3"
       ],
-      "rationaleAI": "Section A.3.b covers humanism and the new learning as a key development in the history of humanistic scholarship."
+      "rationaleAI": "Humanism as a worldview grounded in science, reason, and individual moral responsibility extends the Renaissance humanist tradition (A.3.b) into contemporary secular ethics. Its engagement with questions about whether morality requires divine foundations connects to theories of the humanities as a fundamental division of knowledge (B.3)."
     },
     {
       "vsiTitle": "Machiavelli",
       "vsiAuthor": "Quentin Skinner",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a",
+        "A.3.b"
       ],
-      "rationaleAI": "Machiavelli exemplifies Renaissance humanism (A.3.b) and the development of political thought within the humanistic tradition."
+      "rationaleAI": "Machiavelli's neo-classical political theory developed through dialogue with Cicero and Livy within the Medici context exemplifies the Renaissance ideal of the classical and the dignity of the free individual (A.3.a) and the humanist new learning applied to political thought (A.3.b)."
     },
     {
       "vsiTitle": "Montaigne",
       "vsiAuthor": "William M. Hamlin",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a",
+        "A.3.b",
+        "A.3.c"
       ],
-      "rationaleAI": "Montaigne's essays exemplify Renaissance humanism (A.3.a-b) and humanistic forms of philosophical and literary expression."
+      "rationaleAI": "Montaigne's Essays as a genre-defining work bridging Renaissance humanism, moral philosophy, and skepticism connect to the Renaissance ideal of the individual (A.3.a), humanism and the new learning (A.3.b), and the search for a universal method of inquiry (A.3.c)."
     },
     {
       "vsiTitle": "Dante",
       "vsiAuthor": "Peter Hainsworth, David Robey",
       "relevantPathsAI": [
-        "A.2",
-        "A.3"
+        "A.2.d",
+        "A.2.e",
+        "A.3.a"
       ],
-      "rationaleAI": "Dante stands at the transition from medieval to Renaissance learning (A.2 to A.3), bridging Scholastic method and humanistic ideals."
+      "rationaleAI": "Dante's Divine Comedy with its theological engagement and interplay of rational argument and poetic imagination connects to the Scholastic method and theological exposition (A.2.d) and the faith-reason distinction (A.2.e). As a bridge between medieval and Renaissance literary culture, Dante prefigures the Renaissance ideal (A.3.a)."
     },
     {
       "vsiTitle": "Goethe",
       "vsiAuthor": "Ritchie Robertson",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e",
+        "A.3.f",
+        "B.1"
       ],
-      "rationaleAI": "Goethe represents the ideal of Bildung and humanistic learning, embodying the development of humane letters (A.3)."
+      "rationaleAI": "Goethe's literary and scientific output spanning poetry, drama, aesthetics, and art criticism across the Enlightenment and Romantic periods connects to the quarrel between ancients and moderns concerning progress in learning (A.3.e) and the growth of modern humanistic scholarship from belles lettres toward scientific investigation (A.3.f)."
     },
     {
       "vsiTitle": "Descartes",
       "vsiAuthor": "Tom Sorell",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.c",
+        "A.3.d"
       ],
-      "rationaleAI": "Section A.3.c-d covers the search for a universal method and the separation of science from philosophy."
+      "rationaleAI": "Descartes' methodological doubt and mathematical approach to natural science exemplify the search for a universal method (A.3.c) and the separation of science from philosophy through the rise of empirical science (A.3.d)."
     },
     {
       "vsiTitle": "Philosophy",
       "vsiAuthor": "Edward Craig",
       "relevantPathsAI": [
-        "B.1"
+        "A.1.g",
+        "A.3.d",
+        "B.1",
+        "B.3"
       ],
-      "rationaleAI": "Philosophy is central to the humanities (B.1-3) and the history of learning from Plato's Academy through the quarrel of ancients and moderns."
+      "rationaleAI": "Philosophy as a discipline addressing fundamental questions spanning Western and Eastern traditions connects to the conflict among rhetoric, philosophy, and science (A.1.g), the separation of science from philosophy (A.3.d), diverse views of the definition of the humanities (B.1), and the question of whether the humanities constitute a distinct field from the sciences (B.3)."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
@@ -185,7 +244,7 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Section A.5 covers the Islamic tradition of humanistic scholarship, its nature, methods, and relation to classical learning."
+      "rationaleAI": "The continuous tradition of philosophical and scientific thought across Islamic civilization from late antiquity through the twentieth century maps directly to the Islamic tradition of humanistic scholarship and its relation to classical and Christian learning (A.5)."
     },
     {
       "vsiTitle": "Confucianism",
@@ -193,7 +252,7 @@
       "relevantPathsAI": [
         "A.6"
       ],
-      "rationaleAI": "Section A.6 covers humanities and humanistic scholarship in the East, including China."
+      "rationaleAI": "Confucian philosophical tradition spanning twenty-six centuries of influence on Chinese civilization, covering core texts and moral cultivation, maps directly to the humanities and humanistic scholarship in the East, specifically in China (A.6)."
     },
     {
       "vsiTitle": "Indian philosophy",
@@ -201,7 +260,7 @@
       "relevantPathsAI": [
         "A.6"
       ],
-      "rationaleAI": "Section A.6 covers humanities and humanistic scholarship in the East including India."
+      "rationaleAI": "Indian philosophical traditions spanning roughly 2,500 years across six classical orthodox schools plus heterodox traditions map directly to the humanities and humanistic scholarship in the East, specifically in India (A.6)."
     },
     {
       "vsiTitle": "Judaism",
@@ -209,151 +268,195 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Section A.4 covers the Jewish tradition of humanistic scholarship, its nature, methods, and development."
+      "rationaleAI": "Judaism centered on the Torah, Talmud, and rabbinic tradition including Moses Mendelssohn and the Jewish Enlightenment connects to the Jewish tradition of humanistic scholarship, its nature, methods, and development (A.4)."
     },
     {
       "vsiTitle": "The Bible",
       "vsiAuthor": "John Riches",
       "relevantPathsAI": [
+        "A.2.a",
         "A.4",
-        "A.2"
+        "A.5"
       ],
-      "rationaleAI": "Biblical studies connect to the Jewish (A.4) and Christian (A.2) traditions of humanistic scholarship and textual criticism."
+      "rationaleAI": "The Bible as sacred text central to Judaism and Christianity with profound influence on Western civilization and literature connects to the Christianization of pagan culture (A.2.a), the Jewish scholarly tradition through the Hebrew Bible (A.4), and shared Abrahamic beliefs connecting to Islamic scholarship (A.5)."
     },
     {
       "vsiTitle": "Theology",
       "vsiAuthor": "David F. Ford",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.a",
+        "A.2.e",
+        "B.3"
       ],
-      "rationaleAI": "Sections A.2.a-e cover the relationship between theology and humanistic learning, including faith and reason."
+      "rationaleAI": "Systematic study of the divine across Christianity, Islam, Judaism, Hinduism, and Buddhism connects to the reconciliation of classical humanism with Christian revelation (A.2.a), the faith-reason distinction (A.2.e), and theories of the humanities as a fundamental division of knowledge (B.3)."
     },
     {
       "vsiTitle": "Hermeneutics",
       "vsiAuthor": "Jens Zimmermann",
       "relevantPathsAI": [
-        "A.1"
+        "A.3.f",
+        "B.1",
+        "B.3"
       ],
-      "rationaleAI": "Hermeneutics addresses text interpretation, central to humanistic scholarship from Hellenistic literary criticism (A.1.e) through modern methods."
+      "rationaleAI": "Hermeneutic theory spanning textual, legal, and religious interpretation connects to the growth of modern humanistic scholarship and methodological development (A.3.f), diverse views of the definition of the humanities (B.1), and the question of the humanities as a distinct field from the sciences (B.3)."
     },
     {
       "vsiTitle": "Education",
       "vsiAuthor": "Gary Thomas",
       "relevantPathsAI": [
-        "A.3",
+        "A.3.g",
         "B.2"
       ],
-      "rationaleAI": "Section A.3.g covers the rise of the liberal arts college and graduate school, and B.2 covers the humanities as an educational program."
+      "rationaleAI": "Education systems examined through historical and philosophical perspectives connect to the rise of the liberal arts college and graduate school (A.3.g) and the humanities as an educational program (B.2)."
     },
     {
       "vsiTitle": "Universities and Colleges",
       "vsiAuthor": "David Palfreyman, Paul Temple",
       "relevantPathsAI": [
         "A.2.c",
-        "A.3"
+        "A.3.g",
+        "A.3.h.i"
       ],
-      "rationaleAI": "Section A.2.c covers the founding of universities, and A.3.g-i cover the contemporary university and profession of learning."
+      "rationaleAI": "Higher education institutions from medieval origins to contemporary challenges connect to the founding of the universities (A.2.c), the rise of the liberal arts college and graduate school (A.3.g), and the organization of the contemporary university including questions of social responsibility (A.3.h.i)."
     },
     {
       "vsiTitle": "English literature",
       "vsiAuthor": "Jonathan Bate",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a",
+        "A.3.f",
+        "B.1"
       ],
-      "rationaleAI": "English literature is a major humanistic discipline within the growth of special disciplines (A.3.h)."
+      "rationaleAI": "English literature from oral traditions through Romanticism and Modernism covers the rise of the vernacular (A.3.a) and the development of humanistic scholarship through literary traditions (A.3.f). The survey of major literary forms represents a core humanities discipline (B.1)."
     },
     {
       "vsiTitle": "Comparative Literature",
       "vsiAuthor": "Ben Hutchinson",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.f",
+        "A.3.h",
+        "B.1"
       ],
-      "rationaleAI": "Comparative literature is a humanistic discipline exemplifying the growth of special disciplines (A.3.h)."
+      "rationaleAI": "Comparative literature as an academic discipline examining cross-cultural literary relations reflects the growth of modern humanistic scholarship (A.3.f) and the proliferation of special disciplines (A.3.h). Methodological debates about the discipline's scope connect to diverse views of the definition of the humanities (B.1)."
     },
     {
       "vsiTitle": "Art history",
       "vsiAuthor": "Dana Arnold",
-      "relevantPathsAI": [],
-      "rationaleAI": "Art history is a humanistic discipline connected to the development of scholarship from the Renaissance through modern methods."
+      "relevantPathsAI": [
+        "A.3.f",
+        "A.3.h",
+        "B.1"
+      ],
+      "rationaleAI": "Art history studying visual arts from ancient times through contemporary practice, including the emergence of social and global art histories, exemplifies the growth of modern humanistic scholarship (A.3.f) and the proliferation of special disciplines (A.3.h)."
     },
     {
       "vsiTitle": "Art Theory",
       "vsiAuthor": "Cynthia Freeland",
-      "relevantPathsAI": [],
-      "rationaleAI": "Art theory addresses the philosophical and critical dimensions of the humanities and artistic expression."
+      "relevantPathsAI": [
+        "A.1.g",
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Art theory examining the nature and function of the arts from classical aesthetics to postmodern discourse connects to the conflict among cultural ideals (A.1.g) and to debates about the definition and scope of the humanities (B.1) and their distinction from the sciences (B.3)."
     },
     {
       "vsiTitle": "Aesthetics",
       "vsiAuthor": "Bence Nanay",
       "relevantPathsAI": [
-        "B.1"
+        "A.1.g",
+        "B.1",
+        "B.3"
       ],
-      "rationaleAI": "Aesthetics is a humanistic discipline connecting philosophy, art, and literature, relevant to B.1-3."
+      "rationaleAI": "Aesthetics as a philosophical branch examining art, beauty, and taste in Western and non-Western traditions connects to the conflict among cultural ideals (A.1.g) and to diverse views of the definition of the humanities (B.1) and their relationship to the sciences (B.3)."
     },
     {
       "vsiTitle": "Critical theory",
       "vsiAuthor": "Stephen Eric Bronner",
       "relevantPathsAI": [
-        "B.1"
+        "A.3.h",
+        "B.3"
       ],
-      "rationaleAI": "Critical theory is a major approach within the humanities (B.1-3) engaging with humanities as a field of knowledge."
+      "rationaleAI": "Critical theory from the Frankfurt School addressing alienation, the culture industry, and emancipatory aims represents the growth and proliferation of special disciplines within the humanities (A.3.h) and engages the question of the humanities' distinction from the sciences (B.3)."
     },
     {
       "vsiTitle": "Postmodernism",
       "vsiAuthor": "Christopher Butler",
       "relevantPathsAI": [
-        "B.2"
+        "A.3.h",
+        "B.1",
+        "B.3"
       ],
-      "rationaleAI": "Postmodernism addresses the question of the humanities as a unified field of study (B.2) and challenges traditional assumptions."
+      "rationaleAI": "Postmodernism spanning philosophy, literature, visual arts, and architecture with its skepticism toward grand narratives represents a late 20th-century development in humanistic scholarship (A.3.h). Its questioning of universal truths bears on diverse views of the humanities (B.1) and their distinction from the sciences (B.3)."
     },
     {
       "vsiTitle": "Poststructuralism",
       "vsiAuthor": "Catherine Belsey",
-      "relevantPathsAI": [],
-      "rationaleAI": "Poststructuralism is a theoretical approach within the humanities challenging traditional humanistic scholarship."
+      "relevantPathsAI": [
+        "A.3.h",
+        "B.1",
+        "B.3"
+      ],
+      "rationaleAI": "Poststructuralism challenging fixed meanings and binary oppositions in language and culture represents the proliferation of special critical disciplines (A.3.h). Applications to literary criticism, gender theory, and epistemology bear on the definition of the humanities (B.1) and their relation to the sciences (B.3)."
     },
     {
       "vsiTitle": "Modernism",
       "vsiAuthor": "Christopher Butler",
-      "relevantPathsAI": [],
-      "rationaleAI": "Modernism transformed humanistic expression and scholarship in the 20th century."
+      "relevantPathsAI": [
+        "A.3.e",
+        "A.3.h",
+        "B.1"
+      ],
+      "rationaleAI": "Modernism's transformation of art, literature, and thought including movements like Dada and surrealism connects to the quarrel between ancients and moderns (A.3.e) and represents a major development in humanistic production (A.3.h)."
     },
     {
       "vsiTitle": "Continental philosophy",
       "vsiAuthor": "Simon Critchley",
-      "relevantPathsAI": [],
-      "rationaleAI": "Continental philosophy represents a major tradition within the humanities engaging with hermeneutics, phenomenology, and critical theory."
+      "relevantPathsAI": [
+        "A.3.d",
+        "A.3.h",
+        "B.3"
+      ],
+      "rationaleAI": "Continental philosophy covering German Idealism, phenomenology, existentialism, hermeneutics, and critical theory connects to the separation of science from philosophy (A.3.d) and represents the proliferation of humanistic disciplines (A.3.h). Its engagement with human experience and meaning relates to the humanities as a fundamental division of knowledge (B.3)."
     },
     {
       "vsiTitle": "Existentialism",
       "vsiAuthor": "Thomas Flynn",
-      "relevantPathsAI": [],
-      "rationaleAI": "Existentialism is a 20th-century philosophical movement within the humanities concerned with human existence and meaning."
+      "relevantPathsAI": [
+        "A.3.h",
+        "B.3"
+      ],
+      "rationaleAI": "Existentialism centered on authenticity, freedom, and lived experience through Kierkegaard, Nietzsche, Sartre, and de Beauvoir represents a major 20th-century humanistic movement (A.3.h) that directly engages the distinction of the humanities from the sciences (B.3)."
     },
     {
       "vsiTitle": "Presocratic Philosophy",
       "vsiAuthor": "Catherine Osborne",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b",
+        "A.1.c",
+        "A.1.g"
       ],
-      "rationaleAI": "The Presocratics represent the very beginnings of learning (A.1) from which the humanistic tradition emerged."
+      "rationaleAI": "The earliest Greek thinkers from Thales to Protagoras exploring nature, reality, and the origin of the universe represent the beginnings of learning before the Sophists (A.1.b) and the emergence of rational inquiry that preceded Plato (A.1.c). The tension between cosmological and humanistic inquiry connects to the battle among rhetoric, philosophy, and science (A.1.g)."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.3.f"
       ],
-      "rationaleAI": "Writing is fundamental to humanistic scholarship, connected to literary and textual criticism (A.1.e)."
+      "rationaleAI": "The history of writing systems from cuneiform through modern scripts connects to the beginnings of learning (A.1) and the growth of modern humanistic scholarship through philology and archaeology (A.3.f)."
     },
     {
       "vsiTitle": "Reading",
       "vsiAuthor": "Belinda Jack",
       "relevantPathsAI": [
+        "A.3.f",
+        "A.3.h",
         "B.2"
       ],
-      "rationaleAI": "Reading connects to the humanities as an educational program (B.2) and humanistic engagement with texts."
+      "rationaleAI": "The historical evolution from elite oral reading to mass literacy through printing and public education connects to the growth of modern humanistic scholarship (A.3.f) and the proliferation of disciplines in the knowledge explosion (A.3.h). The relationship between literacy and education connects to the humanities as an educational program (B.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

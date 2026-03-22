@@ -5,47 +5,69 @@
       "vsiTitle": "Landscapes and Geomorphology",
       "vsiAuthor": "Andrew Goudie, Heather Viles",
       "relevantPathsAI": [
+        "A",
         "A.1",
+        "A.2",
         "A.3",
+        "A.4",
         "A.5",
         "A.6",
+        "A.7",
+        "B",
+        "B.1",
+        "C",
         "D"
       ],
-      "rationaleAI": "Core text for this section: covers weathering (A.1), mass movement (A.3), wind erosion (A.5), sea level change (A.6), and landform evolution concepts (D)."
+      "rationaleAI": "Geomorphology addresses weathering (A.1), soil (A.2), slopes (A.3), fluvial (A.4), eolian (A.5), marine (A.6), glacial (A.7), biological processes (B.1), environments (C), and landform evolution (D)."
     },
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers weathering, erosion, sediment transport, and the geological processes that underpin geomorphic landscape change across all environments."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "B.3",
+        "C.1",
+        "D"
+      ],
+      "rationaleAI": "Sedimentology connects to weathering (A.1), soil (A.2), fluvial environments (C.1), and concepts (D)."
     },
     {
       "vsiTitle": "Rivers",
       "vsiAuthor": "Nick Middleton",
       "relevantPathsAI": [
         "A.4",
-        "C.1"
+        "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.1.c",
+        "C.1.d",
+        "C.1.e"
       ],
-      "rationaleAI": "Directly covers fluvial processes (A.4), drainage patterns (C.1.b), river floodplains and deltas (C.1.d), and the fluvial environment (C.1)."
+      "rationaleAI": "Rivers address fluvial processes (A.4) and the fluvial environment (C.1) comprehensively."
     },
     {
       "vsiTitle": "Lakes",
       "vsiAuthor": "Warwick F. Vincent",
       "relevantPathsAI": [
+        "A.8",
         "C.2",
-        "A.8"
+        "C.2.a",
+        "C.2.b"
       ],
-      "rationaleAI": "Covers the lacustrine environment (C.2) including lake basins, lake hydraulics (C.2.b), sedimentation (A.8.b), and floodplain lakes."
+      "rationaleAI": "Lake science addresses lacustrine processes (A.8) and environment (C.2)."
     },
     {
       "vsiTitle": "Deserts",
       "vsiAuthor": "Nick Middleton",
       "relevantPathsAI": [
-        "C.5",
         "A.5",
+        "C.5",
+        "C.5.a",
+        "C.5.b",
         "C.5.c"
       ],
-      "rationaleAI": "Directly covers the desert environment (C.5) including eolian processes (A.5), sand dunes, desert landforms (C.5.b), and desert boundaries (C.5.c)."
+      "rationaleAI": "Desert geomorphology addresses eolian processes (A.5) and desert environment (C.5)."
     },
     {
       "vsiTitle": "Glaciation",
@@ -53,17 +75,21 @@
       "relevantPathsAI": [
         "A.7",
         "C.6",
+        "C.6.a",
+        "C.6.b",
         "C.6.c"
       ],
-      "rationaleAI": "Core text for glacial processes (A.7) and the glacial environment (C.6): covers erosional landforms like cirques and fjords (C.6.b), moraines, drumlins (C.6.c), and sedimentology."
+      "rationaleAI": "Glacial geomorphology addresses glacial processes (A.7) and environment (C.6)."
     },
     {
       "vsiTitle": "The Ice Age",
       "vsiAuthor": "Jamie Woodward",
       "relevantPathsAI": [
-        "C.6"
+        "A.7",
+        "C.6",
+        "C.6.d"
       ],
-      "rationaleAI": "Covers glacial and periglacial processes (C.6.d), permafrost, ice sheet landforms, and the Quaternary landscape modifications discussed in the glacial environment."
+      "rationaleAI": "Quaternary deposits address glacial processes (A.7) and periglacial (C.6.d)."
     },
     {
       "vsiTitle": "Oceans",
@@ -72,24 +98,25 @@
         "A.6",
         "C.4"
       ],
-      "rationaleAI": "Covers marine processes (A.6) including coastal erosion and deposition, sediment transport by density flows (A.6.b), and the continental shelf (C.4.d)."
+      "rationaleAI": "Ocean processes connect to marine processes (A.6) and marine environment (C.4)."
     },
     {
       "vsiTitle": "Coral Reefs",
       "vsiAuthor": "Charles Sheppard",
       "relevantPathsAI": [
-        "C.4"
+        "C.4.a.iv"
       ],
-      "rationaleAI": "Relevant to coral reefs as coastal depositional features (C.4.a.iv) within the marine environment."
+      "rationaleAI": "Coral reefs connect to coastal features (C.4.a.iv)."
     },
     {
       "vsiTitle": "Mountains",
       "vsiAuthor": "Martin F. Price",
       "relevantPathsAI": [
-        "C.6",
-        "A.3"
+        "A.3",
+        "A.4",
+        "C.6.b.ii"
       ],
-      "rationaleAI": "Covers mountain geomorphology including glacial erosion features (C.6.b), periglacial processes (C.6.d), natural hazards related to slope processes (A.3), and alpine valleys."
+      "rationaleAI": "Mountains connect to slopes (A.3), fluvial (A.4), and glaciated valleys (C.6.b.ii)."
     },
     {
       "vsiTitle": "Volcanoes",
@@ -97,98 +124,95 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Directly relevant to volcanic-tectonic processes (B.3) that create and modify surface features including lava flows and pyroclastic deposits."
+      "rationaleAI": "Volcanic processes address volcanic-tectonic processes (B.3)."
     },
     {
       "vsiTitle": "The Arctic",
       "vsiAuthor": "Klaus Dodds, Jamie Woodward",
       "relevantPathsAI": [
-        "C.7",
-        "C.6"
+        "C.6.d",
+        "C.6.d.i",
+        "C.7"
       ],
-      "rationaleAI": "Covers the polar environment (C.7) including permafrost (C.6.d.i), periglacial landforms, and cryospheric processes shaping Arctic landscapes."
+      "rationaleAI": "Arctic permafrost connects to periglacial (C.6.d) and polar environment (C.7)."
     },
     {
       "vsiTitle": "The Antarctic",
       "vsiAuthor": "Klaus Dodds",
       "relevantPathsAI": [
+        "C.6",
         "C.7"
       ],
-      "rationaleAI": "Covers the polar environment (C.7) with glacial processes, ice sheet dynamics, and polar landform features."
+      "rationaleAI": "Antarctic ice connects to glacial (C.6) and polar (C.7) environments."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
       "relevantPathsAI": [
         "C.8",
-        "C.9",
         "B.1"
       ],
-      "rationaleAI": "Relevant to the tropical rain forest (C.8) and temperate woodland (C.9) environments, and the role of vegetation in geomorphic processes (B.1.b)."
+      "rationaleAI": "Forests connect to tropical environment (C.8) and biological processes (B.1)."
     },
     {
       "vsiTitle": "Savannas",
       "vsiAuthor": "Peter Furley",
       "relevantPathsAI": [
-        "C.8"
+        "C.9"
       ],
-      "rationaleAI": "Covers tropical grassland environments and geomorphic processes in savannas, relevant to the tropical environment (C.8) and vegetation effects on landscape."
+      "rationaleAI": "Savannas connect to temperate grasslands (C.9)."
     },
     {
       "vsiTitle": "Climate",
       "vsiAuthor": "Mark Maslin",
       "relevantPathsAI": [
-        "A.1",
-        "D.3"
+        "A.7",
+        "C.6"
       ],
-      "rationaleAI": "Climate drives weathering rates (A.1), controls erosion and deposition patterns, and determines the morphogenetic regions (D.3) that characterize different environments."
+      "rationaleAI": "Climate-ice interactions connect to glacial processes (A.7) and environment (C.6)."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
       "relevantPathsAI": [
         "A.1",
-        "C.4.c"
+        "A.2"
       ],
-      "rationaleAI": "Relevant to weathering processes (A.1) acting on different rock types, sedimentary rock formation from erosion products, and bedrock-dependent coastal features (C.4.c)."
+      "rationaleAI": "Rock weathering connects to A.1 and soil (A.2)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A.1"
       ],
-      "rationaleAI": "Relevant to weathering processes (A.1) as mineral composition controls weathering rates, and to clay mineral formation in soils (A.2)."
+      "rationaleAI": "Mineral weathering connects to rock disintegration (A.1)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "B.3"
       ],
-      "rationaleAI": "Covers chemical weathering (A.1), surface processes, and the interplay of Earth systems that drive geomorphic change."
+      "rationaleAI": "Chemical weathering connects to A.1 and volcanic-tectonic processes (B.3)."
     },
     {
       "vsiTitle": "Geophysical and Climate Hazards",
       "vsiAuthor": "Bill McGuire",
       "relevantPathsAI": [
-        "B.3",
         "A.3",
-        "C.1",
-        "A.6"
+        "B.3"
       ],
-      "rationaleAI": "Covers volcanic-tectonic processes (B.3), earthquakes triggering mass movements (A.3), flooding events shaping fluvial landforms (C.1.d), and storm-driven coastal erosion (A.6)."
+      "rationaleAI": "Floods and volcanoes connect to slopes (A.3) and B.3."
     },
     {
       "vsiTitle": "Plate tectonics",
       "vsiAuthor": "Peter Molnar",
       "relevantPathsAI": [
-        "B.3",
-        "D",
-        "D.1"
+        "B.3"
       ],
-      "rationaleAI": "Relevant to volcanic-tectonic processes (B.3) and the tectonic framework underlying uniformitarianism (D.1) and landform evolution theory (D)."
+      "rationaleAI": "Plate boundaries connect to volcanic-tectonic processes (B.3)."
     },
     {
       "vsiTitle": "Anthropocene",
@@ -196,48 +220,53 @@
       "relevantPathsAI": [
         "B.1.c"
       ],
-      "rationaleAI": "Covers human modification of the Earth's surface (B.1.c) through land cultivation, mining, construction, and other activities that alter geomorphic processes."
+      "rationaleAI": "Human impact connects to effects on surface features (B.1.c)."
     },
     {
       "vsiTitle": "Agriculture",
       "vsiAuthor": "Paul Brassley, Richard Soffe",
       "relevantPathsAI": [
-        "A.2",
+        "A.2.d",
         "B.1.c"
       ],
-      "rationaleAI": "Directly relevant to soil erosion and deterioration (A.2.d), land cultivation effects on surface features (B.1.c), and soil formation processes."
+      "rationaleAI": "Soil management connects to erosion (A.2.d) and human effects (B.1.c)."
     },
     {
       "vsiTitle": "Geography",
       "vsiAuthor": "John A. Matthews, David T. Herbert",
       "relevantPathsAI": [
-        "D.3"
+        "A",
+        "C",
+        "D"
       ],
-      "rationaleAI": "Covers physical geography including geomorphic processes, the concept of morphogenetic regions (D.3), and environmental characteristics of major landscape types."
+      "rationaleAI": "Physical geography covers processes (A), environments (C), and theory (D)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the interactions between hydrosphere, atmosphere, biosphere, and lithosphere (sections A and B) that collectively drive geomorphic processes."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Biosphere-rock interactions connect to biological processes (B.1)."
     },
     {
       "vsiTitle": "Fossils",
       "vsiAuthor": "Keith Thomson",
       "relevantPathsAI": [
-        "C.1"
+        "B.2"
       ],
-      "rationaleAI": "Relevant to understanding landform evolution through geologic time (C.1.e, D) and the sedimentary record of past geomorphic environments."
+      "rationaleAI": "Meteorite craters connect to extraterrestrial processes (B.2)."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
       "relevantPathsAI": [
-        "A.2",
-        "B.1"
+        "A.2.a",
+        "B.1.a"
       ],
-      "rationaleAI": "Covers microbial roles in soil formation (A.2, B.1.a) including nitrogen fixation and biological weathering of rocks."
+      "rationaleAI": "Soil microbes connect to soil formation (A.2.a) and organism weathering effects (B.1.a)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

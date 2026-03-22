@@ -5,25 +5,33 @@
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.5"
+        "A.2",
+        "A.3",
+        "A.4",
+        "A.5",
+        "B.1"
       ],
-      "rationaleAI": "Directly addresses theories of culture, cultural relativism, ethnocentrism, cultural comparison, and patterns of cultural adaptation and change (outline A.1-A.5)."
+      "rationaleAI": "Cultural relativism, structural-functionalism, and interpretive approaches address definitions of culture (A.1), cultural comparisons (A.3), cultural adaptation (A.4), and cultural patterns (A.5). Ethnographic focus on small-scale societies addresses primitive cultures (B.1)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
       "relevantPathsAI": [
         "B.1",
-        "B.1.c"
+        "B.1.a",
+        "B.2"
       ],
-      "rationaleAI": "Traces cultures of nomadic hunters and gatherers and the transition to early horticultural and pastoral societies (outline B.1.a-B.1.c)."
+      "rationaleAI": "Four million years of prehistory addresses hunters and gatherers (B.1.a) and the origin of civilized societies (B.2)."
     },
     {
       "vsiTitle": "Human evolution",
       "vsiAuthor": "Bernard Wood",
-      "relevantPathsAI": [],
-      "rationaleAI": "Illuminates the biological foundations underlying the emergence of human cultural capacity, providing background for all of outline B."
+      "relevantPathsAI": [
+        "B.1.a"
+      ],
+      "rationaleAI": "Hominin evolution provides biological context for hunters and gatherers (B.1.a)."
     },
     {
       "vsiTitle": "Archaeology",
@@ -32,15 +40,16 @@
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "Supplies material evidence for the development of human culture from primitive through civilized societies (outline B.1 and B.2)."
+      "rationaleAI": "Archaeological reconstruction addresses primitive societies (B.1) and civilized societies (B.2)."
     },
     {
       "vsiTitle": "Agriculture",
       "vsiAuthor": "Paul Brassley, Richard Soffe",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.b",
+        "B.1.d"
       ],
-      "rationaleAI": "Examines the shift from hunting-gathering to settled agriculture, a fundamental stage in cultural development (outline B.1.b-B.1.d)."
+      "rationaleAI": "Agricultural science provides context for horticultural societies (B.1.b) and settled agriculturists (B.1.d)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
@@ -48,16 +57,16 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Directly covers the development of modern industrial civilization and the transition from agricultural to industrial culture (outline B.3)."
+      "rationaleAI": "Industrialization directly addresses modern industrial civilization and mass society (B.3)."
     },
     {
       "vsiTitle": "Sociology",
       "vsiAuthor": "Steve Bruce",
       "relevantPathsAI": [
-        "B.2",
+        "A.1",
         "B.3"
       ],
-      "rationaleAI": "Presents sociological theories of cultural development, including Durkheim's and Weber's accounts of the shift from traditional to modern mass societies (outline B.2-B.3)."
+      "rationaleAI": "Social institutions provide definitions of culture (A.1) and address modern industrial civilization (B.3)."
     },
     {
       "vsiTitle": "Psychology",
@@ -65,31 +74,34 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Explores the relationship between culture and personality, including how psychological processes interact with cultural patterns (outline A.2)."
+      "rationaleAI": "Personality psychology addresses culture and personality (A.2)."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "A.4"
       ],
-      "rationaleAI": "Interrogates cultural comparison, ethnocentrism, and cultural relativism through the lens of colonial and postcolonial encounters (outline A.3)."
+      "rationaleAI": "Challenging Western-centric perspectives addresses cultural comparisons and ethnocentrism (A.3) and cultural change (A.4)."
     },
     {
       "vsiTitle": "Multiculturalism",
       "vsiAuthor": "Ali Rattansi",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "A.4"
       ],
-      "rationaleAI": "Engages with ethnocentrism, cultural relativism, and the practical challenges of multicultural coexistence in diverse societies (outline A.3)."
+      "rationaleAI": "Multiculturalism addresses cultural comparisons (A.3) and cultural change (A.4)."
     },
     {
       "vsiTitle": "Postmodernism",
       "vsiAuthor": "Christopher Butler",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.4"
       ],
-      "rationaleAI": "Interrogates contemporary theories of culture, including challenges to grand narratives of linear cultural progress (outline A.1)."
+      "rationaleAI": "Skepticism toward grand narratives challenges definitions of culture (A.1) and addresses cultural change (A.4)."
     },
     {
       "vsiTitle": "Globalization",
@@ -98,7 +110,7 @@
         "A.4",
         "B.3"
       ],
-      "rationaleAI": "Analyzes how global interconnection drives cultural adaptation, hybridization, and the development of mass society (outline A.4 and B.3)."
+      "rationaleAI": "Worldwide integration addresses cultural change (A.4) and mass society (B.3)."
     },
     {
       "vsiTitle": "The Enlightenment",
@@ -106,56 +118,58 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Situates the Enlightenment as a pivotal era in which thinkers like Montesquieu and Condorcet formulated theories of cultural progress and civilization (outline B.2)."
+      "rationaleAI": "Eighteenth-century intellectual movement addresses the origin of civilized societies (B.2)."
     },
     {
       "vsiTitle": "Marx",
       "vsiAuthor": "Peter Singer",
       "relevantPathsAI": [
-        "A.1",
-        "B.2"
+        "A.4",
+        "B.3"
       ],
-      "rationaleAI": "Presents Marx's theory that economic modes of production shape cultural superstructures, a foundational framework for understanding cultural evolution (outline A.1 and B.2)."
+      "rationaleAI": "Historical materialism addresses cultural change (A.4) and modern industrial civilization (B.3)."
     },
     {
       "vsiTitle": "Identity",
       "vsiAuthor": "Florian Coulmas",
       "relevantPathsAI": [
-        "A.2",
-        "A.5"
+        "A.2"
       ],
-      "rationaleAI": "Explores how cultural identity is constructed, maintained, and contested, relevant to culture and personality and cultural patterns (outline A.2 and A.5)."
+      "rationaleAI": "Identity formation through cultural belonging addresses culture and personality (A.2)."
     },
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
       "relevantPathsAI": [
-        "A.6",
-        "B.1"
+        "A.5",
+        "A.6"
       ],
-      "rationaleAI": "Examines ritual as a cultural institution found across all types of societies, from hunter-gatherer bands to modern nation-states (outline A.6 and B.1)."
+      "rationaleAI": "Ritual in group identity addresses cultural patterns (A.5) and cultural institutions (A.6)."
     },
     {
       "vsiTitle": "Ethnomusicology",
       "vsiAuthor": "Timothy Rice",
       "relevantPathsAI": [
-        "A.6"
+        "A.3",
+        "A.5"
       ],
-      "rationaleAI": "Studies music as a cultural institution across different types of societies from nonurban to modern industrial (outline A.6)."
+      "rationaleAI": "Music across diversity addresses cultural comparisons (A.3) and cultural patterns (A.5)."
     },
     {
       "vsiTitle": "History",
       "vsiAuthor": "John Arnold",
       "relevantPathsAI": [
-        "A.4"
+        "B.2"
       ],
-      "rationaleAI": "Introduces historical methods for understanding the evolution and transformation of cultures over time (outline A.4)."
+      "rationaleAI": "Historiographical theory provides frameworks for the origin of civilized societies (B.2)."
     },
     {
       "vsiTitle": "Social Science",
       "vsiAuthor": "Alexander Betts",
-      "relevantPathsAI": [],
-      "rationaleAI": "Surveys the analytical frameworks used to study culture, including diverse theoretical approaches to understanding cultural development."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Systematic study of human behaviour provides definitions of culture (A.1)."
     },
     {
       "vsiTitle": "Innovation",
@@ -164,7 +178,7 @@
         "A.4",
         "B.3"
       ],
-      "rationaleAI": "Highlights technological and social innovation as drivers of cultural change and the rise of modern industrial civilization (outline A.4 and B.3)."
+      "rationaleAI": "Innovation addresses cultural change (A.4) and modern industrial civilization (B.3)."
     },
     {
       "vsiTitle": "The Silk Road",
@@ -172,25 +186,26 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Illustrates cultural adaptation and change through the long-distance exchange of ideas, religions, and goods between civilizations (outline A.4)."
+      "rationaleAI": "Cultural exchange networks address cultural adaptation and change (A.4)."
     },
     {
       "vsiTitle": "Rousseau",
       "vsiAuthor": "Robert Wokler",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "B.2"
       ],
-      "rationaleAI": "Presents Rousseau's influential theories on human nature, the social contract, and the corrupting effects of civilization, foundational to outline A.1."
+      "rationaleAI": "Critique of civilization addresses definitions of culture (A.1) and origin of civilized societies (B.2)."
     },
     {
       "vsiTitle": "Comparative Literature",
       "vsiAuthor": "Ben Hutchinson",
       "relevantPathsAI": [
-        "A.1",
         "A.3"
       ],
-      "rationaleAI": "Engages with cross-cultural literary study and competing definitions of culture, directly relevant to theories of culture and cultural comparison (outline A.1 and A.3)."
+      "rationaleAI": "Cross-cultural literary relations address cultural comparisons (A.3)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

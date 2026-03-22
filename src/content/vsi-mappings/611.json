@@ -5,27 +5,31 @@
       "vsiTitle": "Art Theory",
       "vsiAuthor": "Cynthia Freeland",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.2"
+        "A.2",
+        "A.3"
       ],
-      "rationaleAI": "Directly addresses philosophy of art, diverse conceptions of art's scope, and theories about art's nature and functions (A.1, A.2)."
+      "rationaleAI": "Art theory examining the nature, function, and interpretation of the arts addresses the philosophy of art (A), diverse conceptions of the scope of art (A.1), theories concerning the nature and functions of art including mimetic and formalist theories (A.2), and the creative process (A.3)."
     },
     {
       "vsiTitle": "Aesthetics",
       "vsiAuthor": "Bence Nanay",
       "relevantPathsAI": [
+        "A",
+        "A.1",
         "A.2"
       ],
-      "rationaleAI": "Covers aesthetic theories including formalist and expressive approaches to art, beauty, and taste -- central to diverse theories of art's nature (A.2)."
+      "rationaleAI": "Aesthetics examining the nature of art, beauty, taste, and aesthetic experience addresses the philosophy of art (A), diverse conceptions of the scope of art (A.1), and theories concerning the nature and effects of art (A.2)."
     },
     {
       "vsiTitle": "Beauty",
       "vsiAuthor": "Roger Scruton",
       "relevantPathsAI": [
-        "A.2",
-        "B.1"
+        "A",
+        "A.2"
       ],
-      "rationaleAI": "Examines philosophical theories of beauty and taste in art, relevant to mimetic, formalist, and expressive art theories (A.2) and the distinction between fine and useful art (B.1.a)."
+      "rationaleAI": "Philosophical investigation of beauty as a real and universal value addresses the philosophy of art (A). Arguments about the rationality of aesthetic judgment address theories concerning the nature and effects of art (A.2)."
     },
     {
       "vsiTitle": "Creativity",
@@ -33,7 +37,7 @@
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Directly addresses the creative process and creative expression in art-making (A.3)."
+      "rationaleAI": "Psychological perspectives on creativity from prehistoric cave paintings to modern innovation directly address the making of works of art and the creative process (A.3)."
     },
     {
       "vsiTitle": "Imagination",
@@ -41,59 +45,62 @@
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Explores imagination's role in artistic creation and aesthetic experience, directly relevant to the creative process (A.3)."
+      "rationaleAI": "Imagination as a cognitive power for creative activity in both artistic and scientific domains addresses the making of works of art and the creative process (A.3)."
     },
     {
       "vsiTitle": "Art history",
       "vsiAuthor": "Dana Arnold",
       "relevantPathsAI": [
-        "B",
-        "B.4"
+        "B.4",
+        "B.4.b"
       ],
-      "rationaleAI": "Addresses classification and periodization of arts and style analysis, relevant to classification of the arts (B) and varieties of style (B.4)."
+      "rationaleAI": "Art history studying the development of visual arts and the emergence of global art histories addresses style in the arts (B.4), particularly the varieties of style including period styles (B.4.b)."
     },
     {
       "vsiTitle": "Design",
       "vsiAuthor": "John Heskett",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.1.a",
+        "B.1.b"
       ],
-      "rationaleAI": "Explores the distinction between useful and fine art, and form versus function in art classification (B.1.a)."
+      "rationaleAI": "Design encompassing industrial and cultural design addresses major distinctions among kinds of art (B.1), including the distinction between useful and fine art (B.1.a) and art involving the manipulation of physical matter (B.1.b)."
     },
     {
       "vsiTitle": "Literary Theory",
       "vsiAuthor": "Jonathan Culler",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "B.1.d"
       ],
-      "rationaleAI": "Addresses mimetic, expressive, formalist, and pragmatic theories as applied to literature as an art form (A.2)."
+      "rationaleAI": "Literary theory analyzing literature and cultural production addresses theories concerning the nature and functions of art (A.2). Structuralism and speech act theory connect to art using notational devices (B.1.d)."
     },
     {
       "vsiTitle": "Contemporary art",
       "vsiAuthor": "Julian Stallabrass",
       "relevantPathsAI": [
-        "A.1",
-        "B.1"
+        "B.4",
+        "B.4.b"
       ],
-      "rationaleAI": "Examines current debates about what qualifies as art and how contemporary works challenge traditional classifications (A.1, B.1)."
+      "rationaleAI": "Contemporary art covering the global art scene, market dynamics, and museum branding addresses style in the arts (B.4) and varieties of style including period styles (B.4.b)."
     },
     {
       "vsiTitle": "Modern art",
       "vsiAuthor": "David Cottington",
       "relevantPathsAI": [
-        "A.1",
-        "B.4"
+        "B.4",
+        "B.4.b"
       ],
-      "rationaleAI": "Covers how modernist movements redefined conceptions of art and created new stylistic categories (A.1, B.4)."
+      "rationaleAI": "Modern art covering avant-garde movements and critical debates about modernity addresses style in the arts (B.4) and varieties of style including personal, school, and period styles (B.4.b)."
     },
     {
       "vsiTitle": "The Avant-Garde",
       "vsiAuthor": "David Cottington",
       "relevantPathsAI": [
-        "B.1",
+        "A.2",
         "B.4"
       ],
-      "rationaleAI": "Explores avant-garde movements that challenged boundaries between art kinds and conventional style categories (B.1, B.4)."
+      "rationaleAI": "The avant-garde as a concept examining the relationship between ideology and art addresses theories concerning the nature and functions of art (A.2). Its development within modernity addresses style in the arts (B.4)."
     },
     {
       "vsiTitle": "Folk music",
@@ -101,7 +108,7 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Directly relevant to characterizing folk and popular arts by their audience and cultural context (B.3)."
+      "rationaleAI": "Global folk music traditions spanning diverse cultures address the characterization of works of art by cultural circumstances of production: the folk arts (B.3)."
     },
     {
       "vsiTitle": "Ethnomusicology",
@@ -109,50 +116,54 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Studies music across cultural contexts, relevant to classifying arts by social circumstances of production and audience character (B.3)."
+      "rationaleAI": "Ethnomusicology studying music across geographic and cultural diversity addresses the characterization of works of art by cultural or social circumstances: primitive, folk, and popular arts (B.3)."
     },
     {
       "vsiTitle": "Theatre",
       "vsiAuthor": "Marvin Carlson",
       "relevantPathsAI": [
-        "B.1.c",
-        "B.1"
+        "B.1",
+        "B.1.c"
       ],
-      "rationaleAI": "Covers performers as interpreters and creators of art, and the use of notational devices in theatrical arts (B.1.c, B.1.d)."
+      "rationaleAI": "Theatre integrating dance, literature, music, painting, sculpture, and architecture addresses major distinctions among kinds of art (B.1), particularly performers as interpreters or creators (B.1.c)."
     },
     {
       "vsiTitle": "Music",
       "vsiAuthor": "Nicholas Cook",
       "relevantPathsAI": [
-        "B.1",
-        "B.1.c"
+        "B.1.c",
+        "B.1.d"
       ],
-      "rationaleAI": "Addresses music as art classified by notation (B.1.d), performers as interpreters/creators (B.1.c), and the distinction between production and consumption."
+      "rationaleAI": "Music covering performance practice, composition, and notation addresses performers as interpreters or creators (B.1.c) and art using notational devices (B.1.d)."
     },
     {
       "vsiTitle": "Romanticism",
       "vsiAuthor": "Michael Ferber",
       "relevantPathsAI": [
-        "B.4"
+        "B.4",
+        "B.4.b"
       ],
-      "rationaleAI": "Exemplifies a major period style across literature, music, and visual arts, directly relevant to varieties of style (B.4.b)."
+      "rationaleAI": "Pan-European Romantic movement spanning literature, music, and painting addresses style in the arts (B.4) and period styles (B.4.b)."
     },
     {
       "vsiTitle": "Modernism",
       "vsiAuthor": "Christopher Butler",
       "relevantPathsAI": [
-        "B.4"
+        "A.2",
+        "B.4",
+        "B.4.b"
       ],
-      "rationaleAI": "Exemplifies period style across multiple art forms, relevant to the discussion of period, school, and personal styles (B.4.b)."
+      "rationaleAI": "Modernism transforming art, literature, and architecture addresses theories concerning the nature and functions of art (A.2) and style in the arts including period styles (B.4, B.4.b)."
     },
     {
       "vsiTitle": "Postmodernism",
       "vsiAuthor": "Christopher Butler",
       "relevantPathsAI": [
         "A.2",
-        "B.4"
+        "B.4",
+        "B.4.b"
       ],
-      "rationaleAI": "Addresses postmodernist theories challenging traditional conceptions of art's nature and function, and represents a period style (A.2, B.4.b)."
+      "rationaleAI": "Postmodernism's skepticism toward grand narratives addresses theories concerning the nature of art (A.2). Its cultural manifestations across philosophy, arts, and architecture address style including period styles (B.4, B.4.b)."
     },
     {
       "vsiTitle": "Dada and Surrealism",
@@ -161,7 +172,7 @@
         "A.2",
         "B.4"
       ],
-      "rationaleAI": "Exemplifies school styles that challenged prevailing theories of art's nature and the boundaries between art kinds (A.2, B.4.b)."
+      "rationaleAI": "Dada and Surrealism as avant-garde movements addressing art through psychoanalysis and the readymade concept address theories concerning the nature of art (A.2) and style in the arts (B.4)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
@@ -169,7 +180,7 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Provides frameworks for understanding primitive, folk, and popular arts characterized by cultural/social context (B.3)."
+      "rationaleAI": "Anthropology studying cultural systems through fieldwork provides context for understanding primitive, folk, and popular arts by reference to cultural circumstances (B.3)."
     },
     {
       "vsiTitle": "Critical theory",
@@ -177,26 +188,27 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Frankfurt School approaches address pragmatic theories of art's social functions and effects (A.2)."
+      "rationaleAI": "Critical theory covering the culture industry and reification addresses theories concerning the nature, functions, and effects of art (A.2), particularly pragmatic theories of art's social function."
     },
     {
       "vsiTitle": "German philosophy",
       "vsiAuthor": "Andrew Bowie",
       "relevantPathsAI": [
-        "A.1",
+        "A",
         "A.2"
       ],
-      "rationaleAI": "Covers aesthetics and German idealist art theory, a major tradition in the philosophy of art (A.1, A.2)."
+      "rationaleAI": "German philosophy covering aesthetics and the relationship between artistic and scientific understanding addresses the philosophy of art (A) and diverse theories concerning art (A.2)."
     },
     {
       "vsiTitle": "Renaissance Art",
       "vsiAuthor": "Geraldine A. Johnson",
       "relevantPathsAI": [
-        "B.1",
-        "B.4"
+        "B.4",
+        "B.4.b"
       ],
-      "rationaleAI": "Illustrates classification of arts by physical matter and the production of artistic works as physical objects (B.1.b), and period/regional styles (B.4.b)."
+      "rationaleAI": "Renaissance art covering painting, sculpture, and decorative arts in cultural context addresses style in the arts (B.4) and period styles (B.4.b)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

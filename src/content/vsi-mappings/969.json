@@ -4,62 +4,78 @@
     {
       "vsiTitle": "Southeast Asia",
       "vsiAuthor": "James R. Rush",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses the geography, peoples, and history of Southeast Asia from Myanmar to the Philippines (A-B)."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.4",
+        "B",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Comprehensive coverage of Southeast Asia's eleven nations including Myanmar, Thailand, Malaysia, Vietnam, Philippines, Laos, Cambodia, and Indonesia, tracing history from mandala kingdoms through colonial era. Covers colonial economic systems including rubber plantations, post-independence political developments, and figures like Aung San Suu Kyi and Ne Win, directly addressing mainland Southeast Asia (A) and the Indonesian Archipelago and Philippines (B)."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "B.2"
       ],
-      "rationaleAI": "British colonial rule in Burma and Malaya, the Anglo-Burmese Wars, and British power over Malay sultanates are central to A.1."
+      "rationaleAI": "British imperial administration and global territorial extent address British rule in Myanmar and Malaya (A.1) and the role of British and other European powers in Indonesia (B.2)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Multiple European imperial enterprises in Southeast Asia -- British, French, Dutch, Spanish, and Portuguese -- shaped every part of outline A-B."
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "British, Dutch, and French colonial empires, theories of colonialism, and hierarchical governance provide broad context for European colonial influence over mainland Southeast Asia (A) and the Indonesian Archipelago and Philippines (B)."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
-      "relevantPathsAI": [],
-      "rationaleAI": "The effects of European colonialism on Southeast Asian societies and the destruction of traditional institutions connect to outline A-B."
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Experiences of colonized societies in Asia and material histories of colonial exploitation connect to the effects of European imperialism across mainland Southeast Asia (A) and the Indonesian Archipelago and Philippines (B)."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
       "relevantPathsAI": [
-        "B.1"
+        "A",
+        "B"
       ],
-      "rationaleAI": "Nascent independence movements across Southeast Asia -- including the Philippine Revolution and Vietnamese nationalism -- are central to B.1.b.iii."
+      "rationaleAI": "Anti-colonial activism and transitions to independence connect broadly to the emerging nationalist movements across Southeast Asia under European imperialism (A, B)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.b.ii",
+        "B.1.b.iii"
       ],
-      "rationaleAI": "The rise of nationalist movements in the Philippines (19th century) and other Southeast Asian nations under colonial rule shaped the politics of B.1.b.ii."
+      "rationaleAI": "Nationalism and self-determination connect to the rise of nationalism in the Philippines in the 19th century (B.1.b.ii) and the Philippine Revolution of 1896-98 (B.1.b.iii)."
     },
     {
       "vsiTitle": "Buddhism",
       "vsiAuthor": "Damien Keown",
       "relevantPathsAI": [
-        "A.1",
-        "A.3"
+        "A.3.a"
       ],
-      "rationaleAI": "Theravada Buddhism in Siam and the destruction of the church-state relationship in Burma under British rule connect to A.1.a.ii and A.3."
+      "rationaleAI": "Theravada Buddhism's role across South and Southeast Asia connects to the influence of Theravada Buddhism in Siam (A.3.a) and its cultural significance in the region."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
       "relevantPathsAI": [
-        "A.1",
         "B.2"
       ],
-      "rationaleAI": "Islamic societies of the Indonesian Archipelago and the Malay sultanates are central to A.1.b and B.2."
+      "rationaleAI": "Islam's geographic scope spanning global Muslim communities provides context for Islamic influence in the Indonesian Archipelago, where Islam became a major religion during the colonial period (B.2)."
     },
     {
       "vsiTitle": "Global Economic History",
@@ -67,33 +83,32 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "The Dutch East India Company, the Culture System in Java, and colonial economic exploitation illuminate outline B.2."
+      "rationaleAI": "Comparative analysis of global economic development, colonial economic exploitation, and institutional frameworks connects to Dutch and other European commercial enterprises in Indonesia (B.2), including the Culture System's effects on Java."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.a"
       ],
-      "rationaleAI": "Portuguese and Spanish exploration and commercial activities in Southeast Asia initiated the transformations described in B.1.a."
+      "rationaleAI": "Portuguese navigation around the Cape of Good Hope and global maritime exploration directly address Portuguese naval and commercial activities and domination of the Strait of Malacca (B.1.a)."
     },
     {
       "vsiTitle": "The Catholic Reformation",
       "vsiAuthor": "James E. Kelly",
       "relevantPathsAI": [
-        "A.2",
-        "B.1"
+        "A.2.a",
+        "B.1.b.ii"
       ],
-      "rationaleAI": "Missionary activities in the Philippines and Vietnam, where Portuguese and French missionaries played significant roles, connect to A.2.a and B.1.b.ii."
+      "rationaleAI": "Catholic missionary activity and global expansion across Asia address Portuguese and French missionary involvement in Vietnam (A.2.a) and the influence of the Roman Catholic Church in Spanish Philippines (B.1.b.ii)."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
-        "A.2",
-        "A.3"
+        "A.3.c"
       ],
-      "rationaleAI": "Anglo-French activity in Southeast Asia, territorial acquisitions, and diplomatic maneuvering among European powers shaped outline A.2-A.3."
+      "rationaleAI": "International diplomatic history and Anglo-French activity connect to Anglo-French negotiations over Siamese territory and the diplomatic dynamics in Southeast Asia (A.3.c)."
     },
     {
       "vsiTitle": "Modern France",
@@ -101,8 +116,9 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "French colonial rule in Indochina -- protectorates in Annam, Tonkin, Cambodia, and Laos -- is central to outline A.2."
+      "rationaleAI": "France's colonial legacy and the Civilizing Mission connect to the development of French rule in Indochina (A.2), including French protectorates in Annam, Tonkin, and Laos."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

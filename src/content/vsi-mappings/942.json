@@ -4,62 +4,91 @@
     {
       "vsiTitle": "African History",
       "vsiAuthor": "John Parker, Richard Rathbone",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the broader context of African history including the Nilotic Sudan and Ethiopia discussed in this section."
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "African history connects to the Nilotic Sudan (A) and Ethiopia (B)."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections A2-A3 on the spread of Muslim domination in the Nilotic Sudan from c. 639 and the Mamluk attacks."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Islam connects to Muslim domination of the Sudan (A.2) and spread under the Funj (A.3)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections A2-A3 on the spread of Islam, the Funj, and the Islamic transformation of the Sudan."
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Islam connects to the Sudan (A.2) and Islamic expansion (A.3)."
     },
     {
       "vsiTitle": "Orthodox Christianity",
       "vsiAuthor": "A. Edward Siecienski",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections A1 and B on the medieval Christian kingdoms of Nubia and the Coptic Christian tradition of Ethiopia."
+      "relevantPathsAI": [
+        "A.1",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Coptic Christianity connects to medieval Christian kingdoms (A.1), Aksum (B.1), and Coptic Church influence (B.2)."
     },
     {
       "vsiTitle": "Christianity",
       "vsiAuthor": "Linda Woodhead",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections A1, B1, and B2 on the Christian kingdoms of Nobatia and Maqurrah, and Ethiopian Christianity under the Solomonid dynasty."
+      "relevantPathsAI": [
+        "A.1",
+        "B.1",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Christianity connects to Christian kingdoms (A.1), Aksum (B.1), Solomonid restoration (B.2), and Portuguese contacts (B.3)."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A4 on the Egyptian occupation and the growth of British influence under Isma'il Pasha."
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "British influence connects to Egyptian occupation and British influence (A.4)."
     },
     {
       "vsiTitle": "The Crusades",
       "vsiAuthor": "Christopher Tyerman",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A2 on the Mamluk attacks on the Nilotic Sudan in the 13th and 14th centuries."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Mamluk attacks connect tangentially to A.2."
     },
     {
       "vsiTitle": "African Religions",
       "vsiAuthor": "Jacob K. Olupona",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B on the interplay between indigenous African religions, Christianity, and Islam in Ethiopia."
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "Religious displacement connects to Christian kingdoms (A.1) and Aksum decline (B.1)."
     },
     {
       "vsiTitle": "Muhammad",
       "vsiAuthor": "Jonathan A.C. Brown",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A2 on the early spread of Muslim domination from c. 639 into the Nilotic Sudan."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Muhammad provides background for Muslim domination (A.2)."
     },
     {
       "vsiTitle": "Catholicism",
       "vsiAuthor": "Gerald O'Collins",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B3 on the brief conciliation with the Roman Catholic Church in early 17th-century Ethiopia."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Catholic missions connect to Portuguese contacts and Roman Catholic conciliation (B.3)."
     },
     {
       "vsiTitle": "Global Islam",
@@ -68,5 +97,6 @@
       "rationaleAI": "Relevant to subsection A3 on the rise of the Funj and the spread of Islam in the Sudan after c. 1500."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

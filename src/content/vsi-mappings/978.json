@@ -14,195 +14,274 @@
       "vsiTitle": "Iran",
       "vsiAuthor": "Ali Ansari",
       "relevantPathsAI": [
-        "C.1"
+        "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.1.c"
       ],
-      "rationaleAI": "Directly addresses Iran since 1925 including the Pahlavi regimes, the 1978-79 Revolution, the Islamic Republic, and the Iran-Iraq war in C.1."
+      "rationaleAI": "Iranian civilization from ancient Persia through the 1979 Islamic Revolution directly addresses Iran since 1925 (C.1), the regime of Reza Shah (C.1.a), Mohammad Reza Pahlavi's regime including the Mosaddeq crisis (C.1.b), and the revolution and Islamic Republic under Khomeini (C.1.c)."
     },
     {
       "vsiTitle": "The Iraq Wars",
       "vsiAuthor": "Samuel Helfont",
       "relevantPathsAI": [
-        "B.3",
-        "C.1.c"
+        "B.3.d"
       ],
-      "rationaleAI": "The Iran-Iraq War, invasion of Kuwait, and the Persian Gulf War are directly discussed in B.3.d and C.1.c."
+      "rationaleAI": "The 1991 Gulf War, 2003 invasion, Saddam Hussein's regime, and the rise of ISIS directly address Iraq's revolution of 1958, the Ba'th revolution, Iran-Iraq war, invasion of Kuwait, and defeat in the Persian Gulf War (B.3.d)."
     },
     {
       "vsiTitle": "African History",
       "vsiAuthor": "John Parker, Richard Rathbone",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses African colonial rule, nationalist movements, independence, and post-independence developments throughout D and E."
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "E.3",
+        "E.4",
+        "E.5",
+        "E.6",
+        "E.7",
+        "E.8"
+      ],
+      "rationaleAI": "African history from prehistoric origins through colonial conquest, independence movements, and contemporary Africa broadly addresses the entire sub-Saharan Africa section (E), including colonial administration (E.1, E.2), nationalist movements and independence (E.3), and regional developments (E.4-E.8)."
     },
     {
       "vsiTitle": "African Politics",
       "vsiAuthor": "Ian Taylor",
       "relevantPathsAI": [
-        "E.4"
+        "E.3",
+        "E.4",
+        "E.5",
+        "E.6",
+        "E.7",
+        "E.8"
       ],
-      "rationaleAI": "Political developments in sub-Saharan Africa -- one-party states, military coups, and democratic transitions -- are central to E.4-8."
+      "rationaleAI": "Political systems, governance, patronage networks, and colonial legacies in sub-Saharan Africa address the rise of African nationalist parties and establishment of independent countries (E.3), and political developments across West Africa (E.4), East Africa (E.6), Central Africa (E.7), and Southern Africa (E.8)."
     },
     {
       "vsiTitle": "Nelson Mandela",
       "vsiAuthor": "Elleke Boehmer",
       "relevantPathsAI": [
-        "E.8"
+        "E.8.b.i"
       ],
-      "rationaleAI": "The African National Congress, the antiapartheid movement, and the establishment of black majority rule in South Africa are central to E.8.b.i."
+      "rationaleAI": "Mandela's role in the African National Congress, imprisonment, and presidency directly address antiapartheid movements, growing international isolation, legalization of the ANC, and establishment of black majority rule in 1994 (E.8.b.i)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
-      "relevantPathsAI": [],
-      "rationaleAI": "Islam's role across the region -- from the Arab states to the Islamic Republic of Iran and North African politics -- pervades this section."
+      "relevantPathsAI": [
+        "B.3.e",
+        "B.4",
+        "C.1.c",
+        "D"
+      ],
+      "rationaleAI": "Islam's divisions, Sharia law, the Ottoman Empire, and militant Islam connect to radicalization of Egyptian politics (B.3.e), the Arabian Peninsula and Saudi Arabia (B.4), Iran's Islamic Republic (C.1.c), and North Africa's Islamic fundamentalist movements (D)."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
-      "relevantPathsAI": [],
-      "rationaleAI": "Arab nationalism and the Ottoman Empire legacy shaped the political structures of Southwest Asia in outline B."
+      "relevantPathsAI": [
+        "B.1",
+        "B.3",
+        "B.4",
+        "D"
+      ],
+      "rationaleAI": "Islamic civilization from the Arabian Peninsula through medieval caliphates to the modern era, Arab nationalism, and political Islam connect to Arab lands under the mandate system (B.1), the Arab states (B.3), the Arabian Peninsula (B.4), and North Africa (D)."
     },
     {
       "vsiTitle": "Islamic Law",
       "vsiAuthor": "Mashood A. Baderin",
       "relevantPathsAI": [
-        "C.1.c",
-        "E.5"
+        "B.4.a",
+        "C.1.c"
       ],
-      "rationaleAI": "Islamic law is relevant to Iran's Islamic Republic and the introduction of Islamic law in Sudan in C.1.c and E.5.b."
+      "rationaleAI": "Islamic jurisprudence across the Middle East and Africa connects to Saudi Arabia's governance under Islamic law (B.4.a) and Iran's Islamic Republic and Sharia-based governance (C.1.c)."
     },
     {
       "vsiTitle": "Fundamentalism",
       "vsiAuthor": "Malise Ruthven",
       "relevantPathsAI": [
-        "B.3",
+        "B.3.e",
         "C.1.c",
-        "D.2"
+        "D.2.b",
+        "D.2.d"
       ],
-      "rationaleAI": "The rise of Islamic fundamentalism in Egypt, Tunisia, Algeria, and Iran connects to B.3.e, C.1.c, and D.2."
+      "rationaleAI": "Islamic fundamentalism connects to the rise of Islamic fundamentalism in Egypt (B.3.e), Iran's Islamic Republic under Khomeini (C.1.c), the rise of Islamic fundamentalists in Tunisia (D.2.b), and growing influence of Islamic fundamentalism in Algeria (D.2.d)."
     },
     {
       "vsiTitle": "Zionism",
       "vsiAuthor": "Michael Stanislawski",
       "relevantPathsAI": [
-        "B.1.c"
+        "B.1.c",
+        "B.3.c.i"
       ],
-      "rationaleAI": "The Balfour Declaration, Jewish settlement in Palestine, the Biltmore Resolution, and the establishment of Israel are central to B.1.c."
+      "rationaleAI": "History of Zionism from Herzl through the creation of Israel in 1948 and the Six-Day War directly addresses the Balfour Declaration, Jewish settlement, and emergence of Israel (B.1.c) and the establishment of Israel and wars with Arab states (B.3.c.i)."
     },
     {
       "vsiTitle": "Judaism",
       "vsiAuthor": "Norman Solomon",
       "relevantPathsAI": [
         "B.1.c",
-        "B.3.c"
+        "B.3.c.i"
       ],
-      "rationaleAI": "Jewish identity and culture are relevant to the establishment of Israel and immigration to Palestine in B.1.c and B.3.c."
+      "rationaleAI": "Judaism including the establishment of Israel and the Holocaust connects to the acceleration of Jewish settlement in Palestine (B.1.c) and the establishment and development of Israel (B.3.c.i)."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
-      "relevantPathsAI": [],
-      "rationaleAI": "Central to the section, tracing the end of European colonial rule and emergence of new nations across Southwest Asia and Africa."
+      "relevantPathsAI": [
+        "B.1",
+        "D",
+        "E.3"
+      ],
+      "rationaleAI": "Transition from colonial empires to independent nation-states, Nehru and Nkrumah as independence leaders, addresses Arab lands under the mandate system (B.1), emergence of independent North African states (D), and decline of the colonial system in sub-Saharan Africa (E.3)."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
-      "relevantPathsAI": [],
-      "rationaleAI": "British mandate territories (Palestine, Iraq, Transjordan), British colonies in Africa, and dissolution of British colonial rule are all discussed here."
+      "relevantPathsAI": [
+        "A",
+        "B.1",
+        "D.1",
+        "E.1",
+        "E.2"
+      ],
+      "rationaleAI": "British imperial administration and decolonization connect to Turkey and Cyprus under British administration (A), Arab lands under the British mandate (B.1), British colonial rule in North Africa (D.1), and British colonial administration in sub-Saharan Africa (E.1, E.2)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "European colonial empires in Africa and Southwest Asia and their dissolution form a central narrative of this section."
+      "relevantPathsAI": [
+        "B.1",
+        "D.1",
+        "E.1",
+        "E.2"
+      ],
+      "rationaleAI": "British, Dutch, and French colonial empires and theories of colonialism connect to the mandate system in the Arab lands (B.1), French and Italian colonial rule in North Africa (D.1), and European colonial powers in sub-Saharan Africa (E.1, E.2)."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
-      "relevantPathsAI": [],
-      "rationaleAI": "Postcolonial nation-building challenges, ethnic tensions, and the legacy of colonialism shaped newly independent states throughout."
+      "relevantPathsAI": [
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Postcolonial experiences in Africa and the Middle East connect to the emergence of independent North African states (D) and nationalist movements and independence in sub-Saharan Africa (E)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
-      "relevantPathsAI": [],
-      "rationaleAI": "African nationalist parties, Arab nationalism, Kurdish separatism, and independence movements shaped the region throughout."
+      "relevantPathsAI": [
+        "A.1",
+        "E.3"
+      ],
+      "rationaleAI": "Nationalism and self-determination connect to the development of the Turkish nation under Ataturk (A.1) and the rise of African nationalist parties and establishment of independent African countries (E.3)."
     },
     {
       "vsiTitle": "Civil Wars",
       "vsiAuthor": "Monica Duffy Toft",
-      "relevantPathsAI": [],
-      "rationaleAI": "The Lebanese civil war, Angolan and Mozambican civil wars, Somali clan warfare, and Sudanese civil war are all addressed."
+      "relevantPathsAI": [
+        "B.3.a",
+        "E.6.b.i",
+        "E.7.a.i",
+        "E.8.b.vi"
+      ],
+      "rationaleAI": "Intrastate armed conflicts connect to the Lebanese civil wars (B.3.a), Somali clan-based civil war (E.6.b.i), the Congo's civil strife (E.7.a.i), and civil wars in Angola and Mozambique (E.8.b.vi)."
     },
     {
       "vsiTitle": "Modern War",
       "vsiAuthor": "Richard English",
-      "relevantPathsAI": [],
-      "rationaleAI": "The Arab-Israeli wars, the Iran-Iraq War, the Persian Gulf wars, and the Algerian War of Independence are central to this section."
+      "relevantPathsAI": [
+        "C.1.c",
+        "E.8"
+      ],
+      "rationaleAI": "Modern warfare including guerrilla tactics connects to the Iran-Iraq war (C.1.c) and guerrilla warfare in Angola and Mozambique (E.8.b.vi)."
     },
     {
       "vsiTitle": "Terrorism",
       "vsiAuthor": "Charles Townshend",
-      "relevantPathsAI": [],
-      "rationaleAI": "Terrorism in the region -- including PLO activities, the intifada, and Libya's disruptive role -- is addressed throughout."
+      "relevantPathsAI": [
+        "D.2.d"
+      ],
+      "rationaleAI": "Terrorism and political violence connect to increasing civil strife in Algeria from Islamic fundamentalist and state violence (D.2.d)."
     },
     {
       "vsiTitle": "Human Rights",
       "vsiAuthor": "Andrew Clapham",
-      "relevantPathsAI": [],
-      "rationaleAI": "Apartheid, political persecution, ethnic strife, and genocide in Rwanda and Burundi highlight human rights abuses across the region."
+      "relevantPathsAI": [
+        "E.8.b.i"
+      ],
+      "rationaleAI": "Human rights frameworks and anti-discrimination connect to government-sanctioned apartheid and antiapartheid movements in South Africa (E.8.b.i)."
     },
     {
       "vsiTitle": "Racism",
       "vsiAuthor": "Ali Rattansi",
       "relevantPathsAI": [
-        "E.8"
+        "E.8.b.i"
       ],
-      "rationaleAI": "Apartheid in South Africa, racial discrimination in Rhodesia, and racial dimensions of colonialism are central to E.8."
+      "rationaleAI": "Racism as structural and institutional phenomenon, including colonial racism and Cecil Rhodes, connects to apartheid in South Africa and political discrimination against black Africans (E.8.b.i)."
     },
     {
       "vsiTitle": "Refugees",
       "vsiAuthor": "Gil Loescher",
-      "relevantPathsAI": [],
-      "rationaleAI": "Palestinian refugees, Somali refugees, and displacement from civil wars across Africa are discussed throughout."
+      "relevantPathsAI": [
+        "E.6.b.i"
+      ],
+      "rationaleAI": "Forced migration and refugee crises connect to the influx of refugees in Somalia (E.6.b.i) and the multinational intervention that followed clan-based civil war and famine."
     },
     {
       "vsiTitle": "Communism",
       "vsiAuthor": "Leslie Holmes",
-      "relevantPathsAI": [],
-      "rationaleAI": "Ethiopian socialism under Mengistu and Soviet involvement in African conflicts are relevant to outline E."
+      "relevantPathsAI": [
+        "E.5.a"
+      ],
+      "rationaleAI": "Communism and socialist state development connect to the establishment of the military government and development of a Socialist state under Mengistu in Ethiopia (E.5.a)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
-      "relevantPathsAI": [],
-      "rationaleAI": "Struggles for democratic governance in Africa -- from military coups and one-party states to multiparty elections -- connect to outline E."
+      "relevantPathsAI": [
+        "A.3.c",
+        "E.8.b.i"
+      ],
+      "rationaleAI": "Democracy and democratic transitions connect to Turkey's return to civilian government and constitutional reforms (A.3.c) and South Africa's first all-race elections in 1994 (E.8.b.i)."
     },
     {
       "vsiTitle": "Authoritarianism",
       "vsiAuthor": "James Loxton",
-      "relevantPathsAI": [],
-      "rationaleAI": "Authoritarian regimes -- Ataturk, Nasser, Qaddafi, Mobutu, apartheid South Africa, and military governments -- pervade this section."
+      "relevantPathsAI": [
+        "A.2",
+        "E.4.b.ii",
+        "E.8.b.i"
+      ],
+      "rationaleAI": "Authoritarian regimes connect to Ataturk's one-party government (A.2), military coups and one-party states in West Africa (E.4.b.ii), and apartheid-era South African authoritarianism (E.8.b.i)."
     },
     {
       "vsiTitle": "Revolutions",
       "vsiAuthor": "Jack A. Goldstone",
-      "relevantPathsAI": [],
-      "rationaleAI": "The Egyptian revolution (1952), the Iranian revolution (1978-79), and the Algerian War of Independence reshaped the region."
+      "relevantPathsAI": [
+        "B.3.e",
+        "C.1.c"
+      ],
+      "rationaleAI": "Revolutionary theory addresses the Egyptian revolution of 1952 and Nasser's rise to power (B.3.e) and the Iranian revolution of 1978-79 and establishment of the Islamic Republic (C.1.c)."
     },
     {
       "vsiTitle": "Fascism",
       "vsiAuthor": "Kevin Passmore",
       "relevantPathsAI": [
-        "D.1",
-        "E.5"
+        "D.1.b"
       ],
-      "rationaleAI": "Fascist Italian domination of Libya (1922-42) and the Italian conquest of Ethiopia (1936) are discussed in D.1.b and E.5.a."
+      "rationaleAI": "Fascism's manifestations connect to Libya under the Fascist Italian government from 1922 to 1942 (D.1.b)."
     },
     {
       "vsiTitle": "The Cold War",
       "vsiAuthor": "Robert J. McMahon",
-      "relevantPathsAI": [],
-      "rationaleAI": "Superpower involvement in African conflicts and Cold War dynamics in Southwest Asia shaped the post-independence era."
+      "relevantPathsAI": [
+        "C.1.b",
+        "E.6.b.i",
+        "E.8.b.vi"
+      ],
+      "rationaleAI": "Cold War superpower rivalry and proxy wars connect to the U.S.-sponsored coup against Mosaddeq in Iran (C.1.b), superpower involvement in Somalia (E.6.b.i), and Cuban troop intervention in Angola (E.8.b.vi)."
     },
     {
       "vsiTitle": "The United Nations",
@@ -213,36 +292,47 @@
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
-      "relevantPathsAI": [],
-      "rationaleAI": "The mandate system, Camp David Accords, peace talks, and international negotiations are discussed throughout."
+      "relevantPathsAI": [
+        "A.1",
+        "B.3.c.i"
+      ],
+      "rationaleAI": "Diplomatic history connects to Turkey's war for independence and nation-building (A.1) and Israeli-Arab diplomacy including the treaty with Egypt (B.3.c.i)."
     },
     {
       "vsiTitle": "International law",
       "vsiAuthor": "Vaughan Lowe",
-      "relevantPathsAI": [],
-      "rationaleAI": "The mandate system, UN trusteeship, international sanctions, and legal frameworks governing decolonization are relevant throughout."
+      "relevantPathsAI": [
+        "B.1",
+        "E.8.b.ii"
+      ],
+      "rationaleAI": "International law, the UN system, and sovereignty connect to the mandate system in Arab lands (B.1) and Namibia's UN mandate and international resistance to South African rule (E.8.b.ii)."
     },
     {
       "vsiTitle": "The First World War",
       "vsiAuthor": "Michael Howard",
       "relevantPathsAI": [
-        "B.1",
-        "D.1",
-        "E.1"
+        "A.1",
+        "B.1"
       ],
-      "rationaleAI": "The post-WWI mandate system, division of former German colonies, and dissolution of the Ottoman Empire connect to B.1, D.1, and E.1."
+      "rationaleAI": "World War I and the Paris Peace Settlement provide context for the Turkish war of independence (A.1) and the post-World War I mandate system in the Arab lands (B.1)."
     },
     {
       "vsiTitle": "World War II",
       "vsiAuthor": "Gerhard L. Weinberg",
-      "relevantPathsAI": [],
-      "rationaleAI": "WWII's impact -- North African campaigns, Allied occupation of Iran, and accelerated decolonization -- shaped the entire region."
+      "relevantPathsAI": [
+        "B.2",
+        "D.1.b",
+        "E.1"
+      ],
+      "rationaleAI": "World War II connects to Egypt's participation (B.2), Libya under Italian rule and British occupation (D.1.b), and the post-World War I division of German colonies and post-World War II changes in colonial policies (E.1)."
     },
     {
       "vsiTitle": "Socialism",
       "vsiAuthor": "Michael Newman",
-      "relevantPathsAI": [],
-      "rationaleAI": "Ba'thist ideologies in Syria and Iraq, Ethiopian socialism, and ujamaa socialism in Tanzania are discussed across outline B and E."
+      "relevantPathsAI": [
+        "E.5.a"
+      ],
+      "rationaleAI": "Socialism and socialist ideology connect to the development of a Socialist state in Ethiopia under Mengistu (E.5.a)."
     },
     {
       "vsiTitle": "Secularism",
@@ -250,77 +340,94 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Ataturk's secularization program in Turkey and the tension between secular and religious governance connect to A.2."
+      "rationaleAI": "Secularism and the separation of church and state connect to Ataturk's secularization reforms in Turkey (A.2)."
     },
     {
       "vsiTitle": "HIV/AIDS",
       "vsiAuthor": "Alan Whiteside",
       "relevantPathsAI": [
-        "E.8"
+        "E.8.b.iii"
       ],
-      "rationaleAI": "The AIDS pandemic in southern Africa is mentioned in E.8.b.iii for Botswana, Lesotho, and Swaziland."
+      "rationaleAI": "HIV/AIDS as a global epidemic with geographic concentration in Southern and Eastern Africa connects to the AIDS pandemic in Botswana, Lesotho, and Swaziland (E.8.b.iii)."
     },
     {
       "vsiTitle": "Geopolitics",
       "vsiAuthor": "Klaus Dodds",
-      "relevantPathsAI": [],
-      "rationaleAI": "The geopolitical significance of oil in the Arabian Peninsula and Cold War competition in Africa shaped the region's trajectory."
+      "relevantPathsAI": [
+        "B.4",
+        "C"
+      ],
+      "rationaleAI": "Geopolitics and resource competition connect to the strategic importance of petroleum in the Arabian Peninsula (B.4) and Iran's oil resources and geopolitical significance (C)."
     },
     {
       "vsiTitle": "Development",
       "vsiAuthor": "Ian Goldin",
-      "relevantPathsAI": [],
-      "rationaleAI": "Economic development challenges and aid programs for newly independent states across Africa and Southwest Asia are discussed throughout."
+      "relevantPathsAI": [
+        "E.2",
+        "E.4.b.ii"
+      ],
+      "rationaleAI": "Economic and social development connect to the economic development and effects of colonialism on African peoples (E.2) and problems of economic development in independent West African nations (E.4.b.ii)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
-      "relevantPathsAI": [],
-      "rationaleAI": "Oil-based economies, economic development challenges, and the transition from colonial to independent economic systems connect to the section."
+      "relevantPathsAI": [
+        "B.4.a"
+      ],
+      "rationaleAI": "Capitalism and resource-based economies connect to the oil-based economic development of Saudi Arabia and the Arabian Peninsula (B.4.a)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
-      "relevantPathsAI": [],
-      "rationaleAI": "Economic transformation -- including oil discovery in the Arabian Peninsula and postcolonial development challenges -- is relevant throughout."
+      "relevantPathsAI": [
+        "E.2",
+        "E.4"
+      ],
+      "rationaleAI": "Comparative analysis of global prosperity and poverty connects to colonial economic development in Africa (E.2) and economic challenges in West African nations (E.4)."
     },
     {
       "vsiTitle": "Borders",
       "vsiAuthor": "Alexander C. Diener, Joshua Hagen",
-      "relevantPathsAI": [],
-      "rationaleAI": "The settlement of borders in the mandate system, partition of Palestine, and territorial disputes across Africa and Southwest Asia are central themes."
+      "relevantPathsAI": [
+        "D.2.c",
+        "E.8.b.ii"
+      ],
+      "rationaleAI": "Political borders and territorial disputes connect to Morocco's dispute over Western Sahara (D.2.c) and Namibia's contested borders and independence (E.8.b.ii)."
     },
     {
       "vsiTitle": "Diaspora",
       "vsiAuthor": "Kevin Kenny",
       "relevantPathsAI": [
-        "B.1.c",
-        "B.3.c"
+        "E.4"
       ],
-      "rationaleAI": "The Jewish diaspora and return to Israel and the Palestinian diaspora connect to B.1.c and B.3.c."
+      "rationaleAI": "Diaspora, migration, and transnational identity connect to the emergence of new educated African leaders and independence movements (E.4) shaped by diasporic intellectual networks."
     },
     {
       "vsiTitle": "African Religions",
       "vsiAuthor": "Jacob K. Olupona",
       "relevantPathsAI": [
-        "E.8"
+        "E.2"
       ],
-      "rationaleAI": "Separatist church movements and religious dimensions of African societies under colonial rule and after independence are discussed in E.8.a.iii."
+      "rationaleAI": "Indigenous African religious traditions connect to the effects of colonialism on the societies and institutions of the African peoples (E.2), including the impact of Christianity and Islam on indigenous practices."
     },
     {
       "vsiTitle": "Military Strategy",
       "vsiAuthor": "Antulio Joseph Echevarria",
-      "relevantPathsAI": [],
-      "rationaleAI": "Arab-Israeli wars, the Iran-Iraq War, and counterinsurgency campaigns are discussed throughout."
+      "relevantPathsAI": [
+        "C.1.c"
+      ],
+      "rationaleAI": "Military strategy including attrition and exhaustion connects to the Iran-Iraq war (C.1.c) as a major conflict requiring sustained military strategy."
     },
     {
       "vsiTitle": "Poverty",
       "vsiAuthor": "Philip N. Jefferson",
       "relevantPathsAI": [
-        "E.4"
+        "E.2",
+        "E.4.b.ii"
       ],
-      "rationaleAI": "Poverty and development challenges facing newly independent African nations connect to E.4-8."
+      "rationaleAI": "Global poverty and development challenges connect to the economic effects of colonialism on African peoples (E.2) and problems of economic development in independent West African nations (E.4.b.ii)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

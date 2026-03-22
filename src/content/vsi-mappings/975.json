@@ -4,87 +4,110 @@
     {
       "vsiTitle": "Modern China",
       "vsiAuthor": "Rana Mitter",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses China from the republic through the communist revolution, Mao, Deng Xiaoping, and modern economic growth discussed throughout A."
+      "relevantPathsAI": [
+        "A",
+        "A.5",
+        "A.5.d",
+        "A.5.e"
+      ],
+      "rationaleAI": "Modern China from the late imperial period through revolution (Mao), economic reform (Deng Xiaoping), and the contemporary era under Xi Jinping directly addresses the emergence of the People's Republic (A.5), international relations including rapprochement with the U.S. (A.5.d), and internal affairs including Deng Xiaoping's ascendancy and Hong Kong (A.5.e)."
     },
     {
       "vsiTitle": "Mao",
       "vsiAuthor": "Delia Davin",
       "relevantPathsAI": [
-        "A.4",
-        "A.5.c"
+        "A.4.d",
+        "A.5.a",
+        "A.5.c",
+        "A.5.e"
       ],
-      "rationaleAI": "Examines Maoist ideology, the role of peasants, the Great Leap Forward, the Cultural Revolution, and the Gang of Four in A.4.d and A.5.c-e."
+      "rationaleAI": "Mao Zedong's co-founding of the Chinese Communist Party, leadership of the revolution, the Great Leap Forward, and the Cultural Revolution directly address the development of Maoist ideology (A.4.d), the Civil War and Communist victory (A.5.a), the Great Leap Forward and Cultural Revolution (A.5.c), and factional struggles of the early 1970s (A.5.e)."
     },
     {
       "vsiTitle": "The Cultural Revolution",
       "vsiAuthor": "Richard Curt Kraus",
       "relevantPathsAI": [
-        "A.5.c"
+        "A.5.c.iii",
+        "A.5.c.iv",
+        "A.5.d"
       ],
-      "rationaleAI": "Directly addresses the Great Proletarian Cultural Revolution (1966-76) including attacks on cultural leaders and party members in A.5.c.iii."
+      "rationaleAI": "The Great Proletarian Cultural Revolution (1966-1976), power struggles involving Mao, Liu Shaoqi, and the Gang of Four, and Sino-American rapprochement directly address the Cultural Revolution (A.5.c.iii), Mao's Reconstruction (A.5.c.iv), and international relations including rapprochement with the U.S. (A.5.d)."
     },
     {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
       "relevantPathsAI": [
-        "A.4"
+        "A.4.a",
+        "A.4.c",
+        "A.5.c.iii"
       ],
-      "rationaleAI": "The Confucian heritage shaped Sun Yat-sen's political ideas and Chiang Kai-shek's idealization of Chinese tradition discussed in A.4."
+      "rationaleAI": "Confucianism's impact on Chinese civilization, the May Fourth Movement, and the Cultural Revolution under Mao address the origins and background of modern ideologies including China's ideological heritage (A.4.a), Chiang Kai-shek's idealization of Chinese tradition (A.4.c), and attacks on cultural leaders during the Cultural Revolution (A.5.c.iii)."
     },
     {
       "vsiTitle": "Chinese literature",
       "vsiAuthor": "Sabina Knight",
       "relevantPathsAI": [
-        "A.5.c"
+        "A.1.b",
+        "A.5.c.i"
       ],
-      "rationaleAI": "Chinese literary culture is relevant to the drive for literature and arts for the masses during the Great Leap Forward in A.5.c.i."
+      "rationaleAI": "Chinese literary culture and the modernization of literary production connect to the new intelligentsia and growth of nationalism (A.1.b) and literature and arts for the masses during the Great Leap Forward (A.5.c.i)."
     },
     {
       "vsiTitle": "Modern Japan",
       "vsiAuthor": "Christopher Goto-Jones",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses Japan's constitutional government, militarism, WWII, postwar democratization, economic growth, and the Liberal-Democratic Party in B."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.2.d"
+      ],
+      "rationaleAI": "Modern Japan from the Meiji Restoration through militarism, World War II, American occupation, and postwar economic miracle directly addresses Japan's political and social developments (B.1), the rise and fall of Imperial Japan (B.2), and postwar Japan (B.2.d)."
     },
     {
       "vsiTitle": "Samurai",
       "vsiAuthor": "Michael Wert",
       "relevantPathsAI": [
-        "B.2"
+        "B.1"
       ],
-      "rationaleAI": "Japanese warrior culture provides background for the rise of militarism and the military's seizure of foreign policy initiative in B.2.a."
+      "rationaleAI": "Japanese warrior class and bushido ideology provide historical context for Japan's political and social developments in the early 20th century (B.1), particularly the cultural traditions underlying constitutional government."
     },
     {
       "vsiTitle": "Japanese Literature",
       "vsiAuthor": "Alan Tansman",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.b",
+        "B.2.d"
       ],
-      "rationaleAI": "Japanese cultural and literary developments illuminate the postwar cultural changes in B.1.d."
+      "rationaleAI": "Japanese literary tradition including modern authors like Natsume Soseki and responses to the atomic bombings connect to social and cultural trends (B.1.b) and postwar cultural developments (B.2.d)."
     },
     {
       "vsiTitle": "Korea",
       "vsiAuthor": "Michael J. Seth",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses Japanese rule (1910-45), the Korean War, and the development of both North and South Korea in C."
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Korean peninsula history from ancient times through division into North and South Korea directly addresses Japanese rule (C.1), Korea since 1945 (C.2), and the dramatic divergence into contrasting political and economic systems."
     },
     {
       "vsiTitle": "World War II",
       "vsiAuthor": "Gerhard L. Weinberg",
       "relevantPathsAI": [
         "A.3",
-        "B.2"
+        "B.2.b",
+        "B.2.c"
       ],
-      "rationaleAI": "Examines Japan's war with China, the Greater East Asia Co-prosperity Sphere, the Pacific war, and Japan's surrender in A.3 and B.2."
+      "rationaleAI": "Japan's expansion in the Pacific and China, Allied victory, and postwar consequences address the war against Japan in China (A.3), Japan's alignment with Axis Powers and war with the U.S. (B.2.b), and Japanese conquests and Allied counterattack (B.2.c)."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
-        "A.5.c",
+        "A.5.c.ii",
         "B.2.c"
       ],
-      "rationaleAI": "The atomic bombing of Japanese cities and China's emergence as a nuclear power are discussed in A.5.c.ii and B.2.c."
+      "rationaleAI": "The bombings of Hiroshima and Nagasaki and nuclear deterrence theory address China as a nuclear power (A.5.c.ii) and the atomic bombing of Japanese cities leading to Japan's surrender (B.2.c)."
     },
     {
       "vsiTitle": "Aerial Warfare",
@@ -92,46 +115,64 @@
       "relevantPathsAI": [
         "B.2.c"
       ],
-      "rationaleAI": "Examines the fire and atomic bombing of Japanese cities and Allied air campaigns in the Pacific in B.2.c."
+      "rationaleAI": "Air power development in World War II addresses the fire and atomic bombing of Japanese cities (B.2.c) and air campaigns in the Pacific theater."
     },
     {
       "vsiTitle": "The Cold War",
       "vsiAuthor": "Robert J. McMahon",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores the Sino-Soviet split, rapprochement with the U.S., the Korean War, and Cold War dynamics in East Asia throughout."
+      "relevantPathsAI": [
+        "A.5.d",
+        "B.2.d.ii",
+        "C.2"
+      ],
+      "rationaleAI": "Cold War superpower rivalry and proxy wars address China's international relations and friction with the Soviet Union (A.5.d), Japan's postwar international relations and politics (B.2.d.ii), and division into South and North Korea and the Korean War (C.2)."
     },
     {
       "vsiTitle": "Communism",
       "vsiAuthor": "Leslie Holmes",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores the Chinese Communist Party, Maoist ideology, the Great Leap Forward, and the communist dimension of the Korean conflict in A and C."
+      "relevantPathsAI": [
+        "A.2",
+        "A.4.d",
+        "A.5",
+        "C.2.a"
+      ],
+      "rationaleAI": "Mao's Great Leap Forward, Communist Party structures, and Cold War confrontation address the Kuomintang-Communist interwar struggles (A.2), development of Maoist ideology (A.4.d), emergence of the People's Republic (A.5), and division into South and North Korea (C.2.a)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
-      "relevantPathsAI": [],
-      "rationaleAI": "Chinese nationalism, the May Fourth Movement, Japanese militarist nationalism, and Korean independence movements all shaped the region's modern history."
+      "relevantPathsAI": [
+        "A.1.b",
+        "C.1"
+      ],
+      "rationaleAI": "Nationalism and self-determination connect to the growth of Chinese nationalism (A.1.b) and the March 1st Korean independence movement (C.1)."
     },
     {
       "vsiTitle": "Revolutions",
       "vsiAuthor": "Jack A. Goldstone",
-      "relevantPathsAI": [],
-      "rationaleAI": "The Chinese Revolution, the Kuomintang-Communist struggle, and revolutionary transformations of Chinese society are central to A."
+      "relevantPathsAI": [
+        "A.2",
+        "A.5.a"
+      ],
+      "rationaleAI": "Communist revolutions of the twentieth century address the national revolution and Kuomintang-Communist cooperation (A.2) and the Civil War and Communist victory (A.5.a)."
     },
     {
       "vsiTitle": "Civil Wars",
       "vsiAuthor": "Monica Duffy Toft",
       "relevantPathsAI": [
-        "A.5",
-        "C.2"
+        "A.2.c",
+        "A.5.a"
       ],
-      "rationaleAI": "Addresses the Chinese Civil War (1945-49) and the Korean War in A.5.a and C.2.b."
+      "rationaleAI": "Intrastate armed conflicts connect to struggles within the Kuomintang-Communist coalition (A.2.c) and the Chinese Civil War (A.5.a)."
     },
     {
       "vsiTitle": "Modern War",
       "vsiAuthor": "Richard English",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the Sino-Japanese War, the Pacific War, the Chinese Civil War, and the Korean War discussed throughout."
+      "relevantPathsAI": [
+        "A.3",
+        "C.2.b"
+      ],
+      "rationaleAI": "Modern warfare including guerrilla tactics connects to the war against Japan in China (A.3) and the Korean War (C.2.b)."
     },
     {
       "vsiTitle": "Ideology",
@@ -139,65 +180,87 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Explores the development of Kuomintang and Communist ideologies, Sun Yat-sen's three principles, and Maoist thought in A.4."
+      "rationaleAI": "Ideology as political thought covering Marxism and other ideologies connects to the development of Kuomintang and Chinese Communist ideologies (A.4), including Sun Yat-sen's and Mao's political ideas."
     },
     {
       "vsiTitle": "Authoritarianism",
       "vsiAuthor": "James Loxton",
-      "relevantPathsAI": [],
-      "rationaleAI": "Examines authoritarian regimes including Chiang Kai-shek's Nationalist government, Mao's state, North Korean dictatorship, and KMT rule in Taiwan."
+      "relevantPathsAI": [
+        "A.6",
+        "C.2.c"
+      ],
+      "rationaleAI": "Authoritarian regimes including single-party types connect to the Nationalist government in Taiwan with initial repression (A.6) and South Korean military regimes under Park and Chun (C.2.c)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
       "relevantPathsAI": [
-        "A.4",
+        "A.6",
+        "B.2.d.i",
         "C.2.c"
       ],
-      "rationaleAI": "Sun Yat-sen's democratic ideals, the 1989 pro-democracy movement, Taiwan's gradual democratization, and South Korean democratic reforms are discussed in A.4-6 and C.2.c."
+      "rationaleAI": "Democracy and democratic transitions connect to Taiwan's gradual democratization (A.6), democratization of Japanese society under U.S. occupation (B.2.d.i), and South Korea's constitutional reforms and democratic transition (C.2.c)."
     },
     {
       "vsiTitle": "Human Rights",
       "vsiAuthor": "Andrew Clapham",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses human-rights disputes between the U.S. and China, repression of the pro-democracy movement (1989), and political repression in North Korea."
+      "relevantPathsAI": [
+        "A.5.e"
+      ],
+      "rationaleAI": "Human rights frameworks connect to trade and human-rights disputes between the U.S. and China (A.5.d) and the forcible repression of the pro-democracy movement in 1989 (A.5.e)."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores rapprochement between China and the U.S./Japan (1972), Sino-Soviet friction, and Korean armistice negotiations."
+      "relevantPathsAI": [
+        "A.5.d",
+        "B.2.d.ii"
+      ],
+      "rationaleAI": "Diplomatic history connects to China's international relations including UN representation and rapprochement with the U.S. and Japan (A.5.d) and Japan's postwar international relations (B.2.d.ii)."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
-      "relevantPathsAI": [],
-      "rationaleAI": "Japan's loss of colonies, Korean independence, and the end of Western colonial influence in East Asia are central themes."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Transition from colonial rule connects to the end of Japanese rule in Korea (C.1) and the emergence of independent Korean states."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
-      "relevantPathsAI": [],
-      "rationaleAI": "Japan's economic miracle, China's market reforms and economic incentives, and South Korea's rapid development illustrate capitalism's varied forms."
+      "relevantPathsAI": [
+        "B.2.d.iii"
+      ],
+      "rationaleAI": "Comparative capitalisms including Japan connect to Japan's great economic growth and role as a major world trader (B.2.d.iii)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the economic transformations across East Asia including Japan's rise as a major world trader and China's rapid economic growth."
+      "relevantPathsAI": [
+        "A.5.e",
+        "B.2.d.iii",
+        "C.2.c"
+      ],
+      "rationaleAI": "Global economic development patterns connect to China's rapid economic growth (A.5.e), Japan's economic miracle (B.2.d.iii), and South Korea's economic growth and development (C.2.c)."
     },
     {
       "vsiTitle": "Geopolitics",
       "vsiAuthor": "Klaus Dodds",
-      "relevantPathsAI": [],
-      "rationaleAI": "Geopolitical rivalries among China, Japan, the U.S., and the Soviet Union defined the region's modern trajectory."
+      "relevantPathsAI": [
+        "A.5.d"
+      ],
+      "rationaleAI": "Geopolitics and strategic analysis connect to China's international relations including rapprochement with the U.S. and friction with the Soviet Union (A.5.d)."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides historical context for China's Central Asian connections relevant to Sino-Soviet relations and border tensions."
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Central Eurasian trade networks and China's historical trade connections provide background context for early power struggles and China's international engagement (A.1.a), though the Silk Road's primary temporal focus is earlier."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

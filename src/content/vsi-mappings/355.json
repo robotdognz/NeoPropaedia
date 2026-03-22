@@ -5,20 +5,24 @@
       "vsiTitle": "Human evolution",
       "vsiAuthor": "Bernard Wood",
       "relevantPathsAI": [
+        "A",
         "A.1",
         "A.2"
       ],
-      "rationaleAI": "Examines the structural and physiological characteristics that set humans apart, including bipedalism, brain enlargement, and an extended developmental period (A.1, A.2)."
+      "rationaleAI": "Hominin evolution addresses structural versatility (A.1) and physiological characteristics including slow development (A.2)."
     },
     {
       "vsiTitle": "Agriculture",
       "vsiAuthor": "Paul Brassley, Richard Soffe",
       "relevantPathsAI": [
+        "B.1",
+        "C",
         "C.1",
         "C.2",
-        "C.4"
+        "C.4",
+        "D.4"
       ],
-      "rationaleAI": "Directly covers domestication, cultivation and breeding of plants and animals, and food production (C.1, C.2, C.4)."
+      "rationaleAI": "Crop cultivation and animal husbandry address environmental modification (B.1), domestication (C.1), plant cultivation (C.2), animal cultivation (C.4), and food supply management (D.4)."
     },
     {
       "vsiTitle": "Eugenics",
@@ -26,41 +30,47 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Directly covers attempts to change genetic endowments through deliberate selective measures (B.3)."
+      "rationaleAI": "Eugenic policies address deliberate selective measures to change genetic endowments (B.3)."
     },
     {
       "vsiTitle": "Anthropocene",
       "vsiAuthor": "Erle C. Ellis",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "D"
       ],
-      "rationaleAI": "Documents humanity's transformation of the biosphere through land use, deforestation, pollution, and fossil fuel combustion (B.1)."
+      "rationaleAI": "Human environmental impact addresses environment modification (B.1) and conservation (D)."
     },
     {
       "vsiTitle": "Climate change",
       "vsiAuthor": "Mark Maslin",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "D",
+        "D.1"
       ],
-      "rationaleAI": "Illustrates a major consequence of human influence on the biosphere, directly relevant to environmental modification by humans (B.1)."
+      "rationaleAI": "Anthropogenic warming addresses environment modification (B.1) and conservation management (D.1)."
     },
     {
       "vsiTitle": "Biodiversity Conservation",
       "vsiAuthor": "David W. Macdonald",
       "relevantPathsAI": [
+        "D",
         "D.1",
         "D.2",
         "D.3"
       ],
-      "rationaleAI": "Directly covers conservation management of natural resources and the protection of biodiversity from human impacts (D.1, D.2, D.3)."
+      "rationaleAI": "Conservation strategies address management scope (D.1), resource types (D.2), and resource management (D.3)."
     },
     {
       "vsiTitle": "Food",
       "vsiAuthor": "John Krebs",
       "relevantPathsAI": [
-        "D.4"
+        "C.3",
+        "D.4",
+        "D.4.a"
       ],
-      "rationaleAI": "Addresses the world's food supply, food safety, and genetically modified food relevant to food supply management (D.4)."
+      "rationaleAI": "Feeding nine billion addresses plant uses (C.3), food supply management (D.4), and developing country difficulties (D.4.a)."
     },
     {
       "vsiTitle": "Nutrition",
@@ -68,42 +78,47 @@
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "Analyzes nutritional needs, undernutrition, and dietary health relevant to food supply challenges in developing countries (D.4.a)."
+      "rationaleAI": "Nutritional science addresses food supply management (D.4)."
     },
     {
       "vsiTitle": "Sustainability",
       "vsiAuthor": "Saleem H. Ali",
       "relevantPathsAI": [
+        "B.1",
+        "D",
         "D.1",
+        "D.2",
         "D.3"
       ],
-      "rationaleAI": "Focuses on sustainable management of natural resources, energy flows, and human impact on environmental systems (D.1, D.3)."
+      "rationaleAI": "Sustainable production addresses environment modification (B.1), conservation scope (D.1), resource types (D.2), and management (D.3)."
     },
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
       "relevantPathsAI": [
+        "D",
         "D.1"
       ],
-      "rationaleAI": "Provides the ecological context for understanding human impacts on ecosystems and the science underlying conservation management (D.1)."
+      "rationaleAI": "Ecology informing policy addresses conservation management (D.1)."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
       "relevantPathsAI": [
+        "C.3",
         "D.2",
         "D.3"
       ],
-      "rationaleAI": "Addresses forest resources including timber harvest, deforestation, and reforestation as major natural resources under human management (D.2, D.3)."
+      "rationaleAI": "Forest services address plant uses (C.3), natural resources (D.2), and management (D.3)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
-        "C.2",
-        "C.4"
+        "B.2",
+        "B.3"
       ],
-      "rationaleAI": "Explains the genetics of breeding, artificial selection, and genetic modification relevant to plant and animal cultivation (C.2, C.4)."
+      "rationaleAI": "Genetic variation addresses environmental influence on species (B.2) and genetic endowment changes (B.3)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
@@ -111,61 +126,62 @@
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Illuminates human cultural uniqueness including language, social organization, and cultural adaptations that distinguish humans from other species (A.3)."
+      "rationaleAI": "Culture as distinctively human addresses behavioral capacity as basis of human culture (A.3)."
     },
     {
       "vsiTitle": "Environmental economics",
       "vsiAuthor": "Stephen Smith",
       "relevantPathsAI": [
+        "D",
         "D.3"
       ],
-      "rationaleAI": "Applies economic valuation to natural resource management and pollution control, informing conservation policy (D.3)."
+      "rationaleAI": "Environmental policy economics addresses resource management (D.3)."
     },
     {
       "vsiTitle": "Environmental Law",
       "vsiAuthor": "Elizabeth Fisher",
       "relevantPathsAI": [
-        "D.1",
+        "D",
         "D.3"
       ],
-      "rationaleAI": "Outlines legal frameworks for environmental protection and conservation management of natural resources (D.1, D.3)."
+      "rationaleAI": "Environmental regulatory frameworks address resource management (D.3)."
     },
     {
       "vsiTitle": "Garden History",
       "vsiAuthor": "Gordon Campbell",
       "relevantPathsAI": [
-        "C.6",
-        "C.3"
+        "C.6.d"
       ],
-      "rationaleAI": "Traces botanical gardens, allotments, and the historical cultivation of plants relevant to botanical collections and plant use (C.6.d, C.3)."
+      "rationaleAI": "Botanical gardens address collections of living plants (C.6.d)."
     },
     {
       "vsiTitle": "Veterinary Science",
       "vsiAuthor": "James Yeates",
       "relevantPathsAI": [
         "C.4",
-        "C.6"
+        "C.5"
       ],
-      "rationaleAI": "Addresses the care and management of domesticated animals, relevant to animal cultivation and maintenance of animal collections (C.4, C.6)."
+      "rationaleAI": "Animal medicine relates to animal cultivation (C.4) and uses (C.5)."
     },
     {
       "vsiTitle": "Invasive Species",
       "vsiAuthor": "Julie Lockwood, Dustin J. Welbourne",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "D"
       ],
-      "rationaleAI": "Examines human-caused species introductions as a major form of environmental modification, from ballast water to deliberate release (B.1)."
+      "rationaleAI": "Invasive species impacts address environmental modification (B.1) and conservation (D)."
     },
     {
       "vsiTitle": "Animal rights",
       "vsiAuthor": "David DeGrazia",
       "relevantPathsAI": [
-        "C.4",
         "C.5",
-        "C.6"
+        "C.6.b"
       ],
-      "rationaleAI": "Addresses ethical considerations in human utilization of animals, relevant to domestication, zoos, and animal welfare (C.4, C.5, C.6)."
+      "rationaleAI": "Animal ethics addresses uses of animals (C.5) and zoological gardens (C.6.b)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

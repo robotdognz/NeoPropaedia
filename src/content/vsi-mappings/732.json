@@ -5,52 +5,49 @@
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "B",
-        "C"
+        "C.1",
+        "C.2",
+        "D.1"
       ],
-      "rationaleAI": "Traces the historical rise of manufacturing (B) and fabrication industries (C), explaining how textiles, steel, and chemicals became the backbone of industrial economies."
+      "rationaleAI": "Textile innovations by Hargreaves, Crompton, and Cartwright address the textile industry (C.1), iron and steel production by Darby addresses the steel industry (C.2), and chemical innovations connect to the chemical industry (D.1)."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
       "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "C.6"
+        "A",
+        "I"
       ],
-      "rationaleAI": "Engineering principles underpin aerospace (B.1), automotive (B.2), and electronics (C.6) industries, connecting design theory to industrial production."
+      "rationaleAI": "Engineering covering infrastructure and manufacturing connects to principles of production organization (A) and industrial research and development (I)."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
       "relevantPathsAI": [
-        "D.1",
-        "D.5",
-        "D.6",
-        "D.8"
+        "D.1"
       ],
-      "rationaleAI": "The chemical industry (D.1) and processing sectors—plastics (D.5), rubber (D.6), dyes and pigments (D.8)—rely on the reactions and principles this volume introduces."
+      "rationaleAI": "Industrial chemistry applications including fuels, power generation, and materials for clothing directly address the chemical industry (D.1)."
     },
     {
       "vsiTitle": "Organic Chemistry",
       "vsiAuthor": "Graham Patrick",
       "relevantPathsAI": [
+        "D.1",
         "D.2",
+        "D.4",
         "D.5",
-        "D.6",
         "D.9"
       ],
-      "rationaleAI": "Organic chemistry drives the petroleum (D.2), plastics (D.5), rubber (D.6), and man-made fibre (D.9) processing industries."
+      "rationaleAI": "Carbon compound applications in pharmaceuticals, polymers, petrochemicals, and nanotechnology address the chemical industry (D.1), petroleum industry (D.2), pharmaceuticals industry (D.4), plastics industry (D.5), and man-made fibre industry (D.9)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
       "relevantPathsAI": [
         "C.2",
-        "C.1",
         "D.5"
       ],
-      "rationaleAI": "Materials science connects the steel industry (C.2), textile industry (C.1), and plastics (D.5), explaining how molecular structure determines industrial performance."
+      "rationaleAI": "Materials science covering metals, ceramics, and polymers with fabrication processes connects to the steel industry (C.2) and the plastics industry (D.5)."
     },
     {
       "vsiTitle": "Drugs",
@@ -58,58 +55,55 @@
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "A core text on D.4 (the pharmaceuticals industry), tracing the pipeline from drug discovery and development through manufacturing and regulation."
+      "rationaleAI": "Pharmacology covering medicinal advances in treating infections, heart disease, cancer, and mental illness directly addresses the pharmaceuticals industry (D.4)."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
-      "relevantPathsAI": [],
-      "rationaleAI": "Industrial research and development (I) drives competitive advantage across manufacturing, and this volume examines how innovation processes unfold in practice."
+      "relevantPathsAI": [
+        "I"
+      ],
+      "rationaleAI": "Innovation driving economic development through business strategy and technological change directly addresses industrial research and development (I)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "B",
-        "D"
+        "A"
       ],
-      "rationaleAI": "Economic forces—trade, labor costs, capital flows—shaped the evolution of manufacturing (B) and processing industries (D) across historical periods."
+      "rationaleAI": "Global economic development covering technological change and institutional frameworks relates to principles of organization of work and production (A)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
-        "B",
-        "F"
+        "A"
       ],
-      "rationaleAI": "Manufacturing (B) and service industries (F) are organized within capitalist market structures, and this volume explains how capital, labor, and competition interact."
+      "rationaleAI": "Capitalism covering market forces, production, trade, and industrial development relates to principles of organization of work and production (A)."
     },
     {
       "vsiTitle": "Fashion",
       "vsiAuthor": "Rebecca Arnold",
       "relevantPathsAI": [
-        "B.3",
-        "C.1"
+        "B.3"
       ],
-      "rationaleAI": "The clothing and footwear industry (B.3) and textile industry (C.1) span the journey from design through production, where aesthetics meets industrial process."
+      "rationaleAI": "Fashion industry spanning design, manufacturing, and retail directly addresses the clothing and footwear industry (B.3)."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
       "relevantPathsAI": [
-        "C.8",
-        "D.3"
+        "C.8"
       ],
-      "rationaleAI": "The lumber industry (C.8) and paper industry (D.3) depend on forest resources, linking natural resource management to industrial output."
+      "rationaleAI": "Timber production and forestry management connect to the lumber industry (C.8)."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
       "relevantPathsAI": [
-        "D.4",
-        "D.11"
+        "D.4"
       ],
-      "rationaleAI": "Biotechnology and synthetic biology are transforming the pharmaceuticals industry (D.4) and cosmetics and personal care industry (D.11)."
+      "rationaleAI": "Biochemistry covering biomolecules, enzymatic processes, and intersections with biotechnology connects to the pharmaceuticals industry (D.4)."
     },
     {
       "vsiTitle": "Marketing",
@@ -117,17 +111,15 @@
       "relevantPathsAI": [
         "H"
       ],
-      "rationaleAI": "Merchandising and marketing of consumer goods (H) connects industrial production to the consumers who purchase the output."
+      "rationaleAI": "Marketing covering market analysis, customer needs, and competitive advantage relates to merchandising and marketing of consumer goods (H)."
     },
     {
       "vsiTitle": "Environmental economics",
       "vsiAuthor": "Stephen Smith",
       "relevantPathsAI": [
-        "D.1",
-        "D.2",
-        "D.7"
+        "D.1"
       ],
-      "rationaleAI": "Environmental regulation shapes the chemical (D.1), petroleum (D.2), and surface-coating (D.7) processing industries, imposing costs and driving cleaner technologies."
+      "rationaleAI": "Environmental policy including pollution control and carbon taxes affects the chemical industry's regulatory environment (D.1)."
     },
     {
       "vsiTitle": "Surveillance",
@@ -135,7 +127,7 @@
       "relevantPathsAI": [
         "F.5"
       ],
-      "rationaleAI": "Security and protection systems (F.5) represent a growing segment of the service industries, driven by technological advances in monitoring."
+      "rationaleAI": "Surveillance systems spanning business, governance, and security connect to security and protection systems (F.5)."
     },
     {
       "vsiTitle": "Energy Systems",
@@ -143,8 +135,9 @@
       "relevantPathsAI": [
         "G"
       ],
-      "rationaleAI": "Utilities industries (G), including electric power generation and distribution, supply the energy on which all major industries depend."
+      "rationaleAI": "Energy conversion and distribution for cooking, heating, transport, and electricity generation directly addresses the utilities industries (G)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

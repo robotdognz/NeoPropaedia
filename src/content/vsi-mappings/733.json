@@ -5,40 +5,48 @@
       "vsiTitle": "Structural engineering",
       "vsiAuthor": "David Blockley",
       "relevantPathsAI": [
-        "A.7",
+        "A",
         "A.6",
+        "A.7",
+        "A.7.b",
+        "B",
         "B.3"
       ],
-      "rationaleAI": "Explains how loads flow through beams, frames, and shells in A.7.b (structural systems), with detail on wood, masonry, concrete, and steel construction in A.6 and bridge design in B.3."
+      "rationaleAI": "Structural engineering covering beams, bridges, concrete, and timber structures directly addresses construction techniques (A.6), structural systems and building components (A.7, A.7.b), and civil engineering works including bridges (B.3)."
     },
     {
       "vsiTitle": "Civil engineering",
       "vsiAuthor": "David Muir Wood",
       "relevantPathsAI": [
+        "A",
+        "B",
         "B.1",
         "B.3",
         "B.4",
-        "B.5",
         "B.6"
       ],
-      "rationaleAI": "The definitive introduction to B (civil engineering works), addressing the design and construction of dams (B.1), bridges (B.3), tunnels (B.4), harbour works (B.5), and lighthouses (B.6)."
+      "rationaleAI": "Civil engineering covering bridges, tunnels, buildings, cathedrals, and lighthouses addresses general building construction (A), dams (B.1), bridges (B.3), underground construction (B.4), and lighthouses (B.6)."
     },
     {
       "vsiTitle": "Architecture",
       "vsiAuthor": "Andrew Ballantyne",
       "relevantPathsAI": [
-        "A.1"
+        "A",
+        "A.7"
       ],
-      "rationaleAI": "Explores how architectural vision translates into buildable form, directly relevant to A.1 (preconstruction planning and design) and the interplay between aesthetics and construction technology."
+      "rationaleAI": "Architecture spanning from ancient Egypt through modernism covering form, function, and cultural meaning relates to general building construction (A) and building components (A.7)."
     },
     {
       "vsiTitle": "Modern architecture",
       "vsiAuthor": "Adam Sharr",
       "relevantPathsAI": [
         "A.3",
-        "A.6.c"
+        "A.3.g",
+        "A.3.h",
+        "A.3.i",
+        "A.6.d"
       ],
-      "rationaleAI": "Traces how reinforced and prestressed concrete (A.3.i) and steel-frame construction (A.6.c-d) enabled the radical forms of twentieth-century buildings."
+      "rationaleAI": "Modern architectural use of steel, reinforced concrete, air-conditioning, and lighting directly addresses building materials including metals (A.3.g), concrete (A.3.i), steel construction (A.6.d), and glass (A.3.h)."
     },
     {
       "vsiTitle": "Materials",
@@ -47,23 +55,23 @@
         "A.3",
         "A.4"
       ],
-      "rationaleAI": "Provides the materials-science foundation for A.3 (building materials: cement, ceramics, glass, metals, concrete, plastics) and A.4 (testing of building materials)."
+      "rationaleAI": "Materials science covering metals, ceramics, and polymers with cement and sand as exemplars directly addresses building materials (A.3) and testing of building materials (A.4)."
     },
     {
       "vsiTitle": "City Planning",
       "vsiAuthor": "Carl Abbott",
       "relevantPathsAI": [
-        "A.1"
+        "A"
       ],
-      "rationaleAI": "Addresses how buildings fit into larger urban systems, essential for understanding A.1 (preconstruction planning and design programming) and infrastructure integration."
+      "rationaleAI": "Urban planning covering metropolitan growth, infrastructure design, and resilience to natural disasters relates to general building construction and preconstruction planning (A)."
     },
     {
       "vsiTitle": "Landscape architecture",
       "vsiAuthor": "Ian Thompson",
       "relevantPathsAI": [
-        "A.1"
+        "B.5"
       ],
-      "rationaleAI": "Examines site design and the integration of buildings with surrounding landscapes, directly relevant to A.1 (preconstruction planning)."
+      "rationaleAI": "Landscape architecture encompassing infrastructure design including motorways, dams, and flood defenses connects to harbour and hydraulic works (B.5)."
     },
     {
       "vsiTitle": "Sound",
@@ -71,16 +79,16 @@
       "relevantPathsAI": [
         "A.8"
       ],
-      "rationaleAI": "Essential for understanding A.8 (acoustics and sound-control techniques), explaining how sound behaves in enclosed spaces and how buildings manage noise."
+      "rationaleAI": "Physics of sound including acoustic environments and engineering approaches to noise reduction directly addresses acoustics and sound-control techniques (A.8)."
     },
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
       "relevantPathsAI": [
-        "A.7",
-        "A.3"
+        "A.3.e",
+        "A.7.a"
       ],
-      "rationaleAI": "Geological conditions determine foundation requirements (A.7.a) and the suitability of stone as a building material (A.3.e), making this a key reference for site assessment."
+      "rationaleAI": "Geology covering Earth's structure and resource discovery including stone and building materials connects to stone as a building material (A.3.e) and foundations and footings (A.7.a)."
     },
     {
       "vsiTitle": "Navigation",
@@ -94,17 +102,21 @@
       "vsiTitle": "British Architecture",
       "vsiAuthor": "Dana Arnold",
       "relevantPathsAI": [
-        "A.6",
-        "A.7"
+        "A"
       ],
-      "rationaleAI": "Traces the evolution of construction techniques (A.6) and building components (A.7) across centuries of British architectural development, from medieval timber to Georgian masonry."
+      "rationaleAI": "British architecture from medieval times to present covering domestic architecture and building practices relates to general building construction (A)."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "relevantPathsAI": [],
-      "rationaleAI": "A broad introduction to the engineering principles that underpin both A (general building construction) and B (civil engineering works), connecting theory to practice."
+      "relevantPathsAI": [
+        "A",
+        "A.5",
+        "B"
+      ],
+      "rationaleAI": "Engineering covering infrastructure including buildings, roads, and railways addresses general building construction (A), construction machinery (A.5), and civil engineering works (B)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

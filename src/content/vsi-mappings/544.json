@@ -5,310 +5,391 @@
       "vsiTitle": "International Relations",
       "vsiAuthor": "Paul Wilkinson, Christian Reus-Smit",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "C"
       ],
-      "rationaleAI": "Directly addresses the politics of international relations including state sovereignty, international institutions, and political authority (A)."
+      "rationaleAI": "International relations examining political authority at the global level, state sovereignty, and transnational dynamics addresses the politics of international relations (A). Diplomatic history and global governance connect to foreign policy and diplomacy (C)."
     },
     {
       "vsiTitle": "The United Nations",
       "vsiAuthor": "Jussi M. Hanhimäki",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "B",
+        "B.1",
+        "C.2",
+        "C.3"
       ],
-      "rationaleAI": "Directly addresses the United Nations as an international organization for peacekeeping and collective security (A.2)."
+      "rationaleAI": "The UN system covering the Security Council, General Assembly, and specialized agencies is a primary international organization (A.2). Peacekeeping roles address collective security through nonaggression frameworks (B.1). UN roles in dispute resolution address diplomacy in negotiation (C.2), and socio-economic development connects to foreign aid (C.3)."
     },
     {
       "vsiTitle": "International law",
       "vsiAuthor": "Vaughan Lowe",
       "relevantPathsAI": [
-        "E.2"
+        "A.2",
+        "B",
+        "B.1",
+        "C.2",
+        "E.2.e"
       ],
-      "rationaleAI": "The legal framework governing treaties, sovereignty, and international law relating to wartime connects to outline B and E.2.e."
+      "rationaleAI": "International law governing relations between states and organizations addresses international organizations (A.2). Treaty law including the Vienna Convention directly covers international treaties (B). Sovereignty and collective security relate to nonaggression treaties (B.1). Dispute resolution through the ICJ connects to arbitration and mediation (C.2). Treatment of armed conflict relates to international law during wartime (E.2.e)."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
-        "C.2"
+        "C",
+        "C.1",
+        "C.2",
+        "B.2"
       ],
-      "rationaleAI": "Directly addresses diplomacy, negotiation of international disputes, and public international conferences (C.2)."
+      "rationaleAI": "History and practice of diplomacy as management of relations between nation-states directly addresses foreign policy and diplomacy (C). Negotiation as a universal mechanism covers diplomatic negotiation of international disputes (C.2). The Treaty of Versailles and wartime summitry relate to treaties terminating wars (B.2)."
     },
     {
       "vsiTitle": "Peace",
       "vsiAuthor": "Oliver P. Richmond",
       "relevantPathsAI": [
         "B.1",
-        "C.2"
+        "C.2",
+        "E"
       ],
-      "rationaleAI": "Peacekeeping, collective security, just war theory, and conflict resolution are central to B.1 and C.2."
+      "rationaleAI": "Peacemaking, peacebuilding, and conflict resolution frameworks address collective security (B.1). UN Security Council peacekeeping operations relate to diplomacy in negotiating disputes (C.2). Just war theory and structural conditions for violence connect to war among states (E)."
     },
     {
       "vsiTitle": "International security",
       "vsiAuthor": "Christopher S. Browning",
       "relevantPathsAI": [
-        "B.1",
-        "B.3"
+        "A.2",
+        "B.3",
+        "D",
+        "E",
+        "E.1"
       ],
-      "rationaleAI": "Collective security, arms limitation, NATO, and the prevention of war between states are central to B.1 and B.3."
+      "rationaleAI": "Roles of NATO, EU, and UN address international organizations (A.2). Nuclear weapons proliferation relates to arms limitation (B.3). State versus human security frameworks and the politics of fear connect to intelligence activities (D). War, peace, and terrorism address war among states (E) and degrees of war (E.1)."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
-        "B.3"
+        "B.3",
+        "E",
+        "E.1",
+        "E.2.a"
       ],
-      "rationaleAI": "Nuclear weapons, deterrence, and arms limitation treaties are central to B.3."
+      "rationaleAI": "Arms control agreements and the Strategic Defense Initiative directly address arms limitation and disarmament treaties (B.3). Nuclear deterrence theory connects to war among states (E) including limited and total war (E.1) and military strategy (E.2.a)."
     },
     {
       "vsiTitle": "The Cold War",
       "vsiAuthor": "Robert J. McMahon",
       "relevantPathsAI": [
-        "B.3"
+        "A",
+        "B.1",
+        "B.3",
+        "E",
+        "E.1"
       ],
-      "rationaleAI": "The Cold War as a major period of international relations -- arms treaties, alliances, and geopolitics -- is central to outline A and B.3."
+      "rationaleAI": "Superpower rivalry between the US and Soviet Union addresses the politics of international relations (A). NATO formation relates to collective security (B.1). Nuclear deterrence connects to arms limitation (B.3). Proxy wars and ideological competition address war among states (E) and degrees of war (E.1)."
     },
     {
       "vsiTitle": "Geopolitics",
       "vsiAuthor": "Klaus Dodds",
       "relevantPathsAI": [
-        "B.4"
+        "A",
+        "C.1",
+        "D"
       ],
-      "rationaleAI": "Geopolitical dimensions of international relations including territorial disputes and regional power dynamics connect to B.4."
+      "rationaleAI": "Geographic factors shaping political power and international relations address the politics of international relations (A). Strategic analysis relating to foreign policy aims addresses compatibility with national interests (C.1). Digital surveillance and NSA activities connect to intelligence and counterintelligence (D)."
     },
     {
       "vsiTitle": "Borders",
       "vsiAuthor": "Alexander C. Diener, Joshua Hagen",
       "relevantPathsAI": [
-        "B.4"
+        "A.2",
+        "B.4",
+        "B.5"
       ],
-      "rationaleAI": "Territorial treaties, border disputes, and the geopolitical significance of boundaries connect to B.4."
+      "rationaleAI": "Roles of the EU, NATO, and NAFTA in border matters address international organizations (A.2). Territorial disputes, border settlements, and access rights directly address territorial treaties (B.4). Neo-liberal economics and transnational communities connect to economic and commercial treaties (B.5)."
     },
     {
       "vsiTitle": "Modern War",
       "vsiAuthor": "Richard English",
       "relevantPathsAI": [
+        "E",
         "E.1",
-        "E.2"
+        "E.2",
+        "E.2.a",
+        "E.2.b"
       ],
-      "rationaleAI": "Modern warfare -- limited war, total war, guerrilla warfare, and psychological warfare -- connects to E.1 and E.2.d."
+      "rationaleAI": "Nature, causes, conduct, and consequences of warfare directly address war among states (E). Chemical warfare, nuclear proliferation, and guerrilla tactics cover degrees and kinds of war (E.1). Military strategy and state formation address strategy (E.2.a) and tactics (E.2.b)."
     },
     {
       "vsiTitle": "Civil Wars",
       "vsiAuthor": "Monica Duffy Toft",
       "relevantPathsAI": [
+        "E",
         "E.1"
       ],
-      "rationaleAI": "Civil wars and insurrections, including their causes, consequences, and transnational dimensions, connect to E.1."
+      "rationaleAI": "Intrastate armed conflicts covering causes, trajectories, and consequences directly address war among states (E). Civil wars and insurrections as specific conflict types address degrees and kinds of war (E.1)."
     },
     {
       "vsiTitle": "Military Strategy",
       "vsiAuthor": "Antulio Joseph Echevarria",
       "relevantPathsAI": [
-        "E.2"
+        "E.2",
+        "E.2.a",
+        "E.2.b"
       ],
-      "rationaleAI": "Directly addresses military strategy as an element of the conduct of war (E.2.a)."
+      "rationaleAI": "Military strategy across historical periods covering annihilation, deterrence, coercion, and cyber warfare directly addresses the conduct of war (E.2), military strategy (E.2.a), and military tactics (E.2.b)."
     },
     {
       "vsiTitle": "Clausewitz",
       "vsiAuthor": "Michael Howard",
       "relevantPathsAI": [
-        "E.2"
+        "E.2",
+        "E.2.a"
       ],
-      "rationaleAI": "Clausewitz's foundational theory of war, strategy, and the relationship between war and politics is central to E.2.a."
+      "rationaleAI": "Clausewitz's foundational theory of war as continuation of politics, friction in operations, and the distinction between absolute and limited war directly addresses the conduct of war (E.2) and military strategy (E.2.a)."
     },
     {
       "vsiTitle": "War and Technology",
       "vsiAuthor": "Alex Roland",
       "relevantPathsAI": [
+        "E",
+        "E.2",
         "E.3"
       ],
-      "rationaleAI": "The technological development of weapons and military forces throughout history connects to E.3."
+      "rationaleAI": "The dialectical relationship between military conflict and technological innovation addresses war among states (E). Co-evolution of weapons systems and tactics covers the conduct of war (E.2). Historical development of military capabilities connects to armed forces and military organizations (E.3)."
     },
     {
       "vsiTitle": "War & Religion",
       "vsiAuthor": "Jolyon Mitchell, Joshua Rey",
       "relevantPathsAI": [
-        "E.1"
+        "E",
+        "E.1",
+        "E.2.d"
       ],
-      "rationaleAI": "Religious wars as a kind of war and just war theory are relevant to E.1."
+      "rationaleAI": "Religious motivations for armed conflict including the Crusades address war among states (E) and religious wars as a kind of war (E.1). Just war theory and ethical frameworks to moderate violence connect to effects of psychological warfare on troops and civilians (E.2.d)."
     },
     {
       "vsiTitle": "Ancient warfare",
       "vsiAuthor": "Harry Sidebottom",
       "relevantPathsAI": [
-        "E.2",
-        "E.3"
+        "E",
+        "E.2.a",
+        "E.2.b",
+        "E.3.b"
       ],
-      "rationaleAI": "The historical development of organized military forces and ancient military strategy and tactics connect to E.2 and E.3.b."
+      "rationaleAI": "Ancient military philosophy, strategy, and tactics in Greek and Roman civilizations address military strategy (E.2.a) and tactics (E.2.b). Discipline and the Western Way of War connect to historical development of organized military forces (E.3.b)."
     },
     {
       "vsiTitle": "The First World War",
       "vsiAuthor": "Michael Howard",
       "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "E.2.a",
+        "E.2.f",
         "B.2"
       ],
-      "rationaleAI": "A worldwide war involving military strategy, logistics, propaganda, and its aftermath in treaties is central to outline E and B.2."
+      "rationaleAI": "WWI covering causes, campaigns, trench warfare, and surrender addresses war among states (E) as a worldwide war (E.1). Military strategy and propaganda cover conduct of war (E.2, E.2.a). Economic consequences address management of military expenditures (E.2.f). The Paris Peace Settlement relates to treaties terminating wars (B.2)."
     },
     {
       "vsiTitle": "World War II",
       "vsiAuthor": "Gerhard L. Weinberg",
-      "relevantPathsAI": [],
-      "rationaleAI": "A total world war involving military organization and strategy across ground, naval, and air forces is central to outline E."
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "E.2.a",
+        "E.2.c"
+      ],
+      "rationaleAI": "Global military conflict from 1939-1945 addresses war among states as a worldwide war (E, E.1). Western Front campaigns, Operation Barbarossa, and Pacific operations cover military strategy (E.2.a). Home front mobilization addresses military logistics (E.2.c)."
     },
     {
       "vsiTitle": "The Treaty of Versailles",
       "vsiAuthor": "Michael S. Neiberg",
       "relevantPathsAI": [
-        "B.2"
+        "B.2",
+        "C.2"
       ],
-      "rationaleAI": "A treaty terminating a major war and its consequences for international relations connect to B.2."
+      "rationaleAI": "The 1919 Treaty of Versailles ending World War I directly addresses treaties terminating wars (B.2). The roles of key statesmen and competing national interests connect to diplomacy in negotiation of international disputes (C.2)."
     },
     {
       "vsiTitle": "Aerial Warfare",
       "vsiAuthor": "Frank Ledwidge",
       "relevantPathsAI": [
-        "E.3.c"
+        "E.2",
+        "E.3.c.iii"
       ],
-      "rationaleAI": "Air forces as a branch of the armed forces connect to E.3.c.iii."
+      "rationaleAI": "Military history of aerial warfare covering air power development addresses the conduct of war (E.2). Air forces as a branch of the armed forces directly relates to establishment and maintenance of air forces (E.3.c.iii)."
     },
     {
       "vsiTitle": "American Naval History",
       "vsiAuthor": "Craig L. Symonds",
       "relevantPathsAI": [
-        "E.3.c"
+        "E.3",
+        "E.3.b",
+        "E.3.c.ii"
       ],
-      "rationaleAI": "Naval and amphibious forces as a branch of the armed forces connect to E.3.c.ii."
+      "rationaleAI": "US Navy history from the Continental Navy through modern status addresses armed forces and military organizations (E.3), historical development of organized military forces (E.3.b), and naval and amphibious forces (E.3.c.ii)."
     },
     {
       "vsiTitle": "American Military History",
       "vsiAuthor": "Joseph T. Glatthaar",
       "relevantPathsAI": [
-        "E.3"
+        "E.3",
+        "E.3.a",
+        "E.3.b"
       ],
-      "rationaleAI": "The historical development of organized military forces -- professional and volunteer soldiers -- connects to E.3.a and E.3.b."
+      "rationaleAI": "Four hundred years of American military development covering professional versus citizen soldiers addresses types of soldiers (E.3.a) and historical development of organized military forces (E.3.b)."
     },
     {
       "vsiTitle": "American Foreign Relations",
       "vsiAuthor": "Andrew Preston",
       "relevantPathsAI": [
-        "C.1"
+        "C",
+        "C.1",
+        "C.3"
       ],
-      "rationaleAI": "Foreign policy aims and compatibility with national and humanitarian interests connect to C.1."
+      "rationaleAI": "US foreign policy from the Revolution through the War on Terror addresses foreign policy and diplomacy (C), aims and compatibility with national interests (C.1). Military, economic, and cultural dimensions of influence connect to foreign aid and government-sponsored organizations (C.3)."
     },
     {
       "vsiTitle": "Humanitarianism",
       "vsiAuthor": "Julia F Irwin",
       "relevantPathsAI": [
+        "A.2",
         "C.3",
-        "E.2"
+        "E.2.e"
       ],
-      "rationaleAI": "International humanitarian law, foreign aid, and humanitarian intervention connect to C.3 and E.2.e."
+      "rationaleAI": "Humanitarian organizations including the Red Cross address international organizations (A.2). Development-oriented humanitarian work connects to foreign aid (C.3). International humanitarian law and the treatment of persons during wartime address rules of warfare (E.2.e)."
     },
     {
       "vsiTitle": "Military Justice",
       "vsiAuthor": "Eugene R. Fidell",
       "relevantPathsAI": [
-        "E.2"
+        "E.2.e",
+        "E.3.c.iv"
       ],
-      "rationaleAI": "International law relating to military discipline and treatment of persons during wartime connects to E.2.e."
+      "rationaleAI": "Legal systems governing military personnel including courts-martial and military tribunals address international law relating to treatment of persons during wartime (E.2.e). Military justice as a self-policing system connects to auxiliary branches including legal corps (E.3.c.iv)."
     },
     {
       "vsiTitle": "The European Union",
       "vsiAuthor": "John Pinder, Simon Usherwood",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.2",
+        "B.5"
       ],
-      "rationaleAI": "European federalism as a transnational political movement is relevant to A.1."
+      "rationaleAI": "The EU as a transnational political institution with security policy addresses transnational movements like European federalism (A.1). The EU as an international organization (A.2). The single market and economic integration relate to economic and commercial treaties (B.5)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "E.1"
       ],
-      "rationaleAI": "Nationalism as a transnational political movement driving Pan-national ideologies connects to A.1."
+      "rationaleAI": "Nationalism as a political ideology of national self-determination addresses transnational political movements (A.1). Nationalism's role in World Wars I and II connects to national and worldwide wars (E.1)."
     },
     {
       "vsiTitle": "The Palestinian–Israeli Conflict",
       "vsiAuthor": "Martin Bunton",
       "relevantPathsAI": [
         "B.4",
+        "C.2",
+        "E",
         "E.1"
       ],
-      "rationaleAI": "A regional conflict involving territorial disputes, diplomacy, and military force connects to B.4 and E.1."
+      "rationaleAI": "A territorial conflict over geographic territory addresses territorial treaties and border disputes (B.4). UN Partition Plan and peace efforts address diplomacy in negotiation (C.2). Ongoing wars address war among states (E) and regional wars (E.1)."
     },
     {
       "vsiTitle": "The Napoleonic Wars",
       "vsiAuthor": "Mike Rapport",
       "relevantPathsAI": [
-        "E.2",
-        "B.2"
+        "E",
+        "E.1",
+        "E.2.a",
+        "E.2.b"
       ],
-      "rationaleAI": "A major regional war involving military strategy, tactics, logistics, and treaty settlements connects to E.2 and B.2."
+      "rationaleAI": "The Napoleonic Wars covering military tactics, strategies, and major campaigns address war among states (E) and regional wars (E.1). Military strategy (E.2.a) and tactics and weaponry (E.2.b) of the era are directly covered."
     },
     {
       "vsiTitle": "The Spanish Civil War",
       "vsiAuthor": "Helen Graham",
       "relevantPathsAI": [
-        "E.1"
+        "E",
+        "E.1",
+        "E.2.d"
       ],
-      "rationaleAI": "A civil war with significant international dimensions and foreign intervention is relevant to E.1."
+      "rationaleAI": "The Spanish Civil War as military conflict and international crisis addresses war among states (E) and civil wars and insurrections (E.1). Propaganda campaigns and civilian impact address psychological warfare effects (E.2.d)."
     },
     {
       "vsiTitle": "The Crusades",
       "vsiAuthor": "Christopher Tyerman",
       "relevantPathsAI": [
+        "E",
         "E.1"
       ],
-      "rationaleAI": "Religious wars as a major historical type of armed conflict connect to E.1."
+      "rationaleAI": "The Crusades as military-religious campaigns spanning over 200 years address war among states (E) and religious wars as a specific kind of war (E.1)."
     },
     {
       "vsiTitle": "The U.S. Civil War",
       "vsiAuthor": "Louis P. Masur",
       "relevantPathsAI": [
-        "E.1",
-        "E.2"
+        "E",
+        "E.1"
       ],
-      "rationaleAI": "A major civil war involving military strategy, organization, and the conduct of war connects to E.1 and E.2."
+      "rationaleAI": "The American Civil War covering secession, four years of combat, and national transformation directly addresses war among states (E) and civil wars and insurrections as a specific kind of war (E.1)."
     },
     {
       "vsiTitle": "Concentration Camps",
       "vsiAuthor": "Dan Stone",
       "relevantPathsAI": [
-        "E.2"
+        "E.2.e"
       ],
-      "rationaleAI": "Crimes against humanity are relevant to the attempt to punish war crimes and crimes against peace (E.2.e)."
+      "rationaleAI": "Concentration camps as institutions of mass incarceration under the Third Reich, Soviet Gulag, and others address international law relating to the treatment of persons during wartime (E.2.e) and crimes against humanity."
     },
     {
       "vsiTitle": "Refugees",
       "vsiAuthor": "Gil Loescher",
-      "relevantPathsAI": [],
-      "rationaleAI": "Refugee crises resulting from wars and international conflicts are a recurring consequence throughout."
+      "relevantPathsAI": [
+        "A.2",
+        "C.3"
+      ],
+      "rationaleAI": "Refugee crises and the international community's responses through institutional capacity address international organizations (A.2). Humanitarian responses to forced migration connect to foreign aid and government-sponsored organizations (C.3)."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "E",
+        "E.1"
       ],
-      "rationaleAI": "National liberation movements and their impact on international relations and sovereignty connect to A.1."
+      "rationaleAI": "Transition from colonial empires to independent nation-states through anti-colonial activism addresses transnational political movements (A.1). Widespread violence and political instability relate to war among states (E) and national wars (E.1)."
     },
     {
       "vsiTitle": "The BRICS",
       "vsiAuthor": "Andrew F. Cooper",
       "relevantPathsAI": [
-        "A.2"
+        "A",
+        "A.2",
+        "B.5"
       ],
-      "rationaleAI": "Emerging powers and their role in contemporary international organizations and diplomacy connect to A.2."
+      "rationaleAI": "The BRICS grouping as a diplomatic forum challenging Western-dominated institutions addresses the politics of international relations (A) and international organizations including the IMF and World Bank (A.2). Reshaping international economic order connects to economic and commercial treaties (B.5)."
     },
     {
       "vsiTitle": "Terrorism",
       "vsiAuthor": "Charles Townshend",
       "relevantPathsAI": [
-        "E.1"
+        "E",
+        "E.1",
+        "E.2.d"
       ],
-      "rationaleAI": "Terrorism as a challenge to international peace and security connects to E.1."
+      "rationaleAI": "Terrorism encompassing revolutionary violence, nationalist movements, and religious extremism addresses war among states (E) and guerrilla warfare as a kind of war (E.1). Targeting of civilians and psychological aims connect to effects of psychological warfare (E.2.d)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

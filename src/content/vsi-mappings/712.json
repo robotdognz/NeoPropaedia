@@ -5,24 +5,28 @@
       "vsiTitle": "Work",
       "vsiAuthor": "Stephen Fineman",
       "relevantPathsAI": [
+        "A",
         "C.1"
       ],
-      "rationaleAI": "Directly addresses A (the organization of work), its social dimensions, and C.1 (effects of rationalization on workers)."
+      "rationaleAI": "Work as a social, economic, and psychological phenomenon covering capitalism, Weber's Protestant ethic, and the consequences of unemployment relates broadly to the organization of work (A) and the psychological and social aspects of rationalized work (C.1)."
     },
     {
       "vsiTitle": "Management",
       "vsiAuthor": "John Hendry",
-      "relevantPathsAI": [],
-      "rationaleAI": "Examines B (application of scientific methods to managerial functions) including Frederick Taylor's scientific management and modern operations research."
+      "relevantPathsAI": [
+        "B",
+        "B.1"
+      ],
+      "rationaleAI": "Management theory covering organizational behavior, motivation, job satisfaction, and leadership from Mayo through Porter addresses the application of scientific methods to managerial functions (B) and operations research applied to organized systems (B.1)."
     },
     {
       "vsiTitle": "Organizations",
       "vsiAuthor": "Mary Jo Hatch",
       "relevantPathsAI": [
-        "B.2",
-        "B.3"
+        "A",
+        "B"
       ],
-      "rationaleAI": "Addresses B.2 (systems engineering) and B.3 (systems-design techniques) including organizational design and information technology infrastructure."
+      "rationaleAI": "Interdisciplinary analysis of organizations from prehistory to contemporary forms covering contingency theory, management, competition, and supply chain dynamics addresses the organization of work (A) and scientific methods in management (B)."
     },
     {
       "vsiTitle": "Engineering",
@@ -30,7 +34,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Treats B.2 (systems engineering) and the utilization of scientific and technological knowledge in designing complex production systems."
+      "rationaleAI": "Engineering harnessing natural phenomena for infrastructure including water systems, buildings, and railways represents systems engineering utilizing scientific and technological knowledge (B.2)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
@@ -40,31 +44,34 @@
         "A.5",
         "A.6"
       ],
-      "rationaleAI": "Traces the transformation from cottage industry to factory production, encompassing A.4 (16th-18th century production changes), A.5 (mass production), and A.6 (mechanization of labour)."
+      "rationaleAI": "British industrialization covering steam power, textile machinery, and iron production demonstrates changes in production techniques from 16th-18th century (A.4), mass production by product (A.5), and the use of machines as labour replacements (A.6)."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
       "relevantPathsAI": [
-        "A.6"
+        "A.6",
+        "C.1"
       ],
-      "rationaleAI": "Directly relevant to A.6 (machines as replacements for labour) and C (relation between man and machine in industrial production)."
+      "rationaleAI": "Manufacturing and warehouse automation replacing human labor directly addresses machines as replacements for labour (A.6) and the effects of automation on mankind (C.1)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
       "relevantPathsAI": [
-        "A.6"
+        "A.6",
+        "C.1"
       ],
-      "rationaleAI": "Addresses how intelligent systems automate decision-making and production tasks, relevant to A.6 (machines as replacements for labour)."
+      "rationaleAI": "AI applications in everyday life and technological challenges of intelligent systems connect to machines as labour replacements (A.6) and the psychological and social aspects of automation (C.1)."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
       "relevantPathsAI": [
-        "B.1"
+        "A.5",
+        "A.6"
       ],
-      "rationaleAI": "Explores systematic approaches to improving production processes, relevant to B.1 (operations research) and continuous improvement methodologies."
+      "rationaleAI": "Innovation through business strategy and industrial production covering creative destruction, economies of scale, and disruptive technologies relates to mass production (A.5) and machines as labor replacements (A.6)."
     },
     {
       "vsiTitle": "Capitalism",
@@ -73,37 +80,40 @@
         "A.4",
         "A.5"
       ],
-      "rationaleAI": "Situates changes in production techniques (A.4) and mass production (A.5) within the broader capitalist economic framework and its logic of accumulation."
+      "rationaleAI": "Capitalism traced from 17th-century commerce through industrialization covers changes in production techniques from 16th-18th centuries (A.4) and mass production through industrial capitalism (A.5)."
     },
     {
       "vsiTitle": "Game theory",
       "vsiAuthor": "Ken Binmore",
       "relevantPathsAI": [
-        "B.3"
+        "B.3.b"
       ],
-      "rationaleAI": "Directly listed in B.3.b as a tool for systems-design: optimization theory and game theory."
+      "rationaleAI": "Game theory as a mathematical framework for strategic decision-making directly connects to game theory as a systems-design tool (B.3.b)."
     },
     {
       "vsiTitle": "Human Resource Management",
       "vsiAuthor": "Adrian Wilkinson",
       "relevantPathsAI": [
-        "C.1"
+        "A",
+        "B"
       ],
-      "rationaleAI": "Addresses A (organization of work) and C.1 (psychological and social dimensions of mass production and automation on workers)."
+      "rationaleAI": "HR management governing employer-employee relations, labor practices, and workforce strategy addresses the organization of work (A) and scientific methods applied to managerial functions (B)."
     },
     {
       "vsiTitle": "Leadership",
       "vsiAuthor": "Keith Grint",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores decision-making and organizational direction-setting, relevant to B (application of scientific methods to managerial functions)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Leadership theory covering decision-making, the relationship between leaders and followers, and management practice addresses the application of scientific methods to managerial functions (B)."
     },
     {
       "vsiTitle": "The History of Computing",
       "vsiAuthor": "Doron Swade",
       "relevantPathsAI": [
-        "B.3"
+        "A.6"
       ],
-      "rationaleAI": "Traces the computing technology that underpins operations research and systems-design tools, relevant to B.3."
+      "rationaleAI": "Evolution of computing from calculation aids through automatic electronic computation demonstrates the trajectory of machines as labor replacements (A.6)."
     },
     {
       "vsiTitle": "Prehistory",
@@ -111,7 +121,7 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Illuminates A.1 (organization of work in the prehistoric world) including early division of labour and craft specialization."
+      "rationaleAI": "Early human societies covering the invention of agriculture and development of cities relate to the organization of work in the prehistoric world (A.1) including initial communal organization and specialization."
     },
     {
       "vsiTitle": "Ancient Greece",
@@ -119,8 +129,9 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Illustrates A.2 (organization of work in the ancient world), from slave labour and artisan workshops to large-scale construction projects like the Parthenon."
+      "rationaleAI": "Greek city-state civilization with its political institutions and social hierarchies relates to the organization of work in the ancient world (A.2) including the effect of social classes on labour organization."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

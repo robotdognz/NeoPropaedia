@@ -4,81 +4,100 @@
     {
       "vsiTitle": "Philosophy",
       "vsiAuthor": "Edward Craig",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses the nature, scope, and methods of philosophy, the core subject of section A."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "B.1",
+        "B.3",
+        "B.4",
+        "B.6"
+      ],
+      "rationaleAI": "Philosophy addressing fundamental questions maps to diverse conceptions (A.1), methods (A.2), and divisions including metaphysics (B.1), epistemology (B.3), philosophy of mind (B.4), and ethics (B.6)."
     },
     {
       "vsiTitle": "Philosophical Method",
       "vsiAuthor": "Timothy Williamson",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.4",
+        "B.2.b"
       ],
-      "rationaleAI": "Section A.2 covers diverse views of the methods of philosophy."
+      "rationaleAI": "Methodology of philosophical inquiry maps to diverse views of methods (A.2), criteria of meaning and truth (A.4), and the relation of philosophy of nature to science (B.2.b)."
     },
     {
       "vsiTitle": "Metaphysics",
       "vsiAuthor": "Stephen Mumford",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.1.a",
+        "B.1.c"
       ],
-      "rationaleAI": "Section B.1 covers metaphysics including its history, nature, scope, and core problems."
+      "rationaleAI": "Core metaphysical problems including substance, causation, modality, and personal identity map to the nature and scope of metaphysics (B.1.a) and problems in metaphysics (B.1.c)."
     },
     {
       "vsiTitle": "Ethics",
       "vsiAuthor": "Simon Blackburn",
       "relevantPathsAI": [
-        "B.6"
+        "B.6",
+        "B.6.a",
+        "B.6.c"
       ],
-      "rationaleAI": "Section B.6 covers ethics including metaethics, normative ethics, and its relation to other disciplines."
+      "rationaleAI": "Major ethical frameworks map to types of ethics (B.6.a) and problems in ethics (B.6.c)."
     },
     {
       "vsiTitle": "Political philosophy",
       "vsiAuthor": "David Miller",
       "relevantPathsAI": [
-        "B.7"
+        "B.7",
+        "B.7.a",
+        "B.7.c"
       ],
-      "rationaleAI": "Section B.7 covers political philosophy including its nature, scope, relation to political science, and history."
+      "rationaleAI": "Authority, democracy, and social contract theory map to nature and scope (B.7.a) and history (B.7.c) of political philosophy."
     },
     {
       "vsiTitle": "Aesthetics",
       "vsiAuthor": "Bence Nanay",
       "relevantPathsAI": [
-        "B.8"
+        "B.8",
+        "B.8.a",
+        "B.8.c"
       ],
-      "rationaleAI": "Section B.8 covers aesthetics including its nature, scope, development, problems, and relation to other disciplines."
+      "rationaleAI": "Art, beauty, taste, and aesthetic experience map to the nature of aesthetics (B.8.a) and problems in aesthetics (B.8.c)."
     },
     {
       "vsiTitle": "Philosophy of science",
       "vsiAuthor": "Samir Okasha",
       "relevantPathsAI": [
         "B.2",
+        "B.2.b",
         "B.13"
       ],
-      "rationaleAI": "Section B.2 covers the philosophy of nature and B.13 references the philosophy of science."
+      "rationaleAI": "Scientific reasoning and demarcation map to philosophy of nature (B.2), its relation to science (B.2.b), and philosophy of science (B.13)."
     },
     {
       "vsiTitle": "Philosophy of Biology",
       "vsiAuthor": "Samir Okasha",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.e"
       ],
-      "rationaleAI": "Section B.2.e specifically lists the philosophy of biology as part of the philosophy of nature."
+      "rationaleAI": "Darwinian evolution, function, and species concepts map directly to philosophy of biology (B.2.e)."
     },
     {
       "vsiTitle": "Philosophy of Physics",
       "vsiAuthor": "David Wallace",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.d"
       ],
-      "rationaleAI": "Section B.2.d specifically lists the philosophy of physics as part of the philosophy of nature."
+      "rationaleAI": "Space and time, irreversibility, and quantum mechanics interpretation map directly to philosophy of physics (B.2.d)."
     },
     {
       "vsiTitle": "Philosophy of Religion",
       "vsiAuthor": "Tim Bayne",
       "relevantPathsAI": [
-        "B.14"
+        "B.14",
+        "B.1.b"
       ],
-      "rationaleAI": "Section B.14 references the philosophy of religion as a division of philosophy."
+      "rationaleAI": "Arguments about God's existence and faith-reason relations map to philosophy of religion (B.14) and metaphysics-theology relation (B.1.b)."
     },
     {
       "vsiTitle": "Philosophy of Law",
@@ -86,23 +105,27 @@
       "relevantPathsAI": [
         "B.15"
       ],
-      "rationaleAI": "Section B.15 references the philosophy of law as a division of philosophy."
+      "rationaleAI": "Legal systems, natural law, and positivism map to philosophy of law (B.15)."
     },
     {
       "vsiTitle": "Philosophy of Mind",
       "vsiAuthor": "Barbara Gail Montero",
       "relevantPathsAI": [
-        "B.4"
+        "B.4",
+        "B.4.a",
+        "B.4.c"
       ],
-      "rationaleAI": "Section B.4 covers the philosophy of mind including its history, nature, scope, and problems."
+      "rationaleAI": "Mind-body relationship, consciousness, and competing frameworks map to philosophy of mind (B.4.a) and its problems (B.4.c)."
     },
     {
       "vsiTitle": "Knowledge",
       "vsiAuthor": "Jennifer Nagel",
       "relevantPathsAI": [
-        "B.3"
+        "B.3",
+        "B.3.a",
+        "B.3.c"
       ],
-      "rationaleAI": "Section B.3 covers epistemology or theory of knowledge including its history, nature, scope, and problems."
+      "rationaleAI": "Knowledge, belief, and justification map to epistemology's nature (B.3.a) and problems (B.3.c)."
     },
     {
       "vsiTitle": "Meaning",
@@ -110,7 +133,7 @@
       "relevantPathsAI": [
         "B.9"
       ],
-      "rationaleAI": "Section B.9 covers the philosophy of language, and meaning is its central problem."
+      "rationaleAI": "Language meaning, reference, and speech acts map to philosophy of language (B.9)."
     },
     {
       "vsiTitle": "Logic",
@@ -118,32 +141,36 @@
       "relevantPathsAI": [
         "B.10"
       ],
-      "rationaleAI": "Section B.10 references the philosophy of logic as a division of philosophy."
+      "rationaleAI": "Propositional logic, predicate logic, and modal logic map to philosophy of logic (B.10)."
     },
     {
       "vsiTitle": "Consciousness",
       "vsiAuthor": "Susan Blackmore",
       "relevantPathsAI": [
-        "B.4"
+        "B.4",
+        "B.4.c"
       ],
-      "rationaleAI": "Consciousness is central to the philosophy of mind (B.4) and its relation to empirical sciences."
+      "rationaleAI": "The hard problem, neural correlates, and qualia map to problems in philosophy of mind (B.4.c)."
     },
     {
       "vsiTitle": "Free will",
       "vsiAuthor": "Thomas Pink",
       "relevantPathsAI": [
         "B.4.c",
+        "B.5.c",
         "B.6.c"
       ],
-      "rationaleAI": "Free will is a core problem in both philosophy of mind (B.4.c) and ethics (B.6.c)."
+      "rationaleAI": "Determinism, compatibilism, and moral responsibility span philosophy of mind (B.4.c), philosophical anthropology (B.5.c), and ethics (B.6.c)."
     },
     {
       "vsiTitle": "Reality",
       "vsiAuthor": "Jan Westerhoff",
       "relevantPathsAI": [
-        "B.1.c"
+        "B.1",
+        "B.1.c",
+        "B.3.c"
       ],
-      "rationaleAI": "Section B.1.c covers problems in metaphysics including questions about the nature of reality."
+      "rationaleAI": "Nature of reality maps to metaphysics (B.1) and its problems (B.1.c), and epistemological problems (B.3.c)."
     },
     {
       "vsiTitle": "Causation",
@@ -152,170 +179,172 @@
         "B.1.c",
         "B.2.c"
       ],
-      "rationaleAI": "Causation is a core problem in metaphysics (B.1.c) and the philosophy of nature (B.2.c)."
+      "rationaleAI": "Causation theories map to problems in metaphysics (B.1.c) and basic aspects of the natural order (B.2.c)."
     },
     {
       "vsiTitle": "Time",
       "vsiAuthor": "Jenann Ismael",
       "relevantPathsAI": [
         "B.1.c",
-        "B.2.c"
+        "B.2.c",
+        "B.2.d"
       ],
-      "rationaleAI": "Time is a core problem in metaphysics (B.1.c) and the philosophy of nature (B.2.c)."
+      "rationaleAI": "Nature of time maps to metaphysical problems (B.1.c), natural order (B.2.c), and philosophy of physics (B.2.d)."
     },
     {
       "vsiTitle": "Utilitarianism",
       "vsiAuthor": "Katarzyna de Lazari-Radek, Peter Singer",
       "relevantPathsAI": [
-        "B.6"
+        "B.6",
+        "B.6.a",
+        "B.6.c"
       ],
-      "rationaleAI": "Utilitarianism is a major normative ethical theory relevant to the types of ethics in B.6.a."
+      "rationaleAI": "Utilitarian theory maps to types of ethics (B.6.a) and problems in ethics (B.6.c)."
     },
     {
       "vsiTitle": "The Virtues",
       "vsiAuthor": "Craig A. Boyd, Kevin Timpe",
       "relevantPathsAI": [
-        "B.6"
+        "B.6",
+        "B.6.a",
+        "B.6.c"
       ],
-      "rationaleAI": "Virtue ethics is a major ethical tradition relevant to the types and problems of ethics in B.6."
+      "rationaleAI": "Virtue frameworks map to types of ethics (B.6.a) and problems in ethics (B.6.c)."
     },
     {
       "vsiTitle": "Environmental ethics",
       "vsiAuthor": "Robin Attfield",
       "relevantPathsAI": [
-        "B.6.c",
-        "B.6"
+        "B.6.c"
       ],
-      "rationaleAI": "Environmental ethics relates to problems in ethics (B.6.c) and the relation of ethics to other knowledge (B.6.b)."
+      "rationaleAI": "Environmental values and principles represent applied problems in ethics (B.6.c)."
     },
     {
       "vsiTitle": "Animal rights",
       "vsiAuthor": "David DeGrazia",
       "relevantPathsAI": [
-        "B.6.c",
-        "B.5"
+        "B.6.c"
       ],
-      "rationaleAI": "Animal rights relates to problems in ethics (B.6.c) and philosophical anthropology (B.5)."
+      "rationaleAI": "Ethical treatment of animals and moral status theories map to problems in ethics (B.6.c)."
     },
     {
       "vsiTitle": "Medical ethics",
       "vsiAuthor": "Tony Hope",
       "relevantPathsAI": [
-        "B.6"
+        "B.6.b",
+        "B.6.c"
       ],
-      "rationaleAI": "Medical ethics relates to the relation of ethics to other branches of knowledge (B.6.b)."
+      "rationaleAI": "Healthcare moral questions map to ethics' relation to other knowledge (B.6.b) and problems in ethics (B.6.c)."
     },
     {
       "vsiTitle": "Evil",
       "vsiAuthor": "Luke Russell",
       "relevantPathsAI": [
-        "B.6.c",
-        "B.1.c"
+        "B.6.c"
       ],
-      "rationaleAI": "The concept of evil connects to problems in ethics (B.6.c) and metaphysics (B.1.c)."
+      "rationaleAI": "Philosophical analysis of evil maps to problems in ethics (B.6.c)."
     },
     {
       "vsiTitle": "Love",
       "vsiAuthor": "Ronald de Sousa",
       "relevantPathsAI": [
-        "B.4.c",
-        "B.6.c",
-        "B.5.c"
+        "B.5.c",
+        "B.6.c"
       ],
-      "rationaleAI": "Love connects to problems in philosophy of mind (B.4.c), ethics (B.6.c), and philosophical anthropology (B.5.c)."
+      "rationaleAI": "Love's varieties and paradoxes connect to philosophical anthropology (B.5.c) and ethics (B.6.c)."
     },
     {
       "vsiTitle": "Beauty",
       "vsiAuthor": "Roger Scruton",
       "relevantPathsAI": [
-        "B.8.c",
-        "B.8"
+        "B.8",
+        "B.8.c"
       ],
-      "rationaleAI": "Beauty is a central problem in aesthetics (B.8.c) and the aesthetic experience (B.8.b)."
+      "rationaleAI": "Beauty as universal value maps to aesthetics (B.8) and its problems (B.8.c)."
     },
     {
       "vsiTitle": "The Meaning of Life",
       "vsiAuthor": "Terry Eagleton",
       "relevantPathsAI": [
         "B.5.c",
-        "B.1.c",
         "B.6.c"
       ],
-      "rationaleAI": "The meaning of life connects to philosophical anthropology (B.5.c), metaphysics (B.1.c), and ethics (B.6.c)."
+      "rationaleAI": "Meaning of life maps to philosophical anthropology (B.5.c) and ethics (B.6.c)."
     },
     {
       "vsiTitle": "Conscience",
       "vsiAuthor": "Paul Strohm",
       "relevantPathsAI": [
-        "B.6.c",
-        "B.4.c"
+        "B.6.c"
       ],
-      "rationaleAI": "Conscience relates to problems in ethics (B.6.c) and philosophy of mind (B.4.c)."
+      "rationaleAI": "Conscience as moral faculty maps to problems in ethics (B.6.c)."
     },
     {
       "vsiTitle": "Toleration",
       "vsiAuthor": "Andrew R. Murphy",
       "relevantPathsAI": [
-        "B.7",
-        "B.6"
+        "B.7.c"
       ],
-      "rationaleAI": "Toleration is a problem in political philosophy (B.7) and ethics (B.6)."
+      "rationaleAI": "Toleration in modern political philosophy maps to history of political philosophy (B.7.c)."
     },
     {
       "vsiTitle": "Objectivity",
       "vsiAuthor": "Stephen Gaukroger",
       "relevantPathsAI": [
         "B.3.c",
-        "A.4"
+        "B.2.b"
       ],
-      "rationaleAI": "Objectivity is a core epistemological problem (B.3.c) and relates to criteria of truth (A.4)."
+      "rationaleAI": "Objectivity across domains maps to epistemological problems (B.3.c) and philosophy of nature's relation to science (B.2.b)."
     },
     {
       "vsiTitle": "Analytic Philosophy",
       "vsiAuthor": "Michael Beaney",
       "relevantPathsAI": [
-        "A.2",
-        "A.1"
+        "A.1",
+        "A.2"
       ],
-      "rationaleAI": "Analytic philosophy represents a major school with distinctive methods (A.2) and conceptions of philosophy (A.1)."
+      "rationaleAI": "Logical analysis and conceptual clarification represent a distinctive conception (A.1) and method (A.2) of philosophy."
     },
     {
       "vsiTitle": "Continental philosophy",
       "vsiAuthor": "Simon Critchley",
       "relevantPathsAI": [
         "A.1",
-        "A.2"
+        "A.2",
+        "B.1",
+        "B.5"
       ],
-      "rationaleAI": "Continental philosophy represents an alternative conception of philosophy (A.1) with distinct methods (A.2)."
+      "rationaleAI": "Continental philosophy represents a distinct conception (A.1), alternative methods (A.2), and connects to metaphysics (B.1) and philosophical anthropology (B.5)."
     },
     {
       "vsiTitle": "Hermeneutics",
       "vsiAuthor": "Jens Zimmermann",
       "relevantPathsAI": [
         "A.2",
-        "B.3",
-        "B.9"
+        "A.4",
+        "B.3.c"
       ],
-      "rationaleAI": "Hermeneutics represents a philosophical method (A.2) connecting to epistemology (B.3) and philosophy of language (B.9)."
+      "rationaleAI": "Hermeneutic theory maps to philosophical methods (A.2), criteria of meaning and truth (A.4), and epistemological problems (B.3.c)."
     },
     {
       "vsiTitle": "Feminist Philosophy",
       "vsiAuthor": "Katharine Jenkins",
       "relevantPathsAI": [
-        "B.6",
-        "B.7",
-        "B.5"
+        "B.3.c",
+        "B.5.c",
+        "B.6.c",
+        "B.7"
       ],
-      "rationaleAI": "Feminist philosophy engages with ethics (B.6), political philosophy (B.7), and philosophical anthropology (B.5)."
+      "rationaleAI": "Gender oppression and intersectional knowledge connect to epistemology (B.3.c), philosophical anthropology (B.5.c), ethics (B.6.c), and political philosophy (B.7)."
     },
     {
       "vsiTitle": "God",
       "vsiAuthor": "John Bowker",
       "relevantPathsAI": [
-        "B.1",
+        "B.1.b",
         "B.14"
       ],
-      "rationaleAI": "The existence and attributes of God connect to metaphysics (B.1), philosophy of religion (B.14), and natural theology."
+      "rationaleAI": "Arguments about divine existence map to metaphysics-theology relation (B.1.b) and philosophy of religion (B.14)."
     },
     {
       "vsiTitle": "Atheism",
@@ -323,26 +352,25 @@
       "relevantPathsAI": [
         "B.14"
       ],
-      "rationaleAI": "Atheism engages with the philosophy of religion (B.14) and metaphysical questions about existence."
+      "rationaleAI": "Atheism as philosophical position maps to philosophy of religion (B.14)."
     },
     {
       "vsiTitle": "Agnosticism",
       "vsiAuthor": "Robin Le Poidevin",
       "relevantPathsAI": [
-        "B.3",
+        "B.3.c",
         "B.14"
       ],
-      "rationaleAI": "Agnosticism connects to epistemology (B.3) and philosophy of religion (B.14)."
+      "rationaleAI": "Agnosticism as epistemological position maps to epistemological problems (B.3.c) and philosophy of religion (B.14)."
     },
     {
       "vsiTitle": "Humanism",
       "vsiAuthor": "Stephen Law",
       "relevantPathsAI": [
         "B.5",
-        "B.6",
         "B.14"
       ],
-      "rationaleAI": "Humanism relates to philosophical anthropology (B.5), ethics (B.6), and philosophy of religion (B.14)."
+      "rationaleAI": "Humanism maps to philosophical anthropology (B.5) and philosophy of religion (B.14)."
     },
     {
       "vsiTitle": "Secularism",
@@ -351,60 +379,62 @@
         "B.7",
         "B.14"
       ],
-      "rationaleAI": "Secularism connects to political philosophy (B.7) and philosophy of religion (B.14)."
+      "rationaleAI": "Secularism maps to political philosophy (B.7) and philosophy of religion (B.14)."
     },
     {
       "vsiTitle": "Information",
       "vsiAuthor": "Luciano Floridi",
       "relevantPathsAI": [
-        "B.3",
+        "B.3.c",
         "B.9"
       ],
-      "rationaleAI": "Information relates to epistemology (B.3) and the philosophy of language (B.9)."
+      "rationaleAI": "Information as foundational concept connects to epistemological problems (B.3.c) and philosophy of language (B.9)."
     },
     {
       "vsiTitle": "Infinity",
       "vsiAuthor": "Ian Stewart",
       "relevantPathsAI": [
-        "B.11",
-        "B.1.c"
+        "B.11"
       ],
-      "rationaleAI": "Infinity connects to the philosophy of mathematics (B.11) and metaphysics (B.1.c)."
+      "rationaleAI": "Mathematical infinity connects to philosophy of mathematics (B.11)."
     },
     {
       "vsiTitle": "Nothing",
       "vsiAuthor": "Frank Close",
       "relevantPathsAI": [
-        "B.1.c"
+        "B.1.c",
+        "B.2.d"
       ],
-      "rationaleAI": "The concept of nothing connects to metaphysical problems (B.1.c) about being, existence, and reality."
+      "rationaleAI": "Nothing and vacuum map to metaphysical problems (B.1.c) and philosophy of physics (B.2.d)."
     },
     {
       "vsiTitle": "Imagination",
       "vsiAuthor": "Jennifer Gosetti-Ferencei",
       "relevantPathsAI": [
-        "B.8",
-        "B.4"
+        "B.4.c",
+        "B.8.c"
       ],
-      "rationaleAI": "Imagination connects to aesthetics (B.8), philosophy of mind (B.4), and phenomenology."
+      "rationaleAI": "Imagination as cognitive power maps to philosophy of mind problems (B.4.c) and aesthetics problems (B.8.c)."
     },
     {
       "vsiTitle": "Thought",
       "vsiAuthor": "Tim Bayne",
       "relevantPathsAI": [
         "B.4",
-        "B.3"
+        "B.4.c"
       ],
-      "rationaleAI": "Thought is central to philosophy of mind (B.4) and epistemology (B.3)."
+      "rationaleAI": "Nature of thought maps to philosophy of mind (B.4) and its problems (B.4.c)."
     },
     {
       "vsiTitle": "Pseudoscience",
       "vsiAuthor": "Michael D. Gordin",
       "relevantPathsAI": [
+        "B.2.b",
         "B.13"
       ],
-      "rationaleAI": "The demarcation of science from pseudoscience is a core problem in philosophy of science (B.13)."
+      "rationaleAI": "Demarcation problem connects to philosophy of nature's relation to science (B.2.b) and philosophy of science (B.13)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

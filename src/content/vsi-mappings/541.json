@@ -5,314 +5,371 @@
       "vsiTitle": "Political philosophy",
       "vsiAuthor": "David Miller",
       "relevantPathsAI": [
+        "A",
+        "A.2",
         "A.4",
+        "A.4.a",
+        "A.4.b",
+        "C.1",
         "C.2"
       ],
-      "rationaleAI": "Essential for understanding the philosophical foundations of statehood, sovereignty, social contract, authority, and human rights (A, A.4, C.2)."
+      "rationaleAI": "Authority, democracy, freedom, and justice as foundational concepts of the state (A), social contract theory from Hobbes and Locke (A.4.b), popular sovereignty as continuing consent of the governed (A.4.a), the concept of political power (C.1), and human rights as a political concept (C.2). Examination of the limits of legitimate political authority addresses properties of statehood (A.2)."
     },
     {
       "vsiTitle": "Politics",
       "vsiAuthor": "Kenneth Minogue",
       "relevantPathsAI": [
-        "C.1"
+        "A",
+        "A.4",
+        "B",
+        "B.2",
+        "C.3"
       ],
-      "rationaleAI": "Broadly addresses political theory including the state, democracy, justice, and the exercise of political power (A, B, C.1)."
+      "rationaleAI": "Development of the modern state from ancient Greek citizenship through political theory (A), conceptions of governmental legitimacy including Locke and Marx (A.4), political parties and activism as patterns of political action (B, B.2), and ideology as a driver of political systems (C.3)."
     },
     {
       "vsiTitle": "The History of Political Thought",
       "vsiAuthor": "Richard Whatmore",
-      "relevantPathsAI": [],
-      "rationaleAI": "Surveys the historical development of political theories from ancient to modern times, spanning all outline topics."
+      "relevantPathsAI": [
+        "A",
+        "A.4",
+        "C.3"
+      ],
+      "rationaleAI": "Methodological approaches to political ideas from Koselleck through the Cambridge School informing theories of the state (A), historical study of political concepts including legitimacy and governance (A.4), and how intellectual history relates to understanding political ideologies (C.3)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
       "relevantPathsAI": [
-        "A.4",
-        "A.5"
+        "A.4.a",
+        "A.5",
+        "C.2",
+        "C.3.b.v"
       ],
-      "rationaleAI": "Popular sovereignty, consent of the governed, and democratic governance as a basis of legitimacy are central themes (A.4.a, A.5)."
+      "rationaleAI": "Popular sovereignty and self-governance as consent of the governed (A.4.a), constitutional government and democratic institutions (A.5), human rights in the context of democratic participation (C.2), and liberalism as a political ideology connected to democratic theory (C.3.b.v)."
     },
     {
       "vsiTitle": "Ideology",
       "vsiAuthor": "Michael Freeden",
       "relevantPathsAI": [
-        "C.3"
+        "C.3",
+        "C.3.a",
+        "C.3.b"
       ],
-      "rationaleAI": "Directly addresses the role of ideology in political systems and the relationship between ideological and civil politics (C.3.a)."
+      "rationaleAI": "Ideology as a concept in political thought directly addressing the importance of ideology to political systems (C.3.a), covering liberalism, Marxism, and fascism as current political ideologies (C.3.b), and how ideology functions through language and institutions as the relationship between ideological and civil politics (C.3.a)."
     },
     {
       "vsiTitle": "Human Rights",
       "vsiAuthor": "Andrew Clapham",
       "relevantPathsAI": [
-        "C.2"
+        "C.2",
+        "A.2"
       ],
-      "rationaleAI": "Human rights as a political concept are the central subject (C.2)."
+      "rationaleAI": "Human rights as a legal, political, and moral framework directly addressing the concept of human rights (C.2), covering civil and political rights, anti-discrimination protections, and the Universal Declaration of Human Rights, and the state's relationship to individual rights (A.2)."
     },
     {
       "vsiTitle": "Anarchism",
       "vsiAuthor": "Alex Prichard",
       "relevantPathsAI": [
+        "C.3.b.i",
         "C.3"
       ],
-      "rationaleAI": "Examines anarchism as a named political ideology (C.3.b.i)."
+      "rationaleAI": "Anarchism as a political philosophy advocating abolition of the state directly corresponding to the anarchism ideology category (C.3.b.i), covering key thinkers from Bakunin through Chomsky as part of modern political ideologies (C.3)."
     },
     {
       "vsiTitle": "Communism",
       "vsiAuthor": "Leslie Holmes",
       "relevantPathsAI": [
-        "C.3"
+        "C.3.b.ii",
+        "A.4"
       ],
-      "rationaleAI": "Explores communism as a named political ideology and its practical applications (C.3.b.ii)."
+      "rationaleAI": "Communist ideology and single-party governance directly corresponding to the communism category (C.3.b.ii), and Communist Party structures as conceptions of political authority and legitimacy (A.4)."
     },
     {
       "vsiTitle": "Marx",
       "vsiAuthor": "Peter Singer",
       "relevantPathsAI": [
-        "C.3"
+        "C.3.b.vi",
+        "C.3.b.ii",
+        "C.1"
       ],
-      "rationaleAI": "Marx's political ideology -- including alienation, capitalism critique, and dialectical materialism -- is foundational (C.3.b.vi)."
+      "rationaleAI": "Marxism as a political ideology (C.3.b.vi), historical materialism and class struggle connecting to communist theory (C.3.b.ii), and the concept of political power as understood through labor exploitation and critique of political economy (C.1)."
     },
     {
       "vsiTitle": "Fascism",
       "vsiAuthor": "Kevin Passmore",
       "relevantPathsAI": [
-        "C.3"
+        "C.3.b.iv"
       ],
-      "rationaleAI": "Fascism as a named political ideology is the central subject (C.3.b.iv)."
+      "rationaleAI": "Fascism as a political ideology and movement directly corresponding to the fascism category (C.3.b.iv), covering corporatism, Nazism, mass mobilization, and the paradoxical relationship between revolutionary and reactionary impulses."
     },
     {
       "vsiTitle": "Liberalism",
       "vsiAuthor": "Michael Freeden",
       "relevantPathsAI": [
-        "C.3"
+        "C.3.b.v"
       ],
-      "rationaleAI": "Liberalism as a named political ideology is examined in its historical and contemporary forms (C.3.b.v)."
+      "rationaleAI": "Liberalism as a political ideology directly corresponding to the liberalism category (C.3.b.v), covering individual freedom, pluralism, justice, and the evolution of liberal thought across European political traditions."
     },
     {
       "vsiTitle": "Socialism",
       "vsiAuthor": "Michael Newman",
       "relevantPathsAI": [
-        "C.3"
+        "C.3.b.viii"
       ],
-      "rationaleAI": "Socialism as a named political ideology is explored from its utopian origins to modern social democracy (C.3.b.viii)."
+      "rationaleAI": "Socialism as a political ideology and movement directly corresponding to the socialism category (C.3.b.viii), covering social democracy, collective ownership, and intersections with feminism and environmentalism."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
       "relevantPathsAI": [
-        "C.3"
+        "C.3.b.vii",
+        "A.1"
       ],
-      "rationaleAI": "Nationalism as an ideology and its relationship to the national state are central themes (A, C.3.b.vii)."
+      "rationaleAI": "Nationalism as a political ideology of national self-determination directly corresponding to the nationalism category (C.3.b.vii), and the concept of the nation-state relating to properties of statehood and sovereignty (A.1)."
     },
     {
       "vsiTitle": "Populism",
       "vsiAuthor": "Cas Mudde, Cristsbal Rovia Kalwasser",
       "relevantPathsAI": [
-        "C.3"
+        "B.4",
+        "C.3",
+        "C.3.a"
       ],
-      "rationaleAI": "Populism as a contemporary political ideology, treating sovereignty and democratic power, is examined (C.3.b)."
+      "rationaleAI": "Populism as the political influence of public opinion dividing society into people versus elite (B.4), its function as a thin-centered ideology adaptable to political contexts (C.3), and the relationship between populism and democratic institutions as ideology in political systems (C.3.a)."
     },
     {
       "vsiTitle": "Neoliberalism",
       "vsiAuthor": "Manfred Steger, Ravi K. Roy",
       "relevantPathsAI": [
-        "C.3"
+        "C.3.b.v",
+        "C.3.b"
       ],
-      "rationaleAI": "Neoliberalism as a current political ideology affecting state-market relations is explored (C.3.b)."
+      "rationaleAI": "Neoliberalism as an evolution of liberal economic ideology with commitments to free markets and deregulation (C.3.b.v), and its relationship to nationalist and populist responses as part of the landscape of current political ideologies (C.3.b)."
     },
     {
       "vsiTitle": "Hobbes",
       "vsiAuthor": "Richard Tuck",
       "relevantPathsAI": [
+        "A.4.b",
+        "A.2",
         "A.4"
       ],
-      "rationaleAI": "Hobbes's social contract and state of nature remain foundational to theories of political authority (A.4.b)."
+      "rationaleAI": "Social contract theory and sovereign authority as the foundational conception of political legitimacy (A.4.b), the state of nature and rational self-interest grounding political obligation (A.4), and the relationship between the state and the individual (A.2)."
     },
     {
       "vsiTitle": "Locke",
       "vsiAuthor": "John Dunn",
       "relevantPathsAI": [
-        "A.4",
+        "A.4.a",
+        "A.4.b",
         "A.5"
       ],
-      "rationaleAI": "Locke's theories of consent, natural rights, and constitutional government shaped modern liberal political thought (A.4.a, A.5.a)."
+      "rationaleAI": "Defense of liberal values including toleration and responsible government as popular sovereignty (A.4.a), social contract theory grounding political authority (A.4.b), and intellectual origins of constitutional democracy relating to theories of constitutionalism (A.5)."
     },
     {
       "vsiTitle": "Rousseau",
       "vsiAuthor": "Robert Wokler",
       "relevantPathsAI": [
-        "A.4"
+        "A.4.a",
+        "A.4.b",
+        "A.2"
       ],
-      "rationaleAI": "Rousseau's social contract, popular sovereignty, and citizenship theory are foundational to modern political thought (A.4.a, A.4.b)."
+      "rationaleAI": "Social contract theory, citizenship, and civil society as political theory foundations (A.4.b), popular sovereignty and direct communion with concepts of liberty and virtue (A.4.a), and the state and the individual through Rousseau's concept of natural human goodness corrupted by institutions (A.2)."
     },
     {
       "vsiTitle": "Tocqueville",
       "vsiAuthor": "Harvey Mansfield",
       "relevantPathsAI": [
-        "B.4"
+        "A.4.a",
+        "A.5",
+        "C.4.d"
       ],
-      "rationaleAI": "Tocqueville's democratic theory, political science, and analysis of public opinion's influence on governance remain influential (B.4)."
+      "rationaleAI": "Democracy in America as an analysis of popular sovereignty and self-government (A.4.a), constitutional government and democratic institutions (A.5), and adapting traditional political forms to changing conditions through comparative analysis of American democracy and French politics (C.4.d)."
     },
     {
       "vsiTitle": "John Stuart Mill",
       "vsiAuthor": "Gregory Claeys",
       "relevantPathsAI": [
         "A.2",
-        "C.3"
+        "A.5",
+        "C.3.b.v"
       ],
-      "rationaleAI": "Mill's liberal political theory on individual liberty, representative government, and political participation is essential reading (A.2, C.3.b.v)."
+      "rationaleAI": "On Liberty addressing the state and the individual including individual freedom (A.2), representative government relating to constitutional government theory (A.5), and contributions to liberal political philosophy (C.3.b.v)."
     },
     {
       "vsiTitle": "Machiavelli",
       "vsiAuthor": "Quentin Skinner",
       "relevantPathsAI": [
+        "A.4",
         "C.1"
       ],
-      "rationaleAI": "Machiavelli's political theory about the concept of political power and statecraft remains a touchstone (C.1)."
+      "rationaleAI": "Political leadership and the relationship between morality and statecraft addressing conceptions of legitimacy and authority (A.4), and the concept of political power as central to Machiavellian political theory (C.1)."
     },
     {
       "vsiTitle": "Hannah Arendt",
       "vsiAuthor": "Dana Villa",
       "relevantPathsAI": [
-        "C.1"
+        "A",
+        "C.1",
+        "C.3.b.iv",
+        "A.5"
       ],
-      "rationaleAI": "Arendt's theories of political action, power, totalitarianism, and constitutionalism are explored (B, C.1)."
+      "rationaleAI": "Analysis of totalitarianism relating to fascist ideology (C.3.b.iv), political action and constitutionalism as theory of the state (A, A.5), and concepts of political power and judgment (C.1)."
     },
     {
       "vsiTitle": "Aristotle",
       "vsiAuthor": "Jonathan Barnes",
       "relevantPathsAI": [
+        "A",
         "A.4",
-        "A.5"
+        "C.1"
       ],
-      "rationaleAI": "Aristotle's foundational political theory including forms of government and political science informs the entire tradition (A.4, A.5)."
+      "rationaleAI": "Foundational political theory including ethics and practical philosophy addressing conceptions of the state (A), theories of governance and political organization (A.4), and the concept of political power in the polis (C.1)."
     },
     {
       "vsiTitle": "Citizenship",
       "vsiAuthor": "Richard Bellamy",
       "relevantPathsAI": [
         "A.2",
-        "C.2"
+        "A.4.a",
+        "B.1",
+        "C.4.c"
       ],
-      "rationaleAI": "The relationship between the state and the individual, political participation, and rights are examined (A.2, C.2)."
+      "rationaleAI": "Citizenship and political membership relating to the state and the individual (A.2), republican and liberal models as expressions of popular sovereignty (A.4.a), civic participation as political action within communities (B.1), and supranational governance through the EU as a problem of international cooperation (C.4.c)."
     },
     {
       "vsiTitle": "Free speech",
       "vsiAuthor": "Nigel Warburton",
       "relevantPathsAI": [
-        "B.4",
+        "A.2",
         "C.2"
       ],
-      "rationaleAI": "Freedom of expression as a human right and its role in public opinion are central themes (B.4, C.2)."
+      "rationaleAI": "Freedom of expression as a dimension of the state and the individual relationship (A.2), and rights-based defenses of free speech grounded in Mill's harm principle connecting to the concept of human rights (C.2)."
     },
     {
       "vsiTitle": "The Rule of Law",
       "vsiAuthor": "Aziz Z. Huq",
       "relevantPathsAI": [
-        "A.5"
+        "A.5",
+        "A.5.b",
+        "C.4.d"
       ],
-      "rationaleAI": "The rule of law as a feature of constitutional government is the central subject (A.5.b)."
+      "rationaleAI": "Rule of law as a foundational feature of constitutional government (A.5, A.5.b), and the global diffusion of rule-of-law concepts as adapting traditional political forms across different jurisdictions (C.4.d)."
     },
     {
       "vsiTitle": "Magna Carta",
       "vsiAuthor": "Nicholas Vincent",
       "relevantPathsAI": [
-        "A.5"
+        "A.4.c",
+        "A.5",
+        "A.5.a",
+        "C.2"
       ],
-      "rationaleAI": "The origins of constitutional government and limits on monarchical authority are traced from this foundational document (A.5.a)."
+      "rationaleAI": "Magna Carta as limiting royal authority representing venerable constitutional sanction (A.4.c), origins of constitutional government (A.5.a), its enduring significance for constitutionalism (A.5), and its role in the development of human rights concepts (C.2)."
     },
     {
       "vsiTitle": "Federalism",
       "vsiAuthor": "Mark J. Rozell, Clyde Wilcox",
       "relevantPathsAI": [
-        "C.4"
+        "A.5",
+        "C.4.d"
       ],
-      "rationaleAI": "Addresses the problem of centralization vs. decentralization of power (C.4.d)."
+      "rationaleAI": "Federal systems as a form of constitutional government with power-sharing between levels (A.5), and whether federal structures remain viable amid centralization as the problem of adapting traditional political forms (C.4.d)."
     },
     {
       "vsiTitle": "Authoritarianism",
       "vsiAuthor": "James Loxton",
       "relevantPathsAI": [
         "A.4",
-        "A.5"
+        "C.4.e"
       ],
-      "rationaleAI": "Authoritarian government as a political system contrasting with constitutional governance is examined (A.4, A.5)."
+      "rationaleAI": "Authoritarian regimes as conceptions of legitimacy and authority contrasting with democratic governance (A.4), and democratic backsliding as the problem of adapting traditional political forms to changing conditions (C.4.e)."
     },
     {
       "vsiTitle": "Secularism",
       "vsiAuthor": "Andrew Copson",
       "relevantPathsAI": [
-        "C.4"
+        "C.4.a",
+        "A.4.d"
       ],
-      "rationaleAI": "Directly addresses the problem of church and state separation (C.4.a)."
+      "rationaleAI": "Separation of church and state directly addressing the problem of church and state (C.4.a), and the shift from divine right to secular governance challenging God as a source of political authority (A.4.d)."
     },
     {
       "vsiTitle": "Fundamentalism",
       "vsiAuthor": "Malise Ruthven",
       "relevantPathsAI": [
-        "C.4"
+        "C.4.a"
       ],
-      "rationaleAI": "The relationship between religion and politics bears directly on the church-state problem (C.4.a)."
+      "rationaleAI": "Cross-religious fundamentalism and its political activism directly relevant to the problem of church and state and the tension between religious authority and secular governance (C.4.a)."
     },
     {
       "vsiTitle": "Revolutions",
       "vsiAuthor": "Jack A. Goldstone",
       "relevantPathsAI": [
-        "C.4"
+        "A.4",
+        "C.1",
+        "C.4.e"
       ],
-      "rationaleAI": "Revolutionary political action as a means of adapting political forms to changing conditions is examined (C.4.e)."
+      "rationaleAI": "Revolutionary overthrow of established authority challenging conceptions of legitimacy (A.4), the concept of political power as contested through revolutionary action (C.1), and revolution as the most dramatic form of adapting political forms to changing conditions (C.4.e)."
     },
     {
       "vsiTitle": "Terrorism",
       "vsiAuthor": "Charles Townshend",
       "relevantPathsAI": [
-        "B.3"
+        "B.3",
+        "C.1"
       ],
-      "rationaleAI": "Political action by militant groups using violence as a form of political engagement is the central subject (B.3)."
+      "rationaleAI": "Terrorism as political action by special-interest groups and movements (B.3), and the use of violence for political aims as an extreme manifestation of the concept of political power (C.1)."
     },
     {
       "vsiTitle": "Governance",
       "vsiAuthor": "Mark Bevir",
       "relevantPathsAI": [
-        "A.3",
-        "C.4.c"
+        "A",
+        "C.4.c",
+        "C.4.d"
       ],
-      "rationaleAI": "Explores how political authority is exercised by states and international organizations (A.3, C.4.c)."
+      "rationaleAI": "Governance theories addressing the state and its institutional frameworks (A), global governance for transnational challenges as international cooperation (C.4.c), and governance reforms as adapting traditional political forms to new institutional demands (C.4.d)."
     },
     {
       "vsiTitle": "Feminism",
       "vsiAuthor": "Margaret Walters",
       "relevantPathsAI": [
         "C.2",
-        "C.3"
+        "B.3"
       ],
-      "rationaleAI": "Feminist political theory challenges traditional political structures and advances rights (C.2, C.3.b)."
+      "rationaleAI": "Women's rights and gender equality as a dimension of human rights (C.2), and the feminist movement as political action by a special-interest group advocating for suffrage and social change (B.3)."
     },
     {
       "vsiTitle": "Toleration",
       "vsiAuthor": "Andrew R. Murphy",
       "relevantPathsAI": [
-        "C.4"
+        "A.2",
+        "C.2",
+        "C.4.a"
       ],
-      "rationaleAI": "Political tolerance as a principle of liberal governance and the church-state relationship is examined (C.4.a)."
+      "rationaleAI": "Toleration as a concept managing the relationship between state and individual across religious and cultural difference (A.2), connections to human rights frameworks (C.2), and its historical role in addressing the problem of church and state (C.4.a)."
     },
     {
       "vsiTitle": "Utopianism",
       "vsiAuthor": "Lyman Tower Sargent",
       "relevantPathsAI": [
-        "C.3"
+        "C.3",
+        "C.3.b"
       ],
-      "rationaleAI": "Utopian political theory and visions of ideal political organization are explored (C.3)."
+      "rationaleAI": "Utopian thought spanning political theory and its contested relationship to totalitarianism and freedom as ideology (C.3), and utopianism within communism and other political ideologies as current political tendencies (C.3.b)."
     },
     {
       "vsiTitle": "International Relations",
       "vsiAuthor": "Paul Wilkinson, Christian Reus-Smit",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "C.4.c"
       ],
-      "rationaleAI": "The national state in the international community, including state sovereignty and political authority, is examined (A.3)."
+      "rationaleAI": "The national state in the international community through theories of sovereignty and global political order (A.3), and international cooperation and integration as a contemporary political problem (C.4.c)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

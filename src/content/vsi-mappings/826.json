@@ -4,94 +4,125 @@
     {
       "vsiTitle": "Judaism",
       "vsiAuthor": "Norman Solomon",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers Judaism including its history, Torah, Talmud, prayer, festivals, and present-day forms (Orthodox, Reform, Conservative), the primary subject of 826."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.3",
+        "A.4",
+        "A.5",
+        "A.6",
+        "B.1",
+        "B.5",
+        "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.2",
+        "C.2.a",
+        "C.2.b",
+        "C.2.d",
+        "C.3"
+      ],
+      "rationaleAI": "Comprehensive Judaism addresses biblical era (A.1), Talmudic foundations (A.3), medieval (A.4), modern (A.5), contemporary (A.6). Torah and Talmud relate to biblical literature (B.1). Practices address C.2. Orthodox (C.3.a), Reform (C.3.b), Kabbalah (B.5). God (C.1.a) and covenant (C.1.b) are central."
     },
     {
       "vsiTitle": "The Old Testament",
       "vsiAuthor": "Michael Coogan",
       "relevantPathsAI": [
-        "B.1"
+        "A.1",
+        "B.1",
+        "B.1.b"
       ],
-      "rationaleAI": "Directly covers the TaNaKh/Old Testament including Deuteronomy, Exodus, Psalms, and the Ten Commandments, relevant to 826.B.1.b."
+      "rationaleAI": "The Hebrew Bible relates to biblical era (A.1) and TaNaKh (B.1.b)."
     },
     {
       "vsiTitle": "The Hebrew Bible As Literature",
       "vsiAuthor": "Tod Linafelt",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.b"
       ],
-      "rationaleAI": "Examines the Hebrew Bible as sacred literature including David, Jacob, poetry, and Song of Songs, relevant to 826.B.1."
+      "rationaleAI": "Literary analysis of the Hebrew Bible addresses TaNaKh (B.1.b)."
     },
     {
       "vsiTitle": "The Bible",
       "vsiAuthor": "John Riches",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.4"
       ],
-      "rationaleAI": "Addresses the Bible's Abrahamic context and the history of biblical interpretation, with attention to the Hebrew scriptures, relevant to 826.B.1."
+      "rationaleAI": "The Bible relates to biblical literature (B.1) and exegesis (B.4)."
     },
     {
       "vsiTitle": "The Dead Sea Scrolls",
       "vsiAuthor": "Timothy Lim",
       "relevantPathsAI": [
+        "A.2",
         "B.2"
       ],
-      "rationaleAI": "Directly covers the Qumran literature (Dead Sea Scrolls), the specific subject of 826.B.2."
+      "rationaleAI": "Dead Sea Scrolls relate to the Hellenistic era (A.2) and Qumran literature (B.2)."
     },
     {
       "vsiTitle": "Jewish History",
       "vsiAuthor": "David N. Myers",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the history of the Jewish people from the Ark of the Covenant and the Exodus through exile, assimilation, and emancipation, relevant to 826.A."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "Jewish history addresses biblical (A.1), medieval (A.4), and modern (A.5) eras."
     },
     {
       "vsiTitle": "Jewish Literature",
       "vsiAuthor": "Ilan Stavans",
-      "relevantPathsAI": [],
-      "rationaleAI": "Surveys Jewish literary traditions across languages and diaspora communities, relevant to 826.B on intellectual and imaginative expressions."
+      "relevantPathsAI": [
+        "A.5",
+        "A.6"
+      ],
+      "rationaleAI": "Modern Jewish literature relates to modern (A.5) and contemporary (A.6) Judaism."
     },
     {
       "vsiTitle": "Kabbalah",
       "vsiAuthor": "Joseph Dan",
       "relevantPathsAI": [
-        "B.5"
+        "B.5",
+        "C.3.d"
       ],
-      "rationaleAI": "Directly covers Jewish mysticism (Kabbalah) including the Zohar, Names of God, and Hasidism, relevant to 826.B.5 on mystical and devotional writings."
+      "rationaleAI": "Kabbalah addresses mystical writings (B.5) and Hasidism (C.3.d)."
     },
     {
       "vsiTitle": "Moses Maimonides",
       "vsiAuthor": "Ross Brann",
       "relevantPathsAI": [
+        "A.4",
         "B.6"
       ],
-      "rationaleAI": "Presents Maimonides as a foundational Jewish philosopher, examining his Mishneh Torah, Guide for the Perplexed, and rationalist methodology, relevant to 826.B.6 on Jewish philosophical writings."
+      "rationaleAI": "Maimonides relates to medieval Judaism (A.4) and philosophical writings (B.6)."
     },
     {
       "vsiTitle": "Medieval Philosophy",
       "vsiAuthor": "John Marenbon",
       "relevantPathsAI": [
+        "A.4",
         "B.6"
       ],
-      "rationaleAI": "Treats Maimonides, Gersonides, and other Jewish thinkers alongside Christian and Islamic philosophy, relevant to 826.B.6 on Jewish philosophical writings."
+      "rationaleAI": "Medieval philosophy relates to medieval era (A.4) and Jewish philosophy (B.6)."
     },
     {
       "vsiTitle": "Biblical archaeology",
       "vsiAuthor": "Eric H. Cline",
       "relevantPathsAI": [
-        "A.1",
-        "C.2"
+        "A.1"
       ],
-      "rationaleAI": "Presents archaeological evidence for biblical history and the land of Israel, including Dead Sea Scroll discoveries, relevant to 826.A.1 and 826.C.2.d on sacred places."
+      "rationaleAI": "Biblical archaeology relates to the biblical era (A.1)."
     },
     {
       "vsiTitle": "Zionism",
       "vsiAuthor": "Michael Stanislawski",
       "relevantPathsAI": [
         "A.5",
-        "C.2"
+        "C.2.d"
       ],
-      "rationaleAI": "Traces Zionism as a political and cultural movement tied to Jewish identity, the Hebrew language, and the land of Israel, relevant to 826.A.5 and 826.C.2.d."
+      "rationaleAI": "Zionism relates to modern Judaism (A.5) and sacred places (C.2.d)."
     },
     {
       "vsiTitle": "The Palestinian–Israeli Conflict",
@@ -105,17 +136,19 @@
       "vsiTitle": "Antisemitism",
       "vsiAuthor": "Steven Beller",
       "relevantPathsAI": [
-        "A.4"
+        "A.4",
+        "A.5"
       ],
-      "rationaleAI": "Documents the history of antisemitism and its devastating impact on Jewish communities across the medieval and modern eras, relevant to 826.A.4-5."
+      "rationaleAI": "Antisemitism addresses medieval (A.4) and modern (A.5) Jewish history."
     },
     {
       "vsiTitle": "The Ghetto",
       "vsiAuthor": "Bryan Cheyette",
       "relevantPathsAI": [
-        "A.4"
+        "A.4",
+        "A.5"
       ],
-      "rationaleAI": "Traces the history of the Jewish ghetto from Venice to Eastern Europe and its effects on communal life and religious practice, relevant to 826.A.4 on the medieval era."
+      "rationaleAI": "The ghetto relates to medieval (A.4) and modern (A.5) eras."
     },
     {
       "vsiTitle": "Concentration Camps",
@@ -123,29 +156,34 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "The Holocaust profoundly impacted Judaism and Jewish communities, relevant to 826.A.5 on developments in modern Judaism."
+      "rationaleAI": "The Holocaust relates to modern Judaism (A.5)."
     },
     {
       "vsiTitle": "Diaspora",
       "vsiAuthor": "Kevin Kenny",
       "relevantPathsAI": [
+        "A.5",
         "A.6"
       ],
-      "rationaleAI": "Explores diaspora communities with particular attention to the Jewish diaspora's formation after the destruction of the Second Temple, relevant to 826.A.6."
+      "rationaleAI": "Diaspora relates to modern (A.5) and contemporary (A.6) Judaism."
     },
     {
       "vsiTitle": "God",
       "vsiAuthor": "John Bowker",
       "relevantPathsAI": [
-        "C.1"
+        "C.1.a"
       ],
-      "rationaleAI": "Examines concepts of God including Jewish monotheism and the covenant relationship between God and Israel, relevant to 826.C.1.a on doctrines concerning God."
+      "rationaleAI": "Conceptions of God relate to Jewish doctrines concerning God (C.1.a)."
     },
     {
       "vsiTitle": "The Abrahamic Religions",
       "vsiAuthor": "Charles L. Cohen",
-      "relevantPathsAI": [],
-      "rationaleAI": "Places Judaism in comparative perspective with Christianity and Islam, illuminating its foundational role among the Abrahamic traditions."
+      "relevantPathsAI": [
+        "A",
+        "C.1.a",
+        "C.1.b"
+      ],
+      "rationaleAI": "Judaism as Abrahamic tradition relates to history (A), God (C.1.a), and Covenant (C.1.b)."
     },
     {
       "vsiTitle": "Paul",
@@ -153,16 +191,15 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Paul's theology on Jewish law, Torah observance, and salvation emerges directly from the Hellenistic Jewish context, relevant to 826.A.2 on the Hellenistic era."
+      "rationaleAI": "Paul's relationship to Jewish law relates to the Hellenistic era (A.2)."
     },
     {
       "vsiTitle": "The Enlightenment",
       "vsiAuthor": "John Robertson",
       "relevantPathsAI": [
-        "A.5",
-        "C.3"
+        "A.5"
       ],
-      "rationaleAI": "The Enlightenment, particularly through Moses Mendelssohn's Haskalah, shaped Jewish emancipation and Reform Judaism, relevant to 826.A.5 and 826.C.3.b."
+      "rationaleAI": "The Enlightenment provides context for modern Judaism (A.5)."
     },
     {
       "vsiTitle": "Hermeneutics",
@@ -170,7 +207,7 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Introduces interpretive theory relevant to Judaic methods of scriptural exegesis and hermeneutics (826.B.4)."
+      "rationaleAI": "Hermeneutics relates to Judaic exegesis (B.4)."
     },
     {
       "vsiTitle": "Ritual",
@@ -178,7 +215,7 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Explores ritual practices relevant to Jewish sabbath observance, holiday celebrations, and rites of passage such as bar mitzvah, relevant to 826.C.2.a-c."
+      "rationaleAI": "Ritual relates to Jewish practices (C.2)."
     },
     {
       "vsiTitle": "The Crusades",
@@ -186,16 +223,17 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "The Crusades brought devastating persecution and pogroms against Jewish communities across medieval Europe, relevant to 826.A.4 on the medieval era."
+      "rationaleAI": "The Crusades' impact on Jews relates to the medieval era (A.4)."
     },
     {
       "vsiTitle": "Religion in America",
       "vsiAuthor": "Timothy Beal",
       "relevantPathsAI": [
-        "C.3"
+        "A.6"
       ],
-      "rationaleAI": "Surveys Judaism in the American context, shedding light on modern denominational forms (Reform, Conservative, Reconstructionist) discussed in 826.C.3."
+      "rationaleAI": "American Judaism relates to contemporary demographics (A.6)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

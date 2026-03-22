@@ -4,44 +4,71 @@
     {
       "vsiTitle": "Hinduism",
       "vsiAuthor": "Kim Knott",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the Indus Valley civilization, the Vedic tradition, caste system, and Hindu religious developments central to subsections B-D."
+      "relevantPathsAI": [
+        "A",
+        "B.2",
+        "B.3",
+        "B.3.b",
+        "B.7.b",
+        "C",
+        "D.3"
+      ],
+      "rationaleAI": "Hinduism from the Indus Valley relates to Indian civilization (A), Indus civilization (B.2), caste system (B.3.b), South Indian development (B.7.b), and later developments (C, D.3)."
     },
     {
       "vsiTitle": "Indian philosophy",
       "vsiAuthor": "Sue Hamilton",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers Brahmanical philosophy, Vedanta, dharma, and karma directly relevant to subsections B3 and D3 on Indian intellectual developments."
+      "relevantPathsAI": [
+        "A",
+        "B.3",
+        "B.4.a",
+        "B.7.b",
+        "D.3"
+      ],
+      "rationaleAI": "Indian philosophical traditions connect to Indian civilization (A), Brahmanical development (B.3), Buddhism (B.4.a), and later cultural developments (D.3)."
     },
     {
       "vsiTitle": "Buddha",
       "vsiAuthor": "Michael Carrithers",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection B4a on the early development of Buddhism in the pre-Mauryan period."
+      "relevantPathsAI": [
+        "B.4.a"
+      ],
+      "rationaleAI": "The historical Buddha directly addresses the early development of Buddhism (B.4.a)."
     },
     {
       "vsiTitle": "Buddhism",
       "vsiAuthor": "Damien Keown",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the spread and development of Buddhism relevant to subsections B4a, B7b, C3, and E1 on Buddhist influence in India and Ceylon."
+      "relevantPathsAI": [
+        "B.4.a",
+        "E.1"
+      ],
+      "rationaleAI": "Buddhism's origins connect to pre-Mauryan states (B.4.a). Theravada relates to Ceylon's conversion (E.1)."
     },
     {
       "vsiTitle": "Alexander the Great",
       "vsiAuthor": "Hugh Bowden",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection B4b on Alexander's invasion of India in 327 BC and the establishment of Greek settlements."
+      "relevantPathsAI": [
+        "B.4.b"
+      ],
+      "rationaleAI": "Alexander's conquest directly addresses the invasion of India (B.4.b)."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections B6 and B7a on Indo-Greek rulers, trade connections, and maritime commerce with the West."
+      "relevantPathsAI": [
+        "B.7.a"
+      ],
+      "rationaleAI": "Trade routes relate to South Indian maritime trade with the West (B.7.a)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections A and B1-B2 on archaeological sources for understanding prehistoric settlements and the Indus civilization."
+      "relevantPathsAI": [
+        "A",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Archaeological methods connect to sources (A) and prehistoric settlement (B.1, B.2)."
     },
     {
       "vsiTitle": "Modern India",
@@ -52,9 +79,14 @@
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the succession of dynasties from Maurya through Gupta, Pallava, and Chola that structure Indian political history."
+      "relevantPathsAI": [
+        "B.5",
+        "C.1",
+        "D.1"
+      ],
+      "rationaleAI": "Dynastic rule connects to Mauryan empire (B.5), Gupta dynasty (C.1), and Rajput kingdoms (D.1)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

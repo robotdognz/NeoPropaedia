@@ -4,89 +4,125 @@
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers plant tissues (meristematic, dermal, vascular, ground), plant organs (stem, leaf, root), and diverse forms of shoot and root systems (B and C)."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "C.1",
+        "C.3",
+        "C.5"
+      ],
+      "rationaleAI": "Plant evolution from simple organisms to seed plants with innovations such as lignin and pollination mechanisms covers plant tissue differentiation (B), organ development and diversity of shoot and root systems (C.1, C.3), and evolution of plant organ systems (C.5)."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers animal tissues, organ systems, and body plans across invertebrate and vertebrate phyla (D and E), including muscle, nervous, and reproductive systems."
+      "relevantPathsAI": [
+        "A",
+        "D",
+        "D.1",
+        "D.3",
+        "D.4",
+        "E",
+        "E.1",
+        "E.2"
+      ],
+      "rationaleAI": "Systematic survey of animal diversity organized by phyla covers biological form and function generally (A), classification of animal tissues (D.1), nervous and muscular tissue features across phyla (D.3, D.4), specialized organ systems (E.1), and interrelationships between organ systems (E.2)."
     },
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
       "relevantPathsAI": [
-        "E.1"
+        "D",
+        "D.2",
+        "D.3",
+        "D.4",
+        "E",
+        "E.1",
+        "E.1.a",
+        "E.1.b"
       ],
-      "rationaleAI": "Addresses vertebrate organ systems (E.1) including skeletal, muscular, nervous, circulatory, digestive, and respiratory systems, plus their interrelationships."
+      "rationaleAI": "Human body structure covering skeletal, respiratory, and nervous system anatomy addresses animal tissues for support (D.4), coordination (D.3), assimilation and transport (D.2), integumentary and skeletal organ systems (E.1.a), and digestive and respiratory organ systems (E.1.b)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
       "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.1.a",
+        "E.1.b",
         "E.2"
       ],
-      "rationaleAI": "Covers the functional aspects of organ systems and feedback mechanisms (E.2), illustrating the relation of form and function in the human body."
+      "rationaleAI": "Physiological mechanisms across organ systems including energy supply, homeostasis, and sensory perception address specialized organ systems relating to the environment (E.1.a) and serving cell metabolism (E.1.b), and functional interdependence between systems (E.2)."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
       "relevantPathsAI": [
+        "A",
         "B.3",
         "D.6"
       ],
-      "rationaleAI": "Provides the cellular basis for understanding how cells organize into tissues (B.3, D.6), the building blocks of organs and organ systems."
+      "rationaleAI": "Cell diversity and differentiation into specialized types in multicellular organisms provides the cellular foundation for biological form and function (A), cells of plant tissues (B.3), and cells of animal tissues (D.6)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
       "relevantPathsAI": [
-        "E.3",
-        "C.5"
+        "A",
+        "E.2",
+        "E.3"
       ],
-      "rationaleAI": "Addresses development of organ systems (E.3) and evolution of plant and animal organs into complex multicellular states (C.5)."
+      "rationaleAI": "Morphogenesis and differentiation processes through which organs form from embryonic tissues address general biological form and function (A), interrelationships between developing organ systems (E.2), and development of organ systems (E.3)."
     },
     {
       "vsiTitle": "Blood",
       "vsiAuthor": "Christopher Cooper",
       "relevantPathsAI": [
-        "D.2"
+        "D.2",
+        "D.5"
       ],
-      "rationaleAI": "Covers blood as an animal tissue and fluid (D.2) including its roles in transport and its classification among circulating tissues."
+      "rationaleAI": "Blood composition including hemoglobin, red cells, white cells, and platelets directly addresses tissues for transport (D.2) and other tissues including tissue fluids (D.5)."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
       "relevantPathsAI": [
         "D.3",
-        "E.1.c"
+        "E.1.a"
       ],
-      "rationaleAI": "Relevant to endocrine tissues (D.3) and the reproductive system (E.1.c), covering hormonal coordination among organ systems."
+      "rationaleAI": "Endocrine system physiology covering hormone sources and mechanisms addresses tissues for coordination through endocrine tissues (D.3) and the endocrine system as a specialized organ system (E.1.a)."
     },
     {
       "vsiTitle": "Teeth",
       "vsiAuthor": "Peter S. Ungar",
       "relevantPathsAI": [
-        "D.4"
+        "D.4",
+        "E.1.b"
       ],
-      "rationaleAI": "Illustrates the relationship between form and function in a specific organ, covering skeletal and connective tissue organization (D.4)."
+      "rationaleAI": "Dental anatomy including enamel, dentine, and tooth morphology across vertebrates addresses tissues for support (D.4) and the digestive organ system structures (E.1.b)."
     },
     {
       "vsiTitle": "The Eye",
       "vsiAuthor": "Michael F. Land",
       "relevantPathsAI": [
-        "D.3"
+        "D.3",
+        "E.1.a"
       ],
-      "rationaleAI": "Covers a specialized sensory organ illustrating nervous and sensory tissue integration (D.3), and organ development and evolution."
+      "rationaleAI": "Eye structure and function across animal species including retinal anatomy and optic nerve connections addresses sensory tissues for coordination (D.3) and the nervous system as a specialized organ system relating to the environment (E.1.a)."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
       "relevantPathsAI": [
-        "E"
+        "A",
+        "D",
+        "E",
+        "E.1",
+        "E.2"
       ],
-      "rationaleAI": "Illustrates vertebrate organ systems and diversity of form and function across mammalian body plans (E)."
+      "rationaleAI": "Mammalian morphological diversity and ecological specializations illustrate the relationship between form and function (A), animal tissue organization (D), and specialized organ systems enabling endothermy and complex behaviour (E.1, E.2)."
     },
     {
       "vsiTitle": "Symbiosis",
@@ -94,16 +130,18 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Relevant to biological form and function (A) through microbiome interactions that influence organ function and tissue organization in host organisms."
+      "rationaleAI": "Endosymbiotic origins of eukaryotic organelles demonstrate a fundamental relationship between biological form and function (A) at the cellular level."
     },
     {
       "vsiTitle": "Fungi",
       "vsiAuthor": "Nicolas P. Money",
       "relevantPathsAI": [
-        "B.1"
+        "A",
+        "B"
       ],
-      "rationaleAI": "Covers the relatively undifferentiated tissues of nonvascular organisms (B.1), including fungal cell walls and tissue organization."
+      "rationaleAI": "Fungal biology including tens of thousands of species with diverse morphological forms relates to biological form and function generally (A) and relatively undifferentiated tissues of nonvascular organisms (B.1)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

@@ -5,65 +5,76 @@
       "vsiTitle": "Nutrition",
       "vsiAuthor": "David Bender",
       "relevantPathsAI": [
-        "A.3"
+        "A",
+        "A.3",
+        "C"
       ],
-      "rationaleAI": "Core VSI for this section, covering nutritional patterns, essential nutrients (A.3), diet, metabolism, vitamins, and protein requirements of organisms."
+      "rationaleAI": "Biochemical principles of human nutrition covering macronutrients, vitamins, and metabolic processes directly address essential nutrients and nutritional needs (A.3) and the digestive process (C)."
     },
     {
       "vsiTitle": "Food",
       "vsiAuthor": "John Krebs",
       "relevantPathsAI": [
-        "A.1"
+        "A",
+        "A.3",
+        "C"
       ],
-      "rationaleAI": "Addresses the procurement and processing of nutrients, food composition, and nutritional requirements relevant to heterotrophic nutrition (A.1)."
+      "rationaleAI": "Science of diet, nutrition, and food preferences addresses nutritional patterns (A), essential nutrients (A.3), and digestive processing of food (C)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "B"
       ],
-      "rationaleAI": "Covers photosynthesis and autotrophic nutrition (A.1, B), the primary mechanism for food production in green plants."
+      "rationaleAI": "Plant photosynthetic capacity addresses autotrophism as a nutritional pattern (A.1) and photosynthesis as the production of food in green plants (B)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
       "relevantPathsAI": [
-        "C.2"
+        "A.3",
+        "C",
+        "C.2.b",
+        "C.2.d"
       ],
-      "rationaleAI": "Addresses the human digestive system including control of secretions and intestinal movements (C.2.d), and physiological processing of nutrients."
+      "rationaleAI": "Energy supply and bioenergetics address nutritional needs (A.3), and physiological interplay covers vertebrate digestive system dynamics and control of secretions (C.2.d)."
     },
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
       "relevantPathsAI": [
-        "C.2"
+        "C.2.b"
       ],
-      "rationaleAI": "Covers anatomical structures of the vertebrate digestive system (C.2.b): oral cavity, esophagus, stomach, intestines, pancreas, and liver."
+      "rationaleAI": "Organs of the chest and abdomen including structures for swallowing relate to the vertebrate digestive system structures (C.2.b)."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
       "relevantPathsAI": [
-        "C.2"
+        "C.2",
+        "C.2.a",
+        "C.2.b"
       ],
-      "rationaleAI": "Covers the diversity of invertebrate digestive systems (C.2.a) from vacuolar to tubular systems across animal phyla."
+      "rationaleAI": "Animal diversity across phyla reveals varied digestive systems from invertebrate vacuolar systems (C.2.a) through vertebrate digestive structures (C.2.b)."
     },
     {
       "vsiTitle": "Enzymes",
       "vsiAuthor": "Paul Engel",
       "relevantPathsAI": [
-        "C"
+        "C.2.d"
       ],
-      "rationaleAI": "Directly relevant to digestion (C), covering digestive enzymes and their role in the chemical breakdown and processing of nutrients."
+      "rationaleAI": "Enzymatic catalysis central to digestion directly addresses biodynamics of the vertebrate digestive system (C.2.d)."
     },
     {
       "vsiTitle": "Teeth",
       "vsiAuthor": "Peter S. Ungar",
       "relevantPathsAI": [
-        "C.2"
+        "A.2",
+        "C.2.b"
       ],
-      "rationaleAI": "Covers teeth as part of the oral cavity in vertebrate digestive systems (C.2.b), relevant to methods of ingestion and feeding adaptations."
+      "rationaleAI": "Dental morphology linking tooth form to feeding ecology addresses methods of ingestion (A.2) and vertebrate oral cavity and teeth structures (C.2.b)."
     },
     {
       "vsiTitle": "Symbiosis",
@@ -71,7 +82,7 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Directly relevant to syntrophism (A.4), covering nutritional interrelationships where metabolic products of one organism nourish another, including microbiome and plant root interactions."
+      "rationaleAI": "Insect-microbe nutritional partnerships and plant root associations exemplify syntrophism (A.4)."
     },
     {
       "vsiTitle": "Microbiomes",
@@ -79,22 +90,27 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Covers nutritional roles of microbial communities in digestion and nutrient processing, directly relevant to syntrophism (A.4) and gut-based nutrient procurement."
+      "rationaleAI": "Microbial communities promoting healthy growth through nutritional support exemplify syntrophic nutritional interrelationships (A.4)."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.4"
       ],
-      "rationaleAI": "Addresses diverse nutritional patterns (A.1) including chemotrophism and autotrophism in bacteria, archaea, and fungi, plus nitrogen fixation as a syntrophic process."
+      "rationaleAI": "Microbial ecology including nitrogen fixation illustrates diverse nutritional patterns such as chemotrophism (A.1) and syntrophic relationships (A.4)."
     },
     {
       "vsiTitle": "Agriculture",
       "vsiAuthor": "Paul Brassley, Richard Soffe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers applied aspects of nutrition and food production, including soil nutrients and the agricultural basis of human nutrient procurement."
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Crop cultivation connects to nutritional patterns (A) and photosynthetic food production by plants (B)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

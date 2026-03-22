@@ -4,64 +4,124 @@
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "relevantPathsAI": [],
-      "rationaleAI": "Squarely focused on the Earth's physical properties including gravitational field, magnetism, seismicity, and heat flow—the core content of this entire section."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "D",
+        "D.2",
+        "D.3",
+        "E",
+        "E.1",
+        "E.2",
+        "E.3"
+      ],
+      "rationaleAI": "Seismology, gravity, and geomagnetism address gravitational field (A), magnetic field (B), thermal properties (D), and mechanical properties (E)."
     },
     {
       "vsiTitle": "Gravity",
       "vsiAuthor": "Timothy Clifton",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to gravitational acceleration measurement, isostasy, and gravity anomalies covered in the section's treatment of the Earth's gravitational field."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Gravitational theory connects to gravitational field (A), characteristics (A.1), and measurement (A.2)."
     },
     {
       "vsiTitle": "Magnetism",
       "vsiAuthor": "Stephen J. Blundell",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses magnetic field measurement, sources, and the Earth's magnetic field, directly relevant to polarity reversals, magnetic storms, and magnetospheric phenomena."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Earth's magnetic field addresses measurement (B.1), sources (B.2), and variations (B.3)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides an overview of the Earth's gravitational, magnetic, and thermal properties along with radioactive decay as an internal heat source."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "B.2",
+        "B.3",
+        "D",
+        "D.3",
+        "G"
+      ],
+      "rationaleAI": "Plate tectonics and magnetic field connect to B, convection (D.3), and crustal deformation (G)."
     },
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Treats geophysics, tectonics, and the physical properties of Earth materials including rock deformation, folding, and faulting."
+      "relevantPathsAI": [
+        "D",
+        "D.3",
+        "E",
+        "F",
+        "G",
+        "G.1",
+        "G.2",
+        "G.3"
+      ],
+      "rationaleAI": "Tectonics connect to heat flow (D.3), mechanical properties (E), material properties (F), and deformation (G)."
     },
     {
       "vsiTitle": "Plate tectonics",
       "vsiAuthor": "Peter Molnar",
       "relevantPathsAI": [
-        "D.3"
+        "D.3",
+        "E.2",
+        "G",
+        "G.1",
+        "G.2",
+        "G.3"
       ],
-      "rationaleAI": "Directly relevant to crustal deformation, tectonic folding, faulting, fracture in rocks, and mountain building discussed in sections G and D.3."
+      "rationaleAI": "Plate boundaries connect to convection (D.3), seismic waves (E.2), and deformation (G)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "relevantPathsAI": [],
-      "rationaleAI": "Details physical properties of minerals including density, magnetic susceptibility, electrical conductivity, and optical characteristics—directly mapping to section F on physical properties of Earth materials."
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.6"
+      ],
+      "rationaleAI": "Mineral properties connect to density (F.1) and optical properties (F.6)."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Examines rock density, porosity, and mechanical properties relevant to the section's treatment of volumetric and mechanical properties of Earth materials."
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.2",
+        "F.3"
+      ],
+      "rationaleAI": "Rock properties connect to volumetric (F.1), mechanical (F.2), and thermal (F.3)."
     },
     {
       "vsiTitle": "Volcanoes",
       "vsiAuthor": "Michael J. Branney, Jan Zalasiewicz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to surface manifestations of heat flow including volcanoes, geysers, and hot springs, as well as convection and magmatic processes."
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Volcanic processes address heat flow manifestations (D.4)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explains radioactive decay as a major source of the Earth's internal heat, directly relevant to the section's discussion of heat sources and thermal properties."
+      "relevantPathsAI": [
+        "D.1"
+      ],
+      "rationaleAI": "Radioactive decay connects to heat sources (D.1)."
     },
     {
       "vsiTitle": "The Sun",
@@ -69,32 +129,41 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Relevant to the Earth's magnetic field interactions with solar wind, magnetic storms, and magnetospheric substorms discussed in section B.3."
+      "rationaleAI": "Solar dynamics connect to magnetic field solar variations (B.3)."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses crystal structure and deformation properties relevant to the mechanical and physical properties of Earth materials, including stress-strain behavior."
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Crystal analysis connects to Earth material properties (F)."
     },
     {
       "vsiTitle": "Landscapes and Geomorphology",
       "vsiAuthor": "Andrew Goudie, Heather Viles",
-      "relevantPathsAI": [],
-      "rationaleAI": "Treats mass movement, crustal deformation processes, and surface effects of geological forces relevant to the deformation of materials in the Earth's crust."
+      "relevantPathsAI": [
+        "G"
+      ],
+      "rationaleAI": "Tectonic controls connect to crustal deformation (G)."
     },
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
-      "relevantPathsAI": [],
-      "rationaleAI": "Discusses the ionosphere and electromagnetic spectrum, relevant to the section's treatment of electrical currents in the ionosphere and the Earth's electrical properties."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Atmospheric radiation connects to ionospheric currents (C.1)."
     },
     {
       "vsiTitle": "Michael Faraday",
       "vsiAuthor": "Frank A.J.L. James",
-      "relevantPathsAI": [],
-      "rationaleAI": "Faraday's foundational work on electromagnetism and field theory underpins the understanding of the Earth's magnetic and electrical properties."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Faraday's field work connects to Earth's electrical properties (C)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

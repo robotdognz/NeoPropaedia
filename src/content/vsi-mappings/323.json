@@ -5,12 +5,14 @@
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
       "relevantPathsAI": [
+        "A",
         "A.1",
         "A.2",
         "A.3",
+        "A.4",
         "A.5"
       ],
-      "rationaleAI": "Covers cell membrane structure (A.1), compartmentalization (A.2), and transport mechanisms including osmosis (A.3) and active transport (A.5)."
+      "rationaleAI": "Cell membrane biology addresses membranes (A) including nature (A.1), compartmentalization (A.2), osmosis (A.3), diffusion (A.4), and active transport (A.5)."
     },
     {
       "vsiTitle": "The Brain",
@@ -19,41 +21,39 @@
         "B",
         "C",
         "C.1",
+        "C.2",
+        "C.3",
         "C.4"
       ],
-      "rationaleAI": "Directly addresses the nerve impulse (C), neuron structure (C.1), synaptic transmission (C.4), ion channels, and bioelectricity (B)."
+      "rationaleAI": "Neurophysiology addresses bioelectricity (B) and nerve impulse (C) including neuron structure (C.1), characteristics (C.2), impulse nature (C.3), and synaptic transmission (C.4)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
       "relevantPathsAI": [
         "A.1",
-        "A.4",
-        "A.5",
-        "B"
+        "D"
       ],
-      "rationaleAI": "Covers the molecular basis of membrane structure (A.1), molecular recognition in transport (A.4-A.5), and chemistry underlying bioelectricity (B)."
+      "rationaleAI": "Protein structures connect to membrane nature (A.1). Molecular machines relate to contractile activity (D)."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
       "relevantPathsAI": [
-        "A.4",
-        "A.5",
-        "C.3",
-        "D"
+        "A",
+        "A.1"
       ],
-      "rationaleAI": "Addresses the biochemical basis of membrane transport (A.4-A.5), chemical reactions in nerve impulse propagation (C.3), and muscle contraction (D)."
+      "rationaleAI": "Biomolecular structures connect to cell membrane (A) and nature (A.1)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
       "relevantPathsAI": [
+        "B",
         "C",
-        "D.2",
-        "D.4"
+        "D"
       ],
-      "rationaleAI": "Covers muscle contraction including striated, cardiac, and smooth muscle (D.2-D.4), nerve impulse transmission (C), and physiological mechanisms."
+      "rationaleAI": "Nervous system and motor responses connect to bioelectricity (B), nerve impulse (C), and muscle contraction (D)."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
@@ -62,23 +62,26 @@
         "C",
         "C.4"
       ],
-      "rationaleAI": "Covers neural signal processing, synapse function (C.4), and brain imaging of nerve impulse transmission (C)."
+      "rationaleAI": "Neural processes connect to nerve impulse (C) and synapses (C.4)."
     },
     {
       "vsiTitle": "The Eye",
       "vsiAuthor": "Michael F. Land",
       "relevantPathsAI": [
-        "C"
+        "C.1",
+        "C.3"
       ],
-      "rationaleAI": "Illustrates nerve impulse transmission (C) through photoreceptors, optic nerve signaling, and retinal processing of stimuli."
+      "rationaleAI": "Retinal anatomy connects to neuron structure (C.1) and impulse nature (C.3)."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
       "relevantPathsAI": [
+        "C",
+        "D",
         "D.1"
       ],
-      "rationaleAI": "Covers contractile and motile activity across animal groups (D.1), including muscle systems and nervous systems in diverse phyla."
+      "rationaleAI": "Nervous systems and muscles connect to nerve impulse (C) and contractile activity (D.1)."
     },
     {
       "vsiTitle": "Marine biology",
@@ -87,8 +90,9 @@
         "E",
         "E.2"
       ],
-      "rationaleAI": "Relevant to bioluminescence (E) covering the range and variety of bioluminescent marine organisms (E.2)."
+      "rationaleAI": "Marine bioluminescent organisms connect to bioluminescence (E, E.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

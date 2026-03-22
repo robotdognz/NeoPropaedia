@@ -5,49 +5,66 @@
       "vsiTitle": "Galaxies",
       "vsiAuthor": "John Gribbin",
       "relevantPathsAI": [
+        "A",
         "A.1",
+        "A.1.a",
+        "A.1.b",
+        "A.1.c",
         "A.2",
         "A.4",
         "A.6",
-        "A.5.c",
-        "B"
+        "B",
+        "B.5",
+        "B.5.a",
+        "B.7"
       ],
-      "rationaleAI": "Core text: covers galaxy classification and distribution (A.1), physical properties (A.2), clusters (A.4), the Milky Way (B), quasars (A.5.c), and galaxy evolution (A.6)."
+      "rationaleAI": "Galactic classification (A.1.a), distances (A.1.b, A.1.c), stellar populations (B.5.a), and galaxy evolution (A.6, B.7)."
     },
     {
       "vsiTitle": "Stars",
       "vsiAuthor": "Andrew King",
       "relevantPathsAI": [
         "B.4",
+        "B.5",
+        "B.7",
+        "C",
+        "D",
+        "D.2",
+        "D.3",
+        "D.4",
         "D.5",
-        "D.7",
         "D.6",
-        "D.4"
+        "D.7",
+        "D.7.a",
+        "D.7.b"
       ],
-      "rationaleAI": "Core text: covers the Hertzsprung-Russell diagram (B.4, D.5.a), stellar evolution (D.7), nuclear fusion and energy generation (D.6.b), variable stars including novae and supernovae (D.4), neutron stars and white dwarfs (D.7)."
+      "rationaleAI": "HR diagram (B.4), stellar populations (B.5), evolution (D.7), nucleosynthesis (B.7.b, D.7.b), and structure (D.6)."
     },
     {
       "vsiTitle": "Astrophysics",
       "vsiAuthor": "James Binney",
       "relevantPathsAI": [
+        "A",
+        "A.3",
+        "A.5",
+        "B",
+        "B.6",
+        "C",
+        "D",
         "D.6",
-        "D.2.c",
-        "B.5",
-        "B.6.c",
-        "B.6"
+        "D.7"
       ],
-      "rationaleAI": "Covers the physics of galaxies and stars including stellar atmospheres and internal structure (D.6), electromagnetic spectrum observations (D.2.c), magnetic fields (B.5.h, B.6.c), and galactic dynamics (B.6.d)."
+      "rationaleAI": "Galactic dynamics (A.3, B.6), extragalactic sources (A.5), star clusters (C), and stellar evolution (D.7)."
     },
     {
       "vsiTitle": "Cosmology",
       "vsiAuthor": "Peter Coles",
       "relevantPathsAI": [
+        "A.1.c",
         "A.4",
-        "A.6",
-        "A.5.c",
-        "B"
+        "A.6"
       ],
-      "rationaleAI": "Relevant to galaxy clusters and their distribution (A.4), quasars (A.5.c), the Milky Way's place in the universe (B), and the origin and evolution of galaxies (A.6)."
+      "rationaleAI": "Galaxy formation connects to distribution (A.1.c), clusters (A.4), and origin (A.6)."
     },
     {
       "vsiTitle": "The Sun",
@@ -56,92 +73,91 @@
         "D.2",
         "D.3",
         "D.6",
-        "B.5"
+        "D.7"
       ],
-      "rationaleAI": "Relevant as the nearest and best-studied star, providing the observational basis for understanding stellar properties (D.2-D.3), stellar structure (D.6), and magnetic fields (B.5.h)."
+      "rationaleAI": "Solar properties connect to observable (D.2) and derived characteristics (D.3), structure (D.6), and evolution (D.7)."
     },
     {
       "vsiTitle": "Black holes",
       "vsiAuthor": "Katherine Blundell",
       "relevantPathsAI": [
-        "A.5",
-        "D.7"
+        "A.5.c",
+        "D.4.b.ii",
+        "D.7.a.iii"
       ],
-      "rationaleAI": "Directly relevant to quasars and active galactic nuclei (A.5), extragalactic X-ray sources (A.5.b), and end states of stellar evolution including neutron stars (D.7)."
+      "rationaleAI": "Quasars (A.5.c), supernovae (D.4.b.ii), and post-main-sequence evolution (D.7.a.iii)."
     },
     {
       "vsiTitle": "The History of Astronomy",
       "vsiAuthor": "Michael Hoskin",
       "relevantPathsAI": [
-        "B",
+        "A.1.b",
+        "B.1",
         "D.1"
       ],
-      "rationaleAI": "Covers the historical development of stellar classification, constellations and star naming (D.1.b-c), and the discovery of the Milky Way's structure (B)."
+      "rationaleAI": "Observational history connects to distances (A.1.b, B.1) and star identification (D.1)."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
       "relevantPathsAI": [
-        "A.1",
+        "A.1.b",
         "A.5",
         "D.2"
       ],
-      "rationaleAI": "Covers radio and optical telescopes essential for determining galaxy distances (A.1.b), observing extragalactic radio sources (A.5.a), and measuring stellar spectra and luminosities (D.2)."
+      "rationaleAI": "Telescope technology connects to distances (A.1.b), sources (A.5), and observations (D.2)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
       "relevantPathsAI": [
-        "D.2.c",
-        "D.2"
+        "D.2.c"
       ],
-      "rationaleAI": "Relevant to stellar spectra (D.2.c), the electromagnetic spectrum used for galaxy and star observation, and the wave-particle duality underlying spectral analysis (D.2.b)."
+      "rationaleAI": "Light physics connects to stellar spectra (D.2.c)."
     },
     {
       "vsiTitle": "Gravity",
       "vsiAuthor": "Timothy Clifton",
       "relevantPathsAI": [
-        "D.7",
-        "B.6",
-        "A.4"
+        "B.6.d"
       ],
-      "rationaleAI": "Relevant to gravitational condensation in star formation (D.7.a.i), galactic rotation and dynamics (B.6.d), and interactions between galaxy cluster members (A.4.b)."
+      "rationaleAI": "Gravitational theory connects to galactic rotation (B.6.d)."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
       "relevantPathsAI": [
-        "D.7",
-        "B.7"
+        "B.7.b",
+        "D.7.b"
       ],
-      "rationaleAI": "Relevant to the formation of chemical elements in stars through nucleosynthesis (D.7.b) and the chemical evolution of the Galaxy (B.7.b)."
+      "rationaleAI": "Element origins connect to chemical evolution (B.7.b) and stellar nucleosynthesis (D.7.b)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.a",
+        "A.5.b"
       ],
-      "rationaleAI": "Covers electromagnetic radiation relevant to radio galaxies (A.5.a), X-ray galaxies (A.5.b), and the observational methods used across the electromagnetic spectrum for stellar and galactic study."
+      "rationaleAI": "EM radiation connects to radio (A.5.a) and X-ray galaxies (A.5.b)."
     },
     {
       "vsiTitle": "Planetary Systems",
       "vsiAuthor": "Raymond T. Pierrehumbert",
       "relevantPathsAI": [
-        "D.7",
         "B.7.c"
       ],
-      "rationaleAI": "Relevant to the formation of planetary systems around stars as part of stellar evolution (D.7) and the broader context of star formation (B.7.c)."
+      "rationaleAI": "Planetary formation connects to star formation from gas and dust (B.7.c)."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
       "relevantPathsAI": [
-        "D.7",
-        "B.7"
+        "D.7.b"
       ],
-      "rationaleAI": "Relevant to stellar nucleosynthesis and the formation of isotopes in stars (D.7.b), connecting to the chemical evolution of the Galaxy (B.7.b)."
+      "rationaleAI": "Nuclear structure connects to element formation in stars (D.7.b)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

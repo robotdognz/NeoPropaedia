@@ -4,207 +4,306 @@
     {
       "vsiTitle": "Ancient Greece",
       "vsiAuthor": "Paul Cartledge",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers Archaic and Classical Greek civilization including the poleis, Sparta, Athens, Philip II, and Alexander, the core of subsections B and C."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "C"
+      ],
+      "rationaleAI": "Ancient Greece addresses archaic (B.1), classical (B.2), and Hellenistic (C) periods."
     },
     {
       "vsiTitle": "The Roman Republic",
       "vsiAuthor": "David M. Gwynn",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the Roman Republic from its founding through the Punic Wars, Gracchi reforms, and Caesar's dictatorship, directly relevant to subsections D3-D5."
+      "relevantPathsAI": [
+        "D",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5"
+      ],
+      "rationaleAI": "The Roman Republic addresses Rome's rise (D), early Rome (D.2), early (D.3), middle (D.4), and late (D.5) Republic."
     },
     {
       "vsiTitle": "The Roman Empire",
       "vsiAuthor": "Christopher Kelly",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the Roman Empire from Augustus through the 4th century including provincial administration and decline, directly relevant to subsection E."
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "E.3"
+      ],
+      "rationaleAI": "The Roman Empire addresses Julio-Claudians (E.1), Flavians/Antonines (E.2), and zenith (E.3)."
     },
     {
       "vsiTitle": "Alexander the Great",
       "vsiAuthor": "Hugh Bowden",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsection B2h on Alexander's empire, his conquest of Persia, and the ideals and governing practices of his rule."
+      "relevantPathsAI": [
+        "B.2.h"
+      ],
+      "rationaleAI": "Alexander addresses his empire (B.2.h)."
     },
     {
       "vsiTitle": "The Hellenistic Age",
       "vsiAuthor": "Peter Thonemann",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the Hellenistic kingdoms after Alexander including the Ptolemaic and Seleucid states, directly relevant to subsection C."
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Hellenistic Age addresses kingdoms (C.1), interstate relations (C.2), and culture (C.3)."
     },
     {
       "vsiTitle": "The Etruscans",
       "vsiAuthor": "Christopher Smith",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsection A3a on Etruscan origins, language, cities, government, art, and their formative influence over early Rome."
+      "relevantPathsAI": [
+        "A.3.a.i"
+      ],
+      "rationaleAI": "Etruscans address A.3.a.i directly."
     },
     {
       "vsiTitle": "Thucydides",
       "vsiAuthor": "Jennifer T. Roberts",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection B2c on the Peloponnesian War and Thucydides' account of the conflict."
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "Thucydides addresses the Peloponnesian War (B.2.c)."
     },
     {
       "vsiTitle": "Herodotus",
       "vsiAuthor": "Jennifer T. Roberts",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection B1c-viii on the Greco-Persian Wars and Herodotus' account of the conflict."
+      "relevantPathsAI": [
+        "B.1.c.viii"
+      ],
+      "rationaleAI": "Herodotus addresses Greco-Persian Wars (B.1.c.viii)."
     },
     {
       "vsiTitle": "Homer",
       "vsiAuthor": "Barbara Graziosi",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1b on the world of Homer and Hesiod in the Geometric Period of early Greek civilization."
+      "relevantPathsAI": [
+        "B.1.b"
+      ],
+      "rationaleAI": "Homer relates to the Geometric Period (B.1.b)."
     },
     {
       "vsiTitle": "Classical Literature",
       "vsiAuthor": "William Allan",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers Greek and Latin literary traditions including drama, epic, and lyric poetry relevant to subsections B2a-iii, B2g, and E1d on cultural developments."
+      "relevantPathsAI": [
+        "B.2.g",
+        "E.1.d",
+        "E.3.b"
+      ],
+      "rationaleAI": "Classical literature relates to 4th-century Greek culture (B.2.g), Augustan culture (E.1.d), and Greco-Roman culture (E.3.b)."
     },
     {
       "vsiTitle": "The Celts",
       "vsiAuthor": "Barry Cunliffe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsection A3b-i on Celtic occupation of Europe, their penetration into Italy and the Balkans, and their art and social organization."
+      "relevantPathsAI": [
+        "A.3.b.i",
+        "C.2.c"
+      ],
+      "rationaleAI": "Celts address A.3.b.i and Celtic migrations (C.2.c)."
     },
     {
       "vsiTitle": "The Spartans",
       "vsiAuthor": "Andrew J. Bayliss",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection B1c-ii on Spartan dominance over the Peloponnese and B2c-d on Spartan hegemony after the Peloponnesian War."
+      "relevantPathsAI": [
+        "B.1.c.ii",
+        "B.2.d"
+      ],
+      "rationaleAI": "Spartans address Spartan dominance (B.1.c.ii) and hegemony (B.2.d)."
     },
     {
       "vsiTitle": "Ancient warfare",
       "vsiAuthor": "Harry Sidebottom",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers Greek and Roman military practices relevant to the extensive warfare discussed across subsections B, C, D, and E."
+      "relevantPathsAI": [
+        "B.2.c",
+        "D.4.a",
+        "E.1"
+      ],
+      "rationaleAI": "Ancient warfare relates to the Peloponnesian War (B.2.c), Punic Wars (D.4.a), and imperial expansion (E.1)."
     },
     {
       "vsiTitle": "Ancient Greek and Roman Science",
       "vsiAuthor": "Liba Taub",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections B1c-vii and C3b on the beginnings of philosophy, science, and Hellenistic scientific developments."
+      "relevantPathsAI": [
+        "B.1.c.vii",
+        "B.2.g",
+        "E.3.b"
+      ],
+      "rationaleAI": "Ancient science relates to Archaic philosophy (B.1.c.vii), 4th-century culture (B.2.g), and Greco-Roman culture (E.3.b)."
     },
     {
       "vsiTitle": "Late Antiquity",
       "vsiAuthor": "Gillian Clark",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the transformation of Greco-Roman culture and the rise of Christianity in the 3rd-4th centuries, directly relevant to subsection E4."
+      "relevantPathsAI": [
+        "E.4"
+      ],
+      "rationaleAI": "Late Antiquity relates to 3rd-4th century changes (E.4)."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the founding of Constantinople and the transition from Roman to Byzantine Empire, relevant to subsection E4e-ii."
+      "relevantPathsAI": [
+        "E.4.e.ii"
+      ],
+      "rationaleAI": "Byzantium relates to Constantine's Constantinople (E.4.e.ii)."
     },
     {
       "vsiTitle": "Christianity",
       "vsiAuthor": "Linda Woodhead",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection E4b-c on the rise and spread of Christianity in the Roman Empire and its establishment as state religion."
+      "relevantPathsAI": [
+        "E.4.b",
+        "E.4.f.iii"
+      ],
+      "rationaleAI": "Christianity relates to its spread (E.4.b) and state religion establishment (E.4.f.iii)."
     },
     {
       "vsiTitle": "Horace",
       "vsiAuthor": "Llewelyn Morgan",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection E1d on the culture of the Augustan Age and the contributions of Horace."
+      "relevantPathsAI": [
+        "E.1.d"
+      ],
+      "rationaleAI": "Horace relates to Augustan culture (E.1.d)."
     },
     {
       "vsiTitle": "Ovid",
       "vsiAuthor": "Llewelyn Morgan",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection E1d on the culture of the Augustan Age and the contributions of Ovid."
+      "relevantPathsAI": [
+        "E.1.d"
+      ],
+      "rationaleAI": "Ovid relates to Augustan culture (E.1.d)."
     },
     {
       "vsiTitle": "Cicero",
       "vsiAuthor": "Yelena Baraz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection D5h on oratory and philosophy in the late Republic, where Cicero was a central figure."
+      "relevantPathsAI": [
+        "D.5.d.ii",
+        "D.5.h"
+      ],
+      "rationaleAI": "Cicero relates to mid-1st century politics (D.5.d.ii) and late republican culture (D.5.h)."
     },
     {
       "vsiTitle": "Socrates",
       "vsiAuthor": "C. C. W. Taylor",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection B2c on intellectual changes at Athens during the Peloponnesian War, specifically the Sophists and Socrates."
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "Socrates relates to intellectual changes during the Peloponnesian War (B.2.c)."
     },
     {
       "vsiTitle": "Aristotle",
       "vsiAuthor": "Jonathan Barnes",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B2g on developments in philosophy in 4th-century Greece."
+      "relevantPathsAI": [
+        "B.2.g"
+      ],
+      "rationaleAI": "Aristotle relates to 4th-century Greek culture (B.2.g)."
     },
     {
       "vsiTitle": "Classics",
       "vsiAuthor": "Mary Beard, John Henderson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides a broad introduction to the study of Classical Greek and Roman civilization, relevant to the section's overall scope."
+      "relevantPathsAI": [
+        "B",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Classics relates broadly to Greece (B), Rome (D), and the empire (E)."
     },
     {
       "vsiTitle": "Ancient philosophy",
       "vsiAuthor": "Julia Annas",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers Graeco-Roman philosophical traditions relevant to subsections B1c-vii, B2g, and E3b on intellectual developments."
+      "relevantPathsAI": [
+        "B.1.c.vii",
+        "B.2.g",
+        "C.3.b"
+      ],
+      "rationaleAI": "Ancient philosophy relates to beginnings of philosophy (B.1.c.vii), 4th-century culture (B.2.g), and Hellenistic philosophy (C.3.b)."
     },
     {
       "vsiTitle": "Stoicism",
       "vsiAuthor": "Brad Inwood",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C3b and E3b on Hellenistic and Greco-Roman philosophical developments including Stoicism."
+      "relevantPathsAI": [
+        "C.3.b",
+        "E.3.b"
+      ],
+      "rationaleAI": "Stoicism relates to Hellenistic philosophy (C.3.b) and Greco-Roman culture (E.3.b)."
     },
     {
       "vsiTitle": "Epicureanism",
       "vsiAuthor": "Catherine Wilson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C3b on Hellenistic developments in philosophy."
+      "relevantPathsAI": [
+        "C.3.b"
+      ],
+      "rationaleAI": "Epicureanism relates to Hellenistic philosophy (C.3.b)."
     },
     {
       "vsiTitle": "Paganism",
       "vsiAuthor": "Owen Davies",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection E4f on the remnants of pagan culture and Julian's attempt to restore the old religion."
+      "relevantPathsAI": [
+        "A.3.b",
+        "E.4.b"
+      ],
+      "rationaleAI": "Paganism relates to trans-Alpine Europeans (A.3.b) and imperial religions (E.4.b)."
     },
     {
       "vsiTitle": "Druids",
       "vsiAuthor": "Barry Cunliffe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A3b-i on Celtic religion and social organization in trans-Alpine Europe."
+      "relevantPathsAI": [
+        "A.3.b.i"
+      ],
+      "rationaleAI": "Druids relate to the Celts (A.3.b.i)."
     },
     {
       "vsiTitle": "Roman Britain",
       "vsiAuthor": "Peter Salway",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection E1e on the annexation of Britain under Claudius and the provinces under the later empire."
+      "relevantPathsAI": [
+        "E.4.g"
+      ],
+      "rationaleAI": "Roman Britain relates to later empire provinces (E.4.g)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1c-ii on the institution of democracy at Athens under Cleisthenes and its further development under Pericles."
+      "relevantPathsAI": [
+        "B.1.c.ii",
+        "B.2.a"
+      ],
+      "rationaleAI": "Democracy relates to Cleisthenes (B.1.c.ii) and Periclean Athens (B.2.a)."
     },
     {
       "vsiTitle": "Sophocles",
       "vsiAuthor": "Edith Hall",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B2a-iii on cultural efflorescence in Periclean Athens, including drama as a major art form."
+      "relevantPathsAI": [
+        "B.2.a.iii"
+      ],
+      "rationaleAI": "Sophocles relates to Athenian cultural efflorescence (B.2.a.iii)."
     },
     {
       "vsiTitle": "The Epic",
       "vsiAuthor": "Anthony Welch",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to Homer and Hesiod in the Geometric Period and Virgil in the Augustan Age, both central to the epic literary tradition."
+      "relevantPathsAI": [
+        "B.1.b"
+      ],
+      "rationaleAI": "Epic relates to Homer and Hesiod (B.1.b)."
     },
     {
       "vsiTitle": "World Mythology",
       "vsiAuthor": "David A. Leeming",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to Greek mythology, religious developments, and panhellenic centres like Olympia and Delphi discussed in subsection B1b."
+      "relevantPathsAI": [
+        "B.1.b"
+      ],
+      "rationaleAI": "Mythology relates to Geometric Period religion (B.1.b)."
     },
     {
       "vsiTitle": "Rhetoric",
       "vsiAuthor": "Richard Toye",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection D5h on oratory and philosophy in the late Roman Republic."
+      "relevantPathsAI": [
+        "D.5.h"
+      ],
+      "rationaleAI": "Rhetoric relates to late republican oratory (D.5.h)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

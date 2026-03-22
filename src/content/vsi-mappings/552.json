@@ -7,7 +7,7 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Constitutional law governing the organization and functions of the state is the central subject (A.1)."
+      "rationaleAI": "American constitutional history covering federalism, separation of powers, individual rights, and judicial review directly addresses basic laws governing the organization and functions of the state as constitutional law (A.1)."
     },
     {
       "vsiTitle": "The British Constitution",
@@ -15,15 +15,16 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Examines constitutional law in a parliamentary system, including the Bill of Rights and common law principles (A.1)."
+      "rationaleAI": "The British unwritten constitutional system covering the Bill of Rights, Act of Settlement, and roles of parliamentary institutions directly addresses constitutional law (A.1)."
     },
     {
       "vsiTitle": "Administrative Law",
       "vsiAuthor": "Stephen Thomson",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "F.2.c"
       ],
-      "rationaleAI": "Laws governing public administration -- including judicial review, tribunals, and ombudsmen -- are the central subject (A.2)."
+      "rationaleAI": "Administrative law governing public sector decision making directly addresses laws governing public administration (A.2). Judicial review, tribunal appeals, and ombudsman complaints address administrative procedure (F.2.c)."
     },
     {
       "vsiTitle": "Public Administration",
@@ -31,23 +32,28 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "The organization, powers, and functions of public administrative authorities are examined (A.2)."
+      "rationaleAI": "Theory and practice of government bureaucracy delivering public services directly addresses laws governing public administration and the regulation of organization, powers, and functions of administrative authorities (A.2)."
     },
     {
       "vsiTitle": "International law",
       "vsiAuthor": "Vaughan Lowe",
       "relevantPathsAI": [
-        "B"
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.4"
       ],
-      "rationaleAI": "Laws governing relations among sovereign states, treaties, and international institutions are the focus (B)."
+      "rationaleAI": "International law governing relations between states addresses laws governing relations among sovereign states (B). Sovereignty and treaty law address sources and concepts (B.1). The UN system addresses supranational legislative authority (B.2). The ICJ addresses supranational judicial authority (B.3). Rules regarding armed conflict address attempts to impose rules of warfare (B.4)."
     },
     {
       "vsiTitle": "The United Nations",
       "vsiAuthor": "Jussi M. Hanhimäki",
       "relevantPathsAI": [
-        "B.2"
+        "B.2",
+        "B.5"
       ],
-      "rationaleAI": "The UN represents the most significant attempt to create a supranational legislative and executive authority (B.2)."
+      "rationaleAI": "The UN system covering the Security Council, General Assembly, and specialized agencies directly addresses the attempt to create supranational legislative and executive authority (B.2). Limiting and punishing war crimes connects to crimes against humanity (B.5)."
     },
     {
       "vsiTitle": "European Union Law",
@@ -56,48 +62,57 @@
         "B.2",
         "B.3"
       ],
-      "rationaleAI": "EU law represents a distinctive attempt to create supranational legislative and judicial authority (B.2, B.3)."
+      "rationaleAI": "EU legal framework as a supranational legal system with far-reaching effects addresses the attempt to create supranational legislative and executive authority (B.2). EU courts interpreting and applying law address supranational judicial authority (B.3)."
     },
     {
       "vsiTitle": "Human Rights",
       "vsiAuthor": "Andrew Clapham",
       "relevantPathsAI": [
-        "B.5"
+        "B.4",
+        "B.5",
+        "D.1"
       ],
-      "rationaleAI": "Laws attempting to limit war crimes and crimes against humanity, and laws promoting public welfare, are examined (B.5, D)."
+      "rationaleAI": "Human rights as international law covering prohibitions on torture, slavery, and crimes against humanity address attempts to impose rules of warfare (B.4) and to limit war crimes (B.5). Economic and social rights including right to health connect to laws providing for general social security and welfare (D.1)."
     },
     {
       "vsiTitle": "Military Justice",
       "vsiAuthor": "Eugene R. Fidell",
       "relevantPathsAI": [
-        "C.2"
+        "C.2",
+        "B.4",
+        "B.5"
       ],
-      "rationaleAI": "Laws governing offenses by military forces and persons under military discipline are the central subject (C.2)."
+      "rationaleAI": "Legal systems governing military personnel including courts-martial directly address laws governing offenses by military forces (C.2). International humanitarian law and the International Criminal Court connect to rules of warfare (B.4) and limiting war crimes (B.5)."
     },
     {
       "vsiTitle": "Criminal Justice",
       "vsiAuthor": "Julian V. Roberts",
       "relevantPathsAI": [
+        "C",
         "C.1",
-        "F.2"
+        "F",
+        "F.2.a"
       ],
-      "rationaleAI": "Principles of criminal law and the criminal justice process are examined (C.1, F.2.a)."
+      "rationaleAI": "Criminal justice systems covering policing, prosecution, sentencing, and imprisonment directly address laws governing acts viewed as crimes (C). Adversarial common law models address principles and doctrines of criminal law comparing common law and civil law systems (C.1). Criminal procedure is directly addressed (F.2.a)."
     },
     {
       "vsiTitle": "Criminology",
       "vsiAuthor": "Tim Newburn",
       "relevantPathsAI": [
-        "C"
+        "C",
+        "C.1"
       ],
-      "rationaleAI": "The study of criminal law, crime prevention, and white-collar crime is addressed (C)."
+      "rationaleAI": "Criminology examining crime measurement, causes, and responses to criminal behaviour directly addresses laws governing acts viewed as crimes (C) and principles and doctrines of criminal law (C.1)."
     },
     {
       "vsiTitle": "Law",
       "vsiAuthor": "Raymond Wacks",
       "relevantPathsAI": [
+        "A.1",
+        "C",
         "F"
       ],
-      "rationaleAI": "Courts, the legal system, and judicial procedure are broadly addressed (F)."
+      "rationaleAI": "Law covering criminal law, civil law, constitutional law, and administrative law spans constitutional law (A.1), laws governing crimes (C), and the organization and administration of the legal system (F)."
     },
     {
       "vsiTitle": "Comparative Law",
@@ -105,48 +120,54 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Comparisons between common law and civil law systems illuminate criminal law doctrines (C.1)."
+      "rationaleAI": "Comparative law examining major legal families including common law and civil law systems addresses comparisons between common law and civil law systems in criminal law principles (C.1)."
     },
     {
       "vsiTitle": "The American Judicial System",
       "vsiAuthor": "Charles L. Zelden",
       "relevantPathsAI": [
-        "F.1",
-        "F.2"
+        "F",
+        "F.1"
       ],
-      "rationaleAI": "The organization and administration of the legal system -- including courts, judges, and judicial procedure -- are examined (F.1, F.2)."
+      "rationaleAI": "The American judicial system covering courts, judges, lawyers, and judicial processes directly addresses laws of judicial procedure (F) and the organization and administration of the legal system including courts and the judiciary (F.1)."
     },
     {
       "vsiTitle": "The U.S. Supreme Court",
       "vsiAuthor": "Linda Greenhouse",
       "relevantPathsAI": [
+        "F",
         "F.1"
       ],
-      "rationaleAI": "The organization and role of the highest court in a federal judicial system is the central subject (F.1)."
+      "rationaleAI": "The Supreme Court's institutional evolution, procedural rules, and case selection directly address the organization and administration of the legal system (F) and courts and the judiciary (F.1)."
     },
     {
       "vsiTitle": "The Jury",
       "vsiAuthor": "Renee Lettow Lerner",
       "relevantPathsAI": [
-        "F.2"
+        "F",
+        "F.1",
+        "F.2.a",
+        "F.2.b"
       ],
-      "rationaleAI": "The jury system as part of criminal and civil judicial procedure is examined (F.2)."
+      "rationaleAI": "The jury system covering criminal and civil juries, juror selection, and jury nullification addresses the organization of the legal system (F.1), criminal procedure (F.2.a), and civil procedure (F.2.b)."
     },
     {
       "vsiTitle": "Habeas corpus",
       "vsiAuthor": "Amanda Tyler",
       "relevantPathsAI": [
-        "F.2"
+        "A.1",
+        "F.2.a"
       ],
-      "rationaleAI": "Habeas corpus as a fundamental legal procedure protecting liberty and constraining state power is the central subject (F.2.a)."
+      "rationaleAI": "Habeas corpus as a safeguard against executive detention addresses constitutional law and limits on government power (A.1). Its role in criminal proceedings connects to criminal procedure (F.2.a)."
     },
     {
       "vsiTitle": "The Welfare State",
       "vsiAuthor": "David Garland",
       "relevantPathsAI": [
+        "D",
         "D.1"
       ],
-      "rationaleAI": "Laws providing for general social security and welfare are examined (D.1)."
+      "rationaleAI": "Welfare state systems encompassing social insurance, public services, healthcare, and unemployment protections directly address laws promoting the public welfare (D) and laws providing for general social security and welfare (D.1)."
     },
     {
       "vsiTitle": "Public health",
@@ -154,7 +175,7 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Laws promoting public health and safety are addressed (D.2)."
+      "rationaleAI": "Population-level health management encompassing disease prevention, sanitation, and health education directly addresses laws promoting public health and safety (D.2)."
     },
     {
       "vsiTitle": "Employment Law",
@@ -162,7 +183,7 @@
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Laws regulating the health, safety, and welfare of workers are the focus (D.3)."
+      "rationaleAI": "Employment rights and labor laws covering equal pay, workplace inclusion, and workplace rights directly address laws regulating the health, safety, and welfare of workers (D.3)."
     },
     {
       "vsiTitle": "Medical law",
@@ -170,7 +191,7 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Laws governing health, consent, negligence, and patient welfare are examined (D.2)."
+      "rationaleAI": "Medical law governing organ transplantation, consent, medical negligence, and patients' rights directly addresses laws promoting public health and safety (D.2)."
     },
     {
       "vsiTitle": "Environmental Law",
@@ -178,7 +199,7 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Public welfare laws related to environmental protection and public safety are addressed (D.2)."
+      "rationaleAI": "Environmental regulatory frameworks for environmental protection and resource management address laws promoting public health and safety (D.2)."
     },
     {
       "vsiTitle": "Taxation",
@@ -186,23 +207,25 @@
       "relevantPathsAI": [
         "E"
       ],
-      "rationaleAI": "Laws governing taxation -- including income tax, corporation tax, and tax evasion -- are directly relevant (E)."
+      "rationaleAI": "Economics of taxation covering income tax, capital gains tax, corporation tax, and sales tax directly addresses laws governing taxation (E)."
     },
     {
       "vsiTitle": "The Rule of Law",
       "vsiAuthor": "Aziz Z. Huq",
       "relevantPathsAI": [
-        "A"
+        "A.1",
+        "F"
       ],
-      "rationaleAI": "The rule of law as a foundational principle underlying constitutional and administrative law is the central subject (A)."
+      "rationaleAI": "The rule of law tradition covering due process and legality addresses constitutional law (A.1) and the administration of the legal system (F)."
     },
     {
       "vsiTitle": "Privacy",
       "vsiAuthor": "Raymond Wacks",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "D.2"
       ],
-      "rationaleAI": "Data protection and privacy rights as matters of public law and constitutional protection are explored (A.1)."
+      "rationaleAI": "Privacy as a legal concept including the European Convention on Human Rights Article 8 connects to constitutional law (A.1). Data protection law and surveillance regulation address laws promoting public health and safety (D.2)."
     },
     {
       "vsiTitle": "Free speech",
@@ -210,7 +233,7 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Freedom of speech as a constitutional right and its legal limits are examined (A.1)."
+      "rationaleAI": "Free speech theory covering rights-based defenses, hate speech regulation, and censorship directly addresses basic laws governing the organization and functions of the state through constitutional protections (A.1)."
     },
     {
       "vsiTitle": "Concentration Camps",
@@ -218,32 +241,34 @@
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "The attempt to limit and punish war crimes and crimes against humanity is a central theme (B.5)."
+      "rationaleAI": "Concentration camps as institutions of mass incarceration directly address the attempt to limit and punish war crimes and crimes against peace and humanity (B.5)."
     },
     {
       "vsiTitle": "Forensic science",
       "vsiAuthor": "Jim Fraser",
       "relevantPathsAI": [
-        "F.2"
+        "F.2.a"
       ],
-      "rationaleAI": "Scientific methods used in criminal investigations and the administration of criminal justice are examined (C, F.2.a)."
+      "rationaleAI": "Forensic science applied to criminal investigation covering evidence collection, DNA profiling, and expert witness testimony directly addresses criminal procedure (F.2.a)."
     },
     {
       "vsiTitle": "Forensic psychology",
       "vsiAuthor": "David Canter",
       "relevantPathsAI": [
-        "F.2"
+        "C",
+        "F.2.a"
       ],
-      "rationaleAI": "Psychological methods applied in criminal proceedings and judicial processes are explored (F.2)."
+      "rationaleAI": "Forensic psychology applying psychological knowledge to criminal justice processes addresses laws governing acts viewed as crimes (C). Expert testimony and offender profiling connect to criminal procedure (F.2.a)."
     },
     {
       "vsiTitle": "Blasphemy",
       "vsiAuthor": "Yvonne Sherwood",
       "relevantPathsAI": [
-        "C.1"
+        "C"
       ],
-      "rationaleAI": "Blasphemy laws as a form of criminal law governing religious expression are examined (C.1)."
+      "rationaleAI": "Colonial blasphemy laws and their modern legacies address laws governing acts viewed as crimes (C) in the context of religious offense and free expression."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

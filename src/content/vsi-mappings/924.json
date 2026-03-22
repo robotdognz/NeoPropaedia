@@ -4,74 +4,118 @@
     {
       "vsiTitle": "The Crusades",
       "vsiAuthor": "Christopher Tyerman",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsections A1a-d on all the major crusades from the First through Louis IX's campaigns, the crusader states, and their decline."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.1.a",
+        "A.1.b",
+        "A.1.d"
+      ],
+      "rationaleAI": "Directly addresses the crusading movement from First through later Crusades (A.1.a, A.1.b, A.1.d), including Urban II at Clermont (A.1.a.i) and Byzantine interactions (A.1.c)."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsection A1c on the Byzantine Empire from 1081 to 1204 under the Comnenus dynasty and the Fourth Crusade."
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.1.c.i",
+        "A.1.c.ii",
+        "A.1.c.iii",
+        "A.3"
+      ],
+      "rationaleAI": "Byzantine history covers the Comnenus dynasty (A.1.c), Alexius I and the First Crusade (A.1.c.i), later Comneni (A.1.c.ii), the Fourth Crusade (A.1.c.iii), and the Palaeologus dynasty (A.3)."
     },
     {
       "vsiTitle": "The Mongols",
       "vsiAuthor": "Morris Rossabi",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsection A2 on the Mongolian invasions of eastern Europe and Southwest Asia and the Il-Khan and Golden Horde successor states."
+      "relevantPathsAI": [
+        "A.1.e",
+        "B.2",
+        "B.3.a"
+      ],
+      "rationaleAI": "Mongol campaigns address the invasion of Rus (A.1.e), invasions of eastern Europe and Southwest Asia (B.2), and successor states (B.3.a)."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the Islamic states discussed in subsection B including the Seljuq Empire, Ayyubids, Mamluks, and the Ottoman rise."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.4"
+      ],
+      "rationaleAI": "Arabs, Persians, and Turks in Islamic civilization connect to Islamic states of Southwest Asia (B.1) and North African developments (B.4)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B on the Islamic dynasties, Sunni orthodoxy under the Mamluks, and the religious dimensions of the Almoravid and Almohad movements."
+      "relevantPathsAI": [
+        "B.1.a.ii",
+        "B.4.b.ii",
+        "B.4.c"
+      ],
+      "rationaleAI": "Sunni-Shia divisions relate to Seljuq Sunni supremacy (B.1.a.ii) and Mamluk orthodoxy (B.4.b.ii). The Ismaili community relates to the Assassins (B.1.b)."
     },
     {
       "vsiTitle": "Russian History",
       "vsiAuthor": "Geoffrey Hosking",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers subsections A1e and A2a on Russia under Tatar rule, the rise of the Muscovite state, and the Golden Horde."
+      "relevantPathsAI": [
+        "A.1.e",
+        "A.2.a"
+      ],
+      "rationaleAI": "Muscovite state formation under Tatar rule connects to Russia under Mongol invasion (A.1.e) and rise of Moscow (A.2.a)."
     },
     {
       "vsiTitle": "Orthodox Christianity",
       "vsiAuthor": "A. Edward Siecienski",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A3 on the Byzantine cultural revival under the Palaeologus dynasty and the Eastern Church."
+      "relevantPathsAI": [
+        "A.1.c",
+        "A.3"
+      ],
+      "rationaleAI": "The Great Schism and Orthodox-Byzantine relationship connect to A.1.c and the Palaeologus cultural revival (A.3.b)."
     },
     {
       "vsiTitle": "Iran",
       "vsiAuthor": "Ali Ansari",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections B1a and B3a on the Seljuq Empire in Iran and the Mongol Il-Khans."
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.3.a.i"
+      ],
+      "rationaleAI": "Iranian civilization connects to Seljuq establishment in Iran (B.1.a) and Il-Khan conversion to Islam (B.3.a.i)."
     },
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the numerous dynastic successions discussed throughout the section, from the Seljuqs and Ayyubids to the Ottomans."
+      "relevantPathsAI": [
+        "B.1",
+        "B.3.b",
+        "B.4.b"
+      ],
+      "rationaleAI": "Dynastic succession connects to Seljuq Empire (B.1), Ottoman state (B.3.b), and Ayyubid/Mamluk dynasties (B.4.b)."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
       "vsiAuthor": "Peter Adamson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B4c-d on Almohad patronage of philosophy and the intellectual life of the Hafsids and Nasrids."
+      "relevantPathsAI": [
+        "B.4.d.i"
+      ],
+      "rationaleAI": "Philosophical traditions connect to late medieval North African intellectual life including Sufism (B.4.d.i)."
     },
     {
       "vsiTitle": "War & Religion",
       "vsiAuthor": "Jolyon Mitchell, Joshua Rey",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to the religious motivations and consequences of the crusading movement discussed in subsection A."
+      "relevantPathsAI": [
+        "A.1",
+        "B.4.c"
+      ],
+      "rationaleAI": "Religious justification of war connects to the crusading movement (A.1) and Berber religious reform movements (B.4.c)."
     },
     {
       "vsiTitle": "Pilgrimage",
       "vsiAuthor": "Ian Reader",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A1a on the disruption of pilgrimage routes by Muslims as a background cause of the First Crusade."
+      "relevantPathsAI": [
+        "A.1.a.i"
+      ],
+      "rationaleAI": "Disruption of pilgrimage routes relates to the background of the First Crusade (A.1.a.i)."
     },
     {
       "vsiTitle": "Global Islam",
@@ -80,5 +124,6 @@
       "rationaleAI": "Relevant to the spread and evolution of Islam across North Africa, Southwest Asia, and Anatolia discussed in subsection B."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

@@ -4,101 +4,150 @@
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
-      "relevantPathsAI": [],
-      "rationaleAI": "Core VSI for this section, covering cell theory, cell classification (procaryotic vs. eucaryotic), cell membrane, nuclear envelope, organelles, the cell cycle, and cell division."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.2.a",
+        "A.2.b",
+        "A.2.d",
+        "B",
+        "B.1",
+        "B.2",
+        "B.2.a",
+        "B.2.b",
+        "B.2.c",
+        "C",
+        "C.1",
+        "C.2",
+        "C.3",
+        "C.5",
+        "D",
+        "D.1",
+        "D.2",
+        "D.2.a"
+      ],
+      "rationaleAI": "Cell biology fundamentals including cell theory (A.1), classification of prokaryotic versus eukaryotic cells (A.2.a), diversity of animal cell types (A.2.b), macromolecular composition and organelle structure such as nuclear envelopes and endoplasmic reticulum (B.1, B.2.b, B.2.c), cell signaling and differentiation as functional aspects (C.3, C.5), and cell division processes (D)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.a",
+        "B.2.b",
+        "C.3",
+        "D",
+        "D.1",
+        "D.2.c"
       ],
-      "rationaleAI": "Covers chromosomes, DNA replication, cell division (mitosis and meiosis), and molecular biology relevant to B.1.a (nucleic acids, proteins) and D (the cell cycle)."
+      "rationaleAI": "DNA structure and sequencing relate to nucleic acids as macromolecules in cells (B.1.a), gene expression through protein synthesis connects nucleus-cytoplasm interplay (C.3), and cell division including chromosomal hereditary mechanisms and sex linkage relates to mitosis and meiosis (D.2.a, D.2.c)."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
       "relevantPathsAI": [
-        "B.1"
+        "B",
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "C.3"
       ],
-      "rationaleAI": "Addresses macromolecules in cells (nucleic acids, proteins) and the molecular underpinnings of genetic replication and cell design (B.1)."
+      "rationaleAI": "Nucleic acid and protein structure at the cellular and subcellular level directly addresses macromolecules in cells (B.1.a), small molecules and lipids (B.1.b), and gene expression mechanisms governing nucleus-cytoplasm interactions (C.3)."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
       "relevantPathsAI": [
-        "B.1"
+        "B",
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "C.1"
       ],
-      "rationaleAI": "Covers the cell as a molecular system (B.1) including biochemical reactions, DNA, proteins, and small molecules like lipids and amino acids (B.1.b)."
+      "rationaleAI": "Chemistry of living cells covering biomolecules including DNA and proteins (B.1.a), metabolic pathways and enzymatic processes (B.1.b), and how biochemical reactions are organized within the cell matrix (C.1)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "C.2",
+        "E"
       ],
-      "rationaleAI": "Relevant to cell macromolecules and small molecules (B.1), covering chemical bonds, alpha helices in proteins, and molecular recognition in cellular processes."
+      "rationaleAI": "Chemical bonding and protein structures such as the alpha helix relate to macromolecules in cells (B.1.a), lipids and small molecules (B.1.b), molecular recognition at cell membranes (C.2), and molecular processes underlying fertilization (E)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
       "relevantPathsAI": [
         "C.5",
+        "D",
+        "D.1",
+        "D.2",
+        "D.2.a",
         "E"
       ],
-      "rationaleAI": "Addresses cell differentiation, cells in combination forming tissues and multicellular organisms (C.5), and fertilization events (E)."
+      "rationaleAI": "Cell division, differentiation, and morphogenesis as the basis of development from a fertilized egg directly address the cell cycle (D), cells combining into multicellular organisms (C.5), and the events of fertilization (E)."
     },
     {
       "vsiTitle": "Stem Cells",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
+        "A.2.b",
         "C.5",
-        "D"
+        "D",
+        "D.1",
+        "D.2"
       ],
-      "rationaleAI": "Directly relevant to the cell cycle (D), cell division, and cells in combination forming tissues (C.5)."
+      "rationaleAI": "Stem cell classification and differentiation mechanisms relate to cell types in animals (A.2.b), cells combining into tissues and multicellular organisms (C.5), and cell growth and division processes (D.1, D.2)."
     },
     {
       "vsiTitle": "Microscopy",
       "vsiAuthor": "Terence Allen",
       "relevantPathsAI": [
-        "B.2"
+        "A.1.a"
       ],
-      "rationaleAI": "Covers the tools essential for studying cell morphological elements (B.2.b) including electron microscopy for organelles, ribosomes, and cytoskeleton."
+      "rationaleAI": "Historical development of microscopy from Hooke and Leeuwenhoek directly relates to the historical background of cell theory (A.1.a), as microscopic observation was foundational to discovering cells."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
       "relevantPathsAI": [
-        "A.2",
+        "A.2.a",
         "B.2.c"
       ],
-      "rationaleAI": "Covers procaryotic cell structure and function (A.2.a, B.2.c), illustrating the contrast between procaryotic and eucaryotic cells."
+      "rationaleAI": "Bacterial biology as the oldest life forms relates to comparisons between prokaryotic and eukaryotic cells (A.2.a, B.2.c), covering organisms without nuclei as a fundamental cell classification."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
       "relevantPathsAI": [
-        "A.2",
+        "A.2.a",
         "B.2.c"
       ],
-      "rationaleAI": "Addresses procaryotic and eucaryotic microorganisms (A.2.a, B.2.c), including bacteria, archaea, and fungi at the cellular level."
+      "rationaleAI": "Study of microorganisms including bacteria, archaea, and protists addresses the general features distinguishing prokaryotic from eukaryotic cells (A.2.a) and their structural differences (B.2.c)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
       "relevantPathsAI": [
-        "A.2.c"
+        "A.2.c",
+        "A.2.d"
       ],
-      "rationaleAI": "Covers outstanding features of the plant cell and plant cell types (A.2.c) including meristematic, epidermal, and other specialized plant cells."
+      "rationaleAI": "Plant biology covering evolution from simple organisms to seed plants relates to outstanding features of the plant cell and plant tissue types (A.2.c), and comparison between animal and plant cells (A.2.d)."
     },
     {
       "vsiTitle": "Enzymes",
       "vsiAuthor": "Paul Engel",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.a",
+        "C.1"
       ],
-      "rationaleAI": "Addresses proteins as functional molecules in cells (B.1.a) and the enzymatic processes central to cell metabolism and the cell cycle."
+      "rationaleAI": "Enzyme structure and function as proteins central to all life processes relates to macromolecules in cells (B.1.a) and the internal environment of the cell where catalytic reactions occur (C.1)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

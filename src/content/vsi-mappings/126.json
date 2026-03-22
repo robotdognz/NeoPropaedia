@@ -4,122 +4,168 @@
     {
       "vsiTitle": "Physics",
       "vsiAuthor": "Sidney Perkowitz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Broad coverage of classical mechanics including force, matter, energy, and gravitational waves relevant to A (principles of classical mechanics)."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.3",
+        "C"
+      ],
+      "rationaleAI": "Classical mechanics and electromagnetism as fundamental physics topics connect to principles of classical mechanics (A), fundamental parameters of matter, space, motion, and time (A.1), and dynamics of motion systems (A.3). Relativistic mechanics connects to section C."
     },
     {
       "vsiTitle": "Gravity",
       "vsiAuthor": "Timothy Clifton",
       "relevantPathsAI": [
-        "A.3",
-        "B"
+        "A.3.b.v",
+        "A.3.e.iii",
+        "B",
+        "B.1",
+        "B.2",
+        "C",
+        "C.1",
+        "C.3"
       ],
-      "rationaleAI": "Directly covers Newton's law of universal gravitation (A.3.b.v), Kepler's laws of planetary motion (A.3.b.vi), and celestial mechanics (B)."
+      "rationaleAI": "Historical development from Kepler's laws through Newtonian gravity (A.3.b.v) to Einstein's general relativity (C). Detection of gravitational waves and dark energy connect to celestial mechanics (B) and relativistic mechanics (C). The relationship between gravitational and inertial mass is directly addressed (C.3)."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
       "relevantPathsAI": [
-        "A.3",
-        "C"
+        "A.3.e.iii",
+        "C",
+        "C.1",
+        "C.2",
+        "C.3"
       ],
-      "rationaleAI": "Directly covers relativistic mechanics (C), including special relativity, relativistic kinematics, and the equivalence of mass and energy (A.3.e.iii)."
+      "rationaleAI": "Special and general theories of relativity including time dilation, length contraction, and mass-energy equivalence (A.3.e.iii) directly address relativistic mechanics (C), mechanical foundations (C.1), relativistic kinematics (C.2), and the relationship between gravitational and inertial mass (C.3)."
     },
     {
       "vsiTitle": "Fluid Mechanics",
       "vsiAuthor": "Eric Lauga",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers fluid statics, hydrodynamics, aerodynamics, laminar and turbulent flow, and compressible flow throughout section F."
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.2",
+        "F.2.a",
+        "F.2.b",
+        "F.3",
+        "F.3.a",
+        "F.3.b",
+        "F.3.c",
+        "F.3.d"
+      ],
+      "rationaleAI": "Fluid dynamics and hydrodynamics directly address fluid mechanics (F), including general properties of fluids (F.1), fluid statics and equilibrium (F.2), buoyancy (F.2.b), frictionless flow (F.3.a), laminar and turbulent flow (F.3.b), boundary layers and drag (F.3.c), and compressible flow with shock waves (F.3.d)."
     },
     {
       "vsiTitle": "The History of Physics",
       "vsiAuthor": "J. L. Heilbron",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the historical development of mechanics from Galileo and Newton through Einstein, providing context for sections A, B, and C."
+      "relevantPathsAI": [
+        "A",
+        "A.3.b"
+      ],
+      "rationaleAI": "Galileo, Newton, and Kepler as transformative figures in physics connect to the historical development of dynamics and kinetics (A.3.b), including Newton's laws of motion and universal gravitation."
     },
     {
       "vsiTitle": "Newton",
       "vsiAuthor": "Rob Iliffe",
       "relevantPathsAI": [
-        "A.3",
+        "A.3.b",
+        "A.3.b.i",
+        "A.3.b.v",
+        "A.3.b.vi",
         "B"
       ],
-      "rationaleAI": "Directly relevant to Newton's laws of motion (A.3.b.i), law of universal gravitation (A.3.b.v), and the foundations of celestial mechanics (B)."
+      "rationaleAI": "Newton's contributions to mechanics including the Principia directly address Newton's laws of motion (A.3.b.i), the law of universal gravitation (A.3.b.v), and Kepler's laws of planetary motion (A.3.b.vi). His work on celestial mechanics relates to section B."
     },
     {
       "vsiTitle": "Galileo",
       "vsiAuthor": "Stillman Drake",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b",
+        "A.3.b.i",
+        "A.3.b.ii",
+        "A.3.b.iii"
       ],
-      "rationaleAI": "Foundational to kinematics (A.3.a), projectile motion and ballistics (A.3.b.iii), and the law of inertia (A.3.b.i)."
+      "rationaleAI": "Galileo's contributions to physics including his break from Aristotelian physics and the development of the laws of motion connect to kinetics (A.3.b), Newton's laws predecessors (A.3.b.i), motion under constant force (A.3.b.ii), and ballistics (A.3.b.iii)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
       "relevantPathsAI": [
         "D",
+        "D.1",
+        "G",
         "G.3"
       ],
-      "rationaleAI": "Covers stress-strain relationships, hardness, and mechanical properties of materials relevant to elasticity (D) and yield strength and fracture (G.3)."
+      "rationaleAI": "Material properties including hardness and flexibility relate to stress dynamics of elastic materials (D) and elasticity (D.1). Study of material strength and fabrication connects to yield strength of materials, fracture and fatigue (G.3)."
     },
     {
       "vsiTitle": "Soft Matter",
       "vsiAuthor": "Tom McLeish",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers rheological phenomena including viscoelastic deformation and flow, constitutive equations, and soft material mechanics relevant to sections D and G."
+      "relevantPathsAI": [
+        "F.1",
+        "G",
+        "G.1",
+        "G.2"
+      ],
+      "rationaleAI": "Viscosity and adhesion in polymers, colloids, and foams connect to general properties of fluids (F.1). Brownian motion linking molecular-scale thermal motion to macroscopic behavior relates to rheological phenomena (G) and continuum mechanics (G.1)."
     },
     {
       "vsiTitle": "Applied mathematics",
       "vsiAuthor": "Alain Goriely",
       "relevantPathsAI": [
-        "A.6"
+        "A.6.d"
       ],
-      "rationaleAI": "Covers mathematical formulations underlying mechanics including differential equations relevant to Lagrange's and Hamilton's equations (A.6.d)."
+      "rationaleAI": "Mathematical modeling in physics and engineering traces from Euclid through Descartes, connecting to Lagrange's and Hamilton's equations of motion (A.6.d) as examples of applied mathematical methods in mechanics."
     },
     {
       "vsiTitle": "Chaos",
       "vsiAuthor": "Lenny Smith",
       "relevantPathsAI": [
-        "A.6",
-        "B",
-        "F.3"
+        "A.3.a.iv",
+        "A.4.b"
       ],
-      "rationaleAI": "Relevant to nonlinear dynamics in complex mechanical systems (A.6), sensitivity to initial conditions in celestial mechanics (B), and turbulent flow (F.3.b)."
+      "rationaleAI": "Sensitive dependence on initial conditions in deterministic systems, including pendulum dynamics, connects to simple harmonic motion (A.3.a.iv) and stiffness in mechanical vibrations (A.4.b). Nonlinear dynamics is fundamental to complex mechanical systems."
     },
     {
       "vsiTitle": "Matter",
       "vsiAuthor": "Geoff Cottrell",
       "relevantPathsAI": [
         "A.1",
-        "A.3"
+        "F.1"
       ],
-      "rationaleAI": "Covers fundamental concepts of matter and mass central to the parameters of classical mechanics (A.1) and the equivalence of mass and energy (A.3.e.iii)."
+      "rationaleAI": "States of matter including solids, liquids, gases, and plasmas provide context for the fundamental parameters of classical mechanics (A.1) and general properties of fluids (F.1)."
     },
     {
       "vsiTitle": "Philosophy of Physics",
       "vsiAuthor": "David Wallace",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "C",
+        "C.1"
       ],
-      "rationaleAI": "Covers philosophical foundations of space, time, motion, and statistical mechanics relevant to the conceptual framework of classical mechanics (A.1)."
+      "rationaleAI": "The nature of space and time in Newtonian physics and special relativity directly relates to fundamental parameters of classical mechanics (A.1) and the mechanical foundations of special relativity (C.1)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
       "relevantPathsAI": [
+        "E",
+        "E.1",
         "E.3"
       ],
-      "rationaleAI": "Directly covers types of vibrational waves, their properties and modes of propagation (E.3), and wave behaviour including diffraction and interference."
+      "rationaleAI": "Mechanical waves in solids and wave properties including reflection and diffraction connect to vibrations of elastic bodies (E), natural and forced vibrations (E.1), and types of vibrational waves (E.3)."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
       "relevantPathsAI": [
         "E",
-        "E.5"
+        "E.1",
+        "E.2",
+        "E.4"
       ],
-      "rationaleAI": "Covers acoustics, frequency, resonance, and the Doppler effect directly relevant to vibrations of elastic bodies (E) and detection of vibrations (E.5)."
+      "rationaleAI": "Sound wave behavior including frequency, pitch, and resonance connects to vibrations of elastic bodies (E), natural vibrations (E.1), vibrators and energy sources (E.2), and behavior of materials undergoing vibration (E.4)."
     },
     {
       "vsiTitle": "Structural engineering",
@@ -127,73 +173,81 @@
       "relevantPathsAI": [
         "A.2",
         "D",
+        "D.1",
+        "D.2",
+        "D.3",
+        "G",
         "G.3"
       ],
-      "rationaleAI": "Covers statics of beams and bridges (A.2), stress dynamics of elastic materials (D), and yield strength and fracture of structural materials (G.3)."
+      "rationaleAI": "Beams, bridges, and structural analysis connect to statics and equilibrium (A.2), stress dynamics of elastic materials (D), stress-strain relationships (D.1), elasticity in crystalline bodies (D.2), and yield strength, fracture, and fatigue (G.3)."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
       "relevantPathsAI": [
-        "A.2",
-        "A.3"
+        "A",
+        "D",
+        "F"
       ],
-      "rationaleAI": "Covers practical applications of gravity, electromagnetism, and mechanical principles relevant to statics (A.2) and dynamics (A.3) in engineering contexts."
+      "rationaleAI": "Engineering harnessing natural phenomena relates broadly to principles of classical mechanics (A), stress dynamics (D), and fluid mechanics (F) as foundational engineering disciplines."
     },
     {
       "vsiTitle": "Astrophysics",
       "vsiAuthor": "James Binney",
       "relevantPathsAI": [
         "B",
-        "C"
+        "B.1",
+        "B.2"
       ],
-      "rationaleAI": "Covers angular momentum, Newtonian mechanics, and relativity relevant to celestial mechanics (B) and relativistic mechanics (C)."
+      "rationaleAI": "Planetary system structure, galactic dynamics, and angular momentum in celestial phenomena directly address celestial mechanics (B), its scope and history (B.1), and the two-body problem with orbital perturbations (B.2)."
     },
     {
       "vsiTitle": "Planets",
       "vsiAuthor": "David A. Rothery",
       "relevantPathsAI": [
-        "A.3",
         "B",
         "B.2"
       ],
-      "rationaleAI": "Relevant to celestial mechanics (B) including planetary orbits, Kepler's laws (A.3.b.vi), and gravitational perturbations (B.2)."
+      "rationaleAI": "Planetary orbital dynamics and solar system mechanics connect to celestial mechanics (B) and the two-body problem with perturbations affecting planetary orbits (B.2)."
     },
     {
       "vsiTitle": "Tides",
       "vsiAuthor": "David George Bowers, Emyr Martyn Roberts",
       "relevantPathsAI": [
-        "B",
-        "F"
+        "A.3.b.v",
+        "F.2",
+        "F.2.b"
       ],
-      "rationaleAI": "Covers gravitational mechanics of the Earth-Moon system relevant to celestial mechanics (B) and fluid dynamics of ocean tides relevant to fluid mechanics (F)."
+      "rationaleAI": "Gravitational interactions of the Moon and Sun with ocean water connect to Newton's law of universal gravitation (A.3.b.v). Tidal dynamics in oceans relate to fluid statics (F.2) and buoyancy and stability of floating bodies (F.2.b)."
     },
     {
       "vsiTitle": "Mathematical Analysis",
       "vsiAuthor": "Richard Earl",
       "relevantPathsAI": [
-        "A.6"
+        "A.6.d",
+        "F.3.c"
       ],
-      "rationaleAI": "Covers calculus, differentiation, and integration that form the mathematical language of mechanics, essential to Lagrange's and Hamilton's equations (A.6.d)."
+      "rationaleAI": "Calculus, differentiation, and integration applied to fluid dynamics and optimization connect to Lagrange's and Hamilton's equations (A.6.d) and general two- and three-dimensional flow mathematical conditions (F.3.c)."
     },
     {
       "vsiTitle": "The History of Astronomy",
       "vsiAuthor": "Michael Hoskin",
       "relevantPathsAI": [
+        "B",
         "B.1"
       ],
-      "rationaleAI": "Covers the historical development of celestial mechanics (B.1) including the work of Kepler and Newton on planetary motion."
+      "rationaleAI": "Kepler, Newton, and gravitational theory in astronomical history directly connect to the scope and history of celestial mechanics (B.1)."
     },
     {
       "vsiTitle": "Planetary Systems",
       "vsiAuthor": "Raymond T. Pierrehumbert",
       "relevantPathsAI": [
         "B",
-        "B.2",
-        "B.4"
+        "B.2"
       ],
-      "rationaleAI": "Relevant to celestial mechanics (B) including planetary orbits, the n-body problem (B.4), and gravitational perturbations in planetary systems (B.2)."
+      "rationaleAI": "Orbital dynamics and planetary formation processes connect to celestial mechanics (B) and the two-body problem with perturbations (B.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

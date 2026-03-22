@@ -6,10 +6,13 @@
       "vsiAuthor": "Nick Jenkins",
       "relevantPathsAI": [
         "A",
+        "A.1",
+        "A.2",
+        "A.3",
         "B",
-        "C.7"
+        "C"
       ],
-      "rationaleAI": "A core text on major energy types (A), devices for energy utilization (B), and electric power generation (C.7), including fossil fuels, nuclear, and bioenergy."
+      "rationaleAI": "Comprehensive analysis of primary fuels and conversion technologies covers thermonuclear and fission sources (A.1), renewable solar, wind, and biomass sources (A.2), fossil fuel dependence (A.3), devices for energy utilization (B), and energy conversion technologies (C)."
     },
     {
       "vsiTitle": "Nuclear power",
@@ -19,7 +22,7 @@
         "B.9",
         "C.7"
       ],
-      "rationaleAI": "Nuclear fission (A.1), fission and fusion reactors (B.9), and nuclear-powered generators (C.7) are the central subjects."
+      "rationaleAI": "Nuclear fission and fusion technologies for energy production directly address primary nuclear energy sources (A.1), nuclear fission and fusion reactors (B.9), and nuclear-powered generators (C.7)."
     },
     {
       "vsiTitle": "Renewable Energy",
@@ -27,9 +30,11 @@
       "relevantPathsAI": [
         "A.2",
         "B.2",
-        "B.10"
+        "B.10",
+        "C.4",
+        "C.7"
       ],
-      "rationaleAI": "Recurring energy sources -- solar, wind, water, biomass (A.2) -- and the devices that harness them, including windmills, turbines (B.2), and solar collectors (B.10), are examined."
+      "rationaleAI": "Solar photovoltaics, wind power, hydropower, and biomass address recurring energy sources (A.2). Wind and water turbines (B.2), solar energy devices (B.10), battery storage (C.4), and electricity generation from renewable sources (C.7)."
     },
     {
       "vsiTitle": "Nuclear Physics",
@@ -37,7 +42,7 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Thermonuclear reaction, nuclear fission, and radioactivity are explored as primary energy sources (A.1)."
+      "rationaleAI": "Nuclear physics covering atomic structure, radioactivity, proton-neutron configurations, and nuclear stability provides the scientific foundations for primary nuclear energy sources including fission and radioactivity (A.1)."
     },
     {
       "vsiTitle": "Radioactivity",
@@ -46,68 +51,72 @@
         "A.1",
         "B.9"
       ],
-      "rationaleAI": "Radioactivity as a primary energy source (A.1) and radioactive isotopes for nuclear energy utilization (B.9) are central topics."
+      "rationaleAI": "Radioactivity covering nuclear fission, fusion, and radioisotopes with applications in energy production directly addresses primary nuclear energy sources (A.1) and devices for utilizing nuclear energy (B.9)."
     },
     {
       "vsiTitle": "The Laws of Thermodynamics",
       "vsiAuthor": "Peter Atkins",
       "relevantPathsAI": [
-        "C.1",
-        "B.7"
+        "B.7",
+        "C"
       ],
-      "rationaleAI": "Provides the physics underlying thermoelectric devices (C.1), heat exchangers and refrigeration (B.7), and energy conversion generally."
+      "rationaleAI": "Thermodynamic laws governing energy conservation, entropy, heat conversion, and free energy underpin all devices utilizing heat energy (B.7) and energy conversion processes (C)."
     },
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
       "relevantPathsAI": [
-        "B",
-        "C.7"
+        "B.5",
+        "C"
       ],
-      "rationaleAI": "The engineering of energy utilization devices (B) -- including turbines, motors, and generators (C.7) -- is addressed."
+      "rationaleAI": "Engineering harnessing electromagnetism and transistor technology relates to devices utilizing magnetic and electrical energy (B.5) and energy conversion devices (C)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
       "relevantPathsAI": [
-        "D.3",
-        "C.5"
+        "C.5",
+        "D.3"
       ],
-      "rationaleAI": "Optoelectronic devices including semiconductor lasers and optical fibres (D.3) and lamps and lighting (C.5) are explored."
+      "rationaleAI": "Physics of light including lasers and quantum optics connects to lamps and lighting devices (C.5) and optoelectronic devices such as semiconductor lasers and optical fibres (D.3)."
     },
     {
       "vsiTitle": "Magnetism",
       "vsiAuthor": "Stephen J. Blundell",
       "relevantPathsAI": [
-        "B.5"
+        "B.5",
+        "B.5.a",
+        "B.5.b",
+        "C.7"
       ],
-      "rationaleAI": "Magnets, electromagnets (B.5), and electric motors (B.5.b) that harness magnetic and electrical energy are examined."
+      "rationaleAI": "Electromagnetic theory through Faraday, Tesla, and Maxwell covering motors, generators, and turbines directly addresses magnets and electromagnets (B.5.a), electric motors (B.5.b), and turbine-driven generators (C.7)."
     },
     {
       "vsiTitle": "Condensed Matter Physics",
       "vsiAuthor": "Ross McKenzie",
       "relevantPathsAI": [
-        "D.2"
+        "D.2",
+        "D.3"
       ],
-      "rationaleAI": "Solid-state devices -- transistors, semiconductor diodes, integrated circuits -- for energy concentration and control are the focus (D.2)."
+      "rationaleAI": "Practical applications in silicon chips, liquid crystal displays, and magnetic memory directly address solid-state devices including transistors and semiconductor diodes (D.2) and optoelectronic devices including liquid-crystal displays (D.3)."
     },
     {
       "vsiTitle": "Fluid Mechanics",
       "vsiAuthor": "Eric Lauga",
       "relevantPathsAI": [
         "B.2",
-        "B.4"
+        "B.4.d"
       ],
-      "rationaleAI": "The physics of wind and water turbines (B.2), hydraulic devices (B.4.d), and steam engines and turbines (B.4.a-b) is examined."
+      "rationaleAI": "Fluid dynamics and hydrodynamics connect to wind and water turbines (B.2) and hydraulic devices (B.4.d)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
       "relevantPathsAI": [
-        "C.4",
-        "B.8"
+        "B.8",
+        "C"
       ],
-      "rationaleAI": "The chemistry of batteries and fuel cells (C.4) and chemical energy utilization devices (B.8) is addressed."
+      "rationaleAI": "Thermodynamics, activation energy, and reaction kinetics connect to devices utilizing chemical energy (B.8) and thermoelectric energy conversion (C)."
     },
     {
       "vsiTitle": "The Sun",
@@ -116,17 +125,17 @@
         "A.2",
         "B.10"
       ],
-      "rationaleAI": "Solar energy as a recurring source (A.2) and devices for utilizing it (B.10) are central topics."
+      "rationaleAI": "Solar physics covering the Sun's energy output and impact on Earth directly relates to solar energy as a recurring energy source (A.2) and devices for utilizing solar energy (B.10)."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
-        "B.8",
         "A.1"
       ],
-      "rationaleAI": "Chemical explosives (B.8.b) and the destructive applications of nuclear fission and fusion energy (A.1) are examined."
+      "rationaleAI": "Scientific development of atomic fission and thermonuclear fusion for weapons connects to primary energy sources from thermonuclear reaction and nuclear fission (A.1), though the focus is military rather than energy utilization."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

@@ -7,7 +7,7 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Dance in the theatre is explicitly addressed in section A.5; theatre covers performance, staging, and the integration of dance with dramatic arts."
+      "rationaleAI": "Theatre integrating dance with literature, music, and painting addresses the integration of dance with other arts (A.5)."
     },
     {
       "vsiTitle": "Ethnomusicology",
@@ -15,24 +15,24 @@
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "Ethnomusicology encompasses dance in non-Western cultures and its relation to music, directly relevant to primitive, folk, and popular dance (D)."
+      "rationaleAI": "Ethnomusicology covering connections between music and dance addresses primitive, folk, and popular dance (D)."
     },
     {
       "vsiTitle": "Aesthetics",
       "vsiAuthor": "Bence Nanay",
       "relevantPathsAI": [
-        "A.1",
         "A.4"
       ],
-      "rationaleAI": "Covers aesthetic theory including performance and embodied experience, relevant to the nature of dance as art and dance criticism (A.1, A.4)."
+      "rationaleAI": "Aesthetics examining art, beauty, and aesthetic experience addresses theoretical and critical writing about dance (A.4)."
     },
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "D"
       ],
-      "rationaleAI": "Covers ritual, rites of passage, and ceremonial practices, directly relevant to the origins and functions of dance and primitive dance forms (A.1, D)."
+      "rationaleAI": "Ritual encompassing rites of passage and ceremonies connects to the origins and functions of dance (A.1) and primitive and folk dance (D)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
@@ -40,7 +40,7 @@
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "Covers ethnographic study of cultural practices including dance, relevant to primitive, folk, and popular dance (D)."
+      "rationaleAI": "Anthropology studying cultural systems through ethnography provides context for primitive, folk, and popular dance (D)."
     },
     {
       "vsiTitle": "Folk music",
@@ -48,43 +48,41 @@
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "Folk music is inseparably tied to folk dance traditions across cultures, relevant to folk and popular dance (D)."
+      "rationaleAI": "Global folk music traditions including Uzbek dance tunes address primitive, folk, and popular dance (D)."
     },
     {
       "vsiTitle": "Modern Drama",
       "vsiAuthor": "Kirsten E. Shepherd-Barr",
       "relevantPathsAI": [
-        "C.2"
+        "A.5"
       ],
-      "rationaleAI": "Modern drama incorporates dance and movement, relevant to the relation of modern dance to drama and musical theatre (C.2)."
+      "rationaleAI": "Modern theatrical drama covering the relationship between performance and innovation addresses the integration of dance with other arts in the theatre (A.5)."
     },
     {
       "vsiTitle": "Music",
       "vsiAuthor": "Nicholas Cook",
       "relevantPathsAI": [
-        "A.5",
-        "B.2"
+        "A.5"
       ],
-      "rationaleAI": "Music is integral to ballet, modern dance, and theatrical dance; covers performance and production relevant to the integration of dance with music (A.5, B.2)."
+      "rationaleAI": "Music covering performance practice and participatory music-making addresses the integration of dance with other arts (A.5)."
     },
     {
       "vsiTitle": "Film",
       "vsiAuthor": "Michael Wood",
       "relevantPathsAI": [
-        "A.5",
-        "C.2"
+        "A.5"
       ],
-      "rationaleAI": "Dance in motion pictures is explicitly mentioned in section A.5, and modern dance's relation to film is addressed in C.2."
+      "rationaleAI": "Cinema as art form addresses the integration of dance with motion pictures (A.5)."
     },
     {
       "vsiTitle": "Creativity",
       "vsiAuthor": "Vlad Petre Glăveanu",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A"
       ],
-      "rationaleAI": "Covers creative expression and artistic process, relevant to choreography and the nature of dance as an expressive art (A.1, A.2)."
+      "rationaleAI": "Creativity covering creative expression across cultures provides foundational context for the art of dance (A)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

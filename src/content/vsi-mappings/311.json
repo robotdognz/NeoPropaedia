@@ -5,121 +5,130 @@
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
       "relevantPathsAI": [
-        "A.2",
-        "A.1"
+        "A.1.b",
+        "A.2.a"
       ],
-      "rationaleAI": "Covers the molecular level of biotic organization (A.2.a) including polymers, carbohydrates, lipids, proteins, and nucleic acids, and addresses metabolism (A.1.b)."
+      "rationaleAI": "Protein structures and metabolism connect to A.1.b and molecular level (A.2.a)."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
       "relevantPathsAI": [
-        "A.2"
+        "A.1",
+        "A.1.d",
+        "A.2.b",
+        "A.2.c"
       ],
-      "rationaleAI": "Directly covers the cellular level of biotic organization (A.2.b) including procaryotic and eucaryotic cells, nucleus, and endoplasmic reticulum."
+      "rationaleAI": "Cell biology addresses reproduction (A.1.d), cellular level (A.2.b), and organ level (A.2.c)."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b",
+        "A.2.a"
       ],
-      "rationaleAI": "Addresses metabolism (A.1.b) including catabolism and anabolism at the molecular level, and biochemical reactions within cells."
+      "rationaleAI": "Biochemical reactions connect to metabolism (A.1.b) and molecular level (A.2.a)."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A.2.a"
       ],
-      "rationaleAI": "Covers nucleic acids and the molecular machinery of reproduction, growth, and development (A.1.d) at the molecular level of organization (A.2.a)."
+      "rationaleAI": "Biological molecules connect to molecular level (A.2.a)."
     },
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
       "relevantPathsAI": [
-        "A.2",
-        "A.1"
+        "A.1.e",
+        "A.2.d"
       ],
-      "rationaleAI": "Directly addresses population-level biotic organization (A.2.d) including species, communities, and interaction with the environment (A.1.e)."
+      "rationaleAI": "Organism interactions address environment (A.1.e) and population level (A.2.d)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
       "relevantPathsAI": [
-        "A.1",
-        "A.2.c"
+        "A.1.a",
+        "A.1.d"
       ],
-      "rationaleAI": "Covers reproduction, growth, and development (A.1.d) including cell differentiation and the progression from blastula to organism (A.2.c)."
+      "rationaleAI": "Development addresses order (A.1.a) and reproduction (A.1.d)."
     },
     {
       "vsiTitle": "Enzymes",
       "vsiAuthor": "Paul Engel",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b",
+        "A.2.a"
       ],
-      "rationaleAI": "Directly relevant to metabolism (A.1.b), covering the chemical reactions and proteins that drive catabolism and anabolism in living organisms."
+      "rationaleAI": "Catalysts connect to metabolism (A.1.b) and molecular level (A.2.a)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
       "relevantPathsAI": [
-        "A.1.c",
-        "A.1"
+        "A.1.c"
       ],
-      "rationaleAI": "Covers sensory reception (A.1.c) and the nervous system, addressing how organisms process stimuli and interact with their environment (A.1.e)."
+      "rationaleAI": "Sensory processing addresses sensory reception (A.1.c)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
-        "A.2",
-        "A.1"
+        "A.1.d",
+        "A.2.a"
       ],
-      "rationaleAI": "Addresses the molecular level of organization (A.2.a) through DNA, genes, and genomes, and reproduction at the cellular level (A.1.d and A.2.b)."
+      "rationaleAI": "DNA connects to reproduction (A.1.d) and molecular level (A.2.a)."
     },
     {
       "vsiTitle": "Astrobiology",
       "vsiAuthor": "David C. Catling",
       "relevantPathsAI": [
+        "B",
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "Directly covers the concept of extraterrestrial life and its chemistry (B.1) and the significance of the search for life beyond Earth (B.2)."
+      "rationaleAI": "Extraterrestrial life search addresses B.1 and significance (B.2)."
     },
     {
       "vsiTitle": "Planetary Systems",
       "vsiAuthor": "Raymond T. Pierrehumbert",
       "relevantPathsAI": [
-        "B.2"
+        "B",
+        "B.1"
       ],
-      "rationaleAI": "Relevant to the search for life beyond Earth (B.2), covering planetary environments where life might exist."
+      "rationaleAI": "Habitability connects to extraterrestrial life (B.1)."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.c",
+        "A.1.e"
       ],
-      "rationaleAI": "Illustrates interaction with the environment (A.1.e) and metabolism (A.1.b), showing how organisms respond to environmental cycles."
+      "rationaleAI": "Biological clocks connect to sensory reception (A.1.c) and environment (A.1.e)."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b",
+        "A.2.d"
       ],
-      "rationaleAI": "Covers procaryotic cells (A.2.b), microbial metabolism, reproduction, and the population/community levels of organization (A.2.d)."
+      "rationaleAI": "Microorganisms connect to cellular (A.2.b) and population levels (A.2.d)."
     },
     {
       "vsiTitle": "Systems Biology",
       "vsiAuthor": "Eberhard O. Voit",
       "relevantPathsAI": [
+        "A.1",
         "A.2"
       ],
-      "rationaleAI": "Addresses the integration of multiple levels of biotic organization (A.2) from molecular through organ systems."
+      "rationaleAI": "Systems analysis connects to life properties (A.1) and organization (A.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

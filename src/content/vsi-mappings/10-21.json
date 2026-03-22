@@ -4,174 +4,206 @@
     {
       "vsiTitle": "The History of Mathematics",
       "vsiAuthor": "Jacqueline Stedall",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the historical development of mathematics from ancient through modern times, the central topic of section A."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.1.a",
+        "A.1.b"
+      ],
+      "rationaleAI": "Historical development of mathematics across early imperial China, the medieval Islamic world, and nineteenth-century Britain, with contributions of Descartes, Euler, Newton, and Hooke, directly covers the general development of mathematics through ancient, medieval, and modern times (A.1). Cross-cultural exchange and the Islamic world address Islamic mathematics and transmission to the West (A.1.a.iii)."
     },
     {
       "vsiTitle": "Mathematics",
       "vsiAuthor": "Timothy Gowers",
       "relevantPathsAI": [
-        "A",
-        "B"
+        "A.1",
+        "A.2.d",
+        "B",
+        "B.1"
       ],
-      "rationaleAI": "Provides an overview of mathematical concepts and foundations, relevant to both historical development (A) and foundational questions (B)."
+      "rationaleAI": "Foundational concepts including number theory, geometry from Euclid onward, and the philosophical underpinnings of mathematical truth span the development of mathematics (A.1). Coverage of mathematical proof and abstraction connects to the axiomatic method (B.1) and philosophical aspects of geometry (A.2.d.v)."
     },
     {
       "vsiTitle": "Numbers",
       "vsiAuthor": "Peter M. Higgins",
       "relevantPathsAI": [
-        "A.2",
-        "B.2"
+        "A.2.a",
+        "A.2.a.i",
+        "A.2.a.ii"
       ],
-      "rationaleAI": "Section A.2.a covers numeral systems from Egyptian to positional systems, and B.2 discusses cardinal number and set theory foundations."
+      "rationaleAI": "Historical development of number systems from ancient origins, covering integers, fractions, real numbers, and imaginary numbers, directly addresses numerals and numeral systems (A.2.a), including development of simple grouping systems (A.2.a.i) and positional numeral systems (A.2.a.ii)."
     },
     {
       "vsiTitle": "Algebra",
       "vsiAuthor": "Peter M. Higgins",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.e",
+        "A.2.e.iii",
+        "A.2.e.iv"
       ],
-      "rationaleAI": "Section A.2.e covers the history of algebra from Babylonian through modern European developments including algebraic equations."
+      "rationaleAI": "The historical transition from computational to structural algebra, covering groups, rings, fields, and the theory of equations, relates to the history of algebra (A.2.e), European developments (A.2.e.iii), and the evolution of the theory of algebraic equations (A.2.e.iv)."
     },
     {
       "vsiTitle": "Geometry",
       "vsiAuthor": "Maciej Dunajski",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.d",
+        "A.2.d.i",
+        "A.2.d.iii",
+        "A.2.d.iv",
+        "A.2.d.vi"
       ],
-      "rationaleAI": "Section A.2.d covers the historical development of geometry including Euclidean, non-Euclidean, projective, and differential geometry."
+      "rationaleAI": "Euclidean and non-Euclidean geometries spanning 2,500 years directly address the history of geometry (A.2.d). Coverage of Greek geometry (A.2.d.i), projective geometry (A.2.d.iii), non-Euclidean geometry (A.2.d.iv), and spacetime curvature connects to modern geometric ideas (A.2.d.vi)."
     },
     {
       "vsiTitle": "Trigonometry",
       "vsiAuthor": "Glen Van Brummelen",
       "relevantPathsAI": [
-        "A.2"
+        "A.1.a",
+        "A.2.d.i",
+        "A.2.e.ii"
       ],
-      "rationaleAI": "Trigonometry is part of the historical development of geometry and mathematical analysis covered in A.2.d."
+      "rationaleAI": "History of trigonometry across ancient Greek, medieval Indian, and Islamic traditions addresses ideas from these cultures (A.1.a, A.2.d.i) and contributions from the Orient, India, and the Islamic world to mathematics (A.2.e.ii)."
     },
     {
       "vsiTitle": "Probability",
       "vsiAuthor": "John Haigh",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "A.3.a",
+        "A.3.a.ii",
+        "A.3.a.iii"
       ],
-      "rationaleAI": "Section A.3 covers the historical development of probability theory, including the abstract calculus and alternative views of probability."
+      "rationaleAI": "Historical development of probability from Galileo and Pascal through Bayes, Laplace, Poisson, and Markov directly addresses the development of the mathematical theory of probability (A.3.a). Different philosophical approaches relate to alternative views of probability (A.3.a.ii), and the law of large numbers connects to Bernoulli's theorem (A.3.a.iii)."
     },
     {
       "vsiTitle": "Statistics",
       "vsiAuthor": "David J. Hand",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b"
       ],
-      "rationaleAI": "Section A.3.b covers the development of mathematical statistics including stochastic processes and control theory."
+      "rationaleAI": "Statistics encompassing probability theory, Bayesian inference, estimation, and experimental design directly addresses the development of mathematical statistics (A.3.b) including stochastic processes and control theory."
     },
     {
       "vsiTitle": "Infinity",
       "vsiAuthor": "Ian Stewart",
       "relevantPathsAI": [
-        "B"
+        "B.2",
+        "B.2.b"
       ],
-      "rationaleAI": "Infinity is central to the foundations of mathematics (B), including set theory, Cantor's work, and the crisis in foundations after 1900."
+      "rationaleAI": "Treatment of infinite sets, paradoxes of infinity, and their philosophical implications connects to the genetic method and the concept of cardinal number and the theory of sets (B.2.b)."
     },
     {
       "vsiTitle": "Gödel's Theorem",
       "vsiAuthor": "A. W. Moore",
       "relevantPathsAI": [
-        "B.3"
+        "B.3",
+        "B.3.a",
+        "B.3.c"
       ],
-      "rationaleAI": "Section B.3 covers the crisis in foundations after 1900 including paradoxes and the metamathematical method that Godel's theorems epitomize."
+      "rationaleAI": "Godel's incompleteness theorems and Hilbert's programme directly address the crisis in the foundations of mathematics after 1900 (B.3), including the paradoxes (B.3.a) and the Formalist and metamathematical method (B.3.c)."
     },
     {
       "vsiTitle": "Logic",
       "vsiAuthor": "Graham Priest",
       "relevantPathsAI": [
-        "B.3"
+        "B.1",
+        "B.3.c"
       ],
-      "rationaleAI": "Section B.3 discusses Logicism, Intuitionism, and Formalism as alternative positions on the foundations of mathematics."
+      "rationaleAI": "Propositional and predicate logic, validity, axioms, and mathematical proofs connect to the axiomatic method (B.1), and the relationship between logic and mathematical foundations relates to Logicism and Formalism (B.3.c)."
     },
     {
       "vsiTitle": "Russell",
       "vsiAuthor": "A. C. Grayling",
       "relevantPathsAI": [
+        "B.3",
         "B.3.c"
       ],
-      "rationaleAI": "Russell's Logicism and the crisis in foundations (B.3.c) are central to the foundations of mathematics."
+      "rationaleAI": "Russell's Principia Mathematica and theory of types directly address Logicism and the crisis in the foundations of mathematics (B.3, B.3.c)."
     },
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
       "relevantPathsAI": [
-        "A.2.c"
+        "A.2.c.iii"
       ],
-      "rationaleAI": "Section A.2.c.iii covers the evolution of digital devices from the abacus to modern electronic digital computers."
+      "rationaleAI": "The evolution of computing technology from room-sized machines to embedded processors directly addresses the evolution of digital devices from the abacus to modern computers (A.2.c.iii)."
     },
     {
       "vsiTitle": "The History of Computing",
       "vsiAuthor": "Doron Swade",
       "relevantPathsAI": [
-        "A.2.c"
+        "A.2.c",
+        "A.2.c.ii",
+        "A.2.c.iii"
       ],
-      "rationaleAI": "Section A.2.c traces the evolution of computational devices from the abacus to modern computers, the history of computing."
+      "rationaleAI": "History of computing from ancient counting aids through mechanical calculation to electronic computation directly addresses calculatory science (A.2.c), the evolution of analogue devices (A.2.c.ii), and digital devices (A.2.c.iii)."
     },
     {
       "vsiTitle": "Leibniz",
       "vsiAuthor": "Maria Rosa Antognazza",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b.i"
       ],
-      "rationaleAI": "Leibniz co-developed calculus (A.1.b.i) and contributed to the logical calculus, both central to this section."
+      "rationaleAI": "Leibniz's development of calculus and his contributions to mathematics directly address the 17th-century discovery of calculus (A.1.b.i)."
     },
     {
       "vsiTitle": "Newton",
       "vsiAuthor": "Rob Iliffe",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b.i"
       ],
-      "rationaleAI": "Section A.1.b.i specifically names Newton as co-discoverer of calculus in the 17th century."
+      "rationaleAI": "Newton's contributions to mathematics including calculus directly address the 17th-century development of calculus by Newton and Leibniz (A.1.b.i)."
     },
     {
       "vsiTitle": "Number theory",
       "vsiAuthor": "Robin Wilson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Number theory's historical development from Euclid through Gauss is part of the broader mathematical history in this section."
+      "relevantPathsAI": [
+        "A.2.a",
+        "A.1.a.ii"
+      ],
+      "rationaleAI": "Historical development of number theory from ancient Greek mathematics through Euclid, Fermat, Euler, and Gauss relates to numeral systems (A.2.a) and Greek and Hellenistic mathematics (A.1.a.ii)."
     },
     {
       "vsiTitle": "Ancient Greek and Roman Science",
       "vsiAuthor": "Liba Taub",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a.ii"
       ],
-      "rationaleAI": "Section A.1.a.ii covers Greek and Hellenistic mathematics as part of the broader scientific achievements of the ancient world."
+      "rationaleAI": "Scientific ideas including mathematical problems in ancient Greece and Rome connect to Greek and Hellenistic mathematics (A.1.a.ii)."
     },
     {
       "vsiTitle": "Combinatorics",
       "vsiAuthor": "Robin Wilson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Combinatorics is part of the broader historical development of mathematical branches covered in section A."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Combinatorics with origins dating back three thousand years, covering permutations, combinations, and graph theory, relates to the general historical development of mathematics (A.1)."
     },
     {
       "vsiTitle": "Fractals",
       "vsiAuthor": "Kenneth Falconer",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b.iii"
       ],
-      "rationaleAI": "Fractals represent a modern development in geometry and analysis relevant to 19th-20th century developments in A.1.b.iii."
+      "rationaleAI": "Fractal geometry as a twentieth-century mathematical revolution pioneered by Mandelbrot relates to 19th and 20th century mathematical developments (A.1.b.iii)."
     },
     {
       "vsiTitle": "Topology",
       "vsiAuthor": "Richard Earl",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.d.vi"
       ],
-      "rationaleAI": "Section A.2.d.vi lists topology as a modern idea in geometry, part of the historical development of mathematics."
+      "rationaleAI": "Topology as a foundational branch of modern mathematics, with its historical development through Euler, Cauchy, and Descartes, relates to modern ideas in geometry including topology (A.2.d.vi)."
     },
     {
       "vsiTitle": "Mathematical Analysis",
       "vsiAuthor": "Richard Earl",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b.i",
+        "A.1.b.ii"
       ],
-      "rationaleAI": "The development of calculus and analysis is a major thread in the history of mathematics from Newton and Leibniz onward (A.1.b)."
+      "rationaleAI": "The rigorous foundation of calculus developed by Bolzano, Cauchy, and Weierstrass from Newton and Leibniz's earlier work directly addresses 17th-century calculus development (A.1.b.i) and 18th-century advances in analysis (A.1.b.ii)."
     },
     {
       "vsiTitle": "Applied mathematics",
@@ -179,24 +211,25 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "The relationship between pure and applied mathematics is part of the historical development, including the influence of physical science on analysis (A.1.b.iii)."
+      "rationaleAI": "The historical development of applied mathematics from Euclid through Descartes to its emergence as a distinct field after World War II relates to the general development of mathematics through ancient, medieval, and modern times (A.1)."
     },
     {
       "vsiTitle": "Chaos",
       "vsiAuthor": "Lenny Smith",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b.iii"
       ],
-      "rationaleAI": "Chaos theory is a 20th-century mathematical development relevant to the modern period developments in A.1.b.iii."
+      "rationaleAI": "Chaos theory as a branch of mathematics examining nonlinear dynamics relates to 19th and 20th century mathematical developments (A.1.b.iii)."
     },
     {
       "vsiTitle": "Computer Science",
       "vsiAuthor": "Subrata Dasgupta",
       "relevantPathsAI": [
-        "A.2.c"
+        "A.2.c.iii"
       ],
-      "rationaleAI": "Section A.2.c.iii covers the evolution of digital devices from the abacus to modern computers, connecting to computer science foundations."
+      "rationaleAI": "Computational theory including the Turing machine model and contributions of Babbage, Lovelace, and Turing relate to the evolution of digital devices and computational aids (A.2.c.iii)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

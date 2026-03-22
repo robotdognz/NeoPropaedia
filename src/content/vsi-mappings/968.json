@@ -4,8 +4,11 @@
     {
       "vsiTitle": "Modern India",
       "vsiAuthor": "Craig Jeffrey",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores modern India including British imperial rule, the rise of nationalism, and the emergence of Gandhi, central to B and C."
+      "relevantPathsAI": [
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "Contemporary India's political and economic transformation, caste dynamics, and democratic governance extend from the nationalist and independence movements (C.3) and Gandhi's noncooperation policy (C.4), though the book primarily covers the post-1920 period beyond the section's scope."
     },
     {
       "vsiTitle": "Gandhi",
@@ -13,50 +16,65 @@
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Directly addresses the emergence of Mahatma Gandhi and his noncooperation policy discussed in C.4."
+      "rationaleAI": "Gandhi's development of satyagraha (nonviolent resistance) and leadership of Indian independence from British rule directly address the emergence of Mahatma Gandhi and the adoption of his noncooperation policy (C.4), including anti-British activity and Hindu-Muslim relations."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the extension and consolidation of British imperial power in India from the East India Company through the raj (A-C)."
+      "relevantPathsAI": [
+        "A",
+        "A.3",
+        "B",
+        "B.1",
+        "C",
+        "C.1"
+      ],
+      "rationaleAI": "British imperial administration, the role of the East India Company (A.3.a, B.1), colonial governance, and decolonization directly address European activity in India (A), extension of British power (B), and British imperial power (C), including the climax of the raj (C.1)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "European imperial dynamics in South Asia -- including British, Portuguese, Dutch, and French colonial enterprises -- are examined (A-D)."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "British, Dutch, and French colonial empires, theories of colonialism, and hierarchical governance over diverse peoples provide broad context for European activity in India (A), extension of British power (B), and British imperial power in India (C)."
     },
     {
       "vsiTitle": "Hinduism",
       "vsiAuthor": "Kim Knott",
       "relevantPathsAI": [
-        "C.3",
-        "C.4"
+        "B.2",
+        "C.3"
       ],
-      "rationaleAI": "Hindu-Muslim relations and the Hindu cultural context that shaped Indian nationalism are essential background (C.3-C.4)."
+      "rationaleAI": "The East India Company and Indian National Congress in shaping modern Hindu identity, Hindu nationalism, and caste connect to the social and cultural effects of British influence (B.2) and the beginning of Indian nationalism and founding of the Indian National Congress in 1885 (C.3)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
       "relevantPathsAI": [
-        "C.3"
+        "C.3",
+        "C.4"
       ],
-      "rationaleAI": "The founding of the nationalist Muslim League and Hindu-Muslim relations are key topics relevant to C.3."
+      "rationaleAI": "Islam's global reach, the Ottoman Empire, and adaptation to modernity provide context for the founding of the nationalist Muslim League (C.3) and Hindu-Muslim relations in the World War I aftermath (C.4)."
     },
     {
       "vsiTitle": "Sikhism",
       "vsiAuthor": "Eleanor Nesbitt",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.f"
       ],
-      "rationaleAI": "The Sikh kingdom, whose annexation by the British in the 1840s is discussed in B.1.f, provides important regional context."
+      "rationaleAI": "Sikh history of martyrdom, militarization, and 15th-century Punjab origins connect to British completion of annexation over the Sikh kingdoms in the 1840s and 1850s (B.1.f)."
     },
     {
       "vsiTitle": "Buddhism",
       "vsiAuthor": "Damien Keown",
-      "relevantPathsAI": [],
-      "rationaleAI": "The Buddhist cultural heritage of Ceylon (Sri Lanka) is directly relevant to D."
+      "relevantPathsAI": [
+        "D.1",
+        "D.2"
+      ],
+      "rationaleAI": "Buddhism's origins in South Asia and the Theravada tradition connect to the religious and cultural context of Ceylon under Portuguese (D.1) and Dutch rule (D.2), though the coverage is general rather than Ceylon-specific."
     },
     {
       "vsiTitle": "Tibetan Buddhism",
@@ -64,15 +82,16 @@
       "relevantPathsAI": [
         "E.1"
       ],
-      "rationaleAI": "Tibet's administration, culture under the Manchus, and the decline of Chinese influence are examined in the context of E.1."
+      "rationaleAI": "The institution of the Dalai Lama, Chinese suppression, and Manchu involvement directly address the decline of Chinese influence in Tibet and administration under the Manchus (E.1)."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
       "relevantPathsAI": [
-        "B.2"
+        "B.2",
+        "C"
       ],
-      "rationaleAI": "Explores the political, legal, economic, social, and cultural effects of British colonialism on India (B.2)."
+      "rationaleAI": "Experiences of colonized societies in Asia, material histories of colonial exploitation, and challenges to Western-centric perspectives connect to the effects of British influence on India (B.2) and the era of British imperial power (C)."
     },
     {
       "vsiTitle": "Nationalism",
@@ -80,15 +99,16 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "The beginnings of Indian nationalism and the Indian National Congress (1885) are central to C.3."
+      "rationaleAI": "Nationalism as political ideology and self-determination, including the Kashmir case, connects to the beginning of Indian nationalism in the late 19th century and the formation of the Indian National Congress (C.3)."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
       "relevantPathsAI": [
+        "C.3",
         "C.4"
       ],
-      "rationaleAI": "The growing Indian independence movement and trajectory toward self-rule, beginning with the Government of India Act (1919), are central to C.4."
+      "rationaleAI": "Anti-colonial activism and independence movements, including Nehru as an independence leader, connect to the beginning of Indian nationalism (C.3) and the World War I aftermath with Gandhi's noncooperation policy (C.4)."
     },
     {
       "vsiTitle": "The First World War",
@@ -96,29 +116,33 @@
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "India's contribution to the war effort and its aftermath -- including the Amritsar massacre -- are examined in C.4."
+      "rationaleAI": "World War I and the Paris Peace Settlement provide context for India's contribution to the war effort and the anti-British activity that followed (C.4)."
     },
     {
       "vsiTitle": "Indian philosophy",
       "vsiAuthor": "Sue Hamilton",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides intellectual and cultural context for understanding Indian civilization under British imperial influence."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Indian philosophical traditions spanning 2,500 years, including karma, dharma, and moksha, connect to the cultural effects of British influence on Indian society (B.2), providing the intellectual backdrop against which colonial encounter occurred."
     },
     {
       "vsiTitle": "Pakistan",
       "vsiAuthor": "Pippa Virdee",
       "relevantPathsAI": [
-        "C.3"
+        "C.3",
+        "C.4"
       ],
-      "rationaleAI": "The regions that would become Pakistan are examined in the context of the Muslim League's founding and Hindu-Muslim tensions (C.3)."
+      "rationaleAI": "Partition-era tensions, the Muslim homeland concept, and British imperial legacy connect to the founding of the nationalist Muslim League (C.3) and Hindu-Muslim relations in the World War I aftermath (C.4)."
     },
     {
       "vsiTitle": "Eighteenth-Century Britain",
       "vsiAuthor": "Paul Langford",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "B.1"
       ],
-      "rationaleAI": "The East India Company's growth and British expansion are situated within 18th-century British policy (A.3)."
+      "rationaleAI": "The East India Company, imperial expansion, and British class structure in the eighteenth century directly address British and French rivalry in India (A.3) and the growth of the East India Company's political power (B.1)."
     },
     {
       "vsiTitle": "Diplomacy",
@@ -126,8 +150,9 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "British foreign policy in India -- including conflicts with Russia over the northwest frontier and relations with Afghanistan -- is examined in C.2."
+      "rationaleAI": "International diplomatic history provides general context for British foreign policy in India, including conflicts with Russia over the northwest frontier (C.2), though India is not a primary case study."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

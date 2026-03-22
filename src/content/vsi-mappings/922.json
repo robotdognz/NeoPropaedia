@@ -4,44 +4,81 @@
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the spread of Islam, the Umayyad and Abbasid caliphates, and the rise of provincial dynasties, the core subjects of this entire section."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.1.c",
+        "B.2",
+        "C",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Comprehensive coverage of Islamic history from 7th-century Arabia through medieval caliphates directly addresses the historical sources and historiographic problems (A), the rise and spread of Islam under Muhammad and the Patriarchal Caliphs (B.1.b, B.1.c), the caliphate as a governance institution spanning the Umayyad period (B.2), and the 'Abbasid Empire and successor states (C). The foundational roles of Arabs, Persians, and Turks in shaping Islamic civilization align with the section's treatment of these groups across the formative period."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers Islamic doctrine, law, and the early community including Abu Bakr and the caliphate, directly relevant to subsections A and B."
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.1.c",
+        "B.2",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Coverage of the caliphate from Abu Bakr onward directly corresponds to the Patriarchal Caliphs (B.1.c) and subsequent Umayyad dynasty (B.2). The treatment of Sunni and Shia divisions relates to the origins of Shi'ism under 'Uthman and 'Ali (B.1.c.ii). Discussion of Islamic law and governance connects to 'Abbasid cultural and religious life (C.1.d.i)."
     },
     {
       "vsiTitle": "Muhammad",
       "vsiAuthor": "Jonathan A.C. Brown",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsection B1b on the life and career of Muhammad and the rise of Islam."
+      "relevantPathsAI": [
+        "A",
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "Directly addresses the life and career of Muhammad and the rise of Islam (B.1.b), the reliability of biographical sources and historiographic challenges (A), and the pre-Islamic Arabian context (B.1.a). The discussion of Abu Bakr connects to the transition to the Patriarchal Caliphs (B.1.c)."
     },
     {
       "vsiTitle": "The Koran",
       "vsiAuthor": "Michael Cook",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections B and C on the religious foundations of Islamic civilization, the role of Arabic, and Islamic theology."
+      "relevantPathsAI": [
+        "B.1.b",
+        "C.1.d.i"
+      ],
+      "rationaleAI": "The Quran as divine revelation received by Muhammad in Mecca and Medina directly relates to the rise of Islam (B.1.b). Examination of interpretation methods, fundamentalist and modernist readings, and the Quran's role in theology and law connects to religion, theology, and philosophy under the 'Abbasid caliphate (C.1.d.i)."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
       "vsiAuthor": "Peter Adamson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection C1d on Abbasid cultural life including theology, philosophy, and Greek and Persian influences."
+      "relevantPathsAI": [
+        "C.1.d",
+        "C.1.d.i",
+        "C.1.d.ii",
+        "C.2.a.iii",
+        "C.2.d"
+      ],
+      "rationaleAI": "Coverage of Avicenna and the Aristotelian tradition aligns with the intellectual and scientific developments under 'Abbasid cultural life (C.1.d), including theology and philosophy (C.1.d.i) and Greek influences on the arts and sciences (C.1.d.ii). The treatment of philosophy in Muslim Spain connects to the culture of Muslim Spain (C.2.a.iii), and Samanid patronage of learning relates to C.2.d."
     },
     {
       "vsiTitle": "Ibn Sīnā (Avicenna)",
       "vsiAuthor": "Peter Adamson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C1d on Abbasid philosophy and sciences, as Avicenna was a towering figure of this intellectual tradition."
+      "relevantPathsAI": [
+        "C.1.d",
+        "C.1.d.i",
+        "C.1.d.ii"
+      ],
+      "rationaleAI": "Avicenna as the most important philosopher of the Islamic world situates directly within 'Abbasid cultural life (C.1.d), with his theological and metaphysical contributions relating to religion, theology, and philosophy (C.1.d.i), and his medical writings and Greek intellectual influences connecting to arts and sciences (C.1.d.ii)."
     },
     {
       "vsiTitle": "The Abrahamic Religions",
       "vsiAuthor": "Charles L. Cohen",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides context on Islam's relationship to Judaism and Christianity, relevant to subsection B on the rise and spread of Islam."
+      "relevantPathsAI": [
+        "B.1.b",
+        "C.1.d.i"
+      ],
+      "rationaleAI": "The interrelation of Judaism, Christianity, and Islam and their shared lineage through Abraham connects to the rise of Islam and its relationship to prior Abrahamic traditions (B.1.b). Discussion of how mutual encounters shaped religious identities relates to theology and philosophy under the 'Abbasids (C.1.d.i)."
     },
     {
       "vsiTitle": "Global Islam",
@@ -52,27 +89,40 @@
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C2d on the Samanid dynasty in Khorasan and trade routes connecting the Islamic world to Central Asia."
+      "relevantPathsAI": [
+        "C.1.c",
+        "C.2.d"
+      ],
+      "rationaleAI": "Central Eurasian trade and cultural exchange routes connect to economic and social life under the 'Abbasids including manufactures and trade (C.1.c), and the Samanid dynasty's role in Khorasan and its position along trade networks (C.2.d)."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1c on the Muslim conquest of Byzantine territories in Jordan, Palestine, Syria, and Egypt."
+      "relevantPathsAI": [
+        "B.1.c.i",
+        "C.2.b"
+      ],
+      "rationaleAI": "Byzantine interactions with Islam relate to the Muslim conquest of Byzantine territories in Jordan, Palestine, Syria, and Egypt (B.1.c.i). The empire's responses to external threats in Asia Minor connect to the Fatimid expansion into Syria and broader regional dynamics (C.2.b)."
     },
     {
       "vsiTitle": "Late Antiquity",
       "vsiAuthor": "Gillian Clark",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides context for Arabia before Muhammad and the late antique world from which Islam emerged, relevant to subsection B1a."
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.c.i"
+      ],
+      "rationaleAI": "The period of transition from 300 to 800 CE, including Arab conquests ending Roman rule over Mediterranean coasts, directly relates to Arabia before Muhammad (B.1.a) and the Muslim conquest of the Sasanid Persian Empire and Byzantine territories (B.1.c.i)."
     },
     {
       "vsiTitle": "Islamic Law",
       "vsiAuthor": "Mashood A. Baderin",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections B2d and C1d on the development of Islamic law and governance during the Umayyad and Abbasid periods."
+      "relevantPathsAI": [
+        "B.2.d.i",
+        "C.1.d.i"
+      ],
+      "rationaleAI": "Evolution of Islamic jurisprudence from classical foundations relates to the Islamization and Arabization processes under Umayyad administration (B.2.d.i) and the development of theology and philosophy during the 'Abbasid caliphate (C.1.d.i)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

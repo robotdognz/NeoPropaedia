@@ -5,45 +5,56 @@
       "vsiTitle": "Heredity",
       "vsiAuthor": "John Waller",
       "relevantPathsAI": [
-        "A.3"
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "B.1",
+        "C.3"
       ],
-      "rationaleAI": "The primary VSI for this section, directly covering heredity, genome, variation, and the combined action of heredity and environment (A.3)."
+      "rationaleAI": "Biological inheritance from ancient conceptions through Mendelian genetics addresses early speculations (A.1), Mendel's experiments (A.2), heredity-environment interaction (A.3), chromosomes and genes (B.1), and selective breeding (C.3)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
+        "A.2",
+        "A.3",
+        "B",
         "B.1",
         "B.2",
+        "C.1",
         "C.2"
       ],
-      "rationaleAI": "Covers genes, cell division, DNA sequencing, gene expression, sex linkage (B.1), the genetic code and mutations (B.2), and natural selection (C.2)."
+      "rationaleAI": "DNA structure, sex linkage, and mutations address Mendelian genetics (A.2), heredity-environment interaction (A.3), chromosomes (B.1), molecular genetics (B.2), population genetics (C.1), and natural selection (C.2)."
     },
     {
       "vsiTitle": "Genomics",
       "vsiAuthor": "John M. Archibald",
       "relevantPathsAI": [
-        "B.2"
+        "B.2",
+        "C.1"
       ],
-      "rationaleAI": "Covers the chemical and molecular nature of genes (B.2) including DNA sequencing, the genetic code, messenger RNA, and applications of molecular genetics."
+      "rationaleAI": "DNA sequencing and genome assembly address molecular genetics (B.2), and genomic analysis relates to population gene pools (C.1)."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
       "relevantPathsAI": [
+        "A.2",
         "B.2"
       ],
-      "rationaleAI": "Addresses molecular genetics (B.2) including DNA structure, gene expression and regulation, with historical context from Crick, Franklin, Mendel, and Watson."
+      "rationaleAI": "DNA structure discovery and Mendel's contributions address Mendelian genetics (A.2) and molecular genetics (B.2)."
     },
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
       "relevantPathsAI": [
+        "C",
         "C.1",
-        "C.2",
-        "C.3"
+        "C.2"
       ],
-      "rationaleAI": "Covers population genetics (C.1), genetic drift and gene frequency changes, natural selection as evolutionary agent (C.2), and artificial selection (C.3)."
+      "rationaleAI": "Natural selection, genetic drift, and speciation address heredity and evolution (C), population genetics (C.1), and natural selection (C.2)."
     },
     {
       "vsiTitle": "The Cell",
@@ -51,7 +62,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Covers chromosomes and genes as the cellular basis of heredity (B.1), including the nucleus, cell division, and how genetic material is transmitted."
+      "rationaleAI": "Cell division processes address the cellular basis of heredity (B.1)."
     },
     {
       "vsiTitle": "Darwin",
@@ -59,7 +70,7 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Covers the historical foundation of heredity and evolution including Darwin's natural selection theory (C.2), species concept, and Wallace's contributions."
+      "rationaleAI": "Natural selection and the Modern Synthesis address natural selection as an evolutionary agent (C.2)."
     },
     {
       "vsiTitle": "Eugenics",
@@ -67,7 +78,7 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Directly relevant to artificial selection for genetic improvements of humankind (C.3), covering Francis Galton, heredity, and population-level selection programs."
+      "rationaleAI": "Eugenic policies address artificial selection for genetic improvements of humankind (C.3)."
     },
     {
       "vsiTitle": "Agriculture",
@@ -75,33 +86,35 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Covers artificial selection of domesticated animals and cultivated plants (C.3), including genetically modified organisms as applications of molecular genetics."
+      "rationaleAI": "Plant breeding and livestock management address artificial selection of domesticated organisms (C.3)."
     },
     {
       "vsiTitle": "Synthetic Biology",
       "vsiAuthor": "Jamie A. Davies",
       "relevantPathsAI": [
-        "B.2",
-        "C.3"
+        "B.2"
       ],
-      "rationaleAI": "Addresses modern applications of molecular genetics (B.2) including genetic engineering and genetically modified organisms relevant to artificial selection (C.3)."
+      "rationaleAI": "Genetic engineering addresses applications of molecular genetics (B.2)."
     },
     {
       "vsiTitle": "Philosophy of Biology",
       "vsiAuthor": "Samir Okasha",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "C.2"
       ],
-      "rationaleAI": "Examines conceptual foundations of heredity including the species concept, essentialism vs. population thinking, and nature-nurture interactions (A.3)."
+      "rationaleAI": "The nature-nurture problem addresses heredity-environment interaction (A.3) and natural selection (C.2)."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
       "relevantPathsAI": [
-        "B.2"
+        "B.2",
+        "C.1"
       ],
-      "rationaleAI": "Covers genetics of microorganisms including bacterial gene transfer, DNA sequencing, and polymerase chain reaction as tools of molecular genetics (B.2)."
+      "rationaleAI": "Genetic manipulation addresses molecular genetics (B.2), and microbial evolution relates to gene frequency changes (C.1)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

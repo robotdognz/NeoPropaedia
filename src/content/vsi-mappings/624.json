@@ -4,8 +4,16 @@
     {
       "vsiTitle": "Music",
       "vsiAuthor": "Nicholas Cook",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the art of music, musical thinking, performance, production, and consumption -- the core subject of this entire section (A-G)."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.3",
+        "B.3",
+        "C",
+        "D",
+        "F"
+      ],
+      "rationaleAI": "Music covering performance, composition, notation, and digital technology addresses the art of music (A), diverse conceptions (A.1), performance and interpretation (A.3), musical instruments (B.3), elements of music (C), notation (D), and recording and reproduction (F)."
     },
     {
       "vsiTitle": "The Orchestra",
@@ -13,36 +21,37 @@
       "relevantPathsAI": [
         "B.3",
         "C.7",
-        "E.1"
+        "E.2.a.ii"
       ],
-      "rationaleAI": "Examines orchestral performance, instrumentation, and orchestration from Haydn's classical ensembles to the modern symphony orchestra, directly relevant to sections B.3, C.7, and E.1.a."
+      "rationaleAI": "The symphony orchestra covering its structure and historical roots addresses musical instruments (B.3), orchestration and instrumentation (C.7), and the symphony (E.2.a.ii)."
     },
     {
       "vsiTitle": "Early Music",
       "vsiAuthor": "Thomas Forrest Kelly",
       "relevantPathsAI": [
-        "E.1",
-        "G.1"
+        "G",
+        "G.1",
+        "E.1.b.i"
       ],
-      "rationaleAI": "Traces medieval plainchant, Renaissance polyphony, and Baroque forms including liturgical music, relevant to Western music history and vocal/choral genres (E.1.b, G.1)."
+      "rationaleAI": "Western music from Medieval through Baroque periods covering Gregorian chant and historical instruments addresses the history of Western music (G.1) and liturgical chant (E.1.b.i)."
     },
     {
       "vsiTitle": "Ludwig Van Beethoven",
       "vsiAuthor": "Mark Evan Bonds",
       "relevantPathsAI": [
-        "E.2",
-        "G.1"
+        "G.1",
+        "E.2.a.ii"
       ],
-      "rationaleAI": "Beethoven is central to the sonata, symphony, and concerto forms explicitly listed in section E.2.a, and to Western music history (G.1)."
+      "rationaleAI": "Beethoven's musical works and career address the history of Western music (G.1) and the symphony as a compositional form (E.2.a.ii)."
     },
     {
       "vsiTitle": "The Blues",
       "vsiAuthor": "Elijah Wald",
       "relevantPathsAI": [
-        "E.2",
-        "E.4"
+        "E.4",
+        "E.2.b"
       ],
-      "rationaleAI": "Traces the blues from Mississippi Delta origins through urban electrification, exploring its foundational role in jazz development and popular music (E.2.b, E.4)."
+      "rationaleAI": "Blues as an American musical tradition from work songs through rhythm and blues addresses genres determined by cultural milieu: popular music (E.4) and jazz (E.2.b) through its influence."
     },
     {
       "vsiTitle": "Folk music",
@@ -50,7 +59,7 @@
       "relevantPathsAI": [
         "E.4"
       ],
-      "rationaleAI": "Directly covers folk music as a genre determined by cultural milieu, including its relation to popular and art music (E.4)."
+      "rationaleAI": "Global folk music traditions spanning diverse cultures directly address genres determined by cultural milieu: folk music (E.4)."
     },
     {
       "vsiTitle": "Country music",
@@ -58,50 +67,53 @@
       "relevantPathsAI": [
         "E.4"
       ],
-      "rationaleAI": "Traces country music from Appalachian roots through the Nashville sound, illustrating a popular genre shaped by cultural milieu (E.4)."
+      "rationaleAI": "Country music as an American popular genre from folk and rural roots addresses genres determined by cultural milieu: popular music (E.4)."
     },
     {
       "vsiTitle": "World music",
       "vsiAuthor": "Philip V. Bohlman",
       "relevantPathsAI": [
-        "E.4"
+        "E.4",
+        "F"
       ],
-      "rationaleAI": "Surveys music across global cultures, directly relevant to non-Western musical traditions and genres determined by cultural milieu (E.4)."
+      "rationaleAI": "World music encompassing non-Western traditions addresses genres determined by cultural milieu (E.4). Recording technology and the audio moment address recording and reproduction of music (F)."
     },
     {
       "vsiTitle": "Ethnomusicology",
       "vsiAuthor": "Timothy Rice",
       "relevantPathsAI": [
-        "A.5",
+        "A.4",
         "E.4"
       ],
-      "rationaleAI": "Provides the academic framework for studying music across cultures, relevant to writings about music and non-Western traditions (A.5, E.4)."
+      "rationaleAI": "Ethnomusicology studying music across geographic diversity addresses the relation of music to other human activities (A.4) and genres determined by cultural milieu (E.4)."
     },
     {
       "vsiTitle": "The Psychology of Music",
       "vsiAuthor": "Elizabeth Hellmuth Margulis",
       "relevantPathsAI": [
         "A.2",
-        "A.4"
+        "A.5"
       ],
-      "rationaleAI": "Investigates musical perception, emotional response, and performance psychology, directly relevant to musical meaning and human activities (A.2, A.4)."
+      "rationaleAI": "Psychology of music covering cognitive mechanisms and emotional responses addresses problems of musical meaning (A.2) and writings about music (A.5)."
     },
     {
       "vsiTitle": "Music and Technology",
       "vsiAuthor": "Mark Katz",
       "relevantPathsAI": [
-        "B.3",
-        "E.1.c"
+        "B.3.d",
+        "F",
+        "F.1",
+        "F.4"
       ],
-      "rationaleAI": "Addresses electrophonic instruments, electronic music, and recording technology from the phonograph to digital audio, directly relevant to sections B.3.d, E.1.c, and F."
+      "rationaleAI": "Technology's role in music covering instruments, recording, and streaming addresses electrophonic instruments (B.3.d), recording and reproduction (F), types of reproduction (F.1), and development of music recording (F.4)."
     },
     {
       "vsiTitle": "Film music",
       "vsiAuthor": "Kathryn Kalinak",
       "relevantPathsAI": [
-        "E.3.c"
+        "E.3.c.iv"
       ],
-      "rationaleAI": "Focuses on incidental and background music for motion pictures, explicitly listed under music for the theatre (E.3.c.iv)."
+      "rationaleAI": "Film music covering composition for cinema directly addresses incidental and background music for motion pictures (E.3.c.iv)."
     },
     {
       "vsiTitle": "Sound",
@@ -109,7 +121,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Explains the physics of tone, pitch, frequency, and resonance, directly relevant to the physical aspects of musical sound (B.1, C)."
+      "rationaleAI": "Physics of sound covering wave behavior, frequency, pitch, and resonance addresses the physical aspects of musical sound (B.1)."
     },
     {
       "vsiTitle": "Theodor W. Adorno",
@@ -118,8 +130,9 @@
         "A.2",
         "A.5"
       ],
-      "rationaleAI": "Adorno's philosophy of music and cultural theory are directly relevant to writings about music and problems of musical meaning (A.2, A.5)."
+      "rationaleAI": "Adorno's critique of capitalism's effects on music addresses problems of musical meaning (A.2) and writings about music (A.5)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

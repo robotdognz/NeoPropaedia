@@ -5,59 +5,72 @@
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
       "relevantPathsAI": [
+        "A",
+        "B",
         "B.1",
+        "B.2",
+        "B.3",
+        "B.4",
+        "D",
+        "D.1",
         "D.2",
+        "D.2.a",
         "D.3",
+        "E",
         "F.4"
       ],
-      "rationaleAI": "The primary VSI for this section, directly covering growth, differentiation, morphogenesis (B.1-3), blastula/gastrulation (D.2.a), Hox genes in organ formation (D.3), and identical twins (F.4)."
+      "rationaleAI": "Core developmental biology covering development scope (A), growth (B.1), morphogenesis (B.2), differentiation (B.3), control through Sonic hedgehog signaling (B.4), animal development from fertilized egg (D.1, D.2.a), organ formation (D.3), aging (E), and identical twins (F.4)."
     },
     {
       "vsiTitle": "Stem Cells",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
         "B.3",
+        "B.4",
         "F.1",
         "F.5"
       ],
-      "rationaleAI": "Directly addresses cell differentiation (B.3), biological regeneration (F.1), and development in vitro including cell and tissue cultures (F.5)."
+      "rationaleAI": "Stem cell differentiation addresses differentiation (B.3) and developmental control (B.4), while regenerative medicine relates to biological regeneration (F.1) and in vitro development (F.5)."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
       "relevantPathsAI": [
         "B.1",
-        "B.3"
+        "B.3",
+        "B.4"
       ],
-      "rationaleAI": "Explains the cell cycle, cell growth (B.1), the nucleus and nuclear envelope during division, and the cellular basis of differentiation (B.3)."
+      "rationaleAI": "Cell division and differentiation address growth (B.1), differentiation (B.3), and programmed cell death as developmental control (B.4)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
       "relevantPathsAI": [
         "C",
+        "C.1",
         "C.2",
         "C.3",
         "C.4"
       ],
-      "rationaleAI": "Treats plant development (C), including pollination mechanisms (C.2.b), seed germination and dispersal (C.3.b), and the sporophyte plant body (C.4)."
+      "rationaleAI": "Plant evolution addresses life cycles and alternation of generations (C.1), pollination (C.2.b), seedling development (C.3), and sporophyte development (C.4)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
+        "B.3",
         "B.4"
       ],
-      "rationaleAI": "Addresses genetic control and integration of development (B.4) including gene expression patterns, molecular biology of differentiation, and regulation during morphogenesis."
+      "rationaleAI": "Gene expression through cell division relates to differentiation (B.3) and control of development (B.4)."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
       "relevantPathsAI": [
-        "B.1",
+        "B.4",
         "D.4"
       ],
-      "rationaleAI": "Details growth hormone and insulin-like growth factor in controlling growth (B.1), along with hormonal regulation of postembryonic development and metamorphosis (D.4)."
+      "rationaleAI": "Growth hormone addresses control of development (B.4), and hormonal maturation relates to postembryonic development (D.4)."
     },
     {
       "vsiTitle": "Cancer",
@@ -65,23 +78,26 @@
       "relevantPathsAI": [
         "F.3"
       ],
-      "rationaleAI": "Relevant to biological malformation (F.3) where control of cell growth and differentiation fails, leading to abnormal development."
+      "rationaleAI": "Uncontrolled cell growth relates to biological malformation (F.3)."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
       "relevantPathsAI": [
+        "B.3",
         "B.4"
       ],
-      "rationaleAI": "Elucidates molecular mechanisms of gene regulation underlying the control and integration of developmental processes (B.4), including transcription factors and signaling cascades."
+      "rationaleAI": "Gene expression mechanisms address differentiation (B.3) and molecular control of development (B.4)."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
       "relevantPathsAI": [
-        "D.2"
+        "D",
+        "D.2",
+        "D.3"
       ],
-      "rationaleAI": "Surveys the diversity of embryonic development and organ formation across invertebrate phyla (D.2-3), including variations in gastrulation and metamorphosis."
+      "rationaleAI": "Developmental biology across phyla addresses animal development (D), embryo formation (D.2), and organ formation (D.3)."
     },
     {
       "vsiTitle": "Ageing",
@@ -92,16 +108,16 @@
         "E.2",
         "E.3"
       ],
-      "rationaleAI": "Directly relevant to aging and decline (E) including senescence (E.1), causes of aging (E.2), life expectancy, and the duration of life (E.3)."
+      "rationaleAI": "Human ageing addresses senescence in mammals (E.1), causes of aging (E.2), and duration of life (E.3)."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
       "relevantPathsAI": [
-        "D.2",
-        "E.1"
+        "D",
+        "D.4"
       ],
-      "rationaleAI": "Describes mammalian embryonic adaptations including placental development (D.2.b), postembryonic growth, and senescence in mammals (E.1)."
+      "rationaleAI": "Mammalian reproductive strategies address animal development (D) and postembryonic development (D.4)."
     },
     {
       "vsiTitle": "Amphibians",
@@ -109,7 +125,7 @@
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "Highlights amphibian metamorphosis as a paradigmatic example of postembryonic transformation (D.4) and developmental adaptation to aquatic and terrestrial life."
+      "rationaleAI": "Tadpole metamorphosis exemplifies postembryonic transformation (D.4)."
     },
     {
       "vsiTitle": "Symbiosis",
@@ -120,5 +136,6 @@
       "rationaleAI": "Shows how symbiotic interactions with microbiomes influence biological development and growth processes in both plants and animals (B.4)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

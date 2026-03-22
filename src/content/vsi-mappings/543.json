@@ -5,32 +5,46 @@
       "vsiTitle": "Governance",
       "vsiAuthor": "Mark Bevir",
       "relevantPathsAI": [
-        "A.4"
+        "A",
+        "A.2",
+        "A.3",
+        "A.4",
+        "A.6",
+        "B"
       ],
-      "rationaleAI": "Explores the dynamics of governance including regulatory functions and accountability in government operations (A.4)."
+      "rationaleAI": "Governance theories across corporate, public, and global spheres address the exercise of political power (A), conduct of foreign relations through international organizations like the World Bank and IMF (A.2), supervisory and regulatory functions of government (A.3, A.4), and government's role in production and consumption through neoclassical economic frameworks (B). Enterprising functions of government through collaborative governance models (A.6)."
     },
     {
       "vsiTitle": "Public Administration",
       "vsiAuthor": "Stella Z. Theodoulou, Ravi K. Roy",
       "relevantPathsAI": [
+        "A",
+        "A.1",
         "A.4",
-        "A.5"
+        "A.6",
+        "B"
       ],
-      "rationaleAI": "Examines how government functions are administered including regulatory, supervisory, and enforcement roles (A.4, A.5)."
+      "rationaleAI": "Government bureaucracy delivering public services including safety and welfare addresses internal security functions (A.1) and regulatory functions (A.4). Privatization and management reform relate to enterprising functions of government (A.6) and government's role in production and consumption (B). The broader scope of public administration covers the exercise of political power (A)."
     },
     {
       "vsiTitle": "Politics",
       "vsiAuthor": "Kenneth Minogue",
-      "relevantPathsAI": [],
-      "rationaleAI": "The exercise of political power, including how government functions operate in practice, is central to outline A."
+      "relevantPathsAI": [
+        "A",
+        "C",
+        "C.1"
+      ],
+      "rationaleAI": "Political theory from ancient Greece through modern democratic governance broadly addresses how political power is exercised (A). Coverage of democracy, ideology, political parties, and activism connects to methods of changing the form of government (C), including peaceful changes through electoral processes (C.1)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
       "relevantPathsAI": [
+        "A",
+        "C",
         "C.1"
       ],
-      "rationaleAI": "Democratic processes for exercising power and peaceful methods of changing government through elections connect to outline C.1."
+      "rationaleAI": "Democracy as a political system from ancient Greek origins through contemporary forms directly addresses the exercise of political power (A). Representative and direct democracy, plebiscites, and constitutional mandates relate to peaceful methods of changing government (C.1)."
     },
     {
       "vsiTitle": "International Relations",
@@ -38,7 +52,7 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "The conduct of foreign relations between sovereign states and international organizations is central to outline A.2."
+      "rationaleAI": "International relations examining political authority at the global level, state sovereignty, and international institutions directly addresses the conduct of foreign relations in relation to other sovereign states and international organizations (A.2)."
     },
     {
       "vsiTitle": "Diplomacy",
@@ -46,15 +60,16 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Directly addresses the conduct of foreign relations and diplomatic functions of government (A.2)."
+      "rationaleAI": "Diplomacy as the management of relations between nation-states, including negotiation, wartime summitry, and globalization directly covers the conduct of foreign relations (A.2)."
     },
     {
       "vsiTitle": "International security",
       "vsiAuthor": "Christopher S. Browning",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.2"
       ],
-      "rationaleAI": "Internal and external security functions of government, including national defense, are central to outline A.1."
+      "rationaleAI": "Traditional military concerns and nontraditional security threats including NATO and UN roles address internal and external security functions (A.1). State security frameworks and international relations address the conduct of foreign relations (A.2)."
     },
     {
       "vsiTitle": "Criminal Justice",
@@ -62,47 +77,53 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Law enforcement and corrective functions -- sanctions, inducements, and penalties -- connect to outline A.5."
+      "rationaleAI": "Criminal justice systems covering policing, prosecution, sentencing, imprisonment, and capital punishment directly address law enforcement and the corrective functions of government including sanctions and penalties (A.5)."
     },
     {
       "vsiTitle": "The Rule of Law",
       "vsiAuthor": "Aziz Z. Huq",
       "relevantPathsAI": [
-        "A.4",
-        "A.5"
+        "A",
+        "A.4"
       ],
-      "rationaleAI": "Legality and due process constrain how government exercises its regulatory and enforcement power (A.4, A.5)."
+      "rationaleAI": "The rule of law tradition examining why powerful actors maintain legal constraints relates to the broader exercise of political power (A). Due process and legality connect to the regulatory functions of government through the establishment and enforcement of standards (A.4)."
     },
     {
       "vsiTitle": "Elections",
       "vsiAuthor": "L. Sandy Maisel, Jennifer A. Yoder",
       "relevantPathsAI": [
+        "C",
         "C.1"
       ],
-      "rationaleAI": "Directly addresses peaceful change of government through electoral processes and plebiscites (C.1)."
+      "rationaleAI": "Electoral systems and voting processes determining public officeholders directly address methods of changing government through peaceful means including electoral processes and plebiscites (C.1)."
     },
     {
       "vsiTitle": "American Political Parties and Elections",
       "vsiAuthor": "L. Sandy Maisel",
       "relevantPathsAI": [
+        "C",
         "C.1"
       ],
-      "rationaleAI": "Political parties organize the electoral process for peaceful government transitions (C.1)."
+      "rationaleAI": "The two-party system, primary elections, voter participation, and campaign organization in the United States directly address peaceful changes in government through electoral processes (C.1)."
     },
     {
       "vsiTitle": "The American Presidency",
       "vsiAuthor": "Charles O. Jones",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.4"
+        "A.2",
+        "B"
       ],
-      "rationaleAI": "Executive power in a presidential system -- including security and regulatory functions -- is relevant to outline A.1 and A.4."
+      "rationaleAI": "The presidency as a constitutional institution covers the exercise of political power (A), the National Security Council addresses security functions (A.1), foreign policy addresses conduct of foreign relations (A.2), and budgetary authority relates to government's role in production and consumption (B)."
     },
     {
       "vsiTitle": "Revolutions",
       "vsiAuthor": "Jack A. Goldstone",
-      "relevantPathsAI": [],
-      "rationaleAI": "Non-peaceful methods of changing the form of government are the focus, relevant to outline C."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Theory and history of revolutions from ancient city-states through the Arab Spring directly address methods of changing the form of government (C), encompassing both violent and constitutional transformations across monarchies, empires, and dictatorships."
     },
     {
       "vsiTitle": "Terrorism",
@@ -111,7 +132,7 @@
         "A.1",
         "A.5"
       ],
-      "rationaleAI": "Terrorism as a challenge to government security and law enforcement functions connects to outline A.1 and A.5."
+      "rationaleAI": "Terrorism as revolutionary violence and religious extremism, alongside antiterrorist and counterterrorist measures, relates to internal and external security functions (A.1) and law enforcement and corrective functions including sanctions and penalties (A.5)."
     },
     {
       "vsiTitle": "Surveillance",
@@ -120,16 +141,17 @@
         "A.1",
         "A.4"
       ],
-      "rationaleAI": "Government surveillance as a security and regulatory function is relevant to outline A.1 and A.4."
+      "rationaleAI": "Contemporary surveillance spanning governance and security addresses internal security functions (A.1). Data collection and monitoring by organizations relate to the regulatory functions of government through active enforcement of standards (A.4)."
     },
     {
       "vsiTitle": "Corruption",
       "vsiAuthor": "Leslie Holmes",
       "relevantPathsAI": [
+        "A",
         "A.4",
         "A.5"
       ],
-      "rationaleAI": "Corruption undermines regulatory and enforcement functions of government (A.4, A.5)."
+      "rationaleAI": "Corruption as a global phenomenon affecting governance relates to the exercise of political power (A). International anti-corruption efforts through organizations like the OECD address regulatory functions (A.4) and corrective functions including sanctions (A.5)."
     },
     {
       "vsiTitle": "Negotiation",
@@ -137,7 +159,7 @@
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Mediation and negotiation serve as supervisory functions for resolving conflicts (A.3)."
+      "rationaleAI": "Negotiation theory covering mediation, deliberative democracy, restorative justice, and dispute resolution directly addresses supervisory functions of government including the resolution of conflicts through mediation and adjudication (A.3)."
     },
     {
       "vsiTitle": "Arbitration",
@@ -145,43 +167,52 @@
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Arbitration as a method of adjudicating suits and resolving disputes connects to outline A.3."
+      "rationaleAI": "Arbitration as a dispute resolution mechanism providing binding decisions outside traditional courts directly addresses the resolution of conflicts through mediation and adjudication of suits (A.3)."
     },
     {
       "vsiTitle": "Competition and Antitrust Law",
       "vsiAuthor": "Ariel Ezrachi",
       "relevantPathsAI": [
-        "A.4"
+        "A.4",
+        "B"
       ],
-      "rationaleAI": "Regulatory functions of government in enforcing competition standards and market regulation are central to outline A.4."
+      "rationaleAI": "Legal frameworks protecting competitive markets through enforcement agencies address regulatory functions including the establishment and enforcement of standards (A.4). Market regulation relates to government's role in production and consumption (B)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
-      "relevantPathsAI": [],
-      "rationaleAI": "Government's role in production and consumption within market economies is relevant to outline B."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Capitalism as an economic system covering market forces, production, trade, and financial systems directly addresses government's role in production and consumption (B), including economic deregulation and globalization of capital."
     },
     {
       "vsiTitle": "The Welfare State",
       "vsiAuthor": "David Garland",
       "relevantPathsAI": [
-        "A.6"
+        "A.6",
+        "B"
       ],
-      "rationaleAI": "Government's enterprising and social welfare functions in the economy connect to outline A.6 and B."
+      "rationaleAI": "Welfare state systems encompassing social insurance, public services, and healthcare address enterprising functions of government (A.6) and government's role in production and consumption (B) as essential structural components of modern capitalist democracies."
     },
     {
       "vsiTitle": "Populism",
       "vsiAuthor": "Cas Mudde, Cristsbal Rovia Kalwasser",
-      "relevantPathsAI": [],
-      "rationaleAI": "Populist movements challenge established political processes and the exercise of political power (A, C)."
+      "relevantPathsAI": [
+        "A",
+        "C",
+        "C.1"
+      ],
+      "rationaleAI": "Populism as a political ideology privileging popular sovereignty addresses the exercise of political power (A). Populist movements as both democratic corrective and threat to institutions connect to methods of changing government (C), including through electoral processes (C.1)."
     },
     {
       "vsiTitle": "Authoritarianism",
       "vsiAuthor": "James Loxton",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "C"
       ],
-      "rationaleAI": "Authoritarian regimes exercise power through security, regulatory, and enforcement functions (A)."
+      "rationaleAI": "Authoritarian regimes including military, single-party, and personalist types address the exercise of political power (A). Democratization processes and democratic backsliding relate to methods of changing the form of government (C)."
     },
     {
       "vsiTitle": "Environmental Law",
@@ -189,8 +220,9 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Regulatory functions of government in environmental protection and standards enforcement connect to outline A.4."
+      "rationaleAI": "Environmental regulatory frameworks including command-and-control regulation and market-based instruments directly address the regulatory functions of government through the establishment and active enforcement of standards (A.4)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

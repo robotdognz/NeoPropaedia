@@ -5,27 +5,38 @@
       "vsiTitle": "Development",
       "vsiAuthor": "Ian Goldin",
       "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
         "A.4",
+        "A.4.a",
+        "A.4.b",
         "B.4"
       ],
-      "rationaleAI": "A core text on economic growth in developing countries, GDP per capita, the Solow growth model, and development planning (A.4, B.4)."
+      "rationaleAI": "Directly addresses how nations achieve economic development and escape poverty (A.4), the Solow growth model as a theory of economic growth (A.2), GDP and GNP metrics measuring growth rates versus population growth (A.4.a), government policy and institutional quality as factors influencing growth (A.1), social costs and benefits including sustainability and environmental concerns (A.3), and various theories of development and retardation (A.4.b). Role of the IMF and international organizations in economic planning for developing countries (B.4)."
     },
     {
       "vsiTitle": "Economics",
       "vsiAuthor": "Partha Dasgupta",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.2"
+        "A.4",
+        "A.5"
       ],
-      "rationaleAI": "Economic growth theory, productivity, human capital, and the relationship between growth and development are central themes (A.1, A.2)."
+      "rationaleAI": "Resource allocation, human capital formation, and economies of scale as factors influencing economic growth (A.1), macroeconomic development measures (A), contrasting conditions between developed and developing nations illustrating economic growth disparities (A.4), and research and development contributing to changes in economic efficiency (A.5)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "A.4"
+        "A",
+        "A.1",
+        "A.4",
+        "A.4.b"
       ],
-      "rationaleAI": "Traces historical patterns of economic growth, divergence across countries, and the institutional causes of development (A, A.4.b)."
+      "rationaleAI": "Comparative analysis of why some countries achieved prosperity while others remained poor, directly addressing factors influencing economic growth (A.1), economic growth in developing countries (A.4), and various theories of national economic development and retardation (A.4.b)."
     },
     {
       "vsiTitle": "Innovation",
@@ -34,24 +45,27 @@
         "A.1",
         "A.5"
       ],
-      "rationaleAI": "Technology and innovation as drivers of economic growth -- including creative destruction and productivity gains -- are examined (A.1, A.5)."
+      "rationaleAI": "Innovation as a process driving economic development through technology and creative destruction as a factor influencing economic growth (A.1), and disruptive technologies affecting changes in output per unit of input as measures of economic productivity (A.5)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.2",
+        "A.3"
       ],
-      "rationaleAI": "The pivotal period when technology, capital, and labour drove sustained economic growth is the central subject (A.1)."
+      "rationaleAI": "Technological innovations in steam power, textiles, and iron production as factors influencing economic growth (A.1), Britain's transformation as a model of economic growth theory (A.2), and differential impacts on social classes illustrating social costs and benefits of growth (A.3)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "B.3"
+        "A.2"
       ],
-      "rationaleAI": "Explores how capital supply, market forces, and industrialization drive growth in market economies (A.1, B.3)."
+      "rationaleAI": "Capital accumulation, market forces, and industrialization as factors influencing economic growth (A.1), comparative capitalisms illustrating different growth models (A.2), and the relationship between market systems and economic expansion (A)."
     },
     {
       "vsiTitle": "Communism",
@@ -59,7 +73,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Economic planning in Communist countries and centrally planned growth models are examined (B.2)."
+      "rationaleAI": "Communist centralized economic planning as the primary example of economic planning in Communist countries (B.2), covering the Soviet Union, China, Cuba, and other socialist states' approaches to planned growth."
     },
     {
       "vsiTitle": "Socialism",
@@ -68,7 +82,7 @@
         "B.2",
         "B.3"
       ],
-      "rationaleAI": "Socialist approaches to economic planning and state-directed growth strategies are explored (B.2, B.3)."
+      "rationaleAI": "Swedish social democracy as economic planning in a developed non-Communist country (B.3), and Cuban communism as economic planning in a Communist country (B.2), illustrating alternative approaches to economic growth and planning."
     },
     {
       "vsiTitle": "Keynes",
@@ -77,16 +91,16 @@
         "A.2",
         "B.3"
       ],
-      "rationaleAI": "Keynesian demand-determined growth models and government fiscal policies for economic stability are examined (A.2.a, B.3)."
+      "rationaleAI": "Keynesian economic theory as a demand-determined model of growth (A.2), and Keynesian fiscal policy as a framework for economic planning and stability in developed non-Communist countries (B.3)."
     },
     {
       "vsiTitle": "Neoliberalism",
       "vsiAuthor": "Manfred Steger, Ravi K. Roy",
       "relevantPathsAI": [
-        "A.2",
+        "A.1",
         "B.3"
       ],
-      "rationaleAI": "Supply-side growth theories, market-oriented reform, and debates about economic planning are addressed (A.2.a, B.3)."
+      "rationaleAI": "Free markets, deregulation, and privatization as governmental fiscal policies influencing economic growth (A.1), and neoliberal policy implementation as a form of economic planning in developed non-Communist countries (B.3)."
     },
     {
       "vsiTitle": "Environmental economics",
@@ -94,7 +108,7 @@
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "The environmental costs of economic growth and market-based policy instruments for sustainable development are explored (A.3)."
+      "rationaleAI": "Cost-benefit analysis of environmental protection and carbon taxes directly addressing social costs and benefits of economic growth (A.3), examining the tradeoffs between economic development and environmental harm."
     },
     {
       "vsiTitle": "Sustainability",
@@ -102,42 +116,44 @@
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Social costs and benefits of economic growth -- including tipping points and sustainable development -- are central themes (A.3)."
+      "rationaleAI": "Material and energy flows in consumption and production, tipping points, and strategies for sustainable development directly addressing the social costs and benefits of economic growth (A.3)."
     },
     {
       "vsiTitle": "Malthus",
       "vsiAuthor": "Donald Winch",
       "relevantPathsAI": [
-        "A.4"
+        "A.2",
+        "A.4",
+        "A.4.a"
       ],
-      "rationaleAI": "Malthusian theories of diminishing returns, population growth versus economic capacity, and economic retardation remain influential (A.4.a, A.4.b)."
+      "rationaleAI": "The law of diminishing returns and population theory as a foundational growth model (A.2), the relationship between population growth and economic output (A.4.a), and Malthus's influence on theories of economic development and retardation (A.4)."
     },
     {
       "vsiTitle": "Adam Smith",
       "vsiAuthor": "Christopher J. Berry",
       "relevantPathsAI": [
         "A.1",
-        "A.5"
+        "A.2"
       ],
-      "rationaleAI": "Smith's foundational theories of the wealth of nations, free trade as a growth driver, and productivity are examined (A.1, A.5)."
+      "rationaleAI": "The Wealth of Nations establishing foundational concepts about markets, trade, and competition as factors influencing economic growth (A.1), and as one of the earliest growth theories emphasizing supply-side factors (A.2)."
     },
     {
       "vsiTitle": "Marx",
       "vsiAuthor": "Peter Singer",
       "relevantPathsAI": [
         "A.2",
-        "A.4"
+        "B.2"
       ],
-      "rationaleAI": "Marxist theories of capital accumulation, economic development, and the dynamics of growth remain foundational (A.2, A.4.b)."
+      "rationaleAI": "Historical materialism and critique of political economy as a theory of economic growth and class dynamics (A.2), and Marxism as the theoretical foundation for economic planning in Communist countries (B.2)."
     },
     {
       "vsiTitle": "The Russian Economy",
       "vsiAuthor": "Richard Connolly",
       "relevantPathsAI": [
         "B.2",
-        "B.3"
+        "A.4"
       ],
-      "rationaleAI": "A case study of economic planning and growth strategies in a formerly Communist state transitioning to a mixed economy (B.2, B.3)."
+      "rationaleAI": "Soviet centrally planned economy as a primary example of economic planning in Communist countries (B.2), and the post-Soviet transition examining economic development through state-controlled versus market-driven approaches (A.4)."
     },
     {
       "vsiTitle": "The BRICS",
@@ -146,25 +162,26 @@
         "A.4",
         "B.4"
       ],
-      "rationaleAI": "Economic growth strategies in major developing countries, including their development planning, are examined (A.4, B.4)."
+      "rationaleAI": "BRICS nations as emerging economies challenging Western-dominated institutions, relevant to economic growth in developing countries (A.4), and the group's role in reshaping international economic planning and development lending (B.4)."
     },
     {
       "vsiTitle": "Globalization",
       "vsiAuthor": "Manfred Steger",
       "relevantPathsAI": [
+        "A.1",
         "A.4"
       ],
-      "rationaleAI": "Global economic integration and its effects on growth patterns and development opportunities across countries are explored (A.4)."
+      "rationaleAI": "Global trade, migration, and economic deregulation as factors influencing economic growth (A.1), and transnational flows affecting economic growth in developing countries through integration or exclusion (A.4)."
     },
     {
       "vsiTitle": "Environmental Justice",
       "vsiAuthor": "Pamela Hill",
       "relevantPathsAI": [
-        "A.1",
-        "B.2"
+        "A.3"
       ],
-      "rationaleAI": "Examines environmental inequality, climate justice, and the disproportionate impact of pollution on low-income communities, relevant to A.1 (social costs of growth) and B.2 (development planning)."
+      "rationaleAI": "Disproportionate environmental burdens on marginalized communities and arguments for changes to economic structures directly addressing social costs of economic growth and their unequal distribution (A.3)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

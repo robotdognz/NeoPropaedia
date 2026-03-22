@@ -5,138 +5,155 @@
       "vsiTitle": "Psychology",
       "vsiAuthor": "Gillian Butler, Freda McManus",
       "relevantPathsAI": [
-        "A.3"
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.3.a",
+        "A.3.b",
+        "A.3.c",
+        "A.4",
+        "B"
       ],
-      "rationaleAI": "Covers the scientific study of human behaviour and experience across cognitive, developmental, and social dimensions (A.3, B)."
+      "rationaleAI": "Psychology covers cognitive (A.3.a), conative (A.3.b), affective dimensions (A.3.c), dispositional tendencies (A.4), and developmental stages (B)."
     },
     {
       "vsiTitle": "Human evolution",
       "vsiAuthor": "Bernard Wood",
       "relevantPathsAI": [
+        "A.1",
         "A.1.c"
       ],
-      "rationaleAI": "Directly addresses the evolutionary development of mankind and phylogenetic continuity with other primates (A.1.c)."
+      "rationaleAI": "Hominin evolution addresses evolutionary development of mankind (A.1.c)."
     },
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
       "relevantPathsAI": [
+        "A.1",
         "A.1.c"
       ],
-      "rationaleAI": "Covers natural selection and evolutionary theory underlying the explanation of distinctive human traits via phylogenetic continuity (A.1.c)."
+      "rationaleAI": "Natural selection addresses mankind's continuity with nature (A.1) and evolutionary development (A.1.c)."
     },
     {
       "vsiTitle": "Animal Behaviour",
       "vsiAuthor": "Tristram D. Wyatt",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a",
+        "A.1.c"
       ],
-      "rationaleAI": "Covers behavioural capacities humans share with other primates and higher mammals, including instinct and learning (A.1.a)."
+      "rationaleAI": "Shared mammalian capacities address primate commonalities (A.1.a) and phylogenetic continuity (A.1.c)."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a",
+        "A.1.c"
       ],
-      "rationaleAI": "Covers mammalian behaviour, brain, and evolution, directly relevant to capacities humans share with higher mammals (A.1.a)."
+      "rationaleAI": "Primate evolution addresses shared capacities (A.1.a) and evolutionary development (A.1.c)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.2.a"
       ],
-      "rationaleAI": "Covers elements of genetic endowment including DNA, heredity, and variation central to the nature-nurture controversy (A.2.a)."
+      "rationaleAI": "Heritability debates address genetic endowment (A.2.a) and nature-nurture controversy (A.2)."
     },
     {
       "vsiTitle": "Heredity",
       "vsiAuthor": "John Waller",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.2.a"
       ],
-      "rationaleAI": "Directly addresses heredity, genome, and variation as the genetic side of the nature-nurture controversy (A.2.a)."
+      "rationaleAI": "Inheritance shaping personality addresses genetic endowment (A.2.a) and nature-nurture (A.2)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A.1.b",
+        "A.2.b"
       ],
-      "rationaleAI": "Covers cultural conditioning and socialization as environmental factors shaping behaviour, and cumulative transmission of culture (A.1.b, A.2.b)."
+      "rationaleAI": "Distinctive human culture addresses human-specific capacities (A.1.b) and cultural conditioning (A.2.b)."
     },
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b"
       ],
-      "rationaleAI": "Covers ecological factors as environmental conditions influencing organisms and their behaviour (A.2.b)."
+      "rationaleAI": "Organism-environment interactions address ecological factors (A.2.b)."
     },
     {
       "vsiTitle": "Perception",
       "vsiAuthor": "Brian J. Rogers",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a"
       ],
-      "rationaleAI": "Directly covers sensation and perception as the cognitive dimension of behaviour and experience (A.3.a)."
+      "rationaleAI": "Sensory experience addresses cognitive dimension including perception (A.3.a)."
     },
     {
       "vsiTitle": "Memory",
       "vsiAuthor": "Jonathan K. Foster",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a"
       ],
-      "rationaleAI": "Directly covers memory and its role in the cognitive dimension of behaviour (A.3.a)."
+      "rationaleAI": "Memory processes address cognitive dimension (A.3.a)."
     },
     {
       "vsiTitle": "The Eye",
       "vsiAuthor": "Michael F. Land",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a"
       ],
-      "rationaleAI": "Covers vision and pattern recognition, relevant to the cognitive dimension of sensation and perception (A.3.a)."
+      "rationaleAI": "Visual perception addresses cognitive dimension through sensation (A.3.a)."
     },
     {
       "vsiTitle": "Thought",
       "vsiAuthor": "Tim Bayne",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a",
+        "A.1.b"
       ],
-      "rationaleAI": "Directly covers concept formation, ideation, and reasoning as cognitive dimensions of behaviour (A.3.a)."
+      "rationaleAI": "Nature of thought addresses cognition (A.3.a) and propositional language (A.1.b)."
     },
     {
       "vsiTitle": "Thinking and Reasoning",
       "vsiAuthor": "Jonathan Evans",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a"
       ],
-      "rationaleAI": "Covers reasoning, problem solving, and rational thinking as cognitive capacities (A.3.a)."
+      "rationaleAI": "Reasoning and problem solving address cognition including ideation (A.3.a)."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
       "vsiAuthor": "Richard Passingham",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a",
+        "A.5"
       ],
-      "rationaleAI": "Covers the neural foundations of cognition including sensation, perception, memory, and reasoning (A.3.a)."
+      "rationaleAI": "Neural basis of cognition addresses cognitive dimension (A.3.a), and AI comparison addresses emergent problems (A.5)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a",
+        "A.5"
       ],
-      "rationaleAI": "Covers the neural substrate underlying cognitive, conative, and affective dimensions of behaviour (A.3)."
+      "rationaleAI": "Brain substrates address cognition (A.3.a), and AI relates to human-machine intelligence comparison (A.5)."
     },
     {
       "vsiTitle": "Free will",
       "vsiAuthor": "Thomas Pink",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b"
       ],
-      "rationaleAI": "Directly addresses the voluntary and involuntary, self-determination, and motivation as the conative dimension (A.3.b)."
+      "rationaleAI": "Determinism and choice address the conative dimension including voluntary/involuntary (A.3.b)."
     },
     {
       "vsiTitle": "Emotion",
@@ -144,7 +161,7 @@
       "relevantPathsAI": [
         "A.3.c"
       ],
-      "rationaleAI": "Directly covers emotions, empathy, and the affective dimension of behaviour (A.3.c)."
+      "rationaleAI": "Evolutionary origins of emotions address the affective dimension (A.3.c)."
     },
     {
       "vsiTitle": "The History of Emotions",
@@ -152,7 +169,7 @@
       "relevantPathsAI": [
         "A.3.c"
       ],
-      "rationaleAI": "Covers the history of how emotions, feelings, and affect have been understood, relevant to the affective dimension (A.3.c)."
+      "rationaleAI": "Historical study of emotions addresses the affective dimension (A.3.c)."
     },
     {
       "vsiTitle": "Happiness",
@@ -160,30 +177,36 @@
       "relevantPathsAI": [
         "A.3.c"
       ],
-      "rationaleAI": "Covers the pleasant and unpleasant as part of the affective dimension of experience, including personality and well-being (A.3.c)."
+      "rationaleAI": "Happiness and well-being address the affective dimension (A.3.c)."
     },
     {
       "vsiTitle": "Intelligence",
       "vsiAuthor": "Ian J. Deary",
       "relevantPathsAI": [
         "A.2",
-        "A.3"
+        "A.3.a",
+        "A.4"
       ],
-      "rationaleAI": "Covers cognitive abilities, IQ, and working memory, relevant to the nature-nurture controversy and cognitive capacities (A.2, A.3.a)."
+      "rationaleAI": "Intelligence differences address nature-nurture (A.2), reasoning (A.3.a), and dispositional capacities (A.4)."
     },
     {
       "vsiTitle": "Consciousness",
       "vsiAuthor": "Susan Blackmore",
       "relevantPathsAI": [
-        "A.1"
+        "A.3.a",
+        "A.5"
       ],
-      "rationaleAI": "Addresses conscious experience, self-awareness, and the nature of human behavioural capacities held distinctive of humans (A.1.b)."
+      "rationaleAI": "Consciousness addresses cognition (A.3.a), and machine consciousness addresses emergent problems (A.5)."
     },
     {
       "vsiTitle": "Philosophy of Mind",
       "vsiAuthor": "Barbara Gail Montero",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses the mind-body relationship, consciousness, sensation, and perception as foundational to human experience."
+      "relevantPathsAI": [
+        "A",
+        "A.3",
+        "A.5"
+      ],
+      "rationaleAI": "Mind-body relationship addresses behaviour factors (A), cognitive/affective dimensions (A.3), and computer intelligence (A.5)."
     },
     {
       "vsiTitle": "Philosophy of Biology",
@@ -192,23 +215,23 @@
         "A.1",
         "A.2"
       ],
-      "rationaleAI": "Addresses whether mankind is distinct from or continuous with nature, and the nature-nurture debate (A.1, A.2)."
+      "rationaleAI": "Nature-nurture problem addresses mankind-nature relationship (A.1) and nature-nurture controversy (A.2)."
     },
     {
       "vsiTitle": "Languages",
       "vsiAuthor": "Stephen Anderson",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b"
       ],
-      "rationaleAI": "Propositional language is identified as a distinctively human behavioural capacity (A.1.b)."
+      "rationaleAI": "Linguistic diversity addresses propositional language as distinctively human (A.1.b)."
     },
     {
       "vsiTitle": "Linguistics",
       "vsiAuthor": "P. H. Matthews",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b"
       ],
-      "rationaleAI": "Covers language structure and speech, relevant to propositional language as a distinctive human trait (A.1.b)."
+      "rationaleAI": "Scientific study of language addresses propositional language (A.1.b)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
@@ -216,25 +239,25 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Directly addresses the comparison of human and artificial, machine-created intelligence (A.5)."
+      "rationaleAI": "AI capabilities address comparison of human and artificial intelligence (A.5)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
       "relevantPathsAI": [
-        "B.1",
         "B.2"
       ],
-      "rationaleAI": "Covers prenatal growth and development, cell differentiation, and nervous system formation (B.1, B.2)."
+      "rationaleAI": "Prenatal development addresses prenatal growth (B.2)."
     },
     {
       "vsiTitle": "Child Psychology",
       "vsiAuthor": "Usha Goswami",
       "relevantPathsAI": [
+        "B",
         "B.4",
         "B.5"
       ],
-      "rationaleAI": "Covers cognitive development, learning, and brain development in infancy and childhood (B.4, B.5)."
+      "rationaleAI": "Developmental psychology addresses infancy (B.4) and childhood (B.5)."
     },
     {
       "vsiTitle": "Adolescence",
@@ -242,30 +265,35 @@
       "relevantPathsAI": [
         "B.6"
       ],
-      "rationaleAI": "Directly covers the adolescence stage from puberty to adulthood (B.6)."
+      "rationaleAI": "Adolescent development addresses adolescence (B.6)."
     },
     {
       "vsiTitle": "The Self",
       "vsiAuthor": "Marya Schechtman",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses self-identity, agency, and subjectivity as aspects of human experience across developmental stages."
+      "relevantPathsAI": [
+        "A.3.b",
+        "A.4"
+      ],
+      "rationaleAI": "Selfhood and agency address conative dimension (A.3.b) and dispositional tendencies (A.4)."
     },
     {
       "vsiTitle": "Creativity",
       "vsiAuthor": "Vlad Petre Glăveanu",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b",
+        "A.3.a"
       ],
-      "rationaleAI": "Covers creative expression as a behavioural capacity held to be distinctive of humans (A.1.b)."
+      "rationaleAI": "Creative expression addresses distinctive human capacities (A.1.b) and cognitive ideation (A.3.a)."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.a"
       ],
-      "rationaleAI": "Covers biological rhythms as elements of genetic endowment shaping physiological characteristics (A.2.a)."
+      "rationaleAI": "Biological clocks address genetic endowment physiological characteristics (A.2.a)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

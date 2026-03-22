@@ -8,16 +8,19 @@
         "C.2",
         "C.3"
       ],
-      "rationaleAI": "Directly covers the Aztec state, its military campaigns under Itzcoatl and Montezuma, and Aztec culture and society up to the Spanish conquest (C.2-C.3)."
+      "rationaleAI": "Aztec civilization directly addresses the Aztec state (C.2) and culture (C.3)."
     },
     {
       "vsiTitle": "The Maya",
       "vsiAuthor": "Matthew Restall, Amara Solari",
       "relevantPathsAI": [
-        "B.2",
+        "B.1.c",
+        "B.1.d",
+        "B.2.a.ii",
+        "B.2.c",
         "C.1"
       ],
-      "rationaleAI": "Directly covers Maya civilization in Classic and Post-Classic periods, including urban settlements, temple-pyramids, the calendar, writing system, and the collapse (B.2, C.1)."
+      "rationaleAI": "Maya civilization covers Olmec developments (B.1.c, B.1.d), lowland Maya (B.2.a.ii), Late Classic Maya (B.2.c), and Toltec-Maya Post-Classic (C.1)."
     },
     {
       "vsiTitle": "The Conquistadors",
@@ -26,51 +29,48 @@
         "C.2",
         "C.3"
       ],
-      "rationaleAI": "Narrates the Spanish conquest of the Aztec Empire and the broader European subjugation of Meso-America that ended the Post-Classic Period (C.2-C.3)."
+      "rationaleAI": "Spanish conquest connects to Montezuma II (C.2) and the Spanish conquest era (C.3)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "A",
+        "B"
       ],
-      "rationaleAI": "Introduces the excavation and dating methods essential for studying Olmec, Teotihuacan, Maya, and Aztec sites, including ceremonial architecture and pottery analysis (A, B.1-B.2)."
+      "rationaleAI": "Archaeological methods connect to sources (A) and Pre-Classic/Classic developments (B)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.a"
       ],
-      "rationaleAI": "Traces Late Pleistocene migrations and Early Hunter peoples through the emergence of agriculture around 6500 BC in Meso-America (B.1.a)."
+      "rationaleAI": "Prehistoric development connects to Late Pleistocene peoples (B.1.a)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
       "relevantPathsAI": [
-        "A",
         "C.3"
       ],
-      "rationaleAI": "Provides ethnographic frameworks for understanding Meso-American societies (A), Aztec political organization, religious ritual, and social hierarchies (C.3)."
+      "rationaleAI": "Anthropological study from Mexico connects to Aztec culture (C.3)."
     },
     {
       "vsiTitle": "Colonial Latin American Literature",
       "vsiAuthor": "Rolena Adorno",
       "relevantPathsAI": [
-        "A"
+        "C.3"
       ],
-      "rationaleAI": "Examines documentary sources about Meso-American civilizations, including chronicles by Cortes, Bernal Diaz del Castillo, and Bartolome de Las Casas (A)."
+      "rationaleAI": "Conquest narratives connect to Aztec culture at the conquest (C.3)."
     },
     {
       "vsiTitle": "World Mythology",
       "vsiAuthor": "David A. Leeming",
       "relevantPathsAI": [
-        "C.1",
-        "B.2.c",
-        "C.3"
+        "C.1"
       ],
-      "rationaleAI": "Explores mythological traditions such as the legend of Quetzalcoatl (C.1), Maya cosmology (B.2.c.ii), and Aztec sacrificial religion (C.3)."
+      "rationaleAI": "Native American mythology connects to the legend of Quetzalcoatl (C.1)."
     },
     {
       "vsiTitle": "North American Indians",
@@ -78,8 +78,9 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Situates Meso-American peoples within the broader world of indigenous cultures of the Americas, providing ethnographic context for pre-Columbian societies (A)."
+      "rationaleAI": "Indigenous peoples provide context for Meso-American ethnography (A)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

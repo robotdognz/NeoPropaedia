@@ -5,41 +5,52 @@
       "vsiTitle": "Philosophy of Law",
       "vsiAuthor": "Raymond Wacks",
       "relevantPathsAI": [
-        "A.1"
+        "A",
+        "A.1",
+        "A.1.a",
+        "A.1.b",
+        "A.1.c"
       ],
-      "rationaleAI": "Directly addresses Western philosophy of law, jurisprudence theories, legal positivism, natural law, and the law-morality relationship (A.1)."
+      "rationaleAI": "Jurisprudence examining the nature, purpose, and legitimacy of legal systems directly addresses Western philosophy of law (A.1). Natural law theory (John Finnis) and the relationship between law and morality address the influence of natural law principles (A.1.c). Competing theories of law including positivism and Dworkin's rights-based theory address various approaches to jurisprudence (A.1.b)."
     },
     {
       "vsiTitle": "Law",
       "vsiAuthor": "Raymond Wacks",
       "relevantPathsAI": [
-        "B.4"
+        "A",
+        "B.4",
+        "D"
       ],
-      "rationaleAI": "Legal systems broadly -- including courts, lawyers, and the practice of law -- connect to outline B.4 and D."
+      "rationaleAI": "Law as a foundational social institution covering criminal, civil, constitutional, and international law broadly addresses legal philosophies (A) and modern legal systems (B.4). The role of courts, judges, and lawyers addresses the profession and practice of law (D)."
     },
     {
       "vsiTitle": "The Rule of Law",
       "vsiAuthor": "Aziz Z. Huq",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.1.b",
+        "A.1.c",
+        "A.1.d"
       ],
-      "rationaleAI": "The rule of law as a foundational principle in legal theory and its relationship to constitutional government is central to A.1.b."
+      "rationaleAI": "The rule of law tradition from Dicey through Hayek, Fuller, and Dworkin addresses approaches to jurisprudence (A.1.b). Due process and legality connect to the relationship between law and morality (A.1.c). Historical survey from classical sources through modern theorization addresses the historical survey of legal theories (A.1.d)."
     },
     {
       "vsiTitle": "Comparative Law",
       "vsiAuthor": "Sabrina Ragone and Guido Smorto",
       "relevantPathsAI": [
-        "C"
+        "C",
+        "B.4"
       ],
-      "rationaleAI": "Directly addresses the study of distinctions and parallels among diverse legal systems (C)."
+      "rationaleAI": "Comparative law examining the world's legal systems through systematic comparison directly addresses the study of distinctions and parallels among diverse legal systems (C). Coverage of common law, civil law, and other families connects to modern systems of law (B.4)."
     },
     {
       "vsiTitle": "Islamic Law",
       "vsiAuthor": "Mashood A. Baderin",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "B.4"
       ],
-      "rationaleAI": "Islamic law as a major non-Western philosophy of law and legal system is central to A.2."
+      "rationaleAI": "Islamic jurisprudence as one of the world's major legal systems directly addresses non-Western philosophies of law (A.2). Its evolution from classical foundations to modern applications across multiple regions addresses modern systems of law (B.4)."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
@@ -47,7 +58,7 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Islamic philosophical traditions including ethics and political philosophy inform non-Western legal thought (A.2)."
+      "rationaleAI": "Philosophy in Islamic lands covering ethics, political philosophy, and relationships between reason and religious belief provides intellectual context for non-Western philosophies of law (A.2)."
     },
     {
       "vsiTitle": "Confucianism",
@@ -55,63 +66,64 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "The Confucian tradition is central to Chinese philosophy of law and social ordering (A.2)."
+      "rationaleAI": "Confucian philosophical tradition covering moral cultivation, good governance, state ideology, and civil service examinations addresses Chinese non-Western philosophies of law (A.2) through its governance framework."
     },
     {
       "vsiTitle": "American Legal History",
       "vsiAuthor": "G. Edward White",
       "relevantPathsAI": [
-        "B.4"
+        "B.4.a",
+        "D"
       ],
-      "rationaleAI": "The development of Anglo-American common law exemplifies a modern legal system (B.4.a)."
+      "rationaleAI": "Evolution of American law from colonial times covering common law traditions directly addresses Anglo-American common law (B.4.a). Constitutional development, court systems, and legal education address the profession and practice of law (D)."
     },
     {
       "vsiTitle": "Ancient Egypt",
       "vsiAuthor": "Ian Shaw",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.a"
       ],
-      "rationaleAI": "Egyptian civilization -- including its legal customs and governance -- is relevant to ancient Egyptian law (B.2.a)."
+      "rationaleAI": "Ancient Egypt covering pharaonic civilization, kingship, ethics, customs, and writing systems provides context for Egyptian law as an ancient system (B.2.a)."
     },
     {
       "vsiTitle": "The Ancient Near East",
       "vsiAuthor": "Amanda H. Podany",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.b"
       ],
-      "rationaleAI": "Cuneiform civilizations of Mesopotamia, including Babylonian legal codes, are foundational to B.2.b."
+      "rationaleAI": "Mesopotamian civilizations covering codified law, kingship, and bureaucracy directly address cuneiform law as an ancient legal system (B.2.b)."
     },
     {
       "vsiTitle": "Ancient Greece",
       "vsiAuthor": "Paul Cartledge",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.d"
       ],
-      "rationaleAI": "Ancient Greek civilization and its legal and political institutions are relevant to B.2.d."
+      "rationaleAI": "Ancient Greek civilization covering the polis, political concepts including democracy, and city-state governance provides context for Greek law (B.2.d)."
     },
     {
       "vsiTitle": "The Hellenistic Age",
       "vsiAuthor": "Peter Thonemann",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.e"
       ],
-      "rationaleAI": "The Hellenistic period and its legal and administrative systems connect to B.2.e."
+      "rationaleAI": "The Hellenistic world covering political fragmentation, multi-ethnic governance, and federal government in Greek city-states addresses Hellenistic law (B.2.e)."
     },
     {
       "vsiTitle": "The Roman Republic",
       "vsiAuthor": "David M. Gwynn",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.f"
       ],
-      "rationaleAI": "Roman legal institutions during the Republic are foundational to Western law (B.2.f)."
+      "rationaleAI": "The Roman Republic covering political structures including the Senate, magistracies, and cursus honorum provides foundations for Roman law (B.2.f)."
     },
     {
       "vsiTitle": "The Roman Empire",
       "vsiAuthor": "Christopher Kelly",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.f"
       ],
-      "rationaleAI": "Roman law during the imperial period proved critical for later Continental civil law traditions (B.2.f)."
+      "rationaleAI": "The Roman Empire covering imperial administration, provincial governance, and Romanization of local cultures extends the foundations of Roman law (B.2.f)."
     },
     {
       "vsiTitle": "The Middle Ages",
@@ -119,24 +131,25 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Medieval European law -- feudal legal institutions, canon law, and constitutional developments -- connects to outline B.3."
+      "rationaleAI": "European history from 500 to 1500 CE covering kingship, political authority, and the transition from Roman provinces addresses medieval European law (B.3)."
     },
     {
       "vsiTitle": "Magna Carta",
       "vsiAuthor": "Nicholas Vincent",
       "relevantPathsAI": [
-        "B.3"
+        "B.3.b",
+        "B.4.a"
       ],
-      "rationaleAI": "A foundational document of medieval constitutional law and the common law tradition, central to B.3.b."
+      "rationaleAI": "Magna Carta's provisions limiting royal authority and its role as a symbol of subjects' rights directly address sources and institutions of medieval constitutional law (B.3.b). Its enduring significance for modern law connects to Anglo-American common law (B.4.a)."
     },
     {
       "vsiTitle": "Thomas Aquinas",
       "vsiAuthor": "Fergus Kerr",
       "relevantPathsAI": [
         "A.1.c",
-        "A.1"
+        "B.3.d"
       ],
-      "rationaleAI": "Natural law theory as articulated by Aquinas is a major tradition in the philosophy of law and medieval legal thought (A.1.c, A.1.d)."
+      "rationaleAI": "Aquinas's natural law theory directly addresses the relationship between law and morality and the influence of natural law principles (A.1.c). His role as a Dominican friar and medieval theologian connects to the development of canon law (B.3.d)."
     },
     {
       "vsiTitle": "Ethics",
@@ -144,32 +157,34 @@
       "relevantPathsAI": [
         "A.1.c"
       ],
-      "rationaleAI": "The philosophical relationship between law and morality and natural law principles is central to A.1.c."
+      "rationaleAI": "Ethics addressing fundamental moral questions and the relationship between self-interest and altruism directly connects to the relationship between law and morality (A.1.c)."
     },
     {
       "vsiTitle": "Stoicism",
       "vsiAuthor": "Brad Inwood",
       "relevantPathsAI": [
         "A.1.c",
-        "A.1"
+        "A.1.d"
       ],
-      "rationaleAI": "Stoic natural law philosophy is foundational to Western legal theory and Roman jurisprudence (A.1.c, A.1.d)."
+      "rationaleAI": "Stoic philosophy covering ethics, rationality, and natural law concepts connects to the relationship between law and morality and the influence of natural law principles (A.1.c). The historical survey from ancient Greece through Rome addresses the historical survey of legal theories (A.1.d)."
     },
     {
       "vsiTitle": "Hobbes",
       "vsiAuthor": "Richard Tuck",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b",
+        "A.1.d"
       ],
-      "rationaleAI": "Hobbesian legal theory -- the social contract and the basis of legal authority -- is central to A.1.d."
+      "rationaleAI": "Hobbes's social contract theory and sovereign authority directly address approaches to jurisprudence (A.1.b). His foundational role in political philosophy connects to the historical survey of legal theories (A.1.d)."
     },
     {
       "vsiTitle": "Locke",
       "vsiAuthor": "John Dunn",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b",
+        "A.1.d"
       ],
-      "rationaleAI": "Lockean natural rights theory and its influence on constitutional law and legal philosophy are relevant to A.1.d."
+      "rationaleAI": "Locke's empiricist theory, liberal values including toleration, and responsible government address approaches to jurisprudence (A.1.b). His influence on Enlightenment thought connects to the historical survey of legal theories (A.1.d)."
     },
     {
       "vsiTitle": "Ibn Sīnā (Avicenna)",
@@ -177,17 +192,18 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Islamic philosophy relevant to non-Western legal thought and jurisprudence connects to A.2."
+      "rationaleAI": "Avicenna's innovations in logic, metaphysics, and his legacy in both the Islamic world and Latin Christendom provide intellectual foundations for non-Western philosophies of law (A.2)."
     },
     {
       "vsiTitle": "Medieval Philosophy",
       "vsiAuthor": "John Marenbon",
       "relevantPathsAI": [
-        "B.3",
-        "A.1"
+        "A.1.d",
+        "A.2"
       ],
-      "rationaleAI": "Medieval philosophical developments -- including canon law thought and natural law reasoning -- connect to B.3.d and A.1.d."
+      "rationaleAI": "Medieval philosophy covering interlinked Christian, Muslim, and Jewish intellectual traditions addresses the historical survey of legal theories (A.1.d). Coverage of Islamic thinkers including al-Farabi and Avicenna connects to non-Western philosophies of law (A.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

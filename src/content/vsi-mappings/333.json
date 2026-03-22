@@ -5,33 +5,53 @@
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
       "relevantPathsAI": [
-        "C"
+        "A",
+        "C",
+        "C.1",
+        "C.2",
+        "C.2.a",
+        "C.2.b",
+        "C.4",
+        "E"
       ],
-      "rationaleAI": "Core VSI for endocrine systems (C), covering vertebrate hormonal coordination, pituitary gland, hypothalamus control, and the relationship between endocrine and neural regulation."
+      "rationaleAI": "Endocrine system physiology covering insulin, growth hormone, and pituitary cascades directly addresses hormonal coordination (C), vertebrate endocrine structure and function (C.2.b), relationships between endocrine and neural regulation (C.1), evolutionary aspects (C.4), and circadian hormone adjustment relates to biological clock periodicity (E)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
       "relevantPathsAI": [
-        "D"
+        "B",
+        "B.1",
+        "B.2",
+        "D",
+        "D.2",
+        "D.4",
+        "D.4.a",
+        "D.4.e",
+        "E.1"
       ],
-      "rationaleAI": "Core VSI for nervous systems (D), covering the brain and its components, cerebral cortex, basal ganglia, spinal cord, and neural information processing."
+      "rationaleAI": "Neuroanatomy of cerebral cortex, basal ganglia, and spinal cord addresses the vertebrate nervous system (D.4.a), ion channels and sensory processing relate to nerve impulse transmission (D.2.c.ii), sensory information processing (B.2, B.3), and brain biodynamics (D.4.e). Rhythmic brain activity relates to biological clock rhythms without external correlates (E.1)."
     },
     {
       "vsiTitle": "The Eye",
       "vsiAuthor": "Michael F. Land",
       "relevantPathsAI": [
-        "B"
+        "B",
+        "B.1.b",
+        "B.2"
       ],
-      "rationaleAI": "Directly covers sensory reception (B), specifically photoreceptors, retinal processing, optic nerve transmission, and evolution of visual sensory systems."
+      "rationaleAI": "Retinal photoreceptors, lens, and optic nerve connections constitute a photoreceptor sensory system (B.1.b), with evolution of color vision across species illustrating evolution of sensory systems (B.2)."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
       "relevantPathsAI": [
-        "E"
+        "E",
+        "E.2",
+        "E.3",
+        "E.4"
       ],
-      "rationaleAI": "Core VSI for the biological clock (E), covering solar-day rhythms, the molecular clock mechanism, metabolism, and factors affecting biological periodicities."
+      "rationaleAI": "Genetically programmed molecular clocks governing near-24-hour cycles directly address the biological clock (E), rhythms correlated with geophysical cycles including solar-day rhythms (E.2), molecular mechanisms of biological oscillators (E.3), and factors including light entrainment affecting periodicities (E.4)."
     },
     {
       "vsiTitle": "Sleep",
@@ -39,84 +59,105 @@
       "relevantPathsAI": [
         "A.6",
         "E",
-        "E.1"
+        "E.1",
+        "E.2"
       ],
-      "rationaleAI": "Covers dormancy and metabolic rate changes (A.6), brain-wave rhythms (E.1), and melatonin's role in biological periodicity (E)."
+      "rationaleAI": "Sleep mechanisms including REM/NREM stages relate to dormancy and reduced metabolic states (A.6), circadian regulation through melatonin addresses the biological clock (E), and sleep-wake cycles correlate with solar-day rhythms (E.2)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "A.1",
+        "A.2",
+        "B",
+        "C.5",
+        "D.5"
       ],
-      "rationaleAI": "Addresses homeostasis (A), physiological regulation mechanisms, and the interplay of endocrine and nervous systems in maintaining steady states."
+      "rationaleAI": "Homeostasis and internal parameter regulation directly address maintenance of steady states (A.1, A.2), sensory perception relates to information reception (B), and the human nervous system (D.5) and endocrine system (C.5) are covered as parts of physiological regulation."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
       "vsiAuthor": "Richard Passingham",
       "relevantPathsAI": [
-        "D.2",
-        "D.4"
+        "B",
+        "B.2",
+        "B.3",
+        "D.4",
+        "D.4.a"
       ],
-      "rationaleAI": "Covers the nervous system's role in information processing and integration (D.2), including brain imaging and cognition in the vertebrate brain (D.4)."
+      "rationaleAI": "Neural basis of perception, attention, and memory processing addresses sensory information processing (B.2, B.3), and brain imaging of cognitive components relates to vertebrate central nervous system structure (D.4.a)."
     },
     {
       "vsiTitle": "Perception",
       "vsiAuthor": "Brian J. Rogers",
       "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
         "B.3"
       ],
-      "rationaleAI": "Addresses sensory information processing (B.3), interactions between sense cells and sensory neurons, and the physiology of the visual system."
+      "rationaleAI": "How sensory information guides behaviour covers classification of sensory systems (B.1), evolution of perceptual systems across species (B.2), and interactions between sense cells and sensory neurons (B.3)."
     },
     {
       "vsiTitle": "Smell",
       "vsiAuthor": "Matthew Cobb",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.b",
+        "B.2",
+        "B.3"
       ],
-      "rationaleAI": "Covers chemoreceptors (B.1.b) and olfactory sensory systems, illustrating chemoreception as a fundamental class of sensory reception."
+      "rationaleAI": "Olfactory neural processing across species constitutes a chemoreceptor sensory system (B.1.b), comparative olfactory systems illustrate evolution of sensory systems (B.2), and genetic underpinnings of smell perception address sensory information interactions (B.3)."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
       "relevantPathsAI": [
-        "D.3"
+        "D.3",
+        "D.4.d"
       ],
-      "rationaleAI": "Covers invertebrate nervous systems (D.3) including diffuse and centralized systems across Annelida, Cnidaria, and other phyla."
+      "rationaleAI": "Nervous system features across phyla including Cnidaria and Annelida address invertebrate and vertebrate nervous system diversity (D.3), and evolutionary relationships relate to evolution of the vertebrate nervous system (D.4.d)."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
       "relevantPathsAI": [
-        "C.3"
+        "C.3",
+        "D.3"
       ],
-      "rationaleAI": "Relevant to invertebrate endocrine systems (C.3) in insects and invertebrate nervous system organization."
+      "rationaleAI": "Insect endocrine systems governing development relate to invertebrate endocrine systems (C.3), and insect nervous system diversity addresses invertebrate nervous systems (D.3)."
     },
     {
       "vsiTitle": "Anaesthesia",
       "vsiAuthor": "Aidan O'Donnell",
       "relevantPathsAI": [
         "D.2",
-        "D.4"
+        "D.4",
+        "D.4.b"
       ],
-      "rationaleAI": "Covers nerve impulse transmission, action potentials, and the sympathetic nervous system (D.2, D.4.b), illustrating neural regulation mechanisms."
+      "rationaleAI": "Action potential mechanisms and sympathetic nervous system responses relate to nerve impulse transmission (D.2.c.ii), and spinal cord function addresses the vertebrate peripheral nervous system (D.4.b)."
     },
     {
       "vsiTitle": "Consciousness",
       "vsiAuthor": "Susan Blackmore",
       "relevantPathsAI": [
-        "D.4"
+        "B",
+        "D.4",
+        "D.4.e"
       ],
-      "rationaleAI": "Addresses higher-level integration of sensory information in the brain and the evolution of consciousness as nervous system complexity (D.4.e)."
+      "rationaleAI": "Neural correlates of consciousness and mechanisms of attention address sensory information processing (B) and biodynamics of the vertebrate nervous system (D.4.e)."
     },
     {
       "vsiTitle": "Pain",
       "vsiAuthor": "Rob Boddice",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.b",
+        "B.3"
       ],
-      "rationaleAI": "Covers nociception as a sensory modality (B.1.b mechanoreceptors) and neural processing pathways for pain signals."
+      "rationaleAI": "Neuroscience and physiology of pain perception addresses mechanoreceptor and nociceptor sensory systems (B.1.b) and neural processing of sensory pain information (B.3)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

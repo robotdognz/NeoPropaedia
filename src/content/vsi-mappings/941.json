@@ -4,69 +4,97 @@
     {
       "vsiTitle": "African History",
       "vsiAuthor": "John Parker, Richard Rathbone",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the history of West Africa including the empires of Ghana, Mali, and Songhai, colonialism, and the slave trade discussed throughout this section."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "African history connects to West African civilizations (A), monarchies and empires (B), and the precolonial European period (C)."
     },
     {
       "vsiTitle": "African Politics",
       "vsiAuthor": "Ian Taylor",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections B and C on the political development of West African states and the impact of colonialism."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Colonial legacies connect to West Africa 1800-1885 (C.4)."
     },
     {
       "vsiTitle": "African Religions",
       "vsiAuthor": "Jacob K. Olupona",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B on indigenous West African religious traditions and subsection C3 on the Islamic revolutions in the western Sudan."
+      "relevantPathsAI": [
+        "A",
+        "C.3"
+      ],
+      "rationaleAI": "Indigenous traditions connect to West African civilizations (A). Islam's impact relates to Islamic jihads (C.3)."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C3 on the Islamic revolutions in the western Sudan, the Fulani jihads, and the spread of Islam."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Islamic spread and jihad connect to the western Sudan Islamic revolutions (C.3)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C3 on the jihads of Usman dan Fodio and the Islamic transformation of the western Sudan."
+      "relevantPathsAI": [
+        "B.2.a",
+        "C.3"
+      ],
+      "rationaleAI": "Islam connects to Timbuktu (B.2.a) and Islamic jihads (C.3)."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection C4b on British colonial settlements in Sierra Leone, the Gold Coast, Lagos, and Ashanti."
+      "relevantPathsAI": [
+        "C.4.b"
+      ],
+      "rationaleAI": "British colonies connect to C.4.b."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections C1-C2 on Portuguese trade with Guinea states and the European exploration of West Africa."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Portuguese exploration connects to Guinea trade (C.1)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C on the precolonial period of European activity and the eventual collapse of indigenous states."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Colonial empire connects to the precolonial European period (C)."
     },
     {
       "vsiTitle": "Abolitionism",
       "vsiAuthor": "Richard S. Newman",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection C4a on the European antislavery movements and their impact on the Guinea coastlands."
+      "relevantPathsAI": [
+        "C.2",
+        "C.4.a"
+      ],
+      "rationaleAI": "Antislavery connects to the Atlantic slave trade (C.2) and antislavery movements (C.4.a)."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C on Western perspectives on African peoples and the legacy of slavery and colonialism."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Colonial exploitation connects to the precolonial period (C)."
     },
     {
       "vsiTitle": "Global Islam",
       "vsiAuthor": "Nile Green",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C3 on the spiritual and military leadership of Usman dan Fodio and the Fulani jihads."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Islamic dissemination connects tangentially to Islamic revolutions in the western Sudan (C.3)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

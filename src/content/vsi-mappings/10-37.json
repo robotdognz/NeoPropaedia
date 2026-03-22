@@ -4,8 +4,13 @@
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "relevantPathsAI": [],
-      "rationaleAI": "Section B covers the nature and scope of engineering including its professional character, education, and branches."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Engineering addresses history of technological sciences (A), engineering as profession (B.1), and branches (B.2)."
     },
     {
       "vsiTitle": "Civil engineering",
@@ -13,7 +18,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Section B.2 lists civil engineering as one of the major branches of engineering."
+      "rationaleAI": "Civil engineering addresses branches of engineering (B.2)."
     },
     {
       "vsiTitle": "Structural engineering",
@@ -21,45 +26,51 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Structural engineering is part of the broader engineering disciplines covered in B.2."
+      "rationaleAI": "Structural engineering addresses branches of engineering (B.2)."
     },
     {
       "vsiTitle": "Agriculture",
       "vsiAuthor": "Paul Brassley, Richard Soffe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Section C covers the nature and scope of agricultural sciences including soil science, plant/animal production, and agricultural engineering."
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Agricultural science addresses scope of agricultural sciences (C), history (C.1), and subdivisions (C.2)."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
       "relevantPathsAI": [
-        "D.1"
+        "D.1",
+        "D.1.a",
+        "D.1.b"
       ],
-      "rationaleAI": "Section D.1 covers bionics including mimicry of nature for engineering and natural models for engineering problems, connecting to robotics."
+      "rationaleAI": "Robotics addresses bionics (D.1), mimicry of nature (D.1.a), and natural models for engineering (D.1.b)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
       "relevantPathsAI": [
-        "D.1"
+        "D.1.b"
       ],
-      "rationaleAI": "Section D.1.b mentions the human brain as a model for computers and information-processing devices, directly connecting to AI."
+      "rationaleAI": "AI addresses natural models for engineering problems (D.1.b)."
     },
     {
       "vsiTitle": "Nanotechnology",
       "vsiAuthor": "Philip Moriarty",
       "relevantPathsAI": [
-        "D"
+        "D.1"
       ],
-      "rationaleAI": "Nanotechnology is a recently developed interscience discipline (D) combining physics, chemistry, and engineering."
+      "rationaleAI": "Nanotechnology relates to bionics and interscience disciplines (D.1)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
       "relevantPathsAI": [
-        "B"
+        "B.2"
       ],
-      "rationaleAI": "Materials science is fundamental to engineering (B) and connects to chemical and mechanical engineering branches."
+      "rationaleAI": "Materials science relates to branches of engineering (B.2)."
     },
     {
       "vsiTitle": "Energy Systems",
@@ -67,7 +78,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Energy systems engineering connects to electrical (B.2) and mechanical engineering as branches of the technological sciences."
+      "rationaleAI": "Energy systems relate to branches of engineering (B.2)."
     },
     {
       "vsiTitle": "Renewable Energy",
@@ -75,7 +86,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Renewable energy technology involves electrical, chemical, and mechanical engineering disciplines (B.2)."
+      "rationaleAI": "Renewable energy relates to branches of engineering (B.2)."
     },
     {
       "vsiTitle": "Nuclear power",
@@ -83,7 +94,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Section B.2 lists nuclear engineering as a branch of engineering."
+      "rationaleAI": "Nuclear power relates to nuclear engineering (B.2)."
     },
     {
       "vsiTitle": "War and Technology",
@@ -91,30 +102,31 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "The history of technological sciences (A) includes military technology and its relationship to engineering development."
+      "rationaleAI": "Military-technology co-evolution relates to history of technological sciences (A)."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
-      "relevantPathsAI": [],
-      "rationaleAI": "Innovation is central to the technological sciences, driving the development of new technologies and methods."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Innovation through technological change relates to history of technological sciences (A)."
     },
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
       "relevantPathsAI": [
-        "D.1"
+        "B.2"
       ],
-      "rationaleAI": "Section D.1 references computer memory devices and information-processing devices, connecting to the bionics-computing interface."
+      "rationaleAI": "Computing technology relates to electrical and electronics engineering (B.2)."
     },
     {
       "vsiTitle": "Computer Science",
       "vsiAuthor": "Subrata Dasgupta",
       "relevantPathsAI": [
-        "D.1",
-        "D.2"
+        "D.1.b"
       ],
-      "rationaleAI": "Computer science underpins modern engineering including bionics (D.1) and systems engineering (D.2)."
+      "rationaleAI": "Computational theory and biological computing relate to natural models for engineering (D.1.b)."
     },
     {
       "vsiTitle": "Networks",
@@ -122,7 +134,7 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Section D.2 covers systems engineering and operations research, which involves network analysis and optimization."
+      "rationaleAI": "Network theory relates to systems engineering and operations research (D.2)."
     },
     {
       "vsiTitle": "Complexity",
@@ -130,32 +142,33 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Section D.2 covers systems engineering, which draws on complexity theory for analyzing complex technical systems."
+      "rationaleAI": "Complex systems theory relates to systems engineering and operations research (D.2)."
     },
     {
       "vsiTitle": "The History of Computing",
       "vsiAuthor": "Doron Swade",
       "relevantPathsAI": [
-        "A",
-        "D"
+        "A"
       ],
-      "rationaleAI": "Computing technology is part of the history of technological sciences (A) and connects to bionics and systems engineering (D)."
+      "rationaleAI": "Computing history relates to history of technological sciences (A)."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
-        "A",
         "B.2"
       ],
-      "rationaleAI": "Nuclear weapons technology relates to nuclear engineering (B.2) and the history of technological sciences (A)."
+      "rationaleAI": "Nuclear weapons relate to nuclear engineering (B.2)."
     },
     {
       "vsiTitle": "Landscape architecture",
       "vsiAuthor": "Ian Thompson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Landscape architecture involves engineering and agricultural science principles applied to land design."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Landscape architecture relates to subdivisions of agricultural sciences (C.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

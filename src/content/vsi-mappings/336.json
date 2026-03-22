@@ -5,29 +5,37 @@
       "vsiTitle": "Blood",
       "vsiAuthor": "Christopher Cooper",
       "relevantPathsAI": [
-        "B.2"
+        "B",
+        "B.2",
+        "B.2.b",
+        "B.2.c",
+        "B.2.d",
+        "B.3",
+        "B.3.b",
+        "B.3.e"
       ],
-      "rationaleAI": "Directly covers blood as the circulating fluid (B.2), including haemoglobin and oxygen transport, plasma, red cells, blood pressure, and transfusion."
+      "rationaleAI": "Blood composition including hemoglobin, plasma, red cells, white cells, and platelets directly addresses circulating fluid media (B.2), plasma (B.2.b), formed elements (B.2.c), lymphocytes (B.2.d), vertebrate circulatory systems (B.3.b), and biodynamics of circulation (B.3.e)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
       "relevantPathsAI": [
+        "A",
         "A.7",
-        "B.3",
-        "C.2.c"
+        "B",
+        "B.3.f",
+        "C"
       ],
-      "rationaleAI": "Covers physiological mechanisms of human respiration (A.7), cardiovascular circulation (B.3.f), and renal excretion (C.2.c) as integrated systems."
+      "rationaleAI": "Energy supply and homeostasis address respiration (A), the human respiratory system (A.7), cardiovascular function (B.3.f), and excretory processes (C)."
     },
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
       "relevantPathsAI": [
-        "A.3",
-        "B.3",
-        "B.2"
+        "A.7",
+        "B.3.f"
       ],
-      "rationaleAI": "Addresses anatomical structures of the heart, lymphatic system, and central nervous system relevant to respiratory organs (A.3.b), circulatory anatomy (B.3), and lymph (B.2.d)."
+      "rationaleAI": "Structures for breathing and organs of the chest address the human respiratory system (A.7), and lymphatic system anatomy relates to the human cardiovascular system (B.3.f)."
     },
     {
       "vsiTitle": "The Animal Kingdom",
@@ -35,18 +43,18 @@
       "relevantPathsAI": [
         "A.3",
         "B.3",
-        "C.2"
+        "B.3.a"
       ],
-      "rationaleAI": "Covers respiratory, circulatory, and excretory organ diversity across invertebrate phyla (A.3.a, B.3.a, C.2.b) and vertebrates."
+      "rationaleAI": "Diversity of animal phyla with varied respiratory and circulatory structures addresses respiratory organs (A.3) and invertebrate circulatory systems (B.3.a)."
     },
     {
       "vsiTitle": "The Immune System",
       "vsiAuthor": "Paul Klenerman",
       "relevantPathsAI": [
-        "B.2",
-        "B.2.c"
+        "B.2.c",
+        "B.2.d"
       ],
-      "rationaleAI": "Addresses lymphocytes and lymph in vertebrates (B.2.d) and the role of white blood cells as formed elements of circulating fluid (B.2.c)."
+      "rationaleAI": "White blood cells and immunological memory relate to formed elements including white cells (B.2.c) and lymphocytes (B.2.d)."
     },
     {
       "vsiTitle": "Plants",
@@ -54,16 +62,15 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Covers plant internal transport (B.4) including xylem and phloem vascular systems in seed plants and other tracheophytes."
+      "rationaleAI": "Plant vascular systems including xylem and phloem address plant internal transport (B.4)."
     },
     {
       "vsiTitle": "Fluid Mechanics",
       "vsiAuthor": "Eric Lauga",
       "relevantPathsAI": [
-        "B.3",
-        "A.4"
+        "B.3.e"
       ],
-      "rationaleAI": "Provides the physics of fluid flow and hydrodynamics underlying circulatory biodynamics (B.3.e) and respiratory gas dynamics (A.4)."
+      "rationaleAI": "Fluid dynamics principles applied to biological systems relate to biodynamics of vertebrate circulation (B.3.e)."
     },
     {
       "vsiTitle": "Hormones",
@@ -71,7 +78,7 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Covers hormonal regulation of blood pressure, water balance, and urine production relevant to circulatory control and renal excretion (C.2)."
+      "rationaleAI": "Hormonal regulation of water, salt, and calcium balance addresses excretory mechanisms (C.2)."
     },
     {
       "vsiTitle": "Marine biology",
@@ -80,25 +87,27 @@
         "A.2",
         "A.6"
       ],
-      "rationaleAI": "Covers adaptations for aquatic gas exchange and respiratory problems faced by aquatic animals (A.2, A.6)."
+      "rationaleAI": "Marine organism diversity relates to gases in the aquatic environment (A.2) and adaptation to special conditions (A.6)."
     },
     {
       "vsiTitle": "Amphibians",
       "vsiAuthor": "T. S. Kemp",
       "relevantPathsAI": [
-        "A.3",
-        "A.6"
+        "A.3.b",
+        "A.6",
+        "C.2.c"
       ],
-      "rationaleAI": "Covers amphibian respiratory adaptations bridging aquatic gills and terrestrial lungs (A.3.b, A.6), illustrating the evolution of vertebrate gas exchange."
+      "rationaleAI": "Amphibian permeable skin serving gas exchange addresses vertebrate respiratory organs (A.3.b), freshwater-land adaptation (A.6), and vertebrate excretory systems (C.2.c)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
       "relevantPathsAI": [
-        "B.3"
+        "B.3.d"
       ],
-      "rationaleAI": "Addresses embryonic development of the circulatory system (B.3.d) including formation of the heart, blood vessels, and excretory organs."
+      "rationaleAI": "Organ system formation during development addresses embryonic development of the circulatory system (B.3.d)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

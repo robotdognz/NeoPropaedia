@@ -5,85 +5,101 @@
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
       "relevantPathsAI": [
+        "A.1",
         "A.2",
-        "A.4",
-        "A.6"
+        "A.4"
       ],
-      "rationaleAI": "Traces prenatal development, cell differentiation, growth, and ageing -- directly relevant to life cycle stages (A.2, A.4, A.6)."
+      "rationaleAI": "Development from fertilized egg addresses fertilization (A.1), prenatal development (A.2), and postnatal processes (A.4)."
     },
     {
       "vsiTitle": "The Immune System",
       "vsiAuthor": "Paul Klenerman",
       "relevantPathsAI": [
+        "C",
+        "C.2",
         "C.2.c",
-        "C.2"
+        "C.2.d"
       ],
-      "rationaleAI": "Directly covers immune response, defenses against disease, and inflammation (C.2.c, C.2.d)."
+      "rationaleAI": "Immune responses address disease defenses (C.2), inflammation (C.2.c), and immune response (C.2.d)."
     },
     {
       "vsiTitle": "Sleep",
       "vsiAuthor": "Steven W. Lockley, Russell G. Foster",
       "relevantPathsAI": [
-        "D.3"
+        "D.3",
+        "D.3.a",
+        "D.3.b"
       ],
-      "rationaleAI": "Directly covers REM, NREM, sleep disorders, metabolism, and the relationship between sleep and health (D.3)."
+      "rationaleAI": "REM/NREM stages address sleep state (D.3), defining criteria (D.3.a), and psychophysiological variations (D.3.b)."
     },
     {
       "vsiTitle": "Dreaming",
       "vsiAuthor": "J. Allan Hobson",
       "relevantPathsAI": [
-        "D.3"
+        "D.3",
+        "D.3.b"
       ],
-      "rationaleAI": "Directly covers dreaming, brain imaging during sleep, and psychophysiological variations in sleep (D.3.b)."
+      "rationaleAI": "Dream brain mechanisms address sleep variations including dreaming (D.3.b)."
     },
     {
       "vsiTitle": "Nutrition",
       "vsiAuthor": "David Bender",
       "relevantPathsAI": [
-        "D.1"
+        "D.1",
+        "D.1.a",
+        "D.1.b",
+        "D.1.c",
+        "D.1.d",
+        "D.1.e"
       ],
-      "rationaleAI": "Directly covers functions of food, classes of food, recommended nutrient intakes, obesity, and therapeutic diets (D.1)."
+      "rationaleAI": "Nutritional science addresses food functions (D.1.a), classes (D.1.b), recommended intakes (D.1.c), feeding behaviour (D.1.d), and therapeutic diets (D.1.e)."
     },
     {
       "vsiTitle": "Food",
       "vsiAuthor": "John Krebs",
       "relevantPathsAI": [
-        "D.1"
+        "D.1",
+        "D.1.a",
+        "D.1.d"
       ],
-      "rationaleAI": "Addresses diet, food safety, and obesity relevant to feeding behaviour and food functions (D.1.a, D.1.d)."
+      "rationaleAI": "Diet and nutrition address food functions (D.1.a) and feeding behaviour (D.1.d)."
     },
     {
       "vsiTitle": "Ageing",
       "vsiAuthor": "Nancy Pachana",
       "relevantPathsAI": [
-        "A.6"
+        "A.6",
+        "A.7"
       ],
-      "rationaleAI": "Directly covers the aging stage of the life cycle, life expectancy, and health implications of aging (A.6)."
+      "rationaleAI": "Human ageing addresses aging (A.6) and dying/death (A.7)."
     },
     {
       "vsiTitle": "Adolescence",
       "vsiAuthor": "Peter Smith",
       "relevantPathsAI": [
-        "A.4"
+        "A.4",
+        "A.5"
       ],
-      "rationaleAI": "Explores puberty and adolescent development as a key postnatal developmental stage in the life cycle (A.4)."
+      "rationaleAI": "Puberty and identity formation address postnatal development (A.4) and reproduction through maturation (A.5)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
       "relevantPathsAI": [
-        "C.1"
+        "B",
+        "C.1",
+        "C.5",
+        "D.2"
       ],
-      "rationaleAI": "Explains physiological mechanisms for maintaining health, homeostatic regulation of the internal environment, and bodily stress responses (C.1)."
+      "rationaleAI": "Homeostasis addresses health normality (B), internal environment (C.1), alarm reaction (C.5), and exercise (D.2)."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
       "relevantPathsAI": [
-        "C.5",
-        "A.5"
+        "C.5"
       ],
-      "rationaleAI": "Details the alarm reaction hormones (adrenaline, cortisol) mediating fight-or-flight, and reproductive hormone cycles governing puberty and fertility (C.5, A.5)."
+      "rationaleAI": "Adrenocorticotrophic hormone addresses the alarm reaction (C.5)."
     },
     {
       "vsiTitle": "Blood",
@@ -91,7 +107,7 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Explains the role of blood in preventing hemorrhage through clotting cascades and haemoglobin's oxygen transport function (C.3)."
+      "rationaleAI": "Blood clotting addresses hemorrhage prevention (C.3)."
     },
     {
       "vsiTitle": "Circadian Rhythms",
@@ -99,7 +115,7 @@
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Explores biological rhythms -- driven by the suprachiasmatic nucleus -- that are fundamental to sleep regulation, hormone cycles, and health maintenance (D.3)."
+      "rationaleAI": "Circadian regulation addresses sleep state and health effects (D.3)."
     },
     {
       "vsiTitle": "The Cell",
@@ -108,7 +124,7 @@
         "C.1",
         "C.4"
       ],
-      "rationaleAI": "Examines cellular adaptation to stress and stem cell biology relevant to tissue regeneration and repair (C.1, C.4)."
+      "rationaleAI": "Cell signaling addresses internal environment maintenance (C.1) and healing/regeneration (C.4)."
     },
     {
       "vsiTitle": "Stem Cells",
@@ -116,7 +132,7 @@
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Explains how pluripotent and adult stem cells drive tissue regeneration and wound healing processes (C.4)."
+      "rationaleAI": "Regenerative medicine addresses healing and tissue repair (C.4)."
     },
     {
       "vsiTitle": "Sport",
@@ -124,16 +140,15 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Addresses exercise and physical conditioning, including health maintenance through physical activity (D.2)."
+      "rationaleAI": "Athletic competition addresses exercise and conditioning (D.2)."
     },
     {
       "vsiTitle": "Microbiomes",
       "vsiAuthor": "Angela E. Douglas",
       "relevantPathsAI": [
-        "C.2",
-        "D.1"
+        "C.2"
       ],
-      "rationaleAI": "The human microbiome plays roles in immune defense, nutrient absorption, and overall health maintenance (C.2, D.1)."
+      "rationaleAI": "Disease-protective microbiomes address bodily defenses (C.2)."
     },
     {
       "vsiTitle": "Heredity",
@@ -141,7 +156,7 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Explores genetic factors relevant to congenital conditions and hereditary variation affecting the human life cycle from fertilization (A.1)."
+      "rationaleAI": "Biological inheritance addresses fertilization genetics (A.1)."
     },
     {
       "vsiTitle": "Epidemiology",
@@ -149,8 +164,9 @@
       "relevantPathsAI": [
         "B"
       ],
-      "rationaleAI": "Establishes definitions of normality in health, identifies disease risk factors, and sets population health standards (B)."
+      "rationaleAI": "Population health assessment addresses normality definitions (B)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

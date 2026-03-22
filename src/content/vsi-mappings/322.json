@@ -5,68 +5,75 @@
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
       "relevantPathsAI": [
+        "A",
         "B",
         "B.1",
         "B.2",
-        "B.3"
+        "B.3",
+        "B.4"
       ],
-      "rationaleAI": "Directly covers metabolism (B) including catabolism (B.1), cellular respiration (B.2), anabolism/biosynthesis (B.3), and biochemical reactions."
+      "rationaleAI": "Metabolic pathways address photosynthesis (A) and metabolism (B) including catabolism (B.1), respiration (B.2), anabolism (B.3), and regulation (B.4)."
     },
     {
       "vsiTitle": "Enzymes",
       "vsiAuthor": "Paul Engel",
       "relevantPathsAI": [
-        "A",
+        "B",
+        "B.1",
         "B.2",
-        "B.3"
+        "B.4"
       ],
-      "rationaleAI": "Enzymes catalyze all metabolic reactions including photosynthesis (A), cellular respiration (B.2), and biosynthetic pathways (B.3)."
+      "rationaleAI": "Catalysts connect to metabolism (B), catabolism (B.1), respiration (B.2), and regulation (B.4)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
       "relevantPathsAI": [
         "A",
+        "A.1",
         "A.4",
-        "A.5",
-        "A.7"
+        "A.5"
       ],
-      "rationaleAI": "Covers photosynthesis in green plants (A) including the chloroplast (A.4), photosynthetic pigments (A.5), and the carbon reduction cycle (A.7)."
+      "rationaleAI": "Photosynthesis addresses importance (A.1), chloroplast (A.4), and pigments (A.5)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
       "relevantPathsAI": [
-        "B.1",
+        "B",
+        "B.2",
         "B.3"
       ],
-      "rationaleAI": "Addresses the molecular basis of metabolism including energy carriers, substrates of catabolism (B.1), and products of anabolism (B.3)."
+      "rationaleAI": "Cellular metabolism connects to B, respiration (B.2), and biosynthesis (B.3)."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
       "relevantPathsAI": [
-        "B.2",
-        "B.4"
+        "A.4",
+        "B"
       ],
-      "rationaleAI": "Covers cellular respiration in mitochondria (B.2) and the regulation of metabolic processes (B.4) within cells."
+      "rationaleAI": "Organelles connect to chloroplast (A.4) and metabolism (B)."
     },
     {
       "vsiTitle": "The Laws of Thermodynamics",
       "vsiAuthor": "Peter Atkins",
       "relevantPathsAI": [
+        "A.2",
         "A.6",
         "B.2"
       ],
-      "rationaleAI": "Provides the thermodynamic principles underlying bioenergetics (A.6), energy conservation in cellular respiration (B.2), and free energy in metabolism."
+      "rationaleAI": "Energy conservation connects to photosynthetic efficiency (A.2), energetics (A.6), and respiration (B.2)."
     },
     {
       "vsiTitle": "Nutrition",
       "vsiAuthor": "David Bender",
       "relevantPathsAI": [
+        "B",
+        "B.1",
         "B.2"
       ],
-      "rationaleAI": "Covers the combustion of food materials (B.2) and metabolism of proteins, vitamins, and dietary components central to bioenergetics."
+      "rationaleAI": "Energy connects to metabolism (B), catabolism (B.1), and respiration (B.2)."
     },
     {
       "vsiTitle": "Circadian Rhythms",
@@ -74,16 +81,15 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Relevant to the regulation of metabolism (B.4), covering how metabolic processes are temporally organized and regulated."
+      "rationaleAI": "Circadian-metabolism connects to regulation (B.4)."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
       "relevantPathsAI": [
-        "B.3",
-        "B.4"
+        "B.3"
       ],
-      "rationaleAI": "Addresses the molecular mechanisms underlying biosynthesis of cell components (B.3) and genetic regulation of metabolism (B.4)."
+      "rationaleAI": "Gene expression connects to biosynthesis (B.3)."
     },
     {
       "vsiTitle": "Symbiosis",
@@ -91,8 +97,9 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Relevant to photosynthesis (A) through the endosymbiotic origin of chloroplasts, and metabolic exchanges in symbiotic relationships."
+      "rationaleAI": "Chloroplast endosymbiosis connects to photosynthesis (A)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

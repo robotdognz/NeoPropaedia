@@ -9,24 +9,26 @@
         "A.3",
         "B.2"
       ],
-      "rationaleAI": "A core text on how cities organize their basic engineering services (A), urban transportation systems (A.3), and recreational facilities (B.2)."
+      "rationaleAI": "Urban planning covering metropolitan growth, transportation infrastructure, and resilience to disasters addresses basic engineering services (A), urban transportation systems (A.3), and design of recreational facilities as social services (B.2)."
     },
     {
       "vsiTitle": "Civil engineering",
       "vsiAuthor": "David Muir Wood",
       "relevantPathsAI": [
+        "A",
         "A.1",
         "A.2"
       ],
-      "rationaleAI": "Water supply and sanitation are the engineering backbone of urban life, directly relevant to A.1 (water-supply systems) and A.2 (sanitation systems)."
+      "rationaleAI": "Civil engineering covering bridges, tunnels, water management, and urbanization addresses basic engineering services (A), water-supply systems (A.1), and sanitation systems (A.2)."
     },
     {
       "vsiTitle": "Suburbs",
       "vsiAuthor": "Carl Abbott",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "A.4"
       ],
-      "rationaleAI": "Suburban sprawl creates distinct technological challenges for transportation (A.3) and infrastructure delivery that differ fundamentally from dense urban cores."
+      "rationaleAI": "Global suburban development covering automobile-dependent housing, mass transit, and employment patterns addresses urban transportation systems (A.3) and interurban transportation (A.4)."
     },
     {
       "vsiTitle": "Environmental economics",
@@ -34,7 +36,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Examines market-based instruments—taxes, cap-and-trade, subsidies—for controlling air, water, and land pollution (C.1) in urban settings."
+      "rationaleAI": "Economic analysis of pollution control and environmental damage reduction directly addresses control of air, water, and land pollution (C.1)."
     },
     {
       "vsiTitle": "Environmental Politics",
@@ -42,38 +44,40 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Pollution control (C.1) is as much a political contest as a technical one, and this volume explores the ideologies and movements behind urban environmental regulation."
+      "rationaleAI": "Environmental politics covering climate change policy, pollution regulation, and tensions between protection and growth addresses control of pollution (C.1)."
     },
     {
       "vsiTitle": "Environmental Law",
       "vsiAuthor": "Elizabeth Fisher",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides the legal framework for C (controlling air, water, and land pollution), explaining statutes, enforcement, and liability in urban communities."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Environmental law covering regulatory frameworks for pollution control and environmental standards directly addresses control of air, water, land, and other pollution (C.1)."
     },
     {
       "vsiTitle": "Public health",
       "vsiAuthor": "Virginia Berridge",
       "relevantPathsAI": [
-        "A.1",
         "A.2"
       ],
-      "rationaleAI": "Clean water (A.1) and sanitation (A.2) were the great public health triumphs of the nineteenth century, and this volume traces how that infrastructure saved millions of lives."
+      "rationaleAI": "Public health covering sanitation, disease prevention, and population health management connects to sanitation systems (A.2)."
     },
     {
       "vsiTitle": "Criminology",
       "vsiAuthor": "Tim Newburn",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.1.b"
       ],
-      "rationaleAI": "Explores crime patterns and policing methods in urban communities, directly relevant to B.1.b (crime control technology)."
+      "rationaleAI": "Criminology covering crime measurement, policing, and criminal justice policy addresses police technology (B.1) and crime control technology (B.1.b)."
     },
     {
       "vsiTitle": "Forensic science",
       "vsiAuthor": "Jim Fraser",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.b"
       ],
-      "rationaleAI": "Forensic evidence, examination, and identification techniques are central to B.1.b (crime control technology) in modern cities."
+      "rationaleAI": "Forensic science covering DNA profiling, fingerprints, and crime scene investigation directly addresses crime control technology (B.1.b)."
     },
     {
       "vsiTitle": "Water",
@@ -81,7 +85,7 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Understanding water's chemistry is fundamental to A.1 (water-supply systems), from purification and treatment to distribution in urban communities."
+      "rationaleAI": "Physical and chemical properties of water and its significance for Earth's systems connect to urban water-supply systems (A.1)."
     },
     {
       "vsiTitle": "Landscape architecture",
@@ -89,15 +93,16 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Parks and recreational facilities (B.2) are critical urban infrastructure, and this volume examines their design, construction, and maintenance."
+      "rationaleAI": "Design of parks, gardens, and urban environments directly addresses design, construction, and maintenance of recreational facilities (B.2)."
     },
     {
       "vsiTitle": "Sustainability",
       "vsiAuthor": "Saleem H. Ali",
       "relevantPathsAI": [
-        "C"
+        "C",
+        "C.1"
       ],
-      "rationaleAI": "Addresses how cities can build sustainable infrastructure and manage pollution (C), balancing growth with environmental responsibility."
+      "rationaleAI": "Sustainability addressing human impacts on planetary systems and sustainable production patterns connects to technological responses to urban problems (C) and pollution control (C.1)."
     },
     {
       "vsiTitle": "Climate change",
@@ -105,7 +110,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Cities are major contributors to greenhouse gas emissions, making this essential for understanding C.1 (control of air pollution) at the urban scale."
+      "rationaleAI": "Climate change covering global warming, decarbonization solutions, and restructuring industrial economies connects to control of air pollution (C.1)."
     },
     {
       "vsiTitle": "Energy Systems",
@@ -113,8 +118,9 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Electric power (A.5) is a basic engineering service of the city, and this volume explains how electricity is generated, transmitted, and distributed."
+      "rationaleAI": "Energy conversion and distribution for electricity generation connects to the technology of electric power in urban settings (A.5)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

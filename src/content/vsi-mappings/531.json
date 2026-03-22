@@ -5,46 +5,57 @@
       "vsiTitle": "Economics",
       "vsiAuthor": "Partha Dasgupta",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.8"
+        "A.2",
+        "A.4",
+        "A.5",
+        "A.6",
+        "A.8",
+        "B",
+        "B.1",
+        "B.3"
       ],
-      "rationaleAI": "Directly covers scarcity, division of labour, opportunity cost, economies of scale, and economic development (A.1-A.8)."
+      "rationaleAI": "Resource allocation addresses scarcity (A.1). Division of labor (A.2), marginal utility (A.4), capital (A.5), competition (A.6), and development (A.8). Micro and macro analysis address B.1 and B.3."
     },
     {
       "vsiTitle": "Microeconomics",
       "vsiAuthor": "Avinash Dixit",
       "relevantPathsAI": [
+        "A.1",
+        "A.3",
+        "A.4",
+        "A.6",
         "B.1"
       ],
-      "rationaleAI": "Analyzes the behaviour of individuals, households, and firms, plus competition, monopoly, and market structures (B.1)."
+      "rationaleAI": "Consumer choice addresses scarcity (A.1). Cost analysis addresses diminishing returns (A.3). Marginal analysis (A.4). Market structures address competition (A.6). Individual decisions address microeconomics (B.1)."
     },
     {
       "vsiTitle": "Behavioural Economics",
       "vsiAuthor": "Michelle Baddeley",
       "relevantPathsAI": [
-        "A.1",
         "B.1"
       ],
-      "rationaleAI": "Extends basic economic concepts by showing how Kahneman and Tversky's prospect theory and cognitive biases cause actual decisions to depart from rational-choice models (A.1, B.1)."
+      "rationaleAI": "Psychological insights into decisions address microeconomics (B.1)."
     },
     {
       "vsiTitle": "Game theory",
       "vsiAuthor": "Ken Binmore",
       "relevantPathsAI": [
         "A.6",
-        "A.7"
+        "B.1"
       ],
-      "rationaleAI": "Formalizes strategic interaction -- Nash equilibria, prisoner's dilemmas -- underlying competition and comparative advantage (A.6, A.7)."
+      "rationaleAI": "Strategic decision-making addresses competition (A.6) and microeconomics (B.1)."
     },
     {
       "vsiTitle": "Choice Theory",
       "vsiAuthor": "Michael Allingham",
       "relevantPathsAI": [
         "A.1",
-        "A.3",
-        "A.4"
+        "A.4",
+        "B.1"
       ],
-      "rationaleAI": "Examines utility, marginal utility, and rational choice among scarce resources, directly relevant to marginality and optimization (A.1, A.3, A.4)."
+      "rationaleAI": "Rational choice addresses scarcity (A.1), marginality (A.4), and microeconomics (B.1)."
     },
     {
       "vsiTitle": "Adam Smith",
@@ -52,9 +63,10 @@
       "relevantPathsAI": [
         "A.2",
         "A.6",
-        "A.7"
+        "A.7",
+        "C.1.a"
       ],
-      "rationaleAI": "Presents Smith's foundational ideas on the division of labour, competition, free trade, and the invisible hand as organizing principles of market economies (A.2, A.6, A.7)."
+      "rationaleAI": "Division of labor (A.2), competition (A.6), comparative advantage (A.7). Wealth of Nations addresses the private enterprise model (C.1.a)."
     },
     {
       "vsiTitle": "Keynes",
@@ -63,43 +75,44 @@
         "B.3",
         "C.1.c"
       ],
-      "rationaleAI": "Explains Keynesian macroeconomics -- aggregate demand, the multiplier, and the case for fiscal intervention -- and the mixed economy model (B.3, C.1.c)."
+      "rationaleAI": "Keynesian economics addresses macroeconomics (B.3). IMF founding addresses the mixed economy (C.1.c)."
     },
     {
       "vsiTitle": "Marx",
       "vsiAuthor": "Peter Singer",
       "relevantPathsAI": [
         "A.5",
-        "C.1"
+        "C.1.b"
       ],
-      "rationaleAI": "Presents Marx's economic theory including surplus value, capital accumulation, and alienation, forming the critique underlying the socialist model (A.5, C.1.b)."
+      "rationaleAI": "Capital and exploitation address capital (A.5). Communism addresses the socialist model (C.1.b)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
-        "C.1",
+        "A.5",
+        "A.6",
         "C.2"
       ],
-      "rationaleAI": "Examines the private enterprise economy, capital formation, market forces, and industrialization as the dynamics of capitalist systems (C.1.a, C.2)."
+      "rationaleAI": "Capital accumulation (A.5) and competition (A.6). Comparative capitalisms address Western economies (C.2)."
     },
     {
       "vsiTitle": "Communism",
       "vsiAuthor": "Leslie Holmes",
       "relevantPathsAI": [
-        "C.1",
+        "C.1.b",
         "C.3"
       ],
-      "rationaleAI": "Analyzes centrally planned economies and Soviet-type economic systems, from Gosplan allocation to command pricing (C.1.b, C.3)."
+      "rationaleAI": "Central planning addresses the socialist model (C.1.b) and Soviet-type systems (C.3)."
     },
     {
       "vsiTitle": "Socialism",
       "vsiAuthor": "Michael Newman",
       "relevantPathsAI": [
-        "C.1",
+        "C.1.b",
         "C.1.c"
       ],
-      "rationaleAI": "Explores the socialist economic model and social democracy as alternatives to pure capitalism, from cooperative ownership to welfare states (C.1.b, C.1.c)."
+      "rationaleAI": "Social democracy and communism address the socialist model (C.1.b) and mixed economy (C.1.c)."
     },
     {
       "vsiTitle": "The Soviet Union",
@@ -107,16 +120,15 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Provides historical context for the centrally planned economy, from Lenin's New Economic Policy through Stalinist industrialization to perestroika (C.3)."
+      "rationaleAI": "Soviet central planning addresses Soviet-type systems (C.3)."
     },
     {
       "vsiTitle": "The Russian Economy",
       "vsiAuthor": "Richard Connolly",
       "relevantPathsAI": [
-        "C.3",
-        "C.1.c"
+        "C.3"
       ],
-      "rationaleAI": "Serves as a case study of transition from centrally planned to mixed economy, illustrating the challenges of systemic economic transformation (C.3, C.1.c)."
+      "rationaleAI": "Russian economy from Soviet planning addresses Soviet-type systems (C.3)."
     },
     {
       "vsiTitle": "Development",
@@ -125,44 +137,45 @@
         "A.8",
         "C.4"
       ],
-      "rationaleAI": "Addresses economic growth and development concepts, GDP measurement, and mixed economies in developing countries (A.8, C.4)."
+      "rationaleAI": "Economic development addresses growth (A.8) and developing countries (C.4)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "C"
+        "A.8",
+        "C.2",
+        "C.4"
       ],
-      "rationaleAI": "Traces the historical comparison of different economic systems and their divergent growth trajectories across countries (C)."
+      "rationaleAI": "National prosperity addresses growth (A.8), Western economies (C.2), and developing countries (C.4)."
     },
     {
       "vsiTitle": "Competition and Antitrust Law",
       "vsiAuthor": "Ariel Ezrachi",
       "relevantPathsAI": [
-        "A.6",
-        "C.1"
+        "A.6"
       ],
-      "rationaleAI": "Examines the concept of competition, competitive markets, and government intervention to prevent monopoly power in free market economies (A.6, C.1.a)."
+      "rationaleAI": "Legal frameworks address competition (A.6)."
     },
     {
       "vsiTitle": "Malthus",
       "vsiAuthor": "Donald Winch",
       "relevantPathsAI": [
-        "A.3",
-        "A.8"
+        "A.3"
       ],
-      "rationaleAI": "Introduces Malthus's principle of population and the law of diminishing returns, foundational to classical political economy and growth theory (A.3, A.8)."
+      "rationaleAI": "Diminishing returns directly address A.3."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "A.2",
         "A.5",
-        "C.5"
+        "A.8",
+        "C.2"
       ],
-      "rationaleAI": "Illustrates division of labour, capital formation, and the transition to industrial economic systems in 18th- and 19th-century Britain (A.2, A.5, C.5.a)."
+      "rationaleAI": "Industrialization addresses capital (A.5), growth (A.8), and Western economies (C.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

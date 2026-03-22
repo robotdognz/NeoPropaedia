@@ -5,25 +5,31 @@
       "vsiTitle": "Design",
       "vsiAuthor": "John Heskett",
       "relevantPathsAI": [
-        "C.2"
+        "A",
+        "C.2",
+        "C.2.a",
+        "C.2.b"
       ],
-      "rationaleAI": "Core text on functional design covering the Arts and Crafts Movement, industrial design, and product form -- the central subject of this section (A, C.2)."
+      "rationaleAI": "Industrial and product design covering form, function, and mass production relates to the nature and scope of decorative arts and functional design (A). Coverage of Nokia, Ford, Sony, and Lego product design exemplifies industrial design as an art (C.2.a) and diverse kinds of industrial design classified by function (C.2.b)."
     },
     {
       "vsiTitle": "Fashion",
       "vsiAuthor": "Rebecca Arnold",
       "relevantPathsAI": [
-        "C.1"
+        "C.1",
+        "C.1.a"
       ],
-      "rationaleAI": "Directly covers dress design and fashion accessories, explicitly listed under arts of functional design (C.1.a)."
+      "rationaleAI": "Fashion as design, manufacturing, and cultural communication from haute couture to ready-to-wear directly addresses dress design (C.1) and dress and dress accessories (C.1.a)."
     },
     {
       "vsiTitle": "Typography",
       "vsiAuthor": "Paul Luna",
       "relevantPathsAI": [
-        "C.4"
+        "C.4",
+        "C.4.a",
+        "C.4.b"
       ],
-      "rationaleAI": "Covers typography, fonts, letterforms, and printing design, explicitly listed under design of materials for communication (C.4.b)."
+      "rationaleAI": "Visual presentation of written language covering letterforms, typeface design, and font technology from early printing through digital media relates to handwriting systems and calligraphy (C.4.a) and printing arts including typography and printing design (C.4.b)."
     },
     {
       "vsiTitle": "Advertising",
@@ -31,55 +37,58 @@
       "relevantPathsAI": [
         "C.4.c"
       ],
-      "rationaleAI": "Covers advertising design including print media and outdoor advertising, directly relevant to advertising art and design (C.4.c)."
+      "rationaleAI": "Advertising strategy, media channels, and campaign design including print, outdoor, and internet-based formats directly address advertising art and design (C.4.c)."
     },
     {
       "vsiTitle": "Branding",
       "vsiAuthor": "Robert Jones",
       "relevantPathsAI": [
-        "C.4",
-        "C.4.c"
+        "C.4.d"
       ],
-      "rationaleAI": "Covers the design of brand identity including signs, symbols, and commercial marks, relevant to design for identification (C.4.d) and advertising design (C.4.c)."
+      "rationaleAI": "Brand identity construction and the mechanisms of brand recognition connect to the design of signs and symbols used primarily for identification (C.4.d)."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
       "relevantPathsAI": [
-        "C.4"
+        "C.4.a"
       ],
-      "rationaleAI": "Covers handwriting systems, calligraphy, and lettering across cultures, directly relevant to C.4.a."
+      "rationaleAI": "History of writing systems from cuneiform and hieroglyphs through alphabetic scripts connects to handwriting systems and styles, calligraphy, and lettering (C.4.a)."
     },
     {
       "vsiTitle": "Hieroglyphs",
       "vsiAuthor": "Penelope Wilson",
       "relevantPathsAI": [
-        "C.4"
+        "C.4.a"
       ],
-      "rationaleAI": "Covers Egyptian hieroglyphic writing and decorative inscription, relevant to calligraphy and lettering traditions (C.4.a)."
+      "rationaleAI": "Egyptian hieroglyphs as a writing system with pictographic aesthetic and sacral function spanning over three thousand years directly connects to handwriting systems and styles (C.4.a)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers properties of clay, ceramics, glass, metals, and cement -- materials explicitly listed as decorative art media throughout section B."
+      "relevantPathsAI": [
+        "B",
+        "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "Materials science studying metals, ceramics, and polymers connects to decorative objects classified by materials (B), including glass (B.4) and metals (B.5) as materials used in decorative arts."
     },
     {
       "vsiTitle": "Architecture",
       "vsiAuthor": "Andrew Ballantyne",
       "relevantPathsAI": [
-        "C.3"
+        "C.3",
+        "C.3.b"
       ],
-      "rationaleAI": "Relevant to the integration of interior design with architecture, including ceilings, floors, walls, windows, and doors (C.3.b)."
+      "rationaleAI": "Architecture as art form spanning from ancient Egypt through modernism connects to interior design's integration with architecture (C.3.b) and interior design as an art (C.3.a) through the relationship between decorative elements and building design."
     },
     {
       "vsiTitle": "Modernism",
       "vsiAuthor": "Christopher Butler",
       "relevantPathsAI": [
-        "C.2",
-        "C.3"
+        "A"
       ],
-      "rationaleAI": "Modernist design philosophy transformed industrial and interior design, relevant to the relationship between art and functional objects (C.2, C.3)."
+      "rationaleAI": "Modernism as an aesthetic movement transforming art, architecture, and design including Dada and surrealism relates broadly to the nature and scope of the arts of decoration and functional design (A) through its influence on design aesthetics."
     },
     {
       "vsiTitle": "Aesthetics",
@@ -87,17 +96,15 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Addresses aesthetic theory including beauty and taste, relevant to the nature and scope of decorative arts as a category distinct from fine art (A)."
+      "rationaleAI": "Philosophical examination of beauty, taste, and aesthetic experience including everyday experience beyond fine arts relates to the nature and scope of the arts of decoration and functional design (A)."
     },
     {
       "vsiTitle": "Classics",
       "vsiAuthor": "Mary Beard, John Henderson",
       "relevantPathsAI": [
-        "B.1",
-        "B.5",
-        "C.5"
+        "B.7"
       ],
-      "rationaleAI": "Classical Greek and Roman decorative arts including pottery, coins, medals, and temple ornamentation are relevant to B.1, B.5, and C.5.a."
+      "rationaleAI": "Classical Greek and Roman architectural and sculptural traditions including temple design connect to stone as a decorative material (B.7) through classical architectural ornamentation."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
@@ -123,7 +130,7 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Covers the properties of gemstones and decorative stones such as quartz and pyrite, relevant to gems as decorative materials (B.3)."
+      "rationaleAI": "Mineralogy covering crystal structures and mineral families including quartz and pyrite connects to gems as a decorative arts material (B.3)."
     },
     {
       "vsiTitle": "Chemistry",
@@ -136,5 +143,6 @@
       "rationaleAI": "Covers the chemistry of materials including ceramics, glass, and metals relevant to understanding decorative art media (B.1, B.4, B.5)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

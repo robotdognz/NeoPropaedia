@@ -4,165 +4,257 @@
     {
       "vsiTitle": "The Middle Ages",
       "vsiAuthor": "Miri Rubin",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the High and Late Middle Ages in western Europe including feudalism, the church, the Black Death, and political developments."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.1.a",
+        "A.1.b",
+        "A.1.g",
+        "A.5",
+        "A.7"
+      ],
+      "rationaleAI": "Broad coverage of European history 500-1500 CE maps onto High Middle Ages society (A.1), including social orders (A.1.a), agricultural growth (A.1.b), political institutions (A.1.g), England (A.5), and eastern European developments (A.7). The Black Death relates to late medieval plague effects (2.b)."
     },
     {
       "vsiTitle": "The Crusades",
       "vsiAuthor": "Christopher Tyerman",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A1b on the commercial effects of the Crusades and the broader crusading context of Louis IX's campaigns in subsection A3a."
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.1.d"
+      ],
+      "rationaleAI": "Crusades driven by papal authority connect to the church in medieval society (A.1.d). Commercial effects relate to trade revival (A.1.b). Crusading in Iberia connects to the Reconquista (A.4)."
     },
     {
       "vsiTitle": "The Renaissance",
       "vsiAuthor": "Jerry Brotton",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsection B1a on the early Renaissance in Italy including Humanism, new techniques in art, and the city-states."
+      "relevantPathsAI": [
+        "1",
+        "1.a",
+        "1.a.i",
+        "1.a.ii",
+        "5",
+        "5.c"
+      ],
+      "rationaleAI": "The Renaissance aligns with the early Italian Renaissance (1.a), Humanism (1.a.i), new artistic concepts (1.a.ii), and Italian city-states (5.b, 5.c)."
     },
     {
       "vsiTitle": "The Holy Roman Empire",
       "vsiAuthor": "Joachim Whaley",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers subsections A2 and B4 on the Holy Roman Empire, the Investiture Controversy, and the Hohenstaufen and Habsburg emperors."
+      "relevantPathsAI": [
+        "A.1.g.i",
+        "A.2",
+        "A.2.a",
+        "A.2.b",
+        "4.a"
+      ],
+      "rationaleAI": "The Empire as protector of the papacy connects to A.1.g.i. Imperial governance relates to the Hohenstaufen dynasty (A.2.b), the Investiture Controversy (A.2.a), and later medieval Germany (4.a)."
     },
     {
       "vsiTitle": "Medieval Britain",
       "vsiAuthor": "John Gillingham, Ralph A. Griffiths",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsections A5 and B7 on England from the Norman Conquest through Edward I and the later Plantagenets."
+      "relevantPathsAI": [
+        "A.5",
+        "A.5.a",
+        "A.5.b",
+        "A.5.c",
+        "7.a"
+      ],
+      "rationaleAI": "Directly covers England from the Norman Conquest to Edward I (A.5), including the Anglo-Norman monarchy (A.5.a), Plantagenets (A.5.b), Scotland/Wales/Ireland (A.5.c), and later medieval England (7.a)."
     },
     {
       "vsiTitle": "The Norman Conquest",
       "vsiAuthor": "George Garnett",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsection A5a on the Norman Conquest and introduction of feudalism under William I."
+      "relevantPathsAI": [
+        "A.5.a",
+        "A.5.a.i",
+        "A.5.a.ii"
+      ],
+      "rationaleAI": "The Norman Conquest directly addresses feudalism under William I (A.5.a), the Domesday survey (A.5.a.i), and central government strengthening (A.5.a.ii)."
     },
     {
       "vsiTitle": "Magna Carta",
       "vsiAuthor": "Nicholas Vincent",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection A5b-iii on King John's conflict with the barons and the granting of Magna Carta."
+      "relevantPathsAI": [
+        "A.5.b.iii",
+        "A.5.b.iv"
+      ],
+      "rationaleAI": "Magna Carta directly addresses King John's reign and baronial revolt (A.5.b.iii) and Henry III and the growth of Parliament (A.5.b.iv)."
     },
     {
       "vsiTitle": "Christianity",
       "vsiAuthor": "Linda Woodhead",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A1d on the church in medieval society including papal hegemony, reform movements, and the Inquisition."
+      "relevantPathsAI": [
+        "A.1.d",
+        "A.1.e.ii",
+        "3"
+      ],
+      "rationaleAI": "Institutional Christianity relates to the church in medieval society (A.1.d), Thomas Aquinas and Scholasticism (A.1.e.ii), and the Avignon papacy and Great Schism (3)."
     },
     {
       "vsiTitle": "Machiavelli",
       "vsiAuthor": "Quentin Skinner",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B5 on Renaissance Italian political thought and the Florentine republic under the Medici."
+      "relevantPathsAI": [
+        "1.a",
+        "5.c.i"
+      ],
+      "rationaleAI": "Machiavelli as Renaissance political theorist connects to the early Italian Renaissance (1.a) and Florentine republicanism (5.c.i)."
     },
     {
       "vsiTitle": "Medieval Literature",
       "vsiAuthor": "Elaine Treharne",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection A1e-iii on Latin and vernacular literature in the High Middle Ages."
+      "relevantPathsAI": [
+        "A.1.e.iii"
+      ],
+      "rationaleAI": "Medieval British and Irish literature including The Canterbury Tales directly addresses Latin and vernacular literature (A.1.e.iii)."
     },
     {
       "vsiTitle": "Geoffrey Chaucer",
       "vsiAuthor": "David Wallace",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B7 on English culture in the late Middle Ages and the flowering of vernacular literature."
+      "relevantPathsAI": [
+        "A.1.e.iii",
+        "7.a.i"
+      ],
+      "rationaleAI": "Chaucer's Canterbury Tales connects to vernacular literature (A.1.e.iii) and England under Edward III and Richard II (7.a.i)."
     },
     {
       "vsiTitle": "Dante",
       "vsiAuthor": "Peter Hainsworth, David Robey",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B5 on Italian literature and cultural developments in the late medieval period."
+      "relevantPathsAI": [
+        "A.1.e.iii",
+        "5.a"
+      ],
+      "rationaleAI": "Dante's works connect to medieval literature (A.1.e.iii) and Italian developments 1300-1400 (5.a)."
     },
     {
       "vsiTitle": "Medieval Philosophy",
       "vsiAuthor": "John Marenbon",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection A1e-ii on Scholasticism and developments in philosophy and theology."
+      "relevantPathsAI": [
+        "A.1.e.ii",
+        "1.c"
+      ],
+      "rationaleAI": "Boethius, Abelard, and Ockham address Scholasticism (A.1.e.ii) and late medieval intellectual developments (1.c)."
     },
     {
       "vsiTitle": "Thomas Aquinas",
       "vsiAuthor": "Fergus Kerr",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection A1e-ii on Scholasticism, as Aquinas was its foremost representative."
+      "relevantPathsAI": [
+        "A.1.e.ii"
+      ],
+      "rationaleAI": "Aquinas's Summa Theologiae directly addresses Scholasticism (A.1.e.ii)."
     },
     {
       "vsiTitle": "The Vikings",
       "vsiAuthor": "Julian D. Richards",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A6 on the establishment of the Scandinavian kingdoms of Denmark, Norway, and Sweden."
+      "relevantPathsAI": [
+        "A.6"
+      ],
+      "rationaleAI": "Viking activity connects to Scandinavian kingdoms (A.6) including expansion into Iceland and Greenland (A.6.b)."
     },
     {
       "vsiTitle": "Aristocracy",
       "vsiAuthor": "William Doyle",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections A1a and B2b on the feudal nobility, its declining importance, and the growing influence of the bourgeoisie."
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.1.g.ii",
+        "2.a"
+      ],
+      "rationaleAI": "Aristocracy connects to the feudal nobility (A.1.a), kingship (A.1.g.ii), and declining feudal nobility (2.a)."
     },
     {
       "vsiTitle": "Scotland",
       "vsiAuthor": "Rab Houston",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections A5c and B7b on Scotland's relations with England and the wars of independence."
+      "relevantPathsAI": [
+        "A.5.c.i",
+        "7.b"
+      ],
+      "rationaleAI": "Scottish independence connects to A.5.c.i. The Reformation relates to later Scottish developments (7.b)."
     },
     {
       "vsiTitle": "Judaism",
       "vsiAuthor": "Norman Solomon",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A1f on the status of Jews in medieval society, their economic role, persecutions, and migrations."
+      "relevantPathsAI": [
+        "A.1.f"
+      ],
+      "rationaleAI": "Jewish practice connects to the status of Jews in medieval society (A.1.f)."
     },
     {
       "vsiTitle": "Jewish History",
       "vsiAuthor": "David N. Myers",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A1f on Jewish persecutions and subsection B8c on the Inquisition and treatment of Jews in Spain."
+      "relevantPathsAI": [
+        "A.1.f"
+      ],
+      "rationaleAI": "Jewish persecution and diaspora directly address A.1.f."
     },
     {
       "vsiTitle": "Plague",
       "vsiAuthor": "Paul Slack",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection B2b on the Black Death (1347-50) and its economic, social, and political effects."
+      "relevantPathsAI": [
+        "2.b"
+      ],
+      "rationaleAI": "The Black Death directly addresses plague effects (2.b)."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B8c-d on Spanish and Portuguese explorations and colonial policy in the Age of Discovery."
+      "relevantPathsAI": [
+        "8.c.ii",
+        "8.d"
+      ],
+      "rationaleAI": "Age of Discovery connects to Spanish explorations (8.c.ii) and Portuguese empire (8.d)."
     },
     {
       "vsiTitle": "The Habsburg Empire",
       "vsiAuthor": "Martyn Rady",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B4a on the Habsburg emperors and the enhancement of Habsburg power in Europe by 1500."
+      "relevantPathsAI": [
+        "A.2.b.i",
+        "4.a"
+      ],
+      "rationaleAI": "Habsburg consolidation connects to Rudolf of Habsburg (A.2.b.i) and later medieval Habsburgs (4.a)."
     },
     {
       "vsiTitle": "Monasticism",
       "vsiAuthor": "Stephen J. Davis",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A1d on reform movements in the medieval church including Cistercians and mendicant orders."
+      "relevantPathsAI": [
+        "A.1.d"
+      ],
+      "rationaleAI": "Monastic types relate to church reform movements including Cistercians and mendicant orders (A.1.d)."
     },
     {
       "vsiTitle": "Witchcraft",
       "vsiAuthor": "Malcolm Gaskill",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1c on late medieval intellectual developments including the topic of witchcraft."
+      "relevantPathsAI": [
+        "1.c"
+      ],
+      "rationaleAI": "Late medieval witchcraft beliefs connect to intellectual developments including witchcraft (1.c)."
     },
     {
       "vsiTitle": "The Conquistadors",
       "vsiAuthor": "Matthew Restall, Felipe Fernández-Armesto",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B8c on Spanish explorations and territorial acquisitions in the New World."
+      "relevantPathsAI": [
+        "8.c.ii"
+      ],
+      "rationaleAI": "Spanish conquest connects to explorations in the early Age of Discovery (8.c.ii)."
     },
     {
       "vsiTitle": "The Reformation",
       "vsiAuthor": "Peter Marshall",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B3 on the conciliar movement and reform movements that presaged the Reformation."
+      "relevantPathsAI": [
+        "3"
+      ],
+      "rationaleAI": "Reformation roots in late medieval church reform connect to the church in the later Middle Ages (3)."
     },
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the numerous competing dynasties -- Capetian, Plantagenet, Hohenstaufen, Habsburg, Visconti, Medici -- discussed throughout the section."
+      "relevantPathsAI": [
+        "A.1.g.ii",
+        "A.2",
+        "A.3",
+        "A.5"
+      ],
+      "rationaleAI": "Dynastic rule connects to kingship (A.1.g.ii), the Hohenstaufen (A.2), Capetians (A.3), and Plantagenets (A.5)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

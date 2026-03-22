@@ -5,9 +5,10 @@
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
       "relevantPathsAI": [
+        "A",
         "A.3"
       ],
-      "rationaleAI": "Explores prehistoric cultures and their practices including early agriculture and ritual behavior, directly relevant to 821.A on prehistoric religion and 821.A.3 on prehistoric cultural stages."
+      "rationaleAI": "Prehistory spanning four million years provides context for prehistoric religion (A) and religions attributed to various cultural stages (A.3)."
     },
     {
       "vsiTitle": "Archaeology",
@@ -15,27 +16,37 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Examines archaeological methods including interpretation of rock art, Lascaux, and burial sites, directly relevant to 821.A.1 on methods of interpreting prehistoric religion."
+      "rationaleAI": "Archaeology provides methods of interpretation for studying prehistoric religion (A.1)."
     },
     {
       "vsiTitle": "Human evolution",
       "vsiAuthor": "Bernard Wood",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the emergence of symbolic behavior in early humans, providing context for the origins of prehistoric religion in 821.A."
+      "relevantPathsAI": [
+        "A.1",
+        "A.3"
+      ],
+      "rationaleAI": "Human evolution provides the biological framework for prehistoric religion (A.1) and cultural stages (A.3)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
-      "relevantPathsAI": [],
-      "rationaleAI": "Anthropological study of animism, totemism, rites of passage, and shamanism makes this essential reading for 821.B on primitive religion."
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Anthropological study of belief systems provides frameworks for primitive religion (B.1), primitive views of reality (B.2), and myth and symbol (B.3)."
     },
     {
       "vsiTitle": "African Religions",
       "vsiAuthor": "Jacob K. Olupona",
       "relevantPathsAI": [
-        "B.5"
+        "B.4",
+        "B.4.a",
+        "B.4.d",
+        "B.5.a"
       ],
-      "rationaleAI": "Explores traditional religions of indigenous African peoples including cosmology, rites of passage, and sacred practices, directly relevant to 821.B.5.a."
+      "rationaleAI": "Indigenous African religions including ancestor worship (B.4.d), rites of passage, and divination relate to primitive religious practices (B.4) and African peoples (B.5.a)."
     },
     {
       "vsiTitle": "North American Indians",
@@ -43,7 +54,7 @@
       "relevantPathsAI": [
         "B.5.c"
       ],
-      "rationaleAI": "Indigenous peoples of North America maintained rich religious traditions and cultural practices, directly relevant to 821.B.5.c on religions of indigenous peoples of the Americas."
+      "rationaleAI": "Indigenous North American spiritual traditions address religions of the Americas (B.5.c)."
     },
     {
       "vsiTitle": "The Aztecs",
@@ -51,15 +62,16 @@
       "relevantPathsAI": [
         "B.5.c"
       ],
-      "rationaleAI": "Aztec religion -- with its elaborate sacrificial rites, cosmology, and temple worship -- is central to 821.B.5.c on religions of indigenous peoples of the Americas."
+      "rationaleAI": "Aztec religious practices including sacrifice relate to religions of the Americas (B.5.c)."
     },
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
       "relevantPathsAI": [
-        "B.4"
+        "B.4",
+        "B.4.a"
       ],
-      "rationaleAI": "Addresses sacrifice, purification, passage rites, and ritualization, directly relevant to 821.B.4.a on primitive religious practices."
+      "rationaleAI": "Ritual including rites of passage and sacrifice relates to primitive religious practices (B.4) and sacrifice and passage rites (B.4.a)."
     },
     {
       "vsiTitle": "Myth",
@@ -67,63 +79,69 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Addresses the nature and function of myth in religion, directly relevant to 821.B.3 on myth and symbol in primitive religion."
+      "rationaleAI": "Theoretical approaches to myth relate to myth and symbol in primitive religion (B.3)."
     },
     {
       "vsiTitle": "World Mythology",
       "vsiAuthor": "David A. Leeming",
       "relevantPathsAI": [
-        "B.2",
         "B.3"
       ],
-      "rationaleAI": "Creation myths, flood narratives, trickster figures, and deity archetypes across cultures illuminate 821.B.2.d on primitive cosmogonies and 821.B.3."
+      "rationaleAI": "Comparative mythology relates to myth and symbol in primitive religion (B.3)."
     },
     {
       "vsiTitle": "Magic",
       "vsiAuthor": "Owen Davies",
       "relevantPathsAI": [
-        "A.2",
-        "B.4"
+        "A.2.f",
+        "B.4.e"
       ],
-      "rationaleAI": "Examines magic as a religious and ritual practice, relevant to 821.A.2.f on sorcery and magic and 821.B.4.e on shamanism and divination."
+      "rationaleAI": "Magic relates to shamanism and sorcery (A.2.f) and divination practices (B.4.e)."
     },
     {
       "vsiTitle": "Witchcraft",
       "vsiAuthor": "Malcolm Gaskill",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.f",
+        "B.4.e"
       ],
-      "rationaleAI": "Traces witchcraft beliefs to their roots in primitive and prehistoric religious practice, relevant to 821.A.2.f on sorcery."
+      "rationaleAI": "Witchcraft relates to sorcery and magic (A.2.f) and shamanism and divination (B.4.e)."
     },
     {
       "vsiTitle": "Paganism",
       "vsiAuthor": "Owen Davies",
       "relevantPathsAI": [
-        "B.4"
+        "B",
+        "B.1",
+        "B.4.e"
       ],
-      "rationaleAI": "Polytheism, nature worship, shamanism, and sacred practices reflecting primitive religious worldviews are central themes, relevant to 821.B.4.b-d."
+      "rationaleAI": "Pagan beliefs relate to primitive religion (B), its significance (B.1), and shamanism (B.4.e)."
     },
     {
       "vsiTitle": "Druids",
       "vsiAuthor": "Barry Cunliffe",
       "relevantPathsAI": [
-        "A.2.c"
+        "A.2.c",
+        "A.2.f",
+        "B.4.e"
       ],
-      "rationaleAI": "Druidic religion -- encompassing prophecy, sacrifice, and magic -- preserves elements of prehistoric and primitive religious practice relevant to 821.A.2.c-f."
+      "rationaleAI": "Druids practicing sacrifice (A.2.c), sorcery (A.2.f), and divination (B.4.e)."
     },
     {
       "vsiTitle": "Superstition",
       "vsiAuthor": "Stuart Vyse",
       "relevantPathsAI": [
-        "B.2"
+        "B.4.e"
       ],
-      "rationaleAI": "Examines superstitious beliefs with roots in primitive views of the sacred and profane, relevant to 821.B.2."
+      "rationaleAI": "Superstitious beliefs relate to divination and spiritualistic practices (B.4.e)."
     },
     {
       "vsiTitle": "The Celts",
       "vsiAuthor": "Barry Cunliffe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Celtic peoples retained religious practices with deep roots in prehistoric religion, illuminating the transition from prehistoric to documented religion."
+      "relevantPathsAI": [
+        "B.5.d"
+      ],
+      "rationaleAI": "Celtic religious traditions relate to aboriginal religions (B.5.d)."
     },
     {
       "vsiTitle": "The Ancient Near East",
@@ -131,16 +149,18 @@
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Ancient Near Eastern cultures with their temples, priests, and festivals bridge prehistoric and early historical religion, relevant to 821.A.3."
+      "rationaleAI": "Mesopotamian religious institutions provide context for early cultural stages (A.3)."
     },
     {
       "vsiTitle": "The Ice Age",
       "vsiAuthor": "Jamie Woodward",
       "relevantPathsAI": [
+        "A.1",
         "A.3"
       ],
-      "rationaleAI": "The Ice Age environment shaped early prehistoric religious practices including cave art, providing crucial context for 821.A.3."
+      "rationaleAI": "Ice age environmental history provides context for prehistoric cultural stages (A.3) and study methods (A.1)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

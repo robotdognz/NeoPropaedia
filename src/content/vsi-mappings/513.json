@@ -4,16 +4,22 @@
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
-      "relevantPathsAI": [],
-      "rationaleAI": "A core text on kinship systems, marriage customs, descent rules, and cultural institutions across societies (outline A and D)."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "B",
+        "C.1"
+      ],
+      "rationaleAI": "Kinship, economic exchange, and belief systems address general kinship (A.1), groups within societies (B), and primitive economic systems (C.1)."
     },
     {
       "vsiTitle": "Family law",
       "vsiAuthor": "Jonathan Herring",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.6"
       ],
-      "rationaleAI": "Examines laws and customs regarding marriage, divorce, legitimacy, domestic violence, and children's rights (outline A.2)."
+      "rationaleAI": "Marriage, divorce, and domestic violence address mate selection and marriage customs (A.2). Evolving family structures address kinship and social change (A.6)."
     },
     {
       "vsiTitle": "Sexuality",
@@ -21,7 +27,7 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Explores sexual behaviour customs and marriage norms across cultures, relevant to outline A.2 on mate selection and sexual behaviour."
+      "rationaleAI": "Social construction of sexual norms across cultures addresses sexual behaviour and marriage customs (A.2)."
     },
     {
       "vsiTitle": "Polygamy",
@@ -29,21 +35,26 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Directly addresses varying marriage customs and practices across cultures and religions (outline A.2)."
+      "rationaleAI": "Plural marriage across religions addresses mate selection and marriage customs (A.2)."
     },
     {
       "vsiTitle": "Gender History",
       "vsiAuthor": "Antoinette Burton",
       "relevantPathsAI": [
-        "A.6"
+        "A.2",
+        "B.2"
       ],
-      "rationaleAI": "Traces historical changes in kinship, marriage, descent, and gendered social structures across cultures (outline A.6)."
+      "rationaleAI": "Gender intersecting with class addresses marriage customs (A.2) and organization by status (B.2)."
     },
     {
       "vsiTitle": "Sociology",
       "vsiAuthor": "Steve Bruce",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses major social structures including class systems, stratification by status, and the relationship between marriage and society (outline B)."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Social institutions and class address groups (B.1) and status organization (B.2)."
     },
     {
       "vsiTitle": "Aristocracy",
@@ -51,7 +62,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Examines class systems and status-based social organization including feudalism and hereditary privilege (outline B.2)."
+      "rationaleAI": "Aristocracy addresses class systems (B.2)."
     },
     {
       "vsiTitle": "American Slavery",
@@ -59,7 +70,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Slavery as a system of social organization characterized by unfree labor and serfdom is the central subject (outline B.2)."
+      "rationaleAI": "Chattel slavery addresses systems of slavery (B.2)."
     },
     {
       "vsiTitle": "Abolitionism",
@@ -67,13 +78,15 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Traces the movement to dismantle slavery and serfdom as forms of social organization (outline B.2)."
+      "rationaleAI": "Dismantling slavery addresses systems of slavery (B.2)."
     },
     {
       "vsiTitle": "Economics",
       "vsiAuthor": "Partha Dasgupta",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores economic systems including production, division of labour, exchange of goods, and property rights (outline C)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Resource allocation addresses developed nations' economic systems (C.2)."
     },
     {
       "vsiTitle": "Capitalism",
@@ -81,21 +94,24 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Examines capitalist economic systems including property rights, production, and exchange in developed nations (outline C.2)."
+      "rationaleAI": "Market capitalism addresses developed nations' economic systems (C.2)."
     },
     {
       "vsiTitle": "Work",
       "vsiAuthor": "Stephen Fineman",
       "relevantPathsAI": [
-        "C.1"
+        "C.1.a",
+        "C.2"
       ],
-      "rationaleAI": "Division of labour and role differentiation are explored as elements of economic systems across cultures (outline C.1.a)."
+      "rationaleAI": "Work addresses division of labour (C.1.a) and developed economic systems (C.2)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the evolution of economic systems from primitive to modern, including wealth distribution and property institutions (outline C)."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "National wealth analysis addresses developed nations' economic systems (C.2)."
     },
     {
       "vsiTitle": "Education",
@@ -103,7 +119,7 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Formal and informal education function as socialization mechanisms and cultural elements (outline D.1)."
+      "rationaleAI": "Education systems address education and socialization (D.1)."
     },
     {
       "vsiTitle": "The History of Childhood",
@@ -111,7 +127,7 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Explores how children are socialized across cultures and historical periods, relevant to enculturation (outline D.1)."
+      "rationaleAI": "Historical childhood addresses enculturation (D.1)."
     },
     {
       "vsiTitle": "Myth",
@@ -119,7 +135,7 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Myth and folklore function as elements common to all cultures but differ in expression (outline D.2)."
+      "rationaleAI": "Myth with cosmological functions addresses religious belief and folklore (D.2)."
     },
     {
       "vsiTitle": "World Mythology",
@@ -127,7 +143,7 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Mythological traditions serve as cultural elements that differ in expression between cultures (outline D.2)."
+      "rationaleAI": "Comparative mythology addresses religious belief and folklore (D.2)."
     },
     {
       "vsiTitle": "Ritual",
@@ -135,7 +151,7 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Ritual is a major cultural element common to all societies, including rites of passage associated with kinship (outline D.2)."
+      "rationaleAI": "Rites of passage address religious belief and folklore (D.2)."
     },
     {
       "vsiTitle": "Sport",
@@ -143,7 +159,7 @@
       "relevantPathsAI": [
         "D.6"
       ],
-      "rationaleAI": "Recreation, sports, and games serve as cultural elements that differ across societies (outline D.6)."
+      "rationaleAI": "Sport development addresses recreation, sports, and games (D.6)."
     },
     {
       "vsiTitle": "Ethnomusicology",
@@ -151,23 +167,25 @@
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "Musical expression as a cultural element that varies between cultures is directly relevant to artistic expression (outline D.4)."
+      "rationaleAI": "Music as universal trait addresses artistic expression (D.4)."
     },
     {
       "vsiTitle": "Feminism",
       "vsiAuthor": "Margaret Walters",
       "relevantPathsAI": [
-        "A.6"
+        "A.2",
+        "B.2"
       ],
-      "rationaleAI": "Addresses challenges to gender-based role differentiation and marriage customs, relevant to kinship and social change (outline A.6)."
+      "rationaleAI": "Marriage reform addresses marriage customs (A.2) and status organization (B.2)."
     },
     {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
       "relevantPathsAI": [
-        "A.5"
+        "A.5",
+        "D.1"
       ],
-      "rationaleAI": "Confucian kinship systems, filial piety, and the family as a center for transmitting cultural values and power are central themes (outline A.5)."
+      "rationaleAI": "Domestic life and examinations address transmission of powers (A.5) and education (D.1)."
     },
     {
       "vsiTitle": "Social Psychology",
@@ -175,7 +193,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Group dynamics, in-group/out-group relations, and the varieties of associations within societies are key topics (outline B.1)."
+      "rationaleAI": "Group behaviour addresses groups within societies (B.1)."
     },
     {
       "vsiTitle": "Identity",
@@ -183,7 +201,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Explores how social identity is constructed through kinship, group membership, and cultural institutions (outline B.1)."
+      "rationaleAI": "Collective identity addresses groups and associations (B.1)."
     },
     {
       "vsiTitle": "Islamic Law",
@@ -192,17 +210,17 @@
         "A.2",
         "D.3"
       ],
-      "rationaleAI": "Islamic family law, inheritance law, and legal systems function as cultural institutions shaping kinship and social structure (outline A.2 and D.3)."
+      "rationaleAI": "Family law addresses marriage customs (A.2). Islamic jurisprudence addresses legal systems (D.3)."
     },
     {
       "vsiTitle": "Home",
       "vsiAuthor": "Michael Allen Fox",
       "relevantPathsAI": [
-        "A.1",
-        "C.1"
+        "A.3"
       ],
-      "rationaleAI": "Examines the concept of home across cultures as a site of dwelling, belonging, and identity, relevant to A.1 (kinship and family) and C.1 (cultural components of societies)."
+      "rationaleAI": "Domestic space and dwelling address rules of residence (A.3)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

@@ -4,69 +4,103 @@
     {
       "vsiTitle": "Linguistics",
       "vsiAuthor": "P. H. Matthews",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses the scientific study of language including phonetics, grammar, semantics, and linguistic theory (outline F)."
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "C.7",
+        "D.1",
+        "F",
+        "F.1",
+        "F.2",
+        "F.3"
+      ],
+      "rationaleAI": "Phonetics, syntax, semantics address the nature of language (C), definitions (C.1), ways of studying language (C.2), and linguistic change (C.7). Brain processing relates to phonetics (D.1). Linguistic theory development addresses F.1, F.2, F.3."
     },
     {
       "vsiTitle": "Languages",
       "vsiAuthor": "Stephen Anderson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores the diversity of world languages, phonology, language classification, and typology (outline C and H)."
+      "relevantPathsAI": [
+        "C.1",
+        "C.3",
+        "C.7",
+        "F.7",
+        "H"
+      ],
+      "rationaleAI": "Language classification addresses definitions (C.1), dialects (C.3), and typology (C.7). Global distribution addresses classification (F.7) and languages of the world (H)."
     },
     {
       "vsiTitle": "Sociolinguistics",
       "vsiAuthor": "John Edwards",
-      "relevantPathsAI": [],
-      "rationaleAI": "Examines language and society including dialects, language as a political instrument, and language in cross-cultural relations (outline G)."
+      "relevantPathsAI": [
+        "C.3",
+        "C.6",
+        "G",
+        "G.1",
+        "G.2",
+        "G.3",
+        "G.4",
+        "G.5"
+      ],
+      "rationaleAI": "Language in sociocultural context addresses variants (C.3), language and culture (C.6), attitudes (G.1), history (G.2), cross-cultural relations (G.3), political instrument (G.4), and group unification (G.5)."
     },
     {
       "vsiTitle": "The English Language",
       "vsiAuthor": "Simon Horobin",
       "relevantPathsAI": [
-        "H.1"
+        "C.7",
+        "H.1.f"
       ],
-      "rationaleAI": "Traces the history, dialects, and standardization of a major Indo-European Germanic language (outline H.1.f)."
+      "rationaleAI": "English history addresses linguistic change (C.7) and Germanic languages (H.1.f)."
     },
     {
       "vsiTitle": "Multilingualism",
       "vsiAuthor": "John C. Maher",
       "relevantPathsAI": [
-        "C.3",
+        "C.6",
         "G.3",
-        "H.22"
+        "G.4",
+        "H"
       ],
-      "rationaleAI": "Addresses multilingual societies, endangered languages, and pidgins and creoles (outline C.3, G.3, and H.22)."
+      "rationaleAI": "Language diversity addresses language and culture (C.6), cross-cultural relations (G.3), political instrument (G.4), and languages of the world (H)."
     },
     {
       "vsiTitle": "Slang",
       "vsiAuthor": "Jonathon Green",
       "relevantPathsAI": [
-        "C.3"
+        "C.3",
+        "G.5"
       ],
-      "rationaleAI": "Investigates language variants including slang, jargon, and specialized registers (outline C.3)."
+      "rationaleAI": "Nonstandard vocabulary addresses language variants (C.3) and group unification (G.5)."
     },
     {
       "vsiTitle": "Translation",
       "vsiAuthor": "Matthew Reynolds",
       "relevantPathsAI": [
-        "G.3",
-        "B.4"
+        "C.5",
+        "G.3"
       ],
-      "rationaleAI": "Explores cross-linguistic communication including machine translation and sign language (outline G.3 and B.4)."
+      "rationaleAI": "Translation transforming meaning addresses meaning and style (C.5) and cross-cultural relations (G.3)."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the origin and evolution of writing systems including cuneiform, hieroglyphic, alphabetic, and Mayan scripts (outline E)."
+      "relevantPathsAI": [
+        "E",
+        "E.1",
+        "E.2",
+        "E.3"
+      ],
+      "rationaleAI": "Writing systems address origin (E.1), types (E.2), and systems (E.3)."
     },
     {
       "vsiTitle": "Hieroglyphs",
       "vsiAuthor": "Penelope Wilson",
       "relevantPathsAI": [
-        "E.3"
+        "E.3",
+        "E.5"
       ],
-      "rationaleAI": "Egyptian hieroglyphic writing is examined in detail, relevant to outline E.3 on systems of writing."
+      "rationaleAI": "Egyptian hieroglyphs address hieroglyphic systems (E.3) and calligraphy (E.5)."
     },
     {
       "vsiTitle": "Typography",
@@ -74,33 +108,34 @@
       "relevantPathsAI": [
         "E.4"
       ],
-      "rationaleAI": "The visual representation of written language -- fonts, letterforms, and printing -- connects to outline E.4."
+      "rationaleAI": "Letterform design addresses adjuncts to writing (E.4)."
     },
     {
       "vsiTitle": "Reading",
       "vsiAuthor": "Belinda Jack",
       "relevantPathsAI": [
-        "C.6"
+        "C.6",
+        "E.1"
       ],
-      "rationaleAI": "Explores literacy, the history of reading, and the relationship between written and spoken language (outline C.6 and E)."
+      "rationaleAI": "Literacy evolution addresses language and culture (C.6) and writing evolution (E.1)."
     },
     {
       "vsiTitle": "Dictionaries",
       "vsiAuthor": "Lynda Mugglestone",
       "relevantPathsAI": [
-        "F.6",
-        "C.5"
+        "C.2",
+        "F.5"
       ],
-      "rationaleAI": "Lexicography, the codification of language, and linguistic authority are central to outline F.6 and C.5."
+      "rationaleAI": "Dictionaries address ways of studying language (C.2) and semantics (F.5)."
     },
     {
       "vsiTitle": "Rhetoric",
       "vsiAuthor": "Richard Toye",
       "relevantPathsAI": [
-        "C.5",
-        "G.4"
+        "A",
+        "C.5"
       ],
-      "rationaleAI": "Meaning and style in language, persuasive speech, and language as a political instrument connect to outline C.5 and G.4."
+      "rationaleAI": "Persuasion addresses communication as foundation of culture (A) and meaning and style (C.5)."
     },
     {
       "vsiTitle": "Meaning",
@@ -109,15 +144,16 @@
         "C.5",
         "F.5"
       ],
-      "rationaleAI": "Directly addresses semantics, word meaning, speech acts, and the relationship between language and conceptualization (outline C.5 and F.5)."
+      "rationaleAI": "Word meaning and reference address meaning and style (C.5) and semantics (F.5)."
     },
     {
       "vsiTitle": "Hermeneutics",
       "vsiAuthor": "Jens Zimmermann",
       "relevantPathsAI": [
-        "C.5"
+        "C.5",
+        "F.5"
       ],
-      "rationaleAI": "Interpretation theory and the relationship between language and meaning inform outline C.5 and A."
+      "rationaleAI": "Interpretation and meaning construction address meaning and style (C.5) and semantics (F.5)."
     },
     {
       "vsiTitle": "Psycholinguistics",
@@ -126,7 +162,7 @@
         "C.4",
         "D.2"
       ],
-      "rationaleAI": "Psychological bases of speech and language processing are relevant to outline C.4 and D.2."
+      "rationaleAI": "Language processing addresses psychological bases of speech (C.4) and brain functions (D.2)."
     },
     {
       "vsiTitle": "Dyslexia",
@@ -134,7 +170,7 @@
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Reading disorders and developmental language issues are relevant to speech disorders (outline D.3)."
+      "rationaleAI": "Reading disorder with brain differences addresses speech disorders (D.3)."
     },
     {
       "vsiTitle": "Child Psychology",
@@ -143,7 +179,7 @@
         "C.4",
         "C.6"
       ],
-      "rationaleAI": "Language acquisition and development in children illuminate the psychological bases of speech (outline C.4 and C.6)."
+      "rationaleAI": "Language acquisition addresses psychological bases of speech (C.4) and language transmission (C.6)."
     },
     {
       "vsiTitle": "Cryptography",
@@ -151,7 +187,7 @@
       "relevantPathsAI": [
         "C.8"
       ],
-      "rationaleAI": "Codes, ciphers, and encrypting language directly match outline C.8 on cryptology."
+      "rationaleAI": "Ciphers and codes directly address cryptology (C.8)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
@@ -159,7 +195,7 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "AI and human-computer interfaces are relevant to cybernetic communication (outline B.4)."
+      "rationaleAI": "AI language processing addresses cybernetic communication (B.4)."
     },
     {
       "vsiTitle": "Computer Science",
@@ -167,41 +203,42 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Computer languages and algorithms are relevant to cybernetic communication (outline B.4)."
+      "rationaleAI": "Programming languages address computer languages (B.4)."
     },
     {
       "vsiTitle": "Information",
       "vsiAuthor": "Luciano Floridi",
       "relevantPathsAI": [
-        "B.3"
+        "A",
+        "B.4"
       ],
-      "rationaleAI": "Communication theory, signals, signs, and information systems are foundational to outline A and B.3."
+      "rationaleAI": "Information spanning communication addresses cultural foundation (A) and cybernetic communication (B.4)."
     },
     {
       "vsiTitle": "Poststructuralism",
       "vsiAuthor": "Catherine Belsey",
       "relevantPathsAI": [
-        "F.1"
+        "C.5",
+        "F.5"
       ],
-      "rationaleAI": "Poststructuralist theories of language challenge established models of meaning and representation (outline F.1)."
+      "rationaleAI": "Challenging fixed meanings addresses meaning and style (C.5) and semantics (F.5)."
     },
     {
       "vsiTitle": "Literary Theory",
       "vsiAuthor": "Jonathan Culler",
       "relevantPathsAI": [
-        "F.1",
-        "C.5"
+        "C.5",
+        "F.5"
       ],
-      "rationaleAI": "Theories of language in literary study -- including speech acts and poetics -- are relevant to linguistic theory (outline F.1 and C.5)."
+      "rationaleAI": "Structuralism and speech act theory address meaning (C.5) and semantics (F.5)."
     },
     {
       "vsiTitle": "Chinese literature",
       "vsiAuthor": "Sabina Knight",
       "relevantPathsAI": [
-        "H.6",
-        "E.3"
+        "H.6.a"
       ],
-      "rationaleAI": "The Chinese literary tradition illuminates Sino-Tibetan languages and East Asian writing systems (outline H.6.a and E.3)."
+      "rationaleAI": "Chinese literary culture provides context for Chinese language (H.6.a)."
     },
     {
       "vsiTitle": "Japanese Literature",
@@ -209,8 +246,9 @@
       "relevantPathsAI": [
         "H.13"
       ],
-      "rationaleAI": "The Japanese literary tradition is relevant to the Japanese language section (outline H.13)."
+      "rationaleAI": "Japanese literature provides context for the Japanese language (H.13)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

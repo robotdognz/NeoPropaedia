@@ -4,32 +4,50 @@
     {
       "vsiTitle": "Hinduism",
       "vsiAuthor": "Kim Knott",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections A1e, B2b, and D1 on Hindu religious movements, Hindu-Muslim relations, and the Vijayanagar Hindu empire."
+      "relevantPathsAI": [
+        "A.1.e",
+        "B.2.b",
+        "C.2"
+      ],
+      "rationaleAI": "Hindu movements connect to Delhi sultanate cultural developments (A.1.e), Vijayanagar (B.2), and Mughal religious policies (C.2.b)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A on the Delhi sultanate and the Muslim hegemony over North India from c. 1200 to 1526."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "C.2.b"
+      ],
+      "rationaleAI": "Islam connects to North India under Muslim hegemony (A), the Delhi sultanate (A.1), and Mughal policies (C.2.b)."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the broader Islamic context for the Delhi sultanate and Mughal Empire discussed in subsections A and C."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "C.1"
+      ],
+      "rationaleAI": "Turkish dynasties connect to the Delhi sultanate (A.1). Mughal origins relate to C.1."
     },
     {
       "vsiTitle": "The Mongols",
       "vsiAuthor": "Morris Rossabi",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A1c on the Mughal invasion of 1398 and the origins of the Mughals as descendants of Mongol-Turkic lines."
+      "relevantPathsAI": [
+        "A.1.c",
+        "C.1"
+      ],
+      "rationaleAI": "Mongol campaigns connect to the Tughluq period (A.1.c). Mughal origins relate to C.1."
     },
     {
       "vsiTitle": "Indian philosophy",
       "vsiAuthor": "Sue Hamilton",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections A1e and B2b on the cultural and religious developments including Hindu philosophical traditions during this period."
+      "relevantPathsAI": [
+        "A.1.e",
+        "B.2.b"
+      ],
+      "rationaleAI": "Indian philosophy connects to Delhi sultanate developments (A.1.e) and Vijayanagar (B.2.b)."
     },
     {
       "vsiTitle": "Modern India",
@@ -40,27 +58,40 @@
     {
       "vsiTitle": "The Koran",
       "vsiAuthor": "Michael Cook",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A1e on Islamic religious developments and education during the Delhi sultanate."
+      "relevantPathsAI": [
+        "A.1.e"
+      ],
+      "rationaleAI": "The Quran's educational role connects to Islamic movements during the Delhi sultanate (A.1.e)."
     },
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the succession of dynasties from the Slave dynasty through the Mughals that structure this section's political narrative."
+      "relevantPathsAI": [
+        "A.1",
+        "C",
+        "C.1",
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "Dynastic succession connects to Delhi sultanate (A.1) and Mughal dynasty (C.1-C.4)."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to trade connections between India and Central Asia during the Delhi sultanate and Mughal periods."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Trade routes connect to Mughal Central Asian origins (C.1)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C3 on Mughal-era developments in arts and agriculture and the broader economic context of early modern India."
+      "relevantPathsAI": [
+        "C.3"
+      ],
+      "rationaleAI": "Economic development connects to later Mughal developments (C.3)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

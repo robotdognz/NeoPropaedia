@@ -4,56 +4,80 @@
     {
       "vsiTitle": "African History",
       "vsiAuthor": "John Parker, Richard Rathbone",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers East African history including coastal trading cities, the slave trade, and European exploration discussed throughout this section."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "African history connects to East African civilizations (A), coastal and interior developments (B), and European activities (C)."
     },
     {
       "vsiTitle": "African Politics",
       "vsiAuthor": "Ian Taylor",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections B2 and C1 on the political development of East African kingdoms and military kingships."
+      "relevantPathsAI": [
+        "C.1.a"
+      ],
+      "rationaleAI": "Political institutions connect to military kingships in East Africa (C.1.a)."
     },
     {
       "vsiTitle": "African Religions",
       "vsiAuthor": "Jacob K. Olupona",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1b on the spread of Islam along the coast and indigenous religious traditions of the interior peoples."
+      "relevantPathsAI": [
+        "A",
+        "B.1.b"
+      ],
+      "rationaleAI": "Indigenous traditions connect to East African civilizations (A) and spread of Islam (B.1.b)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1b on the spread of Islam via the Shirazi dynasty and the growth of Islamic coastal towns."
+      "relevantPathsAI": [
+        "B.1.b"
+      ],
+      "rationaleAI": "Islam connects to the Shirazi dynasty and coastal Islam (B.1.b)."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C1c on European exploratory and missionary activities and British colonial interest in East Africa."
+      "relevantPathsAI": [
+        "C.1.c"
+      ],
+      "rationaleAI": "British activities connect to European exploration and missions (C.1.c)."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsections B1c and C1c on Portuguese invasions from 1502 and European exploratory activities."
+      "relevantPathsAI": [
+        "B.1.c",
+        "C.1.c"
+      ],
+      "rationaleAI": "Portuguese exploration (B.1.c) and European exploration (C.1.c)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1c on Portuguese occupation, Omani influence, and the broader pattern of imperial activity in East Africa."
+      "relevantPathsAI": [
+        "B.1.c",
+        "C"
+      ],
+      "rationaleAI": "Empire connects to Portuguese occupation (B.1.c) and European influence (C)."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the section's coverage of the impact of European colonial and missionary activities on indigenous East African peoples."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Colonial exploitation connects to European activities (C)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections A and B2a on the Stone Age origins of East African peoples and archaeological evidence from the Rift Valley."
+      "relevantPathsAI": [
+        "A",
+        "B.2.a"
+      ],
+      "rationaleAI": "Archaeological methods connect to sources (A) and Stone Age origins (B.2.a)."
     },
     {
       "vsiTitle": "Global Islam",
@@ -62,5 +86,6 @@
       "rationaleAI": "Relevant to subsection B1a-b on medieval commercial contacts with Arabia and the development of Muslim coastal trading cities."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

@@ -5,95 +5,101 @@
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
       "relevantPathsAI": [
-        "B.7"
+        "A.7",
+        "B.4",
+        "B.7",
+        "C.5"
       ],
-      "rationaleAI": "Core VSI for this section, covering the human skeletal system (B.7), skeleton structure, and musculatory system, with detailed treatment of vertebrate anatomy."
+      "rationaleAI": "Human skeletal system anatomy and head/neck structures directly address the human skeletal system (B.7), human integument (A.7), vertebrate skeleton structure (B.4), and vertebrate muscle systems (C.5)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
       "relevantPathsAI": [
-        "C.3",
-        "C.1"
+        "A.7",
+        "B.7",
+        "C.5"
       ],
-      "rationaleAI": "Addresses the physiology of muscle contraction (C.3), skeletal support, and integumentary function including temperature regulation (C.1)."
+      "rationaleAI": "Motor responses and physiological regulation across organ systems address the human integument (A.7), human skeletal system (B.7), and vertebrate muscle function and regulation (C.5.c)."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
       "relevantPathsAI": [
-        "A.1",
+        "A.2",
         "B.3",
         "C.4"
       ],
-      "rationaleAI": "Covers diversity of body coverings, skeletal systems, and musculature across invertebrate phyla (A.1, B.3, C.4) including Annelida, Echinodermata, and Porifera."
+      "rationaleAI": "Morphological features across phyla including Porifera spicules and Echinodermata ossicles address invertebrate integuments (A.2), invertebrate skeleton (B.3), and invertebrate muscle systems (C.4)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
       "relevantPathsAI": [
-        "A.5",
-        "B.4",
-        "C.5"
+        "B.4.b"
       ],
-      "rationaleAI": "Covers embryology of vertebrate skin (A.5), skeleton (B.4.b), and muscular system (C.5.a), including cell differentiation into connective tissues."
+      "rationaleAI": "Morphogenesis and Hox gene patterning during embryonic development address the embryology of vertebrate skeletons (B.4.b)."
     },
     {
       "vsiTitle": "Teeth",
       "vsiAuthor": "Peter S. Ungar",
       "relevantPathsAI": [
         "B.2",
-        "B.4"
+        "B.4",
+        "B.6"
       ],
-      "rationaleAI": "Covers teeth as skeletal elements (B.2.a bone, dentine, enamel), their composition, and evolutionary development in vertebrates (B.4)."
+      "rationaleAI": "Dental anatomy including enamel and dentine as cuticular structures (B.2.a), evolutionary diversity of tooth forms across vertebrates (B.4), and properties of bone-like dental tissues (B.6)."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
       "relevantPathsAI": [
         "A.3",
+        "A.4",
+        "B.4",
         "C.5"
       ],
-      "rationaleAI": "Addresses mammalian integument including hair and skin glands (A.3.b), skeletal structure, and vertebrate musculature (C.5)."
+      "rationaleAI": "Mammalian morphological diversity including hair as a skin derivative (A.3.b), skin variations among vertebrate classes (A.4), vertebrate skeletal adaptations for locomotion (B.4), and vertebrate muscle systems (C.5)."
     },
     {
       "vsiTitle": "Reptiles",
       "vsiAuthor": "Tom Kemp",
       "relevantPathsAI": [
+        "A.2",
         "A.3",
-        "A.4"
+        "A.4",
+        "B.4"
       ],
-      "rationaleAI": "Covers reptilian epidermal scales (A.3.b), skeletal systems, and musculature, illustrating skin variations among vertebrates (A.4)."
+      "rationaleAI": "Reptilian integument with epidermal scales and physiological adaptations for terrestrial life (A.3.b, A.4), and skeletal innovations enabling land colonization (B.4)."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
       "relevantPathsAI": [
-        "B.2",
-        "B.3",
         "A.2",
+        "B.3",
         "C.4"
       ],
-      "rationaleAI": "Addresses invertebrate exoskeletons and cuticular structures (B.2.a, B.3), invertebrate integuments (A.2), and invertebrate muscle systems (C.4)."
+      "rationaleAI": "Insect exoskeletons as invertebrate integuments (A.2), cuticular structures forming external skeletons (B.3), and insect muscle systems (C.4)."
     },
     {
       "vsiTitle": "Sexual Selection",
       "vsiAuthor": "Marlene Zuk, Leigh W Simmons",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b"
       ],
-      "rationaleAI": "Relevant to skin derivatives such as feathers, hair, and horns (A.3.b) as products of sexual dimorphism and sexual selection pressures."
+      "rationaleAI": "Ornamental traits including feathers, horns, and antlers used in mate competition are skin derivatives and appendages (A.3.b)."
     },
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
       "relevantPathsAI": [
         "A.5",
-        "B.4",
-        "C.5"
+        "B.4.b"
       ],
-      "rationaleAI": "Provides the evolutionary framework for understanding the development of vertebrate skin (A.5), skeleton (B.4.b), and musculatory system (C.5.b)."
+      "rationaleAI": "Evolutionary framework explaining adaptation relates to embryology and evolution of vertebrate skin (A.5) and skeletal evolution (B.4.b)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

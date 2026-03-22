@@ -5,53 +5,70 @@
       "vsiTitle": "African American Religion",
       "vsiAuthor": "Eddie S. Glaude Jr.",
       "relevantPathsAI": [
+        "A",
+        "B",
+        "B.1",
         "E.3"
       ],
-      "rationaleAI": "Examines African American religious movements including the Nation of Islam and Black churches, directly relevant to 829.B on Negro cults and 829.E.3."
+      "rationaleAI": "African American religion including Nation of Islam addresses new movements (A), Negro cults (B), and Black Muslims (B.1, E.3)."
     },
     {
       "vsiTitle": "Rastafari",
       "vsiAuthor": "Ennis B. Edmonds",
-      "relevantPathsAI": [],
-      "rationaleAI": "Rastafari exemplifies a new religious movement shaped by the impact of dominant cultures on African diaspora peoples, relevant to 829.A and 829.B."
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Rastafari addresses new movements (A) and Negro cults (B)."
     },
     {
       "vsiTitle": "Mormonism",
       "vsiAuthor": "Richard Bushman",
-      "relevantPathsAI": [],
-      "rationaleAI": "Mormonism stands as a major new religious movement reflecting the impact of Christianity on American religious life, relevant to 829.A."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Mormonism addresses new religious movements (A)."
     },
     {
       "vsiTitle": "The Book of Mormon",
       "vsiAuthor": "Terryl Givens",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores the foundational scripture of the Latter-day Saint movement, a key text for understanding Mormonism as a new religious development relevant to 829.A."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "The Book of Mormon relates to new religious movements (A)."
     },
     {
       "vsiTitle": "Religion in America",
       "vsiAuthor": "Timothy Beal",
-      "relevantPathsAI": [],
-      "rationaleAI": "Surveys diverse new religious movements in America including the Nation of Islam, Jainism, and emergent spiritual communities, relevant to 829.A-B."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "American religious diversity relates to new religious movements (A)."
     },
     {
       "vsiTitle": "Global Islam",
       "vsiAuthor": "Nile Green",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces modern Islamic movements and their global spread, relevant to 829.E on religions and movements of Islamic origin."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Global Islam relates to movements of Islamic origin (E)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
       "relevantPathsAI": [
+        "E",
         "E.1"
       ],
-      "rationaleAI": "Islamic sects and offshoots provide essential context for understanding the Baha'i faith and Druze religion discussed in 829.E.1-2."
+      "rationaleAI": "Islam's Ismaili community relates to religions of Islamic origin (E, E.1)."
     },
     {
       "vsiTitle": "Paganism",
       "vsiAuthor": "Owen Davies",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores modern neo-pagan revivals including Blavatsky's theosophy, the Golden Dawn, and shamanism, relevant to 829.C on theosophical groups and 829.F on revivals."
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Neo-paganism relates to revivals of ancient beliefs (F)."
     },
     {
       "vsiTitle": "Witchcraft",
@@ -59,7 +76,7 @@
       "relevantPathsAI": [
         "F.1"
       ],
-      "rationaleAI": "Modern witchcraft movements, especially Wicca, are directly relevant to 829.F.1 on witchcraft and black magic in modern civilizations."
+      "rationaleAI": "Wicca and modern paganism address witchcraft and Satanism (F.1)."
     },
     {
       "vsiTitle": "Magic",
@@ -67,7 +84,7 @@
       "relevantPathsAI": [
         "F.1"
       ],
-      "rationaleAI": "Explores modern magical practices and occult beliefs, relevant to 829.F.1 on black magic and Satanism in modern civilizations."
+      "rationaleAI": "Magic relates to witchcraft and black magic (F.1)."
     },
     {
       "vsiTitle": "Superstition",
@@ -75,41 +92,48 @@
       "relevantPathsAI": [
         "F.2"
       ],
-      "rationaleAI": "Examines superstitious beliefs and divination practices that persist in modern life, relevant to 829.F.2 on prophecy, divination, and astrology."
+      "rationaleAI": "Superstition relates to prophecy and divination (F.2)."
     },
     {
       "vsiTitle": "Fundamentalism",
       "vsiAuthor": "Malise Ruthven",
-      "relevantPathsAI": [],
-      "rationaleAI": "Fundamentalist movements across religious traditions represent a powerful response to modernity, relevant to 829.A on movements reflecting the impact of dominant cultures."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Fundamentalism relates to new religious movements (A)."
     },
     {
       "vsiTitle": "Pentecostalism",
       "vsiAuthor": "William K. Kay",
       "relevantPathsAI": [
-        "F.3"
+        "A"
       ],
-      "rationaleAI": "Pentecostalism's charismatic worship and healing practices make it a significant newer movement, relevant to 829.A and 829.F.3 on healing cults."
+      "rationaleAI": "Pentecostalism relates to new religious movements (A)."
     },
     {
       "vsiTitle": "Evangelicalism",
       "vsiAuthor": "John G. Stackhouse Jr.",
-      "relevantPathsAI": [],
-      "rationaleAI": "Newer evangelical movements and megachurches represent important new religious developments within Christianity, relevant to 829.A."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Evangelicalism relates to new religious movements (A)."
     },
     {
       "vsiTitle": "Spirituality",
       "vsiAuthor": "Philip Sheldrake",
       "relevantPathsAI": [
+        "A",
         "F.3"
       ],
-      "rationaleAI": "Explores modern spiritual movements outside traditional religion including transpersonal psychology, relevant to 829.D on spiritualist groups and 829.F.3."
+      "rationaleAI": "Spirituality relates to new movements (A) and healing practices (F.3)."
     },
     {
       "vsiTitle": "Druids",
       "vsiAuthor": "Barry Cunliffe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Modern druidism represents a revival of ancient religious practices, relevant to 829.F on residues or revivals of ancient beliefs."
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Neo-druidic movements relate to revivals of ancient beliefs (F)."
     },
     {
       "vsiTitle": "Freemasonry",
@@ -118,5 +142,6 @@
       "rationaleAI": "Freemasonry is a fraternal movement with quasi-religious initiation rites and theosophical connections, relevant to 829.C."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

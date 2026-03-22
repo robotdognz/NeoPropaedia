@@ -4,24 +4,42 @@
     {
       "vsiTitle": "Hinduism",
       "vsiAuthor": "Kim Knott",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers Hinduism including its Vedic origins, Indus Valley roots, major sects (Vaishnavism), dharma, and modern movements, the primary subject of 823.A-C."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.9",
+        "A.10",
+        "B.1.a",
+        "C.1",
+        "C.1.a",
+        "C.1.c.ii",
+        "C.1.c.iii",
+        "C.2",
+        "C.3.c"
+      ],
+      "rationaleAI": "Hinduism from Indus Valley through Vedic religion to contemporary practice addresses history (A), Vedic origins (A.3), modern Hinduism (A.9, A.10). Dharma, karma, moksha relate to beliefs (C.1.c), karman and samsara (C.1.c.ii), and three margas (C.1.c.iii). Rig Veda relates to scriptures (B.1.a), Vedanta to philosophy (C.2), caste to hierarchy (C.3.c)."
     },
     {
       "vsiTitle": "Indian philosophy",
       "vsiAuthor": "Sue Hamilton",
       "relevantPathsAI": [
-        "B.3"
+        "B.3",
+        "C.1.c.ii"
       ],
-      "rationaleAI": "Covers Hindu philosophical systems including Brahman, Vedanta, dharma, karma, and moksha, directly relevant to 823.B.3 on the integral relation of philosophy and religion."
+      "rationaleAI": "Six orthodox schools with karma and moksha relate to Hindu philosophy (B.3) and karman and samsara (C.1.c.ii)."
     },
     {
       "vsiTitle": "Sikhism",
       "vsiAuthor": "Eleanor Nesbitt",
       "relevantPathsAI": [
-        "D.2"
+        "D.2",
+        "D.2.a",
+        "D.2.b",
+        "D.2.c"
       ],
-      "rationaleAI": "Directly covers Sikhism including Guru Nanak, the ten Gurus, the Punjab, caste, and worship, the specific subject of 823.D.2."
+      "rationaleAI": "Sikhism from Guru Nanak directly addresses Sikhism's history (D.2.a), literature (D.2.b), and beliefs and practices (D.2.c)."
     },
     {
       "vsiTitle": "Buddhism",
@@ -29,7 +47,7 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Buddhism arose as a heterodox challenge to Brahmanism, directly relevant to 823.A.4 on challenges to Brahmanism by reformers and ascetic groups."
+      "rationaleAI": "Buddhism as heterodox challenge relates to the heterodox period (A.4)."
     },
     {
       "vsiTitle": "Buddha",
@@ -37,16 +55,16 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Covers the Buddha's emergence from the Hindu context including Jainism, four noble truths, and rebirth, relevant to 823.A.4 on the heterodox period."
+      "rationaleAI": "The Buddha's relationship to Hinduism and Jainism relates to the heterodox period (A.4)."
     },
     {
       "vsiTitle": "Gandhi",
       "vsiAuthor": "Bhikhu Parekh",
       "relevantPathsAI": [
         "A.9",
-        "C.2"
+        "C.2.f"
       ],
-      "rationaleAI": "Gandhi's life and thought embody modern Hindu reform, satyagraha, and ethical nationalism, relevant to 823.A.9 on the modern period and 823.C.2.f on ethical and nationalist movements."
+      "rationaleAI": "Gandhi's nonviolent resistance relates to modern Hinduism (A.9) and nationalist movements (C.2.f)."
     },
     {
       "vsiTitle": "Modern India",
@@ -55,23 +73,24 @@
         "A.10",
         "C.3.c"
       ],
-      "rationaleAI": "Covers caste, democracy, and religion in contemporary India, relevant to 823.A.10 on Hinduism today and 823.C.3.c on the caste system."
+      "rationaleAI": "Contemporary India's caste dynamics relate to the caste system (C.3.c) and Hinduism today (A.10)."
     },
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
       "relevantPathsAI": [
-        "C.3"
+        "C.3",
+        "C.3.a"
       ],
-      "rationaleAI": "Covers sacrifice, passage rites, and religious ritualization, relevant to 823.C.3.a on sacrifice and worship and 823.C.3.b on sacred times and places."
+      "rationaleAI": "Ritual relates to Hindu practices (C.3) and sacrifice and worship (C.3.a)."
     },
     {
       "vsiTitle": "Tibetan Buddhism",
       "vsiAuthor": "Matthew T. Kapstein",
       "relevantPathsAI": [
-        "C.2"
+        "A.4"
       ],
-      "rationaleAI": "Covers Tantric elements shared with Hindu Tantrism including Tantra, karma, and guru traditions, relevant to 823.C.2.d on Tantrism and Shaktism."
+      "rationaleAI": "Tibetan Buddhism's Indian origins relate to the heterodox period (A.4)."
     },
     {
       "vsiTitle": "Spirituality",
@@ -79,7 +98,7 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Covers mystical traditions across Hinduism, Buddhism, and other faiths, relevant to 823.B.4 on Hindu mysticism and its goals, methods, and varieties."
+      "rationaleAI": "Spirituality across Hindu traditions relates to Hindu mysticism (B.4)."
     },
     {
       "vsiTitle": "The Abrahamic Religions",
@@ -95,13 +114,15 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Covers approaches to myth relevant to understanding Hindu mythology's varieties, modes of representation, and themes in 823.B.2."
+      "rationaleAI": "Theoretical approaches to myth relate to Hindu mythology (B.2)."
     },
     {
       "vsiTitle": "Religion",
       "vsiAuthor": "Thomas A. Tweed",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides comparative framework for understanding Hinduism and other religions of India within the broader study of religion."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Religion as global phenomenon provides context for the history of Hinduism (A)."
     },
     {
       "vsiTitle": "Confucianism",
@@ -115,10 +136,12 @@
       "vsiTitle": "Pakistan",
       "vsiAuthor": "Pippa Virdee",
       "relevantPathsAI": [
-        "D.2"
+        "A.2",
+        "D.2.a.vi"
       ],
-      "rationaleAI": "Covers Pakistan's partition from India and its Islamic identity, relevant to 823.D.2.a.i on Islamic background of Sikhism and 823.D.2.vi on Sikhism in independent Pakistan."
+      "rationaleAI": "Pakistan's Indus Valley relates to protohistoric Indian religion (A.2), and partition relates to Sikhism (D.2.a.vi)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

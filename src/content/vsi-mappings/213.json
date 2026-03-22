@@ -4,58 +4,105 @@
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the Earth's concentric layers, seismic wave analysis, and the geophysical evidence used to infer interior structure and composition."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "D",
+        "D.1",
+        "D.1.a",
+        "D.1.b"
+      ],
+      "rationaleAI": "Seismic analysis addresses concentric layers (A), earthquakes (B), and geophysical evidence (D.1)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides a comprehensive treatment of the Earth's internal structure including crust, mantle, core, and the Mohorovicic discontinuity."
+      "relevantPathsAI": [
+        "A",
+        "A.2",
+        "A.2.c",
+        "A.2.d",
+        "A.3"
+      ],
+      "rationaleAI": "Plate tectonics connects to layers (A), mantle (A.2.c), core (A.2.d), and development (A.3)."
     },
     {
       "vsiTitle": "Plate tectonics",
       "vsiAuthor": "Peter Molnar",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the distinction between continental and oceanic crust, lithosphere and mantle structure, and subduction processes that reveal interior composition."
+      "relevantPathsAI": [
+        "A.2.a",
+        "A.2.b",
+        "A.2.c",
+        "B",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Plates connect to crust (A.2.a), Moho (A.2.b), mantle (A.2.c), and earthquakes (B)."
     },
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the layered structure of the Earth, earthquake processes, and geochemical differentiation of the Earth's interior."
+      "relevantPathsAI": [
+        "A",
+        "A.2",
+        "D",
+        "D.2"
+      ],
+      "rationaleAI": "Deep interior connects to layers (A) and geochemical evidence (D.2)."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.a",
+        "A.2.c",
+        "A.2.d",
+        "D.2.b"
       ],
-      "rationaleAI": "Directly relevant to the composition of the Earth's core, mantle, and crust—the basic divisions of the solid Earth discussed in section A.2."
+      "rationaleAI": "Deep geology connects to mantle (A.2.c), core (A.2.d), and meteorite evidence (D.2.b)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the mineral composition and phase transitions at depth, and the distribution of elements in the Earth's core, mantle, and crust."
+      "relevantPathsAI": [
+        "C",
+        "D.2",
+        "D.2.a"
+      ],
+      "rationaleAI": "Mineral structures connect to elemental distribution (C) and geochemical equilibria (D.2.a)."
     },
     {
       "vsiTitle": "Geophysical and Climate Hazards",
       "vsiAuthor": "Bill McGuire",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers earthquakes—their causes, distribution, and magnitude—which are central to section B on seismic sources within the Earth."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Earthquakes cover causes (B.1), distribution (B.2), and magnitude (B.3)."
     },
     {
       "vsiTitle": "Volcanoes",
       "vsiAuthor": "Michael J. Branney, Jan Zalasiewicz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Volcanism provides direct evidence about the Earth's interior composition, magma generation in the mantle, and the molten state of the outer core."
+      "relevantPathsAI": [
+        "A.2.c",
+        "B.1"
+      ],
+      "rationaleAI": "Volcanism connects to mantle (A.2.c) and earthquake causes (B.1)."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the chemical elements and their properties, relevant to the distribution of elements in the Earth's core, mantle, and crust (section C)."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Elements connect to distribution in Earth (C)."
     },
     {
       "vsiTitle": "Earth System Science",
@@ -63,16 +110,18 @@
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Discusses the development of the Earth's structure and composition as an integrated system, relevant to section A.3 on the evolution of the Earth's interior."
+      "rationaleAI": "Habitable conditions connect to structural development (A.3)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
       "relevantPathsAI": [
-        "D.1"
+        "B.3",
+        "D.1.a"
       ],
-      "rationaleAI": "Covers wave propagation and behavior, directly relevant to seismic wave velocities and their use in interpreting the Earth's interior structure (section D.1)."
+      "rationaleAI": "Seismic waves connect to earthquake energy (B.3) and wave velocities (D.1.a)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

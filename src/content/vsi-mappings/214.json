@@ -4,63 +4,102 @@
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly focused on mineral classification, crystal structure, physical properties (hardness, cleavage, specific gravity), and occurrence -- the primary subject of section A."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.3.b",
+        "A.4",
+        "A.4.a",
+        "A.4.b",
+        "A.4.d"
+      ],
+      "rationaleAI": "Mineral families address composition (A.1), properties (A.2), classification (A.3), silicates (A.3.b), rock-forming minerals (A.4.a), and phase equilibrium (A.4.b)."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Surveys igneous, sedimentary, and metamorphic rocks, their classification, formation, and distribution -- directly mapping to section B on Earth's constituent rocks."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.4",
+        "B.5",
+        "C"
+      ],
+      "rationaleAI": "Rock types address igneous (B.1), sedimentary (B.2), metamorphic (B.3), associations (B.4), fossil fuels (B.5), and elements (C)."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
       "relevantPathsAI": [
-        "A.3"
+        "A.1",
+        "A.3.b.i"
       ],
-      "rationaleAI": "Explains crystal structure, symmetry operations, and X-ray diffraction, directly relevant to mineral internal structure, the silicon-oxygen tetrahedron, and crystal classification in section A.3."
+      "rationaleAI": "Crystal analysis connects to mineral structure (A.1) and silicon-oxygen tetrahedron (A.3.b.i)."
     },
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides the geological context for understanding rock types, petrology, geochemistry, and the igneous-sedimentary-metamorphic rock cycle in section B."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.4",
+        "B.5",
+        "C"
+      ],
+      "rationaleAI": "Petrology addresses rocks (B), fossil fuels (B.5), and elements (C)."
     },
     {
       "vsiTitle": "Volcanoes",
       "vsiAuthor": "Michael J. Branney, Jan Zalasiewicz",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.1.c",
+        "B.1.e.ii",
+        "B.1.e.iii"
       ],
-      "rationaleAI": "Directly relevant to the formation of igneous rocks from magma, including intrusive, extrusive, and pyroclastic rocks (pumice, tuff, scoria) in section B.1.e."
+      "rationaleAI": "Volcanic processes address igneous rock formation (B.1.c), extrusive (B.1.e.ii), and pyroclastic rocks (B.1.e.iii)."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores chemical elements and their properties, relevant to mineral chemical composition and the occurrence of elements in the Earth's layers (section C)."
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Elements connect to occurrence in core (C.1), mantle (C.2), and crust (C.3)."
     },
     {
       "vsiTitle": "The Periodic Table",
       "vsiAuthor": "Eric R. Scerri",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces Mendeleev's classification of elements by atomic structure and periodicity, relevant to understanding mineral chemical composition and elemental distribution in core, mantle, and crust."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Elemental properties provide context for occurrence (C)."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides the chemical foundations for mineral composition, inorganic chemistry of silicates and nonsilicate minerals, and spectroscopic identification methods."
+      "relevantPathsAI": [
+        "A.1",
+        "C"
+      ],
+      "rationaleAI": "Chemical bonding connects to mineral composition (A.1) and element occurrence (C)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
       "relevantPathsAI": [
-        "A.4",
-        "B.3"
+        "A.4.b"
       ],
-      "rationaleAI": "Applies phase equilibria and thermodynamics to mineral associations, metamorphic phase transitions, and magma crystallization sequences in sections A.4.b and B.3."
+      "rationaleAI": "Phase transitions connect to mineral phase equilibrium (A.4.b)."
     },
     {
       "vsiTitle": "Plate tectonics",
@@ -68,33 +107,41 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Explains rock associations in different tectonic environments -- oceanic ridges, subduction zones, mountain ranges, island arcs -- directly relevant to section B.4."
+      "rationaleAI": "Tectonics connect to rock associations (B.4)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
-      "relevantPathsAI": [],
-      "rationaleAI": "Describes the composition of Earth's layers and chemical weathering processes relevant to sedimentary rock formation and elemental distribution."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Earth science connects to element occurrence (C)."
     },
     {
       "vsiTitle": "Fossils",
       "vsiAuthor": "Keith Thomson",
       "relevantPathsAI": [
-        "B.5"
+        "B.2"
       ],
-      "rationaleAI": "Examines fossilization processes and organic content of sedimentary rocks, relevant to organic-rich sedimentary rocks and fossil fuels in section B.5."
+      "rationaleAI": "Fossil mineralization connects to sedimentary rocks (B.2)."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explains isotopic analysis of geological materials including uranium-lead and potassium-argon systems, relevant to mineral radioactive properties and geochemical dating."
+      "relevantPathsAI": [
+        "A.2",
+        "C"
+      ],
+      "rationaleAI": "Isotope analysis connects to mineral properties (A.2) and element distribution (C)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
-      "relevantPathsAI": [],
-      "rationaleAI": "Analyzes physical properties of crystalline materials including hardness and crystal lattice structure, relevant to mineral cleavage, tenacity, and optical behavior."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Crystal structures connect to mineral structure (A.1) and properties (A.2)."
     },
     {
       "vsiTitle": "Organic Chemistry",
@@ -102,13 +149,16 @@
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "Addresses carbon chemistry and petrochemicals, directly relevant to fossil fuels including petroleum, coal, and natural gas in section B.5."
+      "rationaleAI": "Carbon compounds connect to fossil fuels (B.5)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
-      "relevantPathsAI": [],
-      "rationaleAI": "Discusses elemental cycling through the geosphere, biosphere, hydrosphere, and atmosphere, relevant to section C on elemental occurrence across Earth's envelope."
+      "relevantPathsAI": [
+        "C.5",
+        "C.6"
+      ],
+      "rationaleAI": "Carbon cycling connects to atmosphere (C.5) and biosphere elements (C.6)."
     },
     {
       "vsiTitle": "The Atmosphere",
@@ -116,14 +166,19 @@
       "relevantPathsAI": [
         "C.5"
       ],
-      "rationaleAI": "Details atmospheric composition, relevant to section C.5 on the occurrence of elements in the atmosphere."
+      "rationaleAI": "Atmospheric composition connects to atmosphere elements (C.5)."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "relevantPathsAI": [],
-      "rationaleAI": "Uses seismic and geochemical evidence to determine rock and mineral composition at depth, relevant to section C on elemental distribution in core, mantle, and crust."
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Geophysics connects to elements in core (C.1), mantle (C.2), and crust (C.3)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

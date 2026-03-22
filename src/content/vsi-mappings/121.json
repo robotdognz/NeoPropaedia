@@ -4,97 +4,123 @@
     {
       "vsiTitle": "The Periodic Table",
       "vsiAuthor": "Eric R. Scerri",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the periodic law, atomic number, electron configuration, and the systematic classification of elements (A and B)."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C.5",
+        "D"
+      ],
+      "rationaleAI": "Periodic table maps to systematic classification (A), element groups (B), synthetic elements (C.5), and elemental origins (D)."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
       "relevantPathsAI": [
+        "A",
         "B",
-        "D"
+        "B.1",
+        "B.9",
+        "C.1",
+        "D",
+        "D.3"
       ],
-      "rationaleAI": "Traces the discovery, properties, isotopes, and cosmic origins of the chemical elements, spanning element groups (B) and origin/abundances (D)."
+      "rationaleAI": "Chemical elements cover classification (A), hydrogen and water (B.1), noble gases (B.9), metals/nonmetals (C.1), and origins (D, D.3)."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
-      "relevantPathsAI": [],
-      "rationaleAI": "Introduces the periodic table, inorganic chemistry, spectroscopy, and the chemical properties distinguishing element groups (A and B)."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C.1"
+      ],
+      "rationaleAI": "Foundational chemistry maps to classification (A), element groups (B), and metals/nonmetals (C.1)."
     },
     {
       "vsiTitle": "The History of Chemistry",
       "vsiAuthor": "William H. Brock",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the arc from alchemy through Mendeleev's periodic table to modern elemental discovery, illuminating how chemical classification evolved (A and B)."
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Chemistry history maps to periodic law (A) and element groups (B)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explains electron configuration, quantum mechanics of atomic structure, states of matter, and thermodynamic properties that govern element behavior (A and B)."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C.1"
+      ],
+      "rationaleAI": "Quantum mechanics and bonding connect to classification (A), groups (B), and metals/nonmetals (C.1)."
     },
     {
       "vsiTitle": "Nuclear Physics",
       "vsiAuthor": "Frank Close",
       "relevantPathsAI": [
+        "A",
         "C.2",
+        "C.5",
         "D.3"
       ],
-      "rationaleAI": "Atomic structure and nuclear properties underpin the periodic table, and this volume connects radioactivity to C.2 (radioactive elements) and stellar nucleosynthesis to D.3 (elements in stars)."
+      "rationaleAI": "Nuclear foundations connect to classification (A), radioactive elements (C.2), synthetic elements (C.5), and stellar origins (D.3)."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
       "relevantPathsAI": [
-        "B.1",
-        "B.13",
-        "C.2"
+        "C.2",
+        "D",
+        "D.2"
       ],
-      "rationaleAI": "Isotopic composition and abundance shape the behavior of elements from hydrogen (B.1) through the actinides (B.13), with direct relevance to C.2 (stable and radioactive elements)."
+      "rationaleAI": "Stable and radioactive isotopes connect to element classification (C.2) and abundances (D, D.2)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
       "relevantPathsAI": [
         "C.2",
-        "C.5"
+        "C.5",
+        "D.1"
       ],
-      "rationaleAI": "Radioactive decay, nuclear fission, and radioisotope applications illuminate C.2 (stable and radioactive elements) and C.5 (synthetic/transuranium elements)."
+      "rationaleAI": "Radioisotopes connect to radioactive elements (C.2), synthetic elements (C.5), and Earth abundances (D.1)."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "D.1.b"
       ],
-      "rationaleAI": "Water's molecular structure and anomalous physical properties make it directly relevant to B.1 (hydrogen and water), the most abundant compound of the lightest element."
+      "rationaleAI": "Water's properties map to hydrogen and water (B.1) and hydrosphere abundances (D.1.b)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
       "relevantPathsAI": [
-        "B"
+        "B.5"
       ],
-      "rationaleAI": "Chemical bonds, covalent bonding, and molecular structures reveal how elements combine, essential for understanding principal compounds across element groups (B)."
+      "rationaleAI": "Carbon-based molecular structures connect to the carbon group (B.5)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
       "relevantPathsAI": [
+        "B",
         "C.1",
         "C.7"
       ],
-      "rationaleAI": "Metals, ceramics, and their bonding and crystallographic properties connect to C.1 (metals vs. nonmetals) and C.7 (technologically significant elements)."
+      "rationaleAI": "Metals, ceramics, and polymers connect to element groups (B), metals/nonmetals (C.1), and technologically significant elements (C.7)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
       "relevantPathsAI": [
         "C.3",
-        "D.1"
+        "D.1.a"
       ],
-      "rationaleAI": "Natural mineral forms—crystallography, solid solutions, ore deposits—illustrate how elements occur in Earth's crust (C.3, native and combined elements; D.1.a)."
+      "rationaleAI": "Mineral families connect to native/combined elements (C.3) and crustal abundances (D.1.a)."
     },
     {
       "vsiTitle": "Biochemistry",
@@ -102,16 +128,16 @@
       "relevantPathsAI": [
         "C.6"
       ],
-      "rationaleAI": "Life depends on specific elements—iron in hemoglobin, zinc in enzymes, phosphorus in DNA—making this essential for C.6 (biologically active or essential elements)."
+      "rationaleAI": "Chemistry of living cells connects to biologically active elements (C.6)."
     },
     {
       "vsiTitle": "Nuclear power",
       "vsiAuthor": "Maxwell Irvine",
       "relevantPathsAI": [
-        "B.13",
+        "C.2",
         "C.5"
       ],
-      "rationaleAI": "Nuclear fission of uranium and plutonium and fusion of hydrogen isotopes connect directly to B.13 (actinide elements) and C.5 (synthetic/transuranium elements)."
+      "rationaleAI": "Nuclear fission of uranium connects to radioactive elements (C.2) and synthetic elements (C.5)."
     },
     {
       "vsiTitle": "Stars",
@@ -119,22 +145,23 @@
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Stellar nucleosynthesis—hydrogen burning, helium fusion, and the formation of heavier elements—is the origin story told in D.3 (elements in the stars)."
+      "rationaleAI": "Stellar nucleosynthesis maps to elemental origins in stars (D.3)."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
       "relevantPathsAI": [
-        "D.2",
         "D.3"
       ],
-      "rationaleAI": "Solar physics reveals the Sun's elemental composition, directly relevant to D.2 (elements in the solar system) and D.3 (elements in stars)."
+      "rationaleAI": "Solar fusion connects to stellar origins of elements (D.3)."
     },
     {
       "vsiTitle": "Cosmology",
       "vsiAuthor": "Peter Coles",
-      "relevantPathsAI": [],
-      "rationaleAI": "Big Bang nucleosynthesis produced the primordial hydrogen and helium from which all heavier elements descend, central to D (origin of the elements and their relative abundances)."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Big Bang connects to origin of elements (D)."
     },
     {
       "vsiTitle": "The Earth",
@@ -142,7 +169,7 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Earth's chemical composition, radioactive decay, and geological differentiation govern element distribution across the planet, relevant to D.1 (elements on Earth)."
+      "rationaleAI": "Earth science connects to elemental abundance on Earth (D.1)."
     },
     {
       "vsiTitle": "Geophysics",
@@ -150,7 +177,7 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Earth's internal structure and physical properties determine how elements are distributed between crust and mantle, relevant to D.1.a (elements in the crust)."
+      "rationaleAI": "Earth's structure connects to elemental abundance on Earth (D.1)."
     },
     {
       "vsiTitle": "The Atmosphere",
@@ -158,15 +185,16 @@
       "relevantPathsAI": [
         "D.1.c"
       ],
-      "rationaleAI": "Atmospheric composition—nitrogen, oxygen, argon, carbon dioxide—is a direct expression of D.1.c (elements in the atmosphere)."
+      "rationaleAI": "Atmospheric composition connects to atmospheric elemental abundance (D.1.c)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
       "relevantPathsAI": [
-        "D.1"
+        "D.1",
+        "D.1.d"
       ],
-      "rationaleAI": "Biogeochemical cycling moves elements through the biosphere, relevant to D.1.d (elements in the biosphere) and the global cycling of carbon, nitrogen, and phosphorus."
+      "rationaleAI": "Earth systems connect to elemental abundance on Earth (D.1) and in the biosphere (D.1.d)."
     },
     {
       "vsiTitle": "Planets",
@@ -174,8 +202,9 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Planetary composition reflects the solar nebula from which planets condensed, directly relevant to D.2 (elements in the solar system)."
+      "rationaleAI": "Solar System composition connects to elemental abundance in the solar system (D.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

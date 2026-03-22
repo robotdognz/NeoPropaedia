@@ -5,9 +5,15 @@
       "vsiTitle": "Colonial America",
       "vsiAuthor": "Alan Taylor",
       "relevantPathsAI": [
-        "C.3"
+        "A",
+        "B",
+        "C",
+        "C.3",
+        "C.3.b",
+        "C.3.c",
+        "C.3.d"
       ],
-      "rationaleAI": "Directly covers the founding, development, and political and social life of the 13 English colonies in North America (C.3)."
+      "rationaleAI": "Colonial America addresses the Americas (A), Spanish colonies (B), and English colonial development (C.3)."
     },
     {
       "vsiTitle": "The Conquistadors",
@@ -15,7 +21,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Spanish discovery, exploration, and conquest of the Caribbean, Mexico, Central America, and Peru from 1492 to c. 1550 (B.1)."
+      "rationaleAI": "Spanish conquest addresses discovery and conquest (B.1)."
     },
     {
       "vsiTitle": "The Aztecs",
@@ -23,7 +29,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Spanish conquest of Mexico and the destruction of the Aztec state provide context for Spain's colonial empire in the Americas (B.1)."
+      "rationaleAI": "Aztec civilization connects to conquest of Mexico (B.1)."
     },
     {
       "vsiTitle": "The Maya",
@@ -31,87 +37,94 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Spanish colonization of the Yucatan Peninsula and Central America involved the subjugation of Maya peoples (B.1)."
+      "rationaleAI": "Maya civilization connects to conquest of Central America (B.1)."
     },
     {
       "vsiTitle": "The American Revolution",
       "vsiAuthor": "Robert J. Allison",
       "relevantPathsAI": [
-        "C.3"
+        "C.3.d"
       ],
-      "rationaleAI": "The section traces colonial self-government, loose royal control, and growing dissatisfaction that set the stage for the American Revolution (C.3.b-c)."
+      "rationaleAI": "The Revolution connects to the expulsion of French power (C.3.d)."
     },
     {
       "vsiTitle": "The Founding Fathers",
       "vsiAuthor": "Richard B. Bernstein",
       "relevantPathsAI": [
-        "C.3"
+        "C.3.c"
       ],
-      "rationaleAI": "The political culture of colonial America, including self-government and the American Philosophical Society, formed the Founders' milieu (C.3.b-c)."
+      "rationaleAI": "The Founders connect to colonial achievements (C.3.c)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Spanish, Portuguese, English, French, and Dutch colonial empires in the Americas exemplify the varieties of European imperial expansion (A-D)."
+      "relevantPathsAI": [
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Colonial empires connect to Spanish/Portuguese (B) and English settlements (C)."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
       "relevantPathsAI": [
-        "C.3"
+        "C.3",
+        "C.3.b.i"
       ],
-      "rationaleAI": "British mercantilism, the Navigation Acts, and development of the English colonies in North America are covered (C.3.b.i)."
+      "rationaleAI": "British administration connects to English colonies (C.3) and mercantilism (C.3.b.i)."
     },
     {
       "vsiTitle": "American Slavery",
       "vsiAuthor": "Heather Andrea Williams",
       "relevantPathsAI": [
-        "B.2",
-        "C.3"
+        "B.2.b",
+        "C.3.b.iii"
       ],
-      "rationaleAI": "The introduction of slavery into the colonies, African slave trade, and Indian slavery under the encomienda are discussed (B.2.b, C.3.b.iii)."
+      "rationaleAI": "Slavery connects to Spanish colonial policy (B.2.b) and English colonial immigration (C.3.b.iii)."
     },
     {
       "vsiTitle": "Colonial Latin American Literature",
       "vsiAuthor": "Rolena Adorno",
-      "relevantPathsAI": [],
-      "rationaleAI": "The literary and cultural production of Spain's colonial empire and Portuguese Brazil form the corpus of colonial Latin American literature (B-D)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Colonial literature connects to the Spanish colonial empire (B)."
     },
     {
       "vsiTitle": "North American Indians",
       "vsiAuthor": "Theda Perdue, Michael D. Green",
       "relevantPathsAI": [
-        "B.2",
-        "C.3"
+        "A",
+        "C.3.d"
       ],
-      "rationaleAI": "Indian policy including slavery under the encomienda, the missionary role of the Church, and conflicts with the French and Indians are covered (B.2.b, C.3.d)."
+      "rationaleAI": "Indigenous peoples connect to the Americas (A) and French-Indian conflicts (C.3.d)."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
       "relevantPathsAI": [
+        "B.1",
         "C.1",
         "C.2"
       ],
-      "rationaleAI": "Norse voyages to Greenland, early English exploration, and French exploration of North America are explicitly discussed (C.1-C.2, D)."
+      "rationaleAI": "Exploration connects to discovery (B.1), Norse voyages (C.1), and English exploration (C.2)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
-        "B.2.c",
-        "C.3"
+        "B.2.c"
       ],
-      "rationaleAI": "Mercantilism, the Navigation Acts, colonial economic exploitation, and growth of agricultural and mining economies reflect early capitalist development (B.2.c, C.3.b.i)."
+      "rationaleAI": "Capitalism connects to colonial economy (B.2.c)."
     },
     {
       "vsiTitle": "Puritanism",
       "vsiAuthor": "Francis J. Bremer",
       "relevantPathsAI": [
-        "C.3"
+        "C.3.a",
+        "C.3.c"
       ],
-      "rationaleAI": "Puritan settlements in New England were among the most significant English colonies, established for religious reasons (C.3.a)."
+      "rationaleAI": "Puritanism connects to religious settlement (C.3.a) and the Great Awakening (C.3.c)."
     },
     {
       "vsiTitle": "Modern Brazil",
@@ -119,41 +132,41 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "The exploration and colonization of Brazil by the Portuguese, including colonial policies, slavery, and administration (B.3)."
+      "rationaleAI": "Brazilian history connects to Portuguese colonization (B.3)."
     },
     {
       "vsiTitle": "Abolitionism",
       "vsiAuthor": "Richard S. Newman",
       "relevantPathsAI": [
-        "B.2",
-        "C.3"
+        "B.2.b"
       ],
-      "rationaleAI": "The introduction of black slavery in Spanish and English colonies provides historical context for abolitionist movements (B.2.b, C.3.b.iii)."
+      "rationaleAI": "Antislavery connects to colonial slavery (B.2.b)."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
       "relevantPathsAI": [
+        "B.1",
         "C.1"
       ],
-      "rationaleAI": "Voyages of discovery and colonial trade routes across the Atlantic depended on advances in navigation (C.1)."
+      "rationaleAI": "Navigation connects to voyages of discovery (B.1, C.1)."
     },
     {
       "vsiTitle": "Religion in America",
       "vsiAuthor": "Timothy Beal",
       "relevantPathsAI": [
-        "C.3",
+        "C.3.a",
         "C.3.c"
       ],
-      "rationaleAI": "Religious reasons for colonial settlement, the Great Awakening, and the beginning of religious diversity in the colonies are discussed (C.3.a, C.3.c)."
+      "rationaleAI": "Religious diversity connects to settlement (C.3.a) and the Great Awakening (C.3.c)."
     },
     {
       "vsiTitle": "American Immigration",
       "vsiAuthor": "David A. Gerber",
       "relevantPathsAI": [
-        "C.3"
+        "C.3.b.iii"
       ],
-      "rationaleAI": "Immigration and the rise of economic classes in the colonies, including the diverse origins of colonial settlers (C.3.b.iii)."
+      "rationaleAI": "Immigration connects to colonial immigration (C.3.b.iii)."
     },
     {
       "vsiTitle": "Global Economic History",
@@ -161,7 +174,7 @@
       "relevantPathsAI": [
         "B.2.c"
       ],
-      "rationaleAI": "Colonial mercantilism, gold and silver mining, agricultural development, and smuggling and piracy connect to global economic patterns (B.2.c)."
+      "rationaleAI": "Economic development connects to colonial economy (B.2.c)."
     },
     {
       "vsiTitle": "The Vikings",
@@ -169,25 +182,25 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Norse voyages to Greenland and North America (c. 1000) are explicitly discussed as the earliest European contact with the Americas (C.1)."
+      "rationaleAI": "Viking Atlantic crossings connect to Norse voyages (C.1)."
     },
     {
       "vsiTitle": "Diaspora",
       "vsiAuthor": "Kevin Kenny",
       "relevantPathsAI": [
-        "B.2",
-        "C.3"
+        "C.3.b.iii"
       ],
-      "rationaleAI": "The forced diaspora of enslaved Africans to the Americas and voluntary emigration of Europeans constitute major diasporic movements (B.2.b, C.3.b.iii)."
+      "rationaleAI": "Migration connects to colonial immigration (C.3.b.iii)."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
       "relevantPathsAI": [
-        "B.2"
+        "B"
       ],
-      "rationaleAI": "The colonial structures of European empires in the Americas including encomienda, slavery, and mercantilism are subjects of postcolonial analysis (B.2)."
+      "rationaleAI": "Colonial exploitation connects to Spanish colonial policy (B)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

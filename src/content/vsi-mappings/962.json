@@ -5,9 +5,14 @@
       "vsiTitle": "Russian History",
       "vsiAuthor": "Geoffrey Hosking",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "A.3.a",
+        "A.3.b",
+        "A.3.c",
+        "A.3.d",
+        "A.3.e"
       ],
-      "rationaleAI": "Covers the rise of Russia from Ivan IV through Catherine the Great, including westernization, the Time of Troubles, and expansion (A.3)."
+      "rationaleAI": "Russian history addresses the emergence of the Russian Empire (A.3), from Ivan IV through Catherine the Great."
     },
     {
       "vsiTitle": "The Habsburg Empire",
@@ -15,55 +20,60 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Covers Habsburg rivalry with the Ottomans, Austrian conquest of Hungary at Mohacs, and the Austro-Turkish wars (A.2)."
+      "rationaleAI": "Habsburg governance connects to the Ottoman-Habsburg partition of Hungary (A.2)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
       "relevantPathsAI": [
-        "B.1"
+        "B",
+        "B.1",
+        "B.2"
       ],
-      "rationaleAI": "Covers the Ottoman Empire's Islamic governance, classical Ottoman society, and religious and civil law (B.1.a.ii)."
+      "rationaleAI": "Ottoman governance connects to B.1 and Iranian Safavid dynasty to B.2.a."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
       "relevantPathsAI": [
         "B.1",
-        "B.2"
+        "B.1.a"
       ],
-      "rationaleAI": "The Ottoman Empire as the dominant Islamic power and the Safavid dynasty in Iran are central episodes in Islamic history (B.1-B.2)."
+      "rationaleAI": "Ottoman Empire connects to B.1.a."
     },
     {
       "vsiTitle": "Iran",
       "vsiAuthor": "Ali Ansari",
       "relevantPathsAI": [
-        "B.2"
+        "B.2",
+        "B.2.a"
       ],
-      "rationaleAI": "The Safavid dynasty, conflict with the Turks, Abbas I's restoration, Nadir Shah, and the Qajar dynasty are explicitly covered in B.2.a."
+      "rationaleAI": "Iranian civilization connects to Iran c. 1500-1779 (B.2.a)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "The Ottoman, Russian, and Safavid empires and their expansions and conflicts are major imperial systems covered throughout this section."
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Empire connects to Ottoman, Russian, and Habsburg empires (A, B)."
     },
     {
       "vsiTitle": "The Enlightenment",
       "vsiAuthor": "John Robertson",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e"
       ],
-      "rationaleAI": "The impact of the Enlightenment on education and social change in 18th-century Russia is explicitly discussed in A.3.e."
+      "rationaleAI": "Enlightenment connects to education and social change in Russia (A.3.e)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A.1"
       ],
-      "rationaleAI": "The emergence of national consciousness among Poles, Hungarians, and peoples of the Ottoman and Russian empires is relevant to A.1-A.2."
+      "rationaleAI": "Nationalism connects to the Polish-Lithuanian disintegration (A.1)."
     },
     {
       "vsiTitle": "Byzantium",
@@ -77,36 +87,33 @@
       "vsiTitle": "Philosophy in the Islamic World",
       "vsiAuthor": "Peter Adamson",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "B.2.a.i"
       ],
-      "rationaleAI": "The intellectual life of the Ottoman and Safavid empires involved continuing traditions of Islamic philosophy (B.1-B.2)."
+      "rationaleAI": "Philosophical thought connects to Safavid arts (B.2.a.i)."
     },
     {
       "vsiTitle": "The Catholic Reformation",
       "vsiAuthor": "James E. Kelly",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A.1.b.ii"
       ],
-      "rationaleAI": "The Counter-Reformation's effects on Poland-Lithuania and Hungary, including the spread of Protestantism and Catholic reaction, are covered in A.1-A.2."
+      "rationaleAI": "Counter-Reformation connects to Polish-Lithuanian developments (A.1.b.ii)."
     },
     {
       "vsiTitle": "The Holy Roman Empire",
       "vsiAuthor": "Joachim Whaley",
       "relevantPathsAI": [
-        "A.1",
         "A.2"
       ],
-      "rationaleAI": "The Thirty Years' War's impact on eastern European states and Habsburg-Ottoman rivalry intersect with Holy Roman Empire history (A.1-A.2)."
+      "rationaleAI": "The Empire's relationship with Hungary connects to the Habsburg-Ottoman struggle (A.2)."
     },
     {
       "vsiTitle": "Islamic Law",
       "vsiAuthor": "Mashood A. Baderin",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.a.ii"
       ],
-      "rationaleAI": "Classical Ottoman society's religious and civil law system is explicitly discussed in B.1.a.ii."
+      "rationaleAI": "Islamic legal systems connect to classical Ottoman law (B.1.a.ii)."
     },
     {
       "vsiTitle": "Global Islam",
@@ -121,10 +128,11 @@
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.a.i"
       ],
-      "rationaleAI": "Ottoman and Safavid control of trade routes and Nadir Shah's invasions of India and Turkistan connect to the Silk Road's legacy (B.2.a.ii)."
+      "rationaleAI": "Trade routes connect to Safavid commerce (B.2.a.i)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

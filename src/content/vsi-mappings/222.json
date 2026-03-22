@@ -8,55 +8,66 @@
         "A.1",
         "B",
         "E",
-        "H"
+        "F",
+        "G",
+        "G.1",
+        "G.3",
+        "H",
+        "H.1",
+        "H.3",
+        "H.4"
       ],
-      "rationaleAI": "Directly covers ocean distribution (A.1), physical/chemical properties of seawater (B), ocean currents (H), and ocean-atmosphere interactions (E)."
+      "rationaleAI": "Ocean science addresses saltwater (A.1), seawater properties (B), ocean-atmosphere (E), human effects (F), waves (G), tides (G.3), and currents (H)."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
       "relevantPathsAI": [
         "B",
-        "C"
+        "C",
+        "D"
       ],
-      "rationaleAI": "Explores the molecular structure, hydrogen bonding, and anomalous properties of water, directly relevant to both seawater (B) and freshwater (C) chemistry."
+      "rationaleAI": "Water properties connect to seawater (B), freshwater (C), and hydrologic cycle (D)."
     },
     {
       "vsiTitle": "Tides",
       "vsiAuthor": "David George Bowers, Emyr Martyn Roberts",
       "relevantPathsAI": [
         "G.3",
-        "H.4"
+        "H.4.b",
+        "E.3"
       ],
-      "rationaleAI": "Directly covers tides (G.3) and tidal currents (H.4.b), including the gravitational forces that generate them and their effects on ocean circulation."
+      "rationaleAI": "Tidal phenomena address tides (G.3), tidal currents (H.4.b), and climate (E.3)."
     },
     {
       "vsiTitle": "Lakes",
       "vsiAuthor": "Warwick F. Vincent",
       "relevantPathsAI": [
         "A.2",
-        "C"
+        "A.2.a",
+        "C",
+        "D"
       ],
-      "rationaleAI": "Directly covers freshwater lake systems (A.2.a), their physical and chemical properties (C), and salinity and water balance."
+      "rationaleAI": "Freshwater bodies address A.2, properties (C), and hydrologic cycle (D)."
     },
     {
       "vsiTitle": "Rivers",
       "vsiAuthor": "Nick Middleton",
       "relevantPathsAI": [
-        "A.2",
-        "D.4",
-        "D.6"
+        "A.2.a",
+        "D.4"
       ],
-      "rationaleAI": "Directly covers river systems (A.2.a), runoff in the hydrologic cycle (D.4), and water resources (D.6)."
+      "rationaleAI": "Rivers connect to freshwater (A.2.a) and runoff (D.4)."
     },
     {
       "vsiTitle": "Glaciation",
       "vsiAuthor": "David J. A. Evans",
       "relevantPathsAI": [
         "A.3",
+        "A.3.a",
         "D.5"
       ],
-      "rationaleAI": "Directly covers glaciers, ice sheets (A.3.a), sea-level effects, and the role of ice in the hydrologic cycle (D.5)."
+      "rationaleAI": "Ice sheets address ice (A.3) and hydrologic cycle (D.5)."
     },
     {
       "vsiTitle": "The Ice Age",
@@ -65,43 +76,48 @@
         "A.3",
         "D.5"
       ],
-      "rationaleAI": "Examines Pleistocene ice sheets and ice cores (A.3.a-b), glacial effects on sea levels, and the role of ice masses in hydrologic processes (D.5)."
+      "rationaleAI": "Ice dynamics connect to ice (A.3) and hydrologic cycle (D.5)."
     },
     {
       "vsiTitle": "The Arctic",
       "vsiAuthor": "Klaus Dodds, Jamie Woodward",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "A.3.b"
       ],
-      "rationaleAI": "Explores Arctic sea ice, pack ice dynamics (A.3.b), and the cryosphere's influence on ocean circulation and global water balance."
+      "rationaleAI": "Arctic cryosphere connects to ice (A.3) and icebergs (A.3.b)."
     },
     {
       "vsiTitle": "The Antarctic",
       "vsiAuthor": "Klaus Dodds",
       "relevantPathsAI": [
         "A.3",
-        "H.4"
+        "A.3.a"
       ],
-      "rationaleAI": "Focuses on the Antarctic ice sheet (A.3.a), iceberg calving (A.3.b), and the Southern Ocean's role in thermohaline deep-sea circulation (H.4.a)."
+      "rationaleAI": "Antarctic ice addresses ice sheets (A.3.a)."
     },
     {
       "vsiTitle": "Marine biology",
       "vsiAuthor": "Philip V. Mladenov",
       "relevantPathsAI": [
-        "B",
-        "H"
+        "A.4",
+        "E.2",
+        "F"
       ],
-      "rationaleAI": "Addresses ocean acidification and the Atlantic Meridional Overturning Circulation, linking biological processes to seawater properties (B) and ocean currents (H)."
+      "rationaleAI": "Marine ecosystems connect to biosphere water (A.4), carbon sink (E.2), and human effects (F)."
     },
     {
       "vsiTitle": "Climate",
       "vsiAuthor": "Mark Maslin",
       "relevantPathsAI": [
+        "E",
+        "E.1",
         "E.3",
-        "E.3.c",
-        "E.1"
+        "E.3.a",
+        "E.3.b",
+        "E.3.c"
       ],
-      "rationaleAI": "Explains ocean-atmosphere interactions including El Nino-Southern Oscillation (E.3.b), the Gulf Stream's climate effects (E.3.c), and radiation/heat budgets (E.1)."
+      "rationaleAI": "Ocean-atmosphere interactions address E, El Nino (E.3.b), and Gulf Stream (E.3.c)."
     },
     {
       "vsiTitle": "Climate change",
@@ -110,52 +126,57 @@
         "E.2",
         "F"
       ],
-      "rationaleAI": "Examines the ocean as a carbon dioxide sink (E.2), sea-level changes from polar ice melt, and human-induced disruption of the global water balance (F)."
+      "rationaleAI": "Sea level and carbon connect to carbon sink (E.2) and human effects (F)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
       "relevantPathsAI": [
         "D",
-        "E.2"
+        "E",
+        "E.2",
+        "F"
       ],
-      "rationaleAI": "Situates the global hydrologic cycle (D) and ocean-atmosphere CO2 exchange (E.2) within the broader framework of interconnected Earth system processes."
+      "rationaleAI": "Earth system connects to hydrologic cycle (D), ocean-atmosphere (E), and human effects (F)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
       "relevantPathsAI": [
-        "G.1",
-        "G.2"
+        "G",
+        "G.1"
       ],
-      "rationaleAI": "Applies wave physics to surface waves, ocean swells, and tsunamis (G.1) as well as internal waves (G.2)."
+      "rationaleAI": "Ocean waves address hydrospheric waves (G, G.1)."
     },
     {
       "vsiTitle": "Coral Reefs",
       "vsiAuthor": "Charles Sheppard",
       "relevantPathsAI": [
-        "B",
+        "A.4",
         "F"
       ],
-      "rationaleAI": "Highlights how ocean water chemistry, warming, and acidification affect reef ecosystems, connecting seawater properties (B) to human impacts on the hydrosphere (F)."
+      "rationaleAI": "Reef ecosystems connect to biosphere water (A.4) and human effects (F)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
       "relevantPathsAI": [
+        "H",
         "H.3",
-        "H.4"
+        "E.3.c"
       ],
-      "rationaleAI": "Describes the Gulf Stream conveyor belt system (H.3-H.4) and the ocean's role in redistributing heat globally through deep and surface currents."
+      "rationaleAI": "Gulf Stream connects to currents (H) and climate (E.3.c)."
     },
     {
       "vsiTitle": "Geophysical and Climate Hazards",
       "vsiAuthor": "Bill McGuire",
       "relevantPathsAI": [
+        "F",
         "G.1"
       ],
-      "rationaleAI": "Addresses tsunamis (G.1), coastal storm-surge flooding, and extreme hydrological events relevant to waves and human impacts (F-G)."
+      "rationaleAI": "Floods and sea level connect to human effects (F) and tsunamis (G.1)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

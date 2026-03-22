@@ -4,66 +4,99 @@
     {
       "vsiTitle": "Mathematics",
       "vsiAuthor": "Timothy Gowers",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides an overview of the branches of mathematics including algebra, analysis, geometry, and combinatorics, the core topics of this section."
+      "relevantPathsAI": [
+        "B.1",
+        "C",
+        "D.1",
+        "E.2"
+      ],
+      "rationaleAI": "Foundational concepts of number theory and geometry from Euclid onward address arithmetic (B.1) and geometry (C). Coverage of infinity and limits connects to real analysis origins (D.1), and number theory content relates directly to section E.2."
     },
     {
       "vsiTitle": "Algebra",
       "vsiAuthor": "Peter M. Higgins",
-      "relevantPathsAI": [],
-      "rationaleAI": "Section B covers algebra from arithmetic through algebraic structures including groups, rings, fields, and categories."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.4"
+      ],
+      "rationaleAI": "Comprehensive coverage of algebra from solving equations to abstract structures including groups, rings, fields, matrices, vectors, and vector spaces spans arithmetic (B.1), elementary algebra (B.2), linear algebra (B.3), and algebraic structures (B.4)."
     },
     {
       "vsiTitle": "Numbers",
       "vsiAuthor": "Peter M. Higgins",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.1.c",
+        "E.2",
+        "E.2.a"
       ],
-      "rationaleAI": "Section B.1 covers arithmetic including natural numbers, integers, binary operations, number systems, and logarithms."
+      "rationaleAI": "Coverage of integers, fractions, real numbers, and imaginary numbers relates to arithmetic (B.1), natural number concepts (B.1.a), theory of divisors (B.1.b), and number systems (B.1.c). Prime number theory including twin primes relates to elementary number theory (E.2.a)."
     },
     {
       "vsiTitle": "Geometry",
       "vsiAuthor": "Maciej Dunajski",
-      "relevantPathsAI": [],
-      "rationaleAI": "Section C covers Euclidean, non-Euclidean, projective, analytic, differential, and algebraic geometry in comprehensive detail."
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.2",
+        "C.3",
+        "C.6"
+      ],
+      "rationaleAI": "Euclidean and non-Euclidean geometries spanning 2,500 years encompass Euclidean geometry (C.1), non-Euclidean geometry (C.2), and projective geometry (C.3). Coverage of curved spaces and spacetime connects to differential geometry (C.6)."
     },
     {
       "vsiTitle": "Trigonometry",
       "vsiAuthor": "Glen Van Brummelen",
       "relevantPathsAI": [
-        "C.4"
+        "C.4",
+        "C.4.b"
       ],
-      "rationaleAI": "Section C.4.b specifically covers trigonometry as part of analytic and trigonometric geometry."
+      "rationaleAI": "Fundamental trigonometric concepts, relationships, and their extension into non-Euclidean geometry directly address analytic and trigonometric geometry (C.4) and trigonometry specifically (C.4.b)."
     },
     {
       "vsiTitle": "Topology",
       "vsiAuthor": "Richard Earl",
-      "relevantPathsAI": [],
-      "rationaleAI": "Section F covers topology in detail including general topology, algebraic topology, topological spaces, and homotopy theory."
+      "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.1.a",
+        "F.1.c"
+      ],
+      "rationaleAI": "Properties preserved under continuous deformation, surface topology, continuity, and topological invariants directly address general topology (F.1), its definition and basic concepts (F.1.a), and topological properties (F.1.c)."
     },
     {
       "vsiTitle": "Number theory",
       "vsiAuthor": "Robin Wilson",
       "relevantPathsAI": [
-        "E.2"
+        "E.2",
+        "E.2.a"
       ],
-      "rationaleAI": "Section E.2 covers number theory including elementary, algebraic, analytic, geometric, and probabilistic number theory."
+      "rationaleAI": "Properties of counting numbers, prime numbers, divisibility, and congruences from Euclid through Gauss directly address number theory (E.2) and elementary number theory (E.2.a)."
     },
     {
       "vsiTitle": "Combinatorics",
       "vsiAuthor": "Robin Wilson",
       "relevantPathsAI": [
-        "E.1"
+        "E.1",
+        "E.1.a",
+        "E.1.b"
       ],
-      "rationaleAI": "Section E.1 covers combinatorics and combinatorial geometry including methods, results, and unsolved problems."
+      "rationaleAI": "Selecting, arranging, listing, and counting collections of objects with graph theory, partitions, and block designs directly address combinatorics (E.1), its nature and scope (E.1.a), and methods and results of combinatorial theory (E.1.b)."
     },
     {
       "vsiTitle": "Probability",
       "vsiAuthor": "John Haigh",
       "relevantPathsAI": [
-        "D.6"
+        "D.6",
+        "D.6.a",
+        "D.6.b"
       ],
-      "rationaleAI": "Section D.6 covers the theory of probability on both finite and infinite dimensional spaces."
+      "rationaleAI": "Foundational probability concepts including conditional probability, the central limit theorem, and the law of large numbers directly address the theory of probability (D.6), heuristic introduction (D.6.a), and probability on finite dimensional spaces (D.6.b)."
     },
     {
       "vsiTitle": "Statistics",
@@ -71,80 +104,92 @@
       "relevantPathsAI": [
         "D.6"
       ],
-      "rationaleAI": "Statistics is grounded in probability theory (D.6) and closely related to the analysis topics in section D."
+      "rationaleAI": "Probability theory, Bayesian inference, and estimation within statistics connect to the theory of probability (D.6) as a branch of analysis."
     },
     {
       "vsiTitle": "Mathematical Analysis",
       "vsiAuthor": "Richard Earl",
-      "relevantPathsAI": [],
-      "rationaleAI": "Section D covers analysis comprehensively: real analysis, complex analysis, differential equations, functional analysis, and Fourier analysis."
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.1.c",
+        "D.1.d",
+        "D.4.b"
+      ],
+      "rationaleAI": "Rigorous foundations of calculus covering convergence, limits, differentiation, and integration directly address real analysis (D.1), functions and differential calculus (D.1.c), and integral calculus (D.1.d). Optimization problems connect to calculus of variations (D.4.b)."
     },
     {
       "vsiTitle": "Infinity",
       "vsiAuthor": "Ian Stewart",
       "relevantPathsAI": [
-        "A"
+        "A.2",
+        "D.1",
+        "D.5"
       ],
-      "rationaleAI": "Set theory (A) deals fundamentally with infinite sets including Cantorian set theory and the Zermelo-Fraenkel axioms."
+      "rationaleAI": "Infinite sets, Cantorian set theory, and paradoxes relate to set theory (A.2). Infinitesimal quantities in calculus connect to real analysis (D.1), and Fourier analysis content relates to that branch (D.5)."
     },
     {
       "vsiTitle": "Gödel's Theorem",
       "vsiAuthor": "A. W. Moore",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "A.3.b"
       ],
-      "rationaleAI": "Section A.3.b discusses Godel's theorem as a limitation of axiomatic set theory, demonstrating the failure to prove consistency."
+      "rationaleAI": "Godel's incompleteness theorems on the limits of axiomatization directly address limitations of axiomatic set theory (A.3.b) and axiomatic set theory broadly (A.3)."
     },
     {
       "vsiTitle": "Symmetry",
       "vsiAuthor": "Ian Stewart",
       "relevantPathsAI": [
-        "B.4",
+        "B.4.b",
         "C.1.c"
       ],
-      "rationaleAI": "Section B.4.b covers group theory (the mathematical formalization of symmetry) and C.1.c covers transformation geometry."
+      "rationaleAI": "Group theory as the mathematical formalization of symmetry, covering rotational symmetry and conjugacy classes, directly addresses groups as algebraic structures (B.4.b) and transformation geometry (C.1.c)."
     },
     {
       "vsiTitle": "Fractals",
       "vsiAuthor": "Kenneth Falconer",
       "relevantPathsAI": [
-        "C.4",
-        "F"
+        "C.6",
+        "D.1"
       ],
-      "rationaleAI": "Fractals relate to topology (F), the concept of dimension, and special curves in section C.4.e."
+      "rationaleAI": "Fractal geometry covering fractal dimension, self-similarity, and connections to Brownian motion relates to differential geometry (C.6) and real analysis origins (D.1)."
     },
     {
       "vsiTitle": "Chaos",
       "vsiAuthor": "Lenny Smith",
       "relevantPathsAI": [
-        "D.3"
+        "D.3",
+        "D.3.d"
       ],
-      "rationaleAI": "Section D.3.d covers dynamical systems on manifolds, and chaos theory is a key branch of nonlinear differential equations (D.3)."
+      "rationaleAI": "Chaos theory examining sensitive dependence on initial conditions, attractors, and deterministic dynamics relates to differential equations (D.3) and dynamical systems on manifolds (D.3.d)."
     },
     {
       "vsiTitle": "Logic",
       "vsiAuthor": "Graham Priest",
       "relevantPathsAI": [
-        "A",
-        "A.3"
+        "A"
       ],
-      "rationaleAI": "Set theory (A) is deeply connected to logic, and A.3.a-b discuss axiomatic foundations and Godel's theorem."
+      "rationaleAI": "Propositional and predicate logic with axioms and mathematical proofs connect broadly to set theory (A) through the logical foundations underlying set-theoretic reasoning."
     },
     {
       "vsiTitle": "Applied mathematics",
       "vsiAuthor": "Alain Goriely",
-      "relevantPathsAI": [],
-      "rationaleAI": "Many branches covered here (differential equations, Fourier analysis, vector/tensor analysis) have extensive applications bridging pure and applied mathematics."
+      "relevantPathsAI": [
+        "D.3",
+        "D.7"
+      ],
+      "rationaleAI": "Mathematical modeling techniques and computational approaches in applied mathematics connect to differential equations (D.3) and vector and tensor analysis (D.7)."
     },
     {
       "vsiTitle": "Mathematical finance",
       "vsiAuthor": "Mark H. A. Davis",
       "relevantPathsAI": [
-        "D",
         "D.6"
       ],
-      "rationaleAI": "Mathematical finance draws on probability theory (D.6), stochastic processes, and analysis (D) as major applications."
+      "rationaleAI": "Application of mathematical methods to financial problems including arbitrage pricing theory and risk management draws on probability theory (D.6)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

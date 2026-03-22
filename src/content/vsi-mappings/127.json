@@ -5,184 +5,219 @@
       "vsiTitle": "Magnetism",
       "vsiAuthor": "Stephen J. Blundell",
       "relevantPathsAI": [
+        "C",
         "C.1",
-        "C.5"
+        "C.2",
+        "C.2.a",
+        "C.3.d",
+        "C.4",
+        "C.5",
+        "C.5.c",
+        "C.5.c.i",
+        "C.5.c.ii",
+        "C.5.c.iii",
+        "C.5.c.vi",
+        "E.1.b"
       ],
-      "rationaleAI": "Core coverage of magnetic phenomena, magnetic materials (dia/para/ferro/antiferro/ferrimagnetism), atomic magnetism, and the relationship between electricity and magnetism (C.1-C.5)."
+      "rationaleAI": "Electromagnetic theory through Ampere, Faraday, and Maxwell covers magnetic effects of steady currents (C.2, C.2.a) and electromagnetic induction (C.4). Electron spin and quantum mechanical magnetic properties connect to atomic moments and magnetic resonance (C.3.d). The Earth's magnetic field relates to terrestrial magnetism (C.5.c.vi). Paramagnetism, diamagnetism, and ferromagnetism address classification of magnetic substances (C.5, C.5.c.i-iii). Maxwell's unification connects to electromagnetic theory (E.1.b)."
     },
     {
       "vsiTitle": "Michael Faraday",
       "vsiAuthor": "Frank A.J.L. James",
       "relevantPathsAI": [
-        "B",
-        "C.2",
-        "D"
+        "B.3.a",
+        "C.4",
+        "C.4.a",
+        "C.4.b",
+        "E.1",
+        "E.1.a",
+        "E.1.b"
       ],
-      "rationaleAI": "Directly covers Faraday's law of electromagnetic induction (B.3.a), the development of field theory (D), and the foundational link between electricity and magnetism (C.2)."
+      "rationaleAI": "Faraday's discovery of electromagnetic induction directly addresses Faraday's law (B.3.a) and magnetic effects of varying currents (C.4, C.4.a). His influence on Maxwell and Einstein connects to the development of electromagnetic radiation theory (E.1, E.1.a, E.1.b)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
       "relevantPathsAI": [
-        "E.2"
+        "E",
+        "E.1",
+        "E.1.a",
+        "E.1.b",
+        "E.2",
+        "E.2.a",
+        "E.2.b"
       ],
-      "rationaleAI": "Explains the electromagnetic nature of light, wave-particle duality of the photon (E.2.b), and quantum theory of radiation including Einstein's photoelectric effect (E.2.a)."
+      "rationaleAI": "Newton's particulate theory and Huygens's wave theory connect to the development of concepts about light (E.1.a). Recognition of light as electromagnetic radiation relates to Maxwell's equations (E.1.b). Wave-particle duality and quantum optics address the quantum theory of radiation (E.2), photoelectric effect (E.2.a), and wave-particle duality of the photon (E.2.b)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
       "relevantPathsAI": [
-        "E.1.c",
-        "E.3"
+        "E",
+        "E.1",
+        "E.1.b",
+        "E.1.c"
       ],
-      "rationaleAI": "Treats electromagnetic radiation, wave propagation, diffraction, and interference -- phenomena central to the electromagnetic spectrum (E.1.c) and transmission of radiation (E.3.b)."
+      "rationaleAI": "Electromagnetic radiation including visible light and wave properties connect to the classical theory of radiation (E.1) and Maxwell's equations (E.1.b). The electromagnetic spectrum directly addresses section E.1.c."
     },
     {
       "vsiTitle": "Quantum Theory",
       "vsiAuthor": "John Polkinghorne",
       "relevantPathsAI": [
-        "E.2"
+        "E.2",
+        "E.2.a",
+        "E.2.b",
+        "E.2.c",
+        "E.2.d"
       ],
-      "rationaleAI": "Addresses the quantum theory of radiation (E.2), including Planck's and Einstein's contributions to the photoelectric and Compton effects (E.2.a) and wave-particle duality of the photon (E.2.b)."
+      "rationaleAI": "Wave-particle duality and the uncertainty principle connect to the quantum theory of radiation (E.2) and wave-particle duality of the photon (E.2.b). Photoelectric effect evidence relates to E.2.a. Quantum field theory addresses interaction of radiation with atomic structures (E.2.c) and relation to quantum theory and relativity (E.2.d)."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
       "relevantPathsAI": [
+        "E.2.d",
         "F",
         "F.1"
       ],
-      "rationaleAI": "Directly relevant to relativistic electrodynamics (F) and the four-dimensional formulation of electromagnetic theory (F.1)."
+      "rationaleAI": "Special relativity's connection to the speed of light and mass-energy equivalence relates to the relation of electromagnetic radiation to relativity (E.2.d). General relativity and spacetime connect to relativistic electrodynamics (F) and four-dimensional notation (F.1)."
     },
     {
       "vsiTitle": "Superconductivity",
       "vsiAuthor": "Stephen J. Blundell",
       "relevantPathsAI": [
-        "B.2",
-        "C.5"
+        "B.2.b",
+        "C.5.c.iii"
       ],
-      "rationaleAI": "Explores electrical conduction mechanisms in metals (B.2.b), magnetic properties of superconducting materials (C.5), and electromagnetic effects in condensed matter."
+      "rationaleAI": "Zero electrical resistance relates to conduction of electricity in metals and semiconductors (B.2.b). The Meissner effect connects to ferromagnetism and related magnetic phenomena (C.5.c.iii)."
     },
     {
       "vsiTitle": "Condensed Matter Physics",
       "vsiAuthor": "Ross McKenzie",
       "relevantPathsAI": [
-        "B.2",
-        "C.5"
+        "B.2.b",
+        "C.5",
+        "C.5.c"
       ],
-      "rationaleAI": "Examines conduction of electricity in metals and semiconductors (B.2.b), magnetic phase transitions in solids (C.5), and superconductivity as an electromagnetic phenomenon."
+      "rationaleAI": "Ferromagnets and superconductors relate to conduction of electricity (B.2.b). Phase transitions in magnetic materials connect to properties of magnetic materials (C.5) and magnetism of matter (C.5.c)."
     },
     {
       "vsiTitle": "The History of Physics",
       "vsiAuthor": "J. L. Heilbron",
       "relevantPathsAI": [
-        "E.1"
+        "E.1.a"
       ],
-      "rationaleAI": "Traces the historical development of ideas about electricity, magnetism, and the nature of light (E.1.a), from Newton's corpuscular theory through Faraday's field concept to Maxwell's equations and Einstein's photon."
+      "rationaleAI": "2,500 years of physics history relates to the development of concepts concerning the nature of light (E.1.a)."
     },
     {
       "vsiTitle": "Physics",
       "vsiAuthor": "Sidney Perkowitz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides broad coverage of electrostatics, electrodynamics, electromagnetic radiation, and the relationship between force, matter, and electromagnetic fields (A-E)."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "E"
+      ],
+      "rationaleAI": "Electromagnetism broadly connects to static electric charge (A), moving charges (B), magnetism (C), and the electromagnetic field (E)."
     },
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
       "relevantPathsAI": [
-        "B"
+        "B.3.k",
+        "B.4.c"
       ],
-      "rationaleAI": "Details the principles of generation and transmission of AC single- and multiphase power (B.3.k), electricity grids, and practical electromagnetic induction applications."
+      "rationaleAI": "Electricity generation relates to AC power generation and transmission (B.3.k) and electromagnetic energy (B.4.c)."
     },
     {
       "vsiTitle": "Renewable Energy",
       "vsiAuthor": "Nick Jelley",
       "relevantPathsAI": [
-        "B.2",
-        "E.2",
-        "B.5",
-        "B"
+        "B.3.k",
+        "B.5.a"
       ],
-      "rationaleAI": "Addresses solar photovoltaics rooted in the photoelectric effect (B.2.d/E.2.a), battery electrochemistry (B.5.d), and electricity grids for AC power transmission (B.3.k)."
+      "rationaleAI": "Solar photovoltaics connect to piezoelectricity and photoelectric applications (B.5.a), while grid management relates to AC power (B.3.k)."
     },
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.e"
       ],
-      "rationaleAI": "Directly relevant to electricity in the atmosphere (A.1.e), including lightning, atmospheric electric phenomena, and the electromagnetic spectrum."
+      "rationaleAI": "Electromagnetic radiation in the atmosphere connects to electricity in the atmosphere (A.1.e)."
     },
     {
       "vsiTitle": "Nothing",
       "vsiAuthor": "Frank Close",
       "relevantPathsAI": [
-        "E.3"
+        "D",
+        "D.1",
+        "E.1.b",
+        "E.3.a"
       ],
-      "rationaleAI": "Probes electromagnetic fields in vacuum, Maxwell's unification of electricity and magnetism, and the nature of electromagnetic radiation in free space (E.3.b, D)."
+      "rationaleAI": "Maxwell's field theory and vacuum energy connect to field theory (D, D.1) and Maxwell's equations (E.1.b, E.3.a)."
     },
     {
       "vsiTitle": "Nuclear Physics",
       "vsiAuthor": "Frank Close",
       "relevantPathsAI": [
-        "C.3"
+        "B.2.d",
+        "E.2.a"
       ],
-      "rationaleAI": "Discusses nuclear magnetic moments and magnetic resonance (C.3.d), electron behavior, and quantum mechanical foundations of electromagnetic interactions."
+      "rationaleAI": "Electron discovery connects to electron emission (B.2.d). Particle physics relates to particle nature of radiation (E.2.a)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
       "relevantPathsAI": [
-        "C.3",
-        "B.5"
+        "B.2.b",
+        "C.3.d"
       ],
-      "rationaleAI": "Treats nuclear magnetic resonance spectroscopy (C.3.d), electrolysis and electro-osmosis (B.5.d), and electron behavior in chemical systems relevant to electrical conduction."
+      "rationaleAI": "NMR spectroscopy connects to magnetic resonance (C.3.d). Conduction mechanisms relate to B.2.b."
     },
     {
       "vsiTitle": "The Laws of Thermodynamics",
       "vsiAuthor": "Peter Atkins",
       "relevantPathsAI": [
-        "B.2.c",
-        "B.5.c"
+        "B.2.c"
       ],
-      "rationaleAI": "Directly relevant to thermoelectric effects (B.2.c) where electric energy transforms into thermal energy, and resistance heating (B.5.c)."
+      "rationaleAI": "Energy conversion connects to thermoelectric effects (B.2.c)."
     },
     {
       "vsiTitle": "Measurement",
       "vsiAuthor": "David J. Hand",
       "relevantPathsAI": [
-        "B.1",
-        "A.4"
+        "A.4",
+        "B.3.d"
       ],
-      "rationaleAI": "Addresses SI units and standardization relevant to definitions of electric quantities (B.1.a) and measurement of electrostatic forces and fields (A.4)."
+      "rationaleAI": "Measurement theory connects to electrostatic measurement (A.4) and AC measurement (B.3.d)."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
       "relevantPathsAI": [
-        "C.5.c",
-        "A.1"
+        "C.5.c.vi"
       ],
-      "rationaleAI": "Examines the Sun's magnetic field, sunspot cycles, and solar wind, directly relevant to terrestrial magnetism (C.5.c.vi) and electricity in the atmosphere (A.1.e)."
+      "rationaleAI": "Solar magnetic dynamics connect to terrestrial magnetism (C.5.c.vi)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
       "relevantPathsAI": [
-        "C.5.c"
+        "C.5.c.vi"
       ],
-      "rationaleAI": "Explains Earth's dynamo-generated magnetic field and solar wind interactions, directly relevant to terrestrial magnetism (C.5.c.vi)."
+      "rationaleAI": "Earth's magnetic field relates to terrestrial magnetism (C.5.c.vi)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
       "relevantPathsAI": [
-        "A.2",
-        "C.5",
-        "B.5"
+        "B.2.b",
+        "E.2.c"
       ],
-      "rationaleAI": "Analyzes chemical bonding, crystal lattice structures, and material properties relevant to dielectrics (A.2), magnetic materials (C.5), and piezoelectricity (B.5.a)."
+      "rationaleAI": "Metal conductivity connects to conduction mechanisms (B.2.b). X-ray fluorescence relates to radiation-matter interaction (E.2.c)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

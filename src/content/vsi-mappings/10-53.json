@@ -5,308 +5,343 @@
       "vsiTitle": "Presocratic Philosophy",
       "vsiAuthor": "Catherine Osborne",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.c"
+        "A.1.a",
+        "A.1.b",
+        "A.1.c",
+        "A.1.d"
       ],
-      "rationaleAI": "Section A.1 covers Pythagoreanism (A.1.a), the Sophists (A.1.b), Eleaticism (A.1.c), and Atomism (A.1.d)."
+      "rationaleAI": "Pythagoras (A.1.a), the Sophists (A.1.b), Parmenides and Eleaticism (A.1.c), and Democritus' Atomism (A.1.d) are all covered."
     },
     {
       "vsiTitle": "Plato",
       "vsiAuthor": "Julia Annas",
       "relevantPathsAI": [
-        "A.1",
-        "B.1"
+        "A.1.e",
+        "B.1",
+        "C.1"
       ],
-      "rationaleAI": "Section A.1.e covers Platonism as a major philosophical school, and B.1 discusses it as a metaphysical theory."
+      "rationaleAI": "Theory of Forms maps to Platonism (A.1.e), metaphysical theory (B.1), and conceptions of knowledge through Idealism (C.1)."
     },
     {
       "vsiTitle": "Aristotle",
       "vsiAuthor": "Jonathan Barnes",
       "relevantPathsAI": [
-        "A.1",
+        "A.1.f",
         "B.1"
       ],
-      "rationaleAI": "Section A.1.f covers Aristotelianism as a philosophical school, and B.1 discusses it as a metaphysical theory."
+      "rationaleAI": "Logic, metaphysics, and biology map to Aristotelianism (A.1.f) and metaphysical theory (B.1)."
     },
     {
       "vsiTitle": "Stoicism",
       "vsiAuthor": "Brad Inwood",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.g"
       ],
-      "rationaleAI": "Section A.1.g covers Stoicism as a major philosophical school in antiquity."
+      "rationaleAI": "Zeno, Cleanthes, and Chrysippus' doctrines map directly to Stoicism (A.1.g)."
     },
     {
       "vsiTitle": "Epicureanism",
       "vsiAuthor": "Catherine Wilson",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.h",
+        "A.2.d",
+        "B.1"
       ],
-      "rationaleAI": "Section A.1.h covers Epicureanism as a major philosophical school in antiquity."
+      "rationaleAI": "Epicurus' materialism maps to Epicureanism (A.1.h), Materialism (A.2.d), and Atomism (B.1)."
     },
     {
       "vsiTitle": "Scepticism",
       "vsiAuthor": "Duncan Pritchard",
       "relevantPathsAI": [
-        "A.1",
+        "A.1.i",
         "C.2"
       ],
-      "rationaleAI": "Section A.1.i covers Skepticism as a philosophical school, and C.2 discusses it as a theory of knowledge validity."
+      "rationaleAI": "Pyrrhonism maps to Skepticism (A.1.i) and validity of knowledge (C.2)."
     },
     {
       "vsiTitle": "Thomas Aquinas",
       "vsiAuthor": "Fergus Kerr",
       "relevantPathsAI": [
-        "A.1",
+        "A.1.j",
         "B.1"
       ],
-      "rationaleAI": "Section A.1.j covers Scholasticism, and B.1 lists Thomism as a type of metaphysical theory."
+      "rationaleAI": "Aquinas's synthesis maps to Scholasticism (A.1.j) and Thomism (B.1)."
     },
     {
       "vsiTitle": "Medieval Philosophy",
       "vsiAuthor": "John Marenbon",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.j",
+        "B.4"
       ],
-      "rationaleAI": "Section A.1.j covers Scholasticism as a philosophical school, encompassing major medieval thinkers."
+      "rationaleAI": "Scholastic traditions and mind-body problems map to Scholasticism (A.1.j) and mind-body views (B.4)."
     },
     {
       "vsiTitle": "Descartes",
       "vsiAuthor": "Tom Sorell",
       "relevantPathsAI": [
-        "A.2",
-        "B.1"
+        "A.2.a",
+        "A.2.c",
+        "B.1",
+        "B.4"
       ],
-      "rationaleAI": "Section A.2.a covers Cartesianism as a philosophical school, and B.1 lists it as a metaphysical theory."
+      "rationaleAI": "Methodological doubt and dualism map to Cartesianism (A.2.a), Rationalism (A.2.c), metaphysics (B.1), and dualism (B.4)."
     },
     {
       "vsiTitle": "Locke",
       "vsiAuthor": "John Dunn",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b",
+        "C.3"
       ],
-      "rationaleAI": "Section A.2.b covers Empiricism, to which Locke is a foundational contributor."
+      "rationaleAI": "Empiricist theory maps to Empiricism (A.2.b) and foundations of knowledge (C.3)."
     },
     {
       "vsiTitle": "Hume",
       "vsiAuthor": "James Anthony Harris",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b",
+        "C.2",
+        "C.3"
       ],
-      "rationaleAI": "Hume is central to Empiricism (A.2.b) and Skepticism, both major philosophical schools."
+      "rationaleAI": "Empiricism, skeptical challenge, and perception theories map to Empiricism (A.2.b), validity of knowledge (C.2), and foundations (C.3)."
     },
     {
       "vsiTitle": "Spinoza",
       "vsiAuthor": "Roger Scruton",
       "relevantPathsAI": [
-        "A.2.c"
+        "A.2.c",
+        "B.1",
+        "B.2"
       ],
-      "rationaleAI": "Section A.2.c covers Rationalism, to which Spinoza is a central contributor."
+      "rationaleAI": "Substance monism maps to Rationalism (A.2.c), metaphysical theory (B.1), and views of God (B.2)."
     },
     {
       "vsiTitle": "Leibniz",
       "vsiAuthor": "Maria Rosa Antognazza",
       "relevantPathsAI": [
-        "A.2.c"
+        "A.2.c",
+        "B.1"
       ],
-      "rationaleAI": "Section A.2.c covers Rationalism, to which Leibniz is a central contributor."
+      "rationaleAI": "Monadology and possible worlds map to Rationalism (A.2.c) and metaphysical theory (B.1)."
     },
     {
       "vsiTitle": "Kant",
       "vsiAuthor": "Roger Scruton",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.e",
+        "C.2"
       ],
-      "rationaleAI": "Section A.2.e covers Kantianism as a major philosophical school."
+      "rationaleAI": "Transcendental idealism maps to Kantianism (A.2.e) and validity of knowledge (C.2)."
     },
     {
       "vsiTitle": "Hegel",
       "vsiAuthor": "Peter Singer",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.f",
+        "A.2.g"
       ],
-      "rationaleAI": "Section A.2.g covers Hegelianism, and A.2.f covers Idealism to which Hegel is central."
+      "rationaleAI": "Absolute idealism and dialectics map to Idealism (A.2.f) and Hegelianism (A.2.g)."
     },
     {
       "vsiTitle": "Marx",
       "vsiAuthor": "Peter Singer",
       "relevantPathsAI": [
-        "A.2",
+        "A.2.j",
+        "A.2.d",
         "B.1"
       ],
-      "rationaleAI": "Section A.2.j covers Marxism, and B.1 lists dialectical Materialism as a metaphysical theory."
+      "rationaleAI": "Dialectical materialism maps to Marxism (A.2.j), Materialism (A.2.d), and metaphysical theory (B.1)."
     },
     {
       "vsiTitle": "Utilitarianism",
       "vsiAuthor": "Katarzyna de Lazari-Radek, Peter Singer",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.h"
       ],
-      "rationaleAI": "Section A.2.h covers Utilitarianism as a major philosophical school."
+      "rationaleAI": "Utilitarian theory maps directly to Utilitarianism (A.2.h)."
     },
     {
       "vsiTitle": "John Stuart Mill",
       "vsiAuthor": "Gregory Claeys",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b",
+        "A.2.h"
       ],
-      "rationaleAI": "Mill is central to Utilitarianism (A.2.h) and Empiricism (A.2.b)."
+      "rationaleAI": "Mill's contributions map to Empiricism (A.2.b) and Utilitarianism (A.2.h)."
     },
     {
       "vsiTitle": "Existentialism",
       "vsiAuthor": "Thomas Flynn",
       "relevantPathsAI": [
-        "A.2",
-        "B.3"
+        "A.2.n",
+        "B.3",
+        "D.2"
       ],
-      "rationaleAI": "Section A.2.n covers Existentialism, and B.3 discusses it as a conception of man."
+      "rationaleAI": "Authenticity and freedom map to Existentialism (A.2.n), conceptions of man (B.3), and deontological ethics (D.2)."
     },
     {
       "vsiTitle": "Analytic Philosophy",
       "vsiAuthor": "Michael Beaney",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.o"
       ],
-      "rationaleAI": "Section A.2.o covers Analytic and Linguistic philosophy as a major modern school."
+      "rationaleAI": "Logical analysis maps directly to Analytic and Linguistic philosophy (A.2.o)."
     },
     {
       "vsiTitle": "Continental philosophy",
       "vsiAuthor": "Simon Critchley",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.f",
+        "A.2.g",
+        "A.2.m",
+        "A.2.n"
       ],
-      "rationaleAI": "Encompasses Phenomenology (A.2.m), Existentialism (A.2.n), and Marxism (A.2.j)."
+      "rationaleAI": "German Idealism, phenomenology, existentialism map to Idealism (A.2.f), Hegelianism (A.2.g), Phenomenology (A.2.m), and Existentialism (A.2.n)."
     },
     {
       "vsiTitle": "German philosophy",
       "vsiAuthor": "Andrew Bowie",
       "relevantPathsAI": [
         "A.2.c",
-        "A.2"
+        "A.2.e",
+        "A.2.f"
       ],
-      "rationaleAI": "Spans Rationalism (A.2.c), Kantianism (A.2.e), Idealism (A.2.f), Hegelianism (A.2.g), and Phenomenology (A.2.m)."
+      "rationaleAI": "German idealism and rationalism map to Rationalism (A.2.c), Kantianism (A.2.e), and Idealism (A.2.f)."
     },
     {
       "vsiTitle": "French Philosophy",
       "vsiAuthor": "Stephen Gaukroger, Knox Peden",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.m",
+        "A.2.n"
       ],
-      "rationaleAI": "Encompasses Cartesianism (A.2.a), Existentialism (A.2.n), Positivism (A.2.i), and Phenomenology (A.2.m)."
+      "rationaleAI": "French existentialism and structuralism connect to Phenomenology (A.2.m) and Existentialism (A.2.n)."
     },
     {
       "vsiTitle": "Hobbes",
       "vsiAuthor": "Richard Tuck",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b",
+        "A.2.d"
       ],
-      "rationaleAI": "Hobbes is relevant to Materialism (A.2.d) and Empiricism (A.2.b)."
+      "rationaleAI": "Materialism and empiricism connect to Empiricism (A.2.b) and Materialism (A.2.d)."
     },
     {
       "vsiTitle": "Kierkegaard",
       "vsiAuthor": "Patrick Gardiner",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.n"
       ],
-      "rationaleAI": "Kierkegaard is foundational for Existentialism (A.2.n)."
+      "rationaleAI": "Subjectivity and individual choice map to Existentialism (A.2.n)."
     },
     {
       "vsiTitle": "Nietzsche",
       "vsiAuthor": "Michael Tanner",
       "relevantPathsAI": [
-        "B.3",
-        "D"
+        "A.2.n",
+        "D.2"
       ],
-      "rationaleAI": "Nietzsche challenges multiple philosophical schools and relates to theories of conduct (D) and conceptions of man (B.3)."
+      "rationaleAI": "Will to power and moral critique connect to Existentialism (A.2.n) and deontological theories (D.2)."
     },
     {
       "vsiTitle": "Schopenhauer",
       "vsiAuthor": "Christopher Janaway",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.f",
+        "B.1",
+        "B.4"
       ],
-      "rationaleAI": "Schopenhauer relates to Idealism (A.2.f) and the reaction against Rationalism."
+      "rationaleAI": "Metaphysics of will connects to Idealism (A.2.f), metaphysical theory (B.1), and mind-body (B.4)."
     },
     {
       "vsiTitle": "Heidegger",
       "vsiAuthor": "Michael Inwood",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.m",
+        "A.2.n",
+        "B.3"
       ],
-      "rationaleAI": "Heidegger relates to Phenomenology (A.2.m) and Existentialism (A.2.n)."
+      "rationaleAI": "Phenomenological method and Dasein map to Phenomenology (A.2.m), Existentialism (A.2.n), and conceptions of man (B.3)."
     },
     {
       "vsiTitle": "Wittgenstein",
       "vsiAuthor": "A. C. Grayling",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.i",
+        "A.2.o"
       ],
-      "rationaleAI": "Wittgenstein is central to Analytic and Linguistic philosophy (A.2.o) and Positivism/Logical Empiricism (A.2.i)."
+      "rationaleAI": "Tractatus connects to Logical Empiricism (A.2.i); Investigations to Analytic philosophy (A.2.o)."
     },
     {
       "vsiTitle": "Russell",
       "vsiAuthor": "A. C. Grayling",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.o",
+        "A.2.k"
       ],
-      "rationaleAI": "Russell is foundational in Analytic philosophy (A.2.o) and contributed to Realism (A.2.k) and Logical Empiricism (A.2.i)."
+      "rationaleAI": "Analytic philosophy maps to Analytic philosophy (A.2.o); perception views to Realism (A.2.k)."
     },
     {
       "vsiTitle": "Foucault",
       "vsiAuthor": "Gary Gutting",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.j",
+        "C.2"
       ],
-      "rationaleAI": "Foucault engages with Marxism (A.2.j) and Phenomenology (A.2.m)."
+      "rationaleAI": "Power-knowledge analysis connects to Marxism (A.2.j) and validity of knowledge (C.2)."
     },
     {
       "vsiTitle": "Derrida",
       "vsiAuthor": "Simon Glendinning",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.m",
+        "C.4"
       ],
-      "rationaleAI": "Derrida's deconstruction engages with and challenges Phenomenology (A.2.m) and other schools."
+      "rationaleAI": "Deconstruction connects to Phenomenology (A.2.m) and status of the universal (C.4)."
     },
     {
       "vsiTitle": "Habermas",
       "vsiAuthor": "Gordon Finlayson",
       "relevantPathsAI": [
-        "A.2",
+        "A.2.j",
         "A.2.l"
       ],
-      "rationaleAI": "Habermas engages with Marxism (A.2.j), Pragmatism (A.2.l), and Positivism (A.2.i)."
+      "rationaleAI": "Frankfurt School tradition connects to Marxism (A.2.j); rational consensus to Pragmatism (A.2.l)."
     },
     {
       "vsiTitle": "Theodor W. Adorno",
       "vsiAuthor": "Andrew Bowie",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.j"
       ],
-      "rationaleAI": "Adorno's critical theory engages with Marxism (A.2.j), Idealism (A.2.f), and Positivism (A.2.i)."
+      "rationaleAI": "Frankfurt School critical theory maps to Marxism (A.2.j)."
     },
     {
       "vsiTitle": "Critical theory",
       "vsiAuthor": "Stephen Eric Bronner",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.j"
       ],
-      "rationaleAI": "Critical theory emerged from Marxism (A.2.j) and engages with multiple philosophical schools."
+      "rationaleAI": "Frankfurt School alienation and reification concepts map to Marxism (A.2.j)."
     },
     {
       "vsiTitle": "Postmodernism",
       "vsiAuthor": "Christopher Butler",
       "relevantPathsAI": [
-        "A.2"
+        "C.2",
+        "C.5"
       ],
-      "rationaleAI": "Postmodernism challenges Realism (A.2.k), Positivism (A.2.i), and other traditional positions."
+      "rationaleAI": "Anti-foundationalism connects to validity of knowledge (C.2) and epistemic status of theories (C.5)."
     },
     {
       "vsiTitle": "Poststructuralism",
       "vsiAuthor": "Catherine Belsey",
       "relevantPathsAI": [
-        "A.2"
+        "C.2",
+        "C.4"
       ],
-      "rationaleAI": "Poststructuralism extends beyond Phenomenology (A.2.m) and Linguistic philosophy (A.2.o)."
+      "rationaleAI": "Challenge to fixed meanings connects to validity of knowledge (C.2) and status of the universal (C.4)."
     },
     {
       "vsiTitle": "Humanism",
@@ -315,7 +350,7 @@
         "B.2",
         "B.3"
       ],
-      "rationaleAI": "Section B.2 lists humanism as a view concerning God, and B.3 lists it as a conception of man."
+      "rationaleAI": "Secular humanism connects to views of God (B.2) and conceptions of man (B.3)."
     },
     {
       "vsiTitle": "Atheism",
@@ -323,15 +358,16 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Section B.2 covers atheism as a view concerning the existence of God."
+      "rationaleAI": "Rejection of theistic belief maps to atheism (B.2)."
     },
     {
       "vsiTitle": "Agnosticism",
       "vsiAuthor": "Robin Le Poidevin",
       "relevantPathsAI": [
-        "B.2"
+        "B.2",
+        "C.2"
       ],
-      "rationaleAI": "Section B.2 covers agnosticism as a view concerning the existence and knowledge of God."
+      "rationaleAI": "Epistemological position maps to agnosticism (B.2) and validity of knowledge (C.2)."
     },
     {
       "vsiTitle": "God",
@@ -339,7 +375,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Section B.2 covers different views on God including theism, Deism, fideism, and pantheism."
+      "rationaleAI": "Conceptions of God map to views concerning God's existence and attributes (B.2)."
     },
     {
       "vsiTitle": "Theology",
@@ -347,21 +383,27 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Section B.2 covers theism, Deism, and other views concerning God's existence and attributes."
+      "rationaleAI": "Systematic study of the divine maps to views concerning God (B.2)."
     },
     {
       "vsiTitle": "Knowledge",
       "vsiAuthor": "Jennifer Nagel",
-      "relevantPathsAI": [],
-      "rationaleAI": "Section C covers theories of thought and knowledge including different conceptions of objects, validity, and sources."
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Epistemology maps to object of knowledge (C.1), validity (C.2), and foundations (C.3)."
     },
     {
       "vsiTitle": "Reality",
       "vsiAuthor": "Jan Westerhoff",
       "relevantPathsAI": [
+        "B.1",
+        "B.4",
         "C.1"
       ],
-      "rationaleAI": "Section C.1 covers conceptions of the object of knowledge including Phenomenalism, Idealism, and Realism."
+      "rationaleAI": "Nature of reality maps to metaphysical theories (B.1), mind-body (B.4), and object of knowledge (C.1)."
     },
     {
       "vsiTitle": "Metaphysics",
@@ -369,7 +411,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Section B.1 covers different types of metaphysical theory from Platonism through Organismic dynamism."
+      "rationaleAI": "Core metaphysical problems map to different types of metaphysical theory (B.1)."
     },
     {
       "vsiTitle": "Consciousness",
@@ -377,98 +419,112 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Section B.4 covers views on mind and body including Materialism, dualism, and immaterialism."
+      "rationaleAI": "Physicalism versus dualism debate maps to mind-body views (B.4)."
     },
     {
       "vsiTitle": "Free will",
       "vsiAuthor": "Thomas Pink",
       "relevantPathsAI": [
         "B.4",
-        "D"
+        "D.2"
       ],
-      "rationaleAI": "Free will connects to theories of conduct (D) and the mind-body problem (B.4)."
+      "rationaleAI": "Determinism and moral responsibility connect to mind-body (B.4) and deontological ethics (D.2)."
     },
     {
       "vsiTitle": "Objectivity",
       "vsiAuthor": "Stephen Gaukroger",
       "relevantPathsAI": [
         "C.1",
-        "C.2"
+        "C.5"
       ],
-      "rationaleAI": "Objectivity relates to Realism (C.1), Kantianism (C.2), and Positivism (C.2)."
+      "rationaleAI": "Objectivity connects to object of knowledge through Realism (C.1) and epistemic status of theories (C.5)."
     },
     {
       "vsiTitle": "Hannah Arendt",
       "vsiAuthor": "Dana Villa",
       "relevantPathsAI": [
-        "A.2",
-        "A.2.l"
+        "A.2.n",
+        "B.3"
       ],
-      "rationaleAI": "Arendt engages with Existentialism (A.2.n), Pragmatism (A.2.l), and political philosophy doctrines."
+      "rationaleAI": "Political action and thinking faculties connect to Existentialism (A.2.n) and conceptions of man (B.3)."
     },
     {
       "vsiTitle": "Simone Weil",
       "vsiAuthor": "A. Rebecca Rozelle-Stone",
       "relevantPathsAI": [
-        "A.1",
-        "D"
+        "A.2.n",
+        "B.3"
       ],
-      "rationaleAI": "Weil engages with Platonism (A.1.e), mysticism, and ethical doctrines (D)."
+      "rationaleAI": "Attention, labor, and justice connect to existentialist themes (A.2.n) and human conceptions (B.3)."
     },
     {
       "vsiTitle": "Augustine",
       "vsiAuthor": "Henry Chadwick",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.j",
+        "B.2"
       ],
-      "rationaleAI": "Augustine is relevant to Platonism (A.1.e) and Scholasticism (A.1.j)."
+      "rationaleAI": "Neoplatonist integration connects to Scholasticism (A.1.j) and views of God (B.2)."
     },
     {
       "vsiTitle": "Rousseau",
       "vsiAuthor": "Robert Wokler",
       "relevantPathsAI": [
-        "D"
+        "A.2.c",
+        "B.3"
       ],
-      "rationaleAI": "Rousseau relates to theories of conduct (D) and the Enlightenment critique of Rationalism."
+      "rationaleAI": "Natural goodness connects to Rationalism (A.2.c) and conceptions of man (B.3)."
     },
     {
       "vsiTitle": "Indian philosophy",
       "vsiAuthor": "Sue Hamilton",
-      "relevantPathsAI": [],
-      "rationaleAI": "Indian philosophy provides alternative metaphysical and epistemological frameworks relevant to B and C."
+      "relevantPathsAI": [
+        "B.1",
+        "C.1"
+      ],
+      "rationaleAI": "Indian metaphysics connects to metaphysical theories (B.1) and object of knowledge (C.1)."
     },
     {
-      "vsiTitle": "Ibn S\u012bn\u0101 (Avicenna)",
+      "vsiTitle": "Ibn Sīnā (Avicenna)",
       "vsiAuthor": "Peter Adamson",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.j",
+        "B.1",
+        "B.2"
       ],
-      "rationaleAI": "Avicenna contributed to Scholasticism (A.1.j) and engaged with Aristotelianism (A.1.f) in the Islamic tradition."
+      "rationaleAI": "Metaphysics of existence connects to Scholasticism (A.1.j), metaphysical theory (B.1), and views of God (B.2)."
     },
     {
       "vsiTitle": "Moses Maimonides",
       "vsiAuthor": "Ross Brann",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.j",
+        "B.2"
       ],
-      "rationaleAI": "Maimonides contributed to Scholasticism (A.1.j) through his rationalist methodology within Jewish philosophy."
+      "rationaleAI": "Rationalist integration connects to Scholasticism (A.1.j) and views of God (B.2)."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
       "vsiAuthor": "Peter Adamson",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.j",
+        "B.2"
       ],
-      "rationaleAI": "Islamic philosophy engaged with Aristotelianism (A.1.f) and Neoplatonism, contributing to Scholasticism (A.1.j)."
+      "rationaleAI": "Aristotelian influences connect to Scholasticism (A.1.j) and views of God (B.2)."
     },
     {
       "vsiTitle": "Ancient philosophy",
       "vsiAuthor": "Julia Annas",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.e",
+        "A.1.f",
+        "A.1.g",
+        "A.1.h",
+        "A.1.i"
       ],
-      "rationaleAI": "Covers the ancient schools listed in A.1 including Platonism, Aristotelianism, Stoicism, Epicureanism, and Skepticism."
+      "rationaleAI": "Ancient philosophy spans Platonism (A.1.e), Aristotelianism (A.1.f), Stoicism (A.1.g), Epicureanism (A.1.h), and Scepticism (A.1.i)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

@@ -5,91 +5,119 @@
       "vsiTitle": "Weather",
       "vsiAuthor": "Storm Dunlop",
       "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.4",
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.4",
         "C",
+        "C.1",
         "C.2",
-        "C.4"
+        "C.3",
+        "C.4",
+        "E.1",
+        "E.1.b",
+        "E.1.c"
       ],
-      "rationaleAI": "Directly addresses clouds, precipitation, storms, El Nino, numerical weather prediction (C.2), weather forecasting (C), and chaos theory's role in predictability limits (C.4.b)."
+      "rationaleAI": "Atmospheric properties, storms, forecasting, and climate factors are comprehensively addressed."
     },
     {
       "vsiTitle": "Climate",
       "vsiAuthor": "Mark Maslin",
       "relevantPathsAI": [
-        "A.4.c",
-        "E.1"
+        "E",
+        "E.1",
+        "E.1.a",
+        "E.1.b",
+        "E.1.d",
+        "E.1.e",
+        "E.2",
+        "E.2.c",
+        "E.4",
+        "E.6"
       ],
-      "rationaleAI": "Explores climate types, temperature patterns, atmospheric pressure, rainfall distribution (A.4.c), and the factors that generate climate (E.1)."
+      "rationaleAI": "Climate system, greenhouse effect, human effects (E.2.c), and climatic change (E.6) are addressed."
     },
     {
       "vsiTitle": "Climate change",
       "vsiAuthor": "Mark Maslin",
       "relevantPathsAI": [
-        "E.6",
-        "E.2.c"
+        "E.2.c",
+        "E.6"
       ],
-      "rationaleAI": "Directly addresses climatic change (E.6), greenhouse warming from CO2 buildup (E.2.c), extreme weather events, and evidence for historical climate shifts."
+      "rationaleAI": "Anthropogenic warming addresses human effects (E.2.c) and climatic change (E.6)."
     },
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
       "relevantPathsAI": [
-        "E.1"
+        "A.2",
+        "E.1.a",
+        "E.1.a.ii"
       ],
-      "rationaleAI": "Examines atmospheric moisture, the greenhouse effect (E.1.a.ii), and the electromagnetic spectrum relevant to solar radiation absorption that drives climate (E.1.a)."
+      "rationaleAI": "Greenhouse effect connects to solar radiation (E.1.a) and infrared trapping (E.1.a.ii)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
       "relevantPathsAI": [
-        "E.1",
-        "E.2.c"
+        "E.1.a",
+        "E.2.c",
+        "E.6"
       ],
-      "rationaleAI": "Addresses climate sensitivity, the greenhouse effect (E.1.a.ii), solar energy input (E.1.a), and carbon dioxide's role in climate change (E.2.c)."
+      "rationaleAI": "Carbon cycling connects to solar radiation (E.1.a), human effects (E.2.c), and change (E.6)."
     },
     {
       "vsiTitle": "Geophysical and Climate Hazards",
       "vsiAuthor": "Bill McGuire",
       "relevantPathsAI": [
-        "B.4",
-        "B.1",
+        "B",
+        "B.2",
         "B.3",
-        "A.4"
+        "B.4",
+        "E.2.c"
       ],
-      "rationaleAI": "Directly addresses hurricanes/typhoons (B.4), storms (B.1-B.3), floods from extreme precipitation (A.4.d), and wildfire linked to climate."
+      "rationaleAI": "Extreme weather and human effects are addressed through storms (B) and E.2.c."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
       "relevantPathsAI": [
-        "E.1"
+        "E.1.a",
+        "E.1.a.i"
       ],
-      "rationaleAI": "Solar radiation variability and the solar constant (E.1.a.i) are directly relevant to solar radiation as a primary factor generating climate."
+      "rationaleAI": "Solar dynamics connect to radiation (E.1.a) and variability (E.1.a.i)."
     },
     {
       "vsiTitle": "Chaos",
       "vsiAuthor": "Lenny Smith",
       "relevantPathsAI": [
-        "C.4",
-        "C.2"
+        "C.4.b"
       ],
-      "rationaleAI": "Chaos theory and sensitivity to initial conditions are directly relevant to limits of weather predictability (C.4.b) and numerical weather modeling (C.2)."
+      "rationaleAI": "Sensitive dependence addresses predictability limits (C.4.b)."
     },
     {
       "vsiTitle": "The Ice Age",
       "vsiAuthor": "Jamie Woodward",
       "relevantPathsAI": [
-        "E.6"
+        "E.6",
+        "E.6.a"
       ],
-      "rationaleAI": "Glacial-interglacial climate cycles and ice core evidence are directly relevant to climatic change evidence from glaciations and lake/sea level fluctuations (E.6.a)."
+      "rationaleAI": "Quaternary climate change addresses evidence (E.6, E.6.a)."
     },
     {
       "vsiTitle": "Deserts",
       "vsiAuthor": "Nick Middleton",
       "relevantPathsAI": [
         "E.3",
-        "E.2"
+        "E.5"
       ],
-      "rationaleAI": "Arid climates, rain shadow effects, and evaporation are relevant to climatic types and their distribution (E.3) and local terrain effects (E.2.b)."
+      "rationaleAI": "Desert climates connect to types (E.3) and microclimates (E.5)."
     },
     {
       "vsiTitle": "Anthropocene",
@@ -97,25 +125,26 @@
       "relevantPathsAI": [
         "E.2.c"
       ],
-      "rationaleAI": "Human-driven climate change from fossil fuel burning and land use change is directly relevant to human effects on global climate (E.2.c)."
+      "rationaleAI": "Human impact addresses effects on climate (E.2.c)."
     },
     {
       "vsiTitle": "Mountains",
       "vsiAuthor": "Martin F. Price",
       "relevantPathsAI": [
-        "E.2"
+        "E.2.b",
+        "E.5"
       ],
-      "rationaleAI": "Mountain weather systems, orographic precipitation effects, and local terrain modification of climate (E.2.b) including altitude-driven climatic variation."
+      "rationaleAI": "Mountain weather connects to local effects (E.2.b) and microclimates (E.5)."
     },
     {
       "vsiTitle": "Biogeography",
       "vsiAuthor": "Mark V. Lomolino",
       "relevantPathsAI": [
-        "E.4",
-        "E.3"
+        "E.4"
       ],
-      "rationaleAI": "The relationship between climate zones and the distribution of life forms is relevant to influences of climate on terrestrial life (E.4) and climatic types (E.3)."
+      "rationaleAI": "Biodiversity distribution connects to climate influences on life (E.4)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

@@ -4,47 +4,62 @@
     {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers Confucianism including Confucius, the Analects, Neo-Confucianism, and its role as both religion and philosophy, the primary subject of 825.B."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.1.b",
+        "B.1.c",
+        "B.1.d",
+        "B.1.g",
+        "B.1.h",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Confucianism addresses its history (B.1) including Confucius (B.1.b), the school (B.1.c), state orthodoxy (B.1.d), Neo-Confucianism (B.1.g), modern challenges (B.1.h), literature (B.2), and as religion/philosophy (B.3)."
     },
     {
       "vsiTitle": "Chinese literature",
       "vsiAuthor": "Sabina Knight",
       "relevantPathsAI": [
+        "A.5",
         "B.2",
         "C.2"
       ],
-      "rationaleAI": "Chinese literature is deeply shaped by Confucian and Taoist thought, relevant to 825.B.2 on Confucian literature and 825.C.2 on Taoist literature."
+      "rationaleAI": "Chinese literary culture relates to religious symbolism (A.5), Confucian literature (B.2), and Taoist literature (C.2)."
     },
     {
       "vsiTitle": "Modern China",
       "vsiAuthor": "Rana Mitter",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.d",
+        "B.1.h"
       ],
-      "rationaleAI": "Covers modern China including the effects of nationalism and secularism on traditional religious systems, relevant to 825.A.2.d on the modern period."
+      "rationaleAI": "Modern China relates to effects of secularism on Chinese religion (A.2.d) and modern Confucian challenges (B.1.h)."
     },
     {
       "vsiTitle": "Modern Japan",
       "vsiAuthor": "Christopher Goto-Jones",
       "relevantPathsAI": [
-        "E.1.c"
+        "E.1.d"
       ],
-      "rationaleAI": "Covers modern Japan including Meiji Restoration, nationalism, and new religious movements, relevant to 825.E.1.c-d on the Tokugawa and Meiji eras."
+      "rationaleAI": "Modern Japan relates to the Meiji era in Japanese religion (E.1.d)."
     },
     {
       "vsiTitle": "Korea",
       "vsiAuthor": "Michael J. Seth",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers Korean history and culture including its religious traditions, directly relevant to 825.D on the religions of Korea."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Korean history relates to religions of Korea (D)."
     },
     {
       "vsiTitle": "Samurai",
       "vsiAuthor": "Michael Wert",
       "relevantPathsAI": [
-        "E.1"
+        "E.1.b",
+        "E.1.c"
       ],
-      "rationaleAI": "Samurai culture was intertwined with Zen Buddhism, Confucianism, and Shinto, relevant to 825.E.1.b-c on Japanese religious developments."
+      "rationaleAI": "Samurai relate to medieval Japanese religion (E.1.b) and the Tokugawa era (E.1.c)."
     },
     {
       "vsiTitle": "Japanese Literature",
@@ -52,7 +67,7 @@
       "relevantPathsAI": [
         "E.2.c"
       ],
-      "rationaleAI": "Japanese literature is influenced by Shinto and Buddhist themes including Zen aesthetics, relevant to 825.E.2.c on Shinto literature and mythology."
+      "rationaleAI": "Japanese literature relates to Shinto literature (E.2.c)."
     },
     {
       "vsiTitle": "Buddhism",
@@ -60,7 +75,7 @@
       "relevantPathsAI": [
         "A.2.c"
       ],
-      "rationaleAI": "Buddhism is a major religion in East Asia that deeply influenced Chinese, Korean, and Japanese religion, relevant to 825.A.2.c on the dominance of the Buddhist Way."
+      "rationaleAI": "Buddhism's East Asian spread relates to the Buddhist Way in Chinese religion (A.2.c)."
     },
     {
       "vsiTitle": "Tibetan Buddhism",
@@ -68,16 +83,15 @@
       "relevantPathsAI": [
         "A.2.c"
       ],
-      "rationaleAI": "Tibetan Buddhism represents a distinctive tradition that influenced Chinese religious development, relevant to 825.A.2.c."
+      "rationaleAI": "Tibetan Buddhism's Chinese spread relates to Buddhist dominance (A.2.c)."
     },
     {
       "vsiTitle": "World Mythology",
       "vsiAuthor": "David A. Leeming",
       "relevantPathsAI": [
-        "A.6",
-        "E.2.c"
+        "A.6"
       ],
-      "rationaleAI": "Covers mythological traditions including Chinese and Japanese creation myths, relevant to 825.A.6 on Chinese mythology and 825.E.2.c on Shinto mythology."
+      "rationaleAI": "Comparative mythology relates to Chinese mythology (A.6)."
     },
     {
       "vsiTitle": "The Silk Road",
@@ -85,33 +99,34 @@
       "relevantPathsAI": [
         "A.2.c"
       ],
-      "rationaleAI": "The Silk Road was the conduit for the transmission of Buddhism and other religions to China, relevant to 825.A.2.c."
+      "rationaleAI": "Silk Road facilitated Buddhist transmission to China (A.2.c)."
     },
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
       "relevantPathsAI": [
         "A.4",
-        "E.2"
+        "E.2.e"
       ],
-      "rationaleAI": "Covers ritual practices relevant to Chinese ritual traditions and Shinto rituals, relevant to 825.A.4 and 825.E.2.e on ritual practices."
+      "rationaleAI": "Ritual relates to Chinese (A.4) and Shinto (E.2.e) practices."
     },
     {
       "vsiTitle": "Secularism",
       "vsiAuthor": "Andrew Copson",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.d"
       ],
-      "rationaleAI": "Covers secularism and its effects on religious systems, relevant to 825.A.2.d on the effects of nationalism and secularism in China."
+      "rationaleAI": "Secularism relates to modern Chinese religion (A.2.d)."
     },
     {
       "vsiTitle": "Atheism",
       "vsiAuthor": "Julian Baggini",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.d"
       ],
-      "rationaleAI": "Addresses atheism including its presence in East Asian traditions, relevant to 825.A.2.d on the modern period and secularist challenges to religion."
+      "rationaleAI": "East Asian atheism question relates to modern Chinese religion (A.2.d)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

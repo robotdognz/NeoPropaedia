@@ -5,75 +5,87 @@
       "vsiTitle": "African History",
       "vsiAuthor": "John Parker, Richard Rathbone",
       "relevantPathsAI": [
-        "D"
+        "D",
+        "D.1",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5"
       ],
-      "rationaleAI": "Covers the European partition of Africa, the Berlin West Africa Conference, and establishment of European colonies across sub-Saharan Africa (D)."
+      "rationaleAI": "Colonial conquest connects to European partition (D.1) and colonial establishments across Africa (D.2-D.5)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "The scramble for African colonies, Ottoman decline, and European penetration of Egypt and the Maghrib exemplify imperial expansion (A-D)."
+      "relevantPathsAI": [
+        "A",
+        "D",
+        "D.1"
+      ],
+      "rationaleAI": "Ottoman and European empires connect to Ottoman decline (A) and the scramble for Africa (D.1)."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
       "relevantPathsAI": [
-        "B.1",
+        "B.1.b",
         "D.2",
-        "D.4"
+        "D.4",
+        "D.5"
       ],
-      "rationaleAI": "British rule in Egypt (1882-1922), the Anglo-Egyptian Condominium in Sudan, and British colonial activity in East and West Africa (B.1, D.2-D.4)."
+      "rationaleAI": "British administration connects to Egypt (B.1.b), West Africa (D.2), East Africa (D.4), and Central Africa (D.5)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
       "relevantPathsAI": [
-        "A.1",
+        "A.1.c",
         "B.3"
       ],
-      "rationaleAI": "Arab nationalism from c. 1850 to 1920, Turkish nationalism under Abdulhamid II, and Egyptian nationalism are major themes (A.1.c, B.3)."
+      "rationaleAI": "Turkish nationalism (A.1.c) and Arab nationalism (B.3.a)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
       "relevantPathsAI": [
-        "B.3",
-        "D.3"
+        "A",
+        "B"
       ],
-      "rationaleAI": "The Ottoman Empire, the Mahdist movement in Sudan, and Islamic dimensions of Arab nationalism are significant topics (A, B.3, D.3.a)."
+      "rationaleAI": "Ottoman governance (A) and Arabian Peninsula developments (B)."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
       "relevantPathsAI": [
-        "B.3"
+        "A",
+        "B.3.a"
       ],
-      "rationaleAI": "The decline of the Ottoman Empire, the Tanzimat reforms, and development of Arab nationalism are central episodes in Islamic history (A, B.3)."
+      "rationaleAI": "Ottoman decline (A) and Arab nationalism (B.3.a)."
     },
     {
-      "vsiTitle": "The Palestinian\u2013Israeli Conflict",
+      "vsiTitle": "The Palestinian–Israeli Conflict",
       "vsiAuthor": "Martin Bunton",
       "relevantPathsAI": [
-        "B.3"
+        "B.3.b"
       ],
-      "rationaleAI": "The emergence of Zionism, Jewish immigration to Palestine after 1880, and the beginning of conflict with Arab nationalists (B.3.b)."
+      "rationaleAI": "Zionism and Balfour Declaration connect to B.3.b."
     },
     {
       "vsiTitle": "Zionism",
       "vsiAuthor": "Michael Stanislawski",
       "relevantPathsAI": [
-        "B.3"
+        "B.3.b"
       ],
-      "rationaleAI": "The origins of the Zionist movement, Jewish immigration to Palestine, and WWI developments including the Balfour Declaration (B.3.b)."
+      "rationaleAI": "Zionist movement directly addresses B.3.b."
     },
     {
       "vsiTitle": "Iran",
       "vsiAuthor": "Ali Ansari",
       "relevantPathsAI": [
+        "C",
         "C.1"
       ],
-      "rationaleAI": "Iran under the Qajar dynasty from 1779 to 1925, including European penetration by British and Russians (C.1)."
+      "rationaleAI": "Iranian political culture addresses Iran under the Qajar dynasty (C.1)."
     },
     {
       "vsiTitle": "Decolonization",
@@ -81,102 +93,99 @@
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "The establishment of European colonial regimes in Africa and development of indirect rule set the stage for later decolonization (D)."
+      "rationaleAI": "Colonial empires connect to European partition (D)."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
       "relevantPathsAI": [
+        "B.2",
         "D"
       ],
-      "rationaleAI": "The European partition of Africa and colonial administration provide the historical foundation that postcolonial theory critiques (D)."
+      "rationaleAI": "Colonial exploitation connects to North Africa (B.2) and African colonies (D)."
     },
     {
       "vsiTitle": "Modern France",
       "vsiAuthor": "Vanessa R. Schwartz",
       "relevantPathsAI": [
-        "B.2",
-        "D.5.c"
+        "B.2"
       ],
-      "rationaleAI": "French colonial expansion into Algeria, Tunisia, Morocco, and sub-Saharan Africa reflects France's imperial ambitions (B.2, D.5.c)."
+      "rationaleAI": "French colonialism connects to Algeria, Tunisia, and Morocco (B.2)."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
-        "D.1"
+        "B.3.a"
       ],
-      "rationaleAI": "The Berlin West Africa Conference, European diplomatic rivalry over African colonies, and WWI settlements involve diplomatic history (D.1)."
+      "rationaleAI": "WWI diplomacy connects to Arab nationalism (B.3.a)."
     },
     {
       "vsiTitle": "Antisemitism",
       "vsiAuthor": "Steven Beller",
       "relevantPathsAI": [
-        "B.3"
+        "B.3.b"
       ],
-      "rationaleAI": "The origins of the Zionist movement were partly a response to European antisemitism, providing context for Jewish immigration to Palestine (B.3.b)."
+      "rationaleAI": "Antisemitism connects to the emergence of Zionism (B.3.b)."
     },
     {
       "vsiTitle": "African Politics",
       "vsiAuthor": "Ian Taylor",
       "relevantPathsAI": [
-        "D.2",
-        "D.5"
+        "D"
       ],
-      "rationaleAI": "Establishment of European colonial regimes, development of indirect rule, and consolidation of Ethiopian central government shaped African politics (D.2-D.5)."
+      "rationaleAI": "Colonial legacies connect to European partition (D)."
     },
     {
       "vsiTitle": "African Religions",
       "vsiAuthor": "Jacob K. Olupona",
       "relevantPathsAI": [
-        "D.2",
-        "D.4"
+        "D.2.b"
       ],
-      "rationaleAI": "The interaction between European Christian missionaries and indigenous African religious practices during the colonial period (D.2.b, D.4)."
+      "rationaleAI": "Christianity's impact connects to missionaries in colonial regimes (D.2.b)."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
       "relevantPathsAI": [
-        "D.5"
+        "D.5.a"
       ],
-      "rationaleAI": "European exploratory activities in the 19th century, including Livingstone and Stanley's expeditions in Central Africa (D.5.a)."
+      "rationaleAI": "African exploration connects to Livingstone and Stanley (D.5.a)."
     },
     {
       "vsiTitle": "The First World War",
       "vsiAuthor": "Michael Howard",
       "relevantPathsAI": [
-        "A.1",
-        "B.3"
+        "A.1.c",
+        "B.3.a"
       ],
-      "rationaleAI": "WWI's impact on the Ottoman Empire, the postwar settlement for Arab lands, and British encouragement of Arab nationalism (A.1.c, B.3.a)."
+      "rationaleAI": "WWI connects to the Ottoman Empire (A.1.c) and Arab nationalism in the war (B.3.a)."
     },
     {
       "vsiTitle": "Russian History",
       "vsiAuthor": "Geoffrey Hosking",
       "relevantPathsAI": [
-        "A.1",
-        "C.1"
+        "A.1"
       ],
-      "rationaleAI": "Russian intrusions in Turkey, conflicts with the Ottoman Empire, and Russian penetration of Iran are covered (A.1, C.1)."
+      "rationaleAI": "Russian involvement connects to Ottoman affairs (A.1)."
     },
     {
       "vsiTitle": "Global Islam",
       "vsiAuthor": "Nile Green",
       "relevantPathsAI": [
-        "B.3",
-        "D.3"
+        "B.3.a"
       ],
-      "rationaleAI": "The Mahdist movement in Sudan, Ottoman pan-Islamism, and the emergence of Arab nationalism have global Islamic dimensions (A, B.3, D.3.a)."
+      "rationaleAI": "Islamic communication connects to Arab nationalism (B.3.a)."
     },
     {
       "vsiTitle": "Terrorism",
       "vsiAuthor": "Charles Townshend",
       "relevantPathsAI": [
-        "A.1"
+        "D.3.a"
       ],
-      "rationaleAI": "The Young Turk movement and revolutionary nationalism in the Ottoman Empire involved political violence and revolutionary activity (A.1.c)."
+      "rationaleAI": "Revolutionary violence connects tangentially to the Mahdist movement (D.3.a)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

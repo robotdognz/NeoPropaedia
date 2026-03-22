@@ -5,40 +5,52 @@
       "vsiTitle": "Australia",
       "vsiAuthor": "Kenneth Morgan",
       "relevantPathsAI": [
-        "B"
+        "A",
+        "A.2",
+        "A.3",
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.4"
       ],
-      "rationaleAI": "Directly addresses Australian history including British colonization, self-government, federation, the commonwealth, and the White Australia policy (B)."
+      "rationaleAI": "British settlement of New South Wales in 1788, colonial expansion through Van Diemen's Land and the Swan River Colony (B.1, B.2), federation and the White Australia policy (B.3), and Aboriginal land rights including the Mabo decision (B.4). Colonial foundations and democratic institutional development directly address European colonial settlement and self-government (A.3)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "British colonial settlement and governance in Australia, New Zealand, and across Oceania are central to outline A-C."
+      "relevantPathsAI": [
+        "A",
+        "A.3"
+      ],
+      "rationaleAI": "British, Dutch, and French colonial empires and theories of colonialism and decolonization provide context for European exploration and colonial settlement in Oceania (A.3), though the treatment is global rather than specifically focused on Australia and Oceania."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
-      "relevantPathsAI": [],
-      "rationaleAI": "British colonization of Australia and New Zealand, colonial government, and establishment of the Australian commonwealth connect to outline B-C."
+      "relevantPathsAI": [
+        "A.3",
+        "B.2"
+      ],
+      "rationaleAI": "British imperial administration and the East India Company's global reach encompass British colonization of Australia (B.2), and colonial governance structures relate to European colonial settlement and government in Oceania (A.3)."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
       "relevantPathsAI": [
-        "A.3",
-        "B.4",
-        "C.2"
+        "A",
+        "A.3"
       ],
-      "rationaleAI": "The effects of colonization on indigenous peoples of Oceania and colonial-settler dynamics inform A.3, B.4, and C.2."
+      "rationaleAI": "Experiences of indigenous and colonized peoples across the world, including challenges to Western-centric historical perspectives, relate to the effects of colonization on the diverse peoples of Oceania (A) and colonial settlement patterns (A.3)."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
       "relevantPathsAI": [
-        "A.3",
+        "A.2",
         "B.1"
       ],
-      "rationaleAI": "European exploration of Australia, Melanesia, Micronesia, and Polynesia -- including Cook's voyages -- is foundational to A.3 and B.1."
+      "rationaleAI": "Portuguese navigation, Cook's Enlightenment-era scientific voyages, and global exploration history directly address European exploration by sea (B.1) and the prehistory and geography of Oceania encountered by explorers (A.2)."
     },
     {
       "vsiTitle": "Nationalism",
@@ -46,16 +58,15 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "The federation movement in Australia (1860-1901) and the development of national identity are central to B.2."
+      "rationaleAI": "Nationalism as political ideology and the formation of nation-states connects to the federation movement and establishment of the Australian commonwealth (B.2), though Australia is not a primary case study."
     },
     {
       "vsiTitle": "International Migration",
       "vsiAuthor": "Khalid Koser",
       "relevantPathsAI": [
-        "B.2",
         "B.3"
       ],
-      "rationaleAI": "The White Australia immigration policy and patterns of British colonial migration shaped the demographics discussed in B.2-B.3."
+      "rationaleAI": "Immigration policy and cross-border movement connect to Australia's White Australia immigration policy (B.3), though the treatment is global rather than Australia-specific."
     },
     {
       "vsiTitle": "The First World War",
@@ -63,25 +74,24 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Australia's cooperation with Britain in World War I is relevant to outline B.3."
+      "rationaleAI": "Australia's cooperation with Britain in World War I (B.3) is contextualized by coverage of the Allied war effort, the Western Front, and the Paris Peace Settlement."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
       "relevantPathsAI": [
+        "A.1",
         "A.2"
       ],
-      "rationaleAI": "The prehistory of Australia, Melanesia, Micronesia, and Polynesia provides deep context for A.2."
+      "rationaleAI": "Archaeological methods for reconstructing human pasts, including sites like Easter Island, connect to the historiographic problems (A.1) and prehistory of Australia, Melanesia, Micronesia, and Polynesia (A.2)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
       "relevantPathsAI": [
-        "A.2",
-        "B.4",
-        "C.2"
+        "A.2"
       ],
-      "rationaleAI": "Ethnography of the diverse peoples of Oceania, Aboriginal populations, and Maori people illuminates A.2, B.4, and C.2."
+      "rationaleAI": "Ethnographic study of human societies, cultural relativism, and fieldwork among non-Western peoples connect to the ethnography of Australia, Melanesia, Micronesia, and Polynesia (A.2)."
     },
     {
       "vsiTitle": "Geography",
@@ -89,8 +99,9 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "The geography of Australia, Melanesia, Micronesia, and Polynesia provides a foundation for understanding regional development (A.2)."
+      "rationaleAI": "Physical and human geography covering climate, biogeography, and spatial analysis connect to the geography of Australia, Melanesia, Micronesia, and Polynesia (A.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

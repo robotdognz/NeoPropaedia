@@ -4,39 +4,54 @@
     {
       "vsiTitle": "African History",
       "vsiAuthor": "John Parker, Richard Rathbone",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the broader context of Central African history including the Bantu-speaking peoples and the Kongo, Luba, and Lunda kingdoms."
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "African history connects to Central African geography (A) and Bantu states (B)."
     },
     {
       "vsiTitle": "African Politics",
       "vsiAuthor": "Ian Taylor",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B2 on the development of Bantu states and their political structures from c. 1400."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Political systems connect to Bantu states (B.2)."
     },
     {
       "vsiTitle": "African Religions",
       "vsiAuthor": "Jacob K. Olupona",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the religious and cultural traditions of the Bantu-speaking peoples discussed in subsection B."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Indigenous traditions connect to Central African civilizations (A)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1 on the Stone Age origins of Central African cultures and archaeological evidence."
+      "relevantPathsAI": [
+        "A",
+        "B.1"
+      ],
+      "rationaleAI": "Archaeological methods connect to sources (A) and Stone Age origins (B.1)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1 on the origins of Central African cultures in the Stone Age and the emergence of Bantu-speaking peoples."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Prehistoric development connects to Stone Age origins (B.1)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the broader patterns of state formation in Central Africa including the Kongo, Luba, and Lunda kingdoms."
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Political formations connect to Bantu kingdoms (B.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

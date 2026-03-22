@@ -5,9 +5,10 @@
       "vsiTitle": "The Treaty of Versailles",
       "vsiAuthor": "Michael S. Neiberg",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.1.b"
       ],
-      "rationaleAI": "Examines the Paris Peace Conference aftermath, the establishment of the League of Nations, and enforcement crises directly discussed in A.1.b."
+      "rationaleAI": "Diplomatic history of the 1919 Treaty of Versailles, competing national interests, and the precarious post-war settlement directly address the Paris Peace Conference (A.1.b), establishment of the League of Nations, and the immediate postwar problems (A.1)."
     },
     {
       "vsiTitle": "The First World War",
@@ -15,54 +16,66 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Provides essential context for the post-WWI diplomatic landscape, the Locarno agreements, and the peace settlement problems in A.1-2."
+      "rationaleAI": "Causes, conduct, and consequences of World War I including the Paris Peace Settlement and the legacy of German resentment directly provide context for the immediate postwar problems (A.1) and the diplomatic isolation that followed."
     },
     {
       "vsiTitle": "The Great Depression and The New Deal",
       "vsiAuthor": "Eric Rauchway",
       "relevantPathsAI": [
-        "A.4"
+        "A.4.b",
+        "A.4.c"
       ],
-      "rationaleAI": "Traces the Great Depression's collapse of the world market and the New Deal policy response in the U.S. discussed in A.4.b-c."
+      "rationaleAI": "The Great Depression, collapse of financial markets, and Roosevelt's New Deal programs directly address the economic and political impact of the 1930s depression (A.4.b) and the New Deal policy in the U.S. (A.4.c)."
     },
     {
       "vsiTitle": "The Spanish Civil War",
       "vsiAuthor": "Helen Graham",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b"
       ],
-      "rationaleAI": "Directly addresses the Popular Front and Spanish Civil War (1936-39) including German and Italian intervention discussed in A.3.b."
+      "rationaleAI": "The Spanish Civil War (1936-1939), Mussolini's intervention, and Franco's alignment with fascism directly address the Popular Front and the Spanish Civil War (A.3.b)."
     },
     {
       "vsiTitle": "Fascism",
       "vsiAuthor": "Kevin Passmore",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b",
+        "A.4.c",
+        "C.1.b"
       ],
-      "rationaleAI": "Traces the rise of fascism from Mussolini's Italian aggression against Ethiopia to the formation of the Axis alliance discussed in A.3-4 and B."
+      "rationaleAI": "Fascism in Mussolini's Italy and Hitler's Germany, far-right movements, and mass mobilization directly address Italian aggression against Ethiopia (A.3.b), Nazi Germany's establishment and rearmament (A.4.c), and ideologies in World War II (C.1.b)."
     },
     {
       "vsiTitle": "Nazi Germany",
       "vsiAuthor": "Jane Caplan",
       "relevantPathsAI": [
-        "A.4.c"
+        "A.4.c",
+        "B.1",
+        "C.1.b.i"
       ],
-      "rationaleAI": "Directly addresses the establishment of the Third Reich, rearmament-based economic recovery, and Germany's alignment with Italy and Japan in A.4.c."
+      "rationaleAI": "Hitler's consolidation of power, territorial expansion, and the Nazi regime directly address establishment of Nazi Germany and economic recovery based on rearmament (A.4.c), German conquest of Poland and France (B.1), and the Nazi-Soviet pact (C.1.b.i)."
     },
     {
       "vsiTitle": "World War II",
       "vsiAuthor": "Gerhard L. Weinberg",
-      "relevantPathsAI": [],
-      "rationaleAI": "Comprehensive treatment of WWII including German conquests, the Pacific war, Allied strategy, and Axis defeat discussed throughout B."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.4",
+        "B.5",
+        "B.6"
+      ],
+      "rationaleAI": "Comprehensive coverage of World War II from German invasion of Poland through Allied victory addresses all aspects of the war section (B): German conquests (B.1), war in Asia and the Pacific (B.2), war in Europe and North Africa (B.3), Axis Powers (B.4), Allied leadership and diplomacy (B.5), and military technology (B.6)."
     },
     {
       "vsiTitle": "Aerial Warfare",
       "vsiAuthor": "Frank Ledwidge",
       "relevantPathsAI": [
-        "B.1",
         "B.6"
       ],
-      "rationaleAI": "Examines developments in military aviation including the Battle of Britain and strategic bombing relevant to B.1 and B.6."
+      "rationaleAI": "Military history of aerial warfare covering both World Wars addresses the burgeoning of military technology including developments in aircraft (B.6)."
     },
     {
       "vsiTitle": "War and Technology",
@@ -70,30 +83,40 @@
       "relevantPathsAI": [
         "B.6"
       ],
-      "rationaleAI": "Directly addresses the burgeoning of military technology including communications, naval vessels, aircraft, missiles, and atomic bombs in B.6."
+      "rationaleAI": "Co-evolution of weapons systems and military tactics, including nuclear weapons and information warfare, directly addresses the burgeoning of military technology (B.6) including communications devices, weapons, missiles, and atomic bombs."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
         "B.6",
-        "C.2"
+        "C.2.a.i",
+        "C.2.f.viii"
       ],
-      "rationaleAI": "Atomic and hydrogen bombs, the balance of terror, France as a nuclear power, and the arms buildup are all discussed in B.6, C.2.a, and C.2.f."
+      "rationaleAI": "Scientific development of atomic and hydrogen bombs, the Hiroshima and Nagasaki bombings, Cold War arms race, and deterrence theory directly address military technology developments (B.6), atomic and hydrogen bombs (C.2.a.i), and the problem of nuclear energy and balance of terror (C.2.f.viii)."
     },
     {
       "vsiTitle": "The Cold War",
       "vsiAuthor": "Robert J. McMahon",
       "relevantPathsAI": [
-        "C.2"
+        "C.2",
+        "C.2.c",
+        "C.2.d",
+        "C.2.f",
+        "C.3",
+        "C.3.a"
       ],
-      "rationaleAI": "Directly addresses the Iron Curtain, Berlin blockade, NATO formation, containment, the Cuban Missile Crisis, detente, and the end of the Cold War in C.2-3."
+      "rationaleAI": "Origins in post-war Europe, NATO formation, Vietnam War, superpower rivalry, nuclear deterrence, and proxy wars directly address the postwar years (C.2), beginnings of the Cold War (C.2.c), the continuing Cold War (C.2.f), and the period since 1957 (C.3) including decolonization, detente, and resolution of the German problem."
     },
     {
       "vsiTitle": "The Soviet Union",
       "vsiAuthor": "Stephen Lovell",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces Soviet diplomatic isolation, the Nazi-Soviet pact, Soviet expansion into eastern Europe, de-Stalinization, and USSR disintegration across A-C."
+      "relevantPathsAI": [
+        "A.4.c",
+        "C.2.c.i",
+        "C.2.f.iv"
+      ],
+      "rationaleAI": "Soviet history from revolution through Cold War rivalry addresses War Communism and the New Economic Policy (A.4.c), consolidation of Soviet power in eastern Europe and the Iron Curtain (C.2.c.i), and de-Stalinization (C.2.f.iv)."
     },
     {
       "vsiTitle": "The United Nations",
@@ -106,25 +129,30 @@
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces diplomatic history from the Treaty of Versailles through Cold War negotiations and detente, relevant throughout A-C."
+      "relevantPathsAI": [
+        "A.1.b",
+        "B.5",
+        "C.1"
+      ],
+      "rationaleAI": "Diplomatic history from Versailles through wartime summitry (Stalin and Churchill) to the Iraq War directly addresses post-Paris Peace Conference diplomacy (A.1.b), Allied wartime leadership and diplomacy (B.5), and international relations before and during World War II (C.1)."
     },
     {
       "vsiTitle": "The European Union",
       "vsiAuthor": "John Pinder, Simon Usherwood",
       "relevantPathsAI": [
-        "C.3"
+        "C.3.b.ii"
       ],
-      "rationaleAI": "Examines European integration movements and economic recovery in western Europe discussed in C.3.b.ii."
+      "rationaleAI": "EU institutional structure, evolution from the European Coal and Steel Community, single market, and enlargement directly address integration movements in western Europe (C.3.b.ii)."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
       "relevantPathsAI": [
         "A.3.c",
-        "C.3"
+        "C.2.d.i",
+        "C.3.a.ii"
       ],
-      "rationaleAI": "Explores decolonization, demands for self-determination among subject peoples, and the emergence of new states in A.3.c and C.3.a.ii."
+      "rationaleAI": "Transition from colonial empires to independent nation-states, anti-colonial activism, and Nehru as independence leader address colonial empires and demands for self-determination (A.3.c), colonial territories of Asia (C.2.d.i), and decolonization (C.3.a.ii)."
     },
     {
       "vsiTitle": "The Palestinian–Israeli Conflict",
@@ -139,119 +167,138 @@
       "vsiTitle": "The Iraq Wars",
       "vsiAuthor": "Samuel Helfont",
       "relevantPathsAI": [
-        "C.3.c"
+        "C.3.c.ii"
       ],
-      "rationaleAI": "Examines the Iran-Iraq War and Persian Gulf wars directly discussed in C.3.c.ii."
+      "rationaleAI": "The 1991 Gulf War, 2003 invasion, and anti-ISIS campaign directly address the Persian Gulf wars (C.3.c.ii) and Middle Eastern conflict."
     },
     {
       "vsiTitle": "Communism",
       "vsiAuthor": "Leslie Holmes",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores Soviet expansion, consolidation of communist power in eastern Europe, and the ideological dimension of the Cold War throughout C."
+      "relevantPathsAI": [
+        "A.4.c",
+        "C.2.c",
+        "C.2.d.ii",
+        "C.3.a.iii"
+      ],
+      "rationaleAI": "Communism's global spread from Russia through China, Eastern Europe, Cuba, and Southeast Asia addresses War Communism and the Soviet New Economic Policy (A.4.c), Soviet consolidation in eastern Europe (C.2.c), civil war in China and communist rule (C.2.d.ii), and the Soviet Union and national liberation (C.3.a.iii)."
     },
     {
       "vsiTitle": "Terrorism",
       "vsiAuthor": "Charles Townshend",
       "relevantPathsAI": [
-        "C.3.c"
+        "C.3.c.iv"
       ],
-      "rationaleAI": "International terrorism as a post-Cold War area of conflict is directly discussed in C.3.c.iv."
+      "rationaleAI": "Terrorism as revolutionary violence, religious extremism, the September 2001 attacks, and ISIS directly address international terrorism (C.3.c.iv)."
     },
     {
       "vsiTitle": "Modern Japan",
       "vsiAuthor": "Christopher Goto-Jones",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a",
+        "B.2"
       ],
-      "rationaleAI": "Examines Japanese militarism, the Greater East Asia Co-prosperity Sphere, and Japan's role in the Pacific war discussed in A.3.a."
+      "rationaleAI": "Japan's militarism, World War II involvement, and Cold War alignment address the rise of the militarists in Japan and the Greater East Asia Co-prosperity Sphere (A.3.a) and the war in Asia and the Pacific (B.2)."
     },
     {
       "vsiTitle": "Modern China",
       "vsiAuthor": "Rana Mitter",
       "relevantPathsAI": [
-        "A.3",
-        "C.2"
+        "A.3.a",
+        "C.2.d.ii",
+        "C.3.a.viii"
       ],
-      "rationaleAI": "Addresses civil conflict in China and communist rule relevant to A.3.a (Manchuria, civil war) and C.2.d (Korean War context)."
+      "rationaleAI": "Modern China from revolution through economic reform addresses civil conflict in China and Japanese seizure of Manchuria (A.3.a), civil war in China and communist rule (C.2.d.ii), and Sino-Soviet relations (C.3.a.viii)."
     },
     {
       "vsiTitle": "Mao",
       "vsiAuthor": "Delia Davin",
       "relevantPathsAI": [
-        "C.2",
-        "C.3"
+        "C.2.d.ii"
       ],
-      "rationaleAI": "Explores Chinese communist rule and Sino-Soviet relations relevant to C.2.d.ii and C.3.a.viii."
+      "rationaleAI": "Mao Zedong's leadership of the Chinese Communist Party, revolution, Great Leap Forward, and Cultural Revolution directly address civil war in China and communist rule (C.2.d.ii)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.c",
+        "C.3.a.iv"
       ],
-      "rationaleAI": "Nationalist movements drove demands for self-determination among colonial subject peoples in A.3.c and the postwar period."
+      "rationaleAI": "Nationalism as self-determination ideology connects to increased demands for self-determination among subject peoples (A.3.c) and the new states and nonalignment (C.3.a.iv)."
     },
     {
       "vsiTitle": "International security",
       "vsiAuthor": "Christopher S. Browning",
       "relevantPathsAI": [
-        "C.2"
+        "C.2.f",
+        "C.3.a"
       ],
-      "rationaleAI": "Examines NATO, Cold War security architecture, the balance of terror, and post-Cold War security challenges in C.2-3."
+      "rationaleAI": "Nuclear weapons proliferation, NATO, state security, Cold War legacy, and the Iraq War address the continuing Cold War (C.2.f) and the Great Powers and the world since 1957 (C.3.a)."
     },
     {
       "vsiTitle": "International Relations",
       "vsiAuthor": "Paul Wilkinson, Christian Reus-Smit",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses the international system, state sovereignty, and institutions relevant to the section's broad treatment of diplomacy and war since 1920."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "International relations as a discipline examining sovereignty, global political change, and theoretical frameworks provides broad context for the entire international relations section (C)."
     },
     {
       "vsiTitle": "Concentration Camps",
       "vsiAuthor": "Dan Stone",
-      "relevantPathsAI": [],
-      "rationaleAI": "The Holocaust and concentration camp system were a central feature of WWII discussed in B."
+      "relevantPathsAI": [
+        "B.4",
+        "C.2.c.i"
+      ],
+      "rationaleAI": "Concentration camps under the Third Reich and the Soviet Gulag connect to the Axis Powers' leadership and political systems (B.4) and Soviet consolidation of power in eastern Europe (C.2.c.i)."
     },
     {
       "vsiTitle": "Military Strategy",
       "vsiAuthor": "Antulio Joseph Echevarria",
       "relevantPathsAI": [
-        "B.4"
+        "B.4",
+        "B.5"
       ],
-      "rationaleAI": "Analyzes strategic plans, goals, and tactical procedures of the warring powers discussed in B.4-5."
+      "rationaleAI": "Military strategy including annihilation, attrition, and deterrence connects to the strategic plans and tactical procedures of the Axis Powers (B.4) and Allied forces (B.5)."
     },
     {
       "vsiTitle": "Modern War",
       "vsiAuthor": "Richard English",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the evolution of modern warfare from the Spanish Civil War through WWII and Cold War conflicts including Korea and Vietnam."
+      "relevantPathsAI": [
+        "A.3.b",
+        "B",
+        "C.2.f",
+        "C.3.c.i"
+      ],
+      "rationaleAI": "Warfare from the modern period covering the Spanish Civil War, World War II, the Cold War, and guerrilla tactics addresses the Spanish Civil War (A.3.b), World War II (B), the continuing Cold War (C.2.f), and Southeast Asia's Indochina War (C.3.c.i)."
     },
     {
       "vsiTitle": "Civil Wars",
       "vsiAuthor": "Monica Duffy Toft",
       "relevantPathsAI": [
-        "A.3",
-        "C.2",
         "C.3.c"
       ],
-      "rationaleAI": "Examines civil wars including the Spanish Civil War, Chinese civil war, and sub-Saharan African civil conflicts in A.3.b, C.2.d, and C.3.c.iii."
+      "rationaleAI": "Intrastate armed conflicts, their causes and transnational dimensions connect to areas of conflict including Southeast Asia, the Middle East, and sub-Saharan Africa (C.3.c)."
     },
     {
       "vsiTitle": "Postwar Europe",
       "vsiAuthor": "Richard Bessel",
       "relevantPathsAI": [
-        "C.2",
-        "C.3"
+        "C.2.b",
+        "C.2.c",
+        "C.3.b"
       ],
-      "rationaleAI": "Explores postwar European recovery, Cold War division, and the end of European empires relevant to C.2 and C.3.b."
+      "rationaleAI": "European reconstruction, Cold War division, and decolonization address reconstruction and European political instability (C.2.b), beginnings of the Cold War (C.2.c), and peace in postwar Europe and integration movements (C.3.b)."
     },
     {
       "vsiTitle": "Authoritarianism",
       "vsiAuthor": "James Loxton",
       "relevantPathsAI": [
-        "A.1",
-        "C.3"
+        "A.1.a",
+        "C.2.c.i",
+        "C.3.b.iii"
       ],
-      "rationaleAI": "Examines dictatorships in interwar central and eastern Europe and Soviet-style authoritarian regimes discussed in A.1.a and C.3.b.iii."
+      "rationaleAI": "Authoritarian regimes, military and single-party types, and democratization address dictatorships in new nations of central and eastern Europe (A.1.a), Soviet consolidation (C.2.c.i), and eastern Europe under Soviet imperialism (C.3.b.iii)."
     },
     {
       "vsiTitle": "Refugees",
@@ -259,30 +306,34 @@
       "relevantPathsAI": [
         "C.3.c"
       ],
-      "rationaleAI": "Massive displacement during WWII and post-colonial conflicts, including in Sub-Saharan Africa, is discussed in B and C.3.c.iii."
+      "rationaleAI": "Forced migration and refugee crises caused by war and political oppression connect to the areas of conflict (C.3.c) in Southeast Asia, the Middle East, and sub-Saharan Africa."
     },
     {
       "vsiTitle": "Iran",
       "vsiAuthor": "Ali Ansari",
       "relevantPathsAI": [
-        "C.3.c"
+        "C.2.e.ii",
+        "C.3.c.ii"
       ],
-      "rationaleAI": "Iran's role in Middle East conflicts, including the Iran-Iraq War, is discussed in C.3.c.ii."
+      "rationaleAI": "Iranian civilization from ancient Persia through the 1979 Islamic Revolution, Cold War geopolitics, and relations with major powers address the Iranian case (C.2.e.ii) and the Iran-Iraq War (C.3.c.ii)."
     },
     {
       "vsiTitle": "Geopolitics",
       "vsiAuthor": "Klaus Dodds",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores geopolitical dynamics of Cold War spheres of influence and post-Cold War reconfiguration throughout C."
+      "relevantPathsAI": [
+        "C.2.f",
+        "C.3.a"
+      ],
+      "rationaleAI": "Geopolitics as strategic analysis of geographic factors shaping political power, Cold War strategy, and the Global War on Terror connect to the continuing Cold War (C.2.f) and the Great Powers and the world since 1957 (C.3.a)."
     },
     {
       "vsiTitle": "Peace",
       "vsiAuthor": "Oliver P. Richmond",
       "relevantPathsAI": [
-        "A.2",
-        "C.3"
+        "A.1.b",
+        "C.3.a.ix"
       ],
-      "rationaleAI": "Explores peacekeeping, the League of Nations, the Kellogg-Briand agreement, and the Helsinki conference discussed in A.2 and C.3.a.x."
+      "rationaleAI": "Peace as concept and practice, peacekeeping operations, and the UN Security Council's role connect to the establishment of the League of Nations (A.1.b) and peaceful coexistence and detente (C.3.a.ix)."
     },
     {
       "vsiTitle": "Humanitarianism",
@@ -290,8 +341,9 @@
       "relevantPathsAI": [
         "C.3.c"
       ],
-      "rationaleAI": "Addresses humanitarian intervention, refugees, and peacebuilding relevant to international movements and post-Cold War conflicts in C.3.c."
+      "rationaleAI": "Modern humanitarianism covering responses to conflicts, disasters, and refugee crises connects to the areas of conflict (C.3.c) in Southeast Asia, the Middle East, and sub-Saharan Africa where humanitarian interventions have been prominent."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

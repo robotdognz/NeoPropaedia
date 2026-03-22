@@ -5,110 +5,124 @@
       "vsiTitle": "Aesthetics",
       "vsiAuthor": "Bence Nanay",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "A.1",
+        "A.3"
       ],
-      "rationaleAI": "Directly addresses aesthetic experience, apprehension, appreciation, and taste -- the core of the section's treatment of experiencing artworks (A)."
+      "rationaleAI": "Aesthetics examining art, beauty, taste, and aesthetic experience directly addresses the aesthetic experience (A), influences affecting apprehension of works of art (A.1), and the appreciation of works of art (A.3)."
     },
     {
       "vsiTitle": "Art Theory",
       "vsiAuthor": "Cynthia Freeland",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "A.2",
+        "B",
+        "B.1"
       ],
-      "rationaleAI": "Covers criteria of evaluation including aesthetic, formal, and social criteria, and the practice of art criticism (B.1, B.2)."
+      "rationaleAI": "Art theory examining the interpretation of arts from classical aesthetics to contemporary practice addresses interpretation of works of art (A.2). Institutional definitions and postmodern discourse address the criticism of works of art (B) and diverse criteria of evaluation (B.1)."
     },
     {
       "vsiTitle": "Beauty",
       "vsiAuthor": "Roger Scruton",
       "relevantPathsAI": [
+        "A",
         "A.3",
         "B.1"
       ],
-      "rationaleAI": "Explores aesthetic criteria for evaluating art and the philosophical basis of taste, relevant to appreciation and evaluation (A.3, B.1)."
+      "rationaleAI": "Philosophical investigation of beauty as a universal value addresses the aesthetic experience (A) and appreciation of works of art (A.3). Arguments about the rationality of aesthetic judgment address diverse criteria of evaluation (B.1)."
     },
     {
       "vsiTitle": "Hermeneutics",
       "vsiAuthor": "Jens Zimmermann",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.2.a"
       ],
-      "rationaleAI": "Directly addresses interpretation of meaning in texts and artworks, central to the section's treatment of interpretation and meaning in art (A.2)."
+      "rationaleAI": "Theory and practice of interpretation spanning textual and cultural communication directly addresses the interpretation of works of art (A.2) and meaning in art (A.2.a)."
     },
     {
       "vsiTitle": "Literary Theory",
       "vsiAuthor": "Jonathan Culler",
       "relevantPathsAI": [
-        "B.2"
+        "A.2",
+        "B",
+        "B.2.d"
       ],
-      "rationaleAI": "Covers critical methods -- analytical, interpretive, and descriptive -- as applied to literary works, and diverse critical approaches (B.2.b, B.2.d)."
+      "rationaleAI": "Literary theory analyzing text and meaning through structuralism and reader-response theory addresses interpretation of works of art (A.2). Systematic theoretical frameworks address the practice of criticism (B) and critical approaches to the arts (B.2.d)."
     },
     {
       "vsiTitle": "Art history",
       "vsiAuthor": "Dana Arnold",
       "relevantPathsAI": [
-        "C"
+        "C",
+        "C.1",
+        "C.2"
       ],
-      "rationaleAI": "Addresses scholarship in the arts and its relation to other humanistic disciplines including history and archaeology (C)."
+      "rationaleAI": "Art history as a discipline studying visual arts development addresses scholarship in the arts (C), resources and methods of scholarship (C.1), and the relation of scholarship to other humanistic disciplines including history and archaeology (C.2)."
     },
     {
       "vsiTitle": "Myth",
       "vsiAuthor": "Robert A. Segal",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b"
       ],
-      "rationaleAI": "Directly relevant to symbol and myth in the arts as aspects of meaning and interpretation (A.2.b)."
+      "rationaleAI": "Myth studied across anthropology, psychology, and literary criticism using structuralist and psychoanalytic approaches directly addresses symbol and myth in the arts (A.2.b)."
     },
     {
       "vsiTitle": "World Mythology",
       "vsiAuthor": "David A. Leeming",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b"
       ],
-      "rationaleAI": "Covers mythological archetypes and symbols across cultures as they appear in artistic traditions (A.2.b)."
+      "rationaleAI": "Comparative world mythology examining universal motifs including deities, creation, and the hero directly addresses symbol and myth in the arts (A.2.b)."
     },
     {
       "vsiTitle": "Critical theory",
       "vsiAuthor": "Stephen Eric Bronner",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "B",
+        "B.2.d",
+        "D"
       ],
-      "rationaleAI": "Addresses evaluation criteria related to social, moral, and political significance, and the Frankfurt School's critical approach to art (B.1, B.2.d)."
+      "rationaleAI": "Critical theory covering the culture industry and alienation addresses the criticism of works of art (B), critical approaches to the arts (B.2.d), and the interaction of arts with social institutions (D)."
     },
     {
       "vsiTitle": "Barthes",
       "vsiAuthor": "Jonathan Culler",
       "relevantPathsAI": [
         "A.2",
-        "B.2"
+        "B",
+        "B.2.d"
       ],
-      "rationaleAI": "Barthes's semiotic and structural analysis of cultural texts is a major critical method for interpreting meaning in art (A.2.a, B.2.b)."
+      "rationaleAI": "Barthes's semiology and textual theory transforming cultural study addresses interpretation of works of art (A.2). The death of the author and pleasure of the text address critical approaches to the arts (B.2.d)."
     },
     {
       "vsiTitle": "Poststructuralism",
       "vsiAuthor": "Catherine Belsey",
       "relevantPathsAI": [
-        "B.2"
+        "A.2",
+        "B.2.d"
       ],
-      "rationaleAI": "Covers deconstructive and poststructuralist critical approaches to interpreting texts and artworks (B.2.d)."
+      "rationaleAI": "Poststructuralism challenging fixed meanings and stable identities addresses interpretation of works of art (A.2) and critical approaches to the arts (B.2.d)."
     },
     {
       "vsiTitle": "Theodor W. Adorno",
       "vsiAuthor": "Andrew Bowie",
       "relevantPathsAI": [
-        "B.1",
-        "D.1"
+        "B.2.d",
+        "D"
       ],
-      "rationaleAI": "Adorno's aesthetic theory addresses art's social functions and the culture industry, relevant to criticism criteria and the interaction of art with social institutions (B.1, D.1)."
+      "rationaleAI": "Adorno's cultural criticism and analysis of capitalism's effects on music and arts addresses critical approaches to the arts (B.2.d) and the interaction of arts with social and economic institutions (D)."
     },
     {
       "vsiTitle": "Contemporary art",
       "vsiAuthor": "Julian Stallabrass",
       "relevantPathsAI": [
-        "G.1"
+        "E",
+        "E.1",
+        "E.3"
       ],
-      "rationaleAI": "Addresses the art market, art world institutions (museums, biennials), and the economics of contemporary art (E, G.1)."
+      "rationaleAI": "Contemporary art covering art market dynamics, museum branding, and commodification addresses the economics of art (E), factors affecting economic value (E.1), and the art market (E.3)."
     },
     {
       "vsiTitle": "Intellectual property",
@@ -117,7 +131,7 @@
         "E.4",
         "E.5"
       ],
-      "rationaleAI": "Directly covers copyright, piracy, and protection of artists' rights -- central to remuneration, rights, and fraudulence in the arts (E.4, E.5)."
+      "rationaleAI": "IP law covering copyright and creators' rights addresses remuneration of artists and protection of their rights (E.4). Digital technology challenges relate to fraudulence including piracy and plagiarism (E.5)."
     },
     {
       "vsiTitle": "Free speech",
@@ -125,33 +139,33 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Directly relevant to social control of art through censorship and regulation (D.2)."
+      "rationaleAI": "Free speech covering censorship, hate speech regulation, and digital censorship directly addresses social control of art including censorship and related regulation (D.2)."
     },
     {
       "vsiTitle": "Journalism",
       "vsiAuthor": "Ian Hargreaves",
       "relevantPathsAI": [
-        "B.2.c"
+        "G.4"
       ],
-      "rationaleAI": "Covers journalistic criticism as a critical style and the media's role in public reception of art (B.2.c)."
+      "rationaleAI": "Journalism covering digital media, broadcasting, and online journalism addresses the role of mechanical and electronic media in disseminating works of art (G.4)."
     },
     {
       "vsiTitle": "Reading",
       "vsiAuthor": "Belinda Jack",
       "relevantPathsAI": [
-        "A.1",
-        "G.1"
+        "D.2",
+        "G"
       ],
-      "rationaleAI": "Explores the experience of reading as aesthetic apprehension and the role of libraries in preserving and disseminating literary works (A.1, G.1)."
+      "rationaleAI": "Reading covering censorship and the association of reading with subversive ideas addresses social control of art (D.2). The evolution of mass literacy through printing addresses preservation and dissemination of works of art (G)."
     },
     {
       "vsiTitle": "Imagination",
       "vsiAuthor": "Jennifer Gosetti-Ferencei",
       "relevantPathsAI": [
-        "A.1",
+        "A",
         "A.2"
       ],
-      "rationaleAI": "Explores how imagination operates in aesthetic experience and the apprehension and interpretation of artworks (A.1, A.2)."
+      "rationaleAI": "Imagination as a cognitive power crucial to artistic and scientific creativity addresses the aesthetic experience (A) and interpretation of works of art (A.2)."
     },
     {
       "vsiTitle": "Creativity",
@@ -159,7 +173,7 @@
       "relevantPathsAI": [
         "F"
       ],
-      "rationaleAI": "Relevant to the training and work of the artist, professionalism, and the conditions of creative work (F)."
+      "rationaleAI": "Psychological perspectives on creativity and creative expression address the training and work of the artist (F), including the relationship between individual genius and cultural environment."
     },
     {
       "vsiTitle": "Education",
@@ -167,62 +181,58 @@
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Relevant to the section's discussion of arts in education and aesthetic education (D.5)."
+      "rationaleAI": "Education systems examining pedagogical methods and philosophical debates about education's purposes connect to the arts in education and aesthetic education (D.5)."
     },
     {
       "vsiTitle": "Music and Technology",
       "vsiAuthor": "Mark Katz",
       "relevantPathsAI": [
-        "G.4",
-        "D.4"
+        "G.4"
       ],
-      "rationaleAI": "Addresses the role of electronic media, sound recording, and streaming in disseminating musical works (G.4, D.4)."
+      "rationaleAI": "Technology's role in music covering sound recording, broadcasting, and streaming addresses the role of mechanical and electronic media in dissemination (G.4)."
     },
     {
       "vsiTitle": "The History of Cinema",
       "vsiAuthor": "Geoffrey Nowell-Smith",
       "relevantPathsAI": [
-        "D.2",
-        "D.4",
         "G.4"
       ],
-      "rationaleAI": "Covers cinema's role as mechanical/electronic media for disseminating art, including censorship and technology's impact (D.2, D.4, G.4)."
+      "rationaleAI": "Cinema history covering technological transitions and new distribution technologies addresses the role of mechanical and electronic media in dissemination (G.4)."
     },
     {
       "vsiTitle": "Oral History",
       "vsiAuthor": "Douglas A Boyd",
       "relevantPathsAI": [
-        "G.1",
         "G.5"
       ],
-      "rationaleAI": "Directly relevant to the role of oral tradition and archives in preserving artistic works (G.1, G.5)."
+      "rationaleAI": "Oral history covering interviewing techniques and archival preservation addresses the role of oral tradition in preserving works of art (G.5)."
     },
     {
       "vsiTitle": "Comparative Literature",
       "vsiAuthor": "Ben Hutchinson",
       "relevantPathsAI": [
-        "C"
+        "C",
+        "C.2"
       ],
-      "rationaleAI": "Addresses cross-cultural scholarly and critical methods in the arts and the relation of art scholarship to other humanistic disciplines (C)."
+      "rationaleAI": "Comparative literature examining cross-cultural literary relations addresses scholarship in the arts (C) and the relation of scholarship to other humanistic disciplines (C.2)."
     },
     {
       "vsiTitle": "Design",
       "vsiAuthor": "John Heskett",
       "relevantPathsAI": [
-        "G.3",
-        "D.1"
+        "D.4"
       ],
-      "rationaleAI": "Covers the role of industry and commerce in producing and disseminating designed objects as art (G.3, D.1)."
+      "rationaleAI": "Design covering the relationship between form and function, cultural context, and mass production addresses technology, science, and the arts (D.4)."
     },
     {
       "vsiTitle": "Futurism",
       "vsiAuthor": "Ara H. Merjian",
       "relevantPathsAI": [
-        "D.1",
         "D.4"
       ],
-      "rationaleAI": "Explores art's interaction with modern technology, politics, and new media, relevant to the nonaesthetic context of art (D.1, D.4)."
+      "rationaleAI": "Futurism's embrace of modern technology and its pioneering role in new media development addresses technology, science, and the arts (D.4)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

@@ -4,154 +4,170 @@
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the nature and scope of the Earth sciences including geology, ocean systems, and Earth's structure."
+      "relevantPathsAI": [
+        "A",
+        "A.5.a.vi",
+        "B.2"
+      ],
+      "rationaleAI": "Plate tectonics and geological processes address the history of Earth sciences (A), plate tectonics theory (A.5.a.vi), and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
       "relevantPathsAI": [
+        "A",
         "B.2"
       ],
-      "rationaleAI": "Section B.2 covers geologic sciences as a core Earth science discipline including petrology, geochemistry, and stratigraphy."
+      "rationaleAI": "Geology covering Earth's structure and history addresses Earth sciences history (A) and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "A.5",
+        "B"
       ],
-      "rationaleAI": "Covers the integrated study of Earth's systems, connecting physical geography (B.1), geologic sciences (B.2), and atmospheric sciences."
+      "rationaleAI": "Earth as an integrated system relates to 20th-century Earth sciences (A.5) and the scope of Earth sciences (B)."
     },
     {
       "vsiTitle": "Plate tectonics",
       "vsiAuthor": "Peter Molnar",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.a.vi",
+        "B.2"
       ],
-      "rationaleAI": "Section A.5.a.vi specifically covers plate tectonics as a unification of continental drift and seafloor spreading."
+      "rationaleAI": "Plate tectonics theory addresses plate tectonics (A.5.a.vi) and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.a.iii",
+        "B.2"
       ],
-      "rationaleAI": "Section A.5.a.iii covers advances in geophysics including seismology and the study of Earth's internal structure."
+      "rationaleAI": "Seismology and geomagnetism address advances in geophysics (A.5.a.iii) and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "Fossils",
       "vsiAuthor": "Keith Thomson",
       "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "A.5"
+        "A.2.a.ii",
+        "A.3.a.ii",
+        "A.4.a.ii",
+        "A.5.a.v",
+        "B.2"
       ],
-      "rationaleAI": "Sections A.2.a.ii (speculations about fossils), A.3.a.ii (paleontology/stratigraphy), and A.5.a.v (advances in paleontology) all cover fossils."
+      "rationaleAI": "Fossils address speculations about fossils (A.2.a.ii), paleontology development (A.3.a.ii), faunal succession (A.4.a.ii), paleontology advances (A.5.a.v), and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
       "relevantPathsAI": [
-        "A.4",
-        "A.5"
+        "A.3.a.i",
+        "B.2"
       ],
-      "rationaleAI": "Section A.4.a.i covers classification of rocks, and A.5.a.ii covers experimental petrology."
+      "rationaleAI": "Rock formation connects to early mineralogy (A.3.a.i) and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
       "relevantPathsAI": [
-        "A.3",
-        "A.4"
+        "A.3.a.i",
+        "A.4.a.i",
+        "B.2"
       ],
-      "rationaleAI": "Section A.3.a.i covers the beginnings of mineralogy and study of ore deposits, and A.4.a.i covers classification of minerals."
+      "rationaleAI": "Mineralogy relates to early mineralogy (A.3.a.i), crystallography development (A.4.a.i), and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "Volcanoes",
       "vsiAuthor": "Michael J. Branney, Jan Zalasiewicz",
       "relevantPathsAI": [
-        "A.2",
+        "A.2.a.i",
         "B.2"
       ],
-      "rationaleAI": "Section A.2.a.i covers speculations about volcanic eruptions, and volcanology is part of the geologic sciences (B.2)."
+      "rationaleAI": "Volcanic processes relate to speculations about eruptions (A.2.a.i) and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "The Ice Age",
       "vsiAuthor": "Jamie Woodward",
       "relevantPathsAI": [
-        "A.4"
+        "A.4.a.iv",
+        "B.3"
       ],
-      "rationaleAI": "Section A.4.a.iv specifically covers evidence for an Ice Age and the work of Louis Agassiz."
+      "rationaleAI": "Ice age history addresses evidence for an Ice Age (A.4.a.iv) and glaciology (B.3)."
     },
     {
       "vsiTitle": "Glaciation",
       "vsiAuthor": "David J. A. Evans",
       "relevantPathsAI": [
-        "A.5",
+        "A.5.b.v",
         "B.3"
       ],
-      "rationaleAI": "Section A.5.b.v covers the study of glacier motion and high-latitude ice sheets, and B.3 lists glaciology."
+      "rationaleAI": "Glaciers as dynamic systems address glacier motion study (A.5.b.v) and glaciology (B.3)."
     },
     {
       "vsiTitle": "Climate change",
       "vsiAuthor": "Mark Maslin",
       "relevantPathsAI": [
-        "A.5.c"
+        "A.5.c.v",
+        "B.1"
       ],
-      "rationaleAI": "Climate change connects to atmospheric sciences (A.5.c) and the classification of climate (A.5.c.v)."
+      "rationaleAI": "Climate change science addresses climate classification (A.5.c.v) and physical geography (B.1)."
     },
     {
       "vsiTitle": "Climate",
       "vsiAuthor": "Mark Maslin",
       "relevantPathsAI": [
-        "A.5.c"
+        "A.5.c.v",
+        "B.1"
       ],
-      "rationaleAI": "Section A.5.c.v covers the classification of climate, and atmospheric sciences are a core Earth science discipline."
+      "rationaleAI": "Climate system components address climate classification (A.5.c.v) and physical geography (B.1)."
     },
     {
       "vsiTitle": "Weather",
       "vsiAuthor": "Storm Dunlop",
       "relevantPathsAI": [
-        "A.4.c",
-        "A.5.c"
+        "A.5.c.i",
+        "A.5.c.ii"
       ],
-      "rationaleAI": "Section A.4.c.iii covers the study of weather, and A.5.c.ii covers advances in weather forecasting."
+      "rationaleAI": "Weather science addresses modern meteorology technology (A.5.c.i) and weather forecasting (A.5.c.ii)."
     },
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
       "relevantPathsAI": [
-        "A.3.c",
-        "A.5.c"
+        "A.5.c.iii",
+        "B.1"
       ],
-      "rationaleAI": "Section A.3.c covers atmospheric sciences from early studies through modern technology, and A.5.c covers 20th-century advances."
+      "rationaleAI": "Atmospheric properties address atmospheric structure study (A.5.c.iii) and physical geography (B.1)."
     },
     {
       "vsiTitle": "Oceans",
       "vsiAuthor": "Dorrik Stow",
       "relevantPathsAI": [
-        "A.4",
-        "A.5"
+        "A.5.b",
+        "A.5.b.iv",
+        "B.3"
       ],
-      "rationaleAI": "Section A.4.b.ii covers the beginnings of oceanography, and A.5.b covers ocean circulation, currents, and ocean floor charting."
+      "rationaleAI": "Ocean science addresses hydrologic sciences (A.5.b), ocean circulation (A.5.b.iv), and oceanography (B.3)."
     },
     {
       "vsiTitle": "Tides",
       "vsiAuthor": "David George Bowers, Emyr Martyn Roberts",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b.iii",
+        "B.3"
       ],
-      "rationaleAI": "Section A.2.b.iii covers the study of tides as part of hydrologic and atmospheric sciences."
+      "rationaleAI": "Tidal phenomena address the study of tides (A.2.b.iii) and oceanography (B.3)."
     },
     {
       "vsiTitle": "Rivers",
       "vsiAuthor": "Nick Middleton",
       "relevantPathsAI": [
-        "A.4"
+        "A.5.b.i",
+        "B.3"
       ],
-      "rationaleAI": "Section A.4.b.i covers the study of groundwater flow and surface water discharge; rivers are central to hydrologic sciences."
+      "rationaleAI": "Rivers address water resources study (A.5.b.i) and hydrology (B.3)."
     },
     {
       "vsiTitle": "Lakes",
@@ -159,24 +175,25 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Lakes are part of the hydrologic sciences, and B.3 lists limnology as a hydrologic discipline."
+      "rationaleAI": "Lake science relates to limnology (B.3)."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
       "relevantPathsAI": [
-        "A.5"
+        "B.3"
       ],
-      "rationaleAI": "Section A.5.b.i covers the study of water resources and seawater chemistry, and water is fundamental to hydrologic sciences."
+      "rationaleAI": "Water's significance for earth sciences relates to hydrologic sciences (B.3)."
     },
     {
       "vsiTitle": "Landscapes and Geomorphology",
       "vsiAuthor": "Andrew Goudie, Heather Viles",
       "relevantPathsAI": [
-        "A.4",
+        "A.4.a.vi",
+        "B.1",
         "B.2"
       ],
-      "rationaleAI": "Section A.4.a.vi covers concepts of landform evolution, and B.2 lists geomorphology as a geologic science."
+      "rationaleAI": "Geomorphology addresses landform evolution (A.4.a.vi), physical geography (B.1), and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "Deserts",
@@ -184,15 +201,16 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Deserts represent a geomorphological environment covered under physical geography (B.1) and climate classification."
+      "rationaleAI": "Desert environments relate to physical geography (B.1)."
     },
     {
       "vsiTitle": "Mountains",
       "vsiAuthor": "Martin F. Price",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.2"
       ],
-      "rationaleAI": "Mountains are key landforms covered under physical geography (B.1) and relate to plate tectonics and geomorphology."
+      "rationaleAI": "Mountain environments address physical geography (B.1) and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "Geography",
@@ -200,78 +218,89 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Section B.1 covers physical geography including distribution and spatial patterns of soils, water, climate, and landforms."
+      "rationaleAI": "Geography relates to physical geography (B.1)."
     },
     {
       "vsiTitle": "The Antarctic",
       "vsiAuthor": "Klaus Dodds",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.b.v",
+        "B.1",
+        "B.3"
       ],
-      "rationaleAI": "The Antarctic involves multiple Earth sciences including glaciology (A.5.b.v), atmospheric sciences, and ocean sciences."
+      "rationaleAI": "Antarctica addresses ice sheet study (A.5.b.v), physical geography (B.1), and glaciology (B.3)."
     },
     {
       "vsiTitle": "The Arctic",
       "vsiAuthor": "Klaus Dodds, Jamie Woodward",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.b.v",
+        "B.1"
       ],
-      "rationaleAI": "The Arctic involves multiple Earth sciences including glaciology (A.5.b.v), atmospheric sciences, and ocean sciences."
+      "rationaleAI": "The cryosphere addresses ice sheet study (A.5.b.v) and physical geography (B.1)."
     },
     {
       "vsiTitle": "Geophysical and Climate Hazards",
       "vsiAuthor": "Bill McGuire",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers earthquakes, volcanic eruptions, and climate hazards studied through the Earth sciences in sections A and B."
+      "relevantPathsAI": [
+        "A.2.a.i",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Earthquakes and volcanic eruptions address speculations about eruptions (A.2.a.i), physical geography (B.1), and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "Coral Reefs",
       "vsiAuthor": "Charles Sheppard",
       "relevantPathsAI": [
-        "A.5"
+        "B.3"
       ],
-      "rationaleAI": "Coral reefs relate to marine geology, oceanography (A.5.b), and paleontology."
+      "rationaleAI": "Coral reef formation relates to oceanography (B.3)."
     },
     {
       "vsiTitle": "The History of Life",
       "vsiAuthor": "Michael J. Benton",
       "relevantPathsAI": [
-        "A.4",
-        "A.5"
+        "A.4.a.ii",
+        "A.5.a.v",
+        "B.2"
       ],
-      "rationaleAI": "Sections A.4.a.ii and A.5.a.v cover paleontological advances including faunal succession and Precambrian life."
+      "rationaleAI": "Life history and fossils address faunal succession (A.4.a.ii), paleontology advances (A.5.a.v), and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "Dinosaurs",
       "vsiAuthor": "David Norman",
       "relevantPathsAI": [
-        "A.4",
-        "A.5"
+        "A.5.a.v",
+        "B.2"
       ],
-      "rationaleAI": "Dinosaurs are a major subject of paleontology covered in A.4.a.ii and A.5.a.v."
+      "rationaleAI": "Dinosaur classification addresses paleontology advances (A.5.a.v) and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "Extinction",
       "vsiAuthor": "Paul B. Wignall",
       "relevantPathsAI": [
-        "A.4",
-        "A.5"
+        "A.5.a.v",
+        "B.2"
       ],
-      "rationaleAI": "Mass extinctions are studied through paleontology and stratigraphy in A.4.a.ii and A.5.a.v."
+      "rationaleAI": "Mass extinction events address paleontology advances (A.5.a.v) and geologic sciences (B.2)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.a.i"
       ],
-      "rationaleAI": "Section A.5.a.i covers the development of radiometric dating, which relies on radioactivity for geological time."
+      "rationaleAI": "Radioactive decay as a dating tool addresses radiometric dating development (A.5.a.i)."
     },
     {
       "vsiTitle": "Anthropocene",
       "vsiAuthor": "Erle C. Ellis",
-      "relevantPathsAI": [],
-      "rationaleAI": "The Anthropocene is a proposed geological epoch connecting geologic and atmospheric sciences in this section."
+      "relevantPathsAI": [
+        "A.5",
+        "B.2"
+      ],
+      "rationaleAI": "The Anthropocene relates to 20th-century geologic sciences (A.5) and geologic sciences broadly (B.2)."
     },
     {
       "vsiTitle": "Biogeography",
@@ -279,7 +308,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Biogeography connects physical geography (B.1) with ecology and the distribution of life forms on Earth."
+      "rationaleAI": "Geographic distribution of life relates to physical geography (B.1)."
     },
     {
       "vsiTitle": "Savannas",
@@ -287,7 +316,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Savannas represent a climatic and biogeographic zone studied through physical geography (B.1) and climate classification."
+      "rationaleAI": "Savanna ecosystems relate to physical geography (B.1)."
     },
     {
       "vsiTitle": "Marine biology",
@@ -295,21 +324,23 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Marine biology connects to oceanography (B.3), studying life in ocean environments alongside physical ocean sciences."
+      "rationaleAI": "Ocean ecosystems relate to oceanography (B.3)."
     },
     {
       "vsiTitle": "Astrobiology",
       "vsiAuthor": "David C. Catling",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.a.iv"
       ],
-      "rationaleAI": "Section A.5.a.iv covers astrogeologic research applying Earth sciences to planetary investigation."
+      "rationaleAI": "Life's origins and planetary co-evolution relate to astrogeologic research (A.5.a.iv)."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
-      "relevantPathsAI": [],
-      "rationaleAI": "Navigation historically depended on understanding Earth sciences including geography, atmospheric sciences, and ocean currents."
+      "relevantPathsAI": [
+        "A.5.b.iii"
+      ],
+      "rationaleAI": "Maritime navigation connects to ocean floor charting and bathymetry (A.5.b.iii)."
     },
     {
       "vsiTitle": "Ancient Greek and Roman Science",
@@ -317,16 +348,17 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Section A.2 covers Earth science ideas from antiquity including speculations about earthquakes, fossils, and landforms."
+      "rationaleAI": "Natural philosophy relates to Earth sciences from antiquity (A.2)."
     },
     {
       "vsiTitle": "Darwin",
       "vsiAuthor": "Jonathan Howard",
       "relevantPathsAI": [
-        "A.4"
+        "A.4.a.ii"
       ],
-      "rationaleAI": "Section A.4.a.ii covers Darwin's concept of faunal succession and organic evolution, linking biological and geological sciences."
+      "rationaleAI": "Darwin's evolution theory and Lyell's geology relate to faunal succession and organic evolution (A.4.a.ii)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

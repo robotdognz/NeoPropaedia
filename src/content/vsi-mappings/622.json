@@ -4,96 +4,108 @@
     {
       "vsiTitle": "Theatre",
       "vsiAuthor": "Marvin Carlson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the art of theatre, theatrical production, staging, acting, directing, and theatre history -- the core subject of this entire section (A-D)."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.7",
+        "A.8",
+        "B",
+        "B.1",
+        "D"
+      ],
+      "rationaleAI": "Theatre as a global artistic form from ancient Greece through modern performance addresses the art of theatre (A), its nature and origins (A.1), acting (A.7), the role of other arts (A.8), diverse kinds of production (B), and the history of theatre (D)."
     },
     {
       "vsiTitle": "Modern Drama",
       "vsiAuthor": "Kirsten E. Shepherd-Barr",
       "relevantPathsAI": [
-        "A.4",
-        "B.1",
+        "A",
+        "B.1.e",
+        "D",
         "D.1"
       ],
-      "rationaleAI": "Traces the evolution of modern theatrical production through naturalism, realism, and symbolism, while exploring the audience-performance relationship (A.4, B.1.a, D.1)."
+      "rationaleAI": "Modern theatrical drama from 1880 covering naturalism, realism, and metatheatre addresses the art of theatre (A), kinds defined by style (B.1.e), and the history of Western theatre (D.1)."
     },
     {
       "vsiTitle": "Tragedy",
       "vsiAuthor": "Adrian Poole",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.a.i"
       ],
-      "rationaleAI": "Directly covers tragedy as a traditional dramatic form in theatrical production (B.1.a.i)."
+      "rationaleAI": "Tragedy from ancient Greek theater to contemporary literature directly addresses traditional dramatic forms or genres (B.1.a.i)."
     },
     {
       "vsiTitle": "Comedy",
       "vsiAuthor": "Matthew Bevis",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.a.i",
+        "B.1.f.iii"
       ],
-      "rationaleAI": "Directly covers comedy as a traditional dramatic form, including pantomime and Restoration comedy (B.1.a.i, B.1.a.iii)."
+      "rationaleAI": "Comedy covering comic drama, pantomime, music hall, and stand-up addresses traditional dramatic forms (B.1.a.i) and popular entertainments (B.1.f.iii)."
     },
     {
       "vsiTitle": "Sophocles",
       "vsiAuthor": "Edith Hall",
       "relevantPathsAI": [
-        "A.1",
+        "A.7",
+        "B.1.a.i",
         "D.1"
       ],
-      "rationaleAI": "Examines ancient Greek tragic theatre and Sophoclean stagecraft -- from the Oedipus plays to Ajax -- foundational to the origins of Western theatre (A.1, D.1)."
+      "rationaleAI": "Sophocles as an Athenian tragic dramatist covering stagecraft and performance addresses acting (A.7), tragedy as a traditional genre (B.1.a.i), and the history of Western theatre (D.1)."
     },
     {
       "vsiTitle": "William Shakespeare",
       "vsiAuthor": "Stanley Wells",
       "relevantPathsAI": [
-        "B.1",
+        "A.7",
+        "B.1.a.i",
         "D.1"
       ],
-      "rationaleAI": "Shakespeare is central to Western theatre as playwright, covering comedy, tragedy, and tragicomedy in performance (B.1.a.i, B.1.d, D.1)."
+      "rationaleAI": "Shakespeare as playwright and actor covering dramatic works addresses acting (A.7), traditional dramatic genres (B.1.a.i), and the history of Western theatre (D.1)."
     },
     {
       "vsiTitle": "Shakespeare's Comedies",
       "vsiAuthor": "Bart Van Es",
       "relevantPathsAI": [
-        "B.1",
-        "B.1.c"
+        "B.1.a.i",
+        "D.1"
       ],
-      "rationaleAI": "Explores Shakespearean comedy in performance -- from early farce through romantic comedies to the late romances -- illuminating comedy as a theatrical genre and repertory staging (B.1.a.i, B.1.c)."
+      "rationaleAI": "Shakespeare's comic dramatic works address traditional dramatic forms (B.1.a.i) and the history of Western theatre (D.1)."
     },
     {
       "vsiTitle": "Shakespeare's Tragedies",
       "vsiAuthor": "Stanley Wells",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.a.i",
+        "D.1"
       ],
-      "rationaleAI": "Analyzes the major Shakespearean tragedies in performance, from Hamlet and Othello to King Lear, illuminating tragedy as a theatrical genre (B.1.a.i)."
+      "rationaleAI": "Shakespeare's tragedies address traditional dramatic forms (B.1.a.i) and the history of Western theatre (D.1)."
     },
     {
       "vsiTitle": "George Bernard Shaw",
       "vsiAuthor": "Christopher Wixson",
       "relevantPathsAI": [
-        "B.1",
+        "B.1.a.i",
         "D.1"
       ],
-      "rationaleAI": "Shaw is a major modern playwright, relevant to dramatist-controlled productions and Western theatre history (B.1.d, D.1)."
+      "rationaleAI": "Shaw's dramatic canon addresses traditional dramatic forms (B.1.a.i) and the history of Western theatre (D.1)."
     },
     {
       "vsiTitle": "Humour",
       "vsiAuthor": "Noël Carroll",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.a.i"
       ],
-      "rationaleAI": "Investigates comedy, farce, music hall, variety, and burlesque as forms of popular theatrical entertainment (B.1.a.i, B.1.f.iii)."
+      "rationaleAI": "Humor covering comedy and comic amusement from theoretical perspectives addresses traditional dramatic forms including comedy (B.1.a.i)."
     },
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
       "relevantPathsAI": [
         "A.1",
-        "A.2",
-        "B.1"
+        "B.1.b"
       ],
-      "rationaleAI": "Explores the deep connection between ritual performance and the origins of theatre, including religious ceremonies and rites of passage (A.1, A.2, B.1.b)."
+      "rationaleAI": "Ritual as a fundamental human activity encompassing rites of passage connects to the origins of theatre as an art (A.1) and religious theatre (B.1.b)."
     },
     {
       "vsiTitle": "Architecture",
@@ -101,7 +113,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Addresses architectural design principles essential to theatre buildings, stages, and auditoriums (C.1)."
+      "rationaleAI": "Architecture covering buildings from ancient Egypt through modernism provides context for theatre buildings, stages, and auditoriums (C.1)."
     },
     {
       "vsiTitle": "Design",
@@ -109,7 +121,7 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Introduces design principles that underpin staging, set design, and lighting in theatrical production (C.2)."
+      "rationaleAI": "Design covering form, function, and cultural context addresses staging and stage design (C.2)."
     },
     {
       "vsiTitle": "Fashion",
@@ -117,17 +129,15 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Examines costume and fashion design, directly applicable to costumes as an element of theatrical production (C.2)."
+      "rationaleAI": "Fashion as visual culture and identity construction addresses costumes and makeup as elements of staging (C.2)."
     },
     {
       "vsiTitle": "Aesthetics",
       "vsiAuthor": "Bence Nanay",
       "relevantPathsAI": [
-        "A.1",
-        "A.4",
-        "B.1"
+        "A.2"
       ],
-      "rationaleAI": "Explores aesthetic experience including opera and live performance, shedding light on theatre as art and audience engagement (A.1, A.4, B.1.e)."
+      "rationaleAI": "Aesthetics examining art, beauty, and aesthetic experience addresses functions of theatre including theatre as social and moral expression (A.2)."
     },
     {
       "vsiTitle": "Classical Literature",
@@ -135,25 +145,25 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Surveys ancient Greek and Roman drama -- the tragedies of Aeschylus, Sophocles, and Euripides and the comedies of Aristophanes and Plautus -- foundational to Western theatre history (D.1)."
+      "rationaleAI": "Greek and Latin tragedy and comedy address the history of Western theatre (D.1)."
     },
     {
       "vsiTitle": "Indian Cinema",
       "vsiAuthor": "Ashish Rajadhyaska",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.h"
       ],
-      "rationaleAI": "Illuminates Indian theatrical and cinematic traditions, including theatre's evolving relationship to radio and television (B.1.h)."
+      "rationaleAI": "Indian cinema covering relationships with theatre, radio, and television addresses kinds defined by production media (B.1.h)."
     },
     {
       "vsiTitle": "Creativity",
       "vsiAuthor": "Vlad Petre Glăveanu",
       "relevantPathsAI": [
-        "A.6",
-        "A.7"
+        "A"
       ],
-      "rationaleAI": "Examines the creative process as it applies to directing, acting, and artistic expression in theatrical production (A.6, A.7)."
+      "rationaleAI": "Creativity covering creative expression and cultural contexts provides foundational context for the art of theatre (A)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

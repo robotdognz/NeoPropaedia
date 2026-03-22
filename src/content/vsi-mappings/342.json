@@ -4,18 +4,32 @@
     {
       "vsiTitle": "Animal Behaviour",
       "vsiAuthor": "Tristram D. Wyatt",
-      "relevantPathsAI": [],
-      "rationaleAI": "Core text covering individual activities (food getting, aggression, reproduction), kin selection, alarm calls, parental care, and social behaviour (A, C)."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.3",
+        "A.6",
+        "B",
+        "B.2",
+        "B.4",
+        "C",
+        "C.1",
+        "C.2",
+        "C.3",
+        "C.4"
+      ],
+      "rationaleAI": "Core text covering food getting (A.1), avoidance (A.3), reproductive behaviour (A.6), associative learning (B.2), cultural transmission (B.4), social behaviour including kin selection (C.1, C.2, C.3), and social dynamics (C.4)."
     },
     {
       "vsiTitle": "Learning",
       "vsiAuthor": "Mark Haselgrove",
       "relevantPathsAI": [
+        "B",
         "B.1",
         "B.2",
-        "B.4"
+        "B.5"
       ],
-      "rationaleAI": "Directly covers habituation, sensitization, classical and operant conditioning, and observational learning in animals (B.1, B.2, B.4)."
+      "rationaleAI": "Conditioning directly addresses associative learning (B.2), habituation (B.1), and complex problem solving (B.5)."
     },
     {
       "vsiTitle": "Ivan Pavlov",
@@ -23,56 +37,65 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Directly relevant to classical conditioning, a foundational form of associative learning central to this section (B.2)."
+      "rationaleAI": "Conditional reflex research exemplifies classical associative learning (B.2)."
     },
     {
       "vsiTitle": "Thinking and Reasoning",
       "vsiAuthor": "Jonathan Evans",
       "relevantPathsAI": [
-        "B.5"
+        "B.5",
+        "B.5.a",
+        "B.5.b",
+        "B.5.c"
       ],
-      "rationaleAI": "Examines problem solving, reasoning, and insight as cognitive capacities observable in higher animals (B.5)."
+      "rationaleAI": "Reasoning and problem solving address abstract stimuli discrimination (B.5.a), rule learning (B.5.b), and insight (B.5.c)."
     },
     {
       "vsiTitle": "Sexual Selection",
       "vsiAuthor": "Marlene Zuk, Leigh W Simmons",
       "relevantPathsAI": [
-        "A.6"
+        "A.6",
+        "C.3"
       ],
-      "rationaleAI": "Explores Darwin's theory of mate choice, sexual dimorphism, and reproductive behaviour including intrasexual competition and intersexual selection (A.6)."
+      "rationaleAI": "Mating behaviours address reproduction-related behaviour (A.6) and range of social behaviour (C.3)."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
-      "relevantPathsAI": [],
-      "rationaleAI": "Illustrates mammalian behavioural capacities from basic locomotion and foraging to complex social structures and brain-driven learning (A, B)."
+      "relevantPathsAI": [
+        "A.2",
+        "A.5",
+        "B.5"
+      ],
+      "rationaleAI": "Ecological specializations address locomotion (A.2), habitat behaviour (A.5), and complex problem solving (B.5)."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
       "relevantPathsAI": [
+        "A.1",
+        "A.5",
         "C.1",
-        "C.2",
-        "C.4"
+        "C.3"
       ],
-      "rationaleAI": "Examines insect social behaviour, colony dynamics, and pheromone-based communication in eusocial species such as ants, bees, and termites (C.1, C.2, C.4)."
+      "rationaleAI": "Insect behavioural diversity addresses food getting (A.1), habitat behaviour (A.5), and social group distinctions (C.1, C.3)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
       "relevantPathsAI": [
-        "B.3",
         "B.5"
       ],
-      "rationaleAI": "Reveals the neural substrates of learning, spatial cognition, and memory that underlie higher behavioural capacities (B.3, B.5)."
+      "rationaleAI": "Brain substrates of cognition address complex problem solving (B.5)."
     },
     {
       "vsiTitle": "Memory",
       "vsiAuthor": "Jonathan K. Foster",
       "relevantPathsAI": [
-        "B.3"
+        "B.3",
+        "B.4"
       ],
-      "rationaleAI": "Investigates memory formation and spatial memory, directly relevant to maze learning, place cells, and animal navigation (B.3)."
+      "rationaleAI": "Memory processes address spatial learning (B.3) and perceptual learning (B.4)."
     },
     {
       "vsiTitle": "Perception",
@@ -80,15 +103,16 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Analyzes perceptual processing including motion perception and pattern recognition relevant to perceptual and observational learning (B.4)."
+      "rationaleAI": "Sensory-guided behaviour addresses observational learning (B.4)."
     },
     {
       "vsiTitle": "Intelligence",
       "vsiAuthor": "Ian J. Deary",
       "relevantPathsAI": [
-        "B.5"
+        "B.5",
+        "B.5.d"
       ],
-      "rationaleAI": "Explores cognitive abilities, working memory, and problem-solving capacities relevant to complex reasoning in higher animals (B.5)."
+      "rationaleAI": "Cognitive abilities address complex problem solving (B.5) and language learning (B.5.d)."
     },
     {
       "vsiTitle": "Food",
@@ -96,7 +120,7 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Addresses foraging behaviour, optimal diet theory, and food-getting strategies directly relevant to basic food-getting activities (A.1)."
+      "rationaleAI": "Food preferences address food getting (A.1)."
     },
     {
       "vsiTitle": "Navigation",
@@ -104,18 +128,18 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Introduces principles of navigation -- landmarks, dead reckoning, celestial cues -- relevant to spatial learning and animal navigation abilities (B.3)."
+      "rationaleAI": "Position-finding relates to spatial learning (B.3)."
     },
     {
       "vsiTitle": "Social Psychology",
       "vsiAuthor": "Richard J. Crisp",
       "relevantPathsAI": [
-        "A.4",
         "C.3",
         "C.4"
       ],
-      "rationaleAI": "Addresses aggression, group dynamics, obedience, and social interaction relevant to the dynamics of social behaviour (A.4, C.3, C.4)."
+      "rationaleAI": "Group behavior and social influence address range (C.3) and dynamics of social behaviour (C.4)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

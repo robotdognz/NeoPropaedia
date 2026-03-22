@@ -4,63 +4,98 @@
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the Earth as a planet including its orbital motions, rotation, and physical shape—the core subject of this section."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "B"
+      ],
+      "rationaleAI": "Planetary formation connects to orbital motions (A), revolution and rotation (A.1), and figure of the Earth (B)."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the Earth's rotation, gravitational effects, and geodetic measurement methods including GPS and satellite techniques relevant to the world geodetic system."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.2.a",
+        "A.2.b",
+        "A.2.c",
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.3.b"
+      ],
+      "rationaleAI": "Angular momentum and satellite measurements connect to Coriolis force (A.2.a), centrifugal effects (A.2.b), tidal friction (A.2.c), and geodetic parameters (B.3, B.3.b)."
     },
     {
       "vsiTitle": "Gravity",
       "vsiAuthor": "Timothy Clifton",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to the Coriolis force, centrifugal effects, and tidal friction produced by Earth's rotation and gravitational interactions."
+      "relevantPathsAI": [
+        "A.2.b"
+      ],
+      "rationaleAI": "Gravitational theory connects to centrifugal force effects (A.2.b)."
     },
     {
       "vsiTitle": "Tides",
       "vsiAuthor": "David George Bowers, Emyr Martyn Roberts",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers tidal forces and tidal friction arising from the Moon's gravitational pull on the rotating Earth, a specific topic in the outline."
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "Tidal phenomena address tidal friction (A.2.c)."
     },
     {
       "vsiTitle": "Planets",
       "vsiAuthor": "David A. Rothery",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers planetary orbital mechanics and the solar nebula, directly relevant to the Earth's revolution about the Sun and its place in the solar system."
+      "relevantPathsAI": [
+        "A.1",
+        "B"
+      ],
+      "rationaleAI": "Planetary science connects to revolution/rotation (A.1) and figure of Earth (B)."
     },
     {
       "vsiTitle": "Moons",
       "vsiAuthor": "David Rothery",
-      "relevantPathsAI": [],
-      "rationaleAI": "Discusses tidal heating and the Earth-Moon system, relevant to tidal friction and the dynamic effects of Earth's rotation."
+      "relevantPathsAI": [
+        "A.2.c"
+      ],
+      "rationaleAI": "Moon's tidal influence relates to tidal friction (A.2.c)."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the Earth's revolution about the Sun and solar-terrestrial dynamic forces that influence the Earth's orbital environment."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Sun's impact connects to revolution about the Sun (A.1)."
     },
     {
       "vsiTitle": "Measurement",
       "vsiAuthor": "David J. Hand",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers measurement science, SI units, and standardization, relevant to the measurement of geodetic parameters and the world geodetic system."
+      "relevantPathsAI": [
+        "B.3"
+      ],
+      "rationaleAI": "Measurement theory connects to geodetic measurement (B.3)."
     },
     {
       "vsiTitle": "The History of Astronomy",
       "vsiAuthor": "Michael Hoskin",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the historical development of understanding Earth's orbital motions and shape, from Ptolemy through Copernicus, Kepler, and Newton."
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Heliocentric model connects to Earth's orbital motion (A.1)."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers longitude determination, the magnetic compass, and satellite-based positioning—directly relevant to geodetic measurement and approximations of Earth's shape."
+      "relevantPathsAI": [
+        "A.1",
+        "B.3"
+      ],
+      "rationaleAI": "Navigation connects to Earth's motion (A.1) and geodetic measurement (B.3)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

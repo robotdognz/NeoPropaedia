@@ -4,27 +4,37 @@
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
-      "relevantPathsAI": [],
-      "rationaleAI": "A broad introduction to computing, spanning hardware, programming, languages, and information processing systems (D, H)."
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.4",
+        "H",
+        "I.8",
+        "K.1.c"
+      ],
+      "rationaleAI": "Computing technology covering architecture, operating systems, web servers, and network communication addresses computers (D), types of computers (D.1), applications (D.4), information processing (H), electronic networks (I.8), and integrated circuits (K.1.c)."
     },
     {
       "vsiTitle": "Computer Science",
       "vsiAuthor": "Subrata Dasgupta",
       "relevantPathsAI": [
+        "D",
         "D.2",
         "D.3",
         "D.5"
       ],
-      "rationaleAI": "Explores the theoretical foundations of computing including programming systems, language design, and artificial intelligence (D.2, D.3, D.5)."
+      "rationaleAI": "Algorithms, programming, computational complexity, and the Turing machine address computers (D), programming systems (D.2), computer languages (D.3), and AI as a development in computing (D.5)."
     },
     {
       "vsiTitle": "The History of Computing",
       "vsiAuthor": "Doron Swade",
       "relevantPathsAI": [
         "B",
-        "D"
+        "D",
+        "D.1",
+        "H"
       ],
-      "rationaleAI": "Traces the evolution from the abacus and mechanical calculators (B) through the development of modern electronic computers (D)."
+      "rationaleAI": "History from counting aids through mechanical calculation to electronic computation covers calculating devices (B), computers (D), types including analogue and digital (D.1), and information processing (H)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
@@ -32,23 +42,30 @@
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Directly addresses artificial intelligence including expert systems, natural-language processing, computer vision, and robotics (D.5)."
+      "rationaleAI": "AI covering expert systems, natural-language processing, and machine consciousness directly addresses developments in artificial intelligence (D.5)."
     },
     {
       "vsiTitle": "Information",
       "vsiAuthor": "Luciano Floridi",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides the theoretical framework for understanding communication and information that underpins all information processing systems (A, H)."
+      "relevantPathsAI": [
+        "A",
+        "H",
+        "H.1",
+        "I.8"
+      ],
+      "rationaleAI": "Information theory covering measurement in bits, probability, entropy, and Turing's contributions addresses communication and information theory (A), information processing (H), elements including analog and digital forms (H.1), and the Internet as electronic network (I.8)."
     },
     {
       "vsiTitle": "Big Data",
       "vsiAuthor": "Dawn E. Holmes",
       "relevantPathsAI": [
+        "H",
         "H.1",
+        "H.1.b",
         "H.1.c",
-        "H.2"
+        "H.2.b"
       ],
-      "rationaleAI": "Addresses mass data storage, database design, and search systems -- the infrastructure behind modern information retrieval (H.1.b, H.1.c, H.2.b)."
+      "rationaleAI": "Collection, storage, and analysis of massive datasets addresses information processing (H), recording and storage (H.1.b), organization and retrieval (H.1.c), and public information utilities (H.2.b)."
     },
     {
       "vsiTitle": "Cryptography",
@@ -56,33 +73,36 @@
       "relevantPathsAI": [
         "I.9"
       ],
-      "rationaleAI": "Directly relevant to signal security, message authentication, and the history of code-making and code-breaking (I.9)."
+      "rationaleAI": "Cryptography covering symmetric-key and public-key systems, identity verification, and post-quantum algorithms directly addresses encryption and decryption techniques and devices (I.9)."
     },
     {
       "vsiTitle": "Networks",
       "vsiAuthor": "Guido Caldarelli, Michele Catanzaro",
       "relevantPathsAI": [
-        "I.4",
-        "I.8"
+        "A",
+        "I.8",
+        "K"
       ],
-      "rationaleAI": "Examines electronic networks and telecommunications systems that form the backbone of modern communications (I.4, I.8)."
+      "rationaleAI": "Network theory covering topology, connectivity, and analysis of communications technology addresses communication theory (A), electronic networks (I.8), and electronic components (K)."
     },
     {
       "vsiTitle": "Photography",
       "vsiAuthor": "Steven Edwards",
       "relevantPathsAI": [
-        "G.1",
-        "G.2"
+        "G",
+        "G.1"
       ],
-      "rationaleAI": "Addresses photographic technology for both still and motion-picture imaging (G.1, G.2)."
+      "rationaleAI": "Photography from daguerreotype origins through digital-era imaging directly addresses the technology of photography (G) and still photography (G.1)."
     },
     {
       "vsiTitle": "Journalism",
       "vsiAuthor": "Ian Hargreaves",
       "relevantPathsAI": [
-        "I.1"
+        "I.1",
+        "I.5",
+        "I.6"
       ],
-      "rationaleAI": "Explores the media landscape from traditional publishing (I.1) through modern broadcasting and digital communications."
+      "rationaleAI": "Journalism encompassing newspapers, broadcasting, television, radio, and digital media addresses publishing (I.1), radio communications (I.5), and television communications (I.6)."
     },
     {
       "vsiTitle": "Robotics",
@@ -90,92 +110,98 @@
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Focuses on robotics as a key application of artificial intelligence, from industrial automation to autonomous systems (D.5)."
+      "rationaleAI": "Robotics covering autonomous machines and their relationship to AI connects to developments in artificial intelligence including robotics (D.5)."
     },
     {
       "vsiTitle": "Music and Technology",
       "vsiAuthor": "Mark Katz",
       "relevantPathsAI": [
-        "F"
+        "F",
+        "F.1",
+        "F.2",
+        "F.3"
       ],
-      "rationaleAI": "Explores how technology has transformed music through recording and reproducing devices -- mechanical, magnetic, and optical (F)."
+      "rationaleAI": "Sound recording, playback, broadcasting, and streaming technology addresses sound recording and reproducing devices (F) including mechanical (F.1), magnetic (F.2), and optical systems (F.3)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
       "relevantPathsAI": [
-        "F.3",
-        "G.3"
+        "K.1.a",
+        "K.1.b"
       ],
-      "rationaleAI": "Relevant to holography and the optical systems that underlie modern audio-visual technology (F.3, G.3)."
+      "rationaleAI": "Lasers and optical technologies connect to active components (K.1.a) and passive components including waveguides (K.1.b) in communications electronics."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
       "relevantPathsAI": [
+        "A",
         "I.5",
         "J.1",
         "J.2"
       ],
-      "rationaleAI": "The physics of waves underpins radio communications (I.5), radar (J.1), sonar (J.2), and modern telecommunications."
+      "rationaleAI": "Wave physics covering electromagnetic radiation and its applications connects to communication theory (A), radio communications (I.5), radar systems (J.1), and sonar systems (J.2)."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
       "relevantPathsAI": [
-        "F.5"
+        "F"
       ],
-      "rationaleAI": "Relevant to sound recording technologies from phonographs to digital systems, and the principles of high-fidelity reproduction (F, F.5)."
+      "rationaleAI": "Electronic sound production and reproduction alongside acoustic principles address sound recording and reproducing devices (F)."
     },
     {
       "vsiTitle": "Surveillance",
       "vsiAuthor": "David Lyon",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses detection and remote sensing systems, including the electronic monitoring technologies that raise contemporary privacy concerns (J)."
+      "relevantPathsAI": [
+        "J",
+        "I.8"
+      ],
+      "rationaleAI": "Surveillance systems using data collection and digital technologies connect to detection and remote sensing systems (J) and electronic networks (I.8)."
     },
     {
       "vsiTitle": "The History of Cinema",
       "vsiAuthor": "Geoffrey Nowell-Smith",
       "relevantPathsAI": [
+        "F",
         "G.2"
       ],
-      "rationaleAI": "Traces the technological evolution of motion-picture photography and film production from early cinema to digital formats (G.2)."
+      "rationaleAI": "Cinema technology covering sound, colour, and digital transitions addresses recording and reproducing devices (F) and motion-picture photography (G.2)."
     },
     {
       "vsiTitle": "Typography",
       "vsiAuthor": "Paul Luna",
       "relevantPathsAI": [
         "E.3",
-        "E.4",
-        "H.1"
+        "E.4"
       ],
-      "rationaleAI": "Spans printing technology from traditional plate-making and press work (E.3, E.4) to electronic and digital printing (H.1.d)."
+      "rationaleAI": "Typography covering letterform development, typeface design, and printing from early printing through digital media addresses printing machines and processes (E.3) and production of printing plates (E.4)."
     },
     {
       "vsiTitle": "Intellectual property",
       "vsiAuthor": "Siva Vaidhyanathan",
       "relevantPathsAI": [
-        "H",
-        "I.1"
+        "H"
       ],
-      "rationaleAI": "Addresses the legal frameworks -- copyright, patents, and digital rights -- that govern publishing (I.1) and information systems (H)."
+      "rationaleAI": "Legal frameworks governing creative works including copyright in digital contexts connect to information processing and systems (H) in the context of knowledge dissemination."
     },
     {
       "vsiTitle": "Condensed Matter Physics",
       "vsiAuthor": "Ross McKenzie",
       "relevantPathsAI": [
-        "K.1",
+        "K.1.a",
         "K.1.c"
       ],
-      "rationaleAI": "The physics of semiconductors and integrated circuits (K.1.a, K.1.c) provides the foundation for all modern computing hardware."
+      "rationaleAI": "Applications in silicon chips, liquid crystal displays, and magnetic memory directly address semiconductor devices (K.1.a) and integrated circuits (K.1.c)."
     },
     {
       "vsiTitle": "Dictionaries",
       "vsiAuthor": "Lynda Mugglestone",
       "relevantPathsAI": [
-        "H.2.c"
+        "H.2.c.i"
       ],
-      "rationaleAI": "Examines dictionaries and lexicons as structured information systems for reference and education (H.2.c.i)."
+      "rationaleAI": "History and cultural significance of dictionaries including online dictionaries directly addresses dictionaries and lexicons as educational and reference systems (H.2.c.i)."
     },
     {
       "vsiTitle": "Nanotechnology",
@@ -183,16 +209,18 @@
       "relevantPathsAI": [
         "K.1.c"
       ],
-      "rationaleAI": "Nanotechnology enables continued miniaturization of integrated circuits and microprocessors at the heart of computing (K.1.c)."
+      "rationaleAI": "Nanoscale science including quantum confinement and molecular machinery connects to integrated circuits and miniaturized electronic components (K.1.c)."
     },
     {
       "vsiTitle": "Biometrics",
       "vsiAuthor": "Michael Fairhurst",
       "relevantPathsAI": [
+        "J",
         "K.2"
       ],
-      "rationaleAI": "Addresses biometric sensing devices and pattern recognition, connecting physical measurement to information processing (K.2)."
+      "rationaleAI": "Individual identification through measurement of personal attributes including facial features and fingerprints connects to detection and remote sensing (J) and sensing devices and transducers (K.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

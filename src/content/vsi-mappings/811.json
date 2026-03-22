@@ -4,86 +4,130 @@
     {
       "vsiTitle": "Philosophy of Religion",
       "vsiAuthor": "Tim Bayne",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses 811.A on the philosophy of religion, covering the existence and attributes of the divine, the problem of evil, and the extent of human knowledge of God."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.1.a",
+        "A.1.c",
+        "A.1.d",
+        "D.3.c.i",
+        "D.3.d",
+        "D.11",
+        "G.2"
+      ],
+      "rationaleAI": "Philosophical inquiry into the existence of God (A.1.a), the extent of human knowledge of the divine (A.1.c), and the problem of evil (A.1.d). Engagement with arguments for and against God's existence connects to theism (D.3.c.i) and agnosticism/atheism (D.3.d). Treatment of miracles addresses D.11, and coverage of science-religion intersection relates to G.2."
     },
     {
       "vsiTitle": "God",
       "vsiAuthor": "John Bowker",
       "relevantPathsAI": [
-        "A.1",
-        "D.3"
+        "A",
+        "A.1.a",
+        "A.1.b",
+        "A.2",
+        "A.2.a",
+        "A.2.b",
+        "B",
+        "D.3",
+        "D.3.c",
+        "D.4"
       ],
-      "rationaleAI": "Covers questions about the nature of the divine across traditions, including creation, existence of God, and divine attributes, central to 811.A.1-2 and 811.D.3."
+      "rationaleAI": "Conceptions of God across world religions address the existence (A.1.a) and attributes (A.1.b) of the divine. The question of whether the divine is personal or impersonal (A.2.a) and singular or plural (A.2.b) is central. Religious experience (B) is explored through various traditions. Arguments for God's existence such as the Five Ways relate to doctrines concerning God (D.3), monotheism (D.3.c), and creation narratives (D.4)."
     },
     {
       "vsiTitle": "Theology",
       "vsiAuthor": "David F. Ford",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses theology as an attempt to understand religious belief, including doctrines of God, revelation, and the role of sacred scriptures across traditions (811.D)."
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.1.a",
+        "D.1.b",
+        "D.3",
+        "D.3.c",
+        "D.8",
+        "E",
+        "G"
+      ],
+      "rationaleAI": "Systematic study of the divine corresponds directly to theology (D), including engagement with sacred scriptures (D.1.a), doctrine and dogma (D.1.b), and doctrines concerning God (D.3). Coverage of salvation relates to D.8, and the study and classification of religions (E) is addressed through comparative theological analysis. Connections to ethics and epistemology reflect religion in relation to other human experience (G)."
     },
     {
       "vsiTitle": "Religion",
       "vsiAuthor": "Thomas A. Tweed",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides a broad framework for the study and classification of religions, directly relevant to 811.E and 811.A on the nature and characteristics of religion."
+      "relevantPathsAI": [
+        "A",
+        "E",
+        "G",
+        "G.3"
+      ],
+      "rationaleAI": "Fundamental questions about religion's definition, function, and historical change relate to the philosophy of religion (A) and the study and classification of religions (E). Religion's dual capacity regarding contemporary problems such as climate change and armed conflict connects to religion and society (G.3) and religion in relation to other aspects of human experience (G)."
     },
     {
       "vsiTitle": "Faith",
       "vsiAuthor": "Roger Trigg",
       "relevantPathsAI": [
-        "D.1.c"
+        "A",
+        "A.1.c",
+        "B",
+        "G.2",
+        "G.3",
+        "G.4"
       ],
-      "rationaleAI": "Examines belief, faith, and reason in relation to religion, directly relevant to 811.D.1.c on articles of faith and religious creeds, and 811.B on religious experience."
+      "rationaleAI": "Faith's relationship to reason and truth claims addresses human knowledge of the divine (A.1.c) and the philosophy of religion (A). The connection between belief and action relates to religious experience (B). Faith's role in public life, democratic governance, and law connects to religion and society (G.3), and faith's rational justification relates to religion and science (G.2). Faith and morality correspond to G.4."
     },
     {
       "vsiTitle": "Free will",
       "vsiAuthor": "Thomas Pink",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.d"
       ],
-      "rationaleAI": "Directly addresses the philosophical problem of free will, one of the special problems explicitly listed in 811.A.1.d."
+      "rationaleAI": "Free will as a philosophical problem spanning ancient through modern debates directly addresses the special problem of free will identified in A.1.d, examining determinism, compatibilism, and libertarian free will in relation to moral responsibility."
     },
     {
       "vsiTitle": "Evil",
       "vsiAuthor": "Luke Russell",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.d"
       ],
-      "rationaleAI": "Addresses the problem of evil and suffering, a special problem of the philosophy of religion listed in 811.A.1.d."
+      "rationaleAI": "Philosophical analysis of evil as a concept, including the banality of evil thesis and the nature of extreme wrongdoing, addresses the special problem of evil and suffering (A.1.d) within the philosophy of religion framework."
     },
     {
       "vsiTitle": "Atheism",
       "vsiAuthor": "Julian Baggini",
       "relevantPathsAI": [
-        "D.3"
+        "A.1.a",
+        "D.3.d",
+        "G.2"
       ],
-      "rationaleAI": "Directly covers atheism as a doctrinal position regarding the divine, the subject of 811.D.3.d."
+      "rationaleAI": "Atheism as affirmative denial of deities directly addresses the existence of the divine (A.1.a) and the category of atheism and agnosticism (D.3.d). The relationship between science and faith connects to religion and science (G.2)."
     },
     {
       "vsiTitle": "Agnosticism",
       "vsiAuthor": "Robin Le Poidevin",
       "relevantPathsAI": [
-        "D.3",
-        "A.1.c"
+        "A.1.a",
+        "A.1.c",
+        "D.3.d"
       ],
-      "rationaleAI": "Directly covers agnosticism, the other position listed alongside atheism in 811.D.3.d, and addresses limits of knowledge of the divine (811.A.1.c)."
+      "rationaleAI": "Agnosticism as an epistemological position regarding the existence of God (A.1.a) and the limits of human knowledge of the divine (A.1.c). Philosophically it falls within the category of atheism and agnosticism (D.3.d)."
     },
     {
       "vsiTitle": "Spirituality",
       "vsiAuthor": "Philip Sheldrake",
       "relevantPathsAI": [
-        "D.2"
+        "B",
+        "D.2",
+        "G.1"
       ],
-      "rationaleAI": "Addresses religious experience and mystical theology across traditions, covering the nature and varieties of spiritual experience in 811.B and 811.D.2."
+      "rationaleAI": "Spirituality as deepest values and meanings by which people live relates to religious experience (B) and mystical theology involving immediate experience of the divine (D.2). Connections to architecture and sacred spaces relate to religion and art (G.1)."
     },
     {
       "vsiTitle": "Miracles",
       "vsiAuthor": "Yujin Nagasawa",
       "relevantPathsAI": [
-        "D"
+        "D.11",
+        "G.2"
       ],
-      "rationaleAI": "Directly addresses the topic of miracles across religious traditions, the subject of 811.D.11."
+      "rationaleAI": "Examination of miracle claims across world religions and philosophical definitions of miracles directly addresses the doctrine of miracles (D.11). Engagement with Hume's arguments about natural law and supernatural intervention relates to religion and science (G.2)."
     },
     {
       "vsiTitle": "Angels",
@@ -91,16 +135,16 @@
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Directly covers angelology across Judaism, Christianity, Islam, and Hinduism, the specific topic of 811.D.5."
+      "rationaleAI": "Cross-religious examination of angels across Judaism, Christianity, Islam, and Hinduism, including theological speculation by Maimonides, directly addresses angelology (D.5)."
     },
     {
       "vsiTitle": "The Devil",
       "vsiAuthor": "Darren Oldridge",
       "relevantPathsAI": [
-        "D.3",
-        "A.1"
+        "A.1.d",
+        "D.5"
       ],
-      "rationaleAI": "Covers doctrines of evil and religious dualism through the figure of the Devil, relevant to 811.D.3.b on religious dualism and 811.A.1.d on evil."
+      "rationaleAI": "The Christian Devil as a supernatural intermediary figure relates to angelology and demonology (D.5). The Devil as embodiment of evil connects to the problem of evil and suffering (A.1.d)."
     },
     {
       "vsiTitle": "Science and Religion",
@@ -108,7 +152,7 @@
       "relevantPathsAI": [
         "G.2"
       ],
-      "rationaleAI": "Directly covers the relationship between religion and science, the subject of 811.G.2."
+      "rationaleAI": "The interdisciplinary relationship between science and religion, including the Galileo affair, Scopes trial, natural theology, and design arguments, directly addresses religion and science (G.2)."
     },
     {
       "vsiTitle": "Myth",
@@ -116,25 +160,23 @@
       "relevantPathsAI": [
         "F.1"
       ],
-      "rationaleAI": "Addresses myth as a belief system and its relationship to religion, directly relevant to 811.F.1 on myth and mythology."
+      "rationaleAI": "Theoretical approaches to myth across anthropology, psychology, and religious studies, including its cosmological and explanatory functions and the distinction from folklore, directly address myth and mythology (F.1)."
     },
     {
       "vsiTitle": "World Mythology",
       "vsiAuthor": "David A. Leeming",
       "relevantPathsAI": [
-        "F.1",
-        "D.4"
+        "F.1"
       ],
-      "rationaleAI": "Provides a comparative survey of creation myths, flood narratives, and deity archetypes across cultures, relevant to 811.F.1 and 811.D.4 on doctrines of creation."
+      "rationaleAI": "Comparative world mythology examining universal motifs of deities, creation, flood, trickster, and hero across Greek, Egyptian, Norse, Native American, and other cultures directly addresses myth and mythology (F.1)."
     },
     {
       "vsiTitle": "Classical Mythology",
       "vsiAuthor": "Helen Morales",
       "relevantPathsAI": [
-        "F.1",
-        "D.3"
+        "F.1"
       ],
-      "rationaleAI": "Examines Greek and Roman polytheistic mythological traditions, relevant to 811.F.1 on myth and mythology and 811.D.3.a on polytheism."
+      "rationaleAI": "Greek and Roman mythology covering the divine pantheon, hero narratives, and foundational myths, with cross-cultural reception from Ptolemaic Egypt to psychoanalysis, relates to myth and mythology (F.1)."
     },
     {
       "vsiTitle": "Magic",
@@ -142,7 +184,7 @@
       "relevantPathsAI": [
         "F.2"
       ],
-      "rationaleAI": "Directly covers magic as a system of belief and practice, the subject of 811.F.2."
+      "rationaleAI": "Magic as idea and practice across millennia, including its relationship to religion and science and the persistence of magical thinking, directly addresses magic (F.2)."
     },
     {
       "vsiTitle": "Witchcraft",
@@ -150,46 +192,58 @@
       "relevantPathsAI": [
         "F.3"
       ],
-      "rationaleAI": "Directly covers witchcraft as a belief system and practice, the subject of 811.F.3."
+      "rationaleAI": "Witchcraft from the ancient world through early modern witch-hunts to contemporary Wicca and modern paganism directly addresses witchcraft (F.3)."
     },
     {
       "vsiTitle": "Paganism",
       "vsiAuthor": "Owen Davies",
       "relevantPathsAI": [
-        "D.3",
-        "F.4"
+        "F",
+        "F.4",
+        "F.6",
+        "F.8"
       ],
-      "rationaleAI": "Covers polytheism, nature worship, shamanism, and sacred practices, relevant to 811.D.3.a on polytheism and 811.F.4-8 on shamanism, ancestor worship, and nature worship."
+      "rationaleAI": "Pagan beliefs and practices including polytheism, shamanism (F.4), and sacred traditions encompass several categories within other systems of belief (F). Coverage of non-Christian religions encountered through colonial expansion relates to nature worship (F.8) and ancestor-related practices (F.6)."
     },
     {
       "vsiTitle": "Superstition",
       "vsiAuthor": "Stuart Vyse",
       "relevantPathsAI": [
+        "F",
+        "F.2",
         "F.5"
       ],
-      "rationaleAI": "Examines superstitious beliefs including astrology and divination, relevant to 811.F.5 on astrology and alchemy."
+      "rationaleAI": "Superstitious beliefs including luck rituals, omens, and their psychological persistence relate to other systems of belief (F), magic (F.2), and astrology and alchemy (F.5)."
     },
     {
       "vsiTitle": "Humanism",
       "vsiAuthor": "Stephen Law",
       "relevantPathsAI": [
-        "D.3"
+        "D.3.d",
+        "G.2",
+        "G.4"
       ],
-      "rationaleAI": "Explores humanist and secular alternatives to religious belief, relevant to 811.D.3.d on atheism and agnosticism and 811.G on religion and other aspects of experience."
+      "rationaleAI": "Humanism as a worldview without reliance on religion, addressing God's existence and whether morality requires divine foundation, relates to atheism and agnosticism (D.3.d), religion and science (G.2), and religion and morality (G.4)."
     },
     {
       "vsiTitle": "Fundamentalism",
       "vsiAuthor": "Malise Ruthven",
-      "relevantPathsAI": [],
-      "rationaleAI": "Examines fundamentalism across religious traditions as a phenomenon of religious classification and doctrine, relevant to 811.E and 811.D."
+      "relevantPathsAI": [
+        "E",
+        "G.3"
+      ],
+      "rationaleAI": "Fundamentalism as a cross-religious phenomenon with roots in scriptural literalism connects to the study and classification of religions (E). Its political activism and engagement with social issues relates to religion and society (G.3)."
     },
     {
       "vsiTitle": "The Abrahamic Religions",
       "vsiAuthor": "Charles L. Cohen",
       "relevantPathsAI": [
-        "D.3.c"
+        "A.2.b",
+        "D.3.c",
+        "E",
+        "G.3"
       ],
-      "rationaleAI": "Comparative study of Judaism, Christianity, and Islam as monotheistic faiths, relevant to 811.D.3.c on monotheism and 811.E on classification of religions."
+      "rationaleAI": "Judaism, Christianity, and Islam as interrelated monotheistic traditions address whether the divine is one or more beings (A.2.b) and monotheism (D.3.c). Comparative analysis of three religions relates to the study and classification of religions (E), and the role of state power in religious development connects to religion and society (G.3)."
     },
     {
       "vsiTitle": "Christian art",
@@ -197,7 +251,7 @@
       "relevantPathsAI": [
         "G.1"
       ],
-      "rationaleAI": "Illustrates the relationship between religion and art through Christian iconography and symbolism, relevant to 811.G.1 on religion and art."
+      "rationaleAI": "Christian art spanning from medieval devotional works through Renaissance to contemporary interpretations, with liturgical and devotional functions, directly addresses religion and art (G.1)."
     },
     {
       "vsiTitle": "Ethics",
@@ -205,7 +259,7 @@
       "relevantPathsAI": [
         "G.4"
       ],
-      "rationaleAI": "Addresses morality, freedom, and ethical reasoning in relation to religious thought, relevant to 811.G.4 on religion and morality."
+      "rationaleAI": "Ethics as a branch of philosophy addressing fundamental moral questions, including whether morality is objective or constructed, relates to religion and morality (G.4)."
     },
     {
       "vsiTitle": "Conscience",
@@ -213,7 +267,7 @@
       "relevantPathsAI": [
         "G.4"
       ],
-      "rationaleAI": "Explores the relationship between conscience, morality, and religious duty, relevant to 811.G.4 on religion and morality."
+      "rationaleAI": "Conscience as a moral faculty tracing from Roman through early Christian and Reformation traditions relates to religion and morality (G.4)."
     },
     {
       "vsiTitle": "Secularism",
@@ -221,7 +275,7 @@
       "relevantPathsAI": [
         "G.3"
       ],
-      "rationaleAI": "Explores the relationship between religion and public life including church-state separation, relevant to 811.G.3 on religion and society."
+      "rationaleAI": "The separation of church and state and its philosophical foundations, including blasphemy laws and freedom of belief, relates to religion and society (G.3)."
     },
     {
       "vsiTitle": "Toleration",
@@ -229,13 +283,15 @@
       "relevantPathsAI": [
         "G.3"
       ],
-      "rationaleAI": "Examines religious pluralism and toleration, relevant to 811.G.3 on religion and society."
+      "rationaleAI": "Toleration as a concept for managing religious, cultural, and political difference, including its connections to liberalism and pluralism, relates to religion and society (G.3)."
     },
     {
       "vsiTitle": "War & Religion",
       "vsiAuthor": "Jolyon Mitchell, Joshua Rey",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores conflict and peace-building in religious contexts, relevant to 811.G on religion in relation to other aspects of human experience."
+      "relevantPathsAI": [
+        "G.3"
+      ],
+      "rationaleAI": "The relationship between religious traditions and armed conflict, including the Crusades, just war theory, and religious pacifism, directly addresses religion and society (G.3)."
     },
     {
       "vsiTitle": "Blasphemy",
@@ -243,23 +299,25 @@
       "relevantPathsAI": [
         "G.3"
       ],
-      "rationaleAI": "Examines concepts of the sacred and its violation across religions, relevant to 811.A on the nature of the divine and 811.G.3 on religion and society."
+      "rationaleAI": "Blasphemy as a religious, legal, and cultural concept persisting in secular contexts, including colonial blasphemy laws, relates to religion and society (G.3)."
     },
     {
       "vsiTitle": "The Meaning of Life",
       "vsiAuthor": "Terry Eagleton",
       "relevantPathsAI": [
+        "A",
         "A.1"
       ],
-      "rationaleAI": "Engages with fundamental questions about existence, purpose, and meaning that underlie the basic questions of philosophy of religion in 811.A.1."
+      "rationaleAI": "The meaning of life as a philosophical and cultural problem engaging with theology, existentialism, and the question of why secularization intensified the question relates to basic questions and problems in the philosophy of religion (A.1) and the broader category (A)."
     },
     {
       "vsiTitle": "Hermeneutics",
       "vsiAuthor": "Jens Zimmermann",
       "relevantPathsAI": [
-        "D.1"
+        "D.1",
+        "D.1.a"
       ],
-      "rationaleAI": "Covers the theory of interpretation including theological hermeneutics, relevant to 811.D.1.a on the role of Sacred Scriptures."
+      "rationaleAI": "Theory and practice of interpretation spanning textual and religious communication, including the role of hermeneutics in theology and sacred text interpretation, relates to theology in relation to divine revelation (D.1) and sacred scriptures (D.1.a)."
     },
     {
       "vsiTitle": "Metaphysics",
@@ -267,50 +325,67 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Addresses fundamental questions about existence, causation, and the nature of reality that underpin debates about the existence of the divine in 811.A.1.a."
+      "rationaleAI": "Core problems of metaphysics including the nature of objects, causation, and modality provide philosophical foundations tangentially related to basic questions in the philosophy of religion (A.1), though the connection is indirect."
     },
     {
       "vsiTitle": "Existentialism",
       "vsiAuthor": "Thomas Flynn",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers existentialist engagement with questions of God, faith, and the death of God (Kierkegaard, Sartre), relevant to 811.A on philosophy of religion."
+      "relevantPathsAI": [
+        "A.1",
+        "D.3.d"
+      ],
+      "rationaleAI": "Existentialism's engagement with the death of God, authenticity, and individual freedom relates to basic questions in the philosophy of religion (A.1). Nietzsche's pronouncement of God's death connects to atheism and agnosticism (D.3.d)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers anthropological approaches to religion, ritual, and belief systems, relevant to 811.C on religious phenomenology and 811.E on classification of religions."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Anthropological study of belief systems and comparative religion through fieldwork and ethnography relates to the study and classification of religions (E)."
     },
     {
       "vsiTitle": "Augustine",
       "vsiAuthor": "Henry Chadwick",
-      "relevantPathsAI": [],
-      "rationaleAI": "Augustine's theology addresses doctrines of grace, free will, evil, creation, and faith, central topics throughout 811.D."
+      "relevantPathsAI": [
+        "A.1.d",
+        "D.3.c",
+        "D.4",
+        "D.8"
+      ],
+      "rationaleAI": "Augustine's thought on free will (A.1.d), the Trinity and monotheism (D.3.c), creation (D.4), and the nature of grace (D.8) addresses several core theological doctrines within the philosophy of religion."
     },
     {
       "vsiTitle": "Thomas Aquinas",
       "vsiAuthor": "Fergus Kerr",
       "relevantPathsAI": [
-        "A.1",
-        "D.3.c"
+        "A.1.a",
+        "D.3",
+        "D.3.c.i",
+        "D.4"
       ],
-      "rationaleAI": "Aquinas developed proofs for God's existence, doctrines on divine attributes, and natural theology, central to 811.A.1.a and 811.D.3.c on theism."
+      "rationaleAI": "Aquinas's Five Ways arguments for God's existence (A.1.a), synthesis of Aristotelian philosophy with Christian doctrine concerning God (D.3), theism (D.3.c.i), and creation theology (D.4) are central to the philosophy of religion."
     },
     {
       "vsiTitle": "Spinoza",
       "vsiAuthor": "Roger Scruton",
       "relevantPathsAI": [
-        "D.3.c"
+        "A.1.a",
+        "A.2.a",
+        "D.3.c.iii"
       ],
-      "rationaleAI": "Spinoza's pantheistic philosophy directly addresses 811.D.3.c.iii on pantheism and panentheism."
+      "rationaleAI": "Spinoza's substance monism identifying God with Nature addresses the existence of the divine (A.1.a), whether the divine is personal or impersonal (A.2.a), and pantheism (D.3.c.iii)."
     },
     {
       "vsiTitle": "Anselm",
       "vsiAuthor": "Thomas Williams",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a",
+        "A.1.d",
+        "D.3.c.i",
+        "D.8"
       ],
-      "rationaleAI": "Anselm's ontological argument is a landmark in philosophy of religion on the existence of God, directly relevant to 811.A.1.a."
+      "rationaleAI": "Anselm's ontological argument addresses the existence of God (A.1.a), libertarian free will theory relates to A.1.d, perfect-being theology to theism (D.3.c.i), and the satisfaction theory of the Atonement to doctrines of salvation (D.8)."
     },
     {
       "vsiTitle": "Polygamy",
@@ -318,8 +393,9 @@
       "relevantPathsAI": [
         "G.3"
       ],
-      "rationaleAI": "Examines marriage practices across religions including Christianity, Islam, Judaism, and Mormonism, relevant to 811.G.3 on religion and society."
+      "rationaleAI": "Polygamy's intersections with Christianity, Islam, Judaism, and Mormonism, and how marriage practices shape power dynamics, relate to religion and society (G.3)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

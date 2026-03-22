@@ -4,48 +4,61 @@
     {
       "vsiTitle": "Epidemiology",
       "vsiAuthor": "Rodolfo Saracci",
-      "relevantPathsAI": [],
-      "rationaleAI": "Disease detection, diagnosis, classification, and population-level study of disease determinants are central to outline A and B."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "D.5"
+      ],
+      "rationaleAI": "Disease patterns and clinical trials address disease characteristics (A), diagnosis (B), and health hazards (D.5)."
     },
     {
       "vsiTitle": "The History of Medicine",
       "vsiAuthor": "William Bynum",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the historical development of diagnosis, hospital medicine, and therapeutic techniques (B, C)."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "C.1",
+        "C.2.a",
+        "C.2.c"
+      ],
+      "rationaleAI": "Medical history addresses disease classification (A), diagnosis (B), therapeutic treatment (C.1), surgery (C.2.a), and pharmacotherapy (C.2.c)."
     },
     {
       "vsiTitle": "Infectious Disease",
       "vsiAuthor": "Benjamin Bolker and Marta Wayne",
       "relevantPathsAI": [
-        "D.5"
+        "A",
+        "D.5",
+        "C.2.d"
       ],
-      "rationaleAI": "Directly addresses infectious and contagious diseases including cholera, influenza, dengue, MRSA, and vaccination (D.5)."
+      "rationaleAI": "Pathogen dynamics address disease characteristics (A), infectious diseases (D.5), and chemotherapy (C.2.d)."
     },
     {
       "vsiTitle": "Viruses",
       "vsiAuthor": "Dorothy H. Crawford",
       "relevantPathsAI": [
-        "D.5"
+        "D.5",
+        "C.2.b"
       ],
-      "rationaleAI": "Viral pathogens including coronavirus and SARS-CoV-2, along with vaccine technology, are relevant to contagious diseases (D.5)."
+      "rationaleAI": "Viral biology addresses infectious diseases (D.5) and biological therapy through vaccines (C.2.b)."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
       "relevantPathsAI": [
-        "D.5"
+        "D.5",
+        "C.2.d"
       ],
-      "rationaleAI": "Bacterial diseases, antibiotic resistance, tuberculosis, and leprosy as infectious agents connect to outline D.5."
+      "rationaleAI": "Bacterial pathogens and antibiotic resistance address infectious diseases (D.5) and chemotherapy (C.2.d)."
     },
     {
       "vsiTitle": "Fungi",
       "vsiAuthor": "Nicolas P. Money",
       "relevantPathsAI": [
-        "D.5",
-        "F.3",
-        "F.8"
+        "D.5"
       ],
-      "rationaleAI": "Fungal pathogens causing skin diseases, respiratory infections, and parasitic infections are relevant to D.5, F.3.a, and F.8.g."
+      "rationaleAI": "Fungal pathogens address infectious diseases (D.5)."
     },
     {
       "vsiTitle": "Microbiology",
@@ -53,15 +66,16 @@
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "The full range of microbial agents -- bacteria, archaea, fungi, algae -- responsible for infectious diseases and their diagnosis connects to D.5."
+      "rationaleAI": "Pathogenic microorganisms address infectious diseases (D.5)."
     },
     {
       "vsiTitle": "Pandemics",
       "vsiAuthor": "Christian W. McMillen",
       "relevantPathsAI": [
-        "D.5"
+        "D.5",
+        "A"
       ],
-      "rationaleAI": "Major epidemic infectious diseases -- influenza, malaria, plague, smallpox, tuberculosis, and COVID-19 -- are central to outline D.5."
+      "rationaleAI": "Pandemic diseases address infectious diseases (D.5) and disease characteristics (A)."
     },
     {
       "vsiTitle": "Plague",
@@ -69,50 +83,57 @@
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "The Black Death and coronavirus epidemics represent major contagious diseases discussed in D.5."
+      "rationaleAI": "Plague pathology addresses infectious diseases (D.5)."
     },
     {
       "vsiTitle": "HIV/AIDS",
       "vsiAuthor": "Alan Whiteside",
       "relevantPathsAI": [
         "D.5",
-        "F.6"
+        "C.2.d",
+        "F.6.b"
       ],
-      "rationaleAI": "A major sexually transmitted disease, its diagnosis, treatment, and public health impact connect to D.5 and F.6.b."
+      "rationaleAI": "HIV addresses infectious diseases (D.5), antiretroviral chemotherapy (C.2.d), and sexually transmitted diseases (F.6.b)."
     },
     {
       "vsiTitle": "Cancer",
       "vsiAuthor": "Nick James",
       "relevantPathsAI": [
-        "E"
+        "E",
+        "C.2.a",
+        "C.2.d",
+        "C.2.f"
       ],
-      "rationaleAI": "Directly addresses tumours and cancers, including diagnosis, treatment options, chemotherapy, and drug development (E)."
+      "rationaleAI": "Cancer addresses tumours (E), surgery (C.2.a), chemotherapy (C.2.d), and radiation therapy (C.2.f)."
     },
     {
       "vsiTitle": "The Immune System",
       "vsiAuthor": "Paul Klenerman",
       "relevantPathsAI": [
-        "C.2",
+        "C.2.b",
         "D.11"
       ],
-      "rationaleAI": "Immune disorders, allergenic diseases, and biological therapy via immune-based treatments are relevant to C.2.b and D.11."
+      "rationaleAI": "Immunotherapy addresses biological therapy (C.2.b), and autoimmunity addresses allergenic diseases (D.11)."
     },
     {
       "vsiTitle": "Drugs",
       "vsiAuthor": "Leslie Iversen",
       "relevantPathsAI": [
+        "C",
         "C.2.c",
+        "C.2.d",
         "D.10"
       ],
-      "rationaleAI": "Pharmacodynamic therapy, drug mechanisms, prescription drugs, and substance-related disease connect to C.2.c and D.10."
+      "rationaleAI": "Pharmacology addresses pharmacodynamic therapy (C.2.c), chemotherapy (C.2.d), and poisoning (D.10)."
     },
     {
       "vsiTitle": "Blood",
       "vsiAuthor": "Christopher Cooper",
       "relevantPathsAI": [
-        "F.1"
+        "F.1",
+        "F.1.d"
       ],
-      "rationaleAI": "Blood diseases, haemoglobin disorders, and transfusion are relevant to diseases of the blood and blood-forming tissues (F.1.d)."
+      "rationaleAI": "Blood diseases address cardiovascular system (F.1) and blood-forming tissues (F.1.d)."
     },
     {
       "vsiTitle": "Hormones",
@@ -120,7 +141,7 @@
       "relevantPathsAI": [
         "F.5"
       ],
-      "rationaleAI": "Pituitary, thyroid, adrenal, and pancreatic disorders are central to endocrine system diseases (F.5)."
+      "rationaleAI": "Hormonal dysfunction addresses endocrine system diseases (F.5)."
     },
     {
       "vsiTitle": "The Brain",
@@ -128,23 +149,24 @@
       "relevantPathsAI": [
         "F.9"
       ],
-      "rationaleAI": "Neurological conditions involving the basal ganglia and cerebral cortex are relevant to central nervous system diseases (F.9.d)."
+      "rationaleAI": "Neurological conditions address nervous system disorders (F.9)."
     },
     {
       "vsiTitle": "The Eye",
       "vsiAuthor": "Michael F. Land",
       "relevantPathsAI": [
-        "F.9"
+        "F.9.f"
       ],
-      "rationaleAI": "Colour blindness, retinal disorders, and vision impairment are relevant to disorders of the eye (F.9.f)."
+      "rationaleAI": "Vision disorders address eye diseases (F.9.f)."
     },
     {
       "vsiTitle": "Anaesthesia",
       "vsiAuthor": "Aidan O'Donnell",
       "relevantPathsAI": [
-        "C.2"
+        "C.2.a",
+        "C.2.c"
       ],
-      "rationaleAI": "Anaesthesia is essential to surgical treatment, including opioid analgesia and blood pressure management (C.2.a)."
+      "rationaleAI": "Anaesthetics address surgical support (C.2.a) and pharmacodynamic therapy (C.2.c)."
     },
     {
       "vsiTitle": "Nutrition",
@@ -152,82 +174,83 @@
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Nutritional diseases from deficiencies and excesses -- including obesity and undernutrition -- are central to outline D.3."
+      "rationaleAI": "Nutritional deficiencies and excesses address nutritional diseases (D.3)."
     },
     {
       "vsiTitle": "Stem Cells",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
-        "C.2"
+        "C.2.k"
       ],
-      "rationaleAI": "Therapeutic potential for diabetes and macular degeneration is relevant to substitution therapy and organ transplants (C.2.e, C.2.k)."
+      "rationaleAI": "Stem cell therapies address organ/tissue transplants (C.2.k)."
     },
     {
       "vsiTitle": "Psychiatry",
       "vsiAuthor": "Tom Burns",
       "relevantPathsAI": [
-        "F.9",
+        "F.9.d",
         "C.2.l"
       ],
-      "rationaleAI": "Mental illness, psychoanalysis, and psychiatric treatment are relevant to nervous system disorders and psychological therapy (F.9, C.2.l)."
+      "rationaleAI": "Psychiatric disorders address CNS disorders (F.9.d) and psychological therapy (C.2.l)."
     },
     {
       "vsiTitle": "Schizophrenia",
       "vsiAuthor": "Chris Frith, Eve C. Johnstone",
       "relevantPathsAI": [
-        "F.9"
+        "F.9.d"
       ],
-      "rationaleAI": "A major psychiatric disorder of the central nervous system, including brain imaging and drug treatment (F.9.d)."
+      "rationaleAI": "Schizophrenia addresses CNS disorders (F.9.d)."
     },
     {
       "vsiTitle": "Depression",
       "vsiAuthor": "Mary Jane Tacchi, Jan Scott",
       "relevantPathsAI": [
-        "F.9"
+        "F.9.d",
+        "C.2.c"
       ],
-      "rationaleAI": "Depressive and bipolar disorders are classified among disorders of the nervous system (F.9.e)."
+      "rationaleAI": "Depression addresses CNS disorders (F.9.d) and pharmacotherapy (C.2.c)."
     },
     {
       "vsiTitle": "Anxiety",
       "vsiAuthor": "Daniel Freeman, Jason Freeman",
       "relevantPathsAI": [
-        "F.9"
+        "F.9.d"
       ],
-      "rationaleAI": "Generalized anxiety disorder, heritability, and cognitive/behavioural treatments connect to nervous system disorders (F.9)."
+      "rationaleAI": "Anxiety disorders address CNS disorders (F.9.d)."
     },
     {
       "vsiTitle": "Dementia",
       "vsiAuthor": "Kathleen Taylor",
       "relevantPathsAI": [
-        "F.9"
+        "F.9.d"
       ],
-      "rationaleAI": "Degenerative disorders of the central nervous system, including diagnosis and treatment approaches, are central to F.9.d."
+      "rationaleAI": "Neurodegenerative conditions address CNS disorders (F.9.d)."
     },
     {
       "vsiTitle": "Autism",
       "vsiAuthor": "Uta Frith",
       "relevantPathsAI": [
         "D.6",
-        "D.7"
+        "F.9.d"
       ],
-      "rationaleAI": "A neurodevelopmental disorder relevant to diseases present at birth and childhood diseases (D.6, D.7)."
+      "rationaleAI": "Autism addresses congenital disorders (D.6) and CNS disorders (F.9.d)."
     },
     {
       "vsiTitle": "Dyslexia",
       "vsiAuthor": "Margaret J. Snowling",
       "relevantPathsAI": [
-        "F.9"
+        "F.9.d"
       ],
-      "rationaleAI": "A developmental disorder affecting reading and language, relevant to disorders of speech and cognition (F.9.i)."
+      "rationaleAI": "Dyslexia addresses CNS disorders (F.9.d)."
     },
     {
       "vsiTitle": "Addiction",
       "vsiAuthor": "Keith Humphreys",
       "relevantPathsAI": [
         "D.10",
-        "F.9"
+        "F.9.d"
       ],
-      "rationaleAI": "Substance use disorders connect to poisoning (D.10) and neurological aspects of drug dependence (F.9)."
+      "rationaleAI": "Addiction addresses poisoning (D.10) and CNS disorders (F.9.d)."
     },
     {
       "vsiTitle": "Psychotherapy",
@@ -235,7 +258,7 @@
       "relevantPathsAI": [
         "C.2.l"
       ],
-      "rationaleAI": "Directly addresses psychological therapy as a major therapeutic technique (C.2.l)."
+      "rationaleAI": "Psychotherapy addresses psychological therapy (C.2.l)."
     },
     {
       "vsiTitle": "Cognitive Behavioural Therapy",
@@ -243,7 +266,7 @@
       "relevantPathsAI": [
         "C.2.l"
       ],
-      "rationaleAI": "A specific form of psychological therapy used to treat anxiety, depression, and other mental disorders (C.2.l)."
+      "rationaleAI": "CBT addresses psychological therapy (C.2.l)."
     },
     {
       "vsiTitle": "Medical ethics",
@@ -251,42 +274,43 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Consent and euthanasia raise ethical considerations in formulating therapeutic regimens (C.1)."
+      "rationaleAI": "Ethics of euthanasia and consent address therapeutic regimen factors (C.1)."
     },
     {
       "vsiTitle": "Medical law",
       "vsiAuthor": "Charles Foster",
       "relevantPathsAI": [
         "C.1",
-        "C.2"
+        "C.2.k"
       ],
-      "rationaleAI": "Consent, negligence, organ donation, and body parts are relevant to legal aspects of treatment and transplants (C.1, C.2.k)."
+      "rationaleAI": "Legal frameworks address therapeutic decisions (C.1) and organ transplants (C.2.k)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
       "relevantPathsAI": [
-        "C.2",
+        "C.2.f",
         "D.8"
       ],
-      "rationaleAI": "Ionizing radiation is relevant to radiation therapy (C.2.f) and disorders caused by radiation exposure (D.8)."
+      "rationaleAI": "Ionizing radiation addresses radiation therapy (C.2.f) and physical agent disorders (D.8)."
     },
     {
       "vsiTitle": "Microbiomes",
       "vsiAuthor": "Angela E. Douglas",
       "relevantPathsAI": [
-        "F.4"
+        "D.5"
       ],
-      "rationaleAI": "The microbiome's role in neurological disorders and nutrition connects to digestive system diseases (F.4)."
+      "rationaleAI": "Disease-causing microbiomes address infectious disease dynamics (D.5)."
     },
     {
       "vsiTitle": "Ageing",
       "vsiAuthor": "Nancy Pachana",
       "relevantPathsAI": [
-        "F.9"
+        "F.9.d"
       ],
-      "rationaleAI": "Age-related degenerative conditions across body systems and gerontological aspects of disease connect to F.9.d."
+      "rationaleAI": "Age-related cognitive decline addresses CNS disorders (F.9.d)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

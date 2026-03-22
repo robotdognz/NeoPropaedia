@@ -4,22 +4,32 @@
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "relevantPathsAI": [],
-      "rationaleAI": "Introduces general conceptions of technology and engineering, relevant to A (definitions of technology) and the broad sweep of technological history."
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Engineering's history, scope, and relationship with science and technology address general conceptions of technology (A). Coverage of infrastructure, water systems, and climate change adaptation relates to technology's effects on social life and environment (B)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "C.3"
+        "B.1",
+        "C.3",
+        "C.3.a",
+        "C.3.b"
       ],
-      "rationaleAI": "Examines the transformation of 1750-1900 (C.3) including Watt's steam engine, Bessemer's steel process, textile mechanization, and the rise of industrial chemistry and communications."
+      "rationaleAI": "British industrialization covering steam power, textiles, and iron production exemplifies the Industrial Revolution period (C.3) with advances in power technology (C.3.a) and development of industries (C.3.b). Economic transformation through technological change demonstrates technology and wealth (B.1)."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses B (technology and contemporary life) including technology's role in economic development and Schumpeter's concept of creative destruction."
+      "relevantPathsAI": [
+        "A",
+        "B.1",
+        "C.4"
+      ],
+      "rationaleAI": "Innovation as a process driving economic and social development through technological change relates to general conceptions of technology (A) and technology and wealth (B.1). Coverage of disruptive technologies including AI and their implications connects to 20th-century technology developments (C.4)."
     },
     {
       "vsiTitle": "War and Technology",
@@ -27,7 +37,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Directly covers B.2 (technology and war) from ancient weapons through nuclear arms."
+      "rationaleAI": "The co-evolution of weapons systems, military tactics, and technological capabilities from prehistoric times to autonomous warfare directly addresses technology and war (B.2)."
     },
     {
       "vsiTitle": "Education",
@@ -35,16 +45,16 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Addresses B.3 (technology and education) including the role of technology in transforming pedagogical methods and educational access."
+      "rationaleAI": "Education systems examined through historical and social perspectives including adapting pedagogy for an increasingly digital world directly addresses technology and education (B.3)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
         "B.1",
-        "C"
+        "B.6"
       ],
-      "rationaleAI": "Links technological change to wealth creation (B.1) and traces the sociocultural consequences of technological shifts across global history (C)."
+      "rationaleAI": "Comparative analysis of why some countries achieved prosperity covering technological change and institutional frameworks addresses technology and wealth (B.1) and the export of Western technology to underdeveloped regions (B.6)."
     },
     {
       "vsiTitle": "Climate change",
@@ -52,7 +62,7 @@
       "relevantPathsAI": [
         "B.7"
       ],
-      "rationaleAI": "Directly relevant to B.7 (effects of technology on the environment) including fossil fuel combustion, industrial pollution, and the climate crisis."
+      "rationaleAI": "Climate change science covering global warming, ecological disruption, and solutions to decarbonization directly addresses the effects of technology on the environment (B.7)."
     },
     {
       "vsiTitle": "Anthropocene",
@@ -60,15 +70,15 @@
       "relevantPathsAI": [
         "B.7"
       ],
-      "rationaleAI": "Addresses B.7 (effects of technology on the environment) through the lens of humanity's accumulated technological impact on Earth systems."
+      "rationaleAI": "Humanity's permanent impact on Earth's geological record through pollution, species invasions, mass extinction, and fossil fuel combustion directly addresses effects of technology on the environment (B.7)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
       "relevantPathsAI": [
-        "C.1"
+        "C.1.a"
       ],
-      "rationaleAI": "Traces the beginnings of technology to c. 3000 BC (C.1.a), including Oldowan stone tools, fire use, and the earliest agricultural settlements."
+      "rationaleAI": "Earliest Australopithecines through the invention of agriculture and development of cities covers the beginnings of technology including early communities, stone tools, and agricultural origins (C.1.a)."
     },
     {
       "vsiTitle": "Ancient Greece",
@@ -76,92 +86,91 @@
       "relevantPathsAI": [
         "C.1.c"
       ],
-      "rationaleAI": "Illuminates the technological achievements of Greece 500 BC-AD 500 (C.1.c), including mastery of iron smelting, the Antikythera mechanism, and monumental architecture."
+      "rationaleAI": "Ancient Greek civilization covering political institutions and material culture connects to technological achievements of Greece (C.1.c)."
     },
     {
       "vsiTitle": "The Middle Ages",
       "vsiAuthor": "Miri Rubin",
       "relevantPathsAI": [
-        "C.2"
+        "C.2.a"
       ],
-      "rationaleAI": "Surveys medieval advances AD 500-1500 (C.2.a) including the heavy plough, wind and water mills, Gothic cathedrals, and advances in navigation and shipbuilding."
+      "rationaleAI": "Medieval European history covering agriculture, trade, and the emergence of commerce networks relates to medieval technological advances (C.2.a)."
     },
     {
       "vsiTitle": "The Scientific Revolution",
       "vsiAuthor": "Lawrence M. Principe",
       "relevantPathsAI": [
-        "C.2"
+        "C.2.b"
       ],
-      "rationaleAI": "Explores the emergence of Western technology 1500-1750 (C.2.b), including the invention of the telescope, microscope, and other scientific instruments."
+      "rationaleAI": "Sixteenth and seventeenth century developments covering invention of scientific instruments, new investigative methods, and technologies enabling discovery relate to the emergence of Western technology 1500-1750 (C.2.b)."
     },
     {
       "vsiTitle": "The History of Computing",
       "vsiAuthor": "Doron Swade",
       "relevantPathsAI": [
-        "C.4"
+        "C.4",
+        "C.4.b"
       ],
-      "rationaleAI": "Traces computing from Babbage's Analytical Engine to the electronic digital computer, relevant to Space Age technology and automation (C.4.b)."
+      "rationaleAI": "History of computing from ancient counting aids through the semiconductor revolution traces the development of electronic digital computing and the information age, central to Space Age technology (C.4.b)."
     },
     {
       "vsiTitle": "Nuclear power",
       "vsiAuthor": "Maxwell Irvine",
       "relevantPathsAI": [
-        "C.4"
+        "C.4.b"
       ],
-      "rationaleAI": "Focuses on nuclear fission power development in the 20th century, a defining technology of the Space Age (C.4.b)."
+      "rationaleAI": "Development of nuclear fission and fusion technologies for energy production directly addresses nuclear power as a Space Age technology (C.4.b)."
     },
     {
       "vsiTitle": "Renewable Energy",
       "vsiAuthor": "Nick Jelley",
       "relevantPathsAI": [
-        "C.3",
-        "C.4"
+        "C.4.b"
       ],
-      "rationaleAI": "Addresses advances in power technology (C.3.a) and modern energy developments (C.4.b) including solar, wind, and hydroelectric power."
+      "rationaleAI": "Solar photovoltaics, wind power, hydropower, battery storage, and grid management represent advances in energy technology within 20th-century and contemporary technological development (C.4.b)."
     },
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
       "relevantPathsAI": [
-        "C.3",
-        "C.4"
+        "C.4.b"
       ],
-      "rationaleAI": "Spans advances in power technology (C.3.a) through 20th-century energy infrastructure (C.4), including fossil fuels, nuclear energy, and electrical grids."
+      "rationaleAI": "Engineering analysis of energy conversion and distribution systems including fossil fuels, renewables, and nuclear power addresses advances in energy technology (C.4.b)."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
       "relevantPathsAI": [
-        "C.4"
+        "C.4.b"
       ],
-      "rationaleAI": "Explores automation, autonomous machines, and space exploration robotics as defining Space Age technologies (C.4.b)."
+      "rationaleAI": "Design, construction, and deployment of autonomous machines for manufacturing, hospitals, and space exploration represents automation technology in the modern era (C.4.b)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
       "relevantPathsAI": [
-        "C.4"
+        "C.4.b"
       ],
-      "rationaleAI": "Traces AI from Turing's foundational ideas through machine learning, relevant to the electronic digital computer and automation (C.4.b)."
+      "rationaleAI": "AI history, achievements, and future directions including practical applications in everyday life relate to automation and electronic digital computing as modern technology (C.4.b)."
     },
     {
       "vsiTitle": "Sustainability",
       "vsiAuthor": "Saleem H. Ali",
       "relevantPathsAI": [
-        "B.7",
-        "B.6"
+        "B.7"
       ],
-      "rationaleAI": "Addresses B.7 (effects of technology on the environment) and B.6 (technology and underdeveloped regions)."
+      "rationaleAI": "Sustainability addressing human impacts on planetary systems, material and energy flows, and technological interventions for sustainable societies relates to the effects of technology on the environment (B.7)."
     },
     {
       "vsiTitle": "Civil engineering",
       "vsiAuthor": "David Muir Wood",
       "relevantPathsAI": [
-        "C.1",
-        "C.1.c"
+        "A",
+        "C"
       ],
-      "rationaleAI": "Spans the urban revolution's waterworks and irrigation systems (C.1.b) through the architectural and constructional works of Greece and Rome (C.1.c)."
+      "rationaleAI": "Civil engineering covering bridges, tunnels, and urbanization addresses general conceptions of technology (A) and the role of engineering across the history of civilization (C)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

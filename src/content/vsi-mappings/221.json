@@ -4,84 +4,106 @@
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers atmospheric composition, the electromagnetic spectrum relevant to absorption and heating, greenhouse effect, and ocean-atmosphere interactions central to this entire section."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.3.a",
+        "B",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Atmospheric layers address composition (A), thermal structure (A.2), ozonosphere (A.3.a), and large-scale motions (B)."
     },
     {
       "vsiTitle": "Weather",
       "vsiAuthor": "Storm Dunlop",
       "relevantPathsAI": [
+        "B",
         "B.1",
+        "B.2",
+        "B.3",
+        "B.4",
+        "B.5",
+        "B.5.a",
+        "B.5.b",
+        "B.5.c",
         "B.7"
       ],
-      "rationaleAI": "Addresses atmospheric structure, wind systems, cyclones, anticyclones, and El Nino, directly relevant to the large-scale atmospheric motions in B.1-B.7."
+      "rationaleAI": "Wind systems address large-scale motions (B), jet streams (B.3), westerlies (B.4), tropical winds (B.5), and meridional circulations (B.7)."
     },
     {
       "vsiTitle": "Climate",
       "vsiAuthor": "Mark Maslin",
       "relevantPathsAI": [
-        "B.4",
-        "B.5"
+        "A.1.a.ii",
+        "B",
+        "B.2",
+        "B.5.c"
       ],
-      "rationaleAI": "Analyzes atmospheric circulation patterns, jet streams, trade winds, and monsoon systems relevant to the tropical and mid-latitude wind systems in B.4-B.5."
+      "rationaleAI": "Atmospheric dynamics connect to carbon budget (A.1.a.ii), motions (B), and monsoons (B.5.c)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.1.a.ii",
+        "A.3.a"
       ],
-      "rationaleAI": "Situates the carbon, nitrogen, and sulfur budgets of the atmosphere (A.1.a.ii-iv) within an integrated Earth system framework, including greenhouse processes."
+      "rationaleAI": "Carbon cycling connects to carbon budget (A.1.a.ii) and ozonosphere (A.3.a)."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b",
+        "A.3.b.ii"
       ],
-      "rationaleAI": "Explains solar radiation and solar-terrestrial interactions -- flares, coronal mass ejections, and the solar wind -- directly relevant to ionospheric disturbances, auroras, and magnetic storms (A.3.b.ii)."
+      "rationaleAI": "Solar dynamics connect to ionospheric solar disturbances (A.3.b.ii)."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.b"
       ],
-      "rationaleAI": "Treats the ionosphere, Van Allen radiation belts (A.3.c.iii), and Earth's magnetic field interactions with the upper atmosphere."
+      "rationaleAI": "Magnetic shielding connects to ionospheric variations (A.3.b)."
     },
     {
       "vsiTitle": "Geophysical and Climate Hazards",
       "vsiAuthor": "Bill McGuire",
       "relevantPathsAI": [
-        "B.5",
-        "B.4"
+        "B.5.b"
       ],
-      "rationaleAI": "Examines extreme weather storms including hurricanes and typhoons (B.5.b) and severe mid-latitude cyclonic disturbances (B.4.b)."
+      "rationaleAI": "Extreme weather connects to hurricanes (B.5.b)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
       "relevantPathsAI": [
-        "A.1"
+        "A.3.b"
       ],
-      "rationaleAI": "Provides planetary context for the atmosphere's layered structure and its role in the water cycle (A.1.a.i) and global circulation patterns."
+      "rationaleAI": "Solar wind connects to ionospheric disturbances (A.3.b)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b.iii"
       ],
-      "rationaleAI": "Explains electromagnetic radiation relevant to ultraviolet absorption by the ozonosphere (A.3.a.i) and the effects of the ionosphere on radio waves (A.3.b.iii)."
+      "rationaleAI": "EM waves connect to ionospheric radio effects (A.3.b.iii)."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
       "relevantPathsAI": [
-        "A.3"
+        "A.2"
       ],
-      "rationaleAI": "Discusses atmospheric effects on observations including turbulence and scintillation, plus radio wave propagation relevant to ionospheric effects on radio waves (A.3.b.iii)."
+      "rationaleAI": "Atmospheric turbulence connects to thermal structure (A.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

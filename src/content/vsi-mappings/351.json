@@ -5,47 +5,57 @@
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
       "relevantPathsAI": [
+        "A",
         "A.2",
-        "A.3"
+        "A.3",
+        "B",
+        "B.1",
+        "B.2",
+        "B.6"
       ],
-      "rationaleAI": "Core text covering ecosystems, communities, energy flow, biotic/abiotic components, and ecosystem productivity (A.2, A.3, B)."
+      "rationaleAI": "Ecological principles address biosphere organization (A.2), energy flow (A.3), ecosystem definition (B.1), biotic components (B.2), and ecosystem productivity (B.6)."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
       "relevantPathsAI": [
+        "A",
         "A.1",
         "A.3",
-        "A.4"
+        "A.4",
+        "A.4.b",
+        "A.5"
       ],
-      "rationaleAI": "Frames the biosphere as an integrated system, encompassing biogeochemical cycles (carbon, nitrogen, water), energy flow, and the Gaia hypothesis (A.1, A.3, A.4)."
+      "rationaleAI": "Integrated Earth system addresses biosphere preconditions (A.1), energy flow (A.3), carbon cycling (A.4.b), and the noosphere through sustainability (A.5)."
     },
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
       "relevantPathsAI": [
-        "A.4",
-        "B.3"
+        "A.4.b",
+        "B.3",
+        "B.3.b"
       ],
-      "rationaleAI": "Details atmospheric composition, the carbon/oxygen cycles, the greenhouse effect, and solar radiation as an abiotic component of ecosystems (A.4.b, B.3.b)."
+      "rationaleAI": "Atmospheric composition and greenhouse effect address carbon cycles (A.4.b) and radiation as abiotic component (B.3.b)."
     },
     {
       "vsiTitle": "Climate",
       "vsiAuthor": "Mark Maslin",
       "relevantPathsAI": [
+        "A.4.b",
         "B.3",
-        "A.4"
+        "B.3.a"
       ],
-      "rationaleAI": "Explains how temperature, pressure, and weather patterns function as abiotic drivers shaping ecosystems, alongside the carbon dioxide cycle (B.3.a, A.4.b)."
+      "rationaleAI": "Climate dynamics address carbon cycles (A.4.b) and pressure/temperature abiotic components (B.3.a)."
     },
     {
       "vsiTitle": "Water",
       "vsiAuthor": "John Finney",
       "relevantPathsAI": [
-        "A.4",
-        "B.3"
+        "A.4.e",
+        "B.3.d"
       ],
-      "rationaleAI": "Explores the chemistry and physical properties of water, directly relevant to the water cycle and water as a key abiotic ecosystem component (A.4.e, B.3.d)."
+      "rationaleAI": "Water properties address the water cycle (A.4.e) and water as abiotic component (B.3.d)."
     },
     {
       "vsiTitle": "Microbiology",
@@ -54,58 +64,65 @@
         "A.4.c",
         "B.2.c"
       ],
-      "rationaleAI": "Highlights bacteria, archaea, and fungi as decomposers that drive nitrogen fixation and nutrient cycling in ecosystems (A.4.c, B.2.c)."
+      "rationaleAI": "Nitrogen fixation addresses the nitrogen cycle (A.4.c), and decomposers serve as biotic components (B.2.c)."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
       "relevantPathsAI": [
-        "A.3",
-        "B.2"
+        "A.4.b",
+        "B",
+        "B.1",
+        "B.2",
+        "B.6"
       ],
-      "rationaleAI": "Illustrates forest ecosystems as major biosphere components with carbon cycling, energy flow, and producer/consumer/decomposer trophic levels (A.3, B.2)."
+      "rationaleAI": "Forest carbon cycling addresses carbon cycles (A.4.b) and ecosystem structure and productivity (B.1, B.2, B.6)."
     },
     {
       "vsiTitle": "Oceans",
       "vsiAuthor": "Dorrik Stow",
       "relevantPathsAI": [
-        "A.4",
-        "B.3"
+        "A.4.b",
+        "A.4.c",
+        "B.3.d"
       ],
-      "rationaleAI": "Presents oceanic environments as major biosphere components, including marine nutrient cycling and the ocean's role in the global water cycle (A.4.e, B.3.d)."
+      "rationaleAI": "Ocean biogeochemical cycling addresses carbon (A.4.b) and nitrogen cycles (A.4.c), and water characteristics (B.3.d)."
     },
     {
       "vsiTitle": "Marine biology",
       "vsiAuthor": "Philip V. Mladenov",
       "relevantPathsAI": [
-        "B.2"
+        "A.3",
+        "B",
+        "B.2",
+        "B.6"
       ],
-      "rationaleAI": "Examines marine producers, consumers, and decomposers alongside the biotic components that structure ocean ecosystems (B.2)."
+      "rationaleAI": "Marine diversity and biogeochemistry address energy flow (A.3), biotic components (B.2), and ecosystem productivity (B.6)."
     },
     {
       "vsiTitle": "Biogeography",
       "vsiAuthor": "Mark V. Lomolino",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "B"
       ],
-      "rationaleAI": "Maps the distribution of life across levels of biological organization -- from populations to biomes -- throughout the biosphere (A.2)."
+      "rationaleAI": "Geographic distribution addresses biosphere organization (A.2) and ecosystem concepts (B)."
     },
     {
       "vsiTitle": "Fire",
       "vsiAuthor": "Andrew C. Scott",
       "relevantPathsAI": [
-        "B.3"
+        "B.3.f"
       ],
-      "rationaleAI": "Directly covers fire as a limiting factor in ecosystems and its role in shaping vegetation structure and nutrient turnover (B.3.f)."
+      "rationaleAI": "Fire ecology addresses fire as a limiting factor (B.3.f)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
       "relevantPathsAI": [
-        "A.4",
-        "B.3"
+        "A.4.f"
       ],
-      "rationaleAI": "Explains mineral composition of soils and sedimentary processes relevant to the sedimentary cycles of essential minerals in ecosystems (A.4.f, B.3.d)."
+      "rationaleAI": "Essential mineral nutrients address sedimentary cycles (A.4.f)."
     },
     {
       "vsiTitle": "Anthropocene",
@@ -114,7 +131,7 @@
         "A.5",
         "B.4"
       ],
-      "rationaleAI": "Addresses human transformation of the biosphere, directly relevant to the concept of the noosphere and conditioning of the abiotic environment by organisms (A.5, B.4)."
+      "rationaleAI": "Human environmental impact addresses mankind's place in the biosphere (A.5) and abiotic conditioning by organisms (B.4)."
     },
     {
       "vsiTitle": "Astrobiology",
@@ -122,8 +139,9 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Investigates the conditions necessary for life on Earth -- oxygen levels, carbon dioxide balance, and habitability -- as preconditions of the biosphere (A.1)."
+      "rationaleAI": "Life's origins and habitability conditions address biosphere preconditions (A.1)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

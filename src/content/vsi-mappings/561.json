@@ -5,17 +5,22 @@
       "vsiTitle": "Education",
       "vsiAuthor": "Gary Thomas",
       "relevantPathsAI": [
-        "B.2"
+        "A",
+        "B",
+        "B.2",
+        "C"
       ],
-      "rationaleAI": "A core text on philosophies of education, teaching methods, educational systems, and the organization of schooling (A, B.2, C)."
+      "rationaleAI": "Education systems examined through philosophical and social perspectives address philosophies of education (A). Teaching methods and pedagogy address the teaching art (B, B.2). Institutional forms and educational inequality address the organization of education (C)."
     },
     {
       "vsiTitle": "Universities and Colleges",
       "vsiAuthor": "David Palfreyman, Paul Temple",
       "relevantPathsAI": [
-        "C.1.c"
+        "C.1.c",
+        "C.3",
+        "B.2.d"
       ],
-      "rationaleAI": "Examines higher education institutions including colleges, universities, and professional schools (C.1.c)."
+      "rationaleAI": "Higher education institutions from medieval origins to contemporary challenges directly address colleges, universities, and professional schools (C.1.c). Tuition fees and public funding address the economics of education (C.3). Digital and distance learning address instructional media (B.2.d)."
     },
     {
       "vsiTitle": "Learning",
@@ -23,16 +28,15 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Explores processes of learning including conditioning, memory, and experimental theories of knowledge acquisition (B.1)."
+      "rationaleAI": "Psychological science of learning through associative theories of conditioning directly addresses processes of learning and thinking including experimental findings and theories (B.1)."
     },
     {
       "vsiTitle": "Child Psychology",
       "vsiAuthor": "Usha Goswami",
       "relevantPathsAI": [
-        "B.1",
-        "C.1"
+        "B.1"
       ],
-      "rationaleAI": "Traces cognitive development, language acquisition, and brain maturation in children, providing essential context for pedagogy and preschool education (B.1, C.1.a)."
+      "rationaleAI": "Developmental psychology covering cognitive development, language acquisition, and brain development underlying learning directly addresses processes of learning and thinking (B.1)."
     },
     {
       "vsiTitle": "Thinking and Reasoning",
@@ -40,16 +44,15 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Addresses the cognitive mechanics of thinking, reasoning, and problem solving that underpin the learning process (B.1)."
+      "rationaleAI": "Cognitive psychology of thinking, reasoning, problem solving, and decision making directly addresses processes of learning and thinking (B.1)."
     },
     {
       "vsiTitle": "Intelligence",
       "vsiAuthor": "Ian J. Deary",
       "relevantPathsAI": [
-        "B.1",
-        "C.1"
+        "B.1"
       ],
-      "rationaleAI": "Examines theories of intelligence and IQ testing, with implications for understanding learning processes and special education (B.1, C.1.d)."
+      "rationaleAI": "Human intelligence covering psychometric measurement, cognitive abilities, and the Flynn effect directly addresses processes of learning and thinking (B.1)."
     },
     {
       "vsiTitle": "Memory",
@@ -57,7 +60,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Essential for understanding how memory processes enable learning and the retention of knowledge (B.1)."
+      "rationaleAI": "Memory as a cognitive phenomenon covering encoding, storage, retrieval, and the relationship between sleep and memory consolidation addresses processes of learning and thinking (B.1)."
     },
     {
       "vsiTitle": "Creativity",
@@ -65,7 +68,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Explores creative thinking as an integral dimension of the learning process and educational development (B.1)."
+      "rationaleAI": "Psychological perspectives on creativity covering models of creative expression and the relationship between individual genius and cultural environment address processes of learning and thinking (B.1)."
     },
     {
       "vsiTitle": "Psychology",
@@ -73,79 +76,81 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Provides the psychological foundations of learning, cognition, and developmental psychology that inform educational theory (B.1)."
+      "rationaleAI": "Psychology covering cognitive psychology (perception, attention, memory, intelligence) and developmental psychology provides foundations for understanding processes of learning and thinking (B.1)."
     },
     {
       "vsiTitle": "Adolescence",
       "vsiAuthor": "Peter Smith",
       "relevantPathsAI": [
-        "C.1"
+        "B.1",
+        "C.1.b"
       ],
-      "rationaleAI": "Adolescent development is central to secondary education, addressing the unique cognitive and social needs of teenage learners (C.1.b)."
+      "rationaleAI": "Developmental psychology of adolescence covering cognitive maturation and identity formation addresses processes of learning and thinking (B.1). The adolescent life stage as a transition connects to elementary and secondary education contexts (C.1.b)."
     },
     {
       "vsiTitle": "Autism",
       "vsiAuthor": "Uta Frith",
       "relevantPathsAI": [
-        "C.1"
+        "C.1.d"
       ],
-      "rationaleAI": "Uta Frith's pioneering account of autism provides critical insight into special education and the education of exceptional children (C.1.d)."
+      "rationaleAI": "Autism spectrum disorder covering social communication difficulties, restricted interests, and diagnostic frameworks directly addresses special education and the education of exceptional children (C.1.d)."
     },
     {
       "vsiTitle": "Dyslexia",
       "vsiAuthor": "Margaret J. Snowling",
       "relevantPathsAI": [
-        "C.1"
+        "C.1.d"
       ],
-      "rationaleAI": "Addresses dyslexia as a reading difficulty with direct implications for special education practice and intervention strategies (C.1.d)."
+      "rationaleAI": "Dyslexia as a reading disorder covering diagnosis, interventions, and evidence-based strategies directly addresses special education and the education of exceptional children (C.1.d)."
     },
     {
       "vsiTitle": "Reading",
       "vsiAuthor": "Belinda Jack",
       "relevantPathsAI": [
-        "B.2"
+        "B.2",
+        "C.1.e"
       ],
-      "rationaleAI": "Reading and literacy are fundamental educational skills; this text examines their role as instructional components (B.2.a)."
+      "rationaleAI": "Historical survey of reading and literacy covering the evolution from elite oral reading to mass literacy addresses the art and science of teaching (B.2). Public education and national literacy levels connect to education of the adult population (C.1.e)."
     },
     {
       "vsiTitle": "Psycholinguistics",
       "vsiAuthor": "Fernanda Ferreira",
       "relevantPathsAI": [
-        "B.2"
+        "B.1"
       ],
-      "rationaleAI": "Explores the psychological dimensions of language processing, directly informing how communication is taught and learned (B.2.a)."
+      "rationaleAI": "Psycholinguistics studying how humans process, comprehend, produce, and learn language addresses processes of learning and thinking (B.1)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.d"
       ],
-      "rationaleAI": "AI applications are reshaping computer-based instruction and instructional media in education (B.2.d)."
+      "rationaleAI": "AI applications in understanding memory, learning, and language processing connect to instructional media including computer-based instruction (B.2.d)."
     },
     {
       "vsiTitle": "Information",
       "vsiAuthor": "Luciano Floridi",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.d"
       ],
-      "rationaleAI": "Information theory and communication are foundational to instructional media and educational technology (B.2.d)."
+      "rationaleAI": "Information theory covering computation, digital technologies, and the Internet addresses instructional media including computer-based instruction (B.2.d)."
     },
     {
       "vsiTitle": "Human Resource Management",
       "vsiAuthor": "Adrian Wilkinson",
       "relevantPathsAI": [
-        "C.1"
+        "C.1.f"
       ],
-      "rationaleAI": "Addresses employee training, workplace development, and vocational training programs as forms of continuing education (C.1.f)."
+      "rationaleAI": "Human resource management covering workforce strategy, employee training, and skills development directly addresses vocational training, apprenticeship, and employee training (C.1.f)."
     },
     {
       "vsiTitle": "The History of Childhood",
       "vsiAuthor": "James Marten",
       "relevantPathsAI": [
-        "C.1"
+        "C"
       ],
-      "rationaleAI": "Traces historical attitudes toward childhood education and the evolving understanding of children's development (C.1.a, C.1.b)."
+      "rationaleAI": "Global historical survey of childhood covering changing conceptions of children's welfare and reform movements provides context for the organization of education (C) across cultures and periods."
     },
     {
       "vsiTitle": "Economics",
@@ -153,8 +158,9 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Human capital theory, a central topic here, illuminates the economics of education and its societal returns (C.3)."
+      "rationaleAI": "Economics covering human capital formation and development outcomes addresses the economics of education (C.3)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

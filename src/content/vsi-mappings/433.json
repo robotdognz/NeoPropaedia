@@ -5,33 +5,43 @@
       "vsiTitle": "Emotion",
       "vsiAuthor": "Dylan Evans",
       "relevantPathsAI": [
-        "B"
+        "B",
+        "B.1",
+        "B.2",
+        "B.3"
       ],
-      "rationaleAI": "Directly covers the nature of emotion, empathy, and emotional expression (B)."
+      "rationaleAI": "Evolutionary origins, biological basis, and neural mechanisms of emotions (B.1), diverse conceptions including neuroscience of empathy and cross-cultural debates (B.2), and facial expressions and emotional manifestations (B.3). Core focus on the nature and science of emotion aligns directly with the section's treatment of emotional states."
     },
     {
       "vsiTitle": "The History of Emotions",
       "vsiAuthor": "Thomas Dixon",
       "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
         "B.3"
       ],
-      "rationaleAI": "Covers the history of how emotions, affect, and feelings have been understood, including their expression and cultural dimensions (B.3)."
+      "rationaleAI": "Historical transformation of emotional experience addresses the nature of emotion (B.1), the interplay of biological and cultural frameworks for understanding emotion (B.2), and the relationship between private affect and public expression of emotions (B.3)."
     },
     {
       "vsiTitle": "Anxiety",
       "vsiAuthor": "Daniel Freeman, Jason Freeman",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "B",
+        "B.1",
+        "B.2"
       ],
-      "rationaleAI": "Anxiety is specifically named as a key human motive requiring special attention (A.2), covering the amygdala, conditioning, and arousal."
+      "rationaleAI": "Anxiety as a specific human motive and pathological manifestation directly addresses achievement, anxiety, and aggression as motives (A.2). The amygdala's role in fear processing and neurobiological mechanisms of anxiety relate to the nervous system's role in emotion (B.2) and the nature of emotion (B.1)."
     },
     {
       "vsiTitle": "Psychopathy",
       "vsiAuthor": "Essi Viding",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "B.1"
       ],
-      "rationaleAI": "Covers aggression and empathy deficits, directly relevant to aggression as a specific human motive (A.2)."
+      "rationaleAI": "Psychopathy's emotional and empathic deficits and relationship to aggression and violence connect to specific human needs and motives including aggression (A.2). The atypical emotional processing in psychopaths illuminates the nature of emotion from a deficit perspective (B.1)."
     },
     {
       "vsiTitle": "Sexuality",
@@ -39,40 +49,47 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Sexual behaviour and deviations are specifically named as requiring special attention in motivational states (A.2)."
+      "rationaleAI": "Human sexuality examined through psychological lenses directly addresses sexual behaviour and deviations as specific human motives (A.2), including the social construction of sexual norms and debates over biological versus social determinism."
     },
     {
       "vsiTitle": "Love",
       "vsiAuthor": "Ronald de Sousa",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "B",
+        "B.1"
       ],
-      "rationaleAI": "Covers desire, pleasure, and love as fundamental motivational and emotional states (A.2, B)."
+      "rationaleAI": "Philosophical analysis of love as desire and motivation addresses specific human needs and motives (A.2). Exploration of love's emotional dimensions including Freudian psychology and the nature of romantic attachment relates to the nature of emotion (B.1)."
     },
     {
       "vsiTitle": "Pain",
       "vsiAuthor": "Rob Boddice",
       "relevantPathsAI": [
-        "B"
+        "B",
+        "B.1",
+        "B.2",
+        "B.3"
       ],
-      "rationaleAI": "Covers pain, pleasure, and their emotional dimensions, relevant to emotional states and the pleasant/unpleasant (B)."
+      "rationaleAI": "Neuroscience and physiology of pain perception address bodily conditions accompanying arousal (B), the nature of pain as an emotional experience (B.1), the nervous system's role in pain processing (B.2), and bodily manifestations of pain (B.3)."
     },
     {
       "vsiTitle": "Happiness",
       "vsiAuthor": "Daniel M. Haybron",
       "relevantPathsAI": [
-        "A.1"
+        "A.2",
+        "B",
+        "B.1"
       ],
-      "rationaleAI": "Covers hedonic dimensions of emotion and motivation, relevant to hedonic theories of motivation (A.1)."
+      "rationaleAI": "Psychological research on happiness, personality, depression, and emotional well-being relates to specific human needs and motives (A.2). Examination of subjective experience and emotional states connects to the nature of emotion (B.1) and emotional states broadly (B)."
     },
     {
       "vsiTitle": "Freud",
       "vsiAuthor": "Anthony Storr",
       "relevantPathsAI": [
         "A.1",
-        "C.2"
+        "A.2"
       ],
-      "rationaleAI": "Psychoanalytic theory is explicitly cited as a theory of motivation (A.1); covers drives, instincts, sexual development, and dreams (C.2)."
+      "rationaleAI": "Freud's psychoanalytic theory of unconscious motivation, the id-ego-superego structure, and psychosexual development directly addresses psychoanalytic theories of motivation (A.1). His treatment of sexual deviation and the Oedipus complex addresses specific human needs including sexual behaviour (A.2)."
     },
     {
       "vsiTitle": "Psychoanalysis",
@@ -80,13 +97,16 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Psychoanalytic theories are named as diverse theories of motivation (A.1), covering unconscious drives and wish fulfilment."
+      "rationaleAI": "Psychoanalytic concepts including the unconscious, the Oedipus complex, and obsessional neurosis directly address psychoanalytic theories of motivation (A.1), covering how unconscious drives channel behaviour."
     },
     {
       "vsiTitle": "Jung",
       "vsiAuthor": "Anthony Stevens",
-      "relevantPathsAI": [],
-      "rationaleAI": "Jungian psychology addresses motivational drives, archetypes, and the relationship between conscious and unconscious states."
+      "relevantPathsAI": [
+        "A.1",
+        "C.2"
+      ],
+      "rationaleAI": "Jungian analytical psychology with concepts of the collective unconscious, archetypes, and individuation provides an alternative psychoanalytic theory of motivation (A.1). Jung's theories on dream interpretation connect to dreams as altered states of consciousness (C.2)."
     },
     {
       "vsiTitle": "Ivan Pavlov",
@@ -95,7 +115,7 @@
         "A.1",
         "A.4"
       ],
-      "rationaleAI": "Pavlov's conditioning research is foundational to drive and arousal theories of motivation and reinforcement (A.1, A.4)."
+      "rationaleAI": "Pavlov's work on conditional reflexes as mechanistic explanations of behaviour relates to drive theories of motivation (A.1). His quest to constrain the psyche within mechanistic law connects to practical applications of motivation theory emphasizing reinforcement (A.4)."
     },
     {
       "vsiTitle": "Sleep",
@@ -103,7 +123,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Directly covers sleep as a transient state affecting behaviour including REM/NREM stages, sleep disorders, and melatonin (C.1)."
+      "rationaleAI": "Biological and psychological dimensions of sleep including REM and NREM stages, circadian regulation, and health consequences of sleep deprivation directly address sleep as a transient state affecting behaviour and experience (C.1)."
     },
     {
       "vsiTitle": "Dreaming",
@@ -111,7 +131,7 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Directly covers dreams as transient states including brain imaging, REM sleep, and dream interpretation (C.2)."
+      "rationaleAI": "Brain mechanisms generating dreams, the limbic system and reticular activating system in dream production, and the function of dreams in memory consolidation directly address dreams as transient states affecting behaviour and experience (C.2)."
     },
     {
       "vsiTitle": "Circadian Rhythms",
@@ -120,7 +140,7 @@
         "C.1",
         "C.4"
       ],
-      "rationaleAI": "Covers the biological basis of sleep-wake cycles and their effects on arousal and fatigue (C.1, C.4)."
+      "rationaleAI": "Circadian timekeeping systems governing sleep-wake cycles relate to sleep as a transient state (C.1). Health consequences of circadian disruption including jet lag and shift work connect to fatigue (C.4)."
     },
     {
       "vsiTitle": "Consciousness",
@@ -128,7 +148,7 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Directly relevant to hypnosis and states of altered consciousness (C.3)."
+      "rationaleAI": "Altered states of consciousness, the hard problem of consciousness, and physiological bases of subjective experience directly address hypnosis and related states of altered consciousness (C.3)."
     },
     {
       "vsiTitle": "Drugs",
@@ -136,24 +156,25 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Covers substances that alter consciousness and arousal, relevant to hypnosis-related states and factors affecting transient states (C.3)."
+      "rationaleAI": "Pharmacological effects of recreational and medicinal substances on consciousness, including cannabis, cocaine, alcohol, and their mechanisms of action in the body, directly address altered states of consciousness (C.3) through chemical means."
     },
     {
       "vsiTitle": "Addiction",
       "vsiAuthor": "Keith Humphreys",
       "relevantPathsAI": [
-        "A.1",
-        "A.4"
+        "A.2",
+        "C.3"
       ],
-      "rationaleAI": "Covers compulsive drives, cravings, and reinforcement, relevant to incentive and hedonic theories of motivation (A.1, A.4)."
+      "rationaleAI": "Addiction as behavioural compulsion addresses specific human needs and motives (A.2) in terms of substance dependence. The altered states produced by alcohol and drugs connect to states of altered consciousness (C.3)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
       "relevantPathsAI": [
-        "B.2"
+        "B.2",
+        "C.3"
       ],
-      "rationaleAI": "Covers the nervous system's role in emotion, arousal, and motivation, including basal ganglia and cerebral cortex (B.2)."
+      "rationaleAI": "Neuroanatomy and neurophysiology of the brain including sensory processing and altered mental states address the nervous system's role in emotion (B.2) and states of altered consciousness (C.3)."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
@@ -161,7 +182,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Covers the amygdala and brain systems involved in emotional processing and arousal conditions (B.2)."
+      "rationaleAI": "Neural basis of mental processes including attention, memory, and decision-making illuminates the role of the nervous system in emotional and motivational processing (B.2)."
     },
     {
       "vsiTitle": "Social Psychology",
@@ -170,22 +191,25 @@
         "A.2",
         "A.3"
       ],
-      "rationaleAI": "Covers cognitive dissonance, aggression, and situational/interactional factors in motivation (A.2, A.3)."
+      "rationaleAI": "Cognitive dissonance, aggression, and persuasion as social-psychological phenomena address specific human motives including aggression (A.2). Situational and interactional factors including cognitive dissonance and balance relate to stress factors and cognitive evaluation (A.3)."
     },
     {
       "vsiTitle": "Behavioural Economics",
       "vsiAuthor": "Michelle Baddeley",
       "relevantPathsAI": [
-        "A.1",
-        "A.4"
+        "A.3"
       ],
-      "rationaleAI": "Covers incentive theories and reinforcement in decision-making, relevant to incentive and hedonic motivation theories (A.1, A.4)."
+      "rationaleAI": "Cognitive biases, heuristics, and the influence of mood and emotions on financial decisions connect to situational and interactional factors, cognitive evaluation, and cognitive dissonance (A.3)."
     },
     {
       "vsiTitle": "Psychology",
       "vsiAuthor": "Gillian Butler, Freda McManus",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides the broad framework for understanding motivational states, emotional states, and transient states affecting behaviour."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Broad coverage of psychology including cognitive processes, abnormal psychology, and developmental changes provides general context for motivational states (A), emotional states (B), and transient states affecting behaviour (C)."
     },
     {
       "vsiTitle": "Philosophy of Mind",
@@ -194,17 +218,17 @@
         "B.1",
         "C.3"
       ],
-      "rationaleAI": "Covers the nature of emotion, sensation, and consciousness as they relate to internal states and behaviour (B.1, C.3)."
+      "rationaleAI": "The mind-body relationship, consciousness, and subjective experience address philosophical dimensions of the nature of emotion (B.1) and altered states of consciousness (C.3)."
     },
     {
       "vsiTitle": "Animal Behaviour",
       "vsiAuthor": "Tristram D. Wyatt",
       "relevantPathsAI": [
-        "A.1",
-        "B.3"
+        "A.1"
       ],
-      "rationaleAI": "Covers instinct, learning, and alarm responses, relevant to drive and instinct theories of motivation (A.1) and startle response (B.3)."
+      "rationaleAI": "Evolutionary analysis of behavioural drives including kin selection, parental care, and survival-oriented motivation provides comparative context for diverse theories of motivation (A.1) through instinct and evolutionary frameworks."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

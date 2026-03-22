@@ -4,50 +4,83 @@
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers structures of all major body systems: skeleton, heart, nervous system, lymphatic system, abdomen, pelvis, and trunk (A through K)."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "J.1",
+        "J.2"
+      ],
+      "rationaleAI": "Comprehensive anatomy covering cardiovascular (A), lymphatic (B), respiratory (C), digestive (D), reproductive (F), skeletal (H), body cavities (I), and nervous systems (J.1, J.2)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers functions of all major body systems including cardiovascular, respiratory, digestive, endocrine, and nervous systems (A through K)."
+      "relevantPathsAI": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "J"
+      ],
+      "rationaleAI": "Physiological mechanisms address cardiovascular (A), respiratory (C), digestive (D), endocrine (E), reproductive (F), excretory (G), and nervous system functions (J)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
       "relevantPathsAI": [
+        "J",
         "J.1",
         "J.2",
         "J.3"
       ],
-      "rationaleAI": "Examines the central nervous system, cerebral cortex, basal ganglia, sensory processing, and spinal cord architecture (J.1, J.2, J.3)."
+      "rationaleAI": "Neuroanatomy addresses central (J.1), peripheral (J.2), and autonomic nervous systems (J.3)."
     },
     {
       "vsiTitle": "Blood",
       "vsiAuthor": "Christopher Cooper",
       "relevantPathsAI": [
+        "A",
         "A.3",
-        "A.4"
+        "A.3.a",
+        "A.3.b",
+        "A.3.c",
+        "A.4",
+        "B"
       ],
-      "rationaleAI": "Directly covers blood components, haemoglobin, blood pressure, oxygen transport, and transfusion, corresponding to A.3 and A.4."
+      "rationaleAI": "Blood composition addresses plasma and cells (A.3.a, A.3.b), blood groups, clotting (A.3.c), circulation (A.4), and lymphatic system (B)."
     },
     {
       "vsiTitle": "The Immune System",
       "vsiAuthor": "Paul Klenerman",
       "relevantPathsAI": [
+        "A.3.b",
         "B"
       ],
-      "rationaleAI": "Details the lymphatic system including lymphocytes, antibody production, and immune defense mechanisms (B)."
+      "rationaleAI": "White blood cells address leukocytes (A.3.b) and lymphatic system (B)."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
       "relevantPathsAI": [
+        "E",
         "E.1",
+        "E.1.a",
+        "E.1.b",
+        "E.1.c",
+        "E.1.d",
+        "E.1.e",
         "E.2"
       ],
-      "rationaleAI": "Directly covers thyroid, adrenal, pituitary, pancreatic islets, growth hormone, and reproductive hormones (E.1, E.2)."
+      "rationaleAI": "Endocrine physiology addresses thyroid (E.1.a), adrenals (E.1.b), pituitary (E.1.c), hypothalamus (E.1.d), pancreatic islets (E.1.e), and reproductive endocrinology (E.2)."
     },
     {
       "vsiTitle": "The Eye",
@@ -55,29 +88,31 @@
       "relevantPathsAI": [
         "J.4"
       ],
-      "rationaleAI": "Directly covers the eye, retina, lens, optic nerve, colour vision, and visual processing (J.4)."
+      "rationaleAI": "Retinal anatomy addresses the eye and vision (J.4)."
     },
     {
       "vsiTitle": "Smell",
       "vsiAuthor": "Matthew Cobb",
       "relevantPathsAI": [
-        "J.6"
+        "J.6.e"
       ],
-      "rationaleAI": "Directly covers olfactory processes and the smell sense (J.6.e)."
+      "rationaleAI": "Olfactory physiology addresses the smell sense (J.6.e)."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explains cell biology underlying all body tissues, including blood cells, the nuclear envelope, and the endoplasmic reticulum (K)."
+      "relevantPathsAI": [
+        "K"
+      ],
+      "rationaleAI": "Cell biology addresses composition of body tissues (K)."
     },
     {
       "vsiTitle": "Teeth",
       "vsiAuthor": "Peter S. Ungar",
       "relevantPathsAI": [
-        "D.1"
+        "D.1.a"
       ],
-      "rationaleAI": "Describes dental structures including canines, molars, enamel, and dentine, part of the mouth and digestive system (D.1.a)."
+      "rationaleAI": "Dental anatomy addresses mouth structures (D.1.a)."
     },
     {
       "vsiTitle": "Enzymes",
@@ -85,19 +120,24 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Enzymes drive the digestive process, metabolic functions, and biochemical reactions throughout all body systems (D.2)."
+      "rationaleAI": "Enzymatic catalysis addresses the digestive process (D.2)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
-      "relevantPathsAI": [],
-      "rationaleAI": "Illuminates the molecular basis of metabolism, cell membranes, and chemical bonding relevant to body fluids and tissues (K)."
+      "relevantPathsAI": [
+        "K"
+      ],
+      "rationaleAI": "Molecular structures address body tissue composition (K)."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses biochemical reactions, DNA, and cellular chemistry underlying the composition and function of body tissues and fluids (K)."
+      "relevantPathsAI": [
+        "D.2",
+        "K"
+      ],
+      "rationaleAI": "Metabolic pathways address digestion (D.2) and tissue chemistry (K)."
     },
     {
       "vsiTitle": "Nutrition",
@@ -105,15 +145,15 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Explains metabolism, vitamin function, and protein processing relevant to the digestive system's absorption and nutrient utilization (D.2)."
+      "rationaleAI": "Macronutrients and metabolism address digestion (D.2)."
     },
     {
       "vsiTitle": "Pain",
       "vsiAuthor": "Rob Boddice",
       "relevantPathsAI": [
-        "J.6"
+        "J.6.a"
       ],
-      "rationaleAI": "Investigates pain perception and pain management, relevant to cutaneous senses including touch, heat, cold, and nociception (J.6.a)."
+      "rationaleAI": "Pain physiology addresses cutaneous pain sense (J.6.a)."
     },
     {
       "vsiTitle": "Sound",
@@ -121,7 +161,7 @@
       "relevantPathsAI": [
         "J.5"
       ],
-      "rationaleAI": "Explains acoustics, frequency, pitch, and resonance relevant to the ear and the process of audition (J.5)."
+      "rationaleAI": "Hearing mechanisms address audition (J.5)."
     },
     {
       "vsiTitle": "Perception",
@@ -130,15 +170,15 @@
         "J.4",
         "J.6"
       ],
-      "rationaleAI": "Analyzes the visual system, colour perception, motion perception, and the physiology of sensory processing (J.4, J.6)."
+      "rationaleAI": "Visual perception addresses vision (J.4) and other sensory receptors (J.6)."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
       "relevantPathsAI": [
-        "E.1"
+        "E.1.h"
       ],
-      "rationaleAI": "Describes biological rhythms regulated by the suprachiasmatic nucleus of the hypothalamus and the pineal gland's melatonin secretion (E.1.d, E.1.h)."
+      "rationaleAI": "Circadian clocks relate to pineal gland and other endocrine organs (E.1.h)."
     },
     {
       "vsiTitle": "Developmental biology",
@@ -146,7 +186,7 @@
       "relevantPathsAI": [
         "J.1"
       ],
-      "rationaleAI": "Shows how body structures differentiate during embryonic development, including nervous system formation and Hox gene patterning (J.1, H)."
+      "rationaleAI": "Nervous system formation addresses central nervous system structure (J.1)."
     },
     {
       "vsiTitle": "Microbiomes",
@@ -154,17 +194,17 @@
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "The gut microbiome is integral to digestive system function and nutrition absorption (D)."
+      "rationaleAI": "Human microbial communities relate to the digestive system (D)."
     },
     {
       "vsiTitle": "Anaesthesia",
       "vsiAuthor": "Aidan O'Donnell",
       "relevantPathsAI": [
+        "J",
         "J.2",
-        "J.3",
-        "H.7"
+        "J.3"
       ],
-      "rationaleAI": "Explains the sympathetic nervous system, action potentials, spinal cord anatomy, and muscle physiology from an anaesthetic perspective (J.2, J.3, H.7)."
+      "rationaleAI": "Action potentials and sympathetic responses address peripheral (J.2) and autonomic nervous systems (J.3)."
     },
     {
       "vsiTitle": "Memory",
@@ -172,22 +212,24 @@
       "relevantPathsAI": [
         "J.1"
       ],
-      "rationaleAI": "Explores brain-based memory processes, including the hippocampus and long-term potentiation, relevant to the central nervous system's cognitive functions (J.1)."
+      "rationaleAI": "Neural memory substrates address brain structure (J.1)."
     },
     {
       "vsiTitle": "Fluid Mechanics",
       "vsiAuthor": "Eric Lauga",
       "relevantPathsAI": [
-        "A.4",
-        "C.3"
+        "A.4"
       ],
-      "rationaleAI": "Applies fluid dynamics principles to blood circulation, respiratory airflow, and the physics of body fluid transport (A.4, C.3)."
+      "rationaleAI": "Fluid dynamics relate to blood circulation (A.4)."
     },
     {
       "vsiTitle": "Systems Biology",
       "vsiAuthor": "Eberhard O. Voit",
-      "relevantPathsAI": [],
-      "rationaleAI": "Takes a systems-level perspective on the digestive system and metabolic processes, modeling how organs interact as integrated networks (D, E)."
+      "relevantPathsAI": [
+        "E",
+        "K"
+      ],
+      "rationaleAI": "Cellular signaling relates to endocrine function (E) and tissue composition (K)."
     },
     {
       "vsiTitle": "The Body",
@@ -196,5 +238,6 @@
       "rationaleAI": "Explores the sociology and cultural significance of the human body, providing broader context for understanding the structures and functions covered in this section."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

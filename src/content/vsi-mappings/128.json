@@ -5,105 +5,156 @@
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.4",
+        "A.5",
+        "A.6",
+        "A.7",
+        "B",
+        "B.1",
+        "B.2",
+        "C",
+        "E"
       ],
-      "rationaleAI": "Directly covers general wave phenomena (A), including wave classification, diffraction, interference, electromagnetic radiation, sound, water waves, and gravitational waves."
+      "rationaleAI": "Comprehensive wave treatment addresses general phenomena (A), electromagnetic waves (B), light waves (C), and sound (E)."
     },
     {
       "vsiTitle": "Sound",
       "vsiAuthor": "Mike Goldsmith",
       "relevantPathsAI": [
-        "E"
+        "E",
+        "E.1",
+        "E.2",
+        "E.3",
+        "E.4",
+        "E.5",
+        "E.5.a",
+        "E.5.b",
+        "E.5.c",
+        "E.5.e",
+        "E.6",
+        "E.6.a"
       ],
-      "rationaleAI": "Directly covers sound waves (E), including frequency, pitch, loudness, resonance, the Doppler effect, infrasound, noise, and acoustical properties."
+      "rationaleAI": "Sound physics addresses nature of sound waves (E.1), shock waves (E.2), sources (E.3), reception (E.4), applications including recording (E.5.a) and noise control (E.5.e), and musical sound (E.6)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
       "relevantPathsAI": [
+        "B.4",
         "C",
+        "C.1",
+        "C.1.a",
+        "C.2",
+        "C.6",
+        "C.7",
+        "C.8",
+        "C.8.a",
+        "C.8.b",
         "D"
       ],
-      "rationaleAI": "Directly covers light waves (C) and focusing/imaging (D), including optics, wave-particle duality, speed of light, and the quantum theory of light."
+      "rationaleAI": "Light physics addresses wave theory (C.1), speed of light (C.2), lasers (B.4), quantum theory of light (C.8), and focusing and imaging (D)."
     },
     {
       "vsiTitle": "Quantum Theory",
       "vsiAuthor": "John Polkinghorne",
       "relevantPathsAI": [
         "C.8",
-        "A.4"
+        "C.8.a",
+        "C.8.b"
       ],
-      "rationaleAI": "Addresses the quantum theory of light (C.8), including wave-particle duality, the superposition principle (A.4), and Heisenberg's uncertainty principle (C.8.b)."
+      "rationaleAI": "Wave-particle duality addresses quantum theory of light (C.8), photon phenomena (C.8.a), and uncertainty principle (C.8.b)."
     },
     {
       "vsiTitle": "Magnetism",
       "vsiAuthor": "Stephen J. Blundell",
       "relevantPathsAI": [
         "B",
-        "C.6"
+        "B.1"
       ],
-      "rationaleAI": "Explains Maxwell's electromagnetic theory (C.6) and Faraday's foundational work on electromagnetic wave generation and propagation (B)."
+      "rationaleAI": "Maxwell's unification connects to electromagnetic wave properties (B.1)."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
       "relevantPathsAI": [
+        "B.2",
+        "B.2.a",
+        "B.2.c",
+        "B.2.e",
+        "B.2.f",
+        "B.2.g",
+        "C.1.a",
+        "D",
         "D.1",
-        "B.2"
+        "D.1.a",
+        "D.1.b"
       ],
-      "rationaleAI": "Illustrates geometrical optics, lenses, mirrors, and optical systems (D.1), as well as radio telescopes relevant to electromagnetic wave detection (B.2.a)."
+      "rationaleAI": "Telescope design covers electromagnetic spectrum (B.2), optics (D.1), and optical systems (D.1.b)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
       "relevantPathsAI": [
-        "B.2",
-        "B.3"
+        "B.2.f",
+        "B.2.g",
+        "B.3.d",
+        "B.3.e"
       ],
-      "rationaleAI": "Discusses gamma rays (B.2.g), sources of gamma radiation from radioactive nuclei (B.3.e), and synchrotron radiation (B.3.d)."
+      "rationaleAI": "Ionizing radiation connects to X-rays (B.2.f), gamma rays (B.2.g), X-ray sources (B.3.d), and gamma sources (B.3.e)."
     },
     {
       "vsiTitle": "Crystallography",
       "vsiAuthor": "A. M. Glazer",
       "relevantPathsAI": [
         "A.6",
-        "B.2"
+        "B.2.f"
       ],
-      "rationaleAI": "Demonstrates wave interference and diffraction through X-ray and electron diffraction in crystalline materials (A.6, B.2.f)."
+      "rationaleAI": "X-ray diffraction connects to wave interference (A.6) and X-rays (B.2.f)."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
       "relevantPathsAI": [
-        "C.2",
-        "A.2"
+        "C.2"
       ],
-      "rationaleAI": "Establishes the constancy of the velocity of light (C.2) and introduces gravitational waves as a type of wave phenomenon predicted by general relativity (A.2)."
+      "rationaleAI": "Speed of light as cosmic limit relates to velocity of light measurement (C.2)."
     },
     {
       "vsiTitle": "Microscopy",
       "vsiAuthor": "Terence Allen",
       "relevantPathsAI": [
-        "D.1",
-        "B.2"
+        "B.2",
+        "B.2.f",
+        "C.1.a",
+        "D.1"
       ],
-      "rationaleAI": "Illustrates lens-based imaging systems (D.1), the electromagnetic spectrum in microscopy (B.2), and wave phenomena like diffraction limits in optical instruments."
+      "rationaleAI": "Light and electron microscopy connect to electromagnetic spectrum (B.2), X-rays (B.2.f), and geometrical optics (D.1)."
     },
     {
       "vsiTitle": "Physics",
       "vsiAuthor": "Sidney Perkowitz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides broad coverage of wave motion fundamentals, electromagnetic waves, quantum mechanics, and the physics underlying all wave phenomena in this section."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Fundamental physics connects broadly to wave phenomena (A), electromagnetic waves (B), and light (C)."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
       "relevantPathsAI": [
-        "A.2",
-        "A.5"
+        "A.2.a",
+        "A.5",
+        "E.2"
       ],
-      "rationaleAI": "Uses seismic wave propagation as an example of mechanical waves (A.2.a), including wave behaviour at boundaries such as reflection, refraction, and mode conversion (A.5)."
+      "rationaleAI": "Seismic waves connect to wave classification (A.2.a), boundary behavior (A.5), and shock waves (E.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

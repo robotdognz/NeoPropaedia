@@ -4,72 +4,92 @@
     {
       "vsiTitle": "History",
       "vsiAuthor": "John Arnold",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the nature and methods of historical writing, the central concern of this section on historiography."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.1.a",
+        "A.1.c.iv",
+        "A.2",
+        "A.3",
+        "B",
+        "B.1",
+        "C"
+      ],
+      "rationaleAI": "Historiographical theory covering causation, periodization, and interpretation of primary sources (A.2, A.3), tracing historians from William of Malmesbury through Gibbon and Marx (A.1.a, A.1.c.iv). The Donation of Constantine forgery case illustrates source criticism methods (B.1). Philosophy of history and how knowledge of the past shapes identity (C)."
     },
     {
       "vsiTitle": "Herodotus",
       "vsiAuthor": "Jennifer T. Roberts",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a.ii",
+        "A.3",
+        "B.1"
       ],
-      "rationaleAI": "Herodotus is the 'father of history' and central to A.1.a.ii on classical Greek historiography."
+      "rationaleAI": "Classical Greek historiography (A.1.a.ii) examining Herodotus's investigation of the Persian Wars, his interview-based research methods and reliance on diverse sources (B.1), and the background and vantage point of the author as traveler and observer (A.3)."
     },
     {
       "vsiTitle": "Thucydides",
       "vsiAuthor": "Jennifer T. Roberts",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a.ii",
+        "A.3"
       ],
-      "rationaleAI": "Thucydides is a foundational figure in Greek historiography, central to A.1.a.ii."
+      "rationaleAI": "Classical Greek historiography (A.1.a.ii) covering Thucydides' pioneering methodology as both participant and analyst of the Peloponnesian War. His identity as Athenian aristocrat and combatant exemplifies the background and vantage point of the author (A.3)."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.d.i"
       ],
-      "rationaleAI": "Section A.1.d.i covers Islamic historiography as a non-Western historiographical tradition."
+      "rationaleAI": "Islamic historiographical tradition (A.1.d.i) encompassing the unique importance Muslims attach to historical consciousness, Hadith literature as historical source, and the role of historical understanding in Islamic civilization."
     },
     {
       "vsiTitle": "The History of Political Thought",
       "vsiAuthor": "Richard Whatmore",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.3",
+        "C"
       ],
-      "rationaleAI": "Represents a specific type of historical writing (A.2), illustrating how historians approach intellectual and political history."
+      "rationaleAI": "Methodological approaches to historical writing about political ideas (A.2, A.3), including the Cambridge School of Skinner and Pocock. Explores how the study of past political thought informs contemporary dilemmas, bridging speculative philosophy of history (C)."
     },
     {
       "vsiTitle": "The History of Emotions",
       "vsiAuthor": "Thomas Dixon",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.3"
       ],
-      "rationaleAI": "Represents a specific approach to historical writing (A.2), demonstrating diverse types of historiographic method."
+      "rationaleAI": "A specialized type of historical writing examining emotions across time (A.2), connecting psychology, cultural history, and linguistics as auxiliary methods (A.3)."
     },
     {
       "vsiTitle": "The History of Childhood",
       "vsiAuthor": "James Marten",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.3"
       ],
-      "rationaleAI": "Represents a type of historical writing (A.2), illustrating social history as a methodological approach."
+      "rationaleAI": "Global historical survey of childhood as a distinct type of historical writing (A.2), revealing how shifting definitions by class, religion, and geography illustrate the historian's vantage point (A.3)."
     },
     {
       "vsiTitle": "Gender History",
       "vsiAuthor": "Antoinette Burton",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.3",
+        "C"
       ],
-      "rationaleAI": "Represents a specific historiographic approach (A.2), illustrating diverse ways of classifying and writing history."
+      "rationaleAI": "Gender as an analytical framework represents a distinct type of historical writing (A.2). Challenges assumptions about historical subjecthood (A.3) and questions dominant narratives, engaging speculative philosophy of history (C)."
     },
     {
       "vsiTitle": "American Intellectual History",
       "vsiAuthor": "Jennifer Ratner-Rosenhagen",
       "relevantPathsAI": [
+        "A.1.c.iv",
         "A.2"
       ],
-      "rationaleAI": "Represents intellectual history as a type of historical writing (A.2) with specific methods."
+      "rationaleAI": "Intellectual history from Enlightenment through postmodernism as a type of historical writing (A.2), exemplifying modern historiographical traditions (A.1.c.iv)."
     },
     {
       "vsiTitle": "American Cultural History",
@@ -77,7 +97,7 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Cultural history represents a type of historical writing (A.2) with distinctive methods and sources."
+      "rationaleAI": "Cultural history as a distinct type of historical writing (A.2), examining literature, music, art, film, and media as expressions of collective values."
     },
     {
       "vsiTitle": "Global Economic History",
@@ -85,39 +105,43 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Economic history is a type of historical writing (A.2) employing quantitative methods."
+      "rationaleAI": "Comparative economic history as a type of historical writing (A.2) analyzing why some countries prospered while others remained poor."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
       "relevantPathsAI": [
-        "B.2"
+        "B.1",
+        "B.2.b",
+        "B.2.o"
       ],
-      "rationaleAI": "Section B.2.b lists archaeology as an auxiliary discipline for ascertaining and interpreting historical sources."
+      "rationaleAI": "Archaeology as an auxiliary discipline (B.2.b), relying on material remains as sources (B.1) and using radiometric dating techniques (B.2.o)."
     },
     {
       "vsiTitle": "Biblical archaeology",
       "vsiAuthor": "Eric H. Cline",
       "relevantPathsAI": [
-        "B.2"
+        "B.1",
+        "B.2.b",
+        "B.2.g"
       ],
-      "rationaleAI": "Biblical archaeology combines archaeology (B.2.b) with textual criticism (B.2.q) as auxiliary disciplines."
+      "rationaleAI": "Archaeological investigation of biblical material evidence (B.2.b), covering excavation sites and inscriptions as sources (B.1), with epigraphy (B.2.g)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.a"
       ],
-      "rationaleAI": "Section B.2.a lists anthropology as an auxiliary discipline for historical research."
+      "rationaleAI": "Anthropology as an auxiliary discipline for interpreting historical sources (B.2.a)."
     },
     {
       "vsiTitle": "Geography",
       "vsiAuthor": "John A. Matthews, David T. Herbert",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.i"
       ],
-      "rationaleAI": "Section B.2.i lists geography as an auxiliary discipline for historical research."
+      "rationaleAI": "Geography as an auxiliary discipline for historical research (B.2.i)."
     },
     {
       "vsiTitle": "Linguistics",
@@ -125,118 +149,127 @@
       "relevantPathsAI": [
         "B.2.l"
       ],
-      "rationaleAI": "Section B.2.l lists linguistics as an auxiliary discipline for ascertaining and interpreting sources."
+      "rationaleAI": "Linguistics as an auxiliary discipline (B.2.l), covering language evolution and change over time."
     },
     {
       "vsiTitle": "Hieroglyphs",
       "vsiAuthor": "Penelope Wilson",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.g",
+        "B.2.m"
       ],
-      "rationaleAI": "Section B.2.g lists epigraphy as an auxiliary discipline, and hieroglyphs are a primary form of ancient written sources."
+      "rationaleAI": "Egyptian hieroglyphs as a subject of epigraphy (B.2.g) and paleography (B.2.m), covering the Rosetta Stone decipherment."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
       "relevantPathsAI": [
         "B.1",
-        "B.2"
+        "B.2.g",
+        "B.2.m"
       ],
-      "rationaleAI": "Written materials (B.1) are a primary source for history, and paleography (B.2.m) studies ancient scripts."
+      "rationaleAI": "Writing systems as written materials for historical research (B.1), with decipherment connecting to epigraphy (B.2.g) and paleography (B.2.m)."
     },
     {
       "vsiTitle": "Classics",
       "vsiAuthor": "Mary Beard, John Henderson",
       "relevantPathsAI": [
-        "A.1",
-        "B.2"
+        "A.1.a.ii",
+        "B.2.q"
       ],
-      "rationaleAI": "Classical studies involve historiography of the ancient world (A.1.a) and employ many auxiliary disciplines (B.2)."
+      "rationaleAI": "Study of ancient Greek and Roman civilizations encompassing classical historiography (A.1.a.ii), with textual culture connecting to textual criticism (B.2.q)."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b.ii"
       ],
-      "rationaleAI": "Section A.1.b.ii covers Byzantine historiography as a distinct medieval tradition."
+      "rationaleAI": "Byzantine history directly relevant to Byzantine historiography (A.1.b.ii)."
     },
     {
       "vsiTitle": "The Enlightenment",
       "vsiAuthor": "John Robertson",
       "relevantPathsAI": [
-        "A.1.c"
+        "A.1.c.iii"
       ],
-      "rationaleAI": "Section A.1.c.iii covers Enlightenment historiography in the 18th century."
+      "rationaleAI": "Intellectual history of the Enlightenment directly relevant to Enlightenment historiography (A.1.c.iii)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
       "relevantPathsAI": [
         "B.1",
-        "B.2"
+        "B.2.b"
       ],
-      "rationaleAI": "Prehistory deals with material remains (B.1) and relies on auxiliary disciplines like archaeology (B.2.b) and dendrochronology (B.2.e)."
+      "rationaleAI": "Prehistory relying on material evidence (B.1), with archaeology as the primary auxiliary discipline (B.2.b)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.o"
       ],
-      "rationaleAI": "Section B.2.o lists radiometric dating as an auxiliary discipline for historical research."
+      "rationaleAI": "Radiometric dating as an auxiliary discipline for historical sources (B.2.o)."
     },
     {
       "vsiTitle": "The History of Time",
       "vsiAuthor": "Leofranc Holford-Strevens",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.d"
       ],
-      "rationaleAI": "Section B.2.d lists chronology as an auxiliary discipline, and the study of time is fundamental to historiography."
+      "rationaleAI": "History of time measurement directly relevant to chronology (B.2.d)."
     },
     {
       "vsiTitle": "Philosophy",
       "vsiAuthor": "Edward Craig",
-      "relevantPathsAI": [],
-      "rationaleAI": "Section C covers philosophy of history including speculations about the historical process and philosophical analysis."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Philosophy addressing fundamental questions connects to philosophy of history (C)."
     },
     {
       "vsiTitle": "Rousseau",
       "vsiAuthor": "Robert Wokler",
-      "relevantPathsAI": [],
-      "rationaleAI": "Rousseau's philosophy of history is relevant to section C on speculative philosophy of history."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Rousseau's critique of civilization connects to speculative philosophy of history (C.2)."
     },
     {
       "vsiTitle": "Biography",
       "vsiAuthor": "Hermione Lee",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.3"
       ],
-      "rationaleAI": "Biography represents a specific type of historical writing (A.2) with its own methods and conventions."
+      "rationaleAI": "Biography as scholarly practice represents a distinct type of historical writing (A.2), with methodological questions illustrating factors in writing (A.3)."
     },
     {
       "vsiTitle": "Autobiography",
       "vsiAuthor": "Laura Marcus",
       "relevantPathsAI": [
-        "B.1",
-        "A.2"
+        "A.2",
+        "B.1"
       ],
-      "rationaleAI": "Autobiography is both a historical source (B.1) and a type of historical writing (A.2)."
+      "rationaleAI": "Autobiography as life writing represents a type of historical writing (A.2), with memoirs and diaries as written sources (B.1)."
     },
     {
       "vsiTitle": "Oral History",
       "vsiAuthor": "Douglas A Boyd",
-      "relevantPathsAI": [],
-      "rationaleAI": "Oral history is a methodology for historical research involving interviews, archives, and narrative."
+      "relevantPathsAI": [
+        "A.2",
+        "B.1"
+      ],
+      "rationaleAI": "Oral history as methodology (A.2), with spoken testimony as a source alongside written materials (B.1)."
     },
     {
       "vsiTitle": "Dictionaries",
       "vsiAuthor": "Lynda Mugglestone",
       "relevantPathsAI": [
-        "B.1",
-        "B.2.l"
+        "B.1"
       ],
-      "rationaleAI": "Dictionaries serve as historical sources (B.1) and connect to linguistics (B.2.l) as an auxiliary discipline."
+      "rationaleAI": "Dictionaries as written materials reflecting social assumptions, serving as historical sources (B.1)."
     },
     {
       "vsiTitle": "Forensic science",
@@ -244,41 +277,45 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Forensic methods relate to auxiliary disciplines for interpreting historical sources, especially material remains (B.1)."
+      "rationaleAI": "Forensic science methods provide material remains as sources for investigation (B.1)."
     },
     {
       "vsiTitle": "Psychoanalysis",
       "vsiAuthor": "Daniel Pick",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.n"
       ],
-      "rationaleAI": "Section B.2.n lists psychoanalysis as an auxiliary discipline for historical research."
+      "rationaleAI": "Psychoanalysis as an auxiliary discipline for interpreting historical sources (B.2.n)."
     },
     {
       "vsiTitle": "The Ancient Near East",
       "vsiAuthor": "Amanda H. Podany",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a.i",
+        "B.1"
       ],
-      "rationaleAI": "Section A.1.a.i covers Near Eastern historiography as the earliest form of historical writing."
+      "rationaleAI": "Near Eastern historiography covering Mesopotamian civilizations (A.1.a.i), with archaeological evidence as sources (B.1)."
     },
     {
       "vsiTitle": "Ancient Egypt",
       "vsiAuthor": "Ian Shaw",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a.i",
+        "B.1",
+        "B.2.b"
       ],
-      "rationaleAI": "Egyptian sources and records are among the earliest forms of historical documentation (A.1.a.i)."
+      "rationaleAI": "Ancient Egyptian civilization as Near Eastern historiography (A.1.a.i), with archaeology (B.2.b) and material sources (B.1)."
     },
     {
       "vsiTitle": "Landscapes and Geomorphology",
       "vsiAuthor": "Andrew Goudie, Heather Viles",
       "relevantPathsAI": [
-        "B.2",
-        "B.2"
+        "B.2.i",
+        "B.2.o"
       ],
-      "rationaleAI": "Landscape analysis and radiometric dating connect to auxiliary disciplines including geography (B.2.i) and dendrochronology (B.2.e)."
+      "rationaleAI": "Geomorphology connects to geography (B.2.i), with radiometric dating methods (B.2.o)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

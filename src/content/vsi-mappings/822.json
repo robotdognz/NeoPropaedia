@@ -4,8 +4,12 @@
     {
       "vsiTitle": "The Ancient Near East",
       "vsiAuthor": "Amanda H. Podany",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores ancient Near Eastern civilizations including their temples, priests, festivals, and creation narratives, directly relevant to 822.A on religions of ancient Near Eastern peoples."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Mesopotamian civilizations with temple institutions directly address ancient Near Eastern religions (A), their characteristics (A.1), and Mesopotamian religions (A.2)."
     },
     {
       "vsiTitle": "Ancient Assyria",
@@ -13,7 +17,7 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Examines Assyrian civilization including temples, kingship, and inscriptions, relevant to 822.A.2 on Mesopotamian religions."
+      "rationaleAI": "Assyrian temple culture and inscriptions relate to Mesopotamian religions (A.2)."
     },
     {
       "vsiTitle": "Babylonia",
@@ -21,7 +25,7 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Explores Babylonian civilization and its religious culture, relevant to 822.A.2 on Mesopotamian religions."
+      "rationaleAI": "Babylonian religion and social organization address Mesopotamian religions (A.2)."
     },
     {
       "vsiTitle": "Ancient Egypt",
@@ -29,31 +33,32 @@
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Addresses ancient Egyptian religion, customs, ethics, and the role of kingship, directly relevant to 822.A.3 on Egyptian religion."
+      "rationaleAI": "Ancient Egyptian religion directly addresses Egyptian religion (A.3)."
     },
     {
       "vsiTitle": "Egyptian Myth",
       "vsiAuthor": "Geraldine Pinch",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b",
+        "A.3.c"
       ],
-      "rationaleAI": "Directly addresses Egyptian deities, mythology (Horus, Osiris), and religious literature, relevant to 822.A.3.b-c."
+      "rationaleAI": "Egyptian mythology with Osiris, Horus, and Seth addresses Egyptian religious literature (A.3.b) and the Egyptian pantheon (A.3.c)."
     },
     {
       "vsiTitle": "Ancient Egyptian Art and Architecture",
       "vsiAuthor": "Christina Riggs",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e"
       ],
-      "rationaleAI": "Examines Egyptian religious art, symbolism, and temple architecture, directly relevant to 822.A.3.e on religious symbolism and iconography."
+      "rationaleAI": "Egyptian art in relation to religious cosmology addresses Egyptian religious symbolism (A.3.e)."
     },
     {
       "vsiTitle": "Hieroglyphs",
       "vsiAuthor": "Penelope Wilson",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e"
       ],
-      "rationaleAI": "Egyptian hieroglyphic writing is deeply tied to religion including Pyramid Texts and Coffin Texts, relevant to 822.A.3.b on Egyptian religious literature."
+      "rationaleAI": "Hieroglyphs as sacral communication relate to Egyptian religious symbolism (A.3.e)."
     },
     {
       "vsiTitle": "Biblical archaeology",
@@ -61,28 +66,33 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Explores archaeological evidence for ancient Near Eastern and Syrian-Palestinian religions including temple sites, relevant to 822.A.5."
+      "rationaleAI": "Biblical archaeology relates to Syrian and Palestinian religions (A.5)."
     },
     {
       "vsiTitle": "Iran",
       "vsiAuthor": "Ali Ansari",
-      "relevantPathsAI": [],
-      "rationaleAI": "Iranian civilization's pre-Islamic religious heritage, especially Zoroastrianism, is central to 822.B on religions of the Iranian peoples."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Iranian civilization from ancient Persia relates to religions of the Iranian peoples (B)."
     },
     {
       "vsiTitle": "Ancient Greece",
       "vsiAuthor": "Paul Cartledge",
-      "relevantPathsAI": [],
-      "rationaleAI": "Examines ancient Greek civilization including the Delphic oracle, religious practices, and institutions, relevant to 822.C on Greek religion."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Ancient Greek civilization provides context for Greek religion (C)."
     },
     {
       "vsiTitle": "Classical Mythology",
       "vsiAuthor": "Helen Morales",
       "relevantPathsAI": [
         "C.2",
+        "C.3",
         "D.2"
       ],
-      "rationaleAI": "Directly addresses Greek and Roman mythology including major deities (Ares, Demeter, Persephone, Saturn), relevant to 822.C.2-3 and 822.D.2."
+      "rationaleAI": "Greek and Roman mythology addresses Greek mythology (C.2), the Greek pantheon (C.3), and Roman deities (D.2)."
     },
     {
       "vsiTitle": "Homer",
@@ -90,7 +100,7 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Homer's Iliad and Odyssey are foundational texts for Greek religion and mythology, directly relevant to 822.C.2 on Greek mythology and religious literature."
+      "rationaleAI": "The Iliad and Odyssey relate to Greek religious literature (C.2)."
     },
     {
       "vsiTitle": "Sophocles",
@@ -98,47 +108,48 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Sophocles' tragedies engage deeply with Greek religious themes and the gods, relevant to 822.C.2 on Greek mythology and religious literature."
+      "rationaleAI": "Sophoclean tragedy engages with Greek religious themes (C.2)."
     },
     {
       "vsiTitle": "Ovid",
       "vsiAuthor": "Llewelyn Morgan",
       "relevantPathsAI": [
-        "C.2"
+        "C.2",
+        "D.2"
       ],
-      "rationaleAI": "Ovid's Metamorphoses and Fasti are key sources for Greek and Roman mythology and religious festivals, relevant to 822.C.2 and 822.D."
+      "rationaleAI": "Ovid's poetry engages with Greco-Roman mythology (C.2) and Roman religion (D.2)."
     },
     {
       "vsiTitle": "Classical Literature",
       "vsiAuthor": "William Allan",
-      "relevantPathsAI": [],
-      "rationaleAI": "Greek and Roman literary works serve as primary sources for ancient religion, mythology, and ritual practice."
+      "relevantPathsAI": [
+        "C.2"
+      ],
+      "rationaleAI": "Greek and Latin literary traditions relate to Greek religious literature (C.2)."
     },
     {
       "vsiTitle": "Presocratic Philosophy",
       "vsiAuthor": "Catherine Osborne",
       "relevantPathsAI": [
-        "C.3"
+        "E.4"
       ],
-      "rationaleAI": "Early Greek philosophical speculation about the cosmos and first principles is relevant to 822.C.3 on Greek religious beliefs and speculation."
+      "rationaleAI": "Presocratic inquiry relates to Hellenistic religious philosophies (E.4)."
     },
     {
       "vsiTitle": "Plato",
       "vsiAuthor": "Julia Annas",
       "relevantPathsAI": [
-        "C.3",
         "E.4"
       ],
-      "rationaleAI": "Plato's philosophy includes views on the divine, the soul, and the afterlife, relevant to 822.C.3 on Greek religious beliefs and 822.E.4 on neoplatonism."
+      "rationaleAI": "Plato's Forms and soul relate to Hellenistic religious philosophies (E.4)."
     },
     {
       "vsiTitle": "Aristotle",
       "vsiAuthor": "Jonathan Barnes",
       "relevantPathsAI": [
-        "C.3",
         "E.4"
       ],
-      "rationaleAI": "Aristotle's theology and metaphysics influenced later Hellenistic religious philosophy, relevant to 822.C.3 and 822.E.4."
+      "rationaleAI": "Aristotle's metaphysics relates to Hellenistic religious philosophies (E.4)."
     },
     {
       "vsiTitle": "Ancient philosophy",
@@ -146,43 +157,56 @@
       "relevantPathsAI": [
         "E.4"
       ],
-      "rationaleAI": "Explores Graeco-Roman philosophical traditions including their religious dimensions and Hellenistic schools, relevant to 822.E.4."
+      "rationaleAI": "Graeco-Roman philosophy addresses Hellenistic religious philosophies (E.4)."
     },
     {
       "vsiTitle": "The Roman Empire",
       "vsiAuthor": "Christopher Kelly",
-      "relevantPathsAI": [],
-      "rationaleAI": "Examines Roman civilization including religious practices, imperial cults, and Asia Minor, relevant to 822.D on Roman religion."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Imperial cult and religion relate to Roman religion (D)."
     },
     {
       "vsiTitle": "The Roman Republic",
       "vsiAuthor": "David M. Gwynn",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores the Roman Republic's civic and family religion, relevant to 822.D on Roman religion including gods, worship, and institutions."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Republican social values provide context for Roman religion (D)."
     },
     {
       "vsiTitle": "The Etruscans",
       "vsiAuthor": "Christopher Smith",
-      "relevantPathsAI": [],
-      "rationaleAI": "Etruscan religious practices influenced Roman religion in significant ways, relevant to 822.D on Roman religion."
+      "relevantPathsAI": [
+        "D"
+      ],
+      "rationaleAI": "Etruscan religious beliefs influenced Roman religion (D)."
     },
     {
       "vsiTitle": "Classics",
       "vsiAuthor": "Mary Beard, John Henderson",
-      "relevantPathsAI": [],
-      "rationaleAI": "The study of Greek and Roman civilizations encompasses their religions, temples, and philosophy, relevant to 822.C and 822.D."
+      "relevantPathsAI": [
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Greek and Roman studies provide context for both Greek (C) and Roman (D) religion."
     },
     {
       "vsiTitle": "The Hellenistic Age",
       "vsiAuthor": "Peter Thonemann",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores the Hellenistic period and its religious syncretism, directly relevant to 822.E on religions of the Hellenistic world."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "The Hellenistic world provides context for Hellenistic religions (E)."
     },
     {
       "vsiTitle": "Late Antiquity",
       "vsiAuthor": "Gillian Clark",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses religious transformations including Manichaeism, Gnosticism, and the interaction of Greek and Near Eastern religions, directly relevant to 822.E."
+      "relevantPathsAI": [
+        "E.2"
+      ],
+      "rationaleAI": "Competing religions including Manichaeism relate to Gnosticism (E.2)."
     },
     {
       "vsiTitle": "Epicureanism",
@@ -190,7 +214,7 @@
       "relevantPathsAI": [
         "E.4"
       ],
-      "rationaleAI": "Epicurean philosophy functioned as a Hellenistic religious philosophy, directly relevant to 822.E.4."
+      "rationaleAI": "Epicurean philosophy addresses Hellenistic religious philosophies (E.4)."
     },
     {
       "vsiTitle": "Stoicism",
@@ -198,7 +222,7 @@
       "relevantPathsAI": [
         "E.4"
       ],
-      "rationaleAI": "Stoic ethics and metaphysics are directly listed in 822.E.4 as a Hellenistic religious philosophy."
+      "rationaleAI": "Stoic philosophy addresses Hellenistic religious philosophies (E.4)."
     },
     {
       "vsiTitle": "The Celts",
@@ -206,7 +230,7 @@
       "relevantPathsAI": [
         "G.1"
       ],
-      "rationaleAI": "Celtic peoples and their religious beliefs and practices are directly relevant to 822.G.1 on religion of the Celts."
+      "rationaleAI": "Celtic religious traditions relate to religion of the Celts (G.1)."
     },
     {
       "vsiTitle": "Druids",
@@ -214,7 +238,7 @@
       "relevantPathsAI": [
         "G.1"
       ],
-      "rationaleAI": "Druidic religious leadership, sacrifice, and prophecy in Celtic religion are directly relevant to 822.G.1."
+      "rationaleAI": "Druids directly address religion of the Celts (G.1)."
     },
     {
       "vsiTitle": "The Vikings",
@@ -222,19 +246,24 @@
       "relevantPathsAI": [
         "G.2"
       ],
-      "rationaleAI": "Viking Norse religion including ship burials and sagas is relevant to 822.G.2 on religion of the Germanic peoples."
+      "rationaleAI": "Norse religion relates to religion of the Germanic peoples (G.2)."
     },
     {
       "vsiTitle": "Paganism",
       "vsiAuthor": "Owen Davies",
-      "relevantPathsAI": [],
-      "rationaleAI": "Pre-Christian polytheistic religions of Europe -- Greek, Roman, Celtic, and Germanic traditions -- are relevant to 822.C, D, F, and G."
+      "relevantPathsAI": [
+        "G",
+        "E.5"
+      ],
+      "rationaleAI": "Pagan beliefs relate to Celtic and Germanic religions (G) and magical cults (E.5)."
     },
     {
       "vsiTitle": "The Aztecs",
       "vsiAuthor": "David Carrasco",
-      "relevantPathsAI": [],
-      "rationaleAI": "Aztec religion including sacrifice, cosmology, and temples is directly relevant to 822.I on religions of pre-Columbian American civilizations."
+      "relevantPathsAI": [
+        "I"
+      ],
+      "rationaleAI": "Aztec religious practices relate to pre-Columbian religions (I)."
     },
     {
       "vsiTitle": "The Maya",
@@ -242,34 +271,40 @@
       "relevantPathsAI": [
         "I.2"
       ],
-      "rationaleAI": "Maya civilization and its religion are directly relevant to 822.I.2 on Mayan religion."
+      "rationaleAI": "Maya ritual practices address Mayan religion (I.2)."
     },
     {
       "vsiTitle": "The Trojan War",
       "vsiAuthor": "Eric H. Cline",
       "relevantPathsAI": [
-        "A.4",
-        "C.2"
+        "C"
       ],
-      "rationaleAI": "The mythological and archaeological context of the Trojan War illuminates Hittite religion in Anatolia, relevant to 822.A.4 on religions of Asia Minor and 822.C.2."
+      "rationaleAI": "The Trojan War provides context for Greek religion (C)."
     },
     {
       "vsiTitle": "Herodotus",
       "vsiAuthor": "Jennifer T. Roberts",
-      "relevantPathsAI": [],
-      "rationaleAI": "Herodotus is a primary source for ancient Near Eastern, Egyptian, Persian, and Greek religious practices, relevant to 822.A, 822.B, and 822.C."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Herodotus provides sources for Greek religion (C)."
     },
     {
       "vsiTitle": "World Mythology",
       "vsiAuthor": "David A. Leeming",
-      "relevantPathsAI": [],
-      "rationaleAI": "Surveys mythological traditions of ancient peoples worldwide including creation myths and deity archetypes, relevant to the broad scope of 822."
+      "relevantPathsAI": [
+        "A",
+        "C.2"
+      ],
+      "rationaleAI": "Comparative mythology relates to ancient Near Eastern (A) and Greek (C.2) religions."
     },
     {
       "vsiTitle": "The Conquistadors",
       "vsiAuthor": "Matthew Restall, Felipe Fernández-Armesto",
-      "relevantPathsAI": [],
-      "rationaleAI": "The encounter between European and pre-Columbian religions, including Aztec and Maya, provides context for 822.I."
+      "relevantPathsAI": [
+        "I"
+      ],
+      "rationaleAI": "Spanish conquest provides context for pre-Columbian religions (I)."
     },
     {
       "vsiTitle": "Orthodox Christianity",
@@ -280,5 +315,6 @@
       "rationaleAI": "The East-West Schism and early eastern Christianity are relevant to 822.F.3 on religion of the pre-Christian Slavic peoples and their eventual Christianization."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

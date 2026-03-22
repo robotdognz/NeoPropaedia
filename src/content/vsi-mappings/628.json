@@ -5,90 +5,116 @@
       "vsiTitle": "Photography",
       "vsiAuthor": "Steven Edwards",
       "relevantPathsAI": [
-        "D"
+        "D",
+        "D.1",
+        "D.2",
+        "D.3",
+        "D.3.a",
+        "D.3.b"
       ],
-      "rationaleAI": "Directly covers photography as an art, including major photographers (Adams, Cartier-Bresson, Capa), photojournalism, and the nature of photography (D)."
+      "rationaleAI": "Photographic origins through daguerreotype and Fox Talbot, photographic theory and critical frameworks (D.1), equipment and techniques from 19th century to digital era (D.2), and major genres including landscape (Ansel Adams), documentary/photojournalism (Robert Capa, Cartier-Bresson) covering both subject-determined (D.3.a) and functional photography such as photojournalism (D.3.b)."
     },
     {
       "vsiTitle": "Art history",
       "vsiAuthor": "Dana Arnold",
       "relevantPathsAI": [
-        "A.4",
+        "B",
+        "B.5",
         "B.6",
-        "C.4"
+        "B.6.a",
+        "B.6.b"
       ],
-      "rationaleAI": "Covers the history of Western drawing and painting with references to artists and techniques like camera obscura, relevant to A.4, B.6.a, C.4."
+      "rationaleAI": "Broad survey of painting development from International Gothic and Renaissance through Impressionism and contemporary art (B.6.a), including non-Western traditions challenging Western-centric narratives (B.6.b). Covers methods of interpreting and presenting painting (B) and diverse kinds of painting across historical periods (B.5)."
     },
     {
       "vsiTitle": "Art Theory",
       "vsiAuthor": "Cynthia Freeland",
       "relevantPathsAI": [
-        "A.1",
         "B.1",
-        "B.2"
+        "D.1"
       ],
-      "rationaleAI": "Addresses aesthetics of visual arts including representation, significant form, and taste -- central to design elements and iconography (A.1, B.1, B.2)."
+      "rationaleAI": "Philosophical examination of beauty, taste, significant form, and institutional definitions of art relate to elements of design and composition in painting (B.1). Discussion of video art and new media connects to the nature and problems of photography as art (D.1)."
     },
     {
       "vsiTitle": "Modern art",
       "vsiAuthor": "David Cottington",
       "relevantPathsAI": [
-        "B.5",
-        "B.6"
+        "B",
+        "B.5.b.ii",
+        "B.6",
+        "B.6.a"
       ],
-      "rationaleAI": "Covers modern painting movements including Cubism (Braque), abstraction (Mondrian), and nonrepresentational painting (B.5.b.ii, B.6.a)."
+      "rationaleAI": "Survey of modern painting from Manet through Picasso, Van Gogh, Mondrian, and Young British Artists covering the history of Western painting (B.6.a). Addresses nonrepresentational painting through abstract movements (B.5.b.ii) and the institutional and critical frameworks of modernism (B)."
     },
     {
       "vsiTitle": "Contemporary art",
       "vsiAuthor": "Julian Stallabrass",
       "relevantPathsAI": [
-        "B.6"
+        "B.6",
+        "B.6.a",
+        "B.6.b"
       ],
-      "rationaleAI": "Covers contemporary painting, drawing, and photography practices including the global art market and biennials (B.6.a, D)."
+      "rationaleAI": "Global contemporary art scene including the shift beyond Euro-American dominance to new regions such as China encompasses both Western painting history (B.6.a) and non-Western painting traditions (B.6.b). Art market dynamics and museum branding address the institutional context of painting today."
     },
     {
       "vsiTitle": "Renaissance Art",
       "vsiAuthor": "Geraldine A. Johnson",
       "relevantPathsAI": [
-        "A.4",
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
         "B.5",
-        "B.6"
+        "B.5.a",
+        "B.5.a.i",
+        "B.5.a.ii",
+        "B.5.b.i",
+        "B.6.a",
+        "A.4"
       ],
-      "rationaleAI": "Renaissance masters (da Vinci, Durer, van Eyck) are central to Western painting and drawing history, covering techniques and manuscript illumination (A.4, B.5.a.ii, B.6.a)."
+      "rationaleAI": "Renaissance painting covering composition and perspective (B.1), iconographic programs (B.2), tempera and oil media (B.3), mural painting in churches and civic spaces (B.5.a.i), and easel and manuscript painting (B.5.a.ii). Representational devotional and portrait painting (B.5.b.i) and history of Western painting (B.6.a). Drawing by Leonardo and Durer (A.4)."
     },
     {
       "vsiTitle": "Dada and Surrealism",
       "vsiAuthor": "David Hopkins",
       "relevantPathsAI": [
-        "B.6"
+        "B.5.b.ii",
+        "B.6.a",
+        "C",
+        "C.1",
+        "D"
       ],
-      "rationaleAI": "Dada and Surrealist painting, collage, and printmaking (De Chirico, Magritte, Miro) expanded artistic techniques in Western painting history (B.6.a)."
+      "rationaleAI": "Surrealist and Dada painting by De Chirico, Magritte, and Miro spanning Western painting history (B.6.a) including nonrepresentational approaches (B.5.b.ii). Collage and found object practices connect to printmaking's originality questions (C.1). Photography and film as artistic media relate to photography as art (D)."
     },
     {
       "vsiTitle": "The Avant-Garde",
       "vsiAuthor": "David Cottington",
       "relevantPathsAI": [
-        "B.6"
+        "B.6.a"
       ],
-      "rationaleAI": "Avant-garde movements transformed painting from Impressionism (Seurat) through Cubism (Picasso), relevant to Western painting history (B.6.a)."
+      "rationaleAI": "Avant-garde painting movements from Seurat through Picasso and institutional contexts such as the Salon des Refuses contribute to the history of Western painting (B.6.a)."
     },
     {
       "vsiTitle": "Ancient Egyptian Art and Architecture",
       "vsiAuthor": "Christina Riggs",
       "relevantPathsAI": [
-        "B.5",
-        "B.6"
+        "A.4",
+        "B.5.a.i",
+        "B.6.b"
       ],
-      "rationaleAI": "Egyptian mural painting and drawing traditions are relevant to painting on fixed objects (B.5.a.i) and non-Western painting (B.6.b)."
+      "rationaleAI": "Egyptian wall painting and tomb decoration spanning four thousand years represents fixed-surface painting traditions (B.5.a.i) and the painting of non-Western peoples (B.6.b). Drawing traditions in Egyptian art connect to the history of drawing (A.4)."
     },
     {
       "vsiTitle": "Christian art",
       "vsiAuthor": "Beth Williamson",
       "relevantPathsAI": [
-        "B.4",
-        "B.5"
+        "B.2",
+        "B.5.a.i",
+        "B.5.a.ii",
+        "B.5.b.i",
+        "B.6.a"
       ],
-      "rationaleAI": "Christian painting traditions including devotional painting, manuscript illumination, and stained glass are directly relevant to B.4.f, B.5.a.ii, B.5.b.i."
+      "rationaleAI": "Christian devotional iconography of crucifixion, Virgin Mary, and saints constitutes a major iconographic tradition in painting (B.2). Frescoes such as St Francis cycles are mural painting (B.5.a.i), while Memling and Holbein panel works are easel painting (B.5.a.ii). Representational devotional painting (B.5.b.i) within Western painting history (B.6.a)."
     },
     {
       "vsiTitle": "Typography",
@@ -102,9 +128,10 @@
       "vsiTitle": "Futurism",
       "vsiAuthor": "Ara H. Merjian",
       "relevantPathsAI": [
-        "B.6"
+        "B.5.b.ii",
+        "B.6.a"
       ],
-      "rationaleAI": "Futurist painting is a significant movement in Western painting history, notable for depicting motion and modern life (B.6.a)."
+      "rationaleAI": "Italian Futurist painting embracing speed, technology, and new visual aesthetics represents an important movement in Western painting history (B.6.a) with pioneering nonrepresentational approaches (B.5.b.ii)."
     },
     {
       "vsiTitle": "Prehistory",
@@ -119,27 +146,27 @@
       "vsiTitle": "Romanticism",
       "vsiAuthor": "Michael Ferber",
       "relevantPathsAI": [
-        "B.5",
-        "B.6"
+        "B.6.a"
       ],
-      "rationaleAI": "Romantic painting including landscape painting is a major period in Western painting history (B.5.b.i, B.6.a)."
+      "rationaleAI": "Romanticism as a pan-European movement encompassing painting alongside literature and music addresses painting's role in the Romantic era within the history of Western painting (B.6.a)."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
       "relevantPathsAI": [
-        "B.4"
+        "A.3.b.iii"
       ],
-      "rationaleAI": "Covers calligraphy and writing systems, directly relevant to the relationship between drawing and calligraphy (B.4.a) referenced in this section."
+      "rationaleAI": "Development of writing systems and the relationship between script and visual representation connects to cartography and mapping as a kind of drawing determined by special uses (A.3.b.iii)."
     },
     {
       "vsiTitle": "Journalism",
       "vsiAuthor": "Ian Hargreaves",
       "relevantPathsAI": [
-        "D.3"
+        "D.3.b"
       ],
-      "rationaleAI": "Covers photojournalism and press photography, directly relevant to kinds of functional photography (D.3.b)."
+      "rationaleAI": "Journalism's relationship to photojournalism and documentary photography connects to functional photography including photojournalism and photo reportage (D.3.b)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

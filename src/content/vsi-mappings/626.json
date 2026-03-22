@@ -5,27 +5,33 @@
       "vsiTitle": "Architecture",
       "vsiAuthor": "Andrew Ballantyne",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.5"
+        "A.2",
+        "A.4",
+        "A.5",
+        "A.7"
       ],
-      "rationaleAI": "Core text on the art of architecture covering design elements, building types, and architectural theory (A.1 through A.5)."
+      "rationaleAI": "Architecture from ancient Egypt through modernism addresses elements of design (A.1), building materials and constructional systems (A.2), ornamentation (A.4), diverse building types (A.5), and the history of architecture (A.7)."
     },
     {
       "vsiTitle": "Modern architecture",
       "vsiAuthor": "Adam Sharr",
       "relevantPathsAI": [
-        "A.7"
+        "A.2",
+        "A.5.f",
+        "A.7.a"
       ],
-      "rationaleAI": "Covers modern architectural movements including reinforced concrete and key architects like Wright, Mies van der Rohe, and Le Corbusier (A.7.a)."
+      "rationaleAI": "Modern architecture covering steel, concrete, and new technologies addresses aesthetic aspects of building materials (A.2). Key buildings as cultural symbols address commercial and industrial architecture (A.5.f). The history of Western architecture (A.7.a)."
     },
     {
       "vsiTitle": "British Architecture",
       "vsiAuthor": "Dana Arnold",
       "relevantPathsAI": [
-        "A.5",
-        "A.7"
+        "A.5.a",
+        "A.7.a"
       ],
-      "rationaleAI": "Covers British domestic and public architecture including the architectural profession, relevant to Western architectural history (A.5, A.7.a)."
+      "rationaleAI": "British architecture covering domestic architecture and cultural identity addresses residential architecture (A.5.a) and the history of Western architecture (A.7.a)."
     },
     {
       "vsiTitle": "Landscape architecture",
@@ -33,7 +39,7 @@
       "relevantPathsAI": [
         "B"
       ],
-      "rationaleAI": "Directly covers garden and landscape design including Olmsted, urban design, and landscape gardening (B)."
+      "rationaleAI": "Landscape architecture encompassing parks, gardens, and urban environments directly addresses garden and landscape design (B)."
     },
     {
       "vsiTitle": "Garden History",
@@ -41,82 +47,88 @@
       "relevantPathsAI": [
         "B"
       ],
-      "rationaleAI": "Covers the history of garden design from ancient to modern periods (B)."
+      "rationaleAI": "Global historical survey of gardens across cultures directly addresses garden and landscape design (B)."
     },
     {
       "vsiTitle": "City Planning",
       "vsiAuthor": "Carl Abbott",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses urban design as a discipline, the third major topic of this section alongside architecture and landscape design."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Urban planning covering metropolitan growth and resilience addresses garden and landscape design in the context of urban design (B)."
     },
     {
       "vsiTitle": "Structural engineering",
       "vsiAuthor": "David Blockley",
       "relevantPathsAI": [
         "A.2",
-        "A.3"
+        "A.2.b"
       ],
-      "rationaleAI": "Covers constructional systems such as arches, vaults, buttresses, and concrete relevant to structural elements of buildings (A.2.b, A.3)."
+      "rationaleAI": "Structural engineering covering beams, bridges, concrete, and timber addresses aesthetic aspects of building materials (A.2) and constructional systems (A.2.b)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.2.a"
       ],
-      "rationaleAI": "Covers properties of building materials including cement, ceramics, sand, and stone explicitly listed as architectural materials (A.2.a)."
+      "rationaleAI": "Materials science covering metals, ceramics, and polymers addresses building materials (A.2.a)."
     },
     {
       "vsiTitle": "Aesthetics",
       "vsiAuthor": "Bence Nanay",
       "relevantPathsAI": [
-        "A.1",
-        "A.4"
+        "A.1"
       ],
-      "rationaleAI": "Provides philosophical context for aesthetic aspects of architecture including beauty and design judgment (A.1, A.4)."
+      "rationaleAI": "Aesthetics examining beauty and aesthetic experience addresses elements of design and principles of composition in architecture (A.1)."
     },
     {
       "vsiTitle": "Ancient Egyptian Art and Architecture",
       "vsiAuthor": "Christina Riggs",
       "relevantPathsAI": [
-        "A.5",
-        "A.7"
+        "A.5.b",
+        "A.7.b"
       ],
-      "rationaleAI": "Covers Egyptian temples and tombs as examples of religious and commemorative architecture (A.5.b) and non-Western architectural traditions (A.7.b)."
+      "rationaleAI": "Egyptian monumental building addresses religious and commemorative architecture (A.5.b) and the architecture of non-Western peoples (A.7.b)."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
       "relevantPathsAI": [
-        "A.2",
-        "A.5",
-        "A.7"
+        "A.5.b",
+        "A.7.a"
       ],
-      "rationaleAI": "Byzantine architecture including Hagia Sophia exemplifies domed construction and religious architecture (A.2.b, A.5.b, A.7.a)."
+      "rationaleAI": "Byzantine architecture including Hagia Sophia addresses religious architecture (A.5.b) and the history of Western architecture (A.7.a)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
       "relevantPathsAI": [
-        "A.5",
-        "A.7"
+        "A.5.b",
+        "A.7.b"
       ],
-      "rationaleAI": "Islamic architectural traditions including mosques are explicitly listed under religious architecture (A.5.b) and represent a major non-Western tradition (A.7.b)."
+      "rationaleAI": "Islam covering mosques and religious architecture addresses religious architecture (A.5.b) and architecture of non-Western peoples (A.7.b)."
     },
     {
       "vsiTitle": "Suburbs",
       "vsiAuthor": "Carl Abbott",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.a",
+        "B"
       ],
-      "rationaleAI": "Covers suburban residential planning and urbanism, relevant to domestic architecture and urban design (A.5.a)."
+      "rationaleAI": "Suburban development covering housing patterns and urban design addresses domestic architecture (A.5.a) and landscape design within urban contexts (B)."
     },
     {
       "vsiTitle": "Sustainability",
       "vsiAuthor": "Saleem H. Ali",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses sustainable design practices relevant to contemporary architecture and urban planning, including energy flows and environmental impact."
+      "relevantPathsAI": [
+        "A.2",
+        "B"
+      ],
+      "rationaleAI": "Sustainability covering material and energy flows in production addresses building materials and sustainability (A.2) and landscape design in the context of environmental change (B)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

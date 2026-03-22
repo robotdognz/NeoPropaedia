@@ -4,224 +4,258 @@
     {
       "vsiTitle": "American History",
       "vsiAuthor": "Paul S. Boyer",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers U.S. history from 1763-1920 including the Revolution, Civil War, westward expansion, and industrialization."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "B"
+      ],
+      "rationaleAI": "Broad U.S. history connects across all major periods."
     },
     {
       "vsiTitle": "The American Revolution",
       "vsiAuthor": "Robert J. Allison",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a",
+        "A.1.a.i",
+        "A.1.a.ii",
+        "A.1.a.iii"
       ],
-      "rationaleAI": "Traces the Revolutionary period from colonial opposition to British taxation through the Declaration of Independence and the War of Independence (A.1.a)."
+      "rationaleAI": "Directly addresses the Revolutionary period (A.1.a)."
     },
     {
       "vsiTitle": "The Founding Fathers",
       "vsiAuthor": "Richard B. Bernstein",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a",
+        "A.1.b",
+        "A.1.b.i",
+        "A.1.b.ii"
       ],
-      "rationaleAI": "Examines the Constitutional Convention, the drafting of the federal Constitution, and the struggle for ratification (A.1.b)."
+      "rationaleAI": "Directly addresses the founding period (A.1.a, A.1.b)."
     },
     {
       "vsiTitle": "Alexander Hamilton",
       "vsiAuthor": "R B Bernstein",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b.ii"
       ],
-      "rationaleAI": "Hamilton's economic policies and role as a key architect of the federal government are explicitly discussed in A.1.b.ii."
+      "rationaleAI": "Hamilton addresses economic policies and parties (A.1.b.ii)."
     },
     {
       "vsiTitle": "The U.S. Constitution",
       "vsiAuthor": "David J. Bodenhamer",
       "relevantPathsAI": [
-        "A.1",
-        "B.1"
+        "A.1.b.i"
       ],
-      "rationaleAI": "Traces constitutional development from the ratification debates through the Reconstruction amendments that reshaped American governance (A.1.b, B.1)."
+      "rationaleAI": "Constitutional history addresses the Convention (A.1.b.i)."
     },
     {
       "vsiTitle": "Lincoln",
       "vsiAuthor": "Allen C. Guelzo",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b",
+        "A.3.c"
       ],
-      "rationaleAI": "Directly relevant to Lincoln's election (1860), the secession crisis, the Civil War, and emancipation policies (A.3)."
+      "rationaleAI": "Lincoln addresses his election (A.3.b) and the Civil War (A.3.c)."
     },
     {
       "vsiTitle": "The U.S. Civil War",
       "vsiAuthor": "Louis P. Masur",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "A.3.a",
+        "A.3.b",
+        "A.3.c"
       ],
-      "rationaleAI": "Directly addresses the Civil War (1860-65) including sectionalism, secession, military campaigns, and emancipation (A.3)."
+      "rationaleAI": "Directly addresses sectionalism, polarization, and the Civil War."
     },
     {
       "vsiTitle": "American Slavery",
       "vsiAuthor": "Heather Andrea Williams",
       "relevantPathsAI": [
-        "A.2",
-        "A.3"
+        "A.2.a.ii",
+        "A.2.c",
+        "A.3.a"
       ],
-      "rationaleAI": "Examines the institution of slavery, the Abolitionist movement, and the economic and psychological foundations of the slave system (A.2, A.3)."
+      "rationaleAI": "Slavery connects to cotton/slavery (A.2.a.ii), abolitionism (A.2.c), and sectionalism (A.3.a)."
     },
     {
       "vsiTitle": "Abolitionism",
       "vsiAuthor": "Richard S. Newman",
       "relevantPathsAI": [
         "A.2.c",
-        "A.3"
+        "A.3.a"
       ],
-      "rationaleAI": "The Abolitionist movement was a driving force in antebellum reform and the sectional crisis that led to civil war (A.2.c, A.3.a)."
+      "rationaleAI": "Antislavery addresses the Abolitionist movement (A.2.c) and sectionalism (A.3.a)."
     },
     {
       "vsiTitle": "Reconstruction",
       "vsiAuthor": "Allen C. Guelzo",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.1.c"
       ],
-      "rationaleAI": "Directly addresses Radical Reconstruction (1866-77) and the emergence of the New South, including freedmen's struggles, sharecropping, and Jim Crow (B.1)."
+      "rationaleAI": "Directly addresses Radical Reconstruction and the New South."
     },
     {
       "vsiTitle": "Black Narratives of Slavery",
       "vsiAuthor": "Robert J Patterson",
       "relevantPathsAI": [
-        "A.3",
-        "B.1"
+        "A.3.a",
+        "B.1.c"
       ],
-      "rationaleAI": "Provides first-person perspectives on slavery, abolition, Black Codes, and Jim Crow, giving human depth to the political history (A.3, B.1)."
+      "rationaleAI": "Slavery narratives connect to bases of slavery (A.3.a) and Jim Crow (B.1.c)."
     },
     {
       "vsiTitle": "African American History",
       "vsiAuthor": "Jonathan Scott Holloway",
       "relevantPathsAI": [
-        "A.3",
-        "B.1"
+        "A.3.a",
+        "B.1",
+        "B.1.c"
       ],
-      "rationaleAI": "Traces African American history through slavery, the Civil War, Reconstruction, and Jim Crow, centering the Black experience within the national narrative (A.3, B.1)."
+      "rationaleAI": "African American struggles connect to slavery (A.3.a) and Reconstruction (B.1)."
     },
     {
       "vsiTitle": "The American Presidency",
       "vsiAuthor": "Charles O. Jones",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the many presidential administrations discussed from Washington through Wilson, including their policies on expansion, reform, and war."
+      "relevantPathsAI": [
+        "A.1.b",
+        "B.2.f"
+      ],
+      "rationaleAI": "The presidency connects to national government (A.1.b) and national politics (B.2.f)."
     },
     {
       "vsiTitle": "The U.S. Congress",
       "vsiAuthor": "Donald Ritchie",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "A.1.b.i",
+        "B.2.f"
       ],
-      "rationaleAI": "Relevant to congressional politics including the Radical Republican Congress, the legislative supremacy period (1877-1900), and tariff legislation (B.1, B.2.f)."
+      "rationaleAI": "Congress connects to the Convention (A.1.b.i) and congressional ascendancy (B.2.f)."
     },
     {
       "vsiTitle": "The U.S. Supreme Court",
       "vsiAuthor": "Linda Greenhouse",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A.1.b.iii",
+        "A.2.a"
       ],
-      "rationaleAI": "Relevant to the Supreme Court under Marshall and the development of federal judicial power (A.1.b.iii, A.2.a)."
+      "rationaleAI": "The Supreme Court connects to the Marshall Court (A.1.b.iii, A.2.a)."
     },
     {
       "vsiTitle": "American Political Parties and Elections",
       "vsiAuthor": "L. Sandy Maisel",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the formation of American political parties from the Federalist-Republican split through Whigs, Democrats, and the rise of the Republican Party (A-B)."
+      "relevantPathsAI": [
+        "A.1.b.ii",
+        "A.2.b",
+        "A.3.b"
+      ],
+      "rationaleAI": "Political parties connect across periods from Federalists (A.1.b.ii) to Republicans (A.3.b)."
     },
     {
       "vsiTitle": "American Political History",
       "vsiAuthor": "Donald Critchlow",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides a political narrative of the United States from its founding through the Progressive Era (A-B)."
+      "relevantPathsAI": [
+        "A",
+        "B"
+      ],
+      "rationaleAI": "Political institutions connect broadly across all periods."
     },
     {
       "vsiTitle": "American Legal History",
       "vsiAuthor": "G. Edward White",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "A.1.b.i",
+        "B.1.a"
       ],
-      "rationaleAI": "Traces the development of federal law including civil rights legislation and antitrust regulation under the Sherman Act (B.1, B.2.f)."
+      "rationaleAI": "Legal development connects to the Constitution (A.1.b.i) and civil rights (B.1.a)."
     },
     {
       "vsiTitle": "Tocqueville",
       "vsiAuthor": "Harvey Mansfield",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b"
       ],
-      "rationaleAI": "Tocqueville's analysis of American democracy is directly relevant to Jacksonian democracy and the extension of the franchise (A.2.b)."
+      "rationaleAI": "Tocqueville connects to Jacksonian democracy (A.2.b)."
     },
     {
       "vsiTitle": "North American Indians",
       "vsiAuthor": "Theda Perdue, Michael D. Green",
       "relevantPathsAI": [
-        "A.2",
-        "B.2"
+        "A.2.b",
+        "B.2.b.iv"
       ],
-      "rationaleAI": "Essential for understanding Indian removal under Jackson, the violation of treaties, and the Indian wars of westward expansion (A.2.b, B.2.b.iv)."
+      "rationaleAI": "Indigenous peoples connect to Indian removal (A.2.b) and Indian wars (B.2.b.iv)."
     },
     {
       "vsiTitle": "The American West",
       "vsiAuthor": "Stephen Aron",
       "relevantPathsAI": [
-        "B.2"
+        "A.2.d",
+        "B.2.b"
       ],
-      "rationaleAI": "Explores the development of the American West (1865-1900) including mining, cattle ranching, railroads, and the conflicts with Native peoples (B.2.b)."
+      "rationaleAI": "Western expansion connects to expansionism (A.2.d) and the West 1865-1900 (B.2.b)."
     },
     {
       "vsiTitle": "The American South",
       "vsiAuthor": "Charles Reagan Wilson",
       "relevantPathsAI": [
         "A.3",
-        "B.1"
+        "B.1.c"
       ],
-      "rationaleAI": "Provides a regional perspective on slavery, secession, Reconstruction, and the emergence of the Jim Crow South (A.3, B.1)."
+      "rationaleAI": "Southern culture connects to the Civil War (A.3) and the New South (B.1.c)."
     },
     {
       "vsiTitle": "American Immigration",
       "vsiAuthor": "David A. Gerber",
       "relevantPathsAI": [
-        "A.2",
-        "B.2"
+        "A.2.a.iii",
+        "B.2.a"
       ],
-      "rationaleAI": "Traces successive waves of immigration -- Irish and German in the 1830s-50s, then southern and eastern European -- and their impact on American society (A.2.a.iii, B.2.a)."
+      "rationaleAI": "Immigration connects to 1830-50 (A.2.a.iii) and 1865-1900 (B.2.a)."
     },
     {
       "vsiTitle": "American Women's History",
       "vsiAuthor": "Susan Ware",
       "relevantPathsAI": [
         "A.2.c",
-        "B.3"
+        "B.3.b"
       ],
-      "rationaleAI": "Addresses women's roles in antebellum reform movements and the Progressive Era, including suffrage and social welfare campaigns (A.2.c, B.3.b)."
+      "rationaleAI": "Women's suffrage connects to reform (A.2.c) and Progressivism (B.3.b)."
     },
     {
       "vsiTitle": "American Cultural History",
       "vsiAuthor": "Eric Avila",
       "relevantPathsAI": [
-        "A.2",
+        "A.2.e",
         "B.4"
       ],
-      "rationaleAI": "Explores cultural developments from the Transcendentalist movement through the Gilded Age arts and letters (A.2.e, B.4)."
+      "rationaleAI": "Cultural production connects to pre-1850 (A.2.e) and 1865-1920 (B.4)."
     },
     {
       "vsiTitle": "American Intellectual History",
       "vsiAuthor": "Jennifer Ratner-Rosenhagen",
       "relevantPathsAI": [
-        "A.2",
-        "B.4"
+        "A.2.e",
+        "B.4.b"
       ],
-      "rationaleAI": "Traces American intellectual life from Transcendentalism and the growth of pragmatism through Progressive-era thought (A.2.e, B.4)."
+      "rationaleAI": "Intellectual currents connect to Transcendentalism (A.2.e) and philosophy (B.4.b)."
     },
     {
       "vsiTitle": "Progressivism",
       "vsiAuthor": "Walter Nugent",
       "relevantPathsAI": [
-        "B.3"
+        "B.3.b",
+        "B.3.b.i",
+        "B.3.b.ii",
+        "B.3.b.iii"
       ],
-      "rationaleAI": "Directly addresses the Progressive Movement (c. 1896-1920) including muckrakers, social reform, and the administrations of Roosevelt, Taft, and Wilson (B.3.b)."
+      "rationaleAI": "Progressivism directly addresses the Progressive Movement (B.3.b)."
     },
     {
       "vsiTitle": "The First World War",
@@ -229,31 +263,31 @@
       "relevantPathsAI": [
         "B.3.c"
       ],
-      "rationaleAI": "Addresses U.S. entry into World War I, military mobilization, the Western Front campaigns, and Wilson's role at the Paris Peace Conference (B.3.c)."
+      "rationaleAI": "WWI addresses the U.S. role (B.3.c)."
     },
     {
       "vsiTitle": "The Treaty of Versailles",
       "vsiAuthor": "Michael S. Neiberg",
       "relevantPathsAI": [
-        "B.3.c"
+        "B.3.c.iii"
       ],
-      "rationaleAI": "Focuses on the Paris Peace Conference and the Senate's consequential rejection of the Treaty of Versailles (B.3.c.iii)."
+      "rationaleAI": "The Treaty connects to Wilson's policies and Senate rejection (B.3.c.iii)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b"
       ],
-      "rationaleAI": "Provides theoretical context for understanding Jacksonian democracy, the extension of the franchise, and evolving democratic institutions (A.2.b)."
+      "rationaleAI": "Democracy connects to Jacksonian democracy (A.2.b)."
     },
     {
       "vsiTitle": "Federalism",
       "vsiAuthor": "Mark J. Rozell, Clyde Wilcox",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b.i"
       ],
-      "rationaleAI": "Illuminates the tension between federal and state power that runs through American history from the Constitutional Convention onward (A.1.b)."
+      "rationaleAI": "Federalism connects to the Convention (A.1.b.i)."
     },
     {
       "vsiTitle": "Capitalism",
@@ -261,52 +295,62 @@
       "relevantPathsAI": [
         "B.2.c"
       ],
-      "rationaleAI": "Provides the economic framework for understanding industrialization, the rise of trusts and holding companies, and the manufacturing boom (B.2.c)."
+      "rationaleAI": "Capitalism connects to industrialization (B.2.c)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "A.2",
         "B.2.c"
       ],
-      "rationaleAI": "Places American industrialization within the broader context of the global Industrial Revolution (A.2, B.2.c)."
+      "rationaleAI": "Industrialization connects to the manufacturing boom (B.2.c)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
       "relevantPathsAI": [
-        "B.3"
+        "B.3.a"
       ],
-      "rationaleAI": "Provides context for understanding America's emergence as an imperial power, the Spanish-American War, and the acquisition of overseas territories (B.3.a)."
+      "rationaleAI": "Imperial expansion connects to U.S. emergence (B.3.a)."
     },
     {
       "vsiTitle": "Canada",
       "vsiAuthor": "Donald Wright",
       "relevantPathsAI": [
-        "C"
+        "C",
+        "C.1",
+        "C.2",
+        "C.3"
       ],
-      "rationaleAI": "Traces Canadian history from British colonial rule through Confederation (1867) and subsequent national development (C)."
+      "rationaleAI": "Canadian history addresses British colonial rule (C.1), development (C.2), and the Dominion (C.3)."
     },
     {
       "vsiTitle": "American Naval History",
       "vsiAuthor": "Craig L. Symonds",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses the naval dimensions of the Revolution, the War of 1812, Civil War riverine and coastal campaigns, and the Spanish-American War."
+      "relevantPathsAI": [
+        "A.1.a.ii",
+        "B.3.a.i"
+      ],
+      "rationaleAI": "Naval history connects to the War of Independence (A.1.a.ii) and Spanish-American War (B.3.a.i)."
     },
     {
       "vsiTitle": "American Military History",
       "vsiAuthor": "Joseph T. Glatthaar",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides military history spanning the Revolution, War of 1812, Mexican War, Civil War, Indian wars, and Spanish-American War."
+      "relevantPathsAI": [
+        "A.1.a.ii",
+        "A.3.c",
+        "B.3.c.ii"
+      ],
+      "rationaleAI": "Military development connects across the War of Independence, Civil War, and WWI."
     },
     {
       "vsiTitle": "American Business History",
       "vsiAuthor": "Walter A. Friedman",
       "relevantPathsAI": [
-        "B.2.c"
+        "B.2.c",
+        "B.2.d"
       ],
-      "rationaleAI": "Traces the growth of American business from railroads and trusts through the corporate economy of the Gilded Age (B.2.c-d)."
+      "rationaleAI": "Business enterprise connects to industrialization (B.2.c) and trade (B.2.d)."
     },
     {
       "vsiTitle": "The Mexican Revolution",
@@ -321,64 +365,63 @@
       "vsiTitle": "American Foreign Relations",
       "vsiAuthor": "Andrew Preston",
       "relevantPathsAI": [
-        "B.3",
+        "A.1.b.iii",
+        "B.3.a",
         "B.3.c"
       ],
-      "rationaleAI": "Traces American foreign policy from the Monroe Doctrine through the Open Door policy and Roosevelt Corollary to entry into World War I (B.3.a, B.3.c)."
+      "rationaleAI": "Foreign policy connects to the War of 1812 (A.1.b.iii), imperialism (B.3.a), and WWI (B.3.c)."
     },
     {
       "vsiTitle": "American poetry",
       "vsiAuthor": "David Caplan",
       "relevantPathsAI": [
-        "A.2",
-        "B.4"
+        "A.2.e",
+        "B.4.a"
       ],
-      "rationaleAI": "American poetry from Whitman through the moderns reflects the cultural currents discussed in A.2.e and B.4.a."
+      "rationaleAI": "Poetry connects to cultural development to 1850 (A.2.e) and 1865-1920 (B.4.a)."
     },
     {
       "vsiTitle": "Prohibition",
       "vsiAuthor": "W. J. Rorabaugh",
       "relevantPathsAI": [
-        "A.2.c",
-        "B.3"
+        "A.2.c"
       ],
-      "rationaleAI": "The temperance movement was a major reform activity in the Age of Reform (1830-50) and the Progressive Era (A.2.c, B.3.b)."
+      "rationaleAI": "Temperance connects to the Age of Reform (A.2.c)."
     },
     {
       "vsiTitle": "Asian American History",
       "vsiAuthor": "Madeline Y. Hsu",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.a"
       ],
-      "rationaleAI": "Addresses Asian immigration and anti-Chinese sentiment in the context of westward expansion and exclusionary immigration policies (B.2)."
+      "rationaleAI": "Asian immigration connects to urbanization 1865-1900 (B.2.a)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
       "relevantPathsAI": [
-        "A.2"
+        "A.1",
+        "A.2.a"
       ],
-      "rationaleAI": "Provides theoretical background for understanding the growth of American nationalism, the Era of Good Feelings, and the rise of sectionalism (A.2.a)."
+      "rationaleAI": "National identity connects to U.S. establishment (A.1) and national feelings (A.2.a)."
     },
     {
       "vsiTitle": "Diaspora",
       "vsiAuthor": "Kevin Kenny",
       "relevantPathsAI": [
-        "A.2",
-        "B.2"
+        "B.2.a"
       ],
-      "rationaleAI": "Addresses diaspora communities and waves of immigration that reshaped American demographics and culture (A.2.a.iii, B.2.a)."
+      "rationaleAI": "Migration connects to urbanization and immigration (B.2.a)."
     },
     {
       "vsiTitle": "Racism",
       "vsiAuthor": "Ali Rattansi",
       "relevantPathsAI": [
-        "A.3",
-        "B.1",
-        "B.2"
+        "B.1.c"
       ],
-      "rationaleAI": "Addresses the racial dimensions of slavery, Jim Crow, white supremacy, and anti-immigrant prejudice that shaped American society (A.3, B.1, B.2.a)."
+      "rationaleAI": "Racism connects to Jim Crow (B.1.c)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

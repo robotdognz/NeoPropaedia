@@ -4,70 +4,83 @@
     {
       "vsiTitle": "Heredity",
       "vsiAuthor": "John Waller",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers human heredity, genome, variation, and race -- the central topics of this section (A, B)."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.4",
+        "B",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "Biological inheritance addresses biological basis (A.1), twin studies and chromosomes (A.2), genetics applications (A.3), behavioural traits (A.4), and race concepts (B.1, B.2)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.2"
+        "A.2",
+        "A.3",
+        "A.4",
+        "B.1"
       ],
-      "rationaleAI": "Explains cell division, chromosomes, mutations, cystic fibrosis inheritance, and sex linkage, directly relevant to genetic reproduction and chromosome variations (A.1, A.2.b)."
+      "rationaleAI": "Genetic variation, sex linkage, and mutations address biological basis (A.1), genetic abnormalities (A.2.b), forensic applications (A.3), heritability of IQ (A.4), and human diversity (B.1)."
     },
     {
       "vsiTitle": "Genomics",
       "vsiAuthor": "John M. Archibald",
       "relevantPathsAI": [
-        "A.3",
-        "B.1"
+        "A.1",
+        "A.3"
       ],
-      "rationaleAI": "Introduces DNA sequencing and genomic technologies that underpin our understanding of human genetic variation and applied human genetics (A.3, B.1)."
+      "rationaleAI": "Genome assembly addresses biological basis (A.1) and personalized medicine applications (A.3)."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
       "relevantPathsAI": [
         "A.1",
-        "A.2"
+        "A.3"
       ],
-      "rationaleAI": "Details DNA structure, Mendelian inheritance patterns, and molecular mechanisms underlying genetic reproduction and chromosome variations (A.1, A.2.b)."
+      "rationaleAI": "DNA structure addresses biological basis (A.1) and DNA fingerprinting applications (A.3)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
       "relevantPathsAI": [
-        "A.2",
-        "B.1"
+        "A.1",
+        "A.2.a"
       ],
-      "rationaleAI": "Illuminates how identical twins form and how cell differentiation translates genotype into phenotypic variation (A.2.a, B.1)."
+      "rationaleAI": "Development from fertilized egg addresses biological basis (A.1), and identical twins relate to twin studies (A.2.a)."
     },
     {
       "vsiTitle": "Human evolution",
       "vsiAuthor": "Bernard Wood",
       "relevantPathsAI": [
-        "B"
+        "B",
+        "B.1"
       ],
-      "rationaleAI": "Ancient DNA analysis and hominin speciation bear directly on the nature and origin of human physical variation (B)."
+      "rationaleAI": "Population genetics and dispersal patterns address human physical variation (B) and diversity (B.1)."
     },
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "B.1"
       ],
-      "rationaleAI": "Explains genetic drift, natural selection, and population-level mechanisms that generate human physical diversity (B.1, B.2)."
+      "rationaleAI": "Natural selection shaping variation addresses human diversity (B.1)."
     },
     {
       "vsiTitle": "Intelligence",
       "vsiAuthor": "Ian J. Deary",
       "relevantPathsAI": [
-        "A.2",
+        "A.2.a",
         "A.4"
       ],
-      "rationaleAI": "Examines IQ measurement, Wechsler scales, and twin studies on cognitive heritability, directly relevant to inheritance of behavioral traits (A.2, A.4)."
+      "rationaleAI": "Twin studies and genetic contributions address twin inferences (A.2.a) and behavioural trait inheritance (A.4)."
     },
     {
       "vsiTitle": "Eugenics",
@@ -76,33 +89,33 @@
         "A.3",
         "B.2"
       ],
-      "rationaleAI": "Traces historical applications of human genetics to population control and racial classification, from Francis Galton's founding ideas onward (A.3, B.2)."
+      "rationaleAI": "Eugenic policies address genetics applications (A.3) and race measures (B.2)."
     },
     {
       "vsiTitle": "Racism",
       "vsiAuthor": "Ali Rattansi",
       "relevantPathsAI": [
+        "B",
         "B.2"
       ],
-      "rationaleAI": "Directly addresses critiques of old racial measures such as colour, hair form, and body measurements, and institutional racism (B.2)."
+      "rationaleAI": "Biological racism addresses human physical variation (B) and race measures (B.2)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "B.1"
       ],
-      "rationaleAI": "Provides cultural perspectives on human diversity and the anthropological critique of biological race concepts (B.1, B.2)."
+      "rationaleAI": "Cultural relativism addresses human diversity (B.1)."
     },
     {
       "vsiTitle": "Philosophy of Biology",
       "vsiAuthor": "Samir Okasha",
       "relevantPathsAI": [
-        "A.2",
-        "B.2"
+        "A",
+        "B"
       ],
-      "rationaleAI": "Engages with the nature-versus-nurture debate, essentialism, and species concepts relevant to scientific controversies about race and heredity (A.2, B.2)."
+      "rationaleAI": "Nature-nurture and species concepts address heredity (A) and physical variation (B)."
     },
     {
       "vsiTitle": "Demography",
@@ -110,8 +123,9 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Analyzes population distribution and life chances relevant to understanding patterns of human diversity across populations (B.1)."
+      "rationaleAI": "Population demographics address human diversity (B.1)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

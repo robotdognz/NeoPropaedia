@@ -4,8 +4,13 @@
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses religious rites, sacrifice, passage rites (birth, marriage, death), and ritualization, the core subject matter of 812.A."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.4"
+      ],
+      "rationaleAI": "Cross-cultural analysis of ritual encompassing rites of passage, sacrifice, birth, marriage, and death ceremonies directly addresses religious rites and customs (A), rituals of worship (A.1), passage and purification rites (A.2), and religious feasts and festivals (A.4)."
     },
     {
       "vsiTitle": "Pilgrimage",
@@ -13,23 +18,25 @@
       "relevantPathsAI": [
         "A.1.c"
       ],
-      "rationaleAI": "Directly covers pilgrimage as a religious practice across traditions including Lourdes and the Ganges, the specific topic of 812.A.1.c."
+      "rationaleAI": "Cross-cultural study of pilgrimage spanning sacred sites including Mecca, Lourdes, Canterbury, and the Ganges directly addresses pilgrimage (A.1.c) as a ritual of worship."
     },
     {
       "vsiTitle": "Monasticism",
       "vsiAuthor": "Stephen J. Davis",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.c",
+        "B.2"
       ],
-      "rationaleAI": "Directly addresses monasticism in Buddhist and Christian traditions, the specific topic of 812.A.3.c."
+      "rationaleAI": "Monasticism spanning Christian and Buddhist traditions with communal organization, rules of conduct, and hierarchical governance directly addresses monasticism (A.3.c) and forms of religious organization (B.2)."
     },
     {
       "vsiTitle": "Saints",
       "vsiAuthor": "Simon Yarrow",
       "relevantPathsAI": [
-        "B.3"
+        "B.3",
+        "C.2"
       ],
-      "rationaleAI": "Covers sainthood and sanctity across religious traditions, directly relevant to 812.B.3."
+      "rationaleAI": "Cross-cultural analysis of sainthood and veneration from the early Christian Church through the modern era directly addresses sainthood (B.3). Saints as artistic and literary subjects relate to art and architecture, religious symbolism (C.2)."
     },
     {
       "vsiTitle": "Martyrdom",
@@ -37,17 +44,17 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Examines martyrdom as a religious institution and practice across traditions, relevant to 812.B.3 on sainthood and 812.A on religious customs."
+      "rationaleAI": "Martyrdom across Christianity, Islam, and other traditions, including how martyrs are constructed through cultural memory, relates to sainthood and the veneration of those who sacrificed their lives for faith (B.3)."
     },
     {
       "vsiTitle": "Druids",
       "vsiAuthor": "Barry Cunliffe",
       "relevantPathsAI": [
-        "A.1",
-        "A.3",
+        "A.1.d",
+        "A.3.f",
         "B.2"
       ],
-      "rationaleAI": "Covers druidic priesthood, prophecy, sacrifice, and divination, relevant to 812.A.1.d on sacrifice, 812.A.3.f on prophecy and divination, and 812.B.2 on the priesthood."
+      "rationaleAI": "Druids as a priestly caste practicing prophecy, sacrifice (A.1.d), and divination (A.3.f) represent a form of religious organization (B.2)."
     },
     {
       "vsiTitle": "The Bible",
@@ -55,7 +62,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Covers the Bible as a foundational sacred writing, directly relevant to 812.C.1 on sacred writings."
+      "rationaleAI": "The Bible as sacred texts central to Judaism and Christianity, covering composition, transmission, and canonization, directly addresses sacred writings (C.1)."
     },
     {
       "vsiTitle": "The Koran",
@@ -63,7 +70,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Covers the Quran as sacred scripture including revelation and recitation, directly relevant to 812.C.1."
+      "rationaleAI": "The Quran as the central sacred text of Islam, covering its role as physical codex, liturgical text, and scriptural authority, directly addresses sacred writings (C.1)."
     },
     {
       "vsiTitle": "The Old Testament",
@@ -71,7 +78,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Addresses the Old Testament as sacred scripture including psalms and laws, relevant to 812.C.1 on sacred writings."
+      "rationaleAI": "The Old Testament encompassing the Hebrew Bible and various Christian canons directly addresses sacred writings (C.1)."
     },
     {
       "vsiTitle": "The New Testament",
@@ -79,7 +86,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Addresses the New Testament as sacred scripture including its canon and role in worship, relevant to 812.C.1."
+      "rationaleAI": "The New Testament as early Christian writings covering canon formation directly addresses sacred writings (C.1)."
     },
     {
       "vsiTitle": "The Hebrew Bible As Literature",
@@ -87,7 +94,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Examines the Hebrew Bible as sacred literature including poetry and Song of Songs, relevant to 812.C.1."
+      "rationaleAI": "Literary analysis of the Hebrew Bible relates to sacred writings (C.1)."
     },
     {
       "vsiTitle": "The Dead Sea Scrolls",
@@ -95,7 +102,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Covers important ancient sacred texts and their relationship to temple worship, relevant to 812.C.1."
+      "rationaleAI": "The Dead Sea Scrolls as manuscripts significant for biblical canon formation relate to sacred writings (C.1)."
     },
     {
       "vsiTitle": "The Apocryphal Gospels",
@@ -103,7 +110,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Examines non-canonical early Christian sacred writings, relevant to 812.C.1."
+      "rationaleAI": "Non-canonical early Christian texts relate to sacred writings (C.1)."
     },
     {
       "vsiTitle": "The Book of Mormon",
@@ -111,16 +118,17 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Covers the Book of Mormon as a sacred text for the LDS tradition, relevant to 812.C.1."
+      "rationaleAI": "The Book of Mormon as a sacred text relates to sacred writings (C.1)."
     },
     {
       "vsiTitle": "The Book of Common Prayer",
       "vsiAuthor": "Brian Cummings",
       "relevantPathsAI": [
         "A.1",
+        "C.1",
         "C.3"
       ],
-      "rationaleAI": "Addresses a foundational liturgical text for Anglican worship, relevant to 812.A.1 on rituals of worship and 812.C.3 on ceremonial objects."
+      "rationaleAI": "The Book of Common Prayer as a liturgical text shaping worship relates to rituals of worship (A.1), sacred writings (C.1), and ceremonial objects and sacraments (C.3)."
     },
     {
       "vsiTitle": "Christian art",
@@ -128,67 +136,79 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Covers religious art, architecture, symbolism, and iconography in Christianity, directly relevant to 812.C.2."
+      "rationaleAI": "Christian art with liturgical functions and religious iconography directly addresses art and architecture, religious symbolism and iconography (C.2)."
     },
     {
       "vsiTitle": "Judaism",
       "vsiAuthor": "Norman Solomon",
       "relevantPathsAI": [
-        "A.1",
+        "A.1.a",
+        "A.1.b",
+        "A.3.b",
         "A.4",
-        "B.2"
+        "B.2",
+        "C.1"
       ],
-      "rationaleAI": "Covers Jewish religious practices including prayer, festivals, Talmud, and Torah, relevant to 812.A.1.a on prayer, 812.A.4 on feasts and festivals, and 812.B.2 on synagogues."
+      "rationaleAI": "Jewish religious practice including prayer (A.1.a), dietary laws (A.3.b), festivals (A.4), and synagogue organization (B.2). The Torah and Talmud relate to sacred writings (C.1)."
     },
     {
       "vsiTitle": "African Religions",
       "vsiAuthor": "Jacob K. Olupona",
       "relevantPathsAI": [
-        "A.1"
+        "A",
+        "A.2",
+        "A.3.f",
+        "A.4",
+        "B.2"
       ],
-      "rationaleAI": "Covers African religious rites of passage, rituals, and sacred practices, relevant to 812.A.1-2 on worship rituals and passage rites."
+      "rationaleAI": "Indigenous African religious traditions covering rites of passage (A.2), festivals (A.4), divination (A.3.f), and religious institutions (B.2)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
       "relevantPathsAI": [
-        "A.1"
+        "A.3.a",
+        "B.1",
+        "B.2"
       ],
-      "rationaleAI": "Covers Islamic practices including prayer, pilgrimage, and the role of the prophet, relevant to 812.A.1 on rituals of worship and 812.B on religious institutions."
+      "rationaleAI": "Islam's Sharia relates to religious law (A.3.a), the caliphate to religious states (B.1), and mosque organization to B.2."
     },
     {
       "vsiTitle": "Islamic Law",
       "vsiAuthor": "Mashood A. Baderin",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a"
       ],
-      "rationaleAI": "Covers Shariah as a system for regulating personal and social behavior including family law and dietary law, directly relevant to 812.A.3.a-b."
+      "rationaleAI": "Islamic jurisprudence directly addresses religious law (A.3.a)."
     },
     {
       "vsiTitle": "Anglicanism",
       "vsiAuthor": "Mark Chapman",
       "relevantPathsAI": [
-        "B.2",
-        "A.1"
+        "A.1",
+        "B.2"
       ],
-      "rationaleAI": "Covers Anglican church organization, worship, and prayer, relevant to 812.B.2 on forms of religious organization and 812.A.1.a on prayer."
+      "rationaleAI": "Anglican liturgy and church governance relate to rituals of worship (A.1) and forms of religious organization (B.2)."
     },
     {
       "vsiTitle": "Vatican II",
       "vsiAuthor": "Shaun Blanchard, Stephen Bullivant",
       "relevantPathsAI": [
-        "B.2"
+        "A.1",
+        "B.2",
+        "C.3"
       ],
-      "rationaleAI": "Covers a major religious council that reformed Catholic liturgy and institutions, relevant to 812.B.2 on councils and 812.A on religious rites."
+      "rationaleAI": "Vatican II's impact on liturgy, sacraments, and organization relates to rituals of worship (A.1), forms of religious organization (B.2), and sacraments (C.3)."
     },
     {
       "vsiTitle": "The Catholic Reformation",
       "vsiAuthor": "James E. Kelly",
       "relevantPathsAI": [
         "B.2",
-        "B.4"
+        "B.4",
+        "C.2"
       ],
-      "rationaleAI": "Covers religious institutional reform, missionary practice, and the Council of Trent, relevant to 812.B.2 on forms of religious organization and 812.B.4 on religious education."
+      "rationaleAI": "Catholic Reformation's institutional renewal relates to forms of religious organization (B.2), religious education (B.4), and art (C.2)."
     },
     {
       "vsiTitle": "Secularism",
@@ -196,16 +216,16 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Examines church-state relations and the role of religious institutions in public life, relevant to 812.B.1 on theocracies."
+      "rationaleAI": "Secularism contrasts with theocracies and religious states (B.1)."
     },
     {
       "vsiTitle": "Spirituality",
       "vsiAuthor": "Philip Sheldrake",
       "relevantPathsAI": [
-        "A.1",
-        "A.3"
+        "A.1.a",
+        "A.3.e"
       ],
-      "rationaleAI": "Covers spiritual practices including prayer, meditation, and asceticism across traditions, relevant to 812.A.1.a on prayer and 812.A.3.e on asceticism."
+      "rationaleAI": "Contemplative practices relate to prayer (A.1.a) and asceticism (A.3.e)."
     },
     {
       "vsiTitle": "The Quakers",
@@ -214,13 +234,16 @@
         "A.1",
         "B.2"
       ],
-      "rationaleAI": "Covers Quaker worship, theology, and congregational organization, relevant to 812.A.1 on rituals of worship and 812.B.2 on forms of religious organization."
+      "rationaleAI": "Quaker silent worship relates to rituals of worship (A.1) and religious organization (B.2)."
     },
     {
       "vsiTitle": "Christianity",
       "vsiAuthor": "Linda Woodhead",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers Christian practices, church organization, sacraments, and the church year, relevant to 812.A on rites and customs and 812.B on institutions."
+      "relevantPathsAI": [
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "Christianity's institutional forms relate to religious organization (B.2) and sacred writings (C.1)."
     },
     {
       "vsiTitle": "Blasphemy",
@@ -228,7 +251,7 @@
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Examines religious regulation of speech regarding the sacred, relevant to 812.A.3 on religious regulation of personal and social behavior."
+      "rationaleAI": "Blasphemy relates to religious regulation of behavior (A.3)."
     },
     {
       "vsiTitle": "Polygamy",
@@ -237,14 +260,17 @@
         "A.2",
         "A.3"
       ],
-      "rationaleAI": "Addresses religious regulation of marriage across Christianity, Islam, Judaism, and Mormonism, relevant to 812.A.2 on marriage rites and 812.A.3 on regulation of behavior."
+      "rationaleAI": "Polygamy relates to passage rites (A.2) and religious regulation (A.3)."
     },
     {
       "vsiTitle": "War & Religion",
       "vsiAuthor": "Jolyon Mitchell, Joshua Rey",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores religious institutions' involvement in warfare including crusades and just war theory, relevant to 812.B on religious leaders and institutions."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Just war theory relates to religious regulation of behavior (A.3)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

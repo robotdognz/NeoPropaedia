@@ -4,30 +4,41 @@
     {
       "vsiTitle": "Australia",
       "vsiAuthor": "Kenneth Morgan",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers Australian history including the Great Depression, WWII, postwar prosperity, Aboriginal land rights, and the White Australia policy in B."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.4"
+      ],
+      "rationaleAI": "Australian history from colonial foundations through the Mabo decision on Aboriginal land rights, the White Australia policy, and federation directly addresses Australia since 1920 (B), including interwar developments and the Great Depression (B.1), postwar political and economic developments including Aboriginal programs (B.2), international relations (B.3), and social developments including Aboriginal-rights issues and immigration (B.4)."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Australia and New Zealand's Commonwealth relationships, the League of Nations mandate system, and Papua New Guinea's path to independence are examined in context of imperial decline."
+      "relevantPathsAI": [
+        "A.1",
+        "B.1"
+      ],
+      "rationaleAI": "British imperial administration and decolonization connect to the post-World War I mandate system in Oceania (A.1) and Australia's relationship with Britain in the interwar period (B.1)."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "B.3"
       ],
-      "rationaleAI": "Papua New Guinea's independence in 1975 and the dissolution of the Trust Territory of the Pacific Islands (A.3) exemplify decolonization in Oceania."
+      "rationaleAI": "Transition from colonial empires to independent states connects to post-World War II movements toward autonomy among indigenous peoples and independent island states (A.3) and independence of Papua New Guinea (B.3)."
     },
     {
       "vsiTitle": "World War II",
       "vsiAuthor": "Gerhard L. Weinberg",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "B.1"
       ],
-      "rationaleAI": "The Pacific theater—Japanese expansion, Allied island-hopping, and the war's aftermath—reshaped the entire region (A.2)."
+      "rationaleAI": "Japan's expansion in the Pacific and the rise and fall of Japanese power address World War II in the Pacific and effects on indigenous peoples (A.2) and Australia's military role in World War II (B.1)."
     },
     {
       "vsiTitle": "The Cold War",
@@ -35,7 +46,7 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Australia and New Zealand joined ANZUS and SEATO, committed forces to Korea and Vietnam, and navigated superpower rivalry in the Pacific (B.3)."
+      "rationaleAI": "Cold War superpower rivalry and proxy wars connect to Australia's participation in regional security alliances and military involvement in the Korean and Vietnam wars (B.3)."
     },
     {
       "vsiTitle": "The United Nations",
@@ -51,7 +62,7 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Large-scale European and Asian immigration transformed Australia's demographics and national identity, central to B.4."
+      "rationaleAI": "International migration and immigration policy connect to demographic and cultural changes resulting from large-scale European and Asian immigration to Australia (B.4)."
     },
     {
       "vsiTitle": "The Welfare State",
@@ -60,7 +71,7 @@
         "B.2",
         "C.1"
       ],
-      "rationaleAI": "Australian Labor governments and New Zealand's Labour Party built welfare programs (B.2, C.1) that became defining features of both nations' social contracts."
+      "rationaleAI": "Welfare state systems connect to the expansion of social services under the Whitlam government (B.2) and New Zealand Labour Party social welfare programs (C.1)."
     },
     {
       "vsiTitle": "Democracy",
@@ -68,7 +79,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Australian and New Zealand democratic traditions, including the 1975 constitutional crisis and Whitlam's dismissal, illustrate parliamentary democracy under stress (B.2)."
+      "rationaleAI": "Democracy and democratic governance connect to Australia's parliamentary system and the 1975 constitutional crisis and dismissal of Whitlam (B.2)."
     },
     {
       "vsiTitle": "The Great Depression and The New Deal",
@@ -77,7 +88,7 @@
         "B.1",
         "C.1"
       ],
-      "rationaleAI": "The Great Depression devastated Australia and New Zealand's commodity-dependent economies, shaping the political upheavals described in B.1 and C.1."
+      "rationaleAI": "The Great Depression's global impact connects to the Great Depression in Australia and formation of the United Australia Party (B.1) and New Zealand's Great Depression and Labour Party victory (C.1)."
     },
     {
       "vsiTitle": "Feminism",
@@ -85,7 +96,7 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "The women's movement drove significant social change in Australia, from suffrage through second-wave feminism and workplace reform (B.4)."
+      "rationaleAI": "Feminism and women's movements connect to feminism and the women's movement as social developments in Australia from 1945 (B.4)."
     },
     {
       "vsiTitle": "Nuclear Weapons",
@@ -93,7 +104,7 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Australia's vigorous opposition to French nuclear testing in the South Pacific became a defining foreign policy stance (B.3)."
+      "rationaleAI": "Nuclear weapons policy connects to Australia's opposition to French nuclear testing in the South Pacific (B.3)."
     },
     {
       "vsiTitle": "Human Rights",
@@ -102,7 +113,7 @@
         "B.2",
         "B.4"
       ],
-      "rationaleAI": "Aboriginal-rights struggles, including the landmark 1993 Native Title Act and the Stolen Generations reckoning, are central to B.2 and B.4."
+      "rationaleAI": "Human rights frameworks connect to Aboriginal land-claims legislation (B.2) and Aboriginal-rights issues (B.4)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
@@ -110,21 +121,23 @@
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Indigenous peoples of Oceania and the cultural impacts of UN trusteeship administrations (A.3) are illuminated through anthropological perspectives."
+      "rationaleAI": "Ethnographic study of non-Western societies connects to indigenous peoples of Oceania and their movements toward autonomy (A.3)."
     },
     {
       "vsiTitle": "Globalization",
       "vsiAuthor": "Manfred Steger",
       "relevantPathsAI": [
-        "B.2"
+        "B.3"
       ],
-      "rationaleAI": "Australia's pivot toward Asian and Pacific economic partnerships and domestic deregulation reshaped its place in the global economy (B.2-3)."
+      "rationaleAI": "Globalization and economic integration connect to Australia's strengthening of economic and political ties to Asian and Pacific nations (B.3)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
-      "relevantPathsAI": [],
-      "rationaleAI": "Indigenous autonomy movements and the evolution of Australian national identity—from British dominion to multicultural republic debates—are explored here."
+      "relevantPathsAI": [
+        "A.3"
+      ],
+      "rationaleAI": "Nationalism and self-determination connect to movements toward autonomy among the indigenous peoples of Oceania and independent island states (A.3)."
     },
     {
       "vsiTitle": "Modern Japan",
@@ -132,8 +145,9 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Japan's imperial expansion and wartime conquests in the Pacific fundamentally altered Oceania's political landscape (A.2)."
+      "rationaleAI": "Japan's militarism and World War II involvement connect to the rise and fall of Japanese power in the Pacific and effects of the war on indigenous peoples (A.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

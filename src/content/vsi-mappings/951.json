@@ -6,18 +6,17 @@
       "vsiAuthor": "Paul Bahn",
       "relevantPathsAI": [
         "A",
-        "B.2",
-        "B.5"
+        "B"
       ],
-      "rationaleAI": "Covers archaeological methods essential for studying pre-Inca cultures (A), including Chavin, Paracas, Nazca, Moche, and Tiahuanaco sites (B.2-B.5)."
+      "rationaleAI": "Archaeological methods connect to sources (A) and pre-Inca cultures (B)."
     },
     {
       "vsiTitle": "The Conquistadors",
       "vsiAuthor": "Matthew Restall, Felipe Fernández-Armesto",
       "relevantPathsAI": [
-        "C.1"
+        "C.1.f"
       ],
-      "rationaleAI": "Directly covers the Spanish conquest of the Incas (1532-40), Pizarro's execution of Atahuallpa, and consolidation of Spanish power (C.1.f)."
+      "rationaleAI": "Spanish conquest directly addresses the conquest of the Incas (C.1.f)."
     },
     {
       "vsiTitle": "Prehistory",
@@ -25,33 +24,34 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Covers the Late Preceramic development of agriculture (B.1) and early Andean settlement patterns before the rise of complex societies."
+      "rationaleAI": "Prehistoric agriculture connects to Late Preceramic cultures (B.1)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
       "relevantPathsAI": [
-        "A",
         "C.2"
       ],
-      "rationaleAI": "Relevant to the ethnography of the Andean region (A), Incan government and society, and the quipu record-keeping system (C.2.a)."
+      "rationaleAI": "Anthropological study connects to Incan government and society (C.2)."
     },
     {
       "vsiTitle": "Colonial Latin American Literature",
       "vsiAuthor": "Rolena Adorno",
       "relevantPathsAI": [
-        "C.1"
+        "C.1.f"
       ],
-      "rationaleAI": "Covers documentary historical sources about the Incas and the Spanish conquest, including chronicles by Las Casas and Garcilaso de la Vega (A, C.1.f)."
+      "rationaleAI": "Conquest narratives connect to the Spanish conquest (C.1.f)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
       "relevantPathsAI": [
-        "C.1"
+        "C",
+        "C.1.f"
       ],
-      "rationaleAI": "Provides context for understanding the Inca Empire as one of the great pre-modern empires, and the Spanish imperial conquest that destroyed it (C.1.f)."
+      "rationaleAI": "Imperial governance connects to the Inca Empire (C) and Spanish conquest (C.1.f)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

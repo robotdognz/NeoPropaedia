@@ -5,25 +5,27 @@
       "vsiTitle": "The Renaissance",
       "vsiAuthor": "Jerry Brotton",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.1.a",
+        "A.1.b"
       ],
-      "rationaleAI": "Covers the later Renaissance in Italy and northern Europe, including cultural and intellectual life explicitly discussed in A.1."
+      "rationaleAI": "The Renaissance addresses the later Renaissance (A.1), Italian statecraft (A.1.a), and cultural life (A.1.b)."
     },
     {
       "vsiTitle": "Renaissance Art",
       "vsiAuthor": "Geraldine A. Johnson",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b"
       ],
-      "rationaleAI": "Covers artistic achievements of the Italian and northern Renaissance, directly relevant to cultural developments in A.1.b."
+      "rationaleAI": "Renaissance art addresses cultural life (A.1.b)."
     },
     {
       "vsiTitle": "Machiavelli",
       "vsiAuthor": "Quentin Skinner",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a"
       ],
-      "rationaleAI": "Machiavelli and the principle of raison d'etat are explicitly cited in A.1.a as exemplifying Italian statecraft and political theory."
+      "rationaleAI": "Machiavelli addresses Italian statecraft and raison d'etat (A.1.a)."
     },
     {
       "vsiTitle": "The Scientific Revolution",
@@ -31,152 +33,165 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "The emergence of modern science and technology in the 16th and 17th centuries is explicitly discussed in A.2."
+      "rationaleAI": "Scientific developments address the emergence of modern science (A.2)."
     },
     {
       "vsiTitle": "The Reformation",
       "vsiAuthor": "Peter Marshall",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "A.3.a"
       ],
-      "rationaleAI": "The Protestant Reformation and its political and social consequences are a central theme of A.3.a."
+      "rationaleAI": "The Reformation addresses A.3.a and its consequences."
     },
     {
       "vsiTitle": "The Catholic Reformation",
       "vsiAuthor": "James E. Kelly",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b"
       ],
-      "rationaleAI": "The Catholic Reformation and Counter-Reformation are explicitly discussed in A.3.b as responses to Protestantism."
+      "rationaleAI": "Council of Trent addresses the Catholic Counter-Reformation (A.3.b)."
     },
     {
       "vsiTitle": "Martin Luther",
       "vsiAuthor": "Scott H. Hendrix",
       "relevantPathsAI": [
-        "A.5"
+        "A.3.a",
+        "A.5.f.i"
       ],
-      "rationaleAI": "Luther, the Diet of Worms, and the Peasants' Revolt are explicitly covered in A.5.f.i on Germany and the Holy Roman Empire."
+      "rationaleAI": "Luther addresses the Reformation (A.3.a) and Germany (A.5.f.i)."
     },
     {
       "vsiTitle": "Protestantism",
       "vsiAuthor": "Mark A. Noll",
       "relevantPathsAI": [
-        "A.3",
-        "A.5"
+        "A.3.a"
       ],
-      "rationaleAI": "The emergence of Protestant churches across England, Scotland, France, Germany, and the Netherlands is a major theme throughout A.3-A.5."
+      "rationaleAI": "Protestant traditions address the Reformation (A.3.a)."
     },
     {
       "vsiTitle": "Calvinism",
       "vsiAuthor": "Jon Balserak",
       "relevantPathsAI": [
-        "A.5"
+        "A.3.a",
+        "A.5.g.ii"
       ],
-      "rationaleAI": "Calvin's role in the Swiss Reformation and Calvinism's influence in Scotland, France, and the Netherlands are discussed in A.5.g.ii and A.5.d.vi."
+      "rationaleAI": "Reformed theology addresses the Reformation (A.3.a) and Swiss Reformation (A.5.g.ii)."
     },
     {
       "vsiTitle": "The Tudors",
       "vsiAuthor": "John Guy",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.d",
+        "A.5.d.i",
+        "A.5.d.ii",
+        "A.5.d.iii"
       ],
-      "rationaleAI": "Henry VII, Henry VIII, Edward VI, Mary I, and Elizabeth I are all covered in A.5.d.i-iii on the British Isles."
+      "rationaleAI": "Tudor England addresses Henry VII (A.5.d.i), Henry VIII (A.5.d.ii), and Elizabeth I (A.5.d.iii)."
     },
     {
       "vsiTitle": "Stuart Britain",
       "vsiAuthor": "John Morrill",
       "relevantPathsAI": [
-        "A.5",
-        "C.2"
+        "A.5.d.iv",
+        "A.5.d.v",
+        "C.2.a.i"
       ],
-      "rationaleAI": "James I, Charles I, the English Civil War, Cromwell, the Commonwealth, and the Glorious Revolution are covered in A.5.d.iv-v and C.2.a.i."
+      "rationaleAI": "Stuart Britain addresses James I (A.5.d.iv), Charles I (A.5.d.v), and the Commonwealth (C.2.a.i)."
     },
     {
       "vsiTitle": "Eighteenth-Century Britain",
       "vsiAuthor": "Paul Langford",
       "relevantPathsAI": [
-        "C.2"
+        "C.2.a.ii",
+        "C.2.a.iii",
+        "C.2.a.iv"
       ],
-      "rationaleAI": "The Hanoverian succession, Whig supremacy, ministries of Walpole and Pitt, and George III's early reign are covered in C.2.a.ii-iii."
+      "rationaleAI": "18th-century Britain addresses limited monarchy (C.2.a.ii), George III (C.2.a.iii), and industrial origins (C.2.a.iv)."
     },
     {
       "vsiTitle": "The French Revolution",
       "vsiAuthor": "William Doyle",
       "relevantPathsAI": [
-        "C.2"
+        "C.2.b.vi"
       ],
-      "rationaleAI": "The section concludes with the financial crisis, reform movement, and States General marking the beginning of the Revolution (C.2.b.vi)."
+      "rationaleAI": "The Revolution addresses the beginning of Revolution (C.2.b.vi)."
     },
     {
       "vsiTitle": "The Habsburg Empire",
       "vsiAuthor": "Martyn Rady",
       "relevantPathsAI": [
-        "A.5",
+        "A.5.b",
         "C.2.c"
       ],
-      "rationaleAI": "Habsburg power in Spain, Austria, the Netherlands, and the Holy Roman Empire is a central theme from Charles V through Maria Theresa and Joseph II (A.5.b, C.2.c)."
+      "rationaleAI": "Habsburg territories connect to Spain (A.5.b) and Austrian consolidation (C.2.c)."
     },
     {
       "vsiTitle": "The Holy Roman Empire",
       "vsiAuthor": "Joachim Whaley",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.f",
+        "C.2.d"
       ],
-      "rationaleAI": "Germany and the Holy Roman Empire from c. 1500 to 1648, including the Reformation and Thirty Years' War, are covered in A.5.f."
+      "rationaleAI": "The Empire connects to Germany (A.5.f) and the rise of Prussia (C.2.d)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "European overseas expansion, establishment of colonial empires, and the impact of colonial expansion on Europe are major themes of B."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Colonial empires connect to overseas expansion (B)."
     },
     {
       "vsiTitle": "The Enlightenment",
       "vsiAuthor": "John Robertson",
       "relevantPathsAI": [
-        "C.3"
+        "C.3",
+        "C.3.a"
       ],
-      "rationaleAI": "The age of the Enlightenment, its 17th-century origins, and the reform movement in France are explicitly discussed in C.3."
+      "rationaleAI": "Enlightenment thinkers address the age of the Enlightenment (C.3, C.3.a)."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
       "relevantPathsAI": [
-        "B"
+        "B.1",
+        "B.1.b"
       ],
-      "rationaleAI": "Voyages of discovery, advances in geographical knowledge, and establishment of colonial empires are explicitly discussed in B.1."
+      "rationaleAI": "Exploration connects to European imperialism (B.1) and voyages of discovery (B.1.b)."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
       "relevantPathsAI": [
-        "B"
+        "B.1.a"
       ],
-      "rationaleAI": "Advances in navigational instruments, ship design, and cartography enabling European overseas expansion are explicitly mentioned in B.1.a."
+      "rationaleAI": "Navigation connects to geographical and technological advances (B.1.a)."
     },
     {
       "vsiTitle": "Hobbes",
       "vsiAuthor": "Richard Tuck",
       "relevantPathsAI": [
-        "A.5"
+        "C.3.a"
       ],
-      "rationaleAI": "The English Civil War and 17th-century political upheaval provide the context for Hobbes's political philosophy, relevant to A.5.d.v."
+      "rationaleAI": "Hobbes connects to 17th-century political philosophies (C.3.a)."
     },
     {
       "vsiTitle": "Locke",
       "vsiAuthor": "John Dunn",
       "relevantPathsAI": [
-        "C.2"
+        "C.3.a"
       ],
-      "rationaleAI": "The Glorious Revolution of 1688, limited monarchy, and growth of political parties are the context for Locke's philosophy, relevant to C.2.a.i."
+      "rationaleAI": "Locke connects to 17th-century philosophies (C.3.a)."
     },
     {
       "vsiTitle": "Rousseau",
       "vsiAuthor": "Robert Wokler",
       "relevantPathsAI": [
-        "C.2"
+        "C.3"
       ],
-      "rationaleAI": "The reform movement in France, nationalism, individualism, and the prelude to the Revolution connect to Rousseau's thought (C.2.b.vi)."
+      "rationaleAI": "Rousseau connects to the Enlightenment (C.3)."
     },
     {
       "vsiTitle": "Galileo",
@@ -184,16 +199,16 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Galileo's scientific contributions are central to the Scientific Revolution discussed in A.2."
+      "rationaleAI": "Galileo addresses the Scientific Revolution (A.2)."
     },
     {
       "vsiTitle": "Newton",
       "vsiAuthor": "Rob Iliffe",
       "relevantPathsAI": [
         "A.2",
-        "C.3"
+        "C.3.a"
       ],
-      "rationaleAI": "Newton's work continues the Scientific Revolution into the late 17th century, relevant to A.2 and C.3.a."
+      "rationaleAI": "Newton connects to the Scientific Revolution (A.2) and 17th-century achievements (C.3.a)."
     },
     {
       "vsiTitle": "Copernicus",
@@ -201,23 +216,24 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Copernicus's heliocentric theory inaugurated the Scientific Revolution discussed in A.2."
+      "rationaleAI": "Copernicus addresses the emergence of modern science (A.2)."
     },
     {
       "vsiTitle": "William Shakespeare",
       "vsiAuthor": "Stanley Wells",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.d.iii"
       ],
-      "rationaleAI": "Shakespeare's work is central to the cultural developments in Elizabethan and Jacobean England covered in A.5.d.iii-iv."
+      "rationaleAI": "Shakespeare connects to Elizabethan culture (A.5.d.iii)."
     },
     {
       "vsiTitle": "Puritanism",
       "vsiAuthor": "Francis J. Bremer",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.d.v",
+        "C.2.a.i"
       ],
-      "rationaleAI": "Persecution of Puritans under Charles I and Puritanism's role in the English Civil War and Cromwell's Commonwealth are covered in A.5.d.v."
+      "rationaleAI": "Puritanism connects to Charles I's persecution (A.5.d.v) and Cromwell's Commonwealth (C.2.a.i)."
     },
     {
       "vsiTitle": "Capitalism",
@@ -226,74 +242,74 @@
         "B.2",
         "B.4"
       ],
-      "rationaleAI": "Decline of feudalism, growth of commercial activity, joint-stock companies, and mercantilist policies are central economic themes of B.2-B.4."
+      "rationaleAI": "Capitalist development connects to commercial growth (B.2) and colonial economic effects (B.4)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "B.4"
+        "B.4",
+        "C.2.a.iv"
       ],
-      "rationaleAI": "The price revolution, growth of mercantilism, increase in world trade, and development of the slave trade are covered in B.4."
+      "rationaleAI": "Economic development connects to colonial impact (B.4) and industrial origins (C.2.a.iv)."
     },
     {
       "vsiTitle": "American Slavery",
       "vsiAuthor": "Heather Andrea Williams",
       "relevantPathsAI": [
-        "B.4"
+        "B.4.a.v"
       ],
-      "rationaleAI": "The development and importance of the slave trade in the context of European colonial expansion is explicitly discussed in B.4.a.v."
+      "rationaleAI": "Slavery connects to the slave trade (B.4.a.v)."
     },
     {
       "vsiTitle": "Aristocracy",
       "vsiAuthor": "William Doyle",
       "relevantPathsAI": [
-        "B.2",
-        "C.2"
+        "B.2.a"
       ],
-      "rationaleAI": "The conflict between nobility and bourgeoisie, the decline of feudalism, and aristocratic power across European states are discussed in B.2 and C.2.b.vi."
+      "rationaleAI": "Aristocratic institutions connect to changing landlord-tenant relations (B.2.a)."
     },
     {
       "vsiTitle": "Modern Ireland",
       "vsiAuthor": "Senia Paseta",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.d.vii",
+        "C.2.a.v"
       ],
-      "rationaleAI": "Ireland's subjugation by Henry VIII and Elizabeth I, the Irish revolt of 1641, and Cromwell's invasion are discussed in A.5.d.vii."
+      "rationaleAI": "Irish struggles connect to Ireland under English rule (A.5.d.vii) and Irish patriotism (C.2.a.v)."
     },
     {
       "vsiTitle": "Scotland",
       "vsiAuthor": "Rab Houston",
       "relevantPathsAI": [
-        "A.5",
-        "C.2"
+        "A.5.d.vi",
+        "C.2.a.v"
       ],
-      "rationaleAI": "Scotland in the 16th-17th centuries, the Scottish Reformation, John Knox, and the 1707 union are covered in A.5.d.vi and C.2.a.v."
+      "rationaleAI": "Scottish history connects to Scotland 16th-17th centuries (A.5.d.vi) and the 1707 Union (C.2.a.v)."
     },
     {
       "vsiTitle": "Anglicanism",
       "vsiAuthor": "Mark Chapman",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.d.ii"
       ],
-      "rationaleAI": "The establishment of the Church of England under Henry VIII and subsequent religious developments under Elizabeth I are discussed in A.5.d.ii-iii."
+      "rationaleAI": "Church of England addresses Henry VIII's establishment (A.5.d.ii)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "B.3",
-        "C.2"
+        "C.2.a.iv"
       ],
-      "rationaleAI": "Origins of the Industrial Revolution and factory system, agricultural innovations, and pre-industrial manufacturing are discussed in B.3 and C.2.a.iv."
+      "rationaleAI": "Industrial Revolution origins address C.2.a.iv."
     },
     {
       "vsiTitle": "Methodism",
       "vsiAuthor": "William J. Abraham",
       "relevantPathsAI": [
-        "C.2"
+        "C.2.a.iv"
       ],
-      "rationaleAI": "The influence of Methodism on 18th-century Britain is explicitly mentioned in C.2.a.iv."
+      "rationaleAI": "Methodist revival connects to C.2.a.iv."
     },
     {
       "vsiTitle": "Diplomacy",
@@ -302,80 +318,82 @@
         "A.4",
         "C.1"
       ],
-      "rationaleAI": "International diplomacy and warfare from 1494 to 1763, the balance of power concept, and the alliance system are major themes of A.4 and C.1."
+      "rationaleAI": "Diplomacy connects to 1494-1648 warfare (A.4) and 1649-1790 (C.1)."
     },
     {
       "vsiTitle": "Spanish Literature",
       "vsiAuthor": "Jo Labanyi",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.b.i"
       ],
-      "rationaleAI": "Spain's Golden Age cultural developments during the reigns of Philip II through Philip IV are discussed in A.5.b.i."
+      "rationaleAI": "Spanish Golden Age connects to Spain's cultural developments (A.5.b.i)."
     },
     {
       "vsiTitle": "French literature",
       "vsiAuthor": "John D. Lyons",
       "relevantPathsAI": [
-        "C.2"
+        "C.2.b.iv"
       ],
-      "rationaleAI": "French cultural development in the 17th century and the intellectual life of the ancien regime are covered in C.2.b.iv-v."
+      "rationaleAI": "French literature connects to 17th-century cultural development (C.2.b.iv)."
     },
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
-      "relevantPathsAI": [],
-      "rationaleAI": "The section is organized around dynastic states including the Habsburgs, Bourbons, Stuarts, Vasas, and Houses of Orange and Hanover."
+      "relevantPathsAI": [
+        "A.5",
+        "C.2"
+      ],
+      "rationaleAI": "Dynastic rule connects to national states (A.5) and European states (C.2)."
     },
     {
       "vsiTitle": "Montaigne",
       "vsiAuthor": "William M. Hamlin",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.e.ii"
       ],
-      "rationaleAI": "The French Wars of Religion and 16th-century French cultural developments provide the context for Montaigne's essays (A.5.e.ii)."
+      "rationaleAI": "Montaigne connects to French Wars of Religion (A.5.e.ii)."
     },
     {
       "vsiTitle": "Thomas More",
       "vsiAuthor": "Peter Marshall",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.d.ii"
       ],
-      "rationaleAI": "Thomas More was a key Tudor-era statesman relevant to the section's coverage of Henry VIII and the English Reformation (A.5.d.ii)."
+      "rationaleAI": "Thomas More connects to the English Reformation (A.5.d.ii)."
     },
     {
       "vsiTitle": "Voltaire",
       "vsiAuthor": "Nicholas Cronk",
       "relevantPathsAI": [
-        "C.2"
+        "C.3"
       ],
-      "rationaleAI": "The ancien regime and the reform movement attacking political and social policies connect to Voltaire's role as a leading Enlightenment critic (C.2.b.v-vi)."
+      "rationaleAI": "Voltaire connects to the Enlightenment (C.3)."
     },
     {
       "vsiTitle": "Adam Smith",
       "vsiAuthor": "Christopher J. Berry",
       "relevantPathsAI": [
-        "B.4",
-        "C.2"
+        "C.3"
       ],
-      "rationaleAI": "Growth of mercantilism, commercial development, and origins of the Industrial Revolution provide the context for Adam Smith's economic thought (B.4, C.2.a.iv)."
+      "rationaleAI": "Adam Smith connects to the Enlightenment (C.3)."
     },
     {
       "vsiTitle": "Kant",
       "vsiAuthor": "Roger Scruton",
       "relevantPathsAI": [
-        "C.2"
+        "C.3"
       ],
-      "rationaleAI": "The development of German Idealism under Kant is discussed in the context of Frederick the Great's enlightened reform (C.2.d.ii)."
+      "rationaleAI": "Kant connects to the Enlightenment (C.3)."
     },
     {
       "vsiTitle": "Witchcraft",
       "vsiAuthor": "Malcolm Gaskill",
       "relevantPathsAI": [
-        "A.3",
-        "A.4"
+        "A.5.d.vi"
       ],
-      "rationaleAI": "The religiously divided 16th-17th century Europe and the Counter-Reformation created the context for early modern witch trials (A.3-A.4)."
+      "rationaleAI": "Witch-hunts in Scotland connect to religious dynamics (A.5.d.vi)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

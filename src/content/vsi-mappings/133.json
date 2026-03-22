@@ -5,35 +5,50 @@
       "vsiTitle": "Planets",
       "vsiAuthor": "David A. Rothery",
       "relevantPathsAI": [
+        "A",
+        "A.2",
+        "A.3",
+        "A.3.a",
+        "A.4",
+        "A.6",
+        "C",
         "C.1",
         "C.3",
-        "A.3",
-        "A.4",
-        "A.6"
+        "C.3.e"
       ],
-      "rationaleAI": "Core text: covers all major planets, their surfaces and atmospheres (C.1, C.3), minor planets and the Kuiper belt (A.3.a), regularities of the solar system (A.4), and theories of solar system origin (A.6)."
+      "rationaleAI": "Solar System survey covering terrestrial (C.1) and giant planets (C.3), Pluto (C.3.e), asteroids (A.3.a), and origin theories (A.6)."
     },
     {
       "vsiTitle": "The Sun",
       "vsiAuthor": "Philip Judge",
       "relevantPathsAI": [
+        "B",
         "B.1",
         "B.2",
+        "B.2.a",
+        "B.2.b",
+        "B.2.c",
         "B.3",
+        "B.4",
         "B.5"
       ],
-      "rationaleAI": "Core text for subsection B: covers the Sun's photosphere, chromosphere, and corona (B.1), magnetic fields and sunspots (B.2), solar interior and energy generation (B.3), and solar-terrestrial relationships (B.5)."
+      "rationaleAI": "Solar structure (B.1, B.3), sunspots (B.2.a, B.2.b), radiation (B.4), and terrestrial relationships (B.5)."
     },
     {
       "vsiTitle": "Moons",
       "vsiAuthor": "David Rothery",
       "relevantPathsAI": [
-        "C",
-        "C.3",
+        "A.2",
+        "E",
+        "E.1",
+        "E.2",
+        "E.3",
         "E.4",
+        "E.5",
+        "E.6",
         "E.7"
       ],
-      "rationaleAI": "Core text for subsection E: covers the Moon's physical nature and surface features (E.4), planetary satellites (C), tidal heating (E.7), and Pluto and Kuiper belt objects (C.3.e)."
+      "rationaleAI": "Earth's Moon (E.1-E.6), other moons (A.2), and the Sun-Earth-Moon system (E.7)."
     },
     {
       "vsiTitle": "Planetary Systems",
@@ -41,52 +56,47 @@
       "relevantPathsAI": [
         "A",
         "A.4",
-        "A.5",
-        "A.6"
+        "A.6",
+        "C"
       ],
-      "rationaleAI": "Covers the solar system as a planetary system (A), theories of origin (A.6), regularities and interactions among solar system bodies (A.4-A.5), and telescopic observation methods."
+      "rationaleAI": "Planetary formation connects to survey (A), distances (A.4), origin (A.6), and planets (C)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
       "relevantPathsAI": [
-        "B.5",
         "D",
         "D.4",
         "D.5",
-        "E.5"
+        "D.6"
       ],
-      "rationaleAI": "Covers the Earth as a planet (D), its physical properties and internal structure (D.4-D.5), radioactive decay relevant to dating (E.5.b), and the solar wind's effect on Earth (B.5)."
+      "rationaleAI": "Earth science connects to the Earth as planet (D), properties (D.4), structure (D.5), and origin (D.6)."
     },
     {
       "vsiTitle": "Astrobiology",
       "vsiAuthor": "David C. Catling",
       "relevantPathsAI": [
-        "C.1",
-        "E"
+        "A.6",
+        "C.1.d",
+        "D"
       ],
-      "rationaleAI": "Covers planetary atmospheres (C.1), the Moon (E), plate tectonics and surface features of terrestrial planets (C.1), and conditions on Mars and other solar system bodies."
+      "rationaleAI": "Habitability connects to origin theories (A.6), Mars (C.1.d), and Earth (D)."
     },
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
       "relevantPathsAI": [
-        "C.1",
-        "C.3",
-        "D.6",
-        "B.4",
-        "B.5"
+        "D.6"
       ],
-      "rationaleAI": "Relevant to planetary atmospheres (C.1, C.3), the Earth's atmosphere (D.6), the electromagnetic spectrum in solar radiation (B.4), and solar-terrestrial interactions (B.5)."
+      "rationaleAI": "Atmospheric layers connect to Earth's atmosphere origin (D.6)."
     },
     {
       "vsiTitle": "Gravity",
       "vsiAuthor": "Timothy Clifton",
       "relevantPathsAI": [
-        "A.5",
-        "E"
+        "A.5"
       ],
-      "rationaleAI": "Covers gravitational interactions among solar system bodies (A.5), orbital mechanics and perturbations, and the gravitational field of the Moon (E.3)."
+      "rationaleAI": "Gravitational interactions connect to solar system body interactions (A.5)."
     },
     {
       "vsiTitle": "Stars",
@@ -94,61 +104,57 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Relevant to the Sun as a star, solar energy generation and nuclear fusion (B.3), and stellar evolution providing context for the Sun's evolution (B.3)."
+      "rationaleAI": "Stellar evolution connects to solar energy generation (B.3)."
     },
     {
       "vsiTitle": "Magnetism",
       "vsiAuthor": "Stephen J. Blundell",
       "relevantPathsAI": [
-        "D.4",
-        "B.2",
-        "B.5"
+        "B.2.a"
       ],
-      "rationaleAI": "Relevant to the Earth's magnetism (D.4), the Sun's magnetic fields and centres of activity (B.2.a), and solar-terrestrial magnetic interactions (B.5)."
+      "rationaleAI": "Earth's magnetic field connects to solar magnetic centres (B.2.a)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
       "relevantPathsAI": [
-        "E.6",
-        "A.3.c"
+        "E.6.a"
       ],
-      "rationaleAI": "Relevant to the chemical analysis of lunar rock samples (E.6.a) and the mineral composition of meteorites (A.3.c), including crystal structure and X-ray analysis methods."
+      "rationaleAI": "Mineralogy connects to lunar rock analysis (E.6.a)."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
       "relevantPathsAI": [
-        "E.6",
         "A.3.c",
-        "C.1"
+        "E.6"
       ],
-      "rationaleAI": "Relevant to the composition of lunar rocks (E.6), meteorites (A.3.c), and the igneous, metamorphic, and sedimentary processes on terrestrial planets (C.1)."
+      "rationaleAI": "Meteorites (A.3.c) and lunar chemistry (E.6)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
       "relevantPathsAI": [
-        "A.3.c",
-        "E.6",
-        "B.3"
+        "B.3",
+        "B.4"
       ],
-      "rationaleAI": "Relevant to radiometric dating of meteorites and lunar samples for determining solar system age (A.3.c, E.6), and nuclear energy processes in the Sun (B.3)."
+      "rationaleAI": "Nuclear processes connect to solar energy (B.3) and radiation (B.4)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
       "relevantPathsAI": [
-        "B.4",
-        "D.3"
+        "B.4"
       ],
-      "rationaleAI": "Relevant to solar radiation (B.4), aberration of light (D.3.b), and the observational optics used to study the Sun, planets, and Moon."
+      "rationaleAI": "Light physics connects to solar radiation (B.4)."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the optical and radio telescopes used for planetary observation, solar study, and the remote observation of solar system bodies (A, B, C)."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Telescopes connect to planetary observation (A.2)."
     },
     {
       "vsiTitle": "Astrophysics",
@@ -164,28 +170,27 @@
       "vsiTitle": "Weather",
       "vsiAuthor": "Storm Dunlop",
       "relevantPathsAI": [
-        "B.5",
-        "C.1"
+        "B.5"
       ],
-      "rationaleAI": "Relevant to solar-terrestrial relationships (B.5), the solar wind's effects on Earth's atmosphere, and the atmospheric conditions on terrestrial planets (C.1)."
+      "rationaleAI": "Atmospheric science connects to solar-terrestrial relationships (B.5)."
     },
     {
       "vsiTitle": "Climate",
       "vsiAuthor": "Mark Maslin",
       "relevantPathsAI": [
-        "B.5",
-        "D.2",
-        "D.3"
+        "B.5"
       ],
-      "rationaleAI": "Relevant to solar-terrestrial relationships (B.5), the effects of Earth's orbital position on climate (D.2-D.3), and atmospheric composition of terrestrial planets."
+      "rationaleAI": "Orbital cycles connect to solar-terrestrial relationships (B.5)."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
       "relevantPathsAI": [
-        "E.7"
+        "E.7",
+        "E.7.a",
+        "E.7.a.ii"
       ],
-      "rationaleAI": "Relevant to the Sun-Earth-Moon system as the astronomical basis of chronology (E.7.a.ii), celestial motions, and the historical understanding of the solar system's geometry."
+      "rationaleAI": "Navigation connects to Sun-Earth-Moon system (E.7) and chronological cycles (E.7.a.ii)."
     },
     {
       "vsiTitle": "Landscapes and Geomorphology",
@@ -200,20 +205,20 @@
       "vsiAuthor": "Tim Lenton",
       "relevantPathsAI": [
         "B.5",
-        "D",
-        "D.6"
+        "D"
       ],
-      "rationaleAI": "Relevant to the Earth as a planet (D), the origin of Earth's atmosphere and hydrosphere (D.6), and solar energy's role in Earth system processes (B.5)."
+      "rationaleAI": "Earth system connects to solar-terrestrial relationships (B.5) and Earth as planet (D)."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
       "relevantPathsAI": [
-        "E.6",
-        "A.3.c"
+        "A.3.c",
+        "A.6"
       ],
-      "rationaleAI": "Relevant to isotopic analysis of lunar samples and meteorites (E.6, A.3.c) used to determine ages and origins of solar system materials."
+      "rationaleAI": "Geochronology connects to meteorites (A.3.c) and origin theories (A.6)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

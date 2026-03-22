@@ -4,44 +4,71 @@
     {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsection B2e on Confucianism as a major school of Chinese thought and its foundational role in Chinese civilization and governance."
+      "relevantPathsAI": [
+        "A",
+        "B.2.e",
+        "C.2.c",
+        "D.1.b",
+        "D.2.c"
+      ],
+      "rationaleAI": "Confucian tradition addresses the Classical period of Chinese philosophy (B.2.e), Han state ideology (C.2.c.i), and T'ang cultural context (D.2.c)."
     },
     {
       "vsiTitle": "Chinese literature",
       "vsiAuthor": "Sabina Knight",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the literary traditions of Chinese civilization including poetry, prose, and narrative relevant to subsections B2e and D2c."
+      "relevantPathsAI": [
+        "A",
+        "B.2.e",
+        "C.2.c.iii",
+        "D.2.c"
+      ],
+      "rationaleAI": "Chinese literary culture addresses the character of Chinese civilization (A), Classical philosophy (B.2.e), Han cultural life (C.2.c.iii), and T'ang cultural developments (D.2.c)."
     },
     {
       "vsiTitle": "Buddhism",
       "vsiAuthor": "Damien Keown",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections C2c-iii and D1b on the introduction and spread of Buddhism in China during the Han and Six Dynasties periods."
+      "relevantPathsAI": [
+        "C.2.c.iii",
+        "D.1.b"
+      ],
+      "rationaleAI": "Buddhism's spread into East Asia relates to the Han period introduction (C.2.c.iii) and Six Dynasties growth (D.1.b)."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C2c-ii on Han relations with Central Asia including Pan Ch'ao's campaigns and trade routes."
+      "relevantPathsAI": [
+        "C.2.c.ii",
+        "D.2.c"
+      ],
+      "rationaleAI": "Central Eurasian trade relates to Han relations with the Hsiung-nu (C.2.c.ii) and T'ang foreign affairs (D.2.c.ii)."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B2b on the development of Chinese script during the Shang period and its evolution."
+      "relevantPathsAI": [
+        "A",
+        "B.2.b"
+      ],
+      "rationaleAI": "Chinese logographic systems relate to the character of Chinese civilization (A) and Shang script development (B.2.b)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A on archaeological sources and subsection B1 on prehistoric cultures including Neolithic pottery cultures."
+      "relevantPathsAI": [
+        "A",
+        "B.1"
+      ],
+      "rationaleAI": "Archaeological methods connect to archaeological sources (A) and the prehistoric period (B.1)."
     },
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the dynastic succession from Shang through Chou, Ch'in, Han, and T'ang that structures the entire section."
+      "relevantPathsAI": [
+        "B.2",
+        "C",
+        "D.2"
+      ],
+      "rationaleAI": "Dynastic succession connects to early dynasties (B.2), Ch'in and Han (C), and Sui and T'ang (D.2)."
     },
     {
       "vsiTitle": "Modern China",
@@ -50,5 +77,6 @@
       "rationaleAI": "Provides broader context for understanding the foundational Chinese history covered in this section and its lasting influence."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

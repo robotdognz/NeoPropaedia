@@ -5,56 +5,70 @@
       "vsiTitle": "Modern India",
       "vsiAuthor": "Craig Jeffrey",
       "relevantPathsAI": [
-        "A.1"
+        "A.2",
+        "A.2.a",
+        "A.2.b"
       ],
-      "rationaleAI": "Directly addresses India's independence movement, partition, Nehru's administration, caste, and democratic politics discussed in A.1-2."
+      "rationaleAI": "Contemporary India's economic transformation, caste dynamics, democratic governance, and emergence as a global power directly address India since 1947 (A.2), domestic affairs under Nehru and Congress Party (A.2.a), and foreign policy including nonalignment and disputes with Pakistan (A.2.b)."
     },
     {
       "vsiTitle": "Gandhi",
       "vsiAuthor": "Bhikhu Parekh",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a"
       ],
-      "rationaleAI": "Gandhi's satyagraha movement of nonviolent resistance drove the Indian independence struggle discussed in A.1.a."
+      "rationaleAI": "Gandhi's satyagraha movement and leadership of Indian independence directly address intensified agitation for independence and Gandhi's nonviolent resistance (A.1.a), including the Round Table Conference and Government of India Act."
     },
     {
       "vsiTitle": "Pakistan",
       "vsiAuthor": "Pippa Virdee",
       "relevantPathsAI": [
+        "A.1.b",
         "A.3"
       ],
-      "rationaleAI": "Directly addresses Pakistan's history since partition including military governments, the civil war with East Pakistan, and subsequent administrations in A.3."
+      "rationaleAI": "Pakistan as a postcolonial nation-state created in 1947 from British India, partition-era tensions, and governance challenges directly address the movement for a separate Muslim state and partition (A.1.b) and Pakistan since 1947 (A.3)."
     },
     {
       "vsiTitle": "Southeast Asia",
       "vsiAuthor": "James R. Rush",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses Southeast Asian history relevant to Myanmar, Malaysia, Thailand, Indochina, Indonesia, and the Philippines in B and C."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.4",
+        "C"
+      ],
+      "rationaleAI": "Southeast Asia's eleven nations covering Myanmar, Thailand, Malaysia, Vietnam, Philippines, Laos, Cambodia, and Indonesia from colonial era to the present directly address mainland Southeast Asia since 1920 (B) and Indonesia and the Philippines (C)."
     },
     {
       "vsiTitle": "Hinduism",
       "vsiAuthor": "Kim Knott",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a",
+        "A.2"
       ],
-      "rationaleAI": "Hindu-Muslim tensions, the Indian National Congress, and partition dynamics are discussed in A.1.b."
+      "rationaleAI": "Hindu nationalism, the Indian National Congress in shaping Hindu identity, and caste connect to the independence movement (A.1.a) and postwar Indian domestic affairs (A.2)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
-      "relevantPathsAI": [],
-      "rationaleAI": "The Muslim League's movement for Pakistan and Islamic elements in Southeast Asian politics shaped the region's political development."
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.3",
+        "C.1"
+      ],
+      "rationaleAI": "Islam's global scope and adaptation to modernity connect to the increased strength of the Muslim League and movement for Pakistan (A.1.b), Pakistan since 1947 (A.3), and Islam in Indonesia (C.1)."
     },
     {
       "vsiTitle": "Buddhism",
       "vsiAuthor": "Damien Keown",
       "relevantPathsAI": [
         "A.5",
-        "B.1",
-        "B.3",
-        "B.4"
+        "A.6",
+        "B.3"
       ],
-      "rationaleAI": "Buddhist-influenced politics in Myanmar, Sri Lanka, Thailand, and Cambodia are discussed in A.5, B.1, B.3, and B.4.f."
+      "rationaleAI": "Theravada Buddhism across South and Southeast Asia connects to Ceylon/Sri Lanka (A.5), Tibetan Buddhism and the Dalai Lama (A.6), and Theravada's role in Thailand and mainland Southeast Asia (B.3)."
     },
     {
       "vsiTitle": "Tibetan Buddhism",
@@ -62,136 +76,205 @@
       "relevantPathsAI": [
         "A.6"
       ],
-      "rationaleAI": "Directly addresses Tibet including the Chinese invasion (1950), reestablishment of Chinese hegemony, and suppression of protests in A.6."
+      "rationaleAI": "The Dalai Lama institution, Chinese suppression, and Tibetan Buddhist development directly address Tibet since 1920 including Chinese invasion and government control (A.6)."
     },
     {
       "vsiTitle": "Sikhism",
       "vsiAuthor": "Eleanor Nesbitt",
-      "relevantPathsAI": [],
-      "rationaleAI": "The Sikh community played a significant role in the partition of India and post-independence communal tensions."
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Sikh history in Punjab, the diaspora, and religious identity connect to the partition of British India and the emergence of Pakistan and India as separate states (A.1.b)."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
-      "relevantPathsAI": [],
-      "rationaleAI": "British colonial rule ending in India, Burma, Malaya, and Sri Lanka and the transition to independence are central themes throughout A and B."
+      "relevantPathsAI": [
+        "A.1",
+        "A.5",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "British imperial administration and decolonization connect to India's path to independence (A.1), British Ceylon (A.5), British rule in Burma and Malaya (B.1), and British involvement in Malaya (B.2)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the dissolution of European colonial empires in the region including British, French, Dutch, and U.S. imperial retreats."
+      "relevantPathsAI": [
+        "A.1",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "British, Dutch, and French colonial empires connect to India under British imperialism (A.1), European colonial presence in mainland Southeast Asia (B), and Dutch and other colonial powers in Indonesia and the Philippines (C)."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
-      "relevantPathsAI": [],
-      "rationaleAI": "The entire section traces decolonization across South and Southeast Asia from the late colonial period through national independence."
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.b",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Anti-colonial activism and independence movements, including Nehru as a leader, directly address Indian independence and partition (A.1, A.1.b), emergence of independent Southeast Asian states (B), and Indonesian and Philippine independence (C)."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses the postcolonial challenges of nation-building, ethnic tensions, and the legacy of colonialism in newly independent states."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Postcolonial experiences of colonized societies in Asia connect to the entire section's coverage of the late colonial period and emergence of new nations across South Asia (A), mainland Southeast Asia (B), and Indonesia and the Philippines (C)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
-      "relevantPathsAI": [],
-      "rationaleAI": "Indian, Burmese, Vietnamese, and Indonesian nationalism drove decolonization throughout the region."
+      "relevantPathsAI": [
+        "A.1.a",
+        "B.1.a",
+        "C.1.a.i"
+      ],
+      "rationaleAI": "Nationalism and self-determination, including the Kashmir case, connect to Indian independence agitation (A.1.a), emergence of Burmese nationalism (B.1.a), and Dutch suppression of Indonesian nationalist revolts (C.1.a.i)."
     },
     {
       "vsiTitle": "Communism",
       "vsiAuthor": "Leslie Holmes",
-      "relevantPathsAI": [],
-      "rationaleAI": "Examines communist movements in Vietnam (Ho Chi Minh), Laos (Pathet Lao), Cambodia (Khmer Rouge), Indonesia, and the Malayan insurgency in B and C."
+      "relevantPathsAI": [
+        "B.4",
+        "B.4.b",
+        "B.4.c",
+        "C.1.b"
+      ],
+      "rationaleAI": "Ho Chi Minh's Vietnamese revolution and communism in Southeast Asia address the Indochina Communist Party (B.4), Ho Chi Minh's government and wars in Vietnam (B.4.b, B.4.c), and Indonesian communist suppression (C.1.b)."
     },
     {
       "vsiTitle": "The Cold War",
       "vsiAuthor": "Robert J. McMahon",
-      "relevantPathsAI": [],
-      "rationaleAI": "The Cold War context of the Vietnam War, U.S. military intervention, and superpower competition shaped Southeast Asia's modern trajectory."
+      "relevantPathsAI": [
+        "B.4.c",
+        "C.1.b"
+      ],
+      "rationaleAI": "Cold War proxy wars and the Vietnam War address U.S. military intervention in Vietnam (B.4.c) and Cold War dynamics in Indonesia's anti-communist purge (C.1.b)."
     },
     {
       "vsiTitle": "Civil Wars",
       "vsiAuthor": "Monica Duffy Toft",
-      "relevantPathsAI": [],
-      "rationaleAI": "Indo-Pakistani wars, the Sri Lankan Tamil insurgency, the Vietnamese civil war, Cambodian conflicts, and Burmese minority insurgencies are all discussed."
+      "relevantPathsAI": [
+        "A.5.b",
+        "B.4.c",
+        "B.4.f"
+      ],
+      "rationaleAI": "Intrastate armed conflicts connect to Sri Lanka's Tamil insurgency and protracted civil war (A.5.b), the Vietnam War (B.4.c), and Cambodia's brutal internal conflicts (B.4.f)."
     },
     {
       "vsiTitle": "Modern War",
       "vsiAuthor": "Richard English",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the Indo-Pakistani conflicts, the Vietnam War, and the Cambodian-Vietnamese war discussed throughout."
+      "relevantPathsAI": [
+        "B.4.c"
+      ],
+      "rationaleAI": "Modern warfare including guerrilla tactics and the Cold War connects to the Indochina Wars, Vietnam War, and U.S. military intervention (B.4.c)."
     },
     {
       "vsiTitle": "World War II",
       "vsiAuthor": "Gerhard L. Weinberg",
-      "relevantPathsAI": [],
-      "rationaleAI": "Japanese occupation of Southeast Asia reshaped colonial rule and accelerated independence movements."
+      "relevantPathsAI": [
+        "A.1.b",
+        "B.1.a",
+        "B.2.a",
+        "B.3.a",
+        "C.1.a.i",
+        "C.2.a"
+      ],
+      "rationaleAI": "Japan's expansion in Southeast Asia and the Pacific addresses political and economic effects of World War II on India (A.1.b), Japanese occupation of Burma (B.1.a), Malaya (B.2.a), Thailand (B.3.a), Indonesia (C.1.a.i), and the Philippines (C.2.a)."
     },
     {
       "vsiTitle": "Concentration Camps",
       "vsiAuthor": "Dan Stone",
       "relevantPathsAI": [
-        "B.4"
+        "B.4.f"
       ],
-      "rationaleAI": "The Khmer Rouge's brutal collectivization and mass killings in Cambodia are discussed in B.4.f."
+      "rationaleAI": "Concentration camps under the Khmer Rouge directly address the brutal collectivization, resettlement, and large-scale deaths in Cambodia under Democratic Kampuchea (B.4.f)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
-      "relevantPathsAI": [],
-      "rationaleAI": "Democratic experiments range from India's parliamentary system to Philippine democracy and transitions away from military rule."
+      "relevantPathsAI": [
+        "A.2.a",
+        "C.1.b"
+      ],
+      "rationaleAI": "Democracy and democratic transitions connect to India's parliamentary system under Nehru (A.2.a) and Indonesia's post-Suharto transition to democracy (C.1.b)."
     },
     {
       "vsiTitle": "Authoritarianism",
       "vsiAuthor": "James Loxton",
-      "relevantPathsAI": [],
-      "rationaleAI": "Examines military rule in Myanmar, Pakistan, Indonesia under Suharto, and Singapore's authoritarian PAP government."
+      "relevantPathsAI": [
+        "B.1.b",
+        "C.1.b"
+      ],
+      "rationaleAI": "Authoritarian military regimes connect to Myanmar's military government under Ne Win (B.1.b) and Suharto's administration in Indonesia (C.1.b)."
     },
     {
       "vsiTitle": "Human Rights",
       "vsiAuthor": "Andrew Clapham",
-      "relevantPathsAI": [],
-      "rationaleAI": "The Khmer Rouge mass killings, Indonesian actions in East Timor, and political repression in Myanmar are discussed."
+      "relevantPathsAI": [
+        "B.4.f",
+        "C.1.b"
+      ],
+      "rationaleAI": "Human rights and crimes against humanity connect to the Khmer Rouge's mass atrocities in Cambodia (B.4.f) and massive depopulation of East Timor through military action (C.1.b)."
     },
     {
       "vsiTitle": "Refugees",
       "vsiAuthor": "Gil Loescher",
-      "relevantPathsAI": [],
-      "rationaleAI": "Partition-related displacement, Vietnamese boat people, Cambodian refugees, and Thai border refugees are all discussed."
+      "relevantPathsAI": [
+        "B.4.d"
+      ],
+      "rationaleAI": "Forced migration and refugee crises connect to the exodus of ethnic Chinese refugees from Vietnam (B.4.d) and border-crossing effects of Southeast Asian conflicts."
     },
     {
       "vsiTitle": "International Migration",
       "vsiAuthor": "Khalid Koser",
-      "relevantPathsAI": [],
-      "rationaleAI": "Partition-related migrations, Chinese immigration in Southeast Asia, and the exodus of ethnic Chinese refugees from Vietnam reshaped the region's demographics."
+      "relevantPathsAI": [
+        "B.2.a",
+        "B.4.d"
+      ],
+      "rationaleAI": "International migration connects to Chinese immigration in Malaya (B.2.a) and the exodus of ethnic Chinese from Vietnam (B.4.d)."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
-      "relevantPathsAI": [],
-      "rationaleAI": "Nehru's nonalignment policy, the Geneva Accords (1954), and international negotiations over Indochina shaped the region's diplomatic landscape."
+      "relevantPathsAI": [
+        "A.2.b"
+      ],
+      "rationaleAI": "Diplomatic history connects to India's foreign policy including nonalignment, disputes with Pakistan over Kashmir, and border conflict with China (A.2.b)."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
-      "relevantPathsAI": [],
-      "rationaleAI": "India's and Pakistan's nuclear capabilities add a volatile dimension to their ongoing rivalry."
+      "relevantPathsAI": [
+        "B.4.c"
+      ],
+      "rationaleAI": "Nuclear deterrence and Cold War dynamics provide context for U.S. military intervention in Vietnam (B.4.c) within the broader Cold War strategic framework."
     },
     {
       "vsiTitle": "Geopolitics",
       "vsiAuthor": "Klaus Dodds",
-      "relevantPathsAI": [],
-      "rationaleAI": "Cold War alignments, nonalignment policy, and the strategic importance of Southeast Asia shaped the region's geopolitical dynamics."
+      "relevantPathsAI": [
+        "A.2.b",
+        "B.4.c"
+      ],
+      "rationaleAI": "Geopolitics and strategic geographic factors connect to India's border conflicts with Pakistan and China (A.2.b) and the strategic dimensions of the Indochina War (B.4.c)."
     },
     {
       "vsiTitle": "Indian Cinema",
       "vsiAuthor": "Ashish Rajadhyaska",
-      "relevantPathsAI": [],
-      "rationaleAI": "Cinema plays a powerful cultural role in modern India, shaping national identity after independence."
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Indian cinema addressing caste discrimination, gender oppression, and national identity under postcolonial conditions connects to India's domestic political, social, and cultural developments since 1947 (A.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

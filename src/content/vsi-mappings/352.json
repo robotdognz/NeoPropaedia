@@ -4,8 +4,19 @@
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
-      "relevantPathsAI": [],
-      "rationaleAI": "Core text covering populations, communities, species interactions, ecosystems, ecological succession, and community structure (A, B, C)."
+      "relevantPathsAI": [
+        "A",
+        "A.2",
+        "A.3",
+        "A.4",
+        "B",
+        "B.2",
+        "C",
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Core ecology covering population dynamics (A.3, A.4), interspecies interactions (B.2), community structure (C.1), energy flow (C.2), and succession (C.3)."
     },
     {
       "vsiTitle": "Evolution",
@@ -14,81 +25,91 @@
         "A.2",
         "B.3"
       ],
-      "rationaleAI": "Explains population genetics, natural selection, genetic drift, and the evolutionary dimensions of population interactions (A.2.a, B.3)."
+      "rationaleAI": "Natural selection and speciation address population genetics (A.2) and evolutionary aspects of interactions (B.3)."
     },
     {
       "vsiTitle": "Symbiosis",
       "vsiAuthor": "Nancy A. Moran",
       "relevantPathsAI": [
         "B.2",
-        "B.2.c"
+        "B.2.c",
+        "C.1.c"
       ],
-      "rationaleAI": "Directly covers mutualism, commensalism, and parasitic interactions as major forms of interspecific interaction (B.2.b, B.2.c)."
+      "rationaleAI": "Symbiotic associations address positive interspecific interactions (B.2.c) and community symbiosis (C.1.c)."
     },
     {
       "vsiTitle": "Mathematical Biology",
       "vsiAuthor": "Philip K Maini",
       "relevantPathsAI": [
         "A.3",
+        "A.4",
         "B.2"
       ],
-      "rationaleAI": "Presents logistic growth models and Lotka-Volterra predator-prey equations that formalize population growth and species interaction dynamics (A.3, B.2)."
+      "rationaleAI": "Logistic growth and Lotka-Volterra dynamics address population growth (A.3), fluctuations (A.4), and interspecific interactions (B.2)."
     },
     {
       "vsiTitle": "Invasive Species",
       "vsiAuthor": "Julie Lockwood, Dustin J. Welbourne",
       "relevantPathsAI": [
         "A.5",
-        "B.2",
-        "C.1"
+        "B.2.b",
+        "C.3"
       ],
-      "rationaleAI": "Examines population dispersal, barriers to movement, and how introduced species disrupt community structure and native interactions (A.5, B.2, C.1)."
+      "rationaleAI": "Invasive species address population dispersal (A.5), negative interactions (B.2.b), and succession disruption (C.3)."
     },
     {
       "vsiTitle": "Coral Reefs",
       "vsiAuthor": "Charles Sheppard",
       "relevantPathsAI": [
+        "B.2.c",
+        "C",
         "C.1",
-        "C.2"
+        "C.1.c",
+        "C.1.d"
       ],
-      "rationaleAI": "Illustrates community structure, species diversity, niches, symbiotic interactions, and zonation in a complex marine community (C.1, C.2)."
+      "rationaleAI": "Reef symbiosis exemplifies mutualism (B.2.c), community structure (C.1), symbiotic interactions (C.1.c), and species diversity (C.1.d)."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
       "relevantPathsAI": [
+        "C",
         "C.1",
+        "C.1.a",
+        "C.2",
         "C.3",
-        "C.4"
+        "C.4",
+        "C.5"
       ],
-      "rationaleAI": "Illustrates vertical and horizontal stratification, community succession, niches, and species diversity in terrestrial communities (C.1.a, C.3, C.4)."
+      "rationaleAI": "Forest dynamics cover stratification (C.1.a), energy flow (C.2), succession (C.3), landscape patterns (C.4), and biome classification (C.5)."
     },
     {
       "vsiTitle": "Marine biology",
       "vsiAuthor": "Philip V. Mladenov",
       "relevantPathsAI": [
-        "C.1",
-        "C.5"
+        "A",
+        "B.2",
+        "C"
       ],
-      "rationaleAI": "Explores marine community structure, population dynamics, and ecological interactions within ocean ecosystems (C.1, C.5)."
+      "rationaleAI": "Marine ecosystems address populations (A), interspecific interactions (B.2), and community structure (C)."
     },
     {
       "vsiTitle": "Biodiversity Conservation",
       "vsiAuthor": "David W. Macdonald",
       "relevantPathsAI": [
-        "C.1",
-        "C.5"
+        "A",
+        "B",
+        "C.1.d"
       ],
-      "rationaleAI": "Addresses species diversity, community classification, and factors affecting population structure and biological processes (C.1.d, C.5)."
+      "rationaleAI": "Biodiversity threats address populations under stress (A), interaction cascades (B), and species diversity (C.1.d)."
     },
     {
       "vsiTitle": "Microbiomes",
       "vsiAuthor": "Angela E. Douglas",
       "relevantPathsAI": [
-        "B.2.c",
-        "C.1.c"
+        "B.2.c"
       ],
-      "rationaleAI": "Reveals microbial community structure, host-microbe symbiosis, and the dynamics of complex microbial populations (B.2.c, C.1.c)."
+      "rationaleAI": "Microbial communities exemplify positive interspecific interactions (B.2.c)."
     },
     {
       "vsiTitle": "Sexual Selection",
@@ -96,7 +117,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Analyzes intraspecific competition for mates and sexual dimorphism as key forms of within-species population interaction (B.1)."
+      "rationaleAI": "Reproductive competition exemplifies intraspecific interactions (B.1)."
     },
     {
       "vsiTitle": "Extinction",
@@ -105,25 +126,26 @@
         "A.4",
         "C.3"
       ],
-      "rationaleAI": "Documents species loss and population collapse, shedding light on population fluctuations and community change over geological time (A.4, C.3)."
+      "rationaleAI": "Mass extinctions address population fluctuations (A.4) and succession disruption (C.3)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
       "relevantPathsAI": [
-        "B.2.c"
+        "C.1",
+        "C.5"
       ],
-      "rationaleAI": "Highlights plant diversity, pollination ecology, and plant-pollinator relationships as examples of interspecific mutualism (B.2.c)."
+      "rationaleAI": "Plant diversity addresses community structure (C.1) and community classification (C.5)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
-        "A.2",
-        "B.3"
+        "A.2.a"
       ],
-      "rationaleAI": "Addresses genetic variation, sex linkage, and the Red Queen hypothesis relevant to population genetics and co-evolutionary interactions (A.2.a, B.3)."
+      "rationaleAI": "Genetic variation addresses population genetic differences (A.2.a)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

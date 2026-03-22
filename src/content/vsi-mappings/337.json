@@ -5,115 +5,130 @@
       "vsiTitle": "Sexual Selection",
       "vsiAuthor": "Marlene Zuk, Leigh W Simmons",
       "relevantPathsAI": [
+        "A.2",
+        "A.3",
+        "B",
         "B.3",
         "B.5",
-        "A.3"
+        "D.3"
       ],
-      "rationaleAI": "Directly covers the adaptive significance of sex (B.3), sex patterns (B.5), sexual dimorphism, mating mechanisms, and the evolution of reproduction (A.3)."
+      "rationaleAI": "Mating behaviours, reproductive investment asymmetries, and sexual dimorphism address sexual reproduction (A.2), natural selection and reproduction (A.3), adaptive significance of sex (B.3), sex patterns (B.5), and reproductive system adaptations (D.3)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
+        "A.1.a",
+        "B.3",
         "B.6",
-        "A.1",
-        "B.4"
+        "B.6.a"
       ],
-      "rationaleAI": "Covers sex chromosomes and sex linkage (B.6.a), cell division including meiosis (A.1.b), and the Red Queen hypothesis relevant to the origin of sex (B.4)."
+      "rationaleAI": "DNA structure and sex linkage address molecular replication (A.1.a), genetic diversity (B.3), and sex chromosomes (B.6.a)."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b",
+        "A.2"
       ],
-      "rationaleAI": "Covers cell reproduction via binary fission (A.1.b), the nuclear envelope and nucleus during cell division, and the cellular basis of gamete formation."
+      "rationaleAI": "Cell division addresses cell reproduction through fission (A.1.b) and reproduction of organisms (A.2)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
       "relevantPathsAI": [
-        "C"
+        "A.2",
+        "C",
+        "C.1",
+        "C.3"
       ],
-      "rationaleAI": "Directly covers plant reproductive systems (C) including pollen, pollination, seed plants, and the diversity of reproductive structures in bryophytes and tracheophytes."
+      "rationaleAI": "Plant pollination and reproduction addresses sexual and asexual reproduction (A.2), general plant reproductive features (C.1), and sex organs in tracheophytes (C.3)."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
       "relevantPathsAI": [
-        "B.6",
+        "B.6.d",
         "D.3.c"
       ],
-      "rationaleAI": "Addresses hormonal influences on reproduction (B.6.d, D.3.c) including reproductive cycles, releasing hormones, and the pituitary-gonadal axis."
+      "rationaleAI": "Hormonal regulation of reproductive cycles addresses hormonal influences on sex (B.6.d) and gonads in hormone cycles (D.3.c)."
     },
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
       "relevantPathsAI": [
         "A.3",
-        "B.3"
+        "B.3",
+        "B.4"
       ],
-      "rationaleAI": "Covers natural selection and reproduction (A.3), the evolution of sex and genetic diversity (B.3), and genetic drift in reproductive populations."
+      "rationaleAI": "Natural selection addresses reproduction (A.3), adaptive significance of sex (B.3), and origin of sex (B.4)."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
       "relevantPathsAI": [
-        "D.2"
+        "A.1.d",
+        "D",
+        "D.2",
+        "D.3"
       ],
-      "rationaleAI": "Covers invertebrate reproductive system diversity (D.2) across phyla including Annelida, Cnidaria, Echinodermata, and Platyhelminthes."
+      "rationaleAI": "Animal diversity reveals varied reproductive strategies including life cycles (A.1.d), invertebrate (D.2) and vertebrate reproductive systems (D.3)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
       "relevantPathsAI": [
-        "D.2",
-        "D.3"
+        "A.1.b",
+        "A.2"
       ],
-      "rationaleAI": "Addresses gamete formation, fertilization, and provisions for developing embryos (D.2.d, D.3.d) including identical twins and parthenogenesis."
+      "rationaleAI": "Cell division as the basis of development addresses cell reproduction (A.1.b) and reproduction of organisms (A.2)."
     },
     {
       "vsiTitle": "Fungi",
       "vsiAuthor": "Nicolas P. Money",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "B.2"
       ],
-      "rationaleAI": "Covers both sexual and asexual reproductive strategies in fungi (A.2), including spore formation and parasitism as reproductive adaptations."
+      "rationaleAI": "Fungal reproductive strategies address reproduction of organisms (A.2) and sexlike recombination (B.2)."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
       "relevantPathsAI": [
-        "B.2",
-        "A.1"
+        "A.1.b",
+        "B.2"
       ],
-      "rationaleAI": "Covers transduction and transformation as sexlike recombination in bacteria (B.2) and binary fission as a mode of cell reproduction (A.1.b)."
+      "rationaleAI": "Binary fission addresses cell reproduction (A.1.b), and genetic exchange relates to transduction and transformation (B.2)."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b",
+        "A.2",
+        "B.2"
       ],
-      "rationaleAI": "Covers reproduction in microorganisms including algae, archaea, and bacteria, addressing molecular replication (A.1.a) and diverse life cycles (A.1.d)."
+      "rationaleAI": "Diverse microbial reproductive strategies address cell reproduction (A.1.b), organism reproduction (A.2), and sexlike recombination (B.2)."
     },
     {
       "vsiTitle": "Heredity",
       "vsiAuthor": "John Waller",
       "relevantPathsAI": [
-        "B.6",
-        "A.3"
+        "B.3",
+        "B.6.a"
       ],
-      "rationaleAI": "Addresses the genetic basis of sex determination (B.6) and the relationship between reproduction, heredity, and variation control (A.3)."
+      "rationaleAI": "Chromosomal theory addresses genetic diversity (B.3) and sex chromosomes (B.6.a)."
     },
     {
       "vsiTitle": "Animal Behaviour",
       "vsiAuthor": "Tristram D. Wyatt",
       "relevantPathsAI": [
-        "D.2",
-        "D.3"
+        "D.2.b",
+        "D.3.b"
       ],
-      "rationaleAI": "Covers parental care and mating behaviours as reproductive adaptations (D.2.b, D.3.b), and kin selection in reproductive strategies."
+      "rationaleAI": "Reproductive behaviours address mechanisms aiding gamete union in invertebrates (D.2.b) and vertebrate fertilization adaptations (D.3.b)."
     },
     {
       "vsiTitle": "Sexuality",
@@ -121,8 +136,9 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Addresses the distinctions between sex, sexuality, and reproduction (B.1) from biological and social perspectives."
+      "rationaleAI": "Social construction of sexual norms addresses the distinctions between sex, sexuality, and reproduction (B.1)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

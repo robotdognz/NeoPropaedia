@@ -4,152 +4,197 @@
     {
       "vsiTitle": "American History",
       "vsiAuthor": "Paul S. Boyer",
-      "relevantPathsAI": [],
-      "rationaleAI": "Comprehensive coverage of U.S. history since 1920 encompassing the Depression, New Deal, WWII, Cold War, and post-Cold War era."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2",
+        "A.3",
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "United States history from colonial times through Cold War institutions including NATO and the National Security Council broadly addresses the entire U.S. section (A), including industrialization, racism, and the NAACP, touching on every major period from post-World War I (A.1) through the end of the Cold War (A.5)."
     },
     {
       "vsiTitle": "The Great Depression and The New Deal",
       "vsiAuthor": "Eric Rauchway",
       "relevantPathsAI": [
         "A.1.c",
-        "A.2"
+        "A.2.a",
+        "A.2.b"
       ],
-      "rationaleAI": "Directly addresses Hoover's response to the stock market crash and FDR's New Deal measures for recovery, relief, and reform in A.1.c and A.2."
+      "rationaleAI": "Hoover's administration, the stock market crash, Calvin Coolidge's laissez-faire policies (A.1.c), Roosevelt's New Deal measures for economic recovery (A.2.a), and reform measures of the second New Deal including labor legislation (A.2.b)."
     },
     {
       "vsiTitle": "Prohibition",
       "vsiAuthor": "W. J. Rorabaugh",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b"
       ],
-      "rationaleAI": "Directly relevant to A.1.b, examining prohibition and the growth of organized crime in the 1920s."
+      "rationaleAI": "Prohibition in the United States from the temperance movement through the Eighteenth Amendment era (1920-1933) and its repeal directly addresses prohibition, growth of organized crime, and the jazz age (A.1.b)."
     },
     {
       "vsiTitle": "The Reagan Revolution",
       "vsiAuthor": "Gil Troy",
       "relevantPathsAI": [
-        "A.4"
+        "A.4.f",
+        "A.4.f.i",
+        "A.4.f.ii"
       ],
-      "rationaleAI": "The Reagan administrations -- including military spending increases, tax cuts, the Iran-Contra Affair, and anticommunist foreign policy -- are examined in A.4.f."
+      "rationaleAI": "Ronald Reagan's presidency, supply-side economics, tax cuts, military buildup, and Cold War strategy directly address the Reagan administrations (A.4.f), including military spending and social welfare cuts (A.4.f.i) and anticommunist foreign policy (A.4.f.ii)."
     },
     {
       "vsiTitle": "The American Presidency",
       "vsiAuthor": "Charles O. Jones",
-      "relevantPathsAI": [],
-      "rationaleAI": "The institution of the presidency is essential context for the many administrations from Harding through George W. Bush discussed throughout A."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "The American presidency as constitutional institution, the Executive Office, the National Security Council, and presidential transitions broadly inform the entire U.S. section (A), which is structured around successive presidential administrations."
     },
     {
       "vsiTitle": "The U.S. Congress",
       "vsiAuthor": "Donald Ritchie",
-      "relevantPathsAI": [],
-      "rationaleAI": "Congressional dynamics -- including the Gulf of Tonkin Resolution, Carter's relations with Congress, and legislative processes -- are examined throughout."
+      "relevantPathsAI": [
+        "A.2.b.i",
+        "A.4.c.iii"
+      ],
+      "rationaleAI": "Congressional structure, committee systems, and legislative processes connect to the power struggle between the Supreme Court and President over New Deal legislation (A.2.b.i) and the Watergate scandal's congressional dimensions (A.4.c.iii)."
     },
     {
       "vsiTitle": "The U.S. Supreme Court",
       "vsiAuthor": "Linda Greenhouse",
       "relevantPathsAI": [
-        "A.2",
-        "A.3"
+        "A.2.b.i",
+        "A.3.b.i"
       ],
-      "rationaleAI": "Judicial invalidation of New Deal legislation, the Warren court's civil rights decisions, and Reagan's rightward shift are key topics in A.2.b.i and A.3.b.i."
+      "rationaleAI": "The Supreme Court's judicial review power and institutional evolution connect to judicial invalidation of New Deal legislation (A.2.b.i) and innovative decisions of the Warren court on civil rights (A.3.b.i)."
     },
     {
       "vsiTitle": "The U.S. Constitution",
       "vsiAuthor": "David J. Bodenhamer",
-      "relevantPathsAI": [],
-      "rationaleAI": "Constitutional issues -- including FDR's court-packing attempt, civil rights amendments, and the Watergate crisis -- are examined."
+      "relevantPathsAI": [
+        "A.2.b.i",
+        "A.3.b.i"
+      ],
+      "rationaleAI": "Constitutional history including separation of powers, property rights, and individual rights connects to the New Deal constitutional controversies (A.2.b.i) and civil rights legislation under the Warren court (A.3.b.i)."
     },
     {
       "vsiTitle": "American Political History",
       "vsiAuthor": "Donald Critchlow",
-      "relevantPathsAI": [],
-      "rationaleAI": "Broad U.S. political history including Cold War politics, foreign policy, and party dynamics is relevant to the entire section."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Evolution of American political institutions, the two-party system, and civil rights broadly addresses the entire U.S. section (A), spanning successive administrations and policy debates."
     },
     {
       "vsiTitle": "American Foreign Relations",
       "vsiAuthor": "Andrew Preston",
-      "relevantPathsAI": [],
-      "rationaleAI": "U.S. foreign policy from interwar isolationism through Cold War containment, Vietnam, and the post-Cold War era is traced throughout A."
+      "relevantPathsAI": [
+        "A.2.c",
+        "A.3.a",
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "U.S. foreign policy covering diplomacy, military conflicts, the Cold War, and NATO directly addresses isolationism and neutrality (A.2.c), containment policy and the Truman Doctrine (A.3.a), the late 20th century including Vietnam and detente (A.4), and the post-Cold War era (A.5)."
     },
     {
       "vsiTitle": "The Cold War",
       "vsiAuthor": "Robert J. McMahon",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "A.3.a",
+        "A.3.b",
+        "A.4",
+        "A.4.a"
       ],
-      "rationaleAI": "The Truman Doctrine, Marshall Plan, NATO, Korean War, Cuban missile crisis, and detente are examined in A.3-4."
+      "rationaleAI": "Cold War origins, NATO formation, superpower rivalry, and Vietnam directly address containment of communism under Truman (A.3.a), the Eisenhower administrations (A.3.b), Kennedy and the Cuban missile crisis (A.4.a), and Cold War continuation through detente (A.4)."
     },
     {
       "vsiTitle": "The Civil Rights Movement",
       "vsiAuthor": "Thomas C. Holt",
       "relevantPathsAI": [
-        "A.3",
-        "A.4"
+        "A.3.b.i",
+        "A.4.b.i",
+        "A.4.b.ii"
       ],
-      "rationaleAI": "The intensification of the civil rights movement, Civil Rights Acts, and the assassinations of King and RFK are central to A.3.b.i and A.4.b."
+      "rationaleAI": "The mid-20th-century civil rights movement and grassroots participation directly address intensification of the civil rights movement and Civil Rights acts (A.3.b.i), the Civil Rights Act of 1964 (A.4.b.i), and protests and assassinations of Robert Kennedy and Martin Luther King Jr. (A.4.b.ii)."
     },
     {
       "vsiTitle": "African American History",
       "vsiAuthor": "Jonathan Scott Holloway",
-      "relevantPathsAI": [],
-      "rationaleAI": "The African American experience -- including racial unrest, civil rights struggles, and social changes -- is examined throughout."
+      "relevantPathsAI": [
+        "A.3.b.i",
+        "A.4.b.ii"
+      ],
+      "rationaleAI": "African American struggles for freedom, citizenship, and equality connect to the civil rights movement and Warren court decisions (A.3.b.i) and increasing alienation among minority groups with city and campus protests (A.4.b.ii)."
     },
     {
       "vsiTitle": "American Cultural History",
       "vsiAuthor": "Eric Avila",
       "relevantPathsAI": [
-        "A.1",
-        "A.4"
+        "A.1.b"
       ],
-      "rationaleAI": "Social and cultural changes including the jazz age of the 1920s and counterculture protests are explored in A.1.b and A.4.b.ii."
+      "rationaleAI": "Cultural production and national identity formation including literature, music, film, and television connect to social conditions in the 1920s and the jazz age (A.1.b), though the coverage extends far beyond this period."
     },
     {
       "vsiTitle": "American Women's History",
       "vsiAuthor": "Susan Ware",
-      "relevantPathsAI": [],
-      "rationaleAI": "Women's evolving role in American society from suffrage through the feminist movements is traced across the section."
+      "relevantPathsAI": [
+        "A.4.b.ii"
+      ],
+      "rationaleAI": "Women's suffrage, evolving legal rights, and political participation connect to increasing alienation among minority groups and protests in cities and on campuses (A.4.b.ii), reflecting broader social movements of the 1960s."
     },
     {
       "vsiTitle": "American Immigration",
       "vsiAuthor": "David A. Gerber",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a"
       ],
-      "rationaleAI": "The restriction of immigration in the 1920s and tensions over illegal immigration are examined in A.1.a."
+      "rationaleAI": "History of immigration to the United States including legal efforts to restrict immigration directly addresses restriction of immigration under Harding and Coolidge (A.1.a)."
     },
     {
       "vsiTitle": "Asian American History",
       "vsiAuthor": "Madeline Y. Hsu",
-      "relevantPathsAI": [],
-      "rationaleAI": "Asian American experiences -- including immigration restriction and WWII internment -- contribute to the broader social history."
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.2.d"
+      ],
+      "rationaleAI": "Asian American history including exclusion laws, discrimination, and World War II Japanese American incarceration connects to immigration restriction policies (A.1.a) and wartime mobilization (A.2.d)."
     },
     {
       "vsiTitle": "American Political Parties and Elections",
       "vsiAuthor": "L. Sandy Maisel",
-      "relevantPathsAI": [],
-      "rationaleAI": "Party dynamics from the Republican 1920s through the Democratic New Deal coalition and subsequent realignments are traced."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "The two-party system, electoral processes, and voter participation broadly inform the entire U.S. section (A), which is structured around successive presidential administrations and party politics."
     },
     {
       "vsiTitle": "World War II",
       "vsiAuthor": "Gerhard L. Weinberg",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.d"
       ],
-      "rationaleAI": "U.S. wartime mobilization, defeating the Axis in Europe and the Pacific, and military occupation are examined in A.2.d."
+      "rationaleAI": "World War II covering the global conflict, the Pacific theater including Japan, and Allied victory directly addresses U.S. wartime mobilization, the role of U.S. forces in defeating Axis powers, and military occupation of Japan and Germany (A.2.d)."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
-        "A.4"
+        "A.3.a.v",
+        "A.4.a",
+        "A.4.d"
       ],
-      "rationaleAI": "The Nuclear Test-Ban Treaty, arms race, and SALT talks are addressed in A.4.a, A.4.d, and A.4.f."
+      "rationaleAI": "Atomic and hydrogen bombs, Cold War arms race, and Reagan's Strategic Defense Initiative address the large postwar military establishment (A.3.a.v), the Cuban missile crisis and Nuclear Test-Ban Treaty (A.4.a), and SALT talks (A.4.d)."
     },
     {
       "vsiTitle": "American Military History",
       "vsiAuthor": "Joseph T. Glatthaar",
-      "relevantPathsAI": [],
-      "rationaleAI": "U.S. military history from WWII through Korea, Vietnam, and the Gulf Wars is examined throughout."
+      "relevantPathsAI": [
+        "A.2.d",
+        "A.3.a.iv",
+        "A.3.a.v"
+      ],
+      "rationaleAI": "Four hundred years of American military development, emergence as a global power after World War II, and challenges of professional forces address U.S. forces in World War II (A.2.d), the Korean War (A.3.a.iv), and the large postwar military establishment (A.3.a.v)."
     },
     {
       "vsiTitle": "Terrorism",
@@ -157,71 +202,89 @@
       "relevantPathsAI": [
         "A.5.c"
       ],
-      "rationaleAI": "Terrorism is directly relevant to the September 11 attacks and the Second Persian Gulf War discussed in A.5.c."
+      "rationaleAI": "Terrorism including the September 2001 attacks and ISIS directly addresses the September 11 attacks under the George W. Bush administration (A.5.c)."
     },
     {
       "vsiTitle": "The Iraq Wars",
       "vsiAuthor": "Samuel Helfont",
       "relevantPathsAI": [
-        "A.5",
+        "A.5.a",
         "A.5.c"
       ],
-      "rationaleAI": "The Persian Gulf War (1991) and Second Persian Gulf War (2003) are the focus of A.5.a and A.5.c."
+      "rationaleAI": "The 1991 Gulf War and 2003 invasion directly address the Persian Gulf War under George H.W. Bush (A.5.a) and the Second Persian Gulf War under George W. Bush (A.5.c)."
     },
     {
       "vsiTitle": "Canada",
       "vsiAuthor": "Donald Wright",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses Canadian history including interwar Liberal government, WWII participation, peacekeeping, and Quebec separatism in B."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Canadian history covering political development, cultural diversity, Quebec separatism, and peacekeeping directly addresses Canada between the World Wars (B.1), wartime participation (B.2), and postwar developments including Franco-Canadian relations (B.3)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
-      "relevantPathsAI": [],
-      "rationaleAI": "Economic dimensions from Coolidge prosperity through the stock market crash, the Depression, and postwar economic dominance are explored."
+      "relevantPathsAI": [
+        "A.1.a",
+        "A.1.c"
+      ],
+      "rationaleAI": "Capitalism including the Great Depression of the 1930s and financial systems connects to favouritism toward big business under Harding and Coolidge (A.1.a) and the stock market crash and Great Depression (A.1.c)."
     },
     {
       "vsiTitle": "Neoliberalism",
       "vsiAuthor": "Manfred Steger, Ravi K. Roy",
       "relevantPathsAI": [
-        "A.4"
+        "A.4.f.i",
+        "A.5"
       ],
-      "rationaleAI": "Reagan's economic philosophy -- including tax cuts and free-market policies -- is examined in A.4.f."
+      "rationaleAI": "Neoliberal deregulation, privatization, and the 2008 financial crisis connect to Reagan's economic policies and social welfare cuts (A.4.f.i) and the post-Cold War era (A.5)."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
-      "relevantPathsAI": [],
-      "rationaleAI": "U.S. diplomatic history from interwar isolationism through Cold War diplomacy and detente is traced."
+      "relevantPathsAI": [
+        "A.2.c",
+        "A.3.a",
+        "A.5.c"
+      ],
+      "rationaleAI": "Diplomatic history including Versailles, wartime summitry, and the Iraq War addresses foreign policy between the World Wars (A.2.c), Cold War containment (A.3.a), and the lead-up to the Iraq War (A.5.c)."
     },
     {
       "vsiTitle": "Globalization",
       "vsiAuthor": "Manfred Steger",
       "relevantPathsAI": [
-        "A.5",
-        "B.3"
+        "A.5.b",
+        "B.3.a"
       ],
-      "rationaleAI": "NAFTA and the increasingly global U.S. economy are examined in A.5.b and B.3.a."
+      "rationaleAI": "Globalization including trade, migration, and the Trump presidency connects to the Clinton administration's NAFTA ratification (A.5.b) and U.S.-Canadian economic relations and free-trade agreement (B.3.a)."
     },
     {
       "vsiTitle": "Progressivism",
       "vsiAuthor": "Walter Nugent",
-      "relevantPathsAI": [],
-      "rationaleAI": "The Progressive movement and Woodrow Wilson's legacy shaped the interwar political landscape."
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Progressivism as reform movement, Theodore Roosevelt, and Woodrow Wilson provide historical context for the post-World War I Republican administrations (A.1.a) that reversed Progressive-era policies."
     },
     {
       "vsiTitle": "American Business History",
       "vsiAuthor": "Walter A. Friedman",
-      "relevantPathsAI": [],
-      "rationaleAI": "Economic dimensions including big business favoritism in the 1920s and New Deal regulation are explored."
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "American business enterprise and corporate evolution provide context for favouritism toward big business and Coolidge prosperity (A.1.a)."
     },
     {
       "vsiTitle": "Communism",
       "vsiAuthor": "Leslie Holmes",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a.i",
+        "A.3.a.iii"
       ],
-      "rationaleAI": "The Cold War's ideological dimension, McCarthyism, and the containment policy are examined in A.3."
+      "rationaleAI": "Communism and Cold War confrontation with the United States address the Truman Doctrine's containment of communism (A.3.a.i) and McCarthyism and the Red Scare (A.3.a.iii)."
     },
     {
       "vsiTitle": "The Palestinian–Israeli Conflict",
@@ -234,17 +297,20 @@
     {
       "vsiTitle": "Federalism",
       "vsiAuthor": "Mark J. Rozell, Clyde Wilcox",
-      "relevantPathsAI": [],
-      "rationaleAI": "Federal system dynamics -- including New Deal expansion of federal power and Reagan-era devolution -- are addressed."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Federalism with primary focus on the United States, covering power-sharing between national and subnational governments, provides institutional context for the entire U.S. political section (A)."
     },
     {
       "vsiTitle": "North American Indians",
       "vsiAuthor": "Theda Perdue, Michael D. Green",
       "relevantPathsAI": [
-        "B.3"
+        "B.3.d"
       ],
-      "rationaleAI": "Native American history is relevant to Canada's relations with Indians, Eskimo, and Metis in B.3.d."
+      "rationaleAI": "Indigenous peoples of North America and contemporary challenges facing Native American communities connect to Canada's relations with Indians, Eskimo, and Metis (B.3.d)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

@@ -5,355 +5,435 @@
       "vsiTitle": "Darwin",
       "vsiAuthor": "Jonathan Howard",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b"
       ],
-      "rationaleAI": "Darwin's theory of evolution transformed biology, directly relevant to the Aristotelian concepts of classification, heredity, and descent in A.1.b."
+      "rationaleAI": "Darwin's theory of evolution by natural selection relates to the history of biology and Greco-Roman biological ideas including classification and descent (A.1.b)."
     },
     {
       "vsiTitle": "Evolution",
       "vsiAuthor": "Brian Charlesworth, Deborah Charlesworth",
-      "relevantPathsAI": [],
-      "rationaleAI": "Evolution is the unifying theory of biology, directly relevant to the historical development of biological ideas about classification and heredity."
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Evolution as a unifying biological framework relates to biological ideas including natural selection (A.1.b)."
     },
     {
       "vsiTitle": "The History of Life",
       "vsiAuthor": "Michael J. Benton",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the history of life on Earth, central to understanding origins and development of biological ideas."
+      "relevantPathsAI": [
+        "A.1.b"
+      ],
+      "rationaleAI": "Four billion years of life relates to theories about the origin of life in Greco-Roman biology (A.1.b)."
     },
     {
       "vsiTitle": "Aristotle",
       "vsiAuthor": "Jonathan Barnes",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b"
       ],
-      "rationaleAI": "Aristotle's concepts of classification, reproduction, heredity, and descent are specifically cited in A.1.b as foundational to biology."
+      "rationaleAI": "Aristotle's biology including classification directly addresses Aristotelian concepts in the Greco-Roman world (A.1.b)."
     },
     {
       "vsiTitle": "Ancient Greek and Roman Science",
       "vsiAuthor": "Liba Taub",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b"
       ],
-      "rationaleAI": "Section A.1.b covers biology in the Greco-Roman world including theories about mankind and the origin of life."
+      "rationaleAI": "Ancient scientific inquiry into human bodies relates to biology in the Greco-Roman world (A.1.b)."
     },
     {
       "vsiTitle": "The Scientific Revolution",
       "vsiAuthor": "Lawrence M. Principe",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.d"
       ],
-      "rationaleAI": "Section A.1.d covers biology in the Renaissance including the scientific study of anatomy through dissection (Harvey, Vesalius, Malpighi)."
+      "rationaleAI": "Vesalius, Harvey, and Malpighi relate to Renaissance biology and anatomical study through dissection (A.1.d)."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
-      "relevantPathsAI": [],
-      "rationaleAI": "Cell biology is foundational, covering the cell theory that transformed biological understanding from the 19th century onward."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Cell biology relates broadly to the history of biological sciences."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
-        "A.1"
+        "A"
       ],
-      "rationaleAI": "The study of genes and heredity is central to the historical development of biological ideas about reproduction and descent (A.1.b)."
+      "rationaleAI": "Gene concept and molecular biology relate to modern biological sciences development."
     },
     {
       "vsiTitle": "Heredity",
       "vsiAuthor": "John Waller",
       "relevantPathsAI": [
-        "A.1"
+        "A"
       ],
-      "rationaleAI": "Heredity is explicitly mentioned in A.1.b as part of Aristotelian biological concepts and is a major thread in biology's history."
+      "rationaleAI": "Biological inheritance from ancient conceptions to genomics covers the history of hereditary concepts."
     },
     {
       "vsiTitle": "Genomics",
       "vsiAuthor": "John M. Archibald",
-      "relevantPathsAI": [],
-      "rationaleAI": "Genomics represents a modern development building on the historical trajectory of genetics and molecular biology."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Genomics represents modern developments in the biological sciences."
     },
     {
       "vsiTitle": "Molecular Biology",
       "vsiAuthor": "Aysha Divan, Janice Royds",
-      "relevantPathsAI": [],
-      "rationaleAI": "Molecular biology is a major branch of modern biological science emerging from the historical trajectory of biology."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "DNA structure discovery and molecular biology relate to the modern history of biological sciences."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
-      "relevantPathsAI": [],
-      "rationaleAI": "Developmental biology addresses reproduction and embryology central to biology from Aristotelian times through modern science."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Biological development processes relate to the scope of biological sciences."
     },
     {
       "vsiTitle": "Systems Biology",
       "vsiAuthor": "Eberhard O. Voit",
-      "relevantPathsAI": [],
-      "rationaleAI": "Systems biology represents a modern integrative approach to the biological sciences."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Systems biology represents contemporary biological sciences developments."
     },
     {
       "vsiTitle": "Synthetic Biology",
       "vsiAuthor": "Jamie A. Davies",
-      "relevantPathsAI": [],
-      "rationaleAI": "Synthetic biology is a contemporary frontier extending the historical trajectory of the biological sciences."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Synthetic biology represents cutting-edge biological sciences developments."
     },
     {
       "vsiTitle": "Stem Cells",
       "vsiAuthor": "Jonathan Slack",
-      "relevantPathsAI": [],
-      "rationaleAI": "Stem cell research represents cutting-edge biological science building on cell biology and developmental biology."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Stem cell biology represents modern biological sciences developments."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
       "relevantPathsAI": [
-        "A.1.c",
-        "A.1"
+        "A.1.b"
       ],
-      "rationaleAI": "Zoology as a separate discipline is mentioned in A.1.c, and animal classification is part of the Aristotelian tradition (A.1.b)."
+      "rationaleAI": "Animal diversity survey using molecular phylogenetics builds on Aristotelian taxonomy (A.1.b)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.c"
       ],
-      "rationaleAI": "Botanical investigations are mentioned in A.1.b (Greco-Roman) and A.1.d (Renaissance dissemination of botanical knowledge)."
+      "rationaleAI": "Plant biology relates to botany as a separate discipline in the Middle Ages (A.1.c)."
     },
     {
       "vsiTitle": "Fungi",
       "vsiAuthor": "Nicolas P. Money",
-      "relevantPathsAI": [],
-      "rationaleAI": "Fungi are a major kingdom of life whose study is part of the development of botany and biological classification."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Fungal biology relates to the scope of biological sciences."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
-      "relevantPathsAI": [],
-      "rationaleAI": "Bacteriology is a major branch of biological science that emerged with microscopy and microbiology."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Bacterial biology relates to the scope of biological sciences."
     },
     {
       "vsiTitle": "Viruses",
       "vsiAuthor": "Dorothy H. Crawford",
-      "relevantPathsAI": [],
-      "rationaleAI": "Virology is a major branch of biological science, connected to microbiology and cell biology."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Virology relates to modern biological sciences developments."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
-      "relevantPathsAI": [],
-      "rationaleAI": "Microbiology is a fundamental biological science whose history includes microscopy and germ theory."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Microbiology using molecular techniques relates to modern biological sciences."
     },
     {
       "vsiTitle": "Microbiomes",
       "vsiAuthor": "Angela E. Douglas",
-      "relevantPathsAI": [],
-      "rationaleAI": "Microbiome research is a modern branch of biological science studying microbial communities."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Microbial communities represent contemporary biological understanding."
     },
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
-      "relevantPathsAI": [],
-      "rationaleAI": "Ecology is a major branch of the biological sciences studying organisms, communities, and ecosystems."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Ecology represents a major branch of the biological sciences."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
       "relevantPathsAI": [
-        "A.1.c"
+        "A"
       ],
-      "rationaleAI": "Entomology is a branch of zoology, which developed as a separate biological discipline (A.1.c)."
+      "rationaleAI": "Insect evolution and diversity relate to the scope of biological sciences."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
       "relevantPathsAI": [
-        "A.1.c"
+        "A"
       ],
-      "rationaleAI": "Mammalogy is part of zoology, which developed alongside botany as a biological discipline (A.1.c)."
+      "rationaleAI": "Mammalian biology and evolution relate to the biological sciences."
     },
     {
       "vsiTitle": "Reptiles",
       "vsiAuthor": "Tom Kemp",
       "relevantPathsAI": [
-        "A.1.c"
+        "A"
       ],
-      "rationaleAI": "The study of reptiles is part of zoology, which developed as a separate discipline (A.1.c)."
+      "rationaleAI": "Reptile diversity relates to the biological sciences."
     },
     {
       "vsiTitle": "Amphibians",
       "vsiAuthor": "T. S. Kemp",
       "relevantPathsAI": [
-        "A.1.c"
+        "A"
       ],
-      "rationaleAI": "The study of amphibians is part of zoology, which developed as a separate discipline (A.1.c)."
+      "rationaleAI": "Amphibian biology relates to the biological sciences."
     },
     {
       "vsiTitle": "Dinosaurs",
       "vsiAuthor": "David Norman",
-      "relevantPathsAI": [],
-      "rationaleAI": "Paleontological study of dinosaurs represents a major chapter in the biological sciences and history of life."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Dinosaurs relate to the biological sciences including paleontology."
     },
     {
       "vsiTitle": "Marine biology",
       "vsiAuthor": "Philip V. Mladenov",
-      "relevantPathsAI": [],
-      "rationaleAI": "Marine biology is a major branch of the biological sciences studying life in ocean environments."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Marine organism diversity relates to the biological sciences."
     },
     {
       "vsiTitle": "Animal Behaviour",
       "vsiAuthor": "Tristram D. Wyatt",
-      "relevantPathsAI": [],
-      "rationaleAI": "Ethology is a major branch of biological science extending from Aristotelian biological observations."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Animal behavior evolution relates to the biological sciences."
     },
     {
       "vsiTitle": "Sexual Selection",
       "vsiAuthor": "Marlene Zuk, Leigh W Simmons",
-      "relevantPathsAI": [],
-      "rationaleAI": "Sexual selection is a key mechanism of evolution, connected to the Darwinian tradition in biological sciences."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Sexual selection theory relates to the biological sciences."
     },
     {
       "vsiTitle": "Human evolution",
       "vsiAuthor": "Bernard Wood",
       "relevantPathsAI": [
-        "A.1"
+        "A"
       ],
-      "rationaleAI": "Human evolution is a major topic connecting classification, heredity, and descent (A.1.b)."
+      "rationaleAI": "Human evolution relates to the scope of biological sciences."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
       "relevantPathsAI": [
-        "A.1"
+        "A"
       ],
-      "rationaleAI": "Neuroscience is a major branch of biological science, connected to anatomical discoveries in A.1.b-d."
+      "rationaleAI": "Neuroanatomy and neurophysiology relate to the biological sciences."
     },
     {
       "vsiTitle": "The Eye",
       "vsiAuthor": "Michael F. Land",
-      "relevantPathsAI": [],
-      "rationaleAI": "The study of the eye connects to anatomy and comparative biology, branches with deep historical roots."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Eye evolution across species relates to the biological sciences."
     },
     {
       "vsiTitle": "The Immune System",
       "vsiAuthor": "Paul Klenerman",
-      "relevantPathsAI": [],
-      "rationaleAI": "Immunology is a major branch of biological science studying defense mechanisms at the cellular and molecular level."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Immune system biology relates to modern biological sciences."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
-      "relevantPathsAI": [],
-      "rationaleAI": "Endocrinology is a branch of biological science studying hormonal regulation, connected to physiology."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Endocrine physiology relates to the biological sciences."
     },
     {
       "vsiTitle": "Enzymes",
       "vsiAuthor": "Paul Engel",
-      "relevantPathsAI": [],
-      "rationaleAI": "Enzyme biochemistry is fundamental, connecting chemistry and biology at the molecular level."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Biological catalysts relate to the biological sciences."
     },
     {
       "vsiTitle": "Blood",
       "vsiAuthor": "Christopher Cooper",
-      "relevantPathsAI": [],
-      "rationaleAI": "Hematology is part of the biological sciences, connected to the study of physiology and anatomy."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Blood biology relates to the biological sciences."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
-      "relevantPathsAI": [],
-      "rationaleAI": "Circadian biology studies internal biological clocks and their molecular regulation."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Biological timekeeping relates to the biological sciences."
     },
     {
       "vsiTitle": "Teeth",
       "vsiAuthor": "Peter S. Ungar",
-      "relevantPathsAI": [],
-      "rationaleAI": "The study of teeth connects to comparative anatomy, evolution, and paleontology within biological sciences."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Dental evolutionary biology relates to the biological sciences."
     },
     {
       "vsiTitle": "Smell",
       "vsiAuthor": "Matthew Cobb",
-      "relevantPathsAI": [],
-      "rationaleAI": "Olfactory biology involves neuroscience, physiology, and sensory biology, all branches of the biological sciences."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Olfaction physiology relates to the biological sciences."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
-      "relevantPathsAI": [],
-      "rationaleAI": "Forest ecology studies plant communities and ecosystem dynamics as a major branch of biological science."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Forest ecology relates to the biological sciences."
     },
     {
       "vsiTitle": "Coral Reefs",
       "vsiAuthor": "Charles Sheppard",
-      "relevantPathsAI": [],
-      "rationaleAI": "Coral reef biology is part of marine biology and ecology, major branches of the biological sciences."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Coral reef biology relates to the biological sciences."
     },
     {
       "vsiTitle": "Biodiversity Conservation",
       "vsiAuthor": "David W. Macdonald",
-      "relevantPathsAI": [],
-      "rationaleAI": "Biodiversity conservation applies biological science principles to the preservation of species diversity."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Biodiversity relates to the biological sciences."
     },
     {
       "vsiTitle": "Invasive Species",
       "vsiAuthor": "Julie Lockwood, Dustin J. Welbourne",
-      "relevantPathsAI": [],
-      "rationaleAI": "The study of invasive species is a branch of ecology and conservation biology."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Invasive species biology relates to the biological sciences."
     },
     {
       "vsiTitle": "Extinction",
       "vsiAuthor": "Paul B. Wignall",
-      "relevantPathsAI": [],
-      "rationaleAI": "Extinction studies combine paleontology, ecology, and evolutionary biology."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Species extinction relates to the biological sciences."
     },
     {
       "vsiTitle": "Biogeography",
       "vsiAuthor": "Mark V. Lomolino",
-      "relevantPathsAI": [],
-      "rationaleAI": "Biogeography studies the distribution of biological species, connecting ecology, evolution, and geography."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Biogeography relates to the biological sciences."
     },
     {
       "vsiTitle": "Symbiosis",
       "vsiAuthor": "Nancy A. Moran",
-      "relevantPathsAI": [],
-      "rationaleAI": "Symbiosis is a key concept in ecology and evolutionary biology."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Symbiosis and its evolutionary role relate to the biological sciences."
     },
     {
       "vsiTitle": "Microscopy",
       "vsiAuthor": "Terence Allen",
-      "relevantPathsAI": [],
-      "rationaleAI": "Microscopy has been essential to biological sciences, enabling study of cells, microorganisms, and anatomical structures."
+      "relevantPathsAI": [
+        "A.1.d"
+      ],
+      "rationaleAI": "Microscopy from Hooke and van Leeuwenhoek relates to Renaissance biology development (A.1.d)."
     },
     {
       "vsiTitle": "Philosophy of Biology",
       "vsiAuthor": "Samir Okasha",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses philosophical questions about classification, evolution, and the nature of life arising from biological sciences."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Philosophical analysis of evolution relates to the biological sciences."
     },
     {
       "vsiTitle": "Astrobiology",
       "vsiAuthor": "David C. Catling",
-      "relevantPathsAI": [],
-      "rationaleAI": "Astrobiology extends the biological sciences to questions about the origin and possibility of life beyond Earth."
+      "relevantPathsAI": [
+        "A.1.a"
+      ],
+      "rationaleAI": "Origin of life relates to views of life in early civilizations (A.1.a)."
     },
     {
       "vsiTitle": "Eugenics",
       "vsiAuthor": "Philippa Levine",
-      "relevantPathsAI": [],
-      "rationaleAI": "Eugenics represents a historical application of biological ideas about heredity and descent."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Eugenics and genetic heredity connect to the history of biological sciences."
     },
     {
       "vsiTitle": "Ivan Pavlov",
       "vsiAuthor": "Daniel P. Todes",
-      "relevantPathsAI": [],
-      "rationaleAI": "Pavlov's experimental work in physiology contributed to the development of biological sciences and animal behavior study."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Pavlov's physiological research relates to the biological sciences."
     },
     {
       "vsiTitle": "Mathematical Biology",
       "vsiAuthor": "Philip K Maini",
-      "relevantPathsAI": [],
-      "rationaleAI": "Mathematical biology applies mathematical models to biological problems including epidemiology, ecology, and pattern formation."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Mathematical modeling of biological systems represents a modern approach in the biological sciences."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

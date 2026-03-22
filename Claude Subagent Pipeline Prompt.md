@@ -33,9 +33,8 @@ Your job is to continue the AI mapping pipeline safely and repeatably. Follow th
   - report exact leaf coverage per type
   - classify broader parent mappings as fallback rather than exact coverage
   - provide a gap-fill planning mode
-- Generated audit outputs currently exist in:
-  - `scripts/output/mapping-coverage-report.json`
-  - `scripts/output/gap-fill-wikipedia.json`
+- Generated audit outputs are written under `scripts/output/` when coverage or gap-fill is run.
+- Those JSON files are generated artifacts and do not need to be checked into the repo.
 
 ## Hard Instructions
 

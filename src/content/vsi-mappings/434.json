@@ -4,14 +4,30 @@
     {
       "vsiTitle": "Intelligence",
       "vsiAuthor": "Ian J. Deary",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses theories of intelligence, IQ, Wechsler scales, and cognitive domains -- the core of intelligence distribution and measurement (D, E)."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "D",
+        "E",
+        "E.1",
+        "E.2",
+        "E.3",
+        "E.4"
+      ],
+      "rationaleAI": "Psychometric measurement including IQ, Wechsler scales, and Raven's Progressive Matrices directly addresses types of testing instruments (B.1), development of standardized tests (B.2), and assessment of test results (B.3). Theories of cognitive abilities relate to intellectual abilities (D). Coverage of the Flynn effect, sex differences, and cognitive epidemiology addresses intelligence standards (E.1), retardation (E.2), the gifted (E.3), and group differences (E.4)."
     },
     {
       "vsiTitle": "Psychology",
       "vsiAuthor": "Gillian Butler, Freda McManus",
-      "relevantPathsAI": [],
-      "rationaleAI": "Examines psychological measurement, individual differences, and the study of human abilities across cognitive and developmental domains (B, D)."
+      "relevantPathsAI": [
+        "A",
+        "D",
+        "F",
+        "G"
+      ],
+      "rationaleAI": "Broad coverage of cognitive psychology, developmental psychology, and individual differences provides context for human capacities (A), intellectual abilities (D), personal propensities (F), and attitudes (G)."
     },
     {
       "vsiTitle": "Thinking and Reasoning",
@@ -19,64 +35,71 @@
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "Explores reasoning, problem solving, and deduction as intellectual abilities underlying theories of intelligence (D)."
+      "rationaleAI": "Cognitive psychology of reasoning, dual-process theory, and the relationship between IQ and reasoning ability directly addresses theories of intelligence (D)."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
       "vsiAuthor": "Richard Passingham",
       "relevantPathsAI": [
-        "B.1"
+        "C",
+        "D"
       ],
-      "rationaleAI": "Examines the neural basis of intellectual abilities and brain imaging methods used in assessing cognition (D, B.1)."
+      "rationaleAI": "Neural basis of motor action addresses sensorimotor abilities (C) and intellectual abilities through neural substrates of cognition (D)."
     },
     {
       "vsiTitle": "Child Psychology",
       "vsiAuthor": "Usha Goswami",
       "relevantPathsAI": [
-        "E.4"
+        "A",
+        "G.3"
       ],
-      "rationaleAI": "Explores cognitive development and learning in children, relevant to age differences in intelligence and standardized testing (E.4)."
+      "rationaleAI": "Cognitive development from birth through adolescence addresses the nature of human capacities (A). Moral reasoning relates to the development of attitudes (G.3)."
     },
     {
       "vsiTitle": "Adolescence",
       "vsiAuthor": "Peter Smith",
       "relevantPathsAI": [
-        "E.4"
+        "A",
+        "G.3"
       ],
-      "rationaleAI": "Addresses developmental changes during adolescence, relevant to age differences in intelligence measurement (E.4)."
+      "rationaleAI": "Adolescent cognitive maturation and identity formation address developing human capacities (A). Attitudinal changes relate to the development of attitudes (G.3)."
     },
     {
       "vsiTitle": "Genius",
       "vsiAuthor": "Andrew Robinson",
       "relevantPathsAI": [
+        "D",
         "E.3"
       ],
-      "rationaleAI": "Directly addresses the gifted and the upper end of intelligence distribution, including creativity and mental illness links (E.3)."
+      "rationaleAI": "Analysis of genius examining talent, intelligence, and creativity directly addresses theories of intelligence (D) and the gifted (E.3)."
     },
     {
       "vsiTitle": "Creativity",
       "vsiAuthor": "Vlad Petre Glăveanu",
       "relevantPathsAI": [
-        "E.3"
+        "D",
+        "E.3",
+        "F"
       ],
-      "rationaleAI": "Explores creative abilities beyond standard intelligence, relevant to the gifted and intellectual capacities (E.3)."
+      "rationaleAI": "Psychological models of creative expression address intellectual ability (D), the gifted (E.3), and personal propensities (F)."
     },
     {
       "vsiTitle": "Autism",
       "vsiAuthor": "Uta Frith",
       "relevantPathsAI": [
-        "E.1",
-        "E.2"
+        "E.2",
+        "F"
       ],
-      "rationaleAI": "Examines atypical cognitive profiles and intelligence, relevant to problems in establishing intelligence standards (E.1, E.2)."
+      "rationaleAI": "Theory of mind deficit and executive function challenges address atypical cognitive profiles (E.2). Restricted interests relate to personal propensities (F)."
     },
     {
       "vsiTitle": "Neurodiversity",
       "vsiAuthor": "Robert Chapman, Sue Fletcher-Watson",
       "relevantPathsAI": [
-        "E.1"
+        "E.1",
+        "F"
       ],
-      "rationaleAI": "Explores diverse cognitive profiles in education and the workplace, relevant to the nature of human abilities and intelligence standards (A, E.1)."
+      "rationaleAI": "Reframing neurological variation addresses intelligence standards (E.1). Cognitive differences relate to personal propensities (F)."
     },
     {
       "vsiTitle": "Eugenics",
@@ -84,46 +107,53 @@
       "relevantPathsAI": [
         "E.4"
       ],
-      "rationaleAI": "Traces historical attempts to measure and interpret intelligence by race and heredity, directly relevant to group differences controversies (E.4)."
+      "rationaleAI": "Relationship between heredity, intelligence, and race directly addresses group differences in intelligence across race and other factors (E.4)."
     },
     {
       "vsiTitle": "Racism",
       "vsiAuthor": "Ali Rattansi",
       "relevantPathsAI": [
-        "E.4"
+        "E.4",
+        "G.1"
       ],
-      "rationaleAI": "The measurement and interpretation of group differences in intelligence by race remains a contested topic central to E.4."
+      "rationaleAI": "Biological racism relates to group differences in intelligence across race (E.4). Implicit bias addresses the nature of attitudes (G.1)."
     },
     {
       "vsiTitle": "Heredity",
       "vsiAuthor": "John Waller",
-      "relevantPathsAI": [],
-      "rationaleAI": "Heredity and variation shed light on genetic factors in intelligence distribution and personal propensities (E, F)."
+      "relevantPathsAI": [
+        "E.4"
+      ],
+      "rationaleAI": "Inherited traits shaping understandings of intelligence and race directly addresses group differences and their interpretation (E.4)."
     },
     {
       "vsiTitle": "Statistics",
       "vsiAuthor": "David J. Hand",
       "relevantPathsAI": [
-        "B"
+        "B.1",
+        "B.3"
       ],
-      "rationaleAI": "Statistical methods including experimental design, sampling, and probability are directly relevant to psychological measurement (B)."
+      "rationaleAI": "Statistical methods provide the mathematical foundation for testing instruments (B.1) and assessment of results (B.3)."
     },
     {
       "vsiTitle": "Measurement",
       "vsiAuthor": "David J. Hand",
       "relevantPathsAI": [
-        "B.2",
+        "B",
+        "B.1",
         "B.3"
       ],
-      "rationaleAI": "Standardization, accuracy, and measurement scales are directly relevant to the development of standardized tests and assessment (B.2, B.3)."
+      "rationaleAI": "Theory of measurement in behavioural sciences addresses psychological measurement (B), testing instruments (B.1), and assessment (B.3)."
     },
     {
       "vsiTitle": "Social Psychology",
       "vsiAuthor": "Richard J. Crisp",
       "relevantPathsAI": [
-        "G"
+        "G",
+        "G.1",
+        "G.2"
       ],
-      "rationaleAI": "Explores attitudes -- their nature, functions, development, and how social factors shape them (G)."
+      "rationaleAI": "Prejudice, attitudes, and persuasion address the nature of attitudes (G.1) and functions of attitudes (G.2)."
     },
     {
       "vsiTitle": "Emotion",
@@ -131,7 +161,7 @@
       "relevantPathsAI": [
         "F"
       ],
-      "rationaleAI": "Emotions function as personal propensities and idiosyncrasies affecting behaviour (F)."
+      "rationaleAI": "Temperament and biological basis of emotions relate to personal propensities and idiosyncrasies (F)."
     },
     {
       "vsiTitle": "Feminism",
@@ -139,14 +169,17 @@
       "relevantPathsAI": [
         "E.4"
       ],
-      "rationaleAI": "Essential for understanding critiques of gender bias in intelligence testing and the interpretation of sex differences in measurement (E.4)."
+      "rationaleAI": "Gender inequality analysis relates to group differences and sex-based differences in intelligence (E.4)."
     },
     {
       "vsiTitle": "Learning",
       "vsiAuthor": "Mark Haselgrove",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores conditioning, intelligence, and learning, relevant to sensorimotor abilities and the nature of human capacities (A, C)."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Associative theories of conditioning provide foundational context for the nature of human capacities (A)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

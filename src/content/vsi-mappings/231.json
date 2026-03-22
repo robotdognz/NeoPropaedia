@@ -4,38 +4,46 @@
     {
       "vsiTitle": "Geology",
       "vsiAuthor": "Jan Zalasiewicz",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers continental structure, oceanic crust, mountain ranges, and tectonic processes directly relevant to the physical features described throughout this section."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "D",
+        "F"
+      ],
+      "rationaleAI": "Earth's structure covers relief (A), platforms (B), oceanic deeps (D), and mountains (F)."
     },
     {
       "vsiTitle": "Plate tectonics",
       "vsiAuthor": "Peter Molnar",
       "relevantPathsAI": [
         "D",
+        "D.2",
         "F",
-        "G"
+        "F.2",
+        "G",
+        "G.2"
       ],
-      "rationaleAI": "Directly addresses oceanic ridges (G), deep-sea trenches (D), subduction zones, mountain ranges (F), and volcanic island arcs as products of plate boundary interactions."
+      "rationaleAI": "Plate boundaries address ocean basins (D.2), mountains (F), and ridges (G)."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
       "relevantPathsAI": [
-        "B.1",
-        "C.1",
         "D.1",
-        "G"
+        "G",
+        "G.1.a"
       ],
-      "rationaleAI": "Covers the geophysical properties of continental shields (B.1), oceanic crust (D.1.a), sea-floor spreading (G), and techniques for studying subsurface structure (C.1)."
+      "rationaleAI": "Sea-floor spreading connects to oceanic crust (D.1) and ridge system (G.1.a)."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
       "relevantPathsAI": [
-        "A.2",
-        "A.3"
+        "A",
+        "D.2",
+        "G"
       ],
-      "rationaleAI": "Provides an overview of continental and oceanic physiography (A.2, A.3), continental drift, and the geological processes shaping the Earth's major surface features."
+      "rationaleAI": "Tectonics connect to ocean basins (D.2) and ridges (G)."
     },
     {
       "vsiTitle": "Oceans",
@@ -43,62 +51,67 @@
       "relevantPathsAI": [
         "A.3",
         "C",
+        "D",
         "D.1",
-        "G"
+        "D.1.b"
       ],
-      "rationaleAI": "Covers oceanic physiography (A.3.b), continental margins (C), oceanic ridges (G), deep-sea trenches (D.1.b), abyssal plains, and seamounts."
+      "rationaleAI": "Seafloor topography addresses oceanic features (A.3), shelf (C), and deep features (D.1.b)."
     },
     {
       "vsiTitle": "Mountains",
       "vsiAuthor": "Martin F. Price",
       "relevantPathsAI": [
+        "A.2",
+        "F",
         "F.1",
         "F.2"
       ],
-      "rationaleAI": "Directly relevant to mountain types (F.1), the worldwide system of mountain ranges (F.2), and alpine valleys and landforms."
+      "rationaleAI": "Mountain environments address physiography (A.2), types (F.1), and systems (F.2)."
     },
     {
       "vsiTitle": "Volcanoes",
       "vsiAuthor": "Michael J. Branney, Jan Zalasiewicz",
       "relevantPathsAI": [
         "F.1",
-        "F.2"
+        "F.2.d"
       ],
-      "rationaleAI": "Covers volcanic mountains (F.1), volcanic island arcs (F.2.d), and the Circum-Pacific volcanic system (F.2.a)."
+      "rationaleAI": "Volcanic processes connect to volcanic mountains (F.1) and island arcs (F.2.d)."
     },
     {
       "vsiTitle": "Coral Reefs",
       "vsiAuthor": "Charles Sheppard",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly corresponds to section E on coral islands, coral reefs, and atolls."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "Coral formation addresses coral islands and atolls (E)."
     },
     {
       "vsiTitle": "Landscapes and Geomorphology",
       "vsiAuthor": "Andrew Goudie, Heather Viles",
       "relevantPathsAI": [
         "A",
-        "B.2"
+        "A.1",
+        "B"
       ],
-      "rationaleAI": "Covers the physical landscape features including plateaus, rift valleys (B.2), coastal landforms, and the geomorphic context of the Earth's surface relief (A)."
+      "rationaleAI": "Landforms connect to relief (A), hypsography (A.1), and platforms (B)."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
       "relevantPathsAI": [
-        "B.1",
-        "F.2",
-        "D.1"
+        "A.3",
+        "D.1",
+        "F.2.e"
       ],
-      "rationaleAI": "Relevant to the rock types constituting continental shields (B.1), folded mountain ranges (F.2.e), oceanic crust (D.1.a), and sediments of the ocean floor (D.1.b)."
+      "rationaleAI": "Rock types connect to oceanic features (A.3), crust (D.1), and mountain rocks (F.2.e)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
       "relevantPathsAI": [
-        "B.1",
-        "F.2"
+        "D.1.a"
       ],
-      "rationaleAI": "Relevant to the constituent rocks and minerals of continental shield areas (B.1) and the rock types in mountain ranges (F.2.e)."
+      "rationaleAI": "Minerals connect to oceanic crust (D.1.a)."
     },
     {
       "vsiTitle": "Lakes",
@@ -106,7 +119,7 @@
       "relevantPathsAI": [
         "B.2.c"
       ],
-      "rationaleAI": "Directly relevant to water bodies occupying fault-bounded structural depressions (B.2.c), including lakes and landlocked seas."
+      "rationaleAI": "Lakes connect to fault-bounded depressions (B.2.c)."
     },
     {
       "vsiTitle": "The Antarctic",
@@ -114,46 +127,43 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Covers the physiography of Antarctica (A.2), its ice sheet, mountains, and surrounding oceanic features relevant to continental and oceanic description."
+      "rationaleAI": "Antarctic geography connects to physiography (A.2)."
     },
     {
       "vsiTitle": "The Arctic",
       "vsiAuthor": "Klaus Dodds, Jamie Woodward",
       "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "C"
+        "A.2"
       ],
-      "rationaleAI": "Covers Arctic continental shelf features (C), oceanic ridges in the Arctic basin, and the physical environment of the Arctic region (A.2, A.3)."
+      "rationaleAI": "Arctic geography connects to physiography (A.2)."
     },
     {
       "vsiTitle": "Glaciation",
       "vsiAuthor": "David J. A. Evans",
       "relevantPathsAI": [
-        "A.2",
-        "A.1"
+        "A.2"
       ],
-      "rationaleAI": "Relevant to understanding glacially shaped continental physiography (A.2) and the relationship between glaciation and sea level affecting coastlines (A.1)."
+      "rationaleAI": "Glacial landscapes connect to physiography (A.2)."
     },
     {
       "vsiTitle": "The Ice Age",
       "vsiAuthor": "Jamie Woodward",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "C"
+        "A.2"
       ],
-      "rationaleAI": "Covers ice sheets that shaped continental physiography (A.2) and their effects on sea level, coastlines (A.1), and continental shelf exposure (C)."
+      "rationaleAI": "Ice age landscapes connect to physiography (A.2)."
     },
     {
       "vsiTitle": "Geography",
       "vsiAuthor": "John A. Matthews, David T. Herbert",
       "relevantPathsAI": [
-        "A.2",
-        "A.1"
+        "A",
+        "A.1",
+        "A.2"
       ],
-      "rationaleAI": "Covers the physiography of continents (A.2), the distribution of land and sea (A.1), and the physical geography framework for understanding surface features."
+      "rationaleAI": "Physical geography covers relief (A), land-sea distribution (A.1), and physiography (A.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

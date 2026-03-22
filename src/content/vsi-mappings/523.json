@@ -4,53 +4,65 @@
     {
       "vsiTitle": "Sociology",
       "vsiAuthor": "Steve Bruce",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses social differentiation, stratification, class systems, status, and social mobility (outline A and B)."
+      "relevantPathsAI": [
+        "A",
+        "A.2",
+        "A.3.b",
+        "B",
+        "B.2",
+        "B.4"
+      ],
+      "rationaleAI": "Social class and stratification address the process of stratification (A.3), class, status, and power (A.3.b), theories of class (B.2), and social mobility (B.4)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
       "relevantPathsAI": [
+        "A.1",
         "A.2",
         "B.1"
       ],
-      "rationaleAI": "Examines caste systems, age and sex differentiation, and comparative approaches to social stratification across societies (outline A.2 and B.1)."
+      "rationaleAI": "Social differentiation addresses concepts of differentiation (A.1) and factors producing differences (A.2). Caste and status address B.1."
     },
     {
       "vsiTitle": "Aristocracy",
       "vsiAuthor": "William Doyle",
       "relevantPathsAI": [
+        "A.3.b",
         "B.1",
         "B.3"
       ],
-      "rationaleAI": "Directly addresses upper class, elites, feudalism, and hereditary status-based stratification (outline B.1 and B.3)."
+      "rationaleAI": "Aristocratic power addresses class, status, and power (A.3.b), class-to-elite relations (B.1), and upper class (B.3)."
     },
     {
       "vsiTitle": "Marx",
       "vsiAuthor": "Peter Singer",
       "relevantPathsAI": [
+        "A.3.a",
         "B.2",
         "B.5"
       ],
-      "rationaleAI": "Marxist theories of social class, class conflict, and the idea of a classless society are foundational to outline B.2 and B.5."
+      "rationaleAI": "Class struggle addresses economic differentiation (A.3.a), theories of class (B.2), and classless society (B.5)."
     },
     {
       "vsiTitle": "Engels",
       "vsiAuthor": "Terrell Carver",
       "relevantPathsAI": [
+        "A.3.a",
         "B.2",
-        "B.3"
+        "B.5"
       ],
-      "rationaleAI": "Engels' theories of the working class, middle class, and historical materialism provide a framework for understanding class structure (outline B.2 and B.3)."
+      "rationaleAI": "Class dynamics address economic differentiation (A.3.a), theories of class (B.2), and classless society (B.5)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
-        "A.3",
+        "A.3.a",
+        "B.2",
         "B.3"
       ],
-      "rationaleAI": "Capitalist economic relations create class stratification through ownership and production, central to outline A.3.a and B.3."
+      "rationaleAI": "Capital accumulation addresses economic differentiation (A.3.a), theories of class (B.2), and modern classes (B.3)."
     },
     {
       "vsiTitle": "Racism",
@@ -58,7 +70,7 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Racial differentiation as a factor producing social and economic inequality is central to outline A.2."
+      "rationaleAI": "Racial differentiation addresses factors producing social differences (A.2)."
     },
     {
       "vsiTitle": "Feminism",
@@ -66,7 +78,7 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Sex differentiation as a factor in social stratification and challenges to gender-based hierarchies are explored in relation to outline A.2."
+      "rationaleAI": "Gender inequality addresses sex differentiation (A.2)."
     },
     {
       "vsiTitle": "Gender History",
@@ -74,7 +86,7 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "The historical role of gender and its intersectionality with class and race illuminates patterns of social stratification (outline A.2)."
+      "rationaleAI": "Gender intersecting with class and race addresses differentiation factors (A.2)."
     },
     {
       "vsiTitle": "Hinduism",
@@ -82,7 +94,7 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "The Hindu caste system stands as a major example of social stratification and its relation to class (outline B.1)."
+      "rationaleAI": "Hindu caste system addresses class-to-caste relation (B.1)."
     },
     {
       "vsiTitle": "American Slavery",
@@ -91,7 +103,7 @@
         "A.2",
         "B.1"
       ],
-      "rationaleAI": "Slavery as an extreme form of social stratification based on race shaped mobility and inequality (outline A.2 and B.1)."
+      "rationaleAI": "Chattel slavery addresses racial differentiation (A.2) and class-to-slavery relations (B.1)."
     },
     {
       "vsiTitle": "Communism",
@@ -99,7 +111,7 @@
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "The communist pursuit of a classless society represents an alternative approach to eliminating stratification (outline B.5)."
+      "rationaleAI": "Communist ideology addresses the classless society (B.5)."
     },
     {
       "vsiTitle": "Socialism",
@@ -108,24 +120,25 @@
         "B.2",
         "B.5"
       ],
-      "rationaleAI": "Socialist theories of class relationships and visions of social equality are central to outline B.2 and B.5."
+      "rationaleAI": "Collective ownership addresses theories of class (B.2) and equality of conditions (B.5)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.c",
+        "B.5"
       ],
-      "rationaleAI": "Democratic governance relates to class, status, and power as forms of stratification (outline A.3.b)."
+      "rationaleAI": "Democracy addressing exclusion relates to effects of stratification (A.3.c) and equality (B.5)."
     },
     {
       "vsiTitle": "Tocqueville",
       "vsiAuthor": "Harvey Mansfield",
       "relevantPathsAI": [
-        "B.4",
-        "B.5"
+        "A.3.c",
+        "B.4"
       ],
-      "rationaleAI": "Tocqueville's analysis of democratic equality, social mobility, and class structure informs outline B.4 and B.5."
+      "rationaleAI": "Democratic society analysis addresses individual-society relation (A.3.c) and social mobility (B.4)."
     },
     {
       "vsiTitle": "Ideology",
@@ -133,24 +146,24 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Ideological frameworks justify or challenge systems of social stratification (outline B.2)."
+      "rationaleAI": "False consciousness provides perspectives on class importance (B.2)."
     },
     {
       "vsiTitle": "Poverty",
       "vsiAuthor": "Philip N. Jefferson",
       "relevantPathsAI": [
-        "A.3",
+        "A.3.a",
         "B.3"
       ],
-      "rationaleAI": "Economic inequality at the bottom of the stratification system, including income distribution, is central to outline A.3.a and B.3."
+      "rationaleAI": "Income distribution addresses economic differentiation (A.3.a) and modern classes (B.3)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a"
       ],
-      "rationaleAI": "Economic development has shaped wealth distribution and class formation across societies (outline A.3.a)."
+      "rationaleAI": "National wealth comparisons address economic differentiation (A.3.a)."
     },
     {
       "vsiTitle": "Social Psychology",
@@ -158,32 +171,34 @@
       "relevantPathsAI": [
         "A.3.c"
       ],
-      "rationaleAI": "Psychological effects of social differentiation on individuals -- including prejudice and group identity -- connect to outline A.3.c."
+      "rationaleAI": "Prejudice and group dynamics address individual-society relation (A.3.c)."
     },
     {
       "vsiTitle": "The Civil Rights Movement",
       "vsiAuthor": "Thomas C. Holt",
       "relevantPathsAI": [
+        "A.2",
         "B.4"
       ],
-      "rationaleAI": "Challenges to racial stratification and the pursuit of social mobility and equality are central to outline B.4."
+      "rationaleAI": "Mass mobilization addresses racial differentiation (A.2) and social mobility (B.4)."
     },
     {
       "vsiTitle": "Identity",
       "vsiAuthor": "Florian Coulmas",
       "relevantPathsAI": [
+        "A.2",
         "A.3.c"
       ],
-      "rationaleAI": "Identity intersects with class, status, and power in stratified societies (outline A.3.c)."
+      "rationaleAI": "Identity formation addresses social factors (A.2) and individual-society relation (A.3.c)."
     },
     {
       "vsiTitle": "Populism",
       "vsiAuthor": "Cas Mudde, Cristsbal Rovia Kalwasser",
       "relevantPathsAI": [
-        "A.3",
+        "A.3.b",
         "B.2"
       ],
-      "rationaleAI": "Populist challenges to elite power and class-based stratification are relevant to outline A.3.b and B.2."
+      "rationaleAI": "People versus elite addresses class, status, and power (A.3.b) and class conceptions (B.2)."
     },
     {
       "vsiTitle": "Modern India",
@@ -192,25 +207,26 @@
         "B.1",
         "B.4"
       ],
-      "rationaleAI": "Caste as a system of social stratification and positive discrimination as a form of social mobility illuminate outline B.1 and B.4."
+      "rationaleAI": "Caste dynamics address class-to-caste relation (B.1). Positive discrimination addresses social mobility (B.4)."
     },
     {
       "vsiTitle": "Revolutions",
       "vsiAuthor": "Jack A. Goldstone",
       "relevantPathsAI": [
-        "B.5"
+        "B.4"
       ],
-      "rationaleAI": "Revolutions challenge class systems and attempt to create new forms of social equality (outline B.5)."
+      "rationaleAI": "Revolutions address social mobility through revolutionary change (B.4)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "A.3",
+        "A.3.a",
         "B.3"
       ],
-      "rationaleAI": "Industrialization created new forms of class stratification including the working and middle classes (outline A.3.a and B.3)."
+      "rationaleAI": "Industrialization's class impacts address economic differentiation (A.3.a) and modern classes (B.3)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

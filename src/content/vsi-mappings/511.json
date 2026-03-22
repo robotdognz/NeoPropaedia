@@ -4,26 +4,44 @@
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
-      "relevantPathsAI": [],
-      "rationaleAI": "Ethnographic study of peoples and cultures worldwide, including fieldwork methods, provides the methodological backbone for understanding diverse societies across every region in this section."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "rationaleAI": "Anthropological study of diverse societies provides frameworks for understanding peoples across all world regions."
     },
     {
       "vsiTitle": "The Arctic",
       "vsiAuthor": "Klaus Dodds, Jamie Woodward",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses the Arctic region, its physical environment and peoples, matching outline subsection A on Arctic cultures."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Arctic region inhabitants and cultural adaptations address peoples in the eastern Arctic (A.1) and western Arctic (A.2)."
     },
     {
       "vsiTitle": "North American Indians",
       "vsiAuthor": "Theda Perdue, Michael D. Green",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces Native American peoples across the sub-Arctic, Northwest Coast, Southwest, Plains, and eastern woodlands (outline B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Indigenous peoples spanning four hundred languages address peoples in North America (B)."
     },
     {
       "vsiTitle": "Native American Literature",
       "vsiAuthor": "Sean Teuton",
-      "relevantPathsAI": [],
-      "rationaleAI": "The literary and cultural traditions of North American indigenous peoples complement the ethnographic coverage in outline B."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Indigenous literary traditions address cultural expressions of peoples in North America (B)."
     },
     {
       "vsiTitle": "The Aztecs",
@@ -31,52 +49,58 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Aztec civilization in Mesoamerica is central to outline C.2 on peoples in Mesoamerica."
+      "rationaleAI": "Aztec civilization directly addresses peoples in Mesoamerica (C.2)."
     },
     {
       "vsiTitle": "The Maya",
       "vsiAuthor": "Matthew Restall, Amara Solari",
       "relevantPathsAI": [
-        "C.2",
-        "C.3"
+        "C.2"
       ],
-      "rationaleAI": "Maya civilization across Mesoamerica and Central America shaped the cultural landscape discussed in outline C.2 and C.3."
+      "rationaleAI": "Maya civilization directly addresses peoples in Mesoamerica (C.2)."
     },
     {
       "vsiTitle": "The Conquistadors",
       "vsiAuthor": "Matthew Restall, Felipe Fernández-Armesto",
-      "relevantPathsAI": [],
-      "rationaleAI": "The encounter between European and indigenous cultures in Mesoamerica and the Andes transformed the peoples described in outline C and D."
+      "relevantPathsAI": [
+        "C.2",
+        "D.1"
+      ],
+      "rationaleAI": "Spanish conquest of Aztec and Inca empires addresses Mesoamerica (C.2) and the central and southern Andes (D.1)."
     },
     {
       "vsiTitle": "The Mexican Revolution",
       "vsiAuthor": "Alan Knight",
       "relevantPathsAI": [
-        "C.1",
         "C.2"
       ],
-      "rationaleAI": "Mexico's revolutionary period reshaped its peoples and cultures in ways directly relevant to outline C.1 and C.2."
+      "rationaleAI": "Mexico's socio-political legacy addresses peoples in Mesoamerica (C.2)."
     },
     {
       "vsiTitle": "Colonial Latin American Literature",
       "vsiAuthor": "Rolena Adorno",
-      "relevantPathsAI": [],
-      "rationaleAI": "Cultural expressions of peoples in Middle and South America during the colonial period illuminate outline C and D."
+      "relevantPathsAI": [
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Literary culture of Spanish-speaking Americas encompasses Middle America (C) and South America (D)."
     },
     {
       "vsiTitle": "Modern Brazil",
       "vsiAuthor": "Anthony W. Pereira",
-      "relevantPathsAI": [],
-      "rationaleAI": "Brazilian peoples and culture -- shaped by African, indigenous, and European influences -- are central to outline D on South America."
+      "relevantPathsAI": [
+        "D.2"
+      ],
+      "rationaleAI": "Brazil's transformation addresses peoples in the tropical forest of South America (D.2)."
     },
     {
       "vsiTitle": "The Celts",
       "vsiAuthor": "Barry Cunliffe",
       "relevantPathsAI": [
         "E.1",
-        "E.2"
+        "E.4"
       ],
-      "rationaleAI": "Celtic peoples across the Atlantic fringe and European plain are directly relevant to outline E.1 and E.2."
+      "rationaleAI": "Celtic groups across Britain and continental Europe address the Atlantic fringe (E.1) and Alpine climax (E.4)."
     },
     {
       "vsiTitle": "The Vikings",
@@ -85,7 +109,7 @@
         "E.1",
         "E.2"
       ],
-      "rationaleAI": "Norse peoples and their culture across Scandinavia and the Atlantic fringe shaped the societies described in outline E.1 and E.2."
+      "rationaleAI": "Scandinavian seafarers address the Atlantic fringe (E.1) and the plain (E.2)."
     },
     {
       "vsiTitle": "Ancient Greece",
@@ -93,7 +117,7 @@
       "relevantPathsAI": [
         "E.3"
       ],
-      "rationaleAI": "Greek peoples and culture along the Mediterranean are foundational to outline E.3."
+      "rationaleAI": "Greek civilization addresses peoples along the Mediterranean (E.3)."
     },
     {
       "vsiTitle": "The Etruscans",
@@ -101,7 +125,7 @@
       "relevantPathsAI": [
         "E.3"
       ],
-      "rationaleAI": "The Etruscan people of the Italian peninsula represent a distinctive Mediterranean civilization relevant to outline E.3."
+      "rationaleAI": "Etruscan civilization addresses peoples along the Mediterranean (E.3)."
     },
     {
       "vsiTitle": "The Spartans",
@@ -109,16 +133,16 @@
       "relevantPathsAI": [
         "E.3"
       ],
-      "rationaleAI": "Spartan society and culture exemplify a distinctive Mediterranean people, relevant to outline E.3."
+      "rationaleAI": "Spartan society addresses peoples along the Mediterranean (E.3)."
     },
     {
       "vsiTitle": "Modern France",
       "vsiAuthor": "Vanessa R. Schwartz",
       "relevantPathsAI": [
-        "E.1",
+        "E.2",
         "E.3"
       ],
-      "rationaleAI": "French culture and society span outline E.1 (Atlantic fringe) and E.3 (Mediterranean)."
+      "rationaleAI": "French history addresses peoples on the plain (E.2) and Mediterranean (E.3)."
     },
     {
       "vsiTitle": "Modern Italy",
@@ -126,7 +150,7 @@
       "relevantPathsAI": [
         "E.3"
       ],
-      "rationaleAI": "Italian culture and society are central to outline E.3 on Mediterranean peoples."
+      "rationaleAI": "Italian history addresses peoples along the Mediterranean (E.3)."
     },
     {
       "vsiTitle": "Scotland",
@@ -134,15 +158,16 @@
       "relevantPathsAI": [
         "E.1"
       ],
-      "rationaleAI": "Scottish peoples and culture belong to outline E.1 on the Atlantic fringe."
+      "rationaleAI": "Scotland's identity addresses peoples on the Atlantic fringe (E.1)."
     },
     {
       "vsiTitle": "The Habsburg Empire",
       "vsiAuthor": "Martyn Rady",
       "relevantPathsAI": [
+        "E.2",
         "E.4"
       ],
-      "rationaleAI": "The diverse peoples and cultures of Central Europe under Habsburg rule are relevant to outline E.4 on the Alpine climax."
+      "rationaleAI": "Habsburg territories address peoples on the plain (E.2) and Alpine climax (E.4)."
     },
     {
       "vsiTitle": "Ancient Egypt",
@@ -150,7 +175,7 @@
       "relevantPathsAI": [
         "F.2"
       ],
-      "rationaleAI": "Egyptian culture and people are directly relevant to outline F.2 on the Mashriq."
+      "rationaleAI": "Ancient Egypt addresses peoples in the Mashriq (F.2)."
     },
     {
       "vsiTitle": "The Ancient Near East",
@@ -158,7 +183,7 @@
       "relevantPathsAI": [
         "F.2"
       ],
-      "rationaleAI": "Mesopotamian and surrounding cultures shaped the region discussed in outline F.2 on the Mashriq."
+      "rationaleAI": "Mesopotamian civilizations address peoples in the Mashriq (F.2)."
     },
     {
       "vsiTitle": "Ancient Assyria",
@@ -166,7 +191,7 @@
       "relevantPathsAI": [
         "F.2"
       ],
-      "rationaleAI": "Assyrian civilization in the Mashriq is directly relevant to outline F.2."
+      "rationaleAI": "Assyrian empire addresses peoples in the Mashriq (F.2)."
     },
     {
       "vsiTitle": "Babylonia",
@@ -174,7 +199,7 @@
       "relevantPathsAI": [
         "F.2"
       ],
-      "rationaleAI": "Babylonian civilization in Mesopotamia shaped the cultural landscape of outline F.2 on the Mashriq."
+      "rationaleAI": "Babylonian civilization addresses peoples in the Mashriq (F.2)."
     },
     {
       "vsiTitle": "Iran",
@@ -182,23 +207,27 @@
       "relevantPathsAI": [
         "F.3"
       ],
-      "rationaleAI": "Directly addresses Iranian peoples, culture, and history, matching outline F.3 on Iran."
+      "rationaleAI": "Iranian civilization addresses peoples in Iran (F.3)."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
       "relevantPathsAI": [
-        "F.4"
+        "E.3",
+        "F.2"
       ],
-      "rationaleAI": "Byzantine culture at the crossroads of Europe, the Middle East, and Turkey is essential to outline F.4."
+      "rationaleAI": "Byzantine Empire addresses the Mediterranean (E.3) and Mashriq (F.2)."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
       "relevantPathsAI": [
-        "G.2"
+        "F",
+        "F.1",
+        "F.2",
+        "F.4"
       ],
-      "rationaleAI": "Islamic civilization across the Middle East, North Africa, and Central Asia connects to outline F and G.2."
+      "rationaleAI": "Islamic history addresses Maghrib (F.1), Mashriq (F.2), and Turkey (F.4)."
     },
     {
       "vsiTitle": "The Mongols",
@@ -206,7 +235,7 @@
       "relevantPathsAI": [
         "G.2"
       ],
-      "rationaleAI": "Mongol peoples of Central Asia and their cultural interactions across Eurasia are central to outline G.2."
+      "rationaleAI": "Mongol Empire addresses peoples in Central Asia (G.2)."
     },
     {
       "vsiTitle": "The Silk Road",
@@ -215,7 +244,7 @@
         "G.2",
         "G.3"
       ],
-      "rationaleAI": "Cultural exchange among peoples of Central Asia, East Asia, and the Middle East is fundamental to outline G.2 and G.3."
+      "rationaleAI": "Central Eurasian trade routes address Central Asia (G.2) and East Asia (G.3)."
     },
     {
       "vsiTitle": "Modern China",
@@ -223,7 +252,7 @@
       "relevantPathsAI": [
         "G.3"
       ],
-      "rationaleAI": "Chinese culture and society are directly relevant to outline G.3 on East Asia."
+      "rationaleAI": "Modern China addresses peoples in East Asia (G.3)."
     },
     {
       "vsiTitle": "Confucianism",
@@ -231,7 +260,7 @@
       "relevantPathsAI": [
         "G.3"
       ],
-      "rationaleAI": "A foundational cultural tradition shaping East Asian peoples and societies, relevant to outline G.3."
+      "rationaleAI": "Confucian tradition addresses peoples in East Asia (G.3)."
     },
     {
       "vsiTitle": "Korea",
@@ -239,7 +268,7 @@
       "relevantPathsAI": [
         "G.3"
       ],
-      "rationaleAI": "Korean culture and society are directly relevant to outline G.3 on East Asia."
+      "rationaleAI": "Korean peninsula addresses peoples in East Asia (G.3)."
     },
     {
       "vsiTitle": "Modern Japan",
@@ -247,7 +276,7 @@
       "relevantPathsAI": [
         "G.3"
       ],
-      "rationaleAI": "Japanese culture and society are directly relevant to outline G.3 on East Asia."
+      "rationaleAI": "Modern Japan addresses peoples in East Asia (G.3)."
     },
     {
       "vsiTitle": "Samurai",
@@ -255,7 +284,7 @@
       "relevantPathsAI": [
         "G.3"
       ],
-      "rationaleAI": "The samurai warrior culture represents a distinctive cultural institution of East Asia (outline G.3)."
+      "rationaleAI": "Japanese warrior class addresses peoples in East Asia (G.3)."
     },
     {
       "vsiTitle": "Modern India",
@@ -263,7 +292,7 @@
       "relevantPathsAI": [
         "G.4"
       ],
-      "rationaleAI": "Indian culture and society are directly relevant to outline G.4 on South Asia."
+      "rationaleAI": "Contemporary India addresses peoples in South Asia (G.4)."
     },
     {
       "vsiTitle": "Pakistan",
@@ -271,7 +300,7 @@
       "relevantPathsAI": [
         "G.4"
       ],
-      "rationaleAI": "Pakistani culture and society on the Indian subcontinent connect to outline G.4 on South Asia."
+      "rationaleAI": "Pakistan addresses peoples in South Asia (G.4)."
     },
     {
       "vsiTitle": "Tibetan Buddhism",
@@ -280,7 +309,7 @@
         "G.2",
         "G.4"
       ],
-      "rationaleAI": "A key cultural and religious tradition of Central and South Asian peoples, relevant to outline G.2 and G.4."
+      "rationaleAI": "Tibetan Buddhism addresses Central Asia (G.2) and South Asia (G.4)."
     },
     {
       "vsiTitle": "Southeast Asia",
@@ -288,25 +317,32 @@
       "relevantPathsAI": [
         "G.5"
       ],
-      "rationaleAI": "Directly addresses the peoples and cultures of Southeast Asia, matching outline G.5."
+      "rationaleAI": "Eleven Southeast Asian nations address peoples in Southeast Asia (G.5)."
     },
     {
       "vsiTitle": "African History",
       "vsiAuthor": "John Parker, Richard Rathbone",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces peoples and cultures of sub-Saharan Africa across the western Sudan, Guinea coast, Congo, East Africa, and southern Africa (outline H)."
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "African history addresses peoples across sub-Saharan Africa (H)."
     },
     {
       "vsiTitle": "African Religions",
       "vsiAuthor": "Jacob K. Olupona",
-      "relevantPathsAI": [],
-      "rationaleAI": "African religious cultures across the sub-Saharan regions illuminate the spiritual dimensions of outline H."
+      "relevantPathsAI": [
+        "H",
+        "H.3"
+      ],
+      "rationaleAI": "Indigenous traditions including Akan and Asante address sub-Saharan Africa (H), particularly the Guinea coast (H.3)."
     },
     {
       "vsiTitle": "African Politics",
       "vsiAuthor": "Ian Taylor",
-      "relevantPathsAI": [],
-      "rationaleAI": "Political dimensions of sub-Saharan African societies provide essential context for outline H."
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "Political systems address peoples across sub-Saharan Africa (H)."
     },
     {
       "vsiTitle": "Australia",
@@ -314,25 +350,38 @@
       "relevantPathsAI": [
         "I.1"
       ],
-      "rationaleAI": "Australian peoples including Aboriginal cultures are directly relevant to outline I.1."
+      "rationaleAI": "Australian history including Aboriginal rights addresses peoples in Australia (I.1)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
-      "relevantPathsAI": [],
-      "rationaleAI": "The earliest human cultures worldwide before written records provide deep background for peoples across all regions."
+      "relevantPathsAI": [
+        "B",
+        "D",
+        "H",
+        "I"
+      ],
+      "rationaleAI": "Prehistoric development provides deep context for peoples across multiple regions."
     },
     {
       "vsiTitle": "Human evolution",
       "vsiAuthor": "Bernard Wood",
-      "relevantPathsAI": [],
-      "rationaleAI": "The origins and dispersal of human populations across the world regions listed in this section underpin every subsection."
+      "relevantPathsAI": [
+        "H"
+      ],
+      "rationaleAI": "African origins provide context for earliest peoples in sub-Saharan Africa (H)."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
-      "relevantPathsAI": [],
-      "rationaleAI": "Encounters between European explorers and indigenous peoples across the Americas, Africa, Asia, and Oceania reshaped the cultures described throughout."
+      "relevantPathsAI": [
+        "B",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Global exploration provides cross-cultural context across multiple regions."
     },
     {
       "vsiTitle": "Russian History",
@@ -341,19 +390,29 @@
         "E.2",
         "G.1"
       ],
-      "rationaleAI": "Russian peoples and cultures across Siberia and the European plain are relevant to outline E.2 and G.1."
+      "rationaleAI": "Russian history addresses the European plain (E.2) and Siberia (G.1)."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
-      "relevantPathsAI": [],
-      "rationaleAI": "Examines the cultural legacy of colonialism on indigenous peoples across Africa, Asia, and the Americas."
+      "relevantPathsAI": [
+        "F",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Postcolonial experiences address the Middle East (F), Asia (G), and Africa (H)."
     },
     {
       "vsiTitle": "Diaspora",
       "vsiAuthor": "Kevin Kenny",
-      "relevantPathsAI": [],
-      "rationaleAI": "The dispersal and cultural maintenance of peoples across world regions through migration and exile are central to understanding modern demographics."
+      "relevantPathsAI": [
+        "B",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Migration and transnational identity address dispersed peoples across regions."
     },
     {
       "vsiTitle": "Rastafari",
@@ -361,21 +420,25 @@
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Rastafari as a Caribbean cultural and religious movement is relevant to outline C.4 on the Caribbean."
+      "rationaleAI": "Rastafari originating in Jamaica addresses the Caribbean (C.4)."
     },
     {
       "vsiTitle": "Jewish History",
       "vsiAuthor": "David N. Myers",
-      "relevantPathsAI": [],
-      "rationaleAI": "The history and culture of the Jewish people span multiple world regions covered in this section."
+      "relevantPathsAI": [
+        "E",
+        "F.2"
+      ],
+      "rationaleAI": "Jewish diaspora addresses Europe (E) and the Mashriq (F.2)."
     },
     {
       "vsiTitle": "Late Antiquity",
       "vsiAuthor": "Gillian Clark",
       "relevantPathsAI": [
-        "E.3"
+        "E.3",
+        "F.2"
       ],
-      "rationaleAI": "The cultural transformation of Mediterranean and Middle Eastern peoples in the late Roman period connects to outline E.3 and F."
+      "rationaleAI": "Period 300-800 CE addresses the Mediterranean (E.3) and Mashriq (F.2)."
     },
     {
       "vsiTitle": "The Holy Roman Empire",
@@ -384,13 +447,15 @@
         "E.2",
         "E.4"
       ],
-      "rationaleAI": "The diverse peoples of Central Europe under the Holy Roman Empire are relevant to outline E.2 and E.4."
+      "rationaleAI": "Central European empire addresses the plain (E.2) and Alpine climax (E.4)."
     },
     {
       "vsiTitle": "African American History",
       "vsiAuthor": "Jonathan Scott Holloway",
-      "relevantPathsAI": [],
-      "rationaleAI": "The cultural development of African Americans is relevant to outline B on North American peoples."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "African American history addresses North America (B)."
     },
     {
       "vsiTitle": "The American South",
@@ -398,46 +463,70 @@
       "relevantPathsAI": [
         "B.9"
       ],
-      "rationaleAI": "The distinctive peoples and cultures of the southeastern United States connect to outline B.9."
+      "rationaleAI": "The American South addresses the Southeast (B.9)."
     },
     {
       "vsiTitle": "The American West",
       "vsiAuthor": "Stephen Aron",
       "relevantPathsAI": [
+        "B.4",
         "B.5",
+        "B.6",
         "B.7"
       ],
-      "rationaleAI": "Peoples and cultures of western North America including the Plains, Great Basin, and Southwest are central to outline B.5-B.7."
+      "rationaleAI": "The American West addresses the Plateau (B.4), Great Basin (B.5), Southwest (B.6), and Plains (B.7)."
     },
     {
       "vsiTitle": "Asian American History",
       "vsiAuthor": "Madeline Y. Hsu",
-      "relevantPathsAI": [],
-      "rationaleAI": "Asian diaspora cultures in North America enrich the understanding of multicultural peoples in the region (outline B)."
+      "relevantPathsAI": [
+        "B"
+      ],
+      "rationaleAI": "Asian American communities address North America (B)."
     },
     {
       "vsiTitle": "Canada",
       "vsiAuthor": "Donald Wright",
-      "relevantPathsAI": [],
-      "rationaleAI": "Canadian peoples and cultures including indigenous communities are relevant to outline B on North America."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Canadian history addresses the sub-Arctic (B.1)."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
-      "relevantPathsAI": [],
-      "rationaleAI": "The reassertion of indigenous cultures during the end of colonial rule transformed societies across Africa, Asia, and Oceania."
+      "relevantPathsAI": [
+        "F",
+        "G",
+        "H"
+      ],
+      "rationaleAI": "Decolonization addresses the Middle East (F), Asia (G), and Africa (H)."
     },
     {
       "vsiTitle": "Ethnomusicology",
       "vsiAuthor": "Timothy Rice",
-      "relevantPathsAI": [],
-      "rationaleAI": "Musical cultures of peoples worldwide offer a cross-cultural perspective on the diverse regions covered in this section."
+      "relevantPathsAI": [
+        "B",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "rationaleAI": "Music across geographic diversity provides cultural understanding across regions."
     },
     {
       "vsiTitle": "World Mythology",
       "vsiAuthor": "David A. Leeming",
-      "relevantPathsAI": [],
-      "rationaleAI": "Mythological traditions across cultures worldwide illustrate shared and distinctive features of peoples in all regions."
+      "relevantPathsAI": [
+        "B",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "rationaleAI": "Comparative mythology addresses cultural expressions across regions."
     },
     {
       "vsiTitle": "Indian Cinema",
@@ -445,8 +534,9 @@
       "relevantPathsAI": [
         "G.4"
       ],
-      "rationaleAI": "A major cultural form of South Asian peoples reflecting diverse Indian cultures, relevant to outline G.4."
+      "rationaleAI": "Indian cinema addresses peoples in South Asia (G.4)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

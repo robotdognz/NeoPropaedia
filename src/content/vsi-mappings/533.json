@@ -5,88 +5,114 @@
       "vsiTitle": "Microeconomics",
       "vsiAuthor": "Avinash Dixit",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.2"
+        "A.2",
+        "B",
+        "C.1"
       ],
-      "rationaleAI": "Production functions, cost analysis, marginal cost, and profit maximization are central to output analysis (A.1, A.2)."
+      "rationaleAI": "Cost analysis addresses production costs in short run (A.1) and long run (A.2). Market structures address distribution (B). Labour markets address labour input (C.1)."
     },
     {
       "vsiTitle": "Economics",
       "vsiAuthor": "Partha Dasgupta",
-      "relevantPathsAI": [],
-      "rationaleAI": "The productive process, division of labour, human capital, and the relationship between production and income are foundational to outline A and B."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D.1",
+        "F"
+      ],
+      "rationaleAI": "Resource allocation addresses production (A) and distribution (B). Division of labour addresses inputs (C). Market structures address money (D.1). International trade connects to F."
     },
     {
       "vsiTitle": "Work",
       "vsiAuthor": "Stephen Fineman",
       "relevantPathsAI": [
-        "C.1"
+        "C.1",
+        "C.1.a",
+        "C.1.e"
       ],
-      "rationaleAI": "Labour as a productive input -- workforce deployment, job satisfaction, employment, and the meaning of work -- connects to outline C.1."
+      "rationaleAI": "Work addresses labour input (C.1), workforce deployment (C.1.a), and employment (C.1.e)."
     },
     {
       "vsiTitle": "Human Resource Management",
       "vsiAuthor": "Adrian Wilkinson",
       "relevantPathsAI": [
-        "H.3"
+        "H.3",
+        "H.3.b",
+        "H.3.c",
+        "H.3.d"
       ],
-      "rationaleAI": "Personnel administration, recruitment, employee development, and managing human resources in organizations connect to H.3."
+      "rationaleAI": "HR practices address personnel administration (H.3), recruitment (H.3.b), training (H.3.c), and incentive (H.3.d)."
     },
     {
       "vsiTitle": "Employment Law",
       "vsiAuthor": "David Cabrelli",
       "relevantPathsAI": [
-        "C.1",
+        "C.1.b",
         "C.1.c"
       ],
-      "rationaleAI": "The legal framework for labour -- employment rights, equal pay, and workplace regulation -- is central to C.1.b and C.1.c."
+      "rationaleAI": "Employment rights address pay rates (C.1.b) and pay structure (C.1.c)."
     },
     {
       "vsiTitle": "Management",
       "vsiAuthor": "John Hendry",
       "relevantPathsAI": [
-        "H.4",
-        "C.1"
+        "C.1.j",
+        "H.3"
       ],
-      "rationaleAI": "Business administration, production control, motivation, and managerial functions are central to H.4 and C.1.j."
+      "rationaleAI": "Management theory addresses managers and entrepreneurs (C.1.j) and human resources (H.3)."
     },
     {
       "vsiTitle": "Entrepreneurship",
       "vsiAuthor": "Paul Westhead, Mike Wright",
       "relevantPathsAI": [
-        "C.1"
+        "C.1.j"
       ],
-      "rationaleAI": "The economic role of entrepreneurs in organizing production and creating business ventures connects to C.1.j."
+      "rationaleAI": "Entrepreneurial processes address managers and entrepreneurs (C.1.j)."
     },
     {
       "vsiTitle": "Organizations",
       "vsiAuthor": "Mary Jo Hatch",
-      "relevantPathsAI": [],
-      "rationaleAI": "Business organizations structure production, manage supply chains, and handle outsourcing (H, D)."
+      "relevantPathsAI": [
+        "D.4",
+        "H.4"
+      ],
+      "rationaleAI": "Organizational analysis addresses the business corporation (D.4) and production control (H.4)."
     },
     {
       "vsiTitle": "Banking",
       "vsiAuthor": "John O. S. Wilson, John Goddard",
       "relevantPathsAI": [
-        "D.2"
+        "D.2",
+        "D.2.a",
+        "D.2.b",
+        "D.2.c",
+        "D.2.d"
       ],
-      "rationaleAI": "Commercial and central banking, monetary policy, money markets, and the financial system connect to D.2."
+      "rationaleAI": "Banking addresses banking development (D.2.a), modern structures (D.2.b), commercial banking (D.2.c), and central banking (D.2.d)."
     },
     {
       "vsiTitle": "Accounting",
       "vsiAuthor": "Christopher Nobes",
       "relevantPathsAI": [
-        "H.1"
+        "H.1",
+        "H.1.a",
+        "H.1.b",
+        "H.1.c"
       ],
-      "rationaleAI": "Directly addresses financial accounting, balance sheets, cost accounting, and accounting standards (H.1)."
+      "rationaleAI": "Accounting addresses keeping accounts (H.1), information systems (H.1.a), financial statements (H.1.b), and measurement (H.1.c)."
     },
     {
       "vsiTitle": "Mathematical finance",
       "vsiAuthor": "Mark H. A. Davis",
       "relevantPathsAI": [
-        "D.2"
+        "D.2.e",
+        "D.2.g",
+        "H.2.b"
       ],
-      "rationaleAI": "Securities pricing, interest rates, and long-term financial markets connect to D.2.g."
+      "rationaleAI": "Asset valuation addresses the money market (D.2.e) and long-term funds (D.2.g). Capital structure relates to long-term operations (H.2.b)."
     },
     {
       "vsiTitle": "Energy Systems",
@@ -94,7 +120,7 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Energy as an input in production -- fossil fuels, nuclear, and renewable sources -- is central to C.3."
+      "rationaleAI": "Energy conversion addresses energy as input (C.3)."
     },
     {
       "vsiTitle": "Renewable Energy",
@@ -102,51 +128,64 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Renewable energy technologies as productive inputs -- solar, wind, and batteries -- connect to C.3."
+      "rationaleAI": "Renewable energy addresses energy as input (C.3)."
     },
     {
       "vsiTitle": "Agriculture",
       "vsiAuthor": "Paul Brassley, Richard Soffe",
       "relevantPathsAI": [
-        "E"
+        "E",
+        "E.4",
+        "E.5"
       ],
-      "rationaleAI": "Directly addresses agricultural economics, farming organization, technology's effect on crops, and farm types (E)."
+      "rationaleAI": "Agricultural science addresses agricultural economics (E), technology effects (E.4), and farming organization (E.5)."
     },
     {
       "vsiTitle": "Advertising",
       "vsiAuthor": "Winston Fletcher",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses advertising methods, market research, and media channels for product promotion (I)."
+      "relevantPathsAI": [
+        "I"
+      ],
+      "rationaleAI": "Advertising industry addresses advertising (I)."
     },
     {
       "vsiTitle": "Marketing",
       "vsiAuthor": "Kenneth Le Meunier-FitzHugh",
       "relevantPathsAI": [
-        "H.5"
+        "H.5",
+        "H.5.a",
+        "H.5.e"
       ],
-      "rationaleAI": "Marketing department functions, competitive advantage, and customer-facing distribution connect to H.5."
+      "rationaleAI": "Marketing addresses distribution (H.5), marketing departments (H.5.a), and market research (H.5.e)."
     },
     {
       "vsiTitle": "The World Trade Organization",
       "vsiAuthor": "Amrita Narlikar",
       "relevantPathsAI": [
+        "F",
+        "F.1",
+        "F.2.a",
         "F.3"
       ],
-      "rationaleAI": "International trade arrangements, tariffs, and the regulatory framework for global commerce connect to F.3."
+      "rationaleAI": "WTO addresses trade theories (F.1), tariffs (F.2.a), and trade arrangements (F.3)."
     },
     {
       "vsiTitle": "Taxation",
       "vsiAuthor": "Stephen Smith",
       "relevantPathsAI": [
-        "G.1"
+        "G.1",
+        "G.2",
+        "G.3"
       ],
-      "rationaleAI": "Taxation in the budgetary process and the government's role in production and distribution connect to G.1."
+      "rationaleAI": "Tax economics addresses taxation in budgets (G.1), government resources (G.2), and spending growth (G.3)."
     },
     {
       "vsiTitle": "Risk",
       "vsiAuthor": "Baruch Fischhoff, John Kadvany",
-      "relevantPathsAI": [],
-      "rationaleAI": "Risk analysis, cost-benefit analysis, and risk assessment are relevant to insurance and risk distribution (J)."
+      "relevantPathsAI": [
+        "J"
+      ],
+      "rationaleAI": "Risk analysis addresses distribution of risk (J)."
     },
     {
       "vsiTitle": "Statistics",
@@ -154,61 +193,68 @@
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Statistical methods -- estimation, sampling, and data analysis -- are used in economic forecasting (D.3)."
+      "rationaleAI": "Statistical methods address economic statistics (D.3)."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
       "relevantPathsAI": [
-        "E.4"
+        "C.1.j",
+        "D.4"
       ],
-      "rationaleAI": "Technological innovation, intellectual property, and creative destruction transform production processes (A, E.4)."
+      "rationaleAI": "Innovation addresses entrepreneurs (C.1.j) and the business corporation (D.4)."
     },
     {
       "vsiTitle": "Intellectual property",
       "vsiAuthor": "Siva Vaidhyanathan",
       "relevantPathsAI": [
-        "D"
+        "F.2.a"
       ],
-      "rationaleAI": "Patents, copyrights, and trademarks serve as institutional arrangements that facilitate production (D)."
+      "rationaleAI": "IP law connects to trade-related intellectual property (F.2.a)."
     },
     {
       "vsiTitle": "Competition and Antitrust Law",
       "vsiAuthor": "Ariel Ezrachi",
       "relevantPathsAI": [
-        "H.2.c"
+        "F.2.a"
       ],
-      "rationaleAI": "Regulation of mergers, cartels, and competitive practices in business consolidation connects to H.2.c and G."
+      "rationaleAI": "Competition law addresses factors influencing trade (F.2.a)."
     },
     {
       "vsiTitle": "Globalization",
       "vsiAuthor": "Manfred Steger",
-      "relevantPathsAI": [],
-      "rationaleAI": "International trade, global distribution of resources, and factors influencing cross-border commerce are relevant to outline F."
+      "relevantPathsAI": [
+        "F"
+      ],
+      "rationaleAI": "Global trade addresses geographical distribution of resources (F)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "E.4"
+        "C.1.a",
+        "C.4",
+        "F.2.b"
       ],
-      "rationaleAI": "The historical transformation of production methods, technology, and industrial organization is foundational to outline A and E.4."
+      "rationaleAI": "Industrialization addresses labour force (C.1.a), capital (C.4), and production conditions (F.2.b)."
     },
     {
       "vsiTitle": "Keynes",
       "vsiAuthor": "Robert Skidelsky",
       "relevantPathsAI": [
-        "D.1"
+        "D.1",
+        "D.2.f"
       ],
-      "rationaleAI": "Keynesian monetary theory, the quantity theory of money, and government fiscal roles in production connect to D.1 and G."
+      "rationaleAI": "Monetary thought addresses money (D.1) and international monetary institutions (D.2.f)."
     },
     {
       "vsiTitle": "Adam Smith",
       "vsiAuthor": "Christopher J. Berry",
       "relevantPathsAI": [
+        "D.1.a",
         "F.1"
       ],
-      "rationaleAI": "Smith's foundational theories of trade, production, and the government's role in the economy connect to F.1 and G."
+      "rationaleAI": "Smith's economic thought addresses money functions (D.1.a) and trade theories (F.1)."
     },
     {
       "vsiTitle": "Projects",
@@ -216,24 +262,27 @@
       "relevantPathsAI": [
         "H.4"
       ],
-      "rationaleAI": "Project management, production scheduling, and risk management in organized business activities connect to H.4."
+      "rationaleAI": "Project management addresses production administration (H.4)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
-        "C.4"
+        "D.1",
+        "D.4"
       ],
-      "rationaleAI": "Capital as a productive input and the business corporation as an institutional arrangement are central to C.4 and H."
+      "rationaleAI": "Capital markets address money (D.1) and the business corporation (D.4)."
     },
     {
       "vsiTitle": "Corporate social responsibility",
       "vsiAuthor": "Jeremy Moon",
       "relevantPathsAI": [
-        "C.1"
+        "D.4",
+        "H.3"
       ],
-      "rationaleAI": "Corporate governance, business ethics, and stakeholder accountability are relevant to C.1.j (corporate organization) and the social responsibilities of business enterprises."
+      "rationaleAI": "CSR addresses the business corporation (D.4) and human resources (H.3)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

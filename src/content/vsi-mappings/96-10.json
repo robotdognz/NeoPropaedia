@@ -5,41 +5,51 @@
       "vsiTitle": "Modern China",
       "vsiAuthor": "Rana Mitter",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "A.1",
+        "A.2",
+        "A.2.d"
       ],
-      "rationaleAI": "Directly covers China from the Opium War through the 1911 Revolution, including Western challenges and the Republican movement (A)."
+      "rationaleAI": "Modern China addresses the Western challenge (A.1), westernization versus tradition (A.2), and revolutionary movements (A.2.d)."
     },
     {
       "vsiTitle": "Modern Japan",
       "vsiAuthor": "Christopher Goto-Jones",
       "relevantPathsAI": [
-        "B"
+        "B",
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.1.c"
       ],
-      "rationaleAI": "Directly covers the Meiji Restoration and Japan's modernization, including abolition of feudalism and emergence as a world power (B)."
+      "rationaleAI": "Modern Japan addresses the Meiji Restoration (B.1.a), modernization (B.1.b), and Meiji politics (B.1.c)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Western imperialism in China (opium trade, treaty ports, foreign concessions) and Japan's emergence as an imperial power are central themes (A-B)."
+      "relevantPathsAI": [
+        "A.1",
+        "A.2.b"
+      ],
+      "rationaleAI": "Imperial expansion connects to Western penetration (A.1) and foreign encroachments (A.2.b)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
       "relevantPathsAI": [
-        "A.2",
-        "B.1"
+        "A.2.d",
+        "B.1.b"
       ],
-      "rationaleAI": "Chinese reform and revolutionary movements and Japanese national loyalties during the Meiji era illustrate the rise of Asian nationalism (A.2, B.1.b)."
+      "rationaleAI": "Nationalism connects to Chinese revolutionary movements (A.2.d) and Japanese national loyalties (B.1.b)."
     },
     {
       "vsiTitle": "Revolutions",
       "vsiAuthor": "Jack A. Goldstone",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A.2.d",
+        "A.2.d.ii"
       ],
-      "rationaleAI": "The Taiping and Nien rebellions, peasant uprisings, and the 1911 Revolution represent major revolutionary movements (A.1.b, A.2.d)."
+      "rationaleAI": "Revolutionary theory connects to reformist movements (A.2.d) and the 1911 Revolution (A.2.d.ii)."
     },
     {
       "vsiTitle": "Confucianism",
@@ -47,77 +57,74 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "The contending forces of Chinese tradition versus westernization reflect the ongoing influence of Confucian values in late Qing society (A.2)."
+      "rationaleAI": "Confucianism's relationship with Western ideas connects to westernization tensions (A.2)."
     },
     {
       "vsiTitle": "Samurai",
       "vsiAuthor": "Michael Wert",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.a"
       ],
-      "rationaleAI": "The fall of the Tokugawa, samurai opposition to the Meiji government, and the abolition of feudalism directly involved the samurai class (B.1.a)."
+      "rationaleAI": "Samurai dissolution connects to the Tokugawa fall (B.1.a)."
     },
     {
       "vsiTitle": "Korea",
       "vsiAuthor": "Michael J. Seth",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b"
       ],
-      "rationaleAI": "Korea is explicitly discussed as a factor in the Sino-Japanese War of 1894-95 (A.2.b)."
+      "rationaleAI": "Korea connects to the Sino-Japanese War (A.2.b)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "A.2",
-        "B.1"
+        "A.2.a.ii",
+        "B.1.b"
       ],
-      "rationaleAI": "Japan's rapid industrialization during the Meiji era and China's self-strengthening movement connect to the global spread of industrialization (A.2.a.ii, B.1.b)."
+      "rationaleAI": "Industrialization connects to Chinese self-strengthening (A.2.a.ii) and Japanese modernization (B.1.b)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
-        "A.1",
-        "B.1"
+        "B.1.b"
       ],
-      "rationaleAI": "Japan's development of zaibatsu cartels and China's struggles with Western commercial penetration reflect the spread of capitalism in Asia (A.1, B.1.b)."
+      "rationaleAI": "Capitalist systems connect to Japanese zaibatsu (B.1.b)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
       "relevantPathsAI": [
-        "A.2",
+        "A.2.d.i",
         "B.1.c"
       ],
-      "rationaleAI": "Constitutional movements in China after 1905 and Japan's creation of political parties and development of representative institutions involve democratic ideals (A.2.d.i, B.1.c)."
+      "rationaleAI": "Democracy connects to Chinese constitutional movements (A.2.d.i) and Meiji institutions (B.1.c)."
     },
     {
       "vsiTitle": "Globalization",
       "vsiAuthor": "Manfred Steger",
       "relevantPathsAI": [
-        "A.1",
-        "B.1"
+        "A.1"
       ],
-      "rationaleAI": "The forced opening of China to Western trade and Japan's rapid integration into the global economy illustrate early globalization (A.1, B.1.b)."
+      "rationaleAI": "Global integration connects to the collapse of the tributary system (A.1)."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A.2.b"
       ],
-      "rationaleAI": "The collapse of the Chinese tributary system, Western demands for trade advantages, and the Sino-Japanese War involve diplomatic history (A.1-A.2)."
+      "rationaleAI": "Diplomatic relations connect to Chinese diplomatic hesitancy (A.2.b)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
         "A.1",
-        "B.1"
+        "B.1.b"
       ],
-      "rationaleAI": "The opium trade, Western commercial privileges, and Japan's economic modernization connect to global economic patterns (A.1, B.1.b)."
+      "rationaleAI": "Economic development connects to China's challenges (A.1) and Japan's modernization (B.1.b)."
     },
     {
       "vsiTitle": "Mao",
@@ -128,5 +135,6 @@
       "rationaleAI": "Sun Yat-sen's United League and the 1911 Revolution provide essential historical context for understanding Mao's later rise (A.2.d)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

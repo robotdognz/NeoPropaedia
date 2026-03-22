@@ -4,41 +4,49 @@
     {
       "vsiTitle": "Measurement",
       "vsiAuthor": "David J. Hand",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly addresses A (theory of measurement), B (units and standards including SI), and C (principles of measuring instruments)."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Theory and practice of measurement covering mathematical frameworks, SI units, accuracy, and precision directly addresses theory of measurement (A), units and standards (B), principles of instrument operation (C), and common measuring instruments (D)."
     },
     {
       "vsiTitle": "Microscopy",
       "vsiAuthor": "Terence Allen",
       "relevantPathsAI": [
-        "E.1"
+        "E.1.a"
       ],
-      "rationaleAI": "Directly addresses E.1.a (microscopes: optical, electron, acoustic, and scanning tunneling types)."
+      "rationaleAI": "Light microscopy, electron microscopy, transmission microscopy, scanning tunnelling microscopy, and atomic force microscopy directly address microscopes of optical, electron, and acoustic types (E.1.a)."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
       "relevantPathsAI": [
-        "E.1"
+        "E.1.b"
       ],
-      "rationaleAI": "Directly addresses E.1.b (telescopes: optical, radio, infrared, ultraviolet, X-ray, and gamma-ray systems)."
+      "rationaleAI": "Optical and electromagnetic telescope design from Galileo to space-based observatories including infrared, ultraviolet, X-ray, and gamma-ray systems directly addresses telescopes (E.1.b)."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
       "relevantPathsAI": [
         "D.2.c",
+        "D.2.c.i",
+        "D.2.c.ii",
         "G.7"
       ],
-      "rationaleAI": "Traces the development of compasses and surveying instruments (D.2.c) alongside navigational techniques and devices (G.7)."
+      "rationaleAI": "Navigational instruments including magnetic compasses (D.2.c.i), astrolabes and sextants (D.2.c.ii), and chronometers directly address instruments for measuring position and navigational techniques (G.7)."
     },
     {
       "vsiTitle": "The History of Astronomy",
       "vsiAuthor": "Michael Hoskin",
       "relevantPathsAI": [
+        "E.1.b",
         "G.6"
       ],
-      "rationaleAI": "Traces the evolution of astronomical observations (G.6) and the historical development of observational instruments from antiquity onward."
+      "rationaleAI": "History of Western astronomy covering observational and instrumental developments from Tycho Brahe's instruments to post-WWII technology addresses telescopes (E.1.b) and astronomical observations (G.6)."
     },
     {
       "vsiTitle": "Particle physics",
@@ -47,43 +55,46 @@
         "F.3",
         "F.7"
       ],
-      "rationaleAI": "Examines particle accelerators -- cyclotrons, synchrotrons, and colliding-beam storage rings (F.3) -- along with particle detectors (F.7)."
+      "rationaleAI": "Experimental discoveries using particle accelerators at facilities like the Large Hadron Collider relate to particle accelerators (F.3) and particle detectors (F.7)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
       "relevantPathsAI": [
-        "D.2",
+        "D.2.f",
         "F.4"
       ],
-      "rationaleAI": "Explores instruments for measuring ionizing radiation such as Geiger counters and scintillation counters (D.2.f), as well as mass spectrometers (F.4)."
+      "rationaleAI": "Mass spectrometry and synchrotron radiation techniques for measuring radioisotopes connect to instruments for measuring ionizing radiation (D.2.f) and mass spectrometers (F.4)."
     },
     {
       "vsiTitle": "Geophysics",
       "vsiAuthor": "William Lowrie",
       "relevantPathsAI": [
-        "D.2",
+        "D.2.d",
         "F.6",
         "G.1"
       ],
-      "rationaleAI": "Examines gravimeters (D.2.d), seismographs (F.6), and surveying methods (G.1) through the lens of geophysical measurement techniques."
+      "rationaleAI": "Seismic wave analysis, satellite-based gravity and magnetic field measurement, and GPS technology connect to instruments for measuring gravity (D.2.d), seismographs (F.6), and surveying (G.1)."
     },
     {
       "vsiTitle": "Weather",
       "vsiAuthor": "Storm Dunlop",
       "relevantPathsAI": [
+        "D.2.a",
+        "D.1.d",
         "G.5"
       ],
-      "rationaleAI": "Addresses meteorological measurement (G.5) including barometers, thermometers, and the instruments used in modern weather forecasting."
+      "rationaleAI": "Atmospheric measurement of temperature, pressure, and humidity connects to barometers and manometers (D.2.a), thermometers (D.1.d), and meteorological measurement (G.5)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
       "relevantPathsAI": [
-        "D.1",
-        "D.2"
+        "D.1.f",
+        "E.1.c",
+        "E.1.d"
       ],
-      "rationaleAI": "Explores photometers and light meters (D.1.f) alongside polarimeters and refractometers (D.2.e) for optical measurements."
+      "rationaleAI": "Physics of light covering electromagnetic radiation measurement, lasers, and optical technologies connects to photometers and light meters (D.1.f), spectroscopes (E.1.c), and interferometers (E.1.d)."
     },
     {
       "vsiTitle": "Crystallography",
@@ -91,16 +102,16 @@
       "relevantPathsAI": [
         "E.1.c"
       ],
-      "rationaleAI": "Examines spectroscopes, spectrographs, and interferometers (E.1.c-d) as well as diffraction-based scientific instruments."
+      "rationaleAI": "X-ray, electron, and neutron diffraction techniques for determining crystal structures connect to spectroscopes and spectrographs (E.1.c) as instruments for observing atomic-level phenomena."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
       "relevantPathsAI": [
-        "F.4",
-        "D.2"
+        "D.2.f",
+        "F.4"
       ],
-      "rationaleAI": "Isotopic analysis relies on mass spectrometers (F.4) and radiation measurement instruments (D.2.f), both central to scientific research."
+      "rationaleAI": "Isotope ratio measurement techniques and radioactive decay analysis connect to instruments for measuring ionizing radiation (D.2.f) and mass spectrometers (F.4)."
     },
     {
       "vsiTitle": "The Computer",
@@ -108,7 +119,7 @@
       "relevantPathsAI": [
         "H"
       ],
-      "rationaleAI": "Addresses instrumentation and control systems (H) that automatically actuate control devices and record measurements."
+      "rationaleAI": "Computing technology covering data processing, embedded processors, and network communication relates to instrumentation and control systems (H) through computerized measurement and control."
     },
     {
       "vsiTitle": "Photography",
@@ -116,7 +127,7 @@
       "relevantPathsAI": [
         "E.2"
       ],
-      "rationaleAI": "Cameras are explicitly listed under E.2 (instruments for recording phenomena), making this a direct match."
+      "rationaleAI": "Photography from daguerreotype origins through digital-era imaging connects to cameras as instruments for recording phenomena (E.2)."
     },
     {
       "vsiTitle": "The History of Time",
@@ -125,34 +136,34 @@
         "B.2",
         "D.1.c"
       ],
-      "rationaleAI": "Traces standards and techniques for time measurement (B.2) and the evolution of mechanical, electric, and atomic clocks (D.1.c)."
+      "rationaleAI": "History of timekeeping from ancient civilizations to modernity covering calendar systems and standardization addresses standards and techniques for measurement of time (B.2) and devices for measuring time (D.1.c)."
     },
     {
       "vsiTitle": "Statistics",
       "vsiAuthor": "David J. Hand",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "C"
       ],
-      "rationaleAI": "Statistical methods underpin the quantitative analysis central to measurement theory (A) and the rigorous evaluation of measurement data."
+      "rationaleAI": "Statistical methodology covering probability, estimation, and experimental design provides mathematical foundations for measurement theory (A) and the principles by which measuring instruments operate (C)."
     },
     {
       "vsiTitle": "Oceans",
       "vsiAuthor": "Dorrik Stow",
       "relevantPathsAI": [
-        "G.3",
         "G.4"
       ],
-      "rationaleAI": "Explores hydrographic charting (G.3) and oceanographic measurement systems (G.4) used to study the marine environment."
+      "rationaleAI": "Ocean science covering physical processes, seafloor topography, and tectonic processes relates to oceanographic measurement (G.4)."
     },
     {
       "vsiTitle": "Applied mathematics",
       "vsiAuthor": "Alain Goriely",
       "relevantPathsAI": [
-        "A",
-        "H.2"
+        "A"
       ],
-      "rationaleAI": "Provides the mathematical foundations for measurement theory (A), control systems (H.2), and instrument calibration."
+      "rationaleAI": "Mathematical modeling and data analysis methods used across sciences provide the mathematical frameworks underlying measurement theory (A)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

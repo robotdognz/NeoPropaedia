@@ -5,106 +5,116 @@
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
       "relevantPathsAI": [
-        "C.4",
-        "F.2",
-        "G.1"
+        "A",
+        "B",
+        "D"
       ],
-      "rationaleAI": "Provides the engineering foundations underlying automobile design (C.4), ship architecture (F.2), and aircraft configuration (G.1)."
+      "rationaleAI": "Engineering covering infrastructure including roads and railways connects to the history of transportation (A), roads and highway construction (B), and rail transportation (D)."
     },
     {
       "vsiTitle": "Civil engineering",
       "vsiAuthor": "David Muir Wood",
       "relevantPathsAI": [
-        "A.4",
-        "B",
-        "F.3"
+        "A.4.a",
+        "A.5.a",
+        "B"
       ],
-      "rationaleAI": "Addresses the infrastructure that transportation depends on: roads and highways (B), railroad bridges and tunnels (A.4.a), and canals and inland waterways (F.3)."
+      "rationaleAI": "Civil engineering covering bridges and tunnels connects to railroad construction including bridges and tunnels (A.4.a), road vehicles and bridges (A.5.a), and roads and highways (B)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "A.4"
+        "A.4",
+        "A.4.a",
+        "D"
       ],
-      "rationaleAI": "Traces how steam power transformed transportation, from Stephenson's early locomotives and the spread of railways to the first ocean-crossing steamships (A.4)."
+      "rationaleAI": "Steam power innovations by Newcomen and Watt directly address steam transportation (A.4), the first locomotives and spread of railways (A.4.a), and rail transportation (D)."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
       "relevantPathsAI": [
-        "F",
-        "G"
+        "A.3",
+        "F"
       ],
-      "rationaleAI": "Navigational science is inseparable from water (F) and air (G) transportation, and this volume explains the instruments and methods that made long-distance travel possible."
+      "rationaleAI": "Maritime navigation covering compasses, astrolabes, sextants, and chart production connects to the history of sails and shipping (A.3) and water transportation (F)."
     },
     {
       "vsiTitle": "Fluid Mechanics",
       "vsiAuthor": "Eric Lauga",
       "relevantPathsAI": [
-        "F.2",
+        "F.2.a",
         "G.1"
       ],
-      "rationaleAI": "The physics of fluid flow governs both ship hull design (F.2.a, hydrodynamic and hydrostatic factors) and aircraft flight characteristics (G.1)."
+      "rationaleAI": "Fluid dynamics and hydrodynamics including aeroplanes connect to ship design hydrodynamics (F.2.a) and aircraft flight characteristics (G.1)."
     },
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
       "relevantPathsAI": [
+        "C.4",
         "F.2.c"
       ],
-      "rationaleAI": "Examines the propulsion technologies—steam generators, internal-combustion engines, gas turbines, and nuclear reactors—that power ships and other vehicles (F.2.c)."
+      "rationaleAI": "Energy systems for transport including electrification and hydrogen connect to automobiles (C.4) and power units for ship propulsion (F.2.c)."
     },
     {
       "vsiTitle": "Structural engineering",
       "vsiAuthor": "David Blockley",
       "relevantPathsAI": [
-        "A.4",
-        "A.5",
-        "F.4"
+        "A.4.a",
+        "A.5.a",
+        "F.2",
+        "G.1.b"
       ],
-      "rationaleAI": "Bridges, tunnels, and harbour structures are essential transportation infrastructure, directly relevant to A.4.a (railroad bridges and tunnels), A.5.a (road bridges), and F.4 (harbour works)."
+      "rationaleAI": "Structural engineering covering bridges, ships, and aircraft addresses railroad bridge construction (A.4.a), road bridge construction (A.5.a), ship design and construction (F.2), and aircraft configuration (G.1.b)."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
       "relevantPathsAI": [
-        "A.3"
+        "A",
+        "A.3",
+        "F",
+        "G.4"
       ],
-      "rationaleAI": "Exploration drove the earliest advances in shipping, from sails and oars (A.3) through the voyages that expanded maritime technology worldwide."
+      "rationaleAI": "History of global exploration from Portuguese navigation to space exploration covers transportation history (A), maritime voyages (A.3), water transportation (F), and space travel (G.4)."
     },
     {
       "vsiTitle": "Aerial Warfare",
       "vsiAuthor": "Frank Ledwidge",
       "relevantPathsAI": [
-        "G.1"
+        "G",
+        "G.1.b"
       ],
-      "rationaleAI": "Military aviation accelerated fixed-wing aircraft development, tracing the arc from the Wright brothers' first flights to modern heavier-than-air craft (G.1.b)."
+      "rationaleAI": "Air power development covering technological evolution in aircraft connects to air transportation (G) and heavier-than-air craft (G.1.b)."
     },
     {
       "vsiTitle": "American Naval History",
       "vsiAuthor": "Craig L. Symonds",
       "relevantPathsAI": [
+        "F",
         "F.1",
         "F.2"
       ],
-      "rationaleAI": "Traces the evolution of naval vessels from wooden warships to modern carriers, illuminating ship types (F.1), shipbuilding (F.2.b), and the historical arc of maritime technology."
+      "rationaleAI": "Naval history covering technological evolution from sailing ships to modern platforms addresses types of ships (F.1) and ship design and construction (F.2)."
     },
     {
       "vsiTitle": "City Planning",
       "vsiAuthor": "Carl Abbott",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.b",
+        "B"
       ],
-      "rationaleAI": "Urban transportation networks—subways, streetcars, bus systems—are central to A.5.b (mass urban transport and traffic networks)."
+      "rationaleAI": "Urban planning covering transportation infrastructure connects to development of mass urban transport (A.5.b) and roads and highways (B)."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
       "relevantPathsAI": [
-        "A.2"
+        "A"
       ],
-      "rationaleAI": "The ancient overland trade routes illustrate A.2 (the wheel and the road), showing how transportation technology and commerce co-evolved over millennia."
+      "rationaleAI": "Central Eurasian trade routes covering biological, technological, and economic transfers connect to the history of transportation (A) through overland trade networks."
     },
     {
       "vsiTitle": "Design",
@@ -112,7 +122,7 @@
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Industrial design shapes how vehicles look and function, directly relevant to C.4 (automobile design) and the broader aesthetics of transportation equipment."
+      "rationaleAI": "Product design at automotive companies including Ford and General Motors directly connects to automobile design (C.4)."
     },
     {
       "vsiTitle": "Sustainability",
@@ -120,14 +130,17 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Addresses the environmental footprint of transportation systems and the push toward sustainable alternatives in A.5 (development of modern transport)."
+      "rationaleAI": "Sustainable transport and decarbonization of mobility connect to the development of modern transportation (A.5)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
-      "relevantPathsAI": [],
-      "rationaleAI": "Transportation revolutions—canals, railways, steamships, air routes—reshaped global trade, spanning A (history of transportation) from primitive methods to modern air transport."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Global economic development covering trade networks and technological change relates to the history of transportation (A) as a driver of economic integration."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

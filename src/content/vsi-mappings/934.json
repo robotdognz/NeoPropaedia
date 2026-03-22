@@ -4,57 +4,102 @@
     {
       "vsiTitle": "Japanese Literature",
       "vsiAuthor": "Alan Tansman",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers literary developments from the Heian period through Tokugawa, directly relevant to subsections B3, C1d, C2c, C3b, and C4c."
+      "relevantPathsAI": [
+        "A",
+        "B.3.a",
+        "C.1.d",
+        "C.3.c",
+        "C.4.c"
+      ],
+      "rationaleAI": "Japanese literature addresses the character of Japanese civilization (A), Heian literature (B.3.b.i), Kamakura culture (C.1.d), Muromachi (C.3.c), and Tokugawa literature (C.4.c)."
     },
     {
       "vsiTitle": "Samurai",
       "vsiAuthor": "Michael Wert",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the samurai class, bushido, daimyo, and shogunate system central to subsections C1-C4 on feudal Japan."
+      "relevantPathsAI": [
+        "B.3.b.ii",
+        "C.1",
+        "C.1.a",
+        "C.2",
+        "C.4.b"
+      ],
+      "rationaleAI": "The samurai class addresses the rise of samurai (B.3.b.ii), Kamakura bakufu (C.1.a), and Tokugawa class structure (C.4.b)."
     },
     {
       "vsiTitle": "Modern Japan",
       "vsiAuthor": "Christopher Goto-Jones",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers the Meiji Restoration referenced in the section title and provides context for Tokugawa Japan's transition to modernity in subsection C4."
+      "relevantPathsAI": [
+        "C.4.d.iii"
+      ],
+      "rationaleAI": "Meiji Restoration connects to the downfall of the bakuhan system (C.4.d.iii)."
     },
     {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections C1d and C4d on Neo-Confucianism's influence during the Kamakura and Tokugawa periods."
+      "relevantPathsAI": [
+        "C.1.d",
+        "C.4.d.ii",
+        "D.5.a"
+      ],
+      "rationaleAI": "Neo-Confucianism connects to Kamakura philosophy (C.1.d), Tokugawa revival (C.4.d.ii), and Yi dynasty Korea (D.5.a)."
     },
     {
       "vsiTitle": "Buddhism",
       "vsiAuthor": "Damien Keown",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections B2a-b and C1d on the introduction and flowering of Buddhism in Japan, including Zen Buddhism."
+      "relevantPathsAI": [
+        "B.2.a",
+        "B.3.a",
+        "C.1.d",
+        "C.3.c",
+        "D.2"
+      ],
+      "rationaleAI": "Buddhism connects to Yamato introduction (B.2.a), Nara flowering (B.3.a), Kamakura Zen (C.1.d), Muromachi influence (C.3.c), and Korea (D.2)."
     },
     {
       "vsiTitle": "Korea",
       "vsiAuthor": "Michael J. Seth",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsection D on Korean history from the Three Kingdoms through the Yi dynasty."
+      "relevantPathsAI": [
+        "D",
+        "D.1",
+        "D.2",
+        "D.3",
+        "D.4",
+        "D.5"
+      ],
+      "rationaleAI": "Directly covers the entire Korean section from prehistoric origins through the Yi dynasty."
     },
     {
       "vsiTitle": "The Mongols",
       "vsiAuthor": "Morris Rossabi",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C1c on the Mongol invasions of Japan in 1274 and 1281 and subsection D4 on Mongol invasions of Korea."
+      "relevantPathsAI": [
+        "C.1.c",
+        "D.4"
+      ],
+      "rationaleAI": "Mongol invasions of Japan (C.1.c) and Korea (D.4)."
     },
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the successive dynasties and shogunates from the Yamato court through the Tokugawa that structure Japan's political history."
+      "relevantPathsAI": [
+        "B.2",
+        "B.3",
+        "C.1",
+        "C.4",
+        "D.5"
+      ],
+      "rationaleAI": "Dynastic succession connects to Yamato (B.2), Fujiwara (B.3), shogunates (C.1, C.4), and Yi dynasty (D.5)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1 on Japan's prehistoric Jomon and Yayoi cultures and their archaeological evidence."
+      "relevantPathsAI": [
+        "A",
+        "B.1",
+        "D.1"
+      ],
+      "rationaleAI": "Archaeological methods connect to sources (A), prehistoric Japanese cultures (B.1), and Korean origins (D.1)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

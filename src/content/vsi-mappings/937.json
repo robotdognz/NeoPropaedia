@@ -4,44 +4,72 @@
     {
       "vsiTitle": "Southeast Asia",
       "vsiAuthor": "James R. Rush",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the peoples and civilizations of mainland and island Southeast Asia, the core subject of this entire section."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "B.1",
+        "B.2",
+        "B.3",
+        "B.4",
+        "B.5",
+        "C"
+      ],
+      "rationaleAI": "Directly covers all Southeast Asian nations and civilizations from earliest kingdoms through the colonial era."
     },
     {
       "vsiTitle": "Buddhism",
       "vsiAuthor": "Damien Keown",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections B1c, B2b, B3c-e, and C2 on the central role of Theravada Buddhism in Burma, Siam, Cambodia, and Srivijaya."
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.2.b",
+        "B.3.e",
+        "C.2"
+      ],
+      "rationaleAI": "Theravada Buddhism connects to Pagan (B.1.c), Sukhothai (B.2.b), Cambodia (B.3.e), and Srivijaya (C.2)."
     },
     {
       "vsiTitle": "Hinduism",
       "vsiAuthor": "Kim Knott",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections B3a, C1, and C3-5 on Indian Hindu cultural influences on Funan, Cambodia, and the Indonesian kingdoms."
+      "relevantPathsAI": [
+        "A",
+        "B.3.a",
+        "C.1",
+        "C.3"
+      ],
+      "rationaleAI": "Hindu influence connects to Indian cultural influence (A), Funan (B.3.a), Indonesian Hinduism (C.1), and Central Java (C.3)."
     },
     {
       "vsiTitle": "Islam",
       "vsiAuthor": "Malise Ruthven",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections B5a and C on the advent of Islam in Malaya and the Indonesian Archipelago."
+      "relevantPathsAI": [
+        "B.5.a"
+      ],
+      "rationaleAI": "Islam's spread connects to the sultanate of Malacca (B.5.a)."
     },
     {
       "vsiTitle": "The Mongols",
       "vsiAuthor": "Morris Rossabi",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1c on the Mongol destruction of Pagan in 1287 and Mongol interactions with Southeast Asian states."
+      "relevantPathsAI": [
+        "B.1.c"
+      ],
+      "rationaleAI": "Mongol destruction of Pagan in 1287 (B.1.c)."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B5b on early European intrusions including the Portuguese conquest of Malacca in 1511."
+      "relevantPathsAI": [
+        "B.5.b"
+      ],
+      "rationaleAI": "Portuguese conquest of Malacca in 1511 (B.5.b)."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C2 on the maritime trade between Srivijaya and China and broader trade networks connecting Southeast Asia."
+      "relevantPathsAI": [
+        "A",
+        "C.2"
+      ],
+      "rationaleAI": "Trade routes connect to Southeast Asian networks (A) and Srivijaya's maritime trade (C.2)."
     },
     {
       "vsiTitle": "The Conquistadors",
@@ -52,9 +80,13 @@
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection A on the archaeological sources for understanding prehistoric Southeast Asian civilizations."
+      "relevantPathsAI": [
+        "A",
+        "B.1.a"
+      ],
+      "rationaleAI": "Archaeological methods connect to sources (A) and prehistoric Myanmar cultures (B.1.a)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

@@ -4,117 +4,170 @@
     {
       "vsiTitle": "The Middle Ages",
       "vsiAuthor": "Miri Rubin",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the broad arc of medieval European history, feudalism, kingship, and the church, the core subjects of this entire section."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "D",
+        "D.1",
+        "D.4",
+        "D.6"
+      ],
+      "rationaleAI": "Medieval history addresses the study (A), Germanic successor states (B), Carolingian era (D.1), early Capetians (D.4), and feudalism (D.6)."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsections C and F on the early and middle Byzantine Empire including Justinian, Iconoclasm, and the Macedonian era."
+      "relevantPathsAI": [
+        "C",
+        "F"
+      ],
+      "rationaleAI": "Byzantium addresses the early Byzantine Empire (C) and zenith/decline (F)."
     },
     {
       "vsiTitle": "The Anglo-Saxon Age",
       "vsiAuthor": "John Blair",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsection D2a on Anglo-Saxon England from Alfred the Great through the Danish invasions to the Norman Conquest."
+      "relevantPathsAI": [
+        "B.2.b.ii",
+        "D.2.a"
+      ],
+      "rationaleAI": "Anglo-Saxon Britain addresses the Anglo-Saxon kingdoms (B.2.b.ii) and England (D.2.a)."
     },
     {
       "vsiTitle": "The Vikings",
       "vsiAuthor": "Julian D. Richards",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers subsection D2c on the Viking Age including widespread raids, conquests, social organization, and conversion to Christianity."
+      "relevantPathsAI": [
+        "D.2.c"
+      ],
+      "rationaleAI": "Vikings address the Viking Age (D.2.c)."
     },
     {
       "vsiTitle": "The Holy Roman Empire",
       "vsiAuthor": "Joachim Whaley",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers subsection D3 on the development of the Holy Roman Empire under the Saxon dynasty and Otto I."
+      "relevantPathsAI": [
+        "D.1.a",
+        "D.3"
+      ],
+      "rationaleAI": "The Holy Roman Empire relates to Charlemagne (D.1.a) and Germany/Italy (D.3)."
     },
     {
       "vsiTitle": "The Norman Conquest",
       "vsiAuthor": "George Garnett",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection D2a on the Norman Conquest of England in 1066."
+      "relevantPathsAI": [
+        "D.2.a"
+      ],
+      "rationaleAI": "The Norman Conquest relates to England (D.2.a)."
     },
     {
       "vsiTitle": "Late Antiquity",
       "vsiAuthor": "Gillian Clark",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsection B on the eclipse of the Western Roman Empire and the transition to Germanic successor states."
+      "relevantPathsAI": [
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Late Antiquity relates to the eclipse of Rome (B) and early Byzantium (C)."
     },
     {
       "vsiTitle": "Christianity",
       "vsiAuthor": "Linda Woodhead",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections B2-B3 on the Christianization of Germanic peoples and the role of the church in early medieval society."
+      "relevantPathsAI": [
+        "B.3",
+        "D.1.a"
+      ],
+      "rationaleAI": "Christianity relates to early medieval religion (B.3) and Charlemagne's ecclesiastical policies (D.1.a)."
     },
     {
       "vsiTitle": "Orthodox Christianity",
       "vsiAuthor": "A. Edward Siecienski",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections C2b, E2, and F3 on the Byzantine church, ecclesiastical controversies, and the schism with Rome in 1054."
+      "relevantPathsAI": [
+        "C",
+        "F.3"
+      ],
+      "rationaleAI": "Orthodoxy relates to early Byzantium (C) and the schism with Rome (F.3)."
     },
     {
       "vsiTitle": "Aristocracy",
       "vsiAuthor": "William Doyle",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection D6 on the development of feudalism and the feudal nobility in early medieval Europe."
+      "relevantPathsAI": [
+        "D.6"
+      ],
+      "rationaleAI": "Aristocracy relates to feudalism (D.6)."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B2c on the effects of the rise of Islam on western Europe and C3a on Byzantine losses to the Arabs."
+      "relevantPathsAI": [
+        "B.2.c"
+      ],
+      "rationaleAI": "Islamic history relates to Islam's effects on western Europe (B.2.c)."
     },
     {
       "vsiTitle": "Medieval Literature",
       "vsiAuthor": "Elaine Treharne",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B3b on arts, intellectual life, and education in the early Middle Ages."
+      "relevantPathsAI": [
+        "B.3.b"
+      ],
+      "rationaleAI": "Medieval literature relates to arts and intellectual life (B.3.b)."
     },
     {
       "vsiTitle": "Monasticism",
       "vsiAuthor": "Stephen J. Davis",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections B2-B3 on the role of monasticism in the conversion and culture of early medieval Europe."
+      "relevantPathsAI": [
+        "B.3.a"
+      ],
+      "rationaleAI": "Monasticism relates to conversion and monastic functions (B.3.a)."
     },
     {
       "vsiTitle": "Medieval Philosophy",
       "vsiAuthor": "John Marenbon",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B3b on intellectual life in the early Middle Ages."
+      "relevantPathsAI": [
+        "B.3.b"
+      ],
+      "rationaleAI": "Medieval philosophy relates to intellectual life (B.3.b)."
     },
     {
       "vsiTitle": "Scotland",
       "vsiAuthor": "Rab Houston",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection D2b on the development of the Kingdom of Scotland and its relations with England."
+      "relevantPathsAI": [
+        "D.2.b"
+      ],
+      "rationaleAI": "Scotland relates to the Kingdom of Scotland (D.2.b)."
     },
     {
       "vsiTitle": "Russian History",
       "vsiAuthor": "Geoffrey Hosking",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers subsection E2c-e on the rise of the Rus, Kievan Rus, and eastern European state formation."
+      "relevantPathsAI": [
+        "E.2.c",
+        "E.2.d",
+        "E.2.e"
+      ],
+      "rationaleAI": "Russian history relates to the Rus (E.2.c), Novgorod (E.2.d), and Kievan Rus (E.2.e)."
     },
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the dynastic politics of the Carolingians, Capetians, and other ruling families discussed throughout this section."
+      "relevantPathsAI": [
+        "D.3.a",
+        "D.4"
+      ],
+      "rationaleAI": "Dynastic rule relates to the Saxon dynasty (D.3.a) and early Capetians (D.4)."
     },
     {
       "vsiTitle": "The Roman Empire",
       "vsiAuthor": "Christopher Kelly",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1 on the end of the Western Roman Empire and the continuity of Roman institutions."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "The Roman Empire provides context for its end and the Volkerwanderung (B.1)."
     },
     {
       "vsiTitle": "Magna Carta",
       "vsiAuthor": "Nicholas Vincent",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection D4 on early Capetian-era political developments and the broader theme of kingship and church-state relations."
+      "relevantPathsAI": [
+        "D.4"
+      ],
+      "rationaleAI": "Magna Carta relates to feudal political developments (D.4)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

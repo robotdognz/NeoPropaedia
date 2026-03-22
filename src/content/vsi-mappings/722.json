@@ -4,66 +4,74 @@
     {
       "vsiTitle": "Engineering",
       "vsiAuthor": "David Blockley",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses B (machines and machine components), C (machine tools), and the engineering principles behind mechanical systems."
+      "relevantPathsAI": [
+        "B",
+        "C"
+      ],
+      "rationaleAI": "Engineering practice covering electromagnetism, transistor technology, and infrastructure relates to machines and machine components (B) and the development of machine tools for construction and production (C)."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
       "relevantPathsAI": [
-        "D.3",
-        "D.4"
+        "D.3"
       ],
-      "rationaleAI": "Directly covers D.3 (robots) in computer-aided machining and D.4 (computer-integrated manufacturing)."
+      "rationaleAI": "Design, construction, and deployment of autonomous machines for manufacturing and warehouse automation directly addresses robots in computer-aided machining (D.3)."
     },
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
       "relevantPathsAI": [
         "D.1",
-        "D.2",
-        "D.4"
+        "D.2"
       ],
-      "rationaleAI": "Explains D.1 (computer numerical control), D.2 (CAD/CAM), and D.4 (computer-integrated manufacturing) from a computing perspective."
+      "rationaleAI": "Computing technology covering core architecture, operating systems, and processing relates to computer numerical control (D.1) and computer-aided design and manufacturing (D.2)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
       "relevantPathsAI": [
+        "D.3",
         "D.4"
       ],
-      "rationaleAI": "Examines the AI systems driving automated machining and adaptive manufacturing, relevant to D.4 (computer-integrated manufacturing)."
+      "rationaleAI": "AI applications including intelligent systems and automation connect to robots (D.3) and computer-integrated manufacturing (D.4)."
     },
     {
       "vsiTitle": "Computer Science",
       "vsiAuthor": "Subrata Dasgupta",
       "relevantPathsAI": [
+        "D",
         "D.1",
-        "D.4"
+        "D.2"
       ],
-      "rationaleAI": "Provides the algorithmic and programming foundations for D.1-D.4 (computer numerical control, CAD/CAM, computer-integrated manufacturing)."
+      "rationaleAI": "Algorithms, programming, and computational complexity underpin computer numerical control (D.1) and computer-aided design and manufacturing (D.2)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
       "relevantPathsAI": [
-        "B.4"
+        "A.1",
+        "C"
       ],
-      "rationaleAI": "Explains materials properties relevant to C (machine tools for shaping metals and other materials) and B.4 (friction and lubricants)."
+      "rationaleAI": "Materials science studying metals, ceramics, and polymers with properties including hardness relates to the materials from which tools are made (A.1) and machine tools for shaping materials (C)."
     },
     {
       "vsiTitle": "Nanotechnology",
       "vsiAuthor": "Philip Moriarty",
-      "relevantPathsAI": [],
-      "rationaleAI": "Introduces nonconventional machining at the nanoscale, relevant to E (electron-beam, ion beam, and laser machining methods)."
+      "relevantPathsAI": [
+        "E.1"
+      ],
+      "rationaleAI": "Single atom imaging, quantum confinement, and molecular machinery at the atomic scale connect to nonconventional methods of machining including electron-beam and ion beam methods (E.1)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
+        "A.1",
+        "B",
         "C.1"
       ],
-      "rationaleAI": "Traces the history of machine tools (C.1) and the pivotal transition from hand tools to power-driven machinery."
+      "rationaleAI": "Innovations in steam power, textile machinery, and iron production demonstrate the development of metal tools (A.1), machine mechanisms (B), and the history of machine tools (C.1)."
     },
     {
       "vsiTitle": "Prehistory",
@@ -71,7 +79,7 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Documents the early history of hand tools (A.1), from Paleolithic stone implements through Neolithic and early metal tool development."
+      "rationaleAI": "Use of stone tools by early hominids covering Paleolithic and Neolithic periods directly addresses the early history of hand tools (A.1)."
     },
     {
       "vsiTitle": "Design",
@@ -79,8 +87,9 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Explores design principles behind tools and machine components, relevant to D.2 (computer-aided design) and industrial design methodology."
+      "rationaleAI": "Industrial and product design at companies including Nokia, Ford, and Sony covers the integration of design with manufacturing, connecting to computer-aided design and manufacturing (D.2)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

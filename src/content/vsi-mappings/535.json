@@ -5,127 +5,150 @@
       "vsiTitle": "Keynes",
       "vsiAuthor": "Robert Skidelsky",
       "relevantPathsAI": [
-        "A.1",
-        "C"
+        "A",
+        "A.1.a",
+        "A.1.b",
+        "B.2",
+        "C.3"
       ],
-      "rationaleAI": "Directly covers Keynesian effective demand theory, unemployment theory, monetary policy, and countercyclical fiscal policy (A.1, C.3)."
+      "rationaleAI": "Keynesian theory of effective demand contrasted with classical law of markets (A.1.a), Keynesian theory of unemployment (A.1.b), founding of the International Monetary Fund as an international monetary institution (B.2), and relevance of Keynesian economics during financial crises as countercyclical policy (C.3)."
     },
     {
       "vsiTitle": "Microeconomics",
       "vsiAuthor": "Avinash Dixit",
       "relevantPathsAI": [
-        "A"
+        "A.1.b",
+        "A.2"
       ],
-      "rationaleAI": "Bridges micro and macro analysis, explaining how inflation, investment, and unemployment connect individual decisions to aggregate outcomes (A)."
+      "rationaleAI": "Individual and firm-level economic decision-making contrasting with macroeconomic unemployment and inflation concerns (A.1.b), and supply dynamics and market structures contributing to the circular flow of income and expenditure (A.2)."
     },
     {
       "vsiTitle": "Economics",
       "vsiAuthor": "Partha Dasgupta",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A",
+        "A.2",
+        "A.3"
       ],
-      "rationaleAI": "National income, GDP, and aggregate output are the building blocks of macroeconomic analysis introduced here (A.1, A.2)."
+      "rationaleAI": "Macroeconomic measures including gross domestic product (A.2), resource allocation and market mechanisms affecting aggregate output (A), and economic development analysis contributing to understanding fluctuations in national income (A.3)."
     },
     {
       "vsiTitle": "Banking",
       "vsiAuthor": "John O. S. Wilson, John Goddard",
       "relevantPathsAI": [
         "B.1",
+        "B.1.a",
         "B.2",
-        "C"
+        "C.3"
       ],
-      "rationaleAI": "Central banking, monetary policy transmission, financial crises, and sovereign debt have profound macroeconomic effects (B.1, B.2, C.3)."
+      "rationaleAI": "Central bank monetary policy directly relevant to exchange rates and adjustment mechanisms (B.1, B.1.a), the 2008 financial crisis and sovereign debt crises as problems of international financial disequilibrium (B.2), and monetary policy as countercyclical fiscal and monetary policy (C.3)."
     },
     {
       "vsiTitle": "The World Trade Organization",
       "vsiAuthor": "Amrita Narlikar",
       "relevantPathsAI": [
-        "B.2"
+        "B",
+        "B.1",
+        "B.2",
+        "B.2.a"
       ],
-      "rationaleAI": "International monetary institutions, balance of payments mechanics, and the Bretton Woods system shaped the postwar macroeconomic order (B.2)."
+      "rationaleAI": "International trade governance through the WTO affecting foreign exchange and balance of payments (B.1), the Bretton Woods system and IMF relationship to trade as international monetary institutions (B.2), most favoured nation status and comparative advantage as mechanisms affecting international equilibrium (B), and balance of payments issues (B.2.a)."
     },
     {
       "vsiTitle": "The Great Depression and The New Deal",
       "vsiAuthor": "Eric Rauchway",
       "relevantPathsAI": [
+        "A.1.a",
+        "A.3",
+        "C",
         "C.1",
-        "C"
+        "C.3"
       ],
-      "rationaleAI": "The Depression represents the defining business cycle collapse (C.1), and the New Deal demonstrated countercyclical fiscal and monetary policy in action (C.3)."
+      "rationaleAI": "The Great Depression as a catastrophic business cycle illustrating cyclical theory (C, C.1), Keynesian economics as countercyclical fiscal policy response (C.3), the collapse of financial markets as fluctuation in national income (A.3), and the contrast between laissez-faire and interventionist approaches (A.1.a)."
     },
     {
       "vsiTitle": "Mathematical finance",
       "vsiAuthor": "Mark H. A. Davis",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.1.a",
+        "B.1.b"
       ],
-      "rationaleAI": "Interest rates, arbitrage, and financial instruments are relevant to foreign exchange mechanics and monetary analysis (B.1.a)."
+      "rationaleAI": "Asset valuation, risk management, and pricing of financial contracts in financial markets (B.1), arbitrage pricing theory relating to equilibrating movements (B.1.a), and hedging and speculation as disequilibrating movements (B.1.b)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
-        "C"
+        "A.3",
+        "C",
+        "C.1",
+        "B.2.b"
       ],
-      "rationaleAI": "Business cycles, financial crises, and boom-bust dynamics are inherent features of capitalist macroeconomies (C)."
+      "rationaleAI": "The Great Depression and the 2007-8 financial crisis as business cycles (C, C.1), globalization of capital beyond nation-states as international financial dynamics (A.3), and economic crises and nationalism as aftermath of major upheavals (B.2.b)."
     },
     {
       "vsiTitle": "Globalization",
       "vsiAuthor": "Manfred Steger",
       "relevantPathsAI": [
-        "B"
+        "B",
+        "B.1",
+        "B.2"
       ],
-      "rationaleAI": "International economic integration, cross-border capital flows, and balance of payments challenges are macroeconomic phenomena intensified by globalization (B)."
+      "rationaleAI": "Transnational economic flows affecting foreign exchange markets and international equilibrium (B.1), global trade and migration as factors in balance of payments (B), and international cooperation challenges relating to monetary and financial institutions (B.2)."
     },
     {
       "vsiTitle": "Adam Smith",
       "vsiAuthor": "Christopher J. Berry",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a"
       ],
-      "rationaleAI": "Smith's classical law of markets laid the intellectual foundation from which macroeconomic thought later diverged (A.1.a)."
+      "rationaleAI": "The Wealth of Nations establishing foundational concepts of free trade and competition, relevant to the classical law of markets and market-based approaches to national income (A.1.a)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "C.1"
+        "A.3",
+        "B.2"
       ],
-      "rationaleAI": "Historical business cycles, financial panics, and their macroeconomic consequences illustrate recurring patterns across centuries (C.1)."
+      "rationaleAI": "Analysis of global economic development illustrating fluctuations in national income across countries (A.3), and the role of institutional frameworks and government policy as international cooperation mechanisms (B.2)."
     },
     {
       "vsiTitle": "Neoliberalism",
       "vsiAuthor": "Manfred Steger, Ravi K. Roy",
       "relevantPathsAI": [
-        "C"
+        "B.1.d",
+        "C.3"
       ],
-      "rationaleAI": "Monetarist and supply-side approaches emerged as alternatives to Keynesian demand management, reshaping fiscal and monetary policy debates (C.3)."
+      "rationaleAI": "Deregulation and free market policies as methods for adjusting to economic disequilibrium (B.1.d), and the 2008 financial crisis challenging neoliberal assumptions as a critical business cycle event requiring countercyclical response (C.3)."
     },
     {
       "vsiTitle": "Development",
       "vsiAuthor": "Ian Goldin",
       "relevantPathsAI": [
-        "B"
+        "A.3",
+        "B.2"
       ],
-      "rationaleAI": "Developing countries face distinctive macroeconomic challenges\u2014balance of payments deficits, exchange rate instability, capital flight\u2014examined here (B)."
+      "rationaleAI": "GDP, GNP, and purchasing power parity metrics as analyses of national income (A.3), and the International Monetary Fund as an international monetary institution addressing development (B.2)."
     },
     {
       "vsiTitle": "Taxation",
       "vsiAuthor": "Stephen Smith",
       "relevantPathsAI": [
-        "C"
+        "C.3"
       ],
-      "rationaleAI": "Taxation is a primary fiscal policy tool, and its design as a countercyclical instrument has significant macroeconomic effects (C.3)."
+      "rationaleAI": "Tax policy as a fiscal instrument for countercyclical monetary and fiscal policy affecting aggregate economic activity (C.3)."
     },
     {
       "vsiTitle": "Marx",
       "vsiAuthor": "Peter Singer",
       "relevantPathsAI": [
-        "C.2"
+        "A.1.a"
       ],
-      "rationaleAI": "Marx theorized that capitalist crises and business cycles are systemic rather than accidental, offering an alternative lens on macroeconomic instability (C.2)."
+      "rationaleAI": "Marx's critique of political economy offering an alternative to both classical and Keynesian theories of markets and employment, relevant to contrasting theoretical approaches to national income (A.1.a)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

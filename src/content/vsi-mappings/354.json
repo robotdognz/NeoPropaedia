@@ -4,109 +4,129 @@
     {
       "vsiTitle": "Biogeography",
       "vsiAuthor": "Mark V. Lomolino",
-      "relevantPathsAI": [],
-      "rationaleAI": "Core text addressing biogeographic distribution, regional floras and faunas, and the factors determining where organisms live (C, D)."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Geographic distribution of life addresses terrestrial (A), aquatic ecosystems (B), organism distribution (C), and biogeographic regions (D)."
     },
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
       "relevantPathsAI": [
+        "A",
+        "A.1",
         "A.2",
         "A.3",
-        "B.5"
+        "B"
       ],
-      "rationaleAI": "Examines ecosystems, communities, biomes, producers/consumers/decomposers, and ecosystem productivity (A.2, A.3, B.5)."
+      "rationaleAI": "Ecological principles address the land environment (A.1), life-forms (A.2.c), terrestrial productivity (A.3), and aquatic ecosystems (B)."
     },
     {
       "vsiTitle": "Forests",
       "vsiAuthor": "Jaboury Ghazoul",
       "relevantPathsAI": [
-        "A.1.c"
+        "A.1.c",
+        "A.2",
+        "A.3"
       ],
-      "rationaleAI": "Explores coniferous, middle-latitude, and tropical rain forest biomes including their structure, diversity, and productivity (A.1.c)."
+      "rationaleAI": "Forest ecosystems address coniferous, temperate, and tropical biomes (A.1.c), life-forms (A.2), and productivity (A.3)."
     },
     {
       "vsiTitle": "Savannas",
       "vsiAuthor": "Peter Furley",
       "relevantPathsAI": [
-        "A.1.c"
+        "A.1.c",
+        "A.2",
+        "A.3"
       ],
-      "rationaleAI": "Directly addresses the grassland and savanna biome including tropical vegetation, campo cerrado, and caatingas (A.1.c)."
+      "rationaleAI": "Savanna ecosystems address grassland/savanna biome (A.1.c), life-forms (A.2), and productivity (A.3)."
     },
     {
       "vsiTitle": "Deserts",
       "vsiAuthor": "Nick Middleton",
       "relevantPathsAI": [
-        "A.1.c"
+        "A.1.c",
+        "A.1.b",
+        "A.2"
       ],
-      "rationaleAI": "Directly addresses the desert biome including aridity, limiting factors, and desert-adapted organisms (A.1.c)."
+      "rationaleAI": "Desert environments address the desert biome (A.1.c), limiting factors (A.1.b), and adapted life-forms (A.2)."
     },
     {
       "vsiTitle": "Marine biology",
       "vsiAuthor": "Philip V. Mladenov",
       "relevantPathsAI": [
-        "B.2"
+        "B.1",
+        "B.2",
+        "B.2.b",
+        "B.2.d",
+        "B.4",
+        "B.5"
       ],
-      "rationaleAI": "Explores ocean communities including benthos, plankton, nekton, adaptations to marine conditions, and marine productivity (B.2)."
+      "rationaleAI": "Marine diversity addresses aquatic environment (B.1), oceanic communities (B.2.b), productivity (B.2.d), boundary ecosystems (B.4), and aquatic productivity (B.5)."
     },
     {
       "vsiTitle": "Oceans",
       "vsiAuthor": "Dorrik Stow",
       "relevantPathsAI": [
+        "B.1",
         "B.2",
-        "B.4"
+        "B.2.a"
       ],
-      "rationaleAI": "Examines the sea as a biological environment and marine ecosystems including open-sea, estuarine, and neritic zones (B.2.a, B.4)."
+      "rationaleAI": "Ocean science addresses aquatic environment (B.1) and sea as biological environment (B.2.a)."
     },
     {
       "vsiTitle": "Lakes",
       "vsiAuthor": "Warwick F. Vincent",
       "relevantPathsAI": [
-        "B.3"
+        "B.3",
+        "B.3.a",
+        "B.5"
       ],
-      "rationaleAI": "Addresses lacustrine (standing-water) freshwater communities including lakes, ponds, and associated organisms (B.3.a)."
+      "rationaleAI": "Lake science addresses lacustrine communities (B.3.a) and freshwater productivity (B.5)."
     },
     {
       "vsiTitle": "Rivers",
       "vsiAuthor": "Nick Middleton",
       "relevantPathsAI": [
-        "B.3"
+        "B.3.b"
       ],
-      "rationaleAI": "Addresses riverine (flowing-water) freshwater communities including rivers, streams, and their biological communities (B.3.b)."
+      "rationaleAI": "River ecosystems address riverine communities (B.3.b)."
     },
     {
       "vsiTitle": "Coral Reefs",
       "vsiAuthor": "Charles Sheppard",
       "relevantPathsAI": [
-        "B.4"
+        "B.4.b"
       ],
-      "rationaleAI": "Reef ecosystems represent a major neritic/boundary environment between water and land, with rich biodiversity and community structure (B.4.b)."
+      "rationaleAI": "Coral reefs address neritic communities (B.4.b)."
     },
     {
       "vsiTitle": "The Arctic",
       "vsiAuthor": "Klaus Dodds, Jamie Woodward",
       "relevantPathsAI": [
-        "A.1.c",
-        "A.1"
+        "A.1.d"
       ],
-      "rationaleAI": "Explores the tundra biome and Arctic ecosystems, a major specialized polar environment (A.1.c, A.1.d)."
+      "rationaleAI": "Arctic ecology addresses specialized polar biomes (A.1.d)."
     },
     {
       "vsiTitle": "The Antarctic",
       "vsiAuthor": "Klaus Dodds",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.d"
       ],
-      "rationaleAI": "Examines polar biomes in the Southern Hemisphere as specialized terrestrial and marine ecosystems (A.1.d)."
+      "rationaleAI": "Antarctic environment addresses specialized polar biomes (A.1.d)."
     },
     {
       "vsiTitle": "Mountains",
       "vsiAuthor": "Martin F. Price",
       "relevantPathsAI": [
-        "A.1.c",
+        "A.1.b",
         "A.2"
       ],
-      "rationaleAI": "Altitude-based zonation of organisms and mountain ecosystems harbor distinct biotic communities (A.1.c, A.2.a)."
+      "rationaleAI": "Mountain environments address limiting factors (A.1.b) and habitat-classified life-forms (A.2)."
     },
     {
       "vsiTitle": "Tides",
@@ -114,36 +134,43 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Tidal processes shape boundary ecosystems between water and land, including biological productivity in intertidal zones (B.4)."
+      "rationaleAI": "Tidal dynamics address boundary ecosystems (B.4)."
     },
     {
       "vsiTitle": "Climate",
       "vsiAuthor": "Mark Maslin",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b"
       ],
-      "rationaleAI": "Climate is the primary determinant of biome distribution and the environmental gradients underlying biogeographic patterns (A.1, C)."
+      "rationaleAI": "Climate dynamics address limiting factors to living on land (A.1.b)."
     },
     {
       "vsiTitle": "Invasive Species",
       "vsiAuthor": "Julie Lockwood, Dustin J. Welbourne",
-      "relevantPathsAI": [],
-      "rationaleAI": "Non-native species disrupt regional floras and faunas and reshape biogeographic distributions (C, D)."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Invasive species address disruption of organism distribution (C)."
     },
     {
       "vsiTitle": "The Ice Age",
       "vsiAuthor": "Jamie Woodward",
-      "relevantPathsAI": [],
-      "rationaleAI": "Glaciation profoundly shaped biogeographic distribution and determined present-day regional floras and faunas (C, D)."
+      "relevantPathsAI": [
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Glacial-interglacial ecosystem responses address distribution shifts (C) and biogeographic changes (D)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "C"
       ],
-      "rationaleAI": "Plant diversity, growth habits, and seed plant distribution are relevant to terrestrial producers and indicator organisms (A.2)."
+      "rationaleAI": "Plant diversity addresses terrestrial life-forms (A.2) and distribution (C)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

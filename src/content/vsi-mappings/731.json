@@ -4,8 +4,21 @@
     {
       "vsiTitle": "Agriculture",
       "vsiAuthor": "Paul Brassley, Richard Soffe",
-      "relevantPathsAI": [],
-      "rationaleAI": "The definitive introduction, spanning A (history of agriculture), B (farm management), C (crop farming), and D (livestock farming) in a single volume."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "B.1",
+        "B.2",
+        "B.4",
+        "C",
+        "C.1",
+        "C.2",
+        "C.5",
+        "D",
+        "D.1",
+        "D.3"
+      ],
+      "rationaleAI": "Comprehensive agricultural science covering soil management (C.1), plant cultivation (C.2), pest control (C.5), animal husbandry and breeding (D.1), livestock disease control (D.3), farm labour and machinery (B.2), farming in relation to weather and pollution (B.4), and the history of agriculture (A)."
     },
     {
       "vsiTitle": "Food",
@@ -13,35 +26,38 @@
       "relevantPathsAI": [
         "F",
         "G",
-        "H"
+        "H",
+        "I"
       ],
-      "rationaleAI": "Addresses the downstream side of agriculture: food processing (F), preservation (G), quality control (H), and the search for new food sources (I)."
+      "rationaleAI": "Human relationship with food covering sensory perception, diet, nutrition, food poisoning, agricultural technology, and feeding nine billion people connects to food processing (F), food preservation (G), quality control (H), and new food sources and product development (I)."
     },
     {
       "vsiTitle": "Nutrition",
       "vsiAuthor": "David Bender",
       "relevantPathsAI": [
-        "H.1"
+        "H.1",
+        "H.2"
       ],
-      "rationaleAI": "Evaluating food quality (H.1) and developing new food products (I) requires the nutritional science framework this volume provides."
+      "rationaleAI": "Biochemical principles of nutrition covering macronutrients, vitamins, and metabolic processes relate to evaluation of food quality (H.1) and control of food quality (H.2)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
       "relevantPathsAI": [
+        "C",
         "C.2",
         "C.6"
       ],
-      "rationaleAI": "Plant biology underpins crop farming—propagation, seeding, and cultivation (C.2)—and the major cereal and horticultural crops in C.6."
+      "rationaleAI": "Plant biology covering evolution, diversity, pollination, and the role of cereal crops, fruit, and vegetables in human civilization connects to crop farming (C), plant propagation (C.2), and major crops (C.6)."
     },
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
       "relevantPathsAI": [
-        "C.5",
-        "B.4"
+        "B.4",
+        "C.5"
       ],
-      "rationaleAI": "Pest and disease control (C.5) and pollution management (B.4) depend on ecological principles that govern agricultural ecosystems."
+      "rationaleAI": "Ecological principles of population dynamics, interspecies interactions, and environmental policy connect to farming in relation to pollution and environmental concerns (B.4) and pest and disease control through ecological understanding (C.5)."
     },
     {
       "vsiTitle": "Forests",
@@ -49,54 +65,50 @@
       "relevantPathsAI": [
         "C.6.c"
       ],
-      "rationaleAI": "Forestry is a branch of crop farming, and this volume addresses forest crops including timber and rubber (C.6.c)."
+      "rationaleAI": "Forest ecosystem services including timber production and forestry management directly address forest crops (C.6.c)."
     },
     {
       "vsiTitle": "Microbiomes",
       "vsiAuthor": "Angela E. Douglas",
       "relevantPathsAI": [
-        "C.1",
-        "C.5"
+        "C.5",
+        "D.3"
       ],
-      "rationaleAI": "Soil microbial communities drive nutrient cycling essential to C.1 (soil preparation) and influence C.5 (pest and disease control) in crop production."
+      "rationaleAI": "Microbial communities in plants and animals affecting growth and disease protection connect to pest and disease control in crops (C.5) and livestock disease control (D.3)."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
       "relevantPathsAI": [
-        "F.8",
-        "G.1",
-        "H.1"
+        "C.5",
+        "F"
       ],
-      "rationaleAI": "Fermentation drives beverage production (F.8, brewing and wine) and food preservation (G.1.d, pickling), while microbiological methods assess food quality (H.1)."
+      "rationaleAI": "Microorganisms including bacteria and fungi with applications in agriculture and biotechnology connect to pest and disease control (C.5) and food processing through fermentation (F)."
     },
     {
       "vsiTitle": "Fungi",
       "vsiAuthor": "Nicolas P. Money",
       "relevantPathsAI": [
-        "C.5",
-        "F.8",
-        "G.1"
+        "C.5"
       ],
-      "rationaleAI": "Fungi play dual roles in agriculture: as crop disease organisms (C.5) and as essential agents in yeast-based fermentation for brewing, baking (F.8), and preservation (G.1.d)."
+      "rationaleAI": "Fungi as agents of crop disease causing historical famines directly address control of pests and disease organisms in crop farming (C.5)."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
       "relevantPathsAI": [
-        "C.5",
-        "D.2"
+        "C.5"
       ],
-      "rationaleAI": "Insects are both the primary pest threat to crops (C.5) and, as pollinators and honey producers, valuable livestock in their own right (D.2.f, bees)."
+      "rationaleAI": "Insect diversity including herbivores and parasites, and the impact of pesticides on populations, directly addresses control of pests and disease organisms (C.5)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
         "D.1",
-        "C.2"
+        "I.2"
       ],
-      "rationaleAI": "Genetic principles govern both animal breeding (D.1) and plant propagation (C.2), making this essential for understanding crop and livestock improvement."
+      "rationaleAI": "Genetic variation, hereditary mechanisms, and molecular biology connect to animal breeding (D.1) and utilization of new food sources through genetic modification (I.2)."
     },
     {
       "vsiTitle": "Heredity",
@@ -104,7 +116,7 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Selective breeding and hereditary principles have shaped livestock improvement (D.1) for millennia, from Bakewell's sheep to modern genomics."
+      "rationaleAI": "Selective breeding of crops, horses, and cattle as practical applications of heredity directly addresses animal breeding (D.1)."
     },
     {
       "vsiTitle": "Mammals",
@@ -112,44 +124,41 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "The biology of cattle, swine, sheep, goats, and horses provides the zoological context for D.2 (major livestock animals)."
+      "rationaleAI": "Mammalian biology, diversity, and reproductive strategies provide scientific foundations for understanding major livestock animals (D.2)."
     },
     {
       "vsiTitle": "Marine biology",
       "vsiAuthor": "Philip V. Mladenov",
       "relevantPathsAI": [
-        "E",
-        "F.6"
+        "E"
       ],
-      "rationaleAI": "Fishing technology (E) and marine products processing (F.6) depend on understanding marine ecosystems and the species they sustain."
+      "rationaleAI": "Marine organism diversity, overfishing impacts, and aquaculture as food production technology directly address technology of fishing (E)."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
       "relevantPathsAI": [
-        "G.1",
-        "D.3",
-        "H.1"
+        "C.5",
+        "D.3"
       ],
-      "rationaleAI": "Bacteria are agents of fermentation and pickling (G.1.d), threats to livestock health (D.3), and subjects of microbiological food quality evaluation (H.1)."
+      "rationaleAI": "Bacteria as disease agents and their ecological functions in element recycling connect to pest and disease control in crops (C.5) and livestock disease (D.3)."
     },
     {
       "vsiTitle": "Infectious Disease",
       "vsiAuthor": "Benjamin Bolker and Marta Wayne",
       "relevantPathsAI": [
-        "D.3",
-        "H"
+        "C.5",
+        "D.3"
       ],
-      "rationaleAI": "Livestock disease and pest control (D.3) and food safety (H) both require understanding how infectious agents spread and can be contained."
+      "rationaleAI": "Pathogen transmission, vaccination strategies, and disease management connect to control of pests and disease organisms in crops (C.5) and livestock disease and pest control (D.3)."
     },
     {
       "vsiTitle": "Climate change",
       "vsiAuthor": "Mark Maslin",
       "relevantPathsAI": [
-        "B.4",
-        "C.4"
+        "B.4"
       ],
-      "rationaleAI": "Shifting weather patterns reshape farming (B.4) and threaten specialized crop production (C.4), making climate science essential to agricultural planning."
+      "rationaleAI": "Climate change effects on ecological systems and agricultural production connect to farming in relation to weather and environmental concerns (B.4)."
     },
     {
       "vsiTitle": "Sustainability",
@@ -157,7 +166,7 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Sustainable agriculture balances pollution control (B.4) with the need to develop new food sources (I), a challenge this volume addresses directly."
+      "rationaleAI": "Sustainable production and consumption patterns, material flows, and environmental limits connect to farming in relation to environmental concerns (B.4)."
     },
     {
       "vsiTitle": "Invasive Species",
@@ -165,8 +174,9 @@
       "relevantPathsAI": [
         "C.5"
       ],
-      "rationaleAI": "Invasive pests and disease organisms (C.5) threaten crop farming worldwide, and this volume explains their pathways, impacts, and management."
+      "rationaleAI": "Invasive species biology and ecological impacts including biodiversity losses connect to control of pests and disease organisms affecting crops (C.5)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

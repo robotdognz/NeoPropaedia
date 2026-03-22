@@ -30,6 +30,9 @@ pipeline/output/
 pipeline/.venv/
 *.egg-info/
 
+# Generated pipeline reports
+scripts/output/
+
 # PDF (too large for git)
 *.pdf
 

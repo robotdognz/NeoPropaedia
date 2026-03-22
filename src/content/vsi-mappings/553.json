@@ -4,23 +4,36 @@
     {
       "vsiTitle": "Law",
       "vsiAuthor": "Raymond Wacks",
-      "relevantPathsAI": [],
-      "rationaleAI": "Broadly addresses branches of private law including property, contracts, torts, and civil procedure (A-E)."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "rationaleAI": "Law covering civil law, criminal law, and major legal branches broadly addresses property law (A), family law (B), economic transactions (D), and civil procedure (E)."
     },
     {
       "vsiTitle": "Family law",
       "vsiAuthor": "Jonathan Herring",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to section B, examining marriage, divorce, children's legal status, and parental rights."
+      "relevantPathsAI": [
+        "B",
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.1.c"
+      ],
+      "rationaleAI": "Legal frameworks governing family relationships directly address family law (B). Marriage, civil partnership, and divorce address the marriage contract (B.1.a) and termination of marriage (B.1.c). Children's rights and parental definitions address laws concerning children (B.1.b)."
     },
     {
       "vsiTitle": "Intellectual property",
       "vsiAuthor": "Siva Vaidhyanathan",
       "relevantPathsAI": [
         "A.5",
-        "A.5.c"
+        "A.5.b",
+        "A.5.c",
+        "A.5.d"
       ],
-      "rationaleAI": "Laws protecting intangible property rights -- copyright, patents, and trademarks -- are the central subject (A.5.b, A.5.c, A.5.d)."
+      "rationaleAI": "Intellectual property law covering copyright, patents, and trademarks directly addresses laws protecting intangible property rights (A.5), including rights to artistic works (A.5.b), inventions (A.5.c), and symbols identifying business products (A.5.d)."
     },
     {
       "vsiTitle": "Employment Law",
@@ -28,52 +41,64 @@
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "Labour law governing employment relationships and workers' rights is the central focus (D.4)."
+      "rationaleAI": "Employment rights and labor laws governing the employment relationship directly address labour law (D.4)."
     },
     {
       "vsiTitle": "Competition and Antitrust Law",
       "vsiAuthor": "Ariel Ezrachi",
       "relevantPathsAI": [
-        "D.3",
-        "C.5"
+        "D.2",
+        "D.3"
       ],
-      "rationaleAI": "Examines laws governing mergers, monopolies, and competitive practices in business (D.3.d, C.5.b)."
+      "rationaleAI": "Competition law covering cartels, monopoly power, and merger regulation addresses law of commercial transactions (D.2) and law of business associations (D.3) through market regulation frameworks."
     },
     {
       "vsiTitle": "Comparative Law",
       "vsiAuthor": "Sabrina Ragone and Guido Smorto",
-      "relevantPathsAI": [],
-      "rationaleAI": "Explores comparisons between common law and civil law approaches to property, contracts, and torts (A, C, D)."
+      "relevantPathsAI": [
+        "A",
+        "D"
+      ],
+      "rationaleAI": "Comparative law examining legal families including common law and civil law addresses distinctions in property law traditions (A) and economic transaction frameworks (D) across jurisdictions."
     },
     {
       "vsiTitle": "American Legal History",
       "vsiAuthor": "G. Edward White",
-      "relevantPathsAI": [],
-      "rationaleAI": "Traces the historical development of American private law including property, tort, copyright, and commercial law (A, C, D)."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "C",
+        "C.1"
+      ],
+      "rationaleAI": "American legal history covering property rights expansion addresses historical development of property rights (A.1). The rise of tort law and negligence after the Civil War addresses the law of torts (C) and the doctrine of strict liability versus negligence (C.1)."
     },
     {
       "vsiTitle": "The American Judicial System",
       "vsiAuthor": "Charles L. Zelden",
       "relevantPathsAI": [
-        "E"
+        "E",
+        "E.1"
       ],
-      "rationaleAI": "Examines civil procedural law including jurisdiction, venue, trials, appellate courts, and juries (E)."
+      "rationaleAI": "The American judicial system covering courts, jurisdiction, and judicial processes addresses civil procedural law (E) and elements of civil procedure including jurisdiction and venue (E.1)."
     },
     {
       "vsiTitle": "The Jury",
       "vsiAuthor": "Renee Lettow Lerner",
       "relevantPathsAI": [
+        "E",
+        "E.1.c",
         "E.2"
       ],
-      "rationaleAI": "The jury in civil trials and the rendering of judgment in civil cases are central topics (E.2)."
+      "rationaleAI": "The jury system covering civil juries and juror selection addresses civil procedural law (E), definitions of parties to a suit (E.1.c), and the conduct of civil trials and the law of evidence (E.2)."
     },
     {
       "vsiTitle": "Arbitration",
       "vsiAuthor": "Thomas Schultz, Thomas Grant",
       "relevantPathsAI": [
-        "E"
+        "E",
+        "D.2"
       ],
-      "rationaleAI": "Arbitration as an alternative method of resolving commercial and civil disputes is examined (E)."
+      "rationaleAI": "Arbitration as dispute resolution outside traditional courts addresses civil procedural law (E). Commercial dispute resolution bridges private law and commercial transactions (D.2)."
     },
     {
       "vsiTitle": "Negotiation",
@@ -81,87 +106,96 @@
       "relevantPathsAI": [
         "E"
       ],
-      "rationaleAI": "Negotiation and settlement as alternatives to civil litigation are explored (E)."
+      "rationaleAI": "Negotiation theory covering mediation, dispute resolution, and legal negotiation contexts addresses civil procedural law (E) as an alternative to formal litigation."
     },
     {
       "vsiTitle": "Medical law",
       "vsiAuthor": "Charles Foster",
       "relevantPathsAI": [
+        "C",
         "C.4"
       ],
-      "rationaleAI": "Tort liability in medical contexts -- including negligence, consent, and manufacturer's liability -- is the central subject (C.4)."
+      "rationaleAI": "Medical law covering medical negligence and best interests determinations addresses the law of torts (C) and injuries resulting from negligent acts including failure to comply with standards of care (C.4)."
     },
     {
       "vsiTitle": "Privacy",
       "vsiAuthor": "Raymond Wacks",
       "relevantPathsAI": [
-        "C.5"
+        "C.5",
+        "C.5.a"
       ],
-      "rationaleAI": "Injuries to personality and invasions of privacy are examined as matters of tort law (C.5.a)."
+      "rationaleAI": "Privacy covering media intrusion, data protection, and surveillance addresses injuries to personality and personal relationships (C.5) including defamation, invasions of privacy, and interference with personal relationships (C.5.a)."
     },
     {
       "vsiTitle": "International law",
       "vsiAuthor": "Vaughan Lowe",
       "relevantPathsAI": [
-        "E.1"
+        "E.1.b"
       ],
-      "rationaleAI": "Private international law, including conflicts of laws and foreign judgments, is addressed (E.1.b)."
+      "rationaleAI": "International law covering WTO disputes and transnational legal enforcement addresses jurisdiction in private international law and the conflict of laws (E.1.b)."
     },
     {
       "vsiTitle": "Accounting",
       "vsiAuthor": "Christopher Nobes",
       "relevantPathsAI": [
+        "D.3",
         "D.3.c"
       ],
-      "rationaleAI": "Financial reporting and auditing are relevant to corporate law and business association governance (D.3.c)."
+      "rationaleAI": "Accounting principles covering financial statements, auditing, and corporate governance address the law of business associations (D.3) and the structure of corporate finance (D.3.c)."
     },
     {
       "vsiTitle": "Banking",
       "vsiAuthor": "John O. S. Wilson, John Goddard",
       "relevantPathsAI": [
-        "D.2"
+        "D.2",
+        "D.3"
       ],
-      "rationaleAI": "The legal framework governing financial transactions, credit, and banking regulation is examined (D.2)."
+      "rationaleAI": "Banking systems covering capital allocation and financial regulation address the law of commercial transactions (D.2) and business associations (D.3)."
     },
     {
       "vsiTitle": "Mathematical finance",
       "vsiAuthor": "Mark H. A. Davis",
       "relevantPathsAI": [
+        "D.2",
         "D.3.c"
       ],
-      "rationaleAI": "Quantitative aspects of corporate finance including risk management and arbitrage pricing inform securities law (D.3.c)."
+      "rationaleAI": "Mathematical finance covering asset valuation, risk management, and financial contracts addresses commercial transactions (D.2) and corporate finance structure (D.3.c)."
     },
     {
       "vsiTitle": "Microeconomics",
       "vsiAuthor": "Avinash Dixit",
       "relevantPathsAI": [
-        "D.2",
-        "D.3"
+        "D"
       ],
-      "rationaleAI": "Economic theory underlying commercial law -- competition, monopoly, market structures, and antitrust -- provides essential context (D.2, D.3)."
+      "rationaleAI": "Microeconomics covering market structures, monopoly, competition, and antitrust regulation provides economic context for laws governing economic transactions (D)."
     },
     {
       "vsiTitle": "Taxation",
       "vsiAuthor": "Stephen Smith",
       "relevantPathsAI": [
-        "D.3.c"
+        "D"
       ],
-      "rationaleAI": "Tax law relevant to corporate finance and business association governance is addressed (D.3.c)."
+      "rationaleAI": "Taxation covering income and capital gains tax affects economic transactions and the distribution of wealth relevant to laws governing economic transactions (D)."
     },
     {
       "vsiTitle": "Polygamy",
       "vsiAuthor": "Sarah Pearsall",
       "relevantPathsAI": [
-        "B.1"
+        "B",
+        "B.1",
+        "B.1.a"
       ],
-      "rationaleAI": "Laws concerning the marriage contract across jurisdictions and their legal effects are examined (B.1.a)."
+      "rationaleAI": "Polygamy covering plural marriage as an institution across cultures and its intersection with Christianity, Islam, and Mormonism addresses family law (B) and laws concerning the marriage contract (B.1.a)."
     },
     {
       "vsiTitle": "The Rule of Law",
       "vsiAuthor": "Aziz Z. Huq",
-      "relevantPathsAI": [],
-      "rationaleAI": "Rule of law principles underlie property rights, due process, and civil procedure (A, E)."
+      "relevantPathsAI": [
+        "E"
+      ],
+      "rationaleAI": "The rule of law covering due process and legal constraints on power provides foundational principles for civil procedural law (E)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

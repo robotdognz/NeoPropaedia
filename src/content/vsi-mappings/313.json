@@ -5,9 +5,17 @@
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
       "relevantPathsAI": [
-        "F"
+        "F",
+        "F.2",
+        "F.4",
+        "F.6",
+        "F.11",
+        "F.14",
+        "F.15",
+        "F.22",
+        "F.25"
       ],
-      "rationaleAI": "Directly covers animal classification (F) from Porifera and Cnidaria through Annelida, Echinodermata, and chordates."
+      "rationaleAI": "Animal diversity addresses Porifera (F.2), Cnidaria (F.4), Platyhelminthes (F.6), Annelida (F.11), Arthropods (F.14), Mollusks (F.15), Echinoderms (F.22), and Chordates (F.25)."
     },
     {
       "vsiTitle": "Viruses",
@@ -15,7 +23,7 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Directly addresses viruses (A), the first major group in this classification of living things."
+      "rationaleAI": "Virus biology addresses viruses (A)."
     },
     {
       "vsiTitle": "Bacteria",
@@ -23,7 +31,7 @@
       "relevantPathsAI": [
         "B"
       ],
-      "rationaleAI": "Directly covers monerans/bacteria and other prokaryotes (B), including their diversity and classification."
+      "rationaleAI": "Bacterial biology addresses monerans (B)."
     },
     {
       "vsiTitle": "Fungi",
@@ -31,33 +39,40 @@
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "Directly addresses the fungal kingdom (D), covering mycology, decomposition, parasitism, and fungal genetics."
+      "rationaleAI": "Fungal biology addresses fungi (D)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
       "relevantPathsAI": [
-        "E"
+        "E",
+        "E.1",
+        "E.5",
+        "E.6",
+        "E.10"
       ],
-      "rationaleAI": "Covers the plant kingdom (E) from bryophytes through seed plants and angiosperms, including pollination and species diversity."
+      "rationaleAI": "Plant biology addresses bryophytes (E.1), ferns (E.5), conifers (E.6), and angiosperms (E.10)."
     },
     {
       "vsiTitle": "Microbiology",
       "vsiAuthor": "Nicholas P. Money",
       "relevantPathsAI": [
+        "A",
         "B",
+        "C",
         "C.1",
         "D"
       ],
-      "rationaleAI": "Covers classification of microorganisms spanning bacteria (B), protists including algae (C.1), and fungi (D)."
+      "rationaleAI": "Microorganisms address viruses (A), monerans (B), protists/algae (C, C.1), and fungi (D)."
     },
     {
       "vsiTitle": "Insects",
       "vsiAuthor": "Simon Leather",
       "relevantPathsAI": [
-        "F.14"
+        "F.14",
+        "F.14.b"
       ],
-      "rationaleAI": "Covers insects (F.14.b), the largest group within arthropods and the most species-rich animal taxon."
+      "rationaleAI": "Insects address arthropods (F.14) and uniramians (F.14.b)."
     },
     {
       "vsiTitle": "Mammals",
@@ -65,7 +80,7 @@
       "relevantPathsAI": [
         "F.25"
       ],
-      "rationaleAI": "Covers mammals as a major class within chordates (F.25), including their diversity, biology, and fossil record."
+      "rationaleAI": "Mammals connect to chordates (F.25)."
     },
     {
       "vsiTitle": "Reptiles",
@@ -73,7 +88,7 @@
       "relevantPathsAI": [
         "F.25"
       ],
-      "rationaleAI": "Covers reptiles as a major class of chordates (F.25), including crocodiles, snakes, and turtles."
+      "rationaleAI": "Reptiles connect to chordates (F.25)."
     },
     {
       "vsiTitle": "Amphibians",
@@ -81,41 +96,44 @@
       "relevantPathsAI": [
         "F.25"
       ],
-      "rationaleAI": "Covers amphibians as a major class of chordates (F.25), including their biology, adaptations, and evolution."
+      "rationaleAI": "Amphibians connect to chordates (F.25)."
     },
     {
       "vsiTitle": "Coral Reefs",
       "vsiAuthor": "Charles Sheppard",
       "relevantPathsAI": [
-        "F.4"
+        "F.4",
+        "F.4.a"
       ],
-      "rationaleAI": "Covers cnidarians/corals (F.4.a), a major animal phylum in the classification including anthozoans."
+      "rationaleAI": "Corals connect to cnidarians (F.4) and anthozoans (F.4.a)."
     },
     {
       "vsiTitle": "Marine biology",
       "vsiAuthor": "Philip V. Mladenov",
       "relevantPathsAI": [
-        "F.4",
-        "F.15",
-        "F.22",
-        "F.25"
+        "F"
       ],
-      "rationaleAI": "Covers diversity across many marine phyla listed in this section including cnidarians (F.4), mollusks (F.15), echinoderms (F.22), and chordates (F.25)."
+      "rationaleAI": "Marine diversity connects to animals (F)."
     },
     {
       "vsiTitle": "Symbiosis",
       "vsiAuthor": "Nancy A. Moran",
-      "relevantPathsAI": [],
-      "rationaleAI": "Addresses relationships among classified groups including microbiomes, corals, insects, and plant roots, spanning categories B through F."
+      "relevantPathsAI": [
+        "C",
+        "D"
+      ],
+      "rationaleAI": "Endosymbiosis connects to protists (C) and fungi (D)."
     },
     {
       "vsiTitle": "Genomics",
       "vsiAuthor": "John M. Archibald",
       "relevantPathsAI": [
+        "A",
         "B"
       ],
-      "rationaleAI": "Relevant to modern molecular classification methods using DNA sequencing across bacteria (B) and other taxa."
+      "rationaleAI": "Genomic sequencing connects to viruses (A) and monerans (B)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

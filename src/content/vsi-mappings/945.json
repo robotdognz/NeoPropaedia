@@ -4,14 +4,21 @@
     {
       "vsiTitle": "African History",
       "vsiAuthor": "John Parker, Richard Rathbone",
-      "relevantPathsAI": [],
-      "rationaleAI": "Covers southern African history including Great Zimbabwe, the slave trade, colonialism, and the impact of European settlement."
+      "relevantPathsAI": [
+        "A",
+        "B",
+        "C"
+      ],
+      "rationaleAI": "African history connects to southern Africa across all periods."
     },
     {
       "vsiTitle": "African Politics",
       "vsiAuthor": "Ian Taylor",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections C4-C7 on political developments including the rise of the Zulu Empire and colonial-era conflicts."
+      "relevantPathsAI": [
+        "C.6",
+        "C.7"
+      ],
+      "rationaleAI": "Colonial legacies connect to Boer-British relations (C.6) and mineral discoveries (C.7)."
     },
     {
       "vsiTitle": "Nelson Mandela",
@@ -22,63 +29,88 @@
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly relevant to subsections C3 and C6 on the Dutch and British settlements at the Cape and the British colonies of Natal and Cape Colony."
+      "relevantPathsAI": [
+        "C.3",
+        "C.6"
+      ],
+      "rationaleAI": "British expansion connects to the Cape (C.3) and Boer conflicts (C.6)."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection C1 on Portuguese expansion into the Zambezi valley and European exploration of southern Africa."
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Portuguese exploration connects to Zambezi expansion (C.1)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections C1-C3 on Portuguese, Dutch, and British imperial expansion into southern Africa."
+      "relevantPathsAI": [
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Colonial empire connects to Portuguese (C.1), slave trade (C.2), and Dutch settlement (C.3)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1 on Stone Age and Iron Age origins and the archaeological evidence from Great Zimbabwe and Mapungubwe."
+      "relevantPathsAI": [
+        "A",
+        "B.1"
+      ],
+      "rationaleAI": "Archaeological methods connect to sources (A) and origins of mankind (B.1)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1 on the origins of mankind and Stone Age and Iron Age cultural development in southern Africa."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Prehistoric development connects to Stone Age origins (B.1)."
     },
     {
       "vsiTitle": "Human evolution",
       "vsiAuthor": "Bernard Wood",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsection B1 on the origins of mankind in southern Africa, one of the key regions for human evolution."
+      "relevantPathsAI": [
+        "B.1"
+      ],
+      "rationaleAI": "Human evolution connects to origins of mankind (B.1)."
     },
     {
       "vsiTitle": "Racism",
       "vsiAuthor": "Ali Rattansi",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections C3-C7 on the racial dynamics between Boers, British, and indigenous African populations."
+      "relevantPathsAI": [
+        "C.6"
+      ],
+      "rationaleAI": "Colonial racism connects to frontier conflicts (C.6)."
     },
     {
       "vsiTitle": "Diaspora",
       "vsiAuthor": "Kevin Kenny",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to subsections C2 and C5 on the slave trade and the migrations of peoples in southern Africa."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Migration connects to African migrations and Zulu expansion (C.4)."
     },
     {
       "vsiTitle": "African Religions",
       "vsiAuthor": "Jacob K. Olupona",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the indigenous religious traditions of the Bantu-speaking peoples and Khoisan discussed in subsection B."
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Indigenous traditions connect to southern African civilizations (A)."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
-      "relevantPathsAI": [],
-      "rationaleAI": "Relevant to the colonial dynamics of Portuguese, Dutch, and British settlement and their impact on indigenous peoples."
+      "relevantPathsAI": [
+        "C"
+      ],
+      "rationaleAI": "Colonial exploitation connects to European settlement (C)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

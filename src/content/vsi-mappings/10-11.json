@@ -4,48 +4,58 @@
     {
       "vsiTitle": "Logic",
       "vsiAuthor": "Graham Priest",
-      "relevantPathsAI": [],
-      "rationaleAI": "Directly covers the nature, varieties, and scope of logic, including necessity, decision theory, and descriptions, central to both A (history) and B (philosophy of logic)."
+      "relevantPathsAI": [
+        "A",
+        "A.3",
+        "A.4",
+        "B",
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.2.c"
+      ],
+      "rationaleAI": "Propositional and predicate logic, validity, axioms, and mathematical proofs span the modern development of logic (A.3, A.4). Coverage of modal logic and necessity/possibility relates to alternative logics (B.2.c). The treatment of logic's scope and symbolic notation addresses the nature and varieties of logic (B.1.a), and Godel's incompleteness theorems and computability connect to limitations of logic (B.1.b)."
     },
     {
       "vsiTitle": "Aristotle",
       "vsiAuthor": "Jonathan Barnes",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b",
+        "A.1.c"
       ],
-      "rationaleAI": "Aristotle founded the logic of predicates, developed syllogistic and modal logic, and is the pivotal figure in ancient logic covered in A.1.b."
+      "rationaleAI": "Aristotle's foundational contributions to formal logic, syllogistic, and modal logic directly address the logic of predicates (A.1.b). His relationship to Theophrastus and subsequent developments in predicate logic connect to later developments (A.1.c)."
     },
     {
       "vsiTitle": "Plato",
       "vsiAuthor": "Julia Annas",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a"
       ],
-      "rationaleAI": "Plato is cited as a precursor of ancient logic in A.1.a, contributing theories of language and the axiomatic method."
+      "rationaleAI": "Plato's contributions to theories of language, the axiomatic method, and dialectical reasoning represent precursors of ancient logic (A.1.a) alongside the Sophists and Socrates."
     },
     {
       "vsiTitle": "Socrates",
       "vsiAuthor": "C. C. W. Taylor",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a"
       ],
-      "rationaleAI": "Socrates is identified as a precursor of ancient logic in A.1.a, contributing to theories of language and argumentation."
+      "rationaleAI": "The Socratic method of dialectical questioning represents a key precursor of ancient logic (A.1.a), contributing to theories of language and argumentation before Aristotle's formalization."
     },
     {
       "vsiTitle": "Presocratic Philosophy",
       "vsiAuthor": "Catherine Osborne",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a"
       ],
-      "rationaleAI": "The Presocratics including Parmenides and Democritus contributed early reasoning and argumentation that preceded formal logic in A.1."
+      "rationaleAI": "Presocratic exploration of reason, perception, and proto-scientific inquiry through figures like Parmenides and Heraclitus represents precursors of ancient logic (A.1.a) in their contributions to early theories of language and rational argument."
     },
     {
       "vsiTitle": "Stoicism",
       "vsiAuthor": "Brad Inwood",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.d"
       ],
-      "rationaleAI": "The Stoics founded the logic of propositions (A.1.d), a fundamental branch of formal logic."
+      "rationaleAI": "Stoic logic, particularly the contributions of Chrysippus and the school's development of propositional logic, directly addresses the founding of the logic of propositions through Stoic contributions (A.1.d)."
     },
     {
       "vsiTitle": "Ancient philosophy",
@@ -53,144 +63,157 @@
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Covers the philosophical context of ancient logic including the Sophists, Plato, Aristotle, and Hellenistic schools central to A.1."
+      "rationaleAI": "Broad coverage of ancient Graeco-Roman philosophical traditions including Platonism, Aristotelianism, Stoicism, and Scepticism encompasses the entire period of ancient logic (A.1), including debates in logic across multiple schools."
     },
     {
       "vsiTitle": "Medieval Philosophy",
       "vsiAuthor": "John Marenbon",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.2.a",
+        "A.2.b"
       ],
-      "rationaleAI": "Medieval logic is a major topic (A.2), covering Arabic contributions, William of Ockham, the old and new logic, and medieval theories of language and supposition."
+      "rationaleAI": "Coverage of Boethius, Abelard, William of Ockham, and the problem of universals directly addresses medieval logic development (A.2). The distinctive literary forms and institutions of medieval philosophy relate to the transmission of logical traditions (A.2.a), and medieval theories of language connect to categorematic and syncategorematic terms (A.2.b)."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
       "vsiAuthor": "Peter Adamson",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.a"
       ],
-      "rationaleAI": "A.2.a specifically mentions Arabic contributions to medieval logic, making Islamic philosophical traditions directly relevant."
+      "rationaleAI": "Arabic contributions to philosophy including Aristotelian influences and engagement with reason connect to the development of medieval logic through Arabic contributions (A.2.a)."
     },
     {
       "vsiTitle": "Ibn Sīnā (Avicenna)",
       "vsiAuthor": "Peter Adamson",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.a"
       ],
-      "rationaleAI": "Avicenna's contributions to Islamic philosophy included significant work in logic, relevant to medieval logic developments in A.2.a."
+      "rationaleAI": "Avicenna's innovations in logic and his influence on Latin scholastic philosophy directly address Arabic contributions to the development of medieval logic (A.2.a)."
     },
     {
       "vsiTitle": "Thomas Aquinas",
       "vsiAuthor": "Fergus Kerr",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.2.c"
       ],
-      "rationaleAI": "Aquinas engaged extensively with Aristotelian logic in his Scholastic method, relevant to medieval logic summations in A.2."
+      "rationaleAI": "Aquinas's synthesis of Aristotelian philosophy with Christian doctrine, including engagement with Islamic philosophy and scholastic method, contributes to medieval developments in formal logic (A.2.c) and the broader medieval logical tradition (A.2)."
     },
     {
       "vsiTitle": "Descartes",
       "vsiAuthor": "Tom Sorell",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a"
       ],
-      "rationaleAI": "Descartes's method and discourse influenced logic in the Renaissance (A.3.a), including the Port-Royal logic."
+      "rationaleAI": "Descartes's methodological doubt and mathematical approach to natural science connect to logic in the Renaissance (A.3.a) and the influence of the rise of the natural sciences on logical thought."
     },
     {
       "vsiTitle": "Leibniz",
       "vsiAuthor": "Maria Rosa Antognazza",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b"
       ],
-      "rationaleAI": "Leibniz is cited in A.3.b for his characteristica universalis and logical calculus, key contributions to mathematical logic during the Enlightenment."
+      "rationaleAI": "Leibniz's contributions to logic including the characteristica universalis and general calculus of reasoning directly address the rise of mathematical logic during the Enlightenment (A.3.b)."
     },
     {
       "vsiTitle": "Kant",
       "vsiAuthor": "Roger Scruton",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b",
+        "B.1"
       ],
-      "rationaleAI": "Kant's critical philosophy deeply engaged with logic; his deduction and rationalism relate to Enlightenment-era logic developments in A.3.b-c."
+      "rationaleAI": "Kant's synthesis of rationalism and empiricism, his contributions to logic, and the categories of understanding relate to Enlightenment developments in logic (A.3.b) and to the organization of logic as a discipline (B.1)."
     },
     {
       "vsiTitle": "Russell",
       "vsiAuthor": "A. C. Grayling",
       "relevantPathsAI": [
-        "A.4"
+        "A.4.a",
+        "A.4.b",
+        "B.1.b"
       ],
-      "rationaleAI": "Russell's Logicism and theory of types are explicitly discussed in A.4.a as a major 20th-century development in logic."
+      "rationaleAI": "Russell's Principia Mathematica and theory of descriptions directly address the conflict of Logicism with Intuitionism and Formalism (A.4.a). His contributions to mathematical logic and philosophy of language relate to developments in propositional and predicate logic (A.4.b) and Godel's incompleteness theorems (B.1.b)."
     },
     {
       "vsiTitle": "Wittgenstein",
       "vsiAuthor": "A. C. Grayling",
       "relevantPathsAI": [
-        "A.4"
+        "A.4",
+        "A.4.b",
+        "B.2.a"
       ],
-      "rationaleAI": "Wittgenstein made foundational contributions to 20th-century logic and the philosophy of logic, including work on logical semantics (A.4, B)."
+      "rationaleAI": "The Tractatus Logico-Philosophicus and logical atomism relate to 20th-century logic (A.4) and developments in propositional logic (A.4.b). The later Philosophical Investigations on language games and meaning connects to problems in meaning and truth (B.2.a)."
     },
     {
       "vsiTitle": "Gödel's Theorem",
       "vsiAuthor": "A. W. Moore",
       "relevantPathsAI": [
-        "B.1"
+        "A.4.a",
+        "A.4.c",
+        "B.1.b"
       ],
-      "rationaleAI": "Godel's incompleteness theorems are specifically cited in B.1.b as a central problem of logic, covering consistency and axiomatization."
+      "rationaleAI": "Godel's incompleteness theorems directly address metalogical studies and the properties of axiomatized systems (A.4.c), the conflict with Hilbert's Formalism (A.4.a), and the limitations of logic including Godel's incompleteness theorems (B.1.b)."
     },
     {
       "vsiTitle": "Analytic Philosophy",
       "vsiAuthor": "Michael Beaney",
       "relevantPathsAI": [
-        "A.4"
+        "A.4",
+        "B.1.a"
       ],
-      "rationaleAI": "Analytic philosophy was deeply intertwined with 20th-century developments in formal logic, including Frege and Russell, relevant to A.4 and B."
+      "rationaleAI": "Analytic philosophy's foundations in the work of Frege, Russell, Moore, and Wittgenstein, with emphasis on logical analysis and conceptual clarification, relate to 20th-century logic (A.4) and the nature and varieties of logic (B.1.a)."
     },
     {
       "vsiTitle": "Indian philosophy",
       "vsiAuthor": "Sue Hamilton",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.a"
       ],
-      "rationaleAI": "A.5.a covers Indian logic, its origins in scriptural commentaries (sutras), special problems in grammar, and types of inference."
+      "rationaleAI": "Coverage of the Nyaya school and Indian epistemological traditions connects to Indian logic (A.5.a), including origins in commentary on sutras and special types of inference."
     },
     {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
       "relevantPathsAI": [
-        "A.5"
+        "A.5.b"
       ],
-      "rationaleAI": "A.5.b discusses Chinese logic originating in controversies between Confucianism, Taoism, and Moism, and its neglect after Neo-Confucianism."
+      "rationaleAI": "Confucian philosophical tradition and the establishment of Neo-Confucianism in the 11th century relates to Chinese logic (A.5.b), particularly its origins in philosophical controversies and its neglect after Neo-Confucianism's establishment."
     },
     {
       "vsiTitle": "Mathematics",
       "vsiAuthor": "Timothy Gowers",
       "relevantPathsAI": [
-        "A.3.c"
+        "B.1.b"
       ],
-      "rationaleAI": "Covers abstraction and Euclidean methods relevant to the rise of mathematical logic and the relation between logic and foundations of mathematics (A.3.c)."
+      "rationaleAI": "Mathematical proof, abstraction, and the philosophical underpinnings of mathematical truth connect to features and problems of logic (B.1.b) including questions about the relationship between logic and computability."
     },
     {
       "vsiTitle": "Meaning",
       "vsiAuthor": "Emma Borg and Sarah A. Fisher",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.a"
       ],
-      "rationaleAI": "Directly addresses formal semantics, reference, and truth -- core topics in logical semantics and problems of meaning discussed in B.2.a."
+      "rationaleAI": "Philosophy of meaning addressing word meaning, reference, truth, formal semantics, and speech act theory directly relates to problems in meaning and truth (B.2.a), including logical semantics of modal concepts."
     },
     {
       "vsiTitle": "Metaphysics",
       "vsiAuthor": "Stephen Mumford",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.b"
       ],
-      "rationaleAI": "B.2.b addresses problems of ontology including individuation and existence, which are core metaphysical concerns in the philosophy of logic."
+      "rationaleAI": "Metaphysical analysis of objects, substance, existence, modality, and possible worlds directly addresses problems of ontology (B.2.b), including problems concerning individuation and existence."
     },
     {
       "vsiTitle": "The History of Mathematics",
       "vsiAuthor": "Jacqueline Stedall",
       "relevantPathsAI": [
+        "A.3.b",
         "A.3.c"
       ],
-      "rationaleAI": "Covers the historical development of mathematics including its relationship to logic, relevant to A.3.c on Boole, Frege, and Cantor."
+      "rationaleAI": "Historical development of mathematics covering figures like Descartes, Euler, and Newton connects to the rise of mathematical logic during the Enlightenment (A.3.b) and the relationship between logic and mathematics in the 19th century (A.3.c)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }

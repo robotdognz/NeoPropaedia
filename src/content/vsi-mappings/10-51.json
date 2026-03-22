@@ -4,96 +4,111 @@
     {
       "vsiTitle": "Philosophy",
       "vsiAuthor": "Edward Craig",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides an overview of the discipline whose history is the subject of this entire section."
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.3",
+        "B"
+      ],
+      "rationaleAI": "Coverage of major thinkers including Plato, Descartes, Hume, Hobbes, and Nietzsche spanning Western and Eastern traditions, with attention to early Buddhist writers, maps broadly to the history of Western philosophy (A) and non-Western philosophy (B)."
     },
     {
       "vsiTitle": "Philosophical Method",
       "vsiAuthor": "Timothy Williamson",
       "relevantPathsAI": [
-        "A.1"
+        "A",
+        "A.3.b.i"
       ],
-      "rationaleAI": "Philosophical method has developed throughout the history of philosophy, from Socratic method (A.1.b.i) through modern approaches."
+      "rationaleAI": "The methodology of philosophical inquiry including philosophy's relationship to mathematics and science, the role of common sense, and thought experiments connects broadly to the history of philosophical methods. Bacon's attempt to formulate a new scientific method (A.3.b.i) is relevant to the history of how philosophical methods evolved."
     },
     {
       "vsiTitle": "Ancient philosophy",
       "vsiAuthor": "Julia Annas",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.1.a",
+        "A.1.b",
+        "A.1.c"
       ],
-      "rationaleAI": "Section A.1 covers ancient Greek and Roman philosophy from the Pre-Socratics through Hellenistic philosophy."
+      "rationaleAI": "Pre-Socratic through Neoplatonist philosophy covering Platonism, Aristotelianism, Stoicism, Epicureanism, and Scepticism maps comprehensively to ancient Greek and Roman philosophy (A.1), from the beginnings (A.1.a) through the maturity (A.1.b) to Hellenistic and Roman developments (A.1.c)."
     },
     {
       "vsiTitle": "Presocratic Philosophy",
       "vsiAuthor": "Catherine Osborne",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.a",
+        "A.1.a.i",
+        "A.1.a.ii",
+        "A.1.a.iii"
       ],
-      "rationaleAI": "Section A.1.a covers the Pre-Socratic philosophers including cosmology, metaphysics of matter, and Pythagorean number theory."
+      "rationaleAI": "Thales through Protagoras covering cosmological speculation, first principles, atomic theory (Democritus), and the relationship between reason and perception maps to the beginnings of philosophy (A.1.a), cosmology and metaphysics of matter (A.1.a.i), problems in the theory of knowledge (A.1.a.ii), and Pythagorean metaphysics of number (A.1.a.iii)."
     },
     {
       "vsiTitle": "Socrates",
       "vsiAuthor": "C. C. W. Taylor",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b.i"
       ],
-      "rationaleAI": "Section A.1.b.i covers Socrates's ethical concerns, the Socratic method, and his influence."
+      "rationaleAI": "Socrates' dialectical questioning, his doctrines on virtue and knowledge, and his enduring influence on philosophy map directly to the ethical concerns and positions of Socrates, the Socratic method, and his influence (A.1.b.i)."
     },
     {
       "vsiTitle": "Plato",
       "vsiAuthor": "Julia Annas",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b.ii"
       ],
-      "rationaleAI": "Section A.1.b.ii covers Plato's dialogues on politics, ethics, metaphysics, epistemology, and cosmology."
+      "rationaleAI": "Plato's dialogues on knowledge, ethics, metaphysics, political thought, the theory of Forms, and the relationship between mathematics and philosophy map directly to the philosophy of Plato (A.1.b.ii)."
     },
     {
       "vsiTitle": "Aristotle",
       "vsiAuthor": "Jonathan Barnes",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b.iii"
       ],
-      "rationaleAI": "Section A.1.b.iii covers Aristotle's metaphysics, logic, epistemology, biology, ethics, and politics."
+      "rationaleAI": "Aristotle's contributions to formal logic, metaphysics, ethics, political theory, and biology, including his criticisms of Platonic metaphysics and empirical researches, map directly to the philosophy of Aristotle (A.1.b.iii)."
     },
     {
       "vsiTitle": "Stoicism",
       "vsiAuthor": "Brad Inwood",
       "relevantPathsAI": [
-        "A.1.c"
+        "A.1.c.i"
       ],
-      "rationaleAI": "Section A.1.c.i covers Stoic philosophy from Zeno through Chrysippus and its role during the late Roman Republic and empire."
+      "rationaleAI": "Foundational doctrines of Zeno, Cleanthes, and Chrysippus, and later developments by Seneca, Epictetus, and Marcus Aurelius covering logic, ethics, and metaphysics map directly to the philosophy of the Stoics (A.1.c.i)."
     },
     {
       "vsiTitle": "Epicureanism",
       "vsiAuthor": "Catherine Wilson",
       "relevantPathsAI": [
-        "A.1.c"
+        "A.1.c.ii",
+        "A.3.a.ii"
       ],
-      "rationaleAI": "Section A.1.c.ii covers Epicurean philosophy about the universe, pleasure, and relationship to the gods."
+      "rationaleAI": "Epicurus' teachings on simplicity, pleasure, and materialist framework map to the philosophy of the Epicureans (A.1.c.ii). The influence on early modern science connects to the renewed interest in Atomistic Materialism during the Renaissance (A.3.a.ii)."
     },
     {
       "vsiTitle": "Scepticism",
       "vsiAuthor": "Duncan Pritchard",
       "relevantPathsAI": [
-        "A.1.c"
+        "A.1.c.iii",
+        "A.3.c.i"
       ],
-      "rationaleAI": "Section A.1.c.iii covers the Skeptics including Pyrrhon's teaching about uncertainty in knowing."
+      "rationaleAI": "Ancient Pyrrhonism and the epistemological tradition maintaining that knowledge is impossible map to the philosophy of the Skeptics (A.1.c.iii). The continuing role of skepticism connects to Hume's science of man (A.3.c.i)."
     },
     {
       "vsiTitle": "Augustine",
       "vsiAuthor": "Henry Chadwick",
       "relevantPathsAI": [
-        "A.2"
+        "A.1.c.v",
+        "A.2.a.i"
       ],
-      "rationaleAI": "Section A.2.a.i covers Augustine's use of Neoplatonist thought and his doctrine of man."
+      "rationaleAI": "Augustine's transition from pagan to Christian philosophy and his use of Neoplatonist thought map to Jewish and Christian philosophy during the Hellenistic Age (A.1.c.v) and directly to Augustine's role in the patristic period (A.2.a.i)."
     },
     {
       "vsiTitle": "Anselm",
       "vsiAuthor": "Thomas Williams",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.a.i"
       ],
-      "rationaleAI": "Section A.2.a.i specifically mentions Anselm's proofs of the existence of God."
+      "rationaleAI": "Anselm's ontological argument for God's existence and perfect-being theology map directly to Anselm's proofs of the existence of God within the patristic period (A.2.a.i)."
     },
     {
       "vsiTitle": "Thomas Aquinas",
@@ -101,432 +116,464 @@
       "relevantPathsAI": [
         "A.2.c"
       ],
-      "rationaleAI": "Section A.2.c covers Aquinas's synthesis of Aristotelianism and Christian theology."
+      "rationaleAI": "Aquinas's synthesis of Aristotelian philosophy with Christian doctrine maps directly to the age of the Schoolmen and Thomas Aquinas' synthesis (A.2.c)."
     },
     {
       "vsiTitle": "Medieval Philosophy",
       "vsiAuthor": "John Marenbon",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.2.a",
+        "A.2.b",
+        "A.2.c",
+        "A.2.d"
       ],
-      "rationaleAI": "Section A.2 covers philosophy in the Middle Ages from the patristic period through late medieval thought."
+      "rationaleAI": "Interlinked Christian, Muslim, and Jewish traditions covering Boethius, Abelard, Avicenna, Maimonides, and Ockham span early medieval philosophy (A.2.a), Arabic and Jewish philosophy (A.2.b), the Schoolmen (A.2.c), and late medieval criticism (A.2.d)."
     },
     {
       "vsiTitle": "Ibn Sīnā (Avicenna)",
       "vsiAuthor": "Peter Adamson",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b",
+        "C.6"
       ],
-      "rationaleAI": "Section A.2.b covers the contribution of Arabic philosophy and Islamic philosophers' role in transmitting Aristotle."
+      "rationaleAI": "Avicenna's innovations in logic, metaphysics, and proof for God's existence map to the contribution of Arabic and Jewish philosophy (A.2.b) and Islamic philosophy (C.6)."
     },
     {
       "vsiTitle": "Moses Maimonides",
       "vsiAuthor": "Ross Brann",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b",
+        "C.5"
       ],
-      "rationaleAI": "Section A.2.b covers the teaching of Maimonides as part of the contribution of Jewish philosophy."
+      "rationaleAI": "Maimonides' rationalist methodology and The Guide for the Perplexed map to Arabic and Jewish philosophy (A.2.b) and Jewish philosophy (C.5)."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
       "vsiAuthor": "Peter Adamson",
       "relevantPathsAI": [
-        "A.2",
+        "A.2.b",
         "C.6"
       ],
-      "rationaleAI": "Section A.2.b covers Islamic philosophy, and C.6 covers Islamic philosophy as philosophy associated with religion."
+      "rationaleAI": "Philosophy in Islamic lands from late antiquity through the twentieth century maps to Arabic and Jewish philosophy (A.2.b) and Islamic philosophy (C.6)."
     },
     {
       "vsiTitle": "Late Antiquity",
       "vsiAuthor": "Gillian Clark",
       "relevantPathsAI": [
-        "A.1.c",
-        "A.2"
+        "A.1.c.v",
+        "A.2.a"
       ],
-      "rationaleAI": "Section A.1.c.v covers Jewish and Christian philosophy during the Hellenistic Age, and A.2.a covers the patristic period."
+      "rationaleAI": "The transition period 300-800 CE bridges Jewish and Christian philosophy during the Hellenistic Age (A.1.c.v) and early medieval philosophy (A.2.a)."
     },
     {
       "vsiTitle": "Machiavelli",
       "vsiAuthor": "Quentin Skinner",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a.i"
       ],
-      "rationaleAI": "Section A.3.a.i specifically names Machiavelli's views on political power in Renaissance philosophy."
+      "rationaleAI": "Machiavelli's political theory on the nature and moral status of political power maps directly to political theory in the Renaissance (A.3.a.i)."
     },
     {
       "vsiTitle": "Hobbes",
       "vsiAuthor": "Richard Tuck",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a.i",
+        "A.3.b.i"
       ],
-      "rationaleAI": "Hobbes is named in A.3.a.i (political theory) and A.3.b.i (Empiricist tradition)."
+      "rationaleAI": "Hobbes's Leviathan connects to Renaissance political theory (A.3.a.i). His materialist epistemology maps to Empiricist tradition developments (A.3.b.i)."
     },
     {
       "vsiTitle": "Descartes",
       "vsiAuthor": "Tom Sorell",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b.ii"
       ],
-      "rationaleAI": "Section A.3.b.ii covers Descartes's antiempirical metaphysics and dualism."
+      "rationaleAI": "Descartes' methodological doubt, the Cogito, and mind-body dualism map directly to the Rationalist tradition (A.3.b.ii)."
     },
     {
       "vsiTitle": "Spinoza",
       "vsiAuthor": "Roger Scruton",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b.ii"
       ],
-      "rationaleAI": "Section A.3.b.ii names Spinoza in the Rationalist tradition."
+      "rationaleAI": "Spinoza's substance monism and Ethics employing geometrical method map to the Rationalist tradition (A.3.b.ii)."
     },
     {
       "vsiTitle": "Leibniz",
       "vsiAuthor": "Maria Rosa Antognazza",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b.ii"
       ],
-      "rationaleAI": "Section A.3.b.ii names Leibniz in the Rationalist tradition."
+      "rationaleAI": "Leibniz's monadology, possible worlds, and theodicy map to the Rationalist tradition (A.3.b.ii)."
     },
     {
       "vsiTitle": "Locke",
       "vsiAuthor": "John Dunn",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.c.i",
+        "A.3.c.iii"
       ],
-      "rationaleAI": "Section A.3.c.i covers Locke's inquiry into the origin and nature of reason, and A.3.c.iii covers freedom and equality."
+      "rationaleAI": "Locke's empiricist theory maps to epistemological issues (A.3.c.i). His defense of liberal values connects to social and political philosophy (A.3.c.iii)."
     },
     {
       "vsiTitle": "Hume",
       "vsiAuthor": "James Anthony Harris",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.c.i"
       ],
-      "rationaleAI": "Section A.3.c.i covers Hume's science of man as part of Enlightenment epistemology."
+      "rationaleAI": "Hume's theories of perception, causation, and the problem of induction map directly to Hume's science of man (A.3.c.i)."
     },
     {
       "vsiTitle": "Kant",
       "vsiAuthor": "Roger Scruton",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.c.i"
       ],
-      "rationaleAI": "Section A.3.c.i covers Kant's critical examination of reason during the Enlightenment."
+      "rationaleAI": "Kant's transcendental idealism and synthesis of rationalism and empiricism map to Kant's critical examination of reason (A.3.c.i)."
     },
     {
       "vsiTitle": "Rousseau",
       "vsiAuthor": "Robert Wokler",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.c.iii"
       ],
-      "rationaleAI": "Section A.3.c.iii covers Rousseau's concern with freedom and equality of citizens."
+      "rationaleAI": "Rousseau's social contract, citizenship, liberty, and virtue map to the concern with freedom and equality of citizens (A.3.c.iii)."
     },
     {
       "vsiTitle": "Hegel",
       "vsiAuthor": "Peter Singer",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.d.i"
       ],
-      "rationaleAI": "Section A.3.d.i covers Hegel's Idealism as part of the resurgence of the metaphysical spirit."
+      "rationaleAI": "Hegel's dialectical method and absolute idealism map to the resurgence of the metaphysical spirit and the Idealism of Fichte, Schelling, and Hegel (A.3.d.i)."
     },
     {
       "vsiTitle": "Marx",
       "vsiAuthor": "Peter Singer",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.d.ii",
+        "A.3.e.ii"
       ],
-      "rationaleAI": "Section A.3.d.ii covers the dialectical Materialism of Marx and Engels, and A.3.e.ii covers developments in Marxist thought."
+      "rationaleAI": "Marx's dialectical materialism maps to the dialectical Materialism of Marx and Engels (A.3.d.ii). Continuing influence connects to developments in Marxist thought (A.3.e.ii)."
     },
     {
       "vsiTitle": "Kierkegaard",
       "vsiAuthor": "Patrick Gardiner",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.d.iii"
       ],
-      "rationaleAI": "Section A.3.d.iii covers Kierkegaard's preoccupation with states of consciousness."
+      "rationaleAI": "Kierkegaard's emphasis on subjectivity and opposition to Hegelianism maps to the reaction against Rationalism (A.3.d.iii)."
     },
     {
       "vsiTitle": "Schopenhauer",
       "vsiAuthor": "Christopher Janaway",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.d.iii"
       ],
-      "rationaleAI": "Section A.3.d.iii covers Schopenhauer's doctrine of cosmic will."
+      "rationaleAI": "Schopenhauer's doctrine of cosmic will maps to the reaction against Rationalism (A.3.d.iii)."
     },
     {
       "vsiTitle": "Nietzsche",
       "vsiAuthor": "Michael Tanner",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.d.iii"
       ],
-      "rationaleAI": "Section A.3.d.iii mentions Nietzsche as part of the 19th-century reaction against Rationalism."
+      "rationaleAI": "Nietzsche's will to power, eternal recurrence, and critique of morality map to the writings of Nietzsche within the reaction against Rationalism (A.3.d.iii)."
     },
     {
       "vsiTitle": "John Stuart Mill",
       "vsiAuthor": "Gregory Claeys",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.d.ii"
       ],
-      "rationaleAI": "Section A.3.d.ii covers J.S. Mill's theory of knowledge and ethics in the empirical tradition."
+      "rationaleAI": "Mill's contributions to utilitarianism and philosophy of logic map to J.S. Mill's theory of knowledge and ethics (A.3.d.ii)."
     },
     {
       "vsiTitle": "Wittgenstein",
       "vsiAuthor": "A. C. Grayling",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e"
       ],
-      "rationaleAI": "Wittgenstein is central to 20th-century philosophy, relevant to developments in A.3.e."
+      "rationaleAI": "Wittgenstein's Tractatus and Philosophical Investigations connect to 20th-century philosophy (A.3.e)."
     },
     {
       "vsiTitle": "Russell",
       "vsiAuthor": "A. C. Grayling",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e",
+        "A.3.e.i"
       ],
-      "rationaleAI": "Russell is a major 20th-century philosopher relevant to A.3.e developments in logic and analytic philosophy."
+      "rationaleAI": "Russell's cofounding of analytic philosophy and Principia Mathematica connect to 20th-century philosophy (A.3.e) and independent speculative philosophies (A.3.e.i)."
     },
     {
       "vsiTitle": "Heidegger",
       "vsiAuthor": "Michael Inwood",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e"
       ],
-      "rationaleAI": "Heidegger's existential and phenomenological thought is relevant to 20th-century philosophy in A.3.e."
+      "rationaleAI": "Heidegger's Being and Time and phenomenological method represent a major 20th-century contribution (A.3.e)."
     },
     {
       "vsiTitle": "Hannah Arendt",
       "vsiAuthor": "Dana Villa",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e"
       ],
-      "rationaleAI": "Arendt is a major 20th-century social and political philosopher relevant to A.3.e.i."
+      "rationaleAI": "Arendt's analyses of totalitarianism and political action represent a significant 20th-century contribution (A.3.e)."
     },
     {
       "vsiTitle": "Theodor W. Adorno",
       "vsiAuthor": "Andrew Bowie",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e",
+        "A.3.e.ii"
       ],
-      "rationaleAI": "Adorno is a major 20th-century critical theorist relevant to independent social philosophies in A.3.e.i."
+      "rationaleAI": "Adorno's critical theory connects to 20th-century philosophy (A.3.e) and Marxist thought (A.3.e.ii)."
     },
     {
       "vsiTitle": "Habermas",
       "vsiAuthor": "Gordon Finlayson",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e",
+        "A.3.e.ii"
       ],
-      "rationaleAI": "Habermas is a major 20th-century social philosopher relevant to A.3.e.i."
+      "rationaleAI": "Habermas's communicative action theory connects to 20th-century philosophy (A.3.e) and Marxist thought (A.3.e.ii)."
     },
     {
       "vsiTitle": "Foucault",
       "vsiAuthor": "Gary Gutting",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e"
       ],
-      "rationaleAI": "Foucault is a major 20th-century philosopher relevant to developments in A.3.e."
+      "rationaleAI": "Foucault's genealogical method and power-knowledge analysis represent a major 20th-century contribution (A.3.e)."
     },
     {
       "vsiTitle": "Derrida",
       "vsiAuthor": "Simon Glendinning",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e"
       ],
-      "rationaleAI": "Derrida is a major 20th-century philosopher relevant to Continental philosophy developments in A.3.e."
+      "rationaleAI": "Derrida's deconstruction and differance represent a significant 20th-century development (A.3.e)."
     },
     {
       "vsiTitle": "Existentialism",
       "vsiAuthor": "Thomas Flynn",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.d.iii",
+        "A.3.e"
       ],
-      "rationaleAI": "Existentialism's roots in Kierkegaard (A.3.d.iii) and 20th-century development are covered in this section."
+      "rationaleAI": "Existentialism bridges the 19th-century reaction against Rationalism (A.3.d.iii) and 20th-century philosophy (A.3.e)."
     },
     {
       "vsiTitle": "Continental philosophy",
       "vsiAuthor": "Simon Critchley",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.d",
+        "A.3.e"
       ],
-      "rationaleAI": "Continental philosophy covers major traditions from phenomenology through poststructuralism relevant to A.3.e."
+      "rationaleAI": "German Idealism through post-structuralism spans 19th-century philosophy (A.3.d) and 20th-century developments (A.3.e)."
     },
     {
       "vsiTitle": "German philosophy",
       "vsiAuthor": "Andrew Bowie",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.c",
+        "A.3.d",
+        "A.3.e"
       ],
-      "rationaleAI": "German philosophy spans the Rationalist tradition (A.3.b), Idealism (A.3.d.i), and 20th-century developments."
+      "rationaleAI": "German philosophy spans the Enlightenment (A.3.c), 19th-century philosophy (A.3.d), and 20th-century developments (A.3.e)."
     },
     {
       "vsiTitle": "French Philosophy",
       "vsiAuthor": "Stephen Gaukroger, Knox Peden",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.a.ii",
+        "A.3.c",
+        "A.3.e"
       ],
-      "rationaleAI": "French philosophy covers the Enlightenment (A.3.c) through existentialism and structuralism."
+      "rationaleAI": "French philosophical thought spans Renaissance humanism (A.3.a.ii), the Enlightenment (A.3.c), and 20th-century philosophy (A.3.e)."
     },
     {
       "vsiTitle": "Analytic Philosophy",
       "vsiAuthor": "Michael Beaney",
-      "relevantPathsAI": [],
-      "rationaleAI": "Analytic philosophy is a major 20th-century tradition encompassing logical analysis and linguistic philosophy."
+      "relevantPathsAI": [
+        "A.3.e"
+      ],
+      "rationaleAI": "Analytic philosophy founded by Frege, Russell, Moore, and Wittgenstein represents a major 20th-century movement (A.3.e)."
     },
     {
       "vsiTitle": "Indian philosophy",
       "vsiAuthor": "Sue Hamilton",
       "relevantPathsAI": [
-        "B.1"
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.1.c",
+        "B.1.d"
       ],
-      "rationaleAI": "Section B.1 covers Indian philosophy from early Hindu and Buddhist thought through the schools of Vedanta."
+      "rationaleAI": "Six orthodox schools plus heterodox traditions map to Indian philosophy (B.1), early thought (B.1.a), system building (B.1.b), systematic development (B.1.c), and Vedanta schools (B.1.d)."
     },
     {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
       "relevantPathsAI": [
-        "B.2",
-        "B.2.c"
+        "B.2.a",
+        "B.2.c",
+        "B.2.d"
       ],
-      "rationaleAI": "Section B.2.a covers Confucianism as a classical Chinese philosophical school, and B.2.c covers Neo-Confucianism."
+      "rationaleAI": "Confucian tradition maps to classical Chinese Confucianism (B.2.a), Neo-Confucianism (B.2.c), and 20th-century Chinese philosophy (B.2.d)."
     },
     {
       "vsiTitle": "Buddhism",
       "vsiAuthor": "Damien Keown",
       "relevantPathsAI": [
-        "B.1",
+        "B.1.a",
         "C.2"
       ],
-      "rationaleAI": "Section B.1.a covers Buddhist sacred literature, and C.2 covers Buddhist philosophy."
+      "rationaleAI": "Buddhism's four noble truths and meditation practices connect to early Indian philosophical thought (B.1.a) and Buddhist philosophy (C.2)."
     },
     {
       "vsiTitle": "Buddha",
       "vsiAuthor": "Michael Carrithers",
       "relevantPathsAI": [
-        "B.1",
-        "B.3"
+        "B.1.a",
+        "C.2"
       ],
-      "rationaleAI": "The Buddha's teachings are foundational to Buddhist philosophy in B.1.a and B.3.a."
+      "rationaleAI": "The historical Buddha's teachings map to early Indian philosophical thought (B.1.a) and Buddhist philosophy (C.2)."
     },
     {
       "vsiTitle": "Hinduism",
       "vsiAuthor": "Kim Knott",
       "relevantPathsAI": [
-        "B.1",
+        "B.1.a",
         "C.1"
       ],
-      "rationaleAI": "Section B.1 covers Hindu philosophical thought and C.1 covers Hindu philosophy."
+      "rationaleAI": "Hinduism spanning the Vedic tradition connects to early Indian thought (B.1.a) and Hindu philosophy (C.1)."
     },
     {
       "vsiTitle": "Tibetan Buddhism",
       "vsiAuthor": "Matthew T. Kapstein",
       "relevantPathsAI": [
-        "B.1",
+        "B.1.a",
         "C.2"
       ],
-      "rationaleAI": "Tibetan Buddhism represents a tradition within Buddhist philosophy covered in B.1 and C.2."
+      "rationaleAI": "Tibetan Buddhist development connects to Buddhist sacred literature (B.1.a) and Buddhist philosophy (C.2)."
     },
     {
       "vsiTitle": "Buddhist ethics",
       "vsiAuthor": "Damien Keown",
       "relevantPathsAI": [
-        "B.1",
+        "B.1.a",
         "C.2"
       ],
-      "rationaleAI": "Buddhist ethics relates to ethical and political thought in B.1.b and C.2."
+      "rationaleAI": "Buddhist moral thought connects to early Buddhist concepts (B.1.a) and Buddhist philosophy (C.2)."
     },
     {
       "vsiTitle": "Mao",
       "vsiAuthor": "Delia Davin",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.d"
       ],
-      "rationaleAI": "Section B.2.d covers the effects of Maoism on 20th-century Chinese philosophy."
+      "rationaleAI": "Mao's political career and the Cultural Revolution connect to 20th-century Chinese philosophy and Maoism (B.2.d)."
     },
     {
       "vsiTitle": "Voltaire",
       "vsiAuthor": "Nicholas Cronk",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.c",
+        "A.3.c.iii"
       ],
-      "rationaleAI": "Voltaire is a major Enlightenment thinker relevant to A.3.c on philosophy in the Age of Reason."
+      "rationaleAI": "Voltaire as a central Enlightenment figure connects to philosophy in the Enlightenment (A.3.c) and social-political philosophy (A.3.c.iii)."
     },
     {
       "vsiTitle": "Tocqueville",
       "vsiAuthor": "Harvey Mansfield",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.c.iii",
+        "A.3.d"
       ],
-      "rationaleAI": "Tocqueville's political philosophy is relevant to social and political philosophy in A.3.c.iii."
+      "rationaleAI": "Tocqueville's analysis of democracy connects to social and political philosophy (A.3.c.iii) and extends into 19th-century thought (A.3.d)."
     },
     {
       "vsiTitle": "Adam Smith",
       "vsiAuthor": "Christopher J. Berry",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.c.iii"
       ],
-      "rationaleAI": "Adam Smith's philosophical contributions to moral philosophy and political economy relate to Enlightenment philosophy (A.3.c.iii)."
+      "rationaleAI": "Adam Smith's moral philosophy and economic thought connect to social and political philosophy in the Enlightenment (A.3.c.iii)."
     },
     {
       "vsiTitle": "Montaigne",
       "vsiAuthor": "William M. Hamlin",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.a.ii"
       ],
-      "rationaleAI": "Montaigne exemplifies Renaissance humanism (A.3.a.ii) with renewed interest in ancient Skepticism and Stoicism."
+      "rationaleAI": "Montaigne's role as an early modern skeptic connects to renewed interest in ancient Skepticism in Renaissance philosophy (A.3.a.ii)."
     },
     {
       "vsiTitle": "Simone Weil",
       "vsiAuthor": "A. Rebecca Rozelle-Stone",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e"
       ],
-      "rationaleAI": "Simone Weil is a 20th-century philosopher engaging with ethics, politics, and metaphysics in A.3.e."
+      "rationaleAI": "Simone Weil's philosophy spanning labor, attention, and justice represents a distinctive 20th-century contribution (A.3.e)."
     },
     {
       "vsiTitle": "Feminist Philosophy",
       "vsiAuthor": "Katharine Jenkins",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e"
       ],
-      "rationaleAI": "Feminist philosophy is a significant 20th-century development relevant to A.3.e.i."
+      "rationaleAI": "Feminist philosophy examining gender oppression and identity represents a significant contemporary development (A.3.e)."
     },
     {
       "vsiTitle": "Ethics",
       "vsiAuthor": "Simon Blackburn",
       "relevantPathsAI": [
-        "A.1",
-        "A.3"
+        "A.1.b.i",
+        "A.3.c.i",
+        "A.3.d.ii"
       ],
-      "rationaleAI": "Ethical thought is a major thread throughout the history of philosophy from Socrates (A.1.b.i) through Mill (A.3.d.ii)."
+      "rationaleAI": "Ethics covering major frameworks with roots in Socratic inquiry (A.1.b.i), Enlightenment epistemology (A.3.c.i), and Mill's ethics (A.3.d.ii)."
     },
     {
       "vsiTitle": "Science and Religion",
       "vsiAuthor": "Thomas Dixon, Adam Shapiro",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.a.iii",
+        "A.3.c.ii",
+        "A.3.c.iii"
       ],
-      "rationaleAI": "Section A.3.c.ii-iii covers developments in religious philosophy and the effect of scientific discoveries on philosophical thought."
+      "rationaleAI": "The science-religion relationship connects to Renaissance philosophy of nature (A.3.a.iii), philosophy of science (A.3.c.ii), and religious philosophy (A.3.c.iii)."
     },
     {
       "vsiTitle": "Political philosophy",
       "vsiAuthor": "David Miller",
       "relevantPathsAI": [
-        "A.3",
-        "A.3.c"
+        "A.3.a.i",
+        "A.3.c.iii"
       ],
-      "rationaleAI": "Political philosophy is a major thread from Renaissance political theory (A.3.a.i) through Enlightenment social thought (A.3.c.iii)."
+      "rationaleAI": "Political philosophy covering social contract theory connects to Renaissance political theory (A.3.a.i) and Enlightenment social philosophy (A.3.c.iii)."
     },
     {
       "vsiTitle": "Knowledge",
       "vsiAuthor": "Jennifer Nagel",
       "relevantPathsAI": [
-        "A.3.c"
+        "A.3.b",
+        "A.3.c.i"
       ],
-      "rationaleAI": "Epistemological issues are central to A.3.c.i covering Locke, Berkeley, Hume, and Kant."
+      "rationaleAI": "Epistemological investigation connects to the rise of Empiricism and Rationalism (A.3.b) and Enlightenment epistemology (A.3.c.i)."
     },
     {
       "vsiTitle": "Consciousness",
       "vsiAuthor": "Susan Blackmore",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.e"
       ],
-      "rationaleAI": "Section A.3.d.iii covers Kierkegaard's preoccupation with states of consciousness, and consciousness is a recurring philosophical theme."
+      "rationaleAI": "The hard problem of consciousness represents contemporary philosophical questions within 20th-century philosophy (A.3.e)."
     }
   ],
-  "_curatedBy": "ai"
+  "_curatedBy": "ai",
+  "_generatedAt": "2026-03-22"
 }
