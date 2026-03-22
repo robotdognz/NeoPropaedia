@@ -34,23 +34,6 @@ export interface SectionMeta {
   sectionCode: string;
 }
 
-export interface BridgeItem {
-  t: string;
-  a?: string;
-  ca: number;
-  cb: number;
-  r?: number;
-}
-
-export interface BridgePair {
-  totalVsi: number;
-  totalWiki: number;
-  totalMacro: number;
-  vsi?: BridgeItem[];
-  wiki?: BridgeItem[];
-  macro?: BridgeItem[];
-}
-
 export type CircleNavigatorVsiEntry = Pick<
   VsiAggregateEntry,
   'title' | 'author' | 'checklistKey' | 'sectionCount' | 'sections'
@@ -76,7 +59,6 @@ export interface CircleNavigatorProps {
   parts: CircleNavigatorPart[];
   connections: Record<string, SectionConnection[]>;
   sectionMeta: Record<string, SectionMeta>;
-  bridgeRecommendations: Record<string, BridgePair>;
   baseUrl: string;
 }
 

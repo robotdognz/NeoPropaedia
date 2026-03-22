@@ -2,7 +2,6 @@
 import BaseLayout from '../components/layout/BaseLayout.astro';
 import CircleNavigator from '../components/content/CircleNavigator';
 import partConnections from '../data/part-connections.json';
-import bridgeRecommendations from '../data/bridge-recommendations.json';
 import { getCollection } from 'astro:content';
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
 import { loadOutlineGraph } from '../utils/outlineGraph';
@@ -261,7 +260,6 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
           parts={circleNavigatorParts}
           connections={partConnections}
           sectionMeta={sectionMeta}
-          bridgeRecommendations={bridgeRecommendations}
           baseUrl={base}
         />
       </div>

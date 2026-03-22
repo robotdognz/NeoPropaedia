@@ -18,8 +18,6 @@ import { completedChecklistKeysFromState } from '../../utils/readingLibrary';
 import Accordion from '../ui/Accordion';
 import ReadingSectionLinks from './ReadingSectionLinks';
 import type {
-  BridgeItem,
-  BridgePair,
   CircleNavigatorMacropaediaEntry,
   CircleNavigatorPart,
   CircleNavigatorPartRecommendations,
@@ -27,7 +25,6 @@ import type {
   CircleNavigatorWikipediaEntry,
   ConnectionSummary,
 } from './circleNavigatorShared';
-import { getConnectionKey } from './circleNavigatorShared';
 
 interface CenteredCircleNavigatorPanelProps {
   parts: CircleNavigatorPart[];
@@ -36,7 +33,6 @@ interface CenteredCircleNavigatorPanelProps {
   topPart: CircleNavigatorPart;
   connectionSummary: ConnectionSummary | null;
   suggestedSections: ConnectionSummary['sections'];
-  bridgeRecommendations: Record<string, BridgePair>;
   readingPref: ReadingType;
   checklistState: Record<string, boolean>;
   baseUrl: string;
@@ -48,17 +44,6 @@ interface TopPartCircleNavigatorPanelProps {
   readingPref: ReadingType;
   checklistState: Record<string, boolean>;
   baseUrl: string;
-}
-
-interface BridgeRecommendationSectionConfig {
-  items: BridgeItem[];
-  type: ReadingType;
-  title: string;
-  maxTotal: number;
-  browseHref: string;
-  browseLabel: string;
-  getHref: (item: BridgeItem) => string;
-  getCheckKey: (item: BridgeItem) => string;
 }
 
 type AnchoredEntryBase = {
@@ -108,12 +93,62 @@ function joinBaseUrl(baseUrl: string, path: string): string {
   return `${baseUrl.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
 }
 
+function loadPartRecommendations(
+  partNumber: number,
+  baseUrl: string,
+  signal?: AbortSignal
+): Promise<CircleNavigatorPartRecommendations> {
+  const cached = partRecommendationCache.get(partNumber);
+  if (cached) {
+    return Promise.resolve(cached);
+  }
+
+  return fetch(joinBaseUrl(baseUrl, `circle-anchored/${partNumber}.json`), { signal })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Unable to load recommendations for Part ${partNumber}.`);
+      }
+      return response.json();
+    })
+    .then((data: CircleNavigatorPartRecommendations) => {
+      partRecommendationCache.set(partNumber, data);
+      return data;
+    });
+}
+
 function pluralize(count: number, singular: string, plural = `${singular}s`): string {
   return count === 1 ? singular : plural;
 }
 
 function countPartsSpanned(sections: ReadingSectionSummary[]): number {
   return new Set(sections.map((section) => section.partNumber)).size;
+}
+
+function essayHref(part: CircleNavigatorPart): string {
+  return `${part.href}?view=essay#essay`;
+}
+
+function renderEssayButton(part: CircleNavigatorPart, label?: string) {
+  return (
+    <a
+      href={essayHref(part)}
+      class="inline-flex items-center gap-1.5 rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
+    >
+      {label ?? 'Read essay'}
+    </a>
+  );
+}
+
+function intersectSharedEntries<TEntry extends AnchoredEntryBase>(
+  first: TEntry[],
+  second: TEntry[]
+): TEntry[] {
+  const secondLookup = new Map(second.map((entry) => [entry.checklistKey, entry]));
+  return first.flatMap((entry) => {
+    const match = secondLookup.get(entry.checklistKey);
+    if (!match) return [];
+    return [entry.sectionCount >= match.sectionCount ? entry : match];
+  });
 }
 
 function buildAnchoredRecommendationItems<TEntry extends AnchoredEntryBase>(
@@ -307,6 +342,163 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
   );
 }
 
+function renderSharedCoverageRecommendationSection<TEntry extends AnchoredEntryBase>(
+  section: AnchoredRecommendationSectionConfig<TEntry>,
+  options: {
+    centerPart: CircleNavigatorPart;
+    centerPartNumber: number;
+    topPart: CircleNavigatorPart;
+    topPartNumber: number;
+    readingPref: ReadingType;
+    checklistState: Record<string, boolean>;
+    baseUrl: string;
+  }
+) {
+  const {
+    centerPart,
+    centerPartNumber,
+    topPart,
+    topPartNumber,
+    readingPref,
+    checklistState,
+    baseUrl,
+  } = options;
+
+  const renderItem = (
+    item: AnchoredRecommendationItem<TEntry>,
+    indexLabel: string
+  ) => {
+    const isChecked = Boolean(checklistState[item.entry.checklistKey]);
+    const centerSections = item.entry.sections.filter((entrySection) => entrySection.partNumber === centerPartNumber);
+    const topSections = item.entry.sections.filter((entrySection) => entrySection.partNumber === topPartNumber);
+    const linkedPartCount = countPartsSpanned(item.entry.sections);
+    const selectedPartSections = item.entry.sections.filter((entrySection) =>
+      entrySection.partNumber === centerPartNumber || entrySection.partNumber === topPartNumber
+    );
+    const sectionLinkSections = item.newSectionCount > 0 ? item.newSections : selectedPartSections;
+    const sectionLinkLabel = item.newSectionCount > 0
+      ? `Show the ${item.newSectionCount} new ${pluralize(item.newSectionCount, 'section')}`
+      : `Show the ${selectedPartSections.length} ${pluralize(selectedPartSections.length, 'linked section')} in ${centerPart.partName} and ${topPart.partName}`;
+
+    return (
+      <li
+        key={item.entry.checklistKey}
+        class={`rounded-xl border p-4 transition-colors ${item.isCompleted ? 'border-slate-200 bg-slate-100/80' : 'border-slate-200 bg-white'}`}
+      >
+        <div class="flex items-start justify-between gap-3">
+          <div class="min-w-0">
+            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+              {indexLabel}
+            </p>
+            <h4 class="mt-1 font-serif text-lg leading-tight text-slate-900">
+              <a href={section.getHref(item.entry)} class="transition-colors hover:text-indigo-700">
+                {section.getLabel ? section.getLabel(item.entry) : item.entry.title}
+              </a>
+            </h4>
+            {section.renderMeta ? (
+              <div class="mt-1 text-sm text-slate-600">{section.renderMeta(item.entry)}</div>
+            ) : null}
+          </div>
+          <label class="inline-flex shrink-0 items-center gap-2 text-xs font-medium text-slate-500">
+            <input
+              type="checkbox"
+              checked={isChecked}
+              onChange={(event) => writeChecklistState(item.entry.checklistKey, (event.currentTarget as HTMLInputElement).checked)}
+              class="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+            />
+            Done
+          </label>
+        </div>
+
+        <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium">
+          {item.isCompleted ? (
+            <span class="rounded-full bg-slate-200 px-2.5 py-1 text-slate-700">
+              Already marked done
+            </span>
+          ) : (
+            <span class="rounded-full bg-amber-100 px-2.5 py-1 text-amber-900">
+              +{item.newSectionCount} new {pluralize(item.newSectionCount, 'section')}
+            </span>
+          )}
+          <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
+            {item.entry.sectionCount} total {pluralize(item.entry.sectionCount, 'section')}
+          </span>
+          <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
+            {centerSections.length} in {centerPart.partName}
+          </span>
+          <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
+            {topSections.length} in {topPart.partName}
+          </span>
+          <span class="rounded-full bg-slate-100 px-2.5 py-1 text-slate-700">
+            Spans {linkedPartCount} {pluralize(linkedPartCount, 'part')}
+          </span>
+        </div>
+
+        {sectionLinkSections.length > 0 && (
+          <ReadingSectionLinks
+            sections={sectionLinkSections}
+            baseUrl={baseUrl}
+            label={sectionLinkLabel}
+            variant="chips"
+          />
+        )}
+      </li>
+    );
+  };
+
+  return (
+    <Accordion
+      key={section.type}
+      title={`${section.title} (${section.unreadCount})`}
+      forceOpenKey={readingPref === section.type ? 0 : undefined}
+      forceCloseKey={readingPref !== section.type ? 0 : undefined}
+    >
+      <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <p class="max-w-2xl text-xs leading-5 text-slate-500 sm:text-sm">
+          {section.totalUnreadLinkedCount} unread {pluralize(section.totalUnreadLinkedCount, section.itemSingular)} linked to both {centerPart.title} and {topPart.title}.
+          {' '}Showing the {section.unreadCount} that still add new section coverage across the whole outline.
+          {' '}{section.remainingSections > 0
+            ? `${section.remainingSections} ${pluralize(section.remainingSections, 'section')} remain uncovered from this shared pool.`
+            : `Your checked ${pluralize(section.completedCount, section.itemSingular)} already cover every mapped section this shared pool can reach.`}
+        </p>
+        <a
+          href={section.browseHref}
+          class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
+        >
+          {section.browseLabel}
+        </a>
+      </div>
+
+      {section.unreadItems.length > 0 ? (
+        <ol class="space-y-3">
+          {section.unreadItems.map((item, index) =>
+            renderItem(item, `Step ${index + 1}`)
+          )}
+        </ol>
+      ) : (
+        <div class="rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
+          {section.totalUnreadLinkedCount === 0
+            ? `Every shared ${section.itemSingular} here is already marked done.`
+            : section.overlapOnlyUnreadCount > 0
+              ? `No unread shared ${pluralize(section.overlapOnlyUnreadCount, section.itemSingular)} add any new section coverage right now.`
+              : `No additional shared ${section.itemSingular} are available right now.`}
+        </div>
+      )}
+
+      {section.completedItems.length > 0 && (
+        <div class="mt-5 border-t border-slate-200 pt-4">
+          <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+            Already marked done ({section.completedItems.length})
+          </p>
+          <ol class="mt-3 space-y-3">
+            {section.completedItems.map((item) => renderItem(item, 'Done'))}
+          </ol>
+        </div>
+      )}
+    </Accordion>
+  );
+}
+
 export function CenteredCircleNavigatorPanel({
   parts,
   centerPart,
@@ -314,51 +506,125 @@ export function CenteredCircleNavigatorPanel({
   topPart,
   connectionSummary,
   suggestedSections,
-  bridgeRecommendations,
   readingPref,
   checklistState,
   baseUrl,
 }: CenteredCircleNavigatorPanelProps) {
-  const bridgeKey = getConnectionKey(centerPartNumber, topPart.partNumber);
-  const bridge = bridgeRecommendations[bridgeKey];
-  const isFlipped = centerPartNumber > topPart.partNumber;
-  const bridgeVsi = bridge?.vsi ?? [];
-  const bridgeWiki = bridge?.wiki ?? [];
-  const bridgeMacro = bridge?.macro ?? [];
-  const bridgeSections: BridgeRecommendationSectionConfig[] = [
-    {
-      items: bridgeVsi,
-      type: 'vsi',
-      title: 'Oxford VSI Recommendations',
-      maxTotal: bridgeVsi.length > 0 ? Math.max(...bridgeVsi.map((item) => item.ca + item.cb)) : 1,
-      browseHref: `${baseUrl}/vsi`,
-      browseLabel: 'Browse all Oxford VSI books',
-      getHref: (item) => `${baseUrl}/vsi/${slugify(item.t)}`,
-      getCheckKey: (item) => vsiChecklistKey(item.t, item.a || ''),
-    },
-    {
-      items: bridgeWiki,
-      type: 'wikipedia',
-      title: 'Wikipedia Article Recommendations',
-      maxTotal: bridgeWiki.length > 0 ? Math.max(...bridgeWiki.map((item) => item.ca + item.cb)) : 1,
-      browseHref: `${baseUrl}/wikipedia`,
-      browseLabel: 'Browse all Wikipedia articles',
-      getHref: (item) => `${baseUrl}/wikipedia/${slugify(item.t)}`,
-      getCheckKey: (item) => wikipediaChecklistKey(item.t),
-    },
-    {
-      items: bridgeMacro,
-      type: 'macropaedia',
-      title: 'Macropaedia Reading List',
-      maxTotal: bridgeMacro.length > 0 ? Math.max(...bridgeMacro.map((item) => item.ca + item.cb)) : 1,
-      browseHref: `${baseUrl}/macropaedia`,
-      browseLabel: 'Browse all Macropaedia articles',
-      getHref: (item) => `${baseUrl}/macropaedia/${slugify(item.t)}`,
-      getCheckKey: (item) => macropaediaChecklistKey(item.t),
-    },
-  ]
-    .filter((section) => section.items.length > 0)
-    .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
+  const [sharedPartRecommendations, setSharedPartRecommendations] = useState<{
+    center: CircleNavigatorPartRecommendations;
+    top: CircleNavigatorPartRecommendations;
+  } | null>(() => {
+    const cachedCenter = partRecommendationCache.get(centerPartNumber);
+    const cachedTop = partRecommendationCache.get(topPart.partNumber);
+    return cachedCenter && cachedTop ? { center: cachedCenter, top: cachedTop } : null;
+  });
+  const [recommendationsError, setRecommendationsError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const cachedCenter = partRecommendationCache.get(centerPartNumber);
+    const cachedTop = partRecommendationCache.get(topPart.partNumber);
+    if (cachedCenter && cachedTop) {
+      setSharedPartRecommendations({ center: cachedCenter, top: cachedTop });
+      setRecommendationsError(null);
+      return;
+    }
+
+    const controller = new AbortController();
+    setSharedPartRecommendations(null);
+    setRecommendationsError(null);
+
+    Promise.all([
+      loadPartRecommendations(centerPartNumber, baseUrl, controller.signal),
+      loadPartRecommendations(topPart.partNumber, baseUrl, controller.signal),
+    ])
+      .then(([centerRecommendations, topRecommendations]) => {
+        if (controller.signal.aborted) return;
+        setSharedPartRecommendations({
+          center: centerRecommendations,
+          top: topRecommendations,
+        });
+      })
+      .catch((error) => {
+        if (controller.signal.aborted) return;
+        setRecommendationsError(error instanceof Error ? error.message : 'Unable to load shared recommendations.');
+      });
+
+    return () => controller.abort();
+  }, [centerPartNumber, topPart.partNumber, baseUrl]);
+
+  const recommendationSections = useMemo(() => {
+    if (!sharedPartRecommendations) return [];
+
+    const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
+
+    const sharedVsiEntries = intersectSharedEntries(sharedPartRecommendations.center.vsi, sharedPartRecommendations.top.vsi);
+    const vsiSnapshot = buildVsiCoverageSnapshot(sharedVsiEntries, completedChecklistKeys);
+    const vsiRecommendations = buildAnchoredRecommendationItems(sharedVsiEntries, checklistState, vsiSnapshot);
+
+    const sharedWikiEntries = intersectSharedEntries(sharedPartRecommendations.center.wiki, sharedPartRecommendations.top.wiki);
+    const wikiSnapshot = buildWikipediaCoverageSnapshot(sharedWikiEntries, completedChecklistKeys);
+    const wikiRecommendations = buildAnchoredRecommendationItems(sharedWikiEntries, checklistState, wikiSnapshot);
+
+    const sharedMacroEntries = intersectSharedEntries(sharedPartRecommendations.center.macro, sharedPartRecommendations.top.macro);
+    const macroSnapshot = buildMacropaediaCoverageSnapshot(sharedMacroEntries, completedChecklistKeys);
+    const macroRecommendations = buildAnchoredRecommendationItems(sharedMacroEntries, checklistState, macroSnapshot);
+
+    return [
+      {
+        type: 'vsi' as const,
+        title: 'Oxford VSI Recommendations',
+        browseHref: `${baseUrl}/vsi`,
+        browseLabel: 'Browse all Oxford VSI books',
+        itemSingular: 'book',
+        totalCount: sharedVsiEntries.length,
+        unreadCount: vsiRecommendations.unreadItems.length,
+        completedCount: vsiRecommendations.completedItems.length,
+        remainingSections: vsiSnapshot.remainingSections,
+        overlapOnlyUnreadCount: vsiRecommendations.overlapOnlyUnreadCount,
+        totalUnreadLinkedCount: vsiRecommendations.totalUnreadLinkedCount,
+        unreadItems: vsiRecommendations.unreadItems,
+        completedItems: vsiRecommendations.completedItems,
+        getHref: (item: CircleNavigatorVsiEntry) => `${baseUrl}/vsi/${slugify(item.title)}`,
+        renderMeta: (item: CircleNavigatorVsiEntry) => item.author,
+      },
+      {
+        type: 'wikipedia' as const,
+        title: 'Wikipedia Article Recommendations',
+        browseHref: `${baseUrl}/wikipedia`,
+        browseLabel: 'Browse all Wikipedia articles',
+        itemSingular: 'article',
+        totalCount: sharedWikiEntries.length,
+        unreadCount: wikiRecommendations.unreadItems.length,
+        completedCount: wikiRecommendations.completedItems.length,
+        remainingSections: wikiSnapshot.remainingSections,
+        overlapOnlyUnreadCount: wikiRecommendations.overlapOnlyUnreadCount,
+        totalUnreadLinkedCount: wikiRecommendations.totalUnreadLinkedCount,
+        unreadItems: wikiRecommendations.unreadItems,
+        completedItems: wikiRecommendations.completedItems,
+        getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
+        getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
+        renderMeta: (item: CircleNavigatorWikipediaEntry) => `Vital Articles Level ${item.lowestLevel}`,
+      },
+      {
+        type: 'macropaedia' as const,
+        title: 'Macropaedia Reading List',
+        browseHref: `${baseUrl}/macropaedia`,
+        browseLabel: 'Browse all Macropaedia articles',
+        itemSingular: 'article',
+        totalCount: sharedMacroEntries.length,
+        unreadCount: macroRecommendations.unreadItems.length,
+        completedCount: macroRecommendations.completedItems.length,
+        remainingSections: macroSnapshot.remainingSections,
+        overlapOnlyUnreadCount: macroRecommendations.overlapOnlyUnreadCount,
+        totalUnreadLinkedCount: macroRecommendations.totalUnreadLinkedCount,
+        unreadItems: macroRecommendations.unreadItems,
+        completedItems: macroRecommendations.completedItems,
+        getHref: (item: CircleNavigatorMacropaediaEntry) => `${baseUrl}/macropaedia/${slugify(item.title)}`,
+      },
+    ]
+      .filter((section) => section.totalCount > 0)
+      .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
+  }, [sharedPartRecommendations, checklistState, readingPref, baseUrl]);
 
   return (
     <>
@@ -366,11 +632,16 @@ export function CenteredCircleNavigatorPanel({
         Circle of learning
       </p>
       <p class="mt-1 text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-        Centred on {centerPart.title}, with {topPart.title} at the top.
-        {suggestedSections.length > 0 && centerPartNumber !== topPart.partNumber && (
-          <>{' '}See where these fields connect below.</>
-        )}
+        Centred on {centerPart.title}, with {topPart.title} at the top. Start here if you want readings that
+        touch both parts but open out as widely as possible across the whole outline.
       </p>
+
+      <div class="mt-3 border-t border-slate-200 pt-3">
+        <div class="flex flex-wrap gap-2">
+          {renderEssayButton(centerPart, `Read ${centerPart.partName} essay`)}
+          {renderEssayButton(topPart, `Read ${topPart.partName} essay`)}
+        </div>
+      </div>
 
       {suggestedSections.length > 0 && connectionSummary && (
         <div class="mt-3 border-t border-slate-200 pt-3">
@@ -406,99 +677,44 @@ export function CenteredCircleNavigatorPanel({
         </div>
       )}
 
-      {bridgeSections.length > 0 && (
-        <div class="mt-3 border-t border-slate-200 pt-3">
-          <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-            Recommended Readings
-          </p>
-          <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-            Books and articles independently recommended for both {centerPart.partName}: {centerPart.title} and {topPart.partName}: {topPart.title}. Ranked by how deeply they connect the two parts - considering sections, outline items, and overall spread. The bar shows the balance of coverage between the two chosen parts.
-          </p>
-          <div class="mt-3 flex items-center gap-3 text-[10px] font-sans text-slate-400">
-            <span class="flex items-center gap-1">
-              <span class="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: centerPart.colorHex }} />
-              {centerPart.partName}
-            </span>
-            <span class="flex items-center gap-1">
-              <span class="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: topPart.colorHex }} />
-              {topPart.partName}
-            </span>
-          </div>
-          <div class="mt-3 space-y-4">
-            {bridgeSections.map((section) => (
-              <Accordion
-                key={section.type}
-                title={`${section.title} (${section.items.length})`}
-                forceOpenKey={readingPref === section.type ? 0 : undefined}
-                forceCloseKey={readingPref !== section.type ? 0 : undefined}
-              >
-                <div class="mb-4 flex justify-end">
-                  <a href={section.browseHref} class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline">
-                    {section.browseLabel}
-                  </a>
-                </div>
-                <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                  {section.items.map((item) => {
-                    const centerCount = isFlipped ? item.cb : item.ca;
-                    const topCount = isFlipped ? item.ca : item.cb;
-                    const relevancePct = item.r ?? Math.round(((centerCount + topCount) / section.maxTotal) * 100);
-                    const total = centerCount + topCount;
-                    const scale = relevancePct / 100;
-                    const centerPct = total > 0 ? Math.round((centerCount / total) * scale * 100) : 0;
-                    const topPct = total > 0 ? Math.round((topCount / total) * scale * 100) : 0;
-                    const checkKey = section.getCheckKey(item);
-                    const isChecked = Boolean(checklistState[checkKey]);
-                    const whyLabel = section.type === 'vsi' ? 'Why this book?' : 'Why this article?';
-                    const balanceDesc = Math.abs(centerCount - topCount) <= 1
-                      ? 'with roughly equal coverage of both'
-                      : centerCount > topCount
-                        ? `leaning more toward ${centerPart.title}`
-                        : `leaning more toward ${topPart.title}`;
-                    const rationale = `Independently recommended in ${centerCount} section${centerCount !== 1 ? 's' : ''} of ${centerPart.title} and ${topCount} section${topCount !== 1 ? 's' : ''} of ${topPart.title}, ${balanceDesc}. Items are ranked higher when they bridge both parts evenly rather than being concentrated in one.`;
+      <div class="mt-3 border-t border-slate-200 pt-3">
+        <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
+          Recommended Readings
+        </p>
+        <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
+          Every item below is linked to both {centerPart.partName}: {centerPart.title} and {topPart.partName}: {topPart.title}.
+          {' '}Unread items are ranked by how much new section coverage they add across the whole outline from your
+          current checklist. Items that add no new section coverage are left out of this list.
+        </p>
 
-                    return (
-                      <div
-                        key={item.t}
-                        class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-slate-300 bg-slate-200/70 opacity-50' : 'border-gray-200'}`}
-                      >
-                        <div class="mb-2 flex items-start justify-between gap-3">
-                          <div class="min-w-0">
-                            <h4 class="font-serif font-bold text-gray-900 text-base leading-tight">
-                              <a href={section.getHref(item)} class="hover:text-indigo-700 transition-colors">{item.t}</a>
-                            </h4>
-                            {item.a && <p class="text-sm text-gray-500 mt-0.5">{item.a}</p>}
-                          </div>
-                          <label class="inline-flex items-center gap-2 text-xs font-sans font-medium text-gray-500">
-                            <input
-                              type="checkbox"
-                              checked={isChecked}
-                              onChange={(event) => writeChecklistState(checkKey, (event.currentTarget as HTMLInputElement).checked)}
-                              class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                            Done
-                          </label>
-                        </div>
-                        <div class="mb-3 flex items-center gap-2">
-                          <div class="flex-1 h-1.5 rounded-full bg-gray-100 overflow-hidden">
-                            <div class="flex h-full">
-                              <div class="rounded-l-full" style={{ width: `${centerPct}%`, backgroundColor: centerPart.colorHex }} />
-                              <div style={{ width: `${topPct}%`, backgroundColor: topPart.colorHex, borderRadius: centerPct === 0 ? '9999px 0 0 9999px' : topPct + centerPct >= 100 ? '0 9999px 9999px 0' : '0' }} />
-                            </div>
-                          </div>
-                          <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">{relevancePct}% relevance</span>
-                        </div>
-                        <Accordion title={whyLabel} defaultOpen={false}>
-                          <p class="text-gray-600">{rationale}</p>
-                        </Accordion>
-                      </div>
-                    );
-                  })}
-                </div>
-              </Accordion>
-            ))}
+        {recommendationsError ? (
+          <div class="mt-3 rounded-lg border border-dashed border-rose-200 bg-rose-50 px-4 py-5 text-sm text-rose-700">
+            {recommendationsError}
           </div>
-        </div>
-      )}
+        ) : !sharedPartRecommendations ? (
+          <div class="mt-3 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
+            Loading shared recommendations for {centerPart.partName} and {topPart.partName}...
+          </div>
+        ) : recommendationSections.length > 0 ? (
+          <div class="mt-3 space-y-4">
+            {recommendationSections.map((section) =>
+              renderSharedCoverageRecommendationSection(section, {
+                centerPart,
+                centerPartNumber,
+                topPart,
+                topPartNumber: topPart.partNumber,
+                readingPref,
+                checklistState,
+                baseUrl,
+              })
+            )}
+          </div>
+        ) : (
+          <div class="mt-3 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
+            No shared mapped readings are currently available for this pair of parts.
+          </div>
+        )}
+      </div>
     </>
   );
 }
@@ -527,15 +743,8 @@ export function TopPartCircleNavigatorPanel({
     setPartRecommendations(null);
     setRecommendationsError(null);
 
-    fetch(joinBaseUrl(baseUrl, `circle-anchored/${topPartNumber}.json`), { signal: controller.signal })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Unable to load recommendations for Part ${topPartNumber}.`);
-        }
-        return response.json();
-      })
-      .then((data: CircleNavigatorPartRecommendations) => {
-        partRecommendationCache.set(topPartNumber, data);
+    loadPartRecommendations(topPartNumber, baseUrl, controller.signal)
+      .then((data) => {
         setPartRecommendations(data);
       })
       .catch((error) => {
@@ -632,18 +841,17 @@ export function TopPartCircleNavigatorPanel({
       </p>
 
       <div class="mt-3 border-t border-slate-200 pt-3">
-        <a
-          href={`${topPart.href}?view=essay#essay`}
-          class="inline-flex items-center gap-1.5 rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-600 transition hover:bg-slate-100"
-        >
-          Read essay
-        </a>
+        {renderEssayButton(topPart)}
       </div>
 
       {topPart.divisions.length > 0 && (
         <div class="mt-3 border-t border-slate-200 pt-3">
           <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-            {topPart.divisions.length} {topPart.divisions.length === 1 ? 'Division' : 'Divisions'}
+            Divisions in Selected Part
+          </p>
+          <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
+            These {topPart.divisions.length} {pluralize(topPart.divisions.length, 'division')} break {topPart.title}
+            {' '}into its main strands. Open one to move from this broad part-level view into narrower areas of the outline.
           </p>
           <ul class="mt-2 space-y-1">
             {topPart.divisions.map((division) => (

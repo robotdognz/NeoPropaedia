@@ -333,7 +333,6 @@ export default function CircleNavigator({
   parts,
   connections,
   sectionMeta,
-  bridgeRecommendations,
   baseUrl,
 }: CircleNavigatorProps) {
   const svgRef = useRef<SVGSVGElement>(null);
@@ -1672,7 +1671,6 @@ export default function CircleNavigator({
               topPart={topPart}
               connectionSummary={connectionSummary}
               suggestedSections={suggestedSections}
-              bridgeRecommendations={bridgeRecommendations}
               readingPref={readingPref}
               checklistState={checklistState}
               baseUrl={baseUrl}
