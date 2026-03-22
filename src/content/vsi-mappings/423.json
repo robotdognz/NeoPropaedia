@@ -7,9 +7,10 @@
       "relevantPathsAI": [
         "A",
         "B",
-        "D.5"
+        "D.5",
+        "F.1.a"
       ],
-      "rationaleAI": "Disease patterns and clinical trials address disease characteristics (A), diagnosis (B), and health hazards (D.5)."
+      "rationaleAI": "Disease patterns and health hazards cover characteristics and causes (A) and detection methods (B). Heart attack and myocardial infarction address cardiovascular diseases (F.1.a). Contagious disease patterns connect to infectious diseases (D.5)."
     },
     {
       "vsiTitle": "The History of Medicine",
@@ -18,11 +19,9 @@
         "A",
         "B",
         "C",
-        "C.1",
-        "C.2.a",
-        "C.2.c"
+        "C.2.a"
       ],
-      "rationaleAI": "Medical history addresses disease classification (A), diagnosis (B), therapeutic treatment (C.1), surgery (C.2.a), and pharmacotherapy (C.2.c)."
+      "rationaleAI": "History of disease understanding (A, B), treatment approaches including surgery (C.2.a), and therapeutics development (C)."
     },
     {
       "vsiTitle": "Infectious Disease",
@@ -30,27 +29,27 @@
       "relevantPathsAI": [
         "A",
         "D.5",
-        "C.2.d"
+        "F.3.a"
       ],
-      "rationaleAI": "Pathogen dynamics address disease characteristics (A), infectious diseases (D.5), and chemotherapy (C.2.d)."
+      "rationaleAI": "Pathogen origins and transmission (A, D.5). Influenza and MRSA address infectious respiratory diseases (F.3.a)."
     },
     {
       "vsiTitle": "Viruses",
       "vsiAuthor": "Dorothy H. Crawford",
       "relevantPathsAI": [
         "D.5",
-        "C.2.b"
+        "F.3.a"
       ],
-      "rationaleAI": "Viral biology addresses infectious diseases (D.5) and biological therapy through vaccines (C.2.b)."
+      "rationaleAI": "Viral biology addresses infectious diseases (D.5). Coronaviruses connect to infectious respiratory diseases (F.3.a)."
     },
     {
       "vsiTitle": "Bacteria",
       "vsiAuthor": "Sebastian G. B. Amyes",
       "relevantPathsAI": [
         "D.5",
-        "C.2.d"
+        "F.3.a"
       ],
-      "rationaleAI": "Bacterial pathogens and antibiotic resistance address infectious diseases (D.5) and chemotherapy (C.2.d)."
+      "rationaleAI": "Bacteria including tuberculosis address infectious diseases (D.5) and infectious respiratory diseases (F.3.a)."
     },
     {
       "vsiTitle": "Fungi",
@@ -58,7 +57,7 @@
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Fungal pathogens address infectious diseases (D.5)."
+      "rationaleAI": "Fungi as disease agents connect to infectious diseases (D.5)."
     },
     {
       "vsiTitle": "Microbiology",
@@ -66,16 +65,17 @@
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Pathogenic microorganisms address infectious diseases (D.5)."
+      "rationaleAI": "Microorganisms as infection agents connect to infectious diseases (D.5)."
     },
     {
       "vsiTitle": "Pandemics",
       "vsiAuthor": "Christian W. McMillen",
       "relevantPathsAI": [
+        "A",
         "D.5",
-        "A"
+        "F.3.a"
       ],
-      "rationaleAI": "Pandemic diseases address infectious diseases (D.5) and disease characteristics (A)."
+      "rationaleAI": "Pandemic diseases cover disease causes (A) and infectious diseases (D.5). Tuberculosis and influenza connect to infectious respiratory diseases (F.3.a)."
     },
     {
       "vsiTitle": "Plague",
@@ -83,73 +83,80 @@
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Plague pathology addresses infectious diseases (D.5)."
+      "rationaleAI": "Plague covers infectious diseases (D.5)."
     },
     {
       "vsiTitle": "HIV/AIDS",
       "vsiAuthor": "Alan Whiteside",
       "relevantPathsAI": [
         "D.5",
-        "C.2.d",
         "F.6.b"
       ],
-      "rationaleAI": "HIV addresses infectious diseases (D.5), antiretroviral chemotherapy (C.2.d), and sexually transmitted diseases (F.6.b)."
+      "rationaleAI": "HIV/AIDS covers infectious diseases (D.5) and sexually transmitted diseases (F.6.b)."
     },
     {
       "vsiTitle": "Cancer",
       "vsiAuthor": "Nick James",
       "relevantPathsAI": [
         "E",
-        "C.2.a",
         "C.2.d",
         "C.2.f"
       ],
-      "rationaleAI": "Cancer addresses tumours (E), surgery (C.2.a), chemotherapy (C.2.d), and radiation therapy (C.2.f)."
+      "rationaleAI": "Cancer addresses tumours (E), chemotherapy (C.2.d), and radiation therapy (C.2.f)."
     },
     {
       "vsiTitle": "The Immune System",
       "vsiAuthor": "Paul Klenerman",
       "relevantPathsAI": [
         "C.2.b",
-        "D.11"
+        "D.5",
+        "D.11",
+        "F.2"
       ],
-      "rationaleAI": "Immunotherapy addresses biological therapy (C.2.b), and autoimmunity addresses allergenic diseases (D.11)."
+      "rationaleAI": "Vaccine development connects to biological therapy (C.2.b). Immune defense connects to infectious diseases (D.5). Allergies connect to allergenic diseases (D.11). Lymphoid system connects to lymphatic system (F.2)."
     },
     {
       "vsiTitle": "Drugs",
       "vsiAuthor": "Leslie Iversen",
       "relevantPathsAI": [
-        "C",
         "C.2.c",
         "C.2.d",
         "D.10"
       ],
-      "rationaleAI": "Pharmacology addresses pharmacodynamic therapy (C.2.c), chemotherapy (C.2.d), and poisoning (D.10)."
+      "rationaleAI": "Drug mechanisms connect to pharmacodynamic therapy (C.2.c) and chemotherapy (C.2.d). Substance toxicity connects to poisoning (D.10)."
     },
     {
       "vsiTitle": "Blood",
       "vsiAuthor": "Christopher Cooper",
       "relevantPathsAI": [
-        "F.1",
+        "F.1.a",
+        "F.1.b",
+        "F.1.c",
         "F.1.d"
       ],
-      "rationaleAI": "Blood diseases address cardiovascular system (F.1) and blood-forming tissues (F.1.d)."
+      "rationaleAI": "Blood composition connects to heart (F.1.a), blood vessels (F.1.b), circulation (F.1.c), and blood-forming tissues (F.1.d)."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
       "relevantPathsAI": [
-        "F.5"
+        "F.5",
+        "F.5.a",
+        "F.5.b",
+        "F.5.c",
+        "F.5.f",
+        "D.2"
       ],
-      "rationaleAI": "Hormonal dysfunction addresses endocrine system diseases (F.5)."
+      "rationaleAI": "Endocrine physiology covers pituitary (F.5.a), thyroid (F.5.b), adrenals (F.5.c), and pancreas (F.5.f). Hormonal dysfunction connects to metabolic diseases (D.2)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
       "relevantPathsAI": [
-        "F.9"
+        "F.9",
+        "F.9.d"
       ],
-      "rationaleAI": "Neurological conditions address nervous system disorders (F.9)."
+      "rationaleAI": "Brain neuroanatomy covers nervous system (F.9) and central nervous system disorders (F.9.d)."
     },
     {
       "vsiTitle": "The Eye",
@@ -157,7 +164,7 @@
       "relevantPathsAI": [
         "F.9.f"
       ],
-      "rationaleAI": "Vision disorders address eye diseases (F.9.f)."
+      "rationaleAI": "Eye structure and color blindness connect to eye and vision disorders (F.9.f)."
     },
     {
       "vsiTitle": "Anaesthesia",
@@ -166,23 +173,25 @@
         "C.2.a",
         "C.2.c"
       ],
-      "rationaleAI": "Anaesthetics address surgical support (C.2.a) and pharmacodynamic therapy (C.2.c)."
+      "rationaleAI": "Anaesthetic practice connects to surgical treatment (C.2.a) and pharmacodynamic therapy (C.2.c)."
     },
     {
       "vsiTitle": "Nutrition",
       "vsiAuthor": "David Bender",
       "relevantPathsAI": [
-        "D.3"
+        "D.3",
+        "D.2"
       ],
-      "rationaleAI": "Nutritional deficiencies and excesses address nutritional diseases (D.3)."
+      "rationaleAI": "Nutritional deficiencies address nutritional diseases (D.3). Metabolic processes connect to metabolic diseases (D.2)."
     },
     {
       "vsiTitle": "Stem Cells",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
+        "C.2.b",
         "C.2.k"
       ],
-      "rationaleAI": "Stem cell therapies address organ/tissue transplants (C.2.k)."
+      "rationaleAI": "Therapeutic potential connects to biological therapy (C.2.b) and organ transplants (C.2.k)."
     },
     {
       "vsiTitle": "Psychiatry",
@@ -191,7 +200,7 @@
         "F.9.d",
         "C.2.l"
       ],
-      "rationaleAI": "Psychiatric disorders address CNS disorders (F.9.d) and psychological therapy (C.2.l)."
+      "rationaleAI": "Mental disorders connect to CNS disorders (F.9.d). Psychoanalytic approaches connect to psychological therapy (C.2.l)."
     },
     {
       "vsiTitle": "Schizophrenia",
@@ -199,7 +208,7 @@
       "relevantPathsAI": [
         "F.9.d"
       ],
-      "rationaleAI": "Schizophrenia addresses CNS disorders (F.9.d)."
+      "rationaleAI": "Schizophrenia connects to CNS disorders (F.9.d)."
     },
     {
       "vsiTitle": "Depression",
@@ -208,7 +217,7 @@
         "F.9.d",
         "C.2.c"
       ],
-      "rationaleAI": "Depression addresses CNS disorders (F.9.d) and pharmacotherapy (C.2.c)."
+      "rationaleAI": "Depression connects to CNS disorders (F.9.d). Antidepressants connect to pharmacodynamic therapy (C.2.c)."
     },
     {
       "vsiTitle": "Anxiety",
@@ -216,7 +225,7 @@
       "relevantPathsAI": [
         "F.9.d"
       ],
-      "rationaleAI": "Anxiety disorders address CNS disorders (F.9.d)."
+      "rationaleAI": "Anxiety disorders connect to CNS disorders (F.9.d)."
     },
     {
       "vsiTitle": "Dementia",
@@ -224,7 +233,7 @@
       "relevantPathsAI": [
         "F.9.d"
       ],
-      "rationaleAI": "Neurodegenerative conditions address CNS disorders (F.9.d)."
+      "rationaleAI": "Neurodegenerative conditions connect to CNS disorders (F.9.d)."
     },
     {
       "vsiTitle": "Autism",
@@ -233,15 +242,16 @@
         "D.6",
         "F.9.d"
       ],
-      "rationaleAI": "Autism addresses congenital disorders (D.6) and CNS disorders (F.9.d)."
+      "rationaleAI": "Autism connects to diseases present at birth (D.6) and CNS disorders (F.9.d)."
     },
     {
       "vsiTitle": "Dyslexia",
       "vsiAuthor": "Margaret J. Snowling",
       "relevantPathsAI": [
-        "F.9.d"
+        "F.9.d",
+        "F.9.h.i"
       ],
-      "rationaleAI": "Dyslexia addresses CNS disorders (F.9.d)."
+      "rationaleAI": "Dyslexia connects to CNS disorders (F.9.d) and speech disorders (F.9.h.i)."
     },
     {
       "vsiTitle": "Addiction",
@@ -250,7 +260,7 @@
         "D.10",
         "F.9.d"
       ],
-      "rationaleAI": "Addiction addresses poisoning (D.10) and CNS disorders (F.9.d)."
+      "rationaleAI": "Substance addiction connects to poisoning (D.10) and CNS disorders (F.9.d)."
     },
     {
       "vsiTitle": "Psychotherapy",
@@ -258,7 +268,7 @@
       "relevantPathsAI": [
         "C.2.l"
       ],
-      "rationaleAI": "Psychotherapy addresses psychological therapy (C.2.l)."
+      "rationaleAI": "Psychotherapy directly addresses psychological therapy (C.2.l)."
     },
     {
       "vsiTitle": "Cognitive Behavioural Therapy",
@@ -266,7 +276,7 @@
       "relevantPathsAI": [
         "C.2.l"
       ],
-      "rationaleAI": "CBT addresses psychological therapy (C.2.l)."
+      "rationaleAI": "CBT directly addresses psychological therapy (C.2.l)."
     },
     {
       "vsiTitle": "Medical ethics",
@@ -274,7 +284,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Ethics of euthanasia and consent address therapeutic regimen factors (C.1)."
+      "rationaleAI": "Medical ethics connects to therapeutic regimen factors (C.1)."
     },
     {
       "vsiTitle": "Medical law",
@@ -283,7 +293,7 @@
         "C.1",
         "C.2.k"
       ],
-      "rationaleAI": "Legal frameworks address therapeutic decisions (C.1) and organ transplants (C.2.k)."
+      "rationaleAI": "Medical law connects to treatment aspects (C.1) and organ transplants (C.2.k)."
     },
     {
       "vsiTitle": "Radioactivity",
@@ -292,15 +302,16 @@
         "C.2.f",
         "D.8"
       ],
-      "rationaleAI": "Ionizing radiation addresses radiation therapy (C.2.f) and physical agent disorders (D.8)."
+      "rationaleAI": "Radioactivity connects to radiation therapy (C.2.f) and radiation disorders (D.8)."
     },
     {
       "vsiTitle": "Microbiomes",
       "vsiAuthor": "Angela E. Douglas",
       "relevantPathsAI": [
-        "D.5"
+        "D.5",
+        "F.4.g"
       ],
-      "rationaleAI": "Disease-causing microbiomes address infectious disease dynamics (D.5)."
+      "rationaleAI": "Microbial communities connect to infectious diseases (D.5) and digestion disorders (F.4.g)."
     },
     {
       "vsiTitle": "Ageing",
@@ -308,38 +319,34 @@
       "relevantPathsAI": [
         "F.9.d"
       ],
-      "rationaleAI": "Age-related cognitive decline addresses CNS disorders (F.9.d)."
+      "rationaleAI": "Cognitive aging connects to CNS disorders (F.9.d)."
     },
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
       "relevantPathsAI": [
-        "F.2.a",
-        "F.2.b",
         "F.8.a",
-        "F.8.b",
-        "F.8.c"
+        "F.8.b"
       ],
-      "rationaleAI": "Covers the lymphatic system, skeletal system, and clinical conditions, directly addressing unresolved leaves on lymphatic vessel disorders, lymphoid tissue disorders, skeletal system diseases, connective tissue, and joint conditions."
+      "rationaleAI": "Skeletal system connects to bone (F.8.a) and connective tissue (F.8.b)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
       "relevantPathsAI": [
-        "D.1",
-        "D.4",
-        "D.9"
+        "A",
+        "D.4"
       ],
-      "rationaleAI": "Covers homeostasis, energy supply, and internal parameter regulation across organ systems, directly relevant to physiological shock, fluid and electrolyte balance disorders, and dehydration."
+      "rationaleAI": "Physiology provides disease context (A). Homeostasis connects to fluid balance (D.4)."
     },
     {
       "vsiTitle": "Food",
       "vsiAuthor": "John Krebs",
       "relevantPathsAI": [
         "D.3",
-        "F.4.g"
+        "D.10"
       ],
-      "rationaleAI": "Covers nutrition, malnutrition, overconsumption, obesity, and food poisoning, directly relevant to nutritional diseases and disorders in digestion and absorption of foods."
+      "rationaleAI": "Diet connects to nutritional diseases (D.3). Food poisoning connects to poisoning (D.10)."
     },
     {
       "vsiTitle": "Sleep",
@@ -347,7 +354,7 @@
       "relevantPathsAI": [
         "F.9.d"
       ],
-      "rationaleAI": "Covers sleep disorders including obstructive sleep apnea and links to Alzheimer's disease and diabetes, relevant to disorders of the central nervous system."
+      "rationaleAI": "Sleep disorders connect to CNS disorders (F.9.d)."
     },
     {
       "vsiTitle": "Clinical Psychology",
@@ -355,16 +362,16 @@
       "relevantPathsAI": [
         "C.2.l"
       ],
-      "rationaleAI": "Covers clinical psychology addressing mental health assessment and treatment including cognitive therapy and psychoanalytic methods, directly relevant to psychological therapy in disease treatment."
+      "rationaleAI": "Clinical psychology connects to psychological therapy (C.2.l)."
     },
     {
       "vsiTitle": "Genomics",
       "vsiAuthor": "John M. Archibald",
       "relevantPathsAI": [
-        "D.6",
-        "F.6.a"
+        "B",
+        "D.6"
       ],
-      "rationaleAI": "Covers DNA sequencing, genome assembly, and applications in personalized medicine and epidemiology, relevant to diseases present at birth and genetic and congenital abnormalities."
+      "rationaleAI": "Genomics connects to disease diagnosis (B) and diseases at birth (D.6)."
     },
     {
       "vsiTitle": "Child Psychology",
@@ -372,7 +379,7 @@
       "relevantPathsAI": [
         "D.7"
       ],
-      "rationaleAI": "Covers developmental psychology from birth through early adolescence including brain development and neurobiology, relevant as the only defensible candidate for the childhood diseases leaf."
+      "rationaleAI": "Developmental psychology provides context for childhood diseases (D.7)."
     }
   ],
   "_curatedBy": "ai",

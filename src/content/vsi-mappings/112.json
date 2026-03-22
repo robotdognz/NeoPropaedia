@@ -7,16 +7,25 @@
       "relevantPathsAI": [
         "A",
         "A.1",
+        "A.1.a",
+        "A.1.b",
+        "A.1.e",
         "A.2",
+        "A.2.a",
+        "A.2.b",
+        "A.3",
+        "A.4",
         "A.5",
         "A.6",
         "A.8",
         "C",
+        "C.1",
+        "C.6",
+        "C.7",
         "D",
-        "E",
-        "H"
+        "E"
       ],
-      "rationaleAI": "Atomic structure, proton-neutron configurations, and nuclear stability span nuclear structure (A), properties (A.1), components (A.2), models (A.5), theories (A.6), formation in the universe (A.8), radioactivity (C), neutrons (D), reactions (E), and elementary particles (H)."
+      "rationaleAI": "Comprehensive nuclear physics covering atomic structure (A), radioactivity (C), neutrons (D), and reactions (E)."
     },
     {
       "vsiTitle": "Particle physics",
@@ -24,28 +33,39 @@
       "relevantPathsAI": [
         "H",
         "H.1",
+        "H.1.a",
+        "H.1.c",
+        "H.1.d",
         "H.2",
         "H.3",
         "H.4",
-        "H.5"
+        "H.5",
+        "H.7"
       ],
-      "rationaleAI": "Quarks, bosons, and the Higgs boson map to subatomic particles (H), discovery (H.1), forces (H.2), classification (H.3), conservation laws (H.4), and production (H.5)."
+      "rationaleAI": "Particle physics covers elementary particles (H), discoveries (H.1.a), quantum field theory (H.1.c), forces (H.2), classification (H.3), and conservation laws (H.4)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
       "relevantPathsAI": [
+        "B",
+        "B.5",
+        "B.5.a",
         "B.6",
         "C",
         "C.1",
         "C.2",
         "C.3",
+        "C.5",
         "C.7",
-        "C.8",
         "D.4",
-        "F"
+        "F.1",
+        "G.1",
+        "I",
+        "I.2",
+        "I.3"
       ],
-      "rationaleAI": "Radioisotopes and ionizing radiation span radioactive nuclei (C), phenomenon (C.1), types (C.2), sources (C.3), rates (C.7), applications (C.8), isotope applications (B.6), neutron reactions (D.4), and fission (F)."
+      "rationaleAI": "Radioactivity covers isotopes (B), radioactive nuclei (C), fission (F.1), fusion (G.1), and radiation effects including secondary effects (I.2) and utilization in biological/medical fields (I.3)."
     },
     {
       "vsiTitle": "Nuclear power",
@@ -54,20 +74,22 @@
         "F",
         "F.1",
         "F.2",
+        "F.2.b",
         "G",
         "G.4",
         "G.5"
       ],
-      "rationaleAI": "Nuclear fission and fusion map to fission (F), phenomena (F.1), chain reactions (F.2), fusion (G), reactor conditions (G.4), and controlled fusion prospects (G.5)."
+      "rationaleAI": "Nuclear power covers fission (F, F.1, F.2, F.2.b) and fusion (G, G.4, G.5)."
     },
     {
       "vsiTitle": "Nuclear Weapons",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
+        "F.2",
         "F.2.a",
         "G.3.b"
       ],
-      "rationaleAI": "Atomic and thermonuclear bombs map to nuclear explosions (F.2.a) and hydrogen bombs (G.3.b)."
+      "rationaleAI": "Nuclear weapons cover fission explosions (F.2, F.2.a) and thermonuclear explosions (G.3.b)."
     },
     {
       "vsiTitle": "Isotopes",
@@ -77,64 +99,72 @@
         "B.1",
         "B.2",
         "B.3",
+        "B.4",
         "B.5.a",
         "B.6"
       ],
-      "rationaleAI": "Isotopes map to classification (B.1), composition (B.2), formation (B.3), mass spectrometry (B.5.a), and applications (B.6)."
+      "rationaleAI": "Isotopes cover all isotope topics (B, B.1-B.6)."
     },
     {
       "vsiTitle": "Quantum Theory",
       "vsiAuthor": "John Polkinghorne",
       "relevantPathsAI": [
         "H.1.c",
-        "H.4"
+        "H.4.a"
       ],
-      "rationaleAI": "Quantum field theory connects to advances in field theory (H.1.c) and symmetry operations (H.4)."
+      "rationaleAI": "Quantum theory covers quantum field theory (H.1.c) and symmetry operations (H.4.a)."
     },
     {
       "vsiTitle": "Matter",
       "vsiAuthor": "Geoff Cottrell",
       "relevantPathsAI": [
-        "A.1",
+        "A",
+        "A.8",
         "H",
+        "H.1",
         "H.2"
       ],
-      "rationaleAI": "Elementary particles and forces connect to nuclear properties (A.1), subatomic particles (H), and forces (H.2)."
+      "rationaleAI": "Matter covers nuclear structure (A), nuclei origins (A.8), particles (H, H.1), and forces (H.2)."
     },
     {
       "vsiTitle": "The Elements",
       "vsiAuthor": "Philip Ball",
       "relevantPathsAI": [
-        "A.8",
-        "B.2"
+        "A.1.b",
+        "A.3",
+        "B"
       ],
-      "rationaleAI": "Big Bang origin of elements connects to nuclear formation (A.8) and isotopic composition (B.2)."
+      "rationaleAI": "Elements cover atomic number (A.1.b) and isotopes (A.3, B)."
     },
     {
       "vsiTitle": "Nothing",
       "vsiAuthor": "Frank Close",
       "relevantPathsAI": [
-        "H.1.c"
+        "H.1.c",
+        "H.7"
       ],
-      "rationaleAI": "Quantum field theory and virtual particles connect to field theory advances (H.1.c)."
+      "rationaleAI": "Vacuum physics covers quantum field theory (H.1.c) and theoretical particles (H.7)."
     },
     {
       "vsiTitle": "Symmetry",
       "vsiAuthor": "Ian Stewart",
       "relevantPathsAI": [
         "H.3",
-        "H.4"
+        "H.4",
+        "H.4.a",
+        "H.4.d"
       ],
-      "rationaleAI": "Group theory connects to particle classification by symmetry (H.3) and conservation laws (H.4)."
+      "rationaleAI": "Symmetry covers particle classification (H.3), conservation laws (H.4), and internal symmetries (H.4.d)."
     },
     {
       "vsiTitle": "Cosmology",
       "vsiAuthor": "Peter Coles",
       "relevantPathsAI": [
         "A.8",
-        "G.3.a"
+        "G.3.a",
+        "H.7"
       ],
-      "rationaleAI": "Big Bang connects to nuclear formation (A.8) and stellar thermonuclear reactions (G.3.a)."
+      "rationaleAI": "Cosmology covers nuclei formation (A.8), stellar reactions (G.3.a), and theoretical particles (H.7)."
     },
     {
       "vsiTitle": "Energy Systems",
@@ -143,16 +173,18 @@
         "F.2.b",
         "G.5"
       ],
-      "rationaleAI": "Nuclear energy connects to controlled fission (F.2.b) and controlled fusion prospects (G.5)."
+      "rationaleAI": "Energy covers controlled fission (F.2.b) and fusion prospects (G.5)."
     },
     {
       "vsiTitle": "Stars",
       "vsiAuthor": "Andrew King",
       "relevantPathsAI": [
         "A.8",
+        "G.1",
+        "G.2",
         "G.3.a"
       ],
-      "rationaleAI": "Stellar nucleosynthesis connects to nuclear formation (A.8) and stellar reactions (G.3.a)."
+      "rationaleAI": "Stars cover nuclei formation (A.8) and fusion (G.1, G.2, G.3.a)."
     },
     {
       "vsiTitle": "The Sun",
@@ -160,16 +192,17 @@
       "relevantPathsAI": [
         "G.3.a"
       ],
-      "rationaleAI": "Solar fusion maps to stellar thermonuclear reactions (G.3.a)."
+      "rationaleAI": "The Sun covers solar thermonuclear reactions (G.3.a)."
     },
     {
       "vsiTitle": "The Periodic Table",
       "vsiAuthor": "Eric R. Scerri",
       "relevantPathsAI": [
         "A.1.b",
+        "A.3",
         "B.2"
       ],
-      "rationaleAI": "Atomic number connects to nuclear charge (A.1.b) and isotopic composition (B.2)."
+      "rationaleAI": "Periodic table covers atomic number (A.1.b), isotopes (A.3), and isotopic composition (B.2)."
     },
     {
       "vsiTitle": "Magnetism",
@@ -178,23 +211,25 @@
         "A.1.e",
         "I.1.a"
       ],
-      "rationaleAI": "Electron spin connects to nuclear magnetic moment (A.1.e) and electromagnetic interactions (I.1.a)."
+      "rationaleAI": "Magnetism covers NMR (A.1.e) and electromagnetic-atomic interaction (I.1.a)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
       "relevantPathsAI": [
-        "A.1.e"
+        "A.1.e",
+        "I.1.a"
       ],
-      "rationaleAI": "NMR spectroscopy maps to nuclear magnetic resonance (A.1.e)."
+      "rationaleAI": "Physical chemistry covers NMR spectroscopy (A.1.e) and electromagnetic interaction (I.1.a)."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
       "relevantPathsAI": [
+        "A.1.a",
         "H.4.b"
       ],
-      "rationaleAI": "Mass-energy equivalence connects to space-time dynamic symmetries (H.4.b)."
+      "rationaleAI": "Relativity covers nuclear mass-energy (A.1.a) and space-time symmetries (H.4.b)."
     },
     {
       "vsiTitle": "Light",
@@ -202,16 +237,17 @@
       "relevantPathsAI": [
         "I.1.a"
       ],
-      "rationaleAI": "Electromagnetic radiation connects to passage of electromagnetic waves through matter (I.1.a)."
+      "rationaleAI": "Light covers electromagnetic wave-atomic interaction (I.1.a)."
     },
     {
       "vsiTitle": "Waves",
       "vsiAuthor": "Mike Goldsmith",
       "relevantPathsAI": [
+        "I.1",
         "I.1.a",
         "I.1.b"
       ],
-      "rationaleAI": "Wave phenomena connect to electromagnetic waves (I.1.a) and particle passage through matter (I.1.b)."
+      "rationaleAI": "Waves cover radiation-matter interaction (I.1), electromagnetic waves (I.1.a), and particle passage (I.1.b)."
     },
     {
       "vsiTitle": "Astrophysics",
@@ -220,16 +256,16 @@
         "A.8",
         "G.3.a"
       ],
-      "rationaleAI": "Stellar evolution connects to nuclear formation (A.8) and stellar reactions (G.3.a)."
+      "rationaleAI": "Astrophysics covers nuclei formation (A.8) and stellar reactions (G.3.a)."
     },
     {
       "vsiTitle": "The History of Chemistry",
       "vsiAuthor": "William H. Brock",
       "relevantPathsAI": [
-        "A",
-        "B.2"
+        "A.1.b",
+        "B"
       ],
-      "rationaleAI": "Rutherford's atomic theory connects to nuclear structure (A) and isotopic composition (B.2)."
+      "rationaleAI": "Chemistry history covers atomic number (A.1.b) and isotopes (B)."
     },
     {
       "vsiTitle": "Gravity",
@@ -237,36 +273,35 @@
       "relevantPathsAI": [
         "H.2"
       ],
-      "rationaleAI": "Gravity as fundamental force connects to forces in particle interactions (H.2)."
+      "rationaleAI": "Gravity addresses fundamental forces (H.2)."
     },
     {
       "vsiTitle": "Physics",
       "vsiAuthor": "Sidney Perkowitz",
       "relevantPathsAI": [
         "A",
-        "E",
-        "F",
-        "G",
-        "H"
+        "H",
+        "I"
       ],
-      "rationaleAI": "Physics overview connects to nuclear structure (A), reactions (E), fission (F), fusion (G), and particles (H)."
+      "rationaleAI": "Physics covers nuclear structure (A), particles (H), and radiation effects (I)."
     },
     {
       "vsiTitle": "Condensed Matter Physics",
       "vsiAuthor": "Ross McKenzie",
       "relevantPathsAI": [
-        "I.4.a",
-        "I.4.b"
+        "I.1",
+        "I.2"
       ],
-      "rationaleAI": "Covers states of matter including superconductors and phase transitions, relevant to understanding ionization media properties and detection system mechanisms that rely on condensed matter physics principles."
+      "rationaleAI": "Condensed matter connects to radiation interaction (I.1) and secondary effects (I.2)."
     },
     {
       "vsiTitle": "Philosophy of Physics",
       "vsiAuthor": "David Wallace",
       "relevantPathsAI": [
-        "H.4"
+        "H.1.c",
+        "H.4.a"
       ],
-      "rationaleAI": "Covers interpretation of quantum mechanics including parallel universe hypotheses and the measurement problem, directly relevant to elementary particles and the laws of conservation and symmetry including quantum mechanical symmetry operations."
+      "rationaleAI": "Philosophy of physics covers quantum field theory (H.1.c) and symmetry operations (H.4.a)."
     }
   ],
   "_curatedBy": "ai",

@@ -6,53 +6,71 @@
       "vsiAuthor": "Avinash Dixit",
       "relevantPathsAI": [
         "A",
-        "B.1",
+        "B",
+        "B.2",
+        "C",
         "C.1",
         "C.1.a",
         "C.1.b",
+        "C.1.d",
+        "C.2.a",
+        "C.2.b",
+        "C.2.c",
+        "C.2.d",
+        "C.6",
         "D",
         "D.1"
       ],
-      "rationaleAI": "Consumer choice addresses scarcity and value (A) and consumer behaviour (B.1). Market structures address competitive markets (C.1.a, C.1.b). Price mechanisms address the price system (D.1)."
+      "rationaleAI": "Consumer choice and labor markets directly address consumer behavior (B) and the market for labor and services (C.2.d). Coverage of monopoly, competition, and antitrust regulation maps to competitive market structures (C.1.a) and government regulation of monopolistic practices (C.1.d). Agricultural policy through the Common Agricultural Policy addresses markets for primary commodities (C.2.a). Supply dynamics and price mechanisms for goods distribution cover the price system (D, D.1) and the function of the market in establishing equilibrium (C.6). Manufactured goods markets (C.2.b) and savings and investment relate to money and capital markets (C.2.c)."
     },
     {
       "vsiTitle": "Economics",
       "vsiAuthor": "Partha Dasgupta",
       "relevantPathsAI": [
         "A",
+        "B",
+        "C",
         "C.1",
+        "C.1.a",
+        "C.4",
+        "C.6",
+        "D",
         "D.1",
         "D.2"
       ],
-      "rationaleAI": "Resource allocation addresses scarcity (A). Market mechanisms address markets (C.1). Public goods address price system limitations (D.2)."
+      "rationaleAI": "Resource allocation and market mechanisms address scarcity, utility, and value in pricing (A) and the price system (D, D.1). Market structures and public goods relate to competition and monopoly classification (C.1, C.1.a). Environmental sustainability and externalities map to areas where the price system does not function (D.2). Development outcomes and contrasts between developed and developing economies connect to historical development of markets and social welfare (C.4). Market equilibrium is addressed through supply-demand analysis (C.6)."
     },
     {
       "vsiTitle": "Behavioural Economics",
       "vsiAuthor": "Michelle Baddeley",
       "relevantPathsAI": [
+        "A",
+        "B",
         "B.2",
         "D.2.d"
       ],
-      "rationaleAI": "Cognitive biases address consumer tastes (B.2). Imperfect knowledge addresses buyer limitations (D.2.d)."
+      "rationaleAI": "Cognitive biases and deviations from rational choice in economic decisions directly address factors influencing consumers' tastes and spending (B.2) and scarcity, utility, and value (A). Imperfect knowledge and irrational behavior in markets illustrate imperfect knowledge on the part of buyers as to alternative uses of their buying power (D.2.d)."
     },
     {
       "vsiTitle": "Choice Theory",
       "vsiAuthor": "Michael Allingham",
       "relevantPathsAI": [
         "A",
-        "B.1"
+        "B"
       ],
-      "rationaleAI": "Utility theory addresses scarcity and value (A) and consumer behaviour (B.1)."
+      "rationaleAI": "Cardinal and ordinal utility, expected utility theory, and rational choice under risk address scarcity, utility, and value and their roles in pricing and relationship to the consumer (A). Applications to resource allocation and welfare economics connect to the satisfaction of material wants and consumer behavior (B)."
     },
     {
       "vsiTitle": "Competition and Antitrust Law",
       "vsiAuthor": "Ariel Ezrachi",
       "relevantPathsAI": [
+        "C.1",
         "C.1.a",
-        "C.1.d",
-        "D.2.a"
+        "C.1.b",
+        "C.1.c",
+        "C.1.d"
       ],
-      "rationaleAI": "Monopoly regulation addresses competitive markets (C.1.a), government regulation (C.1.d), and price-fixing (D.2.a)."
+      "rationaleAI": "Legal frameworks protecting competitive markets directly address markets classified by competition and monopoly (C.1). Cartels, monopoly power, and anti-competitive agreements cover purely competitive markets versus imperfect competition (C.1.a). Regulatory challenges and enforcement agencies map to influences affecting seller behavior under competitive conditions (C.1.b) and government regulation of monopolistic practices (C.1.d). Policy tensions between free markets and intervention address the concept of workable competition (C.1.c)."
     },
     {
       "vsiTitle": "Game theory",
@@ -60,15 +78,16 @@
       "relevantPathsAI": [
         "C.1.b"
       ],
-      "rationaleAI": "Strategic decision-making addresses seller behaviour (C.1.b)."
+      "rationaleAI": "Strategic decision-making analysis including Nash equilibrium and market competition models addresses influences affecting the behavior of sellers under various competitive conditions (C.1.b) through formal modeling of oligopolistic and competitive interactions."
     },
     {
       "vsiTitle": "Environmental economics",
       "vsiAuthor": "Stephen Smith",
       "relevantPathsAI": [
+        "D.2",
         "D.2.c"
       ],
-      "rationaleAI": "Externalities address economic relationships not susceptible to prices (D.2.c)."
+      "rationaleAI": "Market failure, externalities, and cost-benefit analysis of environmental protection directly address economic relationships not susceptible to control by prices, specifically externalities such as air pollution (D.2.c) and broader limitations on the price system (D.2)."
     },
     {
       "vsiTitle": "Advertising",
@@ -76,7 +95,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Advertising strategy addresses consumer tastes (B.2)."
+      "rationaleAI": "Advertising strategy, media channels, target market identification, and campaign effectiveness directly address factors influencing consumers' tastes and spending (B.2) through commercial communication and marketing practices."
     },
     {
       "vsiTitle": "Marketing",
@@ -85,7 +104,7 @@
         "B.2",
         "B.3"
       ],
-      "rationaleAI": "Market analysis addresses consumer spending (B.2). Ethics addresses consumer protection (B.3)."
+      "rationaleAI": "Market analysis, customer needs identification, and competitive advantage creation address factors influencing consumers' tastes and spending (B.2). Marketing ethics and responsible practices in a globalized economy connect to the protection of consumer interests (B.3)."
     },
     {
       "vsiTitle": "Banking",
@@ -93,7 +112,7 @@
       "relevantPathsAI": [
         "C.2.c"
       ],
-      "rationaleAI": "Banking addresses money and capital markets (C.2.c)."
+      "rationaleAI": "Commercial banking structures, central bank monetary policy, and financial deregulation directly address markets for money and capital including the market for short-term loans and the securities market (C.2.c)."
     },
     {
       "vsiTitle": "Mathematical finance",
@@ -101,7 +120,7 @@
       "relevantPathsAI": [
         "C.2.c"
       ],
-      "rationaleAI": "Asset valuation addresses money and capital markets (C.2.c)."
+      "rationaleAI": "Asset valuation, risk management, and pricing of financial contracts including interest rate modeling and credit trading directly address markets for money and capital, specifically the securities market (C.2.c)."
     },
     {
       "vsiTitle": "Adam Smith",
@@ -110,16 +129,18 @@
         "C.4",
         "D.1"
       ],
-      "rationaleAI": "The invisible hand addresses market theory (C.4) and the price system (D.1)."
+      "rationaleAI": "The Wealth of Nations as foundational economics covering free trade, competition, and the invisible hand addresses the historical development of markets and market theory (C.4). The price system as a means of organizing economic activity through competitive markets aligns with the determination of what is produced and how (D.1)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
+        "C",
         "C.4",
+        "D",
         "D.1"
       ],
-      "rationaleAI": "Market development addresses market history (C.4) and price system (D.1)."
+      "rationaleAI": "Market forces, capital accumulation, and financial systems address markets as an economic institution (C) and the historical development of markets (C.4). The relationship between market exchange and economic organization connects to the price system in capitalist economies (D, D.1)."
     },
     {
       "vsiTitle": "Socialism",
@@ -127,15 +148,16 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Collective ownership addresses markets under socialism (C.3)."
+      "rationaleAI": "Collective ownership and economic alternatives to capitalism, including Cuban communism and Swedish social democracy, directly address the counterpart of the market under full-scale economic planning and markets under socialism (C.3)."
     },
     {
       "vsiTitle": "The World Trade Organization",
       "vsiAuthor": "Amrita Narlikar",
       "relevantPathsAI": [
+        "C.2.a",
         "C.5"
       ],
-      "rationaleAI": "WTO addresses international trade markets (C.5)."
+      "rationaleAI": "The EU's Common Agricultural Policy and trade in primary commodities address markets for primary commodities (C.2.a). The WTO's multilateral framework governing global trade directly connects to markets in international trade (C.5)."
     },
     {
       "vsiTitle": "Taxation",
@@ -143,16 +165,15 @@
       "relevantPathsAI": [
         "D.2.b"
       ],
-      "rationaleAI": "Tax instruments address government price controls (D.2.b)."
+      "rationaleAI": "Tax instruments affecting economic behavior and tax burden distribution address government-established price controls and subsidies (D.2.b)."
     },
     {
       "vsiTitle": "Branding",
       "vsiAuthor": "Robert Jones",
       "relevantPathsAI": [
-        "B.2",
-        "C.2.b"
+        "B.2"
       ],
-      "rationaleAI": "Covers how brands function psychologically and culturally including consumer empowerment, data-driven marketing, and brand loyalty, directly relevant to factors influencing consumers' tastes and spending and markets for manufactured goods."
+      "rationaleAI": "Brand identity construction, consumer loyalty mechanisms, and data-driven marketing address factors influencing consumers' tastes and spending (B.2) through psychological and cultural forces shaping purchasing decisions."
     },
     {
       "vsiTitle": "Global Economic History",
@@ -160,16 +181,15 @@
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Covers comparative analysis of global economic development including the roles of trade, institutional frameworks, and government policy, directly relevant to the historical development of markets and the market in economic theory."
+      "rationaleAI": "Comparative analysis of national prosperity, technological change, and globalization patterns addresses the historical development of markets and the relationship of the market to social welfare and politics (C.4)."
     },
     {
       "vsiTitle": "Entrepreneurship",
       "vsiAuthor": "Paul Westhead, Mike Wright",
       "relevantPathsAI": [
-        "C.1",
-        "C.2.b"
+        "C"
       ],
-      "rationaleAI": "Covers entrepreneurial processes and their impact on market economies including venture creation and innovation across commercial sectors, relevant to competition and monopoly in markets and markets for manufactured goods."
+      "rationaleAI": "Entrepreneurial processes and venture creation within modern market economies address markets as an economic institution in a mixed economy (C)."
     },
     {
       "vsiTitle": "Corporate social responsibility",
@@ -177,23 +197,24 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Covers how enterprises address their societal impacts including stakeholder engagement, transparency, and labor practices, relevant to the protection of consumer interests."
+      "rationaleAI": "Corporate responsibility addressing societal impacts, stakeholder engagement, and transparency connects to the protection of consumer interests (B.3)."
     },
     {
       "vsiTitle": "Intellectual property",
       "vsiAuthor": "Siva Vaidhyanathan",
       "relevantPathsAI": [
-        "C.1.d"
+        "C"
       ],
-      "rationaleAI": "Covers legal frameworks governing ownership of creative works and inventions including conflicts between creators and consumers, relevant to government regulation of monopolistic practices through patent and trademark law."
+      "rationaleAI": "Intellectual property law governing ownership of ideas and creative works in the global economy addresses markets as an economic institution (C)."
     },
     {
       "vsiTitle": "The European Union",
       "vsiAuthor": "John Pinder, Simon Usherwood",
       "relevantPathsAI": [
-        "C.1.d"
+        "C.1.d",
+        "C.2.a"
       ],
-      "rationaleAI": "Covers the EU single market, trade policy, and regulatory mechanisms ensuring competition, directly relevant to government regulation of monopolistic practices in international contexts."
+      "rationaleAI": "The EU's single market and economic integration framework address government regulation of monopolistic practices (C.1.d) at a supranational level. The Common Agricultural Policy directly relates to markets for primary commodities (C.2.a)."
     }
   ],
   "_curatedBy": "ai",

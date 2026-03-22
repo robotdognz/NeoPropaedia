@@ -9,26 +9,40 @@
         "A.1",
         "A.2",
         "A.3",
+        "A.3.a",
+        "A.3.c",
+        "A.5",
+        "A.6",
+        "A.7",
+        "A.8",
         "A.9",
         "A.10",
+        "B.1",
         "B.1.a",
+        "C",
         "C.1",
         "C.1.a",
         "C.1.c.ii",
         "C.1.c.iii",
         "C.2",
+        "C.2.a",
+        "C.2.b",
+        "C.2.f",
+        "C.3",
         "C.3.c"
       ],
-      "rationaleAI": "Hinduism from Indus Valley through Vedic religion to contemporary practice addresses history (A), Vedic origins (A.3), modern Hinduism (A.9, A.10). Dharma, karma, moksha relate to beliefs (C.1.c), karman and samsara (C.1.c.ii), and three margas (C.1.c.iii). Rig Veda relates to scriptures (B.1.a), Vedanta to philosophy (C.2), caste to hierarchy (C.3.c)."
+      "rationaleAI": "Full history of Hinduism from Indus Valley through contemporary practice covering all major periods (A), Vedic tradition (A.3, A.3.a), Upanisads (A.3.c), devotional movements (A.5-A.10), Rig Veda as scripture (B.1.a), dharma/karma/moksha doctrines (C.1.c.ii, C.1.c.iii), Vedism/Brahmanism (C.2.a), Vaisnavism (C.2.b), modern movements (C.2.f), and caste system (C.3.c)."
     },
     {
       "vsiTitle": "Indian philosophy",
       "vsiAuthor": "Sue Hamilton",
       "relevantPathsAI": [
+        "A.3.c",
         "B.3",
-        "C.1.c.ii"
+        "C.1.c.ii",
+        "C.1.c.iii"
       ],
-      "rationaleAI": "Six orthodox schools with karma and moksha relate to Hindu philosophy (B.3) and karman and samsara (C.1.c.ii)."
+      "rationaleAI": "Six classical schools address Hindu philosophy (B.3), Upanishadic tradition (A.3.c), and karman/transmigration doctrines (C.1.c.ii, C.1.c.iii)."
     },
     {
       "vsiTitle": "Sikhism",
@@ -36,10 +50,16 @@
       "relevantPathsAI": [
         "D.2",
         "D.2.a",
+        "D.2.a.i",
+        "D.2.a.ii",
+        "D.2.a.iii",
+        "D.2.a.iv",
+        "D.2.a.v",
+        "D.2.a.vi",
         "D.2.b",
         "D.2.c"
       ],
-      "rationaleAI": "Sikhism from Guru Nanak directly addresses Sikhism's history (D.2.a), literature (D.2.b), and beliefs and practices (D.2.c)."
+      "rationaleAI": "Comprehensive coverage of Sikhism spanning all historical periods (D.2.a.i through D.2.a.vi), religious literature (D.2.b), and beliefs and practices (D.2.c)."
     },
     {
       "vsiTitle": "Buddhism",
@@ -47,7 +67,7 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Buddhism as heterodox challenge relates to the heterodox period (A.4)."
+      "rationaleAI": "Buddhism as challenge to Brahmanism addresses the heterodox period (A.4)."
     },
     {
       "vsiTitle": "Buddha",
@@ -55,7 +75,7 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "The Buddha's relationship to Hinduism and Jainism relates to the heterodox period (A.4)."
+      "rationaleAI": "The historical Buddha addresses the heterodox period (A.4)."
     },
     {
       "vsiTitle": "Gandhi",
@@ -64,25 +84,27 @@
         "A.9",
         "C.2.f"
       ],
-      "rationaleAI": "Gandhi's nonviolent resistance relates to modern Hinduism (A.9) and nationalist movements (C.2.f)."
+      "rationaleAI": "Gandhi connects to modern Hinduism (A.9) and ethical/nationalist movements (C.2.f)."
     },
     {
       "vsiTitle": "Modern India",
       "vsiAuthor": "Craig Jeffrey",
       "relevantPathsAI": [
         "A.10",
+        "C.2.f",
         "C.3.c"
       ],
-      "rationaleAI": "Contemporary India's caste dynamics relate to the caste system (C.3.c) and Hinduism today (A.10)."
+      "rationaleAI": "Contemporary India connects to Hinduism today (A.10), modern movements (C.2.f), and caste (C.3.c)."
     },
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
       "relevantPathsAI": [
         "C.3",
-        "C.3.a"
+        "C.3.a",
+        "C.3.b"
       ],
-      "rationaleAI": "Ritual relates to Hindu practices (C.3) and sacrifice and worship (C.3.a)."
+      "rationaleAI": "Ritual covers Hindu sacrifice and worship (C.3.a) and sacred times and places (C.3.b)."
     },
     {
       "vsiTitle": "Tibetan Buddhism",
@@ -90,23 +112,24 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Tibetan Buddhism's Indian origins relate to the heterodox period (A.4)."
+      "rationaleAI": "Tibetan Buddhism connects to the heterodox period (A.4)."
     },
     {
       "vsiTitle": "Spirituality",
       "vsiAuthor": "Philip Sheldrake",
       "relevantPathsAI": [
-        "B.4"
+        "B.4",
+        "C.1.c.iii"
       ],
-      "rationaleAI": "Spirituality across Hindu traditions relates to Hindu mysticism (B.4)."
+      "rationaleAI": "Spirituality connects to Hindu mysticism (B.4) and the three margas (C.1.c.iii)."
     },
     {
       "vsiTitle": "The Abrahamic Religions",
       "vsiAuthor": "Charles L. Cohen",
       "relevantPathsAI": [
-        "C.1"
+        "D.2.a.i"
       ],
-      "rationaleAI": "Provides comparative monotheistic context for understanding Hindu theistic and monistic traditions discussed in 823.C.1.a on views about God."
+      "rationaleAI": "Islam's presence provides context for Sikhism's Islamic-Hindu background (D.2.a.i)."
     },
     {
       "vsiTitle": "Myth",
@@ -114,15 +137,16 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Theoretical approaches to myth relate to Hindu mythology (B.2)."
+      "rationaleAI": "Myth connects to Hindu mythology (B.2)."
     },
     {
       "vsiTitle": "Religion",
       "vsiAuthor": "Thomas A. Tweed",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "C"
       ],
-      "rationaleAI": "Religion as global phenomenon provides context for the history of Hinduism (A)."
+      "rationaleAI": "Religion broadly addresses the history of Hinduism (A) and its beliefs and practices (C)."
     },
     {
       "vsiTitle": "Confucianism",
@@ -136,30 +160,27 @@
       "vsiTitle": "Pakistan",
       "vsiAuthor": "Pippa Virdee",
       "relevantPathsAI": [
-        "A.2",
+        "D.2.a.i",
         "D.2.a.vi"
       ],
-      "rationaleAI": "Pakistan's Indus Valley relates to protohistoric Indian religion (A.2), and partition relates to Sikhism (D.2.a.vi)."
+      "rationaleAI": "Pakistan connects to Sikhism's Islamic-Hindu background (D.2.a.i) and Sikhism in independent India and Pakistan (D.2.a.vi)."
     },
     {
       "vsiTitle": "The Epic",
       "vsiAuthor": "Anthony Welch",
       "relevantPathsAI": [
-        "B.1.b"
+        "B.1.b",
+        "B.2"
       ],
-      "rationaleAI": "Covers epic as a global literary form including traditional heroic poetry from Asia with themes of heroism and warfare, relevant to post-Vedic Sanskrit epics such as the Mahabharata and Ramayana."
+      "rationaleAI": "Epic connects to post-Vedic Sanskrit literature (B.1.b) and Hindu mythology (B.2)."
     },
     {
       "vsiTitle": "Monasticism",
       "vsiAuthor": "Stephen J. Davis",
       "relevantPathsAI": [
-        "D.1.a.i",
-        "D.1.a.ii",
-        "D.1.a.iii",
-        "D.1.b",
-        "D.1.c"
+        "C.3.d"
       ],
-      "rationaleAI": "Covers monasticism including ascetic practices, monastic rules, and hagiographic literature across traditions, relevant to Jainism's ascetic background, Mahavira's teachings, later developments, Jain monastic figures, and institutional practices."
+      "rationaleAI": "Monasticism connects to religious orders and holy men (C.3.d)."
     }
   ],
   "_curatedBy": "ai",

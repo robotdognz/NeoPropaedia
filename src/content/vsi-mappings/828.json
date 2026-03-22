@@ -6,37 +6,47 @@
       "vsiAuthor": "Malise Ruthven",
       "relevantPathsAI": [
         "A",
+        "A.1",
         "A.2",
         "A.3",
+        "A.4",
         "A.5",
         "A.6",
         "A.7",
         "B.3",
+        "C",
+        "C.1",
         "C.1.a",
+        "C.1.e",
+        "C.1.g",
+        "C.2",
         "C.2.c",
         "C.2.d",
         "C.3",
+        "C.3.a",
+        "C.3.b",
+        "C.3.c",
         "C.3.d"
       ],
-      "rationaleAI": "Comprehensive Islam addresses Muhammad (A.2), early expansion (A.3), Middle Ages (A.5), modern (A.6), today (A.7). Sharia relates to law (B.3, C.3.d). Sunni (C.2.c) and Shia (C.2.d) are covered. Doctrines of God relate to C.1.a."
+      "rationaleAI": "Covers pre-Islamic Arabia (A.1), Muhammad (A.2), early expansion (A.3), Abbasid period (A.4), Middle Ages (A.5), modern Islam (A.6), today (A.7), Islamic law (B.3), doctrines of God (C.1.a), prophecy (C.1.e), ethics (C.1.g), Sunni (C.2.c), Shia (C.2.d), Five Pillars (C.3.a), mosque (C.3.b), family (C.3.c), and Sharia (C.3.d)."
     },
     {
       "vsiTitle": "The Koran",
       "vsiAuthor": "Michael Cook",
       "relevantPathsAI": [
-        "B.1",
-        "C.1.e"
+        "B.1"
       ],
-      "rationaleAI": "The Quran addresses B.1 and doctrines of prophecy (C.1.e)."
+      "rationaleAI": "The Quran directly addresses the Qur'an (B.1)."
     },
     {
       "vsiTitle": "Muhammad",
       "vsiAuthor": "Jonathan A.C. Brown",
       "relevantPathsAI": [
         "A.2",
+        "B.2",
         "C.1.e"
       ],
-      "rationaleAI": "Muhammad addresses origin of Islam (A.2) and prophecy (C.1.e)."
+      "rationaleAI": "Muhammad addresses Islam's origin (A.2), Hadith (B.2), and prophecy (C.1.e)."
     },
     {
       "vsiTitle": "Islamic History",
@@ -46,18 +56,21 @@
         "A.3",
         "A.4",
         "A.5",
+        "A.6",
+        "B.2",
         "C.3.b"
       ],
-      "rationaleAI": "Islamic history addresses foundations (A.3), Abbasids (A.4), Middle Ages (A.5), and sacred places (C.3.b)."
+      "rationaleAI": "Covers expansion (A.3), Abbasid period (A.4), Middle Ages (A.5), modern era (A.6), Hadith (B.2), and mosque (C.3.b)."
     },
     {
       "vsiTitle": "Islamic Law",
       "vsiAuthor": "Mashood A. Baderin",
       "relevantPathsAI": [
         "B.3",
+        "C.3.c",
         "C.3.d"
       ],
-      "rationaleAI": "Islamic law addresses Shari'ah (B.3, C.3.d)."
+      "rationaleAI": "Islamic jurisprudence covers law (B.3), family (C.3.c), and Sharia schools (C.3.d)."
     },
     {
       "vsiTitle": "Global Islam",
@@ -66,7 +79,7 @@
         "A.6",
         "A.7"
       ],
-      "rationaleAI": "Global Islam addresses modern Islam (A.6) and Islam today (A.7)."
+      "rationaleAI": "Global Islam connects to modern Islam (A.6) and today (A.7)."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
@@ -74,7 +87,7 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Philosophy in Islamic lands addresses Islamic theology and philosophy (B.4)."
+      "rationaleAI": "Islamic philosophy directly addresses theology and philosophy (B.4)."
     },
     {
       "vsiTitle": "Ibn Sīnā (Avicenna)",
@@ -82,16 +95,16 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Avicenna stands as one of the most important Islamic philosophers, making this text essential for 828.B.4 on major schools of Islamic philosophy."
+      "rationaleAI": "Avicenna directly addresses Islamic philosophy (B.4)."
     },
     {
       "vsiTitle": "Fundamentalism",
       "vsiAuthor": "Malise Ruthven",
       "relevantPathsAI": [
-        "A.6",
+        "A.7",
         "C.2.c"
       ],
-      "rationaleAI": "Fundamentalism relates to modern Islam (A.6) and Sunnism variations (C.2.c)."
+      "rationaleAI": "Fundamentalism connects to today (A.7) and Sunnism (C.2.c)."
     },
     {
       "vsiTitle": "Spirituality",
@@ -99,7 +112,7 @@
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "Islamic spirituality relates to Sufism (B.5)."
+      "rationaleAI": "Contemplative practices connect to Sufism (B.5)."
     },
     {
       "vsiTitle": "Pilgrimage",
@@ -107,24 +120,25 @@
       "relevantPathsAI": [
         "C.3.a"
       ],
-      "rationaleAI": "Pilgrimage to Mecca addresses the Five Pillars (C.3.a)."
+      "rationaleAI": "Mecca pilgrimage addresses Five Pillars (C.3.a)."
     },
     {
       "vsiTitle": "God",
       "vsiAuthor": "John Bowker",
       "relevantPathsAI": [
+        "C.1",
         "C.1.a"
       ],
-      "rationaleAI": "Conceptions of God relate to Islamic doctrines (C.1.a)."
+      "rationaleAI": "God conceptions connect to beliefs (C.1) and doctrines of God (C.1.a)."
     },
     {
       "vsiTitle": "The Abrahamic Religions",
       "vsiAuthor": "Charles L. Cohen",
       "relevantPathsAI": [
         "A",
-        "C.1.a"
+        "C.1"
       ],
-      "rationaleAI": "Islam as Abrahamic tradition relates to history (A) and God (C.1.a)."
+      "rationaleAI": "Abrahamic traditions connect to Islam history (A) and beliefs (C.1)."
     },
     {
       "vsiTitle": "Theology",
@@ -133,15 +147,16 @@
         "B.4",
         "C.1"
       ],
-      "rationaleAI": "Theology relates to Islamic philosophy (B.4) and beliefs (C.1)."
+      "rationaleAI": "Theology connects to philosophy (B.4) and beliefs (C.1)."
     },
     {
       "vsiTitle": "Iran",
       "vsiAuthor": "Ali Ansari",
       "relevantPathsAI": [
-        "A.6"
+        "A.6",
+        "C.2.d"
       ],
-      "rationaleAI": "Iran's Islamic Revolution relates to modern Islam (A.6)."
+      "rationaleAI": "Iran connects to modern Islam (A.6) and Shi'ism (C.2.d)."
     },
     {
       "vsiTitle": "The Crusades",
@@ -149,7 +164,7 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Crusades relate to Middle Ages of Islam (A.5)."
+      "rationaleAI": "Crusades connect to Middle Ages (A.5)."
     },
     {
       "vsiTitle": "The Palestinian–Israeli Conflict",
@@ -157,15 +172,16 @@
       "relevantPathsAI": [
         "A.7"
       ],
-      "rationaleAI": "Addresses the conflict including the Dome of the Rock and Jerusalem's significance in Islam, relevant to 828.A.7 on Islam today."
+      "rationaleAI": "The conflict connects to Islam today (A.7)."
     },
     {
       "vsiTitle": "War & Religion",
       "vsiAuthor": "Jolyon Mitchell, Joshua Rey",
       "relevantPathsAI": [
+        "A.5",
         "C.1.g"
       ],
-      "rationaleAI": "War and religion relate to social and ethical doctrines (C.1.g)."
+      "rationaleAI": "Religion and war connect to Middle Ages (A.5) and ethics (C.1.g)."
     },
     {
       "vsiTitle": "Hermeneutics",
@@ -173,15 +189,16 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Hermeneutics relates to Qur'anic interpretation (B.1)."
+      "rationaleAI": "Interpretation connects to Qur'anic interpretation (B.1)."
     },
     {
       "vsiTitle": "Blasphemy",
       "vsiAuthor": "Yvonne Sherwood",
       "relevantPathsAI": [
+        "A.7",
         "C.1.g"
       ],
-      "rationaleAI": "Blasphemy relates to social doctrines (C.1.g)."
+      "rationaleAI": "Blasphemy connects to today (A.7) and ethics (C.1.g)."
     },
     {
       "vsiTitle": "Secularism",
@@ -189,16 +206,16 @@
       "relevantPathsAI": [
         "A.6"
       ],
-      "rationaleAI": "Secularism relates to modern Islam (A.6)."
+      "rationaleAI": "Secularism connects to modern Islam (A.6)."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
       "relevantPathsAI": [
-        "A.4",
-        "A.5"
+        "A.3",
+        "A.4"
       ],
-      "rationaleAI": "Silk Road relates to Abbasid developments (A.4) and Middle Ages (A.5)."
+      "rationaleAI": "Silk Road facilitated expansion (A.3) and Abbasid development (A.4)."
     },
     {
       "vsiTitle": "Pakistan",
@@ -206,7 +223,7 @@
       "relevantPathsAI": [
         "A.7"
       ],
-      "rationaleAI": "Pakistan relates to Islam today (A.7)."
+      "rationaleAI": "Pakistan connects to Islam today (A.7)."
     },
     {
       "vsiTitle": "Southeast Asia",
@@ -214,48 +231,51 @@
       "relevantPathsAI": [
         "A.6"
       ],
-      "rationaleAI": "Southeast Asian Islam relates to modern Islam (A.6)."
+      "rationaleAI": "SE Asian Islam connects to modern Islam (A.6)."
     },
     {
       "vsiTitle": "African History",
       "vsiAuthor": "John Parker, Richard Rathbone",
       "relevantPathsAI": [
-        "A.5"
+        "A.5",
+        "A.6"
       ],
-      "rationaleAI": "Islam in Africa relates to Middle Ages of Islam (A.5)."
+      "rationaleAI": "African Islam connects to Middle Ages (A.5) and modern Islam (A.6)."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
       "relevantPathsAI": [
-        "A.4"
+        "A.5"
       ],
-      "rationaleAI": "Byzantine-Islamic interactions relate to early Abbasid period (A.4)."
+      "rationaleAI": "Byzantine-Islamic interactions connect to Middle Ages (A.5)."
     },
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
       "relevantPathsAI": [
-        "C.3"
+        "C.3",
+        "C.3.a"
       ],
-      "rationaleAI": "Ritual relates to Islamic practices (C.3)."
+      "rationaleAI": "Ritual connects to practices (C.3) and Five Pillars (C.3.a)."
     },
     {
       "vsiTitle": "Faith",
       "vsiAuthor": "Roger Trigg",
       "relevantPathsAI": [
-        "C.1.a",
-        "C.1.g"
+        "C.1",
+        "C.1.a"
       ],
-      "rationaleAI": "Addresses faith's relationship to reason including contrasts with Islam's emphasis on divine law and obedience, relevant to Islamic doctrines concerning God and social and ethical doctrines."
+      "rationaleAI": "Faith connects to beliefs (C.1) and God (C.1.a)."
     },
     {
       "vsiTitle": "Monasticism",
       "vsiAuthor": "Stephen J. Davis",
       "relevantPathsAI": [
+        "B.5",
         "C.2.f"
       ],
-      "rationaleAI": "Covers monasticism including geographic distribution and communal organization of religious orders, relevant to variations among urban and rustic Sufi orders."
+      "rationaleAI": "Monasticism connects to Sufism (B.5) and Sufi orders (C.2.f)."
     }
   ],
   "_curatedBy": "ai",

@@ -7,17 +7,16 @@
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "History and craft of dictionaries maps directly to dictionaries and lexicons (B.1)."
+      "rationaleAI": "History of dictionaries including Johnson's and the OED addresses dictionaries and lexicons (B.1)."
     },
     {
       "vsiTitle": "Information",
       "vsiAuthor": "Luciano Floridi",
       "relevantPathsAI": [
         "B",
-        "B.6",
-        "C.3.b"
+        "B.6"
       ],
-      "rationaleAI": "Information covering communication, the Internet, and copyright connects to storage and retrieval (B), databases (B.6), and electronic publishing (C.3.b)."
+      "rationaleAI": "Information theory addresses storage and retrieval (B). Ethics of information connect to databases (B.6)."
     },
     {
       "vsiTitle": "Big Data",
@@ -26,25 +25,26 @@
         "B.6",
         "B.7"
       ],
-      "rationaleAI": "Massive dataset collection and analysis map to databases (B.6) and recording technologies (B.7)."
+      "rationaleAI": "Massive datasets address databases (B.6). Digital storage connects to magnetic and optical recordings (B.7)."
     },
     {
       "vsiTitle": "Computer Science",
       "vsiAuthor": "Subrata Dasgupta",
       "relevantPathsAI": [
-        "B.6",
-        "B.7"
+        "B",
+        "B.6"
       ],
-      "rationaleAI": "Algorithms, programming, and AI connect to databases (B.6) and recording technologies (B.7)."
+      "rationaleAI": "Computation principles address storage and retrieval (B) and databases (B.6)."
     },
     {
       "vsiTitle": "The Computer",
       "vsiAuthor": "Darrel Ince",
       "relevantPathsAI": [
+        "B",
         "B.6",
         "B.7"
       ],
-      "rationaleAI": "Computing hardware and networks connect to databases (B.6) and recordings (B.7)."
+      "rationaleAI": "Computing technology addresses storage and retrieval (B), databases (B.6), and recordings (B.7)."
     },
     {
       "vsiTitle": "The History of Computing",
@@ -54,35 +54,34 @@
         "B.6",
         "B.7"
       ],
-      "rationaleAI": "History of information management maps to storage and retrieval (B), databases (B.6), and recordings (B.7)."
+      "rationaleAI": "Computing history addresses storage and retrieval (B), databases (B.6), and recordings (B.7)."
     },
     {
       "vsiTitle": "Cryptography",
       "vsiAuthor": "Fred Piper, Sean Murphy",
       "relevantPathsAI": [
-        "B.6",
-        "B.7"
+        "B"
       ],
-      "rationaleAI": "Information security connects to databases (B.6) and recording technologies (B.7)."
+      "rationaleAI": "Information security addresses storage and retrieval (B)."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
       "relevantPathsAI": [
-        "B",
-        "C.3"
+        "B"
       ],
-      "rationaleAI": "Writing systems map to information storage (B) and publishing (C.3)."
+      "rationaleAI": "Writing systems address storage and retrieval of information (B)."
     },
     {
       "vsiTitle": "Reading",
       "vsiAuthor": "Belinda Jack",
       "relevantPathsAI": [
-        "B.4",
-        "C.1",
-        "C.3"
+        "B",
+        "C.3",
+        "C.3.a",
+        "C.3.a.i"
       ],
-      "rationaleAI": "Literacy evolution connects to libraries (B.4), education (C.1), and publishing (C.3)."
+      "rationaleAI": "Reading and literacy address storage and retrieval (B). Mass literacy through printing connects to publishing (C.3), print publishing (C.3.a), and books (C.3.a.i)."
     },
     {
       "vsiTitle": "Hieroglyphs",
@@ -90,53 +89,58 @@
       "relevantPathsAI": [
         "B"
       ],
-      "rationaleAI": "Egyptian hieroglyphs connect to the history of information storage and retrieval (B)."
+      "rationaleAI": "Egyptian hieroglyphs address storage and retrieval (B) as ancient knowledge preservation."
     },
     {
       "vsiTitle": "Journalism",
       "vsiAuthor": "Ian Hargreaves",
       "relevantPathsAI": [
+        "C.3",
         "C.3.a.ii",
         "C.3.b",
-        "C.4"
+        "C.4",
+        "C.4.a",
+        "C.4.b"
       ],
-      "rationaleAI": "Journalism spans newspapers (C.3.a.ii), electronic publishing (C.3.b), and broadcasting (C.4)."
+      "rationaleAI": "Newspapers address C.3.a.ii. Broadcasting addresses radio (C.4.a) and television (C.4.b). Digital media addresses electronic publishing (C.3.b)."
     },
     {
       "vsiTitle": "Typography",
       "vsiAuthor": "Paul Luna",
       "relevantPathsAI": [
+        "C.3",
         "C.3.a",
+        "C.3.a.i",
         "C.3.b"
       ],
-      "rationaleAI": "Typeface design connects to print publishing (C.3.a) and electronic publishing (C.3.b)."
+      "rationaleAI": "Print and screen design addresses publishing (C.3), books (C.3.a.i), and electronic publishing (C.3.b)."
     },
     {
       "vsiTitle": "Photography",
       "vsiAuthor": "Steven Edwards",
       "relevantPathsAI": [
-        "A.1",
         "B.7"
       ],
-      "rationaleAI": "Photography connects to museums (A.1) and recording technologies (B.7)."
+      "rationaleAI": "Visual recording technology connects to magnetic and optical recordings (B.7)."
     },
     {
       "vsiTitle": "Documentary film",
       "vsiAuthor": "Patricia Aufderheide",
       "relevantPathsAI": [
-        "C.4.b",
-        "B.7"
+        "C.4",
+        "C.4.b"
       ],
-      "rationaleAI": "Documentary film connects to television (C.4.b) and recordings (B.7)."
+      "rationaleAI": "Documentary film addresses broadcasting (C.4) and television (C.4.b)."
     },
     {
       "vsiTitle": "Music and Technology",
       "vsiAuthor": "Mark Katz",
       "relevantPathsAI": [
         "B.7",
-        "C.4"
+        "C.4",
+        "C.4.a"
       ],
-      "rationaleAI": "Sound recording and broadcasting connect to recordings (B.7) and broadcasting (C.4)."
+      "rationaleAI": "Sound recording addresses recordings (B.7). Broadcasting addresses C.4 and radio (C.4.a)."
     },
     {
       "vsiTitle": "The History of Cinema",
@@ -145,16 +149,16 @@
         "B.7",
         "C.4.b"
       ],
-      "rationaleAI": "Cinema history connects to recordings (B.7) and television (C.4.b)."
+      "rationaleAI": "Cinema technology addresses recordings (B.7). Television competition connects to C.4.b."
     },
     {
       "vsiTitle": "Indian Cinema",
       "vsiAuthor": "Ashish Rajadhyaska",
       "relevantPathsAI": [
-        "B.7",
+        "C.4",
         "C.4.b"
       ],
-      "rationaleAI": "Indian film connects to recordings (B.7) and broadcasting (C.4.b)."
+      "rationaleAI": "Indian cinema's media relationships address broadcasting (C.4) and television (C.4.b)."
     },
     {
       "vsiTitle": "Universities and Colleges",
@@ -163,7 +167,7 @@
         "C.1",
         "C.2"
       ],
-      "rationaleAI": "Higher education maps to educational institutions (C.1) and academies of learning (C.2)."
+      "rationaleAI": "Higher education addresses educational institutions (C.1). Research universities connect to academies of learning (C.2)."
     },
     {
       "vsiTitle": "Education",
@@ -171,7 +175,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Education systems connect to educational institutions (C.1)."
+      "rationaleAI": "Education systems address educational institutions (C.1)."
     },
     {
       "vsiTitle": "The History of Astronomy",
@@ -179,7 +183,7 @@
       "relevantPathsAI": [
         "C.5"
       ],
-      "rationaleAI": "History of astronomy connects to observatories and planetariums (C.5)."
+      "rationaleAI": "Astronomical observation addresses observatories and planetariums (C.5)."
     },
     {
       "vsiTitle": "Telescopes",
@@ -187,17 +191,16 @@
       "relevantPathsAI": [
         "C.5"
       ],
-      "rationaleAI": "Telescope design maps to observatories and planetariums (C.5)."
+      "rationaleAI": "Telescope design addresses observatories and planetariums (C.5)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
       "relevantPathsAI": [
         "A.1",
-        "A.3",
-        "B.5"
+        "A.3"
       ],
-      "rationaleAI": "Archaeology connects to museums (A.1), historic places (A.3), and archives (B.5)."
+      "rationaleAI": "Heritage management addresses historic places (A.3). Museum collections connect to institutional collections (A.1)."
     },
     {
       "vsiTitle": "Art history",
@@ -206,7 +209,7 @@
         "A.1",
         "A.1.b.v"
       ],
-      "rationaleAI": "Art history connects to museums (A.1) and art galleries (A.1.b.v)."
+      "rationaleAI": "Museum studies address institutional collections (A.1) and art galleries (A.1.b.v)."
     },
     {
       "vsiTitle": "Contemporary art",
@@ -215,16 +218,15 @@
         "A.1",
         "A.1.b.v"
       ],
-      "rationaleAI": "Contemporary art institutions connect to museums (A.1) and art galleries (A.1.b.v)."
+      "rationaleAI": "Museum branding addresses institutional collections (A.1) and art galleries (A.1.b.v)."
     },
     {
       "vsiTitle": "Modern art",
       "vsiAuthor": "David Cottington",
       "relevantPathsAI": [
-        "A.1",
         "A.1.b.v"
       ],
-      "rationaleAI": "MoMA, Tate Modern, Guggenheim map to museums (A.1) and art galleries (A.1.b.v)."
+      "rationaleAI": "MoMA, Tate Modern, and Bilbao Guggenheim address art galleries (A.1.b.v)."
     },
     {
       "vsiTitle": "Geography",
@@ -232,25 +234,23 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Spatial analysis and mapping connect to atlases and map collections (B.3)."
+      "rationaleAI": "Spatial analysis and maps connect to atlases and map collections (B.3)."
     },
     {
       "vsiTitle": "Biodiversity Conservation",
       "vsiAuthor": "David W. Macdonald",
       "relevantPathsAI": [
-        "A.4",
         "A.5"
       ],
-      "rationaleAI": "Species diversity connects to animal and plant collections (A.4) and nature preserves (A.5)."
+      "rationaleAI": "Conservation strategies connect to parks and nature preserves (A.5)."
     },
     {
       "vsiTitle": "Ecology",
       "vsiAuthor": "Jaboury Ghazoul",
       "relevantPathsAI": [
-        "A.4",
         "A.5"
       ],
-      "rationaleAI": "Organism interactions connect to collections (A.4) and nature preserves (A.5)."
+      "rationaleAI": "Ecological science connects to parks and nature preserves (A.5)."
     },
     {
       "vsiTitle": "Intellectual property",
@@ -258,7 +258,7 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Copyright and patents connect to publishing (C.3)."
+      "rationaleAI": "Copyright and knowledge governance address publishing (C.3)."
     },
     {
       "vsiTitle": "Surveillance",
@@ -266,7 +266,7 @@
       "relevantPathsAI": [
         "B.6"
       ],
-      "rationaleAI": "Data collection technologies connect to databases (B.6)."
+      "rationaleAI": "Data collection technologies address databases (B.6)."
     },
     {
       "vsiTitle": "Innovation",
@@ -274,7 +274,7 @@
       "relevantPathsAI": [
         "C.3.b"
       ],
-      "rationaleAI": "Disruptive technologies connect to electronic publishing (C.3.b)."
+      "rationaleAI": "Disruptive technologies address electronic publishing (C.3.b)."
     },
     {
       "vsiTitle": "Oral History",
@@ -283,7 +283,7 @@
         "B.5",
         "B.7"
       ],
-      "rationaleAI": "Recording and archival preservation connect to archives (B.5) and recordings (B.7)."
+      "rationaleAI": "Recording and archival preservation address archives (B.5) and recordings (B.7)."
     },
     {
       "vsiTitle": "Garden History",
@@ -292,25 +292,25 @@
         "A.4.c",
         "A.5"
       ],
-      "rationaleAI": "Garden history connects to botanical gardens (A.4.c) and parks (A.5)."
+      "rationaleAI": "Gardens connect to botanical gardens (A.4.c) and parks (A.5)."
     },
     {
       "vsiTitle": "Navigation",
       "vsiAuthor": "Jim Bennett",
       "relevantPathsAI": [
-        "B.3",
-        "C.5"
+        "B.3"
       ],
-      "rationaleAI": "Chart production and astronomical observation connect to atlases (B.3) and observatories (C.5)."
+      "rationaleAI": "Chart production and map-making address atlases and map collections (B.3)."
     },
     {
       "vsiTitle": "Ancient Egyptian Art and Architecture",
       "vsiAuthor": "Christina Riggs",
       "relevantPathsAI": [
-        "A.1.b.v",
-        "A.1.a"
+        "A.1",
+        "A.1.b.iv",
+        "A.1.b.v"
       ],
-      "rationaleAI": "Covers reception of Egyptian art through the British Museum, Ashmolean Museum, and Metropolitan Museum of Art — directly relevant to museums of art and galleries, and management of institutional collections."
+      "rationaleAI": "Egyptian art in the British Museum and Metropolitan Museum addresses institutional collections (A.1), history museums (A.1.b.iv), and art galleries (A.1.b.v)."
     },
     {
       "vsiTitle": "History",
@@ -318,7 +318,7 @@
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "Covers historiographical theory and interpretation of primary sources in archives — relevant to archives as repositories of historical evidence."
+      "rationaleAI": "Primary sources and evidence address archives (B.5)."
     }
   ],
   "_curatedBy": "ai",

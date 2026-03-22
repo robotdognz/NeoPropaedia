@@ -7,82 +7,127 @@
       "relevantPathsAI": [
         "A",
         "B",
+        "B.1",
+        "B.1.a",
+        "B.1.b",
+        "B.2",
+        "B.2.b.iii",
+        "B.3",
+        "B.3.b",
+        "B.3.c",
         "D",
         "D.1",
+        "D.1.a",
+        "D.1.b",
+        "D.2",
+        "D.2.a",
         "D.4",
         "D.6"
       ],
-      "rationaleAI": "Medieval history addresses the study (A), Germanic successor states (B), Carolingian era (D.1), early Capetians (D.4), and feudalism (D.6)."
+      "rationaleAI": "Transition from Roman provinces to barbarian kingdoms covers the decline of government and Germanic hegemony (B.1.a, B.1.b). Frankish political authority and the Norman Conquest relate to the Carolingian era and Merovingian-Carolingian succession (B.2.b.iii, D.1, D.2.a). Agriculture, trade, and kinship structures address social and economic life in the early Middle Ages (B.3.c) and feudalism (D.6). Pope Gregory I connects to the amalgamation of classical and Germanic cultures with Christianity (B.3). Frederick I and Henry III relate to the Holy Roman Empire development (D). The Black Death and literary culture span the broader medieval period (A)."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
       "relevantPathsAI": [
         "C",
-        "F"
+        "C.1",
+        "C.2",
+        "C.2.a",
+        "C.2.b",
+        "C.2.d",
+        "C.2.e",
+        "C.3",
+        "F",
+        "F.1",
+        "F.2",
+        "F.2.a",
+        "F.2.b",
+        "F.3"
       ],
-      "rationaleAI": "Byzantium addresses the early Byzantine Empire (C) and zenith/decline (F)."
+      "rationaleAI": "Fusion of Roman political culture, Greek intellectual tradition, and Christian faith under Constantine addresses the origins of Byzantium (C.1) and cultural developments (C.2.e). Relations with barbarians and Islamic interactions connect to economic and social policies (C.2.a) and ecclesiastical controversies (C.2.b). Justinian's era is central to Byzantine reconquest and administration (C.2.d). The empire's role bridging antiquity and medieval period spans the Macedonian era and later decline (F.1, F.2, F.2.a, F.2.b, F.3). External threats across Asia Minor and the Black Sea relate to the zenith and decline of the Byzantine Empire (F)."
     },
     {
       "vsiTitle": "The Anglo-Saxon Age",
       "vsiAuthor": "John Blair",
       "relevantPathsAI": [
+        "B.1.b",
         "B.2.b.ii",
-        "D.2.a"
+        "B.3.a",
+        "D.2",
+        "D.2.a",
+        "D.2.b"
       ],
-      "rationaleAI": "Anglo-Saxon Britain addresses the Anglo-Saxon kingdoms (B.2.b.ii) and England (D.2.a)."
+      "rationaleAI": "Anglo-Saxon settlements from AD 450 covering kingdoms of Wessex, East Anglia, and Essex correspond to the Anglo-Saxon kingdoms in England (B.2.b.ii, D.2.b). Christian conversion through Theodore of Tarsus connects to the conversion of the Germanic peoples to Catholic Christianity (B.3.a). Alfred the Great's unification and the Danish invasions directly address England during the 9th-century Danish invasions and Anglo-Saxon political unification (D.2.a). The Norman Conquest under William I relates to the broader context of the invasions of Angles, Saxons, and Jutes (B.1.b)."
     },
     {
       "vsiTitle": "The Vikings",
       "vsiAuthor": "Julian D. Richards",
       "relevantPathsAI": [
+        "D.1.b.i",
+        "D.2",
+        "D.2.a",
+        "D.2.b.iii",
         "D.2.c"
       ],
-      "rationaleAI": "Vikings address the Viking Age (D.2.c)."
+      "rationaleAI": "Scandinavian seafarers active from the 8th to 11th centuries directly correspond to the Viking Age in Scandinavia (D.2.c) covering raids, conquests, social and political organization, Norse religion, and conversion to Christianity. Viking invasions of Britain connect to the 9th-century Danish invasions and their impact on Anglo-Saxon England (D.2.a). Norman and Magyar invasions and the debilitation of central authority relate to Carolingian decline (D.1.b.i). Viking trade networks and ship technology address the maritime reach and Norse Ireland (D.2.b.iii)."
     },
     {
       "vsiTitle": "The Holy Roman Empire",
       "vsiAuthor": "Joachim Whaley",
       "relevantPathsAI": [
+        "D",
+        "D.1",
         "D.1.a",
-        "D.3"
+        "D.3",
+        "D.3.a",
+        "D.3.b"
       ],
-      "rationaleAI": "The Holy Roman Empire relates to Charlemagne (D.1.a) and Germany/Italy (D.3)."
+      "rationaleAI": "Charlemagne's Frankish kingdom foundation directly covers the reign of Charlemagne (D.1.a) and the Carolingian Empire (D.1). The German monarchy's assumption of imperial title in the ninth and tenth centuries corresponds to the development of the Holy Roman Empire under the Saxon dynasty and Salian kings (D.3, D.3.a, D.3.b). The empire's role as protector of the papacy and guardian of the Church connects to ecclesiastical policies throughout the medieval period."
     },
     {
       "vsiTitle": "The Norman Conquest",
       "vsiAuthor": "George Garnett",
       "relevantPathsAI": [
-        "D.2.a"
+        "D.2.a",
+        "D.4"
       ],
-      "rationaleAI": "The Norman Conquest relates to England (D.2.a)."
+      "rationaleAI": "The Battle of Hastings (1066) and William the Conqueror's consolidation of power directly address the Norman Conquest within the British Isles section (D.2.a). The succession crisis involving Harold Godwinson and the Angevin political background including the reign of Henry III connect to the establishment of Anglo-French domination and Capetian-Plantagenet dynamics (D.4)."
     },
     {
       "vsiTitle": "Late Antiquity",
       "vsiAuthor": "Gillian Clark",
       "relevantPathsAI": [
         "B",
-        "C"
+        "B.1",
+        "B.1.a",
+        "B.2.a",
+        "B.3",
+        "C",
+        "C.1",
+        "C.2",
+        "C.2.b",
+        "C.2.c"
       ],
-      "rationaleAI": "Late Antiquity relates to the eclipse of Rome (B) and early Byzantium (C)."
+      "rationaleAI": "The fall of the Western Roman Empire to barbarian invasions covers the general decline of government, economy, society, and culture (B.1.a) and the eclipse of the Roman Empire (B). Arab conquests ending Roman rule connect to the effects of Islam on western Europe and Byzantine losses (B.2.a). Competing religions including Christianity and Manichaeism address ecclesiastical controversies (C.2.b). The period 300-800 CE spans the origins of Byzantium (C.1) and internal tensions at the end of the 5th century (C.2.c)."
     },
     {
       "vsiTitle": "Christianity",
       "vsiAuthor": "Linda Woodhead",
       "relevantPathsAI": [
-        "B.3",
-        "D.1.a"
+        "B.3.a",
+        "C.2.b"
       ],
-      "rationaleAI": "Christianity relates to early medieval religion (B.3) and Charlemagne's ecclesiastical policies (D.1.a)."
+      "rationaleAI": "The spread of Christianity covering its doctrinal development and institutional forms connects to the conversion of Celts, Picts, and Germans to Catholic Christianity (B.3.a). Eastern Christianity and the competition for power among denominations address ecclesiastical controversies and the beginning of conflict between the Western and Eastern Churches (C.2.b)."
     },
     {
       "vsiTitle": "Orthodox Christianity",
       "vsiAuthor": "A. Edward Siecienski",
       "relevantPathsAI": [
-        "C",
+        "C.2.b",
         "F.3"
       ],
-      "rationaleAI": "Orthodoxy relates to early Byzantium (C) and the schism with Rome (F.3)."
+      "rationaleAI": "The Great Schism of 1054 directly addresses Byzantine decline and the schism with Rome (F.3). Orthodox theological distinctives and liturgical tradition connect to ecclesiastical controversies and tensions between the Churches (C.2.b)."
     },
     {
       "vsiTitle": "Aristocracy",
@@ -90,31 +135,34 @@
       "relevantPathsAI": [
         "D.6"
       ],
-      "rationaleAI": "Aristocracy relates to feudalism (D.6)."
+      "rationaleAI": "Feudalism as a source of aristocratic power and the medieval transformation of aristocratic institutions directly address the sociopolitical and economic structure of early medieval Europe (D.6), including feudal origins, development, and the manorial economy."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
       "relevantPathsAI": [
-        "B.2.c"
+        "B.2.c",
+        "C.3.a"
       ],
-      "rationaleAI": "Islamic history relates to Islam's effects on western Europe (B.2.c)."
+      "rationaleAI": "The rise and spread of Islam from the 7th century directly connects to the effects of the rise of Islam on western Europe (B.2.c). The caliphate and jihad as religious and political concepts relate to Arab pressures on Byzantium including the loss of Syria, Palestine, Armenia, and Egypt (C.3.a)."
     },
     {
       "vsiTitle": "Medieval Literature",
       "vsiAuthor": "Elaine Treharne",
       "relevantPathsAI": [
-        "B.3.b"
+        "B.3.b",
+        "D.2.b"
       ],
-      "rationaleAI": "Medieval literature relates to arts and intellectual life (B.3.b)."
+      "rationaleAI": "Literature of medieval Britain and Ireland including Beowulf and Anglo-Norman traditions connects to intellectual life and education in the early Middle Ages (B.3.b). Manuscript production and early print culture address the arts in the British Isles (D.2.b)."
     },
     {
       "vsiTitle": "Monasticism",
       "vsiAuthor": "Stephen J. Davis",
       "relevantPathsAI": [
-        "B.3.a"
+        "B.3.a",
+        "B.3.b"
       ],
-      "rationaleAI": "Monasticism relates to conversion and monastic functions (B.3.a)."
+      "rationaleAI": "Christian monasticism from antiquity directly addresses religious and cultural functions of monasticism and the Western Church (B.3.a). Hagiographic literature and monastic communal organization connect to intellectual life and education in the early Middle Ages (B.3.b)."
     },
     {
       "vsiTitle": "Medieval Philosophy",
@@ -122,15 +170,15 @@
       "relevantPathsAI": [
         "B.3.b"
       ],
-      "rationaleAI": "Medieval philosophy relates to intellectual life (B.3.b)."
+      "rationaleAI": "Interlinked Christian, Muslim, and Jewish intellectual traditions including Boethius, Abelard, and William of Ockham address the arts, intellectual life, and education in the early Middle Ages (B.3.b)."
     },
     {
       "vsiTitle": "Scotland",
       "vsiAuthor": "Rab Houston",
       "relevantPathsAI": [
-        "D.2.b"
+        "D.2.b.i"
       ],
-      "rationaleAI": "Scotland relates to the Kingdom of Scotland (D.2.b)."
+      "rationaleAI": "Medieval Scottish independence and the development of the Kingdom of Scotland directly correspond to Roman penetration in Scotland, Christianity, and Norse influence (D.2.b.i)."
     },
     {
       "vsiTitle": "Russian History",
@@ -140,24 +188,25 @@
         "E.2.d",
         "E.2.e"
       ],
-      "rationaleAI": "Russian history relates to the Rus (E.2.c), Novgorod (E.2.d), and Kievan Rus (E.2.e)."
+      "rationaleAI": "Kievan Rus and the formation of the Muscovite state directly address exploration and the rise of the Rus (E.2.c), the princes of Novgorod (E.2.d), and the state of Kievan Rus covering Slavic-Varangian origins (E.2.e)."
     },
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
       "relevantPathsAI": [
-        "D.3.a",
-        "D.4"
+        "D.1",
+        "D.3"
       ],
-      "rationaleAI": "Dynastic rule relates to the Saxon dynasty (D.3.a) and early Capetians (D.4)."
+      "rationaleAI": "Dynastic rule and succession dilemmas connect to the Carolingian dynasty (D.1) and the Holy Roman Empire under competing dynasties (D.3)."
     },
     {
       "vsiTitle": "The Roman Empire",
       "vsiAuthor": "Christopher Kelly",
       "relevantPathsAI": [
-        "B.1"
+        "B.1.a",
+        "C.1"
       ],
-      "rationaleAI": "The Roman Empire provides context for its end and the Volkerwanderung (B.1)."
+      "rationaleAI": "The Roman Empire provides foundational context for the general decline of government (B.1.a) and the origins of Byzantium through the reforms of Diocletian and Constantine (C.1)."
     },
     {
       "vsiTitle": "Magna Carta",
@@ -165,40 +214,44 @@
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "Magna Carta relates to feudal political developments (D.4)."
+      "rationaleAI": "Magna Carta of 1215 and the reign of King John address the relative weakness of the monarchy vis-a-vis great feudatories and Capetian-Plantagenet dynamics (D.4)."
     },
     {
       "vsiTitle": "Medieval Britain",
       "vsiAuthor": "John Gillingham, Ralph A. Griffiths",
       "relevantPathsAI": [
-        "D.4"
+        "D.2.a",
+        "D.4",
+        "D.6"
       ],
-      "rationaleAI": "Covers medieval Britain from the Norman Conquest through the later Middle Ages including England, Scotland, Wales, and Ireland, directly relevant to the early Capetian era's Anglo-French domination and the Plantagenet establishment in western France."
+      "rationaleAI": "Medieval Britain from the Norman Conquest covers the Norman Conquest (D.2.a), Capetian-Plantagenet dynamics (D.4), and feudal governance (D.6)."
     },
     {
       "vsiTitle": "The Crusades",
       "vsiAuthor": "Christopher Tyerman",
       "relevantPathsAI": [
-        "D.5"
+        "D.5",
+        "F.3"
       ],
-      "rationaleAI": "Covers Crusading campaigns driven by papal authority including Urban II, spanning the Holy Land, Baltic States, and Iberia, directly relevant to the growth of Christian states in northern Spain and their relations with Muslims."
+      "rationaleAI": "Crusading in the Holy Land and Iberia connects to the Christian states in northern Spain and the Reconquista (D.5). The Byzantine Empire's role relates to Byzantine decline (F.3)."
     },
     {
       "vsiTitle": "The Reformation",
       "vsiAuthor": "Peter Marshall",
       "relevantPathsAI": [
-        "F.3"
+        "B.3.a"
       ],
-      "rationaleAI": "While primarily 16th-17th century, the Reformation's coverage of church-state relations connects to the schism with Rome in 1054 discussed in section F.3 on Byzantine decline and the relationship between Eastern and Western Christianity."
+      "rationaleAI": "The Reformation's reshaping of church-state relations provides context for the religious transformation following the conversion of Germanic peoples to Catholic Christianity (B.3.a)."
     },
     {
       "vsiTitle": "Catholicism",
       "vsiAuthor": "Gerald O'Collins",
       "relevantPathsAI": [
         "B.3.a",
+        "C.2.b",
         "D.3.c.i"
       ],
-      "rationaleAI": "Covers Catholic institutional history from early Christianity through medieval papacy, including conversion of Germanic peoples to Catholic Christianity, monastic traditions, and the growth of papal power, directly relevant to Christianization of successor states and the political role of the papacy."
+      "rationaleAI": "Roman Catholicism connects to the conversion of Celts, Picts, and Germans (B.3.a), ecclesiastical controversies (C.2.b), and medieval Italian political developments (D.3.c.i)."
     }
   ],
   "_curatedBy": "ai",

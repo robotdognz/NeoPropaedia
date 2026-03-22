@@ -7,9 +7,11 @@
       "relevantPathsAI": [
         "A",
         "A.1",
+        "A.4",
+        "A.6",
         "A.7"
       ],
-      "rationaleAI": "Literary theory analyzing the nature of literature and cultural production addresses the art of literature (A), the nature and scope of literature (A.1), and theoretical treatises on literature (A.7)."
+      "rationaleAI": "Literary theory covers nature of literature (A.1), audience (A.4), genres (A.6), and critical writing (A.7)."
     },
     {
       "vsiTitle": "Rhetoric",
@@ -17,18 +19,19 @@
       "relevantPathsAI": [
         "B.1",
         "B.1.a",
-        "B.1.b"
+        "C.6.n"
       ],
-      "rationaleAI": "Rhetoric as the art of persuasion from ancient Greece through modern discourse directly addresses rhetoric (B.1), elements of rhetoric including figures of speech (B.1.a), and the relation of rhetoric to grammar and literary style (B.1.b)."
+      "rationaleAI": "Persuasion covers rhetoric (B.1.a), discourse (B.1), and oratory (C.6.n)."
     },
     {
       "vsiTitle": "Poetry",
       "vsiAuthor": "Bernard O'Donoghue",
       "relevantPathsAI": [
         "C.1",
-        "B.2"
+        "B.2",
+        "C.4"
       ],
-      "rationaleAI": "Poetry as a literary form covering linguistic devices, formal structures, and aesthetic effects addresses poetry and the distinction between verse and prose (C.1) and prosody (B.2)."
+      "rationaleAI": "Poetry covers verse-prose (C.1), prosody (B.2), and lyric (C.4)."
     },
     {
       "vsiTitle": "American poetry",
@@ -36,9 +39,10 @@
       "relevantPathsAI": [
         "C.1",
         "C.4",
+        "B.2.a.i",
         "D.1"
       ],
-      "rationaleAI": "American poetry covering verse forms and major figures addresses poetry (C.1) and lyric literature (C.4). Historical scope from colonial era connects to literature of Western peoples (D.1)."
+      "rationaleAI": "American poetry covers poetry (C.1), lyric (C.4), metre (B.2.a.i), and Western literature (D.1)."
     },
     {
       "vsiTitle": "The Epic",
@@ -46,7 +50,7 @@
       "relevantPathsAI": [
         "C.2.a"
       ],
-      "rationaleAI": "Epic as a global literary form from the Bronze Age covering heroism, warfare, and oral storytelling directly addresses epic forms (C.2.a)."
+      "rationaleAI": "Epic directly addresses epic (C.2.a)."
     },
     {
       "vsiTitle": "The Short Story",
@@ -54,16 +58,17 @@
       "relevantPathsAI": [
         "C.2.e"
       ],
-      "rationaleAI": "Development of the short story as a literary genre from its 19th-century origins directly addresses the short story and its antecedents (C.2.e)."
+      "rationaleAI": "Short story addresses the short story (C.2.e)."
     },
     {
       "vsiTitle": "Fairy Tale",
       "vsiAuthor": "Marina Warner",
       "relevantPathsAI": [
         "C.2.f",
+        "C.7",
         "C.8"
       ],
-      "rationaleAI": "Fairy tales as a literary genre transmitted across generations addresses fable, parable, allegory, and related forms (C.2.f) and folk and popular literature (C.8)."
+      "rationaleAI": "Fairy tales connect to fable/allegory (C.2.f), children's literature (C.7), and folk literature (C.8)."
     },
     {
       "vsiTitle": "Contemporary Fiction",
@@ -72,7 +77,7 @@
         "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "Contemporary global fiction covering genre conventions and literary experimentalism addresses the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "Contemporary fiction covers novel (C.2.d) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Crime Fiction",
@@ -80,7 +85,7 @@
       "relevantPathsAI": [
         "C.2.d"
       ],
-      "rationaleAI": "Crime fiction from Poe through Christie covering mystery, spy fiction, and thrillers addresses the novel and the tale (C.2.d)."
+      "rationaleAI": "Crime fiction addresses the novel (C.2.d)."
     },
     {
       "vsiTitle": "Horror",
@@ -89,15 +94,16 @@
         "C.2.d",
         "C.2.c"
       ],
-      "rationaleAI": "Horror spanning literature and film covering Gothic tradition and supernatural themes addresses the novel (C.2.d) and romance including Gothic romance (C.2.c)."
+      "rationaleAI": "Horror covers novel (C.2.d) and Gothic romance (C.2.c)."
     },
     {
       "vsiTitle": "Science fiction",
       "vsiAuthor": "David Seed",
       "relevantPathsAI": [
-        "C.2.d"
+        "C.2.d",
+        "C.3.g"
       ],
-      "rationaleAI": "Science fiction as a genre covering space voyages, utopias, and dystopias addresses the novel and the tale (C.2.d)."
+      "rationaleAI": "Science fiction addresses novel (C.2.d) and scripts (C.3.g)."
     },
     {
       "vsiTitle": "The Gothic",
@@ -105,7 +111,7 @@
       "relevantPathsAI": [
         "C.2.c"
       ],
-      "rationaleAI": "The Gothic covering supernatural fiction and its literary tradition addresses romance including Gothic romance (C.2.c)."
+      "rationaleAI": "Gothic addresses Gothic romance (C.2.c)."
     },
     {
       "vsiTitle": "Tragedy",
@@ -113,23 +119,26 @@
       "relevantPathsAI": [
         "C.3.a"
       ],
-      "rationaleAI": "Tragedy from ancient Greek theater to contemporary literature directly addresses tragedy as a dramatic genre (C.3.a)."
+      "rationaleAI": "Tragedy directly addresses tragedy (C.3.a)."
     },
     {
       "vsiTitle": "Comedy",
       "vsiAuthor": "Matthew Bevis",
       "relevantPathsAI": [
-        "C.3.b"
+        "C.3.b",
+        "C.3.d",
+        "C.5"
       ],
-      "rationaleAI": "Comedy covering comic drama, prose fiction, and performance traditions directly addresses comedy (C.3.b)."
+      "rationaleAI": "Comedy covers comedy (C.3.b), farce (C.3.d), and satire (C.5)."
     },
     {
       "vsiTitle": "Modern Drama",
       "vsiAuthor": "Kirsten E. Shepherd-Barr",
       "relevantPathsAI": [
-        "C.3"
+        "C.3",
+        "C.3.c"
       ],
-      "rationaleAI": "Modern theatrical drama from 1880 covering naturalism, realism, and metatheatre addresses dramatic or theatrical literature (C.3)."
+      "rationaleAI": "Modern drama covers dramatic literature (C.3) and tragicomedy (C.3.c)."
     },
     {
       "vsiTitle": "Autobiography",
@@ -137,7 +146,7 @@
       "relevantPathsAI": [
         "C.6.o"
       ],
-      "rationaleAI": "Autobiography encompassing memoirs, journals, letters, and diaries directly addresses biographical and autobiographical literature (C.6.o)."
+      "rationaleAI": "Autobiography addresses biographical literature (C.6.o)."
     },
     {
       "vsiTitle": "Biography",
@@ -145,7 +154,7 @@
       "relevantPathsAI": [
         "C.6.o"
       ],
-      "rationaleAI": "Biography as a literary genre from classical antiquity to modern forms directly addresses biographical and autobiographical literature (C.6.o)."
+      "rationaleAI": "Biography addresses biographical literature (C.6.o)."
     },
     {
       "vsiTitle": "Children's literature",
@@ -153,24 +162,25 @@
       "relevantPathsAI": [
         "C.7"
       ],
-      "rationaleAI": "Children's literature from its origins to contemporary forms directly addresses children's literature (C.7)."
+      "rationaleAI": "Children's literature directly addresses children's literature (C.7)."
     },
     {
       "vsiTitle": "Bestsellers",
       "vsiAuthor": "John Sutherland",
       "relevantPathsAI": [
         "A.4",
-        "C.2.d"
+        "C.8"
       ],
-      "rationaleAI": "Bestsellers covering publishing industry and market dynamics address literature and its audience (A.4). Case studies of popular novels address the novel (C.2.d)."
+      "rationaleAI": "Bestsellers connect to audience (A.4) and popular literature (C.8)."
     },
     {
       "vsiTitle": "Comparative Literature",
       "vsiAuthor": "Ben Hutchinson",
       "relevantPathsAI": [
-        "A.7"
+        "A.7",
+        "D.1"
       ],
-      "rationaleAI": "Comparative literature examining cross-cultural literary relations addresses writings on literature including scholarly research (A.7)."
+      "rationaleAI": "Comparative literature connects to scholarly research (A.7) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Hermeneutics",
@@ -178,7 +188,7 @@
       "relevantPathsAI": [
         "A.7"
       ],
-      "rationaleAI": "Theory of interpretation spanning textual analysis addresses writings on literature including theoretical treatises (A.7)."
+      "rationaleAI": "Interpretation theory connects to theoretical treatises (A.7)."
     },
     {
       "vsiTitle": "Poststructuralism",
@@ -186,7 +196,7 @@
       "relevantPathsAI": [
         "A.7"
       ],
-      "rationaleAI": "Poststructuralism's applications to literary criticism address writings on literature including critical writing (A.7)."
+      "rationaleAI": "Poststructuralism connects to critical writing (A.7)."
     },
     {
       "vsiTitle": "Barthes",
@@ -194,7 +204,7 @@
       "relevantPathsAI": [
         "A.7"
       ],
-      "rationaleAI": "Barthes's literary theory covering semiology and textual theory addresses writings on literature including critical writing (A.7)."
+      "rationaleAI": "Barthes connects to critical writing (A.7)."
     },
     {
       "vsiTitle": "Derrida",
@@ -202,24 +212,25 @@
       "relevantPathsAI": [
         "A.7"
       ],
-      "rationaleAI": "Derrida's deconstruction as a mode of reading addresses writings on literature including theoretical treatises (A.7)."
+      "rationaleAI": "Deconstruction connects to theoretical treatises (A.7)."
     },
     {
       "vsiTitle": "Myth",
       "vsiAuthor": "Robert A. Segal",
       "relevantPathsAI": [
-        "C.2.f",
-        "C.8"
+        "C.2.a",
+        "C.2.f"
       ],
-      "rationaleAI": "Myth covering narrative morphology and cosmological functions addresses fable, parable, allegory (C.2.f) and primitive, folk, and popular literature (C.8)."
+      "rationaleAI": "Myth connects to epic (C.2.a) and fable/allegory (C.2.f)."
     },
     {
       "vsiTitle": "Imagination",
       "vsiAuthor": "Jennifer Gosetti-Ferencei",
       "relevantPathsAI": [
-        "A.2"
+        "A.1",
+        "A.3"
       ],
-      "rationaleAI": "Imagination's role in poetry and artistic production addresses literary composition (A.2)."
+      "rationaleAI": "Imagination connects to nature of literature (A.1) and contents (A.3)."
     },
     {
       "vsiTitle": "Reading",
@@ -227,15 +238,15 @@
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Historical survey of reading and literacy addresses literature and its audience (A.4)."
+      "rationaleAI": "Reading history addresses audience (A.4)."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
       "relevantPathsAI": [
-        "A.2"
+        "A.1"
       ],
-      "rationaleAI": "History of writing systems from cuneiform to modern scripts addresses literary composition (A.2) in its material and technical dimensions."
+      "rationaleAI": "Writing systems provide context for the nature of literature (A.1)."
     },
     {
       "vsiTitle": "Translation",
@@ -243,15 +254,15 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Translation across languages and cultures addresses the integration of literature with other arts (A.5) through cross-linguistic literary exchange."
+      "rationaleAI": "Translation connects to integration of literature with other arts (A.5)."
     },
     {
       "vsiTitle": "Dictionaries",
       "vsiAuthor": "Lynda Mugglestone",
       "relevantPathsAI": [
-        "A.7"
+        "C.6.j"
       ],
-      "rationaleAI": "Dictionaries as products reflecting cultural assumptions and their role in shaping language use address writings on literature including scholarly research (A.7)."
+      "rationaleAI": "Dictionaries connect to aphorism and related short forms (C.6.j)."
     },
     {
       "vsiTitle": "Classical Literature",
@@ -261,19 +272,23 @@
         "C.2.a",
         "C.3.a",
         "C.3.b",
+        "C.5",
         "D.1"
       ],
-      "rationaleAI": "Greek and Latin traditions across epic, lyric, tragedy, and comedy address poetry (C.1), epic (C.2.a), tragedy (C.3.a), comedy (C.3.b), and literature of Western peoples (D.1)."
+      "rationaleAI": "Greek and Latin covers poetry (C.1), epic (C.2.a), tragedy (C.3.a), comedy (C.3.b), satire (C.5), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Medieval Literature",
       "vsiAuthor": "Elaine Treharne",
       "relevantPathsAI": [
+        "C.2.a",
         "C.2.b",
         "C.2.c",
+        "C.2.g",
+        "C.6.d",
         "D.1"
       ],
-      "rationaleAI": "Medieval literary traditions including Beowulf address saga forms (C.2.b) and romance including Arthurian traditions (C.2.c). Literature of Western peoples (D.1)."
+      "rationaleAI": "Medieval literature covers epic (C.2.a), saga (C.2.b), romance (C.2.c), ballad and lay (C.2.g), religious literature (C.6.d), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Romanticism",
@@ -283,7 +298,7 @@
         "C.4",
         "D.1"
       ],
-      "rationaleAI": "Romantic movement with centrality of poetry addresses poetry (C.1) and lyric literature (C.4). Literature of Western peoples (D.1)."
+      "rationaleAI": "Romanticism covers poetry (C.1), lyric (C.4), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Modernism",
@@ -292,7 +307,7 @@
         "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "Modernist innovations in the novel challenging traditional narrative addresses the novel (C.2.d). Literature of Western peoples (D.1)."
+      "rationaleAI": "Modernism covers novel (C.2.d) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Decadence",
@@ -300,7 +315,7 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Decadence as a cultural movement from 19th-century Paris and London addresses literature of Western peoples (D.1)."
+      "rationaleAI": "Decadence addresses Western literature (D.1)."
     },
     {
       "vsiTitle": "The Beats",
@@ -309,24 +324,26 @@
         "C.1",
         "D.1"
       ],
-      "rationaleAI": "Beat Generation literary movement encompassing poets and novelists addresses poetry (C.1) and literature of Western peoples (D.1)."
+      "rationaleAI": "Beat Generation covers poetry (C.1) and Western literature (D.1)."
     },
     {
       "vsiTitle": "English literature",
       "vsiAuthor": "Jonathan Bate",
       "relevantPathsAI": [
         "C.2.d",
+        "C.3.b",
         "D.1"
       ],
-      "rationaleAI": "English literature from oral traditions through Romanticism and Modernism including the novel addresses the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "English literature covers novel (C.2.d), comedy (C.3.b), and Western literature (D.1)."
     },
     {
       "vsiTitle": "French literature",
       "vsiAuthor": "John D. Lyons",
       "relevantPathsAI": [
+        "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "French literature from 12th-century origins through the 21st century addresses literature of Western peoples (D.1)."
+      "rationaleAI": "French literature covers novel (C.2.d) and Western literature (D.1)."
     },
     {
       "vsiTitle": "German literature",
@@ -334,31 +351,36 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "German literature from the late Middle Ages through post-1945 addresses literature of Western peoples (D.1)."
+      "rationaleAI": "German literature addresses Western literature (D.1)."
     },
     {
       "vsiTitle": "Italian literature",
       "vsiAuthor": "Peter Hainsworth, David Robey",
       "relevantPathsAI": [
+        "C.1",
         "D.1"
       ],
-      "rationaleAI": "Italian literary tradition from the Middle Ages to the present addresses literature of Western peoples (D.1)."
+      "rationaleAI": "Italian literature covers poetry (C.1) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Spanish Literature",
       "vsiAuthor": "Jo Labanyi",
       "relevantPathsAI": [
+        "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "Spanish literary traditions from the medieval period covering multiple languages address literature of Western peoples (D.1)."
+      "rationaleAI": "Spanish literature covers novel (C.2.d) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Russian literature",
       "vsiAuthor": "Catriona Kelly",
       "relevantPathsAI": [
+        "C.1",
+        "C.2.d",
+        "C.2.e",
         "D.1"
       ],
-      "rationaleAI": "Russian literature from its emergence as a national tradition through the Soviet period addresses literature of Western peoples (D.1)."
+      "rationaleAI": "Russian literature covers poetry (C.1), novel (C.2.d), short story (C.2.e), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Chinese literature",
@@ -366,18 +388,22 @@
       "relevantPathsAI": [
         "C.1",
         "C.2.d",
-        "C.3"
+        "C.3",
+        "C.6.b",
+        "C.6.e"
       ],
-      "rationaleAI": "Chinese literary culture from antiquity covering poetry, fiction, and drama addresses poetry (C.1), the novel (C.2.d), and dramatic literature (C.3)."
+      "rationaleAI": "Chinese literature covers poetry (C.1), novel (C.2.d), drama (C.3), history as literature (C.6.b), and philosophical literature (C.6.e)."
     },
     {
       "vsiTitle": "Japanese Literature",
       "vsiAuthor": "Alan Tansman",
       "relevantPathsAI": [
         "C.1",
-        "C.2.d"
+        "C.2.d",
+        "C.6.a",
+        "C.6.o"
       ],
-      "rationaleAI": "Japanese literature spanning poetry and narrative addresses poetry (C.1) and the novel (C.2.d)."
+      "rationaleAI": "Japanese literature covers poetry (C.1), narrative (C.2.d), essay (C.6.a), and diary (C.6.o)."
     },
     {
       "vsiTitle": "Colonial Latin American Literature",
@@ -385,15 +411,17 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Colonial Latin American literary culture from Columbus through independence addresses literature of Western peoples (D.1)."
+      "rationaleAI": "Colonial Latin American literature addresses Western literature (D.1)."
     },
     {
       "vsiTitle": "Modern Latin American Literature",
       "vsiAuthor": "Roberto González Echevarría",
       "relevantPathsAI": [
+        "C.1",
+        "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "Latin American literary tradition covering Borges, Garcia Marquez, and Neruda addresses literature of Western peoples (D.1)."
+      "rationaleAI": "Latin American poetry and fiction cover poetry (C.1), novel (C.2.d), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Native American Literature",
@@ -401,7 +429,7 @@
       "relevantPathsAI": [
         "C.8"
       ],
-      "rationaleAI": "Indigenous North American literary traditions spanning oral narratives to contemporary novels address primitive, folk, and popular literature (C.8)."
+      "rationaleAI": "Indigenous oral narratives address folk literature (C.8)."
     },
     {
       "vsiTitle": "Jewish Literature",
@@ -409,15 +437,16 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Modern Jewish literature covering canonical authors across linguistic boundaries addresses literature of Western peoples (D.1)."
+      "rationaleAI": "Jewish literature addresses Western literature (D.1)."
     },
     {
       "vsiTitle": "The Hebrew Bible As Literature",
       "vsiAuthor": "Tod Linafelt",
       "relevantPathsAI": [
+        "C.1",
         "C.6.d"
       ],
-      "rationaleAI": "Literary analysis of the Hebrew Bible covering narrative and poetic modes addresses doctrinal and religious literature (C.6.d)."
+      "rationaleAI": "Biblical Psalms cover poetry (C.1) and religious literature (C.6.d)."
     },
     {
       "vsiTitle": "Homer",
@@ -426,27 +455,28 @@
         "C.2.a",
         "D.1"
       ],
-      "rationaleAI": "The Iliad and Odyssey as foundational Western literature directly address epic (C.2.a) and literature of Western peoples (D.1)."
+      "rationaleAI": "Iliad and Odyssey address epic (C.2.a) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Ovid",
       "vsiAuthor": "Llewelyn Morgan",
       "relevantPathsAI": [
         "C.1",
+        "C.4",
         "D.1"
       ],
-      "rationaleAI": "Ovid's poetry covering love, metamorphosis, and Roman festivals addresses poetry (C.1) and literature of Western peoples (D.1)."
+      "rationaleAI": "Ovid covers poetry (C.1), lyric (C.4), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Horace",
       "vsiAuthor": "Llewelyn Morgan",
       "relevantPathsAI": [
         "C.1",
-        "C.4",
+        "C.4.b",
         "C.5",
         "D.1"
       ],
-      "rationaleAI": "Horace's Satires, Odes, and Epistles address poetry (C.1), lyric literature (C.4), and satiric literature (C.5). Literature of Western peoples (D.1)."
+      "rationaleAI": "Horace covers poetry (C.1), ode (C.4.b), satire (C.5), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Sophocles",
@@ -455,38 +485,40 @@
         "C.3.a",
         "D.1"
       ],
-      "rationaleAI": "Sophocles as a Greek tragic dramatist directly addresses tragedy (C.3.a) and literature of Western peoples (D.1)."
+      "rationaleAI": "Sophocles addresses tragedy (C.3.a) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Dante",
       "vsiAuthor": "Peter Hainsworth, David Robey",
       "relevantPathsAI": [
-        "C.1",
+        "C.2.a",
         "C.6.d",
+        "C.6.e",
         "D.1"
       ],
-      "rationaleAI": "Dante's Divine Comedy covering theology and poetic imagination addresses poetry (C.1), doctrinal literature (C.6.d), and literature of Western peoples (D.1)."
+      "rationaleAI": "Dante covers epic (C.2.a), religious (C.6.d) and philosophical (C.6.e) literature, and Western literature (D.1)."
     },
     {
       "vsiTitle": "Geoffrey Chaucer",
       "vsiAuthor": "David Wallace",
       "relevantPathsAI": [
-        "C.2.d",
+        "C.2.c",
         "C.3.b",
         "D.1"
       ],
-      "rationaleAI": "Chaucer's Canterbury Tales spanning noble tragedy to comic farce addresses the tale (C.2.d), comedy (C.3.b), and literature of Western peoples (D.1)."
+      "rationaleAI": "Chaucer covers romance (C.2.c), comedy (C.3.b), and Western literature (D.1)."
     },
     {
       "vsiTitle": "William Shakespeare",
       "vsiAuthor": "Stanley Wells",
       "relevantPathsAI": [
         "C.1",
+        "C.3",
         "C.3.a",
         "C.3.b",
         "D.1"
       ],
-      "rationaleAI": "Shakespeare's dramatic works spanning comedy and tragedy plus sonnets address poetry (C.1), tragedy (C.3.a), comedy (C.3.b), and literature of Western peoples (D.1)."
+      "rationaleAI": "Shakespeare covers poetry (C.1), drama (C.3), tragedy (C.3.a), comedy (C.3.b), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Shakespeare's Comedies",
@@ -495,7 +527,7 @@
         "C.3.b",
         "D.1"
       ],
-      "rationaleAI": "Shakespeare's comic dramatic works directly address comedy (C.3.b) and literature of Western peoples (D.1)."
+      "rationaleAI": "Shakespeare's comedies address comedy (C.3.b) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Shakespeare's Tragedies",
@@ -504,7 +536,7 @@
         "C.3.a",
         "D.1"
       ],
-      "rationaleAI": "Shakespeare's tragedies directly address tragedy (C.3.a) and literature of Western peoples (D.1)."
+      "rationaleAI": "Shakespeare's tragedies address tragedy (C.3.a) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Shakespeare's Sonnets and Poems",
@@ -514,7 +546,7 @@
         "C.4.b",
         "D.1"
       ],
-      "rationaleAI": "Shakespeare's poetic works including the Sonnets address poetry (C.1), language-based lyrics including the sonnet (C.4.b), and literature of Western peoples (D.1)."
+      "rationaleAI": "Shakespeare's poetry covers poetry (C.1), sonnet (C.4.b), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Goethe",
@@ -522,10 +554,11 @@
       "relevantPathsAI": [
         "C.1",
         "C.2.d",
-        "C.3",
+        "C.6.a",
+        "C.6.l",
         "D.1"
       ],
-      "rationaleAI": "Goethe's works spanning poetry, novels, and drama address poetry (C.1), the novel (C.2.d), dramatic literature (C.3), and literature of Western peoples (D.1)."
+      "rationaleAI": "Goethe covers poetry (C.1), novel (C.2.d), essay (C.6.a), travel literature (C.6.l), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Jane Austen",
@@ -534,16 +567,17 @@
         "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "Austen's six major novels and narrative techniques address the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "Austen covers the novel (C.2.d) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Charles Dickens",
       "vsiAuthor": "Jenny Hartley",
       "relevantPathsAI": [
         "C.2.d",
+        "C.6.i",
         "D.1"
       ],
-      "rationaleAI": "Dickens as Victorian novelist addresses the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "Dickens covers novel (C.2.d), journalism (C.6.i), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Leo Tolstoy",
@@ -552,16 +586,17 @@
         "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "Tolstoy's War and Peace and Anna Karenina address the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "Tolstoy covers novel (C.2.d) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Dostoevsky",
       "vsiAuthor": "Deborah Martinsen",
       "relevantPathsAI": [
         "C.2.d",
+        "C.6.e",
         "D.1"
       ],
-      "rationaleAI": "Dostoevsky's major novels address the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "Dostoevsky covers novel (C.2.d), philosophical literature (C.6.e), and Western literature (D.1)."
     },
     {
       "vsiTitle": "James Joyce",
@@ -570,7 +605,7 @@
         "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "Joyce's Ulysses and Finnegans Wake address the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "Joyce covers novel (C.2.d) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Marcel Proust",
@@ -579,7 +614,7 @@
         "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "Proust's In Search of Lost Time addresses the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "Proust covers novel (C.2.d) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Kafka",
@@ -589,16 +624,17 @@
         "C.2.e",
         "D.1"
       ],
-      "rationaleAI": "Kafka's novels and short stories address the novel (C.2.d), the short story (C.2.e), and literature of Western peoples (D.1)."
+      "rationaleAI": "Kafka covers novel (C.2.d), short story (C.2.e), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Anthony Trollope",
       "vsiAuthor": "Dinah Birch",
       "relevantPathsAI": [
         "C.2.d",
+        "C.6.l",
         "D.1"
       ],
-      "rationaleAI": "Trollope's novel series address the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "Trollope covers novel (C.2.d), travel literature (C.6.l), and Western literature (D.1)."
     },
     {
       "vsiTitle": "George Eliot",
@@ -607,25 +643,28 @@
         "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "Eliot's innovations in realism address the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "George Eliot covers novel (C.2.d) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Henry James",
       "vsiAuthor": "Susan L. Mizruchi",
       "relevantPathsAI": [
         "C.2.d",
+        "C.6.a",
+        "C.6.l",
         "D.1"
       ],
-      "rationaleAI": "James's novels including The Portrait of a Lady address the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "Henry James covers novel (C.2.d), essay (C.6.a), travel literature (C.6.l), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Herman Melville",
       "vsiAuthor": "Maurice S Lee",
       "relevantPathsAI": [
+        "C.1",
         "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "Melville's Moby-Dick and literary career address the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "Melville covers poetry (C.1), novel (C.2.d), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Mary Shelley",
@@ -633,9 +672,10 @@
       "relevantPathsAI": [
         "C.2.c",
         "C.2.d",
+        "C.6.l",
         "D.1"
       ],
-      "rationaleAI": "Shelley's Frankenstein as Gothic and early science fiction addresses romance including Gothic romance (C.2.c) and the novel (C.2.d). Literature of Western peoples (D.1)."
+      "rationaleAI": "Mary Shelley covers Gothic romance (C.2.c), novel (C.2.d), travel literature (C.6.l), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Emile Zola",
@@ -644,7 +684,7 @@
         "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "Zola's naturalist novels address the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "Zola covers novel (C.2.d) and Western literature (D.1)."
     },
     {
       "vsiTitle": "Jorge Luis Borges",
@@ -654,7 +694,7 @@
         "C.6.a",
         "D.1"
       ],
-      "rationaleAI": "Borges's stories and essays address the short story (C.2.e) and the essay (C.6.a). Literature of Western peoples (D.1)."
+      "rationaleAI": "Borges covers short story (C.2.e), essay (C.6.a), and Western literature (D.1)."
     },
     {
       "vsiTitle": "J.R.R. Tolkien",
@@ -662,27 +702,28 @@
       "relevantPathsAI": [
         "C.2.c",
         "C.2.d",
-        "D.1"
+        "C.2.f"
       ],
-      "rationaleAI": "Tolkien's works engaging with medievalism and fantasy address romance (C.2.c) and the novel (C.2.d). Literature of Western peoples (D.1)."
+      "rationaleAI": "Tolkien covers romance (C.2.c), novel (C.2.d), and fable/allegory (C.2.f)."
     },
     {
       "vsiTitle": "Agatha Christie",
       "vsiAuthor": "Gill Plain",
       "relevantPathsAI": [
         "C.2.d",
-        "D.1"
+        "C.3"
       ],
-      "rationaleAI": "Christie's detective fiction and thrillers address the novel (C.2.d) and literature of Western peoples (D.1)."
+      "rationaleAI": "Christie covers novel (C.2.d) and dramatic literature (C.3)."
     },
     {
       "vsiTitle": "Montaigne",
       "vsiAuthor": "William M. Hamlin",
       "relevantPathsAI": [
         "C.6.a",
+        "C.6.e",
         "D.1"
       ],
-      "rationaleAI": "Montaigne's genre-defining Essays directly address the essay (C.6.a) and literature of Western peoples (D.1)."
+      "rationaleAI": "Montaigne covers essay (C.6.a), philosophical literature (C.6.e), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Henry David Thoreau",
@@ -690,9 +731,9 @@
       "relevantPathsAI": [
         "C.6.a",
         "C.6.e",
-        "D.1"
+        "C.6.f"
       ],
-      "rationaleAI": "Thoreau's Walden blending nature writing with philosophy addresses the essay (C.6.a) and philosophical literature (C.6.e). Literature of Western peoples (D.1)."
+      "rationaleAI": "Thoreau covers essay (C.6.a), philosophical (C.6.e) and political literature (C.6.f)."
     },
     {
       "vsiTitle": "Voltaire",
@@ -700,18 +741,21 @@
       "relevantPathsAI": [
         "C.2.d",
         "C.6.e",
+        "C.6.f",
         "D.1"
       ],
-      "rationaleAI": "Voltaire's Candide and philosophical works address the novel (C.2.d) and philosophical literature (C.6.e). Literature of Western peoples (D.1)."
+      "rationaleAI": "Voltaire covers novel (C.2.d), philosophical (C.6.e) and political literature (C.6.f), and Western literature (D.1)."
     },
     {
       "vsiTitle": "George Bernard Shaw",
       "vsiAuthor": "Christopher Wixson",
       "relevantPathsAI": [
         "C.3",
+        "C.3.b",
+        "C.6.f",
         "D.1"
       ],
-      "rationaleAI": "Shaw's dramatic canon addresses dramatic literature (C.3) and literature of Western peoples (D.1)."
+      "rationaleAI": "Shaw covers drama (C.3), comedy (C.3.b), political literature (C.6.f), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Sylvia Plath",
@@ -721,7 +765,7 @@
         "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "Plath's poetry and The Bell Jar address poetry (C.1), the novel (C.2.d), and literature of Western peoples (D.1)."
+      "rationaleAI": "Plath covers poetry (C.1), novel (C.2.d), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Elizabeth Bishop",
@@ -731,7 +775,7 @@
         "C.4",
         "D.1"
       ],
-      "rationaleAI": "Bishop's lyric poetry addresses poetry (C.1), lyric literature (C.4), and literature of Western peoples (D.1)."
+      "rationaleAI": "Bishop covers poetry (C.1), lyric (C.4), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Albert Camus",
@@ -741,18 +785,18 @@
         "C.6.e",
         "D.1"
       ],
-      "rationaleAI": "Camus's fiction and philosophical essays address the novel (C.2.d), philosophical literature (C.6.e), and literature of Western peoples (D.1)."
+      "rationaleAI": "Camus covers novel (C.2.d), philosophical literature (C.6.e), and Western literature (D.1)."
     },
     {
       "vsiTitle": "C. S. Lewis",
       "vsiAuthor": "James Como",
       "relevantPathsAI": [
+        "C.2.c",
         "C.2.d",
         "C.6.d",
-        "C.7",
-        "D.1"
+        "C.7"
       ],
-      "rationaleAI": "Lewis's Chronicles of Narnia as children's fantasy (C.7), theological writings as religious literature (C.6.d), and novels (C.2.d). Literature of Western peoples (D.1)."
+      "rationaleAI": "Lewis covers fantasy (C.2.c), novel (C.2.d), religious literature (C.6.d), and children's literature (C.7)."
     },
     {
       "vsiTitle": "Postcolonialism",
@@ -760,7 +804,7 @@
       "relevantPathsAI": [
         "A.7"
       ],
-      "rationaleAI": "Postcolonialism challenging Western-centric perspectives addresses writings on literature including critical writing (A.7)."
+      "rationaleAI": "Postcolonialism connects to critical writing (A.7)."
     },
     {
       "vsiTitle": "Humour",
@@ -768,7 +812,7 @@
       "relevantPathsAI": [
         "C.5"
       ],
-      "rationaleAI": "Philosophical analysis of humor covering comedy and comic amusement addresses satiric literature including satire and parody (C.5)."
+      "rationaleAI": "Humor connects to satiric literature (C.5)."
     },
     {
       "vsiTitle": "The Marquis de Sade",
@@ -778,7 +822,7 @@
         "C.6.e",
         "D.1"
       ],
-      "rationaleAI": "Sade's libertine novels and philosophical project address the novel (C.2.d), philosophical literature (C.6.e), and literature of Western peoples (D.1)."
+      "rationaleAI": "Sade covers novel (C.2.d), philosophical literature (C.6.e), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Mary Wollstonecraft",
@@ -787,7 +831,7 @@
         "C.6.f",
         "D.1"
       ],
-      "rationaleAI": "Wollstonecraft's A Vindication of the Rights of Woman addresses political literature (C.6.f) and literature of Western peoples (D.1)."
+      "rationaleAI": "Wollstonecraft covers political literature (C.6.f) and Western literature (D.1)."
     },
     {
       "vsiTitle": "The New Testament as Literature",
@@ -795,17 +839,17 @@
       "relevantPathsAI": [
         "C.6.d"
       ],
-      "rationaleAI": "The New Testament analyzed through literary frameworks covering parables and narrative structure addresses doctrinal and religious literature (C.6.d)."
+      "rationaleAI": "New Testament addresses religious literature (C.6.d)."
     },
     {
       "vsiTitle": "Classics",
       "vsiAuthor": "Mary Beard, John Henderson",
       "relevantPathsAI": [
+        "C.2.a",
         "C.3.a",
-        "C.3.b",
-        "C.6.k"
+        "D.1"
       ],
-      "rationaleAI": "Covers ancient Greek and Roman literature including drama (Oedipus cycle, Virgil), directly relevant to tragedy, comedy, and the philosophical and literary dialogue tradition."
+      "rationaleAI": "Classics covers epic (C.2.a), tragedy (C.3.a), and Western literature (D.1)."
     },
     {
       "vsiTitle": "Socrates",
@@ -813,15 +857,16 @@
       "relevantPathsAI": [
         "C.6.k"
       ],
-      "rationaleAI": "Covers Socrates known through Plato's dialogues and the Socratic method, directly relevant to the dialogue as philosophical and literary form."
+      "rationaleAI": "Socrates through Plato's dialogues connects to the dialogue (C.6.k)."
     },
     {
       "vsiTitle": "Plato",
       "vsiAuthor": "Julia Annas",
       "relevantPathsAI": [
+        "C.6.e",
         "C.6.k"
       ],
-      "rationaleAI": "Covers Plato's philosophy developed in dialogues including literary techniques and philosophical use of fiction, directly addressing the dialogue form."
+      "rationaleAI": "Plato's dialogues connect to philosophical literature (C.6.e) and the dialogue (C.6.k)."
     }
   ],
   "_curatedBy": "ai",

@@ -5,27 +5,34 @@
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
       "relevantPathsAI": [
+        "A.2.b",
         "B",
         "B.1",
+        "B.1.a",
         "B.1.b",
         "B.1.c",
         "B.1.d",
+        "B.1.e",
+        "B.1.f",
         "B.1.g",
         "B.1.h",
+        "B.1.h.i",
         "B.2",
         "B.3"
       ],
-      "rationaleAI": "Confucianism addresses its history (B.1) including Confucius (B.1.b), the school (B.1.c), state orthodoxy (B.1.d), Neo-Confucianism (B.1.g), modern challenges (B.1.h), literature (B.2), and as religion/philosophy (B.3)."
+      "rationaleAI": "Covers the Confucian tradition (A.2.b), Confucius (B.1.b), Mencius (B.1.c), Han orthodoxy (B.1.d), Korea/Japan introduction (B.1.e), role during Buddhist ascendancy (B.1.f), Neo-Confucianism (B.1.g), Western challenges (B.1.h), contemporary aspects (B.1.h.i), literature (B.2), and as religion/philosophy (B.3)."
     },
     {
       "vsiTitle": "Chinese literature",
       "vsiAuthor": "Sabina Knight",
       "relevantPathsAI": [
+        "A.2.b",
         "A.5",
+        "A.6",
         "B.2",
         "C.2"
       ],
-      "rationaleAI": "Chinese literary culture relates to religious symbolism (A.5), Confucian literature (B.2), and Taoist literature (C.2)."
+      "rationaleAI": "Chinese literary culture covers the Great Tradition (A.2.b), symbolism (A.5), mythology (A.6), Confucian literature (B.2), and Taoist literature (C.2)."
     },
     {
       "vsiTitle": "Modern China",
@@ -34,7 +41,7 @@
         "A.2.d",
         "B.1.h"
       ],
-      "rationaleAI": "Modern China relates to effects of secularism on Chinese religion (A.2.d) and modern Confucian challenges (B.1.h)."
+      "rationaleAI": "Modern China connects to nationalism/secularism effects (A.2.d) and Western challenges (B.1.h)."
     },
     {
       "vsiTitle": "Modern Japan",
@@ -42,15 +49,17 @@
       "relevantPathsAI": [
         "E.1.d"
       ],
-      "rationaleAI": "Modern Japan relates to the Meiji era in Japanese religion (E.1.d)."
+      "rationaleAI": "Modern Japan connects to Meiji era and new movements (E.1.d)."
     },
     {
       "vsiTitle": "Korea",
       "vsiAuthor": "Michael J. Seth",
       "relevantPathsAI": [
-        "D"
+        "D",
+        "D.1",
+        "D.3"
       ],
-      "rationaleAI": "Korean history relates to religions of Korea (D)."
+      "rationaleAI": "Korean history covers religion history (D.1) and beliefs (D.3)."
     },
     {
       "vsiTitle": "Samurai",
@@ -59,15 +68,16 @@
         "E.1.b",
         "E.1.c"
       ],
-      "rationaleAI": "Samurai relate to medieval Japanese religion (E.1.b) and the Tokugawa era (E.1.c)."
+      "rationaleAI": "Warrior class covers medieval period (E.1.b) and Tokugawa era (E.1.c)."
     },
     {
       "vsiTitle": "Japanese Literature",
       "vsiAuthor": "Alan Tansman",
       "relevantPathsAI": [
+        "E.1.b",
         "E.2.c"
       ],
-      "rationaleAI": "Japanese literature relates to Shinto literature (E.2.c)."
+      "rationaleAI": "Japanese literature covers early periods (E.1.b) and Shinto literature (E.2.c)."
     },
     {
       "vsiTitle": "Buddhism",
@@ -75,7 +85,7 @@
       "relevantPathsAI": [
         "A.2.c"
       ],
-      "rationaleAI": "Buddhism's East Asian spread relates to the Buddhist Way in Chinese religion (A.2.c)."
+      "rationaleAI": "Buddhism connects to Buddhist Way dominance (A.2.c)."
     },
     {
       "vsiTitle": "Tibetan Buddhism",
@@ -83,7 +93,7 @@
       "relevantPathsAI": [
         "A.2.c"
       ],
-      "rationaleAI": "Tibetan Buddhism's Chinese spread relates to Buddhist dominance (A.2.c)."
+      "rationaleAI": "Tibetan Buddhism connects to Buddhist Way (A.2.c)."
     },
     {
       "vsiTitle": "World Mythology",
@@ -91,7 +101,7 @@
       "relevantPathsAI": [
         "A.6"
       ],
-      "rationaleAI": "Comparative mythology relates to Chinese mythology (A.6)."
+      "rationaleAI": "World mythology connects to Chinese mythology (A.6)."
     },
     {
       "vsiTitle": "The Silk Road",
@@ -99,16 +109,17 @@
       "relevantPathsAI": [
         "A.2.c"
       ],
-      "rationaleAI": "Silk Road facilitated Buddhist transmission to China (A.2.c)."
+      "rationaleAI": "Silk Road Buddhism transmission connects to Buddhist Way (A.2.c)."
     },
     {
       "vsiTitle": "Ritual",
       "vsiAuthor": "Barry Stephenson",
       "relevantPathsAI": [
         "A.4",
+        "D.4",
         "E.2.e"
       ],
-      "rationaleAI": "Ritual relates to Chinese (A.4) and Shinto (E.2.e) practices."
+      "rationaleAI": "Ritual connects to Chinese (A.4), Korean (D.4), and Shinto (E.2.e) practices."
     },
     {
       "vsiTitle": "Secularism",
@@ -116,15 +127,16 @@
       "relevantPathsAI": [
         "A.2.d"
       ],
-      "rationaleAI": "Secularism relates to modern Chinese religion (A.2.d)."
+      "rationaleAI": "Secularism connects to nationalism/secularism effects (A.2.d)."
     },
     {
       "vsiTitle": "Atheism",
       "vsiAuthor": "Julian Baggini",
       "relevantPathsAI": [
+        "A.1",
         "A.2.d"
       ],
-      "rationaleAI": "East Asian atheism question relates to modern Chinese religion (A.2.d)."
+      "rationaleAI": "East Asian atheism connects to folk/literate religions (A.1) and secularism (A.2.d)."
     }
   ],
   "_curatedBy": "ai",

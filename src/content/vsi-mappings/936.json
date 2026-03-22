@@ -6,10 +6,9 @@
       "vsiAuthor": "Kim Knott",
       "relevantPathsAI": [
         "A.1.e",
-        "B.2.b",
-        "C.2"
+        "B.2.b"
       ],
-      "rationaleAI": "Hindu movements connect to Delhi sultanate cultural developments (A.1.e), Vijayanagar (B.2), and Mughal religious policies (C.2.b)."
+      "rationaleAI": "Hinduism addresses religious developments during the Delhi sultanate (A.1.e) and Vijayanagar cultural development (B.2.b)."
     },
     {
       "vsiTitle": "Islam",
@@ -17,19 +16,20 @@
       "relevantPathsAI": [
         "A",
         "A.1",
-        "C.2.b"
+        "B.1",
+        "C"
       ],
-      "rationaleAI": "Islam connects to North India under Muslim hegemony (A), the Delhi sultanate (A.1), and Mughal policies (C.2.b)."
+      "rationaleAI": "Islam provides context for Muslim hegemony (A, A.1), Deccan sultanates (B.1), and Mughal Empire (C)."
     },
     {
       "vsiTitle": "Islamic History",
       "vsiAuthor": "Adam J. Silverstein",
       "relevantPathsAI": [
-        "A",
         "A.1",
-        "C.1"
+        "A.1.e",
+        "C"
       ],
-      "rationaleAI": "Turkish dynasties connect to the Delhi sultanate (A.1). Mughal origins relate to C.1."
+      "rationaleAI": "Islamic history covers the Delhi sultanate (A.1), Islamic culture (A.1.e), and Mughal administration (C)."
     },
     {
       "vsiTitle": "The Mongols",
@@ -38,7 +38,7 @@
         "A.1.c",
         "C.1"
       ],
-      "rationaleAI": "Mongol campaigns connect to the Tughluq period (A.1.c). Mughal origins relate to C.1."
+      "rationaleAI": "Mongols connect to the Tughluq-era Mughal invasion (A.1.c) and Mughal origins (C.1)."
     },
     {
       "vsiTitle": "Indian philosophy",
@@ -47,13 +47,15 @@
         "A.1.e",
         "B.2.b"
       ],
-      "rationaleAI": "Indian philosophy connects to Delhi sultanate developments (A.1.e) and Vijayanagar (B.2.b)."
+      "rationaleAI": "Indian philosophy covers cultural developments during the sultanate (A.1.e) and Vijayanagar (B.2.b)."
     },
     {
       "vsiTitle": "Modern India",
       "vsiAuthor": "Craig Jeffrey",
-      "relevantPathsAI": [],
-      "rationaleAI": "Provides context for understanding the caste system and political structures that evolved during the Delhi sultanate and Mughal periods."
+      "relevantPathsAI": [
+        "C.4"
+      ],
+      "rationaleAI": "Modern India provides continuity from Mughal decline (C.4)."
     },
     {
       "vsiTitle": "The Koran",
@@ -61,7 +63,7 @@
       "relevantPathsAI": [
         "A.1.e"
       ],
-      "rationaleAI": "The Quran's educational role connects to Islamic movements during the Delhi sultanate (A.1.e)."
+      "rationaleAI": "The Quran connects to Islamic religious developments during the sultanate (A.1.e)."
     },
     {
       "vsiTitle": "Dynasty",
@@ -70,10 +72,11 @@
         "A.1",
         "C",
         "C.1",
+        "C.2",
         "C.3",
         "C.4"
       ],
-      "rationaleAI": "Dynastic succession connects to Delhi sultanate (A.1) and Mughal dynasty (C.1-C.4)."
+      "rationaleAI": "Dynastic rule covers sultanate dynasties (A.1) and the full Mughal period (C, C.1-C.4)."
     },
     {
       "vsiTitle": "The Silk Road",
@@ -81,7 +84,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Trade routes connect to Mughal Central Asian origins (C.1)."
+      "rationaleAI": "Silk Road connects to Mughal Central Asian origins (C.1)."
     },
     {
       "vsiTitle": "Global Economic History",
@@ -89,24 +92,24 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Economic development connects to later Mughal developments (C.3)."
+      "rationaleAI": "Global economic history connects to Mughal economic policies (C.3)."
     },
     {
       "vsiTitle": "Pakistan",
       "vsiAuthor": "Pippa Virdee",
       "relevantPathsAI": [
-        "A",
+        "A.1",
         "C"
       ],
-      "rationaleAI": "Covers the Indus valley civilization spanning 4,000 years and the interplay of Islam, regional identity, and colonial legacy on the Indian subcontinent, relevant to the Delhi sultanate period and Mughal Empire history that shaped the territories that became Pakistan."
+      "rationaleAI": "Pakistan's territory was central to the sultanate (A.1) and Mughal governance (C)."
     },
     {
       "vsiTitle": "The Crusades",
       "vsiAuthor": "Christopher Tyerman",
       "relevantPathsAI": [
-        "A.1.e"
+        "A.1"
       ],
-      "rationaleAI": "Covers Christian-Islamic cultural exchange and Crusading campaigns spanning 200 years, relevant to cultural and religious developments during the Delhi sultanate including Islamic movements and the broader context of Muslim expansion into India."
+      "rationaleAI": "Crusades provide context for Islamic military expansion (A.1)."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
@@ -114,15 +117,16 @@
       "relevantPathsAI": [
         "A.1.e"
       ],
-      "rationaleAI": "Covers philosophy in Islamic lands from late antiquity through the twentieth century including major figures like Avicenna and Mulla Sadra, relevant to cultural and religious developments during the Delhi sultanate including Islamic philosophical and educational movements."
+      "rationaleAI": "Islamic philosophy connects to sultanate cultural developments (A.1.e)."
     },
     {
       "vsiTitle": "Southeast Asia",
       "vsiAuthor": "James R. Rush",
       "relevantPathsAI": [
-        "E.1"
+        "B",
+        "E"
       ],
-      "rationaleAI": "Covers Southeast Asian history including trade networks and the spread of Buddhism and Islam, relevant to Ceylon's foreign trade growth and its connections to Southeast Asian maritime commerce."
+      "rationaleAI": "Southeast Asia provides regional context for the Deccan (B) and Ceylon (E)."
     }
   ],
   "_curatedBy": "ai",

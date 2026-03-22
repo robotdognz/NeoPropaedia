@@ -8,22 +8,37 @@
         "A",
         "B",
         "B.1",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d",
-        "D.1",
-        "E.2"
+        "B.1.b.i",
+        "B.1.b.ii",
+        "B.1.c.i",
+        "B.1.c.ii",
+        "B.1.d.ii",
+        "B.1.d.iii",
+        "B.1.e",
+        "D.2.a.iv",
+        "E.2",
+        "E.3",
+        "F.1.c",
+        "F.2.f",
+        "G.1",
+        "G.2.a"
       ],
-      "rationaleAI": "Mesopotamian civilizations cover river valley development (B.1), Sumerian city-states (B.1.b), Sumer and Akkad (B.1.c), Old Babylonian period (B.1.d), Syria (D.1), and Hittite conflicts (E.2)."
+      "rationaleAI": "Covers Mesopotamian civilizations 3500-539 BCE including Sumerian cuneiform and city-states (B.1.b.i, B.1.b.ii), Akkadian ascendancy (B.1.c.i), Ur III (B.1.c.ii), early Assyria and Hammurabi (B.1.d.ii, B.1.d.iii), Hurrian expansion (B.1.e), Hittite Anatolia (D.2.a.iv), Hittite Empire (E.2), Kassites (E.3), Assyria after 900 BC (F.1.c), Aramaean role (F.2.f), Assyrian Empire (G.1), and Neo-Babylonian Empire (G.2.a)."
     },
     {
       "vsiTitle": "Ancient Egypt",
       "vsiAuthor": "Ian Shaw",
       "relevantPathsAI": [
+        "A",
         "C",
-        "E.1"
+        "C.1",
+        "C.2",
+        "C.2.a",
+        "C.3",
+        "E.1",
+        "F.1.a"
       ],
-      "rationaleAI": "Ancient Egypt addresses river valley civilization (C) and the New Kingdom (E.1)."
+      "rationaleAI": "Covers pharaonic civilization from earliest dynasties (C.1), Old Kingdom pyramids (C.2.a), Middle Kingdom (C.3), New Kingdom (E.1), and post-New Kingdom decline (F.1.a)."
     },
     {
       "vsiTitle": "Ancient Egyptian Art and Architecture",
@@ -32,35 +47,43 @@
         "C",
         "E.1.c"
       ],
-      "rationaleAI": "Egyptian art relates to Egyptian civilization (C) and New Kingdom culture (E.1.c)."
+      "rationaleAI": "Egyptian arts connect to Egyptian civilization (C) and New Kingdom culture (E.1.c)."
     },
     {
       "vsiTitle": "Egyptian Myth",
       "vsiAuthor": "Geraldine Pinch",
       "relevantPathsAI": [
         "C",
-        "E.1"
+        "E.1.a.i",
+        "E.1.c"
       ],
-      "rationaleAI": "Egyptian mythology relates to Egyptian civilization (C) and New Kingdom (E.1)."
+      "rationaleAI": "Egyptian mythology connects to Egyptian civilization (C), Amon-Re cult (E.1.a.i), and New Kingdom culture (E.1.c)."
     },
     {
       "vsiTitle": "Hieroglyphs",
       "vsiAuthor": "Penelope Wilson",
       "relevantPathsAI": [
-        "C",
+        "A",
+        "C.1",
+        "C.2",
         "E.1.c"
       ],
-      "rationaleAI": "Hieroglyphs relate to Egyptian civilization (C) and New Kingdom culture (E.1.c)."
+      "rationaleAI": "Hieroglyphs connect to sources (A), Early Dynastic (C.1), Old Kingdom (C.2), and New Kingdom (E.1.c)."
     },
     {
       "vsiTitle": "Babylonia",
       "vsiAuthor": "Trevor Bryce",
       "relevantPathsAI": [
-        "B.1.d",
-        "E.3",
-        "G.2.a"
+        "B.1",
+        "B.1.d.iii",
+        "E.3.a",
+        "F.1.b",
+        "G.1",
+        "G.2.a",
+        "G.2.a.i",
+        "G.2.a.ii"
       ],
-      "rationaleAI": "Babylonia addresses Old Babylonian Period (B.1.d), Mesopotamia c. 1600-900 BC (E.3), and Neo-Babylonian Empire (G.2.a)."
+      "rationaleAI": "Covers Hammurabi (B.1.d.iii), Kassites (E.3.a), Babylonia 1050-750 BC (F.1.b), Assyrian period (G.1), Nebuchadnezzar and Jewish Exile (G.2.a.i), and last Babylonian kings (G.2.a.ii)."
     },
     {
       "vsiTitle": "Ancient Assyria",
@@ -68,62 +91,73 @@
       "relevantPathsAI": [
         "B.1.d.ii",
         "E.3.c",
-        "G.1"
+        "F.1.c",
+        "G.1",
+        "G.1.a",
+        "G.1.b"
       ],
-      "rationaleAI": "Assyria addresses early Assyria (B.1.d.ii), rise of Assyria (E.3.c), and Assyrian Empire (G.1)."
+      "rationaleAI": "Covers early Assyria (B.1.d.ii), rise (E.3.c), dominance (F.1.c), culture (G.1.a), and expansion through decline (G.1.b)."
     },
     {
       "vsiTitle": "The Trojan War",
       "vsiAuthor": "Eric H. Cline",
       "relevantPathsAI": [
-        "E.2",
+        "D.2.a.iii",
         "E.5"
       ],
-      "rationaleAI": "The Trojan War relates to Hittite Empire (E.2) and Mycenaean civilization (E.5)."
+      "rationaleAI": "Trojan War connects to Bronze Age Troy (D.2.a.iii) and Mycenaean civilization (E.5)."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
       "relevantPathsAI": [
         "A",
-        "B.1.b.i"
+        "B.1.b.i",
+        "E.2.b.i"
       ],
-      "rationaleAI": "Writing history relates to ancient Near Eastern civilizations (A) and cuneiform invention (B.1.b.i)."
+      "rationaleAI": "Cuneiform and hieroglyphs connect to sources (A), Sumerian writing (B.1.b.i), and Canaanite alphabet (E.2.b.i)."
     },
     {
       "vsiTitle": "Biblical archaeology",
       "vsiAuthor": "Eric H. Cline",
       "relevantPathsAI": [
+        "D.1",
         "E.2.b.ii",
-        "F.2.b"
+        "F.2.b",
+        "F.2.b.i",
+        "G.2.a.i"
       ],
-      "rationaleAI": "Biblical archaeology relates to Hebrew origins (E.2.b.ii) and the Hebrew kingdom (F.2.b)."
+      "rationaleAI": "Biblical archaeology covers Syria-Palestine (D.1), Hebrew Exodus (E.2.b.ii), Hebrew kingdom (F.2.b, F.2.b.i), and Babylonian Exile (G.2.a.i)."
     },
     {
       "vsiTitle": "The Hebrew Bible As Literature",
       "vsiAuthor": "Tod Linafelt",
       "relevantPathsAI": [
+        "F.2.b",
         "F.2.b.ii"
       ],
-      "rationaleAI": "Hebrew Bible literature relates to Yahweh cult and biblical literature (F.2.b.ii)."
+      "rationaleAI": "David stories connect to Hebrew kingdom (F.2.b) and Yahweh cult (F.2.b.ii)."
     },
     {
       "vsiTitle": "Judaism",
       "vsiAuthor": "Norman Solomon",
       "relevantPathsAI": [
-        "E.2.b.ii",
-        "F.2.b"
+        "F.2.b",
+        "F.2.b.ii",
+        "G.2.a.i"
       ],
-      "rationaleAI": "Judaism relates to Hebrew origins (E.2.b.ii) and Hebrew kingdom (F.2.b)."
+      "rationaleAI": "Judaism connects to Hebrew kingdom and Yahweh (F.2.b, F.2.b.ii) and the Exile (G.2.a.i)."
     },
     {
       "vsiTitle": "Iran",
       "vsiAuthor": "Ali Ansari",
       "relevantPathsAI": [
-        "G.3",
+        "B.2",
+        "G.2.d",
+        "G.3.c",
         "H"
       ],
-      "rationaleAI": "Iran relates to Achaemenid Empire (G.3) and Parthian/Sasanian empires (H)."
+      "rationaleAI": "Iran connects to early Elam (B.2), Achaemenid establishment (G.2.d), Zoroastrianism (G.3.c), and Parthian-Sasanian empires (H)."
     },
     {
       "vsiTitle": "Alexander the Great",
@@ -131,7 +165,7 @@
       "relevantPathsAI": [
         "G.3.b"
       ],
-      "rationaleAI": "Alexander relates to the conquest of Persia (G.3.b)."
+      "rationaleAI": "Alexander's conquest addresses Xerxes' successors and conquest (G.3.b)."
     },
     {
       "vsiTitle": "The Hellenistic Age",
@@ -139,40 +173,45 @@
       "relevantPathsAI": [
         "G.3.d"
       ],
-      "rationaleAI": "Hellenistic world relates to Seleucid rule (G.3.d)."
+      "rationaleAI": "Hellenistic world covers Seleucid rule (G.3.d)."
     },
     {
       "vsiTitle": "Ancient warfare",
       "vsiAuthor": "Harry Sidebottom",
       "relevantPathsAI": [
-        "E.2",
-        "G.1"
+        "G.1.b",
+        "G.3.a"
       ],
-      "rationaleAI": "Ancient warfare relates to Hittite conflicts (E.2) and Assyrian expansion (G.1)."
+      "rationaleAI": "Ancient warfare covers Assyrian expansion (G.1.b) and Persian attempts on Greece (G.3.a)."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
       "relevantPathsAI": [
-        "G.3"
+        "H"
       ],
-      "rationaleAI": "Silk Road relates to Achaemenid territory (G.3)."
+      "rationaleAI": "Trade routes connect to Parthian and Sasanian empires (H)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "B.1.a",
+        "D.1.a"
       ],
-      "rationaleAI": "Archaeology relates to archaeological sources (A)."
+      "rationaleAI": "Archaeological methods connect to sources (A), Neolithic periods (B.1.a), and Stone Age cultures (D.1.a)."
     },
     {
       "vsiTitle": "African History",
       "vsiAuthor": "John Parker, Richard Rathbone",
       "relevantPathsAI": [
-        "I"
+        "I",
+        "I.1",
+        "I.2",
+        "I.5"
       ],
-      "rationaleAI": "African history relates to Nilotic Sudan and Ethiopia (I)."
+      "rationaleAI": "African history covers Nilotic Sudan (I.1), Kingdom of Kush (I.2), and North Africa (I.5)."
     },
     {
       "vsiTitle": "Late Antiquity",
@@ -180,24 +219,25 @@
       "relevantPathsAI": [
         "H.2.c"
       ],
-      "rationaleAI": "Late Antiquity relates to Sasanian Empire's end (H.2.c)."
+      "rationaleAI": "Late antiquity connects to Sasanian decline and Arab conquest (H.2.c)."
     },
     {
       "vsiTitle": "The Old Testament",
       "vsiAuthor": "Michael Coogan",
       "relevantPathsAI": [
-        "E.2.b.ii",
-        "F.2.b"
+        "F.2.b",
+        "F.2.b.ii",
+        "G.2.a.i"
       ],
-      "rationaleAI": "The Old Testament relates to Hebrew origins (E.2.b.ii) and Hebrew kingdom (F.2.b)."
+      "rationaleAI": "Old Testament covers Hebrew kingdom (F.2.b, F.2.b.ii) and Babylonian Exile (G.2.a.i)."
     },
     {
       "vsiTitle": "The Dead Sea Scrolls",
       "vsiAuthor": "Timothy Lim",
       "relevantPathsAI": [
-        "F.2.b"
+        "F.2.b.ii"
       ],
-      "rationaleAI": "Dead Sea Scrolls relate to later Jewish history (F.2.b)."
+      "rationaleAI": "Dead Sea Scrolls connect to Yahweh cult (F.2.b.ii)."
     },
     {
       "vsiTitle": "Hinduism",
@@ -205,26 +245,25 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Hinduism's Indus Valley origins tangentially relate to Near Eastern civilization context (D.1)."
+      "rationaleAI": "Indus Valley civilization provides Near Eastern cultural context (D.1)."
     },
     {
       "vsiTitle": "Ancient Greece",
       "vsiAuthor": "Paul Cartledge",
       "relevantPathsAI": [
-        "D.2.c.i",
-        "D.2.c.ii",
-        "E.5"
+        "D.2.c",
+        "E.5",
+        "G.3.a"
       ],
-      "rationaleAI": "Covers ancient Greek civilization from 1400 BCE through the Hellenistic period including interactions with Phoenicians and Alexander the Great, relevant to early Aegean civilizations and Mycenaean Greece."
+      "rationaleAI": "Ancient Greece covers Aegean civilizations (D.2.c), Mycenaean period (E.5), and Persian wars (G.3.a)."
     },
     {
       "vsiTitle": "The Bible",
       "vsiAuthor": "John Riches",
       "relevantPathsAI": [
-        "E.2.b.ii",
-        "F.2.b"
+        "F.2.b.ii"
       ],
-      "rationaleAI": "Covers the Hebrew Bible including its composition and historical context, relevant to the origins of the Hebrews, the Exodus, and the Hebrew kingdom's cult of Yahweh and biblical literature."
+      "rationaleAI": "The Bible connects to Yahweh cult (F.2.b.ii)."
     },
     {
       "vsiTitle": "Islamic History",
@@ -232,16 +271,17 @@
       "relevantPathsAI": [
         "H.2.c"
       ],
-      "rationaleAI": "Covers the rise of Islam and Arab conquests, relevant to the Sasanian Empire's decline and extinction under Arab conquest (636/637-651)."
+      "rationaleAI": "Islamic history connects to Sasanian extinction through Arab conquest (H.2.c)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
       "relevantPathsAI": [
-        "D.1.a.i",
-        "D.2.a.i"
+        "A",
+        "B.1.a",
+        "D.1.a.i"
       ],
-      "rationaleAI": "Covers the Holocene epoch, invention of agriculture, and development of cities, relevant to Stone Age cultures and Neolithic farming communities in Syria, Palestine, and Anatolia."
+      "rationaleAI": "Prehistory covers sources (A), Neolithic periods (B.1.a), and Paleolithic development (D.1.a.i)."
     }
   ],
   "_curatedBy": "ai",

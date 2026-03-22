@@ -7,14 +7,22 @@
       "relevantPathsAI": [
         "A",
         "A.1",
+        "A.1.b",
         "A.1.d",
+        "A.1.d.ii",
+        "A.1.d.iii",
+        "A.1.e",
         "A.1.f",
         "A.1.g",
         "A.1.h",
         "A.2",
-        "A.3"
+        "A.2.c",
+        "A.2.d",
+        "A.3",
+        "B.1.g",
+        "B.2.d"
       ],
-      "rationaleAI": "Medicine from Hippocratic traditions through modern biomedicine covers the full history of medicine (A), including Greco-Roman medicine (A.1.d), Renaissance (A.1.f), 17th century (A.1.g), 18th century (A.1.h), 19th century (A.2), and 20th century advances (A.3)."
+      "rationaleAI": "Covers Hippocrates (A.1.d.ii), Galen (A.1.d.iii), medieval medicine (A.1.e), Renaissance anatomy (A.1.f), circulation discovery (A.1.g), specialization (A.1.h), bacteriology (A.2.c), anesthesia (A.2.d), psychiatry (B.1.g), and public health (B.2.d)."
     },
     {
       "vsiTitle": "Epidemiology",
@@ -23,47 +31,46 @@
         "B.2.d",
         "B.3"
       ],
-      "rationaleAI": "Epidemiological methods relate to public health (B.2.d) and nonclinical specialties (B.3)."
+      "rationaleAI": "Population health connects to public health (B.2.d) and medical sciences (B.3)."
     },
     {
       "vsiTitle": "Pandemics",
       "vsiAuthor": "Christian W. McMillen",
       "relevantPathsAI": [
+        "A.2.c",
         "A.3.b",
         "B.2.d",
         "B.2.h"
       ],
-      "rationaleAI": "Pandemic diseases relate to immunology advances (A.3.b), public health (B.2.d), and tropical medicine (B.2.h)."
+      "rationaleAI": "Pandemics connect to bacteriology (A.2.c), immunology (A.3.b), public health (B.2.d), and tropical medicine (B.2.h)."
     },
     {
       "vsiTitle": "Plague",
       "vsiAuthor": "Paul Slack",
       "relevantPathsAI": [
-        "A.1.e",
-        "A.3.b",
+        "A.2.c",
         "B.2.d"
       ],
-      "rationaleAI": "Plague relates to medieval medicine (A.1.e), immunology (A.3.b), and public health (B.2.d)."
+      "rationaleAI": "Plague connects to bacteriology (A.2.c) and public health (B.2.d)."
     },
     {
       "vsiTitle": "Infectious Disease",
       "vsiAuthor": "Benjamin Bolker and Marta Wayne",
       "relevantPathsAI": [
         "A.2.c",
-        "A.3.a",
-        "A.3.b"
+        "A.3.b",
+        "B.2.h"
       ],
-      "rationaleAI": "Pathogen dynamics relate to bacteriology (A.2.c), chemotherapy (A.3.a), and immunology (A.3.b)."
+      "rationaleAI": "Pathogens connect to bacteriology (A.2.c), immunology (A.3.b), and tropical medicine (B.2.h)."
     },
     {
       "vsiTitle": "HIV/AIDS",
       "vsiAuthor": "Alan Whiteside",
       "relevantPathsAI": [
         "A.3.a",
-        "B.2.d",
-        "B.2.h"
+        "B.2.d"
       ],
-      "rationaleAI": "HIV/AIDS relates to chemotherapy advances (A.3.a), public health (B.2.d), and tropical medicine (B.2.h)."
+      "rationaleAI": "HIV connects to chemotherapy (A.3.a) and public health (B.2.d)."
     },
     {
       "vsiTitle": "Viruses",
@@ -71,7 +78,7 @@
       "relevantPathsAI": [
         "A.3.b.ii"
       ],
-      "rationaleAI": "Viral biology addresses vaccines for viral diseases (A.3.b.ii)."
+      "rationaleAI": "Viral vaccines address viral disease vaccines (A.3.b.ii)."
     },
     {
       "vsiTitle": "Bacteria",
@@ -80,24 +87,27 @@
         "A.2.c",
         "A.3.a"
       ],
-      "rationaleAI": "Bacteria as disease agents relate to bacteriology (A.2.c) and chemotherapy (A.3.a)."
+      "rationaleAI": "Bacteria connect to bacteriology (A.2.c) and chemotherapy (A.3.a)."
     },
     {
       "vsiTitle": "The Immune System",
       "vsiAuthor": "Paul Klenerman",
       "relevantPathsAI": [
         "A.3.b",
+        "A.3.b.i",
+        "A.3.b.ii",
         "B.2.f"
       ],
-      "rationaleAI": "Immune system biology addresses immunology advances (A.3.b) and immunology as specialty (B.2.f)."
+      "rationaleAI": "Immune biology connects to immunology (A.3.b), bacterial vaccines (A.3.b.i), viral vaccines (A.3.b.ii), and immunology specialty (B.2.f)."
     },
     {
       "vsiTitle": "Cancer",
       "vsiAuthor": "Nick James",
       "relevantPathsAI": [
-        "A.3.d.ii"
+        "A.3.d.ii",
+        "B.1.a"
       ],
-      "rationaleAI": "Cancer biology addresses cancer research (A.3.d.ii)."
+      "rationaleAI": "Cancer research connects to cancer treatment (A.3.d.ii) and radiology (B.1.a)."
     },
     {
       "vsiTitle": "Drugs",
@@ -106,27 +116,26 @@
         "A.3.a",
         "B.3"
       ],
-      "rationaleAI": "Pharmacology relates to chemotherapy (A.3.a) and pharmacology as specialty (B.3)."
+      "rationaleAI": "Pharmacology connects to chemotherapy (A.3.a) and pharmacology specialty (B.3)."
     },
     {
       "vsiTitle": "Anaesthesia",
       "vsiAuthor": "Aidan O'Donnell",
       "relevantPathsAI": [
         "A.2.d",
-        "A.4.a",
         "A.4.e",
         "B.1.h"
       ],
-      "rationaleAI": "Anaesthesia relates to anesthesia discovery (A.2.d), surgery importance (A.4.a), inhalation procedures (A.4.e), and anesthesiology (B.1.h)."
+      "rationaleAI": "Anaesthesia connects to anesthesia discovery (A.2.d), inhalation procedures (A.4.e), and anesthesiology (B.1.h)."
     },
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
       "relevantPathsAI": [
-        "A.1.d",
-        "A.1.f.i"
+        "A.1.f.i",
+        "B.3"
       ],
-      "rationaleAI": "Anatomy relates to Greco-Roman discoveries (A.1.d) and Renaissance improvements (A.1.f.i)."
+      "rationaleAI": "Anatomy connects to Renaissance anatomy (A.1.f.i) and medical sciences (B.3)."
     },
     {
       "vsiTitle": "Human Physiology",
@@ -135,7 +144,7 @@
         "A.2.b",
         "B.3"
       ],
-      "rationaleAI": "Physiology relates to advances in physiology (A.2.b) and medical physiology (B.3)."
+      "rationaleAI": "Physiology connects to 19th-century advances (A.2.b) and medical physiology (B.3)."
     },
     {
       "vsiTitle": "Hormones",
@@ -144,7 +153,7 @@
         "A.3.c",
         "B.2.e"
       ],
-      "rationaleAI": "Endocrinology relates to endocrinology developments (A.3.c) and endocrinology specialty (B.2.e)."
+      "rationaleAI": "Endocrinology connects to developments (A.3.c) and specialty (B.2.e)."
     },
     {
       "vsiTitle": "Nutrition",
@@ -153,7 +162,7 @@
         "A.3.d.i",
         "B.3"
       ],
-      "rationaleAI": "Nutrition addresses deficiency diseases (A.3.d.i) and nutrition specialty (B.3)."
+      "rationaleAI": "Nutrition connects to vitamin discovery (A.3.d.i) and specialty (B.3)."
     },
     {
       "vsiTitle": "Public health",
@@ -161,7 +170,7 @@
       "relevantPathsAI": [
         "B.2.d"
       ],
-      "rationaleAI": "Public health addresses public health specialty (B.2.d)."
+      "rationaleAI": "Public health directly addresses the specialty (B.2.d)."
     },
     {
       "vsiTitle": "Psychiatry",
@@ -169,7 +178,7 @@
       "relevantPathsAI": [
         "B.1.g"
       ],
-      "rationaleAI": "Psychiatry addresses psychiatry specialty (B.1.g)."
+      "rationaleAI": "Psychiatry directly addresses the specialty (B.1.g)."
     },
     {
       "vsiTitle": "Clinical Psychology",
@@ -177,7 +186,7 @@
       "relevantPathsAI": [
         "B.1.g"
       ],
-      "rationaleAI": "Clinical psychology relates to psychiatry specialty (B.1.g)."
+      "rationaleAI": "Clinical psychology connects to psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Psychotherapy",
@@ -185,7 +194,7 @@
       "relevantPathsAI": [
         "B.1.g"
       ],
-      "rationaleAI": "Psychotherapy relates to psychiatry specialty (B.1.g)."
+      "rationaleAI": "Psychotherapy connects to psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Cognitive Behavioural Therapy",
@@ -193,15 +202,16 @@
       "relevantPathsAI": [
         "B.1.g"
       ],
-      "rationaleAI": "CBT relates to psychiatry specialty (B.1.g)."
+      "rationaleAI": "CBT connects to psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Schizophrenia",
       "vsiAuthor": "Chris Frith, Eve C. Johnstone",
       "relevantPathsAI": [
+        "B.1.f",
         "B.1.g"
       ],
-      "rationaleAI": "Schizophrenia relates to psychiatry (B.1.g)."
+      "rationaleAI": "Schizophrenia connects to neurology (B.1.f) and psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Depression",
@@ -209,7 +219,7 @@
       "relevantPathsAI": [
         "B.1.g"
       ],
-      "rationaleAI": "Depression and bipolar disorder relate to psychiatry (B.1.g)."
+      "rationaleAI": "Depression connects to psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Anxiety",
@@ -217,7 +227,7 @@
       "relevantPathsAI": [
         "B.1.g"
       ],
-      "rationaleAI": "Anxiety disorders relate to psychiatry (B.1.g)."
+      "rationaleAI": "Anxiety connects to psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Autism",
@@ -226,16 +236,16 @@
         "B.1.f",
         "B.1.g"
       ],
-      "rationaleAI": "Autism relates to neurology (B.1.f) and psychiatry (B.1.g)."
+      "rationaleAI": "Autism connects to neurology (B.1.f) and psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Addiction",
       "vsiAuthor": "Keith Humphreys",
       "relevantPathsAI": [
         "B.1.g",
-        "B.2.d"
+        "B.2.g"
       ],
-      "rationaleAI": "Addiction relates to psychiatry (B.1.g) and public health (B.2.d)."
+      "rationaleAI": "Addiction connects to psychiatry (B.1.g) and toxicology (B.2.g)."
     },
     {
       "vsiTitle": "Psychopathy",
@@ -243,16 +253,15 @@
       "relevantPathsAI": [
         "B.1.g"
       ],
-      "rationaleAI": "Psychopathy relates to psychiatry (B.1.g)."
+      "rationaleAI": "Psychopathy connects to psychiatry (B.1.g)."
     },
     {
       "vsiTitle": "Dementia",
       "vsiAuthor": "Kathleen Taylor",
       "relevantPathsAI": [
-        "B.1.f",
-        "B.3"
+        "B.1.f"
       ],
-      "rationaleAI": "Dementia relates to neurology (B.1.f) and gerontology (B.3)."
+      "rationaleAI": "Neurodegenerative conditions connect to neurology (B.1.f)."
     },
     {
       "vsiTitle": "Dyslexia",
@@ -260,7 +269,7 @@
       "relevantPathsAI": [
         "B.1.f"
       ],
-      "rationaleAI": "Dyslexia relates to neurology (B.1.f)."
+      "rationaleAI": "Dyslexia connects to neurology (B.1.f)."
     },
     {
       "vsiTitle": "The Brain",
@@ -268,25 +277,24 @@
       "relevantPathsAI": [
         "B.1.f"
       ],
-      "rationaleAI": "The brain addresses neurology (B.1.f)."
+      "rationaleAI": "Brain neuroanatomy connects to neurology (B.1.f)."
     },
     {
       "vsiTitle": "Sleep",
       "vsiAuthor": "Steven W. Lockley, Russell G. Foster",
       "relevantPathsAI": [
-        "B.1.f",
-        "B.3"
+        "B.1.f"
       ],
-      "rationaleAI": "Sleep biology relates to neurology (B.1.f) and medical physiology (B.3)."
+      "rationaleAI": "Sleep disorders connect to neurology (B.1.f)."
     },
     {
       "vsiTitle": "Pain",
       "vsiAuthor": "Rob Boddice",
       "relevantPathsAI": [
-        "A.3.a",
+        "B.1.f",
         "B.1.h"
       ],
-      "rationaleAI": "Pain management relates to chemotherapy advances (A.3.a) and anesthesiology (B.1.h)."
+      "rationaleAI": "Pain connects to neurology (B.1.f) and anesthesiology (B.1.h)."
     },
     {
       "vsiTitle": "Ageing",
@@ -294,7 +302,7 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Aging addresses gerontology (B.3)."
+      "rationaleAI": "Gerontology connects to the specialty (B.3)."
     },
     {
       "vsiTitle": "The Cell",
@@ -302,16 +310,15 @@
       "relevantPathsAI": [
         "A.2.a"
       ],
-      "rationaleAI": "Cell biology relates to cellular pathology as a 19th-century doctrine (A.2.a)."
+      "rationaleAI": "Cellular biology connects to cell and cellular pathology doctrine (A.2.a)."
     },
     {
       "vsiTitle": "Blood",
       "vsiAuthor": "Christopher Cooper",
       "relevantPathsAI": [
-        "A.4.d",
-        "B.1.h"
+        "A.4.d"
       ],
-      "rationaleAI": "Blood biology relates to blood transfusions (A.4.d) and pathology (B.1.h)."
+      "rationaleAI": "Blood transfusion connects to surgical transfusions (A.4.d)."
     },
     {
       "vsiTitle": "Teeth",
@@ -319,7 +326,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Dental health relates to dentistry (C.1)."
+      "rationaleAI": "Dental anatomy connects to dentistry (C.1)."
     },
     {
       "vsiTitle": "Medical ethics",
@@ -327,7 +334,7 @@
       "relevantPathsAI": [
         "B.2.b"
       ],
-      "rationaleAI": "Medical ethics relates to medical jurisprudence (B.2.b)."
+      "rationaleAI": "Medical ethics connects to medical jurisprudence (B.2.b)."
     },
     {
       "vsiTitle": "Medical law",
@@ -335,7 +342,7 @@
       "relevantPathsAI": [
         "B.2.b"
       ],
-      "rationaleAI": "Medical law relates to medical jurisprudence (B.2.b)."
+      "rationaleAI": "Medical law connects to medical jurisprudence (B.2.b)."
     },
     {
       "vsiTitle": "Forensic science",
@@ -343,35 +350,33 @@
       "relevantPathsAI": [
         "B.2.b"
       ],
-      "rationaleAI": "Forensic science relates to medical jurisprudence (B.2.b)."
+      "rationaleAI": "Forensic science connects to medical jurisprudence (B.2.b)."
     },
     {
       "vsiTitle": "Veterinary Science",
       "vsiAuthor": "James Yeates",
       "relevantPathsAI": [
-        "B.2.d"
+        "A.2.c"
       ],
-      "rationaleAI": "Veterinary medicine relates to public health (B.2.d)."
+      "rationaleAI": "Veterinary science through Pasteur connects to bacteriology (A.2.c)."
     },
     {
       "vsiTitle": "Microscopy",
       "vsiAuthor": "Terence Allen",
       "relevantPathsAI": [
         "A.1.g.i",
-        "A.3.d.iv",
-        "B.4"
+        "A.3.d.iv"
       ],
-      "rationaleAI": "Microscopy relates to microscope importance in medicine (A.1.g.i), medical technology (A.3.d.iv), and ancillary disciplines (B.4)."
+      "rationaleAI": "Microscopy connects to microscope importance (A.1.g.i) and instrumentation (A.3.d.iv)."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
       "relevantPathsAI": [
         "A.2.e",
-        "A.3.d.iv",
         "B.1.a"
       ],
-      "rationaleAI": "Radioactivity's biomedical applications relate to X-ray discovery (A.2.e), medical technology (A.3.d.iv), and radiology (B.1.a)."
+      "rationaleAI": "Radioactivity connects to X-ray discovery (A.2.e) and radiology (B.1.a)."
     },
     {
       "vsiTitle": "Circadian Rhythms",
@@ -379,7 +384,7 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Circadian disruption health consequences relate to medical physiology (B.3)."
+      "rationaleAI": "Chronobiology connects to medical physiology (B.3)."
     },
     {
       "vsiTitle": "Molecules",
@@ -387,16 +392,16 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Molecular science relating to pharmacology connects to nonclinical specialties (B.3)."
+      "rationaleAI": "Molecular science connects to basic medical sciences (B.3)."
     },
     {
       "vsiTitle": "Ancient Greek and Roman Science",
       "vsiAuthor": "Liba Taub",
       "relevantPathsAI": [
         "A.1.d",
-        "A.1.d.ii"
+        "A.1.d.i"
       ],
-      "rationaleAI": "Covers scientific and medical practices in ancient Greece and Rome including inquiry into human health, directly addressing systematic medicine in the Greco-Roman world and the work of Hippocrates."
+      "rationaleAI": "Ancient science connects to Greco-Roman medicine (A.1.d) and early influences (A.1.d.i)."
     },
     {
       "vsiTitle": "The History of Chemistry",
@@ -404,25 +409,25 @@
       "relevantPathsAI": [
         "A.3.a"
       ],
-      "rationaleAI": "Covers chemical synthesis and the rise of organic chemistry, relevant to advances in chemotherapy and the discovery of antibiotics and synthetic drugs in treating bacterial diseases."
+      "rationaleAI": "Chemical synthesis connects to chemotherapy advances (A.3.a)."
     },
     {
       "vsiTitle": "Stem Cells",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
-        "A.4.b",
-        "B.3"
+        "A.4.b"
       ],
-      "rationaleAI": "Covers stem cell therapeutic potential for treating diseases including diabetes and Parkinson's, relevant to the emergence of surgical specialties and nonclinical medical sciences."
+      "rationaleAI": "Stem cell therapeutics connect to surgical specialties (A.4.b)."
     },
     {
       "vsiTitle": "The Scientific Revolution",
       "vsiAuthor": "Lawrence M. Principe",
       "relevantPathsAI": [
         "A.1.f",
-        "A.1.g"
+        "A.1.g",
+        "A.1.g.i"
       ],
-      "rationaleAI": "Covers Vesalius and Harvey alongside emergence of new investigative methods, directly relevant to Renaissance medicine and 17th-century discoveries including circulation of the blood."
+      "rationaleAI": "Scientific Revolution connects to Renaissance medicine (A.1.f) and circulation discovery (A.1.g, A.1.g.i)."
     },
     {
       "vsiTitle": "Molecular Biology",
@@ -431,7 +436,7 @@
         "A.2.a",
         "B.3"
       ],
-      "rationaleAI": "Covers DNA structure discovery, gene expression, and pharmaceutical applications, relevant to new doctrines including cellular pathology and nonclinical medical specialties."
+      "rationaleAI": "DNA and heredity connect to Mendelian laws (A.2.a) and medical sciences (B.3)."
     },
     {
       "vsiTitle": "Evolution",
@@ -439,7 +444,7 @@
       "relevantPathsAI": [
         "A.2.a"
       ],
-      "rationaleAI": "Covers natural selection and practical implications such as antibiotic resistance, directly relevant to new 19th-century doctrines including natural selection that shaped scientific medicine."
+      "rationaleAI": "Evolution connects to natural selection doctrine (A.2.a)."
     }
   ],
   "_curatedBy": "ai",

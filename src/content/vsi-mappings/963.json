@@ -11,16 +11,25 @@
         "A.1.b.ii",
         "A.1.b.iii"
       ],
-      "rationaleAI": "Directly addresses the Revolution from the Third Estate through the Terror and Directory."
+      "rationaleAI": "Directly covers the French Revolution (A.1.b) including the Third Estate revolt and Jacobins (A.1.b.i), the First Republic with Danton, Robespierre, and the Terror (A.1.b.ii), and the Directory and rise of Napoleon (A.1.b.iii)."
     },
     {
       "vsiTitle": "The Napoleonic Wars",
       "vsiAuthor": "Mike Rapport",
       "relevantPathsAI": [
         "A.1.c",
-        "A.1.d"
+        "A.1.c.i",
+        "A.1.c.ii",
+        "A.1.c.iii",
+        "A.1.c.iv",
+        "A.1.c.v",
+        "A.1.d",
+        "A.1.i",
+        "A.1.j.i",
+        "A.1.l",
+        "B.2.a"
       ],
-      "rationaleAI": "Addresses international war in the Revolutionary era (A.1.c) and effects of French occupation (A.1.d)."
+      "rationaleAI": "Covers the War of the First Coalition (A.1.c.i), Second Coalition campaigns (A.1.c.ii), Third Coalition battles (A.1.c.iii), the Peninsular War and Russian defeat (A.1.c.iv), Waterloo and Congress of Vienna (A.1.c.v), French occupation effects (A.1.d), Confederation of the Rhine (A.1.i), Spain's war of independence (A.1.j.i), Italy during the Revolution (A.1.l), and connections to the 1848 revolutions (B.2.a)."
     },
     {
       "vsiTitle": "Napoleon",
@@ -28,17 +37,22 @@
       "relevantPathsAI": [
         "A.1.b.iii",
         "A.1.b.iv",
-        "A.1.c"
+        "A.1.c",
+        "A.1.c.v"
       ],
-      "rationaleAI": "Napoleon's rise addresses the Directory (A.1.b.iii), Empire (A.1.b.iv), and wars (A.1.c)."
+      "rationaleAI": "Napoleon's rise from first consul to emperor (A.1.b.iii), France under the Napoleonic Empire (A.1.b.iv), international wars reshaping European boundaries (A.1.c), and collapse and exile at Waterloo (A.1.c.v)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "A.2.a"
+        "A.2.a",
+        "A.2.a.i",
+        "A.2.a.ii",
+        "A.2.a.iii",
+        "B.1.d"
       ],
-      "rationaleAI": "Industrialization addresses the Industrial Revolution (A.2.a)."
+      "rationaleAI": "Covers British commercial growth, factory system, textiles, and railroads (A.2.a.i), spread to Belgium, France, and Germany (A.2.a.ii), social consequences including capitalist-worker division (A.2.a.iii), and industrialization 1870-1914 (B.1.d)."
     },
     {
       "vsiTitle": "The First World War",
@@ -46,9 +60,13 @@
       "relevantPathsAI": [
         "B.2.d",
         "B.2.d.i",
+        "B.2.d.ii",
+        "B.2.d.iii",
+        "B.2.d.iv",
+        "B.2.d.v",
         "B.2.d.vi"
       ],
-      "rationaleAI": "WWI addresses the war and peace settlement (B.2.d)."
+      "rationaleAI": "Covers the Serbian crisis and trench warfare (B.2.d.i), entrance of other nations (B.2.d.ii), submarine warfare, U.S. entry, and Russian collapse (B.2.d.iii), total war (B.2.d.iv), strategic plans (B.2.d.v), and the Paris Peace Conference (B.2.d.vi)."
     },
     {
       "vsiTitle": "The Treaty of Versailles",
@@ -56,15 +74,16 @@
       "relevantPathsAI": [
         "B.2.d.vi"
       ],
-      "rationaleAI": "The Treaty addresses the Paris Peace Conference (B.2.d.vi)."
+      "rationaleAI": "Directly covers the Paris Peace Conference, Wilson's influence, German reparations, and the League of Nations (B.2.d.vi)."
     },
     {
       "vsiTitle": "The Russian Revolution",
       "vsiAuthor": "S. A. Smith",
       "relevantPathsAI": [
+        "B.2.d.iii",
         "B.3.e.iv"
       ],
-      "rationaleAI": "The Revolution addresses the abolition of the monarchy (B.3.e.iv)."
+      "rationaleAI": "The 1917 Russian Revolution connects to the Russian exit from WWI (B.2.d.iii) and abolition of the monarchy (B.3.e.iv)."
     },
     {
       "vsiTitle": "Russian History",
@@ -72,9 +91,15 @@
       "relevantPathsAI": [
         "A.1.f",
         "A.2.o",
-        "B.3.e"
+        "A.2.o.i",
+        "A.2.o.ii",
+        "B.3.e",
+        "B.3.e.i",
+        "B.3.e.ii",
+        "B.3.e.iii",
+        "B.3.e.iv"
       ],
-      "rationaleAI": "Russian history connects across the period from Alexander I to 1917."
+      "rationaleAI": "Covers Russia under Alexander I and Napoleonic Wars (A.1.f), later conservatism and the Decembrist revolt (A.2.o), bureaucratic rule (A.2.o.i), foreign policy with Poland and Turkey (A.2.o.ii), Crimean War and abolition of serfdom (B.3.e.i), Alexander III and Nicholas II (B.3.e.ii), economic and cultural developments (B.3.e.iii), and the 1917 abolition of monarchy (B.3.e.iv)."
     },
     {
       "vsiTitle": "The Habsburg Empire",
@@ -82,35 +107,45 @@
       "relevantPathsAI": [
         "A.1.h",
         "A.2.l",
-        "B.3.d"
+        "A.2.l.i",
+        "A.2.l.ii",
+        "A.2.l.iii",
+        "B.3.d",
+        "B.3.d.i",
+        "B.3.d.ii",
+        "B.3.d.iii",
+        "B.3.d.iv"
       ],
-      "rationaleAI": "Habsburg territories connect across the Napoleonic period through dissolution in 1918."
+      "rationaleAI": "Covers Austria in coalitions against Napoleon (A.1.h), national consciousness among Habsburg peoples (A.2.l.i), Metternich's hostility to liberalism (A.2.l.ii), 1848-49 revolutions (A.2.l.iii), the Ausgleich and Dual Monarchy (B.3.d.i), Austria's liberal ascendancy (B.3.d.ii), Hungary under the Compromise (B.3.d.iii), and 1918 dissolution (B.3.d.iv)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
       "relevantPathsAI": [
         "A.2.b",
+        "A.2.l.i",
         "B.2.a"
       ],
-      "rationaleAI": "Nationalism connects to the French Revolution legacy (A.2.b) and German/Italian unification (B.2.a)."
+      "rationaleAI": "National self-determination connects to cultural nationalism legacy of the French Revolution (A.2.b), national consciousness among Habsburg peoples (A.2.l.i), and Italian and German unification (B.2.a)."
     },
     {
       "vsiTitle": "Marx",
       "vsiAuthor": "Peter Singer",
       "relevantPathsAI": [
+        "A.2.a",
+        "A.2.e",
         "B.1.a"
       ],
-      "rationaleAI": "Marx connects to Determinism and Materialism in 19th-century thought (B.1.a)."
+      "rationaleAI": "Marx's philosophy connects to social consequences of the Industrial Revolution (A.2.a), German Idealism and its disciples (A.2.e), and determinism and materialism (B.1.a)."
     },
     {
       "vsiTitle": "Socialism",
       "vsiAuthor": "Michael Newman",
       "relevantPathsAI": [
-        "A.2.j.iii",
-        "B.1.a"
+        "B.1.a",
+        "B.3.a.iii"
       ],
-      "rationaleAI": "Socialism connects to the Second Republic (A.2.j.iii) and political thought (B.1.a)."
+      "rationaleAI": "Socialism's 19th-century origins connect to political and social thought (B.1.a) and Fabian socialism and the Labour movement in Britain (B.3.a.iii)."
     },
     {
       "vsiTitle": "Communism",
@@ -118,24 +153,27 @@
       "relevantPathsAI": [
         "B.3.e.iv"
       ],
-      "rationaleAI": "Communism connects to the Russian Revolution (B.3.e.iv)."
+      "rationaleAI": "Communist ideology through the Russian Revolution connects to the 1917 abolition of the monarchy (B.3.e.iv)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
       "relevantPathsAI": [
-        "A.2.i.ii"
+        "A.1.a",
+        "A.2.i"
       ],
-      "rationaleAI": "Democracy connects to British reform (A.2.i.ii)."
+      "rationaleAI": "Democratic theory connects to patriotism in America and the Netherlands (A.1.a) and British political reform measures (A.2.i)."
     },
     {
       "vsiTitle": "Revolutions",
       "vsiAuthor": "Jack A. Goldstone",
       "relevantPathsAI": [
         "A.1",
-        "A.2.h.ii"
+        "A.2.h.ii",
+        "A.2.k.ii",
+        "A.2.m.iv"
       ],
-      "rationaleAI": "Revolutions connect to the French Revolution (A.1) and 1848 revolutions (A.2.h.ii)."
+      "rationaleAI": "Comparative revolutionary theory covers the French Revolution (A.1), European revolutions of 1848 (A.2.h.ii), the Frankfurt Assembly's failure (A.2.k.ii), and Italian revolutions of 1848 (A.2.m.iv)."
     },
     {
       "vsiTitle": "Empire",
@@ -143,33 +181,43 @@
       "relevantPathsAI": [
         "B.2.c"
       ],
-      "rationaleAI": "Imperialism connects to the resurgence c. 1875-1914 (B.2.c)."
+      "rationaleAI": "European imperialism's resurgence (B.2.c) including new colonial powers and the scramble for Africa."
     },
     {
       "vsiTitle": "Nineteenth-Century Britain",
       "vsiAuthor": "Christopher Harvie, H. C. G. Matthew",
       "relevantPathsAI": [
+        "A.1.e",
+        "A.1.e.i",
         "A.2.i",
-        "B.3.a"
+        "A.2.ii",
+        "B.3.a",
+        "B.3.a.i",
+        "B.3.a.ii",
+        "B.3.a.iii",
+        "B.3.a.iv",
+        "B.3.a.v"
       ],
-      "rationaleAI": "19th-century Britain addresses 1815-1850 (A.2.i) and 1850-1920 (B.3.a)."
+      "rationaleAI": "Covers Britain 1789-1815 including English radicalism (A.1.e.i), reform measures including the Reform Bill and Corn Laws (A.2.i, A.2.ii), mid-Victorian politics (B.3.a.i), Victorian society (B.3.a.ii), Gladstone and the Irish Question (B.3.a.iii), Lloyd George's reforms (B.3.a.iv), and WWI participation (B.3.a.v)."
     },
     {
       "vsiTitle": "Modern France",
       "vsiAuthor": "Vanessa R. Schwartz",
       "relevantPathsAI": [
-        "A.2.j",
-        "B.3.b"
+        "B.3.b",
+        "B.3.b.ii"
       ],
-      "rationaleAI": "French history connects to France 1814-1852 (A.2.j) and 1852-1920 (B.3.b)."
+      "rationaleAI": "Covers the Franco-Prussian War, Dreyfus Affair, and Third Republic (B.3.b.ii), and broader French history (B.3.b)."
     },
     {
       "vsiTitle": "Modern Italy",
       "vsiAuthor": "Anna Cento Bull",
       "relevantPathsAI": [
-        "B.3.f"
+        "B.3.f",
+        "B.3.f.i",
+        "B.3.f.ii"
       ],
-      "rationaleAI": "Italian unification addresses Italy 1850-1920 (B.3.f)."
+      "rationaleAI": "Covers Risorgimento and 1861 unification (B.3.f.i), the Kingdom of Italy with socialism and labor movements (B.3.f.ii)."
     },
     {
       "vsiTitle": "Romanticism",
@@ -177,23 +225,25 @@
       "relevantPathsAI": [
         "A.2.c"
       ],
-      "rationaleAI": "The Romantic movement addresses A.2.c."
+      "rationaleAI": "The Romantic movement emphasizing individualism and nature in contrast with the Enlightenment (A.2.c)."
     },
     {
       "vsiTitle": "Liberalism",
       "vsiAuthor": "Michael Freeden",
       "relevantPathsAI": [
-        "A.2.i.ii"
+        "A.2.i",
+        "B.3.a.iii"
       ],
-      "rationaleAI": "Liberalism connects to British reform (A.2.i.ii)."
+      "rationaleAI": "Liberal political theory connects to British reform measures (A.2.i) and Gladstone's liberalism (B.3.a.iii)."
     },
     {
       "vsiTitle": "Clausewitz",
       "vsiAuthor": "Michael Howard",
       "relevantPathsAI": [
-        "A.1.c"
+        "A.1.c",
+        "A.1.g.ii"
       ],
-      "rationaleAI": "Clausewitz connects to Napoleonic warfare (A.1.c)."
+      "rationaleAI": "Clausewitz's military theory from the Napoleonic Wars connects to international war (A.1.c) and Prussian leadership in wars of liberation (A.1.g.ii)."
     },
     {
       "vsiTitle": "Hegel",
@@ -201,7 +251,7 @@
       "relevantPathsAI": [
         "A.2.e"
       ],
-      "rationaleAI": "Hegel connects to German Idealism (A.2.e)."
+      "rationaleAI": "Hegel's dialectical philosophy directly addresses the role of Kant's disciples including Hegel in German Idealism (A.2.e)."
     },
     {
       "vsiTitle": "Schopenhauer",
@@ -209,7 +259,7 @@
       "relevantPathsAI": [
         "A.2.e"
       ],
-      "rationaleAI": "Schopenhauer connects to German Idealism (A.2.e)."
+      "rationaleAI": "Schopenhauer's metaphysical system building on Kant addresses Kant's disciples in 19th-century philosophy (A.2.e)."
     },
     {
       "vsiTitle": "Kant",
@@ -217,15 +267,16 @@
       "relevantPathsAI": [
         "A.2.e"
       ],
-      "rationaleAI": "Kant connects to German Idealism (A.2.e)."
+      "rationaleAI": "Kant's critical philosophy directly addresses the foundational role of Immanuel Kant in German Idealism (A.2.e)."
     },
     {
       "vsiTitle": "Darwin",
       "vsiAuthor": "Jonathan Howard",
       "relevantPathsAI": [
-        "A.2.d"
+        "A.2.d",
+        "B.1.c"
       ],
-      "rationaleAI": "Darwin connects to the principle of evolution (A.2.d)."
+      "rationaleAI": "Darwin's theory connects to scientific developments and the principle of evolution (A.2.d) and scientific theory including new views of the universe (B.1.c)."
     },
     {
       "vsiTitle": "Relativity",
@@ -233,25 +284,26 @@
       "relevantPathsAI": [
         "B.1.c"
       ],
-      "rationaleAI": "Einsteinian relativity addresses B.1.c."
+      "rationaleAI": "Einstein's relativity directly addresses Einsteinian relativity in scientific theory (B.1.c)."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
-        "A.1.c",
-        "B.2"
+        "A.1.c.v",
+        "B.2",
+        "B.2.d.vi"
       ],
-      "rationaleAI": "Diplomacy connects to Revolutionary-era war (A.1.c) and 1850-1920 (B.2)."
+      "rationaleAI": "Diplomatic history covers the Congress of Vienna (A.1.c.v), Realpolitik and diplomatic realignments (B.2), and WWI aftermath including Versailles (B.2.d.vi)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
-        "A.2.a.iii",
+        "A.2.a",
         "B.1.d"
       ],
-      "rationaleAI": "Capitalism connects to industrial social consequences (A.2.a.iii) and industrialization (B.1.d)."
+      "rationaleAI": "Capitalism from industrialization connects to the Industrial Revolution (A.2.a) and industrialization 1870-1914 (B.1.d)."
     },
     {
       "vsiTitle": "Global Economic History",
@@ -260,7 +312,7 @@
         "A.2.a",
         "B.1.d"
       ],
-      "rationaleAI": "Economic development connects to the Industrial Revolution (A.2.a) and changing economic power (B.1.d)."
+      "rationaleAI": "Comparative economic development connects to the Industrial Revolution (A.2.a) and changing balance of economic power (B.1.d)."
     },
     {
       "vsiTitle": "Modern War",
@@ -268,7 +320,7 @@
       "relevantPathsAI": [
         "B.2.d"
       ],
-      "rationaleAI": "Modern warfare connects to WWI (B.2.d)."
+      "rationaleAI": "Modern warfare connects to World War I (B.2.d) including military technology and strategy."
     },
     {
       "vsiTitle": "Military Strategy",
@@ -277,7 +329,7 @@
         "A.1.c",
         "B.2.d.v"
       ],
-      "rationaleAI": "Strategy connects to Napoleonic warfare (A.1.c) and WWI (B.2.d.v)."
+      "rationaleAI": "Military strategy including Napoleon at Austerlitz connects to international war (A.1.c) and WWI strategic plans (B.2.d.v)."
     },
     {
       "vsiTitle": "Aerial Warfare",
@@ -285,64 +337,70 @@
       "relevantPathsAI": [
         "B.2.d.i"
       ],
-      "rationaleAI": "Air power connects to WWI military technology (B.2.d.i)."
+      "rationaleAI": "Air power development connects to new military technology in WWI including air power (B.2.d.i)."
     },
     {
       "vsiTitle": "The Welfare State",
       "vsiAuthor": "David Garland",
       "relevantPathsAI": [
-        "B.3.c.iii"
+        "B.3.a.iv"
       ],
-      "rationaleAI": "Social welfare connects to Bismarck's social legislation (B.3.c.iii)."
+      "rationaleAI": "Welfare state development connects to Lloyd George's National Insurance Act (1911) (B.3.a.iv)."
     },
     {
       "vsiTitle": "Aristocracy",
       "vsiAuthor": "William Doyle",
       "relevantPathsAI": [
-        "A.1.b"
+        "A.1.b.i"
       ],
-      "rationaleAI": "Aristocratic decline connects to the French Revolution's effects (A.1.b)."
+      "rationaleAI": "Aristocratic power and decline connects to the Third Estate revolt and abolition of the ancien regime (A.1.b.i)."
     },
     {
       "vsiTitle": "Northern Ireland",
       "vsiAuthor": "Marc Mulholland",
       "relevantPathsAI": [
+        "A.1.e.ii",
         "B.3.a.iii"
       ],
-      "rationaleAI": "Irish politics connects to Fenianism and Home Rule (B.3.a.iii)."
+      "rationaleAI": "Northern Ireland covers the Irish Rebellion of 1798 and union with Britain (A.1.e.ii) and the Irish Question, Fenianism, and Home Rule (B.3.a.iii)."
     },
     {
       "vsiTitle": "Modern Ireland",
       "vsiAuthor": "Senia Paseta",
       "relevantPathsAI": [
-        "A.2.i.iii",
+        "A.1.e.ii",
+        "A.2.iii",
+        "B.3.a.iii",
         "B.3.a.v"
       ],
-      "rationaleAI": "Irish struggles connect to the Great Famine (A.2.i.iii) and Easter Rising (B.3.a.v)."
+      "rationaleAI": "Covers the Act of Union and Irish Rebellion context (A.1.e.ii), Great Famine and O'Connell (A.2.iii), Parnell and Home Rule (B.3.a.iii), and the Easter Rising (B.3.a.v)."
     },
     {
       "vsiTitle": "Tocqueville",
       "vsiAuthor": "Harvey Mansfield",
       "relevantPathsAI": [
+        "A.1.a",
         "A.2.j.ii"
       ],
-      "rationaleAI": "Tocqueville connects to the July monarchy (A.2.j.ii)."
+      "rationaleAI": "Tocqueville connects to patriotism in America (A.1.a) and comparative analysis of American democracy and French political developments (A.2.j.ii)."
     },
     {
       "vsiTitle": "Engels",
       "vsiAuthor": "Terrell Carver",
       "relevantPathsAI": [
+        "A.2.e",
         "B.1.a"
       ],
-      "rationaleAI": "Engels connects to Determinism and Materialism (B.1.a)."
+      "rationaleAI": "Engels's historical materialism connects to German Idealism (A.2.e) and determinism and materialism (B.1.a)."
     },
     {
       "vsiTitle": "The Victorians",
       "vsiAuthor": "Martin Hewitt",
       "relevantPathsAI": [
-        "B.3.a"
+        "B.3.a.i",
+        "B.3.a.ii"
       ],
-      "rationaleAI": "Victorian Britain connects to Great Britain 1850-1920 (B.3.a)."
+      "rationaleAI": "Victorian Britain covers mid-Victorian politics and economics (B.3.a.i) and Victorian social attitudes (B.3.a.ii)."
     },
     {
       "vsiTitle": "War and Technology",
@@ -350,16 +408,16 @@
       "relevantPathsAI": [
         "B.2.d.i"
       ],
-      "rationaleAI": "Military technology connects to WWI technology (B.2.d.i)."
+      "rationaleAI": "Co-evolution of weapons and tactics connects to new military technology in WWI (B.2.d.i)."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
       "relevantPathsAI": [
         "B.2.c",
-        "B.3.a"
+        "B.3.a.iii"
       ],
-      "rationaleAI": "British imperialism connects to resurgence (B.2.c) and overseas empire (B.3.a)."
+      "rationaleAI": "British Empire connects to European imperialism resurgence (B.2.c) and Disraeli's imperialism (B.3.a.iii)."
     },
     {
       "vsiTitle": "Scotland",
@@ -367,48 +425,51 @@
       "relevantPathsAI": [
         "B.3.a.ii"
       ],
-      "rationaleAI": "Scotland connects to mid-Victorian society (B.3.a.ii)."
+      "rationaleAI": "Scotland's Scottish Enlightenment and British Empire participation connect to mid-Victorian society (B.3.a.ii)."
     },
     {
       "vsiTitle": "Decolonization",
       "vsiAuthor": "Dane Kennedy",
       "relevantPathsAI": [
-        "B.2.d.iv"
+        "B.2.c"
       ],
-      "rationaleAI": "Dissolution of empires connects to WWI (B.2.d.iv)."
+      "rationaleAI": "Decolonization theory connects to European imperialism resurgence (B.2.c) as the precondition for later independence."
     },
     {
       "vsiTitle": "Fascism",
       "vsiAuthor": "Kevin Passmore",
       "relevantPathsAI": [
-        "B.1.a"
+        "B.3.c.v",
+        "B.3.f.ii"
       ],
-      "rationaleAI": "Fascism's origins connect to late 19th-century thought (B.1.a)."
+      "rationaleAI": "Fascism's origins connect to the German Republic after WWI (B.3.c.v) and militant nationalism in Italy (B.3.f.ii)."
     },
     {
       "vsiTitle": "Zionism",
       "vsiAuthor": "Michael Stanislawski",
       "relevantPathsAI": [
-        "B.3.e.ii"
+        "B.2.c"
       ],
-      "rationaleAI": "Zionism connects to Russian anti-minority hostility (B.3.e.ii)."
+      "rationaleAI": "Jewish nationalism from the 1870s connects to European imperialism resurgence (B.2.c)."
     },
     {
       "vsiTitle": "The Holy Roman Empire",
       "vsiAuthor": "Joachim Whaley",
       "relevantPathsAI": [
+        "A.1.c.ii",
         "A.1.i"
       ],
-      "rationaleAI": "Covers the Holy Roman Empire through its dissolution in 1806 under Napoleonic pressure including constitutional structures shaping German-speaking Europe, relevant to the smaller German states under French influence."
+      "rationaleAI": "The Holy Roman Empire's 1806 dissolution connects to Napoleon's reorganization of German states (A.1.c.ii) and the Confederation of the Rhine (A.1.i)."
     },
     {
       "vsiTitle": "German literature",
       "vsiAuthor": "Nicholas Boyle",
       "relevantPathsAI": [
         "A.2.c",
-        "B.1.b"
+        "A.2.e",
+        "B.3.c"
       ],
-      "rationaleAI": "Covers German literary and intellectual culture from Sturm und Drang through Weimar Classicism and Romanticism to the Franco-Prussian War era, relevant to the Romantic movement and developments in arts, philosophy, and religion."
+      "rationaleAI": "German literature from Sturm und Drang through Romanticism connects to the Romantic movement (A.2.c) and German Idealism (A.2.e), while the Franco-Prussian War era connects to German unification (B.3.c)."
     }
   ],
   "_curatedBy": "ai",

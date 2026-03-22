@@ -5,11 +5,13 @@
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
+        "A",
+        "B",
         "C.1",
         "C.2",
-        "D.1"
+        "I"
       ],
-      "rationaleAI": "Textile innovations by Hargreaves, Crompton, and Cartwright address the textile industry (C.1), iron and steel production by Darby addresses the steel industry (C.2), and chemical innovations connect to the chemical industry (D.1)."
+      "rationaleAI": "Industrial transformation covers production organization (A), manufacturing (B), textiles (C.1), steel (C.2), and innovation (I)."
     },
     {
       "vsiTitle": "Engineering",
@@ -18,7 +20,7 @@
         "A",
         "I"
       ],
-      "rationaleAI": "Engineering covering infrastructure and manufacturing connects to principles of production organization (A) and industrial research and development (I)."
+      "rationaleAI": "Engineering connects to production organization (A) and industrial research (I)."
     },
     {
       "vsiTitle": "Chemistry",
@@ -26,19 +28,18 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Industrial chemistry applications including fuels, power generation, and materials for clothing directly address the chemical industry (D.1)."
+      "rationaleAI": "Industrial chemistry connects to the chemical industry (D.1)."
     },
     {
       "vsiTitle": "Organic Chemistry",
       "vsiAuthor": "Graham Patrick",
       "relevantPathsAI": [
         "D.1",
-        "D.2",
         "D.4",
         "D.5",
         "D.9"
       ],
-      "rationaleAI": "Carbon compound applications in pharmaceuticals, polymers, petrochemicals, and nanotechnology address the chemical industry (D.1), petroleum industry (D.2), pharmaceuticals industry (D.4), plastics industry (D.5), and man-made fibre industry (D.9)."
+      "rationaleAI": "Carbon compounds connect to chemical (D.1), pharmaceutical (D.4), plastics (D.5), and man-made fibre (D.9) industries."
     },
     {
       "vsiTitle": "Materials",
@@ -47,7 +48,7 @@
         "C.2",
         "D.5"
       ],
-      "rationaleAI": "Materials science covering metals, ceramics, and polymers with fabrication processes connects to the steel industry (C.2) and the plastics industry (D.5)."
+      "rationaleAI": "Materials science covers steel (C.2) and plastics (D.5)."
     },
     {
       "vsiTitle": "Drugs",
@@ -55,23 +56,25 @@
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "Pharmacology covering medicinal advances in treating infections, heart disease, cancer, and mental illness directly addresses the pharmaceuticals industry (D.4)."
+      "rationaleAI": "Pharmacology addresses the pharmaceuticals industry (D.4)."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
       "relevantPathsAI": [
+        "A",
         "I"
       ],
-      "rationaleAI": "Innovation driving economic development through business strategy and technological change directly addresses industrial research and development (I)."
+      "rationaleAI": "Innovation connects to production organization (A) and industrial research (I)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "I"
       ],
-      "rationaleAI": "Global economic development covering technological change and institutional frameworks relates to principles of organization of work and production (A)."
+      "rationaleAI": "Economic development connects to production organization (A) and industrial research (I)."
     },
     {
       "vsiTitle": "Capitalism",
@@ -79,15 +82,16 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Capitalism covering market forces, production, trade, and industrial development relates to principles of organization of work and production (A)."
+      "rationaleAI": "Capitalism connects to production organization (A)."
     },
     {
       "vsiTitle": "Fashion",
       "vsiAuthor": "Rebecca Arnold",
       "relevantPathsAI": [
-        "B.3"
+        "B.3",
+        "C.1"
       ],
-      "rationaleAI": "Fashion industry spanning design, manufacturing, and retail directly addresses the clothing and footwear industry (B.3)."
+      "rationaleAI": "Fashion connects to clothing (B.3) and textiles (C.1)."
     },
     {
       "vsiTitle": "Forests",
@@ -95,15 +99,16 @@
       "relevantPathsAI": [
         "C.8"
       ],
-      "rationaleAI": "Timber production and forestry management connect to the lumber industry (C.8)."
+      "rationaleAI": "Forest ecology connects to the lumber industry (C.8)."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
       "relevantPathsAI": [
+        "D.1",
         "D.4"
       ],
-      "rationaleAI": "Biochemistry covering biomolecules, enzymatic processes, and intersections with biotechnology connects to the pharmaceuticals industry (D.4)."
+      "rationaleAI": "Biotechnology connects to chemical (D.1) and pharmaceutical (D.4) industries."
     },
     {
       "vsiTitle": "Marketing",
@@ -111,7 +116,7 @@
       "relevantPathsAI": [
         "H"
       ],
-      "rationaleAI": "Marketing covering market analysis, customer needs, and competitive advantage relates to merchandising and marketing of consumer goods (H)."
+      "rationaleAI": "Marketing addresses merchandising of consumer goods (H)."
     },
     {
       "vsiTitle": "Environmental economics",
@@ -119,7 +124,7 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Environmental policy including pollution control and carbon taxes affects the chemical industry's regulatory environment (D.1)."
+      "rationaleAI": "Environmental economics connects to chemical industry impact (D.1)."
     },
     {
       "vsiTitle": "Surveillance",
@@ -127,42 +132,41 @@
       "relevantPathsAI": [
         "F.5"
       ],
-      "rationaleAI": "Surveillance systems spanning business, governance, and security connect to security and protection systems (F.5)."
+      "rationaleAI": "Surveillance connects to security systems (F.5)."
     },
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
       "relevantPathsAI": [
+        "D.2",
         "G"
       ],
-      "rationaleAI": "Energy conversion and distribution for cooking, heating, transport, and electricity generation directly addresses the utilities industries (G)."
+      "rationaleAI": "Energy systems connect to petroleum (D.2) and utilities (G)."
     },
     {
       "vsiTitle": "Structural engineering",
       "vsiAuthor": "David Blockley",
       "relevantPathsAI": [
-        "B.1",
         "E"
       ],
-      "rationaleAI": "Covers structural engineering across aerospace, construction, and manufacturing industries including aircraft, ships, and bridges, directly addressing the aerospace industry and construction industries."
+      "rationaleAI": "Structural engineering connects to construction (E)."
     },
     {
       "vsiTitle": "Design",
       "vsiAuthor": "John Heskett",
       "relevantPathsAI": [
-        "B.2",
-        "I"
+        "A"
       ],
-      "rationaleAI": "Covers industrial and product design including companies like Ford, General Motors, and Sony, directly relevant to the automotive industry and industrial research and development."
+      "rationaleAI": "Industrial design connects to production organization (A)."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
       "relevantPathsAI": [
-        "C.6",
-        "I"
+        "B.2",
+        "C.6"
       ],
-      "rationaleAI": "Covers robotics in manufacturing and warehouse automation alongside emerging applications, relevant to the electronics industry and industrial research and development."
+      "rationaleAI": "Manufacturing robotics connects to automotive (B.2) and electronics (C.6)."
     },
     {
       "vsiTitle": "Civil engineering",
@@ -170,7 +174,7 @@
       "relevantPathsAI": [
         "E"
       ],
-      "rationaleAI": "Covers design and construction of bridges, tunnels, buildings, and cathedrals, directly addressing the construction industries."
+      "rationaleAI": "Civil engineering connects to construction (E)."
     },
     {
       "vsiTitle": "Enzymes",
@@ -179,7 +183,7 @@
         "D.1",
         "D.4"
       ],
-      "rationaleAI": "Covers industrial enzyme applications including washing powders, food production, waste treatment, and chemical synthesis, relevant to the chemical and pharmaceuticals industries."
+      "rationaleAI": "Industrial enzymes connect to chemical (D.1) and pharmaceutical (D.4) industries."
     },
     {
       "vsiTitle": "Artificial Intelligence",
@@ -188,7 +192,7 @@
         "C.6",
         "I"
       ],
-      "rationaleAI": "Covers AI applications in everyday life and across industries, relevant to the electronics industry and industrial research and development."
+      "rationaleAI": "AI connects to electronics (C.6) and industrial research (I)."
     }
   ],
   "_curatedBy": "ai",

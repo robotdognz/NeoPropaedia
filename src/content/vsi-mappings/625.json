@@ -5,9 +5,11 @@
       "vsiTitle": "Theatre",
       "vsiAuthor": "Marvin Carlson",
       "relevantPathsAI": [
-        "A.5"
+        "A.5",
+        "B.2",
+        "C.2"
       ],
-      "rationaleAI": "Theatre integrating dance with literature, music, and painting addresses the integration of dance with other arts (A.5)."
+      "rationaleAI": "Theatre integrating dance connects to dance in theatre (A.5), ballet with drama (B.2), and modern dance in theatre (C.2)."
     },
     {
       "vsiTitle": "Ethnomusicology",
@@ -15,15 +17,15 @@
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "Ethnomusicology covering connections between music and dance addresses primitive, folk, and popular dance (D)."
+      "rationaleAI": "Music and dance across diversity connects to folk dance (D)."
     },
     {
       "vsiTitle": "Aesthetics",
       "vsiAuthor": "Bence Nanay",
       "relevantPathsAI": [
-        "A.4"
+        "A.1"
       ],
-      "rationaleAI": "Aesthetics examining art, beauty, and aesthetic experience addresses theoretical and critical writing about dance (A.4)."
+      "rationaleAI": "Aesthetics connects to nature of dance as art (A.1)."
     },
     {
       "vsiTitle": "Ritual",
@@ -32,7 +34,7 @@
         "A.1",
         "D"
       ],
-      "rationaleAI": "Ritual encompassing rites of passage and ceremonies connects to the origins and functions of dance (A.1) and primitive and folk dance (D)."
+      "rationaleAI": "Ritual connects to dance origins (A.1) and folk dance (D)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
@@ -40,7 +42,7 @@
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "Anthropology studying cultural systems through ethnography provides context for primitive, folk, and popular dance (D)."
+      "rationaleAI": "Cultural anthropology connects to folk dance (D)."
     },
     {
       "vsiTitle": "Folk music",
@@ -48,15 +50,16 @@
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "Global folk music traditions including Uzbek dance tunes address primitive, folk, and popular dance (D)."
+      "rationaleAI": "Folk music with dance tunes connects to folk dance (D)."
     },
     {
       "vsiTitle": "Modern Drama",
       "vsiAuthor": "Kirsten E. Shepherd-Barr",
       "relevantPathsAI": [
-        "A.5"
+        "A.5",
+        "C.2"
       ],
-      "rationaleAI": "Modern theatrical drama covering the relationship between performance and innovation addresses the integration of dance with other arts in the theatre (A.5)."
+      "rationaleAI": "Modern drama connects to dance in theatre (A.5) and modern dance in drama (C.2)."
     },
     {
       "vsiTitle": "Music",
@@ -64,7 +67,7 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Music covering performance practice and participatory music-making addresses the integration of dance with other arts (A.5)."
+      "rationaleAI": "Music connects to dance integration (A.5)."
     },
     {
       "vsiTitle": "Film",
@@ -72,15 +75,16 @@
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Cinema as art form addresses the integration of dance with motion pictures (A.5)."
+      "rationaleAI": "Cinema connects to dance in film (A.5)."
     },
     {
       "vsiTitle": "Creativity",
       "vsiAuthor": "Vlad Petre Glăveanu",
       "relevantPathsAI": [
-        "A"
+        "A.1",
+        "A.4"
       ],
-      "rationaleAI": "Creativity covering creative expression across cultures provides foundational context for the art of dance (A)."
+      "rationaleAI": "Creativity connects to dance as art (A.1) and critical writing (A.4)."
     },
     {
       "vsiTitle": "World music",
@@ -88,7 +92,7 @@
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "Covers non-Western and folk musical traditions globally, which directly intersects with primitive, folk, and popular dance traditions, as music and dance are deeply intertwined in folk and indigenous performance contexts."
+      "rationaleAI": "Non-Western traditions connect to folk dance (D)."
     }
   ],
   "_curatedBy": "ai",

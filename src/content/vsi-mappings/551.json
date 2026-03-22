@@ -9,19 +9,21 @@
         "A.1",
         "A.1.a",
         "A.1.b",
-        "A.1.c"
+        "A.1.c",
+        "A.1.d"
       ],
-      "rationaleAI": "Jurisprudence examining the nature, purpose, and legitimacy of legal systems directly addresses Western philosophy of law (A.1). Natural law theory (John Finnis) and the relationship between law and morality address the influence of natural law principles (A.1.c). Competing theories of law including positivism and Dworkin's rights-based theory address various approaches to jurisprudence (A.1.b)."
+      "rationaleAI": "Natural law theory, legal positivism, Dworkin's rights-based theory, and Shapiro's planning theory directly address problems of the philosophy of law (A.1.b). The relationship between law, morality, and justice covers the influence of natural law (A.1.c). Historical survey from foundational theorists addresses the scope of Western philosophy of law (A.1.a) and its historical development (A.1.d)."
     },
     {
       "vsiTitle": "Law",
       "vsiAuthor": "Raymond Wacks",
       "relevantPathsAI": [
-        "A",
         "B.4",
-        "D"
+        "B.4.a",
+        "D",
+        "D.1"
       ],
-      "rationaleAI": "Law as a foundational social institution covering criminal, civil, constitutional, and international law broadly addresses legal philosophies (A) and modern legal systems (B.4). The role of courts, judges, and lawyers addresses the profession and practice of law (D)."
+      "rationaleAI": "Criminal law, civil law, constitutional law, and the role of courts, judges, and lawyers address modern systems of law (B.4) and the profession of law (D, D.1). Institutional focus on democratic governance relates to Anglo-American common law (B.4.a)."
     },
     {
       "vsiTitle": "The Rule of Law",
@@ -32,16 +34,18 @@
         "A.1.c",
         "A.1.d"
       ],
-      "rationaleAI": "The rule of law tradition from Dicey through Hayek, Fuller, and Dworkin addresses approaches to jurisprudence (A.1.b). Due process and legality connect to the relationship between law and morality (A.1.c). Historical survey from classical sources through modern theorization addresses the historical survey of legal theories (A.1.d)."
+      "rationaleAI": "Dicey's theorization and successors including Hayek, Fuller, Dworkin, and Bingham address approaches to jurisprudence (A.1.b). Due process and legality connect to law and morality (A.1.c). Classical and early modern sources address historical survey of legal theories (A.1.d)."
     },
     {
       "vsiTitle": "Comparative Law",
       "vsiAuthor": "Sabrina Ragone and Guido Smorto",
       "relevantPathsAI": [
-        "C",
-        "B.4"
+        "B.4",
+        "B.4.a",
+        "B.4.b",
+        "C"
       ],
-      "rationaleAI": "Comparative law examining the world's legal systems through systematic comparison directly addresses the study of distinctions and parallels among diverse legal systems (C). Coverage of common law, civil law, and other families connects to modern systems of law (B.4)."
+      "rationaleAI": "Systematic comparison of legal systems including common law and civil law addresses Anglo-American common law (B.4.a) and continental civil law (B.4.b). Assessing legal differences across jurisdictions is the study of parallels among diverse legal systems (C)."
     },
     {
       "vsiTitle": "Islamic Law",
@@ -50,7 +54,7 @@
         "A.2",
         "B.4"
       ],
-      "rationaleAI": "Islamic jurisprudence as one of the world's major legal systems directly addresses non-Western philosophies of law (A.2). Its evolution from classical foundations to modern applications across multiple regions addresses modern systems of law (B.4)."
+      "rationaleAI": "Islamic jurisprudence as a major legal system directly addresses non-Western philosophies of law, specifically Islamic philosophy (A.2). Application across the Middle East, Asia, and Africa addresses modern systems of law (B.4)."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
@@ -58,24 +62,27 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Philosophy in Islamic lands covering ethics, political philosophy, and relationships between reason and religious belief provides intellectual context for non-Western philosophies of law (A.2)."
+      "rationaleAI": "Philosophy in Islamic lands covering reason, religious belief, ethics, and political philosophy provides intellectual context for Islamic legal philosophy (A.2)."
     },
     {
       "vsiTitle": "Confucianism",
       "vsiAuthor": "Daniel K. Gardner",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "B.2.c"
       ],
-      "rationaleAI": "Confucian philosophical tradition covering moral cultivation, good governance, state ideology, and civil service examinations addresses Chinese non-Western philosophies of law (A.2) through its governance framework."
+      "rationaleAI": "Confucian influence on state ideology and governance provides foundations for Chinese philosophy of law (A.2). Impact on governance and social order in Chinese civilization connects to Chinese law (B.2.c)."
     },
     {
       "vsiTitle": "American Legal History",
       "vsiAuthor": "G. Edward White",
       "relevantPathsAI": [
+        "B.4",
         "B.4.a",
-        "D"
+        "D",
+        "D.1"
       ],
-      "rationaleAI": "Evolution of American law from colonial times covering common law traditions directly addresses Anglo-American common law (B.4.a). Constitutional development, court systems, and legal education address the profession and practice of law (D)."
+      "rationaleAI": "Evolution of American law covering common law traditions and constitutional development addresses Anglo-American common law (B.4.a). Court systems and legal education connect to the profession of law (D.1)."
     },
     {
       "vsiTitle": "Ancient Egypt",
@@ -83,7 +90,7 @@
       "relevantPathsAI": [
         "B.2.a"
       ],
-      "rationaleAI": "Ancient Egypt covering pharaonic civilization, kingship, ethics, customs, and writing systems provides context for Egyptian law as an ancient system (B.2.a)."
+      "rationaleAI": "Ancient Egyptian kingship, customs, ethics, and social organization provide context for Egyptian law (B.2.a)."
     },
     {
       "vsiTitle": "The Ancient Near East",
@@ -91,7 +98,7 @@
       "relevantPathsAI": [
         "B.2.b"
       ],
-      "rationaleAI": "Mesopotamian civilizations covering codified law, kingship, and bureaucracy directly address cuneiform law as an ancient legal system (B.2.b)."
+      "rationaleAI": "Mesopotamian civilizations covering codified law, kingship, and bureaucracy directly address cuneiform law (B.2.b)."
     },
     {
       "vsiTitle": "Ancient Greece",
@@ -99,7 +106,7 @@
       "relevantPathsAI": [
         "B.2.d"
       ],
-      "rationaleAI": "Ancient Greek civilization covering the polis, political concepts including democracy, and city-state governance provides context for Greek law (B.2.d)."
+      "rationaleAI": "Political concepts from Greek city-states including democracy, oligarchy, and tyranny provide the institutional context for Greek law (B.2.d)."
     },
     {
       "vsiTitle": "The Hellenistic Age",
@@ -107,7 +114,7 @@
       "relevantPathsAI": [
         "B.2.e"
       ],
-      "rationaleAI": "The Hellenistic world covering political fragmentation, multi-ethnic governance, and federal government in Greek city-states addresses Hellenistic law (B.2.e)."
+      "rationaleAI": "Multi-ethnic governance, federal government, and administrative systems across Hellenistic successor kingdoms address Hellenistic law (B.2.e)."
     },
     {
       "vsiTitle": "The Roman Republic",
@@ -115,7 +122,7 @@
       "relevantPathsAI": [
         "B.2.f"
       ],
-      "rationaleAI": "The Roman Republic covering political structures including the Senate, magistracies, and cursus honorum provides foundations for Roman law (B.2.f)."
+      "rationaleAI": "Political structures including the cursus honorum, Senate, and magistracies provide the institutional foundation for Roman law (B.2.f)."
     },
     {
       "vsiTitle": "The Roman Empire",
@@ -123,33 +130,37 @@
       "relevantPathsAI": [
         "B.2.f"
       ],
-      "rationaleAI": "The Roman Empire covering imperial administration, provincial governance, and Romanization of local cultures extends the foundations of Roman law (B.2.f)."
+      "rationaleAI": "Imperial administration, provincial governance, and the Senate address Roman law (B.2.f) in its mature imperial phase."
     },
     {
       "vsiTitle": "The Middle Ages",
       "vsiAuthor": "Miri Rubin",
       "relevantPathsAI": [
-        "B.3"
+        "B.3",
+        "B.3.a"
       ],
-      "rationaleAI": "European history from 500 to 1500 CE covering kingship, political authority, and the transition from Roman provinces addresses medieval European law (B.3)."
+      "rationaleAI": "European history 500-1500 CE covering transition from Roman provinces to barbarian kingdoms addresses medieval European law (B.3) and origins of medieval European law (B.3.a)."
     },
     {
       "vsiTitle": "Magna Carta",
       "vsiAuthor": "Nicholas Vincent",
       "relevantPathsAI": [
+        "B.3",
+        "B.3.a",
         "B.3.b",
-        "B.4.a"
+        "B.3.c"
       ],
-      "rationaleAI": "Magna Carta's provisions limiting royal authority and its role as a symbol of subjects' rights directly address sources and institutions of medieval constitutional law (B.3.b). Its enduring significance for modern law connects to Anglo-American common law (B.4.a)."
+      "rationaleAI": "Magna Carta's provisions limiting royal authority address origins of medieval European law (B.3.a). Baronial reform connects to medieval constitutional law (B.3.b). Property and feudal provisions relate to private law in medieval Europe (B.3.c)."
     },
     {
       "vsiTitle": "Thomas Aquinas",
       "vsiAuthor": "Fergus Kerr",
       "relevantPathsAI": [
         "A.1.c",
+        "A.1.d",
         "B.3.d"
       ],
-      "rationaleAI": "Aquinas's natural law theory directly addresses the relationship between law and morality and the influence of natural law principles (A.1.c). His role as a Dominican friar and medieval theologian connects to the development of canon law (B.3.d)."
+      "rationaleAI": "Aquinas's natural law theory addresses law and morality (A.1.c). As a 13th-century theologian, he contributes to historical survey of legal theories (A.1.d). His Catholic scholasticism connects to development of canon law (B.3.d)."
     },
     {
       "vsiTitle": "Ethics",
@@ -157,7 +168,7 @@
       "relevantPathsAI": [
         "A.1.c"
       ],
-      "rationaleAI": "Ethics addressing fundamental moral questions and the relationship between self-interest and altruism directly connects to the relationship between law and morality (A.1.c)."
+      "rationaleAI": "Consequentialism, deontology, and virtue ethics address the relationship between law and morality (A.1.c)."
     },
     {
       "vsiTitle": "Stoicism",
@@ -166,7 +177,7 @@
         "A.1.c",
         "A.1.d"
       ],
-      "rationaleAI": "Stoic philosophy covering ethics, rationality, and natural law concepts connects to the relationship between law and morality and the influence of natural law principles (A.1.c). The historical survey from ancient Greece through Rome addresses the historical survey of legal theories (A.1.d)."
+      "rationaleAI": "Stoic ethics concerning virtue and natural law influenced Roman legal philosophy, addressing law and morality (A.1.c) and contributing to historical survey of legal theories (A.1.d)."
     },
     {
       "vsiTitle": "Hobbes",
@@ -175,16 +186,17 @@
         "A.1.b",
         "A.1.d"
       ],
-      "rationaleAI": "Hobbes's social contract theory and sovereign authority directly address approaches to jurisprudence (A.1.b). His foundational role in political philosophy connects to the historical survey of legal theories (A.1.d)."
+      "rationaleAI": "Leviathan's social contract theory addresses approaches to jurisprudence (A.1.b). Hobbes contributes to historical survey of legal theories (A.1.d)."
     },
     {
       "vsiTitle": "Locke",
       "vsiAuthor": "John Dunn",
       "relevantPathsAI": [
         "A.1.b",
+        "A.1.c",
         "A.1.d"
       ],
-      "rationaleAI": "Locke's empiricist theory, liberal values including toleration, and responsible government address approaches to jurisprudence (A.1.b). His influence on Enlightenment thought connects to the historical survey of legal theories (A.1.d)."
+      "rationaleAI": "Locke's defense of toleration and responsible government addresses philosophy of law (A.1.b). Natural rights connect to law and morality (A.1.c). As an Enlightenment thinker, he contributes to historical survey (A.1.d)."
     },
     {
       "vsiTitle": "Ibn Sīnā (Avicenna)",
@@ -201,26 +213,29 @@
         "A.1.d",
         "A.2"
       ],
-      "rationaleAI": "Medieval philosophy covering interlinked Christian, Muslim, and Jewish intellectual traditions addresses the historical survey of legal theories (A.1.d). Coverage of Islamic thinkers including al-Farabi and Avicenna connects to non-Western philosophies of law (A.2)."
+      "rationaleAI": "Medieval Christian, Muslim, and Jewish thinkers including political philosophy address historical survey of legal theories (A.1.d). Muslim contributions connect to non-Western philosophies of law (A.2)."
     },
     {
       "vsiTitle": "Habeas corpus",
       "vsiAuthor": "Amanda Tyler",
       "relevantPathsAI": [
+        "B.3.b",
         "B.4.a",
-        "A.1.c"
+        "D"
       ],
-      "rationaleAI": "Traces habeas corpus from medieval English common law through modern global application as a safeguard against executive detention, directly relevant to Anglo-American common law development and the influence of natural law principles."
+      "rationaleAI": "Medieval English common law origins address medieval constitutional law (B.3.b). Anglo-American legal tradition connects to common law (B.4.a). Safeguard against detention relates to the practice of law (D)."
     },
     {
       "vsiTitle": "The Jury",
       "vsiAuthor": "Renee Lettow Lerner",
       "relevantPathsAI": [
-        "B.2.d",
         "B.4.a",
+        "B.4.b",
+        "C",
+        "D",
         "D.1"
       ],
-      "rationaleAI": "Covers the jury system from ancient Athens through medieval England to modern global practice, addressing Greek law, Anglo-American common law, and the profession and practice of law."
+      "rationaleAI": "The jury system from ancient Athens through medieval England addresses Anglo-American common law (B.4.a). Mixed panels address continental civil law (B.4.b). Comparative analysis addresses parallels among diverse legal systems (C). Trial processes relate to the profession of law (D, D.1)."
     },
     {
       "vsiTitle": "Human Rights",
@@ -228,24 +243,23 @@
       "relevantPathsAI": [
         "A.1.c"
       ],
-      "rationaleAI": "Traces human rights from natural rights philosophy through the Universal Declaration of Human Rights, directly relevant to the relationship between law and morality and the influence of natural law principles."
+      "rationaleAI": "Natural rights philosophy through the Universal Declaration of Human Rights addresses the relationship between law and morality (A.1.c)."
     },
     {
       "vsiTitle": "Hermeneutics",
       "vsiAuthor": "Jens Zimmermann",
       "relevantPathsAI": [
-        "A.1.a"
+        "A.1.b"
       ],
-      "rationaleAI": "Covers the theory and practice of legal interpretation as a core component of hermeneutic methodology, directly relevant to the scope of the Western philosophy of law and its relationship to other branches of philosophy."
+      "rationaleAI": "Theory and practice of legal interpretation addresses approaches to jurisprudence (A.1.b) through hermeneutic methodology."
     },
     {
       "vsiTitle": "Secularism",
       "vsiAuthor": "Andrew Copson",
       "relevantPathsAI": [
-        "A.1.c",
-        "A.1.d"
+        "A.1.c"
       ],
-      "rationaleAI": "Examines the separation of church and state and its philosophical foundations, relevant to the relationship between law and morality, natural law principles, and the historical survey of legal theories."
+      "rationaleAI": "Separation of church and state addresses the relationship between law and morality (A.1.c) by examining how legal systems disentangled from religious moral authority."
     }
   ],
   "_curatedBy": "ai",

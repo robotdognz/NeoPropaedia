@@ -7,7 +7,7 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Foundational chemistry provides context for inorganic milieu (A)."
+      "rationaleAI": "Foundational chemistry covering the periodic table and chemical bonding addresses the inorganic milieu of living systems (A)."
     },
     {
       "vsiTitle": "Physical chemistry",
@@ -15,21 +15,20 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Thermodynamics connects to inorganic milieu (A)."
+      "rationaleAI": "Thermodynamics and chemical bonding provide foundations for the inorganic milieu of living systems (A)."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
       "relevantPathsAI": [
         "B",
-        "B.1",
-        "B.2",
         "B.3",
-        "B.4",
         "B.5",
+        "B.5.a",
+        "B.5.b",
         "B.7"
       ],
-      "rationaleAI": "Biomolecules address organic chemicals (B) including carbohydrates (B.1), lipids (B.2), proteins (B.3), ATP (B.4), nucleic acids (B.5), and enzymes (B.7)."
+      "rationaleAI": "Chemistry of living cells covering DNA and proteins addresses organic chemicals in life processes (B), proteins and peptides (B.3), enzymes (B.7), nucleic acids (B.5, B.5.a), and DNA (B.5.b)."
     },
     {
       "vsiTitle": "Enzymes",
@@ -37,7 +36,7 @@
       "relevantPathsAI": [
         "B.7"
       ],
-      "rationaleAI": "Biological catalysts address enzymes (B.7)."
+      "rationaleAI": "Biological catalysts covering enzyme structure, function, and applications directly address enzymes (B.7)."
     },
     {
       "vsiTitle": "Hormones",
@@ -45,21 +44,21 @@
       "relevantPathsAI": [
         "B.9",
         "B.9.a",
-        "B.9.b"
+        "B.9.b",
+        "B.9.c",
+        "B.9.d"
       ],
-      "rationaleAI": "Endocrine physiology addresses hormones (B.9) including general features (B.9.a) and vertebrate hormones (B.9.b)."
+      "rationaleAI": "Endocrine physiology covering hormone types and mechanisms addresses hormones (B.9) and general features (B.9.a). Insulin and growth hormone address vertebrate hormones (B.9.b). Neurohormones connect to invertebrate hormones (B.9.c). Evolutionary development connects to plant hormones (B.9.d)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
       "relevantPathsAI": [
         "B",
-        "B.1",
-        "B.2",
         "B.3",
         "B.5"
       ],
-      "rationaleAI": "Molecular structures connect to organic chemicals (B) including proteins (B.3) and nucleic acids (B.5)."
+      "rationaleAI": "Protein structures address proteins and peptides (B.3). Cellular metabolism addresses organic chemicals (B). Biological molecular structures connect to nucleic acids (B.5)."
     },
     {
       "vsiTitle": "Organic Chemistry",
@@ -68,7 +67,7 @@
         "B",
         "B.10"
       ],
-      "rationaleAI": "Carbon compounds connect to organic chemicals (B) and natural products (B.10)."
+      "rationaleAI": "Carbon compounds fundamental to living systems address organic chemicals (B). Major compound classes relate to alkaloids, steroids, and terpenes (B.10)."
     },
     {
       "vsiTitle": "Molecular Biology",
@@ -76,11 +75,11 @@
       "relevantPathsAI": [
         "B.3",
         "B.5",
+        "B.5.a",
         "B.5.b",
-        "B.5.c",
-        "C"
+        "B.5.c"
       ],
-      "rationaleAI": "DNA and proteins address B.3, nucleic acids (B.5), and drug development (C)."
+      "rationaleAI": "Nucleic acid and protein structure address proteins (B.3) and nucleic acids (B.5). DNA structure addresses B.5.b. Gene expression via RNA connects to B.5.c. General features of nucleic acids are covered (B.5.a)."
     },
     {
       "vsiTitle": "Drugs",
@@ -91,15 +90,15 @@
         "C.2",
         "C.3",
         "C.4",
+        "C.4.a",
         "C.4.c",
         "C.5",
         "C.5.a",
         "C.5.b",
         "C.6",
-        "C.7",
-        "D"
+        "C.7"
       ],
-      "rationaleAI": "Pharmacology addresses drugs (C) comprehensively including sources, action, metabolism, organ effects, antibiotics, cancer drugs, addiction, and alcohol."
+      "rationaleAI": "Pharmacology addresses drugs (C). Heart disease treatment covers cardiovascular drugs (C.4.a). Mental illness treatment covers CNS drugs (C.4.c). Bacterial infection treatment addresses antibiotics (C.5.a) and chemotherapeutic drugs (C.5.b). Cancer drugs address C.6. Addiction addresses drug abuse (C.7). Drug mechanisms cover C.2 and C.3."
     },
     {
       "vsiTitle": "Nutrition",
@@ -110,7 +109,7 @@
         "B.3",
         "B.8"
       ],
-      "rationaleAI": "Nutrients connect to carbohydrates (B.1), lipids (B.2), proteins (B.3), and vitamins (B.8)."
+      "rationaleAI": "Macronutrients address carbohydrates (B.1), lipids (B.2), and proteins (B.3). Vitamins directly address B.8."
     },
     {
       "vsiTitle": "Addiction",
@@ -119,15 +118,16 @@
         "C.7",
         "D"
       ],
-      "rationaleAI": "Substance addiction addresses drug use (C.7) and alcohol (D)."
+      "rationaleAI": "Substance addiction addresses drug use and abuse (C.7). Alcohol consumption connects to ethyl alcohol (D)."
     },
     {
       "vsiTitle": "The Immune System",
       "vsiAuthor": "Paul Klenerman",
       "relevantPathsAI": [
-        "C.4.h"
+        "C.4.h",
+        "C.4.h.i"
       ],
-      "rationaleAI": "Immunotherapy connects to immune response drugs (C.4.h)."
+      "rationaleAI": "Immunotherapy and allergies address drugs affecting the immune response (C.4.h). Allergic responses connect to the histamine response system (C.4.h.i)."
     },
     {
       "vsiTitle": "Infectious Disease",
@@ -138,7 +138,7 @@
         "C.5.b",
         "E.3"
       ],
-      "rationaleAI": "Antibiotic resistance connects to disease drugs (C.5) and biotoxins (E.3)."
+      "rationaleAI": "Antibiotic resistance addresses antibiotics (C.5.a) and chemotherapeutic drugs (C.5.b). Pathogens relate to biotoxins (E.3)."
     },
     {
       "vsiTitle": "Cancer",
@@ -146,7 +146,7 @@
       "relevantPathsAI": [
         "C.6"
       ],
-      "rationaleAI": "Cancer treatment addresses cancer drugs (C.6)."
+      "rationaleAI": "Cancer drug development directly addresses drugs directed at suppression of cancer (C.6)."
     },
     {
       "vsiTitle": "Bacteria",
@@ -155,7 +155,7 @@
         "C.5.a",
         "E.3"
       ],
-      "rationaleAI": "Antibiotic resistance connects to antibiotics (C.5.a) and toxins (E.3)."
+      "rationaleAI": "Antibiotic resistance addresses antibiotics (C.5.a). Bacterial toxins connect to biotoxins (E.3)."
     },
     {
       "vsiTitle": "Anaesthesia",
@@ -164,80 +164,82 @@
         "C",
         "C.2",
         "C.3",
+        "C.4.b",
         "C.4.c"
       ],
-      "rationaleAI": "Anaesthetic drugs connect to drug action (C.2), metabolism (C.3), and CNS drugs (C.4.c)."
+      "rationaleAI": "Anaesthetic drugs address drugs broadly (C) and drug action (C.2). Pharmacokinetics address drug metabolism (C.3). Muscle relaxants address drugs affecting muscle systems (C.4.b). Nervous system effects address CNS drugs (C.4.c)."
     },
     {
       "vsiTitle": "Circadian Rhythms",
       "vsiAuthor": "Russell Foster, Leon Kreitzman",
       "relevantPathsAI": [
-        "B.9"
+        "B.9",
+        "B.9.a"
       ],
-      "rationaleAI": "Circadian-hormonal interplay connects to hormones (B.9)."
+      "rationaleAI": "Molecular clocks and circadian timing connect to hormones (B.9). Endocrine-neural regulation addresses general features of hormones (B.9.a)."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
         "B.5",
+        "B.5.a",
         "B.5.b"
       ],
-      "rationaleAI": "DNA connects to nucleic acids (B.5, B.5.b)."
+      "rationaleAI": "DNA structure and sequencing address nucleic acids (B.5), general features (B.5.a), and DNA specifically (B.5.b)."
     },
     {
       "vsiTitle": "Plants",
       "vsiAuthor": "Timothy Walker",
       "relevantPathsAI": [
-        "B.9.d",
-        "E.2"
+        "B.6",
+        "B.9.d"
       ],
-      "rationaleAI": "Covers plant biology including pollination mechanisms and the role of plants in medicines and agriculture, relevant to hormones of plants and biocides directed against plant pests."
+      "rationaleAI": "Plant pigment systems including chlorophyll connect to biological pigments and coloration (B.6). Plant growth regulation connects to plant hormones (B.9.d)."
     },
     {
       "vsiTitle": "Symbiosis",
       "vsiAuthor": "Nancy A. Moran",
       "relevantPathsAI": [
-        "B.7",
         "E.3"
       ],
-      "rationaleAI": "Examines insect-microbe partnerships and horizontal gene transfer relevant to enzymes and biological processes, and covers biotoxins and microbial interactions relevant to toxins produced by microorganisms."
+      "rationaleAI": "Microbial chemical interactions connect to biotoxins produced by microorganisms (E.3)."
     },
     {
       "vsiTitle": "Fungi",
       "vsiAuthor": "Nicolas P. Money",
       "relevantPathsAI": [
-        "E.2",
         "E.3"
       ],
-      "rationaleAI": "Covers fungi as agents of crop disease causing historical famines (biocides against plant pests) and fungal biology including parasitism and decomposition relevant to biotoxins produced by microorganisms."
+      "rationaleAI": "Fungal pathogens producing mycotoxins connect to biotoxins produced by microorganisms (E.3)."
     },
     {
       "vsiTitle": "HIV/AIDS",
       "vsiAuthor": "Alan Whiteside",
       "relevantPathsAI": [
-        "C.5.b",
-        "C.7"
+        "C.5",
+        "C.5.b"
       ],
-      "rationaleAI": "Covers antiretroviral drug development and drug resistance mechanisms, directly addressing chemotherapeutic drugs used to treat infectious diseases and drug use patterns in the context of a global epidemic."
+      "rationaleAI": "Antiretroviral therapy addresses drugs against disease organisms (C.5) and chemotherapeutic drugs (C.5.b)."
     },
     {
       "vsiTitle": "The History of Chemistry",
       "vsiAuthor": "William H. Brock",
       "relevantPathsAI": [
-        "B",
+        "A",
         "C.1"
       ],
-      "rationaleAI": "Traces the development of organic chemistry and chemical synthesis, relevant to understanding the sources and development of drugs and the chemical foundations of organic compounds participating in life processes."
+      "rationaleAI": "Historical chemistry provides context for the inorganic milieu (A). Chemical synthesis connects to sources and development of drugs (C.1)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
       "relevantPathsAI": [
         "B.9",
-        "C.4"
+        "B.9.b",
+        "C"
       ],
-      "rationaleAI": "Covers physiological mechanisms including homeostasis, immune defense, and reproductive physiology, relevant to hormones and their regulation and to the classification of drugs by organ system of principal effect."
+      "rationaleAI": "Hormonal regulation addresses hormones (B.9) and vertebrate hormones (B.9.b). Clinical applications connect to drugs (C)."
     },
     {
       "vsiTitle": "Agriculture",
@@ -245,26 +247,24 @@
       "relevantPathsAI": [
         "E.2"
       ],
-      "rationaleAI": "Covers agricultural practice including pest management, genetically modified organisms, and sustainability, directly relevant to biocides directed against animal and plant pests."
+      "rationaleAI": "Crop cultivation and pest management address biocides against animal and plant pests (E.2)."
     },
     {
       "vsiTitle": "Developmental biology",
       "vsiAuthor": "Lewis Wolpert",
       "relevantPathsAI": [
-        "B.9",
-        "B.5"
+        "B.9"
       ],
-      "rationaleAI": "Covers patterning by Hox genes, signaling molecules like Sonic hedgehog, and the role of chemical signaling during growth, directly relevant to hormones and nucleic acids in vital processes."
+      "rationaleAI": "Chemical signaling during growth connects to hormones (B.9) through developmental chemical messengers."
     },
     {
       "vsiTitle": "The Cell",
       "vsiAuthor": "Terence Allen, Graham Cowling",
       "relevantPathsAI": [
-        "B.3",
-        "B.5",
-        "B.7"
+        "B",
+        "B.4"
       ],
-      "rationaleAI": "Covers cell biology including signaling, differentiation, and programmed cell death involving proteins, nucleic acids, and enzymes as fundamental chemicals in vital processes."
+      "rationaleAI": "Cellular biology and metabolic processes address organic chemicals (B). Energy requirements connect to ATP (B.4)."
     }
   ],
   "_curatedBy": "ai",

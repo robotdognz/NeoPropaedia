@@ -9,9 +9,17 @@
         "A.1",
         "A.2",
         "B",
-        "C.1"
+        "B.1",
+        "B.2",
+        "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.1.c",
+        "C.1.e",
+        "E.2",
+        "E.3"
       ],
-      "rationaleAI": "Cost analysis addresses production costs in short run (A.1) and long run (A.2). Market structures address distribution (B). Labour markets address labour input (C.1)."
+      "rationaleAI": "Cost analysis (A.1, A.2), labor markets (C.1.a-C.1.c, C.1.e), distribution (B, B.1, B.2), and agricultural policy (E.2, E.3)."
     },
     {
       "vsiTitle": "Economics",
@@ -20,10 +28,12 @@
         "A",
         "B",
         "C",
-        "D.1",
-        "F"
+        "C.1.i",
+        "C.2",
+        "C.4",
+        "G"
       ],
-      "rationaleAI": "Resource allocation addresses production (A) and distribution (B). Division of labour addresses inputs (C). Market structures address money (D.1). International trade connects to F."
+      "rationaleAI": "Resource allocation (A, B), human capital (C.1.i), natural resources (C.2), capital (C.4), and government role (G)."
     },
     {
       "vsiTitle": "Work",
@@ -31,55 +41,67 @@
       "relevantPathsAI": [
         "C.1",
         "C.1.a",
-        "C.1.e"
+        "C.1.e",
+        "C.1.f"
       ],
-      "rationaleAI": "Work addresses labour input (C.1), workforce deployment (C.1.a), and employment (C.1.e)."
+      "rationaleAI": "Work covers labour (C.1, C.1.a), unemployment (C.1.e), and migrant labourers (C.1.f)."
     },
     {
       "vsiTitle": "Human Resource Management",
       "vsiAuthor": "Adrian Wilkinson",
       "relevantPathsAI": [
+        "C.1",
+        "C.1.g",
+        "C.1.h",
+        "C.1.i",
         "H.3",
+        "H.3.a",
         "H.3.b",
         "H.3.c",
         "H.3.d"
       ],
-      "rationaleAI": "HR practices address personnel administration (H.3), recruitment (H.3.b), training (H.3.c), and incentive (H.3.d)."
+      "rationaleAI": "HR covers unions (C.1.g, C.1.h), training (C.1.i), and personnel management (H.3, H.3.a-H.3.d)."
     },
     {
       "vsiTitle": "Employment Law",
       "vsiAuthor": "David Cabrelli",
       "relevantPathsAI": [
+        "C.1",
         "C.1.b",
-        "C.1.c"
+        "C.1.d",
+        "C.1.e",
+        "C.1.g",
+        "C.1.h"
       ],
-      "rationaleAI": "Employment rights address pay rates (C.1.b) and pay structure (C.1.c)."
+      "rationaleAI": "Employment law covers pay (C.1.b, C.1.d), employment (C.1.e), and unions (C.1.g, C.1.h)."
     },
     {
       "vsiTitle": "Management",
       "vsiAuthor": "John Hendry",
       "relevantPathsAI": [
         "C.1.j",
-        "H.3"
+        "H.3",
+        "H.4"
       ],
-      "rationaleAI": "Management theory addresses managers and entrepreneurs (C.1.j) and human resources (H.3)."
+      "rationaleAI": "Management covers managers/entrepreneurs (C.1.j), human resources (H.3), and production control (H.4)."
     },
     {
       "vsiTitle": "Entrepreneurship",
       "vsiAuthor": "Paul Westhead, Mike Wright",
       "relevantPathsAI": [
-        "C.1.j"
+        "C.1.j",
+        "D.4"
       ],
-      "rationaleAI": "Entrepreneurial processes address managers and entrepreneurs (C.1.j)."
+      "rationaleAI": "Entrepreneurship covers managers/entrepreneurs (C.1.j) and the business corporation (D.4)."
     },
     {
       "vsiTitle": "Organizations",
       "vsiAuthor": "Mary Jo Hatch",
       "relevantPathsAI": [
         "D.4",
-        "H.4"
+        "H"
       ],
-      "rationaleAI": "Organizational analysis addresses the business corporation (D.4) and production control (H.4)."
+      "rationaleAI": "Organizations address the business corporation (D.4) and business methods (H)."
     },
     {
       "vsiTitle": "Banking",
@@ -89,9 +111,12 @@
         "D.2.a",
         "D.2.b",
         "D.2.c",
-        "D.2.d"
+        "D.2.d",
+        "D.2.e",
+        "D.2.g",
+        "D.2.h"
       ],
-      "rationaleAI": "Banking addresses banking development (D.2.a), modern structures (D.2.b), commercial banking (D.2.c), and central banking (D.2.d)."
+      "rationaleAI": "Banking covers all banking functions (D.2.a-D.2.h)."
     },
     {
       "vsiTitle": "Accounting",
@@ -100,9 +125,10 @@
         "H.1",
         "H.1.a",
         "H.1.b",
-        "H.1.c"
+        "H.1.c",
+        "H.1.d"
       ],
-      "rationaleAI": "Accounting addresses keeping accounts (H.1), information systems (H.1.a), financial statements (H.1.b), and measurement (H.1.c)."
+      "rationaleAI": "Accounting covers all accounting functions (H.1, H.1.a-H.1.d)."
     },
     {
       "vsiTitle": "Mathematical finance",
@@ -110,9 +136,10 @@
       "relevantPathsAI": [
         "D.2.e",
         "D.2.g",
+        "H.2",
         "H.2.b"
       ],
-      "rationaleAI": "Asset valuation addresses the money market (D.2.e) and long-term funds (D.2.g). Capital structure relates to long-term operations (H.2.b)."
+      "rationaleAI": "Financial mathematics covers money markets (D.2.e), long-term funds (D.2.g), and financial operations (H.2, H.2.b)."
     },
     {
       "vsiTitle": "Energy Systems",
@@ -120,7 +147,7 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Energy conversion addresses energy as input (C.3)."
+      "rationaleAI": "Energy systems address energy as input (C.3)."
     },
     {
       "vsiTitle": "Renewable Energy",
@@ -134,11 +161,15 @@
       "vsiTitle": "Agriculture",
       "vsiAuthor": "Paul Brassley, Richard Soffe",
       "relevantPathsAI": [
+        "C.2",
         "E",
+        "E.1",
+        "E.2",
+        "E.3",
         "E.4",
         "E.5"
       ],
-      "rationaleAI": "Agricultural science addresses agricultural economics (E), technology effects (E.4), and farming organization (E.5)."
+      "rationaleAI": "Agriculture covers land inputs (C.2) and all agricultural economics topics (E, E.1-E.5)."
     },
     {
       "vsiTitle": "Advertising",
@@ -146,7 +177,7 @@
       "relevantPathsAI": [
         "I"
       ],
-      "rationaleAI": "Advertising industry addresses advertising (I)."
+      "rationaleAI": "Advertising directly addresses advertising (I)."
     },
     {
       "vsiTitle": "Marketing",
@@ -154,9 +185,10 @@
       "relevantPathsAI": [
         "H.5",
         "H.5.a",
-        "H.5.e"
+        "H.5.e",
+        "I"
       ],
-      "rationaleAI": "Marketing addresses distribution (H.5), marketing departments (H.5.a), and market research (H.5.e)."
+      "rationaleAI": "Marketing covers distribution (H.5, H.5.a), market research (H.5.e), and advertising (I)."
     },
     {
       "vsiTitle": "The World Trade Organization",
@@ -164,114 +196,134 @@
       "relevantPathsAI": [
         "F",
         "F.1",
+        "F.2",
         "F.2.a",
         "F.3"
       ],
-      "rationaleAI": "WTO addresses trade theories (F.1), tariffs (F.2.a), and trade arrangements (F.3)."
+      "rationaleAI": "WTO covers international trade (F, F.1, F.2, F.2.a, F.3)."
     },
     {
       "vsiTitle": "Taxation",
       "vsiAuthor": "Stephen Smith",
       "relevantPathsAI": [
+        "G",
         "G.1",
         "G.2",
         "G.3"
       ],
-      "rationaleAI": "Tax economics addresses taxation in budgets (G.1), government resources (G.2), and spending growth (G.3)."
+      "rationaleAI": "Taxation covers public expenditures (G.1), resource balancing (G.2), and government spending growth (G.3)."
     },
     {
       "vsiTitle": "Risk",
       "vsiAuthor": "Baruch Fischhoff, John Kadvany",
       "relevantPathsAI": [
-        "J"
+        "J",
+        "J.1",
+        "J.6"
       ],
-      "rationaleAI": "Risk analysis addresses distribution of risk (J)."
+      "rationaleAI": "Risk covers insurance (J, J.1) and underwriting (J.6)."
     },
     {
       "vsiTitle": "Statistics",
       "vsiAuthor": "David J. Hand",
       "relevantPathsAI": [
-        "D.3"
+        "D.3",
+        "D.3.a",
+        "D.3.b",
+        "D.3.c"
       ],
-      "rationaleAI": "Statistical methods address economic statistics (D.3)."
+      "rationaleAI": "Statistics covers economic statistics (D.3, D.3.a-D.3.c)."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
       "relevantPathsAI": [
-        "C.1.j",
-        "D.4"
+        "D.4",
+        "H.4"
       ],
-      "rationaleAI": "Innovation addresses entrepreneurs (C.1.j) and the business corporation (D.4)."
+      "rationaleAI": "Innovation covers the business corporation (D.4) and production control (H.4)."
     },
     {
       "vsiTitle": "Intellectual property",
       "vsiAuthor": "Siva Vaidhyanathan",
       "relevantPathsAI": [
-        "F.2.a"
+        "F.2.a",
+        "G.4"
       ],
-      "rationaleAI": "IP law connects to trade-related intellectual property (F.2.a)."
+      "rationaleAI": "IP covers trade mechanisms (F.2.a) and government industry operation (G.4)."
     },
     {
       "vsiTitle": "Competition and Antitrust Law",
       "vsiAuthor": "Ariel Ezrachi",
       "relevantPathsAI": [
-        "F.2.a"
+        "G.4"
       ],
-      "rationaleAI": "Competition law addresses factors influencing trade (F.2.a)."
+      "rationaleAI": "Antitrust covers government industry operation (G.4)."
     },
     {
       "vsiTitle": "Globalization",
       "vsiAuthor": "Manfred Steger",
       "relevantPathsAI": [
-        "F"
+        "F",
+        "F.1",
+        "F.2",
+        "F.3"
       ],
-      "rationaleAI": "Global trade addresses geographical distribution of resources (F)."
+      "rationaleAI": "Globalization covers international trade (F, F.1, F.2, F.3)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "C.1.a",
-        "C.4",
-        "F.2.b"
+        "C.1",
+        "C.3",
+        "G.3",
+        "G.4"
       ],
-      "rationaleAI": "Industrialization addresses labour force (C.1.a), capital (C.4), and production conditions (F.2.b)."
+      "rationaleAI": "Industrial Revolution covers labour (C.1), energy (C.3), government spending (G.3), and industry (G.4)."
     },
     {
       "vsiTitle": "Keynes",
       "vsiAuthor": "Robert Skidelsky",
       "relevantPathsAI": [
         "D.1",
+        "D.1.c",
         "D.2.f"
       ],
-      "rationaleAI": "Monetary thought addresses money (D.1) and international monetary institutions (D.2.f)."
+      "rationaleAI": "Keynes covers money theory (D.1, D.1.c) and international monetary institutions (D.2.f)."
     },
     {
       "vsiTitle": "Adam Smith",
       "vsiAuthor": "Christopher J. Berry",
       "relevantPathsAI": [
-        "D.1.a",
+        "A",
+        "B",
         "F.1"
       ],
-      "rationaleAI": "Smith's economic thought addresses money functions (D.1.a) and trade theories (F.1)."
+      "rationaleAI": "Adam Smith covers production (A), distribution (B), and trade theory (F.1)."
     },
     {
       "vsiTitle": "Projects",
       "vsiAuthor": "Andrew Davies",
       "relevantPathsAI": [
-        "H.4"
+        "H.4",
+        "H.4.a",
+        "H.4.b",
+        "H.4.c",
+        "H.4.d"
       ],
-      "rationaleAI": "Project management addresses production administration (H.4)."
+      "rationaleAI": "Projects cover production control (H.4, H.4.a-H.4.d)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
+        "A",
+        "B",
         "D.1",
-        "D.4"
+        "D.2"
       ],
-      "rationaleAI": "Capital markets address money (D.1) and the business corporation (D.4)."
+      "rationaleAI": "Capitalism covers production (A), distribution (B), money (D.1), and banking (D.2)."
     },
     {
       "vsiTitle": "Corporate social responsibility",
@@ -280,77 +332,83 @@
         "D.4",
         "H.3"
       ],
-      "rationaleAI": "CSR addresses the business corporation (D.4) and human resources (H.3)."
+      "rationaleAI": "CSR covers the business corporation (D.4) and human resources (H.3)."
     },
     {
       "vsiTitle": "Behavioural Economics",
       "vsiAuthor": "Michelle Baddeley",
       "relevantPathsAI": [
-        "B.2",
-        "D.2.d"
+        "A",
+        "B"
       ],
-      "rationaleAI": "Covers cognitive biases and heuristics in economic decision-making, directly relevant to understanding imperfect knowledge on the part of buyers and factors influencing consumers' tastes and spending patterns."
+      "rationaleAI": "Behavioural economics connects to production (A) and distribution (B)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
+        "A",
+        "B",
+        "C",
         "F",
-        "G.3"
+        "G"
       ],
-      "rationaleAI": "Covers comparative analysis of global economic development including the roles of geography, globalization, technological change, and government policy, directly relevant to the geographical distribution of resources and markets and international trade patterns."
+      "rationaleAI": "Global economic history covers production (A), distribution (B), inputs (C), trade (F), and government (G)."
     },
     {
       "vsiTitle": "The Welfare State",
       "vsiAuthor": "David Garland",
       "relevantPathsAI": [
         "G.3",
-        "G.4",
+        "J.4",
         "J.5"
       ],
-      "rationaleAI": "Covers welfare state systems including social insurance, healthcare, and unemployment protections, directly relevant to the growth in government social welfare expenditures and government-sponsored health insurance programs."
+      "rationaleAI": "Welfare state covers social spending (G.3), private health insurance (J.4), and government health insurance (J.5)."
     },
     {
       "vsiTitle": "Choice Theory",
       "vsiAuthor": "Michael Allingham",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A",
+        "J.1",
+        "J.6"
       ],
-      "rationaleAI": "Covers rational choice theory including utility, expected value, marginal utility, and risk aversion, directly relevant to the analysis of costs and output and the production function in both short and long run."
+      "rationaleAI": "Choice theory covers production optimization (A), insurance (J.1), and underwriting (J.6)."
     },
     {
       "vsiTitle": "Environmental economics",
       "vsiAuthor": "Stephen Smith",
       "relevantPathsAI": [
-        "D.2.c"
+        "C.2",
+        "G.1",
+        "G.2"
       ],
-      "rationaleAI": "Covers externalities, market failure, cost-benefit analysis, and carbon taxes applied to environmental protection, directly addressing economic relationships not susceptible to control by prices such as air pollution."
+      "rationaleAI": "Environmental economics covers natural resources (C.2) and public expenditure theory (G.1, G.2)."
     },
     {
       "vsiTitle": "Corruption",
       "vsiAuthor": "Leslie Holmes",
       "relevantPathsAI": [
-        "G.1"
+        "G"
       ],
-      "rationaleAI": "Covers corruption as a global phenomenon affecting economic institutions and its relationship to poverty and economic instability, relevant to the theory of public expenditures and problems of effective tax administration."
+      "rationaleAI": "Corruption connects to the government's role in production and distribution (G)."
     },
     {
       "vsiTitle": "The Russian Economy",
       "vsiAuthor": "Richard Connolly",
       "relevantPathsAI": [
+        "C.2",
         "G.4"
       ],
-      "rationaleAI": "Covers Russian economic development including state-controlled industries, central planning, and the hybrid economy combining state economic control with market participation, directly relevant to government operation of basic industries."
+      "rationaleAI": "Russian economy covers natural resources (C.2) and government industry operation (G.4)."
     },
     {
       "vsiTitle": "Design",
       "vsiAuthor": "John Heskett",
       "relevantPathsAI": [
-        "H.5.a",
-        "H.5.e"
+        "H.5"
       ],
-      "rationaleAI": "Covers industrial and product design practices at major companies like Nokia, Ford, Sony, and Lego, including the relationship between form and function and consumer culture, relevant to marketing departments and market research techniques."
+      "rationaleAI": "Design connects to the distribution of goods (H.5)."
     }
   ],
   "_curatedBy": "ai",

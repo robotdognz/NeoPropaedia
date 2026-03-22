@@ -5,10 +5,11 @@
       "vsiTitle": "The Mexican Revolution",
       "vsiAuthor": "Alan Knight",
       "relevantPathsAI": [
+        "A",
         "A.1",
         "A.2"
       ],
-      "rationaleAI": "The Mexican Revolution from 1910 through regime consolidation in the 1920s and radical reforms of the 1930s directly addresses Obregon's coup and reforms (A.1) and Cardenas' social and economic reforms including expropriation of foreign petroleum (A.2)."
+      "rationaleAI": "Revolution through 1930s reforms covers Obregon and Calles (A.1) and Cardenas' Six-Year Plan (A.2)."
     },
     {
       "vsiTitle": "Modern Brazil",
@@ -17,43 +18,48 @@
         "G",
         "G.2"
       ],
-      "rationaleAI": "Brazil's political, economic, and social transformation from mid-twentieth century, democratic development, and international positioning directly address political, social, and economic developments in Brazil since 1945 (G.2)."
+      "rationaleAI": "Brazil's transformation covers Brazil since 1930 (G) and post-1945 developments (G.2)."
     },
     {
       "vsiTitle": "Modern Latin American Literature",
       "vsiAuthor": "Roberto González Echevarría",
-      "relevantPathsAI": [],
-      "rationaleAI": "Latin American writers—Borges, Garcia Marquez, Neruda—gave voice to the region's political and social upheavals, providing cultural context for the period since 1920."
+      "relevantPathsAI": [
+        "A",
+        "B.2.c"
+      ],
+      "rationaleAI": "Latin American literature shaped by Mexican and Cuban revolutions connects to Mexico (A) and Cuba (B.2.c)."
     },
     {
       "vsiTitle": "Revolutions",
       "vsiAuthor": "Jack A. Goldstone",
       "relevantPathsAI": [
-        "A.1",
-        "B.2.c.ii"
+        "A",
+        "B.2.c"
       ],
-      "rationaleAI": "Revolutionary theory and communist revolutions connect to the Mexican Revolution and its aftermath (A.1) and the Cuban Revolution of 1959 and Castro's program for Cuban Socialism (B.2.c.ii)."
+      "rationaleAI": "Revolutionary theory connects to Mexico (A) and Cuba (B.2.c)."
     },
     {
       "vsiTitle": "Civil Wars",
       "vsiAuthor": "Monica Duffy Toft",
       "relevantPathsAI": [
         "B.1.c",
-        "C.2"
+        "C.2.c"
       ],
-      "rationaleAI": "Intrastate armed conflicts, guerrilla warfare, and peacebuilding connect to El Salvador's civil war (B.1.c) and La Violencia in Colombia and left-wing guerrilla movements (C.2)."
+      "rationaleAI": "Intrastate conflicts connect to El Salvador (B.1.c) and Colombia (C.2.c)."
     },
     {
       "vsiTitle": "Authoritarianism",
       "vsiAuthor": "James Loxton",
       "relevantPathsAI": [
         "B.2.a",
-        "B.2.c.i",
+        "B.2.b",
+        "C.1",
         "E.3.b",
         "F.1.b",
-        "G.1"
+        "F.1.c",
+        "F.3.b"
       ],
-      "rationaleAI": "Authoritarian regimes including military and personalist types, with Argentina as an example, address Haiti's Duvalier dictatorship (B.2.a), Batista's Cuba (B.2.c.i), Pinochet's Chile (E.3.b), the Peron era in Argentina (F.1.b), and Vargas' Brazil (G.1)."
+      "rationaleAI": "Authoritarian regimes connect to Haiti's Duvalier (B.2.a), Trujillo (B.2.b), Venezuelan dictatorships (C.1), Pinochet (E.3.b), Peron (F.1.b), Argentine military (F.1.c), and Stroessner (F.3.b)."
     },
     {
       "vsiTitle": "Communism",
@@ -62,7 +68,7 @@
         "B.2.c.ii",
         "B.2.c.iii"
       ],
-      "rationaleAI": "Cuban communism, Ho Chi Minh, and Cold War confrontation with the United States address the Cuban Revolution and Castro's program for Cuban Socialism (B.2.c.ii) and Cuba under Castro including alignment with the Soviet bloc (B.2.c.iii)."
+      "rationaleAI": "Cuban communism covers Castro's program (B.2.c.ii) and Cuba under Castro (B.2.c.iii)."
     },
     {
       "vsiTitle": "Socialism",
@@ -71,34 +77,34 @@
         "B.2.c.ii",
         "E.3.b"
       ],
-      "rationaleAI": "Cuban communism as a case study and socialism's relationship to revolutionary politics address Cuba under Castro (B.2.c.ii) and Allende's Marxist administration in Chile (E.3.b)."
+      "rationaleAI": "Cuban communism (B.2.c.ii) and Allende's Chile (E.3.b)."
     },
     {
       "vsiTitle": "Populism",
       "vsiAuthor": "Cas Mudde, Cristsbal Rovia Kalwasser",
       "relevantPathsAI": [
-        "C.1",
+        "C.1.b",
         "F.1.b"
       ],
-      "rationaleAI": "Latin American left-wing populist presidents including Peron and Chavez directly address Venezuela under Chavez (C.1) and the Peron era in Argentina (F.1.b)."
+      "rationaleAI": "Peron and Chavez connect to Venezuela (C.1.b) and Argentina (F.1.b)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
       "relevantPathsAI": [
-        "E.3.b",
-        "G.2.e"
+        "E.3.b"
       ],
-      "rationaleAI": "Democracy as political system and transitions from authoritarianism connect to post-Pinochet moves toward democracy in Chile (E.3.b) and return to civilian rule in Brazil (G.2.e)."
+      "rationaleAI": "Democratization connects to post-Pinochet Chile (E.3.b)."
     },
     {
       "vsiTitle": "The Cold War",
       "vsiAuthor": "Robert J. McMahon",
       "relevantPathsAI": [
+        "A.4.b",
         "B.2.c.iii",
         "B.2.c.iv"
       ],
-      "rationaleAI": "Cold War superpower rivalry and proxy wars connect to Cuba's alignment with the Soviet bloc (B.2.c.iii) and U.S.-Cuba confrontations including the Bay of Pigs and Cuban missile crisis (B.2.c.iv)."
+      "rationaleAI": "Cold War connects to Mexico-U.S. relations (A.4.b), Cuba's Soviet alignment (B.2.c.iii), and missile crisis (B.2.c.iv)."
     },
     {
       "vsiTitle": "American Foreign Relations",
@@ -108,7 +114,7 @@
         "B.1.d",
         "B.2.c.iv"
       ],
-      "rationaleAI": "U.S. foreign policy including imperialism and Cold War engagement addresses Mexico-U.S. relations including NAFTA (A.4.b), U.S. military intervention in Nicaragua (B.1.d), and U.S.-Cuba relations (B.2.c.iv)."
+      "rationaleAI": "U.S. foreign policy connects to Mexico (A.4.b), Contra insurgency (B.1.d), and Cuba (B.2.c.iv)."
     },
     {
       "vsiTitle": "Human Rights",
@@ -117,7 +123,7 @@
         "B.1.a.iii",
         "E.3.b"
       ],
-      "rationaleAI": "Human rights frameworks and anti-discrimination protections connect to Guatemala's scorched-earth counterinsurgency campaigns (B.1.a.iii) and political repression under Pinochet in Chile (E.3.b)."
+      "rationaleAI": "Human rights connect to Guatemala's repression (B.1.a.iii) and Pinochet's Chile (E.3.b)."
     },
     {
       "vsiTitle": "Organized Crime",
@@ -125,51 +131,48 @@
       "relevantPathsAI": [
         "C.2.c"
       ],
-      "rationaleAI": "Organized crime including drug trafficking connects to the growth of drug trafficking and associated corruption in Colombia (C.2.c) and drug-related terrorism."
+      "rationaleAI": "Organized crime connects to Colombia's drug trafficking (C.2.c)."
     },
     {
       "vsiTitle": "The Great Depression and The New Deal",
       "vsiAuthor": "Eric Rauchway",
       "relevantPathsAI": [
-        "D.3.a",
-        "F.2.a"
+        "A.3",
+        "F.3.a"
       ],
-      "rationaleAI": "The Great Depression's international impact connects to the effect of the Depression on Bolivia's mining industry (D.3.a) and Uruguay's economic decline (F.2.a)."
+      "rationaleAI": "Great Depression connects to Mexico during WWII (A.3) and Paraguay (F.3.a)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
       "relevantPathsAI": [
-        "A.1",
-        "B.1"
+        "A"
       ],
-      "rationaleAI": "Nationalism and self-determination connect to Mexico's post-revolutionary nationalism (A.1) and independence movements in Central American republics (B.1)."
+      "rationaleAI": "Nationalism connects to Mexican national identity (A)."
     },
     {
       "vsiTitle": "International Migration",
       "vsiAuthor": "Khalid Koser",
       "relevantPathsAI": [
-        "A.4.b",
-        "B.2.c.iv"
+        "A.4.b"
       ],
-      "rationaleAI": "International migration and immigration policy connect to tensions over illegal immigration to the U.S. from Mexico (A.4.b) and Cuban emigration to the U.S. (B.2.c.iv)."
+      "rationaleAI": "Migration connects to U.S. immigration and Central American refugees (A.4.b)."
     },
     {
       "vsiTitle": "Refugees",
       "vsiAuthor": "Gil Loescher",
       "relevantPathsAI": [
-        "A.4.b",
-        "B.2.c.iv"
+        "A.4.b"
       ],
-      "rationaleAI": "Forced migration and refugee crises connect to the influx of Central American refugees into Mexico (A.4.b) and waves of Cuban emigration to the U.S. (B.2.c.iv)."
+      "rationaleAI": "Refugee crises connect to Central American flows (A.4.b)."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
-        "B.2.c.iv"
+        "A.4.b"
       ],
-      "rationaleAI": "Diplomatic history and international relations connect to U.S.-Cuba diplomatic confrontations including the Bay of Pigs and missile crisis (B.2.c.iv)."
+      "rationaleAI": "Diplomacy connects to Mexico's foreign relations and NAFTA (A.4.b)."
     },
     {
       "vsiTitle": "Globalization",
@@ -177,7 +180,7 @@
       "relevantPathsAI": [
         "A.4.b"
       ],
-      "rationaleAI": "Globalization including the Mexico-USA border and NAFTA connects to Mexico's relations with the U.S. and the North American Free Trade Agreement (A.4.b)."
+      "rationaleAI": "Globalization connects to Mexico-USA border (A.4.b)."
     },
     {
       "vsiTitle": "Decolonization",
@@ -185,50 +188,48 @@
       "relevantPathsAI": [
         "B.2.d"
       ],
-      "rationaleAI": "Transition from colonial empires to independent nation-states connects to the new nations of the Caribbean region gaining independence (B.2.d)."
+      "rationaleAI": "Decolonization connects to new Caribbean nations (B.2.d)."
     },
     {
       "vsiTitle": "Poverty",
       "vsiAuthor": "Philip N. Jefferson",
       "relevantPathsAI": [
-        "D",
         "G.2"
       ],
-      "rationaleAI": "Global poverty, economic inequality, and development challenges connect to economic crises and development in Ecuador, Peru, and Bolivia (D) and Brazil's social and economic unrest (G.2)."
+      "rationaleAI": "Poverty connects to Brazil's challenges (G.2)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "C.1",
-        "G"
+        "G.2"
       ],
-      "rationaleAI": "Comparative analysis of global prosperity and poverty connects to Venezuela's oil-based economic boom and decline (C.1) and Brazil's economic development patterns (G)."
+      "rationaleAI": "Economic development connects to Brazilian trajectories (G.2)."
     },
     {
       "vsiTitle": "Banking",
       "vsiAuthor": "John O. S. Wilson, John Goddard",
       "relevantPathsAI": [
-        "A.4.a"
+        "G.2.d"
       ],
-      "rationaleAI": "Banking systems, financial crises, and sovereign debt connect to Mexico's currency devaluation, severe recession, and debt crisis (A.4.a)."
+      "rationaleAI": "Banking connects to Brazil's debt (G.2.d)."
     },
     {
       "vsiTitle": "Neoliberalism",
       "vsiAuthor": "Manfred Steger, Ravi K. Roy",
       "relevantPathsAI": [
         "A.4.a",
-        "E.3.b"
+        "G.2.e"
       ],
-      "rationaleAI": "Neoliberal economic paradigm including deregulation and privatization connects to Mexico's economic reforms in the 1980s and 1990s (A.4.a) and Chile's post-Pinochet economic development (E.3.b)."
+      "rationaleAI": "Neoliberal policies connect to Mexico's reforms (A.4.a) and Brazil under Cardoso (G.2.e)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
-        "C.1.b"
+        "G.2"
       ],
-      "rationaleAI": "Capitalism and resource-based economies connect to Venezuela's nationalization of the oil industry and economic fluctuations (C.1.b)."
+      "rationaleAI": "Capitalism connects to Brazilian development (G.2)."
     },
     {
       "vsiTitle": "Empire",
@@ -236,24 +237,24 @@
       "relevantPathsAI": [
         "B.2.e"
       ],
-      "rationaleAI": "Empire as political formation and neo-imperialism connect to U.S. and European territories and possessions in the Caribbean region (B.2.e)."
+      "rationaleAI": "Imperial systems connect to Caribbean territories (B.2.e)."
     },
     {
       "vsiTitle": "The BRICS",
       "vsiAuthor": "Andrew F. Cooper",
       "relevantPathsAI": [
-        "G.2.e"
+        "G.2"
       ],
-      "rationaleAI": "Covers Brazil's role in the BRICS grouping challenging Western-dominated institutions, relevant to Brazil's contemporary international positioning after return to civilian rule."
+      "rationaleAI": "BRICS connects to Brazilian international positioning (G.2)."
     },
     {
       "vsiTitle": "Fascism",
       "vsiAuthor": "Kevin Passmore",
       "relevantPathsAI": [
         "F.1.a",
-        "F.1.b"
+        "G.1"
       ],
-      "rationaleAI": "Covers far-right movements in the Americas and corporatism, relevant to Argentina's conservative restoration (1930-43) and the Peron era with its fascist-influenced political dynamics."
+      "rationaleAI": "Fascist movements connect to Argentina's era (F.1.a) and Vargas (G.1)."
     }
   ],
   "_curatedBy": "ai",

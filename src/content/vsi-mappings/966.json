@@ -5,35 +5,45 @@
       "vsiTitle": "The Mexican Revolution",
       "vsiAuthor": "Alan Knight",
       "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.1.a",
+        "A.2",
+        "A.3",
+        "B",
+        "B.3.b",
         "B.4"
       ],
-      "rationaleAI": "The Mexican Revolution directly addresses the revolutionary period 1910-17 (B.4)."
+      "rationaleAI": "Mexican Revolution (1910-1920) and its aftermath directly addresses the independence movement's legacy (A), discontent among social classes (A.1.a), the wars of independence context (A.2), Hidalgo's revolt context (A.3), Diaz-era radical political clubs and internal unrest (B.3.b), and the Revolutionary period including Carranza, Villa, and Zapata (B.4)."
     },
     {
       "vsiTitle": "Revolutions",
       "vsiAuthor": "Jack A. Goldstone",
       "relevantPathsAI": [
         "A",
-        "A.1",
+        "A.1.a",
         "B.4"
       ],
-      "rationaleAI": "Revolutionary theory connects to the independence movement (A) and Mexican Revolution (B.4)."
+      "rationaleAI": "Comparative revolution theory covers the influence of the Enlightenment and the French Revolution on Latin American independence movements (A.1.a). Revolutionary strategies including guerrilla warfare connect to the Mexican Revolutionary period (B.4)."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "C.1.h",
+        "C.2.d"
       ],
-      "rationaleAI": "Colonial empire connects to the wars of independence (A)."
+      "rationaleAI": "Spanish, British, Dutch, and French colonial empires and governance over diverse peoples relates to Latin American independence (A). British colonial and U.S. economic interests in Central America (C.1.h) and remaining European possessions in the Caribbean (C.2.d)."
     },
     {
       "vsiTitle": "Nationalism",
       "vsiAuthor": "Steven Grosby",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "A.1.a"
       ],
-      "rationaleAI": "Self-determination connects to the independence movement (A)."
+      "rationaleAI": "National self-determination ideology and nation-state formation relate to Latin American independence (A) and Enlightenment influence on Creole discontent (A.1.a)."
     },
     {
       "vsiTitle": "The French Revolution",
@@ -41,7 +51,7 @@
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "The French Revolution's influence connects to the background of independence (A.1.a)."
+      "rationaleAI": "French Revolution ideals of liberty and equality directly influenced Latin American independence movements (A.1.a), as Enlightenment thought shaped Creole and mestizo discontent."
     },
     {
       "vsiTitle": "Napoleon",
@@ -49,7 +59,7 @@
       "relevantPathsAI": [
         "A.1.c"
       ],
-      "rationaleAI": "Napoleon's seizure of the Spanish throne connects to the trigger for independence (A.1.c)."
+      "rationaleAI": "Napoleon's seizure of the Spanish throne precipitated the Peninsular War and Creole responses in Spanish America (A.1.c), directly triggering Latin American independence movements."
     },
     {
       "vsiTitle": "The Napoleonic Wars",
@@ -57,56 +67,60 @@
       "relevantPathsAI": [
         "A.1.c"
       ],
-      "rationaleAI": "The Peninsular War connects to Spanish involvement precipitating independence (A.1.c)."
+      "rationaleAI": "The Peninsular War (1808-14) and Napoleon's disruption of the Spanish monarchy directly catalyzed Latin American wars of independence (A.1.c)."
     },
     {
       "vsiTitle": "Modern Brazil",
       "vsiAuthor": "Anthony W. Pereira",
       "relevantPathsAI": [
-        "H"
+        "H",
+        "H.2"
       ],
-      "rationaleAI": "Brazilian development connects to the Empire and First Republic (H)."
+      "rationaleAI": "Brazil's political, economic, and social transformation from mid-twentieth century covers the First Republic period (H.2) and broader Brazilian national development (H)."
     },
     {
       "vsiTitle": "Colonial Latin American Literature",
       "vsiAuthor": "Rolena Adorno",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "A.1.a"
       ],
-      "rationaleAI": "Colonial literature through independence connects to A."
+      "rationaleAI": "Literary culture of the Spanish-speaking Americas through independence movements addresses the cultural and intellectual background to Latin American independence (A), including Creole identity formation (A.1.a)."
     },
     {
       "vsiTitle": "Modern Latin American Literature",
       "vsiAuthor": "Roberto González Echevarría",
       "relevantPathsAI": [
         "A",
-        "B.4"
+        "B"
       ],
-      "rationaleAI": "Literary identity connects to independence (A) and the Mexican Revolution (B.4)."
+      "rationaleAI": "Latin American literary tradition addresses how political crises shaped continental identity during independence from Spain (A) and the Mexican revolution's cultural impact (B)."
     },
     {
       "vsiTitle": "Civil Wars",
       "vsiAuthor": "Monica Duffy Toft",
       "relevantPathsAI": [
-        "B.4"
+        "A.2",
+        "B.4",
+        "H.1"
       ],
-      "rationaleAI": "Intrastate conflicts connect to the Mexican civil war (B.4)."
+      "rationaleAI": "Intrastate armed conflicts connect to South American wars of independence (A.2), the Mexican Revolutionary civil war (B.4), and Brazil's internal disunity during the regency (H.1.a)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
       "relevantPathsAI": [
-        "A"
+        "A.1.a"
       ],
-      "rationaleAI": "Republican governance connects to the independence movement (A)."
+      "rationaleAI": "Democratic theory connects to the influence of Enlightenment political philosophy and U.S. War of Independence on Latin American independence sentiment (A.1.a)."
     },
     {
       "vsiTitle": "Capitalism",
       "vsiAuthor": "James Fulcher",
       "relevantPathsAI": [
-        "G.1.b.ii"
+        "H.2"
       ],
-      "rationaleAI": "Economic development connects to Argentine crises (G.1.b.ii)."
+      "rationaleAI": "Capitalism's development through industrialization connects to Brazil's economic development during the First Republic (H.2)."
     },
     {
       "vsiTitle": "Decolonization",
@@ -114,7 +128,7 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Transition from colonial empires connects to the independence movement (A)."
+      "rationaleAI": "Transition from colonial empires to independent nation-states provides the broad framework for Latin American independence movements (A)."
     },
     {
       "vsiTitle": "Postcolonialism",
@@ -122,7 +136,7 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Colonial exploitation connects to the wars of independence (A)."
+      "rationaleAI": "Postcolonial critique of Western-centric perspectives on colonized societies across the Americas provides intellectual context for Latin American independence (A)."
     },
     {
       "vsiTitle": "Socialism",
@@ -130,41 +144,39 @@
       "relevantPathsAI": [
         "C.2.c"
       ],
-      "rationaleAI": "Socialist movements connect to Cuban dynamics (C.2.c)."
+      "rationaleAI": "Cuban communism as a case study of socialism connects to Cuba's political development (C.2.c)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "G.1.b.ii",
         "H.2"
       ],
-      "rationaleAI": "Economic development connects to Argentine economy (G.1.b.ii) and Brazil's First Republic (H.2)."
+      "rationaleAI": "Comparative prosperity and poverty analysis connects to economic development patterns in Brazil during the First Republic (H.2)."
     },
     {
       "vsiTitle": "Diplomacy",
       "vsiAuthor": "Joseph M. Siracusa",
       "relevantPathsAI": [
-        "A"
+        "A.1.c"
       ],
-      "rationaleAI": "Diplomatic history connects to independence (A)."
+      "rationaleAI": "Diplomatic history including the Napoleonic era provides context for European wars that triggered Latin American independence (A.1.c)."
     },
     {
       "vsiTitle": "The Conquistadors",
       "vsiAuthor": "Matthew Restall, Felipe Fernández-Armesto",
       "relevantPathsAI": [
-        "A.1"
+        "A"
       ],
-      "rationaleAI": "Provides colonial background of Spanish conquest essential to understanding the social structures (Creoles, mestizos, Indians) in A.1."
+      "rationaleAI": "Spanish conquest established the colonial systems that Latin American independence movements sought to overthrow (A)."
     },
     {
       "vsiTitle": "Communism",
       "vsiAuthor": "Leslie Holmes",
       "relevantPathsAI": [
-        "C.2.c.ii",
-        "C.2.c.iii"
+        "C.2.c"
       ],
-      "rationaleAI": "Addresses communism's spread to Cuba under Castro, including the Cuban Revolution and Cold War confrontation with the United States, directly relevant to Cuba's liberation movements and Caribbean political developments."
+      "rationaleAI": "Cuban communism under Castro directly addresses Cuba's political trajectory (C.2.c), including revolutionary politics in the Caribbean."
     }
   ],
   "_curatedBy": "ai",

@@ -6,16 +6,24 @@
       "vsiAuthor": "Linda Woodhead",
       "relevantPathsAI": [
         "A",
+        "A.1",
+        "A.1.a",
+        "A.1.b",
+        "A.2",
+        "A.3",
         "B",
         "C",
         "D",
         "E.1",
         "F",
+        "F.1",
+        "F.5",
+        "G",
         "G.1",
         "G.2",
         "G.3"
       ],
-      "rationaleAI": "Comprehensive Christianity addresses pre-schism history (A), Orthodoxy (B, G.1), Catholicism (C, G.2), Protestantism (D, G.3), biblical literature (E.1), and doctrines/practices (F)."
+      "rationaleAI": "Comprehensive coverage of Christianity spanning all major historical periods, denominations, doctrines, and institutional forms."
     },
     {
       "vsiTitle": "Jesus",
@@ -24,7 +32,7 @@
         "A.1.a",
         "F.1.c"
       ],
-      "rationaleAI": "Jesus addresses primitive church origins (A.1.a) and Christology (F.1.c)."
+      "rationaleAI": "Jesus covers the primitive church (A.1.a) and Christology (F.1.c)."
     },
     {
       "vsiTitle": "Paul",
@@ -32,20 +40,21 @@
       "relevantPathsAI": [
         "A.1.a",
         "A.1.b",
-        "E.1"
+        "E.5"
       ],
-      "rationaleAI": "Paul addresses primitive church (A.1.a), post-apostolic developments (A.1.b), and biblical literature (E.1)."
+      "rationaleAI": "Paul covers the primitive church (A.1.a), post-apostolic developments (A.1.b), and theological writings (E.5)."
     },
     {
       "vsiTitle": "Augustine",
       "vsiAuthor": "Henry Chadwick",
       "relevantPathsAI": [
-        "A.2",
+        "A.1.b",
         "A.2.b",
-        "E.7",
-        "F.1.f"
+        "E.3",
+        "E.5",
+        "E.7"
       ],
-      "rationaleAI": "Augustine relates to early church (A.2), doctrinal controversies (A.2.b), Christian philosophy (E.7), and the Trinity (F.1.f)."
+      "rationaleAI": "Augustine covers early Church (A.1.b), doctrinal controversies (A.2.b), patristic literature (E.3), theology (E.5), and philosophy (E.7)."
     },
     {
       "vsiTitle": "Thomas Aquinas",
@@ -54,38 +63,42 @@
         "C.1.b",
         "E.5",
         "E.7",
-        "F.1.a"
+        "F.1.a",
+        "F.1.b"
       ],
-      "rationaleAI": "Aquinas relates to medieval theology (C.1.b), theological writings (E.5), Christian philosophy (E.7), and God's nature (F.1.a)."
+      "rationaleAI": "Aquinas covers Latin Christianity (C.1.b), theology (E.5), philosophy (E.7), and doctrines of God (F.1.a, F.1.b)."
     },
     {
       "vsiTitle": "Anselm",
       "vsiAuthor": "Thomas Williams",
       "relevantPathsAI": [
+        "C.1.a",
         "C.1.b",
         "E.5",
-        "E.7",
         "F.1.a"
       ],
-      "rationaleAI": "Anselm relates to medieval theology (C.1.b), theological writings (E.5), Christian philosophy (E.7), and God's nature (F.1.a)."
+      "rationaleAI": "Anselm covers papacy (C.1.a), Latin Christianity (C.1.b), theology (E.5), and God's nature (F.1.a)."
     },
     {
       "vsiTitle": "Martin Luther",
       "vsiAuthor": "Scott H. Hendrix",
       "relevantPathsAI": [
+        "C.2.b",
         "D.1",
-        "D.1.b"
+        "D.1.b",
+        "D.1.h"
       ],
-      "rationaleAI": "Luther addresses the Reformation (D.1) and German Reformation (D.1.b)."
+      "rationaleAI": "Luther covers the Reformation (C.2.b, D.1), German Reformation (D.1.b), and religious liberty (D.1.h)."
     },
     {
       "vsiTitle": "The Bible",
       "vsiAuthor": "John Riches",
       "relevantPathsAI": [
         "E.1",
-        "E.2"
+        "E.2",
+        "F.5"
       ],
-      "rationaleAI": "The Bible addresses biblical literature (E.1) and exegesis (E.2)."
+      "rationaleAI": "The Bible covers biblical literature (E.1), exegesis (E.2), and normative Scripture (F.5)."
     },
     {
       "vsiTitle": "The Old Testament",
@@ -93,26 +106,25 @@
       "relevantPathsAI": [
         "E.1"
       ],
-      "rationaleAI": "The Old Testament addresses biblical literature (E.1)."
+      "rationaleAI": "Old Testament addresses biblical literature (E.1)."
     },
     {
       "vsiTitle": "The New Testament",
       "vsiAuthor": "Luke Timothy Johnson",
       "relevantPathsAI": [
         "E.1",
-        "F.1.c",
-        "F.1.e"
+        "E.2"
       ],
-      "rationaleAI": "The New Testament addresses biblical literature (E.1), Christology (F.1.c), and the Holy Spirit (F.1.e)."
+      "rationaleAI": "New Testament covers biblical literature (E.1) and exegesis (E.2)."
     },
     {
       "vsiTitle": "The Apocryphal Gospels",
       "vsiAuthor": "Paul Foster",
       "relevantPathsAI": [
-        "A.1.b",
-        "E.1"
+        "E.1",
+        "E.2"
       ],
-      "rationaleAI": "Apocryphal gospels relate to post-apostolic developments (A.1.b) and biblical literature (E.1)."
+      "rationaleAI": "Apocryphal gospels cover the Apocrypha (E.1) and exegesis (E.2)."
     },
     {
       "vsiTitle": "Hermeneutics",
@@ -127,9 +139,11 @@
       "vsiAuthor": "David F. Ford",
       "relevantPathsAI": [
         "E.5",
-        "F.1"
+        "F",
+        "F.1",
+        "F.1.a"
       ],
-      "rationaleAI": "Theology relates to theological writings (E.5) and doctrines of God (F.1)."
+      "rationaleAI": "Theology covers theological writings (E.5), doctrines (F, F.1), and God's nature (F.1.a)."
     },
     {
       "vsiTitle": "God",
@@ -137,74 +151,107 @@
       "relevantPathsAI": [
         "F.1",
         "F.1.a",
-        "F.1.b"
+        "F.1.b",
+        "F.1.f"
       ],
-      "rationaleAI": "God relates to Christian doctrines (F.1), God's nature (F.1.a), and self-revelation (F.1.b)."
+      "rationaleAI": "God covers the nature of God (F.1.a), Creator/Judge (F.1.b), and the Trinity (F.1.f)."
     },
     {
       "vsiTitle": "Christian art",
       "vsiAuthor": "Beth Williamson",
       "relevantPathsAI": [
-        "F.7"
+        "F.7",
+        "F.7.a",
+        "F.7.b"
       ],
-      "rationaleAI": "Christian art addresses art and iconography (F.7)."
+      "rationaleAI": "Christian art covers all aspects of art and iconography (F.7, F.7.a, F.7.b)."
     },
     {
       "vsiTitle": "Christian ethics",
       "vsiAuthor": "D. Stephen Long",
       "relevantPathsAI": [
-        "F.4",
-        "F.6"
+        "F.4"
       ],
-      "rationaleAI": "Christian ethics relates to doctrines of mankind (F.4) and practices (F.6)."
+      "rationaleAI": "Christian ethics addresses doctrines of mankind (F.4)."
     },
     {
       "vsiTitle": "Catholicism",
       "vsiAuthor": "Gerald O'Collins",
       "relevantPathsAI": [
         "C",
+        "C.1",
+        "C.2.c",
+        "C.4",
+        "C.5",
         "G.2",
         "G.2.b",
-        "G.2.c"
+        "G.2.c",
+        "G.2.d"
       ],
-      "rationaleAI": "Catholicism addresses Catholic history (C) and teachings/organization (G.2.b, G.2.c)."
+      "rationaleAI": "Catholicism covers Catholic Church history (C, C.1, C.2.c, C.4, C.5) and Catholic characteristics (G.2, G.2.b-G.2.d)."
     },
     {
       "vsiTitle": "Orthodox Christianity",
       "vsiAuthor": "A. Edward Siecienski",
       "relevantPathsAI": [
+        "A.3",
+        "A.3.a",
+        "A.3.d",
         "B",
+        "B.1",
+        "B.2",
+        "B.2.a",
+        "B.2.b",
+        "B.3",
+        "B.4",
         "G.1",
-        "G.1.c"
+        "G.1.b",
+        "G.1.c",
+        "G.1.e"
       ],
-      "rationaleAI": "Orthodoxy addresses Eastern Orthodox history (B) and characteristics (G.1.c)."
+      "rationaleAI": "Orthodox Christianity covers the East-West division (A.3) and complete Orthodox history and characteristics (B, G.1)."
     },
     {
       "vsiTitle": "Protestantism",
       "vsiAuthor": "Mark A. Noll",
       "relevantPathsAI": [
         "D",
+        "D.1",
+        "D.2",
+        "D.3",
+        "D.4",
         "G.3",
-        "G.3.b"
+        "G.3.a",
+        "G.3.b",
+        "G.3.c"
       ],
-      "rationaleAI": "Protestantism addresses Protestant history (D) and teachings (G.3.b)."
+      "rationaleAI": "Protestantism covers complete Protestant history and characteristics (D, G.3)."
     },
     {
       "vsiTitle": "The Reformation",
       "vsiAuthor": "Peter Marshall",
       "relevantPathsAI": [
         "C.2",
-        "D.1"
+        "C.2.a",
+        "C.2.b",
+        "C.2.c",
+        "D.1",
+        "D.1.b",
+        "D.1.c",
+        "D.1.e",
+        "D.1.f",
+        "D.1.h"
       ],
-      "rationaleAI": "The Reformation addresses the era (C.2) and Protestant Reformation (D.1)."
+      "rationaleAI": "The Reformation comprehensively covers all Reformation-era developments."
     },
     {
       "vsiTitle": "The Catholic Reformation",
       "vsiAuthor": "James E. Kelly",
       "relevantPathsAI": [
-        "C.2.c"
+        "C.2.c",
+        "C.2.e"
       ],
-      "rationaleAI": "Catholic Reformation addresses Counter-Reformation (C.2.c)."
+      "rationaleAI": "Catholic Reformation covers the Counter-Reformation (C.2.c) and missions (C.2.e)."
     },
     {
       "vsiTitle": "Calvinism",
@@ -213,41 +260,46 @@
         "D.1.c",
         "G.3.d.ii"
       ],
-      "rationaleAI": "Calvinism addresses Swiss Reformation (D.1.c) and Reformed churches (G.3.d.ii)."
+      "rationaleAI": "Calvinism covers the Swiss Reformation (D.1.c) and Reformed churches (G.3.d.ii)."
     },
     {
       "vsiTitle": "Anglicanism",
       "vsiAuthor": "Mark Chapman",
       "relevantPathsAI": [
         "D.1.d",
+        "D.2.d",
         "G.3.d.iii"
       ],
-      "rationaleAI": "Anglicanism addresses English Reformation (D.1.d) and Anglican Communion (G.3.d.iii)."
+      "rationaleAI": "Anglicanism covers the English reformation (D.1.d), English Protestantism (D.2.d), and Anglicanism (G.3.d.iii)."
     },
     {
       "vsiTitle": "Puritanism",
       "vsiAuthor": "Francis J. Bremer",
       "relevantPathsAI": [
         "D.1.d",
+        "D.2.d",
         "D.2.e"
       ],
-      "rationaleAI": "Puritanism addresses English Reformation (D.1.d) and American Protestantism (D.2.e)."
+      "rationaleAI": "Puritanism covers English reformation (D.1.d), English Protestantism (D.2.d), and colonial America (D.2.e)."
     },
     {
       "vsiTitle": "Methodism",
       "vsiAuthor": "William J. Abraham",
       "relevantPathsAI": [
+        "D.2.d",
+        "D.3",
         "G.3.d.iv"
       ],
-      "rationaleAI": "Methodism addresses Free churches (G.3.d.iv)."
+      "rationaleAI": "Methodism covers English Protestantism (D.2.d), the modern age (D.3), and Free churches (G.3.d.iv)."
     },
     {
       "vsiTitle": "Pentecostalism",
       "vsiAuthor": "William K. Kay",
       "relevantPathsAI": [
+        "D.4",
         "G.3.e.ii"
       ],
-      "rationaleAI": "Pentecostalism addresses Pentecostal churches (G.3.e.ii)."
+      "rationaleAI": "Pentecostalism covers post-WWI (D.4) and Pentecostal churches (G.3.e.ii)."
     },
     {
       "vsiTitle": "Evangelicalism",
@@ -257,15 +309,16 @@
         "D.4",
         "G.3.e.vii"
       ],
-      "rationaleAI": "Evangelicalism addresses modern Protestantism (D.3) and evangelical groups (G.3.e.vii)."
+      "rationaleAI": "Evangelicalism covers modern age (D.3), post-WWI (D.4), and evangelical groups (G.3.e.vii)."
     },
     {
       "vsiTitle": "The Quakers",
       "vsiAuthor": "Pink Dandelion",
       "relevantPathsAI": [
+        "D.2.d",
         "G.3.e.iv"
       ],
-      "rationaleAI": "Quakers address Society of Friends (G.3.e.iv)."
+      "rationaleAI": "Quakers cover English Protestantism (D.2.d) and Society of Friends (G.3.e.iv)."
     },
     {
       "vsiTitle": "Mormonism",
@@ -280,18 +333,19 @@
       "vsiAuthor": "Shaun Blanchard, Stephen Bullivant",
       "relevantPathsAI": [
         "C.5",
+        "G.2.c",
         "G.2.d"
       ],
-      "rationaleAI": "Vatican II addresses 20th-century Catholic developments (C.5) and social responses (G.2.d)."
+      "rationaleAI": "Vatican II covers 20th-century Catholicism (C.5) and Catholic teachings/response (G.2.c, G.2.d)."
     },
     {
       "vsiTitle": "The Virgin Mary",
       "vsiAuthor": "Mary Joan Winn Leith",
       "relevantPathsAI": [
         "F.1.c",
-        "F.7"
+        "G.2.c"
       ],
-      "rationaleAI": "Marian devotion relates to Christology (F.1.c) and iconography (F.7)."
+      "rationaleAI": "The Virgin Mary covers Christology (F.1.c) and Catholic teachings (G.2.c)."
     },
     {
       "vsiTitle": "Monasticism",
@@ -299,7 +353,7 @@
       "relevantPathsAI": [
         "F.6.c"
       ],
-      "rationaleAI": "Monasticism addresses the saintly life (F.6.c)."
+      "rationaleAI": "Monasticism addresses monasticism and saintly life (F.6.c)."
     },
     {
       "vsiTitle": "Saints",
@@ -307,16 +361,16 @@
       "relevantPathsAI": [
         "F.6.c"
       ],
-      "rationaleAI": "Sainthood addresses the saintly life (F.6.c)."
+      "rationaleAI": "Saints address the saintly life (F.6.c)."
     },
     {
       "vsiTitle": "Martyrdom",
       "vsiAuthor": "Jolyon Mitchell",
       "relevantPathsAI": [
-        "A.1",
+        "A.1.b",
         "F.6.c"
       ],
-      "rationaleAI": "Martyrdom relates to early church (A.1) and saintly life (F.6.c)."
+      "rationaleAI": "Martyrdom covers early persecution (A.1.b) and saintly life (F.6.c)."
     },
     {
       "vsiTitle": "Angels",
@@ -332,15 +386,16 @@
       "relevantPathsAI": [
         "F.2"
       ],
-      "rationaleAI": "The Devil addresses Satan and intermediary beings (F.2)."
+      "rationaleAI": "The Devil addresses Satan (F.2)."
     },
     {
       "vsiTitle": "Miracles",
       "vsiAuthor": "Yujin Nagasawa",
       "relevantPathsAI": [
-        "E.8"
+        "E.8",
+        "F.1.b"
       ],
-      "rationaleAI": "Miracles relate to myth and legend in Christianity (E.8)."
+      "rationaleAI": "Miracles cover myth/legend (E.8) and God's self-revelation (F.1.b)."
     },
     {
       "vsiTitle": "Pilgrimage",
@@ -348,7 +403,7 @@
       "relevantPathsAI": [
         "F.6.b"
       ],
-      "rationaleAI": "Pilgrimage relates to liturgy and worship (F.6.b)."
+      "rationaleAI": "Pilgrimage addresses liturgy (F.6.b)."
     },
     {
       "vsiTitle": "Science and Religion",
@@ -356,7 +411,7 @@
       "relevantPathsAI": [
         "F.3"
       ],
-      "rationaleAI": "Science-religion relates to doctrines of the physical world (F.3)."
+      "rationaleAI": "Science and religion addresses doctrines of the physical world (F.3)."
     },
     {
       "vsiTitle": "Fundamentalism",
@@ -365,24 +420,27 @@
         "D.4",
         "G.3.e.vii"
       ],
-      "rationaleAI": "Fundamentalism relates to post-WWI Protestantism (D.4) and fundamentalist groups (G.3.e.vii)."
+      "rationaleAI": "Fundamentalism covers post-WWI Protestantism (D.4) and fundamentalist groups (G.3.e.vii)."
     },
     {
       "vsiTitle": "Late Antiquity",
       "vsiAuthor": "Gillian Clark",
       "relevantPathsAI": [
-        "A.2"
+        "A.1.b",
+        "A.2",
+        "A.2.a",
+        "A.2.c"
       ],
-      "rationaleAI": "Late Antiquity relates to the early church period (A.2)."
+      "rationaleAI": "Late antiquity covers post-apostolic Church (A.1.b) and Christianity as state religion (A.2, A.2.a, A.2.c)."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
       "relevantPathsAI": [
-        "A.3",
-        "B"
+        "A.3.b",
+        "B.1"
       ],
-      "rationaleAI": "Byzantium relates to East-West division (A.3) and Eastern Orthodoxy (B)."
+      "rationaleAI": "Byzantium covers Christianity and Byzantine culture (A.3.b) and imperial Byzantium's church (B.1)."
     },
     {
       "vsiTitle": "The Crusades",
@@ -390,31 +448,36 @@
       "relevantPathsAI": [
         "C.1.a"
       ],
-      "rationaleAI": "Crusades relate to papal development (C.1.a)."
+      "rationaleAI": "Crusades address the papacy as temporal power (C.1.a)."
     },
     {
       "vsiTitle": "The Middle Ages",
       "vsiAuthor": "Miri Rubin",
       "relevantPathsAI": [
+        "A.3.b",
+        "A.3.c",
         "C.1"
       ],
-      "rationaleAI": "Medieval history relates to Catholic medieval era (C.1)."
+      "rationaleAI": "Middle Ages covers Christianity and Western culture (A.3.b), expansion (A.3.c), and medieval Catholicism (C.1)."
     },
     {
       "vsiTitle": "Medieval Philosophy",
       "vsiAuthor": "John Marenbon",
       "relevantPathsAI": [
+        "C.1.b",
         "E.7"
       ],
-      "rationaleAI": "Medieval philosophy relates to Christian philosophy (E.7)."
+      "rationaleAI": "Medieval philosophy covers Latin Christianity (C.1.b) and Christian philosophy (E.7)."
     },
     {
       "vsiTitle": "Renaissance Art",
       "vsiAuthor": "Geraldine A. Johnson",
       "relevantPathsAI": [
-        "F.7"
+        "F.7",
+        "F.7.a",
+        "F.7.b"
       ],
-      "rationaleAI": "Renaissance art relates to Christian iconography (F.7)."
+      "rationaleAI": "Renaissance art covers Christian art (F.7, F.7.a, F.7.b)."
     },
     {
       "vsiTitle": "The Enlightenment",
@@ -422,16 +485,16 @@
       "relevantPathsAI": [
         "D.2.c"
       ],
-      "rationaleAI": "The Enlightenment relates to rationalism's challenge to Protestantism (D.2.c)."
+      "rationaleAI": "Enlightenment addresses rationalism and Deism challenge (D.2.c)."
     },
     {
       "vsiTitle": "The Holy Roman Empire",
       "vsiAuthor": "Joachim Whaley",
       "relevantPathsAI": [
         "C.1.a",
-        "D.1.h"
+        "C.2"
       ],
-      "rationaleAI": "The Holy Roman Empire relates to papacy development (C.1.a) and church-state relations (D.1.h)."
+      "rationaleAI": "Holy Roman Empire covers the papacy (C.1.a) and Reformation era (C.2)."
     },
     {
       "vsiTitle": "Stuart Britain",
@@ -440,7 +503,7 @@
         "D.1.d",
         "D.2.d"
       ],
-      "rationaleAI": "Stuart Britain relates to English Reformation (D.1.d) and English Protestantism (D.2.d)."
+      "rationaleAI": "Stuart Britain covers English reformation (D.1.d) and Protestantism (D.2.d)."
     },
     {
       "vsiTitle": "The Abrahamic Religions",
@@ -449,7 +512,7 @@
         "A",
         "F.1"
       ],
-      "rationaleAI": "Christianity as Abrahamic tradition relates to history (A) and doctrines of God (F.1)."
+      "rationaleAI": "Abrahamic religions cover Christianity's history (A) and doctrines of God (F.1)."
     },
     {
       "vsiTitle": "Religion in America",
@@ -457,17 +520,19 @@
       "relevantPathsAI": [
         "D.2.e",
         "D.3",
-        "D.4"
+        "D.4",
+        "G.3.e.viii"
       ],
-      "rationaleAI": "American religion relates to American Protestantism (D.2.e) and modern developments (D.3, D.4)."
+      "rationaleAI": "Religion in America covers colonial (D.2.e), modern (D.3), post-WWI (D.4), and black American Protestantism (G.3.e.viii)."
     },
     {
       "vsiTitle": "African American Religion",
       "vsiAuthor": "Eddie S. Glaude Jr.",
       "relevantPathsAI": [
+        "D.3",
         "G.3.e.viii"
       ],
-      "rationaleAI": "African American Christianity relates to Protestant faiths in black American society (G.3.e.viii)."
+      "rationaleAI": "African American religion covers modern Protestantism (D.3) and black Protestant variations (G.3.e.viii)."
     },
     {
       "vsiTitle": "Toleration",
@@ -475,16 +540,16 @@
       "relevantPathsAI": [
         "D.1.h"
       ],
-      "rationaleAI": "Toleration relates to religious liberty development (D.1.h)."
+      "rationaleAI": "Toleration addresses religious liberty (D.1.h)."
     },
     {
       "vsiTitle": "Dante",
       "vsiAuthor": "Peter Hainsworth, David Robey",
       "relevantPathsAI": [
-        "E.5",
+        "C.1.b",
         "F.7.b"
       ],
-      "rationaleAI": "Dante relates to theological writings (E.5) and Christian faith in art (F.7.b)."
+      "rationaleAI": "Dante covers Latin Christianity (C.1.b) and Christian themes in arts (F.7.b)."
     },
     {
       "vsiTitle": "C. S. Lewis",
@@ -493,7 +558,7 @@
         "E.5",
         "F.7.b"
       ],
-      "rationaleAI": "Lewis relates to theological writings (E.5) and Christian faith in art (F.7.b)."
+      "rationaleAI": "C. S. Lewis covers theological writings (E.5) and Christian arts (F.7.b)."
     },
     {
       "vsiTitle": "Kierkegaard",
@@ -501,15 +566,16 @@
       "relevantPathsAI": [
         "E.7"
       ],
-      "rationaleAI": "Kierkegaard relates to Christian philosophy (E.7)."
+      "rationaleAI": "Kierkegaard addresses Christian philosophy (E.7)."
     },
     {
       "vsiTitle": "Secularism",
       "vsiAuthor": "Andrew Copson",
       "relevantPathsAI": [
-        "D.2.c"
+        "D.4",
+        "G.3.c"
       ],
-      "rationaleAI": "Secularism relates to rationalism's challenge (D.2.c)."
+      "rationaleAI": "Secularism covers post-WWI Protestantism (D.4) and Protestant social influence (G.3.c)."
     },
     {
       "vsiTitle": "Spirituality",
@@ -517,7 +583,7 @@
       "relevantPathsAI": [
         "E.6"
       ],
-      "rationaleAI": "Spirituality relates to Christian mysticism (E.6)."
+      "rationaleAI": "Spirituality addresses Christian mysticism (E.6)."
     },
     {
       "vsiTitle": "Faith",
@@ -526,15 +592,16 @@
         "E.7",
         "F.5"
       ],
-      "rationaleAI": "Faith relates to Christian philosophy (E.7) and normative belief (F.5)."
+      "rationaleAI": "Faith covers Christian philosophy (E.7) and normative Scripture (F.5)."
     },
     {
       "vsiTitle": "Philosophy of Religion",
       "vsiAuthor": "Tim Bayne",
       "relevantPathsAI": [
-        "E.7"
+        "E.7",
+        "F.1.a"
       ],
-      "rationaleAI": "Philosophy of religion relates to Christian philosophy (E.7)."
+      "rationaleAI": "Philosophy of religion covers Christian philosophy (E.7) and God's nature (F.1.a)."
     },
     {
       "vsiTitle": "The Book of Mormon",
@@ -542,7 +609,7 @@
       "relevantPathsAI": [
         "H.3"
       ],
-      "rationaleAI": "The Book of Mormon as sacred text of the Latter-day Saint tradition directly addresses Mormonism, a sect tangentially related to traditional Christianity, covering its relationship to the Bible, New Testament theology, and 19th-century American religious concerns."
+      "rationaleAI": "Book of Mormon addresses Mormonism (H.3)."
     },
     {
       "vsiTitle": "The Book of Common Prayer",
@@ -551,7 +618,7 @@
         "F.6.b",
         "G.3.d.iii"
       ],
-      "rationaleAI": "Foundational liturgical text shaping Anglican worship order, covering its role in establishing worship practices, the integration of music and ritual, and boundaries between conformity and nonconformity in English-language Christianity."
+      "rationaleAI": "Book of Common Prayer covers liturgy (F.6.b) and Anglicanism (G.3.d.iii)."
     },
     {
       "vsiTitle": "The Anglo-Saxon Age",
@@ -559,7 +626,7 @@
       "relevantPathsAI": [
         "A.3.c"
       ],
-      "rationaleAI": "Covers Christian conversion in Anglo-Saxon Britain through Theodore of Tarsus, directly relevant to the expansion of Christianity in the West and the relation of Christianity to Western culture in the 7th-11th century period."
+      "rationaleAI": "Anglo-Saxon age covers expansion of Christianity in the West (A.3.c)."
     },
     {
       "vsiTitle": "The Tudors",
@@ -567,7 +634,7 @@
       "relevantPathsAI": [
         "D.1.d"
       ],
-      "rationaleAI": "The English Reformation under Henry VIII and Elizabeth I, the establishment of the Church of England and the break with Rome directly address the English Reformation as a component of Protestantism's development."
+      "rationaleAI": "Tudors cover the English reformation (D.1.d)."
     },
     {
       "vsiTitle": "Paganism",
@@ -575,15 +642,16 @@
       "relevantPathsAI": [
         "A.2.c"
       ],
-      "rationaleAI": "Examines the survival of pagan cultures despite the expansion of Christianity, directly relevant to the relation of the Christian religion to the culture of the late Roman Empire and the persistence of pre-Christian traditions."
+      "rationaleAI": "Paganism covers Christianity and late imperial culture (A.2.c)."
     },
     {
       "vsiTitle": "Conscience",
       "vsiAuthor": "Paul Strohm",
       "relevantPathsAI": [
-        "D.2.c"
+        "E.7",
+        "F.4"
       ],
-      "rationaleAI": "Traces conscience from Roman identification through early Christian appropriation and Reformation reliance, directly relevant to the challenge of rationalism, Deism, and the Enlightenment and the Protestant response."
+      "rationaleAI": "Conscience covers Christian philosophy (E.7) and doctrines of mankind (F.4)."
     },
     {
       "vsiTitle": "Islam",
@@ -591,16 +659,15 @@
       "relevantPathsAI": [
         "A.3.b"
       ],
-      "rationaleAI": "Islam's relationship to Christianity including interactions between the Byzantine Empire and Islam directly addresses the relation of Christianity to Byzantine cultures in the 7th-11th century period of growing East-West division."
+      "rationaleAI": "Islam covers Christianity and Byzantine culture (A.3.b)."
     },
     {
       "vsiTitle": "Scotland",
       "vsiAuthor": "Rab Houston",
       "relevantPathsAI": [
-        "D.1.d",
-        "G.3.d.ii"
+        "D.1.d"
       ],
-      "rationaleAI": "Scotland's Reformation history and Presbyterianism as a defining feature address the Scottish Reformation and Reformed and Presbyterian churches as major forms of Protestantism."
+      "rationaleAI": "Scotland covers the Scottish reformation (D.1.d)."
     }
   ],
   "_curatedBy": "ai",

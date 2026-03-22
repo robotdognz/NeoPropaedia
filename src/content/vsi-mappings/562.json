@@ -7,19 +7,24 @@
       "relevantPathsAI": [
         "A",
         "A.1",
+        "A.2",
         "A.3",
-        "B.8"
+        "B.8",
+        "B.8.a",
+        "B.8.b"
       ],
-      "rationaleAI": "Education systems shaped by political agendas address formation of educational policy (A.1) and types of systems (A.3). Digital world pedagogy and contemporary challenges address education in the 20th century (B.8)."
+      "rationaleAI": "Education systems cover policy (A.1), administration (A.2), system types (A.3), and 20th-century trends (B.8, B.8.a, B.8.b)."
     },
     {
       "vsiTitle": "Universities and Colleges",
       "vsiAuthor": "David Palfreyman, Paul Temple",
       "relevantPathsAI": [
         "B.3.c",
+        "B.5",
+        "B.7.c",
         "B.8"
       ],
-      "rationaleAI": "Higher education from medieval origins addresses development of universities in the 12th-century renaissance (B.3.c). Contemporary challenges including digital learning and tuition fees address education in the 20th century (B.8)."
+      "rationaleAI": "Universities cover medieval development (B.3.c), Renaissance (B.5), 19th-century systems (B.7.c), and 20th century (B.8)."
     },
     {
       "vsiTitle": "Ancient Greece",
@@ -27,7 +32,7 @@
       "relevantPathsAI": [
         "B.1.d"
       ],
-      "rationaleAI": "Ancient Greek civilization covering the polis and political concepts provides context for ancient Greek education (B.1.d)."
+      "rationaleAI": "Ancient Greek civilization provides context for Greek education (B.1.d)."
     },
     {
       "vsiTitle": "The Roman Empire",
@@ -35,7 +40,7 @@
       "relevantPathsAI": [
         "B.1.e"
       ],
-      "rationaleAI": "The Roman Empire covering imperial administration and Romanization of cultures provides context for ancient Roman education (B.1.e)."
+      "rationaleAI": "Roman Empire provides context for Roman education (B.1.e)."
     },
     {
       "vsiTitle": "Confucianism",
@@ -44,15 +49,17 @@
         "B.1.b",
         "B.4.b"
       ],
-      "rationaleAI": "Confucianism covering civil service examinations and state ideology addresses ancient Chinese education (B.1.b) and Chinese education from 618 to 1911 (B.4.b)."
+      "rationaleAI": "Confucianism addresses ancient Chinese education (B.1.b) and Chinese education 618-1911 (B.4.b)."
     },
     {
       "vsiTitle": "The Middle Ages",
       "vsiAuthor": "Miri Rubin",
       "relevantPathsAI": [
-        "B.3"
+        "B.3",
+        "B.3.a",
+        "B.3.b"
       ],
-      "rationaleAI": "European history from 500 to 1500 CE covering kingship, political authority, and cultural development provides context for education in the European Middle Ages (B.3)."
+      "rationaleAI": "Medieval Europe covers education in the Middle Ages (B.3), Christian education (B.3.a), and Carolingian revival (B.3.b)."
     },
     {
       "vsiTitle": "Byzantium",
@@ -60,7 +67,7 @@
       "relevantPathsAI": [
         "B.2.b"
       ],
-      "rationaleAI": "The Byzantine Empire covering Greek intellectual tradition and Christian faith addresses Byzantine education and Greek Christian and humanistic culture (B.2.b)."
+      "rationaleAI": "Byzantium addresses Byzantine education (B.2.b)."
     },
     {
       "vsiTitle": "Islamic History",
@@ -68,16 +75,18 @@
       "relevantPathsAI": [
         "B.2.d"
       ],
-      "rationaleAI": "Islamic history covering the mosque as community center and caliphate as governance system provides context for Islamic education (B.2.d)."
+      "rationaleAI": "Islamic civilization addresses Islamic education (B.2.d)."
     },
     {
       "vsiTitle": "The Renaissance",
       "vsiAuthor": "Jerry Brotton",
       "relevantPathsAI": [
         "B.5",
-        "B.5.b"
+        "B.5.a",
+        "B.5.b",
+        "B.5.c"
       ],
-      "rationaleAI": "The Renaissance covering humanism and classical revival addresses development of Renaissance education (B.5) and the humanistic tradition in Italy (B.5.b)."
+      "rationaleAI": "The Renaissance covers Renaissance education (B.5, B.5.a-B.5.c)."
     },
     {
       "vsiTitle": "The Reformation",
@@ -85,7 +94,7 @@
       "relevantPathsAI": [
         "B.5.d"
       ],
-      "rationaleAI": "The Protestant Reformation covering church-state relations, literacy through vernacular Bible translation, and educational impact addresses education during the Reformation and Counter-Reformation (B.5.d)."
+      "rationaleAI": "The Reformation addresses education during the Reformation (B.5.d)."
     },
     {
       "vsiTitle": "The Catholic Reformation",
@@ -93,24 +102,26 @@
       "relevantPathsAI": [
         "B.5.d"
       ],
-      "rationaleAI": "The Catholic Reformation covering missionary activity and global expansion addresses education during the Counter-Reformation (B.5.d)."
+      "rationaleAI": "Catholic Reformation addresses Counter-Reformation education (B.5.d)."
     },
     {
       "vsiTitle": "The Enlightenment",
       "vsiAuthor": "John Robertson",
       "relevantPathsAI": [
         "B.6",
+        "B.6.a",
         "B.6.b"
       ],
-      "rationaleAI": "The Enlightenment covering intellectual achievements and the creation of a public sphere for critical discussion addresses European education in the 17th and 18th centuries (B.6) and educational theories and practices (B.6.b)."
+      "rationaleAI": "The Enlightenment addresses 17th-18th century education (B.6, B.6.a, B.6.b)."
     },
     {
       "vsiTitle": "Rousseau",
       "vsiAuthor": "Robert Wokler",
       "relevantPathsAI": [
-        "B.6.b"
+        "B.6.b",
+        "B.7.b"
       ],
-      "rationaleAI": "Rousseau's educational theory, critique of civilization, and theories of natural human goodness directly address educational theories and practices of the 17th and 18th centuries (B.6.b)."
+      "rationaleAI": "Rousseau addresses educational theory (B.6.b) and new pedagogy (B.7.b)."
     },
     {
       "vsiTitle": "Humanism",
@@ -118,7 +129,7 @@
       "relevantPathsAI": [
         "B.5.a"
       ],
-      "rationaleAI": "Humanism as a worldview grounded in science and reason connects to the development of Renaissance education through Arabic and secular influences on humanism (B.5.a)."
+      "rationaleAI": "Humanism connects to Renaissance humanistic education (B.5.a)."
     },
     {
       "vsiTitle": "Modern China",
@@ -126,23 +137,25 @@
       "relevantPathsAI": [
         "B.8.c"
       ],
-      "rationaleAI": "Modern China covering economic transformation and cultural identity provides context for the modernization of education in Asia (B.8.c)."
+      "rationaleAI": "Modern China connects to modernization of education in Asia (B.8.c)."
     },
     {
       "vsiTitle": "Modern India",
       "vsiAuthor": "Craig Jeffrey",
       "relevantPathsAI": [
-        "B.8.c"
+        "B.8.c",
+        "B.8.d"
       ],
-      "rationaleAI": "Contemporary India covering economic and social transformation provides context for the modernization of education in Asia (B.8.c)."
+      "rationaleAI": "Modern India connects to education modernization in Asia (B.8.c) and emerging nations (B.8.d)."
     },
     {
       "vsiTitle": "Modern Japan",
       "vsiAuthor": "Christopher Goto-Jones",
       "relevantPathsAI": [
+        "B.7.d",
         "B.8.c"
       ],
-      "rationaleAI": "Modern Japan from the Meiji Restoration covering modernization provides context for the modernization of education in Asia (B.8.c)."
+      "rationaleAI": "Modern Japan connects to Western educational spread to Asia (B.7.d) and Asian modernization (B.8.c)."
     },
     {
       "vsiTitle": "Decolonization",
@@ -150,7 +163,7 @@
       "relevantPathsAI": [
         "B.8.d"
       ],
-      "rationaleAI": "Transition from colonial empires to independent nation-states addresses education in colonies and newly emerging nations (B.8.d)."
+      "rationaleAI": "Decolonization addresses education in emerging nations (B.8.d)."
     },
     {
       "vsiTitle": "African History",
@@ -159,7 +172,7 @@
         "B.8.c",
         "B.8.d"
       ],
-      "rationaleAI": "African history from prehistoric origins through independence movements addresses modernization of education in Africa (B.8.c) and education in newly emerging nations (B.8.d)."
+      "rationaleAI": "African history connects to education modernization in Africa (B.8.c) and emerging nations (B.8.d)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
@@ -168,32 +181,34 @@
         "B.7",
         "B.7.a"
       ],
-      "rationaleAI": "The Industrial Revolution covering social transformation in Britain addresses Western education in the 19th century (B.7) and the social setting of nationalism, industrialism, and urbanization (B.7.a)."
+      "rationaleAI": "Industrial Revolution provides the social setting for 19th-century education (B.7, B.7.a)."
     },
     {
       "vsiTitle": "Socialism",
       "vsiAuthor": "Michael Newman",
       "relevantPathsAI": [
+        "A.3.d",
         "B.8.a"
       ],
-      "rationaleAI": "Socialism as a political ideology covering social democracy and communist approaches provides context for political, social, and economic trends in 20th-century education (B.8.a)."
+      "rationaleAI": "Socialism connects to party-controlled systems (A.3.d) and 20th-century trends (B.8.a)."
     },
     {
       "vsiTitle": "Catholicism",
       "vsiAuthor": "Gerald O'Collins",
       "relevantPathsAI": [
+        "A.3.e",
         "B.3.a"
       ],
-      "rationaleAI": "Roman Catholicism covering early Christianity and medieval papacy addresses Christian education and development of monastic schools (B.3.a)."
+      "rationaleAI": "Catholicism connects to sectarian systems (A.3.e) and early Christian education (B.3.a)."
     },
     {
       "vsiTitle": "Puritanism",
       "vsiAuthor": "Francis J. Bremer",
       "relevantPathsAI": [
-        "B.5.d",
+        "A.3.e",
         "B.6.c"
       ],
-      "rationaleAI": "Puritanism covering education and its transplantation to colonial New England addresses education during the Reformation (B.5.d) and European influences in New World educational development (B.6.c)."
+      "rationaleAI": "Puritanism connects to sectarian systems (A.3.e) and New World education (B.6.c)."
     },
     {
       "vsiTitle": "Colonial America",
@@ -201,7 +216,7 @@
       "relevantPathsAI": [
         "B.6.c"
       ],
-      "rationaleAI": "Colonial America covering trans-Atlantic flows of ideas and cultural mixing addresses European influences in New World educational development (B.6.c)."
+      "rationaleAI": "Colonial America addresses New World educational development (B.6.c)."
     },
     {
       "vsiTitle": "Globalization",
@@ -209,15 +224,15 @@
       "relevantPathsAI": [
         "B.8.a"
       ],
-      "rationaleAI": "Globalization covering interconnected economic, political, and cultural processes addresses political, social, and economic trends in 20th-century education (B.8.a)."
+      "rationaleAI": "Globalization connects to 20th-century educational trends (B.8.a)."
     },
     {
       "vsiTitle": "Learning",
       "vsiAuthor": "Mark Haselgrove",
       "relevantPathsAI": [
-        "B.8.b"
+        "B.7.b"
       ],
-      "rationaleAI": "Psychological science of learning through conditioning theories addresses traditional and experimental educational movements in the West (B.8.b)."
+      "rationaleAI": "Learning theory addresses new pedagogy and psychology (B.7.b)."
     },
     {
       "vsiTitle": "The History of Childhood",
@@ -226,7 +241,7 @@
         "B.7",
         "B.8"
       ],
-      "rationaleAI": "Global historical survey of childhood covering reform movements and international organizations' impact on children addresses Western education in the 19th century (B.7) and education in the 20th century (B.8)."
+      "rationaleAI": "History of childhood connects to 19th-century (B.7) and 20th-century education (B.8)."
     },
     {
       "vsiTitle": "Philosophy in the Islamic World",
@@ -234,16 +249,15 @@
       "relevantPathsAI": [
         "B.2.d"
       ],
-      "rationaleAI": "Philosophy in Islamic lands covering intellectual traditions provides context for Islamic education (B.2.d)."
+      "rationaleAI": "Islamic philosophy connects to Islamic education (B.2.d)."
     },
     {
       "vsiTitle": "Gandhi",
       "vsiAuthor": "Bhikhu Parekh",
       "relevantPathsAI": [
-        "B.7.d",
         "B.8.c"
       ],
-      "rationaleAI": "Gandhi's philosophical positions on citizenship and education connect to the spread of Western educational practices to Asian countries (B.7.d) and modernization of education in Asia (B.8.c)."
+      "rationaleAI": "Gandhi connects to education modernization in Asia (B.8.c)."
     },
     {
       "vsiTitle": "Classics",
@@ -252,7 +266,7 @@
         "B.1.d",
         "B.1.e"
       ],
-      "rationaleAI": "Encompasses the study of ancient Greek and Roman civilizations including philosophy, drama, and political thought, directly relevant to ancient Greek education (Plato, Aristotle) and ancient Roman education systems."
+      "rationaleAI": "Classics connects to Greek (B.1.d) and Roman education (B.1.e)."
     },
     {
       "vsiTitle": "Buddhism",
@@ -260,25 +274,26 @@
       "relevantPathsAI": [
         "B.1.a"
       ],
-      "rationaleAI": "Covers Buddhism originating in South Asia circa 5th century BC with monastic institutions and doctrinal traditions, relevant to ancient Indian education where Buddhist monastic centers like Nalanda were major educational institutions."
+      "rationaleAI": "Buddhist monasteries connect to ancient Indian education (B.1.a)."
     },
     {
       "vsiTitle": "Reading",
       "vsiAuthor": "Belinda Jack",
       "relevantPathsAI": [
+        "B.7",
         "B.7.a",
-        "B.8.a"
+        "B.8"
       ],
-      "rationaleAI": "Covers the evolution from elite oral reading to mass literacy driven by printing, paper-making, and public education, including the eighteenth-century literacy boom, directly relevant to Western education development in the 19th and 20th centuries and the relationship between literacy and economic development."
+      "rationaleAI": "Literacy connects to 19th-century (B.7, B.7.a) and 20th-century education (B.8)."
     },
     {
       "vsiTitle": "Calvinism",
       "vsiAuthor": "Jon Balserak",
       "relevantPathsAI": [
-        "B.5.d",
-        "B.6.b"
+        "A.3.e",
+        "B.5.d"
       ],
-      "rationaleAI": "Covers Calvinism's influence on education, the arts, and social institutions across multiple continents, relevant to education during the Reformation and Counter-Reformation and educational theories in the 17th and 18th centuries."
+      "rationaleAI": "Calvinism connects to sectarian systems (A.3.e) and Reformation education (B.5.d)."
     }
   ],
   "_curatedBy": "ai",

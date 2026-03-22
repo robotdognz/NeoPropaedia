@@ -5,18 +5,24 @@
       "vsiTitle": "Perception",
       "vsiAuthor": "Brian J. Rogers",
       "relevantPathsAI": [
-        "A",
         "B",
         "B.2",
+        "B.2.c",
         "C",
         "C.1",
         "C.2",
         "C.3",
+        "C.3.a",
+        "C.3.b",
+        "C.3.c",
+        "C.4",
         "E",
         "F",
-        "G"
+        "F.1",
+        "G",
+        "G.1"
       ],
-      "rationaleAI": "Core perceptual psychology covering attention (A), vision (B.2, E, F), Gestalt organization (C.3), constancy (C.3.c), and illusions (G)."
+      "rationaleAI": "Visual perception of lightness, colour, form, depth, and motion addresses vision (B.2) and perceptual processes (B.2.c). Perceptual illusions address G and G.1. Contemporary theories address C.1 and C.2. Gestalt organization addresses C.3.a. Context effects address C.3.b. Perceptual constancy addresses C.3.c. Depth and motion perception address E and F."
     },
     {
       "vsiTitle": "The Eye",
@@ -27,40 +33,47 @@
         "B.2.b",
         "B.2.c",
         "B.2.d",
-        "E.2",
-        "F.1"
+        "E.2"
       ],
-      "rationaleAI": "Retinal anatomy addresses retinal work (B.2.a), transduction (B.2.b), visual perception (B.2.c), cortical responses (B.2.d), depth perception (E.2), and motion cues (F.1)."
+      "rationaleAI": "Retinal anatomy addresses the work of the retina (B.2.a). Conversion to neural messages addresses the transduction process (B.2.b). Pattern recognition addresses perceptual processes (B.2.c). Optic nerve connections address cortical responses (B.2.d). Three-dimensional perception addresses depth perception (E.2)."
     },
     {
       "vsiTitle": "The Brain",
       "vsiAuthor": "Michael O'Shea",
       "relevantPathsAI": [
         "A.5",
-        "B.2.d",
-        "G.2.a"
+        "B",
+        "B.1",
+        "B.2.d"
       ],
-      "rationaleAI": "Cortical sensory processing addresses visual cortical responses (B.2.d), attention physiology (A.5), and neurological hallucination factors (G.2.a)."
+      "rationaleAI": "Cerebral cortex and sensory processing address physiological mechanisms of attention (A.5) and the senses in general (B.1). Cortical responses address B.2.d."
     },
     {
       "vsiTitle": "Cognitive Neuroscience",
       "vsiAuthor": "Richard Passingham",
       "relevantPathsAI": [
         "A",
+        "A.1",
+        "A.2",
+        "A.3",
         "A.5",
-        "A.6",
-        "B.2.d"
+        "B",
+        "B.1",
+        "C"
       ],
-      "rationaleAI": "Neural attention and perception address attention theories (A.2), physiological mechanisms (A.5), information theory (A.6), and cortical responses (B.2.d)."
+      "rationaleAI": "Neuroscience of attention addresses A, A.1, A.2, A.3, and A.5. Brain imaging addresses sensation (B, B.1). Cognitive components connect to perception (C)."
     },
     {
       "vsiTitle": "Consciousness",
       "vsiAuthor": "Susan Blackmore",
       "relevantPathsAI": [
         "A",
-        "G.2"
+        "A.1",
+        "G.2",
+        "G.2.a",
+        "G.2.b"
       ],
-      "rationaleAI": "Attention mechanisms address attention definition (A.1), and altered states relate to hallucinations (G.2)."
+      "rationaleAI": "Neural correlates and attention mechanisms address A and A.1. Altered states address hallucinations (G.2), neurological factors (G.2.a), and types of hallucinatory experience (G.2.b)."
     },
     {
       "vsiTitle": "Sound",
@@ -70,7 +83,7 @@
         "B.3.a",
         "B.3.b"
       ],
-      "rationaleAI": "Hearing mechanisms address ear structures (B.3.a) and auditory processing (B.3.b)."
+      "rationaleAI": "Sound physics and hearing mechanisms address ear mechanisms (B.3.a). Pitch, loudness, and localization address auditory nerve processing (B.3.b)."
     },
     {
       "vsiTitle": "Light",
@@ -78,7 +91,7 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Physics of light provides the basis for understanding vision (B.2)."
+      "rationaleAI": "Physics of light provides the foundation for understanding vision (B.2)."
     },
     {
       "vsiTitle": "Pain",
@@ -87,7 +100,7 @@
         "B.4",
         "B.4.d"
       ],
-      "rationaleAI": "Pain perception addresses the sensory experience of pain (B.4.d)."
+      "rationaleAI": "Neuroscience of pain perception addresses the sensory experience of pain (B.4.d) and cutaneous senses (B.4)."
     },
     {
       "vsiTitle": "Smell",
@@ -95,63 +108,67 @@
       "relevantPathsAI": [
         "B.8"
       ],
-      "rationaleAI": "Olfactory processing addresses the olfactory sense (B.8)."
+      "rationaleAI": "Olfaction physiology covering neural processing and genetic underpinnings directly addresses the olfactory sense (B.8)."
     },
     {
       "vsiTitle": "Human Physiology",
       "vsiAuthor": "Jamie A. Davies",
       "relevantPathsAI": [
-        "A.5",
         "B",
-        "B.5",
-        "B.6"
+        "B.1",
+        "B.5"
       ],
-      "rationaleAI": "Sensory physiology addresses attention mechanisms (A.5), sensation (B), kinesthesis (B.5), and vestibular function (B.6)."
+      "rationaleAI": "Sensory perception addresses the senses in general (B.1) and sensation (B). Motor responses connect to kinesthesis (B.5)."
     },
     {
       "vsiTitle": "Human Anatomy",
       "vsiAuthor": "Leslie Klenerman",
       "relevantPathsAI": [
+        "B",
+        "B.1",
         "B.3.a",
         "B.6"
       ],
-      "rationaleAI": "Sensory organs address ear structures (B.3.a) and vestibular apparatus (B.6)."
+      "rationaleAI": "Sensory organs address the senses in general (B.1). Ear anatomy connects to B.3.a. Vestibular structures address B.6."
     },
     {
       "vsiTitle": "Synaesthesia",
       "vsiAuthor": "Julia Simner",
       "relevantPathsAI": [
+        "B",
         "C.4",
-        "E.3",
+        "G",
         "G.1"
       ],
-      "rationaleAI": "Cross-modal experiences address perceptual individual differences (C.4), sense interrelations (E.3), and illusory types (G.1)."
+      "rationaleAI": "Cross-modal sensory experiences address illusory experience (G.1) and perceptual illusions (G). Individual variations address differences in perceptual functioning (C.4)."
     },
     {
       "vsiTitle": "Memory",
       "vsiAuthor": "Jonathan K. Foster",
       "relevantPathsAI": [
-        "A.4"
+        "D.3"
       ],
-      "rationaleAI": "Attention-memory relationship addresses attention determinants (A.4)."
+      "rationaleAI": "Memory systems connect to factors affecting time perception (D.3) through temporal processing and subjective duration."
     },
     {
       "vsiTitle": "Thought",
       "vsiAuthor": "Tim Bayne",
       "relevantPathsAI": [
-        "C.4"
+        "A",
+        "C"
       ],
-      "rationaleAI": "Thinking-perceiving boundaries address perceptual functioning differences (C.4)."
+      "rationaleAI": "The relationship between thought and perception addresses attention (A) and perception processes (C)."
     },
     {
       "vsiTitle": "Psychology",
       "vsiAuthor": "Gillian Butler, Freda McManus",
       "relevantPathsAI": [
         "A",
+        "B",
         "C",
-        "G"
+        "C.4"
       ],
-      "rationaleAI": "Cognitive psychology addresses attention (A), perceptual organization (C), and illusions (G)."
+      "rationaleAI": "Cognitive psychology covering perception, attention, and memory addresses A, B, C. Individual differences address C.4."
     },
     {
       "vsiTitle": "Waves",
@@ -160,75 +177,82 @@
         "B.2",
         "B.3"
       ],
-      "rationaleAI": "Wave phenomena provide physical basis for vision (B.2) and audition (B.3)."
+      "rationaleAI": "Electromagnetic radiation provides the basis for vision (B.2). Sound waves address audition (B.3)."
     },
     {
       "vsiTitle": "The Psychology of Music",
       "vsiAuthor": "Elizabeth Hellmuth Margulis",
       "relevantPathsAI": [
+        "B.3",
         "B.3.b",
-        "D"
+        "C"
       ],
-      "rationaleAI": "Music processing addresses auditory processing (B.3.b) and time perception (D.2)."
+      "rationaleAI": "Perceptual mechanisms of musicality address audition (B.3) and pitch/loudness processing (B.3.b). Aesthetic responses address perception (C)."
     },
     {
       "vsiTitle": "Dreaming",
       "vsiAuthor": "J. Allan Hobson",
       "relevantPathsAI": [
         "G.2",
-        "G.2.a"
+        "G.2.a",
+        "G.2.b"
       ],
-      "rationaleAI": "Dream mechanisms address hallucinations (G.2) and neurological factors (G.2.a)."
+      "rationaleAI": "Brain mechanisms generating dreams address neurological factors in hallucinations (G.2.a) and types of hallucinatory experience (G.2.b)."
     },
     {
       "vsiTitle": "Autism",
       "vsiAuthor": "Uta Frith",
       "relevantPathsAI": [
+        "B",
         "C.4"
       ],
-      "rationaleAI": "Sensory processing differences address perceptual functioning variations (C.4)."
+      "rationaleAI": "Sensory processing differences address sensation (B). Perceptual strengths and deficits address differences in perceptual functioning (C.4)."
     },
     {
       "vsiTitle": "Madness",
       "vsiAuthor": "Andrew T. Scull",
       "relevantPathsAI": [
-        "G.2"
+        "G.2",
+        "G.2.b"
       ],
-      "rationaleAI": "Mental disturbance and hallucinations address hallucinatory experience (G.2)."
+      "rationaleAI": "Mental disturbance including psychosis addresses types of hallucinatory experience (G.2.b) and hallucinations (G.2)."
     },
     {
       "vsiTitle": "Emotion",
       "vsiAuthor": "Dylan Evans",
       "relevantPathsAI": [
-        "A.4"
+        "A.4",
+        "C.4"
       ],
-      "rationaleAI": "Emotions' role in attention addresses attention determinants (A.4)."
+      "rationaleAI": "Emotional influences on cognition connect to determinants of attention (A.4). Cross-cultural variation relates to differences in perceptual functioning (C.4)."
     },
     {
       "vsiTitle": "Drugs",
       "vsiAuthor": "Leslie Iversen",
       "relevantPathsAI": [
         "D.3",
-        "G.2"
+        "G.2",
+        "G.2.b"
       ],
-      "rationaleAI": "Drug effects address time perception factors (D.3) and drug-induced hallucinations (G.2)."
+      "rationaleAI": "Drug effects on perception address factors affecting time perception (D.3). Psychoactive substances address hallucinations (G.2, G.2.b)."
     },
     {
       "vsiTitle": "Sleep",
       "vsiAuthor": "Steven W. Lockley, Russell G. Foster",
       "relevantPathsAI": [
-        "D.3"
+        "A.4",
+        "D"
       ],
-      "rationaleAI": "Covers circadian regulation through melatonin and factors affecting time perception including sleep deprivation effects on human functioning, directly relevant to factors affecting time perception such as drugs and altered states."
+      "rationaleAI": "Sleep mechanisms affecting alertness connect to determinants of attention (A.4). Circadian regulation relates to perception of time (D)."
     },
     {
       "vsiTitle": "Freud",
       "vsiAuthor": "Anthony Storr",
       "relevantPathsAI": [
         "A.4",
-        "G.2.b"
+        "G.2"
       ],
-      "rationaleAI": "Freud's theories of the unconscious, dream interpretation, and psychoanalysis address unconscious influences as determinants of attention and types of hallucinatory experience through the lens of wish fulfillment and the unconscious."
+      "rationaleAI": "Unconscious theory addresses determinants of attention (A.4). Dream interpretation connects to hallucinations (G.2)."
     },
     {
       "vsiTitle": "Schizophrenia",
@@ -238,42 +262,42 @@
         "G.2.a",
         "G.2.b"
       ],
-      "rationaleAI": "Schizophrenia characterized by hallucinations and delusions directly addresses types of hallucinatory experience and neurological factors in hallucinations, including brain imaging evidence."
+      "rationaleAI": "Hallucinations and delusions address G.2. Brain imaging addresses neurological factors (G.2.a). Subjective experience addresses types of hallucination (G.2.b)."
     },
     {
       "vsiTitle": "Social Psychology",
       "vsiAuthor": "Richard J. Crisp",
       "relevantPathsAI": [
         "A.4",
+        "C.3.b",
         "E.4"
       ],
-      "rationaleAI": "Covers social suggestion and interpersonal influence as determinants of attention, and social psychological insights into group perception relevant to social and interpersonal aspects of space perception."
+      "rationaleAI": "Social influence addresses determinants of attention (A.4). Social context effects on perception address C.3.b. Interpersonal perception addresses social space perception (E.4)."
     },
     {
       "vsiTitle": "Hormones",
       "vsiAuthor": "Martin Luck",
       "relevantPathsAI": [
-        "B.7",
-        "B.8"
+        "A.4",
+        "A.5"
       ],
-      "rationaleAI": "Covers hormonal regulation affecting appetite control and circadian adjustment, relevant to factors affecting taste and olfactory sensitivity, and the physiological mechanisms underlying sensory experience."
+      "rationaleAI": "Hormonal effects on attentional states connect to determinants of attention (A.4). Endocrine-neural interactions address physiological mechanisms (A.5)."
     },
     {
       "vsiTitle": "Clinical Psychology",
       "vsiAuthor": "Susan Llewellyn, Katie Aafjes-van Doorn",
       "relevantPathsAI": [
-        "G.2.b"
+        "G.2"
       ],
-      "rationaleAI": "Covers major therapeutic approaches for conditions involving hallucinatory and delusional experience including cognitive and behaviour therapy, directly relevant to types of hallucinatory experience and their treatment."
+      "rationaleAI": "Treatment of perceptual disturbances in psychological disorders addresses hallucinations (G.2)."
     },
     {
       "vsiTitle": "Cognitive Behavioural Therapy",
       "vsiAuthor": "Freda McManus",
       "relevantPathsAI": [
-        "A.2",
-        "C.2"
+        "C.3.b"
       ],
-      "rationaleAI": "CBT's fundamental principle that thoughts, mental events, and behaviours influence emotional states addresses stimulus-response theories of attention and central perceptual problems relating cognition to perception."
+      "rationaleAI": "CBT's principle that cognition shapes experience connects to context effects on perception (C.3.b)."
     }
   ],
   "_curatedBy": "ai",

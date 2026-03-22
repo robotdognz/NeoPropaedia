@@ -7,10 +7,13 @@
       "relevantPathsAI": [
         "A",
         "B",
-        "C.5",
+        "B.9",
+        "B.13",
+        "B.14",
+        "C.2",
         "D"
       ],
-      "rationaleAI": "Periodic table maps to systematic classification (A), element groups (B), synthetic elements (C.5), and elemental origins (D)."
+      "rationaleAI": "Periodic table history and structure address systematic classification (A). Elements 113-118 address transactinides (B.14). Noble gases addressed (B.9). Actinides addressed (B.13). Stable vs. radioactive addressed (C.2). Elemental origins addressed (D)."
     },
     {
       "vsiTitle": "The Elements",
@@ -19,72 +22,78 @@
         "A",
         "B",
         "B.1",
+        "B.5",
         "B.9",
         "C.1",
+        "C.5",
         "D",
+        "D.1",
+        "D.2",
         "D.3"
       ],
-      "rationaleAI": "Chemical elements cover classification (A), hydrogen and water (B.1), noble gases (B.9), metals/nonmetals (C.1), and origins (D, D.3)."
+      "rationaleAI": "Elements from ancient theory through modern synthesis address classification (A). Hydrogen and water address B.1. Carbon address B.5. Noble gases address B.9. Metals/nonmetals address C.1. Transuranic elements address C.5. Big Bang origin addresses D, D.1, D.2, D.3."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
       "relevantPathsAI": [
         "A",
-        "B",
-        "C.1"
+        "B"
       ],
-      "rationaleAI": "Foundational chemistry maps to classification (A), element groups (B), and metals/nonmetals (C.1)."
+      "rationaleAI": "Periodic table and chemical bonding address classification (A) and element groups (B)."
     },
     {
       "vsiTitle": "The History of Chemistry",
       "vsiAuthor": "William H. Brock",
       "relevantPathsAI": [
-        "A",
-        "B"
+        "A"
       ],
-      "rationaleAI": "Chemistry history maps to periodic law (A) and element groups (B)."
+      "rationaleAI": "Historical development of the periodic table addresses systematic classification (A)."
     },
     {
       "vsiTitle": "Physical chemistry",
       "vsiAuthor": "Peter Atkins",
       "relevantPathsAI": [
         "A",
-        "B",
-        "C.1"
+        "B"
       ],
-      "rationaleAI": "Quantum mechanics and bonding connect to classification (A), groups (B), and metals/nonmetals (C.1)."
+      "rationaleAI": "Quantum mechanics and chemical bonding address classification (A) and element groups (B)."
     },
     {
       "vsiTitle": "Nuclear Physics",
       "vsiAuthor": "Frank Close",
       "relevantPathsAI": [
         "A",
+        "B.13",
         "C.2",
         "C.5",
         "D.3"
       ],
-      "rationaleAI": "Nuclear foundations connect to classification (A), radioactive elements (C.2), synthetic elements (C.5), and stellar origins (D.3)."
+      "rationaleAI": "Atomic structure addresses classification (A). Stellar nuclei address D.3. Nuclear stability addresses C.2. Actinides address B.13. LHC connects to synthetic elements (C.5)."
     },
     {
       "vsiTitle": "Isotopes",
       "vsiAuthor": "Rob Ellam",
       "relevantPathsAI": [
+        "A",
+        "B.1",
         "C.2",
         "D",
+        "D.1",
         "D.2"
       ],
-      "rationaleAI": "Stable and radioactive isotopes connect to element classification (C.2) and abundances (D, D.2)."
+      "rationaleAI": "Isotope variants address classification (A). Heavy water connects to B.1. Radioactive decay addresses C.2. Geochronology addresses D.1. Solar system origins address D.2."
     },
     {
       "vsiTitle": "Radioactivity",
       "vsiAuthor": "Claudio Tuniz",
       "relevantPathsAI": [
+        "B.13",
         "C.2",
-        "C.5",
-        "D.1"
+        "D",
+        "D.3"
       ],
-      "rationaleAI": "Radioisotopes connect to radioactive elements (C.2), synthetic elements (C.5), and Earth abundances (D.1)."
+      "rationaleAI": "Radioisotopes address stable/radioactive elements (C.2). Stellar processes address D.3. Actinides address B.13. Natural abundance addresses D."
     },
     {
       "vsiTitle": "Water",
@@ -93,7 +102,7 @@
         "B.1",
         "D.1.b"
       ],
-      "rationaleAI": "Water's properties map to hydrogen and water (B.1) and hydrosphere abundances (D.1.b)."
+      "rationaleAI": "Water properties address hydrogen and water (B.1). Earth's surface water connects to hydrosphere (D.1.b)."
     },
     {
       "vsiTitle": "Molecules",
@@ -101,51 +110,56 @@
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "Carbon-based molecular structures connect to the carbon group (B.5)."
+      "rationaleAI": "Carbon-based molecular science addresses the carbon group (B.5)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
       "relevantPathsAI": [
-        "B",
+        "B.5",
         "C.1",
         "C.7"
       ],
-      "rationaleAI": "Metals, ceramics, and polymers connect to element groups (B), metals/nonmetals (C.1), and technologically significant elements (C.7)."
+      "rationaleAI": "Metals, ceramics, and polymers address C.1. Carbon compounds address B.5. Engineering applications address C.7."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
       "relevantPathsAI": [
-        "C.3",
+        "C.1",
+        "C.6",
+        "D.1",
         "D.1.a"
       ],
-      "rationaleAI": "Mineral families connect to native/combined elements (C.3) and crustal abundances (D.1.a)."
+      "rationaleAI": "Mineral composition addresses C.1. Essential nutrients address C.6. Crustal occurrence addresses D.1 and D.1.a."
     },
     {
       "vsiTitle": "Biochemistry",
       "vsiAuthor": "Mark Lorch",
       "relevantPathsAI": [
+        "B.5",
         "C.6"
       ],
-      "rationaleAI": "Chemistry of living cells connects to biologically active elements (C.6)."
+      "rationaleAI": "Carbon in biochemistry addresses B.5. Life chemistry connects to biologically active elements (C.6)."
     },
     {
       "vsiTitle": "Nuclear power",
       "vsiAuthor": "Maxwell Irvine",
       "relevantPathsAI": [
+        "B.13",
         "C.2",
         "C.5"
       ],
-      "rationaleAI": "Nuclear fission of uranium connects to radioactive elements (C.2) and synthetic elements (C.5)."
+      "rationaleAI": "Uranium and plutonium address actinides (B.13). Fusion addresses C.2. Transuranium elements address C.5."
     },
     {
       "vsiTitle": "Stars",
       "vsiAuthor": "Andrew King",
       "relevantPathsAI": [
+        "B.1",
         "D.3"
       ],
-      "rationaleAI": "Stellar nucleosynthesis maps to elemental origins in stars (D.3)."
+      "rationaleAI": "Hydrogen burning and stellar nucleosynthesis address D.3 and hydrogen (B.1)."
     },
     {
       "vsiTitle": "The Sun",
@@ -153,23 +167,26 @@
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Solar fusion connects to stellar origins of elements (D.3)."
+      "rationaleAI": "Solar nuclear processes address origin of elements in stars (D.3)."
     },
     {
       "vsiTitle": "Cosmology",
       "vsiAuthor": "Peter Coles",
       "relevantPathsAI": [
-        "D"
+        "D",
+        "D.2",
+        "D.3"
       ],
-      "rationaleAI": "Big Bang connects to origin of elements (D)."
+      "rationaleAI": "Big Bang theory addresses origin of elements (D) in the universe and stars (D.3). Solar system context addresses D.2."
     },
     {
       "vsiTitle": "The Earth",
       "vsiAuthor": "Martin Redfern",
       "relevantPathsAI": [
-        "D.1"
+        "D.1",
+        "D.1.a"
       ],
-      "rationaleAI": "Earth science connects to elemental abundance on Earth (D.1)."
+      "rationaleAI": "Earth science addresses elements on Earth (D.1) and in the crust (D.1.a)."
     },
     {
       "vsiTitle": "Geophysics",
@@ -177,7 +194,7 @@
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Earth's structure connects to elemental abundance on Earth (D.1)."
+      "rationaleAI": "Earth's internal structure addresses elements on Earth (D.1)."
     },
     {
       "vsiTitle": "The Atmosphere",
@@ -185,7 +202,7 @@
       "relevantPathsAI": [
         "D.1.c"
       ],
-      "rationaleAI": "Atmospheric composition connects to atmospheric elemental abundance (D.1.c)."
+      "rationaleAI": "Atmospheric composition addresses elements in the atmosphere (D.1.c)."
     },
     {
       "vsiTitle": "Earth System Science",
@@ -194,7 +211,7 @@
         "D.1",
         "D.1.d"
       ],
-      "rationaleAI": "Earth systems connect to elemental abundance on Earth (D.1) and in the biosphere (D.1.d)."
+      "rationaleAI": "Carbon cycling and biosphere address elements on Earth (D.1) and in the biosphere (D.1.d)."
     },
     {
       "vsiTitle": "Planets",
@@ -202,16 +219,17 @@
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Solar System composition connects to elemental abundance in the solar system (D.2)."
+      "rationaleAI": "Planetary composition addresses elements in the solar system (D.2)."
     },
     {
       "vsiTitle": "Matter",
       "vsiAuthor": "Geoff Cottrell",
       "relevantPathsAI": [
         "A",
-        "D.3"
+        "C.1",
+        "D"
       ],
-      "rationaleAI": "Covers physics of matter from elementary particles through atoms to galactic structures, tracing origins to the Big Bang — directly relevant to systematic classification of elements and their abundances in stars."
+      "rationaleAI": "Physics of matter addresses classification (A) and metals/nonmetals (C.1). Big Bang origin addresses D."
     },
     {
       "vsiTitle": "Organic Chemistry",
@@ -219,7 +237,7 @@
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "Covers the chemistry of carbon-containing compounds including bonding theory and functional groups — directly relevant to the carbon group of elements."
+      "rationaleAI": "Carbon chemistry addresses the carbon group (B.5)."
     },
     {
       "vsiTitle": "Galaxies",
@@ -227,15 +245,16 @@
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Covers chemical element synthesis in stars and galactic evolution — directly relevant to the origin and abundance of elements in the stars."
+      "rationaleAI": "Stellar nucleosynthesis addresses origin of elements in stars (D.3)."
     },
     {
       "vsiTitle": "Rocks",
       "vsiAuthor": "Jan Zalasiewicz",
       "relevantPathsAI": [
+        "D.1",
         "D.1.a"
       ],
-      "rationaleAI": "Covers the chemical composition of Earth's crust through rock types — relevant to occurrence of elements in the crust."
+      "rationaleAI": "Rock geology addresses elements on Earth (D.1) and in the crust (D.1.a)."
     }
   ],
   "_curatedBy": "ai",

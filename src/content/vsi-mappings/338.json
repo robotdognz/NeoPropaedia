@@ -12,25 +12,24 @@
         "B.3",
         "B.4",
         "D",
-        "D.1",
         "D.2",
         "D.2.a",
         "D.3",
         "E",
         "F.4"
       ],
-      "rationaleAI": "Core developmental biology covering development scope (A), growth (B.1), morphogenesis (B.2), differentiation (B.3), control through Sonic hedgehog signaling (B.4), animal development from fertilized egg (D.1, D.2.a), organ formation (D.3), aging (E), and identical twins (F.4)."
+      "rationaleAI": "Biological development addresses A. Cell division addresses growth (B.1). Hox gene patterning addresses morphogenesis (B.2). Stem cells address differentiation (B.3). Gene expression timing addresses control (B.4). Embryo formation addresses D.2 and D.2.a. Nervous system formation addresses D.3. Aging connects to E. Identical twins address F.4."
     },
     {
       "vsiTitle": "Stem Cells",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
         "B.3",
-        "B.4",
+        "D",
         "F.1",
         "F.5"
       ],
-      "rationaleAI": "Stem cell differentiation addresses differentiation (B.3) and developmental control (B.4), while regenerative medicine relates to biological regeneration (F.1) and in vitro development (F.5)."
+      "rationaleAI": "Differentiation mechanisms address B.3. Therapeutic potential connects to D. Regenerative medicine addresses F.1. Cell cultures address F.5."
     },
     {
       "vsiTitle": "The Cell",
@@ -38,9 +37,9 @@
       "relevantPathsAI": [
         "B.1",
         "B.3",
-        "B.4"
+        "F.5"
       ],
-      "rationaleAI": "Cell division and differentiation address growth (B.1), differentiation (B.3), and programmed cell death as developmental control (B.4)."
+      "rationaleAI": "Cell division addresses growth (B.1). Differentiation addresses B.3. Cell culture connects to F.5."
     },
     {
       "vsiTitle": "Plants",
@@ -49,19 +48,22 @@
         "C",
         "C.1",
         "C.2",
+        "C.2.b",
         "C.3",
         "C.4"
       ],
-      "rationaleAI": "Plant evolution addresses life cycles and alternation of generations (C.1), pollination (C.2.b), seedling development (C.3), and sporophyte development (C.4)."
+      "rationaleAI": "Plant biology addresses plant development (C, C.1). Pollination addresses C.2.b. Seed development addresses C.3. Sporophyte body addresses C.4. Reproduction addresses C.2."
     },
     {
       "vsiTitle": "Genes",
       "vsiAuthor": "Jonathan Slack",
       "relevantPathsAI": [
         "B.3",
-        "B.4"
+        "B.4",
+        "C.2.a",
+        "D"
       ],
-      "rationaleAI": "Gene expression through cell division relates to differentiation (B.3) and control of development (B.4)."
+      "rationaleAI": "Gene expression addresses differentiation (B.3) and control (B.4). Sex linkage connects to formation of sex cells (C.2.a). Cell division connects to animal development (D)."
     },
     {
       "vsiTitle": "Hormones",
@@ -70,7 +72,7 @@
         "B.4",
         "D.4"
       ],
-      "rationaleAI": "Growth hormone addresses control of development (B.4), and hormonal maturation relates to postembryonic development (D.4)."
+      "rationaleAI": "Growth regulation addresses control of development (B.4). Growth hormone connects to postembryonic development (D.4)."
     },
     {
       "vsiTitle": "Cancer",
@@ -78,7 +80,7 @@
       "relevantPathsAI": [
         "F.3"
       ],
-      "rationaleAI": "Uncontrolled cell growth relates to biological malformation (F.3)."
+      "rationaleAI": "Uncontrolled cell growth addresses biological malformation (F.3)."
     },
     {
       "vsiTitle": "Molecular Biology",
@@ -87,17 +89,16 @@
         "B.3",
         "B.4"
       ],
-      "rationaleAI": "Gene expression mechanisms address differentiation (B.3) and molecular control of development (B.4)."
+      "rationaleAI": "Gene expression addresses differentiation (B.3). Hereditary theory connects to control of development (B.4)."
     },
     {
       "vsiTitle": "The Animal Kingdom",
       "vsiAuthor": "Peter Holland",
       "relevantPathsAI": [
         "D",
-        "D.2",
         "D.3"
       ],
-      "rationaleAI": "Developmental biology across phyla addresses animal development (D), embryo formation (D.2), and organ formation (D.3)."
+      "rationaleAI": "Developmental biology and organ systems address animal development (D) and organ formation (D.3)."
     },
     {
       "vsiTitle": "Ageing",
@@ -108,24 +109,26 @@
         "E.2",
         "E.3"
       ],
-      "rationaleAI": "Human ageing addresses senescence in mammals (E.1), causes of aging (E.2), and duration of life (E.3)."
+      "rationaleAI": "Aging changes address aging and decline (E). Physiological changes address senescence (E.1). Risk factors address causes (E.2). Life expectancy addresses duration (E.3)."
     },
     {
       "vsiTitle": "Mammals",
       "vsiAuthor": "T. S. Kemp",
       "relevantPathsAI": [
         "D",
-        "D.4"
+        "D.4",
+        "E.1"
       ],
-      "rationaleAI": "Mammalian reproductive strategies address animal development (D) and postembryonic development (D.4)."
+      "rationaleAI": "Mammalian development addresses D. Juvenile-adult transformation addresses D.4. Lifespan addresses senescence (E.1)."
     },
     {
       "vsiTitle": "Amphibians",
       "vsiAuthor": "T. S. Kemp",
       "relevantPathsAI": [
+        "D",
         "D.4"
       ],
-      "rationaleAI": "Tadpole metamorphosis exemplifies postembryonic transformation (D.4)."
+      "rationaleAI": "Tadpole metamorphosis addresses animal development (D) and postembryonic development (D.4)."
     },
     {
       "vsiTitle": "Symbiosis",
@@ -133,25 +136,26 @@
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Shows how symbiotic interactions with microbiomes influence biological development and growth processes in both plants and animals (B.4)."
+      "rationaleAI": "Symbiotic developmental interactions address control of development (B.4)."
     },
     {
       "vsiTitle": "Mathematical Biology",
       "vsiAuthor": "Philip K Maini",
       "relevantPathsAI": [
-        "B.2",
-        "B.4"
+        "B.1",
+        "B.2"
       ],
-      "rationaleAI": "Covers mathematical modeling of pattern formation including Turing patterns — directly relevant to morphogenesis and control of development."
+      "rationaleAI": "Logistic growth models address growth (B.1). Turing patterns address morphogenesis (B.2)."
     },
     {
       "vsiTitle": "Molecules",
       "vsiAuthor": "Philip Ball",
       "relevantPathsAI": [
         "B.3",
+        "B.4",
         "D.1"
       ],
-      "rationaleAI": "Covers molecular recognition and biological processes from fertilization to organismal development — relevant to differentiation and preparatory events."
+      "rationaleAI": "Molecular recognition addresses differentiation (B.3) and control (B.4). Fertilization processes connect to egg activation (D.1)."
     },
     {
       "vsiTitle": "Adolescence",
@@ -159,7 +163,7 @@
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "Covers puberty and brain development during transformation from childhood to adulthood — directly relevant to postembryonic development."
+      "rationaleAI": "Puberty and brain development address postembryonic development (D.4)."
     }
   ],
   "_curatedBy": "ai",

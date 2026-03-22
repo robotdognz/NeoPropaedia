@@ -7,9 +7,16 @@
       "relevantPathsAI": [
         "A",
         "A.1",
+        "A.1.a",
         "A.2",
+        "A.2.a",
         "A.3",
+        "A.3.a",
+        "A.3.b",
+        "A.3.c",
         "A.4",
+        "A.4.b",
+        "A.4.c",
         "B",
         "B.1",
         "B.2",
@@ -20,11 +27,13 @@
         "C.2",
         "C.3",
         "C.4",
+        "C.4.a",
+        "C.4.b",
         "E.1",
         "E.1.b",
         "E.1.c"
       ],
-      "rationaleAI": "Atmospheric properties, storms, forecasting, and climate factors are comprehensively addressed."
+      "rationaleAI": "Atmospheric science covers humidity (A.1, A.1.a), condensation (A.2.a), clouds (A.3.a-c), precipitation (A.4, A.4.b, A.4.c), storms (B.1-B.4), and forecasting (C.1-C.4) including El Nino (C.4.a) and predictability limits (C.4.b). Climate factors include temperature (E.1.b) and pressure (E.1.c)."
     },
     {
       "vsiTitle": "Climate",
@@ -33,44 +42,54 @@
         "E",
         "E.1",
         "E.1.a",
+        "E.1.a.ii",
+        "E.1.a.iii",
         "E.1.b",
         "E.1.d",
         "E.1.e",
         "E.2",
+        "E.2.a",
         "E.2.c",
+        "E.3",
         "E.4",
         "E.6"
       ],
-      "rationaleAI": "Climate system, greenhouse effect, human effects (E.2.c), and climatic change (E.6) are addressed."
+      "rationaleAI": "Climate system covers factors (E.1), greenhouse effect (E.1.a.ii), albedo (E.1.a.iii), oceans (E.1.d), moisture (E.1.e), El Nino (E.2.a), human activities (E.2.c), climatic types (E.3), terrestrial life (E.4), and change (E.6)."
     },
     {
       "vsiTitle": "Climate change",
       "vsiAuthor": "Mark Maslin",
       "relevantPathsAI": [
         "E.2.c",
-        "E.6"
+        "E.4",
+        "E.6",
+        "E.6.a"
       ],
-      "rationaleAI": "Anthropogenic warming addresses human effects (E.2.c) and climatic change (E.6)."
+      "rationaleAI": "Anthropogenic warming addresses human activities on climate (E.2.c). Ecological disruption addresses terrestrial life (E.4). Evidence addresses climatic change (E.6, E.6.a)."
     },
     {
       "vsiTitle": "The Atmosphere",
       "vsiAuthor": "Paul Palmer",
       "relevantPathsAI": [
-        "A.2",
+        "A.1",
+        "A.2.b",
+        "E.1",
         "E.1.a",
         "E.1.a.ii"
       ],
-      "rationaleAI": "Greenhouse effect connects to solar radiation (E.1.a) and infrared trapping (E.1.a.ii)."
+      "rationaleAI": "Atmospheric composition addresses moisture (A.1). Aerosols connect to condensation nuclei (A.2.b). Greenhouse effect addresses E.1.a.ii. Heat transport addresses E.1."
     },
     {
       "vsiTitle": "Earth System Science",
       "vsiAuthor": "Tim Lenton",
       "relevantPathsAI": [
+        "E.1",
         "E.1.a",
+        "E.1.a.ii",
         "E.2.c",
         "E.6"
       ],
-      "rationaleAI": "Carbon cycling connects to solar radiation (E.1.a), human effects (E.2.c), and change (E.6)."
+      "rationaleAI": "Carbon cycling addresses greenhouse effect (E.1.a.ii) and climate factors (E.1). Anthropogenic disruption addresses E.2.c. Snowball Earth addresses E.6."
     },
     {
       "vsiTitle": "Geophysical and Climate Hazards",
@@ -80,9 +99,10 @@
         "B.2",
         "B.3",
         "B.4",
+        "A.4.d",
         "E.2.c"
       ],
-      "rationaleAI": "Extreme weather and human effects are addressed through storms (B) and E.2.c."
+      "rationaleAI": "Storms address winds and storms (B). Thunderstorms address B.2. Severe weather addresses B.3. Tropical cyclones address B.4. Flooding addresses precipitation effects (A.4.d). Global heating addresses E.2.c."
     },
     {
       "vsiTitle": "The Sun",
@@ -91,7 +111,7 @@
         "E.1.a",
         "E.1.a.i"
       ],
-      "rationaleAI": "Solar dynamics connect to radiation (E.1.a) and variability (E.1.a.i)."
+      "rationaleAI": "Solar brightness changes address solar radiation (E.1.a) and variability of the solar constant (E.1.a.i)."
     },
     {
       "vsiTitle": "Chaos",
@@ -99,7 +119,7 @@
       "relevantPathsAI": [
         "C.4.b"
       ],
-      "rationaleAI": "Sensitive dependence addresses predictability limits (C.4.b)."
+      "rationaleAI": "Sensitive dependence on initial conditions addresses limits to predictability (C.4.b)."
     },
     {
       "vsiTitle": "The Ice Age",
@@ -108,16 +128,18 @@
         "E.6",
         "E.6.a"
       ],
-      "rationaleAI": "Quaternary climate change addresses evidence (E.6, E.6.a)."
+      "rationaleAI": "Quaternary ice age addresses climatic change (E.6) and glaciation evidence (E.6.a)."
     },
     {
       "vsiTitle": "Deserts",
       "vsiAuthor": "Nick Middleton",
       "relevantPathsAI": [
+        "A.4.c",
+        "E.2.b",
         "E.3",
         "E.5"
       ],
-      "rationaleAI": "Desert climates connect to types (E.3) and microclimates (E.5)."
+      "rationaleAI": "Desert types address climatic types (E.3). Rainfall distribution connects to A.4.c. Local terrain effects address E.2.b. Microclimates address E.5."
     },
     {
       "vsiTitle": "Anthropocene",
@@ -125,7 +147,7 @@
       "relevantPathsAI": [
         "E.2.c"
       ],
-      "rationaleAI": "Human impact addresses effects on climate (E.2.c)."
+      "rationaleAI": "Humanity's climate impact addresses effects of human activities on climate (E.2.c)."
     },
     {
       "vsiTitle": "Mountains",
@@ -134,7 +156,7 @@
         "E.2.b",
         "E.5"
       ],
-      "rationaleAI": "Mountain weather connects to local effects (E.2.b) and microclimates (E.5)."
+      "rationaleAI": "Mountain weather patterns address local terrain effects (E.2.b). Mountain microclimates address E.5."
     },
     {
       "vsiTitle": "Biogeography",
@@ -142,23 +164,25 @@
       "relevantPathsAI": [
         "E.4"
       ],
-      "rationaleAI": "Biodiversity distribution connects to climate influences on life (E.4)."
+      "rationaleAI": "Species distribution patterns address influences of climate on terrestrial life (E.4)."
     },
     {
       "vsiTitle": "Oceans",
       "vsiAuthor": "Dorrik Stow",
       "relevantPathsAI": [
-        "E.1.d"
+        "E.1.d",
+        "E.1.e"
       ],
-      "rationaleAI": "Covers ocean roles in climate regulation through currents, tides, and wave dynamics — directly relevant to the world's oceans as a factor generating climate."
+      "rationaleAI": "Ocean climate regulation addresses oceans as climate factor (E.1.d). Water cycle role connects to moisture cycle (E.1.e)."
     },
     {
       "vsiTitle": "Glaciation",
       "vsiAuthor": "David J. A. Evans",
       "relevantPathsAI": [
+        "E.6",
         "E.6.a"
       ],
-      "rationaleAI": "Covers glaciers, ice sheets, and their influence on climate — directly relevant to evidence of climatic change including glaciation landscape features."
+      "rationaleAI": "Glaciers and ice sheets address climatic change (E.6). Glacial landscapes address evidence (E.6.a)."
     }
   ],
   "_curatedBy": "ai",

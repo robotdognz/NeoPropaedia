@@ -6,51 +6,51 @@
       "vsiAuthor": "Kenneth Morgan",
       "relevantPathsAI": [
         "A",
-        "A.2",
-        "A.3",
         "B",
         "B.1",
         "B.2",
         "B.3",
         "B.4"
       ],
-      "rationaleAI": "British settlement of New South Wales in 1788, colonial expansion through Van Diemen's Land and the Swan River Colony (B.1, B.2), federation and the White Australia policy (B.3), and Aboriginal land rights including the Mabo decision (B.4). Colonial foundations and democratic institutional development directly address European colonial settlement and self-government (A.3)."
+      "rationaleAI": "Australian history covers early exploration (B.1), colonial foundations (B.2), White Australia policy and federation (B.3), and Aboriginal relations (B.4). Broader development addresses A."
     },
     {
       "vsiTitle": "Empire",
       "vsiAuthor": "Stephen Howe",
       "relevantPathsAI": [
-        "A",
         "A.3"
       ],
-      "rationaleAI": "British, Dutch, and French colonial empires and theories of colonialism and decolonization provide context for European exploration and colonial settlement in Oceania (A.3), though the treatment is global rather than specifically focused on Australia and Oceania."
+      "rationaleAI": "Colonial empires address European exploration and colonial settlement (A.3)."
     },
     {
       "vsiTitle": "The British Empire",
       "vsiAuthor": "Ashley Jackson",
       "relevantPathsAI": [
         "A.3",
-        "B.2"
+        "B.2",
+        "C.1"
       ],
-      "rationaleAI": "British imperial administration and the East India Company's global reach encompass British colonization of Australia (B.2), and colonial governance structures relate to European colonial settlement and government in Oceania (A.3)."
+      "rationaleAI": "British Empire addresses colonial settlement (A.3). Colonization connects to NSW settlement (B.2). Imperial governance provides context for British control of New Zealand (C.1)."
     },
     {
       "vsiTitle": "Postcolonialism",
       "vsiAuthor": "Robert J.C. Young",
       "relevantPathsAI": [
-        "A",
-        "A.3"
+        "A.3",
+        "B.4",
+        "C.2"
       ],
-      "rationaleAI": "Experiences of indigenous and colonized peoples across the world, including challenges to Western-centric historical perspectives, relate to the effects of colonization on the diverse peoples of Oceania (A) and colonial settlement patterns (A.3)."
+      "rationaleAI": "Postcolonial perspectives address colonial settlement (A.3). Indigenous experience connects to Aboriginal relations (B.4) and Maori relations (C.2)."
     },
     {
       "vsiTitle": "Exploration",
       "vsiAuthor": "Stewart A. Weaver",
       "relevantPathsAI": [
-        "A.2",
+        "A.1",
+        "A.3",
         "B.1"
       ],
-      "rationaleAI": "Portuguese navigation, Cook's Enlightenment-era scientific voyages, and global exploration history directly address European exploration by sea (B.1) and the prehistory and geography of Oceania encountered by explorers (A.2)."
+      "rationaleAI": "Cook's voyages address colonial settlement (A.3) and early exploration (B.1). Broader exploration connects to historiographic problems (A.1)."
     },
     {
       "vsiTitle": "Nationalism",
@@ -58,15 +58,16 @@
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Nationalism as political ideology and the formation of nation-states connects to the federation movement and establishment of the Australian commonwealth (B.2), though Australia is not a primary case study."
+      "rationaleAI": "National self-determination connects to federation and commonwealth establishment (B.2)."
     },
     {
       "vsiTitle": "International Migration",
       "vsiAuthor": "Khalid Koser",
       "relevantPathsAI": [
+        "B.2",
         "B.3"
       ],
-      "rationaleAI": "Immigration policy and cross-border movement connect to Australia's White Australia immigration policy (B.3), though the treatment is global rather than Australia-specific."
+      "rationaleAI": "Immigration patterns address colonial expansion (B.2) and White Australia policy (B.3)."
     },
     {
       "vsiTitle": "The First World War",
@@ -74,24 +75,25 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Australia's cooperation with Britain in World War I (B.3) is contextualized by coverage of the Allied war effort, the Western Front, and the Paris Peace Settlement."
+      "rationaleAI": "World War I addresses Australia's cooperation with Britain (B.3)."
     },
     {
       "vsiTitle": "Archaeology",
       "vsiAuthor": "Paul Bahn",
       "relevantPathsAI": [
-        "A.1",
         "A.2"
       ],
-      "rationaleAI": "Archaeological methods for reconstructing human pasts, including sites like Easter Island, connect to the historiographic problems (A.1) and prehistory of Australia, Melanesia, Micronesia, and Polynesia (A.2)."
+      "rationaleAI": "Archaeological methods address prehistory of Australia and Oceania (A.2)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "B.4",
+        "C.2"
       ],
-      "rationaleAI": "Ethnographic study of human societies, cultural relativism, and fieldwork among non-Western peoples connect to the ethnography of Australia, Melanesia, Micronesia, and Polynesia (A.2)."
+      "rationaleAI": "Ethnography addresses Oceanian ethnography (A.2). Non-Western societies connect to Aboriginal (B.4) and Maori (C.2) relations."
     },
     {
       "vsiTitle": "Geography",
@@ -99,7 +101,7 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Physical and human geography covering climate, biogeography, and spatial analysis connect to the geography of Australia, Melanesia, Micronesia, and Polynesia (A.2)."
+      "rationaleAI": "Physical and human geography addresses geography and ethnography of Oceania (A.2)."
     },
     {
       "vsiTitle": "Decolonization",
@@ -109,15 +111,15 @@
         "B.4",
         "C.2"
       ],
-      "rationaleAI": "Covers transitions from colonial empires to independent nation-states including anti-colonial activism, directly relevant to European colonial settlement effects, relations with Aboriginal populations, and British-Maori conflicts."
+      "rationaleAI": "Colonial transitions address colonial settlement (A.3). Indigenous movements connect to Aboriginal (B.4) and Maori (C.2) relations."
     },
     {
       "vsiTitle": "North American Indians",
       "vsiAuthor": "Theda Perdue, Michael D. Green",
       "relevantPathsAI": [
-        "A.2"
+        "B.4"
       ],
-      "rationaleAI": "Indigenous peoples' experiences of migration and European contact provide comparative context for understanding the geography, ethnography, and prehistory of indigenous peoples in Oceania and Australia."
+      "rationaleAI": "Indigenous peoples' colonial experience provides comparative frame for Aboriginal relations (B.4)."
     }
   ],
   "_curatedBy": "ai",

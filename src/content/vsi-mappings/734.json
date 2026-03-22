@@ -6,10 +6,10 @@
       "vsiAuthor": "David Blockley",
       "relevantPathsAI": [
         "A",
-        "B",
-        "D"
+        "A.2",
+        "B"
       ],
-      "rationaleAI": "Engineering covering infrastructure including roads and railways connects to the history of transportation (A), roads and highway construction (B), and rail transportation (D)."
+      "rationaleAI": "Engineering covers transportation history (A), roads (A.2, B)."
     },
     {
       "vsiTitle": "Civil engineering",
@@ -17,9 +17,10 @@
       "relevantPathsAI": [
         "A.4.a",
         "A.5.a",
-        "B"
+        "B",
+        "F.3"
       ],
-      "rationaleAI": "Civil engineering covering bridges and tunnels connects to railroad construction including bridges and tunnels (A.4.a), road vehicles and bridges (A.5.a), and roads and highways (B)."
+      "rationaleAI": "Civil engineering covers bridges/tunnels (A.4.a, A.5.a), roads (B), and waterways (F.3)."
     },
     {
       "vsiTitle": "The Industrial Revolution",
@@ -27,9 +28,9 @@
       "relevantPathsAI": [
         "A.4",
         "A.4.a",
-        "D"
+        "A.4.b"
       ],
-      "rationaleAI": "Steam power innovations by Newcomen and Watt directly address steam transportation (A.4), the first locomotives and spread of railways (A.4.a), and rail transportation (D)."
+      "rationaleAI": "Steam power covers railways (A.4.a) and steamships (A.4.b)."
     },
     {
       "vsiTitle": "Navigation",
@@ -38,36 +39,35 @@
         "A.3",
         "F"
       ],
-      "rationaleAI": "Maritime navigation covering compasses, astrolabes, sextants, and chart production connects to the history of sails and shipping (A.3) and water transportation (F)."
+      "rationaleAI": "Navigation covers shipping beginnings (A.3) and water transportation (F)."
     },
     {
       "vsiTitle": "Fluid Mechanics",
       "vsiAuthor": "Eric Lauga",
       "relevantPathsAI": [
+        "F.2",
         "F.2.a",
-        "G.1"
+        "G.1.b"
       ],
-      "rationaleAI": "Fluid dynamics and hydrodynamics including aeroplanes connect to ship design hydrodynamics (F.2.a) and aircraft flight characteristics (G.1)."
+      "rationaleAI": "Fluid mechanics covers ship design (F.2.a) and aircraft aerodynamics (G.1.b)."
     },
     {
       "vsiTitle": "Energy Systems",
       "vsiAuthor": "Nick Jenkins",
       "relevantPathsAI": [
-        "C.4",
         "F.2.c"
       ],
-      "rationaleAI": "Energy systems for transport including electrification and hydrogen connect to automobiles (C.4) and power units for ship propulsion (F.2.c)."
+      "rationaleAI": "Energy covers propulsion power units (F.2.c)."
     },
     {
       "vsiTitle": "Structural engineering",
       "vsiAuthor": "David Blockley",
       "relevantPathsAI": [
-        "A.4.a",
-        "A.5.a",
+        "B",
         "F.2",
         "G.1.b"
       ],
-      "rationaleAI": "Structural engineering covering bridges, ships, and aircraft addresses railroad bridge construction (A.4.a), road bridge construction (A.5.a), ship design and construction (F.2), and aircraft configuration (G.1.b)."
+      "rationaleAI": "Structures cover roads (B), ships (F.2), and aircraft (G.1.b)."
     },
     {
       "vsiTitle": "Exploration",
@@ -75,29 +75,34 @@
       "relevantPathsAI": [
         "A",
         "A.3",
-        "F",
-        "G.4"
+        "A.5.c",
+        "F"
       ],
-      "rationaleAI": "History of global exploration from Portuguese navigation to space exploration covers transportation history (A), maritime voyages (A.3), water transportation (F), and space travel (G.4)."
+      "rationaleAI": "Exploration covers transportation history (A), shipping (A.3), air transport (A.5.c), and water (F)."
     },
     {
       "vsiTitle": "Aerial Warfare",
       "vsiAuthor": "Frank Ledwidge",
       "relevantPathsAI": [
+        "A.5.c",
         "G",
-        "G.1.b"
+        "G.1",
+        "G.1.b",
+        "G.5"
       ],
-      "rationaleAI": "Air power development covering technological evolution in aircraft connects to air transportation (G) and heavier-than-air craft (G.1.b)."
+      "rationaleAI": "Aerial warfare covers air transport (A.5.c, G), aircraft (G.1.b), and research (G.5)."
     },
     {
       "vsiTitle": "American Naval History",
       "vsiAuthor": "Craig L. Symonds",
       "relevantPathsAI": [
+        "A.3",
+        "A.4.b",
         "F",
         "F.1",
         "F.2"
       ],
-      "rationaleAI": "Naval history covering technological evolution from sailing ships to modern platforms addresses types of ships (F.1) and ship design and construction (F.2)."
+      "rationaleAI": "Naval history covers shipping (A.3), steam navigation (A.4.b), and water transport (F, F.1, F.2)."
     },
     {
       "vsiTitle": "City Planning",
@@ -106,15 +111,16 @@
         "A.5.b",
         "B"
       ],
-      "rationaleAI": "Urban planning covering transportation infrastructure connects to development of mass urban transport (A.5.b) and roads and highways (B)."
+      "rationaleAI": "City planning covers urban transport (A.5.b) and roads (B)."
     },
     {
       "vsiTitle": "The Silk Road",
       "vsiAuthor": "James A. Millward",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "A.1"
       ],
-      "rationaleAI": "Central Eurasian trade routes covering biological, technological, and economic transfers connect to the history of transportation (A) through overland trade networks."
+      "rationaleAI": "Silk Road covers transportation history (A) and primitive transport (A.1)."
     },
     {
       "vsiTitle": "Design",
@@ -122,23 +128,26 @@
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Product design at automotive companies including Ford and General Motors directly connects to automobile design (C.4)."
+      "rationaleAI": "Ford/GM design connects to automobiles (C.4)."
     },
     {
       "vsiTitle": "Sustainability",
       "vsiAuthor": "Saleem H. Ali",
       "relevantPathsAI": [
-        "A.5"
+        "A.5",
+        "C.4"
       ],
-      "rationaleAI": "Sustainable transport and decarbonization of mobility connect to the development of modern transportation (A.5)."
+      "rationaleAI": "Sustainability covers modern transport (A.5) and automobiles (C.4)."
     },
     {
       "vsiTitle": "Global Economic History",
       "vsiAuthor": "Robert C. Allen",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "A.4",
+        "A.5"
       ],
-      "rationaleAI": "Global economic development covering trade networks and technological change relates to the history of transportation (A) as a driver of economic integration."
+      "rationaleAI": "Global economic history covers transport history (A), steam (A.4), and modern (A.5)."
     },
     {
       "vsiTitle": "The Vikings",
@@ -147,32 +156,35 @@
         "A.3",
         "F.1"
       ],
-      "rationaleAI": "Covers Viking ship technology including longships and ship burials, Viking trade networks, and the first European Atlantic crossing, directly relevant to the beginnings of shipping and shipbuilding and types of waterborne vessels."
+      "rationaleAI": "Viking ships cover shipping beginnings (A.3) and ship types (F.1)."
     },
     {
       "vsiTitle": "Innovation",
       "vsiAuthor": "Mark Dodgson, David Gann",
       "relevantPathsAI": [
-        "A.5"
+        "A.5",
+        "C.4"
       ],
-      "rationaleAI": "Covers technological innovation including creative destruction and disruptive technologies across industries, relevant to the development of modern transportation including road vehicles, mass urban transport, and air transport."
+      "rationaleAI": "Innovation covers modern transport (A.5) and automobiles (C.4)."
     },
     {
       "vsiTitle": "War and Technology",
       "vsiAuthor": "Alex Roland",
       "relevantPathsAI": [
         "A.4",
-        "G.5"
+        "F.2.c",
+        "G.1.b"
       ],
-      "rationaleAI": "Covers the co-evolution of military technology across land, sea, air, and digital domains, relevant to steam transportation, the development of air transport, and aeronautical research driven by military innovation."
+      "rationaleAI": "Military technology covers steam transport (A.4), naval propulsion (F.2.c), and aircraft (G.1.b)."
     },
     {
       "vsiTitle": "Rivers",
       "vsiAuthor": "Nick Middleton",
       "relevantPathsAI": [
+        "A.3",
         "F.3"
       ],
-      "rationaleAI": "Covers rivers as transportation highways carrying trade and cultural exchange, directly relevant to canals and inland waterways as water transportation infrastructure."
+      "rationaleAI": "Rivers cover inland waterways (A.3, F.3)."
     },
     {
       "vsiTitle": "Nuclear power",
@@ -180,7 +192,7 @@
       "relevantPathsAI": [
         "F.2.c"
       ],
-      "rationaleAI": "Covers nuclear power development including fission technologies, directly relevant to nuclear reactors as power units for ship propulsion alongside steam generators and internal-combustion engines."
+      "rationaleAI": "Nuclear power covers naval nuclear propulsion (F.2.c)."
     }
   ],
   "_curatedBy": "ai",

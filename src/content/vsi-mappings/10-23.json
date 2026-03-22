@@ -7,20 +7,23 @@
       "relevantPathsAI": [
         "B",
         "B.1",
+        "B.1.a",
+        "B.1.b",
         "B.2",
         "B.3",
         "B.4"
       ],
-      "rationaleAI": "Probability theory, Bayesian inference, estimation, experimental design, and hypothesis testing directly address statistics (B), including statistical inference (B.1), estimation techniques (B.2), hypothesis testing (B.3), and regression analysis for structure in data (B.4)."
+      "rationaleAI": "Statistics covers all aspects of statistical inference (B.1-B.4)."
     },
     {
       "vsiTitle": "Probability",
       "vsiAuthor": "John Haigh",
       "relevantPathsAI": [
         "B.1",
+        "B.1.a",
         "B.1.b"
       ],
-      "rationaleAI": "Foundational probability concepts including the central limit theorem and law of large numbers relate to statistical inference principles (B.1), and distribution properties including mean, variance, and standard deviation connect to distribution functions (B.1.b)."
+      "rationaleAI": "Probability covers statistical inference (B.1), experiments (B.1.a), and distributions (B.1.b)."
     },
     {
       "vsiTitle": "Computer Science",
@@ -30,19 +33,20 @@
         "G.1",
         "G.2",
         "G.3",
-        "G.4",
-        "G.6"
+        "G.4"
       ],
-      "rationaleAI": "Algorithms, programming, computational complexity, and the Turing machine model directly address computer science (G), including synthesis and analysis of algorithms (G.1), theory of computation (G.2), computer architecture (G.3), programming languages (G.4), and artificial intelligence (G.6)."
+      "rationaleAI": "Computer science covers algorithms (G.1), computation (G.2), architecture (G.3), and programming (G.4)."
     },
     {
       "vsiTitle": "Artificial Intelligence",
       "vsiAuthor": "Margaret A. Boden",
       "relevantPathsAI": [
-        "G.6",
-        "D"
+        "D",
+        "D.1",
+        "D.2",
+        "G.6"
       ],
-      "rationaleAI": "AI covering Turing's computational theory, machine consciousness, and learning directly addresses artificial intelligence within computer science (G.6). Von Neumann's cellular automata connect to automata theory (D)."
+      "rationaleAI": "AI covers automata theory (D, D.1, D.2) and artificial intelligence (G.6)."
     },
     {
       "vsiTitle": "The Computer",
@@ -52,18 +56,21 @@
         "A.7.c",
         "G.3"
       ],
-      "rationaleAI": "Evolution of computing technology, core architecture including memory, operating systems, and web servers directly addresses digital computation (A.7), programmed machines (A.7.c), and computer architecture (G.3)."
+      "rationaleAI": "Computers cover digital computation (A.7, A.7.c) and architecture (G.3)."
     },
     {
       "vsiTitle": "The History of Computing",
       "vsiAuthor": "Doron Swade",
       "relevantPathsAI": [
         "A.6",
+        "A.6.a",
+        "A.6.b",
         "A.7",
         "A.7.a",
+        "A.7.b",
         "A.7.c"
       ],
-      "rationaleAI": "History from ancient counting aids through mechanical calculation to electronic computation covers both analogue computation (A.6) and digital computation (A.7), including digital calculators (A.7.a) and programmed machines (A.7.c)."
+      "rationaleAI": "Computing history covers analogue (A.6) and digital computation (A.7) comprehensively."
     },
     {
       "vsiTitle": "Game theory",
@@ -71,16 +78,15 @@
       "relevantPathsAI": [
         "E.1"
       ],
-      "rationaleAI": "Game theory analyzing strategic decision-making including Nash equilibrium, minimax strategies, and cooperative game theory directly addresses the theory of games (E.1)."
+      "rationaleAI": "Game theory addresses the theory of games (E.1)."
     },
     {
       "vsiTitle": "Cryptography",
       "vsiAuthor": "Fred Piper, Sean Murphy",
       "relevantPathsAI": [
-        "F.4",
-        "A.4.b"
+        "F.4"
       ],
-      "rationaleAI": "Cryptography as the science of securing information directly addresses applications of information theory to cryptography (F.4). Its mathematical foundations in number theory connect to logarithms (A.4.b)."
+      "rationaleAI": "Cryptography addresses information theory applied to cryptography (F.4)."
     },
     {
       "vsiTitle": "Information",
@@ -91,34 +97,35 @@
         "F.2",
         "F.3"
       ],
-      "rationaleAI": "Mathematical foundations of information including definition, measurement in bits, probability, and entropy directly address information theory (F), its origins and definitions (F.1), central problems (F.2), and principles (F.3)."
+      "rationaleAI": "Information covers information theory origins (F.1), problems (F.2), and principles (F.3)."
     },
     {
       "vsiTitle": "Applied mathematics",
       "vsiAuthor": "Alain Goriely",
       "relevantPathsAI": [
+        "A",
         "C",
         "H"
       ],
-      "rationaleAI": "Mathematical modeling techniques and computational approaches bridging pure mathematics and science connect to numerical analysis (C) and mathematical aspects of physical theories (H)."
+      "rationaleAI": "Applied math covers calculatory science (A), numerical analysis (C), and physical theories (H)."
     },
     {
       "vsiTitle": "Networks",
       "vsiAuthor": "Guido Caldarelli, Michele Catanzaro",
       "relevantPathsAI": [
-        "E",
+        "E.3",
         "G.1"
       ],
-      "rationaleAI": "Network theory covering topology, optimization, and complex systems connects to mathematical theory of optimization (E), and network algorithms relate to synthesis and analysis of algorithms (G.1)."
+      "rationaleAI": "Networks connect to cybernetics (E.3) and algorithms (G.1)."
     },
     {
       "vsiTitle": "Big Data",
       "vsiAuthor": "Dawn E. Holmes",
       "relevantPathsAI": [
-        "B",
+        "B.4",
         "G.5"
       ],
-      "rationaleAI": "Analysis of massive datasets using mathematical and statistical foundations relates to statistics (B), and computational tools for large-scale data processing connect to numeric computation (G.5)."
+      "rationaleAI": "Big data covers data structure (B.4) and numeric computation (G.5)."
     },
     {
       "vsiTitle": "Chaos",
@@ -127,52 +134,55 @@
         "C.4",
         "H.1"
       ],
-      "rationaleAI": "Computational modeling, ensemble methods, and statistical inference in chaos theory connect to numerical analysis solutions of equations (C.4) and mathematical aspects of mechanics (H.1)."
+      "rationaleAI": "Chaos connects to differential equations (C.4) and mechanics (H.1)."
     },
     {
       "vsiTitle": "Complexity",
       "vsiAuthor": "John H. Holland",
       "relevantPathsAI": [
         "D",
+        "D.3",
         "E.3"
       ],
-      "rationaleAI": "Complex systems theory covering emergence, agent-based modeling, and network interactions relates to automata theory (D) and cybernetics (E.3)."
+      "rationaleAI": "Complexity covers automata (D, D.3) and cybernetics (E.3)."
     },
     {
       "vsiTitle": "Robotics",
       "vsiAuthor": "Alan Winfield",
       "relevantPathsAI": [
+        "D",
         "D.1",
+        "D.2",
         "E.4",
         "G.6"
       ],
-      "rationaleAI": "Robotic sensing, actuation, and decision-making with bio-inspired approaches relate to automata theory and the analogy between automata and nervous systems (D.1), control theory (E.4), and artificial intelligence (G.6)."
+      "rationaleAI": "Robotics covers automata (D, D.1, D.2), control theory (E.4), and AI (G.6)."
     },
     {
       "vsiTitle": "Mathematical finance",
       "vsiAuthor": "Mark H. A. Davis",
       "relevantPathsAI": [
-        "B",
         "E.2"
       ],
-      "rationaleAI": "Mathematical and computational methods for financial problems including risk management connect to statistics (B), and optimization of asset valuation relates to linear and nonlinear programming (E.2)."
+      "rationaleAI": "Mathematical finance connects to mathematical programming (E.2)."
     },
     {
       "vsiTitle": "Mathematical Biology",
       "vsiAuthor": "Philip K Maini",
       "relevantPathsAI": [
-        "C",
-        "H"
+        "C.3",
+        "C.4"
       ],
-      "rationaleAI": "Mathematical modeling of biological systems including epidemiology, ecology, and pattern formation applies numerical analysis methods (C) and mathematical frameworks to physical and biological theories (H)."
+      "rationaleAI": "Mathematical biology covers function approximation (C.3) and differential equations (C.4)."
     },
     {
       "vsiTitle": "Relativity",
       "vsiAuthor": "Russell Stannard",
       "relevantPathsAI": [
-        "H.6"
+        "H.6",
+        "H.7"
       ],
-      "rationaleAI": "Special and general relativity covering spacetime as a four-dimensional continuum directly addresses relativity theory (H.6)."
+      "rationaleAI": "Relativity covers spacetime (H.6) and Riemannian geometry (H.7)."
     },
     {
       "vsiTitle": "Quantum Theory",
@@ -180,7 +190,7 @@
       "relevantPathsAI": [
         "H.8"
       ],
-      "rationaleAI": "Quantum theory including the Schrodinger equation, wave-particle duality, and quantum field theory directly addresses quantum mechanics (H.8)."
+      "rationaleAI": "Quantum theory addresses quantum mechanics (H.8)."
     },
     {
       "vsiTitle": "Fluid Mechanics",
@@ -188,25 +198,28 @@
       "relevantPathsAI": [
         "H.2"
       ],
-      "rationaleAI": "Fluid mechanics covering fluid dynamics and hydrodynamics directly addresses fluid mechanics as a mathematical aspect of physical theory (H.2)."
+      "rationaleAI": "Fluid mechanics covers mathematical fluid mechanics (H.2)."
     },
     {
       "vsiTitle": "Geometry",
       "vsiAuthor": "Maciej Dunajski",
       "relevantPathsAI": [
         "A.2",
+        "A.2.a",
+        "A.3",
+        "H.6",
         "H.7"
       ],
-      "rationaleAI": "Curved spaces and spacetime geometry relate to geometrical aids (A.2) and Riemannian geometry (H.7)."
+      "rationaleAI": "Geometry covers geometrical aids (A.2, A.2.a), mathematical models (A.3), relativity (H.6), and Riemannian geometry (H.7)."
     },
     {
       "vsiTitle": "Measurement",
       "vsiAuthor": "David J. Hand",
       "relevantPathsAI": [
         "A.1",
-        "B.1"
+        "A.1.a"
       ],
-      "rationaleAI": "Theory of measurement covering SI units, accuracy, and precision relates to numerical notations (A.1) and the mathematical framework underlying statistical inference (B.1)."
+      "rationaleAI": "Measurement covers numerical notations (A.1) and counting units (A.1.a)."
     },
     {
       "vsiTitle": "Navigation",
@@ -215,24 +228,25 @@
         "A.2.b",
         "A.2.d"
       ],
-      "rationaleAI": "Development of navigational instruments including astrolabes and sextants, and mathematical techniques for finding position at sea, relate to instruments for observation and navigation (A.2.b) and applications of geometry to celestial measurement (A.2.d)."
+      "rationaleAI": "Navigation covers observation instruments (A.2.b) and celestial measurement (A.2.d)."
     },
     {
       "vsiTitle": "Fractals",
       "vsiAuthor": "Kenneth Falconer",
       "relevantPathsAI": [
         "A.3",
-        "C"
+        "C.3"
       ],
-      "rationaleAI": "Fractal geometry covering fractal dimension and iterative constructions connects to mathematical models for visualization (A.3) and numerical analysis (C)."
+      "rationaleAI": "Fractals cover mathematical models (A.3) and function approximation (C.3)."
     },
     {
       "vsiTitle": "Symmetry",
       "vsiAuthor": "Ian Stewart",
       "relevantPathsAI": [
-        "H.1"
+        "A.3",
+        "H.8"
       ],
-      "rationaleAI": "Group theory applied to symmetries in natural laws and physics relates to mathematical aspects of mechanics of particles and systems (H.1)."
+      "rationaleAI": "Symmetry covers mathematical models (A.3) and quantum mechanics (H.8)."
     },
     {
       "vsiTitle": "Choice Theory",
@@ -240,23 +254,25 @@
       "relevantPathsAI": [
         "E.1"
       ],
-      "rationaleAI": "Rational choice theory covering utility, expected value, and collective decision-making under game-theoretic frameworks relates to the theory of games (E.1)."
+      "rationaleAI": "Choice theory connects to the theory of games (E.1)."
     },
     {
       "vsiTitle": "Algebra",
       "vsiAuthor": "Peter M. Higgins",
       "relevantPathsAI": [
+        "A.4",
         "A.4.a"
       ],
-      "rationaleAI": "Algebra's role in solving equations connects to algebraic notation and calculatory aspects (A.4.a)."
+      "rationaleAI": "Algebra covers calculatory algebra (A.4) and algebraic notation (A.4.a)."
     },
     {
       "vsiTitle": "Light",
       "vsiAuthor": "Ian A. Walmsley",
       "relevantPathsAI": [
+        "A.2.e",
         "H.5"
       ],
-      "rationaleAI": "Physics of light as electromagnetic radiation connects to electromagnetic theory (H.5) in its mathematical treatment."
+      "rationaleAI": "Light covers optical instruments (A.2.e) and electromagnetic theory (H.5)."
     },
     {
       "vsiTitle": "Numbers",
@@ -264,45 +280,45 @@
       "relevantPathsAI": [
         "A.1",
         "A.1.b",
-        "A.1.c"
+        "A.1.c",
+        "A.4.a"
       ],
-      "rationaleAI": "Covers the historical development of number systems from ancient origins through modern applications, including ancient numerical notations and the maturation of decimal and modern notational systems."
+      "rationaleAI": "Numbers cover numerical notations (A.1, A.1.b, A.1.c) and algebraic notation (A.4.a)."
     },
     {
       "vsiTitle": "Trigonometry",
       "vsiAuthor": "Glen Van Brummelen",
       "relevantPathsAI": [
         "A.2.b",
-        "A.2.d"
+        "A.2.d",
+        "A.4"
       ],
-      "rationaleAI": "Covers practical applications of trigonometry in navigation spanning two millennia across Greek, Indian, and Islamic traditions, and its application to celestial measurement including connections to the shape of the universe."
+      "rationaleAI": "Trigonometry covers navigation instruments (A.2.b), celestial measurement (A.2.d), and algebra (A.4)."
     },
     {
       "vsiTitle": "Combinatorics",
       "vsiAuthor": "Robin Wilson",
       "relevantPathsAI": [
-        "G.1",
-        "E.2"
+        "E.2",
+        "G.1"
       ],
-      "rationaleAI": "Covers algorithms for selecting, arranging, and counting objects including the travelling salesman problem and optimization, directly addressing synthesis and analysis of algorithms and mathematical programming."
+      "rationaleAI": "Combinatorics covers mathematical programming (E.2) and algorithms (G.1)."
     },
     {
       "vsiTitle": "Logic",
       "vsiAuthor": "Graham Priest",
       "relevantPathsAI": [
-        "D.1",
         "G.2"
       ],
-      "rationaleAI": "Covers formal logic including validity, algorithms, axioms, mathematical proofs, and decision theory, connecting to automata theory concepts and the theory of computation."
+      "rationaleAI": "Logic addresses computation theory (G.2)."
     },
     {
       "vsiTitle": "Telescopes",
       "vsiAuthor": "Geoffrey Cottrell",
       "relevantPathsAI": [
-        "A.2.b",
         "A.2.e"
       ],
-      "rationaleAI": "Covers optical and electromagnetic telescope design from Galileo through modern space-based observatories, directly addressing instruments for observation and navigation as well as optical instruments."
+      "rationaleAI": "Telescopes address optical instruments (A.2.e)."
     },
     {
       "vsiTitle": "Microscopy",
@@ -310,26 +326,28 @@
       "relevantPathsAI": [
         "A.2.e"
       ],
-      "rationaleAI": "Covers the scientific principles and technological development of microscopy from early optical instruments to electron microscopy and atomic force microscopy, directly addressing optical instruments as geometrical aids."
+      "rationaleAI": "Microscopy addresses optical instruments (A.2.e)."
     },
     {
       "vsiTitle": "Mathematical Analysis",
       "vsiAuthor": "Richard Earl",
       "relevantPathsAI": [
+        "C",
+        "C.1",
         "C.3",
         "C.4",
         "C.5"
       ],
-      "rationaleAI": "Covers convergence, limits, differentiation, integration, and proof-based methods central to numerical analysis, including approximation of functions, solution of equations, and applications in fluid dynamics and quantum theory."
+      "rationaleAI": "Analysis covers all numerical analysis topics (C, C.1, C.3-C.5)."
     },
     {
       "vsiTitle": "Entropy",
       "vsiAuthor": "James Binney",
       "relevantPathsAI": [
-        "H.4",
-        "F"
+        "F.3",
+        "H.4"
       ],
-      "rationaleAI": "Covers entropy in thermodynamics, information theory, quantum mechanics, and the holographic principle, directly addressing statistical mechanics and the origins and applications of information theory."
+      "rationaleAI": "Entropy covers information theory principles (F.3) and statistical mechanics (H.4)."
     },
     {
       "vsiTitle": "Cosmology",
@@ -338,16 +356,17 @@
         "H.6",
         "H.8"
       ],
-      "rationaleAI": "Covers the Big Bang theory, expanding universe, dark matter, quantum gravity, and superstring theory, directly addressing relativity theory as a four-dimensional spacetime continuum and quantum mechanics as mathematical aspects of physical theories."
+      "rationaleAI": "Cosmology connects to relativity (H.6) and quantum mechanics (H.8)."
     },
     {
       "vsiTitle": "Gravity",
       "vsiAuthor": "Timothy Clifton",
       "relevantPathsAI": [
         "H.1",
-        "H.6"
+        "H.6",
+        "H.7"
       ],
-      "rationaleAI": "Covers Newtonian gravity through Einstein's general relativity, gravitational waves, and efforts to unify gravity with quantum mechanics, directly addressing mechanics of particles and relativity theory as mathematical aspects of physics."
+      "rationaleAI": "Gravity covers mechanics (H.1), relativity (H.6), and Riemannian geometry (H.7)."
     },
     {
       "vsiTitle": "Philosophy of Physics",
@@ -357,25 +376,27 @@
         "H.6",
         "H.8"
       ],
-      "rationaleAI": "Addresses the nature of spacetime, statistical mechanics, and quantum mechanics interpretation including parallel universe hypotheses, directly relevant to mathematical aspects of statistical mechanics, relativity theory, and quantum mechanics."
+      "rationaleAI": "Philosophy of physics covers statistical mechanics (H.4), relativity (H.6), and quantum mechanics (H.8)."
     },
     {
       "vsiTitle": "Astrophysics",
       "vsiAuthor": "James Binney",
       "relevantPathsAI": [
         "H.1",
-        "H.6",
-        "H.8"
+        "H.4",
+        "H.6"
       ],
-      "rationaleAI": "Applies fundamental physical principles including relativity and quantum mechanics to celestial phenomena, directly addressing mathematical aspects of mechanics, relativity theory, and quantum mechanics in astrophysical contexts."
+      "rationaleAI": "Astrophysics covers mechanics (H.1), statistical mechanics (H.4), and relativity (H.6)."
     },
     {
       "vsiTitle": "Number theory",
       "vsiAuthor": "Robin Wilson",
       "relevantPathsAI": [
-        "A.4.a"
+        "A.1",
+        "A.4",
+        "F.4"
       ],
-      "rationaleAI": "Covers properties and relationships of counting numbers from ancient Greece through modern cryptographic applications, including algebraic notation and number-theoretic foundations relevant to algebraic aspects of calculation."
+      "rationaleAI": "Number theory covers numerical notations (A.1), algebra (A.4), and cryptographic applications (F.4)."
     }
   ],
   "_curatedBy": "ai",

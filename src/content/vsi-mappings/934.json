@@ -5,33 +5,41 @@
       "vsiTitle": "Japanese Literature",
       "vsiAuthor": "Alan Tansman",
       "relevantPathsAI": [
-        "A",
         "B.3.a",
+        "B.3.b.i",
         "C.1.d",
+        "C.2",
         "C.3.c",
         "C.4.c"
       ],
-      "rationaleAI": "Japanese literature addresses the character of Japanese civilization (A), Heian literature (B.3.b.i), Kamakura culture (C.1.d), Muromachi (C.3.c), and Tokugawa literature (C.4.c)."
+      "rationaleAI": "8th-century poetry covers Nara literary flowering (B.3.a). Tale of Genji represents Heian literary culture (B.3.b.i). Zen influence connects to Kamakura culture (C.1.d). Muromachi period connects to C.2. 15th-16th century cultural development addresses C.3.c. Later literary traditions address C.4.c."
     },
     {
       "vsiTitle": "Samurai",
       "vsiAuthor": "Michael Wert",
       "relevantPathsAI": [
         "B.3.b.ii",
+        "C",
         "C.1",
         "C.1.a",
+        "C.1.e",
         "C.2",
+        "C.3.a",
+        "C.3.d",
+        "C.4",
         "C.4.b"
       ],
-      "rationaleAI": "The samurai class addresses the rise of samurai (B.3.b.ii), Kamakura bakufu (C.1.a), and Tokugawa class structure (C.4.b)."
+      "rationaleAI": "Warrior class spans feudal Japan (C). Rise of samurai addresses Heian decline (B.3.b.ii). Bakufu founding addresses Kamakura (C.1, C.1.a). Daimyo rise addresses C.1.e. Muromachi addresses C.2. Sengoku unification addresses C.3.a. Azuchi-Momoyama connects to C.3.d. Tokugawa addresses C.4, C.4.b."
     },
     {
       "vsiTitle": "Modern Japan",
       "vsiAuthor": "Christopher Goto-Jones",
       "relevantPathsAI": [
+        "C.4.d",
+        "C.4.d.i",
         "C.4.d.iii"
       ],
-      "rationaleAI": "Meiji Restoration connects to the downfall of the bakuhan system (C.4.d.iii)."
+      "rationaleAI": "Meiji Restoration addresses bakuhan collapse (C.4.d). Western opening addresses economic crises (C.4.d.i). Western pressure addresses Tempo reforms (C.4.d.iii)."
     },
     {
       "vsiTitle": "Confucianism",
@@ -41,32 +49,36 @@
         "C.4.d.ii",
         "D.5.a"
       ],
-      "rationaleAI": "Neo-Confucianism connects to Kamakura philosophy (C.1.d), Tokugawa revival (C.4.d.ii), and Yi dynasty Korea (D.5.a)."
+      "rationaleAI": "Confucian influence connects to Kamakura Neo-Confucianism (C.1.d). Tokugawa Confucianism addresses C.4.d.ii. Korean Confucian state addresses D.5.a."
     },
     {
       "vsiTitle": "Buddhism",
       "vsiAuthor": "Damien Keown",
       "relevantPathsAI": [
         "B.2.a",
+        "B.2.b",
         "B.3.a",
         "C.1.d",
         "C.3.c",
         "D.2"
       ],
-      "rationaleAI": "Buddhism connects to Yamato introduction (B.2.a), Nara flowering (B.3.a), Kamakura Zen (C.1.d), Muromachi influence (C.3.c), and Korea (D.2)."
+      "rationaleAI": "Buddhism's introduction to Japan (B.2.a, B.2.b). Nara Buddhist flowering (B.3.a). Kamakura Buddhist culture (C.1.d). Zen influence on arts (C.3.c). Korean Buddhism (D.2)."
     },
     {
       "vsiTitle": "Korea",
       "vsiAuthor": "Michael J. Seth",
       "relevantPathsAI": [
+        "A",
         "D",
         "D.1",
         "D.2",
         "D.3",
         "D.4",
-        "D.5"
+        "D.5",
+        "D.5.a",
+        "D.5.b"
       ],
-      "rationaleAI": "Directly covers the entire Korean section from prehistoric origins through the Yi dynasty."
+      "rationaleAI": "Korean history from ancient times addresses Korea to 1910 (D) spanning prehistoric origins (D.1), Three Kingdoms (D.2), Silla (D.3), Koryo (D.4), Yi dynasty (D.5, D.5.a, D.5.b). Introduction connects to A."
     },
     {
       "vsiTitle": "The Mongols",
@@ -75,19 +87,17 @@
         "C.1.c",
         "D.4"
       ],
-      "rationaleAI": "Mongol invasions of Japan (C.1.c) and Korea (D.4)."
+      "rationaleAI": "Mongol invasions address resistance to invasions of Japan (C.1.c). Koryo experience addresses D.4."
     },
     {
       "vsiTitle": "Dynasty",
       "vsiAuthor": "Jeroen Duindam",
       "relevantPathsAI": [
         "B.2",
-        "B.3",
-        "C.1",
-        "C.4",
-        "D.5"
+        "C",
+        "D"
       ],
-      "rationaleAI": "Dynastic succession connects to Yamato (B.2), Fujiwara (B.3), shogunates (C.1, C.4), and Yi dynasty (D.5)."
+      "rationaleAI": "Dynastic rule provides framework for Japanese imperial/shogunal succession (B.2, C) and Korean dynasties (D)."
     },
     {
       "vsiTitle": "Archaeology",
@@ -97,26 +107,23 @@
         "B.1",
         "D.1"
       ],
-      "rationaleAI": "Archaeological methods connect to sources (A), prehistoric Japanese cultures (B.1), and Korean origins (D.1)."
+      "rationaleAI": "Archaeological methods connect to historical sources (A), Japanese prehistory (B.1), and Korean prehistoric origins (D.1)."
     },
     {
       "vsiTitle": "Tibetan Buddhism",
       "vsiAuthor": "Matthew T. Kapstein",
       "relevantPathsAI": [
-        "B.2.b",
-        "B.3.a",
-        "C.1.d",
-        "C.3.c"
+        "C.1.d"
       ],
-      "rationaleAI": "Covers the spread of Buddhism among Mongol and Himalayan peoples and the Dalai Lama institution, relevant to the introduction of Buddhism in the Yamato court period, Buddhism's flowering in the Nara period, and the influence of Zen Buddhism."
+      "rationaleAI": "Esoteric Buddhist traditions provide context for Kamakura Buddhist culture (C.1.d)."
     },
     {
       "vsiTitle": "Southeast Asia",
       "vsiAuthor": "James R. Rush",
       "relevantPathsAI": [
-        "C.3.b"
+        "A"
       ],
-      "rationaleAI": "Covers the historical context of European colonial encounters in Southeast Asia including Portuguese and Spanish activities, providing comparative context for the arrival of the Portuguese and Spanish in Japan in the 1540s."
+      "rationaleAI": "Southeast Asian civilizations provide regional context for Japanese and Korean civilizations (A)."
     },
     {
       "vsiTitle": "The Reformation",
@@ -124,7 +131,7 @@
       "relevantPathsAI": [
         "C.3.b"
       ],
-      "rationaleAI": "The Reformation's global spread through missionary activity including Catholic Jesuit missions directly addresses the Catholic Jesuit missionary activity in Japan beginning in 1549."
+      "rationaleAI": "Catholic Jesuit missionary activity provides context for Portuguese and Spanish arrival in Japan (C.3.b)."
     }
   ],
   "_curatedBy": "ai",

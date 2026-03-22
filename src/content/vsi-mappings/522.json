@@ -8,18 +8,21 @@
         "A",
         "A.1",
         "A.2",
-        "B"
+        "A.3",
+        "C.3",
+        "C.6"
       ],
-      "rationaleAI": "Social class and group behaviour address classifications of groups (A.1) and the modern family (A.2). Crime connects to prejudice (B)."
+      "rationaleAI": "Social institutions and group behavior address types of groups (A, A.1). Family connects to A.2. Political institutions address special-interest groups (A.3). Gender equality addresses women's status (C.3). Crime addresses criminality (C.6)."
     },
     {
       "vsiTitle": "Social Psychology",
       "vsiAuthor": "Richard J. Crisp",
       "relevantPathsAI": [
+        "A",
         "A.1",
         "B"
       ],
-      "rationaleAI": "Group behaviour and prejudice address classifications (A.1) and effects of prejudice (B)."
+      "rationaleAI": "Group behavior and prejudice address types of groups (A, A.1) and social effects of prejudice (B)."
     },
     {
       "vsiTitle": "Family law",
@@ -27,25 +30,27 @@
       "relevantPathsAI": [
         "A.2"
       ],
-      "rationaleAI": "Marriage and family law address the modern family (A.2)."
+      "rationaleAI": "Legal frameworks governing marriage, divorce, and family structures address the modern family (A.2)."
     },
     {
       "vsiTitle": "Racism",
       "vsiAuthor": "Ali Rattansi",
       "relevantPathsAI": [
         "A.4",
-        "B"
+        "B",
+        "C.4"
       ],
-      "rationaleAI": "Structural racism addresses minorities (A.4) and effects of prejudice (B)."
+      "rationaleAI": "Racism directly addresses social effects of prejudice (B) and minorities (A.4). Islamophobia and far-right movements address cultural minorities (C.4)."
     },
     {
       "vsiTitle": "Multiculturalism",
       "vsiAuthor": "Ali Rattansi",
       "relevantPathsAI": [
         "A.4",
-        "B"
+        "B",
+        "C.4"
       ],
-      "rationaleAI": "Multiculturalism addresses minorities (A.4) and effects of prejudice (B)."
+      "rationaleAI": "Institutional racism and integration connect to prejudice (B) and minorities (A.4). Cultural fragmentation addresses cultural minorities (C.4)."
     },
     {
       "vsiTitle": "Antisemitism",
@@ -54,41 +59,43 @@
         "A.4",
         "B"
       ],
-      "rationaleAI": "Antisemitism addresses minorities (A.4) and effects of prejudice (B)."
+      "rationaleAI": "Hatred of Jews addresses social effects of prejudice (B) and minorities (A.4)."
     },
     {
       "vsiTitle": "The Ghetto",
       "vsiAuthor": "Bryan Cheyette",
       "relevantPathsAI": [
         "A.4",
-        "B"
+        "B",
+        "C.4"
       ],
-      "rationaleAI": "Urban segregation addresses minorities (A.4) and effects of prejudice (B)."
+      "rationaleAI": "Ghetto history addresses minorities (A.4), prejudice (B), and cultural minorities (C.4)."
     },
     {
       "vsiTitle": "Diaspora",
       "vsiAuthor": "Kevin Kenny",
       "relevantPathsAI": [
-        "A.4"
+        "A.4",
+        "C.4"
       ],
-      "rationaleAI": "Migration and transnational identity address minorities (A.4)."
+      "rationaleAI": "Migration and transnational identity address minorities (A.4) and cultural minorities (C.4)."
     },
     {
       "vsiTitle": "International Migration",
       "vsiAuthor": "Khalid Koser",
       "relevantPathsAI": [
-        "A.4"
+        "A.4",
+        "C.4"
       ],
-      "rationaleAI": "Migration flows address minorities (A.4)."
+      "rationaleAI": "Immigration and cultural integration address minorities (A.4) and cultural minorities (C.4)."
     },
     {
       "vsiTitle": "Refugees",
       "vsiAuthor": "Gil Loescher",
       "relevantPathsAI": [
-        "A.4",
-        "D.2.e"
+        "A.4"
       ],
-      "rationaleAI": "Refugee crises address minorities (A.4) and disaster relief (D.2.e)."
+      "rationaleAI": "Forced migration creating displaced populations addresses minorities (A.4)."
     },
     {
       "vsiTitle": "African American History",
@@ -97,15 +104,16 @@
         "A.4",
         "B"
       ],
-      "rationaleAI": "African American struggles address minorities (A.4) and racial prejudice (B)."
+      "rationaleAI": "African American struggles address minorities (A.4) and social effects of prejudice (B)."
     },
     {
       "vsiTitle": "The Civil Rights Movement",
       "vsiAuthor": "Thomas C. Holt",
       "relevantPathsAI": [
+        "A.4",
         "B"
       ],
-      "rationaleAI": "Mass mobilization addresses effects of prejudice (B)."
+      "rationaleAI": "Mass mobilization transforming African American status addresses prejudice (B) and minorities (A.4)."
     },
     {
       "vsiTitle": "Adolescence",
@@ -113,7 +121,7 @@
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Adolescent development addresses adolescence (C.1)."
+      "rationaleAI": "Adolescent development directly addresses adolescence (C.1)."
     },
     {
       "vsiTitle": "Ageing",
@@ -121,7 +129,7 @@
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Aging dimensions address old age (C.2)."
+      "rationaleAI": "Aging dimensions directly address old age (C.2)."
     },
     {
       "vsiTitle": "Feminism",
@@ -129,7 +137,7 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Women's status addresses women's social and legal status (C.3)."
+      "rationaleAI": "Women's movement addressing employment inequality and suffrage directly addresses women's status (C.3)."
     },
     {
       "vsiTitle": "Feminist Philosophy",
@@ -137,7 +145,7 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Gender oppression addresses women's status (C.3)."
+      "rationaleAI": "Gender oppression and intersectionality directly address women's status (C.3)."
     },
     {
       "vsiTitle": "Gender History",
@@ -145,7 +153,7 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Gender as framework addresses women's status (C.3)."
+      "rationaleAI": "Gender as historical framework addresses women's status (C.3)."
     },
     {
       "vsiTitle": "American Women's History",
@@ -153,15 +161,16 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Women in the United States addresses women's status (C.3)."
+      "rationaleAI": "Women's suffrage and legal rights address women's status (C.3)."
     },
     {
       "vsiTitle": "Poverty",
       "vsiAuthor": "Philip N. Jefferson",
       "relevantPathsAI": [
-        "C.5"
+        "C.5",
+        "D.2.f"
       ],
-      "rationaleAI": "Poverty analysis addresses poverty (C.5)."
+      "rationaleAI": "Poverty as social phenomenon addresses C.5. Community development strategies address D.2.f."
     },
     {
       "vsiTitle": "Criminology",
@@ -169,7 +178,7 @@
       "relevantPathsAI": [
         "C.6"
       ],
-      "rationaleAI": "Crime measurement addresses criminality (C.6)."
+      "rationaleAI": "Crime measurement and criminal behaviour address criminality (C.6)."
     },
     {
       "vsiTitle": "Organized Crime",
@@ -177,7 +186,7 @@
       "relevantPathsAI": [
         "C.6"
       ],
-      "rationaleAI": "Organized crime addresses criminality (C.6)."
+      "rationaleAI": "Organized crime including Mafia and Yakuza addresses criminality (C.6)."
     },
     {
       "vsiTitle": "Violence",
@@ -185,15 +194,16 @@
       "relevantPathsAI": [
         "C.6"
       ],
-      "rationaleAI": "Physical violence addresses criminality (C.6)."
+      "rationaleAI": "Physical violence across social contexts connects to criminality (C.6)."
     },
     {
       "vsiTitle": "Sexuality",
       "vsiAuthor": "Veronique Mottier",
       "relevantPathsAI": [
-        "C.7"
+        "C.7",
+        "C.8"
       ],
-      "rationaleAI": "Sexual norms and gay rights address sexual orientation (C.7)."
+      "rationaleAI": "Gay rights movements address sexual orientation (C.7). Historical regulation of sexual behavior provides context for prostitution (C.8)."
     },
     {
       "vsiTitle": "Addiction",
@@ -201,7 +211,7 @@
       "relevantPathsAI": [
         "C.9"
       ],
-      "rationaleAI": "Substance dependence addresses drug and alcohol abuse (C.9)."
+      "rationaleAI": "Substance addiction addresses drug and alcohol abuse (C.9)."
     },
     {
       "vsiTitle": "Drugs",
@@ -209,16 +219,17 @@
       "relevantPathsAI": [
         "C.9"
       ],
-      "rationaleAI": "Recreational substances address drug and alcohol abuse (C.9)."
+      "rationaleAI": "Legal and illegal substances with addiction coverage address drug and alcohol abuse (C.9)."
     },
     {
       "vsiTitle": "The Welfare State",
       "vsiAuthor": "David Garland",
       "relevantPathsAI": [
         "D",
-        "D.1"
+        "D.1",
+        "D.2"
       ],
-      "rationaleAI": "Social insurance addresses social service background (D.1)."
+      "rationaleAI": "Social insurance and public services address social service (D), background of welfare services (D.1), and fields of service (D.2)."
     },
     {
       "vsiTitle": "Social work",
@@ -228,9 +239,11 @@
         "D.2",
         "D.2.a",
         "D.2.b",
-        "D.2.c"
+        "D.2.c",
+        "D.2.d",
+        "D.2.g"
       ],
-      "rationaleAI": "Social work addresses family (D.2.a), child (D.2.b), and youth welfare (D.2.c)."
+      "rationaleAI": "Social work interventions address social service (D) and fields including family (D.2.a), child (D.2.b), youth (D.2.c), group (D.2.d), and psychiatric welfare (D.2.g)."
     },
     {
       "vsiTitle": "Public health",
@@ -238,15 +251,16 @@
       "relevantPathsAI": [
         "D.2.g"
       ],
-      "rationaleAI": "Population health addresses medical social services (D.2.g)."
+      "rationaleAI": "Population health management connects to medical and psychiatric social services (D.2.g)."
     },
     {
       "vsiTitle": "Psychiatry",
       "vsiAuthor": "Tom Burns",
       "relevantPathsAI": [
+        "C.10",
         "D.2.g"
       ],
-      "rationaleAI": "Psychiatric treatment addresses psychiatric services (D.2.g)."
+      "rationaleAI": "Mental illness including suicide risk connects to suicide (C.10). Community psychiatry addresses psychiatric social services (D.2.g)."
     },
     {
       "vsiTitle": "Clinical Psychology",
@@ -254,7 +268,7 @@
       "relevantPathsAI": [
         "D.2.g"
       ],
-      "rationaleAI": "Mental health treatment addresses psychiatric services (D.2.g)."
+      "rationaleAI": "Mental health assessment and treatment address psychiatric social services (D.2.g)."
     },
     {
       "vsiTitle": "Depression",
@@ -263,7 +277,7 @@
         "C.10",
         "D.2.g"
       ],
-      "rationaleAI": "Suicide risk addresses suicide (C.10). Treatment addresses psychiatric services (D.2.g)."
+      "rationaleAI": "Depression as suicide risk factor connects to suicide (C.10). Treatment addresses psychiatric services (D.2.g)."
     },
     {
       "vsiTitle": "Madness",
@@ -271,7 +285,7 @@
       "relevantPathsAI": [
         "D.2.g"
       ],
-      "rationaleAI": "Institutional management addresses psychiatric services (D.2.g)."
+      "rationaleAI": "Institutional management of mental illness addresses psychiatric social services (D.2.g)."
     },
     {
       "vsiTitle": "Dementia",
@@ -280,7 +294,7 @@
         "C.2",
         "D.2.g"
       ],
-      "rationaleAI": "Aging implications address old age (C.2). Care addresses medical services (D.2.g)."
+      "rationaleAI": "Neurodegenerative conditions in aging connect to old age (C.2). Treatment addresses psychiatric services (D.2.g)."
     },
     {
       "vsiTitle": "Child Psychology",
@@ -288,7 +302,7 @@
       "relevantPathsAI": [
         "D.2.b"
       ],
-      "rationaleAI": "Developmental psychology addresses child welfare (D.2.b)."
+      "rationaleAI": "Developmental psychology covering attachment and bonding addresses child welfare (D.2.b)."
     },
     {
       "vsiTitle": "The History of Childhood",
@@ -297,7 +311,7 @@
         "D.2.b",
         "D.2.c"
       ],
-      "rationaleAI": "Historical childhood addresses child (D.2.b) and youth welfare (D.2.c)."
+      "rationaleAI": "History of childhood addresses child welfare (D.2.b). Youth experience connects to youth welfare (D.2.c)."
     },
     {
       "vsiTitle": "Pandemics",
@@ -306,31 +320,32 @@
         "D.2.e",
         "D.2.g"
       ],
-      "rationaleAI": "Pandemics address disaster relief (D.2.e) and medical services (D.2.g)."
+      "rationaleAI": "Public health responses address medical services (D.2.g). Epidemic emergencies connect to disaster relief (D.2.e)."
     },
     {
       "vsiTitle": "HIV/AIDS",
       "vsiAuthor": "Alan Whiteside",
       "relevantPathsAI": [
+        "C.7",
         "D.2.g"
       ],
-      "rationaleAI": "HIV/AIDS addresses medical services (D.2.g)."
+      "rationaleAI": "HIV/AIDS among marginalized populations connects to sexual orientation (C.7). Prevention strategies address medical services (D.2.g)."
     },
     {
       "vsiTitle": "Human Rights",
       "vsiAuthor": "Andrew Clapham",
       "relevantPathsAI": [
-        "D.1"
+        "C.3"
       ],
-      "rationaleAI": "Human rights framework addresses social service background (D.1)."
+      "rationaleAI": "Anti-discrimination protections address women's social and legal status (C.3)."
     },
     {
       "vsiTitle": "Surveillance",
       "vsiAuthor": "David Lyon",
       "relevantPathsAI": [
-        "B"
+        "A.4"
       ],
-      "rationaleAI": "Surveillance monitoring relates to effects of prejudice (B)."
+      "rationaleAI": "Differential surveillance impacts connect to minorities and ethnic groups (A.4)."
     },
     {
       "vsiTitle": "Humanitarianism",
@@ -340,7 +355,7 @@
         "D.1",
         "D.2.e"
       ],
-      "rationaleAI": "Humanitarian efforts address service background (D.1) and disaster relief (D.2.e)."
+      "rationaleAI": "Humanitarian efforts address social service (D), background of welfare (D.1), and disaster relief (D.2.e)."
     },
     {
       "vsiTitle": "Mary Wollstonecraft",
@@ -348,24 +363,25 @@
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Wollstonecraft addresses women's social and legal status (C.3)."
+      "rationaleAI": "A Vindication of the Rights of Woman addresses women's social and legal status (C.3)."
     },
     {
       "vsiTitle": "Foucault",
       "vsiAuthor": "Gary Gutting",
       "relevantPathsAI": [
-        "C.6"
+        "C.6",
+        "C.7"
       ],
-      "rationaleAI": "Foucault's analysis of institutional power, surveillance, and the construction of the modern subject through disciplines directly addresses criminality and delinquency as a social concern through the lens of power structures and institutional control."
+      "rationaleAI": "Work on prisons connects to criminality (C.6). Work on sexuality addresses sexual orientation (C.7)."
     },
     {
       "vsiTitle": "Work",
       "vsiAuthor": "Stephen Fineman",
       "relevantPathsAI": [
-        "C.5",
-        "A.2"
+        "C.3",
+        "C.5"
       ],
-      "rationaleAI": "Covers the catastrophic consequences of unemployment, the gendered nature of housework, and how work shapes identity and family, relevant to poverty and the modern family's organization and functions."
+      "rationaleAI": "Gendered housework addresses women's status (C.3). Unemployment connects to poverty (C.5)."
     }
   ],
   "_curatedBy": "ai",

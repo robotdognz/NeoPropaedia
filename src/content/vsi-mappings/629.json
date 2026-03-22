@@ -10,16 +10,17 @@
         "C.2.a",
         "C.2.b"
       ],
-      "rationaleAI": "Industrial and product design covering form, function, and mass production relates to the nature and scope of decorative arts and functional design (A). Coverage of Nokia, Ford, Sony, and Lego product design exemplifies industrial design as an art (C.2.a) and diverse kinds of industrial design classified by function (C.2.b)."
+      "rationaleAI": "Industrial, product, and cultural design addresses the nature and scope of decorative and functional design (A). Companies like Nokia, Ford, and Lego in product design address industrial design as an art (C.2.a) and diverse kinds of industrial design by function (C.2.b)."
     },
     {
       "vsiTitle": "Fashion",
       "vsiAuthor": "Rebecca Arnold",
       "relevantPathsAI": [
         "C.1",
-        "C.1.a"
+        "C.1.a",
+        "B.2"
       ],
-      "rationaleAI": "Fashion as design, manufacturing, and cultural communication from haute couture to ready-to-wear directly addresses dress design (C.1) and dress and dress accessories (C.1.a)."
+      "rationaleAI": "Fashion spanning haute couture to ready-to-wear addresses dress design (C.1) and dress accessories (C.1.a). Textile production connects to fabrics (B.2)."
     },
     {
       "vsiTitle": "Typography",
@@ -29,7 +30,7 @@
         "C.4.a",
         "C.4.b"
       ],
-      "rationaleAI": "Visual presentation of written language covering letterforms, typeface design, and font technology from early printing through digital media relates to handwriting systems and calligraphy (C.4.a) and printing arts including typography and printing design (C.4.b)."
+      "rationaleAI": "Letterforms and typeface design address calligraphy and lettering (C.4.a). Printing through digital media connects to typography and printing design (C.4.b)."
     },
     {
       "vsiTitle": "Advertising",
@@ -37,15 +38,16 @@
       "relevantPathsAI": [
         "C.4.c"
       ],
-      "rationaleAI": "Advertising strategy, media channels, and campaign design including print, outdoor, and internet-based formats directly address advertising art and design (C.4.c)."
+      "rationaleAI": "Advertising formats including print, outdoor, and internet campaigns directly address advertising art and design (C.4.c)."
     },
     {
       "vsiTitle": "Branding",
       "vsiAuthor": "Robert Jones",
       "relevantPathsAI": [
+        "C.4.c",
         "C.4.d"
       ],
-      "rationaleAI": "Brand identity construction and the mechanisms of brand recognition connect to the design of signs and symbols used primarily for identification (C.4.d)."
+      "rationaleAI": "Brand identity and media strategy address advertising art and design (C.4.c). Visual markers and logos connect to signs and symbols for identification (C.4.d)."
     },
     {
       "vsiTitle": "Writing and Script",
@@ -53,7 +55,7 @@
       "relevantPathsAI": [
         "C.4.a"
       ],
-      "rationaleAI": "History of writing systems from cuneiform and hieroglyphs through alphabetic scripts connects to handwriting systems and styles, calligraphy, and lettering (C.4.a)."
+      "rationaleAI": "Writing systems from cuneiform through calligraphic traditions address handwriting systems, calligraphy, and lettering (C.4.a)."
     },
     {
       "vsiTitle": "Hieroglyphs",
@@ -61,26 +63,28 @@
       "relevantPathsAI": [
         "C.4.a"
       ],
-      "rationaleAI": "Egyptian hieroglyphs as a writing system with pictographic aesthetic and sacral function spanning over three thousand years directly connects to handwriting systems and styles (C.4.a)."
+      "rationaleAI": "Egyptian hieroglyphs as monumental art and pictographic script address handwriting systems and styles (C.4.a)."
     },
     {
       "vsiTitle": "Materials",
       "vsiAuthor": "Christopher Hall",
       "relevantPathsAI": [
         "B",
-        "B.4",
-        "B.5"
+        "B.5",
+        "B.9.a",
+        "B.9.b"
       ],
-      "rationaleAI": "Materials science studying metals, ceramics, and polymers connects to decorative objects classified by materials (B), including glass (B.4) and metals (B.5) as materials used in decorative arts."
+      "rationaleAI": "Metals, ceramics, and polymers address decorative materials (B) and metals (B.5). Cement connects to plaster, cement, and concrete (B.9.a). Polymers address plastics and synthetic materials (B.9.b)."
     },
     {
       "vsiTitle": "Architecture",
       "vsiAuthor": "Andrew Ballantyne",
       "relevantPathsAI": [
         "C.3",
+        "C.3.a",
         "C.3.b"
       ],
-      "rationaleAI": "Architecture as art form spanning from ancient Egypt through modernism connects to interior design's integration with architecture (C.3.b) and interior design as an art (C.3.a) through the relationship between decorative elements and building design."
+      "rationaleAI": "Architecture as art form addresses interior design as an art (C.3.a). Form, function, and cultural meaning connect to integration of interior design with architecture (C.3.b)."
     },
     {
       "vsiTitle": "Modernism",
@@ -88,7 +92,7 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Modernism as an aesthetic movement transforming art, architecture, and design including Dada and surrealism relates broadly to the nature and scope of the arts of decoration and functional design (A) through its influence on design aesthetics."
+      "rationaleAI": "Modernism transforming art, architecture, and design addresses the nature and scope of decorative and functional design (A)."
     },
     {
       "vsiTitle": "Aesthetics",
@@ -96,7 +100,7 @@
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Philosophical examination of beauty, taste, and aesthetic experience including everyday experience beyond fine arts relates to the nature and scope of the arts of decoration and functional design (A)."
+      "rationaleAI": "Philosophy of beauty and aesthetic experience beyond fine arts addresses the nature and scope of decorative and functional design (A)."
     },
     {
       "vsiTitle": "Classics",
@@ -104,62 +108,62 @@
       "relevantPathsAI": [
         "B.7"
       ],
-      "rationaleAI": "Classical Greek and Roman architectural and sculptural traditions including temple design connect to stone as a decorative material (B.7) through classical architectural ornamentation."
+      "rationaleAI": "Classical temple design, sculpture, and material culture address stone as a decorative material (B.7)."
     },
     {
       "vsiTitle": "Social and Cultural Anthropology",
       "vsiAuthor": "John Monaghan, Peter Just",
       "relevantPathsAI": [
-        "C.1.c",
-        "B.10"
+        "A",
+        "B.10.b"
       ],
-      "rationaleAI": "Covers decorative traditions across cultures including body decoration, textiles, and ceremonial objects (C.1.c, B.10)."
+      "rationaleAI": "Material culture and ethnographic study address the nature of decorative arts (A). Non-Western craft production connects to plant fibres, reeds, and baskets (B.10.b)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
       "relevantPathsAI": [
-        "B.1",
-        "C.1"
+        "B.10.d"
       ],
-      "rationaleAI": "Prehistoric decorative arts including pottery, jewelry, and body decoration are among the earliest functional design objects (B.1, C.1)."
+      "rationaleAI": "Prehistoric material evidence including tools from organic materials connects to shell, horn, bone, ivory, and related materials (B.10.d)."
     },
     {
       "vsiTitle": "Minerals",
       "vsiAuthor": "David Vaughan",
       "relevantPathsAI": [
-        "B.3"
+        "B.3",
+        "B.7"
       ],
-      "rationaleAI": "Mineralogy covering crystal structures and mineral families including quartz and pyrite connects to gems as a decorative arts material (B.3)."
+      "rationaleAI": "Mineral families connect to gems (B.3) as precious stones are mineral formations. Mineralogy also addresses stone (B.7)."
     },
     {
       "vsiTitle": "Chemistry",
       "vsiAuthor": "Peter Atkins",
       "relevantPathsAI": [
-        "B.1",
-        "B.4",
-        "B.5"
+        "B.9.b"
       ],
-      "rationaleAI": "Covers the chemistry of materials including ceramics, glass, and metals relevant to understanding decorative art media (B.1, B.4, B.5)."
+      "rationaleAI": "Industrial chemistry including materials for clothing and furnishings connects to plastics and synthetic materials (B.9.b)."
     },
     {
       "vsiTitle": "Ancient Egyptian Art and Architecture",
       "vsiAuthor": "Christina Riggs",
       "relevantPathsAI": [
-        "B",
+        "A",
         "B.5",
-        "B.7"
+        "B.7",
+        "C.1.c"
       ],
-      "rationaleAI": "Covers Egyptian decorative objects, sculpture, and painting spanning four thousand years, directly relevant to decorative arts using metals, stone, and other materials in the ancient world."
+      "rationaleAI": "Egyptian decorative objects address the nature of decorative arts (A). Stone sculpture connects to stone (B.7). Metal objects connect to metals (B.5). Cosmetics in Egyptian society relate to body decoration (C.1.c)."
     },
     {
       "vsiTitle": "Renaissance Art",
       "vsiAuthor": "Geraldine A. Johnson",
       "relevantPathsAI": [
-        "B",
+        "A",
+        "B.5",
         "C.3"
       ],
-      "rationaleAI": "Covers Renaissance decorative arts in their cultural context, including the role of art in homes and civic spaces and patronage systems, relevant to decorative arts and interior design."
+      "rationaleAI": "Renaissance decorative arts address the nature of decorative arts (A). Art in homes and civic spaces connects to interior design (C.3). Metalwork addresses metals (B.5)."
     }
   ],
   "_curatedBy": "ai",

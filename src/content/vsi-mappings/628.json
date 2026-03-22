@@ -10,89 +10,86 @@
         "D.2",
         "D.3",
         "D.3.a",
-        "D.3.b"
+        "D.3.b",
+        "B.4.d"
       ],
-      "rationaleAI": "Photographic origins through daguerreotype and Fox Talbot, photographic theory and critical frameworks (D.1), equipment and techniques from 19th century to digital era (D.2), and major genres including landscape (Ansel Adams), documentary/photojournalism (Robert Capa, Cartier-Bresson) covering both subject-determined (D.3.a) and functional photography such as photojournalism (D.3.b)."
+      "rationaleAI": "Photography as visual medium addresses photography as art (D, D.1). Documentary tradition addresses functional photography (D.3.b). Landscape photography addresses photography by subject (D.3.a). Photography relates to painting (B.4.d)."
     },
     {
       "vsiTitle": "Art history",
       "vsiAuthor": "Dana Arnold",
       "relevantPathsAI": [
+        "A.4",
         "B",
         "B.5",
         "B.6",
         "B.6.a",
         "B.6.b"
       ],
-      "rationaleAI": "Broad survey of painting development from International Gothic and Renaissance through Impressionism and contemporary art (B.6.a), including non-Western traditions challenging Western-centric narratives (B.6.b). Covers methods of interpreting and presenting painting (B) and diverse kinds of painting across historical periods (B.5)."
+      "rationaleAI": "Painting from ancient times through Impressionism addresses history of painting (B.6) and Western painting (B.6.a). Global art histories address non-Western painting (B.6.b). Drawing development connects to history of drawing (A.4)."
     },
     {
       "vsiTitle": "Art Theory",
       "vsiAuthor": "Cynthia Freeland",
       "relevantPathsAI": [
         "B.1",
-        "D.1"
+        "B.2"
       ],
-      "rationaleAI": "Philosophical examination of beauty, taste, significant form, and institutional definitions of art relate to elements of design and composition in painting (B.1). Discussion of video art and new media connects to the nature and problems of photography as art (D.1)."
+      "rationaleAI": "Beauty and significant form address elements of design (B.1). Iconographic tradition addresses iconography of painting (B.2)."
     },
     {
       "vsiTitle": "Modern art",
       "vsiAuthor": "David Cottington",
       "relevantPathsAI": [
-        "B",
-        "B.5.b.ii",
         "B.6",
-        "B.6.a"
+        "B.6.a",
+        "C.4"
       ],
-      "rationaleAI": "Survey of modern painting from Manet through Picasso, Van Gogh, Mondrian, and Young British Artists covering the history of Western painting (B.6.a). Addresses nonrepresentational painting through abstract movements (B.5.b.ii) and the institutional and critical frameworks of modernism (B)."
+      "rationaleAI": "Key painters from Manet through Mondrian address Western painting history (B.6.a). Modern printmaking connects to history of printmaking (C.4)."
     },
     {
       "vsiTitle": "Contemporary art",
       "vsiAuthor": "Julian Stallabrass",
       "relevantPathsAI": [
         "B.6",
-        "B.6.a",
-        "B.6.b"
+        "B.6.a"
       ],
-      "rationaleAI": "Global contemporary art scene including the shift beyond Euro-American dominance to new regions such as China encompasses both Western painting history (B.6.a) and non-Western painting traditions (B.6.b). Art market dynamics and museum branding address the institutional context of painting today."
+      "rationaleAI": "Contemporary global art scene addresses history of painting (B.6) and Western painting (B.6.a)."
     },
     {
       "vsiTitle": "Renaissance Art",
       "vsiAuthor": "Geraldine A. Johnson",
       "relevantPathsAI": [
-        "B",
-        "B.1",
-        "B.2",
+        "A.4",
         "B.3",
         "B.5",
         "B.5.a",
-        "B.5.a.i",
-        "B.5.a.ii",
-        "B.5.b.i",
-        "B.6.a",
-        "A.4"
+        "B.5.b",
+        "B.6",
+        "B.6.a"
       ],
-      "rationaleAI": "Renaissance painting covering composition and perspective (B.1), iconographic programs (B.2), tempera and oil media (B.3), mural painting in churches and civic spaces (B.5.a.i), and easel and manuscript painting (B.5.a.ii). Representational devotional and portrait painting (B.5.b.i) and history of Western painting (B.6.a). Drawing by Leonardo and Durer (A.4)."
+      "rationaleAI": "Renaissance painters address Western painting history (B.6.a). Art in churches addresses painting on fixed objects (B.5.a). Devotional painting addresses representational painting (B.5.b). Durer and Van Eyck connect to drawing history (A.4)."
     },
     {
       "vsiTitle": "Dada and Surrealism",
       "vsiAuthor": "David Hopkins",
       "relevantPathsAI": [
-        "B.5.b.ii",
+        "B.6",
         "B.6.a",
         "C",
-        "C.1",
+        "C.4",
         "D"
       ],
-      "rationaleAI": "Surrealist and Dada painting by De Chirico, Magritte, and Miro spanning Western painting history (B.6.a) including nonrepresentational approaches (B.5.b.ii). Collage and found object practices connect to printmaking's originality questions (C.1). Photography and film as artistic media relate to photography as art (D)."
+      "rationaleAI": "Surrealist painting addresses Western painting (B.6.a). Collage connects to printmaking (C, C.4). Photography in Surrealism addresses D."
     },
     {
       "vsiTitle": "The Avant-Garde",
       "vsiAuthor": "David Cottington",
       "relevantPathsAI": [
+        "B.6",
         "B.6.a"
       ],
-      "rationaleAI": "Avant-garde painting movements from Seurat through Picasso and institutional contexts such as the Salon des Refuses contribute to the history of Western painting (B.6.a)."
+      "rationaleAI": "Avant-garde from Seurat and Picasso addresses Western painting history (B.6.a)."
     },
     {
       "vsiTitle": "Ancient Egyptian Art and Architecture",
@@ -100,63 +97,70 @@
       "relevantPathsAI": [
         "A.4",
         "B.5.a.i",
+        "B.6",
         "B.6.b"
       ],
-      "rationaleAI": "Egyptian wall painting and tomb decoration spanning four thousand years represents fixed-surface painting traditions (B.5.a.i) and the painting of non-Western peoples (B.6.b). Drawing traditions in Egyptian art connect to the history of drawing (A.4)."
+      "rationaleAI": "Egyptian wall art addresses cave and mural painting (B.5.a.i). Egyptian arts address non-Western painting (B.6.b). Visual representation connects to drawing history (A.4)."
     },
     {
       "vsiTitle": "Christian art",
       "vsiAuthor": "Beth Williamson",
       "relevantPathsAI": [
         "B.2",
-        "B.5.a.i",
-        "B.5.a.ii",
+        "B.4.c",
+        "B.4.f",
+        "B.4.g",
         "B.5.b.i",
+        "B.6",
         "B.6.a"
       ],
-      "rationaleAI": "Christian devotional iconography of crucifixion, Virgin Mary, and saints constitutes a major iconographic tradition in painting (B.2). Frescoes such as St Francis cycles are mural painting (B.5.a.i), while Memling and Holbein panel works are easel painting (B.5.a.ii). Representational devotional painting (B.5.b.i) within Western painting history (B.6.a)."
+      "rationaleAI": "Christian themes address iconography (B.2). Devotional painting addresses representational painting (B.5.b.i). Frescoes and stained glass connect to mosaic (B.4.c), stained glass (B.4.f), and tapestry (B.4.g). Western painting history (B.6.a)."
     },
     {
       "vsiTitle": "Typography",
       "vsiAuthor": "Paul Luna",
       "relevantPathsAI": [
-        "C"
+        "C",
+        "C.3",
+        "C.4"
       ],
-      "rationaleAI": "Covers letterforms, fonts, and printing design, directly relevant to printmaking media and the relationship between type and graphic arts (C)."
+      "rationaleAI": "Letterforms and printing connect to printmaking (C) and its history (C.4). Printing design addresses tools and techniques (C.3)."
     },
     {
       "vsiTitle": "Futurism",
       "vsiAuthor": "Ara H. Merjian",
       "relevantPathsAI": [
-        "B.5.b.ii",
+        "B.6",
         "B.6.a"
       ],
-      "rationaleAI": "Italian Futurist painting embracing speed, technology, and new visual aesthetics represents an important movement in Western painting history (B.6.a) with pioneering nonrepresentational approaches (B.5.b.ii)."
+      "rationaleAI": "Italian Futurist visual arts address Western painting history (B.6.a)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
       "relevantPathsAI": [
-        "B.5",
-        "B.5.c"
+        "A.4",
+        "B.5.a.i"
       ],
-      "rationaleAI": "Prehistoric cave painting at sites like Lascaux is the earliest form of painting on fixed objects (B.5.a.i) and primitive painting (B.5.c)."
+      "rationaleAI": "Prehistoric mark-making connects to drawing history (A.4). Cave art connects to cave painting (B.5.a.i)."
     },
     {
       "vsiTitle": "Romanticism",
       "vsiAuthor": "Michael Ferber",
       "relevantPathsAI": [
+        "B.6",
         "B.6.a"
       ],
-      "rationaleAI": "Romanticism as a pan-European movement encompassing painting alongside literature and music addresses painting's role in the Romantic era within the history of Western painting (B.6.a)."
+      "rationaleAI": "Romantic painting addresses Western painting history (B.6.a)."
     },
     {
       "vsiTitle": "Writing and Script",
       "vsiAuthor": "Andrew Robinson",
       "relevantPathsAI": [
-        "A.3.b.iii"
+        "A.4",
+        "B.4.a"
       ],
-      "rationaleAI": "Development of writing systems and the relationship between script and visual representation connects to cartography and mapping as a kind of drawing determined by special uses (A.3.b.iii)."
+      "rationaleAI": "Calligraphic traditions address calligraphy (B.4.a). Script development connects to drawing history (A.4)."
     },
     {
       "vsiTitle": "Journalism",
@@ -164,7 +168,7 @@
       "relevantPathsAI": [
         "D.3.b"
       ],
-      "rationaleAI": "Journalism's relationship to photojournalism and documentary photography connects to functional photography including photojournalism and photo reportage (D.3.b)."
+      "rationaleAI": "Photojournalism addresses functional photography (D.3.b)."
     },
     {
       "vsiTitle": "Film",
@@ -172,7 +176,7 @@
       "relevantPathsAI": [
         "A.3.b.i"
       ],
-      "rationaleAI": "Covers cinema as medium and art form including the role of the camera, color, and digital technology in storytelling through images, relevant to animation as a form of drawing for special uses in film and motion pictures."
+      "rationaleAI": "Cinema and moving images connect to animation (A.3.b.i)."
     },
     {
       "vsiTitle": "Comedy",
@@ -180,24 +184,24 @@
       "relevantPathsAI": [
         "A.3.b.ii"
       ],
-      "rationaleAI": "Covers caricatures and cartoons as written and visual comic forms alongside comic drama and performance traditions, directly addressing caricature, cartoon, and comic strip as kinds of drawing."
+      "rationaleAI": "Caricatures and cartoons address caricature, cartoon, comic strip (A.3.b.ii)."
     },
     {
       "vsiTitle": "Design",
       "vsiAuthor": "John Heskett",
       "relevantPathsAI": [
-        "A.1",
-        "A.3.b.iv"
+        "B.1"
       ],
-      "rationaleAI": "Covers design principles including the relationship between form and function, the Arts and Crafts Movement, and Bauhaus tradition, relevant to elements of design and principles of composition as well as drafting as functional drawing."
+      "rationaleAI": "Design principles address elements of design and composition (B.1)."
     },
     {
       "vsiTitle": "Modernism",
       "vsiAuthor": "Christopher Butler",
       "relevantPathsAI": [
+        "B.6",
         "B.6.a"
       ],
-      "rationaleAI": "Covers modernism's transformation of visual arts in the twentieth century including Dada and surrealism, directly relevant to the history of Western painting and its break with traditional representation."
+      "rationaleAI": "Modernism transforming visual arts addresses Western painting history (B.6.a)."
     }
   ],
   "_curatedBy": "ai",

@@ -7,10 +7,20 @@
       "relevantPathsAI": [
         "B",
         "B.1",
+        "B.1.b",
+        "B.1.c",
+        "B.1.c.i",
+        "B.1.c.ii",
+        "B.1.c.iii",
+        "B.1.c.iv",
         "B.2",
-        "C"
+        "B.2.a",
+        "B.2.a.ii",
+        "B.2.b",
+        "B.2.e",
+        "B.2.h"
       ],
-      "rationaleAI": "Ancient Greece addresses archaic (B.1), classical (B.2), and Hellenistic (C) periods."
+      "rationaleAI": "Greek civilization covers archaic through classical periods (B), poleis including Sparta, Miletus, and Thebes (B.1.c.ii, B.1.c.iii, B.1.c.iv), political trends (B.1.c.i), Macedonia (B.2.e), and Alexander (B.2.h)."
     },
     {
       "vsiTitle": "The Roman Republic",
@@ -18,11 +28,26 @@
       "relevantPathsAI": [
         "D",
         "D.2",
+        "D.2.b",
         "D.3",
+        "D.3.a",
+        "D.3.b",
         "D.4",
-        "D.5"
+        "D.4.a",
+        "D.4.a.i",
+        "D.4.a.ii",
+        "D.4.a.iii",
+        "D.4.b",
+        "D.4.c",
+        "D.5",
+        "D.5.a",
+        "D.5.b",
+        "D.5.c",
+        "D.5.d",
+        "D.5.e",
+        "D.5.f"
       ],
-      "rationaleAI": "The Roman Republic addresses Rome's rise (D), early Rome (D.2), early (D.3), middle (D.4), and late (D.5) Republic."
+      "rationaleAI": "Roman Republic covers all periods from monarchy through late republic including institutions (D.3.a), Punic Wars (D.4.a), and key figures (D.5.b-D.5.f)."
     },
     {
       "vsiTitle": "The Roman Empire",
@@ -30,18 +55,27 @@
       "relevantPathsAI": [
         "E",
         "E.1",
+        "E.1.a",
+        "E.1.b",
+        "E.1.c",
+        "E.1.d",
         "E.2",
-        "E.3"
+        "E.2.a",
+        "E.2.b",
+        "E.3",
+        "E.3.a",
+        "E.3.b"
       ],
-      "rationaleAI": "The Roman Empire addresses Julio-Claudians (E.1), Flavians/Antonines (E.2), and zenith (E.3)."
+      "rationaleAI": "Roman Empire covers Augustus through the zenith (E, E.1, E.2, E.3) including administration, provinces, culture, and frontiers."
     },
     {
       "vsiTitle": "Alexander the Great",
       "vsiAuthor": "Hugh Bowden",
       "relevantPathsAI": [
-        "B.2.h"
+        "B.2.h",
+        "C.1.a"
       ],
-      "rationaleAI": "Alexander addresses his empire (B.2.h)."
+      "rationaleAI": "Alexander covers his empire (B.2.h) and successor conflicts (C.1.a)."
     },
     {
       "vsiTitle": "The Hellenistic Age",
@@ -49,18 +83,28 @@
       "relevantPathsAI": [
         "C",
         "C.1",
+        "C.1.a",
+        "C.1.b",
+        "C.1.c",
+        "C.1.d",
+        "C.1.f",
+        "C.1.g",
         "C.2",
-        "C.3"
+        "C.2.d",
+        "C.3",
+        "C.3.a",
+        "C.3.b"
       ],
-      "rationaleAI": "Hellenistic Age addresses kingdoms (C.1), interstate relations (C.2), and culture (C.3)."
+      "rationaleAI": "Hellenistic Age covers all successor kingdoms, inter-state relations, and cultural institutions."
     },
     {
       "vsiTitle": "The Etruscans",
       "vsiAuthor": "Christopher Smith",
       "relevantPathsAI": [
-        "A.3.a.i"
+        "A.3.a.i",
+        "D.2.b"
       ],
-      "rationaleAI": "Etruscans address A.3.a.i directly."
+      "rationaleAI": "Etruscans directly address Etruscan civilization (A.3.a.i) and their influence on Rome (D.2.b)."
     },
     {
       "vsiTitle": "Thucydides",
@@ -68,7 +112,7 @@
       "relevantPathsAI": [
         "B.2.c"
       ],
-      "rationaleAI": "Thucydides addresses the Peloponnesian War (B.2.c)."
+      "rationaleAI": "Thucydides covers the Peloponnesian War (B.2.c)."
     },
     {
       "vsiTitle": "Herodotus",
@@ -76,7 +120,7 @@
       "relevantPathsAI": [
         "B.1.c.viii"
       ],
-      "rationaleAI": "Herodotus addresses Greco-Persian Wars (B.1.c.viii)."
+      "rationaleAI": "Herodotus covers the Greco-Persian Wars (B.1.c.viii)."
     },
     {
       "vsiTitle": "Homer",
@@ -84,17 +128,19 @@
       "relevantPathsAI": [
         "B.1.b"
       ],
-      "rationaleAI": "Homer relates to the Geometric Period (B.1.b)."
+      "rationaleAI": "Homer covers the Geometric Period (B.1.b)."
     },
     {
       "vsiTitle": "Classical Literature",
       "vsiAuthor": "William Allan",
       "relevantPathsAI": [
+        "B.1.c.vii",
+        "B.2.a.iii",
         "B.2.g",
         "E.1.d",
         "E.3.b"
       ],
-      "rationaleAI": "Classical literature relates to 4th-century Greek culture (B.2.g), Augustan culture (E.1.d), and Greco-Roman culture (E.3.b)."
+      "rationaleAI": "Classical literature covers arts across archaic, classical, Augustan, and Greco-Roman periods."
     },
     {
       "vsiTitle": "The Celts",
@@ -103,26 +149,28 @@
         "A.3.b.i",
         "C.2.c"
       ],
-      "rationaleAI": "Celts address A.3.b.i and Celtic migrations (C.2.c)."
+      "rationaleAI": "Celts cover Celtic Europe (A.3.b.i) and Celtic migrations (C.2.c)."
     },
     {
       "vsiTitle": "The Spartans",
       "vsiAuthor": "Andrew J. Bayliss",
       "relevantPathsAI": [
         "B.1.c.ii",
+        "B.2.b",
         "B.2.d"
       ],
-      "rationaleAI": "Spartans address Spartan dominance (B.1.c.ii) and hegemony (B.2.d)."
+      "rationaleAI": "Spartans cover Spartan dominance (B.1.c.ii), the Peloponnesian League (B.2.b), and hegemony (B.2.d)."
     },
     {
       "vsiTitle": "Ancient warfare",
       "vsiAuthor": "Harry Sidebottom",
       "relevantPathsAI": [
         "B.2.c",
+        "B.2.h",
         "D.4.a",
         "E.1"
       ],
-      "rationaleAI": "Ancient warfare relates to the Peloponnesian War (B.2.c), Punic Wars (D.4.a), and imperial expansion (E.1)."
+      "rationaleAI": "Ancient warfare covers the Peloponnesian War (B.2.c), Alexander (B.2.h), Punic Wars (D.4.a), and imperial military (E.1)."
     },
     {
       "vsiTitle": "Ancient Greek and Roman Science",
@@ -132,32 +180,38 @@
         "B.2.g",
         "E.3.b"
       ],
-      "rationaleAI": "Ancient science relates to Archaic philosophy (B.1.c.vii), 4th-century culture (B.2.g), and Greco-Roman culture (E.3.b)."
+      "rationaleAI": "Ancient science covers archaic philosophy (B.1.c.vii), 4th-century culture (B.2.g), and Greco-Roman culture (E.3.b)."
     },
     {
       "vsiTitle": "Late Antiquity",
       "vsiAuthor": "Gillian Clark",
       "relevantPathsAI": [
-        "E.4"
+        "E.4",
+        "E.4.b",
+        "E.4.c",
+        "E.4.d",
+        "E.4.e",
+        "E.4.f",
+        "E.4.g"
       ],
-      "rationaleAI": "Late Antiquity relates to 3rd-4th century changes (E.4)."
+      "rationaleAI": "Late antiquity covers all 3rd-4th century changes and crises (E.4, E.4.b-E.4.g)."
     },
     {
       "vsiTitle": "Byzantium",
       "vsiAuthor": "Peter Sarris",
       "relevantPathsAI": [
-        "E.4.e.ii"
+        "E.4.e.ii",
+        "E.4.f"
       ],
-      "rationaleAI": "Byzantium relates to Constantine's Constantinople (E.4.e.ii)."
+      "rationaleAI": "Byzantium covers Constantine (E.4.e.ii) and his successors (E.4.f)."
     },
     {
       "vsiTitle": "Christianity",
       "vsiAuthor": "Linda Woodhead",
       "relevantPathsAI": [
-        "E.4.b",
-        "E.4.f.iii"
+        "E.4.b"
       ],
-      "rationaleAI": "Christianity relates to its spread (E.4.b) and state religion establishment (E.4.f.iii)."
+      "rationaleAI": "Christianity covers the rise of Christianity (E.4.b)."
     },
     {
       "vsiTitle": "Horace",
@@ -165,7 +219,7 @@
       "relevantPathsAI": [
         "E.1.d"
       ],
-      "rationaleAI": "Horace relates to Augustan culture (E.1.d)."
+      "rationaleAI": "Horace addresses Augustan culture (E.1.d)."
     },
     {
       "vsiTitle": "Ovid",
@@ -173,7 +227,7 @@
       "relevantPathsAI": [
         "E.1.d"
       ],
-      "rationaleAI": "Ovid relates to Augustan culture (E.1.d)."
+      "rationaleAI": "Ovid addresses Augustan culture (E.1.d)."
     },
     {
       "vsiTitle": "Cicero",
@@ -182,7 +236,7 @@
         "D.5.d.ii",
         "D.5.h"
       ],
-      "rationaleAI": "Cicero relates to mid-1st century politics (D.5.d.ii) and late republican culture (D.5.h)."
+      "rationaleAI": "Cicero covers late republican politics (D.5.d.ii) and culture (D.5.h)."
     },
     {
       "vsiTitle": "Socrates",
@@ -190,7 +244,7 @@
       "relevantPathsAI": [
         "B.2.c"
       ],
-      "rationaleAI": "Socrates relates to intellectual changes during the Peloponnesian War (B.2.c)."
+      "rationaleAI": "Socrates connects to the Peloponnesian War period (B.2.c)."
     },
     {
       "vsiTitle": "Aristotle",
@@ -198,17 +252,18 @@
       "relevantPathsAI": [
         "B.2.g"
       ],
-      "rationaleAI": "Aristotle relates to 4th-century Greek culture (B.2.g)."
+      "rationaleAI": "Aristotle addresses 4th-century Greek culture (B.2.g)."
     },
     {
       "vsiTitle": "Classics",
       "vsiAuthor": "Mary Beard, John Henderson",
       "relevantPathsAI": [
+        "A.1",
         "B",
         "D",
         "E"
       ],
-      "rationaleAI": "Classics relates broadly to Greece (B), Rome (D), and the empire (E)."
+      "rationaleAI": "Classics provides context for all major areas of ancient civilization."
     },
     {
       "vsiTitle": "Ancient philosophy",
@@ -216,9 +271,10 @@
       "relevantPathsAI": [
         "B.1.c.vii",
         "B.2.g",
-        "C.3.b"
+        "E.3.b",
+        "E.4.c"
       ],
-      "rationaleAI": "Ancient philosophy relates to beginnings of philosophy (B.1.c.vii), 4th-century culture (B.2.g), and Hellenistic philosophy (C.3.b)."
+      "rationaleAI": "Ancient philosophy spans archaic through late antique periods."
     },
     {
       "vsiTitle": "Stoicism",
@@ -227,7 +283,7 @@
         "C.3.b",
         "E.3.b"
       ],
-      "rationaleAI": "Stoicism relates to Hellenistic philosophy (C.3.b) and Greco-Roman culture (E.3.b)."
+      "rationaleAI": "Stoicism covers Hellenistic philosophy (C.3.b) and Greco-Roman culture (E.3.b)."
     },
     {
       "vsiTitle": "Epicureanism",
@@ -235,16 +291,16 @@
       "relevantPathsAI": [
         "C.3.b"
       ],
-      "rationaleAI": "Epicureanism relates to Hellenistic philosophy (C.3.b)."
+      "rationaleAI": "Epicureanism covers Hellenistic philosophy (C.3.b)."
     },
     {
       "vsiTitle": "Paganism",
       "vsiAuthor": "Owen Davies",
       "relevantPathsAI": [
-        "A.3.b",
+        "A.3.b.i",
         "E.4.b"
       ],
-      "rationaleAI": "Paganism relates to trans-Alpine Europeans (A.3.b) and imperial religions (E.4.b)."
+      "rationaleAI": "Paganism covers Celtic/Germanic religion (A.3.b.i) and Christianity's rise (E.4.b)."
     },
     {
       "vsiTitle": "Druids",
@@ -252,24 +308,27 @@
       "relevantPathsAI": [
         "A.3.b.i"
       ],
-      "rationaleAI": "Druids relate to the Celts (A.3.b.i)."
+      "rationaleAI": "Druids address Celtic religion (A.3.b.i)."
     },
     {
       "vsiTitle": "Roman Britain",
       "vsiAuthor": "Peter Salway",
       "relevantPathsAI": [
+        "E.1.e",
+        "E.3.a",
         "E.4.g"
       ],
-      "rationaleAI": "Roman Britain relates to later empire provinces (E.4.g)."
+      "rationaleAI": "Roman Britain covers annexation (E.1.e), western provinces (E.3.a), and empire's eclipse (E.4.g)."
     },
     {
       "vsiTitle": "Democracy",
       "vsiAuthor": "Bernard Crick",
       "relevantPathsAI": [
+        "B.1.c.i",
         "B.1.c.ii",
-        "B.2.a"
+        "B.2.a.ii"
       ],
-      "rationaleAI": "Democracy relates to Cleisthenes (B.1.c.ii) and Periclean Athens (B.2.a)."
+      "rationaleAI": "Democracy covers poleis trends (B.1.c.i), Athenian democracy (B.1.c.ii, B.2.a.ii)."
     },
     {
       "vsiTitle": "Sophocles",
@@ -277,7 +336,7 @@
       "relevantPathsAI": [
         "B.2.a.iii"
       ],
-      "rationaleAI": "Sophocles relates to Athenian cultural efflorescence (B.2.a.iii)."
+      "rationaleAI": "Sophocles addresses Periclean cultural efflorescence (B.2.a.iii)."
     },
     {
       "vsiTitle": "The Epic",
@@ -285,33 +344,35 @@
       "relevantPathsAI": [
         "B.1.b"
       ],
-      "rationaleAI": "Epic relates to Homer and Hesiod (B.1.b)."
+      "rationaleAI": "Epic connects to Homer in the Geometric Period (B.1.b)."
     },
     {
       "vsiTitle": "World Mythology",
       "vsiAuthor": "David A. Leeming",
       "relevantPathsAI": [
-        "B.1.b"
+        "B.1.b",
+        "B.1.c.vii"
       ],
-      "rationaleAI": "Mythology relates to Geometric Period religion (B.1.b)."
+      "rationaleAI": "Mythology covers the Geometric Period (B.1.b) and archaic religion (B.1.c.vii)."
     },
     {
       "vsiTitle": "Rhetoric",
       "vsiAuthor": "Richard Toye",
       "relevantPathsAI": [
+        "B.2.g",
         "D.5.h"
       ],
-      "rationaleAI": "Rhetoric relates to late republican oratory (D.5.h)."
+      "rationaleAI": "Rhetoric covers 4th-century culture (B.2.g) and late republican oratory (D.5.h)."
     },
     {
       "vsiTitle": "Prehistory",
       "vsiAuthor": "Chris Gosden",
       "relevantPathsAI": [
-        "A.1",
+        "A.2",
         "A.2.a",
         "A.2.b"
       ],
-      "rationaleAI": "Covers the spread of Neolithic farming communities and Bronze Age developments across Europe, directly addressing the geography, ethnography, and archaeological sources of non-Classical ancient Europe including population movements and the Indo-Europeans."
+      "rationaleAI": "Prehistory covers Europe before the Iron Age (A.2, A.2.a, A.2.b)."
     },
     {
       "vsiTitle": "The Trojan War",
@@ -320,7 +381,7 @@
         "B.1.a",
         "B.1.b"
       ],
-      "rationaleAI": "Examines the Late Bronze Age eastern Mediterranean context including Homer's Iliad, Hittite interactions with Anatolia, and the Sea Peoples phenomenon, directly relevant to the early Archaic period and the Dorian invasions that followed the Bronze Age collapse."
+      "rationaleAI": "Trojan War covers Dorian invasions (B.1.a) and Homeric context (B.1.b)."
     },
     {
       "vsiTitle": "Plato",
@@ -328,7 +389,7 @@
       "relevantPathsAI": [
         "B.2.g"
       ],
-      "rationaleAI": "Covers Plato's philosophy addressing knowledge, ethics, metaphysics, and political thought in 5th-4th century BC Athens, directly relevant to Greek culture in the 4th century BC and developments in philosophy."
+      "rationaleAI": "Plato addresses 4th-century philosophy (B.2.g)."
     },
     {
       "vsiTitle": "Presocratic Philosophy",
@@ -336,7 +397,7 @@
       "relevantPathsAI": [
         "B.1.c.vii"
       ],
-      "rationaleAI": "Covers the earliest Greek thinkers from Thales to Protagoras exploring the nature of reality, directly relevant to rationalism, irrationalism, and the beginnings of philosophy and science in the Archaic Period."
+      "rationaleAI": "Presocratics address archaic philosophy and science (B.1.c.vii)."
     }
   ],
   "_curatedBy": "ai",
