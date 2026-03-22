@@ -109,7 +109,7 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
             Showing Level {level === 1 ? '1 (Top 10)' : level === 2 ? '2 (Top 100)' : '3 (~1,000)'}
           </span>
           <a
-            href={`${baseUrl}/wikipedia`}
+            href={`${baseUrl}/wikipedia#wikipedia-library`}
             class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
           >
             Browse all Wikipedia articles

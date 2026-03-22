@@ -94,7 +94,7 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
       <Accordion title={`Oxford VSI Recommendations (${totalCount})`} forceOpenKey={forceOpenKey} forceCloseKey={forceCloseKey}>
         <div class="mb-4 flex justify-end">
           <a
-            href={`${baseUrl}/vsi`}
+            href={`${baseUrl}/vsi#vsi-library`}
             class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
           >
             Browse all Oxford VSI books

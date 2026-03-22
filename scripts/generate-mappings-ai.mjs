@@ -7,6 +7,8 @@
  *   --mode assign   Full recompute: select items for each section from catalog + assign paths
  *   --mode discover Find which sections an item maps to from the full catalog
  *   --mode gap-fill Build an exact-leaf gap report and candidate plan for one source type
+ *   --mode repair-queue Build a prioritized queue of sections that should be remapped vs assigned
+ *   --mode status   Show summary completeness, mapping validation, and exact-leaf coverage in one report
  *
  * Usage:
  *   node scripts/generate-mappings-ai.mjs --section 824                    # Remap one section
@@ -19,8 +21,13 @@
  *   node scripts/generate-mappings-ai.mjs --mode discover --item "Buddhism::Damien Keown" --type vsi
  *   node scripts/generate-mappings-ai.mjs --mode discover --new-only --type vsi
  *   node scripts/generate-mappings-ai.mjs --mode gap-fill --type wikipedia # Exact leaf gap-fill plan
+ *   node scripts/generate-mappings-ai.mjs --mode gap-fill --type wikipedia --unresolved-only --top-sections 10 --top-targets 5
+ *   node scripts/generate-mappings-ai.mjs --mode repair-queue --type wikipedia --top-sections 15
+ *   node scripts/generate-mappings-ai.mjs --mode status --type vsi
  *   node scripts/generate-mappings-ai.mjs --validate                       # Validate existing mappings
  *   node scripts/generate-mappings-ai.mjs --coverage                       # Exact leaf coverage report
+ *   node scripts/generate-mappings-ai.mjs --coverage --type vsi --fail-on-unresolved
+ *   node scripts/generate-mappings-ai.mjs --coverage --type wikipedia --max-unresolved 100 --warn-on-fallback-pct 40
  *   node scripts/generate-mappings-ai.mjs --coverage --report-file /tmp/mapping-report.json
  *   node scripts/generate-mappings-ai.mjs --section 824 --dry-run          # Preview without writing
  *
@@ -67,10 +74,30 @@ function getArg(name) {
   return idx >= 0 && idx + 1 < args.length ? args[idx + 1] : null;
 }
 function hasFlag(name) { return args.includes('--' + name); }
+function getOptionalIntArg(name) {
+  const value = getArg(name);
+  if (value === null) return null;
+  const parsed = parseInt(value, 10);
+  if (!Number.isFinite(parsed)) {
+    console.error(`--${name} requires an integer value`);
+    process.exit(1);
+  }
+  return parsed;
+}
+function getOptionalFloatArg(name) {
+  const value = getArg(name);
+  if (value === null) return null;
+  const parsed = parseFloat(value);
+  if (!Number.isFinite(parsed)) {
+    console.error(`--${name} requires a numeric value`);
+    process.exit(1);
+  }
+  return parsed;
+}
 
 const sectionFlag = getArg('section');
 const allFlag = hasFlag('all');
-const limitFlag = getArg('limit') ? parseInt(getArg('limit'), 10) : Infinity;
+const limitFlag = getOptionalIntArg('limit') ?? Infinity;
 const typeFlag = getArg('type') || 'both';
 const modeFlag = getArg('mode') || 'remap';
 const itemFlag = getArg('item');
@@ -80,6 +107,51 @@ const validateFlag = hasFlag('validate');
 const coverageFlag = hasFlag('coverage');
 const dryRunFlag = hasFlag('dry-run');
 const reportFileFlag = getArg('report-file');
+const unresolvedOnlyFlag = hasFlag('unresolved-only');
+const fallbackOnlyFlag = hasFlag('fallback-only');
+const topSectionsFlag = getOptionalIntArg('top-sections');
+const topTargetsFlag = getOptionalIntArg('top-targets');
+const failOnUnresolvedFlag = hasFlag('fail-on-unresolved');
+const maxUnresolvedFlag = getOptionalIntArg('max-unresolved');
+const warnOnFallbackPctFlag = getOptionalFloatArg('warn-on-fallback-pct');
+
+if (unresolvedOnlyFlag && fallbackOnlyFlag) {
+  console.error('Choose only one of --unresolved-only or --fallback-only');
+  process.exit(1);
+}
+
+if (topSectionsFlag !== null && topSectionsFlag < 1) {
+  console.error('--top-sections must be at least 1');
+  process.exit(1);
+}
+
+if (topTargetsFlag !== null && topTargetsFlag < 1) {
+  console.error('--top-targets must be at least 1');
+  process.exit(1);
+}
+
+if (
+  (unresolvedOnlyFlag || fallbackOnlyFlag || topSectionsFlag !== null || topTargetsFlag !== null) &&
+  !['gap-fill', 'repair-queue'].includes(modeFlag)
+) {
+  console.error('--unresolved-only, --fallback-only, --top-sections, and --top-targets are only valid with --mode gap-fill or --mode repair-queue');
+  process.exit(1);
+}
+
+if (failOnUnresolvedFlag && maxUnresolvedFlag !== null) {
+  console.error('Choose only one of --fail-on-unresolved or --max-unresolved');
+  process.exit(1);
+}
+
+if (maxUnresolvedFlag !== null && maxUnresolvedFlag < 0) {
+  console.error('--max-unresolved must be 0 or greater');
+  process.exit(1);
+}
+
+if (warnOnFallbackPctFlag !== null && warnOnFallbackPctFlag < 0) {
+  console.error('--warn-on-fallback-pct must be 0 or greater');
+  process.exit(1);
+}
 
 if (!validateFlag && !coverageFlag) {
   if (modeFlag === 'remap' && !sectionFlag && !allFlag) {
@@ -301,6 +373,32 @@ function loadWikiCatalog() {
   ]));
 }
 
+function buildSummaryStatus(types) {
+  const status = {};
+
+  if (types.includes('vsi')) {
+    const catalog = loadVsiCatalog();
+    const withSummary = [...catalog.values()].filter((entry) => entry.summaryAI).length;
+    status.vsi = {
+      totalItems: catalog.size,
+      itemsWithSummary: withSummary,
+      summaryCoveragePct: catalog.size === 0 ? 100 : Math.round((withSummary / catalog.size) * 1000) / 10,
+    };
+  }
+
+  if (types.includes('wiki')) {
+    const catalog = loadWikiCatalog();
+    const withSummary = [...catalog.values()].filter((entry) => entry.summaryAI).length;
+    status.wikipedia = {
+      totalItems: catalog.size,
+      itemsWithSummary: withSummary,
+      summaryCoveragePct: catalog.size === 0 ? 100 : Math.round((withSummary / catalog.size) * 1000) / 10,
+    };
+  }
+
+  return status;
+}
+
 function loadExistingMappings(sectionCode, type) {
   const filePath = mappingFilePath(sectionCode, type);
   if (!fs.existsSync(filePath)) return null;
@@ -312,6 +410,64 @@ function getAllSectionCodes() {
     .filter((f) => f.endsWith('.json'))
     .map((f) => f.replace('.json', ''))
     .sort();
+}
+
+function buildValidationReport(sectionCodes = getAllSectionCodes(), types = ['vsi', 'wiki']) {
+  const report = {
+    generatedAt: new Date().toISOString(),
+    sectionCount: sectionCodes.length,
+    types: {},
+  };
+
+  for (const type of types) {
+    const normalizedType = normalizeType(type);
+    const key = typeSlug(normalizedType);
+    const totals = {
+      mappingFiles: 0,
+      sectionsWithMappings: 0,
+      totalMappings: 0,
+      emptyRelevantPaths: 0,
+      emptyOrShortRationale: 0,
+      invalidPaths: 0,
+    };
+    const invalidExamples = [];
+
+    for (const code of sectionCodes) {
+      const filePath = mappingFilePath(code, normalizedType);
+      if (!fs.existsSync(filePath)) continue;
+
+      totals.mappingFiles++;
+      const validPaths = new Set(loadSectionOutlineNodes(code).map((node) => node.path));
+      const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      if ((data.mappings || []).length > 0) totals.sectionsWithMappings++;
+
+      for (const mapping of data.mappings || []) {
+        totals.totalMappings++;
+        if (!mapping.relevantPathsAI || mapping.relevantPathsAI.length === 0) totals.emptyRelevantPaths++;
+        if (!mapping.rationaleAI || mapping.rationaleAI.length < 10) totals.emptyOrShortRationale++;
+
+        for (const pathValue of mapping.relevantPathsAI || []) {
+          if (!validPaths.has(pathValue)) {
+            totals.invalidPaths++;
+            if (invalidExamples.length < 20) {
+              invalidExamples.push({
+                sectionCode: code,
+                itemId: mapping.vsiTitle ? `${mapping.vsiTitle}::${mapping.vsiAuthor}` : mapping.articleTitle,
+                path: pathValue,
+              });
+            }
+          }
+        }
+      }
+    }
+
+    report.types[key] = {
+      totals,
+      invalidExamples,
+    };
+  }
+
+  return report;
 }
 
 // --- Find which sections an item is currently mapped to ---
@@ -588,6 +744,275 @@ function buildCoverageReport(sectionCodes, types) {
   }
 
   return report;
+}
+
+function getGapTargetFilter() {
+  if (unresolvedOnlyFlag) return 'required';
+  if (fallbackOnlyFlag) return 'fallback';
+  return 'all';
+}
+
+function sortGapSections(a, b) {
+  if (b.filteredRequiredTargets !== a.filteredRequiredTargets) {
+    return b.filteredRequiredTargets - a.filteredRequiredTargets;
+  }
+  if (b.filteredFallbackTargets !== a.filteredFallbackTargets) {
+    return b.filteredFallbackTargets - a.filteredFallbackTargets;
+  }
+  if (b.totals.unresolvedLeafPaths !== a.totals.unresolvedLeafPaths) {
+    return b.totals.unresolvedLeafPaths - a.totals.unresolvedLeafPaths;
+  }
+  if (b.totals.fallbackLeafPaths !== a.totals.fallbackLeafPaths) {
+    return b.totals.fallbackLeafPaths - a.totals.fallbackLeafPaths;
+  }
+  return a.sectionCode.localeCompare(b.sectionCode, undefined, { numeric: true });
+}
+
+function sortGapTargets(a, b) {
+  if (a.priority !== b.priority) {
+    return a.priority === 'required' ? -1 : 1;
+  }
+  return a.path.localeCompare(b.path, undefined, { numeric: true });
+}
+
+function evaluateCoverageThresholds(report, types, contextLabel = 'Coverage') {
+  const warnings = [];
+  const failures = [];
+
+  for (const type of types) {
+    const totals = report.types[typeSlug(type)]?.totals;
+    if (!totals) continue;
+
+    if (warnOnFallbackPctFlag !== null && totals.fallbackCoveragePct > warnOnFallbackPctFlag) {
+      warnings.push(
+        `${typeLabel(type)} fallback-only coverage is ${totals.fallbackCoveragePct}% ` +
+        `(warning threshold ${warnOnFallbackPctFlag}%)`,
+      );
+    }
+
+    if (failOnUnresolvedFlag && totals.unresolvedLeafPaths > 0) {
+      failures.push(`${typeLabel(type)} still has ${totals.unresolvedLeafPaths} unresolved leaf paths`);
+    }
+
+    if (maxUnresolvedFlag !== null && totals.unresolvedLeafPaths > maxUnresolvedFlag) {
+      failures.push(
+        `${typeLabel(type)} has ${totals.unresolvedLeafPaths} unresolved leaf paths ` +
+        `(max allowed ${maxUnresolvedFlag})`,
+      );
+    }
+  }
+
+  for (const warning of warnings) {
+    console.warn(`WARN [${contextLabel}]: ${warning}`);
+  }
+
+  for (const failure of failures) {
+    console.error(`FAIL [${contextLabel}]: ${failure}`);
+  }
+
+  if (failures.length > 0) {
+    process.exitCode = 1;
+  }
+}
+
+function buildPipelineStatus(sectionCodes, types) {
+  return {
+    generatedAt: new Date().toISOString(),
+    sectionCount: sectionCodes.length,
+    summary: buildSummaryStatus(types),
+    validation: buildValidationReport(sectionCodes, types),
+    coverage: buildCoverageReport(sectionCodes, types),
+  };
+}
+
+function buildRepairTargets(audit, allItems, existingIds, targetFilter) {
+  let targets = audit.leafCoverage
+    .filter((leaf) => leaf.status === 'uncovered' || leaf.status === 'fallback')
+    .map((leaf) => ({
+      priority: leaf.status === 'uncovered' ? 'required' : 'fallback',
+      path: leaf.path,
+      text: leaf.text,
+      fallbackPaths: leaf.fallbackPaths,
+      trail: leaf.trail.map((step) => ({ level: step.level, text: step.text })),
+      candidates: rankCandidatesForLeaf(audit, leaf, allItems, existingIds),
+    }));
+
+  if (targetFilter === 'required') {
+    targets = targets.filter((target) => target.priority === 'required');
+  } else if (targetFilter === 'fallback') {
+    targets = targets.filter((target) => target.priority === 'fallback');
+  }
+
+  return targets.sort(sortGapTargets);
+}
+
+function summarizeRepairSignals(targets) {
+  const targetCount = targets.length;
+  let existingTop1Hits = 0;
+  let existingTop3Hits = 0;
+  let newTop1Hits = 0;
+  let targetsWithoutCandidates = 0;
+
+  for (const target of targets) {
+    if (!target.candidates || target.candidates.length === 0) {
+      targetsWithoutCandidates++;
+      continue;
+    }
+
+    if (target.candidates[0].alreadyMappedToSection) existingTop1Hits++;
+    else newTop1Hits++;
+
+    if (target.candidates.slice(0, 3).some((candidate) => candidate.alreadyMappedToSection)) {
+      existingTop3Hits++;
+    }
+  }
+
+  return {
+    targetCount,
+    existingTop1Hits,
+    existingTop3Hits,
+    newTop1Hits,
+    targetsWithoutCandidates,
+    existingTop1Pct: targetCount === 0 ? 0 : Math.round((existingTop1Hits / targetCount) * 1000) / 10,
+    existingTop3Pct: targetCount === 0 ? 0 : Math.round((existingTop3Hits / targetCount) * 1000) / 10,
+    newTop1Pct: targetCount === 0 ? 0 : Math.round((newTop1Hits / targetCount) * 1000) / 10,
+  };
+}
+
+function chooseRepairAction(audit, existingData, signals) {
+  const mappingsCount = existingData?.mappings?.length || 0;
+
+  if (mappingsCount === 0) {
+    return {
+      action: 'assign',
+      reason: 'No existing mapped items in this Section yet, so the first repair pass should add candidate items.',
+    };
+  }
+
+  if (audit.unresolvedLeafPaths === 0 && audit.fallbackLeafPaths > 0) {
+    return {
+      action: 'remap',
+      reason: 'This Section only has fallback debt, so the likely win is assigning more specific paths to existing items.',
+    };
+  }
+
+  if (signals.existingTop1Pct >= 50 || signals.existingTop3Pct >= 70) {
+    return {
+      action: 'remap',
+      reason: 'Most high-priority gaps already point back to items that are mapped to this Section, so path tightening should come first.',
+    };
+  }
+
+  if (signals.newTop1Hits > signals.existingTop1Hits && audit.unresolvedLeafPaths > 0) {
+    return {
+      action: 'assign',
+      reason: 'Most unresolved gaps point to candidates that are not currently mapped to this Section, so candidate selection should come first.',
+    };
+  }
+
+  if (audit.fallbackLeafPaths > audit.unresolvedLeafPaths && signals.existingTop3Hits > 0) {
+    return {
+      action: 'remap',
+      reason: 'Fallback debt outweighs unresolved gaps here, and existing mapped items still show up in the best matches.',
+    };
+  }
+
+  return {
+    action: audit.unresolvedLeafPaths > 0 ? 'assign' : 'remap',
+    reason: audit.unresolvedLeafPaths > 0
+      ? 'This Section still has unresolved leaves without enough existing-item evidence, so assign is the safer first pass.'
+      : 'This Section mainly needs specificity improvements on already mapped items.',
+  };
+}
+
+function buildRepairQueue(sectionCodes, types) {
+  const targetFilter = getGapTargetFilter();
+  const queue = {
+    generatedAt: new Date().toISOString(),
+    sectionCount: sectionCodes.length,
+    filters: {
+      targetFilter,
+      topSections: topSectionsFlag,
+      topTargetsPerSection: topTargetsFlag,
+    },
+    types: {},
+  };
+
+  for (const type of types) {
+    const catalog = type === 'vsi' ? loadVsiCatalog() : loadWikiCatalog();
+    const allItems = buildCatalogItems(catalog);
+    const sections = [];
+    const totals = {
+      sectionsAudited: 0,
+      queuedSections: 0,
+      remapFirst: 0,
+      assignFirst: 0,
+      unresolvedLeafPaths: 0,
+      fallbackLeafPaths: 0,
+      requiredTargets: 0,
+      fallbackTargets: 0,
+    };
+
+    for (const code of sectionCodes) {
+      const audit = buildLeafCoverageAudit(code, type);
+      if (!audit) continue;
+      totals.sectionsAudited++;
+      totals.unresolvedLeafPaths += audit.unresolvedLeafPaths;
+      totals.fallbackLeafPaths += audit.fallbackLeafPaths;
+
+      const existingData = loadExistingMappings(code, type);
+      const existingIds = new Set((existingData?.mappings || []).map((mapping) => getMappingId(mapping, type)));
+      const allTargets = buildRepairTargets(audit, allItems, existingIds, targetFilter);
+      if (allTargets.length === 0) continue;
+
+      const signals = summarizeRepairSignals(allTargets);
+      const recommendation = chooseRepairAction(audit, existingData, signals);
+      const targets = topTargetsFlag === null ? allTargets : allTargets.slice(0, topTargetsFlag);
+
+      totals.queuedSections++;
+      totals.requiredTargets += allTargets.filter((target) => target.priority === 'required').length;
+      totals.fallbackTargets += allTargets.filter((target) => target.priority === 'fallback').length;
+      if (recommendation.action === 'remap') totals.remapFirst++;
+      else totals.assignFirst++;
+
+      sections.push({
+        sectionStem: audit.sectionStem,
+        sectionCode: audit.sectionCode,
+        title: audit.title,
+        action: recommendation.action,
+        reason: recommendation.reason,
+        totals: {
+          totalLeafPaths: audit.totalLeafPaths,
+          exactLeafPaths: audit.exactLeafPaths,
+          fallbackLeafPaths: audit.fallbackLeafPaths,
+          unresolvedLeafPaths: audit.unresolvedLeafPaths,
+        },
+        existingMappingsCount: existingData?.mappings?.length || 0,
+        existingMappingsWithPaths: (existingData?.mappings || []).filter(
+          (mapping) => (mapping.relevantPathsAI || []).length > 0,
+        ).length,
+        targetSignals: signals,
+        targets,
+      });
+    }
+
+    sections.sort((a, b) => {
+      if (b.totals.unresolvedLeafPaths !== a.totals.unresolvedLeafPaths) {
+        return b.totals.unresolvedLeafPaths - a.totals.unresolvedLeafPaths;
+      }
+      if (b.totals.fallbackLeafPaths !== a.totals.fallbackLeafPaths) {
+        return b.totals.fallbackLeafPaths - a.totals.fallbackLeafPaths;
+      }
+      return a.sectionCode.localeCompare(b.sectionCode, undefined, { numeric: true });
+    });
+
+    queue.types[typeSlug(type)] = {
+      totals,
+      sections: topSectionsFlag === null ? sections : sections.slice(0, topSectionsFlag),
+    };
+  }
+
+  return queue;
 }
 
 function writeJsonReport(filePath, data) {
@@ -1141,6 +1566,7 @@ function runCoverageReport() {
 
   writeJsonReport(reportPath, report);
   console.log(`Coverage report written to ${path.relative(ROOT, reportPath)}`);
+  evaluateCoverageThresholds(report, types, 'Coverage report');
 }
 
 async function runGapFillMode() {
@@ -1150,16 +1576,28 @@ async function runGapFillMode() {
   const sectionCodes = sectionFlag
     ? [normalizeSectionStem(sectionFlag)]
     : getAllSectionCodes().slice(0, limitFlag);
+  const targetFilter = getGapTargetFilter();
   const plan = {
     generatedAt: new Date().toISOString(),
     type: typeSlug(type),
     fallbackPolicy: 'allow broader ancestor path only when no defensible exact leaf mapping exists',
+    filters: {
+      targetFilter,
+      topSections: topSectionsFlag,
+      topTargetsPerSection: topTargetsFlag,
+    },
     sections: [],
     totals: {
       totalLeafPaths: 0,
       exactLeafPaths: 0,
       fallbackLeafPaths: 0,
       unresolvedLeafPaths: 0,
+      unresolvedTargets: 0,
+      fallbackTargets: 0,
+    },
+    filteredTotals: {
+      sections: 0,
+      targets: 0,
       unresolvedTargets: 0,
       fallbackTargets: 0,
     },
@@ -1190,6 +1628,21 @@ async function runGapFillMode() {
     plan.totals.unresolvedTargets += targets.filter((target) => target.priority === 'required').length;
     plan.totals.fallbackTargets += targets.filter((target) => target.priority === 'fallback').length;
 
+    let filteredTargets = targets;
+    if (targetFilter === 'required') {
+      filteredTargets = filteredTargets.filter((target) => target.priority === 'required');
+    } else if (targetFilter === 'fallback') {
+      filteredTargets = filteredTargets.filter((target) => target.priority === 'fallback');
+    }
+
+    filteredTargets = [...filteredTargets].sort(sortGapTargets);
+
+    if (filteredTargets.length === 0) continue;
+
+    if (topTargetsFlag !== null) {
+      filteredTargets = filteredTargets.slice(0, topTargetsFlag);
+    }
+
     plan.sections.push({
       sectionStem: audit.sectionStem,
       sectionCode: audit.sectionCode,
@@ -1200,8 +1653,23 @@ async function runGapFillMode() {
         fallbackLeafPaths: audit.fallbackLeafPaths,
         unresolvedLeafPaths: audit.unresolvedLeafPaths,
       },
-      targets,
+      filteredRequiredTargets: filteredTargets.filter((target) => target.priority === 'required').length,
+      filteredFallbackTargets: filteredTargets.filter((target) => target.priority === 'fallback').length,
+      totalTargetsInSection: targets.length,
+      targets: filteredTargets,
     });
+  }
+
+  plan.sections.sort(sortGapSections);
+  if (topSectionsFlag !== null) {
+    plan.sections = plan.sections.slice(0, topSectionsFlag);
+  }
+
+  plan.filteredTotals.sections = plan.sections.length;
+  for (const section of plan.sections) {
+    plan.filteredTotals.targets += section.targets.length;
+    plan.filteredTotals.unresolvedTargets += section.filteredRequiredTargets;
+    plan.filteredTotals.fallbackTargets += section.filteredFallbackTargets;
   }
 
   const reportPath = resolveReportPath(`gap-fill-${typeSlug(type)}.json`);
@@ -1214,15 +1682,22 @@ async function runGapFillMode() {
   console.log(`Fallback-only leaves: ${plan.totals.fallbackLeafPaths}`);
   console.log(`Unresolved leaves: ${plan.totals.unresolvedLeafPaths}`);
   console.log(`Targets queued: ${plan.totals.unresolvedTargets} required, ${plan.totals.fallbackTargets} fallback`);
+  if (targetFilter !== 'all' || topSectionsFlag !== null || topTargetsFlag !== null) {
+    console.log(
+      `Filtered view: ${plan.filteredTotals.targets} targets across ${plan.filteredTotals.sections} sections ` +
+      `(${plan.filteredTotals.unresolvedTargets} required, ${plan.filteredTotals.fallbackTargets} fallback)`,
+    );
+  }
   console.log('');
 
-  for (const section of plan.sections.filter((entry) => entry.targets.length > 0).slice(0, 15)) {
+  const previewSectionLimit = topSectionsFlag ?? 15;
+  for (const section of plan.sections.slice(0, previewSectionLimit)) {
     console.log(
       `${section.sectionCode} — ${section.title} ` +
-      `(${section.targets.filter((target) => target.priority === 'required').length} required, ` +
-      `${section.targets.filter((target) => target.priority === 'fallback').length} fallback)`,
+      `(${section.filteredRequiredTargets} required, ${section.filteredFallbackTargets} fallback)`,
     );
-    for (const target of section.targets.slice(0, 4)) {
+    const previewTargetLimit = topTargetsFlag ?? 4;
+    for (const target of section.targets.slice(0, previewTargetLimit)) {
       const candidateSummary = target.candidates
         .slice(0, 3)
         .map((candidate) => `${candidate.title}${candidate.author ? ` — ${candidate.author}` : ''} [${candidate.score}]${candidate.alreadyMappedToSection ? ' existing' : ''}`)
@@ -1233,54 +1708,131 @@ async function runGapFillMode() {
       }
       console.log(`    candidates: ${candidateSummary || 'none'}`);
     }
-    if (section.targets.length > 4) {
-      console.log(`    ... and ${section.targets.length - 4} more targets`);
+    if (section.targets.length > previewTargetLimit) {
+      console.log(`    ... and ${section.targets.length - previewTargetLimit} more targets`);
     }
     console.log('');
   }
 
   console.log(`Gap-fill plan written to ${path.relative(ROOT, reportPath)}`);
+  evaluateCoverageThresholds(buildCoverageReport(sectionCodes, [type]), [type], 'Gap-fill coverage');
+}
+
+function runStatusReport() {
+  const sectionCodes = sectionFlag
+    ? [normalizeSectionStem(sectionFlag)]
+    : getAllSectionCodes().slice(0, limitFlag);
+  const types = getRequestedTypes();
+  const status = buildPipelineStatus(sectionCodes, types);
+  const reportPath = resolveReportPath('pipeline-status.json');
+
+  console.log('=== Pipeline Status ===\n');
+
+  for (const type of types) {
+    const summary = status.summary[typeSlug(type)];
+    const validation = status.validation.types[typeSlug(type)]?.totals;
+    const coverage = status.coverage.types[typeSlug(type)]?.totals;
+    if (!summary || !validation || !coverage) continue;
+
+    console.log(`${typeLabel(type)}:`);
+    console.log(`  SummaryAI: ${summary.itemsWithSummary}/${summary.totalItems} (${summary.summaryCoveragePct}%)`);
+    console.log(`  Mapping files: ${validation.mappingFiles}/${sectionCodes.length}`);
+    console.log(`  Total mappings: ${validation.totalMappings}`);
+    console.log(`  Empty relevantPathsAI: ${validation.emptyRelevantPaths}`);
+    console.log(`  Empty/short rationaleAI: ${validation.emptyOrShortRationale}`);
+    console.log(`  Invalid paths: ${validation.invalidPaths}`);
+    console.log(`  Exact leaf coverage: ${coverage.exactLeafPaths}/${coverage.totalLeafPaths} (${coverage.exactCoveragePct}%)`);
+    console.log(`  Fallback only: ${coverage.fallbackLeafPaths} (${coverage.fallbackCoveragePct}%)`);
+    console.log(`  Unresolved: ${coverage.unresolvedLeafPaths} (${coverage.unresolvedCoveragePct}%)`);
+    console.log(`  Sections with unresolved leaves: ${coverage.sectionsWithUnresolved}/${sectionCodes.length}`);
+    console.log('');
+  }
+
+  writeJsonReport(reportPath, status);
+  console.log(`Status report written to ${path.relative(ROOT, reportPath)}`);
+  evaluateCoverageThresholds(status.coverage, types, 'Pipeline status');
+}
+
+function runRepairQueueMode() {
+  const sectionCodes = sectionFlag
+    ? [normalizeSectionStem(sectionFlag)]
+    : getAllSectionCodes().slice(0, limitFlag);
+  const types = getRequestedTypes();
+  const queue = buildRepairQueue(sectionCodes, types);
+  const defaultName = types.length === 1
+    ? `repair-queue-${typeSlug(types[0])}.json`
+    : 'repair-queue.json';
+  const reportPath = resolveReportPath(defaultName);
+
+  console.log('=== Repair Queue ===\n');
+
+  for (const type of types) {
+    const typeQueue = queue.types[typeSlug(type)];
+    if (!typeQueue) continue;
+
+    console.log(`${typeLabel(type)}:`);
+    console.log(`  Queued sections: ${typeQueue.totals.queuedSections}/${typeQueue.totals.sectionsAudited}`);
+    console.log(`  Recommend remap first: ${typeQueue.totals.remapFirst}`);
+    console.log(`  Recommend assign first: ${typeQueue.totals.assignFirst}`);
+    console.log(`  Required targets: ${typeQueue.totals.requiredTargets}`);
+    console.log(`  Fallback targets: ${typeQueue.totals.fallbackTargets}`);
+    console.log('');
+
+    const previewTargetLimit = topTargetsFlag ?? 3;
+    for (const section of typeQueue.sections.slice(0, topSectionsFlag ?? 15)) {
+      console.log(
+        `  ${section.sectionCode} — ${section.title} [` +
+        `${section.action === 'remap' ? 'remap first' : 'assign first'}]`,
+      );
+      console.log(`    ${section.reason}`);
+      console.log(
+        `    unresolved ${section.totals.unresolvedLeafPaths}, fallback ${section.totals.fallbackLeafPaths}, ` +
+        `mapped items ${section.existingMappingsCount} (${section.existingMappingsWithPaths} with paths)`,
+      );
+      console.log(
+        `    existing top hits: ${section.targetSignals.existingTop1Hits}/${section.targetSignals.targetCount} top-1, ` +
+        `${section.targetSignals.existingTop3Hits}/${section.targetSignals.targetCount} top-3`,
+      );
+      for (const target of section.targets.slice(0, previewTargetLimit)) {
+        const best = target.candidates[0];
+        console.log(
+          `    ${target.priority}: ${target.path} — ${target.text.substring(0, 60)}` +
+          `${best ? ` (best: ${best.title}${best.author ? ` — ${best.author}` : ''}${best.alreadyMappedToSection ? ', existing' : ''})` : ''}`,
+        );
+      }
+      if (section.targets.length > previewTargetLimit) {
+        console.log(`    ... and ${section.targets.length - previewTargetLimit} more targets`);
+      }
+      console.log('');
+    }
+  }
+
+  writeJsonReport(reportPath, queue);
+  console.log(`Repair queue written to ${path.relative(ROOT, reportPath)}`);
 }
 
 // --- Validation ---
 function runValidation() {
   console.log('=== Validating existing mappings ===\n');
   const sectionCodes = getAllSectionCodes();
-  let totalMappings = 0;
-  let emptyPaths = 0;
-  let emptyRationale = 0;
-  let invalidPaths = 0;
+  const report = buildValidationReport(sectionCodes, ['vsi', 'wiki']);
 
-  for (const code of sectionCodes) {
-    const validPaths = new Set(loadSectionOutlineNodes(code).map((node) => node.path));
+  for (const type of ['vsi', 'wiki']) {
+    const typeReport = report.types[typeSlug(type)];
+    if (!typeReport) continue;
+    const totals = typeReport.totals;
 
-    for (const type of ['vsi', 'wiki']) {
-      const filePath = mappingFilePath(code, type);
-      if (!fs.existsSync(filePath)) continue;
-
-      const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-      for (const m of data.mappings) {
-        totalMappings++;
-        if (!m.relevantPathsAI || m.relevantPathsAI.length === 0) emptyPaths++;
-        if (!m.rationaleAI || m.rationaleAI.length < 10) emptyRationale++;
-
-        for (const p of m.relevantPathsAI || []) {
-          if (!validPaths.has(p)) {
-            invalidPaths++;
-            if (invalidPaths <= 20) {
-              const id = m.vsiTitle || m.articleTitle;
-              console.log(`  Invalid path: ${code}/${id} → "${p}"`);
-            }
-          }
-        }
-      }
+    console.log(`${typeLabel(type)}:`);
+    console.log(`  Mapping files: ${totals.mappingFiles}/${sectionCodes.length}`);
+    console.log(`  Total mappings: ${totals.totalMappings}`);
+    console.log(`  Empty relevantPathsAI: ${totals.emptyRelevantPaths}`);
+    console.log(`  Empty/short rationaleAI: ${totals.emptyOrShortRationale}`);
+    console.log(`  Invalid paths: ${totals.invalidPaths}`);
+    for (const example of typeReport.invalidExamples.slice(0, 10)) {
+      console.log(`    Invalid path: ${example.sectionCode}/${example.itemId} → "${example.path}"`);
     }
+    console.log('');
   }
-
-  console.log(`\nTotal mappings: ${totalMappings}`);
-  console.log(`Empty relevantPathsAI: ${emptyPaths}`);
-  console.log(`Empty/short rationaleAI: ${emptyRationale}`);
-  console.log(`Invalid paths (not in outline): ${invalidPaths}`);
 }
 
 // --- Main ---
@@ -1297,6 +1849,16 @@ async function main() {
 
   if (modeFlag === 'gap-fill') {
     await runGapFillMode();
+    return;
+  }
+
+  if (modeFlag === 'status') {
+    runStatusReport();
+    return;
+  }
+
+  if (modeFlag === 'repair-queue') {
+    runRepairQueueMode();
     return;
   }
 
@@ -1376,6 +1938,7 @@ async function runRemapMode(client, taxonomy) {
         `(${totals.exactCoveragePct}%), fallback ${totals.fallbackLeafPaths}, unresolved ${totals.unresolvedLeafPaths}`,
       );
     }
+    evaluateCoverageThresholds(report, types, 'Post-remap coverage');
   }
 
   console.log(`Done. Processed ${totalProcessed} mappings, skipped ${totalSkipped} sections.`);
@@ -1482,11 +2045,13 @@ async function runAssignMode(client, taxonomy) {
   // Post-run coverage check
   if (!dryRunFlag && totalConfirmed > 0) {
     console.log('=== Post-assign exact leaf coverage ===');
-    const totals = buildCoverageReport(sectionCodes, [type]).types[typeSlug(type)].totals;
+    const report = buildCoverageReport(sectionCodes, [type]);
+    const totals = report.types[typeSlug(type)].totals;
     console.log(`Leaf paths in processed sections: ${totals.totalLeafPaths}`);
     console.log(`Exact: ${totals.exactLeafPaths} (${totals.exactCoveragePct}%)`);
     console.log(`Fallback only: ${totals.fallbackLeafPaths} (${totals.fallbackCoveragePct}%)`);
     console.log(`Unresolved: ${totals.unresolvedLeafPaths} (${totals.unresolvedCoveragePct}%)`);
+    evaluateCoverageThresholds(report, [type], 'Post-assign coverage');
   }
 
   console.log(`\nDone. Assigned ${totalConfirmed} items across ${sectionCodes.length - totalSkipped} sections (${totalCandidates} candidates evaluated).`);

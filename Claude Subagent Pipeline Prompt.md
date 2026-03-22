@@ -25,16 +25,16 @@ Your job is to continue the AI mapping pipeline safely and repeatably. Follow th
 
 ## Important Current State
 
-- VSI summary generation was interrupted previously.
-- VSI is currently incomplete because many catalog entries still lack `summaryAI`.
-- The summary script is resumable and already skips entries that have `summaryAI`.
-- The mapping script has already been updated to:
-  - normalize slash-style section codes for file IO
-  - report exact leaf coverage per type
-  - classify broader parent mappings as fallback rather than exact coverage
-  - provide a gap-fill planning mode
-- Generated audit outputs are written under `scripts/output/` when coverage or gap-fill is run.
+- The mapping script now supports:
+  - exact leaf coverage reports
+  - controlled fallback accounting
+  - `gap-fill` planning
+  - `repair-queue` planning
+  - `status` reports that combine summary, validation, and coverage state
+  - coverage thresholds such as `--fail-on-unresolved`
+- Generated audit outputs are written under `scripts/output/` when status, coverage, gap-fill, or repair-queue is run.
 - Those JSON files are generated artifacts and do not need to be checked into the repo.
+- Do not assume VSI summaries are incomplete. Check first with `--mode status` or by inspecting the catalogs.
 
 ## Hard Instructions
 
@@ -56,35 +56,41 @@ Your job is to continue the AI mapping pipeline safely and repeatably. Follow th
 
 ## Your Immediate Objective
 
-1. Resume VSI summary generation.
-2. Validate summaries.
+1. Establish the current pipeline state with `status`.
+2. If any summaries are missing, resume summary generation and validate it.
 3. Re-run exact leaf coverage audit.
-4. Generate a VSI gap-fill plan.
-5. Use that plan to drive targeted, script-consistent mapping repair work.
+4. Generate a gap-fill plan and repair queue for the chosen source type.
+5. Use those plans to drive targeted, script-consistent remap/assign work in batches.
 
 ## Suggested Workflow
 
-1. Inspect current VSI summary coverage.
-2. Run the resumable VSI summary pipeline.
+1. Run `status` first to inspect summary completeness, validation debt, and exact/fallback/unresolved coverage.
+2. If summaries are incomplete for the target type, run the resumable summary pipeline.
 3. Run summary validation.
-4. Run mapping coverage audit.
-5. Run VSI gap-fill planning.
-6. Only then begin targeted remap/assign work for unresolved and fallback-only leaf paths.
-7. Stop after each batch and report back before continuing to the next batch.
+4. Run mapping validation and exact leaf coverage audit.
+5. Run gap-fill planning.
+6. Run repair-queue planning.
+7. Only then begin targeted remap/assign work for unresolved and fallback-only leaf paths.
+8. Stop after each batch and report back before continuing to the next batch.
 
 ## Commands You Should Likely Use
 
+- `node scripts/generate-mappings-ai.mjs --mode status --type vsi`
+- `node scripts/generate-mappings-ai.mjs --mode status --type wikipedia`
 - `node scripts/generate-summary-ai.mjs --type vsi`
 - `node scripts/generate-summary-ai.mjs --validate`
 - `node scripts/generate-mappings-ai.mjs --coverage`
 - `node scripts/generate-mappings-ai.mjs --mode gap-fill --type vsi`
+- `node scripts/generate-mappings-ai.mjs --mode repair-queue --type vsi`
+- `node scripts/generate-mappings-ai.mjs --mode repair-queue --type wikipedia`
 - `node scripts/generate-mappings-ai.mjs --validate`
 
 ## What To Report Back
 
-- current VSI summary count before and after
-- exact VSI leaf coverage before and after
-- number of fallback-only and unresolved VSI leaves
+- current summary count for the target type before and after
+- exact leaf coverage for the target type before and after
+- number of fallback-only and unresolved leaves for the target type
+- repair-queue recommendation summary (`remap` vs `assign`)
 - any blocking issues
 - exactly what commands were run
 - any files changed

@@ -4,6 +4,7 @@ import { writeChecklistState } from '../../utils/readingChecklist';
 import { type WikipediaAggregateEntry } from '../../utils/readingData';
 import { slugify } from '../../utils/helpers';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
+import { useHashAnchorCorrection } from '../../hooks/useHashAnchorCorrection';
 import {
   buildCoverageRings,
   buildLayerCoverageSnapshot,
@@ -85,6 +86,7 @@ export default function WikipediaLibrary({
   totalOutlineItems,
 }: WikipediaLibraryProps) {
   const checklistState = useReadingChecklistState();
+  useHashAnchorCorrection('wikipedia-library');
   const [level, setLevel] = useState<KnowledgeLevel>(3);
   const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
   const [query, setQuery] = useState('');
@@ -236,16 +238,6 @@ export default function WikipediaLibrary({
         emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
       />
 
-      <CoverageGapPanel
-        entries={entries}
-        checklistState={checklistState}
-        activeLayer={activeLayer}
-        baseUrl={baseUrl}
-        itemLabelPlural="articles"
-        outlineItemCounts={outlineItemCounts}
-        isComplete={isLayerComplete}
-      />
-
       <ReadingSpreadPath
         isOpen={spreadPathOpen}
         onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
@@ -271,11 +263,30 @@ export default function WikipediaLibrary({
         sectionLinksVariant="chips"
       />
 
-      <section class="rounded-2xl border border-gray-200 bg-white p-4 sm:p-6">
-        <div class="mb-4 max-w-3xl">
-          <p class="text-xs text-gray-500">
-            These controls only change the full article list below. The Recommendation Focus tabs above drive the adaptive path and gap panels.
-          </p>
+      <CoverageGapPanel
+        entries={entries}
+        checklistState={checklistState}
+        activeLayer={activeLayer}
+        baseUrl={baseUrl}
+        itemLabelPlural="articles"
+        outlineItemCounts={outlineItemCounts}
+        isComplete={isLayerComplete}
+      />
+
+      <section id="wikipedia-library" class="scroll-mt-24 rounded-2xl border border-gray-200 bg-white p-4 sm:p-6">
+        <div class="mb-4 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div class="max-w-3xl">
+            <h2 class="font-serif text-2xl text-gray-900">Wikipedia Article List</h2>
+            <p class="mt-2 text-sm text-gray-600">
+              Search the full Vital Articles list and sort it by coverage across Parts, Divisions, Sections, or Subsections.
+            </p>
+            <p class="mt-1 text-xs text-gray-500">
+              These controls only change the full article list below. The Recommendation Focus tabs above drive the adaptive path and gap panels.
+            </p>
+          </div>
+          <div class="text-sm text-gray-500">
+            Showing {visibleEntries.length} of {filteredEntries.length} matching articles
+          </div>
         </div>
         <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           <label class="block">

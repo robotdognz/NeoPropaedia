@@ -4,6 +4,7 @@ import { writeChecklistState } from '../../utils/readingChecklist';
 import { type MacropaediaAggregateEntry } from '../../utils/readingData';
 import { slugify } from '../../utils/helpers';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
+import { useHashAnchorCorrection } from '../../hooks/useHashAnchorCorrection';
 import {
   buildCoverageRings,
   buildLayerCoverageSnapshot,
@@ -91,6 +92,7 @@ export default function MacropaediaLibrary({
   baseUrl,
 }: MacropaediaLibraryProps) {
   const checklistState = useReadingChecklistState();
+  useHashAnchorCorrection('macropaedia-library');
   const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
   const [query, setQuery] = useState('');
   const [readFilter, setReadFilter] = useState<ReadFilter>('all');
@@ -195,15 +197,6 @@ export default function MacropaediaLibrary({
         emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
       />
 
-      <CoverageGapPanel
-        entries={entries}
-        checklistState={checklistState}
-        activeLayer={activeLayer}
-        baseUrl={baseUrl}
-        itemLabelPlural="articles"
-        isComplete={isLayerComplete}
-      />
-
       <ReadingSpreadPath
         isOpen={spreadPathOpen}
         onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
@@ -221,7 +214,16 @@ export default function MacropaediaLibrary({
         baseUrl={baseUrl}
       />
 
-      <section class="rounded-2xl border border-gray-200 bg-white p-6">
+      <CoverageGapPanel
+        entries={entries}
+        checklistState={checklistState}
+        activeLayer={activeLayer}
+        baseUrl={baseUrl}
+        itemLabelPlural="articles"
+        isComplete={isLayerComplete}
+      />
+
+      <section id="macropaedia-library" class="scroll-mt-24 rounded-2xl border border-gray-200 bg-white p-6">
         <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div class="max-w-3xl">
             <h2 class="font-serif text-2xl text-gray-900">Macropaedia Article List</h2>

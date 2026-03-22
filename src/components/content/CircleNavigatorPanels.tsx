@@ -606,7 +606,7 @@ export function CenteredCircleNavigatorPanel({
       {
         type: 'vsi' as const,
         title: 'Oxford VSI Recommendations',
-        browseHref: `${baseUrl}/vsi`,
+        browseHref: `${baseUrl}/vsi#vsi-library`,
         browseLabel: 'Browse all Oxford VSI books',
         itemSingular: 'book',
         totalCount: sharedVsiEntries.length,
@@ -623,7 +623,7 @@ export function CenteredCircleNavigatorPanel({
       {
         type: 'wikipedia' as const,
         title: 'Wikipedia Article Recommendations',
-        browseHref: `${baseUrl}/wikipedia`,
+        browseHref: `${baseUrl}/wikipedia#wikipedia-library`,
         browseLabel: 'Browse all Wikipedia articles',
         itemSingular: 'article',
         totalCount: sharedWikiEntries.length,
@@ -641,7 +641,7 @@ export function CenteredCircleNavigatorPanel({
       {
         type: 'macropaedia' as const,
         title: 'Macropaedia Reading List',
-        browseHref: `${baseUrl}/macropaedia`,
+        browseHref: `${baseUrl}/macropaedia#macropaedia-library`,
         browseLabel: 'Browse all Macropaedia articles',
         itemSingular: 'article',
         totalCount: sharedMacroEntries.length,
@@ -812,7 +812,7 @@ export function TopPartCircleNavigatorPanel({
       {
         type: 'vsi' as const,
         title: 'Oxford VSI Recommendations',
-        browseHref: `${baseUrl}/vsi`,
+        browseHref: `${baseUrl}/vsi#vsi-library`,
         browseLabel: 'Browse all Oxford VSI books',
         itemSingular: 'book',
         totalCount: anchoredVsiEntries.length,
@@ -829,7 +829,7 @@ export function TopPartCircleNavigatorPanel({
       {
         type: 'wikipedia' as const,
         title: 'Wikipedia Article Recommendations',
-        browseHref: `${baseUrl}/wikipedia`,
+        browseHref: `${baseUrl}/wikipedia#wikipedia-library`,
         browseLabel: 'Browse all Wikipedia articles',
         itemSingular: 'article',
         totalCount: anchoredWikiEntries.length,
@@ -847,7 +847,7 @@ export function TopPartCircleNavigatorPanel({
       {
         type: 'macropaedia' as const,
         title: 'Macropaedia Reading List',
-        browseHref: `${baseUrl}/macropaedia`,
+        browseHref: `${baseUrl}/macropaedia#macropaedia-library`,
         browseLabel: 'Browse all Macropaedia articles',
         itemSingular: 'article',
         totalCount: anchoredMacroEntries.length,

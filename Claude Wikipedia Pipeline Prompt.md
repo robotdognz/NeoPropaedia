@@ -33,8 +33,8 @@ Your job is to continue the Wikipedia AI mapping pipeline safely and repeatably.
   - normalize slash-style section codes for file IO
   - report exact leaf coverage per type
   - classify broader parent mappings as fallback rather than exact coverage
-  - provide a gap-fill planning mode
-- Generated audit outputs are written under `scripts/output/` when coverage or gap-fill is run.
+  - provide `gap-fill`, `repair-queue`, and `status` modes
+- Generated audit outputs are written under `scripts/output/` when status, coverage, gap-fill, or repair-queue is run.
 - Those JSON files are generated artifacts and do not need to be checked into the repo.
 
 ## Hard Instructions
@@ -57,34 +57,39 @@ Your job is to continue the Wikipedia AI mapping pipeline safely and repeatably.
 
 ## Your Immediate Objective
 
-1. Refresh Wikipedia path mappings using the current remap logic.
-2. Validate the results.
-3. Re-run exact leaf coverage audit.
-4. Generate a Wikipedia gap-fill plan.
-5. Only then use targeted assign work for sections that still have unresolved leaf gaps or clearly wrong article coverage.
+1. Establish current Wikipedia state with `status`.
+2. Refresh Wikipedia path mappings using the current remap logic.
+3. Validate the results.
+4. Re-run exact leaf coverage audit.
+5. Generate a Wikipedia gap-fill plan and repair queue.
+6. Only then use targeted assign work for sections that still have unresolved leaf gaps or clearly wrong article coverage.
 
 ## Required Workflow
 
-1. Inspect current Wikipedia summary and mapping state.
+1. Inspect current Wikipedia summary and mapping state with `status`.
 2. Run full Wikipedia remap with the current canonical script.
 3. Run mapping validation.
 4. Run exact leaf coverage audit.
 5. Run Wikipedia gap-fill planning.
-6. Stop and report back.
-7. Only after that, begin targeted assign/remap repair in batches.
+6. Run Wikipedia repair-queue planning.
+7. Stop and report back.
+8. Only after that, begin targeted assign/remap repair in batches.
 
 ## Commands You Should Likely Use
 
+- `node scripts/generate-mappings-ai.mjs --mode status --type wikipedia`
 - `node scripts/generate-mappings-ai.mjs --mode remap --all --type wikipedia`
 - `node scripts/generate-mappings-ai.mjs --validate`
 - `node scripts/generate-mappings-ai.mjs --coverage`
 - `node scripts/generate-mappings-ai.mjs --mode gap-fill --type wikipedia`
+- `node scripts/generate-mappings-ai.mjs --mode repair-queue --type wikipedia`
 
 ## What To Report Back
 
 - exact Wikipedia leaf coverage before and after
 - number of fallback-only and unresolved Wikipedia leaves before and after
 - validation results, including invalid paths and empty `relevantPathsAI` counts
+- repair-queue recommendation summary (`remap` vs `assign`)
 - any sections that remain especially weak after remap
 - exactly what commands were run
 - any files changed
