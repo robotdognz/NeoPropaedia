@@ -6,160 +6,136 @@
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.1.a",
-        "A.1.b",
         "A.2",
         "A.3",
         "B",
-        "B.1",
-        "C",
-        "C.1",
-        "C.2"
+        "C"
       ],
-      "rationaleAI": "Macroeconomics is the direct disciplinary coverage of Section 535, addressing national income and employment theory (A) including Keynesian vs. classical debate (A.1.a), circular flow (A.2), income fluctuations (A.3), international financial equilibrium (B), foreign exchange markets (B.1), and business cycles (C.1, C.2)."
+      "rationaleAI": "Aggregate economic analysis covering classical versus Keynesian theories of demand and unemployment (A.1), circular flow of income (A.2), fluctuations in national income (A.3), international equilibrium (B), and business cycles (C)."
     },
     {
       "articleTitle": "Economics",
       "relevantPathsAI": [
         "A",
-        "A.1",
+        "B",
         "C"
       ],
-      "rationaleAI": "Economics encompasses macroeconomic theory including Keynesian, monetarist, and new classical schools (A.1.a), national income analysis (A), and business cycle analysis (C) as central subdisciplines, providing the overarching disciplinary framework for all three outline sections."
+      "rationaleAI": "Social science encompassing income and employment theory (A), international economic and financial equilibrium (B), and business cycle analysis (C)."
     },
     {
       "articleTitle": "Bank",
       "relevantPathsAI": [
-        "A",
+        "B.1",
         "B.2"
       ],
-      "rationaleAI": "Banks are central to macroeconomic income determination through money creation and credit expansion (A), and international monetary institutions including the Basel Accords and central bank coordination address B.2 (international monetary cooperation)."
+      "rationaleAI": "Financial intermediary relevant to foreign exchange market operations (B.1) and international monetary institutions (B.2)."
     },
     {
       "articleTitle": "Supply and demand",
       "relevantPathsAI": [
-        "A.1",
         "A.1.a"
       ],
-      "rationaleAI": "Aggregate supply and aggregate demand as macroeconomic extensions of the supply-demand model directly address output and price-level determination in national income theory (A.1), including the classical law of markets versus Keynesian effective demand (A.1.a)."
+      "rationaleAI": "Aggregate supply-aggregate demand model relevant to the classical law of markets versus Keynesian theory of effective demand (A.1.a)."
     },
     {
       "articleTitle": "Finance",
       "relevantPathsAI": [
-        "B",
         "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
-        "B.1.d"
+        "B.2"
       ],
-      "rationaleAI": "Finance directly covers international financial equilibrium (B) through foreign exchange markets and exchange rate systems (B.1), balance of payments mechanisms and arbitrage (B.1.a), speculation and currency devaluation (B.1.b), balance of payments accounting (B.1.c), and adjustment mechanisms (B.1.d)."
+      "rationaleAI": "Monetary resource management covering foreign exchange markets (B.1) and international monetary institutions (B.2)."
     },
     {
       "articleTitle": "Money",
       "relevantPathsAI": [
-        "A.1.a",
-        "A.1",
+        "B.1",
         "B.2.a"
       ],
-      "rationaleAI": "Money's quantity theory and monetary policy role are central to the classical law of markets (A.1.a) and the aggregate determination of national income and price levels (A.1). Gold and currency reserves as monetary standards are covered in B.2.a."
+      "rationaleAI": "Medium of exchange relevant to foreign exchange markets and monetary standards (B.1) and problems of maintaining adequate gold and currency reserves (B.2.a)."
     },
     {
       "articleTitle": "Adam Smith",
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "Smith's law of markets (Say's Law precursor) and the classical position that supply creates its own demand is directly contrasted with Keynesian effective demand theory at A.1.a, making Smith foundational to understanding the classical-Keynesian debate."
+      "rationaleAI": "Classical political economy formulating the law of markets (Say's Law) relevant to the classical theory contrasted with Keynesian demand (A.1.a)."
     },
     {
       "articleTitle": "Tax",
       "relevantPathsAI": [
-        "C"
+        "C.3"
       ],
-      "rationaleAI": "Taxation is a primary instrument of countercyclical fiscal policy (C.3), and this article's coverage of fiscal policy, incidence, and distributional effects of taxes supports the macroeconomic role of government intervention in business cycle management."
+      "rationaleAI": "Government fiscal instrument relevant to countercyclical fiscal policy (C.3)."
     },
     {
       "articleTitle": "Great Depression",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
         "A.1.b",
         "A.3",
         "B.2.b",
-        "C",
-        "C.1",
-        "C.2"
+        "C"
       ],
-      "rationaleAI": "The Great Depression is the empirical foundation for Keynesian macroeconomics (A.1.a, A.1.b), represents a major fluctuation in national income (A.3), illustrates business cycle theory (C.1, C.2), and exemplifies the aftermath of financial crises including economic nationalism (B.2.b)."
+      "rationaleAI": "Severe downturn illustrating unemployment theory debates (A.1.b), fluctuations in national income (A.3), economic aftermath of major crises (B.2.b), and business cycle analysis (C)."
     },
     {
       "articleTitle": "Capitalism",
       "relevantPathsAI": [
         "A",
-        "C",
-        "C.2"
+        "C"
       ],
-      "rationaleAI": "Capitalism's macroeconomic dynamics — capital accumulation, business cycles, and the role of investment in aggregate demand — are directly relevant to national income theory (A) and cyclical theories of the business cycle (C.2)."
+      "rationaleAI": "Market economy system relevant to income and employment theory (A) and the occurrence of business cycles within capitalist economies (C)."
     },
     {
       "articleTitle": "European Union",
       "relevantPathsAI": [
-        "B.2",
-        "B.1",
-        "B.1.d"
+        "B.2"
       ],
-      "rationaleAI": "The EU represents a major international monetary and financial institution (B.2) through the Eurozone and ECB, addressing foreign exchange unification (B.1) and coordinated fiscal and monetary policy adjustment mechanisms (B.1.d) within the largest integrated economic area."
+      "rationaleAI": "Supranational union with Eurozone and coordinated monetary policy, constituting an international monetary institution and attempt at cooperation (B.2)."
     },
     {
       "articleTitle": "Welfare spending",
       "relevantPathsAI": [
-        "C",
-        "A.3"
+        "C.3"
       ],
-      "rationaleAI": "Automatic stabilizers in welfare spending (unemployment benefits, social transfers) are a primary mechanism of countercyclical fiscal policy (C.3), dampening income fluctuations (A.3) during business cycle downturns without requiring active legislative intervention."
+      "rationaleAI": "Government-funded support systems functioning as countercyclical fiscal policy through automatic stabilizers (C.3)."
     },
     {
       "articleTitle": "Gold",
       "relevantPathsAI": [
-        "B.2.a",
-        "B.1"
+        "B.2.a"
       ],
-      "rationaleAI": "Gold directly covers the maintenance of gold and currency reserves and gold crises (B.2.a) as a monetary standard, and its historical role in the gold standard and Bretton Woods system is central to understanding fixed versus floating exchange rate systems (B.1)."
+      "rationaleAI": "Noble metal with monetary history directly relevant to problems of maintaining adequate gold reserves, gold crises, and special drawing rights (B.2.a)."
     },
     {
       "articleTitle": "Trade",
       "relevantPathsAI": [
-        "B",
-        "B.1",
         "B.1.c"
       ],
-      "rationaleAI": "International trade flows are central to balance of payments accounting (B.1.c) and international economic equilibrium (B), with trade imbalances driving the disequilibrating movements and adjustment mechanisms analyzed throughout B.1."
+      "rationaleAI": "Transfer of goods and services relevant to balance of payments accounting (B.1.c)."
     },
     {
       "articleTitle": "Work (human activity)",
       "relevantPathsAI": [
-        "A.1",
         "A.1.b"
       ],
-      "rationaleAI": "Employment and unemployment as outcomes of national income determination are central to A.1, and the Keynesian theory of unemployment (A.1.b)—that unemployment can persist without self-correcting market mechanisms — is foundational to macroeconomic policy debates."
+      "rationaleAI": "Productive activity directly relevant to classical and Keynesian theories of unemployment (A.1.b)."
     },
     {
       "articleTitle": "Ibn Khaldun",
       "relevantPathsAI": [
-        "C.1",
+        "A",
         "C.2"
       ],
-      "rationaleAI": "Ibn Khaldun's cyclical theory of dynastic rise and fall in the Muqaddimah represents an early proto-macroeconomic model of cyclical economic fluctuation (C.1, C.2), anticipating later business cycle theory through his analysis of surplus extraction, taxation, and economic decline."
+      "rationaleAI": "Proto-macroeconomic analysis including supply-demand, labor theory of value, and taxation, anticipating cyclical theories of economic fluctuation (C.2)."
     },
     {
       "articleTitle": "Statistics",
       "relevantPathsAI": [
-        "A.3",
         "C.1"
       ],
-      "rationaleAI": "Statistical methods underpin the identification and measurement of business cycles (C.1) and the empirical study of fluctuations in national income (A.3), covering sampling, time-series analysis, index construction, and quantitative inference central to macroeconomic measurement."
+      "rationaleAI": "Discipline of data analysis directly relevant to the statistical study of cycles, identification, and measurement of business cycles (C.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

@@ -37,7 +37,6 @@ const DRAG_DISTANCE_THRESHOLD = 6;
 const CENTER_PREVIEW_THRESHOLD = CENTER_DISC_RADIUS + 2;
 const CENTER_COMMIT_THRESHOLD = CENTER_DISC_RADIUS - 16;
 const CENTER_EXIT_HYSTERESIS = 20;
-const TOUCH_ROTATE_RADIUS_MAX = OUTER_RADIUS + 24;
 const SELECTION_OUTLINE_WIDTH = 4;
 const FOCUS_RING_WIDTH = 3;
 const STORAGE_KEY = 'propaedia-circle-navigator-v1';
@@ -452,21 +451,6 @@ export default function CircleNavigator({
       if (morphAnimRef.current) cancelAnimationFrame(morphAnimRef.current);
     };
   }, [centerPreviewPartNumber]);
-
-  useEffect(() => {
-    const svg = svgRef.current;
-    if (!svg) return;
-
-    const preventTouchScrollWhileDragging = (event: TouchEvent) => {
-      if (dragStateRef.current) event.preventDefault();
-    };
-
-    svg.addEventListener('touchmove', preventTouchScrollWhileDragging, { passive: false });
-
-    return () => {
-      svg.removeEventListener('touchmove', preventTouchScrollWhileDragging);
-    };
-  }, []);
 
   // Animate removeMorphT when center-remove preview toggles
   useEffect(() => {
@@ -924,7 +908,6 @@ export default function CircleNavigator({
 
     const point = svgPoint(svgRef.current, event.clientX, event.clientY);
     const radius = distanceFromCenter(point.x, point.y);
-    if (event.pointerType === 'touch' && radius > TOUCH_ROTATE_RADIUS_MAX) return;
     // Ignore touches beyond the label radius (outside the circle's interactive zone)
     if (radius > INTERACTIVE_RADIUS) return;
 
@@ -953,7 +936,6 @@ export default function CircleNavigator({
 
   const handleBackgroundPointerDown = (event: h.JSX.TargetedPointerEvent<SVGSVGElement>) => {
     if (dragStateRef.current || !svgRef.current) return;
-    if (event.pointerType === 'touch') return;
 
     const point = svgPoint(svgRef.current, event.clientX, event.clientY);
     const radius = distanceFromCenter(point.x, point.y);
@@ -1154,7 +1136,6 @@ export default function CircleNavigator({
           style={{ overflow: 'visible', touchAction: 'pan-y pinch-zoom' }}
           role="img"
           aria-label="Interactive circle navigation for the ten parts of the Propaedia"
-          onPointerDown={handleBackgroundPointerDown}
           onPointerMove={handlePointerMove}
           onPointerUp={handlePointerUp}
           onPointerCancel={handlePointerCancel}
@@ -1170,6 +1151,8 @@ export default function CircleNavigator({
             d={donutSlicePath(CENTER, CENTER, hasCenter ? CENTER_DISC_RADIUS : effectiveInnerRadius, INTERACTIVE_RADIUS, 0, 359.9)}
             fill="transparent"
             class="cursor-grab active:cursor-grabbing"
+            style={{ touchAction: 'none' }}
+            onPointerDown={handleBackgroundPointerDown}
           />
 
           {/* Render non-top segments first, top segment last so it paints on top */}
@@ -1223,7 +1206,7 @@ export default function CircleNavigator({
                   d={donutSlicePath(CENTER, CENTER, segmentOuterRadius + 6, INTERACTIVE_RADIUS, startAngle, endAngle)}
                   fill="transparent"
                   class="cursor-grab active:cursor-grabbing"
-                  style={{ touchAction: 'pan-y pinch-zoom' }}
+                  style={{ touchAction: 'none' }}
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
                 />
                 <path

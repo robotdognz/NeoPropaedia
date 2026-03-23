@@ -5,25 +5,23 @@
       "articleTitle": "Sigmund Freud",
       "relevantPathsAI": [
         "A.2",
+        "C.2",
         "C.3",
-        "D.1",
-        "D.3"
+        "D"
       ],
-      "rationaleAI": "Freud psychoanalytic theory of personality — id, ego, superego — directly constitutes A.2; his clinical accounts of defense mechanisms cover C.3; and his theories of neurosis are foundational to D.1 and D.3."
+      "rationaleAI": "Psychoanalytic theory of id, ego, superego, life and death instincts (A.2), frustration and conflict as stresses on personality (C.2), defense mechanisms as adjustment dynamisms (C.3), and theories of neurosis as mental disorders (D)."
     },
     {
       "articleTitle": "Personality",
       "relevantPathsAI": [
         "A",
         "A.1",
-        "A.2",
         "A.3",
         "A.4",
         "B",
-        "B.1",
-        "B.2"
+        "C"
       ],
-      "rationaleAI": "Directly covers all definitions of personality (A), from physiological to psychoanalytic (A.2) to trait and factor-analytic frameworks including the five-factor model (A.4), and explicitly includes measurement (B, B.1, B.2)."
+      "rationaleAI": "Behavioral, cognitive, and emotional patterns encompassing physiological theories (A.1), social analytic theories of need achievement and functional autonomy (A.3), trait factor analysis (A.4), measurement through instruments like the five-factor inventory (B), and personality functioning and adjustment (C)."
     },
     {
       "articleTitle": "Psychology",
@@ -31,73 +29,64 @@
         "A",
         "B",
         "C",
-        "D",
-        "D.1",
-        "D.2",
-        "D.3"
+        "D"
       ],
-      "rationaleAI": "As the parent discipline, psychology encompasses all theoretical approaches to personality (A), psychological assessment methods (B), adjustment and functioning (C), and mental disorder classification (D.1-D.3)."
+      "rationaleAI": "Scientific study encompassing personality theories (A), psychometric assessment (B), behavioral adjustment including psychotherapy (C), and mental health diagnosis and treatment (D)."
     },
     {
       "articleTitle": "Emotion",
       "relevantPathsAI": [
         "C.2",
-        "C.3",
-        "D.1"
+        "C.3"
       ],
-      "rationaleAI": "Covers emotion dynamics and regulation as strains on personality functioning (C.2) and responses to stress through emotional processing (C.3); affective disorders listed under D.1 are categorized by emotional dysregulation."
+      "rationaleAI": "Neurophysiologically grounded mental and physical states representing strains on personality functioning (C.2) and emotional responses as defense mechanisms and coping strategies (C.3)."
     },
     {
       "articleTitle": "Mind",
       "relevantPathsAI": [
         "A",
-        "C.1",
-        "D"
+        "C.1"
       ],
-      "rationaleAI": "Covers the mind conscious/unconscious processes foundational to personality definitions (A), the development of self-awareness (C.1), and mental disorder as disturbance of mind (D)."
+      "rationaleAI": "All mental phenomena including conscious and unconscious processes relevant to personality definition (A), and development of awareness of self as the subjective aspect of personality (C.1)."
     },
     {
       "articleTitle": "Meditation",
       "relevantPathsAI": [
+        "C.1",
         "C.3"
       ],
-      "rationaleAI": "Meditation as a technique for emotional regulation and stress management constitutes a coping and adjustment dynamism (C.3)."
+      "rationaleAI": "Contemplative practice training awareness and metacognitive monitoring, relevant to development of self-awareness (C.1) and as an adjustment response to environmental stresses (C.3)."
     },
     {
       "articleTitle": "Human behavior",
       "relevantPathsAI": [
         "A",
-        "C",
-        "C.2",
-        "C.3"
+        "C"
       ],
-      "rationaleAI": "Covers the full range of behavioral, cognitive, and emotional patterns shaping personality (A), and specifically addresses antisocial behavior, conflict, stress as strains on functioning (C.2, C.3)."
+      "rationaleAI": "Full range of human responses shaped by psychological and cultural factors, encompassing personality definitions (A) and personality functioning and adjustment (C)."
     },
     {
       "articleTitle": "Health",
       "relevantPathsAI": [
-        "C.2",
-        "D.2"
+        "C.2"
       ],
-      "rationaleAI": "Mental health dimensions — stress, psychological well-being — connect to strains on personality functioning (C.2); health determinants and disparities relate to epidemiology of mental disorders (D.2)."
+      "rationaleAI": "Physical, mental, and social well-being relevant to physical and psychological stresses on personality functioning (C.2)."
     },
     {
       "articleTitle": "Mental health",
       "relevantPathsAI": [
+        "C",
         "D",
-        "D.1",
-        "D.2",
-        "D.3"
+        "D.2"
       ],
-      "rationaleAI": "Directly covers the distinction between mental health and mental illness, risk factors across biological and socioeconomic dimensions (D.3), treatment approaches, and disparities."
+      "rationaleAI": "Emotional, psychological, and social well-being governing cognition and stress management (C), with risk factors spanning biological and social dimensions relevant to prevalence of mental disorders (D.2)."
     },
     {
       "articleTitle": "Sexual orientation",
       "relevantPathsAI": [
-        "A.3",
         "D.1"
       ],
-      "rationaleAI": "Sexual orientation connects to social analytic personality theories regarding identity (A.3), and the DSM-era history of classification is relevant to D.1."
+      "rationaleAI": "Enduring pattern of sexual attraction relevant to psychosexual disorders as a historical category of mental disorder classification (D.1)."
     },
     {
       "articleTitle": "Sadness",
@@ -105,51 +94,45 @@
         "C.2",
         "D.1"
       ],
-      "rationaleAI": "Sadness as a basic emotion functions as a psychological strain (C.2); its severe form maps to affective disorders under D.1."
+      "rationaleAI": "Basic emotion involving feelings of loss and despair representing a strain on personality functioning (C.2), with clinical depression as an affective disorder (D.1)."
     },
     {
       "articleTitle": "Consciousness",
       "relevantPathsAI": [
-        "A",
         "C.1"
       ],
-      "rationaleAI": "Covers awareness and self-awareness central to the development of self (C.1), and phenomenological accounts of consciousness underlie personality theories (A)."
+      "rationaleAI": "Awareness of internal states and self-awareness directly relevant to the subjective aspect of personality and development of self-awareness (C.1)."
     },
     {
       "articleTitle": "Fear",
       "relevantPathsAI": [
         "C.2",
-        "C.3",
         "D.1"
       ],
-      "rationaleAI": "Fear is a primary psychological strain (C.2); phobias map to anxiety disorders under D.1; and defensive responses exemplify adjustment dynamisms (C.3)."
+      "rationaleAI": "Emotional state arising from perceived danger representing a psychological stress on personality (C.2), with phobias as pathological fear classified under anxiety disorders (D.1)."
     },
     {
       "articleTitle": "Happiness",
       "relevantPathsAI": [
-        "C.1",
-        "C.2",
-        "C.3"
+        "C",
+        "C.1"
       ],
-      "rationaleAI": "Happiness and well-being constitute the positive pole of personality functioning and adjustment (C); connects to self-fulfillment (C.1) and strains on functioning (C.2)."
+      "rationaleAI": "Multifaceted mental state encompassing positive affect and well-being, relevant to personality functioning and adjustment (C) and subjective self-awareness (C.1)."
     },
     {
       "articleTitle": "Autism",
       "relevantPathsAI": [
-        "D.1",
-        "D.2",
-        "D.3"
+        "D.1"
       ],
-      "rationaleAI": "Autism spectrum condition falls under neurodevelopmental disorders (D.1); its rising prevalence maps to D.2; and its genetic heritability addresses causation (D.3)."
+      "rationaleAI": "Neurodevelopmental condition characterized by atypical social communication and restricted interests, classified among disorders of infancy or childhood (D.1)."
     },
     {
       "articleTitle": "Addiction",
       "relevantPathsAI": [
         "D.1",
-        "D.3",
-        "C.2"
+        "D.3"
       ],
-      "rationaleAI": "Addiction as a neuropsychological disorder maps to D.1; its multifactorial etiology addresses D.3; and substance misuse constitutes a strain on personality functioning (C.2)."
+      "rationaleAI": "Neuropsychological disorder involving compulsive engagement despite harm, classified among mental disorders (D.1), with neurobiological changes in reward pathways contributing to causation (D.3)."
     },
     {
       "articleTitle": "Mental disorder",
@@ -159,50 +142,45 @@
         "D.2",
         "D.3"
       ],
-      "rationaleAI": "Directly covers all three sub-paths under D: major categories including anxiety, mood, psychotic, and personality disorders (D.1); epidemiology (D.2); and multifactorial causation (D.3)."
+      "rationaleAI": "Comprehensive coverage of anxiety, mood, psychotic, personality, and neurodevelopmental disorders (D.1), epidemiological prevalence (D.2), and multifactorial etiology drawing on genetics, neurobiology, and environment (D.3)."
     },
     {
       "articleTitle": "Suicide",
       "relevantPathsAI": [
-        "D.1",
-        "D.3",
-        "C.2"
+        "C.2",
+        "D"
       ],
-      "rationaleAI": "Suicide is linked to mental illness (D.1) with risk factors spanning psychosocial stressors (D.3); represents an extreme response to strains on personality functioning (C.2)."
+      "rationaleAI": "Self-caused death linked to mental illness and psychosocial stressors as extreme personality disintegration (D), with risk factors including frustration and deprivation as stresses on personality functioning (C.2)."
     },
     {
       "articleTitle": "Humour",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "Humour serves stress relief and psychological adjustment functions (C.3); relief theory specifically theorizes it as a mechanism for coping with psychological tension."
+      "rationaleAI": "Cognitive and affective tendency providing social cohesion and health benefits, functioning as a response and coping mechanism for environmental strains on personality (C.3)."
     },
     {
       "articleTitle": "Parenting",
       "relevantPathsAI": [
         "C.1",
-        "D.3",
-        "A.3"
+        "D.1"
       ],
-      "rationaleAI": "Parenting styles are social-environmental factors shaping personality development (A.3) and self-awareness (C.1); parental psychopathology influences causation of mental disorders (D.3)."
+      "rationaleAI": "Caregiving affecting child attachment and personality development, relevant to development of self-awareness (C.1), with parental psychopathology influencing disorders of infancy or childhood (D.1)."
     },
     {
       "articleTitle": "Adolescence",
       "relevantPathsAI": [
         "C.1",
-        "C.2",
-        "D.1"
+        "C.2"
       ],
-      "rationaleAI": "Adolescence is the key period of identity formation (C.1); peer pressure and role confusion constitute psychological strains (C.2); and onset of many mental disorders occurs in this period (D.1)."
+      "rationaleAI": "Identity formation and autonomy negotiation as development of self-awareness (C.1), with peer pressure and risk behavior as stresses on personality functioning (C.2)."
     },
     {
       "articleTitle": "Gender",
       "relevantPathsAI": [
-        "A.3",
-        "A.4",
-        "C.1"
+        "A.1"
       ],
-      "rationaleAI": "Gender identity and roles are core to social analytic personality theories (A.3) and eclectic role theories (A.4); gender identity formation is central to development of self (C.1)."
+      "rationaleAI": "Gender identity and its relationship to personality development, with biological and social influences relevant to physiological theories linking body to personality (A.1)."
     },
     {
       "articleTitle": "René Descartes",
@@ -214,12 +192,11 @@
     {
       "articleTitle": "Anthropology",
       "relevantPathsAI": [
-        "A.3",
-        "A.4"
+        "A.3"
       ],
-      "rationaleAI": "Anthropology cross-cultural study of personality informs social analytic personality theories (A.3) and eclectic role theories (A.4)."
+      "rationaleAI": "Sociocultural anthropology addresses cross-cultural variation in personality, relevant to social analytic theories emphasizing cultural factors in personality formation (A.3)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

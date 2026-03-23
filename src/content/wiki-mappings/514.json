@@ -4,59 +4,60 @@
     {
       "articleTitle": "Language",
       "relevantPathsAI": [
-        "A",
         "C",
         "C.1",
         "C.2",
+        "C.5",
         "C.6",
         "C.7",
+        "D",
         "F",
-        "G"
+        "G",
+        "H"
       ],
-      "rationaleAI": "Core article for section 514: covers definitions of language (C.1), linguistic structure including phonology, morphology, and semantics (C.2), sociolinguistics and language acquisition (C.6), typology and historical change (C.7), the scientific study of language as a discipline (F), and the social functions of language (G)."
+      "rationaleAI": "Structured system of grammar and vocabulary covering definitions (C.1), phonetics and semantics (C.2), meaning and style (C.5), language and culture (C.6), linguistic change and typology (C.7), speech structure (D), linguistics (F), language and society (G), and language families worldwide (H)."
     },
     {
       "articleTitle": "Latin script",
       "relevantPathsAI": [
+        "E",
         "E.2",
-        "E.3",
-        "H.1.d"
+        "E.3"
       ],
-      "rationaleAI": "Covers the most widely used alphabetic writing system globally (E.2, types of writing systems; E.3, alphabetic writing), derived from Etruscan adaptation of Greek colonial script, and foundational to the Italic branch of Indo-European languages (H.1.d)."
+      "rationaleAI": "World's most widely adopted writing system derived from Etruscan-Greek origins, representing types of alphabetic writing systems (E.2) and specific systems of writing (E.3)."
     },
     {
       "articleTitle": "Indo-European languages",
       "relevantPathsAI": [
         "H.1",
-        "F.3",
-        "F.7"
+        "F.3"
       ],
-      "rationaleAI": "Directly covers H.1 (Indo-European languages) in full, including all major branches (Indo-Iranian, Germanic, Romance, Balto-Slavic, etc.) and the reconstruction of Proto-Indo-European; central to F.3 (diachronic linguistics and comparative method) and F.7 (classification of language)."
+      "rationaleAI": "World's most widely spoken language family with 446 living languages across branches including Indo-Iranian, Germanic, Romance, and Balto-Slavic (H.1), central to comparative and diachronic linguistics (F.3)."
     },
     {
       "articleTitle": "Speech",
       "relevantPathsAI": [
         "C.4",
+        "D",
         "D.1",
-        "D.2"
+        "D.2",
+        "D.3"
       ],
-      "rationaleAI": "Covers the use of the human voice as primary language medium, including the psychological and physiological bases of speech (C.4, D.2), phonemic articulation, production via Broca's and Wernicke's areas, and speech as distinct from written language."
+      "rationaleAI": "Human voice as primary language medium, covering psychological and physiological bases (C.4), phonetics of speech (D.1), physiology of voice production (D.2), and speech disorders (D.3)."
     },
     {
       "articleTitle": "English language",
       "relevantPathsAI": [
-        "H.1.f",
-        "G.3",
-        "G.5"
+        "H.1.f"
       ],
-      "rationaleAI": "Covers the English language as a West Germanic language (H.1.f) that has become the primary international lingua franca for science and diplomacy (G.3, language in cross-cultural relations; G.5, language in unifying occupational groups), covering its spread through British imperialism and US influence."
+      "rationaleAI": "West Germanic language now the world's most spoken overall, directly representing Germanic languages within the Indo-European family (H.1.f)."
     },
     {
       "articleTitle": "Japanese language",
       "relevantPathsAI": [
         "H.13"
       ],
-      "rationaleAI": "Directly covers H.13 (Japanese language), including its agglutinative grammar, pitch-accent system, complex honorific register, and tripartite writing system combining kanji, hiragana, and katakana, with its unresolved genetic affiliation."
+      "rationaleAI": "Principal language of the Japonic family with agglutinative morphology and complex honorific system, directly constituting the Japanese language entry (H.13)."
     },
     {
       "articleTitle": "Phoenicia",
@@ -65,25 +66,24 @@
         "E.3",
         "H.11.a"
       ],
-      "rationaleAI": "The Phoenician alphabet, derived from Proto-Sinaitic script and ancestral to Greek, Latin, and Cyrillic, is foundational to E.1 (the nature, origin, and evolution of writing) and E.3 (alphabetic writing systems); Phoenician is also a Semitic language (H.11.a)."
+      "rationaleAI": "Maritime civilization that invented the earliest verified alphabet ancestral to Greek, Latin, and Cyrillic (E.1), representing Semitic writing systems (E.3) and Semitic languages (H.11.a)."
     },
     {
       "articleTitle": "Latin",
       "relevantPathsAI": [
         "H.1.d",
-        "H.1.e",
-        "E.3",
-        "G.2"
+        "H.1.e"
       ],
-      "rationaleAI": "Latin directly covers H.1.d (Italic languages) and the evolution into Romance languages (H.1.e); as the international language of European scholarship for centuries, it is also relevant to G.2 (the connection of language with history and cultural transmission) and E.3 (alphabetic writing systems)."
+      "rationaleAI": "Classical Italic language that evolved into the Romance languages (H.1.e), directly representing Italic languages (H.1.d) within Indo-European."
     },
     {
       "articleTitle": "Brahmic scripts",
       "relevantPathsAI": [
         "E.2",
-        "E.3"
+        "E.3",
+        "E.5"
       ],
-      "rationaleAI": "Covers the abugida family of writing systems used across South, East, and Southeast Asia (E.2, types of writing systems including syllabic and featural; E.3, systems of writing), encoding the scripts for Indo-Aryan, Dravidian, and numerous other language families."
+      "rationaleAI": "Family of abugida writing systems used across South and Southeast Asia, representing syllabic-type systems (E.2), ideographic systems (E.3), and Indic calligraphy traditions (E.5)."
     },
     {
       "articleTitle": "Writing",
@@ -93,23 +93,22 @@
         "E.2",
         "E.3"
       ],
-      "rationaleAI": "Core article for section E of the outline: covers the nature, origins, and evolution of writing from pictographic to alphabetic systems (E.1), all major writing system types (E.2), and specific systems including logographic, syllabic, and alphabetic (E.3), addressing writing's role in knowledge organization."
+      "rationaleAI": "Persistent visual representation of language covering origin and evolution of writing (E.1), types of writing systems from logographic to alphabetic (E.2), and specific systems including hieroglyphic and cuneiform (E.3)."
     },
     {
       "articleTitle": "Oral tradition",
       "relevantPathsAI": [
         "A",
-        "C.6",
         "G.2"
       ],
-      "rationaleAI": "As the dominant mode of communication and cultural transmission before and alongside writing, oral tradition is central to A (communication as foundation of culture) and to C.6 (language and culture, transmission of language), as well as G.2 (the role of language in historical and cultural transmission)."
+      "rationaleAI": "Transmission of knowledge through speech as a foundational mode of communication and cultural interaction (A), with language's role in the transmission of culture (G.2)."
     },
     {
       "articleTitle": "Portuguese language",
       "relevantPathsAI": [
         "H.1.e"
       ],
-      "rationaleAI": "Directly covers H.1.e (Romance languages) as a major Western Romance language with approximately 267 million native speakers and official status across multiple continents, with detailed treatment of its phonological and lexical characteristics."
+      "rationaleAI": "Western Romance language of the Ibero-Romance group, directly representing Romance languages within Indo-European (H.1.e)."
     },
     {
       "articleTitle": "Linguistics",
@@ -122,27 +121,23 @@
         "F.5",
         "F.7"
       ],
-      "rationaleAI": "Core article for section F (Linguistics: the scientific study of language): covers theoretical linguistics (F.2, universal grammar), diachronic and comparative linguistics (F.3), dialectology (F.4), semantics (F.5), and language classification (F.7), providing the meta-framework for all other language study."
+      "rationaleAI": "Scientific study of language encompassing development of linguistic theory (F.1), synchronic linguistics (F.2), diachronic linguistics (F.3), dialectology (F.4), semantics (F.5), and language classification (F.7)."
     },
     {
       "articleTitle": "Cyrillic script",
       "relevantPathsAI": [
         "E.2",
-        "E.3",
-        "H.1.k"
+        "E.3"
       ],
-      "rationaleAI": "Covers the Cyrillic writing system used across Slavic and other Eurasian languages (E.2, types of writing systems; E.3, systems of writing), with its 9th-century Bulgarian origins, and directly relevant to H.1.k (Slavic languages) as the primary script for Russian, Bulgarian, Serbian, and other Slavic languages."
+      "rationaleAI": "Writing system serving Slavic, Turkic, and other languages, representing alphabetic writing systems (E.2) developed from Greek-derived script traditions (E.3)."
     },
     {
       "articleTitle": "Communication",
       "relevantPathsAI": [
         "A",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3"
+        "B"
       ],
-      "rationaleAI": "Directly covers A (communication as the foundation of human culture and social interaction) and B (nonverbal communication), including verbal and nonverbal forms, interpersonal and computer-mediated exchange, and the historical evolution driven by writing, print, and digital technologies."
+      "rationaleAI": "Transmission of meaning through verbal and non-verbal forms, foundational to human culture and social interaction (A), with non-verbal forms including bodily gestures and signals (B)."
     },
     {
       "articleTitle": "Egypt",
@@ -151,16 +146,15 @@
         "E.3",
         "H.11.b"
       ],
-      "rationaleAI": "Egyptian hieroglyphic writing is one of the earliest independently developed writing systems (E.1, evolution of writing; E.3, hieroglyphic writing systems), and Egyptian language is explicitly named in the outline under H.11.b (Afro-Asiatic: Egyptian)."
+      "rationaleAI": "One of the independent origins of writing with hieroglyphic systems (E.1, E.3), and Egyptian language as a distinct Afro-Asiatic branch (H.11.b)."
     },
     {
       "articleTitle": "Mesoamerica",
       "relevantPathsAI": [
         "E.1",
-        "H.19",
-        "H.19.k"
+        "H.19"
       ],
-      "rationaleAI": "Mesoamerica independently developed writing systems including Mayan script (E.1, origin and evolution of writing), and the outline specifically covers Mesoamerican language families at H.19, including Mayan (H.19.k), Mixe-Zoque, and Uto-Aztecan."
+      "rationaleAI": "One of five world regions with independently developed writing, including Maya and Zapotec systems (E.1), and home to Indian languages of Meso-America (H.19)."
     },
     {
       "articleTitle": "Emotion",
@@ -168,24 +162,24 @@
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "Cross-cultural variation in emotional expression through facial expressions (B.1) and nonword vocalizations such as laughter, crying, and sighing (B.2) are directly covered, as emotion research explicitly addresses these nonverbal communicative channels."
+      "rationaleAI": "Emotional expression through facial and vocal channels constituting nonverbal communication by bodily gestures and facial expression (B.1) and nonword sounds (B.2)."
     },
     {
       "articleTitle": "Arabic numerals",
       "relevantPathsAI": [
         "E.4"
       ],
-      "rationaleAI": "Arabic numerals as a globally adopted notation system represent an adjunct to writing systems (E.4, adjuncts to writing), transmitted through Arabic scholarship and the printing press into universal use across otherwise divergent written language systems."
+      "rationaleAI": "Ten symbols forming the globally dominant notation system, transmitted from India through Arabic scholarship, representing adjuncts to writing (E.4)."
     },
     {
       "articleTitle": "British Empire",
       "relevantPathsAI": [
-        "G.3",
-        "G.4"
+        "G.4",
+        "H.1.f"
       ],
-      "rationaleAI": "The spread of the English language through British imperial expansion is a prime historical example of G.3 (the role of language in cross-cultural relations) and G.4 (the use of language as a political instrument), shaping global linguistic geography through colonialism."
+      "rationaleAI": "Colonial expansion that spread English as a global lingua franca, using language as a political instrument (G.4) and extending Germanic language dominance worldwide (H.1.f)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

@@ -6,29 +6,26 @@
       "relevantPathsAI": [
         "G",
         "G.1",
-        "G.3",
-        "D"
+        "G.2",
+        "G.3"
       ],
-      "rationaleAI": "Directly covers the higher thought processes (G, G.1) including reasoning, concept formation, problem-solving, and deliberation, with sustained treatment of conceptual learning and concept formation (D) through associationism, computationalism, and Platonism/Aristotelianism. Also addresses meaning (G.3) through the language-of-thought hypothesis and inner speech."
+      "rationaleAI": "Higher cognitive processes including reasoning, concept formation, and problem-solving (G.1), the role of inner speech and language-of-thought hypotheses (G.2), and theories of meaning in cognition (G.3)."
     },
     {
       "articleTitle": "Mind",
       "relevantPathsAI": [
         "A",
-        "G",
-        "G.1",
-        "E"
+        "G"
       ],
-      "rationaleAI": "Covers the mental phenomena underlying all learning and thinking, including memory, thought, and psychological stages relevant to A and G.1; treatment of conscious and unconscious processes connects to major issues in learning theories (A.2) and the higher thought processes (G, G.1)."
+      "rationaleAI": "All mental phenomena including thought, perception, and memory relevant to diverse theories of human learning (A), and conscious and unconscious processes underlying higher thought (G)."
     },
     {
       "articleTitle": "Education",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2"
+        "A.3"
       ],
-      "rationaleAI": "Covers learning theories and teaching methods substantively (A, A.1), and addresses major issues such as the roles of motivation, intelligence, and socioeconomic factors in learning (A.2)."
+      "rationaleAI": "Transmission of knowledge through formal and informal processes, covering learning theories and teaching methods (A), and transfer of training from educational to applied contexts (A.3)."
     },
     {
       "articleTitle": "Memory",
@@ -36,7 +33,7 @@
         "E",
         "F"
       ],
-      "rationaleAI": "Directly and comprehensively covers E (retention and forgetting: encoding, storage, retrieval, interference, decay) and F (abnormalities of memory: amnesia, dementia, PTSD-related disruption), including the structural model distinguishing sensory, short-term, and long-term memory stores."
+      "rationaleAI": "Encoding, storage, and retrieval of information covering retention and forgetting (E), with amnesia, confabulation, and memory disorders constituting abnormalities of memory (F)."
     },
     {
       "articleTitle": "Learning",
@@ -44,29 +41,27 @@
         "A",
         "A.1",
         "A.2",
-        "A.3",
         "B",
         "C",
         "D"
       ],
-      "rationaleAI": "Directly covers the entire outline division: modern learning theories including classical/operant conditioning and observational learning (A, A.1, A.2), habituation and sensitization addressing major theoretical issues (A.2), transfer across learning domains (A.3), psychomotor learning (B), perceptual learning (C), and conceptual/complex learning forms (D)."
+      "rationaleAI": "Acquisition of knowledge spanning non-associative, associative, and complex forms as modern learning theories (A.1), with habituation and conditioning as major issues (A.2), and motor (B), perceptual (C), and conceptual (D) learning as distinct domains."
     },
     {
       "articleTitle": "Human behavior",
       "relevantPathsAI": [
         "A",
-        "A.2",
-        "G"
+        "B"
       ],
-      "rationaleAI": "Covers cognitive behavior including learning, memory, and decision-making as a domain (A, A.2), and addresses the higher thought processes through deliberation and reasoning (G)."
+      "rationaleAI": "Full range of human responses shaped by psychological and cultural factors, encompassing learning theories (A) and psychomotor behavior (B)."
     },
     {
       "articleTitle": "Literacy",
       "relevantPathsAI": [
-        "G.2",
-        "D"
+        "C",
+        "G.2"
       ],
-      "rationaleAI": "Literacy is directly related to the role of language in higher thought processes (G.2) and to conceptual learning and concept formation (D), as reading comprehension involves both symbolic processing and concept acquisition."
+      "rationaleAI": "Ability to read and write as a form of perceptual learning (C) and the role of literacy in the relationship between language and higher thought processes (G.2)."
     },
     {
       "articleTitle": "Communication",
@@ -74,7 +69,7 @@
         "G.2",
         "G.3"
       ],
-      "rationaleAI": "Covers transmission of meaning through coded messages (G.3) and the role of verbal and non-verbal language in human communication (G.2)."
+      "rationaleAI": "Transmission of meaning through coded messages, relevant to the role of language in higher thought processes (G.2) and the study of meaning in communication (G.3)."
     },
     {
       "articleTitle": "Language",
@@ -82,98 +77,90 @@
         "G.2",
         "G.3"
       ],
-      "rationaleAI": "Directly addresses the role of language in cognition (G.2), including acquisition, semantics, and the connections between linguistic structure and thought via Broca/Wernicke areas; covers meaning (G.3) through semantic and philosophical treatment."
+      "rationaleAI": "Structured system of grammar and vocabulary serving as the primary medium for conceptual thought, directly addressing the role of language in higher thought processes (G.2) and semantic meaning (G.3)."
     },
     {
       "articleTitle": "Reason",
       "relevantPathsAI": [
         "G",
-        "G.1",
-        "A.2"
+        "G.1"
       ],
-      "rationaleAI": "Directly covers the higher thought processes including deductive, inductive, abductive, and analogical reasoning (G, G.1), and addresses major theoretical issues in cognition such as biases, fallacies, and the neural basis of reasoning (A.2)."
+      "rationaleAI": "Cognitive capacity for deductive, inductive, and analogical reasoning, constituting a core dimension of the higher thought processes (G.1)."
     },
     {
       "articleTitle": "Epistemology",
       "relevantPathsAI": [
         "G.1",
-        "G.3",
-        "A.2"
+        "G.3"
       ],
-      "rationaleAI": "Epistemology addresses the nature of knowledge and the sources of belief including perception, memory, and reason (G.1, A.2), and treats meaning, justification, and truth as central concepts (G.3)."
+      "rationaleAI": "Study of knowledge including belief, truth, and justification, relevant to the psychology of higher thought processes (G.1) and theories of meaning (G.3)."
     },
     {
       "articleTitle": "Psychology",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
-        "G",
-        "G.1",
-        "E"
+        "E",
+        "G"
       ],
-      "rationaleAI": "As the parent discipline, psychology covers all major learning theories including behaviorism, cognitive, and social schools (A, A.1, A.2), the higher thought processes via cognitive psychology (G, G.1), and memory as a core research area (E)."
+      "rationaleAI": "Scientific study of cognition, learning, and behavior covering learning theories (A), memory processes (E), and higher cognitive functions (G)."
     },
     {
       "articleTitle": "Sigmund Freud",
       "relevantPathsAI": [
         "A.1",
-        "A.2",
-        "G.1"
+        "F"
       ],
-      "rationaleAI": "Freud psychoanalytic theory contributed associationist and unconscious-process accounts relevant to modern learning theories (A.1, A.2), and his work on the unconscious and dream interpretation bears on the psychology of higher thought processes (G.1)."
+      "rationaleAI": "Psychoanalytic theory as a modern learning theory involving unconscious processes (A.1), and repression and free association as mechanisms relevant to abnormalities of memory (F)."
     },
     {
       "articleTitle": "Adolescence",
       "relevantPathsAI": [
-        "A.2",
         "D",
         "G.1"
       ],
-      "rationaleAI": "Covers cognitive gains in abstract and hypothetical reasoning and metacognition during adolescence (G.1), which constitute major developmental issues in learning theory (A.2)."
+      "rationaleAI": "Development of abstract and hypothetical reasoning during adolescence as conceptual learning and concept formation (D), and metacognition as a higher thought process (G.1)."
     },
     {
       "articleTitle": "Child",
       "relevantPathsAI": [
-        "A.2",
+        "A",
         "B",
+        "C",
         "D"
       ],
-      "rationaleAI": "Child developmental stages involve progressive cognitive maturation central to major issues in learning theories (A.2), including motor skill acquisition (B) and concept formation across early, middle, and late childhood (D)."
+      "rationaleAI": "Progressive cognitive, physical, and social maturation involving learning theories (A), motor skill development (B), perceptual learning (C), and concept formation (D)."
     },
     {
       "articleTitle": "Knowledge",
       "relevantPathsAI": [
         "G.1",
-        "G.3",
-        "A.2"
+        "G.3"
       ],
-      "rationaleAI": "Knowledge covers propositional and practical knowing, its sources (perception, memory, inference), and its philosophical analysis (G.1, G.3), directly relevant to the psychology of higher thought processes."
+      "rationaleAI": "Awareness of facts, familiarity, and practical skill, with epistemological analysis of justified belief relevant to higher thought processes (G.1) and meaning (G.3)."
     },
     {
       "articleTitle": "Truth",
       "relevantPathsAI": [
         "G.3"
       ],
-      "rationaleAI": "Truth theories — correspondence, coherence, pragmatism, semantic — directly concern meaning (G.3) as a component of the higher thought processes."
+      "rationaleAI": "Correspondence, coherence, and pragmatic theories of truth directly address the problem of meaning in cognitive processes (G.3)."
     },
     {
       "articleTitle": "Oral tradition",
       "relevantPathsAI": [
-        "A.3",
         "E"
       ],
-      "rationaleAI": "Oral tradition addresses the transmission and retention of learned cultural content across generations without writing (E, A.3), relevant to retention and transfer of learning."
+      "rationaleAI": "Transmission of knowledge through memorization and performance, relying on specialized memory retention techniques relevant to memory and retention of learned content (E)."
     },
     {
       "articleTitle": "Meditation",
       "relevantPathsAI": [
         "C",
-        "G.1"
+        "E"
       ],
-      "rationaleAI": "Meditation trains sustained attention and metacognitive monitoring directly relevant to perceptual learning (C) and the psychology of higher thought processes (G.1)."
+      "rationaleAI": "Contemplative practice training sustained attention and metacognitive monitoring, relevant to perceptual learning (C) and memory enhancement through focused awareness (E)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

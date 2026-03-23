@@ -5,36 +5,43 @@
       "articleTitle": "Psychology",
       "relevantPathsAI": [
         "A",
-        "B.1",
-        "C",
-        "C.1"
+        "B",
+        "C"
       ],
-      "rationaleAI": "Psychology as a discipline directly addresses theories of attention (A, A.2), sensation and the senses in general (B.1), and perception including Gestalt and behaviourist frameworks (C, C.1). Covers the full range of environmental influence on behaviour studied in this section."
+      "rationaleAI": "Scientific study of mind and behavior, directly encompassing attention (A), sensation and perception (B, C), and the various schools (behaviorist, cognitive) that shaped theories of attention and perception."
     },
     {
       "articleTitle": "Ear",
       "relevantPathsAI": [
         "B.3",
+        "B.3.a",
+        "B.3.b",
+        "B.3.d",
         "B.6"
       ],
-      "rationaleAI": "The ear article details the anatomy and physiology of auditory transduction through the outer, middle, and inner ear (B.3), and the vestibular role of the semicircular canals and otolith organs in maintaining equilibrium (B.6). Directly addresses the mechanisms outlined at B.3.a-c and B.6."
+      "rationaleAI": "Anatomy and function of the outer, middle, and inner ear, covering sound transduction via cochlear hair cells (B.3.a, B.3.b) and semicircular canals for vestibular balance (B.3.d, B.6)."
     },
     {
       "articleTitle": "Sense",
       "relevantPathsAI": [
+        "B",
         "B.1",
-        "B"
+        "B.4",
+        "B.5",
+        "B.6",
+        "B.7",
+        "B.8"
       ],
-      "rationaleAI": "Sense covers biological systems for sensation — mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors — and lists modalities including proprioception, nociception, vestibular sense, and interoception, directly addressing B.1 (the senses in general) and providing broad context for the entire B section."
+      "rationaleAI": "Comprehensive coverage of sensory modalities including mechanoreceptors, photoreceptors, chemoreceptors, thermoreceptors (B.1), proprioception (B.5), vestibular sense (B.6), and additional modalities beyond the classical five senses (B.4, B.7, B.8)."
     },
     {
       "articleTitle": "Consciousness",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "C"
+        "C",
+        "G.2"
       ],
-      "rationaleAI": "Consciousness covers wakefulness, self-awareness, and subjective experience, engaging directly with the problem of defining awareness (A.1) and with how perceptual processing gives rise to conscious experience (C). The global workspace and attention schema theories are directly relevant to A.5-A.6."
+      "rationaleAI": "Awareness of internal and external events (A), subjective experience and its neural correlates relevant to perceptual processing (C), and altered states of consciousness bordering on hallucinatory phenomena (G.2)."
     },
     {
       "articleTitle": "Color",
@@ -42,10 +49,9 @@
         "B.2",
         "B.2.a",
         "B.2.b",
-        "B.2.c",
-        "C.3.c"
+        "B.2.c"
       ],
-      "rationaleAI": "Color is a visual perception phenomenon grounded in cone cell activation in the retina (B.2.a), psychophysical transduction of light into neural signals (B.2.b), and perceptual processes including color constancy — the tendency to perceive stable hues despite changing illumination — which maps to B.2.c and C.3.c."
+      "rationaleAI": "Visual perception arising from cone cell activation in the retina (B.2.a), transduction of light into neural signals (B.2.b), and perceptual processes including trichromacy, color mixing, and metamerism (B.2.c)."
     },
     {
       "articleTitle": "Eye",
@@ -53,9 +59,9 @@
         "B.2",
         "B.2.a",
         "B.2.b",
-        "B.2.d"
+        "B.2.c"
       ],
-      "rationaleAI": "The eye article directly covers the retina and photoreceptor cells (B.2.a), the transduction of light into electrochemical neural signals (B.2.b), and non-visual retinal projections to brain structures (B.2.d), matching the outline's treatment of the visual apparatus from photoreception through cortical processing."
+      "rationaleAI": "The sensory organ for photoreception, covering retinal photoreceptor cells (B.2.a), transduction of light to neural signals (B.2.b), and visual acuity and color perception via cone and rod photoreceptors (B.2.c)."
     },
     {
       "articleTitle": "Sound",
@@ -64,49 +70,47 @@
         "B.3.a",
         "B.3.b"
       ],
-      "rationaleAI": "Sound covers the physical wave description (frequency, amplitude) and the psychoacoustic perception of pitch, loudness, timbre, and spatial location, directly corresponding to B.3.a (transmission through the ear) and B.3.b (encoding and processing of pitch, loudness, localization, and duration in the auditory pathways)."
+      "rationaleAI": "Mechanical wave phenomenon covering frequency, amplitude, and speed as physical properties (B.3.a) and psychoacoustic perception of pitch, loudness, timbre, and spatial location (B.3.b)."
     },
     {
       "articleTitle": "Brain",
       "relevantPathsAI": [
         "A.5",
         "B.2.d",
-        "B.3.b",
-        "C"
+        "B.3.b"
       ],
-      "rationaleAI": "The brain article covers the physiological mechanisms of attention via prefrontal cortex and subcortical structures (A.5), responses of the cerebral cortex to visual stimuli (B.2.d), auditory pathways of the CNS (B.3.b), and the neural basis of perceptual processing broadly (C)."
+      "rationaleAI": "Central organ of nervous system responsible for sensory integration, including physiological mechanisms of attention (A.5), cerebral cortex responses to visual stimuli (B.2.d), and auditory pathway processing in the central nervous system (B.3.b)."
     },
     {
       "articleTitle": "Mental disorder",
       "relevantPathsAI": [
         "G.2",
-        "G.2.a"
+        "G.2.a",
+        "G.2.b"
       ],
-      "rationaleAI": "Mental disorder encompasses psychotic and other conditions involving hallucinations — a core topic at G.2 — and neurological factors underlying hallucinatory experience (G.2.a). Psychotic disorders, PTSD, and dissociative conditions all produce the hallucinatory and illusory experiences treated in section G."
+      "rationaleAI": "Clinically significant disturbances in cognition and perception, including neurobiological factors in hallucinations (G.2.a) and types of hallucinatory experience arising from psychotic and neurodevelopmental disorders (G.2.b)."
     },
     {
       "articleTitle": "Sigmund Freud",
       "relevantPathsAI": [
-        "A.2",
         "A.4",
-        "C.1"
+        "C.4"
       ],
-      "rationaleAI": "Freud's stimulus-response and psychoanalytic frameworks directly contributed to the development of theories of attention (A.2), and unconscious influences are listed as determinants of attention (A.4). His theoretical contributions also shaped early perception theories discussed at C.1."
+      "rationaleAI": "Psychoanalytic theory of unconscious influences on attention (A.4) and individual differences in perceptual functioning shaped by personality, drives, and unconscious processes (C.4)."
     },
     {
       "articleTitle": "Animation",
       "relevantPathsAI": [
-        "F",
         "F.1"
       ],
-      "rationaleAI": "Animation creates the illusion of motion through sequential display of images, exploiting the visual mechanisms for perceiving motion that are the subject of F.1 (visual cues for perceiving self-motion and motion of objects). As one of the few candidates touching outline path F, it provides coverage of an otherwise unaddressed priority path."
+      "rationaleAI": "Filmmaking technique creating the illusion of motion through sequential display of images, directly illustrating visual cues for perceiving movement (F.1)."
     },
     {
       "articleTitle": "Information",
       "relevantPathsAI": [
         "A.6"
       ],
-      "rationaleAI": "Information theory (Shannon's quantification in bits) is explicitly named in the outline at A.6 as the framework for analysing attentive phenomena, making this article a direct fit for that specific and otherwise uncovered path."
+      "rationaleAI": "Information theory (Shannon) quantifies information in bits inversely proportional to event probability, directly applicable to the analysis of attentive phenomena in terms of information theory (A.6)."
     },
     {
       "articleTitle": "Human behavior",
@@ -114,9 +118,9 @@
         "A",
         "C"
       ],
-      "rationaleAI": "Human behavior covers the full range of behavioral responses to internal and external stimuli, including cognitive behavior and perception, providing broad contextual coverage for attention (A) and perceptual processes (C) as they shape observable behavior."
+      "rationaleAI": "Full range of human responses to internal and external stimuli, encompassing attention to the environment (A) and cognitive behavior including perception and decision-making (C)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }
