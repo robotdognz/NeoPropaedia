@@ -5,71 +5,78 @@
       "articleTitle": "Napoleon",
       "relevantPathsAI": [
         "A.1.b",
-        "A.1.c"
+        "A.1.b.iii",
+        "A.1.b.iv",
+        "A.1.c",
+        "A.1.c.i",
+        "A.1.c.ii",
+        "A.1.c.iii",
+        "A.1.c.iv",
+        "A.1.c.v",
+        "A.1.d"
       ],
-      "rationaleAI": "Napoleon Bonaparte is the central figure of outline paths A.1.b–c, covering the French First Republic, Consulate, and First Empire, the Napoleonic Code, the Continental System, and the campaigns of the multiple coalitions through Waterloo and the Congress of Vienna. His domestic reforms (A.1.b.iv) and the entire sequence of international wars (A.1.c.i–v) are inseparable from his biography."
+      "rationaleAI": "Napoleon's rise from First Consul to Emperor, the Napoleonic Code, Concordat with the Church, and administrative centralization directly cover France from 1789 to 1815 (A.1.b.iii, A.1.b.iv). His campaigns at Austerlitz, Jena, Wagram, the Russian campaign, Leipzig, and Waterloo map to the coalitions and international war (A.1.c.i–v). His reshaping of German, Italian, Swiss, and Low Countries political structures covers effects of French occupation (A.1.d)."
     },
     {
       "articleTitle": "George Washington",
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "The outline opens at A.1.a with the 'climate of change' including 'patriotism in America' (1770–90), and Washington's leadership of the American Revolution and presidency directly exemplifies the transatlantic democratic ferment that preceded and influenced the French Revolution."
+      "rationaleAI": "Washington's leadership in the American Revolution represents the 'patriotism' in America (A.1.a) that formed part of the climate of change preceding the French Revolution."
     },
     {
       "articleTitle": "World War I",
       "relevantPathsAI": [
         "B.2.d",
-        "B.3.a",
-        "B.3.b",
-        "B.3.c",
-        "B.3.d",
-        "B.3.e",
-        "B.3.f",
-        "B.3.k"
+        "B.2.d.i",
+        "B.2.d.ii",
+        "B.2.d.iii",
+        "B.2.d.iv",
+        "B.2.d.v",
+        "B.2.d.vi"
       ],
-      "rationaleAI": "World War I is the culminating event of section 963, treated in detail across B.2.d (causes, campaigns, armistice, peace settlement) and the individual state histories B.3.a–k. The article covers all major outline sub-topics including trench warfare, US entry, the Russian Revolution, armistice, and the Treaty of Versailles."
+      "rationaleAI": "Covers the Serbian crisis, general mobilization, trench warfare, new military technology, entry of other nations, the Eastern and Western Fronts, submarine warfare, US entry, Russian Revolution, armistice, and the Paris Peace Conference and Treaty of Versailles (B.2.d.i–vi)."
     },
     {
       "articleTitle": "American Revolution",
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "The American Revolution is explicitly cited in path A.1.a as the 'patriotism in America' precedent (1770–90) that formed part of the climate of change preceding the French Revolution, and the article covers colonial grievances, Enlightenment ideology, and the war itself."
+      "rationaleAI": "The American Revolution (1765–1783) directly represents the 'patriotism' in America that contributed to the climate of change preceding the French Revolution (A.1.a)."
     },
     {
       "articleTitle": "Ottoman Empire",
       "relevantPathsAI": [
-        "B.2.b",
-        "B.2.d",
-        "B.3.k"
+        "B.3.k",
+        "A.2.s"
       ],
-      "rationaleAI": "The Ottoman Empire is directly relevant to B.3.k (the Balkan states and their conflicts with Ottoman power), B.2.b.ii (the Russo-Turkish War of 1877–78 and Congress of Berlin), and B.2.d.ii (Ottoman entry into WWI and campaigns in the Balkans and Middle East)."
+      "rationaleAI": "The Ottoman Empire's Tanzimat reforms, Young Turk Revolution, World War I participation, and dissolution connect to the Balkan states' emergence from Ottoman control (A.2.s, B.3.k) and the broader reconfiguration of southeastern Europe."
     },
     {
       "articleTitle": "Karl Marx",
       "relevantPathsAI": [
-        "A.2.e",
-        "B.1.a",
-        "B.1.b"
+        "B.1.a"
       ],
-      "rationaleAI": "Marx is a central figure in the pan-European intellectual and political thought of the period: his materialist philosophy and class-struggle framework align with B.1.a (prevalence of Determinism and Materialism) and B.1.b (developments in arts, philosophy), while his Communist Manifesto (1848) and First International connect to socialist movements referenced in A.2 and B.3 state histories."
+      "rationaleAI": "Marx's historical materialism, class struggle theory, and Communist Manifesto represent the prevalence of Determinism and Materialism in philosophy and political and social thought from 1850 to 1920 (B.1.a)."
     },
     {
       "articleTitle": "Italy",
       "relevantPathsAI": [
+        "A.1.l",
         "A.2.m",
-        "B.2.a",
+        "B.2.a.ii",
         "B.3.f"
       ],
-      "rationaleAI": "Italy's Risorgimento, unification under Cavour and Garibaldi, the Kingdom of Italy, and WWI participation are the exact subject matter of outline paths A.2.m (Italian states 1815–50), B.2.a.ii (the Italian War of Independence and Kingdom of Italy), and B.3.f (Italy 1850–1920) including the Triple Alliance and colonial expansion."
+      "rationaleAI": "Italy's history during this period spans the French Revolutionary era republics (A.1.l), the Risorgimento and revolutionary movements (A.2.m), the Italian War of Independence and Kingdom establishment (B.2.a.ii), and the unified Kingdom's domestic and foreign policies through World War I (B.3.f)."
     },
     {
       "articleTitle": "Scramble for Africa",
       "relevantPathsAI": [
-        "B.2.c"
+        "B.2.c",
+        "B.2.c.i",
+        "B.2.c.ii"
       ],
-      "rationaleAI": "The Scramble for Africa (c. 1880–1914) directly corresponds to outline B.2.c on the resurgence of European imperialism, covering renewed overseas expansion, the partitioning of Africa at the Berlin Conference, and new colonial powers and theories of imperialism."
+      "rationaleAI": "The rapid European partition of Africa (1880–1914), the Berlin Conference, and colonial administration directly map to the resurgence of European imperialism, new theories of imperialism, and the partitioning of Africa (B.2.c.i–ii)."
     },
     {
       "articleTitle": "Russia",
@@ -78,7 +85,7 @@
         "A.2.o",
         "B.3.e"
       ],
-      "rationaleAI": "Russia under Alexander I (A.1.f), the Decembrist revolt and Nicholas I (A.2.o), and the full arc from Crimean War defeat through abolition of serfdom, revolutionary movements, Russo-Japanese War, and 1917 revolution (B.3.e.i–iv) are core outline content."
+      "rationaleAI": "Russia under Alexander I and the Napoleonic Wars (A.1.f), Nicholas I's conservative policies and the Decembrist revolt (A.2.o), and the Russian Empire from the Crimean War through the 1917 revolution (B.3.e) are all directly covered."
     },
     {
       "articleTitle": "France",
@@ -87,33 +94,29 @@
         "A.2.j",
         "B.3.b"
       ],
-      "rationaleAI": "France is the central subject of the section's A division (the Revolution, First Republic, Napoleonic Empire) and A.2.j (the Restoration through Second Republic), and B.3.b (Second Empire and Third Republic through WWI), covering all major milestones from 1789 to 1920."
+      "rationaleAI": "France's history from the Revolution through Napoleon (A.1.b), the Restoration, July Monarchy, and Second Republic (A.2.j), and the Second Empire and Third Republic through World War I (B.3.b) comprehensively spans this section."
     },
     {
       "articleTitle": "Age of Enlightenment",
       "relevantPathsAI": [
-        "A.1.a",
-        "A.2.e",
-        "A.2.c"
+        "A.1.a"
       ],
-      "rationaleAI": "The Enlightenment forms the intellectual backdrop to the French Revolution (A.1.a climate of change) and is directly referenced in A.2.e (philosophy: Kant, Fichte, Hegel, Schopenhauer) and A.2.c (the Romantic movement as a reaction to Enlightenment rationalism)."
+      "rationaleAI": "Enlightenment political theory — liberty, constitutional government, natural rights — formed the intellectual climate of change preceding the French Revolution (A.1.a) and influenced revolutionary ideology."
     },
     {
       "articleTitle": "Voltaire",
       "relevantPathsAI": [
-        "A.1.a",
-        "A.2.e",
-        "A.2.f"
+        "A.1.a"
       ],
-      "rationaleAI": "Voltaire's advocacy for reason, religious toleration, and civil liberties catalyzed the intellectual climate of the French Revolution (A.1.a), and his role as an Enlightenment philosopher connects to the philosophical developments in A.2.e and the religious alternatives discussed in A.2.f."
+      "rationaleAI": "Voltaire's advocacy for civil liberties, religious toleration, and reason catalyzed the intellectual climate preceding the French Revolution (A.1.a), introducing English constitutionalism to France."
     },
     {
       "articleTitle": "Holy Roman Empire",
       "relevantPathsAI": [
-        "A.1.c",
-        "A.1"
+        "A.1.c.ii",
+        "A.1.i"
       ],
-      "rationaleAI": "The formal dissolution of the Holy Roman Empire in 1806 under Napoleonic pressure is explicitly cited in A.1.c.ii, and the smaller German states under French influence as the Confederation of the Rhine is covered in A.1.i, making this article directly relevant to the section's opening period."
+      "rationaleAI": "The formal end of the Holy Roman Empire in 1806 through Napoleon's reorganization of the German states is directly covered (A.1.c.ii), and the Confederation of the Rhine replacing the smaller German states under French influence (A.1.i)."
     },
     {
       "articleTitle": "British Empire",
@@ -121,25 +124,24 @@
         "B.2.c",
         "B.3.a"
       ],
-      "rationaleAI": "The British Empire is substantively covered in outline paths B.2.c (European imperialism and partitioning of Africa) and B.3.a (Great Britain's mid-Victorian politics, Gladstone/Disraeli, Irish Question, South African War, and WWI participation from 1850–1920)."
+      "rationaleAI": "The British Empire's expansion during the Scramble for Africa and Pax Britannica connects to European imperialist expansion (B.2.c), and Great Britain's domestic and overseas developments from 1850 to 1920 (B.3.a) including the South African War and World War I."
     },
     {
       "articleTitle": "French Revolution",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
         "A.1.b",
-        "A.1.c",
+        "A.1.b.i",
+        "A.1.b.ii",
         "A.2.b"
       ],
-      "rationaleAI": "The French Revolution is the foundational topic of the entire A.1 division, with the article covering the Ancien Régime's collapse, Constituent Assembly, First Republic, Reign of Terror, Thermidorian reaction, and Napoleon's Consulate — all mapped exactly to A.1.b.i–iii and A.1.c, and its legacy addressed in A.2.b."
+      "rationaleAI": "The Revolution's progression from the Third Estate revolt through the Convention, Terror, Thermidorian reaction, and Directory directly maps to A.1.b.i–ii. The legacy of the Revolution — cultural nationalism and populism — covers A.2.b."
     },
     {
       "articleTitle": "John Locke",
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "Locke's social contract theory and natural rights philosophy were foundational to the Enlightenment liberalism that generated the 'climate of change' in America and the Netherlands (A.1.a) preceding the French Revolution, though his dates predate the section's core period."
+      "rationaleAI": "Locke's natural rights philosophy, government by consent, and right of revolution directly influenced the intellectual climate of 'patriotism' in America that preceded the French Revolution (A.1.a)."
     },
     {
       "articleTitle": "Leo Tolstoy",
@@ -147,31 +149,29 @@
         "B.1.b",
         "B.3.e"
       ],
-      "rationaleAI": "Tolstoy's literary and moral work spans the period B.1.b (developments in arts and philosophy) and his setting in 19th-century Russia connects to B.3.e (Russian Empire 1850–1917); War and Peace directly depicts the Napoleonic era that opens section 963."
+      "rationaleAI": "Tolstoy's literary works (War and Peace, Anna Karenina) and moral philosophy represent developments in arts, philosophy, and religion from 1850–1920 (B.1.b), while his depiction of Russian society connects to the Russian Empire's cultural and social developments (B.3.e.iii)."
     },
     {
       "articleTitle": "Poland",
       "relevantPathsAI": [
-        "A.2.o",
-        "B.3.e"
+        "A.2.o.ii",
+        "B.3.e.i"
       ],
-      "rationaleAI": "Poland features in the section through the partitions (relevant to the Vienna settlement context), the Polish rebellion of 1863 cited in B.3.e.i under Alexander II's Russia, and the broader context of nationalist movements within the Austrian and Russian empires addressed in A.2.l and B.3.d."
+      "rationaleAI": "Poland's conflict with Russia and the 1863 rebellion connect to Russian foreign policy regarding Poland (A.2.o.ii) and the spread of revolutionary sentiment under Alexander II (B.3.e.i)."
     },
     {
       "articleTitle": "Ludwig van Beethoven",
       "relevantPathsAI": [
-        "A.2.c",
-        "B.1.b"
+        "A.2.c"
       ],
-      "rationaleAI": "Beethoven (1770–1827) is the paradigmatic figure of the Romantic movement in music (A.2.c) with his heroic middle period contemporaneous with the Napoleonic era; his later work connects to the broader developments in arts across the section's period (B.1.b)."
+      "rationaleAI": "Beethoven's career bridging Classical and Romantic styles, his emotional intensity and expanded formal scale, directly exemplifies the Romantic movement's individualism contrasted with the Enlightenment (A.2.c)."
     },
     {
       "articleTitle": "Sigmund Freud",
       "relevantPathsAI": [
-        "B.1.c",
-        "B.1.b"
+        "B.1.c"
       ],
-      "rationaleAI": "Freud's development of psychoanalysis in Vienna from the 1880s–1900s connects to B.1.c (development of the behavioral sciences, new scientific theories) and B.1.b (philosophical developments in the period), placing him within the European intellectual life of 1850–1920."
+      "rationaleAI": "Freud's development of psychoanalysis as a behavioral science, his theories of the unconscious and psychosexual development, represent the development of behavioral sciences and new views (B.1.c)."
     },
     {
       "articleTitle": "United Kingdom",
@@ -180,23 +180,24 @@
         "A.2.i",
         "B.3.a"
       ],
-      "rationaleAI": "The United Kingdom is covered across A.1.e (Britain 1789–1815, Pitt, the war with France), A.2.i (political and social reforms 1815–50, the Great Famine, Chartism), and B.3.a (mid-Victorian politics through WWI participation), encompassing the full 1789–1920 scope."
+      "rationaleAI": "The UK's history covers the influence of the French Revolution and Pitt's ministries (A.1.e), political and social reforms from 1815–1850 (A.2.i), and mid-Victorian through World War I developments including liberalism, imperialism, and the Irish Question (B.3.a)."
     },
     {
       "articleTitle": "Imperialism",
       "relevantPathsAI": [
-        "B.2.c"
+        "B.2.c",
+        "B.2.c.i"
       ],
-      "rationaleAI": "Imperialism as a theoretical and historical concept maps directly to B.2.c (resurgence of European imperialism c. 1875–1914) covering new theories of imperialism, colonial expansion, and the European penetration of Asia and partitioning of Africa."
+      "rationaleAI": "Theoretical frameworks of imperialism — including economic imperialism and Social Darwinism — directly correspond to renewed interest in overseas expansion and new theories of imperialism (B.2.c.i)."
     },
     {
       "articleTitle": "Spain",
       "relevantPathsAI": [
         "A.1.j",
-        "A.2.q",
+        "A.2.q.i",
         "B.3.h"
       ],
-      "rationaleAI": "Spain under Charles IV, French occupation and the Peninsular War (A.1.j.i), the Carlist Wars and First Republic (A.2.q.i), and continued civil strife, Spanish-American War loss, and WWI neutrality (B.3.h) place Spain squarely within the section's narrative across all three chronological divisions."
+      "rationaleAI": "Spain under Charles IV and the Peninsular War (A.1.j), Ferdinand VII and Isabella II's succession disputes (A.2.q.i), and continued civil strife, the First Republic, and colonial losses through the Spanish-American War (B.3.h)."
     },
     {
       "articleTitle": "Europe",
@@ -204,113 +205,116 @@
         "A",
         "B"
       ],
-      "rationaleAI": "Europe as a continental overview covers the entire political, cultural, and economic history addressed in the section, from the French Revolution through WWI, the Congress of Vienna, and European nationalism — serving as a broad parent entry for the section as a whole."
+      "rationaleAI": "A broad survey of European history covering the French Revolution, industrialization, two World Wars, and Cold War, which spans the entire section's treatment of European political and economic revolution (A) and realism, nationalism, and imperialist expansion (B)."
     },
     {
       "articleTitle": "Early modern period",
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "The early modern period (c. 1500–1800) provides the immediate historical context for the section's opening, ending precisely at the French Revolution and Industrial Revolution onset; it covers the Enlightenment and state formation that fed into the 1789 changes addressed in A.1.a."
+      "rationaleAI": "The early modern period's endpoint — the French Revolution and Industrial Revolution onset — directly intersects with the climate of change preceding the French Revolution (A.1.a)."
     },
     {
       "articleTitle": "Catherine the Great",
       "relevantPathsAI": [
         "A.1.f"
       ],
-      "rationaleAI": "Catherine II (d. 1796) directly precedes the section's coverage of Russia under Paul I and Alexander I (A.1.f), and her policies of Enlightened absolutism, partition of Poland, and Russo-Turkish Wars set the immediate context for Russian participation in the Napoleonic Wars."
+      "rationaleAI": "Catherine II's reign ended in 1796, immediately preceding Paul I and Alexander I. Her Enlightenment engagement and imperial expansion provide context for Russia's participation in the Napoleonic Wars (A.1.f)."
     },
     {
       "articleTitle": "Florence Nightingale",
       "relevantPathsAI": [
-        "B.3.e"
+        "B.3.a.i",
+        "B.3.e.i"
       ],
-      "rationaleAI": "Nightingale's work during the Crimean War (1853–56) places her within the period covered by B.3.e.i (Russia's defeat in the Crimean War and Alexander II's reforms), though she is primarily a British social reformer rather than a direct subject of European political history."
+      "rationaleAI": "Nightingale's pioneering nursing during the Crimean War (1853–1856) connects to mid-Victorian Britain's involvement in the Crimean War (B.3.a.i) and Russia's defeat in that war (B.3.e.i)."
     },
     {
       "articleTitle": "Atlantic slave trade",
       "relevantPathsAI": [
-        "A.2.i"
+        "A.2.i.ii"
       ],
-      "rationaleAI": "The abolition of slavery in British colonies (1833) is explicitly cited in A.2.i.ii among British political and social reform measures, making the Atlantic slave trade relevant as background to the abolitionist reform movement in Britain during 1815–50."
+      "rationaleAI": "The abolition of slavery in British colonies (1833) as part of the political and social reform measures of 1822–1848 (A.2.i.ii) connects to the broader Atlantic slave trade and its ending."
     },
     {
       "articleTitle": "Pablo Picasso",
       "relevantPathsAI": [
         "B.1.b"
       ],
-      "rationaleAI": "Picasso (1881–1973) began his career in the section's period and co-founded Cubism in Paris by 1907–08; his early periods (Blue, Rose, African-influenced, Cubist) fall within B.1.b (developments in the arts c. 1850–1920), though most of his major works postdate 1920."
+      "rationaleAI": "Picasso's co-founding of Cubism and modernist innovations represent developments in the arts from 1850 to 1920 (B.1.b)."
     },
     {
       "articleTitle": "George Washington",
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "Already noted above — Washington exemplifies the American democratic movement cited in A.1.a as a precursor to the French Revolution."
+      "rationaleAI": "Washington's leadership in the American Revolution represents the 'patriotism' in America (A.1.a) that formed part of the climate of change preceding the French Revolution."
     },
     {
       "articleTitle": "Spanish Empire",
       "relevantPathsAI": [
-        "A.1.j",
-        "A.2.q"
+        "A.2.q.i",
+        "B.3.h.i"
       ],
-      "rationaleAI": "The Spanish Empire's Bourbon reforms, the Peninsular War (A.1.j.i), loss of South American empire in the 1820s (A.2.q.i), and the Spanish-American War loss of 1898 (B.3.h.i) are all outlined in the section's coverage of Spain from 1789 to 1920."
+      "rationaleAI": "Spain's loss of its South American empire in the 1820s (A.2.q.i) and further colonial losses in the Spanish-American War of 1898 (B.3.h.i) trace the decline of the Spanish Empire within this period."
     },
     {
       "articleTitle": "Ottoman Empire",
       "relevantPathsAI": [
-        "B.2.b",
-        "B.2.d",
-        "B.3.k"
+        "B.3.k",
+        "A.2.s"
       ],
-      "rationaleAI": "Already noted — Ottoman Empire is directly relevant to Balkan history and WWI."
+      "rationaleAI": "The Ottoman Empire's Tanzimat reforms, Young Turk Revolution, World War I participation, and dissolution connect to the Balkan states' emergence from Ottoman control (A.2.s, B.3.k) and the broader reconfiguration of southeastern Europe."
     },
     {
       "articleTitle": "Scramble for Africa",
       "relevantPathsAI": [
-        "B.2.c"
+        "B.2.c",
+        "B.2.c.i",
+        "B.2.c.ii"
       ],
-      "rationaleAI": "Already noted — directly maps to B.2.c."
+      "rationaleAI": "The rapid European partition of Africa (1880–1914), the Berlin Conference, and colonial administration directly map to the resurgence of European imperialism, new theories of imperialism, and the partitioning of Africa (B.2.c.i–ii)."
     },
     {
       "articleTitle": "Michael Faraday",
       "relevantPathsAI": [
-        "B.1.d",
-        "A.2.d"
+        "A.2.d",
+        "B.1.c"
       ],
-      "rationaleAI": "Faraday's electromagnetic discoveries in the 1830s–1850s are relevant to A.2.d (new facilities for scientific study, effects of technological developments) and B.1.d.iii (revolution in transportation and communications, industrialization on the eve of WWI), as his work underpins electrical technology."
+      "rationaleAI": "Faraday's discovery of electromagnetic induction and electrolysis connects to scientific developments in Continental countries and their effects on society (A.2.d), and the broader scientific developments from 1850–1920 (B.1.c)."
     },
     {
       "articleTitle": "Egypt",
       "relevantPathsAI": [
-        "A.1.c"
+        "A.1.c.ii"
       ],
-      "rationaleAI": "The French expedition to Egypt and Syria (1798–1802) is explicitly cited in outline path A.1.c.ii, making Egypt directly relevant to the Napoleonic campaigns covered in the section."
+      "rationaleAI": "The French expedition to Egypt and Syria (1798–1802) is directly covered under Napoleon's campaigns (A.1.c.ii)."
     },
     {
       "articleTitle": "United States",
       "relevantPathsAI": [
-        "B.2.d"
+        "A.1.a",
+        "B.1.d.i",
+        "B.2.d.iii"
       ],
-      "rationaleAI": "US entry into WWI in 1917 is addressed in outline path B.2.d.iii (German submarine warfare and US entry), and the Paris Peace Conference's Wilson-influenced outcome is covered in B.2.d.vi, making the US relevant within the WWI subsection."
+      "rationaleAI": "The US War of Independence as part of the climate of change (A.1.a), the US as a new area of industrial expansion (B.1.d.i), and US entry into World War I (B.2.d.iii)."
     },
     {
       "articleTitle": "Turkey",
       "relevantPathsAI": [
         "B.3.k"
       ],
-      "rationaleAI": "Turkey as the successor to the Ottoman Empire and the context of Balkan state formation connects to B.3.k (Balkan states 1850–1920) which covers the Balkan Wars and Ottoman separation from Bulgaria; the Young Turk Revolution (1908) also falls within B.3.k's timeframe."
+      "rationaleAI": "Turkey's Ottoman predecessor is covered under the Balkan states, where the Ottoman Empire's interactions with Serbia, Greece, and Bulgaria shaped southeastern European history (B.3.k)."
     },
     {
       "articleTitle": "Poland",
       "relevantPathsAI": [
-        "A.2.o",
-        "A.1.g",
-        "B.3.e"
+        "A.2.o.ii",
+        "B.3.e.i"
       ],
-      "rationaleAI": "Poland is referenced across the section: Stein reforms and Prussian leadership connecting to Polish territories (A.1.g.ii), Russian conflict with Poland (A.2.o.ii), and the Polish rebellion of 1863 under Alexander II (B.3.e.i), making Poland a recurring subject in 963's coverage."
+      "rationaleAI": "Poland's conflict with Russia and the 1863 rebellion connect to Russian foreign policy regarding Poland (A.2.o.ii) and the spread of revolutionary sentiment under Alexander II (B.3.e.i)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

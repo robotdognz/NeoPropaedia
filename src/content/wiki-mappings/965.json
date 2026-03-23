@@ -4,18 +4,22 @@
     {
       "articleTitle": "George Washington",
       "relevantPathsAI": [
-        "A.1",
         "A.1.a",
-        "A.1.b"
+        "A.1.a.ii",
+        "A.1.b",
+        "A.1.b.ii"
       ],
-      "rationaleAI": "Washington is the central figure of A.1.a (American Revolutionary period) and A.1.b (strengthening of the national government), covering the War of Independence (A.1.a.ii), Constitutional Convention (A.1.b.i), and the formation of national policies and political parties during his presidency (A.1.b.ii)."
+      "rationaleAI": "Washington's leadership of the Continental Army and decisive victory at Yorktown cover the War of Independence (A.1.a.ii). His presidency, Constitutional Convention role, and policy precedents map to the strengthening of national government and development of national policies (A.1.b.i–ii)."
     },
     {
       "articleTitle": "American Revolution",
       "relevantPathsAI": [
-        "A.1.a"
+        "A.1.a",
+        "A.1.a.i",
+        "A.1.a.ii",
+        "A.1.a.iii"
       ],
-      "rationaleAI": "The American Revolution directly corresponds to outline A.1.a (American Revolutionary period 1763–87), covering political and economic opposition to British taxation (A.1.a.i), the War of Independence including military leadership and French support (A.1.a.ii), and the Articles of Confederation (A.1.a.iii)."
+      "rationaleAI": "Colonial grievances and the Declaration of Independence (A.1.a.i), the War of Independence with French support (A.1.a.ii), and the Articles of Confederation (A.1.a.iii) are comprehensively covered."
     },
     {
       "articleTitle": "Abraham Lincoln",
@@ -23,47 +27,45 @@
         "A.3",
         "A.3.b",
         "A.3.c",
-        "B.1"
+        "A.3.c.iii"
       ],
-      "rationaleAI": "Lincoln is the central figure of outline A.3 (United States 1850–65), covering secession (A.3.b), the Civil War (A.3.c.i–iii), Emancipation, and Reconstruction policy (B.1.a), making him the most important single figure for these paths."
+      "rationaleAI": "Lincoln's election, the Republican Party's emergence (A.3.b), the Civil War military strategy (A.3.c.i–ii), and the Emancipation Proclamation and moves toward emancipation (A.3.c.iii) are directly covered."
     },
     {
       "articleTitle": "United States",
       "relevantPathsAI": [
         "A",
-        "B",
-        "A.1",
-        "A.2",
-        "A.3",
-        "B.1",
-        "B.2",
-        "B.3"
+        "B"
       ],
-      "rationaleAI": "The United States article broadly covers the entire section's subject matter, from the 1776 Revolution through westward expansion, Civil War, industrialization, and emergence as a world power by 1920, encompassing all major outline divisions A and B."
+      "rationaleAI": "The broad sweep of US history from the Revolution through constitutional republic, westward expansion, the Civil War, industrialization, and World Wars covers national formation (A) and post-1865 development (B)."
     },
     {
       "articleTitle": "Atlantic slave trade",
       "relevantPathsAI": [
-        "A.2.a",
-        "A.3.a",
-        "A.3.c",
-        "B.1"
+        "A.2.a.ii",
+        "A.3.a"
       ],
-      "rationaleAI": "The Atlantic slave trade and abolition movements connect directly to A.2.a.ii (cotton and slavery), A.3.a (the sectionalism and slavery basis of the Civil War), A.3.c.iii (moves toward emancipation), and B.1 (Reconstruction and freedmen)."
+      "rationaleAI": "Plantation labor systems and abolition movements connect to cotton and slavery in American commerce (A.2.a.ii) and the economic and psychological bases of slavery and the Abolitionist movement (A.3.a)."
     },
     {
       "articleTitle": "World War I",
       "relevantPathsAI": [
-        "B.3.c"
+        "B.3.c",
+        "B.3.c.i",
+        "B.3.c.ii",
+        "B.3.c.iii"
       ],
-      "rationaleAI": "US participation in WWI is detailed in outline B.3.c (role of the US in WWI), covering initial neutrality (B.3.c.i), mobilization and decisive effect on the Western Front (B.3.c.ii), and Wilson's Paris Peace Conference policies and Senate rejection of Versailles (B.3.c.iii)."
+      "rationaleAI": "US neutrality and submarine warfare (B.3.c.i), US entry and military mobilization (B.3.c.ii), and Wilson's policies at the Paris Peace Conference and Senate rejection of the Treaty of Versailles (B.3.c.iii) are directly covered."
     },
     {
       "articleTitle": "Imperialism",
       "relevantPathsAI": [
-        "B.3.a"
+        "B.3.a",
+        "B.3.a.i",
+        "B.3.a.ii",
+        "B.3.a.iii"
       ],
-      "rationaleAI": "Imperialism directly corresponds to B.3.a (emergence of the US as an imperial power), covering the Spanish-American War, Open Door policy, Panama Canal Zone acquisition, and the Roosevelt Corollary to the Monroe Doctrine."
+      "rationaleAI": "The emergence of the US as an imperial power through the Spanish-American War, Open Door policy, and Panama Canal Zone acquisition (B.3.a.i–iii) directly represents American imperialism."
     },
     {
       "articleTitle": "Canada",
@@ -71,74 +73,67 @@
         "C",
         "C.1",
         "C.2",
-        "C.3",
-        "C.3.a",
-        "C.3.b",
-        "C.3.c"
+        "C.3"
       ],
-      "rationaleAI": "Canada is the direct subject of outline division C, covering British colonial administration (C.1), social and political development 1790–1850 including French-English dissension (C.2), and the Dominion of Canada from 1867 including Confederation, westward expansion, and Laurier's Liberal governments (C.3)."
+      "rationaleAI": "Canada's British colonial rule, French and English settler conflicts, Confederation (1867), westward expansion, and development under Liberal governments comprehensively covers Canada from 1763 to 1920 (C.1–3)."
     },
     {
       "articleTitle": "Karl Marx",
       "relevantPathsAI": [
-        "A.2.c",
         "B.2.e"
       ],
-      "rationaleAI": "Marx's socialist theory and class analysis relates to the labour movements referenced in A.2.a.ii (early labour movements) and B.2.e (emergence of national labour union organizations, strikes, and collective bargaining), though his primary historical significance is European."
+      "rationaleAI": "Marx's theories of class struggle and labor economics connect to the emergence of national labor union organizations, strikes, and the antilabor stance of government (B.2.e)."
     },
     {
       "articleTitle": "Spain",
       "relevantPathsAI": [
-        "B.3.a"
+        "B.3.a.i"
       ],
-      "rationaleAI": "Spain is directly relevant to B.3.a.i, which cites the Spanish-American War and US acquisition of the Philippines, Hawaii, and Puerto Rico (1898) as the onset of American imperial power."
+      "rationaleAI": "Spain's defeat in the Spanish-American War of 1898 led to US suzerainty over Cuba and acquisition of the Philippines and Puerto Rico (B.3.a.i)."
     },
     {
       "articleTitle": "Mexico",
       "relevantPathsAI": [
         "A.2.d",
-        "B.3.b"
+        "B.3.b.iii"
       ],
-      "rationaleAI": "Mexico is relevant at A.2.d (Mexican War 1846–48 and annexation of California and New Mexico) and B.3.b.iii (Wilson's intervention in Mexican affairs during his first administration), both explicitly cited in the outline."
+      "rationaleAI": "The Mexican War (1846–48) and annexation of California and New Mexico (A.2.d), and Wilson's intervention in Mexican affairs (B.3.b.iii) are directly covered."
     },
     {
       "articleTitle": "Napoleon",
       "relevantPathsAI": [
-        "A.1.b"
+        "A.1.b.iii"
       ],
-      "rationaleAI": "Napoleon's role in the Louisiana Purchase is cited in A.1.b.iii (Jefferson's administration and the Louisiana Purchase, 1803), as Napoleon sold Louisiana to the US to finance his European campaigns."
+      "rationaleAI": "Napoleon's sale of the Louisiana territory to Jefferson in 1803 connects to Jefferson's administration and the Louisiana Purchase (A.1.b.iii)."
     },
     {
       "articleTitle": "British Empire",
       "relevantPathsAI": [
-        "A.1.a",
-        "C",
         "C.1",
-        "C.2"
+        "C.3.c.ii"
       ],
-      "rationaleAI": "The British Empire is relevant to A.1.a (colonial taxation and the War of Independence) and division C (British colonial administration of Canada, Quebec Acts, and Confederation), covering the imperial context of both the US and Canadian histories in the section."
+      "rationaleAI": "British colonial administration of Canada (C.1) and Canada's involvement in Britain's imperialist policies including the South African War (C.3.c.ii) connect to the British Empire's influence."
     },
     {
       "articleTitle": "Rocky Mountains",
       "relevantPathsAI": [
-        "B.2.b",
-        "C.3.b"
+        "B.2.b"
       ],
-      "rationaleAI": "The Rocky Mountains directly relates to B.2.b (development of the West 1865–1900, including gold/silver mining, cattlemen, westward railroad expansion, and Indian wars) and C.3.b (Canadian westward expansion including the transcontinental railroad and Manitoba/British Columbia)."
+      "rationaleAI": "The Rocky Mountains connect to the development of the West (B.2.b), including westward expansion of railroads and settlement patterns."
     },
     {
       "articleTitle": "Age of Enlightenment",
       "relevantPathsAI": [
-        "A.1.a"
+        "A.1.a.i"
       ],
-      "rationaleAI": "Enlightenment political philosophy (Locke, Montesquieu) underpins the ideological foundations of the American Revolution cited in A.1.a.i (political and economic opposition to Britain's taxation policies culminating in the Declaration of Independence), though the article's primary focus is European."
+      "rationaleAI": "Enlightenment liberalism and natural rights theory formed the ideological foundation for political and economic opposition to Britain's taxation policies and the Declaration of Independence (A.1.a.i)."
     },
     {
       "articleTitle": "Philippines",
       "relevantPathsAI": [
-        "B.3.a"
+        "B.3.a.i"
       ],
-      "rationaleAI": "The Philippines is explicitly cited in B.3.a.i as one of the territories acquired by the US following the Spanish-American War (1898), making it directly relevant to the outline's coverage of US imperial expansion."
+      "rationaleAI": "US acquisition of the Philippines in 1898 through the Spanish-American War directly maps to the emergence of the US as an imperial power (B.3.a.i)."
     },
     {
       "articleTitle": "History of North America",
@@ -147,7 +142,7 @@
         "B",
         "C"
       ],
-      "rationaleAI": "The history of North America survey covers pre-Columbian through early 20th-century developments including the American Revolution, westward expansion, Civil War, industrialization, both World Wars' domestic impacts, and Canada's development, spanning the entire section's scope."
+      "rationaleAI": "The broad sweep of North American history from European colonization through the American Revolution, westward expansion, industrialization, and World Wars covers the full scope of this section."
     },
     {
       "articleTitle": "North America",
@@ -156,54 +151,55 @@
         "B",
         "C"
       ],
-      "rationaleAI": "North America as a continental entry covers the geography, Indigenous peoples, European colonization, American Revolution, westward expansion, and Panama Canal referenced across the section, providing broad coverage for all three outline divisions."
+      "rationaleAI": "North America's geography, European colonization, American Revolution, and westward expansion provide broad context for the entire section on US and Canadian development."
     },
     {
       "articleTitle": "France",
       "relevantPathsAI": [
-        "A.1.a"
+        "A.1.a.ii"
       ],
-      "rationaleAI": "France's military support is explicitly cited in A.1.a.ii (French military support in the US War of Independence), making it directly relevant to the Revolutionary period; France's Louisiana sale connects to A.1.b.iii."
+      "rationaleAI": "French military support for the American colonies during the War of Independence (A.1.a.ii) was a decisive factor in the American victory."
     },
     {
       "articleTitle": "Modern era",
       "relevantPathsAI": [
-        "B.2",
-        "B.3"
+        "A",
+        "B"
       ],
-      "rationaleAI": "The modern era article covers industrialization, nationalism, and the emergence of the US as a global power — themes corresponding to B.2 (transformation of American society 1865–1900) and B.3 (imperialism and Progressive Era), though it is highly general and primarily a broad overview rather than a specific resource."
+      "rationaleAI": "The modern era's spread of nationalism, liberalism, and industrialization provides broad context for US national formation (A) and transformation (B)."
     },
     {
       "articleTitle": "Reformation",
       "relevantPathsAI": [
-        "A.1.a"
+        "A.2.c"
       ],
-      "rationaleAI": "The Protestant Reformation's religious legacy indirectly underpins the religious motivations for colonial settlement that precede the section, but its primary connection is to section 964 rather than 965."
+      "rationaleAI": "Protestant religious attitudes and revivals connect to the 'Age of Reform' and diverse religious attitudes of the 1830–50 period (A.2.c)."
     },
     {
       "articleTitle": "China",
       "relevantPathsAI": [
-        "B.3.a"
+        "B.3.a.ii"
       ],
-      "rationaleAI": "China is explicitly referenced in B.3.a.ii (the 'Open Door' policy and armed US intervention in China in 1900), making it directly relevant to the outline's coverage of US imperialism in the Pacific."
+      "rationaleAI": "The 'Open Door' policy and US armed intervention in China (1900) directly covers American foreign policy toward China (B.3.a.ii)."
     },
     {
       "articleTitle": "Human rights",
       "relevantPathsAI": [
-        "A.2.c",
         "A.3.a",
-        "B.1"
+        "B.1.a",
+        "B.1.c"
       ],
-      "rationaleAI": "Human rights themes underpin the Abolitionist movement (A.2.c, A.3.a) and Reconstruction civil rights legislation (B.1.a), as well as the Progressive Era reforms in B.3.b, though the article's primary framing is the post-WWII international rights framework."
+      "rationaleAI": "Human rights principles connect to the Abolitionist movement and slavery debate (A.3.a), freedmen's civil rights under Reconstruction (B.1.a), and Jim Crow legislation and the black response (B.1.c)."
     },
     {
       "articleTitle": "Business",
       "relevantPathsAI": [
-        "B.2.c"
+        "B.2.c",
+        "B.2.c.ii"
       ],
-      "rationaleAI": "Business structures (trusts, holding companies, corporations) are directly relevant to B.2.c.ii (development of trusts and holding companies, legal climate favourable to big business) in the industrialization of the American economy 1865–1900."
+      "rationaleAI": "Business structures including trusts and holding companies connect to the industrialization of the American economy and development of a legal climate favorable to big business (B.2.c.ii)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

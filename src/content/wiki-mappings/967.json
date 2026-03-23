@@ -6,11 +6,9 @@
       "relevantPathsAI": [
         "A",
         "A.2",
-        "A.3",
-        "B",
-        "C"
+        "A.3"
       ],
-      "rationaleAI": "Oceania directly covers the geography, ethnography, and prehistory of Australia, Melanesia, Micronesia, and Polynesia (A.2), European exploration and colonial settlement (A.3), and provides the broad regional context for Australia and New Zealand (B and C)."
+      "rationaleAI": "Oceania's geography including Australia, Melanesia, Micronesia, and Polynesia, Aboriginal and Polynesian settlement, and European exploration and colonization directly cover the character and historical development of the diverse peoples of Oceania (A), geography and ethnography (A.2), and European colonial settlement (A.3)."
     },
     {
       "articleTitle": "Australia",
@@ -21,60 +19,56 @@
         "B.3",
         "B.4"
       ],
-      "rationaleAI": "Australia directly covers the entirety of section B — British colonization of New South Wales from 1788, self-government, economic growth, Federation in 1901, Commonwealth establishment, Labor Party reforms, World War I participation, and relations with the Aboriginal population."
+      "rationaleAI": "Australia's Aboriginal habitation, British colonization from 1788, Federation in 1901, participation in World Wars, and Indigenous land rights comprehensively cover early European exploration (B.1), British colonization and development (B.2), early commonwealth years (B.3), and relations with the Aboriginal population (B.4)."
     },
     {
       "articleTitle": "Age of Discovery",
       "relevantPathsAI": [
-        "A.3"
+        "A.3",
+        "B.1"
       ],
-      "rationaleAI": "The Age of Discovery covers the European maritime exploration that initiated contact with Oceania, directly relevant to A.3's European exploration and colonial settlement of Australia, Melanesia, Micronesia, and Polynesia."
+      "rationaleAI": "European maritime exploration connecting previously isolated world regions covers European exploration and colonial settlement in Oceania (A.3) and early European exploration of Australia by sea and land (B.1)."
     },
     {
       "articleTitle": "Polynesia",
       "relevantPathsAI": [
-        "A.2",
-        "A.3"
+        "A.2"
       ],
-      "rationaleAI": "Polynesia covers the ethnography, prehistory, prehistoric settlement, inter-island histories, and European contact of Polynesian peoples — directly mapping to A.2 (ethnography and prehistory of Polynesia) and A.3 (European exploration and colonial settlement in the Pacific)."
+      "rationaleAI": "Polynesia's Austronesian migration, expert open-ocean navigation, and inter-island political histories directly cover the geography, ethnography, and prehistory of Polynesia (A.2)."
     },
     {
       "articleTitle": "British Empire",
       "relevantPathsAI": [
         "A.3",
         "B.2",
-        "B.3",
-        "C.1",
-        "C.2"
+        "C.1"
       ],
-      "rationaleAI": "The British Empire directly covers the colonization of Australia from New South Wales in 1788 (B.2), the Commonwealth establishment, and the extension of British control over New Zealand (C.1–C.2), all core elements of the section's B and C outlines."
+      "rationaleAI": "The British Empire's Pacific exploration, dominion system, and colonial governance connect to European colonial settlement (A.3), British colonization of New South Wales (B.2), and British control over New Zealand (C.1)."
     },
     {
       "articleTitle": "Colonialism",
       "relevantPathsAI": [
         "A.3",
-        "B.2",
-        "B.4",
-        "C.2"
+        "B.2"
       ],
-      "rationaleAI": "Colonialism's conceptual framework directly applies to the British colonial settlement of Australia (B.2) including the displacement of Aboriginal populations (B.4), and British annexation of New Zealand with Maori conflicts (C.2)."
+      "rationaleAI": "European colonial domination through mercantilism and coercive institutions covers European exploration and colonial settlement including missionaries and trading societies (A.3) and British colonization of Australia (B.2)."
     },
     {
       "articleTitle": "Pacific Ocean",
       "relevantPathsAI": [
-        "A.2",
-        "A.3"
+        "A",
+        "A.2"
       ],
-      "rationaleAI": "The Pacific Ocean provides the geographic and historical framework for European exploration of Oceania (A.3) and the distribution and character of island peoples across Melanesia, Micronesia, and Polynesia (A.2)."
+      "rationaleAI": "The Pacific Ocean's island distribution, prehistoric Pacific migrations, and European exploration connect to the character of Oceania's peoples (A) and geography and ethnography of the region (A.2)."
     },
     {
       "articleTitle": "Imperialism",
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "Imperialism covers the New Imperialism phase when European powers competed for Pacific island territories, directly relevant to A.3's coverage of colonial government and the effects of colonization on diverse Oceanian peoples."
+      "rationaleAI": "European extension of power over foreign territories covers the effects of colonization on Oceania's indigenous peoples through missionaries, trading societies, and colonial government (A.3)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

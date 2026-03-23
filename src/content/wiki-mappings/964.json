@@ -7,95 +7,85 @@
         "B",
         "B.1",
         "B.2",
-        "B.2.a",
-        "B.2.b",
-        "B.2.c",
         "B.4",
         "B.5"
       ],
-      "rationaleAI": "The Spanish Empire is the central subject of outline division B, covering discovery and conquest of the Caribbean and Americas (B.1), colonial administration via the Council of the Indies (B.2.a), Indian policy including encomienda (B.2.b), colonial economy and silver mining (B.2.c), Bourbon administrative reforms (B.4), and colonial expansion into North America (B.5)."
+      "rationaleAI": "The Spanish Empire's discovery, exploration, and conquest of the Caribbean, Mexico, Central and South America (B.1), colonial administration via the Council of the Indies and viceroys (B.2.a), silver mining at Potosi and Zacatecas (B.2.c), Bourbon administrative reforms (B.4), and North American settlements and missions (B.5)."
     },
     {
       "articleTitle": "Christopher Columbus",
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Columbus's four voyages (1492–1504) inaugurate outline B.1 (Spanish discovery, exploration, and conquest of the Caribbean islands, Mexico, Central America, Peru, Venezuela, Colombia, and Rio de la Plata, 1492–c. 1550), making him the foundational figure for the section's colonial narrative."
+      "rationaleAI": "Columbus's four voyages (1492–1504) under Spanish sponsorship initiated European contact with the Americas, directly covering Spanish discovery and exploration of the Caribbean (B.1)."
     },
     {
       "articleTitle": "North America",
       "relevantPathsAI": [
         "A",
         "C",
-        "C.2",
-        "C.3",
         "D"
       ],
-      "rationaleAI": "North America as a continental overview covers the geography and ethnography of the Americas (A), Norse and English explorations (C.1–C.2), the 13 Colonies (C.3), and French settlements including New France (D), addressing several of the uncovered priority paths."
+      "rationaleAI": "North America's geography, Paleo-Indian settlement, and European colonization (English, Spanish, French) connect to the geography and ethnography of the Americas (A), English colonies in North America (C), and French settlements (D)."
     },
     {
       "articleTitle": "Age of Discovery",
       "relevantPathsAI": [
         "B.1",
-        "C.2",
+        "C.1",
         "D"
       ],
-      "rationaleAI": "The Age of Discovery covers Portuguese and Spanish transatlantic voyages initiating the colonial era (B.1), northern European exploration of the Americas relevant to C.2 and D, and the Columbian Exchange that underlies the section's colonial transformation narrative."
+      "rationaleAI": "Portuguese and Spanish maritime exploration, Columbus's voyages, and the Columbian Exchange directly cover Spanish discovery and exploration (B.1), while northern European exploration connects to Norse, English, and Dutch settlements (C.1) and French discoveries (D)."
     },
     {
       "articleTitle": "Atlantic slave trade",
       "relevantPathsAI": [
         "B.2.b",
         "B.3.a",
-        "B.6"
+        "C.3.b.iii"
       ],
-      "rationaleAI": "The introduction of Black slaves is explicitly cited in B.2.b (Spanish Indian policy) and B.3.a (Portuguese Brazil's introduction of black slavery); the article covers the triangular trade, Caribbean and South American plantation labor, and the role of English, French, and Dutch powers relevant to B.6."
+      "rationaleAI": "The forced transportation of Africans to the Americas connects to Indian policy including introduction of black slaves in Spanish colonies (B.2.b), Portuguese colonial introduction of black slavery in Brazil (B.3.a), and the introduction of slavery in English colonial society (C.3.b.iii)."
     },
     {
       "articleTitle": "South America",
       "relevantPathsAI": [
         "A",
-        "B",
-        "B.1",
-        "B.3"
+        "B"
       ],
-      "rationaleAI": "South America covers the geography and ethnography of the continent (A), Spanish conquest and colonial rule (B.1), and Portuguese colonization of Brazil (B.3), addressing the priority path A (geography and ethnography of the Americas) and the core colonial content."
+      "rationaleAI": "South America's geography, pre-Columbian civilizations, and Spanish/Portuguese colonial history directly cover the geography and ethnography of the Americas (A) and Spanish and Portuguese colonization (B)."
     },
     {
       "articleTitle": "British Empire",
       "relevantPathsAI": [
-        "C.3",
-        "C.3.a",
-        "C.3.b",
-        "B.6"
+        "B.6",
+        "C.2",
+        "C.3"
       ],
-      "rationaleAI": "The British Empire's origins in Caribbean and North American colonies directly corresponds to outline C.3 (development of the English colonies), including the founding of the 13 Colonies, economic policies including Navigation Acts, and colonial administration, as well as B.6 (English territorial expansion into areas of Spanish colonization)."
+      "rationaleAI": "British colonial origins in Caribbean and North American colonies, rivalry with France and the Netherlands, and loss of American colonies (1783) connect to English territorial expansion into Spanish/Portuguese areas (B.6), English exploration and settlement (C.2), and development of the English colonies (C.3)."
     },
     {
       "articleTitle": "Mexico",
       "relevantPathsAI": [
+        "A",
         "B.1",
-        "B.2",
         "B.5"
       ],
-      "rationaleAI": "Mexico's pre-Columbian civilizations, Spanish conquest of the Aztec Empire, three centuries of colonial rule, and settlement patterns connect directly to B.1 (Spanish conquest of Mexico), B.2 (Spain's colonial empire), and B.5 (Spanish colonial expansion into North America)."
+      "rationaleAI": "Mexico's pre-Columbian civilizations (Maya, Aztec) relate to the ethnography of the Americas (A), the Spanish conquest covers discovery and exploration (B.1), and three centuries of colonial rule connect to Spanish colonial expansion into North America (B.5)."
     },
     {
       "articleTitle": "American Revolution",
       "relevantPathsAI": [
-        "C.3.b"
+        "C.3.b",
+        "C.3.d"
       ],
-      "rationaleAI": "The American Revolution ended the section's colonial period for the 13 Colonies; it covers the political grievances (Navigation Acts, taxation), colonial self-government, and the War of Independence that culminated the C.3.b narrative on economic and political colonial development."
+      "rationaleAI": "Colonial grievances, taxation without representation, the Continental Army, and the Treaty of Paris (1783) directly cover the political and economic development of the English colonies (C.3.b) and the expulsion of French power culminating in American independence (C.3.d context)."
     },
     {
       "articleTitle": "United States",
       "relevantPathsAI": [
-        "C.3",
-        "C.3.a",
-        "C.3.b",
-        "C.3.c"
+        "C.3"
       ],
-      "rationaleAI": "The United States as a country encompasses the pre-revolutionary history of the 13 Colonies (C.3), their economic, political, and social development (C.3.b), and cultural achievements (C.3.c), covering the colonial period to c. 1790 that forms the section's scope."
+      "rationaleAI": "The United States' origins in European colonization and the 1776 Revolution connect to the development of the English colonies in North America (C.3), including founding, economic development, and conflicts."
     },
     {
       "articleTitle": "Colombia",
@@ -103,29 +93,28 @@
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "Colombia covers pre-Columbian settlement and Spanish colonization from 1499, directly relevant to B.1 (Spanish conquest of Venezuela, Colombia, and other territories) and B.2 (Spain's colonial empire administration in South America)."
+      "rationaleAI": "Colombia's Spanish colonization from 1499 and colonial-era governance connect to Spanish discovery, exploration, and conquest (B.1) and Spain's colonial empire administration (B.2)."
     },
     {
       "articleTitle": "George Washington",
       "relevantPathsAI": [
-        "C.3.b"
+        "C.3.d"
       ],
-      "rationaleAI": "Washington's leadership of the Continental Army and presidency connects to C.3.b.ii (colonial administration and self-government), though his primary historical significance belongs to section 965; as a figure within the colonial period, he represents the transition described in C.3.b."
+      "rationaleAI": "Washington's French and Indian War service and leadership of the Continental Army connect to conflicts with the French and Indians and expulsion of French power from North America (C.3.d)."
     },
     {
       "articleTitle": "Viking Age",
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "The Viking Age covers Norse voyages to Greenland and North America (c. 1000 AD) that directly correspond to outline C.1 (Norse voyages to Greenland and North America, c. 1000), one of the uncovered priority paths adjacent to D."
+      "rationaleAI": "Norse voyages to Greenland and North America (c. 1000), including the Newfoundland settlement, directly cover Norse voyages to Greenland and North America (C.1)."
     },
     {
       "articleTitle": "Mesoamerica",
       "relevantPathsAI": [
-        "A",
-        "B.1"
+        "A"
       ],
-      "rationaleAI": "Mesoamerica covers the historical cultural region's pre-Columbian civilizations (Olmec, Maya, Aztec), addressing the geography and ethnography of the Americas (priority path A) and the context for Spanish conquest beginning in B.1."
+      "rationaleAI": "Mesoamerica's Olmec, Maya, Aztec, and other civilizations directly relate to the ethnography of the Americas and pre-colonial indigenous cultures (A)."
     },
     {
       "articleTitle": "Aztecs",
@@ -133,7 +122,7 @@
         "A",
         "B.1"
       ],
-      "rationaleAI": "The Aztec Empire and Spanish conquest of 1521 directly correspond to B.1 (Spanish conquest of Mexico, c. 1492–1550) and contribute to the ethnography of the Americas (A); the article covers tribute systems, Nahuatl culture, and Hernán Cortés's conquest."
+      "rationaleAI": "The Aztec Empire and Spanish conquest under Cortes in 1521 connect to the ethnography of the Americas (A) and Spanish discovery, exploration, and conquest of Mexico (B.1)."
     },
     {
       "articleTitle": "Inca Empire",
@@ -141,16 +130,15 @@
         "A",
         "B.1"
       ],
-      "rationaleAI": "The Inca Empire (c. 1438–1572) covering the western Andes and its Spanish conquest beginning 1532 corresponds to B.1 (Spanish conquest of Peru, 1492–c. 1550) and the pre-Columbian ethnography of the Americas (A)."
+      "rationaleAI": "The Inca Empire's Andean civilization and the Spanish conquest beginning in 1532 connect to the ethnography of the Americas (A) and Spanish conquest of Peru (B.1)."
     },
     {
       "articleTitle": "Canada",
       "relevantPathsAI": [
-        "C.3",
         "D",
         "D.1"
       ],
-      "rationaleAI": "Canada's history of French and British colonization, Indigenous peoples, New France, and the fur trade directly addresses the French colonial content in priority paths D and D.1, as well as English colonial settlement in C.3."
+      "rationaleAI": "Canada's history of French and British colonization connects to French discoveries, explorations, and settlements in North America and the settlement of New France (D.1)."
     },
     {
       "articleTitle": "Colonialism",
@@ -159,24 +147,22 @@
         "C",
         "D"
       ],
-      "rationaleAI": "Colonialism as a theoretical and historical concept encompasses the entire section's subject matter: Spanish and Portuguese colonization (B), English colonial settlement (C), and French colonization (D), with particular relevance to the encomienda system (B.2.b) and mercantilism (B.2.c) cited in the outline."
+      "rationaleAI": "European colonial domination through mercantilism and chartered companies directly relates to Spanish and Portuguese colonies (B), English colonies (C), and French settlements in North America (D)."
     },
     {
       "articleTitle": "France",
       "relevantPathsAI": [
         "D",
-        "D.1",
-        "B.6"
+        "D.1"
       ],
-      "rationaleAI": "France's colonial empire encompassing New France and Louisiana corresponds directly to priority paths D (French discoveries and settlements in North America) and D.1 (New France: missionaries, Indian relations, fur trade), as well as B.6 (French territorial expansion into Spanish/Portuguese areas)."
+      "rationaleAI": "France's colonial empire including New France connects to French discoveries, explorations, and settlements in North America (D), including missionaries, the fur trade, and royal administration (D.1)."
     },
     {
       "articleTitle": "Argentina",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "B.1"
       ],
-      "rationaleAI": "Argentina (Rio de la Plata) is explicitly named in B.1 among the territories of Spanish discovery, exploration, and conquest (1492–c. 1550), and the colonial economy and administration (B.2) applied to the region."
+      "rationaleAI": "Argentina's Spanish colonization connects to Spanish discovery, exploration, and conquest of Rio de la Plata (B.1)."
     },
     {
       "articleTitle": "Brazil",
@@ -185,28 +171,28 @@
         "B.3.a",
         "B.3.b"
       ],
-      "rationaleAI": "Brazil is the direct subject of outline B.3 (exploration and colonization by the Portuguese from 1500), with B.3.a covering colonial economic policies including black slavery, gold mining, and agricultural development, and B.3.b the establishment of captaincies and centralized royal control."
+      "rationaleAI": "Brazil's Portuguese colonization from 1500, introduction of slavery, gold and diamond mining, and centralized royal administration directly cover the exploration and colonization of Brazil (B.3, B.3.a, B.3.b)."
     },
     {
       "articleTitle": "Age of Enlightenment",
       "relevantPathsAI": [
         "C.3.c"
       ],
-      "rationaleAI": "The Enlightenment's influence in the colonies corresponds to C.3.c (colonial cultural and scientific achievements: American Philosophical Society, newspapers, public education, Great Awakening), representing the intellectual life of the English North American colonies in the section's period."
+      "rationaleAI": "Enlightenment political theory — constitutional government, natural rights — influenced colonial cultural and scientific achievements including the American Philosophical Society and the 'Great Awakening' (C.3.c)."
     },
     {
       "articleTitle": "Rocky Mountains",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "The Rocky Mountains' coverage of North American geography, Indigenous peoples' history, and European exploration connects to the geography and ethnography of the Americas (priority path A), which has no VSI recommendations, though the article's primary focus is post-1790 westward expansion."
+      "rationaleAI": "The Rocky Mountains as North America's largest mountain system relate to the geography of the Americas (A)."
     },
     {
       "articleTitle": "Reformation",
       "relevantPathsAI": [
         "C.3.a"
       ],
-      "rationaleAI": "The Protestant Reformation is a background cause for colonial settlement in C.3.a (religious reasons for the founding of the 13 Colonies), as Puritan and other Protestant groups fled religious persecution in England to settle New England."
+      "rationaleAI": "The Reformation's fracturing of Western Christianity produced religious motivations for settlement in the founding of the 13 Colonies (C.3.a)."
     },
     {
       "articleTitle": "Spain",
@@ -217,22 +203,21 @@
         "B.4",
         "B.5"
       ],
-      "rationaleAI": "Spain's history of colonial empire in the Americas — from Catholic Monarchs through Bourbon reforms — maps to the entire B division, including discovery/conquest (B.1), colonial administration (B.2), Bourbon decentralization (B.4), and North American settlements (B.5)."
+      "rationaleAI": "Spain's imperial legacy across Latin America directly connects to Spanish colonies in the Americas — discovery and conquest (B.1), colonial administration (B.2), Bourbon reforms (B.4), and North American expansion (B.5)."
     },
     {
       "articleTitle": "John Locke",
       "relevantPathsAI": [
-        "C.3.a",
-        "C.3.b"
+        "C.3.c"
       ],
-      "rationaleAI": "Locke's natural rights theory and government by consent directly influenced colonial political thought and the ideological foundations of the 13 Colonies' self-governance (C.3.a, C.3.b.ii), as the Carolina colony's fundamental constitutions were partly co-authored by him."
+      "rationaleAI": "Locke's natural rights philosophy and government by consent directly influenced colonial cultural and scientific achievements and the intellectual foundations of American independence (C.3.c)."
     },
     {
       "articleTitle": "Elizabeth I",
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Elizabeth I's reign (1558–1603) encompasses the early English exploration and attempted settlement referenced in C.2 (1497–c. 1600), including Raleigh's attempts at Roanoke Colony and the maritime exploration of Drake and others."
+      "rationaleAI": "Elizabeth I's reign saw early English exploration and attempted settlement in North America through Drake and Raleigh (C.2)."
     },
     {
       "articleTitle": "Imperialism",
@@ -241,24 +226,23 @@
         "C",
         "D"
       ],
-      "rationaleAI": "Imperialism as a theoretical framework encompasses the section's entire subject of European colonial expansion in the Americas, covering mercantile capitalism, chartered companies, and coercive colonial institutions described across B, C, and D."
+      "rationaleAI": "The extension of European power over foreign territories through military and economic means directly frames the Spanish and Portuguese colonial systems (B), English colonies (C), and French settlements (D)."
     },
     {
       "articleTitle": "New York City",
       "relevantPathsAI": [
-        "C.2",
-        "C.3"
+        "C.2"
       ],
-      "rationaleAI": "New York City (founded as Dutch Fort Amsterdam c. 1624, later taken by the English) is directly relevant to C.2 (Dutch settlement and later expulsion by the English) and C.3 (development of the English colonies in North America), being one of the most significant colonial-era cities in the section's coverage."
+      "rationaleAI": "New York City's founding as Dutch Fort Amsterdam (~1624) and its becoming British territory connects to Dutch and Swedish settlement and later expulsion by the English (C.2)."
     },
     {
       "articleTitle": "Human history",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Human history as a broad survey covers the pre-Columbian civilizations and European colonization era that forms the backdrop of the section, addressing the geography and ethnography of the Americas (priority path A) through its coverage of early civilizations and exploration."
+      "rationaleAI": "The broad survey of human development including European exploration and colonization provides general context for the geography and ethnography of the Americas (A)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

@@ -10,61 +10,58 @@
         "A.3",
         "A.4"
       ],
-      "rationaleAI": "Mexico is the direct subject of the entire A division, covering the Obregón-Calles era reforms, the Cárdenas Six-Year Plan, WWII cooperation with the US, and post-1945 political, economic, and social developments including PRI dominance, oil nationalisation, NAFTA, and the Fox election."
+      "rationaleAI": "Mexico's post-revolutionary regimes of Obregon and Calles (A.1), Cardenas reforms (A.2), WWII cooperation (A.3), and post-1945 PRI dominance, economic crises, and NAFTA (A.4) are comprehensively covered."
     },
     {
       "articleTitle": "United States",
       "relevantPathsAI": [
         "A.4.b",
         "B.1.d",
-        "B.1.f",
-        "B.2.a",
-        "B.2.c",
-        "C.2.c"
+        "B.2.c.iv",
+        "C.1.b"
       ],
-      "rationaleAI": "US relations with and interventions in Latin America run throughout section 974: US-Mexico relations and NAFTA (A.4.b), US military intervention in Nicaragua and support for Contras (B.1.d), US involvement in Panama (B.1.f), US occupation of Haiti (B.2.a), US trade embargo and Bay of Pigs invasion in Cuba (B.2.c.iv), and US efforts to subdue Colombian drug cartels (C.2.c)."
+      "rationaleAI": "US relations with Mexico including immigration tensions and NAFTA (A.4.b), US involvement in Nicaragua including Contra insurgency (B.1.d), US relations with Cuba including the Bay of Pigs and embargo (B.2.c.iv), and Venezuela's economic ties and oil (C.1.b)."
     },
     {
       "articleTitle": "Argentina",
       "relevantPathsAI": [
-        "F",
-        "F.1"
+        "F.1",
+        "F.1.a",
+        "F.1.b",
+        "F.1.c"
       ],
-      "rationaleAI": "Argentina is the direct subject of F.1, covering the conservative restoration (1930–43), the Perón era, post-Perón military dictatorships, the Falklands War, and return to civilian rule under Alfonsín and Menem."
+      "rationaleAI": "Argentina's conservative restoration (F.1.a), Peron era (F.1.b), and post-1955 military dictatorships, Falklands War, and return to civilian rule (F.1.c) are comprehensively covered."
     },
     {
       "articleTitle": "Brazil",
       "relevantPathsAI": [
         "G",
         "G.1",
-        "G.2",
-        "G.2.a",
-        "G.2.b",
-        "G.2.c",
-        "G.2.d",
-        "G.2.e"
+        "G.2"
       ],
-      "rationaleAI": "Brazil is the direct subject of the entire G division, covering the Vargas dictatorship (1930–45), the constitutions of 1934 and 1937, post-war democratic and military periods through the Castelo Branco and successor presidencies, and the return to civilian rule under Sarney, Cardoso, and Lula."
+      "rationaleAI": "Brazil's Vargas dictatorship (G.1) and post-1945 developments including military rule, civilian governments, and democratic consolidation (G.2) are comprehensively covered."
     },
     {
       "articleTitle": "Cold War",
       "relevantPathsAI": [
         "B.1.d",
-        "B.2.c",
-        "C.1.b"
+        "B.2.c.ii",
+        "B.2.c.iii",
+        "B.2.c.iv"
       ],
-      "rationaleAI": "The Cold War shaped Latin American politics via US-Soviet proxy conflicts: the Contra insurgency in Nicaragua sponsored by the US (B.1.d), Cuba's alignment with the Soviet bloc and Castro's support for leftist movements (B.2.c.iii), the Cuban missile crisis and Bay of Pigs (B.2.c.iv), and Venezuela's oil nationalization in the context of Cold War political economy (C.1.b)."
+      "rationaleAI": "Cold War dynamics cover US sponsorship of the Contra insurgency in Nicaragua (B.1.d), Castro's Cuban Revolution and alignment with the Soviet bloc (B.2.c.ii–iii), and the Bay of Pigs invasion and Cuban Missile Crisis (B.2.c.iv)."
     },
     {
       "articleTitle": "Great Depression",
       "relevantPathsAI": [
+        "D.1.a",
         "D.3.a",
-        "E.1.b",
+        "E.1.a",
+        "F.1.a",
         "F.2.a",
-        "F.3.a",
-        "G.1"
+        "F.3.a"
       ],
-      "rationaleAI": "The Great Depression is explicitly cited across multiple subsections as triggering economic crises and political instability: Bolivia's mining industry collapse and Chaco War context (D.3.a), Chile's economic crises of the 1930s (E.1.b), Uruguay's Depression-era dictatorship of Terra (F.2.a), Paraguay's Depression-era troubles (F.3.a), and the 1930 Brazilian revolution that brought Vargas to power (G.1)."
+      "rationaleAI": "The Great Depression's economic impact is covered across Ecuador's economic development (D.1.a), Bolivia's mining industry and Chaco War (D.3.a), Chile's economic crises (E.1.b), Argentina's conservative restoration (F.1.a), Uruguay (F.2.a), and Paraguay (F.3.a)."
     },
     {
       "articleTitle": "Colombia",
@@ -74,77 +71,64 @@
         "C.2.b",
         "C.2.c"
       ],
-      "rationaleAI": "Colombia is the direct subject of C.2, covering Liberal Party rule and López reforms (C.2.a), the Conservative restoration, La Violencia, and the National Front (C.2.b), and the era of drug trafficking and guerrilla violence under Betancur and successors (C.2.c)."
+      "rationaleAI": "Colombia's Liberal Party rule and social reforms (C.2.a), La Violencia and the National Front (C.2.b), and increasing guerrilla violence and drug trafficking (C.2.c) are comprehensively covered."
     },
     {
       "articleTitle": "Central America",
       "relevantPathsAI": [
-        "B.1",
-        "B.1.a",
-        "B.1.c",
-        "B.1.d",
-        "B.1.e",
-        "B.1.f",
-        "B.1.g"
+        "B.1"
       ],
-      "rationaleAI": "Central America directly covers the subregion that is the subject of B.1, encompassing Guatemala, El Salvador, Nicaragua, Costa Rica, Panama, and Belize, including their colonial background (Spanish Captaincy-General of Guatemala) and 20th-century political trajectories."
+      "rationaleAI": "Central America's individual state histories including Guatemala, Honduras, El Salvador, Nicaragua, Costa Rica, Panama, and Belize comprehensively cover the Central American republics since 1920 (B.1)."
     },
     {
       "articleTitle": "World War II",
       "relevantPathsAI": [
         "A.3",
         "F.1.a",
-        "F.2.a",
-        "F.3.a",
         "G.1"
       ],
-      "rationaleAI": "WWII directly appears in A.3 (Mexico's wartime cooperation with the US and industrialisation), is referenced in F.1.a (Argentina's neutrality), F.2.a (Uruguay's wartime experience), F.3.a (Paraguay's Allied alignment), and G.1 (Brazil's Allied participation under Vargas)."
+      "rationaleAI": "Mexican wartime cooperation with the US (A.3), Argentina's neutrality (F.1.a), and Brazil's Vargas-era Allied participation (G.1) are directly covered."
     },
     {
       "articleTitle": "Decolonization",
       "relevantPathsAI": [
-        "B.1.g",
-        "B.2.d",
-        "B.2.e"
+        "B.2.d"
       ],
-      "rationaleAI": "Decolonisation is directly relevant to Belize's progress toward and achievement of independence from Britain in 1981 (B.1.g), the emergence of new independent Caribbean nations (B.2.d), and the status of remaining US and European territories in the Caribbean (B.2.e)."
+      "rationaleAI": "The emergence of new Caribbean nations from European colonial rule connects to the new nations of the Caribbean region (B.2.d)."
     },
     {
       "articleTitle": "History of North America",
       "relevantPathsAI": [
         "A",
-        "B.1"
+        "B"
       ],
-      "rationaleAI": "This article covers North American history including Mexico and Central America, directly relevant to section 974's A division (Mexico since 1920) and the Central American republics in B.1."
+      "rationaleAI": "North American history covering Mexico and Central America connects to Mexico since 1920 (A) and Central America and the Caribbean (B)."
     },
     {
       "articleTitle": "Imperialism",
       "relevantPathsAI": [
+        "B.1.a.ii",
         "B.1.d",
-        "B.1.f",
-        "B.2.a",
-        "B.2.c"
+        "B.2.c.iv"
       ],
-      "rationaleAI": "US imperialism and interventionism is a thread running through Nicaragua (B.1.d), Panama (B.1.f), Haiti (B.2.a), and Cuba (B.2.c.iv), all of which involve US military intervention or economic coercion — the core subject matter of imperialism theory."
+      "rationaleAI": "US imperial interventions including CIA-sponsored coups in Guatemala (B.1.a.ii), Contra insurgency in Nicaragua (B.1.d), and military occupation of Cuba (B.2.c.iv) represent American imperialism in the region."
     },
     {
       "articleTitle": "United Kingdom",
       "relevantPathsAI": [
-        "B.1.g",
         "B.2.d",
-        "B.2.e"
+        "F.1.c"
       ],
-      "rationaleAI": "The United Kingdom is directly relevant as the colonial power from which Belize gained independence (B.1.g), the metropolitan authority over British Caribbean possessions cited in B.2.e (Bermuda and other British insular possessions), and the context of Caribbean decolonisation in B.2.d."
+      "rationaleAI": "British insular possessions in the Caribbean (B.2.d) and Britain's defeat of Argentina in the Falklands War (F.1.c) are directly relevant."
     },
     {
       "articleTitle": "British Empire",
       "relevantPathsAI": [
-        "B.1.g",
-        "B.2.e"
+        "B.2.d"
       ],
-      "rationaleAI": "The British Empire provides the colonial framework for Belize's independence process (B.1.g) and the British insular possessions listed in B.2.e (Bermuda and other British Caribbean territories)."
+      "rationaleAI": "Remaining British insular possessions in the Caribbean region connect to the broader British Empire's decolonization (B.2.d)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

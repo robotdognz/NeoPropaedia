@@ -7,339 +7,297 @@
         "B",
         "B.1",
         "B.2",
-        "B.2.a",
-        "B.2.b",
         "B.3",
-        "B.3.a",
-        "B.3.b",
         "B.4",
         "B.5",
-        "B.6",
-        "C.1",
-        "C.1.a",
-        "C.1.b"
+        "B.6"
       ],
-      "rationaleAI": "World War II is the central article for the entire B section and C.1, covering German conquest of Poland and France, the Pacific War and Japanese aggression in China (B.2.a), Japanese conquests in Southeast Asia and Allied counteroffensive (B.2.b), the Eastern Front collapse and Allied European campaigns (B.3), Axis and Allied wartime leadership (B.4, B.5), military technology (B.6), and the ideological dimensions of the conflict (C.1.a, C.1.b)."
+      "rationaleAI": "Comprehensively covers German conquest of Poland and France, the Battle of Britain, war in North Africa (B.1), the Pacific war including Pearl Harbor and Japanese conquests (B.2), the Allied counteroffensive in Europe (B.3), Axis Powers' strategy (B.4), Allied diplomacy including the Atlantic Charter (B.5), and military technology developments (B.6)."
     },
     {
       "articleTitle": "World War I",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
         "A.1.b"
       ],
-      "rationaleAI": "World War I covers the Paris Peace Conference, Treaty of Versailles, and League of Nations establishment — directly relevant to A.1.a's immediate postwar diplomatic problems and A.1.b's coverage of the failure of socialist governments and diplomatic isolation following the peace settlement."
+      "rationaleAI": "WWI's peace settlements and the Treaty of Versailles established the post-war diplomatic framework including the League of Nations, US and Soviet isolation, and crises over enforcement of the peace settlement (A.1.b)."
     },
     {
       "articleTitle": "Cold War",
       "relevantPathsAI": [
-        "C.2",
         "C.2.c",
-        "C.2.d",
-        "C.2.e",
+        "C.2.c.i",
+        "C.2.c.ii",
+        "C.2.c.iii",
+        "C.2.c.iv",
         "C.2.f",
-        "C.3",
-        "C.3.a",
-        "C.3.b",
-        "C.3.c"
+        "C.3.a"
       ],
-      "rationaleAI": "The Cold War article covers the Berlin Blockade, Korean War, Cuban Missile Crisis, Vietnam War, Soviet suppression of Eastern European uprisings, détente, and the dissolution of the Soviet Union — directly addressing C.2.c (beginnings of Cold War), C.2.d (East/Southeast Asia 1945–57), C.3.a (Great Powers and world), C.3.b (lesser powers), and C.3.c (areas of conflict)."
+      "rationaleAI": "The Cold War directly covers the Iron Curtain and Soviet consolidation of power in eastern Europe (C.2.c.i), Cold War as ideology and Realpolitik (C.2.c.ii), the Berlin blockade and confrontation in Germany (C.2.c.iii), NATO formation (C.2.c.iv), the continuing Cold War including containment, de-Stalinization, and nuclear balance of terror (C.2.f), and postwar economic growth and superpower dynamics (C.3.a)."
     },
     {
       "articleTitle": "British Empire",
       "relevantPathsAI": [
         "A.3.c",
-        "B.5",
-        "C.2.a"
+        "C.2.d",
+        "C.3.a.ii"
       ],
-      "rationaleAI": "The British Empire article covers increased demands for self-determination among colonial peoples in the interwar period (A.3.c), British wartime leadership including the Atlantic Charter (B.5), and postwar decolonization including Indian independence (C.2.a). It represents the key colonial power dimension of the section."
+      "rationaleAI": "The British Empire's colonial territories, client states, and demands for self-determination (A.3.c), colonial territories of Asia (C.2.d), and decolonization (C.3.a.ii)."
     },
     {
       "articleTitle": "Joseph Stalin",
       "relevantPathsAI": [
+        "A.4.c",
         "B.1",
-        "B.3.b",
-        "C.1.b",
-        "C.2.c",
-        "C.2.f"
+        "C.1.b.i",
+        "C.2.c"
       ],
-      "rationaleAI": "Stalin covers Soviet military strategy in WWII including the Eastern Front and German offensive/Soviet counteroffensive (B.1, B.3.b), Soviet expansion and the Nazi-Soviet Pact (C.1.b, C.1.i.iii), and consolidation of Soviet power in Eastern Europe initiating the Cold War (C.2.c). He is central to multiple high-priority coverage paths."
+      "rationaleAI": "Stalin's establishment of Nazi-era economic recovery based on War Communism and the New Economic Policy (A.4.c), the German-Soviet Nonaggression Pact and subsequent German invasion (B.1), the Nazi-Soviet pact ideology (C.1.b.i), and Soviet expansion and postwar Eastern Bloc formation (C.2.c)."
     },
     {
       "articleTitle": "Russia",
       "relevantPathsAI": [
-        "B.1",
         "C.2.c",
-        "C.3.a"
+        "C.2.f",
+        "C.3.a.x"
       ],
-      "rationaleAI": "The Russia article covers the Soviet role in WWII, Soviet domination of Eastern Europe and the Cold War, and post-Soviet Russia's international role — relevant to B.1 (German-Soviet Nonaggression Pact and German invasion), C.2.c (beginnings of Cold War, Iron Curtain), and C.3.a (Soviet 'national liberation' policy and superpower relations)."
+      "rationaleAI": "Russia's Soviet-era history covers consolidation of power in eastern Europe (C.2.c), de-Stalinization and Khrushchev (C.2.f.iv), and the disintegration of the Soviet Union and end of the Cold War (C.3.a.x)."
     },
     {
       "articleTitle": "Poland",
       "relevantPathsAI": [
-        "B.1",
-        "B.3.b",
-        "C.2.c"
+        "B.1"
       ],
-      "rationaleAI": "Poland covers the German invasion (1939) and joint German-Soviet partition (B.1), the Soviet conquest of Eastern Europe (B.3.b), and postwar Soviet domination under the Iron Curtain (C.2.c.i). It is a central case study for the pivotal events at the outset of WWII and the postwar consolidation of Soviet power."
+      "rationaleAI": "German conquest of Poland (1939) opening World War II is directly covered (B.1), and Poland's post-war communist rule and Solidarity's role connect to Eastern Bloc dynamics."
     },
     {
       "articleTitle": "NATO",
       "relevantPathsAI": [
-        "C.2.c",
-        "C.2.f",
-        "C.3.b"
+        "C.2.c.iv",
+        "C.2.f.vi"
       ],
-      "rationaleAI": "NATO covers its formation as a response to Soviet expansion (C.2.c.iv), its role in European economic recovery and Western security architecture (C.2.f.vi), and ongoing Eastern flank deterrence and enlargement to former Warsaw Pact states (C.3.b). It is the primary article for the alliance dimension of the Cold War section."
+      "rationaleAI": "NATO's formation to counter Soviet expansion (C.2.c.iv) and NATO's role in European economic recovery (C.2.f.vi) are directly covered."
     },
     {
       "articleTitle": "South Korea",
       "relevantPathsAI": [
-        "C.2.d"
+        "C.2.d.iii"
       ],
-      "rationaleAI": "South Korea covers the Korean War (1950–1953), including its causes, course, and consequences as a Cold War proxy conflict, directly addressing C.2.d.iii's focus on the Korean War's meaning and aftermath for US policy in Asia."
+      "rationaleAI": "The Korean War's meaning, course, and consequences are directly covered (C.2.d.iii), including US and UN intervention."
     },
     {
       "articleTitle": "Spain",
       "relevantPathsAI": [
         "A.3.b"
       ],
-      "rationaleAI": "The Spain article covers the Spanish Civil War (1936–39), German and Italian intervention, and Franco's victory — directly addressing A.3.b's focus on the Popular Front and the Spanish Civil War as an instance of unchecked Fascist aggression and failure of international diplomacy."
+      "rationaleAI": "The Spanish Civil War (1936–39) and the failure of diplomatic attempts to avert broader war are directly covered (A.3.b)."
     },
     {
       "articleTitle": "United States",
       "relevantPathsAI": [
-        "A.4.c",
-        "B.2.a",
-        "B.5",
-        "C.2",
+        "C.2.a",
+        "C.2.f",
         "C.3.a"
       ],
-      "rationaleAI": "The United States article covers the New Deal (A.4.c), clash with Japan leading to Pearl Harbor (B.2.a), Allied wartime leadership and the Atlantic Charter (B.5), Truman Doctrine and containment policy (C.2.f.i), and US Cold War economic dominance (C.3.a.i). It is central across multiple section outline paths."
+      "rationaleAI": "The US role in post-war international order covers the atomic bomb and Truman's principles (C.2.a), containment policy and McCarthyism (C.2.f.i–iii), and postwar US economic dominance and Cold War dynamics (C.3.a)."
     },
     {
       "articleTitle": "Adolf Hitler",
       "relevantPathsAI": [
-        "A.3",
         "A.4.c",
         "B.1",
-        "B.4",
-        "C.1.b",
-        "C.1"
+        "C.1.b.i"
       ],
-      "rationaleAI": "Hitler covers Nazi Germany's rise (A.4.c), German conquests initiating WWII (B.1), Axis military leadership and goals (B.4), and the ideological dimension of WWII including the Nazi-Soviet Pact (C.1.b, C.1.i). He is central to both the C.1.b (Ideologies in WWII) and C.1.i (Nazi-Soviet Pact) high-priority coverage paths."
+      "rationaleAI": "Hitler's Nazi Germany and rearmament-based economic recovery (A.4.c), Germany's conquest of Poland and France opening WWII (B.1), and the Nazi-Soviet pact (C.1.b.i) are directly covered."
     },
     {
       "articleTitle": "Italy",
       "relevantPathsAI": [
-        "A.3.b",
-        "A.4.c",
-        "B.1",
-        "B.4"
+        "A.3.b"
       ],
-      "rationaleAI": "Italy covers the unchecked Italian invasion of Ethiopia (1935–36) as a test of the League of Nations (A.3.b), Italian economic alignment with Germany (A.4.c), Italian participation in WWII and the Axis alliance (B.1, B.4). It addresses the Ethiopia path specifically called out in the outline."
+      "rationaleAI": "Italian aggression against Ethiopia (1935–36) and failure of the League of Nations to check it are directly covered under international affairs in the 1930s (A.3.b)."
     },
     {
       "articleTitle": "Europe",
       "relevantPathsAI": [
         "A",
         "B",
-        "C"
+        "C.3.b"
       ],
-      "rationaleAI": "The Europe article covers the interwar period, WWII, Cold War Iron Curtain division, and post-1989 integration — providing broad contextual coverage across A (interwar), B (WWII), and C (international relations) outline paths. It serves as a contextual anchor for the section's European dimensions."
+      "rationaleAI": "Europe's history covering two World Wars, Cold War division, and post-1989 integration broadly maps to the interwar period (A), World War II (B), and peace and integration movements in postwar Europe (C.3.b)."
     },
     {
       "articleTitle": "Mao Zedong",
       "relevantPathsAI": [
         "A.3.a",
-        "C.2.d",
-        "C.3.a"
+        "C.2.d.ii"
       ],
-      "rationaleAI": "Mao covers Japanese aggression in China and the civil war context (A.3.a), communist takeover of China (C.2.d.ii), the Cold War Sino-Soviet rift and its consequences (C.3.a.viii), and Chinese communist rule as part of decolonization dynamics (C.3.a.ii). He addresses the high-priority B.2.a path's Chinese dimension."
+      "rationaleAI": "Mao's leadership in civil conflict in China (A.3.a) and communist rule following civil war in China (C.2.d.ii) are directly covered."
     },
     {
       "articleTitle": "Great Depression",
       "relevantPathsAI": [
-        "A.4",
-        "A.4.b",
-        "A.4.c"
+        "A.4.b"
       ],
-      "rationaleAI": "The Great Depression directly addresses A.4.b (economic and political impact of the Great Depression: collapse of world markets and governmental responses) and A.4.c (New Deal policy in the US, War Communism and NEP in the Soviet Union, Nazi economic recovery based on rearmament). It is the primary article for the A.4 economic outline path."
+      "rationaleAI": "The economic and political impact of the Great Depression of the 1930s — collapse of the world market and government responses — is directly covered (A.4.b)."
     },
     {
       "articleTitle": "Iran",
       "relevantPathsAI": [
-        "C.2.e"
+        "C.2.e.ii",
+        "C.3.c.ii"
       ],
-      "rationaleAI": "The Iran article covers the Iranian case in early Cold War competition, including US-Iranian relations and the 1979 Islamic Revolution — directly relevant to C.2.e.ii's focus on the Iranian and Turkish cases in Middle East Cold War dynamics."
+      "rationaleAI": "The Iranian case in the postwar Middle East (C.2.e.ii) and the Iran-Iraq War and Persian Gulf wars (C.3.c.ii) are directly covered."
     },
     {
       "articleTitle": "Vietnam",
       "relevantPathsAI": [
-        "C.2.d",
-        "C.3.c"
+        "C.2.d.iv",
+        "C.3.c.i"
       ],
-      "rationaleAI": "Vietnam covers the First Indochina War, the Cold War–era Vietnam War and partition, and post-1976 reunification — directly addressing C.2.d.iv (transformation of American role in Southeast Asia) and C.3.c.i (Southeast Asia: the Indochina War) which is listed as a specific area of conflict."
+      "rationaleAI": "The transformation of the American role in Southeast Asia (C.2.d.iv) and the Indochina War (C.3.c.i) directly cover the Vietnam conflict."
     },
     {
       "articleTitle": "France",
       "relevantPathsAI": [
-        "A.1.a",
-        "A.2",
-        "B.1",
-        "B.5",
-        "C.2.b"
+        "C.2.f.viii"
       ],
-      "rationaleAI": "France covers the interwar financial crises and German reparations (A.1.a, A.2), France as a nuclear power (C.2.f.viii), WWII defeat and Vichy government plus de Gaulle and Free French (B.1), and French participation in Allied victory (B.5). It addresses the French dimension across multiple outline paths."
+      "rationaleAI": "France as a nuclear power is directly covered in the problem of nuclear energy and the balance of terror (C.2.f.viii)."
     },
     {
       "articleTitle": "Egypt",
       "relevantPathsAI": [
-        "C.2.e",
-        "C.3.c"
+        "C.2.e.iv"
       ],
-      "rationaleAI": "Egypt covers the Suez Crisis of 1956 under Nasser (C.2.e.iv) and the Arab-Israeli conflicts (C.3.c.ii) — directly matching the two Middle East sub-paths highlighted in the outline. It is the key article for the Suez Crisis specifically named in C.2.e.iv."
+      "rationaleAI": "Nasser and the Suez crisis are directly covered (C.2.e.iv) as part of the Middle East in the postwar period."
     },
     {
       "articleTitle": "Turkey",
       "relevantPathsAI": [
-        "C.2.e"
+        "C.2.e.ii"
       ],
-      "rationaleAI": "Turkey covers the Cold War Turkish case as a NATO member and Western-allied secular state, directly addressing C.2.e.ii's focus on the Iranian and Turkish cases as pivotal early Cold War contests in the Middle East region."
+      "rationaleAI": "The Turkish case in the postwar Middle East is directly covered (C.2.e.ii)."
     },
     {
       "articleTitle": "Germany",
       "relevantPathsAI": [
-        "A.1.b",
-        "A.3.a",
         "A.4.c",
-        "B.1",
-        "B.3",
-        "B.4",
-        "C.1",
-        "C.2.b",
-        "C.2.c"
+        "C.2.c.iii",
+        "C.3.a.x"
       ],
-      "rationaleAI": "Germany covers the Weimar Republic and diplomatic reintegration (A.1.b, A.2), Nazi Party rise and the Third Reich (A.3.a, A.4.c), WWII conquests and defeat (B.1, B.3, B.4), the ideological dimensions of WWII (C.1), and postwar partition including the Berlin Blockade (C.2.c.iii). It addresses multiple high-priority C.1 paths including the Nazi-Soviet context."
+      "rationaleAI": "Nazi Germany's economic recovery through rearmament (A.4.c), the Berlin blockade and confrontation in Germany (C.2.c.iii), and the resolution of the German problem including the Berlin Wall, reunification, and Helsinki conference (C.3.a.x)."
     },
     {
       "articleTitle": "Algeria",
       "relevantPathsAI": [
-        "A.3.c",
-        "C.3.a"
+        "C.3.c.iii"
       ],
-      "rationaleAI": "Algeria covers French colonial annexation and independence (1962) — directly relevant to A.3.c (increased demands for self-determination among subject peoples) and C.3.a.ii (decolonization). The Algerian War of Independence was one of the most significant decolonization conflicts of the postwar period."
+      "rationaleAI": "Algeria's independence struggle and civil war connect to sub-Saharan Africa's superpower involvement and civil warfare (C.3.c.iii) and decolonization more broadly."
     },
     {
       "articleTitle": "Ethiopia",
       "relevantPathsAI": [
-        "A.3.b"
+        "A.3.b",
+        "C.3.c.iii"
       ],
-      "rationaleAI": "Ethiopia covers the unchecked Italian invasion of 1935–36 and Haile Selassie's imperial rule, directly addressing A.3.b's explicit mention of 'unchecked Italian aggression against Ethiopia (1935-36)' as a failure of the League of Nations and an instance of Fascist expansionism."
+      "rationaleAI": "Italian aggression against Ethiopia (1935–36) is covered under the 1930s international affairs (A.3.b), and post-colonial African conflicts connect to sub-Saharan Africa (C.3.c.iii)."
     },
     {
       "articleTitle": "Myanmar",
       "relevantPathsAI": [
-        "B.2.b"
+        "C.3.c.i"
       ],
-      "rationaleAI": "Myanmar covers British colonial rule ending with Japanese occupation in WWII — relevant to B.2.b's focus on Japanese conquests in the western Pacific and Southeast Asia (1941–42). Burma was a major theater of the Pacific War and Allied counteroffensive."
+      "rationaleAI": "Myanmar's ongoing civil war connects to Southeast Asian conflict areas (C.3.c.i)."
     },
     {
       "articleTitle": "China",
       "relevantPathsAI": [
         "A.3.a",
-        "B.2.a",
-        "C.2.d",
-        "C.3.a"
+        "C.2.d.ii",
+        "C.3.a.viii"
       ],
-      "rationaleAI": "China covers Japanese aggression in China from 1937 and the civil war context (A.3.a), the clash between US and Japanese interests leading to Pearl Harbor (B.2.a), the CCP–Kuomintang civil war and communist victory (C.2.d.ii), and Sino-Soviet relations and their rift (C.3.a.viii) — addressing multiple high-priority B.2.a paths."
+      "rationaleAI": "Civil conflict in China and Japanese seizure of Manchuria (A.3.a), civil war and communist rule (C.2.d.ii), and Sino-Soviet relations and their rift (C.3.a.viii) are covered."
     },
     {
       "articleTitle": "United Kingdom",
       "relevantPathsAI": [
-        "A.1.b",
-        "B.5",
-        "C.2",
-        "C.3.b"
+        "C.1.b.ii"
       ],
-      "rationaleAI": "The United Kingdom covers interwar foreign policy, Churchill's WWII leadership and the Atlantic Charter (B.5), Britain's role in NATO and the European Economic Community, and post-war decolonization — relevant to multiple section paths including the Atlantic Charter coverage specifically named in B.5 and C.1.i.ii."
+      "rationaleAI": "Churchill's role in WWII and the Atlantic Charter (C.1.b.ii) connect to Allied wartime leadership."
     },
     {
       "articleTitle": "Soviet Union",
       "relevantPathsAI": [
-        "B.1",
-        "B.3.b",
-        "C.1",
+        "A.4.c",
         "C.2.c",
-        "C.3.a"
+        "C.2.f",
+        "C.3.a.iii",
+        "C.3.a.x"
       ],
-      "rationaleAI": "The Soviet Union covers the Nazi-Soviet Nonaggression Pact (C.1.i), Soviet annexations (C.1.i.iii), the Eastern Front and German invasion (B.1), Soviet conquest of Eastern Europe (B.3.b), and the Cold War rivalry including the Iron Curtain (C.2.c) — directly addressing the high-priority C.1.i and C.1.i.iii paths."
+      "rationaleAI": "War Communism and the New Economic Policy (A.4.c), Soviet consolidation of power in Eastern Europe (C.2.c), de-Stalinization (C.2.f.iv), Soviet 'national liberation' support (C.3.a.iii), and the dissolution of the Soviet Union (C.3.a.x)."
     },
     {
       "articleTitle": "Decolonization",
       "relevantPathsAI": [
-        "A.3.c",
-        "C.3.a"
+        "C.3.a.ii",
+        "C.3.a.iv"
       ],
-      "rationaleAI": "Decolonization covers the major post-WWII independence movements across Asia, Africa, and the Caribbean and the roles of the UN and US policy — directly addressing A.3.c (increased demands for self-determination) and C.3.a.ii (decolonization as a structural feature of the postwar world)."
+      "rationaleAI": "Decolonization as a process directly maps to the post-WWII decolonization (C.3.a.ii) and the new states' nonalignment and domestic problems (C.3.a.iv)."
     },
     {
       "articleTitle": "Middle East",
       "relevantPathsAI": [
         "C.2.e",
-        "C.3.c"
+        "C.3.c.ii"
       ],
-      "rationaleAI": "The Middle East article covers the Arab-Israeli conflict, Suez Crisis, petroleum economies, and the Iran-Iraq War — directly addressing C.2.e's coverage of the Middle East 1945–57 and C.3.c.ii's focus on Arab-Israeli wars, petroleum's new role, and the Iran-Iraq and Persian Gulf wars."
+      "rationaleAI": "The Middle East in the postwar period (C.2.e) covering Palestine, Israel, Arabs, and the Suez crisis, and the Arab-Israeli wars, petroleum, and Persian Gulf wars (C.3.c.ii)."
     },
     {
       "articleTitle": "Nigeria",
       "relevantPathsAI": [
-        "C.3.c"
+        "C.3.c.iii"
       ],
-      "rationaleAI": "Nigeria covers post-independence history featuring the Biafra civil war (1967–70) and ethnic strife — directly relevant to C.3.c.iii (Sub-Saharan Africa: superpower involvement, civil warfare, ethnic strife, genocide) as a key case of post-colonial civil conflict."
+      "rationaleAI": "Nigeria's post-independence civil wars and military dictatorships connect to sub-Saharan Africa's civil warfare and ethnic strife (C.3.c.iii)."
     },
     {
       "articleTitle": "Israel",
       "relevantPathsAI": [
-        "C.2.e",
-        "C.3.c"
+        "C.2.e.iii",
+        "C.3.c.ii"
       ],
-      "rationaleAI": "Israel covers the Arab-Israeli wars, Israeli founding, and the Suez Crisis — directly addressing C.2.e.iii (Palestine: Israel and the Arabs), C.2.e.iv (Nasser and the Suez Crisis), and C.3.c.ii (Arab-Israeli wars and the new role of petroleum)."
+      "rationaleAI": "Palestine, Israel, and the Arabs (C.2.e.iii) and the Arab-Israeli wars (C.3.c.ii) are directly covered."
     },
     {
       "articleTitle": "Singapore",
       "relevantPathsAI": [
-        "B.2.b"
+        "C.3.a.iv"
       ],
-      "rationaleAI": "Singapore covers Japanese occupation during WWII and the subsequent Allied counteroffensive — relevant to B.2.b's focus on Japanese conquests in the western Pacific and Southeast Asia (1941–42) and the Allied counteroffensive that led to Japanese defeat."
+      "rationaleAI": "Singapore's post-independence economic transformation connects to the new states' emergence and development following decolonization (C.3.a.iv)."
     },
     {
       "articleTitle": "History of Europe",
       "relevantPathsAI": [
         "A",
         "B",
-        "C"
+        "C.3.b"
       ],
-      "rationaleAI": "History of Europe covers WWI's aftermath, the interwar period, WWII, the Cold War, and post-1945 European integration — providing broad contextual coverage across all three major sections A (interwar), B (WWII), and C (international relations) of the outline."
+      "rationaleAI": "European history from the interwar period through WWII and Cold War integration provides broad context for the period between wars (A), World War II (B), and peace in postwar Europe (C.3.b)."
     },
     {
       "articleTitle": "History of North America",
       "relevantPathsAI": [
-        "B.5",
-        "C.2",
-        "C.3.a"
+        "C.3.a.vi"
       ],
-      "rationaleAI": "History of North America covers both World Wars' domestic impacts, the postwar boom, and the Vietnam War era — relevant to B.5 (Allied wartime leadership) and C.2–C.3.a (US Cold War dominance and policy). It provides the North American context for the transatlantic dimensions of the section."
+      "rationaleAI": "North American history covering the postwar boom and Vietnam War era connects to Latin America in the Cold War and Castro (C.3.a.vi)."
     },
     {
       "articleTitle": "Colonialism",
       "relevantPathsAI": [
         "A.3.c",
-        "C.3.a"
+        "C.3.a.ii"
       ],
-      "rationaleAI": "Colonialism covers the dynamics of European colonial empires and their decolonization after 1945 — directly relevant to A.3.c (realignment of colonial powers and self-determination demands) and C.3.a.ii (decolonization as a structural feature of postwar international relations)."
+      "rationaleAI": "European colonial empires and demands for self-determination (A.3.c) and post-WWII decolonization (C.3.a.ii) are directly covered."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

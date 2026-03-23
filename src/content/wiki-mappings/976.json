@@ -4,17 +4,17 @@
     {
       "articleTitle": "Singapore",
       "relevantPathsAI": [
-        "B.2",
+        "B.2.a",
         "B.2.c"
       ],
-      "rationaleAI": "Covers Singapore's separation from Malaysia (1965) and subsequent development under Lee Kuan Yew's People's Action Party, including rapid economic growth, authoritarian governance, and Singapore's role as a global financial and trade hub. Directly addresses B.2.c on the PAP regime and B.2 on Malaya/Singapore since 1920."
+      "rationaleAI": "Singapore's British colonial rule, Japanese occupation, federation with Malaysia, and withdrawal to form an independent republic (B.2.a), and post-1965 PAP regime and rapid economic growth (B.2.c)."
     },
     {
       "articleTitle": "Bangladesh",
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Covers Bangladesh's emergence as an independent nation in 1971 following the liberation war, the government of Mujibur Rahman, subsequent alternations between parliamentary democracy and military dictatorship, and later administrations — directly mapping to A.4."
+      "rationaleAI": "Bangladesh's emergence as a nation in 1971 through liberation war, Mujibur Rahman's government, martial-law administrations, and return to parliamentary system are directly covered (A.4)."
     },
     {
       "articleTitle": "Myanmar",
@@ -23,7 +23,7 @@
         "B.1.a",
         "B.1.b"
       ],
-      "rationaleAI": "Covers Burma's British colonial period, emergence of Burmese nationalism, Japanese occupation (1942–45), postwar independence under U Nu, and decades of military government under Ne Win and successors — directly addressing B.1.a and B.1.b."
+      "rationaleAI": "Myanmar's emergence of nationalism and British response (B.1.a), postwar independence under U Nu, military government under Ne Win, and continued military repression (B.1.b)."
     },
     {
       "articleTitle": "Pakistan",
@@ -32,18 +32,18 @@
         "A.3.a",
         "A.3.b"
       ],
-      "rationaleAI": "Covers Pakistan's establishment in 1947 and its alternating civilian and military governments including Jinnah, Ayub Khan, Bhutto, Zia, and Musharraf, as well as the 1971 secession of Bangladesh — directly addressing A.3.a and A.3.b."
+      "rationaleAI": "Pakistan's national consolidation under Jinnah (A.3.a), military governments, border conflicts with India, civil war leading to Bangladesh's secession, and alternating civilian and military rule (A.3.b)."
     },
     {
       "articleTitle": "Vietnam",
       "relevantPathsAI": [
         "B.4",
+        "B.4.a",
         "B.4.b",
         "B.4.c",
-        "B.4.d",
-        "B.4.e"
+        "B.4.d"
       ],
-      "rationaleAI": "Covers French Indochina, Ho Chi Minh's resistance, the First Indochina War, Geneva Accords, the Vietnam War division between North and South, US intervention, reunification in 1976, and subsequent Doi Moi reforms — spanning the full range of B.4 sub-paths."
+      "rationaleAI": "Vietnam's nationalist movements, Ho Chi Minh's government, French reconquest attempt, Geneva Accords, US military intervention, civil war, reunification, and subsequent economic reforms (B.4.a–d) are comprehensively covered."
     },
     {
       "articleTitle": "Mahatma Gandhi",
@@ -51,16 +51,15 @@
         "A.1",
         "A.1.a"
       ],
-      "rationaleAI": "Gandhi is the central figure of A.1.a, covering his satyagraha movement of nonviolent resistance, mass mobilization campaigns including the Salt March and Non-Cooperation movement, and the push for Indian independence from British rule up to 1947."
+      "rationaleAI": "Gandhi's satyagraha movement of nonviolent resistance, Round Table Conference, and intensified agitation for Indian independence are directly covered (A.1.a)."
     },
     {
       "articleTitle": "Malaysia",
       "relevantPathsAI": [
-        "B.2",
         "B.2.a",
         "B.2.b"
       ],
-      "rationaleAI": "Covers British Malaya's colonial economy, Japanese occupation, independence in 1957, the formation and expansion of the Malaysian federation, communal tensions, the New Economic Policy, and Mahathir's administration — directly addressing B.2.a and B.2.b."
+      "rationaleAI": "Malaya's British economic policies, Japanese occupation, Federation of Malaya, creation of Malaysia, and post-1965 United Malays National Organization dominance (B.2.a–b)."
     },
     {
       "articleTitle": "Thailand",
@@ -69,19 +68,19 @@
         "B.3.a",
         "B.3.b"
       ],
-      "rationaleAI": "Covers the constitutional monarchy established in 1932, militaristic nationalism and Japanese occupation during WWII, postwar political instability, and recurring cycles of military domination and civilian government — directly mapping to B.3.a and B.3.b."
+      "rationaleAI": "Thailand's post-WWI developments, constitutional monarchy, Japanese occupation (B.3.a), and post-war political instability, military domination, and return to civilian government (B.3.b)."
     },
     {
       "articleTitle": "India",
       "relevantPathsAI": [
         "A.1",
+        "A.2",
         "A.1.a",
         "A.1.b",
-        "A.2",
         "A.2.a",
         "A.2.b"
       ],
-      "rationaleAI": "Covers the full arc from Gandhi's independence movement and the Government of India Act (1935) through partition (1947) to Nehru's parliamentary system, state reorganization, foreign policy nonalignment, the Kashmir dispute, and the 1962 border conflict with China — addressing A.1 and A.2 comprehensively."
+      "rationaleAI": "India's independence movement and Gandhi's satyagraha (A.1.a), partition and independence (A.1.b), post-independence parliamentary system under Nehru (A.2.a), and foreign policy including Kashmir dispute and China conflict (A.2.b)."
     },
     {
       "articleTitle": "Indonesia",
@@ -90,7 +89,7 @@
         "C.1.a",
         "C.1.b"
       ],
-      "rationaleAI": "Covers Dutch colonial administration, nationalist movements, Japanese occupation, Sukarno's proclamation of independence (1945), Dutch attempts to regain control, formal independence (1949), Guided Democracy, the 1965 coup, Suharto's long rule, and democratization from 1998 — directly addressing all C.1 sub-paths."
+      "rationaleAI": "Indonesia's Dutch suppression of revolts, Japanese occupation, Sukarno's independence proclamation (C.1.a), and Guided Democracy, Suharto regime, East Timor, and democratization (C.1.b)."
     },
     {
       "articleTitle": "Philippines",
@@ -98,15 +97,14 @@
         "C.2",
         "C.2.a"
       ],
-      "rationaleAI": "Covers U.S. administration in the 1920s–30s, the growth of nationalist parties, commonwealth status (1935), Japanese occupation (1941–45), and the return to U.S. control — directly addressing C.2 and C.2.a."
+      "rationaleAI": "The Philippines' US administration, growth of nationalist parties, commonwealth status, Japanese occupation, and return of US control (C.2.a)."
     },
     {
       "articleTitle": "Mao Zedong",
       "relevantPathsAI": [
-        "A.6",
-        "A.2.b"
+        "A.6"
       ],
-      "rationaleAI": "Mao's government directed China's invasion of Tibet (1950) and assertion of complete control after 1959, covered in A.6, and his leadership underlies the 1962 Sino-Indian border conflict referenced in A.2.b's treatment of Nehru's foreign policy."
+      "rationaleAI": "Mao's China and the 1962 border conflict with India and Chinese hegemony over Tibet (A.6) connect to South Asian regional dynamics."
     },
     {
       "articleTitle": "World War II",
@@ -114,56 +112,51 @@
         "A.1.b",
         "B.1.a",
         "B.2.a",
-        "C.1.a",
+        "B.3.a",
+        "B.4.a",
+        "C.1.a.i",
         "C.2.a"
       ],
-      "rationaleAI": "WWII's Pacific theatre was pivotal across this section: Japanese occupation of Burma (B.1.a), Malaya and Singapore (B.2.a), Indonesia (C.1.a), and the Philippines (C.2.a) all reshaped the path to decolonization and independence, and wartime events also affected the Indian independence movement (A.1.b)."
+      "rationaleAI": "WWII's impact covers India's wartime contributions and partition (A.1.b), Burma's Japanese occupation (B.1.a), Malaya's Japanese occupation (B.2.a), Thailand's Japanese occupation (B.3.a), French Indochina under Japanese occupation (B.4.a), Indonesia's Japanese occupation (C.1.a.i), and the Philippines' Japanese occupation (C.2.a)."
     },
     {
       "articleTitle": "British Empire",
       "relevantPathsAI": [
         "A.1",
-        "A.1.a",
-        "A.1.b",
-        "A.5",
-        "B.1",
-        "B.2",
+        "B.1.a",
         "B.2.a"
       ],
-      "rationaleAI": "The British Empire is the colonial authority against which India, Burma, Malaya, Singapore, and Ceylon all sought independence — covering the Government of India Act, constitutional reforms, and the transition to dominion status and independence across A.1, A.5, B.1, and B.2.a."
+      "rationaleAI": "British imperial governance and decolonization in India (A.1), Burma (B.1.a), and Malaya (B.2.a) are directly covered."
     },
     {
       "articleTitle": "Cold War",
       "relevantPathsAI": [
-        "A.2.b",
-        "B.1.b",
-        "B.2.b",
         "B.4.c",
-        "B.4.d"
+        "C.1.b"
       ],
-      "rationaleAI": "The Cold War provides the geopolitical context for Nehru's nonalignment policy (A.2.b), the communist insurgency in Malaya (B.2.a), and the Vietnam War's North-South division, U.S. military intervention, and ultimate communist victory (B.4.c–d)."
+      "rationaleAI": "Cold War dynamics cover US military intervention in Vietnam (B.4.c) and the Suharto regime's mass execution of communists in Indonesia (C.1.b)."
     },
     {
       "articleTitle": "Japan",
       "relevantPathsAI": [
-        "A.1.b",
         "B.1.a",
         "B.2.a",
         "B.3.a",
-        "C.1.a",
+        "B.4.a",
+        "C.1.a.i",
         "C.2.a"
       ],
-      "rationaleAI": "Japan's wartime occupation of Burma, Malaya, Singapore, Thailand, Indonesia, and the Philippines is central to B.1.a, B.2.a, B.3.a, C.1.a, and C.2.a, and the effects of WWII on the Indian independence movement are addressed in A.1.b."
+      "rationaleAI": "Japan's wartime occupations across Southeast Asia — Burma (B.1.a), Malaya (B.2.a), Thailand (B.3.a), Indochina (B.4.a), Indonesia (C.1.a.i), and the Philippines (C.2.a) — are directly covered."
     },
     {
       "articleTitle": "China",
       "relevantPathsAI": [
-        "A.2.b",
-        "A.6"
+        "A.6",
+        "B.4.d"
       ],
-      "rationaleAI": "China's invasion of Tibet (1950) and assertion of complete control (1959) directly addresses A.6, and the 1962 Sino-Indian border incursion is a key element of Nehru's foreign policy in A.2.b."
+      "rationaleAI": "Chinese invasion and hegemony over Tibet (A.6) and Vietnam's border war with China (B.4.d) are directly covered."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

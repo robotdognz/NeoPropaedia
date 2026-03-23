@@ -4,12 +4,14 @@
     {
       "articleTitle": "Mao Zedong",
       "relevantPathsAI": [
-        "A.4.c",
         "A.4.d",
+        "A.5",
+        "A.5.a",
         "A.5.b",
-        "A.5.c"
+        "A.5.c",
+        "A.5.e"
       ],
-      "rationaleAI": "Mao is the central figure of section 975's A division from the development of Maoist ideology (A.4.d) through the Great Leap Forward, Cultural Revolution (A.5.c.iii), and the challenge to Soviet communism (A.5.c.iv); his death in 1976 marks a turning point in A.5.e."
+      "rationaleAI": "Mao's development of Maoist ideology emphasizing peasant revolution (A.4.d), the civil war and Communist victory (A.5.a), the Great Leap Forward (A.5.c.i), the Cultural Revolution (A.5.c.iii), and Mao's death and its aftermath (A.5.e)."
     },
     {
       "articleTitle": "China",
@@ -19,50 +21,50 @@
         "A.2",
         "A.3",
         "A.4",
-        "A.5",
-        "A.6"
+        "A.5"
       ],
-      "rationaleAI": "China is the direct subject of the entire A division, from the early republic (1912–20) through the Kuomintang-Communist struggle, the war against Japan, PRC formation, Great Leap Forward, Cultural Revolution, Deng era reforms, and the Nationalist government in Taiwan."
+      "rationaleAI": "China's full 20th-century history from the republic's development (A.1), interwar years (A.2), war against Japan (A.3), ideological development (A.4), and emergence of the People's Republic (A.5) are comprehensively covered."
     },
     {
       "articleTitle": "South Korea",
       "relevantPathsAI": [
+        "C",
+        "C.1",
         "C.2",
+        "C.2.a",
         "C.2.b",
         "C.2.c"
       ],
-      "rationaleAI": "South Korea is the direct subject of C.2, covering the Korean War (C.2.b), the regimes of Syngman Rhee and Park Chung-hee, democratisation, and economic development through the administrations of Kim Dae-jung and Roh Moo-hyun (C.2.c)."
+      "rationaleAI": "South Korea's Japanese annexation (C.1), division after WWII and the Korean War (C.2.a–b), and post-armistice development through economic growth and democratic transition (C.2.c)."
     },
     {
       "articleTitle": "Cold War",
       "relevantPathsAI": [
         "A.5.d",
-        "B.2.d",
-        "C.2.a",
         "C.2.b"
       ],
-      "rationaleAI": "The Cold War frames A.5.d (China's international relations and UN representation), B.2.d.ii (Japan's post-independence international relations, radical political movements, and politics of moderation), and C.2.a–b (division of Korea and the Korean War as a Cold War proxy conflict)."
+      "rationaleAI": "Cold War dynamics cover China's international relations including rapprochement with the US, friction with the Soviet Union (A.5.d), and the Korean War as US and UN intervention against North Korean invasion (C.2.b)."
     },
     {
       "articleTitle": "United States",
       "relevantPathsAI": [
         "A.3.b",
         "A.5.d",
-        "B.2.d",
-        "C.2.a",
-        "C.2.b"
+        "A.6",
+        "B.1.d",
+        "C.2"
       ],
-      "rationaleAI": "The United States is explicitly cited as a central actor: providing military aid to China (A.3.b), rapprochement with the PRC (A.5.d), occupying and democratising Japan 1945–52 (B.2.d.i), economic tensions with Japan (B.2.d.iii), and military intervention in the Korean War (C.2.b)."
+      "rationaleAI": "US military aid during the war against Japan (A.3.b), rapprochement and diplomatic relations (A.5.d), support for Nationalist Taiwan (A.6), US occupation and alliance with Japan (B.1.d), and US intervention in Korea (C.2)."
     },
     {
       "articleTitle": "World War II",
       "relevantPathsAI": [
         "A.3",
+        "B.2",
         "B.2.b",
-        "B.2.c",
-        "C.1"
+        "B.2.c"
       ],
-      "rationaleAI": "WWII is directly covered across multiple nodes: Communist-Nationalist cooperation and the war against Japan (A.3), Japan's Axis alignment and Pacific offensives (B.2.b), Japan's surrender (B.2.c), and the end of Japanese colonial rule in Korea (C.1)."
+      "rationaleAI": "The war against Japan (A.3), Japan's alignment with Axis Powers and outbreak of war with the US (B.2.b), and Allied counterattack culminating in atomic bombing and surrender (B.2.c)."
     },
     {
       "articleTitle": "Hong Kong",
@@ -70,7 +72,7 @@
         "A.5.d",
         "A.5.e"
       ],
-      "rationaleAI": "Hong Kong is explicitly named in A.5.d (the 1984 Hong Kong agreement with Great Britain) and A.5.e (restoration of Chinese rule in Hong Kong in 1997 under Deng Xiaoping's successors)."
+      "rationaleAI": "The Hong Kong agreement with Great Britain (1984) and restoration of Chinese rule in 1997 are directly covered under China's international relations (A.5.d) and internal affairs (A.5.e)."
     },
     {
       "articleTitle": "Japan",
@@ -83,7 +85,7 @@
         "B.2.c",
         "B.2.d"
       ],
-      "rationaleAI": "Japan is the direct subject of the entire B division, covering early-20th-century constitutional government, the rise of militarism and imperial expansion, WWII defeat and US occupation, postwar democratisation, and the economic miracle and long LDP dominance."
+      "rationaleAI": "Japan's early 20th-century constitutional government (B.1), rise and fall of Imperial Japan (B.2), militarist rise and WWII (B.2.a–c), and postwar democratization, economic growth, and international relations (B.2.d)."
     },
     {
       "articleTitle": "East Asia",
@@ -92,23 +94,22 @@
         "B",
         "C"
       ],
-      "rationaleAI": "East Asia as a regional article encompasses all three divisions of section 975 — China (A), Japan (B), and Korea (C) — providing geographic, cultural, and historical context for the entire section."
+      "rationaleAI": "East Asia as a geocultural region encompassing China, Japan, and Korea, with Confucian cultural traditions and Cold War division, provides broad context for the entire section."
     },
     {
       "articleTitle": "World War I",
       "relevantPathsAI": [
-        "A.1.a",
-        "A.1"
+        "A.1.a"
       ],
-      "rationaleAI": "WWI is explicitly the subject of A.1.a (Chinese involvement in WWI and early power struggles) and A.1.i (Japanese territorial gains during the war and Yuan Shih-k'ai's ambitions), with A.1.i.ii covering China's conflict over war entry and the formation of a rival southern government."
+      "rationaleAI": "Chinese involvement in World War I, Japanese gains, and the formation of a rival southern government are directly covered (A.1.a)."
     },
     {
       "articleTitle": "Beijing",
       "relevantPathsAI": [
-        "A.5.c",
+        "A.5.c.iii",
         "A.5.e"
       ],
-      "rationaleAI": "Beijing (Peking) is directly named in A.5.c.iii (resistance to Peking during the Cultural Revolution) and serves as the political and administrative capital across the PRC period covered by A.5, including the 1989 pro-democracy repression described in A.5.e."
+      "rationaleAI": "Beijing as China's political center connects to resistance to Peking during the Cultural Revolution (A.5.c.iii) and the forcible repression of the pro-democracy movement in 1989 (A.5.e)."
     },
     {
       "articleTitle": "Karl Marx",
@@ -116,61 +117,53 @@
         "A.4",
         "A.4.d"
       ],
-      "rationaleAI": "Section A.4 covers the development of Kuomintang and Chinese Communist ideologies; A.4.d specifically covers Maoist ideology as a Chinese adaptation of Marxism-Leninism, making Marx's foundational theory directly relevant to understanding the ideological debates outlined."
+      "rationaleAI": "Marx's theories provide the ideological foundation for the development of Kuomintang and Chinese Communist ideologies, particularly Mao's adaptation of Marxism-Leninism (A.4, A.4.d)."
     },
     {
       "articleTitle": "Joseph Stalin",
       "relevantPathsAI": [
-        "A.5.c",
-        "C.2.a"
+        "A.5.c.iv",
+        "A.5.d"
       ],
-      "rationaleAI": "Stalin's USSR is the reference point for A.5.c.iv (the Chinese challenge to Soviet communism in the Maoist era) and for C.2.a (Soviet military aid to North Korea and the US-Soviet dispute over the two Korean republics after 1945)."
+      "rationaleAI": "Stalin's Soviet Union as the model for Chinese communism and the Sino-Soviet friction connect to the Chinese challenge to Soviet Communism (A.5.c.iv) and friction with the Soviet Union (A.5.d)."
     },
     {
       "articleTitle": "Russia",
       "relevantPathsAI": [
-        "A.5.c",
-        "A.5.d",
-        "C.2.a"
+        "A.5.d"
       ],
-      "rationaleAI": "Russia/USSR figures in A.5.c.iv (friction between China and the Soviet Union, the Sino-Soviet split), A.5.d (continued friction with the USSR in China's international relations), and C.2.a (Soviet military aid and the division of Korea)."
+      "rationaleAI": "Russia's Soviet-era relations with China, including friction and the Sino-Soviet split, are covered under China's international relations (A.5.d)."
     },
     {
       "articleTitle": "Imperialism",
       "relevantPathsAI": [
-        "A.1",
-        "A.1.a",
         "A.2.b",
-        "B.2.a",
-        "B.2.b"
+        "C.1"
       ],
-      "rationaleAI": "Imperialism is central to A.1 (the continued presence of foreign interests in China, Yuan's monarchist ambitions amid Japanese pressure) and A.2.b (foreign interests and warlord-era China), as well as Japan's own imperialist expansion described in B.2.a–b (Greater East Asia Co-Prosperity Sphere, Axis alignment)."
+      "rationaleAI": "Japanese imperialism including the continued presence of foreign interests in China (A.2.b) and Japanese military control and colonial rule over Korea (C.1)."
     },
     {
       "articleTitle": "Vietnam",
       "relevantPathsAI": [
-        "B.2.b",
-        "B.2.c"
+        "A.5.d"
       ],
-      "rationaleAI": "Japan's expansion into French Indochina (including Vietnam) is part of the Greater East Asia Co-Prosperity Sphere proclaimed in B.2.b and Japan's Southeast Asian offensives in B.2.c, giving Vietnam relevance as a theatre of Japanese imperial expansion."
+      "rationaleAI": "Vietnam's relationship with China including the border war (1979) connects to China's international relations and friction with neighboring states (A.5.d)."
     },
     {
       "articleTitle": "Philippines",
       "relevantPathsAI": [
         "B.2.c"
       ],
-      "rationaleAI": "The Philippines is one of the key territories captured in Japan's early Southeast Asian offensives described in B.2.c, and its American administration meant the Philippines was a primary US-Japan theatre, directly relevant to Japan's initial successes and eventual surrender."
+      "rationaleAI": "Japanese conquests in the western Pacific and Southeast Asia (B.2.c) included the Philippines as part of the Japanese wartime expansion."
     },
     {
       "articleTitle": "Colonialism",
       "relevantPathsAI": [
-        "A.1",
-        "A.2.b",
         "C.1"
       ],
-      "rationaleAI": "Colonial presence by Western powers and Japan provides the structural backdrop for Chinese nationalist resistance (A.1, A.2.b — foreign interests in China, treaty ports) and directly describes the content of C.1 (Japanese colonial military rule in Korea 1910–45)."
+      "rationaleAI": "Japanese colonial rule over Korea (1910–45) with military control and suppression of independence movements directly covers Korea under Japanese rule (C.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }
