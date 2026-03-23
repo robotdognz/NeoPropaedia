@@ -1,6 +1,7 @@
 Propaedia TODO:
 
-    - Add BBC In Our Time podcast episodes to the database and mappings as well, would be good to have a different format in there
+    - Remap BBC In Our Time podcast episodes
+        - Why are so many of them not mapped at all?
 
     - Look into how safe we can make the users preferences, maybe an export button somewhere as well. It would really suck to lose reading progress too easily
     

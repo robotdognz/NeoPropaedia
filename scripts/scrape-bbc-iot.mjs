@@ -117,17 +117,18 @@ function parseEpisodePage(html) {
         const durationSeconds = parseDurationISO(durationISO);
 
         // Try to get longer description from the page
+        // BBC uses synopsis-toggle__long for the full description
         const descriptionPatterns = [
+          /synopsis-toggle__long[\s\S]*?<p>([\s\S]*?)<\/p>/,
           /class="[^"]*programme-page__long-synopsis[^"]*"[^>]*>([\s\S]*?)<\/div>/,
           /class="[^"]*long-synopsis[^"]*"[^>]*>([\s\S]*?)<\/div>/,
-          /data-testid="long-synopsis"[^>]*>([\s\S]*?)<\/div>/,
         ];
         let longDescription = null;
         for (const pattern of descriptionPatterns) {
           const synopsisMatch = html.match(pattern);
           if (!synopsisMatch) continue;
           const text = decodeEntities(synopsisMatch[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim());
-          if (text && (!longDescription || text.length > longDescription.length)) {
+          if (text && text.length > 50 && (!longDescription || text.length > longDescription.length)) {
             longDescription = text;
           }
         }

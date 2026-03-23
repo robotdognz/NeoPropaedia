@@ -24,7 +24,7 @@ npm run dev
 
 ## AI Mapping Pipeline
 
-The repository includes AI-assisted pipeline scripts for generating `summaryAI` and exact-leaf Propaedia mappings for VSI and Wikipedia:
+The repository includes AI-assisted pipeline scripts for generating `summaryAI` and exact-leaf Propaedia mappings for VSI, Wikipedia, and BBC In Our Time:
 
 - `scripts/generate-summary-ai.mjs`
 - `scripts/generate-mappings-ai.mjs`
@@ -34,6 +34,7 @@ Useful operator commands:
 ```bash
 # Summary generation / validation
 node scripts/generate-summary-ai.mjs --type vsi
+node scripts/generate-summary-ai.mjs --type iot
 node scripts/generate-summary-ai.mjs --validate
 
 # Mapping validation / coverage

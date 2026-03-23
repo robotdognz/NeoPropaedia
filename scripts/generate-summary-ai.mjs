@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 /**
- * Generates summaryAI fields for VSI and Wikipedia catalog entries.
+ * Generates summaryAI fields for VSI, Wikipedia, and BBC In Our Time catalog entries.
  *
  * Usage:
  *   node scripts/generate-summary-ai.mjs --type vsi       # Process VSI catalog
  *   node scripts/generate-summary-ai.mjs --type wikipedia # Process Wikipedia catalog
+ *   node scripts/generate-summary-ai.mjs --type iot       # Process BBC In Our Time catalog
  *   node scripts/generate-summary-ai.mjs --type vsi --limit 10  # Test with 10 entries
  *   node scripts/generate-summary-ai.mjs --type vsi --force     # Regenerate all (even existing)
  *   node scripts/generate-summary-ai.mjs --validate              # Validate existing summaries
@@ -51,8 +52,8 @@ const limitFlag = args.includes('--limit') ? parseInt(args[args.indexOf('--limit
 const forceFlag = args.includes('--force');
 const validateFlag = args.includes('--validate');
 
-if (!validateFlag && (!typeFlag || !['vsi', 'wikipedia'].includes(typeFlag))) {
-  console.error('Usage: node scripts/generate-summary-ai.mjs --type vsi|wikipedia [--limit N] [--force]');
+if (!validateFlag && (!typeFlag || !['vsi', 'wikipedia', 'iot'].includes(typeFlag))) {
+  console.error('Usage: node scripts/generate-summary-ai.mjs --type vsi|wikipedia|iot [--limit N] [--force]');
   console.error('       node scripts/generate-summary-ai.mjs --validate');
   process.exit(1);
 }
@@ -160,6 +161,19 @@ function prepareWikiEntries() {
   }));
 }
 
+function prepareIotEntries() {
+  const catalog = JSON.parse(fs.readFileSync('src/data/iot-catalog.json', 'utf8'));
+  return catalog.episodes.map((episode) => ({
+    id: episode.pid,
+    title: episode.title,
+    synopsis: episode.description || episode.synopsis || '',
+    shortSynopsis: episode.synopsis || '',
+    datePublished: episode.datePublished || '',
+    durationSeconds: episode.durationSeconds || null,
+    existing: episode.summaryAI,
+  }));
+}
+
 function formatEntryForPrompt(entry, type) {
   if (type === 'vsi') {
     return [
@@ -170,7 +184,9 @@ function formatEntryForPrompt(entry, type) {
       entry.keywords ? `Keywords: ${entry.keywords}` : null,
       `Abstract: ${entry.source}`,
     ].filter(Boolean).join('\n');
-  } else {
+  }
+
+  if (type === 'wikipedia') {
     return [
       `ID: ${entry.id}`,
       `Title: ${entry.title}`,
@@ -180,6 +196,15 @@ function formatEntryForPrompt(entry, type) {
       `Extract: ${entry.source}`,
     ].filter(Boolean).join('\n');
   }
+
+  return [
+    `ID: ${entry.id}`,
+    `Title: ${entry.title}`,
+    entry.datePublished ? `Broadcast date: ${entry.datePublished}` : null,
+    entry.durationSeconds ? `Duration seconds: ${entry.durationSeconds}` : null,
+    entry.shortSynopsis && entry.shortSynopsis !== entry.synopsis ? `Short synopsis: ${entry.shortSynopsis}` : null,
+    `Programme description: ${entry.synopsis}`,
+  ].filter(Boolean).join('\n');
 }
 
 // --- API call ---
@@ -248,6 +273,23 @@ function writeWikiResults(summaries) {
   return updated;
 }
 
+function writeIotResults(summaries) {
+  const catalog = JSON.parse(fs.readFileSync('src/data/iot-catalog.json', 'utf8'));
+  const lookup = new Map(summaries.map((s) => [s.id, s.summaryAI]));
+  let updated = 0;
+
+  for (const episode of catalog.episodes) {
+    if (lookup.has(episode.pid)) {
+      episode.summaryAI = lookup.get(episode.pid);
+      episode._summaryGeneratedAt = new Date().toISOString().split('T')[0];
+      updated++;
+    }
+  }
+
+  fs.writeFileSync('src/data/iot-catalog.json', JSON.stringify(catalog, null, 2) + '\n');
+  return updated;
+}
+
 // --- Validation ---
 const SECTION_REF_RE = /\b(?:Section|Part|Division)\s+\d/i;
 const FRAMING_RE = /\b(?:This book|This article|A Very Short Introduction|This VSI)\b/i;
@@ -305,6 +347,20 @@ function runValidation() {
     }
   }
 
+  // BBC In Our Time
+  const iotCatalog = JSON.parse(fs.readFileSync('src/data/iot-catalog.json', 'utf8'));
+  const iotWithSummary = iotCatalog.episodes.filter((episode) => episode.summaryAI);
+  console.log(`BBC In Our Time: ${iotWithSummary.length}/${iotCatalog.episodes.length} have summaryAI`);
+
+  for (const episode of iotWithSummary) {
+    totalChecked++;
+    const issues = validateSummary(episode.pid, episode.summaryAI);
+    if (issues.length > 0) {
+      totalIssues++;
+      console.log(`  ${episode.title}: ${issues.join(', ')}`);
+    }
+  }
+
   console.log(`\nChecked: ${totalChecked}, Issues: ${totalIssues}`);
   if (totalIssues === 0 && totalChecked > 0) console.log('All summaries passed validation.');
 }
@@ -321,7 +377,11 @@ async function main() {
   console.log(`Generating summaryAI for ${typeFlag} entries...`);
   console.log(`Model: ${MODEL}, Batch size: ${BATCH_SIZE}, Concurrency: ${CONCURRENCY}`);
 
-  const allEntries = typeFlag === 'vsi' ? prepareVsiEntries() : prepareWikiEntries();
+  const allEntries = typeFlag === 'vsi'
+    ? prepareVsiEntries()
+    : typeFlag === 'wikipedia'
+      ? prepareWikiEntries()
+      : prepareIotEntries();
   const entries = forceFlag
     ? allEntries.slice(0, limitFlag)
     : allEntries.filter((e) => !e.existing).slice(0, limitFlag);
@@ -356,7 +416,11 @@ async function main() {
     }
 
     // Save incrementally after each chunk
-    const writer = typeFlag === 'vsi' ? writeVsiResults : writeWikiResults;
+    const writer = typeFlag === 'vsi'
+      ? writeVsiResults
+      : typeFlag === 'wikipedia'
+        ? writeWikiResults
+        : writeIotResults;
     const updated = writer(allSummaries);
     console.log(`  Saved ${updated} summaries so far.`);
   }
