@@ -5,29 +5,25 @@
       "articleTitle": "Government",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.3",
-        "A.4",
-        "A.5",
-        "A.6",
         "B"
       ],
-      "rationaleAI": "Comprehensively covers all functional dimensions of how governments exercise power across A.1–A.6, including security, regulatory, supervisory, law enforcement, and enterprising functions. The broad treatment of government's role in production, public administration, and policy directly covers the priority path B."
+      "rationaleAI": "Government's exercise of binding authority through legislative, executive, and judicial branches encompasses the ways political power is exercised (A) and government's role in production and consumption (B)."
     },
     {
       "articleTitle": "Democracy",
       "relevantPathsAI": [
-        "C",
+        "A",
         "C.1"
       ],
-      "rationaleAI": "Democracy's core mechanisms — elections, popular sovereignty, constitutional mandates, and peaceful transfer of power — directly cover C.1's peaceful methods of changing government form through electoral process and constitutional mandate."
+      "rationaleAI": "Democracy's popular sovereignty and electoral processes address how political power is exercised (A) and peaceful changes of government by electoral process (C.1)."
     },
     {
       "articleTitle": "Dictatorship",
       "relevantPathsAI": [
+        "A",
         "C"
       ],
-      "rationaleAI": "Analyzes how governments are established and maintained by extra-constitutional means and how dictatorships arise from regime change, directly addressing C's methods of changing government form, including by non-peaceful means."
+      "rationaleAI": "Dictatorship's exercise of absolute power through elite cooptation and opposition repression addresses how political power is exercised (A), while coup theory connects to methods of changing the form of government (C)."
     },
     {
       "articleTitle": "Police",
@@ -35,14 +31,15 @@
         "A.1",
         "A.5"
       ],
-      "rationaleAI": "Police are the primary instrument of A.1 (internal security) and A.5 (law enforcement and corrective functions of government), including the application of sanctions and the state's monopoly on violence in domestic contexts."
+      "rationaleAI": "Police as state bodies empowered to enforce law and maintain public order address internal security functions (A.1) and law enforcement and corrective functions of government (A.5)."
     },
     {
       "articleTitle": "Military",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.2"
       ],
-      "rationaleAI": "The military's central function in providing external security and deterrence directly covers A.1's external security function of government, including defense, deterrence, and coercive capability maintenance."
+      "rationaleAI": "The military as a state-organized armed force for defense and deterrence addresses internal and external security functions (A.1) and the conduct of foreign relations with other sovereign states (A.2)."
     },
     {
       "articleTitle": "Welfare spending",
@@ -50,31 +47,28 @@
         "A.6",
         "B"
       ],
-      "rationaleAI": "Government welfare expenditure — health, education, old age, disability — is a central case of A.6 (enterprising functions of government) and the priority path B (government's role in production and consumption through public provision of services and transfers)."
+      "rationaleAI": "Government-funded social insurance and social assistance addressing basic needs exemplify enterprising functions of government (A.6) and government's role in production and consumption (B)."
     },
     {
       "articleTitle": "Trade union",
       "relevantPathsAI": [
-        "A.4",
-        "B"
+        "A.4"
       ],
-      "rationaleAI": "Trade unions operate within frameworks of government regulatory functions (A.4) covering labor standards and collective bargaining law, and intersect with B through their role shaping government's relationship to labor markets and consumption."
+      "rationaleAI": "Trade unions negotiating wages and working conditions through collective bargaining connect to regulatory functions of government in establishing and enforcing labor standards (A.4)."
     },
     {
       "articleTitle": "Human rights",
       "relevantPathsAI": [
-        "A.3",
-        "A.4",
-        "A.5"
+        "A.4"
       ],
-      "rationaleAI": "Human rights frameworks define the limits and obligations of governmental power in A.3 (supervisory resolution of conflicts), A.4 (regulatory standards enforcement), and A.5 (sanctions and penalties constrained by rights protections)."
+      "rationaleAI": "Human rights frameworks enforced through UN treaty bodies, international courts, and national legislation address regulatory functions of government in establishing and enforcing standards (A.4)."
     },
     {
       "articleTitle": "Crime",
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Crime directly engages A.5's law enforcement and corrective functions — criminal justice, sanctions, incapacitation, rehabilitation — as the state's primary response to unlawful acts via its coercive apparatus."
+      "rationaleAI": "Crime as unlawful acts punishable by state authority, with criminal justice encompassing prevention, law enforcement, sentencing, and rehabilitation, directly addresses law enforcement and corrective functions of government (A.5)."
     },
     {
       "articleTitle": "Imperialism",
@@ -82,62 +76,56 @@
         "A.1",
         "A.2"
       ],
-      "rationaleAI": "Imperialism covers how states exercise power externally through military coercion, economic dominance, and diplomatic influence (A.1 external security, A.2 foreign relations), establishing hegemony over foreign territories."
+      "rationaleAI": "Imperialism as extension of power over foreign territories through military and economic coercion addresses external security functions (A.1) and the conduct of foreign relations (A.2)."
     },
     {
       "articleTitle": "Ideology",
       "relevantPathsAI": [
-        "C"
+        "A"
       ],
-      "rationaleAI": "Ideology motivates and legitimizes methods of changing government form — revolutionary ideologies (Marxism, fascism, liberalism) drive both C.1 peaceful and violent regime transformation, linking belief systems to political change processes."
+      "rationaleAI": "Ideology as a system of beliefs legitimizing social arrangements and reproducing power relations broadly connects to the ways in which political power is exercised (A)."
     },
     {
       "articleTitle": "Monarchy",
       "relevantPathsAI": [
-        "C",
-        "C.1"
+        "C"
       ],
-      "rationaleAI": "Monarchy addresses succession law and how monarchical governments are maintained or changed — hereditary versus elective succession and constitutional versus absolute forms illuminate C and C.1's electoral and constitutional mandate mechanisms."
+      "rationaleAI": "Monarchy's hereditary succession and constitutional versus absolute forms address methods of changing and maintaining the form of government (C)."
     },
     {
       "articleTitle": "Anarchism",
       "relevantPathsAI": [
         "C"
       ],
-      "rationaleAI": "Anarchism advocates the abolition of government itself as the ultimate method of changing the form of government (C), offering the most radical theoretical framework for regime transformation through elimination of state structures."
+      "rationaleAI": "Anarchism's advocacy for abolition of the state connects to methods of changing the form of government (C) through revolutionary transformation."
     },
     {
       "articleTitle": "Socialism",
       "relevantPathsAI": [
-        "B",
-        "C"
+        "B"
       ],
-      "rationaleAI": "Socialism's core concern with social ownership and government's role in production directly addresses the priority path B, while its reform-versus-revolution debates cover C's methods of changing government form from electoral democratic to revolutionary approaches."
+      "rationaleAI": "Socialism's planned and state-directed economic models directly address government's role in production and consumption (B)."
     },
     {
       "articleTitle": "Liberty",
       "relevantPathsAI": [
-        "A.4",
-        "A.5"
+        "A.4"
       ],
-      "rationaleAI": "Liberty defines the boundary conditions for A.4 (regulatory functions) and A.5 (law enforcement and corrective functions), establishing through political philosophy the legitimate scope of state coercion and rights-bounded enforcement."
+      "rationaleAI": "Liberty as lawful autonomy constrained by rule of law and contested across political ideologies addresses regulatory functions of government in balancing freedom and order (A.4)."
     },
     {
       "articleTitle": "Power (social and political)",
       "relevantPathsAI": [
-        "A",
-        "A.1",
-        "A.4",
-        "A.5"
+        "A"
       ],
-      "rationaleAI": "Political power is the foundational concept for all of section A, covering how coercive, institutional, and discursive forms of power underpin internal and external security (A.1), regulatory (A.4), and law enforcement (A.5) functions of government."
+      "rationaleAI": "Social and political power operating through coercion, institutional structure, and hegemony directly addresses the ways in which political power is exercised (A)."
     },
     {
       "articleTitle": "Economy",
       "relevantPathsAI": [
         "B"
       ],
-      "rationaleAI": "The economy article directly addresses the priority path B by covering government's relationship to production, distribution, and consumption through market, mixed, and planned economic systems and the role of political structures in shaping economic activity."
+      "rationaleAI": "The economy as the domain of production, distribution, and consumption shaped by government policy directly addresses government's role in production and consumption (B)."
     },
     {
       "articleTitle": "Poverty",
@@ -145,32 +133,32 @@
         "A.6",
         "B"
       ],
-      "rationaleAI": "Poverty reduction strategies — state transfers, income grants, public services — directly engage A.6 (enterprising functions of government) and B (government's role in production and consumption), including international frameworks like the UN SDGs."
+      "rationaleAI": "Poverty reduction strategies including state transfers and income grants connect to enterprising functions of government (A.6) and government's role in production and consumption (B)."
     },
     {
       "articleTitle": "Diplomacy",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.3"
       ],
-      "rationaleAI": "Diplomacy covers A.2's conduct of foreign relations — negotiation, representation, multilateral conferences, arbitration and mediation — as the professional practice through which governments manage relations with other sovereign states."
+      "rationaleAI": "Diplomacy as managing international relations through negotiation addresses the conduct of foreign relations (A.2) and supervisory functions through mediation and conflict resolution (A.3)."
     },
     {
       "articleTitle": "State (polity)",
       "relevantPathsAI": [
-        "A",
-        "B",
-        "C"
+        "A"
       ],
-      "rationaleAI": "The state article covers the entire functional range of A (how sovereign power is exercised), B (government's role in production and consumption through theories of state function), and C (historical forms of state formation and regime change)."
+      "rationaleAI": "The state exercising sovereign authority and its theories of function (social contract, Marxist, anarchist) encompass the ways political power is exercised (A)."
     },
     {
       "articleTitle": "Abraham Lincoln",
       "relevantPathsAI": [
+        "A.1",
         "C"
       ],
-      "rationaleAI": "Lincoln's presidency addresses C through the constitutional crisis of secession and preservation of the Union — the Civil War tested whether a democratic republic could survive constitutional challenges to its form of government by force."
+      "rationaleAI": "Lincoln's leadership through the Civil War addresses internal security functions of government (A.1), while the Emancipation Proclamation and constitutional amendments exemplify methods of changing government through constitutional mandate (C)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

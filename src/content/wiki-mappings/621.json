@@ -4,35 +4,29 @@
     {
       "articleTitle": "Literature",
       "relevantPathsAI": [
+        "A",
         "A.1",
         "A.6",
-        "A.7",
-        "C"
+        "D"
       ],
-      "rationaleAI": "Covers the nature and scope of literature (A.1), diverse literary subfields and genre systems (A.6), academic study including literary theory, criticism, and textual scholarship (A.7), and the full range of literary forms from fiction to non-fiction and children's literature (C)."
+      "rationaleAI": "Literature as written and oral works covering fiction, non-fiction, literary criticism, and history addresses the art of literature (A), the nature and scope of literature (A.1), literary genres (A.6), and the history of literature (D)."
     },
     {
       "articleTitle": "Poetry",
       "relevantPathsAI": [
-        "B.2",
-        "B.2.a",
-        "B.2.b",
         "C.1",
-        "C.2.a",
-        "C.4"
+        "C.4",
+        "B.2"
       ],
-      "rationaleAI": "Directly covers metre, rhyme, alliteration, and assonance (B.2.a.i–ii), prosody across verse cultures (B.2.b), epic and lyric genres (C.2.a, C.4), and the distinction between verse and prose (C.1), filling all priority prosody paths."
+      "rationaleAI": "Poetry exploiting meter, rhyme, and alliteration directly addresses poetry and the distinction between verse and prose (C.1), lyric literature (C.4), and prosody (B.2)."
     },
     {
       "articleTitle": "Fiction",
       "relevantPathsAI": [
-        "A.1",
-        "A.6",
         "C.2",
-        "C.2.d",
-        "C.2.e"
+        "C.2.d"
       ],
-      "rationaleAI": "Addresses the nature of literary fiction versus non-fiction (A.1), genre fiction versus literary fiction as classification systems (A.6), and directly covers the novel, novella, and short story (C.2.d–e)."
+      "rationaleAI": "Fiction as creative narrative work in novels, novellas, and short stories directly addresses narrative imaginative literature (C.2) and the novel and tale (C.2.d)."
     },
     {
       "articleTitle": "Leo Tolstoy",
@@ -40,132 +34,118 @@
         "C.2.d",
         "D.1"
       ],
-      "rationaleAI": "War and Peace and Anna Karenina are canonical examples of the realist novel (C.2.d) within the Western literary tradition (D.1); his late philosophical writings also represent nonfictional prose literature (C.6.e–f)."
+      "rationaleAI": "Tolstoy's War and Peace and Anna Karenina as epic realist novels address the novel (C.2.d), while his position in the Western literary tradition connects to literature of Western peoples (D.1)."
     },
     {
       "articleTitle": "Virgil",
       "relevantPathsAI": [
         "C.2.a",
-        "C.4.b",
         "D.1"
       ],
-      "rationaleAI": "The Aeneid is the paradigmatic literary epic (C.2.a), the Eclogues exemplify pastoral lyric (C.4.b), and all three works are foundational to Western literary history (D.1)."
+      "rationaleAI": "Virgil's Aeneid as a literary epic and Eclogues as pastoral poetry directly address the epic (C.2.a), while his foundational role in Latin literature connects to literature of Western peoples (D.1)."
     },
     {
       "articleTitle": "Realism (arts)",
       "relevantPathsAI": [
-        "A.6",
-        "D.1"
+        "A.7"
       ],
-      "rationaleAI": "Covers literary realism and theatrical realism as named genre-defining movements (A.6), tracing realism's extension from painting through literature, theatre, and cinema within the Western tradition (D.1)."
+      "rationaleAI": "Realism's truthful representation with parallel movements in literature, theatre, and cinema addresses writings on literature including critical approaches (A.7)."
     },
     {
       "articleTitle": "Short story",
       "relevantPathsAI": [
         "C.2.e"
       ],
-      "rationaleAI": "Directly and exclusively covers the short story form and its antecedents (C.2.e), from ancient folk tales to the modern literary short story crystallized in the 19th century."
+      "rationaleAI": "The short story as compressed prose narrative built around a self-contained incident directly addresses the short story and its antecedents (C.2.e)."
     },
     {
       "articleTitle": "Theatre",
       "relevantPathsAI": [
-        "C.3",
-        "A.5"
+        "A.5",
+        "C.3"
       ],
-      "rationaleAI": "Theatre is the medium for dramatic and theatrical literature (C.3), encompassing tragedy, comedy, and musical forms; its connection to literature (A.5) as a performing arts integration point is explicit in the article."
+      "rationaleAI": "Theatre as collaborative performing art using drama connects to the integration of literature with other arts (A.5) and dramatic or theatrical literature (C.3)."
     },
     {
       "articleTitle": "Rumi",
       "relevantPathsAI": [
-        "C.2.a",
         "C.4",
-        "D"
+        "C.6.d"
       ],
-      "rationaleAI": "The Masnavi is a six-volume Persian epic poem (C.2.a) and the Divan-e Shams is lyric poetry (C.4); both exemplify non-Western literary traditions outside the D.1 Western peoples path."
+      "rationaleAI": "Rumi's Masnavi as epic poetry and Divan as lyric poetry address lyric literature (C.4), while his religious and mystical works connect to doctrinal and religious literature (C.6.d)."
     },
     {
       "articleTitle": "Dante Alighieri",
       "relevantPathsAI": [
         "C.2.a",
-        "C.3.f",
-        "D.1",
-        "A.7"
+        "C.6.d",
+        "D.1"
       ],
-      "rationaleAI": "The Divine Comedy combines epic narrative (C.2.a) with religious drama (C.3.f); De Vulgari Eloquentia is a theoretical treatise on literary language (A.7), and Dante is foundational to Western literary history (D.1)."
+      "rationaleAI": "Dante's Divine Comedy as a cosmological epic addresses the literary epic (C.2.a), his theological framework connects to doctrinal and religious literature (C.6.d), and his role in establishing Italian vernacular literature addresses Western literature (D.1)."
     },
     {
       "articleTitle": "Homer",
       "relevantPathsAI": [
         "C.2.a",
-        "B.2.b",
-        "D.1",
-        "A.7"
+        "C.8",
+        "D.1"
       ],
-      "rationaleAI": "The Iliad and Odyssey are the defining examples of oral-formulaic epic (C.2.a) and Homeric prosodic style (B.2.b); the Homeric Question represents scholarly-critical writing on literature (A.7), foundational to Western literary history (D.1)."
+      "rationaleAI": "Homer's Iliad and Odyssey as foundational oral epics address the epic (C.2.a) and primitive/folk literature (C.8), while their role in Western literary tradition connects to literature of Western peoples (D.1)."
     },
     {
       "articleTitle": "Murasaki Shikibu",
       "relevantPathsAI": [
         "C.2.d",
-        "C.4",
         "D"
       ],
-      "rationaleAI": "The Tale of Genji is widely considered the world's first novel (C.2.d) and her waka poetry exemplifies lyric tradition (C.4); both are foundational to non-Western literary history outside D.1."
+      "rationaleAI": "Murasaki's Tale of Genji as the world's first novel with sustained narrative psychological depth directly addresses the novel (C.2.d) and the history of literature beyond Western peoples (D)."
     },
     {
       "articleTitle": "Romanticism",
       "relevantPathsAI": [
-        "A.6",
-        "C.2.c",
+        "A.7",
         "D.1"
       ],
-      "rationaleAI": "Romanticism as a literary genre-defining movement encompasses Gothic romance and Romantic poetry (C.2.c, A.6), and its trajectory from 1800–1850 is a defining episode in Western literary history (D.1)."
+      "rationaleAI": "Romanticism's literary movement encompassing British Romantic poetry and German Idealism addresses critical writing on literature (A.7) and the history of Western literature (D.1)."
     },
     {
       "articleTitle": "Non-fiction",
       "relevantPathsAI": [
-        "A.1",
         "C.6"
       ],
-      "rationaleAI": "Directly defines the distinction between fiction and non-fiction as literary categories (A.1) and covers the full range of nonfictional prose forms — biography, journalism, essay, history, creative non-fiction — in path C.6."
+      "rationaleAI": "Non-fiction as prose grounded in factual representation, encompassing biography, journalism, essay, and history, directly addresses nonfictional prose literature (C.6)."
     },
     {
       "articleTitle": "Plato",
       "relevantPathsAI": [
-        "C.6.k",
         "C.6.e",
-        "A.7"
+        "C.6.k"
       ],
-      "rationaleAI": "Plato's dialogues are the canonical examples of philosophical dialogue as literary form (C.6.k) and philosophical literature (C.6.e); his works are foundational texts in the theoretical study of literature (A.7 via Poetics connections)."
+      "rationaleAI": "Plato's philosophical dialogues directly address philosophical literature (C.6.e) and the dialogue as a literary form (C.6.k)."
     },
     {
       "articleTitle": "William Shakespeare",
       "relevantPathsAI": [
         "C.3",
-        "C.3.a",
-        "C.3.b",
-        "C.4.b",
-        "D.1",
-        "A.7"
+        "C.4",
+        "D.1"
       ],
-      "rationaleAI": "Shakespeare's 39 plays span tragedy (C.3.a), comedy (C.3.b), and romance forms; his 154 sonnets are canonical language-based lyrics (C.4.b); and his works are central to drama theory and Western literary scholarship (A.7, D.1)."
+      "rationaleAI": "Shakespeare's comedies, histories, and tragedies address dramatic literature including tragedy and comedy (C.3), his 154 sonnets address lyric literature (C.4), and his foundational role connects to Western literature (D.1)."
     },
     {
       "articleTitle": "History of literature",
       "relevantPathsAI": [
-        "D",
-        "D.1"
+        "D"
       ],
-      "rationaleAI": "Directly maps to path D (history of literature), tracing written and oral narrative from ancient Mesopotamia through all major world literary traditions; explicitly addresses genre evolution and printing history."
+      "rationaleAI": "The history of literature tracing narrative, poetry, and prose across all cultures directly addresses the history of literature (D)."
     },
     {
       "articleTitle": "Aristotle",
       "relevantPathsAI": [
         "A.7",
-        "B.1",
-        "C.3.a"
+        "B.1"
       ],
-      "rationaleAI": "The Poetics is the foundational theoretical treatise on tragedy and dramatic composition (A.7, C.3.a), and the Rhetoric covers elements of discourse and persuasion (B.1) foundational to the literary analysis of language."
+      "rationaleAI": "Aristotle's Poetics and theory of rhetoric address writings on literature as theoretical treatises (A.7) and rhetoric as the art of discourse (B.1)."
     },
     {
       "articleTitle": "Li Bai",
@@ -173,26 +153,23 @@
         "C.4",
         "D"
       ],
-      "rationaleAI": "Approximately 1,000 surviving lyric poems celebrating nature, friendship, and the moon exemplify lyric literary production (C.4) within the Chinese literary tradition (D), outside the Western peoples path."
+      "rationaleAI": "Li Bai's lyric poetry celebrating friendship, nature, and wine addresses lyric literature (C.4), while his role in Tang Golden Age poetry connects to the broader history of literature (D)."
     },
     {
       "articleTitle": "Voltaire",
       "relevantPathsAI": [
         "C.5",
-        "C.6.b",
-        "C.6.e",
         "C.6.f",
         "D.1"
       ],
-      "rationaleAI": "Candide exemplifies satirical literature (C.5); his histories are history as literature (C.6.b); his philosophical tales and letters represent philosophical and political literature (C.6.e–f); all within the Western literary tradition (D.1)."
+      "rationaleAI": "Voltaire's Candide as satirical novella addresses satiric literature (C.5), his political polemics address political literature (C.6.f), and his role in French Enlightenment connects to Western literature (D.1)."
     },
     {
       "articleTitle": "Novel",
       "relevantPathsAI": [
-        "C.2.d",
-        "A.6"
+        "C.2.d"
       ],
-      "rationaleAI": "Directly and comprehensively covers path C.2.d (the novel and the tale), tracing its history from Greco-Roman prose fiction through Cervantes, 18th-century British novelists, parallel Chinese and Japanese traditions, and contemporary digital forms; also addresses genre classification (A.6)."
+      "rationaleAI": "The novel as extended prose narrative fiction from Cervantes through modern forms directly addresses the novel and the tale (C.2.d)."
     },
     {
       "articleTitle": "Rhythm",
@@ -200,65 +177,62 @@
         "B.2",
         "B.2.a"
       ],
-      "rationaleAI": "Covers beat, pulse, metre, and tempo as rhythmic elements of prosody (B.2.a.i) and their application across music, poetry, and speech, filling priority paths B.2 and B.2.a.i which have no VSI recommendations."
+      "rationaleAI": "Rhythm as regulated succession of strong and weak elements foundational to speech and poetry addresses prosody (B.2) and rhythmic elements including accent, beat, and metre (B.2.a)."
     },
     {
       "articleTitle": "Mary Wollstonecraft",
       "relevantPathsAI": [
         "C.6.f",
-        "C.6.g"
+        "D.1"
       ],
-      "rationaleAI": "A Vindication of the Rights of Woman and Vindication of the Rights of Men are canonical examples of political and polemical literature (C.6.f–g) by a foundational Enlightenment-era writer."
+      "rationaleAI": "Wollstonecraft's Vindication of the Rights of Woman addresses political literature (C.6.f) and her role as a founding feminist philosopher connects to Western literature (D.1)."
     },
     {
       "articleTitle": "Mesopotamia",
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "Mesopotamia is the origin of cuneiform writing and the world's earliest literary texts (Epic of Gilgamesh implied by 'literary traditions'), placing it at the historical starting point of path D (history of literature)."
+      "rationaleAI": "Mesopotamia as the origin of writing and early literary texts connects to the history of literature (D)."
     },
     {
       "articleTitle": "Opera",
       "relevantPathsAI": [
-        "C.3",
-        "A.5"
+        "A.5",
+        "C.3"
       ],
-      "rationaleAI": "Opera is a theatrical form built on sung dramatic texts (librettos), directly relevant to dramatic literature (C.3) and the integration of literature with other arts including music and staging (A.5)."
+      "rationaleAI": "Opera's collaboration between composer and librettist addresses the integration of literature with other arts (A.5) and dramatic literature (C.3)."
     },
     {
       "articleTitle": "Bible",
       "relevantPathsAI": [
         "C.6.d",
-        "C.4.a",
-        "A.1"
+        "C.8"
       ],
-      "rationaleAI": "The Bible encompasses law, narrative, poetry (Psalms as hymnody, C.4.a), prophecy, and epistle as literary genres (C.6.d), and its status as both religious document and literary foundation raises fundamental questions about the nature of literature (A.1)."
+      "rationaleAI": "The Bible as an anthology of religious texts encompassing law, narrative, poetry, and prophecy addresses doctrinal and religious literature (C.6.d) and folk and popular literature (C.8)."
     },
     {
       "articleTitle": "Bhagavad Gita",
       "relevantPathsAI": [
+        "C.2.a",
         "C.6.d",
-        "C.6.k"
+        "C.6.e"
       ],
-      "rationaleAI": "The Bhagavad Gita is framed as a philosophical dialogue (C.6.k) embedded within a larger epic narrative, and its 18 chapters constitute canonical doctrinal and religious literature (C.6.d) with classical commentaries constituting literary-critical writing."
+      "rationaleAI": "The Bhagavad Gita as an epic dialogue on dharma, karma, and devotion addresses the epic (C.2.a), doctrinal and religious literature (C.6.d), and philosophical literature (C.6.e)."
     },
     {
       "articleTitle": "Oral tradition",
       "relevantPathsAI": [
-        "C.8",
-        "C.2.a",
-        "C.2.g",
-        "D"
+        "C.8"
       ],
-      "rationaleAI": "Oral tradition directly covers primitive, folk, and popular literature (C.8) including epic poetry (C.2.a) and ballads (C.2.g), and its analysis — from Homeric epic to African griot practice — is foundational to understanding pre-literate literary history (D)."
+      "rationaleAI": "Oral tradition's transmission of folktales, epic poetry, and ballads directly addresses primitive, folk, and popular literature (C.8)."
     },
     {
       "articleTitle": "Folk music",
       "relevantPathsAI": [
-        "C.8",
-        "C.2.g"
+        "C.4.a",
+        "C.8"
       ],
-      "rationaleAI": "Folk music traditions include folk ballads and oral song forms (C.2.g), and the article's grounding in orally transmitted, community-based cultural expression connects it to primitive and folk literature (C.8)."
+      "rationaleAI": "Folk music's oral transmission and association with cultural identity connect to music-based lyrics including ballads (C.4.a) and folk literature (C.8)."
     },
     {
       "articleTitle": "Avicenna",
@@ -266,9 +240,9 @@
         "C.6.e",
         "C.6.h"
       ],
-      "rationaleAI": "The Book of Healing is an encyclopedic philosophical and scientific work constituting philosophical literature (C.6.e) and scientific literature (C.6.h); Avicenna also wrote poetry, placing him within the non-Western literary tradition."
+      "rationaleAI": "Avicenna's Book of Healing as a philosophical encyclopedia addresses philosophical literature (C.6.e), while his Canon of Medicine connects to scientific literature (C.6.h)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

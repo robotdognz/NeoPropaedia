@@ -4,10 +4,10 @@
     {
       "articleTitle": "State (polity)",
       "relevantPathsAI": [
-        "A.1",
+        "A.1.b",
         "A.2"
       ],
-      "rationaleAI": "Provides theoretical grounding for A.1 (what constitutes a political system) and specifically covers unitary vs. federal structures (A.1.b) and the distinction between state failure and functioning states, essential context for institutional comparison."
+      "rationaleAI": "The state's unitary versus federal structures address national political systems (A.1.b), while the range of state forms from prehistoric stateless to modern nation-states connects to types and models of political systems (A.2)."
     },
     {
       "articleTitle": "Monarchy",
@@ -15,28 +15,22 @@
         "A.2",
         "B.3"
       ],
-      "rationaleAI": "Covers hereditary executive power (B.3) in both absolute and constitutional forms; as a typology of government in A.2, monarchy is a primary model of political systems distributed globally across Europe, the Muslim world, and East Asia."
+      "rationaleAI": "Monarchy as a system of hereditary sovereign rule addresses types of political systems (A.2), while constitutional monarchies embedded in parliamentary democracies connect to the executive branch (B.3)."
     },
     {
       "articleTitle": "European Union",
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "Directly exemplifies A.1.a (supranational political systems: leagues, regional federations, world congresses) through its Commission, Parliament, Council, and Court of Justice institutional architecture operating above the nation-state level."
+      "rationaleAI": "The EU as a supranational political and economic union with Commission, Parliament, Council, and Court of Justice directly exemplifies supranational political systems (A.1.a)."
     },
     {
       "articleTitle": "Government",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "A.2",
-        "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4"
+        "B"
       ],
-      "rationaleAI": "The most comprehensive match for Section 542, covering legislative, executive, and judicial branches (B.1–B.4), constitutional frameworks, all forms of government as types (A.2), and historical/contemporary systems from monarchy to democracy."
+      "rationaleAI": "Government's legislative, executive, and judicial branches directly address the branches of government (B), while its constitutional frameworks and diverse forms connect to political systems (A)."
     },
     {
       "articleTitle": "Democracy",
@@ -45,45 +39,41 @@
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "Democracy is the dominant model in A.2 (types and models of political systems); parliamentary democracy directly covers B.1 (concentration of legislative and executive functions), while representative systems illuminate B.2 (the legislature's role and structure)."
+      "rationaleAI": "Democracy as a system of government with direct, representative, and constitutional forms addresses types of political systems (A.2), parliamentary rule (B.1), and the legislature as the people's representative body (B.2)."
     },
     {
       "articleTitle": "United Kingdom",
       "relevantPathsAI": [
-        "A.1",
-        "B.1",
-        "B.2",
-        "B.3"
+        "A.1.b",
+        "B.1"
       ],
-      "rationaleAI": "The UK is the canonical case for B.1 (parliamentary rule as concentration of legislative and executive functions) under the Westminster system; also covers A.1.b (unitary nation-state structure) and the constitutional roles of Parliament (B.2) and Prime Minister (B.3)."
+      "rationaleAI": "The UK's Westminster parliamentary model exemplifies the concentration of legislative and executive functions in parliamentary rule (B.1), while its constitutional monarchy and devolution illustrate national political systems (A.1.b)."
     },
     {
       "articleTitle": "United States",
       "relevantPathsAI": [
-        "A.1",
+        "A.1.b",
         "B.2",
         "B.3",
         "B.4"
       ],
-      "rationaleAI": "The US exemplifies A.1.b (federal state system) and provides the most studied case of B branches separation: Congress (B.2), the presidency (B.3), and the Supreme Court (B.4) as co-equal branches with distinct constitutional functions."
+      "rationaleAI": "The US federal republic exemplifies the federal state system (A.1.b) with its constitutional separation of powers across legislature (B.2), executive (B.3), and judiciary (B.4)."
     },
     {
       "articleTitle": "City",
       "relevantPathsAI": [
         "A.1.c"
       ],
-      "rationaleAI": "Directly covers A.1.c (urban governments) through analysis of municipal governance, city administration, and metropolitan political systems; addresses how urban governments are structured within national political systems."
+      "rationaleAI": "Cities with complex systems of governance, municipal finance, and administrative complexity directly address urban governments (A.1.c)."
     },
     {
       "articleTitle": "Ancient Rome",
       "relevantPathsAI": [
         "A.1.a",
         "A.2",
-        "B.2",
-        "B.3",
-        "B.4"
+        "B"
       ],
-      "rationaleAI": "Rome's constitutional evolution — from monarchy through republic to empire — covers A.2 (types of political systems) and A.1.a (empire as supranational system); republican institutions (Senate, consuls, praetors) map to B.2 (legislature), B.3 (executive), and B.4 (judiciary) in historical context."
+      "rationaleAI": "Rome's constitutional evolution from monarchy through republic to empire exemplifies types of political systems (A.2), its multi-continental empire addresses supranational systems (A.1.a), and its constitutional institutions connect to branches of government (B)."
     },
     {
       "articleTitle": "Holy Roman Empire",
@@ -91,165 +81,144 @@
         "A.1.a",
         "A.2"
       ],
-      "rationaleAI": "Exemplifies A.1.a (empire as supranational system, also confederation-like in its decentralization) with elective monarchy and Diet institutions illustrating A.2 (complex models of political systems bridging imperial and federal structures)."
+      "rationaleAI": "The Holy Roman Empire as a complex, elective, multi-ethnic polity with decentralized power exemplifies supranational political systems (A.1.a) and a distinctive type of political system (A.2)."
     },
     {
       "articleTitle": "British Empire",
       "relevantPathsAI": [
         "A.1.a"
       ],
-      "rationaleAI": "Exemplifies A.1.a (empire and commonwealth as supranational political systems) through the evolution from crown colonies to the dominion system and Commonwealth of Nations, showing how supranational political structures are created and transform."
+      "rationaleAI": "The British Empire as the largest empire in history with its dominion system and colonial governance directly addresses supranational political systems including empires and commonwealths (A.1.a)."
     },
     {
       "articleTitle": "Soviet Union",
       "relevantPathsAI": [
-        "A.1",
-        "B.1",
-        "B.3",
+        "A.1.b",
         "A.2"
       ],
-      "rationaleAI": "The USSR's federal communist structure covers A.1.b (federal state system with formally federal but centralized reality) and B.1 (fusion of legislative/executive in the Party-state apparatus); as an A.2 model type it remains the defining case of one-party communist governance."
+      "rationaleAI": "The Soviet Union as a transcontinental communist federal state addresses the federal state system (A.1.b) and represents a distinctive type of political system based on one-party communist rule (A.2)."
     },
     {
       "articleTitle": "China",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.3"
+        "A.1.b",
+        "A.2"
       ],
-      "rationaleAI": "China's unitary communist state governed by the CCP covers A.1.b (unitary system) and A.2 (one-party model); CCP institutional dominance over nominally separate legislative and executive branches is a major contemporary case for B.3 (executive concentration of power)."
+      "rationaleAI": "China as a unitary communist state governed by the CCP exemplifies the unitary nation-state system (A.1.b) and a distinctive type of political system (A.2)."
     },
     {
       "articleTitle": "Ottoman Empire",
       "relevantPathsAI": [
         "A.1.a",
-        "A.2",
-        "A.1.d"
+        "A.2"
       ],
-      "rationaleAI": "Covers A.1.a (empire as supranational system) and A.2 (sultanate as a model type); the millet system of confessional community autonomy maps to A.1.d (subnational community governance structures within an empire)."
+      "rationaleAI": "The Ottoman Empire as a transcontinental state with its millet system of confessional autonomy addresses supranational political systems (A.1.a) and a distinctive type of political system (A.2)."
     },
     {
       "articleTitle": "Law",
       "relevantPathsAI": [
-        "B.4",
-        "A.1"
+        "B.4"
       ],
-      "rationaleAI": "Covers B.4 (the judiciary) through legal institutions, judicial systems, constitutional and administrative law; also provides context for A.1 (political systems operating under constitutional, common, civil, and religious legal frameworks)."
+      "rationaleAI": "Law's coverage of legal institutions and the judiciary, including constitutional and administrative frameworks, directly connects to the judiciary as a branch of government (B.4)."
     },
     {
       "articleTitle": "Saudi Arabia",
       "relevantPathsAI": [
-        "A.2",
-        "B.3"
+        "A.2"
       ],
-      "rationaleAI": "Saudi Arabia's absolute monarchy integrating dynastic and Wahhabi Islamic law directly illustrates A.2 (theocratic-monarchical model of political system) and B.3 (executive: the King as absolute executive authority with the ulema as power-sharing institution)."
+      "rationaleAI": "Saudi Arabia as an absolute Islamic monarchy integrating dynastic rule with Wahhabi Islamic law represents a distinctive type of political system combining religious and monarchical authority (A.2)."
     },
     {
       "articleTitle": "Iran",
       "relevantPathsAI": [
-        "A.2",
-        "B.3",
-        "A.1"
+        "A.2"
       ],
-      "rationaleAI": "Iran's theocratic republic with both elected and unelected institutions (Supreme Leader, Guardian Council, elected President) is a distinctive A.2 model type; covers B.3 (executive authority shared between supreme leader and elected president in a dual executive structure)."
+      "rationaleAI": "Iran as a theocratic Islamic republic with elected and unelected institutions and ultimate authority vested in the supreme leader represents a distinctive type of political system (A.2)."
     },
     {
       "articleTitle": "India",
       "relevantPathsAI": [
-        "A.1",
+        "A.1.b",
         "B.1",
-        "B.2",
-        "B.3",
-        "B.4"
+        "B.2"
       ],
-      "rationaleAI": "India is the world's largest federal parliamentary democracy, directly covering A.1.b (federal state system), B.1 (Westminster-derived parliamentary rule), and all three branches (Lok Sabha/Rajya Sabha for B.2, Prime Minister for B.3, Supreme Court for B.4)."
+      "rationaleAI": "India as a federal parliamentary republic with 22 scheduled languages addresses the federal state system (A.1.b) and parliamentary rule concentrating legislative and executive functions (B.1), with its parliament exemplifying the legislature (B.2)."
     },
     {
       "articleTitle": "Australia",
       "relevantPathsAI": [
-        "A.1",
-        "B.1",
-        "B.2",
-        "B.3"
+        "A.1.b",
+        "B.1"
       ],
-      "rationaleAI": "Australia's federal parliamentary constitutional monarchy covers A.1.b (federal state system) and B.1 (parliamentary rule); its Westminster-derived bicameral parliament (B.2), Prime Minister (B.3), and Governor-General's reserve powers illustrate institutional nuances."
+      "rationaleAI": "Australia as a federal parliamentary constitutional monarchy addresses the federal state system (A.1.b) and parliamentary rule (B.1)."
     },
     {
       "articleTitle": "Germany",
       "relevantPathsAI": [
-        "A.1",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4"
+        "A.1.b"
       ],
-      "rationaleAI": "Germany's federal parliamentary republic covers A.1.b (federal state system), B.1 (parliamentary rule with Bundestag and coalition government), and the distinctive Bundesrat as a federal chamber (B.2); its Constitutional Court is a leading example of judicial review (B.4)."
+      "rationaleAI": "Germany as a federal republic with its distinctive parliamentary structure addresses the federal state system (A.1.b)."
     },
     {
       "articleTitle": "France",
       "relevantPathsAI": [
-        "A.1",
-        "B.1",
-        "B.3"
+        "A.1.b",
+        "A.2"
       ],
-      "rationaleAI": "France's semi-presidential Fifth Republic exemplifies A.1.b (unitary nation-state) and a distinctive B hybrid: a directly elected President (B.3) coexisting with a parliamentary Prime Minister (B.1), making it the canonical case of semi-presidentialism as a model in A.2."
+      "rationaleAI": "France as a unitary republic with centralized governance addresses the unitary nation-state system (A.1.b) and its semi-presidential model represents a distinctive type of political system (A.2)."
     },
     {
       "articleTitle": "George Washington",
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "As the first US president, Washington's establishment of executive precedents — two-term limit, peaceful transfer of power, executive neutrality — directly covers B.3 (the executive branch: its founding norms and institutional character) in the most influential presidential system."
+      "rationaleAI": "Washington as the first US president who set foundational executive precedents including peaceful transfer of power and a two-term limit directly addresses the executive branch (B.3)."
     },
     {
       "articleTitle": "Augustus",
       "relevantPathsAI": [
         "A.2",
-        "B.3",
-        "B.1"
+        "B.3"
       ],
-      "rationaleAI": "Augustus's principate — concentrating executive, military, and tribunician power while preserving republican facades — directly covers A.2 (model type: principate as disguised autocracy) and B.3 (executive power in the Roman imperial system) alongside B.1 (fusion of legislative and executive)."
+      "rationaleAI": "Augustus's establishment of the principate, preserving republican facades while concentrating power, addresses types of political systems (A.2) and the executive branch through institutional consolidation (B.3)."
     },
     {
       "articleTitle": "Nigeria",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A.1.b"
       ],
-      "rationaleAI": "Nigeria's federal republic of 36 states with a presidential system covers A.1.b (federal state system) and A.2 (presidential model as distinct from parliamentary systems); its alternation between civilian and military rule illustrates regime type variation."
+      "rationaleAI": "Nigeria as a federal republic of 36 states encompassing over 250 ethnic groups addresses the federal state system (A.1.b)."
     },
     {
       "articleTitle": "Brazil",
       "relevantPathsAI": [
-        "A.1",
-        "B.3"
+        "A.1.b"
       ],
-      "rationaleAI": "Brazil's federal presidential republic covers A.1.b (federal state system) and B.3 (strong presidential executive); as Latin America's largest federal democracy it illustrates how federal presidential systems operate in large, diverse nations."
+      "rationaleAI": "Brazil as a federal republic with a history spanning empire to military dictatorship to democratic consolidation addresses the federal state system (A.1.b)."
     },
     {
       "articleTitle": "Mexico",
       "relevantPathsAI": [
-        "A.1",
-        "B.3",
+        "A.1.b",
         "A.2"
       ],
-      "rationaleAI": "Mexico's federal republic with a strong presidential executive covers A.1.b (federal state) and B.3 (executive); its transition from PRI single-party dominance to multiparty democracy illustrates A.2 (change in political system type over time)."
+      "rationaleAI": "Mexico as a federal republic with a history of one-party PRI rule and democratic transition addresses the federal state system (A.1.b) and types of political systems (A.2)."
     },
     {
       "articleTitle": "New York City",
       "relevantPathsAI": [
         "A.1.c"
       ],
-      "rationaleAI": "New York City's five-borough municipal structure and mayoral governance directly cover A.1.c (urban governments) as the most studied case of metropolitan administration in the world's most economically significant city."
+      "rationaleAI": "New York City as the most populous US city with five boroughs and complex governance directly addresses urban governments (A.1.c)."
     },
     {
       "articleTitle": "Nation",
       "relevantPathsAI": [
-        "A.1"
+        "A.1.b"
       ],
-      "rationaleAI": "The concept of the nation provides the definitional foundation for A.1.b (the national political system: both unitary and federal nation-states are organized around the nation as political unit), distinguishing civic and ethnic national frameworks."
+      "rationaleAI": "The nation as collective social organization defined by shared identity provides the conceptual foundation for national political systems (A.1.b)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

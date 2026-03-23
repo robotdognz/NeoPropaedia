@@ -4,37 +4,38 @@
     {
       "articleTitle": "Government",
       "relevantPathsAI": [
+        "A",
         "A.1",
         "A.2"
       ],
-      "rationaleAI": "Covers constitutional frameworks establishing the organization and functions of the state (A.1) and the structure of public administrative authorities including legislative, executive, and judicial branches (A.2). Connects directly to the laws defining and implementing state authority."
+      "rationaleAI": "Government's constitutional frameworks and legislative, executive, and judicial branches address constitutional law (A.1) and laws governing public administration (A.2)."
     },
     {
       "articleTitle": "Law",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.1",
-        "C.1",
-        "F.1",
-        "F.2"
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
       ],
-      "rationaleAI": "Comprehensively surveys constitutional and administrative law (A.1–A.2), sources of international law (B.1), principles of criminal law including common/civil law comparisons (C.1), court organization (F.1), and criminal, civil, and administrative procedure (F.2)."
+      "rationaleAI": "Law broadly covers public law including constitutional, administrative, and criminal law (A, C), international law (B), social welfare legislation (D), taxation (E), and judicial procedure (F)."
     },
     {
       "articleTitle": "Police",
       "relevantPathsAI": [
-        "C.1",
-        "D.2"
+        "C",
+        "F.1"
       ],
-      "rationaleAI": "State bodies that enforce criminal law through lawful arrest and force are the primary instrument of criminal law's application (C.1); police functions in maintaining public order and safety directly relate to laws promoting public health and safety (D.2)."
+      "rationaleAI": "Police as state bodies enforcing law and maintaining public order connect to criminal law enforcement (C) and the organization of the legal system (F.1)."
     },
     {
       "articleTitle": "Constitution",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Directly covers constitutional law — the foundational document establishing principles, structures, separation of powers, rights provisions, and limits on state governance — which is the core subject of A.1."
+      "rationaleAI": "Constitutions as foundational legal documents establishing governance principles, separation of powers, and rights provisions directly address constitutional law (A.1)."
     },
     {
       "articleTitle": "European Union",
@@ -42,23 +43,23 @@
         "B.2",
         "B.3"
       ],
-      "rationaleAI": "The EU's Commission, Parliament, and Council constitute a supranational legislative and executive authority (B.2), and the Court of Justice of the EU provides supranational judicial authority (B.3), making it a direct example of both outline paths."
+      "rationaleAI": "The EU's supranational institutions including the Court of Justice address attempts to create supranational legislative/executive authority (B.2) and supranational judicial authority (B.3)."
     },
     {
       "articleTitle": "Crime",
       "relevantPathsAI": [
-        "C.1",
-        "F.2.a"
+        "C",
+        "C.1"
       ],
-      "rationaleAI": "Covers the doctrines of criminal law including actus reus, mens rea, and criminal typology (C.1), and criminal justice processes including enforcement, trial procedure, and sentencing that constitute criminal procedure (F.2.a)."
+      "rationaleAI": "Crime as unlawful acts requiring actus reus and mens rea, with criminal justice encompassing trial procedure and sentencing, directly addresses laws governing criminal acts (C) and principles of criminal law (C.1)."
     },
     {
       "articleTitle": "State (polity)",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A",
+        "A.1"
       ],
-      "rationaleAI": "Covers theories of state sovereignty, legitimacy, and the constitutional organization of state authority (A.1), and the regulatory structures through which states exercise authority over territories and populations (A.2)."
+      "rationaleAI": "The state's sovereign authority and theories of state function directly address laws defining the authority and power of the state (A) and constitutional law (A.1)."
     },
     {
       "articleTitle": "War",
@@ -66,37 +67,36 @@
         "B.4",
         "B.5"
       ],
-      "rationaleAI": "Covers international humanitarian law, ethics of war, and rules governing armed conflict (B.4), as well as war crimes, crimes against peace, and post-1945 accountability frameworks (B.5)."
+      "rationaleAI": "War's ethics and international humanitarian law address attempts to impose rules of warfare (B.4) and attempts to limit and punish war crimes (B.5)."
     },
     {
       "articleTitle": "Human rights",
       "relevantPathsAI": [
-        "B.1",
-        "B.5"
+        "B.5",
+        "D.1"
       ],
-      "rationaleAI": "The UDHR and binding international treaties are primary sources of international law (B.1); the human rights enforcement framework through international courts and universal jurisdiction directly addresses crimes against humanity (B.5)."
+      "rationaleAI": "Human rights as international treaties and enforcement through UN bodies address attempts to punish crimes against peace and humanity (B.5), while social and economic rights connect to laws providing for general welfare (D.1)."
     },
     {
       "articleTitle": "Monarchy",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Covers the constitutional forms of monarchical governance — absolute and constitutional — and succession law, directly relating to the basic laws governing state organization and function (A.1)."
+      "rationaleAI": "Monarchy's constitutional versus absolute forms and succession law address basic laws governing the organization and functions of the state (A.1)."
     },
     {
       "articleTitle": "Diplomacy",
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Covers the treaty-based system, arbitration, mediation, and multilateral conference mechanisms that are the primary institutional sources and concepts of international law (B.1)."
+      "rationaleAI": "Diplomacy's immunity norms and structured resolution via arbitration and multilateral conferences connect to sources and concepts of international law (B.1)."
     },
     {
       "articleTitle": "Military",
       "relevantPathsAI": [
-        "C.2",
-        "B.4"
+        "C.2"
       ],
-      "rationaleAI": "Military forces are subject to the distinct legal regime of military discipline addressed in C.2, and their codified command hierarchy and rules of engagement relate to rules of warfare (B.4)."
+      "rationaleAI": "The military's codified command hierarchy and personnel subject to military discipline connect to laws governing offenses committed by military forces (C.2)."
     },
     {
       "articleTitle": "United Nations",
@@ -104,7 +104,7 @@
         "B.2",
         "B.3"
       ],
-      "rationaleAI": "The UN is explicitly the subject of B.2 as the primary attempt to create a supranational legislative and executive authority; the ICJ within the UN system is the primary supranational judicial authority (B.3)."
+      "rationaleAI": "The UN with its General Assembly, Security Council, and ICJ directly addresses the attempt to create supranational legislative and executive authority (B.2) and supranational judicial authority (B.3)."
     },
     {
       "articleTitle": "Peace",
@@ -112,14 +112,15 @@
         "B.4",
         "B.5"
       ],
-      "rationaleAI": "Covers international law frameworks for sustaining peace, including balance-of-power and democratic peace theories and institutional peace mechanisms (B.4), and connects to crimes against peace as defined under international criminal law (B.5)."
+      "rationaleAI": "Peace sustained through international law frameworks and institutions addresses attempts to impose rules of warfare (B.4) and preserve peace (B.5)."
     },
     {
       "articleTitle": "Welfare spending",
       "relevantPathsAI": [
-        "D.1"
+        "D.1",
+        "D.2"
       ],
-      "rationaleAI": "Directly covers the laws providing for general social security and welfare — pensions, disability benefits, unemployment, and healthcare — the core subject of D.1, including the legislative frameworks from Bismarck's Germany to the UK's National Insurance Act."
+      "rationaleAI": "Welfare spending through social insurance and assistance covering healthcare, pensions, and disability directly addresses laws providing for general social security and welfare (D.1) and laws promoting public health and safety (D.2)."
     },
     {
       "articleTitle": "International Red Cross and Red Crescent Movement",
@@ -127,52 +128,52 @@
         "B.4",
         "B.5"
       ],
-      "rationaleAI": "The ICRC holds treaty-mandated legal status under the Geneva Conventions and is the principal non-state actor enforcing international humanitarian law and rules of warfare (B.4), and its mandate includes protecting victims of war crimes and crimes against humanity (B.5)."
+      "rationaleAI": "The Red Cross/Red Crescent's treaty-mandated neutrality under the Geneva Conventions directly addresses attempts to impose rules of warfare (B.4) and punish war crimes (B.5)."
     },
     {
       "articleTitle": "Trade union",
       "relevantPathsAI": [
         "D.3"
       ],
-      "rationaleAI": "Covers collective bargaining, labor rights, and occupational health standards, which connect directly to laws regulating the health, safety, and welfare of workers (D.3)."
+      "rationaleAI": "Trade unions negotiating wages, safety standards, and working conditions connect to laws regulating the health, safety, and welfare of workers (D.3)."
     },
     {
       "articleTitle": "Poverty",
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Covers the social conditions addressed by welfare and social security legislation — food insecurity, housing, healthcare access — and the state transfer mechanisms and UN frameworks that implement D.1's social security mandate."
+      "rationaleAI": "Poverty reduction strategies through state transfers and social welfare frameworks connect to laws providing for general social security and welfare (D.1)."
     },
     {
       "articleTitle": "Homicide",
       "relevantPathsAI": [
+        "C",
         "C.1"
       ],
-      "rationaleAI": "Provides a direct and detailed analysis of criminal law doctrine — actus reus, mens rea, categories of culpability, and jurisdictional variation — using homicide as the paradigmatic crime illustrating criminal law principles (C.1)."
+      "rationaleAI": "Homicide's legal categories (murder, manslaughter, justifiable homicide) and mens rea determination directly address laws governing criminal acts (C) and principles of criminal law (C.1)."
     },
     {
       "articleTitle": "Politics",
       "relevantPathsAI": [
-        "A.1",
-        "A.2"
+        "A"
       ],
-      "rationaleAI": "Covers the systems by which governance and state authority are organized, including constitutional frameworks and public administration, directly connecting to the laws defining and implementing state authority (A.1–A.2)."
+      "rationaleAI": "Politics as collective decision-making and power distribution connects to laws defining and implementing the authority and power of the state (A)."
     },
     {
       "articleTitle": "John Locke",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "His Two Treatises of Government established the theoretical foundation for constitutional law — government by consent, limits on sovereign power, and the right of revolution — that directly underpins A.1 constitutional law doctrine."
+      "rationaleAI": "Locke's natural rights and government by consent influenced constitutional law, particularly the American Declaration of Independence and liberal constitutionalism (A.1)."
     },
     {
       "articleTitle": "Secularism",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Church-state separation and laïcité are constitutional law doctrines embedded in the basic laws governing state organization (A.1), and secularism directly shapes the constitutional frameworks of states like France and the United States."
+      "rationaleAI": "Secularism's principle of separating governance from religious authority connects to constitutional law governing the organization of the state (A.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

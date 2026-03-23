@@ -5,30 +5,27 @@
       "articleTitle": "Diplomacy",
       "relevantPathsAI": [
         "C",
-        "C.1",
         "C.2"
       ],
-      "rationaleAI": "Diplomacy is the primary instrument of C (foreign policy and diplomacy), covering C.1 (aims of foreign policy), C.2 (use of diplomacy in negotiation, arbitration, mediation, public international conferences, and secret diplomacy) with comprehensive historical and structural coverage."
+      "rationaleAI": "Diplomacy as managing international relations through negotiation, arbitration, and mediation directly addresses foreign policy and diplomacy (C), including the use of diplomacy in negotiation of international disputes (C.2)."
     },
     {
       "articleTitle": "NATO",
       "relevantPathsAI": [
         "A.2",
         "B.1",
-        "E.3"
+        "B.3"
       ],
-      "rationaleAI": "NATO is a paradigm case for A.2 (international organizations), B.1 (collective security treaties and nonaggression obligations under Article 5), and E.3 (organized military forces designed for defense across ground, naval, and air branches)."
+      "rationaleAI": "NATO as a collective defense alliance with Article 5 mutual defense obligations exemplifies international organizations (A.2), nonaggression and collective security treaties (B.1), and arms limitation debates around the 2% GDP target (B.3)."
     },
     {
       "articleTitle": "War",
       "relevantPathsAI": [
         "E",
         "E.1",
-        "E.2",
-        "E.2.a",
-        "E.2.b"
+        "E.2"
       ],
-      "rationaleAI": "War comprehensively covers section E: types of warfare (E.1 — conventional, civil, guerrilla, total, nuclear), conduct of war including strategy and tactics (E.2.a, E.2.b), causes, effects, and ethics including international humanitarian law (E.2.e)."
+      "rationaleAI": "War as organized armed conflict directly addresses war among states (E), degrees and kinds of war from limited to total, civil, and guerrilla (E.1), and the conduct of war including strategy, tactics, and international humanitarian law (E.2)."
     },
     {
       "articleTitle": "International Red Cross and Red Crescent Movement",
@@ -36,144 +33,130 @@
         "A.2",
         "E.2.e"
       ],
-      "rationaleAI": "The ICRC and IFRC are the defining non-governmental organizations for A.2 (nonnational organizations and agencies) and directly implements E.2.e (international law relating to the treatment of persons during wartime) through the Geneva Conventions."
+      "rationaleAI": "The Red Cross/Red Crescent as a global humanitarian network founded on the Geneva Conventions exemplifies international organizations (A.2) and international law relating to treatment of persons during wartime (E.2.e)."
     },
     {
       "articleTitle": "Human rights",
       "relevantPathsAI": [
         "B",
-        "C.1",
         "E.2.e"
       ],
-      "rationaleAI": "Human rights treaties (UDHR, regional regimes) are central to B (international treaties and agreements), C.1 (compatibility of foreign policy with humanitarian interests), and E.2.e (treatment of persons during wartime under international law)."
+      "rationaleAI": "Human rights treaties and regional enforcement regimes connect to international treaties and agreements (B), while contested tensions around universal jurisdiction relate to international law on wartime treatment (E.2.e)."
     },
     {
       "articleTitle": "United Nations",
       "relevantPathsAI": [
         "A.2",
-        "B.1",
-        "C.3",
-        "E.2.e"
+        "B"
       ],
-      "rationaleAI": "The UN is the central institution of A.2 (international organizations), B.1 (collective security via Security Council), C.3 (foreign aid and economic/cultural/technical organizations), and E.2.e (international humanitarian law and peacekeeping mandates)."
+      "rationaleAI": "The UN as a universal intergovernmental organization maintaining peace and security directly exemplifies international organizations (A.2), while its peacekeeping and Security Council authorization connect to international treaties (B)."
     },
     {
       "articleTitle": "Imperialism",
       "relevantPathsAI": [
-        "A.1",
-        "C.1",
-        "E"
+        "E.1",
+        "C.1"
       ],
-      "rationaleAI": "Imperialism covers A.1 (transnational ideological movements like anti-imperialism and Pan-nationalism), C.1 (how imperial foreign policy pursues hegemony versus humanitarian interests), and E (military conquest as core mechanism of imperial expansion)."
+      "rationaleAI": "Imperialism's extension of power through military and economic coercion addresses kinds of war and territorial conquest (E.1), while its aims of establishing hegemony connect to foreign policy aims (C.1)."
     },
     {
       "articleTitle": "Cold War",
       "relevantPathsAI": [
-        "A.1",
+        "A",
         "B.1",
         "B.3",
-        "C",
-        "D",
         "E.1"
       ],
-      "rationaleAI": "The Cold War covers A.1 (transnational ideological blocs), B.1–3 (collective security treaties, arms limitation agreements), C (foreign policy competition and détente diplomacy), D (espionage and counterintelligence as the defining covert dimension), and E.1 (proxy wars and limited warfare as the primary conflict mode)."
+      "rationaleAI": "The Cold War's superpower rivalry and proxy wars address the politics of international relations (A), collective security arrangements (B.1), nuclear arms races and arms limitation (B.3), and limited and regional wars (E.1)."
     },
     {
       "articleTitle": "Military",
       "relevantPathsAI": [
-        "E.2",
-        "E.2.a",
-        "E.2.b",
-        "E.2.c",
-        "E.2.f",
         "E.3",
-        "E.3.a",
-        "E.3.b",
-        "E.3.c"
+        "E.2"
       ],
-      "rationaleAI": "Military comprehensively covers E.2 (conduct of war: strategy, tactics, logistics, budget management) and E.3 (armed forces: types of soldiers, branches including ground, naval, and air forces, and auxiliary corps including intelligence and logistics)."
+      "rationaleAI": "The military as a state-organized armed force addresses armed forces and military organizations (E.3), while its components of hierarchy, intelligence, logistics, and training connect to the conduct of war (E.2)."
     },
     {
       "articleTitle": "Terrorism",
       "relevantPathsAI": [
-        "E.1",
-        "D"
+        "E.1"
       ],
-      "rationaleAI": "Terrorism covers E.1's category of political and irregular warfare against non-combatants, and D's counterterrorism intelligence activities as the primary state response to non-state political violence in the conduct of international affairs and national security."
+      "rationaleAI": "Terrorism as politically motivated violence against non-combatants by state and non-state actors addresses degrees and kinds of war, particularly irregular and guerrilla warfare (E.1)."
     },
     {
       "articleTitle": "Colonialism",
       "relevantPathsAI": [
-        "A.1",
         "C.1",
-        "E"
+        "E.1"
       ],
-      "rationaleAI": "Colonialism covers A.1 (transnational political movements including anti-colonialism and Pan-Africanism), C.1 (colonial foreign policy aims and their incompatibility with humanitarian interests), and E (military conquest as the mechanism of colonial expansion and resistance)."
+      "rationaleAI": "Colonialism's extension of political domination over territories addresses foreign policy aims (C.1), while European colonial wars and anti-colonial resistance connect to kinds of war (E.1)."
     },
     {
       "articleTitle": "Decolonization",
       "relevantPathsAI": [
         "A.1",
-        "B.2",
-        "C"
+        "C.1",
+        "E.1"
       ],
-      "rationaleAI": "Decolonization covers A.1 (Pan-Africanism, Pan-Arabism, and other transnational independence movements), B.2 (treaties terminating colonial arrangements), and C (foreign aid and US/UN policy supporting independence movements in the post-WWII international order)."
+      "rationaleAI": "Decolonization's independence movements connect to transnational political movements (A.1), foreign policy concerning dependencies (C.1), and civil wars and insurrections in the process of achieving independence (E.1)."
     },
     {
       "articleTitle": "European Union",
       "relevantPathsAI": [
+        "A.1",
         "A.2",
         "B.5"
       ],
-      "rationaleAI": "The EU is a paradigm case for A.2 (international organizations) and directly covers the priority path B.5 (economic and commercial treaties) through its single market, customs union, and common trade policy as foundational treaty-based economic integration."
+      "rationaleAI": "The EU as a supranational union addresses transnational political movements like European federalism (A.1), international organizations (A.2), and economic and commercial treaties through its single market and customs union (B.5)."
     },
     {
       "articleTitle": "Peace",
       "relevantPathsAI": [
+        "A",
         "B.1",
-        "C.1",
         "C.2"
       ],
-      "rationaleAI": "Peace covers B.1 (collective security and nonaggression frameworks), C.1 (foreign policy compatibility with humanitarian interests), and C.2 (diplomacy, arbitration, and mediation as the primary instruments of international dispute resolution and peace maintenance)."
+      "rationaleAI": "Peace theories including balance of power and democratic peace address the politics of international relations (A), nonaggression and collective security (B.1), and the use of diplomacy in negotiating disputes (C.2)."
     },
     {
       "articleTitle": "Nationalism",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Nationalism is the ideological foundation of A.1's transnational political movements — anti-colonial nationalism, Pan-Slavism, Pan-Arabism, and ethnic nationalisms all fall within the category of transnational political movements shaping international relations."
+      "rationaleAI": "Nationalism's assertion of national sovereignty and self-determination, including anti-colonial and ethnic nationalisms, directly addresses transnational political movements (A.1)."
     },
     {
       "articleTitle": "Scramble for Africa",
       "relevantPathsAI": [
         "B.4",
-        "E"
+        "E.1"
       ],
-      "rationaleAI": "The Scramble for Africa covers B.4 (territorial treaties, the Berlin Conference's partitioning of Africa as territorial agreements) and E (military conquest and African resistance movements as the armed dimension of imperial expansion)."
+      "rationaleAI": "The Scramble for Africa's partition of the continent and the 1884 Berlin Conference connect to territorial treaties (B.4), while colonial wars and African resistance movements address kinds of war (E.1)."
     },
     {
       "articleTitle": "George Washington",
       "relevantPathsAI": [
-        "C.1",
+        "E.2.a",
         "E.3.a"
       ],
-      "rationaleAI": "Washington's career covers C.1 (his Farewell Address articulating foundational US foreign policy principles of neutrality) and E.3.a (his role leading a volunteer army of colonial forces — a paradigm case of non-professional military forces)."
+      "rationaleAI": "Washington's command of the Continental Army and military strategy during the Revolutionary War address military strategy (E.2.a) and types of soldiers including volunteer forces (E.3.a)."
     },
     {
       "articleTitle": "Fortification",
       "relevantPathsAI": [
-        "E.2.a",
         "E.2.b",
         "E.3.c"
       ],
-      "rationaleAI": "Fortifications are a core element of military strategy (E.2.a) and tactics (E.2.b), and represent the establishment and maintenance of defensive military infrastructure (E.3.c — ground forces' defensive infrastructure)."
+      "rationaleAI": "Fortifications as military constructions for territorial defense address military tactics (E.2.b) and establishment and maintenance of military infrastructure (E.3.c)."
     },
     {
       "articleTitle": "Atlantic slave trade",
       "relevantPathsAI": [
-        "B.5"
+        "B.5",
+        "E.1"
       ],
-      "rationaleAI": "The Atlantic slave trade operated through commercial treaties and inter-state economic agreements (B.5 — economic and commercial treaties), including bilateral arrangements among European powers regulating slave-trade routes and trading rights (asiento contracts)."
+      "rationaleAI": "The Atlantic slave trade's triangular trade route and European rivalry connect to economic and commercial treaties (B.5), while abolition movements and resistance relate to kinds of conflict (E.1)."
     },
     {
       "articleTitle": "Mao Zedong",
@@ -181,78 +164,70 @@
         "E.1",
         "E.2.a"
       ],
-      "rationaleAI": "Mao developed Maoist guerrilla warfare doctrine (E.1 — guerrilla warfare as a type of war) and the Long March military strategy (E.2.a — military strategy), which became foundational contributions to revolutionary military theory in international relations."
+      "rationaleAI": "Mao's guerrilla warfare strategy and civil war victory address kinds of war including civil wars and guerrilla warfare (E.1), while his military innovations connect to military strategy (E.2.a)."
     },
     {
       "articleTitle": "Simón Bolívar",
       "relevantPathsAI": [
         "E.1",
-        "E.3.a"
+        "E.2.a"
       ],
-      "rationaleAI": "Bolívar's campaigns cover E.1 (national wars of independence and civil wars across six nations) and E.3.a (types of soldiers — volunteer and conscripted armies mobilized in continental liberation campaigns)."
+      "rationaleAI": "Bolivar's continental-scale independence campaigns against Spanish imperial rule address kinds of war including national wars and insurrections (E.1) and military strategy (E.2.a)."
     },
     {
       "articleTitle": "Russia",
       "relevantPathsAI": [
-        "A.2",
-        "B.1",
-        "C",
-        "D"
+        "A",
+        "E.1"
       ],
-      "rationaleAI": "Russia as a permanent UN Security Council member covers A.2, its nuclear deterrence posture and arms treaties cover B.1 and B.3, Cold War and contemporary foreign policy covers C, and its intelligence/espionage operations (FSB, GRU) substantially address the priority path D."
+      "rationaleAI": "Russia as a nuclear superpower with ongoing territorial disputes and Cold War legacy addresses the politics of international relations (A) and kinds of war including regional conflicts (E.1)."
     },
     {
       "articleTitle": "State (polity)",
       "relevantPathsAI": [
-        "A",
-        "C.1",
-        "E"
+        "A"
       ],
-      "rationaleAI": "The state is the primary actor in international relations, covering A (the politics of international relations between sovereign entities), C.1 (foreign policy aims grounded in state interests), and E (war as organized interstate violence)."
+      "rationaleAI": "The state as sovereign authority over territory connects to the politics of international relations among sovereign states (A)."
     },
     {
       "articleTitle": "Transport",
       "relevantPathsAI": [
-        "B.6"
+        "B.6",
+        "E.2.c"
       ],
-      "rationaleAI": "Transport directly covers the priority path B.6 (communications and transportation treaties), as international transport systems — aviation agreements, maritime conventions, rail and road access treaties — are foundational to the international treaty framework."
+      "rationaleAI": "Transport as the movement of people and goods connects to communications and transportation treaties (B.6) and military logistics (E.2.c)."
     },
     {
       "articleTitle": "News",
       "relevantPathsAI": [
-        "B.7",
-        "D"
+        "E.2.d"
       ],
-      "rationaleAI": "News covers B.7 (cultural exchange treaties, as international media and information flow are regulated through cultural exchange frameworks) and D (state control of information as an instrument of national security and intelligence, including propaganda and public diplomacy)."
+      "rationaleAI": "News dissemination covering politics, war, and public sphere influence connects to effects of psychological warfare on troops and civilians (E.2.d)."
     },
     {
       "articleTitle": "British Empire",
       "relevantPathsAI": [
-        "B.4",
-        "B.5",
-        "C",
-        "E"
+        "A",
+        "E.1"
       ],
-      "rationaleAI": "The British Empire covers B.4 (territorial treaties and colonial land transfers), B.5 (mercantile and commercial treaties), C (British foreign policy and imperial diplomacy), and E (military conquest and naval hegemony as instruments of imperial expansion)."
+      "rationaleAI": "The British Empire's global reach through colonial wars, rivalry with France, and naval hegemony addresses the politics of international relations (A) and kinds of war including colonial and national wars (E.1)."
     },
     {
       "articleTitle": "Age of Enlightenment",
       "relevantPathsAI": [
-        "B.7",
         "C.1"
       ],
-      "rationaleAI": "The Enlightenment fostered transnational intellectual exchange (B.7 — cultural exchange) through salons, encyclopedias, and correspondence networks, and shaped C.1 through its development of natural rights theory and the compatibility of foreign policy with humanitarian interests."
+      "rationaleAI": "The Enlightenment's emphasis on natural rights, constitutional government, and separation of powers shaped foreign policy aims and their compatibility with humanitarian interests (C.1)."
     },
     {
       "articleTitle": "Suleiman the Magnificent",
       "relevantPathsAI": [
-        "B.2",
-        "E",
+        "E.1",
         "E.2.a"
       ],
-      "rationaleAI": "Suleiman's reign covers B.2 (Ottoman treaties terminating wars and fixing borders with Safavids and European powers) and E/E.2.a (Ottoman military campaigns and siege warfare strategy from Vienna to the eastern Mediterranean)."
+      "rationaleAI": "Suleiman's military campaigns expanding Ottoman rule into Central Europe, the Mediterranean, and North Africa address kinds of war (E.1) and military strategy (E.2.a)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

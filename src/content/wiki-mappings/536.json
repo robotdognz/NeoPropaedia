@@ -4,88 +4,81 @@
     {
       "articleTitle": "Singapore",
       "relevantPathsAI": [
+        "A",
         "A.4",
-        "A.4.a",
-        "A.4.b"
+        "B.4"
       ],
-      "rationaleAI": "Singapore's transformation from colonial entrepôt to one of the world's highest-GDP-per-capita economies exemplifies A.4 development economics and is a canonical case in A.4.b theories of national economic development, particularly state-directed growth."
+      "rationaleAI": "Singapore's Four Asian Tigers economic transformation and world's highest PPP GDP per capita exemplify economic growth in developing countries (A.4), while its government-directed industrialization connects to economic planning in developing countries (B.4)."
     },
     {
       "articleTitle": "Poverty",
       "relevantPathsAI": [
         "A.3",
         "A.4",
-        "A.4.a",
-        "A.4.b"
+        "A.4.a"
       ],
-      "rationaleAI": "Directly addresses A.4.a by analyzing low per capita income and its relationship to underdevelopment, and covers A.3 social costs of insufficient growth; connects to A.4.b theories of development and retardation via structural, political, and environmental causal frameworks."
+      "rationaleAI": "Poverty's relationship to per capita income and population growth directly addresses the link between underdevelopment and low GDP per capita (A.4.a), while reduction strategies and social costs connect to social costs and benefits of economic growth (A.3) and economic growth in developing countries (A.4)."
     },
     {
       "articleTitle": "Economics",
       "relevantPathsAI": [
         "A",
-        "A.1",
         "A.2",
         "B"
       ],
-      "rationaleAI": "Covers macroeconomic growth theory, fiscal and monetary policy, development economics, and planned versus market economic systems, providing broad foundational coverage across both A (growth) and B (planning) divisions of the outline."
+      "rationaleAI": "Economics as a discipline encompasses macroeconomic growth theory and models (A.2), the nature and causes of economic growth (A), and fiscal and monetary policy tools relevant to planning for economic growth and stability (B)."
     },
     {
       "articleTitle": "Adam Smith",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.2",
-        "A.4.b"
+        "A.2"
       ],
-      "rationaleAI": "The Wealth of Nations is foundational to A.1 (capital accumulation, markets, division of labour as growth factors) and to A.4.b (classical political economy theories of national development), anchoring the liberal tradition of growth theory."
+      "rationaleAI": "Smith's Wealth of Nations addresses division of labour, capital accumulation, and free markets as factors influencing economic growth (A.1), while his foundational economic theory contributes to the theory of economic growth (A.2)."
     },
     {
       "articleTitle": "Macroeconomics",
       "relevantPathsAI": [
-        "A.1",
+        "A",
         "A.2",
-        "A.2.a",
         "A.5",
         "B"
       ],
-      "rationaleAI": "Covers GDP measurement, long-term economic growth theory, business cycle models, and fiscal/monetary policy frameworks directly relevant to A.2 growth models; Keynesian and monetarist schools inform B (planning for stability) and A.5 (productivity and output measurement)."
+      "rationaleAI": "Macroeconomics directly addresses GDP, growth theory and models (A.2), economic productivity and output measurement (A.5), and the role of monetary and fiscal policy in planning for economic stability (B)."
     },
     {
       "articleTitle": "Karl Marx",
       "relevantPathsAI": [
-        "A.1",
-        "A.4.b",
+        "A.2",
         "B.2"
       ],
-      "rationaleAI": "Historical materialism and surplus value theory constitute a major A.4.b theory of economic development and retardation; Marxist political economy informs B.2 planning in communist countries and critiques of capital accumulation as a growth factor under A.1."
+      "rationaleAI": "Marx's historical materialism, critique of capitalism, and surplus value theory contribute to theories of national economic development (A.2), while his vision of communism and planned economies directly relates to economic planning in Communist countries (B.2)."
     },
     {
       "articleTitle": "Tax",
       "relevantPathsAI": [
         "A.1",
-        "B"
+        "B.3"
       ],
-      "rationaleAI": "Governmental fiscal policies — including taxation — are explicitly listed under A.1 as a factor influencing economic growth; tax policy analysis also informs B.3 (planning in developed non-communist countries) through Pigovian, redistributive, and public finance dimensions."
+      "rationaleAI": "Taxation as governmental fiscal policy is a factor influencing economic growth (A.1), and tax policy as a tool of economic regulation connects to economic planning in developed non-Communist countries (B.3)."
     },
     {
       "articleTitle": "Capitalism",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.2",
-        "A.4.b",
-        "B.3"
+        "A.2"
       ],
-      "rationaleAI": "Defines the system of private ownership, markets, and capital accumulation that forms the backdrop for A.1 growth factors and A.2 supply-determined models; its variants (welfare state, state capitalism) inform B.3 planning in developed non-communist countries."
+      "rationaleAI": "Capitalism's mechanisms of capital accumulation, market competition, and supply-and-demand equilibrium address factors influencing economic growth (A.1) and theories of growth based on market-driven resource allocation (A.2)."
     },
     {
       "articleTitle": "Economy",
       "relevantPathsAI": [
         "A",
-        "A.1",
-        "B",
-        "B.1"
+        "B"
       ],
-      "rationaleAI": "Provides foundational overview of economic systems — market, mixed, and planned — directly relevant to B.1 (the nature of economic planning) and the institutional context of A.1 growth factors including natural resources, labor, and capital."
+      "rationaleAI": "The economy as the systemic domain of production, distribution, and consumption provides the foundational context for understanding the nature of economic growth (A) and the role of planning for economic stability (B)."
     },
     {
       "articleTitle": "Ibn Khaldun",
@@ -93,16 +86,15 @@
         "A.2",
         "A.4.b"
       ],
-      "rationaleAI": "The Muqaddimah presents a proto-macroeconomic cyclical theory of dynastic rise and fall with supply-demand and labor value analysis, qualifying as an early A.2 growth model and an A.4.b theory of economic development and retardation in pre-modern societies."
+      "rationaleAI": "Ibn Khaldun's proto-macroeconomics including supply-demand analysis, labor theory of value, and cyclical dynasty theory contribute to theories of economic growth (A.2) and theories of national economic development and retardation (A.4.b)."
     },
     {
       "articleTitle": "Socialism",
       "relevantPathsAI": [
-        "B.2",
-        "B.4",
-        "A.4.b"
+        "B.1",
+        "B.2"
       ],
-      "rationaleAI": "Encompasses planned economy variants, state-directed and self-managed socialism, and democratic socialist models central to B.2 (planning in communist and socialist countries) and B.4 (planning in developing countries with socialist leanings); informs A.4.b alternative development theories."
+      "rationaleAI": "Socialism's planned, state-directed, and self-managed economic models directly address the nature of economic planning (B.1) and economic planning in Communist countries (B.2)."
     },
     {
       "articleTitle": "Technology",
@@ -110,34 +102,30 @@
         "A.1",
         "A.5"
       ],
-      "rationaleAI": "Technology is explicitly named in A.1 as a key factor influencing economic growth; its analysis of productivity and output-per-unit-of-input improvements directly maps to A.5 (economic productivity measured by changes in output per unit of input)."
+      "rationaleAI": "Technology as a driver of productivity and economic transformation is a primary factor influencing economic growth (A.1), and its impact on output per unit of input directly relates to economic productivity (A.5)."
     },
     {
       "articleTitle": "Trade",
       "relevantPathsAI": [
-        "A.1",
-        "A.4",
-        "A.4.b"
+        "A.1"
       ],
-      "rationaleAI": "Market access and international trade (including free trade vs. protectionism) are A.1 growth factors; comparative advantage and trade-led development are central to A.4.b theories of national development, particularly relevant for export-oriented developing countries."
+      "rationaleAI": "Markets and trade networks, from comparative advantage to globalization, function as a factor influencing economic growth through specialization and resource allocation (A.1)."
     },
     {
       "articleTitle": "Malaysia",
       "relevantPathsAI": [
         "A.4",
-        "A.4.a",
-        "A.4.b"
+        "B.4"
       ],
-      "rationaleAI": "Malaysia's trajectory as an upper-middle-income emerging economy with state-directed industrial policy in electronics, palm oil, and petrochemicals illustrates A.4.a GDP growth relative to population and A.4.b theories of development through industrial planning."
+      "rationaleAI": "Malaysia's transformation to an upper-middle-income economy with strengths in electronics and petrochemicals exemplifies economic growth in developing countries (A.4) and economic planning in developing countries (B.4)."
     },
     {
       "articleTitle": "Bangladesh",
       "relevantPathsAI": [
         "A.4",
-        "A.4.a",
-        "A.4.b"
+        "A.4.a"
       ],
-      "rationaleAI": "Bangladesh's garment-export-driven growth from post-independence poverty exemplifies A.4.a (per capita income growth relative to population) and A.4.b (development through export manufacturing), while climate vulnerability and corruption illustrate retardation factors."
+      "rationaleAI": "Bangladesh's garment-export-driven economy in a densely populated, climate-vulnerable developing country illustrates the relationship between underdevelopment and per capita income relative to population growth (A.4.a)."
     },
     {
       "articleTitle": "Work (human activity)",
@@ -145,18 +133,18 @@
         "A.1",
         "A.5"
       ],
-      "rationaleAI": "Work as a primary factor of production and the division of labour as an analytical concept map directly to A.1 (the labour force as a growth factor); discussion of productivity and output connects to A.5 (economic efficiency and output per unit of input)."
+      "rationaleAI": "Work as a factor of production alongside capital addresses the labour force as an influence on economic growth (A.1), while the division of labor and automation debates connect to changes in economic productivity (A.5)."
     },
     {
       "articleTitle": "Poland",
       "relevantPathsAI": [
-        "A.4.b",
+        "A.4",
         "B.2",
         "B.3"
       ],
-      "rationaleAI": "Poland's post-1989 transition from communist central planning (B.2) to market-based growth in a developed non-communist context (B.3) and its rapid economic growth trajectory illustrates A.4.b theories of development and economic retardation under Soviet-era planning."
+      "rationaleAI": "Poland's post-war communist rule under Soviet influence connects to economic planning in Communist countries (B.2), while its rapid post-1989 democratic transition and economic growth illustrate planning in developed non-Communist countries (B.3) and growth dynamics (A.4)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

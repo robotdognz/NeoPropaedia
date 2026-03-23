@@ -4,19 +4,20 @@
     {
       "articleTitle": "Business",
       "relevantPathsAI": [
-        "D.3",
-        "D.3.a"
+        "D",
+        "D.2",
+        "D.3"
       ],
-      "rationaleAI": "Covers the legal structures of business entities — sole proprietorships, partnerships, corporations, cooperatives — and their regulatory frameworks including intellectual property, commercial regulation, and taxation, which map directly to the law of business associations (D.3) and its principal forms (D.3.a)."
+      "rationaleAI": "Business as organized profit-seeking activity covering legal structures, taxation, and commercial regulation addresses laws governing economic transactions (D), commercial transactions (D.2), and law of business associations (D.3)."
     },
     {
       "articleTitle": "Corporation",
       "relevantPathsAI": [
-        "D.3.a",
-        "D.3.b",
+        "D.3",
+        "D.3.a.ii",
         "D.3.c"
       ],
-      "rationaleAI": "Directly covers corporate law — legal personality, limited liability, governance separation of ownership and control via board of directors (D.3.b), and corporate finance including equity and debt capital structures (D.3.c) — making it the central article for D.3.a.ii and surrounding paths."
+      "rationaleAI": "Corporations as legally distinct entities with shareholders and limited liability directly address corporate companies (D.3.a.ii), while governance separation and capital structure connect to the structure of corporate finance (D.3.c)."
     },
     {
       "articleTitle": "Law",
@@ -27,53 +28,47 @@
         "D",
         "E"
       ],
-      "rationaleAI": "Provides a comprehensive survey of private law including property, contracts, torts, trusts, and family law (A–D), and legal procedure (E), covering all major divisions of Section 553 at a high level."
+      "rationaleAI": "Law broadly covers private law including property (A), contract, property, and tort (C), commercial and business law (D), and civil procedure (E)."
     },
     {
       "articleTitle": "Property",
       "relevantPathsAI": [
+        "A",
         "A.1",
-        "A.2",
         "A.3",
-        "A.4",
         "A.5"
       ],
-      "rationaleAI": "Directly and substantively covers property law: historical development of property rights (A.1), methods of acquiring property (A.2), types of ownership — private, public, collective (A.3), real and personal property distinctions (A.4), and intellectual property as intangible rights (A.5)."
+      "rationaleAI": "Property rights encompassing private, public, and collective ownership address law of property (A), historical development of property rights (A.1), types of ownership (A.3), and intangible/incorporeal property including intellectual property (A.5)."
     },
     {
       "articleTitle": "Family",
       "relevantPathsAI": [
-        "B.1",
-        "B.1.a",
-        "B.1.b",
-        "B.1.c",
-        "B.2"
+        "B",
+        "B.1"
       ],
-      "rationaleAI": "Comprehensively covers family law: marriage law and civil effects (B.1.a), laws concerning children including adoption, guardianship, and parental rights (B.1.b), divorce and marital dissolution (B.1.c), and property devolution through inheritance (B.2)."
+      "rationaleAI": "Family as a social unit with marriage, kinship, divorce, and children's rights directly addresses family law (B) and laws governing the institution of the family (B.1)."
     },
     {
       "articleTitle": "Marriage",
       "relevantPathsAI": [
-        "B.1",
-        "B.1.a",
-        "B.1.c"
+        "B.1.a"
       ],
-      "rationaleAI": "Covers the legal institution of marriage including state regulation, civil effects of the marriage contract and the legal status of married women (B.1.a), and divorce rights and marital dissolution across jurisdictions (B.1.c)."
+      "rationaleAI": "Marriage as a legally recognized union establishing rights and obligations between spouses directly addresses laws concerning the marriage contract (B.1.a)."
     },
     {
       "articleTitle": "Bank",
       "relevantPathsAI": [
-        "D.2",
-        "D.2.a"
+        "D.2"
       ],
-      "rationaleAI": "Banking operations directly involve the transfer of negotiable instruments including promissory notes and bills of exchange (D.2.a.ii), the issuance of letters of credit (D.2.a.iv), and the full range of commercial transactions law (D.2)."
+      "rationaleAI": "Banks as financial intermediaries accepting deposits and extending loans under fractional-reserve banking connect to law of commercial transactions (D.2)."
     },
     {
       "articleTitle": "Finance",
       "relevantPathsAI": [
+        "D.2",
         "D.3.c"
       ],
-      "rationaleAI": "Covers the legal and financial structures of corporate finance — equity (common and preferred shares), debt instruments (bonds and debentures), and capital allocation — directly matching the structure of corporate finance outlined in D.3.c."
+      "rationaleAI": "Finance's concern with monetary resources, valuation, and capital allocation connects to law of commercial transactions (D.2) and the structure of corporate finance (D.3.c)."
     },
     {
       "articleTitle": "Insurance",
@@ -81,88 +76,81 @@
         "D.1",
         "D.2"
       ],
-      "rationaleAI": "Insurance is a contract — governed by the law of contracts (D.1) — and a major category of commercial transaction subject to commercial law (D.2); contract law principles including offer, consideration, and indemnity are central to insurance."
+      "rationaleAI": "Insurance as a risk-management mechanism based on contractual agreements connects to law of contracts (D.1) and commercial transactions (D.2)."
     },
     {
       "articleTitle": "Privacy",
       "relevantPathsAI": [
-        "C.5.a",
-        "A.5"
+        "C.5.a"
       ],
-      "rationaleAI": "Invasion of privacy is a recognized tort under C.5.a (defamation and other invasions of privacy), and informational privacy interests can constitute intangible property rights (A.5) in some legal systems."
+      "rationaleAI": "Privacy as controlling personal information connects to injuries to personality including invasions of privacy and defamation (C.5.a)."
     },
     {
       "articleTitle": "Home",
       "relevantPathsAI": [
         "A.4",
         "A.6",
-        "A.6.a",
         "A.8"
       ],
-      "rationaleAI": "A home is the paradigmatic piece of real property (A.4), held under freehold or leasehold tenure (A.6.a), subject to mortgage law (A.8), and the article covers owner-occupancy, rental tenure, and property regimes directly relevant to these paths."
+      "rationaleAI": "Home as human residence with tenure types (owner-occupancy, rental) connects to real and personal property (A.4), temporal division of property rights including freehold and leasehold estates (A.6), and law of mortgages (A.8)."
     },
     {
       "articleTitle": "Building",
       "relevantPathsAI": [
-        "A.4",
-        "A.6"
+        "A.4"
       ],
-      "rationaleAI": "Buildings are real property improvements (A.4) whose ownership and tenure — including freehold, leasehold, and mixed-use ownership — connect to laws concerning the temporal division of property rights and distinctions between real and personal property (A.6)."
+      "rationaleAI": "Buildings as permanently enclosed structures serving occupancy functions connect to laws concerning tangible property and the distinction between real and personal property (A.4)."
     },
     {
       "articleTitle": "Trade",
       "relevantPathsAI": [
-        "D.2",
-        "D.5",
-        "D.5.a"
+        "D.2"
       ],
-      "rationaleAI": "Covers the commercial law of goods exchange including sales, comparative advantage, and international trade (D.2), as well as the laws governing commercial transportation of goods (D.5, D.5.a), from ancient maritime networks to modern trade agreements."
+      "rationaleAI": "Trade as the transfer of goods and services through market networks connects to law of commercial transactions including sales of goods (D.2)."
     },
     {
       "articleTitle": "Work (human activity)",
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "Covers employment, wage labor, worker rights, and the legal structures of paid and forced labor, connecting directly to labor law (D.4) which governs employment relationships, collective bargaining, and occupational conditions."
+      "rationaleAI": "Work spanning paid employment, labor rights, and automation debates connects to labour law (D.4)."
     },
     {
       "articleTitle": "Parenting",
       "relevantPathsAI": [
         "B.1.b"
       ],
-      "rationaleAI": "Covers parental rights and obligations, guardianship, adoption, and the legal and institutional frameworks for child-rearing, which are the substantive content of B.1.b's laws concerning children, legitimacy, adoption, and parental obligations."
+      "rationaleAI": "Parenting's provision of support to children by biological parents, guardians, or state institutions connects to laws concerning children including legitimacy, adoption, guardianship, and parental obligations (B.1.b)."
     },
     {
       "articleTitle": "Child",
       "relevantPathsAI": [
         "B.1.b"
       ],
-      "rationaleAI": "Covers the legal definition of childhood and minority status, child protection frameworks, adoption, guardianship, parental rights, and child labor law, directly matching B.1.b's laws concerning children, legitimacy, adoption, and parental obligations."
+      "rationaleAI": "Children as legal minors with issues of health, education, labor, and protection connect to laws concerning children including legitimacy, adoption, and parental rights (B.1.b)."
     },
     {
       "articleTitle": "Trade union",
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "Trade unions are the primary institutional actors in labor law (D.4), and the article covers collective bargaining, labor agreements, wage determination, occupational health, and the legal frameworks governing worker organization."
+      "rationaleAI": "Trade unions' collective bargaining for wages, benefits, and working conditions directly address labour law (D.4)."
     },
     {
       "articleTitle": "Money",
       "relevantPathsAI": [
-        "D.2",
-        "D.2.a"
+        "D.2.a.ii"
       ],
-      "rationaleAI": "Money functions as legal tender and medium of exchange in commercial transactions (D.2), and negotiable instruments such as promissory notes, bills of exchange, and checks — transfer mechanisms for money — are the specific subject of D.2.a.ii."
+      "rationaleAI": "Money as legal tender and medium of exchange connects to transfer of negotiable instruments including promissory notes and checks (D.2.a.ii)."
     },
     {
       "articleTitle": "Slavery",
       "relevantPathsAI": [
-        "D.4",
-        "A.1"
+        "D.4"
       ],
-      "rationaleAI": "Slavery represents the historical negation of labor law rights (D.4) and its abolition marks a fundamental development in property rights history — slaves were legally classified as property — making it relevant to historical development of property rights (A.1)."
+      "rationaleAI": "Slavery as coerced labor with contemporary forced labor and human trafficking connects to labour law governing working conditions and prohibitions on exploitation (D.4)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

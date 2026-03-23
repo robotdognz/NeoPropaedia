@@ -7,43 +7,31 @@
         "A",
         "A.1",
         "A.2",
-        "A.2.b",
-        "A.2.c",
-        "A.2.d",
-        "A.2.e",
-        "A.3",
-        "B",
-        "C",
-        "C.1",
-        "C.2",
-        "C.3"
+        "A.3"
       ],
-      "rationaleAI": "Directly covers the full scope of motion pictures as an art form, including classification, all component arts (acting, directing, editing, camera, animation), production processes, and the industry; also addresses documentary and propaganda functions under C.2 and the historical development of the medium for C.3."
+      "rationaleAI": "Film as a visual art form encompassing fiction, documentary, animation, and experimental modes addresses the nature and classification of motion pictures (A.1), component arts including script, acting, directing, editing, and technology (A.2), and production processes (A.3)."
     },
     {
       "articleTitle": "Entertainment",
       "relevantPathsAI": [
-        "C.1",
-        "C.2"
+        "C.1"
       ],
-      "rationaleAI": "Covers the motion-picture industry as part of the global entertainment industry (C.1) and the educational and propagandistic functions of mass entertainment media (C.2), though not specific to film production or aesthetic questions."
+      "rationaleAI": "Entertainment as mass-audience activities connect to the motion-picture industry (C.1)."
     },
     {
       "articleTitle": "Walt Disney",
       "relevantPathsAI": [
         "A.2.e",
-        "A.3",
         "C.1"
       ],
-      "rationaleAI": "Pioneered synchronized sound and Technicolor animation (A.2.e), produced feature-length animated films illustrating motion-picture production (A.3), and built a paradigmatic entertainment industry conglomerate (C.1)."
+      "rationaleAI": "Disney's pioneering of synchronized sound and full-color Technicolor animation addresses technology in the creative process including animation (A.2.e), while his expansion into theme parks and media connects to the motion-picture industry (C.1)."
     },
     {
       "articleTitle": "Animation",
       "relevantPathsAI": [
-        "A.2.e",
-        "A.3"
+        "A.2.e"
       ],
-      "rationaleAI": "Directly covers animation as a technology and creative method within film production, addressing traditional cel animation, CGI, and stop-motion as distinct branches of A.2.e (use of technology, animation, special effects) and their role in the production process (A.3)."
+      "rationaleAI": "Animation as a filmmaking technique using hand-drawn cels, CGI, and stop motion directly addresses the use of technology including animation and special effects (A.2.e)."
     },
     {
       "articleTitle": "Theatre",
@@ -51,7 +39,7 @@
         "A.2.b",
         "B"
       ],
-      "rationaleAI": "Addresses the live acting tradition from which motion-picture acting is distinguished (A.2.b) and represents the primary art form whose interrelation with motion pictures is examined under B."
+      "rationaleAI": "Theatre's acting techniques and live performance address motion-picture acting and its distinction from theatre (A.2.b), while theatrical arts broadly connect to the interrelation of other arts in motion pictures (B)."
     },
     {
       "articleTitle": "Literature",
@@ -59,86 +47,81 @@
         "A.2.a",
         "B"
       ],
-      "rationaleAI": "Covers screenplay and scriptwriting as a literary form (A.2.a, cross-referenced from 621) and represents one of the arts whose integration with film is treated under B (literature supplying source material, narrative, and genre conventions for motion pictures)."
+      "rationaleAI": "Literature's dramatic and narrative forms connect to the writer of the script or screenplay (A.2.a) and the interrelation of literature in motion pictures (B)."
     },
     {
       "articleTitle": "Charlie Chaplin",
       "relevantPathsAI": [
         "A.2.b",
         "A.2.c",
-        "A.1",
-        "C.1"
+        "C.2"
       ],
-      "rationaleAI": "Embodies the silent-film acting tradition and the distinction of screen acting from stage acting (A.2.b), exercised total directorial and editorial control (A.2.c, A.2.d), and helped establish Hollywood as a global industry institution (C.1)."
+      "rationaleAI": "Chaplin's total artistic control as writer, director, producer, editor, and composer addresses acting (A.2.b) and the role of the director (A.2.c), while his political satire connects to motion pictures as media of education and propaganda (C.2)."
     },
     {
       "articleTitle": "Photography",
       "relevantPathsAI": [
         "A.2.e"
       ],
-      "rationaleAI": "The camera and photochemical/electronic image-capture technology that photography developed are foundational to the cinematographic apparatus described under A.2.e, making photography directly relevant to the technological dimension of the creative process."
+      "rationaleAI": "Photography's capture of images through optical and sensor technology connects to the use of the camera in the creative process (A.2.e)."
     },
     {
       "articleTitle": "Television",
       "relevantPathsAI": [
-        "C.1",
-        "C.2"
+        "C.1"
       ],
-      "rationaleAI": "Television is a competing and complementary medium that shaped the economic structure of the motion-picture industry (C.1) and became a major channel for the distribution and function of moving-image media in education and culture (C.2)."
+      "rationaleAI": "Television as a broadcast medium connects to the motion-picture industry and its distribution channels (C.1)."
     },
     {
       "articleTitle": "Camera",
       "relevantPathsAI": [
         "A.2.e"
       ],
-      "rationaleAI": "The camera is the central technological instrument of motion-picture production addressed under A.2.e, covering lens optics, aperture, shutter, and both film and digital sensor technology directly applicable to cinematography."
+      "rationaleAI": "The camera as an instrument capturing images through lens, aperture, and shutter mechanisms directly addresses the use of the camera in the creative process (A.2.e)."
     },
     {
       "articleTitle": "Thomas Edison",
       "relevantPathsAI": [
-        "A.2.e",
-        "C.1"
+        "A.2.e"
       ],
-      "rationaleAI": "Held fundamental patents in motion picture technology (kinetoscope, kinetograph) directly relevant to A.2.e, and his industrial research model contributed to establishing the early motion-picture industry (C.1)."
+      "rationaleAI": "Edison's contributions to motion picture technology and the phonograph address the use of technology in the creative process (A.2.e)."
     },
     {
       "articleTitle": "Popular culture",
       "relevantPathsAI": [
-        "C.1",
-        "C.2"
+        "C.1"
       ],
-      "rationaleAI": "Situates motion pictures within the mass-culture industry (C.1) and examines film as a vehicle for shaping popular values and attitudes, relevant to C.2 (functions of motion pictures as media of education and cultural influence)."
+      "rationaleAI": "Popular culture's film, music, and entertainment industry connect to the motion-picture industry (C.1)."
     },
     {
       "articleTitle": "Modernism",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Modernism's influence on cinematic montage and the self-conscious rejection of theatrical narrative conventions is directly relevant to the nature and classification of motion-picture art (A.1), situating film within the broader early-20th-century aesthetic revolution."
+      "rationaleAI": "Modernism's cinematic montage and experimental techniques address the nature and classification of motion pictures (A.1)."
     },
     {
       "articleTitle": "Dance",
       "relevantPathsAI": [
         "B"
       ],
-      "rationaleAI": "Dance is one of the arts whose interrelation with motion pictures is examined under B, especially in musical films, dance films, and choreography adapted for the screen."
+      "rationaleAI": "Dance as an art form performed in motion pictures connects to the interrelation of dance in motion pictures (B)."
     },
     {
       "articleTitle": "Music",
       "relevantPathsAI": [
-        "B",
-        "A.2.e"
+        "B"
       ],
-      "rationaleAI": "Music is central to the interrelation of arts in motion pictures (B), providing synchronized sound and scoring, while sound recording technology addressed in A.2.e is shared with music production."
+      "rationaleAI": "Music's role in film scoring and soundtracks connects to the interrelation of music in motion pictures (B)."
     },
     {
       "articleTitle": "Adolf Hitler",
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "The Nazi use of film as propaganda — including Riefenstahl's state-commissioned documentaries — is the most historically prominent example of motion pictures deployed as media of propaganda, directly relevant to C.2."
+      "rationaleAI": "Hitler's use of mass media propaganda and the Nazi film industry's deployment of cinema for ideological purposes connect to the use of motion pictures as media of propaganda (C.2)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

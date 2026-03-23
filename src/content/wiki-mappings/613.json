@@ -4,174 +4,162 @@
     {
       "articleTitle": "Performing arts",
       "relevantPathsAI": [
-        "B.3",
+        "B",
         "C",
+        "D",
         "E",
-        "F"
+        "F",
+        "G"
       ],
-      "rationaleAI": "Covers Western (Medieval through Postwar), African (North and West Africa), and Eastern performing-art traditions including India, China, Thailand, Cambodia, and Japan, spanning paths B.3, C, and E. Explicitly includes Oceania, providing partial coverage for the priority paths F.1–F.3."
+      "rationaleAI": "Performing arts spanning Western, African, and Eastern traditions (West Asia, India, China, Japan) with prehistoric origins address arts of virtually every cultural region from antiquity through the modern era."
     },
     {
       "articleTitle": "History of literature",
       "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "B.3",
-        "C.1",
-        "C.3",
+        "B",
+        "C",
         "D"
       ],
-      "rationaleAI": "Traces literary arts from ancient Mesopotamian and Egyptian texts (B.1) through medieval Islamic, Indian, and East Asian traditions (B.2, C.1, C.3, D) into early modern and contemporary global production (B.3), directly addressing characteristics of literary arts in each named cultural region."
+      "rationaleAI": "Literary history from Mesopotamian and Egyptian texts through medieval Islamic, Indian, East Asian, and European traditions addresses arts of the Western tradition (B), Asian peoples (C), and Middle Eastern and Islamic peoples (D)."
     },
     {
       "articleTitle": "Byzantine Empire",
       "relevantPathsAI": [
+        "B.1",
         "B.2"
       ],
-      "rationaleAI": "Byzantine art, architecture, and Orthodox Christian iconographic tradition are substantive sub-topics of this article, covering the arts of the medieval Eastern Roman world within the B.2 path (arts of the Middle Ages)."
+      "rationaleAI": "Byzantine art, architecture, and literature spanning late antiquity through the medieval period address arts in antiquity as Early Christian art (B.1) and arts of the Middle Ages (B.2)."
     },
     {
       "articleTitle": "Ancient Egypt",
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Monumental architecture (pyramids, temples), hieroglyphic writing and literature, and religious iconography are core sub-topics, directly mapping to the arts of ancient Egypt in path B.1 (arts in antiquity)."
+      "rationaleAI": "Ancient Egypt's monumental architecture, hieroglyphic writing, and polytheistic art directly address arts of ancient Egypt in antiquity (B.1)."
     },
     {
       "articleTitle": "Oceania",
       "relevantPathsAI": [
-        "F",
-        "F.1",
-        "F.2",
-        "F.3",
-        "F.4"
+        "F"
       ],
-      "rationaleAI": "Covers Aboriginal Australian artistic tradition, Polynesian seafaring culture, and explicitly names Melanesia, Micronesia, and Polynesia as subregions, providing the only candidate coverage of the priority paths F.1–F.3 (arts of Melanesia, Micronesia, and Polynesia)."
+      "rationaleAI": "Oceania's Aboriginal Australian artistic traditions and Pacific Islander cultures directly address arts of the Oceanian peoples (F), including Melanesia, Micronesia, Polynesia, and Australian Aboriginal peoples."
     },
     {
       "articleTitle": "Islamic Golden Age",
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Covers art, architecture, literature, and music in medieval Islamic urban centers (Baghdad, Cordoba, Cairo), directly addressing the arts of the Arab world and North Africa in path D.2."
+      "rationaleAI": "The Islamic Golden Age's literature, art, music, and architecture across Baghdad, Cordoba, and Cairo directly address arts of North Africa and of the Arab world (D.2)."
     },
     {
       "articleTitle": "Middle Ages",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Covers Church and monastic culture, scholasticism, and European artistic and theological developments of the Early, High, and Late Middle Ages, mapping to path B.2 (arts of the Middle Ages)."
+      "rationaleAI": "The Middle Ages' theological, artistic, and architectural developments directly address arts of the Middle Ages in the Western tradition (B.2)."
     },
     {
       "articleTitle": "Renaissance",
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Centers on visual arts (Leonardo, Michelangelo, Giotto), vernacular literature (Dante, Petrarch), and the spread of Italian artistic conventions across Europe, directly covering path B.3 (arts from the Renaissance to the present in Europe and America)."
+      "rationaleAI": "The Renaissance's visual arts, vernacular literature, and humanism directly address arts from the Renaissance to the present in Europe (B.3)."
     },
     {
       "articleTitle": "East Asia",
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Covers Chinese civilization's domination of cultural and artistic traditions across China, Japan, Korea, and Mongolia, including Confucianism, Buddhism, Taoism, and Shinto as frameworks for artistic production in path C.1 (arts of East Asia)."
+      "rationaleAI": "East Asia encompassing China, Japan, and Korea with Confucian, Buddhist, and Daoist cultural traditions directly addresses arts of East Asian peoples (C.1)."
     },
     {
       "articleTitle": "Suleiman the Magnificent",
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "His reign produced a golden age of Ottoman architecture, literature, and arts, and he was personally a poet and goldsmith; this substantively covers Islamic and Arab-world arts in path D.2."
+      "rationaleAI": "Suleiman's golden age of Ottoman architecture, literature, and arts addresses arts of the Arab world and Islamic peoples (D.2)."
     },
     {
       "articleTitle": "Charlemagne",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "The Carolingian Renaissance — promotion of literacy, education, and manuscript illumination under Charlemagne — represents a substantive arts-of-the-Middle-Ages topic within path B.2, even though the article is primarily political."
+      "rationaleAI": "Charlemagne's Carolingian Renaissance and promotion of arts and learning address arts of the Middle Ages (B.2)."
     },
     {
       "articleTitle": "Akbar",
       "relevantPathsAI": [
         "C.3"
       ],
-      "rationaleAI": "His reign explicitly produced a distinct Mughal artistic style merging Timurid, Perso-Islamic, and Indian traditions; his court directly shaped the visual arts of South Asia, mapping to path C.3 (arts in South Asia: India, Pakistan)."
+      "rationaleAI": "Akbar's merging of Timurid, Perso-Islamic, and Indian artistic traditions into a distinct Mughal style directly addresses arts of South Asian peoples including India (C.3)."
     },
     {
       "articleTitle": "History of art",
       "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "B.3",
-        "C.1",
-        "C.3",
-        "C.4",
+        "A",
+        "B",
+        "C",
         "D",
         "E",
         "F",
         "G"
       ],
-      "rationaleAI": "Surveys visual production across virtually all cultures named in the 613 outline — Egyptian, Greek, Roman, Islamic, Indian, Chinese, Japanese, African, Oceanic, and pre-Columbian — making it the broadest-coverage candidate in the batch."
+      "rationaleAI": "The history of art surveying production across all cultures from prehistoric through contemporary directly addresses arts of every cultural region in the outline."
     },
     {
       "articleTitle": "History of architecture",
       "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "B.3",
-        "C.1",
-        "C.3",
-        "C.4",
+        "B",
+        "C",
         "D"
       ],
-      "rationaleAI": "Traces built environments from ancient Egyptian and Mesopotamian through South Asian Buddhist/Hindu, East and Southeast Asian, Islamic, and European medieval to modern forms, covering multiple named regional paths in the 613 outline."
+      "rationaleAI": "The history of architecture from Mesopotamian and Egyptian through Islamic, South Asian, East Asian, and European traditions addresses arts of Western (B), Asian (C), and Middle Eastern (D) peoples."
     },
     {
       "articleTitle": "Ottoman Empire",
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Ottoman arts, architecture, and the millet system's cultural plurality are substantive sub-topics, directly addressing the arts of the Arab world and North Africa in path D.2 alongside the broader Islamic peoples."
+      "rationaleAI": "The Ottoman Empire's cultural production spanning Southeast Europe, West Asia, and North Africa addresses arts of the Islamic peoples and the Arab world (D.2)."
     },
     {
       "articleTitle": "Tang dynasty",
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Covers woodblock printing, literature, and extensive cultural exchange with Korea, Japan, and Central Asian states during the Tang golden age, directly covering the arts of East Asia in path C.1."
+      "rationaleAI": "The Tang dynasty's golden age of Chinese civilization in poetry, arts, and cultural exchange directly addresses arts of East Asian peoples, specifically China (C.1)."
     },
     {
       "articleTitle": "Italy",
       "relevantPathsAI": [
+        "B.1",
         "B.3"
       ],
-      "rationaleAI": "Italy's unique weight in ancient Roman arts (B.1) and Renaissance heritage makes it a substantive coverage point for B.3; the article includes Rome, medieval city-states, and the Renaissance as core historical themes."
+      "rationaleAI": "Italy's ancient Roman heritage and Renaissance artistic tradition address arts in antiquity (B.1) and arts from the Renaissance to the present (B.3)."
     },
     {
       "articleTitle": "Ancient Rome",
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Latin literature, monumental architecture (roads, aqueducts), and religious art transitioning to early Christianity are explicit sub-topics, mapping to path B.1 (ancient Roman and early Christian arts)."
+      "rationaleAI": "Ancient Rome's literature, architecture, and visual arts directly address ancient Roman arts in antiquity (B.1)."
     },
     {
       "articleTitle": "Pre-Columbian era",
       "relevantPathsAI": [
-        "G",
-        "G.1",
         "G.2",
         "G.3"
       ],
-      "rationaleAI": "Spans all indigenous American civilizations before European contact — North American Woodland and Mississippian cultures (G.1), Mesoamerican Olmec/Maya/Aztec (G.2), and South American Chavín/Inca traditions (G.3)—covering the entire G branch of the outline."
+      "rationaleAI": "The pre-Columbian era's Mesoamerican and South American civilizations directly address arts of Meso-American peoples (G.2) and South American peoples (G.3)."
     },
     {
       "articleTitle": "Nigeria",
       "relevantPathsAI": [
         "E.5"
       ],
-      "rationaleAI": "The Nok culture and Benin Kingdom are explicitly named; both are among the most significant archaeological and artistic cultures of West Africa, directly covering path E.5 (arts of West African cultures)."
+      "rationaleAI": "Nigeria's Nok culture, Benin Kingdom, and Oyo Empire artistic heritage directly address arts of West African cultures (E.5)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

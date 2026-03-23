@@ -452,6 +452,21 @@ export default function CircleNavigator({
     };
   }, [centerPreviewPartNumber]);
 
+  useEffect(() => {
+    const svg = svgRef.current;
+    if (!svg) return;
+
+    const preventTouchScrollWhileDragging = (event: TouchEvent) => {
+      if (dragStateRef.current) event.preventDefault();
+    };
+
+    svg.addEventListener('touchmove', preventTouchScrollWhileDragging, { passive: false });
+
+    return () => {
+      svg.removeEventListener('touchmove', preventTouchScrollWhileDragging);
+    };
+  }, []);
+
   // Animate removeMorphT when center-remove preview toggles
   useEffect(() => {
     if (removeMorphAnimRef.current) {
@@ -934,6 +949,10 @@ export default function CircleNavigator({
     event.preventDefault();
   };
 
+  const handleInteractiveTouchStart = (event: h.JSX.TargetedTouchEvent<SVGElement>) => {
+    if (event.cancelable) event.preventDefault();
+  };
+
   const handleBackgroundPointerDown = (event: h.JSX.TargetedPointerEvent<SVGSVGElement>) => {
     if (dragStateRef.current || !svgRef.current) return;
 
@@ -1133,7 +1152,7 @@ export default function CircleNavigator({
           ref={svgRef}
           viewBox={`${VIEWBOX_INSET} ${VIEWBOX_INSET} ${VIEWBOX_SIZE - VIEWBOX_INSET * 2} ${VIEWBOX_SIZE - VIEWBOX_INSET * 2}`}
           class="mx-auto aspect-square w-full max-w-[38rem] cursor-default select-none sm:max-w-[42rem]"
-          style={{ overflow: 'visible', touchAction: 'pan-y pinch-zoom' }}
+          style={{ overflow: 'visible', touchAction: 'auto' }}
           role="img"
           aria-label="Interactive circle navigation for the ten parts of the Propaedia"
           onPointerMove={handlePointerMove}
@@ -1152,6 +1171,7 @@ export default function CircleNavigator({
             fill="transparent"
             class="cursor-grab active:cursor-grabbing"
             style={{ touchAction: 'none' }}
+            onTouchStart={handleInteractiveTouchStart}
             onPointerDown={handleBackgroundPointerDown}
           />
 
@@ -1200,6 +1220,7 @@ export default function CircleNavigator({
                   fill="transparent"
                   class="cursor-grab active:cursor-grabbing"
                   style={{ touchAction: 'none' }}
+                  onTouchStart={handleInteractiveTouchStart}
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
                 />
                 <path
@@ -1207,6 +1228,7 @@ export default function CircleNavigator({
                   fill="transparent"
                   class="cursor-grab active:cursor-grabbing"
                   style={{ touchAction: 'none' }}
+                  onTouchStart={handleInteractiveTouchStart}
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
                 />
                 <path
@@ -1225,6 +1247,7 @@ export default function CircleNavigator({
                   }
                   class="cursor-grab active:cursor-grabbing"
                   style={{ touchAction: 'none' }}
+                  onTouchStart={handleInteractiveTouchStart}
                   onPointerDown={handleSegmentPointerDown(part.partNumber)}
                 />
 
@@ -1613,6 +1636,7 @@ export default function CircleNavigator({
             tabIndex={0}
             class="cursor-grab active:cursor-grabbing"
             style={{ outline: 'none', touchAction: 'none' }}
+            onTouchStart={handleInteractiveTouchStart}
             onPointerDown={(event) => {
               event.preventDefault();
               setCenterHasFocus(false);
