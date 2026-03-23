@@ -4,42 +4,43 @@
     {
       "articleTitle": "Civil engineering",
       "relevantPathsAI": [
-        "A",
-        "B"
+        "B",
+        "B.1",
+        "B.3"
       ],
-      "rationaleAI": "Civil engineering encompasses precisely the scope of both major outline divisions: general building construction including structural, geotechnical, and construction engineering (A), and civil engineering works such as roads, bridges, dams, canals, and harbour works (B)."
+      "rationaleAI": "Design, construction, and maintenance of public infrastructure corresponds to construction of civil engineering works (B), including dams (B.1) and bridges (B.3)."
     },
     {
       "articleTitle": "Concrete",
       "relevantPathsAI": [
-        "A.3",
+        "A.3.i",
         "A.6.c"
       ],
-      "rationaleAI": "Directly covers concrete as a building material — Portland cement hydration, reinforced and prestressed variants, and formwork (A.3.i) — and its use in concrete construction techniques (A.6.c), including its status as the world's most-manufactured building material."
+      "rationaleAI": "Portland cement composites including reinforced and prestressed concrete as building materials (A.3.i) and concrete construction techniques (A.6.c)."
     },
     {
       "articleTitle": "Masonry",
       "relevantPathsAI": [
-        "A.3.a",
         "A.3.d",
         "A.3.e",
         "A.6.b"
       ],
-      "rationaleAI": "Masonry covers discrete unit construction from brick, stone, and concrete block with mortar (building materials A.3.a/d/e) and the structural techniques of load-bearing walls, arches, and vaults (A.6.b masonry construction)."
+      "rationaleAI": "Construction from brick, stone, and concrete block corresponds to bricks and tiles (A.3.d), stone (A.3.e), and masonry construction techniques (A.6.b)."
     },
     {
       "articleTitle": "Bridge",
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Directly covers bridge construction in full: structural forms (beam, arch, truss, cantilever, suspension, cable-stayed), design criteria for static and dynamic loads, and finite element analysis, constituting the primary candidate for B.3."
+      "rationaleAI": "Civil engineering structures spanning obstacles to carry loads correspond to bridges as civil engineering works (B.3)."
     },
     {
       "articleTitle": "Mechanical engineering",
       "relevantPathsAI": [
-        "A.5"
+        "A.5",
+        "A.7.g"
       ],
-      "rationaleAI": "Mechanical engineering encompasses the design and maintenance of machinery — including the construction machinery (A.5) used on building sites — covering CAD/CAM tools, structural analysis, and the mechanical systems that include cranes, hoists, and transport equipment."
+      "rationaleAI": "Design and maintenance of mechanical systems connects to construction machinery (A.5) and auxiliary systems including HVAC (A.7.g.ii)."
     },
     {
       "articleTitle": "Building",
@@ -47,28 +48,29 @@
         "A",
         "A.7"
       ],
-      "rationaleAI": "Directly maps to general building construction (A) as a whole, covering typological breadth of structures, materials, green building practices, and the components — structural, environmental, and auxiliary — described in A.7."
+      "rationaleAI": "Permanently enclosed structures correspond to general building construction (A) and building components (A.7)."
     },
     {
       "articleTitle": "Iron",
       "relevantPathsAI": [
         "A.3.g"
       ],
-      "rationaleAI": "Iron is explicitly listed as an example material under A.3.g (metals including iron, steel, aluminum, copper), and the article covers steelmaking processes via blast furnace and direct reduction relevant to construction metal supply."
+      "rationaleAI": "Iron as a building material (A.3.g) used in structural construction."
     },
     {
       "articleTitle": "Dam",
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Directly covers dam construction in full: structural typologies (arch, gravity, embankment, buttress), hydraulic engineering, historical development from Mesopotamia onward, and modern design — the primary candidate for B.1."
+      "rationaleAI": "Barriers impeding water flow with arch, gravity, and embankment typologies correspond to dams as civil engineering works (B.1)."
     },
     {
       "articleTitle": "Architecture",
       "relevantPathsAI": [
-        "A.1"
+        "A.1",
+        "A.7"
       ],
-      "rationaleAI": "Architecture covers preconstruction design programming and planning (A.1), encompassing structural theory from Vitruvius through modernism, design for diverse building types, and the integration of aesthetic and engineering considerations before construction begins."
+      "rationaleAI": "Design and construction of habitable structures connects to preconstruction planning and design programming (A.1) and building components (A.7)."
     },
     {
       "articleTitle": "Engineering",
@@ -76,7 +78,7 @@
         "A",
         "B"
       ],
-      "rationaleAI": "Engineering broadly provides the methodology — design processes, simulation, testing, and materials application — that underlies all construction activity in both building (A) and civil engineering works (B)."
+      "rationaleAI": "Applied practice solving technological problems underpins both general building construction (A) and construction of civil engineering works (B)."
     },
     {
       "articleTitle": "Wood",
@@ -84,7 +86,7 @@
         "A.3.c",
         "A.6.a"
       ],
-      "rationaleAI": "Wood directly covers lumber as a building material (A.3.c) — its structural properties, growth-ring variation, and engineered wood products — and its use in timber and wood construction techniques (A.6.a)."
+      "rationaleAI": "Wood as lumber building material (A.3.c) and wood and timber construction techniques (A.6.a)."
     },
     {
       "articleTitle": "Steel",
@@ -92,56 +94,57 @@
         "A.3.g",
         "A.6.d"
       ],
-      "rationaleAI": "Steel is explicitly listed under A.3.g as a construction metal, and the article covers its alloying, mechanical properties, and production processes foundational to steel construction techniques (A.6.d) and structural engineering."
+      "rationaleAI": "Steel as a construction metal (A.3.g) and steel construction techniques (A.6.d)."
     },
     {
       "articleTitle": "Canal",
       "relevantPathsAI": [
-        "B.2"
+        "B.2",
+        "B.5"
       ],
-      "rationaleAI": "Canals are engineered waterways that include aqueducts as a subtype (Roman supply canals explicitly mentioned), covering hydraulic engineering, locks, and water supply infrastructure that maps to B.2 (aqueducts) as the best available candidate for that priority path."
+      "rationaleAI": "Engineered artificial waterways correspond to aqueducts (B.2) and harbour and hydraulic works (B.5)."
     },
     {
       "articleTitle": "Copper",
       "relevantPathsAI": [
         "A.3.g"
       ],
-      "rationaleAI": "Copper is explicitly cited as an example material in A.3.g (metals including copper), and the article covers its use in electrical wiring, architecture, and construction applications relevant to building components."
+      "rationaleAI": "Copper as a construction metal (A.3.g) used in plumbing, roofing, and electrical wiring."
     },
     {
       "articleTitle": "Rock (geology)",
       "relevantPathsAI": [
         "A.3.e"
       ],
-      "rationaleAI": "Rock covers stone as a building material (A.3.e) — igneous, sedimentary, and metamorphic types used in construction since antiquity — and its human use in masonry and concrete aggregate applications."
+      "rationaleAI": "Naturally occurring solid mineral masses used as stone building material (A.3.e)."
     },
     {
       "articleTitle": "Metal",
       "relevantPathsAI": [
         "A.3.g"
       ],
-      "rationaleAI": "Metal provides the broad scientific and industrial context for the metals listed explicitly under A.3.g, covering ferrous and non-ferrous classification, metallurgical properties, and extraction relevant to construction material supply."
+      "rationaleAI": "Metals including iron, steel, aluminum, and copper as construction materials (A.3.g)."
     },
     {
       "articleTitle": "Metallurgy",
       "relevantPathsAI": [
         "A.3.g"
       ],
-      "rationaleAI": "Metallurgy is the materials science underpinning the production of construction metals (A.3.g) — iron, steel, aluminum, copper — covering extraction, phase transformations, and mechanical properties that govern structural performance."
+      "rationaleAI": "The science of metals underpins the properties and performance of metallic construction materials (A.3.g)."
     },
     {
       "articleTitle": "Refrigeration",
       "relevantPathsAI": [
-        "A.7.g"
+        "A.7.g.ii"
       ],
-      "rationaleAI": "Refrigeration covers the mechanical vapour-compression and HVAC systems that correspond directly to heating, ventilating, and air-conditioning systems (A.7.g.ii) as building auxiliary systems."
+      "rationaleAI": "Heating, ventilating, and air-conditioning systems (A.7.g.ii) incorporate refrigeration as a core building services technology."
     },
     {
       "articleTitle": "Electric light",
       "relevantPathsAI": [
-        "A.7.g"
+        "A.7.g.iv"
       ],
-      "rationaleAI": "Directly covers systems for illumination (A.7.g.iv) — incandescent, gas-discharge, and LED technologies — as building electrical systems, tracing efficiency advances from 19th-century arc lamps to modern LED installations."
+      "rationaleAI": "Interior and exterior lighting systems as building auxiliary systems (A.7.g.iv)."
     },
     {
       "articleTitle": "Construction",
@@ -149,31 +152,30 @@
         "A",
         "B"
       ],
-      "rationaleAI": "Provides the broadest overview of construction technology as a whole — covering the full lifecycle of built assets across residential, infrastructure, and industrial sectors — mapping to both general building construction (A) and civil engineering works (B)."
+      "rationaleAI": "Full lifecycle of delivering built assets from planning through demolition corresponds to both general building construction (A) and civil engineering works (B)."
     },
     {
       "articleTitle": "Fortification",
       "relevantPathsAI": [
-        "A",
-        "B"
+        "B.4"
       ],
-      "rationaleAI": "Fortifications represent a specialized application of construction technology — earthworks, stone walls, star forts, reinforced concrete bunkers — spanning both building construction methods (A) and civil engineering structures (B), and driving key innovations in construction materials and techniques."
+      "rationaleAI": "Military constructions including bunkers and fortified structures connect to underground construction (B.4)."
     },
     {
       "articleTitle": "Wheel",
       "relevantPathsAI": [
         "A.5.a"
       ],
-      "rationaleAI": "The wheel-and-axle simple machine is the foundational component of transport machinery used on construction sites (A.5.a), including wheeled vehicles, cranes, and haulage equipment; this is the most relevant candidate for that priority path."
+      "rationaleAI": "Wheels as components of construction transport machinery (A.5.a)."
     },
     {
       "articleTitle": "Machine",
       "relevantPathsAI": [
         "A.5"
       ],
-      "rationaleAI": "Machines — from cranes and pulleys (simple machines) to complex powered lifting and transport equipment — directly correspond to construction machinery (A.5), covering the mechanical principles of force transmission and the power sources driving construction equipment."
+      "rationaleAI": "Machines applying forces to perform work correspond to construction machinery (A.5) including transport and lifting equipment."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

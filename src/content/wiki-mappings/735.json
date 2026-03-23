@@ -8,29 +8,26 @@
         "D.1",
         "D.2",
         "D.3",
-        "D.4",
-        "D.5",
-        "B"
+        "D.4"
       ],
-      "rationaleAI": "Covers the full scope of digital and analog computers (D.1), programming systems and software (D.2), computer languages (D.3), microcomputer and supercomputer applications (D.4), and artificial intelligence developments (D.5); also traces calculating devices from abacus through mechanical calculators directly relevant to B."
+      "rationaleAI": "Programmable machines executing operations via stored programs correspond to computers (D), types including digital and analog (D.1), programming systems (D.2), computer languages (D.3), and applications (D.4)."
     },
     {
       "articleTitle": "Telephone",
       "relevantPathsAI": [
         "I.4"
       ],
-      "rationaleAI": "Directly covers telephone and telecommunications systems and equipment (I.4), tracing the technology from Bell's first device through PSTN, cordless, cellular, and VoIP systems."
+      "rationaleAI": "Devices converting sound into electronic signals for transmission correspond to telephone and telecommunications systems and equipment (I.4)."
     },
     {
       "articleTitle": "Telecommunications",
       "relevantPathsAI": [
         "I",
-        "I.4",
-        "I.5",
         "I.3",
-        "K"
+        "I.4",
+        "I.5"
       ],
-      "rationaleAI": "Spans the major communications systems of the outline — telegraph (I.3), telephone (I.4), radio (I.5), and the internet (I.8) — and covers modulation, bandwidth, multiplexing, and network architecture fundamental to electronic components and techniques (K)."
+      "rationaleAI": "Transmission of information over distance via electrical or electronic means corresponds to major systems of communication (I), including telegraph (I.3), telephone (I.4), and radio (I.5)."
     },
     {
       "articleTitle": "Broadcasting",
@@ -38,7 +35,7 @@
         "I.5",
         "I.6"
       ],
-      "rationaleAI": "Covers radio communications systems (I.5) and television communications systems (I.6), the two principal broadcast media addressed in the outline's major communications section."
+      "rationaleAI": "One-to-many distribution of audio/audiovisual content via radio waves corresponds to radio communications (I.5) and television communications (I.6)."
     },
     {
       "articleTitle": "Electronics",
@@ -46,51 +43,47 @@
         "K",
         "K.1",
         "K.1.a",
-        "K.1.b",
         "K.1.c"
       ],
-      "rationaleAI": "Directly addresses electronic components (K.1) including active components such as transistors and diodes (K.1.a), passive components (K.1.b), and integrated circuits/microprocessors (K.1.c) used in communications technology."
+      "rationaleAI": "Design and operation of devices using transistors, diodes, and integrated circuits corresponds to electronic components (K), active components (K.1.a), and integrated circuits (K.1.c)."
     },
     {
       "articleTitle": "Camera",
       "relevantPathsAI": [
-        "G.1",
-        "G.2"
+        "G.1"
       ],
-      "rationaleAI": "Covers still photography technology (G.1) and motion-picture and television photography (G.2), directly corresponding to the outline's technology of photography subsections."
+      "rationaleAI": "Instrument capturing images by focusing light corresponds to still photography technology (G.1)."
     },
     {
       "articleTitle": "Artificial intelligence",
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Directly corresponds to outline path D.5, covering developments in AI including expert systems, natural-language processing, computer vision, and the neural network and deep learning methods that underpin these applications."
+      "rationaleAI": "Systems performing tasks associated with human intelligence — learning, reasoning, perception, and natural language processing — correspond to developments in artificial intelligence (D.5)."
     },
     {
       "articleTitle": "Mobile phone",
       "relevantPathsAI": [
-        "I.4",
-        "I.8"
+        "I.4"
       ],
-      "rationaleAI": "Mobile phones are a primary form of telephone and telecommunications equipment (I.4) and smartphones constitute key nodes in electronic networks (I.8), encompassing cellular radio systems, data networking, and convergent communications."
+      "rationaleAI": "Portable wireless telephones operating over cellular networks correspond to telephone and telecommunications systems (I.4)."
     },
     {
       "articleTitle": "Alan Turing",
       "relevantPathsAI": [
         "D",
-        "D.2",
-        "D.5"
+        "D.5",
+        "I.9"
       ],
-      "rationaleAI": "Turing's formalization of algorithm and computation is foundational to computer programming systems (D.2), and his Turing test and early stored-program computer design are central to the history of artificial intelligence (D.5) and computers broadly (D)."
+      "rationaleAI": "Founded theoretical computer science via the Turing machine (D), proposed the Turing test for AI (D.5), and led cryptanalysis of the Enigma cipher relevant to encryption and decryption (I.9)."
     },
     {
       "articleTitle": "Information",
       "relevantPathsAI": [
         "A",
-        "H",
-        "H.1"
+        "H"
       ],
-      "rationaleAI": "Shannon's information theory — quantifying information in bits — is the direct subject of outline path A (communication and information theory), and the article's treatment of encoding, storage, transmission, and compression corresponds to the elements of information processing (H.1)."
+      "rationaleAI": "Abstract concept of meaning transmission quantified in bits corresponds to communication and information theory (A) and information processing and systems (H)."
     },
     {
       "articleTitle": "Library",
@@ -98,133 +91,117 @@
         "H.1.c",
         "H.2.c"
       ],
-      "rationaleAI": "Covers organization and retrieval including computerized library catalogs and library networks (H.1.c), and library reference services correspond to educational and reference systems (H.2.c)."
+      "rationaleAI": "Organized collections of physical and digital materials with catalogs correspond to organization and retrieval including computerized catalogs in libraries (H.1.c) and educational and reference systems (H.2.c)."
     },
     {
       "articleTitle": "Printing",
       "relevantPathsAI": [
         "E.3",
-        "E.4",
-        "E.4.a",
-        "I.1"
+        "E.4"
       ],
-      "rationaleAI": "Covers printing machines and processes (E.3), production of printing plates including woodcut, engraving, etching, and lithography (E.4, E.4.a), and book/newspaper publishing (I.1) as a major communications system."
+      "rationaleAI": "Mass reproduction of text and images from woodblock printing through digital printing corresponds to printing machines and processes (E.3) and production of printing plates (E.4)."
     },
     {
       "articleTitle": "Television",
       "relevantPathsAI": [
         "I.6",
         "F.2",
-        "G.2"
+        "F.3"
       ],
-      "rationaleAI": "Directly addresses television communications systems and equipment (I.6), including broadcast engineering, cable, satellite, and digital transmission; also relates to video recording systems (F.2) and motion-picture/television photography (G.2)."
+      "rationaleAI": "Telecommunication medium transmitting moving images corresponds to television communications (I.6), magnetic video recording (F.2), and optical video systems (F.3)."
     },
     {
       "articleTitle": "Cryptography",
       "relevantPathsAI": [
         "I.9"
       ],
-      "rationaleAI": "Directly covers the history and technology of encryption and decryption, signal security, and message authentication that constitute outline path I.9 on cryptology."
+      "rationaleAI": "Mathematical practice of securing communications via encryption and authentication corresponds to encryption and decryption techniques and history of cryptology (I.9)."
     },
     {
       "articleTitle": "Radar",
       "relevantPathsAI": [
         "J.1"
       ],
-      "rationaleAI": "Radar is the primary technology addressed under major systems of detection and remote sensing (J.1), covering pulsed and continuous radio wave systems for ranging, tracking, and velocity measurement."
+      "rationaleAI": "Radio wave detection for ranging and tracking corresponds to radar systems and equipment (J.1)."
     },
     {
       "articleTitle": "Photography",
       "relevantPathsAI": [
         "G",
-        "G.1",
-        "G.2",
-        "G.3"
+        "G.1"
       ],
-      "rationaleAI": "Covers the technology of photography broadly (G), including still photography (G.1), motion-picture and television photography (G.2), and the progression from chemical film to digital sensors directly relevant to the outline's photographic technology section."
+      "rationaleAI": "Capture of images by recording light corresponds to the technology of photography (G) and still photography (G.1)."
     },
     {
       "articleTitle": "News",
       "relevantPathsAI": [
-        "I.1",
-        "I.2"
+        "I.1"
       ],
-      "rationaleAI": "Covers newspaper and magazine publishing (I.1) as a major communication system, and traces news dissemination through postal systems (I.2), broadcasting, and digital media."
+      "rationaleAI": "Information about current events disseminated through print, broadcasting, and digital media corresponds to book, newspaper, and magazine publishing (I.1)."
     },
     {
       "articleTitle": "Publishing",
       "relevantPathsAI": [
         "I.1"
       ],
-      "rationaleAI": "Directly addresses book, newspaper, and magazine publishing (I.1), the first major communication system in the outline, encompassing print and digital forms from trade books to e-books and websites."
+      "rationaleAI": "Making content publicly available in print or digital form corresponds to book, newspaper, and magazine publishing (I.1)."
     },
     {
       "articleTitle": "Book",
       "relevantPathsAI": [
-        "I.1",
-        "E.3",
-        "H.2.c"
+        "I.1"
       ],
-      "rationaleAI": "Books are the primary subject of publishing (I.1) and connect to printing technology (E.3); encyclopaedias as a reference subtype are explicitly noted in H.2.c.ii, making this article relevant to reference information systems as well."
+      "rationaleAI": "Written works distributed in printed, audio, or electronic form correspond to book publishing (I.1)."
     },
     {
       "articleTitle": "Internet",
       "relevantPathsAI": [
-        "I.8",
-        "H.1.d",
-        "H.2.b"
+        "I.8"
       ],
-      "rationaleAI": "Directly covers electronic networks (I.8) — TCP/IP, the Web, email, and VoIP — and relates to display and dissemination systems including electronic mail and online services (H.1.d) and public online database systems (H.2.b)."
+      "rationaleAI": "Global network-of-networks using TCP/IP corresponds to electronic networks (I.8)."
     },
     {
       "articleTitle": "Integrated circuit",
       "relevantPathsAI": [
-        "K.1.c",
-        "D"
+        "K.1.c"
       ],
-      "rationaleAI": "Integrated circuits are explicitly identified in outline path K.1.c as miniature arrays of interconnected circuit elements including microprocessors; they are also foundational to all modern computers (D)."
+      "rationaleAI": "Miniaturized assemblies of transistors and other components fabricated on semiconductor substrates correspond to integrated circuits (K.1.c)."
     },
     {
       "articleTitle": "Laser",
       "relevantPathsAI": [
-        "G.3",
-        "F.3"
+        "G.3"
       ],
-      "rationaleAI": "Covers holography and laser photography (G.3) and optical disc systems (F.3); laser technology also underpins fiber-optic communications relevant to the telecommunications infrastructure underlying I."
+      "rationaleAI": "Laser applications in optical disc storage and fiber-optic communications connect to holography and laser photography (G.3)."
     },
     {
       "articleTitle": "Thomas Edison",
       "relevantPathsAI": [
-        "F.1",
-        "E.3",
-        "C.1"
+        "F.1"
       ],
-      "rationaleAI": "Edison's phonograph is the founding mechanical sound recording system (F.1); his carbon telephone microphone is relevant to I.4; his motion-picture technology relates to G.2; and his printing telegraph work connects to writing and reproducing machines (C.1)."
+      "rationaleAI": "Invented the phonograph for sound recording, corresponding to mechanical systems for sound recording (F.1)."
     },
     {
       "articleTitle": "Johannes Gutenberg",
       "relevantPathsAI": [
         "E.3",
-        "E.4",
-        "I.1"
+        "E.4"
       ],
-      "rationaleAI": "Gutenberg's movable-type press is the historical origin of European printing machines and processes (E.3) and printing plate production (E.4), directly enabling book and newspaper publishing as a communication system (I.1)."
+      "rationaleAI": "Invented the European movable-type printing press, corresponding to printing machines and processes (E.3) and production of printing plates (E.4)."
     },
     {
       "articleTitle": "Robotics",
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Robotics is explicitly listed in outline path D.5 as a development in artificial intelligence, alongside expert systems and natural-language processing, reflecting the close integration of robotics with computer science."
+      "rationaleAI": "Design and operation of robots integrating AI corresponds to developments in artificial intelligence including robotics (D.5)."
     },
     {
       "articleTitle": "Radio",
       "relevantPathsAI": [
-        "I.5",
-        "J",
-        "K.1.b"
+        "I.5"
       ],
-      "rationaleAI": "Directly addresses radio communications systems and equipment (I.5) and covers radar as a remote-sensing application of radio waves (J); antennas and waveguides as passive components (K.1.b) are also discussed in the article's technical content."
+      "rationaleAI": "Use of electromagnetic waves to transmit information wirelessly corresponds to radio communications systems and equipment (I.5)."
     },
     {
       "articleTitle": "Communication",
@@ -232,26 +209,24 @@
         "A",
         "I"
       ],
-      "rationaleAI": "Covers the process, models, and channels of information transfer that constitute communication and information theory (A), and traces the historical evolution through writing, print, broadcast, and digital technologies that map to the major systems of communication (I)."
+      "rationaleAI": "Transmission and creation of meaning between senders and receivers corresponds to communication and information theory (A) and major systems of communication (I)."
     },
     {
       "articleTitle": "Information Age",
       "relevantPathsAI": [
-        "D",
-        "H",
+        "D.4",
         "I.8"
       ],
-      "rationaleAI": "Characterizes the era defined by computers (D), information technology and data systems (H), and electronic networks including the internet (I.8), providing historical and economic context for the entire section's subject matter."
+      "rationaleAI": "The shift to information-technology-centered economies via transistors and the internet corresponds to applications of computers (D.4) and electronic networks (I.8)."
     },
     {
       "articleTitle": "Video game",
       "relevantPathsAI": [
-        "D.4",
-        "F"
+        "D.4"
       ],
-      "rationaleAI": "Video games are a significant application of microcomputers and consumer electronics (D.4), and their audiovisual output systems connect to sound and video reproducing devices (F); the article provides context for interactive digital media as an information processing application."
+      "rationaleAI": "Electronic interactive systems played on console, computer, and mobile platforms correspond to applications of computers (D.4)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

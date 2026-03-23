@@ -4,26 +4,24 @@
     {
       "articleTitle": "Furniture",
       "relevantPathsAI": [
-        "B.8",
-        "C.3"
+        "C.3",
+        "C.3.c"
       ],
-      "rationaleAI": "Furniture is the primary applied art of wood (B.8), with traditions spanning Egyptian joinery, medieval oak forms, and Modernist design. Furniture design and production are central to the decorative arts of furnishings and interior design (C.3)."
+      "rationaleAI": "Movable objects supporting human activities correspond to objects used for interior decoration (C.3.c) and interior design as an art (C.3.a), spanning historical traditions from Egyptian joinery through 20th-century Modernism."
     },
     {
       "articleTitle": "Pottery",
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "Pottery directly instantiates B.1 (clay: earthenware, stoneware, porcelain), covering the full range of clay-body types, firing temperatures, and regional ceramic traditions from prehistoric origins through modern studio ceramics."
+      "rationaleAI": "Clay-based decorative objects including earthenware, stoneware, and porcelain (B.1), with functional vessel intent placing pottery squarely within decorative arts classified by material."
     },
     {
       "articleTitle": "Jewellery",
       "relevantPathsAI": [
-        "B.3",
-        "B.5",
         "C.1.b"
       ],
-      "rationaleAI": "Jewellery spans precious and semi-precious gemstones (B.3) and precious metals such as gold and silver (B.5), while being the paradigmatic form of personal adornment classified under dress design and jewelry (C.1.b)."
+      "rationaleAI": "Decorative worn items including rings, necklaces, bracelets, earrings, and brooches made from precious metals, gemstones, and enamel directly correspond to jewelry as functional design (C.1.b)."
     },
     {
       "articleTitle": "Design",
@@ -31,120 +29,115 @@
         "A",
         "C.2"
       ],
-      "rationaleAI": "Design addresses the nature and scope of functional and aesthetic object creation (A), and its coverage of product and industrial design directly maps to C.2, including the balance of aesthetic, functional, and experiential goals within constraints."
+      "rationaleAI": "The intentional creation of plans balancing aesthetic and functional goals encompasses the nature and scope of decorative and functional design (A) and industrial design as an art (C.2)."
     },
     {
       "articleTitle": "Clothing",
       "relevantPathsAI": [
-        "B.2",
-        "B.10.c",
-        "C.1.a",
-        "C.1.c"
+        "C.1.a"
       ],
-      "rationaleAI": "Clothing is the core subject of dress design (C.1.a) and body decoration (C.1.c), and its textile production directly engages B.2 (fabrics); animal skins and furs in its history connect to B.10.c."
+      "rationaleAI": "Items worn on the human body made from textiles correspond to dress and dress accessories (C.1.a), functioning as both protection and social signaling."
     },
     {
       "articleTitle": "Flower",
       "relevantPathsAI": [
         "B.10.a"
       ],
-      "rationaleAI": "Flowers are explicitly cited in B.10.a as the primary example of botanical materials used for decorative purposes, including bouquets, garlands, and wreaths, which maps precisely to the flower article's coverage of floral use in human societies."
+      "rationaleAI": "Flowers and botanical materials used in bouquets, garlands, and wreaths (B.10.a) as decorative organic materials."
     },
     {
       "articleTitle": "Textile",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "Textile directly covers the full material scope of B.2 (fabrics), encompassing fibres, yarns, weaving, knitting, dyeing, and finishing across consumer and technical applications; textiles are one of the oldest decorative and functional material categories."
+      "rationaleAI": "Fibre-based materials produced by weaving, knitting, and felting correspond to fabrics as decorative arts materials (B.2)."
     },
     {
       "articleTitle": "Glass",
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Glass is the named material under B.4, and the article covers the full range of glass types (soda-lime, borosilicate, lead glass) and applications including vessels, architectural glazing, and optical products relevant to decorative and functional glass arts."
+      "rationaleAI": "Glass as a decorative arts material (B.4) used in vessels, ornamental objects, and stained glass since Mesopotamian origins."
     },
     {
       "articleTitle": "Paper",
       "relevantPathsAI": [
         "B.6"
       ],
-      "rationaleAI": "Paper maps directly to B.6, which covers paper and its decorative applications such as papier-mache and wallpaper; the article traces paper from Han dynasty China through modern pulp production and publishing history."
+      "rationaleAI": "Paper as a decorative material (B.6), used in papier-mache, wallpaper, and other decorative applications."
     },
     {
       "articleTitle": "Bronze",
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "Bronze is a copper-tin alloy central to metalwork in decorative arts (B.5), extensively used in sculpture, coinage, architectural elements, and musical instruments across ancient and later traditions."
+      "rationaleAI": "Bronze as a decorative metal (B.5) used in architectural elements, ornamental objects, and coinage."
     },
     {
       "articleTitle": "Gold",
       "relevantPathsAI": [
         "B.5",
-        "C.1.b"
+        "C.5.a"
       ],
-      "rationaleAI": "Gold is the preeminent precious metal in decorative metalwork (B.5) and is foundational to jewelry production (C.1.b), with the article covering gold-leaf art, jewelry, coinage, and gold's unique material properties that make it central to decorative arts."
+      "rationaleAI": "Gold as a precious decorative metal (B.5) and its use in coins, currency, and medals (C.5.a)."
     },
     {
       "articleTitle": "Copper",
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "Copper is a historically foundational decorative and structural metal (B.5), extensively used in coinage, architectural patinas, and alloys such as bronze and brass that underpin major metalwork traditions in the decorative arts."
+      "rationaleAI": "Copper as a decorative metal (B.5) with characteristic blue-green patinas used in architectural and ornamental applications."
     },
     {
       "articleTitle": "Metallurgy",
       "relevantPathsAI": [
-        "B.5",
-        "B.11"
+        "B.5"
       ],
-      "rationaleAI": "Metallurgy provides the scientific and technical foundation for metal-based decorative arts (B.5), and its coverage of extraction, alloy formation, and surface treatment connects to the special finishing and processing techniques in B.11."
+      "rationaleAI": "The science of metals underpins the processing and properties of metals used in decorative arts (B.5)."
     },
     {
       "articleTitle": "Bone",
       "relevantPathsAI": [
         "B.10.d"
       ],
-      "rationaleAI": "Bone is explicitly named in B.10.d alongside shell, horn, and ivory as an organic material used in decorative objects; the article traces bone's use in tools, art objects, and jewelry across prehistoric to modern periods."
+      "rationaleAI": "Bone as a decorative organic material alongside shell, horn, and ivory (B.10.d)."
     },
     {
       "articleTitle": "Shoe",
       "relevantPathsAI": [
         "C.1.a"
       ],
-      "rationaleAI": "Shoes are footwear dress accessories falling under C.1.a (dress and dress accessories), and the article covers their material evolution, cultural status signaling, gender distinctions, and design history within the fashion and functional design tradition."
+      "rationaleAI": "Shoes as footwear items correspond to dress accessories (C.1.a), with fashion-oriented and culturally differentiated forms."
     },
     {
       "articleTitle": "Visual arts",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Visual arts addresses the contested boundary between fine arts and applied/decorative arts (A), including the Arts and Crafts Movement's challenge to hierarchical distinctions, which is directly relevant to understanding the nature and scope of the decorative arts."
+      "rationaleAI": "The broader visual arts context including the fine arts versus applied/decorative arts distinction provides the framework for understanding the nature and scope of decorative arts (A)."
     },
     {
       "articleTitle": "Masonry",
       "relevantPathsAI": [
-        "B.7",
-        "B.9.a"
+        "B.7"
       ],
-      "rationaleAI": "Masonry covers stone as a construction and decorative material (B.7) and addresses plaster and cement within building contexts (B.9.a), connecting to the decorative applications of these materials in architectural ornament and surface finishing."
+      "rationaleAI": "Stone as a decorative material (B.7) used in architectural ornamentation including rustication and serpentine masonry."
     },
     {
       "articleTitle": "Natural rubber",
       "relevantPathsAI": [
         "B.9.b"
       ],
-      "rationaleAI": "Natural rubber is an elastomeric polymer whose vulcanization and processing connects it to B.9.b (plastics and other synthetic materials), covering its use in industrial and consumer product design applications."
+      "rationaleAI": "Natural rubber as a synthetic/composition material (B.9.b) used in functional design applications."
     },
     {
       "articleTitle": "Iron",
       "relevantPathsAI": [
         "B.5"
       ],
-      "rationaleAI": "Iron is a primary structural and decorative metal (B.5) with a long history of use in wrought and cast iron decorative objects, architectural ironwork, and functional metalwork traditions from the Iron Age through modern industry."
+      "rationaleAI": "Iron as a decorative metal (B.5), historically significant in wrought-iron ornamental work."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

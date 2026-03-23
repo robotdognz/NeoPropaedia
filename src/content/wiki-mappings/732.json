@@ -5,205 +5,199 @@
       "articleTitle": "Manufacturing",
       "relevantPathsAI": [
         "A",
-        "B"
+        "B",
+        "C",
+        "D"
       ],
-      "rationaleAI": "Directly covers the transformation of raw materials into finished goods, including the organization of industrial production (A) and the full range of manufacturing industries (B), from aerospace to semiconductors and steel. Provides the broadest conceptual foundation for the section."
+      "rationaleAI": "Transformation of raw materials into finished goods spanning aerospace, semiconductors, and steel corresponds broadly to principles of organization (A), major manufacturing industries (B), fabrication industries (C), and processing industries (D)."
     },
     {
       "articleTitle": "Clothing",
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Covers the production, global trade, and economics of garments as the core product of the clothing and footwear industry, including fast fashion supply chains, working conditions, and environmental impact."
+      "rationaleAI": "Items worn on the human body made from textiles correspond to the clothing and footwear industry (B.3)."
     },
     {
       "articleTitle": "Henry Ford",
       "relevantPathsAI": [
-        "A",
         "B.2"
       ],
-      "rationaleAI": "Ford's introduction of the moving assembly line and Fordism is foundational to the principles of work organization and mass production (A), and his Ford Motor Company is the paradigm case for the automotive industry (B.2)."
+      "rationaleAI": "Pioneered mass automobile production through the moving assembly line, directly relevant to the automotive industry (B.2)."
     },
     {
       "articleTitle": "Textile",
       "relevantPathsAI": [
         "C.1"
       ],
-      "rationaleAI": "Directly describes the textile industry — fibre sourcing, yarn formation, fabric construction, dyeing, and finishing — covering every stage of C.1's scope from natural and synthetic fibres to industrial chemistry and global supply chains."
+      "rationaleAI": "Fibre-based materials produced by weaving, knitting, and bonding correspond to the textile industry (C.1)."
     },
     {
       "articleTitle": "Fashion",
       "relevantPathsAI": [
-        "B.3",
-        "C.1"
+        "B.3"
       ],
-      "rationaleAI": "Fashion drives the clothing and footwear industry (B.3) and depends directly on the textile industry (C.1); addresses mass production, global distribution, and the environmental and ethical dimensions of the garment supply chain."
+      "rationaleAI": "Creation and wearing of clothing, footwear, and accessories as a global industry corresponds to the clothing and footwear industry (B.3)."
     },
     {
       "articleTitle": "Industrial Revolution",
       "relevantPathsAI": [
         "A",
-        "B",
-        "C"
+        "C.1",
+        "C.2"
       ],
-      "rationaleAI": "The Industrial Revolution established the factory system and mechanized production methods that underlie the organization of work (A) and the emergence of the major manufacturing and fabrication industries (B, C), including textiles and iron/steel."
+      "rationaleAI": "The transition to mechanized factory manufacturing drove the development of the textile industry (C.1) and the steel industry (C.2), transforming principles of production organization (A)."
     },
     {
       "articleTitle": "Shoe",
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Directly covers the footwear product and its manufacturing — materials, construction, and the $200 billion global industry — corresponding precisely to the clothing and footwear industry path B.3."
+      "rationaleAI": "Paired footwear items as a $200 billion global industry correspond to the clothing and footwear industry (B.3)."
     },
     {
       "articleTitle": "Service (economics)",
       "relevantPathsAI": [
         "F"
       ],
-      "rationaleAI": "Defines the economic characteristics of service industries — intangibility, heterogeneity, simultaneous production and consumption — providing the conceptual grounding for section F's coverage of hotels, restaurants, food service, and other service-sector industries."
+      "rationaleAI": "Intangible economic outputs including personal care and professional services correspond to the service industries (F)."
     },
     {
       "articleTitle": "Mechanical engineering",
       "relevantPathsAI": [
-        "A"
+        "B.1",
+        "B.2"
       ],
-      "rationaleAI": "Mechanical engineering provides the core technical principles — design, manufacture, and maintenance of mechanical systems — that underlie the organization of industrial production processes covered in A, including CAD/CAM tooling and machinery."
+      "rationaleAI": "Design and manufacture of mechanical systems including vehicles and machinery corresponds to the aerospace industry (B.1) and the automotive industry (B.2)."
     },
     {
       "articleTitle": "Plastic",
       "relevantPathsAI": [
         "D.5"
       ],
-      "rationaleAI": "Directly covers the plastics industry (D.5): polymer types, processing methods, petroleum-derived feedstocks, global production volumes, recycling challenges, and environmental impacts central to that outline path."
+      "rationaleAI": "Synthetic polymer materials defined by plasticity correspond to the plastics industry (D.5)."
     },
     {
       "articleTitle": "Biotechnology",
       "relevantPathsAI": [
-        "D.1",
-        "I"
+        "D.4"
       ],
-      "rationaleAI": "Biotechnology's industrial fermentation, recombinant DNA products, and biofuels connect to the chemical industry (D.1), while its emphasis on genetic engineering pipelines and IP tensions makes it a natural entry point for industrial research and development (I)."
+      "rationaleAI": "Exploiting living organisms for pharmaceuticals and GMO crops corresponds to the pharmaceuticals industry (D.4)."
     },
     {
       "articleTitle": "Machine",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Covers the full range of machines — simple to complex — and the principles of mechanical advantage and power transmission that are foundational to the organization and mechanization of industrial production (A)."
+      "rationaleAI": "Machines as systems applying forces to perform work are central to principles of organization of work and production (A)."
     },
     {
       "articleTitle": "Engine",
       "relevantPathsAI": [
-        "A",
         "B.1",
         "B.2"
       ],
-      "rationaleAI": "Engines are the primary power source for industrial production machinery (A) and are central to the aerospace industry (B.1) and automotive industry (B.2) as the defining technological component of those sectors."
+      "rationaleAI": "Engines converting energy into mechanical energy are central to the aerospace industry (B.1) and the automotive industry (B.2)."
     },
     {
       "articleTitle": "Robotics",
       "relevantPathsAI": [
-        "A",
-        "I"
+        "C.6"
       ],
-      "rationaleAI": "Industrial robotics directly transforms the organization of manufacturing work and production (A), while the R&D driving automation, AI integration, and human-robot interaction belongs squarely to industrial research and development (I)."
+      "rationaleAI": "Robots in manufacturing applications connect to the electronics industry (C.6) and production automation."
     },
     {
       "articleTitle": "Car",
       "relevantPathsAI": [
         "B.2"
       ],
-      "rationaleAI": "The automobile is the defining product of the automotive industry (B.2); the article covers propulsion systems, production technologies, and the industry's economic and environmental significance."
+      "rationaleAI": "Automobiles as four-wheeled motor vehicles directly correspond to the automotive industry (B.2)."
     },
     {
       "articleTitle": "Construction",
       "relevantPathsAI": [
         "E"
       ],
-      "rationaleAI": "Directly corresponds to E (the construction industries), covering the full lifecycle of built-asset delivery — residential, non-residential, infrastructure, and industrial — and providing the only substantive candidate covering this priority path."
+      "rationaleAI": "Full lifecycle of delivering built assets corresponds to the construction industries (E)."
     },
     {
       "articleTitle": "Inorganic chemistry",
       "relevantPathsAI": [
-        "D.1",
-        "D.8"
+        "D.1"
       ],
-      "rationaleAI": "Industrial inorganic chemistry underpins the chemical industry (D.1) through catalysis, materials, and feedstock chemistry, and directly connects to the dye and pigment industry (D.8) via pigments, coatings, and chromophore synthesis."
+      "rationaleAI": "Synthesis of non-carbon-based compounds including catalysts, pigments, and agrochemicals connects to the chemical industry (D.1)."
     },
     {
       "articleTitle": "Catalysis",
       "relevantPathsAI": [
         "D.1"
       ],
-      "rationaleAI": "Catalysis is described as operating in roughly 90% of commercial chemical products, making it fundamental to the chemical industry (D.1), including hydrocarbon processing, polymer synthesis, and industrial chemical manufacture."
+      "rationaleAI": "Acceleration of chemical reactions underpinning ~90% of commercial chemical products connects to the chemical industry (D.1)."
     },
     {
       "articleTitle": "Fossil fuel",
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Petroleum and natural gas are the primary feedstocks and energy sources for the petroleum industry (D.2), and the article covers refining into fuels, plastics, pharmaceuticals, and fertilizers that span multiple D-path industries."
+      "rationaleAI": "Petroleum, coal, and natural gas refined into fuels and feedstocks correspond to the petroleum industry (D.2)."
     },
     {
       "articleTitle": "Oxygen",
       "relevantPathsAI": [
-        "D.10",
-        "D.1"
+        "D.10"
       ],
-      "rationaleAI": "Industrial oxygen is among the most important gases produced for industrial and residential use (D.10), and its role as an oxidizer in steelmaking, chemical synthesis, and plastics production connects it to the chemical industry (D.1)."
+      "rationaleAI": "Industrial production of oxygen corresponds to production of industrial and residential gases (D.10)."
     },
     {
       "articleTitle": "Carbon dioxide",
       "relevantPathsAI": [
         "D.10"
       ],
-      "rationaleAI": "CO2 is a major industrial gas used in food carbonation, fire suppression, enhanced oil recovery, and supercritical solvent applications, directly covering the production of industrial and residential gases (D.10)."
+      "rationaleAI": "Industrial CO2 applications including food carbonation and fire suppression correspond to production of industrial gases (D.10)."
     },
     {
       "articleTitle": "Steel",
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Directly covers the steel industry (C.2) in full: iron-carbon alloy composition, production via Bessemer and basic oxygen processes, global production volumes (~1.6 billion tonnes annually), and its critical role in fabrication industries."
+      "rationaleAI": "Iron-carbon alloy production at 1.6+ billion tons annually directly corresponds to the steel industry (C.2)."
     },
     {
       "articleTitle": "Thomas Edison",
       "relevantPathsAI": [
-        "I",
-        "C.6"
+        "I"
       ],
-      "rationaleAI": "Edison established the paradigm of the industrial research laboratory (I), and his work on electric power, the phonograph, and motion pictures laid foundational groundwork for the electronics industry (C.6)."
+      "rationaleAI": "Established the paradigm of industrial research laboratories, directly corresponding to industrial research and development (I)."
     },
     {
       "articleTitle": "Work (human activity)",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Directly addresses the organization of human work — division of labor, paid employment, and production as a factor — providing conceptual grounding for the principles of organization of work and production covered in priority path A."
+      "rationaleAI": "Human labor as a primary factor of production corresponds to principles of organization of work and production (A)."
     },
     {
       "articleTitle": "Retail",
       "relevantPathsAI": [
         "H"
       ],
-      "rationaleAI": "Retail covers the final-stage sale of goods directly to consumers, including store formats, pricing strategies, and the omnichannel digital transformation that constitutes the merchandising and marketing of consumer goods (H)."
+      "rationaleAI": "Final-stage sale of goods directly to consumers corresponds to merchandising and marketing of consumer goods (H)."
     },
     {
       "articleTitle": "Tool",
       "relevantPathsAI": [
-        "A",
         "C.7"
       ],
-      "rationaleAI": "Tool covers the full history and principles of hand tools and their role in production (A), and the article's treatment of metalworking and industrial-era mechanization directly addresses the tool and die industry (C.7)."
+      "rationaleAI": "Tools extending human ability for manufacturing tasks correspond to the tool and die industry (C.7)."
     },
     {
       "articleTitle": "Medication",
       "relevantPathsAI": [
         "D.4"
       ],
-      "rationaleAI": "Covers the pharmaceutical drug lifecycle — discovery, development, manufacturing, WHO essential medicines, and access-to-medicines policy — directly matching the pharmaceuticals industry path D.4."
+      "rationaleAI": "Pharmaceutical drugs used to diagnose, cure, and treat disease correspond to the pharmaceuticals industry (D.4)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

@@ -6,166 +6,159 @@
       "relevantPathsAI": [
         "A",
         "A.1",
+        "A.2",
         "A.5",
-        "A.7",
-        "A.7.a",
-        "A.7.b"
+        "A.7"
       ],
-      "rationaleAI": "Covers the full scope of architecture as a visual art and engineering discipline, including design elements and principles (A.1), all building types from residential to religious (A.5), and historical periods from classical through Modernism covering both Western and non-Western traditions (A.7.a, A.7.b)."
+      "rationaleAI": "Comprehensive overview of architectural theory from Vitruvius through Sullivan and sustainable design (A.1), building materials and constructional systems (A.2), building types including residential, commercial, industrial (A.5), and the full historical trajectory from prehistoric vernacular through Modernism and Postmodernism (A.7)."
     },
     {
       "articleTitle": "Masonry",
       "relevantPathsAI": [
         "A.2.a",
-        "A.2"
+        "A.2.b"
       ],
-      "rationaleAI": "Directly addresses building materials including stone, brick, and concrete block (A.2.a) and constructional systems such as load-bearing walls, arches, and vaults (A.2.b), which are core aesthetic and technical concerns of architecture."
+      "rationaleAI": "Covers brick, stone, concrete block as building materials (A.2.a) and load-bearing wall, arch, and vault constructional systems (A.2.b) central to architectural construction."
     },
     {
       "articleTitle": "Building",
       "relevantPathsAI": [
-        "A.5",
-        "A.5.a",
-        "A.5.f"
+        "A",
+        "A.5"
       ],
-      "rationaleAI": "Covers the full typology of buildings — residential, commercial, industrial, agricultural, and mixed-use — directly mapping to the outline's diverse building types by function (A.5, A.5.a, A.5.f), and addresses sustainable design and green building practices within architectural discourse."
+      "rationaleAI": "Addresses building typology spanning residential, commercial, industrial, agricultural, and mixed-use (A.5), and the general relationship between architectural design, materials, climate, and aesthetic tradition (A)."
     },
     {
       "articleTitle": "History of architecture",
       "relevantPathsAI": [
         "A.7",
         "A.7.a",
-        "A.7.b",
-        "A.6"
+        "A.7.b"
       ],
-      "rationaleAI": "Directly traces architectural history from Paleolithic through Postmodernism across all traditions, covering Western architecture (A.7.a) and non-Western peoples including Islamic, Buddhist, Hindu, sub-Saharan, and Oceanic forms (A.7.b); prehistoric vernacular forms also address primitive and folk architecture (A.6)."
+      "rationaleAI": "Directly traces built environments from Paleolithic shelters through all Western periods including Renaissance, Baroque, Modernism, and Deconstructivism (A.7.a), and non-Western traditions including South Asian, East Asian, Islamic, sub-Saharan, and Oceanic architecture (A.7.b)."
     },
     {
       "articleTitle": "Fortification",
       "relevantPathsAI": [
         "A.5.h"
       ],
-      "rationaleAI": "Focuses specifically on military construction including earthworks, stone walls, star forts, and concrete bunkers, directly corresponding to military architecture such as forts and castles (A.5.h)."
+      "rationaleAI": "Military architecture including forts, castles, star forts, and concrete bunkers (A.5.h), tracing evolution from ancient earthworks through gunpowder-era designs."
     },
     {
       "articleTitle": "City",
       "relevantPathsAI": [
         "B"
       ],
-      "rationaleAI": "Addresses urban design and planning as core concerns — covering city form, urban infrastructure, governance, and density — which connects to garden and landscape design's urban dimension and urban design as a field under section B."
+      "rationaleAI": "Urban planning, infrastructure, and urban design dimensions of cities connect to garden and landscape design within the broader urban context (B), though the primary focus is urban governance and social structure."
     },
     {
       "articleTitle": "Museum",
       "relevantPathsAI": [
         "A.5.d"
       ],
-      "rationaleAI": "Museums are explicitly listed as a building type under recreational architecture (A.5.d), and the article covers their institutional design and function as major public institutions attracting millions of visitors."
+      "rationaleAI": "Museums as a recreational architecture type — institutions requiring purpose-built gallery and exhibition spaces (A.5.d)."
     },
     {
       "articleTitle": "Michelangelo",
       "relevantPathsAI": [
-        "A.7.a",
-        "A.5.b"
+        "A.7.a"
       ],
-      "rationaleAI": "Michelangelo's architectural works — the Laurentian Library and the dome of St. Peter's Basilica — are canonical examples of Western Renaissance architecture (A.7.a) and religious/commemorative architecture (A.5.b)."
+      "rationaleAI": "Designed the Laurentian Library and the dome of St. Peter's Basilica, pioneering Mannerist architecture within the Western architectural tradition (A.7.a)."
     },
     {
       "articleTitle": "Steel",
       "relevantPathsAI": [
-        "A.2.a",
-        "A.2"
+        "A.2.a"
       ],
-      "rationaleAI": "Steel is a primary building material in modern architecture (A.2.a) enabling framed structural systems (A.2.b) such as steel-frame construction, directly relevant to the aesthetic and constructional dimensions of the architectural outline."
+      "rationaleAI": "Iron and steel as building materials (A.2.a) central to modern architectural construction and framed structural systems."
     },
     {
       "articleTitle": "Concrete",
       "relevantPathsAI": [
         "A.2.a",
-        "A.2"
+        "A.2.b"
       ],
-      "rationaleAI": "Concrete is the world's most-manufactured building material, central to architectural materials (A.2.a) and constructional systems including reinforced and prestressed concrete structural forms (A.2.b)."
+      "rationaleAI": "Concrete as a building material (A.2.a) and reinforced/prestressed concrete as a constructional system enabling modern structural forms (A.2.b)."
     },
     {
       "articleTitle": "Glass",
       "relevantPathsAI": [
-        "A.2.a",
-        "A.3"
+        "A.2.a"
       ],
-      "rationaleAI": "Glass as an architectural material — glazing, curtain walls, windows — directly addresses building materials (A.2.a) and structural elements including windows and facades (A.3)."
+      "rationaleAI": "Glass as a building material used in windows, glazing, and curtain walls (A.2.a), with architectural applications spanning from ancient to modern construction."
     },
     {
       "articleTitle": "Garden",
       "relevantPathsAI": [
         "B"
       ],
-      "rationaleAI": "Directly covers the art of garden design, including formal European, English naturalistic landscape, and Japanese Zen garden traditions, which is the primary subject of outline section B (Garden and landscape design)."
+      "rationaleAI": "Directly covers garden and landscape design (B), including formal European geometric layouts, English naturalistic landscape gardens, Japanese Zen gardens, and the connection to landscape architecture."
     },
     {
       "articleTitle": "Iron",
       "relevantPathsAI": [
         "A.2.a"
       ],
-      "rationaleAI": "Iron and its derivative steel are explicitly listed as building materials in the outline (A.2.a), and the article covers iron's role in architectural history from cast iron through modern steelmaking."
+      "rationaleAI": "Iron as a building material (A.2.a) historically central to architectural construction, from wrought iron to structural steel framing."
     },
     {
       "articleTitle": "Wood",
       "relevantPathsAI": [
         "A.2.a"
       ],
-      "rationaleAI": "Wood is explicitly listed as a building material in the outline (A.2.a), and the article covers timber construction, flooring, furniture, and engineered wood products relevant to architectural material aesthetics."
+      "rationaleAI": "Wood as one of the primary building materials (A.2.a) used in construction from prehistoric to modern timber and engineered wood products."
     },
     {
       "articleTitle": "Hospital",
       "relevantPathsAI": [
         "A.5.e"
       ],
-      "rationaleAI": "Hospitals are explicitly listed as a building type under educational and public welfare architecture (A.5.e), and the article discusses architectural design principles for healthcare institutions."
+      "rationaleAI": "Hospitals as a type of educational and public welfare architecture (A.5.e), requiring specialized institutional building design."
     },
     {
       "articleTitle": "School",
       "relevantPathsAI": [
         "A.5.e"
       ],
-      "rationaleAI": "Schools are explicitly listed under educational and public welfare architecture (A.5.e), and the article addresses the design and organization of educational institutions at multiple levels."
+      "rationaleAI": "Schools and universities as educational architecture (A.5.e), representing a major category of purpose-built institutional structures."
     },
     {
       "articleTitle": "Construction",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "A.3"
       ],
-      "rationaleAI": "Construction covers the full lifecycle of delivering built assets and the constructional systems used (A.2.b), directly relevant to the aesthetic and structural aspects of architectural construction described in A.2."
+      "rationaleAI": "The full lifecycle of delivering built assets connects to building materials and constructional systems (A.2) and structural elements of buildings (A.3), though it is primarily a technological rather than aesthetic discipline."
     },
     {
       "articleTitle": "Home",
       "relevantPathsAI": [
         "A.5.a"
       ],
-      "rationaleAI": "Addresses domestic residential architecture — houses, apartments, mobile homes — covering historical typology from prehistoric to modern forms, directly corresponding to domestic and residential architecture (A.5.a)."
+      "rationaleAI": "Domestic and residential architecture including houses, apartments, and the physical forms of human dwelling (A.5.a)."
     },
     {
       "articleTitle": "Infrastructure",
       "relevantPathsAI": [
-        "A.5.e",
-        "A.5.f"
+        "B"
       ],
-      "rationaleAI": "Infrastructure covers physical systems including aqueducts and public utility networks (A.5.e) and commercial/industrial built environments (A.5.f), connecting to multiple architectural building types in the outline."
+      "rationaleAI": "Green infrastructure including bioretention and green roofs connects to garden and landscape design (B) in the urban context, though infrastructure is primarily a networked systems concept."
     },
     {
       "articleTitle": "Solar energy",
       "relevantPathsAI": [
-        "A.2"
+        "A.2.b"
       ],
-      "rationaleAI": "Passive solar techniques such as thermal mass design and natural ventilation are directly architectural approaches (A.2), connecting building material and constructional system choices to energy performance aesthetics."
+      "rationaleAI": "Passive solar techniques including thermal mass design and natural ventilation relate to constructional systems and building design principles (A.2.b)."
     },
     {
       "articleTitle": "Design",
       "relevantPathsAI": [
-        "A.1",
-        "B"
+        "A.1"
       ],
-      "rationaleAI": "Covers the design process in architecture, product design, and landscape contexts, addressing principles of composition and constraint-driven creation directly relevant to architectural design principles (A.1) and landscape design (B)."
+      "rationaleAI": "Design as the intentional creation of plans balancing aesthetic and functional goals relates to elements of design and principles of composition in architecture (A.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

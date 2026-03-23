@@ -8,15 +8,11 @@
         "B.1",
         "B.2",
         "B.3",
-        "B.4",
         "B.5",
-        "B.5.a",
         "B.5.b",
-        "B.6",
-        "B.6.a",
-        "B.6.b"
+        "B.6"
       ],
-      "rationaleAI": "The painting article directly covers all aspects of outline section B: design principles (B.1), iconography and subject matter (B.2), painting media including oil, fresco, watercolor, and acrylic (B.3), representational and nonrepresentational kinds (B.5.a, B.5.b), and Western and non-Western painting history (B.6.a, B.6.b)."
+      "rationaleAI": "Comprehensive coverage of painting: elements of design and composition (B.1), iconography from religious to political (B.2), media including oil, fresco, watercolor, acrylic, encaustic (B.3), kinds of painting by subject matter including portrait, landscape, still life, allegory (B.5.b), and the history of painting spanning Western and non-Western traditions through Impressionism, Surrealism, and Abstraction (B.6)."
     },
     {
       "articleTitle": "Drawing",
@@ -25,20 +21,18 @@
         "A.1",
         "A.2",
         "A.3",
-        "A.3.a",
-        "A.3.b",
         "A.4"
       ],
-      "rationaleAI": "The drawing article directly covers all aspects of outline section A: design elements and media including chalk, charcoal, crayon, pastel, and pencil (A.2), diverse kinds of drawing by subject matter including portraits and landscapes (A.3.a) and technical uses including animation and drafting (A.3.b), and the history of drawing (A.4)."
+      "rationaleAI": "Directly covers drawing as visual art practice: design elements and composition (A.1), media including pencils, pens, pastels, crayons (A.2), kinds of drawing by subject matter and special uses including animation, illustration, and architectural drafting (A.3), and the history of drawing from prehistoric cave markings onward (A.4)."
     },
     {
       "articleTitle": "Vincent van Gogh",
       "relevantPathsAI": [
-        "B.5.a",
-        "B.5.b",
+        "B.3",
+        "B.5.b.i",
         "B.6.a"
       ],
-      "rationaleAI": "Van Gogh's work spans representational painting in portraits, landscapes, and still lifes (B.5.a) with increasingly expressive and abstracting tendencies (B.5.b), and is a canonical example of Western painting history from Post-Impressionism onward (B.6.a)."
+      "rationaleAI": "Post-Impressionist painter working in oil with bold color and impasto brushwork (B.3), producing landscapes, portraits, still lifes, and self-portraits as representational painting (B.5.b.i), within the history of Western painting that shaped Fauvism and Expressionism (B.6.a)."
     },
     {
       "articleTitle": "Visual arts",
@@ -48,26 +42,25 @@
         "C",
         "D"
       ],
-      "rationaleAI": "Visual arts surveys the full scope of painting, drawing, printmaking, photography, and related media directly covered by all four sections of the outline, including printmaking traditions from European and Chinese/Japanese lineages (C.4) and photography (D)."
+      "rationaleAI": "Encompasses painting, drawing, printmaking, and photography as core static visual arts forms, providing the overarching framework for all four divisions of this section (A, B, C, D)."
     },
     {
       "articleTitle": "Rembrandt",
       "relevantPathsAI": [
-        "B.5.a",
+        "B.5.b.i",
         "B.6.a",
+        "C",
         "C.4"
       ],
-      "rationaleAI": "Rembrandt's ~300 paintings exemplify representational Western painting including portraiture, biblical, and genre works (B.5.a, B.6.a), and his ~300 etchings make him a central figure in the history of printmaking (C.4)."
+      "rationaleAI": "Dutch Golden Age painter producing portraits, self-portraits, biblical scenes, landscapes, and genre works as representational painting (B.5.b.i), significant in Western painting history (B.6.a), and a prolific printmaker with approximately 300 etchings contributing to the history of printmaking (C.4)."
     },
     {
       "articleTitle": "Printing",
       "relevantPathsAI": [
         "C",
-        "C.1",
-        "C.2",
-        "C.4"
+        "C.3"
       ],
-      "rationaleAI": "Printing covers woodblock and movable-type reproduction directly relevant to printmaking as an art (C), including relief media such as woodcuts (C.2.a) and letterpress and offset processes, connecting to the history of printmaking (C.4)."
+      "rationaleAI": "Mass reproduction of text and images from woodblock printing through movable type relates to printmaking tools and techniques (C.3), though printing extends beyond artistic printmaking to industrial reproduction."
     },
     {
       "articleTitle": "Photography",
@@ -75,69 +68,64 @@
         "D",
         "D.1",
         "D.2",
-        "D.3",
-        "D.3.a",
-        "D.3.b"
+        "D.3"
       ],
-      "rationaleAI": "Photography as an art directly covers the outline's section D in its entirety: its nature and artistic problems (D.1), photographic equipment including lenses and cameras with exposure and processing (D.2), and kinds including portraits, landscapes, photojournalism, and scientific photography (D.3.a, D.3.b)."
+      "rationaleAI": "Comprehensive coverage of photography: its nature and problems as an art (D.1), equipment and techniques from camera obscura through digital sensors (D.2), and kinds of photography by subject matter and function including photojournalism and scientific applications (D.3)."
     },
     {
       "articleTitle": "Comics",
       "relevantPathsAI": [
-        "A.3.b",
-        "A.3"
+        "A.3.b.ii"
       ],
-      "rationaleAI": "Comics as a visual medium of sequential panels with caricature, cartoon, and comic strip forms directly covers the outline's caricature, cartoon, and comic strip category (A.3.i.ii) and drawing for special uses (A.3.b)."
+      "rationaleAI": "Sequential image panels with text directly correspond to caricature, cartoon, and comic strip as kinds of drawing determined by special uses (A.3.b.ii)."
     },
     {
       "articleTitle": "Hokusai",
       "relevantPathsAI": [
+        "C.2.a",
         "C.4",
         "B.6.b"
       ],
-      "rationaleAI": "Hokusai's career of 30,000 woodblock prints and paintings makes him the preeminent example of Japanese printmaking tradition (C.4) and non-Western painting (B.6.b), with his Japonisme influence connecting East Asian and Western art history."
+      "rationaleAI": "Ukiyo-e woodblock print artist whose Thirty-Six Views of Mount Fuji exemplifies relief printmaking media (C.2.a), Japanese printmaking history (C.4), and non-Western painting traditions through landscape aesthetics (B.6.b)."
     },
     {
       "articleTitle": "Michelangelo",
       "relevantPathsAI": [
-        "B.5.a",
+        "B.3",
+        "B.5.a.i",
         "B.6.a"
       ],
-      "rationaleAI": "Michelangelo's Sistine Chapel ceiling frescoes and Last Judgment are canonical examples of representational religious mural and fixed-surface painting (B.5.a) and Western painting history in the High Renaissance (B.6.a)."
+      "rationaleAI": "Sistine Chapel ceiling frescoes and Last Judgment exemplify fresco as painting medium (B.3), mural painting on fixed architectural surfaces (B.5.a.i), and a landmark in Western painting history during the High Renaissance (B.6.a)."
     },
     {
       "articleTitle": "Camera",
       "relevantPathsAI": [
-        "D.2",
-        "D.3.b"
+        "D.2"
       ],
-      "rationaleAI": "The camera article covers photographic equipment including lenses, aperture, and shutter mechanisms (D.2) and connects to scientific and photojournalistic photography applications (D.3.b), directly addressing the technical dimension of photography as art."
+      "rationaleAI": "Directly covers photographic equipment — lenses, aperture, shutter mechanisms — across daguerreotype, SLR, rangefinder, and digital sensor types (D.2)."
     },
     {
       "articleTitle": "Abstract art",
       "relevantPathsAI": [
-        "B.5.b",
-        "B.6.a"
+        "B.5.b.ii"
       ],
-      "rationaleAI": "Abstract art is directly relevant to nonrepresentational painting (B.5.b), covering movements from Russian Constructivism and De Stijl through Abstract Expressionism, all of which constitute major chapters in the history of Western painting (B.6.a)."
+      "rationaleAI": "Compositions independent of recognizable visual references, from partial abstraction (Fauvism, Cubism) to total abstraction (Constructivism, De Stijl, Abstract Expressionism), directly correspond to nonrepresentational painting (B.5.b.ii)."
     },
     {
       "articleTitle": "Realism (arts)",
       "relevantPathsAI": [
-        "B.5.a",
+        "B.5.b.i",
         "B.6.a"
       ],
-      "rationaleAI": "Realism as an art movement centers on representational painting (B.5.a) and is a major episode in the history of Western painting (B.6.a), with Courbet's work directly defining the movement within French 19th-century painting."
+      "rationaleAI": "Truthful, non-idealized representation originating in 19th-century France with Courbet relates to representational painting including genre and narrative painting (B.5.b.i) within Western painting history (B.6.a)."
     },
     {
       "articleTitle": "Art",
       "relevantPathsAI": [
         "A",
-        "B",
-        "C",
-        "D"
+        "B"
       ],
-      "rationaleAI": "The general art article establishes the conceptual framework for all visual art disciplines covered in section 628, addressing the fine arts tradition centered on painting, drawing, and printmaking, and connecting aesthetics and art criticism to all four outline sections."
+      "rationaleAI": "The broader concept of art and aesthetics provides foundational context for drawing (A) and painting (B) as core fine arts."
     },
     {
       "articleTitle": "History of art",
@@ -148,80 +136,76 @@
         "B.6.b",
         "C.4"
       ],
-      "rationaleAI": "The history of art surveys painting, drawing, printmaking, and photography across all cultures and periods, directly covering Western painting history (B.6.a), non-Western painting (B.6.b), and printmaking history from woodblock to modern media (C.4)."
+      "rationaleAI": "Surveys aesthetic visual production encompassing the history of drawing (A.4), Western painting from Renaissance through 20th-century avant-gardes (B.6.a), non-Western painting (B.6.b), and printmaking across cultures (C.4)."
     },
     {
       "articleTitle": "Johannes Gutenberg",
       "relevantPathsAI": [
-        "C.2.a",
-        "C.4"
+        "C.3"
       ],
-      "rationaleAI": "Gutenberg's invention of the European movable-type printing press and his use of oil-based ink are directly relevant to relief printmaking media (C.2.a) and the history of printmaking and mass reproduction (C.4)."
+      "rationaleAI": "Inventor of the European movable-type printing press, relevant to printmaking tools and techniques (C.3) as a milestone in mechanical reproduction."
     },
     {
       "articleTitle": "Romanticism",
       "relevantPathsAI": [
-        "B.5.a",
         "B.6.a"
       ],
-      "rationaleAI": "Romanticism as a visual movement centered on painting — Delacroix is specifically cited — represents a major period in representational Western painting (B.5.a, B.6.a), covering landscape and figure painting driven by emotion and nature."
+      "rationaleAI": "Major artistic movement emphasizing subjectivity, imagination, and nature, with French painting (Delacroix) directly significant in the history of Western painting (B.6.a)."
     },
     {
       "articleTitle": "Walt Disney",
       "relevantPathsAI": [
-        "A.3"
+        "A.3.b.i"
       ],
-      "rationaleAI": "Walt Disney pioneered the American animation industry, producing the first feature-length animated films and developing synchronized sound animation, directly covering the animation category of drawing (A.3.i) in its historical development."
+      "rationaleAI": "Foundational figure in animation (A.3.b.i), pioneering synchronized sound and full-color Technicolor animated drawing."
     },
     {
       "articleTitle": "Shen Kuo",
       "relevantPathsAI": [
-        "A.3",
-        "D.1"
+        "D.2"
       ],
-      "rationaleAI": "Shen Kuo's innovations include raised-relief cartographic maps (A.3.i.iii) and description of the camera obscura (D.1), making him relevant to the history of cartography and mapping as drawing and to the precursor technology of photography."
+      "rationaleAI": "Recorded the earliest description of camera obscura optics (D.2), a precursor technology to photographic equipment."
     },
     {
       "articleTitle": "Film",
       "relevantPathsAI": [
-        "A.3"
+        "D.3.b"
       ],
-      "rationaleAI": "Film as a visual art form is produced by recording live action or by animation (A.3.i), and the article covers animation and special effects as major production methods connecting drawing to moving image art."
+      "rationaleAI": "Moving images captured by cameras connect to motion-picture photography as a kind of functional photography (D.3.b)."
     },
     {
       "articleTitle": "Color",
       "relevantPathsAI": [
-        "B.3",
-        "A.1"
+        "A.1",
+        "B.1"
       ],
-      "rationaleAI": "Color theory is fundamental to painting media and their application (B.3)—covering additive and subtractive color mixing directly relevant to pigment use in oil, watercolor, and acrylic — and to composition principles in drawing and painting (A.1)."
+      "rationaleAI": "Color perception, mixing (additive and subtractive), and color spaces (RGB, CMYK) are fundamental elements of design in both drawing (A.1) and painting (B.1)."
     },
     {
       "articleTitle": "Paper",
       "relevantPathsAI": [
         "A.2",
-        "C.2"
+        "C.2.a"
       ],
-      "rationaleAI": "Paper is the primary drawing medium surface (A.2) and the standard substrate for printmaking across relief, intaglio, and surface media (C.2), making it foundational to both drawing practice and the material history of printmaking."
+      "rationaleAI": "Paper as a surface for drawing media (A.2) and as the substrate for relief printmaking processes including woodcuts (C.2.a)."
     },
     {
       "articleTitle": "Leonardo da Vinci",
       "relevantPathsAI": [
-        "A.3.a",
-        "A.4",
-        "B.5.a",
-        "B.6.a"
+        "B.3",
+        "B.6.a",
+        "A.4"
       ],
-      "rationaleAI": "Leonardo's notebooks contain systematic drawings of human anatomy and mechanical devices (A.3.a, A.4), while the Mona Lisa and Last Supper are canonical examples of representational Renaissance painting (B.5.a, B.6.a)."
+      "rationaleAI": "The Mona Lisa and The Last Supper as major works in Western painting history (B.6.a), his systematic notebooks as significant contributions to the history of drawing (A.4), and his mastery of painting media (B.3)."
     },
     {
       "articleTitle": "Lens",
       "relevantPathsAI": [
         "D.2"
       ],
-      "rationaleAI": "Lenses are fundamental components of cameras and photographic equipment (D.2), and the article covers the optical principles of focusing, aperture, and aberration correction that are central to photographic technique."
+      "rationaleAI": "Lenses are foundational components in cameras for focusing light (D.2), directly relevant to photographic equipment and techniques."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

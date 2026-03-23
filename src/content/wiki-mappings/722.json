@@ -9,15 +9,14 @@
         "B.2",
         "B.3"
       ],
-      "rationaleAI": "Directly covers the full scope of section B: simple machines (B.1), machine mechanisms via gears, cams, and linkages (B.2, B.3), and the concept of mechanical advantage — the foundational article for the machines-and-components portion of the outline."
+      "rationaleAI": "Encompasses simple machines (B.1) through complex mechanical systems with gears, cams, linkages (B.3), and power transmission mechanisms (B.2), directly corresponding to machines and machine components."
     },
     {
       "articleTitle": "Wheel",
       "relevantPathsAI": [
-        "B.1",
-        "B.3.d"
+        "B.1"
       ],
-      "rationaleAI": "B.1 lists wheel and axle as one of the five simple machines; the article covers the wheel-and-axle principle, rolling friction reduction, and flywheel function, connecting to both B.1 and B.3.d (flywheels)."
+      "rationaleAI": "The wheel and axle as a classical simple machine (B.1), with additional functions as potter's wheel and flywheel relating to machine components."
     },
     {
       "articleTitle": "Tool",
@@ -26,62 +25,59 @@
         "A.1",
         "A.2"
       ],
-      "rationaleAI": "Covers the prehistoric development of hand tools (A.1) from stone through metal, and the taxonomy of hand-operated implements (A.2) — the article's core subject matter matches section A's historical and typological coverage of hand tools."
+      "rationaleAI": "Covers prehistoric development of stone, bone, and wood tools (A.1), the role of metalworking in tool development (A.1), and basic types of hand tools extending through industrialization (A.2)."
     },
     {
       "articleTitle": "Simple machine",
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "B.1 names the lever, wedge, wheel and axle, pulley, and screw as simple machines — exactly the six classical devices this article describes, including their mechanical advantage principles."
+      "rationaleAI": "The six classical mechanical devices — lever, wheel and axle, pulley, inclined plane, wedge, and screw — directly correspond to simple machines (B.1)."
     },
     {
       "articleTitle": "Knife",
       "relevantPathsAI": [
+        "A.1",
         "A.2.b"
       ],
-      "rationaleAI": "A.2.b lists cutting tools as a basic hand tool type; the knife is humanity's oldest cutting implement and the article covers its evolution from Oldowan stone blades through metal types — direct coverage of this path."
+      "rationaleAI": "One of humanity's oldest tools evolving from stone to steel blades (A.1), classified as a cutting tool (A.2.b)."
     },
     {
       "articleTitle": "Lever",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "B.1"
       ],
-      "rationaleAI": "B.1 names the lever as one of the five simple machines; the article covers all three lever classes, mechanical advantage ratios, and compound levers, with direct relevance also to B.2's machine mechanisms that transmit and amplify force."
+      "rationaleAI": "A rigid beam pivoting on a fulcrum, the simplest of the six classical simple machines (B.1), with three classes distinguished by fulcrum, effort, and load positions."
     },
     {
       "articleTitle": "Robotics",
       "relevantPathsAI": [
-        "D.3",
-        "D.4"
+        "D.3"
       ],
-      "rationaleAI": "D.3 explicitly names robots and D.4 names computer-integrated manufacturing; the article covers robot design, manipulation, sensing, and manufacturing applications — direct coverage of both computer-aided machining paths."
+      "rationaleAI": "Design, construction, and operation of robots in manufacturing applications corresponds to robots in computer-aided machining (D.3)."
     },
     {
       "articleTitle": "Computer",
       "relevantPathsAI": [
+        "D",
         "D.1",
-        "D.2",
-        "D.4"
+        "D.2"
       ],
-      "rationaleAI": "D.1 names computer numerical control, D.2 names CADCAM, D.4 names computer-integrated manufacturing — the article covers the full history and architecture of computers that underpin all these computer-aided machining paths."
+      "rationaleAI": "Programmable machines executing operations via stored programs correspond to computer numerical control (D.1) and CAD/CAM systems (D.2) in computer-aided machining."
     },
     {
       "articleTitle": "Industrial Revolution",
       "relevantPathsAI": [
-        "A.1",
         "C.1"
       ],
-      "rationaleAI": "A.1 covers the development of metal tools; C.1 addresses the history of machine tools — the Industrial Revolution introduced mechanized production and machine tools as its core technological contribution, directly covering both paths."
+      "rationaleAI": "The development of machine tools, steam-powered mechanized production, and iron metallurgy corresponds to the history and characteristics of machine tools (C.1)."
     },
     {
       "articleTitle": "Archimedes",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "B.1"
       ],
-      "rationaleAI": "Archimedes formulated the law of the lever and designed compound pulleys — directly relevant to B.1 (simple machines) and B.2 (machine mechanisms); the article covers his statics principles and engineering devices substantively."
+      "rationaleAI": "Established foundational principles of statics (law of the lever) and designed compound pulleys and the Archimedean screw, corresponding to simple machines (B.1)."
     },
     {
       "articleTitle": "History of technology",
@@ -89,21 +85,21 @@
         "A.1",
         "C.1"
       ],
-      "rationaleAI": "A.1 covers hand tool history from Paleolithic stone through metal; C.1 addresses the history of machine tools — this article traces that full arc from Stone Age lithics through Industrial Revolution machine tools and modern manufacturing."
+      "rationaleAI": "Traces tool-making from Stone Age lithics through metallurgy to modern manufacturing, corresponding to early history of hand tools (A.1) and history of machine tools (C.1)."
     },
     {
       "articleTitle": "Stone Age",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "A.1 explicitly names Paleolithic and Neolithic stone tools as the starting point for hand tool history; this article is the dedicated source on that period, covering Oldowan through Neolithic tool development in detail."
+      "rationaleAI": "Paleolithic and Neolithic lithic tool use corresponds to early history of hand tools including stone tools (A.1)."
     },
     {
       "articleTitle": "Iron",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "A.1 covers the development of metal tools — the shift from bronze to iron tools is a pivotal transition in tool history, and the article covers iron metallurgy and steelmaking that enabled precision metal tools and machine components."
+      "rationaleAI": "Iron as a material for tool development from the Iron Age onward corresponds to the development of metal tools (A.1)."
     },
     {
       "articleTitle": "Mechanical engineering",
@@ -112,58 +108,54 @@
         "C",
         "D"
       ],
-      "rationaleAI": "Mechanical engineering is the discipline governing machine design (B), machine tool operation (C), and CAD/CAM systems (D); the article covers all these domains as core competencies of the field including mechatronics and robotics."
+      "rationaleAI": "Design, analysis, and manufacture of mechanical systems directly relate to machines and machine components (B), machine tools (C), and computer-aided machining systems (D)."
     },
     {
       "articleTitle": "Metallurgy",
       "relevantPathsAI": [
         "A.1",
-        "C.2",
-        "C.3"
+        "C.2"
       ],
-      "rationaleAI": "A.1 covers the development of metal tools; C.2 and C.3 concern metal-cutting operations and machine tools — metallurgy provides the materials science governing metal properties, workability, and tool material selection for all three paths."
+      "rationaleAI": "The science of metals underpins the development of metal tools (A.1) and the operation of metal-cutting tools (C.2)."
     },
     {
       "articleTitle": "Manufacturing",
       "relevantPathsAI": [
         "C",
-        "D.2",
-        "D.4"
+        "D"
       ],
-      "rationaleAI": "Machine tools (C) are the core of manufacturing; CADCAM (D.2) and computer-integrated manufacturing (D.4) are explicitly manufacturing technologies — the article covers fabrication, assembly, and machining across industrial history."
+      "rationaleAI": "Transformation of raw materials into finished goods using machines and tools corresponds to machine tools (C) and computer-aided manufacturing (D)."
     },
     {
       "articleTitle": "Bronze Age",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "A.1 addresses the development of metal tools; the Bronze Age is defined by bronze tool and weapon manufacture, and the article covers the metallurgical developments enabling the first widespread metal tools used across construction and agriculture."
+      "rationaleAI": "Bronze smelting enabling superior tools corresponds to the development of metal tools in the early history of hand tools (A.1)."
     },
     {
       "articleTitle": "Prehistory",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "A.1 names Paleolithic and Neolithic stone tools as the starting history of hand tools; prehistory spans exactly this period and the article organizes human prehistory by the three-age system centered on tool materials."
+      "rationaleAI": "Stone tool use from 3.3 million years ago through the Neolithic corresponds to Paleolithic and Neolithic stone tools (A.1)."
     },
     {
       "articleTitle": "Force",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "B.1"
       ],
-      "rationaleAI": "B.1 (simple machines) and B.2 (machine mechanisms) depend on force, mechanical advantage, and torque — the article covers F=ma, torque as rotational analogue, and friction forces foundational to understanding how levers, gears, and linkages transmit force."
+      "rationaleAI": "Force as the vector quantity changing velocity or shape, with mechanical advantage as output-to-input force ratio, underpins the physics of simple machines (B.1)."
     },
     {
       "articleTitle": "Engineering",
       "relevantPathsAI": [
-        "B",
         "C",
         "D"
       ],
-      "rationaleAI": "Engineering is the encompassing discipline for machine design (B), machine tool operation (C), and computer-aided manufacturing (D); the article covers engineering methodology and design processes spanning all these subsections."
+      "rationaleAI": "Applied engineering practice using science and design processes connects to machine tools (C) and computer-aided design and manufacturing (D)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

@@ -4,52 +4,47 @@
     {
       "articleTitle": "Optics",
       "relevantPathsAI": [
-        "C",
-        "D.2.e",
-        "E.1.a",
-        "E.1.b"
+        "E.1",
+        "D.1.f"
       ],
-      "rationaleAI": "Covers the refraction and reflection principles governing how optical measurement instruments operate (C); directly underpins microscopes (E.1.a), telescopes (E.1.b), and optical measurement devices like polarimeters and refractometers (D.2.e)."
+      "rationaleAI": "Study of light behavior, manipulation, and detection underpins microscopes and telescopes (E.1) and devices for measuring light intensity (D.1.f)."
     },
     {
       "articleTitle": "Camera",
       "relevantPathsAI": [
         "E.2"
       ],
-      "rationaleAI": "E.2 explicitly names cameras as instruments for recording phenomena; the article covers the full range from daguerreotype to digital and scientific imaging, directly addressing this outline path."
+      "rationaleAI": "Instrument capturing images by focusing light onto film or sensors corresponds to instruments for recording phenomena (E.2)."
     },
     {
       "articleTitle": "Radar",
       "relevantPathsAI": [
-        "D.2.c",
-        "G.5",
-        "G.7"
+        "G.7",
+        "H"
       ],
-      "rationaleAI": "Radar is used for direction-finding and ranging (D.2.c), meteorological observation (G.5), and navigation (G.7) — all three are explicitly listed outline paths and are substantively covered in the article's applications section."
+      "rationaleAI": "Radio wave detection for determining distance, direction, and velocity corresponds to navigational techniques and devices (G.7) and instrumentation and control systems (H)."
     },
     {
       "articleTitle": "Telescope",
       "relevantPathsAI": [
-        "E.1.b",
-        "G.6"
+        "E.1.b"
       ],
-      "rationaleAI": "E.1.b explicitly names telescopes across the full EM spectrum (optical, radio, infrared, ultraviolet, X-ray, gamma-ray); G.6 covers astronomical observations — the article covers both the instrument taxonomy and its astronomical use."
+      "rationaleAI": "Devices for observing distant objects via electromagnetic emission, including optical, radio, infrared, ultraviolet, X-ray, and gamma-ray systems, directly correspond to telescopes (E.1.b)."
     },
     {
       "articleTitle": "Microscope",
       "relevantPathsAI": [
         "E.1.a"
       ],
-      "rationaleAI": "E.1.a explicitly names optical, electron, acoustic, and scanning tunneling microscopes; this article covers exactly those categories (optical, TEM, SEM, fluorescence, scanning probe), directly matching the outline entry."
+      "rationaleAI": "Instruments for examining microscopic objects, including optical, electron, and scanning probe types, directly correspond to microscopes (E.1.a)."
     },
     {
       "articleTitle": "Shen Kuo",
       "relevantPathsAI": [
-        "D.2.c",
-        "G.2",
-        "G.6"
+        "D.2.c.i",
+        "G.2"
       ],
-      "rationaleAI": "Shen Kuo made the first recorded description of magnetic declination relevant to magnetic compasses (D.2.c.i), produced raised-relief maps covering cartography (G.2), and led the imperial astronomy bureau with observational contributions (G.6)."
+      "rationaleAI": "Recorded the first description of the magnetic needle compass (D.2.c.i) and pioneered raised-relief maps for cartography (G.2)."
     },
     {
       "articleTitle": "Mass",
@@ -57,7 +52,7 @@
         "B.1",
         "D.1.b"
       ],
-      "rationaleAI": "B.1 covers systems for measurement of mass; D.1.b names devices for measuring mass and weight including scales and balances — this article defines mass as a measurable quantity and its distinction from weight, directly relevant to both paths."
+      "rationaleAI": "Intrinsic scalar property of matter measured in kilograms (SI base unit) corresponds to standards for measurement of mass (B.1) and devices for measuring mass and weight including scales and balances (D.1.b)."
     },
     {
       "articleTitle": "Clock",
@@ -65,50 +60,45 @@
         "B.2",
         "D.1.c"
       ],
-      "rationaleAI": "B.2 addresses standards and techniques for time measurement; D.1.c names mechanical, electric, and atomic clocks — the article covers the full evolutionary sequence from water clocks through atomic clocks, directly matching both paths."
+      "rationaleAI": "Devices measuring elapsed time from pendulums through atomic clocks correspond to standards and techniques for measurement of time (B.2) and devices for measuring time (D.1.c)."
     },
     {
       "articleTitle": "Time",
       "relevantPathsAI": [
-        "B.2",
-        "D.1.c"
+        "B.2"
       ],
-      "rationaleAI": "B.2 covers standards for time measurement; D.1.c covers timekeeping devices — the article addresses the SI second, clock types, and time measurement across scales, providing conceptual foundation for both paths."
+      "rationaleAI": "Time as a fundamental measurable physical quantity with the SI base unit second corresponds to standards and techniques for measurement of time (B.2)."
     },
     {
       "articleTitle": "Compass",
       "relevantPathsAI": [
-        "D.2.c",
-        "G.7"
+        "D.2.c.i"
       ],
-      "rationaleAI": "D.2.c.i explicitly names magnetic compasses and gyrocompasses as direction-finding instruments; G.7 covers navigational techniques — the article covers magnetic, gyroscopic, and GPS-based compass variants and their navigational history."
+      "rationaleAI": "Orientation instrument using a magnetized needle aligning with Earth's magnetic field directly corresponds to magnetic compasses and gyrocompasses (D.2.c.i)."
     },
     {
       "articleTitle": "Lens",
       "relevantPathsAI": [
-        "C",
-        "D.2.e",
         "E.1.a",
         "E.1.b"
       ],
-      "rationaleAI": "Lenses are the core optical components determining how microscopes (E.1.a), telescopes (E.1.b), and refractometers (D.2.e) operate; the article covers refraction principles and aberration correction foundational to optical instrument operation (C)."
+      "rationaleAI": "Transmissive optical device focusing or dispersing light is a foundational component in microscopes (E.1.a) and telescopes (E.1.b)."
     },
     {
       "articleTitle": "Measurement",
       "relevantPathsAI": [
         "A",
-        "B",
-        "C"
+        "B"
       ],
-      "rationaleAI": "Directly covers outline sections A (theory of measurement), B (units and standards including SI), and C (principles by which instruments operate) — measurement theory, metrology, and the history of standardization are its central topics."
+      "rationaleAI": "Quantification of attributes enabling comparison against reference quantities corresponds to theory of measurement (A) and units and standards of measurement including the SI system (B)."
     },
     {
       "articleTitle": "Laser",
       "relevantPathsAI": [
-        "E.1",
-        "F"
+        "E.1.c",
+        "E.1.d"
       ],
-      "rationaleAI": "Lasers serve as coherent light sources in interferometers (E.1.d) and other observational instruments (E.1), and as tools in special research apparatus (F); the article covers laser types and applications in measurement, spectroscopy, and lidar."
+      "rationaleAI": "Coherent monochromatic light used in spectroscopy (E.1.c) and interferometry (E.1.d), as well as lidar applications in measurement systems."
     },
     {
       "articleTitle": "Electron",
@@ -116,56 +106,53 @@
         "E.1.a",
         "F.3"
       ],
-      "rationaleAI": "E.1.a names electron microscopes (TEM and SEM) among observational instruments; F.3 covers particle accelerators — free electrons are the beam in both, and the article explicitly connects electron behavior to both technologies."
+      "rationaleAI": "Free electrons enabling electron microscopes (E.1.a) and particle accelerators (F.3) for scientific research."
     },
     {
       "articleTitle": "Temperature",
       "relevantPathsAI": [
         "D.1.d"
       ],
-      "rationaleAI": "D.1.d explicitly names gas, liquid, and electrical resistance thermometers as devices for measuring temperature; the article covers temperature as a scalar property, the Kelvin scale, and thermometer operation — direct coverage of this path."
+      "rationaleAI": "Scalar property measured by thermometers in Celsius, Fahrenheit, and Kelvin scales corresponds to devices for measuring temperature (D.1.d)."
     },
     {
       "articleTitle": "Photography",
       "relevantPathsAI": [
-        "E.2",
-        "G.6"
+        "E.2"
       ],
-      "rationaleAI": "E.2 covers instruments for recording phenomena (cameras); G.6 addresses astronomical observations, which have relied heavily on photographic recording — the article covers both the instrument basis and scientific imaging applications."
+      "rationaleAI": "Capture of images by recording light corresponds to instruments for recording phenomena including cameras (E.2)."
     },
     {
       "articleTitle": "International System of Units",
       "relevantPathsAI": [
-        "B.1",
-        "B.2"
+        "B",
+        "B.1"
       ],
-      "rationaleAI": "B.1 covers systems of weights and measures (mass and length standards); B.2 covers time standards — SI directly defines and governs all these measurement standards including the metre, kilogram, and second."
+      "rationaleAI": "The modern metric system with seven base units and decimal prefixes directly corresponds to systems of weights and measures and standards for measurement (B, B.1)."
     },
     {
       "articleTitle": "Navigation",
       "relevantPathsAI": [
-        "D.2.c",
         "G.7"
       ],
-      "rationaleAI": "D.2.c covers instruments for measuring position by angulation and direction-finding; G.7 explicitly names navigational techniques and devices — the article covers celestial navigation, dead reckoning, inertial navigation, radar, and GNSS."
+      "rationaleAI": "Monitoring and controlling vehicle movement using compasses, sextants, radar, and GNSS directly corresponds to navigational techniques and devices (G.7)."
     },
     {
       "articleTitle": "Electromagnetic radiation",
       "relevantPathsAI": [
-        "D.2.f",
         "E.1.b",
-        "G.8"
+        "E.1.c"
       ],
-      "rationaleAI": "D.2.f covers instruments measuring ionizing radiation (Geiger counters, scintillation counters); E.1.b covers telescopes across the EM spectrum; G.8 covers radiological techniques — the article spans radio through gamma rays relevant to all three paths."
+      "rationaleAI": "The full electromagnetic spectrum from radio to gamma rays is observed by telescopes (E.1.b) and analyzed by spectroscopes (E.1.c)."
     },
     {
       "articleTitle": "Internal structure of Earth",
       "relevantPathsAI": [
         "F.6"
       ],
-      "rationaleAI": "F.6 names seismographs as special scientific instruments; seismic wave analysis is the primary method for inferring Earth's interior layering, and the article explicitly describes how P and S wave measurements from seismographs inform Earth structure knowledge."
+      "rationaleAI": "Earth's layered interior inferred from seismic wave analysis connects to seismographs as scientific research instruments (F.6)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }
