@@ -4,141 +4,120 @@
     {
       "articleTitle": "Muhammad",
       "relevantPathsAI": [
-        "B",
-        "B.1.b",
-        "B.1.c",
-        "B.1"
+        "B.1.b"
       ],
-      "rationaleAI": "Directly covers the life and career of Muhammad (B.1.b), the early Muslim expansion under the Patriarchal Caliphs (B.1.c), Abu Bakr and Umar's campaigns (B.1.i), and the caliphate of Uthman and Ali including the origins of Shi'ism (B.1.i.ii). Foundational to the entire section's subject."
+      "rationaleAI": "Muhammad's life, career, revelations, Hijra, and establishment of Islam directly address the life and career of Muhammad and the rise of Islam (B.1.b)."
     },
     {
       "articleTitle": "Ali",
       "relevantPathsAI": [
-        "B.1.b",
-        "B.1.c",
-        "B.1",
-        "B.2.a"
+        "B.1.c.ii"
       ],
-      "rationaleAI": "Ali ibn Abi Talib is central to B.1.i.ii, which covers his caliphate (656–661), civil unrest, and the origins of Shi'ism; he also connects to B.1.b (Muhammad's inner circle), B.1.c (Patriarchal Caliphs), and B.2.a (his rivalry with Mu'awiyah that enabled the Umayyad caliphate)."
+      "rationaleAI": "Ali as fourth Rashidun caliph, the civil conflicts and origins of Shi'ism directly address Uthman and Ali's caliphates, social and religious grievances, and origins of Shi'ism (B.1.c.ii)."
     },
     {
       "articleTitle": "Shia Islam",
       "relevantPathsAI": [
-        "B.1",
-        "B.2.a",
-        "C.2.b",
-        "C.2.e"
+        "B.1.c.ii"
       ],
-      "rationaleAI": "Covers the origins of Shi'ism in the disputes over Ali's succession (B.1.i.ii), opposition to the Umayyads (B.2.a), and the Fatimid caliphate as a Shi'ite state (C.2.b) and the Buyid dynasty's Shi'ism and Iranian revival (C.2.e)."
+      "rationaleAI": "Shia Islam's origins in the succession dispute and the Karbala tragedy directly relate to the origins of Shi'ism under the early caliphs (B.1.c.ii)."
     },
     {
       "articleTitle": "Quran",
       "relevantPathsAI": [
         "B.1.b",
-        "B.1"
+        "B.2.d.ii"
       ],
-      "rationaleAI": "The Quran is the primary product of Muhammad's prophethood (B.1.b) and was compiled into standardized written form under Caliph Uthman around 650 CE (B.1.i.ii), making it directly relevant to the section's coverage of the rise of Islam and the early caliphate."
+      "rationaleAI": "The Quran as revelation compiled under Caliph Uthman connects to the rise of Islam (B.1.b) and the spread of Arabic language and literary revival under the Umayyads (B.2.d.ii)."
     },
     {
       "articleTitle": "Islamic Golden Age",
       "relevantPathsAI": [
-        "C.1.d",
-        "C.1",
-        "C.2.a",
-        "C.2"
+        "C.1.d"
       ],
-      "rationaleAI": "Covers the cultural life of the Abbasid caliphate in Baghdad and Cordoba (C.1.d, C.1.i.ii), including mathematics, philosophy, medicine, and the arts driven by Abbasid patronage; also addresses the cultural splendour of Umayyad Spain (C.2.a, C.2.i.iii)."
+      "rationaleAI": "The Islamic Golden Age's intellectual production under the Abbasid caliphate directly addresses cultural life under the Abbasid caliphate (C.1.d)."
     },
     {
       "articleTitle": "Avicenna",
       "relevantPathsAI": [
-        "C.1.d",
-        "C.1",
-        "C.2.d",
-        "C.2.e"
+        "C.1.d.i",
+        "C.1.d.ii"
       ],
-      "rationaleAI": "Avicenna (c.980–1037) was active in the Samanid and Buyid cultural spheres, directly addressed in C.2.d (Samanid patronage of art and learning) and C.2.e (Buyid dynasty, Iranian revival); his philosophical and medical work exemplifies C.1.d and C.1.i (arts and sciences, theology and philosophy under the Abbasids)."
+      "rationaleAI": "Avicenna's philosophical and medical works at the height of the Abbasid era directly address religion, theology, and philosophy (C.1.d.i) and the arts and sciences (C.1.d.ii) under the Abbasids."
     },
     {
       "articleTitle": "Spain",
       "relevantPathsAI": [
-        "C.2.a",
-        "C.2"
+        "C.2.a"
       ],
-      "rationaleAI": "Spain (Al-Andalus) is the direct geographic subject of C.2.a–C.2.i.iii, covering the Umayyad emirate and caliphate in Spain from 756 to 1031, including the conquest by Tariq ibn Ziyad, the splendour of Abd ar-Rahman III's caliphate, and social, economic, and cultural life in Muslim Spain."
+      "rationaleAI": "Spain's Muslim Al-Andalus and Reconquista directly connect to the Umayyad emirate and caliphate in Spain (C.2.a)."
     },
     {
       "articleTitle": "Egypt",
       "relevantPathsAI": [
-        "B.1",
+        "B.1.c.i",
         "C.2.b"
       ],
-      "rationaleAI": "Egypt was conquered by Umar I's forces around 641 CE (B.1.i) and later became the base of the Fatimid caliphate's conquest from Tunisia in 969 CE (C.2.b), making both paths substantive coverage areas."
+      "rationaleAI": "Egypt's Islamic conquest in 641 CE connects to Muslim expansion outside Arabia (B.1.c.i). The Fatimid conquest of Egypt relates to the Fatimid state (C.2.b)."
     },
     {
       "articleTitle": "Iran",
       "relevantPathsAI": [
-        "B.1",
-        "C.2.d",
         "C.2.e"
       ],
-      "rationaleAI": "Iran (the Sasanid Persian Empire) was conquered under Abu Bakr and Umar (B.1.i) and further subjugated under Uthman and Ali (B.1.i.ii); the Samanid dynasty of Khorasan (C.2.d) and Buyid dynasty in Iran and Iraq (C.2.e) are both covered in Iran's historical narrative."
+      "rationaleAI": "Iran's successive Islamic dynasties including the Buyid dynasty connect to the Buyid dynasty in Iran and Iraq (C.2.e)."
     },
     {
       "articleTitle": "Algeria",
       "relevantPathsAI": [
         "C.2.c"
       ],
-      "rationaleAI": "Algeria encompasses the territories of the Rustamid kingdom in the central Maghrib (787–911) and the Aghlabid state in Tunisia/Algeria/Sicily (800–909), both explicitly listed under C.2.c as other North African and Syrian dynasties."
+      "rationaleAI": "Algeria's successive Islamic dynasties connect to other dynasties in North Africa including the Rustamid kingdom in the central Maghrib (C.2.c)."
     },
     {
       "articleTitle": "Arabic",
       "relevantPathsAI": [
-        "B.2"
+        "B.2.d.ii"
       ],
-      "rationaleAI": "The spread of the Arabic language under the Umayyad caliphate is explicitly listed under B.2.i.ii (cultural life under the Umayyads: spread of Arabic language, literary revival); B.2.i covers the Arabization policy as part of caliphate administration."
+      "rationaleAI": "Arabic as the language of Islamic civilization and its spread as lingua franca directly address the spread of the Arabic language and literary revival under the Umayyads (B.2.d.ii)."
     },
     {
       "articleTitle": "Byzantine Empire",
       "relevantPathsAI": [
-        "B.1",
-        "B.1.c"
+        "B.1.c.i"
       ],
-      "rationaleAI": "The Byzantine Empire lost Syria, Palestine, Jordan, and Egypt to the Arab conquests under Umar I, directly covered in B.1.i and B.1.c (Muslim expansion outside Arabia, conquest of Byzantine territories)."
+      "rationaleAI": "The Byzantine Empire's loss of Syria, Palestine, and Egypt to Arab conquests connects to Muslim expansion under the early caliphs (B.1.c.i)."
     },
     {
       "articleTitle": "Saudi Arabia",
       "relevantPathsAI": [
-        "B.1.a",
-        "B.1.b"
+        "B.1.a"
       ],
-      "rationaleAI": "Saudi Arabia occupies the Arabian Peninsula and is the birthplace of Islam, providing direct coverage of Arabia before Muhammad (B.1.a) and the rise of Islam from Mecca and Medina (B.1.b), including the custodianship of Islam's holiest sites."
+      "rationaleAI": "Saudi Arabia's pre-Islamic Arabian history connects to Arabia before Muhammad (B.1.a)."
     },
     {
       "articleTitle": "Silk Road",
       "relevantPathsAI": [
-        "C.1.c",
-        "C.2.d"
+        "C.1.c"
       ],
-      "rationaleAI": "The Silk Road trade network supported economic and social life under the Abbasids (C.1.c: manufactures and trade) and the Samanid dynasty of Khorasan played a key role in Central Asian trade along its routes (C.2.d)."
+      "rationaleAI": "Silk Road trade facilitation during the Abbasid era connects to economic and social life including manufactures and trade under the Abbasids (C.1.c)."
     },
     {
       "articleTitle": "Charlemagne",
       "relevantPathsAI": [
-        "C.2"
+        "B.2.c"
       ],
-      "rationaleAI": "C.2.i explicitly mentions the defeat of the Muslims near Poitiers by the Frank Charles Martel (732), and Charlemagne's grandfather's victory forms the political context for the limits of Umayyad expansion into Western Europe that frames the Umayyad emirate in Spain."
+      "rationaleAI": "Charlemagne's defeat of Muslim forces at Poitiers by Charles Martel (732) is referenced in the context of Muslim expansion into Spain and France (B.2.c — referenced in C.2.a.i)."
     },
     {
       "articleTitle": "Post-classical history",
       "relevantPathsAI": [
-        "A",
         "B",
         "C"
       ],
-      "rationaleAI": "Post-classical history (c.500–1450) frames the Islamic Golden Age, Abbasid caliphate, and trans-civilizational trade networks as defining features of the period, providing broad historiographic and contextual coverage across paths A through C of this section."
+      "rationaleAI": "The post-classical period's Islamic expansion and Abbasid Golden Age broadly address both the rise of Islam (B) and the Abbasid Empire and successor states (C)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

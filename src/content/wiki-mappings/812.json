@@ -4,11 +4,10 @@
     {
       "articleTitle": "Folklore",
       "relevantPathsAI": [
-        "A.2",
         "A.4",
         "C.1"
       ],
-      "rationaleAI": "Folklore covers rites of passage, folk religion, festivals (A.4), customary practices, and the oral transmission of sacred narratives that constitute informal sacred writings (C.1) across religious traditions."
+      "rationaleAI": "Folk religion with its festivals and rites of passage connects to religious feasts and festivals (A.4). Oral traditions and folk beliefs as expressive culture relate to sacred writings transmitted informally (C.1)."
     },
     {
       "articleTitle": "Ritual",
@@ -16,84 +15,72 @@
         "A",
         "A.1",
         "A.2",
-        "A.3",
         "A.4"
       ],
-      "rationaleAI": "Ritual is the core article for section 812.A, directly covering worship rites (A.1), passage and purification rites (A.2), religious regulation of behaviour (A.3), and calendrical/sacrificial ceremonies (A.4). Essential comprehensive coverage."
+      "rationaleAI": "Ritual as formalized symbolic action directly addresses religious rites and customs (A). Rites of passage, calendrical rites, and sacrifice connect to passage and purification rites (A.2), rituals of worship (A.1), and religious feasts and festivals (A.4)."
     },
     {
       "articleTitle": "Confucius",
       "relevantPathsAI": [
-        "B.4",
-        "A.3",
-        "B.2"
+        "B.4"
       ],
-      "rationaleAI": "Confucius founded a tradition centered on ritual propriety (li) and established educational institutions (B.4); his model of scholarly-official religious leadership shaped Chinese religious-political organization (B.2)."
+      "rationaleAI": "Confucius's emphasis on ritual propriety (li) and his role in establishing an educational tradition that shaped Chinese statecraft connect to institutions of religious education (B.4)."
     },
     {
       "articleTitle": "Catholic Church",
       "relevantPathsAI": [
-        "B",
-        "B.1",
         "B.2",
         "B.3",
-        "B.4",
-        "C.1",
         "C.2",
-        "C.3",
-        "C.4"
+        "C.3"
       ],
-      "rationaleAI": "The Catholic Church provides comprehensive coverage of B (religious institutions): hierarchical organization (B.2), sainthood (B.3), religious education (B.4), sacred writings (C.1), iconic art and architecture (C.2), seven sacraments (C.3), and distinctive vestments and liturgical dress (C.4 — priority path)."
+      "rationaleAI": "The Catholic Church's hierarchical structure of bishops, cardinals, and the Holy See exemplifies forms of religious organization (B.2). Apostolic succession and sainthood connect to sainthood (B.3). Its art, architecture, and philosophy relate to art and architecture, religious symbolism (C.2). The sacraments are ceremonial and religious objects (C.3)."
     },
     {
       "articleTitle": "Jesus",
       "relevantPathsAI": [
-        "A.1.d",
-        "A.2",
-        "B.3",
-        "C.3"
+        "B.3"
       ],
-      "rationaleAI": "Jesus's sacrifice (A.1.d), death and resurrection as ultimate passage rite (A.2), status as the source of Christian sacramental life (C.3), and recognition as saint and divine figure (B.3) are all substantive connections."
+      "rationaleAI": "Jesus as central figure of Christianity, whose apostles established religious institutions, relates to religious leaders. His canonization as object of worship connects to sainthood (B.3) in the broader sense of exemplary religious figures."
     },
     {
       "articleTitle": "Muhammad",
       "relevantPathsAI": [
-        "A.1",
-        "A.3.a",
-        "B.2"
+        "B.1",
+        "B.2",
+        "A.3.a"
       ],
-      "rationaleAI": "Muhammad established the five pillars including ritual prayer and fasting (A.1, A.3), Islamic law governing personal and social religious behaviour (A.3.a), and the prophetic leadership model that shaped Islamic religious organization (B.2)."
+      "rationaleAI": "Muhammad's combination of prophetic, legislative, and state-building roles established a model of theocratic governance (B.1). His establishment of Islamic law through the Quran and hadith connects to religious law (A.3.a) and forms of religious organization (B.2)."
     },
     {
       "articleTitle": "Martin Luther",
       "relevantPathsAI": [
         "B.2",
-        "C.3",
-        "A.3.a"
+        "C.1"
       ],
-      "rationaleAI": "Luther's Reformation reshaped Protestant church organization and the priesthood of all believers (B.2), redefined sacramental doctrine rejecting most Catholic sacraments (C.3), and reformed religious law's role in Christian life (A.3.a)."
+      "rationaleAI": "Luther's challenge to papal authority and establishment of the priesthood of all believers transformed forms of religious organization (B.2). His translation of the Bible into vernacular German relates to sacred writings (C.1)."
     },
     {
       "articleTitle": "Prayer",
       "relevantPathsAI": [
+        "A.1",
         "A.1.a"
       ],
-      "rationaleAI": "Prayer is explicitly listed as A.1.a in section 812's outline; the article covers all forms of religious prayer across traditions — supplication, intercession, thanksgiving, liturgical, and contemplative — with full topical coverage."
+      "rationaleAI": "Prayer as communicative act encompassing supplication, intercession, thanksgiving, and adoration directly constitutes rituals of worship (A.1) and prayer specifically (A.1.a)."
     },
     {
       "articleTitle": "Festival",
       "relevantPathsAI": [
         "A.4"
       ],
-      "rationaleAI": "Festival directly maps to A.4 (religious feasts and festivals), covering the sociological and anthropological dimensions of communal religious celebration, its roots in harvest and religious observance, and the spectrum from sacred to civic."
+      "rationaleAI": "Festivals rooted in religious observance — patronal commemorations, thanksgiving rituals, and seasonal celebrations — directly constitute religious feasts and festivals (A.4)."
     },
     {
       "articleTitle": "Oral tradition",
       "relevantPathsAI": [
-        "C.1",
-        "B.4"
+        "C.1"
       ],
-      "rationaleAI": "Oral tradition is the primary medium for transmission of sacred writings and religious knowledge in pre-literate societies (C.1) and serves as the basis for religious education (B.4) in traditions like Vedic recitation and Islamic hadith transmission."
+      "rationaleAI": "Oral transmission of religious canon including Vedic recitation, Islamic hadith, and African griot practice directly relates to sacred writings and their oral transmission (C.1)."
     },
     {
       "articleTitle": "Religion",
@@ -102,33 +89,31 @@
         "B",
         "C"
       ],
-      "rationaleAI": "As the top-level article, Religion covers organized religious institutions and practices across all traditions, directly addressing section 812's full scope of rites (A), institutions (B), and material manifestations (C)."
+      "rationaleAI": "Religion encompassing organized systems of beliefs, practices, sacred texts, and institutions broadly covers religious rites and customs (A), religious leaders and institutions (B), and material manifestations of religious beliefs (C)."
     },
     {
       "articleTitle": "Culture",
       "relevantPathsAI": [
-        "A.4",
-        "A.2",
+        "A.3",
         "C.2"
       ],
-      "rationaleAI": "Culture encompasses religious customs and festivals (A.4), rites of passage (A.2), and the religious dimension of cultural artifacts including art and architecture (C.2); provides the broader social context for understanding religious practice."
+      "rationaleAI": "Culture's social behaviors, norms, and customs relate to religious regulation of personal and social behaviour (A.3). Cultural expression through art and symbolism connects to art and architecture, religious symbolism (C.2)."
     },
     {
       "articleTitle": "History of religion",
       "relevantPathsAI": [
         "A",
-        "B",
-        "C.1"
+        "B"
       ],
-      "rationaleAI": "Covers the historical development of religious rites (A), religious institutions across traditions (B), and the evolution of sacred texts and scriptures (C.1) from shamanism and ancestor worship through the formation of major world religions."
+      "rationaleAI": "The historical development of religious rituals, institutions, and beliefs cross-culturally provides context for religious rites and customs (A) and religious leaders and institutions (B)."
     },
     {
       "articleTitle": "Hammurabi",
       "relevantPathsAI": [
-        "B.1",
-        "A.3.a"
+        "A.3.a",
+        "B.1"
       ],
-      "rationaleAI": "The Code of Hammurabi fuses royal and divine authority in a theocratic legal framework (B.1 — sacred kingships), and connects to religious regulation of social behaviour through divinely sanctioned law (A.3.a)."
+      "rationaleAI": "Hammurabi's law code, legitimated by religious authority and governing social conduct, connects to religious law (A.3.a). His role as divinely sanctioned king relates to sacred kingships (B.1)."
     },
     {
       "articleTitle": "Ramesses II",
@@ -136,16 +121,15 @@
         "B.1",
         "C.2"
       ],
-      "rationaleAI": "Ramesses II embodies the sacred kingship (B.1) of pharaonic Egypt, combining religious and political authority; his monumental temple construction (Abu Simbel, Ramesseum) is directly relevant to religious art and architecture (C.2)."
+      "rationaleAI": "Ramesses II as divine pharaoh exemplifies sacred kingship (B.1). His monumental temple construction at Abu Simbel and the Ramesseum represents art and architecture with religious symbolism (C.2)."
     },
     {
       "articleTitle": "Ashoka",
       "relevantPathsAI": [
         "B.1",
-        "B.4",
-        "A.3"
+        "B.4"
       ],
-      "rationaleAI": "Ashoka exemplifies sacred kingship organized around Buddhist dhamma (B.1), sponsored the Third Buddhist Council and missionary institutions for religious education (B.4), and used royal edicts to regulate personal and social religious behaviour (A.3)."
+      "rationaleAI": "Ashoka's reorientation of governance around dhamma after converting to Buddhism connects to theocracies and sacred kingships (B.1). His patronage of the Third Buddhist Council and sending of missionaries relates to institutions of religious education (B.4)."
     },
     {
       "articleTitle": "Joan of Arc",
@@ -153,127 +137,115 @@
         "B.3",
         "A.3.f"
       ],
-      "rationaleAI": "Joan of Arc was canonized as a Catholic saint (B.3) whose claimed divine visions and prophetic mission directly illustrate prophecy and divination as a religious practice (A.3.f)."
+      "rationaleAI": "Joan of Arc's canonization by the Catholic Church in 1920 directly relates to sainthood (B.3). Her claimed divine visions connect to prophecy and divination (A.3.f)."
     },
     {
       "articleTitle": "Mahatma Gandhi",
       "relevantPathsAI": [
-        "A.3.e",
-        "B"
+        "A.3",
+        "A.3.e"
       ],
-      "rationaleAI": "Gandhi's satyagraha practice was rooted in Hindu asceticism and self-discipline (A.3.e), and his interfaith religious pluralism illustrates religious leadership and practice (B) in the modern period."
+      "rationaleAI": "Gandhi's Hindu ethics, ascetic self-discipline, and satyagraha (nonviolent resistance) grounded in religious principles connect to religious regulation of personal and social behaviour (A.3) and asceticism (A.3.e)."
     },
     {
       "articleTitle": "Confucianism",
       "relevantPathsAI": [
         "A.3",
-        "A.4",
-        "B.2",
-        "B.4",
-        "C.1"
+        "B.4"
       ],
-      "rationaleAI": "Confucianism prescribes ritual propriety governing personal and social behaviour (A.3), seasonal ceremonies and rites of passage (A.4), meritocratic religious-educational institutions (B.4), and maintains a scriptural tradition (C.1)."
+      "rationaleAI": "Confucianism's emphasis on ritual propriety (li) and hierarchical social relationships connects to religious regulation of personal and social behaviour (A.3). Its shaping of education across the Sinosphere relates to institutions of religious education (B.4)."
     },
     {
       "articleTitle": "Clothing",
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "Clothing explicitly covers religious dress codes across traditions — the priority coverage path C.4 (religious dress and vestments) — including Catholic vestments, Islamic hijab, Jewish kippah, Hindu sacred thread, and Buddhist robes as cultural and religious markers."
+      "rationaleAI": "Religious dress codes and culturally specific garments worn for religious purposes directly address religious dress and vestments (C.4)."
     },
     {
       "articleTitle": "Cyrus the Great",
       "relevantPathsAI": [
-        "B.1",
-        "A.3.a"
+        "B.1"
       ],
-      "rationaleAI": "Cyrus exemplifies the religious dimension of kingship through the Edict of Restoration enabling Jewish temple worship and his policy of religious tolerance across Zoroastrianism and subject peoples' faiths (B.1, A.3.a)."
+      "rationaleAI": "Cyrus's policy of religious tolerance and the Edict of Restoration freeing Jewish exiles connect to the religious state and sacred kingship as governance forms intertwined with religious authority (B.1)."
     },
     {
       "articleTitle": "Suleiman the Magnificent",
       "relevantPathsAI": [
-        "B.1",
         "A.3.a",
+        "B.1",
         "C.2"
       ],
-      "rationaleAI": "Suleiman combined sacred sultanate authority with codification of Islamic sharia law (B.1, A.3.a) and presided over a golden age of Ottoman Islamic architecture and arts (C.2)."
+      "rationaleAI": "Suleiman's synthesis of sultanic and Sharia legal codes connects to religious law (A.3.a). His role as caliph-sultan represents theocratic governance (B.1). His patronage of Ottoman architecture connects to art and architecture with religious dimensions (C.2)."
     },
     {
       "articleTitle": "Marriage",
       "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "A.3.a"
+        "A.2"
       ],
-      "rationaleAI": "Marriage is explicitly a passage rite (A.2) regulated across traditions by religious law (A.3.a) and religious customs governing partner selection, ceremony, and divorce, making it a central example in section 812.A."
+      "rationaleAI": "Marriage regulated by religious doctrine and tribal custom, with forms varying across traditions, directly relates to passage rites including marriage (A.2)."
     },
     {
       "articleTitle": "Michelangelo",
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Michelangelo's Sistine Chapel ceiling, Last Judgment, Pietà, and St. Peter's Basilica dome are paradigmatic examples of religious art and architecture (C.2), covering iconography, religious symbolism, and papal artistic patronage."
+      "rationaleAI": "Michelangelo's Sistine Chapel ceiling, Last Judgment, Pieta, and St. Peter's dome represent the highest achievements in religious art and architecture, directly addressing art and architecture, religious symbolism and iconography (C.2)."
     },
     {
       "articleTitle": "Thomas Aquinas",
       "relevantPathsAI": [
-        "B.4",
-        "A.3.a"
+        "B.2",
+        "B.4"
       ],
-      "rationaleAI": "Aquinas was central to Catholic religious education and scholastic theology (B.4); his natural law theory directly shaped religious regulation of behaviour (A.3.a); relevant also for sacramental and doctrinal theology."
+      "rationaleAI": "Aquinas as a Dominican friar whose theological synthesis shaped Catholic institutional teaching connects to the priesthood and forms of religious organization (B.2). His role in scholasticism relates to institutions of religious education (B.4)."
     },
     {
       "articleTitle": "African traditional religions",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
         "A.3.f",
         "A.4",
-        "B.2",
         "C.1"
       ],
-      "rationaleAI": "African traditional religions provide substantive coverage of oral sacred traditions (C.1), divination and prophetic practices (A.3.f), ancestor veneration rituals and passage rites (A.2), community festivals (A.4), and forms of religious organization through community elders and priests (B.2)."
+      "rationaleAI": "Divination practices connect to prophecy and divination (A.3.f). Festivals as vehicles of transmission relate to religious feasts and festivals (A.4). Oral rather than scriptural transmission connects to sacred writings and their oral forms (C.1)."
     },
     {
       "articleTitle": "Quran",
       "relevantPathsAI": [
-        "C.1",
-        "A.3.a"
+        "C.1"
       ],
-      "rationaleAI": "The Quran is Islam's primary sacred writing (C.1) and foundational source of Islamic religious law governing personal and social behaviour (A.3.a); its recitation is itself a central act of Islamic worship."
+      "rationaleAI": "The Quran as Islam's central scripture, the primary source of Islamic law alongside hadith, directly constitutes sacred writings (C.1)."
     },
     {
       "articleTitle": "Jerusalem",
       "relevantPathsAI": [
-        "A.1.c",
-        "B.2",
-        "C.2"
+        "C.2",
+        "C.3"
       ],
-      "rationaleAI": "Jerusalem contains the holiest sites of three Abrahamic religions — the Western Wall, Dome of the Rock, Church of the Holy Sepulchre — directly relevant to pilgrimage (A.1.c), religious institutional centers (B.2), and sacred architecture and iconography (C.2)."
+      "rationaleAI": "Jerusalem's Old City with the Western Wall, Dome of the Rock, Church of the Holy Sepulchre, and al-Aqsa Mosque represents art and architecture with religious symbolism (C.2) and ceremonial and religious objects (C.3)."
     },
     {
       "articleTitle": "Bhagavad Gita",
       "relevantPathsAI": [
-        "C.1",
-        "A.3"
+        "C.1"
       ],
-      "rationaleAI": "The Bhagavad Gita is a foundational Hindu sacred scripture (C.1) prescribing paths of yoga and dharmic religious conduct that regulate personal and social behaviour (A.3) across the Hindu tradition."
+      "rationaleAI": "The Bhagavad Gita as Hinduism's most widely influential scripture is a foundational sacred writing (C.1)."
     },
     {
       "articleTitle": "Johann Sebastian Bach",
       "relevantPathsAI": [
         "C.2"
       ],
-      "rationaleAI": "Bach's sacred cantatas, Passions, and motets composed for Lutheran worship are paradigmatic examples of religious music and material expression of religious belief (C.2), synthesizing liturgical function with artistic achievement."
+      "rationaleAI": "Bach's sacred cantatas, Passions, and oratorios composed within the German Lutheran tradition represent material manifestations of religious beliefs through art, specifically religious music (C.2)."
     },
     {
       "articleTitle": "Murasaki Shikibu",
       "relevantPathsAI": [
-        "C.1"
+        "C.2"
       ],
-      "rationaleAI": "The Tale of Genji incorporates Buddhist themes of impermanence (mono no aware) as a thread throughout its narrative; Murasaki Shikibu's work reflects Heian Buddhist religious culture expressed through literary-religious writing, placing it at the intersection of sacred narrative and C.1."
+      "rationaleAI": "The Tale of Genji's Buddhist themes of impermanence and mono no aware represent cultural expressions of religious beliefs in literature, connecting to art and architecture as material manifestations (C.2)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

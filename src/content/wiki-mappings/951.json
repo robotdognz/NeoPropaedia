@@ -6,92 +6,73 @@
       "relevantPathsAI": [
         "C",
         "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.1.d",
-        "C.1.e",
-        "C.1.f",
-        "C.2",
-        "C.2.a"
+        "C.2"
       ],
-      "rationaleAI": "Central article on the Inca Empire covering its mythical origins, succession of rulers from Pachacuti through Huayna Capac, the civil war between Huascar and Atahuallpa, Pizarro's conquest (1532–40), and Inca administrative structures including the quipu, divine monarchy, and road network. Directly maps to C.1 (origins and development) and C.2 (government and society)."
+      "rationaleAI": "The Inca Empire's administrative structure, road network, khipu records, agricultural terracing, sun worship, and Spanish conquest directly address the empire of the Incas (C), including origins and development through conquest and civil war (C.1) and government, society, and culture (C.2)."
     },
     {
       "articleTitle": "Andean civilizations",
       "relevantPathsAI": [
         "A",
         "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5"
+        "C"
       ],
-      "rationaleAI": "Broad survey of Andean civilization from Norte Chico/Caral (c. 3500 BCE) through Chavín, Nazca, Moche, Wari, Tiwanaku, Chimú, and Inca cultures, covering agricultural domestication, textiles, and monumental architecture. Maps to A (character and geography of Andean civilization) and all of B (pre-Inca cultures including Early Intermediate Moche/Nazca at B.3, Middle Horizon Wari/Tiwanaku at B.4, and Late Intermediate Chimú at B.5)."
+      "rationaleAI": "Andean civilizations from Norte Chico through Chavin, Nazca, Moche, Wari, Tiwanaku, Chimu, and Inca provide comprehensive coverage of the character of Andean civilization (A), pre-Inca cultures (B), and the Inca empire (C)."
     },
     {
       "articleTitle": "Age of Discovery",
       "relevantPathsAI": [
         "C.1.f"
       ],
-      "rationaleAI": "Covers the Spanish conquest of the Inca Empire through Pizarro's expeditions as part of broader Iberian transatlantic expansion, connecting directly to C.1.f (Spanish conquest of the Incas, 1532–40) and the collapse of Inca rule under European penetration."
+      "rationaleAI": "The Spanish conquest of the Inca Empire directly addresses the Spanish conquest of the Incas (1532-40) including Pizarro's execution of Atahuallpa (C.1.f)."
     },
     {
       "articleTitle": "South America",
       "relevantPathsAI": [
-        "A",
-        "B"
+        "A"
       ],
-      "rationaleAI": "Provides geographic and cultural context for the Andean region including pre-Columbian Andean and Mesoamerican civilizations, relevant to A (geography and ethnography of the Andean region) and background to B (pre-Inca cultural development within the broader South American context)."
+      "rationaleAI": "South America's geography including the Andes and prehistory of Andean civilizations provides context for the character and geography of Andean civilization (A)."
     },
     {
       "articleTitle": "History of South America",
       "relevantPathsAI": [
         "A",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "C.1"
+        "B",
+        "C"
       ],
-      "rationaleAI": "Covers Norte Chico/Caral-Supe, Chavín, Moche, Inca, and other Andean cultures alongside Iberian colonization from 1492, directly addressing A (character and historiography of Andean civilization), the specific pre-Inca cultures in B, and Inca imperial history and Spanish conquest in C.1."
+      "rationaleAI": "South American history's coverage of pre-Columbian civilizations including Norte Chico/Caral-Supe, Chavin, Moche, and Inca provides broad context across all major outline sections."
     },
     {
       "articleTitle": "Spanish Empire",
       "relevantPathsAI": [
         "C.1.f"
       ],
-      "rationaleAI": "Covers the Spanish conquest of the Inca Empire, silver mining at Potosí (relating to Andean resources and society under conquest), and the broader colonial framework established after 1532, mapping directly to C.1.f (Spanish conquest and consolidation of power)."
+      "rationaleAI": "The Spanish Empire's conquest of the Inca Empire and establishment of colonial rule directly addresses the Spanish conquest of the Incas (C.1.f)."
     },
     {
       "articleTitle": "Pre-Columbian era",
       "relevantPathsAI": [
         "A",
         "B",
-        "B.2",
-        "B.3",
-        "B.4",
-        "B.5",
-        "C.1"
+        "C"
       ],
-      "rationaleAI": "Comprehensively covers all indigenous American civilizations before European contact, including Chavín, Moche, Wari, Tiwanaku, and Inca in the Andean region, mapping to A (overall character of Andean civilization) and B (pre-Inca cultures across multiple periods) and C.1 (Inca Empire through Spanish conquest)."
+      "rationaleAI": "The pre-Columbian era's coverage of Andean civilizations including Chavin, Moche, Wari, Tiwanaku, and Inca provides comprehensive context across all outline sections."
     },
     {
       "articleTitle": "Andes",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Covers the physical geography, ecology, and human dimensions of the Andean mountain range including indigenous agriculture, irrigation, and mining across Argentina, Chile, Bolivia, Peru, Ecuador, Colombia, and Venezuela, directly relevant to A (the geography and ethnography of the Andean region)."
+      "rationaleAI": "The Andes mountain range's geology, climate, and indigenous agricultural traditions provide geographic context for the character and geography of Andean civilization (A)."
     },
     {
       "articleTitle": "Potato",
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "The potato was domesticated in the southern Peruvian/Bolivian Andes 7,000–10,000 years ago and constitutes a key element of the agricultural development described in B.1 (Late Preceramic cultures and the development of agriculture in the Andean region)."
+      "rationaleAI": "The potato's domestication in the Andes 7,000-10,000 years ago relates to the Late Preceramic period's development of agriculture (B.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

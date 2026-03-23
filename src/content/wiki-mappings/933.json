@@ -6,136 +6,126 @@
       "relevantPathsAI": [
         "C",
         "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.2",
-        "C.2.a",
-        "C.2.b",
-        "C.2.d"
+        "C.2"
       ],
-      "rationaleAI": "The Mongol Empire is the central subject of section C of this outline, covering the establishment of the united empire under Genghis Khan and its successor khanates — the Yuan (C.2.a), Chagatai (C.2.b), Il-Khans (C.2.d), and Golden Horde (C.2.d)."
+      "rationaleAI": "The Mongol Empire's founding by Genghis Khan, expansion under successors, military organization, administrative reforms, and fracture into four successor khanates (Yuan, Ilkhanate, Golden Horde, Chagatai) directly address the establishment of the Mongol Empire (C.1) and its successor states (C.2)."
     },
     {
       "articleTitle": "Timur",
       "relevantPathsAI": [
-        "C.2.b"
+        "C.2.c"
       ],
-      "rationaleAI": "Timur (Tamerlane) is the explicit subject of C.2.b: his establishment of the Timurid dynasty (1370–1506), capital at Samarkand, conquests across Turkistan, Afghanistan, and Transoxania are detailed in this outline path."
+      "rationaleAI": "Timur's establishment of the Timurid dynasty, his capital at Samarkand, conquests across Afghanistan, Iran, and Central Asia, and the succession under his descendants directly address the Timurid section (C.2.c)."
     },
     {
       "articleTitle": "Genghis Khan",
       "relevantPathsAI": [
-        "C.1",
         "C.1.a",
         "C.1.b"
       ],
-      "rationaleAI": "Genghis Khan is the direct subject of C.1.a (his rise, military organization, and conquests) and C.1.b (division of his empire among sons and further expansion under Ögedei and Möngke Khans)."
+      "rationaleAI": "Genghis Khan's unification of Mongol tribes, military and political organization, tactics, and conquests (C.1.a), and the division of his empire among his sons with further expansion (C.1.b)."
     },
     {
       "articleTitle": "Silk Road",
       "relevantPathsAI": [
         "A",
-        "B.3"
+        "B.1"
       ],
-      "rationaleAI": "The Silk Road traversed the steppe and oasis routes of Inner Asia — Central and West Turkistan — providing the material basis for the interactions between steppe peoples and neighboring civilizations at A, and the development of Turkistan trade networks at B.3."
+      "rationaleAI": "The Silk Road's overland routes through Central Asia, transmission of religions, and Sogdian facilitation relate to interactions between steppe peoples and neighbouring civilizations (A), and the Hsiung-nu confederation's relationship to Han China's trade routes (B.1)."
     },
     {
       "articleTitle": "Tang dynasty",
       "relevantPathsAI": [
-        "B.1",
-        "B.3.b"
+        "B.1"
       ],
-      "rationaleAI": "The Tang dynasty conducted military campaigns against the Hsiung-nu successor peoples and expanded influence into Central Asia including East Turkistan; the article's coverage of tributary relations with Central Asian states maps to B.1 and B.3.b."
+      "rationaleAI": "The Tang dynasty's tributary relations with Central Asian states and Silk Road trade provide context for the Hsiung-nu and other Inner Asian peoples' interactions with Chinese empires (B.1)."
     },
     {
       "articleTitle": "Han dynasty",
       "relevantPathsAI": [
         "B.1"
       ],
-      "rationaleAI": "The Han dynasty's Xiongnu campaigns and Central Asian expansion under Wu Ti are exactly what B.1 describes — Han China's military pressure on the Hsiung-nu confederation and its destruction."
+      "rationaleAI": "The Han dynasty's military campaigns against the Xiongnu and expansion into Central Asia directly address the Hsiung-nu tribal confederation and Han China's pressure on it (B.1)."
     },
     {
       "articleTitle": "Alexander the Great",
       "relevantPathsAI": [
-        "B.3.a"
+        "B.5"
       ],
-      "rationaleAI": "Alexander conquered Bactria and Sogdia (modern Afghanistan and West Turkistan) — part of the early empires that B.3.a describes as ruling West Turkistan before Muslim conquest — directly relevant to the 'early empires' phase of that path."
+      "rationaleAI": "Alexander's conquests reached into Central Asia and Afghanistan, relevant to the development of Afghanistan under Achaemenian and Greek rule (B.5)."
     },
     {
       "articleTitle": "Islamic Golden Age",
       "relevantPathsAI": [
         "B.3.a"
       ],
-      "rationaleAI": "The spread of Muslim rule into West Turkistan is a key phase of B.3.a, and the Islamic Golden Age reflects the cultural transformation of these Central Asian regions under Abbasid caliphate influence before and during the Mongol period."
+      "rationaleAI": "The Islamic Golden Age's intellectual production and its connection to Central Asian urban centers relates to Muslim rule and cultural developments in West Turkistan (B.3.a)."
     },
     {
       "articleTitle": "Achaemenid Empire",
       "relevantPathsAI": [
-        "B.3.a"
+        "B.5"
       ],
-      "rationaleAI": "The Achaemenid Empire ruled Bactria and Sogdia (part of West Turkistan) and is explicitly named in the outline's description of Afghanistan's history at B.5 as among the early imperial rulers; also relevant to B.3.a as one of the early empires of West Turkistan."
+      "rationaleAI": "The Achaemenid Empire's extension to the Indus Valley and Central Asian territories relates to Afghanistan's rule by Achaemenians (B.5)."
     },
     {
       "articleTitle": "Post-classical history",
       "relevantPathsAI": [
-        "A",
+        "B",
         "C"
       ],
-      "rationaleAI": "Covers the Mongol Empire's role in connecting Eurasia through the Pax Mongolica and Central Asian trade networks — directly relevant to the section's overview (A) and the Mongol Empire section (C)."
+      "rationaleAI": "The post-classical period's Mongol Empire coverage and Silk Road trade networks provide broad context for peoples and states of Inner Asia (B) and the Mongol Empire and its successor states (C)."
     },
     {
       "articleTitle": "Mughal Empire",
       "relevantPathsAI": [
-        "C.2.b"
+        "C.2.c"
       ],
-      "rationaleAI": "The Mughal Empire was founded by Babur, a Timurid descendant from Fergana (Central Asia), making it the direct political continuation of the Timurid dynasty in C.2.b after the Timurids lost Central Asia to the Uzbeks."
+      "rationaleAI": "The Mughal Empire's Timurid-Mongol origins and Babur as Timur's descendant connect to the Timurid dynasty and its successors in Turkistan, Afghanistan, and Transoxania (C.2.c)."
     },
     {
       "articleTitle": "Iran",
       "relevantPathsAI": [
-        "B.3.a",
         "C.2.d"
       ],
-      "rationaleAI": "Iran's history encompasses the Muslim conquest of West Turkistan (B.3.a), and the Mongol Il-Khanate was based in Persia and is the direct subject of C.2.d (the Iranian Il-Khans 1258–1335)."
+      "rationaleAI": "Iran's Safavid dynasty and its interactions with Central Asian powers relate to the Iranian Il-Khans and successor states (C.2.d)."
     },
     {
       "articleTitle": "Russia",
       "relevantPathsAI": [
-        "C.2.d",
         "E"
       ],
-      "rationaleAI": "The Golden Horde ruled eastern Europe including Russia from 1240, making Russian history directly connected to C.2.d; and Russian expansion into Siberia and western Turkistan is the explicit subject of E (waning of nomad power)."
+      "rationaleAI": "Russia's expansion from Kievan Rus' through Tsardom relates to Russian expansion into Siberia and western Turkistan as part of the waning of nomad power (E)."
     },
     {
       "articleTitle": "Himalayas",
       "relevantPathsAI": [
-        "D",
-        "D.1"
+        "D"
       ],
-      "rationaleAI": "The Himalayas form the geographic setting for section D on Tibet and Nepal, separating the Indian subcontinent from the Tibetan Plateau and framing the cultural-religious significance of Himalayan civilization relevant to D and D.1."
+      "rationaleAI": "The Himalayas' geographic and cultural significance to Tibetan civilizations and Buddhism relates to the section on Tibet and Nepal (D)."
     },
     {
       "articleTitle": "Mahayana",
       "relevantPathsAI": [
         "D.1.a",
-        "D.1.c",
+        "D.1.b",
         "C.2.e"
       ],
-      "rationaleAI": "Mahayana Buddhism is the dominant tradition of Tibet and Mongolia; D.1.a covers the introduction of Buddhism to Tibet, D.1.c covers the Yellow Hat (Dge-lugs-pa) monastic order's rule, and C.2.e explicitly covers the revival of Buddhism in Mongolia."
+      "rationaleAI": "Mahayana Buddhism including Tibetan Buddhism (Vajrayana subset) relates to the introduction and resurgence of Buddhism in Tibet (D.1.a, D.1.b) and the revival of Buddhism in Mongolia (C.2.e)."
     },
     {
       "articleTitle": "Ibn Khaldun",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "Ibn Khaldun's theory of asabiyyah (group solidarity) as the engine of nomadic state formation and his cyclical model of sedentary vs. nomadic civilization dynamics are directly relevant to the outline's section A on the cultures and interactions of steppe peoples with neighboring civilizations."
+      "rationaleAI": "Ibn Khaldun's theories on nomadic vs. sedentary civilizations and cyclical dynastic rise-and-fall provide analytical context for the peoples of the steppes and their interactions with neighbouring civilizations (A)."
     },
     {
       "articleTitle": "Age of Discovery",
       "relevantPathsAI": [
         "E"
       ],
-      "rationaleAI": "The Age of Discovery article covers Russian expansion into Siberia — one of the three forces explicitly named in outline path E (Manchu conquest, Afghans, and Russian expansion into Siberia and western Turkistan) as contributing to the waning of nomad power."
+      "rationaleAI": "Russian expansion into Siberia during the Age of Discovery relates to the waning of nomad power and Manchu/Russian expansion into Inner Asia (E)."
     },
     {
       "articleTitle": "China",
@@ -143,18 +133,19 @@
         "B.1",
         "B.2",
         "C.2.a",
-        "E"
+        "C.2.e"
       ],
-      "rationaleAI": "China's Han and Tang pressure on Hsiung-nu and Manchurian tribes maps to B.1 and B.2; the Manchu (Ch'ing) conquest of China and Inner Asia is the subject of E; and the Yuan dynasty's establishment at C.2.a is a Chinese-Mongol co-history."
+      "rationaleAI": "China's dynastic history intersects with Inner Asian peoples: Han campaigns against Xiongnu (B.1), Manchurian tribes' relations with Chinese (B.2), Yuan dynasty conquest (C.2.a), and Mongolia under Chinese overlordship (C.2.e)."
     },
     {
       "articleTitle": "Middle Ages",
       "relevantPathsAI": [
+        "B",
         "C"
       ],
-      "rationaleAI": "The Middle Ages article includes the Mongol Empire as a world-historical phenomenon and its role in connecting Eurasia; as the only broad candidate covering the Mongol successor states context at C from a global historical framing, it provides moderate background coverage."
+      "rationaleAI": "Medieval period coverage of the Mongol Empire and its impact on Eurasia provides context for Inner Asian peoples and states (B) and the Mongol Empire's successor states (C)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

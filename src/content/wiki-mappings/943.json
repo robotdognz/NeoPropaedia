@@ -6,57 +6,53 @@
       "relevantPathsAI": [
         "A",
         "B",
-        "B.2.b",
-        "B.2.c",
         "C"
       ],
-      "rationaleAI": "Covers the Bantu expansion, East African coastal trading cities and Indian Ocean networks, Great Lakes kingdoms (Rwanda, Buganda), and European colonial penetration, directly addressing ethnographic and historiographic context at A and substantive events at B.2.b, B.2.c, and C.1."
+      "rationaleAI": "African history's coverage of East African coast trade, Great Lakes kingdoms, Indian Ocean networks, and European colonial penetration provides broad context across the region's geography (A), development to c. 1856 (B), and later developments (C)."
     },
     {
       "articleTitle": "Swahili",
       "relevantPathsAI": [
-        "A",
         "B.1.a",
         "B.1.b"
       ],
-      "rationaleAI": "Swahili is the language of the East African coastal trading cities, with ~40% Arabic vocabulary reflecting centuries of Indian Ocean commerce, directly indexing B.1.a (medieval commercial contacts) and B.1.b (spread of Islam and growth of towns), and characterizing the region's cultural identity at A."
+      "rationaleAI": "Swahili as a Bantu language with extensive Arabic loanwords reflecting Indian Ocean trade contact relates to medieval commercial contacts of Azania with Arabia and India (B.1.a) and the spread of Islam and growth of coastal towns (B.1.b)."
     },
     {
       "articleTitle": "Age of Discovery",
       "relevantPathsAI": [
         "B.1.c"
       ],
-      "rationaleAI": "Covers Vasco da Gama's 1498 Indian Ocean voyage and sustained Portuguese maritime expansion along the East African coast, directly addressing the Portuguese invasions from 1502 and the sequence of events described in B.1.c."
+      "rationaleAI": "Portuguese Indian Ocean exploration directly relates to the Portuguese invasions and occupation of East Africa from 1502 (B.1.c)."
     },
     {
       "articleTitle": "Kenya",
       "relevantPathsAI": [
-        "A",
-        "B.2",
-        "B.2.c"
+        "B.2.a",
+        "C.1.c"
       ],
-      "rationaleAI": "Covers early Cushitic and Nilotic settlement of East Africa (modern Kenya) and Portuguese contact from 1500, directly relevant to the Stone Age and later peopling described in B.2 and the Somali/Galla/Nilotic migrations in B.2.c, while grounding the region's geography for A."
+      "rationaleAI": "Kenya's early settlement by Cushitic and Nilotic peoples and Portuguese contact relate to Stone Age origins in the Rift Valley (B.2.a) and European exploratory activities (C.1.c)."
     },
     {
       "articleTitle": "Stone Age",
       "relevantPathsAI": [
         "B.2.a"
       ],
-      "rationaleAI": "Covers the African Stone Age with specific reference to Oldowan tool origins and the Rift Valley as the cradle of human lithic culture, directly relevant to B.2.a's focus on Stone Age origins of East African interior peoples in Kenya, Tanzania, and Uganda."
+      "rationaleAI": "Stone Age developments in East Africa relate to the origins of the East African interior peoples in the Rift Valley (B.2.a)."
     },
     {
       "articleTitle": "Atlantic slave trade",
       "relevantPathsAI": [
         "C.1.b"
       ],
-      "rationaleAI": "Though primarily focused on the Atlantic circuit, covers the role of East African slave-trading networks and the rise of Zanzibar as a slave-trade hub through Omani Arab merchants, providing context for C.1.b (Zanzibar as the leading East African coastal power and the slave trade)."
+      "rationaleAI": "The broader slave trade system provides context for the rise of Zanzibar as the leading East African coastal power and the slave trade (C.1.b)."
     },
     {
       "articleTitle": "British Empire",
       "relevantPathsAI": [
         "C.1.c"
       ],
-      "rationaleAI": "Covers British exploratory and missionary expansion into East Africa as part of the Scramble for Africa and earlier Victorian-era activities, directly relevant to C.1.c (European exploratory and missionary activities)."
+      "rationaleAI": "The British Empire's expansion into East Africa relates to European exploratory and missionary activities (C.1.c)."
     },
     {
       "articleTitle": "Post-classical history",
@@ -64,29 +60,29 @@
         "B.1.a",
         "B.1.b"
       ],
-      "rationaleAI": "Covers the Indian Ocean trade networks, Islamic expansion, and inter-civilizational commerce during c. 500–1500 CE that underpinned Azanian coastal trade with Arabia and India, directly relevant to B.1.a and the Shirazi-era Islamic spread at B.1.b."
+      "rationaleAI": "The post-classical period's inter-civilizational trade networks and spread of Islam relate to medieval commercial contacts with Arabia and India (B.1.a) and the Shirazi dynasty and spread of Islam (B.1.b)."
     },
     {
       "articleTitle": "Silk Road",
       "relevantPathsAI": [
         "B.1.a"
       ],
-      "rationaleAI": "Explicitly covers maritime Silk Road routes connecting East Africa to the broader Indian Ocean network of Asian and Arabian trade, providing background for B.1.a's medieval commercial contacts of Azania with Arabia, India, and the Mediterranean."
+      "rationaleAI": "The Silk Road's maritime routes connecting East Africa with broader trade networks relate to medieval commercial contacts of Azania with Arabia, India, and the Mediterranean (B.1.a)."
     },
     {
       "articleTitle": "Nile",
       "relevantPathsAI": [
         "A"
       ],
-      "rationaleAI": "As the defining river of northeastern Africa, the Nile connects East African geography to broader regional historiography and geomorphology, offering partial geographic context for A's description of the region's physical setting and archaeological sources."
+      "rationaleAI": "The Nile's geography and its role in northeastern African civilizations provide context for the geography of East Africa (A)."
     },
     {
       "articleTitle": "Early modern period",
       "relevantPathsAI": [
         "B.1.c",
-        "C"
+        "B.1.d"
       ],
-      "rationaleAI": "Covers the c. 1500–1800 period of European colonial penetration globally, including Portuguese Indian Ocean expansion and sub-Saharan African contact, providing broad historiographic framing for B.1.c (Portuguese invasions) and the transition to C."
+      "rationaleAI": "The early modern period's European colonization relates to Portuguese invasions and occupation (B.1.c) and developments in Madagascar under European contact (B.1.d)."
     },
     {
       "articleTitle": "Islamic Golden Age",
@@ -94,9 +90,9 @@
         "B.1.a",
         "B.1.b"
       ],
-      "rationaleAI": "The Islamic Golden Age centered on the same medieval urban commercial network linking Arabia and East Africa, and the spread of Islam through trade routes is directly relevant to B.1.a (Azanian commercial contacts with Arabia) and B.1.b (the Shirazi dynasty's spread of Islam)."
+      "rationaleAI": "The Islamic Golden Age's commercial networks relate to medieval commercial contacts with Arabia (B.1.a) and the spread of Islam along the East African coast (B.1.b)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

@@ -5,75 +5,60 @@
       "articleTitle": "Reformation",
       "relevantPathsAI": [
         "D.1",
+        "C.2",
         "D.1.b",
         "D.1.c",
         "D.1.d",
-        "D.1.h",
-        "C.2",
-        "C.2.b",
-        "C.2.c"
+        "D.1.f",
+        "D.1.h"
       ],
-      "rationaleAI": "The Reformation is the central subject of outline paths D.1 through D.1.h, covering Luther, the Swiss and English reformations, radical movements, and the wars of religion. It also directly addresses the Catholic Counter-Reformation (C.2.c) and the broader context of C.2."
+      "rationaleAI": "The Reformation producing Lutheranism, Calvinism, Anglicanism, and Anabaptism directly addresses the Protestant Reformation (D.1). Catholic Counter-Reformation relates to C.2.c. The Swiss, French, and Low Countries reformations (D.1.c), English reformation (D.1.d), radical movements (D.1.f), and wars of religion (D.1.h) are all covered."
     },
     {
       "articleTitle": "Holy Roman Empire",
       "relevantPathsAI": [
-        "D.1",
-        "D.1.b",
-        "D.2.a",
-        "C.2",
-        "C.2.d"
+        "C.1",
+        "D.1"
       ],
-      "rationaleAI": "The Holy Roman Empire provided the political framework for D.1.b (Luther and the German Reformation, the Diet of Worms), D.2.a (political developments affecting continental Protestant churches), and C.2.d (Catholic Church's response to political developments). Its entanglement with the papacy and Reformation-era religious wars makes it substantive for these paths."
+      "rationaleAI": "The Holy Roman Empire's Investiture Controversy and Reformation-era religious wars connect to the medieval Roman Catholic Church (C.1) and the Protestant Reformation's German context (D.1)."
     },
     {
       "articleTitle": "Age of Enlightenment",
       "relevantPathsAI": [
         "D.2.c",
-        "D.3",
-        "C.3",
-        "C.4"
+        "D.3"
       ],
-      "rationaleAI": "The Enlightenment is specifically addressed by D.2.c (challenge of rationalism, Deism, and Enlightenment, and the Protestant response) and provides the intellectual backdrop for D.3 and C.3–C.4 (transition and modern eras for both Protestant and Catholic Christianity)."
+      "rationaleAI": "The Enlightenment's Deism and secularism as challenges to Protestant orthodoxy connect to the challenge of rationalism, Deism, and the Enlightenment (D.2.c). The broader impact on modern-age Protestantism relates to D.3."
     },
     {
       "articleTitle": "Elizabeth I",
       "relevantPathsAI": [
-        "D.1.d",
-        "G.3.d"
+        "D.1.d"
       ],
-      "rationaleAI": "Elizabeth I's reign established the Elizabethan Religious Settlement and the Church of England as a moderate Protestant institution, directly covering D.1.d (the English Reformation) and the historical development of the Anglican Communion (G.3.d.iii)."
+      "rationaleAI": "Elizabeth I's Elizabethan Religious Settlement creating the Church of England as a moderate Protestant institution directly addresses the English reformation (D.1.d)."
     },
     {
       "articleTitle": "Renaissance",
       "relevantPathsAI": [
-        "C.1",
-        "C.1.b",
-        "D.1.a"
+        "C.1.a",
+        "F.7"
       ],
-      "rationaleAI": "The Renaissance is explicitly referenced in C.1 (medieval and Renaissance eras of the Catholic Church) and C.1.b (religious and cultural characteristics of Latin Christianity). It also provides the background context for D.1.a (background of the Protestant Reformation in late medieval and Renaissance Catholicism)."
+      "rationaleAI": "The Renaissance's recovery of classical antiquity and its relationship to Christianity connect to the medieval and Renaissance era of the Roman Catholic Church (C.1.a). Renaissance art's religious iconography relates to art and iconography (F.7)."
     },
     {
       "articleTitle": "Byzantine Empire",
       "relevantPathsAI": [
-        "A.2",
         "A.3",
-        "A.3.a",
-        "A.3.b",
-        "A.3.d",
-        "B.1",
-        "G.1"
+        "B"
       ],
-      "rationaleAI": "The Byzantine Empire is the political and ecclesiastical context for A.3 (growing division between East and West, tensions between Rome and Constantinople, and the Photian schism), B.1 (church of imperial Byzantium to 1453), and G.1 (Eastern Orthodoxy's historical development). This is among the most direct topical fits for the uncovered A.3 paths."
+      "rationaleAI": "The Byzantine Empire as continuation of Rome centered on Constantinople, with Orthodox Christianity and the Great Schism, directly addresses the growing division between Eastern and Western Christianity (A.3) and the history of Eastern Orthodoxy (B)."
     },
     {
       "articleTitle": "Charlemagne",
       "relevantPathsAI": [
-        "A.2.a",
-        "A.3.b",
         "A.3.c"
       ],
-      "rationaleAI": "Charlemagne's coronation, Christianization campaigns, and Carolingian Renaissance directly cover A.2.a (establishment of Christianity in the West, role of the papacy) and A.3.b–c (relation of Christianity to Western culture, expansion of Christianity in the West)."
+      "rationaleAI": "Charlemagne's enforcement of Christianization and promotion of the Carolingian Renaissance connect to developments affecting institutions and practices in the West and expansion of Christianity (A.3.c)."
     },
     {
       "articleTitle": "Napoleon",
@@ -81,33 +66,29 @@
         "C.4",
         "D.3"
       ],
-      "rationaleAI": "Napoleon's Concordat with the Catholic Church, dissolution of the Papal States, and reshaping of European confessional politics directly cover C.4 (the modern age from the French Revolution to WWI for the Catholic Church) and the parallel D.3 path for Protestantism."
+      "rationaleAI": "Napoleon's Concordat with the Catholic Church connects to the modern age of Roman Catholicism (C.4). His reshaping of European borders affected Protestant churches, relating to the modern age of Protestantism (D.3)."
     },
     {
       "articleTitle": "Martin Luther",
       "relevantPathsAI": [
-        "D.1",
         "D.1.b",
-        "G.3.d"
+        "G.3.d.i"
       ],
-      "rationaleAI": "Martin Luther is the founding figure of D.1.b (Luther and the German Reformation) and the origin point for the entire D.1 section, as well as the historical root of G.3.d.i (Lutheran churches)."
+      "rationaleAI": "Luther's Ninety-five Theses, sola fide, sola scriptura, and vernacular Bible translation directly address Luther and the German Reformation (D.1.b). Lutheranism as a denomination relates to Lutheran churches (G.3.d.i)."
     },
     {
       "articleTitle": "Ottoman Empire",
       "relevantPathsAI": [
-        "B.2.a",
-        "B.2",
-        "A.3"
+        "B.2.a"
       ],
-      "rationaleAI": "The Ottoman Empire's conquest of Constantinople (1453) and millet system of confessional autonomy directly address B.2.a (Eastern Orthodoxy under the Ottomans, 1453–1821) and B.2 broadly, which are currently uncovered priority paths."
+      "rationaleAI": "The Ottoman Empire's millet system and rule over Orthodox Christian populations directly addresses Eastern Orthodoxy under the Ottomans (B.2.a)."
     },
     {
       "articleTitle": "Spanish Empire",
       "relevantPathsAI": [
-        "C.2.e",
-        "D.1.h"
+        "C.2.e"
       ],
-      "rationaleAI": "The Spanish Empire's Catholic missionary endeavors in the Americas and Philippines, and its role in the wars of religion, directly cover C.2.e (missionary endeavours and the church's role in European colonial policies) and C.2 broadly."
+      "rationaleAI": "The Spanish Empire's role in colonial missionary endeavors connects to the role of the church in the explorations and colonial policies (C.2.e)."
     },
     {
       "articleTitle": "Christianity",
@@ -118,42 +99,31 @@
         "D",
         "E",
         "F",
-        "G",
-        "H"
+        "G"
       ],
-      "rationaleAI": "The Christianity article is the overarching subject of section 827 and provides comprehensive coverage across all major outline paths, from historical development (A–D) through beliefs and practices (E–F) to major denominational forms (G) and tangential movements (H)."
+      "rationaleAI": "Christianity as a comprehensive article covering doctrines, branches, and history addresses the entire scope of Section 827."
     },
     {
       "articleTitle": "Catholic Church",
       "relevantPathsAI": [
         "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4",
-        "C.5",
-        "G.2",
-        "F.5",
-        "F.6.a"
+        "G.2"
       ],
-      "rationaleAI": "The Catholic Church article directly covers all of C (Roman Catholic Church history from 1054), including the medieval/Renaissance papacy (C.1), Reformation and Counter-Reformation (C.2), transition era (C.3), and modern age (C.4), plus G.2 (Roman Catholicism as a major form of Christianity)."
+      "rationaleAI": "The Catholic Church with its hierarchical structure, apostolic succession, and Magisterium directly addresses the history of the Roman Catholic Church (C) and Roman Catholicism as a major traditional form (G.2)."
     },
     {
       "articleTitle": "Catherine the Great",
       "relevantPathsAI": [
-        "B.2.b",
-        "B.3"
+        "B.2.b"
       ],
-      "rationaleAI": "Catherine the Great's reign was central to the Russian Orthodox Church's history in the 18th century, directly covering B.2.b (the Church of Russia to 1800) and setting context for B.3 (Orthodox churches in the 19th century), both currently uncovered priority paths."
+      "rationaleAI": "Catherine the Great's reign over Russia connects to the Church of Russia during the 18th century (B.2.b)."
     },
     {
       "articleTitle": "Crusades",
       "relevantPathsAI": [
-        "C.1.a",
-        "A.3",
-        "G.1"
+        "C.1.a"
       ],
-      "rationaleAI": "The Crusades are central to C.1.a (development of the papacy as chief spiritual and temporal power) and represent a key episode in A.3 (the growing division between Eastern and Western Christianity, including tensions between Rome and Constantinople)."
+      "rationaleAI": "The Crusades as papally authorized military expeditions connect to the development of the papacy as spiritual and temporal power in the medieval era (C.1.a)."
     },
     {
       "articleTitle": "John Locke",
@@ -161,125 +131,101 @@
         "D.2.c",
         "D.2.d"
       ],
-      "rationaleAI": "Locke's arguments for religious toleration and church-state separation, developed in response to the English Civil War and Glorious Revolution, directly address D.2.c (challenge of rationalism and the Protestant response) and D.2.d (developments in English Protestantism)."
+      "rationaleAI": "Locke's advocacy for religious toleration and church-state separation connects to the challenge of rationalism and the Enlightenment to Protestantism (D.2.c) and developments in English Protestantism (D.2.d)."
     },
     {
       "articleTitle": "Middle Ages",
       "relevantPathsAI": [
-        "A.2",
         "A.3",
-        "C.1",
-        "B.1"
+        "C.1"
       ],
-      "rationaleAI": "The Middle Ages article covers the period of A.2–A.3 (early Christian Church to the East-West division) and C.1 (medieval Catholic Church and papacy) as well as the context for B.1 (Byzantine church). It provides broad historical scaffolding for multiple currently uncovered paths."
+      "rationaleAI": "The Middle Ages covering Church and monasticism, Crusades, and scholasticism directly relates to the growing East-West division (A.3) and the medieval Roman Catholic Church (C.1)."
     },
     {
       "articleTitle": "Rome",
       "relevantPathsAI": [
-        "C",
-        "G.2",
-        "F.6.a"
+        "A.2.a",
+        "G.2"
       ],
-      "rationaleAI": "Rome as the seat of the papacy and Vatican City is inseparable from C (Roman Catholic Church), G.2 (Roman Catholicism), and F.6.a (the structure of church institutions, canon law, and the role of the bishop of Rome as pope)."
+      "rationaleAI": "Rome as headquarters of the Catholic Church and center of early Christianity connects to the establishment of Christianity as state religion (A.2.a) and Roman Catholicism (G.2)."
     },
     {
       "articleTitle": "Ancient Rome",
       "relevantPathsAI": [
-        "A.1.b",
-        "A.2.a",
-        "A.2.c"
+        "A.1",
+        "A.2"
       ],
-      "rationaleAI": "Ancient Rome provides the political and cultural context for A.1.b (post-apostolic developments in the early church) and A.2.a (establishment of Christianity as the state religion of the Roman Empire, the growing role of the bishop of Rome as pope), and A.2.c (relation of Christianity to the culture of the late empire)."
+      "rationaleAI": "Ancient Rome's transition from polytheistic religion to Christianity connects to the origins of the primitive church (A.1) and the early Christian Church under Constantine (A.2)."
     },
     {
       "articleTitle": "Protestantism",
       "relevantPathsAI": [
         "D",
-        "D.1",
-        "D.2",
-        "D.3",
-        "D.4",
-        "G.3",
-        "G.3.b",
-        "G.3.d"
+        "G.3"
       ],
-      "rationaleAI": "Protestantism as an article directly covers all of D (history of Protestantism) and G.3 (Protestantism as a major form of Christianity), including its theology, organizational forms, and denominational varieties. It is among the most direct topical fits in the candidate set."
+      "rationaleAI": "Protestantism with sola scriptura, sola fide, and diverse denominations directly addresses the history of Protestantism (D) and Protestantism as a major traditional form (G.3)."
     },
     {
       "articleTitle": "Thomas Aquinas",
       "relevantPathsAI": [
         "E.5",
         "E.7",
-        "F.1"
+        "F.1.f"
       ],
-      "rationaleAI": "Thomas Aquinas is a paradigmatic example of E.5 (post-patristic theologians and church leaders) and E.7 (Christian philosophy), with his Thomistic synthesis of Aristotle and Catholic doctrine also relevant to F.1 (doctrines concerning God and the nature of God)."
+      "rationaleAI": "Aquinas's Summa Theologiae and Thomistic synthesis represent writings of post-patristic theologians (E.5), Christian philosophy (E.7), and Trinitarian doctrine (F.1.f)."
     },
     {
       "articleTitle": "Voltaire",
       "relevantPathsAI": [
-        "D.2.c",
-        "C.3",
-        "C.4"
+        "D.2.c"
       ],
-      "rationaleAI": "Voltaire's polemics against the Catholic Church and advocacy of Deism and religious toleration directly address D.2.c (challenge of rationalism, Deism, and the Enlightenment, and the Protestant response) and provide context for C.3–C.4 (the transition era and modern age of the Catholic Church)."
+      "rationaleAI": "Voltaire's polemics against Catholic Church dogma and advocacy for deism and religious toleration directly address the challenge of rationalism, Deism, and the Enlightenment (D.2.c)."
     },
     {
       "articleTitle": "Galileo Galilei",
       "relevantPathsAI": [
-        "F.3",
-        "E.7"
+        "A.2.c"
       ],
-      "rationaleAI": "Galileo's trial by the Roman Inquisition over heliocentrism is a defining episode for F.3 (doctrines concerning the physical world), the only currently uncovered path it substantively addresses. His work also touches E.7 (Christian philosophy and the science-faith relationship)."
+      "rationaleAI": "Galileo's trial by the Roman Inquisition for championing heliocentrism exemplifies the relation of Christianity to culture and science (A.2.c)."
     },
     {
       "articleTitle": "Age of Discovery",
       "relevantPathsAI": [
-        "C.2.e",
-        "A.3.c"
+        "C.2.e"
       ],
-      "rationaleAI": "The Age of Discovery provides the context for C.2.e (missionary endeavours and the church's role in European colonial policies) and is relevant to A.3.c (expansion of Christianity in the West) as European Christianity spread globally through colonial missions."
+      "rationaleAI": "The Age of Discovery's European maritime exploration and conquest of the Americas directly relates to missionary endeavours and the role of the church in colonial policies (C.2.e)."
     },
     {
       "articleTitle": "Eastern Orthodox Church",
       "relevantPathsAI": [
         "B",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "G.1",
-        "G.1.b",
-        "G.1.c",
-        "G.1.e",
-        "G.1.f",
-        "A.3"
+        "G.1"
       ],
-      "rationaleAI": "The Eastern Orthodox Church article is the core subject of section B (history of Eastern Orthodoxy) and G.1 (Eastern Orthodoxy as a major form), covering the historical, doctrinal, and organizational dimensions of Orthodoxy and directly addressing numerous uncovered priority paths including B.2, B.3, and B.4."
+      "rationaleAI": "The Eastern Orthodox Church as a communion of autocephalous churches with the Great Schism of 1054 directly addresses the history of Eastern Orthodoxy (B) and Eastern Orthodoxy as a major traditional form (G.1)."
     },
     {
       "articleTitle": "Joan of Arc",
       "relevantPathsAI": [
-        "E.6",
-        "F.6.c"
+        "F.6.c",
+        "E.6"
       ],
-      "rationaleAI": "Joan of Arc's claimed divine visions and subsequent canonization directly illustrate E.6 (Christian mysticism) and F.6.c (forms of Christian life, including the saintly life). Her case also exemplifies the relationship between popular religion and ecclesiastical authority."
+      "rationaleAI": "Joan of Arc's canonization in 1920 connects to the saintly life (F.6.c). Her claimed divine visions relate to Christian mysticism (E.6)."
     },
     {
       "articleTitle": "Immanuel Kant",
       "relevantPathsAI": [
-        "D.2.c",
-        "D.3"
+        "E.7"
       ],
-      "rationaleAI": "Kant's philosophy of religion grounding morality rather than metaphysics represents a key Protestant intellectual response to the Enlightenment, directly relevant to D.2.c (challenge of rationalism and Enlightenment, Protestant response) and D.3 (the modern age of Protestantism)."
+      "rationaleAI": "Kant's philosophy of religion grounding morality connects to Christian philosophy (E.7)."
     },
     {
       "articleTitle": "Nicolaus Copernicus",
       "relevantPathsAI": [
-        "F.3"
+        "A.2.c"
       ],
-      "rationaleAI": "Copernicus's heliocentric model and its reception by the Catholic Church makes this article substantive for F.3 (doctrines concerning the physical world), the currently uncovered path addressing Christianity's relationship to cosmological and scientific claims."
+      "rationaleAI": "Copernicus as a canon who formulated heliocentrism exemplifies the relationship between religious institutions and scientific change, relating to Christianity and culture (A.2.c)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

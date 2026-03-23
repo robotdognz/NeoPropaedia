@@ -7,82 +7,75 @@
         "C.2",
         "C.3"
       ],
-      "rationaleAI": "Central article on the Aztec/Mexica civilization covering the Triple Alliance formation by 1427, military campaigns under Itzcoatl and Montezuma, altepetl city-state structure, chinampas agriculture, tribute and taxation, Huitzilopochtli worship, Templo Mayor architecture, ritual calendar, and Spanish conquest of 1521. Maps directly to C.2 (development and extension of Aztec rule) and C.3 (Aztec culture, society, agriculture, political organization, religion, art, and architecture)."
+      "rationaleAI": "The Aztecs' Triple Alliance, Nahuatl language, chinampas agriculture, tribute system, polytheistic religion, human sacrifice, and Spanish conquest directly address the development of the Aztec state (C.2) and Aztec culture and society up to the Spanish conquest (C.3)."
     },
     {
       "articleTitle": "Mesoamerica",
       "relevantPathsAI": [
         "A",
-        "B.1",
-        "B.2.a",
-        "B.2.c"
+        "B",
+        "C"
       ],
-      "rationaleAI": "Core survey article on the Mesoamerican cultural region covering Olmec foundations, Teotihuacan, Maya and Zapotec writing systems, calendrical systems, ritual ballgame, maize and cacao domestication, and the Aztec Triple Alliance. Directly covers A (character, achievements, and geography of Mesoamerican civilization) and broadly addresses B.1 (Pre-Classic development including Olmec) and B.2.a (Teotihuacan)."
+      "rationaleAI": "Mesoamerica's coverage of Olmec foundations, Teotihuacan, Maya and Zapotec writing systems, vigesimal mathematics, calendrical systems, and the Aztec Triple Alliance provides comprehensive context across all major outline sections."
     },
     {
       "articleTitle": "Maya civilization",
       "relevantPathsAI": [
+        "B.1.c",
         "B.1.d",
-        "B.2.a",
+        "B.2.a.ii",
         "B.2.c",
         "C.1"
       ],
-      "rationaleAI": "Covers the Maya from Preclassic agricultural origins through Classic-period city-states (Tikal, Calakmul), hieroglyphic script, Long Count calendar, divine kingship, the Classic Maya collapse (9th century), and Postclassic Chichén Itzá. Maps to B.1.d (Mayas of the Chicanel), B.2.a.ii (Tzakol/Tepeu lowland Maya), B.2.c (Late Classic Maya urban settlements, art, calendar, religion, and collapse), and C.1 (Toltec-Maya culture of Chichen Itza)."
+      "rationaleAI": "Maya civilization from Preclassic origins to Classic city-states and Postclassic resurgence addresses pre-Maya villages (B.1.c), lowland Maya (B.1.d), Tzakol and Tepeu cultures (B.2.a.ii), Late Classic lowland Maya including collapse (B.2.c), and Toltec-Maya culture at Chichen-Itza (C.1)."
     },
     {
       "articleTitle": "Mexico",
       "relevantPathsAI": [
         "A",
-        "C.2",
-        "C.3"
+        "C"
       ],
-      "rationaleAI": "Covers Mexico's history of advanced pre-Columbian civilizations including Maya and Aztec/Mexica, Spanish conquest, and the deep embedding of Mesoamerican indigenous heritage in national culture. Relevant to A (geography and ethnography of Mesoamerica) and C.2–C.3 (Aztec state and culture)."
+      "rationaleAI": "Mexico's pre-Columbian civilizations (Maya, Aztec/Mexica) and Spanish conquest provide context for the character of Meso-American civilization (A) and the Post-Classic period (C)."
     },
     {
       "articleTitle": "Pre-Columbian era",
       "relevantPathsAI": [
         "A",
-        "B.1",
-        "B.2.c",
-        "C.1",
-        "C.2",
-        "C.3"
+        "B",
+        "C"
       ],
-      "rationaleAI": "Broad survey covering all Mesoamerican civilizations before European contact including Olmec (B.1.b–c), Maya (B.2.c), and Aztec (C.2–C.3), with attention to Pre-Classic, Classic, and Post-Classic periods. Maps to A (character and achievements) and the full chronological outline of B and C."
+      "rationaleAI": "The pre-Columbian era's coverage of Mesoamerican civilizations (Olmec, Maya, Aztec) provides comprehensive context across all outline sections."
     },
     {
       "articleTitle": "Age of Discovery",
       "relevantPathsAI": [
-        "C.2",
         "C.3"
       ],
-      "rationaleAI": "Covers the Spanish conquest of the Aztec Empire under Hernán Cortés (1519–1521) as a central event of the Age of Discovery, directly relevant to C.2 (administrative techniques under Montezuma II and the end of Aztec rule) and C.3 (Aztec society at the time of Spanish conquest)."
+      "rationaleAI": "Spanish conquest of the Aztec Empire directly relates to Aztec culture and society up to the time of the Spanish conquest (C.3)."
     },
     {
       "articleTitle": "Spanish Empire",
       "relevantPathsAI": [
-        "C.2",
         "C.3"
       ],
-      "rationaleAI": "Covers the Spanish conquest of the Aztec Empire and subsequent colonial administration, connecting to C.2 (Aztec state through the Spanish conquest) and C.3 (Aztec culture and society up to the time of the conquest and its immediate aftermath)."
+      "rationaleAI": "The Spanish Empire's conquest of the Aztec Empire and Habsburg expansion directly addresses the Spanish conquest context of Aztec civilization (C.3)."
     },
     {
       "articleTitle": "History of North America",
       "relevantPathsAI": [
-        "A",
-        "B.1"
+        "A"
       ],
-      "rationaleAI": "Covers pre-Columbian Indigenous civilizations in the Mesoamerican region (within the broader North American scope), relevant to A (character and geography of Mesoamerican civilization) and B.1 (Pre-Classic development including early Paleo-Indian and agricultural transitions in the region)."
+      "rationaleAI": "North American history's pre-Columbian Indigenous civilizations provide context for the character and achievements of Meso-American civilization (A)."
     },
     {
       "articleTitle": "Post-classical history",
       "relevantPathsAI": [
-        "C.1",
-        "C.2"
+        "B.2",
+        "C"
       ],
-      "rationaleAI": "The Post-Classic period (c. 900–1450) in the Americas is addressed within this world history survey, covering political and cultural developments in Mesoamerica relevant to C.1 (Toltec state) and C.2 (Aztec state formation from c. 1325)."
+      "rationaleAI": "The post-classical period's Americas coverage provides context for the Classic period (B.2) and the Post-Classic period's Toltec and Aztec developments (C)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

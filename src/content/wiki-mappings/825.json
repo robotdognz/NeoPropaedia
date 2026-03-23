@@ -4,32 +4,27 @@
     {
       "articleTitle": "Confucius",
       "relevantPathsAI": [
-        "B.1",
         "B.1.b",
-        "B.1.c",
-        "B.3"
+        "B"
       ],
-      "rationaleAI": "Directly covers the life and teachings of Confucius (B.1.b — origin in the life and teachings of Confucius, the first Sage) and the early Confucian school through Mencius and Xunzi (B.1.c), foundational to understanding Confucianism as both religion and philosophy (B.3)."
+      "rationaleAI": "Confucius (551-479 BC) as the founder whose teachings established Confucianism directly addresses the origin in the life and teachings of Confucius (B.1.b) and Confucianism broadly (B)."
     },
     {
       "articleTitle": "Laozi",
       "relevantPathsAI": [
         "C.1.a",
-        "C.1",
-        "C.2",
-        "C.3"
+        "C"
       ],
-      "rationaleAI": "Directly addresses the legendary founder of Taoism and the Tao Te Ching (C.1.a — origin and early developments of Taoism), which articulates the Tao, wu wei, and the foundational Taoist philosophical framework; also relevant to C.3 (Taoism as religion and philosophy)."
+      "rationaleAI": "Laozi as the legendary author of the Tao Te Ching directly addresses the origin and early developments of Taoism, including the first evidence of Lao-tzu's teachings (C.1.a) and Taoism broadly (C)."
     },
     {
       "articleTitle": "Tang dynasty",
       "relevantPathsAI": [
         "A.2.c",
-        "A.2.d",
         "B.1.f",
         "C.1.d"
       ],
-      "rationaleAI": "The Tang dynasty period was central to Chinese religious history: the Confucian-Buddhist-Daoist synthesis (A.2.c — Buddhist dominance and Taoist cults; B.1.f — Confucianism during Buddhist ascendancy), woodblock printing affecting textual transmission, and tributary relations spreading these traditions to Korea and Japan."
+      "rationaleAI": "The Tang dynasty's Confucian-Buddhist-Daoist religious synthesis connects to the dominance of the Buddhist Way and rise of Taoist-inspired cults (A.2.c). Confucianism's continued role during Buddhist ascendancy (B.1.f) and developments in Taoism under the Tang (C.1.d) are directly addressed."
     },
     {
       "articleTitle": "Confucianism",
@@ -37,43 +32,27 @@
         "B",
         "B.1",
         "B.2",
-        "B.3",
-        "B.1.d",
-        "B.1.e",
-        "B.1.f",
-        "B.1.g",
-        "B.1.h"
+        "B.3"
       ],
-      "rationaleAI": "Comprehensive coverage of Confucianism including its history from Confucius through Han state orthodoxy (B.1.d), introduction to Korea and Japan (B.1.e), role during Buddhist ascendancy (B.1.f), Neo-Confucian development (B.1.g), responses to Western challenge (B.1.h), and contemporary aspects (B.1.i), as well as Confucian literature and its status as religion and philosophy (B.2–B.3)."
+      "rationaleAI": "Confucianism with its core concepts of ren, li, yi, Neo-Confucianism, and influence across China, Korea, Japan, and Vietnam comprehensively addresses Confucianism (B), including its history (B.1), literature (B.2), and nature as religion and philosophy (B.3)."
     },
     {
       "articleTitle": "Shinto",
       "relevantPathsAI": [
         "E.2",
-        "E.2.a",
-        "E.2.b",
-        "E.2.c",
-        "E.2.d",
-        "E.2.e",
-        "E.1",
-        "E.3"
+        "E.1.a"
       ],
-      "rationaleAI": "Directly and comprehensively covers Shinto (E.2) — its history (E.2.a/E.1), characteristics of primitive Shinto including guardian shrines and shamans (E.2.b), scriptural literature including Kojiki and Nihon Shoki (E.2.c), basic beliefs and doctrines (E.2.d), ritual practices and institutions (E.2.e), and connects to Japanese religious art and symbolism (E.3)."
+      "rationaleAI": "Shinto as Japan's indigenous polytheistic and animistic religion centered on kami directly addresses Shinto: the Way of the Gods (E.2), including beliefs, rituals, mythology from the Kojiki and Nihon Shoki, and early clan religion before the 6th century (E.1.a)."
     },
     {
       "articleTitle": "Taoism",
       "relevantPathsAI": [
         "C",
         "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.1.d",
-        "C.1.e",
         "C.2",
         "C.3"
       ],
-      "rationaleAI": "Comprehensive coverage of Taoism in all dimensions of the outline: history from Laozi and Zhuangzi origins (C.1.a) through Han-era developments (C.1.b), interaction with Buddhism (C.1.c), Tang-Song internal developments (C.1.d), through to the modern period (C.1.e); also covers Taoist literature (C.2) and Taoism as religion and philosophy (C.3)."
+      "rationaleAI": "Taoism organized around the Tao, wu wei, and practices including meditation and internal alchemy comprehensively addresses Taoism (C), its history from Warring States through Han dynasty onward (C.1), Taoist literature (C.2), and Taoism as religion and philosophy (C.3)."
     },
     {
       "articleTitle": "Eastern philosophy",
@@ -81,58 +60,52 @@
         "B.3",
         "C.3"
       ],
-      "rationaleAI": "Covers the philosophical dimensions of both Confucianism (B.3) and Taoism (C.3) as part of its survey of East and South Asian philosophical traditions, addressing their ethical, cosmological, and metaphysical concerns as philosophical systems."
+      "rationaleAI": "Eastern philosophy's Chinese traditions including Confucianism, Taoism, and Legalism connect to Confucianism as a religion and philosophy (B.3) and Taoism as a religion and philosophy (C.3)."
     },
     {
       "articleTitle": "Han dynasty",
       "relevantPathsAI": [
         "A.2.b",
-        "B.1.d"
+        "B.1.d",
+        "C.1.b"
       ],
-      "rationaleAI": "Directly covers the establishment of Confucianism as state orthodoxy under Han Emperor Wu (B.1.d — Confucianism as Han state orthodoxy, eclectic tendencies, skeptical reactions) and the early formation of Chinese civilization including ancestor worship and cosmological beliefs (A.2.b context)."
+      "rationaleAI": "The Han dynasty's Confucian court ideology and establishment of Confucianism as state orthodoxy directly address the formulation of the Great Tradition (A.2.b), Confucianism as state orthodoxy of the Han Empire (B.1.d), and Taoist developments during the Han period (C.1.b)."
     },
     {
       "articleTitle": "History of religion",
       "relevantPathsAI": [
-        "A.2",
-        "A.2.a",
-        "B.1",
-        "C.1",
-        "D.1",
-        "E.1"
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
       ],
-      "rationaleAI": "Provides comparative historical framework for the development of Chinese, Korean, and Japanese religious traditions (A.2 broadly), including ancestor worship, Axial Age religious formation (corresponding to A.2.b), and the broad historical trajectory of East Asian religions."
+      "rationaleAI": "The history of religion covering East Asian religions provides broad context for Chinese religion (A), Confucianism (B), Taoism (C), Korean religions (D), and Japanese religions (E)."
     },
     {
       "articleTitle": "Buddhism",
       "relevantPathsAI": [
         "A.2.c",
-        "C.1.c",
-        "D.1",
         "E.1.b"
       ],
-      "rationaleAI": "Buddhism's dominance in Chinese religious history (A.2.c — Buddhist Way and Taoist-inspired cults, 1st–16th century; C.1.c — Taoism's interaction with Buddhism), its introduction into Korea (D.1) and Japan (E.1.b), and its interaction with Confucianism and Taoism are core topics within this article."
+      "rationaleAI": "Buddhism's historical spread to East Asia connects to the dominance of the Buddhist Way in China (A.2.c) and the introduction of Buddhism to Japan in the early historic period (E.1.b)."
     },
     {
       "articleTitle": "Mahayana",
       "relevantPathsAI": [
         "A.2.c",
-        "C.1.c",
         "E.1.b"
       ],
-      "rationaleAI": "Mahayana Buddhism is the dominant form that spread through China (A.2.c), interacted with Taoism (C.1.c), and was introduced into Japan during the early historic period (E.1.b), making it directly relevant to sections covering the Buddhist Way's role in East Asian religion."
+      "rationaleAI": "Mahayana's contemporary forms in Chinese, Korean, Japanese, and Vietnamese Buddhism connect to the Buddhist Way in China (A.2.c) and the impact of Chinese influences on Shinto (E.1.b)."
     },
     {
       "articleTitle": "Chinese folk religion",
       "relevantPathsAI": [
         "A.1",
-        "A.2",
-        "A.3",
         "A.4",
-        "A.5",
         "A.6"
       ],
-      "rationaleAI": "Directly covers the distinction between folk and literate religions in China (A.1), the syncretic integration of Buddhism, Confucianism, and Taoism (A.2.c, A.2.d), traditional cosmological concepts including Tian, qi, yin-yang, and ancestor veneration (A.3), ritual practices and institutions (A.4), and religious symbolism (A.5)."
+      "rationaleAI": "Chinese folk religion's veneration of ancestors, local deities, and spirits directly addresses the distinction between folk and literate religions in China (A.1), ritual practices (A.4), and Chinese mythology (A.6)."
     },
     {
       "articleTitle": "East Asia",
@@ -143,51 +116,45 @@
         "D",
         "E"
       ],
-      "rationaleAI": "Provides comprehensive regional context for Chinese religion (A), Confucianism (B), Taoism (C), Korean religion (D), and Japanese religion (E), covering the Sinosphere's shared cultural heritage of Confucianism, Buddhism, and Taoism across China, Korea, Japan, and Mongolia."
+      "rationaleAI": "East Asia's Confucianism, Buddhism, Taoism, and Shinto provide geographic and cultural context for all sections of indigenous religions of East Asia."
     },
     {
       "articleTitle": "Mao Zedong",
       "relevantPathsAI": [
         "A.2.d",
-        "B.1.h",
-        "B.1"
+        "B.1.h"
       ],
-      "rationaleAI": "Mao's Cultural Revolution represented the most radical political assault on Confucian ideology and Chinese religious traditions (A.2.d — effect of nationalism and secularism; B.1.h — varied responses to political developments; B.1.i — Confucianism today under communist governance)."
+      "rationaleAI": "Mao's Communist revolution and Cultural Revolution represent the effects of nationalism and secularism on Chinese religious traditions (A.2.d) and the impact of political developments on Confucian ideology (B.1.h)."
     },
     {
       "articleTitle": "Murasaki Shikibu",
       "relevantPathsAI": [
-        "E.1.b",
         "E.3"
       ],
-      "rationaleAI": "The Tale of Genji reflects the Heian period's Buddhist-Shinto religious milieu (E.1.b — early historic and medieval Japan, introduction of Buddhism) including Buddhist themes of impermanence and mono no aware; connects to Japanese religious art and cultural symbolism (E.3)."
+      "rationaleAI": "The Tale of Genji's Buddhist themes of impermanence within Heian court culture connect to Japanese religious art and symbolism (E.3)."
     },
     {
       "articleTitle": "History of Asia",
       "relevantPathsAI": [
-        "A.2",
-        "D.1",
-        "E.1"
+        "A",
+        "D",
+        "E"
       ],
-      "rationaleAI": "Provides broad historical context for Chinese religious development (A.2), Korean religious history including Joseon dynasty religious policy (D.1), and early Japanese religious history (E.1), covering the Zhou, Han, Tang, Ming, Joseon, and Tokugawa periods relevant to these religious traditions."
+      "rationaleAI": "Asian history covering classical dynasties and medieval kingdoms provides historical context for Chinese religion (A), Korean religions (D), and Japanese religions (E)."
     },
     {
       "articleTitle": "South Korea",
       "relevantPathsAI": [
-        "D",
-        "D.1",
-        "D.3",
-        "D.4"
+        "D"
       ],
-      "rationaleAI": "Covers Korean religious history from ancient kingdoms through the Joseon dynasty's Neo-Confucian state orthodoxy to contemporary religious pluralism (D.1), directly addressing the history, beliefs, and practices of Korean religion including Confucianism, Buddhism, and Christianity."
+      "rationaleAI": "South Korea's ancient Korean kingdoms and religious traditions including Buddhism and Neo-Confucianism connect to the religions of Korea (D)."
     },
     {
       "articleTitle": "Ancient history",
       "relevantPathsAI": [
-        "A.2.a",
-        "B.1"
+        "A.2"
       ],
-      "rationaleAI": "Covers the emergence of early Chinese civilization including ancestor worship and cosmological beliefs (A.2.a) and the pre-dynastic institutions that formed the background for Confucianism (B.1.a — predynastic sage-emperors and founders of the first three dynasties)."
+      "rationaleAI": "Ancient East Asian history provides context for the emergence of Chinese religious traditions (A.2)."
     },
     {
       "articleTitle": "History of philosophy",
@@ -195,32 +162,32 @@
         "B.3",
         "C.3"
       ],
-      "rationaleAI": "Surveys Chinese Confucian, Daoist, and Buddhist philosophical thought as part of its non-Western coverage (B.3 — Confucianism as religion and philosophy; C.3 — Taoism as religion and philosophy), contextualizing East Asian philosophy within the global philosophical tradition."
+      "rationaleAI": "Chinese Confucian, Daoist, and Buddhist philosophical thought connects to Confucianism as philosophy (B.3) and Taoism as philosophy (C.3)."
     },
     {
       "articleTitle": "Visual arts",
       "relevantPathsAI": [
+        "A.5",
         "E.3"
       ],
-      "rationaleAI": "Covers the Chinese scholar-painting ideal and East Asian printmaking traditions, relevant to Japanese religious art and symbolism (E.3), including the aesthetic traditions shaped by Shinto and Buddhist visual culture in East Asia."
+      "rationaleAI": "East Asian visual arts traditions including Chinese scholar-painting connect to Chinese religious symbolism (A.5) and Japanese religious art and symbolism (E.3)."
     },
     {
       "articleTitle": "Christianity",
       "relevantPathsAI": [
-        "A.2.d",
-        "B.1.h"
+        "A.2.d"
       ],
-      "rationaleAI": "The Western Christian missionary presence in East Asia is part of the modern period's impact on Chinese religion (A.2.d) and represents the intellectual and religious challenge of the West to which Confucianism had to respond (B.1.h)."
+      "rationaleAI": "Christianity as a Western religion affecting Chinese familial and social systems connects to the modern period's effects of Western religions (A.2.d)."
     },
     {
       "articleTitle": "Early modern period",
       "relevantPathsAI": [
         "A.2.d",
-        "B.1.h"
+        "E.1.c"
       ],
-      "rationaleAI": "The early modern period encompasses the Tokugawa era in Japan and late Ming-early Qing China, directly relevant to Confucian responses to Western intellectual challenge (B.1.h) and the later development of Taoism from the 14th century (C.1.e), as well as Japanese Neo-Confucian Shinto (E.1.c)."
+      "rationaleAI": "The early modern period's globalization and secularization connect to the modern effects on Chinese religious traditions (A.2.d) and the Tokugawa era in Japan (E.1.c)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

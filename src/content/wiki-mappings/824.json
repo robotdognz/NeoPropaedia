@@ -5,87 +5,65 @@
       "articleTitle": "Buddhism",
       "relevantPathsAI": [
         "A",
-        "B.1",
-        "B.2",
-        "B.3",
-        "B.4",
-        "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.1.d",
-        "C.1.e",
-        "C.2.a",
-        "C.2.b",
-        "C.2.c",
-        "C.3",
-        "C.4"
+        "B",
+        "C"
       ],
-      "rationaleAI": "Comprehensive overview article directly addressing the full outline from the historical founding through all major schools (Theravada, Mahayana, Vajrayana), core doctrines (Four Noble Truths, Eightfold Path, nirvana, Triple Gem), and practices including monasticism and devotion. Covers sacred literature, mythology, Buddhist philosophy, mysticism, and Buddhist art across A–C."
+      "rationaleAI": "Buddhism as a comprehensive article covering Four Noble Truths, Noble Eightfold Path, dependent arising, karma, three marks of existence, nirvana, samsara, Theravada/Mahayana/Vajrayana schools, and historical spread addresses the entire scope: history (A), intellectual expressions (B), and beliefs, practices, and institutions (C)."
     },
     {
       "articleTitle": "Mahayana",
       "relevantPathsAI": [
-        "A.3",
         "A.4",
         "A.5",
-        "A.6",
-        "C.2.b",
-        "C.4"
+        "C.2.b"
       ],
-      "rationaleAI": "Directly covers the Mahayana school (C.2.b) in full, including its philosophical views (Madhyamaka, Yogacara), bodhisattva ideal, and historical spread through India, China, Korea, Japan, Tibet, and Southeast Asia (A.3–A.6). As the largest Buddhist branch, it includes coverage of Vajrayana and Tibetan Buddhism."
+      "rationaleAI": "Mahayana as the largest Buddhist branch with its bodhisattva ideal, Prajnaparamita, Madhyamaka, Yogacara, and Buddha-nature doctrines directly addresses the Mahayana version (C.2.b). Its spread to China (A.4) and East Asia (A.5) are covered in the historical sections."
     },
     {
       "articleTitle": "Theravada",
       "relevantPathsAI": [
-        "A.3",
         "A.7",
-        "C.2.a",
-        "C.3.b",
-        "C.3.d"
+        "C.2.a"
       ],
-      "rationaleAI": "Directly covers the Theravada school (C.2.a), including Pali Tipitaka canon, Abhidhamma philosophy, Vinaya monastic discipline, cosmology, soteriology, and regional distribution in Sri Lanka and Southeast Asia (A.7). Addresses individual ancient school characteristics (C.2.a.iv) and regional variations in practice (C.3.d)."
+      "rationaleAI": "Theravada as Buddhism's oldest school with Pali Tipitaka, Abhidhamma philosophy, vipassana meditation, and forest tradition directly addresses the Theravada school (C.2.a). Its dominance in Sri Lanka and Southeast Asia connects to Buddhism in Ceylon and Southeast Asia (A.7)."
     },
     {
       "articleTitle": "The Buddha",
       "relevantPathsAI": [
         "A.2",
         "C.1",
-        "C.1.a",
-        "C.1.b",
-        "C.1.c",
-        "C.1.d"
+        "C.2.a.iii"
       ],
-      "rationaleAI": "Directly covers outline path A.2 — the founding of Buddhism, life, work, and teachings of Siddhartha Gautama — including the Four Noble Truths, Eightfold Path, dependent origination, anatta, and establishment of the sangha. Also grounds C.1 traditional beliefs by presenting the core doctrines from the founder's teaching."
+      "rationaleAI": "Siddhartha Gautama's attainment of enlightenment, the Four Noble Truths, Noble Eightfold Path, and establishment of the monastic sangha directly address the founding of Buddhism (A.2). His teachings constitute traditional beliefs and doctrines (C.1). Doctrines concerning Buddha and Buddhahood are in C.2.a.iii."
     },
     {
       "articleTitle": "Hinduism",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Covers the Hindu religious traditions that formed the cultural matrix and background from which Buddhism emerged (A.1), including karma, samsara, dharma, and the Vedic philosophical traditions that Buddhism engaged with and reacted against."
+      "rationaleAI": "Hinduism as the cultural context and background from which Buddhism emerged, sharing concepts of dharma, karma, samsara, and moksha, directly addresses the cultural context and its background in Hinduism (A.1)."
     },
     {
       "articleTitle": "Indus Valley Civilisation",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "Provides context for the pre-Buddhist religious and cultural landscape of the Indian subcontinent (A.1), covering the geographical and ethnic base of the region in which Buddhism originated, though its overlap is moderate and indirect."
+      "rationaleAI": "The Indus Valley Civilisation as part of the broader South Asian cultural context from which Buddhism emerged relates to the geographic and cultural base of Buddhism (A.1)."
     },
     {
       "articleTitle": "Silk Road",
       "relevantPathsAI": [
-        "A.4",
-        "A.7"
+        "A.4"
       ],
-      "rationaleAI": "Documents the transmission of Buddhism from India through Central Asia and into China (A.4) and Southeast Asia (A.7) via Silk Road trade and pilgrimage networks, covering the multicultural facilitation by Sogdians and the Tang-era role in Buddhist diffusion."
+      "rationaleAI": "The Silk Road's transmission of Buddhism across Central Asia and into China directly addresses Buddhism in Central Asia and China (A.4)."
     },
     {
       "articleTitle": "Tang dynasty",
       "relevantPathsAI": [
-        "A.4"
+        "A.4",
+        "A.5"
       ],
-      "rationaleAI": "Covers Buddhism's flourishing in Tang China as part of the Confucian-Buddhist-Daoist synthesis (A.4), including state patronage of Buddhism, Buddhist transmission to Korea and Japan, and the high point of Chinese Buddhist culture before later dynasties' restrictions."
+      "rationaleAI": "The Tang dynasty's Confucian-Buddhist-Daoist religious synthesis and Buddhist transmission to East Asia connect to Buddhism in China (A.4) and Buddhism in Korea and Japan (A.5)."
     },
     {
       "articleTitle": "East Asia",
@@ -93,123 +71,117 @@
         "A.4",
         "A.5"
       ],
-      "rationaleAI": "Provides broad regional context for Buddhism in China, Korea, and Japan (A.4–A.5), covering how Chinese civilizational dominance shaped Buddhist transmission and adaptation across the Sinosphere."
+      "rationaleAI": "East Asia as the region where Buddhism spread to China, Korea, and Japan addresses Buddhism in Central Asia and China (A.4) and Buddhism in Korea and Japan (A.5)."
     },
     {
       "articleTitle": "Thailand",
       "relevantPathsAI": [
-        "A.7",
-        "C.3.d"
+        "A.7"
       ],
-      "rationaleAI": "Thailand is the major Theravada Buddhist nation in mainland Southeast Asia, directly covering Buddhism in the region to the mid-19th century (A.7) and regional variation in Buddhist practices and institutions (C.3.d)."
+      "rationaleAI": "Thailand as a predominantly Theravada Buddhist nation directly relates to Buddhism in Southeast Asia (A.7)."
     },
     {
       "articleTitle": "Myanmar",
       "relevantPathsAI": [
-        "A.7",
-        "C.3.d"
+        "A.7"
       ],
-      "rationaleAI": "Myanmar is predominantly Theravada Buddhist and a key case for Buddhism in Southeast Asia (A.7), including the Pagan-period flowering of Burmese Buddhism and distinctive regional practices and institutions (C.3.d)."
+      "rationaleAI": "Myanmar as a predominantly Theravada Buddhist nation directly relates to Buddhism in Southeast Asia (A.7)."
     },
     {
       "articleTitle": "Himalayas",
       "relevantPathsAI": [
         "A.6"
       ],
-      "rationaleAI": "Covers the Himalayan region — Nepal, Bhutan, Tibet — central to A.6 (Buddhism in Tibet and the Himalayan kingdoms), including sacred sites, pilgrimage, and the cultural-religious significance of the mountains to Tibetan Buddhist civilization."
+      "rationaleAI": "The Himalayas with their Buddhist sacred sites and Tibetan cultural connections directly relate to Buddhism in Tibet and the Himalayan kingdoms (A.6)."
     },
     {
       "articleTitle": "Eastern philosophy",
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Covers Buddhist philosophy as part of the broader Eastern philosophical tradition (B.3), including Buddhist contributions to metaphysics, epistemology, ethics, and the nature of mind alongside Confucian and Hindu philosophical streams."
+      "rationaleAI": "Eastern philosophy's Buddhist philosophical traditions including Zen and Indian logic connect to Buddhist philosophy (B.3)."
     },
     {
       "articleTitle": "Soul",
       "relevantPathsAI": [
-        "C.1.a",
-        "C.1.c"
+        "C.1.a"
       ],
-      "rationaleAI": "Directly addresses the Buddhist doctrine of anatman (non-self) in comparative perspective (C.1.a — views of the nature of reality including the absence of self), and the goal of nirvana as distinguished from soul-immortality conceptions in other traditions (C.1.c)."
+      "rationaleAI": "Buddhist doctrine's rejection of a permanent self (anatman) while accepting continuity in rebirth directly addresses views of the nature of reality, specifically the absence of self (C.1.a)."
     },
     {
       "articleTitle": "Afterlife",
       "relevantPathsAI": [
-        "C.1.a",
-        "C.1.c",
-        "C.1.e"
+        "C.1.c"
       ],
-      "rationaleAI": "Covers Buddhist conceptions of rebirth, samsara, and nirvana (C.1.a, C.1.c) alongside comparison with Hindu, Abrahamic, and other afterlife doctrines; also touches on the role of heavenly realms and gods in Buddhist cosmology (C.1.e)."
+      "rationaleAI": "Buddhist conceptions of nirvana and rebirth cycles relate to the goal of the Eightfold Path: Nirvana (C.1.c)."
     },
     {
       "articleTitle": "Meditation",
       "relevantPathsAI": [
         "B.4",
-        "C.2.a",
-        "C.3.a"
+        "C.2.a.ii"
       ],
-      "rationaleAI": "Meditation is central to Buddhist practice across all schools; covers samatha and vipassana in the Theravada context (C.2.a.ii — stages leading to arhatship and levels of meditation), Buddhist mysticism (B.4), and universal ethical/religious practices including meditation (C.3.a)."
+      "rationaleAI": "Meditation techniques including samatha and vipassana directly address Buddhist mysticism (B.4) and the emphasis on self-cultivation through levels of meditation (C.2.a.ii)."
     },
     {
       "articleTitle": "Ritual",
       "relevantPathsAI": [
-        "C.3.a",
+        "C.3",
         "C.3.c"
       ],
-      "rationaleAI": "Covers formalized religious practices, rites of passage, and ceremonial structures (C.3.c — ceremonies and festivals, passage rites) directly applicable to Buddhist ritual life; also addresses universal religious practices (C.3.a) across traditions including Buddhism."
+      "rationaleAI": "Ritual types including rites of passage and calendrical rites connect to Buddhist practices and institutions (C.3) and ceremonies and festivals (C.3.c)."
     },
     {
       "articleTitle": "Spirituality",
       "relevantPathsAI": [
         "B.4"
       ],
-      "rationaleAI": "Buddhist mysticism and contemplative spirituality (B.4) is a major dimension of this article, which covers meditation, mindfulness, and transcendent practices across traditions including Buddhist-derived mindfulness and Zen spirituality."
+      "rationaleAI": "Spirituality as engagement with transcendent meaning, including mindfulness and soteriological transformation, connects to Buddhist mysticism (B.4)."
     },
     {
       "articleTitle": "Festival",
       "relevantPathsAI": [
         "C.3.c"
       ],
-      "rationaleAI": "Festivals are a primary vehicle for Buddhist communal practice (C.3.c — ceremonies and festivals, the religious year, popular traditions), and this article's coverage of religious festival typology and function provides relevant context for Buddhist ceremonial life."
+      "rationaleAI": "Festivals rooted in religious observance connect to Buddhist ceremonies and festivals, the religious year, and popular traditions (C.3.c)."
     },
     {
       "articleTitle": "Art",
       "relevantPathsAI": [
         "C.4"
       ],
-      "rationaleAI": "The broad 'Art' article addresses religious art and iconography across traditions (C.4 — the religious and cultural role of Buddhist art), providing conceptual framing for understanding art as a vehicle of religious expression applicable to Buddhist contexts."
+      "rationaleAI": "Art's cultural and religious functions broadly connect to the religious and cultural role of Buddhist art (C.4)."
     },
     {
       "articleTitle": "Visual arts",
       "relevantPathsAI": [
-        "C.4",
+        "C.4.a",
         "C.4.b"
       ],
-      "rationaleAI": "Covers painting, sculpture, and decorative arts in Asian Buddhist traditions as part of its global survey (C.4.b — religious expression in the arts), including Buddhist temple art and East Asian painting traditions shaped by Buddhist iconography."
+      "rationaleAI": "Visual arts including sculpture and painting relate to Buddhist symbolism and iconography (C.4.a) and religious expression in the arts (C.4.b)."
     },
     {
       "articleTitle": "Painting",
       "relevantPathsAI": [
         "C.4.b"
       ],
-      "rationaleAI": "Buddhist religious painting — thangkas, cave murals (Ajanta, Dunhuang), and East Asian Buddhist iconographic painting — falls within C.4.b (religious expression in the arts), and this article covers painting's historical role in religious iconography across Asian traditions."
+      "rationaleAI": "Painting spanning East Asian traditions with religious iconography connects to religious expression in the arts of Buddhism (C.4.b)."
     },
     {
       "articleTitle": "Gupta Empire",
       "relevantPathsAI": [
         "A.3"
       ],
-      "rationaleAI": "The Gupta period (c. 4th–6th century CE) falls within Buddhism's Indian development phase (A.3, 6th century BC–12th century AD), a period when Nalanda and other major Buddhist institutions flourished alongside Hindu patronage; the article addresses the religious plurality of this era."
+      "rationaleAI": "The Gupta Empire's religious tolerance and patronage during a period of Hindu-Buddhist coexistence connect to developments in India during the mid-1st millennium CE (A.3)."
     },
     {
       "articleTitle": "Bhagavad Gita",
       "relevantPathsAI": [
         "A.1"
       ],
-      "rationaleAI": "The Bhagavad Gita represents the Hindu philosophical tradition — Vedantic synthesis, karma yoga, and dharmic ethics — that formed the immediate cultural context from which Buddhism emerged and against which it defined itself (A.1 — background in Hinduism)."
+      "rationaleAI": "The Bhagavad Gita as a Hindu scripture synthesizing dharma and karma provides background on the Hindu context from which Buddhism emerged (A.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }

@@ -4,18 +4,16 @@
     {
       "articleTitle": "Tang dynasty",
       "relevantPathsAI": [
-        "D.2.c",
-        "D.2"
+        "D.2.c"
       ],
-      "rationaleAI": "Covers the founding of the Tang dynasty by the Li family, the period of Tang power under Taizong (626–649), and the An Lushan rebellion (755), which marks the precise end-point of section 931. Administrative, cultural, and military developments under the early Tang map directly to D.2.c, D.2.i, and D.2.i.ii."
+      "rationaleAI": "The Tang dynasty founding by the Li family, early Tang administration, fiscal and legal systems, T'ai Tsung's reforms, conquest of eastern Turks, and Empress Wu's influence all directly address the early T'ang period (D.2.c). The An Lushan rebellion (755) marks the endpoint of this section."
     },
     {
       "articleTitle": "Silk Road",
       "relevantPathsAI": [
-        "C.2.i",
-        "C.2.i"
+        "C.2.c.ii"
       ],
-      "rationaleAI": "The Silk Road was established during Han expansion into Central Asia under Wu Ti, directly relevant to C.2.i.ii (expansion into Central Asia), and supported Han cultural life including trade and foreign contacts at C.2.i.iii."
+      "rationaleAI": "The Silk Road's Han dynasty origins and its role facilitating trade between China and Central Asia correspond to Han foreign relations and Pan Ch'ao's campaigns in Central Asia (C.2.c.ii)."
     },
     {
       "articleTitle": "Qin Shi Huang",
@@ -24,32 +22,32 @@
         "C.1.a",
         "C.1.b"
       ],
-      "rationaleAI": "Covers the unification of the Warring States by the Ch'in in 221 BC, the abolition of feudalism, the Great Wall's construction, Legalist governance under Li Ssu, and the fall of the dynasty — the precise content of C.1, C.1.a, and C.1.b."
+      "rationaleAI": "Qin Shi Huang's unification of the Warring States, founding of the Ch'in dynasty, abolition of feudalism, Legalist governance, Great Wall construction, highway building, and standardization reforms directly address the establishment of the Ch'in empire (C.1), early Ch'in successes (C.1.a), and Ch'in strategy and unification (C.1.b)."
     },
     {
       "articleTitle": "Han dynasty",
       "relevantPathsAI": [
         "C.2",
-        "C.2.i",
+        "C.2.a",
         "C.2.b",
         "C.2.c"
       ],
-      "rationaleAI": "Comprehensively covers the entire Han dynasty arc: Western Han establishment by Liu Pang, expansion under Wu Ti into Central Asia, the Wang Mang usurpation, Eastern Han restoration, and cultural attainments including papermaking and introduction of Buddhism — mapping to all sub-paths of C.2."
+      "rationaleAI": "The Han dynasty article covers the Western Han founding by Liu Pang, Wang Mang usurpation (C.2.a), Eastern Han restoration (C.2.b), Confucian ideology, Xiongnu campaigns and Central Asian expansion, Silk Road establishment, and technological innovations including papermaking (C.2.c)."
     },
     {
       "articleTitle": "Ancient history",
       "relevantPathsAI": [
-        "B",
-        "C"
+        "A",
+        "B"
       ],
-      "rationaleAI": "Provides broad coverage of East Asian ancient history within its global survey of writing-era civilizations, encompassing Chinese Bronze Age states and classical dynasties that correspond to sections B and C of the outline."
+      "rationaleAI": "Covers East Asia (China) in the ancient period including Bronze and Iron Age developments, providing broad context for Chinese civilization's character (A) and the emergence of traditional Chinese civilization (B)."
     },
     {
       "articleTitle": "Post-classical history",
       "relevantPathsAI": [
         "D"
       ],
-      "rationaleAI": "Covers the post-classical period from 500 CE onward including the Tang dynasty's role in Silk Road trade, Buddhist transmission, and the Six Dynasties transition — relevant to the D paths on the breakdown and revival of the Chinese empire."
+      "rationaleAI": "The post-classical period (c. 500-1450) overlaps with the Six Dynasties period, Sui reunification, and early Tang era, covering the breakdown and revival of the empire (D) including the spread of Buddhism and Tang dynasty China."
     },
     {
       "articleTitle": "China",
@@ -59,22 +57,21 @@
         "C",
         "D"
       ],
-      "rationaleAI": "The general China article spans all periods covered by section 931 — from Paleolithic habitation and Yellow River dynastic states through the Qin, Han, and Tang — providing broad coverage relevant to the section's overview node A and all major dynastic phases."
+      "rationaleAI": "A comprehensive country overview spanning Paleolithic habitation through dynastic rule including Qin, Han, and Tang, providing broad coverage of Chinese civilization's character (A), its emergence (B), unification under Ch'in and Han (C), and breakdown and revival (D)."
     },
     {
       "articleTitle": "Confucius",
       "relevantPathsAI": [
         "B.2.e"
       ],
-      "rationaleAI": "Confucius lived in the Spring and Autumn period (c. 551–479 BC) and his teachings are the centerpiece of the 'Classical period of Chinese literature and philosophy' at B.2.e, which explicitly names Confucianism as one of the 'hundred schools.'"
+      "rationaleAI": "Confucius's teachings on personal morality, filial piety, and governmental virtue during the Spring and Autumn period directly address the classical period of Chinese literature and philosophy, specifically Confucianism as one of the 'hundred schools' (B.2.e)."
     },
     {
       "articleTitle": "Laozi",
       "relevantPathsAI": [
-        "B.2.e",
-        "D.1.b"
+        "B.2.e"
       ],
-      "rationaleAI": "Laozi is the founding figure of Taoism, named in B.2.e as part of the Classical philosophical period alongside Confucianism; Taoist resurgence during the Six Dynasties period maps to D.1.b."
+      "rationaleAI": "Laozi as the legendary founder of Taoism and the Tao Te Ching's articulation of the Dao and wu wei directly address Taoism within the classical period of Chinese philosophy (B.2.e)."
     },
     {
       "articleTitle": "Taoism",
@@ -82,14 +79,14 @@
         "B.2.e",
         "D.1.b"
       ],
-      "rationaleAI": "Taoism is explicitly included in B.2.e as one of the Classical Chinese philosophical and religious traditions (Chuang-tzu, the Naturalists), and its resurgence during the Six Dynasties period of intellectual change is the subject of D.1.b."
+      "rationaleAI": "Taoism's philosophical foundations in the Tao Te Ching and Zhuangzi relate to the classical period of Chinese philosophy (B.2.e), while Taoist resurgence during the Six Dynasties period is covered under intellectual and religious trends after the Han collapse (D.1.b)."
     },
     {
       "articleTitle": "Eastern philosophy",
       "relevantPathsAI": [
         "B.2.e"
       ],
-      "rationaleAI": "Covers Confucianism, Taoism, Legalism, and Mohism — all named in B.2.e as the 'hundred schools' of Classical Chinese philosophy — and places them within the Warring States intellectual context."
+      "rationaleAI": "Coverage of Confucianism, Taoism, Legalism, and Mohism from China directly relates to the classical period of Chinese literature and philosophy and the 'hundred schools' (B.2.e)."
     },
     {
       "articleTitle": "Stone Age",
@@ -98,22 +95,22 @@
         "B.1.a",
         "B.1.b"
       ],
-      "rationaleAI": "Covers the Paleolithic, Mesolithic, and Neolithic periods globally including in East Asia, mapping to B.1.a (Paleolithic and Mesolithic stages in North China, Ordos industries) and B.1.b (Neolithic pebble tools and domesticated animals)."
+      "rationaleAI": "The Paleolithic and Mesolithic stages in North China and Neolithic developments correspond to the prehistoric period of Chinese civilization (B.1), including Paleolithic industries (B.1.a) and Neolithic domestication (B.1.b)."
     },
     {
       "articleTitle": "Bronze Age",
       "relevantPathsAI": [
-        "B.1.d"
+        "B.1.d",
+        "B.2.b"
       ],
-      "rationaleAI": "B.1.d specifically references the Early Bronze Age in North China and bronze objects in the Ordos region as part of the Late Neolithic/Lung-shan complex; the Bronze Age article covers the East Asian regional Bronze Age chronology."
+      "rationaleAI": "Bronze Age developments in East Asia, including early bronze objects in the Ordos region (B.1.d) and the Shang period bronze culture at Anyang (B.2.b), are directly relevant."
     },
     {
       "articleTitle": "Iron Age",
       "relevantPathsAI": [
-        "B.2.d",
-        "B.2"
+        "B.2.d.ii"
       ],
-      "rationaleAI": "The Iron Age spread into East Asia during the Eastern Chou and Warring States period, directly relevant to B.2.d and B.2.i.ii covering urbanization, economic development, and material culture change in that era."
+      "rationaleAI": "The spread of iron technology in East Asia during the Warring States period contributed to social, political, and economic changes including decline of feudalism, urbanization, and economic development (B.2.d.ii)."
     },
     {
       "articleTitle": "History of Asia",
@@ -123,17 +120,16 @@
         "C",
         "D"
       ],
-      "rationaleAI": "Explicitly traces Chinese history from Bronze Age Zhou and Qin through the Han and Tang dynasties, covering the same geographic and chronological scope as the full section 931 outline including overview context for A."
+      "rationaleAI": "Asian history's coverage of Chinese classical dynasties (Zhou, Qin, Han) and the Silk Road provides broad context across the character of Chinese civilization (A), its emergence (B), Ch'in and Han unification (C), and breakdown and revival through the Tang (D)."
     },
     {
       "articleTitle": "Human history",
       "relevantPathsAI": [
-        "B",
-        "C"
+        "A"
       ],
-      "rationaleAI": "Survey of human development explicitly covers early Chinese civilizations and the Tang/Song dynasties among Axial Age transitions, providing broad background coverage for sections B and C on the emergence and unification of Chinese civilization."
+      "rationaleAI": "General survey touching on Chinese civilization among early civilizations and Axial Age philosophical systems, providing broad context for the character and achievements of Chinese civilization (A)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-16"
+  "_generatedAt": "2026-03-23"
 }
