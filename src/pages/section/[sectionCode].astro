@@ -161,23 +161,23 @@ const {
           );
         })()}
 
-        <!-- Wikipedia Article Recommendations -->
-        {wikiArticlesForSection.length > 0 && (
-          <section data-reading-type="wikipedia">
-            <WikipediaRefs
+        {iotEpisodesForSection.length > 0 && (
+          <section data-reading-type="iot">
+            <IotRecommendations
               client:load
-              articles={wikiArticlesForSection}
+              episodes={iotEpisodesForSection}
               sectionCode={section.sectionCode}
               baseUrl={base}
             />
           </section>
         )}
 
-        {iotEpisodesForSection.length > 0 && (
-          <section data-reading-type="iot">
-            <IotRecommendations
+        <!-- Wikipedia Article Recommendations -->
+        {wikiArticlesForSection.length > 0 && (
+          <section data-reading-type="wikipedia">
+            <WikipediaRefs
               client:load
-              episodes={iotEpisodesForSection}
+              articles={wikiArticlesForSection}
               sectionCode={section.sectionCode}
               baseUrl={base}
             />

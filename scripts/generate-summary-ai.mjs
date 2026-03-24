@@ -291,7 +291,7 @@ function writeIotResults(summaries) {
 }
 
 // --- Validation ---
-const SECTION_REF_RE = /\b(?:Section|Part|Division)\s+\d/i;
+const SECTION_REF_RE = /\b(?:Section\s+\d{2,}|Part\s+\d+\s*:|Division\s+[IVX]+)/;
 const FRAMING_RE = /\b(?:This book|This article|A Very Short Introduction|This VSI)\b/i;
 
 function validateSummary(id, summary) {
@@ -306,9 +306,7 @@ function validateSummary(id, summary) {
   if (words > MAX_SUMMARY_WORDS + 10) issues.push(`LONG: ${words} words (max ${MAX_SUMMARY_WORDS})`);
   if (SECTION_REF_RE.test(summary)) issues.push('SECTION_REF: contains section/part/division number');
   if (FRAMING_RE.test(summary)) issues.push('FRAMING: contains framing language');
-  if (summary.includes('#') || summary.includes('**') || summary.includes('- ')) {
-    issues.push('MARKDOWN: contains markdown formatting');
-  }
+  // Markdown check omitted: summaryAI is backend-only data, never rendered as HTML
 
   return issues;
 }

@@ -34,6 +34,25 @@ const CATALOG_PATH = 'src/data/iot-catalog.json';
 const USER_AGENT = 'Mozilla/5.0 (compatible; OxfordPropaedia/1.0)';
 const DELAY_MS = 1200; // Rate limit: ~1 req/sec
 const EPISODES_PER_PAGE = 10;
+const MANUAL_EPISODE_OVERRIDES = {
+  b018wfsc: {
+    title: 'The Written World: Episode 1',
+  },
+  b018wy46: {
+    title: 'The Written World: Episode 2',
+  },
+  b018xsmd: {
+    title: 'The Written World: Episode 3',
+  },
+  b018xw60: {
+    title: 'The Written World: Literature',
+  },
+  b018xy22: {
+    title: 'The Written World: Episode 5',
+    description:
+      'Melvyn Bragg concludes his survey of the written word by considering how the invention of writing made the scientific revolution of the Enlightenment possible and examines influential documents, including the student notebooks of Sir Isaac Newton.',
+  },
+};
 
 // --- CLI flags ---
 const args = process.argv.slice(2);
@@ -88,7 +107,7 @@ function parseListingPage(html) {
     episodes.push({
       pid: pids[i],
       title: titles[i] || '',
-      synopsis: synopses[i] || '',
+      synopsis: cleanEpisodeText(synopses[i] || ''),
       url: `${BASE_URL}/${pids[i]}`,
     });
   }
@@ -135,7 +154,7 @@ function parseEpisodePage(html) {
 
         return {
           datePublished: data.datePublished || null,
-          description: longDescription || data.description || null,
+          description: cleanEpisodeText(longDescription || data.description || null),
           durationSeconds,
         };
       }
@@ -165,6 +184,30 @@ function decodeEntities(str) {
     .replace(/&lsquo;/g, '\u2018')
     .replace(/&ndash;/g, '\u2013')
     .replace(/&mdash;/g, '\u2014');
+}
+
+function cleanEpisodeText(text) {
+  if (!text) return text;
+  return text
+    .replace(/\s*([.?!])\s*With:\s*[\s\S]*$/i, '$1')
+    .replace(/\s*With:\s*[\s\S]*$/i, '')
+    .replace(/\s*(Producer|Produced by):\s*[^.]+\.?\s*$/i, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function applyManualEpisodeOverrides(episode) {
+  const override = MANUAL_EPISODE_OVERRIDES[episode.pid];
+  if (!override) return episode;
+
+  if (override.title) {
+    episode.title = override.title;
+  }
+  if (override.description) {
+    episode.description = override.description;
+    episode.synopsis = override.description;
+  }
+  return episode;
 }
 
 // --- Load/save catalog ---
@@ -217,6 +260,7 @@ async function scrapeListings() {
       let newOnPage = 0;
 
       for (const ep of episodes) {
+        applyManualEpisodeOverrides(ep);
         if (!existingPids.has(ep.pid)) {
           catalog.episodes.push({
             pid: ep.pid,
@@ -287,6 +331,9 @@ async function enrichEpisodes() {
         ep.description = data.description;
         ep.synopsis = data.description;
       }
+      ep.synopsis = cleanEpisodeText(ep.synopsis);
+      ep.description = cleanEpisodeText(ep.description);
+      applyManualEpisodeOverrides(ep);
       ep._enriched = true;
       enriched++;
       console.log(`OK (${ep.datePublished || '?'}, ${ep.durationSeconds ? Math.round(ep.durationSeconds / 60) + 'min' : '?'})`);
