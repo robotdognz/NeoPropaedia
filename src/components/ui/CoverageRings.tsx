@@ -19,10 +19,10 @@ export default function CoverageRings({
   onSelectRing,
 }: CoverageRingsProps) {
   const center = size / 2;
-  const gap = 2;
+  const gap = 3;
   const activeRingWidthBoost = 2;
-  const ringSlotWidth = ringWidth + activeRingWidthBoost;
   const outerEdgeInset = 1;
+  const geometryTransition = 'r 180ms ease, stroke-width 180ms ease, stroke 180ms ease, stroke-opacity 180ms ease';
   const [animated, setAnimated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -46,9 +46,17 @@ export default function CoverageRings({
   const ringWidths = rings.map((ring) =>
     ring.label === activeRingLabel ? ringWidth + activeRingWidthBoost : ringWidth
   );
-  const radii = rings.map(
-    (_, index) => center - outerEdgeInset - ringSlotWidth / 2 - index * (ringSlotWidth + gap)
-  );
+  const radii: number[] = [];
+  rings.forEach((_, index) => {
+    if (index === 0) {
+      radii.push(center - outerEdgeInset - ringWidths[index] / 2);
+      return;
+    }
+
+    radii.push(
+      radii[index - 1] - ringWidths[index - 1] / 2 - gap - ringWidths[index] / 2
+    );
+  });
 
   function ringLabelForPointer(clientX: number, clientY: number): string | null {
     const svg = ref.current?.querySelector('svg');
@@ -103,9 +111,7 @@ export default function CoverageRings({
         {rings.map((ring, i) => {
           const radius = radii[i];
           const width = ringWidths[i];
-          const circumference = 2 * Math.PI * radius;
           const fraction = ring.total > 0 ? ring.count / ring.total : 0;
-          const dashLength = fraction * circumference;
           const isActive = ring.label === activeRingLabel;
 
           return (
@@ -117,21 +123,25 @@ export default function CoverageRings({
                 stroke={isActive ? '#cbd5e1' : '#e2e8f0'}
                 stroke-opacity={isActive ? '0.78' : '0.72'}
                 stroke-width={width}
+                style={{
+                  transition: geometryTransition,
+                }}
               />
               {/* Animated arc */}
               <circle
                 cx={center} cy={center} r={radius}
                 fill="none"
+                pathLength={1}
                 stroke={ring.color}
                 stroke-opacity={isActive ? '1' : '0.82'}
                 stroke-width={width}
                 stroke-linecap="round"
-                stroke-dasharray={`${circumference} ${circumference}`}
-                stroke-dashoffset={animated ? circumference - dashLength : circumference}
+                stroke-dasharray="1 1"
+                stroke-dashoffset={animated ? 1 - fraction : 1}
                 style={{
                   transform: 'rotate(-90deg)',
                   transformOrigin: `${center}px ${center}px`,
-                  transition: 'stroke-dashoffset 0.8s ease-out',
+                  transition: `stroke-dashoffset 0.8s ease-out, ${geometryTransition}`,
                 }}
               />
             </g>
