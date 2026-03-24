@@ -2,183 +2,144 @@
   "sectionCode": "626",
   "mappings": [
     {
-      "episodeTitle": "Architecture in the 20th Century",
-      "pid": "p00545fm",
-      "relevantPathsAI": [
-        "A",
-        "A.2",
-        "A.5",
-        "A.7.a"
-      ],
-      "rationaleAI": "Directly addresses 20th-century architectural movements (Art Nouveau, Bauhaus, International Style, Brutalism, Postmodernism), new building materials like reinforced concrete and steel, and building types including the skyscraper, making it central to the history of Western architecture."
-    },
-    {
       "episodeTitle": "Vitruvius and De Architectura",
       "pid": "b01d2kzx",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.5.a",
-        "A.5.b",
-        "A.7.a"
-      ],
-      "rationaleAI": "Vitruvius's De Architectura covers elements of architectural design (firmitas, utilitas, venustas), building materials, temple and domestic architecture, and is foundational to the history of Western architecture from Rome through the Renaissance."
+      "relevantPathsAI": ["A.1", "A.2", "A.2.a", "A.2.b", "A.5.b", "A.7.a"],
+      "rationaleAI": "Vitruvius's De Architectura codifies foundational principles of architecture — firmitas, utilitas, and venustas — covering building materials, temple design, and constructional systems across ten volumes. Its rediscovery in 1414 directly shaped Renaissance architecture through Alberti, Brunelleschi, and Palladio, making it central to Western architectural history."
     },
     {
       "episodeTitle": "Architecture and Power",
       "pid": "p00548k0",
-      "relevantPathsAI": [
-        "A.5",
-        "A.5.b",
-        "A.5.c",
-        "A.7.a",
-        "A.7.b"
-      ],
-      "rationaleAI": "Examines architecture's relationship to political power across history, including pyramids, Gothic cathedrals, Baroque palaces, and 20th-century state architecture, covering governmental, religious, and commemorative building types."
+      "relevantPathsAI": ["A", "A.5", "A.5.b", "A.5.c", "A.5.h", "A.7"],
+      "rationaleAI": "Directly examines how architecture serves as a symbol of wealth, status, and power across history, from pyramids and castles to cathedrals and modern commercial towers. Covers diverse building types — religious, governmental, military, and commercial — and the relationship between built form and political expression."
     },
     {
-      "episodeTitle": "Angkor Wat",
-      "pid": "m0018hd7",
-      "relevantPathsAI": [
-        "A.2.b",
-        "A.5.b",
-        "A.7.b"
-      ],
-      "rationaleAI": "Angkor Wat exemplifies non-Western religious architecture with sophisticated constructional systems, bas-relief ornamentation, and water management engineering, representing Khmer architectural achievement."
-    },
-    {
-      "episodeTitle": "Megaliths",
-      "pid": "m001jkzg",
-      "relevantPathsAI": [
-        "A.2.a",
-        "A.6"
-      ],
-      "rationaleAI": "Megalithic monuments represent primitive and folk architecture using stone construction, with Stonehenge, Avebury, and Carnac demonstrating early building techniques and social organisation for monumental construction."
-    },
-    {
-      "episodeTitle": "The Grand Tour",
-      "pid": "p00548fs",
-      "relevantPathsAI": [
-        "A.7.a",
-        "B"
-      ],
-      "rationaleAI": "The Grand Tour's influence on British Palladianism and garden design directly shaped 18th-century Western architectural and landscape design traditions."
-    },
-    {
-      "episodeTitle": "The Great Exhibition of 1851",
-      "pid": "p003c19x",
-      "relevantPathsAI": [
-        "A.2.a",
-        "A.2.b",
-        "A.5.f",
-        "A.7.a"
-      ],
-      "rationaleAI": "Joseph Paxton's Crystal Palace pioneered revolutionary iron-and-glass architecture and influenced design reform, representing a landmark in 19th-century Western architectural history and commercial/exhibition architecture."
-    },
-    {
-      "episodeTitle": "The Great Wall of China",
-      "pid": "b00s3h3w",
-      "relevantPathsAI": [
-        "A.5.h",
-        "A.7.b"
-      ],
-      "rationaleAI": "The Great Wall of China is a monumental example of military architecture across multiple dynasties, directly relevant to military fortification and non-Western architectural history."
-    },
-    {
-      "episodeTitle": "The City - a history, part 2",
-      "pid": "b00rp1fd",
-      "relevantPathsAI": [
-        "A.7.a",
-        "B",
-        "A.5"
-      ],
-      "rationaleAI": "Covers urban planning from Haussmann's Paris to modernist visions and the garden city movement, directly addressing the history of Western architecture and urban/landscape design."
-    },
-    {
-      "episodeTitle": "The Vienna Secession",
-      "pid": "m002d1b5",
-      "relevantPathsAI": [
-        "A.4",
-        "A.7.a"
-      ],
-      "rationaleAI": "The Vienna Secession Building by Joseph Maria Olbrich represents Art Nouveau/Jugendstil architectural ornamentation and design, connecting decorative arts to modernist architecture."
-    },
-    {
-      "episodeTitle": "Bauhaus",
-      "pid": "m001dxtg",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.5",
-        "A.7.a"
-      ],
-      "rationaleAI": "The Bauhaus school integrating fine art with architecture, typography, and furniture design profoundly influenced modernist architecture under Gropius and Mies van der Rohe."
-    },
-    {
-      "episodeTitle": "Byzantium",
-      "pid": "p00547j9",
-      "relevantPathsAI": [
-        "A.2.b",
-        "A.5.b",
-        "A.7.a"
-      ],
-      "rationaleAI": "Byzantine architecture including Hagia Sophia exemplifies the dome constructional system and religious architecture, representing a major chapter in Western architectural history."
-    },
-    {
-      "episodeTitle": "The Mughal Empire",
-      "pid": "p004y27h",
-      "relevantPathsAI": [
-        "A.5.b",
-        "A.7.b"
-      ],
-      "rationaleAI": "Mughal architectural achievements including the Taj Mahal represent major non-Western religious and commemorative architecture."
-    },
-    {
-      "episodeTitle": "The Etruscan Civilisation",
-      "pid": "b0151q7j",
-      "relevantPathsAI": [
-        "A.7.a"
-      ],
-      "rationaleAI": "Etruscan engineering achievements and their influence on Roman architecture (political institutions, construction) connect to early Western architectural history."
-    },
-    {
-      "episodeTitle": "The Roman Arena",
-      "pid": "m002qj85",
-      "relevantPathsAI": [
-        "A.2.b",
-        "A.5.d",
-        "A.7.a"
-      ],
-      "rationaleAI": "The Colosseum's architecture and engineering exemplify Roman constructional systems (arches, vaults) and recreational architecture (amphitheatres)."
-    },
-    {
-      "episodeTitle": "The 12th Century Renaissance",
-      "pid": "b07z6vzq",
-      "relevantPathsAI": [
-        "A.7.a"
-      ],
-      "rationaleAI": "The 12th-century Renaissance's Gothic architectural revolution represents a major development in Western architectural history."
-    },
-    {
-      "episodeTitle": "The Safavid Dynasty",
-      "pid": "b0196tcr",
-      "relevantPathsAI": [
-        "A.7.b"
-      ],
-      "rationaleAI": "Safavid artistic flourishing in architecture, particularly Isfahan under Shah Abbas I, represents significant non-Western architectural achievement."
+      "episodeTitle": "Architecture in the 20th Century",
+      "pid": "p00545fm",
+      "relevantPathsAI": ["A.1", "A.5.d", "A.7.a"],
+      "rationaleAI": "Examines spectacular late 20th-century architecture through Libeskind's Jewish Museum and the proposed V&A Spiral Extension, addressing debates about functional design versus monumental artistic ambition in modern public buildings and recreational/cultural building types."
     },
     {
       "episodeTitle": "Sir John Soane",
       "pid": "m0027jwv",
-      "relevantPathsAI": [
-        "A.1",
-        "A.5.d",
-        "A.7.a"
-      ],
-      "rationaleAI": "Sir John Soane's neoclassical architecture (Bank of England, Dulwich Picture Gallery) with innovative use of light and space represents significant Western architectural achievement and museum/gallery design."
+      "relevantPathsAI": ["A.1", "A.5.c", "A.5.d", "A.7.a"],
+      "rationaleAI": "Soane's neoclassical practice — the Bank of England, Westminster Law Courts, and his Lincoln's Inn Fields museum — exemplifies governmental and institutional architecture. His pioneering manipulation of light and space within stripped classical forms bridges Enlightenment rationalism and Romantic sensibility in British architectural history."
+    },
+    {
+      "episodeTitle": "Bauhaus",
+      "pid": "m001dxtg",
+      "relevantPathsAI": ["A.1", "A.2.b", "A.5.a", "A.7.a"],
+      "rationaleAI": "The Bauhaus under Walter Gropius integrated arts, crafts, and architecture, producing iconic angular white flat-roofed buildings associated with modern living. Its global diaspora from Shanghai to Chicago after Nazi closure profoundly shaped 20th-century architectural design principles and residential architecture."
+    },
+    {
+      "episodeTitle": "Angkor Wat",
+      "pid": "m0018hd7",
+      "relevantPathsAI": ["A.2.a", "A.4", "A.5.b", "A.7.b"],
+      "rationaleAI": "The largest religious structure on Earth, Angkor Wat exemplifies non-Western religious architecture with intricately carved stone surfaces serving Hindu, Buddhist, and Animist traditions over 900 years. Its monumental scale and ornamental program illustrate constructional systems and architectural ornamentation in Southeast Asian building."
+    },
+    {
+      "episodeTitle": "The Building of St Petersburg",
+      "pid": "b00jts6k",
+      "relevantPathsAI": ["A.1", "A.5.c", "A.7.a"],
+      "rationaleAI": "Peter the Great's founding of St Petersburg imported European architects to create grandiose Baroque and Neoclassical architecture as an instrument of cultural transformation and autocratic power. The city's deliberate planning exemplifies the relationship between governmental architecture, urban design, and political ambition."
+    },
+    {
+      "episodeTitle": "John Ruskin",
+      "pid": "p003k9bv",
+      "relevantPathsAI": ["A.4", "A.7.a"],
+      "rationaleAI": "Ruskin's central argument linked architecture to moral and social values, using Gothic cathedral stonework as evidence of superior medieval craftsmanship versus degraded industrial labor. His criticism drove the Gothic Revival and shaped 19th-century architectural theory, connecting architectural ornamentation with broader aesthetic and ethical principles."
+    },
+    {
+      "episodeTitle": "Gothic",
+      "pid": "p0054792",
+      "relevantPathsAI": ["A.4", "A.5.b", "A.5.c", "A.7.a"],
+      "rationaleAI": "The Gothic Revival became the official architectural style of the British Empire, exemplified by the Palace of Westminster. Traces how medieval Gothic aesthetic principles were revived in 18th- and 19th-century architecture, connecting religious and governmental building types with architectural ornamentation and Western architectural history."
+    },
+    {
+      "episodeTitle": "The Fire of London",
+      "pid": "b00ft63q",
+      "relevantPathsAI": ["A.2.a", "A.5.b", "A.5.c", "A.7.a"],
+      "rationaleAI": "The 1666 fire prompted sweeping urban reconstruction under Christopher Wren and Robert Hooke, including St Paul's Cathedral and new building regulations mandating brick and stone. Directly addresses building materials, religious and governmental architecture, and a pivotal moment in Western architectural history."
+    },
+    {
+      "episodeTitle": "The 12th Century Renaissance",
+      "pid": "b07z6vzq",
+      "relevantPathsAI": ["A.2.b", "A.5.b", "A.7.a"],
+      "rationaleAI": "Gothic architecture emerged during the 12th-century renaissance as an engineering and aesthetic revolution in constructional systems, particularly vaulting and structural innovation in cathedral building. This represents a defining chapter in the history of Western religious architecture."
+    },
+    {
+      "episodeTitle": "Zen",
+      "pid": "b04sxv29",
+      "relevantPathsAI": ["A.5.b", "A.7.b", "B"],
+      "rationaleAI": "Zen Buddhism profoundly shaped Japanese temple and monastery architecture and, crucially, garden design — an austere aesthetic discipline central to Zen practice. Directly relevant to both non-Western religious architecture and garden and landscape design."
+    },
+    {
+      "episodeTitle": "The Mughal Empire",
+      "pid": "p004y27h",
+      "relevantPathsAI": ["A.4", "A.5.b", "A.7.b"],
+      "rationaleAI": "The Mughal Empire produced celebrated architecture including the Taj Mahal, representing a sophisticated syncretic Indo-Islamic architectural tradition. Mughal monuments exemplify religious and commemorative architecture with elaborate ornamentation in the non-Western tradition."
+    },
+    {
+      "episodeTitle": "The Vienna Secession",
+      "pid": "m002d1b5",
+      "relevantPathsAI": ["A.4", "A.7.a"],
+      "rationaleAI": "Joseph Maria Olbrich's Secession exhibition hall with its golden dome was an architectural manifesto rejecting historicist tradition, and the movement's erasure of boundaries between fine and applied art catalysed Jugendstil and early modernist architecture across Europe."
+    },
+    {
+      "episodeTitle": "The Fibonacci Sequence",
+      "pid": "b008ct2j",
+      "relevantPathsAI": ["A.1"],
+      "rationaleAI": "The golden ratio's recurrence in classical architecture such as the Parthenon connects mathematical proportion directly to elements of architectural design and principles of composition, illustrating how numerical relationships underpin aesthetic harmony in building."
+    },
+    {
+      "episodeTitle": "Megaliths",
+      "pid": "m001jkzg",
+      "relevantPathsAI": ["A.6"],
+      "rationaleAI": "Megalithic structures — standing stones, stone circles, dolmens, and passage tombs — represent some of the earliest monumental construction by prehistoric peoples, requiring significant communal labor and engineering knowledge. They are primary examples of primitive architecture."
+    },
+    {
+      "episodeTitle": "The Roman Arena",
+      "pid": "m002qj85",
+      "relevantPathsAI": ["A.2.b", "A.5.d", "A.7.a"],
+      "rationaleAI": "Roman arenas operated across the empire for over five hundred years as a distinctive recreational building type, representing major achievements in constructional systems including arched and vaulted arcades. They exemplify how architectural form served specific social and political functions."
+    },
+    {
+      "episodeTitle": "The Jesuits",
+      "pid": "b007731w",
+      "relevantPathsAI": ["A.5.b", "A.5.e", "A.7.a"],
+      "rationaleAI": "The Jesuits were major patrons of Baroque architecture, commissioning churches and over 500 schools and universities across Europe and the colonial world. Their patronage defined a distinctive religious and educational architectural style integral to Western architectural history."
+    },
+    {
+      "episodeTitle": "The City - a history, part 1",
+      "pid": "b00rfhx2",
+      "relevantPathsAI": ["A.5", "A.5.b", "A.5.c", "A.5.e", "A.7.a"],
+      "rationaleAI": "Traces urban architectural development from Mesopotamian settlements through Athenian civic buildings, Roman infrastructure including aqueducts and public buildings, to medieval commercial centers. Covers diverse building types as components of urban design across Western history."
+    },
+    {
+      "episodeTitle": "The City - a history, part 2",
+      "pid": "b00rp1fd",
+      "relevantPathsAI": ["A.5", "A.7.a"],
+      "rationaleAI": "Examines how transportation technology reshaped urban form, contrasting London's chaotic Victorian development with Haussmann's planned redesign of Paris and Cerda's Barcelona. Directly relevant to the history of urban design and the relationship between architectural planning and city infrastructure."
+    },
+    {
+      "episodeTitle": "The Medici",
+      "pid": "b03m7z08",
+      "relevantPathsAI": ["A.5.b", "A.7.a"],
+      "rationaleAI": "Medici patronage of Brunelleschi and Michelangelo transformed Florence into the center of the Italian Renaissance, directly sponsoring some of the most significant religious and civic architecture in Western history including works that redefined Renaissance building."
+    },
+    {
+      "episodeTitle": "The Mamluks",
+      "pid": "b03bfmlh",
+      "relevantPathsAI": ["A.4", "A.5.b", "A.7.b"],
+      "rationaleAI": "The Mamluk Sultanate presided over a flourishing of Islamic architecture in Egypt and Syria, producing distinctive mosques, madrasas, and mausoleums with elaborate decorative programs representing a major chapter in non-Western religious and commemorative architecture."
+    },
+    {
+      "episodeTitle": "Taste",
+      "pid": "b0082dzm",
+      "relevantPathsAI": ["A.1"],
+      "rationaleAI": "The 18th-century philosophical debate over aesthetic judgment — engaging Hume, Burke, and Kant on whether taste was objective or cultivable — directly shaped architectural design standards and principles of composition, influencing how buildings and their ornamentation were conceived and evaluated."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

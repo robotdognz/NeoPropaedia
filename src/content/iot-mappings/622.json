@@ -16,32 +16,40 @@
       "episodeTitle": "Henrik Ibsen",
       "pid": "b0b42q58",
       "relevantPathsAI": [
+        "A.1",
+        "A.2",
         "A.7",
         "B.1.a.i",
+        "B.1.d",
         "B.1.e",
         "D.1"
       ],
-      "rationaleAI": "Ibsen's creation of modern prose drama, his technique of retrospective revelation, and his influence on subsequent playwrights (Shaw, Chekhov, Miller) directly address theatrical production, dramatic forms, and the history of Western theatre."
+      "rationaleAI": "Ibsen revolutionized modern European drama by establishing prose realism in theatre (B.1.e) and creating middle-class tragedies dissecting bourgeois society (B.1.a.i, A.2). His transformative roles for actresses and status as the most performed playwright after Shakespeare mark him as central to Western theatre history (A.7, D.1)."
     },
     {
       "episodeTitle": "Molière",
       "pid": "m002b701",
       "relevantPathsAI": [
+        "A.7",
         "B.1.a.i",
         "B.1.a.ii",
-        "B.1.e",
+        "B.1.b",
+        "B.1.d",
         "D.1"
       ],
-      "rationaleAI": "Moliere's comedies, his blending of commedia dell'arte with literary comedy, and his troupe's relationship with Louis XIV at Versailles address comedy, dramatic improvisation, court theatre, and the history of Western theatre."
+      "rationaleAI": "Molière shaped European comic drama as France's greatest playwright, blending farce and social satire (B.1.a.i) with roots in commedia dell'arte improvisation (B.1.a.ii). His permanent stage under Louis XIV's patronage exemplifies court theatre (B.1.b) and actor-dominated production (B.1.d)."
     },
     {
       "episodeTitle": "Elizabethan Revenge",
       "pid": "b00l16vp",
       "relevantPathsAI": [
+        "A.1",
+        "A.2",
         "B.1.a.i",
+        "B.1.e",
         "D.1"
       ],
-      "rationaleAI": "Elizabethan revenge tragedy from Kyd through Shakespeare and Webster, with its conventions of the ghost, play-within-a-play, and engagement with justice and morality, directly addresses tragedy as a theatrical form and the history of Western theatre."
+      "rationaleAI": "Elizabethan and Jacobean revenge tragedy from Kyd's Spanish Tragedy to Hamlet introduced psychological depth through soliloquy (A.1) and reflected transitions from medieval vengeance to Tudor legal systems, illustrating theatre as social expression (A.2, B.1.a.i, B.1.e)."
     },
     {
       "episodeTitle": "The Tempest",
@@ -58,28 +66,34 @@
       "pid": "p00546s8",
       "relevantPathsAI": [
         "A.1",
-        "B.1.e",
+        "A.7",
+        "B.1.a.i",
         "D.1"
       ],
-      "rationaleAI": "Shakespeare's dramatic output, its adaptability across cultures and periods, and its treatment of fundamental human themes address the nature of theatre as art, national/period styles, and the history of Western theatre."
+      "rationaleAI": "Shakespeare's status as the preeminent playwright and debates over his universality illuminate fundamental questions about the nature of theatre as art (A.1). The role of theatrical tradition and institutional education in sustaining his canonical supremacy addresses acting and dramatic forms (A.7, B.1.a.i, D.1)."
     },
     {
       "episodeTitle": "Romeo and Juliet",
       "pid": "m0014gml",
       "relevantPathsAI": [
+        "A.7",
+        "A.8",
         "B.1.a.i",
         "D.1"
       ],
-      "rationaleAI": "Romeo and Juliet's dramatic structure balancing comedy and tragedy and its enormous afterlife in opera, ballet, film, and musical theater directly address tragedy/tragicomedy and the interrelation of theatre with other arts."
+      "rationaleAI": "Shakespeare's archetypal tragedy combines poetic language with dramatic structure (B.1.a.i), featuring sonnets embedded in dialogue that demonstrate the interrelation of literature and theatre (A.8). Its enduring influence on theatre, opera, and popular culture illustrates dramatic performance's lasting power (A.7, D.1)."
     },
     {
       "episodeTitle": "Lysistrata",
       "pid": "m001y2z4",
       "relevantPathsAI": [
+        "A.2",
+        "A.4",
         "B.1.a.i",
+        "B.1.b",
         "D.1"
       ],
-      "rationaleAI": "Lysistrata as Old Comedy engaging with Athenian gender politics and democratic discourse directly addresses comedy as a theatrical form and the history of Western theatre."
+      "rationaleAI": "Aristophanes' Lysistrata exemplifies ancient Greek comedy as political commentary (A.2, B.1.a.i), with its bawdy humour and serious anti-war themes engaging audiences through the interrelation of performance and audience (A.4). Performed within Athenian civic theatrical culture (B.1.b), it is central to Western theatre history (D.1)."
     },
     {
       "episodeTitle": "The Bacchae",
@@ -101,16 +115,6 @@
       "rationaleAI": "Wagner's concept of Gesamtkunstwerk (total artwork), the Bayreuth Festival Theatre, and his music dramas directly address the integration of other arts in theatre and musical theatre."
     },
     {
-      "episodeTitle": "The Waltz",
-      "pid": "m001x50m",
-      "relevantPathsAI": [
-        "B.1.f.ii",
-        "B.1.g",
-        "D.1"
-      ],
-      "rationaleAI": "The waltz's origins in folk dance and its transformation of social conventions address popular entertainments and folk/popular theatre traditions."
-    },
-    {
       "episodeTitle": "The Baroque Movement",
       "pid": "b00fhp85",
       "relevantPathsAI": [
@@ -118,8 +122,64 @@
         "C.2"
       ],
       "rationaleAI": "The Baroque movement's theatricality, the Catholic Church's use of art for emotional persuasion, and Baroque architecture from St. Peter's to Versailles address the historical development of theatre buildings and staging/stage design."
+    },
+    {
+      "episodeTitle": "Hamlet",
+      "pid": "b09jqtfs",
+      "relevantPathsAI": [
+        "A.4",
+        "A.7",
+        "B.1.a.i",
+        "D.1"
+      ],
+      "rationaleAI": "Shakespeare's Hamlet is a defining work of Western tragedy (B.1.a.i) whose soliloquies pioneered dramatic interiority and psychological complexity in acting (A.7), while the interplay of concealed thought and audience awareness exemplifies the interrelation of theatrical performance and audience (A.4)."
+    },
+    {
+      "episodeTitle": "Comedy in Ancient Greek Theatre",
+      "pid": "p003c1d3",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.4",
+        "B.1.a.i",
+        "B.1.b",
+        "D.1"
+      ],
+      "rationaleAI": "Directly examines the origins of Western comedy in ancient Greek theatre (A.1, D.1), covering Aristophanes' politically satirical works and Menander's innovations in comic form (B.1.a.i). The combination of mass democratic audience appeal with political commentary illustrates theatre's social function (A.2) and civic theatrical tradition (B.1.b)."
+    },
+    {
+      "episodeTitle": "Is Shakespeare History? The Plantagenets",
+      "pid": "m0000nd9",
+      "relevantPathsAI": [
+        "A.2",
+        "A.8",
+        "B.1.a.i",
+        "B.1.e",
+        "D.1"
+      ],
+      "rationaleAI": "Shakespeare's eight Plantagenet history plays illustrate theatre as a vehicle for shaping historical memory and political narrative (A.2), combining dramatic literature with theatrical performance (A.8). The plays' Elizabethan style and use of chronicle sources exemplify period-specific theatrical production (B.1.e, D.1)."
+    },
+    {
+      "episodeTitle": "Marlowe",
+      "pid": "p003k9d6",
+      "relevantPathsAI": [
+        "A.7",
+        "B.1.a.i",
+        "B.1.e",
+        "D.1"
+      ],
+      "rationaleAI": "Christopher Marlowe pioneered blank verse tragedy on the English stage with Tamburlaine and Doctor Faustus (B.1.a.i), establishing dramatic conventions that shaped Elizabethan theatrical style (B.1.e). His innovations in tragic form mark a pivotal moment in Western theatre history (A.7, D.1)."
+    },
+    {
+      "episodeTitle": "Louis XIV: The Sun King",
+      "pid": "m001m4v6",
+      "relevantPathsAI": [
+        "B.1.b",
+        "D.1"
+      ],
+      "rationaleAI": "Louis XIV's patronage of the arts, including supporting Molière's permanent stage and establishing academies for music and performance, made his court the definitive example of court theatre (B.1.b) in Western theatrical history (D.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

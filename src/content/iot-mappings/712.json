@@ -13,14 +13,59 @@
       "rationaleAI": "Directly covers Taylorism, Fordist mass production, automation anxieties, the service economy transition, and psychological/social aspects of rationalized work -- central to this section's scope."
     },
     {
+      "episodeTitle": "The Iron Age",
+      "pid": "b00zm1ks",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2"
+      ],
+      "rationaleAI": "Iron smelting replaced bronze around 1000 BC, enabling harder, more versatile tools accessible to broader populations and driving agricultural expansion through iron ploughs — a key episode in the specialization of labour around metallurgy (A.1.b) and the reorganization of ancient economic life (A.2)."
+    },
+    {
+      "episodeTitle": "Megaliths",
+      "pid": "m001jkzg",
+      "relevantPathsAI": [
+        "A.1.b",
+        "A.2.e"
+      ],
+      "rationaleAI": "Megalithic construction required significant communal labour organization and engineering knowledge in Neolithic and Bronze Age societies, directly illustrating prehistoric communal work specialization (A.1.b) and the organization of labour for large-scale construction projects (A.2.e)."
+    },
+    {
+      "episodeTitle": "The Enclosures of the 18th Century",
+      "pid": "b00b1m9b",
+      "relevantPathsAI": [
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "Enclosures converted open fields into private holdings, displacing rural labourers into urban wage work and creating the industrial proletariat — a foundational transformation in labour organization (A.4) that enabled the shift to factory-based mass production (A.5)."
+    },
+    {
+      "episodeTitle": "The Wealth of Nations",
+      "pid": "b052ln55",
+      "relevantPathsAI": [
+        "A.4",
+        "A.5"
+      ],
+      "rationaleAI": "Adam Smith's theory of the division of labour and wealth accumulation, written amid early Industrial Revolution transformations, provided the foundational economic analysis of how organizing production through specialization (A.4) leads to mass production and national prosperity (A.5)."
+    },
+    {
+      "episodeTitle": "The Needham Question",
+      "pid": "p0038x9m",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "The comparative question of why modern industrial technology emerged in Europe rather than China examines institutional structures, property rights, and competitive state systems versus unified bureaucracy — factors that explain the foundations of modern industrial production (A.4)."
+    },
+    {
       "episodeTitle": "The Industrial Revolution",
       "pid": "b00wqdc7",
       "relevantPathsAI": [
         "A.4",
         "A.5",
-        "A.6"
+        "A.6",
+        "C.1"
       ],
-      "rationaleAI": "The Industrial Revolution's factory system, textile manufacturing innovations, and steam power represent the transformation of production organization from craft to machine-based mass production."
+      "rationaleAI": "Mechanized textile production, steam power, and factory organization transformed Britain's labour relations and class structures, exemplifying the shift from craft to machine-based mass production (A.5), the replacement of labour by machines (A.6), and the social consequences of rationalized work (C.1)."
     },
     {
       "episodeTitle": "Consequences of the Industrial Revolution",
@@ -30,33 +75,86 @@
         "A.6",
         "C.1"
       ],
-      "rationaleAI": "Covers factory system growth, working conditions, child labor, trade union movements, and responses including Luddism and Chartism -- directly addressing the social consequences of rationalized work."
+      "rationaleAI": "Workers moved from agricultural settlements to factory towns, affecting health, housing, and labour relations — directly addressing the psychological and social consequences of mass production and the rationalization of work (C.1)."
     },
     {
-      "episodeTitle": "Megaliths",
-      "pid": "m001jkzg",
+      "episodeTitle": "North and South",
+      "pid": "b08h0654",
       "relevantPathsAI": [
-        "A.1.b",
-        "A.2.e"
+        "A.5",
+        "C.1"
       ],
-      "rationaleAI": "Megalithic construction required large-scale social organisation of communal labour for monumental building, relevant to prehistoric and ancient organization of work for large-scale construction."
+      "rationaleAI": "Gaskell's novel dramatizes class tensions between factory owners and workers, labour relations, and the social consequences of factory production in mid-Victorian England, illustrating the human impact of mass production organization (A.5) and its psychological and social dimensions (C.1)."
     },
     {
-      "episodeTitle": "The Needham Question",
-      "pid": "p0038x9m",
+      "episodeTitle": "Thomas Edison",
+      "pid": "b00wdjr8",
       "relevantPathsAI": [
-        "A.4",
-        "A.5"
+        "A.5",
+        "A.6",
+        "B.1"
       ],
-      "rationaleAI": "The Needham Question examines why industrial production methods developed in Europe rather than China, addressing changes in production techniques and the foundations of modern industrial production."
+      "rationaleAI": "Edison's establishment of the first industrial research laboratory at Menlo Park pioneered systematic, team-based invention — a new organizational model for productive work (A.5) that applied methodical approaches to innovation (B.1) and advanced machine-based production (A.6)."
+    },
+    {
+      "episodeTitle": "Brunel",
+      "pid": "b04nvbp1",
+      "relevantPathsAI": [
+        "A.5",
+        "A.6"
+      ],
+      "rationaleAI": "Brunel's engineering of bridges, tunnels, and railways represents the cutting edge of Victorian technological innovation, illustrating the organization of large-scale industrial construction and the relationship between innovation, capital, and machine-enabled production (A.5, A.6)."
+    },
+    {
+      "episodeTitle": "The Frankfurt School",
+      "pid": "b00pr54s",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Critical theory's analysis of how mass culture functions to maintain capitalist social conformity directly addresses the psychological and social effects of mass production and industrial rationalization on workers and society (C.1)."
+    },
+    {
+      "episodeTitle": "Aldous Huxley's Brave New World",
+      "pid": "b00jn8bc",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Huxley's dystopian vision of technological control, social engineering, and the suppression of individuality through consumerism explores the ultimate psychological and social consequences of fully rationalized production and automation (C.1)."
+    },
+    {
+      "episodeTitle": "The Great Disruption",
+      "pid": "p00545kh",
+      "relevantPathsAI": [
+        "A.6",
+        "C.1"
+      ],
+      "rationaleAI": "Analyzes the transition from industrial to information-based economies — declining social capital, erosion of trust, and the reshaping of work by information technology — directly addressing how technological displacement of labour affects society (A.6, C.1)."
+    },
+    {
+      "episodeTitle": "Artificial Intelligence",
+      "pid": "p003k9fc",
+      "relevantPathsAI": [
+        "A.6",
+        "C.1"
+      ],
+      "rationaleAI": "AI's quest to create machines that imitate human cognition represents the frontier of using machines as replacements for labour (A.6), raising fundamental questions about machine consciousness and the boundary between human and machine work (C.1)."
     },
     {
       "episodeTitle": "Automata",
       "pid": "b0bk1c4d",
       "relevantPathsAI": [
-        "A.6"
+        "A.6",
+        "C.1"
       ],
-      "rationaleAI": "Automata's historical trajectory toward computing and robotics connects to the use of machines as replacements for labour."
+      "rationaleAI": "The history of machines designed to appear living — from ancient Greek designs through clockwork Enlightenment devices — traces early conceptions of machine-human substitution (A.6) and philosophical questions about what distinguishes human from mechanical labour (C.1)."
+    },
+    {
+      "episodeTitle": "Booth's Life and Labour Survey",
+      "pid": "m000wsxf",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Booth's systematic household-by-household survey of London labour and poverty documented the social effects of industrial work organization on the urban working population, providing empirical evidence of mass production's human consequences (C.1)."
     },
     {
       "episodeTitle": "The City - a history, part 1",
@@ -69,5 +167,5 @@
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

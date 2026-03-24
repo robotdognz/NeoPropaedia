@@ -2,112 +2,90 @@
   "sectionCode": "731",
   "mappings": [
     {
-      "episodeTitle": "Food",
-      "pid": "p00547n1",
-      "relevantPathsAI": [
-        "A",
-        "F",
-        "G",
-        "H"
-      ],
-      "rationaleAI": "The cultural history of food covers the Columbian Exchange introducing New World crops, food preservation and industrialization, and the modern food industry, spanning agricultural history and food processing."
+      "episodeTitle": "The Columbian Exchange",
+      "pid": "m002rrvz",
+      "relevantPathsAI": ["A", "C.6", "C.6.b", "C.6.d", "D.2", "D.2.a", "D.2.d"],
+      "rationaleAI": "Directly addresses the massive transatlantic transfer of crops (potatoes, tomatoes, maize, tobacco) and livestock (cattle, horses) that reshaped global agriculture after 1492, covering the history of agriculture (A), major crops including cereals (C.6.b) and field crops like tobacco (C.6.d), and major livestock animals (D.2)."
     },
     {
       "episodeTitle": "Coffee",
       "pid": "m000c4x1",
-      "relevantPathsAI": [
-        "C.6.d",
-        "F.8.d"
-      ],
-      "rationaleAI": "Coffee covers its origins in Ethiopia, the colonial plantation economy, physiological effects of caffeine, and coffeehouse culture, directly relevant to production of major field crops and nonalcoholic beverage technology."
-    },
-    {
-      "episodeTitle": "The Columbian Exchange",
-      "pid": "m002rrvz",
-      "relevantPathsAI": [
-        "A",
-        "C.6",
-        "I.1"
-      ],
-      "rationaleAI": "The Columbian Exchange covers the transfer of crops (potatoes, maize, tomatoes) and livestock between hemispheres, directly relevant to the history of agriculture, major crops, and new food source development."
+      "relevantPathsAI": ["A", "C.6.d", "F.8.d"],
+      "rationaleAI": "Traces coffee from its Ethiopian agricultural origins through colonial plantation production by slaves and indentured labour to mass consumption, covering the history of a major field crop (C.6.d) and the technology of producing nonalcoholic beverages (F.8.d)."
     },
     {
       "episodeTitle": "Fungi",
       "pid": "b09r3nwl",
-      "relevantPathsAI": [
-        "C.5",
-        "F.8.a"
-      ],
-      "rationaleAI": "Fungi covers mycorrhizal symbiosis with plant roots (relevant to crop farming), fungal pathogens like wheat rust (pest control), and fermentation applications (food/beverage production)."
-    },
-    {
-      "episodeTitle": "Louis Pasteur",
-      "pid": "b08q317p",
-      "relevantPathsAI": [
-        "F",
-        "G.1.c",
-        "H"
-      ],
-      "rationaleAI": "Louis Pasteur developed pasteurisation for food preservation and studied fermentation, directly relevant to food preservation through high-temperature methods and food quality control."
-    },
-    {
-      "episodeTitle": "Parasitism",
-      "pid": "b08bb9cy",
-      "relevantPathsAI": [
-        "C.5",
-        "D.3"
-      ],
-      "rationaleAI": "Parasitism covers parasitic diseases affecting livestock and the ecological significance for pest control, relevant to crop and livestock disease control."
-    },
-    {
-      "episodeTitle": "Virgil's Georgics",
-      "pid": "m001lyt4",
-      "relevantPathsAI": [
-        "A",
-        "C",
-        "D"
-      ],
-      "rationaleAI": "Virgil's Georgics is a didactic poem on agriculture covering crops, trees/vines, livestock, and beekeeping, directly mirroring the outline's categories of crop and livestock farming."
-    },
-    {
-      "episodeTitle": "1816, the Year Without a Summer",
-      "pid": "b077j4yv",
-      "relevantPathsAI": [
-        "A",
-        "C"
-      ],
-      "rationaleAI": "The 1816 Year Without a Summer covers volcanic climate forcing causing crop failures and famine, relevant to the history of agriculture and farming in relation to weather."
-    },
-    {
-      "episodeTitle": "Genetic Engineering",
-      "pid": "p00545bb",
-      "relevantPathsAI": [
-        "C.2",
-        "I.2"
-      ],
-      "rationaleAI": "Genetic engineering covers GMOs in agriculture, directly relevant to plant propagation techniques and utilization of new food sources."
-    },
-    {
-      "episodeTitle": "Pollination",
-      "pid": "m0028jtx",
-      "relevantPathsAI": [
-        "C.2",
-        "C.5",
-        "C.6.a"
-      ],
-      "rationaleAI": "Pollination covers co-evolutionary relationships between flowering plants and pollinators, pollinator decline, and the economic value to global food production, directly relevant to plant propagation and horticultural crops."
+      "relevantPathsAI": ["C.5", "F.8.a", "F.8.b", "G.1.d"],
+      "rationaleAI": "Fungi are integral to food production through fermentation processes producing bread, wine, and beer (F.8.a, F.8.b), and fermentation as a preservation method (G.1.d), while pathogenic fungal species are relevant to pest and disease control in crops (C.5)."
     },
     {
       "episodeTitle": "Microbiology",
       "pid": "b007753d",
-      "relevantPathsAI": [
-        "C.5",
-        "F",
-        "G"
-      ],
-      "rationaleAI": "Microbiology covers applications in food production (fermentation), public health, and the relationship between microorganisms and food safety, relevant to food processing and preservation."
+      "relevantPathsAI": ["F.8.a", "F.8.b", "G.1.c"],
+      "rationaleAI": "Pasteur and Koch's germ theory enabled sterilization and pasteurization techniques central to food preservation (G.1.c), while microbes are indispensable for bread-making and brewing (F.8.a, F.8.b) as industrial applications of biological science."
+    },
+    {
+      "episodeTitle": "Louis Pasteur",
+      "pid": "b08q317p",
+      "relevantPathsAI": ["F.7", "F.8.a", "F.8.b", "G.1.c"],
+      "rationaleAI": "Pasteur's discovery that microorganisms cause fermentation led directly to pasteurisation for preserving wine, beer, and milk (G.1.c, F.7), and he saved the French wine and brewing industries from microbial diseases, connecting to beverage production technology (F.8.a, F.8.b)."
+    },
+    {
+      "episodeTitle": "Pollination",
+      "pid": "m0028jtx",
+      "relevantPathsAI": ["C.2", "D.2.f"],
+      "rationaleAI": "Pollination mechanisms are fundamental to agricultural food production as explicitly noted in the episode, covering plant reproductive biology essential to crop propagation and cultivation (C.2) and the ecological role of bees as pollinators (D.2.f)."
+    },
+    {
+      "episodeTitle": "The Evolution of Horses",
+      "pid": "m000fp9y",
+      "relevantPathsAI": ["A", "B.2", "D.2.d"],
+      "rationaleAI": "Covers the domestication of horses in Central Asia and their transformative impact on agriculture and transportation, directly relevant to horses as major livestock (D.2.d), draft animals and farm labour (B.2), and the history of agriculture (A)."
+    },
+    {
+      "episodeTitle": "Hybrids",
+      "pid": "m0009t41",
+      "relevantPathsAI": ["C.2", "D.1"],
+      "rationaleAI": "Biological hybridization through deliberate human manipulation in agriculture and animal breeding, with Darwin's study of domestication and artificial selection, is directly relevant to plant propagation and cultivation (C.2) and animal breeding practices (D.1)."
+    },
+    {
+      "episodeTitle": "Genetic Engineering",
+      "pid": "p00545bb",
+      "relevantPathsAI": ["D.1", "I.1", "I.2"],
+      "rationaleAI": "Genetic engineering's applications in agriculture, including manipulation of genetic material for crop and livestock improvement, are relevant to animal breeding (D.1) and the development of new food sources and products (I.1, I.2)."
+    },
+    {
+      "episodeTitle": "Genetics",
+      "pid": "p00547md",
+      "relevantPathsAI": ["C.2", "D.1"],
+      "rationaleAI": "Mendel's foundational pea experiments established heredity laws that underpin modern plant breeding and cultivation techniques (C.2), and the growing capacity for genetic intervention applies directly to animal breeding (D.1)."
+    },
+    {
+      "episodeTitle": "History as Science",
+      "pid": "p00545f0",
+      "relevantPathsAI": ["A", "C.6", "D.2"],
+      "rationaleAI": "Diamond's thesis that domesticable plants and animals, plus continental axis orientation affecting agricultural diffusion, determined civilizational trajectories directly addresses the history of agriculture (A), the geographic distribution of major crops (C.6), and the domestication of major livestock (D.2)."
+    },
+    {
+      "episodeTitle": "Pheromones",
+      "pid": "m0002mdl",
+      "relevantPathsAI": ["D.2.f"],
+      "rationaleAI": "Pheromones in honey bee biology determine caste development directing larvae toward queen or worker differentiation, directly relevant to beekeeping as a branch of livestock farming (D.2.f)."
+    },
+    {
+      "episodeTitle": "The Dutch East India Company",
+      "pid": "b071vl2l",
+      "relevantPathsAI": ["A", "F.9"],
+      "rationaleAI": "The VOC's monopoly on cultivation and trade of nutmeg, mace, cloves, and cinnamon through territorial control in the Indonesian archipelago is directly relevant to the history of agricultural commodities (A) and the production and trade of spices, herbs, and flavourings (F.9)."
+    },
+    {
+      "episodeTitle": "The East India Company",
+      "pid": "p0054906",
+      "relevantPathsAI": ["A", "C.6.d", "F.9"],
+      "rationaleAI": "The East India Company's importation of spices, tea, and foodstuffs connects to the global trade networks that drove agricultural production of major field crops like tea (C.6.d) and spices (F.9), shaping the history of commercial agriculture (A)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

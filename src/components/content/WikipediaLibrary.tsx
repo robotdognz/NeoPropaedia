@@ -37,6 +37,12 @@ type SortDirection = 'asc' | 'desc';
 const LEVEL_KEY = 'propaedia-wiki-level';
 const INITIAL_VISIBLE = 50;
 const RECOMMENDATION_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
+const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
+  Parts: 'part',
+  Divisions: 'division',
+  Sections: 'section',
+  Subsections: 'subsection',
+};
 
 function getStoredLevel(): KnowledgeLevel {
   if (typeof window === 'undefined') return 3;
@@ -227,6 +233,11 @@ export default function WikipediaLibrary({
           completedCount={completedCount}
           completedDescription="Shared with the Done boxes on section pages."
           activeCoverageLabel={`${layerMeta.label} Coverage`}
+          activeRingLabel={layerMeta.pluralLabel}
+          onSelectCoverageRing={(label) => {
+            const layer = LAYER_BY_RING_LABEL[label];
+            if (layer) setSelectedLayer(layer);
+          }}
           activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
           activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
           activeCoverageDescription={activeCoverageDescription(activeLayer)}

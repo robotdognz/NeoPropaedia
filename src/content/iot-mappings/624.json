@@ -2,66 +2,36 @@
   "sectionCode": "624",
   "mappings": [
     {
-      "episodeTitle": "Beethoven",
-      "pid": "b09jbsjc",
-      "relevantPathsAI": [
-        "A.1",
-        "E.2.a.ii",
-        "G.1"
-      ],
-      "rationaleAI": "Beethoven's revolutionary expansion of symphonic form, his three compositional periods, and his role bridging Classical and Romantic eras directly address conceptions of music as art, the symphony, and the history of Western music."
-    },
-    {
-      "episodeTitle": "Wagner",
-      "pid": "p00548gv",
-      "relevantPathsAI": [
-        "A.1",
-        "E.3.c.i",
-        "C.4",
-        "G.1"
-      ],
-      "rationaleAI": "Wagner's leitmotif technique, harmonic innovations (Tristan chord), concept of Gesamtkunstwerk, and the Bayreuth Festival directly address conceptions of music, opera, harmony, and the history of Western music."
-    },
-    {
       "episodeTitle": "Mathematics and Music",
       "pid": "p003c1b9",
-      "relevantPathsAI": [
-        "C.1",
-        "B.1",
-        "C.4"
-      ],
-      "rationaleAI": "Mathematical structures underlying music including Pythagorean harmonic ratios, Fourier analysis, temperament, and group theory in serial music directly address pitch, the physical aspects of musical sound, and harmony."
+      "relevantPathsAI": ["A.1", "A.4", "B.1", "C.1.b", "C.1.c", "C.4"],
+      "rationaleAI": "Directly examines deep structural connections between mathematics and music, including the physics of vibrating strings producing harmonic series (B.1), scale construction and octave division across cultures (C.1.b), tuning systems (C.1.c), harmony as mathematical ratio (C.4), and diverse conceptions of music from Pythagorean number-sound relationships to twentieth-century serial and stochastic composition (A.1, A.4)."
     },
     {
-      "episodeTitle": "The Music of the Spheres",
-      "pid": "b00c1fct",
-      "relevantPathsAI": [
-        "A.1",
-        "C.1.c",
-        "B.1"
-      ],
-      "rationaleAI": "The music of the spheres covering Pythagoras's discovery of mathematical ratios in musical intervals, Boethius's transmission, and Kepler's Harmonices Mundi directly addresses conceptions of music, tuning and temperament, and physical aspects of sound."
+      "episodeTitle": "Beethoven",
+      "pid": "b09jbsjc",
+      "relevantPathsAI": ["A.3", "E.2.a.ii", "G.1"],
+      "rationaleAI": "Beethoven's development of the symphony as a musical form (E.2.a.ii), his elevation of instrumental above choral music, and his compositional achievement despite deafness illuminate both musical performance and interpretation (A.3) and the history of Western music (G.1)."
     },
     {
       "episodeTitle": "The Waltz",
       "pid": "m001x50m",
-      "relevantPathsAI": [
-        "E.4",
-        "C.2"
-      ],
-      "rationaleAI": "The waltz covering its origins in folk dance, the music of the Strauss dynasty, and its democratisation of social dancing addresses genres determined by cultural milieu and rhythm/metre."
+      "relevantPathsAI": ["E.3.c.ii", "E.4", "G.1"],
+      "rationaleAI": "The waltz's emergence as a musical-dance form in three-quarter time, Johann Strauss's defining compositions, and Diaghilev's modernist reinterpretations connect directly to music for theatrical dance (E.3.c.ii), while its role as a popular cultural phenomenon spanning ballroom to concert hall illustrates genres determined by cultural milieu (E.4) and Western music history (G.1)."
     },
     {
-      "episodeTitle": "The Waste Land and Modernity",
-      "pid": "b00hlb38",
-      "relevantPathsAI": [
-        "B.2",
-        "E.3.c.i",
-        "G.1"
-      ],
-      "rationaleAI": "The Waste Land's engagement with multiple literary and musical allusions, and its relationship to modernity, is tangential to music. Rejecting this candidate."
+      "episodeTitle": "The Music of the Spheres",
+      "pid": "b00c1fct",
+      "relevantPathsAI": ["A.1", "A.2", "A.4", "C.1.b", "C.1.c"],
+      "rationaleAI": "Pythagorean mathematical ratios linked to musical intervals, Boethius's musica mundana, and Kepler's derivation of musical intervals from orbital mechanics represent foundational conceptions of music as cosmic order (A.1), the problem of musical meaning as expression of universal harmony (A.2), music's relation to astronomy and philosophy (A.4), and historical systems of pitch and tuning (C.1.b, C.1.c)."
+    },
+    {
+      "episodeTitle": "The Frankfurt School",
+      "pid": "b00pr54s",
+      "relevantPathsAI": ["A.4", "A.5", "E.4"],
+      "rationaleAI": "Adorno and the Frankfurt School's critical theory argued that mass culture including popular music functions to maintain capitalist social conformity, constituting major twentieth-century writings about music's social role (A.5), the relation of music to ideology and society (A.4), and critical analysis of popular music as a cultural genre (E.4)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

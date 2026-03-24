@@ -1,5 +1,7 @@
 Propaedia TODO:
 
+    - Still need to improve the gaps between elements on the home page, bit weird looking.
+
     - Remap BBC In Our Time podcast episodes
         - Why are so many of them not mapped at all?
 

@@ -2,74 +2,36 @@
   "sectionCode": "722",
   "mappings": [
     {
-      "episodeTitle": "The Iron Age",
-      "pid": "b00zm1ks",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "The Iron Age covers the technology of iron smelting for tools and weapons replacing bronze, directly relevant to the early history of hand tools and the development of metal tools."
-    },
-    {
-      "episodeTitle": "The Industrial Revolution",
-      "pid": "b00wqdc7",
-      "relevantPathsAI": [
-        "C.1",
-        "C.3"
-      ],
-      "rationaleAI": "The Industrial Revolution covers innovations in textile manufacturing machinery (spinning jenny, water frame, power loom) and the factory system, relevant to the history and characteristics of machine tools."
-    },
-    {
       "episodeTitle": "The Antikythera Mechanism",
       "pid": "m0024x0g",
-      "relevantPathsAI": [
-        "B.1",
-        "B.2",
-        "B.3.a"
-      ],
-      "rationaleAI": "The Antikythera Mechanism's complex gear system for astronomical calculation demonstrates ancient Greek mastery of machine mechanisms and gears."
-    },
-    {
-      "episodeTitle": "The Neanderthals",
-      "pid": "b00sq1nv",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "Neanderthal Mousterian tool technology represents evidence for early stone tool making, relevant to the Paleolithic development of hand tools."
-    },
-    {
-      "episodeTitle": "Homo erectus",
-      "pid": "m00168lg",
-      "relevantPathsAI": [
-        "A.1"
-      ],
-      "rationaleAI": "Homo erectus's Acheulean hand axes represent a key stage in the early history of stone hand tools."
+      "relevantPathsAI": ["B.2", "B.3.a"],
+      "rationaleAI": "The Antikythera Mechanism's intricate bronze gear system for calculating celestial positions exemplifies ancient machine mechanisms (B.2) and precision gearing (B.3.a), demonstrating sophisticated mechanical engineering capability over two thousand years ago."
     },
     {
       "episodeTitle": "Automata",
       "pid": "b0bk1c4d",
-      "relevantPathsAI": [
-        "B.2",
-        "D.3"
-      ],
-      "rationaleAI": "Automata demonstrate machine mechanisms from ancient pneumatic devices through medieval clockwork to connections with robotics, relevant to mechanical devices and computer-aided machinery."
+      "relevantPathsAI": ["B.1", "B.2", "B.3"],
+      "rationaleAI": "Automata from ancient Greek designs through Enlightenment clockwork embody the development of machine mechanisms (B.2) employing simple machines (B.1), gears, cams, and linkages (B.3) to produce lifelike mechanical motion, tracing the evolution of precision machine components across cultures."
+    },
+    {
+      "episodeTitle": "Perpetual Motion",
+      "pid": "b06c06nd",
+      "relevantPathsAI": ["B.1", "B.2", "B.4"],
+      "rationaleAI": "Centuries of perpetual motion machine attempts, from Leonardo da Vinci's spinning wheels to Boyle's fluid systems, directly concern machine mechanisms (B.2), simple machines such as the wheel and lever (B.1), and the fundamental role of friction in limiting machine operation (B.4)."
     },
     {
       "episodeTitle": "George and Robert Stephenson",
       "pid": "b09y6zfr",
-      "relevantPathsAI": [
-        "C.1"
-      ],
-      "rationaleAI": "The Stephensons' engineering work including locomotive development and bridge design involved advances in machine tool technology during the Industrial Revolution."
+      "relevantPathsAI": ["B.2", "B.3"],
+      "rationaleAI": "The Stephensons' locomotive engineering, including the Rocket, involved designing complex machine mechanisms (B.2) integrating components such as linkages, bearings, shafts, couplings, and brakes (B.3) that established foundational principles for mechanical engineering in powered machinery."
     },
     {
-      "episodeTitle": "Ada Lovelace",
-      "pid": "b0092j0x",
-      "relevantPathsAI": [
-        "D.2"
-      ],
-      "rationaleAI": "Ada Lovelace's work on Babbage's Analytical Engine and the first computer algorithm connects to the origins of computer-aided design and manufacturing."
+      "episodeTitle": "Pitt-Rivers",
+      "pid": "b01qwgxx",
+      "relevantPathsAI": ["A.1"],
+      "rationaleAI": "Pitt-Rivers organized thousands of tools and artifacts typologically to demonstrate incremental technological evolution from primitive to complex forms, directly documenting the early history and developmental sequence of hand tools (A.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

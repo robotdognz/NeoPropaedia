@@ -7,10 +7,9 @@
       "relevantPathsAI": [
         "A",
         "C.2",
-        "C.3",
-        "C.4.b"
+        "C.3"
       ],
-      "rationaleAI": "The Bauhaus integrated fine art with crafts and industrial design, profoundly influencing typography, furniture design, and industrial design as an art -- core topics of functional design."
+      "rationaleAI": "The Bauhaus was founded as a combined school of arts and crafts dedicated to integrating art with industrial production, directly shaping modern industrial design (C.2) and interior design (C.3); its global diaspora spread functionalist design principles that remain foundational to decorative and applied arts education."
     },
     {
       "episodeTitle": "William Morris",
@@ -20,10 +19,10 @@
         "B.2",
         "B.6",
         "B.8",
-        "C.3",
+        "C.3.c",
         "C.4.b"
       ],
-      "rationaleAI": "William Morris's Arts and Crafts movement encompasses wallpaper, textile, and furniture design, and the Kelmscott Press's revival of fine book printing, covering decorative fabrics, wood, interior design, and printing arts."
+      "rationaleAI": "Morris's Arts and Crafts movement sought to reunite beauty with daily life through handmade textiles (B.2), wallpapers (B.6), furniture (C.3.c), and typography (C.4.b), making his philosophy of craft central to the nature and scope of decorative arts and functional design (A)."
     },
     {
       "episodeTitle": "Vase-mania",
@@ -51,7 +50,7 @@
         "C.2",
         "C.4.e"
       ],
-      "rationaleAI": "The Great Exhibition of 1851 showcased manufactured goods and design reform, directly relevant to industrial design, exhibition design, and the intersection of decorative arts with industrial production."
+      "rationaleAI": "The first major international exhibition of manufactured goods showcased industrial design (C.2) from around the world and catalyzed the founding of the Victoria and Albert Museum, a preeminent institution for decorative arts; the Crystal Palace itself exemplified exhibition and display design (C.4.e)."
     },
     {
       "episodeTitle": "The Grand Tour",
@@ -75,9 +74,10 @@
       "episodeTitle": "Zen",
       "pid": "b04sxv29",
       "relevantPathsAI": [
-        "A"
+        "A",
+        "C.4.a"
       ],
-      "rationaleAI": "Zen Buddhism's influence on Japanese tea ceremony, calligraphy, and garden design represents a distinctive aesthetic tradition in decorative and functional arts."
+      "rationaleAI": "Zen Buddhism profoundly shaped Japanese aesthetic disciplines including calligraphy (C.4.a), tea ceremony vessels and utensils, and austere decorative principles that influenced the philosophy of functional design and the relationship between simplicity and beauty in the decorative arts (A)."
     },
     {
       "episodeTitle": "The Vienna Secession",
@@ -87,9 +87,46 @@
         "C.2.a",
         "C.3"
       ],
-      "rationaleAI": "The Vienna Secession and Wiener Werkstatte (Vienna Workshops) represent Art Nouveau applied to decorative arts and functional design, bridging fine art with interior decoration and industrial design."
+      "rationaleAI": "The Vienna Secession explicitly rejected distinctions between fine and applied art, with Koloman Moser and Josef Hoffmann producing influential decorative designs; the movement's embrace of Jugendstil reshaped European decorative arts and functional design philosophy."
+    },
+    {
+      "episodeTitle": "The Mamluks",
+      "pid": "b03bfmlh",
+      "relevantPathsAI": [
+        "B.5",
+        "C.4.a"
+      ],
+      "rationaleAI": "The Mamluk Sultanate presided over a flourishing of Islamic metalwork (B.5) and manuscript illumination (C.4.a), producing some of the finest decorative arts of the medieval Islamic world."
+    },
+    {
+      "episodeTitle": "The Picts",
+      "pid": "b09cvx7b",
+      "relevantPathsAI": [
+        "B.5",
+        "B.7",
+        "C.4.d"
+      ],
+      "rationaleAI": "Pictish intricately carved symbol stones featuring animals, geometric patterns, and crosses represent significant stone decoration (B.7), while their metalwork (B.5) and distinctive symbol systems serve identification and symbolic functions (C.4.d) in early medieval decorative art."
+    },
+    {
+      "episodeTitle": "Songs of Innocence and of Experience",
+      "pid": "b07gh4pg",
+      "relevantPathsAI": [
+        "C.4.a",
+        "C.4.b"
+      ],
+      "rationaleAI": "Blake's hand-coloured illuminated printing using his unique relief etching technique to integrate visual art with text exemplifies both the illuminating tradition (C.4.a) and innovative printing arts and illustration (C.4.b) as decorative bookmaking."
+    },
+    {
+      "episodeTitle": "Walter Benjamin",
+      "pid": "m0014710",
+      "relevantPathsAI": [
+        "A",
+        "C.2"
+      ],
+      "rationaleAI": "Benjamin's 'The Work of Art in the Age of Mechanical Reproduction' is a foundational theoretical text on how industrial reproduction transforms aesthetic experience and art's function, directly addressing the nature of decorative and functional design (A) and the relationship between art and industrial production (C.2)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

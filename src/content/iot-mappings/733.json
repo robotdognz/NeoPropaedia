@@ -16,11 +16,14 @@
       "episodeTitle": "Vitruvius and De Architectura",
       "pid": "b01d2kzx",
       "relevantPathsAI": [
+        "A",
+        "A.1",
         "A.3",
         "A.6",
-        "A.7"
+        "B",
+        "B.2"
       ],
-      "rationaleAI": "Vitruvius's De Architectura addresses building materials, constructional systems, and civil engineering including water supply, directly relevant to construction technology principles."
+      "rationaleAI": "Vitruvius's ten-volume treatise is the only surviving comprehensive ancient work on architecture and engineering, covering building materials, temple design, water supply systems, and civil engineering, and codifying the foundational principles of firmitas, utilitas, and venustas that shaped subsequent construction practice."
     },
     {
       "episodeTitle": "Brunel",
@@ -37,10 +40,13 @@
       "pid": "m0018hd7",
       "relevantPathsAI": [
         "A.3.e",
+        "A.6.b",
         "A.7",
+        "A.7.b",
+        "A.7.d",
         "B.5"
       ],
-      "rationaleAI": "Angkor Wat's engineering achievements including sophisticated water management systems relate to stone construction, building components, and hydraulic works."
+      "rationaleAI": "Angkor Wat contains more stone than the Great Pyramid of Giza and represents one of history's most ambitious masonry construction projects, with intricately carved surfaces and sophisticated water management systems demonstrating advanced stone-working, structural engineering, and hydraulic works."
     },
     {
       "episodeTitle": "Megaliths",
@@ -57,7 +63,7 @@
       "relevantPathsAI": [
         "B.3"
       ],
-      "rationaleAI": "Robert Stephenson's Britannia Bridge and tubular bridge design represent major advances in bridge construction technology."
+      "rationaleAI": "Robert Stephenson's major railway bridge engineering projects represent significant achievements in bridge construction, establishing engineering principles for civil infrastructure that shaped 19th-century transport networks."
     },
     {
       "episodeTitle": "The Science of Glass",
@@ -65,7 +71,7 @@
       "relevantPathsAI": [
         "A.3.h"
       ],
-      "rationaleAI": "Glass science covers the history of glassmaking and modern applications, directly relevant to glass as a building material."
+      "rationaleAI": "Glass has been manufactured for over five thousand years and float glass manufacturing revolutionized its use as a building material; the episode's treatment of glass science, including its amorphous molecular structure and materials engineering properties, directly addresses glass as a construction material."
     },
     {
       "episodeTitle": "The Industrial Revolution",
@@ -86,8 +92,110 @@
         "A.6.d"
       ],
       "rationaleAI": "The Crystal Palace's revolutionary iron-and-glass architecture represents a landmark in steel and glass construction techniques."
+    },
+    {
+      "episodeTitle": "The Great Wall of China",
+      "pid": "b00s3h3w",
+      "relevantPathsAI": [
+        "A.3",
+        "A.3.a",
+        "A.3.d",
+        "A.3.e",
+        "A.6",
+        "A.6.b"
+      ],
+      "rationaleAI": "The Great Wall's construction over two millennia employed rammed earth, brick, and stone, illustrating the evolution of building materials and masonry construction techniques at monumental scale across successive Chinese dynasties."
+    },
+    {
+      "episodeTitle": "Sir John Soane",
+      "pid": "m0027jwv",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.7",
+        "A.7.b",
+        "A.7.d",
+        "A.7.e"
+      ],
+      "rationaleAI": "Soane's pioneering manipulation of light and space within stripped classical forms at the Bank of England and Westminster Law Courts demonstrates innovative approaches to structural systems, roof design, and space-enclosure systems in major public building construction."
+    },
+    {
+      "episodeTitle": "Architecture and Power",
+      "pid": "p00548k0",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.7"
+      ],
+      "rationaleAI": "Examines how major construction projects from pyramids and castles to cathedrals and modern towers serve as expressions of power, directly addressing the relationship between building design, structural ambition, and the built environment across construction history."
+    },
+    {
+      "episodeTitle": "The Fire of London",
+      "pid": "b00ft63q",
+      "relevantPathsAI": [
+        "A.3.d",
+        "A.3.e",
+        "A.6.b",
+        "A.7"
+      ],
+      "rationaleAI": "The post-1666 reconstruction under Wren and Hooke mandated brick and stone over timber, representing a watershed in building regulations and masonry construction techniques that transformed London's built fabric and established standards for fire-resistant construction."
+    },
+    {
+      "episodeTitle": "The Great Stink",
+      "pid": "m001gjcm",
+      "relevantPathsAI": [
+        "A.7.g.i",
+        "B",
+        "B.4",
+        "B.5"
+      ],
+      "rationaleAI": "Bazalgette's intercepting sewer system for London required massive underground construction and hydraulic engineering, including embankments that reshaped the Thames riverfront, exemplifying civil engineering infrastructure as a public health intervention."
+    },
+    {
+      "episodeTitle": "Bauhaus",
+      "pid": "m001dxtg",
+      "relevantPathsAI": [
+        "A",
+        "A.1",
+        "A.7.e"
+      ],
+      "rationaleAI": "The Bauhaus school's extension to architecture under Gropius pioneered modern building design with angular, flat-roofed structures for contemporary living, fundamentally influencing 20th-century construction planning, design programming, and space-enclosure approaches worldwide."
+    },
+    {
+      "episodeTitle": "The City - a history, part 2",
+      "pid": "b00rp1fd",
+      "relevantPathsAI": [
+        "B",
+        "B.3"
+      ],
+      "rationaleAI": "The transformation of urban form through railway and road infrastructure construction, including Haussmann's redesign of Paris and Cerda's planned Barcelona, directly addresses civil engineering works that reshaped cities through bridges, tunnels, and transportation infrastructure."
+    },
+    {
+      "episodeTitle": "The Iron Age",
+      "pid": "b00zm1ks",
+      "relevantPathsAI": [
+        "A.3.g"
+      ],
+      "rationaleAI": "Iron smelting technology produced harder, more versatile tools than bronze, and iron's abundance and wide distribution made it a transformative construction material enabling new building and agricultural implements that reshaped settlement patterns."
+    },
+    {
+      "episodeTitle": "Seismology",
+      "pid": "m00154gh",
+      "relevantPathsAI": [
+        "A.7.a",
+        "A.7.b"
+      ],
+      "rationaleAI": "Seismology's connections to civil engineering and disaster preparedness are directly relevant to foundation design and structural systems, as understanding earthquake forces and seismic hazard assessment informs construction standards for buildings in seismically active regions."
+    },
+    {
+      "episodeTitle": "Macromolecules",
+      "pid": "b018grhm",
+      "relevantPathsAI": [
+        "A.3.j"
+      ],
+      "rationaleAI": "Polymer science underpins the development of synthetic plastics, paints, and adhesives that serve as modern composition materials and structural fabrics in construction, connecting macromolecular chemistry to building material innovation."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

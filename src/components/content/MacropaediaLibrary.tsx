@@ -29,6 +29,11 @@ export interface MacropaediaLibraryProps {
 
 const INITIAL_VISIBLE_COUNT = 60;
 const RECOMMENDATION_LAYERS: CoverageLayer[] = ['part', 'division', 'section'];
+const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
+  Parts: 'part',
+  Divisions: 'division',
+  Sections: 'section',
+};
 
 type ReadFilter = 'all' | 'unread' | 'read';
 type SortField = 'section' | 'part' | 'division' | 'title';
@@ -188,6 +193,11 @@ export default function MacropaediaLibrary({
           completedCount={completedCount}
           completedDescription="Uses the same checklist state as the section reading boxes."
           activeCoverageLabel={`${layerMeta.label} Coverage`}
+          activeRingLabel={layerMeta.pluralLabel}
+          onSelectCoverageRing={(label) => {
+            const layer = LAYER_BY_RING_LABEL[label];
+            if (layer) setSelectedLayer(layer);
+          }}
           activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
           activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
           activeCoverageDescription={activeCoverageDescription(activeLayer)}

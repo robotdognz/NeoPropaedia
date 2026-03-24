@@ -35,6 +35,12 @@ export interface VsiLibraryProps {
 
 const INITIAL_VISIBLE_COUNT = 50;
 const RECOMMENDATION_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
+const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
+  Parts: 'part',
+  Divisions: 'division',
+  Sections: 'section',
+  Subsections: 'subsection',
+};
 
 type ReadFilter = 'all' | 'unread' | 'read';
 type SortField = 'section' | 'part' | 'division' | 'subsection' | 'title' | 'number';
@@ -232,6 +238,11 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
           completedCount={completedCount}
           completedDescription="Shared with the Done boxes on section pages."
           activeCoverageLabel={`${layerMeta.label} Coverage`}
+          activeRingLabel={layerMeta.pluralLabel}
+          onSelectCoverageRing={(label) => {
+            const layer = LAYER_BY_RING_LABEL[label];
+            if (layer) setSelectedLayer(layer);
+          }}
           activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
           activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
           activeCoverageDescription={activeCoverageDescription(activeLayer)}

@@ -10,6 +10,8 @@ interface ReadingCoverageSummaryProps {
   completedCount: number;
   completedDescription: string;
   activeCoverageLabel: string;
+  activeRingLabel?: string;
+  onSelectCoverageRing?: (label: string) => void;
   activeCoverageCount: number;
   activeCoverageTotal: number;
   activeCoverageDescription: string;
@@ -31,6 +33,8 @@ export default function ReadingCoverageSummary({
   completedCount,
   completedDescription,
   activeCoverageLabel,
+  activeRingLabel,
+  onSelectCoverageRing,
   activeCoverageCount,
   activeCoverageTotal,
   activeCoverageDescription,
@@ -49,14 +53,33 @@ export default function ReadingCoverageSummary({
         <p class="text-sm font-medium uppercase tracking-wide text-gray-500">Your Coverage</p>
         <div class="mt-4 flex items-center gap-4">
           <div class="shrink-0 sm:hidden">
-            <CoverageRings rings={coverageRings} size={100} ringWidth={mobileRingWidth} hideLegend />
+            <CoverageRings
+              rings={coverageRings}
+              size={100}
+              ringWidth={mobileRingWidth}
+              hideLegend
+              activeRingLabel={activeRingLabel}
+              onSelectRing={onSelectCoverageRing}
+            />
           </div>
           <div class="hidden shrink-0 sm:block">
-            <CoverageRings rings={coverageRings} size={112} ringWidth={desktopRingWidth} hideLegend />
+            <CoverageRings
+              rings={coverageRings}
+              size={112}
+              ringWidth={desktopRingWidth}
+              hideLegend
+              activeRingLabel={activeRingLabel}
+              onSelectRing={onSelectCoverageRing}
+            />
           </div>
           <div class="min-w-0 space-y-1">
             {coverageRings.map((ring) => (
-              <div key={ring.label} class="flex items-center gap-1.5 text-xs text-gray-500">
+              <div
+                key={ring.label}
+                class={`flex items-center gap-1.5 text-xs ${
+                  ring.label === activeRingLabel ? 'font-medium text-gray-700' : 'text-gray-500'
+                }`}
+              >
                 <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: ring.color }} />
                 <span>{ring.label}: {ring.count}/{ring.total}</span>
               </div>

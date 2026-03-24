@@ -26,10 +26,18 @@ import CoverageRings from '../ui/CoverageRings';
 interface HomepageCoverageExplorerProps {
   baseUrl: string;
   initialSource: HomepageCoverageSource;
+  showHeader?: boolean;
+  framed?: boolean;
 }
 
 const SOURCE_ORDER: ReadingType[] = ['vsi', 'iot', 'wikipedia', 'macropaedia'];
 const ALL_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
+const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
+  Parts: 'part',
+  Divisions: 'division',
+  Sections: 'section',
+  Subsections: 'subsection',
+};
 
 function availableLayers(source: HomepageCoverageSource): CoverageLayer[] {
   return source.includeSubsections ? ALL_LAYERS : ALL_LAYERS.filter((layer) => layer !== 'subsection');
@@ -47,6 +55,8 @@ function emptyRecommendationMessage(source: HomepageCoverageSource, layer: Cover
 export default function HomepageCoverageExplorer({
   baseUrl,
   initialSource,
+  showHeader = true,
+  framed = true,
 }: HomepageCoverageExplorerProps) {
   const checklistState = useReadingChecklistState();
   const [selectedType, setSelectedType] = useState<ReadingType>(initialSource.type);
@@ -147,63 +157,100 @@ export default function HomepageCoverageExplorer({
     });
   }, [checklistState, source]);
   const completedCount = source ? countCompletedEntries(source.entries, checklistState) : 0;
+  const wrapperClass = framed
+    ? 'rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7'
+    : undefined;
+  const topSpacingClass = showHeader ? 'mt-4' : '';
 
   return (
-    <section class="rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7">
-      <div class="space-y-3 border-b border-slate-200 pb-4">
-        <div class="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
-          <div class="max-w-3xl space-y-2">
-            <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
-              Whole Outline
-            </p>
-            <h2 class="text-3xl font-serif font-bold text-slate-900">
-              Coverage-First Reading Paths
-            </h2>
-          </div>
+    <section class={wrapperClass}>
+      {showHeader ? (
+        <div class="space-y-3 border-b border-slate-200 pb-4">
+          <div class="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
+            <div class="max-w-3xl space-y-2">
+              <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
+                Whole Outline
+              </p>
+              <h2 class="text-3xl font-serif font-bold text-slate-900">
+                Coverage-First Reading Paths
+              </h2>
+            </div>
 
-          <div class="space-y-1.5 lg:max-w-xl">
-            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500 lg:text-right">
-              Reading Type
-            </p>
-            <div class="flex flex-wrap gap-2 lg:justify-end">
-              {SOURCE_ORDER.map((type) => {
-                const isActive = type === selectedType;
-                return (
-                  <button
-                    key={type}
-                    type="button"
-                    onClick={() => {
-                      setSelectedType(type);
-                      setReadingPreference(type);
-                      void ensureSourceLoaded(type);
-                    }}
-                    class={`inline-flex items-center rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
-                      isActive
-                        ? 'border-slate-900 bg-slate-900 text-white'
-                        : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-100'
-                    }`}
-                  >
-                    {READING_TYPE_LABELS[type]}
-                  </button>
-                );
-              })}
+            <div class="space-y-1.5 lg:max-w-xl">
+              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500 lg:text-right">
+                Reading Type
+              </p>
+              <div class="flex flex-wrap gap-2 lg:justify-end">
+                {SOURCE_ORDER.map((type) => {
+                  const isActive = type === selectedType;
+                  return (
+                    <button
+                      key={type}
+                      type="button"
+                      onClick={() => {
+                        setSelectedType(type);
+                        setReadingPreference(type);
+                        void ensureSourceLoaded(type);
+                      }}
+                      class={`inline-flex items-center rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
+                        isActive
+                          ? 'border-slate-900 bg-slate-900 text-white'
+                          : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-100'
+                      }`}
+                    >
+                      {READING_TYPE_LABELS[type]}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      ) : null}
 
       {errorType === selectedType ? (
-        <div class="mt-6 rounded-xl border border-red-200 bg-red-50 px-4 py-5 text-sm text-red-700">
+        <div class={`${topSpacingClass} rounded-xl border border-red-200 bg-red-50 px-4 py-5 text-sm text-red-700`}>
           Could not load the {READING_TYPE_LABELS[selectedType]} coverage data right now.
         </div>
       ) : null}
 
       {!source && loadingType === selectedType ? (
-        <div class="mt-6 rounded-xl border border-slate-200 bg-slate-50 px-4 py-5 text-sm text-slate-600">
+        <div class={`${topSpacingClass} rounded-xl border border-slate-200 bg-slate-50 px-4 py-5 text-sm text-slate-600`}>
           Loading the {READING_TYPE_LABELS[selectedType]} coverage path...
         </div>
       ) : source ? (
-        <div class="mt-4 space-y-4">
+        <div class={`${topSpacingClass} space-y-4`}>
+          {!showHeader ? (
+            <section class="space-y-2">
+              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+                Reading Type
+              </p>
+              <div class="flex flex-wrap gap-2">
+                {SOURCE_ORDER.map((type) => {
+                  const isActive = type === selectedType;
+                  return (
+                    <button
+                      key={type}
+                      type="button"
+                      onClick={() => {
+                        setSelectedType(type);
+                        setReadingPreference(type);
+                        void ensureSourceLoaded(type);
+                      }}
+                      class={`inline-flex items-center rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
+                        isActive
+                          ? 'border-slate-900 bg-slate-900 text-white'
+                          : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-100'
+                      }`}
+                    >
+                      {READING_TYPE_LABELS[type]}
+                    </button>
+                  );
+                })}
+              </div>
+            </section>
+          ) : null}
+
           <section class="space-y-2">
             <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
               Outline Layer
@@ -246,13 +293,35 @@ export default function HomepageCoverageExplorer({
               <div class="rounded-xl border border-slate-200 bg-white p-4">
                 <div class="flex items-center gap-4">
                   <div class="shrink-0">
-                    <CoverageRings rings={coverageRings} size={96} ringWidth={8} hideLegend />
+                    <CoverageRings
+                      rings={coverageRings}
+                      size={100}
+                      ringWidth={8}
+                      hideLegend
+                      activeRingLabel={coverageLayerLabel(activeLayer, 2)}
+                      onSelectRing={(label) => {
+                        const layer = LAYER_BY_RING_LABEL[label];
+                        if (layer && supportedLayers.includes(layer)) {
+                          setSelectedLayers((current) => ({
+                            ...current,
+                            [selectedType]: layer,
+                          }));
+                        }
+                      }}
+                    />
                   </div>
                   <div class="min-w-0 space-y-2">
                     <p class="text-sm font-medium uppercase tracking-wide text-slate-500">Your Coverage</p>
                     <div class="space-y-1 text-xs text-slate-500">
                       {coverageRings.map((ring) => (
-                        <div key={ring.label} class="flex items-center gap-1.5">
+                        <div
+                          key={ring.label}
+                          class={`flex items-center gap-1.5 ${
+                            ring.label === coverageLayerLabel(activeLayer, 2)
+                              ? 'font-medium text-slate-700'
+                              : ''
+                          }`}
+                        >
                           <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: ring.color }} />
                           <span>{ring.label}: {ring.count}/{ring.total}</span>
                         </div>

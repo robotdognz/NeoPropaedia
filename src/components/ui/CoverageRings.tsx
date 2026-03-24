@@ -6,11 +6,23 @@ export interface CoverageRingsProps {
   size?: number;
   ringWidth?: number;
   hideLegend?: boolean;
+  activeRingLabel?: string;
+  onSelectRing?: (label: string) => void;
 }
 
-export default function CoverageRings({ rings, size = 160, ringWidth = 10, hideLegend = false }: CoverageRingsProps) {
+export default function CoverageRings({
+  rings,
+  size = 160,
+  ringWidth = 10,
+  hideLegend = false,
+  activeRingLabel,
+  onSelectRing,
+}: CoverageRingsProps) {
   const center = size / 2;
-  const gap = 3;
+  const gap = 2;
+  const activeRingWidthBoost = 2;
+  const ringSlotWidth = ringWidth + activeRingWidthBoost;
+  const outerEdgeInset = 1;
   const [animated, setAnimated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -31,28 +43,88 @@ export default function CoverageRings({ rings, size = 160, ringWidth = 10, hideL
     return () => cancelAnimationFrame(timer);
   }, [rings.map(r => r.count).join(',')]);
 
+  const ringWidths = rings.map((ring) =>
+    ring.label === activeRingLabel ? ringWidth + activeRingWidthBoost : ringWidth
+  );
+  const radii = rings.map(
+    (_, index) => center - outerEdgeInset - ringSlotWidth / 2 - index * (ringSlotWidth + gap)
+  );
+
+  function ringLabelForPointer(clientX: number, clientY: number): string | null {
+    const svg = ref.current?.querySelector('svg');
+    if (!(svg instanceof SVGSVGElement)) return null;
+
+    const rect = svg.getBoundingClientRect();
+    if (!rect.width || !rect.height) return null;
+
+    const localX = ((clientX - rect.left) / rect.width) * size;
+    const localY = ((clientY - rect.top) / rect.height) * size;
+    const distance = Math.hypot(localX - center, localY - center);
+
+    let bestIndex = -1;
+    let bestDistance = Number.POSITIVE_INFINITY;
+
+    rings.forEach((_, index) => {
+      const width = ringWidths[index];
+      const radius = radii[index];
+      const halfBand = width / 2 + gap / 2;
+      const delta = Math.abs(distance - radius);
+      if (delta <= halfBand && delta < bestDistance) {
+        bestDistance = delta;
+        bestIndex = index;
+      }
+    });
+
+    return bestIndex >= 0 ? rings[bestIndex].label : null;
+  }
+
+  function updateSelectedRing(clientX: number, clientY: number) {
+    if (!onSelectRing) return;
+    const label = ringLabelForPointer(clientX, clientY);
+    if (label) onSelectRing(label);
+  }
+
   return (
     <div ref={ref} class="flex flex-col items-center">
-      <svg viewBox={`0 0 ${size} ${size}`} class="w-28 h-28 sm:w-32 sm:h-32">
+      <svg
+        viewBox={`0 0 ${size} ${size}`}
+        class={`w-28 h-28 sm:w-32 sm:h-32 ${onSelectRing ? 'cursor-pointer touch-none' : ''}`}
+        onPointerDown={(event) => {
+          if (!onSelectRing) return;
+          const target = event.currentTarget as SVGSVGElement;
+          target.setPointerCapture(event.pointerId);
+          updateSelectedRing(event.clientX, event.clientY);
+        }}
+        onPointerMove={(event) => {
+          if (!onSelectRing || (event.buttons & 1) !== 1) return;
+          updateSelectedRing(event.clientX, event.clientY);
+        }}
+      >
         {rings.map((ring, i) => {
-          const radius = center - ringWidth / 2 - i * (ringWidth + gap);
+          const radius = radii[i];
+          const width = ringWidths[i];
           const circumference = 2 * Math.PI * radius;
           const fraction = ring.total > 0 ? ring.count / ring.total : 0;
           const dashLength = fraction * circumference;
+          const isActive = ring.label === activeRingLabel;
 
           return (
             <g key={ring.label}>
               {/* Background track */}
               <circle
                 cx={center} cy={center} r={radius}
-                fill="none" stroke="#f1f5f9" stroke-width={ringWidth}
+                fill="none"
+                stroke={isActive ? '#cbd5e1' : '#e2e8f0'}
+                stroke-opacity={isActive ? '0.78' : '0.72'}
+                stroke-width={width}
               />
               {/* Animated arc */}
               <circle
                 cx={center} cy={center} r={radius}
                 fill="none"
                 stroke={ring.color}
-                stroke-width={ringWidth}
+                stroke-opacity={isActive ? '1' : '0.82'}
+                stroke-width={width}
                 stroke-linecap="round"
                 stroke-dasharray={`${circumference} ${circumference}`}
                 stroke-dashoffset={animated ? circumference - dashLength : circumference}
@@ -69,7 +141,13 @@ export default function CoverageRings({ rings, size = 160, ringWidth = 10, hideL
       {!hideLegend && (
         <div class="mt-3 space-y-1">
           {rings.map((ring) => (
-            <div key={ring.label} class="flex items-center gap-2 text-xs text-gray-500">
+            <div
+              key={ring.label}
+              class={`flex items-center gap-2 text-xs ${
+                ring.label === activeRingLabel ? 'font-medium text-gray-700' : 'text-gray-500'
+              }`}
+              onClick={() => onSelectRing?.(ring.label)}
+            >
               <span class="inline-block w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: ring.color }} />
               <span>{ring.label}: {ring.count}/{ring.total}</span>
             </div>

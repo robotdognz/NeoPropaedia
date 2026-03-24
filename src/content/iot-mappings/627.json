@@ -2,95 +2,54 @@
   "sectionCode": "627",
   "mappings": [
     {
-      "episodeTitle": "Megaliths",
-      "pid": "m001jkzg",
-      "relevantPathsAI": [
-        "A.3",
-        "B.1",
-        "B.3.a",
-        "B.4",
-        "C"
-      ],
-      "rationaleAI": "Megalithic monuments are monumental stone sculptures in the round, serving ceremonial and ritualistic functions, representing primitive sculpture using stone as material."
+      "episodeTitle": "Judith beheading Holofernes",
+      "pid": "m0002hl7",
+      "relevantPathsAI": ["A.2", "B.2.a", "B.3.a", "C.1"],
+      "rationaleAI": "Donatello's bronze Judith and Holofernes is explicitly discussed alongside Michelangelo's Sistine panel and paintings by Caravaggio and Gentileschi, illustrating how a single biblical subject generated major sculptural and painted works across Renaissance and Baroque periods. Directly relevant to sculptural iconography (A.2), representational devotional figures (B.2.a), ceremonial objects (B.3.a), and Western sculpture history (C.1)."
     },
     {
-      "episodeTitle": "The Statue of Liberty",
-      "pid": "b008xh3x",
-      "relevantPathsAI": [
-        "B.2.a",
-        "B.3.c",
-        "C.1"
-      ],
-      "rationaleAI": "The Statue of Liberty is a colossal neoclassical sculpture by Bartholdi with Eiffel's iron framework, exemplifying commemorative monumental sculpture and representational human figures in the history of Western sculpture."
+      "episodeTitle": "Megaliths",
+      "pid": "m001jkzg",
+      "relevantPathsAI": ["A.3", "A.4", "B.1", "B.3.a", "B.3.c", "B.4"],
+      "rationaleAI": "Standing stones, stone circles, dolmens, and passage tombs are massive stone constructions representing some of the earliest monumental sculptural forms. Their use of stone as material (A.3), the engineering and communal labor required for construction (A.4), their placement as environmental works in the landscape (B.1), ceremonial and ritualistic functions (B.3.a), role as commemorative monuments and stelae (B.3.c), and status as primitive sculptural expression (B.4) make them foundational to sculpture's prehistory."
+    },
+    {
+      "episodeTitle": "Tutankhamun",
+      "pid": "m000cng6",
+      "relevantPathsAI": ["A.3", "B.2.a", "B.3.a", "B.3.c", "B.3.d"],
+      "rationaleAI": "The iconic gold death mask and tomb treasures are among history's most celebrated sculptural objects, exemplifying metalwork sculpture (A.3), representational portraiture and devotional imagery (B.2.a), ceremonial funerary objects (B.3.a), commemorative tomb sculpture (B.3.c), and masks as a distinct sculptural form (B.3.d)."
     },
     {
       "episodeTitle": "Angkor Wat",
       "pid": "m0018hd7",
-      "relevantPathsAI": [
-        "A.3",
-        "B.1",
-        "B.2.a",
-        "C"
-      ],
-      "rationaleAI": "Angkor Wat's extraordinary bas-reliefs depicting Hindu epics represent major relief sculpture in stone, with devotional images from non-Western sculptural traditions."
+      "relevantPathsAI": ["A.3", "A.4", "B.1", "B.2.a", "B.3.a"],
+      "rationaleAI": "Angkor Wat's intricately carved and well-preserved stone surfaces constitute one of the world's most extensive programs of architectural relief sculpture depicting Hindu and Buddhist devotional imagery. Relevant to stone as sculptural material (A.3), carving techniques (A.4), relief sculpture in architectural context (B.1), representational devotional images (B.2.a), and ceremonial religious function (B.3.a)."
     },
     {
-      "episodeTitle": "Hatshepsut",
-      "pid": "b04n62jx",
-      "relevantPathsAI": [
-        "B.2.a",
-        "B.3.c",
-        "C"
-      ],
-      "rationaleAI": "Hatshepsut's mortuary temple at Deir el-Bahri and her monuments, including royal iconographic sculpture and posthumous erasure, exemplify ancient Egyptian commemorative and devotional sculpture."
+      "episodeTitle": "The Celts",
+      "pid": "p0054894",
+      "relevantPathsAI": ["A.3", "B.2.c", "B.4", "C.1"],
+      "rationaleAI": "Celtic civilization developed distinctive art and metalwork including sculptural forms in stone and metal representing a major tradition of European decorative and folk sculpture. Relevant to stone and metal as sculptural materials (A.3), decorative sculpture (B.2.c), pre-Roman folk sculptural traditions (B.4), and Western sculpture's broader history (C.1)."
     },
     {
       "episodeTitle": "Cave Art",
       "pid": "m000mqn7",
-      "relevantPathsAI": [
-        "A.4",
-        "B.4",
-        "C"
-      ],
-      "rationaleAI": "Cave art includes engravings carved into stone surfaces, representing the earliest sculptural techniques alongside painting, relevant to primitive sculpture history."
+      "relevantPathsAI": ["A.4", "B.1", "B.4"],
+      "rationaleAI": "Stone Age cave art includes engravings and carvings cut into rock surfaces alongside paintings, representing the earliest known sculptural relief techniques (A.4). These works were created in environmental settings deep underground (B.1) and constitute the most ancient examples of primitive sculptural expression (B.4)."
     },
     {
-      "episodeTitle": "Dadaism",
-      "pid": "m002sr43",
-      "relevantPathsAI": [
-        "B.2.b",
-        "C.1"
-      ],
-      "rationaleAI": "Dadaism's readymades (Duchamp), collage, and anti-art sculptural objects challenged conventional sculpture, relevant to the history of nonrepresentational and Western sculpture."
-    },
-    {
-      "episodeTitle": "The Greek Myths",
-      "pid": "b0093z1k",
-      "relevantPathsAI": [
-        "B.2.a",
-        "C.1"
-      ],
-      "rationaleAI": "Greek mythology's representation across centuries of Western sculpture -- from devotional images to portraits to decorative works -- makes it relevant to the iconography and history of sculpture."
+      "episodeTitle": "Automata",
+      "pid": "b0bk1c4d",
+      "relevantPathsAI": ["B.1", "B.2.a"],
+      "rationaleAI": "Automata — real machines designed to appear living, from ancient Greek mechanical figures through Enlightenment clockwork — represent a tradition of three-dimensional kinetic sculptural objects (B.1, kinetic sculpture) depicting human and animal forms (B.2.a), raising enduring questions about the boundary between crafted figure and living being."
     },
     {
       "episodeTitle": "The Vienna Secession",
       "pid": "m002d1b5",
-      "relevantPathsAI": [
-        "B.2.c",
-        "C.1"
-      ],
-      "rationaleAI": "The Vienna Secession connected decorative sculpture to modernist art and design, with Klimt's Beethoven Frieze and the Secession Building's sculptural elements."
-    },
-    {
-      "episodeTitle": "The Etruscan Civilisation",
-      "pid": "b0151q7j",
-      "relevantPathsAI": [
-        "B.2.a",
-        "C"
-      ],
-      "rationaleAI": "Etruscan distinctive art includes tomb sculptures and figures that influenced Roman sculptural traditions, relevant to the history of Western sculpture."
+      "relevantPathsAI": ["B.2.c", "C.1"],
+      "rationaleAI": "The Vienna Secession declared no distinction between fine and applied art, with Joseph Maria Olbrich's exhibition hall and its sculptural golden dome serving as an architectural manifesto. The movement integrated decorative sculpture into modernist art and design (B.2.c), contributing to the evolution of Western sculptural aesthetics at the turn of the twentieth century (C.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

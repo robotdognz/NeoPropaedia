@@ -4,52 +4,40 @@
     {
       "episodeTitle": "George and Robert Stephenson",
       "pid": "b09y6zfr",
-      "relevantPathsAI": [
-        "A.4.a",
-        "D"
-      ],
-      "rationaleAI": "George and Robert Stephenson developed the Rocket locomotive and pioneered the first railways (Stockton-Darlington, Liverpool-Manchester), central to the history of steam railroad transportation."
-    },
-    {
-      "episodeTitle": "The Industrial Revolution",
-      "pid": "b00wqdc7",
-      "relevantPathsAI": [
-        "A.4",
-        "A.4.a",
-        "D"
-      ],
-      "rationaleAI": "The Industrial Revolution covers steam power, canal and railway construction, directly relevant to the history of steam transportation and rail development."
+      "relevantPathsAI": ["A.4.a", "D"],
+      "rationaleAI": "George and Robert Stephenson pioneered railway development, designing early steam locomotives including the Rocket and engineering the Liverpool and Manchester Railway, directly covering the first locomotives, the spread of railways, and railroad bridge engineering."
     },
     {
       "episodeTitle": "Brunel",
       "pid": "b04nvbp1",
-      "relevantPathsAI": [
-        "A.4.a",
-        "A.4.b",
-        "D",
-        "F"
-      ],
-      "rationaleAI": "Brunel built the Great Western Railway and revolutionary iron ships (Great Western, Great Britain, Great Eastern), directly relevant to railroad and water transportation technology."
+      "relevantPathsAI": ["A.4.a", "A.5.a", "D", "F.2"],
+      "rationaleAI": "Isambard Kingdom Brunel's engineering of bridges, tunnels, and railways directly addresses railroad construction infrastructure, and his shipbuilding projects connect to ship design and construction, making him central to both rail and water transportation technology."
     },
     {
-      "episodeTitle": "The Dutch East India Company",
-      "pid": "b071vl2l",
-      "relevantPathsAI": [
-        "A.3",
-        "F.1"
-      ],
-      "rationaleAI": "The Dutch East India Company's maritime trade involved major shipping and shipbuilding, relevant to the history of sail-powered water transportation."
+      "episodeTitle": "The City - a history, part 2",
+      "pid": "b00rp1fd",
+      "relevantPathsAI": ["A.4.a", "A.5.a", "A.5.b"],
+      "rationaleAI": "Railway networks from the 1820s enabling suburban expansion and the motor car encouraging sprawl and road infrastructure directly illustrate the development of modern transportation, mass urban transport, and the construction of road vehicles and associated infrastructure."
     },
     {
-      "episodeTitle": "The Phoenicians",
-      "pid": "b03szw8l",
-      "relevantPathsAI": [
-        "A.3",
-        "F.1"
-      ],
-      "rationaleAI": "Phoenician maritime trade and navigation across the Mediterranean represent early developments in sail and oar-powered water transportation."
+      "episodeTitle": "The Industrial Revolution",
+      "pid": "b00wqdc7",
+      "relevantPathsAI": ["A.4"],
+      "rationaleAI": "Watt's steam engine and coal-powered industry provided the foundational motive power for steam transportation, encompassing both railroad locomotives and steamship propulsion that transformed nineteenth-century mobility."
+    },
+    {
+      "episodeTitle": "The Fighting Temeraire",
+      "pid": "b081r260",
+      "relevantPathsAI": ["A.4.b", "F.1", "F.2.c"],
+      "rationaleAI": "The juxtaposition of the sailing warship HMS Temeraire with a steam tugboat directly illustrates the transition from sail to steam navigation, the decline of sailing fleets, and the introduction of steam-powered propulsion units in shipbuilding."
+    },
+    {
+      "episodeTitle": "The Volga Vikings",
+      "pid": "b00vrx8g",
+      "relevantPathsAI": ["A.3", "F.1", "F.3"],
+      "rationaleAI": "Norse expansion via river systems of Russia and Ukraine, including ship burials and trade routes reaching Constantinople and Baghdad, illustrates early shipping, inland waterway navigation, and the development of waterborne vessels for long-distance trade."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

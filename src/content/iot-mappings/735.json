@@ -2,172 +2,114 @@
   "sectionCode": "735",
   "mappings": [
     {
+      "episodeTitle": "The Invention of Radio",
+      "pid": "b0368knw",
+      "relevantPathsAI": ["A", "I.5", "K.1.a"],
+      "rationaleAI": "Traces radio from Maxwell's electromagnetic theory through Marconi's wireless telegraphy to Fessenden's voice broadcasting, directly covering radio communications systems (I.5), and key electronic components including Fleming's vacuum tube and De Forest's audion amplifier (K.1.a)."
+    },
+    {
+      "episodeTitle": "Ada Lovelace",
+      "pid": "b0092j0x",
+      "relevantPathsAI": ["B", "D.1", "D.2"],
+      "rationaleAI": "Babbage's Difference Engine is a foundational mechanical calculating device (B), and Lovelace's insight that computers could go beyond mere calculation anticipates general-purpose digital computing (D.1) and the concept of software and programming (D.2)."
+    },
+    {
+      "episodeTitle": "The Antikythera Mechanism",
+      "pid": "m0024x0g",
+      "relevantPathsAI": ["B", "D.1"],
+      "rationaleAI": "A two-thousand-year-old bronze astronomical analogue computer with intricate gear systems for celestial calculation, directly exemplifying ancient calculating devices (B) and representing an early analogue computer (D.1)."
+    },
+    {
       "episodeTitle": "Artificial Intelligence",
       "pid": "p003k9fc",
-      "relevantPathsAI": [
-        "D.5"
-      ],
-      "rationaleAI": "Covers AI topics including the Turing test, expert systems, neural networks, machine learning, and the Chinese Room argument, directly relevant to developments in artificial intelligence."
+      "relevantPathsAI": ["D.5"],
+      "rationaleAI": "Covers the origins and development of AI from Turing's Bletchley Park work through debates about machine consciousness and the Chinese Room Argument, directly addressing developments in artificial intelligence including expert systems and machine cognition (D.5)."
     },
     {
       "episodeTitle": "Artificial Intelligence",
       "pid": "p00545h7",
-      "relevantPathsAI": [
-        "D.5"
-      ],
-      "rationaleAI": "Covers foundational AI concepts including the Turing test, neural networks, and computational approaches to consciousness, relevant to artificial intelligence developments."
-    },
-    {
-      "episodeTitle": "Cryptography",
-      "pid": "p004y272",
-      "relevantPathsAI": [
-        "I.9"
-      ],
-      "rationaleAI": "Cryptography from ancient ciphers through Enigma to modern public-key systems directly covers encryption and decryption techniques, signal security, and the history of cryptology."
-    },
-    {
-      "episodeTitle": "The Invention of Radio",
-      "pid": "b0368knw",
-      "relevantPathsAI": [
-        "I.5",
-        "K"
-      ],
-      "rationaleAI": "The invention of radio covers wireless telegraphy through broadcasting, directly relevant to radio communications systems and equipment."
-    },
-    {
-      "episodeTitle": "Conductors and Semiconductors",
-      "pid": "b01c7sml",
-      "relevantPathsAI": [
-        "K.1.a",
-        "K.1.c"
-      ],
-      "rationaleAI": "Semiconductor physics enabling transistors and integrated circuits is foundational to active electronic components and microprocessors used in communications."
-    },
-    {
-      "episodeTitle": "Information Technology",
-      "pid": "p00546lm",
-      "relevantPathsAI": [
-        "D.4",
-        "I.8"
-      ],
-      "rationaleAI": "Information technology covers the internet, digital communication, and computing's transformation of society, directly relevant to computer applications and electronic networks."
-    },
-    {
-      "episodeTitle": "Alan Turing",
-      "pid": "m000ncmw",
-      "relevantPathsAI": [
-        "D",
-        "D.2",
-        "D.5",
-        "I.9"
-      ],
-      "rationaleAI": "Alan Turing established theoretical foundations of computation (universal Turing machine), proposed the Turing test for AI, and broke the Enigma code, relevant to computers, AI, and cryptography."
-    },
-    {
-      "episodeTitle": "Caxton and the Printing Press",
-      "pid": "b01nbqz3",
-      "relevantPathsAI": [
-        "E.3",
-        "E.4",
-        "I.1"
-      ],
-      "rationaleAI": "Caxton's introduction of the printing press to England directly covers printing machines and processes, and book publishing."
-    },
-    {
-      "episodeTitle": "Episode 2",
-      "pid": "b018wy46",
-      "relevantPathsAI": [
-        "E.3",
-        "I.1"
-      ],
-      "rationaleAI": "The book as technology covers the evolution from scrolls to codex, monasteries' manuscript production, and printing, relevant to printing processes and publishing systems."
-    },
-    {
-      "episodeTitle": "Episode 1",
-      "pid": "b018wfsc",
-      "relevantPathsAI": [
-        "E.1"
-      ],
-      "rationaleAI": "The origins of writing covers cuneiform, hieroglyphics, and the development of writing systems, relevant to simple recording implements and information recording."
-    },
-    {
-      "episodeTitle": "Maxwell",
-      "pid": "p005491g",
-      "relevantPathsAI": [
-        "I.5",
-        "K"
-      ],
-      "rationaleAI": "Maxwell's prediction of electromagnetic waves led directly to the development of radio and telecommunications, foundational to communications systems."
-    },
-    {
-      "episodeTitle": "The Invention of Photography",
-      "pid": "b07j699g",
-      "relevantPathsAI": [
-        "E.2",
-        "G.1"
-      ],
-      "rationaleAI": "The invention of photography covers cameras, photographic processes (daguerreotype, calotype), and photographic technology, directly relevant to photography technology and recording instruments."
-    },
-    {
-      "episodeTitle": "Optics",
-      "pid": "b00774t5",
-      "relevantPathsAI": [
-        "G.3",
-        "K.1.b"
-      ],
-      "rationaleAI": "Optics covers fibre optics and lasers, directly relevant to holography/laser photography and passive electronic components in communications."
-    },
-    {
-      "episodeTitle": "Automata",
-      "pid": "b0bk1c4d",
-      "relevantPathsAI": [
-        "D.5"
-      ],
-      "rationaleAI": "Automata's connections to the development of computing and robotics are relevant to artificial intelligence and robotics."
+      "relevantPathsAI": ["D.5"],
+      "rationaleAI": "Examines whether machines can think or be conscious, featuring Turing's pioneering work, Aleksander's neural computer Magnus, and Searle's Chinese Room Argument, directly addressing artificial intelligence and computational creativity (D.5)."
     },
     {
       "episodeTitle": "Logic",
       "pid": "b00vcqcx",
-      "relevantPathsAI": [
-        "D.2",
-        "D.3"
-      ],
-      "rationaleAI": "Formal logic from Aristotle through Boole to Godel's incompleteness theorems provided the foundations for programming and computer languages."
+      "relevantPathsAI": ["D", "D.5"],
+      "rationaleAI": "Gödel's incompleteness theorems and Turing's extension of logical foundations into computation directly influenced the development of electronic computers (D), and the episode explicitly cites logic's role in the development of artificial intelligence (D.5)."
     },
     {
-      "episodeTitle": "Echolocation",
-      "pid": "b0b6hrl3",
-      "relevantPathsAI": [
-        "J.2"
-      ],
-      "rationaleAI": "Echolocation covers biological sonar and comparisons with human-made sonar technology, relevant to sonar systems and remote sensing."
+      "episodeTitle": "Information Technology",
+      "pid": "p00546lm",
+      "relevantPathsAI": ["D.4", "H", "H.1.d", "I.8"],
+      "rationaleAI": "Directly addresses the information technology revolution, covering internet growth and electronic networks (I.8), media convergence and digital dissemination (H.1.d), and transformations in commerce and communication through computing applications (D.4)."
     },
     {
-      "episodeTitle": "e",
-      "pid": "b04hz49f",
-      "relevantPathsAI": [
-        "D.2"
-      ],
-      "rationaleAI": "Euler's number e and its applications in calculus and exponential functions are foundational to signal processing and computer programming."
+      "episodeTitle": "Cryptography",
+      "pid": "p004y272",
+      "relevantPathsAI": ["I.9"],
+      "rationaleAI": "Traces the history of cryptography from Renaissance ciphers through modern algorithms underpinning digital security, directly covering encryption and decryption techniques, signal security, message authentication, and the history of cryptology (I.9)."
     },
     {
-      "episodeTitle": "Episode 3",
-      "pid": "b018xsmd",
-      "relevantPathsAI": [
-        "E.3",
-        "I.1"
-      ],
-      "rationaleAI": "The relationship between writing and religion covers the impact of printing on religious practice (Reformation), relevant to printing machines and publishing systems."
+      "episodeTitle": "Random and Pseudorandom",
+      "pid": "b00x9xjb",
+      "relevantPathsAI": ["D", "I.9"],
+      "rationaleAI": "Covers pseudorandom number generation by digital computers and cryptographic security for electronic transactions (I.9), including the ERNIE random number generator and the inherent determinism of computing requiring pseudorandom algorithms (D)."
     },
     {
-      "episodeTitle": "Literature",
+      "episodeTitle": "Thomas Edison",
+      "pid": "b00wdjr8",
+      "relevantPathsAI": ["F.1", "I.3"],
+      "rationaleAI": "Edison's invention of the phonograph is foundational to mechanical sound recording and reproduction (F.1), and his major improvements to the telegraph and microphone design directly address telegraph systems and equipment (I.3)."
+    },
+    {
+      "episodeTitle": "Conductors and Semiconductors",
+      "pid": "b01c7sml",
+      "relevantPathsAI": ["K.1.a", "K.1.c"],
+      "rationaleAI": "Semiconductor physics enabling transistors, solar cells, and silicon chips (K.1.a) revolutionized telecommunications, and these devices form the basis of integrated circuits and microprocessors used in communications systems (K.1.c)."
+    },
+    {
+      "episodeTitle": "The Written World: Episode 1",
+      "pid": "b018wfsc",
+      "relevantPathsAI": ["E.1"],
+      "rationaleAI": "Examines the technology of writing including the oldest surviving implements and making signs on clay, wood, and parchment, directly covering simple recording implements and devices (E.1)."
+    },
+    {
+      "episodeTitle": "The Written World: Episode 2",
+      "pid": "b018wy46",
+      "relevantPathsAI": ["E.1", "E.3"],
+      "rationaleAI": "Traces evolution of writing technology from classical antiquity through the invention of printing, covering changes in writing materials and formats (E.1) and the development of printing as a reproduction technology (E.3)."
+    },
+    {
+      "episodeTitle": "The Alphabet",
+      "pid": "p0054950",
+      "relevantPathsAI": ["E.1"],
+      "rationaleAI": "The alphabet as a technology encoding spoken language into phonemic symbols represents a foundational information-recording system (E.1), enabling record-keeping and knowledge transmission across civilizations through its diffusion into Phoenician, Greek, Latin, and Arabic scripts."
+    },
+    {
+      "episodeTitle": "Maxwell",
+      "pid": "p005491g",
+      "relevantPathsAI": ["A", "I.5", "I.6", "J.1"],
+      "rationaleAI": "Maxwell's electromagnetic field equations provided the theoretical foundation for communication and information theory (A), and his prediction of electromagnetic waves directly enabled radio (I.5), television (I.6), and radar (J.1) communications technologies."
+    },
+    {
+      "episodeTitle": "Michael Faraday",
+      "pid": "b06s9rz9",
+      "relevantPathsAI": ["K"],
+      "rationaleAI": "Faraday's discovery of electromagnetic induction established the principle underlying electric generators and transformers essential to all electronic communications, and his field theory concepts formalized by Maxwell underpin electronic components and techniques used in communications (K)."
+    },
+    {
+      "episodeTitle": "The Science of Glass",
+      "pid": "b05w456c",
+      "relevantPathsAI": ["I.4", "K.1.b"],
+      "rationaleAI": "Fiber optics enabling global telecommunications directly relates to telephone and telecommunications systems (I.4), and optical fibers function as passive waveguide components in communications infrastructure (K.1.b)."
+    },
+    {
+      "episodeTitle": "The Written World: Literature",
       "pid": "b018xw60",
-      "relevantPathsAI": [
-        "E.1"
-      ],
-      "rationaleAI": "The origins of writing and literature from cuneiform to alphabetic systems are foundational to information recording and communication systems."
+      "relevantPathsAI": ["E.1"],
+      "rationaleAI": "Traces the origins and development of writing systems from cuneiform tablets through alphabetic systems, covering the foundational information-recording technology (E.1) that enabled literature, law, and knowledge preservation."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

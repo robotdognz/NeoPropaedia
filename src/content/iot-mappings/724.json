@@ -2,60 +2,30 @@
   "sectionCode": "724",
   "mappings": [
     {
+      "episodeTitle": "The California Gold Rush",
+      "pid": "b05nxgdd",
+      "relevantPathsAI": ["B.1", "B.1.a", "B.1.b", "C.3.f"],
+      "rationaleAI": "Gold discovery near Sacramento triggered massive mining operations including hydraulic mining and mercury-based extraction, directly illustrating surface mining processes (B.1.a), metal ore products (B.1.b), and gold production (C.3.f), while demonstrating the environmental consequences of industrial-scale resource extraction."
+    },
+    {
       "episodeTitle": "The Iron Age",
       "pid": "b00zm1ks",
-      "relevantPathsAI": [
-        "B.1",
-        "C.3",
-        "C.3.g"
-      ],
-      "rationaleAI": "The Iron Age covers iron smelting technology, its advantages over bronze, and the spread of ironworking, directly relevant to mining/quarrying and the production of iron from metal ores."
-    },
-    {
-      "episodeTitle": "The Industrial Revolution",
-      "pid": "b00wqdc7",
-      "relevantPathsAI": [
-        "B.1.b",
-        "C.3.g",
-        "C.3.o"
-      ],
-      "rationaleAI": "The Industrial Revolution covers coal mining, iron and steel production, directly relevant to mining products and the processing of iron and steel."
-    },
-    {
-      "episodeTitle": "Carbon",
-      "pid": "p003c1cj",
-      "relevantPathsAI": [
-        "C.3.g",
-        "C.3.o"
-      ],
-      "rationaleAI": "Carbon's industrial applications in steel manufacturing directly relate to the production of iron and steel alloys."
+      "relevantPathsAI": ["B.1.b", "C.3", "C.3.g"],
+      "rationaleAI": "Iron smelting technology requiring higher temperatures than bronze, the abundance and wide distribution of iron ore, and the manufacture of harder tools and weapons address metal ore extraction (B.1.b) and the production and processing of iron (C.3.g)."
     },
     {
       "episodeTitle": "The Science of Glass",
       "pid": "b05w456c",
-      "relevantPathsAI": [
-        "C.5.a"
-      ],
-      "rationaleAI": "Glass science covers the history of glassmaking from ancient Mesopotamia through Venetian Murano to modern applications, directly relevant to the manufacture of glass and glass products."
+      "relevantPathsAI": ["C.5", "C.5.a"],
+      "rationaleAI": "Five thousand years of glass manufacturing from raw materials, Venetian Murano craft traditions, modern float glass production, and fiber optics fabrication directly address the manufacture of conventional and special types of glass and glass products (C.5.a)."
     },
     {
-      "episodeTitle": "The Geological Formation of Britain",
-      "pid": "b00n8t48",
-      "relevantPathsAI": [
-        "A.1",
-        "B.1.b"
-      ],
-      "rationaleAI": "The geological formation of Britain covers Carboniferous coal measures and mineral resources, directly relevant to the identification and distribution of natural resources and mining products."
-    },
-    {
-      "episodeTitle": "Oxygen",
-      "pid": "b0088nql",
-      "relevantPathsAI": [
-        "C.7"
-      ],
-      "rationaleAI": "Oxygen's discovery and isolation relates to the processing of air to obtain oxygen and other gases."
+      "episodeTitle": "The Industrial Revolution",
+      "pid": "b00wqdc7",
+      "relevantPathsAI": ["B.1.b", "C.2", "C.3.g", "C.3.o"],
+      "rationaleAI": "Cheap iron and steel manufacturing and coal-powered industrial processes address coal utilization (C.2), iron production (C.3.g), steel manufacturing (C.3.o), and the mining of coal and metal ores as industrial raw materials (B.1.b)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

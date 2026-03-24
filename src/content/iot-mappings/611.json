@@ -2,107 +2,157 @@
   "sectionCode": "611",
   "mappings": [
     {
-      "episodeTitle": "Walter Benjamin",
-      "pid": "m0014710",
+      "episodeTitle": "Beauty",
+      "pid": "p003k9hf",
       "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "B.1.b"
+        "A",
+        "A.2"
       ],
-      "rationaleAI": "Benjamin's The Work of Art in the Age of Mechanical Reproduction, with its concepts of aura and authenticity in mass culture, directly addresses theories concerning the nature, functions, and effects of art and the impact of mechanical reproduction on artistic works."
+      "rationaleAI": "Philosophical theories of beauty from Plato through Keats address whether beauty is inherent or subjective, mapping directly to diverse theories concerning the nature of art (A.2) and fundamental conceptions of art's scope (A)."
     },
     {
       "episodeTitle": "The Muses",
       "pid": "b07bft7v",
       "relevantPathsAI": [
-        "A.3",
-        "B.1.c"
+        "A.1",
+        "A.3"
       ],
-      "rationaleAI": "The Muses' role in Greek mythology as presiders over the arts, the concept of divine inspiration versus human craft, and their influence on Renaissance and Romantic conceptions of creativity directly address the creative process and performers as interpreters/creators."
+      "rationaleAI": "The Muses' patronage of poetry, song, music, and dance raises foundational questions about whether artistic inspiration is divine gift or cultivated power, directly addressing conceptions of art's scope (A.1) and the creative process (A.3)."
+    },
+    {
+      "episodeTitle": "Inspiration and Genius",
+      "pid": "p00546v2",
+      "relevantPathsAI": [
+        "A.3",
+        "A.1"
+      ],
+      "rationaleAI": "Examination of whether exceptional creative ability is innate or cultivated, from divine inspiration in antiquity through Romantic conceptions of the solitary creator, directly addresses the creative process (A.3) and conceptions of art's scope (A.1)."
+    },
+    {
+      "episodeTitle": "Walter Benjamin",
+      "pid": "m0014710",
+      "relevantPathsAI": [
+        "A.2",
+        "B.1.b"
+      ],
+      "rationaleAI": "Benjamin's argument that mechanical reproduction dissolved art's traditional aura and transformed its aesthetic experience and political function is a landmark contribution to theories of art's nature and effects (A.2), while his focus on photography and film addresses the production of artistic works as physical objects through new technologies (B.1.b)."
     },
     {
       "episodeTitle": "The Frankfurt School",
       "pid": "b00pr54s",
       "relevantPathsAI": [
-        "A.2"
+        "A.2",
+        "B.3"
       ],
-      "rationaleAI": "The Frankfurt School's critique of the culture industry (Adorno), analysis of mass culture, and synthesis of Marxist and Freudian approaches to art directly address theories concerning the functions and effects of art."
+      "rationaleAI": "Critical theory's argument that mass culture (film, radio, popular music) functions to maintain capitalist social conformity constitutes a pragmatic theory of art's effects (A.2) and addresses the characterization of art by social circumstances and audience, including the popular arts (B.3)."
     },
     {
-      "episodeTitle": "Aristotle's Poetics",
-      "pid": "b00xw210",
+      "episodeTitle": "The Avant Garde's Decline and Fall in the 20th Century",
+      "pid": "p00545dc",
       "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "B.4"
+      ],
+      "rationaleAI": "The social function of art, exhaustion of progressive artistic narratives from Dadaism through Pop Art, and tension between aesthetic radicalism and institutional absorption address conceptions of art's scope (A.1), theories of art's functions (A.2), and the nature and varieties of style (B.4)."
+    },
+    {
+      "episodeTitle": "Tolstoy",
+      "pid": "p00548d7",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2"
+      ],
+      "rationaleAI": "Tolstoy's renunciation of fiction in favour of moral truth and his conviction that art serves no purpose unless it advances ethical commitment exemplify the tension between aesthetic achievement and pragmatic theories of art's function (A.2) and competing conceptions of art's scope (A.1)."
+    },
+    {
+      "episodeTitle": "William Morris",
+      "pid": "b0b9w0vq",
+      "relevantPathsAI": [
+        "A.1",
         "A.2",
         "B.1.a"
       ],
-      "rationaleAI": "Aristotle's Poetics establishes mimesis (imitation) as the foundational theory of art, examines tragedy's functions (catharsis), and validates poetry's philosophical purpose -- directly addressing diverse theories of art's nature and functions."
+      "rationaleAI": "Morris's Arts and Crafts movement sought to reunite beauty with daily life and diagnosed the disconnection between art and society, addressing pragmatic theories of art's functions (A.2), conceptions of art's scope (A.1), and the distinction between useful and fine art (B.1.a)."
     },
     {
-      "episodeTitle": "The Invention of Photography",
-      "pid": "b07j699g",
-      "relevantPathsAI": [
-        "A.2",
-        "B.1.b",
-        "B.2"
-      ],
-      "rationaleAI": "Photography's invention raises fundamental questions about art versus mechanical reproduction, the status of photography as art, and the democratisation of image-making -- addressing theories of art and distinctions among art kinds."
-    },
-    {
-      "episodeTitle": "Taste",
-      "pid": "b0082dzm",
-      "relevantPathsAI": [
-        "A.2",
-        "B.3.4"
-      ],
-      "rationaleAI": "Taste as a philosophical concept covering debates about subjective versus universal standards (Addison, Burke, Hume, Kant) and the relationship between aesthetic taste and social class directly addresses theories of art and style in the arts."
-    },
-    {
-      "episodeTitle": "The Artist",
-      "pid": "p00548cd",
-      "relevantPathsAI": [
-        "A.2",
-        "B.3.4.b"
-      ],
-      "rationaleAI": "The changing status and social role of the artist from medieval craftsman to Renaissance genius to modern celebrity addresses diverse conceptions of art and period styles."
-    },
-    {
-      "episodeTitle": "Architecture in the 20th Century",
-      "pid": "p00545fm",
+      "episodeTitle": "The Vienna Secession",
+      "pid": "m002d1b5",
       "relevantPathsAI": [
         "B.1.a",
-        "B.3.4.b"
+        "B.4.b",
+        "A.1"
       ],
-      "rationaleAI": "20th-century architecture's competing movements (Art Nouveau, Bauhaus, Brutalism, Postmodernism) and the tension between useful and fine art directly address classification of arts by useful/fine distinction and period styles."
-    },
-    {
-      "episodeTitle": "Sturm und Drang",
-      "pid": "b00v72x6",
-      "relevantPathsAI": [
-        "A.2",
-        "B.3.4.b"
-      ],
-      "rationaleAI": "Sturm und Drang's rebellion against Enlightenment rationalism and celebration of emotion, individual genius, and nature addresses expressive theories of art and period style as a precursor to Romanticism."
-    },
-    {
-      "episodeTitle": "The Romantics",
-      "pid": "p00546ws",
-      "relevantPathsAI": [
-        "A.2",
-        "A.3",
-        "B.3.4.b"
-      ],
-      "rationaleAI": "Romanticism's emphasis on emotion, imagination, and individual genius, its reaction against Neoclassicism, and its enduring impact on concepts of creativity directly address expressive theories of art, the creative process, and period style."
+      "rationaleAI": "The Secession's declaration that no distinction exists between fine and applied art directly challenges the useful/fine art classification (B.1.a), while its break from academic convention exemplifies period and school style formation (B.4.b) and redefines conceptions of art's scope (A.1)."
     },
     {
       "episodeTitle": "Bauhaus",
       "pid": "m001dxtg",
       "relevantPathsAI": [
         "B.1.a",
-        "B.3.4.b"
+        "B.4.b",
+        "A.1"
       ],
-      "rationaleAI": "The Bauhaus's integration of fine art with crafts and industrial design and its pedagogical innovations directly address the distinction between useful and fine art and 20th-century period style."
+      "rationaleAI": "The Bauhaus combined arts and crafts education, erasing boundaries between fine art, design, and architecture, directly addressing the classification of useful and fine art (B.1.a) and establishing a defining school style of twentieth-century modernism (B.4.b)."
+    },
+    {
+      "episodeTitle": "The Invention of Photography",
+      "pid": "b07j699g",
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.2",
+        "A.2"
+      ],
+      "rationaleAI": "Photography's emergence provoked new theories of visual representation and debate over whether it killed painting or spurred artistic reinvention, addressing the manipulation of physical matter in art production (B.1.b), distinctions among kinds of art (B.2), and theories of art's nature (A.2)."
+    },
+    {
+      "episodeTitle": "The Waltz",
+      "pid": "m001x50m",
+      "relevantPathsAI": [
+        "B.1.c",
+        "B.2"
+      ],
+      "rationaleAI": "The waltz's evolution from social dance to high art across music, ballet, poetry, and modernist reinterpretation illustrates performers as interpreters and creators (B.1.c) and the interrelation of time arts and space arts (B.2)."
+    },
+    {
+      "episodeTitle": "Hokusai",
+      "pid": "b08k1b0q",
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.3",
+        "B.4.b"
+      ],
+      "rationaleAI": "Hokusai's ukiyo-e woodblock printing and incorporation of Western pigments into Japanese printmaking address the production of artistic works as physical objects (B.1.b), cultural circumstances of art production (B.3), and ethnic and personal style (B.4.b)."
+    },
+    {
+      "episodeTitle": "Gothic",
+      "pid": "p0054792",
+      "relevantPathsAI": [
+        "B.4.b",
+        "B.3",
+        "A.2"
+      ],
+      "rationaleAI": "The Gothic tradition spanning literature, architecture, and visual arts from Walpole through the Victorian era exemplifies a major period style (B.4.b), while its embrace of the irrational and sublime as an anti-Enlightenment force constitutes a distinct expressive theory of art (A.2)."
+    },
+    {
+      "episodeTitle": "Shakespeare and Literary Criticism",
+      "pid": "p00545dp",
+      "relevantPathsAI": [
+        "A.2",
+        "B.3"
+      ],
+      "rationaleAI": "Discussion of formalist, historicist, postcolonial, and theoretical approaches to Shakespeare surveys diverse critical theories of art (A.2), while debates over canonicity and cultural capital address characterization of works by cultural and social circumstances (B.3)."
+    },
+    {
+      "episodeTitle": "Bohemianism",
+      "pid": "p005491s",
+      "relevantPathsAI": [
+        "B.3",
+        "A.1"
+      ],
+      "rationaleAI": "Bohemianism as a philosophy of life lived for art, connecting Romantic and Modernist artistic communities across Paris and Britain, addresses the social and cultural circumstances of artistic production (B.3) and competing conceptions of what art encompasses (A.1)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }
