@@ -10,62 +10,36 @@
         "B.2.d.ii",
         "B.2.e"
       ],
-      "rationaleAI": "Directly covers the Warring States period (481-221 BCE), the breakdown of the Chou feudal system, the Hundred Schools of Thought including Confucianism, Daoism, Legalism, and Mohism, and the eventual unification under Qin, mapping to B.2.d and B.2.e."
-    },
-    {
-      "episodeTitle": "Confucius",
-      "pid": "p00547k8",
-      "relevantPathsAI": [
-        "B.2.e",
-        "C.2.c.i"
-      ],
-      "rationaleAI": "Confucianism as founded by Confucius (551-479 BCE), its core teachings on benevolence and governance, and its adoption as state ideology under the Han dynasty directly correspond to B.2.e (Classical period philosophy) and C.2.c.i (Han political system)."
+      "rationaleAI": "Directly examines the Warring States period (c.475-221 BC), covering political turmoil among rival states, economic and social transformation, and the intellectual ferment of the 'hundred schools' including Confucianism, Taoism, and Yin-Yang cosmology that defined the Classical period of Chinese philosophy."
     },
     {
       "episodeTitle": "Chinese Legalism",
       "pid": "b06r84qy",
       "relevantPathsAI": [
         "B.2.e",
-        "C.1",
         "C.1.a",
         "C.1.b"
       ],
-      "rationaleAI": "Chinese Legalism's emphasis on strict laws and meritocratic bureaucracy under Shang Yang and Han Feizi, and its role in Qin unification and centralization, directly correspond to B.2.e (the Legalists) and C.1 (establishment of the Ch'in empire)."
+      "rationaleAI": "Covers Legalism from the Warring States period through the First Emperor, including Shang Yang's reforms under Hsiao Kung and Han Fei's synthesis — key philosophical and political currents in the 'hundred schools' and the Ch'in unification of China."
     },
     {
       "episodeTitle": "The Han Synthesis",
       "pid": "p004y29t",
       "relevantPathsAI": [
         "C.2",
-        "C.2.c.i"
+        "C.2.c",
+        "C.2.c.i",
+        "C.2.c.iii"
       ],
-      "rationaleAI": "The Han Synthesis blending Confucian, Legalist, and Daoist thought, Dong Zhongshu's cosmological Confucianism, and the establishment of the imperial examination system directly correspond to C.2.c.i (the Han political system) and Han cultural developments."
-    },
-    {
-      "episodeTitle": "Romance of the Three Kingdoms",
-      "pid": "b02ykzh7",
-      "relevantPathsAI": [
-        "D.1.a"
-      ],
-      "rationaleAI": "Romance of the Three Kingdoms covers the historical period of the Han Dynasty's fall and the Three Kingdoms era (220-280 CE), directly corresponding to D.1.a (division of the empire into Wei, Shu Han, and Wu)."
+      "rationaleAI": "Examines the grand intellectual consolidation under the Han dynasty, merging Confucian ethics with cosmological frameworks into unified state ideology, establishing civil service examinations and the imperial academy — directly addressing Han political philosophy, bureaucratic governance, and cultural attainments."
     },
     {
       "episodeTitle": "The Great Wall of China",
       "pid": "b00s3h3w",
       "relevantPathsAI": [
-        "C.1.b",
-        "C.2.c.ii"
+        "C.1.b"
       ],
-      "rationaleAI": "The Great Wall's construction from the Warring States through the Qin and Han dynasties, its defence against the Xiongnu, and its relationship to the Silk Road correspond to C.1.b (Shih Huang Ti's Great Wall) and C.2.c.ii (relations with the Hsiung-nu)."
-    },
-    {
-      "episodeTitle": "Sun Tzu and The Art of War",
-      "pid": "b09smh59",
-      "relevantPathsAI": [
-        "B.2.d.ii",
-        "B.2.e"
-      ],
-      "rationaleAI": "Sun Tzu and The Art of War from the 5th-century BCE Warring States period, covering military strategy and its relationship to Chinese philosophical thought, directly corresponds to B.2.e (the Classical period) and B.2.d.ii (military innovations during the Warring States)."
+      "rationaleAI": "Qin Shi Huang's construction of the Great Wall after 221 BC unification by connecting existing state walls is a defining project of the Ch'in empire, exemplifying centralized power, highway building, and monumental infrastructure under Shih Huang Ti."
     },
     {
       "episodeTitle": "Sources of Early Chinese History",
@@ -74,7 +48,15 @@
         "A",
         "B.2.b"
       ],
-      "rationaleAI": "Sources of early Chinese history including oracle bones, Sima Qian's Records of the Grand Historian, and bamboo strip texts directly correspond to outline A on historical sources and B.2.b on the Shang period's script and cultural artefacts."
+      "rationaleAI": "Addresses archaeological and documentary historical sources for early China, including Shang dynasty oracle bone inscriptions, bamboo strips, and challenges of interpreting pre-printing texts — directly relevant to historiographic problems and the Shang period's script and cultural artefacts."
+    },
+    {
+      "episodeTitle": "Romance of the Three Kingdoms",
+      "pid": "b02ykzh7",
+      "relevantPathsAI": [
+        "D.1.a"
+      ],
+      "rationaleAI": "Dramatizes the collapse of the Han Dynasty and the division into the Three Kingdoms of Wei, Shu, and Wu in 2nd-3rd century AD China, covering warfare, political strategy, and feudal rivalries corresponding to the Six Dynasties period's opening phase."
     },
     {
       "episodeTitle": "The Battle of Talas",
@@ -82,9 +64,17 @@
       "relevantPathsAI": [
         "D.2.c.ii"
       ],
-      "rationaleAI": "The Battle of Talas (751) between the Abbasid Caliphate and the Tang Dynasty, halting Chinese westward expansion and facilitating technology transfer, corresponds to D.2.c.ii (T'ai Tsung's conquests and later military reverses under the early T'ang)."
+      "rationaleAI": "The 751 AD battle between the Abbasid Caliphate and Tang Dynasty China in Central Asia represents a major military reverse in the period of T'ang power, occurring four years before the Late T'ang cutoff of 755 and illustrating T'ang foreign affairs and the limits of Chinese westward expansion."
+    },
+    {
+      "episodeTitle": "The Needham Question",
+      "pid": "p0038x9m",
+      "relevantPathsAI": [
+        "A"
+      ],
+      "rationaleAI": "Examines the character and achievements of Chinese civilization through the question of why China's early technological innovations — gunpowder, printing, compass, paper — did not lead to modern science, providing broad context for understanding China's scientific accomplishments across the dynasties covered in this section."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

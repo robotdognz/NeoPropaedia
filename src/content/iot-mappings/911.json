@@ -16,9 +16,11 @@
       "pid": "m0012q5n",
       "relevantPathsAI": [
         "D.2.a.iv",
-        "E.2.a"
+        "E.2.a",
+        "E.2.a.i",
+        "E.2.a.ii"
       ],
-      "rationaleAI": "The Hittites covers the establishment of the Old Hittite Kingdom in Anatolia (D.2.a.iv) and the Hittite Empire's conflicts with Egypt (E.2.a)."
+      "rationaleAI": "The Hittite Empire's occupation of Anatolia, expansion into Syria under Suppiluliumas I, the Battle of Kadesh against Ramesses II, and the destruction of the capital Hattusa c. 1190 BC directly cover the Old Hittite Kingdom (D.2.a.iv) and the Hittite Empire's conflict with Egypt (E.2.a)."
     },
     {
       "episodeTitle": "Epic of Gilgamesh",
@@ -34,57 +36,64 @@
       "relevantPathsAI": [
         "E.1.a.ii"
       ],
-      "rationaleAI": "Akhenaten's religious reforms and the cult of Aton directly address the reign of Akhenaton and the cult of the god Aton in the 18th dynasty (E.1.a.ii)."
+      "rationaleAI": "Akhenaten's revolutionary elevation of the solar god Aten, the accompanying transformations in art and architecture, Nefertiti's role, and the subsequent erasure of his legacy directly address the reign of Akhenaton (Amenhotep IV, 1353-1336 BC), the cult of Aton, and the eclipse of the dynasty (E.1.a.ii)."
     },
     {
       "episodeTitle": "Hatshepsut",
       "pid": "b04n62jx",
       "relevantPathsAI": [
-        "E.1.a.i"
+        "E.1.a",
+        "E.1.c"
       ],
-      "rationaleAI": "Hatshepsut's reign including her mortuary temple and building programs directly addresses the 18th dynasty's territorial expansion and cultural developments (E.1.a.i)."
+      "rationaleAI": "Hatshepsut's rule during the 18th Dynasty (c. 1479-1458 BC), her trade expedition to Punt, architectural commissions including Deir el-Bahri, and innovative pharaonic ideology directly address the 18th dynasty's centralized administration and cultural developments (E.1.a) and New Kingdom society and culture (E.1.c)."
     },
     {
       "episodeTitle": "Cyrus the Great",
       "pid": "m0028tzc",
       "relevantPathsAI": [
         "G.2.d.ii",
-        "G.3.c"
+        "G.3"
       ],
-      "rationaleAI": "Cyrus the Great's establishment of the Achaemenid Empire, conquest of Babylon, and liberation of the Jews directly addresses the establishment of Achaemenid Persian rule (G.2.d.ii) and Achaemenid society and culture (G.3.c)."
+      "rationaleAI": "Cyrus II's founding of the Achaemenid Persian Empire, his conquest of territories spanning over two million square miles, and his reputation for tolerance toward subject peoples directly address the establishment of Persian rule (G.2.d.ii) and the Achaemenid Empire's origins (G.3)."
     },
     {
       "episodeTitle": "Persepolis",
       "pid": "b0b4z075",
       "relevantPathsAI": [
-        "G.3.c"
+        "G.3.c",
+        "G.3.b"
       ],
-      "rationaleAI": "Persepolis as ceremonial capital of the Achaemenid Empire with its monumental architecture directly addresses Achaemenid capitals and culture (G.3.c)."
+      "rationaleAI": "Persepolis as ceremonial capital of the Achaemenid Empire founded by Darius I, its role in receiving tribute from subject peoples, and its destruction by Alexander in 330 BC directly illustrate Achaemenid society, culture, and capitals (G.3.c) and the empire's conquest by Alexander (G.3.b)."
     },
     {
       "episodeTitle": "Alexander the Great",
       "pid": "b06d9bkx",
       "relevantPathsAI": [
-        "G.3.b"
+        "G.3.b",
+        "G.3.d"
       ],
-      "rationaleAI": "Alexander the Great's conquest of the Persian Empire directly addresses the conquest resulting in the end of Achaemenid rule (G.3.b)."
+      "rationaleAI": "Alexander's conquest of the Persian Empire, defeat of Darius III, and establishment of Hellenistic rule across the Near East from Anatolia to Iran directly cover the fall of the Achaemenid Empire (G.3.b) and the subsequent Seleucid succession (G.3.d)."
     },
     {
       "episodeTitle": "The Sassanid Empire",
       "pid": "b008g2x5",
       "relevantPathsAI": [
-        "H.2"
+        "H.2",
+        "H.2.a",
+        "H.2.b",
+        "H.2.c"
       ],
-      "rationaleAI": "The Sassanid Empire directly addresses extension of Iranian power under the Sasanian dynasty (H.2) including its founding, wars with Rome/Byzantium, and Arab conquest."
+      "rationaleAI": "The Sasanian Empire from its founding c. 226 AD through Shapur I's defeat of Roman Emperor Valerian, Zoroastrianism as state religion, Silk Road trade networks, and the fall to seventh-century Islamic conquests directly covers the extension of Iranian power under the Sasanian dynasty (H.2), including religious developments (H.2.b) and the Arab conquest ending the empire (H.2.c)."
     },
     {
       "episodeTitle": "The Phoenicians",
       "pid": "b03szw8l",
       "relevantPathsAI": [
         "F.2.a",
-        "E.2.b.i"
+        "E.2.b.i",
+        "I.5.a"
       ],
-      "rationaleAI": "The Phoenicians as maritime civilisation with alphabetic writing, the founding of Carthage, and trade directly address Canaanite-Phoenician commercial city-states (F.2.a) and Levantine seafaring trade (E.2.b.i)."
+      "rationaleAI": "The Phoenician city-states of Tyre, Sidon, and Byblos as the Mediterranean's foremost seafarers, their development of the alphabet transmitted to the Greeks, and the founding of Carthage directly cover Canaanite-Phoenician commercial city-states (F.2.a), Levantine seafaring trade (E.2.b.i), and the Phoenician foundation of Carthage (I.5.a)."
     },
     {
       "episodeTitle": "The Iron Age",
@@ -92,15 +101,18 @@
       "relevantPathsAI": [
         "F"
       ],
-      "rationaleAI": "The Iron Age beginning around 1200 BC in the Near East directly addresses the era of new states and the beginning of the Iron Age (F)."
+      "rationaleAI": "The spread of iron smelting technology from the Middle East around 1000 BC, replacing bronze and enabling new settlement patterns and agricultural expansion, directly addresses the beginning of the Iron Age era of new states in Southwest Asia (F)."
     },
     {
       "episodeTitle": "The Bronze Age Collapse",
       "pid": "b07fl5bh",
       "relevantPathsAI": [
-        "E.5.b"
+        "E",
+        "E.2",
+        "E.5.b",
+        "F"
       ],
-      "rationaleAI": "The Bronze Age collapse around 1200-1150 BCE including the fall of Mycenaean Greece, Hittite Empire, and Sea Peoples directly addresses the end of the Bronze Age in the Aegean (E.5.b)."
+      "rationaleAI": "The destruction of Mycenaean Greece, the Hittite Empire, the Egyptian New Kingdom, and Syrian city-states around 1200 BC, including the Sea Peoples' invasions, directly addresses the end of the Bronze Age palatial civilizations (E.5.b) and the transition to the Iron Age era of new states (F)."
     },
     {
       "episodeTitle": "The Minoan Civilisation",
@@ -108,7 +120,7 @@
       "relevantPathsAI": [
         "D.2.c.ii"
       ],
-      "rationaleAI": "The Minoan civilisation of Bronze Age Crete with palace complexes, Linear A, and the Thera eruption directly addresses the Minoan civilization (D.2.c.ii)."
+      "rationaleAI": "The Minoan palace complexes at Knossos, Phaistos, and Malia, Linear A script, thalassocratic trading connections to Egypt and the Near East, and debates over destruction by Thera's eruption or Mycenaean conquest directly cover the Minoan civilization on Crete during the Early and Later Palace periods (D.2.c.ii)."
     },
     {
       "episodeTitle": "The Trojan War",
@@ -147,9 +159,10 @@
       "episodeTitle": "Carthage's Destruction",
       "pid": "b00hdd5x",
       "relevantPathsAI": [
-        "I.5.b"
+        "I.5.b",
+        "I.5.c"
       ],
-      "rationaleAI": "Carthage's destruction covers the rivalry between Rome and Carthage and the Punic Wars resulting in Carthage's destruction (I.5.b)."
+      "rationaleAI": "Rome's destruction of Carthage in 146 BC, Carthage's significance as North Africa's most powerful ancient city for Mediterranean trade, and Rome's subsequent supremacy directly cover Carthage as the leading western Mediterranean power and the Punic Wars (I.5.b) and Roman penetration into North Africa (I.5.c)."
     },
     {
       "episodeTitle": "The Roman Republic",
@@ -174,8 +187,68 @@
         "E.1.a.ii"
       ],
       "rationaleAI": "Tutankhamun's restoration of traditional polytheism after Akhenaten's reforms directly addresses the eclipse of the 18th dynasty (E.1.a.ii)."
+    },
+    {
+      "episodeTitle": "Judas Maccabeus",
+      "pid": "b017cjm8",
+      "relevantPathsAI": [
+        "G.3.d"
+      ],
+      "rationaleAI": "The Maccabean revolt against Seleucid Hellenization in 2nd-century BC Judaea, including the rededication of the Temple and the struggle for Jewish political sovereignty, directly addresses the period of Seleucid rule and revolt in the Near East (G.3.d)."
+    },
+    {
+      "episodeTitle": "The Library at Nineveh",
+      "pid": "b00b7r71",
+      "relevantPathsAI": [
+        "G.1.a",
+        "G.1"
+      ],
+      "rationaleAI": "Ashurbanipal's royal library at Nineveh containing thousands of cuneiform tablets preserving Mesopotamian literature, law, science, and the Epic of Gilgamesh directly illustrates Assyrian culture in the Mesopotamian tradition and the great city of Nineveh (G.1.a)."
+    },
+    {
+      "episodeTitle": "King Solomon",
+      "pid": "b01jhjc7",
+      "relevantPathsAI": [
+        "F.2.b",
+        "F.2.b.i",
+        "F.2.b.ii"
+      ],
+      "rationaleAI": "Solomon's reign in the 10th century BC, construction of the First Temple in Jerusalem, his wisdom tradition, and the subsequent split into Judah and Israel directly address the Hebrew kingdom's territorial expansion (F.2.b.i) and the cult of Yahweh and biblical literature (F.2.b.ii)."
+    },
+    {
+      "episodeTitle": "The Arab Conquests",
+      "pid": "b00c5xzc",
+      "relevantPathsAI": [
+        "H.2.c"
+      ],
+      "rationaleAI": "The seventh-century Arab conquest of Sasanian Persia, which ended the Sasanian Empire in 651 AD, directly addresses the extinction of the empire with the Arab conquest referenced in H.2.c as the terminal event of the Sasanian period."
+    },
+    {
+      "episodeTitle": "The Egyptian Book of the Dead",
+      "pid": "b08n1y2v",
+      "relevantPathsAI": [
+        "E.1.c"
+      ],
+      "rationaleAI": "New Kingdom funerary literature spanning c. 1500 BC through the Ptolemaic era, with spells guiding the deceased through the underworld and the weighing-of-the-heart judgment, directly illustrates Egyptian religious practice, the priesthood, and cultural life in the New Kingdom (E.1.c)."
+    },
+    {
+      "episodeTitle": "The Dead Sea Scrolls",
+      "pid": "m001ljc0",
+      "relevantPathsAI": [
+        "G.3.d"
+      ],
+      "rationaleAI": "The Dead Sea Scrolls dating from the 3rd century BCE to the 1st century CE illuminate Second Temple Judaism and Jewish religious diversity during the Seleucid and post-Seleucid period, providing evidence for the Hellenistic Near East (G.3.d)."
+    },
+    {
+      "episodeTitle": "Queen Zenobia",
+      "pid": "b01snjpp",
+      "relevantPathsAI": [
+        "H.1.c",
+        "H.2"
+      ],
+      "rationaleAI": "Zenobia's 3rd-century AD Palmyrene Empire in the Syrian desert, her military rebellion against Rome, conquest of Egypt, and Palmyra's position as a trading hub between Rome and Persia directly relate to the late Parthian period of Roman invasions (H.1.c) and the broader context of Iranian-Roman rivalry (H.2)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

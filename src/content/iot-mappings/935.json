@@ -4,56 +4,34 @@
     {
       "episodeTitle": "Ashoka the Great",
       "pid": "b0511tm1",
-      "relevantPathsAI": [
-        "B.5",
-        "B.5.a",
-        "B.5.b"
-      ],
-      "rationaleAI": "Ashoka the Great's Maurya Empire (c. 268-232 BCE), his conquest of Kalinga, conversion to Buddhism, rock and pillar edicts, and administrative structure directly correspond to B.5 (Mauryan empire) and B.5.a-b on Asoka's consolidation and Mauryan developments."
+      "relevantPathsAI": ["A", "B.5", "B.5.a", "B.5.b"],
+      "rationaleAI": "Ashoka's consolidation of the Mauryan Empire as the largest South Asian state directly covers the Mauryan period (B.5) and his reign c. 265-238 BC (B.5.a), while his stone pillar edicts—deciphered only in the 19th century—are crucial documentary sources for ancient Indian chronology (A) and illustrate Mauryan administrative and cultural developments including Buddhist expansion (B.5.b)."
+    },
+    {
+      "episodeTitle": "The Arthashastra",
+      "pid": "m0014xt4",
+      "relevantPathsAI": ["B.5", "B.5.a", "B.5.b"],
+      "rationaleAI": "Attributed to Chanakya (Kautilya), advisor to Chandragupta Maurya who founded the Mauryan Empire c. 321 BC (B.5.a), this treatise on governance, law, economics, diplomacy, and military strategy directly illuminates Mauryan political and administrative systems (B.5.b) and the evolution of the concept of the state in ancient India."
     },
     {
       "episodeTitle": "Alexander the Great",
       "pid": "b06d9bkx",
-      "relevantPathsAI": [
-        "B.4.b"
-      ],
-      "rationaleAI": "Alexander the Great's advance into Central Asia and India (327 BC) and establishment of Greek settlements directly correspond to B.4.b (invasion by Alexander the Great and establishment of Greek settlements)."
+      "relevantPathsAI": ["B.4.b"],
+      "rationaleAI": "Alexander's conquests extended into Pakistan and part of India, directly corresponding to the invasion of 327 BC and the establishment of Greek settlements in the northwest Indian subcontinent (B.4.b)."
     },
     {
-      "episodeTitle": "The Ramayana",
-      "pid": "m001jst2",
-      "relevantPathsAI": [
-        "B.3.a",
-        "B.7.b"
-      ],
-      "rationaleAI": "The Ramayana as a great Sanskrit epic, with its themes of dharma and ideal kingship, and its cultural influence across South and Southeast Asia, corresponds to B.3.a (early Ganges cultures and religious development) and B.7.b (cultural and religious development in South India)."
-    },
-    {
-      "episodeTitle": "al-Biruni",
-      "pid": "b00smnlk",
-      "relevantPathsAI": [
-        "D.1"
-      ],
-      "rationaleAI": "Al-Biruni's comparative study of Indian civilization in his Kitab al-Hind, written while at the Ghaznavid court, provides a crucial documentary source for D.1 (tripartite struggle in North India and Turkish control in Ghazna from 998)."
-    },
-    {
-      "episodeTitle": "Angkor Wat",
-      "pid": "m0018hd7",
-      "relevantPathsAI": [
-        "A"
-      ],
-      "rationaleAI": "Angkor Wat's design influenced by Hindu cosmology and Indian cultural traditions demonstrates India's civilizational influence on Southeast Asian civilizations, corresponding to outline A on the character and influence of Indian civilizations on Southeast Asia."
+      "episodeTitle": "The Kama Sutra",
+      "pid": "b01bb9c9",
+      "relevantPathsAI": ["C.1", "B.7.b"],
+      "rationaleAI": "Composed during the Gupta dynasty c. 3rd century CE (C.1), the text's treatment of kama alongside dharma and artha reflects the sophisticated Hindu philosophical framework and urban culture of classical India, illustrating cultural and religious developments including the growth of sects in Hinduism (B.7.b)."
     },
     {
       "episodeTitle": "The Iron Age",
       "pid": "b00zm1ks",
-      "relevantPathsAI": [
-        "B.1",
-        "B.3.b"
-      ],
-      "rationaleAI": "The spread of ironworking into India and its role in state formation and agricultural development provides context for B.1 (late Stone Age) and B.3.b (later Ganges cultures and caste system development)."
+      "relevantPathsAI": ["B.3", "B.3.b"],
+      "rationaleAI": "The spread of iron smelting technology and its consequences—agricultural expansion through iron ploughs, new settlement patterns, and the rise of new civilizations—provide essential context for the urbanization and state formation in the Ganges Valley during the later Vedic period (B.3, B.3.b)."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

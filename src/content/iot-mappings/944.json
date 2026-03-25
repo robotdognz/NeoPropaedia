@@ -4,12 +4,10 @@
     {
       "episodeTitle": "The Berlin Conference",
       "pid": "b03ffkfd",
-      "relevantPathsAI": [
-        "B.2"
-      ],
-      "rationaleAI": "The Berlin Conference (1884-85), including the creation of the Congo Free State under Leopold II, directly corresponds to the end-date context for B.2 on the development of Bantu states, as the conference partitioned Central Africa among European powers."
+      "relevantPathsAI": ["A", "B.2"],
+      "rationaleAI": "The 1884-1885 Berlin Conference directly regulated European colonial claims in Central Africa, establishing free trade zones along the Congo River and imposing arbitrary borders that disregarded existing Bantu political structures such as the Kongo, Luba, and Lunda kingdoms, marking the terminal boundary of the pre-colonial period covered by this section."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

@@ -4,64 +4,64 @@
     {
       "episodeTitle": "The Great Stink",
       "pid": "m001gjcm",
-      "relevantPathsAI": [
-        "A.2.a",
-        "A.1",
-        "C.1"
-      ],
-      "rationaleAI": "The Great Stink directly covers London's sanitation crisis and Joseph Bazalgette's sewer engineering solution (A.2.a), the water-supply implications (A.1), and the intersection of public health and urban infrastructure addressing urban pollution (C.1)."
-    },
-    {
-      "episodeTitle": "The Fire of London",
-      "pid": "b00ft63q",
-      "relevantPathsAI": [
-        "A.6"
-      ],
-      "rationaleAI": "The Great Fire of London and subsequent development of fire regulations and insurance directly addresses fire prevention and control technology in urban settings (A.6)."
+      "relevantPathsAI": ["A.2", "A.2.a", "C.1"],
+      "rationaleAI": "Bazalgette's intercepting sewer system for London is a landmark case in urban sanitation engineering (A.2.a), directly addressing sewage disposal technology and its role in eliminating waterborne cholera. The episode also illustrates pollution control (C.1) through the engineering response to the contaminated Thames."
     },
     {
       "episodeTitle": "The City - a history, part 2",
       "pid": "b00rp1fd",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "B.2",
-        "C.1"
-      ],
-      "rationaleAI": "Covers the explosive growth of industrial cities, urban planning, social problems of urbanization including overcrowding and disease, modernist architecture, and contemporary challenges of urban sustainability — spanning water, sanitation, transportation, recreational facilities, and pollution control."
+      "relevantPathsAI": ["A", "A.3"],
+      "rationaleAI": "Railway networks from the 1820s and motor car infrastructure fundamentally reshaped urban transportation systems (A.3), determining population density, land use, and suburban expansion. The episode traces how transportation engineering drove the physical form and growth patterns of modern cities."
     },
     {
       "episodeTitle": "The City in the 20th Century",
       "pid": "p005457r",
-      "relevantPathsAI": [
-        "A.3",
-        "B.2",
-        "C.1"
-      ],
-      "rationaleAI": "Examines 20th-century urban developments including the automobile's impact on city design, suburban expansion, modernist urban planning visions, and the sustainable/smart city concept — relevant to urban transportation (A.3), recreational facilities (B.2), and responses to urban problems (C.1)."
+      "relevantPathsAI": ["A", "A.3", "C.1"],
+      "rationaleAI": "Covers twentieth-century urban infrastructure strain, pollution challenges (C.1), and transportation planning (A.3) including Le Corbusier's rationalist approach to city engineering. The emergence of megacities raises sustainability questions directly tied to the technological capacity of urban community services."
     },
     {
-      "episodeTitle": "The City - a history, part 1",
-      "pid": "b00rfhx2",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2"
-      ],
-      "rationaleAI": "Covers the history of cities from Bronze Age origins including urban infrastructure functions like trade, governance, and the basic engineering needs of early urban settlements — relevant to foundational urban engineering services."
+      "episodeTitle": "Thomas Edison",
+      "pid": "b00wdjr8",
+      "relevantPathsAI": ["A.5"],
+      "rationaleAI": "Edison designed electrical power distribution systems that transformed urban life, pioneering the infrastructure for urban electrification (A.5) including the first commercial power stations serving city districts."
     },
     {
-      "episodeTitle": "London",
-      "pid": "p00546w3",
-      "relevantPathsAI": [
-        "A.1",
-        "A.2",
-        "A.3",
-        "A.6"
-      ],
-      "rationaleAI": "London's history encompasses urban development including water supply, sanitation, transportation systems, and the Great Fire's impact on fire prevention — covering multiple basic engineering services of a major city."
+      "episodeTitle": "Nikola Tesla",
+      "pid": "m001xvhb",
+      "relevantPathsAI": ["A.5"],
+      "rationaleAI": "Tesla's AC induction motor and the victory of alternating current over direct current established the standard for electrifying homes and factories, forming the technological basis of modern urban power distribution systems (A.5)."
+    },
+    {
+      "episodeTitle": "Michael Faraday",
+      "pid": "b06s9rz9",
+      "relevantPathsAI": ["A.5"],
+      "rationaleAI": "Faraday's discovery of electromagnetic induction underpins electric generators, transformers, and modern power stations — the foundational technology enabling urban electrical power systems (A.5)."
+    },
+    {
+      "episodeTitle": "The Fire of London",
+      "pid": "b00ft63q",
+      "relevantPathsAI": ["A.6"],
+      "rationaleAI": "The 1666 Great Fire prompted sweeping urban reconstruction and new building regulations mandating brick and stone, representing a pivotal moment in the development of fire prevention and control technology for cities (A.6)."
+    },
+    {
+      "episodeTitle": "Vitruvius and De Architectura",
+      "pid": "b01d2kzx",
+      "relevantPathsAI": ["A", "A.1"],
+      "rationaleAI": "Vitruvius's treatise systematically covers water supply engineering and civil infrastructure for urban communities (A.1), codifying foundational principles of urban engineering services including aqueduct design and municipal water distribution."
+    },
+    {
+      "episodeTitle": "Brunel",
+      "pid": "b04nvbp1",
+      "relevantPathsAI": ["A.3"],
+      "rationaleAI": "Isambard Kingdom Brunel's bridges, tunnels, and railways constituted major urban and interurban transportation infrastructure (A.3), with engineering projects still in use over 150 years later shaping how cities connect and function."
+    },
+    {
+      "episodeTitle": "Complexity",
+      "pid": "b03ls154",
+      "relevantPathsAI": ["A.3", "B.1.a"],
+      "rationaleAI": "Complexity science's application to city traffic prediction directly addresses urban transportation management (A.3) and traffic control technology (B.1.a), modeling how collective behavior in urban systems can be understood through nonlinear dynamics and self-organization."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

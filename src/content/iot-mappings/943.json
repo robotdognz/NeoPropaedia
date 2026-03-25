@@ -4,36 +4,46 @@
     {
       "episodeTitle": "The Ming Voyages",
       "pid": "b015p8c2",
-      "relevantPathsAI": [
-        "B.1.a"
-      ],
-      "rationaleAI": "Zheng He's voyages to East Africa (1405-1433) are directly relevant to B.1.a on medieval commercial contacts of Azania with Arabia, India, and the Mediterranean, as Ming Chinese trade reached the East African coast."
+      "relevantPathsAI": ["B.1.a"],
+      "rationaleAI": "Zheng He's treasure fleets sailed to the East African coast between 1405 and 1433, establishing tributary relationships and facilitating trade in porcelain, silk, and spices — a direct instance of the medieval commercial contacts between East Africa and distant Asian powers covered under B.1.a."
     },
     {
-      "episodeTitle": "The Silk Road",
-      "pid": "b00p315t",
-      "relevantPathsAI": [
-        "B.1.a"
-      ],
-      "rationaleAI": "The Silk Road's maritime alternative routes connecting the Indian Ocean trade network are relevant to B.1.a on medieval commercial contacts between East Africa and Arabia/India."
+      "episodeTitle": "The Arab Conquests",
+      "pid": "b00c5xzc",
+      "relevantPathsAI": ["B.1.a", "B.1.b"],
+      "rationaleAI": "The seventh- and eighth-century Arab expansion spread Islam, Arabic language, and new trade networks across the western Indian Ocean littoral, providing the foundational context for the medieval Arab commercial contacts with Azania (B.1.a) and the subsequent spread of Islam and growth of Swahili coastal towns under the Shirazi dynasty (B.1.b)."
+    },
+    {
+      "episodeTitle": "The Iron Age",
+      "pid": "b00zm1ks",
+      "relevantPathsAI": ["B.2.b"],
+      "rationaleAI": "The spread of iron smelting technology and its association with new settlement patterns, agricultural expansion, and population movements provides essential background to the Iron Age settlements in the Rift Valley and the Bantu migrations discussed in B.2.b."
     },
     {
       "episodeTitle": "The Berlin Conference",
       "pid": "b03ffkfd",
-      "relevantPathsAI": [
-        "C"
-      ],
-      "rationaleAI": "The Berlin Conference (1884-85) and the Scramble for Africa provide the immediate context for C on East Africa from 1856 to c. 1900, including European exploratory activities and the colonial partition."
+      "relevantPathsAI": ["C", "C.1.c"],
+      "rationaleAI": "The 1884-1885 Berlin Conference established the rules for European partition of Africa, directly precipitating the colonial carve-up of East Africa among Britain, Germany, and other powers — the culminating event of the European exploratory and imperial activities in the region covered under C.1.c."
     },
     {
-      "episodeTitle": "The Dutch East India Company",
-      "pid": "b071vl2l",
-      "relevantPathsAI": [
-        "B.1.c"
-      ],
-      "rationaleAI": "The Dutch East India Company's establishment of trading posts from the Cape to Japan is relevant to B.1.c on Portuguese invasions from 1502 and the subsequent Omani influence, as European commercial competition shaped East African coastal trade."
+      "episodeTitle": "Prester John",
+      "pid": "b05wyq5m",
+      "relevantPathsAI": ["B.1.c"],
+      "rationaleAI": "The Prester John legend, which Portuguese explorers identified with the Ethiopian Christian kingdom, was a key motivation for Portuguese maritime expeditions along the East African coast from 1502, directly connecting to the Portuguese invasions and occupation discussed in B.1.c."
+    },
+    {
+      "episodeTitle": "The British Empire",
+      "pid": "p00547kp",
+      "relevantPathsAI": ["C.1.c"],
+      "rationaleAI": "British imperial expansion into East Africa — including exploratory expeditions, missionary activity, and strategic competition during the Scramble for Africa — exemplifies the European activities that reshaped the region in the late nineteenth century as discussed in C.1.c."
+    },
+    {
+      "episodeTitle": "The Zulu Nation's Rise and Fall",
+      "pid": "b00rykqd",
+      "relevantPathsAI": ["C.1.a"],
+      "rationaleAI": "Shaka's Zulu expansion in the early nineteenth century triggered the mfecane, displacing Ngoni peoples northward into East Africa where their raids forced the development of new political institutions and military kingships as described in C.1.a."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

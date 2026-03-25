@@ -7,9 +7,11 @@
       "relevantPathsAI": [
         "B.1.b",
         "B.3",
+        "C.1.a",
+        "C.1.c.ii",
         "C.1.c.iii"
       ],
-      "rationaleAI": "The Bhagavad Gita as a key Hindu text covers dharma, atman, karma yoga, and the three paths of duties, knowledge, and devotion — directly relevant to post-Vedic Sanskrit literature (B.1.b), Hindu philosophy (B.3), and the three margas (C.1.c.iii)."
+      "rationaleAI": "A 700-verse dialogue between Krishna and Arjuna synthesizing dharma, karma, moksha, Vedanta, Samkhya, and Yoga traditions addresses post-Vedic Sanskrit literature (B.1.b), Hindu philosophy (B.3), views about God through Krishna's divine revelation (C.1.a), karman and samsara (C.1.c.ii), and the three margas of duties, knowledge, and devotion (C.1.c.iii)."
     },
     {
       "episodeTitle": "The Ramayana",
@@ -19,7 +21,89 @@
         "B.2",
         "C.4.b"
       ],
-      "rationaleAI": "The Ramayana as one of the great Sanskrit epics covers Hindu mythology, dharma, and devotion with enormous cultural influence — relevant to post-Vedic literature (B.1.b), Hindu mythology (B.2), and religious expression in the arts (C.4.b)."
+      "rationaleAI": "One of the great Sanskrit epics narrating Prince Rama's adventures through themes of duty, devotion, and cosmic struggle between good and evil, remaining a living sacred scripture for hundreds of millions of Hindus — directly relevant to post-Vedic epics (B.1.b), Hindu mythology (B.2), and religious expression in the arts (C.4.b)."
+    },
+    {
+      "episodeTitle": "Karma",
+      "pid": "m0020966",
+      "relevantPathsAI": [
+        "C.1.c.ii",
+        "D.1.c"
+      ],
+      "rationaleAI": "Examines the doctrine of karma, samsara, and paths to moksha across Hindu, Jain, and Buddhist traditions, covering diverse interpretations of free will, intention, renunciation, and liberation — directly addressing karman, samsara, and transmigration (C.1.c.ii) and Jain beliefs and practices (D.1.c)."
+    },
+    {
+      "episodeTitle": "The Kama Sutra",
+      "pid": "b01bb9c9",
+      "relevantPathsAI": [
+        "B.1.b",
+        "C.1.c.iii",
+        "C.3"
+      ],
+      "rationaleAI": "Vatsyayana's Gupta-era treatise treats kama (pleasure) alongside dharma and artha as the three legitimate aims of Hindu life, reflecting sophisticated social conduct and domestic practice — relevant to post-Vedic Sanskrit literature (B.1.b), the three margas and paths of Hindu life (C.1.c.iii), and Hindu social practices and institutions (C.3)."
+    },
+    {
+      "episodeTitle": "al-Biruni",
+      "pid": "b00smnlk",
+      "relevantPathsAI": [
+        "A.8",
+        "C.1"
+      ],
+      "rationaleAI": "Al-Biruni's Kitab al-Hind (c. 1017-1030) provides the first systematic Muslim scholarly account of Hindu religion, science, and everyday life in comprehensive detail — relevant to the age of bhakti and Hindu-Islamic interaction (A.8) and as a primary external source documenting Hindu beliefs and practices (C.1)."
+    },
+    {
+      "episodeTitle": "Tagore",
+      "pid": "b05sxv7b",
+      "relevantPathsAI": [
+        "A.9",
+        "B.1.c",
+        "C.2.f"
+      ],
+      "rationaleAI": "Rabindranath Tagore's Gitanjali devotional poems, his educational reform at Visva-Bharati, renunciation of his British knighthood after Amritsar, and composition of India's national anthem connect to the modern period of Hinduism (A.9), sacred literature in Indian regional languages through Bengali (B.1.c), and ethical, social, and nationalist movements in modern Hinduism (C.2.f)."
+    },
+    {
+      "episodeTitle": "Indian Mathematics",
+      "pid": "p0038xb0",
+      "relevantPathsAI": [
+        "C.3.a",
+        "C.3.b",
+        "C.4"
+      ],
+      "rationaleAI": "Indian mathematical development originated in Vedic religious texts requiring geometric precision for altar construction (Sulbasutras) and astronomical calculations for determining Hindu festival dates — directly relevant to sacrifice and worship (C.3.a), sacred times (C.3.b), and cultural expressions of Hindu values (C.4)."
+    },
+    {
+      "episodeTitle": "The Observatory at Jaipur",
+      "pid": "b00hmpdd",
+      "relevantPathsAI": [
+        "C.3.b",
+        "C.4"
+      ],
+      "rationaleAI": "Maharaja Jai Singh II's Jantar Mantar observatory produced astrological tables significant to Hindu religious and social life, merging Indian and Persian astronomical traditions for measuring celestial events — relevant to sacred times and places (C.3.b) and cultural expressions of Hindu values and ideas (C.4)."
+    },
+    {
+      "episodeTitle": "Ashoka the Great",
+      "pid": "b0511tm1",
+      "relevantPathsAI": [
+        "A.4"
+      ],
+      "rationaleAI": "Ashoka's conversion from the Brahmanical tradition to Buddhism and his subsequent promotion of Buddhist principles across the largest South Asian empire exemplifies the heterodox period's challenges to Brahmanism by reformers and ascetic groups (A.4)."
+    },
+    {
+      "episodeTitle": "The Mughal Empire",
+      "pid": "p004y27h",
+      "relevantPathsAI": [
+        "A.8",
+        "C.2.f"
+      ],
+      "rationaleAI": "Akbar's religious tolerance policies and syncretic Indo-Islamic cultural production shaped Hindu-Muslim interaction during the age of bhakti (A.8), while the empire's legacy in modern South Asian identity connects to nationalist movements in modern Hinduism (C.2.f)."
+    },
+    {
+      "episodeTitle": "The Cult of Mithras",
+      "pid": "b01pg5nt",
+      "relevantPathsAI": [
+        "A.1"
+      ],
+      "rationaleAI": "Scholarly debate over the Roman cult's connections to the Vedic god Mitra and Zoroastrian Mithra illuminates the Indo-European religious roots shared with early Hinduism (A.1)."
     },
     {
       "episodeTitle": "The Upanishads",
@@ -40,15 +124,6 @@
         "C.4.a.ii"
       ],
       "rationaleAI": "Lakshmi as consort of Vishnu with worship during Diwali directly addresses Vaishnavism (C.2.b) and icons expressing theological elements of Hinduism (C.4.a.ii)."
-    },
-    {
-      "episodeTitle": "The Kama Sutra",
-      "pid": "b01bb9c9",
-      "relevantPathsAI": [
-        "C.1.c.iii",
-        "C.3.a"
-      ],
-      "rationaleAI": "The Kama Sutra's treatment of dharma, artha, and kama as life goals addresses the Hindu conception of human paths and duties (C.1.c.iii), while its discussion of social conduct relates to Hindu rituals and social practices (C.3.a)."
     },
     {
       "episodeTitle": "Angkor Wat",
@@ -83,14 +158,6 @@
       "rationaleAI": "The Buddha's life and teachings including the relationship between Buddhism and Hinduism addresses the heterodox period's challenges to Brahmanism (A.4)."
     },
     {
-      "episodeTitle": "al-Biruni",
-      "pid": "b00smnlk",
-      "relevantPathsAI": [
-        "A.8"
-      ],
-      "rationaleAI": "Al-Biruni's comparative study of Indian civilization in his Kitab al-Hind provides an external scholarly perspective on Hindu beliefs and practices, relevant to the Hindu period of interaction with Islamic civilization (A.8)."
-    },
-    {
       "episodeTitle": "The Silk Road",
       "pid": "b00p315t",
       "relevantPathsAI": [
@@ -100,5 +167,5 @@
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

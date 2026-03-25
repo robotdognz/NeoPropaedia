@@ -2,30 +2,6 @@
   "sectionCode": "812",
   "mappings": [
     {
-      "episodeTitle": "Prayer",
-      "pid": "p005465m",
-      "relevantPathsAI": [
-        "A.1.a"
-      ],
-      "rationaleAI": "Directly covers prayer across religious traditions including contemplative, petitionary, and intercessory forms, communal versus private prayer, and liturgy — a precise match to rituals of worship: prayer (A.1.a)."
-    },
-    {
-      "episodeTitle": "Marriage",
-      "pid": "p00548c2",
-      "relevantPathsAI": [
-        "A.2"
-      ],
-      "rationaleAI": "Covers the history of marriage as a religious institution including its Christianisation as a sacrament, arranged marriage, and ceremonial customs — directly relevant to passage rites including marriage (A.2)."
-    },
-    {
-      "episodeTitle": "Death",
-      "pid": "p00546ry",
-      "relevantPathsAI": [
-        "A.2"
-      ],
-      "rationaleAI": "Covers death rituals from ancient Egyptian and Greek funerary practices through Christian ars moriendi to modern hospice movement — directly relevant to passage rites concerning death (A.2)."
-    },
-    {
       "episodeTitle": "Greyfriars and Blackfriars",
       "pid": "p003k9dz",
       "relevantPathsAI": [
@@ -45,15 +21,6 @@
       "rationaleAI": "The Oxford Movement's revival of liturgical practices, sacramental theology, and its influence on church architecture and worship directly addresses forms of religious organization (B.2) and ceremonial and religious objects/sacraments (C.3)."
     },
     {
-      "episodeTitle": "Typology",
-      "pid": "m0029zmc",
-      "relevantPathsAI": [
-        "C.1",
-        "C.2"
-      ],
-      "rationaleAI": "Biblical typology as an interpretive method applied to sacred writings (C.1) and its influence on religious art and iconography (C.2) make it relevant to material manifestations of religious beliefs."
-    },
-    {
       "episodeTitle": "Prophecy",
       "pid": "b02qncqn",
       "relevantPathsAI": [
@@ -71,34 +38,6 @@
       "rationaleAI": "Purgatory's doctrine shaped medieval worship through prayers and indulgences for souls (A.1) and involved sacramental practices (C.3) including religious objects and ceremonies related to the afterlife."
     },
     {
-      "episodeTitle": "The Egyptian Book of the Dead",
-      "pid": "b08n1y2v",
-      "relevantPathsAI": [
-        "C.1",
-        "C.2",
-        "A.2"
-      ],
-      "rationaleAI": "The Egyptian Book of the Dead represents sacred writings (C.1), religious art and iconography (C.2), and funerary passage rites concerning death (A.2) in ancient Egyptian religion."
-    },
-    {
-      "episodeTitle": "The Dissolution of the Monasteries",
-      "pid": "b009jtq1",
-      "relevantPathsAI": [
-        "A.3.c",
-        "B.2"
-      ],
-      "rationaleAI": "The Dissolution of the Monasteries directly addresses monasticism (A.3.c) and the destruction of religious institutional forms including religious houses, libraries, and art (B.2)."
-    },
-    {
-      "episodeTitle": "Lakshmi",
-      "pid": "b07wtggv",
-      "relevantPathsAI": [
-        "A.4",
-        "C.2"
-      ],
-      "rationaleAI": "Lakshmi's worship during Diwali represents a religious feast/festival (A.4), and her iconography including lotus, gold coins, and temple representations exemplifies religious symbolism and iconography (C.2)."
-    },
-    {
       "episodeTitle": "Bruegel's The Fight Between Carnival and Lent",
       "pid": "b04xrv9n",
       "relevantPathsAI": [
@@ -108,49 +47,12 @@
       "rationaleAI": "Bruegel's painting depicts the contrast between Carnival and Lenten religious practices including feasts and festivals (A.4) and religious customs, providing visual documentation of religious iconography (C.2)."
     },
     {
-      "episodeTitle": "Shinto",
-      "pid": "b014qnld",
-      "relevantPathsAI": [
-        "A.1",
-        "B.2",
-        "C.2"
-      ],
-      "rationaleAI": "Shinto covers rituals and shrines (A.1, B.2), the concept of kami, and Shinto's continuing presence in Japanese cultural and religious life including ceremonial practices and religious symbolism (C.2)."
-    },
-    {
       "episodeTitle": "Simone Weil",
       "pid": "b01nthz3",
       "relevantPathsAI": [
         "A.3.e"
       ],
       "rationaleAI": "Simone Weil's mystical experiences, her ascetic self-imposed starvation, and her attraction to Christianity while remaining outside the Church exemplify asceticism (A.3.e) as a religious practice."
-    },
-    {
-      "episodeTitle": "John Wesley and Methodism",
-      "pid": "m000q3m2",
-      "relevantPathsAI": [
-        "B.2",
-        "B.4"
-      ],
-      "rationaleAI": "John Wesley and Methodism covers the organisational structure of Methodist societies and classes (B.2) and Methodism's social and educational impact (B.4)."
-    },
-    {
-      "episodeTitle": "George Herbert",
-      "pid": "m0024lyy",
-      "relevantPathsAI": [
-        "C.2",
-        "C.4"
-      ],
-      "rationaleAI": "George Herbert's devotional poetry in The Temple exemplifies the expression of religious faith through art (C.2) and his pastoral ministry connects to religious dress and vestments of the Church of England clergy (C.4)."
-    },
-    {
-      "episodeTitle": "The Delphic Oracle",
-      "pid": "b00txj8d",
-      "relevantPathsAI": [
-        "A.3.f",
-        "B.2"
-      ],
-      "rationaleAI": "The Delphic Oracle covers methods of divination through the Pythia (A.3.f) and the sanctuary's religious institutional structure (B.2)."
     },
     {
       "episodeTitle": "Kali",
@@ -186,8 +88,293 @@
         "C.2"
       ],
       "rationaleAI": "The Safavid Dynasty established Shia Islam as the state religion representing a theocratic element (B.1), with artistic flourishing in religious art and architecture (C.2)."
+    },
+    {
+      "episodeTitle": "Prayer",
+      "pid": "p005465m",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.a"
+      ],
+      "rationaleAI": "Directly examines the nature, purpose, and history of prayer as spiritual communication across religious traditions, covering theological perspectives from Luther and Gandhi, the tension between petition and contemplation, and prayer's function in both organized religion and individual spiritual life."
+    },
+    {
+      "episodeTitle": "Marriage",
+      "pid": "p00548c2",
+      "relevantPathsAI": [
+        "A.2",
+        "A.3"
+      ],
+      "rationaleAI": "Covers marriage as a religious rite of passage, including the standardization of church wedding vows in the 1552 Book of Common Prayer, the transition to Christian monogamy, and ecclesiastical jurisdiction over personal relationships before civil law took precedence."
+    },
+    {
+      "episodeTitle": "Death",
+      "pid": "p00546ry",
+      "relevantPathsAI": [
+        "A.2"
+      ],
+      "rationaleAI": "Examines funeral rituals and the cultural passage from celebrating a soul's journey to grieving a body's loss, addressing how different eras shaped religious and social practices around death as a rite of passage."
+    },
+    {
+      "episodeTitle": "Shinto",
+      "pid": "b014qnld",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "A.4",
+        "B.2"
+      ],
+      "rationaleAI": "Examines Shinto's ritual practices including shrine worship, purification ceremonies, and seasonal festivals, as well as its institutional structures of shrines and temples, directly addressing religious rites, passage and purification rites, and feasts and festivals."
+    },
+    {
+      "episodeTitle": "The Book of Common Prayer",
+      "pid": "b03ct4n4",
+      "relevantPathsAI": [
+        "A.1",
+        "A.1.a",
+        "B.2",
+        "C.1",
+        "C.3"
+      ],
+      "rationaleAI": "Established unified English-language liturgy replacing Latin worship, functioning as both a sacred text shaping Protestant worship practice and a vehicle for sacramental worship. Its compilation under Cranmer and its role in defining Anglicanism as a distinct church tradition connect to forms of religious organization."
+    },
+    {
+      "episodeTitle": "Lakshmi",
+      "pid": "b07wtggv",
+      "relevantPathsAI": [
+        "A.1",
+        "A.4",
+        "B.2",
+        "C.2"
+      ],
+      "rationaleAI": "Covers worship traditions spanning 3,000 years including domestic worship and Diwali celebrations (religious feasts), temple-centered Vaishnavism (religious institutions), and iconographic traditions representing religious symbolism in Hindu devotional practice."
+    },
+    {
+      "episodeTitle": "The Dead Sea Scrolls",
+      "pid": "m001ljc0",
+      "relevantPathsAI": [
+        "A.3",
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "The scrolls include sectarian community rules governing religious behavior, reveal the diversity of Jewish religious practice and institutional organization in Second Temple Judaism, and represent some of the oldest surviving sacred writings including Hebrew Bible texts."
+    },
+    {
+      "episodeTitle": "The Cult of Mithras",
+      "pid": "b01pg5nt",
+      "relevantPathsAI": [
+        "A.1",
+        "B.2",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Examines Mithraic rituals involving initiation grades and communal meals (worship rites), underground temples as dedicated worship spaces (religious institutions), and the tauroctony iconography central to the cult's sacred symbolism and ceremonial objects."
+    },
+    {
+      "episodeTitle": "The Delphic Oracle",
+      "pid": "b00txj8d",
+      "relevantPathsAI": [
+        "A.3.f",
+        "B.2",
+        "C.2"
+      ],
+      "rationaleAI": "The oracle at Delphi was the ancient world's most authoritative institution of prophecy and divination, operated by the priestess Pythia at Apollo's temple, functioning as a Panhellenic religious center with treasuries and games—connecting prophecy, priestly office, and sacred architecture."
+    },
+    {
+      "episodeTitle": "Saint Cuthbert",
+      "pid": "m000rll4",
+      "relevantPathsAI": [
+        "A.3.c",
+        "A.3.e",
+        "B.2",
+        "B.3"
+      ],
+      "rationaleAI": "Exemplifies sainthood through miracles and cult veneration centered on Lindisfarne and Durham Cathedral, monasticism and ascetic hermit life, and the intersection of priestly/episcopal office with political influence in Anglo-Saxon Christianity."
+    },
+    {
+      "episodeTitle": "George Fox and the Quakers",
+      "pid": "b01f67y4",
+      "relevantPathsAI": [
+        "B.2",
+        "C.3"
+      ],
+      "rationaleAI": "Quakerism's rejection of established Church hierarchy, liturgical ceremony, sacramental worship, and priestly mediation in favor of direct personal communion represents a radical alternative form of religious organization (sect/congregation) and a deliberate negation of ceremonial objects and sacraments."
+    },
+    {
+      "episodeTitle": "John Wesley and Methodism",
+      "pid": "m000q3m2",
+      "relevantPathsAI": [
+        "B.2"
+      ],
+      "rationaleAI": "Traces the rise of Methodism as a new form of religious organization—from Oxford prayer group to mass open-air preaching movement to established denomination—illustrating how sects emerge, generate internal theological splits, and institutionalize within the broader Protestant tradition."
+    },
+    {
+      "episodeTitle": "Zen",
+      "pid": "b04sxv29",
+      "relevantPathsAI": [
+        "A.1",
+        "A.3.c",
+        "A.3.e",
+        "B.2",
+        "C.2"
+      ],
+      "rationaleAI": "Zen's prioritization of seated meditation as worship practice, monastic ascetic disciplines, temples and monasteries as religious institutions, and its profound influence on sacred aesthetics in calligraphy, garden design, and architecture all directly address religious practices and institutions."
+    },
+    {
+      "episodeTitle": "Abelard and Heloise",
+      "pid": "p003k9c7",
+      "relevantPathsAI": [
+        "A.3.c",
+        "A.3.d"
+      ],
+      "rationaleAI": "Their subsequent religious lives as monk and abbess after the scandal of their secret marriage directly illustrate medieval monasticism and celibacy, while their correspondence illuminates twelfth-century attitudes toward the tension between personal desire and religious vocation."
+    },
+    {
+      "episodeTitle": "The Dissolution of the Monasteries",
+      "pid": "b009jtq1",
+      "relevantPathsAI": [
+        "A.3.c",
+        "B.2",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "Henry VIII's dissolution destroyed centuries of monastic culture and institutional religious life, including medieval architecture, manuscript collections, liturgical treasures, and ceremonial objects, fundamentally reshaping religious institutions and eliminating a central form of religious organization in England."
+    },
+    {
+      "episodeTitle": "The Lindisfarne Gospels",
+      "pid": "p00548tq",
+      "relevantPathsAI": [
+        "A.3.c",
+        "C.1",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "A lavishly illuminated sacred manuscript produced in monastic scriptoria, blending Celtic, Anglo-Saxon, and Mediterranean artistic traditions in religious iconography, and functioning as both a sacred text and a ceremonial devotional object central to early medieval Christian worship."
+    },
+    {
+      "episodeTitle": "The Druids",
+      "pid": "b01mqq94",
+      "relevantPathsAI": [
+        "A.1",
+        "A.3.f",
+        "B.2"
+      ],
+      "rationaleAI": "The Druids constituted a priestly class performing rituals in oak groves involving mistletoe and possibly human sacrifice, while serving as religious authorities responsible for divination and ritual practice in pre-Roman Celtic societies."
+    },
+    {
+      "episodeTitle": "The Egyptian Book of the Dead",
+      "pid": "b08n1y2v",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "C.1"
+      ],
+      "rationaleAI": "Funerary literature containing nearly 200 spells guiding the deceased through the underworld represents both sacred writings and ritual texts for death rites, with the weighing of the heart before divine judges embodying the intersection of religious ritual, moral judgment, and passage to the afterlife."
+    },
+    {
+      "episodeTitle": "The Carolingian Renaissance",
+      "pid": "p003hydz",
+      "relevantPathsAI": [
+        "A.3.c",
+        "B.1",
+        "B.4"
+      ],
+      "rationaleAI": "Charlemagne's fusion of political power with religious authority exemplifies theocratic governance, while monastic scriptoria preserving texts and cathedral schools advancing education illustrate both monasticism and institutions of religious education under ecclesiastical reform."
+    },
+    {
+      "episodeTitle": "The Covenanters",
+      "pid": "m000g3f6",
+      "relevantPathsAI": [
+        "A.3.a",
+        "B.2"
+      ],
+      "rationaleAI": "The Covenanters' formal bonds with monarchs to protect Presbyterian worship and their resistance to imposed episcopal church governance directly address the relationship between religious law, forms of religious organization, and the regulation of worship practice."
+    },
+    {
+      "episodeTitle": "King Solomon",
+      "pid": "b01jhjc7",
+      "relevantPathsAI": [
+        "B.1",
+        "B.2",
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Solomon as divinely sanctioned monarch exemplifies sacred kingship, his construction of the First Temple in Jerusalem represents foundational religious architecture and institutional worship space, and his attributed authorship of Proverbs, Ecclesiastes, and Song of Songs contributes to sacred writings traditions."
+    },
+    {
+      "episodeTitle": "Judas Maccabeus",
+      "pid": "b017cjm8",
+      "relevantPathsAI": [
+        "A.4",
+        "B.1",
+        "B.2"
+      ],
+      "rationaleAI": "The rededication of the desecrated Temple of Jerusalem, commemorated annually at Hanukkah, directly addresses religious feasts and festivals and temple worship, while the Maccabean fight for religious freedom illustrates the intersection of theocratic aspirations with political sovereignty."
+    },
+    {
+      "episodeTitle": "The Written World: Episode 3",
+      "pid": "b018xsmd",
+      "relevantPathsAI": [
+        "C.1"
+      ],
+      "rationaleAI": "Directly examines how writing influenced the spread of religion, featuring encounters with earliest surviving sacred texts including the fourth-century Codex Sinaiticus and an eighth-century Iraqi Koran, exploring the relationship between scripture, literacy, and religious authority."
+    },
+    {
+      "episodeTitle": "George Herbert",
+      "pid": "m0024lyy",
+      "relevantPathsAI": [
+        "A.1",
+        "C.2"
+      ],
+      "rationaleAI": "Herbert's devotional poetry exploring the soul's relationship with God remains in active use as hymns in church worship, while The Temple's formal inventiveness and religious symbolism exemplify the intersection of literary art with liturgical practice and devotional expression."
+    },
+    {
+      "episodeTitle": "Typology",
+      "pid": "m0029zmc",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2"
+      ],
+      "rationaleAI": "Typological interpretation of the Old Testament as prefiguring Christ shaped Christian liturgical practice, medieval sacred art, and the understanding of sacred writings as a unified narrative of divine promise and fulfillment connecting the two Testaments."
+    },
+    {
+      "episodeTitle": "Gnosticism",
+      "pid": "b01s4rhz",
+      "relevantPathsAI": [
+        "B.2",
+        "C.1"
+      ],
+      "rationaleAI": "Gnostic movements represent diverse forms of early Christian religious organization deemed heretical by orthodox Church Fathers, while the Nag Hammadi texts constitute a body of sacred writings that illuminate the institutional boundaries between sect and orthodoxy in early Christianity."
+    },
+    {
+      "episodeTitle": "Megaliths",
+      "pid": "m001jkzg",
+      "relevantPathsAI": [
+        "A.1",
+        "C.2"
+      ],
+      "rationaleAI": "Megalithic structures including stone circles, dolmens, and passage tombs served as sites for burial rites, ritual gathering, and possibly astronomical observation, representing some of the earliest material manifestations of religious belief and sacred architecture in prehistoric societies."
+    },
+    {
+      "episodeTitle": "Blood",
+      "pid": "p00548ym",
+      "relevantPathsAI": [
+        "A.1.d",
+        "C.2",
+        "C.3"
+      ],
+      "rationaleAI": "The Christian Eucharist as sacramental practice and the concept of blood as life force connecting body and soul address both sacrifice and sacramental theology, while blood's role in religious symbolism spanning 1,500 years illustrates material manifestations of religious belief."
+    },
+    {
+      "episodeTitle": "The Aztecs",
+      "pid": "p00548v0",
+      "relevantPathsAI": [
+        "A.1.d",
+        "B.1"
+      ],
+      "rationaleAI": "Aztec religious cosmology centered on the practice of human sacrifice as ritual obligation, and their political-religious system in which empire and sacred duty were inseparable exemplifies theocratic governance where religious practice and state power merged."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

@@ -4,80 +4,40 @@
     {
       "episodeTitle": "The Dead Sea Scrolls",
       "pid": "m001ljc0",
-      "relevantPathsAI": [
-        "B.2"
-      ],
-      "rationaleAI": "Directly covers the Dead Sea Scrolls including biblical manuscripts, sectarian documents, and their significance for understanding Second Temple Judaism — a precise match to Qumran literature (B.2)."
+      "relevantPathsAI": ["A.2", "B.2", "B.1.b"],
+      "rationaleAI": "Ancient Jewish manuscripts from the Qumran settlement illuminate Second Temple Judaism and the diversity of Jewish religious practice before rabbinic consolidation, directly covering Qumran literature (B.2) and including the oldest known copies of Hebrew Bible texts (B.1.b) from the Hellenistic era (A.2)."
     },
     {
       "episodeTitle": "The Talmud",
       "pid": "b044j7pd",
-      "relevantPathsAI": [
-        "B.3",
-        "C.2"
-      ],
-      "rationaleAI": "Directly covers the Talmud including its structure (Mishnah and Gemara), halakha, aggadah, and its role in Jewish legal reasoning and identity — a precise match to Talmud and Midrash (B.3) and Jewish practices and institutions (C.2)."
+      "relevantPathsAI": ["A.3", "B.3", "C.2", "C.3"],
+      "rationaleAI": "The Mishnah and Gemara constitute the foundational texts of Rabbinic Judaism compiled from the second century CE onward, covering the Talmudic era (A.3), Talmud and Midrash as literature (B.3), basic practices and institutions (C.2), and present-day forms of Judaism including Orthodox and Conservative traditions (C.3)."
     },
     {
-      "episodeTitle": "Angels",
-      "pid": "p003k9gf",
-      "relevantPathsAI": [
-        "B.5",
-        "B.7"
-      ],
-      "rationaleAI": "Angels in Judaism including seraphim, cherubim, and archangels from biblical and apocryphal sources — relevant to mystical and devotional writings (B.5) and Jewish myth and legend (B.7)."
-    },
-    {
-      "episodeTitle": "Typology",
-      "pid": "m0029zmc",
-      "relevantPathsAI": [
-        "B.4"
-      ],
-      "rationaleAI": "Biblical typology as an interpretive method reading Old Testament events as prefigurations directly addresses Judaic exegesis and hermeneutics (B.4)."
-    },
-    {
-      "episodeTitle": "The Devil",
-      "pid": "p005494p",
-      "relevantPathsAI": [
-        "B.7",
-        "C.1.a"
-      ],
-      "rationaleAI": "The development of Satan from a minor figure in the Hebrew Bible addresses Jewish myth and legend (B.7) and doctrines concerning God and the supernatural (C.1.a)."
-    },
-    {
-      "episodeTitle": "Heaven",
-      "pid": "p003k9lf",
-      "relevantPathsAI": [
-        "C.1.e"
-      ],
-      "rationaleAI": "Hebrew Sheol and the development of resurrection belief directly addresses Jewish eschatology and views about the future age (C.1.e)."
-    },
-    {
-      "episodeTitle": "Hell",
-      "pid": "p0038xb6",
-      "relevantPathsAI": [
-        "C.1.e"
-      ],
-      "rationaleAI": "The Hebrew Gehenna as a concept of the afterlife is relevant to Jewish eschatological doctrines (C.1.e)."
+      "episodeTitle": "King Solomon",
+      "pid": "b01jhjc7",
+      "relevantPathsAI": ["A.1", "B.1.b", "B.7", "C.2.d"],
+      "rationaleAI": "Solomon's reign as biblical ruler of ancient Israel, his construction of the First Temple in Jerusalem, and his authorship of Proverbs, Ecclesiastes, and Song of Songs place this squarely within the biblical era (A.1), Hebrew Bible literature (B.1.b), Jewish myth and legend (B.7), and the sacred significance of Jerusalem and the Temple (C.2.d)."
     },
     {
       "episodeTitle": "Moses Mendelssohn",
       "pid": "b01djnxx",
-      "relevantPathsAI": [
-        "A.5",
-        "B.6"
-      ],
-      "rationaleAI": "Moses Mendelssohn's defence of religious toleration, the Haskalah (Jewish Enlightenment), and the compatibility of Judaism with Enlightenment reason directly address developments in modern Judaism (A.5) and Jewish philosophical writings (B.6)."
+      "relevantPathsAI": ["A.5", "B.6", "C.1"],
+      "rationaleAI": "Mendelssohn as principal architect of the Haskalah (Jewish Enlightenment) brought Judaism into dialogue with European intellectual culture, directly addressing developments in modern Judaism (A.5), Jewish philosophical writings (B.6), and fundamental questions about the coexistence of reason with Jewish faith and doctrine (C.1)."
     },
     {
-      "episodeTitle": "Wyclif and the Lollards",
-      "pid": "b011vh4k",
-      "relevantPathsAI": [
-        "B.4"
-      ],
-      "rationaleAI": "Wyclif's advocacy for vernacular Bible translation and primacy of Scripture raises hermeneutic questions relevant to Judaic biblical interpretation (B.4), though primarily a Christian figure."
+      "episodeTitle": "Judas Maccabeus",
+      "pid": "b017cjm8",
+      "relevantPathsAI": ["A.2", "C.1.b", "C.2.c", "C.2.d"],
+      "rationaleAI": "The Maccabean revolt against Seleucid Hellenization and the rededication of the Temple are central to Hellenistic-era Judaism (A.2), doctrines concerning Jewish peoplehood and covenant identity (C.1.b), the origins of Hanukkah as a sacred time (C.2.c), and the sanctity of Jerusalem and the Temple as sacred places (C.2.d)."
+    },
+    {
+      "episodeTitle": "Typology",
+      "pid": "m0029zmc",
+      "relevantPathsAI": ["B.4"],
+      "rationaleAI": "Typological interpretation reads Old Testament figures such as Moses, Jonah, and David as prefigurations, engaging directly with biblical hermeneutics (B.4) and demonstrating how Hebrew Bible texts have been subject to systematic exegetical methods across religious traditions."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

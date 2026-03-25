@@ -4,50 +4,28 @@
     {
       "episodeTitle": "Angkor Wat",
       "pid": "m0018hd7",
-      "relevantPathsAI": [
-        "B.3",
-        "B.3.c",
-        "B.3.d"
-      ],
-      "rationaleAI": "Angkor Wat, built by Suryavarman II in the early 12th century, its Hindu cosmic symbolism, Khmer water management, and later Buddhist transformation directly correspond to B.3.c (establishment of the Khmer state and Suryavarman II's reign) and B.3.d (Jayavarman VII)."
+      "relevantPathsAI": ["A", "B.3.c", "B.3.d", "B.3.e"],
+      "rationaleAI": "Angkor Wat was built for Suryavarman II (r. 1113-c. 1150) during the height of the Khmer state, directly covering the establishment of Angkor, Hindu and Buddhist religious traditions in Cambodian architecture, and the temple's 900-year role as a centre of Hinduism, Buddhism, and Animism reflecting the religious transformations outlined in B.3.c through B.3.e."
     },
     {
       "episodeTitle": "The Ming Voyages",
       "pid": "b015p8c2",
-      "relevantPathsAI": [
-        "B.5.b",
-        "C"
-      ],
-      "rationaleAI": "Zheng He's Ming voyages (1405-1433) across Southeast Asia with diplomatic and tributary purposes directly correspond to B.5 (Malaya and European intrusions) and the broader Southeast Asian maritime trade context."
+      "relevantPathsAI": ["A", "C.2"],
+      "rationaleAI": "Zheng He's seven expeditions (1405-1433) sailed extensively through Southeast Asia, establishing tributary relationships with regional states and facilitating trade in spices and porcelain, directly relevant to East Asian influences on SE Asian civilizations and the maritime trade networks connecting China with the Indonesian Archipelago."
     },
     {
-      "episodeTitle": "The Silk Road",
-      "pid": "b00p315t",
-      "relevantPathsAI": [
-        "A",
-        "C.2"
-      ],
-      "rationaleAI": "The Silk Road's maritime alternative routes and the spread of Buddhism and Islam through trade networks are relevant to A (South and East Asian influences on Southeast Asian civilizations) and C.2 (Srivijaya's maritime trade with China)."
+      "episodeTitle": "The Dutch East India Company",
+      "pid": "b071vl2l",
+      "relevantPathsAI": ["B.5.b", "C"],
+      "rationaleAI": "The VOC's displacement of the Portuguese from key trading posts in the Indonesian archipelago and its monopoly over nutmeg, mace, cloves, and cinnamon provide essential context for European intrusions into Malaya following the Portuguese conquest of Malacca (1511) and the spice trade that defined the Indonesian Archipelago's engagement with the wider world."
     },
     {
-      "episodeTitle": "The Ramayana",
-      "pid": "m001jst2",
-      "relevantPathsAI": [
-        "A",
-        "C.1"
-      ],
-      "rationaleAI": "The Ramayana's cultural influence across South and Southeast Asia, with multiple regional versions, directly corresponds to A (Indian civilizational influence on Southeast Asian civilizations) and C.1 (introduction of Hinduism by Indian Brahmins)."
-    },
-    {
-      "episodeTitle": "Zen",
-      "pid": "b04sxv29",
-      "relevantPathsAI": [
-        "B.1.c",
-        "C.3"
-      ],
-      "rationaleAI": "Zen Buddhism's origins in Chinese Chan Buddhism and its broader East Asian transmission provide context for B.1.c (influence of Theravada Buddhism in Pagan) and the broader spread of Buddhism across Southeast Asia."
+      "episodeTitle": "Ashoka the Great",
+      "pid": "b0511tm1",
+      "relevantPathsAI": ["A", "B.1.a", "B.3.a"],
+      "rationaleAI": "Ashoka's conversion to Buddhism and its propagation throughout his Mauryan empire initiated the transmission of Indian religious and cultural influences to Southeast Asia, foundational to understanding the Indianization of Myanmar (B.1.a) and Cambodia (B.3.a) where Theravada Buddhism became central to state and society."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

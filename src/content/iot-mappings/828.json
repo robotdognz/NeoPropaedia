@@ -23,18 +23,22 @@
       "episodeTitle": "The Abbasid Caliphs",
       "pid": "p003hyfd",
       "relevantPathsAI": [
-        "A.4"
+        "A.4",
+        "A.3",
+        "B.4"
       ],
-      "rationaleAI": "The Abbasid Caliphate's golden age, House of Wisdom, and achievements in arts and sciences directly address the development of Islamic religion, culture, and society during the Abbasid era (A.4)."
+      "rationaleAI": "The Abbasid caliphate's golden age from 750 to the mid-tenth century, including patronage of Arabic philosophy, mathematics, and medicine, systematic translation of Greek texts, and integration of Persian, Arab, and Turkic traditions shaped Islamic intellectual and political foundations."
     },
     {
       "episodeTitle": "Islamic Law and its Origins",
       "pid": "b010t69b",
       "relevantPathsAI": [
         "B.3",
-        "C.3.d"
+        "C.3.d",
+        "A.3",
+        "A.4"
       ],
-      "rationaleAI": "Islamic law (Sharia) covering the Quran, Hadith, ijma, qiyas, and the four Sunni legal schools directly addresses Islamic law (B.3) and Shari'ah: law and jurisprudence (C.3.d)."
+      "rationaleAI": "Directly examines the origins and development of Sharia and fiqh, covering the four principal sources of Islamic law (Quran, Hadith, ijma, qiyas), the emergence of classical legal schools (madhabs), and the role of ulama in systematizing jurisprudence during the early Abbasid period."
     },
     {
       "episodeTitle": "The Translation Movement",
@@ -107,9 +111,10 @@
       "episodeTitle": "Fundamentalism",
       "pid": "p00545gy",
       "relevantPathsAI": [
-        "A.6"
+        "A.6",
+        "A.7"
       ],
-      "rationaleAI": "Islamic fundamentalism and political Islam as reactions to modernity directly address Islam in the modern world (A.6)."
+      "rationaleAI": "Explicitly examines Islamic fundamentalist movements in the twentieth century alongside their violent manifestations, addressing why fundamentalism has flourished despite secularization and its relationship to Islam in the modern world."
     },
     {
       "episodeTitle": "The Volga Vikings",
@@ -135,8 +140,81 @@
         "B.4"
       ],
       "rationaleAI": "Alchemy's transmission through Islamic civilization with figures like Jabir ibn Hayyan is relevant to Islamic philosophical and scientific traditions (B.4)."
+    },
+    {
+      "episodeTitle": "Sunni and Shia Islam",
+      "pid": "b00l5mhl",
+      "relevantPathsAI": [
+        "C.2.c",
+        "C.2.d",
+        "A.3"
+      ],
+      "rationaleAI": "Examines the foundational Sunni-Shia division originating in the seventh-century succession crisis after Muhammad's death, the massacre at Karbala as a defining moment of Shia identity, and how a political dispute over legitimate authority deepened into distinct legal schools, ritual practices, and communal identities."
+    },
+    {
+      "episodeTitle": "Al-Kindi",
+      "pid": "b01k2bv8",
+      "relevantPathsAI": [
+        "B.4",
+        "A.4"
+      ],
+      "rationaleAI": "Al-Kindi was the first major Islamic philosopher to argue that philosophy and Islam were compatible, supervised Arabic translations of Aristotle, and authored over 250 works — a foundational figure in Islamic philosophical trends during the early Abbasid era."
+    },
+    {
+      "episodeTitle": "Rumi's Poetry",
+      "pid": "b06ztx2w",
+      "relevantPathsAI": [
+        "B.5",
+        "C.2.f",
+        "C.4.b"
+      ],
+      "rationaleAI": "Rumi's Masnavi and Divan-e Shams are central works of Sufi mystical poetry exploring divine love and spiritual union, while his followers established the Mevlevi Order (Whirling Dervishes) — directly illustrating Sufism as the mystical path (B.5), Sufi orders (C.2.f), and the expression of Islamic faith through the arts (C.4.b)."
+    },
+    {
+      "episodeTitle": "al-Biruni",
+      "pid": "b00smnlk",
+      "relevantPathsAI": [
+        "A.5",
+        "B.4"
+      ],
+      "rationaleAI": "The 11th-century Muslim polymath al-Biruni produced the first Muslim scholarly account of Hindu culture and corresponded with Avicenna, exemplifying cross-cultural knowledge exchange and the breadth of Islamic philosophical and scientific inquiry during the Middle Ages of Islam."
+    },
+    {
+      "episodeTitle": "Nizami Ganjavi",
+      "pid": "m0025l1q",
+      "relevantPathsAI": [
+        "C.4.b",
+        "A.5"
+      ],
+      "rationaleAI": "Nizami's Khamsa integrates philosophy, astronomy, and legends within Persian romantic verse, representing a major expression of Islamic faith and themes through literary art and exemplifying the cultural flowering of the medieval Islamic world."
+    },
+    {
+      "episodeTitle": "The Written World: Episode 3",
+      "pid": "b018xsmd",
+      "relevantPathsAI": [
+        "B.1",
+        "A.3"
+      ],
+      "rationaleAI": "Features an 8th-century Iraqi Koran among the earliest surviving sacred texts and examines how writing materials and techniques enabled Islam's spread, connecting the material history of Quranic manuscript production with the development of Islamic religious authority."
+    },
+    {
+      "episodeTitle": "Maimonides",
+      "pid": "b00yjqz3",
+      "relevantPathsAI": [
+        "B.4"
+      ],
+      "rationaleAI": "Maimonides was deeply shaped by Arabic-Islamic intellectual traditions including Avicenna and Al-Farabi, and influenced Islamic philosophy reciprocally, illustrating the cross-pollination between Jewish and Islamic philosophical thought within the medieval Islamic world."
+    },
+    {
+      "episodeTitle": "Shahnameh of Ferdowsi",
+      "pid": "b01p7dcv",
+      "relevantPathsAI": [
+        "A.3",
+        "C.4.b"
+      ],
+      "rationaleAI": "Ferdowsi's epic recounts Iran's narrative through the Arab conquest and served as a vehicle for Persian linguistic preservation against Arabization, illuminating the cultural dynamics of early Islamic expansion and the interplay between Persian and Islamic literary traditions."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

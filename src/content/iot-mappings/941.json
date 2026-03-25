@@ -4,54 +4,34 @@
     {
       "episodeTitle": "The Empire of Mali",
       "pid": "b06kgggv",
-      "relevantPathsAI": [
-        "B",
-        "B.2",
-        "B.2.a"
-      ],
-      "rationaleAI": "The Empire of Mali from its founding by Sundiata Keita, its control of trans-Saharan gold and salt trade, Mansa Musa's pilgrimage, and Timbuktu as a centre of Islamic learning directly correspond to B.2.a on the Keita dynasty and Timbuktu as cultural and commercial centre."
+      "relevantPathsAI": ["A", "B.2", "B.2.a"],
+      "rationaleAI": "The Mali Empire (c. 1200-1600) controlled trans-Saharan gold trade routes, with Mansa Musa's 1324 Hajj demonstrating its extraordinary wealth and Timbuktu serving as a major cultural and commercial centre, directly covering the Keita dynasty, western Sudan empires, and the character of West African civilizations."
     },
     {
       "episodeTitle": "The Almoravid Empire",
       "pid": "b0b0lzk7",
-      "relevantPathsAI": [
-        "B.1"
-      ],
-      "rationaleAI": "The Almoravid Empire's conquest of Ghana and the gold trade directly corresponds to B.1 on the development of West African monarchies of Ghana, as the Almoravids' intervention transformed the political landscape."
-    },
-    {
-      "episodeTitle": "The Zong Massacre",
-      "pid": "m000pqbz",
-      "relevantPathsAI": [
-        "C.2"
-      ],
-      "rationaleAI": "The Zong Massacre (1781) and its significance for the abolitionist movement directly correspond to C.2 on the Atlantic slave trade and C.4.a on European antislavery movements."
-    },
-    {
-      "episodeTitle": "The Berlin Conference",
-      "pid": "b03ffkfd",
-      "relevantPathsAI": [
-        "C.4.b"
-      ],
-      "rationaleAI": "The Berlin Conference of 1884-85 and the Scramble for Africa, including the arbitrary drawing of borders, directly correspond to C.4.b on British colonial settlements and the broader European colonization context circa 1885."
+      "relevantPathsAI": ["B.1", "B.2.b"],
+      "rationaleAI": "The Almoravids originated among Saharan Berber peoples of the western Maghreb and their eleventh-century conquests reshaped the Ghana Empire's political landscape, while their control of trans-Saharan trade routes connects to the development of West African monarchies and the commercial networks of the Dyula and Mande-speaking peoples."
     },
     {
       "episodeTitle": "Slavery and Empire",
       "pid": "p00548jd",
-      "relevantPathsAI": [
-        "C.2"
-      ],
-      "rationaleAI": "The transatlantic slave trade, British involvement, and the abolitionist movement from Wilberforce to emancipation directly correspond to C.2 on the rise of the Atlantic slave trade and C.4.a on antislavery movements."
+      "relevantPathsAI": ["C.2", "C.4.a"],
+      "rationaleAI": "The Atlantic slave trade across three centuries of British imperial history, including the development of slave trade routes, the African merchant class, and the abolitionist campaigns that transformed the Guinea coastlands, maps directly to the rise of the slave trade (C.2) and European antislavery movements (C.4.a)."
     },
     {
-      "episodeTitle": "The Zulu Nation's Rise and Fall",
-      "pid": "b00rykqd",
-      "relevantPathsAI": [
-        "C.4"
-      ],
-      "rationaleAI": "While focused on southern Africa, the Zulu Nation's mfecane caused widespread upheaval affecting peoples across the subcontinent, providing comparative context for C.4 on West Africa from 1800 to c. 1885."
+      "episodeTitle": "The Berlin Conference",
+      "pid": "b03ffkfd",
+      "relevantPathsAI": ["C.4.b"],
+      "rationaleAI": "The 1884-1885 Berlin Conference established rules for European colonial claims in Africa including free trade zones along the Niger River, directly accelerating the partition of West Africa and the imposition of arbitrary borders that marks the terminal date of this section."
+    },
+    {
+      "episodeTitle": "The British Empire",
+      "pid": "p00547kp",
+      "relevantPathsAI": ["C.4.b"],
+      "rationaleAI": "British imperial expansion encompassing military conquest, colonial governance structures, and administrative systems in Africa provides essential context for the establishment of British colonial settlements at Sierra Leone, the Gold Coast, Lagos, and Ashanti from c. 1800."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

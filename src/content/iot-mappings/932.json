@@ -4,63 +4,70 @@
     {
       "episodeTitle": "The An Lushan Rebellion",
       "pid": "b01by8ms",
-      "relevantPathsAI": [
-        "A.1.a"
-      ],
-      "rationaleAI": "The An Lushan Rebellion (755-763) and its devastating impact on the Tang Dynasty, including loss of control of northern China, enormous death toll, and effects on governance, directly corresponds to A.1.a on the late T'ang and the rebellion's effects."
+      "relevantPathsAI": ["A.1.a", "A.1"],
+      "rationaleAI": "The An Lushan Rebellion of 755, its devastation of Tang central authority, displacement of millions, acceleration of provincial military autonomy, and reshaping of frontier defence policy correspond directly to A.1.a on the late T'ang rebellion and its effects on provincial separatism and attempts to restore central authority."
+    },
+    {
+      "episodeTitle": "Tang Era Poetry",
+      "pid": "m00174d0",
+      "relevantPathsAI": ["A.1.b", "A.1.a"],
+      "rationaleAI": "Li Bai's Daoist lyrics and Du Fu's poet-historian documentation of suffering during the An Lushan Rebellion represent the pinnacle of T'ang cultural life, corresponding to A.1.b on growing cultural influences, developments in music and visual arts, and the literary dimensions of A.1.a's political upheaval."
     },
     {
       "episodeTitle": "Genghis Khan",
       "pid": "b00773mr",
-      "relevantPathsAI": [
-        "B.1",
-        "B.1.a"
-      ],
-      "rationaleAI": "Genghis Khan's conquest of the Chin (1211-34) and establishment of Mongol rule, the Yasa legal code, and Pax Mongolica trade directly correspond to B.1.a on Genghis Khan's conquest of the Chin and establishment of the Yuan dynasty."
+      "relevantPathsAI": ["B.1", "B.1.a"],
+      "rationaleAI": "Genghis Khan's unification of Mongol peoples, innovative military organisation, and conquest of the Chin empire (1211-34) correspond directly to B.1.a on Genghis Khan's conquest of the Chin and the establishment of Mongol rule over China."
     },
     {
-      "episodeTitle": "The Ming Voyages",
-      "pid": "b015p8c2",
-      "relevantPathsAI": [
-        "C.1.b"
-      ],
-      "rationaleAI": "Zheng He's Ming Dynasty maritime voyages (1405-1433) across Southeast Asia, India, and East Africa, and their abrupt cessation under Confucian isolationism, directly correspond to C.1.b on developments in foreign relations and economic policy under the Ming."
-    },
-    {
-      "episodeTitle": "The Great Wall of China",
-      "pid": "b00s3h3w",
-      "relevantPathsAI": [
-        "C.1.a",
-        "C.1.b"
-      ],
-      "rationaleAI": "The Great Wall's major reconstruction under the Ming dynasty against Mongol threats corresponds to C.1.a-b on Ming political structure and foreign relations, and to the broader theme of frontier defence across Chinese dynasties."
-    },
-    {
-      "episodeTitle": "Confucius",
-      "pid": "p00547k8",
-      "relevantPathsAI": [
-        "A.3"
-      ],
-      "rationaleAI": "The resurgence of Neo-Confucianism during the Sung period is directly relevant to A.3 on Sung cultural developments, specifically the philosophical revival that shaped Chinese intellectual life."
+      "episodeTitle": "Marco Polo",
+      "pid": "b01hxpxh",
+      "relevantPathsAI": ["B.2.b", "B.1.b"],
+      "rationaleAI": "Marco Polo's extended residence at Kublai Khan's court and his detailed account of Asian commerce, geography, and Mongol governance correspond to B.2.b on commercial and cultural contacts between Yuan China and the West, and B.1.b on the Mongol capital at Ta-tu and expansion of trade."
     },
     {
       "episodeTitle": "Romance of the Three Kingdoms",
       "pid": "b02ykzh7",
-      "relevantPathsAI": [
-        "B.2.a",
-        "C.1.c"
-      ],
-      "rationaleAI": "Romance of the Three Kingdoms, attributed to Luo Guanzhong (14th century), is one of the Four Great Classical Novels and reflects Ming cultural life (C.1.c), while its historical setting connects to broader Chinese literary traditions."
+      "relevantPathsAI": ["C.1.c", "B.2.a"],
+      "rationaleAI": "Written by Luo Guanzhong in the 14th century during the Yuan-Ming transition, this foundational classical novel blending historical record with Confucian moral themes corresponds to B.2.a on developments in the arts under Mongol rule and C.1.c on literature and cultural life in the Ming period."
     },
     {
-      "episodeTitle": "The Han Synthesis",
-      "pid": "p004y29t",
-      "relevantPathsAI": [
-        "A.3"
-      ],
-      "rationaleAI": "The Han Synthesis as the intellectual framework for two millennia provides essential background for understanding Neo-Confucianism's resurgence during the Sung period (A.3), particularly the examination system and Confucian state ideology."
+      "episodeTitle": "The Ming Voyages",
+      "pid": "b015p8c2",
+      "relevantPathsAI": ["C.1.b"],
+      "rationaleAI": "Zheng He's seven maritime expeditions (1405-1433) projecting Ming imperial power to Southeast Asia, India, and East Africa, and their abrupt termination due to eunuch-Confucian bureaucrat disputes, correspond directly to C.1.b on developments in Ming foreign relations and economic policy."
+    },
+    {
+      "episodeTitle": "Matteo Ricci and the Ming Dynasty",
+      "pid": "b05qjq67",
+      "relevantPathsAI": ["C.1.c", "C.2.a.ii", "C.2.b.iii"],
+      "rationaleAI": "Ricci's introduction of European cartography, astronomy, and mathematics to Ming officials through intellectual exchange corresponds to C.1.c on Ming philosophy and scholarship, C.2.a.ii on early contacts with the West, and C.2.b.iii on introduction of Western sciences."
+    },
+    {
+      "episodeTitle": "The Great Wall of China",
+      "pid": "b00s3h3w",
+      "relevantPathsAI": ["C.1.a", "C.1.b"],
+      "rationaleAI": "The Wall's major reconstruction with brick and stone under the Ming Dynasty specifically against Mongol incursions corresponds to C.1.a on Ming political and military structure and C.1.b on foreign relations and defence policy."
+    },
+    {
+      "episodeTitle": "The Needham Question",
+      "pid": "p0038x9m",
+      "relevantPathsAI": ["A.3", "C.2.b.iii"],
+      "rationaleAI": "Joseph Needham's investigation of Chinese innovations including gunpowder, printing, and the compass — achievements of the Sung through Ch'ing periods — corresponds to A.3 on Sung invention of printing and manufacturing advances, and C.2.b.iii on the comparative scientific trajectory between China and the West."
+    },
+    {
+      "episodeTitle": "The Eunuch",
+      "pid": "b053bsf9",
+      "relevantPathsAI": ["C.1.a.ii", "C.1.b"],
+      "rationaleAI": "Chinese imperial eunuchs wielded significant political power in Ming court governance; the eunuch-bureaucrat rivalry shaped both internal administration (C.1.a.ii on government innovations) and foreign policy, including the termination of the Ming Voyages (C.1.b)."
+    },
+    {
+      "episodeTitle": "Tea",
+      "pid": "p004y24y",
+      "relevantPathsAI": ["C.2.b.i", "C.2.a.ii"],
+      "rationaleAI": "Tea's Chinese origins and the explosive growth of Sino-British trade that ultimately drove the opium trade correspond to C.2.b.i on expansion of crafts, industries, commerce, and finance under the mid-Ch'ing, and C.2.a.ii on contacts with the West."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }

@@ -4,32 +4,28 @@
     {
       "episodeTitle": "The Mughal Empire",
       "pid": "p004y27h",
-      "relevantPathsAI": [
-        "C",
-        "C.1",
-        "C.2",
-        "C.3",
-        "C.4"
-      ],
-      "rationaleAI": "The Mughal Empire from Babur's invasion through Akbar's consolidation, Shah Jahan's architectural achievements, Aurangzeb's expansion, and the empire's decline directly correspond to the entire section C on Mughal unification and administration of the subcontinent (1526-1761)."
+      "relevantPathsAI": ["C", "C.1", "C.2", "C.2.b", "C.3", "C.4"],
+      "rationaleAI": "Babur's conquest of North India (C.1), Akbar's administrative reforms and religious tolerance policies (C.2.b), the Mansabdari military-bureaucratic hierarchy, Shah Jahan's Taj Mahal and Indo-Islamic cultural production (C.3), and the gradual decline enabling East India Company expansion (C.4) map directly to the outline of Mughal political unification from 1526 to 1761."
     },
     {
-      "episodeTitle": "The Sikh Empire",
-      "pid": "b075t5mn",
-      "relevantPathsAI": [
-        "D"
-      ],
-      "rationaleAI": "The Sikh Empire under Ranjit Singh (1799-1849) is chronologically later than this section's main focus, but provides context for the Maratha and post-Mughal period dynamics; however, the section ends at 1761 so the overlap is limited to the broader religious and political context."
+      "episodeTitle": "The East India Company",
+      "pid": "p0054906",
+      "relevantPathsAI": ["C.4"],
+      "rationaleAI": "The East India Company's evolution from trading enterprise to governing authority that toppled Indian princes and administered territories documents the foreign commercial and military penetration that exploited Mughal dynastic weakness and fragmentation after 1707, directly relevant to C.4 on Mughal decline culminating in foreign invasions."
+    },
+    {
+      "episodeTitle": "al-Biruni",
+      "pid": "b00smnlk",
+      "relevantPathsAI": ["A.1.e"],
+      "rationaleAI": "Al-Biruni's comprehensive study of Hindu religion, science, and culture (c.1017-1030), the first account of India by a Muslim scholar, documents the Islamic-Hindu intellectual encounter that forms essential context for the cultural and religious developments under the Delhi Sultanate described in A.1.e."
     },
     {
       "episodeTitle": "The Indian Mutiny",
       "pid": "b00qprnj",
-      "relevantPathsAI": [
-        "C.4"
-      ],
-      "rationaleAI": "The Indian Mutiny of 1857 is chronologically beyond this section but the episode covers the dissolution of the Mughal dynasty and British takeover, providing end-context for C.4 on Mughal decline culminating in foreign invasions (1731-61)."
+      "relevantPathsAI": ["C.4"],
+      "rationaleAI": "The 1857 uprising restored the aged Mughal emperor as figurehead in Delhi and ended East India Company rule, illustrating the final dissolution of Mughal symbolic authority and the consequences of 18th-century imperial disintegration described in C.4."
     }
   ],
   "_curatedBy": "ai",
-  "_generatedAt": "2026-03-23"
+  "_generatedAt": "2026-03-25"
 }
