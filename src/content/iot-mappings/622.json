@@ -183,6 +183,35 @@
         "D.1"
       ],
       "rationaleAI": "Macbeth is one of Shakespeare's most psychologically intense tragedies (B.1.a.i), central to the English dramatic canon and the history of Western theatre (D.1)."
+    },
+    {
+      "episodeTitle": "Oscar Wilde",
+      "pid": "p00547m3",
+      "relevantPathsAI": [
+        "B.1.a.i",
+        "B.1.e",
+        "C.1.b"
+      ],
+      "rationaleAI": "Wilde's plays performed on the London stage as traditional dramatic forms (B.1.a.i), defined by their distinctive aesthetic style (B.1.e), and situated in the history of Western theatre in the modern period (C.1.b)."
+    },
+    {
+      "episodeTitle": "The Baroque Movement",
+      "pid": "b00fhp85",
+      "relevantPathsAI": [
+        "C.1.b"
+      ],
+      "rationaleAI": "Baroque theatre as part of the development of Western theatre in the early modern period, including operatic and court theatrical productions (C.1.b)."
+    },
+    {
+      "episodeTitle": "Tragedy",
+      "pid": "p005464v",
+      "relevantPathsAI": [
+        "A.1",
+        "A.2",
+        "B.1.a.i",
+        "C.1.a"
+      ],
+      "rationaleAI": "Tragedy as a dramatic form performed in Greek amphitheatres through to modern drama (A.1 origins of theatre, A.2 functions of theatre), the traditional dramatic genre of tragedy (B.1.a.i), and the history of Western theatre from antiquity (C.1.a)."
     }
   ],
   "_curatedBy": "ai",

@@ -4,38 +4,68 @@
     {
       "episodeTitle": "The Samurai",
       "pid": "b00pcm9f",
-      "relevantPathsAI": ["B.3.b.ii", "C", "C.1", "C.1.a", "C.4", "C.4.b", "C.4.d"],
+      "relevantPathsAI": [
+        "B.3.b.ii",
+        "C",
+        "C.1",
+        "C.1.a",
+        "C.4",
+        "C.4.b",
+        "C.4.d"
+      ],
       "rationaleAI": "The samurai emerged during feudal warfare as the warrior class whose rise is central to B.3.b.ii (rise of the samurai class and feudalism), dominated the Kamakura shogunate (C.1), were transformed into bureaucratic administrators under Tokugawa rule (C.4.b class structure), and ultimately drove the Meiji Restoration that ended the bakuhan system (C.4.d)."
     },
     {
       "episodeTitle": "Japan's Sakoku Period",
       "pid": "b01rlptf",
-      "relevantPathsAI": ["C.4.a", "C.4.d.i", "C.4.d.iii"],
+      "relevantPathsAI": [
+        "C.4.a",
+        "C.4.d.i",
+        "C.4.d.iii"
+      ],
       "rationaleAI": "Tokugawa-era national seclusion policy (1630s-1858), expulsion of Christian missionaries, the Dutch trading exception at Dejima, and Commodore Perry's forced reopening correspond directly to C.4.a (national seclusion from missionaries and European traders), C.4.d.i (opening to Western influences), and C.4.d.iii (pressure from Europe and the US)."
     },
     {
       "episodeTitle": "Hokusai",
       "pid": "b08k1b0q",
-      "relevantPathsAI": ["C.4.c", "C.4.d.ii"],
+      "relevantPathsAI": [
+        "C.4.c",
+        "C.4.d.ii"
+      ],
       "rationaleAI": "Hokusai's ukiyo-e woodblock prints during the late Edo period, his incorporation of Western pigments and techniques into Japanese art, and his status as the preeminent visual artist of Tokugawa Japan correspond to C.4.c (advances in visual arts) and C.4.d.ii (cultural developments in the 18th and 19th centuries)."
     },
     {
       "episodeTitle": "The Korean Empire",
       "pid": "m002bj6d",
-      "relevantPathsAI": ["D.5", "D.5.b"],
+      "relevantPathsAI": [
+        "D.5",
+        "D.5.b"
+      ],
       "rationaleAI": "The Korean Empire (1897-1910), King Gojong's assertion of sovereignty, modernization efforts, geopolitical pressures from Japan and Russia, and formal annexation in 1910 correspond to D.5 (Yi dynasty) and D.5.b (Japanese invasions, Korea's fate as a vassal, and the path to annexation)."
     },
     {
       "episodeTitle": "The Dutch East India Company",
       "pid": "b071vl2l",
-      "relevantPathsAI": ["C.4.a"],
+      "relevantPathsAI": [
+        "C.4.a"
+      ],
       "rationaleAI": "The VOC maintained the only European trading access to Tokugawa Japan through its Dejima outpost in Nagasaki harbor, directly relevant to C.4.a's account of Japan's seclusion policy and the specific exception granted to Dutch traders during the Edo period."
     },
     {
       "episodeTitle": "Romance of the Three Kingdoms",
       "pid": "b02ykzh7",
-      "relevantPathsAI": ["D.2"],
+      "relevantPathsAI": [
+        "D.2"
+      ],
       "rationaleAI": "The 14th-century novel's cultural influence across East Asia is compared to Homer's impact on Western civilization, with particular significance for Korea and Japan where it shaped literary traditions, relevant to D.2's coverage of literature and cultural developments during the Three Kingdoms era of Korean history."
+    },
+    {
+      "episodeTitle": "The Shimabara Rebellion",
+      "pid": "m001lrd7",
+      "relevantPathsAI": [
+        "C.4.a"
+      ],
+      "rationaleAI": "The Shimabara Rebellion directly led to the Tokugawa policy of national seclusion (sakoku) from Christian missionaries and most European traders (C.4.a), fundamentally shaping Japan's closed society for over two centuries."
     }
   ],
   "_curatedBy": "ai",

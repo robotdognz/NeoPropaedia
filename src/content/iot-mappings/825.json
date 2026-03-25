@@ -4,80 +4,141 @@
     {
       "episodeTitle": "Shinto",
       "pid": "b014qnld",
-      "relevantPathsAI": ["E.2", "E.2.b", "E.2.d", "E.2.e", "E.3", "E.1"],
+      "relevantPathsAI": [
+        "E.2",
+        "E.2.b",
+        "E.2.d",
+        "E.2.e",
+        "E.3",
+        "E.1"
+      ],
       "rationaleAI": "Directly examines Shinto as the indigenous belief system of Japan, covering kami as sacred presences (E.2.d), shrine worship and purification ceremonies (E.2.e), syncretism with Buddhism since the sixth century (E.1), and Shinto's influence on Japanese aesthetics and imperial ideology (E.3)."
     },
     {
       "episodeTitle": "Daoism",
       "pid": "b00wlgbg",
-      "relevantPathsAI": ["C", "C.1", "C.1.a", "C.2", "C.3", "A.1"],
+      "relevantPathsAI": [
+        "C",
+        "C.1",
+        "C.1.a",
+        "C.2",
+        "C.3",
+        "A.1"
+      ],
       "rationaleAI": "Directly examines Daoism as philosophy and religion, covering the Daodejing and effortless action (C.2, C.3), its origins over two thousand years ago (C.1.a), its relationship with Buddhism and Confucianism illustrating the interplay of folk and literate religions (A.1), and practices including meditation."
     },
     {
       "episodeTitle": "Confucius",
       "pid": "p00547k8",
-      "relevantPathsAI": ["B.1.b", "B.3", "A.2.b"],
+      "relevantPathsAI": [
+        "B.1.b",
+        "B.3",
+        "A.2.b"
+      ],
       "rationaleAI": "Directly addresses the life and teachings of Confucius as the first Sage (B.1.b), his philosophy of learning from the past, respect for hierarchy and ritual, and how Confucianism became the bedrock of Chinese culture and governance, functioning as both religion and philosophy (B.3)."
     },
     {
       "episodeTitle": "The Han Synthesis",
       "pid": "p004y29t",
-      "relevantPathsAI": ["B.1.d", "A.2.b", "A.3"],
+      "relevantPathsAI": [
+        "B.1.d",
+        "A.2.b",
+        "A.3"
+      ],
       "rationaleAI": "The Han Synthesis merged Confucian ethics with Yin-Yang cosmology, Five Phases theory, and the Great Tao into a unified state ideology under Dong Zhongshu, directly addressing the establishment of Confucianism as Han state orthodoxy (B.1.d) and traditional cosmological concepts relating the individual to cosmos and society (A.3)."
     },
     {
       "episodeTitle": "China's Warring States period",
       "pid": "p004y24k",
-      "relevantPathsAI": ["A.2.b", "B.1.c", "C.1.a"],
+      "relevantPathsAI": [
+        "A.2.b",
+        "B.1.c",
+        "C.1.a"
+      ],
       "rationaleAI": "The Warring States period saw the growth of Confucianism, emergence of Taoism, invention of Yin-Yang theory, and the hundred schools of thought, directly covering the formulation of the Great Tradition (A.2.b), early Confucian school developments (B.1.c), and the origin of Taoist teachings (C.1.a)."
     },
     {
       "episodeTitle": "Zen",
       "pid": "b04sxv29",
-      "relevantPathsAI": ["E.1.b", "A.2.c", "E.3"],
+      "relevantPathsAI": [
+        "E.1.b",
+        "A.2.c",
+        "E.3"
+      ],
       "rationaleAI": "Zen Buddhism originated when Buddhism encountered Chinese Daoist thought in the sixth century (A.2.c), then spread to medieval Japan where it profoundly shaped martial arts, tea ceremony, garden design, and architecture (E.1.b, E.3), illustrating the integration of Buddhism into Japanese religious and aesthetic life."
     },
     {
       "episodeTitle": "Journey to the West",
       "pid": "m000w5hd",
-      "relevantPathsAI": ["A.2.c", "A.6", "C.1.d"],
+      "relevantPathsAI": [
+        "A.2.c",
+        "A.6",
+        "C.1.d"
+      ],
       "rationaleAI": "This Ming dynasty novel about Buddhist pilgrimage interweaves Chinese folk religion with Buddhist and Daoist mythological traditions, featuring the trickster deity Sun Wukong (A.6), illustrating the dominance of the Buddhist Way (A.2.c) and syncretistic tendencies in later Taoism (C.1.d)."
     },
     {
       "episodeTitle": "The May Fourth Movement",
       "pid": "m001282c",
-      "relevantPathsAI": ["A.2.d", "B.1.h"],
+      "relevantPathsAI": [
+        "A.2.d",
+        "B.1.h"
+      ],
       "rationaleAI": "The 1919 May Fourth Movement explicitly rejected Confucian tradition in favor of science, democracy, and cultural modernization, directly illustrating the effects of nationalism and secularism on Chinese familial and social systems (A.2.d) and the varied responses to intellectual challenges of the West (B.1.h)."
     },
     {
       "episodeTitle": "Sources of Early Chinese History",
       "pid": "b03qf7qx",
-      "relevantPathsAI": ["A.2.a", "A.5"],
+      "relevantPathsAI": [
+        "A.2.a",
+        "A.5"
+      ],
       "rationaleAI": "Shang dynasty oracle bone inscriptions on animal bones and tortoise shells represent the earliest evidence of Chinese divination and ancestor worship practices (A.2.a), while the material record of early sacred and ritual texts illuminates Chinese religious symbolism (A.5)."
     },
     {
       "episodeTitle": "The Samurai",
       "pid": "b00pcm9f",
-      "relevantPathsAI": ["E.1.b", "E.1.c", "E.3"],
+      "relevantPathsAI": [
+        "E.1.b",
+        "E.1.c",
+        "E.3"
+      ],
       "rationaleAI": "The samurai's deep engagement with Zen Buddhism, tea ceremony, and Noh theatre illustrates how Buddhism was integrated into Japanese warrior culture during the medieval period (E.1.b), while their transformation into bureaucrats under the Tokugawa reflects religious and cultural developments of that era (E.1.c)."
     },
     {
       "episodeTitle": "Japan's Sakoku Period",
       "pid": "b01rlptf",
-      "relevantPathsAI": ["E.1.c"],
+      "relevantPathsAI": [
+        "E.1.c"
+      ],
       "rationaleAI": "The Tokugawa shogunate's isolation edicts were driven partly by fear of Christian missionary influence, illustrating the interaction between indigenous Japanese religious order and Western religious incursion during the Tokugawa era (E.1.c)."
     },
     {
       "episodeTitle": "Tang Era Poetry",
       "pid": "m00174d0",
-      "relevantPathsAI": ["C.1.d", "B.1.f"],
+      "relevantPathsAI": [
+        "C.1.d",
+        "B.1.f"
+      ],
       "rationaleAI": "Li Bai's poetry of Daoist transcendence and Du Fu's Confucian moral seriousness illustrate how Taoism and Confucianism permeated Tang-era cultural life, reflecting Taoist developments under the Tang dynasty (C.1.d) and Confucianism's continued role during the period of Buddhist ascendancy (B.1.f)."
     },
     {
       "episodeTitle": "Chinese Legalism",
       "pid": "b06r84qy",
-      "relevantPathsAI": ["A.2.b", "B.1.d"],
+      "relevantPathsAI": [
+        "A.2.b",
+        "B.1.d"
+      ],
       "rationaleAI": "Legalism was a direct intellectual rival to Confucianism during the Warring States period and its discrediting under the Han dynasty was integral to the establishment of Confucian orthodoxy (B.1.d), while the tension between Legalist and Confucian governance philosophies shaped the formulation of the Great Tradition (A.2.b)."
+    },
+    {
+      "episodeTitle": "The Shimabara Rebellion",
+      "pid": "m001lrd7",
+      "relevantPathsAI": [
+        "C",
+        "D"
+      ],
+      "rationaleAI": "The suppression of Christianity and reinforcement of Buddhism and Shinto as approved religions after the rebellion connect to the indigenous religions of Japan and their relationship to state authority."
     }
   ],
   "_curatedBy": "ai",

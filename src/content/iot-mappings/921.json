@@ -222,6 +222,41 @@
         "A.2.c"
       ],
       "rationaleAI": "The poem was composed in Anglo-Saxon England during the early Middle Ages, connecting to the Germanic kingdoms in Britain (A.2.b the Anglo-Saxon kingdoms) and their cultural and literary achievements (A.2.c)."
+    },
+    {
+      "episodeTitle": "The Orkneyinga Saga",
+      "pid": "m001zvvp",
+      "relevantPathsAI": [
+        "D.2.c",
+        "D.2.b"
+      ],
+      "rationaleAI": "The saga covers the Viking Age in Scandinavia (D.2.c) with widespread Norse raids, conquests, and settlement patterns, and also relates to the development of Scotland (D.2.b) given Orkney's position between Norwegian and Scottish crowns."
+    },
+    {
+      "episodeTitle": "Merlin",
+      "pid": "p003k9j2",
+      "relevantPathsAI": [
+        "B.3.a",
+        "B.3.b"
+      ],
+      "rationaleAI": "Merlin's origins in Celtic bardic tradition and the early post-Roman British context connect to religion, arts, and society in the early Middle Ages (B.3.a) and the amalgamation of late Classical and Germanic cultures (B.3.b)."
+    },
+    {
+      "episodeTitle": "The Roman Empire's Collapse in the 5th century",
+      "pid": "p00547ds",
+      "relevantPathsAI": [
+        "B.1.a",
+        "B.1.b"
+      ],
+      "rationaleAI": "The end of the Western Roman Empire and the Germanic Volkerwanderung (B.1.a), including the invasions of Ostrogoths, Visigoths, and Vandals, and the development of Germanic successor states (B.1.b) are directly covered."
+    },
+    {
+      "episodeTitle": "The Plague of Justinian",
+      "pid": "m000rc43",
+      "relevantPathsAI": [
+        "C.2.d"
+      ],
+      "rationaleAI": "The 541 AD plague struck during Justinian I's reign (C.2.d covers Justinian's era), devastating Constantinople and the broader Byzantine Empire."
     }
   ],
   "_curatedBy": "ai",

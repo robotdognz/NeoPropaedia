@@ -1081,6 +1081,251 @@
         "A.3"
       ],
       "rationaleAI": "The episode examines how stories follow arcs analyzable through mathematical frameworks, engaging literary composition (A.2) and the contents/subject matter of literature (A.3)."
+    },
+    {
+      "episodeTitle": "The Later Romantics",
+      "pid": "p004y24r",
+      "relevantPathsAI": [
+        "C.1",
+        "C.4.b",
+        "D.1"
+      ],
+      "rationaleAI": "Byron, Shelley, and Keats as poets connect to poetry (C.1), language-based lyric forms (C.4.b), and the history of Western literature (D.1)."
+    },
+    {
+      "episodeTitle": "The Orkneyinga Saga",
+      "pid": "m001zvvp",
+      "relevantPathsAI": [
+        "C.2.b"
+      ],
+      "rationaleAI": "The Orkneyinga Saga is a medieval Icelandic saga chronicling the Norse Earls of Orkney, directly fitting the saga form (C.2.b) covering king's sagas, legendary sagas, and sagas of Icelanders."
+    },
+    {
+      "episodeTitle": "Merlin",
+      "pid": "p003k9j2",
+      "relevantPathsAI": [
+        "C.2.c",
+        "C.8"
+      ],
+      "rationaleAI": "Merlin is a central figure of Arthurian romance (C.2.c covers romance including Arthurian romance), and his legend draws on primitive, folk, and popular literary tradition (C.8)."
+    },
+    {
+      "episodeTitle": "The Sonnet",
+      "pid": "p00547gy",
+      "relevantPathsAI": [
+        "C.4.b",
+        "C.1",
+        "B.2.a"
+      ],
+      "rationaleAI": "The sonnet is explicitly listed as a language-based lyric form (C.4.b); the episode covers poetry broadly (C.1) and prosodic elements including metre, stanza, and rhyme (B.2.a)."
+    },
+    {
+      "episodeTitle": "Tristram Shandy",
+      "pid": "b0418phf",
+      "relevantPathsAI": [
+        "C.2.d",
+        "D.1"
+      ],
+      "rationaleAI": "Tristram Shandy is a novel (C.2.d) that defies emerging conventions of the novel form and anticipated modernist techniques; it belongs to the history of Western literature (D.1)."
+    },
+    {
+      "episodeTitle": "Rudyard Kipling",
+      "pid": "b04l3852",
+      "relevantPathsAI": [
+        "C.2.d",
+        "C.2.e",
+        "C.1",
+        "C.7"
+      ],
+      "rationaleAI": "Kipling wrote novels including Kim (C.2.d), was among the earliest to develop the short story as a serious form (C.2.e), composed poetry (C.1), and wrote children's literature including The Jungle Book (C.7)."
+    },
+    {
+      "episodeTitle": "Nineteen Eighty-Four",
+      "pid": "m001bz77",
+      "relevantPathsAI": [
+        "C.2.d",
+        "C.5",
+        "D.1"
+      ],
+      "rationaleAI": "1984 is a dystopian novel (C.2.d) with strong satiric elements (C.5), central to 20th-century Western literature (D.1)."
+    },
+    {
+      "episodeTitle": "Shakespeare's Life",
+      "pid": "p00547ct",
+      "relevantPathsAI": [
+        "C.3",
+        "C.4.b",
+        "D.1"
+      ],
+      "rationaleAI": "Shakespeare's works span dramatic literature including tragedy and comedy (C.3), lyric poetry including sonnets (C.4.b), and are central to the history of Western literature (D.1)."
+    },
+    {
+      "episodeTitle": "The Romantics",
+      "pid": "p00546ws",
+      "relevantPathsAI": [
+        "C.1",
+        "C.4.b",
+        "D.1"
+      ],
+      "rationaleAI": "The Romantic poets (Wordsworth, Coleridge, Blake, Keats, Byron, Shelley) composed poetry (C.1) including lyric forms (C.4.b), representing a pivotal movement in the history of Western literature (D.1)."
+    },
+    {
+      "episodeTitle": "Thebes",
+      "pid": "b09fj9mt",
+      "relevantPathsAI": [
+        "C.3.a",
+        "D.1"
+      ],
+      "rationaleAI": "Thebes as the setting for more surviving Greek plays than any other location, including tragedies by Sophocles and Euripides (C.3.a -- tragedy), makes it foundational to the history of Western literature (D.1)."
+    },
+    {
+      "episodeTitle": "Truth, Lies and Fiction",
+      "pid": "p00545lr",
+      "relevantPathsAI": [
+        "A.1",
+        "A.3",
+        "C.6.o"
+      ],
+      "rationaleAI": "The episode addresses the nature and scope of literature (A.1), the contents and subject matter of literature (A.3), and the ethics of autobiographical and memoir literature (C.6.o)."
+    },
+    {
+      "episodeTitle": "William Hazlitt",
+      "pid": "b00rtd0g",
+      "relevantPathsAI": [
+        "C.6.a",
+        "C.6.b",
+        "C.6.c",
+        "D.1"
+      ],
+      "rationaleAI": "Hazlitt is recognized as the finest English essayist (C.6.a -- the essay), also writing literary criticism as literature (C.6.c) and history as literature (C.6.b); his work belongs to the history of Western literature (D.1)."
+    },
+    {
+      "episodeTitle": "Moby Dick",
+      "pid": "b09gzjm5",
+      "relevantPathsAI": [
+        "C.2.d",
+        "C.2.a",
+        "D.1"
+      ],
+      "rationaleAI": "Moby-Dick is a novel (C.2.d) with epic qualities (C.2.a -- the literary epic), central to the history of Western -- specifically American -- literature (D.1)."
+    },
+    {
+      "episodeTitle": "Oscar Wilde",
+      "pid": "p00547m3",
+      "relevantPathsAI": [
+        "C.3.b",
+        "C.5.a",
+        "A.3"
+      ],
+      "rationaleAI": "Wilde's theatrical comedies including The Importance of Being Earnest as comedy (C.3.b), his epigrammatic essays as literary criticism and non-fiction prose (C.5.a), and the relationship between art and ethics in his aestheticism (A.3)."
+    },
+    {
+      "episodeTitle": "Surrealism",
+      "pid": "p00547l1",
+      "relevantPathsAI": [
+        "B.1.a",
+        "C.4"
+      ],
+      "rationaleAI": "Breton's manifesto and automatic writing as literary techniques involving rhetorical elements (B.1.a); Surrealist poetry by Eluard and Aragon as lyric literature (C.4)."
+    },
+    {
+      "episodeTitle": "The Novel",
+      "pid": "p005463z",
+      "relevantPathsAI": [
+        "C.2.d",
+        "A.1",
+        "A.4",
+        "A.6"
+      ],
+      "rationaleAI": "The novel as a literary form (C.2.d the novel and the tale), its nature and scope as literature (A.1), its audience (A.4), and classification of genres (A.6) are the direct subject of this episode."
+    },
+    {
+      "episodeTitle": "Thomas Hardy's Poetry",
+      "pid": "m00139nw",
+      "relevantPathsAI": [
+        "C.1",
+        "B.2.a",
+        "B.2.b",
+        "A.2"
+      ],
+      "rationaleAI": "Hardy's poetry as a body of verse (C.1 poetry), his formally inventive structures combining plain diction with prosodic elements (B.2.a, B.2.b), and his approach to literary composition (A.2)."
+    },
+    {
+      "episodeTitle": "Tragedy",
+      "pid": "p005464v",
+      "relevantPathsAI": [
+        "C.3.a",
+        "A.6",
+        "A.7"
+      ],
+      "rationaleAI": "Tragedy as dramatic or theatrical literature (C.3.a), the classification of tragic works as a literary genre (A.6), and critical and theoretical writings on tragedy from Aristotle onward (A.7)."
+    },
+    {
+      "episodeTitle": "Polidori's The Vampyre",
+      "pid": "m00162xz",
+      "relevantPathsAI": [
+        "C.2.c",
+        "C.2.d",
+        "C.2.e"
+      ],
+      "rationaleAI": "The Vampyre as a Gothic romance (C.2.c), its role as a novella and tale (C.2.d), and its spawning of penny dreadfuls and short vampire fiction (C.2.e)."
+    },
+    {
+      "episodeTitle": "Robin Hood",
+      "pid": "p005492h",
+      "relevantPathsAI": [
+        "C.2.g",
+        "C.2.c",
+        "C.2.f"
+      ],
+      "rationaleAI": "The Robin Hood legend originated in medieval ballads (C.2.g ballad, lay, idyll), evolved into romance narratives of chivalry and adventure (C.2.c), and functions as fable and allegory across cultural periods (C.2.f)."
+    },
+    {
+      "episodeTitle": "Sensibility",
+      "pid": "p005487n",
+      "relevantPathsAI": [
+        "C.2.d",
+        "A.3"
+      ],
+      "rationaleAI": "The sentimental novel by Sterne, Richardson, and Mackenzie as a distinct novelistic form (C.2.d the novel and the tale), and the literary-philosophical content concerning emotional response and virtue (A.3)."
+    },
+    {
+      "episodeTitle": "Swift's A Modest Proposal",
+      "pid": "b00h3650",
+      "relevantPathsAI": [
+        "C.5.a",
+        "B.1.a",
+        "C.2.f"
+      ],
+      "rationaleAI": "A Modest Proposal as a masterpiece of satirical prose and essay writing (C.5.a), employing sustained irony as a rhetorical figure (B.1.a elements of rhetoric), and functioning as parable and allegory (C.2.f)."
+    },
+    {
+      "episodeTitle": "The Fisher King",
+      "pid": "b008p0nv",
+      "relevantPathsAI": [
+        "C.2.c",
+        "C.2.f"
+      ],
+      "rationaleAI": "The Fisher King legend as Arthurian romance (C.2.c romance of love, chivalry, and adventure; Arthurian romance) and as allegory blending Christian and Celtic symbolism (C.2.f fable, parable, allegory)."
+    },
+    {
+      "episodeTitle": "The Kalevala",
+      "pid": "m001xm8t",
+      "relevantPathsAI": [
+        "C.2.a",
+        "C.2.g"
+      ],
+      "rationaleAI": "The Kalevala as a national literary epic compiled from traditional oral poems (C.2.a epic, the literary epic), drawing on ballad and oral poetic traditions (C.2.g ballad, lay, idyll)."
+    },
+    {
+      "episodeTitle": "The Prelude",
+      "pid": "b00899w0",
+      "relevantPathsAI": [
+        "C.1",
+        "C.2.a",
+        "A.2"
+      ],
+      "rationaleAI": "The Prelude as poetry (C.1), an autobiographical epic in blank verse (C.2.a epic, the literary epic), and a landmark in literary composition exploring memory, identity, and nature (A.2)."
     }
   ],
   "_curatedBy": "ai",
