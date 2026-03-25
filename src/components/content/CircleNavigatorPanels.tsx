@@ -18,6 +18,7 @@ import {
 import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
 import { completedChecklistKeysFromState } from '../../utils/readingLibrary';
 import Accordion from '../ui/Accordion';
+import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 import ReadingSectionLinks from './ReadingSectionLinks';
 import type {
   CircleNavigatorIotEntry,
@@ -239,7 +240,7 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
       : `Show the ${sectionsInPart.length} ${pluralize(sectionsInPart.length, 'linked Section')} in ${topPart.partName}`;
 
     return (
-      <li
+      <div
         key={item.entry.checklistKey}
         class={`rounded-xl border p-4 transition-colors ${item.isCompleted ? 'border-slate-200 bg-slate-100/80' : 'border-slate-200 bg-white'}`}
       >
@@ -309,7 +310,7 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
             variant="chips"
           />
         )}
-      </li>
+      </div>
     );
   };
 
@@ -337,11 +338,11 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
       </div>
 
       {section.unreadItems.length > 0 ? (
-        <ol class="space-y-3">
+        <HorizontalCardScroll>
           {section.unreadItems.map((item, index) =>
             renderItem(item, `Step ${index + 1}`)
           )}
-        </ol>
+        </HorizontalCardScroll>
       ) : (
         <div class="rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
           {section.totalUnreadLinkedCount === 0
@@ -357,9 +358,9 @@ function renderAnchoredRecommendationSection<TEntry extends AnchoredEntryBase>(
           <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
             Already marked done ({section.completedItems.length})
           </p>
-          <ol class="mt-3 space-y-3">
+          <HorizontalCardScroll>
             {section.completedItems.map((item) => renderItem(item, 'Done'))}
-          </ol>
+          </HorizontalCardScroll>
         </div>
       )}
     </Accordion>
@@ -405,7 +406,7 @@ function renderSharedCoverageRecommendationSection<TEntry extends AnchoredEntryB
       : `Show the ${selectedPartSections.length} ${pluralize(selectedPartSections.length, 'linked Section')} in ${centerPart.partName} and ${topPart.partName}`;
 
     return (
-      <li
+      <div
         key={item.entry.checklistKey}
         class={`rounded-xl border p-4 transition-colors ${item.isCompleted ? 'border-slate-200 bg-slate-100/80' : 'border-slate-200 bg-white'}`}
       >
@@ -478,7 +479,7 @@ function renderSharedCoverageRecommendationSection<TEntry extends AnchoredEntryB
             variant="chips"
           />
         )}
-      </li>
+      </div>
     );
   };
 
@@ -506,11 +507,11 @@ function renderSharedCoverageRecommendationSection<TEntry extends AnchoredEntryB
       </div>
 
       {section.unreadItems.length > 0 ? (
-        <ol class="space-y-3">
+        <HorizontalCardScroll>
           {section.unreadItems.map((item, index) =>
             renderItem(item, `Step ${index + 1}`)
           )}
-        </ol>
+        </HorizontalCardScroll>
       ) : (
         <div class="rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
           {section.totalUnreadLinkedCount === 0
@@ -526,9 +527,9 @@ function renderSharedCoverageRecommendationSection<TEntry extends AnchoredEntryB
           <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
             Already marked done ({section.completedItems.length})
           </p>
-          <ol class="mt-3 space-y-3">
+          <HorizontalCardScroll>
             {section.completedItems.map((item) => renderItem(item, 'Done'))}
-          </ol>
+          </HorizontalCardScroll>
         </div>
       )}
     </Accordion>

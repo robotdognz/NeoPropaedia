@@ -160,7 +160,6 @@ export default function IotLibrary({
         ...rest,
       }))
     : [];
-  const bestNextEpisode = activePath[0] ?? null;
   const isLayerComplete = activeSnapshot
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
     : false;

@@ -1,5 +1,6 @@
 import { h, type ComponentChildren } from 'preact';
 import type { ReadingSectionSummary } from '../../utils/readingData';
+import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 import ReadingSectionLinks from './ReadingSectionLinks';
 
 interface SpreadPathStepBase {
@@ -98,13 +99,14 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
       </div>
 
       {isOpen && steps.length > 0 ? (
-        <ol class="mt-5 grid min-w-0 gap-3 sm:gap-4 lg:grid-cols-2">
+        <div class="mt-5">
+        <HorizontalCardScroll>
           {steps.map((step, index) => {
             const isChecked = Boolean(checklistState[step.checklistKey]);
             const newPartsSpanned = countPartsSpanned(step.newSections);
 
             return (
-              <li key={step.checklistKey} class="rounded-xl border border-amber-200 bg-white p-4">
+              <div key={step.checklistKey} class="rounded-xl border border-amber-200 bg-white p-4">
                 <div class="flex items-start justify-between gap-3">
                   <div class="min-w-0">
                     <p class="text-xs font-semibold uppercase tracking-[0.18em] text-amber-700">
@@ -160,10 +162,11 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
                   label="Show the Sections this opens up"
                   variant={sectionLinksVariant}
                 />
-              </li>
+              </div>
             );
           })}
-        </ol>
+        </HorizontalCardScroll>
+        </div>
       ) : isOpen ? (
         <div class="mt-5 rounded-xl border border-dashed border-amber-300 bg-white px-4 py-6 text-sm text-gray-600">
           {emptyMessage}

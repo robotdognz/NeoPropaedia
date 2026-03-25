@@ -162,7 +162,6 @@ export default function WikipediaLibrary({
         ...rest,
       }))
     : [];
-  const bestNextRead = activePath[0] ?? null;
   const isLayerComplete = activeSnapshot
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
     : false;

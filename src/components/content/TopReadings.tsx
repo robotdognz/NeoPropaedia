@@ -19,6 +19,7 @@ import {
   type ReadingType,
 } from '../../utils/readingPreference';
 import { slugify } from '../../utils/helpers';
+import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 
 export interface ReadingItem {
   title: string;
@@ -133,7 +134,7 @@ export default function TopReadings({ vsi = [], wiki = [], iot = [], macro = [],
               {section.browseLabel}
             </a>
           </div>
-          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <HorizontalCardScroll>
             {section.items.filter((item) => {
               if (!hideChecked) return true;
               return !checklistState[section.getCheckKey(item)];
@@ -182,7 +183,7 @@ export default function TopReadings({ vsi = [], wiki = [], iot = [], macro = [],
                 </div>
               );
             })}
-          </div>
+          </HorizontalCardScroll>
         </Accordion>
       ))}
     </div>

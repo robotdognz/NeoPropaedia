@@ -17,6 +17,7 @@ import {
 import { getReadingPreference, getHideCheckedReadings, setHideCheckedReadings, subscribeHideCheckedReadings } from '../../utils/readingPreference';
 import { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
 import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
+import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 
 export interface VsiMapping {
   vsiTitle: string;
@@ -140,7 +141,7 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
         )}
 
         {visibleCount > 0 ? (
-          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <HorizontalCardScroll>
             {displayMappings.map((mapping, index) => {
               const checklistKey = vsiChecklistKey(mapping.vsiTitle, mapping.vsiAuthor);
 
@@ -172,7 +173,7 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
                 />
               );
             })}
-          </div>
+          </HorizontalCardScroll>
         ) : (
           <div class="rounded-lg border border-dashed border-amber-300 bg-white px-4 py-6 text-sm text-gray-600">
             No Oxford VSI recommendations matched this outline item.

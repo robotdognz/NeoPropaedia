@@ -150,7 +150,6 @@ export default function MacropaediaLibrary({
         ...rest,
       }))
     : [];
-  const bestNextArticle = activePath[0] ?? null;
   const isLayerComplete = activeSnapshot
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
     : false;

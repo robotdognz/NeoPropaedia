@@ -193,7 +193,6 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
         ...rest,
       }))
     : [];
-  const bestNextRead = activePath[0] ?? null;
   const isLayerComplete = activeSnapshot
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
     : false;
