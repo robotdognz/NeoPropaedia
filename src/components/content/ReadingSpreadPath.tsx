@@ -52,38 +52,50 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
   baseUrl,
   sectionLinksVariant = 'details',
 }: ReadingSpreadPathProps<TStep>) {
+  const bestNext = steps[0] ?? null;
+
   return (
     <section class="overflow-hidden rounded-2xl border border-amber-200 bg-amber-50/70 p-4 sm:p-5">
-      <button
-        type="button"
-        onClick={onToggleOpen}
-        class="flex w-full flex-col gap-2.5 text-left md:flex-row md:items-end md:justify-between"
-      >
-        <div class="max-w-3xl">
+      <div class="flex flex-col gap-2.5">
+        <div>
           <h2 class="flex items-center gap-1.5 text-sm font-medium uppercase tracking-wide text-amber-800">
             Knowledge-Spread Path
-            <svg
-              class={`h-4 w-4 text-amber-700 transition-transform ${isOpen ? 'rotate-180' : ''}`}
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width={2}
+            <button
+              type="button"
+              onClick={onToggleOpen}
+              class="inline-flex items-center justify-center"
+              aria-label={isOpen ? 'Collapse path' : 'Expand path'}
             >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
+              <svg
+                class={`h-4 w-4 text-amber-700 transition-transform hover:text-amber-900 ${isOpen ? 'rotate-180' : ''}`}
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width={2}
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
           </h2>
-          <p class="mt-1.5 text-sm text-gray-700">
-            A suggested reading order that builds your knowledge as broadly as possible. Each step picks the
-            unread {itemSingular} that opens up the most new {coverageUnitPlural}, favouring {itemPlural}
-            that reach across different Parts of the outline rather than clustering in one area. The path adapts as you
-            check off what you have read.
+          <p class="mt-1 text-xs font-medium text-amber-900">
+            {steps.length} {steps.length === 1 ? 'step' : 'steps'} · {remainingCoverageCount} {remainingCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural} uncovered
           </p>
         </div>
-        <p class="shrink-0 text-xs font-medium text-amber-900">
-          {steps.length} steps · {remainingCoverageCount} {remainingCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural} uncovered
-        </p>
-      </button>
+        {bestNext ? (
+          <div>
+            <a href={getHref(bestNext)} class="font-serif text-2xl leading-tight text-amber-950 hover:text-indigo-700 transition-colors">
+              {bestNext.title}
+            </a>
+            {renderMeta ? renderMeta(bestNext) : null}
+            <p class="mt-2 text-sm text-amber-900">
+              Adds {bestNext.newCoverageCount} new {bestNext.newCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural} and touches {bestNext.sectionCount} linked {bestNext.sectionCount === 1 ? 'Section' : 'Sections'}.
+            </p>
+          </div>
+        ) : (
+          <p class="text-sm text-amber-900">{emptyMessage}</p>
+        )}
+      </div>
 
       {isOpen && steps.length > 0 ? (
         <ol class="mt-5 grid min-w-0 gap-3 sm:gap-4 lg:grid-cols-2">

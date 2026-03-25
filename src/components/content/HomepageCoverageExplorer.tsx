@@ -302,8 +302,8 @@ export default function HomepageCoverageExplorer({
             </div>
           </section>
 
-          <div class="space-y-4">
-            <section class="grid gap-3 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.8fr)_minmax(0,1.1fr)]">
+          <div class="space-y-3">
+            <section class="grid gap-3 lg:grid-cols-2">
               <div class="rounded-xl border border-slate-200 bg-white p-4">
                 <p class="mb-3 text-sm font-medium uppercase tracking-wide text-slate-500">Your Coverage</p>
                 <div class="flex items-center justify-evenly">
@@ -363,38 +363,37 @@ export default function HomepageCoverageExplorer({
                     </div>
                     {partSegments.length > 0 && (() => {
                       const sorted = [...partSegments].sort((a, b) => b.fraction - a.fraction || b.depthScore - a.depthScore);
-                      const covered = sorted.filter(s => s.fraction > 0);
-                      const uncovered = sorted.filter(s => s.fraction === 0);
+                      const top = sorted.filter(s => s.fraction > 0).slice(0, 3);
+                      const incomplete = sorted.filter(s => s.fraction < 1).reverse().slice(0, 3);
+                      const allComplete = sorted.every(s => s.fraction >= 1);
                       const layerLabel = coverageLayerLabel(activeLayer, 2);
                       return (
                         <div class="space-y-1 text-xs text-slate-500">
-                          {covered.length > 0 && (
+                          {top.length > 0 ? (
                             <>
                               <p class="font-medium text-slate-600">Most covered</p>
-                              {covered.slice(0, 3).map(s => (
+                              {top.map(s => (
                                 <div key={s.partNumber} class="flex items-center gap-1.5">
                                   <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
                                   <span>{s.title}: {s.covered}/{s.total} {layerLabel}</span>
                                 </div>
                               ))}
                             </>
+                          ) : (
+                            <p class="text-slate-400">No {layerLabel} covered yet.</p>
                           )}
-                          {uncovered.length > 0 && uncovered.length < 10 && (
+                          {allComplete ? (
+                            <p class="pt-1 text-slate-400">All {layerLabel} covered.</p>
+                          ) : incomplete.length > 0 && top.length > 0 && (
                             <>
                               <p class="pt-1 font-medium text-slate-600">Least covered</p>
-                              {uncovered.slice(0, 3).map(s => (
+                              {incomplete.map(s => (
                                 <div key={s.partNumber} class="flex items-center gap-1.5">
                                   <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
                                   <span>{s.title}: {s.covered}/{s.total} {layerLabel}</span>
                                 </div>
                               ))}
-                              {uncovered.length > 3 && (
-                                <p class="text-slate-400">+{uncovered.length - 3} more</p>
-                              )}
                             </>
-                          )}
-                          {covered.length === 0 && (
-                            <p class="text-slate-400">No {layerLabel} covered yet.</p>
                           )}
                         </div>
                       );
@@ -417,29 +416,6 @@ export default function HomepageCoverageExplorer({
                 </p>
               </div>
 
-              <div class="rounded-xl border border-amber-200 bg-amber-50/60 p-4">
-                <p class="text-sm font-medium uppercase tracking-wide text-amber-800">
-                  Best Next for {coverageLayerLabel(activeLayer, 1)} Coverage
-                </p>
-                {bestNext ? (
-                  <>
-                    <a
-                      href={bestNext.href}
-                      class="mt-2 block font-serif text-2xl leading-tight text-amber-950 transition-colors hover:text-indigo-700"
-                    >
-                      {bestNext.title}
-                    </a>
-                    {bestNext.meta ? <p class="mt-1 text-sm text-amber-900">{bestNext.meta}</p> : null}
-                    <p class="mt-3 text-sm leading-6 text-amber-900">
-                      Adds {bestNext.newCoverageCount} new {coverageLayerLabel(activeLayer, bestNext.newCoverageCount)} and touches {bestNext.sectionCount} linked Sections.
-                    </p>
-                  </>
-                ) : (
-                  <p class="mt-2 text-sm text-amber-900">
-                    {emptyRecommendationMessage(source, activeLayer, isLayerComplete)}
-                  </p>
-                )}
-              </div>
             </section>
 
             <ReadingSpreadPath

@@ -239,13 +239,6 @@ export default function IotLibrary({
           activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
           activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
           activeCoverageDescription={activeCoverageDescription(activeLayer)}
-          bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
-          bestNextHref={bestNextEpisode ? `${baseUrl}/iot/${bestNextEpisode.pid}` : undefined}
-          bestNextTitle={bestNextEpisode?.title}
-          bestNextDescription={bestNextEpisode
-            ? `Adds ${bestNextEpisode.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextEpisode.newCoverageCount)}, ${bestNextEpisode.sectionCount} total Sections.${formatIotEpisodeMeta(bestNextEpisode) ? ` ${formatIotEpisodeMeta(bestNextEpisode)}.` : ''}${activeLayer === 'subsection' && precisionBadgeText(bestNextEpisode) ? ` ${precisionBadgeText(bestNextEpisode)}.` : ''}`
-            : undefined}
-          emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
           partSegments={partSegments}
           activeLayerLabel={coverageLayerLabel(activeLayer, 2)}
         />

@@ -18,12 +18,6 @@ interface ReadingCoverageSummaryProps {
   activeCoverageCount: number;
   activeCoverageTotal: number;
   activeCoverageDescription: string;
-  bestNextLabel: string;
-  bestNextHref?: string;
-  bestNextTitle?: string;
-  bestNextSubtitle?: string;
-  bestNextDescription?: string;
-  emptyBestNextText: string;
   mobileRingWidth?: number;
   desktopRingWidth?: number;
   partSegments?: PartCoverageSegment[];
@@ -43,12 +37,6 @@ export default function ReadingCoverageSummary({
   activeCoverageCount,
   activeCoverageTotal,
   activeCoverageDescription,
-  bestNextLabel,
-  bestNextHref,
-  bestNextTitle,
-  bestNextSubtitle,
-  bestNextDescription,
-  emptyBestNextText,
   mobileRingWidth = 8,
   desktopRingWidth = 10,
   partSegments,
@@ -127,37 +115,37 @@ export default function ReadingCoverageSummary({
             </div>
             {hasPartRing && (() => {
               const sorted = [...partSegments].sort((a, b) => b.fraction - a.fraction || b.depthScore - a.depthScore);
-              const covered = sorted.filter(s => s.fraction > 0);
-              const uncovered = sorted.filter(s => s.fraction === 0);
+              const top = sorted.filter(s => s.fraction > 0).slice(0, 3);
+              const incomplete = sorted.filter(s => s.fraction < 1).reverse().slice(0, 3);
+              const allComplete = sorted.every(s => s.fraction >= 1);
+              const lbl = activeLayerLabel ?? 'items';
               return (
                 <div class="space-y-1 text-xs text-slate-500">
-                  {covered.length > 0 && (
+                  {top.length > 0 ? (
                     <>
                       <p class="font-medium text-slate-600">Most covered</p>
-                      {covered.slice(0, 3).map(s => (
+                      {top.map(s => (
                         <div key={s.partNumber} class="flex items-center gap-1.5">
                           <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
-                          <span>{s.title}: {s.covered}/{s.total} {activeLayerLabel ?? 'items'}</span>
+                          <span>{s.title}: {s.covered}/{s.total} {lbl}</span>
                         </div>
                       ))}
                     </>
+                  ) : (
+                    <p class="text-slate-400">No {lbl} covered yet.</p>
                   )}
-                  {uncovered.length > 0 && uncovered.length < 10 && (
+                  {allComplete ? (
+                    <p class="pt-1 text-slate-400">All {lbl} covered.</p>
+                  ) : incomplete.length > 0 && top.length > 0 && (
                     <>
                       <p class="pt-1 font-medium text-slate-600">Least covered</p>
-                      {uncovered.slice(0, 3).map(s => (
+                      {incomplete.map(s => (
                         <div key={s.partNumber} class="flex items-center gap-1.5">
                           <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
-                          <span>{s.title}: {s.covered}/{s.total} {activeLayerLabel ?? 'items'}</span>
+                          <span>{s.title}: {s.covered}/{s.total} {lbl}</span>
                         </div>
                       ))}
-                      {uncovered.length > 3 && (
-                        <p class="text-slate-400">+{uncovered.length - 3} more</p>
-                      )}
                     </>
-                  )}
-                  {covered.length === 0 && (
-                    <p class="text-slate-400">No {activeLayerLabel ?? 'items'} covered yet.</p>
                   )}
                 </div>
               );
@@ -181,23 +169,6 @@ export default function ReadingCoverageSummary({
             {activeCoverageCount} / {activeCoverageTotal}
           </p>
           <p class="mt-2 text-sm text-gray-600">{activeCoverageDescription}</p>
-      </div>
-      <div class="rounded-xl border border-amber-200 bg-amber-50/50 p-5 sm:col-span-2 xl:col-span-1">
-        <p class="text-sm font-medium uppercase tracking-wide text-amber-800">{bestNextLabel}</p>
-        {bestNextTitle && bestNextHref ? (
-          <>
-            <a
-              href={bestNextHref}
-              class="mt-2 block font-serif text-2xl leading-tight text-amber-950 hover:text-indigo-700 transition-colors"
-            >
-              {bestNextTitle}
-            </a>
-            {bestNextSubtitle ? <p class="mt-1 text-sm text-amber-900">{bestNextSubtitle}</p> : null}
-            {bestNextDescription ? <p class="mt-3 text-sm text-amber-900">{bestNextDescription}</p> : null}
-          </>
-        ) : (
-          <p class="mt-2 text-sm text-amber-900">{emptyBestNextText}</p>
-        )}
       </div>
     </section>
   );

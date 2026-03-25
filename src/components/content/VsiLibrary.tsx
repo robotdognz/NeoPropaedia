@@ -251,14 +251,6 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
           activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
           activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
           activeCoverageDescription={activeCoverageDescription(activeLayer)}
-          bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
-          bestNextHref={bestNextRead ? `${baseUrl}/vsi/${slugify(bestNextRead.title)}` : undefined}
-          bestNextTitle={bestNextRead?.title}
-          bestNextSubtitle={bestNextRead?.author}
-          bestNextDescription={bestNextRead
-            ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount)}, ${bestNextRead.sectionCount} total Sections.${activeLayer === 'subsection' && precisionBadgeText(bestNextRead) ? ` ${precisionBadgeText(bestNextRead)}.` : ''}`
-            : undefined}
-          emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
           partSegments={partSegments}
           activeLayerLabel={coverageLayerLabel(activeLayer, 2)}
           mobileRingWidth={7}

@@ -207,11 +207,6 @@ export default function MacropaediaLibrary({
           activeCoverageCount={activeSnapshot?.currentlyCoveredCount ?? 0}
           activeCoverageTotal={activeSnapshot?.totalCoverageCount ?? 0}
           activeCoverageDescription={activeCoverageDescription(activeLayer)}
-          bestNextLabel={`Best Next for ${layerMeta.label} Coverage`}
-          bestNextHref={bestNextArticle ? `${baseUrl}/macropaedia/${slugify(bestNextArticle.title)}` : undefined}
-          bestNextTitle={bestNextArticle?.title}
-          bestNextDescription={bestNextArticle ? `Adds ${bestNextArticle.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextArticle.newCoverageCount)}, ${bestNextArticle.sectionCount} total Sections.` : undefined}
-          emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
           partSegments={partSegments}
           activeLayerLabel={coverageLayerLabel(activeLayer, 2)}
         />
