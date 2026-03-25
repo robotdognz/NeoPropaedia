@@ -2,12 +2,13 @@ import { h } from 'preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { writeChecklistState } from '../../utils/readingChecklist';
 import { type WikipediaAggregateEntry } from '../../utils/readingData';
-import { slugify } from '../../utils/helpers';
+import { slugify, type PartMeta } from '../../utils/helpers';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import { useHashAnchorCorrection } from '../../hooks/useHashAnchorCorrection';
 import {
   buildCoverageRings,
   buildLayerCoverageSnapshot,
+  buildPartCoverageSegments,
   completedChecklistKeysFromState,
   countEntryCoverageForLayer,
   countCompletedEntries,
@@ -27,6 +28,7 @@ export interface WikipediaLibraryProps {
   baseUrl: string;
   outlineItemCounts?: Record<string, number>;
   totalOutlineItems?: number;
+  partsMeta?: PartMeta[];
 }
 
 type KnowledgeLevel = 1 | 2 | 3;
@@ -90,6 +92,7 @@ export default function WikipediaLibrary({
   baseUrl,
   outlineItemCounts,
   totalOutlineItems,
+  partsMeta,
 }: WikipediaLibraryProps) {
   const checklistState = useReadingChecklistState();
   useHashAnchorCorrection('wikipedia-library');
@@ -148,6 +151,10 @@ export default function WikipediaLibrary({
   }, [checklistState, levelEntries, outlineItemCounts, totalOutlineItems]);
 
   const activeLayer = selectedLayer ?? defaultLayer;
+  const partSegments = useMemo(() => {
+    if (!partsMeta) return undefined;
+    return buildPartCoverageSegments(levelEntries, checklistState, activeLayer, partsMeta);
+  }, [levelEntries, checklistState, activeLayer, partsMeta]);
   const activeSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === activeLayer) ?? layerSnapshots[0];
   const activePath = activeSnapshot
     ? activeSnapshot.path.map(({ entry, ...rest }) => ({
@@ -248,6 +255,8 @@ export default function WikipediaLibrary({
             ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount)}, ${bestNextRead.sectionCount} total Sections.${activeLayer === 'subsection' && precisionBadgeText(bestNextRead) ? ` ${precisionBadgeText(bestNextRead)}.` : ''}`
             : undefined}
           emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
+          partSegments={partSegments}
+          activeLayerLabel={coverageLayerLabel(activeLayer, 2, { lowercase: true })}
         />
 
         <ReadingSpreadPath

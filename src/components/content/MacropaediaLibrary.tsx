@@ -2,12 +2,13 @@ import { h } from 'preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { writeChecklistState } from '../../utils/readingChecklist';
 import { type MacropaediaAggregateEntry } from '../../utils/readingData';
-import { slugify } from '../../utils/helpers';
+import { slugify, type PartMeta } from '../../utils/helpers';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import { useHashAnchorCorrection } from '../../hooks/useHashAnchorCorrection';
 import {
   buildCoverageRings,
   buildLayerCoverageSnapshot,
+  buildPartCoverageSegments,
   completedChecklistKeysFromState,
   countEntryCoverageForLayer,
   countCompletedEntries,
@@ -25,6 +26,7 @@ import ReadingSpreadPath from './ReadingSpreadPath';
 export interface MacropaediaLibraryProps {
   entries: MacropaediaAggregateEntry[];
   baseUrl: string;
+  partsMeta?: PartMeta[];
 }
 
 const INITIAL_VISIBLE_COUNT = 60;
@@ -95,6 +97,7 @@ function emptyRecommendationMessage(layer: CoverageLayer, isComplete: boolean): 
 export default function MacropaediaLibrary({
   entries,
   baseUrl,
+  partsMeta,
 }: MacropaediaLibraryProps) {
   const checklistState = useReadingChecklistState();
   useHashAnchorCorrection('macropaedia-library');
@@ -137,6 +140,10 @@ export default function MacropaediaLibrary({
   }, [checklistState, entries]);
 
   const activeLayer = selectedLayer ?? defaultLayer;
+  const partSegments = useMemo(() => {
+    if (!partsMeta) return undefined;
+    return buildPartCoverageSegments(entries, checklistState, activeLayer, partsMeta);
+  }, [entries, checklistState, activeLayer, partsMeta]);
   const activeSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === activeLayer) ?? layerSnapshots[0];
   const activePath = activeSnapshot
     ? activeSnapshot.path.map(({ entry, ...rest }) => ({
@@ -206,6 +213,8 @@ export default function MacropaediaLibrary({
           bestNextTitle={bestNextArticle?.title}
           bestNextDescription={bestNextArticle ? `Adds ${bestNextArticle.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextArticle.newCoverageCount)}, ${bestNextArticle.sectionCount} total Sections.` : undefined}
           emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
+          partSegments={partSegments}
+          activeLayerLabel={coverageLayerLabel(activeLayer, 2, { lowercase: true })}
         />
 
         <ReadingSpreadPath

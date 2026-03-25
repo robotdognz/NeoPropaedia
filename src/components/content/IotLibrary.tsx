@@ -7,6 +7,7 @@ import { useHashAnchorCorrection } from '../../hooks/useHashAnchorCorrection';
 import {
   buildCoverageRings,
   buildLayerCoverageSnapshot,
+  buildPartCoverageSegments,
   completedChecklistKeysFromState,
   countCompletedEntries,
   countEntryCoverageForLayer,
@@ -15,6 +16,7 @@ import {
   selectDefaultCoverageLayer,
   type CoverageLayer,
 } from '../../utils/readingLibrary';
+import type { PartMeta } from '../../utils/helpers';
 import CoverageLayerTabs from './CoverageLayerTabs';
 import CoverageGapPanel from './CoverageGapPanel';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
@@ -27,6 +29,7 @@ export interface IotLibraryProps {
   baseUrl: string;
   outlineItemCounts?: Record<string, number>;
   totalOutlineItems?: number;
+  partsMeta?: PartMeta[];
 }
 
 type ReadFilter = 'all' | 'unread' | 'read';
@@ -99,6 +102,7 @@ export default function IotLibrary({
   baseUrl,
   outlineItemCounts,
   totalOutlineItems,
+  partsMeta,
 }: IotLibraryProps) {
   const checklistState = useReadingChecklistState();
   useHashAnchorCorrection('iot-library');
@@ -145,6 +149,10 @@ export default function IotLibrary({
   }, [entries, checklistState, outlineItemCounts, totalOutlineItems]);
 
   const activeLayer = selectedLayer ?? defaultLayer;
+  const partSegments = useMemo(() => {
+    if (!partsMeta) return undefined;
+    return buildPartCoverageSegments(entries, checklistState, activeLayer, partsMeta);
+  }, [entries, checklistState, activeLayer, partsMeta]);
   const activeSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === activeLayer) ?? layerSnapshots[0];
   const activePath = activeSnapshot
     ? activeSnapshot.path.map(({ entry, ...rest }) => ({
@@ -239,6 +247,8 @@ export default function IotLibrary({
             ? `Adds ${bestNextEpisode.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextEpisode.newCoverageCount)}, ${bestNextEpisode.sectionCount} total Sections.${formatIotEpisodeMeta(bestNextEpisode) ? ` ${formatIotEpisodeMeta(bestNextEpisode)}.` : ''}${activeLayer === 'subsection' && precisionBadgeText(bestNextEpisode) ? ` ${precisionBadgeText(bestNextEpisode)}.` : ''}`
             : undefined}
           emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
+          partSegments={partSegments}
+          activeLayerLabel={coverageLayerLabel(activeLayer, 2, { lowercase: true })}
         />
 
         <ReadingSpreadPath

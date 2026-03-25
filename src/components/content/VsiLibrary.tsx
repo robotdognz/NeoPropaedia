@@ -5,12 +5,13 @@ import {
   formatEditionLabel,
   type VsiAggregateEntry,
 } from '../../utils/readingData';
-import { slugify } from '../../utils/helpers';
+import { slugify, type PartMeta } from '../../utils/helpers';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import { useHashAnchorCorrection } from '../../hooks/useHashAnchorCorrection';
 import {
   buildCoverageRings,
   buildLayerCoverageSnapshot,
+  buildPartCoverageSegments,
   completedChecklistKeysFromState,
   countEntryCoverageForLayer,
   countCompletedEntries,
@@ -31,6 +32,7 @@ export interface VsiLibraryProps {
   baseUrl: string;
   outlineItemCounts?: Record<string, number>;
   totalOutlineItems?: number;
+  partsMeta?: PartMeta[];
 }
 
 const INITIAL_VISIBLE_COUNT = 50;
@@ -135,7 +137,7 @@ function precisionBadgeText(entry: VsiAggregateEntry): string | null {
   return subsectionPrecisionSummary(entry);
 }
 
-export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalOutlineItems }: VsiLibraryProps) {
+export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalOutlineItems, partsMeta }: VsiLibraryProps) {
   const checklistState = useReadingChecklistState();
   useHashAnchorCorrection('vsi-library');
   const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
@@ -181,6 +183,10 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
   }, [entries, checklistState, outlineItemCounts, totalOutlineItems]);
 
   const activeLayer = selectedLayer ?? defaultLayer;
+  const partSegments = useMemo(() => {
+    if (!partsMeta) return undefined;
+    return buildPartCoverageSegments(entries, checklistState, activeLayer, partsMeta);
+  }, [entries, checklistState, activeLayer, partsMeta]);
   const activeSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === activeLayer) ?? layerSnapshots[0];
   const activePath = activeSnapshot
     ? activeSnapshot.path.map(({ entry, ...rest }) => ({
@@ -254,6 +260,8 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
             ? `Adds ${bestNextRead.newCoverageCount} new ${coverageLayerLabel(activeLayer, bestNextRead.newCoverageCount)}, ${bestNextRead.sectionCount} total Sections.${activeLayer === 'subsection' && precisionBadgeText(bestNextRead) ? ` ${precisionBadgeText(bestNextRead)}.` : ''}`
             : undefined}
           emptyBestNextText={emptyRecommendationMessage(activeLayer, isLayerComplete)}
+          partSegments={partSegments}
+          activeLayerLabel={coverageLayerLabel(activeLayer, 2, { lowercase: true })}
           mobileRingWidth={7}
           desktopRingWidth={9}
         />

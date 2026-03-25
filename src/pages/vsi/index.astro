@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 import { buildVsiAggregateEntries } from '../../utils/readingData';
 import { buildOutlineItemCoverage } from '../../utils/outlineCoverage';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
+import { buildPartsMeta } from '../../utils/helpers';
 
 const base = import.meta.env.BASE_URL;
 const sections = await getCollection('sections');
@@ -49,7 +50,7 @@ const { outlineItemCounts, totalOutlineItems } = buildOutlineItemCoverage(
     </header>
 
     <section class="mt-8">
-      <VsiLibrary client:load entries={entries} baseUrl={base} outlineItemCounts={outlineItemCounts} totalOutlineItems={totalOutlineItems} />
+      <VsiLibrary client:load entries={entries} baseUrl={base} outlineItemCounts={outlineItemCounts} totalOutlineItems={totalOutlineItems} partsMeta={buildPartsMeta(outline.parts)} />
     </section>
   </main>
 </BaseLayout>

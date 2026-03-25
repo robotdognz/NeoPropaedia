@@ -84,6 +84,37 @@ export function partColorClass(partNumber: number): string {
   return `part-${partNumber}`;
 }
 
+const PART_COLOR_HEX: Record<number, string> = {
+  1: '#1e40af',
+  2: '#065f46',
+  3: '#16a34a',
+  4: '#dc2626',
+  5: '#7c3aed',
+  6: '#ea580c',
+  7: '#0891b2',
+  8: '#4338ca',
+  9: '#be185d',
+  10: '#a16207',
+};
+
+export function partColorHex(partNumber: number): string {
+  return PART_COLOR_HEX[partNumber] ?? '#64748b';
+}
+
+export interface PartMeta {
+  partNumber: number;
+  colorHex: string;
+  title: string;
+}
+
+export function buildPartsMeta(parts: Array<{ partNumber: number; title: string }>): PartMeta[] {
+  return parts.map((p) => ({
+    partNumber: p.partNumber,
+    colorHex: partColorHex(p.partNumber),
+    title: p.title,
+  }));
+}
+
 /**
  * Create a URL-safe slug from a title.
  */

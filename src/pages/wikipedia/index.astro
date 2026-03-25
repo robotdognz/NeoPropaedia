@@ -6,6 +6,7 @@ import { analyzeSubsectionCoverage, buildOutlineItemCoverage, buildSectionOutlin
 import wikiCatalog from '../../data/wikipedia-catalog.json';
 import { getCollection } from 'astro:content';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
+import { buildPartsMeta } from '../../utils/helpers';
 
 const base = import.meta.env.BASE_URL;
 const sections = await getCollection('sections');
@@ -109,6 +110,7 @@ const { outlineItemCounts, totalOutlineItems } = buildOutlineItemCoverage(
         baseUrl={base}
         outlineItemCounts={outlineItemCounts}
         totalOutlineItems={totalOutlineItems}
+        partsMeta={buildPartsMeta(outline.parts)}
       />
     </section>
   </main>
