@@ -1,5 +1,5 @@
 import { h } from 'preact';
-import { useEffect, useMemo, useState } from 'preact/hooks';
+import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import { writeChecklistState } from '../../utils/readingChecklist';
 import type { HomepageCoverageSource } from '../../utils/homepageCoverageTypes';
@@ -123,7 +123,7 @@ export default function HomepageCoverageExplorer({
     };
   }, []);
 
-  const source = sourceCache[selectedType];
+  const source = sourceCache[selectedType] ?? null;
   const completedChecklistKeys = useMemo(
     () => completedChecklistKeysFromState(checklistState),
     [checklistState],
@@ -168,18 +168,27 @@ export default function HomepageCoverageExplorer({
   const isLayerComplete = activeSnapshot
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
     : false;
-  const coverageRings = useMemo(() => {
-    if (!source) return [];
+  const coverageRingsLatest = useMemo(() => {
+    if (!source) return null;
     return buildCoverageRings(source.entries, checklistState, {
       outlineItemCounts: source.outlineItemCounts,
       totalOutlineItems: source.totalOutlineItems,
       includeSubsections: source.includeSubsections,
     });
   }, [checklistState, source]);
-  const partSegments = useMemo(() => {
-    if (!source || !partsMeta) return [];
+  const partSegmentsLatest = useMemo(() => {
+    if (!source || !partsMeta) return null;
     return buildPartCoverageSegments(source.entries, checklistState, activeLayer, partsMeta);
   }, [checklistState, source, activeLayer, partsMeta]);
+
+  // Keep showing previous data while a new source loads to avoid ring flash
+  const prevRingsRef = useRef(coverageRingsLatest ?? []);
+  const prevSegmentsRef = useRef(partSegmentsLatest ?? []);
+  if (coverageRingsLatest) prevRingsRef.current = coverageRingsLatest;
+  if (partSegmentsLatest) prevSegmentsRef.current = partSegmentsLatest;
+  const coverageRings = coverageRingsLatest ?? prevRingsRef.current;
+  const partSegments = partSegmentsLatest ?? prevSegmentsRef.current;
+
   const completedCount = source ? countCompletedEntries(source.entries, checklistState) : 0;
   const wrapperClass = framed
     ? 'rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7'
@@ -280,30 +289,38 @@ export default function HomepageCoverageExplorer({
               Outline Layer
             </p>
             <div class="flex flex-wrap gap-2" role="tablist" aria-label="Coverage layer">
-              {tabSnapshots.map((snapshot) => {
-                const isActive = snapshot.layer === activeLayer;
-                const meta = COVERAGE_LAYER_META[snapshot.layer];
+              {ALL_LAYERS.map((layer) => {
+                const isActive = layer === activeLayer;
+                const isSupported = supportedLayers.includes(layer);
+                const meta = COVERAGE_LAYER_META[layer];
+                const snapshot = tabSnapshots.find(s => s.layer === layer);
 
                 return (
                   <button
-                    key={snapshot.layer}
+                    key={layer}
                     type="button"
                     role="tab"
                     aria-selected={isActive}
+                    disabled={!isSupported}
                     onClick={() => {
-                      setSelectedLayer(snapshot.layer);
-                      setCoverageLayerPreference(snapshot.layer);
+                      if (!isSupported) return;
+                      setSelectedLayer(layer);
+                      setCoverageLayerPreference(layer);
                     }}
                     class={`rounded-full border px-3 py-1.5 text-sm transition-colors ${
-                      isActive
-                        ? 'border-slate-900 bg-slate-900 text-white'
-                        : 'border-slate-300 bg-white text-slate-700 hover:border-slate-400 hover:bg-slate-50'
+                      !isSupported
+                        ? 'border-slate-200 bg-slate-50 text-slate-300 cursor-default'
+                        : isActive
+                          ? 'border-slate-900 bg-slate-900 text-white'
+                          : 'border-slate-300 bg-white text-slate-700 hover:border-slate-400 hover:bg-slate-50'
                     }`}
                   >
                     <span class="font-medium">{meta.label}</span>
-                    <span class={`ml-2 text-xs ${isActive ? 'text-slate-200' : 'text-slate-500'}`}>
-                      {snapshot.currentlyCoveredCount}/{snapshot.totalCoverageCount}
-                    </span>
+                    {snapshot && (
+                      <span class={`ml-2 text-xs ${!isSupported ? 'text-slate-300' : isActive ? 'text-slate-200' : 'text-slate-500'}`}>
+                        {snapshot.currentlyCoveredCount}/{snapshot.totalCoverageCount}
+                      </span>
+                    )}
                   </button>
                 );
               })}
