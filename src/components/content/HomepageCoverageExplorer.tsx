@@ -206,9 +206,15 @@ export default function HomepageCoverageExplorer({
   // transitions then animate smoothly from old → new.
   const prevRingsRef = useRef(coverageRingsLatest);
   const prevSegmentsRef = useRef(partSegmentsLatest);
+  const latestRingsRef = useRef(coverageRingsLatest);
+  const latestSegmentsRef = useRef(partSegmentsLatest);
   const prevSourceRef = useRef(source);
   const deferringRef = useRef(false);
   const [, forceRender] = useState(0);
+
+  // Always keep latest refs in sync so the raf reads fresh values
+  latestRingsRef.current = coverageRingsLatest;
+  latestSegmentsRef.current = partSegmentsLatest;
 
   if (source !== prevSourceRef.current) {
     prevSourceRef.current = source;
@@ -222,7 +228,7 @@ export default function HomepageCoverageExplorer({
     ? (prevSegmentsRef.current ?? partSegmentsLatest ?? [])
     : (partSegmentsLatest ?? []);
 
-  // Keep refs in sync when not deferring
+  // Keep prev refs in sync when not deferring
   if (!deferringRef.current) {
     prevRingsRef.current = coverageRingsLatest;
     prevSegmentsRef.current = partSegmentsLatest;
@@ -232,8 +238,9 @@ export default function HomepageCoverageExplorer({
     if (deferringRef.current) {
       const id = requestAnimationFrame(() => {
         requestAnimationFrame(() => {
-          prevRingsRef.current = coverageRingsLatest;
-          prevSegmentsRef.current = partSegmentsLatest;
+          // Read from refs (not closure) so rapid switches always get latest values
+          prevRingsRef.current = latestRingsRef.current;
+          prevSegmentsRef.current = latestSegmentsRef.current;
           deferringRef.current = false;
           forceRender(n => n + 1);
         });
