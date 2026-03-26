@@ -25,6 +25,19 @@ export default function CoverageRings({
   const geometryTransition = 'r 180ms ease, stroke-width 180ms ease, stroke 180ms ease, stroke-opacity 180ms ease';
   const [animated, setAnimated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  // Snap (skip transition) when only the active ring changes, not the data
+  const [snapTransition, setSnapTransition] = useState(false);
+  const prevActiveRef = useRef(activeRingLabel);
+  useEffect(() => {
+    if (prevActiveRef.current !== activeRingLabel) {
+      prevActiveRef.current = activeRingLabel;
+      setSnapTransition(true);
+      const id = requestAnimationFrame(() => {
+        requestAnimationFrame(() => setSnapTransition(false));
+      });
+      return () => cancelAnimationFrame(id);
+    }
+  }, [activeRingLabel]);
   // Track which rings should hide their arc (after transition to zero completes)
   // Initialize with any rings already at zero to prevent flash on mount
   const [hiddenArcs, setHiddenArcs] = useState<Set<string>>(
@@ -173,7 +186,9 @@ export default function CoverageRings({
                 style={{
                   transform: `rotate(${-90 + startRotation}deg)`,
                   transformOrigin: `${center}px ${center}px`,
-                  transition: `stroke-dashoffset 0.8s ease-out, stroke-opacity 0.35s ease-out, transform 180ms ease, ${geometryTransition}`,
+                  transition: snapTransition
+                    ? 'none'
+                    : `stroke-dashoffset 0.8s ease-out, stroke-opacity 0.35s ease-out, transform 180ms ease, ${geometryTransition}`,
                 }}
               />
             </g>
