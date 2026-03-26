@@ -5,7 +5,11 @@ import {
   wikipediaChecklistKey,
 } from './readingChecklist';
 import { macropaediaLookupKey, vsiLookupKey } from './readingIdentity';
-import { analyzeSubsectionCoverage, buildSectionOutlinePathIndex } from './outlineCoverage';
+import {
+  analyzeMappedOutlinePathCoverage,
+  analyzeProgressSubsectionCoverage,
+  buildSectionOutlinePathIndex,
+} from './outlineCoverage';
 
 export interface ReadingSectionSummary {
   sectionCode: string;
@@ -50,7 +54,7 @@ export interface VsiAggregateEntry {
   checklistKey: string;
   sectionCount: number;
   sections: ReadingSectionSummary[];
-  subsectionKeys?: string[];
+  progressSubsectionKeys?: string[];
   mappedPathCount?: number;
   mappedPathSectionCount?: number;
   fallbackSectionCount?: number;
@@ -113,7 +117,7 @@ export interface WikipediaAggregateEntry {
   checklistKey: string;
   sectionCount: number;
   sections: ReadingSectionSummary[];
-  subsectionKeys?: string[];
+  progressSubsectionKeys?: string[];
   mappedPathCount?: number;
   mappedPathSectionCount?: number;
   fallbackSectionCount?: number;
@@ -129,7 +133,7 @@ export interface IotAggregateEntry {
   checklistKey: string;
   sectionCount: number;
   sections: ReadingSectionSummary[];
-  subsectionKeys?: string[];
+  progressSubsectionKeys?: string[];
   mappedPathCount?: number;
   mappedPathSectionCount?: number;
   fallbackSectionCount?: number;
@@ -251,7 +255,7 @@ export function buildVsiAggregateEntries(
     {
       entry: VsiAggregateEntry;
       sectionCodes: Set<string>;
-      subsectionKeys: Set<string>;
+      progressSubsectionKeys: Set<string>;
       mappedPathSectionCodes: Set<string>;
       fallbackSectionCodes: Set<string>;
       mappedPathCount: number;
@@ -266,12 +270,17 @@ export function buildVsiAggregateEntries(
       const lookupKey = vsiLookupKey(mappingEntry.vsiTitle, mappingEntry.vsiAuthor);
       const catalogEntry = catalogLookup.get(lookupKey);
       const existing = aggregateMap.get(lookupKey);
-      const subsectionCoverage = analyzeSubsectionCoverage(
+      const mappedPathCoverage = analyzeMappedOutlinePathCoverage(
         section.sectionCode,
         mappingEntry.relevantPathsAI,
         sectionOutlinePathIndex
       );
-      const subsectionKeys = subsectionCoverage.coverageKeys;
+      const progressCoverage = analyzeProgressSubsectionCoverage(
+        section.sectionCode,
+        mappingEntry.relevantPathsAI,
+        sectionOutlinePathIndex
+      );
+      const progressSubsectionKeys = progressCoverage.coverageKeys;
 
       if (existing) {
         if (!existing.sectionCodes.has(section.sectionCode)) {
@@ -279,14 +288,14 @@ export function buildVsiAggregateEntries(
           existing.entry.sections.push(section);
           existing.entry.sectionCount = existing.entry.sections.length;
         }
-        subsectionKeys.forEach((key) => existing.subsectionKeys.add(key));
-        subsectionCoverage.matchedPathKeys.forEach(() => {
+        progressSubsectionKeys.forEach((key) => existing.progressSubsectionKeys.add(key));
+        mappedPathCoverage.matchedPathKeys.forEach(() => {
           existing.mappedPathSectionCodes.add(section.sectionCode);
         });
-        if (subsectionCoverage.usedFallback) {
+        if (mappedPathCoverage.usedFallback) {
           existing.fallbackSectionCodes.add(section.sectionCode);
         }
-        existing.mappedPathCount += subsectionCoverage.matchedPathKeys.length;
+        existing.mappedPathCount += mappedPathCoverage.matchedPathKeys.length;
         continue;
       }
 
@@ -295,10 +304,10 @@ export function buildVsiAggregateEntries(
 
       aggregateMap.set(lookupKey, {
         sectionCodes: new Set([section.sectionCode]),
-        subsectionKeys: new Set(subsectionKeys),
-        mappedPathSectionCodes: subsectionCoverage.matchedPathKeys.length > 0 ? new Set([section.sectionCode]) : new Set<string>(),
-        fallbackSectionCodes: subsectionCoverage.usedFallback ? new Set([section.sectionCode]) : new Set<string>(),
-        mappedPathCount: subsectionCoverage.matchedPathKeys.length,
+        progressSubsectionKeys: new Set(progressSubsectionKeys),
+        mappedPathSectionCodes: mappedPathCoverage.matchedPathKeys.length > 0 ? new Set([section.sectionCode]) : new Set<string>(),
+        fallbackSectionCodes: mappedPathCoverage.usedFallback ? new Set([section.sectionCode]) : new Set<string>(),
+        mappedPathCount: mappedPathCoverage.matchedPathKeys.length,
         entry: {
           title,
           author,
@@ -309,10 +318,10 @@ export function buildVsiAggregateEntries(
           checklistKey: vsiChecklistKey(title, author),
           sectionCount: 1,
           sections: [section],
-          subsectionKeys,
-          mappedPathCount: subsectionCoverage.matchedPathKeys.length,
-          mappedPathSectionCount: subsectionCoverage.matchedPathKeys.length > 0 ? 1 : 0,
-          fallbackSectionCount: subsectionCoverage.usedFallback ? 1 : 0,
+          progressSubsectionKeys,
+          mappedPathCount: mappedPathCoverage.matchedPathKeys.length,
+          mappedPathSectionCount: mappedPathCoverage.matchedPathKeys.length > 0 ? 1 : 0,
+          fallbackSectionCount: mappedPathCoverage.usedFallback ? 1 : 0,
         },
       });
     }
@@ -324,7 +333,7 @@ export function buildVsiAggregateEntries(
     if (aggregateMap.has(lookupKey)) continue;
     aggregateMap.set(lookupKey, {
       sectionCodes: new Set(),
-      subsectionKeys: new Set(),
+      progressSubsectionKeys: new Set(),
       mappedPathSectionCodes: new Set(),
       fallbackSectionCodes: new Set(),
       mappedPathCount: 0,
@@ -338,7 +347,7 @@ export function buildVsiAggregateEntries(
         checklistKey: vsiChecklistKey(catalogEntry.title, catalogEntry.author),
         sectionCount: 0,
         sections: [],
-        subsectionKeys: [],
+        progressSubsectionKeys: [],
         mappedPathCount: 0,
         mappedPathSectionCount: 0,
         fallbackSectionCount: 0,
@@ -347,11 +356,11 @@ export function buildVsiAggregateEntries(
   }
 
   return Array.from(aggregateMap.values())
-    .map(({ entry, subsectionKeys, mappedPathSectionCodes, fallbackSectionCodes, mappedPathCount }) => ({
+    .map(({ entry, progressSubsectionKeys, mappedPathSectionCodes, fallbackSectionCodes, mappedPathCount }) => ({
       ...entry,
       sections: [...entry.sections].sort(sectionSort),
       sectionCount: entry.sections.length,
-      subsectionKeys: [...subsectionKeys].sort(),
+      progressSubsectionKeys: [...progressSubsectionKeys].sort(),
       mappedPathCount,
       mappedPathSectionCount: mappedPathSectionCodes.size,
       fallbackSectionCount: fallbackSectionCodes.size,
@@ -459,7 +468,7 @@ export function buildWikipediaAggregateEntries(
     category?: string;
     lowestLevel: number;
     sectionCodes: string[];
-    subsectionKeys?: string[];
+    progressSubsectionKeys?: string[];
     mappedPathCount?: number;
     mappedPathSectionCount?: number;
     fallbackSectionCount?: number;
@@ -481,7 +490,7 @@ export function buildWikipediaAggregateEntries(
       checklistKey: wikipediaChecklistKey(article.title),
       sectionCount: sections.length,
       sections,
-      subsectionKeys: Array.from(new Set(article.subsectionKeys ?? [])).sort(),
+      progressSubsectionKeys: Array.from(new Set(article.progressSubsectionKeys ?? [])).sort(),
       mappedPathCount: article.mappedPathCount ?? 0,
       mappedPathSectionCount: article.mappedPathSectionCount ?? 0,
       fallbackSectionCount: article.fallbackSectionCount ?? 0,
@@ -501,7 +510,7 @@ export function buildIotAggregateEntries(
     datePublished?: string;
     durationSeconds?: number;
     sectionCodes: string[];
-    subsectionKeys?: string[];
+    progressSubsectionKeys?: string[];
     mappedPathCount?: number;
     mappedPathSectionCount?: number;
     fallbackSectionCount?: number;
@@ -524,7 +533,7 @@ export function buildIotAggregateEntries(
       checklistKey: iotChecklistKey(episode.pid),
       sectionCount: sections.length,
       sections,
-      subsectionKeys: Array.from(new Set(episode.subsectionKeys ?? [])).sort(),
+      progressSubsectionKeys: Array.from(new Set(episode.progressSubsectionKeys ?? [])).sort(),
       mappedPathCount: episode.mappedPathCount ?? 0,
       mappedPathSectionCount: episode.mappedPathSectionCount ?? 0,
       fallbackSectionCount: episode.fallbackSectionCount ?? 0,

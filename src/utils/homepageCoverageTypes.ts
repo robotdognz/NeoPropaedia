@@ -9,7 +9,7 @@ export interface HomepageCoverageEntry {
   meta?: string;
   sectionCount: number;
   sections: ReadingSectionSummary[];
-  subsectionKeys?: string[];
+  progressSubsectionKeys?: string[];
 }
 
 export interface HomepageCoverageSource {
@@ -23,8 +23,6 @@ export interface HomepageCoverageSource {
   itemSingular: string;
   itemPlural: string;
   includeSubsections: boolean;
-  outlineItemCounts?: Record<string, number>;
-  totalOutlineItems?: number;
   activeCoverageDescriptions: Partial<Record<CoverageLayer, string>>;
   entries: HomepageCoverageEntry[];
 }

@@ -154,9 +154,7 @@ export default function HomepageCoverageExplorer({
   const snapshots = useMemo(() => {
     if (!source) return [];
     return supportedLayers.map((layer) =>
-      buildLayerCoverageSnapshot(source.entries, completedChecklistKeys, layer, {
-        outlineItemCounts: source.outlineItemCounts,
-      }),
+      buildLayerCoverageSnapshot(source.entries, completedChecklistKeys, layer),
     );
   }, [completedChecklistKeys, source, supportedLayers]);
 
@@ -194,8 +192,6 @@ export default function HomepageCoverageExplorer({
   const coverageRingsLatest = useMemo(() => {
     if (!source) return null;
     return buildCoverageRings(source.entries, checklistState, {
-      outlineItemCounts: source.outlineItemCounts,
-      totalOutlineItems: source.totalOutlineItems,
       includeSubsections: source.includeSubsections,
     });
   }, [checklistState, source]);

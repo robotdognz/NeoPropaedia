@@ -4,7 +4,7 @@ import type { ReadingSectionSummary } from './readingData';
 export interface ChecklistBackedReadingEntry {
   checklistKey: string;
   sections: ReadingSectionSummary[];
-  subsectionKeys?: string[];
+  progressSubsectionKeys?: string[];
 }
 
 export interface CoverageRing {
@@ -58,15 +58,8 @@ export function coverageLayerLabel(layer: CoverageLayer, count: number, options:
 export function countEntryCoverageForLayer(
   entry: ChecklistBackedReadingEntry,
   layer: CoverageLayer,
-  options: {
-    outlineItemCounts?: Record<string, number>;
-  } = {}
 ): number {
-  const targetKeys = uniqueTargetKeysForEntry(entry, layer);
-  return targetKeys.reduce(
-    (total, key) => total + coverageWeightForKey(key, layer, options),
-    0
-  );
+  return uniqueTargetKeysForEntry(entry, layer).length;
 }
 
 export interface LayerCoveragePathStep<TEntry extends ChecklistBackedReadingEntry> {
@@ -119,24 +112,12 @@ function coverageKeyForSection(section: ReadingSectionSummary, layer: CoverageLa
   }
 }
 
-function coverageWeightForKey(
-  key: string,
-  layer: CoverageLayer,
-  options: {
-    outlineItemCounts?: Record<string, number>;
-  }
-): number {
-  if (layer !== 'subsection') return 1;
-  if (key.includes('::')) return 1;
-  return options.outlineItemCounts?.[key] ?? 1;
-}
-
 function uniqueTargetKeysForEntry(
   entry: ChecklistBackedReadingEntry,
   layer: CoverageLayer
 ): string[] {
-  if (layer === 'subsection' && entry.subsectionKeys && entry.subsectionKeys.length > 0) {
-    return Array.from(new Set(entry.subsectionKeys));
+  if (layer === 'subsection') {
+    return Array.from(new Set(entry.progressSubsectionKeys ?? []));
   }
 
   return Array.from(new Set(entry.sections.map((section) => coverageKeyForSection(section, layer))));
@@ -157,7 +138,7 @@ function sectionMatchesTargetKey(
   targetKey: string
 ): boolean {
   if (layer === 'subsection') {
-    return targetKey === section.sectionCode || targetKey.startsWith(`${section.sectionCode}::`);
+    return targetKey.startsWith(`${section.sectionCode}::`);
   }
 
   return coverageKeyForSection(section, layer) === targetKey;
@@ -194,9 +175,6 @@ export function buildLayerCoverageSnapshot<TEntry extends ChecklistBackedReading
   entries: TEntry[],
   completedChecklistKeys: Set<string>,
   layer: CoverageLayer,
-  options: {
-    outlineItemCounts?: Record<string, number>;
-  } = {}
 ): LayerCoverageSnapshot<TEntry> {
   const totalTargets = new Map<string, number>();
   const coveredTargets = new Set<string>();
@@ -207,7 +185,7 @@ export function buildLayerCoverageSnapshot<TEntry extends ChecklistBackedReading
     const targetKeys = entryTargetKeys.get(entry.checklistKey) ?? [];
     targetKeys.forEach((key) => {
       if (!totalTargets.has(key)) {
-        totalTargets.set(key, coverageWeightForKey(key, layer, options));
+        totalTargets.set(key, 1);
       }
     });
 
@@ -219,7 +197,7 @@ export function buildLayerCoverageSnapshot<TEntry extends ChecklistBackedReading
   const countTargets = (keys: Iterable<string>): number => {
     let total = 0;
     for (const key of keys) {
-      total += totalTargets.get(key) ?? coverageWeightForKey(key, layer, options);
+      total += totalTargets.get(key) ?? 1;
     }
     return total;
   };
@@ -242,7 +220,7 @@ export function buildLayerCoverageSnapshot<TEntry extends ChecklistBackedReading
       const newTargetKeys = (entryTargetKeys.get(entry.checklistKey) ?? [])
         .filter((key) => !coveredTargets.has(key));
       const newCoverageCount = newTargetKeys.reduce(
-        (total, key) => total + (totalTargets.get(key) ?? coverageWeightForKey(key, layer, options)),
+        (total, key) => total + (totalTargets.get(key) ?? 1),
         0
       );
       const newSections = dedupeSections(
@@ -319,8 +297,16 @@ export function buildCoverageRings<T extends ChecklistBackedReadingEntry>(
   entries: T[],
   checklistState: Record<string, boolean>,
   options: {
-    outlineItemCounts?: Record<string, number>;
-    totalOutlineItems?: number;
+    includeSubsections?: boolean;
+  } = {}
+): CoverageRing[] {
+  return buildCoverageRingsForCompleted(entries, completedChecklistKeysFromState(checklistState), options);
+}
+
+export function buildCoverageRingsForCompleted<T extends ChecklistBackedReadingEntry>(
+  entries: T[],
+  completedChecklistKeys: Set<string>,
+  options: {
     includeSubsections?: boolean;
   } = {}
 ): CoverageRing[] {
@@ -334,7 +320,7 @@ export function buildCoverageRings<T extends ChecklistBackedReadingEntry>(
   const coveredSections = new Set<string>();
 
   for (const entry of entries) {
-    const isChecked = Boolean(checklistState[entry.checklistKey]);
+    const isChecked = completedChecklistKeys.has(entry.checklistKey);
     for (const section of entry.sections) {
       allParts.add(section.partNumber);
       allDivisions.add(section.divisionId);
@@ -346,30 +332,20 @@ export function buildCoverageRings<T extends ChecklistBackedReadingEntry>(
       }
     }
 
-    for (const subsectionKey of entry.subsectionKeys ?? []) {
+    for (const subsectionKey of entry.progressSubsectionKeys ?? []) {
       allSubsectionKeys.add(subsectionKey);
     }
 
     if (isChecked) {
-      for (const subsectionKey of entry.subsectionKeys ?? []) {
+      for (const subsectionKey of entry.progressSubsectionKeys ?? []) {
         coveredSubsectionKeys.add(subsectionKey);
       }
     }
   }
 
   const includeSubsections = options.includeSubsections !== false;
-  let coveredOutlineItems = 0;
-  let totalSubsectionItems = options.totalOutlineItems ?? 0;
-  if (includeSubsections && allSubsectionKeys.size > 0) {
-    totalSubsectionItems = allSubsectionKeys.size;
-  }
-  if (includeSubsections && coveredSubsectionKeys.size > 0) {
-    coveredOutlineItems = coveredSubsectionKeys.size;
-  } else if (includeSubsections && options.outlineItemCounts) {
-    for (const code of coveredSections) {
-      coveredOutlineItems += options.outlineItemCounts[code] || 0;
-    }
-  }
+  const totalSubsectionItems = allSubsectionKeys.size;
+  const coveredOutlineItems = coveredSubsectionKeys.size;
 
   return [
     { label: 'Parts', count: coveredParts.size, total: allParts.size, color: '#6366f1' },
@@ -420,7 +396,7 @@ function groupCoverageByPart(
       for (const section of entry.sections) {
         sectionPartMap.set(section.sectionCode, section.partNumber);
       }
-      for (const key of entry.subsectionKeys ?? []) {
+      for (const key of entry.progressSubsectionKeys ?? []) {
         const sectionCode = key.includes('::') ? key.split('::')[0] : key;
         const partNumber = sectionPartMap.get(sectionCode);
         if (partNumber === undefined) continue;
@@ -488,7 +464,6 @@ export function buildCoverageGapItems<TEntry extends ChecklistBackedReadingEntry
   layer: CoverageLayer,
   baseUrl: string,
   options: {
-    outlineItemCounts?: Record<string, number>;
     itemLabelPlural?: string;
     limit?: number;
   } = {}
@@ -519,7 +494,7 @@ export function buildCoverageGapItems<TEntry extends ChecklistBackedReadingEntry
     const targetKeys = entryTargetKeys.get(entry.checklistKey) ?? [];
     targetKeys.forEach((key) => {
       if (!totalTargets.has(key)) {
-        totalTargets.set(key, coverageWeightForKey(key, layer, options));
+        totalTargets.set(key, 1);
       }
     });
 
@@ -562,7 +537,7 @@ export function buildCoverageGapItems<TEntry extends ChecklistBackedReadingEntry
       }
 
       const group = grouped.get(sectionCode)!;
-      group.uncoveredCount += totalTargets.get(key) ?? coverageWeightForKey(key, layer, options);
+      group.uncoveredCount += totalTargets.get(key) ?? 1;
       (candidateCounts.get(key) ?? []).forEach((checklistKey) => group.candidateKeys.add(checklistKey));
     }
 
@@ -592,7 +567,7 @@ export function buildCoverageGapItems<TEntry extends ChecklistBackedReadingEntry
 
   return unresolvedKeys
     .map((key) => {
-      const uncoveredCount = totalTargets.get(key) ?? coverageWeightForKey(key, layer, options);
+      const uncoveredCount = totalTargets.get(key) ?? 1;
       const candidateCount = candidateCounts.get(key)?.size ?? 0;
       const candidateLabel = candidateCount === 1 ? itemLabelPlural.replace(/s$/, '') : itemLabelPlural;
 

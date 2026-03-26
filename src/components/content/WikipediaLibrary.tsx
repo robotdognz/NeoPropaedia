@@ -32,8 +32,6 @@ import {
 export interface WikipediaLibraryProps {
   entries: WikipediaAggregateEntry[];
   baseUrl: string;
-  outlineItemCounts?: Record<string, number>;
-  totalOutlineItems?: number;
   partsMeta?: PartMeta[];
 }
 
@@ -74,7 +72,7 @@ function activeCoverageDescription(layer: CoverageLayer): string {
     case 'section':
       return 'Sections with at least one checked article.';
     case 'subsection':
-      return 'Mapped Subsection coverage from outline-path matches in the Section mappings.';
+      return 'Top-level Subsection coverage from explicit article path matches inside each Section.';
     default:
       return '';
   }
@@ -95,8 +93,6 @@ function precisionBadgeText(entry: WikipediaAggregateEntry): string | null {
 export default function WikipediaLibrary({
   entries,
   baseUrl,
-  outlineItemCounts,
-  totalOutlineItems,
   partsMeta,
 }: WikipediaLibraryProps) {
   const checklistState = useReadingChecklistState();
@@ -145,9 +141,7 @@ export default function WikipediaLibrary({
     layerTabSnapshots,
   } = useMemo(() => {
     const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
-    const snapshots = RECOMMENDATION_LAYERS.map((layer) => buildLayerCoverageSnapshot(levelEntries, completedChecklistKeys, layer, {
-      outlineItemCounts,
-    }));
+    const snapshots = RECOMMENDATION_LAYERS.map((layer) => buildLayerCoverageSnapshot(levelEntries, completedChecklistKeys, layer));
     const tabSnapshots = snapshots.map((snapshot) => ({
       layer: snapshot.layer,
       currentlyCoveredCount: snapshot.currentlyCoveredCount,
@@ -155,15 +149,12 @@ export default function WikipediaLibrary({
     }));
 
     return {
-      coverageRings: buildCoverageRings(levelEntries, checklistState, {
-        outlineItemCounts,
-        totalOutlineItems,
-      }),
+      coverageRings: buildCoverageRings(levelEntries, checklistState),
       defaultLayer: selectDefaultCoverageLayer(tabSnapshots),
       layerSnapshots: snapshots,
       layerTabSnapshots: tabSnapshots,
     };
-  }, [checklistState, levelEntries, outlineItemCounts, totalOutlineItems]);
+  }, [checklistState, levelEntries]);
 
   const activeLayer = selectedLayer ?? defaultLayer;
   const partSegments = useMemo(() => {
@@ -188,10 +179,10 @@ export default function WikipediaLibrary({
         part: countEntryCoverageForLayer(entry, 'part'),
         division: countEntryCoverageForLayer(entry, 'division'),
         section: countEntryCoverageForLayer(entry, 'section'),
-        subsection: countEntryCoverageForLayer(entry, 'subsection', { outlineItemCounts }),
+        subsection: countEntryCoverageForLayer(entry, 'subsection'),
       },
     ])
-  ), [levelEntries, outlineItemCounts]);
+  ), [levelEntries]);
 
   const collate = (a: string, b: string) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
   const compareNumber = (a: number, b: number) => (sortDirection === 'asc' ? a - b : b - a);
@@ -298,7 +289,6 @@ export default function WikipediaLibrary({
         activeLayer={activeLayer}
         baseUrl={baseUrl}
         itemLabelPlural="articles"
-        outlineItemCounts={outlineItemCounts}
         isComplete={isLayerComplete}
       />
 

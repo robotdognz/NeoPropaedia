@@ -2,7 +2,11 @@
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import IotLibrary from '../../components/content/IotLibrary';
 import { buildIotAggregateEntries, type ReadingSectionSummary } from '../../utils/readingData';
-import { analyzeSubsectionCoverage, buildOutlineItemCoverage, buildSectionOutlinePathIndex } from '../../utils/outlineCoverage';
+import {
+  analyzeMappedOutlinePathCoverage,
+  analyzeProgressSubsectionCoverage,
+  buildSectionOutlinePathIndex,
+} from '../../utils/outlineCoverage';
 import iotCatalog from '../../data/iot-catalog.json';
 import { getCollection } from 'astro:content';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
@@ -31,7 +35,7 @@ const sectionLookup = new Map<string, ReadingSectionSummary>(
 const sectionOutlinePathIndex = buildSectionOutlinePathIndex(sections.map((entry) => entry.data));
 const episodeCoverage = new Map<string, {
   sectionCodes: Set<string>;
-  subsectionKeys: Set<string>;
+  progressSubsectionKeys: Set<string>;
   mappedPathCount: number;
   mappedPathSections: Set<string>;
   fallbackSections: Set<string>;
@@ -47,7 +51,7 @@ for (const mapping of iotMappings) {
     if (!episodeCoverage.has(entry.pid)) {
       episodeCoverage.set(entry.pid, {
         sectionCodes: new Set(),
-        subsectionKeys: new Set(),
+        progressSubsectionKeys: new Set(),
         mappedPathCount: 0,
         mappedPathSections: new Set(),
         fallbackSections: new Set(),
@@ -56,18 +60,23 @@ for (const mapping of iotMappings) {
 
     const coverage = episodeCoverage.get(entry.pid)!;
     coverage.sectionCodes.add(mapping.data.sectionCode);
-    const subsectionCoverage = analyzeSubsectionCoverage(
+    const mappedPathCoverage = analyzeMappedOutlinePathCoverage(
+      mapping.data.sectionCode,
+      entry.relevantPathsAI,
+      sectionOutlinePathIndex
+    );
+    const progressCoverage = analyzeProgressSubsectionCoverage(
       mapping.data.sectionCode,
       entry.relevantPathsAI,
       sectionOutlinePathIndex
     );
 
-    subsectionCoverage.coverageKeys.forEach((key) => coverage.subsectionKeys.add(key));
-    coverage.mappedPathCount += subsectionCoverage.matchedPathKeys.length;
-    if (subsectionCoverage.matchedPathKeys.length > 0) {
+    progressCoverage.coverageKeys.forEach((key) => coverage.progressSubsectionKeys.add(key));
+    coverage.mappedPathCount += mappedPathCoverage.matchedPathKeys.length;
+    if (mappedPathCoverage.matchedPathKeys.length > 0) {
       coverage.mappedPathSections.add(mapping.data.sectionCode);
     }
-    if (subsectionCoverage.usedFallback) {
+    if (mappedPathCoverage.usedFallback) {
       coverage.fallbackSections.add(mapping.data.sectionCode);
     }
   }
@@ -86,7 +95,7 @@ const episodes = Array.from(episodeCoverage.keys()).map((pid) => {
     datePublished: catalogEntry?.datePublished,
     durationSeconds: catalogEntry?.durationSeconds,
     sectionCodes: [...(coverage?.sectionCodes || [])],
-    subsectionKeys: [...(coverage?.subsectionKeys || [])],
+    progressSubsectionKeys: [...(coverage?.progressSubsectionKeys || [])],
     mappedPathCount: coverage?.mappedPathCount || 0,
     mappedPathSectionCount: coverage?.mappedPathSections.size || 0,
     fallbackSectionCount: coverage?.fallbackSections.size || 0,
@@ -104,7 +113,7 @@ for (const [pid, catalogEntry] of catalogLookup) {
       datePublished: catalogEntry.datePublished,
       durationSeconds: catalogEntry.durationSeconds,
       sectionCodes: [],
-      subsectionKeys: [],
+      progressSubsectionKeys: [],
       mappedPathCount: 0,
       mappedPathSectionCount: 0,
       fallbackSectionCount: 0,
@@ -113,9 +122,6 @@ for (const [pid, catalogEntry] of catalogLookup) {
 }
 
 const entries = buildIotAggregateEntries(episodes, sectionLookup);
-const { outlineItemCounts, totalOutlineItems } = buildOutlineItemCoverage(
-  sections.map((entry) => entry.data)
-);
 ---
 
 <BaseLayout
@@ -136,8 +142,6 @@ const { outlineItemCounts, totalOutlineItems } = buildOutlineItemCoverage(
         client:load
         entries={entries}
         baseUrl={base}
-        outlineItemCounts={outlineItemCounts}
-        totalOutlineItems={totalOutlineItems}
         partsMeta={buildPartsMeta(outline.parts)}
       />
     </section>

@@ -6,17 +6,35 @@ import { sectionUrl } from '../../utils/helpers';
 import { iotChecklistKey } from '../../utils/readingChecklist';
 import iotCatalog from '../../data/iot-catalog.json';
 import { getCollection } from 'astro:content';
+import {
+  analyzeProgressSubsectionCoverage,
+  buildSectionOutlinePathIndex,
+} from '../../utils/outlineCoverage';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
 import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
+import { buildIotAggregateEntries } from '../../utils/readingData';
+import { buildCoverageRingsForCompleted } from '../../utils/readingLibrary';
 
 export async function getStaticPaths() {
   const outline = await loadOutlineGraph();
-  const totals = {
-    parts: outline.totals.parts,
-    divisions: outline.totals.divisions,
-    sections: outline.totals.sections,
-  };
-
+  const allSections = await getCollection('sections');
+  const sectionOutlinePathIndex = buildSectionOutlinePathIndex(
+    allSections.map((section) => section.data)
+  );
+  const sectionLookup = new Map(
+    allSections.map((section) => [
+      section.data.sectionCode,
+      {
+        sectionCode: section.data.sectionCode,
+        sectionCodeDisplay: section.data.sectionCodeDisplay,
+        title: section.data.title,
+        partNumber: section.data.partNumber,
+        partTitle: outline.sectionMeta[section.data.sectionCode]?.partTitle,
+        divisionId: section.data.divisionId,
+        divisionTitle: outline.sectionMeta[section.data.sectionCode]?.divisionTitle,
+      },
+    ])
+  );
   const catalogLookup = new Map((iotCatalog as any).episodes.map((episode: any) => [episode.pid, episode]));
   const iotMappings = await getCollection('iot-mappings');
   const episodeMappings = new Map<string, Array<{
@@ -25,6 +43,7 @@ export async function getStaticPaths() {
     rationaleAI?: string;
     relevantPathsAI: string[];
   }>>();
+  const episodeProgressCoverage = new Map<string, { sectionCodes: Set<string>; progressSubsectionKeys: Set<string> }>();
 
   for (const mapping of iotMappings) {
     for (const entry of mapping.data.mappings) {
@@ -38,8 +57,53 @@ export async function getStaticPaths() {
         rationaleAI: entry.rationaleAI,
         relevantPathsAI: entry.relevantPathsAI ?? [],
       });
+
+      if (!episodeProgressCoverage.has(entry.pid)) {
+        episodeProgressCoverage.set(entry.pid, {
+          sectionCodes: new Set(),
+          progressSubsectionKeys: new Set(),
+        });
+      }
+
+      const coverage = episodeProgressCoverage.get(entry.pid)!;
+      coverage.sectionCodes.add(mapping.data.sectionCode);
+      const progressCoverage = analyzeProgressSubsectionCoverage(
+        mapping.data.sectionCode,
+        entry.relevantPathsAI,
+        sectionOutlinePathIndex
+      );
+      progressCoverage.coverageKeys.forEach((key) => coverage.progressSubsectionKeys.add(key));
     }
   }
+
+  const aggregateEntries = buildIotAggregateEntries(
+    [
+      ...(iotCatalog as any).episodes.map((episode: any) => ({
+        pid: episode.pid,
+        title: episode.title,
+        url: episode.url ?? `https://www.bbc.co.uk/programmes/${episode.pid}`,
+        synopsis: episode.description ?? episode.synopsis,
+        datePublished: episode.datePublished,
+        durationSeconds: episode.durationSeconds,
+        sectionCodes: [...(episodeProgressCoverage.get(episode.pid)?.sectionCodes ?? [])],
+        progressSubsectionKeys: [...(episodeProgressCoverage.get(episode.pid)?.progressSubsectionKeys ?? [])],
+      })),
+      ...Array.from(episodeMappings.entries())
+        .filter(([pid]) => !catalogLookup.has(pid))
+        .map(([pid, mappings]) => ({
+          pid,
+          title: mappings[0]?.title ?? pid,
+          url: `https://www.bbc.co.uk/programmes/${pid}`,
+          synopsis: undefined,
+          datePublished: undefined,
+          durationSeconds: undefined,
+          sectionCodes: [...(episodeProgressCoverage.get(pid)?.sectionCodes ?? [])],
+          progressSubsectionKeys: [...(episodeProgressCoverage.get(pid)?.progressSubsectionKeys ?? [])],
+        })),
+    ],
+    sectionLookup
+  );
+  const aggregateEntryLookup = new Map(aggregateEntries.map((entry) => [entry.pid, entry]));
 
   const paths = Array.from(episodeMappings.entries()).map(([pid, codes]) => {
     const catalogEpisode = catalogLookup.get(pid);
@@ -59,18 +123,15 @@ export async function getStaticPaths() {
         meta: outline.sectionMeta[entry.sectionCode],
       }))
       .filter((section: any) => section.meta);
-
-    const coveredParts = new Set(sections.map((section: any) => section.meta.partNumber));
-    const coveredDivisions = new Set(sections.map((section: any) => section.meta.divisionId));
-    const coverage = {
-      parts: coveredParts.size,
-      divisions: coveredDivisions.size,
-      sections: sections.length,
-    };
+    const aggregateEntry = aggregateEntryLookup.get(pid);
+    const rings = buildCoverageRingsForCompleted(
+      aggregateEntries,
+      aggregateEntry ? new Set([aggregateEntry.checklistKey]) : new Set()
+    );
 
     return {
       params: { pid },
-      props: { episode, sections, coverage, totals },
+      props: { episode, sections, rings },
     };
   });
 
@@ -90,8 +151,12 @@ export async function getStaticPaths() {
           durationSeconds: catalogEpisode.durationSeconds,
         },
         sections: [],
-        coverage: { parts: 0, divisions: 0, sections: 0 },
-        totals,
+        rings: buildCoverageRingsForCompleted(
+          aggregateEntries,
+          aggregateEntryLookup.has(pid)
+            ? new Set([aggregateEntryLookup.get(pid)!.checklistKey])
+            : new Set()
+        ),
       },
     });
   }
@@ -100,7 +165,7 @@ export async function getStaticPaths() {
 }
 
 const base = import.meta.env.BASE_URL;
-const { episode, sections, coverage, totals } = Astro.props;
+const { episode, sections, rings } = Astro.props;
 
 const byPart = new Map<number, typeof sections>();
 for (const section of sections) {
@@ -109,12 +174,6 @@ for (const section of sections) {
   byPart.set(section.meta.partNumber, items);
 }
 const sortedParts = [...byPart.entries()].sort((a, b) => a[0] - b[0]);
-
-const rings = [
-  { label: 'Parts', count: coverage.parts, total: totals.parts, color: '#6366f1' },
-  { label: 'Divisions', count: coverage.divisions, total: totals.divisions, color: '#8b5cf6' },
-  { label: 'Sections', count: coverage.sections, total: totals.sections, color: '#a78bfa' },
-];
 
 const metadata = formatIotEpisodeMeta(episode);
 ---

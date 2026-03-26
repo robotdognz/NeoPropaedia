@@ -35,8 +35,6 @@ import {
 export interface VsiLibraryProps {
   entries: VsiAggregateEntry[];
   baseUrl: string;
-  outlineItemCounts?: Record<string, number>;
-  totalOutlineItems?: number;
   partsMeta?: PartMeta[];
 }
 
@@ -123,7 +121,7 @@ function activeCoverageDescription(layer: CoverageLayer): string {
     case 'section':
       return 'Sections with at least one VSI covered by your checked titles.';
     case 'subsection':
-      return 'Mapped Subsection coverage from outline-path matches, with whole-Section fallback where path data is still missing.';
+      return 'Top-level Subsection coverage from explicit outline-path matches inside each Section.';
     default:
       return '';
   }
@@ -141,7 +139,7 @@ function precisionBadgeText(entry: VsiAggregateEntry): string | null {
   return subsectionPrecisionSummary(entry);
 }
 
-export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalOutlineItems, partsMeta }: VsiLibraryProps) {
+export default function VsiLibrary({ entries, baseUrl, partsMeta }: VsiLibraryProps) {
   const checklistState = useReadingChecklistState();
   useHashAnchorCorrection('vsi-library');
   const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
@@ -179,9 +177,7 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
     layerTabSnapshots,
   } = useMemo(() => {
     const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
-    const snapshots = RECOMMENDATION_LAYERS.map((layer) => buildLayerCoverageSnapshot(entries, completedChecklistKeys, layer, {
-      outlineItemCounts,
-    }));
+    const snapshots = RECOMMENDATION_LAYERS.map((layer) => buildLayerCoverageSnapshot(entries, completedChecklistKeys, layer));
     const tabSnapshots = snapshots.map((snapshot) => ({
       layer: snapshot.layer,
       currentlyCoveredCount: snapshot.currentlyCoveredCount,
@@ -189,15 +185,12 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
     }));
 
     return {
-      coverageRings: buildCoverageRings(entries, checklistState, {
-        outlineItemCounts,
-        totalOutlineItems,
-      }),
+      coverageRings: buildCoverageRings(entries, checklistState),
       defaultLayer: selectDefaultCoverageLayer(tabSnapshots),
       layerSnapshots: snapshots,
       layerTabSnapshots: tabSnapshots,
     };
-  }, [entries, checklistState, outlineItemCounts, totalOutlineItems]);
+  }, [entries, checklistState]);
 
   const activeLayer = selectedLayer ?? defaultLayer;
   const partSegments = useMemo(() => {
@@ -222,10 +215,10 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
         part: countEntryCoverageForLayer(entry, 'part'),
         division: countEntryCoverageForLayer(entry, 'division'),
         section: countEntryCoverageForLayer(entry, 'section'),
-        subsection: countEntryCoverageForLayer(entry, 'subsection', { outlineItemCounts }),
+        subsection: countEntryCoverageForLayer(entry, 'subsection'),
       },
     ])
-  ), [entries, outlineItemCounts]);
+  ), [entries]);
 
   const filteredEntries = sortEntries(
     entries.filter((entry) => {
@@ -306,7 +299,6 @@ export default function VsiLibrary({ entries, baseUrl, outlineItemCounts, totalO
         activeLayer={activeLayer}
         baseUrl={baseUrl}
         itemLabelPlural="books"
-        outlineItemCounts={outlineItemCounts}
         isComplete={isLayerComplete}
       />
 

@@ -10,7 +10,7 @@ const LAYER_DESCRIPTIONS: Record<CoverageLayer, string> = {
   part: 'Build a broad foundation across the ten major fields.',
   division: 'Cover the main strands within those fields before you narrow further.',
   section: 'Reach more named topics across the outline.',
-  subsection: 'Push into the finest mapped paths where specific path data is available.',
+  subsection: 'Push into the top-level subsection headings inside each Section.',
 };
 
 interface CoverageLayerTabsProps {

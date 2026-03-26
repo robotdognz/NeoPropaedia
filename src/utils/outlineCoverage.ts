@@ -72,7 +72,97 @@ export function buildSubsectionCoverageKeys(
   relevantPaths: string[] | undefined,
   sectionOutlinePathIndex: Record<string, string[]>
 ): string[] {
-  return analyzeSubsectionCoverage(sectionCode, relevantPaths, sectionOutlinePathIndex).coverageKeys;
+  return analyzeMappedOutlinePathCoverage(sectionCode, relevantPaths, sectionOutlinePathIndex).coverageKeys;
+}
+
+function normalizeRelevantPaths(relevantPaths: string[] | undefined): string[] {
+  return Array.from(new Set(
+    (relevantPaths ?? [])
+      .map((path) => normalizeOutlinePath(path))
+      .filter(Boolean)
+  ));
+}
+
+function resolveRelevantPathMatches(
+  sectionCode: string,
+  relevantPaths: string[] | undefined,
+  sectionOutlinePathIndex: Record<string, string[]>
+): {
+  validSectionPaths: string[];
+  normalizedRelevantPaths: string[];
+  matchedRelevantPaths: string[];
+} {
+  const validSectionPaths = sectionOutlinePathIndex[sectionCode] ?? [];
+  const normalizedRelevantPaths = normalizeRelevantPaths(relevantPaths);
+  const validPathSet = new Set(validSectionPaths);
+  const matchedRelevantPaths = normalizedRelevantPaths.filter((path) => (
+    validPathSet.size === 0 || validPathSet.has(path)
+  ));
+
+  return {
+    validSectionPaths,
+    normalizedRelevantPaths,
+    matchedRelevantPaths,
+  };
+}
+
+function coverageKeysForPaths(sectionCode: string, paths: string[]): string[] {
+  return paths.map((path) => `${sectionCode}::${path}`);
+}
+
+export function analyzeMappedOutlinePathCoverage(
+  sectionCode: string,
+  relevantPaths: string[] | undefined,
+  sectionOutlinePathIndex: Record<string, string[]>
+): {
+  coverageKeys: string[];
+  matchedPathKeys: string[];
+  usedFallback: boolean;
+} {
+  const {
+    validSectionPaths,
+    normalizedRelevantPaths,
+    matchedRelevantPaths,
+  } = resolveRelevantPathMatches(sectionCode, relevantPaths, sectionOutlinePathIndex);
+
+  const pathsToUse = matchedRelevantPaths.length > 0
+    ? matchedRelevantPaths
+    : normalizedRelevantPaths.length > 0
+      ? normalizedRelevantPaths
+      : validSectionPaths;
+
+  const usedFallback = normalizedRelevantPaths.length === 0;
+
+  return {
+    coverageKeys: coverageKeysForPaths(sectionCode, pathsToUse),
+    matchedPathKeys: coverageKeysForPaths(sectionCode, matchedRelevantPaths),
+    usedFallback,
+  };
+}
+
+export function analyzeProgressSubsectionCoverage(
+  sectionCode: string,
+  relevantPaths: string[] | undefined,
+  sectionOutlinePathIndex: Record<string, string[]>
+): {
+  coverageKeys: string[];
+  usedFallback: boolean;
+} {
+  const {
+    normalizedRelevantPaths,
+    matchedRelevantPaths,
+  } = resolveRelevantPathMatches(sectionCode, relevantPaths, sectionOutlinePathIndex);
+
+  const topLevelPaths = Array.from(new Set(
+    matchedRelevantPaths
+      .map((path) => normalizeOutlinePath(path.split('.')[0] ?? ''))
+      .filter(Boolean)
+  ));
+
+  return {
+    coverageKeys: coverageKeysForPaths(sectionCode, topLevelPaths),
+    usedFallback: normalizedRelevantPaths.length === 0,
+  };
 }
 
 export function analyzeSubsectionCoverage(
@@ -84,31 +174,5 @@ export function analyzeSubsectionCoverage(
   matchedPathKeys: string[];
   usedFallback: boolean;
 } {
-  const validSectionPaths = sectionOutlinePathIndex[sectionCode] ?? [];
-  const normalizedRelevantPaths = Array.from(new Set(
-    (relevantPaths ?? [])
-      .map((path) => normalizeOutlinePath(path))
-      .filter(Boolean)
-  ));
-
-  const validPathSet = new Set(validSectionPaths);
-  const matchedRelevantPaths = normalizedRelevantPaths.filter((path) => (
-    validPathSet.size === 0 || validPathSet.has(path)
-  ));
-
-  const pathsToUse = matchedRelevantPaths.length > 0
-    ? matchedRelevantPaths
-    : normalizedRelevantPaths.length > 0
-      ? normalizedRelevantPaths
-      : validSectionPaths;
-
-  const usedFallback = normalizedRelevantPaths.length === 0;
-
-  return {
-    coverageKeys: pathsToUse.map((path) => `${sectionCode}::${path}`),
-    matchedPathKeys: usedFallback
-      ? []
-      : pathsToUse.map((path) => `${sectionCode}::${path}`),
-    usedFallback,
-  };
+  return analyzeMappedOutlinePathCoverage(sectionCode, relevantPaths, sectionOutlinePathIndex);
 }

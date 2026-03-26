@@ -3,7 +3,11 @@ import wikiCatalog from '../data/wikipedia-catalog.json';
 import iotCatalog from '../data/iot-catalog.json';
 import { slugify } from './helpers';
 import { formatIotEpisodeMeta } from './iotMetadata';
-import { analyzeSubsectionCoverage, buildOutlineItemCoverage, buildSectionOutlinePathIndex } from './outlineCoverage';
+import {
+  analyzeMappedOutlinePathCoverage,
+  analyzeProgressSubsectionCoverage,
+  buildSectionOutlinePathIndex,
+} from './outlineCoverage';
 import { loadOutlineGraph } from './outlineGraph';
 import {
   buildIotAggregateEntries,
@@ -78,9 +82,6 @@ export async function buildHomepageCoverageSource(
         mappings.map((entry) => entry.data),
         catalogCollections.flatMap((entry) => entry.data.titles),
       );
-      const { outlineItemCounts, totalOutlineItems } = buildOutlineItemCoverage(
-        sections.map((entry) => entry.data),
-      );
 
       return {
         type,
@@ -93,13 +94,11 @@ export async function buildHomepageCoverageSource(
         itemSingular: 'book',
         itemPlural: 'books',
         includeSubsections: true,
-        outlineItemCounts,
-        totalOutlineItems,
         activeCoverageDescriptions: {
           part: 'Parts with at least one VSI covered by your checked titles.',
           division: 'Divisions with at least one VSI covered by your checked titles.',
           section: 'Sections with at least one VSI covered by your checked titles.',
-          subsection: 'Mapped Subsection coverage from outline-path matches, with whole-Section fallback where path data is still missing.',
+          subsection: 'Top-level Subsection coverage from explicit outline-path matches inside each Section.',
         },
         entries: entries.map((entry) => ({
           checklistKey: entry.checklistKey,
@@ -108,7 +107,7 @@ export async function buildHomepageCoverageSource(
           meta: formatVsiMeta(entry),
           sectionCount: entry.sectionCount,
           sections: entry.sections,
-          subsectionKeys: entry.subsectionKeys,
+          progressSubsectionKeys: entry.progressSubsectionKeys,
         })),
       };
     }
@@ -122,7 +121,7 @@ export async function buildHomepageCoverageSource(
         string,
         {
           sectionCodes: Set<string>;
-          subsectionKeys: Set<string>;
+          progressSubsectionKeys: Set<string>;
           mappedPathCount: number;
           mappedPathSections: Set<string>;
           fallbackSections: Set<string>;
@@ -134,7 +133,7 @@ export async function buildHomepageCoverageSource(
           if (!articleCoverage.has(item.articleTitle)) {
             articleCoverage.set(item.articleTitle, {
               sectionCodes: new Set(),
-              subsectionKeys: new Set(),
+              progressSubsectionKeys: new Set(),
               mappedPathCount: 0,
               mappedPathSections: new Set(),
               fallbackSections: new Set(),
@@ -143,18 +142,23 @@ export async function buildHomepageCoverageSource(
 
           const coverage = articleCoverage.get(item.articleTitle)!;
           coverage.sectionCodes.add(mapping.data.sectionCode);
-          const subsectionCoverage = analyzeSubsectionCoverage(
+          const mappedPathCoverage = analyzeMappedOutlinePathCoverage(
+            mapping.data.sectionCode,
+            item.relevantPathsAI,
+            sectionOutlinePathIndex,
+          );
+          const progressCoverage = analyzeProgressSubsectionCoverage(
             mapping.data.sectionCode,
             item.relevantPathsAI,
             sectionOutlinePathIndex,
           );
 
-          subsectionCoverage.coverageKeys.forEach((key) => coverage.subsectionKeys.add(key));
-          coverage.mappedPathCount += subsectionCoverage.matchedPathKeys.length;
-          if (subsectionCoverage.matchedPathKeys.length > 0) {
+          progressCoverage.coverageKeys.forEach((key) => coverage.progressSubsectionKeys.add(key));
+          coverage.mappedPathCount += mappedPathCoverage.matchedPathKeys.length;
+          if (mappedPathCoverage.matchedPathKeys.length > 0) {
             coverage.mappedPathSections.add(mapping.data.sectionCode);
           }
-          if (subsectionCoverage.usedFallback) {
+          if (mappedPathCoverage.usedFallback) {
             coverage.fallbackSections.add(mapping.data.sectionCode);
           }
         }
@@ -163,16 +167,13 @@ export async function buildHomepageCoverageSource(
       const articles = (wikiCatalog as any).articles.map((article: any) => ({
         ...article,
         sectionCodes: [...(articleCoverage.get(article.title)?.sectionCodes || [])],
-        subsectionKeys: [...(articleCoverage.get(article.title)?.subsectionKeys || [])],
+        progressSubsectionKeys: [...(articleCoverage.get(article.title)?.progressSubsectionKeys || [])],
         mappedPathCount: articleCoverage.get(article.title)?.mappedPathCount || 0,
         mappedPathSectionCount: articleCoverage.get(article.title)?.mappedPathSections.size || 0,
         fallbackSectionCount: articleCoverage.get(article.title)?.fallbackSections.size || 0,
       }));
 
       const entries = buildWikipediaAggregateEntries(articles, sectionLookup);
-      const { outlineItemCounts, totalOutlineItems } = buildOutlineItemCoverage(
-        sections.map((entry) => entry.data),
-      );
 
       return {
         type,
@@ -185,13 +186,11 @@ export async function buildHomepageCoverageSource(
         itemSingular: 'article',
         itemPlural: 'articles',
         includeSubsections: true,
-        outlineItemCounts,
-        totalOutlineItems,
         activeCoverageDescriptions: {
           part: 'Parts with at least one checked article.',
           division: 'Divisions with at least one checked article.',
           section: 'Sections with at least one checked article.',
-          subsection: 'Mapped Subsection coverage from article path matches inside each Section.',
+          subsection: 'Top-level Subsection coverage from explicit article path matches inside each Section.',
         },
         entries: entries.map((entry) => ({
           checklistKey: entry.checklistKey,
@@ -200,7 +199,7 @@ export async function buildHomepageCoverageSource(
           meta: entry.lowestLevel ? `Vital level ${entry.lowestLevel}` : undefined,
           sectionCount: entry.sectionCount,
           sections: entry.sections,
-          subsectionKeys: entry.subsectionKeys,
+          progressSubsectionKeys: entry.progressSubsectionKeys,
         })),
       };
     }
@@ -214,7 +213,7 @@ export async function buildHomepageCoverageSource(
         string,
         {
           sectionCodes: Set<string>;
-          subsectionKeys: Set<string>;
+          progressSubsectionKeys: Set<string>;
           mappedPathCount: number;
           mappedPathSections: Set<string>;
           fallbackSections: Set<string>;
@@ -231,7 +230,7 @@ export async function buildHomepageCoverageSource(
           if (!episodeCoverage.has(item.pid)) {
             episodeCoverage.set(item.pid, {
               sectionCodes: new Set(),
-              subsectionKeys: new Set(),
+              progressSubsectionKeys: new Set(),
               mappedPathCount: 0,
               mappedPathSections: new Set(),
               fallbackSections: new Set(),
@@ -240,18 +239,23 @@ export async function buildHomepageCoverageSource(
 
           const coverage = episodeCoverage.get(item.pid)!;
           coverage.sectionCodes.add(mapping.data.sectionCode);
-          const subsectionCoverage = analyzeSubsectionCoverage(
+          const mappedPathCoverage = analyzeMappedOutlinePathCoverage(
+            mapping.data.sectionCode,
+            item.relevantPathsAI,
+            sectionOutlinePathIndex,
+          );
+          const progressCoverage = analyzeProgressSubsectionCoverage(
             mapping.data.sectionCode,
             item.relevantPathsAI,
             sectionOutlinePathIndex,
           );
 
-          subsectionCoverage.coverageKeys.forEach((key) => coverage.subsectionKeys.add(key));
-          coverage.mappedPathCount += subsectionCoverage.matchedPathKeys.length;
-          if (subsectionCoverage.matchedPathKeys.length > 0) {
+          progressCoverage.coverageKeys.forEach((key) => coverage.progressSubsectionKeys.add(key));
+          coverage.mappedPathCount += mappedPathCoverage.matchedPathKeys.length;
+          if (mappedPathCoverage.matchedPathKeys.length > 0) {
             coverage.mappedPathSections.add(mapping.data.sectionCode);
           }
-          if (subsectionCoverage.usedFallback) {
+          if (mappedPathCoverage.usedFallback) {
             coverage.fallbackSections.add(mapping.data.sectionCode);
           }
         }
@@ -270,7 +274,7 @@ export async function buildHomepageCoverageSource(
           datePublished: catalogEntry?.datePublished,
           durationSeconds: catalogEntry?.durationSeconds,
           sectionCodes: [...(coverage?.sectionCodes || [])],
-          subsectionKeys: [...(coverage?.subsectionKeys || [])],
+          progressSubsectionKeys: [...(coverage?.progressSubsectionKeys || [])],
           mappedPathCount: coverage?.mappedPathCount || 0,
           mappedPathSectionCount: coverage?.mappedPathSections.size || 0,
           fallbackSectionCount: coverage?.fallbackSections.size || 0,
@@ -278,9 +282,6 @@ export async function buildHomepageCoverageSource(
       });
 
       const entries = buildIotAggregateEntries(episodes, sectionLookup);
-      const { outlineItemCounts, totalOutlineItems } = buildOutlineItemCoverage(
-        sections.map((entry) => entry.data),
-      );
 
       return {
         type,
@@ -293,13 +294,11 @@ export async function buildHomepageCoverageSource(
         itemSingular: 'episode',
         itemPlural: 'episodes',
         includeSubsections: true,
-        outlineItemCounts,
-        totalOutlineItems,
         activeCoverageDescriptions: {
           part: 'Parts with at least one checked episode.',
           division: 'Divisions with at least one checked episode.',
           section: 'Sections with at least one checked episode.',
-          subsection: 'Mapped Subsection coverage from episode path matches inside each Section.',
+          subsection: 'Top-level Subsection coverage from explicit episode path matches inside each Section.',
         },
         entries: entries.map((entry) => ({
           checklistKey: entry.checklistKey,
@@ -308,7 +307,7 @@ export async function buildHomepageCoverageSource(
           meta: formatIotEpisodeMeta(entry) || undefined,
           sectionCount: entry.sectionCount,
           sections: entry.sections,
-          subsectionKeys: entry.subsectionKeys,
+          progressSubsectionKeys: entry.progressSubsectionKeys,
         })),
       };
     }

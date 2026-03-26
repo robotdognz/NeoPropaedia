@@ -4,40 +4,31 @@ import CoverageRings from '../../components/ui/CoverageRings';
 import ReadingCheckbox from '../../components/content/ReadingCheckbox';
 import { getCollection } from 'astro:content';
 import { sectionUrl, slugify } from '../../utils/helpers';
-import { formatEditionLabel } from '../../utils/readingData';
+import { formatEditionLabel, buildVsiAggregateEntries } from '../../utils/readingData';
 import { vsiChecklistKey } from '../../utils/readingChecklist';
+import { buildCoverageRingsForCompleted } from '../../utils/readingLibrary';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
 import { vsiLookupKey } from '../../utils/readingIdentity';
 
 export async function getStaticPaths() {
-  function countOutlineItems(nodes: any[]): number {
-    let count = 0;
-    (nodes || []).forEach((n: any) => { count++; count += countOutlineItems(n.children); });
-    return count;
-  }
   const outline = await loadOutlineGraph();
-
-  // Load sections for outline item counts
   const allSections = await getCollection('sections');
-  const sectionOutlineCounts: Record<string, number> = {};
-  let totalOutlineItems = 0;
-  for (const s of allSections) {
-    const count = countOutlineItems(s.data.outline);
-    sectionOutlineCounts[s.data.sectionCode] = count;
-    totalOutlineItems += count;
-  }
-
-  const totals = {
-    parts: outline.totals.parts,
-    divisions: outline.totals.divisions,
-    sections: outline.totals.sections,
-    outlineItems: totalOutlineItems,
-  };
-
   const catalogCollections = await getCollection('vsi');
   const catalog = catalogCollections.flatMap((entry) => entry.data.titles);
   const allMappings = await getCollection('vsi-mappings');
   const mappingsByBook = new Map<string, { sectionCode: string; rationaleAI: string; meta: (typeof outline.sectionMeta)[string] }[]>();
+  const aggregateEntries = buildVsiAggregateEntries(
+    allSections.map((section) => ({
+      ...section.data,
+      partTitle: outline.sectionMeta[section.data.sectionCode]?.partTitle,
+      divisionTitle: outline.sectionMeta[section.data.sectionCode]?.divisionTitle,
+    })),
+    allMappings.map((mapping) => mapping.data),
+    catalog,
+  );
+  const aggregateEntryLookup = new Map(
+    aggregateEntries.map((entry) => [vsiLookupKey(entry.title, entry.author), entry])
+  );
 
   for (const mapping of allMappings) {
     for (const entry of mapping.data.mappings) {
@@ -58,32 +49,21 @@ export async function getStaticPaths() {
 
   return catalog.map((entry) => {
     const sections = mappingsByBook.get(vsiLookupKey(entry.title, entry.author)) ?? [];
-
-    // Compute coverage
-    const coveredParts = new Set(sections.map(s => s.meta.partNumber));
-    const coveredDivisions = new Set(sections.map(s => s.meta.divisionId));
-    const coveredSections = new Set(sections.map(s => s.sectionCode));
-    let coveredOutlineItems = 0;
-    for (const code of coveredSections) {
-      coveredOutlineItems += sectionOutlineCounts[code] || 0;
-    }
-
-    const coverage = {
-      parts: coveredParts.size,
-      divisions: coveredDivisions.size,
-      sections: coveredSections.size,
-      outlineItems: coveredOutlineItems,
-    };
+    const aggregateEntry = aggregateEntryLookup.get(vsiLookupKey(entry.title, entry.author));
+    const rings = buildCoverageRingsForCompleted(
+      aggregateEntries,
+      aggregateEntry ? new Set([aggregateEntry.checklistKey]) : new Set(),
+    );
 
     return {
       params: { slug: slugify(entry.title) },
-      props: { entry, sections, coverage, totals },
+      props: { entry, sections, rings },
     };
   });
 }
 
 const base = import.meta.env.BASE_URL;
-const { entry, sections: mappedSections, coverage, totals } = Astro.props;
+const { entry, sections: mappedSections, rings } = Astro.props;
 
 // Group by part
 const byPart = new Map<number, typeof mappedSections>();
@@ -96,14 +76,6 @@ const sortedParts = [...byPart.entries()].sort((a, b) => a[0] - b[0]);
 
 const editionLabel = formatEditionLabel(entry.edition);
 const metadata = [entry.author, editionLabel, entry.publicationYear ? String(entry.publicationYear) : null].filter(Boolean).join(' · ');
-
-// Ring chart data
-const rings = [
-  { label: 'Parts', count: coverage.parts, total: totals.parts, color: '#6366f1' },
-  { label: 'Divisions', count: coverage.divisions, total: totals.divisions, color: '#8b5cf6' },
-  { label: 'Sections', count: coverage.sections, total: totals.sections, color: '#a78bfa' },
-  { label: 'Sub-sections', count: coverage.outlineItems, total: totals.outlineItems, color: '#c4b5fd' },
-];
 
 ---
 

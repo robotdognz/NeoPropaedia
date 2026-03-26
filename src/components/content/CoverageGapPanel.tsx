@@ -14,7 +14,6 @@ interface CoverageGapPanelProps<TEntry extends ChecklistBackedReadingEntry> {
   activeLayer: CoverageLayer;
   baseUrl: string;
   itemLabelPlural: string;
-  outlineItemCounts?: Record<string, number>;
   isComplete: boolean;
 }
 
@@ -39,7 +38,6 @@ export default function CoverageGapPanel<TEntry extends ChecklistBackedReadingEn
   activeLayer,
   baseUrl,
   itemLabelPlural,
-  outlineItemCounts,
   isComplete,
 }: CoverageGapPanelProps<TEntry>) {
   const gapItems = useMemo(() => {
@@ -49,12 +47,11 @@ export default function CoverageGapPanel<TEntry extends ChecklistBackedReadingEn
       activeLayer,
       baseUrl,
       {
-        outlineItemCounts,
         itemLabelPlural,
         limit: 5,
       }
     );
-  }, [entries, checklistState, activeLayer, baseUrl, outlineItemCounts, itemLabelPlural]);
+  }, [entries, checklistState, activeLayer, baseUrl, itemLabelPlural]);
   const layerMeta = COVERAGE_LAYER_META[activeLayer];
 
   return (

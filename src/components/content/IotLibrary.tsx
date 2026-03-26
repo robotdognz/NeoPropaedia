@@ -33,8 +33,6 @@ import {
 export interface IotLibraryProps {
   entries: IotAggregateEntry[];
   baseUrl: string;
-  outlineItemCounts?: Record<string, number>;
-  totalOutlineItems?: number;
   partsMeta?: PartMeta[];
 }
 
@@ -60,7 +58,7 @@ function activeCoverageDescription(layer: CoverageLayer): string {
     case 'section':
       return 'Sections with at least one checked episode.';
     case 'subsection':
-      return 'Mapped Subsection coverage from episode path matches inside each Section.';
+      return 'Top-level Subsection coverage from explicit episode path matches inside each Section.';
     default:
       return '';
   }
@@ -105,8 +103,6 @@ function compareDate(a?: string, b?: string): number {
 export default function IotLibrary({
   entries,
   baseUrl,
-  outlineItemCounts,
-  totalOutlineItems,
   partsMeta,
 }: IotLibraryProps) {
   const checklistState = useReadingChecklistState();
@@ -146,9 +142,7 @@ export default function IotLibrary({
     layerTabSnapshots,
   } = useMemo(() => {
     const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
-    const snapshots = RECOMMENDATION_LAYERS.map((layer) => buildLayerCoverageSnapshot(entries, completedChecklistKeys, layer, {
-      outlineItemCounts,
-    }));
+    const snapshots = RECOMMENDATION_LAYERS.map((layer) => buildLayerCoverageSnapshot(entries, completedChecklistKeys, layer));
     const tabSnapshots = snapshots.map((snapshot) => ({
       layer: snapshot.layer,
       currentlyCoveredCount: snapshot.currentlyCoveredCount,
@@ -156,15 +150,12 @@ export default function IotLibrary({
     }));
 
     return {
-      coverageRings: buildCoverageRings(entries, checklistState, {
-        outlineItemCounts,
-        totalOutlineItems,
-      }),
+      coverageRings: buildCoverageRings(entries, checklistState),
       defaultLayer: selectDefaultCoverageLayer(tabSnapshots),
       layerSnapshots: snapshots,
       layerTabSnapshots: tabSnapshots,
     };
-  }, [entries, checklistState, outlineItemCounts, totalOutlineItems]);
+  }, [entries, checklistState]);
 
   const activeLayer = selectedLayer ?? defaultLayer;
   const partSegments = useMemo(() => {
@@ -189,10 +180,10 @@ export default function IotLibrary({
         part: countEntryCoverageForLayer(entry, 'part'),
         division: countEntryCoverageForLayer(entry, 'division'),
         section: countEntryCoverageForLayer(entry, 'section'),
-        subsection: countEntryCoverageForLayer(entry, 'subsection', { outlineItemCounts }),
+        subsection: countEntryCoverageForLayer(entry, 'subsection'),
       },
     ])
-  ), [entries, outlineItemCounts]);
+  ), [entries]);
 
   const collate = (a: string, b: string) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
   const compareNumber = (a: number, b: number) => (sortDirection === 'asc' ? a - b : b - a);
@@ -296,7 +287,6 @@ export default function IotLibrary({
         activeLayer={activeLayer}
         baseUrl={baseUrl}
         itemLabelPlural="episodes"
-        outlineItemCounts={outlineItemCounts}
         isComplete={isLayerComplete}
       />
 

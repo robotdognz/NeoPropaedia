@@ -3,7 +3,6 @@ import BaseLayout from '../../components/layout/BaseLayout.astro';
 import VsiLibrary from '../../components/content/VsiLibrary';
 import { getCollection } from 'astro:content';
 import { buildVsiAggregateEntries } from '../../utils/readingData';
-import { buildOutlineItemCoverage } from '../../utils/outlineCoverage';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
 import { buildPartsMeta } from '../../utils/helpers';
 
@@ -27,10 +26,6 @@ const entries = buildVsiAggregateEntries(
   mappings.map((entry) => entry.data),
   catalogCollections.flatMap((entry) => entry.data.titles)
 );
-
-const { outlineItemCounts, totalOutlineItems } = buildOutlineItemCoverage(
-  sections.map((entry) => entry.data)
-);
 ---
 
 <BaseLayout
@@ -50,7 +45,7 @@ const { outlineItemCounts, totalOutlineItems } = buildOutlineItemCoverage(
     </header>
 
     <section class="mt-8">
-      <VsiLibrary client:load entries={entries} baseUrl={base} outlineItemCounts={outlineItemCounts} totalOutlineItems={totalOutlineItems} partsMeta={buildPartsMeta(outline.parts)} />
+      <VsiLibrary client:load entries={entries} baseUrl={base} partsMeta={buildPartsMeta(outline.parts)} />
     </section>
   </main>
 </BaseLayout>
