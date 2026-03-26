@@ -1,6 +1,11 @@
 Propaedia TODO:
 
+    - Need to search kindle store instead of normal amazon
+
+    - Check how subsection progress calculations work, is it taking every single subsection including the nested ones, or just the top level, etc
+
     - Remake the logo with wedge on top like the "Your Coverage" circle, and give the wedges rounded corners. Just make the logo look like the your coverage wedge circle, make the wedges partially full, use my BBC In Our Time progress at the section level
+        - Use this data: /Users/marcomcgowan/Downloads/propaedia-progress-2026-03-26.json
 
     - Rename repo to DigitalPropaedia, OnlinePropaedia, NeoPropaedia (or something better)
 

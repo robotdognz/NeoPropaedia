@@ -38,6 +38,28 @@ export default function CoverageRings({
       return () => cancelAnimationFrame(id);
     }
   }, [activeRingLabel]);
+  // Detect rings that just appeared — suppress them for one frame so they animate from 0
+  const prevRingLabelsRef = useRef<Set<string>>(new Set(rings.map(r => r.label)));
+  const newRingLabelsRef = useRef<Set<string>>(new Set());
+  const [, forceRender] = useState(0);
+  const currentLabels = rings.map(r => r.label);
+  const justAppeared = currentLabels.filter(l => !prevRingLabelsRef.current.has(l));
+  if (justAppeared.length > 0) {
+    newRingLabelsRef.current = new Set(justAppeared);
+  }
+  prevRingLabelsRef.current = new Set(currentLabels);
+  useEffect(() => {
+    if (newRingLabelsRef.current.size > 0) {
+      const id = requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          newRingLabelsRef.current = new Set();
+          forceRender(n => n + 1);
+        });
+      });
+      return () => cancelAnimationFrame(id);
+    }
+  }, [currentLabels.join(',')]);
+
   // Track which rings should hide their arc (after transition to zero completes)
   // Initialize with any rings already at zero to prevent flash on mount
   const [hiddenArcs, setHiddenArcs] = useState<Set<string>>(
@@ -180,6 +202,11 @@ export default function CoverageRings({
           // Keep a tiny dot while fading out so opacity transition has something visible
           if (fraction === 0 && !hiddenArcs.has(ring.label) && animated) {
             fraction = 0.001;
+          }
+
+          // New rings start at 0 for one frame so CSS transition animates them in
+          if (newRingLabelsRef.current.has(ring.label)) {
+            fraction = 0;
           }
 
           return (
