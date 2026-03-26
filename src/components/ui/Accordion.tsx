@@ -61,7 +61,7 @@ export default function Accordion({ title, defaultOpen = false, forceOpenKey, fo
   const toggle = () => setIsOpen((prev) => !prev);
 
   return (
-    <div class="border border-gray-200 rounded-lg overflow-hidden">
+    <div class="border border-gray-200 rounded-lg overflow-clip">
       <button
         type="button"
         id={`${id}-trigger`}

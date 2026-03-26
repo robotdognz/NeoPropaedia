@@ -12,9 +12,11 @@ export default function HorizontalCardScroll({
   children,
   cardMinWidth = 280,
 }: HorizontalCardScrollProps) {
+  const wrapperRef = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(false);
+  const [cardWidth, setCardWidth] = useState(cardMinWidth);
 
   const updateArrows = useCallback(() => {
     const el = scrollRef.current;
@@ -23,18 +25,44 @@ export default function HorizontalCardScroll({
     setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 1);
   }, []);
 
+  // Measure container and set card width responsively
+  const [edgePad, setEdgePad] = useState(0);
+
+  const updateCardWidth = useCallback(() => {
+    const wrapper = wrapperRef.current;
+    if (!wrapper) return;
+    const available = wrapper.clientWidth;
+    const cw = Math.min(cardMinWidth, available - 32);
+    setCardWidth(cw);
+    // Add centering padding only if doing so results in exactly one card visible
+    // (i.e. the gap between cards fills or exceeds the remaining space after centering)
+    const GAP = 16;
+    const halfPad = (available - cw) / 2;
+    const secondCardPeeks = GAP < halfPad;
+    const pad = secondCardPeeks ? 0 : Math.max(0, Math.floor(halfPad));
+    setEdgePad(pad);
+  }, [cardMinWidth]);
+
   useEffect(() => {
     const el = scrollRef.current;
-    if (!el) return;
+    const wrapper = wrapperRef.current;
+    if (!el || !wrapper) return;
+
     updateArrows();
+    updateCardWidth();
+
     el.addEventListener('scroll', updateArrows, { passive: true });
-    const ro = new ResizeObserver(updateArrows);
-    ro.observe(el);
+    const ro = new ResizeObserver(() => {
+      updateArrows();
+      updateCardWidth();
+    });
+    ro.observe(wrapper);
+
     return () => {
       el.removeEventListener('scroll', updateArrows);
       ro.disconnect();
     };
-  }, [updateArrows, children]);
+  }, [updateArrows, updateCardWidth, children]);
 
   // Touch/mouse drag scrolling
   useEffect(() => {
@@ -102,7 +130,6 @@ export default function HorizontalCardScroll({
 
     const viewCenter = el.scrollLeft + el.clientWidth / 2;
 
-    // Find the card whose center is closest to the viewport center
     let anchorIdx = 0;
     let anchorDist = Infinity;
     cards.forEach((card, i) => {
@@ -133,7 +160,6 @@ export default function HorizontalCardScroll({
 
     const max = el.scrollWidth - el.clientWidth;
 
-    // First card: snap to start. Last card: snap to end. Otherwise center.
     let scrollTarget: number;
     if (targetIdx === 0) {
       scrollTarget = 0;
@@ -141,8 +167,8 @@ export default function HorizontalCardScroll({
       scrollTarget = max;
     } else {
       const card = cards[targetIdx];
-      const cardCenter = card.offsetLeft + card.offsetWidth / 2;
-      scrollTarget = Math.max(0, Math.min(cardCenter - el.clientWidth / 2, max));
+      const cc = card.offsetLeft + card.offsetWidth / 2;
+      scrollTarget = Math.max(0, Math.min(cc - el.clientWidth / 2, max));
     }
 
     el.scrollTo({
@@ -151,16 +177,13 @@ export default function HorizontalCardScroll({
     });
   };
 
-  // Responsive card width: use container width on small screens so one card fills the view
-  const cardStyle = `width: ${cardMinWidth}px; min-width: min(${cardMinWidth}px, calc(100% - 16px))`;
-
   return (
-    <div class="relative">
+    <div ref={wrapperRef} class="relative">
       {canScrollLeft && (
         <button
           type="button"
           onClick={() => scroll('left')}
-          class="absolute left-0 top-1/2 z-10 -translate-y-1/2 -translate-x-4 flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white shadow-lg text-gray-500 hover:text-gray-700 hover:bg-gray-50 transition-colors"
+          class="absolute -left-3 top-1/2 z-10 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white/90 shadow-lg text-gray-500 hover:text-gray-700 hover:bg-white transition-colors sm:-left-5"
           aria-label="Scroll left"
         >
           <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}>
@@ -172,7 +195,7 @@ export default function HorizontalCardScroll({
         <button
           type="button"
           onClick={() => scroll('right')}
-          class="absolute right-0 top-1/2 z-10 -translate-y-1/2 translate-x-4 flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white shadow-lg text-gray-500 hover:text-gray-700 hover:bg-gray-50 transition-colors"
+          class="absolute -right-3 top-1/2 z-10 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white/90 shadow-lg text-gray-500 hover:text-gray-700 hover:bg-white transition-colors sm:-right-5"
           aria-label="Scroll right"
         >
           <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}>
@@ -183,14 +206,14 @@ export default function HorizontalCardScroll({
       <div
         ref={scrollRef}
         class="flex gap-4 overflow-x-auto scroll-smooth pb-2 touch-pan-x"
-        style={{ scrollbarWidth: 'thin' }}
+        style={{ scrollbarWidth: 'thin', paddingLeft: `${edgePad}px`, paddingRight: `${edgePad}px` }}
       >
         {Array.isArray(children) ? children.map((child, i) => (
-          <div key={i} class="shrink-0" style={cardStyle}>
+          <div key={i} class="shrink-0" style={{ width: `${cardWidth}px` }}>
             {child}
           </div>
         )) : (
-          <div class="shrink-0" style={cardStyle}>
+          <div class="shrink-0" style={{ width: `${cardWidth}px` }}>
             {children}
           </div>
         )}

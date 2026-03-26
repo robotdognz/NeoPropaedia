@@ -26,7 +26,6 @@ function formatVsiMeta(entry: {
   return [
     entry.author,
     entry.number ? `No. ${entry.number}` : null,
-    entry.subject ?? null,
     formatEditionLabel(entry.edition),
     entry.publicationYear ? String(entry.publicationYear) : null,
   ]
