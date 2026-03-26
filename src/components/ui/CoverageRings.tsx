@@ -147,17 +147,16 @@ export default function CoverageRings({
           const isActive = ring.label === activeRingLabel;
           // Round caps extend by strokeWidth/2 beyond the arc endpoint.
           // The active ring is wider, so its caps protrude further than inactive rings.
-          // Compensate by shortening the arc (end cap) and rotating the start (start cap)
-          // by the extra protrusion, measured in pathLength units (1 = full circumference).
-          const baseCapPx = ringWidth / 2;
-          const activeCapPx = width / 2;
-          const excessCapPx = activeCapPx - baseCapPx;
+          // capDelta = the extra cap protrusion in pathLength units (1 = full circumference).
+          // Start: rotate forward by capDelta to pull the start cap tip in.
+          // End: reduce fraction by 2*capDelta — one to offset the start rotation
+          // eating into the arc, one more to actually pull the end cap tip back.
+          const excessCapPx = (width - ringWidth) / 2;
           const circumference = 2 * Math.PI * radius;
-          const capDelta = rawFraction > 0 && rawFraction < 1
-            ? excessCapPx / circumference
-            : 0;
-          const fraction = Math.max(0, rawFraction - capDelta);
-          const startRotation = (excessCapPx / circumference) * 360 * (rawFraction > 0 && rawFraction < 1 ? 1 : 0);
+          const isPartial = rawFraction > 0 && rawFraction < 1;
+          const capDelta = isPartial ? excessCapPx / circumference : 0;
+          const fraction = Math.max(0, rawFraction - capDelta * 2);
+          const startRotation = capDelta * 360;
 
           return (
             <g key={ring.label}>
