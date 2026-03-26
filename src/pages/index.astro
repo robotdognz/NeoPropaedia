@@ -257,7 +257,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
         alias="whole-outline-reading-paths"
         number={1}
         title="Whole Outline"
-        description="Follow the reading type that opens the most new ground across the outline, from Parts down to Subsections."
+        description="A guided reading order across the full scope of human knowledge. Each suggestion is chosen to cover as much of the outline as possible with every reading."
         defaultOpen={true}
       >
         <HomepageCoverageExplorer
@@ -276,7 +276,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
         alias="circle-of-learning"
         number={2}
         title="Selected Fields"
-        description="Use the circle to focus one Part on its own or the overlap between two, then narrow into Divisions and Sections when you want more precision."
+        description="Select one or two fields to explore the connections between them. Suggested readings start from their shared ground and spread outward across the wider outline."
       >
         <CircleNavigator
           client:load
@@ -436,7 +436,7 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
         mode="specific-topic"
         number={3}
         title="Specific Topic"
-        description="Browse the ten Parts directly when you already know the area you want, then drill down through Divisions and Sections."
+        description="Navigate directly to a Part of the outline and narrow your focus through its Divisions and Sections into progressively more specific topics."
       >
         <div class="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
           {homepagePartCards.map((part) => (
@@ -520,7 +520,8 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
 
         function scrollToSection(item, behavior) {
           requestAnimationFrame(() => {
-            item.section.scrollIntoView({ behavior, block: 'start' });
+            const scrollTarget = item.section.querySelector('[data-home-mode-scroll-target]');
+            (scrollTarget || item.section).scrollIntoView({ behavior, block: 'start' });
           });
         }
 

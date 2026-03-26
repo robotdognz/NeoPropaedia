@@ -360,9 +360,12 @@ export function CenteredCircleNavigatorPanel({
         </p>
 
         {suggestedSections.length > 0 && (
-          <details class="mt-3">
-            <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors">
-              Connected Sections ({suggestedSections.length})
+          <details class="mt-3 group/conn">
+            <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors flex items-center gap-1 list-none [&::-webkit-details-marker]:hidden">
+              <span>Connected Sections ({suggestedSections.length})</span>
+              <svg class="h-3 w-3 transition-transform group-open/conn:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
             </summary>
             <ul class="mt-2 space-y-1">
               {suggestedSections.map((item) => {
@@ -568,9 +571,12 @@ export function TopPartCircleNavigatorPanel({
         </p>
 
         {topPart.divisions.length > 0 && (
-          <details class="mt-3">
-            <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors">
-              Divisions ({topPart.divisions.length})
+          <details class="mt-3 group/divs">
+            <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors flex items-center gap-1 list-none [&::-webkit-details-marker]:hidden">
+              <span>Divisions ({topPart.divisions.length})</span>
+              <svg class="h-3 w-3 transition-transform group-open/divs:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width={2}>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
             </summary>
             <ul class="mt-2 space-y-1">
               {topPart.divisions.map((division) => (
