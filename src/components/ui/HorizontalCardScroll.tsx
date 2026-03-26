@@ -219,17 +219,17 @@ export default function HorizontalCardScroll({
       >
         <style>{`.hcs-noscroll::-webkit-scrollbar { display: none; }`}</style>
         {Array.isArray(children) ? children.map((child, i) => (
-          <div key={i} class="shrink-0" style={{ width: `${cardWidth}px` }}>
+          <div key={i} class="shrink-0 [&>*]:h-full" style={{ width: `${cardWidth}px` }}>
             {child}
           </div>
         )) : (
-          <div class="shrink-0" style={{ width: `${cardWidth}px` }}>
+          <div class="shrink-0 [&>*]:h-full" style={{ width: `${cardWidth}px` }}>
             {children}
           </div>
         )}
       </div>
       {thumbWidth < 100 && (
-        <div class="mt-2 mx-auto h-1 rounded-full bg-gray-200/70" style={{ width: '60%' }}>
+        <div class="mt-4 h-1 rounded-full bg-gray-200/70" style={{ marginLeft: `${edgePad}px`, marginRight: `${edgePad}px` }}>
           <div
             class="h-full rounded-full bg-gray-400/60 transition-[left,width] duration-150"
             style={{ width: `${thumbWidth}%`, marginLeft: `${thumbLeft}%` }}
