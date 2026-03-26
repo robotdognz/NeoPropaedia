@@ -1,7 +1,5 @@
 Propaedia TODO:
 
-    - Add spotify link to BBC epsiodes. Add Amazon and Goodreads links and star ratings to pages for VSI's. Add the Wikipedia scraped paragraphs to Wikipedia pages
-
     - Fix the broken links for the Oxford website
 
     - Need to remember and restore users outline layer choice site wide (home page and reading home pages). Default to Part, but otherwise restore user preference
@@ -10,10 +8,6 @@ Propaedia TODO:
 
     
     - Still need to improve the gaps between elements on the home page, bit weird looking.
-
-    - See if we can bring in ratings from amazon and goodreads for VSI's, should be dynamic, not hard coded
-
-    - Check that the app will work fully offline on mobile
 
     - Look into how safe we can make the users preferences, maybe an export button somewhere as well. It would really suck to lose reading progress too easily
     

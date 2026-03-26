@@ -1,8 +1,31 @@
-const CACHE_NAME = 'propaedia-v2';
+const CACHE_NAME = 'propaedia-v3';
 const BASE = '/OxfordPropaedia/';
 
-self.addEventListener('install', () => {
-  self.skipWaiting();
+// Pre-cached on install: Part and Division pages for core offline navigation
+const PRECACHE_URLS = [
+  BASE,
+  BASE + 'about/',
+  // Part pages
+  ...Array.from({ length: 10 }, (_, i) => BASE + 'part/' + (i + 1) + '/'),
+  // Division pages are added dynamically by the build step below
+];
+
+// Division URLs injected at build time (placeholder replaced by post-build script)
+const DIVISION_URLS = /*INJECT_DIVISION_URLS*/[];
+PRECACHE_URLS.push(...DIVISION_URLS);
+
+self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches.open(CACHE_NAME).then((cache) =>
+      Promise.all(
+        PRECACHE_URLS.map((url) =>
+          cache.add(url).catch((err) => {
+            console.warn('Failed to pre-cache:', url, err);
+          })
+        )
+      )
+    ).then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener('activate', (event) => {

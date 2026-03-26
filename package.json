@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && npx pagefind --site dist",
+    "build": "astro build && node scripts/inject-sw-precache.mjs && npx pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro"
   },
