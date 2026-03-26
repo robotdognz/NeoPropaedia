@@ -8,6 +8,7 @@ export interface PartCoverageRingProps {
   innerRadius?: number;
   outerRadius?: number;
   gapPx?: number;
+  freezeTransitions?: boolean;
 }
 
 function polar(cx: number, cy: number, r: number, angleDeg: number) {
@@ -116,6 +117,7 @@ export default function PartCoverageRing({
   innerRadius,
   outerRadius,
   gapPx = 2.5,
+  freezeTransitions = false,
 }: PartCoverageRingProps) {
   const [animated, setAnimated] = useState(false);
   const [clipId] = useState(() => `pcr-${++idCounter}`);
@@ -149,7 +151,7 @@ export default function PartCoverageRing({
                 cy={cy}
                 r={fillR}
                 style={{
-                  transition: 'r 0.8s ease-out',
+                  transition: freezeTransitions ? 'none' : 'r 0.8s ease-out',
                 }}
               />
             </clipPath>

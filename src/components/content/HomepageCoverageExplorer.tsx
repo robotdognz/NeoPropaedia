@@ -200,17 +200,47 @@ export default function HomepageCoverageExplorer({
     return buildPartCoverageSegments(source.entries, checklistState, activeLayer, partsMeta);
   }, [checklistState, source, activeLayer, partsMeta]);
 
-  // Delay pushing new ring values so the browser settles before animations start
-  const [coverageRings, setCoverageRings] = useState(coverageRingsLatest ?? []);
-  const [partSegments, setPartSegments] = useState(partSegmentsLatest ?? []);
+  // Deferred ring values: when the data source changes, keep showing the OLD
+  // ring values for one frame (so heavy useMemo work doesn't stutter an
+  // in-progress animation). On the next frame, swap in new values — CSS
+  // transitions then animate smoothly from old → new.
+  const prevRingsRef = useRef(coverageRingsLatest);
+  const prevSegmentsRef = useRef(partSegmentsLatest);
+  const prevSourceRef = useRef(source);
+  const deferringRef = useRef(false);
+  const [, forceRender] = useState(0);
+
+  if (source !== prevSourceRef.current) {
+    prevSourceRef.current = source;
+    deferringRef.current = true;
+  }
+
+  const coverageRings = deferringRef.current
+    ? (prevRingsRef.current ?? coverageRingsLatest ?? [])
+    : (coverageRingsLatest ?? []);
+  const partSegments = deferringRef.current
+    ? (prevSegmentsRef.current ?? partSegmentsLatest ?? [])
+    : (partSegmentsLatest ?? []);
+
+  // Keep refs in sync when not deferring
+  if (!deferringRef.current) {
+    prevRingsRef.current = coverageRingsLatest;
+    prevSegmentsRef.current = partSegmentsLatest;
+  }
+
   useEffect(() => {
-    if (!coverageRingsLatest && !partSegmentsLatest) return;
-    const id = setTimeout(() => {
-      if (coverageRingsLatest) setCoverageRings(coverageRingsLatest);
-      if (partSegmentsLatest) setPartSegments(partSegmentsLatest);
-    }, 150);
-    return () => clearTimeout(id);
-  }, [coverageRingsLatest, partSegmentsLatest]);
+    if (deferringRef.current) {
+      const id = requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          prevRingsRef.current = coverageRingsLatest;
+          prevSegmentsRef.current = partSegmentsLatest;
+          deferringRef.current = false;
+          forceRender(n => n + 1);
+        });
+      });
+      return () => cancelAnimationFrame(id);
+    }
+  }, [source]);
 
   const completedCount = source ? countCompletedEntries(source.entries, checklistState) : 0;
   const wrapperClass = framed

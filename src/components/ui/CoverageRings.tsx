@@ -6,6 +6,7 @@ export interface CoverageRingsProps {
   size?: number;
   ringWidth?: number;
   hideLegend?: boolean;
+  freezeTransitions?: boolean;
   activeRingLabel?: string;
   onSelectRing?: (label: string) => void;
 }
@@ -15,6 +16,7 @@ export default function CoverageRings({
   size = 160,
   ringWidth = 10,
   hideLegend = false,
+  freezeTransitions = false,
   activeRingLabel,
   onSelectRing,
 }: CoverageRingsProps) {
@@ -219,7 +221,7 @@ export default function CoverageRings({
                 stroke-opacity={isActive ? '0.78' : '0.72'}
                 stroke-width={width}
                 style={{
-                  transition: geometryTransition,
+                  transition: freezeTransitions ? 'none' : geometryTransition,
                 }}
               />
               {/* Animated arc — hidden after transition completes at zero to prevent round-cap dot on mobile */}
@@ -236,9 +238,11 @@ export default function CoverageRings({
                 style={{
                   transform: `rotate(${-90 + startRotation}deg)`,
                   transformOrigin: `${center}px ${center}px`,
-                  transition: snapTransition
-                    ? 'stroke-opacity 0.4s ease-out'
-                    : `stroke-dashoffset 0.8s ease-out, stroke-opacity 0.4s ease-out, transform 180ms ease, ${geometryTransition}`,
+                  transition: freezeTransitions
+                    ? 'none'
+                    : snapTransition
+                      ? 'stroke-opacity 0.4s ease-out'
+                      : `stroke-dashoffset 0.8s ease-out, stroke-opacity 0.4s ease-out, transform 180ms ease, ${geometryTransition}`,
                 }}
               />
             </g>
