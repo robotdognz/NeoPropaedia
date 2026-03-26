@@ -65,11 +65,11 @@ export default function CoverageRings({
         if (existing) { clearTimeout(existing); hideTimers.current.delete(ring.label); }
         setHiddenArcs((prev) => { if (!prev.has(ring.label)) return prev; const next = new Set(prev); next.delete(ring.label); return next; });
       } else if (!hiddenArcs.has(ring.label) && !existing) {
-        // Start fading as the dashoffset transition nears completion
+        // Hide after the 0.8s dashoffset transition completes + 0.35s opacity fade
         const id = window.setTimeout(() => {
           hideTimers.current.delete(ring.label);
           setHiddenArcs((prev) => new Set(prev).add(ring.label));
-        }, 500);
+        }, 850);
         hideTimers.current.set(ring.label, id);
       }
     });
@@ -152,10 +152,12 @@ export default function CoverageRings({
           // appear at the same angle as the base (non-boosted) ring.
           const circumference = 2 * Math.PI * radius;
           const isPartial = rawFraction > 0 && rawFraction < 1;
+          // Always compensate for the active ring — rotation is invisible once opacity fades
+          const needsCompensation = (isPartial || rawFraction === 0) && width > ringWidth;
 
           let fraction: number;
           let startRotation: number;
-          if (isPartial && width > ringWidth) {
+          if (needsCompensation) {
             const baseRadius = radius + (width - ringWidth) / 2;
             const baseCirc = 2 * Math.PI * baseRadius;
             // Angular start compensation: align start cap tips
@@ -166,9 +168,9 @@ export default function CoverageRings({
               fraction = idealFraction;
               startRotation = startComp * 360;
             } else {
-              // Arc too small — just align start, clamp to a dot
+              // Arc too small — just align start, clamp to a dot only if there's real coverage
               startRotation = startComp * 360;
-              fraction = Math.max(0.001, rawFraction - startComp);
+              fraction = rawFraction > 0 ? Math.max(0.001, rawFraction - startComp) : 0;
             }
           } else {
             fraction = rawFraction;
