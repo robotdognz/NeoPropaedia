@@ -146,6 +146,14 @@ const metadata = formatIotEpisodeMeta(episode);
         >
           Listen on BBC ↗
         </a>
+        <a
+          href={`https://open.spotify.com/search/${encodeURIComponent('In Our Time ' + episode.title)}/episodes`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800"
+        >
+          Find on Spotify ↗
+        </a>
       </div>
     </header>
 
