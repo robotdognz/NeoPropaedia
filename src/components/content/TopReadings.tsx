@@ -49,8 +49,6 @@ interface TopReadingSection {
   type: ReadingType;
   items: ReadingItem[];
   title: string;
-  browseHref: string;
-  browseLabel: string;
   whyLabel: string;
   getCheckKey: (item: ReadingItem) => string;
   getHref: (item: ReadingItem) => string;
@@ -99,6 +97,16 @@ function resolveAvailableReadingType(type: ReadingType, availableTypes: ReadingT
   return availableTypes[0] ?? 'vsi';
 }
 
+function resolvePreferredReadingType(
+  availableTypes: ReadingType[],
+  currentType?: ReadingType,
+): ReadingType {
+  const storedType = getReadingPreference();
+  if (availableTypes.includes(storedType)) return storedType;
+  if (currentType && availableTypes.includes(currentType)) return currentType;
+  return availableTypes[0] ?? 'vsi';
+}
+
 function emptyStateMessage(type: ReadingType, hideChecked: boolean): string {
   if (hideChecked) {
     return `No ${READING_TYPE_UI_META[type].label} recommendations remain visible with checked items hidden.`;
@@ -119,9 +127,7 @@ export default function TopReadings({
     {
       type: 'vsi',
       items: vsi,
-      title: `Oxford VSI Recommendations (${vsi.length})`,
-      browseHref: `${baseUrl}/vsi#vsi-library`,
-      browseLabel: 'Browse all Oxford VSI books',
+      title: 'Recommendations',
       whyLabel: 'Why this book?',
       getCheckKey: (item) => vsiChecklistKey(item.title, item.author || ''),
       getHref: (item) => `${baseUrl}/vsi/${slugify(item.title)}`,
@@ -130,9 +136,7 @@ export default function TopReadings({
     {
       type: 'iot',
       items: iot,
-      title: `BBC In Our Time Episodes (${iot.length})`,
-      browseHref: `${baseUrl}/iot#iot-library`,
-      browseLabel: 'Browse all BBC In Our Time episodes',
+      title: 'Recommendations',
       whyLabel: 'Why this episode?',
       getCheckKey: (item) => iotChecklistKey(item.pid || item.title),
       getHref: (item) => item.pid ? `${baseUrl}/iot/${item.pid}` : `${baseUrl}/iot`,
@@ -141,9 +145,7 @@ export default function TopReadings({
     {
       type: 'wikipedia',
       items: wiki,
-      title: `Wikipedia Article Recommendations (${wiki.length})`,
-      browseHref: `${baseUrl}/wikipedia#wikipedia-library`,
-      browseLabel: 'Browse all Wikipedia articles',
+      title: 'Recommendations',
       whyLabel: 'Why this article?',
       getCheckKey: (item) => wikipediaChecklistKey(item.title),
       getHref: (item) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
@@ -152,9 +154,7 @@ export default function TopReadings({
     {
       type: 'macropaedia',
       items: macro,
-      title: `Macropaedia Reading List (${macro.length})`,
-      browseHref: `${baseUrl}/macropaedia#macropaedia-library`,
-      browseLabel: 'Browse all Macropaedia articles',
+      title: 'Recommendations',
       whyLabel: 'Why this article?',
       getCheckKey: (item) => macropaediaChecklistKey(item.title),
       getHref: (item) => `${baseUrl}/macropaedia/${slugify(item.title)}`,
@@ -165,12 +165,12 @@ export default function TopReadings({
   const availableTypes = sections.map((section) => section.type);
   const availableTypesKey = availableTypes.join('|');
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
-  const [readingPref, setReadingPrefState] = useState<ReadingType>(() => resolveAvailableReadingType(getReadingPreference(), availableTypes));
+  const [readingPref, setReadingPrefState] = useState<ReadingType>(() => resolvePreferredReadingType(availableTypes));
   const [hideChecked, setHideChecked] = useState(() => getHideCheckedReadings());
 
   useEffect(() => {
     if (!availableTypes.length) return;
-    setReadingPrefState((current) => resolveAvailableReadingType(current, availableTypes));
+    setReadingPrefState((current) => resolvePreferredReadingType(availableTypes, current));
   }, [availableTypesKey]);
 
   useEffect(() => {
@@ -232,25 +232,18 @@ export default function TopReadings({
       />
 
       <section class="rounded-2xl border border-amber-200 bg-amber-50/70 p-4 sm:p-5">
-        <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-          <div class="min-w-0">
-            <h2 class="text-sm font-medium uppercase tracking-wide text-amber-800">
-              {activeSection.title}
-            </h2>
-          </div>
-          <div class="flex flex-wrap items-center gap-3 text-xs">
-            <a
-              href={activeSection.browseHref}
-              class="font-semibold uppercase tracking-[0.18em] text-amber-900 hover:text-amber-950"
-            >
-              {activeSection.browseLabel}
-            </a>
-          </div>
+        <div class="min-w-0">
+          <h2 class="flex items-baseline gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-amber-800">
+            <span>{activeSection.title}</span>
+            <span class="text-[0.68rem] font-medium tracking-[0.12em] text-amber-900/70">
+              ({visibleItems.length})
+            </span>
+          </h2>
         </div>
 
         <div class="mt-4">
           {visibleItems.length > 0 ? (
-            <HorizontalCardScroll>
+            <HorizontalCardScroll singleCardOnMobile>
               {visibleItems.map((item) => {
                 const checkKey = activeSection.getCheckKey(item);
                 const isChecked = Boolean(checklistState[checkKey]);

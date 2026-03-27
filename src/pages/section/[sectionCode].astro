@@ -3,6 +3,7 @@ import BaseLayout from '../../components/layout/BaseLayout.astro';
 import StickySubheading from '../../components/layout/StickySubheading.astro';
 import OutlineTree from '../../components/content/OutlineTree';
 import SectionReadingRecommendations from '../../components/content/SectionReadingRecommendations';
+import ReadingRecommendationsFallback from '../../components/content/ReadingRecommendationsFallback.astro';
 import { getCollection } from 'astro:content';
 import { sectionReferenceUrl } from '../../utils/helpers';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
@@ -148,7 +149,7 @@ const outlineText = collectOutlineText(section.outline).trim();
           </p>
         </div>
         <SectionReadingRecommendations
-          client:load
+          client:only="preact"
           vsiMappings={vsiMappings}
           wikiArticles={wikiArticlesForSection}
           iotEpisodes={iotEpisodesForSection}
@@ -157,7 +158,13 @@ const outlineText = collectOutlineText(section.outline).trim();
           sectionTitle={section.title}
           sectionOutlineText={outlineText}
           baseUrl={base}
-        />
+        >
+          <ReadingRecommendationsFallback
+            slot="fallback"
+            message="Loading mapped recommendations..."
+            hint="Topic filtering will be available once this panel loads."
+          />
+        </SectionReadingRecommendations>
       </div>
 
       <!-- Referenced by other sections -->

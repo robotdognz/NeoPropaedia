@@ -60,8 +60,6 @@ type KnowledgeLevel = 1 | 2 | 3;
 
 interface ActiveSectionRecommendationPanel {
   title: string;
-  browseHref: string;
-  browseLabel: string;
   totalCount: number;
   visibleCount: number;
   toolbarLabel?: string;
@@ -82,6 +80,16 @@ function getStoredLevel(): KnowledgeLevel {
 
 function resolveAvailableReadingType(type: ReadingType, availableTypes: ReadingType[]): ReadingType {
   if (availableTypes.includes(type)) return type;
+  return availableTypes[0] ?? 'vsi';
+}
+
+function resolvePreferredReadingType(
+  availableTypes: ReadingType[],
+  currentType?: ReadingType,
+): ReadingType {
+  const storedType = getReadingPreference();
+  if (availableTypes.includes(storedType)) return storedType;
+  if (currentType && availableTypes.includes(currentType)) return currentType;
   return availableTypes[0] ?? 'vsi';
 }
 
@@ -117,7 +125,7 @@ export default function SectionReadingRecommendations({
   };
   const availableTypes = READING_TYPE_ORDER.filter((type) => typeCounts[type] > 0);
   const availableTypesKey = availableTypes.join('|');
-  const [selectedType, setSelectedType] = useState<ReadingType>(() => resolveAvailableReadingType(getReadingPreference(), availableTypes));
+  const [selectedType, setSelectedType] = useState<ReadingType>(() => resolvePreferredReadingType(availableTypes));
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
   const [hideChecked, setHideChecked] = useState(() => getHideCheckedReadings());
@@ -127,7 +135,7 @@ export default function SectionReadingRecommendations({
 
   useEffect(() => {
     if (!availableTypes.length) return;
-    setSelectedType((current) => resolveAvailableReadingType(current, availableTypes));
+    setSelectedType((current) => resolvePreferredReadingType(availableTypes, current));
   }, [availableTypesKey]);
 
   useEffect(() => {
@@ -193,13 +201,11 @@ export default function SectionReadingRecommendations({
         : Math.max(...scoredMappings.map((mapping) => mapping.relevanceScore ?? 0), 1);
 
       return {
-        title: `Oxford VSI Recommendations (${vsiMappings.length})`,
-        browseHref: `${baseUrl}/vsi#vsi-library`,
-        browseLabel: 'Browse all Oxford VSI books',
+        title: 'Recommendations',
         totalCount: vsiMappings.length,
         visibleCount: displayMappings.length,
         body: displayMappings.length > 0 ? (
-          <HorizontalCardScroll>
+          <HorizontalCardScroll singleCardOnMobile>
             {displayMappings.map((mapping, index) => {
               const checklistKey = vsiChecklistKey(mapping.vsiTitle, mapping.vsiAuthor);
               const relevanceScore = mapping.filterScore ?? mapping.relevanceScore ?? 0;
@@ -247,14 +253,12 @@ export default function SectionReadingRecommendations({
         : Math.max(...displayArticles.map((article) => article.matchPercent || 0), 1);
 
       return {
-        title: `Wikipedia Article Recommendations (${levelFiltered.length})`,
-        browseHref: `${baseUrl}/wikipedia#wikipedia-library`,
-        browseLabel: 'Browse all Wikipedia articles',
+        title: 'Recommendations',
         toolbarLabel: `Showing ${wikipediaLevelLabel(wikiLevel)}`,
         totalCount: levelFiltered.length,
         visibleCount: displayArticles.length,
         body: displayArticles.length > 0 ? (
-          <HorizontalCardScroll>
+          <HorizontalCardScroll singleCardOnMobile>
             {displayArticles.map((article) => {
               const checklistKey = wikipediaChecklistKey(article.title);
               const precision = mappingPrecisionBadge(
@@ -300,13 +304,11 @@ export default function SectionReadingRecommendations({
         : Math.max(...displayEpisodes.map((episode) => episode.matchPercent || 0), 1);
 
       return {
-        title: `BBC In Our Time Episodes (${iotEpisodes.length})`,
-        browseHref: `${baseUrl}/iot#iot-library`,
-        browseLabel: 'Browse all BBC In Our Time episodes',
+        title: 'Recommendations',
         totalCount: iotEpisodes.length,
         visibleCount: displayEpisodes.length,
         body: displayEpisodes.length > 0 ? (
-          <HorizontalCardScroll>
+          <HorizontalCardScroll singleCardOnMobile>
             {displayEpisodes.map((episode) => {
               const checklistKey = iotChecklistKey(episode.pid);
               const precision = mappingPrecisionBadge(
@@ -348,9 +350,7 @@ export default function SectionReadingRecommendations({
       : macropaediaReferences;
 
     return {
-      title: `Macropaedia Reading List (${macropaediaReferences.length})`,
-      browseHref: `${baseUrl}/macropaedia#macropaedia-library`,
-      browseLabel: 'Browse all Macropaedia articles',
+      title: 'Recommendations',
       totalCount: macropaediaReferences.length,
       visibleCount: visibleReferences.length,
       selectionNotice: selection
@@ -435,25 +435,22 @@ export default function SectionReadingRecommendations({
       />
 
       <section class={recommendationPanelClass()}>
-        <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
           <div class="min-w-0">
-            <h2 class="text-sm font-medium uppercase tracking-wide text-amber-800">
-              {headerMeta.title}
+            <h2 class="flex items-baseline gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-amber-800">
+              <span>{headerMeta.title}</span>
+              <span class="text-[0.68rem] font-medium tracking-[0.12em] text-amber-900/70">
+                ({headerMeta.visibleCount})
+              </span>
             </h2>
           </div>
-          <div class="flex flex-wrap items-center gap-3 text-xs">
-            {headerMeta.toolbarLabel ? (
+          {headerMeta.toolbarLabel ? (
+            <div class="flex flex-wrap items-center gap-3 text-xs">
               <span class="font-medium text-amber-900/75">
                 {headerMeta.toolbarLabel}
               </span>
-            ) : null}
-            <a
-              href={headerMeta.browseHref}
-              class="font-semibold uppercase tracking-[0.18em] text-amber-900 hover:text-amber-950"
-            >
-              {headerMeta.browseLabel}
-            </a>
-          </div>
+            </div>
+          ) : null}
         </div>
 
         {selection ? (

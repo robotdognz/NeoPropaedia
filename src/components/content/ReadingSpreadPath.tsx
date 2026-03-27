@@ -107,7 +107,7 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
 
       {isOpen && steps.length > 0 ? (
         <div class="mt-5">
-        <HorizontalCardScroll>
+        <HorizontalCardScroll singleCardOnMobile>
           {steps.map((step, index) => {
             const isChecked = Boolean(checklistState[step.checklistKey]);
             const newPartsSpanned = countPartsSpanned(step.newSections);

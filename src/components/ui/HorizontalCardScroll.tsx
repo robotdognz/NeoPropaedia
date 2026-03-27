@@ -1,16 +1,20 @@
 import { h, type ComponentChildren } from 'preact';
-import { useRef, useState, useEffect, useCallback } from 'preact/hooks';
+import { useRef, useState, useEffect, useCallback, useLayoutEffect } from 'preact/hooks';
 
 interface HorizontalCardScrollProps {
   children: ComponentChildren;
   cardMinWidth?: number;
+  singleCardOnMobile?: boolean;
 }
 
 const DRAG_THRESHOLD = 5;
+const MOBILE_BREAKPOINT = 540;
+const MOBILE_CARD_GUTTER = 12;
 
 export default function HorizontalCardScroll({
   children,
   cardMinWidth = 280,
+  singleCardOnMobile = false,
 }: HorizontalCardScrollProps) {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -41,18 +45,20 @@ export default function HorizontalCardScroll({
     const wrapper = wrapperRef.current;
     if (!wrapper) return;
     const available = wrapper.clientWidth;
-    const cw = Math.min(cardMinWidth, available - 12);
-    setCardWidth(cw);
-    // Add centering padding only if doing so results in exactly one card visible
-    // (i.e. the gap between cards fills or exceeds the remaining space after centering)
-    const GAP = 16;
-    const halfPad = (available - cw) / 2;
-    const secondCardPeeks = GAP < halfPad;
-    const pad = secondCardPeeks ? 0 : Math.max(0, Math.floor(halfPad));
-    setEdgePad(pad);
-  }, [cardMinWidth]);
+    const isSingleCardMobile = singleCardOnMobile && available < MOBILE_BREAKPOINT;
+    if (isSingleCardMobile) {
+      const inset = Math.max(0, Math.floor(MOBILE_CARD_GUTTER / 2));
+      const cw = Math.max(0, available - MOBILE_CARD_GUTTER);
+      setCardWidth(cw);
+      setEdgePad(inset);
+      return;
+    }
 
-  useEffect(() => {
+    setCardWidth(Math.max(0, Math.min(cardMinWidth, available - 12)));
+    setEdgePad(0);
+  }, [cardMinWidth, singleCardOnMobile]);
+
+  useLayoutEffect(() => {
     const el = scrollRef.current;
     const wrapper = wrapperRef.current;
     if (!el || !wrapper) return;

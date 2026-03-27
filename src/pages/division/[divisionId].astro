@@ -3,6 +3,7 @@ import BaseLayout from '../../components/layout/BaseLayout.astro';
 import StickySubheading from '../../components/layout/StickySubheading.astro';
 import NotesDisclosure from '../../components/content/NotesDisclosure.astro';
 import TopReadings from '../../components/content/TopReadings';
+import ReadingRecommendationsFallback from '../../components/content/ReadingRecommendationsFallback.astro';
 import { getCollection } from 'astro:content';
 import { loadIotTopReadings } from '../../utils/iotTopReadings';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
@@ -126,7 +127,7 @@ const partTextColors: Record<number, string> = {
       {(divReadings || divisionIotReadings.length > 0) && (
         <section id="readings" class="mt-10 scroll-mt-24">
           <TopReadings
-            client:load
+            client:only="preact"
             vsi={divReadings?.vsi}
             wiki={divReadings?.wiki}
             iot={divReadings?.iot ?? divisionIotReadings}
@@ -134,7 +135,9 @@ const partTextColors: Record<number, string> = {
             baseUrl={base}
             contextLabel="this Division"
             countLabel="Sections"
-          />
+          >
+            <ReadingRecommendationsFallback slot="fallback" />
+          </TopReadings>
         </section>
       )}
 
