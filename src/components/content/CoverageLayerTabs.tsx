@@ -5,12 +5,19 @@ import {
   type CoverageLayer,
   type LayerCoverageSnapshot,
 } from '../../utils/readingLibrary';
+import SelectorCardRail from '../ui/SelectorCardRail';
 
 const LAYER_DESCRIPTIONS: Record<CoverageLayer, string> = {
   part: 'Build a broad foundation across the ten major fields.',
   division: 'Cover the main strands within those fields before you narrow further.',
   section: 'Reach more named topics across the outline.',
   subsection: 'Push into the top-level subsection headings inside each Section.',
+};
+const LAYER_ACCENT_COLORS: Record<CoverageLayer, string> = {
+  part: '#6366f1',
+  division: '#8b5cf6',
+  section: '#a78bfa',
+  subsection: '#c4b5fd',
 };
 
 interface CoverageLayerTabsProps {
@@ -44,31 +51,19 @@ export default function CoverageLayerTabs({
           ) : null}
         </div>
       </div>
-      <div class="mt-3 flex flex-wrap gap-2" role="tablist" aria-label="Coverage layer">
-        {snapshots.map((snapshot) => {
-          const isActive = snapshot.layer === activeLayer;
-          const meta = COVERAGE_LAYER_META[snapshot.layer];
-
-          return (
-            <button
-              key={snapshot.layer}
-              type="button"
-              role="tab"
-              aria-selected={isActive}
-              onClick={() => onSelect(snapshot.layer)}
-              class={`rounded-full border px-3 py-2 text-sm transition-colors ${
-                isActive
-                  ? 'border-gray-900 bg-gray-900 text-white'
-                  : 'border-gray-300 bg-white text-gray-700 hover:border-gray-400 hover:bg-gray-50'
-              }`}
-            >
-              <span class="font-medium">{meta.label}</span>
-              <span class={`ml-2 text-xs ${isActive ? 'text-gray-200' : 'text-gray-500'}`}>
-                {snapshot.currentlyCoveredCount}/{snapshot.totalCoverageCount}
-              </span>
-            </button>
-          );
-        })}
+      <div class="mt-3">
+        <SelectorCardRail
+          ariaLabel="Coverage layer"
+          value={activeLayer}
+          options={snapshots.map((snapshot) => ({
+            value: snapshot.layer,
+            label: COVERAGE_LAYER_META[snapshot.layer].pluralLabel,
+            meta: `${snapshot.currentlyCoveredCount}/${snapshot.totalCoverageCount}`,
+            accentColor: LAYER_ACCENT_COLORS[snapshot.layer],
+          }))}
+          onChange={onSelect}
+          size="compact"
+        />
       </div>
     </section>
   );

@@ -7,6 +7,8 @@ import {
   getCoverageLayerPreference,
   getReadingPreference,
   READING_TYPE_LABELS,
+  READING_TYPE_ORDER,
+  READING_TYPE_UI_META,
   setCoverageLayerPreference,
   setReadingPreference,
   subscribeCoverageLayerPreference,
@@ -29,6 +31,7 @@ import {
 import ReadingSpreadPath from './ReadingSpreadPath';
 import CoverageRings from '../ui/CoverageRings';
 import PartCoverageRing from '../ui/PartCoverageRing';
+import ReadingSelectionStrip from '../ui/ReadingSelectionStrip';
 
 interface PartMeta {
   partNumber: number;
@@ -44,7 +47,6 @@ interface HomepageCoverageExplorerProps {
   framed?: boolean;
 }
 
-const SOURCE_ORDER: ReadingType[] = ['vsi', 'iot', 'wikipedia', 'macropaedia'];
 const ALL_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
 const DEFAULT_SUPPORTED_LAYERS: CoverageLayer[] = ['part', 'division', 'section'];
 const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
@@ -52,6 +54,12 @@ const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
   Divisions: 'division',
   Sections: 'section',
   Subsections: 'subsection',
+};
+const LAYER_ACCENT_COLORS: Record<CoverageLayer, string> = {
+  part: '#6366f1',
+  division: '#8b5cf6',
+  section: '#a78bfa',
+  subsection: '#c4b5fd',
 };
 
 interface StagedCoverageDisplay {
@@ -292,147 +300,79 @@ export default function HomepageCoverageExplorer({
     ? 'rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7'
     : undefined;
   const topSpacingClass = showHeader ? 'mt-4' : '';
+  const typeOptions = READING_TYPE_ORDER.map((type) => ({
+    value: type,
+    eyebrow: READING_TYPE_UI_META[type].eyebrow,
+    label: READING_TYPE_UI_META[type].label,
+    accentColor: READING_TYPE_UI_META[type].accentColor,
+  }));
+  const layerOptions = ALL_LAYERS.map((layer) => {
+    const snapshot = tabSnapshots.find((candidate) => candidate.layer === layer);
+
+    return {
+      value: layer,
+      label: COVERAGE_LAYER_META[layer].pluralLabel,
+      meta: snapshot ? `${snapshot.currentlyCoveredCount}/${snapshot.totalCoverageCount}` : undefined,
+      accentColor: LAYER_ACCENT_COLORS[layer],
+      disabled: !supportedLayers.includes(layer),
+    };
+  });
+  const selectType = (type: ReadingType) => {
+    setSelectedType(type);
+    setReadingPreference(type);
+    if (errorType === type) {
+      setErrorType(null);
+      loadingRef.current.delete(type);
+    }
+    void ensureSourceLoaded(type);
+  };
+  const selectLayer = (layer: CoverageLayer) => {
+    if (!supportedLayers.includes(layer)) return;
+    setSelectedLayer(layer);
+    setCoverageLayerPreference(layer);
+  };
+  const selectionStrip = (
+    <ReadingSelectionStrip
+      readingTypeValue={selectedType}
+      readingTypeOptions={typeOptions}
+      onReadingTypeChange={selectType}
+      readingTypeAriaLabel="Whole outline reading type"
+      coverageLayerValue={activeLayer}
+      coverageLayerOptions={layerOptions}
+      onCoverageLayerChange={selectLayer}
+      coverageLayerAriaLabel="Whole outline coverage layer"
+    />
+  );
 
   return (
     <section class={wrapperClass}>
       {showHeader ? (
         <div class="space-y-3 border-b border-slate-200 pb-4">
-          <div class="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
-            <div class="max-w-3xl space-y-2">
-              <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
-                Whole Outline
-              </p>
-              <h2 class="text-3xl font-serif font-bold text-slate-900">
-                Coverage-First Reading Paths
-              </h2>
-            </div>
-
-            <div class="space-y-1.5 lg:max-w-xl">
-              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500 lg:text-right">
-                Reading Type
-              </p>
-              <div class="flex flex-wrap gap-2 lg:justify-end">
-                {SOURCE_ORDER.map((type) => {
-                  const isActive = type === selectedType;
-                  return (
-                    <button
-                      key={type}
-                      type="button"
-                      onClick={() => {
-                        setSelectedType(type);
-                        setReadingPreference(type);
-                        if (errorType === type) {
-                          setErrorType(null);
-                          loadingRef.current.delete(type);
-                        }
-                        void ensureSourceLoaded(type);
-                      }}
-                      class={`inline-flex items-center rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
-                        isActive
-                          ? 'border-slate-900 bg-slate-900 text-white'
-                          : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-100'
-                      }`}
-                    >
-                      {READING_TYPE_LABELS[type]}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
+          <div class="max-w-3xl space-y-2">
+            <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-slate-500">
+              Whole Outline
+            </p>
+            <h2 class="text-3xl font-serif font-bold text-slate-900">
+              Coverage-First Reading Paths
+            </h2>
           </div>
         </div>
       ) : null}
 
-      {errorType === selectedType ? (
-        <div class={`${topSpacingClass} rounded-xl border border-red-200 bg-red-50 px-4 py-5 text-sm text-red-700`}>
-          Could not load the {READING_TYPE_LABELS[selectedType]} coverage data right now.
-        </div>
-      ) : null}
+      <div class={`${topSpacingClass} space-y-4`}>
+        {selectionStrip}
 
-      {!source && loadingType === selectedType ? (
-        <div class={`${topSpacingClass} rounded-xl border border-slate-200 bg-slate-50 px-4 py-5 text-sm text-slate-600`}>
-          Loading the {READING_TYPE_LABELS[selectedType]} coverage path...
-        </div>
-      ) : source ? (
-        <div class={`${topSpacingClass} space-y-4`}>
-          {!showHeader ? (
-            <section class="space-y-2">
-              <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-                Reading Type
-              </p>
-              <div class="flex flex-wrap gap-2">
-                {SOURCE_ORDER.map((type) => {
-                  const isActive = type === selectedType;
-                  return (
-                    <button
-                      key={type}
-                      type="button"
-                      onClick={() => {
-                        setSelectedType(type);
-                        setReadingPreference(type);
-                        if (errorType === type) {
-                          setErrorType(null);
-                          loadingRef.current.delete(type);
-                        }
-                        void ensureSourceLoaded(type);
-                      }}
-                      class={`inline-flex items-center rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
-                        isActive
-                          ? 'border-slate-900 bg-slate-900 text-white'
-                          : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-100'
-                      }`}
-                    >
-                      {READING_TYPE_LABELS[type]}
-                    </button>
-                  );
-                })}
-              </div>
-            </section>
-          ) : null}
+        {errorType === selectedType ? (
+          <div class="rounded-xl border border-red-200 bg-red-50 px-4 py-5 text-sm text-red-700">
+            Could not load the {READING_TYPE_LABELS[selectedType]} coverage data right now.
+          </div>
+        ) : null}
 
-          <section class="space-y-2">
-            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-              Outline Layer
-            </p>
-            <div class="flex flex-wrap gap-2" role="tablist" aria-label="Coverage layer">
-              {ALL_LAYERS.map((layer) => {
-                const isActive = layer === activeLayer;
-                const isSupported = supportedLayers.includes(layer);
-                const meta = COVERAGE_LAYER_META[layer];
-                const snapshot = tabSnapshots.find(s => s.layer === layer);
-
-                return (
-                  <button
-                    key={layer}
-                    type="button"
-                    role="tab"
-                    aria-selected={isActive}
-                    disabled={!isSupported}
-                    onClick={() => {
-                      if (!isSupported) return;
-                      setSelectedLayer(layer);
-                      setCoverageLayerPreference(layer);
-                    }}
-                    class={`rounded-full border px-3 py-1.5 text-sm transition-colors ${
-                      !isSupported
-                        ? 'border-slate-200 bg-slate-50 text-slate-300 cursor-default'
-                        : isActive
-                          ? 'border-slate-900 bg-slate-900 text-white'
-                          : 'border-slate-300 bg-white text-slate-700 hover:border-slate-400 hover:bg-slate-50'
-                    }`}
-                  >
-                    <span class="font-medium">{meta.label}</span>
-                    {snapshot && (
-                      <span class={`ml-2 text-xs ${!isSupported ? 'text-slate-300' : isActive ? 'text-slate-200' : 'text-slate-500'}`}>
-                        {snapshot.currentlyCoveredCount}/{snapshot.totalCoverageCount}
-                      </span>
-                    )}
-                  </button>
-                );
-              })}
-            </div>
-          </section>
-
+        {!source && loadingType === selectedType ? (
+          <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-5 text-sm text-slate-600">
+            Loading the {READING_TYPE_LABELS[selectedType]} coverage path...
+          </div>
+        ) : source ? (
           <div class="space-y-3">
             <section class="grid gap-3 lg:grid-cols-2">
               <div class="rounded-xl border border-slate-200 bg-white p-4">
@@ -564,8 +504,8 @@ export default function HomepageCoverageExplorer({
               sectionLinksVariant="chips"
             />
           </div>
-        </div>
-      ) : null}
+        ) : null}
+      </div>
     </section>
   );
 }

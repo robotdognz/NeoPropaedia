@@ -37,17 +37,17 @@ export interface SectionMeta {
 
 export type CircleNavigatorVsiEntry = Pick<
   VsiAggregateEntry,
-  'title' | 'author' | 'checklistKey' | 'sectionCount' | 'sections'
+  'title' | 'author' | 'checklistKey' | 'sectionCount' | 'sections' | 'progressSubsectionKeys'
 >;
 
 export type CircleNavigatorWikipediaEntry = Pick<
   WikipediaAggregateEntry,
-  'title' | 'displayTitle' | 'url' | 'lowestLevel' | 'checklistKey' | 'sectionCount' | 'sections'
+  'title' | 'displayTitle' | 'url' | 'lowestLevel' | 'checklistKey' | 'sectionCount' | 'sections' | 'progressSubsectionKeys'
 >;
 
 export type CircleNavigatorIotEntry = Pick<
   IotAggregateEntry,
-  'pid' | 'title' | 'url' | 'datePublished' | 'durationSeconds' | 'checklistKey' | 'sectionCount' | 'sections'
+  'pid' | 'title' | 'url' | 'datePublished' | 'durationSeconds' | 'checklistKey' | 'sectionCount' | 'sections' | 'progressSubsectionKeys'
 >;
 
 export type CircleNavigatorMacropaediaEntry = Pick<

@@ -8,11 +8,40 @@ export type ReadingType = 'vsi' | 'wikipedia' | 'iot' | 'macropaedia';
 const STORAGE_KEY = 'propaedia-reading-preference';
 const CHANGE_EVENT = 'propaedia:reading-preference-change';
 
+export const READING_TYPE_ORDER: ReadingType[] = ['vsi', 'iot', 'wikipedia', 'macropaedia'];
+
 export const READING_TYPE_LABELS: Record<ReadingType, string> = {
   vsi: 'Oxford VSI',
   wikipedia: 'Wikipedia',
   iot: 'BBC In Our Time',
   macropaedia: 'Macropaedia',
+};
+
+export const READING_TYPE_UI_META: Record<ReadingType, {
+  eyebrow: string;
+  label: string;
+  accentColor: string;
+}> = {
+  vsi: {
+    eyebrow: 'Books',
+    label: 'Oxford VSI',
+    accentColor: '#4f46e5',
+  },
+  iot: {
+    eyebrow: 'Audio',
+    label: 'In Our Time',
+    accentColor: '#ea580c',
+  },
+  wikipedia: {
+    eyebrow: 'Reference',
+    label: 'Wikipedia',
+    accentColor: '#0f172a',
+  },
+  macropaedia: {
+    eyebrow: 'Britannica',
+    label: 'Macropaedia',
+    accentColor: '#0f766e',
+  },
 };
 
 export function getReadingPreference(): ReadingType {

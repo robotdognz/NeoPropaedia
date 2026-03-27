@@ -4,6 +4,10 @@ import iotCatalog from '../../data/iot-catalog.json';
 import wikiCatalog from '../../data/wikipedia-catalog.json';
 import type { CircleNavigatorPartRecommendations } from '../../components/content/circleNavigatorShared';
 import {
+  analyzeProgressSubsectionCoverage,
+  buildSectionOutlinePathIndex,
+} from '../../utils/outlineCoverage';
+import {
   buildIotAggregateEntries,
   buildMacropaediaAggregateEntries,
   buildVsiAggregateEntries,
@@ -35,39 +39,69 @@ async function loadAnchoredReadingMap(): Promise<Map<number, CircleNavigatorPart
       const sectionLookup = new Map<string, ReadingSectionSummary>(
         sectionSummaries.map((section) => [section.sectionCode, section])
       );
+      const sectionOutlinePathIndex = buildSectionOutlinePathIndex(
+        sections.map((entry) => entry.data)
+      );
 
-      const articleSectionCodes = new Map<string, Set<string>>();
+      const articleCoverage = new Map<string, {
+        sectionCodes: Set<string>;
+        progressSubsectionKeys: Set<string>;
+      }>();
       for (const mapping of wikiMappings) {
         for (const article of mapping.data.mappings) {
-          if (!articleSectionCodes.has(article.articleTitle)) {
-            articleSectionCodes.set(article.articleTitle, new Set());
+          if (!articleCoverage.has(article.articleTitle)) {
+            articleCoverage.set(article.articleTitle, {
+              sectionCodes: new Set(),
+              progressSubsectionKeys: new Set(),
+            });
           }
-          articleSectionCodes.get(article.articleTitle)!.add(mapping.data.sectionCode);
+          const coverage = articleCoverage.get(article.articleTitle)!;
+          coverage.sectionCodes.add(mapping.data.sectionCode);
+          const progressCoverage = analyzeProgressSubsectionCoverage(
+            mapping.data.sectionCode,
+            article.relevantPathsAI,
+            sectionOutlinePathIndex
+          );
+          progressCoverage.coverageKeys.forEach((key) => coverage.progressSubsectionKeys.add(key));
         }
       }
 
       const wikiArticles = (wikiCatalog as any).articles.map((article: any) => ({
         ...article,
-        sectionCodes: [...(articleSectionCodes.get(article.title) || [])],
+        sectionCodes: [...(articleCoverage.get(article.title)?.sectionCodes || [])],
+        progressSubsectionKeys: [...(articleCoverage.get(article.title)?.progressSubsectionKeys || [])],
       }));
 
       const iotCatalogLookup = new Map((iotCatalog as any).episodes.map((episode: any) => [episode.pid, episode]));
-      const episodeSectionCodes = new Map<string, Set<string>>();
+      const episodeCoverage = new Map<string, {
+        sectionCodes: Set<string>;
+        progressSubsectionKeys: Set<string>;
+      }>();
       const episodeTitleLookup = new Map<string, string>();
 
       for (const mapping of iotMappings) {
         for (const episode of mapping.data.mappings) {
-          if (!episodeSectionCodes.has(episode.pid)) {
-            episodeSectionCodes.set(episode.pid, new Set());
+          if (!episodeCoverage.has(episode.pid)) {
+            episodeCoverage.set(episode.pid, {
+              sectionCodes: new Set(),
+              progressSubsectionKeys: new Set(),
+            });
           }
-          episodeSectionCodes.get(episode.pid)!.add(mapping.data.sectionCode);
+          const coverage = episodeCoverage.get(episode.pid)!;
+          coverage.sectionCodes.add(mapping.data.sectionCode);
+          const progressCoverage = analyzeProgressSubsectionCoverage(
+            mapping.data.sectionCode,
+            episode.relevantPathsAI,
+            sectionOutlinePathIndex
+          );
+          progressCoverage.coverageKeys.forEach((key) => coverage.progressSubsectionKeys.add(key));
           if (!episodeTitleLookup.has(episode.pid)) {
             episodeTitleLookup.set(episode.pid, episode.episodeTitle);
           }
         }
       }
 
-      const iotEpisodes = Array.from(episodeSectionCodes.entries()).map(([pid, sectionCodes]) => {
+      const iotEpisodes = Array.from(episodeCoverage.entries()).map(([pid, coverage]) => {
         const catalogEntry = iotCatalogLookup.get(pid);
 
         return {
@@ -78,7 +112,8 @@ async function loadAnchoredReadingMap(): Promise<Map<number, CircleNavigatorPart
           summaryAI: catalogEntry?.summaryAI,
           datePublished: catalogEntry?.datePublished,
           durationSeconds: catalogEntry?.durationSeconds,
-          sectionCodes: [...sectionCodes],
+          sectionCodes: [...coverage.sectionCodes],
+          progressSubsectionKeys: [...coverage.progressSubsectionKeys],
         };
       });
 
@@ -92,6 +127,7 @@ async function loadAnchoredReadingMap(): Promise<Map<number, CircleNavigatorPart
         checklistKey: entry.checklistKey,
         sectionCount: entry.sectionCount,
         sections: entry.sections,
+        progressSubsectionKeys: entry.progressSubsectionKeys,
       }));
 
       const wikiEntries = buildWikipediaAggregateEntries(wikiArticles, sectionLookup).map((entry) => ({
@@ -102,6 +138,7 @@ async function loadAnchoredReadingMap(): Promise<Map<number, CircleNavigatorPart
         checklistKey: entry.checklistKey,
         sectionCount: entry.sectionCount,
         sections: entry.sections,
+        progressSubsectionKeys: entry.progressSubsectionKeys,
       }));
 
       const iotEntries = buildIotAggregateEntries(iotEpisodes, sectionLookup).map((entry) => ({
@@ -113,6 +150,7 @@ async function loadAnchoredReadingMap(): Promise<Map<number, CircleNavigatorPart
         checklistKey: entry.checklistKey,
         sectionCount: entry.sectionCount,
         sections: entry.sections,
+        progressSubsectionKeys: entry.progressSubsectionKeys,
       }));
 
       const macroEntries = buildMacropaediaAggregateEntries(sections.map((entry) => entry.data)).map((entry) => ({

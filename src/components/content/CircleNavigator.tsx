@@ -1,7 +1,24 @@
 import { h } from 'preact';
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { useCoverageLayerPreferenceState } from '../../hooks/useCoverageLayerPreferenceState';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import { useReadingPreferenceState } from '../../hooks/useReadingPreferenceState';
+import ReadingSelectionStrip from '../ui/ReadingSelectionStrip';
+import type { HomepageCoverageSource } from '../../utils/homepageCoverageTypes';
+import {
+  READING_TYPE_ORDER,
+  READING_TYPE_UI_META,
+  setCoverageLayerPreference,
+  setReadingPreference,
+  type ReadingType,
+} from '../../utils/readingPreference';
+import {
+  COVERAGE_LAYER_ORDER,
+  COVERAGE_LAYER_META,
+  buildLayerCoverageSnapshot,
+  completedChecklistKeysFromState,
+  type CoverageLayer,
+} from '../../utils/readingLibrary';
 import {
   CenteredCircleNavigatorPanel,
   TopPartCircleNavigatorPanel,
@@ -44,6 +61,34 @@ const SEGMENT_GAP_PX = 7;
 const SEGMENT_CORNER_RADIUS = 6;
 const MORPH_POINT_COUNT = 40;
 const STORAGE_KEY = 'propaedia-circle-navigator-v1';
+const CIRCLE_LAYER_ACCENT_COLORS: Record<CoverageLayer, string> = {
+  part: '#6366f1',
+  division: '#8b5cf6',
+  section: '#a78bfa',
+  subsection: '#c4b5fd',
+};
+const homepageCoverageSourceCache = new Map<ReadingType, HomepageCoverageSource>();
+
+function joinBaseUrl(baseUrl: string, path: string): string {
+  return `${baseUrl.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
+}
+
+async function loadHomepageCoverageSource(
+  type: ReadingType,
+  baseUrl: string,
+): Promise<HomepageCoverageSource> {
+  const cached = homepageCoverageSourceCache.get(type);
+  if (cached) return cached;
+
+  const response = await fetch(joinBaseUrl(baseUrl, `home-coverage/${type}.json`));
+  if (!response.ok) {
+    throw new Error(`Unable to load coverage source for ${type}.`);
+  }
+
+  const source = await response.json() as HomepageCoverageSource;
+  homepageCoverageSourceCache.set(type, source);
+  return source;
+}
 
 function polar(cx: number, cy: number, radius: number, degrees: number) {
   const radians = ((degrees - 90) * Math.PI) / 180;
@@ -273,6 +318,10 @@ function getPartLabelLayout(angle: number, title: string) {
   };
 }
 
+function floatingLabelStartY(labelY: number, lineCount: number) {
+  return labelY - Math.max(0, lineCount - 1) * 7;
+}
+
 type DragState = {
   pointerId: number;
   activePartNumber: number;
@@ -377,10 +426,23 @@ export default function CircleNavigator({
   const [centerHasFocus, setCenterHasFocus] = useState(false);
   const checklistState = useReadingChecklistState();
   const readingPref = useReadingPreferenceState();
+  const selectedCoverageLayer = useCoverageLayerPreferenceState();
+  const [coverageSourceCache, setCoverageSourceCache] = useState<Partial<Record<ReadingType, HomepageCoverageSource>>>(() => {
+    const initialCache: Partial<Record<ReadingType, HomepageCoverageSource>> = {};
+    READING_TYPE_ORDER.forEach((type) => {
+      const cached = homepageCoverageSourceCache.get(type);
+      if (cached) {
+        initialCache[type] = cached;
+      }
+    });
+    return initialCache;
+  });
   const [hasLoadedState, setHasLoadedState] = useState(false);
   const [centerPartNumber, setCenterPartNumber] = useState<number | null>(null);
   const [rotationDegrees, setRotationDegrees] = useState(0);
   const rotationDegreesRef = useRef(0);
+  const coverageSourceCacheRef = useRef(coverageSourceCache);
+  const coverageSourceLoadingRef = useRef<Set<ReadingType>>(new Set());
   // selectedPartNumber removed — focus is always topPart (no centre) or centerPart (with centre)
   const [centerPreviewPartNumber, setCenterPreviewPartNumber] = useState<number | null>(null);
   const [morphT, setMorphT] = useState(0);
@@ -406,6 +468,8 @@ export default function CircleNavigator({
   const removeMorphAnimRef = useRef<number | null>(null);
   const removeMorphFromTRef = useRef(0);
   const removeMorphStartTimeRef = useRef(0);
+
+  coverageSourceCacheRef.current = coverageSourceCache;
 
   const setRotationDegreesState = (nextRotation: number) => {
     rotationDegreesRef.current = nextRotation;
@@ -575,6 +639,31 @@ export default function CircleNavigator({
     }
   }, [parts]);
 
+  async function ensureCoverageSourceLoaded(type: ReadingType) {
+    if (coverageSourceCacheRef.current[type]) return;
+    if (coverageSourceLoadingRef.current.has(type)) return;
+
+    coverageSourceLoadingRef.current.add(type);
+    try {
+      const source = await loadHomepageCoverageSource(type, baseUrl);
+      setCoverageSourceCache((current) => {
+        if (current[type]) return current;
+        return {
+          ...current,
+          [type]: source,
+        };
+      });
+    } catch {
+      // Leave counts hidden if the auxiliary source cannot be loaded.
+    } finally {
+      coverageSourceLoadingRef.current.delete(type);
+    }
+  }
+
+  useEffect(() => {
+    void ensureCoverageSourceLoaded(readingPref);
+  }, [baseUrl, readingPref]);
+
   useEffect(() => {
     if (!hasLoadedState || typeof window === 'undefined') return;
 
@@ -628,6 +717,10 @@ export default function CircleNavigator({
   const showCenterDiscOutline = removeMorphT === 0 && (
     isCenterSwapPreviewActive
     || ((hasCenter || (morphT > 0.9 && morphPartNumber !== null)) && !isCenterPreviewActive)
+  );
+  const completedChecklistKeys = useMemo(
+    () => completedChecklistKeysFromState(checklistState),
+    [checklistState],
   );
   const centerTitleLines = centerDisplayPart ? wrapLabel(centerDisplayPart.title, 14, 2) : [];
   const connectionSummary = hasCenter ? summarizeConnections(connections, sectionMeta, centerPartNumber, topPartNumber) : null;
@@ -1193,6 +1286,61 @@ export default function CircleNavigator({
   const handleCenterAction = hasCenter
     ? removeFromCenter
     : () => animateToCenter(topPart.partNumber);
+  const circleSupportedLayers = useMemo<CoverageLayer[]>(
+    () => (readingPref === 'macropaedia'
+      ? ['part', 'division', 'section']
+      : ['part', 'division', 'section', 'subsection']),
+    [readingPref],
+  );
+  const circleActiveLayer = circleSupportedLayers.includes(selectedCoverageLayer)
+    ? selectedCoverageLayer
+    : selectedCoverageLayer === 'subsection' && circleSupportedLayers.includes('section')
+      ? 'section'
+      : circleSupportedLayers[0];
+  const circleCoverageSource = coverageSourceCache[readingPref] ?? null;
+  const circleCoverageSnapshotMeta = useMemo(() => {
+    if (!circleCoverageSource) return new Map<CoverageLayer, string>();
+
+    return new Map(
+      circleSupportedLayers.map((layer) => {
+        const snapshot = buildLayerCoverageSnapshot(
+          circleCoverageSource.entries,
+          completedChecklistKeys,
+          layer,
+        );
+
+        return [layer, `${snapshot.currentlyCoveredCount}/${snapshot.totalCoverageCount}`] as const;
+      }),
+    );
+  }, [circleCoverageSource, circleSupportedLayers, completedChecklistKeys]);
+  const readingTypeOptions = READING_TYPE_ORDER.map((type) => ({
+    value: type,
+    eyebrow: READING_TYPE_UI_META[type].eyebrow,
+    label: READING_TYPE_UI_META[type].label,
+    accentColor: READING_TYPE_UI_META[type].accentColor,
+  }));
+  const coverageLayerOptions = COVERAGE_LAYER_ORDER.map((layer) => ({
+    value: layer,
+    label: COVERAGE_LAYER_META[layer].pluralLabel,
+    meta: circleCoverageSnapshotMeta.get(layer),
+    accentColor: CIRCLE_LAYER_ACCENT_COLORS[layer],
+    disabled: !circleSupportedLayers.includes(layer),
+  }));
+  const selectionControls = (
+    <ReadingSelectionStrip
+      readingTypeValue={readingPref}
+      readingTypeOptions={readingTypeOptions}
+      onReadingTypeChange={(type) => setReadingPreference(type)}
+      readingTypeAriaLabel="Selected fields reading type"
+      coverageLayerValue={circleActiveLayer}
+      coverageLayerOptions={coverageLayerOptions}
+      onCoverageLayerChange={(layer) => {
+        if (!circleSupportedLayers.includes(layer)) return;
+        setCoverageLayerPreference(layer);
+      }}
+      coverageLayerAriaLabel="Selected fields coverage layer"
+    />
+  );
 
   return (
     <div class="space-y-3 sm:space-y-4">
@@ -1235,7 +1383,7 @@ export default function CircleNavigator({
               type="button"
               onClick={handleCenterAction}
               aria-label={centerActionAriaLabel}
-              class="inline-flex h-full items-center gap-3 rounded-[1rem] border border-slate-200/80 bg-slate-50/90 px-3 text-left text-slate-700 shadow-sm shadow-slate-200/60 transition hover:-translate-y-px hover:border-slate-300 hover:bg-slate-50 active:translate-y-0 active:scale-[0.99] sm:px-4"
+              class="inline-flex h-full items-center gap-2 rounded-[1rem] border border-slate-200/80 bg-slate-50/90 px-2.5 text-left text-slate-700 shadow-sm shadow-slate-200/60 transition hover:-translate-y-px hover:border-slate-300 hover:bg-slate-50 active:translate-y-0 active:scale-[0.99] sm:gap-3 sm:px-4"
             >
               <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-slate-500 ring-1 ring-inset ring-slate-200/80 sm:h-10 sm:w-10">
                 {hasCenter ? (
@@ -1251,10 +1399,10 @@ export default function CircleNavigator({
                 )}
               </span>
               <span class="min-w-0 flex-1">
-                <span class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-400">
+                <span class="block text-[9px] font-semibold uppercase tracking-[0.14em] text-slate-400 sm:text-[10px] sm:tracking-[0.16em]">
                   Centre mode
                 </span>
-                <span class="mt-0.5 block truncate text-sm font-medium text-slate-800 sm:text-[15px]">
+                <span class="mt-0.5 block truncate text-[13px] font-medium text-slate-800 sm:text-[14px]">
                   {centerActionTitle}
                 </span>
               </span>
@@ -1452,7 +1600,7 @@ export default function CircleNavigator({
                   <circle cx={connectorEnd.x} cy={connectorEnd.y} r={3.5} fill={part.colorHex} />
                   <text
                     x={labelX}
-                    y={labelPosition.y - (labelLines.length * 8)}
+                    y={floatingLabelStartY(labelPosition.y, labelLines.length)}
                     fill={topWeight > 0.5 ? '#0f172a' : '#334155'}
                     font-size={`${lerp(12, 13, topWeight)}`}
                     font-family="Inter, sans-serif"
@@ -1460,13 +1608,10 @@ export default function CircleNavigator({
                     letter-spacing="0.12em"
                     text-anchor={textAnchor}
                   >
-                    <tspan x={labelX} dy="0">
-                      {part.partName.toUpperCase()}
-                    </tspan>
                     {labelLines.map((line, lineIndex) => (
                       <tspan
                         x={labelX}
-                        dy={lineIndex === 0 ? 16 : 14}
+                        dy={lineIndex === 0 ? 0 : 14}
                         font-size={`${lerp(14, 15, topWeight)}`}
                         font-weight={topWeight > 0.5 ? '700' : '600'}
                         letter-spacing="0"
@@ -1619,7 +1764,7 @@ export default function CircleNavigator({
                 <circle cx={tConnEnd.x} cy={tConnEnd.y} r={3.5} fill={centerPart.colorHex} />
                 <text
                   x={tLabelX}
-                  y={tLabelPos.y - (tLabelLines.length * 8)}
+                  y={floatingLabelStartY(tLabelPos.y, tLabelLines.length)}
                   fill={tTopWeight > 0.5 ? '#0f172a' : '#334155'}
                   font-size={`${lerp(12, 13, tTopWeight)}`}
                   font-family="Inter, sans-serif"
@@ -1627,13 +1772,10 @@ export default function CircleNavigator({
                   letter-spacing="0.12em"
                   text-anchor={tTextAnchor}
                 >
-                  <tspan x={tLabelX} dy="0">
-                    {centerPart.partName.toUpperCase()}
-                  </tspan>
                   {tLabelLines.map((line, lineIndex) => (
                     <tspan
                       x={tLabelX}
-                      dy={lineIndex === 0 ? 16 : 14}
+                      dy={lineIndex === 0 ? 0 : 14}
                       font-size={`${lerp(14, 15, tTopWeight)}`}
                       font-weight={tTopWeight > 0.5 ? '700' : '600'}
                       letter-spacing="0"
@@ -1720,7 +1862,7 @@ export default function CircleNavigator({
                 <circle cx={rmConnectorEnd.x} cy={rmConnectorEnd.y} r={3.5} fill={centerPart.colorHex} />
                 <text
                   x={rmLabelX}
-                  y={rmLabelPos.y - (rmLabelLines.length * 8)}
+                  y={floatingLabelStartY(rmLabelPos.y, rmLabelLines.length)}
                   fill={rmTopWeight > 0.5 ? '#0f172a' : '#334155'}
                   font-size={`${lerp(12, 13, rmTopWeight)}`}
                   font-family="Inter, sans-serif"
@@ -1728,13 +1870,10 @@ export default function CircleNavigator({
                   letter-spacing="0.12em"
                   text-anchor={rmTextAnchor}
                 >
-                  <tspan x={rmLabelX} dy="0">
-                    {centerPart.partName.toUpperCase()}
-                  </tspan>
                   {rmLabelLines.map((line, lineIndex) => (
                     <tspan
                       x={rmLabelX}
-                      dy={lineIndex === 0 ? 16 : 14}
+                      dy={lineIndex === 0 ? 0 : 14}
                       font-size={`${lerp(14, 15, rmTopWeight)}`}
                       font-weight={rmTopWeight > 0.5 ? '700' : '600'}
                       letter-spacing="0"
@@ -1908,16 +2047,20 @@ export default function CircleNavigator({
             connectionSummary={connectionSummary}
             suggestedSections={suggestedSections}
             readingPref={readingPref}
+            activeLayer={circleActiveLayer}
             checklistState={checklistState}
             baseUrl={baseUrl}
+            selectionControls={selectionControls}
           />
         ) : (
           <TopPartCircleNavigatorPanel
             topPart={topPart}
             topPartNumber={topPartNumber}
             readingPref={readingPref}
+            activeLayer={circleActiveLayer}
             checklistState={checklistState}
             baseUrl={baseUrl}
+            selectionControls={selectionControls}
           />
         )}
       </div>

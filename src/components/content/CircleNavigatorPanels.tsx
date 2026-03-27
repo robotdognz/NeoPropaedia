@@ -6,14 +6,16 @@ import {
 import type { ReadingType } from '../../utils/readingPreference';
 import { divisionUrl, sectionUrl, slugify } from '../../utils/helpers';
 import {
-  buildIotCoverageSnapshot,
-  buildMacropaediaCoverageSnapshot,
-  buildVsiCoverageSnapshot,
-  buildWikipediaCoverageSnapshot,
   type ReadingSectionSummary,
 } from '../../utils/readingData';
 import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
-import { completedChecklistKeysFromState } from '../../utils/readingLibrary';
+import {
+  buildLayerCoverageSnapshot,
+  completedChecklistKeysFromState,
+  coverageLayerLabel,
+  type CoverageLayer,
+  type LayerCoverageSnapshot,
+} from '../../utils/readingLibrary';
 import ReadingSpreadPath from './ReadingSpreadPath';
 import type {
   CircleNavigatorIotEntry,
@@ -33,16 +35,20 @@ interface CenteredCircleNavigatorPanelProps {
   connectionSummary: ConnectionSummary | null;
   suggestedSections: ConnectionSummary['sections'];
   readingPref: ReadingType;
+  activeLayer: CoverageLayer;
   checklistState: Record<string, boolean>;
   baseUrl: string;
+  selectionControls?: ComponentChildren;
 }
 
 interface TopPartCircleNavigatorPanelProps {
   topPart: CircleNavigatorPart;
   topPartNumber: number;
   readingPref: ReadingType;
+  activeLayer: CoverageLayer;
   checklistState: Record<string, boolean>;
   baseUrl: string;
+  selectionControls?: ComponentChildren;
 }
 
 type AnchoredEntryBase = {
@@ -50,37 +56,15 @@ type AnchoredEntryBase = {
   checklistKey: string;
   sectionCount: number;
   sections: ReadingSectionSummary[];
-};
-
-type AnchoredRecommendationItem<TEntry extends AnchoredEntryBase> = {
-  entry: TEntry;
-  newSectionCount: number;
-  cumulativeCoveredSectionCount: number;
-  newSections: ReadingSectionSummary[];
-  isCompleted: boolean;
-};
-
-type AnchoredRecommendationResult<TEntry extends AnchoredEntryBase> = {
-  unreadItems: AnchoredRecommendationItem<TEntry>[];
-  completedItems: AnchoredRecommendationItem<TEntry>[];
-  overlapOnlyUnreadCount: number;
-  totalUnreadLinkedCount: number;
+  progressSubsectionKeys?: string[];
 };
 
 interface AnchoredRecommendationSectionConfig<TEntry extends AnchoredEntryBase> {
   type: ReadingType;
-  title: string;
-  browseHref: string;
-  browseLabel: string;
   itemSingular: string;
   totalCount: number;
-  unreadCount: number;
-  completedCount: number;
-  remainingSections: number;
-  overlapOnlyUnreadCount: number;
-  totalUnreadLinkedCount: number;
-  unreadItems: AnchoredRecommendationItem<TEntry>[];
-  completedItems: AnchoredRecommendationItem<TEntry>[];
+  supportedLayers: CoverageLayer[];
+  layerSnapshots: Partial<Record<CoverageLayer, LayerCoverageSnapshot<TEntry>>>;
   getHref: (item: TEntry) => string;
   getLabel?: (item: TEntry) => string;
   renderMeta?: (item: TEntry) => ComponentChildren;
@@ -131,69 +115,82 @@ function intersectSharedEntries<TEntry extends AnchoredEntryBase>(
   });
 }
 
-function buildAnchoredRecommendationItems<TEntry extends AnchoredEntryBase>(
-  entries: TEntry[],
-  checklistState: Record<string, boolean>,
-  snapshot: {
-    currentlyCoveredSections: number;
-    totalCoveredSections: number;
-    path: Array<{
-      checklistKey: string;
-      newSectionCount: number;
-      cumulativeCoveredSectionCount: number;
-      newSections: ReadingSectionSummary[];
-    }>;
-  }
-): AnchoredRecommendationResult<TEntry> {
-  const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
-  const entryLookup = new Map(entries.map((entry) => [entry.checklistKey, entry]));
-
-  const unreadItems = snapshot.path.flatMap((step) => {
-    const entry = entryLookup.get(step.checklistKey);
-    if (!entry || completedChecklistKeys.has(step.checklistKey)) return [];
-    return [{
-      entry,
-      newSectionCount: step.newSectionCount,
-      cumulativeCoveredSectionCount: step.cumulativeCoveredSectionCount,
-      newSections: step.newSections,
-      isCompleted: false,
-    }];
-  });
-
-  const totalUnreadLinkedCount = entries.filter((entry) => !completedChecklistKeys.has(entry.checklistKey)).length;
-  const overlapOnlyUnreadCount = totalUnreadLinkedCount - unreadItems.length;
-
-  const completedItems = entries
-    .filter((entry) => completedChecklistKeys.has(entry.checklistKey))
-    .map((entry) => ({
-      entry,
-      newSectionCount: 0,
-      cumulativeCoveredSectionCount: snapshot.currentlyCoveredSections,
-      newSections: [],
-      isCompleted: true,
-    }));
-
-  return { unreadItems, completedItems, overlapOnlyUnreadCount, totalUnreadLinkedCount };
+function supportedLayersForReadingType(type: ReadingType): CoverageLayer[] {
+  return type === 'macropaedia'
+    ? ['part', 'division', 'section']
+    : ['part', 'division', 'section', 'subsection'];
 }
 
 function buildSpreadPathFromRecommendations<TEntry extends AnchoredEntryBase>(
   activeSection: AnchoredRecommendationSectionConfig<TEntry> | undefined,
+  activeLayer: CoverageLayer,
 ) {
-  if (!activeSection) return { steps: [] as Array<{ title: string; checklistKey: string; sectionCount: number; sections: ReadingSectionSummary[]; newCoverageCount: number; cumulativeCoveredCount: number; newSections: ReadingSectionSummary[]; href: string; meta: ComponentChildren }>, remaining: 0 };
+  if (!activeSection) {
+    return {
+      steps: [] as Array<{ title: string; checklistKey: string; sectionCount: number; sections: ReadingSectionSummary[]; newCoverageCount: number; cumulativeCoveredCount: number; newSections: ReadingSectionSummary[]; href: string; meta: ComponentChildren }>,
+      remaining: 0,
+      resolvedLayer: activeLayer,
+    };
+  }
 
-  const steps = activeSection.unreadItems.map((item) => ({
-    title: activeSection.getLabel ? activeSection.getLabel(item.entry) : item.entry.title,
-    checklistKey: item.entry.checklistKey,
-    sectionCount: item.entry.sectionCount,
-    sections: item.entry.sections,
-    newCoverageCount: item.newSectionCount,
-    cumulativeCoveredCount: item.cumulativeCoveredSectionCount,
-    newSections: item.newSections,
-    href: activeSection.getHref(item.entry),
-    meta: activeSection.renderMeta ? activeSection.renderMeta(item.entry) : undefined,
+  const resolvedLayer = activeSection.supportedLayers.includes(activeLayer)
+    ? activeLayer
+    : activeSection.supportedLayers[0] ?? activeLayer;
+  const snapshot = activeSection.layerSnapshots[resolvedLayer];
+  if (!snapshot) {
+    return {
+      steps: [] as Array<{ title: string; checklistKey: string; sectionCount: number; sections: ReadingSectionSummary[]; newCoverageCount: number; cumulativeCoveredCount: number; newSections: ReadingSectionSummary[]; href: string; meta: ComponentChildren }>,
+      remaining: 0,
+      resolvedLayer,
+    };
+  }
+
+  const steps = snapshot.path.map((step) => ({
+    title: activeSection.getLabel ? activeSection.getLabel(step.entry) : step.entry.title,
+    checklistKey: step.entry.checklistKey,
+    sectionCount: step.entry.sectionCount,
+    sections: step.entry.sections,
+    newCoverageCount: step.newCoverageCount,
+    cumulativeCoveredCount: step.cumulativeCoveredCount,
+    newSections: step.newSections,
+    href: activeSection.getHref(step.entry),
+    meta: activeSection.renderMeta ? activeSection.renderMeta(step.entry) : undefined,
   }));
 
-  return { steps, remaining: activeSection.remainingSections };
+  return { steps, remaining: snapshot.remainingCoverageCount, resolvedLayer };
+}
+
+function buildRecommendationSectionConfig<TEntry extends AnchoredEntryBase>(config: {
+  type: ReadingType;
+  itemSingular: string;
+  entries: TEntry[];
+  completedChecklistKeys: Set<string>;
+  getHref: (item: TEntry) => string;
+  getLabel?: (item: TEntry) => string;
+  renderMeta?: (item: TEntry) => ComponentChildren;
+}): AnchoredRecommendationSectionConfig<TEntry> | null {
+  if (config.entries.length === 0) return null;
+
+  const supportedLayers = supportedLayersForReadingType(config.type);
+  const layerSnapshots: Partial<Record<CoverageLayer, LayerCoverageSnapshot<TEntry>>> = {};
+  supportedLayers.forEach((layer) => {
+    layerSnapshots[layer] = buildLayerCoverageSnapshot(
+      config.entries,
+      config.completedChecklistKeys,
+      layer,
+    );
+  });
+
+  return {
+    type: config.type,
+    itemSingular: config.itemSingular,
+    totalCount: config.entries.length,
+    supportedLayers,
+    layerSnapshots,
+    getHref: config.getHref,
+    getLabel: config.getLabel,
+    renderMeta: config.renderMeta,
+  };
 }
 
 export function CenteredCircleNavigatorPanel({
@@ -204,8 +201,10 @@ export function CenteredCircleNavigatorPanel({
   connectionSummary,
   suggestedSections,
   readingPref,
+  activeLayer,
   checklistState,
   baseUrl,
+  selectionControls,
 }: CenteredCircleNavigatorPanelProps) {
   const [sharedPartRecommendations, setSharedPartRecommendations] = useState<{
     center: CircleNavigatorPartRecommendations;
@@ -256,103 +255,59 @@ export function CenteredCircleNavigatorPanel({
     const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
 
     const sharedVsiEntries = intersectSharedEntries(sharedPartRecommendations.center.vsi, sharedPartRecommendations.top.vsi);
-    const vsiSnapshot = buildVsiCoverageSnapshot(sharedVsiEntries, completedChecklistKeys);
-    const vsiRecommendations = buildAnchoredRecommendationItems(sharedVsiEntries, checklistState, vsiSnapshot);
-
     const sharedWikiEntries = intersectSharedEntries(sharedPartRecommendations.center.wiki, sharedPartRecommendations.top.wiki);
-    const wikiSnapshot = buildWikipediaCoverageSnapshot(sharedWikiEntries, completedChecklistKeys);
-    const wikiRecommendations = buildAnchoredRecommendationItems(sharedWikiEntries, checklistState, wikiSnapshot);
-
     const sharedIotEntries = intersectSharedEntries(sharedPartRecommendations.center.iot, sharedPartRecommendations.top.iot);
-    const iotSnapshot = buildIotCoverageSnapshot(sharedIotEntries, completedChecklistKeys);
-    const iotRecommendations = buildAnchoredRecommendationItems(sharedIotEntries, checklistState, iotSnapshot);
-
     const sharedMacroEntries = intersectSharedEntries(sharedPartRecommendations.center.macro, sharedPartRecommendations.top.macro);
-    const macroSnapshot = buildMacropaediaCoverageSnapshot(sharedMacroEntries, completedChecklistKeys);
-    const macroRecommendations = buildAnchoredRecommendationItems(sharedMacroEntries, checklistState, macroSnapshot);
-
     return [
-      {
-        type: 'vsi' as const,
-        title: 'Oxford VSI Recommendations',
-        browseHref: `${baseUrl}/vsi#vsi-library`,
-        browseLabel: 'Browse all Oxford VSI books',
+      buildRecommendationSectionConfig({
+        type: 'vsi',
         itemSingular: 'book',
-        totalCount: sharedVsiEntries.length,
-        unreadCount: vsiRecommendations.unreadItems.length,
-        completedCount: vsiRecommendations.completedItems.length,
-        remainingSections: vsiSnapshot.remainingSections,
-        overlapOnlyUnreadCount: vsiRecommendations.overlapOnlyUnreadCount,
-        totalUnreadLinkedCount: vsiRecommendations.totalUnreadLinkedCount,
-        unreadItems: vsiRecommendations.unreadItems,
-        completedItems: vsiRecommendations.completedItems,
+        entries: sharedVsiEntries,
+        completedChecklistKeys,
         getHref: (item: CircleNavigatorVsiEntry) => `${baseUrl}/vsi/${slugify(item.title)}`,
         renderMeta: (item: CircleNavigatorVsiEntry) => item.author,
-      },
-      {
-        type: 'iot' as const,
-        title: 'BBC In Our Time Episodes',
-        browseHref: `${baseUrl}/iot#iot-library`,
-        browseLabel: 'Browse all BBC In Our Time episodes',
+      }),
+      buildRecommendationSectionConfig({
+        type: 'iot',
         itemSingular: 'episode',
-        totalCount: sharedIotEntries.length,
-        unreadCount: iotRecommendations.unreadItems.length,
-        completedCount: iotRecommendations.completedItems.length,
-        remainingSections: iotSnapshot.remainingSections,
-        overlapOnlyUnreadCount: iotRecommendations.overlapOnlyUnreadCount,
-        totalUnreadLinkedCount: iotRecommendations.totalUnreadLinkedCount,
-        unreadItems: iotRecommendations.unreadItems,
-        completedItems: iotRecommendations.completedItems,
+        entries: sharedIotEntries,
+        completedChecklistKeys,
         getHref: (item: CircleNavigatorIotEntry) => `${baseUrl}/iot/${item.pid}`,
         renderMeta: (item: CircleNavigatorIotEntry) => formatIotEpisodeMeta(item),
-      },
-      {
-        type: 'wikipedia' as const,
-        title: 'Wikipedia Article Recommendations',
-        browseHref: `${baseUrl}/wikipedia#wikipedia-library`,
-        browseLabel: 'Browse all Wikipedia articles',
+      }),
+      buildRecommendationSectionConfig({
+        type: 'wikipedia',
         itemSingular: 'article',
-        totalCount: sharedWikiEntries.length,
-        unreadCount: wikiRecommendations.unreadItems.length,
-        completedCount: wikiRecommendations.completedItems.length,
-        remainingSections: wikiSnapshot.remainingSections,
-        overlapOnlyUnreadCount: wikiRecommendations.overlapOnlyUnreadCount,
-        totalUnreadLinkedCount: wikiRecommendations.totalUnreadLinkedCount,
-        unreadItems: wikiRecommendations.unreadItems,
-        completedItems: wikiRecommendations.completedItems,
+        entries: sharedWikiEntries,
+        completedChecklistKeys,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
         renderMeta: (item: CircleNavigatorWikipediaEntry) => `Vital Articles Level ${item.lowestLevel}`,
-      },
-      {
-        type: 'macropaedia' as const,
-        title: 'Macropaedia Reading List',
-        browseHref: `${baseUrl}/macropaedia#macropaedia-library`,
-        browseLabel: 'Browse all Macropaedia articles',
+      }),
+      buildRecommendationSectionConfig({
+        type: 'macropaedia',
         itemSingular: 'article',
-        totalCount: sharedMacroEntries.length,
-        unreadCount: macroRecommendations.unreadItems.length,
-        completedCount: macroRecommendations.completedItems.length,
-        remainingSections: macroSnapshot.remainingSections,
-        overlapOnlyUnreadCount: macroRecommendations.overlapOnlyUnreadCount,
-        totalUnreadLinkedCount: macroRecommendations.totalUnreadLinkedCount,
-        unreadItems: macroRecommendations.unreadItems,
-        completedItems: macroRecommendations.completedItems,
+        entries: sharedMacroEntries,
+        completedChecklistKeys,
         getHref: (item: CircleNavigatorMacropaediaEntry) => `${baseUrl}/macropaedia/${slugify(item.title)}`,
-      },
+      }),
     ]
-      .filter((section) => section.totalCount > 0)
+      .filter((section): section is AnchoredRecommendationSectionConfig<AnchoredEntryBase> => section !== null)
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
   }, [sharedPartRecommendations, checklistState, readingPref, baseUrl]);
 
   const activeRecommendation = recommendationSections.find(s => s.type === readingPref) ?? recommendationSections[0];
-  const { steps: spreadSteps, remaining: spreadRemaining } = buildSpreadPathFromRecommendations(activeRecommendation as AnchoredRecommendationSectionConfig<AnchoredEntryBase> | undefined);
+  const { steps: spreadSteps, remaining: spreadRemaining, resolvedLayer } = buildSpreadPathFromRecommendations(
+    activeRecommendation as AnchoredRecommendationSectionConfig<AnchoredEntryBase> | undefined,
+    activeLayer,
+  );
+  const resolvedLayerLabel = coverageLayerLabel(resolvedLayer, 2, { lowercase: true });
 
   return (
     <>
       <div class="mt-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2 shadow-sm sm:mt-5 sm:rounded-lg sm:px-5 sm:py-3">
         <p class="text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-          Readings linking <a href={essayHref(centerPart)} class="text-indigo-600 hover:text-indigo-800">{centerPart.title}</a> and <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how much new ground they cover across the outline.
+          Readings linking <a href={essayHref(centerPart)} class="text-indigo-600 hover:text-indigo-800">{centerPart.title}</a> and <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how much new {resolvedLayerLabel} they open across the outline.
         </p>
 
         {suggestedSections.length > 0 && (
@@ -397,6 +352,12 @@ export function CenteredCircleNavigatorPanel({
         )}
       </div>
 
+      {selectionControls ? (
+        <div class="mt-3">
+          {selectionControls}
+        </div>
+      ) : null}
+
       {spreadSteps.length > 0 && (
         <div class="mt-3">
         <ReadingSpreadPath
@@ -411,8 +372,8 @@ export function CenteredCircleNavigatorPanel({
           checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
           itemSingular={activeRecommendation?.itemSingular ?? 'item'}
           itemPlural={activeRecommendation?.itemSingular ? activeRecommendation.itemSingular + 's' : 'items'}
-          coverageUnitSingular="Section"
-          coverageUnitPlural="Sections"
+          coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
+          coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
           emptyMessage="No recommendations available."
           baseUrl={baseUrl}
           sectionLinksVariant="chips"
@@ -427,8 +388,10 @@ export function TopPartCircleNavigatorPanel({
   topPart,
   topPartNumber,
   readingPref,
+  activeLayer,
   checklistState,
   baseUrl,
+  selectionControls,
 }: TopPartCircleNavigatorPanelProps) {
   const [partRecommendations, setPartRecommendations] = useState<CircleNavigatorPartRecommendations | null>(
     () => partRecommendationCache.get(topPartNumber) ?? null
@@ -467,103 +430,59 @@ export function TopPartCircleNavigatorPanel({
     const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
 
     const anchoredVsiEntries = partRecommendations.vsi.filter((entry) => entry.sections.some(belongsToPart));
-    const vsiSnapshot = buildVsiCoverageSnapshot(anchoredVsiEntries, completedChecklistKeys);
-    const vsiRecommendations = buildAnchoredRecommendationItems(anchoredVsiEntries, checklistState, vsiSnapshot);
-
     const anchoredWikiEntries = partRecommendations.wiki.filter((entry) => entry.sections.some(belongsToPart));
-    const wikiSnapshot = buildWikipediaCoverageSnapshot(anchoredWikiEntries, completedChecklistKeys);
-    const wikiRecommendations = buildAnchoredRecommendationItems(anchoredWikiEntries, checklistState, wikiSnapshot);
-
     const anchoredIotEntries = partRecommendations.iot.filter((entry) => entry.sections.some(belongsToPart));
-    const iotSnapshot = buildIotCoverageSnapshot(anchoredIotEntries, completedChecklistKeys);
-    const iotRecommendations = buildAnchoredRecommendationItems(anchoredIotEntries, checklistState, iotSnapshot);
-
     const anchoredMacroEntries = partRecommendations.macro.filter((entry) => entry.sections.some(belongsToPart));
-    const macroSnapshot = buildMacropaediaCoverageSnapshot(anchoredMacroEntries, completedChecklistKeys);
-    const macroRecommendations = buildAnchoredRecommendationItems(anchoredMacroEntries, checklistState, macroSnapshot);
-
     return [
-      {
-        type: 'vsi' as const,
-        title: 'Oxford VSI Recommendations',
-        browseHref: `${baseUrl}/vsi#vsi-library`,
-        browseLabel: 'Browse all Oxford VSI books',
+      buildRecommendationSectionConfig({
+        type: 'vsi',
         itemSingular: 'book',
-        totalCount: anchoredVsiEntries.length,
-        unreadCount: vsiRecommendations.unreadItems.length,
-        completedCount: vsiRecommendations.completedItems.length,
-        remainingSections: vsiSnapshot.remainingSections,
-        overlapOnlyUnreadCount: vsiRecommendations.overlapOnlyUnreadCount,
-        totalUnreadLinkedCount: vsiRecommendations.totalUnreadLinkedCount,
-        unreadItems: vsiRecommendations.unreadItems,
-        completedItems: vsiRecommendations.completedItems,
+        entries: anchoredVsiEntries,
+        completedChecklistKeys,
         getHref: (item: CircleNavigatorVsiEntry) => `${baseUrl}/vsi/${slugify(item.title)}`,
         renderMeta: (item: CircleNavigatorVsiEntry) => item.author,
-      },
-      {
-        type: 'iot' as const,
-        title: 'BBC In Our Time Episodes',
-        browseHref: `${baseUrl}/iot#iot-library`,
-        browseLabel: 'Browse all BBC In Our Time episodes',
+      }),
+      buildRecommendationSectionConfig({
+        type: 'iot',
         itemSingular: 'episode',
-        totalCount: anchoredIotEntries.length,
-        unreadCount: iotRecommendations.unreadItems.length,
-        completedCount: iotRecommendations.completedItems.length,
-        remainingSections: iotSnapshot.remainingSections,
-        overlapOnlyUnreadCount: iotRecommendations.overlapOnlyUnreadCount,
-        totalUnreadLinkedCount: iotRecommendations.totalUnreadLinkedCount,
-        unreadItems: iotRecommendations.unreadItems,
-        completedItems: iotRecommendations.completedItems,
+        entries: anchoredIotEntries,
+        completedChecklistKeys,
         getHref: (item: CircleNavigatorIotEntry) => `${baseUrl}/iot/${item.pid}`,
         renderMeta: (item: CircleNavigatorIotEntry) => formatIotEpisodeMeta(item),
-      },
-      {
-        type: 'wikipedia' as const,
-        title: 'Wikipedia Article Recommendations',
-        browseHref: `${baseUrl}/wikipedia#wikipedia-library`,
-        browseLabel: 'Browse all Wikipedia articles',
+      }),
+      buildRecommendationSectionConfig({
+        type: 'wikipedia',
         itemSingular: 'article',
-        totalCount: anchoredWikiEntries.length,
-        unreadCount: wikiRecommendations.unreadItems.length,
-        completedCount: wikiRecommendations.completedItems.length,
-        remainingSections: wikiSnapshot.remainingSections,
-        overlapOnlyUnreadCount: wikiRecommendations.overlapOnlyUnreadCount,
-        totalUnreadLinkedCount: wikiRecommendations.totalUnreadLinkedCount,
-        unreadItems: wikiRecommendations.unreadItems,
-        completedItems: wikiRecommendations.completedItems,
+        entries: anchoredWikiEntries,
+        completedChecklistKeys,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
         renderMeta: (item: CircleNavigatorWikipediaEntry) => `Vital Articles Level ${item.lowestLevel}`,
-      },
-      {
-        type: 'macropaedia' as const,
-        title: 'Macropaedia Reading List',
-        browseHref: `${baseUrl}/macropaedia#macropaedia-library`,
-        browseLabel: 'Browse all Macropaedia articles',
+      }),
+      buildRecommendationSectionConfig({
+        type: 'macropaedia',
         itemSingular: 'article',
-        totalCount: anchoredMacroEntries.length,
-        unreadCount: macroRecommendations.unreadItems.length,
-        completedCount: macroRecommendations.completedItems.length,
-        remainingSections: macroSnapshot.remainingSections,
-        overlapOnlyUnreadCount: macroRecommendations.overlapOnlyUnreadCount,
-        totalUnreadLinkedCount: macroRecommendations.totalUnreadLinkedCount,
-        unreadItems: macroRecommendations.unreadItems,
-        completedItems: macroRecommendations.completedItems,
+        entries: anchoredMacroEntries,
+        completedChecklistKeys,
         getHref: (item: CircleNavigatorMacropaediaEntry) => `${baseUrl}/macropaedia/${slugify(item.title)}`,
-      },
+      }),
     ]
-      .filter((section) => section.totalCount > 0)
+      .filter((section): section is AnchoredRecommendationSectionConfig<AnchoredEntryBase> => section !== null)
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
   }, [topPartNumber, readingPref, checklistState, partRecommendations, baseUrl]);
 
   const activeRecommendation = recommendationSections.find(s => s.type === readingPref) ?? recommendationSections[0];
-  const { steps: spreadSteps, remaining: spreadRemaining } = buildSpreadPathFromRecommendations(activeRecommendation as AnchoredRecommendationSectionConfig<AnchoredEntryBase> | undefined);
+  const { steps: spreadSteps, remaining: spreadRemaining, resolvedLayer } = buildSpreadPathFromRecommendations(
+    activeRecommendation as AnchoredRecommendationSectionConfig<AnchoredEntryBase> | undefined,
+    activeLayer,
+  );
+  const resolvedLayerLabel = coverageLayerLabel(resolvedLayer, 2, { lowercase: true });
 
   return (
     <>
       <div class="mt-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2 shadow-sm sm:mt-5 sm:rounded-lg sm:px-5 sm:py-3">
         <p class="text-sm font-serif leading-6 text-slate-700 sm:text-base sm:leading-7">
-          Readings for <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how much new ground they cover across the outline.
+          Readings for <a href={essayHref(topPart)} class="text-indigo-600 hover:text-indigo-800">{topPart.title}</a>, ordered by how much new {resolvedLayerLabel} they open across the outline.
         </p>
 
         {topPart.divisions.length > 0 && (
@@ -607,6 +526,12 @@ export function TopPartCircleNavigatorPanel({
         )}
       </div>
 
+      {selectionControls ? (
+        <div class="mt-3">
+          {selectionControls}
+        </div>
+      ) : null}
+
       {spreadSteps.length > 0 && (
         <div class="mt-3">
         <ReadingSpreadPath
@@ -621,8 +546,8 @@ export function TopPartCircleNavigatorPanel({
           checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
           itemSingular={activeRecommendation?.itemSingular ?? 'item'}
           itemPlural={activeRecommendation?.itemSingular ? activeRecommendation.itemSingular + 's' : 'items'}
-          coverageUnitSingular="Section"
-          coverageUnitPlural="Sections"
+          coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
+          coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
           emptyMessage="No recommendations available."
           baseUrl={baseUrl}
           sectionLinksVariant="chips"
