@@ -1,11 +1,8 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
-import IotRecommendations from '../../components/content/IotRecommendations';
 import StickySubheading from '../../components/layout/StickySubheading.astro';
 import OutlineTree from '../../components/content/OutlineTree';
-import MacropaediaRefs from '../../components/content/MacropaediaRefs';
-import WikipediaRefs from '../../components/content/WikipediaRefs';
-import VsiRecommendations from '../../components/content/VsiRecommendations';
+import SectionReadingRecommendations from '../../components/content/SectionReadingRecommendations';
 import { getCollection } from 'astro:content';
 import { sectionReferenceUrl } from '../../utils/helpers';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
@@ -63,6 +60,17 @@ const {
   wikiArticlesForSection,
   iotEpisodesForSection,
 } = await loadSectionReadingContext(section);
+
+function collectOutlineText(nodes: any[]): string {
+  let text = '';
+  (nodes || []).forEach((node: any) => {
+    text += ` ${node.text || ''}`;
+    text += collectOutlineText(node.children);
+  });
+  return text;
+}
+
+const outlineText = collectOutlineText(section.outline).trim();
 
 ---
 
@@ -139,76 +147,18 @@ const {
             Books, articles, and episodes mapped to this Section's outline. Click any outline item above to filter recommendations by topic.
           </p>
         </div>
-        <!-- VSI Recommendations -->
-        {vsiMappings.length > 0 && (() => {
-          function collectOutlineText(nodes: any[]): string {
-            let text = '';
-            (nodes || []).forEach((n: any) => { text += ' ' + (n.text || ''); text += collectOutlineText(n.children); });
-            return text;
-          }
-          const outlineText = collectOutlineText(section.outline).trim();
-          return (
-          <section data-reading-type="vsi">
-            <VsiRecommendations
-              client:load
-              mappings={vsiMappings}
-              sectionCode={section.sectionCode}
-              sectionTitle={section.title}
-              sectionOutlineText={outlineText}
-              baseUrl={base}
-            />
-          </section>
-          );
-        })()}
-
-        {iotEpisodesForSection.length > 0 && (
-          <section data-reading-type="iot">
-            <IotRecommendations
-              client:load
-              episodes={iotEpisodesForSection}
-              sectionCode={section.sectionCode}
-              baseUrl={base}
-            />
-          </section>
-        )}
-
-        <!-- Wikipedia Article Recommendations -->
-        {wikiArticlesForSection.length > 0 && (
-          <section data-reading-type="wikipedia">
-            <WikipediaRefs
-              client:load
-              articles={wikiArticlesForSection}
-              sectionCode={section.sectionCode}
-              baseUrl={base}
-            />
-          </section>
-        )}
-
-        <!-- Macropaedia References -->
-        {section.macropaediaReferences.length > 0 && (
-          <section data-reading-type="macropaedia">
-            <MacropaediaRefs
-              client:load
-              references={section.macropaediaReferences}
-              sectionCode={section.sectionCode}
-              baseUrl={base}
-            />
-          </section>
-        )}
+        <SectionReadingRecommendations
+          client:load
+          vsiMappings={vsiMappings}
+          wikiArticles={wikiArticlesForSection}
+          iotEpisodes={iotEpisodesForSection}
+          macropaediaReferences={section.macropaediaReferences}
+          sectionCode={section.sectionCode}
+          sectionTitle={section.title}
+          sectionOutlineText={outlineText}
+          baseUrl={base}
+        />
       </div>
-
-      <script is:inline>
-        (function() {
-          try {
-            var pref = localStorage.getItem('propaedia-reading-preference') || 'vsi';
-            var container = document.getElementById('readings');
-            if (!container) return;
-            container.querySelectorAll(':scope > [data-reading-type]').forEach(function(el) {
-              el.style.order = el.getAttribute('data-reading-type') === pref ? '-1' : '';
-            });
-          } catch(e) {}
-        })();
-      </script>
 
       <!-- Referenced by other sections -->
       {groupedReverseRefs.length > 0 && (

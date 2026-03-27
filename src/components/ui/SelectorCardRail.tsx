@@ -29,7 +29,9 @@ export default function SelectorCardRail<Value extends string = string>({
   size = 'regular',
 }: SelectorCardRailProps<Value>) {
   const isCompact = size === 'compact';
-  const layoutClass = options.length <= 2
+  const layoutClass = options.length <= 1
+    ? 'grid-cols-1'
+    : options.length <= 2
     ? 'grid-cols-2'
     : options.length === 3
       ? 'grid-cols-2 sm:grid-cols-3'

@@ -18,6 +18,13 @@ import type {
 } from './circleNavigatorShared';
 import { getConnectionKey } from './circleNavigatorShared';
 import { roundedDonutSliceBoundaryPoints, roundedDonutSlicePath } from '../../utils/donutPaths';
+import {
+  CONTROL_CARD_CLASS,
+  CONTROL_CARD_INTERACTIVE_CLASS,
+  CONTROL_LABEL_CLASS,
+  CONTROL_SURFACE_CLASS,
+  CONTROL_TITLE_CLASS,
+} from '../ui/controlTheme';
 
 const VIEWBOX_SIZE = 680;
 const VIEWBOX_INSET = 20;
@@ -1279,11 +1286,11 @@ export default function CircleNavigator({
 
   return (
     <div class="space-y-3 sm:space-y-4">
-      <div class="rounded-[1.35rem] border border-slate-200/80 bg-[linear-gradient(180deg,rgba(248,250,252,0.96),rgba(241,245,249,0.92))] p-2.5 shadow-sm shadow-slate-200/70 sm:rounded-[1.6rem] sm:p-3">
+      <div class={`${CONTROL_SURFACE_CLASS} p-2.5 sm:rounded-[1.6rem] sm:p-3`}>
         <div class="grid gap-2 sm:gap-2.5">
           <a
             href={focusPart.href}
-            class="group flex h-14 max-w-full items-center gap-3 rounded-[1rem] border border-white/80 bg-white/90 px-3 text-left shadow-sm shadow-slate-200/60 transition hover:border-slate-300 hover:bg-white sm:h-16 sm:px-4"
+            class={`group flex h-14 max-w-full items-center gap-3 rounded-[1rem] px-3 text-left sm:h-16 sm:px-4 ${CONTROL_CARD_CLASS} ${CONTROL_CARD_INTERACTIVE_CLASS}`}
           >
             <span
               class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full font-sans text-sm font-bold leading-none text-white shadow-sm sm:h-10 sm:w-10"
@@ -1292,10 +1299,10 @@ export default function CircleNavigator({
               {focusPart.partNumber}
             </span>
             <span class="min-w-0 flex-1">
-              <span class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-400">
+              <span class={`block ${CONTROL_LABEL_CLASS}`}>
                 Active field
               </span>
-              <span class="mt-0.5 block truncate font-serif text-sm font-bold text-slate-900 sm:text-[15px]">
+              <span class={`mt-0.5 block truncate font-serif text-sm font-bold sm:text-[15px] ${CONTROL_TITLE_CLASS}`}>
                 {focusPart.title}
               </span>
             </span>
@@ -1307,7 +1314,7 @@ export default function CircleNavigator({
             <button
               type="button"
               onClick={rotateLeft}
-              class="inline-flex h-full w-full items-center justify-center rounded-[1rem] border border-white/80 bg-white/90 text-slate-700 shadow-sm shadow-slate-200/60 transition hover:-translate-y-px hover:border-slate-300 hover:bg-white active:translate-y-0 active:scale-[0.98]"
+              class={`inline-flex h-full w-full items-center justify-center rounded-[1rem] text-slate-700 active:scale-[0.98] ${CONTROL_CARD_CLASS} ${CONTROL_CARD_INTERACTIVE_CLASS}`}
               aria-label="Rotate left"
             >
               <svg class="h-4 w-4 sm:h-4.5 sm:w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.75">
@@ -1318,7 +1325,7 @@ export default function CircleNavigator({
               type="button"
               onClick={handleCenterAction}
               aria-label={centerActionAriaLabel}
-              class="inline-flex h-full items-center gap-2 rounded-[1rem] border border-slate-200/80 bg-slate-50/90 px-2.5 text-left text-slate-700 shadow-sm shadow-slate-200/60 transition hover:-translate-y-px hover:border-slate-300 hover:bg-slate-50 active:translate-y-0 active:scale-[0.99] sm:gap-3 sm:px-4"
+              class={`inline-flex h-full items-center gap-2 rounded-[1rem] px-2.5 text-left text-slate-700 active:scale-[0.99] sm:gap-3 sm:px-4 ${CONTROL_CARD_CLASS} ${CONTROL_CARD_INTERACTIVE_CLASS}`}
             >
               <span class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white text-slate-500 ring-1 ring-inset ring-slate-200/80 sm:h-10 sm:w-10">
                 {hasCenter ? (
@@ -1337,7 +1344,7 @@ export default function CircleNavigator({
                 <span class="block text-[9px] font-semibold uppercase tracking-[0.14em] text-slate-400 sm:text-[10px] sm:tracking-[0.16em]">
                   Centre mode
                 </span>
-                <span class="mt-0.5 block truncate text-[13px] font-medium text-slate-800 sm:text-[14px]">
+                <span class="mt-0.5 block truncate text-[13px] font-medium text-slate-900 sm:text-[14px]">
                   {centerActionTitle}
                 </span>
               </span>
@@ -1345,7 +1352,7 @@ export default function CircleNavigator({
             <button
               type="button"
               onClick={rotateRight}
-              class="inline-flex h-full w-full items-center justify-center rounded-[1rem] border border-white/80 bg-white/90 text-slate-700 shadow-sm shadow-slate-200/60 transition hover:-translate-y-px hover:border-slate-300 hover:bg-white active:translate-y-0 active:scale-[0.98]"
+              class={`inline-flex h-full w-full items-center justify-center rounded-[1rem] text-slate-700 active:scale-[0.98] ${CONTROL_CARD_CLASS} ${CONTROL_CARD_INTERACTIVE_CLASS}`}
               aria-label="Rotate right"
             >
               <svg class="h-4 w-4 sm:h-4.5 sm:w-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.75">

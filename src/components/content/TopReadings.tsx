@@ -1,25 +1,29 @@
 import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import Accordion from '../ui/Accordion';
+import HorizontalCardScroll from '../ui/HorizontalCardScroll';
+import ReadingSelectionStrip from '../ui/ReadingSelectionStrip';
 import {
   iotChecklistKey,
+  macropaediaChecklistKey,
   readChecklistState,
   subscribeChecklistState,
-  writeChecklistState,
   vsiChecklistKey,
   wikipediaChecklistKey,
-  macropaediaChecklistKey,
+  writeChecklistState,
 } from '../../utils/readingChecklist';
 import {
-  getReadingPreference,
+  READING_TYPE_ORDER,
+  READING_TYPE_UI_META,
   getHideCheckedReadings,
+  getReadingPreference,
   setHideCheckedReadings,
+  setReadingPreference,
   subscribeHideCheckedReadings,
   subscribeReadingPreference,
   type ReadingType,
 } from '../../utils/readingPreference';
 import { slugify } from '../../utils/helpers';
-import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 
 export interface ReadingItem {
   title: string;
@@ -37,8 +41,20 @@ export interface TopReadingsProps {
   iot?: ReadingItem[];
   macro?: ReadingItem[];
   baseUrl: string;
-  contextLabel: string; // e.g., "this part" or "this division"
-  countLabel: string; // e.g., "divisions" or "sections"
+  contextLabel: string;
+  countLabel: string;
+}
+
+interface TopReadingSection {
+  type: ReadingType;
+  items: ReadingItem[];
+  title: string;
+  browseHref: string;
+  browseLabel: string;
+  whyLabel: string;
+  getCheckKey: (item: ReadingItem) => string;
+  getHref: (item: ReadingItem) => string;
+  showAuthor: boolean;
 }
 
 function matchColor(percent: number): string {
@@ -78,23 +94,104 @@ function buildRationale(item: ReadingItem, countLabel: string, contextLabel: str
   return lines.join(' ');
 }
 
-export default function TopReadings({ vsi = [], wiki = [], iot = [], macro = [], baseUrl, contextLabel, countLabel }: TopReadingsProps) {
+function resolveAvailableReadingType(type: ReadingType, availableTypes: ReadingType[]): ReadingType {
+  if (availableTypes.includes(type)) return type;
+  return availableTypes[0] ?? 'vsi';
+}
+
+function emptyStateMessage(type: ReadingType, hideChecked: boolean): string {
+  if (hideChecked) {
+    return `No ${READING_TYPE_UI_META[type].label} recommendations remain visible with checked items hidden.`;
+  }
+  return `No ${READING_TYPE_UI_META[type].label} recommendations are available here right now.`;
+}
+
+export default function TopReadings({
+  vsi = [],
+  wiki = [],
+  iot = [],
+  macro = [],
+  baseUrl,
+  contextLabel,
+  countLabel,
+}: TopReadingsProps) {
+  const sections: TopReadingSection[] = [
+    {
+      type: 'vsi',
+      items: vsi,
+      title: `Oxford VSI Recommendations (${vsi.length})`,
+      browseHref: `${baseUrl}/vsi#vsi-library`,
+      browseLabel: 'Browse all Oxford VSI books',
+      whyLabel: 'Why this book?',
+      getCheckKey: (item) => vsiChecklistKey(item.title, item.author || ''),
+      getHref: (item) => `${baseUrl}/vsi/${slugify(item.title)}`,
+      showAuthor: true,
+    },
+    {
+      type: 'iot',
+      items: iot,
+      title: `BBC In Our Time Episodes (${iot.length})`,
+      browseHref: `${baseUrl}/iot#iot-library`,
+      browseLabel: 'Browse all BBC In Our Time episodes',
+      whyLabel: 'Why this episode?',
+      getCheckKey: (item) => iotChecklistKey(item.pid || item.title),
+      getHref: (item) => item.pid ? `${baseUrl}/iot/${item.pid}` : `${baseUrl}/iot`,
+      showAuthor: false,
+    },
+    {
+      type: 'wikipedia',
+      items: wiki,
+      title: `Wikipedia Article Recommendations (${wiki.length})`,
+      browseHref: `${baseUrl}/wikipedia#wikipedia-library`,
+      browseLabel: 'Browse all Wikipedia articles',
+      whyLabel: 'Why this article?',
+      getCheckKey: (item) => wikipediaChecklistKey(item.title),
+      getHref: (item) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
+      showAuthor: false,
+    },
+    {
+      type: 'macropaedia',
+      items: macro,
+      title: `Macropaedia Reading List (${macro.length})`,
+      browseHref: `${baseUrl}/macropaedia#macropaedia-library`,
+      browseLabel: 'Browse all Macropaedia articles',
+      whyLabel: 'Why this article?',
+      getCheckKey: (item) => macropaediaChecklistKey(item.title),
+      getHref: (item) => `${baseUrl}/macropaedia/${slugify(item.title)}`,
+      showAuthor: false,
+    },
+  ].filter((section) => section.items.length > 0);
+
+  const availableTypes = sections.map((section) => section.type);
+  const availableTypesKey = availableTypes.join('|');
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
-  const [readingPref, setReadingPref] = useState<ReadingType>(() => getReadingPreference());
+  const [readingPref, setReadingPrefState] = useState<ReadingType>(() => resolveAvailableReadingType(getReadingPreference(), availableTypes));
   const [hideChecked, setHideChecked] = useState(() => getHideCheckedReadings());
+
+  useEffect(() => {
+    if (!availableTypes.length) return;
+    setReadingPrefState((current) => resolveAvailableReadingType(current, availableTypes));
+  }, [availableTypesKey]);
 
   useEffect(() => {
     setChecklistState(readChecklistState());
     const unsubChecklist = subscribeChecklistState(() => setChecklistState(readChecklistState()));
-    const unsubPref = subscribeReadingPreference((type) => setReadingPref(type));
+    const unsubPref = subscribeReadingPreference((type) => setReadingPrefState(resolveAvailableReadingType(type, availableTypes)));
     const unsubHide = subscribeHideCheckedReadings((hide) => setHideChecked(hide));
-    return () => { unsubChecklist(); unsubPref(); unsubHide(); };
-  }, []);
+    return () => {
+      unsubChecklist();
+      unsubPref();
+      unsubHide();
+    };
+  }, [availableTypesKey]);
 
-  if (vsi.length === 0 && wiki.length === 0 && iot.length === 0 && macro.length === 0) return null;
+  if (sections.length === 0) return null;
 
-  // Use the pre-computed relevance score from the build script.
-  // Falls back to 100 if not available (shouldn't happen with current data).
+  const activeType = resolveAvailableReadingType(readingPref, availableTypes);
+  const activeSection = sections.find((section) => section.type === activeType) ?? sections[0];
+  const visibleItems = hideChecked
+    ? activeSection.items.filter((item) => !checklistState[activeSection.getCheckKey(item)])
+    : activeSection.items;
 
   return (
     <div class="space-y-4">
@@ -107,85 +204,123 @@ export default function TopReadings({ vsi = [], wiki = [], iot = [], macro = [],
         </p>
       </div>
 
-      {[
-        { type: 'vsi' as const, items: vsi, title: `Oxford VSI Recommendations (${vsi.length})`, browseHref: `${baseUrl}/vsi#vsi-library`, browseLabel: 'Browse all Oxford VSI books', whyLabel: 'Why this book?', getCheckKey: (item: ReadingItem) => vsiChecklistKey(item.title, item.author || ''), getHref: (item: ReadingItem) => `${baseUrl}/vsi/${slugify(item.title)}`, showAuthor: true },
-        { type: 'iot' as const, items: iot, title: `BBC In Our Time Episodes (${iot.length})`, browseHref: `${baseUrl}/iot#iot-library`, browseLabel: 'Browse all BBC In Our Time episodes', whyLabel: 'Why this episode?', getCheckKey: (item: ReadingItem) => iotChecklistKey(item.pid || item.title), getHref: (item: ReadingItem) => item.pid ? `${baseUrl}/iot/${item.pid}` : `${baseUrl}/iot`, showAuthor: false },
-        { type: 'wikipedia' as const, items: wiki, title: `Wikipedia Article Recommendations (${wiki.length})`, browseHref: `${baseUrl}/wikipedia#wikipedia-library`, browseLabel: 'Browse all Wikipedia articles', whyLabel: 'Why this article?', getCheckKey: (item: ReadingItem) => wikipediaChecklistKey(item.title), getHref: (item: ReadingItem) => `${baseUrl}/wikipedia/${slugify(item.title)}`, showAuthor: false },
-        { type: 'macropaedia' as const, items: macro, title: `Macropaedia Reading List (${macro.length})`, browseHref: `${baseUrl}/macropaedia#macropaedia-library`, browseLabel: 'Browse all Macropaedia articles', whyLabel: 'Why this article?', getCheckKey: (item: ReadingItem) => macropaediaChecklistKey(item.title), getHref: (item: ReadingItem) => `${baseUrl}/macropaedia/${slugify(item.title)}`, showAuthor: false },
-      ]
-        .filter(s => s.items.length > 0)
-        .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0))
-        .map((section) => (
-        <Accordion key={section.type} title={section.title} forceOpenKey={readingPref === section.type ? 0 : undefined} forceCloseKey={readingPref !== section.type ? 0 : undefined}>
-          <div class="mb-4 flex items-center justify-between">
-            <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer select-none">
-              <input
-                type="checkbox"
-                checked={hideChecked}
-                onChange={(e) => setHideCheckedReadings((e.currentTarget as HTMLInputElement).checked)}
-                class="h-3.5 w-3.5 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-              />
-              Hide checked
-            </label>
+      <ReadingSelectionStrip
+        readingTypeValue={activeType}
+        readingTypeOptions={READING_TYPE_ORDER.map((type) => ({
+          value: type,
+          eyebrow: READING_TYPE_UI_META[type].eyebrow,
+          label: READING_TYPE_UI_META[type].label,
+          disabled: !availableTypes.includes(type),
+        }))}
+        onReadingTypeChange={(type) => {
+          if (!availableTypes.includes(type)) return;
+          setReadingPrefState(type);
+          setReadingPreference(type);
+        }}
+        readingTypeAriaLabel={`Recommended reading type for ${contextLabel}`}
+        supplementaryControls={(
+          <label class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/85 px-3 py-1.5 font-medium text-slate-600 cursor-pointer select-none transition hover:border-slate-300 hover:bg-white">
+            <input
+              type="checkbox"
+              checked={hideChecked}
+              onChange={(event) => setHideCheckedReadings((event.currentTarget as HTMLInputElement).checked)}
+              class="h-3.5 w-3.5 rounded border-slate-300 text-slate-700 focus:ring-slate-400"
+            />
+            Hide checked
+          </label>
+        )}
+      />
+
+      <section class="rounded-2xl border border-amber-200 bg-amber-50/70 p-4 sm:p-5">
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+          <div class="min-w-0">
+            <h2 class="text-sm font-medium uppercase tracking-wide text-amber-800">
+              {activeSection.title}
+            </h2>
+          </div>
+          <div class="flex flex-wrap items-center gap-3 text-xs">
             <a
-              href={section.browseHref}
-              class="text-xs font-semibold uppercase tracking-wide text-indigo-700 hover:text-indigo-900 hover:underline"
+              href={activeSection.browseHref}
+              class="font-semibold uppercase tracking-[0.18em] text-amber-900 hover:text-amber-950"
             >
-              {section.browseLabel}
+              {activeSection.browseLabel}
             </a>
           </div>
-          <HorizontalCardScroll>
-            {section.items.filter((item) => {
-              if (!hideChecked) return true;
-              return !checklistState[section.getCheckKey(item)];
-            }).map((item) => {
-              const checkKey = section.getCheckKey(item);
-              const isChecked = Boolean(checklistState[checkKey]);
-              const matchPercent = item.relevance ?? 100;
+        </div>
 
-              return (
-                <div
-                  key={item.title}
-                  class={`rounded-lg border p-4 bg-white hover:shadow-md transition-shadow duration-200 ${isChecked ? 'border-slate-300 bg-slate-200/70 opacity-50' : 'border-gray-200'}`}
-                >
-                  <div class="flex items-start justify-between gap-2">
-                    <a
-                      href={section.getHref(item)}
-                      class="font-serif font-bold text-gray-900 text-base leading-tight hover:text-indigo-700 transition-colors"
-                    >
-                      {item.title}
-                    </a>
-                    <label class="flex shrink-0 items-center gap-1 text-xs font-sans text-gray-500 cursor-pointer">
-                      <input
-                        type="checkbox"
-                        checked={isChecked}
-                        onChange={(e) => writeChecklistState(checkKey, (e.currentTarget as HTMLInputElement).checked)}
-                        class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                      />
-                      Done
-                    </label>
-                  </div>
-                  {section.showAuthor && item.author && <p class="mt-1 text-xs text-gray-400">{item.author}</p>}
-                  <div class="mt-3 flex items-center gap-2">
-                    <div class="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-100">
-                      <div
-                        class={`h-full rounded-full ${matchColor(matchPercent)}`}
-                        style={{ width: `${matchPercent}%` }}
-                      />
+        <div class="mt-4">
+          {visibleItems.length > 0 ? (
+            <HorizontalCardScroll>
+              {visibleItems.map((item) => {
+                const checkKey = activeSection.getCheckKey(item);
+                const isChecked = Boolean(checklistState[checkKey]);
+                const matchPercent = item.relevance ?? 100;
+
+                return (
+                  <div
+                    key={`${activeSection.type}-${item.pid ?? item.title}`}
+                    class={`rounded-xl border border-amber-200 bg-white p-4 transition-shadow duration-200 hover:shadow-md ${isChecked ? 'bg-slate-200/70 opacity-50' : ''}`}
+                  >
+                    <div class="flex items-start justify-between gap-2">
+                      <a
+                        href={activeSection.getHref(item)}
+                        class="font-serif font-bold text-gray-900 text-base leading-tight transition-colors hover:text-indigo-700"
+                      >
+                        {item.title}
+                      </a>
+                      <label class="flex shrink-0 items-center gap-1 text-xs font-sans text-gray-500 cursor-pointer">
+                        <input
+                          type="checkbox"
+                          checked={isChecked}
+                          onChange={(event) => writeChecklistState(checkKey, (event.currentTarget as HTMLInputElement).checked)}
+                          class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                        />
+                        Done
+                      </label>
                     </div>
-                    <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">{matchPercent}% relevance</span>
+                    {activeSection.showAuthor && item.author ? (
+                      <p class="mt-1 text-xs text-gray-400">{item.author}</p>
+                    ) : null}
+                    <div class="mt-3 flex items-center gap-2">
+                      <div class="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-100">
+                        <div
+                          class={`h-full rounded-full ${matchColor(matchPercent)}`}
+                          style={{ width: `${matchPercent}%` }}
+                        />
+                      </div>
+                      <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">{matchPercent}% relevance</span>
+                    </div>
+                    <div class="mt-3 flex flex-wrap gap-2 text-xs font-medium">
+                      <span class="rounded-full bg-amber-100 px-2.5 py-1 text-amber-900">
+                        {item.count} {item.count === 1 ? countLabel.slice(0, -1) : countLabel}
+                      </span>
+                      {item.sections && item.sections > item.count ? (
+                        <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">
+                          {item.sections} Sections
+                        </span>
+                      ) : null}
+                      {item.paths ? (
+                        <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">
+                          {item.paths} mapped topics
+                        </span>
+                      ) : null}
+                    </div>
+                    <div class="mt-3">
+                      <Accordion title={activeSection.whyLabel} defaultOpen={false}>
+                        <p class="text-gray-600">{buildRationale(item, countLabel, contextLabel)}</p>
+                      </Accordion>
+                    </div>
                   </div>
-                  <div class="mt-2">
-                    <Accordion title={section.whyLabel} defaultOpen={false}>
-                      <p class="text-gray-600">{buildRationale(item, countLabel, contextLabel)}</p>
-                    </Accordion>
-                  </div>
-                </div>
-              );
-            })}
-          </HorizontalCardScroll>
-        </Accordion>
-      ))}
+                );
+              })}
+            </HorizontalCardScroll>
+          ) : (
+            <div class="rounded-xl border border-dashed border-amber-300 bg-white px-4 py-6 text-sm text-amber-900/80">
+              {emptyStateMessage(activeType, hideChecked)}
+            </div>
+          )}
+        </div>
+      </section>
     </div>
   );
 }
