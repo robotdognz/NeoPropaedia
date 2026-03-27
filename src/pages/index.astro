@@ -23,9 +23,16 @@ outline.flatSections.forEach((section) => {
   };
 });
 
-const essays = await getCollection('essays');
+const [essays, sectionEntries] = await Promise.all([
+  getCollection('essays'),
+  getCollection('sections'),
+]);
 const circleEssay = essays.find((entry) => entry.data.title === 'The Circle of Learning');
 const markdownProcessor = await createMarkdownProcessor();
+
+const topLevelSubsectionCountBySection = new Map(
+  sectionEntries.map((entry) => [entry.data.sectionCode, entry.data.outline.length]),
+);
 
 async function renderMarkdownSegment(content: string) {
   const { code } = await markdownProcessor.render(content);
@@ -143,6 +150,13 @@ const homepagePartCards = parts.map((part) => ({
   colorHex: partColorHex[part.partNumber],
   divisionCount: part.divisions.length,
   sectionCount: part.divisions.reduce((total, division) => total + division.sections.length, 0),
+  subsectionCount: part.divisions.reduce(
+    (total, division) => total + division.sections.reduce(
+      (sectionTotal, section) => sectionTotal + (topLevelSubsectionCountBySection.get(section.sectionCode) ?? 0),
+      0,
+    ),
+    0,
+  ),
 }));
 
 const homepageInitialCoverageSource = await buildHomepageCoverageSource('vsi', base);
@@ -470,6 +484,9 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
                 </span>
                 <span class="rounded-full bg-white px-2.5 py-1">
                   {part.sectionCount} {part.sectionCount === 1 ? 'Section' : 'Sections'}
+                </span>
+                <span class="rounded-full bg-white px-2.5 py-1">
+                  {part.subsectionCount} {part.subsectionCount === 1 ? 'Subsection' : 'Subsections'}
                 </span>
               </div>
             </a>
