@@ -1,6 +1,4 @@
-You are working in the OxfordPropaedia repo at:
-
-`/Users/marcomcgowan/Documents/GitHub/OxfordPropaedia`
+You are working in the Propaedia repository root.
 
 Your job is to continue the Wikipedia AI mapping pipeline safely and repeatably.
 

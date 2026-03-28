@@ -82,7 +82,7 @@ def run_step(num: int, module_name: str, func_name: str, desc: str) -> bool:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="OxfordPropaedia PDF extraction pipeline orchestrator"
+        description="Propaedia PDF extraction pipeline orchestrator"
     )
     parser.add_argument(
         "--from",

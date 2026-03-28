@@ -82,6 +82,7 @@ interface AnchoredRecommendationSectionConfig<TEntry extends AnchoredEntryBase> 
 }
 
 const partRecommendationCache = new Map<number, CircleNavigatorPartRecommendations>();
+const PART_RECOMMENDATION_TIMEOUT_MS = 10000;
 
 function joinBaseUrl(baseUrl: string, path: string): string {
   return `${baseUrl.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
@@ -97,7 +98,23 @@ function loadPartRecommendations(
     return Promise.resolve(cached);
   }
 
-  return fetch(joinBaseUrl(baseUrl, `circle-anchored/${partNumber}.json`), { signal })
+  const controller = new AbortController();
+  let timedOut = false;
+  const timeoutId = window.setTimeout(() => {
+    timedOut = true;
+    controller.abort();
+  }, PART_RECOMMENDATION_TIMEOUT_MS);
+  const abortFromCaller = () => controller.abort();
+
+  if (signal) {
+    if (signal.aborted) {
+      controller.abort();
+    } else {
+      signal.addEventListener('abort', abortFromCaller, { once: true });
+    }
+  }
+
+  return fetch(joinBaseUrl(baseUrl, `circle-anchored/${partNumber}.json`), { signal: controller.signal })
     .then((response) => {
       if (!response.ok) {
         throw new Error(`Unable to load recommendations for Part ${partNumber}.`);
@@ -107,6 +124,18 @@ function loadPartRecommendations(
     .then((data: CircleNavigatorPartRecommendations) => {
       partRecommendationCache.set(partNumber, data);
       return data;
+    })
+    .catch((error) => {
+      if (timedOut && !signal?.aborted) {
+        throw new Error(`Loading recommendations for Part ${partNumber} timed out.`);
+      }
+      throw error;
+    })
+    .finally(() => {
+      window.clearTimeout(timeoutId);
+      if (signal) {
+        signal.removeEventListener('abort', abortFromCaller);
+      }
     });
 }
 
@@ -280,6 +309,7 @@ function renderSelectionControls<TEntry extends AnchoredEntryBase>(
   recommendationSections: AnchoredRecommendationSectionConfig<TEntry>[],
   readingPref: ReadingType,
   activeLayer: CoverageLayer,
+  isLoading = false,
 ): ComponentChildren {
   const {
     activeRecommendation,
@@ -296,9 +326,10 @@ function renderSelectionControls<TEntry extends AnchoredEntryBase>(
         value: type,
         eyebrow: READING_TYPE_UI_META[type].eyebrow,
         label: READING_TYPE_UI_META[type].label,
-        disabled: recommendationSections.length > 0 ? !availableTypes.has(type) : false,
+        disabled: isLoading || (recommendationSections.length > 0 ? !availableTypes.has(type) : false),
       }))}
       onReadingTypeChange={(type) => {
+        if (isLoading) return;
         if (recommendationSections.length > 0 && !availableTypes.has(type)) return;
         setReadingPreference(type);
       }}
@@ -308,17 +339,51 @@ function renderSelectionControls<TEntry extends AnchoredEntryBase>(
         value: layer,
         label: COVERAGE_LAYER_META[layer].pluralLabel,
         meta: coverageLayerMeta.get(layer),
-        disabled: !activeRecommendation
+        disabled: isLoading || (!activeRecommendation
           ? !supportedLayersForReadingType(effectiveReadingType).includes(layer)
-          : !activeRecommendation.supportedLayers.includes(layer),
+          : !activeRecommendation.supportedLayers.includes(layer)),
       }))}
       onCoverageLayerChange={(layer) => {
+        if (isLoading) return;
         const supportedLayers = activeRecommendation?.supportedLayers ?? supportedLayersForReadingType(effectiveReadingType);
         if (!supportedLayers.includes(layer)) return;
         setCoverageLayerPreference(layer);
       }}
       coverageLayerAriaLabel="Selected fields coverage layer"
     />
+  );
+}
+
+function SpreadPathPlaceholder({
+  detail,
+  message,
+  tone = 'neutral',
+}: {
+  detail: string;
+  message: string;
+  tone?: 'neutral' | 'loading' | 'error';
+}) {
+  const shellClass = tone === 'error'
+    ? 'border-rose-200 bg-rose-50/80'
+    : 'border-amber-200 bg-amber-50/70';
+  const titleClass = tone === 'error' ? 'text-rose-800' : 'text-amber-800';
+  const detailClass = tone === 'error' ? 'text-rose-900' : 'text-amber-900';
+  const messageClass = tone === 'error' ? 'text-rose-700' : 'text-amber-950/85';
+
+  return (
+    <section class={`overflow-hidden rounded-2xl border p-4 sm:p-5 ${shellClass}`}>
+      <div>
+        <h2 class={`text-sm font-medium uppercase tracking-wide ${titleClass}`}>
+          Knowledge-Spread Path
+        </h2>
+        <p class={`mt-1 text-xs font-medium ${detailClass}`}>
+          {detail}
+        </p>
+        <p class={`mt-1.5 text-sm leading-6 ${messageClass}`}>
+          {message}
+        </p>
+      </div>
+    </section>
   );
 }
 
@@ -439,7 +504,13 @@ export function CenteredCircleNavigatorPanel({
     effectiveLayer,
   );
   const resolvedLayerLabel = coverageLayerLabel(resolvedLayer, 2, { lowercase: true });
-  const selectionControls = renderSelectionControls(recommendationSections, readingPref, activeLayer);
+  const isLoadingRecommendations = !sharedPartRecommendations && !recommendationsError;
+  const selectionControls = renderSelectionControls(
+    recommendationSections,
+    readingPref,
+    activeLayer,
+    isLoadingRecommendations,
+  );
   const activeSnapshot = activeRecommendation?.layerSnapshots[resolvedLayer];
   const isLayerComplete = activeSnapshot
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
@@ -488,46 +559,53 @@ export function CenteredCircleNavigatorPanel({
           </details>
         )}
 
-        {recommendationsError && (
-          <div class="mt-3 rounded-lg border border-dashed border-rose-200 bg-rose-50 px-4 py-5 text-sm text-rose-700">
-            {recommendationsError}
-          </div>
-        )}
-        {!sharedPartRecommendations && !recommendationsError && (
-          <div class="mt-3 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
-            Loading shared recommendations for {centerPart.partName} and {topPart.partName}...
-          </div>
-        )}
       </div>
 
       <div class="mt-3">
         {selectionControls}
       </div>
 
-      {activeRecommendation ? (
-        <div class="mt-3">
-        <ReadingSpreadPath
-          isOpen={spreadPathOpen}
-          onToggleOpen={() => setSpreadPathOpen(o => !o)}
-          steps={spreadSteps}
-          scrollResetKey={`${effectiveReadingType}:${effectiveLayer}`}
-          remainingCoverageCount={spreadRemaining}
-          checklistState={checklistState}
-          onCheckedChange={writeChecklistState}
-          getHref={(step) => step.href}
-          renderMeta={(step) => step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null}
-          checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
-          itemSingular={activeRecommendation?.itemSingular ?? 'item'}
-          itemPlural={activeRecommendation?.itemSingular ? activeRecommendation.itemSingular + 's' : 'items'}
-          coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
-          coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
-          statusMessage={statusMessage ?? undefined}
-          emptyMessage={emptyRecommendationMessage(resolvedLayer, isLayerComplete, spreadRemaining)}
-          baseUrl={baseUrl}
-          sectionLinksVariant="chips"
-        />
-        </div>
-      ) : null}
+      <div class="mt-3">
+        {isLoadingRecommendations ? (
+          <SpreadPathPlaceholder
+            tone="loading"
+            detail="Preparing recommendations..."
+            message={`Loading shared recommendations for ${centerPart.partName} and ${topPart.partName}.`}
+          />
+        ) : recommendationsError ? (
+          <SpreadPathPlaceholder
+            tone="error"
+            detail="Unable to load recommendations"
+            message={recommendationsError}
+          />
+        ) : activeRecommendation ? (
+          <ReadingSpreadPath
+            isOpen={spreadPathOpen}
+            onToggleOpen={() => setSpreadPathOpen(o => !o)}
+            steps={spreadSteps}
+            scrollResetKey={`${effectiveReadingType}:${effectiveLayer}`}
+            remainingCoverageCount={spreadRemaining}
+            checklistState={checklistState}
+            onCheckedChange={writeChecklistState}
+            getHref={(step) => step.href}
+            renderMeta={(step) => step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null}
+            checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
+            itemSingular={activeRecommendation.itemSingular}
+            itemPlural={activeRecommendation.itemSingular + 's'}
+            coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
+            coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
+            statusMessage={statusMessage ?? undefined}
+            emptyMessage={emptyRecommendationMessage(resolvedLayer, isLayerComplete, spreadRemaining)}
+            baseUrl={baseUrl}
+            sectionLinksVariant="chips"
+          />
+        ) : (
+          <SpreadPathPlaceholder
+            detail="No path available"
+            message="No mapped recommendations are available for this reading type in the current selection."
+          />
+        )}
+      </div>
     </>
   );
 }
@@ -561,6 +639,7 @@ export function TopPartCircleNavigatorPanel({
 
     loadPartRecommendations(topPartNumber, baseUrl, controller.signal)
       .then((data) => {
+        if (controller.signal.aborted) return;
         setPartRecommendations(data);
       })
       .catch((error) => {
@@ -633,7 +712,13 @@ export function TopPartCircleNavigatorPanel({
     effectiveLayer,
   );
   const resolvedLayerLabel = coverageLayerLabel(resolvedLayer, 2, { lowercase: true });
-  const selectionControls = renderSelectionControls(recommendationSections, readingPref, activeLayer);
+  const isLoadingRecommendations = !partRecommendations && !recommendationsError;
+  const selectionControls = renderSelectionControls(
+    recommendationSections,
+    readingPref,
+    activeLayer,
+    isLoadingRecommendations,
+  );
   const activeSnapshot = activeRecommendation?.layerSnapshots[resolvedLayer];
   const isLayerComplete = activeSnapshot
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
@@ -680,47 +765,53 @@ export function TopPartCircleNavigatorPanel({
             </ul>
           </details>
         )}
-
-        {recommendationsError && (
-          <div class="mt-3 rounded-lg border border-dashed border-rose-200 bg-rose-50 px-4 py-5 text-sm text-rose-700">
-            {recommendationsError}
-          </div>
-        )}
-        {!partRecommendations && !recommendationsError && (
-          <div class="mt-3 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-4 py-5 text-sm text-slate-600">
-            Loading anchored recommendations for {topPart.partName}...
-          </div>
-        )}
       </div>
 
       <div class="mt-3">
         {selectionControls}
       </div>
 
-      {activeRecommendation ? (
-        <div class="mt-3">
-        <ReadingSpreadPath
-          isOpen={spreadPathOpen}
-          onToggleOpen={() => setSpreadPathOpen(o => !o)}
-          steps={spreadSteps}
-          scrollResetKey={`${effectiveReadingType}:${effectiveLayer}`}
-          remainingCoverageCount={spreadRemaining}
-          checklistState={checklistState}
-          onCheckedChange={writeChecklistState}
-          getHref={(step) => step.href}
-          renderMeta={(step) => step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null}
-          checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
-          itemSingular={activeRecommendation?.itemSingular ?? 'item'}
-          itemPlural={activeRecommendation?.itemSingular ? activeRecommendation.itemSingular + 's' : 'items'}
-          coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
-          coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
-          statusMessage={statusMessage ?? undefined}
-          emptyMessage={emptyRecommendationMessage(resolvedLayer, isLayerComplete, spreadRemaining)}
-          baseUrl={baseUrl}
-          sectionLinksVariant="chips"
-        />
-        </div>
-      ) : null}
+      <div class="mt-3">
+        {isLoadingRecommendations ? (
+          <SpreadPathPlaceholder
+            tone="loading"
+            detail="Preparing recommendations..."
+            message={`Loading anchored recommendations for ${topPart.partName}.`}
+          />
+        ) : recommendationsError ? (
+          <SpreadPathPlaceholder
+            tone="error"
+            detail="Unable to load recommendations"
+            message={recommendationsError}
+          />
+        ) : activeRecommendation ? (
+          <ReadingSpreadPath
+            isOpen={spreadPathOpen}
+            onToggleOpen={() => setSpreadPathOpen(o => !o)}
+            steps={spreadSteps}
+            scrollResetKey={`${effectiveReadingType}:${effectiveLayer}`}
+            remainingCoverageCount={spreadRemaining}
+            checklistState={checklistState}
+            onCheckedChange={writeChecklistState}
+            getHref={(step) => step.href}
+            renderMeta={(step) => step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null}
+            checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
+            itemSingular={activeRecommendation.itemSingular}
+            itemPlural={activeRecommendation.itemSingular + 's'}
+            coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
+            coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
+            statusMessage={statusMessage ?? undefined}
+            emptyMessage={emptyRecommendationMessage(resolvedLayer, isLayerComplete, spreadRemaining)}
+            baseUrl={baseUrl}
+            sectionLinksVariant="chips"
+          />
+        ) : (
+          <SpreadPathPlaceholder
+            detail="No path available"
+            message="No mapped recommendations are available for this reading type in the current selection."
+          />
+        )}
+      </div>
     </>
   );
 }

@@ -1,5 +1,5 @@
 """
-Shared configuration for the OxfordPropaedia PDF extraction pipeline.
+Shared configuration for the Propaedia PDF extraction pipeline.
 
 Defines paths, known structural constants, and regex patterns used
 across all pipeline stages.

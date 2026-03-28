@@ -14,7 +14,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const WIKI_PATH = resolve(__dirname, '..', 'src/data/wikipedia-vital-articles.json');
 const CACHE_PATH = resolve(__dirname, 'wikipedia-details-cache.json');
 const API_BASE = 'https://en.wikipedia.org/w/api.php';
-const USER_AGENT = 'OxfordPropaediaBot/1.0 (educational project)';
+const USER_AGENT = 'PropaediaBot/1.0 (educational project)';
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 

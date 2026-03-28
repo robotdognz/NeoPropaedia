@@ -15,7 +15,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_PATH = resolve(__dirname, '..', 'src/data/wikipedia-vital-articles.json');
 
 const API_BASE = 'https://en.wikipedia.org/w/api.php';
-const USER_AGENT = 'OxfordPropaediaBot/1.0 (https://github.com; educational project)';
+const USER_AGENT = 'PropaediaBot/1.0 (https://github.com; educational project)';
 
 async function fetchWikitext(pageTitle) {
   const url = `${API_BASE}?action=parse&page=${encodeURIComponent(pageTitle)}&prop=wikitext&format=json`;

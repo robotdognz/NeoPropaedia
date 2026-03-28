@@ -63,14 +63,17 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
     <section class="overflow-hidden rounded-2xl border border-amber-200 bg-amber-50/70 p-4 sm:p-5">
       <div class="flex flex-col gap-2.5">
         <div>
-          <h2 class="flex items-center gap-1.5 text-sm font-medium uppercase tracking-wide text-amber-800">
-            Knowledge-Spread Path
-            <button
-              type="button"
-              onClick={onToggleOpen}
-              class="inline-flex items-center justify-center"
-              aria-label={isOpen ? 'Collapse path' : 'Expand path'}
-            >
+          <button
+            type="button"
+            onClick={onToggleOpen}
+            class="flex w-full items-center justify-between gap-3 text-left"
+            aria-expanded={isOpen}
+            aria-label={isOpen ? 'Collapse Knowledge-Spread Path' : 'Expand Knowledge-Spread Path'}
+          >
+            <h2 class="text-sm font-medium uppercase tracking-wide text-amber-800">
+              Knowledge-Spread Path
+            </h2>
+            <span class="inline-flex items-center justify-center">
               <svg
                 class={`h-4 w-4 text-amber-700 transition-transform hover:text-amber-900 ${isOpen ? 'rotate-180' : ''}`}
                 xmlns="http://www.w3.org/2000/svg"
@@ -81,8 +84,8 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
               >
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
-            </button>
-          </h2>
+            </span>
+          </button>
           <p class="mt-1 text-xs font-medium text-amber-900">
             {steps.length} {steps.length === 1 ? 'step' : 'steps'} · {remainingCoverageCount} {remainingCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural} uncovered
           </p>
