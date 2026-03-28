@@ -239,18 +239,41 @@ def apply_optional_spelling_fixes(candidates: dict, review_sections: dict[str, d
             optional.get("biosphere_title", ""),
         ),
         (3, "BUSINESSLAW", optional.get("business_law_title", "")),
+        (6, "Human EMoTION", optional.get("emotion_title", "")),
+        (7, "FArMIng and Agricultural Technology", optional.get("farming_title", "")),
+        (
+            8,
+            "The Forms of GovERNMENT: Their Historical Development",
+            optional.get("government_title", ""),
+        ),
+        (
+            8,
+            "Ancient GREEK AND RoMAN CIVILIZATIONS",
+            optional.get("roman_civilizations_title", ""),
+        ),
+        (
+            8,
+            "Biological GRowTH AND DevELOPMENT",
+            optional.get("growth_development_title", ""),
+        ),
         (13, "Jackson PoLLOCK", optional.get("jackson_pollock_title", "")),
         (11, "Los ANGELES", optional.get("los_angeles_title", "")),
+        (11, "MENTAL DISORDErS and Their Treatment", optional.get("mental_disorders_title", "")),
+        (12, "The Art of MusIc", optional.get("music_art_title", "")),
+        (14, "Rock MusIc", optional.get("music_rock_title", "")),
         (
             10,
             "KARÁCHI",
             "KARĀCHI" if "macron" in notes.get("extra_notes", "").lower() else optional.get("karachi_title", ""),
         ),
+        (15, "SCANDINAVIAN LITERATUrE", optional.get("scandinavian_literature_title", "")),
+        (15, "The History of Western ScuLPTURE", optional.get("sculpture_title", "")),
         (
             15,
             "Modern SocIo-ECONOMIC DOCTRINES AND REFORM MOVEMENTS",
             optional.get("modern_socio_economic_doctrines_and_reform_movements_title", ""),
         ),
+        (17, "WorK AND EMPLOYMENT", optional.get("work_employment_title", "")),
     ]
 
     for volume_number, old_title, new_title in rename_map:
@@ -269,6 +292,7 @@ def build_reviewed_candidates(raw_candidates: dict, review_sections: dict[str, d
     volume_6 = volume_by_number(reviewed, 6)
     volume_7 = volume_by_number(reviewed, 7)
     volume_9 = volume_by_number(reviewed, 9)
+    volume_10 = volume_by_number(reviewed, 10)
     volume_11 = volume_by_number(reviewed, 11)
     volume_13 = volume_by_number(reviewed, 13)
 
@@ -279,6 +303,7 @@ def build_reviewed_candidates(raw_candidates: dict, review_sections: dict[str, d
     apply_generic_page_title_review(volume_6, review_sections.get("volume_6", {}))
     apply_generic_page_title_review(volume_7, review_sections.get("volume_7", {}))
     apply_generic_page_title_review(volume_9, review_sections.get("volume_9", {}))
+    apply_generic_page_title_review(volume_10, review_sections.get("volume_10", {}))
     apply_volume_11_review(volume_11, review_sections.get("volume_11", {}))
     apply_volume_13_review(volume_13, review_sections.get("volume_13_confirmed_pairs", {}))
     apply_optional_spelling_fixes(reviewed, review_sections)
