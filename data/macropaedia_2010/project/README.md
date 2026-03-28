@@ -19,6 +19,7 @@ The SQLite database is a local working index regenerated from the tracked files 
 Generated files:
 
 - `article_identity_worklist.csv`
+- `propaedia_page_capture_index.csv`
 - `article_contents_capture_worklist.csv`
 - `propaedia_mapping_worklist.csv`
 - `britannica_breakdown_worklist.csv`

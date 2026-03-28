@@ -1,0 +1,680 @@
+{
+  "partNumber": 1,
+  "pageCount": 13,
+  "matchedRecommendationCount": 44,
+  "unmatchedRecommendationCount": 2,
+  "pages": [
+    {
+      "partNumber": 1,
+      "captureSequence": 1,
+      "imageRelativePath": "propaedia_pages/part_1/propaedia-2010-part-01-photo-01.jpg",
+      "propaediaPageReference": "22",
+      "headerContext": "22 Part One. Matter and Energy",
+      "topicSummary": "Major articles dealing with the structure and properties of atoms",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Analysis and Measurement, Physical and Chemical",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Physical and Chemical ANALYSIS AND MEASUREMENT",
+          "matchedVolumeNumber": 1,
+          "matchedStartPage": "523",
+          "matchedStartPageIndex": 523,
+          "matchedPageCountEstimate": 80
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Atoms: Their Structure, Properties, and Component Particles",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "Atoms: Their Structure, Properties, and Component Particles",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "339",
+          "matchedStartPageIndex": 339,
+          "matchedPageCountEstimate": 52
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Physical Science, Principles of",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Principles of PHYSICAL SCIENCE",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "807",
+          "matchedStartPageIndex": 807,
+          "matchedPageCountEstimate": 21
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Physical Sciences, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The PHYSICAL SCIENCES",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "828",
+          "matchedStartPageIndex": 828,
+          "matchedPageCountEstimate": 32
+        }
+      ]
+    },
+    {
+      "partNumber": 1,
+      "captureSequence": 2,
+      "imageRelativePath": "propaedia_pages/part_1/propaedia-2010-part-01-photo-02.jpg",
+      "propaediaPageReference": "26",
+      "headerContext": "26 Part One. Matter and Energy",
+      "topicSummary": "Major articles dealing withthe atomic nucleus and elementary particles",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Radiation",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "RADIATION",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "471",
+          "matchedStartPageIndex": 471,
+          "matchedPageCountEstimate": 30
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Analysis and Measurement, Physical and Chemical",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Physical and Chemical ANALYSIS AND MEASUREMENT",
+          "matchedVolumeNumber": 1,
+          "matchedStartPage": "523",
+          "matchedStartPageIndex": 523,
+          "matchedPageCountEstimate": 80
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Subatomic Particles",
+          "extractionMethod": "combined_fragment_titles",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SUBATOMIC PARTICLES",
+          "matchedVolumeNumber": 16,
+          "matchedStartPage": "236",
+          "matchedStartPageIndex": 236,
+          "matchedPageCountEstimate": 15
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Atoms: Their Structure, Properties, and Component Particles",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "Atoms: Their Structure, Properties, and Component Particles",
+          "matchedVolumeNumber": 2,
+          "matchedStartPage": "339",
+          "matchedStartPageIndex": 339,
+          "matchedPageCountEstimate": 52
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Physical Sciences, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The PHYSICAL SCIENCES",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "828",
+          "matchedStartPageIndex": 828,
+          "matchedPageCountEstimate": 32
+        }
+      ]
+    },
+    {
+      "partNumber": 1,
+      "captureSequence": 3,
+      "imageRelativePath": "propaedia_pages/part_1/propaedia-2010-part-01-photo-03.jpg",
+      "propaediaPageReference": "28",
+      "headerContext": "28 Part One. Matter and Energy",
+      "topicSummary": "Major articles dealing with chemical elements: periodic variation in their properties",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Chemical Compounds",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CHEMICAL COMPOUNDS",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "777",
+          "matchedStartPageIndex": 777,
+          "matchedPageCountEstimate": 155
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Chemical Elements",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CHEMICAL ELEMENTS",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "932",
+          "matchedStartPageIndex": 932,
+          "matchedPageCountEstimate": 107
+        }
+      ]
+    },
+    {
+      "partNumber": 1,
+      "captureSequence": 4,
+      "imageRelativePath": "propaedia_pages/part_1/propaedia-2010-part-01-photo-04.jpg",
+      "propaediaPageReference": "32",
+      "headerContext": "Part One. Matter and Energy",
+      "topicSummary": "Major articles dealing with chemical compounds: molecular structure and chemical bonding",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Biochemical Components of Organisms",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Chemical Compounds",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CHEMICAL COMPOUNDS",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "777",
+          "matchedStartPageIndex": 777,
+          "matchedPageCountEstimate": 155
+        }
+      ]
+    },
+    {
+      "partNumber": 1,
+      "captureSequence": 5,
+      "imageRelativePath": "propaedia_pages/part_1/propaedia-2010-part-01-photo-05.jpg",
+      "propaediaPageReference": "36",
+      "headerContext": "36 Part One. Matter and Energy",
+      "topicSummary": "Major articles dealing with chemical reactions",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Chemical Reactions",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CHEMICAL REACTIONS",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "1039",
+          "matchedStartPageIndex": 1039,
+          "matchedPageCountEstimate": 61
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Physical Sciences, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The PHYSICAL SCIENCES",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "828",
+          "matchedStartPageIndex": 828,
+          "matchedPageCountEstimate": 32
+        }
+      ]
+    },
+    {
+      "partNumber": 1,
+      "captureSequence": 6,
+      "imageRelativePath": "propaedia_pages/part_1/propaedia-2010-part-01-photo-06.jpg",
+      "propaediaPageReference": "39",
+      "headerContext": "Division II. Section 124",
+      "topicSummary": "Major articles dealing with heat, thermodynamics, and the nonsolid states of matter",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Matter: Its Properties, States, Varieties, and Behaviour",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MATTER: Its Properties, States, Varieties, and Behaviour",
+          "matchedVolumeNumber": 11,
+          "matchedStartPage": "612",
+          "matchedStartPageIndex": 612,
+          "matchedPageCountEstimate": 79
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Physical Sciences, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The PHYSICAL SCIENCES",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "828",
+          "matchedStartPageIndex": 828,
+          "matchedPageCountEstimate": 32
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Thermodynamics, Principles of",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Principles of THERMODYNAMICS",
+          "matchedVolumeNumber": 16,
+          "matchedStartPage": "619",
+          "matchedStartPageIndex": 619,
+          "matchedPageCountEstimate": 26
+        }
+      ]
+    },
+    {
+      "partNumber": 1,
+      "captureSequence": 7,
+      "imageRelativePath": "propaedia_pages/part_1/propaedia-2010-part-01-photo-07.jpg",
+      "propaediaPageReference": "42",
+      "headerContext": "42 Part One. Matter and Energy",
+      "topicSummary": "Major articles dealing with the solid state of matter",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Matter: Its Properties, States, Varieties, and Behaviour",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MATTER: Its Properties, States, Varieties, and Behaviour",
+          "matchedVolumeNumber": 11,
+          "matchedStartPage": "612",
+          "matchedStartPageIndex": 612,
+          "matchedPageCountEstimate": 79
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Minerals and Rocks",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MINERALS AND ROCKS",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "162",
+          "matchedStartPageIndex": 162,
+          "matchedPageCountEstimate": 118
+        }
+      ]
+    },
+    {
+      "partNumber": 1,
+      "captureSequence": 8,
+      "imageRelativePath": "propaedia_pages/part_1/propaedia-2010-part-01-photo-08.jpg",
+      "propaediaPageReference": "44",
+      "headerContext": "44 Part One. Matter and Energy",
+      "topicSummary": "Major articles dealing with the mechanics of particles, rigid bodies, and deformable bodies: elasticity, vibrations, and flow",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Energy Conversion",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ENERGY CONVERSION",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "332",
+          "matchedStartPageIndex": 332,
+          "matchedPageCountEstimate": 82
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Matter: Its Properties, States, Varieties, and Behaviour",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MATTER: Its Properties, States, Varieties, and Behaviour",
+          "matchedVolumeNumber": 11,
+          "matchedStartPage": "612",
+          "matchedStartPageIndex": 612,
+          "matchedPageCountEstimate": 79
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Mechanics: Energy, Forces, and Their Effects",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MECHANICS: Energy, Forces, and Their Effects",
+          "matchedVolumeNumber": 11,
+          "matchedStartPage": "702",
+          "matchedStartPageIndex": 702,
+          "matchedPageCountEstimate": 72
+        }
+      ]
+    },
+    {
+      "partNumber": 1,
+      "captureSequence": 9,
+      "imageRelativePath": "propaedia_pages/part_1/propaedia-2010-part-01-photo-09.jpg",
+      "propaediaPageReference": "47",
+      "headerContext": "Division II. Section 127",
+      "topicSummary": "Major articles dealing with electricity and magnetism",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Energy Conversion",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ENERGY CONVERSION",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "332",
+          "matchedStartPageIndex": 332,
+          "matchedPageCountEstimate": 82
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Electricity and Magnetism",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ELECTRICITY AND MAGNETISM",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "159",
+          "matchedStartPageIndex": 159,
+          "matchedPageCountEstimate": 36
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Electromagnetic Radiation",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ELECTROMAGNETIC RADIATION",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "195",
+          "matchedStartPageIndex": 195,
+          "matchedPageCountEstimate": 17
+        }
+      ]
+    },
+    {
+      "partNumber": 1,
+      "captureSequence": 10,
+      "imageRelativePath": "propaedia_pages/part_1/propaedia-2010-part-01-photo-10.jpg",
+      "propaediaPageReference": "50",
+      "headerContext": "50 Part One. Matter and Energy",
+      "topicSummary": "Major articles dealing with waves and wave motion",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Colour",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "COLOUR",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "595",
+          "matchedStartPageIndex": 595,
+          "matchedPageCountEstimate": 10
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Electromagnetic Radiation",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ELECTROMAGNETIC RADIATION",
+          "matchedVolumeNumber": 6,
+          "matchedStartPage": "195",
+          "matchedStartPageIndex": 195,
+          "matchedPageCountEstimate": 17
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Optics, Principles of",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Principles of OPTICS",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "202",
+          "matchedStartPageIndex": 202,
+          "matchedPageCountEstimate": 15
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Sound",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "SOUND",
+          "matchedVolumeNumber": 15,
+          "matchedStartPage": "556",
+          "matchedStartPageIndex": 556,
+          "matchedPageCountEstimate": 22
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Light",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "unmatched",
+          "matchMethod": null
+        }
+      ]
+    },
+    {
+      "partNumber": 1,
+      "captureSequence": 11,
+      "imageRelativePath": "propaedia_pages/part_1/propaedia-2010-part-01-photo-11.jpg",
+      "propaediaPageReference": "53",
+      "headerContext": "Division III. Section 132",
+      "topicSummary": "Major articles dealing with the cosmos",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Analysis and Measurement, Physical and Chemical",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "Physical and Chemical ANALYSIS AND MEASUREMENT",
+          "matchedVolumeNumber": 1,
+          "matchedStartPage": "523",
+          "matchedStartPageIndex": 523,
+          "matchedPageCountEstimate": 80
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Cosmos, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The Cosmos",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "762",
+          "matchedStartPageIndex": 762,
+          "matchedPageCountEstimate": 34
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Gravitation",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "GRAVITATION",
+          "matchedVolumeNumber": 8,
+          "matchedStartPage": "169",
+          "matchedStartPageIndex": 169,
+          "matchedPageCountEstimate": 9
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Physical Sciences, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The PHYSICAL SCIENCES",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "828",
+          "matchedStartPageIndex": 828,
+          "matchedPageCountEstimate": 32
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Relativity",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "RELATIVITY",
+          "matchedVolumeNumber": 14,
+          "matchedStartPage": "501",
+          "matchedStartPageIndex": 501,
+          "matchedPageCountEstimate": 8
+        }
+      ]
+    },
+    {
+      "partNumber": 1,
+      "captureSequence": 12,
+      "imageRelativePath": "propaedia_pages/part_1/propaedia-2010-part-01-photo-12.jpg",
+      "propaediaPageReference": "55",
+      "headerContext": "Division III. Section 132",
+      "topicSummary": "Major articles dealing with galaxies and stars",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Cosmos, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The Cosmos",
+          "matchedVolumeNumber": 4,
+          "matchedStartPage": "762",
+          "matchedStartPageIndex": 762,
+          "matchedPageCountEstimate": 34
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Galaxies",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "GALAXIES",
+          "matchedVolumeNumber": 7,
+          "matchedStartPage": "611",
+          "matchedStartPageIndex": 611,
+          "matchedPageCountEstimate": 27
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Nebula",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "NEBULA",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "767",
+          "matchedStartPageIndex": 767,
+          "matchedPageCountEstimate": 10
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Physical Sciences, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The PHYSICAL SCIENCES",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "828",
+          "matchedStartPageIndex": 828,
+          "matchedPageCountEstimate": 32
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Stars and Star Clusters",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "STARS AND STAR CLUSTERS",
+          "matchedVolumeNumber": 16,
+          "matchedStartPage": "185",
+          "matchedStartPageIndex": 185,
+          "matchedPageCountEstimate": 32
+        }
+      ]
+    },
+    {
+      "partNumber": 1,
+      "captureSequence": 13,
+      "imageRelativePath": "propaedia_pages/part_1/propaedia-2010-part-01-photo-13.jpg",
+      "propaediaPageReference": "58",
+      "headerContext": "58 Part One. Matter and Energy",
+      "topicSummary": "Major articles dealing with the solar system. See also Section 211 of Part Two",
+      "recommendations": [
+        {
+          "sortOrder": 1,
+          "observedTitle": "Calendar",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "CALENDAR",
+          "matchedVolumeNumber": 3,
+          "matchedStartPage": "417",
+          "matchedStartPageIndex": 417,
+          "matchedPageCountEstimate": 18
+        },
+        {
+          "sortOrder": 2,
+          "observedTitle": "Earth, The: Its Properties, Composition, and Structure",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_article_colon",
+          "matchedTitle": "The EARTH: Its Properties, Composition, and Structure",
+          "matchedVolumeNumber": 5,
+          "matchedStartPage": "569",
+          "matchedStartPageIndex": 569,
+          "matchedPageCountEstimate": 46
+        },
+        {
+          "sortOrder": 3,
+          "observedTitle": "Eclipse, Occultation, and Transit",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "ECLIPSE, OCCULTATION, AND TRANSIT",
+          "matchedVolumeNumber": 5,
+          "matchedStartPage": "866",
+          "matchedStartPageIndex": 866,
+          "matchedPageCountEstimate": 12
+        },
+        {
+          "sortOrder": 4,
+          "observedTitle": "Physical Sciences, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The PHYSICAL SCIENCES",
+          "matchedVolumeNumber": 13,
+          "matchedStartPage": "828",
+          "matchedStartPageIndex": 828,
+          "matchedPageCountEstimate": 32
+        },
+        {
+          "sortOrder": 5,
+          "observedTitle": "Solar System, The",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "observed_comma_flip",
+          "matchedTitle": "The SOLAR SYSTEM",
+          "matchedVolumeNumber": 15,
+          "matchedStartPage": "452",
+          "matchedStartPageIndex": 452,
+          "matchedPageCountEstimate": 104
+        }
+      ]
+    }
+  ]
+}

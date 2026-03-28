@@ -2,14 +2,29 @@
 
 Store Propaedia page photos for the 2010 data project here.
 
-Recommended naming:
+Use per-part folders like:
 
-- `propaedia-page-0123.jpg`
-- `propaedia-page-0123-a.jpg`
-- `propaedia-page-0123-b.jpg`
+- `part_1/`
+- `part_2/`
+
+Recommended naming inside each part folder:
+
+- `propaedia-2010-part-01-photo-01.jpg`
+- `propaedia-2010-part-01-photo-02.jpg`
+- `propaedia-2010-part-01-photo-03.jpg`
 
 These photos will later support:
 
 - `propaedia_name`
 - Propaedia hierarchy mappings
 - review notes about how an article is framed in the Propaedia
+
+Track the captured files in:
+
+- `data/macropaedia_2010/project/propaedia_page_capture_index.csv`
+
+Refresh that tracked index with:
+
+```bash
+python3 pipeline/macropaedia_2010/refresh_propaedia_page_capture_index.py
+```

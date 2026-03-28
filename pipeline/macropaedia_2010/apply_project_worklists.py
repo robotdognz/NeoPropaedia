@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import sqlite3
+from pathlib import Path
 
 from paths import PROJECT_DATA_DIR
 

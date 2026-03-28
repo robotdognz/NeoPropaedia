@@ -98,6 +98,7 @@ Generated outputs:
 
 - `data/macropaedia_2010/project/macropaedia_2010_project.sqlite`
 - `data/macropaedia_2010/project/article_identity_worklist.csv`
+- `data/macropaedia_2010/project/propaedia_page_capture_index.csv`
 - `data/macropaedia_2010/project/article_contents_capture_worklist.csv`
 - `data/macropaedia_2010/project/propaedia_mapping_worklist.csv`
 - `data/macropaedia_2010/project/britannica_breakdown_worklist.csv`
@@ -107,6 +108,12 @@ Re-export the current database back to CSV worklists with:
 
 ```bash
 python3 pipeline/macropaedia_2010/export_project_worklists.py
+```
+
+Refresh the tracked Propaedia page photo index with:
+
+```bash
+python3 pipeline/macropaedia_2010/refresh_propaedia_page_capture_index.py
 ```
 
 Apply edited worklists back into the database with:
@@ -130,7 +137,20 @@ Primary worklist:
 
 - `article_identity_worklist.csv`
 
-### Phase 2. Capture article contents-page photos
+### Phase 2. Capture Propaedia page photos
+
+For each photographed Propaedia page:
+
+1. save it under `Macropaedia 2010/propaedia_pages/part_<n>/`
+2. use stable sequence names like `propaedia-2010-part-01-photo-01.jpg`
+3. refresh the tracked capture index
+4. fill in `propaedia_page_reference` when known
+
+Primary tracked file:
+
+- `propaedia_page_capture_index.csv`
+
+### Phase 3. Capture article contents-page photos
 
 For every article:
 
@@ -142,7 +162,7 @@ Primary worklist:
 
 - `article_contents_capture_worklist.csv`
 
-### Phase 3. Rebuild Propaedia mappings from scratch
+### Phase 4. Rebuild Propaedia mappings from scratch
 
 For every article with enough evidence:
 
@@ -156,7 +176,7 @@ Primary worklist:
 
 If one article maps to multiple locations, duplicate the article row in the CSV and fill one mapping per row.
 
-### Phase 4. Map to current Britannica web targets
+### Phase 5. Map to current Britannica web targets
 
 For every article:
 
