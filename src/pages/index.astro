@@ -8,6 +8,7 @@ import { getCollection } from 'astro:content';
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
 import { buildHomepageCoverageSource } from '../utils/homepageCoverageSource';
 import { loadOutlineGraph } from '../utils/outlineGraph';
+import { roundedDonutSlicePath } from '../utils/donutPaths';
 
 const base = import.meta.env.BASE_URL;
 const outline = await loadOutlineGraph();
@@ -212,6 +213,21 @@ const figureGroups = [
 
 const [segmentRotationGroup, alternativeCentreGroup, partTenCentreGroup] = figureGroups;
 
+const ESSAY_VIEWBOX_SIZE = 680;
+const ESSAY_CIRCLE_CENTER = ESSAY_VIEWBOX_SIZE / 2;
+const ESSAY_VIEWBOX_MIN = 110;
+const ESSAY_VIEWBOX_CROP_SIZE = 460;
+const ESSAY_SEGMENT_GAP_PX = 7;
+const ESSAY_SEGMENT_CORNER_RADIUS = 6;
+const ESSAY_SELECTION_OUTLINE_WIDTH = 4;
+const ESSAY_BACKGROUND_RING_RADIUS = 210;
+const ESSAY_NO_CENTER_INNER_RADIUS = 106;
+const ESSAY_NO_CENTER_OUTER_RADIUS = 188;
+const ESSAY_CENTERED_INNER_RADIUS = 106;
+const ESSAY_CENTERED_OUTER_RADIUS = 188;
+const ESSAY_CENTER_DISC_RADIUS = 98;
+const ESSAY_CENTER_NUMBER_FONT_SIZE = 46;
+
 function polar(cx: number, cy: number, radius: number, degrees: number) {
   const radians = ((degrees - 90) * Math.PI) / 180;
   return {
@@ -220,31 +236,47 @@ function polar(cx: number, cy: number, radius: number, degrees: number) {
   };
 }
 
-function donutSlicePath(
-  cx: number,
-  cy: number,
-  innerRadius: number,
-  outerRadius: number,
-  startAngle: number,
-  endAngle: number
-) {
-  const startOuter = polar(cx, cy, outerRadius, startAngle);
-  const endOuter = polar(cx, cy, outerRadius, endAngle);
-  const startInner = polar(cx, cy, innerRadius, startAngle);
-  const endInner = polar(cx, cy, innerRadius, endAngle);
-  const largeArc = endAngle - startAngle > 180 ? 1 : 0;
-
-  return [
-    `M ${startOuter.x} ${startOuter.y}`,
-    `A ${outerRadius} ${outerRadius} 0 ${largeArc} 1 ${endOuter.x} ${endOuter.y}`,
-    `L ${endInner.x} ${endInner.y}`,
-    `A ${innerRadius} ${innerRadius} 0 ${largeArc} 0 ${startInner.x} ${startInner.y}`,
-    'Z',
-  ].join(' ');
+function lerp(a: number, b: number, t: number) {
+  return a + (b - a) * t;
 }
 
-function labelPosition(cx: number, cy: number, radius: number, startAngle: number, endAngle: number) {
-  return polar(cx, cy, radius, (startAngle + endAngle) / 2);
+function angularDistance(angle: number, target: number) {
+  const normalized = ((((angle - target) % 360) + 540) % 360) - 180;
+  return Math.abs(normalized);
+}
+
+function getEssaySegmentNumberRadius(innerRadius: number, outerRadius: number, emphasis = 0) {
+  const baseRatio = lerp(0.45, 0.49, emphasis);
+  return lerp(innerRadius, outerRadius, baseRatio);
+}
+
+function getEssaySegmentNumberFontSize(emphasis = 0) {
+  return lerp(25, 27, emphasis);
+}
+
+function getEssaySegmentLayout(index: number, count: number, baseInnerRadius: number, baseOuterRadius: number) {
+  const segmentAngle = 360 / count;
+  const centerAngle = index * segmentAngle;
+  const topWeight = Math.max(0, 1 - angularDistance(centerAngle, 0) / segmentAngle);
+  const innerRadius = lerp(baseInnerRadius, baseInnerRadius - 10, topWeight);
+  const outerRadius = lerp(baseOuterRadius, baseOuterRadius + 12, topWeight);
+  const startAngle = centerAngle - segmentAngle / 2;
+  const endAngle = centerAngle + segmentAngle / 2;
+  const numberPosition = polar(
+    ESSAY_CIRCLE_CENTER,
+    ESSAY_CIRCLE_CENTER,
+    getEssaySegmentNumberRadius(innerRadius, outerRadius, topWeight),
+    centerAngle,
+  );
+
+  return {
+    startAngle,
+    endAngle,
+    innerRadius,
+    outerRadius,
+    topWeight,
+    numberPosition,
+  };
 }
 ---
 
@@ -340,19 +372,68 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
               {segmentRotationGroup && (
                 <div class="mt-6 grid gap-5 md:grid-cols-2 md:justify-items-center">
                   {segmentRotationGroup.figures.map((figure) => (
-                    <figure class="w-full max-w-sm rounded-lg border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                    <figure class="w-full max-w-md rounded-lg border border-slate-200 bg-slate-50 p-4 shadow-sm">
                       <figcaption class="text-sm font-sans font-semibold text-slate-700">{figure.title}</figcaption>
-                      <svg viewBox="0 0 220 220" class="mt-4 mx-auto w-full max-w-[15rem]" role="img" aria-label={figure.title}>
+                      <svg viewBox={`${ESSAY_VIEWBOX_MIN} ${ESSAY_VIEWBOX_MIN} ${ESSAY_VIEWBOX_CROP_SIZE} ${ESSAY_VIEWBOX_CROP_SIZE}`} class="mt-4 mx-auto w-full max-w-[18.5rem]" role="img" aria-label={figure.title}>
+                        <circle cx={ESSAY_CIRCLE_CENTER} cy={ESSAY_CIRCLE_CENTER} r={ESSAY_BACKGROUND_RING_RADIUS} fill="#f8fafc" />
                         {figure.kind === 'segments' && figure.order.map((partNumber, index) => {
-                          const segmentAngle = 360 / figure.order.length;
-                          const offset = -segmentAngle / 2;
-                          const start = index * segmentAngle + offset;
-                          const end = start + segmentAngle;
-                          const label = labelPosition(110, 110, 69, start, end);
+                          const segment = getEssaySegmentLayout(
+                            index,
+                            figure.order.length,
+                            ESSAY_NO_CENTER_INNER_RADIUS,
+                            ESSAY_NO_CENTER_OUTER_RADIUS,
+                          );
+
                           return (
                             <g>
-                              <path d={donutSlicePath(110, 110, 42, 96, start - 0.3, end + 0.3)} fill={partColorHex[partNumber]} />
-                              <text x={label.x} y={label.y} fill="white" font-size="15" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">{partNumber}</text>
+                              <path
+                                d={roundedDonutSlicePath(
+                                  ESSAY_CIRCLE_CENTER,
+                                  ESSAY_CIRCLE_CENTER,
+                                  segment.innerRadius,
+                                  segment.outerRadius,
+                                  segment.startAngle,
+                                  segment.endAngle,
+                                  {
+                                    gapPx: ESSAY_SEGMENT_GAP_PX,
+                                    cornerRadiusPx: ESSAY_SEGMENT_CORNER_RADIUS,
+                                  },
+                                )}
+                                fill={partColorHex[partNumber]}
+                                opacity={lerp(0.94, 1, segment.topWeight)}
+                              />
+                              {index === 0 && (
+                                <path
+                                  d={roundedDonutSlicePath(
+                                    ESSAY_CIRCLE_CENTER,
+                                    ESSAY_CIRCLE_CENTER,
+                                    segment.innerRadius,
+                                    segment.outerRadius,
+                                    segment.startAngle,
+                                    segment.endAngle,
+                                    {
+                                      gapPx: ESSAY_SEGMENT_GAP_PX,
+                                      cornerRadiusPx: ESSAY_SEGMENT_CORNER_RADIUS,
+                                    },
+                                  )}
+                                  fill="none"
+                                  stroke="#0f172a"
+                                  stroke-width={ESSAY_SELECTION_OUTLINE_WIDTH}
+                                  stroke-linejoin="round"
+                                />
+                              )}
+                              <text
+                                x={segment.numberPosition.x}
+                                y={segment.numberPosition.y}
+                                fill="white"
+                                font-size={getEssaySegmentNumberFontSize(segment.topWeight)}
+                                font-family="Inter, sans-serif"
+                                font-weight="700"
+                                text-anchor="middle"
+                                dominant-baseline="middle"
+                              >
+                                {partNumber}
+                              </text>
                             </g>
                           );
                         })}
@@ -371,24 +452,61 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
               {alternativeCentreGroup && (
                 <div class="mt-6 grid gap-5 md:grid-cols-2 md:justify-items-center">
                   {alternativeCentreGroup.figures.map((figure) => (
-                    <figure class="w-full max-w-sm rounded-lg border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                    <figure class="w-full max-w-md rounded-lg border border-slate-200 bg-slate-50 p-4 shadow-sm">
                       <figcaption class="text-sm font-sans font-semibold text-slate-700">{figure.title}</figcaption>
-                      <svg viewBox="0 0 220 220" class="mt-4 mx-auto w-full max-w-[15rem]" role="img" aria-label={figure.title}>
+                      <svg viewBox={`${ESSAY_VIEWBOX_MIN} ${ESSAY_VIEWBOX_MIN} ${ESSAY_VIEWBOX_CROP_SIZE} ${ESSAY_VIEWBOX_CROP_SIZE}`} class="mt-4 mx-auto w-full max-w-[18.5rem]" role="img" aria-label={figure.title}>
+                        <circle cx={ESSAY_CIRCLE_CENTER} cy={ESSAY_CIRCLE_CENTER} r={ESSAY_BACKGROUND_RING_RADIUS} fill="#f8fafc" />
                         {figure.kind === 'hub' && figure.outer.map((partNumber, index) => {
-                          const segmentAngle = 360 / figure.outer.length;
-                          const offset = -segmentAngle / 2;
-                          const start = index * segmentAngle + offset;
-                          const end = start + segmentAngle;
-                          const label = labelPosition(110, 110, 75, start, end);
+                          const segment = getEssaySegmentLayout(
+                            index,
+                            figure.outer.length,
+                            ESSAY_CENTERED_INNER_RADIUS,
+                            ESSAY_CENTERED_OUTER_RADIUS,
+                          );
+
                           return (
                             <g>
-                              <path d={donutSlicePath(110, 110, 52, 98, start - 0.3, end + 0.3)} fill={partColorHex[partNumber]} />
-                              <text x={label.x} y={label.y} fill="white" font-size="15" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">{partNumber}</text>
+                              <path
+                                d={roundedDonutSlicePath(
+                                  ESSAY_CIRCLE_CENTER,
+                                  ESSAY_CIRCLE_CENTER,
+                                  segment.innerRadius,
+                                  segment.outerRadius,
+                                  segment.startAngle,
+                                  segment.endAngle,
+                                  {
+                                    gapPx: ESSAY_SEGMENT_GAP_PX,
+                                    cornerRadiusPx: ESSAY_SEGMENT_CORNER_RADIUS,
+                                  },
+                                )}
+                                fill={partColorHex[partNumber]}
+                                opacity={lerp(0.94, 1, segment.topWeight)}
+                              />
+                              <text
+                                x={segment.numberPosition.x}
+                                y={segment.numberPosition.y}
+                                fill="white"
+                                font-size={getEssaySegmentNumberFontSize(segment.topWeight)}
+                                font-family="Inter, sans-serif"
+                                font-weight="700"
+                                text-anchor="middle"
+                                dominant-baseline="middle"
+                              >
+                                {partNumber}
+                              </text>
                             </g>
                           );
                         })}
-                        <circle cx="110" cy="110" r="42" fill={partColorHex[figure.center]} />
-                        <text x="110" y="110" fill="white" font-size="20" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">{figure.center}</text>
+                        <circle cx={ESSAY_CIRCLE_CENTER} cy={ESSAY_CIRCLE_CENTER} r={ESSAY_CENTER_DISC_RADIUS} fill={partColorHex[figure.center]} />
+                        <circle
+                          cx={ESSAY_CIRCLE_CENTER}
+                          cy={ESSAY_CIRCLE_CENTER}
+                          r={ESSAY_CENTER_DISC_RADIUS - ESSAY_SELECTION_OUTLINE_WIDTH / 2}
+                          fill="none"
+                          stroke="#0f172a"
+                          stroke-width={ESSAY_SELECTION_OUTLINE_WIDTH}
+                        />
+                        <text x={ESSAY_CIRCLE_CENTER} y={ESSAY_CIRCLE_CENTER} fill="white" font-size={ESSAY_CENTER_NUMBER_FONT_SIZE} font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">{figure.center}</text>
                       </svg>
                     </figure>
                   ))}
@@ -404,24 +522,61 @@ function labelPosition(cx: number, cy: number, radius: number, startAngle: numbe
               {partTenCentreGroup && (
                 <div class="mt-6 flex justify-center">
                   {partTenCentreGroup.figures.map((figure) => (
-                    <figure class="w-full max-w-sm rounded-lg border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                    <figure class="w-full max-w-md rounded-lg border border-slate-200 bg-slate-50 p-4 shadow-sm">
                       <figcaption class="text-sm font-sans font-semibold text-slate-700">{figure.title}</figcaption>
-                      <svg viewBox="0 0 220 220" class="mt-4 mx-auto w-full max-w-[15rem]" role="img" aria-label={figure.title}>
+                      <svg viewBox={`${ESSAY_VIEWBOX_MIN} ${ESSAY_VIEWBOX_MIN} ${ESSAY_VIEWBOX_CROP_SIZE} ${ESSAY_VIEWBOX_CROP_SIZE}`} class="mt-4 mx-auto w-full max-w-[18.5rem]" role="img" aria-label={figure.title}>
+                        <circle cx={ESSAY_CIRCLE_CENTER} cy={ESSAY_CIRCLE_CENTER} r={ESSAY_BACKGROUND_RING_RADIUS} fill="#f8fafc" />
                         {figure.kind === 'hub' && figure.outer.map((partNumber, index) => {
-                          const segmentAngle = 360 / figure.outer.length;
-                          const offset = -segmentAngle / 2;
-                          const start = index * segmentAngle + offset;
-                          const end = start + segmentAngle;
-                          const label = labelPosition(110, 110, 75, start, end);
+                          const segment = getEssaySegmentLayout(
+                            index,
+                            figure.outer.length,
+                            ESSAY_CENTERED_INNER_RADIUS,
+                            ESSAY_CENTERED_OUTER_RADIUS,
+                          );
+
                           return (
                             <g>
-                              <path d={donutSlicePath(110, 110, 52, 98, start - 0.3, end + 0.3)} fill={partColorHex[partNumber]} />
-                              <text x={label.x} y={label.y} fill="white" font-size="15" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">{partNumber}</text>
+                              <path
+                                d={roundedDonutSlicePath(
+                                  ESSAY_CIRCLE_CENTER,
+                                  ESSAY_CIRCLE_CENTER,
+                                  segment.innerRadius,
+                                  segment.outerRadius,
+                                  segment.startAngle,
+                                  segment.endAngle,
+                                  {
+                                    gapPx: ESSAY_SEGMENT_GAP_PX,
+                                    cornerRadiusPx: ESSAY_SEGMENT_CORNER_RADIUS,
+                                  },
+                                )}
+                                fill={partColorHex[partNumber]}
+                                opacity={lerp(0.94, 1, segment.topWeight)}
+                              />
+                              <text
+                                x={segment.numberPosition.x}
+                                y={segment.numberPosition.y}
+                                fill="white"
+                                font-size={getEssaySegmentNumberFontSize(segment.topWeight)}
+                                font-family="Inter, sans-serif"
+                                font-weight="700"
+                                text-anchor="middle"
+                                dominant-baseline="middle"
+                              >
+                                {partNumber}
+                              </text>
                             </g>
                           );
                         })}
-                        <circle cx="110" cy="110" r="42" fill={partColorHex[figure.center]} />
-                        <text x="110" y="110" fill="white" font-size="20" font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">{figure.center}</text>
+                        <circle cx={ESSAY_CIRCLE_CENTER} cy={ESSAY_CIRCLE_CENTER} r={ESSAY_CENTER_DISC_RADIUS} fill={partColorHex[figure.center]} />
+                        <circle
+                          cx={ESSAY_CIRCLE_CENTER}
+                          cy={ESSAY_CIRCLE_CENTER}
+                          r={ESSAY_CENTER_DISC_RADIUS - ESSAY_SELECTION_OUTLINE_WIDTH / 2}
+                          fill="none"
+                          stroke="#0f172a"
+                          stroke-width={ESSAY_SELECTION_OUTLINE_WIDTH}
+                        />
+                        <text x={ESSAY_CIRCLE_CENTER} y={ESSAY_CIRCLE_CENTER} fill="white" font-size={ESSAY_CENTER_NUMBER_FONT_SIZE} font-family="Inter, sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="middle">{figure.center}</text>
                       </svg>
                     </figure>
                   ))}
