@@ -1,0 +1,272 @@
+#!/usr/bin/env python3
+"""Export the current Macropaedia 2010 project database into editable worklists."""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import sqlite3
+
+from paths import PROJECT_DATA_DIR
+
+
+DEFAULT_DB_PATH = PROJECT_DATA_DIR / "macropaedia_2010_project.sqlite"
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--db", type=Path, default=DEFAULT_DB_PATH)
+    return parser.parse_args()
+
+
+def write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, object]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def fetch_rows(connection: sqlite3.Connection, query: str) -> list[sqlite3.Row]:
+    return list(connection.execute(query))
+
+
+def export_identity_worklist(connection: sqlite3.Connection) -> None:
+    rows = fetch_rows(
+        connection,
+        """
+        SELECT
+            volume_number,
+            start_page_label,
+            start_page_index,
+            page_length,
+            macropaedia_contents_name,
+            propaedia_name,
+            propaedia_name_source_image_path,
+            notes
+        FROM articles
+        ORDER BY volume_number, sort_order
+        """,
+    )
+    write_csv(
+        PROJECT_DATA_DIR / "article_identity_worklist.csv",
+        [
+            "volume_number",
+            "start_page_label",
+            "start_page_index",
+            "page_length",
+            "macropaedia_contents_name",
+            "propaedia_name",
+            "propaedia_name_source_image_path",
+            "notes",
+        ],
+        [
+            {
+                "volume_number": row["volume_number"],
+                "start_page_label": row["start_page_label"],
+                "start_page_index": row["start_page_index"],
+                "page_length": row["page_length"] or "",
+                "macropaedia_contents_name": row["macropaedia_contents_name"],
+                "propaedia_name": row["propaedia_name"] or "",
+                "propaedia_name_source_image_path": row["propaedia_name_source_image_path"] or "",
+                "notes": row["notes"] or "",
+            }
+            for row in rows
+        ],
+    )
+
+
+def export_article_contents_worklist(connection: sqlite3.Connection) -> None:
+    rows = fetch_rows(
+        connection,
+        """
+        SELECT
+            a.volume_number,
+            a.start_page_label,
+            a.macropaedia_contents_name,
+            i.relative_path AS article_contents_image_relative_path,
+            COALESCE(i.capture_status, a.article_contents_image_status) AS capture_status,
+            COALESCE(i.notes, a.notes, '') AS notes
+        FROM articles a
+        LEFT JOIN images i
+            ON i.article_id = a.article_id
+           AND i.image_kind = 'article_contents'
+        ORDER BY a.volume_number, a.sort_order, i.relative_path
+        """,
+    )
+    normalized_rows: list[dict[str, object]] = []
+    for row in rows:
+        normalized_rows.append(
+            {
+                "volume_number": row["volume_number"],
+                "start_page_label": row["start_page_label"],
+                "macropaedia_contents_name": row["macropaedia_contents_name"],
+                "article_contents_image_relative_path": row["article_contents_image_relative_path"] or "",
+                "capture_status": row["capture_status"] or "missing",
+                "notes": row["notes"] or "",
+            }
+        )
+    write_csv(
+        PROJECT_DATA_DIR / "article_contents_capture_worklist.csv",
+        [
+            "volume_number",
+            "start_page_label",
+            "macropaedia_contents_name",
+            "article_contents_image_relative_path",
+            "capture_status",
+            "notes",
+        ],
+        normalized_rows,
+    )
+
+
+def export_mapping_worklist(connection: sqlite3.Connection) -> None:
+    rows = fetch_rows(
+        connection,
+        """
+        SELECT
+            a.volume_number,
+            a.start_page_label,
+            a.macropaedia_contents_name,
+            COALESCE(a.propaedia_name, '') AS propaedia_name,
+            pm.part_number,
+            pm.division_id,
+            pm.section_code,
+            pm.subsection_path,
+            pm.confidence,
+            pm.source_image_relative_path,
+            pm.notes
+        FROM articles a
+        LEFT JOIN propaedia_mappings pm ON pm.article_id = a.article_id
+        ORDER BY a.volume_number, a.sort_order, pm.mapping_order, pm.mapping_id
+        """,
+    )
+    write_csv(
+        PROJECT_DATA_DIR / "propaedia_mapping_worklist.csv",
+        [
+            "volume_number",
+            "start_page_label",
+            "macropaedia_contents_name",
+            "propaedia_name",
+            "part_number",
+            "division_id",
+            "section_code",
+            "subsection_path",
+            "confidence",
+            "source_image_relative_path",
+            "notes",
+        ],
+        [
+            {
+                "volume_number": row["volume_number"],
+                "start_page_label": row["start_page_label"],
+                "macropaedia_contents_name": row["macropaedia_contents_name"],
+                "propaedia_name": row["propaedia_name"],
+                "part_number": row["part_number"] or "",
+                "division_id": row["division_id"] or "",
+                "section_code": row["section_code"] or "",
+                "subsection_path": row["subsection_path"] or "",
+                "confidence": row["confidence"] or "draft",
+                "source_image_relative_path": row["source_image_relative_path"] or "",
+                "notes": row["notes"] or "",
+            }
+            for row in rows
+        ],
+    )
+
+
+def export_britannica_worklist(connection: sqlite3.Connection) -> None:
+    rows = fetch_rows(
+        connection,
+        """
+        SELECT
+            a.volume_number,
+            a.start_page_label,
+            a.macropaedia_contents_name,
+            COALESCE(a.propaedia_name, '') AS propaedia_name,
+            bt.target_title,
+            bt.target_url,
+            bt.confidence,
+            bt.source_image_relative_path,
+            bt.notes
+        FROM articles a
+        LEFT JOIN britannica_targets bt ON bt.article_id = a.article_id
+        ORDER BY a.volume_number, a.sort_order, bt.target_id
+        """,
+    )
+    write_csv(
+        PROJECT_DATA_DIR / "britannica_breakdown_worklist.csv",
+        [
+            "volume_number",
+            "start_page_label",
+            "macropaedia_contents_name",
+            "propaedia_name",
+            "britannica_title",
+            "britannica_url",
+            "confidence",
+            "source_image_relative_path",
+            "notes",
+        ],
+        [
+            {
+                "volume_number": row["volume_number"],
+                "start_page_label": row["start_page_label"],
+                "macropaedia_contents_name": row["macropaedia_contents_name"],
+                "propaedia_name": row["propaedia_name"],
+                "britannica_title": row["target_title"] or "",
+                "britannica_url": row["target_url"] or "",
+                "confidence": row["confidence"] or "draft",
+                "source_image_relative_path": row["source_image_relative_path"] or "",
+                "notes": row["notes"] or "",
+            }
+            for row in rows
+        ],
+    )
+
+
+def export_volume_index(connection: sqlite3.Connection) -> None:
+    rows = fetch_rows(
+        connection,
+        """
+        SELECT
+            volume_number,
+            contents_image_relative_path,
+            contents_image_orientation,
+            image_width,
+            image_height,
+            first_start_page_label,
+            last_start_page_label
+        FROM volumes
+        ORDER BY volume_number
+        """,
+    )
+    write_csv(
+        PROJECT_DATA_DIR / "volume_contents_index.csv",
+        [
+            "volume_number",
+            "contents_image_relative_path",
+            "contents_image_orientation",
+            "image_width",
+            "image_height",
+            "first_start_page_label",
+            "last_start_page_label",
+        ],
+        [dict(row) for row in rows],
+    )
+
+
+def main() -> None:
+    args = parse_args()
+    connection = sqlite3.connect(args.db)
+    connection.row_factory = sqlite3.Row
+    export_identity_worklist(connection)
+    export_article_contents_worklist(connection)
+    export_mapping_worklist(connection)
+    export_britannica_worklist(connection)
+    export_volume_index(connection)
+    connection.close()
+    print(f"Exported worklists from {args.db}")
+
+
+if __name__ == "__main__":
+    main()

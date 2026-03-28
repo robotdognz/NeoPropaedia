@@ -1,0 +1,44 @@
+# Fill in values after the "=" sign.
+# Leave unknown items blank.
+# Use "yes" / "no" for confirmation fields.
+#
+# Source images:
+# Volume 1:  /Users/marcomcgowan/Documents/GitHub/OxfordPropaedia/Macropaedia 2010/contents_pages/macropaedia-2010-volume-01-contents.jpg
+# Volume 13: /Users/marcomcgowan/Documents/GitHub/OxfordPropaedia/Macropaedia 2010/contents_pages/macropaedia-2010-volume-13-contents.jpg
+
+[volume_1]
+accounting_page = 1
+ansel_adams_page = 5
+john_adams_page = 6
+aesthetics_page = 9
+page_349_title = Native American Peoples
+page_441_title = ANALYSIS (in Mathematics)
+african_american_literature_page = 120A
+
+[volume_13_confirmed_pairs]
+page_562_title = Western PHILOSOPHICAL SCHOOLS AND DOCTRINES
+page_652_title = PHILOSOPHIES OF THE BRANCHES OF KNOWLEDGE
+page_733_title = The History of Western PHILOSOPHY
+page_807_title = Principles of PHYSICAL SCIENCE
+page_828_title = The PHYSICAL SCIENCES
+page_893_title = Plato and PLATONISM
+page_908_title = POISONS AND POSISONING
+page_550_title = PHILOSOPHICAL ANTHROPOLOGY
+
+[volume_13_crowded_rows]
+confirm_76_occultism = yes
+confirm_99_occupational_diseases_and_disorders = yes
+confirm_202_principles_of_optics = yes
+confirm_217_mathematical_theory_of_optimization = yes
+confirm_515_peru = yes
+confirm_528_peter_i_the_great_of_russia = yes
+
+[optional_spelling_checks]
+business_law_title = BUSINESS LAW
+jackson_pollock_title = Jackson POLLOCK
+los_angeles_title = LOS ANGELES
+karachi_title = KARACHI
+modern_socio_economic_doctrines_and_reform_movements_title = Modern SOCIO-ECONOMIC DOCTRINES AND REFORM MOVEMENTS
+
+[notes]
+extra_notes = KARACHI (macron over second a)
