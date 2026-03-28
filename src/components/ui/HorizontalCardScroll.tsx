@@ -5,6 +5,7 @@ interface HorizontalCardScrollProps {
   children: ComponentChildren;
   cardMinWidth?: number;
   singleCardOnMobile?: boolean;
+  resetKey?: string;
 }
 
 const DRAG_THRESHOLD = 5;
@@ -15,6 +16,7 @@ export default function HorizontalCardScroll({
   children,
   cardMinWidth = 280,
   singleCardOnMobile = false,
+  resetKey,
 }: HorizontalCardScrollProps) {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -78,6 +80,27 @@ export default function HorizontalCardScroll({
       ro.disconnect();
     };
   }, [updateArrows, updateCardWidth, children]);
+
+  useLayoutEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const resetScroll = () => {
+      const current = scrollRef.current;
+      if (!current) return;
+      current.scrollTo({ left: 0, behavior: 'auto' });
+      updateArrows();
+    };
+
+    resetScroll();
+    const frame = requestAnimationFrame(() => {
+      resetScroll();
+    });
+
+    return () => {
+      cancelAnimationFrame(frame);
+    };
+  }, [resetKey, updateArrows]);
 
   // Touch/mouse drag scrolling
   useEffect(() => {
@@ -221,7 +244,13 @@ export default function HorizontalCardScroll({
       <div
         ref={scrollRef}
         class="hcs-noscroll flex gap-4 overflow-x-auto scroll-smooth touch-pan-x"
-        style={{ scrollbarWidth: 'none', paddingLeft: `${edgePad}px`, paddingRight: `${edgePad}px`, WebkitOverflowScrolling: 'touch' }}
+        style={{
+          scrollbarWidth: 'none',
+          paddingLeft: `${edgePad}px`,
+          paddingRight: `${edgePad}px`,
+          WebkitOverflowScrolling: 'touch',
+          overflowAnchor: 'none',
+        }}
       >
         <style>{`.hcs-noscroll::-webkit-scrollbar { display: none; }`}</style>
         {Array.isArray(children) ? children.map((child, i) => (

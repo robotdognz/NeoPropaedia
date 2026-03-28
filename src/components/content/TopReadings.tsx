@@ -243,7 +243,7 @@ export default function TopReadings({
 
         <div class="mt-4">
           {visibleItems.length > 0 ? (
-            <HorizontalCardScroll key={activeSection.type} singleCardOnMobile>
+            <HorizontalCardScroll resetKey={activeSection.type} singleCardOnMobile>
               {visibleItems.map((item) => {
                 const checkKey = activeSection.getCheckKey(item);
                 const isChecked = Boolean(checklistState[checkKey]);

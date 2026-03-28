@@ -487,6 +487,7 @@ export default function HomepageCoverageExplorer({
               isOpen={spreadPathOpen}
               onToggleOpen={() => setSpreadPathOpen((current) => !current)}
               steps={activePath}
+              scrollResetKey={`${selectedType}:${activeLayer}`}
               remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
               checklistState={checklistState}
               onCheckedChange={writeChecklistState}

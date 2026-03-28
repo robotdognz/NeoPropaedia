@@ -429,10 +429,14 @@ export function CenteredCircleNavigatorPanel({
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
   }, [sharedPartRecommendations, checklistState, readingPref, baseUrl, coverageSources]);
 
-  const activeRecommendation = recommendationSections.find(s => s.type === readingPref) ?? recommendationSections[0];
+  const {
+    activeRecommendation,
+    effectiveReadingType,
+    effectiveLayer,
+  } = resolveRecommendationSelection(recommendationSections, readingPref, activeLayer);
   const { steps: spreadSteps, remaining: spreadRemaining, resolvedLayer } = buildSpreadPathFromRecommendations(
     activeRecommendation as AnchoredRecommendationSectionConfig<AnchoredEntryBase> | undefined,
-    activeLayer,
+    effectiveLayer,
   );
   const resolvedLayerLabel = coverageLayerLabel(resolvedLayer, 2, { lowercase: true });
   const selectionControls = renderSelectionControls(recommendationSections, readingPref, activeLayer);
@@ -506,6 +510,7 @@ export function CenteredCircleNavigatorPanel({
           isOpen={spreadPathOpen}
           onToggleOpen={() => setSpreadPathOpen(o => !o)}
           steps={spreadSteps}
+          scrollResetKey={`${effectiveReadingType}:${effectiveLayer}`}
           remainingCoverageCount={spreadRemaining}
           checklistState={checklistState}
           onCheckedChange={writeChecklistState}
@@ -618,10 +623,14 @@ export function TopPartCircleNavigatorPanel({
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
   }, [topPartNumber, readingPref, checklistState, partRecommendations, baseUrl, coverageSources]);
 
-  const activeRecommendation = recommendationSections.find(s => s.type === readingPref) ?? recommendationSections[0];
+  const {
+    activeRecommendation,
+    effectiveReadingType,
+    effectiveLayer,
+  } = resolveRecommendationSelection(recommendationSections, readingPref, activeLayer);
   const { steps: spreadSteps, remaining: spreadRemaining, resolvedLayer } = buildSpreadPathFromRecommendations(
     activeRecommendation as AnchoredRecommendationSectionConfig<AnchoredEntryBase> | undefined,
-    activeLayer,
+    effectiveLayer,
   );
   const resolvedLayerLabel = coverageLayerLabel(resolvedLayer, 2, { lowercase: true });
   const selectionControls = renderSelectionControls(recommendationSections, readingPref, activeLayer);
@@ -694,6 +703,7 @@ export function TopPartCircleNavigatorPanel({
           isOpen={spreadPathOpen}
           onToggleOpen={() => setSpreadPathOpen(o => !o)}
           steps={spreadSteps}
+          scrollResetKey={`${effectiveReadingType}:${effectiveLayer}`}
           remainingCoverageCount={spreadRemaining}
           checklistState={checklistState}
           onCheckedChange={writeChecklistState}

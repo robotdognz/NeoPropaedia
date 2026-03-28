@@ -262,7 +262,7 @@ export default function SectionReadingRecommendations({
           selection,
         ),
         body: displayMappings.length > 0 ? (
-          <HorizontalCardScroll key={activeType} singleCardOnMobile>
+          <HorizontalCardScroll resetKey={activeType} singleCardOnMobile>
             {displayMappings.map((mapping, index) => {
               const checklistKey = vsiChecklistKey(mapping.vsiTitle, mapping.vsiAuthor);
               const relevanceScore = mapping.filterScore ?? mapping.relevanceScore ?? 0;
@@ -324,7 +324,7 @@ export default function SectionReadingRecommendations({
           selection,
         ),
         body: displayArticles.length > 0 ? (
-          <HorizontalCardScroll key={activeType} singleCardOnMobile>
+          <HorizontalCardScroll resetKey={activeType} singleCardOnMobile>
             {displayArticles.map((article) => {
               const checklistKey = wikipediaChecklistKey(article.title);
               const precision = mappingPrecisionBadge(
@@ -383,7 +383,7 @@ export default function SectionReadingRecommendations({
           selection,
         ),
         body: displayEpisodes.length > 0 ? (
-          <HorizontalCardScroll key={activeType} singleCardOnMobile>
+          <HorizontalCardScroll resetKey={activeType} singleCardOnMobile>
             {displayEpisodes.map((episode) => {
               const checklistKey = iotChecklistKey(episode.pid);
               const precision = mappingPrecisionBadge(
@@ -442,7 +442,7 @@ export default function SectionReadingRecommendations({
         { sectionLevelOnly: true },
       ),
       body: visibleReferences.length > 0 ? (
-        <HorizontalCardScroll key={activeType} singleCardOnMobile>
+        <HorizontalCardScroll resetKey={activeType} singleCardOnMobile>
           {visibleReferences.map((reference) => {
             const checklistKey = macropaediaChecklistKey(reference);
             const isChecked = Boolean(checklistState[checklistKey]);

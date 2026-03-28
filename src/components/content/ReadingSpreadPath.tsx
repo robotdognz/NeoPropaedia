@@ -16,6 +16,7 @@ interface ReadingSpreadPathProps<TStep extends SpreadPathStepBase> {
   isOpen: boolean;
   onToggleOpen: () => void;
   steps: TStep[];
+  scrollResetKey?: string;
   remainingCoverageCount: number;
   checklistState: Record<string, boolean>;
   onCheckedChange: (checklistKey: string, checked: boolean) => void;
@@ -40,6 +41,7 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
   isOpen,
   onToggleOpen,
   steps,
+  scrollResetKey,
   remainingCoverageCount,
   checklistState,
   onCheckedChange,
@@ -107,7 +109,7 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
 
       {isOpen && steps.length > 0 ? (
         <div class="mt-5">
-        <HorizontalCardScroll singleCardOnMobile>
+        <HorizontalCardScroll resetKey={scrollResetKey} singleCardOnMobile>
           {steps.map((step, index) => {
             const isChecked = Boolean(checklistState[step.checklistKey]);
             const newPartsSpanned = countPartsSpanned(step.newSections);
