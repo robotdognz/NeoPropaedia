@@ -12,8 +12,10 @@ Current state after fixes:
 
 - Part 1 matched recommendations: `46`
 - Part 1 unmatched recommendations: `0`
+- Part 1 human page review: `verified`
 - Part 2 matched recommendations: `43`
 - Part 2 unmatched recommendations: `0`
+- Part 2 human page review: `verified`
 
 The earlier unmatched titles were caused by upstream 2010 contents-pipeline misses, not by the
 Propaedia extraction logic itself.

@@ -20,6 +20,10 @@ Generated files:
 
 - `article_identity_worklist.csv`
 - `propaedia_page_capture_index.csv`
+- `propaedia_suggested_reading_page_review.csv`
+- `propaedia_suggested_reading_risk_review.csv`
+- `propaedia_suggested_reading_page_review_human.csv`
+- `propaedia_suggested_reading_risk_review_human.csv`
 - `article_contents_capture_worklist.csv`
 - `propaedia_mapping_worklist.csv`
 - `britannica_breakdown_worklist.csv`
@@ -33,4 +37,12 @@ Useful commands:
 ```bash
 python3 pipeline/macropaedia_2010/export_project_worklists.py
 python3 pipeline/macropaedia_2010/apply_project_worklists.py
+python3 pipeline/macropaedia_2010/export_propaedia_review_worklists.py
 ```
+
+Suggested review flow for Propaedia pages:
+
+1. Open `propaedia_suggested_reading_risk_review_human.csv` first and clear the risky rows.
+2. Then work down `propaedia_suggested_reading_page_review_human.csv` and mark each page `verified`.
+3. Only if a page disagrees with the extraction do you need to fill `missing_titles`, `extra_titles`,
+   or `notes`.

@@ -8,6 +8,7 @@ import csv
 import sqlite3
 from pathlib import Path
 
+from export_propaedia_review_worklists import export_review_worklists
 from paths import PROJECT_DATA_DIR
 
 
@@ -265,8 +266,11 @@ def main() -> None:
     export_mapping_worklist(connection)
     export_britannica_worklist(connection)
     export_volume_index(connection)
+    page_count, risk_count = export_review_worklists()
     connection.close()
     print(f"Exported worklists from {args.db}")
+    print(f"Exported Propaedia page review rows: {page_count}")
+    print(f"Exported Propaedia risk review rows: {risk_count}")
 
 
 if __name__ == "__main__":

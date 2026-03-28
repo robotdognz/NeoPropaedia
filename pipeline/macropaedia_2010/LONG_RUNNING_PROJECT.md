@@ -99,6 +99,10 @@ Generated outputs:
 - `data/macropaedia_2010/project/macropaedia_2010_project.sqlite`
 - `data/macropaedia_2010/project/article_identity_worklist.csv`
 - `data/macropaedia_2010/project/propaedia_page_capture_index.csv`
+- `data/macropaedia_2010/project/propaedia_suggested_reading_page_review.csv`
+- `data/macropaedia_2010/project/propaedia_suggested_reading_risk_review.csv`
+- `data/macropaedia_2010/project/propaedia_suggested_reading_page_review_human.csv`
+- `data/macropaedia_2010/project/propaedia_suggested_reading_risk_review_human.csv`
 - `data/macropaedia_2010/project/article_contents_capture_worklist.csv`
 - `data/macropaedia_2010/project/propaedia_mapping_worklist.csv`
 - `data/macropaedia_2010/project/britannica_breakdown_worklist.csv`
@@ -114,6 +118,12 @@ Refresh the tracked Propaedia page photo index with:
 
 ```bash
 python3 pipeline/macropaedia_2010/refresh_propaedia_page_capture_index.py
+```
+
+Export the human-review worklists for extracted Propaedia suggested-reading data with:
+
+```bash
+python3 pipeline/macropaedia_2010/export_propaedia_review_worklists.py
 ```
 
 Apply edited worklists back into the database with:
@@ -161,6 +171,28 @@ For every article:
 Primary worklist:
 
 - `article_contents_capture_worklist.csv`
+
+### Phase 3.5. Visually verify Propaedia suggested-reading extraction
+
+For every photographed Propaedia page with extracted recommendations:
+
+1. open the page photo
+2. compare the visible `Suggested reading in the Encyclopædia Britannica` list to
+   `propaedia_suggested_reading_page_review.csv`
+3. mark the page `verified` if the extracted list is complete
+4. fill `missing_titles` or `extra_titles` if anything is off
+5. check `propaedia_suggested_reading_risk_review.csv` first for the pages that needed line
+   recombination or title normalization
+
+Primary tracked files:
+
+- `propaedia_suggested_reading_page_review.csv`
+- `propaedia_suggested_reading_risk_review.csv`
+
+Preferred human-facing files:
+
+- `propaedia_suggested_reading_page_review_human.csv`
+- `propaedia_suggested_reading_risk_review_human.csv`
 
 ### Phase 4. Rebuild Propaedia mappings from scratch
 

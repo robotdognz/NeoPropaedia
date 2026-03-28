@@ -3,6 +3,7 @@
 - Pages captured: `12`
 - Matched recommendations: `43`
 - Unmatched recommendations: `0`
+- Human page review: `verified`
 
 ## Page summaries
 
