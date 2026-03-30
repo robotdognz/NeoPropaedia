@@ -27,9 +27,11 @@ export default function CoverageRings({
   const ringGeometryTransition = 'r 180ms ease, stroke-width 180ms ease';
   const trackTransition = `${ringGeometryTransition}, stroke 180ms ease, stroke-opacity 180ms ease`;
   const fillTransition = 'stroke-dashoffset 0.8s ease-out, stroke-opacity 0.4s ease-out';
+  const zeroFadeOutTransition = 'stroke-dashoffset 0.8s ease-out, stroke-opacity 0.4s ease-in 0.4s';
   const opacityTransition = 'stroke-opacity 0.4s ease-out';
   const arcTransition = `${fillTransition}, transform 180ms ease, ${ringGeometryTransition}`;
-  const zeroArcHideDelayMs = 850;
+  const zeroFadeOutArcTransition = `${zeroFadeOutTransition}, transform 180ms ease, ${ringGeometryTransition}`;
+  const zeroArcHideDelayMs = 820;
   const [animated, setAnimated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const ringFingerprint = rings.map(r => `${r.label}:${r.count}/${r.total}`).join(',');
@@ -107,7 +109,7 @@ export default function CoverageRings({
     return () => cancelAnimationFrame(timer);
   }, []);
 
-  // When a ring's fraction goes to 0, delay hiding it until the CSS transition finishes
+  // When a ring's fraction goes to 0, delay hiding it until the collapse and fade-out finish.
   useEffect(() => {
     rings.forEach((ring) => {
       const fraction = ring.total > 0 ? ring.count / ring.total : 0;
@@ -118,7 +120,7 @@ export default function CoverageRings({
         if (existing) { clearTimeout(existing); hideTimers.current.delete(ring.label); }
         setHiddenArcs((prev) => { if (!prev.has(ring.label)) return prev; const next = new Set(prev); next.delete(ring.label); return next; });
       } else if (!hiddenArcs.has(ring.label) && !existing) {
-        // Hide after the 0.8s dashoffset transition completes + 0.35s opacity fade
+        // Hide after the zero-transition finishes so the round cap stays visible while collapsing.
         const id = window.setTimeout(() => {
           hideTimers.current.delete(ring.label);
           setHiddenArcs((prev) => new Set(prev).add(ring.label));
@@ -242,15 +244,20 @@ export default function CoverageRings({
             startRotation = 0;
           }
 
-          // Keep a tiny dot while fading out so opacity transition has something visible
-          if (fraction === 0 && !hiddenArcs.has(ring.label) && animated) {
-            fraction = 0.001;
-          }
-
           // New rings start at 0 for one frame so CSS transition animates them in
           if (newRingLabelsRef.current.has(ring.label)) {
             fraction = 0;
           }
+
+          const isArcHidden = hiddenArcs.has(ring.label);
+          const dashoffset = isArcHidden ? 1 : (animated ? 1 - fraction : 1);
+          const shouldFadeOutToZero = rawFraction === 0 && !isArcHidden;
+          const arcOpacity = isArcHidden
+            ? '0'
+            : shouldFadeOutToZero
+              ? '0'
+              : (isActive ? '1' : '0.82');
+          const arcLinecap = isArcHidden ? 'butt' : 'round';
 
           return (
             <g key={ring.label}>
@@ -265,27 +272,31 @@ export default function CoverageRings({
                   transition: freezeTransitions || isSnappingGeometry ? 'none' : trackTransition,
                 }}
               />
-              {/* Animated arc — hidden after transition completes at zero to prevent round-cap dot on mobile */}
+              {/* Hidden arcs stay fully collapsed so they can animate back in from zero. */}
               <circle
                 cx={center} cy={center} r={radius}
                 fill="none"
                 pathLength={1}
                 stroke={ring.color}
-                stroke-opacity={hiddenArcs.has(ring.label) ? '0' : (isActive ? '1' : '0.82')}
+                stroke-opacity={arcOpacity}
                 stroke-width={width}
-                stroke-linecap="round"
+                stroke-linecap={arcLinecap}
                 stroke-dasharray="1 1"
-                stroke-dashoffset={animated ? 1 - fraction : 1}
+                stroke-dashoffset={dashoffset}
                 style={{
                   transform: `rotate(${-90 + startRotation}deg)`,
                   transformOrigin: `${center}px ${center}px`,
                   transition: freezeTransitions
                     ? 'none'
+                    : isArcHidden
+                      ? 'none'
                     : isSnappingAll
                       ? opacityTransition
                       : isSnappingGeometry
                       ? fillTransition
-                      : arcTransition,
+                      : shouldFadeOutToZero
+                        ? zeroFadeOutArcTransition
+                        : arcTransition,
                 }}
               />
             </g>
