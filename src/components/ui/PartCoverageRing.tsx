@@ -33,7 +33,7 @@ export default function PartCoverageRing({
   const segDeg = 360 / segmentCount;
 
   useEffect(() => {
-    // Trigger animation after mount — subsequent data changes
+    // Trigger animation after mount - subsequent data changes
     // transition smoothly via CSS without resetting to zero
     const id = requestAnimationFrame(() => {
       requestAnimationFrame(() => setAnimated(true));
@@ -78,13 +78,13 @@ export default function PartCoverageRing({
 
         return (
           <g key={seg.partNumber}>
-            {/* Background track — rounded, low opacity */}
+            {/* Background track - rounded, low opacity */}
             <path
               d={segPath}
               fill={seg.colorHex}
               fill-opacity="0.14"
             />
-            {/* Fill — same shape, clipped by expanding circle from center */}
+            {/* Fill - same shape, clipped by expanding circle from center */}
             <path
               d={segPath}
               fill={seg.colorHex}

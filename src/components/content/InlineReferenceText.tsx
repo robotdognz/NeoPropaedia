@@ -154,7 +154,7 @@ function collectMatches(text: string, baseUrl: string, currentHref?: string, sec
     }
 
     // 3. Bare path references that inherit the section code from a preceding reference
-    // e.g., [see 222.B. and C.] — "C." inherits section code 222
+    // e.g., [see 222.B. and C.] - "C." inherits section code 222
     // Also handles intra-section refs like [see C., below] when sectionCode prop is set
     const implicitCode = lastSectionCode || (hasAboveBelow ? sectionCode : null);
     if (implicitCode) {

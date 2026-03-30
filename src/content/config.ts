@@ -95,6 +95,7 @@ const essaysCollection = defineCollection({
 const vsiCatalogCollection = defineCollection({
   loader: glob({ pattern: '*.json', base: './src/content/vsi' }),
   schema: z.object({
+    fetchedAt: z.string().optional(),
     titles: z.array(z.object({
       title: z.string(),
       author: z.string(),

@@ -1,9 +1,33 @@
 ---
 import BaseLayout from '../components/layout/BaseLayout.astro';
 import ProgressBackup from '../components/content/ProgressBackup';
+import { getCollection } from 'astro:content';
+import iotCatalog from '../data/iot-catalog.json';
+import wikipediaCatalog from '../data/wikipedia-catalog.json';
+
+const vsiCatalogEntries = await getCollection('vsi');
+const vsiTitleCount = vsiCatalogEntries.flatMap((entry) => entry.data.titles).length;
+const iotEpisodeCount = iotCatalog.episodes.length;
+const wikipediaArticleCount = wikipediaCatalog.articles.length;
+const sourceDateFormatter = new Intl.DateTimeFormat('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+  timeZone: 'UTC',
+});
+
+function formatSourceDate(value?: string | null): string | null {
+  if (!value) return null;
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? null : sourceDateFormatter.format(date);
+}
+
+const vsiFetchedLabel = formatSourceDate(vsiCatalogEntries[0]?.data.fetchedAt);
+const iotFetchedLabel = formatSourceDate(iotCatalog.fetchedAt);
+const wikipediaFetchedLabel = formatSourceDate(wikipediaCatalog.fetchedAt);
 ---
 
-<BaseLayout title="About — Propaedia" description="About this web edition of the Propaedia Outline of Knowledge">
+<BaseLayout title="About - Propaedia" description="About this web edition of the Propaedia Outline of Knowledge">
   <div class="max-w-3xl mx-auto px-4 py-12">
     <h1 class="text-4xl font-serif font-bold text-gray-900 mb-8">About This Project</h1>
 
@@ -18,93 +42,140 @@ import ProgressBackup from '../components/content/ProgressBackup';
       </p>
       <p>
         Unlike a traditional encyclopedia arranged alphabetically, the Propaedia presents
-        knowledge hierarchically — showing how subjects relate to one another within the
+        knowledge hierarchically - showing how subjects relate to one another within the
         broader landscape of human understanding.
       </p>
 
       <h2>This Web Edition</h2>
       <p>
         This site turns the Propaedia into an interactive reading guide. The original
-        knowledge hierarchy is preserved and enriched with three layers of reading
-        recommendations:
+        knowledge hierarchy is preserved, but every Section can now open four different
+        reading collections:
       </p>
       <ul>
-        <li><strong>Oxford Very Short Introductions</strong> — curated book recommendations matched to each Section's subject matter, with relevance scoring and filtering by outline topic</li>
-        <li><strong>Wikipedia Vital Articles</strong> — mapped articles from Wikipedia's curated list of essential topics, scored by relevance to each Section</li>
-        <li><strong>Macropaedia articles</strong> — the original Britannica reading lists from the print edition</li>
+        <li><strong>Oxford Very Short Introductions</strong> - curated books matched to Sections and outline paths</li>
+        <li><strong>BBC In Our Time</strong> - mapped radio episodes and programme pages attached to the same outline</li>
+        <li><strong>Wikipedia Vital Articles</strong> - mapped articles from Wikipedia's curated list of essential topics</li>
+        <li><strong>Macropaedia articles</strong> - the original Britannica reading references from the print edition</li>
       </ul>
       <p>
         Each Section page also includes the original hierarchical subject outline with
         cross-references linking related Sections across the ten Parts.
       </p>
 
-      <h2>The Circle of Learning</h2>
+      <h2>Homepage Modes</h2>
       <p>
-        The homepage features an interactive circle navigator based on Adler's concept
-        that the ten Parts of knowledge form a circle rather than a list. You can drag
-        to rotate the ring, pull any Part into the centre to reframe the circle around
-        it, and explore how different fields connect.
+        The homepage now has three different ways into the outline, each built for a
+        different style of study:
       </p>
+      <ul>
+        <li><strong>Whole Outline</strong> - a coverage-first path that suggests the next unread book, article, or episode based on how much new territory it opens across the outline</li>
+        <li><strong>Selected Fields</strong> - Adler's circle navigator, where you can centre one Part, compare it with another, and surface bridge readings that connect both</li>
+        <li><strong>Specific Topic</strong> - direct browsing by Part, Division, and Section, with essays and recommendation panels tied to the exact outline area you are exploring</li>
+      </ul>
       <p>
-        When a Part is placed at the centre and another is rotated to the top, the panel
-        below the circle shows how they connect — both through cross-referenced Sections
-        and through <strong>bridge readings</strong>, books and articles that were
-        independently recommended for Sections in both Parts. These surface resources that
-        connect two fields of knowledge, ranked by how many Sections across both Parts
-        recommend them.
+        In the Selected Fields mode, when one Part is placed at the centre and another is
+        rotated to the top, the panel below the circle shows how they connect through
+        cross-referenced Sections and through <strong>bridge readings</strong> that were
+        independently recommended in both Parts.
       </p>
 
       <h2>Reading Tools</h2>
       <p>
-        A <strong>reading preference</strong> setting in the sidebar lets you choose your
-        preferred reading type (Oxford VSI, Wikipedia, BBC In Our Time, or Macropaedia). This controls which
-        recommendations open and scroll into view when you click an outline item, and which
-        bridge readings are shown first on the homepage.
+        A <strong>reading preference</strong> setting in the sidebar stores your default
+        reading type (Oxford VSI, Wikipedia, BBC In Our Time, or Macropaedia) across the
+        outline pages.
+      </p>
+      <p>
+        Section, Division, and Part pages each have their own reading-type selector inside
+        the recommendation panel, and the homepage has separate selectors in Whole Outline
+        and Selected Fields. Changing any of these selectors updates the shared default, so
+        the same reading type is shown first elsewhere whenever it is available.
       </p>
       <p>
         A <strong>reading checklist</strong> lets you mark books, articles, and episodes as done.
-        Progress is saved locally in your browser and reflected across the site — checked
-        items are excluded from bridge recommendations on the homepage, and checkboxes
+        Progress is saved locally in your browser and reflected across the site - checked
+        items are excluded from homepage paths and bridge recommendations, and checkboxes
         appear on individual reading pages.
       </p>
 
       <h2>Reading Recommendations</h2>
       <p>
-        The Oxford VSI, Wikipedia, and BBC In Our Time recommendations are matched to Sections using a
-        combination of keyword analysis and AI-generated mappings. Each recommendation
-        includes a rationale explaining why it was matched. Clicking an outline item
-        filters the recommendations to show only those relevant to that specific topic.
+        The Oxford VSI, Wikipedia, and BBC In Our Time recommendations are matched to Sections
+        using build-time scoring plus AI-assisted mappings. Macropaedia recommendations come
+        from the original Britannica references already attached to the Propaedia. Each
+        mapped recommendation includes a rationale explaining why it was matched. Clicking
+        an outline item filters the list to that branch of the outline and re-ranks the
+        matched items inside the current selection.
       </p>
 
       <details class="mt-2 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3">
         <summary class="cursor-pointer text-sm font-semibold text-gray-700">How relevance is calculated</summary>
         <div class="mt-3 space-y-3 text-sm text-gray-600">
           <p>
-            Each book or article receives a relevance score based on how closely it
-            relates to the Section you are viewing. A resource whose title directly
-            names the topic scores highest. Beyond the title, the scoring considers
-            subject keywords and how well the resource's description aligns with the
-            topics covered in the Section's outline.
+            Each book, article, or episode receives a score based on how closely it relates
+            to the Section you are viewing. The scoring gives the strongest weight to direct
+            title matches, then adds weight for subject terms, keywords, mapped outline paths,
+            and overlap with the language used in the Section title and outline.
           </p>
           <p>
-            When you click an outline item to filter the list, the scoring also
-            considers the sub-topics beneath that item. A resource that touches many
-            of those sub-topics ranks higher than one that strongly matches just one
-            narrow area.
+            When you click an outline item to filter the list, the scoring also considers the
+            sub-topics beneath that item. A resource that touches several child topics ranks
+            above one that only matches a narrow fragment of the current branch.
           </p>
           <p>
-            The relevance percentage shown on each card is relative — the best-scoring
+            The relevance percentage shown on each card is relative - the best-scoring
             resource in the current view is always shown as 100%, and the others are
             scaled proportionally.
           </p>
         </div>
       </details>
-      <p>
-        The VSI catalogue and keyword data were last updated in <strong>March 2025</strong>,
-        covering 793 titles from the Oxford Very Short Introductions series.
-        The Wikipedia Vital Articles data was last updated in <strong>March 2026</strong>,
-        covering 998 articles.
-      </p>
+
+      <details class="mt-3 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3">
+        <summary class="cursor-pointer text-sm font-semibold text-gray-700">How Whole Outline recommendations work</summary>
+        <div class="mt-3 space-y-3 text-sm text-gray-600">
+          <p>
+            The Whole Outline tool ignores items you have already marked done and asks a
+            coverage-first question: which unread item adds the largest number of currently
+            uncovered Parts, Divisions, Sections, or Subsections for the selected reading type?
+          </p>
+          <p>
+            After each suggested step, the covered area is updated and the next step is
+            recalculated from what remains. If two items add the same amount of new coverage,
+            the tie is broken in favour of the one whose new coverage is spread more widely
+            across the outline, and then the one attached to more Sections overall.
+          </p>
+        </div>
+      </details>
+
+      <details class="mt-3 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3">
+        <summary class="cursor-pointer text-sm font-semibold text-gray-700">How Part and Division recommendations are aggregated</summary>
+        <div class="mt-3 space-y-3 text-sm text-gray-600">
+          <p>
+            The recommendation panels on Part and Division pages are not separate AI runs.
+            They are rollups built from the Section-level matches already attached to the outline.
+          </p>
+          <p>
+            On a Part page, a reading ranks higher when it appears across more Divisions in
+            that Part, covers more Sections, and spreads that coverage evenly rather than being
+            concentrated in one corner. On a Division page, the same idea is applied one level
+            down: readings are ranked by how many Sections in that Division they cover, with
+            extra weight for broader mapped-path coverage.
+          </p>
+          <p>
+            The relevance percentage shown on those cards is relative to the strongest item in
+            the current Part or Division list, not a global score across the whole site.
+          </p>
+        </div>
+      </details>
+
+      <h2>Source Data</h2>
+      <ul>
+        <li><strong>Oxford Very Short Introductions</strong> - {vsiTitleCount} titles in the current catalogue{vsiFetchedLabel ? <> fetched from Oxford Academic on <strong>{vsiFetchedLabel}</strong></> : null}. Where the source metadata includes it, individual book pages show the book's edition and release year.</li>
+        <li><strong>BBC In Our Time</strong> - {iotEpisodeCount} episodes{iotFetchedLabel ? <> fetched from BBC programme pages on <strong>{iotFetchedLabel}</strong></> : null}.</li>
+        <li><strong>Wikipedia Vital Articles</strong> - {wikipediaArticleCount} articles{wikipediaFetchedLabel ? <> last fetched on <strong>{wikipediaFetchedLabel}</strong></> : null}.</li>
+        <li><strong>Macropaedia</strong> - original article references preserved from the printed Propaedia/Britannica pairing.</li>
+      </ul>
 
       <h2 id="your-reading-progress">Your Reading Progress</h2>
     </div>
@@ -119,8 +190,7 @@ import ProgressBackup from '../components/content/ProgressBackup';
         This site is built with <a href="https://astro.build">Astro</a> and
         <a href="https://preactjs.com">Preact</a>, uses static site generation for fast
         loading, and is hosted on GitHub Pages. Search is powered by
-        <a href="https://pagefind.app">Pagefind</a>. All data is processed at build time
-        — there are no external API calls or server dependencies at runtime.
+        <a href="https://pagefind.app">Pagefind</a>. All data is processed at build time - there are no external API calls or server dependencies at runtime.
       </p>
     </div>
   </div>

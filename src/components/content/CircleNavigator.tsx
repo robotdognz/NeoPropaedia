@@ -31,7 +31,7 @@ const VIEWBOX_INSET = 32;
 const CENTER = VIEWBOX_SIZE / 2;
 const OUTER_RADIUS = 188;
 const INNER_RADIUS = 106;
-const INTERACTIVE_RADIUS = 332; // Touch/click boundary — covers labels and surrounding area
+const INTERACTIVE_RADIUS = 332; // Touch/click boundary - covers labels and surrounding area
 const LABEL_BOX_WIDTH = 112;
 const LABEL_WRAP_LENGTH = 16;
 const LABEL_MAX_LINES = 2;
@@ -413,7 +413,7 @@ export default function CircleNavigator({
   const rotationDegreesRef = useRef(0);
   const coverageSourceCacheRef = useRef(coverageSourceCache);
   const coverageSourceLoadingRef = useRef<Set<ReadingType>>(new Set());
-  // selectedPartNumber removed — focus is always topPart (no centre) or centerPart (with centre)
+  // selectedPartNumber removed - focus is always topPart (no centre) or centerPart (with centre)
   const [centerPreviewPartNumber, setCenterPreviewPartNumber] = useState<number | null>(null);
   const [morphT, setMorphT] = useState(0);
   const morphTRef = useRef(0);
@@ -973,7 +973,7 @@ export default function CircleNavigator({
     }
     centerPreviewRotationRef.current = snapped;
     setCenterPreviewPartNumber(partNumber);
-    // After morph preview completes, commit silently — the preview already
+    // After morph preview completes, commit silently - the preview already
     // showed the rearrangement, so no post-swap animation needed
     cancelCenterCommitTimeout();
     centerCommitTimeoutRef.current = window.setTimeout(() => {
@@ -1054,7 +1054,7 @@ export default function CircleNavigator({
     if (!dragState || dragState.pointerId !== pointerId) return;
 
     if (dragState.draggingFromCenter && centerRemovePreview) {
-      // Dragged center disc outward past threshold — commit removal without replay animation
+      // Dragged center disc outward past threshold - commit removal without replay animation
       // Snap directly to the 10-part layout (preview already showed the transition)
       const commit = buildDragRemoveFromCenterCommit();
       if (commit) {
@@ -1062,10 +1062,10 @@ export default function CircleNavigator({
         applyTransitionCommit(commit);
       }
     } else if (dragState.draggingFromCenter) {
-      // Dragged center disc but returned — cancel
+      // Dragged center disc but returned - cancel
       resetCenterRemovePreviewState();
     } else if (!dragState.rotateOnly && dragState.readyForCenter) {
-      // Preview already showed the rearrangement — snap directly without replay animation
+      // Preview already showed the rearrangement - snap directly without replay animation
       const partToCenter = dragState.activePartNumber;
       const commit = buildDragMoveToCenterCommit(partToCenter);
       resetMoveToCenterPreviewState({ skipReverse: true });
@@ -1204,7 +1204,7 @@ export default function CircleNavigator({
 
     if (!dragState.rotateOnly && (!hasCenter || dragState.activePartNumber !== centerPartNumber) && nextRadius <= centerZoneThreshold) {
       if (!dragState.readyForCenter) {
-        // First entry into center zone — snap rotation and show preview
+        // First entry into center zone - snap rotation and show preview
         const currentRotation = rotationDegreesRef.current;
         const snapped = snapRotation(currentRotation, segmentAngle);
         centerPreviewRotationRef.current = snapped;
@@ -1364,7 +1364,7 @@ export default function CircleNavigator({
           <title>Interactive circle navigation for the Propaedia</title>
 
           <circle cx={CENTER} cy={CENTER} r={OUTER_RADIUS + 22} fill="#f8fafc" />
-          {/* Invisible interactive ring for grab cursor — only within drag zone */}
+          {/* Invisible interactive ring for grab cursor - only within drag zone */}
           <path
             d={donutSlicePath(CENTER, CENTER, hasCenter ? CENTER_DISC_RADIUS : effectiveInnerRadius, INTERACTIVE_RADIUS, 0, 359.9)}
             fill="transparent"
@@ -1866,7 +1866,7 @@ export default function CircleNavigator({
                         : 1
                 }
               />
-              {/* Focus outline on centre disc — show when centre exists, or when morph preview is nearly complete */}
+              {/* Focus outline on centre disc - show when centre exists, or when morph preview is nearly complete */}
               {showCenterDiscOutline && (
                 <circle
                   cx={CENTER}

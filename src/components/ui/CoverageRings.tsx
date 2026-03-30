@@ -72,7 +72,7 @@ export default function CoverageRings({
     }
   }, [activeRingLabel, ringFingerprint]);
 
-  // Detect rings that just appeared — suppress them for one frame so they animate from 0
+  // Detect rings that just appeared - suppress them for one frame so they animate from 0
   const prevRingLabelsRef = useRef<Set<string>>(new Set(rings.map(r => r.label)));
   const newRingLabelsRef = useRef<Set<string>>(new Set());
   const currentLabels = rings.map(r => r.label);
@@ -101,7 +101,7 @@ export default function CoverageRings({
   const hideTimers = useRef<Map<string, number>>(new Map());
 
   useEffect(() => {
-    // Trigger animation after mount — subsequent data changes
+    // Trigger animation after mount - subsequent data changes
     // transition smoothly via CSS without resetting to zero
     const timer = requestAnimationFrame(() => {
       requestAnimationFrame(() => setAnimated(true));
@@ -212,7 +212,7 @@ export default function CoverageRings({
           // appear at the same angle as the base (non-boosted) ring.
           const circumference = 2 * Math.PI * radius;
           const isPartial = rawFraction > 0 && rawFraction < 1;
-          // Always compensate for the active ring — rotation is invisible once opacity fades
+          // Always compensate for the active ring - rotation is invisible once opacity fades
           const needsCompensation = (isPartial || rawFraction === 0) && width > ringWidth;
 
           let fraction: number;
@@ -228,12 +228,12 @@ export default function CoverageRings({
               fraction = idealFraction;
               startRotation = startComp * 360;
             } else {
-              // Arc too small — just align start, clamp to a dot only if there's real coverage
+              // Arc too small - just align start, clamp to a dot only if there's real coverage
               startRotation = startComp * 360;
               fraction = rawFraction > 0 ? Math.max(0.001, rawFraction - startComp) : 0;
             }
           } else if (width > ringWidth) {
-            // Full circle (rawFraction === 1) — rotationally invariant, but keep
+            // Full circle (rawFraction === 1) - rotationally invariant, but keep
             // the same startRotation so it doesn't visibly snap during transitions
             const baseRadius = radius + (width - ringWidth) / 2;
             const baseCirc = 2 * Math.PI * baseRadius;

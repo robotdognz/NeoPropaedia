@@ -348,6 +348,7 @@ function updateCatalog(catalog, progress) {
     if (best.keywords?.length > 0 || best.subjects?.length > 0 || best.abstract) updated++;
   }
 
+  catalog.fetchedAt = new Date().toISOString();
   writeFileSync(CATALOG_PATH, JSON.stringify(catalog, null, 2) + '\n');
   console.log(`Updated ${updated} entries in catalog.json`);
 }

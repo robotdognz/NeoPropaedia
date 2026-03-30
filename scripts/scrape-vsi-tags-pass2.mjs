@@ -361,6 +361,7 @@ async function main() {
       if (sv.subjects?.length > 0) entry.subjects = sv.subjects;
       updated++;
     }
+    catalog.fetchedAt = new Date().toISOString();
     writeFileSync(CATALOG_PATH, JSON.stringify(catalog, null, 2) + '\n');
     console.log(`Updated ${updated} entries in catalog.json`);
   } finally {

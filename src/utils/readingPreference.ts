@@ -1,6 +1,5 @@
 /**
- * Site-wide reading type preference.
- * Determines which recommendation type to auto-open/scroll to.
+ * Site-wide default reading type shared across recommendation views.
  */
 
 export type ReadingType = 'vsi' | 'wikipedia' | 'iot' | 'macropaedia';

@@ -120,7 +120,7 @@ function scoreMapping(mapping: SearchableVsiMapping, selection: OutlineSelection
     score += selection.outlinePath.includes('.') ? 5 : 4;
   }
 
-  // VSI title matching the selection text — strongest signal
+  // VSI title matching the selection text - strongest signal
   const titleMatches = countTokenMatches(titleTokens, selectionTokens);
   score += titleMatches * 5;
 
@@ -219,5 +219,5 @@ export function sortByDefaultRelevance<T extends SearchableVsiMapping>(
   return scored;
 }
 
-/** Tokenize text — exported for use in build-time scoring. */
+/** Tokenize text - exported for use in build-time scoring. */
 export { tokenize };

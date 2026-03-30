@@ -3,7 +3,7 @@ const LEADING_MEDIA_RE = /^(?:thumb|frameless|upright(?:=[^|\s]+)?|left|right)\|
 const BASIC_ENTITY_REPLACEMENTS: Array<[RegExp, string]> = [
   [/&nbsp;/g, ' '],
   [/&ndash;/g, '–'],
-  [/&mdash;/g, '—'],
+  [/&mdash;/g, ' - '],
   [/&minus;/g, '−'],
   [/&quot;/g, '"'],
   [/&#39;/g, "'"],

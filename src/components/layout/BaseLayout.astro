@@ -72,6 +72,100 @@ const outline = await loadOutlineGraph();
 
     <Footer />
 
+    <script is:inline>
+      (function() {
+        var EM_DASH = String.fromCharCode(8212);
+        var SKIP_TAGS = /^(SCRIPT|STYLE|NOSCRIPT|TEXTAREA)$/;
+
+        function normalizeDashText(value) {
+          if (!value || (value.indexOf(EM_DASH) === -1 && value.indexOf('&mdash;') === -1)) {
+            return value;
+          }
+
+          return value
+            .replace(/\s*&mdash;\s*/g, ' - ')
+            .replace(new RegExp('\\s*' + EM_DASH + '\\s*', 'g'), ' - ');
+        }
+
+        function normalizeTextNode(node) {
+          if (!node || !node.nodeValue) return;
+          var parent = node.parentNode;
+          if (parent && parent.nodeType === Node.ELEMENT_NODE && SKIP_TAGS.test(parent.tagName)) {
+            return;
+          }
+
+          var nextValue = normalizeDashText(node.nodeValue);
+          if (nextValue !== node.nodeValue) {
+            node.nodeValue = nextValue;
+          }
+        }
+
+        function normalizeAttributes(element) {
+          if (!(element instanceof HTMLElement)) return;
+
+          ['title', 'aria-label', 'placeholder'].forEach(function(attributeName) {
+            var currentValue = element.getAttribute(attributeName);
+            if (!currentValue) return;
+
+            var nextValue = normalizeDashText(currentValue);
+            if (nextValue !== currentValue) {
+              element.setAttribute(attributeName, nextValue);
+            }
+          });
+        }
+
+        function normalizeTree(root) {
+          if (!root) return;
+
+          if (root.nodeType === Node.TEXT_NODE) {
+            normalizeTextNode(root);
+            return;
+          }
+
+          if (root.nodeType !== Node.ELEMENT_NODE && root.nodeType !== Node.DOCUMENT_FRAGMENT_NODE) {
+            return;
+          }
+
+          if (root.nodeType === Node.ELEMENT_NODE) {
+            var elementRoot = root;
+            if (SKIP_TAGS.test(elementRoot.tagName)) return;
+            normalizeAttributes(elementRoot);
+            elementRoot.querySelectorAll('[title],[aria-label],[placeholder]').forEach(normalizeAttributes);
+          }
+
+          var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+          while (walker.nextNode()) {
+            normalizeTextNode(walker.currentNode);
+          }
+        }
+
+        document.title = normalizeDashText(document.title);
+        normalizeTree(document.body);
+
+        var observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type === 'characterData') {
+              normalizeTextNode(mutation.target);
+            }
+
+            mutation.addedNodes.forEach(normalizeTree);
+
+            if (mutation.type === 'attributes' && mutation.target instanceof HTMLElement) {
+              normalizeAttributes(mutation.target);
+            }
+          });
+        });
+
+        observer.observe(document.body, {
+          subtree: true,
+          childList: true,
+          characterData: true,
+          attributes: true,
+          attributeFilter: ['title', 'aria-label', 'placeholder'],
+        });
+      })();
+    </script>
+
     <script is:inline define:vars={{ swPath: `${base}/sw.js` }}>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register(swPath)
@@ -144,7 +238,7 @@ const outline = await loadOutlineGraph();
           var root = document.querySelector('[data-pagefind-body]') || document.body;
           var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
 
-          // Collect first — modifying the DOM during walk skips nodes
+          // Collect first - modifying the DOM during walk skips nodes
           var textNodes = [];
           while (walker.nextNode()) textNodes.push(walker.currentNode);
 
