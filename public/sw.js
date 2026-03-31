@@ -130,16 +130,25 @@ async function updateDebugState(clientId, request, source, startedAt) {
 }
 
 async function matchOfflineRequest(cache, request, ignoreSearch) {
-  const directMatch = await cache.match(request, { ignoreSearch });
-  if (directMatch || !ignoreSearch) {
-    return directMatch;
+  if (!ignoreSearch) {
+    return cache.match(request);
   }
 
   const requestUrl = new URL(request.url);
+  requestUrl.search = '';
+  requestUrl.hash = '';
+
+  const candidates = [requestUrl.toString()];
   if (!requestUrl.pathname.endsWith('/')) {
     requestUrl.pathname += '/';
-    const slashMatch = await cache.match(requestUrl.toString(), { ignoreSearch: true });
-    if (slashMatch) return slashMatch;
+    candidates.push(requestUrl.toString());
+  }
+
+  for (const candidate of candidates) {
+    const match = await cache.match(candidate);
+    if (match) {
+      return match;
+    }
   }
 
   return null;
