@@ -374,6 +374,31 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
   }
 
   const hasOfflineDownload = Boolean(activeVersion) || cachedCount > 0;
+
+  if (status === 'unsupported') {
+    return (
+      <div class="rounded-[1.75rem] border border-amber-200 bg-amber-50 px-5 py-5 text-sm text-amber-900">
+        This browser does not expose the storage APIs needed for a full offline download.
+      </div>
+    );
+  }
+
+  if (status === 'error') {
+    return (
+      <div class="rounded-[1.75rem] border border-red-200 bg-red-50 px-5 py-5 text-sm text-red-700">
+        {errorMessage || 'Could not load the offline manifest.'}
+      </div>
+    );
+  }
+
+  if (status === 'loading' || !manifest) {
+    return (
+      <div class="rounded-[1.75rem] border border-slate-200 bg-slate-50 px-5 py-5 text-sm text-slate-600">
+        Loading offline download details...
+      </div>
+    );
+  }
+
   const hasPendingUpdate = Boolean(activeVersion && manifest && activeVersion !== manifest.version);
   const showReplaceButton = hasPendingUpdate || (quotaFailure && Boolean(activeVersion));
   const statusTitle = status === 'complete'
@@ -427,38 +452,6 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
     : showReplaceButton
       ? 'If this device is low on storage, replace the older offline copy instead of keeping both.'
       : 'Part and Division pages are already available offline by default.';
-
-  if (status === 'unsupported') {
-    return (
-      <div class="rounded-[1.75rem] border border-amber-200 bg-amber-50 px-5 py-5 text-sm text-amber-900">
-        This browser does not expose the storage APIs needed for a full offline download.
-      </div>
-    );
-  }
-
-  if (status === 'loading' || !manifest) {
-    if (status === 'error') {
-      return (
-        <div class="rounded-[1.75rem] border border-red-200 bg-red-50 px-5 py-5 text-sm text-red-700">
-          {errorMessage || 'Could not load the offline manifest.'}
-        </div>
-      );
-    }
-
-    if (!manifest) {
-      return (
-        <div class="rounded-[1.75rem] border border-red-200 bg-red-50 px-5 py-5 text-sm text-red-700">
-          Could not load the offline manifest.
-        </div>
-      );
-    }
-
-    return (
-      <div class="rounded-[1.75rem] border border-slate-200 bg-slate-50 px-5 py-5 text-sm text-slate-600">
-        Loading offline download details...
-      </div>
-    );
-  }
 
   return (
     <section class="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm">
