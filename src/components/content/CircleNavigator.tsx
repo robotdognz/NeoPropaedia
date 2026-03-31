@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { useCoverageLayerPreferenceState } from '../../hooks/useCoverageLayerPreferenceState';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import { useReadingPreferenceState } from '../../hooks/useReadingPreferenceState';
+import { fetchHomepageCoverageSource } from '../../utils/homepageCoverageSource';
 import type { HomepageCoverageSource } from '../../utils/homepageCoverageTypes';
 import { READING_TYPE_ORDER, type ReadingType } from '../../utils/readingPreference';
 import {
@@ -57,23 +58,6 @@ const homepageCoverageSourceCache = new Map<ReadingType, HomepageCoverageSource>
 
 function joinBaseUrl(baseUrl: string, path: string): string {
   return `${baseUrl.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
-}
-
-async function loadHomepageCoverageSource(
-  type: ReadingType,
-  baseUrl: string,
-): Promise<HomepageCoverageSource> {
-  const cached = homepageCoverageSourceCache.get(type);
-  if (cached) return cached;
-
-  const response = await fetch(joinBaseUrl(baseUrl, `home-coverage/${type}.json`));
-  if (!response.ok) {
-    throw new Error(`Unable to load coverage source for ${type}.`);
-  }
-
-  const source = await response.json() as HomepageCoverageSource;
-  homepageCoverageSourceCache.set(type, source);
-  return source;
 }
 
 function polar(cx: number, cy: number, radius: number, degrees: number) {
@@ -615,7 +599,9 @@ export default function CircleNavigator({
 
     coverageSourceLoadingRef.current.add(type);
     try {
-      const source = await loadHomepageCoverageSource(type, baseUrl);
+      const cached = homepageCoverageSourceCache.get(type);
+      const source = cached ?? await fetchHomepageCoverageSource(type, baseUrl);
+      homepageCoverageSourceCache.set(type, source);
       setCoverageSourceCache((current) => {
         if (current[type]) return current;
         return {

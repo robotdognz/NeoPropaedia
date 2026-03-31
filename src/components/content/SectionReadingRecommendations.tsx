@@ -41,19 +41,10 @@ import {
 import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
 import { slugify } from '../../utils/helpers';
 import type {
-  EnrichedIotEpisode,
-  EnrichedVsiMapping,
-  EnrichedWikiArticle,
+  SectionReadingRecommendationsPayload,
 } from '../../utils/sectionReadingContext';
 
-interface SectionReadingRecommendationsProps {
-  vsiMappings: EnrichedVsiMapping[];
-  wikiArticles: EnrichedWikiArticle[];
-  iotEpisodes: EnrichedIotEpisode[];
-  macropaediaReferences: string[];
-  sectionCode: string;
-  sectionTitle: string;
-  sectionOutlineText?: string;
+export interface SectionReadingRecommendationsProps extends SectionReadingRecommendationsPayload {
   baseUrl: string;
 }
 

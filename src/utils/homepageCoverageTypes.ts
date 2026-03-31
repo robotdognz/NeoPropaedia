@@ -1,5 +1,4 @@
 import type { ReadingSectionSummary } from './readingData';
-import type { CoverageLayer } from './readingLibrary';
 import type { ReadingType } from './readingPreference';
 
 export interface HomepageCoverageEntry {
@@ -14,15 +13,8 @@ export interface HomepageCoverageEntry {
 
 export interface HomepageCoverageSource {
   type: ReadingType;
-  label: string;
-  browseHref: string;
-  browseLabel: string;
-  totalLabel: string;
-  totalDescription: string;
-  completedDescription: string;
   itemSingular: string;
   itemPlural: string;
   includeSubsections: boolean;
-  activeCoverageDescriptions: Partial<Record<CoverageLayer, string>>;
   entries: HomepageCoverageEntry[];
 }

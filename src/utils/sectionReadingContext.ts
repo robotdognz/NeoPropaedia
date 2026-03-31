@@ -18,6 +18,13 @@ interface GroupedRef {
   sectionTitle: string;
 }
 
+export interface SectionReadingSource {
+  sectionCode: string;
+  title: string;
+  outline: any[];
+  macropaediaReferences?: string[];
+}
+
 export interface GroupedReverseReferenceDivision {
   divisionId: string;
   romanNumeral: string;
@@ -71,6 +78,16 @@ export interface EnrichedIotEpisode {
   _score: number;
 }
 
+export interface SectionReadingRecommendationsPayload {
+  vsiMappings: EnrichedVsiMapping[];
+  wikiArticles: EnrichedWikiArticle[];
+  iotEpisodes: EnrichedIotEpisode[];
+  macropaediaReferences: string[];
+  sectionCode: string;
+  sectionTitle: string;
+  sectionOutlineText: string;
+}
+
 interface SectionReadingCaches {
   reverseIndex: Map<string, ReverseReference[]>;
   vsiCatalogLookup: Map<string, any>;
@@ -83,7 +100,7 @@ interface SectionReadingCaches {
 
 let cachesPromise: Promise<SectionReadingCaches> | undefined;
 
-function collectOutlineText(nodes: any[]): string {
+export function collectOutlineText(nodes: any[]): string {
   let text = '';
   for (const node of nodes || []) {
     text += ` ${node.text || ''}`;
@@ -204,20 +221,24 @@ function groupReverseReferences(
   return grouped;
 }
 
-export async function loadSectionReadingContext(section: {
-  sectionCode: string;
-  title: string;
-  outline: any[];
-}): Promise<{
+export async function loadSectionReverseReferences(sectionCode: string): Promise<{
   reverseRefs: ReverseReference[];
   groupedReverseRefs: GroupedReverseReferencePart[];
-  vsiMappings: EnrichedVsiMapping[];
-  wikiArticlesForSection: EnrichedWikiArticle[];
-  iotEpisodesForSection: EnrichedIotEpisode[];
 }> {
   const [outline, caches] = await Promise.all([loadOutlineGraph(), loadCaches()]);
-  const reverseRefs = caches.reverseIndex.get(section.sectionCode) ?? [];
+  const reverseRefs = caches.reverseIndex.get(sectionCode) ?? [];
   const groupedReverseRefs = groupReverseReferences(reverseRefs, outline);
+
+  return {
+    reverseRefs,
+    groupedReverseRefs,
+  };
+}
+
+export async function loadSectionRecommendationsPayload(
+  section: SectionReadingSource,
+): Promise<SectionReadingRecommendationsPayload> {
+  const caches = await loadCaches();
 
   const vsiMappings = (caches.vsiMappingsBySection.get(section.sectionCode) ?? []).map((entry: any) => {
     const catalogEntry = caches.vsiCatalogLookup.get(vsiLookupKey(entry.vsiTitle, entry.vsiAuthor));
@@ -232,8 +253,9 @@ export async function loadSectionReadingContext(section: {
     };
   });
 
-  const sectionTokens = tokenize(`${section.title} ${collectOutlineText(section.outline)}`);
-  let wikiArticlesForSection = (caches.wikiMappingsBySection.get(section.sectionCode) ?? []).map((entry: any) => {
+  const sectionOutlineText = collectOutlineText(section.outline).trim();
+  const sectionTokens = tokenize(`${section.title} ${sectionOutlineText}`);
+  let wikiArticles = (caches.wikiMappingsBySection.get(section.sectionCode) ?? []).map((entry: any) => {
     const catalogEntry = caches.wikiCatalogLookup.get(entry.articleTitle);
     return {
       title: entry.articleTitle,
@@ -259,15 +281,15 @@ export async function loadSectionReadingContext(section: {
     };
   });
 
-  const maxWikiScore = Math.max(...wikiArticlesForSection.map((article) => article._score), 1);
-  wikiArticlesForSection = wikiArticlesForSection
+  const maxWikiScore = Math.max(...wikiArticles.map((article) => article._score), 1);
+  wikiArticles = wikiArticles
     .map((article) => ({
       ...article,
       matchPercent: Math.round(Math.min(article._score / maxWikiScore, 1) * 100),
     }))
     .sort((left, right) => right._score - left._score);
 
-  let iotEpisodesForSection = (caches.iotMappingsBySection.get(section.sectionCode) ?? []).map((entry: any) => {
+  let iotEpisodes = (caches.iotMappingsBySection.get(section.sectionCode) ?? []).map((entry: any) => {
     const catalogEntry = caches.iotCatalogLookup.get(entry.pid);
     const title = catalogEntry?.title ?? entry.episodeTitle;
     const synopsis = catalogEntry?.description ?? catalogEntry?.synopsis;
@@ -292,8 +314,8 @@ export async function loadSectionReadingContext(section: {
     };
   });
 
-  const maxIotScore = Math.max(...iotEpisodesForSection.map((episode) => episode._score), 1);
-  iotEpisodesForSection = iotEpisodesForSection
+  const maxIotScore = Math.max(...iotEpisodes.map((episode) => episode._score), 1);
+  iotEpisodes = iotEpisodes
     .map((episode) => ({
       ...episode,
       matchPercent: Math.round(Math.min(episode._score / maxIotScore, 1) * 100),
@@ -301,10 +323,33 @@ export async function loadSectionReadingContext(section: {
     .sort((left, right) => right._score - left._score);
 
   return {
+    vsiMappings,
+    wikiArticles,
+    iotEpisodes,
+    macropaediaReferences: section.macropaediaReferences ?? [],
+    sectionCode: section.sectionCode,
+    sectionTitle: section.title,
+    sectionOutlineText,
+  };
+}
+
+export async function loadSectionReadingContext(section: SectionReadingSource): Promise<{
+  reverseRefs: ReverseReference[];
+  groupedReverseRefs: GroupedReverseReferencePart[];
+  vsiMappings: EnrichedVsiMapping[];
+  wikiArticlesForSection: EnrichedWikiArticle[];
+  iotEpisodesForSection: EnrichedIotEpisode[];
+}> {
+  const [{ reverseRefs, groupedReverseRefs }, recommendations] = await Promise.all([
+    loadSectionReverseReferences(section.sectionCode),
+    loadSectionRecommendationsPayload(section),
+  ]);
+
+  return {
     reverseRefs,
     groupedReverseRefs,
-    vsiMappings,
-    wikiArticlesForSection,
-    iotEpisodesForSection,
+    vsiMappings: recommendations.vsiMappings,
+    wikiArticlesForSection: recommendations.wikiArticles,
+    iotEpisodesForSection: recommendations.iotEpisodes,
   };
 }

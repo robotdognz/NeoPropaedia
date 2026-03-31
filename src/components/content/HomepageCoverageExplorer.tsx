@@ -2,6 +2,7 @@ import { h } from 'preact';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import { writeChecklistState } from '../../utils/readingChecklist';
+import { fetchHomepageCoverageSource } from '../../utils/homepageCoverageSource';
 import type { HomepageCoverageSource } from '../../utils/homepageCoverageTypes';
 import {
   getCoverageLayerPreference,
@@ -167,11 +168,7 @@ export default function HomepageCoverageExplorer({
     setLoadingType(type);
     setErrorType((current) => current === type ? null : current);
     try {
-      const response = await fetch(`${baseUrl}/home-coverage/${type}.json`);
-      if (!response.ok) {
-        throw new Error(`Failed to load ${type}`);
-      }
-      const source = await response.json() as HomepageCoverageSource;
+      const source = await fetchHomepageCoverageSource(type, baseUrl);
       setSourceCache((current) => ({
         ...current,
         [type]: source,

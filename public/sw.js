@@ -1,10 +1,13 @@
-const CACHE_NAME = 'propaedia-v4';
+const CACHE_NAME = 'propaedia-v5';
 const BASE = '/NeoPropaedia/';
+const OFFLINE_DOWNLOAD_HEADER = 'x-propaedia-offline-download';
+const FULL_SITE_CACHE_PREFIX = 'propaedia-full-site-';
 
-// Pre-cached on install: Part and Division pages for core offline navigation
+// Pre-cached on install: homepage, about, offline, plus Part and Division pages for core offline navigation
 const PRECACHE_URLS = [
   BASE,
   BASE + 'about/',
+  BASE + 'offline/',
   // Part pages
   ...Array.from({ length: 10 }, (_, i) => BASE + 'part/' + (i + 1) + '/'),
   // Division pages are added dynamically by the build step below
@@ -32,7 +35,9 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((names) =>
       Promise.all(
-        names.filter((name) => name !== CACHE_NAME).map((name) => caches.delete(name))
+        names
+          .filter((name) => name !== CACHE_NAME && !name.startsWith(FULL_SITE_CACHE_PREFIX))
+          .map((name) => caches.delete(name))
       )
     ).then(() => self.clients.claim())
   );
@@ -45,12 +50,22 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(
     fetch(event.request)
       .then((response) => {
-        if (response.ok) {
+        if (response.ok && event.request.headers.get(OFFLINE_DOWNLOAD_HEADER) !== '1') {
           const clone = response.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
         }
         return response;
       })
-      .catch(() => caches.match(event.request))
+      .catch(async () => {
+        const ignoreSearch = event.request.mode === 'navigate';
+        const cached = await caches.match(event.request, { ignoreSearch });
+        if (cached) return cached;
+
+        if (event.request.mode === 'navigate') {
+          return (await caches.match(BASE)) || Response.error();
+        }
+
+        return Response.error();
+      })
   );
 });
