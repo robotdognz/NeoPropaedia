@@ -1,9 +1,12 @@
-const CACHE_NAME = 'propaedia-v7';
+const CACHE_NAME = 'propaedia-v8';
 const BASE = '/NeoPropaedia/';
 const OFFLINE_DOWNLOAD_HEADER = 'x-propaedia-offline-download';
 const FULL_SITE_CACHE_PREFIX = 'propaedia-full-site-';
 const OFFLINE_META_CACHE_NAME = 'propaedia-offline-meta-v1';
 const ACTIVE_VERSION_URL = BASE + '__offline-active-version';
+const NAVIGATION_CACHE_TIMEOUT_MS = 300;
+const DATA_CACHE_TIMEOUT_MS = 400;
+const ASSET_CACHE_TIMEOUT_MS = 100;
 
 // Pre-cached on install: homepage, about, offline, plus Part and Division pages for core offline navigation
 const PRECACHE_URLS = [
@@ -91,6 +94,37 @@ async function matchAnyOfflineCache(request, ignoreSearch) {
   };
 }
 
+function cacheFallbackDelay(request) {
+  const pathname = new URL(request.url).pathname;
+
+  if (request.mode === 'navigate') {
+    return NAVIGATION_CACHE_TIMEOUT_MS;
+  }
+
+  if (pathname.endsWith('.json')) {
+    return DATA_CACHE_TIMEOUT_MS;
+  }
+
+  if (
+    pathname.includes('/_astro/')
+    || pathname.includes('/pagefind/')
+    || ['script', 'style', 'font', 'image'].includes(request.destination)
+  ) {
+    return ASSET_CACHE_TIMEOUT_MS;
+  }
+
+  return null;
+}
+
+async function fetchAndUpdateCoreCache(request) {
+  const response = await fetch(request);
+  if (response.ok && request.headers.get(OFFLINE_DOWNLOAD_HEADER) !== '1') {
+    const clone = response.clone();
+    caches.open(CACHE_NAME).then((cache) => cache.put(request, clone));
+  }
+  return response;
+}
+
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   if (!event.request.url.includes(BASE)) return;
@@ -98,20 +132,33 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(
     (async () => {
       const ignoreSearch = event.request.mode === 'navigate';
+      const isOfflineDownloadRequest = event.request.headers.get(OFFLINE_DOWNLOAD_HEADER) === '1';
       const offlineMatches = await matchAnyOfflineCache(event.request, ignoreSearch);
       const cached = offlineMatches.activeOfflineMatch || offlineMatches.coreMatch;
+      const cacheDelay = !isOfflineDownloadRequest && cached ? cacheFallbackDelay(event.request) : null;
 
       if (self.navigator.onLine === false && cached) {
         return cached;
       }
 
       try {
-        const response = await fetch(event.request);
-        if (response.ok && event.request.headers.get(OFFLINE_DOWNLOAD_HEADER) !== '1') {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+        if (cached && cacheDelay !== null) {
+          const networkResponse = fetchAndUpdateCoreCache(event.request).catch(() => null);
+          const preferredResponse = await Promise.race([
+            networkResponse,
+            new Promise((resolve) => {
+              setTimeout(() => resolve(cached), cacheDelay);
+            }),
+          ]);
+
+          if (preferredResponse) {
+            return preferredResponse;
+          }
+
+          return cached;
         }
-        return response;
+
+        return await fetchAndUpdateCoreCache(event.request);
       } catch {
         if (cached) return cached;
 

@@ -26,6 +26,11 @@ const OFFLINE_ACTIVE_VERSION_KEY = '__offline-active-version';
 const OFFLINE_DOWNLOAD_HEADER = 'X-Propaedia-Offline-Download';
 const DOWNLOAD_CONCURRENCY = 6;
 
+interface DownloadFailure {
+  url: string;
+  isQuota: boolean;
+}
+
 function joinBaseUrl(baseUrl: string, path: string): string {
   return `${baseUrl.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
 }
@@ -40,6 +45,16 @@ function formatBytes(bytes: number): string {
 
 function currentCacheName(version: string): string {
   return `${FULL_SITE_CACHE_PREFIX}${version}`;
+}
+
+function isQuotaExceededError(error: unknown): boolean {
+  if (!(error instanceof Error)) return false;
+
+  const message = error.message.toLowerCase();
+  return error.name === 'QuotaExceededError'
+    || message.includes('quota')
+    || message.includes('storage')
+    || message.includes('space');
 }
 
 function activeVersionRequestUrl(baseUrl: string): string {
@@ -133,6 +148,7 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
   const [cachedCount, setCachedCount] = useState(0);
   const [cachedBytes, setCachedBytes] = useState(0);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+  const [quotaFailure, setQuotaFailure] = useState(false);
   const downloadRef = useRef(false);
 
   useEffect(() => {
@@ -207,18 +223,32 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
     );
   }
 
-  async function handleDownload() {
+  async function startDownload({ replaceExisting }: { replaceExisting: boolean }) {
     if (!manifest || downloadRef.current) return;
 
     downloadRef.current = true;
     setStatus('downloading');
     setErrorMessage(null);
+    setQuotaFailure(false);
 
     try {
-      const previousActiveVersion = await resolveActiveOfflineVersion(baseUrl, manifest.version);
-      setActiveVersion(previousActiveVersion);
+      let previousActiveVersion = await resolveActiveOfflineVersion(baseUrl, manifest.version);
+
+      if (replaceExisting) {
+        await cleanupOfflineCaches();
+        await writeActiveOfflineVersion(baseUrl, null);
+        previousActiveVersion = null;
+        setActiveVersion(null);
+        setCachedCount(0);
+        setCachedBytes(0);
+      } else {
+        setActiveVersion(previousActiveVersion);
+      }
+
       const cache = await caches.open(currentCacheName(manifest.version));
-      const existingProgress = await readCacheProgress(manifest);
+      const existingProgress = replaceExisting
+        ? { count: 0, bytes: 0 }
+        : await readCacheProgress(manifest);
 
       let nextCount = existingProgress.count;
       let nextBytes = existingProgress.bytes;
@@ -230,7 +260,8 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
       const queue = manifest.urls.filter((entry) => !existingUrls.has(new URL(entry.url, window.location.origin).href));
 
       let nextIndex = 0;
-      const failures: string[] = [];
+      const failures: DownloadFailure[] = [];
+      let quotaExceeded = false;
 
       async function processEntry(entry: OfflineManifestEntry) {
         const cacheKey = entry.url;
@@ -259,14 +290,18 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
       }
 
       async function worker() {
-        while (nextIndex < queue.length) {
+        while (nextIndex < queue.length && !quotaExceeded) {
           const entry = queue[nextIndex];
           nextIndex += 1;
 
           try {
             await processEntry(entry);
-          } catch {
-            failures.push(entry.url);
+          } catch (error) {
+            const isQuota = isQuotaExceededError(error);
+            failures.push({ url: entry.url, isQuota });
+            if (isQuota) {
+              quotaExceeded = true;
+            }
           }
         }
       }
@@ -275,7 +310,15 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
         Array.from({ length: Math.min(DOWNLOAD_CONCURRENCY, queue.length || 1) }, () => worker()),
       );
 
-      if (failures.length > 0) {
+      if (quotaExceeded) {
+        setQuotaFailure(true);
+        setErrorMessage(
+          replaceExisting
+            ? `Storage ran out after caching ${nextCount}/${manifest.totalFiles} files. Free some space on this device, then try again.`
+            : `Storage ran out after caching ${nextCount}/${manifest.totalFiles} files. Use Replace existing offline copy to clear the old full-site snapshot before downloading the new one.`,
+        );
+        setStatus('error');
+      } else if (failures.length > 0) {
         setErrorMessage(`Cached ${nextCount}/${manifest.totalFiles} files. ${failures.length} files failed; press Download again to resume.`);
         setStatus('error');
       } else {
@@ -285,11 +328,28 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
         setStatus('complete');
       }
     } catch (error) {
-      setErrorMessage(error instanceof Error ? error.message : 'Could not finish the offline download.');
+      if (isQuotaExceededError(error)) {
+        setQuotaFailure(true);
+        setErrorMessage(
+          replaceExisting
+            ? 'Storage ran out while replacing the offline copy. Free some space on this device, then try again.'
+            : 'Storage ran out while updating the offline copy. Use Replace existing offline copy to retry without keeping the older full-site snapshot.',
+        );
+      } else {
+        setErrorMessage(error instanceof Error ? error.message : 'Could not finish the offline download.');
+      }
       setStatus('error');
     } finally {
       downloadRef.current = false;
     }
+  }
+
+  async function handleDownload() {
+    await startDownload({ replaceExisting: false });
+  }
+
+  async function handleReplaceDownload() {
+    await startDownload({ replaceExisting: true });
   }
 
   async function handleClear() {
@@ -304,6 +364,7 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
 
   const hasOfflineDownload = Boolean(activeVersion) || cachedCount > 0;
   const hasPendingUpdate = Boolean(activeVersion && manifest && activeVersion !== manifest.version);
+  const showReplaceButton = hasPendingUpdate || (quotaFailure && Boolean(activeVersion));
   const statusTitle = status === 'complete'
     ? 'Full offline download is ready.'
     : hasPendingUpdate
@@ -387,6 +448,11 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
                   Your current offline snapshot stays active until this update finishes.
                 </p>
               ) : null}
+              {showReplaceButton ? (
+                <p class="mt-2 text-sm text-slate-600">
+                  If this device runs out of storage during an update, replace the older full-site snapshot instead of keeping both copies at once.
+                </p>
+              ) : null}
             </div>
             <div class="flex flex-wrap gap-2">
               <button
@@ -397,6 +463,16 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
               >
                 {downloadButtonLabel}
               </button>
+              {showReplaceButton ? (
+                <button
+                  type="button"
+                  onClick={handleReplaceDownload}
+                  disabled={status === 'downloading' || status === 'clearing'}
+                  class="rounded-full border border-amber-300 bg-amber-50 px-4 py-2 text-sm font-medium text-amber-900 transition hover:border-amber-400 hover:bg-amber-100 disabled:cursor-not-allowed disabled:border-amber-200 disabled:text-amber-500"
+                >
+                  Replace existing offline copy
+                </button>
+              ) : null}
               <button
                 type="button"
                 onClick={handleClear}
@@ -436,6 +512,9 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
           <p>
             Query-string views such as essay tabs on Part pages will use the cached page shell offline as well.
             If the site updates later, press Re-download full site to fetch the new snapshot. Your previous full offline copy stays in place until the update finishes.
+          </p>
+          <p>
+            Phones may not have enough storage to hold both the old and new full-site snapshots during an update. If that happens, use Replace existing offline copy to clear the older snapshot first.
           </p>
         </div>
       </section>
