@@ -1,31 +1,8 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
-import VsiLibrary from '../../components/content/VsiLibrary';
-import { getCollection } from 'astro:content';
-import { buildVsiAggregateEntries } from '../../utils/readingData';
-import { loadOutlineGraph } from '../../utils/outlineGraph';
-import { buildPartsMeta } from '../../utils/helpers';
+import VsiLibraryLoader from '../../components/content/VsiLibraryLoader';
 
 const base = import.meta.env.BASE_URL;
-const sections = await getCollection('sections');
-const mappings = await getCollection('vsi-mappings');
-const catalogCollections = await getCollection('vsi');
-const outline = await loadOutlineGraph();
-
-const sectionsWithMeta = sections.map((entry) => {
-  const meta = outline.sectionMeta[entry.data.sectionCode];
-  return {
-    ...entry.data,
-    partTitle: meta?.partTitle,
-    divisionTitle: meta?.divisionTitle,
-  };
-});
-
-const entries = buildVsiAggregateEntries(
-  sectionsWithMeta,
-  mappings.map((entry) => entry.data),
-  catalogCollections.flatMap((entry) => entry.data.titles)
-);
 ---
 
 <BaseLayout
@@ -45,7 +22,7 @@ const entries = buildVsiAggregateEntries(
     </header>
 
     <section class="mt-8">
-      <VsiLibrary client:load entries={entries} baseUrl={base} partsMeta={buildPartsMeta(outline.parts)} />
+      <VsiLibraryLoader client:load dataUrl={`${base}/library-data/vsi.json`} baseUrl={base} />
     </section>
   </main>
 </BaseLayout>

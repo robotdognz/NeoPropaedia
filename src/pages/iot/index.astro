@@ -1,127 +1,8 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
-import IotLibrary from '../../components/content/IotLibrary';
-import { buildIotAggregateEntries, type ReadingSectionSummary } from '../../utils/readingData';
-import {
-  analyzeMappedOutlinePathCoverage,
-  analyzeProgressSubsectionCoverage,
-  buildSectionOutlinePathIndex,
-} from '../../utils/outlineCoverage';
-import iotCatalog from '../../data/iot-catalog.json';
-import { getCollection } from 'astro:content';
-import { loadOutlineGraph } from '../../utils/outlineGraph';
-import { buildPartsMeta } from '../../utils/helpers';
+import IotLibraryLoader from '../../components/content/IotLibraryLoader';
 
 const base = import.meta.env.BASE_URL;
-const sections = await getCollection('sections');
-const iotMappings = await getCollection('iot-mappings');
-const outline = await loadOutlineGraph();
-
-const sectionLookup = new Map<string, ReadingSectionSummary>(
-  sections.map((section) => [
-    section.data.sectionCode,
-    {
-      sectionCode: section.data.sectionCode,
-      sectionCodeDisplay: section.data.sectionCodeDisplay,
-      title: section.data.title,
-      partNumber: section.data.partNumber,
-      partTitle: outline.sectionMeta[section.data.sectionCode]?.partTitle,
-      divisionId: section.data.divisionId,
-      divisionTitle: outline.sectionMeta[section.data.sectionCode]?.divisionTitle,
-    },
-  ])
-);
-
-const sectionOutlinePathIndex = buildSectionOutlinePathIndex(sections.map((entry) => entry.data));
-const episodeCoverage = new Map<string, {
-  sectionCodes: Set<string>;
-  progressSubsectionKeys: Set<string>;
-  mappedPathCount: number;
-  mappedPathSections: Set<string>;
-  fallbackSections: Set<string>;
-}>();
-const episodeTitleLookup = new Map<string, string>();
-
-for (const mapping of iotMappings) {
-  for (const entry of mapping.data.mappings) {
-    if (!episodeTitleLookup.has(entry.pid)) {
-      episodeTitleLookup.set(entry.pid, entry.episodeTitle);
-    }
-
-    if (!episodeCoverage.has(entry.pid)) {
-      episodeCoverage.set(entry.pid, {
-        sectionCodes: new Set(),
-        progressSubsectionKeys: new Set(),
-        mappedPathCount: 0,
-        mappedPathSections: new Set(),
-        fallbackSections: new Set(),
-      });
-    }
-
-    const coverage = episodeCoverage.get(entry.pid)!;
-    coverage.sectionCodes.add(mapping.data.sectionCode);
-    const mappedPathCoverage = analyzeMappedOutlinePathCoverage(
-      mapping.data.sectionCode,
-      entry.relevantPathsAI,
-      sectionOutlinePathIndex
-    );
-    const progressCoverage = analyzeProgressSubsectionCoverage(
-      mapping.data.sectionCode,
-      entry.relevantPathsAI,
-      sectionOutlinePathIndex
-    );
-
-    progressCoverage.coverageKeys.forEach((key) => coverage.progressSubsectionKeys.add(key));
-    coverage.mappedPathCount += mappedPathCoverage.matchedPathKeys.length;
-    if (mappedPathCoverage.matchedPathKeys.length > 0) {
-      coverage.mappedPathSections.add(mapping.data.sectionCode);
-    }
-    if (mappedPathCoverage.usedFallback) {
-      coverage.fallbackSections.add(mapping.data.sectionCode);
-    }
-  }
-}
-
-const catalogLookup = new Map((iotCatalog as any).episodes.map((episode: any) => [episode.pid, episode]));
-const episodes = Array.from(episodeCoverage.keys()).map((pid) => {
-  const catalogEntry = catalogLookup.get(pid);
-  const coverage = episodeCoverage.get(pid);
-
-  return {
-    pid,
-    title: catalogEntry?.title ?? episodeTitleLookup.get(pid) ?? pid,
-    synopsis: catalogEntry?.description ?? catalogEntry?.synopsis,
-    url: catalogEntry?.url ?? `https://www.bbc.co.uk/programmes/${pid}`,
-    datePublished: catalogEntry?.datePublished,
-    durationSeconds: catalogEntry?.durationSeconds,
-    sectionCodes: [...(coverage?.sectionCodes || [])],
-    progressSubsectionKeys: [...(coverage?.progressSubsectionKeys || [])],
-    mappedPathCount: coverage?.mappedPathCount || 0,
-    mappedPathSectionCount: coverage?.mappedPathSections.size || 0,
-    fallbackSectionCount: coverage?.fallbackSections.size || 0,
-  };
-});
-
-// Include unmapped catalog episodes so they appear in the master list
-for (const [pid, catalogEntry] of catalogLookup) {
-  if (!episodeCoverage.has(pid)) {
-    episodes.push({
-      pid,
-      title: catalogEntry.title ?? pid,
-      synopsis: catalogEntry.description ?? catalogEntry.synopsis,
-      url: catalogEntry.url ?? `https://www.bbc.co.uk/programmes/${pid}`,
-      datePublished: catalogEntry.datePublished,
-      durationSeconds: catalogEntry.durationSeconds,
-      sectionCodes: [],
-      progressSubsectionKeys: [],
-      mappedPathCount: 0,
-      mappedPathSectionCount: 0,
-      fallbackSectionCount: 0,
-    });
-  }
-}
-
-const entries = buildIotAggregateEntries(episodes, sectionLookup);
 ---
 
 <BaseLayout
@@ -138,12 +19,7 @@ const entries = buildIotAggregateEntries(episodes, sectionLookup);
     </header>
 
     <section class="mt-8">
-      <IotLibrary
-        client:load
-        entries={entries}
-        baseUrl={base}
-        partsMeta={buildPartsMeta(outline.parts)}
-      />
+      <IotLibraryLoader client:load dataUrl={`${base}/library-data/iot.json`} baseUrl={base} />
     </section>
   </main>
 </BaseLayout>

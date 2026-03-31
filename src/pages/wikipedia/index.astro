@@ -1,93 +1,8 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
-import WikipediaLibrary from '../../components/content/WikipediaLibrary';
-import { buildWikipediaAggregateEntries, type ReadingSectionSummary } from '../../utils/readingData';
-import {
-  analyzeMappedOutlinePathCoverage,
-  analyzeProgressSubsectionCoverage,
-  buildSectionOutlinePathIndex,
-} from '../../utils/outlineCoverage';
-import wikiCatalog from '../../data/wikipedia-catalog.json';
-import { getCollection } from 'astro:content';
-import { loadOutlineGraph } from '../../utils/outlineGraph';
-import { buildPartsMeta } from '../../utils/helpers';
+import WikipediaLibraryLoader from '../../components/content/WikipediaLibraryLoader';
 
 const base = import.meta.env.BASE_URL;
-const sections = await getCollection('sections');
-const wikiMappings = await getCollection('wiki-mappings');
-const outline = await loadOutlineGraph();
-
-const sectionLookup = new Map<string, ReadingSectionSummary>(
-  sections.map((s) => [
-    s.data.sectionCode,
-    {
-      sectionCode: s.data.sectionCode,
-      sectionCodeDisplay: s.data.sectionCodeDisplay,
-      title: s.data.title,
-      partNumber: s.data.partNumber,
-      partTitle: outline.sectionMeta[s.data.sectionCode]?.partTitle,
-      divisionId: s.data.divisionId,
-      divisionTitle: outline.sectionMeta[s.data.sectionCode]?.divisionTitle,
-    },
-  ])
-);
-
-// Build sectionCodes per article from the per-section mapping files
-const sectionOutlinePathIndex = buildSectionOutlinePathIndex(sections.map((entry) => entry.data));
-const articleCoverage = new Map<string, {
-  sectionCodes: Set<string>;
-  progressSubsectionKeys: Set<string>;
-  mappedPathCount: number;
-  mappedPathSections: Set<string>;
-  fallbackSections: Set<string>;
-}>();
-for (const mapping of wikiMappings) {
-  for (const m of mapping.data.mappings) {
-    if (!articleCoverage.has(m.articleTitle)) {
-      articleCoverage.set(m.articleTitle, {
-        sectionCodes: new Set(),
-        progressSubsectionKeys: new Set(),
-        mappedPathCount: 0,
-        mappedPathSections: new Set(),
-        fallbackSections: new Set(),
-      });
-    }
-
-    const coverage = articleCoverage.get(m.articleTitle)!;
-    coverage.sectionCodes.add(mapping.data.sectionCode);
-    const mappedPathCoverage = analyzeMappedOutlinePathCoverage(
-      mapping.data.sectionCode,
-      m.relevantPathsAI,
-      sectionOutlinePathIndex
-    );
-    const progressCoverage = analyzeProgressSubsectionCoverage(
-      mapping.data.sectionCode,
-      m.relevantPathsAI,
-      sectionOutlinePathIndex
-    );
-
-    progressCoverage.coverageKeys.forEach((key) => coverage.progressSubsectionKeys.add(key));
-    coverage.mappedPathCount += mappedPathCoverage.matchedPathKeys.length;
-    if (mappedPathCoverage.matchedPathKeys.length > 0) {
-      coverage.mappedPathSections.add(mapping.data.sectionCode);
-    }
-    if (mappedPathCoverage.usedFallback) {
-      coverage.fallbackSections.add(mapping.data.sectionCode);
-    }
-  }
-}
-
-// Build article list from catalog with section codes attached
-const articles = (wikiCatalog as any).articles.map((a: any) => ({
-  ...a,
-  sectionCodes: [...(articleCoverage.get(a.title)?.sectionCodes || [])],
-  progressSubsectionKeys: [...(articleCoverage.get(a.title)?.progressSubsectionKeys || [])],
-  mappedPathCount: articleCoverage.get(a.title)?.mappedPathCount || 0,
-  mappedPathSectionCount: articleCoverage.get(a.title)?.mappedPathSections.size || 0,
-  fallbackSectionCount: articleCoverage.get(a.title)?.fallbackSections.size || 0,
-}));
-
-const entries = buildWikipediaAggregateEntries(articles, sectionLookup);
 ---
 
 <BaseLayout
@@ -110,12 +25,7 @@ const entries = buildWikipediaAggregateEntries(articles, sectionLookup);
     </header>
 
     <section class="mt-8">
-      <WikipediaLibrary
-        client:load
-        entries={entries}
-        baseUrl={base}
-        partsMeta={buildPartsMeta(outline.parts)}
-      />
+      <WikipediaLibraryLoader client:load dataUrl={`${base}/library-data/wikipedia.json`} baseUrl={base} />
     </section>
   </main>
 </BaseLayout>

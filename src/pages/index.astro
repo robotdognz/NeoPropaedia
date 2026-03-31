@@ -6,7 +6,6 @@ import HomepageModeSection from '../components/content/HomepageModeSection.astro
 import partConnections from '../data/part-connections.json';
 import { getCollection } from 'astro:content';
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
-import { buildHomepageCoverageSource } from '../utils/homepageCoverageSource';
 import { loadOutlineGraph } from '../utils/outlineGraph';
 import { roundedDonutSlicePath } from '../utils/donutPaths';
 
@@ -166,8 +165,6 @@ const homepagePartCards = parts.map((part) => ({
   ),
 }));
 
-const homepageInitialCoverageSource = await buildHomepageCoverageSource('vsi', base);
-
 const figureGroups = [
   {
     title: 'Segment rotations',
@@ -315,7 +312,6 @@ function getEssaySegmentLayout(index: number, count: number, baseInnerRadius: nu
         <HomepageCoverageExplorer
           client:load
           baseUrl={base}
-          initialSource={homepageInitialCoverageSource}
           partsMeta={homepagePartCards.map(p => ({ partNumber: p.partNumber, colorHex: p.colorHex, title: p.title }))}
           showHeader={false}
           framed={false}

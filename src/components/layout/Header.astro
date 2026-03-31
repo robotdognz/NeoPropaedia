@@ -128,8 +128,9 @@ const { searchEntriesUrl = `${base}/outline-search.json` } = Astro.props;
 
     sidebarToggle.addEventListener('click', toggleSidebar);
     sidebarOverlay.addEventListener('click', closeSidebar);
-    sidebar.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', closeSidebar);
+    sidebar.addEventListener('click', (event) => {
+      if (!(event.target instanceof Element)) return;
+      if (event.target.closest('a')) closeSidebar();
     });
 
     const mediaQuery = window.matchMedia('(min-width: 1024px)');

@@ -1,25 +1,8 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
-import MacropaediaLibrary from '../../components/content/MacropaediaLibrary';
-import { getCollection } from 'astro:content';
-import { buildMacropaediaAggregateEntries } from '../../utils/readingData';
-import { loadOutlineGraph } from '../../utils/outlineGraph';
-import { buildPartsMeta } from '../../utils/helpers';
+import MacropaediaLibraryLoader from '../../components/content/MacropaediaLibraryLoader';
 
 const base = import.meta.env.BASE_URL;
-const sections = await getCollection('sections');
-const outline = await loadOutlineGraph();
-
-const sectionsWithMeta = sections.map((entry) => {
-  const meta = outline.sectionMeta[entry.data.sectionCode];
-  return {
-    ...entry.data,
-    partTitle: meta?.partTitle,
-    divisionTitle: meta?.divisionTitle,
-  };
-});
-
-const entries = buildMacropaediaAggregateEntries(sectionsWithMeta);
 ---
 
 <BaseLayout
@@ -39,12 +22,7 @@ const entries = buildMacropaediaAggregateEntries(sectionsWithMeta);
     </header>
 
     <section class="mt-8">
-      <MacropaediaLibrary
-        client:load
-        entries={entries}
-        baseUrl={base}
-        partsMeta={buildPartsMeta(outline.parts)}
-      />
+      <MacropaediaLibraryLoader client:load dataUrl={`${base}/library-data/macropaedia.json`} baseUrl={base} />
     </section>
   </main>
 </BaseLayout>

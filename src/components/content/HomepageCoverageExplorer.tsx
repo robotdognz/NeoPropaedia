@@ -41,7 +41,6 @@ interface PartMeta {
 
 interface HomepageCoverageExplorerProps {
   baseUrl: string;
-  initialSource: HomepageCoverageSource;
   partsMeta?: PartMeta[];
   showHeader?: boolean;
   framed?: boolean;
@@ -143,19 +142,16 @@ function useStagedCoverageDisplay(
 
 export default function HomepageCoverageExplorer({
   baseUrl,
-  initialSource,
   partsMeta,
   showHeader = true,
   framed = true,
 }: HomepageCoverageExplorerProps) {
   const checklistState = useReadingChecklistState();
-  const [selectedType, setSelectedType] = useState<ReadingType>(initialSource.type);
-  const [sourceCache, setSourceCache] = useState<Partial<Record<ReadingType, HomepageCoverageSource>>>({
-    [initialSource.type]: initialSource,
-  });
+  const [selectedType, setSelectedType] = useState<ReadingType>('vsi');
+  const [sourceCache, setSourceCache] = useState<Partial<Record<ReadingType, HomepageCoverageSource>>>({});
   const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
   const [spreadPathOpen, setSpreadPathOpen] = useState(false);
-  const [loadingType, setLoadingType] = useState<ReadingType | null>(null);
+  const [loadingType, setLoadingType] = useState<ReadingType | null>('vsi');
   const [errorType, setErrorType] = useState<ReadingType | null>(null);
 
   const loadingRef = useRef<Set<ReadingType>>(new Set());
@@ -197,7 +193,7 @@ export default function HomepageCoverageExplorer({
 
     // Preload other reading types in the background so switching is instant
     const preload = () => {
-      SOURCE_ORDER.forEach((type) => {
+      READING_TYPE_ORDER.forEach((type) => {
         if (type !== preferred) void ensureSourceLoaded(type);
       });
     };

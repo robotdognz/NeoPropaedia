@@ -2,7 +2,6 @@
 import Header from './Header.astro';
 import Sidebar from './Sidebar.astro';
 import Footer from './Footer.astro';
-import { loadOutlineGraph } from '../../utils/outlineGraph';
 import '../../styles/global.css';
 
 interface Props {
@@ -16,7 +15,6 @@ interface Props {
 const { title, description = 'Explore the Encyclopaedia Britannica Propaedia outline of human knowledge, paired with Oxford Very Short Introductions.', currentPartNumber, currentDivisionId, currentSectionCode } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
-const outline = await loadOutlineGraph();
 ---
 
 <!doctype html>
@@ -60,7 +58,6 @@ const outline = await loadOutlineGraph();
 
     <div class="flex-1 flex">
       <Sidebar
-        navigation={outline.parts}
         currentPartNumber={currentPartNumber}
         currentDivisionId={currentDivisionId}
         currentSectionCode={currentSectionCode}
