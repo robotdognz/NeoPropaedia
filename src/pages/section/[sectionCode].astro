@@ -122,26 +122,28 @@ const { reverseRefs, groupedReverseRefs } = await loadSectionReverseReferences(s
       </section>
 
       <!-- Reading Recommendations -->
-      <div id="readings" class="scroll-mt-24 flex flex-col gap-4 mb-8">
-        <div style="order:-2">
+      <div id="readings" class="scroll-mt-24 mb-8 space-y-5">
+        <div>
           <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.2em] text-slate-500 sm:text-xs">
-            Reading Recommendations
+            Recommended Readings
           </p>
           <p class="mt-1 text-xs leading-5 text-slate-400 sm:text-sm">
-            Books, articles, and episodes mapped to this Section's outline. Click any outline item above to filter recommendations by topic.
+            Use the outline above to narrow by topic.
           </p>
         </div>
-        <SectionReadingRecommendationsLoader
-          client:only="preact"
-          dataUrl={`${base}/section-data/${sectionSlug}.json`}
-          baseUrl={base}
-        >
-          <ReadingRecommendationsFallback
-            slot="fallback"
-            message="Loading mapped recommendations..."
-            hint="Topic filtering will be available once this panel loads."
-          />
-        </SectionReadingRecommendationsLoader>
+        <div>
+          <SectionReadingRecommendationsLoader
+            client:load
+            dataUrl={`${base}/section-data/${sectionSlug}.json`}
+            baseUrl={base}
+          >
+            <ReadingRecommendationsFallback
+              slot="fallback"
+              message="Loading mapped recommendations..."
+              hint="Topic filtering will be available once this panel loads."
+            />
+          </SectionReadingRecommendationsLoader>
+        </div>
       </div>
 
       <!-- Referenced by other sections -->

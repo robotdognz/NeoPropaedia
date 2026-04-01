@@ -71,7 +71,7 @@ export default function SelectorCardRail<Value extends string = string>({
               onClick={() => {
                 if (!option.disabled) onChange(option.value);
               }}
-              class={`group relative flex min-w-0 items-center rounded-full border px-2.5 text-left transition ${
+              class={`group relative flex min-w-0 items-center rounded-xl border px-2.5 text-left transition ${
                 isCompact ? 'min-h-9 py-1.5' : 'min-h-10 py-2'
               } ${
                 option.disabled

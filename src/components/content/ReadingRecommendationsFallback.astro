@@ -22,7 +22,7 @@ const {
         <div class="grid grid-cols-2 gap-1.5 xl:grid-cols-4">
           {Array.from({ length: 4 }).map((_, index) => (
             <div
-              class={`min-h-9 rounded-full border px-2.5 py-1.5 ${
+              class={`min-h-9 rounded-xl border px-2.5 py-1.5 ${
                 index === 0
                   ? 'border-slate-300 bg-white shadow-sm shadow-slate-200/70'
                   : 'border-slate-200/70 bg-slate-50/60'
@@ -36,7 +36,7 @@ const {
     </div>
     {showHideCheckedControl ? (
       <div class="mt-2 flex flex-wrap items-center gap-2 border-t border-slate-200/80 px-0.5 pt-2 text-xs">
-        <div class="h-8 w-28 rounded-full border border-slate-200 bg-white/85" />
+        <div class="h-8 w-28 rounded-xl border border-slate-200 bg-white/85" />
       </div>
     ) : null}
   </section>

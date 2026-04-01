@@ -19,6 +19,7 @@ export async function getStaticPaths() {
 const { division } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const outline = await loadOutlineGraph();
+const sectionEntries = await getCollection('sections');
 
 const PART_NAMES: Record<number, string> = {
   1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five',
@@ -33,6 +34,9 @@ const PART_ROMAN: Record<number, string> = {
 const parentPart = outline.partByNumber.get(division.partNumber);
 const divNav = parentPart?.divisions.find((d) => d.divisionId === division.divisionId);
 const sections = divNav?.sections ?? [];
+const topLevelSubsectionCountBySection = new Map(
+  sectionEntries.map((entry) => [entry.data.sectionCode, entry.data.outline.length]),
+);
 
 // Load reading recommendations for this division
 const allDivReadings = await getCollection('division-readings');
@@ -63,6 +67,7 @@ const partTextColors: Record<number, string> = {
   9: 'text-pink-700',
   10: 'text-amber-700',
 };
+const partAccentText = partTextColors[division.partNumber];
 
 ---
 
@@ -110,14 +115,22 @@ const partTextColors: Record<number, string> = {
         <div class="space-y-3">
           {sections.map((sec) => (
             <a href={`${base}/section/${sec.sectionCode.replace(/\//g, '-')}`}
-              class="block rounded-lg border border-gray-200 p-4 transition-all hover:border-gray-400 hover:shadow-sm">
-              <div class="flex items-start gap-3">
-                <span class="font-mono text-sm font-semibold text-gray-500 mt-0.5 shrink-0">
-                  {sec.sectionCode}
-                </span>
-                <h3 class="text-lg font-serif font-bold text-gray-900">
+              class="group flex items-start justify-between gap-4 rounded-2xl border border-slate-200 bg-white px-4 py-4 shadow-sm shadow-slate-100 transition-all hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md">
+              <div class="min-w-0">
+                <p class={`text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] ${partAccentText}`}>
+                  Section {sec.sectionCodeDisplay}
+                </p>
+                <h3 class="mt-1 text-lg font-serif font-bold text-slate-900 transition-colors group-hover:text-slate-950">
                   {sec.title}
                 </h3>
+              </div>
+              <div class="flex shrink-0 items-center gap-3">
+                <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-medium text-slate-600">
+                  {(topLevelSubsectionCountBySection.get(sec.sectionCode) ?? 0)} {(topLevelSubsectionCountBySection.get(sec.sectionCode) ?? 0) === 1 ? 'Subsection' : 'Subsections'}
+                </span>
+                <svg class="mt-1 h-4 w-4 shrink-0 text-slate-300 transition group-hover:text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
               </div>
             </a>
           ))}
@@ -127,7 +140,7 @@ const partTextColors: Record<number, string> = {
       {(divReadings || divisionIotReadings.length > 0) && (
         <section id="readings" class="mt-10 scroll-mt-24">
           <TopReadings
-            client:only="preact"
+            client:load
             vsi={divReadings?.vsi}
             wiki={divReadings?.wiki}
             iot={divReadings?.iot ?? divisionIotReadings}

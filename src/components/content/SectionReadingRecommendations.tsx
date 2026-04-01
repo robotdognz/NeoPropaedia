@@ -55,6 +55,7 @@ interface ActiveSectionRecommendationPanel {
   matchedCount: number;
   visibleCount: number;
   toolbarLabel?: string;
+  toolbarHref?: string;
   selectionNotice?: string | null;
   emptyMessage: string;
   body: h.JSX.Element;
@@ -306,6 +307,7 @@ export default function SectionReadingRecommendations({
       return {
         title: 'Recommendations',
         toolbarLabel: `Showing ${wikipediaLevelLabel(wikiLevel)}`,
+        toolbarHref: `${baseUrl}/wikipedia`,
         matchedCount: visibleArticles.length,
         visibleCount: displayArticles.length,
         emptyMessage: filteredEmptyMessage(
@@ -546,9 +548,18 @@ export default function SectionReadingRecommendations({
           </div>
           {headerMeta.toolbarLabel ? (
             <div class="flex flex-wrap items-center gap-3 text-xs">
-              <span class="font-medium text-amber-900/75">
-                {headerMeta.toolbarLabel}
-              </span>
+              {headerMeta.toolbarHref ? (
+                <a
+                  href={headerMeta.toolbarHref}
+                  class="font-medium text-amber-900/75 underline decoration-amber-300 underline-offset-2 transition hover:text-amber-950 hover:decoration-amber-500"
+                >
+                  {headerMeta.toolbarLabel}
+                </a>
+              ) : (
+                <span class="font-medium text-amber-900/75">
+                  {headerMeta.toolbarLabel}
+                </span>
+              )}
             </div>
           ) : null}
         </div>
