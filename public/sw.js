@@ -1,10 +1,9 @@
-const CACHE_NAME = 'propaedia-v11';
+const CACHE_NAME = 'propaedia-v12';
 const BASE = '/NeoPropaedia/';
 const OFFLINE_DOWNLOAD_HEADER = 'x-propaedia-offline-download';
 const FULL_SITE_CACHE_PREFIX = 'propaedia-full-site-';
 const OFFLINE_META_CACHE_NAME = 'propaedia-offline-meta-v1';
 const ACTIVE_VERSION_URL = BASE + '__offline-active-version';
-const NAVIGATION_CACHE_TIMEOUT_MS = 300;
 const DATA_CACHE_TIMEOUT_MS = 400;
 const ASSET_CACHE_TIMEOUT_MS = 100;
 const CACHE_DEBUG_MESSAGE_TYPE = 'propaedia-cache-debug-state';
@@ -175,10 +174,6 @@ async function matchCoreCache(request, ignoreSearch) {
 function cacheFallbackDelay(request) {
   const pathname = new URL(request.url).pathname;
 
-  if (request.mode === 'navigate') {
-    return NAVIGATION_CACHE_TIMEOUT_MS;
-  }
-
   if (pathname.endsWith('.json')) {
     return DATA_CACHE_TIMEOUT_MS;
   }
@@ -217,9 +212,10 @@ self.addEventListener('fetch', (event) => {
       const startedAt = Date.now();
       const debugClientId = event.resultingClientId || event.clientId || null;
       const ignoreSearch = event.request.mode === 'navigate';
+      const isNavigationRequest = event.request.mode === 'navigate';
       const isOfflineDownloadRequest = event.request.headers.get(OFFLINE_DOWNLOAD_HEADER) === '1';
       const coreMatches = await matchCoreCache(event.request, ignoreSearch);
-      const cacheDelay = !isOfflineDownloadRequest && coreMatches.coreMatch
+      const cacheDelay = !isOfflineDownloadRequest && !isNavigationRequest && coreMatches.coreMatch
         ? cacheFallbackDelay(event.request)
         : null;
 
