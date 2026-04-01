@@ -54,6 +54,11 @@ function formatGeneratedAt(value: string): string {
   });
 }
 
+function isReusableOfflineAsset(url: string): boolean {
+  const pathname = new URL(url, window.location.origin).pathname;
+  return pathname.includes('/_astro/');
+}
+
 function currentCacheName(version: string): string {
   return `${FULL_SITE_CACHE_PREFIX}${version}`;
 }
@@ -276,7 +281,9 @@ export default function OfflineSiteCachePanel({ baseUrl }: OfflineSiteCachePanel
 
       async function processEntry(entry: OfflineManifestEntry) {
         const cacheKey = entry.url;
-        const cachedResponse = await caches.match(cacheKey, { ignoreSearch: false });
+        const cachedResponse = isReusableOfflineAsset(cacheKey)
+          ? await caches.match(cacheKey, { ignoreSearch: false })
+          : null;
 
         if (cachedResponse) {
           await cache.put(cacheKey, cachedResponse.clone());
