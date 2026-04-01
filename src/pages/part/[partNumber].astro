@@ -174,25 +174,25 @@ const bgColors: Record<number, string> = {
         <div class="space-y-3">
           {divisions.map((div) => (
             <a href={`${base}/division/${div.divisionId}`}
-              class="group flex items-start justify-between gap-4 rounded-2xl border border-slate-200 bg-white px-4 py-4 shadow-sm shadow-slate-100 transition-all hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md">
-              <div class="min-w-0">
+              class="group block rounded-2xl border border-slate-200 bg-white px-4 py-4 shadow-sm shadow-slate-100 transition-all hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md">
+              <div class="flex flex-wrap items-start justify-between gap-2">
                 <p class={`text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] ${partAccentText}`}>
                   Division {div.romanNumeral}
                 </p>
-                <h3 class="mt-1 text-xl font-serif font-bold text-slate-900 transition-colors group-hover:text-slate-950">
-                  {div.title}
-                </h3>
+                <div class="flex shrink-0 items-center gap-3 pl-2">
+                  {div.sections.length > 0 && (
+                    <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-medium text-slate-600">
+                      {div.sections.length} {div.sections.length === 1 ? 'Section' : 'Sections'}
+                    </span>
+                  )}
+                  <svg class="mt-0.5 h-4 w-4 text-slate-300 transition group-hover:text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
-              <div class="flex shrink-0 items-center gap-3">
-                {div.sections.length > 0 && (
-                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-medium text-slate-600">
-                    {div.sections.length} {div.sections.length === 1 ? 'Section' : 'Sections'}
-                  </span>
-                )}
-                <svg class="mt-0.5 h-4 w-4 text-slate-300 transition group-hover:text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
+              <h3 class="mt-2 text-xl font-serif font-bold text-slate-900 transition-colors group-hover:text-slate-950">
+                {div.title}
+              </h3>
             </a>
           ))}
         </div>
@@ -201,7 +201,7 @@ const bgColors: Record<number, string> = {
       {(partReadings || partIotReadings.length > 0) && (
         <section id="readings" class="mt-10 scroll-mt-24">
           <TopReadings
-            client:load
+            client:only="preact"
             vsi={partReadings?.vsi}
             wiki={partReadings?.wiki}
             iot={partReadings?.iot ?? partIotReadings}
