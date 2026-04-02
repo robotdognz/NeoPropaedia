@@ -14,7 +14,7 @@ import {
   type OutlineSelectionDetail,
 } from '../../utils/iotOutlineFilter';
 import { getReadingPreference, getHideCheckedReadings, setHideCheckedReadings, subscribeHideCheckedReadings } from '../../utils/readingPreference';
-import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
+import { classifyMappingPrecision, mappingPrecisionFlag } from '../../utils/mappingPrecision';
 import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 
 export interface IotEpisodeRef {
@@ -137,7 +137,7 @@ export default function IotRecommendations({ episodes, sectionCode, baseUrl }: I
               const matchPercent = selection
                 ? Math.round(Math.min((episode.filterScore || 0) / maxScore, 1) * 100)
                 : (episode.matchPercent || 0);
-              const precision = mappingPrecisionBadge(
+              const precision = mappingPrecisionFlag(
                 classifyMappingPrecision(episode.relevantPathsAI, selection?.outlinePath ?? null)
               );
 
@@ -151,8 +151,7 @@ export default function IotRecommendations({ episodes, sectionCode, baseUrl }: I
                   baseUrl={baseUrl}
                   sectionCode={sectionCode}
                   matchPercent={matchPercent}
-                  precisionLabel={precision.label}
-                  precisionClassName={precision.className}
+                  flags={[precision]}
                   datePublished={episode.datePublished}
                   durationSeconds={episode.durationSeconds}
                   checked={isChecked}

@@ -142,7 +142,13 @@ const iotMappingsCollection = defineCollection({
 
 const readingItemSchema = z.object({
   title: z.string(),
+  displayTitle: z.string().optional(),
   author: z.string().optional(),
+  publicationYear: z.number().int().optional(),
+  edition: z.number().int().optional(),
+  datePublished: z.string().optional(),
+  durationSeconds: z.number().int().optional(),
+  lowestLevel: z.number().int().optional(),
   count: z.number().int(),
   sections: z.number().int().optional(),
   paths: z.number().int().optional(),

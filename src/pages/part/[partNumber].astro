@@ -8,6 +8,7 @@ import { getCollection, render } from 'astro:content';
 import { loadIotTopReadings } from '../../utils/iotTopReadings';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
 import { enrichWikipediaReadingItems } from '../../utils/wikipediaCatalog';
+import { enrichIotRecommendationItems, enrichVsiRecommendationItems } from '../../utils/recommendationEnrichment';
 
 export async function getStaticPaths() {
   const parts = await getCollection('parts');
@@ -46,9 +47,11 @@ const divisions = partNav?.divisions ?? [];
 const allPartReadings = await getCollection('part-readings');
 const partReadingsEntry = allPartReadings.find((r) => r.data.partNumber === part.partNumber);
 const partReadings = partReadingsEntry?.data.readings;
+const partVsiReadings = enrichVsiRecommendationItems(partReadings?.vsi);
 const partWikiReadings = enrichWikipediaReadingItems(partReadings?.wiki);
 const iotTopReadings = await loadIotTopReadings();
-const partIotReadings = iotTopReadings.partReadingsByPart.get(part.partNumber) ?? [];
+const partIotReadings = enrichIotRecommendationItems(iotTopReadings.partReadingsByPart.get(part.partNumber) ?? []);
+const partCuratedIotReadings = enrichIotRecommendationItems(partReadings?.iot);
 
 // Prev/next parts
 const partIndex = outline.parts.findIndex((p) => p.partNumber === part.partNumber);
@@ -204,9 +207,9 @@ const bgColors: Record<number, string> = {
         <section id="readings" class="mt-10 scroll-mt-24">
           <TopReadings
             client:only="preact"
-            vsi={partReadings?.vsi}
+            vsi={partVsiReadings}
             wiki={partWikiReadings}
-            iot={partReadings?.iot ?? partIotReadings}
+            iot={partCuratedIotReadings ?? partIotReadings}
             macro={partReadings?.macro}
             baseUrl={base}
             contextLabel="this Part"

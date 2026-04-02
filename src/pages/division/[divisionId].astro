@@ -8,6 +8,7 @@ import { getCollection } from 'astro:content';
 import { loadIotTopReadings } from '../../utils/iotTopReadings';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
 import { enrichWikipediaReadingItems } from '../../utils/wikipediaCatalog';
+import { enrichIotRecommendationItems, enrichVsiRecommendationItems } from '../../utils/recommendationEnrichment';
 
 export async function getStaticPaths() {
   const divisions = await getCollection('divisions');
@@ -43,9 +44,11 @@ const topLevelSubsectionCountBySection = new Map(
 const allDivReadings = await getCollection('division-readings');
 const divReadingsEntry = allDivReadings.find((r) => r.data.divisionId === division.divisionId);
 const divReadings = divReadingsEntry?.data.readings;
+const divisionVsiReadings = enrichVsiRecommendationItems(divReadings?.vsi);
 const divisionWikiReadings = enrichWikipediaReadingItems(divReadings?.wiki);
 const iotTopReadings = await loadIotTopReadings();
-const divisionIotReadings = iotTopReadings.divisionReadingsByDivision.get(division.divisionId) ?? [];
+const divisionIotReadings = enrichIotRecommendationItems(iotTopReadings.divisionReadingsByDivision.get(division.divisionId) ?? []);
+const divisionCuratedIotReadings = enrichIotRecommendationItems(divReadings?.iot);
 
 // Build flat ordered list of all divisions for prev/next navigation
 const allDivisions = outline.flatDivisions.map((entry) => ({
@@ -143,9 +146,9 @@ const partAccentText = partTextColors[division.partNumber];
         <section id="readings" class="mt-10 scroll-mt-24">
           <TopReadings
             client:only="preact"
-            vsi={divReadings?.vsi}
+            vsi={divisionVsiReadings}
             wiki={divisionWikiReadings}
-            iot={divReadings?.iot ?? divisionIotReadings}
+            iot={divisionCuratedIotReadings ?? divisionIotReadings}
             macro={divReadings?.macro}
             baseUrl={base}
             contextLabel="this Division"

@@ -1,5 +1,7 @@
 Propaedia TODO:
 
+    - Add word count to wikipedia article metadata, and wire that into the recomendation cards in place of author name, etc.
+
     - Macropaedia data needed for app (first pass)
         - Article length
         - Volume the article is in (keep in mind the macropaedia articles start at 13, so we'll need to calculate that from the macropaedia numbers we have)

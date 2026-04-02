@@ -1,10 +1,10 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
-import Accordion from '../ui/Accordion';
 import VsiCard from './VsiCard';
 import WikipediaCard from './WikipediaCard';
 import IotCard from './IotCard';
+import MacropaediaCard from './MacropaediaCard';
 import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 import ReadingSelectionStrip from '../ui/ReadingSelectionStrip';
 import type { ReadingType } from '../../utils/readingPreference';
@@ -39,8 +39,8 @@ import {
 import {
   filterEpisodesForOutline,
 } from '../../utils/iotOutlineFilter';
-import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
-import { slugify } from '../../utils/helpers';
+import { classifyMappingPrecision, mappingPrecisionFlag } from '../../utils/mappingPrecision';
+import { recommendationFlag } from '../../utils/recommendationCardMeta';
 import type {
   SectionReadingRecommendationsPayload,
 } from '../../utils/sectionReadingContext';
@@ -228,7 +228,7 @@ export default function SectionReadingRecommendations({
             {displayMappings.map((mapping, index) => {
               const checklistKey = vsiChecklistKey(mapping.vsiTitle, mapping.vsiAuthor);
               const relevanceScore = mapping.filterScore ?? mapping.relevanceScore ?? 0;
-              const precision = mappingPrecisionBadge(
+              const precision = mappingPrecisionFlag(
                 classifyMappingPrecision(mapping.relevantPathsAI, selection?.outlinePath ?? null),
               );
 
@@ -243,8 +243,7 @@ export default function SectionReadingRecommendations({
                   publicationYear={mapping.publicationYear}
                   edition={mapping.edition}
                   matchPercent={Math.round(Math.min(relevanceScore / maxScore, 1) * 100)}
-                  precisionLabel={precision.label}
-                  precisionClassName={precision.className}
+                  flags={[precision]}
                   checked={Boolean(checklistState[checklistKey])}
                   onCheckedChange={(checked) => writeChecklistState(checklistKey, checked)}
                 />
@@ -288,7 +287,7 @@ export default function SectionReadingRecommendations({
           <HorizontalCardScroll resetKey={activeType} singleCardOnMobile>
             {displayArticles.map((article) => {
               const checklistKey = wikipediaChecklistKey(article.title);
-              const precision = mappingPrecisionBadge(
+              const precision = mappingPrecisionFlag(
                 classifyMappingPrecision(article.relevantPathsAI, selection?.outlinePath ?? null),
               );
 
@@ -303,8 +302,7 @@ export default function SectionReadingRecommendations({
                   matchPercent={selection
                     ? Math.round(Math.min((article.filterScore || 0) / maxScore, 1) * 100)
                     : (article.matchPercent || 0)}
-                  precisionLabel={precision.label}
-                  precisionClassName={precision.className}
+                  flags={[precision]}
                   checked={Boolean(checklistState[checklistKey])}
                   onCheckedChange={(checked) => writeChecklistState(checklistKey, checked)}
                 />
@@ -347,7 +345,7 @@ export default function SectionReadingRecommendations({
           <HorizontalCardScroll resetKey={activeType} singleCardOnMobile>
             {displayEpisodes.map((episode) => {
               const checklistKey = iotChecklistKey(episode.pid);
-              const precision = mappingPrecisionBadge(
+              const precision = mappingPrecisionFlag(
                 classifyMappingPrecision(episode.relevantPathsAI, selection?.outlinePath ?? null),
               );
 
@@ -363,8 +361,7 @@ export default function SectionReadingRecommendations({
                   matchPercent={selection
                     ? Math.round(Math.min((episode.filterScore || 0) / maxScore, 1) * 100)
                     : (episode.matchPercent || 0)}
-                  precisionLabel={precision.label}
-                  precisionClassName={precision.className}
+                  flags={[precision]}
                   datePublished={episode.datePublished}
                   durationSeconds={episode.durationSeconds}
                   checked={Boolean(checklistState[checklistKey])}
@@ -409,46 +406,20 @@ export default function SectionReadingRecommendations({
             const isChecked = Boolean(checklistState[checklistKey]);
 
             return (
-              <div
+              <MacropaediaCard
                 key={reference}
-                class={`rounded-xl border border-amber-200 bg-white p-4 transition-shadow duration-200 hover:shadow-md ${isChecked ? 'border-slate-300 bg-slate-200/70 opacity-50' : ''}`}
-              >
-                <div class="mb-2 flex items-start justify-between gap-3">
-                  <div class="min-w-0">
-                    <h4 class="font-serif font-bold text-gray-900 text-base leading-tight">
-                      <a
-                        href={`${baseUrl}/macropaedia/${slugify(reference)}`}
-                        class="transition-colors hover:text-indigo-700"
-                      >
-                        {reference}
-                      </a>
-                    </h4>
-                  </div>
-                  <label class="inline-flex items-center gap-2 text-xs font-sans font-medium text-gray-500">
-                    <input
-                      type="checkbox"
-                      checked={isChecked}
-                      onChange={(event) => {
-                        writeChecklistState(checklistKey, (event.currentTarget as HTMLInputElement).checked);
-                      }}
-                      class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                      aria-label={`Mark ${reference} as completed`}
-                    />
-                    Done
-                  </label>
-                </div>
-                <div class="mb-3 flex flex-wrap gap-2 text-xs font-medium">
-                  <span class="rounded-full bg-amber-100 px-2.5 py-1 text-amber-900">
-                    Section reference
-                  </span>
-                  <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">
-                    Section-level mapping
-                  </span>
-                </div>
-                <Accordion title="Why this article?" defaultOpen={false}>
-                  <p class="text-gray-600">{macropaediaCardRationale(selection)}</p>
-                </Accordion>
-              </div>
+                title={reference}
+                rationale={<p class="text-gray-600">{macropaediaCardRationale(selection)}</p>}
+                baseUrl={baseUrl}
+                flags={[
+                  recommendationFlag('Section reference'),
+                  recommendationFlag('Section-level mapping'),
+                ]}
+                checked={isChecked}
+                onCheckedChange={(checked) => {
+                  writeChecklistState(checklistKey, checked);
+                }}
+              />
             );
           })}
         </HorizontalCardScroll>

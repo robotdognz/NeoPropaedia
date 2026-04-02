@@ -1,4 +1,5 @@
 import { normalizeOutlinePath } from './helpers';
+import { recommendationFlag, type RecommendationCardFlag } from './recommendationCardMeta';
 
 export type MappingPrecisionKind =
   | 'exact-path'
@@ -39,37 +40,19 @@ export function classifyMappingPrecision(
   return 'related-topic';
 }
 
-export function mappingPrecisionBadge(kind: MappingPrecisionKind): {
-  label: string;
-  className: string;
-} {
+export function mappingPrecisionFlag(kind: MappingPrecisionKind): RecommendationCardFlag {
   switch (kind) {
     case 'exact-path':
-      return {
-        label: 'Exact path',
-        className: 'border-emerald-100 bg-emerald-50 text-emerald-700',
-      };
+      return recommendationFlag('Exact path', 'success');
     case 'broader-path':
-      return {
-        label: 'Broader path',
-        className: 'border-amber-100 bg-amber-50 text-amber-700',
-      };
+      return recommendationFlag('Broader path', 'warning');
     case 'mapped-paths':
-      return {
-        label: 'Mapped paths',
-        className: 'border-indigo-100 bg-indigo-50 text-indigo-600',
-      };
+      return recommendationFlag('Mapped paths', 'info');
     case 'section-fallback':
-      return {
-        label: 'Section-level only',
-        className: 'border-slate-200 bg-slate-50 text-slate-500',
-      };
+      return recommendationFlag('Section-level only', 'muted');
     case 'related-topic':
     default:
-      return {
-        label: 'Related topic',
-        className: 'border-violet-100 bg-violet-50 text-violet-600',
-      };
+      return recommendationFlag('Related topic', 'topic');
   }
 }
 

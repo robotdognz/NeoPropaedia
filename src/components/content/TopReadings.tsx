@@ -1,9 +1,16 @@
 import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
-import Accordion from '../ui/Accordion';
 import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 import ReadingSelectionStrip from '../ui/ReadingSelectionStrip';
+import VsiCard from './VsiCard';
+import IotCard from './IotCard';
+import WikipediaCard from './WikipediaCard';
+import MacropaediaCard from './MacropaediaCard';
+import {
+  recommendationBadge,
+  type RecommendationCardBadge,
+} from '../../utils/recommendationCardMeta';
 import {
   iotChecklistKey,
   macropaediaChecklistKey,
@@ -24,14 +31,18 @@ import {
   subscribeReadingPreference,
   type ReadingType,
 } from '../../utils/readingPreference';
-import { slugify } from '../../utils/helpers';
 import { filterWikipediaLevel } from '../../utils/wikipediaLevel';
 
 export interface ReadingItem {
   title: string;
+  displayTitle?: string;
   author?: string;
   pid?: string;
   lowestLevel?: number;
+  publicationYear?: number;
+  edition?: number;
+  datePublished?: string;
+  durationSeconds?: number;
   count: number;
   sections?: number;
   paths?: number;
@@ -54,15 +65,6 @@ interface TopReadingSection {
   title: string;
   whyLabel: string;
   getCheckKey: (item: ReadingItem) => string;
-  getHref: (item: ReadingItem) => string;
-  showAuthor: boolean;
-}
-
-function matchColor(percent: number): string {
-  if (percent >= 70) return 'bg-emerald-500';
-  if (percent >= 40) return 'bg-emerald-400';
-  if (percent >= 20) return 'bg-amber-400';
-  return 'bg-gray-300';
 }
 
 function buildRationale(item: ReadingItem, countLabel: string, contextLabel: string): string {
@@ -93,6 +95,29 @@ function buildRationale(item: ReadingItem, countLabel: string, contextLabel: str
   }
 
   return lines.join(' ');
+}
+
+function singularizeCountLabel(label: string): string {
+  return label.endsWith('s') ? label.slice(0, -1) : label;
+}
+
+function buildRecommendationBadges(item: ReadingItem, countLabel: string): RecommendationCardBadge[] {
+  const badges: RecommendationCardBadge[] = [
+    recommendationBadge(
+      `${item.count} ${item.count === 1 ? singularizeCountLabel(countLabel) : countLabel}`,
+      'accent',
+    ),
+  ];
+
+  if (item.sections && item.sections > item.count) {
+    badges.push(recommendationBadge(`${item.sections} Sections`));
+  }
+
+  if (item.paths) {
+    badges.push(recommendationBadge(`${item.paths} mapped topics`));
+  }
+
+  return badges;
 }
 
 function resolveAvailableReadingType(type: ReadingType, availableTypes: ReadingType[]): ReadingType {
@@ -134,8 +159,6 @@ export default function TopReadings({
       title: 'Recommendations',
       whyLabel: 'Why this book?',
       getCheckKey: (item) => vsiChecklistKey(item.title, item.author || ''),
-      getHref: (item) => `${baseUrl}/vsi/${slugify(item.title)}`,
-      showAuthor: true,
     },
     {
       type: 'iot',
@@ -143,8 +166,6 @@ export default function TopReadings({
       title: 'Recommendations',
       whyLabel: 'Why this episode?',
       getCheckKey: (item) => iotChecklistKey(item.pid || item.title),
-      getHref: (item) => item.pid ? `${baseUrl}/iot/${item.pid}` : `${baseUrl}/iot`,
-      showAuthor: false,
     },
     {
       type: 'wikipedia',
@@ -152,8 +173,6 @@ export default function TopReadings({
       title: 'Recommendations',
       whyLabel: 'Why this article?',
       getCheckKey: (item) => wikipediaChecklistKey(item.title),
-      getHref: (item) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
-      showAuthor: false,
     },
     {
       type: 'macropaedia',
@@ -161,8 +180,6 @@ export default function TopReadings({
       title: 'Recommendations',
       whyLabel: 'Why this article?',
       getCheckKey: (item) => macropaediaChecklistKey(item.title),
-      getHref: (item) => `${baseUrl}/macropaedia/${slugify(item.title)}`,
-      showAuthor: false,
     },
   ].filter((section) => section.items.length > 0);
 
@@ -256,62 +273,76 @@ export default function TopReadings({
                 const checkKey = activeSection.getCheckKey(item);
                 const isChecked = Boolean(checklistState[checkKey]);
                 const matchPercent = item.relevance ?? 100;
+                const badges = buildRecommendationBadges(item, countLabel);
+                const rationale = buildRationale(item, countLabel, contextLabel);
+
+                if (activeSection.type === 'vsi') {
+                  return (
+                    <VsiCard
+                      key={`${activeSection.type}-${item.title}-${item.author ?? ''}`}
+                      title={item.title}
+                      author={item.author}
+                      rationale={rationale}
+                      whyTitle={activeSection.whyLabel}
+                      baseUrl={baseUrl}
+                      publicationYear={item.publicationYear}
+                      edition={item.edition}
+                      matchPercent={matchPercent}
+                      badges={badges}
+                      checked={isChecked}
+                      onCheckedChange={(checked) => writeChecklistState(checkKey, checked)}
+                    />
+                  );
+                }
+
+                if (activeSection.type === 'iot') {
+                  return (
+                    <IotCard
+                      key={`${activeSection.type}-${item.pid ?? item.title}`}
+                      pid={item.pid}
+                      title={item.title}
+                      rationale={rationale}
+                      whyTitle={activeSection.whyLabel}
+                      baseUrl={baseUrl}
+                      datePublished={item.datePublished}
+                      durationSeconds={item.durationSeconds}
+                      matchPercent={matchPercent}
+                      badges={badges}
+                      checked={isChecked}
+                      onCheckedChange={(checked) => writeChecklistState(checkKey, checked)}
+                    />
+                  );
+                }
+
+                if (activeSection.type === 'wikipedia') {
+                  return (
+                    <WikipediaCard
+                      key={`${activeSection.type}-${item.title}`}
+                      title={item.title}
+                      displayTitle={item.displayTitle}
+                      rationale={rationale}
+                      whyTitle={activeSection.whyLabel}
+                      baseUrl={baseUrl}
+                      matchPercent={matchPercent}
+                      badges={badges}
+                      checked={isChecked}
+                      onCheckedChange={(checked) => writeChecklistState(checkKey, checked)}
+                    />
+                  );
+                }
 
                 return (
-                  <div
-                    key={`${activeSection.type}-${item.pid ?? item.title}`}
-                    class={`rounded-xl border border-amber-200 bg-white p-4 transition-shadow duration-200 hover:shadow-md ${isChecked ? 'bg-slate-200/70 opacity-50' : ''}`}
-                  >
-                    <div class="flex items-start justify-between gap-2">
-                      <a
-                        href={activeSection.getHref(item)}
-                        class="font-serif font-bold text-gray-900 text-base leading-tight transition-colors hover:text-indigo-700"
-                      >
-                        {item.title}
-                      </a>
-                      <label class="flex shrink-0 items-center gap-1 text-xs font-sans text-gray-500 cursor-pointer">
-                        <input
-                          type="checkbox"
-                          checked={isChecked}
-                          onChange={(event) => writeChecklistState(checkKey, (event.currentTarget as HTMLInputElement).checked)}
-                          class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                        />
-                        Done
-                      </label>
-                    </div>
-                    {activeSection.showAuthor && item.author ? (
-                      <p class="mt-1 text-xs text-gray-400">{item.author}</p>
-                    ) : null}
-                    <div class="mt-3 flex items-center gap-2">
-                      <div class="h-1.5 flex-1 overflow-hidden rounded-full bg-gray-100">
-                        <div
-                          class={`h-full rounded-full ${matchColor(matchPercent)}`}
-                          style={{ width: `${matchPercent}%` }}
-                        />
-                      </div>
-                      <span class="text-[10px] font-sans text-gray-400 whitespace-nowrap">{matchPercent}% relevance</span>
-                    </div>
-                    <div class="mt-3 flex flex-wrap gap-2 text-xs font-medium">
-                      <span class="rounded-full bg-amber-100 px-2.5 py-1 text-amber-900">
-                        {item.count} {item.count === 1 ? countLabel.slice(0, -1) : countLabel}
-                      </span>
-                      {item.sections && item.sections > item.count ? (
-                        <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">
-                          {item.sections} Sections
-                        </span>
-                      ) : null}
-                      {item.paths ? (
-                        <span class="rounded-full bg-gray-100 px-2.5 py-1 text-gray-700">
-                          {item.paths} mapped topics
-                        </span>
-                      ) : null}
-                    </div>
-                    <div class="mt-3">
-                      <Accordion title={activeSection.whyLabel} defaultOpen={false}>
-                        <p class="text-gray-600">{buildRationale(item, countLabel, contextLabel)}</p>
-                      </Accordion>
-                    </div>
-                  </div>
+                  <MacropaediaCard
+                    key={`${activeSection.type}-${item.title}`}
+                    title={item.title}
+                    rationale={<p class="text-gray-600">{rationale}</p>}
+                    whyTitle={activeSection.whyLabel}
+                    baseUrl={baseUrl}
+                    matchPercent={matchPercent}
+                    badges={badges}
+                    checked={isChecked}
+                    onCheckedChange={(checked) => writeChecklistState(checkKey, checked)}
+                  />
                 );
               })}
             </HorizontalCardScroll>

@@ -17,7 +17,7 @@ import {
   type SearchableWikiArticle,
 } from '../../utils/wikipediaOutlineFilter';
 import { getReadingPreference, getHideCheckedReadings, setHideCheckedReadings, subscribeHideCheckedReadings } from '../../utils/readingPreference';
-import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
+import { classifyMappingPrecision, mappingPrecisionFlag } from '../../utils/mappingPrecision';
 import {
   getStoredWikipediaLevel,
   subscribeWikipediaLevel,
@@ -151,7 +151,7 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
               const mp = selection
                 ? Math.round(Math.min((article.filterScore || 0) / maxScore, 1) * 100)
                 : (article.matchPercent || 0);
-              const precision = mappingPrecisionBadge(
+              const precision = mappingPrecisionFlag(
                 classifyMappingPrecision(article.relevantPathsAI, selection?.outlinePath ?? null)
               );
 
@@ -164,8 +164,7 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
                   baseUrl={baseUrl}
                   sectionCode={sectionCode}
                   matchPercent={mp}
-                  precisionLabel={precision.label}
-                  precisionClassName={precision.className}
+                  flags={[precision]}
                   checked={isChecked}
                   onCheckedChange={(checked) => writeChecklistState(checkKey, checked)}
                 />

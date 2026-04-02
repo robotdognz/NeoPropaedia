@@ -15,7 +15,7 @@ import {
   type OutlineSelectionDetail,
 } from '../../utils/vsiOutlineFilter';
 import { getReadingPreference, getHideCheckedReadings, setHideCheckedReadings, subscribeHideCheckedReadings } from '../../utils/readingPreference';
-import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
+import { classifyMappingPrecision, mappingPrecisionFlag } from '../../utils/mappingPrecision';
 import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 
 export interface VsiMapping {
@@ -150,7 +150,7 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
                 ? Math.max(...displayMappings.map((m: any) => m.filterScore ?? 0), 1)
                 : Math.max(...scoredMappings.map((m: any) => m.relevanceScore ?? 0), 1);
               const matchPercent = Math.round(Math.min(relevanceScore / maxScore, 1) * 100);
-              const precision = mappingPrecisionBadge(
+              const precision = mappingPrecisionFlag(
                 classifyMappingPrecision(mapping.relevantPathsAI, selection?.outlinePath ?? null)
               );
 
@@ -165,8 +165,7 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
                   publicationYear={mapping.publicationYear}
                   edition={mapping.edition}
                   matchPercent={matchPercent}
-                  precisionLabel={precision.label}
-                  precisionClassName={precision.className}
+                  flags={[precision]}
                   checked={Boolean(checklistState[checklistKey])}
                   onCheckedChange={(checked) => writeChecklistState(checklistKey, checked)}
                 />

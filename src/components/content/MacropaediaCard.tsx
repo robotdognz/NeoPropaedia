@@ -1,51 +1,46 @@
 import { h } from 'preact';
 import { slugify } from '../../utils/helpers';
-import { linkifyRationaleReferences } from '../../utils/rationaleLinks';
 import type {
   RecommendationCardBadge,
   RecommendationCardFlag,
 } from '../../utils/recommendationCardMeta';
 import ReadingRecommendationCard from './ReadingRecommendationCard';
 
-export interface WikipediaCardProps {
+export interface MacropaediaCardProps {
   title: string;
-  displayTitle?: string;
-  rationale?: string;
+  rationale?: h.JSX.Element;
+  whyTitle?: string;
   baseUrl: string;
-  sectionCode?: string;
   matchPercent?: number;
   flags?: RecommendationCardFlag[];
   badges?: RecommendationCardBadge[];
-  whyTitle?: string;
   checked: boolean;
   onCheckedChange: (checked: boolean) => void;
 }
 
-export default function WikipediaCard({
+export default function MacropaediaCard({
   title,
-  displayTitle,
   rationale,
+  whyTitle = 'Why this article?',
   baseUrl,
-  sectionCode,
   matchPercent,
   flags,
   badges,
-  whyTitle = 'Why this article?',
   checked,
   onCheckedChange,
-}: WikipediaCardProps) {
+}: MacropaediaCardProps) {
   return (
     <ReadingRecommendationCard
-      title={displayTitle || title}
-      href={`${baseUrl}/wikipedia/${slugify(title)}`}
+      title={title}
+      href={`${baseUrl}/macropaedia/${slugify(title)}`}
       matchPercent={matchPercent}
       flags={flags}
       badges={badges}
       whyTitle={rationale ? whyTitle : undefined}
-      whyContent={rationale ? <p class="text-gray-600">{linkifyRationaleReferences(rationale, baseUrl, sectionCode)}</p> : undefined}
+      whyContent={rationale}
       checked={checked}
       onCheckedChange={onCheckedChange}
-      checkboxAriaLabel={`Mark ${title} as read`}
+      checkboxAriaLabel={`Mark ${title} as completed`}
     />
   );
 }
