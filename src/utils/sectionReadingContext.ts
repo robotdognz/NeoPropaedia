@@ -56,6 +56,7 @@ export interface EnrichedWikiArticle {
   url: string;
   category?: string;
   lowestLevel: number;
+  wordCount?: number;
   extract?: string;
   toc?: string[];
   wikiCategories?: string[];
@@ -263,6 +264,7 @@ export async function loadSectionRecommendationsPayload(
       url: catalogEntry?.url || `https://en.wikipedia.org/wiki/${entry.articleTitle.replace(/ /g, '_')}`,
       category: catalogEntry?.category,
       lowestLevel: catalogEntry?.lowestLevel || 3,
+      wordCount: catalogEntry?.wordCount,
       extract: catalogEntry?.extract,
       toc: catalogEntry?.toc,
       wikiCategories: catalogEntry?.wikiCategories,

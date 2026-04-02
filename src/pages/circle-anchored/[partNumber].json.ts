@@ -135,6 +135,7 @@ async function loadAnchoredReadingMap(): Promise<Map<number, CircleNavigatorPart
         displayTitle: entry.displayTitle,
         url: entry.url,
         lowestLevel: entry.lowestLevel,
+        wordCount: entry.wordCount,
         checklistKey: entry.checklistKey,
         sectionCount: entry.sectionCount,
         sections: entry.sections,

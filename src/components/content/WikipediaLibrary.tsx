@@ -58,6 +58,7 @@ const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
   Sections: 'section',
   Subsections: 'subsection',
 };
+const wordCountFormatter = new Intl.NumberFormat('en-US');
 
 function activeCoverageDescription(layer: CoverageLayer): string {
   switch (layer) {
@@ -84,6 +85,11 @@ function emptyRecommendationMessage(layer: CoverageLayer, isComplete: boolean): 
 
 function precisionBadgeText(entry: WikipediaAggregateEntry): string | null {
   return subsectionPrecisionSummary(entry);
+}
+
+function formatWordCount(wordCount?: number): string | null {
+  if (!wordCount || wordCount <= 0) return null;
+  return `${wordCountFormatter.format(wordCount)} words`;
 }
 
 export default function WikipediaLibrary({
@@ -252,22 +258,24 @@ export default function WikipediaLibrary({
           activeLayerLabel={coverageLayerLabel(activeLayer, 2)}
         />
 
-        <ReadingSpreadPath
-          isOpen={spreadPathOpen}
-          onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
-          steps={activePath}
+	        <ReadingSpreadPath
+	          isOpen={spreadPathOpen}
+	          onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
+	          steps={activePath}
           remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
           checklistState={checklistState}
           onCheckedChange={writeChecklistState}
           getHref={(step) => `${baseUrl}/wikipedia/${slugify(step.title)}`}
-          renderMeta={(step) => (
-            <>
-              {activeLayer === 'subsection' && precisionBadgeText(step) ? (
-                <p class="mt-1 text-xs text-gray-500">{precisionBadgeText(step)}</p>
-              ) : null}
-            </>
-          )}
-          checkboxAriaLabel={(step) => `Mark ${step.title} as read`}
+	          renderMeta={(step) => {
+	            const detailParts = [
+	              formatWordCount(step.wordCount),
+	              activeLayer === 'subsection' ? precisionBadgeText(step) : null,
+	            ].filter(Boolean);
+	            return detailParts.length > 0 ? (
+	              <p class="mt-1 text-sm text-gray-600">{detailParts.join(' · ')}</p>
+	            ) : null;
+	          }}
+	          checkboxAriaLabel={(step) => `Mark ${step.title} as read`}
           itemSingular="article"
           itemPlural="articles"
           coverageLayer={activeLayer}
@@ -356,21 +364,24 @@ export default function WikipediaLibrary({
         {filteredEntries.length > 0 ? (
           <>
             <div class="mt-6 space-y-4">
-              {visibleEntries.map((entry) => {
-                const isChecked = Boolean(checklistState[entry.checklistKey]);
-                return (
-                  <article key={entry.checklistKey} class="rounded-xl border border-gray-200 bg-gray-50/50 p-5">
+	              {visibleEntries.map((entry) => {
+	                const isChecked = Boolean(checklistState[entry.checklistKey]);
+	                const metadata = [
+	                  entry.category,
+	                  entry.sectionCount > 0 ? `${entry.sectionCount} sections` : null,
+	                  formatWordCount(entry.wordCount),
+	                ].filter(Boolean);
+	                return (
+	                  <article key={entry.checklistKey} class="rounded-xl border border-gray-200 bg-gray-50/50 p-5">
                     <div class="flex items-start justify-between gap-3">
                       <div class="min-w-0">
-                        <h3 class="font-serif text-2xl leading-tight text-gray-900">
-                          <a href={`${baseUrl}/wikipedia/${slugify(entry.title)}`} class="hover:text-indigo-700 transition-colors">{entry.displayTitle || entry.title}</a>
-                        </h3>
-                        <p class="mt-1 text-sm text-gray-600">
-                          {entry.category && <span>{entry.category}</span>}
-                          {entry.category && entry.sectionCount > 0 && <span> · </span>}
-                          {entry.sectionCount > 0 && <span>{entry.sectionCount} sections</span>}
-                        </p>
-                      </div>
+	                        <h3 class="font-serif text-2xl leading-tight text-gray-900">
+	                          <a href={`${baseUrl}/wikipedia/${slugify(entry.title)}`} class="hover:text-indigo-700 transition-colors">{entry.displayTitle || entry.title}</a>
+	                        </h3>
+	                        {metadata.length > 0 ? (
+	                          <p class="mt-1 text-sm text-gray-600">{metadata.join(' · ')}</p>
+	                        ) : null}
+	                      </div>
                       <label class="inline-flex flex-shrink-0 items-center gap-2 text-xs font-medium text-gray-500">
                         <input
                           type="checkbox"

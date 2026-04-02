@@ -175,6 +175,13 @@ function cacheFallbackDelay(request) {
   const pathname = new URL(request.url).pathname;
 
   if (pathname.endsWith('.json')) {
+    if (
+      pathname.includes('/library-data/')
+      || pathname.includes('/section-data/')
+      || pathname.includes('/circle-anchored/')
+    ) {
+      return null;
+    }
     return DATA_CACHE_TIMEOUT_MS;
   }
 

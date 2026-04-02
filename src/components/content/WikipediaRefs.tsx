@@ -160,6 +160,7 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
                   key={article.title}
                   title={article.title}
                   displayTitle={article.displayTitle}
+                  wordCount={article.wordCount}
                   rationale={article.rationale}
                   baseUrl={baseUrl}
                   sectionCode={sectionCode}

@@ -114,6 +114,7 @@ export interface WikipediaAggregateEntry {
   url: string;
   category?: string;
   lowestLevel: number;
+  wordCount?: number;
   checklistKey: string;
   sectionCount: number;
   sections: ReadingSectionSummary[];
@@ -467,6 +468,7 @@ export function buildWikipediaAggregateEntries(
     url: string;
     category?: string;
     lowestLevel: number;
+    wordCount?: number;
     sectionCodes: string[];
     progressSubsectionKeys?: string[];
     mappedPathCount?: number;
@@ -487,6 +489,7 @@ export function buildWikipediaAggregateEntries(
       url: article.url,
       category: article.category,
       lowestLevel: article.lowestLevel,
+      wordCount: article.wordCount,
       checklistKey: wikipediaChecklistKey(article.title),
       sectionCount: sections.length,
       sections,

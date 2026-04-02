@@ -20,7 +20,10 @@ export function useJsonPayload<T>(url: string): JsonPayloadState<T> {
       error: false,
     });
 
-    fetch(url, { signal: controller.signal })
+    fetch(url, {
+      signal: controller.signal,
+      cache: 'no-store',
+    })
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Failed to load ${url}`);

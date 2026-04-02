@@ -42,7 +42,7 @@ export type CircleNavigatorVsiEntry = Pick<
 
 export type CircleNavigatorWikipediaEntry = Pick<
   WikipediaAggregateEntry,
-  'title' | 'displayTitle' | 'url' | 'lowestLevel' | 'checklistKey' | 'sectionCount' | 'sections' | 'progressSubsectionKeys'
+  'title' | 'displayTitle' | 'url' | 'lowestLevel' | 'wordCount' | 'checklistKey' | 'sectionCount' | 'sections' | 'progressSubsectionKeys'
 >;
 
 export type CircleNavigatorIotEntry = Pick<

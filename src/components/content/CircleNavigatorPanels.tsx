@@ -17,6 +17,7 @@ import {
 } from '../../utils/readingData';
 import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
 import type { HomepageCoverageSource } from '../../utils/homepageCoverageTypes';
+import { formatWikipediaWordCount } from '../../utils/wikipediaCatalog';
 import { filterWikipediaLevel } from '../../utils/wikipediaLevel';
 import {
   COVERAGE_LAYER_META,
@@ -116,7 +117,10 @@ function loadPartRecommendations(
     }
   }
 
-  return fetch(joinBaseUrl(baseUrl, `circle-anchored/${partNumber}.json`), { signal: controller.signal })
+  return fetch(joinBaseUrl(baseUrl, `circle-anchored/${partNumber}.json`), {
+    signal: controller.signal,
+    cache: 'no-store',
+  })
     .then((response) => {
       if (!response.ok) {
         throw new Error(`Unable to load recommendations for Part ${partNumber}.`);
@@ -488,6 +492,7 @@ export function CenteredCircleNavigatorPanel({
         coverageEntries: wikiCoverageEntries,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
+        renderMeta: (item: CircleNavigatorWikipediaEntry) => formatWikipediaWordCount(item.wordCount),
         allowEmpty: rawSharedWikiEntries.length > 0,
       }),
       buildRecommendationSectionConfig({
@@ -702,6 +707,7 @@ export function TopPartCircleNavigatorPanel({
         coverageEntries: wikiCoverageEntries,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
+        renderMeta: (item: CircleNavigatorWikipediaEntry) => formatWikipediaWordCount(item.wordCount),
         allowEmpty: rawAnchoredWikiEntries.length > 0,
       }),
       buildRecommendationSectionConfig({

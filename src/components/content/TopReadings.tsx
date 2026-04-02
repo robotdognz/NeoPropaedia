@@ -39,6 +39,7 @@ export interface ReadingItem {
   author?: string;
   pid?: string;
   lowestLevel?: number;
+  wordCount?: number;
   publicationYear?: number;
   edition?: number;
   datePublished?: string;
@@ -320,6 +321,7 @@ export default function TopReadings({
                       key={`${activeSection.type}-${item.title}`}
                       title={item.title}
                       displayTitle={item.displayTitle}
+                      wordCount={item.wordCount}
                       rationale={rationale}
                       whyTitle={activeSection.whyLabel}
                       baseUrl={baseUrl}

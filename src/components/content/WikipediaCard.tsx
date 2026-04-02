@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import { slugify } from '../../utils/helpers';
 import { linkifyRationaleReferences } from '../../utils/rationaleLinks';
+import { formatWikipediaWordCount } from '../../utils/wikipediaCatalog';
 import type {
   RecommendationCardBadge,
   RecommendationCardFlag,
@@ -10,6 +11,7 @@ import ReadingRecommendationCard from './ReadingRecommendationCard';
 export interface WikipediaCardProps {
   title: string;
   displayTitle?: string;
+  wordCount?: number;
   rationale?: string;
   baseUrl: string;
   sectionCode?: string;
@@ -24,6 +26,7 @@ export interface WikipediaCardProps {
 export default function WikipediaCard({
   title,
   displayTitle,
+  wordCount,
   rationale,
   baseUrl,
   sectionCode,
@@ -34,10 +37,13 @@ export default function WikipediaCard({
   checked,
   onCheckedChange,
 }: WikipediaCardProps) {
+  const metadata = formatWikipediaWordCount(wordCount) ?? null;
+
   return (
     <ReadingRecommendationCard
       title={displayTitle || title}
       href={`${baseUrl}/wikipedia/${slugify(title)}`}
+      metadata={metadata}
       matchPercent={matchPercent}
       flags={flags}
       badges={badges}

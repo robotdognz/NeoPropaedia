@@ -1,6 +1,7 @@
 import { slugify } from './helpers';
 import type { HomepageCoverageSource } from './homepageCoverageTypes';
 import { formatIotEpisodeMeta } from './iotMetadata';
+import { formatWikipediaWordCount } from './wikipediaCatalog';
 import type {
   IotLibraryPayload,
   MacropaediaLibraryPayload,
@@ -108,6 +109,7 @@ export function buildHomepageCoverageSourceFromLibraryPayload<T extends ReadingT
           checklistKey: entry.checklistKey,
           title: entry.displayTitle ?? entry.title,
           href: joinBaseUrl(baseUrl, `wikipedia/${slugify(entry.title)}`),
+          meta: formatWikipediaWordCount(entry.wordCount),
           lowestLevel: entry.lowestLevel,
           sectionCount: entry.sectionCount,
           sections: entry.sections,
@@ -150,7 +152,10 @@ export async function fetchHomepageCoverageSource(
   baseUrl: string,
   signal?: AbortSignal,
 ): Promise<HomepageCoverageSource> {
-  const response = await fetch(joinBaseUrl(baseUrl, `library-data/${type}.json`), { signal });
+  const response = await fetch(joinBaseUrl(baseUrl, `library-data/${type}.json`), {
+    signal,
+    cache: 'no-store',
+  });
   if (!response.ok) {
     throw new Error(`Unable to load coverage source for ${type}.`);
   }

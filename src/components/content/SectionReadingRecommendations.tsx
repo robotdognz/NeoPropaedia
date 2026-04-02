@@ -296,6 +296,7 @@ export default function SectionReadingRecommendations({
                   key={article.title}
                   title={article.title}
                   displayTitle={article.displayTitle}
+                  wordCount={article.wordCount}
                   rationale={article.rationale}
                   baseUrl={baseUrl}
                   sectionCode={sectionCode}
