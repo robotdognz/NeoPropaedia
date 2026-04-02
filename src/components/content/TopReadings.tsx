@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
+import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
 import Accordion from '../ui/Accordion';
 import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 import ReadingSelectionStrip from '../ui/ReadingSelectionStrip';
@@ -24,11 +25,13 @@ import {
   type ReadingType,
 } from '../../utils/readingPreference';
 import { slugify } from '../../utils/helpers';
+import { filterWikipediaLevel } from '../../utils/wikipediaLevel';
 
 export interface ReadingItem {
   title: string;
   author?: string;
   pid?: string;
+  lowestLevel?: number;
   count: number;
   sections?: number;
   paths?: number;
@@ -123,6 +126,7 @@ export default function TopReadings({
   contextLabel,
   countLabel,
 }: TopReadingsProps) {
+  const wikiLevel = useWikipediaLevel();
   const sections: TopReadingSection[] = [
     {
       type: 'vsi',
@@ -189,9 +193,12 @@ export default function TopReadings({
 
   const activeType = resolveAvailableReadingType(readingPref, availableTypes);
   const activeSection = sections.find((section) => section.type === activeType) ?? sections[0];
-  const visibleItems = hideChecked
-    ? activeSection.items.filter((item) => !checklistState[activeSection.getCheckKey(item)])
+  const levelFilteredItems = activeSection.type === 'wikipedia'
+    ? filterWikipediaLevel(activeSection.items, wikiLevel)
     : activeSection.items;
+  const visibleItems = hideChecked
+    ? levelFilteredItems.filter((item) => !checklistState[activeSection.getCheckKey(item)])
+    : levelFilteredItems;
 
   return (
     <div class="space-y-4">
@@ -218,8 +225,9 @@ export default function TopReadings({
           setReadingPreference(type);
         }}
         readingTypeAriaLabel={`Recommended reading type for ${contextLabel}`}
+        showWikipediaLevelSelector
         supplementaryControls={(
-          <label class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/85 px-3 py-1.5 font-medium text-slate-600 cursor-pointer select-none transition hover:border-slate-300 hover:bg-white">
+          <label class="inline-flex items-center gap-2 rounded-xl border border-slate-200/80 bg-slate-50/70 px-3 py-2 text-[0.72rem] font-semibold tracking-[0.08em] text-slate-600 shadow-sm shadow-slate-200/60 cursor-pointer select-none transition hover:border-slate-300 hover:bg-white">
             <input
               type="checkbox"
               checked={hideChecked}
@@ -309,7 +317,7 @@ export default function TopReadings({
             </HorizontalCardScroll>
           ) : (
             <div class="rounded-xl border border-dashed border-amber-300 bg-white px-4 py-6 text-sm text-amber-900/80">
-              {emptyStateMessage(activeType, hideChecked, activeSection.items.length)}
+              {emptyStateMessage(activeType, hideChecked, levelFilteredItems.length)}
             </div>
           )}
         </div>

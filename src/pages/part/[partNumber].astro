@@ -7,6 +7,7 @@ import ReadingRecommendationsFallback from '../../components/content/ReadingReco
 import { getCollection, render } from 'astro:content';
 import { loadIotTopReadings } from '../../utils/iotTopReadings';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
+import { enrichWikipediaReadingItems } from '../../utils/wikipediaCatalog';
 
 export async function getStaticPaths() {
   const parts = await getCollection('parts');
@@ -45,6 +46,7 @@ const divisions = partNav?.divisions ?? [];
 const allPartReadings = await getCollection('part-readings');
 const partReadingsEntry = allPartReadings.find((r) => r.data.partNumber === part.partNumber);
 const partReadings = partReadingsEntry?.data.readings;
+const partWikiReadings = enrichWikipediaReadingItems(partReadings?.wiki);
 const iotTopReadings = await loadIotTopReadings();
 const partIotReadings = iotTopReadings.partReadingsByPart.get(part.partNumber) ?? [];
 
@@ -203,7 +205,7 @@ const bgColors: Record<number, string> = {
           <TopReadings
             client:only="preact"
             vsi={partReadings?.vsi}
-            wiki={partReadings?.wiki}
+            wiki={partWikiReadings}
             iot={partReadings?.iot ?? partIotReadings}
             macro={partReadings?.macro}
             baseUrl={base}

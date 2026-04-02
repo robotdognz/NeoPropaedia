@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
+import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
 import { writeChecklistState } from '../../utils/readingChecklist';
 import { fetchHomepageCoverageSource } from '../../utils/homepageCoverageSource';
 import type { HomepageCoverageSource } from '../../utils/homepageCoverageTypes';
@@ -29,6 +30,7 @@ import {
   selectDefaultCoverageLayer,
   type CoverageLayer,
 } from '../../utils/readingLibrary';
+import { filterWikipediaLevel } from '../../utils/wikipediaLevel';
 import ReadingSpreadPath from './ReadingSpreadPath';
 import CoverageRings from '../ui/CoverageRings';
 import PartCoverageRing from '../ui/PartCoverageRing';
@@ -148,6 +150,7 @@ export default function HomepageCoverageExplorer({
   framed = true,
 }: HomepageCoverageExplorerProps) {
   const checklistState = useReadingChecklistState();
+  const wikiLevel = useWikipediaLevel();
   const [selectedType, setSelectedType] = useState<ReadingType>('vsi');
   const [sourceCache, setSourceCache] = useState<Partial<Record<ReadingType, HomepageCoverageSource>>>({});
   const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
@@ -216,6 +219,14 @@ export default function HomepageCoverageExplorer({
   }, []);
 
   const source = sourceCache[selectedType] ?? null;
+  const filteredSource = useMemo(() => {
+    if (!source) return null;
+    if (source.type !== 'wikipedia') return source;
+    return {
+      ...source,
+      entries: filterWikipediaLevel(source.entries, wikiLevel),
+    };
+  }, [source, wikiLevel]);
 
   const completedChecklistKeys = useMemo(
     () => completedChecklistKeysFromState(checklistState),
@@ -223,17 +234,17 @@ export default function HomepageCoverageExplorer({
   );
 
   const supportedLayers = useMemo(
-    () => (source ? availableLayers(source) : DEFAULT_SUPPORTED_LAYERS),
-    [source?.includeSubsections],
+    () => (filteredSource ? availableLayers(filteredSource) : DEFAULT_SUPPORTED_LAYERS),
+    [filteredSource?.includeSubsections],
   );
 
-  // All computations run eagerly against source (including expensive spread paths)
+  // All computations run eagerly against the active source (including expensive spread paths)
   const snapshots = useMemo(() => {
-    if (!source) return [];
+    if (!filteredSource) return [];
     return supportedLayers.map((layer) =>
-      buildLayerCoverageSnapshot(source.entries, completedChecklistKeys, layer),
+      buildLayerCoverageSnapshot(filteredSource.entries, completedChecklistKeys, layer),
     );
-  }, [completedChecklistKeys, source, supportedLayers]);
+  }, [completedChecklistKeys, filteredSource, supportedLayers]);
 
   const tabSnapshots = useMemo(
     () =>
@@ -268,27 +279,27 @@ export default function HomepageCoverageExplorer({
     : false;
   const activeRingLabel = coverageLayerLabel(activeLayer, 2);
   const coverageRingsLatest = useMemo(() => {
-    if (!source) return [];
-    return buildCoverageRings(source.entries, checklistState, {
-      includeSubsections: source.includeSubsections,
+    if (!filteredSource) return [];
+    return buildCoverageRings(filteredSource.entries, checklistState, {
+      includeSubsections: filteredSource.includeSubsections,
     });
-  }, [checklistState, source]);
+  }, [checklistState, filteredSource]);
   const partSegmentsLatest = useMemo(() => {
-    if (!source || !partsMeta) return [];
-    return buildPartCoverageSegments(source.entries, checklistState, activeLayer, partsMeta);
-  }, [checklistState, source, activeLayer, partsMeta]);
+    if (!filteredSource || !partsMeta) return [];
+    return buildPartCoverageSegments(filteredSource.entries, checklistState, activeLayer, partsMeta);
+  }, [checklistState, filteredSource, activeLayer, partsMeta]);
   const {
     rings: coverageRings,
     partSegments,
     activeRingLabel: displayActiveRingLabel,
   } = useStagedCoverageDisplay(
-    source?.type ?? null,
+    filteredSource?.type ?? null,
     coverageRingsLatest,
     partSegmentsLatest,
     activeRingLabel,
   );
 
-  const completedCount = source ? countCompletedEntries(source.entries, checklistState) : 0;
+  const completedCount = filteredSource ? countCompletedEntries(filteredSource.entries, checklistState) : 0;
   const wrapperClass = framed
     ? 'rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7'
     : undefined;
@@ -334,6 +345,7 @@ export default function HomepageCoverageExplorer({
       coverageLayerOptions={layerOptions}
       onCoverageLayerChange={selectLayer}
       coverageLayerAriaLabel="Whole outline coverage layer"
+      showWikipediaLevelSelector
     />
   );
 
@@ -365,7 +377,7 @@ export default function HomepageCoverageExplorer({
           <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-5 text-sm text-slate-600">
             Loading the {READING_TYPE_LABELS[selectedType]} coverage path...
           </div>
-        ) : source ? (
+        ) : filteredSource ? (
           <div class="space-y-3">
             <section class="grid gap-3 lg:grid-cols-2">
               <div class="rounded-xl border border-slate-200 bg-white p-4">
@@ -489,12 +501,12 @@ export default function HomepageCoverageExplorer({
                 step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null
               }
               checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
-              itemSingular={source.itemSingular}
-              itemPlural={source.itemPlural}
+              itemSingular={filteredSource.itemSingular}
+              itemPlural={filteredSource.itemPlural}
               coverageLayer={activeLayer}
               coverageUnitSingular={coverageLayerLabel(activeLayer, 1)}
               coverageUnitPlural={coverageLayerLabel(activeLayer, 2)}
-              emptyMessage={emptyRecommendationMessage(source, activeLayer, isLayerComplete)}
+              emptyMessage={emptyRecommendationMessage(filteredSource, activeLayer, isLayerComplete)}
               baseUrl={baseUrl}
               sectionLinksVariant="chips"
             />

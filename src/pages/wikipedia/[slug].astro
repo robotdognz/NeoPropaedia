@@ -14,6 +14,7 @@ import {
 import { loadOutlineGraph } from '../../utils/outlineGraph';
 import { buildWikipediaAggregateEntries } from '../../utils/readingData';
 import { buildCoverageRingsForCompleted } from '../../utils/readingLibrary';
+import { wikipediaLevelLabel } from '../../utils/wikipediaLevel';
 
 export async function getStaticPaths() {
   const outline = await loadOutlineGraph();
@@ -106,8 +107,9 @@ for (const s of sections) {
 }
 const sortedParts = [...byPart.entries()].sort((a, b) => a[0] - b[0]);
 
-const levelLabels: Record<number, string> = { 1: 'Level 1 (Top 10)', 2: 'Level 2 (Top 100)', 3: 'Level 3 (Top 1,000)' };
-const levelLabel = levelLabels[article.lowestLevel] || 'Level 3';
+const levelLabel = article.lowestLevel === 1 || article.lowestLevel === 2 || article.lowestLevel === 3
+  ? wikipediaLevelLabel(article.lowestLevel)
+  : 'Level 3';
 const extractParagraphs = splitWikipediaExtractParagraphs(article.extract);
 const overviewHeading = extractParagraphs.length > 0 ? 'Wikipedia Extract' : article.summaryAI ? 'Article Summary' : null;
 const overviewParagraphs = extractParagraphs.length > 0

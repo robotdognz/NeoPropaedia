@@ -6,6 +6,7 @@ export interface HomepageCoverageEntry {
   title: string;
   href: string;
   meta?: string;
+  lowestLevel?: number;
   sectionCount: number;
   sections: ReadingSectionSummary[];
   progressSubsectionKeys?: string[];

@@ -108,8 +108,8 @@ export default function SelectorCardRail<Value extends string = string>({
                 ) : null}
                 <span class={`block truncate leading-5 ${
                   isCompact
-                    ? isActive ? 'text-xs font-semibold text-slate-900' : 'text-xs font-medium'
-                    : isActive ? 'text-sm font-semibold text-slate-900' : 'text-sm font-medium'
+                    ? isActive ? 'text-xs font-medium text-slate-900' : 'text-xs font-normal'
+                    : isActive ? 'text-sm font-medium text-slate-900' : 'text-sm font-normal'
                 }`}>
                   {option.label}
                 </span>

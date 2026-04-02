@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
+import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
 import {
   writeChecklistState,
 } from '../../utils/readingChecklist';
@@ -16,6 +17,7 @@ import {
 } from '../../utils/readingData';
 import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
 import type { HomepageCoverageSource } from '../../utils/homepageCoverageTypes';
+import { filterWikipediaLevel } from '../../utils/wikipediaLevel';
 import {
   COVERAGE_LAYER_META,
   COVERAGE_LAYER_ORDER,
@@ -209,8 +211,9 @@ function buildRecommendationSectionConfig<TEntry extends AnchoredEntryBase>(conf
   getHref: (item: TEntry) => string;
   getLabel?: (item: TEntry) => string;
   renderMeta?: (item: TEntry) => ComponentChildren;
+  allowEmpty?: boolean;
 }): AnchoredRecommendationSectionConfig<TEntry> | null {
-  if (config.entries.length === 0) return null;
+  if (config.entries.length === 0 && !config.allowEmpty) return null;
 
   const supportedLayers = supportedLayersForReadingType(config.type);
   const layerSnapshots: Partial<Record<CoverageLayer, LayerCoverageSnapshot<TEntry>>> = {};
@@ -350,6 +353,7 @@ function renderSelectionControls<TEntry extends AnchoredEntryBase>(
         setCoverageLayerPreference(layer);
       }}
       coverageLayerAriaLabel="Selected fields coverage layer"
+      showWikipediaLevelSelector
     />
   );
 }
@@ -400,6 +404,7 @@ export function CenteredCircleNavigatorPanel({
   baseUrl,
   coverageSources,
 }: CenteredCircleNavigatorPanelProps) {
+  const wikiLevel = useWikipediaLevel();
   const [sharedPartRecommendations, setSharedPartRecommendations] = useState<{
     center: CircleNavigatorPartRecommendations;
     top: CircleNavigatorPartRecommendations;
@@ -449,9 +454,13 @@ export function CenteredCircleNavigatorPanel({
     const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
 
     const sharedVsiEntries = intersectSharedEntries(sharedPartRecommendations.center.vsi, sharedPartRecommendations.top.vsi);
-    const sharedWikiEntries = intersectSharedEntries(sharedPartRecommendations.center.wiki, sharedPartRecommendations.top.wiki);
+    const rawSharedWikiEntries = intersectSharedEntries(sharedPartRecommendations.center.wiki, sharedPartRecommendations.top.wiki);
+    const sharedWikiEntries = filterWikipediaLevel(rawSharedWikiEntries, wikiLevel);
     const sharedIotEntries = intersectSharedEntries(sharedPartRecommendations.center.iot, sharedPartRecommendations.top.iot);
     const sharedMacroEntries = intersectSharedEntries(sharedPartRecommendations.center.macro, sharedPartRecommendations.top.macro);
+    const wikiCoverageEntries = coverageSources.wikipedia?.entries
+      ? filterWikipediaLevel(coverageSources.wikipedia.entries, wikiLevel)
+      : undefined;
     return [
       buildRecommendationSectionConfig({
         type: 'vsi',
@@ -476,10 +485,11 @@ export function CenteredCircleNavigatorPanel({
         itemSingular: 'article',
         entries: sharedWikiEntries,
         completedChecklistKeys,
-        coverageEntries: coverageSources.wikipedia?.entries,
+        coverageEntries: wikiCoverageEntries,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
         renderMeta: (item: CircleNavigatorWikipediaEntry) => `Vital Articles Level ${item.lowestLevel}`,
+        allowEmpty: rawSharedWikiEntries.length > 0,
       }),
       buildRecommendationSectionConfig({
         type: 'macropaedia',
@@ -492,7 +502,7 @@ export function CenteredCircleNavigatorPanel({
     ]
       .filter((section): section is AnchoredRecommendationSectionConfig<AnchoredEntryBase> => section !== null)
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
-  }, [sharedPartRecommendations, checklistState, readingPref, baseUrl, coverageSources]);
+  }, [sharedPartRecommendations, checklistState, readingPref, baseUrl, coverageSources, wikiLevel]);
 
   const {
     activeRecommendation,
@@ -620,6 +630,7 @@ export function TopPartCircleNavigatorPanel({
   baseUrl,
   coverageSources,
 }: TopPartCircleNavigatorPanelProps) {
+  const wikiLevel = useWikipediaLevel();
   const [partRecommendations, setPartRecommendations] = useState<CircleNavigatorPartRecommendations | null>(
     () => partRecommendationCache.get(topPartNumber) ?? null
   );
@@ -658,9 +669,13 @@ export function TopPartCircleNavigatorPanel({
     const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
 
     const anchoredVsiEntries = partRecommendations.vsi.filter((entry) => entry.sections.some(belongsToPart));
-    const anchoredWikiEntries = partRecommendations.wiki.filter((entry) => entry.sections.some(belongsToPart));
+    const rawAnchoredWikiEntries = partRecommendations.wiki.filter((entry) => entry.sections.some(belongsToPart));
+    const anchoredWikiEntries = filterWikipediaLevel(rawAnchoredWikiEntries, wikiLevel);
     const anchoredIotEntries = partRecommendations.iot.filter((entry) => entry.sections.some(belongsToPart));
     const anchoredMacroEntries = partRecommendations.macro.filter((entry) => entry.sections.some(belongsToPart));
+    const wikiCoverageEntries = coverageSources.wikipedia?.entries
+      ? filterWikipediaLevel(coverageSources.wikipedia.entries, wikiLevel)
+      : undefined;
     return [
       buildRecommendationSectionConfig({
         type: 'vsi',
@@ -685,10 +700,11 @@ export function TopPartCircleNavigatorPanel({
         itemSingular: 'article',
         entries: anchoredWikiEntries,
         completedChecklistKeys,
-        coverageEntries: coverageSources.wikipedia?.entries,
+        coverageEntries: wikiCoverageEntries,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
         renderMeta: (item: CircleNavigatorWikipediaEntry) => `Vital Articles Level ${item.lowestLevel}`,
+        allowEmpty: rawAnchoredWikiEntries.length > 0,
       }),
       buildRecommendationSectionConfig({
         type: 'macropaedia',
@@ -701,7 +717,7 @@ export function TopPartCircleNavigatorPanel({
     ]
       .filter((section): section is AnchoredRecommendationSectionConfig<AnchoredEntryBase> => section !== null)
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
-  }, [topPartNumber, readingPref, checklistState, partRecommendations, baseUrl, coverageSources]);
+  }, [topPartNumber, readingPref, checklistState, partRecommendations, baseUrl, coverageSources, wikiLevel]);
 
   const {
     activeRecommendation,

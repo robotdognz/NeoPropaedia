@@ -19,15 +19,17 @@ interface CoverageLayerTabsProps {
   activeLayer: CoverageLayer;
   onSelect: (layer: CoverageLayer) => void;
   snapshots: Array<Pick<LayerCoverageSnapshot<ChecklistBackedReadingEntry>, 'layer' | 'currentlyCoveredCount' | 'totalCoverageCount'>>;
+  framed?: boolean;
 }
 
 export default function CoverageLayerTabs({
   activeLayer,
   onSelect,
   snapshots,
+  framed = true,
 }: CoverageLayerTabsProps) {
   return (
-    <section class={`${CONTROL_SURFACE_CLASS} p-2.5 sm:p-3`}>
+    <section class={framed ? `${CONTROL_SURFACE_CLASS} p-2.5 sm:p-3` : undefined}>
       <SelectorCardRail
         label="Coverage Layer"
         ariaLabel="Coverage layer"

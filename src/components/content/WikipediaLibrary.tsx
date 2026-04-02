@@ -26,6 +26,14 @@ import SelectorCardRail from '../ui/SelectorCardRail';
 import { CONTROL_SURFACE_CLASS } from '../ui/controlTheme';
 import { subsectionPrecisionSummary } from '../../utils/mappingPrecision';
 import {
+  getStoredWikipediaLevel,
+  setStoredWikipediaLevel,
+  subscribeWikipediaLevel,
+  wikipediaLevelCount,
+  wikipediaLevelName,
+  type WikipediaKnowledgeLevel,
+} from '../../utils/wikipediaLevel';
+import {
   getCoverageLayerPreference,
   setCoverageLayerPreference,
   subscribeCoverageLayerPreference,
@@ -37,43 +45,19 @@ export interface WikipediaLibraryProps {
   partsMeta?: PartMeta[];
 }
 
-type KnowledgeLevel = 1 | 2 | 3;
+type KnowledgeLevel = WikipediaKnowledgeLevel;
 type ReadFilter = 'all' | 'unread' | 'read';
 type SortField = 'section' | 'part' | 'division' | 'subsection' | 'title';
 type SortDirection = 'asc' | 'desc';
 
-const LEVEL_KEY = 'propaedia-wiki-level';
 const INITIAL_VISIBLE = 50;
 const RECOMMENDATION_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
-const LEVEL_LABELS: Record<KnowledgeLevel, string> = {
-  1: 'Level 1',
-  2: 'Level 2',
-  3: 'Level 3',
-};
-const LEVEL_META: Record<KnowledgeLevel, string> = {
-  1: '10',
-  2: '100',
-  3: '1,000',
-};
 const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
   Parts: 'part',
   Divisions: 'division',
   Sections: 'section',
   Subsections: 'subsection',
 };
-
-function getStoredLevel(): KnowledgeLevel {
-  if (typeof window === 'undefined') return 3;
-  const stored = localStorage.getItem(LEVEL_KEY);
-  if (stored === '1' || stored === '2' || stored === '3') {
-    return Number(stored) as KnowledgeLevel;
-  }
-  return 3;
-}
-
-function storeLevel(level: KnowledgeLevel) {
-  if (typeof window !== 'undefined') localStorage.setItem(LEVEL_KEY, String(level));
-}
 
 function activeCoverageDescription(layer: CoverageLayer): string {
   switch (layer) {
@@ -124,10 +108,12 @@ export default function WikipediaLibrary({
   };
 
   useEffect(() => {
-    setLevel(getStoredLevel());
+    setLevel(getStoredWikipediaLevel());
     setSelectedLayer(getCoverageLayerPreference());
+    const unsubLevel = subscribeWikipediaLevel((nextLevel) => setLevel(nextLevel));
     const unsubLayer = subscribeCoverageLayerPreference((layer) => setSelectedLayer(layer));
     return () => {
+      unsubLevel();
       unsubLayer();
     };
   }, []);
@@ -138,8 +124,7 @@ export default function WikipediaLibrary({
 
   const changeLevel = (newLevel: KnowledgeLevel) => {
     setLevel(newLevel);
-    setSelectedLayer(null);
-    storeLevel(newLevel);
+    setStoredWikipediaLevel(newLevel);
   };
 
   const levelEntries = entries.filter((entry) => entry.lowestLevel <= level);
@@ -224,7 +209,13 @@ export default function WikipediaLibrary({
 
   return (
     <div class="space-y-4">
-      <section class={`${CONTROL_SURFACE_CLASS} p-2.5 sm:p-3`}>
+      <section class={`${CONTROL_SURFACE_CLASS} space-y-2.5 p-2.5 sm:p-3`}>
+        <CoverageLayerTabs
+          activeLayer={activeLayer}
+          onSelect={(layer) => changeLayer(layer)}
+          snapshots={layerTabSnapshots}
+          framed={false}
+        />
         <SelectorCardRail
           label="Wikipedia Level"
           ariaLabel="Wikipedia level"
@@ -232,19 +223,13 @@ export default function WikipediaLibrary({
           columns={3}
           options={([1, 2, 3] as KnowledgeLevel[]).map((lvl) => ({
             value: lvl,
-            label: LEVEL_LABELS[lvl],
-            meta: LEVEL_META[lvl],
+            label: wikipediaLevelName(lvl),
+            meta: wikipediaLevelCount(lvl),
           }))}
           onChange={changeLevel}
           size="compact"
         />
       </section>
-
-      <CoverageLayerTabs
-        activeLayer={activeLayer}
-        onSelect={(layer) => changeLayer(layer)}
-        snapshots={layerTabSnapshots}
-      />
 
       <div class="space-y-4">
         <ReadingCoverageSummary

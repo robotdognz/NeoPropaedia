@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
 import Accordion from '../ui/Accordion';
 import VsiCard from './VsiCard';
 import WikipediaCard from './WikipediaCard';
@@ -40,6 +41,9 @@ import {
 } from '../../utils/iotOutlineFilter';
 import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
 import { slugify } from '../../utils/helpers';
+import {
+  wikipediaLevelLabel,
+} from '../../utils/wikipediaLevel';
 import type {
   SectionReadingRecommendationsPayload,
 } from '../../utils/sectionReadingContext';
@@ -47,8 +51,6 @@ import type {
 export interface SectionReadingRecommendationsProps extends SectionReadingRecommendationsPayload {
   baseUrl: string;
 }
-
-type KnowledgeLevel = 1 | 2 | 3;
 
 interface ActiveSectionRecommendationPanel {
   title: string;
@@ -59,17 +61,6 @@ interface ActiveSectionRecommendationPanel {
   selectionNotice?: string | null;
   emptyMessage: string;
   body: h.JSX.Element;
-}
-
-const WIKIPEDIA_LEVEL_STORAGE_KEY = 'propaedia-wiki-level';
-
-function getStoredLevel(): KnowledgeLevel {
-  if (typeof window === 'undefined') return 3;
-  const stored = localStorage.getItem(WIKIPEDIA_LEVEL_STORAGE_KEY);
-  if (stored === '1' || stored === '2' || stored === '3') {
-    return Number(stored) as KnowledgeLevel;
-  }
-  return 3;
 }
 
 function resolveAvailableReadingType(type: ReadingType, availableTypes: ReadingType[]): ReadingType {
@@ -93,12 +84,6 @@ function recommendationPanelClass() {
 
 function emptyStateClass() {
   return 'rounded-xl border border-dashed border-amber-300 bg-white px-4 py-6 text-sm text-amber-900/80';
-}
-
-function wikipediaLevelLabel(level: KnowledgeLevel): string {
-  if (level === 1) return 'Level 1 (Top 10)';
-  if (level === 2) return 'Level 2 (Top 100)';
-  return 'Level 3 (Top 1,000)';
 }
 
 function filteredEmptyMessage(
@@ -160,6 +145,7 @@ export default function SectionReadingRecommendations({
   sectionOutlineText,
   baseUrl,
 }: SectionReadingRecommendationsProps) {
+  const wikiLevel = useWikipediaLevel();
   const typeCounts: Record<ReadingType, number> = {
     vsi: vsiMappings.length,
     wikipedia: wikiArticles.length,
@@ -172,7 +158,6 @@ export default function SectionReadingRecommendations({
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
   const [hideChecked, setHideChecked] = useState(() => getHideCheckedReadings());
-  const [wikiLevel, setWikiLevel] = useState<KnowledgeLevel>(3);
   const panelRef = useRef<HTMLElement>(null);
   const activeType = resolveAvailableReadingType(selectedType, availableTypes);
 
@@ -190,18 +175,6 @@ export default function SectionReadingRecommendations({
 
   useEffect(() => {
     return subscribeHideCheckedReadings((hide) => setHideChecked(hide));
-  }, []);
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    setWikiLevel(getStoredLevel());
-    const onStorage = (event: StorageEvent) => {
-      if (event.key !== null && event.key !== WIKIPEDIA_LEVEL_STORAGE_KEY) return;
-      setWikiLevel(getStoredLevel());
-    };
-    window.addEventListener('storage', onStorage);
-    return () => window.removeEventListener('storage', onStorage);
   }, []);
 
   useEffect(() => {
@@ -523,8 +496,9 @@ export default function SectionReadingRecommendations({
           setReadingPreference(type);
         }}
         readingTypeAriaLabel="Section reading type"
+        showWikipediaLevelSelector
         supplementaryControls={(
-          <label class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/85 px-3 py-1.5 font-medium text-slate-600 cursor-pointer select-none transition hover:border-slate-300 hover:bg-white">
+          <label class="inline-flex items-center gap-2 rounded-xl border border-slate-200/80 bg-slate-50/70 px-3 py-2 text-[0.72rem] font-semibold tracking-[0.08em] text-slate-600 shadow-sm shadow-slate-200/60 cursor-pointer select-none transition hover:border-slate-300 hover:bg-white">
             <input
               type="checkbox"
               checked={hideChecked}

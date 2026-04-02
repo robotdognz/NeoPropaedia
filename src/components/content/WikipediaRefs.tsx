@@ -18,6 +18,12 @@ import {
 } from '../../utils/wikipediaOutlineFilter';
 import { getReadingPreference, getHideCheckedReadings, setHideCheckedReadings, subscribeHideCheckedReadings } from '../../utils/readingPreference';
 import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
+import {
+  getStoredWikipediaLevel,
+  subscribeWikipediaLevel,
+  wikipediaLevelLabel,
+  type WikipediaKnowledgeLevel,
+} from '../../utils/wikipediaLevel';
 import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 
 export interface WikipediaArticleRef extends SearchableWikiArticle {
@@ -32,17 +38,7 @@ export interface WikipediaRefsProps {
   baseUrl: string;
 }
 
-const STORAGE_KEY = 'propaedia-wiki-level';
-type KnowledgeLevel = 1 | 2 | 3;
-
-function getStoredLevel(): KnowledgeLevel {
-  if (typeof window === 'undefined') return 3;
-  const stored = localStorage.getItem(STORAGE_KEY);
-  if (stored === '1' || stored === '2' || stored === '3') {
-    return Number(stored) as KnowledgeLevel;
-  }
-  return 3;
-}
+type KnowledgeLevel = WikipediaKnowledgeLevel;
 
 export default function WikipediaRefs({ articles, sectionCode, baseUrl }: WikipediaRefsProps) {
   const [level, setLevel] = useState<KnowledgeLevel>(3);
@@ -55,15 +51,11 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
   const [hideChecked, setHideChecked] = useState(() => getHideCheckedReadings());
 
   useEffect(() => {
-    setLevel(getStoredLevel());
+    setLevel(getStoredWikipediaLevel());
     setChecklistState(readChecklistState());
     const unsub = subscribeChecklistState(() => setChecklistState(readChecklistState()));
-    const onStorage = (event: StorageEvent) => {
-      if (event.key !== null && event.key !== STORAGE_KEY) return;
-      setLevel(getStoredLevel());
-    };
-    window.addEventListener('storage', onStorage);
-    return () => { unsub(); window.removeEventListener('storage', onStorage); };
+    const unsubLevel = subscribeWikipediaLevel((nextLevel) => setLevel(nextLevel));
+    return () => { unsub(); unsubLevel(); };
   }, []);
 
   useEffect(() => {
@@ -120,7 +112,7 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
               href={`${baseUrl}/wikipedia`}
               class="text-xs text-gray-500 underline decoration-slate-300 underline-offset-2 transition hover:text-indigo-700 hover:decoration-indigo-300"
             >
-              Showing Level {level === 1 ? '1 (Top 10)' : level === 2 ? '2 (Top 100)' : '3 (Top 1,000)'}
+              Showing {wikipediaLevelLabel(level)}
             </a>
             <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer select-none">
               <input

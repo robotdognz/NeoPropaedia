@@ -7,6 +7,7 @@ import ReadingRecommendationsFallback from '../../components/content/ReadingReco
 import { getCollection } from 'astro:content';
 import { loadIotTopReadings } from '../../utils/iotTopReadings';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
+import { enrichWikipediaReadingItems } from '../../utils/wikipediaCatalog';
 
 export async function getStaticPaths() {
   const divisions = await getCollection('divisions');
@@ -42,6 +43,7 @@ const topLevelSubsectionCountBySection = new Map(
 const allDivReadings = await getCollection('division-readings');
 const divReadingsEntry = allDivReadings.find((r) => r.data.divisionId === division.divisionId);
 const divReadings = divReadingsEntry?.data.readings;
+const divisionWikiReadings = enrichWikipediaReadingItems(divReadings?.wiki);
 const iotTopReadings = await loadIotTopReadings();
 const divisionIotReadings = iotTopReadings.divisionReadingsByDivision.get(division.divisionId) ?? [];
 
@@ -142,7 +144,7 @@ const partAccentText = partTextColors[division.partNumber];
           <TopReadings
             client:only="preact"
             vsi={divReadings?.vsi}
-            wiki={divReadings?.wiki}
+            wiki={divisionWikiReadings}
             iot={divReadings?.iot ?? divisionIotReadings}
             macro={divReadings?.macro}
             baseUrl={base}
