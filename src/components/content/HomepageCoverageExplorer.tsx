@@ -24,7 +24,6 @@ import {
   buildPartCoverageSegments,
   type CoverageRing,
   completedChecklistKeysFromState,
-  countCompletedEntries,
   coverageLayerLabel,
   type PartCoverageSegment,
   selectDefaultCoverageLayer,
@@ -299,7 +298,6 @@ export default function HomepageCoverageExplorer({
     activeRingLabel,
   );
 
-  const completedCount = filteredSource ? countCompletedEntries(filteredSource.entries, checklistState) : 0;
   const wrapperClass = framed
     ? 'rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7'
     : undefined;
@@ -365,128 +363,101 @@ export default function HomepageCoverageExplorer({
       ) : null}
 
       <div class={`${topSpacingClass} space-y-4`}>
-        {selectionStrip}
-
-        {errorType === selectedType ? (
-          <div class="rounded-xl border border-red-200 bg-red-50 px-4 py-5 text-sm text-red-700">
-            Could not load the {READING_TYPE_LABELS[selectedType]} coverage data right now.
-          </div>
-        ) : null}
-
-        {!source && loadingType === selectedType ? (
-          <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-5 text-sm text-slate-600">
-            Loading the {READING_TYPE_LABELS[selectedType]} coverage path...
-          </div>
-        ) : filteredSource ? (
+        {filteredSource ? (
           <div class="space-y-3">
-            <section class="grid gap-3 lg:grid-cols-2">
-              <div class="rounded-xl border border-slate-200 bg-white p-4">
-                <p class="mb-3 text-sm font-medium uppercase tracking-wide text-slate-500">Your Coverage</p>
-                <div class="flex items-center justify-evenly">
-                  <CoverageRings
-                    rings={coverageRings}
-                    size={100}
-                    ringWidth={8}
-                    hideLegend
-                    activeRingLabel={displayActiveRingLabel}
-                    onSelectRing={(label) => {
-                      const layer = LAYER_BY_RING_LABEL[label];
-                      if (layer && supportedLayers.includes(layer)) {
-                        setSelectedLayer(layer);
-                        setCoverageLayerPreference(layer);
-                      }
-                    }}
-                  />
-                  {partSegments.length > 0 && (
-                    <PartCoverageRing segments={partSegments} size={100} />
-                  )}
-                </div>
-                <details class="mt-3 group/stats">
-                  <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors flex items-center gap-1 list-none [&::-webkit-details-marker]:hidden">
-                    <span>Coverage Statistics</span>
-                    <svg
-                      class="h-3 w-3 transition-transform group-open/stats:rotate-180"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width={2}
-                    >
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </summary>
-                  <div class={`mt-2 grid gap-3 ${partSegments.length > 0 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
-                    <div class="space-y-1 text-xs text-slate-500">
-                      {coverageRings.map((ring) => (
-                        <div
-                          key={ring.label}
-                          class={`flex items-center gap-1.5 ${
-                            ring.label === displayActiveRingLabel
-                              ? 'font-medium text-slate-700'
-                              : ''
-                          }`}
-                        >
-                          <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: ring.color }} />
-                          <span>{ring.label}: {ring.count}/{ring.total}</span>
-                        </div>
-                      ))}
-                    </div>
-                    {partSegments.length > 0 && (() => {
-                      const sorted = [...partSegments].sort((a, b) => b.fraction - a.fraction || b.depthScore - a.depthScore);
-                      const top = sorted.filter(s => s.fraction > 0).slice(0, 3);
-                      const incomplete = sorted.filter(s => s.fraction < 1).reverse().slice(0, 3);
-                      const allComplete = sorted.every(s => s.fraction >= 1);
-                      const layerLabel = displayActiveRingLabel;
-                      return (
-                        <div class="space-y-1 text-xs text-slate-500">
-                          {top.length > 0 ? (
-                            <>
-                              <p class="font-medium text-slate-600">Most covered</p>
-                              {top.map(s => (
-                                <div key={s.partNumber} class="flex items-center gap-1.5">
-                                  <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
-                                  <span>{s.title}: {s.covered}/{s.total} {layerLabel}</span>
-                                </div>
-                              ))}
-                            </>
-                          ) : (
-                            <p class="text-slate-400">No {layerLabel} covered yet.</p>
-                          )}
-                          {allComplete ? (
-                            <p class="pt-1 text-slate-400">All {layerLabel} covered.</p>
-                          ) : incomplete.length > 0 && top.length > 0 && (
-                            <>
-                              <p class="pt-1 font-medium text-slate-600">Least covered</p>
-                              {incomplete.map(s => (
-                                <div key={s.partNumber} class="flex items-center gap-1.5">
-                                  <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
-                                  <span>{s.title}: {s.covered}/{s.total} {layerLabel}</span>
-                                </div>
-                              ))}
-                            </>
-                          )}
-                        </div>
-                      );
-                    })()}
+            <section class="rounded-xl border border-slate-200 bg-white p-4">
+              <p class="mb-3 text-sm font-medium uppercase tracking-wide text-slate-500">Your Coverage</p>
+              <div class="flex items-center justify-evenly">
+                <CoverageRings
+                  rings={coverageRings}
+                  size={100}
+                  ringWidth={8}
+                  hideLegend
+                  activeRingLabel={displayActiveRingLabel}
+                  onSelectRing={(label) => {
+                    const layer = LAYER_BY_RING_LABEL[label];
+                    if (layer && supportedLayers.includes(layer)) {
+                      setSelectedLayer(layer);
+                      setCoverageLayerPreference(layer);
+                    }
+                  }}
+                />
+                {partSegments.length > 0 && (
+                  <PartCoverageRing segments={partSegments} size={100} />
+                )}
+              </div>
+              <details class="mt-3 group/stats">
+                <summary class="cursor-pointer select-none text-[11px] text-slate-400 hover:text-slate-500 transition-colors flex items-center gap-1 list-none [&::-webkit-details-marker]:hidden">
+                  <span>Coverage Statistics</span>
+                  <svg
+                    class="h-3 w-3 transition-transform group-open/stats:rotate-180"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width={2}
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div class={`mt-2 grid gap-3 ${partSegments.length > 0 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
+                  <div class="space-y-1 text-xs text-slate-500">
+                    {coverageRings.map((ring) => (
+                      <div
+                        key={ring.label}
+                        class={`flex items-center gap-1.5 ${
+                          ring.label === displayActiveRingLabel
+                            ? 'font-medium text-slate-700'
+                            : ''
+                        }`}
+                      >
+                        <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: ring.color }} />
+                        <span>{ring.label}: {ring.count}/{ring.total}</span>
+                      </div>
+                    ))}
                   </div>
-                </details>
-              </div>
-
-              <div class="rounded-xl border border-slate-200 bg-white p-4">
-                <p class="text-sm font-medium uppercase tracking-wide text-slate-500">
-                  {coverageLayerLabel(activeLayer, 1)} Coverage
-                </p>
-                <p class="mt-2 font-serif text-3xl text-slate-900">
-                  {activeSnapshot?.currentlyCoveredCount ?? 0} / {activeSnapshot?.totalCoverageCount ?? 0}
-                </p>
-                <p class="mt-2 text-sm leading-6 text-slate-600">
-                  {isLayerComplete
-                    ? `You have already covered every mapped ${coverageLayerLabel(activeLayer, 1)} in this view.`
-                    : `${activeSnapshot?.remainingCoverageCount ?? 0} ${coverageLayerLabel(activeLayer, activeSnapshot?.remainingCoverageCount ?? 0)} still to reach.`}
-                </p>
-              </div>
-
+                  {partSegments.length > 0 && (() => {
+                    const sorted = [...partSegments].sort((a, b) => b.fraction - a.fraction || b.depthScore - a.depthScore);
+                    const top = sorted.filter(s => s.fraction > 0).slice(0, 3);
+                    const incomplete = sorted.filter(s => s.fraction < 1).reverse().slice(0, 3);
+                    const allComplete = sorted.every(s => s.fraction >= 1);
+                    const layerLabel = displayActiveRingLabel;
+                    return (
+                      <div class="space-y-1 text-xs text-slate-500">
+                        {top.length > 0 ? (
+                          <>
+                            <p class="font-medium text-slate-600">Most covered</p>
+                            {top.map(s => (
+                              <div key={s.partNumber} class="flex items-center gap-1.5">
+                                <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
+                                <span>{s.title}: {s.covered}/{s.total} {layerLabel}</span>
+                              </div>
+                            ))}
+                          </>
+                        ) : (
+                          <p class="text-slate-400">No {layerLabel} covered yet.</p>
+                        )}
+                        {allComplete ? (
+                          <p class="pt-1 text-slate-400">All {layerLabel} covered.</p>
+                        ) : incomplete.length > 0 && top.length > 0 && (
+                          <>
+                            <p class="pt-1 font-medium text-slate-600">Least covered</p>
+                            {incomplete.map(s => (
+                              <div key={s.partNumber} class="flex items-center gap-1.5">
+                                <span class="inline-block h-2 w-2 shrink-0 rounded-full" style={{ backgroundColor: s.colorHex }} />
+                                <span>{s.title}: {s.covered}/{s.total} {layerLabel}</span>
+                              </div>
+                            ))}
+                          </>
+                        )}
+                      </div>
+                    );
+                  })()}
+                </div>
+              </details>
             </section>
+
+            {selectionStrip}
 
             <ReadingSpreadPath
               isOpen={spreadPathOpen}
@@ -511,7 +482,23 @@ export default function HomepageCoverageExplorer({
               sectionLinksVariant="chips"
             />
           </div>
-        ) : null}
+        ) : (
+          <>
+            {selectionStrip}
+
+            {errorType === selectedType ? (
+          <div class="rounded-xl border border-red-200 bg-red-50 px-4 py-5 text-sm text-red-700">
+            Could not load the {READING_TYPE_LABELS[selectedType]} coverage data right now.
+          </div>
+            ) : null}
+
+            {!source && loadingType === selectedType ? (
+              <div class="rounded-xl border border-slate-200 bg-slate-50 px-4 py-5 text-sm text-slate-600">
+                Loading the {READING_TYPE_LABELS[selectedType]} coverage path...
+              </div>
+            ) : null}
+          </>
+        )}
       </div>
     </section>
   );
