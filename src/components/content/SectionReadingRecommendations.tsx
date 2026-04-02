@@ -41,9 +41,6 @@ import {
 } from '../../utils/iotOutlineFilter';
 import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/mappingPrecision';
 import { slugify } from '../../utils/helpers';
-import {
-  wikipediaLevelLabel,
-} from '../../utils/wikipediaLevel';
 import type {
   SectionReadingRecommendationsPayload,
 } from '../../utils/sectionReadingContext';
@@ -279,8 +276,6 @@ export default function SectionReadingRecommendations({
 
       return {
         title: 'Recommendations',
-        toolbarLabel: `Showing ${wikipediaLevelLabel(wikiLevel)}`,
-        toolbarHref: `${baseUrl}/wikipedia`,
         matchedCount: visibleArticles.length,
         visibleCount: displayArticles.length,
         emptyMessage: filteredEmptyMessage(

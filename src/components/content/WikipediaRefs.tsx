@@ -21,7 +21,6 @@ import { classifyMappingPrecision, mappingPrecisionBadge } from '../../utils/map
 import {
   getStoredWikipediaLevel,
   subscribeWikipediaLevel,
-  wikipediaLevelLabel,
   type WikipediaKnowledgeLevel,
 } from '../../utils/wikipediaLevel';
 import HorizontalCardScroll from '../ui/HorizontalCardScroll';
@@ -108,12 +107,6 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
       <Accordion title={`Wikipedia Article Recommendations (${totalCount})`} forceOpenKey={forceOpenKey} forceCloseKey={forceCloseKey}>
         <div class="mb-4 flex flex-wrap items-center justify-between gap-3">
           <div class="flex items-center gap-4">
-            <a
-              href={`${baseUrl}/wikipedia`}
-              class="text-xs text-gray-500 underline decoration-slate-300 underline-offset-2 transition hover:text-indigo-700 hover:decoration-indigo-300"
-            >
-              Showing {wikipediaLevelLabel(level)}
-            </a>
             <label class="flex items-center gap-2 text-xs text-gray-500 cursor-pointer select-none">
               <input
                 type="checkbox"

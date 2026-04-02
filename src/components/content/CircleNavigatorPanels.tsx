@@ -488,7 +488,6 @@ export function CenteredCircleNavigatorPanel({
         coverageEntries: wikiCoverageEntries,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
-        renderMeta: (item: CircleNavigatorWikipediaEntry) => `Vital Articles Level ${item.lowestLevel}`,
         allowEmpty: rawSharedWikiEntries.length > 0,
       }),
       buildRecommendationSectionConfig({
@@ -703,7 +702,6 @@ export function TopPartCircleNavigatorPanel({
         coverageEntries: wikiCoverageEntries,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
-        renderMeta: (item: CircleNavigatorWikipediaEntry) => `Vital Articles Level ${item.lowestLevel}`,
         allowEmpty: rawAnchoredWikiEntries.length > 0,
       }),
       buildRecommendationSectionConfig({

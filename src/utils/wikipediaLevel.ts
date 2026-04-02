@@ -55,10 +55,6 @@ export function wikipediaLevelCount(level: WikipediaKnowledgeLevel): string {
   return '1,000';
 }
 
-export function wikipediaLevelLabel(level: WikipediaKnowledgeLevel): string {
-  return `${wikipediaLevelName(level)} (Top ${wikipediaLevelCount(level)})`;
-}
-
 export function matchesWikipediaLevel(
   entry: WikipediaLevelEntry,
   level: WikipediaKnowledgeLevel,

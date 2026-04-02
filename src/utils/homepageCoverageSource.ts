@@ -108,7 +108,6 @@ export function buildHomepageCoverageSourceFromLibraryPayload<T extends ReadingT
           checklistKey: entry.checklistKey,
           title: entry.displayTitle ?? entry.title,
           href: joinBaseUrl(baseUrl, `wikipedia/${slugify(entry.title)}`),
-          meta: entry.lowestLevel ? `Vital level ${entry.lowestLevel}` : undefined,
           lowestLevel: entry.lowestLevel,
           sectionCount: entry.sectionCount,
           sections: entry.sections,
