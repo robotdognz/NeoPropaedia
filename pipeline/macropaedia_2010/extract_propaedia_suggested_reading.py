@@ -25,6 +25,8 @@ SECTION_CODE_RE = re.compile(r"Section\s+(\d{3})")
 PAGE_RE = re.compile(r"^\s*(\d+)\b")
 TRAILING_PAGE_RE = re.compile(r"\b(\d+)\s*$")
 LEADING_ARTICLE_COLON_RE = re.compile(r"^(.*?),\s*(The|A|An)\s*:\s*(.*)$", re.IGNORECASE)
+COMMA_PREFIX_COLON_RE = re.compile(r"^(.*?),\s*(.+?)\s*:\s*(.*)$")
+LEADING_ARTICLE_TITLE_RE = re.compile(r"^(The|A|An)\s+(.+)$", re.IGNORECASE)
 LEADING_BULLET_RE = re.compile(r"^[•●◦▪·*]+\s*")
 MISSING_COMMA_SPACE_RE = re.compile(r",(?=\S)")
 SECTIONS_DIR = REPO_ROOT / "src" / "content" / "sections"
@@ -36,6 +38,7 @@ MANUAL_SECTION_CODE_OVERRIDES: dict[tuple[int, str, int], str] = {
     (3, "133", 1): "351",
     (3, "137", 1): "354",
     (4, "148", 1): "421",
+    (5, "196", 1): "533",
 }
 PROPAEDIA_TO_CONTENTS_TITLE_OVERRIDES: dict[str, str] = {
     "Childhood Diseases and Disorders": "CHILDHOOD DISEASES",
@@ -139,6 +142,23 @@ def lookup_variants(title: str) -> dict[str, str]:
         article = article_colon_match.group(2).strip()
         tail = article_colon_match.group(3).strip()
         add(f"{article} {head}: {tail}", "comma_article_colon")
+
+    comma_prefix_colon_match = COMMA_PREFIX_COLON_RE.match(title)
+    if comma_prefix_colon_match:
+        head = comma_prefix_colon_match.group(1).strip()
+        prefix = comma_prefix_colon_match.group(2).strip()
+        tail = comma_prefix_colon_match.group(3).strip()
+        add(f"{prefix} {head}: {tail}", "comma_prefix_colon")
+
+    leading_article_match = LEADING_ARTICLE_TITLE_RE.match(title)
+    if leading_article_match:
+        article = leading_article_match.group(1).strip()
+        remainder = leading_article_match.group(2).strip()
+        add(remainder, "leading_article_stripped")
+        if ":" in remainder:
+            head, tail = [part.strip() for part in remainder.split(":", 1)]
+            if head and tail:
+                add(f"{head}, {article}: {tail}", "leading_article_to_comma_colon")
 
     return variants
 
@@ -617,6 +637,8 @@ def should_force_combine_fragments(fragments: list[str]) -> bool:
     if len(fragments) == 2:
         if fragments[0].endswith(":") or fragments[0].endswith(","):
             return True
+        if first.endswith(" and"):
+            return True
         if first.endswith(" and other"):
             return True
     if len(fragments) >= 3 and fragments[1] in {"Phylum", "Lower Vascular"}:
@@ -708,6 +730,7 @@ def split_descriptor_and_titles(
         or "biography dealing" in first_line_lower
         or "articles dealing" in first_line_lower
         or "article dealing" in first_line_lower
+        or (first_line_lower.startswith("majo") and "dealing with" in first_line_lower)
     )
     if starts_with_descriptor or (first_match is None and first_line_lower.startswith("major ")):
         descriptor_lines = [first_line]
