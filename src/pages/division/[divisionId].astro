@@ -86,7 +86,7 @@ const partAccentText = partTextColors[division.partNumber];
           },
           {
             label: `Part ${PART_NAMES[division.partNumber]}`,
-            compactLabel: PART_ROMAN[division.partNumber],
+            compactLabel: String(division.partNumber),
             compactPriority: 2,
             href: `${base}/part/${division.partNumber}`,
           },

@@ -68,7 +68,7 @@ const { reverseRefs, groupedReverseRefs } = await loadSectionReverseReferences(s
           },
           {
             label: `Part ${PART_NAMES[section.partNumber]}`,
-            compactLabel: PART_ROMAN[section.partNumber],
+            compactLabel: String(section.partNumber),
             compactPriority: 3,
             href: `${base}/part/${section.partNumber}`,
           },
