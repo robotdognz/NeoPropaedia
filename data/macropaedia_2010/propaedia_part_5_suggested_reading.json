@@ -1,7 +1,7 @@
 {
   "partNumber": 5,
   "pageCount": 23,
-  "matchedRecommendationCount": 139,
+  "matchedRecommendationCount": 140,
   "unmatchedRecommendationCount": 2,
   "pages": [
     {
@@ -539,7 +539,7 @@
         },
         {
           "sortOrder": 7,
-          "observedTitle": "Workand Employment",
+          "observedTitle": "Work and Employment",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
           "matchMethod": "direct",
@@ -1050,6 +1050,18 @@
         },
         {
           "sortOrder": 12,
+          "observedTitle": "Money",
+          "extractionMethod": "single_ocr_line",
+          "matchStatus": "matched",
+          "matchMethod": "direct",
+          "matchedTitle": "MONEY",
+          "matchedVolumeNumber": 12,
+          "matchedStartPage": "325",
+          "matchedStartPageIndex": 325,
+          "matchedPageCountEstimate": 5
+        },
+        {
+          "sortOrder": 13,
           "observedTitle": "Social Sciences, The",
           "extractionMethod": "single_ocr_line",
           "matchStatus": "matched",
@@ -1061,7 +1073,7 @@
           "matchedPageCountEstimate": 49
         },
         {
-          "sortOrder": 13,
+          "sortOrder": 14,
           "observedTitle": "Work and Employment",
           "extractionMethod": "combined_2_adjacent_ocr_lines",
           "matchStatus": "matched",

@@ -1,7 +1,7 @@
 # Part 5 Propaedia Suggested Reading
 
 - Logical blocks captured: `23`
-- Matched recommendations: `139`
+- Matched recommendations: `140`
 - Unmatched recommendations: `2`
 
 ## Unmatched recommendations
@@ -80,7 +80,7 @@
   - `Crime and Punishment` -> `CRIME AND PUNISHMENT` (v4 p796)
   - `Social Structure and Change` -> `SOCIAL STRUCTURE AND CHANGE` (v15 p365)
   - `Globalization` -> unmatched
-  - `Workand Employment` -> `WORK AND EMPLOYMENT` (v17 p916)
+  - `Work and Employment` -> `WORK AND EMPLOYMENT` (v17 p916)
   - `Modernization and Industrialization` -> `MODERNIZATION AND INDUSTRIALIZATION` (v12 p280)
   - `Propaganda` -> `PROPAGANDA` (v14 p171)
 
@@ -153,6 +153,7 @@
   - `International Trade` -> `INTERNATIONAL TRADE` (v9 p900)
   - `Marketing and Merchandising` -> `MARKETING AND MERCHANDISING` (v11 p495)
   - `Markets` -> `MARKETS` (v11 p509)
+  - `Money` -> `MONEY` (v12 p325)
   - `Social Sciences, The` -> `The SOCIAL SCIENCES` (v15 p316)
   - `Work and Employment` -> `WORK AND EMPLOYMENT` (v17 p916)
 

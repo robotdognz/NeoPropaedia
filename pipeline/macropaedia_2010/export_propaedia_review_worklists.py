@@ -132,6 +132,7 @@ def build_page_rows(payloads: list[dict[str, object]]) -> list[dict[str, object]
         for page in payload["pages"]:
             recommendations = page["recommendations"]
             risky = [rec for rec in recommendations if risk_reason(rec)]
+            extracted_titles = " | ".join(str(rec["observedTitle"]) for rec in recommendations)
             rows.append(
                 {
                     "part_number": part_number,
@@ -144,7 +145,7 @@ def build_page_rows(payloads: list[dict[str, object]]) -> list[dict[str, object]
                     "topic_summary": page["topicSummary"],
                     "extracted_count": len(recommendations),
                     "risky_recommendation_count": len(risky),
-                    "extracted_titles": " | ".join(str(rec["observedTitle"]) for rec in recommendations),
+                    "extracted_titles": sort_pipe_separated_titles(extracted_titles),
                     "review_status": "pending",
                     "visual_title_count": "",
                     "missing_titles": "",

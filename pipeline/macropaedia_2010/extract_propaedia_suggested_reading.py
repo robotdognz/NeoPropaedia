@@ -29,6 +29,7 @@ COMMA_PREFIX_COLON_RE = re.compile(r"^(.*?),\s*(.+?)\s*:\s*(.*)$")
 LEADING_ARTICLE_TITLE_RE = re.compile(r"^(The|A|An)\s+(.+)$", re.IGNORECASE)
 LEADING_BULLET_RE = re.compile(r"^[•●◦▪·*]+\s*")
 MISSING_COMMA_SPACE_RE = re.compile(r",(?=\S)")
+PURE_PAGE_NUMBER_RE = re.compile(r"^\d+$")
 SECTIONS_DIR = REPO_ROOT / "src" / "content" / "sections"
 MANUAL_SECTION_CODE_OVERRIDES: dict[tuple[int, str, int], str] = {
     (1, "53", 1): "131",
@@ -39,10 +40,33 @@ MANUAL_SECTION_CODE_OVERRIDES: dict[tuple[int, str, int], str] = {
     (3, "137", 1): "354",
     (4, "148", 1): "421",
     (5, "196", 1): "533",
+    (6, "240", 1): "624",
+    (6, "246", 1): "626",
+    (6, "252", 1): "628",
+    (6, "256", 1): "629",
 }
 PROPAEDIA_TO_CONTENTS_TITLE_OVERRIDES: dict[str, str] = {
     "Childhood Diseases and Disorders": "CHILDHOOD DISEASES",
+    "Greek Dramatists, The Classical": "The CLASSICAL GREEK DRAMATISTS: Aeschylus, Sophocles, Euripides, and Aristophanes",
+    "Rembrandt": "REMBRANDT VAN RIJN",
+    "Typography, and Photoengraving": "PRINTING, TYPOGRAPHY, AND PHOTOENGRAVING",
+    "Southeast Asian": "SOUTHEAST ASIAN ARTS",
 }
+OBSERVED_TITLE_NORMALIZATION_OVERRIDES: dict[str, str] = {
+    "Music, The History ofWestern": "Music, The History of Western",
+    "Workand Employment": "Work and Employment",
+}
+CONTEXTUAL_OBSERVED_TITLE_OVERRIDES: dict[tuple[int, str, int, str], str] = {
+    (6, "240", 1, "Genres"): "Musical Forms and Genres",
+    (6, "240", 1, "Arts"): "Southeast Asian Arts",
+    (6, "256", 1, "Southeast Asian"): "Southeast Asian Arts",
+    (6, "256", 1, "Typography, and Photoengraving"): "Printing, Typography, and Photoengraving",
+}
+CONTEXTUAL_ADDITIONAL_TITLES: dict[tuple[int, str, int], list[str]] = {
+    (6, "256", 1): ["Writing"],
+}
+SUBHEADER_TITLES_TO_SKIP = {"General subjects", "Biographies"}
+CONTINUATION_SUBHEADERS = {"General subjects", "Biographies"}
 
 
 @dataclass(frozen=True)
@@ -165,7 +189,8 @@ def lookup_variants(title: str) -> dict[str, str]:
 
 def sanitize_observed_title(title: str) -> str:
     title = LEADING_BULLET_RE.sub("", title).strip()
-    return MISSING_COMMA_SPACE_RE.sub(", ", title)
+    title = MISSING_COMMA_SPACE_RE.sub(", ", title)
+    return OBSERVED_TITLE_NORMALIZATION_OVERRIDES.get(title, title)
 
 
 def load_article_index(path: Path) -> dict[str, tuple[Article, str]]:
@@ -361,7 +386,38 @@ def extract_macropaedia_block(lines: list[str]) -> tuple[list[str], bool]:
             continue
         if in_suggested:
             fallback_block.append(line)
-    return (block or fallback_block, saw_macro_label)
+    extracted = block or fallback_block
+    if extracted:
+        return extracted, saw_macro_label
+
+    # Some photographed continuation pages carry only the tail of a Macropaedia block,
+    # for example a `Biographies` continuation on the next page, without repeating the
+    # `Suggested reading` or `MACROPAEDIA:` labels. In that case, treat the short band
+    # above `MICROPAEDIA:` as the continuation block.
+    pre_micro: list[str] = []
+    for line in lines:
+        if line.startswith("MICROPAEDIA:"):
+            break
+        pre_micro.append(line)
+
+    if not pre_micro:
+        return [], saw_macro_label
+
+    stripped = [
+        line
+        for line in pre_micro
+        if line
+        and not line.startswith("Part ")
+        and "Section " not in line
+        and not PURE_PAGE_NUMBER_RE.match(line)
+    ]
+    if (
+        len(stripped) <= 12
+        and any(line in CONTINUATION_SUBHEADERS for line in stripped)
+    ):
+        return stripped, saw_macro_label
+
+    return [], saw_macro_label
 
 
 def extract_macropaedia_block_from_ocr_geometry(ocr_lines: list[dict[str, object]]) -> list[str]:
@@ -392,7 +448,7 @@ def extract_macropaedia_block_from_ocr_geometry(ocr_lines: list[dict[str, object
     # Use a shallow gap so the first row is not clipped out of the geometry pass.
     upper_limit = mid_y(upper_anchor) - max(height(upper_anchor) * 0.25, 0.004)
     if micro is not None:
-        lower_limit = mid_y(micro) + max(height(micro), 0.01)
+        lower_limit = mid_y(micro) + max(height(micro) * 0.15, 0.003)
     else:
         lower_limit = 0.02
 
@@ -641,6 +697,9 @@ def should_force_combine_fragments(fragments: list[str]) -> bool:
             return True
         if first.endswith(" and other"):
             return True
+    if len(fragments) >= 3:
+        if first.endswith(" and"):
+            return True
     if len(fragments) >= 3 and fragments[1] in {"Phylum", "Lower Vascular"}:
         return True
     return False
@@ -695,6 +754,7 @@ def combine_adjacent_title_fragments(fragments: list[str]) -> list[tuple[str, st
         for fragment in fragments
         if sanitize_observed_title(fragment)
     ).strip()
+    forward = sanitize_observed_title(forward)
     if not forward:
         return []
 
@@ -703,7 +763,7 @@ def combine_adjacent_title_fragments(fragments: list[str]) -> list[tuple[str, st
 
     if len(fragments) == 2:
         left, right = fragments
-        reverse = f"{right} {left}".strip()
+        reverse = sanitize_observed_title(f"{right} {left}".strip())
         if right.endswith(",") or right.endswith(":"):
             candidates.insert(0, (reverse, f"combined_{method_suffix}_reordered"))
         elif reverse != forward:
@@ -742,6 +802,9 @@ def split_descriptor_and_titles(
     titles: list[tuple[str, str]] = []
     while index < len(block_lines):
         current = sanitize_observed_title(block_lines[index])
+        if current in SUBHEADER_TITLES_TO_SKIP:
+            index += 1
+            continue
         current_match, _ = match_title(current, article_index)
         if current_match is None:
             combined = False
@@ -749,16 +812,18 @@ def split_descriptor_and_titles(
                 if index + window_size > len(block_lines):
                     continue
                 window = [sanitize_observed_title(line) for line in block_lines[index : index + window_size]]
+                if any(fragment in SUBHEADER_TITLES_TO_SKIP for fragment in window):
+                    continue
                 window_matches = [match_title(fragment, article_index)[0] is not None for fragment in window]
                 force_combine = should_force_combine_fragments(window)
-                # Do not force a 2-line merge when the trailing line already stands on
-                # its own as a valid article. That pattern occurs on pages where OCR
-                # places a split title fragment next to a separate recommendation, such
-                # as "Earth, The: Its Properties," followed by "Lakes".
-                if force_combine and window_size == 2 and any(window_matches[1:]):
+                # Do not force a merge when the trailing lines already stand on their
+                # own as valid articles. That pattern occurs on pages where OCR places
+                # a split title fragment next to a separate recommendation, such as
+                # "Earth, The: Its Properties," followed by "Lakes", or on dense art
+                # pages where a matched title sits between two fragments that belong
+                # together.
+                if force_combine and any(window_matches[1:]):
                     force_combine = False
-                if not force_combine and any(window_matches):
-                    continue
                 for combined_title, extraction_method in combine_adjacent_title_fragments(window):
                     combined_match, _ = match_title(combined_title, article_index)
                     if combined_match is not None:
@@ -766,6 +831,8 @@ def split_descriptor_and_titles(
                         index += window_size
                         combined = True
                         break
+                if not combined and not force_combine and any(window_matches):
+                    continue
                 if not combined and force_combine:
                     titles.append((" ".join(window), f"forced_combined_{window_size}_adjacent_ocr_lines"))
                     index += window_size
@@ -888,6 +955,40 @@ def reconcile_fragmented_titles(
                 second_pass.append(item)
         normalized = second_pass
 
+    # OCR sometimes leaves a trailing bare "Arts" after a successfully matched
+    # regional-arts title, for example "Southeast Asian" followed by "Arts".
+    merged_items = {}
+    used = set()
+    for left in range(len(normalized) - 1):
+        right = left + 1
+        left_item = normalized[left]
+        right_item = normalized[right]
+        if (
+            left_item["matchStatus"] != "matched"
+            or right_item["matchStatus"] != "unmatched"
+            or str(right_item["observedTitle"]) != "Arts"
+        ):
+            continue
+        matched_title = str(left_item.get("matchedTitle") or "")
+        observed_title = str(left_item["observedTitle"])
+        if not matched_title.endswith("ARTS") or observed_title.endswith("Arts"):
+            continue
+        merged_items[left] = {
+            **left_item,
+            "observedTitle": f"{observed_title} Arts",
+            "extractionMethod": str(left_item["extractionMethod"]) + "_with_trailing_fragment",
+        }
+        used.add(right)
+
+    if merged_items or used:
+        third_pass: list[dict[str, object]] = []
+        for index, item in enumerate(normalized):
+            if index in merged_items:
+                third_pass.append(merged_items[index])
+            elif index not in used:
+                third_pass.append(item)
+        normalized = third_pass
+
     for sort_order, item in enumerate(normalized, start=1):
         item["sortOrder"] = sort_order
     return normalized
@@ -949,11 +1050,50 @@ def build_page_payload(
         topic_summary, titles = split_descriptor_and_titles(candidate_block, article_index)
         recommendations: list[dict[str, object]] = []
         for sort_order, (observed_title, extraction_method) in enumerate(titles, start=1):
+            observed_title = CONTEXTUAL_OBSERVED_TITLE_OVERRIDES.get(
+                (
+                    int(row["part_number"]),
+                    str(page_payload["propaediaPageReference"]),
+                    int(page_payload["blockIndex"]),
+                    observed_title,
+                ),
+                observed_title,
+            )
             match, match_method = match_title(observed_title, article_index)
             item: dict[str, object] = {
                 "sortOrder": sort_order,
                 "observedTitle": observed_title,
                 "extractionMethod": extraction_method,
+                "matchStatus": "matched" if match is not None else "unmatched",
+                "matchMethod": match_method,
+            }
+            if match is not None:
+                item.update(
+                    {
+                        "matchedTitle": match.title,
+                        "matchedVolumeNumber": match.volume_number,
+                        "matchedStartPage": match.start_page,
+                        "matchedStartPageIndex": match.start_page_index,
+                        "matchedPageCountEstimate": match.page_count_estimate,
+                    }
+                )
+            recommendations.append(item)
+
+        for observed_title in CONTEXTUAL_ADDITIONAL_TITLES.get(
+            (
+                int(row["part_number"]),
+                str(page_payload["propaediaPageReference"]),
+                int(page_payload["blockIndex"]),
+            ),
+            [],
+        ):
+            if any(str(item["observedTitle"]) == observed_title for item in recommendations):
+                continue
+            match, match_method = match_title(observed_title, article_index)
+            item = {
+                "sortOrder": len(recommendations) + 1,
+                "observedTitle": observed_title,
+                "extractionMethod": "manual_page_title",
                 "matchStatus": "matched" if match is not None else "unmatched",
                 "matchMethod": match_method,
             }
