@@ -5,6 +5,7 @@ import ReadingCheckbox from '../../components/content/ReadingCheckbox';
 import { getCollection } from 'astro:content';
 import { sectionUrl, slugify } from '../../utils/helpers';
 import { formatEditionLabel, buildVsiAggregateEntries } from '../../utils/readingData';
+import { formatVsiPageCount, formatVsiWordCount, resolveVsiCatalogEntry, visibleVsiCatalogEntries } from '../../utils/vsiCatalog';
 import { vsiChecklistKey } from '../../utils/readingChecklist';
 import { buildCoverageRingsForCompleted } from '../../utils/readingLibrary';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
@@ -13,8 +14,7 @@ import { vsiLookupKey } from '../../utils/readingIdentity';
 export async function getStaticPaths() {
   const outline = await loadOutlineGraph();
   const allSections = await getCollection('sections');
-  const catalogCollections = await getCollection('vsi');
-  const catalog = catalogCollections.flatMap((entry) => entry.data.titles);
+  const catalog = visibleVsiCatalogEntries();
   const allMappings = await getCollection('vsi-mappings');
   const mappingsByBook = new Map<string, { sectionCode: string; rationaleAI: string; meta: (typeof outline.sectionMeta)[string] }[]>();
   const aggregateEntries = buildVsiAggregateEntries(
@@ -35,7 +35,10 @@ export async function getStaticPaths() {
       const meta = outline.sectionMeta[mapping.data.sectionCode];
       if (!meta) continue;
 
-      const lookupKey = vsiLookupKey(entry.vsiTitle, entry.vsiAuthor);
+      const catalogEntry = resolveVsiCatalogEntry(entry.vsiTitle, entry.vsiAuthor);
+      if (!catalogEntry) continue;
+
+      const lookupKey = vsiLookupKey(catalogEntry.title, catalogEntry.author);
       const sections = mappingsByBook.get(lookupKey) ?? [];
       sections.push({
         sectionCode: mapping.data.sectionCode,
@@ -75,7 +78,13 @@ for (const s of mappedSections) {
 const sortedParts = [...byPart.entries()].sort((a, b) => a[0] - b[0]);
 
 const editionLabel = formatEditionLabel(entry.edition);
-const metadata = [entry.author, editionLabel, entry.publicationYear ? String(entry.publicationYear) : null].filter(Boolean).join(' · ');
+const metadata = [
+  entry.author,
+  formatVsiPageCount(entry.pageCount),
+  formatVsiWordCount(entry.wordCount),
+  editionLabel,
+  entry.publicationYear ? String(entry.publicationYear) : null,
+].filter(Boolean).join(' · ');
 
 ---
 

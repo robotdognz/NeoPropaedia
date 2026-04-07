@@ -263,6 +263,7 @@ export default function SectionReadingRecommendations({
                   sectionCode={sectionCode}
                   publicationYear={mapping.publicationYear}
                   edition={mapping.edition}
+                  wordCount={mapping.wordCount}
                   matchPercent={Math.round(Math.min(relevanceScore / maxScore, 1) * 100)}
                   flags={[precision]}
                   checked={Boolean(checklistState[checklistKey])}

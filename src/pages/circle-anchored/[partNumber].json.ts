@@ -14,6 +14,7 @@ import {
   buildWikipediaAggregateEntries,
   type ReadingSectionSummary,
 } from '../../utils/readingData';
+import { visibleVsiCatalogEntries } from '../../utils/vsiCatalog';
 
 const PART_NUMBERS = Array.from({ length: 10 }, (_, index) => index + 1);
 
@@ -24,7 +25,6 @@ async function loadAnchoredReadingMap(): Promise<Map<number, CircleNavigatorPart
     anchoredReadingMapPromise = (async () => {
       const sections = await getCollection('sections');
       const vsiMappings = await getCollection('vsi-mappings');
-      const vsiCatalogCollections = await getCollection('vsi');
       const wikiMappings = await getCollection('wiki-mappings');
       const iotMappings = await getCollection('iot-mappings');
 
@@ -120,10 +120,12 @@ async function loadAnchoredReadingMap(): Promise<Map<number, CircleNavigatorPart
       const vsiEntries = buildVsiAggregateEntries(
         sectionSummaries,
         vsiMappings.map((entry) => entry.data),
-        vsiCatalogCollections.flatMap((entry) => entry.data.titles)
+        visibleVsiCatalogEntries(),
       ).map((entry) => ({
         title: entry.title,
         author: entry.author,
+        pageCount: entry.pageCount,
+        wordCount: entry.wordCount,
         checklistKey: entry.checklistKey,
         sectionCount: entry.sectionCount,
         sections: entry.sections,

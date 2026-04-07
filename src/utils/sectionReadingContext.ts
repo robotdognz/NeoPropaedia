@@ -2,7 +2,7 @@ import { getCollection } from 'astro:content';
 import iotCatalog from '../data/iot-catalog.json';
 import wikiCatalog from '../data/wikipedia-catalog.json';
 import { loadOutlineGraph } from './outlineGraph';
-import { vsiLookupKey } from './readingIdentity';
+import { resolveVsiCatalogEntry } from './vsiCatalog';
 import { computeWikiRelevanceScore, tokenize } from './wikipediaOutlineFilter';
 import { computeIotRelevanceScore } from './iotOutlineFilter';
 
@@ -45,6 +45,8 @@ export interface EnrichedVsiMapping {
   relevantPathsAI?: string[];
   publicationYear?: number;
   edition?: number;
+  pageCount?: number;
+  wordCount?: number;
   subject?: string;
   keywords?: string[];
   abstract?: string;
@@ -91,7 +93,6 @@ export interface SectionReadingRecommendationsPayload {
 
 interface SectionReadingCaches {
   reverseIndex: Map<string, ReverseReference[]>;
-  vsiCatalogLookup: Map<string, any>;
   vsiMappingsBySection: Map<string, any[]>;
   wikiMappingsBySection: Map<string, any[]>;
   iotMappingsBySection: Map<string, any[]>;
@@ -119,10 +120,9 @@ async function loadCaches(): Promise<SectionReadingCaches> {
 }
 
 async function buildCaches(): Promise<SectionReadingCaches> {
-  const [sections, vsiMappings, vsiCatalogCollections, wikiMappings, iotMappings] = await Promise.all([
+  const [sections, vsiMappings, wikiMappings, iotMappings] = await Promise.all([
     getCollection('sections'),
     getCollection('vsi-mappings'),
-    getCollection('vsi'),
     getCollection('wiki-mappings'),
     getCollection('iot-mappings'),
   ]);
@@ -139,12 +139,6 @@ async function buildCaches(): Promise<SectionReadingCaches> {
       reverseIndex.set(ref.targetSection, refs);
     }
   }
-
-  const vsiCatalogLookup = new Map(
-    vsiCatalogCollections
-      .flatMap((entry) => entry.data.titles)
-      .map((entry) => [vsiLookupKey(entry.title, entry.author), entry])
-  );
 
   const vsiMappingsBySection = new Map(
     vsiMappings.map((entry) => [entry.data.sectionCode, entry.data.mappings])
@@ -163,7 +157,6 @@ async function buildCaches(): Promise<SectionReadingCaches> {
 
   return {
     reverseIndex,
-    vsiCatalogLookup,
     vsiMappingsBySection,
     wikiMappingsBySection,
     iotMappingsBySection,
@@ -241,17 +234,24 @@ export async function loadSectionRecommendationsPayload(
 ): Promise<SectionReadingRecommendationsPayload> {
   const caches = await loadCaches();
 
-  const vsiMappings = (caches.vsiMappingsBySection.get(section.sectionCode) ?? []).map((entry: any) => {
-    const catalogEntry = caches.vsiCatalogLookup.get(vsiLookupKey(entry.vsiTitle, entry.vsiAuthor));
+  const vsiMappings = (caches.vsiMappingsBySection.get(section.sectionCode) ?? []).flatMap((entry: any) => {
+    const catalogEntry = resolveVsiCatalogEntry(entry.vsiTitle, entry.vsiAuthor);
+    if (!catalogEntry) {
+      return [];
+    }
 
-    return {
+    return [{
       ...entry,
-      publicationYear: catalogEntry?.publicationYear,
-      edition: catalogEntry?.edition,
-      subject: catalogEntry?.subject,
-      keywords: catalogEntry?.keywords,
-      abstract: catalogEntry?.abstract,
-    };
+      vsiTitle: catalogEntry.title,
+      vsiAuthor: catalogEntry.author,
+      publicationYear: catalogEntry.publicationYear,
+      edition: catalogEntry.edition,
+      pageCount: catalogEntry.pageCount,
+      wordCount: catalogEntry.wordCount,
+      subject: catalogEntry.subject,
+      keywords: catalogEntry.keywords,
+      abstract: catalogEntry.abstract,
+    }];
   });
 
   const sectionOutlineText = collectOutlineText(section.outline).trim();

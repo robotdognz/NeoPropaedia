@@ -296,6 +296,7 @@ export default function TopReadings({
                       baseUrl={baseUrl}
                       publicationYear={item.publicationYear}
                       edition={item.edition}
+                      wordCount={item.wordCount}
                       matchPercent={matchPercent}
                       badges={badges}
                       checked={isChecked}

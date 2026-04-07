@@ -17,6 +17,7 @@ import {
 } from '../../utils/readingData';
 import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
 import type { HomepageCoverageSource } from '../../utils/homepageCoverageTypes';
+import { formatVsiWordCount } from '../../utils/vsiCatalog';
 import { formatWikipediaWordCount } from '../../utils/wikipediaCatalog';
 import { filterWikipediaLevel } from '../../utils/wikipediaLevel';
 import {
@@ -82,6 +83,10 @@ interface AnchoredRecommendationSectionConfig<TEntry extends AnchoredEntryBase> 
   getHref: (item: TEntry) => string;
   getLabel?: (item: TEntry) => string;
   renderMeta?: (item: TEntry) => ComponentChildren;
+}
+
+function formatCircleNavigatorVsiMeta(item: CircleNavigatorVsiEntry): string | undefined {
+  return [item.author, formatVsiWordCount(item.wordCount)].filter(Boolean).join(' · ') || undefined;
 }
 
 const partRecommendationCache = new Map<number, CircleNavigatorPartRecommendations>();
@@ -473,7 +478,7 @@ export function CenteredCircleNavigatorPanel({
         completedChecklistKeys,
         coverageEntries: coverageSources.vsi?.entries,
         getHref: (item: CircleNavigatorVsiEntry) => `${baseUrl}/vsi/${slugify(item.title)}`,
-        renderMeta: (item: CircleNavigatorVsiEntry) => item.author,
+        renderMeta: (item: CircleNavigatorVsiEntry) => formatCircleNavigatorVsiMeta(item),
       }),
       buildRecommendationSectionConfig({
         type: 'iot',
@@ -688,7 +693,7 @@ export function TopPartCircleNavigatorPanel({
         completedChecklistKeys,
         coverageEntries: coverageSources.vsi?.entries,
         getHref: (item: CircleNavigatorVsiEntry) => `${baseUrl}/vsi/${slugify(item.title)}`,
-        renderMeta: (item: CircleNavigatorVsiEntry) => item.author,
+        renderMeta: (item: CircleNavigatorVsiEntry) => formatCircleNavigatorVsiMeta(item),
       }),
       buildRecommendationSectionConfig({
         type: 'iot',

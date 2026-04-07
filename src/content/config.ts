@@ -96,6 +96,7 @@ const vsiCatalogCollection = defineCollection({
   loader: glob({ pattern: '*.json', base: './src/content/vsi' }),
   schema: z.object({
     fetchedAt: z.string().optional(),
+    pageCountsFetchedAt: z.string().optional(),
     titles: z.array(z.object({
       title: z.string(),
       author: z.string(),
@@ -107,7 +108,14 @@ const vsiCatalogCollection = defineCollection({
       publicationYear: z.number().int().optional(),
       publicationDate: z.string().optional(),
       edition: z.number().int().optional(),
+      hidden: z.boolean().optional(),
+      hiddenReason: z.string().optional(),
       approximateNumber: z.boolean().optional(),
+      printIsbn: z.string().optional(),
+      pageCount: z.number().int().optional(),
+      wordCount: z.number().int().optional(),
+      highlights: z.array(z.string()).optional(),
+      newToThisEdition: z.array(z.string()).optional(),
       summaryAI: z.string().optional(),
     })),
   }),

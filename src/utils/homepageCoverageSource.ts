@@ -1,6 +1,7 @@
 import { slugify } from './helpers';
 import type { HomepageCoverageSource } from './homepageCoverageTypes';
 import { formatIotEpisodeMeta } from './iotMetadata';
+import { formatVsiWordCount } from './vsiCatalog';
 import { formatWikipediaWordCount } from './wikipediaCatalog';
 import type {
   IotLibraryPayload,
@@ -67,10 +68,12 @@ function formatVsiMeta(entry: {
   number?: number;
   publicationYear?: number;
   edition?: number;
+  wordCount?: number;
 }): string {
   return [
     entry.author,
     entry.number ? `No. ${entry.number}` : null,
+    formatVsiWordCount(entry.wordCount),
     formatEditionLabel(entry.edition),
     entry.publicationYear ? String(entry.publicationYear) : null,
   ]

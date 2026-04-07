@@ -10,6 +10,7 @@ import {
   analyzeProgressSubsectionCoverage,
   buildSectionOutlinePathIndex,
 } from './outlineCoverage';
+import { resolveVsiCatalogEntry } from './vsiCatalog';
 
 export interface ReadingSectionSummary {
   sectionCode: string;
@@ -27,7 +28,13 @@ export interface VsiCatalogTitle {
   number?: number;
   subject?: string;
   publicationYear?: number;
+  publicationDate?: string;
   edition?: number;
+  hidden?: boolean;
+  hiddenReason?: string;
+  printIsbn?: string;
+  pageCount?: number;
+  wordCount?: number;
 }
 
 export interface VsiMappingRecord {
@@ -51,6 +58,8 @@ export interface VsiAggregateEntry {
   subject?: string;
   publicationYear?: number;
   edition?: number;
+  pageCount?: number;
+  wordCount?: number;
   checklistKey: string;
   sectionCount: number;
   sections: ReadingSectionSummary[];
@@ -74,6 +83,8 @@ export interface VsiCoveragePathStep {
   subject?: string;
   publicationYear?: number;
   edition?: number;
+  pageCount?: number;
+  wordCount?: number;
   checklistKey: string;
   sectionCount: number;
   newSectionCount: number;
@@ -238,18 +249,13 @@ export function buildVsiAggregateEntries(
   mappings: VsiMappingRecord[],
   catalog: VsiCatalogTitle[]
 ): VsiAggregateEntry[] {
+  const visibleCatalog = catalog.filter((entry) => !entry.hidden);
   const sectionLookup = new Map(sections.map((section) => [section.sectionCode, section]));
   const sectionOutlinePathIndex = buildSectionOutlinePathIndex(
     sections.map((section) => ({
       sectionCode: section.sectionCode,
       outline: section.outline ?? [],
     }))
-  );
-  const catalogLookup = new Map(
-    catalog.map((entry) => [
-      vsiLookupKey(entry.title, entry.author),
-      entry,
-    ])
   );
   const aggregateMap = new Map<
     string,
@@ -268,8 +274,10 @@ export function buildVsiAggregateEntries(
     if (!section) continue;
 
     for (const mappingEntry of sectionMapping.mappings) {
-      const lookupKey = vsiLookupKey(mappingEntry.vsiTitle, mappingEntry.vsiAuthor);
-      const catalogEntry = catalogLookup.get(lookupKey);
+      const catalogEntry = resolveVsiCatalogEntry(mappingEntry.vsiTitle, mappingEntry.vsiAuthor);
+      if (!catalogEntry) continue;
+
+      const lookupKey = vsiLookupKey(catalogEntry.title, catalogEntry.author);
       const existing = aggregateMap.get(lookupKey);
       const mappedPathCoverage = analyzeMappedOutlinePathCoverage(
         section.sectionCode,
@@ -300,9 +308,6 @@ export function buildVsiAggregateEntries(
         continue;
       }
 
-      const title = catalogEntry?.title ?? mappingEntry.vsiTitle;
-      const author = catalogEntry?.author ?? mappingEntry.vsiAuthor;
-
       aggregateMap.set(lookupKey, {
         sectionCodes: new Set([section.sectionCode]),
         progressSubsectionKeys: new Set(progressSubsectionKeys),
@@ -310,13 +315,15 @@ export function buildVsiAggregateEntries(
         fallbackSectionCodes: mappedPathCoverage.usedFallback ? new Set([section.sectionCode]) : new Set<string>(),
         mappedPathCount: mappedPathCoverage.matchedPathKeys.length,
         entry: {
-          title,
-          author,
-          number: catalogEntry?.number,
-          subject: catalogEntry?.subject,
-          publicationYear: catalogEntry?.publicationYear,
-          edition: catalogEntry?.edition,
-          checklistKey: vsiChecklistKey(title, author),
+          title: catalogEntry.title,
+          author: catalogEntry.author,
+          number: catalogEntry.number,
+          subject: catalogEntry.subject,
+          publicationYear: catalogEntry.publicationYear,
+          edition: catalogEntry.edition,
+          pageCount: catalogEntry.pageCount,
+          wordCount: catalogEntry.wordCount,
+          checklistKey: vsiChecklistKey(catalogEntry.title, catalogEntry.author),
           sectionCount: 1,
           sections: [section],
           progressSubsectionKeys,
@@ -329,7 +336,7 @@ export function buildVsiAggregateEntries(
   }
 
   // Include unmapped catalog items so they appear in the master list
-  for (const catalogEntry of catalog) {
+  for (const catalogEntry of visibleCatalog) {
     const lookupKey = vsiLookupKey(catalogEntry.title, catalogEntry.author);
     if (aggregateMap.has(lookupKey)) continue;
     aggregateMap.set(lookupKey, {
@@ -345,6 +352,8 @@ export function buildVsiAggregateEntries(
         subject: catalogEntry.subject,
         publicationYear: catalogEntry.publicationYear,
         edition: catalogEntry.edition,
+        pageCount: catalogEntry.pageCount,
+        wordCount: catalogEntry.wordCount,
         checklistKey: vsiChecklistKey(catalogEntry.title, catalogEntry.author),
         sectionCount: 0,
         sections: [],

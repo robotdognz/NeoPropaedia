@@ -37,7 +37,7 @@ export interface SectionMeta {
 
 export type CircleNavigatorVsiEntry = Pick<
   VsiAggregateEntry,
-  'title' | 'author' | 'checklistKey' | 'sectionCount' | 'sections' | 'progressSubsectionKeys'
+  'title' | 'author' | 'wordCount' | 'pageCount' | 'checklistKey' | 'sectionCount' | 'sections' | 'progressSubsectionKeys'
 >;
 
 export type CircleNavigatorWikipediaEntry = Pick<

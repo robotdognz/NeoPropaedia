@@ -5,6 +5,7 @@ import {
   formatEditionLabel,
   type VsiAggregateEntry,
 } from '../../utils/readingData';
+import { formatVsiPageCount, formatVsiWordCount } from '../../utils/vsiCatalog';
 import { slugify, type PartMeta } from '../../utils/helpers';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import { useHashAnchorCorrection } from '../../hooks/useHashAnchorCorrection';
@@ -71,7 +72,8 @@ function formatMetadata(entry: VsiAggregateEntry): string {
   return [
     entry.author,
     entry.number ? `No. ${entry.number}` : null,
-    entry.subject ?? null,
+    formatVsiPageCount(entry.pageCount),
+    formatVsiWordCount(entry.wordCount),
     editionLabel,
     entry.publicationYear ? String(entry.publicationYear) : null,
   ]

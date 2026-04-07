@@ -3,6 +3,7 @@ import ProgressBackup from './ProgressBackup';
 import { getCollection } from 'astro:content';
 import iotCatalog from '../../data/iot-catalog.json';
 import wikipediaCatalog from '../../data/wikipedia-catalog.json';
+import { visibleVsiCatalogEntries } from '../../utils/vsiCatalog';
 
 interface Props {
   heading: string;
@@ -11,7 +12,7 @@ interface Props {
 const { heading } = Astro.props;
 
 const vsiCatalogEntries = await getCollection('vsi');
-const vsiTitleCount = vsiCatalogEntries.flatMap((entry) => entry.data.titles).length;
+const vsiTitleCount = visibleVsiCatalogEntries().length;
 const iotEpisodeCount = iotCatalog.episodes.length;
 const wikipediaArticleCount = wikipediaCatalog.articles.length;
 const sourceDateFormatter = new Intl.DateTimeFormat('en-US', {

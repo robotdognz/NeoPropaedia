@@ -25,6 +25,8 @@ export interface VsiMapping {
   relevantPathsAI?: string[];
   publicationYear?: number;
   edition?: number;
+  pageCount?: number;
+  wordCount?: number;
   subject?: string;
   keywords?: string[];
   abstract?: string;
@@ -164,6 +166,7 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
                   sectionCode={sectionCode}
                   publicationYear={mapping.publicationYear}
                   edition={mapping.edition}
+                  wordCount={mapping.wordCount}
                   matchPercent={matchPercent}
                   flags={[precision]}
                   checked={Boolean(checklistState[checklistKey])}

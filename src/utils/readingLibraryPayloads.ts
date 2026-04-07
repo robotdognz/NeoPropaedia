@@ -20,6 +20,7 @@ import {
   type VsiAggregateEntry,
   type WikipediaAggregateEntry,
 } from './readingData';
+import { visibleVsiCatalogEntries } from './vsiCatalog';
 
 export type RemoteLibraryType = 'vsi' | 'wikipedia' | 'iot' | 'macropaedia';
 
@@ -119,17 +120,16 @@ async function loadSharedLibraryContext(): Promise<SharedLibraryContext> {
 }
 
 async function buildVsiLibraryPayload(): Promise<VsiLibraryPayload> {
-  const [context, mappings, catalogCollections] = await Promise.all([
+  const [context, mappings] = await Promise.all([
     loadSharedLibraryContext(),
     getCollection('vsi-mappings'),
-    getCollection('vsi'),
   ]);
 
   return {
     entries: buildVsiAggregateEntries(
       context.sectionsWithMeta,
       mappings.map((entry) => entry.data),
-      catalogCollections.flatMap((entry) => entry.data.titles),
+      visibleVsiCatalogEntries(),
     ),
     partsMeta: context.partsMeta,
   };

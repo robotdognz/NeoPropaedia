@@ -2,6 +2,7 @@ import { h } from 'preact';
 import { formatEditionLabel } from '../../utils/readingData';
 import { slugify } from '../../utils/helpers';
 import { linkifyRationaleReferences } from '../../utils/rationaleLinks';
+import { formatVsiWordCount } from '../../utils/vsiCatalog';
 import type {
   RecommendationCardBadge,
   RecommendationCardFlag,
@@ -16,6 +17,7 @@ export interface VsiCardProps {
   sectionCode?: string;
   publicationYear?: number;
   edition?: number;
+  wordCount?: number;
   matchPercent?: number;
   flags?: RecommendationCardFlag[];
   badges?: RecommendationCardBadge[];
@@ -32,6 +34,7 @@ export default function VsiCard({
   sectionCode,
   publicationYear,
   edition,
+  wordCount,
   matchPercent,
   flags,
   badges,
@@ -40,7 +43,12 @@ export default function VsiCard({
   onCheckedChange,
 }: VsiCardProps) {
   const editionLabel = formatEditionLabel(edition);
-  const metadata = [author, editionLabel, publicationYear ? String(publicationYear) : null].filter(Boolean).join(' · ');
+  const metadata = [
+    author,
+    formatVsiWordCount(wordCount),
+    editionLabel,
+    publicationYear ? String(publicationYear) : null,
+  ].filter(Boolean).join(' · ');
 
   return (
     <ReadingRecommendationCard
