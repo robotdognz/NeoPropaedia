@@ -25,6 +25,7 @@ const {
   data-home-mode-section
   data-home-mode={mode}
   data-home-mode-alias={alias}
+  data-home-mode-tabbed="false"
   class="mx-auto max-w-6xl px-2 sm:px-6 lg:px-8"
 >
   <details
@@ -32,7 +33,7 @@ const {
     open={defaultOpen}
     class="group rounded-2xl border border-slate-200 bg-white shadow-sm"
   >
-    <summary class="cursor-pointer list-none p-5 sm:p-6 [&::-webkit-details-marker]:hidden">
+    <summary data-home-mode-summary class="cursor-pointer list-none p-5 sm:p-6 [&::-webkit-details-marker]:hidden">
       <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         <div class="max-w-3xl space-y-2.5">
           <h2 class="text-xl font-serif font-bold text-slate-900 sm:text-2xl">
@@ -43,7 +44,7 @@ const {
           </p>
         </div>
 
-        <span class="inline-flex items-center gap-2 self-start rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition group-hover:bg-slate-50">
+        <span data-home-mode-toggle class="inline-flex items-center gap-2 self-start rounded-full border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition group-hover:bg-slate-50">
           <span class="group-open:hidden">Expand</span>
           <span class="hidden group-open:inline">Collapse</span>
           <svg
@@ -60,9 +61,27 @@ const {
       </div>
     </summary>
 
-    <div class="border-t border-slate-200 px-5 py-5 sm:px-6 sm:py-6">
+    <div data-home-mode-panel class="border-t border-slate-200 px-5 py-5 sm:px-6 sm:py-6">
       <div id={`${id}-content`} class="scroll-mt-[5rem]" data-home-mode-scroll-target></div>
+      <div data-home-mode-tabbed-intro class="mb-6 max-w-3xl space-y-2.5">
+        <h2 class="text-2xl font-serif font-bold text-slate-900 sm:text-3xl">
+          {title}
+        </h2>
+        <p class="text-sm font-serif text-slate-500 sm:text-base">
+          {description}
+        </p>
+      </div>
       <slot />
     </div>
   </details>
 </section>
+
+<style is:inline>
+  [data-home-mode-tabbed-intro] {
+    display: none;
+  }
+
+  [data-home-mode-section][data-home-mode-tabbed='true'] [data-home-mode-tabbed-intro] {
+    display: block;
+  }
+</style>

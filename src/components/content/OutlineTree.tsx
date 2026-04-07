@@ -2,7 +2,8 @@ import { h } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import InlineReferenceText from './InlineReferenceText';
 import { OUTLINE_SELECT_EVENT, type OutlineSelectionDetail } from '../../utils/vsiOutlineFilter';
-import { outlineAnchorId } from '../../utils/helpers';
+import { normalizeOutlinePath, outlineAnchorId } from '../../utils/helpers';
+import { readSectionOutlineSelection, writeSectionOutlineSelection } from '../../utils/sectionOutlineSelection';
 
 export interface OutlineItem {
   level: string;
@@ -23,6 +24,13 @@ export interface OutlineTreeProps {
  * and shown with a prominent badge. Sub-levels are collapsible.
  */
 export default function OutlineTree({ items, sectionCode, baseUrl, currentHref }: OutlineTreeProps) {
+  const [restoredSelectionPath, setRestoredSelectionPath] = useState<string | null>(null);
+
+  useEffect(() => {
+    const restored = readSectionOutlineSelection(sectionCode);
+    setRestoredSelectionPath(restored?.outlinePath ?? null);
+  }, [sectionCode]);
+
   useEffect(() => {
     const highlightTimers = new WeakMap<HTMLElement, number>();
 
@@ -86,6 +94,8 @@ export default function OutlineTree({ items, sectionCode, baseUrl, currentHref }
             baseUrl={baseUrl}
             currentHref={currentHref}
             pathSegments={[]}
+            restoredSelectionPath={restoredSelectionPath}
+            onSelectionPathChange={setRestoredSelectionPath}
           />
         ))}
       </ul>
@@ -100,17 +110,39 @@ interface OutlineNodeProps {
   baseUrl: string;
   currentHref?: string;
   pathSegments: string[];
+  restoredSelectionPath: string | null;
+  onSelectionPathChange: (path: string | null) => void;
 }
 
-function OutlineNode({ item, sectionCode, depth, baseUrl, currentHref, pathSegments }: OutlineNodeProps) {
+function OutlineNode({
+  item,
+  sectionCode,
+  depth,
+  baseUrl,
+  currentHref,
+  pathSegments,
+  restoredSelectionPath,
+  onSelectionPathChange,
+}: OutlineNodeProps) {
   const isMajor = item.levelType === 'major';
   const hasChildren = item.children.length > 0;
   const outlinePath = [...pathSegments, item.level].join('.');
   const anchorId = outlineAnchorId(sectionCode, outlinePath);
   const nodeRef = useRef<HTMLLIElement>(null);
+  const normalizedSelectionPath = restoredSelectionPath ? normalizeOutlinePath(restoredSelectionPath) : null;
+  const isOnSelectionBranch = Boolean(
+    normalizedSelectionPath &&
+    (normalizedSelectionPath === outlinePath || normalizedSelectionPath.startsWith(`${outlinePath}.`))
+  );
 
   // Major (top-level) items default open; sub-items default closed
-  const [isExpanded, setIsExpanded] = useState(isMajor);
+  const [isExpanded, setIsExpanded] = useState(isMajor || isOnSelectionBranch);
+
+  useEffect(() => {
+    if (hasChildren && isOnSelectionBranch) {
+      setIsExpanded(true);
+    }
+  }, [hasChildren, isOnSelectionBranch]);
 
   useEffect(() => {
     if (!hasChildren) return;
@@ -157,6 +189,8 @@ function OutlineNode({ item, sectionCode, depth, baseUrl, currentHref, pathSegme
       childrenText: collectChildrenText(item.children || []),
     };
 
+    writeSectionOutlineSelection(detail);
+    onSelectionPathChange(outlinePath);
     document.dispatchEvent(new CustomEvent<OutlineSelectionDetail>(OUTLINE_SELECT_EVENT, { detail }));
   };
 
@@ -252,6 +286,8 @@ function OutlineNode({ item, sectionCode, depth, baseUrl, currentHref, pathSegme
               baseUrl={baseUrl}
               currentHref={currentHref}
               pathSegments={[...pathSegments, item.level]}
+              restoredSelectionPath={restoredSelectionPath}
+              onSelectionPathChange={onSelectionPathChange}
             />
           ))}
         </ul>

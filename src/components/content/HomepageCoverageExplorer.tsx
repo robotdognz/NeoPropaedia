@@ -50,6 +50,7 @@ interface HomepageCoverageExplorerProps {
 
 const ALL_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
 const DEFAULT_SUPPORTED_LAYERS: CoverageLayer[] = ['part', 'division', 'section'];
+const SPREAD_PATH_STORAGE_KEY = 'propaedia-homepage-coverage-spread-open';
 const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
   Parts: 'part',
   Divisions: 'division',
@@ -189,6 +190,11 @@ export default function HomepageCoverageExplorer({
     setSelectedType(preferred);
     void ensureSourceLoaded(preferred);
     setSelectedLayer(getCoverageLayerPreference());
+    try {
+      setSpreadPathOpen(window.localStorage.getItem(SPREAD_PATH_STORAGE_KEY) === '1');
+    } catch {
+      // Ignore storage failures and keep the UI interactive.
+    }
 
     // Preload other reading types in the background so switching is instant
     const preload = () => {
@@ -216,6 +222,16 @@ export default function HomepageCoverageExplorer({
       unsubLayer();
     };
   }, []);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    try {
+      window.localStorage.setItem(SPREAD_PATH_STORAGE_KEY, spreadPathOpen ? '1' : '0');
+    } catch {
+      // Ignore storage failures and keep the UI interactive.
+    }
+  }, [spreadPathOpen]);
 
   const source = sourceCache[selectedType] ?? null;
   const filteredSource = useMemo(() => {

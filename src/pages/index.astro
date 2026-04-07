@@ -285,7 +285,7 @@ function getEssaySegmentLayout(index: number, count: number, baseInnerRadius: nu
 
 <BaseLayout title="Propaedia - Outline of Knowledge">
   <main id="main-content" class="w-full overflow-x-hidden">
-    <section class="border-b border-slate-200 bg-gradient-to-b from-slate-50 via-white to-white">
+    <section class="hidden border-b border-slate-200 bg-gradient-to-b from-slate-50 via-white to-white">
       <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <p class="text-sm font-sans font-semibold uppercase tracking-[0.22em] text-slate-500">
           Propaedia
@@ -676,10 +676,43 @@ function getEssaySegmentLayout(index: number, count: number, baseInnerRadius: nu
       </HomepageModeSection>
     </section>
 
+    <style is:inline>
+      @media (max-width: 1023.98px) {
+        [data-home-mode-section][data-home-mode-tabbed='true'] {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+
+      [data-home-mode-section][data-home-mode-tabbed='true'] [data-home-mode-summary] {
+        display: none;
+      }
+
+      [data-home-mode-section][data-home-mode-tabbed='true'] summary {
+        cursor: default;
+      }
+
+      [data-home-mode-section][data-home-mode-tabbed='true'] [data-home-mode-toggle] {
+        display: none;
+      }
+
+      [data-home-mode-section][data-home-mode-tabbed='true'] [data-home-mode-details] {
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+      }
+
+      [data-home-mode-section][data-home-mode-tabbed='true'] [data-home-mode-panel] {
+        border-top: 0;
+        padding: 0;
+      }
+    </style>
 
     <script is:inline>
       (() => {
-        const STORAGE_KEY = 'propaedia-home-mode';
+        const ACTIVE_WORKSPACE_KEY = 'propaedia-active-workspace';
+        const EXPLORE_PARAM = 'explore';
         const sections = Array.from(document.querySelectorAll('[data-home-mode-section]'));
         if (!sections.length) return;
 
@@ -706,119 +739,87 @@ function getEssaySegmentLayout(index: number, count: number, baseInnerRadius: nu
           if (item.alias) modeLookup.set(item.alias, item);
         });
 
-        const basePath = `${window.location.pathname}${window.location.search}`;
-
-        function setHash(id) {
-          history.replaceState(null, '', `${basePath}#${id}`);
-        }
-
-        function clearHash() {
-          history.replaceState(null, '', basePath);
-        }
-
-        function scrollToSection(item, behavior) {
-          requestAnimationFrame(() => {
-            const scrollTarget = item.section.querySelector('[data-home-mode-scroll-target]');
-            (scrollTarget || item.section).scrollIntoView({ behavior, block: 'start' });
-          });
-        }
-
-        function openMode(key, options = {}) {
-          const item = modeLookup.get(key);
-          if (!item) return null;
-
-          modeItems.forEach((entry) => {
-            entry.details.open = entry === item;
-          });
-
-          if (options.store !== false) {
-            localStorage.setItem(STORAGE_KEY, item.mode);
-          }
-
-          if (options.updateHash) {
-            setHash(item.section.id);
-          }
-
-          if (options.scroll) {
-            scrollToSection(item, options.behavior || 'smooth');
-          }
-
-          return item;
-        }
-
-        function collapseAll() {
-          modeItems.forEach((item) => {
-            item.details.open = false;
-          });
-          localStorage.setItem(STORAGE_KEY, 'none');
-          clearHash();
-        }
-
-        modeItems.forEach((item) => {
-          const summary = item.details.querySelector('summary');
-          if (!(summary instanceof HTMLElement)) return;
-
-          summary.addEventListener('click', (event) => {
-            event.preventDefault();
-
-            if (item.details.open) {
-              collapseAll();
-              return;
-            }
-
-            openMode(item.mode, {
-              scroll: true,
-              store: true,
-              updateHash: true,
-              behavior: 'smooth',
-            });
-          });
-        });
-
-        function getInitialMode() {
-          const hash = decodeURIComponent(window.location.hash.replace('#', ''));
-          if (hash && modeLookup.has(hash)) {
-            return { key: hash, scroll: true };
-          }
-
-          const stored = localStorage.getItem(STORAGE_KEY);
-          if (stored === 'none') {
+        function readStoredWorkspace() {
+          try {
+            const workspace = localStorage.getItem(ACTIVE_WORKSPACE_KEY);
+            if (!workspace) return null;
+            const item = modeLookup.get(workspace);
+            return item ? item.mode : null;
+          } catch {
             return null;
           }
-          if (stored && modeLookup.has(stored)) {
-            return { key: stored, scroll: false };
+        }
+
+        function writeStoredWorkspace(workspace) {
+          try {
+            localStorage.setItem(ACTIVE_WORKSPACE_KEY, workspace);
+          } catch {
+            // Ignore storage failures and keep the home view interactive.
+          }
+        }
+
+        function currentBasePath() {
+          return `${window.location.pathname}${window.location.search}`;
+        }
+
+        function setExploreWorkspace(workspace, replace = false) {
+          const item = modeLookup.get(workspace);
+          if (!item) return;
+
+          const nextUrl = new URL(window.location.href);
+          nextUrl.searchParams.set(EXPLORE_PARAM, item.mode);
+          nextUrl.hash = '';
+          const nextUrlKey = `${nextUrl.pathname}${nextUrl.search}`;
+          const method = replace ? 'replaceState' : 'pushState';
+
+          if (nextUrlKey === currentBasePath()) return;
+          history[method](null, '', nextUrlKey);
+        }
+
+        function getRequestedWorkspace() {
+          const params = new URLSearchParams(window.location.search);
+          const requested = params.get(EXPLORE_PARAM);
+          const requestedItem = requested ? modeLookup.get(requested) : null;
+          if (requestedItem) return requestedItem.mode;
+
+          const hash = decodeURIComponent(window.location.hash.replace('#', ''));
+          const hashedItem = hash ? modeLookup.get(hash) : null;
+          if (hashedItem) return hashedItem.mode;
+
+          return readStoredWorkspace() ?? 'whole-outline';
+        }
+
+        function applyWorkspaceView(workspace, options = {}) {
+          const item = modeLookup.get(workspace) ?? modeLookup.get('whole-outline');
+          if (!item) return;
+
+          writeStoredWorkspace(item.mode);
+
+          if (options.syncUrl) {
+            setExploreWorkspace(item.mode, options.replaceUrl !== false);
           }
 
-          // Default: all collapsed for new users
-          return null;
+          modeItems.forEach((entry) => {
+            const isActive = entry === item;
+            entry.section.hidden = !isActive;
+            entry.section.setAttribute('data-home-mode-tabbed', isActive ? 'true' : 'false');
+            entry.details.open = isActive;
+          });
         }
 
-        window.addEventListener('hashchange', () => {
-          const hash = decodeURIComponent(window.location.hash.replace('#', ''));
-          if (!hash || !modeLookup.has(hash)) return;
-
-          openMode(hash, {
-            scroll: true,
-            store: true,
-            updateHash: false,
-            behavior: 'smooth',
-          });
+        window.addEventListener('popstate', () => {
+          applyWorkspaceView(getRequestedWorkspace(), { syncUrl: false });
         });
 
-        const initialMode = getInitialMode();
-        if (initialMode) {
-          openMode(initialMode.key, {
-            scroll: initialMode.scroll,
-            store: true,
-            updateHash: false,
-            behavior: 'auto',
-          });
-        } else {
-          // All collapsed
-          modeItems.forEach((item) => {
-            item.details.open = false;
-          });
-        }
+        document.addEventListener('propaedia:workspace-change', (event) => {
+          const workspace = event && event.detail ? event.detail.workspace : null;
+          applyWorkspaceView(workspace || getRequestedWorkspace(), { syncUrl: false });
+        });
+
+        applyWorkspaceView(getRequestedWorkspace(), {
+          syncUrl: true,
+          replaceUrl: true,
+        });
       })();
     </script>
   </main>

@@ -2,6 +2,7 @@
 import Header from './Header.astro';
 import Sidebar from './Sidebar.astro';
 import Footer from './Footer.astro';
+import MobileExploreTabs from './MobileExploreTabs.astro';
 import '../../styles/global.css';
 
 interface Props {
@@ -49,7 +50,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     <title>{title}</title>
   </head>
 
-  <body class="min-h-screen flex flex-col bg-white text-gray-900 antialiased">
+  <body class="min-h-screen flex flex-col bg-white pb-24 text-gray-900 antialiased">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-indigo-700 focus:rounded-md focus:shadow-lg focus:ring-2 focus:ring-indigo-400">
       Skip to main content
     </a>
@@ -68,6 +69,135 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
     </div>
 
     <Footer />
+    <MobileExploreTabs />
+
+    <script is:inline>
+      (function() {
+        var STORAGE_KEY = 'propaedia-scroll-positions-v1';
+        var pendingSaveTimer = 0;
+        var currentUrlKey = function() {
+          return window.location.pathname + window.location.search;
+        };
+
+        function readPositions() {
+          try {
+            var raw = window.localStorage.getItem(STORAGE_KEY);
+            if (!raw) return {};
+            var parsed = JSON.parse(raw);
+            return parsed && typeof parsed === 'object' ? parsed : {};
+          } catch (_error) {
+            return {};
+          }
+        }
+
+        function writePositions(positions) {
+          try {
+            window.localStorage.setItem(STORAGE_KEY, JSON.stringify(positions));
+          } catch (_error) {
+            // Ignore storage failures and keep scroll behavior intact.
+          }
+        }
+
+        function rememberScroll(urlKey, y) {
+          if (!urlKey) return;
+
+          var positions = readPositions();
+          positions[urlKey] = {
+            y: Math.max(0, Math.round(y)),
+            updatedAt: Date.now(),
+          };
+
+          var entries = Object.entries(positions);
+          if (entries.length > 180) {
+            entries
+              .sort(function(a, b) {
+                return (a[1] && a[1].updatedAt ? a[1].updatedAt : 0) - (b[1] && b[1].updatedAt ? b[1].updatedAt : 0);
+              })
+              .slice(0, entries.length - 180)
+              .forEach(function(entry) {
+                delete positions[entry[0]];
+              });
+          }
+
+          writePositions(positions);
+        }
+
+        function getStoredScroll(urlKey) {
+          var entry = readPositions()[urlKey];
+          if (typeof entry === 'number') return entry;
+          if (entry && typeof entry.y === 'number') return entry.y;
+          return null;
+        }
+
+        function shouldSkipInitialRestore() {
+          if (window.location.hash) return true;
+
+          var params = new URLSearchParams(window.location.search);
+          if (params.get('view') === 'essay') return true;
+          if (params.has('pagefind-highlight')) return true;
+
+          try {
+            var navigationEntry = performance.getEntriesByType('navigation')[0];
+            if (navigationEntry && navigationEntry.type === 'back_forward') return true;
+          } catch (_error) {
+            // Ignore performance API failures and continue with normal restore behavior.
+          }
+
+          return false;
+        }
+
+        function restoreScroll(urlKey) {
+          if (!urlKey) return;
+          var y = getStoredScroll(urlKey);
+          if (typeof y !== 'number') return;
+
+          requestAnimationFrame(function() {
+            requestAnimationFrame(function() {
+              window.scrollTo({ top: y, behavior: 'auto' });
+            });
+          });
+        }
+
+        function scheduleCurrentScrollSave() {
+          window.clearTimeout(pendingSaveTimer);
+          pendingSaveTimer = window.setTimeout(function() {
+            rememberScroll(currentUrlKey(), window.scrollY);
+          }, 120);
+        }
+
+        window.addEventListener('scroll', scheduleCurrentScrollSave, { passive: true });
+        window.addEventListener('pagehide', function() {
+          rememberScroll(currentUrlKey(), window.scrollY);
+        });
+        document.addEventListener('visibilitychange', function() {
+          if (document.visibilityState === 'hidden') {
+            rememberScroll(currentUrlKey(), window.scrollY);
+          }
+        });
+
+        document.addEventListener('propaedia:workspace-before-change', function(event) {
+          var detail = event && event.detail ? event.detail : {};
+          rememberScroll(detail.urlKey || currentUrlKey(), window.scrollY);
+        });
+
+        document.addEventListener('propaedia:workspace-after-change', function(event) {
+          var detail = event && event.detail ? event.detail : {};
+          restoreScroll(detail.urlKey || currentUrlKey());
+        });
+
+        if (!shouldSkipInitialRestore()) {
+          restoreScroll(currentUrlKey());
+
+          window.addEventListener(
+            'load',
+            function() {
+              restoreScroll(currentUrlKey());
+            },
+            { once: true },
+          );
+        }
+      })();
+    </script>
 
     <script is:inline>
       (function() {

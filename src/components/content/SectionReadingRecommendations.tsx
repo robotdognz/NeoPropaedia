@@ -34,6 +34,10 @@ import {
   type OutlineSelectionDetail,
 } from '../../utils/vsiOutlineFilter';
 import {
+  clearSectionOutlineSelection,
+  readSectionOutlineSelection,
+} from '../../utils/sectionOutlineSelection';
+import {
   filterArticlesForOutline,
 } from '../../utils/wikipediaOutlineFilter';
 import {
@@ -188,6 +192,13 @@ export default function SectionReadingRecommendations({
       setSelectedType(resolveAvailableReadingType(type, availableTypes));
     });
   }, [availableTypesKey]);
+
+  useEffect(() => {
+    const restored = readSectionOutlineSelection(sectionCode);
+    if (restored) {
+      setSelection(restored);
+    }
+  }, [sectionCode]);
 
   useEffect(() => {
     const handler = (event: Event) => {
@@ -534,7 +545,10 @@ export default function SectionReadingRecommendations({
             </div>
             <button
               type="button"
-              onClick={() => setSelection(null)}
+              onClick={() => {
+                clearSectionOutlineSelection(sectionCode);
+                setSelection(null);
+              }}
               class="inline-flex items-center rounded-full border border-amber-300 bg-white px-3 py-1.5 text-xs font-semibold text-amber-900 transition hover:border-amber-400 hover:bg-amber-100/70"
             >
               Show all

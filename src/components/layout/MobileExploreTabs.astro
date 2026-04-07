@@ -1,0 +1,283 @@
+---
+const base = import.meta.env.BASE_URL;
+
+const tabs = [
+  { workspace: 'whole-outline', label: 'Whole Outline' },
+  { workspace: 'selected-fields', label: 'Selected Fields' },
+  { workspace: 'specific-topic', label: 'Specific Topic' },
+  { workspace: 'help', label: 'Help' },
+] as const;
+
+const workspaceHrefs = {
+  'whole-outline': `${base}/?explore=whole-outline`,
+  'selected-fields': `${base}/?explore=selected-fields`,
+  'specific-topic': `${base}/?explore=specific-topic`,
+  'help': `${base}/about`,
+};
+---
+
+<div data-pagefind-ignore>
+  <nav
+    id="mobile-explore-tabs"
+    aria-label="Explore Propaedia"
+    class="fixed inset-x-0 bottom-0 z-20 border-t border-slate-200 bg-white/95 backdrop-blur"
+    style="padding-bottom: max(env(safe-area-inset-bottom), 0.5rem);"
+  >
+    <div class="mx-auto grid max-w-screen-lg grid-cols-4 gap-1 px-2 pb-2 pt-2 lg:max-w-2xl">
+      {tabs.map((tab) => (
+        <a
+          data-mobile-workspace-tab={tab.workspace}
+          href={workspaceHrefs[tab.workspace]}
+          class="flex min-w-0 flex-col items-center gap-1 rounded-xl px-2 py-2 text-[0.68rem] font-sans font-medium text-slate-500 transition-colors"
+        >
+          <span
+            data-mobile-workspace-icon
+            class="flex h-9 w-12 items-center justify-center rounded-lg border border-transparent text-slate-400 transition-colors"
+            aria-hidden="true"
+          >
+            {tab.workspace === 'whole-outline' ? (
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="7.25"></circle>
+                <circle cx="12" cy="12" r="3.25"></circle>
+              </svg>
+            ) : tab.workspace === 'selected-fields' ? (
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="7" cy="12" r="2.5"></circle>
+                <circle cx="17" cy="7" r="2.5"></circle>
+                <circle cx="17" cy="17" r="2.5"></circle>
+                <path d="M9.2 10.9 14.7 8"></path>
+                <path d="m9.2 13.1 5.5 2.9"></path>
+              </svg>
+            ) : tab.workspace === 'specific-topic' ? (
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M7 6h10"></path>
+                <path d="M7 12h7"></path>
+                <path d="M7 18h5"></path>
+                <circle cx="6" cy="6" r="1"></circle>
+                <circle cx="6" cy="12" r="1"></circle>
+                <circle cx="6" cy="18" r="1"></circle>
+              </svg>
+            ) : (
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="7.25"></circle>
+                <path d="M9.75 9.25a2.25 2.25 0 1 1 3.88 1.56c-.88.9-1.63 1.36-1.63 2.69"></path>
+                <circle cx="12" cy="16.65" r="0.8" fill="currentColor" stroke="none"></circle>
+              </svg>
+            )}
+          </span>
+          <span class="truncate text-center leading-tight">{tab.label}</span>
+        </a>
+      ))}
+    </div>
+  </nav>
+</div>
+
+<style is:inline>
+  [data-mobile-workspace-tab][data-active='true'] {
+    color: #0f172a;
+  }
+
+  [data-mobile-workspace-tab][data-active='true'] [data-mobile-workspace-icon] {
+    border-color: rgb(226 232 240);
+    background: rgb(248 250 252);
+    color: #0f172a;
+  }
+</style>
+
+  <script
+  is:inline
+  define:vars={{
+    workspaceHrefs,
+    activeWorkspaceStorageKey: 'propaedia-active-workspace',
+    workspaceUrlsStorageKey: 'propaedia-workspace-urls-v1',
+  }}
+>
+  (() => {
+    const WORKSPACES = ['whole-outline', 'selected-fields', 'specific-topic', 'help'];
+    const HOME_WORKSPACES = ['whole-outline', 'selected-fields', 'specific-topic'];
+    const tabs = Array.from(document.querySelectorAll('[data-mobile-workspace-tab]'));
+    if (!tabs.length) return;
+
+    const normalizePath = (pathname) => (pathname && pathname !== '/' ? pathname.replace(/\/$/, '') : pathname || '/');
+    const homePath = normalizePath(new URL(workspaceHrefs['whole-outline'], window.location.origin).pathname);
+    const helpPath = normalizePath(new URL(workspaceHrefs['help'], window.location.origin).pathname);
+    const currentUrlKey = () => `${window.location.pathname}${window.location.search}`;
+    const homeUrlKey = (workspace) => {
+      const url = new URL(workspaceHrefs[workspace], window.location.origin);
+      return `${url.pathname}${url.search}`;
+    };
+    const basePrefix = homePath === '/' ? '' : homePath;
+
+    function isSpecificTopicRoute(pathname) {
+      const normalized = normalizePath(pathname);
+      return (
+        normalized.startsWith(`${basePrefix}/part/`) ||
+        normalized.startsWith(`${basePrefix}/division/`) ||
+        normalized.startsWith(`${basePrefix}/section/`)
+      );
+    }
+
+    function isHelpRoute(pathname) {
+      return normalizePath(pathname) === helpPath;
+    }
+
+    function readStoredWorkspace() {
+      try {
+        const value = window.localStorage.getItem(activeWorkspaceStorageKey);
+        return WORKSPACES.includes(value) ? value : null;
+      } catch {
+        return null;
+      }
+    }
+
+    function writeStoredWorkspace(workspace) {
+      try {
+        window.localStorage.setItem(activeWorkspaceStorageKey, workspace);
+      } catch {
+        // Ignore storage failures and keep the tabs interactive.
+      }
+    }
+
+    function readStoredWorkspaceUrls() {
+      try {
+        const raw = window.localStorage.getItem(workspaceUrlsStorageKey);
+        if (!raw) return {};
+        const parsed = JSON.parse(raw);
+        return parsed && typeof parsed === 'object' ? parsed : {};
+      } catch {
+        return {};
+      }
+    }
+
+    function writeStoredWorkspaceUrls(urls) {
+      try {
+        window.localStorage.setItem(workspaceUrlsStorageKey, JSON.stringify(urls));
+      } catch {
+        // Ignore storage failures and keep the tabs interactive.
+      }
+    }
+
+    function detectWorkspace() {
+      const pathname = normalizePath(window.location.pathname);
+
+      if (pathname === homePath) {
+        const current = new URL(window.location.href);
+        const requested = current.searchParams.get('explore');
+        if (HOME_WORKSPACES.includes(requested)) return requested;
+
+        const stored = readStoredWorkspace();
+        return HOME_WORKSPACES.includes(stored) ? stored : 'whole-outline';
+      }
+
+      if (isHelpRoute(pathname)) {
+        return 'help';
+      }
+
+      if (isSpecificTopicRoute(pathname)) {
+        return 'specific-topic';
+      }
+
+      return readStoredWorkspace() ?? 'whole-outline';
+    }
+
+    function syncStoredUrls() {
+      const urls = readStoredWorkspaceUrls();
+      urls['whole-outline'] = homeUrlKey('whole-outline');
+      urls['selected-fields'] = homeUrlKey('selected-fields');
+      urls['help'] = homeUrlKey('help');
+
+      if (isSpecificTopicRoute(window.location.pathname)) {
+        urls['specific-topic'] = currentUrlKey();
+      } else if (!urls['specific-topic']) {
+        urls['specific-topic'] = homeUrlKey('specific-topic');
+      }
+
+      writeStoredWorkspaceUrls(urls);
+      return urls;
+    }
+
+    function syncTabs() {
+      const workspace = detectWorkspace();
+      const urls = syncStoredUrls();
+      writeStoredWorkspace(workspace);
+
+      tabs.forEach((tab) => {
+        if (!(tab instanceof HTMLAnchorElement)) return;
+        const tabWorkspace = tab.getAttribute('data-mobile-workspace-tab');
+        if (!tabWorkspace || !WORKSPACES.includes(tabWorkspace)) return;
+
+        const isCurrentWorkspaceRoute =
+          tabWorkspace === workspace && (
+            normalizePath(window.location.pathname) === homePath ||
+            (tabWorkspace === 'specific-topic' && isSpecificTopicRoute(window.location.pathname)) ||
+            (tabWorkspace === 'help' && isHelpRoute(window.location.pathname))
+          );
+        const href = isCurrentWorkspaceRoute
+          ? currentUrlKey()
+          : (urls[tabWorkspace] || homeUrlKey(tabWorkspace));
+        tab.href = href;
+        tab.dataset.active = tabWorkspace === workspace ? 'true' : 'false';
+      });
+    }
+
+    tabs.forEach((tab) => {
+      if (!(tab instanceof HTMLAnchorElement)) return;
+
+      tab.addEventListener('click', (event) => {
+        const workspace = tab.getAttribute('data-mobile-workspace-tab');
+        if (!workspace || !WORKSPACES.includes(workspace)) return;
+
+        writeStoredWorkspace(workspace);
+
+        const targetUrl = new URL(tab.href, window.location.origin);
+        const targetUrlKey = `${targetUrl.pathname}${targetUrl.search}`;
+        const currentWorkspace = detectWorkspace();
+
+        if (targetUrlKey === currentUrlKey()) {
+          event.preventDefault();
+          syncTabs();
+          return;
+        }
+
+        if (normalizePath(window.location.pathname) === homePath && normalizePath(targetUrl.pathname) === homePath) {
+          event.preventDefault();
+
+          document.dispatchEvent(
+            new CustomEvent('propaedia:workspace-before-change', {
+              detail: {
+                workspace: currentWorkspace,
+                urlKey: currentUrlKey(),
+              },
+            }),
+          );
+
+          history.pushState(null, '', targetUrlKey);
+
+          document.dispatchEvent(
+            new CustomEvent('propaedia:workspace-change', {
+              detail: {
+                workspace,
+                urlKey: targetUrlKey,
+              },
+            }),
+          );
+
+          syncTabs();
+
+          document.dispatchEvent(
+            new CustomEvent('propaedia:workspace-after-change', {
+              detail: {
+                workspace,
+                urlKey: targetUrlKey,
+              },
+            }),
+          );
+        }
+      });
+    });
+
+    window.addEventListener('popstate', syncTabs);
+    document.addEventListener('propaedia:workspace-change', syncTabs);
+    syncTabs();
+  })();
+</script>
