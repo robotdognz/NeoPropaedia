@@ -1,8 +1,10 @@
 import { h, type ComponentChildren } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 
+const ADDED_PREVIEW_COLOR = '#111827';
+
 export interface CoverageRingsProps {
-  rings: { label: string; count: number; total: number; color: string }[];
+  rings: { label: string; count: number; addedCount?: number; total: number; color: string }[];
   size?: number;
   ringWidth?: number;
   hideLegend?: boolean;
@@ -36,7 +38,9 @@ export default function CoverageRings({
   const zeroArcHideDelayMs = 820;
   const [animated, setAnimated] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  const ringFingerprint = rings.map(r => `${r.label}:${r.count}/${r.total}`).join(',');
+  const ringFingerprint = rings.map((ring) =>
+    `${ring.label}:${ring.count}+${ring.addedCount ?? 0}/${ring.total}`,
+  ).join(',');
   const prevLabelRef = useRef(activeRingLabel);
   const prevFingerprintRef = useRef(ringFingerprint);
   const snapModeRef = useRef<'none' | 'geometry' | 'all'>('none');
@@ -186,6 +190,47 @@ export default function CoverageRings({
     if (label) onSelectRing(label);
   }
 
+  function resolveDisplayedArc(rawFraction: number, width: number, radius: number) {
+    const clampedRawFraction = Math.min(1, Math.max(0, rawFraction));
+    const circumference = 2 * Math.PI * radius;
+    const isPartial = clampedRawFraction > 0 && clampedRawFraction < 1;
+    const needsCompensation = (isPartial || clampedRawFraction === 0) && width > ringWidth;
+
+    if (needsCompensation) {
+      const baseRadius = radius + (width - ringWidth) / 2;
+      const baseCircumference = 2 * Math.PI * baseRadius;
+      const startCompensation = (width / 2) / circumference - (ringWidth / 2) / baseCircumference;
+      const idealFraction =
+        clampedRawFraction + ringWidth / baseCircumference - width / circumference;
+
+      if (idealFraction > 0) {
+        return {
+          fraction: idealFraction,
+          startRotation: startCompensation * 360,
+        };
+      }
+
+      return {
+        fraction: clampedRawFraction > 0 ? Math.max(0.001, clampedRawFraction - startCompensation) : 0,
+        startRotation: startCompensation * 360,
+      };
+    }
+
+    if (width > ringWidth) {
+      const baseRadius = radius + (width - ringWidth) / 2;
+      const baseCircumference = 2 * Math.PI * baseRadius;
+      return {
+        fraction: clampedRawFraction,
+        startRotation: ((width / 2) / circumference - (ringWidth / 2) / baseCircumference) * 360,
+      };
+    }
+
+    return {
+      fraction: clampedRawFraction,
+      startRotation: 0,
+    };
+  }
+
   return (
     <div ref={ref} class="flex flex-col items-center">
       <div class="relative w-28 h-28 sm:w-32 sm:h-32">
@@ -206,61 +251,34 @@ export default function CoverageRings({
           {rings.map((ring, i) => {
           const radius = radii[i];
           const width = ringWidths[i];
-          const rawFraction = ring.total > 0 ? ring.count / ring.total : 0;
+          const baseRawFraction = ring.total > 0 ? ring.count / ring.total : 0;
+          const addedRawFraction = ring.total > 0 ? (ring.addedCount ?? 0) / ring.total : 0;
+          const previewRawFraction = Math.min(1, baseRawFraction + addedRawFraction);
           const isActive = ring.label === activeRingLabel;
-          // Round caps extend by strokeWidth/2 beyond the arc endpoint.
-          // The active ring is wider (and has a slightly smaller radius), so its
-          // cap tips sit at different angles than the base ring's caps.
-          // We align by angular position: both start and end cap tips should
-          // appear at the same angle as the base (non-boosted) ring.
-          const circumference = 2 * Math.PI * radius;
-          const isPartial = rawFraction > 0 && rawFraction < 1;
-          // Always compensate for the active ring - rotation is invisible once opacity fades
-          const needsCompensation = (isPartial || rawFraction === 0) && width > ringWidth;
-
-          let fraction: number;
-          let startRotation: number;
-          if (needsCompensation) {
-            const baseRadius = radius + (width - ringWidth) / 2;
-            const baseCirc = 2 * Math.PI * baseRadius;
-            // Angular start compensation: align start cap tips
-            const startComp = (width / 2) / circumference - (ringWidth / 2) / baseCirc;
-            // Angular end compensation: fraction that puts end cap tip at same angle
-            const idealFraction = rawFraction + ringWidth / baseCirc - width / circumference;
-            if (idealFraction > 0) {
-              fraction = idealFraction;
-              startRotation = startComp * 360;
-            } else {
-              // Arc too small - just align start, clamp to a dot only if there's real coverage
-              startRotation = startComp * 360;
-              fraction = rawFraction > 0 ? Math.max(0.001, rawFraction - startComp) : 0;
-            }
-          } else if (width > ringWidth) {
-            // Full circle (rawFraction === 1) - rotationally invariant, but keep
-            // the same startRotation so it doesn't visibly snap during transitions
-            const baseRadius = radius + (width - ringWidth) / 2;
-            const baseCirc = 2 * Math.PI * baseRadius;
-            startRotation = ((width / 2) / circumference - (ringWidth / 2) / baseCirc) * 360;
-            fraction = rawFraction;
-          } else {
-            fraction = rawFraction;
-            startRotation = 0;
-          }
+          const baseArc = resolveDisplayedArc(baseRawFraction, width, radius);
+          const previewArc = resolveDisplayedArc(previewRawFraction, width, radius);
+          let fraction = baseArc.fraction;
+          let previewFraction = previewArc.fraction;
+          const startRotation = baseArc.startRotation;
 
           // New rings start at 0 for one frame so CSS transition animates them in
           if (newRingLabelsRef.current.has(ring.label)) {
             fraction = 0;
+            previewFraction = 0;
           }
 
           const isArcHidden = hiddenArcs.has(ring.label);
           const dashoffset = isArcHidden ? 1 : (animated ? 1 - fraction : 1);
-          const shouldFadeOutToZero = rawFraction === 0 && !isArcHidden;
+          const shouldFadeOutToZero = baseRawFraction === 0 && !isArcHidden;
           const arcOpacity = isArcHidden
             ? '0'
             : shouldFadeOutToZero
               ? '0'
               : (isActive ? '1' : '0.82');
           const arcLinecap = isArcHidden ? 'butt' : 'round';
+
+          const previewDashoffset = animated ? 1 - previewFraction : 1;
+          const showPreviewArc = addedRawFraction > 0;
 
           return (
             <g key={ring.label}>
@@ -275,6 +293,34 @@ export default function CoverageRings({
                   transition: freezeTransitions || isSnappingGeometry ? 'none' : trackTransition,
                 }}
               />
+              {showPreviewArc ? (
+                <circle
+                  cx={center}
+                  cy={center}
+                  r={radius}
+                  fill="none"
+                  pathLength={1}
+                  stroke={ADDED_PREVIEW_COLOR}
+                  stroke-opacity={isActive ? '0.95' : '0.82'}
+                  stroke-width={width}
+                  stroke-linecap="round"
+                  stroke-dasharray="1 1"
+                  stroke-dashoffset={previewDashoffset}
+                  style={{
+                    transform: `rotate(${-90 + startRotation}deg)`,
+                    transformOrigin: `${center}px ${center}px`,
+                    transition: freezeTransitions
+                      ? 'none'
+                      : isArcHidden
+                        ? 'none'
+                        : isSnappingAll
+                          ? opacityTransition
+                          : isSnappingGeometry
+                            ? fillTransition
+                            : arcTransition,
+                  }}
+                />
+              ) : null}
               {/* Hidden arcs stay fully collapsed so they can animate back in from zero. */}
               <circle
                 cx={center} cy={center} r={radius}
@@ -297,7 +343,7 @@ export default function CoverageRings({
                       ? opacityTransition
                       : isSnappingGeometry
                       ? fillTransition
-                      : shouldFadeOutToZero
+                  : shouldFadeOutToZero
                         ? zeroFadeOutArcTransition
                         : arcTransition,
                 }}
@@ -323,7 +369,11 @@ export default function CoverageRings({
               onClick={() => onSelectRing?.(ring.label)}
             >
               <span class="inline-block w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: ring.color }} />
-              <span>{ring.label}: {ring.count}/{ring.total}</span>
+              <span>
+                {ring.label}: {ring.count}
+                {(ring.addedCount ?? 0) > 0 ? ` + ${ring.addedCount}` : ''}
+                /{ring.total}
+              </span>
             </div>
           ))}
         </div>

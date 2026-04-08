@@ -20,6 +20,8 @@ interface CoverageLayerTabsProps {
   onSelect: (layer: CoverageLayer) => void;
   snapshots: Array<Pick<LayerCoverageSnapshot<ChecklistBackedReadingEntry>, 'layer' | 'currentlyCoveredCount' | 'totalCoverageCount'>>;
   framed?: boolean;
+  label?: string;
+  metaTextByLayer?: Partial<Record<CoverageLayer, string>>;
 }
 
 export default function CoverageLayerTabs({
@@ -27,17 +29,19 @@ export default function CoverageLayerTabs({
   onSelect,
   snapshots,
   framed = true,
+  label = 'Coverage Layer',
+  metaTextByLayer,
 }: CoverageLayerTabsProps) {
   return (
     <section class={framed ? `${CONTROL_SURFACE_CLASS} p-2.5 sm:p-3` : undefined}>
       <SelectorCardRail
-        label="Coverage Layer"
+        label={label}
         ariaLabel="Coverage layer"
         value={activeLayer}
         options={snapshots.map((snapshot) => ({
           value: snapshot.layer,
           label: COVERAGE_LAYER_META[snapshot.layer].pluralLabel,
-          meta: `${snapshot.currentlyCoveredCount}/${snapshot.totalCoverageCount}`,
+          meta: metaTextByLayer?.[snapshot.layer] ?? `${snapshot.currentlyCoveredCount}/${snapshot.totalCoverageCount}`,
           accentColor: LAYER_ACCENT_COLORS[snapshot.layer],
         }))}
         onChange={onSelect}

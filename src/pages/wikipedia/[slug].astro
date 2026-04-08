@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
-import CoverageRings from '../../components/ui/CoverageRings';
+import ReadingDetailCoveragePreview from '../../components/content/ReadingDetailCoveragePreview';
 import ReadingCheckbox from '../../components/content/ReadingCheckbox';
 import ReadingTimeText from '../../components/content/ReadingTimeText';
 import { sectionUrl, slugify } from '../../utils/helpers';
@@ -153,6 +153,19 @@ const overviewParagraphs = extractParagraphs.length > 0
       </div>
     </header>
 
+    <div class="mt-8">
+      <ReadingDetailCoveragePreview
+        client:load
+        heading="Coverage Preview"
+        description="Your current coverage, with this article's addition highlighted at each layer."
+        dataUrl={`${base}/library-data/wikipedia.json`}
+        checklistKey={wikipediaChecklistKey(article.title)}
+        fallbackRings={rings}
+        size={100}
+        ringWidth={8}
+      />
+    </div>
+
     {overviewHeading && overviewParagraphs.length > 0 && (
       <section class="mt-6 rounded-xl border border-gray-200 bg-gray-50 px-5 py-4">
         <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">{overviewHeading}</h2>
@@ -164,22 +177,12 @@ const overviewParagraphs = extractParagraphs.length > 0
       </section>
     )}
 
-    <div class="mt-8 flex items-start gap-4 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4">
-      <div class="flex-1 min-w-0">
-        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">
-          {sections.length > 0
-            ? `Mapped to ${sections.length} ${sections.length === 1 ? 'Section' : 'Sections'}`
-            : 'No matching sections'}
-        </h2>
-        <p class="mt-1 text-xs text-slate-400">Coverage across the Outline of Knowledge</p>
-      </div>
-      <div class="shrink-0">
-        <CoverageRings client:load rings={rings} size={100} ringWidth={8} />
-      </div>
-    </div>
-
     {sections.length > 0 ? (
       <section class="mt-6">
+        <div class="mb-4">
+          <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">Outline Connections</h2>
+          <p class="mt-1 text-xs text-slate-400">Parts and Sections this article connects to in the Outline of Knowledge.</p>
+        </div>
         {sortedParts.map(([partNumber, partSections]) => (
           <div class="mt-4">
             <h3 class="text-xs font-sans font-semibold uppercase tracking-[0.15em] text-gray-400">

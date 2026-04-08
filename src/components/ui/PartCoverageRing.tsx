@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 import type { PartCoverageSegment } from '../../utils/readingLibrary';
 import { roundedDonutSlicePath } from '../../utils/donutPaths';
 
+const ADDED_PREVIEW_COLOR = '#111827';
+
 export interface PartCoverageRingProps {
   segments: PartCoverageSegment[];
   size?: number;
@@ -104,19 +106,45 @@ export default function PartCoverageRing({
     <div class="relative w-28 h-28 sm:w-32 sm:h-32">
       <svg viewBox={`0 0 ${size} ${size}`} class="h-full w-full">
         <defs>
-          {segments.map((seg, i) => {
-            const fillR = animated ? iR + seg.fraction * (oR - iR) : iR;
+        {segments.map((seg, i) => {
+            const currentFillR = animated ? iR + seg.fraction * (oR - iR) : iR;
+            const previewFillR = animated
+              ? iR + Math.min(1, seg.fraction + (seg.addedFraction ?? 0)) * (oR - iR)
+              : iR;
             return (
-              <clipPath key={i} id={`${clipId}-${i}`}>
-                <circle
-                  cx={cx}
-                  cy={cy}
-                  r={fillR}
-                  style={{
-                    transition: freezeTransitions ? 'none' : 'r 0.8s ease-out',
-                  }}
-                />
-              </clipPath>
+              <g key={i}>
+                <clipPath id={`${clipId}-current-${i}`}>
+                  <circle
+                    cx={cx}
+                    cy={cy}
+                    r={currentFillR}
+                    style={{
+                      transition: freezeTransitions ? 'none' : 'r 0.8s ease-out',
+                    }}
+                  />
+                </clipPath>
+                <mask id={`${clipId}-added-${i}`}>
+                  <rect x="0" y="0" width={size} height={size} fill="black" />
+                  <circle
+                    cx={cx}
+                    cy={cy}
+                    r={previewFillR}
+                    fill="white"
+                    style={{
+                      transition: freezeTransitions ? 'none' : 'r 0.8s ease-out',
+                    }}
+                  />
+                  <circle
+                    cx={cx}
+                    cy={cy}
+                    r={currentFillR}
+                    fill="black"
+                    style={{
+                      transition: freezeTransitions ? 'none' : 'r 0.8s ease-out',
+                    }}
+                  />
+                </mask>
+              </g>
             );
           })}
         </defs>
@@ -149,8 +177,16 @@ export default function PartCoverageRing({
                 d={segPath}
                 fill={seg.colorHex}
                 fill-opacity="0.85"
-                clip-path={`url(#${clipId}-${i})`}
+                clip-path={`url(#${clipId}-current-${i})`}
               />
+              {(seg.addedFraction ?? 0) > 0 ? (
+                <path
+                  d={segPath}
+                  fill={ADDED_PREVIEW_COLOR}
+                  fill-opacity="0.92"
+                  mask={`url(#${clipId}-added-${i})`}
+                />
+              ) : null}
             </g>
           );
         })}

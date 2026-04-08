@@ -1,4 +1,4 @@
-import { divisionUrl, partUrl, sectionUrl } from './helpers';
+import { divisionUrl, partUrl, sectionUrl, type PartMeta } from './helpers';
 import type { ReadingSectionSummary } from './readingData';
 
 export interface ChecklistBackedReadingEntry {
@@ -10,6 +10,7 @@ export interface ChecklistBackedReadingEntry {
 export interface CoverageRing {
   label: string;
   count: number;
+  addedCount?: number;
   total: number;
   color: string;
 }
@@ -439,17 +440,55 @@ export function buildCoverageRingsForCompleted<T extends ChecklistBackedReadingE
     includeSubsections?: boolean;
   } = {}
 ): CoverageRing[] {
+  return buildCoverageRingsPreviewForCompleted(entries, completedChecklistKeys, completedChecklistKeys, options);
+}
+
+export function buildCoverageRingsWithPreview<T extends ChecklistBackedReadingEntry>(
+  entries: T[],
+  checklistState: Record<string, boolean>,
+  previewChecklistKeys: Iterable<string>,
+  options: {
+    includeSubsections?: boolean;
+  } = {}
+): CoverageRing[] {
+  const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
+  const previewCompletedChecklistKeys = new Set(completedChecklistKeys);
+  for (const key of previewChecklistKeys) {
+    previewCompletedChecklistKeys.add(key);
+  }
+
+  return buildCoverageRingsPreviewForCompleted(
+    entries,
+    completedChecklistKeys,
+    previewCompletedChecklistKeys,
+    options,
+  );
+}
+
+function buildCoverageRingsPreviewForCompleted<T extends ChecklistBackedReadingEntry>(
+  entries: T[],
+  completedChecklistKeys: Set<string>,
+  previewCompletedChecklistKeys: Set<string>,
+  options: {
+    includeSubsections?: boolean;
+  } = {}
+): CoverageRing[] {
   const allParts = new Set<number>();
   const allDivisions = new Set<string>();
   const allSections = new Set<string>();
   const allSubsectionKeys = new Set<string>();
   const coveredSubsectionKeys = new Set<string>();
+  const previewCoveredSubsectionKeys = new Set<string>();
   const coveredParts = new Set<number>();
   const coveredDivisions = new Set<string>();
   const coveredSections = new Set<string>();
+  const previewCoveredParts = new Set<number>();
+  const previewCoveredDivisions = new Set<string>();
+  const previewCoveredSections = new Set<string>();
 
   for (const entry of entries) {
     const isChecked = completedChecklistKeys.has(entry.checklistKey);
+    const isPreviewChecked = previewCompletedChecklistKeys.has(entry.checklistKey);
     for (const section of entry.sections) {
       allParts.add(section.partNumber);
       allDivisions.add(section.divisionId);
@@ -458,6 +497,11 @@ export function buildCoverageRingsForCompleted<T extends ChecklistBackedReadingE
         coveredParts.add(section.partNumber);
         coveredDivisions.add(section.divisionId);
         coveredSections.add(section.sectionCode);
+      }
+      if (isPreviewChecked) {
+        previewCoveredParts.add(section.partNumber);
+        previewCoveredDivisions.add(section.divisionId);
+        previewCoveredSections.add(section.sectionCode);
       }
     }
 
@@ -470,18 +514,48 @@ export function buildCoverageRingsForCompleted<T extends ChecklistBackedReadingE
         coveredSubsectionKeys.add(subsectionKey);
       }
     }
+    if (isPreviewChecked) {
+      for (const subsectionKey of entry.progressSubsectionKeys ?? []) {
+        previewCoveredSubsectionKeys.add(subsectionKey);
+      }
+    }
   }
 
   const includeSubsections = options.includeSubsections !== false;
   const totalSubsectionItems = allSubsectionKeys.size;
   const coveredOutlineItems = coveredSubsectionKeys.size;
+  const previewCoveredOutlineItems = previewCoveredSubsectionKeys.size;
 
   return [
-    { label: 'Parts', count: coveredParts.size, total: allParts.size, color: '#6366f1' },
-    { label: 'Divisions', count: coveredDivisions.size, total: allDivisions.size, color: '#8b5cf6' },
-    { label: 'Sections', count: coveredSections.size, total: allSections.size, color: '#a78bfa' },
+    {
+      label: 'Parts',
+      count: coveredParts.size,
+      addedCount: Math.max(0, previewCoveredParts.size - coveredParts.size),
+      total: allParts.size,
+      color: '#6366f1',
+    },
+    {
+      label: 'Divisions',
+      count: coveredDivisions.size,
+      addedCount: Math.max(0, previewCoveredDivisions.size - coveredDivisions.size),
+      total: allDivisions.size,
+      color: '#8b5cf6',
+    },
+    {
+      label: 'Sections',
+      count: coveredSections.size,
+      addedCount: Math.max(0, previewCoveredSections.size - coveredSections.size),
+      total: allSections.size,
+      color: '#a78bfa',
+    },
     ...(includeSubsections && totalSubsectionItems > 0
-      ? [{ label: 'Subsections', count: coveredOutlineItems, total: totalSubsectionItems, color: '#c4b5fd' }]
+      ? [{
+          label: 'Subsections',
+          count: coveredOutlineItems,
+          addedCount: Math.max(0, previewCoveredOutlineItems - coveredOutlineItems),
+          total: totalSubsectionItems,
+          color: '#c4b5fd',
+        }]
       : []),
   ];
 }
@@ -491,8 +565,10 @@ export interface PartCoverageSegment {
   colorHex: string;
   title: string;
   covered: number;
+  addedCovered?: number;
   total: number;
   fraction: number;
+  addedFraction?: number;
   /** Composite score from all layers below the active one, for tiebreaking. */
   depthScore: number;
 }
@@ -504,9 +580,9 @@ const LAYERS_BELOW: Record<CoverageLayer, CoverageLayer[]> = {
   subsection: [],
 };
 
-function groupCoverageByPart(
+function groupCoverageByPartForCompleted(
   entries: ChecklistBackedReadingEntry[],
-  checklistState: Record<string, boolean>,
+  completedChecklistKeys: Set<string>,
   layer: CoverageLayer,
   partNumbers: number[],
 ): { allByPart: Map<number, Set<string>>; coveredByPart: Map<number, Set<string>> } {
@@ -518,7 +594,7 @@ function groupCoverageByPart(
   }
 
   for (const entry of entries) {
-    const isChecked = Boolean(checklistState[entry.checklistKey]);
+    const isChecked = completedChecklistKeys.has(entry.checklistKey);
 
     if (layer === 'subsection') {
       const sectionPartMap = new Map<string, number>();
@@ -548,14 +624,22 @@ export function buildPartCoverageSegments<T extends ChecklistBackedReadingEntry>
   entries: T[],
   checklistState: Record<string, boolean>,
   layer: CoverageLayer,
-  partsMeta: Array<{ partNumber: number; colorHex: string; title: string }>,
+  partsMeta: PartMeta[],
 ): PartCoverageSegment[] {
   const partNumbers = partsMeta.map(pm => pm.partNumber);
-  const { allByPart, coveredByPart } = groupCoverageByPart(entries, checklistState, layer, partNumbers);
+  const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
+  const { allByPart, coveredByPart } = groupCoverageByPartForCompleted(
+    entries,
+    completedChecklistKeys,
+    layer,
+    partNumbers,
+  );
 
   // Compute coverage at all layers below for composite tiebreak score
   const belowLayers = LAYERS_BELOW[layer];
-  const belowData = belowLayers.map(bl => groupCoverageByPart(entries, checklistState, bl, partNumbers));
+  const belowData = belowLayers.map((belowLayer) =>
+    groupCoverageByPartForCompleted(entries, completedChecklistKeys, belowLayer, partNumbers),
+  );
 
   return partsMeta.map((pm) => {
     const all = allByPart.get(pm.partNumber) ?? new Set();
@@ -582,6 +666,70 @@ export function buildPartCoverageSegments<T extends ChecklistBackedReadingEntry>
       covered: count,
       total,
       fraction: total > 0 ? count / total : 0,
+      depthScore,
+    };
+  });
+}
+
+export function buildPartCoverageSegmentsWithPreview<T extends ChecklistBackedReadingEntry>(
+  entries: T[],
+  checklistState: Record<string, boolean>,
+  previewChecklistKeys: Iterable<string>,
+  layer: CoverageLayer,
+  partsMeta: PartMeta[],
+): PartCoverageSegment[] {
+  const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
+  const previewCompletedChecklistKeys = new Set(completedChecklistKeys);
+  for (const key of previewChecklistKeys) {
+    previewCompletedChecklistKeys.add(key);
+  }
+
+  const partNumbers = partsMeta.map((partMeta) => partMeta.partNumber);
+  const { allByPart, coveredByPart } = groupCoverageByPartForCompleted(
+    entries,
+    completedChecklistKeys,
+    layer,
+    partNumbers,
+  );
+  const { coveredByPart: previewCoveredByPart } = groupCoverageByPartForCompleted(
+    entries,
+    previewCompletedChecklistKeys,
+    layer,
+    partNumbers,
+  );
+
+  const belowLayers = LAYERS_BELOW[layer];
+  const belowData = belowLayers.map((belowLayer) =>
+    groupCoverageByPartForCompleted(entries, completedChecklistKeys, belowLayer, partNumbers),
+  );
+
+  return partsMeta.map((partMeta) => {
+    const all = allByPart.get(partMeta.partNumber) ?? new Set();
+    const covered = coveredByPart.get(partMeta.partNumber) ?? new Set();
+    const previewCovered = previewCoveredByPart.get(partMeta.partNumber) ?? new Set();
+    const total = all.size;
+    const count = covered.size;
+    const previewCount = previewCovered.size;
+
+    let depthScore = 0;
+    for (let i = 0; i < belowData.length; i += 1) {
+      const belowLayerData = belowData[i];
+      const belowAll = belowLayerData.allByPart.get(partMeta.partNumber) ?? new Set();
+      const belowCovered = belowLayerData.coveredByPart.get(partMeta.partNumber) ?? new Set();
+      const fraction = belowAll.size > 0 ? belowCovered.size / belowAll.size : 0;
+      const weight = Math.pow(100, belowData.length - i);
+      depthScore += fraction * weight;
+    }
+
+    return {
+      partNumber: partMeta.partNumber,
+      colorHex: partMeta.colorHex,
+      title: partMeta.title,
+      covered: count,
+      addedCovered: Math.max(0, previewCount - count),
+      total,
+      fraction: total > 0 ? count / total : 0,
+      addedFraction: total > 0 ? Math.max(0, previewCount - count) / total : 0,
       depthScore,
     };
   });

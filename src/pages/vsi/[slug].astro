@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
-import CoverageRings from '../../components/ui/CoverageRings';
+import ReadingDetailCoveragePreview from '../../components/content/ReadingDetailCoveragePreview';
 import ReadingCheckbox from '../../components/content/ReadingCheckbox';
 import ReadingTimeText from '../../components/content/ReadingTimeText';
 import { getCollection } from 'astro:content';
@@ -126,6 +126,19 @@ const editionLabel = formatEditionLabel(entry.edition);
       </div>
     </header>
 
+    <div class="mt-8">
+      <ReadingDetailCoveragePreview
+        client:load
+        heading="Coverage Preview"
+        description="Your current coverage, with this book's addition highlighted at each layer."
+        dataUrl={`${base}/library-data/vsi.json`}
+        checklistKey={vsiChecklistKey(entry.title, entry.author, entry.printIsbn, entry.id)}
+        fallbackRings={rings}
+        size={100}
+        ringWidth={8}
+      />
+    </div>
+
     {entry.abstract && (
       <section class="mt-6 rounded-xl border border-gray-200 bg-gray-50 px-5 py-4">
         <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">Abstract</h2>
@@ -143,22 +156,12 @@ const editionLabel = formatEditionLabel(entry.edition);
       </section>
     )}
 
-    <div class="mt-8 flex items-start gap-4 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4">
-      <div class="flex-1 min-w-0">
-        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">
-          {mappedSections.length > 0
-            ? `Appears in ${mappedSections.length} ${mappedSections.length === 1 ? 'Section' : 'Sections'}`
-            : 'No matching sections'}
-        </h2>
-        <p class="mt-1 text-xs text-slate-400">Coverage across the Outline of Knowledge</p>
-      </div>
-      <div class="shrink-0">
-        <CoverageRings client:load rings={rings} size={100} ringWidth={8} />
-      </div>
-    </div>
-
     {mappedSections.length > 0 ? (
     <section class="mt-6">
+      <div class="mb-4">
+        <h2 class="text-sm font-sans font-semibold uppercase tracking-[0.18em] text-gray-500">Outline Connections</h2>
+        <p class="mt-1 text-xs text-slate-400">Parts and Sections this book connects to in the Outline of Knowledge.</p>
+      </div>
       {sortedParts.map(([partNumber, sections]) => (
         <div class="mt-4">
           <h3 class="text-xs font-sans font-semibold uppercase tracking-[0.15em] text-gray-400">
