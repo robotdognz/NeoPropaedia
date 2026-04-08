@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
+import { useReadingSpeedState } from '../../hooks/useReadingSpeedState';
 import VsiCard from './VsiCard';
 import WikipediaCard from './WikipediaCard';
 import IotCard from './IotCard';
@@ -45,6 +46,10 @@ import {
 } from '../../utils/iotOutlineFilter';
 import { classifyMappingPrecision, mappingPrecisionFlag } from '../../utils/mappingPrecision';
 import { recommendationFlag } from '../../utils/recommendationCardMeta';
+import {
+  estimateReadingMinutes,
+  formatEstimatedMinutes,
+} from '../../utils/readingSpeed';
 import type {
   SectionReadingRecommendationsPayload,
 } from '../../utils/sectionReadingContext';
@@ -58,6 +63,7 @@ interface ActiveSectionRecommendationPanel {
   totalCount: number;
   matchedCount: number;
   visibleCount: number;
+  visibleTimeLabel?: string;
   toolbarLabel?: string;
   toolbarHref?: string;
   selectionNotice?: string | null;
@@ -130,12 +136,16 @@ function selectionSummaryLine(
   return `Showing ${matchedCount} for ${outlinePath}`;
 }
 
-function recommendationCountSubtitle(visibleCount: number, totalCount: number): string {
+function recommendationCountSubtitle(
+  visibleCount: number,
+  totalCount: number,
+  visibleTimeLabel?: string,
+): string {
   const noun = totalCount === 1 ? 'recommendation' : 'recommendations';
   if (visibleCount === totalCount) {
-    return `${totalCount} ${noun}`;
+    return `${totalCount} ${noun}${visibleTimeLabel ? ` · ${visibleTimeLabel} total` : ''}`;
   }
-  return `Showing ${visibleCount} of ${totalCount} ${noun}`;
+  return `Showing ${visibleCount} of ${totalCount} ${noun}${visibleTimeLabel ? ` · ${visibleTimeLabel} total` : ''}`;
 }
 
 function macropaediaCardRationale(selection: OutlineSelectionDetail | null): string {
@@ -143,6 +153,18 @@ function macropaediaCardRationale(selection: OutlineSelectionDetail | null): str
     return 'This article is referenced directly from this Section. Britannica is mapped at section level here, so selecting a narrower outline topic does not narrow its scope.';
   }
   return 'This article is referenced directly from this Section, so it serves as a broader companion reading for the subject as a whole.';
+}
+
+function sumEstimatedMinutes(
+  values: Array<number | undefined>,
+): number | undefined {
+  if (!values.length) return undefined;
+  let totalMinutes = 0;
+  for (const value of values) {
+    if (!value) return undefined;
+    totalMinutes += value;
+  }
+  return totalMinutes;
 }
 
 export default function SectionReadingRecommendations({
@@ -169,6 +191,7 @@ export default function SectionReadingRecommendations({
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
   const [hideChecked, setHideChecked] = useState(() => getHideCheckedReadings());
   const panelRef = useRef<HTMLElement>(null);
+  const readingSpeedWpm = useReadingSpeedState();
   const activeType = resolveAvailableReadingType(selectedType, availableTypes);
 
   useEffect(() => {
@@ -238,6 +261,9 @@ export default function SectionReadingRecommendations({
         totalCount: scoredMappings.length,
         matchedCount: visibleMappings.length,
         visibleCount: displayMappings.length,
+        visibleTimeLabel: formatEstimatedMinutes(
+          sumEstimatedMinutes(displayMappings.map((mapping) => estimateReadingMinutes(mapping.wordCount, readingSpeedWpm))),
+        ),
         emptyMessage: filteredEmptyMessage(
           READING_TYPE_UI_META.vsi.label,
           visibleMappings.length,
@@ -300,6 +326,9 @@ export default function SectionReadingRecommendations({
         totalCount: levelFiltered.length,
         matchedCount: visibleArticles.length,
         visibleCount: displayArticles.length,
+        visibleTimeLabel: formatEstimatedMinutes(
+          sumEstimatedMinutes(displayArticles.map((article) => estimateReadingMinutes(article.wordCount, readingSpeedWpm))),
+        ),
         emptyMessage: filteredEmptyMessage(
           READING_TYPE_UI_META.wikipedia.label,
           visibleArticles.length,
@@ -360,6 +389,12 @@ export default function SectionReadingRecommendations({
         totalCount: iotEpisodes.length,
         matchedCount: visibleEpisodes.length,
         visibleCount: displayEpisodes.length,
+        visibleTimeLabel: formatEstimatedMinutes(
+          sumEstimatedMinutes(displayEpisodes.map((episode) => (
+            episode.durationSeconds ? episode.durationSeconds / 60 : undefined
+          ))),
+          false,
+        ),
         emptyMessage: filteredEmptyMessage(
           READING_TYPE_UI_META.iot.label,
           visibleEpisodes.length,
@@ -473,6 +508,7 @@ export default function SectionReadingRecommendations({
     vsiMappings,
     wikiArticles,
     wikiLevel,
+    readingSpeedWpm,
   ]);
 
   if (!availableTypes.length) return null;
@@ -509,7 +545,11 @@ export default function SectionReadingRecommendations({
               {headerMeta.title}
             </h2>
             <p class="mt-1 text-xs font-medium text-amber-900/70">
-              {recommendationCountSubtitle(headerMeta.visibleCount, headerMeta.totalCount)}
+              {recommendationCountSubtitle(
+                headerMeta.visibleCount,
+                headerMeta.totalCount,
+                headerMeta.visibleTimeLabel,
+              )}
             </p>
           </div>
           {headerMeta.toolbarLabel ? (

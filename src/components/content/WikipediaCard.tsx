@@ -1,7 +1,8 @@
 import { h } from 'preact';
+import { useReadingSpeedState } from '../../hooks/useReadingSpeedState';
 import { slugify } from '../../utils/helpers';
 import { linkifyRationaleReferences } from '../../utils/rationaleLinks';
-import { formatWikipediaWordCount } from '../../utils/wikipediaCatalog';
+import { formatEstimatedReadingTime } from '../../utils/readingSpeed';
 import type {
   RecommendationCardBadge,
   RecommendationCardFlag,
@@ -37,7 +38,8 @@ export default function WikipediaCard({
   checked,
   onCheckedChange,
 }: WikipediaCardProps) {
-  const metadata = formatWikipediaWordCount(wordCount) ?? null;
+  const readingSpeedWpm = useReadingSpeedState();
+  const metadata = formatEstimatedReadingTime(wordCount, readingSpeedWpm) ?? null;
 
   return (
     <ReadingRecommendationCard

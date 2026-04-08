@@ -1,8 +1,9 @@
 import { h } from 'preact';
+import { useReadingSpeedState } from '../../hooks/useReadingSpeedState';
 import { formatEditionLabel } from '../../utils/readingData';
 import { slugify } from '../../utils/helpers';
 import { linkifyRationaleReferences } from '../../utils/rationaleLinks';
-import { formatVsiWordCount } from '../../utils/vsiCatalog';
+import { formatEstimatedReadingTime } from '../../utils/readingSpeed';
 import type {
   RecommendationCardBadge,
   RecommendationCardFlag,
@@ -42,10 +43,11 @@ export default function VsiCard({
   checked,
   onCheckedChange,
 }: VsiCardProps) {
+  const readingSpeedWpm = useReadingSpeedState();
   const editionLabel = formatEditionLabel(edition);
   const metadata = [
     author,
-    formatVsiWordCount(wordCount),
+    formatEstimatedReadingTime(wordCount, readingSpeedWpm),
     editionLabel,
     publicationYear ? String(publicationYear) : null,
   ].filter(Boolean).join(' · ');

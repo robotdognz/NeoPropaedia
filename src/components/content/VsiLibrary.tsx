@@ -1,11 +1,16 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
+import { useReadingSpeedState } from '../../hooks/useReadingSpeedState';
 import { writeChecklistState } from '../../utils/readingChecklist';
 import {
   formatEditionLabel,
   type VsiAggregateEntry,
 } from '../../utils/readingData';
-import { formatVsiPageCount, formatVsiWordCount } from '../../utils/vsiCatalog';
+import {
+  estimateReadingMinutes,
+  formatEstimatedReadingTime,
+} from '../../utils/readingSpeed';
+import { formatVsiPageCount } from '../../utils/vsiCatalog';
 import { slugify, type PartMeta } from '../../utils/helpers';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
 import { useHashAnchorCorrection } from '../../hooks/useHashAnchorCorrection';
@@ -67,13 +72,13 @@ function matchesQuery(entry: VsiAggregateEntry, query: string): boolean {
   return haystack.includes(query);
 }
 
-function formatMetadata(entry: VsiAggregateEntry): string {
+function formatMetadata(entry: VsiAggregateEntry, readingSpeedWpm: number): string {
   const editionLabel = formatEditionLabel(entry.edition);
   return [
     entry.author,
     entry.number ? `No. ${entry.number}` : null,
     formatVsiPageCount(entry.pageCount),
-    formatVsiWordCount(entry.wordCount),
+    formatEstimatedReadingTime(entry.wordCount, readingSpeedWpm),
     editionLabel,
     entry.publicationYear ? String(entry.publicationYear) : null,
   ]
@@ -142,6 +147,7 @@ function precisionBadgeText(entry: VsiAggregateEntry): string | null {
 }
 
 export default function VsiLibrary({ entries, baseUrl, partsMeta }: VsiLibraryProps) {
+  const readingSpeedWpm = useReadingSpeedState();
   const checklistState = useReadingChecklistState();
   useHashAnchorCorrection('vsi-library');
   const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
@@ -279,7 +285,7 @@ export default function VsiLibrary({ entries, baseUrl, partsMeta }: VsiLibraryPr
           getHref={(step) => `${baseUrl}/vsi/${slugify(step.title)}`}
           renderMeta={(step) => (
             <>
-              <p class="mt-1 text-sm text-gray-600">{formatMetadata(step)}</p>
+              <p class="mt-1 text-sm text-gray-600">{formatMetadata(step, readingSpeedWpm)}</p>
               {activeLayer === 'subsection' && precisionBadgeText(step) ? (
                 <p class="mt-1 text-xs text-gray-500">{precisionBadgeText(step)}</p>
               ) : null}
@@ -291,6 +297,7 @@ export default function VsiLibrary({ entries, baseUrl, partsMeta }: VsiLibraryPr
           coverageLayer={activeLayer}
           coverageUnitSingular={layerMeta.label}
           coverageUnitPlural={layerMeta.pluralLabel}
+          getEstimatedMinutes={(step) => estimateReadingMinutes(step.wordCount, readingSpeedWpm)}
           emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
           baseUrl={baseUrl}
         />
@@ -380,7 +387,7 @@ export default function VsiLibrary({ entries, baseUrl, partsMeta }: VsiLibraryPr
             <div class="mt-6 space-y-4">
               {visibleEntries.map((entry) => {
                 const isChecked = Boolean(checklistState[entry.checklistKey]);
-                const metadata = formatMetadata(entry);
+                const metadata = formatMetadata(entry, readingSpeedWpm);
 
                 return (
                   <article key={entry.checklistKey} class="rounded-xl border border-gray-200 bg-gray-50/50 p-5">

@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
+import { useReadingSpeedState } from '../../hooks/useReadingSpeedState';
 import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
 import { writeChecklistState } from '../../utils/readingChecklist';
 import { fetchHomepageCoverageSource } from '../../utils/homepageCoverageSource';
@@ -29,7 +30,14 @@ import {
   selectDefaultCoverageLayer,
   type CoverageLayer,
 } from '../../utils/readingLibrary';
+import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
+import {
+  estimateReadingMinutes,
+  formatEstimatedMinutes,
+  formatEstimatedReadingTime,
+} from '../../utils/readingSpeed';
 import { filterWikipediaLevel } from '../../utils/wikipediaLevel';
+import { formatEditionLabel } from '../../utils/readingData';
 import ReadingSpreadPath from './ReadingSpreadPath';
 import CoverageRings from '../ui/CoverageRings';
 import PartCoverageRing from '../ui/PartCoverageRing';
@@ -81,6 +89,46 @@ function emptyRecommendationMessage(source: HomepageCoverageSource, layer: Cover
   }
 
   return `No unread ${source.itemSingular} adds any further ${coverageLayerLabel(layer, 1)} coverage right now.`;
+}
+
+function formatHomepageEntryMeta(
+  type: ReadingType,
+  entry: HomepageCoverageSource['entries'][number],
+  readingSpeedWpm: number,
+): string | undefined {
+  switch (type) {
+    case 'vsi':
+      return [
+        entry.author,
+        formatEstimatedReadingTime(entry.wordCount, readingSpeedWpm),
+        formatEditionLabel(entry.edition),
+        entry.publicationYear ? String(entry.publicationYear) : null,
+      ].filter(Boolean).join(' · ') || undefined;
+    case 'wikipedia':
+      return [
+        entry.category,
+        formatEstimatedReadingTime(entry.wordCount, readingSpeedWpm),
+      ].filter(Boolean).join(' · ') || undefined;
+    case 'iot':
+      return formatIotEpisodeMeta(entry) || undefined;
+    case 'macropaedia':
+    default:
+      return undefined;
+  }
+}
+
+function estimateHomepageEntryMinutes(
+  type: ReadingType,
+  entry: HomepageCoverageSource['entries'][number],
+  readingSpeedWpm: number,
+): number | undefined {
+  if (type === 'iot') {
+    return entry.durationSeconds && entry.durationSeconds > 0
+      ? entry.durationSeconds / 60
+      : undefined;
+  }
+
+  return estimateReadingMinutes(entry.wordCount, readingSpeedWpm);
 }
 
 function useStagedCoverageDisplay(
@@ -149,6 +197,7 @@ export default function HomepageCoverageExplorer({
   showHeader = true,
   framed = true,
 }: HomepageCoverageExplorerProps) {
+  const readingSpeedWpm = useReadingSpeedState();
   const checklistState = useReadingChecklistState();
   const wikiLevel = useWikipediaLevel();
   const [selectedType, setSelectedType] = useState<ReadingType>('vsi');
@@ -352,6 +401,78 @@ export default function HomepageCoverageExplorer({
     setSelectedLayer(layer);
     setCoverageLayerPreference(layer);
   };
+
+  const completedSourceSummary = useMemo(() => {
+    if (!filteredSource) return null;
+
+    let completedCount = 0;
+    let timedCount = 0;
+    let totalMinutes = 0;
+
+    for (const entry of filteredSource.entries) {
+      if (!checklistState[entry.checklistKey]) continue;
+      completedCount += 1;
+
+      if (filteredSource.type === 'iot') {
+        if (!entry.durationSeconds || entry.durationSeconds <= 0) continue;
+        timedCount += 1;
+        totalMinutes += entry.durationSeconds / 60;
+        continue;
+      }
+
+      const estimatedMinutes = estimateReadingMinutes(entry.wordCount, readingSpeedWpm);
+      if (!estimatedMinutes) continue;
+      timedCount += 1;
+      totalMinutes += estimatedMinutes;
+    }
+
+    return {
+      completedCount,
+      timedCount,
+      totalMinutes,
+    };
+  }, [checklistState, filteredSource, readingSpeedWpm]);
+
+  const completedViewStatistics = useMemo(() => {
+    if (!filteredSource || !completedSourceSummary) return null;
+
+    if (filteredSource.type === 'macropaedia') {
+      return (
+        <p class="text-xs leading-5 text-slate-500">
+          Time summaries for Britannica will appear here once article-length data is available.
+        </p>
+      );
+    }
+
+    if (completedSourceSummary.completedCount === 0) {
+      return (
+        <p class="text-xs leading-5 text-slate-500">
+          No completed {READING_TYPE_LABELS[filteredSource.type]} items in this view yet.
+        </p>
+      );
+    }
+
+    const timeLabel = formatEstimatedMinutes(
+      completedSourceSummary.totalMinutes,
+      filteredSource.type !== 'iot',
+    );
+
+    if (!timeLabel || completedSourceSummary.timedCount === 0) {
+      return (
+        <p class="text-xs leading-5 text-slate-500">
+          {completedSourceSummary.completedCount} {completedSourceSummary.completedCount === 1 ? 'item' : 'items'} completed here, but time data is not available yet.
+        </p>
+      );
+    }
+
+    return (
+      <p class="text-xs leading-5 text-slate-500">
+        <span class="font-medium text-slate-700">{timeLabel}</span>{' '}
+        spent across {completedSourceSummary.completedCount} {completedSourceSummary.completedCount === 1 ? 'item' : 'items'} in {READING_TYPE_LABELS[filteredSource.type]}.
+      </p>
+    );
+  }, [completedSourceSummary, filteredSource]);
+
   const selectionStrip = (
     <ReadingSelectionStrip
       readingTypeValue={selectedType}
@@ -419,7 +540,9 @@ export default function HomepageCoverageExplorer({
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </summary>
-                <div class={`mt-2 grid gap-3 ${partSegments.length > 0 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
+                <div class="mt-2 space-y-3">
+                  {completedViewStatistics}
+                  <div class={`grid gap-3 ${partSegments.length > 0 ? 'grid-cols-1 sm:grid-cols-2' : 'grid-cols-1'}`}>
                   <div class="space-y-1 text-xs text-slate-500">
                     {coverageRings.map((ring) => (
                       <div
@@ -472,6 +595,7 @@ export default function HomepageCoverageExplorer({
                       </div>
                     );
                   })()}
+                  </div>
                 </div>
               </details>
             </section>
@@ -487,15 +611,18 @@ export default function HomepageCoverageExplorer({
               checklistState={checklistState}
               onCheckedChange={writeChecklistState}
               getHref={(step) => step.href}
-              renderMeta={(step) =>
-                step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null
-              }
+              renderMeta={(step) => {
+                const meta = formatHomepageEntryMeta(filteredSource.type, step, readingSpeedWpm);
+                return meta ? <p class="mt-1 text-sm text-gray-600">{meta}</p> : null;
+              }}
               checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
               itemSingular={filteredSource.itemSingular}
               itemPlural={filteredSource.itemPlural}
               coverageLayer={activeLayer}
               coverageUnitSingular={coverageLayerLabel(activeLayer, 1)}
               coverageUnitPlural={coverageLayerLabel(activeLayer, 2)}
+              getEstimatedMinutes={(step) => estimateHomepageEntryMinutes(filteredSource.type, step, readingSpeedWpm)}
+              estimatedTimeApproximate={filteredSource.type !== 'iot'}
               emptyMessage={emptyRecommendationMessage(filteredSource, activeLayer, isLayerComplete)}
               baseUrl={baseUrl}
               sectionLinksVariant="chips"

@@ -1,9 +1,11 @@
 ---
 import ProgressBackup from './ProgressBackup';
+import ReadingSpeedPreference from './ReadingSpeedPreference';
 import { getCollection } from 'astro:content';
 import iotCatalog from '../../data/iot-catalog.json';
 import wikipediaCatalog from '../../data/wikipedia-catalog.json';
 import { visibleVsiCatalogEntries } from '../../utils/vsiCatalog';
+import { getWikipediaReadingSampleParagraph } from '../../utils/wikipediaExtract';
 
 interface Props {
   heading: string;
@@ -31,171 +33,300 @@ function formatSourceDate(value?: string | null): string | null {
 const vsiFetchedLabel = formatSourceDate(vsiCatalogEntries[0]?.data.fetchedAt);
 const iotFetchedLabel = formatSourceDate(iotCatalog.fetchedAt);
 const wikipediaFetchedLabel = formatSourceDate(wikipediaCatalog.fetchedAt);
+
+const readingSpeedSamples = wikipediaCatalog.articles
+  .flatMap((article) => {
+    const sampleParagraph = getWikipediaReadingSampleParagraph(article.extract);
+    if (!sampleParagraph) return [];
+
+    return [{
+      title: article.displayTitle || article.title,
+      paragraph: sampleParagraph.paragraph,
+      wordCount: sampleParagraph.wordCount,
+    }];
+  })
+  .slice(0, 80);
+
+const quickLinks = [
+  { href: '#getting-started', label: 'Getting Started' },
+  { href: '#modes', label: 'Homepage Modes' },
+  { href: '#recommendations', label: 'Recommendations' },
+  { href: '#your-reading-progress', label: 'Progress' },
+  { href: '#sources', label: 'Sources' },
+];
+
+const quickStartSteps = [
+  {
+    step: '1',
+    title: 'Pick a way in',
+    body: 'Use Full Coverage for unrestricted breadth, Guided Coverage to keep that same coverage logic but constrain it to a chosen Part or overlap, or Outline if you already know where you want to browse.',
+  },
+  {
+    step: '2',
+    title: 'Choose a source',
+    body: 'Switch between Oxford VSI, Wikipedia, BBC In Our Time, and Britannica. The site remembers the source you last used.',
+  },
+  {
+    step: '3',
+    title: 'Mark things done',
+    body: 'Checklist state is used throughout the app. Completed items drop out of coverage paths and recommendation lists automatically.',
+  },
+];
+
+const modeCards = [
+  {
+    eyebrow: 'Full Coverage',
+    title: 'Work outward from what you have not covered yet',
+    body: 'This mode builds a coverage-first path across the whole outline and keeps recalculating the next best unread item for the selected source.',
+    bestFor: 'Best for: steady breadth and long reading plans.',
+  },
+  {
+    eyebrow: 'Guided Coverage',
+    title: 'Guide full-outline coverage through a chosen Part or overlap',
+    body: 'Rotate the ring to bring a Part to the top. That top Part constrains which readings are considered. Move a Part to the centre if you want to constrain the pool further to readings shared between the centre and top Parts.',
+    bestFor: 'Best for: maintaining broad coverage while steering it through one Part, or through the overlap between two.',
+  },
+  {
+    eyebrow: 'Outline',
+    title: 'Browse Part, Division, and Section pages directly',
+    body: 'Move through the Propaedia hierarchy itself, read the attached essays and headnotes, and work with recommendation panels tied to the exact outline area you are on.',
+    bestFor: 'Best for: deliberate topic-by-topic navigation.',
+  },
+];
+
+const pageGuideCards = [
+  {
+    title: 'Part and Division pages',
+    body: 'These are overview pages. They roll up Section-level matches into broader recommendation lists and are useful when you want a medium-grained reading list.',
+  },
+  {
+    title: 'Section pages',
+    body: 'These are the most precise recommendation pages. Clicking inside the outline tree narrows the list to a subsection or branch and re-ranks the matches inside that scope.',
+  },
+  {
+    title: 'Reading pages',
+    body: 'Book, article, and episode pages show their place in the outline, let you mark them done, and link back into the parts of the Propaedia they help cover.',
+  },
+];
+
+const recommendationNotes = [
+  {
+    title: 'How relevance works',
+    body: 'Recommendations are scored from title matches, mapped outline paths, subject terms, keywords, and overlap with the Section title and outline language. Percentages are relative within the current view, not global scores.',
+  },
+  {
+    title: 'How Full Coverage works',
+    body: 'Full Coverage asks a narrower question: which unread item adds the most currently uncovered Parts, Divisions, Sections, or Subsections for the selected source? It is not just showing the highest raw relevance score.',
+  },
+  {
+    title: 'How Part and Division rollups work',
+    body: 'Those recommendation panels are built from Section-level matches already attached to the outline. A reading rises when it covers more of the local structure and spreads that coverage more evenly.',
+  },
+];
+
+const sourceCards = [
+  {
+    title: 'Oxford Very Short Introductions',
+    meta: `${vsiTitleCount} titles${vsiFetchedLabel ? ` · fetched on ${vsiFetchedLabel}` : ''}`,
+    body: 'Short book-length introductions mapped to Sections and outline paths. Book pages show edition and release-year metadata when available.',
+  },
+  {
+    title: 'BBC In Our Time',
+    meta: `${iotEpisodeCount} episodes${iotFetchedLabel ? ` · fetched on ${iotFetchedLabel}` : ''}`,
+    body: 'Mapped radio episodes and programme pages. These use actual episode runtime, so listening-time estimates are exact rather than inferred.',
+  },
+  {
+    title: 'Wikipedia Vital Articles',
+    meta: `${wikipediaArticleCount} articles${wikipediaFetchedLabel ? ` · last fetched on ${wikipediaFetchedLabel}` : ''}`,
+    body: 'Mapped articles from Wikipedia’s curated Vital Articles list, with level filtering and estimated reading times based on local word-count metadata.',
+  },
+  {
+    title: 'Britannica',
+    meta: 'Original Propaedia references',
+    body: 'The historical Britannica references preserved from the printed Propaedia pairing. Word-count-based time estimates will join this source once that metadata is ready.',
+  },
+];
+
+const practicalNotes = [
+  'Progress is stored locally in your browser. Export a backup if you want to carry it between devices or browsers.',
+  'Reading-type selectors share a stored default across the app, so the same source can stay selected while you move between modes and outline pages.',
+  'Wikipedia level is separate from reading type. If Wikipedia is selected, the current level affects which articles appear in coverage views and recommendation paths.',
+  'Offline support keeps core pages available automatically. A full offline copy is optional and can be refreshed from the Offline page.',
+];
 ---
 
-<div class="max-w-3xl mx-auto px-4 pt-4 pb-12 sm:pt-6">
-  <h1 class="text-4xl font-serif font-bold text-gray-900 mb-8">{heading}</h1>
-
-  <div class="prose-propaedia">
-    <h2>The Propaedia</h2>
-    <p>
-      The <em>Propaedia</em>, or "Outline of Knowledge," is one of three parts of the
-      <em>Encyclopaedia Britannica</em> (15th edition). Created under the direction of
-      Mortimer J. Adler, it provides a systematic classification of all human knowledge
-      organized into <strong>10 Parts</strong>, <strong>41 Divisions</strong>, and
-      <strong>177 Sections</strong>.
+<div class="mx-auto max-w-5xl px-4 pt-4 pb-12 sm:pt-6">
+  <header class="rounded-2xl border border-slate-200 bg-white px-5 py-6 shadow-sm sm:px-6 sm:py-7">
+    <h1 class="text-4xl font-serif font-bold text-slate-900">{heading}</h1>
+    <p class="mt-3 max-w-3xl text-base leading-7 text-slate-600">
+      Propaedia is an interactive reading guide built on the Britannica Propaedia outline.
+      Use this guide to see how the three homepage modes differ, how recommendations are ranked,
+      what the reading tools do, and where your progress is stored.
     </p>
-    <p>
-      Unlike a traditional encyclopedia arranged alphabetically, the Propaedia presents
-      knowledge hierarchically - showing how subjects relate to one another within the
-      broader landscape of human understanding.
-    </p>
+    <nav class="mt-5 flex flex-wrap gap-2">
+      {quickLinks.map((link) => (
+        <a
+          href={link.href}
+          class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm font-medium text-slate-600 transition-colors hover:border-slate-300 hover:bg-slate-100 hover:text-slate-800"
+        >
+          {link.label}
+        </a>
+      ))}
+    </nav>
+  </header>
 
-    <h2>This Web Edition</h2>
-    <p>
-      This site turns the Propaedia into an interactive reading guide. The original
-      knowledge hierarchy is preserved, but every Section can now open four different
-      reading collections:
-    </p>
-    <ul>
-      <li><strong>Oxford Very Short Introductions</strong> - curated books matched to Sections and outline paths</li>
-      <li><strong>BBC In Our Time</strong> - mapped radio episodes and programme pages attached to the same outline</li>
-      <li><strong>Wikipedia Vital Articles</strong> - mapped articles from Wikipedia's curated list of essential topics</li>
-      <li><strong>Macropaedia articles</strong> - the original Britannica reading references from the print edition</li>
-    </ul>
-    <p>
-      Each Section page also includes the original hierarchical subject outline with
-      cross-references linking related Sections across the ten Parts.
-    </p>
+  <section id="getting-started" class="mt-6">
+    <div class="mb-4">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Getting Started</p>
+      <h2 class="mt-2 text-2xl font-serif font-bold text-slate-900">The shortest way to use the site well</h2>
+    </div>
+    <div class="grid gap-4 md:grid-cols-3">
+      {quickStartSteps.map((item) => (
+        <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-amber-100 text-sm font-semibold text-amber-800">
+              {item.step}
+            </span>
+            <h3 class="font-serif text-xl text-slate-900">{item.title}</h3>
+          </div>
+          <p class="mt-3 text-sm leading-6 text-slate-600">{item.body}</p>
+        </article>
+      ))}
+    </div>
+  </section>
 
-    <h2>Homepage Modes</h2>
-    <p>
-      The homepage now has three different ways into the outline, each built for a
-      different style of study:
-    </p>
-    <ul>
-      <li><strong>Full Coverage</strong> - a coverage-first path that suggests the next unread book, article, or episode based on how much new territory it opens across the outline</li>
-      <li><strong>Guided Coverage</strong> - Adler's circle navigator, where you can centre one Part, compare it with another, and surface bridge readings that connect both</li>
-      <li><strong>Outline</strong> - direct browsing by Part, Division, and Section, with essays and recommendation panels tied to the exact outline area you are exploring</li>
-    </ul>
-    <p>
-      In the Guided Coverage mode, when one Part is placed at the centre and another is
-      rotated to the top, the panel below the circle shows how they connect through
-      cross-referenced Sections and through <strong>bridge readings</strong> that were
-      independently recommended in both Parts.
-    </p>
+  <section id="modes" class="mt-8">
+    <div class="mb-4">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Homepage Modes</p>
+      <h2 class="mt-2 text-2xl font-serif font-bold text-slate-900">Three different ways into the outline</h2>
+    </div>
+    <div class="grid gap-4 lg:grid-cols-3">
+      {modeCards.map((card) => (
+        <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">{card.eyebrow}</p>
+          <h3 class="mt-2 font-serif text-2xl leading-tight text-slate-900">{card.title}</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">{card.body}</p>
+          <p class="mt-4 text-sm font-medium text-slate-700">{card.bestFor}</p>
+        </article>
+      ))}
+    </div>
+  </section>
 
-    <h2>Reading Tools</h2>
-    <p>
-      The reading-type selectors across the site share a stored default reading type
-      (Oxford VSI, Wikipedia, BBC In Our Time, or Macropaedia), so the same source can
-      stay selected as you move between the outline and recommendation views.
-    </p>
-    <p>
-      Section, Division, and Part pages each have their own reading-type selector inside
-      the recommendation panel, and the homepage has separate selectors in Full Coverage
-      and Guided Coverage. Changing any of these selectors updates the shared default, so
-      the same reading type is shown first elsewhere whenever it is available.
-    </p>
-    <p>
-      A <strong>reading checklist</strong> lets you mark books, articles, and episodes as done.
-      Progress is saved locally in your browser and reflected across the site - checked
-      items are excluded from homepage paths and bridge recommendations, and checkboxes
-      appear on individual reading pages.
-    </p>
+  <section class="mt-8">
+    <div class="mb-4">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Page Guide</p>
+      <h2 class="mt-2 text-2xl font-serif font-bold text-slate-900">What each type of page is for</h2>
+    </div>
+    <div class="grid gap-4 md:grid-cols-3">
+      {pageGuideCards.map((card) => (
+        <article class="rounded-2xl border border-slate-200 bg-slate-50/70 p-5">
+          <h3 class="font-serif text-xl text-slate-900">{card.title}</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">{card.body}</p>
+        </article>
+      ))}
+    </div>
+  </section>
 
-    <h2>Reading Recommendations</h2>
-    <p>
-      The Oxford VSI, Wikipedia, and BBC In Our Time recommendations are matched to Sections
-      using build-time scoring plus AI-assisted mappings. Macropaedia recommendations come
-      from the original Britannica references already attached to the Propaedia. Each
-      mapped recommendation includes a rationale explaining why it was matched. Clicking
-      an outline item filters the list to that branch of the outline and re-ranks the
-      matched items inside the current selection.
-    </p>
+  <section id="recommendations" class="mt-8">
+    <div class="mb-4">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Recommendations</p>
+      <h2 class="mt-2 text-2xl font-serif font-bold text-slate-900">Why items show up where they do</h2>
+      <p class="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
+        Oxford VSI, Wikipedia, and BBC In Our Time recommendations are matched to Sections using build-time scoring and mapped outline data. Britannica recommendations come from the original Propaedia references.
+      </p>
+    </div>
+    <div class="grid gap-4 lg:grid-cols-3">
+      {recommendationNotes.map((item) => (
+        <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h3 class="font-serif text-xl text-slate-900">{item.title}</h3>
+          <p class="mt-3 text-sm leading-6 text-slate-600">{item.body}</p>
+        </article>
+      ))}
+    </div>
 
-    <details class="mt-2 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3">
-      <summary class="cursor-pointer text-sm font-semibold text-gray-700">How relevance is calculated</summary>
-      <div class="mt-3 space-y-3 text-sm text-gray-600">
-        <p>
-          Each book, article, or episode receives a score based on how closely it relates
-          to the Section you are viewing. The scoring gives the strongest weight to direct
-          title matches, then adds weight for subject terms, keywords, mapped outline paths,
-          and overlap with the language used in the Section title and outline.
-        </p>
-        <p>
-          When you click an outline item to filter the list, the scoring also considers the
-          sub-topics beneath that item. A resource that touches several child topics ranks
-          above one that only matches a narrow fragment of the current branch.
-        </p>
-        <p>
-          The relevance percentage shown on each card is relative - the best-scoring
-          resource in the current view is always shown as 100%, and the others are
-          scaled proportionally.
-        </p>
-      </div>
-    </details>
+    <div class="mt-4 space-y-3">
+      <details class="rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3">
+        <summary class="cursor-pointer text-sm font-semibold text-slate-700">
+          More detail on Section filtering and relative scores
+        </summary>
+        <div class="mt-3 space-y-3 text-sm leading-6 text-slate-600">
+          <p>
+            On Section pages, clicking an outline item narrows the list to that branch and re-ranks matches inside the selection. A reading that touches several child topics ranks above one that only hits a narrow fragment.
+          </p>
+          <p>
+            The percentage shown on recommendation cards is relative to the strongest item in the current list. It is there to compare the visible cards against each other, not to claim a universal score across the site.
+          </p>
+        </div>
+      </details>
 
-    <details class="mt-3 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3">
-      <summary class="cursor-pointer text-sm font-semibold text-gray-700">How Full Coverage recommendations work</summary>
-      <div class="mt-3 space-y-3 text-sm text-gray-600">
-        <p>
-          The Full Coverage tool ignores items you have already marked done and asks a
-          coverage-first question: which unread item adds the largest number of currently
-          uncovered Parts, Divisions, Sections, or Subsections for the selected reading type?
-        </p>
-        <p>
-          After each suggested step, the covered area is updated and the next step is
-          recalculated from what remains. If two items add the same amount of new coverage,
-          the tie is broken in favour of the one whose new coverage is spread more widely
-          across the outline, and then the one attached to more Sections overall.
-        </p>
-      </div>
-    </details>
+      <details class="rounded-xl border border-slate-200 bg-slate-50/70 px-4 py-3">
+        <summary class="cursor-pointer text-sm font-semibold text-slate-700">
+          More detail on coverage paths and bridge readings
+        </summary>
+        <div class="mt-3 space-y-3 text-sm leading-6 text-slate-600">
+          <p>
+            Full Coverage keeps recalculating from unread items only. If two items open the same amount of new territory, the tie breaks toward the one whose coverage is spread more widely across the outline, and then toward the one attached to more Sections overall.
+          </p>
+          <p>
+            Guided Coverage keeps the same coverage-first logic as Full Coverage, but it narrows the candidate pool first. With no centre Part, it ranks readings attached to the Part at the top of the circle by how much new territory they open across the wider outline. Once a Part is moved to the centre, it switches to readings shared by the centre and top Parts and ranks that narrower pool the same way.
+          </p>
+        </div>
+      </details>
+    </div>
+  </section>
 
-    <details class="mt-3 rounded-lg border border-gray-200 bg-gray-50 px-4 py-3">
-      <summary class="cursor-pointer text-sm font-semibold text-gray-700">How Part and Division recommendations are aggregated</summary>
-      <div class="mt-3 space-y-3 text-sm text-gray-600">
-        <p>
-          The recommendation panels on Part and Division pages are not separate AI runs.
-          They are rollups built from the Section-level matches already attached to the outline.
-        </p>
-        <p>
-          On a Part page, a reading ranks higher when it appears across more Divisions in
-          that Part, covers more Sections, and spreads that coverage evenly rather than being
-          concentrated in one corner. On a Division page, the same idea is applied one level
-          down: readings are ranked by how many Sections in that Division they cover, with
-          extra weight for broader mapped-path coverage.
-        </p>
-        <p>
-          The relevance percentage shown on those cards is relative to the strongest item in
-          the current Part or Division list, not a global score across the whole site.
-        </p>
-      </div>
-    </details>
+  <section id="your-reading-progress" class="mt-8">
+    <div class="mb-4">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Progress and Settings</p>
+      <h2 class="mt-2 text-2xl font-serif font-bold text-slate-900">Reading speed, checklist data, and backup</h2>
+      <p class="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
+        Reading-time estimates for text sources use your stored reading speed. Checklist state is shared across the app and can be exported or restored here.
+      </p>
+    </div>
 
-    <h2>Source Data</h2>
-    <ul>
-      <li><strong>Oxford Very Short Introductions</strong> - {vsiTitleCount} titles in the current catalogue{vsiFetchedLabel ? <> fetched from Oxford Academic on <strong>{vsiFetchedLabel}</strong></> : null}. Where the source metadata includes it, individual book pages show the book's edition and release year.</li>
-      <li><strong>BBC In Our Time</strong> - {iotEpisodeCount} episodes{iotFetchedLabel ? <> fetched from BBC programme pages on <strong>{iotFetchedLabel}</strong></> : null}.</li>
-      <li><strong>Wikipedia Vital Articles</strong> - {wikipediaArticleCount} articles{wikipediaFetchedLabel ? <> last fetched on <strong>{wikipediaFetchedLabel}</strong></> : null}.</li>
-      <li><strong>Macropaedia</strong> - original article references preserved from the printed Propaedia/Britannica pairing.</li>
-    </ul>
+    <div class="space-y-4">
+      <ReadingSpeedPreference client:load samples={readingSpeedSamples} />
+      <ProgressBackup client:load />
+    </div>
+  </section>
 
-    <h2 id="your-reading-progress">Your Reading Progress</h2>
-  </div>
+  <section id="sources" class="mt-8">
+    <div class="mb-4">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Sources</p>
+      <h2 class="mt-2 text-2xl font-serif font-bold text-slate-900">What is in the reading library</h2>
+    </div>
+    <div class="grid gap-4 md:grid-cols-2">
+      {sourceCards.map((card) => (
+        <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <h3 class="font-serif text-xl text-slate-900">{card.title}</h3>
+          <p class="mt-2 text-sm font-medium text-slate-500">{card.meta}</p>
+          <p class="mt-3 text-sm leading-6 text-slate-600">{card.body}</p>
+        </article>
+      ))}
+    </div>
+  </section>
 
-  <div class="mt-4 mb-8">
-    <ProgressBackup client:load />
-  </div>
+  <section class="mt-8 grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
+    <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Practical Notes</p>
+      <ul class="mt-4 space-y-3 text-sm leading-6 text-slate-600">
+        {practicalNotes.map((note) => (
+          <li class="flex gap-3">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400"></span>
+            <span>{note}</span>
+          </li>
+        ))}
+      </ul>
+    </article>
 
-  <div class="prose-propaedia">
-    <h2>Technical Details</h2>
-    <p>
-      This site is built with <a href="https://astro.build">Astro</a> and
-      <a href="https://preactjs.com">Preact</a>, uses static site generation for fast
-      loading, and is hosted on GitHub Pages. Search is powered by
-      <a href="https://pagefind.app">Pagefind</a>. All data is processed at build time - there are no external API calls or server dependencies at runtime.
-    </p>
-  </div>
+    <article id="technical" class="rounded-2xl border border-slate-200 bg-slate-50/70 p-5">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Technical Details</p>
+      <p class="mt-4 text-sm leading-6 text-slate-600">
+        This site is built with <a href="https://astro.build" class="text-indigo-600 hover:text-indigo-800">Astro</a> and <a href="https://preactjs.com" class="text-indigo-600 hover:text-indigo-800">Preact</a>, uses static generation for runtime speed, and is hosted on GitHub Pages.
+      </p>
+      <p class="mt-3 text-sm leading-6 text-slate-600">
+        Search is powered by <a href="https://pagefind.app" class="text-indigo-600 hover:text-indigo-800">Pagefind</a>. All recommendation data is processed at build time, so the live site does not depend on runtime APIs or a backend.
+      </p>
+    </article>
+  </section>
 </div>

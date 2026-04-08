@@ -6,6 +6,15 @@ export interface HomepageCoverageEntry {
   title: string;
   href: string;
   meta?: string;
+  author?: string;
+  number?: number;
+  publicationYear?: number;
+  edition?: number;
+  pageCount?: number;
+  wordCount?: number;
+  datePublished?: string;
+  durationSeconds?: number;
+  category?: string;
   lowestLevel?: number;
   sectionCount: number;
   sections: ReadingSectionSummary[];

@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
+import { useReadingSpeedState } from '../../hooks/useReadingSpeedState';
 import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 import ReadingSelectionStrip from '../ui/ReadingSelectionStrip';
 import VsiCard from './VsiCard';
@@ -32,6 +33,10 @@ import {
   type ReadingType,
 } from '../../utils/readingPreference';
 import { filterWikipediaLevel } from '../../utils/wikipediaLevel';
+import {
+  estimateReadingMinutes,
+  formatEstimatedMinutes,
+} from '../../utils/readingSpeed';
 
 export interface ReadingItem {
   title: string;
@@ -143,12 +148,47 @@ function emptyStateMessage(type: ReadingType, hideChecked: boolean, matchedCount
   return `No ${READING_TYPE_UI_META[type].label} recommendations are available here right now.`;
 }
 
-function recommendationCountSubtitle(visibleCount: number, totalCount: number): string {
+function estimateRecommendationItemMinutes(
+  type: ReadingType,
+  item: ReadingItem,
+  readingSpeedWpm: number,
+): number | undefined {
+  if (type === 'iot') {
+    return item.durationSeconds ? item.durationSeconds / 60 : undefined;
+  }
+  if (type === 'vsi' || type === 'wikipedia') {
+    return estimateReadingMinutes(item.wordCount, readingSpeedWpm);
+  }
+  return undefined;
+}
+
+function estimateVisibleSelectionMinutes(
+  type: ReadingType,
+  items: ReadingItem[],
+  readingSpeedWpm: number,
+): number | undefined {
+  if (!items.length) return undefined;
+
+  let totalMinutes = 0;
+  for (const item of items) {
+    const minutes = estimateRecommendationItemMinutes(type, item, readingSpeedWpm);
+    if (!minutes) return undefined;
+    totalMinutes += minutes;
+  }
+
+  return totalMinutes;
+}
+
+function recommendationCountSubtitle(
+  visibleCount: number,
+  totalCount: number,
+  visibleTimeLabel?: string,
+): string {
   const noun = totalCount === 1 ? 'recommendation' : 'recommendations';
   if (visibleCount === totalCount) {
-    return `${totalCount} ${noun}`;
+    return `${totalCount} ${noun}${visibleTimeLabel ? ` · ${visibleTimeLabel} total` : ''}`;
   }
-  return `Showing ${visibleCount} of ${totalCount} ${noun}`;
+  return `Showing ${visibleCount} of ${totalCount} ${noun}${visibleTimeLabel ? ` · ${visibleTimeLabel} total` : ''}`;
 }
 
 export default function TopReadings({
@@ -197,6 +237,7 @@ export default function TopReadings({
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
   const [readingPref, setReadingPrefState] = useState<ReadingType>(() => resolvePreferredReadingType(availableTypes));
   const [hideChecked, setHideChecked] = useState(() => getHideCheckedReadings());
+  const readingSpeedWpm = useReadingSpeedState();
 
   useEffect(() => {
     if (!availableTypes.length) return;
@@ -225,6 +266,10 @@ export default function TopReadings({
   const visibleItems = hideChecked
     ? levelFilteredItems.filter((item) => !checklistState[activeSection.getCheckKey(item)])
     : levelFilteredItems;
+  const visibleTimeLabel = formatEstimatedMinutes(
+    estimateVisibleSelectionMinutes(activeSection.type, visibleItems, readingSpeedWpm),
+    activeSection.type !== 'iot',
+  );
 
   return (
     <div class="space-y-4">
@@ -271,7 +316,7 @@ export default function TopReadings({
             {activeSection.title}
           </h2>
           <p class="mt-1 text-xs font-medium text-amber-900/70">
-            {recommendationCountSubtitle(visibleItems.length, levelFilteredItems.length)}
+            {recommendationCountSubtitle(visibleItems.length, levelFilteredItems.length, visibleTimeLabel)}
           </p>
         </div>
 

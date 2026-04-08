@@ -2,6 +2,7 @@
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import CoverageRings from '../../components/ui/CoverageRings';
 import ReadingCheckbox from '../../components/content/ReadingCheckbox';
+import ReadingTimeText from '../../components/content/ReadingTimeText';
 import { sectionUrl, slugify } from '../../utils/helpers';
 import { wikipediaChecklistKey } from '../../utils/readingChecklist';
 import { splitWikipediaExtractParagraphs } from '../../utils/wikipediaExtract';
@@ -113,9 +114,6 @@ const overviewParagraphs = extractParagraphs.length > 0
   : article.summaryAI
     ? [article.summaryAI]
     : [];
-const wordCountLabel = typeof article.wordCount === 'number' && article.wordCount > 0
-  ? `${new Intl.NumberFormat('en-US').format(article.wordCount)} words`
-  : null;
 ---
 
 <BaseLayout title={`${article.displayTitle || article.title} - Wikipedia`} description={`Wikipedia article: ${article.title}`}>
@@ -137,9 +135,11 @@ const wordCountLabel = typeof article.wordCount === 'number' && article.wordCoun
 	          <span class="inline-block rounded-full bg-gray-100 px-2.5 py-0.5 text-xs text-gray-600">{article.category}</span>
 	        </div>
 	      )}
-	      {wordCountLabel && (
-	        <p class="mt-2 text-sm text-gray-500">{wordCountLabel}</p>
-	      )}
+	      {article.wordCount ? (
+	        <p class="mt-2 text-sm text-gray-500">
+            <ReadingTimeText client:load wordCount={article.wordCount} />
+          </p>
+	      ) : null}
 	      <div class="mt-3 flex flex-wrap items-center gap-4">
         <ReadingCheckbox client:idle checklistKey={wikipediaChecklistKey(article.title)} />
         <a

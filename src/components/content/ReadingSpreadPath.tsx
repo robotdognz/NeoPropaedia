@@ -1,6 +1,7 @@
 import { h, type ComponentChildren } from 'preact';
 import type { CoverageLayer } from '../../utils/readingLibrary';
 import type { ReadingSectionSummary } from '../../utils/readingData';
+import { formatEstimatedMinutes } from '../../utils/readingSpeed';
 import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 import ReadingSectionLinks from './ReadingSectionLinks';
 
@@ -33,6 +34,8 @@ interface ReadingSpreadPathProps<TStep extends SpreadPathStepBase> {
   emptyMessage: string;
   baseUrl: string;
   sectionLinksVariant?: 'details' | 'chips';
+  getEstimatedMinutes?: (step: TStep) => number | undefined;
+  estimatedTimeApproximate?: boolean;
 }
 
 function countPartsSpanned(sections: ReadingSectionSummary[]): number {
@@ -59,8 +62,18 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
   emptyMessage,
   baseUrl,
   sectionLinksVariant = 'details',
+  getEstimatedMinutes,
+  estimatedTimeApproximate = true,
 }: ReadingSpreadPathProps<TStep>) {
   const bestNext = steps[0] ?? null;
+  const estimatedStepMinutes = getEstimatedMinutes
+    ? steps.map((step) => getEstimatedMinutes(step))
+    : [];
+  const pathEstimatedMinutes = estimatedStepMinutes.length === steps.length
+    && estimatedStepMinutes.every((value) => typeof value === 'number' && value > 0)
+      ? estimatedStepMinutes.reduce((total, value) => total + (value ?? 0), 0)
+      : undefined;
+  const pathEstimatedTimeLabel = formatEstimatedMinutes(pathEstimatedMinutes, estimatedTimeApproximate);
 
   return (
     <section class="overflow-hidden rounded-2xl border border-amber-200 bg-amber-50/70 p-4 sm:p-5">
@@ -90,7 +103,7 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
             </span>
           </button>
           <p class="mt-1 text-xs font-medium text-amber-900">
-            {steps.length} {steps.length === 1 ? 'step' : 'steps'} · {remainingCoverageCount} {remainingCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural} uncovered
+            {steps.length} {steps.length === 1 ? 'step' : 'steps'} · {remainingCoverageCount} {remainingCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural} uncovered{pathEstimatedTimeLabel ? ` · ${pathEstimatedTimeLabel} to finish` : ''}
           </p>
           {statusMessage ? (
             <p class="mt-1.5 text-xs leading-5 text-amber-950/85">

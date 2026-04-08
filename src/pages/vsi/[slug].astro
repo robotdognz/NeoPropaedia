@@ -2,10 +2,11 @@
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import CoverageRings from '../../components/ui/CoverageRings';
 import ReadingCheckbox from '../../components/content/ReadingCheckbox';
+import ReadingTimeText from '../../components/content/ReadingTimeText';
 import { getCollection } from 'astro:content';
 import { sectionUrl, slugify } from '../../utils/helpers';
 import { formatEditionLabel, buildVsiAggregateEntries } from '../../utils/readingData';
-import { formatVsiPageCount, formatVsiWordCount, resolveVsiCatalogEntry, visibleVsiCatalogEntries } from '../../utils/vsiCatalog';
+import { formatVsiPageCount, resolveVsiCatalogEntry, visibleVsiCatalogEntries } from '../../utils/vsiCatalog';
 import { vsiChecklistKey } from '../../utils/readingChecklist';
 import { buildCoverageRingsForCompleted } from '../../utils/readingLibrary';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
@@ -78,14 +79,6 @@ for (const s of mappedSections) {
 const sortedParts = [...byPart.entries()].sort((a, b) => a[0] - b[0]);
 
 const editionLabel = formatEditionLabel(entry.edition);
-const metadata = [
-  entry.author,
-  formatVsiPageCount(entry.pageCount),
-  formatVsiWordCount(entry.wordCount),
-  editionLabel,
-  entry.publicationYear ? String(entry.publicationYear) : null,
-].filter(Boolean).join(' · ');
-
 ---
 
 <BaseLayout title={`${entry.title} - Oxford VSI`} description={entry.abstract || `${entry.title} by ${entry.author}`}>
@@ -102,7 +95,13 @@ const metadata = [
       <p class="text-sm font-sans font-semibold uppercase tracking-[0.2em] text-gray-500">Oxford Very Short Introduction</p>
       <h1 class="mt-2 text-3xl font-serif font-bold text-gray-900 sm:text-4xl" data-pagefind-meta={`title:${entry.title}`}>{entry.title}</h1>
       <span data-pagefind-meta="page_type:Oxford VSI" class="hidden"></span>
-      <p class="mt-2 text-base text-gray-500">{metadata}</p>
+      <p class="mt-2 text-base text-gray-500">
+        {entry.author}
+        {entry.pageCount ? <> · {formatVsiPageCount(entry.pageCount)}</> : null}
+        {entry.wordCount ? <> · <ReadingTimeText client:load wordCount={entry.wordCount} /></> : null}
+        {editionLabel ? <> · {editionLabel}</> : null}
+        {entry.publicationYear ? <> · {entry.publicationYear}</> : null}
+      </p>
       {entry.subject && (
         <p class="mt-1 text-sm text-gray-400">{entry.subject}</p>
       )}

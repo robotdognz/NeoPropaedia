@@ -1,8 +1,6 @@
 import { slugify } from './helpers';
 import type { HomepageCoverageSource } from './homepageCoverageTypes';
 import { formatIotEpisodeMeta } from './iotMetadata';
-import { formatVsiWordCount } from './vsiCatalog';
-import { formatWikipediaWordCount } from './wikipediaCatalog';
 import type {
   IotLibraryPayload,
   MacropaediaLibraryPayload,
@@ -48,39 +46,6 @@ function joinBaseUrl(baseUrl: string, path: string): string {
   return `${baseUrl.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
 }
 
-function formatEditionLabel(edition?: number): string | null {
-  if (!edition) return null;
-
-  const mod100 = edition % 100;
-  if (mod100 >= 11 && mod100 <= 13) {
-    return `${edition}th ed.`;
-  }
-
-  const mod10 = edition % 10;
-  if (mod10 === 1) return `${edition}st ed.`;
-  if (mod10 === 2) return `${edition}nd ed.`;
-  if (mod10 === 3) return `${edition}rd ed.`;
-  return `${edition}th ed.`;
-}
-
-function formatVsiMeta(entry: {
-  author: string;
-  number?: number;
-  publicationYear?: number;
-  edition?: number;
-  wordCount?: number;
-}): string {
-  return [
-    entry.author,
-    entry.number ? `No. ${entry.number}` : null,
-    formatVsiWordCount(entry.wordCount),
-    formatEditionLabel(entry.edition),
-    entry.publicationYear ? String(entry.publicationYear) : null,
-  ]
-    .filter(Boolean)
-    .join(' · ');
-}
-
 export function buildHomepageCoverageSourceFromLibraryPayload<T extends ReadingType>(
   type: T,
   payload: HomepageCoverageLibraryPayloadMap[T],
@@ -97,7 +62,12 @@ export function buildHomepageCoverageSourceFromLibraryPayload<T extends ReadingT
           checklistKey: entry.checklistKey,
           title: entry.title,
           href: joinBaseUrl(baseUrl, `vsi/${slugify(entry.title)}`),
-          meta: formatVsiMeta(entry),
+          author: entry.author,
+          number: entry.number,
+          publicationYear: entry.publicationYear,
+          edition: entry.edition,
+          pageCount: entry.pageCount,
+          wordCount: entry.wordCount,
           sectionCount: entry.sectionCount,
           sections: entry.sections,
           progressSubsectionKeys: entry.progressSubsectionKeys,
@@ -112,7 +82,8 @@ export function buildHomepageCoverageSourceFromLibraryPayload<T extends ReadingT
           checklistKey: entry.checklistKey,
           title: entry.displayTitle ?? entry.title,
           href: joinBaseUrl(baseUrl, `wikipedia/${slugify(entry.title)}`),
-          meta: formatWikipediaWordCount(entry.wordCount),
+          category: entry.category,
+          wordCount: entry.wordCount,
           lowestLevel: entry.lowestLevel,
           sectionCount: entry.sectionCount,
           sections: entry.sections,
@@ -129,6 +100,8 @@ export function buildHomepageCoverageSourceFromLibraryPayload<T extends ReadingT
           title: entry.title,
           href: joinBaseUrl(baseUrl, `iot/${entry.pid}`),
           meta: formatIotEpisodeMeta(entry) || undefined,
+          datePublished: entry.datePublished,
+          durationSeconds: entry.durationSeconds,
           sectionCount: entry.sectionCount,
           sections: entry.sections,
           progressSubsectionKeys: entry.progressSubsectionKeys,

@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
+import { useReadingSpeedState } from '../../hooks/useReadingSpeedState';
 import { writeChecklistState } from '../../utils/readingChecklist';
 import { type WikipediaAggregateEntry } from '../../utils/readingData';
 import { slugify, type PartMeta } from '../../utils/helpers';
@@ -38,6 +39,10 @@ import {
   setCoverageLayerPreference,
   subscribeCoverageLayerPreference,
 } from '../../utils/readingPreference';
+import {
+  estimateReadingMinutes,
+  formatEstimatedReadingTime,
+} from '../../utils/readingSpeed';
 
 export interface WikipediaLibraryProps {
   entries: WikipediaAggregateEntry[];
@@ -58,8 +63,6 @@ const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
   Sections: 'section',
   Subsections: 'subsection',
 };
-const wordCountFormatter = new Intl.NumberFormat('en-US');
-
 function activeCoverageDescription(layer: CoverageLayer): string {
   switch (layer) {
     case 'part':
@@ -87,16 +90,12 @@ function precisionBadgeText(entry: WikipediaAggregateEntry): string | null {
   return subsectionPrecisionSummary(entry);
 }
 
-function formatWordCount(wordCount?: number): string | null {
-  if (!wordCount || wordCount <= 0) return null;
-  return `${wordCountFormatter.format(wordCount)} words`;
-}
-
 export default function WikipediaLibrary({
   entries,
   baseUrl,
   partsMeta,
 }: WikipediaLibraryProps) {
+  const readingSpeedWpm = useReadingSpeedState();
   const checklistState = useReadingChecklistState();
   useHashAnchorCorrection('wikipedia-library');
   const [level, setLevel] = useState<KnowledgeLevel>(3);
@@ -268,7 +267,7 @@ export default function WikipediaLibrary({
           getHref={(step) => `${baseUrl}/wikipedia/${slugify(step.title)}`}
 	          renderMeta={(step) => {
 	            const detailParts = [
-	              formatWordCount(step.wordCount),
+	              formatEstimatedReadingTime(step.wordCount, readingSpeedWpm),
 	              activeLayer === 'subsection' ? precisionBadgeText(step) : null,
 	            ].filter(Boolean);
 	            return detailParts.length > 0 ? (
@@ -281,6 +280,7 @@ export default function WikipediaLibrary({
           coverageLayer={activeLayer}
           coverageUnitSingular={layerMeta.label}
           coverageUnitPlural={layerMeta.pluralLabel}
+          getEstimatedMinutes={(step) => estimateReadingMinutes(step.wordCount, readingSpeedWpm)}
           emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
           baseUrl={baseUrl}
           sectionLinksVariant="chips"
@@ -369,7 +369,7 @@ export default function WikipediaLibrary({
 	                const metadata = [
 	                  entry.category,
 	                  entry.sectionCount > 0 ? `${entry.sectionCount} sections` : null,
-	                  formatWordCount(entry.wordCount),
+	                  formatEstimatedReadingTime(entry.wordCount, readingSpeedWpm),
 	                ].filter(Boolean);
 	                return (
 	                  <article key={entry.checklistKey} class="rounded-xl border border-gray-200 bg-gray-50/50 p-5">

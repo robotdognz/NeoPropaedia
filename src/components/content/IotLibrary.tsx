@@ -276,6 +276,8 @@ export default function IotLibrary({
           coverageLayer={activeLayer}
           coverageUnitSingular={layerMeta.label}
           coverageUnitPlural={layerMeta.pluralLabel}
+          getEstimatedMinutes={(step) => step.durationSeconds ? step.durationSeconds / 60 : undefined}
+          estimatedTimeApproximate={false}
           emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
           baseUrl={baseUrl}
           sectionLinksVariant="chips"

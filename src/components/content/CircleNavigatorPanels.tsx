@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
+import { useReadingSpeedState } from '../../hooks/useReadingSpeedState';
 import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
 import {
   writeChecklistState,
@@ -17,8 +18,10 @@ import {
 } from '../../utils/readingData';
 import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
 import type { HomepageCoverageSource } from '../../utils/homepageCoverageTypes';
-import { formatVsiWordCount } from '../../utils/vsiCatalog';
-import { formatWikipediaWordCount } from '../../utils/wikipediaCatalog';
+import {
+  estimateReadingMinutes,
+  formatEstimatedReadingTime,
+} from '../../utils/readingSpeed';
 import { filterWikipediaLevel } from '../../utils/wikipediaLevel';
 import {
   COVERAGE_LAYER_META,
@@ -85,8 +88,8 @@ interface AnchoredRecommendationSectionConfig<TEntry extends AnchoredEntryBase> 
   renderMeta?: (item: TEntry) => ComponentChildren;
 }
 
-function formatCircleNavigatorVsiMeta(item: CircleNavigatorVsiEntry): string | undefined {
-  return [item.author, formatVsiWordCount(item.wordCount)].filter(Boolean).join(' · ') || undefined;
+function formatCircleNavigatorVsiMeta(item: CircleNavigatorVsiEntry, readingSpeedWpm: number): string | undefined {
+  return [item.author, formatEstimatedReadingTime(item.wordCount, readingSpeedWpm)].filter(Boolean).join(' · ') || undefined;
 }
 
 const partRecommendationCache = new Map<number, CircleNavigatorPartRecommendations>();
@@ -172,13 +175,32 @@ function supportedLayersForReadingType(type: ReadingType): CoverageLayer[] {
     : ['part', 'division', 'section', 'subsection'];
 }
 
+function estimateAnchoredEntryMinutes(
+  type: ReadingType,
+  entry: AnchoredEntryBase,
+  readingSpeedWpm: number,
+): number | undefined {
+  if (type === 'iot' && 'durationSeconds' in entry) {
+    return entry.durationSeconds && entry.durationSeconds > 0
+      ? entry.durationSeconds / 60
+      : undefined;
+  }
+
+  if ((type === 'vsi' || type === 'wikipedia') && 'wordCount' in entry) {
+    return estimateReadingMinutes(entry.wordCount, readingSpeedWpm);
+  }
+
+  return undefined;
+}
+
 function buildSpreadPathFromRecommendations<TEntry extends AnchoredEntryBase>(
   activeSection: AnchoredRecommendationSectionConfig<TEntry> | undefined,
   activeLayer: CoverageLayer,
+  readingSpeedWpm: number,
 ) {
   if (!activeSection) {
     return {
-      steps: [] as Array<{ title: string; checklistKey: string; sectionCount: number; sections: ReadingSectionSummary[]; newCoverageCount: number; cumulativeCoveredCount: number; newSections: ReadingSectionSummary[]; href: string; meta: ComponentChildren }>,
+      steps: [] as Array<{ title: string; checklistKey: string; sectionCount: number; sections: ReadingSectionSummary[]; newCoverageCount: number; cumulativeCoveredCount: number; newSections: ReadingSectionSummary[]; href: string; meta: ComponentChildren; estimatedMinutes?: number }>,
       remaining: 0,
       resolvedLayer: activeLayer,
     };
@@ -190,7 +212,7 @@ function buildSpreadPathFromRecommendations<TEntry extends AnchoredEntryBase>(
   const snapshot = activeSection.layerSnapshots[resolvedLayer];
   if (!snapshot) {
     return {
-      steps: [] as Array<{ title: string; checklistKey: string; sectionCount: number; sections: ReadingSectionSummary[]; newCoverageCount: number; cumulativeCoveredCount: number; newSections: ReadingSectionSummary[]; href: string; meta: ComponentChildren }>,
+      steps: [] as Array<{ title: string; checklistKey: string; sectionCount: number; sections: ReadingSectionSummary[]; newCoverageCount: number; cumulativeCoveredCount: number; newSections: ReadingSectionSummary[]; href: string; meta: ComponentChildren; estimatedMinutes?: number }>,
       remaining: 0,
       resolvedLayer,
     };
@@ -206,6 +228,7 @@ function buildSpreadPathFromRecommendations<TEntry extends AnchoredEntryBase>(
     newSections: step.newSections,
     href: activeSection.getHref(step.entry),
     meta: activeSection.renderMeta ? activeSection.renderMeta(step.entry) : undefined,
+    estimatedMinutes: estimateAnchoredEntryMinutes(activeSection.type, step.entry, readingSpeedWpm),
   }));
 
   return { steps, remaining: snapshot.remainingCoverageCount, resolvedLayer };
@@ -413,6 +436,7 @@ export function CenteredCircleNavigatorPanel({
   baseUrl,
   coverageSources,
 }: CenteredCircleNavigatorPanelProps) {
+  const readingSpeedWpm = useReadingSpeedState();
   const wikiLevel = useWikipediaLevel();
   const [sharedPartRecommendations, setSharedPartRecommendations] = useState<{
     center: CircleNavigatorPartRecommendations;
@@ -478,7 +502,7 @@ export function CenteredCircleNavigatorPanel({
         completedChecklistKeys,
         coverageEntries: coverageSources.vsi?.entries,
         getHref: (item: CircleNavigatorVsiEntry) => `${baseUrl}/vsi/${slugify(item.title)}`,
-        renderMeta: (item: CircleNavigatorVsiEntry) => formatCircleNavigatorVsiMeta(item),
+        renderMeta: (item: CircleNavigatorVsiEntry) => formatCircleNavigatorVsiMeta(item, readingSpeedWpm),
       }),
       buildRecommendationSectionConfig({
         type: 'iot',
@@ -497,7 +521,7 @@ export function CenteredCircleNavigatorPanel({
         coverageEntries: wikiCoverageEntries,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
-        renderMeta: (item: CircleNavigatorWikipediaEntry) => formatWikipediaWordCount(item.wordCount),
+        renderMeta: (item: CircleNavigatorWikipediaEntry) => formatEstimatedReadingTime(item.wordCount, readingSpeedWpm),
         allowEmpty: rawSharedWikiEntries.length > 0,
       }),
       buildRecommendationSectionConfig({
@@ -511,7 +535,7 @@ export function CenteredCircleNavigatorPanel({
     ]
       .filter((section): section is AnchoredRecommendationSectionConfig<AnchoredEntryBase> => section !== null)
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
-  }, [sharedPartRecommendations, checklistState, readingPref, baseUrl, coverageSources, wikiLevel]);
+  }, [sharedPartRecommendations, checklistState, readingPref, baseUrl, coverageSources, wikiLevel, readingSpeedWpm]);
 
   const {
     activeRecommendation,
@@ -521,6 +545,7 @@ export function CenteredCircleNavigatorPanel({
   const { steps: spreadSteps, remaining: spreadRemaining, resolvedLayer } = buildSpreadPathFromRecommendations(
     activeRecommendation as AnchoredRecommendationSectionConfig<AnchoredEntryBase> | undefined,
     effectiveLayer,
+    readingSpeedWpm,
   );
   const resolvedLayerLabel = coverageLayerLabel(resolvedLayer, 2, { lowercase: true });
   const isLoadingRecommendations = !sharedPartRecommendations && !recommendationsError;
@@ -614,6 +639,8 @@ export function CenteredCircleNavigatorPanel({
             coverageLayer={resolvedLayer}
             coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
             coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
+            getEstimatedMinutes={(step) => step.estimatedMinutes}
+            estimatedTimeApproximate={effectiveReadingType !== 'iot'}
             statusMessage={statusMessage ?? undefined}
             emptyMessage={emptyRecommendationMessage(resolvedLayer, isLayerComplete, spreadRemaining)}
             baseUrl={baseUrl}
@@ -639,6 +666,7 @@ export function TopPartCircleNavigatorPanel({
   baseUrl,
   coverageSources,
 }: TopPartCircleNavigatorPanelProps) {
+  const readingSpeedWpm = useReadingSpeedState();
   const wikiLevel = useWikipediaLevel();
   const [partRecommendations, setPartRecommendations] = useState<CircleNavigatorPartRecommendations | null>(
     () => partRecommendationCache.get(topPartNumber) ?? null
@@ -693,7 +721,7 @@ export function TopPartCircleNavigatorPanel({
         completedChecklistKeys,
         coverageEntries: coverageSources.vsi?.entries,
         getHref: (item: CircleNavigatorVsiEntry) => `${baseUrl}/vsi/${slugify(item.title)}`,
-        renderMeta: (item: CircleNavigatorVsiEntry) => formatCircleNavigatorVsiMeta(item),
+        renderMeta: (item: CircleNavigatorVsiEntry) => formatCircleNavigatorVsiMeta(item, readingSpeedWpm),
       }),
       buildRecommendationSectionConfig({
         type: 'iot',
@@ -712,7 +740,7 @@ export function TopPartCircleNavigatorPanel({
         coverageEntries: wikiCoverageEntries,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
         getLabel: (item: CircleNavigatorWikipediaEntry) => item.displayTitle || item.title,
-        renderMeta: (item: CircleNavigatorWikipediaEntry) => formatWikipediaWordCount(item.wordCount),
+        renderMeta: (item: CircleNavigatorWikipediaEntry) => formatEstimatedReadingTime(item.wordCount, readingSpeedWpm),
         allowEmpty: rawAnchoredWikiEntries.length > 0,
       }),
       buildRecommendationSectionConfig({
@@ -726,7 +754,7 @@ export function TopPartCircleNavigatorPanel({
     ]
       .filter((section): section is AnchoredRecommendationSectionConfig<AnchoredEntryBase> => section !== null)
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
-  }, [topPartNumber, readingPref, checklistState, partRecommendations, baseUrl, coverageSources, wikiLevel]);
+  }, [topPartNumber, readingPref, checklistState, partRecommendations, baseUrl, coverageSources, wikiLevel, readingSpeedWpm]);
 
   const {
     activeRecommendation,
@@ -736,6 +764,7 @@ export function TopPartCircleNavigatorPanel({
   const { steps: spreadSteps, remaining: spreadRemaining, resolvedLayer } = buildSpreadPathFromRecommendations(
     activeRecommendation as AnchoredRecommendationSectionConfig<AnchoredEntryBase> | undefined,
     effectiveLayer,
+    readingSpeedWpm,
   );
   const resolvedLayerLabel = coverageLayerLabel(resolvedLayer, 2, { lowercase: true });
   const isLoadingRecommendations = !partRecommendations && !recommendationsError;
@@ -827,6 +856,8 @@ export function TopPartCircleNavigatorPanel({
             coverageLayer={resolvedLayer}
             coverageUnitSingular={coverageLayerLabel(resolvedLayer, 1)}
             coverageUnitPlural={coverageLayerLabel(resolvedLayer, 2)}
+            getEstimatedMinutes={(step) => step.estimatedMinutes}
+            estimatedTimeApproximate={effectiveReadingType !== 'iot'}
             statusMessage={statusMessage ?? undefined}
             emptyMessage={emptyRecommendationMessage(resolvedLayer, isLayerComplete, spreadRemaining)}
             baseUrl={baseUrl}

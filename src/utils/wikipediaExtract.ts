@@ -1,5 +1,7 @@
 const LEADING_WIKI_LINE_RE = /^(?:\||!\s*|class=|style=|alt=|source:|image(?:_alt|_caption)?\s*=|range_map|range_map_caption|taxon\s*=|authority\s*=|subdivision_ranks\s*=)/i;
 const LEADING_MEDIA_RE = /^(?:thumb|frameless|upright(?:=[^|\s]+)?|left|right)\|.*?\]\]/i;
+const WIKI_ARTIFACT_RE = /(?:\{\{|\}\}|\|\s*[a-z0-9_-]+\s*=|\b(?:issue-link|issue-pipe|signature|birth_date|death_date|burial_date|birth_place|death_place|burial_place|regnal name|predecessor|successor|spouse|religion|father|mother)\s*=|\b[a-z0-9_-]+\.(?:svg|png|jpe?g|gif)\b)/i;
+const PARAM_ASSIGNMENT_RE = /\b[a-z][a-z0-9_-]{2,}\s*=/gi;
 const BASIC_ENTITY_REPLACEMENTS: Array<[RegExp, string]> = [
   [/&nbsp;/g, ' '],
   [/&ndash;/g, '–'],
@@ -62,6 +64,27 @@ function cleanParagraph(paragraph: string): string {
   return value.trim();
 }
 
+function countWords(value: string): number {
+  return value.split(/\s+/).filter(Boolean).length;
+}
+
+function looksLikeReadableParagraph(paragraph: string): boolean {
+  const value = paragraph.trim();
+  if (!value) return false;
+  if (!/[A-Za-z]/.test(value)) return false;
+  if (LEADING_WIKI_LINE_RE.test(value)) return false;
+  if (/^(?:thumb|frameless|upright|left|right)\b/i.test(value)) return false;
+  if (WIKI_ARTIFACT_RE.test(value)) return false;
+
+  const assignmentCount = value.match(PARAM_ASSIGNMENT_RE)?.length ?? 0;
+  if (assignmentCount > 0) return false;
+
+  if (countWords(value) < 8) return false;
+  if (!/[.?!]$/.test(value) && !/[.?!].+[.?!]/.test(value)) return false;
+
+  return true;
+}
+
 export function cleanWikipediaExtract(rawExtract?: string): string {
   if (!rawExtract) return '';
 
@@ -78,9 +101,7 @@ export function cleanWikipediaExtract(rawExtract?: string): string {
     .split(/\n{2,}/)
     .map(cleanParagraph)
     .filter((paragraph) => paragraph.length > 0)
-    .filter((paragraph) => /[A-Za-z]/.test(paragraph))
-    .filter((paragraph) => !LEADING_WIKI_LINE_RE.test(paragraph))
-    .filter((paragraph) => !/^(?:thumb|frameless|upright|left|right)\b/i.test(paragraph));
+    .filter(looksLikeReadableParagraph);
 
   return paragraphs.join('\n\n').trim();
 }
@@ -93,4 +114,26 @@ export function splitWikipediaExtractParagraphs(rawExtract?: string): string[] {
     .split(/\n{2,}/)
     .map((paragraph) => paragraph.trim())
     .filter((paragraph) => paragraph.length > 0);
+}
+
+export interface WikipediaReadingSampleParagraph {
+  paragraph: string;
+  wordCount: number;
+}
+
+export function getWikipediaReadingSampleParagraph(rawExtract?: string): WikipediaReadingSampleParagraph | null {
+  const paragraphs = splitWikipediaExtractParagraphs(rawExtract);
+
+  for (const paragraph of paragraphs) {
+    const wordCount = countWords(paragraph);
+    if (wordCount < 90 || wordCount > 210) continue;
+    if (!looksLikeReadableParagraph(paragraph)) continue;
+
+    return {
+      paragraph,
+      wordCount,
+    };
+  }
+
+  return null;
 }

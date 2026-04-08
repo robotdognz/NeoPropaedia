@@ -5,6 +5,7 @@
 const KEYS = [
   'propaedia-reading-checklist-v1',
   'propaedia-reading-preference',
+  'propaedia-reading-speed-wpm',
   'propaedia-hide-checked-readings',
   'propaedia-coverage-layer',
   'propaedia-wiki-level',
