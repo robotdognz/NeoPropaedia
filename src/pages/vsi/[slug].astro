@@ -131,6 +131,8 @@ const editionLabel = formatEditionLabel(entry.edition);
         client:load
         heading="Coverage Preview"
         description="Your current coverage, with this book's addition highlighted at each layer."
+        footprintHeading="Coverage From This Reading"
+        footprintDescription="The areas this book covers at each layer of the Outline of Knowledge."
         dataUrl={`${base}/library-data/vsi.json`}
         checklistKey={vsiChecklistKey(entry.title, entry.author, entry.printIsbn, entry.id)}
         fallbackRings={rings}

@@ -13,6 +13,7 @@ export interface PartCoverageRingProps {
   gapPx?: number;
   freezeTransitions?: boolean;
   centerPercentage?: number;
+  overlayMode?: 'delta' | 'footprint';
 }
 
 let idCounter = 0;
@@ -30,6 +31,7 @@ export default function PartCoverageRing({
   gapPx = 2.5,
   freezeTransitions = false,
   centerPercentage,
+  overlayMode = 'delta',
 }: PartCoverageRingProps) {
   const [animated, setAnimated] = useState(false);
   const [clipId] = useState(() => `pcr-${++idCounter}`);
@@ -123,27 +125,40 @@ export default function PartCoverageRing({
                     }}
                   />
                 </clipPath>
-                <mask id={`${clipId}-added-${i}`}>
-                  <rect x="0" y="0" width={size} height={size} fill="black" />
-                  <circle
-                    cx={cx}
-                    cy={cy}
-                    r={previewFillR}
-                    fill="white"
-                    style={{
-                      transition: freezeTransitions ? 'none' : 'r 0.8s ease-out',
-                    }}
-                  />
-                  <circle
-                    cx={cx}
-                    cy={cy}
-                    r={currentFillR}
-                    fill="black"
-                    style={{
-                      transition: freezeTransitions ? 'none' : 'r 0.8s ease-out',
-                    }}
-                  />
-                </mask>
+                {overlayMode === 'delta' ? (
+                  <mask id={`${clipId}-added-${i}`}>
+                    <rect x="0" y="0" width={size} height={size} fill="black" />
+                    <circle
+                      cx={cx}
+                      cy={cy}
+                      r={previewFillR}
+                      fill="white"
+                      style={{
+                        transition: freezeTransitions ? 'none' : 'r 0.8s ease-out',
+                      }}
+                    />
+                    <circle
+                      cx={cx}
+                      cy={cy}
+                      r={currentFillR}
+                      fill="black"
+                      style={{
+                        transition: freezeTransitions ? 'none' : 'r 0.8s ease-out',
+                      }}
+                    />
+                  </mask>
+                ) : (
+                  <clipPath id={`${clipId}-added-${i}`}>
+                    <circle
+                      cx={cx}
+                      cy={cy}
+                      r={previewFillR}
+                      style={{
+                        transition: freezeTransitions ? 'none' : 'r 0.8s ease-out',
+                      }}
+                    />
+                  </clipPath>
+                )}
               </g>
             );
           })}
@@ -184,7 +199,9 @@ export default function PartCoverageRing({
                   d={segPath}
                   fill={ADDED_PREVIEW_COLOR}
                   fill-opacity="0.92"
-                  mask={`url(#${clipId}-added-${i})`}
+                  {...(overlayMode === 'delta'
+                    ? { mask: `url(#${clipId}-added-${i})` }
+                    : { 'clip-path': `url(#${clipId}-added-${i})` })}
                 />
               ) : null}
             </g>

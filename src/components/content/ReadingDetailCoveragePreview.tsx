@@ -4,6 +4,8 @@ import { useJsonPayload } from '../../hooks/useJsonPayload';
 import type { PartMeta } from '../../utils/helpers';
 import { readChecklistState, subscribeChecklistState } from '../../utils/readingChecklist';
 import {
+  buildCoverageRingsForCompleted,
+  buildPartCoverageSegments,
   buildPartCoverageSegmentsWithPreview,
   buildCoverageRingsWithPreview,
   COVERAGE_LAYER_META,
@@ -18,6 +20,8 @@ import CoverageRings from '../ui/CoverageRings';
 interface ReadingDetailCoveragePreviewProps {
   heading: string;
   description: string;
+  footprintHeading?: string;
+  footprintDescription?: string;
   dataUrl: string;
   checklistKey: string;
   fallbackRings?: CoverageRing[];
@@ -66,6 +70,8 @@ function preferredPreviewLayer(
 export default function ReadingDetailCoveragePreview({
   heading,
   description,
+  footprintHeading,
+  footprintDescription,
   dataUrl,
   checklistKey,
   fallbackRings = [],
@@ -112,29 +118,43 @@ export default function ReadingDetailCoveragePreview({
     );
   }
 
-  const coverageRings = buildCoverageRingsWithPreview(data.entries, checklistState, [checklistKey]);
+  const isChecked = Boolean(checklistState[checklistKey]);
+  const coverageRings = isChecked
+    ? buildCoverageRingsForCompleted(data.entries, new Set([checklistKey]))
+    : buildCoverageRingsWithPreview(data.entries, checklistState, [checklistKey]);
   const availableLayers = coverageRings
     .map((ring) => RING_LABEL_TO_LAYER[ring.label])
     .filter((layer): layer is CoverageLayer => Boolean(layer));
   const resolvedLayer = activeLayer && availableLayers.includes(activeLayer)
     ? activeLayer
-    : preferredPreviewLayer(coverageRings, availableLayers);
+    : isChecked
+      ? preferredDefaultLayer(availableLayers)
+      : preferredPreviewLayer(coverageRings, availableLayers);
 
   const activeRingLabel = COVERAGE_LAYER_META[resolvedLayer].pluralLabel;
   const activeRing = coverageRings.find((ring) => ring.label === activeRingLabel) ?? coverageRings[0];
+  const readingOnlyChecklistState = { [checklistKey]: true } as Record<string, boolean>;
   const partSegments = data.partsMeta && data.partsMeta.length > 0
-    ? buildPartCoverageSegmentsWithPreview(data.entries, checklistState, [checklistKey], resolvedLayer, data.partsMeta)
+    ? (
+      isChecked
+        ? buildPartCoverageSegments(data.entries, readingOnlyChecklistState, resolvedLayer, data.partsMeta)
+        : buildPartCoverageSegmentsWithPreview(data.entries, checklistState, [checklistKey], resolvedLayer, data.partsMeta)
+    )
     : undefined;
   const activeCoveragePercent = activeRing && activeRing.total > 0
     ? Math.round((activeRing.count / activeRing.total) * 100)
     : 0;
+  const layerControlLabel = isChecked ? 'Coverage Layer' : 'Preview Layer';
+  const resolvedHeading = isChecked ? (footprintHeading ?? heading) : heading;
+  const resolvedDescription = isChecked ? (footprintDescription ?? description) : description;
+  const activeOverlayCount = activeRing?.addedCount ?? 0;
 
   return (
     <div class="w-full space-y-3">
       <div class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-slate-50 px-5 py-4 sm:flex-row sm:items-start">
         <div class="min-w-0 flex-1">
-          <h2 class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">{heading}</h2>
-          <p class="mt-1 text-xs text-slate-400">{description}</p>
+          <h2 class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">{resolvedHeading}</h2>
+          <p class="mt-1 text-xs text-slate-400">{resolvedDescription}</p>
         </div>
         <div class="w-full space-y-3 sm:w-64 sm:shrink-0">
           <div class={`grid items-start gap-3 ${partSegments && partSegments.length > 0 ? 'grid-cols-2' : 'grid-cols-1'}`}>
@@ -157,26 +177,34 @@ export default function ReadingDetailCoveragePreview({
               />
             ) : null}
           </div>
-          <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[11px] text-slate-500">
-            <span class="inline-flex items-center gap-1.5">
-              <span class="inline-block h-2.5 w-2.5 rounded-full bg-slate-500/80" />
-              <span>Current</span>
-            </span>
-            <span class="inline-flex items-center gap-1.5">
-              <span class="inline-block h-2.5 w-2.5 rounded-full bg-slate-900" />
-              <span>Added by this reading</span>
-            </span>
-          </div>
+          {!isChecked ? (
+            <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[11px] text-slate-500">
+              <span class="inline-flex items-center gap-1.5">
+                <span class="inline-block h-2.5 w-2.5 rounded-full bg-slate-500/80" />
+                <span>Current</span>
+              </span>
+              <span class="inline-flex items-center gap-1.5">
+                <span class="inline-block h-2.5 w-2.5 rounded-full bg-slate-900" />
+                <span>Added by this reading</span>
+              </span>
+            </div>
+          ) : null}
           {activeRing ? (
             <p class="text-center text-[11px] text-slate-500">
-              <span>{activeRing.label}: {activeRing.count}</span>
-              {(activeRing.addedCount ?? 0) > 0 ? (
-                <span>
-                  <span class="text-slate-500">+</span>
-                  <span class="font-semibold text-slate-900">{activeRing.addedCount}</span>
-                </span>
-              ) : null}
-              <span>{` out of ${activeRing.total}`}</span>
+              {isChecked ? (
+                <span>{`${activeRing.label}: ${activeRing.count} out of ${activeRing.total}`}</span>
+              ) : (
+                <>
+                  <span>{activeRing.label}: {activeRing.count}</span>
+                  {activeOverlayCount > 0 ? (
+                    <span>
+                      <span class="text-slate-500">+</span>
+                      <span class="font-semibold text-slate-900">{activeOverlayCount}</span>
+                    </span>
+                  ) : null}
+                  <span>{` out of ${activeRing.total}`}</span>
+                </>
+              )}
             </p>
           ) : null}
         </div>
@@ -199,10 +227,10 @@ export default function ReadingDetailCoveragePreview({
             const ring = coverageRings.find(
               (candidateRing) => candidateRing.label === COVERAGE_LAYER_META[layer].pluralLabel,
             );
-            return [layer, `+${ring?.addedCount ?? 0}`];
+            return [layer, isChecked ? `${ring?.count ?? 0}/${ring?.total ?? 0}` : `+${ring?.addedCount ?? 0}`];
           }),
         )}
-        label="Preview Layer"
+        label={layerControlLabel}
       />
     </div>
   );

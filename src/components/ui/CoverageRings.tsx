@@ -12,6 +12,7 @@ export interface CoverageRingsProps {
   activeRingLabel?: string;
   onSelectRing?: (label: string) => void;
   centerContent?: ComponentChildren;
+  overlayMode?: 'delta' | 'footprint';
 }
 
 export default function CoverageRings({
@@ -23,6 +24,7 @@ export default function CoverageRings({
   activeRingLabel,
   onSelectRing,
   centerContent,
+  overlayMode = 'delta',
 }: CoverageRingsProps) {
   const center = size / 2;
   const gap = 3;
@@ -257,9 +259,11 @@ export default function CoverageRings({
           const isActive = ring.label === activeRingLabel;
           const baseArc = resolveDisplayedArc(baseRawFraction, width, radius);
           const previewArc = resolveDisplayedArc(previewRawFraction, width, radius);
+          const footprintArc = resolveDisplayedArc(addedRawFraction, width, radius);
           let fraction = baseArc.fraction;
-          let previewFraction = previewArc.fraction;
+          let previewFraction = overlayMode === 'delta' ? previewArc.fraction : footprintArc.fraction;
           const startRotation = baseArc.startRotation;
+          const overlayStartRotation = overlayMode === 'delta' ? startRotation : footprintArc.startRotation;
 
           // New rings start at 0 for one frame so CSS transition animates them in
           if (newRingLabelsRef.current.has(ring.label)) {
@@ -279,6 +283,34 @@ export default function CoverageRings({
 
           const previewDashoffset = animated ? 1 - previewFraction : 1;
           const showPreviewArc = addedRawFraction > 0;
+          const overlayArc = showPreviewArc ? (
+            <circle
+              cx={center}
+              cy={center}
+              r={radius}
+              fill="none"
+              pathLength={1}
+              stroke={ADDED_PREVIEW_COLOR}
+              stroke-opacity={isActive ? '0.95' : '0.82'}
+              stroke-width={width}
+              stroke-linecap="round"
+              stroke-dasharray="1 1"
+              stroke-dashoffset={previewDashoffset}
+              style={{
+                transform: `rotate(${-90 + overlayStartRotation}deg)`,
+                transformOrigin: `${center}px ${center}px`,
+                transition: freezeTransitions
+                  ? 'none'
+                  : isArcHidden
+                    ? 'none'
+                    : isSnappingAll
+                      ? opacityTransition
+                      : isSnappingGeometry
+                        ? fillTransition
+                        : arcTransition,
+              }}
+            />
+          ) : null;
 
           return (
             <g key={ring.label}>
@@ -293,34 +325,7 @@ export default function CoverageRings({
                   transition: freezeTransitions || isSnappingGeometry ? 'none' : trackTransition,
                 }}
               />
-              {showPreviewArc ? (
-                <circle
-                  cx={center}
-                  cy={center}
-                  r={radius}
-                  fill="none"
-                  pathLength={1}
-                  stroke={ADDED_PREVIEW_COLOR}
-                  stroke-opacity={isActive ? '0.95' : '0.82'}
-                  stroke-width={width}
-                  stroke-linecap="round"
-                  stroke-dasharray="1 1"
-                  stroke-dashoffset={previewDashoffset}
-                  style={{
-                    transform: `rotate(${-90 + startRotation}deg)`,
-                    transformOrigin: `${center}px ${center}px`,
-                    transition: freezeTransitions
-                      ? 'none'
-                      : isArcHidden
-                        ? 'none'
-                        : isSnappingAll
-                          ? opacityTransition
-                          : isSnappingGeometry
-                            ? fillTransition
-                            : arcTransition,
-                  }}
-                />
-              ) : null}
+              {overlayMode === 'delta' ? overlayArc : null}
               {/* Hidden arcs stay fully collapsed so they can animate back in from zero. */}
               <circle
                 cx={center} cy={center} r={radius}
@@ -343,11 +348,12 @@ export default function CoverageRings({
                       ? opacityTransition
                       : isSnappingGeometry
                       ? fillTransition
-                  : shouldFadeOutToZero
+                    : shouldFadeOutToZero
                         ? zeroFadeOutArcTransition
                         : arcTransition,
                 }}
               />
+              {overlayMode === 'footprint' ? overlayArc : null}
             </g>
           );
           })}

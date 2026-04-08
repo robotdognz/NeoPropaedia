@@ -465,6 +465,25 @@ export function buildCoverageRingsWithPreview<T extends ChecklistBackedReadingEn
   );
 }
 
+export function buildCoverageRingsWithHighlight<T extends ChecklistBackedReadingEntry>(
+  entries: T[],
+  checklistState: Record<string, boolean>,
+  highlightChecklistKeys: Iterable<string>,
+  options: {
+    includeSubsections?: boolean;
+  } = {}
+): CoverageRing[] {
+  const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
+  const highlightedChecklistKeys = new Set(highlightChecklistKeys);
+
+  return buildCoverageRingsHighlightForCompleted(
+    entries,
+    completedChecklistKeys,
+    highlightedChecklistKeys,
+    options,
+  );
+}
+
 function buildCoverageRingsPreviewForCompleted<T extends ChecklistBackedReadingEntry>(
   entries: T[],
   completedChecklistKeys: Set<string>,
@@ -553,6 +572,100 @@ function buildCoverageRingsPreviewForCompleted<T extends ChecklistBackedReadingE
           label: 'Subsections',
           count: coveredOutlineItems,
           addedCount: Math.max(0, previewCoveredOutlineItems - coveredOutlineItems),
+          total: totalSubsectionItems,
+          color: '#c4b5fd',
+        }]
+      : []),
+  ];
+}
+
+function buildCoverageRingsHighlightForCompleted<T extends ChecklistBackedReadingEntry>(
+  entries: T[],
+  completedChecklistKeys: Set<string>,
+  highlightedChecklistKeys: Set<string>,
+  options: {
+    includeSubsections?: boolean;
+  } = {}
+): CoverageRing[] {
+  const allParts = new Set<number>();
+  const allDivisions = new Set<string>();
+  const allSections = new Set<string>();
+  const allSubsectionKeys = new Set<string>();
+  const coveredSubsectionKeys = new Set<string>();
+  const highlightedSubsectionKeys = new Set<string>();
+  const coveredParts = new Set<number>();
+  const coveredDivisions = new Set<string>();
+  const coveredSections = new Set<string>();
+  const highlightedParts = new Set<number>();
+  const highlightedDivisions = new Set<string>();
+  const highlightedSections = new Set<string>();
+
+  for (const entry of entries) {
+    const isChecked = completedChecklistKeys.has(entry.checklistKey);
+    const isHighlighted = highlightedChecklistKeys.has(entry.checklistKey);
+
+    for (const section of entry.sections) {
+      allParts.add(section.partNumber);
+      allDivisions.add(section.divisionId);
+      allSections.add(section.sectionCode);
+      if (isChecked) {
+        coveredParts.add(section.partNumber);
+        coveredDivisions.add(section.divisionId);
+        coveredSections.add(section.sectionCode);
+      }
+      if (isHighlighted) {
+        highlightedParts.add(section.partNumber);
+        highlightedDivisions.add(section.divisionId);
+        highlightedSections.add(section.sectionCode);
+      }
+    }
+
+    for (const subsectionKey of entry.progressSubsectionKeys ?? []) {
+      allSubsectionKeys.add(subsectionKey);
+    }
+
+    if (isChecked) {
+      for (const subsectionKey of entry.progressSubsectionKeys ?? []) {
+        coveredSubsectionKeys.add(subsectionKey);
+      }
+    }
+    if (isHighlighted) {
+      for (const subsectionKey of entry.progressSubsectionKeys ?? []) {
+        highlightedSubsectionKeys.add(subsectionKey);
+      }
+    }
+  }
+
+  const includeSubsections = options.includeSubsections !== false;
+  const totalSubsectionItems = allSubsectionKeys.size;
+
+  return [
+    {
+      label: 'Parts',
+      count: coveredParts.size,
+      addedCount: highlightedParts.size,
+      total: allParts.size,
+      color: '#6366f1',
+    },
+    {
+      label: 'Divisions',
+      count: coveredDivisions.size,
+      addedCount: highlightedDivisions.size,
+      total: allDivisions.size,
+      color: '#8b5cf6',
+    },
+    {
+      label: 'Sections',
+      count: coveredSections.size,
+      addedCount: highlightedSections.size,
+      total: allSections.size,
+      color: '#a78bfa',
+    },
+    ...(includeSubsections && totalSubsectionItems > 0
+      ? [{
+          label: 'Subsections',
+          count: coveredSubsectionKeys.size,
+          addedCount: highlightedSubsectionKeys.size,
           total: totalSubsectionItems,
           color: '#c4b5fd',
         }]
@@ -730,6 +843,67 @@ export function buildPartCoverageSegmentsWithPreview<T extends ChecklistBackedRe
       total,
       fraction: total > 0 ? count / total : 0,
       addedFraction: total > 0 ? Math.max(0, previewCount - count) / total : 0,
+      depthScore,
+    };
+  });
+}
+
+export function buildPartCoverageSegmentsWithHighlight<T extends ChecklistBackedReadingEntry>(
+  entries: T[],
+  checklistState: Record<string, boolean>,
+  highlightedChecklistKeys: Iterable<string>,
+  layer: CoverageLayer,
+  partsMeta: PartMeta[],
+): PartCoverageSegment[] {
+  const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
+  const highlightedChecklistKeySet = new Set(highlightedChecklistKeys);
+
+  const partNumbers = partsMeta.map((partMeta) => partMeta.partNumber);
+  const { allByPart, coveredByPart } = groupCoverageByPartForCompleted(
+    entries,
+    completedChecklistKeys,
+    layer,
+    partNumbers,
+  );
+  const { coveredByPart: highlightedByPart } = groupCoverageByPartForCompleted(
+    entries,
+    highlightedChecklistKeySet,
+    layer,
+    partNumbers,
+  );
+
+  const belowLayers = LAYERS_BELOW[layer];
+  const belowData = belowLayers.map((belowLayer) =>
+    groupCoverageByPartForCompleted(entries, completedChecklistKeys, belowLayer, partNumbers),
+  );
+
+  return partsMeta.map((partMeta) => {
+    const all = allByPart.get(partMeta.partNumber) ?? new Set();
+    const covered = coveredByPart.get(partMeta.partNumber) ?? new Set();
+    const highlighted = highlightedByPart.get(partMeta.partNumber) ?? new Set();
+    const total = all.size;
+    const count = covered.size;
+    const highlightedCount = highlighted.size;
+
+    let depthScore = 0;
+    for (let i = 0; i < belowData.length; i += 1) {
+      const belowLayerData = belowData[i];
+      const belowAll = belowLayerData.allByPart.get(partMeta.partNumber) ?? new Set();
+      const belowCovered = belowLayerData.coveredByPart.get(partMeta.partNumber) ?? new Set();
+      const fraction = belowAll.size > 0 ? belowCovered.size / belowAll.size : 0;
+      const weight = Math.pow(100, belowData.length - i);
+      depthScore += fraction * weight;
+    }
+
+    return {
+      partNumber: partMeta.partNumber,
+      colorHex: partMeta.colorHex,
+      title: partMeta.title,
+      covered: count,
+      addedCovered: highlightedCount,
+      total,
+      fraction: total > 0 ? count / total : 0,
+      addedFraction: total > 0 ? highlightedCount / total : 0,
       depthScore,
     };
   });
