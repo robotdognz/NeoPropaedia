@@ -25,6 +25,8 @@ export interface VsiCardProps {
   whyTitle?: string;
   checked: boolean;
   onCheckedChange: (checked: boolean) => void;
+  shelved: boolean;
+  onShelvedChange: (shelved: boolean) => void;
 }
 
 export default function VsiCard({
@@ -42,6 +44,8 @@ export default function VsiCard({
   whyTitle = 'Why this book?',
   checked,
   onCheckedChange,
+  shelved,
+  onShelvedChange,
 }: VsiCardProps) {
   const readingSpeedWpm = useReadingSpeedState();
   const editionLabel = formatEditionLabel(edition);
@@ -65,6 +69,9 @@ export default function VsiCard({
       checked={checked}
       onCheckedChange={onCheckedChange}
       checkboxAriaLabel={`Mark ${title}${author ? ` by ${author}` : ''} as completed`}
+      shelved={shelved}
+      onShelvedChange={onShelvedChange}
+      shelfAriaLabel={`Add ${title}${author ? ` by ${author}` : ''} to shelf`}
     />
   );
 }

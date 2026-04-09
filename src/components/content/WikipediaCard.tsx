@@ -22,6 +22,8 @@ export interface WikipediaCardProps {
   whyTitle?: string;
   checked: boolean;
   onCheckedChange: (checked: boolean) => void;
+  shelved: boolean;
+  onShelvedChange: (shelved: boolean) => void;
 }
 
 export default function WikipediaCard({
@@ -37,6 +39,8 @@ export default function WikipediaCard({
   whyTitle = 'Why this article?',
   checked,
   onCheckedChange,
+  shelved,
+  onShelvedChange,
 }: WikipediaCardProps) {
   const readingSpeedWpm = useReadingSpeedState();
   const metadata = formatEstimatedReadingTime(wordCount, readingSpeedWpm) ?? null;
@@ -54,6 +58,9 @@ export default function WikipediaCard({
       checked={checked}
       onCheckedChange={onCheckedChange}
       checkboxAriaLabel={`Mark ${title} as read`}
+      shelved={shelved}
+      onShelvedChange={onShelvedChange}
+      shelfAriaLabel={`Add ${title} to shelf`}
     />
   );
 }

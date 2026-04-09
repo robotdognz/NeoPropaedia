@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { useReadingShelfState } from '../../hooks/useReadingShelfState';
 import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
 import { useReadingSpeedState } from '../../hooks/useReadingSpeedState';
 import VsiCard from './VsiCard';
@@ -28,6 +29,7 @@ import {
   wikipediaChecklistKey,
   writeChecklistState,
 } from '../../utils/readingChecklist';
+import { writeShelfState } from '../../utils/readingShelf';
 import {
   OUTLINE_SELECT_EVENT,
   filterMappingsForOutline,
@@ -192,6 +194,7 @@ export default function SectionReadingRecommendations({
   const [hideChecked, setHideChecked] = useState(() => getHideCheckedReadings());
   const panelRef = useRef<HTMLElement>(null);
   const readingSpeedWpm = useReadingSpeedState();
+  const shelfState = useReadingShelfState();
   const activeType = resolveAvailableReadingType(selectedType, availableTypes);
 
   useEffect(() => {
@@ -294,6 +297,8 @@ export default function SectionReadingRecommendations({
                   flags={[precision]}
                   checked={Boolean(checklistState[checklistKey])}
                   onCheckedChange={(checked) => writeChecklistState(checklistKey, checked)}
+                  shelved={Boolean(shelfState[checklistKey])}
+                  onShelvedChange={(shelved) => writeShelfState(checklistKey, shelved)}
                 />
               );
             })}
@@ -358,6 +363,8 @@ export default function SectionReadingRecommendations({
                   flags={[precision]}
                   checked={Boolean(checklistState[checklistKey])}
                   onCheckedChange={(checked) => writeChecklistState(checklistKey, checked)}
+                  shelved={Boolean(shelfState[checklistKey])}
+                  onShelvedChange={(shelved) => writeShelfState(checklistKey, shelved)}
                 />
               );
             })}
@@ -426,6 +433,8 @@ export default function SectionReadingRecommendations({
                   durationSeconds={episode.durationSeconds}
                   checked={Boolean(checklistState[checklistKey])}
                   onCheckedChange={(checked) => writeChecklistState(checklistKey, checked)}
+                  shelved={Boolean(shelfState[checklistKey])}
+                  onShelvedChange={(shelved) => writeShelfState(checklistKey, shelved)}
                 />
               );
             })}
@@ -480,6 +489,10 @@ export default function SectionReadingRecommendations({
                 onCheckedChange={(checked) => {
                   writeChecklistState(checklistKey, checked);
                 }}
+                shelved={Boolean(shelfState[checklistKey])}
+                onShelvedChange={(shelved) => {
+                  writeShelfState(checklistKey, shelved);
+                }}
               />
             );
           })}
@@ -501,6 +514,7 @@ export default function SectionReadingRecommendations({
     hideChecked,
     iotEpisodes,
     macropaediaReferences,
+    shelfState,
     sectionCode,
     sectionOutlineText,
     sectionTitle,

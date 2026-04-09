@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
+import { useReadingShelfState } from '../../hooks/useReadingShelfState';
 import Accordion from '../ui/Accordion';
 import { slugify } from '../../utils/helpers';
 import {
@@ -8,12 +9,14 @@ import {
   subscribeChecklistState,
   writeChecklistState,
 } from '../../utils/readingChecklist';
+import { writeShelfState } from '../../utils/readingShelf';
 import {
   OUTLINE_SELECT_EVENT,
   type OutlineSelectionDetail,
 } from '../../utils/vsiOutlineFilter';
 import { getReadingPreference } from '../../utils/readingPreference';
 import { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
+import ReadingActionControls from './ReadingActionControls';
 
 export interface MacropaediaRefsProps {
   references: string[];
@@ -23,6 +26,7 @@ export interface MacropaediaRefsProps {
 
 export default function MacropaediaRefs({ references, sectionCode, baseUrl }: MacropaediaRefsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
+  const shelfState = useReadingShelfState();
   const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(() => getReadingPreference() === 'macropaedia' ? 0 : undefined);
   const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(() => getReadingPreference() !== 'macropaedia' ? 0 : undefined);
   const sectionRef = useRef<HTMLElement>(null);
@@ -70,6 +74,7 @@ export default function MacropaediaRefs({ references, sectionCode, baseUrl }: Ma
         {references.map((ref, i) => {
           const checklistKey = macropaediaChecklistKey(ref);
           const isChecked = Boolean(checklistState[checklistKey]);
+          const isShelved = Boolean(shelfState[checklistKey]);
 
           return (
             <li key={i} class="flex items-start justify-between gap-3 rounded-md px-2 py-1.5 text-gray-500 hover:bg-gray-50">
@@ -95,18 +100,14 @@ export default function MacropaediaRefs({ references, sectionCode, baseUrl }: Ma
               >
                 {ref}
               </a>
-              <label class="inline-flex flex-shrink-0 items-center gap-2 text-xs font-sans font-medium text-gray-500">
-                <input
-                  type="checkbox"
-                  checked={isChecked}
-                  onChange={(event) => {
-                    writeChecklistState(checklistKey, (event.currentTarget as HTMLInputElement).checked);
-                  }}
-                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                  aria-label={`Mark ${ref} as completed`}
-                />
-                Done
-              </label>
+              <ReadingActionControls
+                checked={isChecked}
+                onCheckedChange={(checked) => writeChecklistState(checklistKey, checked)}
+                checkboxAriaLabel={`Mark ${ref} as completed`}
+                shelved={isShelved}
+                onShelvedChange={(shelved) => writeShelfState(checklistKey, shelved)}
+                shelfAriaLabel={`Add ${ref} to shelf`}
+              />
             </li>
           );
         })}

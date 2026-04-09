@@ -1,9 +1,12 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { writeChecklistState } from '../../utils/readingChecklist';
+import { writeShelfState } from '../../utils/readingShelf';
 import { type IotAggregateEntry } from '../../utils/readingData';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
+import { useReadingShelfState } from '../../hooks/useReadingShelfState';
 import { useHashAnchorCorrection } from '../../hooks/useHashAnchorCorrection';
+import { useReadingLibraryControlsState } from '../../hooks/useReadingLibraryControlsState';
 import {
   buildCoverageRings,
   buildLayerCoverageSnapshot,
@@ -22,7 +25,8 @@ import CoverageGapPanel from './CoverageGapPanel';
 import CompletedTimeStatistics from './CompletedTimeStatistics';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSectionLinks from './ReadingSectionLinks';
-import ReadingSpreadPath from './ReadingSpreadPath';
+import ReadingActionControls from './ReadingActionControls';
+import ReadingLibraryStatisticsAccordion from './ReadingLibraryStatisticsAccordion';
 import { formatIotEpisodeMeta } from '../../utils/iotMetadata';
 import { subsectionPrecisionSummary } from '../../utils/mappingPrecision';
 import {
@@ -37,7 +41,6 @@ export interface IotLibraryProps {
   partsMeta?: PartMeta[];
 }
 
-type ReadFilter = 'all' | 'unread' | 'read';
 type SortField = 'section' | 'part' | 'division' | 'subsection' | 'title' | 'date' | 'duration';
 type SortDirection = 'asc' | 'desc';
 
@@ -63,14 +66,6 @@ function activeCoverageDescription(layer: CoverageLayer): string {
     default:
       return '';
   }
-}
-
-function emptyRecommendationMessage(layer: CoverageLayer, isComplete: boolean): string {
-  if (isComplete) {
-    return `You have already covered every mapped ${coverageLayerLabel(layer, 1)} in this tab.`;
-  }
-
-  return `No unheard episode adds any further ${coverageLayerLabel(layer, 1)} coverage right now.`;
 }
 
 function precisionBadgeText(entry: IotAggregateEntry): string | null {
@@ -107,15 +102,21 @@ export default function IotLibrary({
   partsMeta,
 }: IotLibraryProps) {
   const checklistState = useReadingChecklistState();
+  const shelfState = useReadingShelfState();
+  const {
+    checkedOnly,
+    shelvedOnly,
+    sortField,
+    sortDirection,
+    setCheckedOnly,
+    setShelvedOnly,
+    setSortField,
+    setSortDirection,
+  } = useReadingLibraryControlsState<SortField>('iot', 'section');
   useHashAnchorCorrection('iot-library');
   const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
   const [query, setQuery] = useState('');
-  const [readFilter, setReadFilter] = useState<ReadFilter>('all');
-  const [sortField, setSortField] = useState<SortField>('section');
-  const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE);
-  const [spreadPathOpen, setSpreadPathOpen] = useState(false);
-
   const changeLayer = (layer: CoverageLayer) => {
     setSelectedLayer(layer);
     setCoverageLayerPreference(layer);
@@ -131,7 +132,7 @@ export default function IotLibrary({
 
   useEffect(() => {
     setVisibleCount(INITIAL_VISIBLE);
-  }, [query, readFilter, sortField, sortDirection]);
+  }, [query, checkedOnly, shelvedOnly, sortField, sortDirection]);
 
   const normalizedQuery = query.trim().toLowerCase();
   const completedCount = countCompletedEntries(entries, checklistState);
@@ -164,14 +165,12 @@ export default function IotLibrary({
     return buildPartCoverageSegments(entries, checklistState, activeLayer, partsMeta);
   }, [entries, checklistState, activeLayer, partsMeta]);
   const activeSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === activeLayer) ?? layerSnapshots[0];
-  const activePath = activeSnapshot
-    ? activeSnapshot.path.map(({ entry, ...rest }) => ({
-        ...entry,
-        ...rest,
-      }))
-    : [];
   const isLayerComplete = activeSnapshot
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
+    : false;
+  const partSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === 'part') ?? layerSnapshots[0];
+  const isPartComplete = partSnapshot
+    ? partSnapshot.currentlyCoveredCount >= partSnapshot.totalCoverageCount
     : false;
   const layerMeta = activeSnapshot ? COVERAGE_LAYER_META[activeSnapshot.layer] : COVERAGE_LAYER_META.section;
   const coverageCounts = useMemo(() => new Map(
@@ -192,8 +191,9 @@ export default function IotLibrary({
   const filteredEntries = [...entries]
     .filter((entry) => {
       const isChecked = Boolean(checklistState[entry.checklistKey]);
-      if (readFilter === 'read' && !isChecked) return false;
-      if (readFilter === 'unread' && isChecked) return false;
+      const isShelved = Boolean(shelfState[entry.checklistKey]);
+      if (checkedOnly && !isChecked) return false;
+      if (shelvedOnly && !isShelved) return false;
       return matchesQuery(entry, normalizedQuery);
     })
     .sort((a, b) => {
@@ -258,48 +258,29 @@ export default function IotLibrary({
               sourceLabel="BBC In Our Time"
             />
           }
-        />
-
-        <ReadingSpreadPath
-          isOpen={spreadPathOpen}
-          onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
-          steps={activePath}
-          remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
-          checklistState={checklistState}
-          onCheckedChange={writeChecklistState}
-          getHref={(step) => `${baseUrl}/iot/${step.pid}`}
-          renderMeta={(step) => (
-            <>
-              {formatIotEpisodeMeta(step) ? (
-                <p class="mt-1 text-sm text-gray-600">{formatIotEpisodeMeta(step)}</p>
-              ) : null}
-              {activeLayer === 'subsection' && precisionBadgeText(step) ? (
-                <p class="mt-1 text-xs text-gray-500">{precisionBadgeText(step)}</p>
-              ) : null}
-            </>
-          )}
-          checkboxAriaLabel={(step) => `Mark ${step.title} as listened`}
-          itemSingular="episode"
-          itemPlural="episodes"
-          coverageLayer={activeLayer}
-          coverageUnitSingular={layerMeta.label}
-          coverageUnitPlural={layerMeta.pluralLabel}
-          getEstimatedMinutes={(step) => step.durationSeconds ? step.durationSeconds / 60 : undefined}
-          estimatedTimeApproximate={false}
-          emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
-          baseUrl={baseUrl}
-          sectionLinksVariant="chips"
+          showSummaryCards={false}
         />
       </div>
-
-      <CoverageGapPanel
-        entries={entries}
-        checklistState={checklistState}
-        activeLayer={activeLayer}
-        baseUrl={baseUrl}
-        itemLabelPlural="episodes"
-        isComplete={isLayerComplete}
-      />
+      <ReadingLibraryStatisticsAccordion
+        totalLabel="Episodes"
+        totalCount={entries.length}
+        totalDescription="Mapped BBC In Our Time episodes in the listening list."
+        completedCount={completedCount}
+        completedDescription="Shared with the Done boxes on Section pages."
+        activeCoverageLabel="Part Coverage"
+        activeCoverageCount={partSnapshot?.currentlyCoveredCount ?? 0}
+        activeCoverageTotal={partSnapshot?.totalCoverageCount ?? 0}
+        activeCoverageDescription={activeCoverageDescription('part')}
+      >
+        <CoverageGapPanel
+          entries={entries}
+          checklistState={checklistState}
+          activeLayer="part"
+          baseUrl={baseUrl}
+          itemLabelPlural="episodes"
+          isComplete={isPartComplete}
+        />
+      </ReadingLibraryStatisticsAccordion>
 
       <section id="iot-library" class="scroll-mt-24 rounded-2xl border border-gray-200 bg-white p-4 sm:p-6">
         <div class="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
@@ -309,7 +290,7 @@ export default function IotLibrary({
               Search the mapped episode list and sort it by coverage across Parts, Divisions, Sections, or Subsections.
             </p>
             <p class="mt-1 text-xs text-gray-500">
-              These controls only change the full episode list below. The Outline Layer tabs above drive the adaptive path and gap panels.
+              These controls only change the full episode list below. The Outline Layer tabs above drive the coverage view; the statistics drawer stays focused on overall Parts coverage.
             </p>
           </div>
           <div class="text-sm text-gray-500">
@@ -328,18 +309,29 @@ export default function IotLibrary({
               class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-400 focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
             />
           </label>
-          <label class="block">
-            <span class="mb-2 block text-sm font-medium text-gray-700">Read Status</span>
-            <select
-              value={readFilter}
-              onChange={(event) => setReadFilter((event.currentTarget as HTMLSelectElement).value as ReadFilter)}
-              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
-            >
-              <option value="all">All episodes</option>
-              <option value="unread">Unheard only</option>
-              <option value="read">Heard only</option>
-            </select>
-          </label>
+          <div class="block">
+            <span class="mb-2 block text-sm font-medium text-gray-700">Filters</span>
+            <div class="flex flex-col gap-2 rounded-lg border border-gray-300 bg-white px-3 py-2.5 shadow-sm">
+              <label class="inline-flex items-center gap-2 text-sm text-gray-700">
+                <input
+                  type="checkbox"
+                  checked={checkedOnly}
+                  onChange={(event) => setCheckedOnly((event.currentTarget as HTMLInputElement).checked)}
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                Checked only
+              </label>
+              <label class="inline-flex items-center gap-2 text-sm text-gray-700">
+                <input
+                  type="checkbox"
+                  checked={shelvedOnly}
+                  onChange={(event) => setShelvedOnly((event.currentTarget as HTMLInputElement).checked)}
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                Shelved only
+              </label>
+            </div>
+          </div>
           <label class="block">
             <span class="mb-2 block text-sm font-medium text-gray-700">Sort By</span>
             <select
@@ -374,6 +366,7 @@ export default function IotLibrary({
             <div class="mt-6 space-y-4">
               {visibleEntries.map((entry) => {
                 const isChecked = Boolean(checklistState[entry.checklistKey]);
+                const isShelved = Boolean(shelfState[entry.checklistKey]);
                 const metadata = formatIotEpisodeMeta(entry);
 
                 return (
@@ -389,16 +382,15 @@ export default function IotLibrary({
                           {entry.sectionCount > 0 && <span>{entry.sectionCount} Sections</span>}
                         </p>
                       </div>
-                      <label class="inline-flex flex-shrink-0 items-center gap-2 text-xs font-medium text-gray-500">
-                        <input
-                          type="checkbox"
-                          checked={isChecked}
-                          onChange={(event) => writeChecklistState(entry.checklistKey, (event.currentTarget as HTMLInputElement).checked)}
-                          class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          aria-label={`Mark ${entry.title} as listened`}
-                        />
-                        Done
-                      </label>
+                      <ReadingActionControls
+                        checked={isChecked}
+                        onCheckedChange={(checked) => writeChecklistState(entry.checklistKey, checked)}
+                        checkboxAriaLabel={`Mark ${entry.title} as listened`}
+                        shelved={isShelved}
+                        onShelvedChange={(shelved) => writeShelfState(entry.checklistKey, shelved)}
+                        shelfAriaLabel={`Add ${entry.title} to shelf`}
+                        ribbonOffsetClass="-mt-5"
+                      />
                     </div>
 
                     <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium">
@@ -431,7 +423,9 @@ export default function IotLibrary({
           </>
         ) : (
           <div class="mt-6 rounded-xl border border-dashed border-gray-300 bg-white px-4 py-6 text-sm text-gray-600">
-            No episodes match your filters.
+            {checkedOnly || shelvedOnly
+              ? 'No episodes matched those filters.'
+              : 'No episodes match your filters.'}
           </div>
         )}
       </section>

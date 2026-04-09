@@ -2,6 +2,7 @@
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import ReadingDetailCoveragePreview from '../../components/content/ReadingDetailCoveragePreview';
 import ReadingCheckbox from '../../components/content/ReadingCheckbox';
+import ShelfCheckbox from '../../components/content/ShelfCheckbox';
 import { sectionUrl } from '../../utils/helpers';
 import { iotChecklistKey } from '../../utils/readingChecklist';
 import iotCatalog from '../../data/iot-catalog.json';
@@ -197,6 +198,7 @@ const metadata = formatIotEpisodeMeta(episode);
       )}
       <div class="mt-3 flex flex-wrap items-center gap-4">
         <ReadingCheckbox client:idle checklistKey={iotChecklistKey(episode.pid)} />
+        <ShelfCheckbox client:idle checklistKey={iotChecklistKey(episode.pid)} />
         <a
           href={episode.url}
           target="_blank"

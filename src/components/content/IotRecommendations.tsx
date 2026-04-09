@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
+import { useReadingShelfState } from '../../hooks/useReadingShelfState';
 import Accordion, { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
 import IotCard from './IotCard';
 import {
@@ -8,6 +9,7 @@ import {
   subscribeChecklistState,
   writeChecklistState,
 } from '../../utils/readingChecklist';
+import { writeShelfState } from '../../utils/readingShelf';
 import {
   filterEpisodesForOutline,
   OUTLINE_SELECT_EVENT,
@@ -37,6 +39,7 @@ export interface IotRecommendationsProps {
 
 export default function IotRecommendations({ episodes, sectionCode, baseUrl }: IotRecommendationsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
+  const shelfState = useReadingShelfState();
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
   const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(() => getReadingPreference() === 'iot' ? 0 : undefined);
   const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(() => getReadingPreference() !== 'iot' ? 0 : undefined);
@@ -156,6 +159,8 @@ export default function IotRecommendations({ episodes, sectionCode, baseUrl }: I
                   durationSeconds={episode.durationSeconds}
                   checked={isChecked}
                   onCheckedChange={(checked) => writeChecklistState(checkKey, checked)}
+                  shelved={Boolean(shelfState[checkKey])}
+                  onShelvedChange={(shelved) => writeShelfState(checkKey, shelved)}
                 />
               );
             })}

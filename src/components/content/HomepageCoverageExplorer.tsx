@@ -1,27 +1,34 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
+import { useReadingShelfState } from '../../hooks/useReadingShelfState';
 import { useReadingSpeedState } from '../../hooks/useReadingSpeedState';
 import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
 import { writeChecklistState } from '../../utils/readingChecklist';
+import { writeShelfState } from '../../utils/readingShelf';
 import { fetchHomepageCoverageSource } from '../../utils/homepageCoverageSource';
 import type { HomepageCoverageSource } from '../../utils/homepageCoverageTypes';
 import {
   getCoverageLayerPreference,
+  getReadingPoolScopePreference,
   getReadingPreference,
   READING_TYPE_LABELS,
   READING_TYPE_ORDER,
   READING_TYPE_UI_META,
   setCoverageLayerPreference,
+  setReadingPoolScopePreference,
   setReadingPreference,
   subscribeCoverageLayerPreference,
+  subscribeReadingPoolScopePreference,
   subscribeReadingPreference,
+  type ReadingPoolScope,
   type ReadingType,
 } from '../../utils/readingPreference';
 import {
   COVERAGE_LAYER_META,
   buildCoverageRings,
   buildLayerCoverageSnapshot,
+  buildLayerCoverageSnapshotWithReferenceEntries,
   buildPartCoverageSegments,
   type CoverageRing,
   completedChecklistKeysFromState,
@@ -87,9 +94,25 @@ function availableLayers(source: HomepageCoverageSource): CoverageLayer[] {
   return source.includeSubsections ? ALL_LAYERS : ALL_LAYERS.filter((layer) => layer !== 'subsection');
 }
 
-function emptyRecommendationMessage(source: HomepageCoverageSource, layer: CoverageLayer, isComplete: boolean): string {
+function emptyRecommendationMessage(
+  source: HomepageCoverageSource,
+  layer: CoverageLayer,
+  isComplete: boolean,
+  scope: ReadingPoolScope,
+  shelvedCount: number,
+): string {
+  if (scope === 'shelved' && shelvedCount === 0) {
+    return `Nothing in your shelf is available in this ${READING_TYPE_LABELS[source.type]} view yet. Add readings to Shelf to rank them here.`;
+  }
+
   if (isComplete) {
-    return `You have already covered every mapped ${coverageLayerLabel(layer, 1)} in this view.`;
+    return scope === 'shelved'
+      ? `You have already covered every mapped ${coverageLayerLabel(layer, 1)} reachable from the readings on your shelf.`
+      : `You have already covered every mapped ${coverageLayerLabel(layer, 1)} in this view.`;
+  }
+
+  if (scope === 'shelved') {
+    return `No unread shelved ${source.itemSingular} adds any further ${coverageLayerLabel(layer, 1)} coverage right now.`;
   }
 
   return `No unread ${source.itemSingular} adds any further ${coverageLayerLabel(layer, 1)} coverage right now.`;
@@ -203,10 +226,12 @@ export default function HomepageCoverageExplorer({
 }: HomepageCoverageExplorerProps) {
   const readingSpeedWpm = useReadingSpeedState();
   const checklistState = useReadingChecklistState();
+  const shelfState = useReadingShelfState();
   const wikiLevel = useWikipediaLevel();
   const [selectedType, setSelectedType] = useState<ReadingType>('vsi');
   const [sourceCache, setSourceCache] = useState<Partial<Record<ReadingType, HomepageCoverageSource>>>({});
   const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
+  const [selectedScope, setSelectedScope] = useState<ReadingPoolScope>('all');
   const [spreadPathOpen, setSpreadPathOpen] = useState(false);
   const [loadingType, setLoadingType] = useState<ReadingType | null>('vsi');
   const [errorType, setErrorType] = useState<ReadingType | null>(null);
@@ -243,6 +268,7 @@ export default function HomepageCoverageExplorer({
     setSelectedType(preferred);
     void ensureSourceLoaded(preferred);
     setSelectedLayer(getCoverageLayerPreference());
+    setSelectedScope(getReadingPoolScopePreference());
     try {
       setSpreadPathOpen(window.localStorage.getItem(SPREAD_PATH_STORAGE_KEY) === '1');
     } catch {
@@ -270,9 +296,14 @@ export default function HomepageCoverageExplorer({
       setSelectedLayer(layer);
     });
 
+    const unsubScope = subscribeReadingPoolScopePreference((scope) => {
+      setSelectedScope(scope);
+    });
+
     return () => {
       unsubType();
       unsubLayer();
+      unsubScope();
     };
   }, []);
 
@@ -301,18 +332,32 @@ export default function HomepageCoverageExplorer({
     [checklistState],
   );
 
+  const shelvedEntries = useMemo(
+    () => filteredSource?.entries.filter((entry) => Boolean(shelfState[entry.checklistKey])) ?? [],
+    [filteredSource, shelfState],
+  );
+
   const supportedLayers = useMemo(
     () => (filteredSource ? availableLayers(filteredSource) : DEFAULT_SUPPORTED_LAYERS),
     [filteredSource?.includeSubsections],
   );
 
-  // All computations run eagerly against the active source (including expensive spread paths)
   const snapshots = useMemo(() => {
     if (!filteredSource) return [];
+    if (selectedScope === 'shelved') {
+      return supportedLayers.map((layer) =>
+        buildLayerCoverageSnapshotWithReferenceEntries(
+          shelvedEntries,
+          filteredSource.entries,
+          completedChecklistKeys,
+          layer,
+        ),
+      );
+    }
     return supportedLayers.map((layer) =>
       buildLayerCoverageSnapshot(filteredSource.entries, completedChecklistKeys, layer),
     );
-  }, [completedChecklistKeys, filteredSource, supportedLayers]);
+  }, [completedChecklistKeys, filteredSource, selectedScope, shelvedEntries, supportedLayers]);
 
   const tabSnapshots = useMemo(
     () =>
@@ -405,6 +450,18 @@ export default function HomepageCoverageExplorer({
     setSelectedLayer(layer);
     setCoverageLayerPreference(layer);
   };
+  const scopeOptions = [
+    {
+      value: 'all' as const,
+      label: 'All',
+      meta: filteredSource ? String(filteredSource.entries.length) : undefined,
+    },
+    {
+      value: 'shelved' as const,
+      label: 'Shelved',
+      meta: filteredSource ? String(shelvedEntries.length) : undefined,
+    },
+  ];
 
   const completedViewStatistics = useMemo(() => {
     if (!filteredSource) return null;
@@ -438,6 +495,13 @@ export default function HomepageCoverageExplorer({
       coverageLayerOptions={layerOptions}
       onCoverageLayerChange={selectLayer}
       coverageLayerAriaLabel="Whole outline coverage layer"
+      scopeValue={selectedScope}
+      scopeOptions={scopeOptions}
+      onScopeChange={(scope) => {
+        setSelectedScope(scope);
+        setReadingPoolScopePreference(scope);
+      }}
+      scopeAriaLabel="Whole outline recommendation scope"
       showWikipediaLevelSelector
     />
   );
@@ -514,13 +578,16 @@ export default function HomepageCoverageExplorer({
               scrollResetKey={`${selectedType}:${activeLayer}`}
               remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
               checklistState={checklistState}
+              shelfState={shelfState}
               onCheckedChange={writeChecklistState}
+              onShelvedChange={writeShelfState}
               getHref={(step) => step.href}
               renderMeta={(step) => {
                 const meta = formatHomepageEntryMeta(filteredSource.type, step, readingSpeedWpm);
                 return meta ? <p class="mt-1 text-sm text-gray-600">{meta}</p> : null;
               }}
               checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
+              shelfAriaLabel={(step) => `Add ${step.title} to shelf`}
               itemSingular={filteredSource.itemSingular}
               itemPlural={filteredSource.itemPlural}
               coverageLayer={activeLayer}
@@ -528,7 +595,13 @@ export default function HomepageCoverageExplorer({
               coverageUnitPlural={coverageLayerLabel(activeLayer, 2)}
               getEstimatedMinutes={(step) => estimateHomepageEntryMinutes(filteredSource.type, step, readingSpeedWpm)}
               estimatedTimeApproximate={filteredSource.type !== 'iot'}
-              emptyMessage={emptyRecommendationMessage(filteredSource, activeLayer, isLayerComplete)}
+              emptyMessage={emptyRecommendationMessage(
+                filteredSource,
+                activeLayer,
+                isLayerComplete,
+                selectedScope,
+                shelvedEntries.length,
+              )}
               baseUrl={baseUrl}
               sectionLinksVariant="chips"
             />

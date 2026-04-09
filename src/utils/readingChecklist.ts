@@ -97,7 +97,7 @@ function resolveVsiChecklistId(title: string, author?: string, printIsbn?: strin
   return resolveVsiIdByTitleSlug(normalizeChecklistKeyPart(title));
 }
 
-function canonicalizeChecklistKey(key: string): string {
+export function canonicalizeChecklistKey(key: string): string {
   if (!key.startsWith('vsi:')) return key;
   if (key.startsWith('vsi:id:')) return key;
 

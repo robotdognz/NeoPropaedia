@@ -3,6 +3,13 @@
  */
 
 export type ReadingType = 'vsi' | 'wikipedia' | 'iot' | 'macropaedia';
+export type ReadingPoolScope = 'all' | 'shelved';
+export interface ReadingLibraryControlsPreference<TSortField extends string = string> {
+  checkedOnly: boolean;
+  shelvedOnly: boolean;
+  sortField: TSortField;
+  sortDirection: 'asc' | 'desc';
+}
 
 const STORAGE_KEY = 'propaedia-reading-preference';
 const CHANGE_EVENT = 'propaedia:reading-preference-change';
@@ -177,4 +184,105 @@ export function subscribeReadingPreference(callback: (type: ReadingType) => void
     document.removeEventListener(CHANGE_EVENT, handler);
     window.removeEventListener('storage', storageHandler);
   };
+}
+
+// --- Reading pool scope preference ---
+
+const READING_POOL_SCOPE_KEY = 'propaedia-reading-pool-scope';
+const READING_POOL_SCOPE_EVENT = 'propaedia:reading-pool-scope-change';
+
+export function getReadingPoolScopePreference(): ReadingPoolScope {
+  if (typeof window === 'undefined') return 'all';
+  try {
+    const stored = localStorage.getItem(READING_POOL_SCOPE_KEY);
+    if (stored === 'all' || stored === 'shelved') {
+      return stored;
+    }
+  } catch {
+    // Ignore
+  }
+  return 'all';
+}
+
+export function setReadingPoolScopePreference(scope: ReadingPoolScope): void {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.setItem(READING_POOL_SCOPE_KEY, scope);
+  } catch {
+    // Ignore
+  }
+  document.dispatchEvent(new CustomEvent(READING_POOL_SCOPE_EVENT, { detail: scope }));
+}
+
+export function subscribeReadingPoolScopePreference(callback: (scope: ReadingPoolScope) => void): () => void {
+  const handler = (event: Event) => {
+    callback((event as CustomEvent<ReadingPoolScope>).detail);
+  };
+  document.addEventListener(READING_POOL_SCOPE_EVENT, handler);
+
+  const storageHandler = (event: StorageEvent) => {
+    if (event.key === READING_POOL_SCOPE_KEY && (event.newValue === 'all' || event.newValue === 'shelved')) {
+      callback(event.newValue);
+    }
+  };
+  window.addEventListener('storage', storageHandler);
+
+  return () => {
+    document.removeEventListener(READING_POOL_SCOPE_EVENT, handler);
+    window.removeEventListener('storage', storageHandler);
+  };
+}
+
+// --- Reading library controls preference ---
+
+const READING_LIBRARY_CONTROLS_KEY_PREFIX = 'propaedia-reading-library-controls';
+
+function readingLibraryControlsKey(readingType: ReadingType): string {
+  return `${READING_LIBRARY_CONTROLS_KEY_PREFIX}:${readingType}`;
+}
+
+export function getReadingLibraryControlsPreference<TSortField extends string>(
+  readingType: ReadingType,
+  defaultSortField: TSortField,
+  defaultSortDirection: 'asc' | 'desc' = 'desc'
+): ReadingLibraryControlsPreference<TSortField> {
+  const fallback: ReadingLibraryControlsPreference<TSortField> = {
+    checkedOnly: false,
+    shelvedOnly: false,
+    sortField: defaultSortField,
+    sortDirection: defaultSortDirection,
+  };
+
+  if (typeof window === 'undefined') return fallback;
+
+  try {
+    const raw = localStorage.getItem(readingLibraryControlsKey(readingType));
+    if (!raw) return fallback;
+
+    const parsed = JSON.parse(raw) as Partial<ReadingLibraryControlsPreference<string>>;
+
+    return {
+      checkedOnly: parsed.checkedOnly === true,
+      shelvedOnly: parsed.shelvedOnly === true,
+      sortField: (typeof parsed.sortField === 'string' ? parsed.sortField : defaultSortField) as TSortField,
+      sortDirection: parsed.sortDirection === 'asc' || parsed.sortDirection === 'desc'
+        ? parsed.sortDirection
+        : defaultSortDirection,
+    };
+  } catch {
+    return fallback;
+  }
+}
+
+export function setReadingLibraryControlsPreference(
+  readingType: ReadingType,
+  preference: ReadingLibraryControlsPreference
+): void {
+  if (typeof window === 'undefined') return;
+
+  try {
+    localStorage.setItem(readingLibraryControlsKey(readingType), JSON.stringify(preference));
+  } catch {
+    // Ignore
+  }
 }

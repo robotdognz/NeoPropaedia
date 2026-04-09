@@ -4,6 +4,7 @@ import type { ReadingSectionSummary } from '../../utils/readingData';
 import { formatEstimatedMinutes } from '../../utils/readingSpeed';
 import HorizontalCardScroll from '../ui/HorizontalCardScroll';
 import ReadingSectionLinks from './ReadingSectionLinks';
+import ReadingActionControls from './ReadingActionControls';
 
 interface SpreadPathStepBase {
   title: string;
@@ -21,10 +22,13 @@ interface ReadingSpreadPathProps<TStep extends SpreadPathStepBase> {
   scrollResetKey?: string;
   remainingCoverageCount: number;
   checklistState: Record<string, boolean>;
+  shelfState: Record<string, boolean>;
   onCheckedChange: (checklistKey: string, checked: boolean) => void;
+  onShelvedChange: (checklistKey: string, shelved: boolean) => void;
   getHref: (step: TStep) => string;
   renderMeta?: (step: TStep) => ComponentChildren;
   checkboxAriaLabel: (step: TStep) => string;
+  shelfAriaLabel: (step: TStep) => string;
   itemSingular: string;
   itemPlural: string;
   coverageLayer: CoverageLayer;
@@ -49,10 +53,13 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
   scrollResetKey,
   remainingCoverageCount,
   checklistState,
+  shelfState,
   onCheckedChange,
+  onShelvedChange,
   getHref,
   renderMeta,
   checkboxAriaLabel,
+  shelfAriaLabel,
   itemSingular,
   itemPlural,
   coverageLayer,
@@ -121,7 +128,7 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
               Adds {bestNext.newCoverageCount} new {bestNext.newCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural} and touches {bestNext.sectionCount} linked {bestNext.sectionCount === 1 ? 'Section' : 'Sections'}.
             </p>
           </div>
-        ) : !bestNext ? (
+        ) : !bestNext && !isOpen ? (
           <p class="text-sm text-amber-900">{emptyMessage}</p>
         ) : null}
       </div>
@@ -131,6 +138,7 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
         <HorizontalCardScroll resetKey={scrollResetKey} singleCardOnMobile>
           {steps.map((step, index) => {
             const isChecked = Boolean(checklistState[step.checklistKey]);
+            const isShelved = Boolean(shelfState[step.checklistKey]);
             const newPartsSpanned = countPartsSpanned(step.newSections);
             const crossPartContext = coverageLayer !== 'part' && newPartsSpanned > 0
               ? ` across ${newPartsSpanned} ${newPartsSpanned === 1 ? 'Part' : 'Parts'}`
@@ -148,18 +156,14 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
                     </h3>
                     {renderMeta ? renderMeta(step) : null}
                   </div>
-                  <label class="inline-flex flex-shrink-0 items-center gap-2 text-xs font-medium text-gray-500">
-                    <input
-                      type="checkbox"
-                      checked={isChecked}
-                      onChange={(event) => {
-                        onCheckedChange(step.checklistKey, (event.currentTarget as HTMLInputElement).checked);
-                      }}
-                      class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                      aria-label={checkboxAriaLabel(step)}
-                    />
-                    Done
-                  </label>
+                  <ReadingActionControls
+                    checked={isChecked}
+                    onCheckedChange={(checked) => onCheckedChange(step.checklistKey, checked)}
+                    checkboxAriaLabel={checkboxAriaLabel(step)}
+                    shelved={isShelved}
+                    onShelvedChange={(shelved) => onShelvedChange(step.checklistKey, shelved)}
+                    shelfAriaLabel={shelfAriaLabel(step)}
+                  />
                 </div>
 
                 <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium">

@@ -1,6 +1,6 @@
 import { h, type ComponentChildren } from 'preact';
 import type { CoverageLayer } from '../../utils/readingLibrary';
-import type { ReadingType } from '../../utils/readingPreference';
+import type { ReadingPoolScope, ReadingType } from '../../utils/readingPreference';
 import {
   setStoredWikipediaLevel,
   wikipediaLevelCount,
@@ -19,6 +19,10 @@ interface ReadingSelectionStripProps {
   coverageLayerOptions?: SelectorCardRailOption<CoverageLayer>[];
   onCoverageLayerChange?: (layer: CoverageLayer) => void;
   coverageLayerAriaLabel?: string;
+  scopeValue?: ReadingPoolScope;
+  scopeOptions?: SelectorCardRailOption<ReadingPoolScope>[];
+  onScopeChange?: (scope: ReadingPoolScope) => void;
+  scopeAriaLabel?: string;
   supplementaryControls?: ComponentChildren;
   showWikipediaLevelSelector?: boolean;
 }
@@ -32,6 +36,10 @@ export default function ReadingSelectionStrip({
   coverageLayerOptions,
   onCoverageLayerChange,
   coverageLayerAriaLabel,
+  scopeValue,
+  scopeOptions,
+  onScopeChange,
+  scopeAriaLabel,
   supplementaryControls,
   showWikipediaLevelSelector = false,
 }: ReadingSelectionStripProps) {
@@ -42,10 +50,18 @@ export default function ReadingSelectionStrip({
       && onCoverageLayerChange
       && coverageLayerAriaLabel,
   );
+  const showsScope = Boolean(
+    scopeValue
+      && scopeOptions
+      && onScopeChange
+      && scopeAriaLabel,
+  );
   const showsWikipediaLevel = showWikipediaLevelSelector && readingTypeValue === 'wikipedia';
-  const controlCount = 1 + (showsCoverageLayer ? 1 : 0) + (showsWikipediaLevel ? 1 : 0);
-  const gridClass = controlCount >= 3
-    ? 'sm:grid-cols-2 xl:grid-cols-3'
+  const controlCount = 1 + (showsCoverageLayer ? 1 : 0) + (showsScope ? 1 : 0) + (showsWikipediaLevel ? 1 : 0);
+  const gridClass = controlCount >= 4
+    ? 'sm:grid-cols-2 xl:grid-cols-4'
+    : controlCount >= 3
+      ? 'sm:grid-cols-2 xl:grid-cols-3'
     : controlCount === 2
       ? 'sm:grid-cols-2'
       : '';
@@ -69,6 +85,17 @@ export default function ReadingSelectionStrip({
             options={coverageLayerOptions!}
             onChange={onCoverageLayerChange!}
             size="compact"
+          />
+        ) : null}
+        {showsScope ? (
+          <SelectorCardRail
+            label="Scope"
+            ariaLabel={scopeAriaLabel!}
+            value={scopeValue!}
+            options={scopeOptions!}
+            onChange={onScopeChange!}
+            size="compact"
+            columns={2}
           />
         ) : null}
         {showsWikipediaLevel ? (

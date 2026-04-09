@@ -23,6 +23,7 @@ interface ReadingCoverageSummaryProps {
   partSegments?: PartCoverageSegment[];
   activeLayerLabel?: string;
   coverageStatisticsPreface?: ComponentChildren;
+  showSummaryCards?: boolean;
 }
 
 export default function ReadingCoverageSummary({
@@ -43,6 +44,7 @@ export default function ReadingCoverageSummary({
   partSegments,
   activeLayerLabel,
   coverageStatisticsPreface,
+  showSummaryCards = true,
 }: ReadingCoverageSummaryProps) {
   const [statsOpen, setStatsOpen] = useState(false);
   const hasPartRing = partSegments && partSegments.length > 0;
@@ -50,9 +52,8 @@ export default function ReadingCoverageSummary({
     ? Math.round((activeCoverageCount / activeCoverageTotal) * 100)
     : 0;
 
-  return (
-    <section class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-      <div class="rounded-xl border border-gray-200 bg-white p-5 sm:col-span-2 xl:col-span-1">
+  const coverageCard = (
+    <div class="rounded-xl border border-gray-200 bg-white p-5 sm:col-span-2 xl:col-span-1">
         <p class="mb-3 text-sm font-medium uppercase tracking-wide text-gray-500">Your Coverage</p>
         <div class="flex items-center justify-evenly">
           <div class="sm:hidden">
@@ -113,6 +114,15 @@ export default function ReadingCoverageSummary({
           />
         )}
       </div>
+  );
+
+  if (!showSummaryCards) {
+    return coverageCard;
+  }
+
+  return (
+    <section class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      {coverageCard}
       <div class="rounded-xl border border-gray-200 bg-white p-5">
           <p class="text-sm font-medium uppercase tracking-wide text-gray-500">{totalLabel}</p>
           <p class="mt-2 font-serif text-3xl text-gray-900">{totalCount}</p>

@@ -1,10 +1,12 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
+import { useReadingShelfState } from '../../hooks/useReadingShelfState';
 import { useReadingSpeedState } from '../../hooks/useReadingSpeedState';
 import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
 import {
   writeChecklistState,
 } from '../../utils/readingChecklist';
+import { writeShelfState } from '../../utils/readingShelf';
 import {
   READING_TYPE_ORDER,
   READING_TYPE_UI_META,
@@ -437,6 +439,7 @@ export function CenteredCircleNavigatorPanel({
   coverageSources,
 }: CenteredCircleNavigatorPanelProps) {
   const readingSpeedWpm = useReadingSpeedState();
+  const shelfState = useReadingShelfState();
   const wikiLevel = useWikipediaLevel();
   const [sharedPartRecommendations, setSharedPartRecommendations] = useState<{
     center: CircleNavigatorPartRecommendations;
@@ -630,10 +633,13 @@ export function CenteredCircleNavigatorPanel({
             scrollResetKey={`${effectiveReadingType}:${effectiveLayer}`}
             remainingCoverageCount={spreadRemaining}
             checklistState={checklistState}
+            shelfState={shelfState}
             onCheckedChange={writeChecklistState}
+            onShelvedChange={writeShelfState}
             getHref={(step) => step.href}
             renderMeta={(step) => step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null}
             checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
+            shelfAriaLabel={(step) => `Add ${step.title} to shelf`}
             itemSingular={activeRecommendation.itemSingular}
             itemPlural={activeRecommendation.itemSingular + 's'}
             coverageLayer={resolvedLayer}
@@ -667,6 +673,7 @@ export function TopPartCircleNavigatorPanel({
   coverageSources,
 }: TopPartCircleNavigatorPanelProps) {
   const readingSpeedWpm = useReadingSpeedState();
+  const shelfState = useReadingShelfState();
   const wikiLevel = useWikipediaLevel();
   const [partRecommendations, setPartRecommendations] = useState<CircleNavigatorPartRecommendations | null>(
     () => partRecommendationCache.get(topPartNumber) ?? null
@@ -847,10 +854,13 @@ export function TopPartCircleNavigatorPanel({
             scrollResetKey={`${effectiveReadingType}:${effectiveLayer}`}
             remainingCoverageCount={spreadRemaining}
             checklistState={checklistState}
+            shelfState={shelfState}
             onCheckedChange={writeChecklistState}
+            onShelvedChange={writeShelfState}
             getHref={(step) => step.href}
             renderMeta={(step) => step.meta ? <p class="mt-1 text-sm text-gray-600">{step.meta}</p> : null}
             checkboxAriaLabel={(step) => `Mark ${step.title} as done`}
+            shelfAriaLabel={(step) => `Add ${step.title} to shelf`}
             itemSingular={activeRecommendation.itemSingular}
             itemPlural={activeRecommendation.itemSingular + 's'}
             coverageLayer={resolvedLayer}

@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
+import { useReadingShelfState } from '../../hooks/useReadingShelfState';
 import Accordion, { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
 import WikipediaCard from './WikipediaCard';
 import {
@@ -8,6 +9,7 @@ import {
   subscribeChecklistState,
   writeChecklistState,
 } from '../../utils/readingChecklist';
+import { writeShelfState } from '../../utils/readingShelf';
 import {
   OUTLINE_SELECT_EVENT,
   type OutlineSelectionDetail,
@@ -42,6 +44,7 @@ type KnowledgeLevel = WikipediaKnowledgeLevel;
 export default function WikipediaRefs({ articles, sectionCode, baseUrl }: WikipediaRefsProps) {
   const [level, setLevel] = useState<KnowledgeLevel>(3);
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
+  const shelfState = useReadingShelfState();
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
   const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(() => getReadingPreference() === 'wikipedia' ? 0 : undefined);
   const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(() => getReadingPreference() !== 'wikipedia' ? 0 : undefined);
@@ -168,6 +171,8 @@ export default function WikipediaRefs({ articles, sectionCode, baseUrl }: Wikipe
                   flags={[precision]}
                   checked={isChecked}
                   onCheckedChange={(checked) => writeChecklistState(checkKey, checked)}
+                  shelved={Boolean(shelfState[checkKey])}
+                  onShelvedChange={(shelved) => writeShelfState(checkKey, shelved)}
                 />
               );
             })}

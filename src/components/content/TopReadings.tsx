@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
+import { useReadingShelfState } from '../../hooks/useReadingShelfState';
 import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
 import { useReadingSpeedState } from '../../hooks/useReadingSpeedState';
 import HorizontalCardScroll from '../ui/HorizontalCardScroll';
@@ -21,6 +22,7 @@ import {
   wikipediaChecklistKey,
   writeChecklistState,
 } from '../../utils/readingChecklist';
+import { writeShelfState } from '../../utils/readingShelf';
 import {
   READING_TYPE_ORDER,
   READING_TYPE_UI_META,
@@ -201,6 +203,7 @@ export default function TopReadings({
   countLabel,
 }: TopReadingsProps) {
   const wikiLevel = useWikipediaLevel();
+  const shelfState = useReadingShelfState();
   const sections: TopReadingSection[] = [
     {
       type: 'vsi',
@@ -346,6 +349,8 @@ export default function TopReadings({
                       badges={badges}
                       checked={isChecked}
                       onCheckedChange={(checked) => writeChecklistState(checkKey, checked)}
+                      shelved={Boolean(shelfState[checkKey])}
+                      onShelvedChange={(shelved) => writeShelfState(checkKey, shelved)}
                     />
                   );
                 }
@@ -365,6 +370,8 @@ export default function TopReadings({
                       badges={badges}
                       checked={isChecked}
                       onCheckedChange={(checked) => writeChecklistState(checkKey, checked)}
+                      shelved={Boolean(shelfState[checkKey])}
+                      onShelvedChange={(shelved) => writeShelfState(checkKey, shelved)}
                     />
                   );
                 }
@@ -383,6 +390,8 @@ export default function TopReadings({
                       badges={badges}
                       checked={isChecked}
                       onCheckedChange={(checked) => writeChecklistState(checkKey, checked)}
+                      shelved={Boolean(shelfState[checkKey])}
+                      onShelvedChange={(shelved) => writeShelfState(checkKey, shelved)}
                     />
                   );
                 }
@@ -398,6 +407,8 @@ export default function TopReadings({
                     badges={badges}
                     checked={isChecked}
                     onCheckedChange={(checked) => writeChecklistState(checkKey, checked)}
+                    shelved={Boolean(shelfState[checkKey])}
+                    onShelvedChange={(shelved) => writeShelfState(checkKey, shelved)}
                   />
                 );
               })}

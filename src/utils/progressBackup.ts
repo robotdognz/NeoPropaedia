@@ -4,10 +4,12 @@
 
 const KEYS = [
   'propaedia-reading-checklist-v1',
+  'propaedia-reading-shelf-v1',
   'propaedia-reading-preference',
   'propaedia-reading-speed-wpm',
   'propaedia-hide-checked-readings',
   'propaedia-coverage-layer',
+  'propaedia-reading-pool-scope',
   'propaedia-wiki-level',
 ] as const;
 

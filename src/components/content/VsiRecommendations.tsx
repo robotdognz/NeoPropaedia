@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
+import { useReadingShelfState } from '../../hooks/useReadingShelfState';
 import Accordion, { ACCORDION_ANIMATION_MS } from '../ui/Accordion';
 import VsiCard from './VsiCard';
 import {
@@ -8,6 +9,7 @@ import {
   vsiChecklistKey,
   writeChecklistState,
 } from '../../utils/readingChecklist';
+import { writeShelfState } from '../../utils/readingShelf';
 import {
   filterMappingsForOutline,
   sortByDefaultRelevance,
@@ -42,6 +44,7 @@ export interface VsiRecommendationsProps {
 
 export default function VsiRecommendations({ mappings, sectionCode, sectionTitle, sectionOutlineText, baseUrl }: VsiRecommendationsProps) {
   const [checklistState, setChecklistState] = useState<Record<string, boolean>>({});
+  const shelfState = useReadingShelfState();
   const [selection, setSelection] = useState<OutlineSelectionDetail | null>(null);
   const [forceOpenKey, setForceOpenKey] = useState<number | undefined>(() => getReadingPreference() === 'vsi' ? 0 : undefined);
   const [forceCloseKey, setForceCloseKey] = useState<number | undefined>(() => getReadingPreference() !== 'vsi' ? 0 : undefined);
@@ -171,6 +174,8 @@ export default function VsiRecommendations({ mappings, sectionCode, sectionTitle
                   flags={[precision]}
                   checked={Boolean(checklistState[checklistKey])}
                   onCheckedChange={(checked) => writeChecklistState(checklistKey, checked)}
+                  shelved={Boolean(shelfState[checklistKey])}
+                  onShelvedChange={(shelved) => writeShelfState(checklistKey, shelved)}
                 />
               );
             })}

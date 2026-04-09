@@ -16,6 +16,8 @@ export interface MacropaediaCardProps {
   badges?: RecommendationCardBadge[];
   checked: boolean;
   onCheckedChange: (checked: boolean) => void;
+  shelved: boolean;
+  onShelvedChange: (shelved: boolean) => void;
 }
 
 export default function MacropaediaCard({
@@ -28,6 +30,8 @@ export default function MacropaediaCard({
   badges,
   checked,
   onCheckedChange,
+  shelved,
+  onShelvedChange,
 }: MacropaediaCardProps) {
   return (
     <ReadingRecommendationCard
@@ -41,6 +45,9 @@ export default function MacropaediaCard({
       checked={checked}
       onCheckedChange={onCheckedChange}
       checkboxAriaLabel={`Mark ${title} as completed`}
+      shelved={shelved}
+      onShelvedChange={onShelvedChange}
+      shelfAriaLabel={`Add ${title} to shelf`}
     />
   );
 }

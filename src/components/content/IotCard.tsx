@@ -22,6 +22,8 @@ export interface IotCardProps {
   whyTitle?: string;
   checked: boolean;
   onCheckedChange: (checked: boolean) => void;
+  shelved: boolean;
+  onShelvedChange: (shelved: boolean) => void;
 }
 
 export default function IotCard({
@@ -39,6 +41,8 @@ export default function IotCard({
   whyTitle = 'Why this episode?',
   checked,
   onCheckedChange,
+  shelved,
+  onShelvedChange,
 }: IotCardProps) {
   const metadata = formatIotEpisodeMeta({ datePublished, durationSeconds });
 
@@ -55,6 +59,9 @@ export default function IotCard({
       checked={checked}
       onCheckedChange={onCheckedChange}
       checkboxAriaLabel={`Mark ${title} as listened`}
+      shelved={shelved}
+      onShelvedChange={onShelvedChange}
+      shelfAriaLabel={`Add ${title} to shelf`}
     />
   );
 }

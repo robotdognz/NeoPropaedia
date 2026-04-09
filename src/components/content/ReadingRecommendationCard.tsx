@@ -4,6 +4,7 @@ import type {
   RecommendationCardBadge,
   RecommendationCardFlag,
 } from '../../utils/recommendationCardMeta';
+import ReadingActionControls from './ReadingActionControls';
 
 export interface ReadingRecommendationCardProps {
   title: string;
@@ -17,6 +18,9 @@ export interface ReadingRecommendationCardProps {
   checked: boolean;
   onCheckedChange: (checked: boolean) => void;
   checkboxAriaLabel: string;
+  shelved: boolean;
+  onShelvedChange: (shelved: boolean) => void;
+  shelfAriaLabel: string;
 }
 
 function matchColor(percent: number): string {
@@ -64,6 +68,9 @@ export default function ReadingRecommendationCard({
   checked,
   onCheckedChange,
   checkboxAriaLabel,
+  shelved,
+  onShelvedChange,
+  shelfAriaLabel,
 }: ReadingRecommendationCardProps) {
   const showMatch = matchPercent !== undefined && matchPercent > 0;
   const showMetadata = Boolean(metadata);
@@ -83,16 +90,14 @@ export default function ReadingRecommendationCard({
             <p class="mt-1 text-sm text-gray-500">{metadata}</p>
           ) : null}
         </div>
-        <label class="inline-flex items-center gap-2 text-xs font-sans font-medium text-gray-500">
-          <input
-            type="checkbox"
-            checked={checked}
-            onChange={(event) => onCheckedChange((event.currentTarget as HTMLInputElement).checked)}
-            class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-            aria-label={checkboxAriaLabel}
-          />
-          Done
-        </label>
+        <ReadingActionControls
+          checked={checked}
+          onCheckedChange={onCheckedChange}
+          checkboxAriaLabel={checkboxAriaLabel}
+          shelved={shelved}
+          onShelvedChange={onShelvedChange}
+          shelfAriaLabel={shelfAriaLabel}
+        />
       </div>
 
       {showMatch ? (

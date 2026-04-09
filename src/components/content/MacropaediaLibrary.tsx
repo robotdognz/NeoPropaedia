@@ -1,10 +1,13 @@
 import { h } from 'preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { writeChecklistState } from '../../utils/readingChecklist';
+import { writeShelfState } from '../../utils/readingShelf';
 import { type MacropaediaAggregateEntry } from '../../utils/readingData';
 import { slugify, type PartMeta } from '../../utils/helpers';
 import { useReadingChecklistState } from '../../hooks/useReadingChecklistState';
+import { useReadingShelfState } from '../../hooks/useReadingShelfState';
 import { useHashAnchorCorrection } from '../../hooks/useHashAnchorCorrection';
+import { useReadingLibraryControlsState } from '../../hooks/useReadingLibraryControlsState';
 import {
   buildCoverageRings,
   buildLayerCoverageSnapshot,
@@ -25,7 +28,8 @@ import {
 } from './CompletedTimeStatistics';
 import ReadingCoverageSummary from './ReadingCoverageSummary';
 import ReadingSectionLinks from './ReadingSectionLinks';
-import ReadingSpreadPath from './ReadingSpreadPath';
+import ReadingActionControls from './ReadingActionControls';
+import ReadingLibraryStatisticsAccordion from './ReadingLibraryStatisticsAccordion';
 import {
   getCoverageLayerPreference,
   setCoverageLayerPreference,
@@ -46,7 +50,6 @@ const LAYER_BY_RING_LABEL: Record<string, CoverageLayer> = {
   Sections: 'section',
 };
 
-type ReadFilter = 'all' | 'unread' | 'read';
 type SortField = 'section' | 'part' | 'division' | 'title';
 type SortDirection = 'asc' | 'desc';
 
@@ -94,29 +97,27 @@ function activeCoverageDescription(layer: CoverageLayer): string {
   }
 }
 
-function emptyRecommendationMessage(layer: CoverageLayer, isComplete: boolean): string {
-  if (isComplete) {
-    return `You have already covered every mapped ${coverageLayerLabel(layer, 1)} in this tab.`;
-  }
-
-  return `No unread article adds any further ${coverageLayerLabel(layer, 1)} coverage right now.`;
-}
-
 export default function MacropaediaLibrary({
   entries,
   baseUrl,
   partsMeta,
 }: MacropaediaLibraryProps) {
   const checklistState = useReadingChecklistState();
+  const shelfState = useReadingShelfState();
+  const {
+    checkedOnly,
+    shelvedOnly,
+    sortField,
+    sortDirection,
+    setCheckedOnly,
+    setShelvedOnly,
+    setSortField,
+    setSortDirection,
+  } = useReadingLibraryControlsState<SortField>('macropaedia', 'section');
   useHashAnchorCorrection('macropaedia-library');
   const [selectedLayer, setSelectedLayer] = useState<CoverageLayer | null>(null);
   const [query, setQuery] = useState('');
-  const [readFilter, setReadFilter] = useState<ReadFilter>('all');
-  const [sortField, setSortField] = useState<SortField>('section');
-  const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_COUNT);
-  const [spreadPathOpen, setSpreadPathOpen] = useState(false);
-
   const changeLayer = (layer: CoverageLayer) => {
     setSelectedLayer(layer);
     setCoverageLayerPreference(layer);
@@ -132,7 +133,7 @@ export default function MacropaediaLibrary({
 
   useEffect(() => {
     setVisibleCount(INITIAL_VISIBLE_COUNT);
-  }, [query, readFilter, sortField, sortDirection]);
+  }, [query, checkedOnly, shelvedOnly, sortField, sortDirection]);
 
   const completedCount = countCompletedEntries(entries, checklistState);
 
@@ -170,14 +171,12 @@ export default function MacropaediaLibrary({
     return buildPartCoverageSegments(entries, checklistState, activeLayer, partsMeta);
   }, [entries, checklistState, activeLayer, partsMeta]);
   const activeSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === activeLayer) ?? layerSnapshots[0];
-  const activePath = activeSnapshot
-    ? activeSnapshot.path.map(({ entry, ...rest }) => ({
-        ...entry,
-        ...rest,
-      }))
-    : [];
   const isLayerComplete = activeSnapshot
     ? activeSnapshot.currentlyCoveredCount >= activeSnapshot.totalCoverageCount
+    : false;
+  const partSnapshot = layerSnapshots.find((snapshot) => snapshot.layer === 'part') ?? layerSnapshots[0];
+  const isPartComplete = partSnapshot
+    ? partSnapshot.currentlyCoveredCount >= partSnapshot.totalCoverageCount
     : false;
   const layerMeta = activeSnapshot ? COVERAGE_LAYER_META[activeSnapshot.layer] : COVERAGE_LAYER_META.section;
   const coverageCounts = useMemo(() => new Map(
@@ -194,9 +193,10 @@ export default function MacropaediaLibrary({
   const filteredEntries = sortEntries(
     entries.filter((entry) => {
       const isChecked = Boolean(checklistState[entry.checklistKey]);
+      const isShelved = Boolean(shelfState[entry.checklistKey]);
 
-      if (readFilter === 'read' && !isChecked) return false;
-      if (readFilter === 'unread' && isChecked) return false;
+      if (checkedOnly && !isChecked) return false;
+      if (shelvedOnly && !isShelved) return false;
       return matchesQuery(entry, query.trim().toLowerCase());
     }),
     sortField,
@@ -242,35 +242,29 @@ export default function MacropaediaLibrary({
               unsupportedMessage={BRITANNICA_TIME_UNAVAILABLE_MESSAGE}
             />
           }
-        />
-
-        <ReadingSpreadPath
-          isOpen={spreadPathOpen}
-          onToggleOpen={() => setSpreadPathOpen(!spreadPathOpen)}
-          steps={activePath}
-          remainingCoverageCount={activeSnapshot?.remainingCoverageCount ?? 0}
-          checklistState={checklistState}
-          onCheckedChange={writeChecklistState}
-          getHref={(step) => `${baseUrl}/macropaedia/${slugify(step.title)}`}
-          checkboxAriaLabel={(step) => `Mark ${step.title} as completed`}
-          itemSingular="article"
-          itemPlural="articles"
-          coverageLayer={activeLayer}
-          coverageUnitSingular={layerMeta.label}
-          coverageUnitPlural={layerMeta.pluralLabel}
-          emptyMessage={emptyRecommendationMessage(activeLayer, isLayerComplete)}
-          baseUrl={baseUrl}
+          showSummaryCards={false}
         />
       </div>
-
-      <CoverageGapPanel
-        entries={entries}
-        checklistState={checklistState}
-        activeLayer={activeLayer}
-        baseUrl={baseUrl}
-        itemLabelPlural="articles"
-        isComplete={isLayerComplete}
-      />
+      <ReadingLibraryStatisticsAccordion
+        totalLabel="Articles"
+        totalCount={entries.length}
+        totalDescription="Unique Macropaedia titles referenced in the outline."
+        completedCount={completedCount}
+        completedDescription="Uses the same checklist state as the section reading boxes."
+        activeCoverageLabel="Part Coverage"
+        activeCoverageCount={partSnapshot?.currentlyCoveredCount ?? 0}
+        activeCoverageTotal={partSnapshot?.totalCoverageCount ?? 0}
+        activeCoverageDescription={activeCoverageDescription('part')}
+      >
+        <CoverageGapPanel
+          entries={entries}
+          checklistState={checklistState}
+          activeLayer="part"
+          baseUrl={baseUrl}
+          itemLabelPlural="articles"
+          isComplete={isPartComplete}
+        />
+      </ReadingLibraryStatisticsAccordion>
 
       <section id="macropaedia-library" class="scroll-mt-24 rounded-2xl border border-gray-200 bg-white p-6">
         <div class="mb-5 flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
@@ -280,7 +274,7 @@ export default function MacropaediaLibrary({
               Search the full historical Macropaedia list and sort it by coverage across Parts, Divisions, or Sections.
             </p>
             <p class="mt-1 text-xs text-gray-500">
-              These controls only change the full article list below. The Outline Layer tabs above drive the adaptive path and gap panels.
+              These controls only change the full article list below. The Outline Layer tabs above drive the coverage view; the statistics drawer stays focused on overall Parts coverage.
             </p>
           </div>
           <div class="text-sm text-gray-500">
@@ -288,7 +282,7 @@ export default function MacropaediaLibrary({
           </div>
         </div>
 
-        <div class="grid gap-3 lg:grid-cols-[minmax(0,1fr)_180px_220px_180px]">
+        <div class="grid gap-3 lg:grid-cols-[minmax(0,1fr)_220px_220px_180px]">
           <label class="block">
             <span class="mb-2 block text-sm font-medium text-gray-700">Search</span>
             <input
@@ -300,18 +294,29 @@ export default function MacropaediaLibrary({
             />
           </label>
 
-          <label class="block">
-            <span class="mb-2 block text-sm font-medium text-gray-700">Read Status</span>
-            <select
-              value={readFilter}
-              onChange={(event) => setReadFilter((event.currentTarget as HTMLSelectElement).value as ReadFilter)}
-              class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm text-gray-900 shadow-sm focus:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-200"
-            >
-              <option value="all">All articles</option>
-              <option value="unread">Unread only</option>
-              <option value="read">Read only</option>
-            </select>
-          </label>
+          <div class="block">
+            <span class="mb-2 block text-sm font-medium text-gray-700">Filters</span>
+            <div class="flex flex-col gap-2 rounded-lg border border-gray-300 bg-white px-3 py-2.5 shadow-sm">
+              <label class="inline-flex items-center gap-2 text-sm text-gray-700">
+                <input
+                  type="checkbox"
+                  checked={checkedOnly}
+                  onChange={(event) => setCheckedOnly((event.currentTarget as HTMLInputElement).checked)}
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                Checked only
+              </label>
+              <label class="inline-flex items-center gap-2 text-sm text-gray-700">
+                <input
+                  type="checkbox"
+                  checked={shelvedOnly}
+                  onChange={(event) => setShelvedOnly((event.currentTarget as HTMLInputElement).checked)}
+                  class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                />
+                Shelved only
+              </label>
+            </div>
+          </div>
 
           <label class="block">
             <span class="mb-2 block text-sm font-medium text-gray-700">Sort By</span>
@@ -345,6 +350,7 @@ export default function MacropaediaLibrary({
             <div class="mt-6 space-y-4">
               {visibleEntries.map((entry) => {
                 const isChecked = Boolean(checklistState[entry.checklistKey]);
+                const isShelved = Boolean(shelfState[entry.checklistKey]);
 
                 return (
                   <article key={entry.checklistKey} class="rounded-xl border border-gray-200 bg-gray-50/50 p-5">
@@ -357,21 +363,15 @@ export default function MacropaediaLibrary({
                           Appears in {entry.sectionCount} Section{entry.sectionCount === 1 ? '' : 's'}
                         </p>
                       </div>
-                      <label class="inline-flex flex-shrink-0 items-center gap-2 text-xs font-medium text-gray-500">
-                        <input
-                          type="checkbox"
-                          checked={isChecked}
-                          onChange={(event) => {
-                            writeChecklistState(
-                              entry.checklistKey,
-                              (event.currentTarget as HTMLInputElement).checked
-                            );
-                          }}
-                          class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          aria-label={`Mark ${entry.title} as completed`}
-                        />
-                        Done
-                      </label>
+                      <ReadingActionControls
+                        checked={isChecked}
+                        onCheckedChange={(checked) => writeChecklistState(entry.checklistKey, checked)}
+                        checkboxAriaLabel={`Mark ${entry.title} as completed`}
+                        shelved={isShelved}
+                        onShelvedChange={(shelved) => writeShelfState(entry.checklistKey, shelved)}
+                        shelfAriaLabel={`Add ${entry.title} to shelf`}
+                        ribbonOffsetClass="-mt-5"
+                      />
                     </div>
 
                     <ReadingSectionLinks
@@ -398,7 +398,9 @@ export default function MacropaediaLibrary({
           </>
         ) : (
           <div class="mt-6 rounded-xl border border-dashed border-gray-300 px-4 py-10 text-center text-sm text-gray-600">
-            No Macropaedia articles matched that search.
+            {checkedOnly || shelvedOnly
+              ? 'No Britannica articles matched those filters.'
+              : 'No Macropaedia articles matched that search.'}
           </div>
         )}
       </section>
