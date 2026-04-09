@@ -207,7 +207,7 @@ export default function IotLibrary({
               )}
             </div>
             <div class="text-sm text-gray-500">
-              Showing {visibleEntries.length} of {filteredEntries.length} matching shelved episodes
+              Showing {visibleEntries.length} of {filteredEntries.length} matching episodes in My Shelf
             </div>
           </div>
 
@@ -251,8 +251,8 @@ export default function IotLibrary({
               {shelvedCount === 0
                 ? 'Nothing is on your BBC In Our Time shelf yet. Add episodes to My Shelf to keep them here.'
                 : checkedOnly
-                  ? 'No shelved episodes matched those filters.'
-                  : 'No shelved episodes matched that search.'}
+                  ? 'No episodes in My Shelf matched those filters.'
+                  : 'No episodes in My Shelf matched that search.'}
             </div>
           )}
         </section>

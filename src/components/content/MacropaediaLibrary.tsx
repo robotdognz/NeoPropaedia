@@ -180,7 +180,7 @@ export default function MacropaediaLibrary({
               )}
             </div>
             <div class="text-sm text-gray-500">
-              Showing {visibleEntries.length} of {filteredEntries.length} matching shelved articles
+              Showing {visibleEntries.length} of {filteredEntries.length} matching articles in My Shelf
             </div>
           </div>
 
@@ -225,8 +225,8 @@ export default function MacropaediaLibrary({
               {shelvedCount === 0
                 ? 'Nothing is on your Britannica shelf yet. Add articles to My Shelf to keep them here.'
                 : checkedOnly
-                  ? 'No shelved Britannica articles matched those filters.'
-                  : 'No shelved Britannica articles matched that search.'}
+                  ? 'No Britannica articles in My Shelf matched those filters.'
+                  : 'No Britannica articles in My Shelf matched that search.'}
             </div>
           )}
         </section>

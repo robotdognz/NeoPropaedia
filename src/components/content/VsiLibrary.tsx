@@ -227,7 +227,7 @@ export default function VsiLibrary({ entries, baseUrl, onReadingTypeChange }: Vs
               )}
             </div>
             <div class="text-sm text-gray-500">
-              Showing {visibleEntries.length} of {filteredEntries.length} matching shelved titles
+              Showing {visibleEntries.length} of {filteredEntries.length} matching titles in My Shelf
             </div>
           </div>
 
@@ -273,8 +273,8 @@ export default function VsiLibrary({ entries, baseUrl, onReadingTypeChange }: Vs
               {shelvedCount === 0
                 ? 'Nothing is on your VSI shelf yet. Add titles to My Shelf to keep them here.'
                 : checkedOnly
-                  ? 'No shelved VSI titles matched those filters.'
-                  : 'No shelved VSI titles matched that search.'}
+                  ? 'No VSI titles in My Shelf matched those filters.'
+                  : 'No VSI titles in My Shelf matched that search.'}
             </div>
           )}
         </section>

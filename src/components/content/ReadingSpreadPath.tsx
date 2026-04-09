@@ -76,10 +76,12 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
   const estimatedStepMinutes = getEstimatedMinutes
     ? steps.map((step) => getEstimatedMinutes(step))
     : [];
-  const pathEstimatedMinutes = estimatedStepMinutes.length === steps.length
-    && estimatedStepMinutes.every((value) => typeof value === 'number' && value > 0)
-      ? estimatedStepMinutes.reduce((total, value) => total + (value ?? 0), 0)
-      : undefined;
+  const timedStepMinutes = estimatedStepMinutes.filter(
+    (value): value is number => typeof value === 'number' && value > 0,
+  );
+  const pathEstimatedMinutes = timedStepMinutes.length > 0
+    ? timedStepMinutes.reduce((total, value) => total + value, 0)
+    : undefined;
   const pathEstimatedTimeLabel = formatEstimatedMinutes(pathEstimatedMinutes, estimatedTimeApproximate);
 
   return (
@@ -110,8 +112,13 @@ export default function ReadingSpreadPath<TStep extends SpreadPathStepBase>({
             </span>
           </button>
           <p class="mt-1 text-xs font-medium text-amber-900">
-            {steps.length} {steps.length === 1 ? 'step' : 'steps'} · {remainingCoverageCount} {remainingCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural} uncovered{pathEstimatedTimeLabel ? ` · ${pathEstimatedTimeLabel} to finish` : ''}
+            {steps.length} {steps.length === 1 ? 'step' : 'steps'} · {remainingCoverageCount} {remainingCoverageCount === 1 ? coverageUnitSingular : coverageUnitPlural} uncovered
           </p>
+          {pathEstimatedTimeLabel ? (
+            <p class="mt-1 text-xs font-medium text-amber-900">
+              {pathEstimatedTimeLabel} to finish
+            </p>
+          ) : null}
           {statusMessage ? (
             <p class="mt-1.5 text-xs leading-5 text-amber-950/85">
               {statusMessage}

@@ -102,17 +102,17 @@ function emptyRecommendationMessage(
   shelvedCount: number,
 ): string {
   if (scope === 'shelved' && shelvedCount === 0) {
-    return `Nothing in your shelf is available in this ${READING_TYPE_LABELS[source.type]} view yet. Add readings to My Shelf to rank them here.`;
+    return `Nothing in My Shelf is available in this ${READING_TYPE_LABELS[source.type]} view yet. Add readings to My Shelf to rank them here.`;
   }
 
   if (isComplete) {
     return scope === 'shelved'
-      ? `You have already covered every mapped ${coverageLayerLabel(layer, 1)} reachable from the readings on your shelf.`
+      ? `You have already covered every mapped ${coverageLayerLabel(layer, 1)} reachable from the readings in My Shelf.`
       : `You have already covered every mapped ${coverageLayerLabel(layer, 1)} in this view.`;
   }
 
   if (scope === 'shelved') {
-    return `No unread shelved ${source.itemSingular} adds any further ${coverageLayerLabel(layer, 1)} coverage right now.`;
+    return `No unread ${source.itemSingular} in My Shelf adds any further ${coverageLayerLabel(layer, 1)} coverage right now.`;
   }
 
   return `No unread ${source.itemSingular} adds any further ${coverageLayerLabel(layer, 1)} coverage right now.`;
@@ -458,7 +458,7 @@ export default function HomepageCoverageExplorer({
     },
     {
       value: 'shelved' as const,
-      label: 'Shelved',
+      label: 'My Shelf',
       meta: filteredSource ? String(shelvedEntries.length) : undefined,
     },
   ];

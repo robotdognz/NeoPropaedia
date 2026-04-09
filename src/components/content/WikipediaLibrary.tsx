@@ -178,7 +178,7 @@ export default function WikipediaLibrary({
               )}
             </div>
             <div class="text-sm text-gray-500">
-              Showing {visibleEntries.length} of {filteredEntries.length} matching shelved articles
+              Showing {visibleEntries.length} of {filteredEntries.length} matching articles in My Shelf
             </div>
           </div>
 
@@ -222,8 +222,8 @@ export default function WikipediaLibrary({
               {shelvedCount === 0
                 ? 'Nothing is on your Wikipedia shelf at this level yet. Add articles to My Shelf to keep them here.'
                 : checkedOnly
-                  ? 'No shelved articles matched those filters.'
-                  : 'No shelved articles matched that search.'}
+                  ? 'No articles in My Shelf matched those filters.'
+                  : 'No articles in My Shelf matched that search.'}
             </div>
           )}
         </section>

@@ -8,10 +8,14 @@ import {
 } from '../../utils/readingChecklist';
 import { writeShelfState } from '../../utils/readingShelf';
 import {
+  getReadingPoolScopePreference,
   READING_TYPE_ORDER,
   READING_TYPE_UI_META,
   setCoverageLayerPreference,
+  setReadingPoolScopePreference,
   setReadingPreference,
+  subscribeReadingPoolScopePreference,
+  type ReadingPoolScope,
   type ReadingType,
 } from '../../utils/readingPreference';
 import { divisionUrl, sectionUrl, slugify } from '../../utils/helpers';
@@ -83,6 +87,8 @@ interface AnchoredRecommendationSectionConfig<TEntry extends AnchoredEntryBase> 
   type: ReadingType;
   itemSingular: string;
   totalCount: number;
+  allCount: number;
+  shelfCount: number;
   supportedLayers: CoverageLayer[];
   layerSnapshots: Partial<Record<CoverageLayer, LayerCoverageSnapshot<TEntry>>>;
   getHref: (item: TEntry) => string;
@@ -240,6 +246,8 @@ function buildRecommendationSectionConfig<TEntry extends AnchoredEntryBase>(conf
   type: ReadingType;
   itemSingular: string;
   entries: TEntry[];
+  allCount: number;
+  shelfCount: number;
   completedChecklistKeys: Set<string>;
   coverageEntries?: HomepageCoverageSource['entries'];
   getHref: (item: TEntry) => string;
@@ -270,6 +278,8 @@ function buildRecommendationSectionConfig<TEntry extends AnchoredEntryBase>(conf
     type: config.type,
     itemSingular: config.itemSingular,
     totalCount: config.entries.length,
+    allCount: config.allCount,
+    shelfCount: config.shelfCount,
     supportedLayers,
     layerSnapshots,
     getHref: config.getHref,
@@ -296,13 +306,29 @@ function emptyRecommendationMessage(
   layer: CoverageLayer,
   isComplete: boolean,
   remainingCoverageCount: number,
+  scope: ReadingPoolScope,
+  shelfCount: number,
+  itemSingular: string,
 ): string {
+  if (scope === 'shelved' && shelfCount === 0) {
+    return `Nothing in My Shelf is available for this reading type in the current selection yet. Add readings to My Shelf to rank them here.`;
+  }
+
   if (isComplete) {
-    return `You have already covered every mapped ${coverageLayerLabel(layer, 1)} in this view.`;
+    return scope === 'shelved'
+      ? `You have already covered every mapped ${coverageLayerLabel(layer, 1)} reachable from My Shelf in this selection.`
+      : `You have already covered every mapped ${coverageLayerLabel(layer, 1)} in this view.`;
   }
 
   if (remainingCoverageCount > 0) {
+    if (scope === 'shelved') {
+      return `No unread ${itemSingular} in My Shelf adds new ${coverageLayerLabel(layer, 1)} coverage in this selection. ${remainingCoverageCount} ${coverageLayerLabel(layer, remainingCoverageCount)} ${remainingCoverageCount === 1 ? 'remains' : 'remain'} outside My Shelf.`;
+    }
     return `No readings in this selection add new ${coverageLayerLabel(layer, 1)} coverage. ${remainingCoverageCount} ${coverageLayerLabel(layer, remainingCoverageCount)} ${remainingCoverageCount === 1 ? 'remains' : 'remain'} outside the current selection.`;
+  }
+
+  if (scope === 'shelved') {
+    return `No unread ${itemSingular} in My Shelf adds further ${coverageLayerLabel(layer, 1)} coverage right now.`;
   }
 
   return `No readings in this selection add further ${coverageLayerLabel(layer, 1)} coverage right now.`;
@@ -346,6 +372,7 @@ function renderSelectionControls<TEntry extends AnchoredEntryBase>(
   recommendationSections: AnchoredRecommendationSectionConfig<TEntry>[],
   readingPref: ReadingType,
   activeLayer: CoverageLayer,
+  selectedScope: ReadingPoolScope,
   isLoading = false,
 ): ComponentChildren {
   const {
@@ -387,9 +414,36 @@ function renderSelectionControls<TEntry extends AnchoredEntryBase>(
         setCoverageLayerPreference(layer);
       }}
       coverageLayerAriaLabel="Selected fields coverage layer"
+      scopeValue={selectedScope}
+      scopeOptions={[
+        {
+          value: 'all',
+          label: 'All',
+          meta: activeRecommendation ? String(activeRecommendation.allCount) : undefined,
+        },
+        {
+          value: 'shelved',
+          label: 'My Shelf',
+          meta: activeRecommendation ? String(activeRecommendation.shelfCount) : undefined,
+        },
+      ]}
+      onScopeChange={(scope) => {
+        if (isLoading) return;
+        setReadingPoolScopePreference(scope);
+      }}
+      scopeAriaLabel="Selected fields recommendation scope"
       showWikipediaLevelSelector
     />
   );
+}
+
+function filterEntriesByScope<TEntry extends AnchoredEntryBase>(
+  entries: TEntry[],
+  scope: ReadingPoolScope,
+  shelfState: Record<string, boolean>,
+): TEntry[] {
+  if (scope !== 'shelved') return entries;
+  return entries.filter((entry) => Boolean(shelfState[entry.checklistKey]));
 }
 
 function SpreadPathPlaceholder({
@@ -451,6 +505,14 @@ export function CenteredCircleNavigatorPanel({
   });
   const [recommendationsError, setRecommendationsError] = useState<string | null>(null);
   const [spreadPathOpen, setSpreadPathOpen] = useState(false);
+  const [selectedScope, setSelectedScope] = useState<ReadingPoolScope>('all');
+
+  useEffect(() => {
+    setSelectedScope(getReadingPoolScopePreference());
+    return subscribeReadingPoolScopePreference((scope) => {
+      setSelectedScope(scope);
+    });
+  }, []);
 
   useEffect(() => {
     const cachedCenter = partRecommendationCache.get(centerPartNumber);
@@ -490,10 +552,14 @@ export function CenteredCircleNavigatorPanel({
     const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
 
     const sharedVsiEntries = intersectSharedEntries(sharedPartRecommendations.center.vsi, sharedPartRecommendations.top.vsi);
+    const sharedVsiShelfEntries = filterEntriesByScope(sharedVsiEntries, 'shelved', shelfState);
     const rawSharedWikiEntries = intersectSharedEntries(sharedPartRecommendations.center.wiki, sharedPartRecommendations.top.wiki);
     const sharedWikiEntries = filterWikipediaLevel(rawSharedWikiEntries, wikiLevel);
+    const sharedWikiShelfEntries = filterEntriesByScope(sharedWikiEntries, 'shelved', shelfState);
     const sharedIotEntries = intersectSharedEntries(sharedPartRecommendations.center.iot, sharedPartRecommendations.top.iot);
+    const sharedIotShelfEntries = filterEntriesByScope(sharedIotEntries, 'shelved', shelfState);
     const sharedMacroEntries = intersectSharedEntries(sharedPartRecommendations.center.macro, sharedPartRecommendations.top.macro);
+    const sharedMacroShelfEntries = filterEntriesByScope(sharedMacroEntries, 'shelved', shelfState);
     const wikiCoverageEntries = coverageSources.wikipedia?.entries
       ? filterWikipediaLevel(coverageSources.wikipedia.entries, wikiLevel)
       : undefined;
@@ -501,7 +567,9 @@ export function CenteredCircleNavigatorPanel({
       buildRecommendationSectionConfig({
         type: 'vsi',
         itemSingular: 'book',
-        entries: sharedVsiEntries,
+        entries: selectedScope === 'shelved' ? sharedVsiShelfEntries : sharedVsiEntries,
+        allCount: sharedVsiEntries.length,
+        shelfCount: sharedVsiShelfEntries.length,
         completedChecklistKeys,
         coverageEntries: coverageSources.vsi?.entries,
         getHref: (item: CircleNavigatorVsiEntry) => `${baseUrl}/vsi/${slugify(item.title)}`,
@@ -510,7 +578,9 @@ export function CenteredCircleNavigatorPanel({
       buildRecommendationSectionConfig({
         type: 'iot',
         itemSingular: 'episode',
-        entries: sharedIotEntries,
+        entries: selectedScope === 'shelved' ? sharedIotShelfEntries : sharedIotEntries,
+        allCount: sharedIotEntries.length,
+        shelfCount: sharedIotShelfEntries.length,
         completedChecklistKeys,
         coverageEntries: coverageSources.iot?.entries,
         getHref: (item: CircleNavigatorIotEntry) => `${baseUrl}/iot/${item.pid}`,
@@ -519,7 +589,9 @@ export function CenteredCircleNavigatorPanel({
       buildRecommendationSectionConfig({
         type: 'wikipedia',
         itemSingular: 'article',
-        entries: sharedWikiEntries,
+        entries: selectedScope === 'shelved' ? sharedWikiShelfEntries : sharedWikiEntries,
+        allCount: sharedWikiEntries.length,
+        shelfCount: sharedWikiShelfEntries.length,
         completedChecklistKeys,
         coverageEntries: wikiCoverageEntries,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
@@ -530,7 +602,9 @@ export function CenteredCircleNavigatorPanel({
       buildRecommendationSectionConfig({
         type: 'macropaedia',
         itemSingular: 'article',
-        entries: sharedMacroEntries,
+        entries: selectedScope === 'shelved' ? sharedMacroShelfEntries : sharedMacroEntries,
+        allCount: sharedMacroEntries.length,
+        shelfCount: sharedMacroShelfEntries.length,
         completedChecklistKeys,
         coverageEntries: coverageSources.macropaedia?.entries,
         getHref: (item: CircleNavigatorMacropaediaEntry) => `${baseUrl}/macropaedia/${slugify(item.title)}`,
@@ -538,7 +612,7 @@ export function CenteredCircleNavigatorPanel({
     ]
       .filter((section): section is AnchoredRecommendationSectionConfig<AnchoredEntryBase> => section !== null)
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
-  }, [sharedPartRecommendations, checklistState, readingPref, baseUrl, coverageSources, wikiLevel, readingSpeedWpm]);
+  }, [sharedPartRecommendations, checklistState, readingPref, baseUrl, coverageSources, wikiLevel, readingSpeedWpm, selectedScope, shelfState]);
 
   const {
     activeRecommendation,
@@ -556,6 +630,7 @@ export function CenteredCircleNavigatorPanel({
     recommendationSections,
     readingPref,
     activeLayer,
+    selectedScope,
     isLoadingRecommendations,
   );
   const activeSnapshot = activeRecommendation?.layerSnapshots[resolvedLayer];
@@ -648,7 +723,14 @@ export function CenteredCircleNavigatorPanel({
             getEstimatedMinutes={(step) => step.estimatedMinutes}
             estimatedTimeApproximate={effectiveReadingType !== 'iot'}
             statusMessage={statusMessage ?? undefined}
-            emptyMessage={emptyRecommendationMessage(resolvedLayer, isLayerComplete, spreadRemaining)}
+            emptyMessage={emptyRecommendationMessage(
+              resolvedLayer,
+              isLayerComplete,
+              spreadRemaining,
+              selectedScope,
+              activeRecommendation.shelfCount,
+              activeRecommendation.itemSingular,
+            )}
             baseUrl={baseUrl}
             sectionLinksVariant="chips"
           />
@@ -680,6 +762,7 @@ export function TopPartCircleNavigatorPanel({
   );
   const [recommendationsError, setRecommendationsError] = useState<string | null>(null);
   const [spreadPathOpen, setSpreadPathOpen] = useState(false);
+  const [selectedScope, setSelectedScope] = useState<ReadingPoolScope>('all');
 
   useEffect(() => {
     const cached = partRecommendationCache.get(topPartNumber);
@@ -706,6 +789,13 @@ export function TopPartCircleNavigatorPanel({
     return () => controller.abort();
   }, [topPartNumber, baseUrl]);
 
+  useEffect(() => {
+    setSelectedScope(getReadingPoolScopePreference());
+    return subscribeReadingPoolScopePreference((scope) => {
+      setSelectedScope(scope);
+    });
+  }, []);
+
   const recommendationSections = useMemo(() => {
     if (!partRecommendations) return [];
 
@@ -713,10 +803,14 @@ export function TopPartCircleNavigatorPanel({
     const completedChecklistKeys = completedChecklistKeysFromState(checklistState);
 
     const anchoredVsiEntries = partRecommendations.vsi.filter((entry) => entry.sections.some(belongsToPart));
+    const anchoredVsiShelfEntries = filterEntriesByScope(anchoredVsiEntries, 'shelved', shelfState);
     const rawAnchoredWikiEntries = partRecommendations.wiki.filter((entry) => entry.sections.some(belongsToPart));
     const anchoredWikiEntries = filterWikipediaLevel(rawAnchoredWikiEntries, wikiLevel);
+    const anchoredWikiShelfEntries = filterEntriesByScope(anchoredWikiEntries, 'shelved', shelfState);
     const anchoredIotEntries = partRecommendations.iot.filter((entry) => entry.sections.some(belongsToPart));
+    const anchoredIotShelfEntries = filterEntriesByScope(anchoredIotEntries, 'shelved', shelfState);
     const anchoredMacroEntries = partRecommendations.macro.filter((entry) => entry.sections.some(belongsToPart));
+    const anchoredMacroShelfEntries = filterEntriesByScope(anchoredMacroEntries, 'shelved', shelfState);
     const wikiCoverageEntries = coverageSources.wikipedia?.entries
       ? filterWikipediaLevel(coverageSources.wikipedia.entries, wikiLevel)
       : undefined;
@@ -724,7 +818,9 @@ export function TopPartCircleNavigatorPanel({
       buildRecommendationSectionConfig({
         type: 'vsi',
         itemSingular: 'book',
-        entries: anchoredVsiEntries,
+        entries: selectedScope === 'shelved' ? anchoredVsiShelfEntries : anchoredVsiEntries,
+        allCount: anchoredVsiEntries.length,
+        shelfCount: anchoredVsiShelfEntries.length,
         completedChecklistKeys,
         coverageEntries: coverageSources.vsi?.entries,
         getHref: (item: CircleNavigatorVsiEntry) => `${baseUrl}/vsi/${slugify(item.title)}`,
@@ -733,7 +829,9 @@ export function TopPartCircleNavigatorPanel({
       buildRecommendationSectionConfig({
         type: 'iot',
         itemSingular: 'episode',
-        entries: anchoredIotEntries,
+        entries: selectedScope === 'shelved' ? anchoredIotShelfEntries : anchoredIotEntries,
+        allCount: anchoredIotEntries.length,
+        shelfCount: anchoredIotShelfEntries.length,
         completedChecklistKeys,
         coverageEntries: coverageSources.iot?.entries,
         getHref: (item: CircleNavigatorIotEntry) => `${baseUrl}/iot/${item.pid}`,
@@ -742,7 +840,9 @@ export function TopPartCircleNavigatorPanel({
       buildRecommendationSectionConfig({
         type: 'wikipedia',
         itemSingular: 'article',
-        entries: anchoredWikiEntries,
+        entries: selectedScope === 'shelved' ? anchoredWikiShelfEntries : anchoredWikiEntries,
+        allCount: anchoredWikiEntries.length,
+        shelfCount: anchoredWikiShelfEntries.length,
         completedChecklistKeys,
         coverageEntries: wikiCoverageEntries,
         getHref: (item: CircleNavigatorWikipediaEntry) => `${baseUrl}/wikipedia/${slugify(item.title)}`,
@@ -753,7 +853,9 @@ export function TopPartCircleNavigatorPanel({
       buildRecommendationSectionConfig({
         type: 'macropaedia',
         itemSingular: 'article',
-        entries: anchoredMacroEntries,
+        entries: selectedScope === 'shelved' ? anchoredMacroShelfEntries : anchoredMacroEntries,
+        allCount: anchoredMacroEntries.length,
+        shelfCount: anchoredMacroShelfEntries.length,
         completedChecklistKeys,
         coverageEntries: coverageSources.macropaedia?.entries,
         getHref: (item: CircleNavigatorMacropaediaEntry) => `${baseUrl}/macropaedia/${slugify(item.title)}`,
@@ -761,7 +863,7 @@ export function TopPartCircleNavigatorPanel({
     ]
       .filter((section): section is AnchoredRecommendationSectionConfig<AnchoredEntryBase> => section !== null)
       .sort((a, b) => (a.type === readingPref ? -1 : b.type === readingPref ? 1 : 0));
-  }, [topPartNumber, readingPref, checklistState, partRecommendations, baseUrl, coverageSources, wikiLevel, readingSpeedWpm]);
+  }, [topPartNumber, readingPref, checklistState, partRecommendations, baseUrl, coverageSources, wikiLevel, readingSpeedWpm, selectedScope, shelfState]);
 
   const {
     activeRecommendation,
@@ -779,6 +881,7 @@ export function TopPartCircleNavigatorPanel({
     recommendationSections,
     readingPref,
     activeLayer,
+    selectedScope,
     isLoadingRecommendations,
   );
   const activeSnapshot = activeRecommendation?.layerSnapshots[resolvedLayer];
@@ -869,7 +972,14 @@ export function TopPartCircleNavigatorPanel({
             getEstimatedMinutes={(step) => step.estimatedMinutes}
             estimatedTimeApproximate={effectiveReadingType !== 'iot'}
             statusMessage={statusMessage ?? undefined}
-            emptyMessage={emptyRecommendationMessage(resolvedLayer, isLayerComplete, spreadRemaining)}
+            emptyMessage={emptyRecommendationMessage(
+              resolvedLayer,
+              isLayerComplete,
+              spreadRemaining,
+              selectedScope,
+              activeRecommendation.shelfCount,
+              activeRecommendation.itemSingular,
+            )}
             baseUrl={baseUrl}
             sectionLinksVariant="chips"
           />
