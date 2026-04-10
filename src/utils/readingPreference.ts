@@ -200,6 +200,11 @@ export function getReadingPoolScopePreference(): ReadingPoolScope {
     if (stored === 'all' || stored === 'shelved') {
       return stored;
     }
+
+    const libraryScope = coerceReadingLibraryScope(localStorage.getItem(READING_LIBRARY_SCOPE_KEY));
+    if (libraryScope) {
+      return readingPoolScopeFromLibraryScope(libraryScope);
+    }
   } catch {
     // Ignore
   }
@@ -210,6 +215,7 @@ export function setReadingPoolScopePreference(scope: ReadingPoolScope): void {
   if (typeof window === 'undefined') return;
   try {
     localStorage.setItem(READING_POOL_SCOPE_KEY, scope);
+    localStorage.setItem(READING_LIBRARY_SCOPE_KEY, readingLibraryScopeFromPoolScope(scope));
   } catch {
     // Ignore
   }
@@ -238,9 +244,55 @@ export function subscribeReadingPoolScopePreference(callback: (scope: ReadingPoo
 // --- Reading library controls preference ---
 
 const READING_LIBRARY_CONTROLS_KEY_PREFIX = 'propaedia-reading-library-controls';
+const READING_LIBRARY_SCOPE_KEY = 'propaedia-reading-library-scope';
 
 function readingLibraryControlsKey(readingType: ReadingType): string {
   return `${READING_LIBRARY_CONTROLS_KEY_PREFIX}:${readingType}`;
+}
+
+function coerceReadingLibraryScope(value: unknown): ReadingLibraryScope | null {
+  return value === 'shelf' || value === 'library' ? value : null;
+}
+
+function coerceLegacyReadingLibraryScope(value: unknown): ReadingLibraryScope | null {
+  if (value === true) return 'shelf';
+  if (value === false) return 'library';
+  return null;
+}
+
+function readingPoolScopeFromLibraryScope(scope: ReadingLibraryScope): ReadingPoolScope {
+  return scope === 'shelf' ? 'shelved' : 'all';
+}
+
+function readingLibraryScopeFromPoolScope(scope: ReadingPoolScope): ReadingLibraryScope {
+  return scope === 'shelved' ? 'shelf' : 'library';
+}
+
+export function getReadingLibraryScopePreference(readingType?: ReadingType): ReadingLibraryScope {
+  if (typeof window === 'undefined') return 'library';
+
+  try {
+    const globalScope = coerceReadingLibraryScope(localStorage.getItem(READING_LIBRARY_SCOPE_KEY));
+    if (globalScope) return globalScope;
+
+    const poolScope = localStorage.getItem(READING_POOL_SCOPE_KEY);
+    if (poolScope === 'all' || poolScope === 'shelved') {
+      return readingLibraryScopeFromPoolScope(poolScope);
+    }
+
+    if (readingType) {
+      const raw = localStorage.getItem(readingLibraryControlsKey(readingType));
+      if (raw) {
+        const parsed = JSON.parse(raw) as Record<string, unknown>;
+        const scoped = coerceReadingLibraryScope(parsed.scope) ?? coerceLegacyReadingLibraryScope(parsed.shelvedOnly);
+        if (scoped) return scoped;
+      }
+    }
+  } catch {
+    // Ignore
+  }
+
+  return 'library';
 }
 
 export function getReadingLibraryControlsPreference<TSortField extends string>(
@@ -249,7 +301,7 @@ export function getReadingLibraryControlsPreference<TSortField extends string>(
   defaultSortDirection: 'asc' | 'desc' = 'desc'
 ): ReadingLibraryControlsPreference<TSortField> {
   const fallback: ReadingLibraryControlsPreference<TSortField> = {
-    scope: 'library',
+    scope: getReadingLibraryScopePreference(readingType),
     checkedFilter: 'both',
     sortField: defaultSortField,
     sortDirection: defaultSortDirection,
@@ -266,7 +318,7 @@ export function getReadingLibraryControlsPreference<TSortField extends string>(
       checkedOnly?: boolean;
     };
 
-    const scope = parsed.scope === 'shelf' || parsed.shelvedOnly === true ? 'shelf' : 'library';
+    const scope = getReadingLibraryScopePreference(readingType);
     const checkedFilter = parsed.checkedFilter === 'checked' || parsed.checkedFilter === 'unchecked' || parsed.checkedFilter === 'both'
       ? parsed.checkedFilter
       : parsed.checkedOnly === true
@@ -293,6 +345,8 @@ export function setReadingLibraryControlsPreference(
   if (typeof window === 'undefined') return;
 
   try {
+    localStorage.setItem(READING_LIBRARY_SCOPE_KEY, preference.scope);
+    localStorage.setItem(READING_POOL_SCOPE_KEY, readingPoolScopeFromLibraryScope(preference.scope));
     localStorage.setItem(readingLibraryControlsKey(readingType), JSON.stringify(preference));
   } catch {
     // Ignore
@@ -300,27 +354,22 @@ export function setReadingLibraryControlsPreference(
 }
 
 export function setReadingLibraryScopePreference(
-  readingType: ReadingType,
   scope: ReadingLibraryScope,
 ): void {
   if (typeof window === 'undefined') return;
 
   try {
-    const key = readingLibraryControlsKey(readingType);
-    const raw = localStorage.getItem(key);
-    const parsed = raw ? JSON.parse(raw) as Record<string, unknown> : {};
-
-    localStorage.setItem(
-      key,
-      JSON.stringify({
-        ...parsed,
-        scope,
-        shelvedOnly: undefined,
-      }),
-    );
+    localStorage.setItem(READING_LIBRARY_SCOPE_KEY, scope);
+    localStorage.setItem(READING_POOL_SCOPE_KEY, readingPoolScopeFromLibraryScope(scope));
   } catch {
     // Ignore
   }
+
+  document.dispatchEvent(
+    new CustomEvent(READING_POOL_SCOPE_EVENT, {
+      detail: readingPoolScopeFromLibraryScope(scope),
+    }),
+  );
 }
 
 export function setReadingLibraryCheckedFilterPreference(
