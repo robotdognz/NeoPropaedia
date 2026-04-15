@@ -23,6 +23,7 @@ import {
   CONTROL_CARD_CLASS,
   CONTROL_CARD_INTERACTIVE_CLASS,
   CONTROL_LABEL_CLASS,
+  CONTROL_PANEL_PADDING_CLASS,
   CONTROL_SURFACE_CLASS,
   CONTROL_TITLE_CLASS,
 } from '../ui/controlTheme';
@@ -1262,7 +1263,7 @@ export default function CircleNavigator({
       style={readyStyle}
       aria-busy={hasLoadedState ? 'false' : 'true'}
     >
-      <div class={`${CONTROL_SURFACE_CLASS} p-2.5 sm:rounded-2xl sm:p-3`}>
+      <div class={`${CONTROL_SURFACE_CLASS} ${CONTROL_PANEL_PADDING_CLASS} sm:rounded-2xl`}>
         <div class="grid gap-2 sm:gap-2.5">
           <a
             href={focusPart.href}

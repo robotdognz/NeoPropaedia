@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import SelectorCardRail from '../ui/SelectorCardRail';
-import { CONTROL_SURFACE_CLASS } from '../ui/controlTheme';
+import { CONTROL_PANEL_PADDING_CLASS, CONTROL_SURFACE_CLASS } from '../ui/controlTheme';
 import type { ReadingLibraryScope } from '../../utils/readingPreference';
 
 interface ReadingLibraryScopeTabsProps {
@@ -46,7 +46,7 @@ export default function ReadingLibraryScopeTabs({
   }
 
   return (
-    <section class={`${CONTROL_SURFACE_CLASS} p-2.5 sm:p-3`}>
+    <section class={`${CONTROL_SURFACE_CLASS} ${CONTROL_PANEL_PADDING_CLASS}`}>
       {content}
     </section>
   );

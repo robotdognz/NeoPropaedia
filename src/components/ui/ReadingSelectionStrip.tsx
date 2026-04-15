@@ -8,7 +8,7 @@ import {
 } from '../../utils/wikipediaLevel';
 import { useWikipediaLevel } from '../../hooks/useWikipediaLevel';
 import SelectorCardRail, { type SelectorCardRailOption } from './SelectorCardRail';
-import { CONTROL_SURFACE_CLASS } from './controlTheme';
+import { CONTROL_PANEL_PADDING_CLASS, CONTROL_SURFACE_CLASS } from './controlTheme';
 
 interface ReadingSelectionStripProps {
   readingTypeValue: ReadingType;
@@ -70,7 +70,7 @@ export default function ReadingSelectionStrip({
       : '';
 
   return (
-    <section class={`${CONTROL_SURFACE_CLASS} p-2.5 sm:p-3`}>
+    <section class={`${CONTROL_SURFACE_CLASS} ${CONTROL_PANEL_PADDING_CLASS}`}>
       <div class={`grid gap-2.5 ${gridClass}`}>
         <SelectorCardRail
           label="Reading Type"

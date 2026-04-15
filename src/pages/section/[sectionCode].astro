@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../components/layout/BaseLayout.astro';
+import OutlineProgressWheelLoader from '../../components/content/OutlineProgressWheelLoader';
 import StickySubheading from '../../components/layout/StickySubheading.astro';
 import OutlineTree from '../../components/content/OutlineTree';
 import SectionReadingRecommendationsLoader from '../../components/content/SectionReadingRecommendationsLoader';
@@ -7,6 +8,7 @@ import ReadingRecommendationsFallback from '../../components/content/ReadingReco
 import { getCollection } from 'astro:content';
 import { normalizeSectionCode, sectionReferenceUrl } from '../../utils/helpers';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
+import { loadOutlineProgressTargetLookups } from '../../utils/outlineProgressTargets';
 import { loadSectionReverseReferences } from '../../utils/sectionReadingContext';
 
 export async function getStaticPaths() {
@@ -20,6 +22,7 @@ export async function getStaticPaths() {
 const { section } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const outline = await loadOutlineGraph();
+const outlineProgressTargets = await loadOutlineProgressTargetLookups();
 const sectionSlug = normalizeSectionCode(section.sectionCode);
 
 const PART_NAMES: Record<number, string> = {
@@ -107,11 +110,22 @@ const { reverseRefs, groupedReverseRefs } = await loadSectionReverseReferences(s
       <!-- Subject Outline -->
       <section id="subject-outline" class="mb-8 scroll-mt-24">
         <details class="group" open>
-          <summary class="cursor-pointer text-xl font-sans font-semibold text-gray-800 flex items-center gap-2 mb-4">
-            <svg class="w-5 h-5 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-            Subject Outline
+          <summary class="mb-4 flex cursor-pointer items-center justify-between gap-3 text-xl font-sans font-semibold text-gray-800">
+            <span class="flex min-w-0 items-center gap-2">
+              <svg class="h-5 w-5 shrink-0 transition-transform group-open:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+              <span class="truncate">Subject Outline</span>
+            </span>
+            <OutlineProgressWheelLoader
+              client:load
+              baseUrl={base}
+              targets={outlineProgressTargets.sectionTargets.get(section.sectionCode)!}
+              size={82}
+              ringWidth={7}
+              containerClassName="h-11 w-11"
+              className="pointer-events-none shrink-0"
+            />
           </summary>
           <div class="pl-2">
             <OutlineTree

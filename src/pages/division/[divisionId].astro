@@ -2,11 +2,13 @@
 import BaseLayout from '../../components/layout/BaseLayout.astro';
 import StickySubheading from '../../components/layout/StickySubheading.astro';
 import NotesDisclosure from '../../components/content/NotesDisclosure.astro';
+import OutlineNavigationCards from '../../components/content/OutlineNavigationCards';
 import TopReadings from '../../components/content/TopReadings';
 import ReadingRecommendationsFallback from '../../components/content/ReadingRecommendationsFallback.astro';
 import { getCollection } from 'astro:content';
 import { loadIotTopReadings } from '../../utils/iotTopReadings';
 import { loadOutlineGraph } from '../../utils/outlineGraph';
+import { loadOutlineProgressTargetLookups } from '../../utils/outlineProgressTargets';
 import { enrichWikipediaReadingItems } from '../../utils/wikipediaCatalog';
 import { enrichIotRecommendationItems, enrichVsiRecommendationItems } from '../../utils/recommendationEnrichment';
 
@@ -21,7 +23,7 @@ export async function getStaticPaths() {
 const { division } = Astro.props;
 const base = import.meta.env.BASE_URL;
 const outline = await loadOutlineGraph();
-const sectionEntries = await getCollection('sections');
+const outlineProgressTargets = await loadOutlineProgressTargetLookups();
 
 const PART_NAMES: Record<number, string> = {
   1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five',
@@ -36,9 +38,17 @@ const PART_ROMAN: Record<number, string> = {
 const parentPart = outline.partByNumber.get(division.partNumber);
 const divNav = parentPart?.divisions.find((d) => d.divisionId === division.divisionId);
 const sections = divNav?.sections ?? [];
-const topLevelSubsectionCountBySection = new Map(
-  sectionEntries.map((entry) => [entry.data.sectionCode, entry.data.outline.length]),
-);
+const topLevelSubsectionCountBySection = outlineProgressTargets.subsectionKeysBySection;
+const sectionCards = sections.map((sec) => {
+  const subsectionCount = topLevelSubsectionCountBySection.get(sec.sectionCode)?.length ?? 0;
+  return {
+    href: `${base}/section/${sec.sectionCode.replace(/\//g, '-')}`,
+    eyebrow: `Section ${sec.sectionCodeDisplay}`,
+    title: sec.title,
+    metaText: `${subsectionCount} ${subsectionCount === 1 ? 'Subsection' : 'Subsections'}`,
+    progressTargets: outlineProgressTargets.sectionTargets.get(sec.sectionCode)!,
+  };
+});
 
 // Load reading recommendations for this division
 const allDivReadings = await getCollection('division-readings');
@@ -121,29 +131,12 @@ const partAccentText = partTextColors[division.partNumber];
       <!-- Sections List -->
       <section id="sections" class="scroll-mt-24">
         <h2 class="text-2xl font-sans font-bold text-gray-800 mb-6">Sections</h2>
-        <div class="space-y-3">
-          {sections.map((sec) => (
-            <a href={`${base}/section/${sec.sectionCode.replace(/\//g, '-')}`}
-              class="group block rounded-2xl border border-slate-200 bg-white px-4 py-4 shadow-sm shadow-slate-100 transition-all hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md">
-              <div class="flex flex-wrap items-start justify-between gap-2">
-                <p class={`text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] ${partAccentText}`}>
-                  Section {sec.sectionCodeDisplay}
-                </p>
-                <div class="flex shrink-0 items-center gap-3 pl-2">
-                  <span class="rounded-full border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-medium text-slate-600">
-                    {(topLevelSubsectionCountBySection.get(sec.sectionCode) ?? 0)} {(topLevelSubsectionCountBySection.get(sec.sectionCode) ?? 0) === 1 ? 'Subsection' : 'Subsections'}
-                  </span>
-                  <svg class="mt-1 h-4 w-4 shrink-0 text-slate-300 transition group-hover:text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-              <h3 class="mt-2 text-lg font-serif font-bold text-slate-900 transition-colors group-hover:text-slate-950">
-                {sec.title}
-              </h3>
-            </a>
-          ))}
-        </div>
+        <OutlineNavigationCards
+          client:load
+          baseUrl={base}
+          items={sectionCards}
+          accentTextClass={partAccentText}
+        />
       </section>
 
       {(divReadings || divisionIotReadings.length > 0) && (

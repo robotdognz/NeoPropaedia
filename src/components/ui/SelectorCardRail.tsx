@@ -1,4 +1,5 @@
 import { h } from 'preact';
+import { CONTROL_SECTION_LABEL_CLASS } from './controlTheme';
 
 export interface SelectorCardRailOption<Value extends string = string> {
   value: Value;
@@ -55,7 +56,7 @@ export default function SelectorCardRail<Value extends string = string>({
       {label || description ? (
         <div class="space-y-1">
           {label ? (
-            <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
+            <p class={CONTROL_SECTION_LABEL_CLASS}>
               {label}
             </p>
           ) : null}
@@ -91,7 +92,7 @@ export default function SelectorCardRail<Value extends string = string>({
                   ? 'cursor-default border-slate-200 bg-slate-50 text-slate-300'
                   : isActive
                     ? 'border-slate-300 bg-white text-slate-900 shadow-sm shadow-slate-200/70'
-                    : 'border-slate-200/70 bg-slate-50/60 text-slate-600 hover:border-slate-300 hover:bg-white'
+                    : 'border-slate-200/70 bg-slate-50/60 text-slate-600 hover:border-slate-300 hover:bg-white hover:shadow-sm hover:shadow-slate-200/55'
               }`}
             >
               <span class="min-w-0 flex-1">
@@ -108,14 +109,14 @@ export default function SelectorCardRail<Value extends string = string>({
                 ) : null}
                 <span class={`block truncate leading-5 ${
                   isCompact
-                    ? isActive ? 'text-xs font-medium text-slate-900' : 'text-xs font-normal'
-                    : isActive ? 'text-sm font-medium text-slate-900' : 'text-sm font-normal'
+                    ? isActive ? 'font-serif text-xs font-medium text-slate-900' : 'font-serif text-xs font-normal'
+                    : isActive ? 'font-serif text-sm font-medium text-slate-900' : 'font-serif text-sm font-normal'
                 }`}>
                   {option.label}
                 </span>
               </span>
               {option.meta ? (
-                <span class={`shrink-0 truncate text-[11px] ${
+                <span class={`shrink-0 truncate font-sans text-[11px] ${
                   option.disabled
                     ? 'text-slate-300'
                     : isActive

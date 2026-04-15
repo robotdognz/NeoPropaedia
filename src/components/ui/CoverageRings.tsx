@@ -7,6 +7,7 @@ export interface CoverageRingsProps {
   rings: { label: string; count: number; addedCount?: number; total: number; color: string }[];
   size?: number;
   ringWidth?: number;
+  containerClassName?: string;
   hideLegend?: boolean;
   freezeTransitions?: boolean;
   activeRingLabel?: string;
@@ -19,6 +20,7 @@ export default function CoverageRings({
   rings,
   size = 160,
   ringWidth = 10,
+  containerClassName,
   hideLegend = false,
   freezeTransitions = false,
   activeRingLabel,
@@ -235,7 +237,7 @@ export default function CoverageRings({
 
   return (
     <div ref={ref} class="flex flex-col items-center">
-      <div class="relative w-28 h-28 sm:w-32 sm:h-32">
+      <div class={`relative ${containerClassName ?? 'w-28 h-28 sm:w-32 sm:h-32'}`}>
         <svg
           viewBox={`0 0 ${size} ${size}`}
           class={`h-full w-full ${onSelectRing ? 'cursor-pointer touch-none' : ''}`}

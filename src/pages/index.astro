@@ -3,14 +3,17 @@ import BaseLayout from '../components/layout/BaseLayout.astro';
 import CircleNavigator from '../components/content/CircleNavigator';
 import HomepageCoverageExplorer from '../components/content/HomepageCoverageExplorer';
 import HomepageModeSection from '../components/content/HomepageModeSection.astro';
+import OutlineHomepagePartCards from '../components/content/OutlineHomepagePartCards';
 import partConnections from '../data/part-connections.json';
 import { getCollection } from 'astro:content';
 import { createMarkdownProcessor } from '@astrojs/markdown-remark';
 import { loadOutlineGraph } from '../utils/outlineGraph';
+import { loadOutlineProgressTargetLookups } from '../utils/outlineProgressTargets';
 import { roundedDonutSlicePath } from '../utils/donutPaths';
 
 const base = import.meta.env.BASE_URL;
 const outline = await loadOutlineGraph();
+const outlineProgressTargets = await loadOutlineProgressTargetLookups();
 const parts = outline.parts;
 
 // Build section metadata lookup for CircleNavigator
@@ -163,6 +166,7 @@ const homepagePartCards = parts.map((part) => ({
     ),
     0,
   ),
+  progressTargets: outlineProgressTargets.partTargets.get(part.partNumber)!,
 }));
 
 const figureGroups = [
@@ -609,42 +613,7 @@ function getEssaySegmentLayout(index: number, count: number, baseInnerRadius: nu
         title="Outline"
         description="Navigate directly to a Part of the outline and narrow your focus through its Divisions and Sections into progressively more specific topics."
       >
-        <div class="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-          {homepagePartCards.map((part) => (
-            <a
-              href={part.href}
-              class="group rounded-xl border border-slate-200 bg-slate-50 p-4 transition hover:border-slate-300 hover:bg-white"
-            >
-              <div class="flex items-start justify-between gap-3">
-                <div class="space-y-2">
-                  <p class="text-[0.68rem] font-sans font-semibold uppercase tracking-[0.18em] text-slate-500">
-                    {part.partName}
-                  </p>
-                  <h3 class="font-serif text-xl transition-colors group-hover:text-indigo-700" style={`color: ${part.colorHex};`}>
-                    {part.title}
-                  </h3>
-                </div>
-                <span
-                  class="mt-1 inline-flex h-3.5 w-3.5 shrink-0 rounded-full border border-white/80 shadow-sm"
-                  style={`background-color: ${part.colorHex};`}
-                  aria-hidden="true"
-                ></span>
-              </div>
-
-              <div class="mt-4 flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                <span class="rounded-full bg-white px-2.5 py-1">
-                  {part.divisionCount} {part.divisionCount === 1 ? 'Division' : 'Divisions'}
-                </span>
-                <span class="rounded-full bg-white px-2.5 py-1">
-                  {part.sectionCount} {part.sectionCount === 1 ? 'Section' : 'Sections'}
-                </span>
-                <span class="rounded-full bg-white px-2.5 py-1">
-                  {part.subsectionCount} {part.subsectionCount === 1 ? 'Subsection' : 'Subsections'}
-                </span>
-              </div>
-            </a>
-          ))}
-        </div>
+        <OutlineHomepagePartCards client:load baseUrl={base} items={homepagePartCards} />
 
         {howToUseEssayHtml && (
           <details class="mt-6 group/essay">

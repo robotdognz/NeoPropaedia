@@ -11,6 +11,10 @@ const ICON_GAP_PX = 0.82;
 const ICON_CORNER_RADIUS_PX = 1.25;
 const TAB_ICON_CLASS = 'h-[1.48rem] w-[1.48rem]';
 const GLOBAL_ICON_ROTATION_DEG = -30;
+const TAB_BUTTON_CLASS = 'relative flex min-w-0 flex-col items-center rounded-xl px-2 py-1.5 text-[0.68rem] font-sans font-medium text-slate-500 transition-colors duration-200';
+const TAB_CONTENT_CLASS = 'relative z-10 flex flex-col items-center gap-0.5 transition-transform duration-200';
+const TAB_ICON_WRAP_CLASS = 'flex h-8 w-11 items-center justify-center text-slate-400 transition-colors duration-200';
+const TAB_LABEL_CLASS = 'truncate text-center font-sans leading-tight tracking-[0.01em] transition-[color,transform] duration-200';
 
 type WedgeIconSegment = {
   startDeg: number;
@@ -76,15 +80,15 @@ const workspaceHrefs = {
         <a
           data-mobile-workspace-tab={tab.workspace}
           href={workspaceHrefs[tab.workspace]}
-          class="relative flex min-w-0 flex-col items-center rounded-xl px-2 py-1.5 text-[0.66rem] font-sans font-medium text-slate-500 transition-colors duration-200"
+          class={TAB_BUTTON_CLASS}
         >
           <span
             data-mobile-workspace-content
-            class="relative z-10 flex flex-col items-center gap-0.5 transition-transform duration-200"
+            class={TAB_CONTENT_CLASS}
           >
             <span
               data-mobile-workspace-icon
-              class="flex h-8 w-11 items-center justify-center rounded-lg text-slate-400 transition-colors duration-200"
+              class={TAB_ICON_WRAP_CLASS}
               aria-hidden="true"
             >
               {tab.workspace === 'whole-outline' ? (
@@ -127,7 +131,7 @@ const workspaceHrefs = {
             </span>
             <span
               data-mobile-workspace-label
-              class="truncate text-center leading-tight transition-[color,transform] duration-200"
+              class={TAB_LABEL_CLASS}
             >
               {tab.label}
             </span>

@@ -6,7 +6,7 @@ import {
   type LayerCoverageSnapshot,
 } from '../../utils/readingLibrary';
 import SelectorCardRail from '../ui/SelectorCardRail';
-import { CONTROL_SURFACE_CLASS } from '../ui/controlTheme';
+import { CONTROL_PANEL_PADDING_CLASS, CONTROL_SURFACE_CLASS } from '../ui/controlTheme';
 
 const LAYER_ACCENT_COLORS: Record<CoverageLayer, string> = {
   part: '#6366f1',
@@ -33,7 +33,7 @@ export default function CoverageLayerTabs({
   metaTextByLayer,
 }: CoverageLayerTabsProps) {
   return (
-    <section class={framed ? `${CONTROL_SURFACE_CLASS} p-2.5 sm:p-3` : undefined}>
+    <section class={framed ? `${CONTROL_SURFACE_CLASS} ${CONTROL_PANEL_PADDING_CLASS}` : undefined}>
       <SelectorCardRail
         label={label}
         ariaLabel="Coverage layer"
