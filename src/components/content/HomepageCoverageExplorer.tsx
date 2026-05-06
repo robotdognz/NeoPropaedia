@@ -267,8 +267,6 @@ export default function HomepageCoverageExplorer({
     const preferred = getReadingPreference();
     setSelectedType(preferred);
     void ensureSourceLoaded(preferred);
-    setSelectedLayer(getCoverageLayerPreference());
-    setSelectedScope(getReadingPoolScopePreference());
     try {
       setSpreadPathOpen(window.localStorage.getItem(SPREAD_PATH_STORAGE_KEY) === '1');
     } catch {
@@ -292,20 +290,28 @@ export default function HomepageCoverageExplorer({
       void ensureSourceLoaded(type);
     });
 
-    const unsubLayer = subscribeCoverageLayerPreference((layer) => {
+    return () => {
+      unsubType();
+    };
+  }, []);
+
+  useEffect(() => {
+    setSelectedLayer(getCoverageLayerPreference(selectedType));
+    setSelectedScope(getReadingPoolScopePreference(selectedType));
+
+    const unsubLayer = subscribeCoverageLayerPreference(selectedType, (layer) => {
       setSelectedLayer(layer);
     });
 
-    const unsubScope = subscribeReadingPoolScopePreference((scope) => {
+    const unsubScope = subscribeReadingPoolScopePreference(selectedType, (scope) => {
       setSelectedScope(scope);
     });
 
     return () => {
-      unsubType();
       unsubLayer();
       unsubScope();
     };
-  }, []);
+  }, [selectedType]);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -448,7 +454,7 @@ export default function HomepageCoverageExplorer({
   const selectLayer = (layer: CoverageLayer) => {
     if (!supportedLayers.includes(layer)) return;
     setSelectedLayer(layer);
-    setCoverageLayerPreference(layer);
+    setCoverageLayerPreference(selectedType, layer);
   };
   const scopeOptions = [
     {
@@ -499,7 +505,7 @@ export default function HomepageCoverageExplorer({
       scopeOptions={scopeOptions}
       onScopeChange={(scope) => {
         setSelectedScope(scope);
-        setReadingPoolScopePreference(scope);
+        setReadingPoolScopePreference(selectedType, scope);
       }}
       scopeAriaLabel="Whole outline recommendation scope"
       showWikipediaLevelSelector
@@ -537,7 +543,7 @@ export default function HomepageCoverageExplorer({
                     const layer = LAYER_BY_RING_LABEL[label];
                     if (layer && supportedLayers.includes(layer)) {
                       setSelectedLayer(layer);
-                      setCoverageLayerPreference(layer);
+                      setCoverageLayerPreference(selectedType, layer);
                     }
                   }}
                 />

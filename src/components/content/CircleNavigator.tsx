@@ -381,7 +381,7 @@ export default function CircleNavigator({
   const [centerHasFocus, setCenterHasFocus] = useState(false);
   const checklistState = useReadingChecklistState();
   const readingPref = useReadingPreferenceState();
-  const selectedCoverageLayer = useCoverageLayerPreferenceState();
+  const selectedCoverageLayer = useCoverageLayerPreferenceState(readingPref);
   const [coverageSourceCache, setCoverageSourceCache] = useState<Partial<Record<ReadingType, HomepageCoverageSource>>>(() => {
     const initialCache: Partial<Record<ReadingType, HomepageCoverageSource>> = {};
     READING_TYPE_ORDER.forEach((type) => {

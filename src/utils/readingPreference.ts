@@ -122,16 +122,30 @@ export function subscribeHideCheckedReadings(callback: (hide: boolean) => void):
 
 import type { CoverageLayer } from './readingLibrary';
 
-const LAYER_KEY = 'propaedia-coverage-layer';
+const LEGACY_LAYER_KEY = 'propaedia-coverage-layer';
+const LAYER_KEY_PREFIX = 'propaedia-coverage-layer';
 const LAYER_EVENT = 'propaedia:coverage-layer-change';
 const VALID_LAYERS: CoverageLayer[] = ['part', 'division', 'section', 'subsection'];
+type CoverageLayerPreferenceDetail = {
+  readingType: ReadingType;
+  layer: CoverageLayer;
+};
 
-export function getCoverageLayerPreference(): CoverageLayer {
+function coverageLayerKey(readingType: ReadingType): string {
+  return `${LAYER_KEY_PREFIX}:${readingType}`;
+}
+
+export function getCoverageLayerPreference(readingType: ReadingType = getReadingPreference()): CoverageLayer {
   if (typeof window === 'undefined') return 'part';
   try {
-    const stored = localStorage.getItem(LAYER_KEY);
+    const stored = localStorage.getItem(coverageLayerKey(readingType));
     if (stored && VALID_LAYERS.includes(stored as CoverageLayer)) {
       return stored as CoverageLayer;
+    }
+
+    const legacyStored = localStorage.getItem(LEGACY_LAYER_KEY);
+    if (legacyStored && VALID_LAYERS.includes(legacyStored as CoverageLayer)) {
+      return legacyStored as CoverageLayer;
     }
   } catch {
     // Ignore
@@ -139,24 +153,28 @@ export function getCoverageLayerPreference(): CoverageLayer {
   return 'part';
 }
 
-export function setCoverageLayerPreference(layer: CoverageLayer): void {
+export function setCoverageLayerPreference(readingType: ReadingType, layer: CoverageLayer): void {
   if (typeof window === 'undefined') return;
   try {
-    localStorage.setItem(LAYER_KEY, layer);
+    localStorage.setItem(coverageLayerKey(readingType), layer);
   } catch {
     // Ignore
   }
-  document.dispatchEvent(new CustomEvent(LAYER_EVENT, { detail: layer }));
+  document.dispatchEvent(new CustomEvent<CoverageLayerPreferenceDetail>(LAYER_EVENT, {
+    detail: { readingType, layer },
+  }));
 }
 
-export function subscribeCoverageLayerPreference(callback: (layer: CoverageLayer) => void): () => void {
+export function subscribeCoverageLayerPreference(readingType: ReadingType, callback: (layer: CoverageLayer) => void): () => void {
   const handler = (event: Event) => {
-    callback((event as CustomEvent<CoverageLayer>).detail);
+    const detail = (event as CustomEvent<CoverageLayerPreferenceDetail>).detail;
+    if (!detail || detail.readingType !== readingType) return;
+    callback(detail.layer);
   };
   document.addEventListener(LAYER_EVENT, handler);
 
   const storageHandler = (event: StorageEvent) => {
-    if (event.key === LAYER_KEY && event.newValue && VALID_LAYERS.includes(event.newValue as CoverageLayer)) {
+    if (event.key === coverageLayerKey(readingType) && event.newValue && VALID_LAYERS.includes(event.newValue as CoverageLayer)) {
       callback(event.newValue as CoverageLayer);
     }
   };
@@ -190,20 +208,39 @@ export function subscribeReadingPreference(callback: (type: ReadingType) => void
 
 // --- Reading pool scope preference ---
 
-const READING_POOL_SCOPE_KEY = 'propaedia-reading-pool-scope';
+const LEGACY_READING_POOL_SCOPE_KEY = 'propaedia-reading-pool-scope';
+const READING_POOL_SCOPE_KEY_PREFIX = 'propaedia-reading-pool-scope';
 const READING_POOL_SCOPE_EVENT = 'propaedia:reading-pool-scope-change';
+type ReadingPoolScopePreferenceDetail = {
+  readingType: ReadingType;
+  scope: ReadingPoolScope;
+};
 
-export function getReadingPoolScopePreference(): ReadingPoolScope {
+function readingPoolScopeKey(readingType: ReadingType): string {
+  return `${READING_POOL_SCOPE_KEY_PREFIX}:${readingType}`;
+}
+
+export function getReadingPoolScopePreference(readingType: ReadingType = getReadingPreference()): ReadingPoolScope {
   if (typeof window === 'undefined') return 'all';
   try {
-    const stored = localStorage.getItem(READING_POOL_SCOPE_KEY);
+    const stored = localStorage.getItem(readingPoolScopeKey(readingType));
     if (stored === 'all' || stored === 'shelved') {
       return stored;
     }
 
-    const libraryScope = coerceReadingLibraryScope(localStorage.getItem(READING_LIBRARY_SCOPE_KEY));
+    const libraryScope = coerceReadingLibraryScope(localStorage.getItem(readingLibraryScopeKey(readingType)));
     if (libraryScope) {
       return readingPoolScopeFromLibraryScope(libraryScope);
+    }
+
+    const legacyStored = localStorage.getItem(LEGACY_READING_POOL_SCOPE_KEY);
+    if (legacyStored === 'all' || legacyStored === 'shelved') {
+      return legacyStored;
+    }
+
+    const legacyLibraryScope = coerceReadingLibraryScope(localStorage.getItem(LEGACY_READING_LIBRARY_SCOPE_KEY));
+    if (legacyLibraryScope) {
+      return readingPoolScopeFromLibraryScope(legacyLibraryScope);
     }
   } catch {
     // Ignore
@@ -211,25 +248,29 @@ export function getReadingPoolScopePreference(): ReadingPoolScope {
   return 'all';
 }
 
-export function setReadingPoolScopePreference(scope: ReadingPoolScope): void {
+export function setReadingPoolScopePreference(readingType: ReadingType, scope: ReadingPoolScope): void {
   if (typeof window === 'undefined') return;
   try {
-    localStorage.setItem(READING_POOL_SCOPE_KEY, scope);
-    localStorage.setItem(READING_LIBRARY_SCOPE_KEY, readingLibraryScopeFromPoolScope(scope));
+    localStorage.setItem(readingPoolScopeKey(readingType), scope);
+    localStorage.setItem(readingLibraryScopeKey(readingType), readingLibraryScopeFromPoolScope(scope));
   } catch {
     // Ignore
   }
-  document.dispatchEvent(new CustomEvent(READING_POOL_SCOPE_EVENT, { detail: scope }));
+  document.dispatchEvent(new CustomEvent<ReadingPoolScopePreferenceDetail>(READING_POOL_SCOPE_EVENT, {
+    detail: { readingType, scope },
+  }));
 }
 
-export function subscribeReadingPoolScopePreference(callback: (scope: ReadingPoolScope) => void): () => void {
+export function subscribeReadingPoolScopePreference(readingType: ReadingType, callback: (scope: ReadingPoolScope) => void): () => void {
   const handler = (event: Event) => {
-    callback((event as CustomEvent<ReadingPoolScope>).detail);
+    const detail = (event as CustomEvent<ReadingPoolScopePreferenceDetail>).detail;
+    if (!detail || detail.readingType !== readingType) return;
+    callback(detail.scope);
   };
   document.addEventListener(READING_POOL_SCOPE_EVENT, handler);
 
   const storageHandler = (event: StorageEvent) => {
-    if (event.key === READING_POOL_SCOPE_KEY && (event.newValue === 'all' || event.newValue === 'shelved')) {
+    if (event.key === readingPoolScopeKey(readingType) && (event.newValue === 'all' || event.newValue === 'shelved')) {
       callback(event.newValue);
     }
   };
@@ -244,10 +285,15 @@ export function subscribeReadingPoolScopePreference(callback: (scope: ReadingPoo
 // --- Reading library controls preference ---
 
 const READING_LIBRARY_CONTROLS_KEY_PREFIX = 'propaedia-reading-library-controls';
-const READING_LIBRARY_SCOPE_KEY = 'propaedia-reading-library-scope';
+const LEGACY_READING_LIBRARY_SCOPE_KEY = 'propaedia-reading-library-scope';
+const READING_LIBRARY_SCOPE_KEY_PREFIX = 'propaedia-reading-library-scope';
 
 function readingLibraryControlsKey(readingType: ReadingType): string {
   return `${READING_LIBRARY_CONTROLS_KEY_PREFIX}:${readingType}`;
+}
+
+function readingLibraryScopeKey(readingType: ReadingType): string {
+  return `${READING_LIBRARY_SCOPE_KEY_PREFIX}:${readingType}`;
 }
 
 function coerceReadingLibraryScope(value: unknown): ReadingLibraryScope | null {
@@ -271,21 +317,31 @@ function readingLibraryScopeFromPoolScope(scope: ReadingPoolScope): ReadingLibra
 export function getReadingLibraryScopePreference(readingType?: ReadingType): ReadingLibraryScope {
   if (typeof window === 'undefined') return 'library';
 
-  try {
-    const globalScope = coerceReadingLibraryScope(localStorage.getItem(READING_LIBRARY_SCOPE_KEY));
-    if (globalScope) return globalScope;
+  const resolvedReadingType = readingType ?? getReadingPreference();
 
-    const poolScope = localStorage.getItem(READING_POOL_SCOPE_KEY);
+  try {
+    const scoped = coerceReadingLibraryScope(localStorage.getItem(readingLibraryScopeKey(resolvedReadingType)));
+    if (scoped) return scoped;
+
+    const poolScope = localStorage.getItem(readingPoolScopeKey(resolvedReadingType));
     if (poolScope === 'all' || poolScope === 'shelved') {
       return readingLibraryScopeFromPoolScope(poolScope);
     }
 
-    if (readingType) {
-      const raw = localStorage.getItem(readingLibraryControlsKey(readingType));
+    const legacyScope = coerceReadingLibraryScope(localStorage.getItem(LEGACY_READING_LIBRARY_SCOPE_KEY));
+    if (legacyScope) return legacyScope;
+
+    const legacyPoolScope = localStorage.getItem(LEGACY_READING_POOL_SCOPE_KEY);
+    if (legacyPoolScope === 'all' || legacyPoolScope === 'shelved') {
+      return readingLibraryScopeFromPoolScope(legacyPoolScope);
+    }
+
+    {
+      const raw = localStorage.getItem(readingLibraryControlsKey(resolvedReadingType));
       if (raw) {
         const parsed = JSON.parse(raw) as Record<string, unknown>;
-        const scoped = coerceReadingLibraryScope(parsed.scope) ?? coerceLegacyReadingLibraryScope(parsed.shelvedOnly);
-        if (scoped) return scoped;
+        const legacyScoped = coerceReadingLibraryScope(parsed.scope) ?? coerceLegacyReadingLibraryScope(parsed.shelvedOnly);
+        if (legacyScoped) return legacyScoped;
       }
     }
   } catch {
@@ -345,29 +401,37 @@ export function setReadingLibraryControlsPreference(
   if (typeof window === 'undefined') return;
 
   try {
-    localStorage.setItem(READING_LIBRARY_SCOPE_KEY, preference.scope);
-    localStorage.setItem(READING_POOL_SCOPE_KEY, readingPoolScopeFromLibraryScope(preference.scope));
+    localStorage.setItem(readingLibraryScopeKey(readingType), preference.scope);
+    localStorage.setItem(readingPoolScopeKey(readingType), readingPoolScopeFromLibraryScope(preference.scope));
     localStorage.setItem(readingLibraryControlsKey(readingType), JSON.stringify(preference));
   } catch {
     // Ignore
   }
+
+  document.dispatchEvent(new CustomEvent<ReadingPoolScopePreferenceDetail>(READING_POOL_SCOPE_EVENT, {
+    detail: { readingType, scope: readingPoolScopeFromLibraryScope(preference.scope) },
+  }));
 }
 
 export function setReadingLibraryScopePreference(
+  readingType: ReadingType,
   scope: ReadingLibraryScope,
 ): void {
   if (typeof window === 'undefined') return;
 
   try {
-    localStorage.setItem(READING_LIBRARY_SCOPE_KEY, scope);
-    localStorage.setItem(READING_POOL_SCOPE_KEY, readingPoolScopeFromLibraryScope(scope));
+    localStorage.setItem(readingLibraryScopeKey(readingType), scope);
+    localStorage.setItem(readingPoolScopeKey(readingType), readingPoolScopeFromLibraryScope(scope));
   } catch {
     // Ignore
   }
 
   document.dispatchEvent(
-    new CustomEvent(READING_POOL_SCOPE_EVENT, {
-      detail: readingPoolScopeFromLibraryScope(scope),
+    new CustomEvent<ReadingPoolScopePreferenceDetail>(READING_POOL_SCOPE_EVENT, {
+      detail: {
+        readingType,
+        scope: readingPoolScopeFromLibraryScope(scope),
+      },
     }),
   );
 }

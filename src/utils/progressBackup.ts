@@ -2,7 +2,9 @@
  * Export and import all user progress and preferences.
  */
 
-const KEYS = [
+import { READING_TYPE_ORDER } from './readingPreference';
+
+const BASE_KEYS = [
   'propaedia-reading-checklist-v1',
   'propaedia-reading-shelf-v1',
   'propaedia-reading-preference',
@@ -10,8 +12,17 @@ const KEYS = [
   'propaedia-hide-checked-readings',
   'propaedia-coverage-layer',
   'propaedia-reading-pool-scope',
+  'propaedia-reading-library-scope',
   'propaedia-wiki-level',
 ] as const;
+
+const PER_READING_TYPE_KEYS = READING_TYPE_ORDER.flatMap((readingType) => [
+  `propaedia-coverage-layer:${readingType}`,
+  `propaedia-reading-pool-scope:${readingType}`,
+  `propaedia-reading-library-scope:${readingType}`,
+]);
+
+const KEYS = [...BASE_KEYS, ...PER_READING_TYPE_KEYS];
 
 export interface ProgressBackup {
   version: 1;

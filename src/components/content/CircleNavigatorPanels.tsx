@@ -411,7 +411,7 @@ function renderSelectionControls<TEntry extends AnchoredEntryBase>(
         if (isLoading) return;
         const supportedLayers = activeRecommendation?.supportedLayers ?? supportedLayersForReadingType(effectiveReadingType);
         if (!supportedLayers.includes(layer)) return;
-        setCoverageLayerPreference(layer);
+        setCoverageLayerPreference(readingPref, layer);
       }}
       coverageLayerAriaLabel="Selected fields coverage layer"
       scopeValue={selectedScope}
@@ -429,7 +429,7 @@ function renderSelectionControls<TEntry extends AnchoredEntryBase>(
       ]}
       onScopeChange={(scope) => {
         if (isLoading) return;
-        setReadingPoolScopePreference(scope);
+        setReadingPoolScopePreference(readingPref, scope);
       }}
       scopeAriaLabel="Selected fields recommendation scope"
       showWikipediaLevelSelector
@@ -505,14 +505,14 @@ export function CenteredCircleNavigatorPanel({
   });
   const [recommendationsError, setRecommendationsError] = useState<string | null>(null);
   const [spreadPathOpen, setSpreadPathOpen] = useState(false);
-  const [selectedScope, setSelectedScope] = useState<ReadingPoolScope>('all');
+  const [selectedScope, setSelectedScope] = useState<ReadingPoolScope>(() => getReadingPoolScopePreference(readingPref));
 
   useEffect(() => {
-    setSelectedScope(getReadingPoolScopePreference());
-    return subscribeReadingPoolScopePreference((scope) => {
+    setSelectedScope(getReadingPoolScopePreference(readingPref));
+    return subscribeReadingPoolScopePreference(readingPref, (scope) => {
       setSelectedScope(scope);
     });
-  }, []);
+  }, [readingPref]);
 
   useEffect(() => {
     const cachedCenter = partRecommendationCache.get(centerPartNumber);
@@ -762,7 +762,7 @@ export function TopPartCircleNavigatorPanel({
   );
   const [recommendationsError, setRecommendationsError] = useState<string | null>(null);
   const [spreadPathOpen, setSpreadPathOpen] = useState(false);
-  const [selectedScope, setSelectedScope] = useState<ReadingPoolScope>('all');
+  const [selectedScope, setSelectedScope] = useState<ReadingPoolScope>(() => getReadingPoolScopePreference(readingPref));
 
   useEffect(() => {
     const cached = partRecommendationCache.get(topPartNumber);
@@ -790,11 +790,11 @@ export function TopPartCircleNavigatorPanel({
   }, [topPartNumber, baseUrl]);
 
   useEffect(() => {
-    setSelectedScope(getReadingPoolScopePreference());
-    return subscribeReadingPoolScopePreference((scope) => {
+    setSelectedScope(getReadingPoolScopePreference(readingPref));
+    return subscribeReadingPoolScopePreference(readingPref, (scope) => {
       setSelectedScope(scope);
     });
-  }, []);
+  }, [readingPref]);
 
   const recommendationSections = useMemo(() => {
     if (!partRecommendations) return [];

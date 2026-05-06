@@ -48,7 +48,7 @@ export default function LibraryWorkspaceControls({
         eyebrow: READING_TYPE_UI_META[type].eyebrow,
       }))}
       onReadingTypeChange={(type) => {
-        setReadingLibraryScopePreference(scope);
+        setReadingLibraryScopePreference(readingType, scope);
         setReadingLibraryCheckedFilterPreference(type, checkedFilter);
         onReadingTypeChange(type);
         setReadingPreference(type);
