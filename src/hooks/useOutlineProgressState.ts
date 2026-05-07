@@ -6,7 +6,10 @@ import {
   completedChecklistKeysFromState,
   type ChecklistBackedReadingEntry,
 } from '../utils/readingLibrary';
-import { buildOutlineProgressCoverageState } from '../utils/outlineProgress';
+import {
+  buildOutlineProgressCoverageState,
+  buildOutlineProgressReadingCompletionState,
+} from '../utils/outlineProgress';
 
 interface OutlineProgressPayload {
   entries: ChecklistBackedReadingEntry[];
@@ -14,6 +17,7 @@ interface OutlineProgressPayload {
 
 interface OutlineProgressStateResult {
   coverageState: ReturnType<typeof buildOutlineProgressCoverageState> | null;
+  readingCompletionState: ReturnType<typeof buildOutlineProgressReadingCompletionState> | null;
   loading: boolean;
   error: boolean;
 }
@@ -34,9 +38,14 @@ export function useOutlineProgressState(baseUrl: string): OutlineProgressStateRe
     () => (data ? buildOutlineProgressCoverageState(data.entries, completedChecklistKeys) : null),
     [data, completedChecklistKeys],
   );
+  const readingCompletionState = useMemo(
+    () => (data ? buildOutlineProgressReadingCompletionState(data.entries, completedChecklistKeys) : null),
+    [data, completedChecklistKeys],
+  );
 
   return {
     coverageState,
+    readingCompletionState,
     loading: !data && !error,
     error,
   };

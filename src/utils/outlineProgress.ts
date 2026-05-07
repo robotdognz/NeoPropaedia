@@ -2,6 +2,7 @@ import type { ChecklistBackedReadingEntry, CoverageRing } from './readingLibrary
 import type { OutlineProgressTargets } from './outlineProgressTargets';
 
 const OUTLINE_PROGRESS_RING_COLORS = {
+  readings: '#334155',
   part: '#6366f1',
   division: '#8b5cf6',
   section: '#a78bfa',
@@ -13,6 +14,28 @@ export interface OutlineProgressCoverageState {
   coveredDivisionKeys: Set<string>;
   coveredSectionKeys: Set<string>;
   coveredSubsectionKeys: Set<string>;
+}
+
+interface OutlineReadingCompletionCounts {
+  total: number;
+  completed: number;
+}
+
+export interface OutlineProgressReadingCompletionState {
+  partCounts: Map<string, OutlineReadingCompletionCounts>;
+  divisionCounts: Map<string, OutlineReadingCompletionCounts>;
+  sectionCounts: Map<string, OutlineReadingCompletionCounts>;
+}
+
+function incrementReadingCompletionCount(
+  map: Map<string, OutlineReadingCompletionCounts>,
+  key: string,
+  completed: boolean,
+) {
+  const current = map.get(key) ?? { total: 0, completed: 0 };
+  current.total += 1;
+  if (completed) current.completed += 1;
+  map.set(key, current);
 }
 
 export function buildOutlineProgressCoverageState(
@@ -46,6 +69,65 @@ export function buildOutlineProgressCoverageState(
   };
 }
 
+export function buildOutlineProgressReadingCompletionState(
+  entries: ChecklistBackedReadingEntry[],
+  completedChecklistKeys: Set<string>,
+): OutlineProgressReadingCompletionState {
+  const partCounts = new Map<string, OutlineReadingCompletionCounts>();
+  const divisionCounts = new Map<string, OutlineReadingCompletionCounts>();
+  const sectionCounts = new Map<string, OutlineReadingCompletionCounts>();
+
+  for (const entry of entries) {
+    const completed = completedChecklistKeys.has(entry.checklistKey);
+    const touchedParts = new Set<string>();
+    const touchedDivisions = new Set<string>();
+    const touchedSections = new Set<string>();
+
+    for (const section of entry.sections) {
+      touchedParts.add(String(section.partNumber));
+      touchedDivisions.add(section.divisionId);
+      touchedSections.add(section.sectionCode);
+    }
+
+    for (const key of touchedParts) {
+      incrementReadingCompletionCount(partCounts, key, completed);
+    }
+    for (const key of touchedDivisions) {
+      incrementReadingCompletionCount(divisionCounts, key, completed);
+    }
+    for (const key of touchedSections) {
+      incrementReadingCompletionCount(sectionCounts, key, completed);
+    }
+  }
+
+  return {
+    partCounts,
+    divisionCounts,
+    sectionCounts,
+  };
+}
+
+function readingCompletionRingForTarget(
+  targets: OutlineProgressTargets,
+  completionState: OutlineProgressReadingCompletionState,
+): CoverageRing | null {
+  const counts =
+    targets.ownLayer === 'part'
+      ? completionState.partCounts.get(targets.ownKey)
+      : targets.ownLayer === 'division'
+        ? completionState.divisionCounts.get(targets.ownKey)
+        : completionState.sectionCounts.get(targets.ownKey);
+
+  if (!counts || counts.total === 0) return null;
+
+  return {
+    label: 'Readings',
+    count: counts.completed,
+    total: counts.total,
+    color: OUTLINE_PROGRESS_RING_COLORS.readings,
+  };
+}
+
 function countCoveredTargets(targetKeys: string[], coveredKeys: Set<string>): number {
   let coveredCount = 0;
 
@@ -61,8 +143,15 @@ function countCoveredTargets(targetKeys: string[], coveredKeys: Set<string>): nu
 export function buildOutlineProgressRings(
   targets: OutlineProgressTargets,
   coverageState: OutlineProgressCoverageState,
+  completionState?: OutlineProgressReadingCompletionState | null,
 ): CoverageRing[] {
   const rings: CoverageRing[] = [];
+
+  const readingCompletionRing =
+    completionState ? readingCompletionRingForTarget(targets, completionState) : null;
+  if (readingCompletionRing) {
+    rings.push(readingCompletionRing);
+  }
 
   if (targets.ownLayer === 'part') {
     rings.push({
@@ -112,8 +201,9 @@ export function buildOutlineProgressRings(
 export function describeOutlineProgress(
   targets: OutlineProgressTargets,
   coverageState: OutlineProgressCoverageState,
+  completionState?: OutlineProgressReadingCompletionState | null,
 ): string {
-  const rings = buildOutlineProgressRings(targets, coverageState);
+  const rings = buildOutlineProgressRings(targets, coverageState, completionState);
 
   return rings
     .map((ring) => `${ring.label} ${ring.count}/${ring.total}`)

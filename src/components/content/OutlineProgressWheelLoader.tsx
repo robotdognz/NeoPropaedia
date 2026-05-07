@@ -20,12 +20,13 @@ export default function OutlineProgressWheelLoader({
   containerClassName,
   className,
 }: OutlineProgressWheelLoaderProps) {
-  const { coverageState, loading } = useOutlineProgressState(baseUrl);
+  const { coverageState, readingCompletionState, loading } = useOutlineProgressState(baseUrl);
 
   return (
     <OutlineProgressWheel
       targets={targets}
       coverageState={coverageState}
+      readingCompletionState={readingCompletionState}
       loading={loading}
       size={size}
       ringWidth={ringWidth}

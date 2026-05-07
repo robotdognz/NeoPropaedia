@@ -22,7 +22,7 @@ export default function OutlineNavigationCards({
   items,
   accentTextClass,
 }: OutlineNavigationCardsProps) {
-  const { coverageState, loading } = useOutlineProgressState(baseUrl);
+  const { coverageState, readingCompletionState, loading } = useOutlineProgressState(baseUrl);
 
   return (
     <div class="space-y-3">
@@ -52,6 +52,7 @@ export default function OutlineNavigationCards({
               <OutlineProgressWheel
                 targets={item.progressTargets}
                 coverageState={coverageState}
+                readingCompletionState={readingCompletionState}
                 loading={loading}
                 size={88}
                 ringWidth={8}

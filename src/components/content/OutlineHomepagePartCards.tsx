@@ -23,7 +23,7 @@ export default function OutlineHomepagePartCards({
   baseUrl,
   items,
 }: OutlineHomepagePartCardsProps) {
-  const { coverageState, loading } = useOutlineProgressState(baseUrl);
+  const { coverageState, readingCompletionState, loading } = useOutlineProgressState(baseUrl);
 
   return (
     <div class="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
@@ -49,6 +49,7 @@ export default function OutlineHomepagePartCards({
               <OutlineProgressWheel
                 targets={part.progressTargets}
                 coverageState={coverageState}
+                readingCompletionState={readingCompletionState}
                 loading={loading}
                 size={88}
                 ringWidth={8}

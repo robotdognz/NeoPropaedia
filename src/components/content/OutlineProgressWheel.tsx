@@ -1,12 +1,16 @@
 import { h } from 'preact';
 import { buildOutlineProgressRings, describeOutlineProgress } from '../../utils/outlineProgress';
-import type { OutlineProgressCoverageState } from '../../utils/outlineProgress';
+import type {
+  OutlineProgressCoverageState,
+  OutlineProgressReadingCompletionState,
+} from '../../utils/outlineProgress';
 import type { OutlineProgressTargets } from '../../utils/outlineProgressTargets';
 import CoverageRings from '../ui/CoverageRings';
 
 interface OutlineProgressWheelProps {
   targets: OutlineProgressTargets;
   coverageState: OutlineProgressCoverageState | null;
+  readingCompletionState: OutlineProgressReadingCompletionState | null;
   loading?: boolean;
   size?: number;
   ringWidth?: number;
@@ -17,13 +21,16 @@ interface OutlineProgressWheelProps {
 export default function OutlineProgressWheel({
   targets,
   coverageState,
+  readingCompletionState,
   loading = false,
   size = 88,
   ringWidth = 8,
   containerClassName,
   className,
 }: OutlineProgressWheelProps) {
-  const summary = coverageState ? describeOutlineProgress(targets, coverageState) : 'Loading progress';
+  const summary = coverageState
+    ? describeOutlineProgress(targets, coverageState, readingCompletionState)
+    : 'Loading progress';
 
   if (!coverageState || loading) {
     return (
@@ -42,7 +49,7 @@ export default function OutlineProgressWheel({
   return (
     <div class={className} title={summary} aria-label={summary}>
       <CoverageRings
-        rings={buildOutlineProgressRings(targets, coverageState)}
+        rings={buildOutlineProgressRings(targets, coverageState, readingCompletionState)}
         size={size}
         ringWidth={ringWidth}
         containerClassName={containerClassName}
